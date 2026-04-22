@@ -31,7 +31,10 @@ import { DataFileData } from "../../../../../org/allbinary/data/file/DataFileDat
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class ContextConfigurationData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "CONTEXT_CONFIGURATION_NAME";

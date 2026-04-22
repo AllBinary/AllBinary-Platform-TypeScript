@@ -39,7 +39,10 @@ import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/in
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ defaultComboBoxModel!.addElement(keyAsString);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

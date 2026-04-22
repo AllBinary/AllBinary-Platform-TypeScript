@@ -46,7 +46,10 @@ import { FileItemStream } from "../../../../../../../org/apache/commons/fileuplo
 
 
 
-        
+
+
+
+
 
 
 
@@ -195,7 +198,7 @@ stringBuffer!.appendlong(fileItem!.getSize());
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

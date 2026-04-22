@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,18 +81,15 @@ export class ReleaseTouchInputToGameKeyEventAction extends GameKeyCompleteMotion
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
         
         
-private constructor ()                        
-
-                            : super("Release Action", TouchMotionGestureFactory.getInstance()!.RELEASED, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()){
-
-            super();
-            
+private constructor (){
+            super("Release Action", TouchMotionGestureFactory.getInstance()!.RELEASED, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 
         try {
-            this.setGameKey(NONE);
+            this.setGameKey(this.NONE);
     
 this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE));
     

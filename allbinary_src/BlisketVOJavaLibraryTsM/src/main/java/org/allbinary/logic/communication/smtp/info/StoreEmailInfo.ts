@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class StoreEmailInfo extends BasicEmailInfo {
         
 
     private storeFrontInterface: StoreFrontInterface
-public constructor (storeFrontInterface: StoreFrontInterface, subject: string, textBody: string)                        
-
-                            : super(subject, textBody){
-
-            super();
-            var storeFrontInterface = storeFrontInterface
+public constructor (storeFrontInterface: StoreFrontInterface, subject: string, textBody: string){
+            super(subject, textBody);
+                    var storeFrontInterface = storeFrontInterface
 var subject = subject
 var textBody = textBody
 
@@ -97,7 +97,7 @@ this.init();
             
     init(){
 
-    var contextConfigurationInterface: ContextConfigurationInterface = storeFrontInterface!.getContextConfigurationInterface()!;
+    var contextConfigurationInterface: ContextConfigurationInterface = this.storeFrontInterface!.getContextConfigurationInterface()!;
         
         
 ;

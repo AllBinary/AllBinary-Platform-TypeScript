@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ this.loaded= loaded;
 
     public setSurfaceChanged(initialized: boolean){
 var initialized = initialized
-surfaceChanged= initialized;
+this.surfaceChanged= initialized;
     
 }
 

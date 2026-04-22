@@ -31,7 +31,10 @@ import { InputAutomationConfigurationFactory } from "../../../../../../org/allbi
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class InputAutomationModuleConfigurationsSingletonFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

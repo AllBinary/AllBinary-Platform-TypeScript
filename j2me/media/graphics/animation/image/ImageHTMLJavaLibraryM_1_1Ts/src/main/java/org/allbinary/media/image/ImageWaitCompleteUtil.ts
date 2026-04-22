@@ -55,7 +55,10 @@ import { PlaynImage } from "../../../../org/microemu/device/playn/PlaynImage.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,7 +87,7 @@ export class ImageWaitCompleteUtil extends ImageCompleteUtil {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -104,7 +107,7 @@ this.waitFor(image, name, this.timeDelayHelper);
     public handleTimeout(name: string){
     //var name = name
 
-                        if(timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTime())
                         
                                     {
                                     

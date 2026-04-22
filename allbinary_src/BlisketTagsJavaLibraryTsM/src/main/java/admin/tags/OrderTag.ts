@@ -61,7 +61,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class OrderTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setCommand(command: string){
@@ -263,7 +266,7 @@ this.storeName= value;
 
         try {
             
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
@@ -273,7 +276,7 @@ this.storeName= value;
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
                         
                                     {
                                     this.process();
@@ -282,7 +285,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(command.compareTo(PaymentGatewayData.NAME.toString()) == 0)
+                        if(this.command.compareTo(PaymentGatewayData.NAME.toString()) == 0)
                         
                                     {
                                     

@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ import { CacheableInterface } from "./CacheableInterface.js";
 
 export class BasicArrayListPool extends AbstractArrayListPool {
         
-public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface)                        
-
-                            : super(cacheableInterfaceFactoryInterface){
-
-            super();
-            var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
+public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
+            super(cacheableInterfaceFactoryInterface);
+                    var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

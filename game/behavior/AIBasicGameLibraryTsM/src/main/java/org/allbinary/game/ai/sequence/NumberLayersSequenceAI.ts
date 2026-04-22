@@ -40,7 +40,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class NumberLayersSequenceAI extends SequenceAI {
         
 
     private numberOfLayersLeft: number
-public constructor (numberOfEnemiesLeft: number, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(artificialIntelligenceInterface, ownerLayerInterface, gameInput){
-
-            super();
-            var numberOfEnemiesLeft = numberOfEnemiesLeft
+public constructor (numberOfEnemiesLeft: number, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+                    var numberOfEnemiesLeft = numberOfEnemiesLeft
 var artificialIntelligenceInterface = artificialIntelligenceInterface
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput

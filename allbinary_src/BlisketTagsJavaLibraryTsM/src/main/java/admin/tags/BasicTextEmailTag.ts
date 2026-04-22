@@ -49,7 +49,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class BasicTextEmailTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setSubject(value: string){

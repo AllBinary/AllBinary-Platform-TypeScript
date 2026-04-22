@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class InventoryEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInventoryEntityInstance(): InventoryEntity{

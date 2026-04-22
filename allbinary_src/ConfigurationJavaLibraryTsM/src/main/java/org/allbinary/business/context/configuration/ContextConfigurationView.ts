@@ -52,7 +52,10 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class ContextConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var childNodeList: NodeList = node.getChildNodes()!;
         
@@ -101,7 +104,7 @@ this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailSe
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
-            var contextConfigurationInterface = contextConfigurationInterface
+        var contextConfigurationInterface = contextConfigurationInterface
 this.contextConfigurationInterface= contextConfigurationInterface;
     
 }

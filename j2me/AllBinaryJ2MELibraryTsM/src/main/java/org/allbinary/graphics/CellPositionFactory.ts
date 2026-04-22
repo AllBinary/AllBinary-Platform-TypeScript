@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class CellPositionFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(columns: number, rows: number){
@@ -156,7 +159,7 @@ var i_row = i_row
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellPositionArray[i_column]![i_row]!;
+                        return this.cellPositionArray[i_column]![i_row]!;
     
 
                 //: 
@@ -186,7 +189,7 @@ this.logUtil!.put(new StringMaker().
 var i_column = i_column
 var i_row = i_row
 
-    var cellPositionCanBeNull: CellPosition? = cellPositionArray[i_column]![i_row];
+    var cellPositionCanBeNull: CellPosition? = this.cellPositionArray[i_column]![i_row];
         
         
 ;
@@ -199,7 +202,7 @@ var i_row = i_row
                                     {
                                     cellPositionCanBeNull= new CellPosition(i_column, i_row, this.columns, this.rows);
     
-cellPositionArray[i_column]![i_row]= cellPositionCanBeNull;
+this.cellPositionArray[i_column]![i_row]= cellPositionCanBeNull;
     
 
                                     }

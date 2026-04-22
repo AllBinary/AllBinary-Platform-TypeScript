@@ -34,12 +34,17 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MovementInterface } from "./MovementInterface.js";
+
 export class Movement
             extends Object
          implements MovementInterface {
@@ -47,7 +52,7 @@ export class Movement
 public constructor (){
 
             super();
-            }
+        }
 
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){

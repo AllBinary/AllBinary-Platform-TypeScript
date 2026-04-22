@@ -64,24 +64,26 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+
 export class StoreThemeCategory extends Category implements StoreThemeCategoryInterface {
         
 
     private transformInfoInterface: TransformInfoInterface
 
     private themeVector: Vector
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number)                        
-
-                            : super(categoryPropertiesFactoryInterface, level){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
+            super(categoryPropertiesFactoryInterface, level);
+                    var transformInfoInterface = transformInfoInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 var level = level
 
@@ -94,12 +96,9 @@ this.themeVector= new Vector();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
-
-                            : super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
+            super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                    var transformInfoInterface = transformInfoInterface
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
@@ -113,12 +112,9 @@ this.themeVector= new Vector();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number)                        
-
-                            : super(categoryPropertiesFactoryInterface, level){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
+            super(categoryPropertiesFactoryInterface, level);
+                    var transformInfoInterface = transformInfoInterface
 var node = node
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 var level = level
@@ -134,12 +130,9 @@ this.addThemes(node);
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface)                        
-
-                            : super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
+            super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                    var transformInfoInterface = transformInfoInterface
 var node = node
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface

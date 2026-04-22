@@ -31,12 +31,17 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MathVectorInterface } from "./MathVectorInterface.js";
+
 export class MathVector
             extends Object
          implements MathVectorInterface {
@@ -50,7 +55,7 @@ export class MathVector
 public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
 
             super();
-            var magnitudeBasicDecimal = magnitudeBasicDecimal
+        var magnitudeBasicDecimal = magnitudeBasicDecimal
 var direction = direction
 this.magnitudeBasicDecimal= magnitudeBasicDecimal;
     

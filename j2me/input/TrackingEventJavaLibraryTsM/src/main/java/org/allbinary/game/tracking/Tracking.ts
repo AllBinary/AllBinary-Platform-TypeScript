@@ -31,7 +31,10 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class Tracking
 public constructor (){
 
             super();
-            }
+        }
 
 
     public paint(graphics: Graphics){

@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class WorkFlowEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public create2(): WorkFlowEntity{

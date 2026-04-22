@@ -64,7 +64,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class WaypointBase
 public constructor (sound: Sound){
 
             super();
-                //var sound = sound
+            //var sound = sound
 this.sound= sound;
     
 }

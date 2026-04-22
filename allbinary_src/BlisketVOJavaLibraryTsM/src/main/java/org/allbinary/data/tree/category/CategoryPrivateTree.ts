@@ -55,7 +55,10 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class CategoryPrivateTree
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 
             super();
-            var categoryFactoryInterface = categoryFactoryInterface
+        var categoryFactoryInterface = categoryFactoryInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         

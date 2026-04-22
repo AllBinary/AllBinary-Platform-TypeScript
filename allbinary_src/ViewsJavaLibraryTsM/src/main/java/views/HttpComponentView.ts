@@ -73,7 +73,10 @@ import { Node } from "../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class HttpComponentView extends TransformInfoHttpComposite implements Tra
     private domNodeInterfaceVector: Vector
 
     private transformDocumentInterface: TransformDocumentInterface
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -163,7 +163,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 
         try {
             
-    var size: number = domNodeInterfaceVector!.length!;
+    var size: number = this.domNodeInterfaceVector!.length!;
         
         
 ;
@@ -179,7 +179,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = domNodeInterfaceVector!.get(index);
+    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index);
 
                          as DomNodeInterface;
         

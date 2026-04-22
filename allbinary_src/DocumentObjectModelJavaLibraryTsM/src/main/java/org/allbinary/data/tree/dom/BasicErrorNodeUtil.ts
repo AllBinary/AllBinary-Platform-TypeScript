@@ -37,7 +37,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstan
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

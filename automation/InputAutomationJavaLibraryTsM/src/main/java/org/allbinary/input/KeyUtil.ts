@@ -31,7 +31,10 @@ import { KeyEvent } from "../../../java/awt/event/KeyEvent.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ else -> {
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -55,7 +55,10 @@ import { InvalidContentTypeException } from "../../../../../../org/apache/common
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,12 +76,9 @@ export class MultipartRequestParams extends RequestParams {
     private special: boolean = false;
         
         
-public constructor (request: HttpServletRequest)                        
-
-                            : super(){
-
+public constructor (request: HttpServletRequest){
             super();
-            var request = request
+                    var request = request
 
 
                             //For kotlin this is before the body of the constructor.
@@ -87,12 +87,9 @@ this.processMultipartRequest(request);
     
 }
 
-public constructor (pageContext: PageContext)                        
-
-                            : super(){
-
+public constructor (pageContext: PageContext){
             super();
-            var pageContext = pageContext
+                    var pageContext = pageContext
 
 
                             //For kotlin this is before the body of the constructor.

@@ -34,7 +34,10 @@ import { GameFeatureImageCacheFactory } from "../../../../org/allbinary/image/Ga
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class ImageCreationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -92,7 +95,7 @@ private constructor (){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, (width *maxScaleX).toInt() +1, (height *maxScaleY).toInt() +1)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, (width *maxScaleX) +1, (height *maxScaleY) +1)!;
         
         
 ;

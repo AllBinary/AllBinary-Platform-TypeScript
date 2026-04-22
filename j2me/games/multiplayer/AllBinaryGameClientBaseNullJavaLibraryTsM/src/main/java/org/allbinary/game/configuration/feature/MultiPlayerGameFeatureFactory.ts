@@ -20,7 +20,10 @@ import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class MultiPlayerGameFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addCommands(anyType: any = {}){

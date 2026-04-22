@@ -31,12 +31,17 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementImageInterface } from "./AdvertisementImageInterface.js";
+
 export class AdvertisementImage
             extends Object
          implements AdvertisementImageInterface {
@@ -50,7 +55,7 @@ export class AdvertisementImage
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getFileName(): string{

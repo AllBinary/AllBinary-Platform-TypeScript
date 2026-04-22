@@ -40,7 +40,10 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 
 
 
-        
+
+
+
+
 
 
 

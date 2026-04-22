@@ -36,7 +36,10 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class CapitalEventHandler extends BasicEventHandler {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

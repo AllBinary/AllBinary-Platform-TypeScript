@@ -31,7 +31,10 @@ import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,17 +60,14 @@ export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
     
 }
 
-private constructor ()                        
-
-                            : super(
+private constructor (){
+            super(
                                                 [
                                                     HighScoreCommands.getInstance()!.PERSONAL,HighScoreCommands.getInstance()!.WORLD;
         
         
-                                                ]){
-
-            super();
-            
+                                                ]);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

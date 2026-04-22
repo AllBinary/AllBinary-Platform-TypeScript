@@ -52,7 +52,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,12 +105,9 @@ export class InitInfoEntity extends InitSql {
     private readonly FAILED_TO_CREATE: string = "Failed to create ";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -119,11 +119,11 @@ public constructor ()
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     
-stringBuffer!.append(NOTHING);
+stringBuffer!.append(this.NOTHING);
     
 stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
@@ -141,7 +141,7 @@ stringBuffer!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);
     
 stringBuffer!.append(this.sqlStrings!.PRIMARY_KEY);
     
-stringBuffer!.append(NOTHING);
+stringBuffer!.append(this.NOTHING);
     
 stringBuffer!.append(this.sqlStrings!.END);
     
@@ -319,7 +319,7 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
         
 ;
     
-values.add(NOTHING);
+values.add(this.NOTHING);
     
 values.add(InitInfo.getInstance()!.getTesting());
     
@@ -349,14 +349,14 @@ insert(values);
 
     public createTable(): string{
 
-                        if(super.createTable(tableData))
+                        if(super.createTable(this.tableData))
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tableName +CREATED_SUCCESS;
+                        return this.tableName +this.CREATED_SUCCESS;
     
 
                                     }
@@ -368,9 +368,9 @@ insert(values);
         
 ;
     
-stringBuffer!.append(FAILED_TO_CREATE);
+stringBuffer!.append(this.FAILED_TO_CREATE);
     
-stringBuffer!.append(tableData);
+stringBuffer!.append(this.tableData);
     
 stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
     

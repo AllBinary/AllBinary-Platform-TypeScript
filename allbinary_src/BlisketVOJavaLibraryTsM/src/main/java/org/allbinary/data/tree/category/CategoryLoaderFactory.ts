@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ var categoryFactoryInterface = categoryFactoryInterface
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

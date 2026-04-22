@@ -121,7 +121,10 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -177,12 +180,9 @@ export class RTSPlayerGameInput extends PlayerGameInput {
     private selectedRtsFormInput: RTSFormInput = NullRTSFormInputFactory.getInstance()!;
         
         
-public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface)                        
-
-                            : super(inputList, playerInputId){
-
-            super();
-                //var gameCanvas = gameCanvas
+public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
+            super(inputList, playerInputId);
+                        //var gameCanvas = gameCanvas
     //var inputList = inputList
     //var playerInputId = playerInputId
     //var towerInfoPaintable = towerInfoPaintable
@@ -215,7 +215,7 @@ this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
 
                          as GeographicMapCompositeInterface;
         
@@ -327,7 +327,7 @@ var layerManager = layerManager
             this.processMotionInput(layerManager);
     
 
-    var size: number = inputList!.size()!;
+    var size: number = this.inputList!.size()!;
         
         
 ;
@@ -349,7 +349,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = inputList!.get(index);
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index);
 
                          as GameKeyEvent;
         
@@ -412,7 +412,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
 
                          as GeographicMapCompositeInterface;
         
@@ -522,7 +522,7 @@ var graphics = graphics
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvas!.getLayerManager();
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
 
                          as GeographicMapCompositeInterface;
         

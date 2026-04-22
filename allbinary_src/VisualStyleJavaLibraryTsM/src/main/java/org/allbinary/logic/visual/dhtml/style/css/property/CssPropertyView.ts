@@ -40,7 +40,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class CssPropertyView
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.cssProperty= new CssProperty(name);
     
 }
@@ -69,7 +72,7 @@ this.cssProperty= new CssProperty(name);
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.cssProperty= new CssProperty(node);
     
 }

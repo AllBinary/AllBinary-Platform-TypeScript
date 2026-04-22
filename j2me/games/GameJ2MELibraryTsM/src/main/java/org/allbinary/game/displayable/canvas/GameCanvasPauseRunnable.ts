@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class GameCanvasPauseRunnable extends GameRunnable {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-            var allBinaryGameCanvas = allBinaryGameCanvas
+        var allBinaryGameCanvas = allBinaryGameCanvas
 this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 }
@@ -99,7 +102,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
                         if(isOpenGL)
                         
                                     {
-                                    allBinaryGameCanvas!.processSleep();
+                                    this.allBinaryGameCanvas!.processSleep();
     
 
                                     }

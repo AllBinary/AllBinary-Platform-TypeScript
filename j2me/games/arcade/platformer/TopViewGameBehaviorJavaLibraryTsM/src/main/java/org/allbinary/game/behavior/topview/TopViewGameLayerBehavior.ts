@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class TopViewGameLayerBehavior extends GameLayerBehavior {
 public constructor (maxGravityActionIndex: number){
 
             super();
-                //var maxGravityActionIndex = maxGravityActionIndex
+            //var maxGravityActionIndex = maxGravityActionIndex
 this.maxGravityActionIndex= maxGravityActionIndex;
     
 }
@@ -119,11 +122,11 @@ this.isJumpOver= false;
     //var jumpBehavior = jumpBehavior
     //var accelerationMultiplier = accelerationMultiplier
 
-                        if(!isJumpOver)
+                        if(!this.isJumpOver)
                         
                                     {
                                     
-                        if(gravityActionIndex < maxGravityActionIndex)
+                        if(this.gravityActionIndex < this.maxGravityActionIndex)
                         
                                     {
                                     
@@ -155,12 +158,12 @@ gravityActionIndex++;
                         }
                             
 
-                        if(isJumpAction)
+                        if(this.isJumpAction)
                         
                                     {
                                     jumpBehavior!.process();
     
-isJumpAction= false;
+this.isJumpAction= false;
     
 
                                     }

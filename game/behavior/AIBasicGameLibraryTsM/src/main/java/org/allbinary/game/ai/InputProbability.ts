@@ -39,7 +39,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class InputProbability
 public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodIntegerArray: Integer[], max: number, timeDelayHelper: TimeDelayHelper){
 
             super();
-            var likelyhoodIntegerArray = likelyhoodIntegerArray
+        var likelyhoodIntegerArray = likelyhoodIntegerArray
 var repeatLikelyhoodIntegerArray = repeatLikelyhoodIntegerArray
 var max = max
 var timeDelayHelper = timeDelayHelper

@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,8 +74,8 @@ export class TouchJ2ME
 public constructor (){
 
             super();
-            
-    var motionGesturesHandler: BasicMotionGesturesHandler = motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
+        
+    var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
         
         
 ;
@@ -87,7 +90,7 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
+            this.motionRecognizer!.processDraggedMotionEvent(x, y, DEVICE_ID, 0);
     
 
                 //: 
@@ -111,7 +114,7 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
+            this.motionRecognizer!.processStartMotionEvent(x, y, DEVICE_ID, 0);
     
 
                 //: 
@@ -135,7 +138,7 @@ var x = x
 var y = y
 
         try {
-            motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
+            this.motionRecognizer!.processEndMotionEvent(x, y, DEVICE_ID, 0);
     
 
                 //: 

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -40,12 +43,9 @@ export class NamedAngle extends Angle {
         
 
     public readonly name: string
-public constructor (angle: number, name: string)                        
-
-                            : super(angle){
-
-            super();
-                //var angle = angle
+public constructor (angle: number, name: string){
+            super(angle);
+                        //var angle = angle
     //var name = name
 
 

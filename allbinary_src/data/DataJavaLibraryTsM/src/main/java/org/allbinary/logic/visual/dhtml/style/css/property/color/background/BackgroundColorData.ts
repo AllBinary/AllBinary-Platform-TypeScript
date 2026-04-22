@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class BackgroundColorData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly VALUE: string = "background-color";

@@ -55,7 +55,10 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,12 +72,9 @@ export class TransformInfoHttpContext extends TransformInfoHttp {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(databaseHashMap, propertiesHashMap, pageContext){
-
-            super();
-            var databaseHashMap = databaseHashMap
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(databaseHashMap, propertiesHashMap, pageContext);
+                    var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -108,12 +108,9 @@ this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var propertiesHashMap = propertiesHashMap
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
 

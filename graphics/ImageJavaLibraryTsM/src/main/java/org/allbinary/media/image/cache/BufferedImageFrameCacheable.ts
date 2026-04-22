@@ -37,7 +37,10 @@ import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cach
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class BufferedImageFrameCacheable
 public constructor (bufferedImage: BufferedImage, frame: Long){
 
             super();
-            var bufferedImage = bufferedImage
+        var bufferedImage = bufferedImage
 var frame = frame
 this.frame= frame;
     

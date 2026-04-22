@@ -49,12 +49,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Controllable2 } from "./Controllable2.js";
+
 export class BasicPlayer
             extends Object
          implements Player, Controllable2 {
@@ -78,7 +83,7 @@ export class BasicPlayer
 public constructor (){
 
             super();
-            this.setLoopCount(0);
+        this.setLoopCount(0);
     
 this.setState(Player.UNREALIZED);
     

@@ -33,7 +33,10 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class Portion
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.current= hashMap!.get("current");
 
                          as Integer;

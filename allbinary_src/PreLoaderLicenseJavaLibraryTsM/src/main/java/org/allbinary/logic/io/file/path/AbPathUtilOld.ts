@@ -46,7 +46,10 @@ import { StringValidationUtil } from "../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class AbPathUtilOld
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -276,7 +279,7 @@ var path = path
     isValidStart(path: string): boolean{
 var path = path
 
-                        if(path[0] == abPathData!.SEPARATORCHAR)
+                        if(path[0] == this.abPathData!.SEPARATORCHAR)
                         
                                     {
                                     
@@ -317,7 +320,7 @@ var path = path
                                     }
                                 
 
-                        if(path[path.length -1] == abPathData!.SEPARATORCHAR)
+                        if(path[path.length -1] == this.abPathData!.SEPARATORCHAR)
                         
                                     {
                                     
@@ -350,7 +353,7 @@ var path = path
                         )
                         
                                     {
-                                    path= abPathData!.SEPARATOR +path;
+                                    path= this.abPathData!.SEPARATOR +path;
     
 
                                     }
@@ -372,7 +375,7 @@ var path = path
                         )
                         
                                     {
-                                    path= path +abPathData!.SEPARATOR;
+                                    path= path +this.abPathData!.SEPARATOR;
     
 
                                     }
@@ -423,7 +426,7 @@ var path = path
     public getNameFromPath(categoryPath: string): string{
 var categoryPath = categoryPath
 
-    var endIndex: number = categoryPath!.lastIndexOf(abPathData!.SEPARATOR)!;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
         
         
 ;
@@ -432,7 +435,7 @@ var categoryPath = categoryPath
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR);
+                                    endIndex= categoryPath!.lastIndexOf(this.filePathData!.SEPARATORCHAR);
     
 
                                     }
@@ -491,7 +494,7 @@ var categoryPath = categoryPath
     public removeNameFromPath(categoryPath: string): AbPath{
 var categoryPath = categoryPath
 
-    var endIndex: number = categoryPath!.lastIndexOf(abPathData!.SEPARATOR)!;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
         
         
 ;
@@ -500,7 +503,7 @@ var categoryPath = categoryPath
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR);
+                                    endIndex= categoryPath!.lastIndexOf(this.filePathData!.SEPARATORCHAR);
     
 
                                     }

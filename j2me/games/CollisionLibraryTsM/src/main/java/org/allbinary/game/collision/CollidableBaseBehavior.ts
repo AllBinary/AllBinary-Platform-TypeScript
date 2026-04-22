@@ -49,12 +49,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CollidableInterface } from "./CollidableInterface.js";
+
 import { LayerCollisionUtil } from "./LayerCollisionUtil.js";
 
 import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
@@ -84,7 +89,7 @@ export class CollidableBaseBehavior
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
             super();
-            var ownerLayer = ownerLayer
+        var ownerLayer = ownerLayer
 var collidable = collidable
 this.ownerLayer= ownerLayer;
     
@@ -134,7 +139,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
                             throw new Error(new StringMaker().
-                            append(commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString())
+                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString())
 }
 
 
@@ -161,7 +166,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);
+                        return layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);
 
                         ;
     
@@ -175,7 +180,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

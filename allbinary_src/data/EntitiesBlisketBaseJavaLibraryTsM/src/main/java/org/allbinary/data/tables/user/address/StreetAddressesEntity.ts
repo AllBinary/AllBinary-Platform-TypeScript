@@ -69,12 +69,17 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StreetAddressesEntityInterface } from "./StreetAddressesEntityInterface.js";
+
 export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {
         
 
@@ -83,23 +88,17 @@ export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesE
         
 
     private userName: string
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (userName: string)                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            var userName = userName
+public constructor (userName: string){
+            super(new UserDbInitInfo());
+                    var userName = userName
 
 
                             //For kotlin this is before the body of the constructor.
@@ -174,7 +173,7 @@ var index = index
     
 values.add(index);
     
-values.add(userName);
+values.add(this.userName);
     
 values.add(StringUtil.getInstance()!.EMPTY_STRING);
     

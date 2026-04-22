@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class LineReader
 public constructor (fileName: string){
 
             super();
-                //var fileName = fileName
+            //var fileName = fileName
 
         try {
             
@@ -84,11 +87,11 @@ public constructor (fileName: string){
     
 this.fileName= fileName;
     
-idFile= new AbFileInputStream(fileName);
+this.idFile= new AbFileInputStream(fileName);
     
-idFile!.read(bytes);
+this.idFile!.read(bytes);
     
-string= bytes.decodeToString();
+this.string= bytes.decodeToString();
     
 
                 //: 
@@ -111,7 +114,7 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
 
         try {
             
-    var nextIndex: number = string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
+    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
         
         
 ;
@@ -164,7 +167,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
 
         try {
             
-    var nextIndex: number = string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
+    var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
         
         
 ;
@@ -181,7 +184,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
                                     }
                                 
 
-    var temp: string = string.substring(index, nextIndex)!;
+    var temp: string = this.string.substring(index, nextIndex)!;
         
         
 ;

@@ -31,7 +31,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ class MakeToast
 public constructor (string: string){
 
             super();
-            var string = string
+        var string = string
 this.string= string;
     
 }

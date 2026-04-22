@@ -43,7 +43,10 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
         
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new OptimizedAllBinaryCollisionLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new OptimizedAllBinaryCollisionLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

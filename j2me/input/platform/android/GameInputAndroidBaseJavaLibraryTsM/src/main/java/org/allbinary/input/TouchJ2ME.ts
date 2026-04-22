@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,7 +44,7 @@ export class TouchJ2ME
 public constructor (){
 
             super();
-            }
+        }
 
 
     public pointerDragged(x: number, y: number){

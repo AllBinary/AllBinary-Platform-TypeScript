@@ -31,7 +31,10 @@ import { File } from "../../../../java/io/File.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class ImageOutputData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

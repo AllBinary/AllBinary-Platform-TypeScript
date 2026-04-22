@@ -52,7 +52,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class SequenceAI extends ArrayAI {
         
 
     private index: number= 0
-public constructor (artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(artificialIntelligenceInterfaceArray, ownerLayerInterface, gameInput){
-
-            super();
-            var artificialIntelligenceInterfaceArray = artificialIntelligenceInterfaceArray
+public constructor (artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(artificialIntelligenceInterfaceArray, ownerLayerInterface, gameInput);
+                    var artificialIntelligenceInterfaceArray = artificialIntelligenceInterfaceArray
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -85,7 +85,7 @@ var gameInput = gameInput
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-this.getArtificialIntelligenceInterface()[index]!.processAI(allBinaryLayerManager);
+this.getArtificialIntelligenceInterface()[this.index]!.processAI(allBinaryLayerManager);
     
 }
 

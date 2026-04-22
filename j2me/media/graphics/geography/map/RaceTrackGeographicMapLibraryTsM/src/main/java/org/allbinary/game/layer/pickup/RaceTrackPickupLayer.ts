@@ -40,7 +40,10 @@ import { ViewPositionEventHandler } from "../../../../../org/allbinary/view/even
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class RaceTrackPickupLayer extends PickupLayer {
     private static readonly NAME: string = "RaceTrackPickupLayer";
         
         
-public constructor ()                        
-
-                            : super(NAME, new TileLayerPositionIntoViewPosition()){
-
-            super();
-            
+public constructor (){
+            super(NAME, new TileLayerPositionIntoViewPosition());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

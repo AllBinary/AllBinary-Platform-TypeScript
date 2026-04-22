@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ import { SimpleWeaponProperties } from "./SimpleWeaponProperties.js";
 export class WeaponProperties extends SimpleWeaponProperties {
         
 
-    public static readonly NULL_WEAPON_PROPERTIES: WeaponProperties = new WeaponProperties(0L, 0L, 0L, 0, 0.toShort());
+    public static readonly NULL_WEAPON_PROPERTIES: WeaponProperties = new WeaponProperties(0L, 0L, 0L, 0, 0);
         
         
 
@@ -92,7 +95,7 @@ export class WeaponProperties extends SimpleWeaponProperties {
 public constructor (reloadTime: number, targetingTime: number, speed: number, damage: number, dissipation: number){
 
             super();
-            var reloadTime = reloadTime
+        var reloadTime = reloadTime
 var targetingTime = targetingTime
 var speed = speed
 var damage = damage
@@ -153,19 +156,16 @@ this.setSpeed(new BasicDecimal(speed));
         
 ;
     
-this.setRange((value *9).toInt() /10);
+this.setRange((value *9) /10);
     
 
                                     }
                                 
 }
 
-public constructor (speed: number, damage: number, dissipation: number)                        
-
-                            : this( -1L,  -1L, speed, damage, dissipation){
-
-            super();
-            var speed = speed
+public constructor (speed: number, damage: number, dissipation: number){
+            this( -1L,  -1L, speed, damage, dissipation);
+                    var speed = speed
 var damage = damage
 var dissipation = dissipation
 

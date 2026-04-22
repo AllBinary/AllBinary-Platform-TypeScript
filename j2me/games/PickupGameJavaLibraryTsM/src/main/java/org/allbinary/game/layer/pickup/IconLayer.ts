@@ -49,7 +49,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,12 +66,9 @@ export class IconLayer extends AllBinaryLayer {
         
 
     private animationInterface: Animation
-public constructor (animationInterface: Animation, width: number, height: number)                        
-
-                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), new ViewPosition()){
-
-            super();
-            var animationInterface = animationInterface
+public constructor (animationInterface: Animation, width: number, height: number){
+            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), new ViewPosition());
+                    var animationInterface = animationInterface
 var width = width
 var height = height
 

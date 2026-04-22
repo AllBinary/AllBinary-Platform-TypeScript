@@ -55,7 +55,10 @@ import { LogFormatUtil } from "../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -502,7 +505,7 @@ fileOut!.flush();
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

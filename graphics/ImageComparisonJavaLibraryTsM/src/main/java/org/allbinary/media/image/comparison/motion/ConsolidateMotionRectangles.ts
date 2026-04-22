@@ -37,7 +37,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ export class ConsolidateMotionRectangles extends MotionRectangles {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (motionRectangles: MotionRectangles)                        
-
-                            : super(NAME, motionRectangles!.getImageComparisonResult()){
-
-            super();
-            var motionRectangles = motionRectangles
+public constructor (motionRectangles: MotionRectangles){
+            super(NAME, motionRectangles!.getImageComparisonResult());
+                    var motionRectangles = motionRectangles
 
 
                             //For kotlin this is before the body of the constructor.

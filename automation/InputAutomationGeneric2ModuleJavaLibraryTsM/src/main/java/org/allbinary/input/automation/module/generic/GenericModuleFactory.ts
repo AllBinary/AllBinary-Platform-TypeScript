@@ -52,7 +52,10 @@ import { RunnableInterface } from "../../../../../../org/allbinary/thread/Runnab
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class GenericModuleFactory extends AbstractInputAutomationFactory {
     private NAME: string = "Generic" +InputAutomationModuleData.MODULE_NAME_END;
         
         
-public constructor ()                        
-
-                            : super(NAME, new GenericModuleConfigurationJPanel()){
-
-            super();
-            
+public constructor (){
+            super(NAME, new GenericModuleConfigurationJPanel());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

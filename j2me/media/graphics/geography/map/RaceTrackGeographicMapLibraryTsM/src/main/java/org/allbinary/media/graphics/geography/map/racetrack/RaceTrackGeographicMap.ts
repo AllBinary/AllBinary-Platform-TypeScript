@@ -43,7 +43,10 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,13 +68,10 @@ export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         
 
     private readonly customMapGenerator: CustomMapGeneratorBase
-public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory)                        
-
-                            : super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), new BasicGeographicMapFactory().
-                            getInstance(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory){
-
-            super();
-                //var raceTrackInfo = raceTrackInfo
+public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory){
+            super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), new BasicGeographicMapFactory().
+                            getInstance(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory);
+                        //var raceTrackInfo = raceTrackInfo
     //var raceTrackData = raceTrackData
     //var tiledLayerFactoryInterface = tiledLayerFactoryInterface
     //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface
@@ -86,12 +86,9 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
     
 }
 
-public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory)                        
-
-                            : this(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, new GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory, customMapGeneratorBaseFactory){
-
-            super();
-                //var raceTrackInfo = raceTrackInfo
+public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory){
+            this(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, new GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory, customMapGeneratorBaseFactory);
+                        //var raceTrackInfo = raceTrackInfo
     //var raceTrackData = raceTrackData
     //var tiledLayerFactoryInterface = tiledLayerFactoryInterface
     //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface

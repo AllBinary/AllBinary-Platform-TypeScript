@@ -55,7 +55,10 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopView
     private readonly offsetY: number
 
     private previousGeographicMapCellPosition: GeographicMapCellPosition
-public constructor ()                        
-
-                            : super(16){
-
-            super();
-            
+public constructor (){
+            super(16);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -94,12 +94,9 @@ this.offsetY= 0;
     
 }
 
-public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number)                        
-
-                            : super(maxGravityActionIndex){
-
-            super();
-                //var maxGravityActionIndex = maxGravityActionIndex
+public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number){
+            super(maxGravityActionIndex);
+                        //var maxGravityActionIndex = maxGravityActionIndex
     //var autoStepBlocks = autoStepBlocks
     //var offsetY = offsetY
 
@@ -126,7 +123,7 @@ this.offsetY= offsetY;
                                 )
                         
                                     {
-                                    geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition);
+                                    this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
@@ -138,7 +135,7 @@ this.offsetY= offsetY;
                         if(!hasSolidBlock)
                         
                                     {
-                                    gravityUtil!.process(velocityProperties);
+                                    this.gravityUtil!.process(velocityProperties);
     
 velocityProperties!.limitXYToForwardAndReverseMaxVelocity();
     
@@ -479,7 +476,7 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                         if(possibleStepGeographicMapCellPosition!.getColumn() > 0 && possibleStepGeographicMapCellPosition!.getRow() > 0 && possibleStepGeographicMapCellPosition!.getColumn() < tiledLayer!.getColumns() && possibleStepGeographicMapCellPosition!.getRow() < tiledLayer!.getRows())
                         
                                     {
-                                    geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
+                                    this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
@@ -645,7 +642,7 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
         
 ;
     
-geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
+this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
@@ -716,7 +713,7 @@ layer.
         
 ;
     
-geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
+this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;

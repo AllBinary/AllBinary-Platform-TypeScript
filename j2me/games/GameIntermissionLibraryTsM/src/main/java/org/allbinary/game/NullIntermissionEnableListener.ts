@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class NullIntermissionEnableListener
 private constructor (){
 
             super();
-            }
+        }
 
 
     public notifyIntermission(enable: boolean){

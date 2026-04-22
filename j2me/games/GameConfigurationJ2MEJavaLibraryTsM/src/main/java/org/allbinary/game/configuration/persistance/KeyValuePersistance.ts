@@ -73,7 +73,10 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,12 +92,9 @@ import { NullRecordComparator } from "./NullRecordComparator.js";
 
 export class KeyValuePersistance extends BasicPersitance {
         
-protected constructor (recordId: string)                        
-
-                            : super(recordId){
-
-            super();
-                //var recordId = recordId
+protected constructor (recordId: string){
+            super(recordId);
+                        //var recordId = recordId
 
 
                             //For kotlin this is before the body of the constructor.

@@ -85,12 +85,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentGatewayEntityInterface } from "./PaymentGatewayEntityInterface.js";
+
 export class PaymentGatewayEntity extends AbSqlBean implements PaymentGatewayEntityInterface {
         
 
@@ -101,16 +106,13 @@ export class PaymentGatewayEntity extends AbSqlBean implements PaymentGatewayEnt
     private readonly tableName: string = "paymentgateways";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
@@ -643,7 +645,7 @@ super.deleteWhere(whereHashMap);
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     

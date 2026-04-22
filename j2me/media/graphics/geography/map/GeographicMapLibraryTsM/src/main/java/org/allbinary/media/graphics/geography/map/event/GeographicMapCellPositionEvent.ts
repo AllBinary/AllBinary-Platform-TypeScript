@@ -46,7 +46,10 @@ import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/me
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class GeographicMapCellPositionEvent extends AllBinaryEventObject {
     private geographicMapCellPosition: CellPosition = CellPositionFactory.getInstance()!.NONE;
         
         
-public constructor (anyType: any = {}, geographicMapCellPosition: CellPosition)                        
-
-                            : super(anyType){
-
-            super();
-                //var anyType = anyType
+public constructor (anyType: any = {}, geographicMapCellPosition: CellPosition){
+            super(anyType);
+                        //var anyType = anyType
     //var geographicMapCellPosition = geographicMapCellPosition
 
 
@@ -73,12 +73,9 @@ this.geographicMapCellPosition= geographicMapCellPosition;
     
 }
 
-public constructor (anyType: any = {}, key: number)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, key: number){
+            super(anyType);
+                    var anyType = anyType
 var key = key
 
 
@@ -106,7 +103,7 @@ this.geographicMapCellPosition= geographicMapCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPosition as GeographicMapCellPosition;
+                        return this.geographicMapCellPosition as GeographicMapCellPosition;
     
 }
 

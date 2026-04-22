@@ -31,7 +31,10 @@ import { UpdateOrderHelperFactory } from "../../admin/taghelpers/UpdateOrderHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class UpdateOrderTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new UpdateOrderHelperFactory());
+        this.setTagHelperFactory(new UpdateOrderHelperFactory());
     
 this.setTagRequestHelperFactory(new UpdateOrderHelperFactory());
     

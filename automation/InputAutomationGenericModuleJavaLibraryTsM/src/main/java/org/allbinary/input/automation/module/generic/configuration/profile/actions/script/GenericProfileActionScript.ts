@@ -70,7 +70,10 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,12 +97,9 @@ export class GenericProfileActionScript extends DefaultMutableTreeNode implement
     private genericProfileActionJPanel: GenericProfileActionJPanel
 
     private profileActionConditionInterfaceVector: Vector
-public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node)                        
-
-                            : super(NAME){
-
-            super();
-            var genericProfileActionJPanel = genericProfileActionJPanel
+public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
+            super(NAME);
+                    var genericProfileActionJPanel = genericProfileActionJPanel
 var node = node
 
 
@@ -170,7 +170,7 @@ index < nodeList!.getLength(); index++)
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
 
             super();
-            var genericProfileActionJPanel = genericProfileActionJPanel
+        var genericProfileActionJPanel = genericProfileActionJPanel
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
 this.setProfileActionConditionInterfaceVector(new Vector());

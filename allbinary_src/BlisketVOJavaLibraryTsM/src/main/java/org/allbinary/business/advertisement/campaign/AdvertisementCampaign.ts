@@ -40,12 +40,17 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementCampaignInterface } from "./AdvertisementCampaignInterface.js";
+
 import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
 
 export class AdvertisementCampaign
@@ -57,7 +62,7 @@ export class AdvertisementCampaign
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.hashMap= hashMap;
     
 }

@@ -43,7 +43,10 @@ import { KeySpecFactory } from "../../../../../org/allbinary/logic/system/securi
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class AbCryptUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -92,7 +95,7 @@ private constructor (){
     
 
         try {
-            outputStream= streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));
+            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));
 
                          as ByteArrayOutputStream;
     
@@ -114,9 +117,9 @@ abCrypt!.init(key);
     
 
          finally {
-            streamUtil!.close(outputStream);
+            this.streamUtil!.close(outputStream);
     
-streamUtil!.close(inputStream);
+this.streamUtil!.close(inputStream);
     
 
          }

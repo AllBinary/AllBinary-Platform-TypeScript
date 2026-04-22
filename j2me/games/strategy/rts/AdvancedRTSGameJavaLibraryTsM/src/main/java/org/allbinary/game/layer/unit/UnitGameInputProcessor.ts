@@ -31,7 +31,10 @@ import { GameInputProcessor } from "../../../../../org/allbinary/game/input/Game
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class UnitGameInputProcessor extends GameInputProcessor {
 public constructor (unitLayer: UnitLayer){
 
             super();
-            var unitLayer = unitLayer
+        var unitLayer = unitLayer
 this.unitLayer= unitLayer;
     
 }

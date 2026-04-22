@@ -43,12 +43,17 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementAreaInterface } from "./AdvertisementAreaInterface.js";
+
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
 import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstraintsInterface.js";
@@ -70,7 +75,7 @@ export class AdvertisementArea
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME);
 
                          as String;
@@ -179,7 +184,7 @@ this.description= description;
 
     public setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface){
 var advertisementConstraintsInterface = advertisementConstraintsInterface
-this.advertisementAreaConstraintsInterface= advertisementAreaConstraintsInterface;
+this.advertisementAreaConstraintsInterface= this.advertisementAreaConstraintsInterface;
     
 }
 

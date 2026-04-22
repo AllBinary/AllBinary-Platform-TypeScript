@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class StreetAddressData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -55,7 +55,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class StoreFrontTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setCommand(command: string){
@@ -245,7 +248,7 @@ this.storeName= value;
 
         try {
             
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
@@ -255,7 +258,7 @@ this.storeName= value;
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
                         
                                     {
                                     pageContext!.getOut()!.print(this.getCurrentLocation());
@@ -264,7 +267,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
                         
                                     {
                                     pageContext!.getOut()!.print(this.getCurrentHomeLocation());

@@ -40,7 +40,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class LayerCollisionUtil
 private constructor (){
 
             super();
-            
+        
     var features: Features = Features.getInstance()!;
         
         

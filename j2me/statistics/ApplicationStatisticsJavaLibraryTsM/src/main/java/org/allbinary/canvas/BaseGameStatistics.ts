@@ -54,7 +54,10 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class BaseGameStatistics
 public constructor (){
 
             super();
-            }
+        }
 
 
     public init(){
@@ -133,7 +136,7 @@ this.totalRefreshes++;
                         
                                     {
                                     
-    var time: number = (this.totalRefreshes /(elapsed shr DEFAULT_SCALE_FACTOR)).toShort();
+    var time: number = (this.totalRefreshes /(elapsed>>DEFAULT_SCALE_FACTOR));
         
         
 ;
@@ -180,7 +183,7 @@ this.totalRefreshes++;
 
     private readonly STRING_ARRAY: string[] = 
                                                         [
-                                                            " Total Time: ",EMPTY_STRING," Total Frames: ",EMPTY_STRING," Frames/10 Sec: ",EMPTY_STRING," Total Paints: ",EMPTY_STRING," Paints/10 Sec: ",EMPTY_STRING
+                                                            " Total Time: ",EMPTY_STRING," Total Frames: ",EMPTY_STRING," Frames/10 Sec: ",EMPTY_STRING," Total Paints: ",this.EMPTY_STRING," Paints/10 Sec: ",this.EMPTY_STRING
                                                         ];
         
         
@@ -221,14 +224,14 @@ this.totalRefreshes++;
         
 ;
     
-totalTime= (totalTime shr DEFAULT_SCALE_FACTOR);
+totalTime= (totalTime>>DEFAULT_SCALE_FACTOR);
     
 
-                        if(totalTime > 0 && updateDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
+                        if(totalTime > 0 && this.updateDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
                                     
-    var framesPerSec: number = (this.totalFrames /totalTime).toInt();
+    var framesPerSec: number = (this.totalFrames /totalTime);
         
         
 ;
@@ -237,9 +240,9 @@ totalTime= (totalTime shr DEFAULT_SCALE_FACTOR);
                         if(framesPerSec < 10)
                         
                                     {
-                                    CHAR_ARRAY[1]![0]= SPACE_CHAR;
+                                    CHAR_ARRAY[1]![0]= this.SPACE_CHAR;
     
-CHAR_ARRAY[1]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec]!;
+CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec]!;
     
 
                                     }
@@ -260,23 +263,23 @@ CHAR_ARRAY[1]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec]!;
         
 ;
     
-CHAR_ARRAY[1]![0]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[tens]!;
+CHAR_ARRAY[1]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[tens]!;
     
-CHAR_ARRAY[1]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec -removeTens]!;
+CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec -removeTens]!;
     
 
                                     }
                                 
                         else {
-                            CHAR_ARRAY[1]![0]= PLUS_CHAR;
+                            CHAR_ARRAY[1]![0]= this.PLUS_CHAR;
     
-CHAR_ARRAY[1]![1]= PLUS_CHAR;
+CHAR_ARRAY[1]![1]= this.PLUS_CHAR;
     
 
                         }
                             
 
-    var refreshesPerSec: number = (this.totalRefreshes /totalTime).toInt();
+    var refreshesPerSec: number = (this.totalRefreshes /totalTime);
         
         
 ;
@@ -285,9 +288,9 @@ CHAR_ARRAY[1]![1]= PLUS_CHAR;
                         if(refreshesPerSec < 10)
                         
                                     {
-                                    CHAR_ARRAY[3]![0]= X_CHAR;
+                                    CHAR_ARRAY[3]![0]= this.X_CHAR;
     
-CHAR_ARRAY[3]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec]!;
+CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec]!;
     
 
                                     }
@@ -308,17 +311,17 @@ CHAR_ARRAY[3]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec]!;
         
 ;
     
-CHAR_ARRAY[3]![0]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec /10]!;
+CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec /10]!;
     
-CHAR_ARRAY[3]![1]= primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec -removeTens]!;
+CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec -removeTens]!;
     
 
                                     }
                                 
                         else {
-                            CHAR_ARRAY[3]![0]= PLUS_CHAR;
+                            CHAR_ARRAY[3]![0]= this.PLUS_CHAR;
     
-CHAR_ARRAY[3]![1]= PLUS_CHAR;
+CHAR_ARRAY[3]![1]= this.PLUS_CHAR;
     
 
                         }
@@ -363,7 +366,7 @@ STRING_ARRAY[9]= (this.totalRefreshes /totalTime).toString();
                                 
                         else {
                             
-    var string: string = EMPTY_STRING;
+    var string: string = this.EMPTY_STRING;
         
         
 ;

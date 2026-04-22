@@ -46,7 +46,10 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ var colorDelta = colorDelta
 public constructor (point: GPoint, colorDelta: ColorDelta){
 
             super();
-            var point = point
+        var point = point
 var colorDelta = colorDelta
 this.setPoint(point);
     
@@ -141,7 +144,7 @@ this.colorDelta= colorDelta;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append("PixelDelta: Point: ")!.append(point.toString())!.append(CommonSeps.getInstance()!.SPACE)!.append(colorDelta!.toString())!.toString();
+                            append("PixelDelta: Point: ")!.append(this.point.toString())!.append(CommonSeps.getInstance()!.SPACE)!.append(this.colorDelta!.toString())!.toString();
 
                         ;
     

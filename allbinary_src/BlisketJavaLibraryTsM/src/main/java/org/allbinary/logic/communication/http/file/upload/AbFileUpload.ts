@@ -49,7 +49,10 @@ import { ServletRequestContext } from "../../../../../../../org/apache/commons/f
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ import { ServletRequestContext } from "../../../../../../../org/apache/commons/f
         
 export class AbFileUpload extends FileUpload {
         
-public constructor (fileItemFactory: FileItemFactory)                        
-
-                            : super(fileItemFactory){
-
-            super();
-            var fileItemFactory = fileItemFactory
+public constructor (fileItemFactory: FileItemFactory){
+            super(fileItemFactory);
+                    var fileItemFactory = fileItemFactory
 
 
                             //For kotlin this is before the body of the constructor.

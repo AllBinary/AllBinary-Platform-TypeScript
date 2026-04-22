@@ -36,7 +36,10 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class ColorCacheable
 public constructor (key: any = {}){
 
             super();
-            var key = key
+        var key = key
 this.key= key;
     
 this.color= new Color(key = keykey as Integer

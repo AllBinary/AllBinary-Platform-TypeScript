@@ -52,7 +52,10 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class MultiSelectPaintable extends SelectionHudPaintable {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public update(list: BasicArrayList){
@@ -191,13 +194,13 @@ this.rootNameList!.clear();
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(backgroundColor);
+graphics.setColor(this.backgroundColor);
     
 graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());
     
 graphics.setColor(this.getColor());
     
-graphics.drawString(TOTAL, this.textX, y, 0);
+graphics.drawString(this.TOTAL, this.textX, y, 0);
     
 graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0);
     

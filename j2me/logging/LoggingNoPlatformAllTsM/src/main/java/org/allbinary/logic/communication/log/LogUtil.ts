@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class LogUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public put(log: Log){

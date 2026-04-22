@@ -34,7 +34,10 @@ import { UserFactoryInterface } from "../../../../../org/allbinary/business/user
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class UserRole
 protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
 
             super();
-            var aBasicUserRole = aBasicUserRole
+        var aBasicUserRole = aBasicUserRole
 var aUserFactoryInterface = aUserFactoryInterface
 this.basicUserRole= aBasicUserRole;
     

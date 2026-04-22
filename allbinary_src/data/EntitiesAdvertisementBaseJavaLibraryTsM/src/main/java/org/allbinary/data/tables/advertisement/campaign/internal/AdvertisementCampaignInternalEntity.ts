@@ -70,12 +70,17 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementCampaignInternalEntityInterface } from "./AdvertisementCampaignInternalEntityInterface.js";
+
 export class AdvertisementCampaignInternalEntity extends AbSqlBean implements AdvertisementCampaignInternalEntityInterface {
         
 
@@ -86,16 +91,13 @@ export class AdvertisementCampaignInternalEntity extends AbSqlBean implements Ad
     readonly tableName: string = "adCampaignInternal";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

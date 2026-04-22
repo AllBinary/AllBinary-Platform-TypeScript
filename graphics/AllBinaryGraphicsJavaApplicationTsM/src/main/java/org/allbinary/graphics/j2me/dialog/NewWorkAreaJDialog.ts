@@ -54,7 +54,10 @@ import { WorkAreaJPanelInterface } from "../../../../../org/allbinary/graphics/j
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,12 +97,9 @@ var args = args
     private ySizeJTextField: JTextField
 
     private nameJTextField: JTextField
-public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string)                        
-
-                            : super(parent as java.awt.Frame, modal){
-
-            super();
-            var parent = parent
+public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string){
+            super(parent as java.awt.Frame, modal);
+                    var parent = parent
 var modal = modal
 var dimension = dimension
 var newName = newName
@@ -157,15 +157,15 @@ this.getContentPane()!.add(new JLabel(" the size."));
     
 this.getContentPane()!.add(new JLabel("Name:"));
     
-this.getContentPane()!.add(nameJTextField);
+this.getContentPane()!.add(this.nameJTextField);
     
 this.getContentPane()!.add(new JLabel("X: "));
     
-this.getContentPane()!.add(xSizeJTextField);
+this.getContentPane()!.add(this.xSizeJTextField);
     
 this.getContentPane()!.add(new JLabel("Y: "));
     
-this.getContentPane()!.add(ySizeJTextField);
+this.getContentPane()!.add(this.ySizeJTextField);
     
 this.getContentPane()!.add(submitButton);
     
@@ -190,13 +190,13 @@ this.show();
 
         try {
             
-    var canvasWidth: Integer = new Integer(xSizeJTextField!.getText());
+    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());
         
         
 ;
     
 
-    var canvasHeight: Integer = new Integer(ySizeJTextField!.getText());
+    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());
         
         
 ;
@@ -221,7 +221,7 @@ this.show();
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
-parent.add(workAreaJPanel as WorkAreaJPanelInterface);
+this.parent.add(workAreaJPanel as WorkAreaJPanelInterface);
     
 this.dispose();
     

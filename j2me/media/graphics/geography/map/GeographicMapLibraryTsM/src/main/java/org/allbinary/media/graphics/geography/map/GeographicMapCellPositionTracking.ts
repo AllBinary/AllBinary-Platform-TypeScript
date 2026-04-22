@@ -37,7 +37,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class GeographicMapCellPositionTracking
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

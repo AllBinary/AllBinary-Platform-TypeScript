@@ -40,7 +40,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class HealthBarAnimation extends Animation {
 public constructor (layerInterface: AllBinaryLayer, location: number){
 
             super();
-                //var layerInterface = layerInterface
+            //var layerInterface = layerInterface
     //var location = location
 this.allbinaryLayer= layerInterface;
     
@@ -115,16 +118,16 @@ this.location= location;
 
     public onHealthChange(newX2: number){
     //var newX2 = newX2
-x2= newX2;
+this.x2= newX2;
     
 
-    var quarter: number = (this.allbinaryLayer!.getWidth() shr 2);
+    var quarter: number = (this.allbinaryLayer!.getWidth()>>2);
         
         
 ;
     
 
-                        if(x2 > quarter *3)
+                        if(this.x2 > quarter *3)
                         
                                     {
                                     this.basicColor= this.basicColorFactory!.GREEN;
@@ -135,7 +138,7 @@ this.colorP= this.basicColor!.toInt();
                                     }
                                 
                              else 
-                        if(x2 > quarter *2)
+                        if(this.x2 > quarter *2)
                         
                                     {
                                     this.basicColor= this.basicColorFactory!.YELLOW;
@@ -146,7 +149,7 @@ this.colorP= this.basicColor!.toInt();
                                     }
                                 
                              else 
-                        if(x2 > quarter)
+                        if(this.x2 > quarter)
                         
                                     {
                                     this.basicColor= this.basicColorFactory!.ORANGE;

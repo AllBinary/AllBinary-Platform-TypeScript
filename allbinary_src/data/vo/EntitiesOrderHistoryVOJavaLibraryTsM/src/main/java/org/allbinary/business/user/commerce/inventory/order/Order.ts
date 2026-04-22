@@ -70,12 +70,17 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OrderInterface } from "./OrderInterface.js";
+
 import { OrderHistoryData } from "./OrderHistoryData.js";
 
 import { OrderData } from "./OrderData.js";
@@ -107,21 +112,21 @@ export class Order
 public constructor (basket: BasketInterface){
 
             super();
-            var basket = basket
+        var basket = basket
 this.basket= basket;
     
-id= 
+this.id= 
                                         null
                                     ;
     
-shippingType= StringUtil.getInstance()!.EMPTY_STRING;
+this.shippingType= StringUtil.getInstance()!.EMPTY_STRING;
     
 }
 
 public constructor (storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string){
 
             super();
-            var storeName = storeName
+        var storeName = storeName
 var basket = basket
 var id = id
 var shippingType = shippingType

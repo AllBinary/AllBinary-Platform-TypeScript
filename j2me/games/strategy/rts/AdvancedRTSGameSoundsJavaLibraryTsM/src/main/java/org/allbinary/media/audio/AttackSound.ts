@@ -27,7 +27,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class AttackSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/attack.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/attack.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

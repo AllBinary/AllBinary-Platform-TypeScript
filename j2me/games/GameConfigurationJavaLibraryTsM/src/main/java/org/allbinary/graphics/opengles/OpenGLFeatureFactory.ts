@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class OpenGLFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly OPENGL_OPTIONS: OpenGLFeature = new OpenGLFeature("OpenGL Options");

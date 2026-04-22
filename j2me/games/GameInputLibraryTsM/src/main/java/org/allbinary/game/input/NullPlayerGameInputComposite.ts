@@ -34,12 +34,17 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
+
 import { NoPlayerGameInput } from "./NoPlayerGameInput.js";
 
 import { PlayerGameInput } from "./PlayerGameInput.js";

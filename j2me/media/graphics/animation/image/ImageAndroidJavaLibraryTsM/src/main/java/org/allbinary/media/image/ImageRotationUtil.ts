@@ -46,7 +46,10 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class ImageRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;
@@ -120,7 +123,7 @@ var rotationInDegrees = rotationInDegrees
         
 ;
     
-matrix.setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height shr 1).toFloat());
+this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 
     var canvas: Canvas = 
@@ -129,7 +132,7 @@ matrix.setRotate(rotationInDegrees.toFloat(), (width shr 1).toFloat(), (height s
         
 ;
     
-canvas.concat(matrix);
+canvas.concat(this.matrix);
     
 image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
     

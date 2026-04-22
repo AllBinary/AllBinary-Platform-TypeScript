@@ -94,7 +94,10 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../../../../o
 
 
 
-        
+
+
+
+
 
 
 
@@ -131,7 +134,7 @@ export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCel
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -151,13 +154,13 @@ private constructor (){
         
 ;
     
-surroundingCellPositions[0]= geographicMapCellPositionFactory!.getInstance(column, row -1);
+this.surroundingCellPositions[0]= geographicMapCellPositionFactory!.getInstance(column, row -1);
     
-surroundingCellPositions[1]= geographicMapCellPositionFactory!.getInstance(column, row +1);
+this.surroundingCellPositions[1]= geographicMapCellPositionFactory!.getInstance(column, row +1);
     
-surroundingCellPositions[2]= geographicMapCellPositionFactory!.getInstance(column -1, row);
+this.surroundingCellPositions[2]= geographicMapCellPositionFactory!.getInstance(column -1, row);
     
-surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(column +1, row);
+this.surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(column +1, row);
     
 
     var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = this.raceTrackGeographicMap as BaseRaceTrackGeographicMap;
@@ -186,13 +189,13 @@ surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(colum
 
 
                         for (
-    var index: number = surroundingCellPositions!.length
+    var index: number = this.surroundingCellPositions!.length
                 ;
         
         
 --index >= 0; )
         {
-geographicMapCellPosition= surroundingCellPositions[index]!;
+geographicMapCellPosition= this.surroundingCellPositions[index]!;
     
 raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);
 
@@ -232,7 +235,7 @@ break;
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var geographicMapInterface = geographicMapInterface
-hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManager);
+this.hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManager);
     
 super.update(allBinaryGameLayerManager, geographicMapInterface);
     
@@ -355,7 +358,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction);
 ;
     
 
-    var list: BasicArrayList = layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, new BasicArrayList())!;
+    var list: BasicArrayList = this.layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, new BasicArrayList())!;
         
         
 ;

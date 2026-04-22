@@ -17,7 +17,10 @@ import { KeyEvent } from "../../../../android/view/KeyEvent.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class AndroidAPI12KeyFactory extends AndroidAPI9KeyFactory {
 private constructor (){
 
             super();
-            KEYCODE_BUTTON_1= new AndroidGameKey(KeyEvent.KEYCODE_BUTTON_1, "BUTTON 1");
+        KEYCODE_BUTTON_1= new AndroidGameKey(KeyEvent.KEYCODE_BUTTON_1, "BUTTON 1");
     
 KEYCODE_BUTTON_10= new AndroidGameKey(KeyEvent.KEYCODE_BUTTON_10, "BUTTON 10");
     

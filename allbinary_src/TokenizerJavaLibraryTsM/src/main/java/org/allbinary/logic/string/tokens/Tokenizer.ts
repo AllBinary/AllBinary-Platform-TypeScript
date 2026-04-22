@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class Tokenizer
 public constructor (sep: string){
 
             super();
-            var sep = sep
+        var sep = sep
 
                         if(sep == 
                                     null
@@ -112,14 +115,14 @@ var string = string
 
         while(index < size)
         {
-index= string.indexOf(sep, index);
+index= string.indexOf(this.sep, index);
     
 
                         if(index !=  -1)
                         
                                     {
                                     
-    var end: number = string.indexOf(endSep, index +sep.length)!;
+    var end: number = string.indexOf(this.endSep, index +this.sep.length)!;
         
         
 ;
@@ -128,9 +131,9 @@ index= string.indexOf(sep, index);
                         if(end !=  -1)
                         
                                     {
-                                    tokenList!.add(string.substring(index +sep.length, end -(endSep!.length -1)));
+                                    tokenList!.add(string.substring(index +this.sep.length, end -(this.endSep!.length -1)));
     
-index= end +endSep!.length;
+index= end +this.endSep!.length;
     
 
                                     }
@@ -178,7 +181,7 @@ var tokenVector = tokenVector
 
         while(index < string.length)
         {
-end= string.indexOf(sep, index);
+end= string.indexOf(this.sep, index);
     
 
                         if(end !=  -1)
@@ -186,7 +189,7 @@ end= string.indexOf(sep, index);
                                     {
                                     tokenVector!.add(string.substring(index, end));
     
-index= end +sep.length;
+index= end +this.sep.length;
     
 
                                     }
@@ -249,7 +252,7 @@ index < size; index++)
         {
 string= stringVector!.objectArray[index]! as String;
     
-end= string.indexOf(sep);
+end= string.indexOf(this.sep);
     
 
                         if(end >= 0)

@@ -79,7 +79,10 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
 
 
-        
+
+
+
+
 
 
 
@@ -122,7 +125,7 @@ export class ImageUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     getDefaultConfiguration(): GraphicsConfiguration{
@@ -205,13 +208,13 @@ index < size; index++)
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = (bufferedImage!.getWidth() *percent /100).toInt();
+    var newWidth: number = (bufferedImage!.getWidth() *percent /100);
         
         
 ;
     
 
-    var newHeight: number = (bufferedImage!.getHeight() *percent /100).toInt();
+    var newHeight: number = (bufferedImage!.getHeight() *percent /100);
         
         
 ;
@@ -265,13 +268,13 @@ index < size; index++)
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = (bufferedImage!.getWidth() *percent).toInt();
+    var newWidth: number = (bufferedImage!.getWidth() *percent);
         
         
 ;
     
 
-    var newHeight: number = (bufferedImage!.getHeight() *percent).toInt();
+    var newHeight: number = (bufferedImage!.getHeight() *percent);
         
         
 ;
@@ -527,37 +530,37 @@ var newHeight = newHeight
 ;
     
 
-    var dx2: number = (newWidth -width).toInt();
+    var dx2: number = (newWidth -width);
         
         
 ;
     
 
-    var dy2: number = (newHeight -height).toInt();
+    var dy2: number = (newHeight -height);
         
         
 ;
     
 
-    var dx: number = dx2.toInt() /2;
+    var dx: number = dx2 /2;
         
         
 ;
     
 
-    var dy: number = dy2.toInt() /2;
+    var dy: number = dy2 /2;
         
         
 ;
     
 
-    var dx4: number = dx2.toInt() /4;
+    var dx4: number = dx2 /4;
         
         
 ;
     
 
-    var dy4: number = dy2.toInt() /4;
+    var dy4: number = dy2 /4;
         
         
 ;

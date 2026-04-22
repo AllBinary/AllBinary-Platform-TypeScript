@@ -31,7 +31,10 @@ import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class TerrainEventCircularStaticPool
         
 
     public init(){
-EVENT_POOL.init(new TerrainEventFactory());
+this.EVENT_POOL.init(new TerrainEventFactory());
     
 }
 
@@ -76,7 +79,7 @@ EVENT_POOL.init(new TerrainEventFactory());
     public getInstance(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent = EVENT_POOL.getNextInstance();
+    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance();
 
                          as TerrainEvent;
         

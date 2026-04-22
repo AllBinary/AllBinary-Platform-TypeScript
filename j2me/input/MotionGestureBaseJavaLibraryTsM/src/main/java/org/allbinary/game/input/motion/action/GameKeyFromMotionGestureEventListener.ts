@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,11 +102,11 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 ;
     
 
-                        if(gameKeyEvent != previousGameKeyEvent)
+                        if(gameKeyEvent != this.previousGameKeyEvent)
                         
                                     {
                                     
-                        if(previousGameKeyEvent != GameKeyEvent.NONE)
+                        if(this.previousGameKeyEvent != GameKeyEvent.NONE)
                         
                                     {
                                     UpGameKeyEventHandler.getInstance()!.fireEvent(previousGameKeyEvent);
@@ -111,7 +114,7 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
                                     }
                                 
-previousGameKeyEvent= gameKeyEvent;
+this.previousGameKeyEvent= gameKeyEvent;
     
 
                         if(gameKeyEvent != 

@@ -64,7 +64,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,12 +89,9 @@ export class TerrainPatrolAI extends PacePatrolAI {
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(DOWN);
         
         
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(hashtable, ownerLayerInterface, gameInput){
-
-            super();
-                //var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(hashtable, ownerLayerInterface, gameInput);
+                        //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
     //var gameInput = gameInput
 
@@ -157,7 +157,7 @@ index < size; index++)
 ;
     
 
-                        if(angle == DOWN)
+                        if(angle == this.DOWN)
                         
                                     {
                                     this.nextDirection();

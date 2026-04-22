@@ -34,7 +34,10 @@ import { PathFindingNodeCostInfoData } from "../../../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeo
 private constructor (){
 
             super();
-            
+        
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         

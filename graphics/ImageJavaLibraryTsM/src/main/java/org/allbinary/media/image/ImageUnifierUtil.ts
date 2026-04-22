@@ -40,7 +40,10 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class ImageUnifierUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getDefaultConfiguration(): GraphicsConfiguration{

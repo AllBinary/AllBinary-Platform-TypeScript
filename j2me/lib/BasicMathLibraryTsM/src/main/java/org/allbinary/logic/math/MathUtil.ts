@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,13 +84,13 @@ total++;
                                     }
                                 
 
-    var accumulated: number = value shr 1;
+    var accumulated: number = value>>1;
         
         
 ;
     
 
-    var result: number = (accumulated +(value /accumulated)) shr 1;
+    var result: number = (accumulated +(value /accumulated))>>1;
         
         
 ;
@@ -97,7 +100,7 @@ total++;
         {
 accumulated= result;
     
-result= (accumulated +(value /accumulated)) shr 1;
+result= (accumulated +(value /accumulated))>>1;
     
 }
 

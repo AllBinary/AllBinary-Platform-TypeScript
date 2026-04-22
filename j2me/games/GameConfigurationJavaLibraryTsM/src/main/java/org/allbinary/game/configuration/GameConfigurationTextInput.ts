@@ -37,7 +37,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
 public constructor (label: string, text: string){
 
             super();
-            var label = label
+        var label = label
 var text = text
 this.setText(text);
     

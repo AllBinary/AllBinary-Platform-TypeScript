@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class ScreenScavangerRobot
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

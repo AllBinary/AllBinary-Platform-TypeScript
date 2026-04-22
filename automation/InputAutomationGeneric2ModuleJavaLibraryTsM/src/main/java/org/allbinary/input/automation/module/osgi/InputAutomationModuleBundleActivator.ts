@@ -64,7 +64,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class InputAutomationModuleBundleActivator
 public constructor (){
 
             super();
-            this.init();
+        this.init();
     
 }
 

@@ -37,7 +37,10 @@ import { StoreValidationTransformTag } from "../../../tags/StoreValidationTransf
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class ViewCustomizersTag extends StoreValidationTransformTag {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(JspTagException::class)

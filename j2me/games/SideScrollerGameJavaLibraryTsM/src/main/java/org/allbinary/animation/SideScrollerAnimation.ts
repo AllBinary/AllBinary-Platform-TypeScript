@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,7 +44,7 @@ export class SideScrollerAnimation
 public constructor (){
 
             super();
-            }
+        }
 
 
     public jump(){

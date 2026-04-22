@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TouchFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly TOUCH_ENABLED: TouchFeature = new TouchFeature("Touch Enabled");

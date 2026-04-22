@@ -37,7 +37,10 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class GameInitializedEvent extends AllBinaryEventObject {
         
 
     private level: number= 0
-public constructor (anyType: any = {})                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}){
+            super(anyType);
+                    var anyType = anyType
 
 
                             //For kotlin this is before the body of the constructor.
@@ -87,7 +87,7 @@ this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL;
 var resourceLoadingLevel = resourceLoadingLevel
 this.resourceLoadingLevel= resourceLoadingLevel;
     
-level= this.resourceLoadingLevel!.getLevel();
+this.level= this.resourceLoadingLevel!.getLevel();
     
 }
 

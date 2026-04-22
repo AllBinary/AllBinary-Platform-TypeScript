@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class PermissionItemsEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

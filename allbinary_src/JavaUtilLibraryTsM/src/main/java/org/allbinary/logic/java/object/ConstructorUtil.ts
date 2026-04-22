@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -164,7 +167,7 @@ stringBuffer!.append(lineBreak);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

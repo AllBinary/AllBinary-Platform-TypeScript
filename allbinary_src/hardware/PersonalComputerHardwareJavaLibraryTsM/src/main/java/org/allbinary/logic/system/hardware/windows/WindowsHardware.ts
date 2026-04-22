@@ -85,7 +85,10 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -134,34 +137,34 @@ export class WindowsHardware
 public constructor (){
 
             super();
-            
+        
         try {
-            componentInterfaceVector= new Vector();
+            this.componentInterfaceVector= new Vector();
     
-videoInterfaceVector= new Vector();
+this.videoInterfaceVector= new Vector();
     
-hardDriveControllerInterfaceVector= new Vector();
+this.hardDriveControllerInterfaceVector= new Vector();
     
-cpuInterfaceVector= new Vector();
+this.cpuInterfaceVector= new Vector();
     
-usbInterfaceVector= new Vector();
+this.usbInterfaceVector= new Vector();
     
-ethernetInterfaceVector= new Vector();
+this.ethernetInterfaceVector= new Vector();
     
-multimediaInterfaceVector= new Vector();
+this.multimediaInterfaceVector= new Vector();
     
-fireWireInterfaceVector= new Vector();
+this.fireWireInterfaceVector= new Vector();
     
-bridgeInterfaceVector= new Vector();
+this.bridgeInterfaceVector= new Vector();
     
-hardDriveInterfaceVector= new Vector();
+this.hardDriveInterfaceVector= new Vector();
     
-macInterfaceVector= new Vector();
+this.macInterfaceVector= new Vector();
     
-monitorInterfaceVector= new Vector();
+this.monitorInterfaceVector= new Vector();
     
 
-                        if(componentInterfaceVector!.length < MINHARDWARE)
+                        if(this.componentInterfaceVector!.length < this.MINHARDWARE)
                         
                                     throw new Error("Not Enough Data For A Valid License On Windows")
 
@@ -296,7 +299,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multimediaInterfaceVector!.get(index);
+                        return this.multimediaInterfaceVector!.get(index);
 
                          as MediaInterface;
     
@@ -309,7 +312,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bridgeInterfaceVector!.get(index);
+                        return this.bridgeInterfaceVector!.get(index);
 
                          as BridgeInterface;
     
@@ -322,7 +325,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cpuInterfaceVector!.get(index);
+                        return this.cpuInterfaceVector!.get(index);
 
                          as CpuInterface;
     
@@ -335,7 +338,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ethernetInterfaceVector!.get(index);
+                        return this.ethernetInterfaceVector!.get(index);
 
                          as EthernetInterface;
     
@@ -348,7 +351,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return fireWireInterfaceVector!.get(index);
+                        return this.fireWireInterfaceVector!.get(index);
 
                          as FireWireInterface;
     
@@ -361,7 +364,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveControllerInterfaceVector!.get(index);
+                        return this.hardDriveControllerInterfaceVector!.get(index);
 
                          as HardDriveControllerInterface;
     
@@ -374,7 +377,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardDriveInterfaceVector!.get(index);
+                        return this.hardDriveInterfaceVector!.get(index);
 
                          as HardDriveInterface;
     
@@ -387,7 +390,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return macInterfaceVector!.get(index);
+                        return this.macInterfaceVector!.get(index);
 
                          as MachineAccessControlAddressInterface;
     
@@ -400,7 +403,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return monitorInterfaceVector!.get(index);
+                        return this.monitorInterfaceVector!.get(index);
 
                          as MonitorInterface;
     
@@ -413,7 +416,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return usbInterfaceVector!.get(index);
+                        return this.usbInterfaceVector!.get(index);
 
                          as UsbInterface;
     
@@ -426,7 +429,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return videoInterfaceVector!.get(index);
+                        return this.videoInterfaceVector!.get(index);
 
                          as VideoInterface;
     
@@ -439,7 +442,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterfaceVector!.get(index);
+                        return this.componentInterfaceVector!.get(index);
 
                          as HardwareComponentInterface;
     
@@ -454,7 +457,7 @@ var index = index
 ;
     
 
-    var size: number = componentInterfaceVector!.length!;
+    var size: number = this.componentInterfaceVector!.length!;
         
         
 ;
@@ -470,7 +473,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = componentInterfaceVector!.get(index);
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index);
 
                          as HardwareComponentInterface;
         

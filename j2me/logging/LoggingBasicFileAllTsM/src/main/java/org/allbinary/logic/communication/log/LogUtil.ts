@@ -40,7 +40,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ import { Log } from "./Log.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public putL(log: Log){

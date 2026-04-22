@@ -40,12 +40,17 @@ import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
+
 import { HelperFactory } from "./HelperFactory.js";
 
 export class AuthenticationHelperFactory
@@ -63,7 +68,7 @@ export class AuthenticationHelperFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

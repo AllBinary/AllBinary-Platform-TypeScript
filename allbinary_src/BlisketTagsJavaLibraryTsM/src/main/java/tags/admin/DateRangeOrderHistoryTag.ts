@@ -40,7 +40,10 @@ import { StoreValidationTransformTag } from "../../tags/StoreValidationTransform
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class DateRangeOrderHistoryTag extends StoreValidationTransformTag {
         
 
     private status: string
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

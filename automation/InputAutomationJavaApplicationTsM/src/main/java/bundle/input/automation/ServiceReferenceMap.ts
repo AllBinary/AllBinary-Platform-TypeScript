@@ -43,7 +43,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ var map = map
 public constructor (serviceReference: ServiceReference){
 
             super();
-            var serviceReference = serviceReference
+        var serviceReference = serviceReference
 this.serviceReference= serviceReference;
     
 }
@@ -172,7 +175,7 @@ var m = m
 
     public keySet(): Set{
 
-    var keyStringArray: string[] = serviceReference!.getPropertyKeys()!;
+    var keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;
         
         
 ;

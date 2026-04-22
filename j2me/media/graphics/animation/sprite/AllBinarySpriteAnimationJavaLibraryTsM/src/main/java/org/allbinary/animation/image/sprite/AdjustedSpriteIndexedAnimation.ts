@@ -46,7 +46,10 @@ import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/Basi
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ export class AdjustedSpriteIndexedAnimation extends SpriteIndexedAnimation {
     private dx: number
 
     private dy: number
-public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : this(sprite, image, BasicColorUtil.getInstance()!.ZERO_ARRAY, dx, dy, animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            this(sprite, image, BasicColorUtil.getInstance()!.ZERO_ARRAY, dx, dy, animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var dx = dx
     //var dy = dy
@@ -76,12 +76,9 @@ public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animat
                     
 }
 
-public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(sprite, image, basicColorArray, animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(sprite, image, basicColorArray, animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var basicColorArray = basicColorArray
     //var dx = dx

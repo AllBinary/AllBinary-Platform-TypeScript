@@ -46,7 +46,10 @@ import { BasicEventHandler } from "../../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,18 +78,18 @@ export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(miniMapLayer: MiniMapLayer){
 var miniMapLayer = miniMapLayer
 
-                        if(!list.contains(miniMapLayer);
+                        if(!this.list.contains(miniMapLayer);
 
                         )
                         
                                     {
-                                    list.add(miniMapLayer);
+                                    this.list.add(miniMapLayer);
     
 
                                     }

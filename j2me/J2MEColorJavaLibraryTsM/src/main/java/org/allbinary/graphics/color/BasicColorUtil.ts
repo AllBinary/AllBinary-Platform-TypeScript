@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class BasicColorUtil
         
         
 
-    public readonly ALPHA: number = 0xFF000000.toInt();
+    public readonly ALPHA: number = 0xFF000000;
         
         
 
@@ -74,18 +77,20 @@ var red = red
 var green = green
 var blue = blue
 
-    var value: number= 0
+    var value: number = 0;
+        
+        
 ;
     
 
-                        if(isAlpha)
+                        if(this.isAlpha)
                         
                                     {
                                     
-                        if(ffOpaque)
+                        if(this.ffOpaque)
                         
                                     {
-                                    value= ALPHA;
+                                    value= this.ALPHA;
     
 
                                     }
@@ -93,11 +98,11 @@ var blue = blue
 
                                     }
                                 
-value= (red shl 16) or value;
+value= (red<<16) | value;
     
-value= (green shl 8) or value;
+value= (green<<8) | value;
     
-value= blue or value;
+value= blue | value;
     
 
 
@@ -117,7 +122,7 @@ value= blue or value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ((alphaValue shl 24) and ALPHA) +((r shl 16) and 0x00FF0000) +((g shl 8) and 0x0000FF00) +(b and 0x000000FF);
+                        return ((alphaValue<<24)&this.ALPHA) +((r<<16)&0x00FF0000) +((g<<8)&0x0000FF00) +(b&0x000000FF);
     
 }
 
@@ -129,7 +134,7 @@ value= blue or value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ((alphaValue shl 24) and ALPHA) +color;
+                        return ((alphaValue<<24)&this.ALPHA) +color;
     
 }
 
@@ -140,7 +145,7 @@ value= blue or value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (0xFFFFFF -color) or ALPHA;
+                        return (0xFFFFFF -color) | this.ALPHA;
     
 }
 

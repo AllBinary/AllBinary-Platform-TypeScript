@@ -31,7 +31,10 @@ import { DataFileData } from "../../../../../../../org/allbinary/data/file/DataF
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class TransformInfoDataData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;

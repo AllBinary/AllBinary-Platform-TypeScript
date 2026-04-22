@@ -66,7 +66,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,14 +92,14 @@ export class CssPropertyValues
 public constructor (){
 
             super();
-            this.propertyValueVector= new Vector();
+        this.propertyValueVector= new Vector();
     
 }
 
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
         
@@ -244,7 +247,7 @@ this.propertyValueVector!.add(propertyValue);
 ;
     
 
-    var size: number = propertyValueVector!.length!;
+    var size: number = this.propertyValueVector!.length!;
         
         
 ;
@@ -260,7 +263,7 @@ this.propertyValueVector!.add(propertyValue);
 index < size; index++)
         {
 
-    var value: string = propertyValueVector!.get(index);
+    var value: string = this.propertyValueVector!.get(index);
 
                          as String;
         

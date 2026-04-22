@@ -60,7 +60,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ export class NotificationUtil
 private constructor (){
 
             super();
-            
+        
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
         
         
@@ -113,13 +116,13 @@ private constructor (){
                         if(SDK_VERSION > 22)
                         
                                     {
-                                    notificationBuilder= new NotificationBuilderAPI23();
+                                    this.notificationBuilder= new NotificationBuilderAPI23();
     
 
                                     }
                                 
                         else {
-                            notificationBuilder= NotificationBuilder.NULL_NOTIFICATION_BUILDER;
+                            this.notificationBuilder= NotificationBuilder.NULL_NOTIFICATION_BUILDER;
     
 
                         }
@@ -150,7 +153,7 @@ private constructor (){
 ;
     
 
-    var FLAG_IMMUTABLE: number = 1 shl 26;
+    var FLAG_IMMUTABLE: number = 1<<26;
         
         
 ;
@@ -175,7 +178,7 @@ private constructor (){
 ;
     
 
-                        if(notificationBuilder == 
+                        if(this.notificationBuilder == 
                                     null
                                 )
                         
@@ -197,7 +200,7 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTE
 
                                     }
                                 
-notificationBuilder!.build(context, command, message, integer, pendingIntent);
+this.notificationBuilder!.build(context, command, message, integer, pendingIntent);
     
 }
 

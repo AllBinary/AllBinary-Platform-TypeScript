@@ -51,7 +51,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class NumberTextFieldItemValidator extends ValidatorBase {
 public constructor (textFieldItem: TextFieldItem, maxChars: number, min: number, max: number){
 
             super();
-            var textFieldItem = textFieldItem
+        var textFieldItem = textFieldItem
 var maxChars = maxChars
 var min = min
 var max = max
@@ -127,7 +130,7 @@ var value = value
 ;
     
 
-                        if(textLength > 0 && textLength < maxChars)
+                        if(textLength > 0 && textLength < this.maxChars)
                         
                                     {
                                     
@@ -156,7 +159,7 @@ result= BooleanFactory.getInstance()!.FALSE;
                                     }
                                 
                              else 
-                        if(textLength > maxChars)
+                        if(textLength > this.maxChars)
                         
                                     {
                                     result= BooleanFactory.getInstance()!.FALSE;
@@ -220,7 +223,7 @@ result= BooleanFactory.getInstance()!.FALSE;
 ;
     
 
-                        if(textLength > 0 && textLength < maxChars)
+                        if(textLength > 0 && textLength < this.maxChars)
                         
                                     {
                                     
@@ -232,7 +235,7 @@ result= BooleanFactory.getInstance()!.FALSE;
 ;
     
 
-                        if(number.toInt() > min)
+                        if(number.toInt() > this.min)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
@@ -243,7 +246,7 @@ list.add(stringMaker!.append(name)!.append(" is to small")!.toString());
                                     }
                                 
                              else 
-                        if(number.toInt() > max)
+                        if(number.toInt() > this.max)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
@@ -279,7 +282,7 @@ list.add(stringMaker!.append(name)!.append(" is to short")!.toString());
                                     }
                                 
                              else 
-                        if(textLength > maxChars)
+                        if(textLength > this.maxChars)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());

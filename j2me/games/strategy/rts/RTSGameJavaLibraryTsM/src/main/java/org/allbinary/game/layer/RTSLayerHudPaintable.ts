@@ -43,7 +43,10 @@ import { BasicWeaponPart } from "../../../../org/allbinary/game/part/weapon/Basi
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,7 +87,7 @@ export class RTSLayerHudPaintable extends SelectionHudPaintable {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public updateSelectionInfo(){
@@ -104,7 +107,7 @@ this.setName(this.getRtsLayer()!.getName());
     
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
     
-this.costY1= (y +((weaponProperties!.length +1) *charHeight));
+this.costY1= (y +((this.weaponProperties!.length +1) *charHeight));
     
 
                         if(!AndroidUtil.isAndroid();
@@ -118,7 +121,7 @@ this.costY1= (y +((weaponProperties!.length +1) *charHeight));
                                     }
                                 
                         else {
-                            this.costY= (y +((weaponProperties!.length +2) *charHeight));
+                            this.costY= (y +((this.weaponProperties!.length +2) *charHeight));
     
 
                         }
@@ -137,7 +140,7 @@ super.paint(graphics);
 ;
     
 
-    var size: number = weaponProperties!.length
+    var size: number = this.weaponProperties!.length
                 ;
         
         

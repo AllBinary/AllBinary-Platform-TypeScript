@@ -40,7 +40,10 @@ import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphic
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
 public constructor (lockedIndex: number){
 
             super();
-            var lockedIndex = lockedIndex
+        var lockedIndex = lockedIndex
 this.lockedIndex= lockedIndex;
     
 }

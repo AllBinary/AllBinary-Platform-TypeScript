@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -64,7 +64,10 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class XmlOptionItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -105,15 +108,15 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(BasicItemData.ID);
     
-this.xmlFileStatus= request.getParameter(XmlOptionItemData.XML_FILE_STATUS);
+this.xmlFileStatus= this.request.getParameter(XmlOptionItemData.XML_FILE_STATUS);
     
-this.optionXmlFile= request.getParameter(XmlOptionItemData.OPTION_XML_FILE);
+this.optionXmlFile= this.request.getParameter(XmlOptionItemData.OPTION_XML_FILE);
     
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+this.timeEntered= this.request.getParameter(EntryData.getInstance()!.TIMECREATED);
     
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
     
 }
 
@@ -190,7 +193,7 @@ values.add(time);
 XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +id +" into items table";
+    var success: string = "Successfully inserted " +this.id +" into items table";
         
         
 ;
@@ -215,7 +218,7 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +id +" into items table";
+    var error: string = "Failed to insert " +this.id +" into items table";
         
         
 ;
@@ -243,7 +246,7 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.in
     public delete(): string{
 
         try {
-            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(id);
+            XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.delete(this.id);
     
 
     var success: string = "Successfully deleted";
@@ -318,7 +321,7 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.up
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
+                            append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }
@@ -334,7 +337,7 @@ XmlOptionItemsEntityFactory.getInstance()!.getXmlOptionItemsEntityInstance()!.up
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +id;
+    var error: string = "Failed to update: " +this.id;
         
         
 ;

@@ -52,7 +52,10 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 
 
 

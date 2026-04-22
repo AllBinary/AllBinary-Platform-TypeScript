@@ -46,12 +46,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CompleteMotionGestureInputInterface } from "./CompleteMotionGestureInputInterface.js";
+
 export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implements CompleteMotionGestureInputInterface {
         
 
@@ -70,12 +75,9 @@ export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implem
     private motionGestureInput: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
         
         
-public constructor (name: string, motionGestureInput: MotionGestureInput)                        
-
-                            : super(motionGestureInput){
-
-            super();
-            var name = name
+public constructor (name: string, motionGestureInput: MotionGestureInput){
+            super(motionGestureInput);
+                    var name = name
 var motionGestureInput = motionGestureInput
 
 

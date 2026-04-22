@@ -34,7 +34,10 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class Bridge
 public constructor (data: string){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }

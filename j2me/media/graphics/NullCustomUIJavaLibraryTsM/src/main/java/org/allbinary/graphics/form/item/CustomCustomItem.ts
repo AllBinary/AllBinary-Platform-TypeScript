@@ -17,7 +17,10 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
 
-        
+
+
+
+
 
 
 
@@ -27,12 +30,9 @@ import { CustomItem } from "./CustomItem.js";
 
 export class CustomCustomItem extends CustomItem {
         
-protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(label, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var label = label
+protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(label, backgroundBasicColor, foregroundBasicColor);
+                    var label = label
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor
 

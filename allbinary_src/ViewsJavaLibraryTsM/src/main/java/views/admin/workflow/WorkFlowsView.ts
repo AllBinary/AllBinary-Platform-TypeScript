@@ -61,7 +61,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class WorkFlowsView extends HttpStoreComponentView implements DomNodeInte
         
 
     private workFlowsVector: Vector
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -144,7 +144,7 @@ var document = document
 ;
     
 
-    var size: number = workFlowsVector!.length!;
+    var size: number = this.workFlowsVector!.length!;
         
         
 ;
@@ -160,7 +160,7 @@ var document = document
 index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = workFlowsVector!.get(index);
+    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index);
 
                          as WorkFlowInterface;
         

@@ -40,7 +40,10 @@ import { AbeClientInformationInterface } from "../../../../../../../../org/allbi
 
 
 
-        
+
+
+
+
 
 
 
@@ -90,7 +93,7 @@ params[0]= userInterface as Object;
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

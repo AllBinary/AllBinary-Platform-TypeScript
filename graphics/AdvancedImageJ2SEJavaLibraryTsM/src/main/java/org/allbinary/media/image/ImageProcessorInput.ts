@@ -34,7 +34,10 @@ import { File } from "../../../../java/io/File.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,12 +51,9 @@ export class ImageProcessorInput
     private bufferedImageArray: BufferedImage[]
 
     private files: File[]
-public constructor (files: File[], bufferedImageArray: BufferedImage[])                        
-
-                            : super(){
-
+public constructor (files: File[], bufferedImageArray: BufferedImage[]){
             super();
-            var files = files
+                    var files = files
 var bufferedImageArray = bufferedImageArray
 
 

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TransformInfoObjectData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly UNCRYPTED_EXTENSION: string = "class";

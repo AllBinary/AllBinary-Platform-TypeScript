@@ -325,12 +325,21 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
+
+import { MenuListener } from "./MenuListener.js";
+
+import { DemoPaintableInterface } from "./DemoPaintableInterface.js";
+
 import { NullGameCanvas } from "./NullGameCanvas.js";
 
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
@@ -342,8 +351,6 @@ import { FormUtil } from "./FormUtil.js";
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
 import { DemoLimitedCommandTextItemArrayFactory } from "./DemoLimitedCommandTextItemArrayFactory.js";
-
-import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 
 import { DemoCanvasProgressUtil } from "./DemoCanvasProgressUtil.js";
 
@@ -481,12 +488,9 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
     gameRunnable: GameRunnable = NullWaitGameRunnable.getInstance()!;
         
         
-public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean)                        
-
-                            : super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean){
+            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST);
+                        //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var highScoresFactoryInterface = highScoresFactoryInterface
     //var paintable = paintable
@@ -959,11 +963,11 @@ var repeated = repeated
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
@@ -975,10 +979,10 @@ DownGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
                                 
                         else {
                             
-                        if(lastKeyNotMapped != keyCode)
+                        if(this.lastKeyNotMapped != keyCode)
                         
                                     {
-                                    lastKeyNotMapped= keyCode;
+                                    this.lastKeyNotMapped= keyCode;
     
 this.logUtil!.putF(new StringMaker().
                             append(this.gameInputStrings!.NO_KEY)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
@@ -1012,11 +1016,11 @@ var repeated = repeated
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
@@ -1273,7 +1277,7 @@ this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface();
 
                         if(!this.demoGameRunnable!.isRunning();
 
-                         && gameCanvas!.isInitialized())
+                         && this.gameCanvas!.isInitialized())
                         
                                     {
                                     this.getSpecialAnimationInterface()!.reset();
@@ -1303,7 +1307,7 @@ this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface();
                                     }
                                 
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -1391,9 +1395,9 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
 PreLogUtil.put(new StringMaker().
                             append("Game Thread in DemoCanvas: ")!.append(this.stringUtil!.toString(gameCanvas))!.toString(), this, commonStrings!.START);
     
-this.canvasThread= threadFactoryUtil!.getInstance(gameCanvas);
+this.canvasThread= this.threadFactoryUtil!.getInstance(gameCanvas);
     
-this.gameCanvas!.setThread(canvasThread);
+this.gameCanvas!.setThread(this.canvasThread);
     
 this.threadFactoryUtil!.start(this.canvasThread);
     
@@ -1411,7 +1415,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
 
     public preDemoProcess(){
 
-                        if(!gameCanvas!.isInitialized();
+                        if(!this.gameCanvas!.isInitialized();
 
                          || gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
                         
@@ -1467,7 +1471,7 @@ this.preDemoProcess();
                         if(indexedAnimationBehavior!.loopIndex < 1)
                         
                                     {
-                                    timeDelayHelper!.setStartTime();
+                                    this.timeDelayHelper!.setStartTime();
     
 
                                     }
@@ -1512,24 +1516,24 @@ this.start();
                         
                                     {
                                     
-                        if(!demoGameRunnable!.isRunning();
+                        if(!this.demoGameRunnable!.isRunning();
 
                         )
                         
                                     {
                                     this.startDemoGame();
     
-demoGameRunnable!.setRunning(true);
+this.demoGameRunnable!.setRunning(true);
     
 
-    var thread: Thread = threadFactoryUtil!.getInstance(demoGameRunnable)!;
+    var thread: Thread = this.threadFactoryUtil!.getInstance(this.demoGameRunnable)!;
         
         
 ;
     
-demoGameRunnable!.setThread(thread);
+this.demoGameRunnable!.setThread(thread);
     
-threadFactoryUtil!.start(thread);
+this.threadFactoryUtil!.start(thread);
     
 
                                     }
@@ -1618,7 +1622,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return !this.demoGameRunnable!.isRunning();
 
-                         && gameCanvas!.isInitialized();
+                         && this.gameCanvas!.isInitialized();
     
 }
 
@@ -1640,7 +1644,7 @@ this.gameRunnable!.run();
                                     }
                                 
 
-                        if(timeDelayHelper!.isTime() && this.isReadyForStateChange())
+                        if(this.timeDelayHelper!.isTime() && this.isReadyForStateChange())
                         
                                     {
                                     this.demoStateChange();
@@ -1701,7 +1705,7 @@ this.setRunning(true);
 
                         }
                             
-fullScreenUtil!.init(this, this.getCustomCommandListener());
+this.fullScreenUtil!.init(this, this.getCustomCommandListener());
     
 this.initMenu();
     
@@ -1714,7 +1718,7 @@ this.setState();
                         
                                     {
                                     
-        while(gameCanvas == NullGameCanvas.getInstance() || !gameCanvas!.isInitialized();
+        while(this.gameCanvas == NullGameCanvas.getInstance() || !this.gameCanvas!.isInitialized();
 
                         )
         {

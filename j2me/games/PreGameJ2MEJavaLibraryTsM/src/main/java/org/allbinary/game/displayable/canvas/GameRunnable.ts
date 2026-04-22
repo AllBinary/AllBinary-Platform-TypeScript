@@ -31,12 +31,17 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 export class GameRunnable
             extends Object
          implements Runnable {
@@ -50,13 +55,13 @@ export class GameRunnable
         
         
 
-    public wait: number = WAIT.toLong();
+    public wait: number = WAIT;
         
         
 public constructor (){
 
             super();
-            }
+        }
 
 
     public run(){
@@ -68,7 +73,7 @@ DisplayInfoSingleton.getInstance()!.process();
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-Thread.sleep(wait);
+Thread.sleep(this.wait);
     
 }
 

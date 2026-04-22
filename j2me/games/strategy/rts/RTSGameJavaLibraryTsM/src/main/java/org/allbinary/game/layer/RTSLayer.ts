@@ -160,12 +160,19 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RTSInterface } from "./RTSInterface.js";
+
+import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
@@ -175,8 +182,6 @@ import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
-
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
@@ -344,12 +349,9 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
     private selected: boolean = false;
         
         
-protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
-
-                            : this(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition()){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
+            this(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
+                        //var remoteInfo = remoteInfo
     //var groupInterface = groupInterface
     //var rootName = rootName
     //var name = name
@@ -370,12 +372,9 @@ protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName
                     
 }
 
-protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition)                        
-
-                            : super(remoteInfo, groupInterface, name, rectangle, viewPosition){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
+            super(remoteInfo, groupInterface, name, rectangle, viewPosition);
+                        //var remoteInfo = remoteInfo
     //var groupInterface = groupInterface
     //var rootName = rootName
     //var name = name
@@ -447,12 +446,9 @@ this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
     
 }
 
-protected constructor (remoteInfo: RemoteInfo)                        
-
-                            : super(remoteInfo, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, RectangleFactory.SINGLETON, new TileLayerPositionIntoViewPosition()){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo){
+            super(remoteInfo, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, RectangleFactory.SINGLETON, new TileLayerPositionIntoViewPosition());
+                        //var remoteInfo = remoteInfo
 
 
                             //For kotlin this is before the body of the constructor.
@@ -748,20 +744,20 @@ this.getAnimationInterface()!.paint(graphics, viewX, viewY);
         
 
     public downgrade(){
-rtsLayerUtil!.downgrade(this);
+this.rtsLayerUtil!.downgrade(this);
     
 }
 
 
     public upgrade(){
-rtsLayerUtil!.upgrade(this);
+this.rtsLayerUtil!.upgrade(this);
     
 }
 
 
     public isCompleted(): boolean{
 
-                        if(this.hackVerticleBuild < BUILD_VALUE)
+                        if(this.hackVerticleBuild < this.BUILD_VALUE)
                         
                                     {
                                     
@@ -802,7 +798,7 @@ this.hackVerticleBuild++;
 
                                     }
                                 
-this.percentCompleteP= 100 *this.hackVerticleBuild /BUILD_VALUE;
+this.percentCompleteP= 100 *this.hackVerticleBuild /this.BUILD_VALUE;
     
 this.getHudPaintable()!.updateInfo();
     
@@ -1345,7 +1341,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexedButShouldBeRotationAnimationInterface as RotationAnimation;
+                        return this.indexedButShouldBeRotationAnimationInterface as RotationAnimation;
     
 }
 

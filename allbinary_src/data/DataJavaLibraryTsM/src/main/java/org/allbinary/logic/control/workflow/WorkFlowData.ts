@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class WorkFlowData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public WORKFLOWS: string = "WORKFLOWS";

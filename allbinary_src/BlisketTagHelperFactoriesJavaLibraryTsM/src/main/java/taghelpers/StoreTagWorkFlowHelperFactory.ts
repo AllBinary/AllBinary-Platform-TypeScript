@@ -43,7 +43,10 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class StoreTagWorkFlowHelperFactory extends TagHelperFactory {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class, LicensingException::class)

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class NoScoreable extends Scoreable {
     
 }
 
-private constructor ()                        
-
-                            : super(0){
-
-            super();
-            
+private constructor (){
+            super(0);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

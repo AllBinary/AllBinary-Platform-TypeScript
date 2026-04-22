@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { AbeClientInformation } from "./AbeClientInformation.js";
 
 export class TestClientInformation extends AbeClientInformation {
         
-public constructor ()                        
-
-                            : super("Test App Name", "0.0.1", "Test App Name 0.0.1", "TA"){
-
-            super();
-            
+public constructor (){
+            super("Test App Name", "0.0.1", "Test App Name 0.0.1", "TA");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

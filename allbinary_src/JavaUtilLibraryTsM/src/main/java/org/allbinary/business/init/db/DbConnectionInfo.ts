@@ -37,12 +37,17 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DatabaseConnectionInfoInterface } from "./DatabaseConnectionInfoInterface.js";
+
 export class DbConnectionInfo
             extends Object
          implements DatabaseConnectionInfoInterface {
@@ -80,7 +85,7 @@ export class DbConnectionInfo
 public constructor (){
 
             super();
-            }
+        }
 
 
     updateUrl(){
@@ -114,7 +119,7 @@ this.url= stringBuffer!.toString();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return url;
+                        return this.url;
     
 }
 

@@ -37,7 +37,10 @@ import { PathFinderGraphVisitorBase } from "../../../../../../../../org/allbinar
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class PathFinderGraphHackVisitorFactory extends PathFinderGraphVisitorFac
     private readonly minPathWeight: number
 
     private readonly maxPathWeight: number
-public constructor ()                        
-
-                            : this(10, 8, 100000){
-
-            super();
-            
+public constructor (){
+            this(10, 8, 100000);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -65,7 +65,7 @@ public constructor ()
 public constructor (edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-            var edgeMinimum = edgeMinimum
+        var edgeMinimum = edgeMinimum
 var minPathWeight = minPathWeight
 var maxPathWeight = maxPathWeight
 this.edgeMinimum= edgeMinimum;

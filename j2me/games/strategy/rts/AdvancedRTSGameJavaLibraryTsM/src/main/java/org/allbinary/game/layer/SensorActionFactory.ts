@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class SensorActionFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly ATTACK: SensorAction = new SensorAction("Attack");

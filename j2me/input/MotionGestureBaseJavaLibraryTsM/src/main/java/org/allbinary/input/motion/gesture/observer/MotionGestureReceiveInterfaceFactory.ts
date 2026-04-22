@@ -34,7 +34,10 @@ import { MotionGestureConfigurationFactory } from "../../../../../../org/allbina
 
 
 
-        
+
+
+
+
 
 
 

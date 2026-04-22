@@ -34,12 +34,17 @@ import { Proxy } from "../../../../../java/lang/reflect/Proxy.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InvocationHandler } from "./InvocationHandler.js";
+
 export class InterfaceCastProxy
             extends Object
          implements java.lang.reflect.InvocationHandler {
@@ -62,7 +67,7 @@ var anyType = anyType
 private constructor (anyType: any = {}){
 
             super();
-            var anyType = anyType
+        var anyType = anyType
 this.anyType= anyType;
     
 }

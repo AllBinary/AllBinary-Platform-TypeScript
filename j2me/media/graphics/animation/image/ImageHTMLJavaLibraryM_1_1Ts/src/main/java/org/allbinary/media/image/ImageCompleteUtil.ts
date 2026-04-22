@@ -43,7 +43,10 @@ import { PlaynImage } from "../../../../org/microemu/device/playn/PlaynImage.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -149,7 +152,7 @@ var name = name
         
 ;
     
-PreLogUtil.put(COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
+PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
     
 
 

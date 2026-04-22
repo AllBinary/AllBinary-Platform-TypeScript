@@ -31,7 +31,10 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,19 +69,19 @@ export class TrackballMotionGestureFactory
 private constructor (){
 
             super();
-            
+        
     var MAX: number = InputFactory.getInstance()!.MAX;
         
         
 ;
     
-LEFT= new MotionGestureInput(MAX -26, "L Trackball");
+this.LEFT= new MotionGestureInput(MAX -26, "L Trackball");
     
-RIGHT= new MotionGestureInput(MAX -27, "R Trackball");
+this.RIGHT= new MotionGestureInput(MAX -27, "R Trackball");
     
-UP= new MotionGestureInput(MAX -28, "Up Trackball");
+this.UP= new MotionGestureInput(MAX -28, "Up Trackball");
     
-DOWN= new MotionGestureInput(MAX -29, "D Trackball");
+this.DOWN= new MotionGestureInput(MAX -29, "D Trackball");
     
 }
 

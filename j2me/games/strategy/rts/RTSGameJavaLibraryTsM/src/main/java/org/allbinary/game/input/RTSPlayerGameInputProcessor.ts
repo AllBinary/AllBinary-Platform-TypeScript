@@ -31,7 +31,10 @@ import { GameInputProcessor } from "../../../../org/allbinary/game/input/GameInp
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class RTSPlayerGameInputProcessor extends GameInputProcessor {
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
 
             super();
-            var rtsPlayerGameInput = rtsPlayerGameInput
+        var rtsPlayerGameInput = rtsPlayerGameInput
 this.rtsPlayerGameInput= rtsPlayerGameInput;
     
 }

@@ -55,7 +55,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class CssProperty
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.propertyName= name;
     
 this.cssPropertyValues= new CssPropertyValues();
@@ -88,7 +91,7 @@ this.cssPropertyValues= new CssPropertyValues();
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
         

@@ -40,7 +40,10 @@ import { LogUtil } from "../../../../../../../../../../org/allbinary/logic/commu
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class RemoveActionScriptItemJPanel extends java.awt.Panel {
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, profileActionScriptConditionInterface: ProfileActionScriptConditionInterface){
 
             super();
-            var genericProfileActionJPanel = genericProfileActionJPanel
+        var genericProfileActionJPanel = genericProfileActionJPanel
 var profileActionScriptConditionInterface = profileActionScriptConditionInterface
 initComponents();
     
@@ -75,11 +78,11 @@ this.profileActionScriptConditionInterface= profileActionScriptConditionInterfac
 
 
     initComponents(){
-removeJButton= new javax.swing.JButton();
+this.removeJButton= new javax.swing.JButton();
     
 setLayout(new java.awt.GridLayout());
     
-removeJButton!.setText("Remove");
+this.removeJButton!.setText("Remove");
     
 removeJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -93,7 +96,7 @@ removeJButtonActionPerformed(evt);
                                 }
                             );
     
-add(removeJButton);
+add(this.removeJButton);
     
 }
 

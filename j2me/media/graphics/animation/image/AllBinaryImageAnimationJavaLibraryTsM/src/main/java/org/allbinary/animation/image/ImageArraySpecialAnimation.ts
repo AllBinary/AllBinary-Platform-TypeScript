@@ -49,7 +49,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,12 +66,9 @@ export class ImageArraySpecialAnimation extends ImageArrayAnimation implements S
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(270);
         
         
-public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
-
-                            : super(imageArray, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
+            super(imageArray, animationBehavior);
+                        //var imageArray = imageArray
     //var animationBehavior = animationBehavior
 
 
@@ -102,7 +102,7 @@ this.circularIndexUtil!.setIndex(this.circularIndexUtil!.getSize() -1);
     public reset(){
 this.setFrame(this.getSize() -1);
     
-loopCount= 0;
+this.loopCount= 0;
     
 }
 
@@ -113,7 +113,7 @@ loopCount= 0;
                         
                                     {
                                     
-                        if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
+                        if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
                                     this.previousFrame();
@@ -142,7 +142,7 @@ loopCount= 0;
 
     public isComplete(): boolean{
 
-                        if(loopCount < loopCountTotal || this.getFrame() != 0)
+                        if(this.loopCount < this.loopCountTotal || this.getFrame() != 0)
                         
                                     {
                                     
@@ -171,7 +171,7 @@ loopCount= 0;
     //var graphics = graphics
 var x = x
 var y = y
-x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.circularIndexUtil!.getIndex())!.getWidth() shr 1);
+x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.circularIndexUtil!.getIndex())!.getWidth()>>1);
     
 y= 5;
     

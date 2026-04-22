@@ -97,12 +97,17 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
+
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 
@@ -145,12 +150,9 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
     public isDragged: boolean = false;
         
         
-public constructor (groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(layerInfo, viewPosition){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(layerInfo, viewPosition);
+                        //var groupInterface = groupInterface
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
 
@@ -167,12 +169,9 @@ this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
     
 }
 
-public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(name, layerInfo, viewPosition){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(name, layerInfo, viewPosition);
+                        //var groupInterface = groupInterface
     //var name = name
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
@@ -596,7 +595,7 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
     
 stringBuffer!.append(READYFOREXPLOSION);
     
-stringBuffer!.appendboolean(readyForExplosion);
+stringBuffer!.appendboolean(this.readyForExplosion);
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
@@ -606,15 +605,15 @@ stringBuffer!.append(commonSeps!.SPACE);
     
 stringBuffer!.append(positionStrings!.X_LABEL);
     
-stringBuffer!.appendint(initX);
+stringBuffer!.appendint(this.initX);
     
 stringBuffer!.append(positionStrings!.Y_LABEL);
     
-stringBuffer!.appendint(initX);
+stringBuffer!.appendint(this.initX);
     
 stringBuffer!.append(positionStrings!.Z_LABEL);
     
-stringBuffer!.appendint(initZ);
+stringBuffer!.appendint(this.initZ);
     
 }
 

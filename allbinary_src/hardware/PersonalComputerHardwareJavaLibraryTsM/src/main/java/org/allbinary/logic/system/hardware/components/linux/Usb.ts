@@ -34,7 +34,10 @@ import { UsbInterface } from "../../../../../../../org/allbinary/logic/system/ha
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class Usb
 public constructor (data: string){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }

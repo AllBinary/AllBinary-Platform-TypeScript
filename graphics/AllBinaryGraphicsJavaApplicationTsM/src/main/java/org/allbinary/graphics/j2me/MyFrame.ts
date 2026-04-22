@@ -102,13 +102,18 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { JFrame } from "./JFrame.js";
+
+import { KeyListener } from "./KeyListener.js";
 
 import { MouseEvent } from "./MouseEvent.js";
 
@@ -208,7 +213,7 @@ logUtil!.put(CommonStrings.getInstance()!.EXCEPTION,
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 this.setSize(new Dimension(550, 400));
     
@@ -216,9 +221,9 @@ this.mainJPanel!.setSize(new Dimension(550, 400));
     
 this.jTabbedPane!.setSize(new Dimension(550, 400));
     
-fileJDialog= new FileJDialog();
+this.fileJDialog= new FileJDialog();
     
-fileJDialog!.addFinishedListener(this);
+this.fileJDialog!.addFinishedListener(this);
     
 this.rotateJDialog= new RotateJDialog(this, false);
     
@@ -228,97 +233,97 @@ this.rotateJDialog= new RotateJDialog(this, false);
     initComponents(){
 jToolBar1= new javax.swing.JToolBar();
     
-jButton2= new javax.swing.JButton();
+this.jButton2= new javax.swing.JButton();
     
-saveJButton= new javax.swing.JButton();
+this.saveJButton= new javax.swing.JButton();
     
-jButton1= new javax.swing.JButton();
+this.jButton1= new javax.swing.JButton();
     
-openJButton= new javax.swing.JButton();
+this.openJButton= new javax.swing.JButton();
     
-jButton3= new javax.swing.JButton();
+this.jButton3= new javax.swing.JButton();
     
-jButton4= new javax.swing.JButton();
+this.jButton4= new javax.swing.JButton();
     
-jButton41= new javax.swing.JButton();
+this.jButton41= new javax.swing.JButton();
     
-jButton5= new javax.swing.JButton();
+this.jButton5= new javax.swing.JButton();
     
-animateJButton= new javax.swing.JButton();
+this.animateJButton= new javax.swing.JButton();
     
-playJButton= new javax.swing.JButton();
+this.playJButton= new javax.swing.JButton();
     
-stopJjButton= new javax.swing.JButton();
+this.stopJjButton= new javax.swing.JButton();
     
-jPanel1= new javax.swing.JPanel();
+this.jPanel1= new javax.swing.JPanel();
     
-mainJPanel= new javax.swing.JPanel();
+this.mainJPanel= new javax.swing.JPanel();
     
-jTabbedPane= new javax.swing.JTabbedPane();
+this.jTabbedPane= new javax.swing.JTabbedPane();
     
-statusJPanel= new javax.swing.JPanel();
+this.statusJPanel= new javax.swing.JPanel();
     
 statusJLabel= new javax.swing.JLabel();
     
-menuJMenuBar= new javax.swing.JMenuBar();
+this.menuJMenuBar= new javax.swing.JMenuBar();
     
-fileJMenu= new javax.swing.JMenu();
+this.fileJMenu= new javax.swing.JMenu();
     
-newJMenuItem= new javax.swing.JMenuItem();
+this.newJMenuItem= new javax.swing.JMenuItem();
     
-openJMenuItem= new javax.swing.JMenuItem();
+this.openJMenuItem= new javax.swing.JMenuItem();
     
-saveJMenuItem= new javax.swing.JMenuItem();
+this.saveJMenuItem= new javax.swing.JMenuItem();
     
-saveAsJMenuItem= new javax.swing.JMenuItem();
+this.saveAsJMenuItem= new javax.swing.JMenuItem();
     
-exportJMenuItem1= new javax.swing.JMenuItem();
+this.exportJMenuItem1= new javax.swing.JMenuItem();
     
-exitJMenuItem= new javax.swing.JMenuItem();
+this.exitJMenuItem= new javax.swing.JMenuItem();
     
-viewJMenu= new javax.swing.JMenu();
+this.viewJMenu= new javax.swing.JMenu();
     
-zoomInJMenuItem= new javax.swing.JMenuItem();
+this.zoomInJMenuItem= new javax.swing.JMenuItem();
     
-zoomOutJMenuItem= new javax.swing.JMenuItem();
+this.zoomOutJMenuItem= new javax.swing.JMenuItem();
     
-objectJMenu= new javax.swing.JMenu();
+this.objectJMenu= new javax.swing.JMenu();
     
-explodeAllJMenuItem= new javax.swing.JMenuItem();
+this.explodeAllJMenuItem= new javax.swing.JMenuItem();
     
-frameJMenu= new javax.swing.JMenu();
+this.frameJMenu= new javax.swing.JMenu();
     
-previousFrameJMenuItem= new javax.swing.JMenuItem();
+this.previousFrameJMenuItem= new javax.swing.JMenuItem();
     
-nextFrameJMenuItem= new javax.swing.JMenuItem();
+this.nextFrameJMenuItem= new javax.swing.JMenuItem();
     
-removeJMenuItem= new javax.swing.JMenuItem();
+this.removeJMenuItem= new javax.swing.JMenuItem();
     
-copyJMenuItem1= new javax.swing.JMenuItem();
+this.copyJMenuItem1= new javax.swing.JMenuItem();
     
-insertAfterJMenuItem= new javax.swing.JMenuItem();
+this.insertAfterJMenuItem= new javax.swing.JMenuItem();
     
-insertBeforeJMenuItem= new javax.swing.JMenuItem();
+this.insertBeforeJMenuItem= new javax.swing.JMenuItem();
     
-generateJMenu= new javax.swing.JMenu();
+this.generateJMenu= new javax.swing.JMenu();
     
-centerJMenuItem= new javax.swing.JMenuItem();
+this.centerJMenuItem= new javax.swing.JMenuItem();
     
-autoDamageJMenuItem= new javax.swing.JMenuItem();
+this.autoDamageJMenuItem= new javax.swing.JMenuItem();
     
-autoExplodeJMenuItem= new javax.swing.JMenuItem();
+this.autoExplodeJMenuItem= new javax.swing.JMenuItem();
     
-autoGrowJMenuItem= new javax.swing.JMenuItem();
+this.autoGrowJMenuItem= new javax.swing.JMenuItem();
     
-jMenuItem1= new javax.swing.JMenuItem();
+this.jMenuItem1= new javax.swing.JMenuItem();
     
-autoRotateGenerationJMenuItem= new javax.swing.JMenuItem();
+this.autoRotateGenerationJMenuItem= new javax.swing.JMenuItem();
     
-autoSheildMenuItem= new javax.swing.JMenuItem();
+this.autoSheildMenuItem= new javax.swing.JMenuItem();
     
-autoShrinkJMenuItem= new javax.swing.JMenuItem();
+this.autoShrinkJMenuItem= new javax.swing.JMenuItem();
     
-jMenu1= new javax.swing.JMenu();
+this.jMenu1= new javax.swing.JMenu();
     
 addWindowListener(new object: java.awt.event.WindowAdapter()
                                 {
@@ -332,7 +337,7 @@ exitForm(evt);
                                 }
                             );
     
-jButton2!.setText("New");
+this.jButton2!.setText("New");
     
 jButton2!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -346,9 +351,9 @@ jButton2ActionPerformed(evt);
                                 }
                             );
     
-jToolBar1!.add(jButton2);
+this.jToolBar1!.add(this.jButton2);
     
-saveJButton!.setText("Save");
+this.saveJButton!.setText("Save");
     
 saveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -362,9 +367,9 @@ saveJButtonActionPerformed(evt);
                                 }
                             );
     
-jToolBar1!.add(saveJButton);
+this.jToolBar1!.add(this.saveJButton);
     
-jButton1!.setText("Export");
+this.jButton1!.setText("Export");
     
 jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -378,9 +383,9 @@ jButton1ActionPerformed(evt);
                                 }
                             );
     
-jToolBar1!.add(jButton1);
+this.jToolBar1!.add(this.jButton1);
     
-openJButton!.setText("Open");
+this.openJButton!.setText("Open");
     
 openJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -394,29 +399,29 @@ openJButtonActionPerformed(evt);
                                 }
                             );
     
-jToolBar1!.add(openJButton);
+this.jToolBar1!.add(this.openJButton);
     
-jButton3!.setText("Copy");
+this.jButton3!.setText("Copy");
     
-jToolBar1!.add(jButton3);
+this.jToolBar1!.add(this.jButton3);
     
-jButton4!.setText("Insert Before");
+this.jButton4!.setText("Insert Before");
     
-jToolBar1!.add(jButton4);
+this.jToolBar1!.add(this.jButton4);
     
-jButton41!.setText("Insert After");
+this.jButton41!.setText("Insert After");
     
-jToolBar1!.add(jButton41);
+this.jToolBar1!.add(this.jButton41);
     
-jButton5!.setText("Delete");
+this.jButton5!.setText("Delete");
     
-jToolBar1!.add(jButton5);
+this.jToolBar1!.add(this.jButton5);
     
-animateJButton!.setText("AnimateEdit");
+this.animateJButton!.setText("AnimateEdit");
     
-jToolBar1!.add(animateJButton);
+this.jToolBar1!.add(this.animateJButton);
     
-playJButton!.setText("Play");
+this.playJButton!.setText("Play");
     
 playJButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -430,9 +435,9 @@ playJButtonMousePressed(evt);
                                 }
                             );
     
-jToolBar1!.add(playJButton);
+this.jToolBar1!.add(this.playJButton);
     
-stopJjButton!.setText("Stop");
+this.stopJjButton!.setText("Stop");
     
 stopJjButton!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -446,15 +451,15 @@ stopJjButtonMousePressed(evt);
                                 }
                             );
     
-jToolBar1!.add(stopJjButton);
+this.jToolBar1!.add(this.stopJjButton);
     
-getContentPane()!.add(jToolBar1, java.awt.BorderLayout.NORTH);
+getContentPane()!.add(this.jToolBar1, java.awt.BorderLayout.NORTH);
     
-jPanel1!.setLayout(new java.awt.GridLayout(1, 0));
+this.jPanel1!.setLayout(new java.awt.GridLayout(1, 0));
     
-mainJPanel!.setLayout(new java.awt.GridLayout(1, 0));
+this.mainJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
-jTabbedPane!.setMinimumSize(new java.awt.Dimension(550, 400));
+this.jTabbedPane!.setMinimumSize(new java.awt.Dimension(550, 400));
     
 jTabbedPane!.addChangeListener(new object: javax.swing.event.ChangeListener()
                                 {
@@ -468,21 +473,21 @@ jTabbedPaneStateChanged(evt);
                                 }
                             );
     
-mainJPanel!.add(jTabbedPane);
+this.mainJPanel!.add(this.jTabbedPane);
     
-jPanel1!.add(mainJPanel);
+this.jPanel1!.add(this.mainJPanel);
     
-getContentPane()!.add(jPanel1, java.awt.BorderLayout.CENTER);
+getContentPane()!.add(this.jPanel1, java.awt.BorderLayout.CENTER);
     
-statusJPanel!.setLayout(new java.awt.GridLayout(1, 0));
+this.statusJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 statusJLabel!.setText("Status Bar");
     
-statusJPanel!.add(statusJLabel);
+this.statusJPanel!.add(statusJLabel);
     
-getContentPane()!.add(statusJPanel, java.awt.BorderLayout.SOUTH);
+getContentPane()!.add(this.statusJPanel, java.awt.BorderLayout.SOUTH);
     
-fileJMenu!.setText("File");
+this.fileJMenu!.setText("File");
     
 fileJMenu!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -496,7 +501,7 @@ fileJMenuActionPerformed(evt);
                                 }
                             );
     
-newJMenuItem!.setText("New");
+this.newJMenuItem!.setText("New");
     
 newJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -510,9 +515,9 @@ newJMenuItemActionPerformed(evt);
                                 }
                             );
     
-fileJMenu!.add(newJMenuItem);
+this.fileJMenu!.add(this.newJMenuItem);
     
-openJMenuItem!.setText("Open");
+this.openJMenuItem!.setText("Open");
     
 openJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -526,9 +531,9 @@ openJMenuItemActionPerformed(evt);
                                 }
                             );
     
-fileJMenu!.add(openJMenuItem);
+this.fileJMenu!.add(this.openJMenuItem);
     
-saveJMenuItem!.setText("Save");
+this.saveJMenuItem!.setText("Save");
     
 saveJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -542,13 +547,13 @@ saveJMenuItemMousePressed(evt);
                                 }
                             );
     
-fileJMenu!.add(saveJMenuItem);
+this.fileJMenu!.add(this.saveJMenuItem);
     
-saveAsJMenuItem!.setText("SaveAs");
+this.saveAsJMenuItem!.setText("SaveAs");
     
-fileJMenu!.add(saveAsJMenuItem);
+this.fileJMenu!.add(this.saveAsJMenuItem);
     
-exportJMenuItem1!.setText("Export");
+this.exportJMenuItem1!.setText("Export");
     
 exportJMenuItem1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -562,9 +567,9 @@ exportJMenuItem1ActionPerformed(evt);
                                 }
                             );
     
-fileJMenu!.add(exportJMenuItem1);
+this.fileJMenu!.add(this.exportJMenuItem1);
     
-exitJMenuItem!.setText("Exit");
+this.exitJMenuItem!.setText("Exit");
     
 exitJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -578,13 +583,13 @@ exitJMenuItemActionPerformed(evt);
                                 }
                             );
     
-fileJMenu!.add(exitJMenuItem);
+this.fileJMenu!.add(this.exitJMenuItem);
     
-menuJMenuBar!.add(fileJMenu);
+this.menuJMenuBar!.add(this.fileJMenu);
     
-viewJMenu!.setText("View");
+this.viewJMenu!.setText("View");
     
-zoomInJMenuItem!.setText("Zoom In");
+this.zoomInJMenuItem!.setText("Zoom In");
     
 zoomInJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -598,9 +603,9 @@ zoomInJMenuItemMousePressed(evt);
                                 }
                             );
     
-viewJMenu!.add(zoomInJMenuItem);
+this.viewJMenu!.add(this.zoomInJMenuItem);
     
-zoomOutJMenuItem!.setText("Zoom Out");
+this.zoomOutJMenuItem!.setText("Zoom Out");
     
 zoomOutJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -614,13 +619,13 @@ zoomOutJMenuItemMousePressed(evt);
                                 }
                             );
     
-viewJMenu!.add(zoomOutJMenuItem);
+this.viewJMenu!.add(this.zoomOutJMenuItem);
     
-menuJMenuBar!.add(viewJMenu);
+this.menuJMenuBar!.add(this.viewJMenu);
     
-objectJMenu!.setText("Objects");
+this.objectJMenu!.setText("Objects");
     
-explodeAllJMenuItem!.setText("Explode All");
+this.explodeAllJMenuItem!.setText("Explode All");
     
 explodeAllJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -634,11 +639,11 @@ explodeAllJMenuItemMousePressed(evt);
                                 }
                             );
     
-objectJMenu!.add(explodeAllJMenuItem);
+this.objectJMenu!.add(this.explodeAllJMenuItem);
     
-menuJMenuBar!.add(objectJMenu);
+this.menuJMenuBar!.add(this.objectJMenu);
     
-frameJMenu!.setText("Frame");
+this.frameJMenu!.setText("Frame");
     
 frameJMenu!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -652,35 +657,35 @@ frameJMenuActionPerformed(evt);
                                 }
                             );
     
-previousFrameJMenuItem!.setText("Previous");
+this.previousFrameJMenuItem!.setText("Previous");
     
-frameJMenu!.add(previousFrameJMenuItem);
+this.frameJMenu!.add(this.previousFrameJMenuItem);
     
-nextFrameJMenuItem!.setText("Next");
+this.nextFrameJMenuItem!.setText("Next");
     
-frameJMenu!.add(nextFrameJMenuItem);
+this.frameJMenu!.add(this.nextFrameJMenuItem);
     
-removeJMenuItem!.setText("Remove");
+this.removeJMenuItem!.setText("Remove");
     
-frameJMenu!.add(removeJMenuItem);
+this.frameJMenu!.add(this.removeJMenuItem);
     
-copyJMenuItem1!.setText("Copy");
+this.copyJMenuItem1!.setText("Copy");
     
-frameJMenu!.add(copyJMenuItem1);
+this.frameJMenu!.add(this.copyJMenuItem1);
     
-insertAfterJMenuItem!.setText("Ins After");
+this.insertAfterJMenuItem!.setText("Ins After");
     
-frameJMenu!.add(insertAfterJMenuItem);
+this.frameJMenu!.add(this.insertAfterJMenuItem);
     
-insertBeforeJMenuItem!.setText("Ins Before");
+this.insertBeforeJMenuItem!.setText("Ins Before");
     
-frameJMenu!.add(insertBeforeJMenuItem);
+this.frameJMenu!.add(this.insertBeforeJMenuItem);
     
-menuJMenuBar!.add(frameJMenu);
+this.menuJMenuBar!.add(this.frameJMenu);
     
-generateJMenu!.setText("Generate");
+this.generateJMenu!.setText("Generate");
     
-centerJMenuItem!.setText("Center");
+this.centerJMenuItem!.setText("Center");
     
 centerJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -694,13 +699,13 @@ centerJMenuItemActionPerformed(evt);
                                 }
                             );
     
-generateJMenu!.add(centerJMenuItem);
+this.generateJMenu!.add(this.centerJMenuItem);
     
-autoDamageJMenuItem!.setText("Damage");
+this.autoDamageJMenuItem!.setText("Damage");
     
-generateJMenu!.add(autoDamageJMenuItem);
+this.generateJMenu!.add(this.autoDamageJMenuItem);
     
-autoExplodeJMenuItem!.setText("Explode");
+this.autoExplodeJMenuItem!.setText("Explode");
     
 autoExplodeJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -714,13 +719,13 @@ autoExplodeJMenuItemMousePressed(evt);
                                 }
                             );
     
-generateJMenu!.add(autoExplodeJMenuItem);
+this.generateJMenu!.add(this.autoExplodeJMenuItem);
     
-autoGrowJMenuItem!.setText("Grow");
+this.autoGrowJMenuItem!.setText("Grow");
     
-generateJMenu!.add(autoGrowJMenuItem);
+this.generateJMenu!.add(this.autoGrowJMenuItem);
     
-jMenuItem1!.setText("Mirror");
+this.jMenuItem1!.setText("Mirror");
     
 jMenuItem1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -734,9 +739,9 @@ jMenuItem1ActionPerformed(evt);
                                 }
                             );
     
-generateJMenu!.add(jMenuItem1);
+this.generateJMenu!.add(this.jMenuItem1);
     
-autoRotateGenerationJMenuItem!.setText("Rotate");
+this.autoRotateGenerationJMenuItem!.setText("Rotate");
     
 autoRotateGenerationJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -750,23 +755,23 @@ autoRotateGenerationJMenuItemMousePressed(evt);
                                 }
                             );
     
-generateJMenu!.add(autoRotateGenerationJMenuItem);
+this.generateJMenu!.add(this.autoRotateGenerationJMenuItem);
     
-autoSheildMenuItem!.setText("Shield");
+this.autoSheildMenuItem!.setText("Shield");
     
-generateJMenu!.add(autoSheildMenuItem);
+this.generateJMenu!.add(this.autoSheildMenuItem);
     
-autoShrinkJMenuItem!.setText("Shrink");
+this.autoShrinkJMenuItem!.setText("Shrink");
     
-generateJMenu!.add(autoShrinkJMenuItem);
+this.generateJMenu!.add(this.autoShrinkJMenuItem);
     
-menuJMenuBar!.add(generateJMenu);
+this.menuJMenuBar!.add(this.generateJMenu);
     
-jMenu1!.setText("Help");
+this.jMenu1!.setText("Help");
     
-menuJMenuBar!.add(jMenu1);
+this.menuJMenuBar!.add(this.jMenu1);
     
-setJMenuBar(menuJMenuBar);
+setJMenuBar(this.menuJMenuBar);
     
 pack();
     
@@ -784,7 +789,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMousePressed", e);
     
 }
 
@@ -802,7 +807,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMousePressed", e);
     
 }
 
@@ -928,7 +933,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
     
 }
 
@@ -959,7 +964,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPerformed", e);
     
 }
 
@@ -1006,7 +1011,7 @@ this.fileJDialog!.setVisible(false);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
     
 }
 
@@ -1042,7 +1047,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e);
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    guiLog!.put(commonStrings!.EXCEPTION, this, "newJMenuItemActionPerformed", e);
+                                    this.guiLog!.put(this.commonStrings!.EXCEPTION, this, "newJMenuItemActionPerformed", e);
     
 
                                     }
@@ -1057,7 +1062,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onFiles", e);
         try {
             this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
     
-fileJDialog!.setVisible(true);
+this.fileJDialog!.setVisible(true);
     
 
                 //: 
@@ -1067,7 +1072,7 @@ fileJDialog!.setVisible(true);
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    guiLog!.put(commonStrings!.EXCEPTION, this, "open", e);
+                                    this.guiLog!.put(this.commonStrings!.EXCEPTION, this, "open", e);
     
 
                                     }
@@ -1089,7 +1094,7 @@ fileJDialog!.setVisible(true);
 ;
     
 
-    var file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +JAVAEXTENSION);
+    var file: File = new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.JAVAEXTENSION);
         
         
 ;
@@ -1102,7 +1107,7 @@ fileJDialog!.setVisible(true);
     
 this.logUtil!.putF("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed");
     
-xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document);
+this.xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document);
     
 
                 //: 
@@ -1112,7 +1117,7 @@ xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, docu
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    guiLog!.put(commonStrings!.EXCEPTION, this, "export", e);
+                                    this.guiLog!.put(this.commonStrings!.EXCEPTION, this, "export", e);
     
 
                                     }
@@ -1133,7 +1138,7 @@ xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, docu
         
 ;
     
-DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +SAVEEXTENSION), workAreaJPanel!.toDocument());
+DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.SAVEEXTENSION), workAreaJPanel!.toDocument());
     
 
                 //: 
@@ -1143,7 +1148,7 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    guiLog!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+                                    this.guiLog!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
     
 
                                     }
@@ -1260,9 +1265,9 @@ var newCanvasInterface = newCanvasInterface
 
                                     }
                                 
-jTabbedPane!.addTab(newCanvasInterface!.getName(), newCanvasInterface as JPanel);
+this.jTabbedPane!.addTab(newCanvasInterface!.getName(), newCanvasInterface as JPanel);
     
-jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel);
+this.jTabbedPane!.setSelectedComponent(newCanvasInterface as JPanel);
     
 
     var animationThread: Thread = new Thread(newCanvasInterface as Runnable);
@@ -1282,7 +1287,7 @@ this.updateSelectedWorkArea();
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    guiLog!.put(commonStrings!.EXCEPTION, this, "addNewCanvas", e);
+                                    this.guiLog!.put(this.commonStrings!.EXCEPTION, this, "addNewCanvas", e);
     
 
                                     }

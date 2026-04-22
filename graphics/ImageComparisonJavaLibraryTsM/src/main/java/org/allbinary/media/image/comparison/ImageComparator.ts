@@ -57,7 +57,10 @@ import { PixelDeltaFactory } from "../../../../../org/allbinary/media/image/comp
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class ImageComparator
 public constructor (imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
 
             super();
-                //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
+            //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
 this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     
 }

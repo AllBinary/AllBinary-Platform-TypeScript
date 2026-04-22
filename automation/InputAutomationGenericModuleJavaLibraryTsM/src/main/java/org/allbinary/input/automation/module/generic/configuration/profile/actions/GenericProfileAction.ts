@@ -55,7 +55,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class GenericProfileAction
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
 
             super();
-            var genericProfileActionJPanel = genericProfileActionJPanel
+        var genericProfileActionJPanel = genericProfileActionJPanel
 var node = node
 
     var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;
@@ -116,7 +119,7 @@ this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericPr
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.name= name;
     
 this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel));

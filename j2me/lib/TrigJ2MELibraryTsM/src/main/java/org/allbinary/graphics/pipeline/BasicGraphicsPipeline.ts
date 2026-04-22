@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,15 +61,15 @@ export class BasicGraphicsPipeline
 public constructor (points: BasicArrayList){
 
             super();
-            var points = points
-pointBasicArrayList= points;
+        var points = points
+this.pointBasicArrayList= points;
     
 }
 
 
     public setInitMatrix(points: BasicArrayList){
 var points = points
-pointBasicArrayList= points;
+this.pointBasicArrayList= points;
     
 }
 
@@ -87,7 +90,7 @@ var y = y
 ;
     
 
-    var size: number = pointBasicArrayList!.size()!;
+    var size: number = this.pointBasicArrayList!.size()!;
         
         
 ;
@@ -112,7 +115,7 @@ var y = y
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)
@@ -142,7 +145,7 @@ this.pointBasicArrayList= newBasicArrayList;
 var angle = angle
 this.rotate(angle.getValue();
 
-                        .toInt());
+                        );
     
 }
 
@@ -211,15 +214,15 @@ var angle = angle
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    sin= noDecimalTrigTable!.sin(angle);
+                                    sin= this.noDecimalTrigTable!.sin(angle);
     
-cos= noDecimalTrigTable!.cos(angle);
+cos= this.noDecimalTrigTable!.cos(angle);
     
 y= secondPoint!.getY() *sin;
     
@@ -227,7 +230,7 @@ secondX= (secondPoint!.getX() *cos) -y;
     
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
     
-point= pointFactory!.getInstance(secondX.toInt() /10000, secondY.toInt() /10000);
+point= pointFactory!.getInstance(secondX /10000, secondY /10000);
     
 newBasicArrayList!.add(point);
     
@@ -258,7 +261,7 @@ var width = width
 ;
     
 
-    var halfWidth: number = (width shr 1);
+    var halfWidth: number = (width>>1);
         
         
 ;
@@ -297,7 +300,7 @@ var width = width
         
 index < size; index++)
         {
-secondPoint= pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class ExplosionResources
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly EXPLOSION_90_RESOURCE: string = "/explosion_sprite_90_by_90.png";

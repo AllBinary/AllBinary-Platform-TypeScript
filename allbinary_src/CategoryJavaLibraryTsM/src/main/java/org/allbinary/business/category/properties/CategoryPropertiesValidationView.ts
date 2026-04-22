@@ -43,7 +43,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class CategoryPropertiesValidationView extends CategoryPropertiesView imp
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (categoryPropertiesInterface: CategoryPropertiesInterface)                        
-
-                            : super(categoryPropertiesInterface){
-
-            super();
-            var categoryPropertiesInterface = categoryPropertiesInterface
+public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
+            super(categoryPropertiesInterface);
+                    var categoryPropertiesInterface = categoryPropertiesInterface
 
 
                             //For kotlin this is before the body of the constructor.

@@ -52,13 +52,18 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { IndexedAnimation } from "./IndexedAnimation.js";
+
+import { RotationAnimationInterface } from "./RotationAnimationInterface.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
@@ -76,12 +81,9 @@ export class RotationAnimation extends IndexedAnimation implements RotationAnima
     readonly angleInfo: AngleInfo
 
     circularIndexUtil: CircularIndexUtil
-protected constructor (angleInfo: AngleInfo, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var angleInfo = angleInfo
+protected constructor (angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior
 
 
@@ -93,12 +95,9 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIn
     
 }
 
-protected constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var angleInfo = angleInfo
+protected constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var angleInfo = angleInfo
     //var totalAngle = totalAngle
     //var animationBehavior = animationBehavior
 
@@ -111,12 +110,9 @@ this.circularIndexUtil= CircularIndexUtil.getInstance(totalAngle /angleInfo!.get
     
 }
 
-protected constructor (animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationBehavior = animationBehavior
+protected constructor (animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationBehavior = animationBehavior
 
 
                             //For kotlin this is before the body of the constructor.
@@ -174,7 +170,7 @@ this.angleInfo!.adjustAngle(newFrame);
     public setFrame(direction: Direction){
     //var direction = direction
 
-    var angle: Angle = directionUtil!.getFrameAngle(direction)!;
+    var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
         
         
 ;
@@ -202,7 +198,7 @@ this.adjustFrame(angle.getValue());
     //var angle = angle
 this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
 
-                        .toInt()));
+                        ));
     
 }
 

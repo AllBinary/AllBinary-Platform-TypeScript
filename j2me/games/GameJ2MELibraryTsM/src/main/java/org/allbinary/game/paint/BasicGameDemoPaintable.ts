@@ -40,7 +40,10 @@ import { StatePaintable } from "../../../../org/allbinary/graphics/paint/StatePa
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class BasicGameDemoPaintable extends StatePaintable {
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable){
 
             super();
-            var mainDemoStatePaintable = mainDemoStatePaintable
+        var mainDemoStatePaintable = mainDemoStatePaintable
 var ownershipPaintable = ownershipPaintable
 var helpPaintableInterface = helpPaintableInterface
 this.mainDemoStatePaintable= mainDemoStatePaintable;

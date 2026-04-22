@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementCategoryInterface } from "./AdvertisementCategoryInterface.js";
+
 export class BasicAdvertisementCategory
             extends Object
          implements AdvertisementCategoryInterface {
@@ -43,7 +48,7 @@ export class BasicAdvertisementCategory
 public constructor (categoryId: string){
 
             super();
-            var categoryId = categoryId
+        var categoryId = categoryId
 this.categoryId= categoryId;
     
 }

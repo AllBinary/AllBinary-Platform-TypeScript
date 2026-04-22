@@ -75,12 +75,17 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProfileActionScriptInputInterface } from "./ProfileActionScriptInputInterface.js";
+
 import { GenericProfileActionScriptInputData } from "./GenericProfileActionScriptInputData.js";
 
 export class BasicProfileActionScriptInput extends BasicProfileActionScriptProcessor implements ProfileActionScriptInputInterface {
@@ -93,12 +98,9 @@ export class BasicProfileActionScriptInput extends BasicProfileActionScriptProce
     private inputRobotInterface: InputRobotInterface
 
     private time: number= 0
-public constructor (label: string, node: Node)                        
-
-                            : super(label, node){
-
-            super();
-                //var label = label
+public constructor (label: string, node: Node){
+            super(label, node);
+                        //var label = label
     //var node = node
 
 
@@ -151,12 +153,9 @@ this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString
     
 }
 
-public constructor (label: string)                        
-
-                            : super(label){
-
-            super();
-                //var label = label
+public constructor (label: string){
+            super(label);
+                        //var label = label
 
 
                             //For kotlin this is before the body of the constructor.

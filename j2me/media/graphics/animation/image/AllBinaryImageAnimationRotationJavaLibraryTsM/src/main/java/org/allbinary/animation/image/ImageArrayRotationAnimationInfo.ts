@@ -34,7 +34,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class ImageArrayRotationAnimationInfo
 public constructor (imageArray: Image[], angleIncrement: number, totalAngle: number, dx: number, dy: number){
 
             super();
-            var imageArray = imageArray
+        var imageArray = imageArray
 var angleIncrement = angleIncrement
 var totalAngle = totalAngle
 var dx = dx
@@ -97,7 +100,7 @@ this.imageArray= imageArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AngleInfo.getInstance(angleIncrement.toShort());
+                        return AngleInfo.getInstance(this.angleIncrement);
 
                         ;
     

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class GLHolder
 public constructor (){
 
             super();
-            }
+        }
 
 
     public runOnSurfaceCreated(renderer: any = {}){

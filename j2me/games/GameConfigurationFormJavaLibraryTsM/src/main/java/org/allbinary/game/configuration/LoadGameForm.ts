@@ -66,7 +66,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,12 +79,9 @@ export class LoadGameForm extends CommandForm {
         
 
     private areChoices: boolean= false
-public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(commandListener, title, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-            var commandListener = commandListener
+public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+                    var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor

@@ -34,7 +34,10 @@ import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class DirectionUtil
 private constructor (){
 
             super();
-            
+        
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
         
         
@@ -85,21 +88,21 @@ private constructor (){
         
 ;
     
-directionArray[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
+this.directionArray[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
     
-directionArray[directionFactory!.RIGHT.getValue()]= angleFactory!.RIGHT;
+this.directionArray[directionFactory!.RIGHT.getValue()]= angleFactory!.RIGHT;
     
-directionArray[directionFactory!.UP.getValue()]= angleFactory!.UP;
+this.directionArray[directionFactory!.UP.getValue()]= angleFactory!.UP;
     
-directionArray[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
+this.directionArray[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
     
-directionArray2[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
+this.directionArray2[directionFactory!.LEFT.getValue()]= angleFactory!.LEFT;
     
-directionArray2[directionFactory!.RIGHT.getValue()]= angleFactory!.RIGHT;
+this.directionArray2[directionFactory!.RIGHT.getValue()]= angleFactory!.RIGHT;
     
-directionArray2[directionFactory!.UP.getValue()]= angleFactory!.UP;
+this.directionArray2[directionFactory!.UP.getValue()]= angleFactory!.UP;
     
-directionArray2[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
+this.directionArray2[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
     
 }
 

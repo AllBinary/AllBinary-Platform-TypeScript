@@ -66,7 +66,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -142,7 +145,7 @@ graphicsPipe!.translate(x, y);
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -191,11 +194,11 @@ index < size; index++)
                                 
 }
 
-this.logUtil!.putF("minX: " +minX +" minY: " +minY +" maxX: " +maxX +" maxY: " +maxY, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("minX: " +this.minX +" minY: " +this.minY +" maxX: " +this.maxX +" maxY: " +this.maxY, this, commonStrings!.GET_INSTANCE);
     
-setWidth(maxX -minX);
+setWidth(this.maxX -this.minX);
     
-setHeight(maxY -minY);
+setHeight(this.maxY -this.minY);
     
 
     var max: number = getWidth()!;
@@ -234,20 +237,20 @@ setHeight(maxY -minY);
 this.logUtil!.putF(s, this, commonStrings!.GET_INSTANCE);
     
 
-    var currentMiddleX: number = minX +getWidth() /2;
+    var currentMiddleX: number = this.minX +getWidth() /2;
         
         
 ;
     
 
-    var currentMiddleY: number = minY +getHeight() /2;
+    var currentMiddleY: number = this.minY +getHeight() /2;
         
         
 ;
     
-dx= middle -currentMiddleX;
+this.dx= middle -currentMiddleX;
     
-dy= middle -currentMiddleY;
+this.dy= middle -currentMiddleY;
     
 }
 
@@ -259,7 +262,7 @@ var hashMap = hashMap
 this.calculate(hashMap);
     
 this.logUtil!.putF(new StringMaker().
-                            append(" dx: ")!.appendint(dx)!.append(" dy: ")!.appendint(dy)!.toString(), this, commonStrings!.GET_INSTANCE);
+                            append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
@@ -350,37 +353,37 @@ index < size; index++)
 ;
     
 
-                        if(point.getX() < minX)
+                        if(point.getX() < this.minX)
                         
                                     {
-                                    minX= point.getX();
+                                    this.minX= point.getX();
     
 
                                     }
                                 
 
-                        if(point.getX() > maxX)
+                        if(point.getX() > this.maxX)
                         
                                     {
-                                    maxX= point.getX();
+                                    this.maxX= point.getX();
     
 
                                     }
                                 
 
-                        if(point.getY() < minY)
+                        if(point.getY() < this.minY)
                         
                                     {
-                                    minY= point.getY();
+                                    this.minY= point.getY();
     
 
                                     }
                                 
 
-                        if(point.getY() > maxY)
+                        if(point.getY() > this.maxY)
                         
                                     {
-                                    maxY= point.getY();
+                                    this.maxY= point.getY();
     
 
                                     }

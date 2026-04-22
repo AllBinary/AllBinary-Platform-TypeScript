@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class MineVectorData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

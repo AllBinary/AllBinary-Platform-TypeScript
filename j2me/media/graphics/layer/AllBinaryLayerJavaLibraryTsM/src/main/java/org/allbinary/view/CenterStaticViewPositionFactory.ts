@@ -31,7 +31,10 @@ import { DisplayInfoSingleton } from "../../../org/allbinary/graphics/displayabl
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class CenterStaticViewPositionFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(z: number): ViewPosition{
@@ -61,7 +64,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StaticViewPosition((displayInfoSingleton!.getLastWidth() shr 1), (displayInfoSingleton!.getLastHeight() shr 1), z);
+                        return new StaticViewPosition((displayInfoSingleton!.getLastWidth()>>1), (displayInfoSingleton!.getLastHeight()>>1), z);
     
 }
 

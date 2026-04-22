@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class UserEmailEventsConfigurationMapping
 public constructor (userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface){
 
             super();
-            var userEmailEventsConfigurationInterface = userEmailEventsConfigurationInterface
+        var userEmailEventsConfigurationInterface = userEmailEventsConfigurationInterface
 this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface;
     
 }

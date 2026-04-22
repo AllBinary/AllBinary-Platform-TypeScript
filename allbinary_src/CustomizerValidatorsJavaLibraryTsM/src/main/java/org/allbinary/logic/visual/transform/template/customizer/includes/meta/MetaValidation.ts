@@ -64,7 +64,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class MetaValidation extends Validation implements DomNodeInterface {
 public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string, attributeValue: string, contentValue: string){
 
             super();
-            var htmlMetaAttributeData = htmlMetaAttributeData
+        var htmlMetaAttributeData = htmlMetaAttributeData
 var label = label
 var attributeValue = attributeValue
 var contentValue = contentValue
@@ -118,7 +121,7 @@ this.content= contentValue;
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
 
 

@@ -31,7 +31,10 @@ import { LogUtil } from "../../../../../../../../org/allbinary/logic/communicati
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class BasicGenerator extends TransformInfoObjectConfigGenerator {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public process(input: string): string{

@@ -58,7 +58,10 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,12 +77,9 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
     private basicColorArray: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
         
         
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number)                        
-
-                            : this(image, basicColorArray, width, height, dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number){
+            this(image, basicColorArray, width, height, dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -91,12 +91,9 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
                     
 }
 
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -115,12 +112,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number)                        
-
-                            : this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number){
+            this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -130,12 +124,9 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
                     
 }
 
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -146,9 +137,9 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
                     
 this.basicColorArray= basicColorArray;
     
-this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width shr 2);
+this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width>>2);
     
-this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height shr 2);
+this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height>>2);
     
 
                         if(AndroidUtil.isAndroid())
@@ -161,12 +152,9 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
                                 
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number)                        
-
-                            : this(image, width, height, dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number){
+            this(image, width, height, dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -177,12 +165,9 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
                     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -198,12 +183,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number)                        
-
-                            : this(image, width, height, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number){
+            this(image, width, height, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
 
@@ -212,12 +194,9 @@ public constructor (image: Image, width: number, height: number)
                     
 }
 
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory

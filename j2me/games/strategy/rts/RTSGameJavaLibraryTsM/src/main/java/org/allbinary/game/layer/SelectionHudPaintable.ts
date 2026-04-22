@@ -64,7 +64,10 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
 protected constructor (){
 
             super();
-            this.update();
+        this.update();
     
 this.primitiveLongUtil= new PrimitiveLongUtil(10000);
     
@@ -137,7 +140,7 @@ this.width= displayInfoSingleton!.getLastWidth() -this.getX() *2;
     
 this.imageX= this.getWidth() +touchButtonLocationHelper!.getColumnsRemainderHalf() -10;
     
-this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAULT_CHAR_HEIGHT);
+this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.DEFAULT_CHAR_HEIGHT);
     
 }
 
@@ -156,7 +159,7 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +myFont!.DEFAUL
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(backgroundColor);
+graphics.setColor(this.backgroundColor);
     
 graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());
     

@@ -31,12 +31,17 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementThumbnailInterface } from "./AdvertisementThumbnailInterface.js";
+
 export class AdvertisementThumbnail
             extends Object
          implements AdvertisementThumbnailInterface {
@@ -50,7 +55,7 @@ export class AdvertisementThumbnail
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getFileName(): string{

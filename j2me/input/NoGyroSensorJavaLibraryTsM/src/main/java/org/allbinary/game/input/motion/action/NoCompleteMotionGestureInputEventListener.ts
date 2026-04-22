@@ -43,7 +43,10 @@ import { EventStrings } from "../../../../../../org/allbinary/logic/util/event/E
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class NoCompleteMotionGestureInputEventListener
 private constructor (){
 
             super();
-            }
+        }
 
 
     public onEvent(eventObject: AllBinaryEventObject){

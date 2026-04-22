@@ -67,7 +67,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class RealTimeStoreFrontStatisticsView
 public constructor (storeFrontStatisticsInterface: StoreFrontStatisticsInterface, userRole: UserRole){
 
             super();
-            var storeFrontStatisticsInterface = storeFrontStatisticsInterface
+        var storeFrontStatisticsInterface = storeFrontStatisticsInterface
 var userRole = userRole
 this.storeFrontStatisticsInterface= storeFrontStatisticsInterface;
     

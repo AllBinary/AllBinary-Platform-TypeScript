@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -171,7 +174,7 @@ export class PaymentGatewayData
 private constructor (value: string){
 
             super();
-            var value = value
+        var value = value
 this.key= value;
     
 }

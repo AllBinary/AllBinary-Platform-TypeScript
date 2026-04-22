@@ -34,12 +34,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
+
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
 
 import { LicenseType } from "./LicenseType.js";
@@ -69,7 +74,7 @@ export class AbeNoLicense
 private constructor (){
 
             super();
-            }
+        }
 
 
     public hasKey(): boolean{

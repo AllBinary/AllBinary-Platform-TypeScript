@@ -31,7 +31,10 @@ import { HashMap } from "../../../../../java/util/HashMap.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,7 +119,7 @@ var a_Name = a_Name
 protected constructor (a_Name: string){
 
             super();
-            var a_Name = a_Name
+        var a_Name = a_Name
 this.name= a_Name;
     
 this.extension= "." +this.name;

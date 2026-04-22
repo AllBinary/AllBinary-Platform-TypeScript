@@ -34,7 +34,10 @@ import { GameState } from "../../../../org/allbinary/game/state/GameState.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class AdConfiguration
 public constructor (advertIdArray: any[]){
 
             super();
-            var advertIdArray = advertIdArray
+        var advertIdArray = advertIdArray
 this.INNERACTIVE= advertIdArray[0]! as String;
     
 this.ADMOB= advertIdArray[1]! as String;

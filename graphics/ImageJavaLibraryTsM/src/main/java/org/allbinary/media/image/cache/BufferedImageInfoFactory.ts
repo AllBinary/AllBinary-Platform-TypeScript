@@ -34,7 +34,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ hashMap!.put(key, bufferedImageInfo);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

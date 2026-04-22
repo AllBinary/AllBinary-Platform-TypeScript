@@ -67,7 +67,10 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ export class CustomItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -108,15 +111,15 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(BasicItemData.ID);
     
-this.className= request.getParameter(DynamicObjectData.NAME);
+this.className= this.request.getParameter(DynamicObjectData.NAME);
     
-this.packageName= request.getParameter(CustomItemData.PACKAGE);
+this.packageName= this.request.getParameter(CustomItemData.PACKAGE);
     
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+this.timeEntered= this.request.getParameter(EntryData.getInstance()!.TIMECREATED);
     
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
     
 }
 
@@ -180,7 +183,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
         
 ;
     
-values.add(id);
+values.add(this.id);
     
 values.add(this.className);
     
@@ -193,7 +196,7 @@ values.add(time);
 CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +id +" into items table";
+    var success: string = "Successfully inserted " +this.id +" into items table";
         
         
 ;
@@ -218,7 +221,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +id +" into items table";
+    var error: string = "Failed to insert " +this.id +" into items table";
         
         
 ;
@@ -246,7 +249,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
     public delete(): string{
 
         try {
-            CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.delete(id);
+            CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.delete(this.id);
     
 
     var success: string = "Successfully deleted";
@@ -321,7 +324,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
+                            append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }
@@ -337,7 +340,7 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +id;
+    var error: string = "Failed to update: " +this.id;
         
         
 ;

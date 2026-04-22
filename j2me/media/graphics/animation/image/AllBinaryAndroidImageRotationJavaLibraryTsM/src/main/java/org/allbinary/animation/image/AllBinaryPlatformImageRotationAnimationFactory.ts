@@ -34,7 +34,10 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { AllBinaryAndroidImageRotationAnimationFactory } from "./AllBinaryAndroi
 
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryAndroidImageRotationAnimationFactory {
         
-public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean)                        
-
-                            : super(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
+            super(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);
+                        //var image = image
     //var width = width
     //var height = height
     //var angleIncrement = angleIncrement

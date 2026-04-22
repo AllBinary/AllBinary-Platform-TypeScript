@@ -37,12 +37,17 @@ import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/In
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpecialAnimationInterface } from "./SpecialAnimationInterface.js";
+
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         
 
@@ -59,12 +64,9 @@ export class SpecialAnimation extends IndexedAnimation implements SpecialAnimati
     
 }
 
-public constructor (animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationBehavior = animationBehavior
+public constructor (animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationBehavior = animationBehavior
 
 
                             //For kotlin this is before the body of the constructor.

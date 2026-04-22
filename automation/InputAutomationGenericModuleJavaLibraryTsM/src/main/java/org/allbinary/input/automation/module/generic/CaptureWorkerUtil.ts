@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -118,7 +121,7 @@ index < size; index++)
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

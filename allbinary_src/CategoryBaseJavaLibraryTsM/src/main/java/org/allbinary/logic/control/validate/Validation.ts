@@ -37,12 +37,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ValidationInterface } from "./ValidationInterface.js";
+
 export class Validation
             extends Object
          implements ValidationInterface {

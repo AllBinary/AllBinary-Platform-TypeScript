@@ -31,7 +31,10 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

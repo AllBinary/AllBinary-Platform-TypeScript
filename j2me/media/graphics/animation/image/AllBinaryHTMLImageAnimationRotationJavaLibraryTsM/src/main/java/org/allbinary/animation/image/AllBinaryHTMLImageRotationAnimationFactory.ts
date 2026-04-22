@@ -49,7 +49,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,12 +64,9 @@ export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimati
         
 
     readonly angleIncrement: number
-public constructor (image: Image, dx: number, dy: number, unused: any = {})                        
-
-                            : this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, unused: any = {}){
+            this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var unused = unused
@@ -76,12 +76,9 @@ public constructor (image: Image, dx: number, dy: number, unused: any = {})
                     
 }
 
-public constructor (image: Image, dx: number, dy: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var unused = unused
@@ -92,12 +89,9 @@ public constructor (image: Image, dx: number, dy: number, unused: any = {}, anim
                     
 }
 
-public constructor (image: Image, dx: number, dy: number, unused: any = {}, angleIncrement: number)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, unused: any = {}, angleIncrement: number){
+            this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var unused = unused
@@ -108,12 +102,9 @@ public constructor (image: Image, dx: number, dy: number, unused: any = {}, angl
                     
 }
 
-public constructor (image: Image, dx: number, dy: number, angleIncrement: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, angleIncrement: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, animationBehaviorFactory);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var angleIncrement = angleIncrement
@@ -125,12 +116,9 @@ public constructor (image: Image, dx: number, dy: number, angleIncrement: number
                     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number)                        
-
-                            : this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number){
+            this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -150,12 +138,9 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, angleIncrement, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, angleIncrement, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -176,12 +161,9 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number)                        
-
-                            : this(image, width, height, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number){
+            this(image, width, height, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -200,12 +182,9 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -225,24 +204,18 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     
 }
 
-public constructor (image: Image)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image){
+            this(image, image.getWidth(), image.getHeight(), AnimationBehaviorFactory.getInstance());
+                        //var image = image
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, image.getWidth(), image.getHeight(), animationBehaviorFactory);
+                        //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
 
@@ -250,12 +223,9 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                     
 }
 
-public constructor (image: Image, width: number, height: number)                        
-
-                            : this(image, width, height, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number){
+            this(image, width, height, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
 
@@ -264,12 +234,9 @@ public constructor (image: Image, width: number, height: number)
                     
 }
 
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort(), animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -279,12 +246,9 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                     
 }
 
-public constructor (image: Image, width: number, height: number, angleIncrement: number)                        
-
-                            : this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, angleIncrement: number){
+            this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
     //var angleIncrement = angleIncrement
@@ -294,12 +258,9 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
                     
 }
 
-public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var angleIncrement = angleIncrement
@@ -339,7 +300,7 @@ this.angleIncrement= angleIncrement;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AllBinaryAdjustedHTMLImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AllBinaryAdjustedHTMLImageRotationAnimation(scaledImage, copyOfScaledImage, AngleInfo.getInstance(this.getAngleIncrement()), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }

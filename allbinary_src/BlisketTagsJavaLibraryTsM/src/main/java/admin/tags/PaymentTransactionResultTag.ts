@@ -31,7 +31,10 @@ import { PaymentTransactionResultHelperFactory } from "../../admin/taghelpers/Pa
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class PaymentTransactionResultTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new PaymentTransactionResultHelperFactory());
+        this.setTagHelperFactory(new PaymentTransactionResultHelperFactory());
     
 this.setTagRequestHelperFactory(new PaymentTransactionResultHelperFactory());
     

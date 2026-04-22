@@ -40,12 +40,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInterface.js";
+
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
 export class EmailServerConfiguration
@@ -65,7 +70,7 @@ export class EmailServerConfiguration
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -87,7 +92,7 @@ this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -122,7 +127,7 @@ this.log();
 public constructor (account: string, password: string, server: string){
 
             super();
-            var account = account
+        var account = account
 var password = password
 var server = server
 

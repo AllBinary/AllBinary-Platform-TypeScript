@@ -40,7 +40,10 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { AbeClientInformation } from "./AbeClientInformation.js";
 
 export class InputAutomationClientInformation extends AbeClientInformation {
         
-public constructor ()                        
-
-                            : super("InputAutomationTool", "0.0.1", "InputAutomationTool 0.0.1", "IA"){
-
-            super();
-            
+public constructor (){
+            super("InputAutomationTool", "0.0.1", "InputAutomationTool 0.0.1", "IA");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ var howMuch = howMuch
     
 graphicsPipe!.createMatrix();
     
-graphicsPipe!.rotate(angleFactory!.getInstance(getNextRandomAngle(howMuch)));
+graphicsPipe!.rotate(this.angleFactory!.getInstance(getNextRandomAngle(howMuch)));
     
 
 

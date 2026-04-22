@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class ContextConfigurationTableMapping
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
-            var contextConfigurationInterface = contextConfigurationInterface
+        var contextConfigurationInterface = contextConfigurationInterface
 this.contextConfigurationInterface= contextConfigurationInterface;
     
 }

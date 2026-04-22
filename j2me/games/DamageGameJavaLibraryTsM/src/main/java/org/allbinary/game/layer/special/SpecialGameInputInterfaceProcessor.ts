@@ -31,7 +31,10 @@ import { GameInputProcessor } from "../../../../../org/allbinary/game/input/Game
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {
 public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
 
             super();
-            var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
+        var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 this.specialGameInputInterface= collidableDestroyableDamageableLayer;
     
 }

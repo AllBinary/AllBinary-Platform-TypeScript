@@ -87,7 +87,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -136,7 +139,7 @@ export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProce
 public constructor (imageProcessorInput: ImageProcessorInput){
 
             super();
-                //var imageProcessorInput = imageProcessorInput
+            //var imageProcessorInput = imageProcessorInput
 initComponents();
     
 this.setImageProcessorInput(imageProcessorInput);
@@ -202,7 +205,7 @@ index < bufferedImageArray!.length; index++)
 ;
     
 
-    var newHeight: number = (newWidth /oldRatio).toInt();
+    var newHeight: number = (newWidth /oldRatio);
         
         
 ;
@@ -227,7 +230,7 @@ this.updateOnPropertiesChange();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 
@@ -284,7 +287,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatio: number = imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
+    var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
         
         
 ;
@@ -310,13 +313,13 @@ this.avgRatioJTextField!.setText(averageRatioString);
 this.fudgeItJButton!.setEnabled(false);
     
 
-                        if(!imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages);
+                        if(!this.imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages);
 
                         )
                         
                                     {
                                     
-                        if(isImageFillIn)
+                        if(this.isImageFillIn)
                         
                                     {
                                     this.fudgeItJButton!.setEnabled(true);
@@ -333,7 +336,7 @@ this.updateImage(tempBufferedImageArray);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateImage", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
     
 }
 
@@ -390,7 +393,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatio: number = imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
+    var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
         
         
 ;
@@ -407,7 +410,7 @@ this.updateImage(fudgedBufferedImageArray);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImageWithFudgedImages", e);
     
 }
 
@@ -444,9 +447,9 @@ this.updateUI();
                                     {
                                     this.imageUnifierProperties= new ImageUnifierProperties();
     
-imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText()));
+this.imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText()));
     
-imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
+this.imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
     
 
     var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));
@@ -454,12 +457,12 @@ imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()
         
 ;
     
-imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
+this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
 
     var cellRatio: number = (imageUnifierCell!.getWidth();
 
-                        .toDouble() /imageUnifierCell!.getHeight());
+                         /imageUnifierCell!.getHeight());
         
         
 ;
@@ -497,59 +500,59 @@ this.updateImage();
         
 ;
     
-jScrollPane1= new javax.swing.JScrollPane();
+this.jScrollPane1= new javax.swing.JScrollPane();
     
-imageJList= new javax.swing.JList();
+this.imageJList= new javax.swing.JList();
     
-jScrollPane2= new javax.swing.JScrollPane();
+this.jScrollPane2= new javax.swing.JScrollPane();
     
-jPanel1= new javax.swing.JPanel();
+this.jPanel1= new javax.swing.JPanel();
     
-jButton1= new javax.swing.JButton();
+this.jButton1= new javax.swing.JButton();
     
-upJButton= new javax.swing.JButton();
+this.upJButton= new javax.swing.JButton();
     
-downJButton= new javax.swing.JButton();
+this.downJButton= new javax.swing.JButton();
     
-fudgeItJButton= new javax.swing.JButton();
+this.fudgeItJButton= new javax.swing.JButton();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
-columnsJTextField= new javax.swing.JTextField();
+this.columnsJTextField= new javax.swing.JTextField();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-rowsJTextField= new javax.swing.JTextField();
+this.rowsJTextField= new javax.swing.JTextField();
     
-jLabel3= new javax.swing.JLabel();
+this.jLabel3= new javax.swing.JLabel();
     
-cellWidthJTextField= new javax.swing.JTextField();
+this.cellWidthJTextField= new javax.swing.JTextField();
     
-jLabel4= new javax.swing.JLabel();
+this.jLabel4= new javax.swing.JLabel();
     
-cellHeightJTextField= new javax.swing.JTextField();
+this.cellHeightJTextField= new javax.swing.JTextField();
     
-jLabel5= new javax.swing.JLabel();
+this.jLabel5= new javax.swing.JLabel();
     
-cellRatioJTextField= new javax.swing.JTextField();
+this.cellRatioJTextField= new javax.swing.JTextField();
     
-jLabel6= new javax.swing.JLabel();
+this.jLabel6= new javax.swing.JLabel();
     
-avgRatioJTextField= new javax.swing.JTextField();
+this.avgRatioJTextField= new javax.swing.JTextField();
     
-jButton2= new javax.swing.JButton();
+this.jButton2= new javax.swing.JButton();
     
-jButtonOrder= new javax.swing.JButton();
+this.jButtonOrder= new javax.swing.JButton();
     
 setMinimumSize(new java.awt.Dimension(500, 375));
     
 setPreferredSize(new java.awt.Dimension(0, 0));
     
-imageJList!.setMinimumSize(new java.awt.Dimension(50, 0));
+this.imageJList!.setMinimumSize(new java.awt.Dimension(50, 0));
     
-jScrollPane1!.setViewportView(imageJList);
+this.jScrollPane1!.setViewportView(this.imageJList);
     
-jButton1!.setText("Save");
+this.jButton1!.setText("Save");
     
 jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -563,7 +566,7 @@ jButton1ActionPerformed(evt);
                                 }
                             );
     
-upJButton!.setText("Up");
+this.upJButton!.setText("Up");
     
 upJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -577,7 +580,7 @@ upJButtonActionPerformed(evt);
                                 }
                             );
     
-downJButton!.setText("Down");
+this.downJButton!.setText("Down");
     
 downJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -591,7 +594,7 @@ downJButtonActionPerformed(evt);
                                 }
                             );
     
-fudgeItJButton!.setText("Fudge It!");
+this.fudgeItJButton!.setText("Fudge It!");
     
 fudgeItJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -605,9 +608,9 @@ fudgeItJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel2!.setText("Columns:");
+this.jLabel2!.setText("Columns:");
     
-columnsJTextField!.setText(commonPhoneStrings!.TWO);
+this.columnsJTextField!.setText(commonPhoneStrings!.TWO);
     
 columnsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -651,9 +654,9 @@ columnsJTextFieldKeyTyped(evt);
                                 }
                             );
     
-jLabel1!.setText("Rows:");
+this.jLabel1!.setText("Rows:");
     
-rowsJTextField!.setText(commonPhoneStrings!.TWO);
+this.rowsJTextField!.setText(commonPhoneStrings!.TWO);
     
 rowsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -667,9 +670,9 @@ rowsJTextFieldActionPerformed(evt);
                                 }
                             );
     
-jLabel3!.setText("Cell Width:");
+this.jLabel3!.setText("Cell Width:");
     
-cellWidthJTextField!.setText("200");
+this.cellWidthJTextField!.setText("200");
     
 cellWidthJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -683,9 +686,9 @@ cellWidthJTextFieldActionPerformed(evt);
                                 }
                             );
     
-jLabel4!.setText("Cell Height:");
+this.jLabel4!.setText("Cell Height:");
     
-cellHeightJTextField!.setText("150");
+this.cellHeightJTextField!.setText("150");
     
 cellHeightJTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -699,15 +702,15 @@ cellHeightJTextFieldActionPerformed(evt);
                                 }
                             );
     
-jLabel5!.setText("Cell Ratio:");
+this.jLabel5!.setText("Cell Ratio:");
     
-cellRatioJTextField!.setEditable(false);
+this.cellRatioJTextField!.setEditable(false);
     
-jLabel6!.setText("Avg Image Ratio:");
+this.jLabel6!.setText("Avg Image Ratio:");
     
-avgRatioJTextField!.setEditable(false);
+this.avgRatioJTextField!.setEditable(false);
     
-jButton2!.setText(commonStrings!.UPDATE);
+this.jButton2!.setText(this.commonStrings!.UPDATE);
     
 jButton2!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -721,7 +724,7 @@ jButton2ActionPerformed(evt);
                                 }
                             );
     
-jButtonOrder!.setText("Order");
+this.jButtonOrder!.setText("Order");
     
 jButtonOrder!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -736,12 +739,12 @@ jButtonOrderActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(jPanel1);
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
         
         
 ;
     
-jPanel1!.setLayout(jPanel1Layout);
+this.jPanel1!.setLayout(jPanel1Layout);
     
 jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout!.createSequentialGroup()!.addContainerGap()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(upJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)!.addComponent(downJButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(fudgeItJButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel3)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, javax.swing.GroupLayout.PREFERRED_SIZE))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addComponent(jLabel4)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(avgRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellRatioJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellHeightJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(cellWidthJTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout!.createSequentialGroup()!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(jLabel2)!.addComponent(jLabel1))!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addComponent(rowsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addComponent(columnsJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE)!.addGap(1, 1, 1))))!.addComponent(jButtonOrder, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))!.addContainerGap()));
     
@@ -842,13 +845,13 @@ var evt = evt
 ;
     
 
-    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
         
         
 ;
     
 filePath= new StringMaker().
-                            append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(imageStrings!.PNG_EXTENSION)!.toString();
+                            append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.appendint(this.imageUnifierProperties!.getColumns())!.append("_By_")!.appendint(this.imageUnifierProperties!.getRows())!.append("_Unified")!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 this.logUtil!.putF("New File Path: " +filePath, this, StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -864,7 +867,7 @@ ImagePersistanceUtil.getInstance()!.saveWithBatik(FileWrapperUtil.wrapFile(outpu
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "jButton1ActionPerformed", e);
     
 }
 

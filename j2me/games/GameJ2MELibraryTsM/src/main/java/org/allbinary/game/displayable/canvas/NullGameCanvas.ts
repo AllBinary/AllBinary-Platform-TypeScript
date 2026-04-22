@@ -40,7 +40,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ nullGameCanvas!.setTitle(NO_GAME);
     public static readonly TYPE: number = 1;
         
         
-protected constructor (gameLayerManager: AllBinaryGameLayerManager)                        
-
-                            : super(gameLayerManager){
-
-            super();
-                //var gameLayerManager = gameLayerManager
+protected constructor (gameLayerManager: AllBinaryGameLayerManager){
+            super(gameLayerManager);
+                        //var gameLayerManager = gameLayerManager
 
 
                             //For kotlin this is before the body of the constructor.
@@ -110,7 +110,7 @@ super.setWait(1200);
 private constructor (){
 
             super();
-            super.setWait(1200);
+        super.setWait(1200);
     
 }
 

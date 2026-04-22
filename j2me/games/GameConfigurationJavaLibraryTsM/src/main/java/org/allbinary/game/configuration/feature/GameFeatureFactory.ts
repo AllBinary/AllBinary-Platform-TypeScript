@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class GameFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly SOUND: GameFeature = new GameFeature("Sound");

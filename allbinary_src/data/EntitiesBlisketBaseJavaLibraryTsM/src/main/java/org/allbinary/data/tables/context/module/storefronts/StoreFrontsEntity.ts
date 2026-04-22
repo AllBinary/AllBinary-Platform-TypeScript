@@ -55,12 +55,17 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontsEntityInterface } from "./StoreFrontsEntityInterface.js";
+
 export class StoreFrontsEntity extends AbSqlBean implements StoreFrontsEntityInterface {
         
 
@@ -71,16 +76,13 @@ export class StoreFrontsEntity extends AbSqlBean implements StoreFrontsEntityInt
     readonly tableName: string = "storefronts";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -237,7 +239,7 @@ super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFr
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     

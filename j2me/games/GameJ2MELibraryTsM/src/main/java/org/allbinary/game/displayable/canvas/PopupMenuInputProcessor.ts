@@ -67,7 +67,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,12 +94,9 @@ export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
         
 
     private rectangle: Rectangle
-public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle)                        
-
-                            : super(gameKeyEventList, playerInputId, gameCanvas){
-
-            super();
-                //var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle){
+            super(gameKeyEventList, playerInputId, gameCanvas);
+                        //var gameKeyEventList = gameKeyEventList
     //var playerInputId = playerInputId
     //var gameCanvas = gameCanvas
     //var rectangle = rectangle
@@ -341,13 +341,13 @@ motionGestureEventList!.clear();
 ;
     
 
-    var rectPoint: GPoint = rectangle.getPoint()!;
+    var rectPoint: GPoint = this.rectangle.getPoint()!;
         
         
 ;
     
 
-                        if(rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), rectangle.getMaxX() +20, rectangle.getMaxY(), point.getX(), point.getY()))
+                        if(this.rectangleCollisionUtil!.isInside(rectPoint!.getX(), rectPoint!.getY(), rectangle.getMaxX() +20, rectangle.getMaxY(), point.getX(), point.getY()))
                         
                                     {
                                     

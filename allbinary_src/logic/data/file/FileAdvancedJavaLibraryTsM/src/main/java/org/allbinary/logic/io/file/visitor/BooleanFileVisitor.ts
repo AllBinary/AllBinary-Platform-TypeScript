@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class BooleanFileVisitor
 public constructor (filterStringBasicArrayList: BasicArrayList){
 
             super();
-            var filterStringBasicArrayList = filterStringBasicArrayList
+        var filterStringBasicArrayList = filterStringBasicArrayList
 this.setFilterStringBasicArrayList(filterStringBasicArrayList);
     
 PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.toString(), this, this.commonStrings!.CONSTRUCTOR);

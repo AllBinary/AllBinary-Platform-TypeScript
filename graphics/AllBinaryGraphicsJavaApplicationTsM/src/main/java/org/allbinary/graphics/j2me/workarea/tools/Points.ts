@@ -31,12 +31,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PointsInterface } from "./PointsInterface.js";
+
 export class Points
             extends Object
          implements PointsInterface {
@@ -46,7 +51,7 @@ export class Points
 public constructor (){
 
             super();
-            this.pointVector= new BasicArrayList();
+        this.pointVector= new BasicArrayList();
     
 }
 

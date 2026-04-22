@@ -43,7 +43,10 @@ import { StoreValidationTransformTag } from "../../tags/StoreValidationTransform
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class UserTag extends StoreValidationTransformTag {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setRole(value: string){

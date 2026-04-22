@@ -58,12 +58,17 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StaticPagesEntityInterface } from "./StaticPagesEntityInterface.js";
+
 export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInterface {
         
 
@@ -74,16 +79,13 @@ export class StaticPagesEntity extends AbSqlBean implements StaticPagesEntityInt
     private readonly TABLENAME: string = "staticpages";
         
         
-public constructor ()                        
-
-                            : super(new StaticPagesDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new StaticPagesDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(TABLENAME);
+this.setTableName(this.TABLENAME);
     
 }
 

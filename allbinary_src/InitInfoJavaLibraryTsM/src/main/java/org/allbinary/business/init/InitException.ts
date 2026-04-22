@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,14 +44,11 @@ export class InitException extends java.lang.Error {
 public constructor (){
 
             super();
-            }
+        }
 
-public constructor (msg: string)                        
-
-                            : super(msg){
-
-            super();
-            var msg = msg
+public constructor (msg: string){
+            super(msg);
+                    var msg = msg
 
 
                             //For kotlin this is before the body of the constructor.

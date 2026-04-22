@@ -37,7 +37,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class InputAutomationGenericModuleServiceFactory extends InputAutomationM
 public constructor (){
 
             super();
-            
+        
         try {
             
     var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = new Array(1);

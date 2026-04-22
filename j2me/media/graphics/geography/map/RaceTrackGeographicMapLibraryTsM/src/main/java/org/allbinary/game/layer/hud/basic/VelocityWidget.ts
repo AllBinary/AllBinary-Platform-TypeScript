@@ -52,7 +52,10 @@ import { PrimitiveLongUtil } from "../../../../../../org/allbinary/logic/math/Pr
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,12 +90,9 @@ export class VelocityWidget extends BasicHud {
     private readonly offset: number
 
     private offset2: number= 0
-public constructor (powerOfTenVelocity: number, location: number, direction: number, basicColor: BasicColor)                        
-
-                            : super(location, direction, 14, MyFont.getInstance()!.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(powerOfTenVelocity) +1), 2, basicColor){
-
-            super();
-            var powerOfTenVelocity = powerOfTenVelocity
+public constructor (powerOfTenVelocity: number, location: number, direction: number, basicColor: BasicColor){
+            super(location, direction, 14, MyFont.getInstance()!.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(powerOfTenVelocity) +1), 2, basicColor);
+                    var powerOfTenVelocity = powerOfTenVelocity
 var location = location
 var direction = direction
 var basicColor = basicColor
@@ -157,19 +157,19 @@ this.velocity= value;
                         if(lastVelocity != this.velocity)
                         
                                     {
-                                    this.string= primitiveLongUtil!.getCharArray(this.velocity *18);
+                                    this.string= this.primitiveLongUtil!.getCharArray(this.velocity *18);
     
 
                         if(OpenGLFeatureUtil.getInstance()!.isAnyThreed())
                         
                                     {
-                                    this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits() +1;
+                                    this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits() +1;
     
 
                                     }
                                 
                         else {
-                            this.totalDigits= primitiveLongUtil!.getCurrentTotalDigits();
+                            this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
     
 
                         }

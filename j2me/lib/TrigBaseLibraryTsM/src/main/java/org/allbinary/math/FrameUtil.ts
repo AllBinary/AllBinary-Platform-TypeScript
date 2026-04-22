@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class FrameUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getFrameForAngle(angle: number, angleIncrement: number): number{
@@ -67,7 +70,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.adjustAngleToFrameAngle(angle.toInt()) /angleIncrement;
+                        return this.adjustAngleToFrameAngle(angle) /angleIncrement;
     
 }
 

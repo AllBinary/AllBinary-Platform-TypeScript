@@ -37,7 +37,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class EndGameInfo
 public constructor (){
 
             super();
-            }
+        }
 
 
     public update(gameInfo: GameInfo, myCanvas: MyCanvas){

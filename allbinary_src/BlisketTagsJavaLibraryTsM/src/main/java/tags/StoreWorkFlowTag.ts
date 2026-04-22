@@ -51,7 +51,10 @@ import { StoreTagWorkFlowHelperFactory } from "../taghelpers/StoreTagWorkFlowHel
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,12 +72,9 @@ export class StoreWorkFlowTag extends HelperTag {
     private viewName: string
 
     private viewFile: string
-public constructor ()                        
-
-                            : super(new StoreTagWorkFlowHelperFactory()){
-
-            super();
-            
+public constructor (){
+            super(new StoreTagWorkFlowHelperFactory());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

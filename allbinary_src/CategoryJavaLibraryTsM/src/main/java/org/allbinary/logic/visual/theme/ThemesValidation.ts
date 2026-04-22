@@ -46,7 +46,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,20 +64,20 @@ export class ThemesValidation extends Validation implements DomNodeInterface {
 public constructor (){
 
             super();
-            this.themeVector= new Vector();
+        this.themeVector= new Vector();
     
 }
 
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 }
 
 
@@ -130,7 +133,7 @@ var document = document
 ;
     
 
-    var size: number = themeVector!.length!;
+    var size: number = this.themeVector!.length!;
         
         
 ;
@@ -146,7 +149,7 @@ var document = document
 i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = themeVector!.get(i);
+    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i);
 
                          as DomNodeInterface;
         

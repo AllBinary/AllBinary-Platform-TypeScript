@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class StringValidationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public containsSpaces(value: string): boolean{
@@ -299,7 +302,7 @@ var max = max
                         
                                     {
                                     
-                        if(value.compareTo(stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
+                        if(value.compareTo(this.stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
                         
                                     {
                                     

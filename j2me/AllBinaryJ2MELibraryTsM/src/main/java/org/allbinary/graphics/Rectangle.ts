@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class Rectangle
 public constructor (point: GPoint, width: number, height: number){
 
             super();
-            var point = point
+        var point = point
 var width = width
 var height = height
 this.point= point;

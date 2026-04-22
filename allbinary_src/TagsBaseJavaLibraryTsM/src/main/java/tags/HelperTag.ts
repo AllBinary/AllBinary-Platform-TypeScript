@@ -34,7 +34,10 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class HelperTag extends PropertiesTag {
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
             super();
-                //var tagHelperFactoryInterface = tagHelperFactoryInterface
+            //var tagHelperFactoryInterface = tagHelperFactoryInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
@@ -88,7 +91,7 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface;
 
                                     }
                                 
-this.anyType= tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap(), this.pageContext);
+this.anyType= this.tagHelperFactoryInterface!.getInstance(this.getPropertiesHashMap(), this.pageContext);
     
 
                                     }

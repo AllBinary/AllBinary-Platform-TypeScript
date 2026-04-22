@@ -34,7 +34,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class GraphicsException extends java.lang.Error {
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
         
         
-public constructor (msg: string, obj: any = {}, method: string)                        
-
-                            : super(msg){
-
-            super();
-            var msg = msg
+public constructor (msg: string, obj: any = {}, method: string){
+            super(msg);
+                    var msg = msg
 var obj = obj
 var method = method
 
@@ -66,7 +66,7 @@ var method = method
                     
 
         try {
-            guiLog!.showDialog(msg);
+            this.guiLog!.showDialog(msg);
     
 this.logUtil!.put(msg, obj, method, this);
     
@@ -78,12 +78,9 @@ this.logUtil!.put(msg, obj, method, this);
 
 }
 
-public constructor (msg: string, className: string, method: string)                        
-
-                            : super(msg){
-
-            super();
-            var msg = msg
+public constructor (msg: string, className: string, method: string){
+            super(msg);
+                    var msg = msg
 var className = className
 var method = method
 
@@ -92,7 +89,7 @@ var method = method
                     
 
         try {
-            guiLog!.showDialog(msg);
+            this.guiLog!.showDialog(msg);
     
 this.logUtil!.put(msg, className, method, this);
     

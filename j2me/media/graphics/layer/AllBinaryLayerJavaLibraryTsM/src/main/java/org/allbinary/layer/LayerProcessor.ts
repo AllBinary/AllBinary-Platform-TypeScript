@@ -31,12 +31,17 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LayerProcessorInterface } from "./LayerProcessorInterface.js";
+
 import { LayerManager } from "./LayerManager.js";
 
 import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
@@ -56,7 +61,7 @@ export class LayerProcessor
 public constructor (layerManager: LayerManager){
 
             super();
-                //var layerManager = layerManager
+            //var layerManager = layerManager
 this.layerManager= layerManager;
     
 }
@@ -71,7 +76,7 @@ var index = index
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -82,7 +87,7 @@ var layerInterface = layerInterface
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

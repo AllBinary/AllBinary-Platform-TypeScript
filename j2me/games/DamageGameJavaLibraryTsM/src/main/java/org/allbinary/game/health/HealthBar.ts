@@ -37,12 +37,17 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HealthListenerInterface } from "./HealthListenerInterface.js";
+
 import { Health } from "./Health.js";
 
 import { HealthBarAnimation } from "./HealthBarAnimation.js";
@@ -58,7 +63,7 @@ export class HealthBar extends Paintable implements HealthListenerInterface {
 public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, animationInterface: HealthBarAnimation, direction: number){
 
             super();
-            var layerInterface = layerInterface
+        var layerInterface = layerInterface
 var healthInterface = healthInterface
 var animationInterface = animationInterface
 var direction = direction
@@ -74,12 +79,9 @@ this.onHealthChange();
     
 }
 
-public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number)                        
-
-                            : this(layerInterface, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction){
-
-            super();
-            var layerInterface = layerInterface
+public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number){
+            this(layerInterface, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);
+                    var layerInterface = layerInterface
 var healthInterface = healthInterface
 var location = location
 var direction = direction

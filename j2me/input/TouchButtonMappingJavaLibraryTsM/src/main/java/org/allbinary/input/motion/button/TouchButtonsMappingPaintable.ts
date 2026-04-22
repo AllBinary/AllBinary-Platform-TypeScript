@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class TouchButtonsMappingPaintable extends Paintable {
 public constructor (basicColor: BasicColor){
 
             super();
-            var basicColor = basicColor
+        var basicColor = basicColor
 this.foregroundColor= basicColor!.toInt();
     
 this.init();
@@ -112,13 +115,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
             
     createPaintableTable(): Paintable[][]{
 
-    var totalColumns: number = touchButtonLocationHelper!.getTotalColumns()!;
+    var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;
         
         
 ;
     
 
-    var totalRows: number = touchButtonLocationHelper!.getTotalRows()!;
+    var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;
         
         
 ;
@@ -162,7 +165,7 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-paintableTable[index]![rowIndex]= new TouchButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
+this.paintableTable[index]![rowIndex]= new TouchButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
     
 }
 
@@ -180,13 +183,13 @@ paintableTable[index]![rowIndex]= new TouchButton(BasicTouchInputFactory.getInst
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    var totalColumns: number = touchButtonLocationHelper!.getTotalColumns()!;
+    var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;
         
         
 ;
     
 
-    var totalRows: number = touchButtonLocationHelper!.getTotalRows()!;
+    var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;
         
         
 ;
@@ -211,7 +214,7 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-paintableTable[index]![rowIndex]!.paint(graphics);
+this.paintableTable[index]![rowIndex]!.paint(graphics);
     
 }
 

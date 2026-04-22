@@ -43,7 +43,10 @@ import { LockedUtil } from "../../../../org/allbinary/logic/system/security/lice
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class LockablePaintable extends ItemPaintable {
 public constructor (lockedIndex: number){
 
             super();
-            var lockedIndex = lockedIndex
+        var lockedIndex = lockedIndex
 this.lockedIndex= lockedIndex;
     
 }

@@ -43,7 +43,10 @@ import { HelperFactory } from "../../../admin/taghelpers/HelperFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class TransformInfoRequestHelperFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

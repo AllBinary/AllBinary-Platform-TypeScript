@@ -40,7 +40,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class StoreThemeCategoriesView
 public constructor (categoryInterface: StoreThemeCategoryInterface){
 
             super();
-            var categoryInterface = categoryInterface
+        var categoryInterface = categoryInterface
 this.categoryInterface= categoryInterface;
     
 }
@@ -68,7 +71,7 @@ this.categoryInterface= categoryInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = new StoreThemeCategoryView(categoryInterface).
+    var node: Node = new StoreThemeCategoryView(this.categoryInterface).
                             toXmlNode(document)!;
         
         

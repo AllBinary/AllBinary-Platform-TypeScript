@@ -49,7 +49,10 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,12 +64,9 @@ export class HackRotationSpriteIndexedAnimation extends RotationAnimation {
     readonly sprite: Sprite
 
     private readonly image: Image
-public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animationBehavior: AnimationBehavior)                        
-
-                            : super(angleInfo, animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
+            super(angleInfo, animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior

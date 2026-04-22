@@ -52,7 +52,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,24 +69,18 @@ export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplat
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (transformInfoInterface: Object)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: Object){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (transformInfoInterface: Object, document: Object)                        
-
-                            : super(transformInfoInterface, document){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: Object, document: Object){
+            super(transformInfoInterface, document);
+                    var transformInfoInterface = transformInfoInterface
 var document = document
 
 
@@ -93,12 +90,9 @@ this.setDocument(this.generate(this.toXmlDoc()));
     
 }
 
-public constructor (transformInfoInterface: Object, name: string, type: string)                        
-
-                            : super(transformInfoInterface, name, type){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: Object, name: string, type: string){
+            super(transformInfoInterface, name, type);
+                    var transformInfoInterface = transformInfoInterface
 var name = name
 var type = type
 

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class LogConfigData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "LOG_CONFIG_NAME";

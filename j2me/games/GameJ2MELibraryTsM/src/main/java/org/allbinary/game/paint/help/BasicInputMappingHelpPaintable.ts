@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,12 +77,9 @@ export class BasicInputMappingHelpPaintable extends HelpPaintable {
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
         
         
-protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor)                        
-
-                            : super(basicColor){
-
-            super();
-                //var gameInputMappingArray = gameInputMappingArray
+protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor){
+            super(basicColor);
+                        //var gameInputMappingArray = gameInputMappingArray
     //var basicColor = basicColor
 
 
@@ -114,7 +114,7 @@ this.update(NONE, NONE);
 ;
     
 
-    var size: number = gameInputMappingArray!.length
+    var size: number = this.gameInputMappingArray!.length
                 ;
         
         
@@ -148,7 +148,7 @@ this.update(NONE, NONE);
         
 index < size; index++)
         {
-gameInputMapping= gameInputMappingArray[index]!;
+gameInputMapping= this.gameInputMappingArray[index]!;
     
 gameKey= gameInputMapping!.getGameKey();
     

@@ -34,7 +34,10 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class UpGameKeyEventHandler extends UpGameKeyEventHandlerBase {
     public getInstance(deviceId: number): UpGameKeyEventHandlerBase{
 var deviceId = deviceId
 
-    var playerInputId: number = playerInputIdFactory!.getPlayerForDevice(deviceId)!;
+    var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
         
         
 ;
@@ -100,7 +103,7 @@ var playerInputId = playerInputId
 private constructor (){
 
             super();
-            }
+        }
 
 
     public removeAllListeners(){

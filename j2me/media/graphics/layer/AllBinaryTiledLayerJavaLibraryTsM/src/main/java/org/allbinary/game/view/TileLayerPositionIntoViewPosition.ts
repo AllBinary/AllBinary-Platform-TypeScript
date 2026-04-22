@@ -40,7 +40,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TileLayerPositionIntoViewPosition extends ViewPosition {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getX(): number{

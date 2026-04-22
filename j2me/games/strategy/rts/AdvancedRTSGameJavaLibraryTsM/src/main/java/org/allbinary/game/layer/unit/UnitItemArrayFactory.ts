@@ -79,7 +79,10 @@ import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/lay
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ export class UnitItemArrayFactory
 protected constructor (resources: BasicGameResources[]){
 
             super();
-            var resources = resources
+        var resources = resources
 this.resources= resources;
     
 }
@@ -124,7 +127,7 @@ this.resources= resources;
 ;
     
 
-    var index: number = name.indexOf(commonSeps!.SPACE)!;
+    var index: number = name.indexOf(this.commonSeps!.SPACE)!;
         
         
 ;

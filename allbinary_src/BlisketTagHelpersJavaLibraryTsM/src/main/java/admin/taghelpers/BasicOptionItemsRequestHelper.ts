@@ -64,7 +64,10 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -115,53 +118,53 @@ this.optionItem= new Vector();
     
 this.optionValue= new Vector();
     
-this.id= request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(BasicItemData.ID);
     
-this.optionOneTitle= request.getParameter(BasicOptionItemData.OPTION_ONE_TITLE);
+this.optionOneTitle= this.request.getParameter(BasicOptionItemData.OPTION_ONE_TITLE);
     
-this.defaultOptionItem= request.getParameter(BasicOptionItemData.DEFAULT_OPTION_ITEM);
+this.defaultOptionItem= this.request.getParameter(BasicOptionItemData.DEFAULT_OPTION_ITEM);
     
-this.defaultOptionValue= request.getParameter(BasicOptionItemData.DEFAULT_OPTION_VALUE);
+this.defaultOptionValue= this.request.getParameter(BasicOptionItemData.DEFAULT_OPTION_VALUE);
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_ONE_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_ONE_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_ONE_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_ONE_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_TWO_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_TWO_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_TWO_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_TWO_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_THREE_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_THREE_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_THREE_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_THREE_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_FOUR_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_FOUR_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_FOUR_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_FOUR_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_FIVE_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_FIVE_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_FIVE_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_FIVE_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_SIX_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_SIX_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_SIX_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_SIX_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_SEVEN_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_SEVEN_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_SEVEN_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_SEVEN_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_EIGHT_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_EIGHT_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_EIGHT_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_EIGHT_VALUE));
     
-this.optionItem!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_NINE_ITEM));
+this.optionItem!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_NINE_ITEM));
     
-this.optionValue!.add(request.getParameter(BasicOptionItemData.OPTION_ONE_NINE_VALUE));
+this.optionValue!.add(this.request.getParameter(BasicOptionItemData.OPTION_ONE_NINE_VALUE));
     
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+this.timeEntered= this.request.getParameter(EntryData.getInstance()!.TIMECREATED);
     
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
     
 }
 
@@ -257,7 +260,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
         
 ;
     
-values.add(id);
+values.add(this.id);
     
 
     var size: number = this.optionValue!.length!;
@@ -313,7 +316,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +id +" into items table";
+    var error: string = "Failed to insert " +this.id +" into items table";
         
         
 ;
@@ -341,7 +344,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
     public delete(): string{
 
         try {
-            BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.delete(id);
+            BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.delete(this.id);
     
 
     var success: string = "Successfully deleted";
@@ -416,7 +419,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
+                            append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }
@@ -432,7 +435,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +id;
+    var error: string = "Failed to update: " +this.id;
         
         
 ;

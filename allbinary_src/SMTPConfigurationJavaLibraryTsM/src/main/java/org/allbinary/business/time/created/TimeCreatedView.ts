@@ -46,7 +46,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class TimeCreatedView
 public constructor (timeCreated: TimeCreated){
 
             super();
-            var timeCreated = timeCreated
+        var timeCreated = timeCreated
 this.setTimeCreated(timeCreated);
     
 }
@@ -71,7 +74,7 @@ this.setTimeCreated(timeCreated);
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.setTimeCreated(new TimeCreated(DomNodeHelper.getTextNodeValue(node)));
     
 }

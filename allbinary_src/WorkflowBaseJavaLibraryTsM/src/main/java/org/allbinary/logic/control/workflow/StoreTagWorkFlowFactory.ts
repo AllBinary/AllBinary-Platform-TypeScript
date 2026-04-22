@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class StoreTagWorkFlowFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class, LicensingException::class)

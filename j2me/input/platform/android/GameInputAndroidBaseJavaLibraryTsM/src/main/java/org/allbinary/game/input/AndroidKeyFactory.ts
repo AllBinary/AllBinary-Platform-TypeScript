@@ -32,7 +32,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -526,7 +529,7 @@ this.logUtil!.putF("Start/End", this, commonStrings!.INIT);
     public isSubmission(input: Input): boolean{
 var input = input
 
-                        if(input == ENTER)
+                        if(input == this.ENTER)
                         
                                     {
                                     
@@ -574,7 +577,7 @@ var input = input
     public isBackSpace(input: Input): boolean{
 var input = input
 
-                        if(input == DEL)
+                        if(input == this.DEL)
                         
                                     {
                                     
@@ -598,7 +601,7 @@ var input = input
     public isLeft(input: Input): boolean{
 var input = input
 
-                        if(input == DPAD_LEFT)
+                        if(input == this.DPAD_LEFT)
                         
                                     {
                                     
@@ -622,7 +625,7 @@ var input = input
     public isRight(input: Input): boolean{
 var input = input
 
-                        if(input == DPAD_RIGHT)
+                        if(input == this.DPAD_RIGHT)
                         
                                     {
                                     
@@ -646,7 +649,7 @@ var input = input
     public isUp(input: Input): boolean{
 var input = input
 
-                        if(input == DPAD_UP)
+                        if(input == this.DPAD_UP)
                         
                                     {
                                     
@@ -670,7 +673,7 @@ var input = input
     public isDown(input: Input): boolean{
 var input = input
 
-                        if(input == DPAD_DOWN)
+                        if(input == this.DPAD_DOWN)
                         
                                     {
                                     
@@ -694,7 +697,7 @@ var input = input
     public isEnter(input: Input): boolean{
 var input = input
 
-                        if(input == DPAD_CENTER)
+                        if(input == this.DPAD_CENTER)
                         
                                     {
                                     
@@ -707,7 +710,7 @@ var input = input
                                     }
                                 
                              else 
-                        if(input == ENTER)
+                        if(input == this.ENTER)
                         
                                     {
                                     
@@ -720,7 +723,7 @@ var input = input
                                     }
                                 
                              else 
-                        if(input == CALL)
+                        if(input == this.CALL)
                         
                                     {
                                     

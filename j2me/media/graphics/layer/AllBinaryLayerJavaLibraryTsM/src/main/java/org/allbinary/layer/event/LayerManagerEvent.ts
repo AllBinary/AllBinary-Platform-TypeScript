@@ -40,7 +40,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class LayerManagerEvent extends AllBinaryEventObject {
         
 
     private readonly crud: string
-public constructor (layerManager: LayerManager, crud: string)                        
-
-                            : super(layerManager){
-
-            super();
-            var layerManager = layerManager
+public constructor (layerManager: LayerManager, crud: string){
+            super(layerManager);
+                    var layerManager = layerManager
 var crud = crud
 
 

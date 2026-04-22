@@ -82,12 +82,19 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
+
+import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
+
 import { PlayerGameInput } from "./PlayerGameInput.js";
 
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
@@ -172,7 +179,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 var raceTrackGeographicMapInterfaceFactoryInterface = raceTrackGeographicMapInterfaceFactoryInterface
 var mapSelectorPaintable = mapSelectorPaintable
 var lockedIndex = lockedIndex
@@ -234,7 +241,7 @@ index < size; index++)
                         
                                     {
                                     
-                        if(inputTimeHelper!.isTime())
+                        if(this.inputTimeHelper!.isTime())
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());

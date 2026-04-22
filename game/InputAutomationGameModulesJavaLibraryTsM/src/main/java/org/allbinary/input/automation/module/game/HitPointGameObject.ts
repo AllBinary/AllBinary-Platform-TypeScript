@@ -39,13 +39,18 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { MeteredGameObject } from "./MeteredGameObject.js";
+
+import { HitPointGameObjectInterface } from "./HitPointGameObjectInterface.js";
 
 export class HitPointGameObject extends MeteredGameObject implements HitPointGameObjectInterface {
         
@@ -69,12 +74,9 @@ export class HitPointGameObject extends MeteredGameObject implements HitPointGam
     private readonly IS_CLOSE_DEATH_LABEL: string = "isCloseDeath: ";
         
         
-public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object)                        
-
-                            : super(bufferedImage, minX, maxX, y){
-
-            super();
-            var bufferedImage = bufferedImage
+public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object){
+            super(bufferedImage, minX, maxX, y);
+                    var bufferedImage = bufferedImage
 var minX = minX
 var maxX = maxX
 var y = y
@@ -190,19 +192,19 @@ this.damaged= damaged;
         
 ;
     
-stringBuffer!.append(HP_LABEL);
+stringBuffer!.append(this.HP_LABEL);
     
 stringBuffer!.append(super.toString());
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(IS_DAMAGED_LABEL);
+stringBuffer!.append(this.IS_DAMAGED_LABEL);
     
 stringBuffer!.appendboolean(this.isDamaged());
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(IS_CLOSE_DEATH_LABEL);
+stringBuffer!.append(this.IS_CLOSE_DEATH_LABEL);
     
 stringBuffer!.appendboolean(this.isCloseDeath());
     

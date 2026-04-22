@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedR
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -167,7 +170,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Rectangle(PointFactory.getInstance()!.getInstance(x, y), ((rectangle.getWidth() *scale) shr 1), ((rectangle.getHeight() *scale) shr 1));
+                        return new Rectangle(PointFactory.getInstance()!.getInstance(x, y), ((rectangle.getWidth() *scale)>>1), ((rectangle.getHeight() *scale)>>1));
     
 
                                     }

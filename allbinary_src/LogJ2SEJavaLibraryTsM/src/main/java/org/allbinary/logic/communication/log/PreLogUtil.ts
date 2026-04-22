@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -120,7 +123,7 @@ console.log(LOG_SUCCESS + message);
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

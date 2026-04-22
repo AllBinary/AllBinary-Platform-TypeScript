@@ -31,12 +31,17 @@ import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputAutomationModuleServiceInterface } from "./InputAutomationModuleServiceInterface.js";
+
 export class InputAutomationModuleService
             extends Object
          implements InputAutomationModuleServiceInterface {
@@ -46,7 +51,7 @@ export class InputAutomationModuleService
 public constructor (inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
 
             super();
-            var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
+        var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
 this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
     
 }

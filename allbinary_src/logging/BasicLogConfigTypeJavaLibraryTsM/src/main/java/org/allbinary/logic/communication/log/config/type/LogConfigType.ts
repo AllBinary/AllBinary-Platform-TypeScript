@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class LogConfigType
 public constructor (name: string, description: string){
 
             super();
-            var name = name
+        var name = name
 var description = description
 this.name= name;
     

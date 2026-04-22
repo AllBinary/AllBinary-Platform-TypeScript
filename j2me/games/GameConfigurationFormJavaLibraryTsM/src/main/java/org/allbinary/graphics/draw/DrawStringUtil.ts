@@ -58,7 +58,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -200,7 +203,7 @@ var length = length
 var x = x
 var y = y
 
-    var width: number = (graphics.getFont()!.substringWidth(string, offset, length) shr 1);
+    var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);
         
         
 ;
@@ -266,7 +269,7 @@ index < stringArray!.length; index++)
 ;
     
 
-                        if(string != EMPTY_STRING)
+                        if(string != this.EMPTY_STRING)
                         
                                     {
                                     

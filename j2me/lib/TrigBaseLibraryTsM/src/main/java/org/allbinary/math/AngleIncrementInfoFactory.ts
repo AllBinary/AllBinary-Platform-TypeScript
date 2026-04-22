@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,20 +60,20 @@ export class AngleIncrementInfoFactory
 }
 
 
-    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(AngleFactory.getInstance()!.TOTAL_ANGLE.toInt());
+    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(AngleFactory.getInstance()!.TOTAL_ANGLE);
         
         
 
     public getInstance(angleIncrement: number): AngleIncrementInfo{
 var angleIncrement = angleIncrement
 
-    var halfAngleIncrement: number = (angleIncrement.toInt() shr 1);
+    var halfAngleIncrement: number = (angleIncrement>>1);
         
         
 ;
     
 
-    var angleIncrementInfoCanBeNull: AngleIncrementInfo? = angleIncrementInfo[halfAngleIncrement];
+    var angleIncrementInfoCanBeNull: AngleIncrementInfo? = this.angleIncrementInfo[halfAngleIncrement];
         
         
 ;
@@ -83,7 +86,7 @@ var angleIncrement = angleIncrement
                                     {
                                     angleIncrementInfoCanBeNull= new AngleIncrementInfo(angleIncrement);
     
-angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
+this.angleIncrementInfo[halfAngleIncrement]= angleIncrementInfoCanBeNull;
     
 
                                     }

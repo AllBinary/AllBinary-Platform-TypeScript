@@ -40,7 +40,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class UserConfigurationDomDocumentMapping
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
-            var userConfigurationInterface = userConfigurationInterface
+        var userConfigurationInterface = userConfigurationInterface
 this.userConfigurationInterface= userConfigurationInterface;
     
 }

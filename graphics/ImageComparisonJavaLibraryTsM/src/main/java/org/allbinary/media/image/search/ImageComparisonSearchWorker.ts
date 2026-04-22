@@ -61,7 +61,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -90,7 +93,7 @@ export class ImageComparisonSearchWorker extends BasicEventHandler implements Im
 public constructor (imageSearchConstraintsInterface: ImageComparisonSearchConstraintsInterface){
 
             super();
-            var imageSearchConstraintsInterface = imageSearchConstraintsInterface
+        var imageSearchConstraintsInterface = imageSearchConstraintsInterface
 this.imageComparisonInfoVector= new Vector();
     
 this.imageSearchConstraintsInterface= imageSearchConstraintsInterface;

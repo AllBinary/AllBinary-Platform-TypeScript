@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class GameKeyMappingFactory
 private constructor (){
 
             super();
-            
+        
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
         
         
@@ -135,7 +138,7 @@ var key = key
 
     set(gameKey: GameKey){
 var gameKey = gameKey
-intKeyToGameKey[gameKey!.getId()]= gameKey;
+this.intKeyToGameKey[gameKey!.getId()]= gameKey;
     
 }
 

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class ColorAtActionScriptConditionData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

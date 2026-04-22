@@ -72,13 +72,18 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
+
+import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
 import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
@@ -162,12 +167,9 @@ index++;
     private release: boolean= false
 
     private delayBetweenKeys: number= 0
-public constructor (node: Node)                        
-
-                            : super(NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -322,12 +324,9 @@ this.keyboardActionScriptInputJPanel= new KeyboardActionScriptInputJPanel(this);
     
 }
 
-public constructor ()                        
-
-                            : super(NAME){
-
-            super();
-            
+public constructor (){
+            super(NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

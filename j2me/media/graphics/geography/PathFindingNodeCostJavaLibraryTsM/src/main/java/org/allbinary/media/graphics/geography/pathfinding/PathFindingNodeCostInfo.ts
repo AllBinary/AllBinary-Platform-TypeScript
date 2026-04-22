@@ -34,12 +34,17 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Comparable } from "./Comparable.js";
+
 import { PathFindingNodeCostInfoData } from "./PathFindingNodeCostInfoData.js";
 
 export class PathFindingNodeCostInfo
@@ -59,7 +64,7 @@ export class PathFindingNodeCostInfo
 public constructor (costFromStart: number, costToGoal: number){
 
             super();
-                //var costFromStart = costFromStart
+            //var costFromStart = costFromStart
     //var costToGoal = costToGoal
 this.costFromStartP= costFromStart;
     
@@ -87,10 +92,10 @@ this.totalCostP= totalCost;
                 //@Throws(Error::class)
             
     public setTotalCost(){
-this.totalCostP= costFromStartP +costToEndP;
+this.totalCostP= this.costFromStartP +this.costToEndP;
     
 
-                        if(this.totalCostP > pathFindingNodeCostInfoData!.MAX_NODE_COST)
+                        if(this.totalCostP > this.pathFindingNodeCostInfoData!.MAX_NODE_COST)
                         
                                     {
                                     

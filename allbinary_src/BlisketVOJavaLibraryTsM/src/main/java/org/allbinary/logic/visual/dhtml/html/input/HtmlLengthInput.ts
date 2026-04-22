@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class HtmlLengthInput extends HtmlValueInput {
     private length: string
 
     private size: string
-public constructor (before: string, type: string, name: string, value: string, after: string)                        
-
-                            : super(before, type, name, value, after){
-
-            super();
-            var before = before
+public constructor (before: string, type: string, name: string, value: string, after: string){
+            super(before, type, name, value, after);
+                    var before = before
 var type = type
 var name = name
 var value = value
@@ -73,7 +73,7 @@ var after = after
 var length = length
 this.length= length.toString();
     
-addAttribute(MAXLENGTH, this.length);
+addAttribute(this.MAXLENGTH, this.length);
     
 }
 
@@ -82,7 +82,7 @@ addAttribute(MAXLENGTH, this.length);
 var size = size
 this.size= size.toString();
     
-addAttribute(MAXLENGTH, this.size);
+addAttribute(this.MAXLENGTH, this.size);
     
 }
 

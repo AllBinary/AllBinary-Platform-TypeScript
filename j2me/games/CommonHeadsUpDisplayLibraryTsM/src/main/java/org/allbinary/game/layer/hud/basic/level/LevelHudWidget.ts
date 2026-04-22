@@ -49,7 +49,10 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,12 +76,9 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
     private readonly offset: number
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
-public constructor (maxlevel: number, location: number, direction: number)                        
-
-                            : this(maxlevel, location, direction, MyFont.getInstance()!.getSize() *4){
-
-            super();
-            var maxlevel = maxlevel
+public constructor (maxlevel: number, location: number, direction: number){
+            this(maxlevel, location, direction, MyFont.getInstance()!.getSize() *4);
+                    var maxlevel = maxlevel
 var location = location
 var direction = direction
 
@@ -87,12 +87,9 @@ var direction = direction
                     
 }
 
-public constructor (maxlevel: number, location: number, direction: number, maxWidth: number)                        
-
-                            : super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY){
-
-            super();
-            var maxlevel = maxlevel
+public constructor (maxlevel: number, location: number, direction: number, maxWidth: number){
+            super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
+                    var maxlevel = maxlevel
 var location = location
 var direction = direction
 var maxWidth = maxWidth
@@ -128,9 +125,9 @@ this.update();
 
 
     update(){
-levelNumberCharArray= this.primitiveLongUtil!.getCharArray(this.level);
+this.levelNumberCharArray= this.primitiveLongUtil!.getCharArray(this.level);
     
-levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
+this.levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
     
 }
 
@@ -171,7 +168,7 @@ this.update();
 
     public isComplete(): boolean{
 
-                        if(this.level <= maxlevel)
+                        if(this.level <= this.maxlevel)
                         
                                     {
                                     

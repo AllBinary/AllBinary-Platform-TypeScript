@@ -34,7 +34,10 @@ import { Display } from "../../../../org/eclipse/swt/widgets/Display.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class SWTProcessor
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public runnable: Runnable = NullRunnable.getInstance()!;

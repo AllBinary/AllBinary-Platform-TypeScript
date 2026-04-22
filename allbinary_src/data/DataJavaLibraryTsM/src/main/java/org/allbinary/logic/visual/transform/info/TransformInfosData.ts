@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TransformInfosData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "TRANSFORM_INFOS_NAME";

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class VectorInfo
 public constructor (width: number, height: number, points: number[][], totalFrames: number){
 
             super();
-            var width = width
+        var width = width
 var height = height
 var points = points
 var totalFrames = totalFrames

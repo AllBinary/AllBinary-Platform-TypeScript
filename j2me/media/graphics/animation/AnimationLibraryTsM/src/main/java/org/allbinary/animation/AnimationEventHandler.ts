@@ -31,7 +31,10 @@ import { BasicEventHandler } from "../../../org/allbinary/logic/util/event/handl
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class AnimationEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

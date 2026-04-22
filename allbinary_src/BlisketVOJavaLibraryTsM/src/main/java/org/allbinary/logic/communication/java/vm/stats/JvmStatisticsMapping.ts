@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ import { JvmStatisticsData } from "./JvmStatisticsData.js";
 
 export class JvmStatisticsMapping extends JvmStatistics implements TableMappingInterface {
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

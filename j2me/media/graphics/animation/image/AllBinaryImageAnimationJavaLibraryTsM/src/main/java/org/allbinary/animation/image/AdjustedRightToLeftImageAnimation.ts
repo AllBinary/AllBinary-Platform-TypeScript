@@ -37,7 +37,10 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class AdjustedRightToLeftImageAnimation extends RightToLeftImageAnimation
     private dx: number= 0
 
     private dy: number= 0
-public constructor (image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(image, animationBehavior){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(image, animationBehavior);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var animationBehavior = animationBehavior

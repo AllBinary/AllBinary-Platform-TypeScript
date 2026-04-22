@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class TransformInfoObjectConfigNoManipulationFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

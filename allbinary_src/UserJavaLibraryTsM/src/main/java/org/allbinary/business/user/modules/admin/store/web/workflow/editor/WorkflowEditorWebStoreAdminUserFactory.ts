@@ -37,7 +37,10 @@ import { UserInterface } from "../../../../../../../../../../org/allbinary/busin
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class WorkflowEditorWebStoreAdminUserFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

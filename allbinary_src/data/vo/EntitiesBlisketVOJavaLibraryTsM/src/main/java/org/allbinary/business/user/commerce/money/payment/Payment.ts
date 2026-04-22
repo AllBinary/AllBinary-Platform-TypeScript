@@ -57,12 +57,17 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentInterface } from "./PaymentInterface.js";
+
 import { PaymentData } from "./PaymentData.js";
 
 export class Payment
@@ -108,7 +113,7 @@ export class Payment
 public constructor (payment: HashMap<any, any>){
 
             super();
-            var payment = payment
+        var payment = payment
 this.name= payment.get(PaymentData.NAME);
 
                          as String;
@@ -125,7 +130,7 @@ this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION);
 
                          as String;
     
-this.number= new SuperCrypt(new Integer(encryption).
+this.number= new SuperCrypt(new Integer(this.encryption).
                             toInt()).
                             decrypt(payment.get(PaymentData.NUMBER);
 
@@ -207,7 +212,7 @@ this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER);
 public constructor (request: ServletRequest){
 
             super();
-            var request = request
+        var request = request
 this.name= request.getParameter(PaymentData.NAME);
     
 this.type= request.getParameter(PaymentData.TYPE);
@@ -241,7 +246,7 @@ this.magneticInkCheckReader= request.getParameter(PaymentData.MAGNETICINKCHECKRE
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): Boolean{

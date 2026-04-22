@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,9 +70,9 @@ export class GameConfigurationSingleton
 private constructor (){
 
             super();
-            list= new BasicArrayList();
+        this.list= new BasicArrayList();
     
-hashtable= new Hashtable<any, any>();
+this.hashtable= new Hashtable<any, any>();
     
 }
 
@@ -80,7 +83,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(name as Object);
+                        return this.hashtable.get(name as Object);
 
                          as GameConfiguration;
     
@@ -99,7 +102,7 @@ var name = name
 
     public add(gameConfiguration: GameConfiguration){
 var gameConfiguration = gameConfiguration
-list.add(gameConfiguration);
+this.list.add(gameConfiguration);
     
 }
 

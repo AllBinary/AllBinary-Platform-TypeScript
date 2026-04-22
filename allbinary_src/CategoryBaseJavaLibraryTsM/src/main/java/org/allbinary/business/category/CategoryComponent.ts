@@ -43,7 +43,10 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ import { CategoryInterface } from "./CategoryInterface.js";
 
 export class CategoryComponent extends CategoryView implements TransformInterface {
         
-public constructor (categoryInterface: CategoryInterface)                        
-
-                            : super(categoryInterface){
-
-            super();
-            var categoryInterface = categoryInterface
+public constructor (categoryInterface: CategoryInterface){
+            super(categoryInterface);
+                    var categoryInterface = categoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

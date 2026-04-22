@@ -43,7 +43,10 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 
             super();
-            var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
+        var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
 super.init(allbinaryLayerFactoryInterface, total);
     

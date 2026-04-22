@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class ShaderManager
 public constructor (GL_VERTEX_SHADER: number, GL_FRAGMENT_SHADER: number){
 
             super();
-                //var GL_VERTEX_SHADER = GL_VERTEX_SHADER
+            //var GL_VERTEX_SHADER = GL_VERTEX_SHADER
     //var GL_FRAGMENT_SHADER = GL_FRAGMENT_SHADER
 this.GL_VERTEX_SHADER= GL_VERTEX_SHADER;
     

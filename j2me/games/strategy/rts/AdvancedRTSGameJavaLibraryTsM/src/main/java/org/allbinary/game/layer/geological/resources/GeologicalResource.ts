@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class GeologicalResource
 public constructor (initTotal: number){
 
             super();
-            var initTotal = initTotal
+        var initTotal = initTotal
 this.initTotal= initTotal;
     
 this.init();

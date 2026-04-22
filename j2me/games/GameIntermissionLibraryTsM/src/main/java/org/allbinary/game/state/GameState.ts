@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class GameState
 public constructor (name: string, state: number){
 
             super();
-            var name = name
+        var name = name
 var state = state
 this.name= name;
     

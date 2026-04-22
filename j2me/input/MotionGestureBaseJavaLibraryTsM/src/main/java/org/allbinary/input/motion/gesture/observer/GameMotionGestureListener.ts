@@ -55,12 +55,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionGestureEventListener } from "./MotionGestureEventListener.js";
+
 import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
 
 import { MotionGestureEvent } from "./MotionGestureEvent.js";
@@ -90,7 +95,7 @@ export class GameMotionGestureListener
 public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
-            var signed = signed
+        var signed = signed
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.signed= signed;
@@ -100,7 +105,7 @@ this.signed= signed;
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
@@ -163,7 +168,7 @@ onMotionGestureEvent(ev);
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-touchGestureCollection!.add(ev.getMotionGesture());
+this.touchGestureCollection!.add(ev.getMotionGesture());
     
 }
 
@@ -172,11 +177,11 @@ touchGestureCollection!.add(ev.getMotionGesture());
 var ev = ev
 
         try {
-            touchGestureCollection!.add(ev.getMotionGesture());
+            this.touchGestureCollection!.add(ev.getMotionGesture());
     
-signed.onMotionGestureCompleted(touchGestureCollection);
+this.signed.onMotionGestureCompleted(this.touchGestureCollection);
     
-touchGestureCollection!.clear();
+this.touchGestureCollection!.clear();
     
 
                 //: 
@@ -188,7 +193,7 @@ touchGestureCollection!.clear();
         
 ;
     
-stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
+stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
     
@@ -228,13 +233,13 @@ var ev = ev
                                     }
                                 
                         else {
-                            motionGestureCollection!.add(motionGestureInput);
+                            this.motionGestureCollection!.add(motionGestureInput);
     
-signed.onMotionGestureCompleted(motionGestureCollection);
+this.signed.onMotionGestureCompleted(this.motionGestureCollection);
     
-motionGestureCollection!.clear();
+this.motionGestureCollection!.clear();
     
-touchGestureCollection!.clear();
+this.touchGestureCollection!.clear();
     
 
                         }
@@ -249,7 +254,7 @@ touchGestureCollection!.clear();
         
 ;
     
-stringBuffer!.append(commonStrings!.EXCEPTION_LABEL);
+stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()));
     

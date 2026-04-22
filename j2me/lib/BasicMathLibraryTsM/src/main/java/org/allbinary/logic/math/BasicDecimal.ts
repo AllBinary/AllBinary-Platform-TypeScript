@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class BasicDecimal
 public constructor (bigDecimal: BasicDecimal){
 
             super();
-            var bigDecimal = bigDecimal
+        var bigDecimal = bigDecimal
 this.units= bigDecimal!.getUnscaled();
     
 this.updateScaled();
@@ -59,7 +62,7 @@ this.updateScaled();
 public constructor (){
 
             super();
-            this.units= 0;
+        this.units= 0;
     
 this.updateScaled();
     
@@ -68,7 +71,7 @@ this.updateScaled();
 public constructor (units: number){
 
             super();
-            var units = units
+        var units = units
 this.units= units;
     
 this.updateScaled();
@@ -78,7 +81,7 @@ this.updateScaled();
 
     public set(value: number){
 var value = value
-this.units= value.toLong();
+this.units= value;
     
 this.updateScaled();
     
@@ -224,7 +227,7 @@ this.updateScaled();
     private scaled: number= 0
 
     updateScaled(){
-this.scaled= (this.units /factorValue).toInt();
+this.scaled= (this.units /this.factorValue);
     
 }
 

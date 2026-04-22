@@ -61,7 +61,10 @@ import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryT
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class BasicHighScoresFactory extends HighScoresBase {
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
 this.abeClientInformation= abeClientInformation;
     

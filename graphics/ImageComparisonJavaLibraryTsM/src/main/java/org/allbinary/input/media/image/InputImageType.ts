@@ -34,7 +34,10 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ var imageTypeString = imageTypeString
 private constructor (name: string, index: number){
 
             super();
-            var name = name
+        var name = name
 var index = index
 this.name= name;
     

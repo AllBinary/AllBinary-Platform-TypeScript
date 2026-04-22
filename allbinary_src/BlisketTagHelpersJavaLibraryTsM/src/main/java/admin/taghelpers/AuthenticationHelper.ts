@@ -87,7 +87,10 @@ import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,14 +116,11 @@ export class AuthenticationHelper extends TagHelper {
     private timeout: string
 
     private attemptsInteger: Integer
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext)                        
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+            this(hashMap, pageContext!.getRequest();
 
-                            : this(hashMap, pageContext!.getRequest();
-
-                         as HttpServletRequest){
-
-            super();
-            var hashMap = hashMap
+                         as HttpServletRequest);
+                    var hashMap = hashMap
 var pageContext = pageContext
 
 
@@ -131,7 +131,7 @@ var pageContext = pageContext
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
@@ -320,7 +320,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 ;
     
 
-    var inactivityAllowed: number = role.getSessionInactivityTimeout()!;
+    var inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;
         
         
 ;
@@ -495,7 +495,7 @@ stringBuffer!.append("Trying New login<p/>");
             
     public isAuthenticated(): boolean{
 
-                        if(BooleanUtil.getInstance()!.getFromString(authenticated))
+                        if(BooleanUtil.getInstance()!.getFromString(this.authenticated))
                         
                                     {
                                     
@@ -535,13 +535,13 @@ var roles = roles
                         
                                     {
                                     
-                        if(sessionUserName != 
+                        if(this.sessionUserName != 
                                     null
                                 )
                         
                                     {
                                     
-    var basicUserRole: BasicUserRole = role.getBasicUserRole()!;
+    var basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;
         
         
 ;
@@ -590,7 +590,7 @@ index < size; index++)
 ;
     
 
-    var userInterface: UserInterface = userEntityInterface!.getUser(sessionUserName)!;
+    var userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;
         
         
 ;
@@ -684,12 +684,12 @@ index < size; index++)
 
     public nextAttempt(){
 
-                        if(attemptsInteger != 
+                        if(this.attemptsInteger != 
                                     null
-                                 && attemptsInteger!.toInt() > 0)
+                                 && this.attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.toInt() +1));
     
 
                                     }
@@ -812,7 +812,7 @@ this.nextAttempt();
 
         try {
             
-                        if(BooleanUtil.getInstance()!.getFromString(timeout))
+                        if(BooleanUtil.getInstance()!.getFromString(this.timeout))
                         
                                     {
                                     this.invalidateSession();
@@ -915,19 +915,19 @@ stringBuffer!.append("<br/>\n");
     
 stringBuffer!.append("Time Left: ");
     
-stringBuffer!.appendlong((role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)));
+stringBuffer!.appendlong((this.role.getSessionTimeout() -(calendar.getTimeInMillis() -timeCreated)));
     
 stringBuffer!.append("<br/>\n");
     
 stringBuffer!.append("Inactivity Time Allowed: ");
     
-stringBuffer!.appendlong(role.getSessionTimeout());
+stringBuffer!.appendlong(this.role.getSessionTimeout());
     
 stringBuffer!.append("<br/>\n");
     
 stringBuffer!.append("Inactivity Time Allowed: ");
     
-stringBuffer!.appendlong(role.getSessionInactivityTimeout());
+stringBuffer!.appendlong(this.role.getSessionInactivityTimeout());
     
 stringBuffer!.append("<br/>\n");
     

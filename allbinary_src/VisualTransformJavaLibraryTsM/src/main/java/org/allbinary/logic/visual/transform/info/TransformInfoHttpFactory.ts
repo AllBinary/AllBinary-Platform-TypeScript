@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -162,7 +165,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GE
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

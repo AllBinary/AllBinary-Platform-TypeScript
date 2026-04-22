@@ -91,7 +91,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -147,7 +150,7 @@ SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var storeFrontInterface = storeFrontInterface
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -189,7 +192,7 @@ this.document= DomDocumentHelper.create(data);
 this.shippingVector= new Vector();
     
 
-    var nodeList: NodeList = document.getElementsByTagName(ShippingMethodsData.NAME)!;
+    var nodeList: NodeList = this.document.getElementsByTagName(ShippingMethodsData.NAME)!;
         
         
 ;
@@ -242,7 +245,7 @@ index < nodeList!.getLength(); index++)
         
 ;
     
-shippingVector!.add(shippingMethodInterface);
+this.shippingVector!.add(shippingMethodInterface);
     
 
     var defaultShippingMethodNameNode: Node = DomSearchHelper.getNode(ShippingMethodData.DEFAULT, shippingMethodNameNode!.getChildNodes())!;
@@ -264,14 +267,14 @@ shippingVector!.add(shippingMethodInterface);
 }
 
 
-                        if(shippingVector!.length < 1)
+                        if(this.shippingVector!.length < 1)
                         
                                     {
                                     this.defaultShippingMethodInterface= new BasicWeightShippingModuleView();
     
-shippingVector!.add(this.defaultShippingMethodInterface);
+this.shippingVector!.add(this.defaultShippingMethodInterface);
     
-shippingVector!.add(new NoShippingModuleView());
+this.shippingVector!.add(new NoShippingModuleView());
     
 
                                     }

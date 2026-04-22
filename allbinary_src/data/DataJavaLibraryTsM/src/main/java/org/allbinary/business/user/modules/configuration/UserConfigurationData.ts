@@ -31,7 +31,10 @@ import { DataFileData } from "../../../../../../org/allbinary/data/file/DataFile
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class UserConfigurationData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

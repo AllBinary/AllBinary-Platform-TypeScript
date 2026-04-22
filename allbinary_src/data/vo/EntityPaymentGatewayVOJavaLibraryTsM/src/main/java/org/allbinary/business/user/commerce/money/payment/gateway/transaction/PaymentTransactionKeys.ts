@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class PaymentTransactionKeys
 protected constructor (value: string){
 
             super();
-            var value = value
+        var value = value
 this.key= value;
     
 }

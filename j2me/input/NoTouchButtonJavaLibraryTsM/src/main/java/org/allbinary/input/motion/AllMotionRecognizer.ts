@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class AllMotionRecognizer
 public constructor (){
 
             super();
-            this.id= index++;
+        this.id= index++;
     
 }
 

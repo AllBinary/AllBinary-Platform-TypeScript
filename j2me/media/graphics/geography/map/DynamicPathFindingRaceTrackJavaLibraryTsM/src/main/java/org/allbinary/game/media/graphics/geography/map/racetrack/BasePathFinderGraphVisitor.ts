@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../../../../org/allbinary/util/Basic
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-            var geographicMapInterface = geographicMapInterface
+        var geographicMapInterface = geographicMapInterface
 var edgeMinimum = edgeMinimum
 var minPathWeight = minPathWeight
 var maxPathWeight = maxPathWeight
@@ -128,7 +131,7 @@ pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
     public isValid(graphPath: GraphPath): boolean{
 var graphPath = graphPath
 
-                        if(graphPath!.getEdgeList()!.size() > edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
+                        if(graphPath!.getEdgeList()!.size > this.edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
                         
                                     {
                                     
@@ -162,7 +165,7 @@ var graphPath = graphPath
 ;
     
 
-                        if(graphPath!.getEdgeList()!.size() < edgeMinimum)
+                        if(graphPath!.getEdgeList()!.size < this.edgeMinimum)
                         
                                     {
                                     stringBuffer!.append("Ignoring Small: " +graphPath!.getEdgeList()!.size());
@@ -171,7 +174,7 @@ var graphPath = graphPath
                                     }
                                 
 
-                        if(graphPath!.getWeight() <= minPathWeight)
+                        if(graphPath!.getWeight() <= this.minPathWeight)
                         
                                     {
                                     stringBuffer!.append(" Low Weighted Path: " +graphPath!.getWeight());
@@ -180,7 +183,7 @@ var graphPath = graphPath
                                     }
                                 
 
-                        if(graphPath!.getWeight() >= maxPathWeight)
+                        if(graphPath!.getWeight() >= this.maxPathWeight)
                         
                                     {
                                     stringBuffer!.append(" To High Weighted Path: " +graphPath!.getWeight());

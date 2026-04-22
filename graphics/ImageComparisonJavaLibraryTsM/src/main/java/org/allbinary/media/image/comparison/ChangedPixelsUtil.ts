@@ -52,7 +52,10 @@ import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/
 
 
 
-        
+
+
+
+
 
 
 
@@ -197,7 +200,7 @@ bufferedImageCacheables[1]!.getBufferedImage()!.setRGB(pixelDelta!.getPoint()!.g
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

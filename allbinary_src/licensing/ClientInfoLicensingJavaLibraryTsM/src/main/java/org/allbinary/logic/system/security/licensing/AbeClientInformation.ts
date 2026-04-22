@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class AbeClientInformation extends ClientInformation {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (name: string, version: string, specialName: string, shortName: string)                        
-
-                            : super(name, version, specialName, shortName){
-
-            super();
-                //var name = name
+public constructor (name: string, version: string, specialName: string, shortName: string){
+            super(name, version, specialName, shortName);
+                        //var name = name
     //var version = version
     //var specialName = specialName
     //var shortName = shortName

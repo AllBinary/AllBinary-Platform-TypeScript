@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class StreamUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,15 +46,15 @@ export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 }
 
 
     initComponents(){
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-jLabel1!.setText("No Configuration Available");
+this.jLabel1!.setText("No Configuration Available");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);

@@ -31,7 +31,10 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class ColorChangeEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

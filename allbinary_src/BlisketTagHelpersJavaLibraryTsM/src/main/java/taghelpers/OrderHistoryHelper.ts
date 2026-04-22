@@ -79,7 +79,10 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class OrderHistoryHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 this.propertiesHashMap= propertiesHashMap;
     
@@ -153,9 +156,9 @@ this.getFormData();
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID);
+this.id= this.request.getParameter(OrderData.ID);
     
-this.groupId= request.getParameter(ShippingMethodData.GROUP);
+this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
     
 
                         if(this.newStatus == 
@@ -163,7 +166,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
                                 )
                         
                                     {
-                                    this.newStatus= request.getParameter(OrderHistoryData.STATUS);
+                                    this.newStatus= this.request.getParameter(OrderHistoryData.STATUS);
     
 
                                     }
@@ -181,7 +184,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
 ;
     
 
-    var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(id)!;
+    var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;
         
         
 ;
@@ -200,7 +203,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Order " +id +" Already Cancelled<br/>";
+                        return "Order " +this.id +" Already Cancelled<br/>";
     
 
                                     }
@@ -213,7 +216,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Order " +id +" Already Shipped. You can't cancel a shipped order.<br/>";
+                        return "Order " +this.id +" Already Shipped. You can't cancel a shipped order.<br/>";
     
 
                                     }
@@ -226,7 +229,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Order " +id +" has been cancelled.<br/>";
+                        return "Order " +this.id +" has been cancelled.<br/>";
     
 
                                     }
@@ -239,7 +242,7 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Order " +id +" Partially Shipped. You can cancel unshipped items, but not the whole order.<br/>";
+                        return "Order " +this.id +" Partially Shipped. You can cancel unshipped items, but not the whole order.<br/>";
     
 
                                     }
@@ -254,13 +257,13 @@ this.groupId= request.getParameter(ShippingMethodData.GROUP);
         
 ;
     
-orderHistoryEntityInterface!.setStatus(id, this.newStatus);
+orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return "Order " +id +" has been cancelled.<br/>";
+                        return "Order " +this.id +" has been cancelled.<br/>";
     
 
                                     }

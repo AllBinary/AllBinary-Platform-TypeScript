@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class StoreFrontUsersStatisticsData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "STOREFRONT_USERS_STATISTICS_NAME";

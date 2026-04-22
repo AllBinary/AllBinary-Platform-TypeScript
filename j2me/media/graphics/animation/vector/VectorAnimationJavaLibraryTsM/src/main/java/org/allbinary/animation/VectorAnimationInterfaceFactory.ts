@@ -37,12 +37,17 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
+
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
 import { Animation } from "./Animation.js";
@@ -59,12 +64,9 @@ export class VectorAnimationInterfaceFactory
         
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (currentPoints: number[][][], basicColor: BasicColor)                        
-
-                            : this(currentPoints, basicColor, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][][], basicColor: BasicColor){
+            this(currentPoints, basicColor, AnimationBehaviorFactory.getInstance());
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
 
 
@@ -75,7 +77,7 @@ public constructor (currentPoints: number[][][], basicColor: BasicColor)
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var currentPoints = currentPoints
+            //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.currentPoints= currentPoints;

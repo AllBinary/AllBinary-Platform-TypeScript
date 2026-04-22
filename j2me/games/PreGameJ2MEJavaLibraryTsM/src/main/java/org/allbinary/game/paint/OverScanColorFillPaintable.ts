@@ -34,7 +34,10 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { ColorFillPaintable } from "./ColorFillPaintable.js";
 
 export class OverScanColorFillPaintable extends ColorFillPaintable {
         
-public constructor (basicColor: BasicColor)                        
-
-                            : super(basicColor){
-
-            super();
-            var basicColor = basicColor
+public constructor (basicColor: BasicColor){
+            super(basicColor);
+                    var basicColor = basicColor
 
 
                             //For kotlin this is before the body of the constructor.

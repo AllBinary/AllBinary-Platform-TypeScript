@@ -31,7 +31,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class LicenseTypeFactory
     public getInstance(name: string): LicenseType{
 var name = name
 
-                        if(DEMO.getName()!.compareTo(name) == 0)
+                        if(this.DEMO.getName()!.compareTo(name) == 0)
                         
                                     {
                                     
@@ -86,7 +89,7 @@ var name = name
                                     }
                                 
                              else 
-                        if(NORMAL.getName()!.compareTo(name) == 0)
+                        if(this.NORMAL.getName()!.compareTo(name) == 0)
                         
                                     {
                                     

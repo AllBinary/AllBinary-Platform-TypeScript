@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,10 +71,10 @@ export class SmallInsert
 public constructor (fileName: string){
 
             super();
-            var fileName = fileName
+        var fileName = fileName
 this.fileName= fileName;
     
-string= FileUtil.getInstance()!.readAsString(fileName);
+this.string= FileUtil.getInstance()!.readAsString(fileName);
     
 }
 
@@ -108,7 +111,7 @@ idOutData!.writeBytes(text +this.string);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtBeginning", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insertAtBeginning", e);
     
 
                                     }
@@ -196,7 +199,7 @@ idFile!.close();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "after", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "after", e);
     
 
                                     }
@@ -244,7 +247,7 @@ idOutData!.writeBytes(this.string +text);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insertAtEnd", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insertAtEnd", e);
     
 
                                     }

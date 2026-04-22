@@ -46,7 +46,10 @@ import { Node } from "../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,18 +65,15 @@ export class ValidationViewHelper extends ViewHelper implements ValidationCompon
         
 
     private viewInterface: ValidationComponentInterface
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(hashMap, pageContext){
-
-            super();
-            var hashMap = hashMap
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+            super(hashMap, pageContext);
+                    var hashMap = hashMap
 var pageContext = pageContext
 
 
                             //For kotlin this is before the body of the constructor.
                     
-viewInterface= this.getViewObject();
+this.viewInterface= this.getViewObject();
 
                          as ValidationComponentInterface;
     

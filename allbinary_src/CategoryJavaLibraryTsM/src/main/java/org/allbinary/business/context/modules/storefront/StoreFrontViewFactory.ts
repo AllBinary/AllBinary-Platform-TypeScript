@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ var storeName = storeName
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

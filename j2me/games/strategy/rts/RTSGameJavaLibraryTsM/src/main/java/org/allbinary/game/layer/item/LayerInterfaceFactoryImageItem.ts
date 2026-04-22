@@ -46,7 +46,10 @@ import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/lay
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class LayerInterfaceFactoryImageItem extends CustomImageItem {
     private readonly animationArray: Animation[]
 
     private readonly layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface
-public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, animationArray: Animation[], layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface)                        
-
-                            : super(label, img, layout, altText, basicColor){
-
-            super();
-            var label = label
+public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, animationArray: Animation[], layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
+            super(label, img, layout, altText, basicColor);
+                    var label = label
 var img = img
 var layout = layout
 var altText = altText

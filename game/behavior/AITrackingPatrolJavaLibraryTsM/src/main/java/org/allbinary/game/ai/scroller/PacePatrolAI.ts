@@ -76,7 +76,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,12 +99,9 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
     isFollowLimitedByTerrain: boolean = false;
         
         
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(hashtable, ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(hashtable, ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 

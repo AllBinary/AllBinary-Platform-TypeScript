@@ -52,7 +52,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
 public constructor (captionAnimation: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();
-                //var captionAnimation = captionAnimation
+            //var captionAnimation = captionAnimation
     //var captionDx = captionDx
     //var captionDy = captionDy
     //var dx = dx

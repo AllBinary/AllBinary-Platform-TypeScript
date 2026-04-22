@@ -31,7 +31,10 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class PrimitiveIntUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

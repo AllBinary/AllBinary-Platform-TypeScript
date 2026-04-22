@@ -37,7 +37,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -92,7 +95,7 @@ export class LocalPlayerInputIdFactory
 private constructor (){
 
             super();
-            
+        
 
 
 
@@ -127,11 +130,11 @@ var deviceId = deviceId
 ;
     
 
-                        if(deviceId < MAX_FAST_DEVICEID)
+                        if(deviceId < this.MAX_FAST_DEVICEID)
                         
                                     {
                                     
-    var playerInputId: number = deviceIdToplayerId[deviceId]!;
+    var playerInputId: number = this.deviceIdToplayerId[deviceId]!;
         
         
 ;
@@ -178,10 +181,10 @@ var deviceId = deviceId
 
                         }
                             
-index= totalDevicesMapped;
+index= this.totalDevicesMapped;
     
 
-                        if(deviceId < MAX_FAST_DEVICEID)
+                        if(deviceId < this.MAX_FAST_DEVICEID)
                         
                                     {
                                     this.deviceIdToplayerId[deviceId]= index;
@@ -198,7 +201,7 @@ index= totalDevicesMapped;
                             
 this.playerIdToDeviceId[index]= deviceId;
     
-AnalogLocationInputFactory.getInstance()!.addPlayer(totalDevicesMapped);
+AnalogLocationInputFactory.getInstance()!.addPlayer(this.totalDevicesMapped);
     
 totalDevicesMapped++;
     
@@ -226,7 +229,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         for (
-    var index: number = totalDevicesMapped -1;
+    var index: number = this.totalDevicesMapped -1;
         
         
 index >= 0; index--)
@@ -257,7 +260,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return playersInPlay[playerInputId]!;
+                        return this.playersInPlay[playerInputId]!;
     
 }
 
@@ -267,7 +270,7 @@ var playerInputId = playerInputId
 this.logUtil!.putF(new StringMaker().
                             append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay");
     
-playersInPlay[playerInputId]= true;
+this.playersInPlay[playerInputId]= true;
     
 }
 
@@ -277,7 +280,7 @@ var playerInputId = playerInputId
 this.logUtil!.putF(new StringMaker().
                             append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay");
     
-playersInPlay[playerInputId]= false;
+this.playersInPlay[playerInputId]= false;
     
 }
 

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class GenericProfileActionScriptInputData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

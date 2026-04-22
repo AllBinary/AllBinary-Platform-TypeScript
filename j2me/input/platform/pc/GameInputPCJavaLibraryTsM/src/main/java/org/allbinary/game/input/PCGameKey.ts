@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,12 +84,9 @@ var keyCode = keyCode
                             
 }
 
- constructor (keyCode: number, name: string)                        
-
-                            : super(keyCode, name){
-
-            super();
-            var keyCode = keyCode
+ constructor (keyCode: number, name: string){
+            super(keyCode, name);
+                    var keyCode = keyCode
 var name = name
 
 

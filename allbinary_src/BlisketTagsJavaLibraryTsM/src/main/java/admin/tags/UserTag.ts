@@ -43,7 +43,10 @@ import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class UserTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new UserHelperFactory());
+        this.setTagHelperFactory(new UserHelperFactory());
     
 this.setTagRequestHelperFactory(new UserHelperFactory());
     

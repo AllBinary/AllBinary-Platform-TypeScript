@@ -70,7 +70,10 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,12 +87,9 @@ export class PaymentGatewaysView extends HttpStoreComponentView implements DomNo
         
 
     private paymentGatewayVector: Vector
-public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: Vector)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: Vector){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 var gatewayVector = gatewayVector
 
 

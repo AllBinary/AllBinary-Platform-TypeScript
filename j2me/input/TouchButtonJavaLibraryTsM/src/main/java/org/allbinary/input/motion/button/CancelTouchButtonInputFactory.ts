@@ -31,7 +31,10 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class CancelTouchButtonInputFactory
 private constructor (){
 
             super();
-            
+        
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
         
         
@@ -77,22 +80,22 @@ private constructor (){
 
 
                         for (
-    var index: number = cancelInputArray!.length -1;
+    var index: number = this.cancelInputArray!.length -1;
         
         
 index >= 0; index--)
         {
-cancelInputArray[index]= basicTouchInputFactory!.NONE;
+this.cancelInputArray[index]= basicTouchInputFactory!.NONE;
     
 }
 
-cancelInputArray[basicTouchInputFactory!.UP.getSourceId()]= basicTouchInputFactory!.DOWN;
+this.cancelInputArray[basicTouchInputFactory!.UP.getSourceId()]= basicTouchInputFactory!.DOWN;
     
-cancelInputArray[basicTouchInputFactory!.DOWN.getSourceId()]= basicTouchInputFactory!.UP;
+this.cancelInputArray[basicTouchInputFactory!.DOWN.getSourceId()]= basicTouchInputFactory!.UP;
     
-cancelInputArray[basicTouchInputFactory!.LEFT.getSourceId()]= basicTouchInputFactory!.RIGHT;
+this.cancelInputArray[basicTouchInputFactory!.LEFT.getSourceId()]= basicTouchInputFactory!.RIGHT;
     
-cancelInputArray[basicTouchInputFactory!.RIGHT.getSourceId()]= basicTouchInputFactory!.LEFT;
+this.cancelInputArray[basicTouchInputFactory!.RIGHT.getSourceId()]= basicTouchInputFactory!.LEFT;
     
 }
 

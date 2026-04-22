@@ -45,7 +45,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class ResourceUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public setClassLoader(classLoader: ClassLoader){

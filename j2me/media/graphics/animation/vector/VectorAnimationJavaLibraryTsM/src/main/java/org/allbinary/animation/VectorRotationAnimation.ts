@@ -46,7 +46,10 @@ import { FrameUtil } from "../../../org/allbinary/math/FrameUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
-public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
-
-                            : super(AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /currentPoints!.length).toShort()), currentPoints, basicColor, animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
+            super(AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /currentPoints!.length)), currentPoints, basicColor, animationBehavior);
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehavior = animationBehavior
 
@@ -108,7 +108,7 @@ this.angleInfo!.adjustAngle(this.getFrame());
     //var newAngle = newAngle
 this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
 
-                        .toInt()));
+                        ));
     
 }
 

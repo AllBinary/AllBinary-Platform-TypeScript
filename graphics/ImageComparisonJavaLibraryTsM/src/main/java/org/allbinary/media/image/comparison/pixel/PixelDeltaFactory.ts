@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -175,7 +178,7 @@ var rgb2 = rgb2
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

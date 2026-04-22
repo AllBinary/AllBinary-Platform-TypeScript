@@ -124,7 +124,10 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
 
-        
+
+
+
+
 
 
 
@@ -272,7 +275,7 @@ InputAutomationJFrame.create(
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 
     var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
@@ -282,7 +285,7 @@ public constructor (){
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
     
-helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
+this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
     
 url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
@@ -332,55 +335,55 @@ this.gameRobotJTabbedPane!.setSelectedIndex(0);
 
 
     initComponents(){
-noModuleSelectedJDialog= new javax.swing.JDialog();
+this.noModuleSelectedJDialog= new javax.swing.JDialog();
     
-noModuleSelectedJLabel= new javax.swing.JLabel();
+this.noModuleSelectedJLabel= new javax.swing.JLabel();
     
-gameRobotJTabbedPane= new javax.swing.JTabbedPane();
+this.gameRobotJTabbedPane= new javax.swing.JTabbedPane();
     
-inputAutomationModuleJPanel= new javax.swing.JPanel();
+this.inputAutomationModuleJPanel= new javax.swing.JPanel();
     
-jScrollPane1= new javax.swing.JScrollPane();
+this.jScrollPane1= new javax.swing.JScrollPane();
     
-inputAutomationModuleJList= new javax.swing.JList();
+this.inputAutomationModuleJList= new javax.swing.JList();
     
-automationModuleConfigurationJPanel= new javax.swing.JPanel();
+this.automationModuleConfigurationJPanel= new javax.swing.JPanel();
     
-mainJMenuBar= new javax.swing.JMenuBar();
+this.mainJMenuBar= new javax.swing.JMenuBar();
     
-processingJMenu= new javax.swing.JMenu();
+this.processingJMenu= new javax.swing.JMenu();
     
-startJMenuItem= new javax.swing.JMenuItem();
+this.startJMenuItem= new javax.swing.JMenuItem();
     
-stopJMenuItem= new javax.swing.JMenuItem();
+this.stopJMenuItem= new javax.swing.JMenuItem();
     
-optionsJMenu= new javax.swing.JMenu();
+this.optionsJMenu= new javax.swing.JMenu();
     
-stopOnFocusJCheckBoxMenuItem= new javax.swing.JCheckBoxMenuItem();
+this.stopOnFocusJCheckBoxMenuItem= new javax.swing.JCheckBoxMenuItem();
     
-toolsJMenu= new javax.swing.JMenu();
+this.toolsJMenu= new javax.swing.JMenu();
     
-helpJMenuItem= new javax.swing.JMenuItem();
+this.helpJMenuItem= new javax.swing.JMenuItem();
     
-updatesJMenuItem= new javax.swing.JMenuItem();
+this.updatesJMenuItem= new javax.swing.JMenuItem();
     
-subscriptionJMenuItem= new javax.swing.JMenuItem();
+this.subscriptionJMenuItem= new javax.swing.JMenuItem();
     
-modulesJMenuItem= new javax.swing.JMenuItem();
+this.modulesJMenuItem= new javax.swing.JMenuItem();
     
-aboutJMenuItem= new javax.swing.JMenuItem();
+this.aboutJMenuItem= new javax.swing.JMenuItem();
     
-noModuleSelectedJDialog!.setMinimumSize(new java.awt.Dimension(200, 100));
+this.noModuleSelectedJDialog!.setMinimumSize(new java.awt.Dimension(200, 100));
     
-noModuleSelectedJLabel!.setText("Please Select A Module");
+this.noModuleSelectedJLabel!.setText("Please Select A Module");
     
 
-    var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(noModuleSelectedJDialog!.getContentPane());
+    var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());
         
         
 ;
     
-noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
+this.noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
     
 noModuleSelectedJDialogLayout!.setHorizontalGroup(noModuleSelectedJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(noModuleSelectedJDialogLayout!.createSequentialGroup()!.addContainerGap()!.addComponent(noModuleSelectedJLabel)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
@@ -428,9 +431,9 @@ formFocusLost(evt);
                                 }
                             );
     
-gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
+this.gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
     
-inputAutomationModuleJList!.setMinimumSize(new java.awt.Dimension(200, 0));
+this.inputAutomationModuleJList!.setMinimumSize(new java.awt.Dimension(200, 0));
     
 inputAutomationModuleJList!.addListSelectionListener(new object: javax.swing.event.ListSelectionListener()
                                 {
@@ -444,41 +447,41 @@ inputAutomationModuleJListValueChanged(evt);
                                 }
                             );
     
-jScrollPane1!.setViewportView(inputAutomationModuleJList);
+this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
 
-    var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(inputAutomationModuleJPanel);
+    var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);
         
         
 ;
     
-inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
+this.inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
     
 inputAutomationModuleJPanelLayout!.setHorizontalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(367, Short.MAX_VALUE)));
     
 inputAutomationModuleJPanelLayout!.setVerticalGroup(inputAutomationModuleJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(inputAutomationModuleJPanelLayout!.createSequentialGroup()!.addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
-gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
+this.gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
     
 
-    var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(automationModuleConfigurationJPanel);
+    var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);
         
         
 ;
     
-automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
+this.automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
     
 automationModuleConfigurationJPanelLayout!.setHorizontalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 566, Short.MAX_VALUE));
     
 automationModuleConfigurationJPanelLayout!.setVerticalGroup(automationModuleConfigurationJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 334, Short.MAX_VALUE));
     
-gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel);
+this.gameRobotJTabbedPane!.addTab("Configuration", automationModuleConfigurationJPanel);
     
-processingJMenu!.setText("Processing");
+this.processingJMenu!.setText("Processing");
     
-processingJMenu!.setToolTipText("Set module processing state");
+this.processingJMenu!.setToolTipText("Set module processing state");
     
-startJMenuItem!.setText(this.commonStrings!.START);
+this.startJMenuItem!.setText(this.commonStrings!.START);
     
 startJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -492,9 +495,9 @@ startJMenuItemActionPerformed(evt);
                                 }
                             );
     
-processingJMenu!.add(startJMenuItem);
+this.processingJMenu!.add(this.startJMenuItem);
     
-stopJMenuItem!.setText("Stop");
+this.stopJMenuItem!.setText("Stop");
     
 stopJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -508,11 +511,11 @@ stopJMenuItemActionPerformed(evt);
                                 }
                             );
     
-processingJMenu!.add(stopJMenuItem);
+this.processingJMenu!.add(this.stopJMenuItem);
     
-mainJMenuBar!.add(processingJMenu);
+this.mainJMenuBar!.add(this.processingJMenu);
     
-optionsJMenu!.setText("Options");
+this.optionsJMenu!.setText("Options");
     
 optionsJMenu!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -526,11 +529,11 @@ optionsJMenuActionPerformed(evt);
                                 }
                             );
     
-stopOnFocusJCheckBoxMenuItem!.setSelected(true);
+this.stopOnFocusJCheckBoxMenuItem!.setSelected(true);
     
-stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
+this.stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
     
-stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
+this.stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
     
 stopOnFocusJCheckBoxMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -544,13 +547,13 @@ stopOnFocusJCheckBoxMenuItemActionPerformed(evt);
                                 }
                             );
     
-optionsJMenu!.add(stopOnFocusJCheckBoxMenuItem);
+this.optionsJMenu!.add(this.stopOnFocusJCheckBoxMenuItem);
     
-mainJMenuBar!.add(optionsJMenu);
+this.mainJMenuBar!.add(this.optionsJMenu);
     
-toolsJMenu!.setText("Help");
+this.toolsJMenu!.setText("Help");
     
-helpJMenuItem!.setText("Help");
+this.helpJMenuItem!.setText("Help");
     
 helpJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -564,9 +567,9 @@ helpJMenuItemActionPerformed(evt);
                                 }
                             );
     
-toolsJMenu!.add(helpJMenuItem);
+this.toolsJMenu!.add(this.helpJMenuItem);
     
-updatesJMenuItem!.setText("Updates");
+this.updatesJMenuItem!.setText("Updates");
     
 updatesJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -580,9 +583,9 @@ updatesJMenuItemActionPerformed(evt);
                                 }
                             );
     
-toolsJMenu!.add(updatesJMenuItem);
+this.toolsJMenu!.add(this.updatesJMenuItem);
     
-subscriptionJMenuItem!.setText("Subscription");
+this.subscriptionJMenuItem!.setText("Subscription");
     
 subscriptionJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -596,9 +599,9 @@ subscriptionJMenuItemActionPerformed(evt);
                                 }
                             );
     
-toolsJMenu!.add(subscriptionJMenuItem);
+this.toolsJMenu!.add(this.subscriptionJMenuItem);
     
-modulesJMenuItem!.setText("Module Manager");
+this.modulesJMenuItem!.setText("Module Manager");
     
 modulesJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -612,9 +615,9 @@ modulesJMenuItemActionPerformed(evt);
                                 }
                             );
     
-toolsJMenu!.add(modulesJMenuItem);
+this.toolsJMenu!.add(this.modulesJMenuItem);
     
-aboutJMenuItem!.setText("About");
+this.aboutJMenuItem!.setText("About");
     
 aboutJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -628,11 +631,11 @@ aboutJMenuItemActionPerformed(evt);
                                 }
                             );
     
-toolsJMenu!.add(aboutJMenuItem);
+this.toolsJMenu!.add(this.aboutJMenuItem);
     
-mainJMenuBar!.add(toolsJMenu);
+this.mainJMenuBar!.add(this.toolsJMenu);
     
-setJMenuBar(mainJMenuBar);
+setJMenuBar(this.mainJMenuBar);
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
@@ -655,7 +658,7 @@ pack();
 var evt = evt
 
         try {
-            Desktop.getDesktop()!.browse(uri);
+            Desktop.getDesktop()!.browse(this.uri);
     
 
                 //: 
@@ -672,7 +675,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemAct
 var evt = evt
 
         try {
-            Desktop.getDesktop()!.browse(uri);
+            Desktop.getDesktop()!.browse(this.uri);
     
 
                 //: 
@@ -720,7 +723,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPe
 
     helpJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
-JavaHelpUtil.getInstance()!.show(helpSet);
+JavaHelpUtil.getInstance()!.show(this.helpSet);
     
 }
 
@@ -807,9 +810,9 @@ this.getAutomationModuleConfigurationJPanel()!.removeAll();
         
 ;
     
-layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
+layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
-layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
+layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 256, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
     
 this.gameRobotJTabbedPane!.setEnabledAt(1, true);
     
@@ -868,12 +871,12 @@ var evt = evt
             this.logUtil!.putF("Starting", this, "startJMenuItemActionPerformed");
     
 
-                        if(inputAutomationModuleInterface != 
+                        if(this.inputAutomationModuleInterface != 
                                     null
                                 )
                         
                                     {
-                                    this.runnableInterface= inputAutomationModuleInterface!.getInstance();
+                                    this.runnableInterface= this.inputAutomationModuleInterface!.getInstance();
     
 
                         if(this.runnableInterface != 
@@ -883,9 +886,9 @@ var evt = evt
                                     {
                                     this.thread= new Thread(this.runnableInterface);
     
-thread.setPriority(Thread.MIN_PRIORITY +1);
+this.thread.setPriority(Thread.MIN_PRIORITY +1);
     
-thread.start();
+this.thread.start();
     
 
                                     }

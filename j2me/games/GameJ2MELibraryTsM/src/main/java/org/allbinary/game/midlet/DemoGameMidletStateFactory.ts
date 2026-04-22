@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class DemoGameMidletStateFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

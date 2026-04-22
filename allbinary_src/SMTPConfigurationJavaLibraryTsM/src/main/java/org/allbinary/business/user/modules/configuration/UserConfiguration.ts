@@ -46,12 +46,17 @@ import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
+
 export class UserConfiguration
             extends Object
          implements UserConfigurationInterface {
@@ -65,7 +70,7 @@ export class UserConfiguration
 public constructor (){
 
             super();
-            this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
+        this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(0);
     
@@ -76,7 +81,7 @@ this.timeLastModified= new TimeLastModified(0);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED);

@@ -34,13 +34,18 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { Animation } from "./Animation.js";
+
+import { IndexedAnimationInterface } from "./IndexedAnimationInterface.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
@@ -55,14 +60,14 @@ export class IndexedAnimation extends Animation implements IndexedAnimationInter
 private constructor (){
 
             super();
-            this.animationBehaviorP= AnimationBehavior.getInstance();
+        this.animationBehaviorP= AnimationBehavior.getInstance();
     
 }
 
 protected constructor (animationBehavior: AnimationBehavior){
 
             super();
-                //var animationBehavior = animationBehavior
+            //var animationBehavior = animationBehavior
 this.animationBehaviorP= animationBehavior;
     
 }
@@ -73,7 +78,7 @@ this.animationBehaviorP= animationBehavior;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationBehaviorP;
+                        return this.animationBehaviorP;
     
 }
 
@@ -107,7 +112,7 @@ this.setFrame(0);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

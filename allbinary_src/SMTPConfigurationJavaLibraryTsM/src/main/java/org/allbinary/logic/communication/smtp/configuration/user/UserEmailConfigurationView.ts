@@ -64,7 +64,10 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class UserEmailConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -128,7 +131,7 @@ this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(u
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
             super();
-            var userEmailConfigurationInterface = userEmailConfigurationInterface
+        var userEmailConfigurationInterface = userEmailConfigurationInterface
 this.userEmailConfigurationInterface= userEmailConfigurationInterface;
     
 }

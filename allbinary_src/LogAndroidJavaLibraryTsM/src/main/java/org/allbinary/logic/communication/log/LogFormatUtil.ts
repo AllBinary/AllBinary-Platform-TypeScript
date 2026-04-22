@@ -49,7 +49,10 @@ import { TimeStampUtil } from "../../../../../org/allbinary/time/TimeStampUtil.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,7 +119,7 @@ import { TimeStampUtil } from "../../../../../org/allbinary/time/TimeStampUtil.j
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string{

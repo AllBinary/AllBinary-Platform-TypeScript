@@ -52,12 +52,17 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbFileInterface } from "./AbFileInterface.js";
+
 export class AbFile
             extends Object
          implements AbFileInterface {
@@ -71,7 +76,7 @@ export class AbFile
  constructor (filePath: string, unknown: boolean){
 
             super();
-                //var filePath = filePath
+            //var filePath = filePath
     //var unknown = unknown
 this.file= new File(filePath);
     
@@ -80,7 +85,7 @@ this.file= new File(filePath);
  constructor (file: File){
 
             super();
-                //var file = file
+            //var file = file
 this.file= file;
     
 }
@@ -88,7 +93,7 @@ this.file= file;
 public constructor (file: AbFile, childPathName: string){
 
             super();
-                //var file = file
+            //var file = file
     //var childPathName = childPathName
 this.file= new File(file.getFile(), childPathName);
     
@@ -97,7 +102,7 @@ this.file= new File(file.getFile(), childPathName);
 public constructor (filePath: string){
 
             super();
-                //var filePath = filePath
+            //var filePath = filePath
 this.file= new File(new AbPath(filePath).
                             toFileSystemString());
     
@@ -106,7 +111,7 @@ this.file= new File(new AbPath(filePath).
 public constructor (filePath: string, fileName: string){
 
             super();
-                //var filePath = filePath
+            //var filePath = filePath
     //var fileName = fileName
 this.file= new File(new AbPath(filePath).
                             toFileSystemString(), fileName);
@@ -116,7 +121,7 @@ this.file= new File(new AbPath(filePath).
 public constructor (abPath: AbPath){
 
             super();
-                //var abPath = abPath
+            //var abPath = abPath
 this.file= new File(abPath!.toFileSystemString());
     
 }

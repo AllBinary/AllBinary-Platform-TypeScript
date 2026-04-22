@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class EmailServerConfigurationMapping
 public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
 
             super();
-            var emailServerConfigurationInterface = emailServerConfigurationInterface
+        var emailServerConfigurationInterface = emailServerConfigurationInterface
 this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
 }

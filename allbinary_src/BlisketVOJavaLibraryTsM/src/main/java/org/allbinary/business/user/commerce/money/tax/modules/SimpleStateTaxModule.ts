@@ -85,12 +85,17 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TaxModuleInterface } from "./TaxModuleInterface.js";
+
 export class SimpleStateTaxModule
             extends Object
          implements TaxModuleInterface {
@@ -124,7 +129,7 @@ export class SimpleStateTaxModule
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -155,7 +160,7 @@ this.document= DomDocumentHelper.create(data);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(document), this, "getTaxRate");
+                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(this.document), this, "getTaxRate");
     
 
                                     }
@@ -175,7 +180,7 @@ this.document= DomDocumentHelper.create(data);
 state= state.uppercase();
     
 
-    var nodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
+    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
         
         
 ;
@@ -306,7 +311,7 @@ this.document= DomDocumentHelper.create(data);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(document), this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("Tax Doc: " +DomDocumentHelper.toString(this.document), this, commonStrings!.IS_VALID);
     
 
                                     }
@@ -324,7 +329,7 @@ this.document= DomDocumentHelper.create(data);
 ;
     
 
-    var nodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
+    var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
         
         
 ;

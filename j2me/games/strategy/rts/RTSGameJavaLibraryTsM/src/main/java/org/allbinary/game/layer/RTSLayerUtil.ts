@@ -69,7 +69,10 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
 
 
-        
+
+
+
+
 
 
 
@@ -229,7 +232,7 @@ rtsLayer!.select();
 }
 
 
-    private readonly MAX_RELOAD_TIME: number = Integer.MAX_VALUE.toLong() /100000;
+    private readonly MAX_RELOAD_TIME: number = Integer.MAX_VALUE /100000;
         
         
 
@@ -247,7 +250,7 @@ rtsLayer!.select();
     getWeaponPropertiesCost(weaponProperties: WeaponProperties): number{
     //var weaponProperties = weaponProperties
 
-    var cost: number = (weaponProperties!.getDamage() +weaponProperties!.getRange() +((MAX_RELOAD_TIME /weaponProperties!.getReloadTime()) shr 1));
+    var cost: number = (weaponProperties!.getDamage() +weaponProperties!.getRange() +((this.MAX_RELOAD_TIME /weaponProperties!.getReloadTime())>>1));
         
         
 ;
@@ -258,7 +261,7 @@ cost= this.getCostExponential(cost);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cost.toInt();
+                        return cost;
     
 }
 

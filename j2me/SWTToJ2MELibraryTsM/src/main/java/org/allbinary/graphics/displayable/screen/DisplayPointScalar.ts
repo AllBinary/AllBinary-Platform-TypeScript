@@ -40,7 +40,10 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class DisplayPointScalar
 public constructor (){
 
             super();
-            }
+        }
 
 
     public processX(value: number): number{

@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class GameInputProcessorComposite extends PlayerGameInput {
     private readonly name: string
 
     private readonly gameInputProcessorInterface: GameInputProcessorInterface
-public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface)                        
-
-                            : super(new BasicArrayList(),  -1){
-
-            super();
-            var name = name
+public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface){
+            super(new BasicArrayList(),  -1);
+                    var name = name
 var gameInputProcessorInterface = gameInputProcessorInterface
 
 

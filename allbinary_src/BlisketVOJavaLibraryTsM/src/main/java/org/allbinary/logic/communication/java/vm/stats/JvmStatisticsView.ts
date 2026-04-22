@@ -43,7 +43,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ import { JvmStatisticsData } from "./JvmStatisticsData.js";
 
 export class JvmStatisticsView extends JvmStatisticsMapping implements DomNodeInterface {
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

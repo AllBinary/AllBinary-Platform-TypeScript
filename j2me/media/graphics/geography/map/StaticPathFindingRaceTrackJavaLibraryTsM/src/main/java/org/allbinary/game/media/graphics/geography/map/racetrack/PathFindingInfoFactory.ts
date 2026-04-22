@@ -49,7 +49,10 @@ import { PathFindingNodeCostInfoFactoryBase } from "../../../../../../../../org/
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

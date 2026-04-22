@@ -40,7 +40,10 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -232,7 +235,7 @@ index < nodeList!.getLength(); index++)
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

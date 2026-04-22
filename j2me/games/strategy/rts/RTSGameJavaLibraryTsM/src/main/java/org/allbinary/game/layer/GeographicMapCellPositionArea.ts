@@ -52,7 +52,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
-                //var layerInterface = layerInterface
+            //var layerInterface = layerInterface
 this.layerInterface= layerInterface;
     
 }

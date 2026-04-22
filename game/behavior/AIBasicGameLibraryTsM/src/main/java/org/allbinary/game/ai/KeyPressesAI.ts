@@ -45,7 +45,10 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,12 +64,9 @@ export class KeyPressesAI extends BasicAI {
         
 
     keys: Integer[]
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -98,7 +98,7 @@ this.keys= new Array(hashtable.length);
         
 index < size; index++)
         {
-keys[index]= hashtable.get(objectArray[index]! as Object);
+this.keys[index]= hashtable.get(objectArray[index]! as Object);
 
                          as Integer;
     
@@ -112,7 +112,7 @@ keys[index]= hashtable.get(objectArray[index]! as Object);
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(on)
+                        if(this.on)
                         
                                     {
                                     
@@ -123,9 +123,9 @@ var allBinaryLayerManager = allBinaryLayerManager
     var index: number = 0;
         
         
-index < keys.length; index++)
+index < this.keys.length; index++)
         {
-super.processAI(keys[index]!.toInt());
+super.processAI(this.keys[index]!.toInt());
     
 }
 

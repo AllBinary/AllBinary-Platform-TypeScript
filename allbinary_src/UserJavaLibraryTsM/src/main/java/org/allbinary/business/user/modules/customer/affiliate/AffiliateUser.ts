@@ -40,7 +40,10 @@ import { WeblisketSessionInterface } from "../../../../../../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ export class AffiliateUser extends User {
         
 
     private affiliateSales: AffiliateSales
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -63,12 +63,9 @@ this.affiliateSales= new AffiliateSales();
     
 }
 
-public constructor (userHashMap: HashMap<any, any>)                        
-
-                            : super(userHashMap){
-
-            super();
-            var userHashMap = userHashMap
+public constructor (userHashMap: HashMap<any, any>){
+            super(userHashMap);
+                    var userHashMap = userHashMap
 
 
                             //For kotlin this is before the body of the constructor.

@@ -31,12 +31,19 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
+
+import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
+
 import { Animation } from "./Animation.js";
 
 export class SingletonAnimationInterfaceFactory
@@ -48,7 +55,7 @@ export class SingletonAnimationInterfaceFactory
 public constructor (animationInterface: Animation){
 
             super();
-                //var animationInterface = animationInterface
+            //var animationInterface = animationInterface
 this.animationInterface= animationInterface;
     
 }

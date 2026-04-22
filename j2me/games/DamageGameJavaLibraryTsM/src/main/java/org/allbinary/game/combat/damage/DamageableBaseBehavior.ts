@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DamageableInterface } from "./DamageableInterface.js";
+
 export class DamageableBaseBehavior
             extends Object
          implements DamageableInterface {

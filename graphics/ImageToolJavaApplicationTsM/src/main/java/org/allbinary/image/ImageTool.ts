@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

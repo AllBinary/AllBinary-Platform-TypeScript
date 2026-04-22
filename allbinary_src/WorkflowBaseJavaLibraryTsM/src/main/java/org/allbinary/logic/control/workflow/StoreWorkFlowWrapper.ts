@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class StoreWorkFlowWrapper extends WorkFlowWrapper {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (anyType: any = {})                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}){
+            super(anyType);
+                    var anyType = anyType
 
 
                             //For kotlin this is before the body of the constructor.

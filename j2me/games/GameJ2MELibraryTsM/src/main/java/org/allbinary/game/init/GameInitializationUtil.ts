@@ -52,7 +52,10 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
 
-        
+
+
+
+
 
 
 
@@ -179,7 +182,7 @@ gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandL
     
 this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_ALL);
     
-GameInitializedEventHandler.getInstance()!.fireEvent(EVENT);
+GameInitializedEventHandler.getInstance()!.fireEvent(this.EVENT);
     
 ChangedGameFeatureListener.getInstance()!.remove(MainFeatureFactory.getInstance()!.STATIC);
     

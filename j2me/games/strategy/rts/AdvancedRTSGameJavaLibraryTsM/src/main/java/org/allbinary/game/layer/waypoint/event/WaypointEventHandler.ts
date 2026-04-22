@@ -39,7 +39,10 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class WaypointEventHandler extends BasicEventHandler {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

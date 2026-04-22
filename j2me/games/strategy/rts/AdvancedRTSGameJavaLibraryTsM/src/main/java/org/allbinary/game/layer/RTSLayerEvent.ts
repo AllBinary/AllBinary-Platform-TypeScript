@@ -33,7 +33,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ export class RTSLayerEvent extends AllBinaryEventObject {
     private rtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
         
         
-public constructor (rtsLayer: PathFindingLayerInterface)                        
-
-                            : super(rtsLayer){
-
-            super();
-            var rtsLayer = rtsLayer
+public constructor (rtsLayer: PathFindingLayerInterface){
+            super(rtsLayer);
+                    var rtsLayer = rtsLayer
 
 
                             //For kotlin this is before the body of the constructor.

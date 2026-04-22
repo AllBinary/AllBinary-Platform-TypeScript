@@ -79,7 +79,10 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,12 +100,9 @@ export class GenericStoreTransformInfoObjectConfig extends TransformInfoObjectCo
         
 
     readonly abeClientInformation: AbeClientInformationInterface
-public constructor (abeClientInformation: Object, transformInfoInterface: Object)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: Object, transformInfoInterface: Object){
+            super(transformInfoInterface);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
 
 
@@ -112,12 +112,9 @@ this.abeClientInformation= abeClientInformation;
     
 }
 
-public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object)                        
-
-                            : super(transformInfoInterface, document){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
+            super(transformInfoInterface, document);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
     //var document = document
 
@@ -130,12 +127,9 @@ this.setDocument(this.generate(this.toXmlDoc()));
     
 }
 
-public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string)                        
-
-                            : super(transformInfoInterface, name, type){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
+            super(transformInfoInterface, name, type);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
     //var name = name
     //var type = type

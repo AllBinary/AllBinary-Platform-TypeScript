@@ -40,7 +40,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class ConstrainedMotionRectangles extends MotionRectangles {
         
 
     private motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface
-public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, motionRectangles: MotionRectangles)                        
-
-                            : super(NAME, motionRectangles!.getImageComparisonResult()){
-
-            super();
-                //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
+public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, motionRectangles: MotionRectangles){
+            super(NAME, motionRectangles!.getImageComparisonResult());
+                        //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
     //var motionRectangles = motionRectangles
 
 

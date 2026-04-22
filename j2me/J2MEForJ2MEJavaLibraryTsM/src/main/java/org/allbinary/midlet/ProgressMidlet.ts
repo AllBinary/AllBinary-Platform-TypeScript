@@ -46,7 +46,10 @@ import { ThreadPool } from "../../../org/allbinary/thread/ThreadPool.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class ProgressMidlet extends AllBinaryMidlet {
 public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
-                //var clientInformationFactory = clientInformationFactory
+            //var clientInformationFactory = clientInformationFactory
 this.preInit();
     
 this.abeClientInformation= clientInformationFactory!.getInstance();

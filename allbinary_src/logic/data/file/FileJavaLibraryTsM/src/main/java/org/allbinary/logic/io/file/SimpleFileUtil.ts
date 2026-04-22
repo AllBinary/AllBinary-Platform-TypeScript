@@ -67,7 +67,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -325,7 +328,7 @@ var n = n
                                     }
                                 
 
-    var byteArray: number[] = nullUtil!.NULL_BYTE_ARRAY;
+    var byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;
         
         
 ;
@@ -338,9 +341,9 @@ var n = n
         
 ;
     
-byteArray= streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
+byteArray= this.streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
     
-streamUtil!.close(inputStream);
+this.streamUtil!.close(inputStream);
     
 
                 //: 

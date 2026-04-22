@@ -34,12 +34,17 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PathFindingInfoInterface } from "./PathFindingInfoInterface.js";
+
 import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
 
 import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
@@ -67,7 +72,7 @@ export class PathFindingInfo
 public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 
             super();
-                //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
+            //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
     //var startPathFindingNodeList = startPathFindingNodeList
     //var endPathFindingNodeList = endPathFindingNodeList
 this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
@@ -81,7 +86,7 @@ this.endPathFindingNodeList= endPathFindingNodeList;
 public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase){
 
             super();
-                //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
+            //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
 this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
     
 this.startPathFindingNodeList= new BasicArrayList(1);

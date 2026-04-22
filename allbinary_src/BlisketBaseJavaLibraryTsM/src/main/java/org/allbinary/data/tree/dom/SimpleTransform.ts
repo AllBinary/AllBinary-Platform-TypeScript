@@ -49,7 +49,10 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class SimpleTransform
 public constructor (xsltFilePath: AbPath, dataFilePath: AbPath){
 
             super();
-            var xsltFilePath = xsltFilePath
+        var xsltFilePath = xsltFilePath
 var dataFilePath = dataFilePath
 this.xsltFilePath= xsltFilePath;
     
@@ -81,13 +84,13 @@ this.dataFilePath= dataFilePath;
             
     public transform(): string{
 
-    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(new AbFile(xsltFilePath));
+    var inputStream: AbFileLocalInputStream = new AbFileLocalInputStream(new AbFile(this.xsltFilePath));
         
         
 ;
     
 
-    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(new AbFile(dataFilePath)))!;
+    var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(new AbFile(this.dataFilePath)))!;
         
         
 ;

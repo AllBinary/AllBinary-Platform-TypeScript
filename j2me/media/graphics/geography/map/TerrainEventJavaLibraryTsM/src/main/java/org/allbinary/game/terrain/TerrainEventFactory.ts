@@ -34,7 +34,10 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class TerrainEventFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(): AllBinaryEventObject{

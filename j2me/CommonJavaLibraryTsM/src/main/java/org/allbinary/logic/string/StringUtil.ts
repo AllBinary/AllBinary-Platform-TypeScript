@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class StringUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(string: string): string{

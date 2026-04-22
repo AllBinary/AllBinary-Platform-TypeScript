@@ -40,7 +40,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class SpinnerAI extends BasicAI {
     private isEven: boolean= false
 
     private direction: number[]
-public constructor (direction: number[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var direction = direction
+public constructor (direction: number[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var direction = direction
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -76,12 +76,12 @@ this.direction= direction;
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(isEven)
+                        if(this.isEven)
                         
                                     {
                                     super.processAI(this.direction[0]!);
     
-isEven= false;
+this.isEven= false;
     
 
                                     }
@@ -89,7 +89,7 @@ isEven= false;
                         else {
                             super.processAI(Canvas.KEY_NUM1);
     
-isEven= true;
+this.isEven= true;
     
 
                         }

@@ -85,7 +85,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -151,7 +154,7 @@ var response = response
                                     }
                                 
 
-    var beginIndex: number = requestPath!.indexOf(DOWNLOAD)!;
+    var beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;
         
         
 ;
@@ -166,7 +169,7 @@ var response = response
                         if(beginIndex >= 0)
                         
                                     {
-                                    filePath= requestPath!.substring(beginIndex +DOWNLOAD.length);
+                                    filePath= requestPath!.substring(beginIndex +this.DOWNLOAD.length);
     
 
                                     }
@@ -244,7 +247,7 @@ var response = response
                                 
 response.reset();
     
-response.setBufferSize(DEFAULT_BUFFER_SIZE);
+response.setBufferSize(this.DEFAULT_BUFFER_SIZE);
     
 response.setContentType(contentType);
     

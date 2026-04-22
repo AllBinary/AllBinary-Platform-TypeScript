@@ -61,7 +61,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class StoreCategoryFactory extends CategoryAbstractFactory implements Cat
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         

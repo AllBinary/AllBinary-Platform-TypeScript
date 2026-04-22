@@ -42,7 +42,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -154,7 +157,7 @@ var index = index
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

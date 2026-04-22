@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class HeadingData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

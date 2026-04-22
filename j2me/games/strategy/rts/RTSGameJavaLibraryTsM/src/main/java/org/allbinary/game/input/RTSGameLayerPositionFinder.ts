@@ -37,12 +37,17 @@ import { DropCellPositionHistory } from "../../../../org/allbinary/media/graphic
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
+
 export class RTSGameLayerPositionFinder
             extends Object
          implements LayerPositionFinderInterface {
@@ -64,7 +69,7 @@ export class RTSGameLayerPositionFinder
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{

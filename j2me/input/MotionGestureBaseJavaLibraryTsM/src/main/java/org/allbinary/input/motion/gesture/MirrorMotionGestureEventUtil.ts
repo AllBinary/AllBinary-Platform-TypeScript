@@ -42,7 +42,10 @@ import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/ge
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class MirrorMotionGestureEventUtil
 private constructor (){
 
             super();
-            this.motionEventCircularPool= MotionEventCircularPool.getInstance(Integer.MAX_VALUE);
+        this.motionEventCircularPool= MotionEventCircularPool.getInstance(Integer.MAX_VALUE);
     
 }
 

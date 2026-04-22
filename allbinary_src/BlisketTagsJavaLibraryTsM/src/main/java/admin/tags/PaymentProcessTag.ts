@@ -49,7 +49,10 @@ import { StoreValidationTransformTag } from "../../tags/StoreValidationTransform
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class PaymentProcessTag extends StoreValidationTransformTag {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class, Error::class)

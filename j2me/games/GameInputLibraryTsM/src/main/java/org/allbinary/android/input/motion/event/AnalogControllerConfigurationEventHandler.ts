@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,18 +80,18 @@ export class AnalogControllerConfigurationEventHandler extends BasicEventHandler
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
 var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
-                        if(!list.contains(analogControllerConfigurationEventListenerInterface);
+                        if(!this.list.contains(analogControllerConfigurationEventListenerInterface);
 
                         )
                         
                                     {
-                                    list.add(analogControllerConfigurationEventListenerInterface);
+                                    this.list.add(analogControllerConfigurationEventListenerInterface);
     
 
                                     }

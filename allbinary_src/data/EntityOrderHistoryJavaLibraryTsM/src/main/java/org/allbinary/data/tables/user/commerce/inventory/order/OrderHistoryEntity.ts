@@ -144,12 +144,17 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../../../.
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OrderHistoryEntityInterface } from "./OrderHistoryEntityInterface.js";
+
 export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {
         
 
@@ -160,16 +165,13 @@ export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityI
     readonly tableName: string = "orderhistory";
         
         
-public constructor ()                        
-
-                            : super(new HistoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new HistoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -957,7 +959,7 @@ whereHashMap!.put(OrderData.ID, id);
     
 stringBuffer!.append("CREATE TABLE ");
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(" (");
     

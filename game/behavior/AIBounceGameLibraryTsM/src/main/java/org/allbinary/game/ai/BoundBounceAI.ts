@@ -49,7 +49,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,12 +70,9 @@ export class BoundBounceAI extends BasicAI {
     private layerBounds: LayerBounds
 
     private boundsVisitorInterface: BoundsVisitorInterface
-public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, layerBounds: LayerBounds, boundsVisitorInterface: BoundsVisitorInterface)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, layerBounds: LayerBounds, boundsVisitorInterface: BoundsVisitorInterface){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 var layerBounds = layerBounds
 var boundsVisitorInterface = boundsVisitorInterface

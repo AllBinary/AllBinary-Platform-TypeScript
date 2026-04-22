@@ -37,7 +37,10 @@ import { TrackballMotionGestureFactory } from "../../../../../../org/allbinary/i
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class LeftTrackballInputToGameKeyEventAction extends GameKeyCompleteMotio
     
 }
 
-private constructor ()                        
-
-                            : super("Left Action", TrackballMotionGestureFactory.getInstance()!.LEFT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()){
-
-            super();
-            
+private constructor (){
+            super("Left Action", TrackballMotionGestureFactory.getInstance()!.LEFT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

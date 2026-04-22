@@ -43,7 +43,10 @@ import { FileChannel } from "../../../../java/nio/channels/FileChannel.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class AbFileInputStream extends InputStream {
 public constructor (fileInputStream: FileInputStream){
 
             super();
-            var fileInputStream = fileInputStream
+        var fileInputStream = fileInputStream
 this.fileInputStream= fileInputStream;
     
 }

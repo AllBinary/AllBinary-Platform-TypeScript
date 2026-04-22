@@ -43,7 +43,10 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class UrlGlobalsView
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

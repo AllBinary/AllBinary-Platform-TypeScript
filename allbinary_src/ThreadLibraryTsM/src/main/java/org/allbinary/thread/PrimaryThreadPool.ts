@@ -37,7 +37,10 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,12 +66,9 @@ export class PrimaryThreadPool extends ThreadPool {
     
 }
 
-public constructor (poolName: string, numThreads: number)                        
-
-                            : super(poolName, numThreads){
-
-            super();
-                //var poolName = poolName
+public constructor (poolName: string, numThreads: number){
+            super(poolName, numThreads);
+                        //var poolName = poolName
     //var numThreads = numThreads
 
 

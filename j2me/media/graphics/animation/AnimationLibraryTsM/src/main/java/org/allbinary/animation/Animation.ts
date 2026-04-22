@@ -46,12 +46,17 @@ import { OpenGLSurfaceChangedInterface } from "../../../org/allbinary/image/open
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationInterface } from "./AnimationInterface.js";
+
 export class Animation
             extends Object
          implements AnimationInterface, OpenGLSurfaceChangedInterface {
@@ -77,7 +82,7 @@ export class Animation
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public setAlpha(alpha: number){
@@ -97,7 +102,7 @@ this.alphaP= alpha;
     //var graphics = graphics
     //var x = x
     //var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 }
 

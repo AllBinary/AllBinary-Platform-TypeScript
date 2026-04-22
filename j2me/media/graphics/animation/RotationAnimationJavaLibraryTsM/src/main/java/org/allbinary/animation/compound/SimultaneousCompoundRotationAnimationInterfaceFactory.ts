@@ -40,7 +40,10 @@ import { RotationAnimation } from "../../../../org/allbinary/animation/RotationA
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceF
 
 export class SimultaneousCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
-public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory){
-
-            super();
-                //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
+public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
+            super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
+                        //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
     //var animationBehaviorFactory = animationBehaviorFactory
 
 

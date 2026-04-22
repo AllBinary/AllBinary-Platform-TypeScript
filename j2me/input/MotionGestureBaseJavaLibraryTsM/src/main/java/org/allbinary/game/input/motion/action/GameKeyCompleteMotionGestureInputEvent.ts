@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,12 +86,9 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
         
 
     private inputToGameKeyMapping: InputToGameKeyMapping
-public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping)                        
-
-                            : super(name, motionGestureInput){
-
-            super();
-            var name = name
+public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
+            super(name, motionGestureInput);
+                    var name = name
 var motionGestureInput = motionGestureInput
 var inputToGameKeyMapping = inputToGameKeyMapping
 

@@ -69,7 +69,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,10 +112,10 @@ export class AndroidHardware
 public constructor (){
 
             super();
-            this.init(DEVICES);
+        this.init(this.DEVICES);
     
 
-                        if(componentInterfaceVector!.size() < MINHARDWARE)
+                        if(this.componentInterfaceVector!.size < this.MINHARDWARE)
                         
                                     {
                                     
@@ -173,7 +176,7 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT,
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath
-componentInterfaceVector= new BasicArrayList();
+this.componentInterfaceVector= new BasicArrayList();
     
 
     var pciFile: FileReader = new FileReader(filePath);
@@ -202,7 +205,7 @@ this.logUtil!.putF("File Found", this, commonStrings!.CONSTRUCTOR);
         {
 nextLine= lineNumberReader!.readLine();
     
-componentInterfaceVector!.add(new UnknownHardware(nextLine));
+this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
     
 }
 
@@ -221,7 +224,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterfaceVector!.get(index);
+                        return this.componentInterfaceVector!.get(index);
 
                          as HardwareComponentInterface;
     

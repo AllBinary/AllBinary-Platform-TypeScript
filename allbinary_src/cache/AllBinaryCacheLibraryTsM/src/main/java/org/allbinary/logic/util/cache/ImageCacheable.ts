@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class ImageCacheable
 public constructor (name: string, anyType: any = {}){
 
             super();
-            var name = name
+        var name = name
 var anyType = anyType
 }
 

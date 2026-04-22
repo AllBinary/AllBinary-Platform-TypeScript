@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -24,12 +27,9 @@ import { Exception } from "./Exception.js";
 
 export class XmlRpcException extends Error {
         
-public constructor (code: number, message: string)                        
-
-                            : super(message){
-
-            super();
-            var code = code
+public constructor (code: number, message: string){
+            super(message);
+                    var code = code
 var message = message
 
 

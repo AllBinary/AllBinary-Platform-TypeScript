@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ export class NoSound extends Sound {
     private static readonly instance: NoSound = new NoSound();
         
         
-private constructor ()                        
-
-                            : super(StringUtil.getInstance()!.EMPTY_STRING){
-
-            super();
-            
+private constructor (){
+            super(StringUtil.getInstance()!.EMPTY_STRING);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -34,7 +34,10 @@ import { LogConfigTypeFactory } from "../../../../../../../org/allbinary/logic/c
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            LogConfigTypes.LOGGING.add(this.INIT_SERVER);
+        LogConfigTypes.LOGGING.add(this.INIT_SERVER);
     
 }
 

@@ -46,12 +46,17 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GenericProfileDataWorkerTypeInterface } from "./GenericProfileDataWorkerTypeInterface.js";
+
 import { SavedCaptureGenericProfileDataWorkerType } from "./SavedCaptureGenericProfileDataWorkerType.js";
 
 import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
@@ -104,7 +109,7 @@ var node = node
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.setName(name);
     
 hashMap!.put(this.getName(), this);

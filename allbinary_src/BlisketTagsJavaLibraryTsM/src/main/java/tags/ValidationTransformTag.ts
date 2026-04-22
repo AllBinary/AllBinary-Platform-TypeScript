@@ -52,7 +52,10 @@ import { ValidatedViewHelperFactory } from "../taghelpers/ValidatedViewHelperFac
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class ValidationTransformTag extends TransformTag {
     private xslFile: string
 
     private logic: boolean
-public constructor ()                        
-
-                            : super(new ValidatedViewHelperFactory()){
-
-            super();
-            
+public constructor (){
+            super(new ValidatedViewHelperFactory());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

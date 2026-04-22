@@ -40,7 +40,10 @@ import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/colo
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class RectangleAnimation extends Animation implements ColorCompositeInter
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();
-            var width = width
+        var width = width
 var height = height
 var basicColor = basicColor
 this.width= width;
@@ -75,9 +78,9 @@ this.setBasicColorP(basicColor);
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.drawRect(x, y, width, height);
+graphics.drawRect(x, y, this.width, this.height);
     
 }
 

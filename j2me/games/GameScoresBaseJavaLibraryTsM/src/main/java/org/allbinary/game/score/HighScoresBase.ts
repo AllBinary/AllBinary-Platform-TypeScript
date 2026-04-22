@@ -34,12 +34,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HighScoresFactoryInterface } from "./HighScoresFactoryInterface.js";
+
 import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
@@ -55,7 +60,7 @@ export class HighScoresBase
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){

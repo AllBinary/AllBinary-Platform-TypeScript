@@ -33,7 +33,10 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ export class SelectBuildingSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/select_building.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/select_building.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -37,7 +37,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class AdminConfigurationHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 }
 

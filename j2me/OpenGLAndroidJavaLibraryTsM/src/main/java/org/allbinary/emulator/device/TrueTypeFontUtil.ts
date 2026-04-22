@@ -85,7 +85,10 @@ import { AndroidImmutableImage } from "../../../../org/microemu/android/device/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -125,12 +128,9 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
         
         
-private constructor ()                        
-
-                            : super(1){
-
-            super();
-            
+private constructor (){
+            super(1);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -269,9 +269,9 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
     
 paint.setTypeface(typeface);
     
-paint.setTextSize(realFontSize.toFloat());
+paint.setTextSize(this.realFontSize);
     
-paint.setAlpha(basicColor!.alpha.toInt());
+paint.setAlpha(basicColor!.alpha);
     
 paint.setColor(basicColor!.toInt());
     
@@ -322,9 +322,9 @@ _characterWidth[index]= bounds.right;
                                 
 x= (index % CELLS_PER_ROW) *cellSize;
     
-x += (cellSize shr 1);
+x += (cellSize>>1);
     
-x -= (_characterWidth[index] shr 1);
+x -= (_characterWidth[index]>>1);
     
 y= 0;
     
@@ -393,9 +393,9 @@ y= 0;
                                 
 y += cellSize;
     
-y -= (cellSize shr 2);
+y -= (cellSize>>2);
     
-canvas.drawText(characterArray, 0, 1, x.toFloat() -3, y.toFloat() -6, paint);
+canvas.drawText(characterArray, 0, 1, x -3, y -6, paint);
     
 }
 
@@ -450,7 +450,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image);
     
 paint.setTypeface(typeface);
     
-paint.setTextSize(fontSize.toFloat());
+paint.setTextSize(fontSize);
     
 paint.setARGB(255, 255, 255, 255);
     
@@ -625,7 +625,7 @@ paint.getTextBounds(characterArray, 0, 1, bounds);
                             
 }
 
-_characterWidth[0]= (fontSize shr 1) -2;
+_characterWidth[0]= (fontSize>>1) -2;
     
 
 

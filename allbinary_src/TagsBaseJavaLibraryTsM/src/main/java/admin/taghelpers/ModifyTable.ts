@@ -34,12 +34,17 @@ import { TagStrings } from "../../tags/TagStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ModifyTableInterface } from "./ModifyTableInterface.js";
+
 export class ModifyTable
             extends Object
          implements ModifyTableInterface {

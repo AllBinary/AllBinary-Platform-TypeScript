@@ -73,12 +73,17 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../org/all
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WorkFlowEntityInterface } from "./WorkFlowEntityInterface.js";
+
 export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         
 
@@ -101,16 +106,13 @@ export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface
     private readonly METHOD_UPDATE: string = "update";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

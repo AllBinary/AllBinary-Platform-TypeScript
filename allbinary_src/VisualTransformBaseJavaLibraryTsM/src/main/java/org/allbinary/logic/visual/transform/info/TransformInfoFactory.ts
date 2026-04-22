@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class TransformInfoFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(): TransformInfoInterface{

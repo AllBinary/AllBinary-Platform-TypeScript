@@ -46,7 +46,10 @@ import { TestInputForMotionRectanglesResultsWorker } from "../../../../../org/al
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class TestInputAutomationWorker
 public constructor (){
 
             super();
-            this.captureWorker= new ScreenCaptureImagesWorker();
+        this.captureWorker= new ScreenCaptureImagesWorker();
     
 this.changedPixelsImageComparisonResultsWorker= new SaveImageComparisonWorker();
     

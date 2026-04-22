@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class GeographicMapCellHistoryProgressBase
 public constructor (){
 
             super();
-            }
+        }
 
 
     public init(){

@@ -34,7 +34,10 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class ColorLessVectorAnimation extends VectorAnimation {
         
-public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior)                        
-
-                            : super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior){
+            super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior);
+                        //var currentPoints = currentPoints
     //var animationBehavior = animationBehavior
 
 
@@ -59,12 +59,9 @@ public constructor (currentPoints: number[][][], animationBehavior: AnimationBeh
                     
 }
 
-public constructor (currentPoints: number[][], animationBehavior: AnimationBehavior)                        
-
-                            : super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][], animationBehavior: AnimationBehavior){
+            super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior);
+                        //var currentPoints = currentPoints
     //var animationBehavior = animationBehavior
 
 

@@ -57,13 +57,18 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
+
+import { TimeIntervalActionScriptConditionInterface } from "./TimeIntervalActionScriptConditionInterface.js";
 
 import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
 
@@ -81,12 +86,9 @@ export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptC
     private timeIntervalActionScriptConditionJPanel: TimeIntervalActionScriptConditionJPanel
 
     private timeHelper: TimeDelayHelper
-public constructor (node: Node)                        
-
-                            : super(TimeIntervalActionScriptCondition.NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(TimeIntervalActionScriptCondition.NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -165,12 +167,9 @@ this.init();
     
 }
 
-public constructor ()                        
-
-                            : super(TimeIntervalActionScriptCondition.NAME){
-
-            super();
-            
+public constructor (){
+            super(TimeIntervalActionScriptCondition.NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

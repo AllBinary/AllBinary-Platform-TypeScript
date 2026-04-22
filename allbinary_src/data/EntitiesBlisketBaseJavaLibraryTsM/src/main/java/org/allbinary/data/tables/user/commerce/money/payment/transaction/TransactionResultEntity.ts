@@ -67,12 +67,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransactionResultEntityInterface } from "./TransactionResultEntityInterface.js";
+
 export class TransactionResultEntity extends AbSqlBean implements TransactionResultEntityInterface {
         
 
@@ -83,16 +88,13 @@ export class TransactionResultEntity extends AbSqlBean implements TransactionRes
     private readonly tableName: string = "vresults";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

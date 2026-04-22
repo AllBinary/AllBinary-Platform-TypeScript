@@ -31,7 +31,10 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class BooleanUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

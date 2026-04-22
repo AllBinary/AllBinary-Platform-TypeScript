@@ -20,7 +20,10 @@ import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/Pla
 
 
 
-        
+
+
+
+
 
 
 
@@ -33,7 +36,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
 public constructor (bitmap: any = {}){
 
             super();
-                //var bitmap = bitmap
+            //var bitmap = bitmap
 this.bitmap= bitmap as Bitmap;
     
 }

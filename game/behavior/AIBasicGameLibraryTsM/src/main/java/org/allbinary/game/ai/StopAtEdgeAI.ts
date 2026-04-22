@@ -46,7 +46,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ import { BasicAI } from "./BasicAI.js";
 
 export class StopAtEdgeAI extends BasicAI {
         
-public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
 

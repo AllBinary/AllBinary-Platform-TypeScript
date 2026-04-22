@@ -31,7 +31,10 @@ import { InputRobotInterface } from "../../../../../../org/allbinary/input/autom
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ var inputRobotInterface = inputRobotInterface
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class AcceptableResponse
 protected constructor (candidate: string, tagName: string, index: number){
 
             super();
-            var candidate = candidate
+        var candidate = candidate
 var tagName = tagName
 var index = index
 this.logUtil!.putF(tagName, this, this.commonStrings!.CONSTRUCTOR);

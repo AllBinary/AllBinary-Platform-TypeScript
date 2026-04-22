@@ -67,7 +67,10 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,12 +90,9 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
         
         
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var rectangle = rectangle
     //var formType = formType
@@ -123,7 +123,7 @@ this.update(items);
 
 
                         for (
-    var index: number = selectedAnimationArray!.length
+    var index: number = this.selectedAnimationArray!.length
                 ;
         
         
@@ -138,7 +138,7 @@ this.selectedAnimationArray[index]= nullAnimation;
 
 
                         for (
-    var index: number = unSelectedAnimationArray!.length
+    var index: number = this.unSelectedAnimationArray!.length
                 ;
         
         

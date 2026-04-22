@@ -64,7 +64,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,12 +102,9 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
         
 
     private colorFillPaintable: ColorFillBasePaintable
-public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager)                        
-
-                            : super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor()){
-
-            super();
-            var commandListener = commandListener
+public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager){
+            super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
+                    var commandListener = commandListener
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
@@ -165,7 +165,7 @@ this.colorFillPaintable!.paint(graphics);
 ;
     
 
-    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE) shr 1);
+    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);
         
         
 ;

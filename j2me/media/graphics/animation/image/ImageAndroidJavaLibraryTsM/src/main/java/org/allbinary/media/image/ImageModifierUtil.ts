@@ -43,7 +43,10 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,10 +97,10 @@ paint.setColorFilter(new PorterDuffColorFilter(basicColor!.toInt(), PorterDuff.M
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-                        if(alphaInt != paint.getAlpha())
+                        if(alphaInt != this.paint.getAlpha())
                         
                                     {
-                                    paint.setAlpha(alphaInt);
+                                    this.paint.setAlpha(alphaInt);
     
 
                                     }

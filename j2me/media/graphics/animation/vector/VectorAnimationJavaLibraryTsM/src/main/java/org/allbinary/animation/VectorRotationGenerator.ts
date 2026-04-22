@@ -55,7 +55,10 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -92,7 +95,7 @@ export class VectorRotationGenerator
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(vectorRotationInfo: VectorInfo): number[][][]{
@@ -186,7 +189,7 @@ index += angleIncrement;
 }
 
 
-    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, pointBasicArrayList!.size())!;
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, pointBasicArrayList!.size())!;
         
         
 ;
@@ -235,11 +238,11 @@ var angle = angle
     
 graphicsPipe!.createMatrix();
     
-graphicsPipe!.translate( -(width shr 1),  -(height shr 1));
+graphicsPipe!.translate( -(width>>1),  -(height>>1));
     
 graphicsPipe!.rotate(angle);
     
-graphicsPipe!.translate((width shr 1), (height shr 1));
+graphicsPipe!.translate((width>>1), (height>>1));
     
 
 

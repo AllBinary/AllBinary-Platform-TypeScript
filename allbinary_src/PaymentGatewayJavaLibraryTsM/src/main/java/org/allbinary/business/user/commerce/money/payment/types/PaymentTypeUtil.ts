@@ -85,7 +85,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -141,7 +144,7 @@ export class PaymentTypeUtil
 private constructor (){
 
             super();
-            
+        
     var stringBuffer: StringMaker = new StringMaker();
         
         
@@ -179,7 +182,7 @@ stringBuffer!.append("gateway");
     
 stringBuffer!.append(sep);
     
-PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString();
+this.PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString();
     
 }
 
@@ -272,7 +275,7 @@ stringBuffer!.append(storeName);
     
 stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
-stringBuffer!.append(PAYMENTGATEWAYFILEPATHSTRING);
+stringBuffer!.append(this.PAYMENTGATEWAYFILEPATHSTRING);
     
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME) as AbPath;

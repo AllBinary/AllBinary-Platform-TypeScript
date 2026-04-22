@@ -54,7 +54,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -146,9 +149,9 @@ console.log("New String: " +testString);
 public constructor (key: string, value: string){
 
             super();
-                //var key = key
+            //var key = key
     //var value = value
-hashMap= new HashMap<any, any>();
+this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(
                                                 [
@@ -167,9 +170,9 @@ this.hashMap!.put(
 public constructor (keys: string[], values: string[]){
 
             super();
-                //var keys = keys
+            //var keys = keys
     //var values = values
-hashMap= new HashMap<any, any>();
+this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(keys, values);
     
@@ -178,7 +181,7 @@ this.hashMap!.put(keys, values);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.hashMap= hashMap;
     
 }
@@ -213,7 +216,7 @@ var total = total
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = this.hashMap!.keys!;
         
         
 ;
@@ -251,7 +254,7 @@ index2 < size; index2++)
         {
 keys= keyArray[index2]! as Array<String?>;
     
-values= hashMap!.get(keys as Object);
+values= this.hashMap!.get(keys as Object);
 
                          as Array<String?>;
     
@@ -286,7 +289,7 @@ values= hashMap!.get(keys as Object);
                         if(foundTotal % 100 == 0)
                         
                                     {
-                                    console.log(FOUND_KEY +foundTotal);
+                                    console.log(this.FOUND_KEY +foundTotal);
     
 
                                     }
@@ -413,7 +416,7 @@ var replace = replace
 ;
     
 
-    var keySet: Set = hashMap!.keys!;
+    var keySet: Set = this.hashMap!.keys!;
         
         
 ;
@@ -451,7 +454,7 @@ index2 < size; index2++)
         {
 key= keyArray[index2]! as String;
     
-value= hashMap!.get(key as Object);
+value= this.hashMap!.get(key as Object);
 
                          as String;
     
@@ -476,7 +479,7 @@ newStringBuffer!.delete(0, newStringBuffer!.length());
                         if(begin !=  -1)
                         
                                     {
-                                    console.log(FOUND_KEY);
+                                    console.log(this.FOUND_KEY);
     
 
     var end: number = replace.indexOf('\n', begin +key.length) +1;

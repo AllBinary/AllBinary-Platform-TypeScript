@@ -97,7 +97,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -125,12 +128,9 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
     downloadableItemVector: Vector
 
     private requestHashMap: HashMap<any, any>
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -143,12 +143,9 @@ this.getFormData();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, empty: string)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, empty: string){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 var empty = empty
 
 
@@ -174,7 +171,7 @@ this.request= this.getPageContext()!.getRequest();
                 //@Throws(Error::class)
             
     getFormData(){
-this.setRequestHashMap(new MultipartRequestParams(request).
+this.setRequestHashMap(new MultipartRequestParams(this.request).
                             toHashMap());
     
 
@@ -280,7 +277,7 @@ vector.add(new DownloadableItemView(downloadableItem));
     
 }
 
-this.addDomNodeInterface(new BasicItemView(itemInterface, vector));
+this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     
 }
 

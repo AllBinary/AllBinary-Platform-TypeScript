@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class BasicStoreFrontFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

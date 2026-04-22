@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class InputAutomationServiceConsumer
 public constructor (registryName: string, bundleContext: BundleContext, osgiServiceVisitorInterface: OSGIServiceVisitorInterface){
 
             super();
-                //var registryName = registryName
+            //var registryName = registryName
     //var bundleContext = bundleContext
     //var osgiServiceVisitorInterface = osgiServiceVisitorInterface
 this.setRegistryName(registryName);
@@ -100,7 +103,7 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
     
 
-    var vector: Vector = osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
+    var vector: Vector = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
         
         
 ;
@@ -176,7 +179,7 @@ osgiServiceInterface= vector.get(index);
 
     public setBundleContext(aBundleContext: BundleContext){
 var aBundleContext = aBundleContext
-bundleContext= aBundleContext;
+this.bundleContext= aBundleContext;
     
 }
 

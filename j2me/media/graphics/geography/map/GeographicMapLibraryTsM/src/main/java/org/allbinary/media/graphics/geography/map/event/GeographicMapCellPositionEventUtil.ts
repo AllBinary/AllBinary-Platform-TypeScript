@@ -34,7 +34,10 @@ import { GeographicMapCellPositionTracking } from "../../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,8 +58,8 @@ export class GeographicMapCellPositionEventUtil
 public constructor (anyType: any = {}){
 
             super();
-            var anyType = anyType
-geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
+        var anyType = anyType
+this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
     
 }
 

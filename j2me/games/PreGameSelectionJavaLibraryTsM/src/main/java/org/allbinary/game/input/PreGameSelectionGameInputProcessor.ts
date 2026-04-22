@@ -97,7 +97,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -171,7 +174,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 var preGameSelectorPaintable = preGameSelectorPaintable
 var nextGameState = nextGameState
 var lockedIndex = lockedIndex
@@ -233,7 +236,7 @@ index < size; index++)
                         
                                     {
                                     
-                        if(inputTimeHelper!.isTime())
+                        if(this.inputTimeHelper!.isTime())
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());

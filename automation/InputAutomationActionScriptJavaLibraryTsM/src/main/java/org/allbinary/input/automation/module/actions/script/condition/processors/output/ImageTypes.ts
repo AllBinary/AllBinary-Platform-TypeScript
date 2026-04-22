@@ -52,7 +52,10 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,12 +111,12 @@ imageTypes!.getVector()!.add(imageType);
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var nodeList: NodeList = node.getChildNodes()!;
         
@@ -185,7 +188,7 @@ var document = document
 ;
     
 
-    var size: number = vector.length!;
+    var size: number = this.vector.length!;
         
         
 ;
@@ -201,7 +204,7 @@ var document = document
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index);
+    var imageType: InputImageType = this.vector.get(index);
 
                          as InputImageType;
         
@@ -231,7 +234,7 @@ newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutp
 stringBuffer!.append("ImageTypes: ");
     
 
-    var size: number = vector.length!;
+    var size: number = this.vector.length!;
         
         
 ;
@@ -247,7 +250,7 @@ stringBuffer!.append("ImageTypes: ");
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index);
+    var imageType: InputImageType = this.vector.get(index);
 
                          as InputImageType;
         

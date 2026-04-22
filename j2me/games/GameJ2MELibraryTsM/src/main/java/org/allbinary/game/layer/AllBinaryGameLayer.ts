@@ -85,7 +85,10 @@ import { ViewPositionEventListenerInterface } from "../../../../org/allbinary/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -138,24 +141,18 @@ basicSetColorUtil!.setBasicColorP(graphics, BLACK);
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayList();
         
         
-public constructor (layerInfo: Rectangle)                        
-
-                            : this(layerInfo, new ViewPosition()){
-
-            super();
-                //var layerInfo = layerInfo
+public constructor (layerInfo: Rectangle){
+            this(layerInfo, new ViewPosition());
+                        //var layerInfo = layerInfo
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(layerInfo, viewPosition){
-
-            super();
-                //var layerInfo = layerInfo
+public constructor (layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(layerInfo, viewPosition);
+                        //var layerInfo = layerInfo
     //var viewPosition = viewPosition
 
 
@@ -163,12 +160,9 @@ public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)
                     
 }
 
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(name, layerInfo, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(name, layerInfo, viewPosition);
+                        //var name = name
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
 
@@ -185,7 +179,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -210,7 +204,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -221,7 +215,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -300,7 +294,7 @@ graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight());
     //var width = width
 super.setLayerWidth(width);
     
-this.setHalfWidth(width shr 1);
+this.setHalfWidth(width>>1);
     
 }
 
@@ -309,7 +303,7 @@ this.setHalfWidth(width shr 1);
     //var height = height
 super.setLayerHeight(height);
     
-this.setHalfHeight(height shr 1);
+this.setHalfHeight(height>>1);
     
 }
 

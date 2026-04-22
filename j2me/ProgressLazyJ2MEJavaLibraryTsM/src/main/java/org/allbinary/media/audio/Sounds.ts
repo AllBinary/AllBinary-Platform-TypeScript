@@ -54,7 +54,10 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class Sounds
 public constructor (soundsFactoryInterface: SoundsFactoryInterface){
 
             super();
-            var soundsFactoryInterface = soundsFactoryInterface
+        var soundsFactoryInterface = soundsFactoryInterface
 this.soundsFactoryInterface= soundsFactoryInterface;
     
 }
@@ -108,10 +111,10 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
         
 ;
     
-soundsFactoryInterface!.init();
+this.soundsFactoryInterface!.init();
     
 
-    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
+    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
 ;
@@ -184,7 +187,7 @@ progressCanvas!.addPortion(100, new StringMaker().
                                 
 }
 
-soundsFactoryInterface!.setInitialized(true);
+this.soundsFactoryInterface!.setInitialized(true);
     
 this.logUtil!.putF(commonStrings!.END, this, commonStrings!.INIT);
     
@@ -194,10 +197,10 @@ this.logUtil!.putF(commonStrings!.END, this, commonStrings!.INIT);
                 //@Throws(Error::class)
             
     public stopAll(){
-this.logUtil!.putF(commonStrings!.START, this, this.soundStrings!.STOP_ALL);
+this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL);
     
 
-    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
+    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
 ;
@@ -254,10 +257,10 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
                 //@Throws(Error::class)
             
     public closeAll(){
-this.logUtil!.putF(commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
+this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);
     
 
-    var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
+    var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
         
         
 ;

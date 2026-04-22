@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,7 +111,7 @@ export inner class ReleaseHelper
 public constructor (touchButtonRecognizer: TouchButtonRecognizer){
 
             super();
-            var touchButtonRecognizer = touchButtonRecognizer
+        var touchButtonRecognizer = touchButtonRecognizer
 this.touchButtonRecognizer= touchButtonRecognizer;
     
 }
@@ -157,12 +160,9 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
             
 export inner class MultitouchReleaseHelper extends ReleaseHelper {
         
-public constructor (touchButtonRecognizer: TouchButtonRecognizer)                        
-
-                            : super(touchButtonRecognizer){
-
-            super();
-            var touchButtonRecognizer = touchButtonRecognizer
+public constructor (touchButtonRecognizer: TouchButtonRecognizer){
+            super(touchButtonRecognizer);
+                    var touchButtonRecognizer = touchButtonRecognizer
 
 
                             //For kotlin this is before the body of the constructor.
@@ -228,7 +228,7 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
 public constructor (){
 
             super();
-            
+        
                         if(TouchScreenFactory.getInstance()!.isMultiTouch())
                         
                                     {
@@ -259,9 +259,9 @@ this.releaseHelper!.release(touchButtonInput, deviceId);
         
 ;
     
-upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
     
 this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
     
@@ -276,7 +276,7 @@ var x = x
 var y = y
 var deviceId = deviceId
 
-    var touchButtonInput: TouchButtonInput = lastPressedTouchButtonInput;
+    var touchButtonInput: TouchButtonInput = this.lastPressedTouchButtonInput;
         
         
 ;
@@ -285,7 +285,7 @@ var deviceId = deviceId
                         if(currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
                         
                                     {
-                                    lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE;
+                                    this.lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE;
     
 this.processRelease(touchButtonInput, deviceId);
     
@@ -334,7 +334,7 @@ rectangle= touchButton!.getRectangle();
 point= rectangle.getPoint();
     
 
-                        if(rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
+                        if(this.rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
                         
                                     {
                                     touchButtonInput= touchButton!.getTouchButtonInput();
@@ -410,7 +410,7 @@ rectangle= touchButton!.getRectangle();
 point= rectangle.getPoint();
     
 
-                        if(rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
+                        if(this.rectangleCollisionUtil!.isInside(point.getX(), point.getY(), rectangle.getMaxX(), rectangle.getMaxY(), x, y))
                         
                                     {
                                     touchButtonInput= touchButton!.getTouchButtonInput();
@@ -423,7 +423,7 @@ point= rectangle.getPoint();
                                     {
                                     this.releaseHelper!.release(touchButtonInput, deviceId);
     
-lastPressedTouchButtonInput= touchButtonInput;
+this.lastPressedTouchButtonInput= touchButtonInput;
     
 currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
     
@@ -433,9 +433,9 @@ currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
         
 ;
     
-downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

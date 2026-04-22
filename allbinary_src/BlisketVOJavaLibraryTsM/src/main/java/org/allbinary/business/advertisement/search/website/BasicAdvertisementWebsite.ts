@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementWebsiteInterface } from "./AdvertisementWebsiteInterface.js";
+
 export class BasicAdvertisementWebsite
             extends Object
          implements AdvertisementWebsiteInterface {
@@ -43,7 +48,7 @@ export class BasicAdvertisementWebsite
 public constructor (websiteId: string){
 
             super();
-            var websiteId = websiteId
+        var websiteId = websiteId
 this.websiteId= websiteId;
     
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,7 +104,7 @@ export class ShippingAddressData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

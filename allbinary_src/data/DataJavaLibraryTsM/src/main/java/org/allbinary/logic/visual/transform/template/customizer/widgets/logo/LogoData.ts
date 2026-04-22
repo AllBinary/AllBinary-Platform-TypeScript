@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class LogoData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "LOGO_NAME";

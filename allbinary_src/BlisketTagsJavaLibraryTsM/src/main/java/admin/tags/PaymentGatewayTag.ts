@@ -46,7 +46,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class PaymentGatewayTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new PaymentGatewayHelperFactory());
+        this.setTagHelperFactory(new PaymentGatewayHelperFactory());
     
 this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
     

@@ -37,7 +37,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class OnDemandResources
 protected constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

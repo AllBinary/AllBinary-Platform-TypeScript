@@ -31,7 +31,10 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class ThirdPartyStore
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.name= name;
     
 }
@@ -64,7 +67,7 @@ var clientInformationInterface = clientInformationInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return authorized;
+                        return this.authorized;
     
 }
 
@@ -81,7 +84,7 @@ this.authorized= authorized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

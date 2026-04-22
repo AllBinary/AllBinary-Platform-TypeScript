@@ -43,7 +43,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class CompoundAnimationInterfaceFactory
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
+            //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
     //var animationBehaviorFactory = animationBehaviorFactory
 this.basicAnimationInterfaceFactoryInterfaceArrayP= basicAnimationInterfaceFactoryInterfaceArray;
     
@@ -140,7 +143,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicAnimationInterfaceFactoryInterfaceArrayP;
+                        return this.basicAnimationInterfaceFactoryInterfaceArrayP;
     
 }
 

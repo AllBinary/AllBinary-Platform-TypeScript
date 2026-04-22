@@ -64,7 +64,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,12 +87,9 @@ export class OrderView extends HttpStoreComponentView implements DomNodeInterfac
     orderHistory: OrderHistory
 
     basketReview: BasketReview
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -107,7 +107,7 @@ this.getFormData();
             
     getFormData(){
 
-    var id: string = request.getParameter(OrderData.ID)!;
+    var id: string = this.request.getParameter(OrderData.ID)!;
         
         
 ;
@@ -135,18 +135,18 @@ var document = document
 
         try {
             
-    var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
+    var orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;
         
         
 ;
     
 
-    var node: Node = document.createElement(orderHistory!.getPaymentMethod())!;
+    var node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;
         
         
 ;
     
-orderHistoryNode!.appendChild(basketReview!.toXmlNode(document));
+orderHistoryNode!.appendChild(this.basketReview!.toXmlNode(document));
     
 node.appendChild(orderHistoryNode);
     

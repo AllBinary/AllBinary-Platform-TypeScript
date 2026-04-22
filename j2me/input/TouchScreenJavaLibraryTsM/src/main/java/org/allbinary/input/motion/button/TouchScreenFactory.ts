@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class TouchScreenFactory
 private constructor (){
 
             super();
-            
+        
         try {
             this.setTouch(true);
     

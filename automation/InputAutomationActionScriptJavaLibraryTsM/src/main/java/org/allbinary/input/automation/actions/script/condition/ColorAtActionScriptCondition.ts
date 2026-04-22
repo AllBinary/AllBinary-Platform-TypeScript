@@ -87,13 +87,18 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
+
+import { ColorAtActionScriptConditionInterface } from "./ColorAtActionScriptConditionInterface.js";
 
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
 
@@ -117,12 +122,9 @@ export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondit
     private colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
         
         
-public constructor (node: Node)                        
-
-                            : super(ColorAtActionScriptCondition.NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(ColorAtActionScriptCondition.NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -300,12 +302,9 @@ this.init();
     
 }
 
-public constructor ()                        
-
-                            : super(ColorAtActionScriptCondition.NAME){
-
-            super();
-            
+public constructor (){
+            super(ColorAtActionScriptCondition.NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

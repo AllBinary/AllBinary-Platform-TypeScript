@@ -58,7 +58,10 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class CustomUriResolver
 public constructor (path: string, basicURIResolver: BasicUriResolver){
 
             super();
-            var path = path
+        var path = path
 var basicURIResolver = basicURIResolver
 this.path= path;
     
@@ -98,7 +101,7 @@ var base = base
 
         try {
             
-    var fileAbPath: AbPath = new AbFilePath(path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
+    var fileAbPath: AbPath = new AbFilePath(this.path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
         
         
 ;

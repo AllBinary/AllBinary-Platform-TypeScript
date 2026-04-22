@@ -43,13 +43,18 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { TextAnimation } from "./TextAnimation.js";
+
+import { GetTextInterface } from "./GetTextInterface.js";
 
 export class CustomTextAnimation extends TextAnimation implements GetTextInterface {
         
@@ -69,12 +74,9 @@ export class CustomTextAnimation extends TextAnimation implements GetTextInterfa
     hasChanged: boolean = true;
         
         
-public constructor (text: string, fontSize: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(text, animationBehavior){
-
-            super();
-                //var text = text
+public constructor (text: string, fontSize: number, animationBehavior: AnimationBehavior){
+            super(text, animationBehavior);
+                        //var text = text
     //var fontSize = fontSize
     //var animationBehavior = animationBehavior
 
@@ -98,11 +100,11 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
         
 ;
     
-fontDebugFactory!.setFont(this.font, graphics);
+this.fontDebugFactory!.setFont(this.font, graphics);
     
 super.paint(graphics, x, y);
     
-fontDebugFactory!.setFont(existingFont, graphics);
+this.fontDebugFactory!.setFont(existingFont, graphics);
     
 }
 
@@ -123,7 +125,7 @@ fontDebugFactory!.setFont(existingFont, graphics);
                                 
 this.hasChanged= true;
     
-this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (fontSize *scaleX).toInt());
+this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, (this.fontSize *scaleX));
     
 }
 

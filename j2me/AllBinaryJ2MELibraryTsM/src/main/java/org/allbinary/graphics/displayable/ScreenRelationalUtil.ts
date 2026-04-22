@@ -17,7 +17,10 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,13 +91,13 @@ export class ScreenRelationalUtil
 ;
     
 
-    var width: number = last[displayInfoSingleton!.WIDTH]!.toFloat();
+    var width: number = last[displayInfoSingleton!.WIDTH]!;
         
         
 ;
     
 
-    var height: number = last[displayInfoSingleton!.HEIGHT]!.toFloat();
+    var height: number = last[displayInfoSingleton!.HEIGHT]!;
         
         
 ;
@@ -136,7 +139,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getScale(aWidth, aHeight) *aHeight).toInt();
+                        return (this.getScale(aWidth, aHeight) *aHeight);
     
 }
 
@@ -149,7 +152,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getScale(aWidth, aHeight, add) *aHeight).toInt();
+                        return (this.getScale(aWidth, aHeight, add) *aHeight);
     
 }
 

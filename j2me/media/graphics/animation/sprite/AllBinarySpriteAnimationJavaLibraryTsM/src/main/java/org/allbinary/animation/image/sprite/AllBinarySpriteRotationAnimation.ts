@@ -52,7 +52,10 @@ import { FrameUtil } from "../../../../../org/allbinary/math/FrameUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ import { HackRotationSpriteIndexedAnimation } from "./HackRotationSpriteIndexedA
 
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         
-public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior)                        
-
-                            : super(sprite, image, AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /sprite.getRawFrameCount()).toShort()), animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior){
+            super(sprite, image, AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /sprite.getRawFrameCount())), animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var animationBehavior = animationBehavior
 
@@ -135,7 +135,7 @@ this.adjustFrame(angle.getValue());
 var angle = angle
 this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
 
-                        .toInt()));
+                        ));
     
 }
 

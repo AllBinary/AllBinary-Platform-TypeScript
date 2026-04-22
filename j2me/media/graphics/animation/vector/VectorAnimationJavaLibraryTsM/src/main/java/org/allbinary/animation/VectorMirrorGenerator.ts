@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class VectorMirrorGenerator
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(points: number[][][], width: number): number[][][]{
@@ -171,7 +174,7 @@ pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! 
 }
 
 
-    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList)!;
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList)!;
         
         
 ;

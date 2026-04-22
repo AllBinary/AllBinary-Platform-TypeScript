@@ -40,12 +40,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EmailInterface } from "./EmailInterface.js";
+
 import { Email } from "./Email.js";
 
 export class AbEmail
@@ -57,7 +62,7 @@ export class AbEmail
 public constructor (server: string, from: string, to: string, subject: string, textBody: string, htmlAttachment: string, contentBase: string){
 
             super();
-            var server = server
+        var server = server
 var from = from
 var to = to
 var subject = subject

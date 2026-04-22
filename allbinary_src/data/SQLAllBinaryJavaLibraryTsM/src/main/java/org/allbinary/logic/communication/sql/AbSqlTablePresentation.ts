@@ -31,7 +31,10 @@ import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { AbSqlBasic } from "./AbSqlBasic.js";
 
 export class AbSqlTablePresentation extends AbSqlBasic {
         
-public constructor (databaseConnectionInfoInterface: DbConnectionInfo)                        
-
-                            : super(databaseConnectionInfoInterface){
-
-            super();
-            var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
+            super(databaseConnectionInfoInterface);
+                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

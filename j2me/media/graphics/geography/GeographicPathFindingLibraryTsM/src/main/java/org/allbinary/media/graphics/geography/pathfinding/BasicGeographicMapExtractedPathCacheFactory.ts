@@ -20,7 +20,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class BasicGeographicMapExtractedPathCacheFactory extends BaseBasicArrayL
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(maxConcurrentPaths: number, maxPaths: number){

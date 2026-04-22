@@ -46,7 +46,10 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class MotionEventFactory
 public constructor (source: any = {}, id: number){
 
             super();
-            var source = source
+        var source = source
 var id = id
 this.source= source;
     

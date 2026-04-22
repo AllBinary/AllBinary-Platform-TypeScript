@@ -64,7 +64,10 @@ import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
 private constructor (){
 
             super();
-            
+        
     var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
         
         
@@ -162,12 +165,12 @@ efficiencyHud= new NumberStringHud("Efficiency:", 999, basicHudFactory!.ABSOLUTE
 index++;
     
 
-    var totalLength: number = HEALTH.length +1;
+    var totalLength: number = this.HEALTH.length +1;
         
         
 ;
     
-healthHud= new NumberStringHud(HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
+healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
 maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX +(totalLength *DEFAULT_CHAR_HEIGHT), y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
     
@@ -252,7 +255,7 @@ this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100);
 this.healthHud!.set(health);
     
 
-    var totalLength: number = HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
+    var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
         
         
 ;

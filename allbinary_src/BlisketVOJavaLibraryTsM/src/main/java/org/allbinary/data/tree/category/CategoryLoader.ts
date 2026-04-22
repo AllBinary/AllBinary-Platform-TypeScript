@@ -70,7 +70,10 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,18 +81,17 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
         
 import { CategoryModifierTree } from "./CategoryModifierTree.js";
 
+import { CategoryLoaderInterface } from "./CategoryLoaderInterface.js";
+
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (categoryFactoryInterface: CategoryFactoryInterface)                        
-
-                            : super(categoryFactoryInterface){
-
-            super();
-            var categoryFactoryInterface = categoryFactoryInterface
+public constructor (categoryFactoryInterface: CategoryFactoryInterface){
+            super(categoryFactoryInterface);
+                    var categoryFactoryInterface = categoryFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

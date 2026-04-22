@@ -45,7 +45,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,12 +106,9 @@ dialog.setVisible(true);
     private hashMap: HashMap<any, any> = new HashMap<any, any>();
         
         
-public constructor (parent: java.awt.Frame, modal: boolean)                        
-
-                            : super(parent, modal){
-
-            super();
-            var parent = parent
+public constructor (parent: java.awt.Frame, modal: boolean){
+            super(parent, modal);
+                    var parent = parent
 var modal = modal
 
 
@@ -122,27 +122,27 @@ initComponents();
     initComponents(){
 angleIncrementJTextField= new javax.swing.JTextField();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-totalRotationJTextField= new javax.swing.JTextField();
+this.totalRotationJTextField= new javax.swing.JTextField();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
-jPanel1= new javax.swing.JPanel();
+this.jPanel1= new javax.swing.JPanel();
     
-jButton1= new javax.swing.JButton();
+this.jButton1= new javax.swing.JButton();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-angleIncrementJTextField!.setText("36");
+this.angleIncrementJTextField!.setText("36");
     
-jLabel1!.setText("Angle Increment:");
+this.jLabel1!.setText("Angle Increment:");
     
-totalRotationJTextField!.setText("360");
+this.totalRotationJTextField!.setText("360");
     
-jLabel2!.setText("Total Angular Rotation:");
+this.jLabel2!.setText("Total Angular Rotation:");
     
-jButton1!.setText("OK");
+this.jButton1!.setText("OK");
     
 jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -157,12 +157,12 @@ jButton1ActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(jPanel1);
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
         
         
 ;
     
-jPanel1!.setLayout(jPanel1Layout);
+this.jPanel1!.setLayout(jPanel1Layout);
     
 jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel1Layout!.createSequentialGroup()!.addGap(62, 62, 62)!.addComponent(jButton1)!.addContainerGap(62, Short.MAX_VALUE)));
     
@@ -189,15 +189,15 @@ pack();
 var evt = evt
 
         try {
-            hashMap!.put(Integer(Integer.valueOf(0))Integer(Integer.valueOf(this.angleIncrementJTextField!.getText())));
+            this.hashMap!.put(Integer(Integer.valueOf(0))Integer(Integer.valueOf(this.angleIncrementJTextField!.getText())));
     
-hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotationJTextField!.getText())));
+this.hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotationJTextField!.getText())));
     
 getParent = this.getParent();
 
                         getParent as HashMapJDialogListenerInterface
 getParent.
-                    onHashMap(hashMap);
+                    onHashMap(this.hashMap);
     
 this.setVisible(false);
     

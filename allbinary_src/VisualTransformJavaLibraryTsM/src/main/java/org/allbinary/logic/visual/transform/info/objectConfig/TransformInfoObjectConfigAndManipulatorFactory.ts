@@ -52,7 +52,10 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

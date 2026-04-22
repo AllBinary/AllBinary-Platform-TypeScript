@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class EntryData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly ID: string = "ENTRY_ID";

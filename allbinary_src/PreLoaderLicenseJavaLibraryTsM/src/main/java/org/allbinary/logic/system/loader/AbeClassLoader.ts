@@ -61,7 +61,10 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,12 +100,9 @@ export class AbeClassLoader extends ClassLoader {
         
 
     private key: string
-public constructor (parent: ClassLoader, key: string)                        
-
-                            : super(parent){
-
-            super();
-            var parent = parent
+public constructor (parent: ClassLoader, key: string){
+            super(parent);
+                    var parent = parent
 var key = key
 
 
@@ -320,7 +320,7 @@ var name = name
     
 
         try {
-            cname= PATH +name.replace('.', AbPathData.getInstance()!.SEPARATORCHAR) +ENCRYPTED_EXTENSION;
+            cname= PATH +name.replace('.', AbPathData.getInstance()!.SEPARATORCHAR) +this.ENCRYPTED_EXTENSION;
     
 in= new FileInputStream(cname);
     

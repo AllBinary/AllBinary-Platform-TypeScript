@@ -58,12 +58,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DomNodeInterface } from "./DomNodeInterface.js";
+
 export class DirectoryDataModel
             extends Object
          implements DomNodeInterface, TransformInterface {
@@ -75,7 +80,7 @@ export class DirectoryDataModel
 public constructor (file: AbFile){
 
             super();
-                //var file = file
+            //var file = file
 this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
 this.transformDocumentInterface= TransformDocumentFactory.getInstance();

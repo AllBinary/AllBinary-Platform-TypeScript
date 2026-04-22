@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ stringBuilder!.delete(0, stringBuilder!.length());
 ;
     
 
-    var tokenizer: Tokenizer = new Tokenizer(commonSeps!.UNDERSCORE);
+    var tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);
         
         
 ;

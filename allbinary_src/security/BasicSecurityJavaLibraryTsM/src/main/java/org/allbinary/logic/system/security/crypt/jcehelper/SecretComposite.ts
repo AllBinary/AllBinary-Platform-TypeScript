@@ -40,7 +40,10 @@ import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class SecretComposite extends BaseSecretComposite {
 public constructor (secretKey: SecretKey, cipher: Cipher, key: number[]){
 
             super();
-                //var secretKey = secretKey
+            //var secretKey = secretKey
     //var cipher = cipher
     //var key = key
 this.secretKey= secretKey;
@@ -81,7 +84,7 @@ this.key= key;
 var array = array
 array= this.mutilate(array);
     
-cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
     
 
 
@@ -104,7 +107,7 @@ cipher.init(Cipher.DECRYPT_MODE, secretKey);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mutilate(cipher.doFinal(array));
+                        return this.mutilate(this.cipher.doFinal(array));
 
                         ;
     
@@ -121,10 +124,10 @@ var array = array
     var index: number = 0;
         
         
-index < key.length; index++)
+index < this.key.length; index++)
         {
 
-    var value: number = key[index]!;
+    var value: number = this.key[index]!;
         
         
 ;
@@ -133,7 +136,7 @@ index < key.length; index++)
                         if(value < 8 && value > 0)
                         
                                     {
-                                    array= byteUtil!.xorByte(array, value.toInt());
+                                    array= this.byteUtil!.xorByte(array, value);
     
 
                                     }

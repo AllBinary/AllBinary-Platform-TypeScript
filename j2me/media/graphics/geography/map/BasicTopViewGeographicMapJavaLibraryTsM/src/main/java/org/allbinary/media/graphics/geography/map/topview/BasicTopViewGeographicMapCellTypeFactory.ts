@@ -55,7 +55,10 @@ import { HashtableUtil } from "../../../../../../../org/allbinary/util/Hashtable
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,7 +87,7 @@ export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellT
 private constructor (){
 
             super();
-            this.maxTileId= 9;
+        this.maxTileId= 9;
     
 
     var basicTopViewGeographicMapStrings: BasicTopViewGeographicMapStrings = BasicTopViewGeographicMapStrings.getInstance()!;
@@ -155,7 +158,7 @@ this.OTHER_CELL_TYPE= OTHER_CELL_TYPE;
 public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
-                //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
+            //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
     //var maxTileId = maxTileId
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;

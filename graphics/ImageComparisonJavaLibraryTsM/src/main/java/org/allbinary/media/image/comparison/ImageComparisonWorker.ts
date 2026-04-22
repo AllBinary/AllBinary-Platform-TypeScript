@@ -58,7 +58,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class ImageComparisonWorker extends BasicEventHandler implements Captured
 public constructor (imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
 
             super();
-                //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
+            //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
 this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     
 this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
@@ -161,7 +164,7 @@ this.setRunning(true);
 timeHelper!.setStartTime();
     
 
-                        if(this.imageComparatorConstraintsInterface!.isFrameAllowed(index2))
+                        if(this.imageComparatorConstraintsInterface!.isFrameAllowed(this.index2))
                         
                                     {
                                     
@@ -225,7 +228,7 @@ index2++;
     
 
     var message: string = new StringMaker().
-                            append("Frame: ")!.appendint(index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsed())!.toString()!;
+                            append("Frame: ")!.appendint(this.index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsed())!.toString()!;
         
         
 ;

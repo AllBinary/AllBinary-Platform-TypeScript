@@ -51,7 +51,10 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class LayerInterfaceFactory
         
 
     public init(){
-list= new BasicArrayList();
+this.list= new BasicArrayList();
     
 }
 
@@ -114,7 +117,7 @@ var z = z
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append(HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
+                            append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
     var typeInteger: Integer = hashtable.get(Layer.ID as Object);
@@ -125,7 +128,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = list.objectArray[typeInteger!.toInt() -1]! as LayerInterfaceFactoryInterface;
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.toInt() -1]! as LayerInterfaceFactoryInterface;
         
         
 ;
@@ -143,7 +146,7 @@ this.logUtil!.putF(new StringMaker().
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-list.add(layerInterfaceFactoryInterface);
+this.list.add(layerInterfaceFactoryInterface);
     
 }
 

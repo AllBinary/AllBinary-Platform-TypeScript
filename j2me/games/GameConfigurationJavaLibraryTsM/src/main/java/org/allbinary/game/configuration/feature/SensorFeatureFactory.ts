@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class SensorFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NO_ORIENTATION: SensorFeature = new SensorFeature("No Orientation");

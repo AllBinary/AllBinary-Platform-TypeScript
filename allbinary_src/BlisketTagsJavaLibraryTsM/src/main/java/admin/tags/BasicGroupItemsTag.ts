@@ -37,7 +37,10 @@ import { BasicGroupItemsRequestHelperFactory } from "../../admin/taghelpers/Basi
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class BasicGroupItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new BasicGroupItemsHelperFactory());
+        this.setTagHelperFactory(new BasicGroupItemsHelperFactory());
     
 this.setTagRequestHelperFactory(new BasicGroupItemsRequestHelperFactory());
     

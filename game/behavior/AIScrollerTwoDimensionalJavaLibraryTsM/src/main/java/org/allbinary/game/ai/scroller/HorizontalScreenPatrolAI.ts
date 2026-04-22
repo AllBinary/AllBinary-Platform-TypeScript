@@ -72,7 +72,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,12 +117,9 @@ export class HorizontalScreenPatrolAI extends BasicAI {
         
 
     private readonly sound: Sound
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -153,7 +153,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 super.processAI(this.keyDirection);
     
 
-                        if(timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTime())
                         
                                     {
                                     
@@ -180,13 +180,13 @@ super.processAI(this.keyDirection);
         
 ;
     
-layerInterface!.setPosition(displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
+layerInterface!.setPosition(this.displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
     
-firedIndex= 0;
+this.firedIndex= 0;
     
-this.firingX= displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth());
+this.firingX= this.displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth());
     
-secondaryPlayerQueue!.add(this.sound);
+this.secondaryPlayerQueue!.add(this.sound);
     
 
                                     }
@@ -206,25 +206,25 @@ secondaryPlayerQueue!.add(this.sound);
 ;
     
 
-    var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12) shr 2;
+    var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;
         
         
 ;
     
 
-                        if(FIRE > MAX_FIRE)
+                        if(FIRE > this.MAX_FIRE)
                         
                                     {
-                                    FIRE= MAX_FIRE;
+                                    FIRE= this.MAX_FIRE;
     
 
                                     }
                                 
 
-                        if(firedIndex > FIRE)
+                        if(this.firedIndex > FIRE)
                         
                                     {
-                                    firedIndex= 0;
+                                    this.firedIndex= 0;
     
 this.firingX= Integer.MIN_VALUE;
     

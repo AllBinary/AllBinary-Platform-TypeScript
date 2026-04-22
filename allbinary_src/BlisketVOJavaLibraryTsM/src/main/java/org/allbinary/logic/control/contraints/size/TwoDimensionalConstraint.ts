@@ -31,12 +31,17 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TwoDimensionalConstraintInterface } from "./TwoDimensionalConstraintInterface.js";
+
 import { SizeConstraintInterface } from "./SizeConstraintInterface.js";
 
 export class TwoDimensionalConstraint
@@ -50,7 +55,7 @@ export class TwoDimensionalConstraint
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 }
 
 

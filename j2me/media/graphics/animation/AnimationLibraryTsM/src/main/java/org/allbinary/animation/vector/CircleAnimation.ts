@@ -43,7 +43,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 export class CircleAnimation extends Animation implements ColorCompositeInterface {
         
 
-    readonly TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE.toInt();
+    readonly TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
         
         
 
@@ -62,7 +65,7 @@ export class CircleAnimation extends Animation implements ColorCompositeInterfac
 public constructor (widthAndHeight: number, basicColor: BasicColor){
 
             super();
-            var widthAndHeight = widthAndHeight
+        var widthAndHeight = widthAndHeight
 var basicColor = basicColor
 this.width= widthAndHeight;
     
@@ -75,7 +78,7 @@ this.setBasicColorP(basicColor);
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();
-            var width = width
+        var width = width
 var height = height
 var basicColor = basicColor
 this.width= width;
@@ -95,9 +98,9 @@ this.setBasicColorP(basicColor);
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.drawArc(x, y, width, height, 0, TOTAL_ANGLE);
+graphics.drawArc(x, y, this.width, this.height, 0, TOTAL_ANGLE);
     
 }
 

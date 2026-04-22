@@ -46,12 +46,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EmailInterface } from "./EmailInterface.js";
+
 import { Email } from "./Email.js";
 
 export class BasicEmail
@@ -63,7 +68,7 @@ export class BasicEmail
 public constructor (emailInfo: EmailInfo, to: string){
 
             super();
-            var emailInfo = emailInfo
+        var emailInfo = emailInfo
 var to = to
 
     var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;

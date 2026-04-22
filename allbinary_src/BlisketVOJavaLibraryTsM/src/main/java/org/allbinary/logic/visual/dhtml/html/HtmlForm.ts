@@ -40,7 +40,10 @@ import { HtmlTable } from "../../../../../../org/allbinary/logic/visual/dhtml/ht
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,36 +97,36 @@ export class HtmlForm
 public constructor (action: string){
 
             super();
-            var action = action
+        var action = action
 this.action= action;
     
-inputs= new Vector();
+this.inputs= new Vector();
     
 }
 
 
     public setPost(){
-method= POST;
+this.method= this.POST;
     
 }
 
 
     public setGet(){
-method= GET;
+this.method= this.GET;
     
 }
 
 
     public addInput(htmlInput: HtmlInput){
 var htmlInput = htmlInput
-inputs.add(htmlInput);
+this.inputs.add(htmlInput);
     
 }
 
 
     public addTable(htmlTable: HtmlTable){
 var htmlTable = htmlTable
-inputs.add(htmlTable);
+this.inputs.add(htmlTable);
     
 }
 
@@ -142,7 +145,7 @@ inputs.add(htmlTable);
 ;
     
 
-    var inputArray: any[] = inputs.toArray()!;
+    var inputArray: any[] = this.inputs.toArray()!;
         
         
 ;
@@ -154,21 +157,21 @@ inputs.add(htmlTable);
         
 ;
     
-result= FORMBEGIN;
+result= this.FORMBEGIN;
     
-result += METHOD;
+result += this.METHOD;
     
-result += method;
-    
-result += "\" ";
-    
-result += ACTION;
-    
-result += action;
+result += this.method;
     
 result += "\" ";
     
-result += END;
+result += this.ACTION;
+    
+result += this.action;
+    
+result += "\" ";
+    
+result += this.END;
     
 
 
@@ -186,7 +189,7 @@ result += " ";
     
 }
 
-result += FORMEND;
+result += this.FORMEND;
     
 
 

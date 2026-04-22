@@ -31,7 +31,10 @@ import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalT
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return magnitude *noDecimalTrigTable!.cos(angle) /10;
+                        return magnitude *this.noDecimalTrigTable!.cos(angle) /10;
     
 }
 
@@ -79,7 +82,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return magnitude *noDecimalTrigTable!.sin(angle) /10;
+                        return magnitude *this.noDecimalTrigTable!.sin(angle) /10;
     
 }
 
@@ -91,7 +94,7 @@ var otherAngle = otherAngle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return magnitude *noDecimalTrigTable!.sin(otherAngle) /10;
+                        return magnitude *this.noDecimalTrigTable!.sin(otherAngle) /10;
     
 }
 

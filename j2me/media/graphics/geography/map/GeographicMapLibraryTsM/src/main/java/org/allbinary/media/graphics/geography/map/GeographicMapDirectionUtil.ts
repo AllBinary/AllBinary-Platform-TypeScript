@@ -40,7 +40,10 @@ import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosit
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class GeographicMapDirectionUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly MESSAGE: string = "Cell Position should have been cached!!!";
@@ -183,7 +186,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(MESSAGE)
+                            throw new Error(this.MESSAGE)
 
                                     }
                                 
@@ -376,7 +379,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(MESSAGE)
+                            throw new Error(this.MESSAGE)
 
                                     }
                                 
@@ -684,11 +687,11 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
         
 ;
     
-stringBuffer!.append(ERROR);
+stringBuffer!.append(this.ERROR);
     
 stringBuffer!.append(CellPosition.toString(fromGeographicMapCellPosition));
     
-stringBuffer!.append(EQUAL);
+stringBuffer!.append(this.EQUAL);
     
 stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition));
     

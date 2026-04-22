@@ -61,12 +61,17 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
+
 export class TopUBoundBounceAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
@@ -93,7 +98,7 @@ var gameInput = gameInput
 ;
     
 
-    var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity() shr velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());
+    var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());
         
         
 ;

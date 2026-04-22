@@ -34,7 +34,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { ScrollMapPlayerGameInput } from "./ScrollMapPlayerGameInput.js";
 
 export class ScrollMapLeftGameInputProcessor extends ScrollMapGameInputProcessor {
         
-public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput)                        
-
-                            : super(scrollMapPlayerGameInput){
-
-            super();
-            var scrollMapPlayerGameInput = scrollMapPlayerGameInput
+public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
+            super(scrollMapPlayerGameInput);
+                    var scrollMapPlayerGameInput = scrollMapPlayerGameInput
 
 
                             //For kotlin this is before the body of the constructor.

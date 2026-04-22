@@ -34,12 +34,17 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
+
 import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export class PickedUpLayerInterfaceFactoryBase

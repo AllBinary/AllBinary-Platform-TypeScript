@@ -37,12 +37,17 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HealthInterface } from "./HealthInterface.js";
+
 import { NullHealthListener } from "./NullHealthListener.js";
 
 import { HealthListenerInterface } from "./HealthListenerInterface.js";
@@ -78,7 +83,7 @@ export class Health
 public constructor (maxHealth: number){
 
             super();
-            var maxHealth = maxHealth
+        var maxHealth = maxHealth
 this.setMaxHealth(maxHealth);
     
 this.setHealth(maxHealth);

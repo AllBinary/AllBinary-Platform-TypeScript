@@ -40,7 +40,10 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
 
-        
+
+
+
+
 
 
 
@@ -167,7 +170,7 @@ stringBuffer!.append(MethodUtil.viewAll(myClass::class.java, lineBreak));
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

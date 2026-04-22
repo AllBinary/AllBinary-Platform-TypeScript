@@ -55,7 +55,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class StoreFrontsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new StoreFrontsHelperFactory());
+        this.setTagHelperFactory(new StoreFrontsHelperFactory());
     
 this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
     

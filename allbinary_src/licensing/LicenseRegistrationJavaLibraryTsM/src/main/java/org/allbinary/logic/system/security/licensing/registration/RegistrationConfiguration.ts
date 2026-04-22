@@ -64,7 +64,10 @@ import { PreLogUtil } from "../../../../../../../org/allbinary/logic/communicati
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,7 +110,7 @@ export class RegistrationConfiguration
 private constructor (){
 
             super();
-            
+        
         try {
             
                         if(FileFactory.getInstance()!.isFile(FILE))

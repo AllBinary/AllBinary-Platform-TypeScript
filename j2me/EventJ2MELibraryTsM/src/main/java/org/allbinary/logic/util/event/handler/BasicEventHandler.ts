@@ -49,12 +49,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicEventHandlerInterface } from "./BasicEventHandlerInterface.js";
+
 export class BasicEventHandler
             extends Object
          implements BasicEventHandlerInterface {
@@ -76,7 +81,7 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= new BasicArrayList();
+        this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 
@@ -228,7 +233,7 @@ this.process(eventObject, eventListenerInterface);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e);
     
 }
 
@@ -266,7 +271,7 @@ eventListenerInterface!.onEvent(eventObject);
         
 ;
     
-stringBuffer!.append(eventStrings!.TOTAL_LISTENERS);
+stringBuffer!.append(this.eventStrings!.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
@@ -289,7 +294,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
 
                          as EventListenerInterface;
     
-stringBuffer!.append(eventStrings!.LISTENER_LABEL);
+stringBuffer!.append(this.eventStrings!.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     

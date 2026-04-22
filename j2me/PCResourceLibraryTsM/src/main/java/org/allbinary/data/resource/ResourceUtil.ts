@@ -57,7 +57,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ export class ResourceUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public setLoadingPaths(path: string, ext: string){
@@ -179,7 +182,7 @@ this.ext= ext;
     
 
     var inputStream: InputStream = new FileInputStream(new StringMaker().
-                            append(path)!.append(resource)!.append(ext)!.toString());
+                            append(this.path)!.append(resource)!.append(this.ext)!.toString());
         
         
 ;

@@ -40,7 +40,10 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class NullRTSGameLayerPositionFinder
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{

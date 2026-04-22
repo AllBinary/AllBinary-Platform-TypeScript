@@ -34,7 +34,10 @@ import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/Pr
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class GameCanvasPaintHelper extends ProcessPaintable {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 this.gameCanvas= gameCanvas;
     
 }

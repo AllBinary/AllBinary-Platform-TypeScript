@@ -45,7 +45,10 @@ import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/u
 
 
 
-        
+
+
+
+
 
 
 
@@ -133,7 +136,7 @@ index > min_x.toInt(); )
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -23,7 +23,10 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public load(gl: GL10, target: number, level: number, image: Image, border: number, flip: boolean){

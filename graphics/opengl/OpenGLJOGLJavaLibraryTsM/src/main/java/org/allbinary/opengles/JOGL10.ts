@@ -31,12 +31,17 @@ import { GLU } from "../../../com/jogamp/opengl/glu/GLU.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GL10 } from "./GL10.js";
+
 import { GL } from "./GL.js";
 
 import { GL2 } from "./GL2.js";
@@ -106,7 +111,7 @@ export class JOGL10
 public constructor (gl: com.jogamp.opengl.GL, gl2: com.jogamp.opengl.GL2){
 
             super();
-                //var gl = gl
+            //var gl = gl
     //var gl2 = gl2
 this.gl10= gl2;
     

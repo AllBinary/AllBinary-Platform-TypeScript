@@ -37,7 +37,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,23 +54,17 @@ export class TerrainEvent extends AllBinaryEventObject {
     private basicTerrainInfo: BasicTerrainInfo = BasicTerrainInfo.NULL_BASIC_TERRAIN_INFO;
         
         
-public constructor ()                        
-
-                            : super(NullUtil.getInstance()!.NULL_OBJECT){
-
-            super();
-            
+public constructor (){
+            super(NullUtil.getInstance()!.NULL_OBJECT);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (basicTerrainInfo: BasicTerrainInfo)                        
-
-                            : super(basicTerrainInfo){
-
-            super();
-                //var basicTerrainInfo = basicTerrainInfo
+public constructor (basicTerrainInfo: BasicTerrainInfo){
+            super(basicTerrainInfo);
+                        //var basicTerrainInfo = basicTerrainInfo
 
 
                             //For kotlin this is before the body of the constructor.

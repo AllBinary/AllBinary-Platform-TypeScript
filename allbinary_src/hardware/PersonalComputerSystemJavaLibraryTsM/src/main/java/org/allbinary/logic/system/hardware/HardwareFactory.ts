@@ -40,7 +40,10 @@ import { WindowsHardware } from "../../../../../org/allbinary/logic/system/hardw
 
 
 
-        
+
+
+
+
 
 
 
@@ -110,7 +113,7 @@ var os = os
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

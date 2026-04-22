@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,7 +111,7 @@ export class TouchButton extends Paintable {
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: AnimationInterface, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
 
             super();
-            var touchButtonInput = touchButtonInput
+        var touchButtonInput = touchButtonInput
 var animationInterface = animationInterface
 var rawRectangle = rawRectangle
 var cellPosition = cellPosition
@@ -145,21 +148,21 @@ this.animationInterface!.paint(graphics, animationX, animationY);
 
         try {
             
-    var x: number = this.rawRectangle!.getWidth() *cellPosition!.getColumn();
+    var x: number = this.rawRectangle!.getWidth() *this.cellPosition!.getColumn();
         
         
 ;
     
 
-    var y: number = this.rawRectangle!.getHeight() *cellPosition!.getRow();
+    var y: number = this.rawRectangle!.getHeight() *this.cellPosition!.getRow();
         
         
 ;
     
-this.rectangle= new Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+this.rectangle= new Rectangle(PointFactory.getInstance()!.getInstance(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
-    var point: GPoint = rectangle.getPoint()!;
+    var point: GPoint = this.rectangle.getPoint()!;
         
         
 ;

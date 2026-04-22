@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class ThrustAIVisitor extends Visitor {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{

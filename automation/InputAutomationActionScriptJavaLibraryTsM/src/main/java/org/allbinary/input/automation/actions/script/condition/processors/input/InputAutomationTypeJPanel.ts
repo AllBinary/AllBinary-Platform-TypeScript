@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class InputAutomationTypeJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 }
 
@@ -68,18 +71,18 @@ this.inputAutomationTypeJComboBox= inputAutomationTypeJComboBox;
 
 
     initComponents(){
-inputAutomationTypeJComboBox= new javax.swing.JComboBox();
+this.inputAutomationTypeJComboBox= new javax.swing.JComboBox();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-inputAutomationTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
+this.inputAutomationTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "DirectX","DirectX 8","Low Level","Java Robot";
         
         
                                                 ]));
     
-jLabel1!.setText("Input Type:");
+this.jLabel1!.setText("Input Type:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);

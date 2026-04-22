@@ -37,7 +37,10 @@ import { UserEmailEventListenerInterface } from "../../../../../../../../org/all
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class LogUserEmailEventListenerModule
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

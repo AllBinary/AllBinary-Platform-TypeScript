@@ -43,7 +43,10 @@ import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,24 +56,18 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), 0, 0, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image){
+            this(image, image.getWidth(), image.getHeight(), 0, 0, AnimationBehaviorFactory.getInstance());
+                        //var image = image
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (image: Image, dx: number, dy: number)                        
-
-                            : this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number){
+            this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var dx = dx
     //var dy = dy
 
@@ -79,12 +76,9 @@ public constructor (image: Image, dx: number, dy: number)
                     
 }
 
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, 0, 0, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, 0, 0, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -94,12 +88,9 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                     
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, dx, dy, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, dx, dy, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx

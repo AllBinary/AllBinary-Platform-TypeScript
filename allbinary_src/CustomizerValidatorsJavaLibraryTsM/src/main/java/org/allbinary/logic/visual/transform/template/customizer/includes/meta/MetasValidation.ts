@@ -67,7 +67,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class MetasValidation extends Validation implements DomNodeInterface {
 public constructor (storeName: string){
 
             super();
-            var storeName = storeName
+        var storeName = storeName
 this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
 this.metaValidationVector= new Vector();
@@ -126,7 +129,7 @@ this.metaValidationVector!.add(descriptionMetaValidation);
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
 
 

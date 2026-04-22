@@ -61,7 +61,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,12 +104,9 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
         
 
     public readonly lastWidth: number[]
-public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor)                        
-
-                            : this(gameCanvas, stringArray, lineArray, basicColor, Font.getDefaultFont()){
-
-            super();
-                //var gameCanvas = gameCanvas
+public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor){
+            this(gameCanvas, stringArray, lineArray, basicColor, Font.getDefaultFont());
+                        //var gameCanvas = gameCanvas
     //var stringArray = stringArray
     //var lineArray = lineArray
     //var basicColor = basicColor
@@ -119,7 +119,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], line
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor, font: Font){
 
             super();
-                //var gameCanvas = gameCanvas
+            //var gameCanvas = gameCanvas
     //var stringArray = stringArray
     //var lineArray = lineArray
     //var basicColor = basicColor
@@ -155,7 +155,7 @@ var graphics = graphics
         
 ;
     
-fontDebugFactory!.setFont(this.font, graphics);
+this.fontDebugFactory!.setFont(this.font, graphics);
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
@@ -163,7 +163,7 @@ fontDebugFactory!.setFont(this.font, graphics);
         
 ;
     
-basicSetColorUtil!.setBasicColorP(graphics, this.basicColor, this.color);
+basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
     
 
     var beginWidth: number= 0
@@ -180,10 +180,10 @@ basicSetColorUtil!.setBasicColorP(graphics, this.basicColor, this.color);
 index >= 0; index--)
         {
 
-                        if(hasChanged)
+                        if(this.hasChanged)
                         
                                     {
-                                    this.lastWidth[index]= (graphics.getFont()!.stringWidth(this.stringArray[index]!) shr 1);
+                                    this.lastWidth[index]= (graphics.getFont()!.stringWidth(this.stringArray[index]!)>>1);
     
 
                                     }
@@ -194,9 +194,9 @@ graphics.drawString(this.stringArray[index]!, displayInfo!.getLastHalfWidth() -b
     
 }
 
-hasChanged= false;
+this.hasChanged= false;
     
-fontDebugFactory!.setFont(existingFont, graphics);
+this.fontDebugFactory!.setFont(existingFont, graphics);
     
 }
 
@@ -211,13 +211,13 @@ fontDebugFactory!.setFont(existingFont, graphics);
 
     public update(){
 
-    var level: number = gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;
+    var level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;
         
         
 ;
     
 this.stringArray[0]= new StringMaker().
-                            append(BEGIN_LEVEL)!.appendint(level)!.toString();
+                            append(this.BEGIN_LEVEL)!.appendint(level)!.toString();
     
 
 

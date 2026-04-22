@@ -52,7 +52,10 @@ import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/lay
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ import { GeologicalResourceInfoHudPaintableSingleton } from "./GeologicalResourc
 
 export class ResourceWaypointLayer extends WaypointLayer {
         
-public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
-
-                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y){
-
-            super();
-                //var remoteInfo = remoteInfo
+public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
+            super(remoteInfo, parentLayer, groupInterface, rootName, name, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y);
+                        //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
     //var groupInterface = groupInterface
     //var rootName = rootName

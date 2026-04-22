@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
 public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface){
 
             super();
-            var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
+        var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
@@ -137,25 +140,25 @@ this.alwaysActionJDialog= alwaysActionJDialog;
 
 
     initComponents(){
-alwaysActionJDialog= new javax.swing.JDialog();
+this.alwaysActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= new javax.swing.JLabel();
+this.titleJLabel= new javax.swing.JLabel();
     
-okJButton= new javax.swing.JButton();
+this.okJButton= new javax.swing.JButton();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
-alwaysJComboBox= new javax.swing.JComboBox();
+this.alwaysJComboBox= new javax.swing.JComboBox();
     
-alwaysActionJButton= new javax.swing.JButton();
+this.alwaysActionJButton= new javax.swing.JButton();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-alwaysActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
+this.alwaysActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
     
-titleJLabel!.setText("Always Condition Options");
+this.titleJLabel!.setText("Always Condition Options");
     
-okJButton!.setText("OK");
+this.okJButton!.setText("OK");
     
 okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -169,9 +172,9 @@ okJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel2!.setText("On:");
+this.jLabel2!.setText("On:");
     
-alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
+this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "true","false";
         
@@ -179,12 +182,12 @@ alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 ]));
     
 
-    var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(alwaysActionJDialog!.getContentPane());
+    var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());
         
         
 ;
     
-alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
+this.alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
     
 alwaysActionJDialogLayout!.setHorizontalGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(47, 47, 47)!.addGroup(alwaysActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)!.addGroup(javax.swing.GroupLayout.Alignment.TRAILING, alwaysActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.addComponent(alwaysJComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))!.addComponent(titleJLabel)))!.addGroup(alwaysActionJDialogLayout!.createSequentialGroup()!.addGap(79, 79, 79)!.addComponent(okJButton)))!.addContainerGap(45, Short.MAX_VALUE)));
     
@@ -192,7 +195,7 @@ alwaysActionJDialogLayout!.setVerticalGroup(alwaysActionJDialogLayout!.createPar
     
 setMinimumSize(new java.awt.Dimension(100, 0));
     
-alwaysActionJButton!.setText("Edit");
+this.alwaysActionJButton!.setText("Edit");
     
 alwaysActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -206,7 +209,7 @@ alwaysActionJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel1!.setText("Always:");
+this.jLabel1!.setText("Always:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);

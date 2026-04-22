@@ -34,12 +34,17 @@ import { ViewPosition } from "../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AllBinaryLayerFactoryInterface } from "./AllBinaryLayerFactoryInterface.js";
+
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class AllBinaryLayerFactory
@@ -51,7 +56,7 @@ export class AllBinaryLayerFactory
 public constructor (rectangle: Rectangle){
 
             super();
-            var rectangle = rectangle
+        var rectangle = rectangle
 this.rectangle= rectangle;
     
 }
@@ -62,7 +67,7 @@ this.rectangle= rectangle;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AllBinaryLayer(rectangle, new ViewPosition());
+                        return new AllBinaryLayer(this.rectangle, new ViewPosition());
     
 }
 

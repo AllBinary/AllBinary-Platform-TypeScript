@@ -52,13 +52,18 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { RotationAnimation } from "./RotationAnimation.js";
+
+import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
@@ -72,12 +77,9 @@ export class VectorBaseRotationAnimation extends RotationAnimation implements Ve
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
         
         
-public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
-
-                            : super(angleInfo, animationBehavior){
-
-            super();
-                //var angleInfo = angleInfo
+public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
+            super(angleInfo, animationBehavior);
+                        //var angleInfo = angleInfo
     //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehavior = animationBehavior
@@ -91,12 +93,9 @@ this.setBasicColorP(basicColor);
     
 }
 
-public constructor (angleInfo: AngleInfo, currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
-
-                            : super(angleInfo, animationBehavior){
-
-            super();
-                //var angleInfo = angleInfo
+public constructor (angleInfo: AngleInfo, currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
+            super(angleInfo, animationBehavior);
+                        //var angleInfo = angleInfo
     //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehavior = animationBehavior

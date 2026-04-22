@@ -52,7 +52,10 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
     private readonly noCrypt: NoCrypt = new NoCrypt();
         
         
-public constructor (clientInfo: AbeClientInformationInterface)                        
-
-                            : super(clientInfo, "SSLLogServ.logUtil"){
-
-            super();
-                //var clientInfo = clientInfo
+public constructor (clientInfo: AbeClientInformationInterface){
+            super(clientInfo, "SSLLogServ.logUtil");
+                        //var clientInfo = clientInfo
 
 
                             //For kotlin this is before the body of the constructor.

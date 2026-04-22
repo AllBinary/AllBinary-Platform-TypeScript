@@ -43,7 +43,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnima
     private dx: number= 0
 
     private dy: number= 0
-public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)                        
-
-                            : super(anyType, animationBehavior){
-
-            super();
-                //var anyType = anyType
+public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
+            super(anyType, animationBehavior);
+                        //var anyType = anyType
     //var animationBehavior = animationBehavior
 
 
@@ -78,12 +78,9 @@ this.init(allBinaryImageRotationAnimationInfo!.getDx(), allBinaryImageRotationAn
     
 }
 
-public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
-
-                            : this(imageArray, AngleInfo.getInstance(10.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), 0, 0, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
+            this(imageArray, AngleInfo.getInstance(10), AngleFactory.getInstance()!.TOTAL_ANGLE, 0, 0, animationBehavior);
+                        //var imageArray = imageArray
     //var animationBehavior = animationBehavior
 
 
@@ -91,12 +88,9 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
                     
 }
 
-public constructor (imageArray: Image[], dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : this(imageArray, AngleInfo.getInstance(10.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), dx, dy, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], dx: number, dy: number, animationBehavior: AnimationBehavior){
+            this(imageArray, AngleInfo.getInstance(10), AngleFactory.getInstance()!.TOTAL_ANGLE, dx, dy, animationBehavior);
+                        //var imageArray = imageArray
     //var dx = dx
     //var dy = dy
     //var animationBehavior = animationBehavior
@@ -106,12 +100,9 @@ public constructor (imageArray: Image[], dx: number, dy: number, animationBehavi
                     
 }
 
-public constructor (imageArray: Image[], angleInfo: AngleInfo, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : this(imageArray, angleInfo, AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), dx, dy, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], angleInfo: AngleInfo, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            this(imageArray, angleInfo, AngleFactory.getInstance()!.TOTAL_ANGLE, dx, dy, animationBehavior);
+                        //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var dx = dx
     //var dy = dy
@@ -122,12 +113,9 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, dx: number, dy: n
                     
 }
 
-public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(imageArray, angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(imageArray, angleInfo, totalAngle, animationBehavior);
+                        //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
     //var dx = dx
@@ -141,12 +129,9 @@ this.init(dx, dy);
     
 }
 
-public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(imageArray, angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(imageArray, angleInfo, totalAngle, animationBehavior);
+                        //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
     //var animationBehavior = animationBehavior
@@ -154,7 +139,7 @@ public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.init( -(imageArray[0]!.getWidth() shr 2),  -(imageArray[0]!.getHeight() shr 2));
+this.init( -(imageArray[0]!.getWidth()>>2),  -(imageArray[0]!.getHeight()>>2));
     
 }
 

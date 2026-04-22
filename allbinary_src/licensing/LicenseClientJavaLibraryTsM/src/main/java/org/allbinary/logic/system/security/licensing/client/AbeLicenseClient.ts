@@ -55,7 +55,10 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class AbeLicenseClient
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -149,7 +152,7 @@ public constructor (){
                                     }
                                 
 
-                        if(servers.size() >= MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
+                        if(servers.size >= this.MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
                         
                                     {
                                     isBetterServerList= true;

@@ -46,12 +46,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
+
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
@@ -109,7 +114,7 @@ var resultHashtable = resultHashtable
 public constructor (hashtable: Hashtable<any, any>){
 
             super();
-            var hashtable = hashtable
+        var hashtable = hashtable
 this.hashtable= new Hashtable<any, any>();
     
 
@@ -217,7 +222,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(keyName as Object);
+                        return this.hashtable.get(keyName as Object);
 
                          as String;
     

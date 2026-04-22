@@ -37,7 +37,10 @@ import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class DownTouchInputToGameKeyEventAction extends GameKeyCompleteMotionGes
     
 }
 
-private constructor ()                        
-
-                            : super("Down Action", TouchMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()){
-
-            super();
-            
+private constructor (){
+            super("Down Action", TouchMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

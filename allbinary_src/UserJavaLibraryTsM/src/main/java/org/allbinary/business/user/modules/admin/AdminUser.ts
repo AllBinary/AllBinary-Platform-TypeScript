@@ -37,7 +37,10 @@ import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,23 +48,17 @@ import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic
         
 export class AdminUser extends User {
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (userHashMap: HashMap<any, any>)                        
-
-                            : super(userHashMap){
-
-            super();
-            var userHashMap = userHashMap
+public constructor (userHashMap: HashMap<any, any>){
+            super(userHashMap);
+                    var userHashMap = userHashMap
 
 
                             //For kotlin this is before the body of the constructor.

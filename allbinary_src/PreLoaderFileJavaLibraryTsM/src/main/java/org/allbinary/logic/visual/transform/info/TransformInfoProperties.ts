@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class TransformInfoProperties
 public constructor (name: string, label: string, description: string, objectFileName: string, objectConfigFileName: string, templateFileName: string){
 
             super();
-            var name = name
+        var name = name
 var label = label
 var description = description
 var objectFileName = objectFileName

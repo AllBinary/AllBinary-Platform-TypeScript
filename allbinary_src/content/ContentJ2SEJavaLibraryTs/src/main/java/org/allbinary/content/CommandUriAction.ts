@@ -40,7 +40,10 @@ import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class CommandUriAction
     public add(command: Command, url: string){
 var command = command
 var url = url
-hashtable.put(command, url);
+this.hashtable.put(command, url);
     
 }
 
@@ -101,7 +104,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string = hashtable.get(command as Object);
+    var url: string = this.hashtable.get(command as Object);
 
                          as String;
         

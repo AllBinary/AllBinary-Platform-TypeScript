@@ -52,7 +52,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class ItemView
 public constructor (itemInterface: OrderItemInterface, vector: Vector){
 
             super();
-            var itemInterface = itemInterface
+        var itemInterface = itemInterface
 var vector = vector
 this.itemInterface= itemInterface;
     

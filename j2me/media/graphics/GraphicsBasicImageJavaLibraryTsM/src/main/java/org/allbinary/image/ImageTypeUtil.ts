@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class ImageTypeUtil
 private constructor (){
 
             super();
-            list.add(JPG);
+        list.add(JPG);
     
 list.add(GIF);
     
@@ -92,13 +95,13 @@ mediaFileType= mediaFileType!.lowercase();
 
 
                         for (
-    var index: number = list.size() -1;
+    var index: number = this.list.size() -1;
         
         
 index >= 0; index--)
         {
 
-    var name: string = list.get(index);
+    var name: string = this.list.get(index);
 
                          as String;
         

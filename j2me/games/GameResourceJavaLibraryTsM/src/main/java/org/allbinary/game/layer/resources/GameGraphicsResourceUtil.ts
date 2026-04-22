@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ export class GameGraphicsResourceUtil
 public constructor (){
 
             super();
-            
+        
         try {
             this.name= this.getString();
     
@@ -233,7 +236,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS)
                         
                                     {
-                                    stringBuffer!.append(SPRITE);
+                                    stringBuffer!.append(this.SPRITE);
     
 
                                     }
@@ -242,9 +245,9 @@ stringBuffer!.delete(0, stringBuffer!.length());
                         if(graphicsFeature == graphicsFeatureFactory!.SPRITE_QUARTER_ROTATION_GRAPHICS)
                         
                                     {
-                                    stringBuffer!.append(QUARTER);
+                                    stringBuffer!.append(this.QUARTER);
     
-stringBuffer!.append(SPRITE);
+stringBuffer!.append(this.SPRITE);
     
 
                                     }

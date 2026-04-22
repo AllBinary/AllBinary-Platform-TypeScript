@@ -39,12 +39,17 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MeteredGameObjectInterface } from "./MeteredGameObjectInterface.js";
+
 import { GraphicsAnalysisUtil } from "./GraphicsAnalysisUtil.js";
 
 export class MeteredGameObject
@@ -84,7 +89,7 @@ export class MeteredGameObject
 public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object){
 
             super();
-            var bufferedImage = bufferedImage
+        var bufferedImage = bufferedImage
 var minX = minX
 var maxX = maxX
 var y = y
@@ -210,7 +215,7 @@ this.dropping= dropping;
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(RATIOS_LABEL);
+stringBuffer!.append(this.RATIOS_LABEL);
     
 
 
@@ -237,13 +242,13 @@ stringBuffer!.append(this.getRatios()[index]!.toString());
 
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(IS_GOOD_LABEL);
+stringBuffer!.append(this.IS_GOOD_LABEL);
     
 stringBuffer!.appendboolean(this.isGood());
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(IS_DROPPPING_LABEL);
+stringBuffer!.append(this.IS_DROPPPING_LABEL);
     
 stringBuffer!.appendboolean(this.isDropping());
     

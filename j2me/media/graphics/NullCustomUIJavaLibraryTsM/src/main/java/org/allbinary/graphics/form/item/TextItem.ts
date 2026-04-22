@@ -20,7 +20,10 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
 
-        
+
+
+
+
 
 
 
@@ -28,16 +31,15 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
         
 import { CustomCustomItem } from "./CustomCustomItem.js";
 
+import { CustomItemInterface } from "./CustomItemInterface.js";
+
 import { StringComponent } from "./StringComponent.js";
 
 export class TextItem extends CustomCustomItem implements CustomItemInterface {
         
-public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(label, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var label = label
+public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(label, backgroundBasicColor, foregroundBasicColor);
+                    var label = label
 var layout = layout
 var altText = altText
 var backgroundBasicColor = backgroundBasicColor

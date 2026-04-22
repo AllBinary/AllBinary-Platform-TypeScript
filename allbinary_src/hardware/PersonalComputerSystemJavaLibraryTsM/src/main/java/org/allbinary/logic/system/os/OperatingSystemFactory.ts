@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class OperatingSystemFactory
 private constructor (){
 
             super();
-            }
+        }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 

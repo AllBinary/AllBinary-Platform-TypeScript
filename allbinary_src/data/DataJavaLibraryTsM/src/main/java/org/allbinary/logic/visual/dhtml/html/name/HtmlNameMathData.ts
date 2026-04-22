@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class HtmlNameMathData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public EQUALS: string = "_EQUALS_";

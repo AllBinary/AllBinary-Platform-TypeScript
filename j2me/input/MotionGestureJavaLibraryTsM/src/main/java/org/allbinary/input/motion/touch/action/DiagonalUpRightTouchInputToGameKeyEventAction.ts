@@ -37,7 +37,10 @@ import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class DiagonalUpRightTouchInputToGameKeyEventAction extends GameKeyComple
     
 }
 
-private constructor ()                        
-
-                            : super("Diagonal Up Right Action", TouchMotionGestureFactory.getInstance()!.DIAGONAL_UP_RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()){
-
-            super();
-            
+private constructor (){
+            super("Diagonal Up Right Action", TouchMotionGestureFactory.getInstance()!.DIAGONAL_UP_RIGHT, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

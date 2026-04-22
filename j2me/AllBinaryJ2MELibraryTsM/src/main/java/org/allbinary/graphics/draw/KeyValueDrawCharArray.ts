@@ -37,7 +37,10 @@ import { CharArrayFactory } from "../../../../org/allbinary/logic/java/character
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,11 +67,11 @@ export class KeyValueDrawCharArray
 public constructor (label: string, x: number){
 
             super();
-            var label = label
+        var label = label
 var x = x
 this.LABEL= label;
     
-this.labelWidth= MyFont.getInstance()!.stringWidth(LABEL) -LABEL.length;
+this.labelWidth= MyFont.getInstance()!.stringWidth(this.LABEL) -this.LABEL.length;
     
 this.labelX= x;
     

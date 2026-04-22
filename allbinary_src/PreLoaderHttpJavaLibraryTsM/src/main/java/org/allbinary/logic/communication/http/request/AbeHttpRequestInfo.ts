@@ -48,7 +48,10 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class AbeHttpRequestInfo
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
@@ -123,7 +126,7 @@ this.requestedFilePath= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoD
 public constructor (httpServletRequest: HttpServletRequest){
 
             super();
-            var httpServletRequest = httpServletRequest
+        var httpServletRequest = httpServletRequest
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         

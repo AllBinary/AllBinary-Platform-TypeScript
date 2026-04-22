@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class SolarisOperatingSystemFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getOperatingSystemInstance(): GenericOperatingSystem{

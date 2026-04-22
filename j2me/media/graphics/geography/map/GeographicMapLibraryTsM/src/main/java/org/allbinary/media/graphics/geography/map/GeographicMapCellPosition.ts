@@ -37,7 +37,10 @@ import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFact
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ export class GeographicMapCellPosition extends CellPosition {
     private point: GPoint
 
     private midPoint: GPoint
-public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number)                        
-
-                            : super(column, row, columns, rows){
-
-            super();
-            var column = column
+public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number){
+            super(column, row, columns, rows);
+                    var column = column
 var row = row
 var columns = columns
 var rows = rows
@@ -84,7 +84,7 @@ var height = height
     
 this.point= pointFactory!.getInstance(x, y);
     
-this.midPoint= pointFactory!.getInstance(x +(width shr 1), y +(height shr 1));
+this.midPoint= pointFactory!.getInstance(x +(width>>1), y +(height>>1));
     
 }
 

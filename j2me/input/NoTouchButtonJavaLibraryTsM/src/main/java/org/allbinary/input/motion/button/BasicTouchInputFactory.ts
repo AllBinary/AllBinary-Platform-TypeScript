@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -133,32 +136,32 @@ export class BasicTouchInputFactory
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
 
-                        if(!initialized)
+                        if(!this.initialized)
                         
                                     {
-                                    initialized= true;
+                                    this.initialized= true;
     
-list.add(UP);
+this.list.add(this.UP);
     
-list.add(LEFT);
+this.list.add(this.LEFT);
     
-list.add(RIGHT);
+this.list.add(this.RIGHT);
     
-list.add(DOWN);
+this.list.add(this.DOWN);
     
-list.add(SPECIAL_BUTTON_TWO);
+this.list.add(SPECIAL_BUTTON_TWO);
     
-list.add(SPECIAL_BUTTON_FOUR);
+this.list.add(SPECIAL_BUTTON_FOUR);
     
-list.add(SPECIAL_BUTTON_THREE);
+this.list.add(SPECIAL_BUTTON_THREE);
     
-list.add(SPECIAL_BUTTON_ONE);
+this.list.add(SPECIAL_BUTTON_ONE);
     
-list.add(SPECIAL_BUTTON_FIVE);
+this.list.add(SPECIAL_BUTTON_FIVE);
     
-list.add(SPECIAL_BUTTON_SIX);
+this.list.add(SPECIAL_BUTTON_SIX);
     
-this.updateAll(list, inputToGameKeyMapping);
+this.updateAll(this.list, inputToGameKeyMapping);
     
 CancelTouchButtonInputFactory.getInstance();
     

@@ -23,7 +23,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,11 +57,11 @@ export class PlacedLayerFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public clear(){
-list.clear();
+this.list.clear();
     
 }
 
@@ -84,7 +87,7 @@ list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getRandom(list);
+                        return this.basicArrayListUtil!.getRandom(this.list);
 
                          as AllBinaryLayerFactoryInterface;
     
@@ -93,7 +96,7 @@ list.clear();
 
     public add(layerInterfaceFactoryInterface: AllBinaryLayerFactoryInterface){
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-list.add(layerInterfaceFactoryInterface);
+this.list.add(layerInterfaceFactoryInterface);
     
 }
 

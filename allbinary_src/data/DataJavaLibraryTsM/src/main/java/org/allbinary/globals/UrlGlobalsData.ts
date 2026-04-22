@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class UrlGlobalsData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

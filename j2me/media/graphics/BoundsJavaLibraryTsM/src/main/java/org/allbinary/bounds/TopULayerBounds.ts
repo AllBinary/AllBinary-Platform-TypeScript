@@ -31,7 +31,10 @@ import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ import { BoundsVisitorInterface } from "./BoundsVisitorInterface.js";
 
 export class TopULayerBounds extends LayerBounds {
         
-public constructor (rectangle: Rectangle)                        
-
-                            : super(rectangle){
-
-            super();
-            var rectangle = rectangle
+public constructor (rectangle: Rectangle){
+            super(rectangle);
+                    var rectangle = rectangle
 
 
                             //For kotlin this is before the body of the constructor.

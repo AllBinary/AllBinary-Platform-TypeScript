@@ -85,7 +85,10 @@ import { InventoryViewSearchInterface } from "../views/admin/inventory/listings/
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class InventoryHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 this.response= pageContext!.getResponse();
 
@@ -182,7 +185,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 
         try {
             
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(searchRequest)!;
+    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
         
         
 ;
@@ -271,7 +274,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
                                     }
                                 
 
-    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(searchRequest)!;
+    var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
         
         
 ;

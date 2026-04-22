@@ -40,7 +40,10 @@ import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFile
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,24 +51,18 @@ import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFile
         
 export class AbFileOutputStream extends FileOutputStream {
         
-public constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+public constructor (name: string){
+            super(name);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (name: string, append: boolean)                        
-
-                            : super(name, append){
-
-            super();
-            var name = name
+public constructor (name: string, append: boolean){
+            super(name, append);
+                    var name = name
 var append = append
 
 
@@ -73,24 +70,18 @@ var append = append
                     
 }
 
-public constructor (file: AbFile)                        
-
-                            : super(AbFileNativeUtil.get(file)){
-
-            super();
-            var file = file
+public constructor (file: AbFile){
+            super(AbFileNativeUtil.get(file));
+                    var file = file
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (file: AbFile, append: boolean)                        
-
-                            : super(AbFileNativeUtil.get(file), append){
-
-            super();
-            var file = file
+public constructor (file: AbFile, append: boolean){
+            super(AbFileNativeUtil.get(file), append);
+                    var file = file
 var append = append
 
 

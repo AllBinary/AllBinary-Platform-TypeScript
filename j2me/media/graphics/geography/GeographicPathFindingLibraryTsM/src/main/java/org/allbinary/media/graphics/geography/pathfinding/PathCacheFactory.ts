@@ -39,7 +39,10 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class PathCacheFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getSize(): number{
@@ -139,7 +142,7 @@ this.hashtable.clear();
                                 )
                         
                                     {
-                                    listCanBeNull= basicArrayListUtil!.getImmutableInstance();
+                                    listCanBeNull= this.basicArrayListUtil!.getImmutableInstance();
     
 
                                     }

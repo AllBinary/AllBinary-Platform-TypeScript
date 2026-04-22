@@ -40,7 +40,10 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ var extra = extra
 public constructor (gameSkillType: GameSkillType, extra: string, time: number){
 
             super();
-            var gameSkillType = gameSkillType
+        var gameSkillType = gameSkillType
 var extra = extra
 var time = time
 this.setGameSkillType(gameSkillType);
@@ -194,19 +197,19 @@ this.vector.add(gameSkillPropertyInterface);
         
 ;
     
-stringBuffer!.append(GAME_SKILL_LABEL);
+stringBuffer!.append(this.GAME_SKILL_LABEL);
     
 stringBuffer!.append(this.getGameSkillType()!.toString());
     
 stringBuffer!.append(commonSeps!.SPACE);
     
-stringBuffer!.append(EXTRA_LABEL);
+stringBuffer!.append(this.EXTRA_LABEL);
     
 stringBuffer!.append(this.getExtra());
     
 stringBuffer!.append(commonSeps!.SPACE);
     
-stringBuffer!.append(TIME_LABEL);
+stringBuffer!.append(this.TIME_LABEL);
     
 stringBuffer!.appendlong(this.getTime());
     

@@ -43,12 +43,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UserEmailConfigurationInterface } from "./UserEmailConfigurationInterface.js";
+
 export class UserEmailConfiguration
             extends Object
          implements UserEmailConfigurationInterface {
@@ -66,7 +71,7 @@ export class UserEmailConfiguration
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -82,7 +87,7 @@ this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration()
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

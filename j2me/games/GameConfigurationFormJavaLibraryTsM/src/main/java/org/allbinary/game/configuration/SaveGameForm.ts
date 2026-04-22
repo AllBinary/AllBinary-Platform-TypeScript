@@ -46,7 +46,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,12 +89,9 @@ FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBa
     
 }
 
-private constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(commandListener, title, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-            var commandListener = commandListener
+private constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+                    var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor

@@ -46,7 +46,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
-public constructor (categoryInterface: StoreThemeCategoryInterface)                        
-
-                            : super(categoryInterface as StoreThemeCategoryInterface){
-
-            super();
-                //var categoryInterface = categoryInterface
+public constructor (categoryInterface: StoreThemeCategoryInterface){
+            super(categoryInterface as StoreThemeCategoryInterface);
+                        //var categoryInterface = categoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

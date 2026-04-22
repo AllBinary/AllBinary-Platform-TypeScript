@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../../../org/allbinary/util/Basic
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-                //var geographicMapInterface = geographicMapInterface
+            //var geographicMapInterface = geographicMapInterface
     //var edgeMinimum = edgeMinimum
     //var minPathWeight = minPathWeight
     //var maxPathWeight = maxPathWeight

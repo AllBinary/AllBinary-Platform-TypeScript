@@ -82,7 +82,10 @@ import { StringValidationUtil } from "../../org/allbinary/logic/string/StringVal
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class UserHelper extends Table {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.hashMap= hashMap;
     

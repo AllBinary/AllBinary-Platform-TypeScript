@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ export class AdminEmailInfo extends BasicEmailInfo {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (subject: string, textBody: string)                        
-
-                            : super(subject, textBody){
-
-            super();
-            var subject = subject
+public constructor (subject: string, textBody: string){
+            super(subject, textBody);
+                    var subject = subject
 var textBody = textBody
 
 

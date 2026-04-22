@@ -82,7 +82,10 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,7 +104,7 @@ export class TitleBodyValidation extends Validation implements DomNodeInterface 
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -125,7 +128,7 @@ this.titleValidation= new TitleNotRequiredValidation();
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -196,7 +199,7 @@ this.titleValidation= new TitleNotRequiredValidation(titleNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

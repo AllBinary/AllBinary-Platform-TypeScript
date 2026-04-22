@@ -49,7 +49,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,35 +68,26 @@ export class TitleNotRequiredValidation extends TitleView implements ValidationI
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (node: Node)                        
-
-                            : super(node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (hashMap: HashMap<any, any>)                        
-
-                            : super(hashMap){
-
-            super();
-            var hashMap = hashMap
+public constructor (hashMap: HashMap<any, any>){
+            super(hashMap);
+                    var hashMap = hashMap
 
 
                             //For kotlin this is before the body of the constructor.

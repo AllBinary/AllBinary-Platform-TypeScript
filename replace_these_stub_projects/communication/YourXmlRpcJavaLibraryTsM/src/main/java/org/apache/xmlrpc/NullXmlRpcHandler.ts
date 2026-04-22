@@ -34,12 +34,17 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { XmlRpcHandler } from "./XmlRpcHandler.js";
+
 export class NullXmlRpcHandler
             extends Object
          implements XmlRpcHandler {

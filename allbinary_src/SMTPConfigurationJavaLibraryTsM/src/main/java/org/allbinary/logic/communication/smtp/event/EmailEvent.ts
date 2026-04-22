@@ -37,7 +37,10 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class EmailEvent extends EventObject {
     private userEmailEventNameData: UserEmailEventNameData
 
     private attempts: number= 0
-public constructor (emailEventHandler: any = {}, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number)                        
-
-                            : super(emailEventHandler){
-
-            super();
-            var emailEventHandler = emailEventHandler
+public constructor (emailEventHandler: any = {}, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number){
+            super(emailEventHandler);
+                    var emailEventHandler = emailEventHandler
 var userEmailEventNameData = userEmailEventNameData
 var emailInfo = emailInfo
 var attempts = attempts

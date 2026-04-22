@@ -49,7 +49,10 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class StoreCustomizerComponentUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

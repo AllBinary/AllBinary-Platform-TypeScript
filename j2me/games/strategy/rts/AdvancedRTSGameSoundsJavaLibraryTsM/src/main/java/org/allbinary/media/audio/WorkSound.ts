@@ -27,7 +27,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class WorkSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/work.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/work.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

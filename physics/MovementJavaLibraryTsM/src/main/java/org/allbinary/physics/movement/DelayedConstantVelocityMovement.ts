@@ -43,7 +43,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ export class DelayedConstantVelocityMovement extends BasicConstantVelocityMoveme
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(60);
         
         
-public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties)                        
-
-                            : super(basicDecimal, velocityProperties){
-
-            super();
-            var basicDecimal = basicDecimal
+public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
+            super(basicDecimal, velocityProperties);
+                    var basicDecimal = basicDecimal
 var velocityProperties = velocityProperties
 
 
@@ -83,7 +83,7 @@ var otherAngle = otherAngle
     public process(layer: AllBinaryGameLayer){
 var layer = layer
 
-                        if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
+                        if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
                                     super.process(layer);

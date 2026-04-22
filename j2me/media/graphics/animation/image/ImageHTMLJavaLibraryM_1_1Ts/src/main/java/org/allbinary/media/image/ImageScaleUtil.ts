@@ -52,7 +52,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class ImageScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -165,7 +168,7 @@ private constructor (){
     //var scaleX = scaleX
     //var scaleY = scaleY
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance((originalImage!.getWidth() *scaleX).toInt(), (originalImage!.getHeight() *scaleY).toInt())!;
+    var image: Image = ImageCreationUtil.getInstance()!.getInstance((originalImage!.getWidth() *scaleX), (originalImage!.getHeight() *scaleY))!;
         
         
 ;

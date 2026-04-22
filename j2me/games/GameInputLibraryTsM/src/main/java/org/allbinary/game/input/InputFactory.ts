@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class InputFactory
 private constructor (){
 
             super();
-            
+        
     var size: number = inputIntegerArray!.length
                 ;
         
@@ -114,7 +117,7 @@ private constructor (){
         
 index < size; index++)
         {
-inputIntegerArray[index]= NO_INPUT;
+this.inputIntegerArray[index]= this.NO_INPUT;
     
 }
 
@@ -141,7 +144,7 @@ var id = id
                                     }
                                 
 
-                        if(id > inputIntegerArray!.length)
+                        if(id > this.inputIntegerArray!.length)
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().

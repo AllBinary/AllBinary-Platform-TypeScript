@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class InputAutomationServiceFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getService(bundle: Bundle, registration: ServiceRegistration): any{

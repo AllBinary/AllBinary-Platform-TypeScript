@@ -31,7 +31,10 @@ import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStr
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStr
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");

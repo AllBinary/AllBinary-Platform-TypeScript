@@ -34,7 +34,10 @@ import { Replace } from "../../../../../../org/allbinary/logic/string/regex/repl
 
 
 
-        
+
+
+
+
 
 
 
@@ -169,7 +172,7 @@ var end = end
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

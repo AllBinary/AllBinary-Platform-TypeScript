@@ -82,7 +82,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,7 +116,7 @@ export class MotionRectanglesImageInputOutput
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -245,7 +248,7 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer2!.toString
 this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString(), this, commonStrings!.SAVE);
     
 
-    var bufferedImageCacheables: BufferedImageCacheable[] = new Array(NUMBER_OF_IMAGES);
+    var bufferedImageCacheables: BufferedImageCacheable[] = new Array(this.NUMBER_OF_IMAGES);
         
         
 ;
@@ -282,7 +285,7 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString
     var index: number = 0;
         
         
-index < NUMBER_OF_IMAGES; index++)
+index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo);
 
@@ -293,7 +296,7 @@ bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo);
 bufferedImageCacheables[0]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData());
     
 
-                        if(NUMBER_OF_IMAGES > 1)
+                        if(this.NUMBER_OF_IMAGES > 1)
                         
                                     {
                                     bufferedImageCacheables[1]!.getBufferedImage()!.setData(imageComparisonInfo!.getBufferedImages()[1]!.getData());
@@ -305,7 +308,7 @@ bufferedImageCacheables[0]!.getBufferedImage()!.setData(imageComparisonInfo!.get
     var bufferedImageGraphicsArray: Graphics[]
 ;
     
-bufferedImageGraphicsArray= new Array(NUMBER_OF_IMAGES);
+bufferedImageGraphicsArray= new Array(this.NUMBER_OF_IMAGES);
     
 
 
@@ -315,7 +318,7 @@ bufferedImageGraphicsArray= new Array(NUMBER_OF_IMAGES);
     var index: number = 0;
         
         
-index < NUMBER_OF_IMAGES; index++)
+index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedImage()!.getGraphics();
     
@@ -365,7 +368,7 @@ index2 < size; index2++)
     var index: number = 0;
         
         
-index < NUMBER_OF_IMAGES; index++)
+index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]!.setColor(Color.ORANGE);
     
@@ -382,7 +385,7 @@ bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.
 ;
     
 
-                        if(NUMBER_OF_IMAGES > 1)
+                        if(this.NUMBER_OF_IMAGES > 1)
                         
                                     {
                                     imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer1!.toString(), bufferedImageCacheables[1]!.getBufferedImage());
@@ -393,7 +396,7 @@ bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.
 imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer2!.toString(), bufferedImageCacheables[0]!.getBufferedImage());
     
 
-                        if(NUMBER_OF_IMAGES > 2)
+                        if(this.NUMBER_OF_IMAGES > 2)
                         
                                     {
                                     imagePersistanceUtil!.saveWithImageIO(filePathStringBuffer3!.toString(), bufferedImageCacheables[2]!.getBufferedImage());

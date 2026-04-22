@@ -46,7 +46,10 @@ import { FileItem } from "../../../../../../../../../org/apache/commons/fileuplo
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class LogoImageFileUtil
 public constructor (imageAbPath: AbPath, imageFile: string){
 
             super();
-                //var imageAbPath = imageAbPath
+            //var imageAbPath = imageAbPath
     //var imageFile = imageFile
 this.fileName= imageFile;
     
@@ -81,7 +84,7 @@ this.imageFileAbPath= imageAbPath;
     public saveFiles(fileItem: FileItem){
     //var fileItem = fileItem
 
-                        if(fileName == 
+                        if(this.fileName == 
                                     null
                                 )
                         
@@ -107,7 +110,7 @@ this.imageFileAbPath= imageAbPath;
                                     }
                                 
 
-    var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +fileName);
+    var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +this.fileName);
         
         
 ;

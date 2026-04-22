@@ -43,12 +43,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
 
 export class CommandRunnable
@@ -70,7 +75,7 @@ export class CommandRunnable
 public constructor (commandFormInputProcessor: CommandFormInputProcessor, command: Command){
 
             super();
-            var commandFormInputProcessor = commandFormInputProcessor
+        var commandFormInputProcessor = commandFormInputProcessor
 var command = command
 this.commandFormInputProcessor= commandFormInputProcessor;
     
@@ -96,7 +101,7 @@ this.command= command;
         
 ;
     
-commandListener!.commandAction(command, canvas);
+commandListener!.commandAction(this.command, canvas);
     
 this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     

@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class FileUtil2
 private constructor (){
 
             super();
-            }
+        }
 
 
     public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{

@@ -31,7 +31,10 @@ import { WorkFlowHelperFactory } from "../../admin/taghelpers/WorkFlowHelperFact
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class WorkFlowTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new WorkFlowHelperFactory());
+        this.setTagHelperFactory(new WorkFlowHelperFactory());
     
 this.setTagRequestHelperFactory(new WorkFlowHelperFactory());
     

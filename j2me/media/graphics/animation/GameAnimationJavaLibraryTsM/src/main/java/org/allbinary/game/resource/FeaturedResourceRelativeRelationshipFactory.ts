@@ -49,7 +49,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourc
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
@@ -127,7 +130,7 @@ index < size; index++)
 ;
     
 
-                        if(list != basicArrayListUtil!.getImmutableInstance())
+                        if(list != this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
                                     

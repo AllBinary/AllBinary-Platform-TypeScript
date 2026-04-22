@@ -46,7 +46,10 @@ import { ScreenCaptureImagesWorker } from "../../../../../../org/allbinary/input
 
 
 
-        
+
+
+
+
 
 
 
@@ -128,7 +131,7 @@ index < size; index++)
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

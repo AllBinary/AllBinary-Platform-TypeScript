@@ -43,7 +43,10 @@ import { ImageJ2MEScaleUtil } from "../../../org/allbinary/media/image/ImageJ2ME
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,13 +92,13 @@ export class AnimationFactoryImageScaleUtil
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth.toFloat()) /(width.toFloat());
+    var scaleX: number = (scaleWidth) /(width);
         
         
 ;
     
 
-    var scaleY: number = (scaleHeight.toFloat()) /(height.toFloat());
+    var scaleY: number = (scaleHeight) /(height);
         
         
 ;
@@ -110,7 +113,7 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            scaledImage= this.imageScaleUtil!.scale(image, (scaleX *width).toInt(), (scaleY *height).toInt());
+                            scaledImage= this.imageScaleUtil!.scale(image, (scaleX *width), (scaleY *height));
     
 
                         }
@@ -154,13 +157,13 @@ export class AnimationFactoryImageScaleUtil
 ;
     
 
-    var scaleX: number = (scaleProperties!.scaleWidth.toFloat()) /(animationFactoryInitializationVisitor!.width.toFloat());
+    var scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);
         
         
 ;
     
 
-    var scaleY: number = (scaleProperties!.scaleHeight.toFloat()) /(animationFactoryInitializationVisitor!.height.toFloat());
+    var scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);
         
         
 ;
@@ -173,9 +176,9 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            animationFactoryInitializationVisitor!.dx= (animationFactoryInitializationVisitor!.originalDx *scaleX).toInt();
+                            animationFactoryInitializationVisitor!.dx= (animationFactoryInitializationVisitor!.originalDx *scaleX);
     
-animationFactoryInitializationVisitor!.dy= (animationFactoryInitializationVisitor!.originalDy *scaleY).toInt();
+animationFactoryInitializationVisitor!.dy= (animationFactoryInitializationVisitor!.originalDy *scaleY);
     
 
                         }

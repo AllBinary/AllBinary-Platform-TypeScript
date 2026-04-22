@@ -64,7 +64,10 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class SpecialItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -111,21 +114,21 @@ this.getFormData();
 
 
     public getFormData(){
-this.id= request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(BasicItemData.ID);
     
-this.number= request.getParameter(BasicItemData.NUMBER);
+this.number= this.request.getParameter(BasicItemData.NUMBER);
     
-this.enabled= request.getParameter(EntryData.getInstance()!.ENABLE);
+this.enabled= this.request.getParameter(EntryData.getInstance()!.ENABLE);
     
-this.startTime= request.getParameter(SpecialItemData.START_TIME);
+this.startTime= this.request.getParameter(SpecialItemData.START_TIME);
     
-this.endTime= request.getParameter(SpecialItemData.END_TIME);
+this.endTime= this.request.getParameter(SpecialItemData.END_TIME);
     
-this.price= request.getParameter(BasicItemData.PRICE);
+this.price= this.request.getParameter(BasicItemData.PRICE);
     
-this.timeEntered= request.getParameter(EntryData.getInstance()!.TIMECREATED);
+this.timeEntered= this.request.getParameter(EntryData.getInstance()!.TIMECREATED);
     
-this.lastModified= request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
+this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFIED);
     
 }
 
@@ -214,7 +217,7 @@ values.add(time);
 SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +id +" into items table";
+    var success: string = "Successfully inserted " +this.id +" into items table";
         
         
 ;
@@ -239,7 +242,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
 } catch(e) 
             {
 
-    var error: string = "Failed to insert " +id +" into items table";
+    var error: string = "Failed to insert " +this.id +" into items table";
         
         
 ;
@@ -267,7 +270,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
     public delete(): string{
 
         try {
-            SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.delete(id);
+            SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.delete(this.id);
     
 
     var success: string = "Successfully deleted";
@@ -342,7 +345,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
+                            append(this.id)!.append(CommonSeps.getInstance()!.SPACE)!.append(success)!.toString(), this, "update()");
     
 
                                     }
@@ -358,7 +361,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
 } catch(e) 
             {
 
-    var error: string = "Failed to update: " +id;
+    var error: string = "Failed to update: " +this.id;
         
         
 ;

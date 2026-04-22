@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class Line
 public constructor (p1: GPoint, p2: GPoint){
 
             super();
-            var p1 = p1
+        var p1 = p1
 var p2 = p2
 this.p1= PointFactory.getInstance()!.ZERO_ZERO;
     
@@ -77,13 +80,13 @@ this.setP2(p2);
 
 
     update(){
-deltaX= getP1()!.getX();
+this.deltaX= getP1()!.getX();
 
-                        .toDouble() -getP2()!.getX();
+                         -getP2()!.getX();
     
-deltaY= getP1()!.getY();
+this.deltaY= getP1()!.getY();
 
-                        .toDouble() -getP2()!.getY();
+                         -getP2()!.getY();
     
 }
 

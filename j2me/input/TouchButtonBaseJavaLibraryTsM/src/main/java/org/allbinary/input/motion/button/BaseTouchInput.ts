@@ -37,7 +37,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class BaseTouchInput
  constructor (){
 
             super();
-            }
+        }
 
 
     public getList(): BasicArrayList{

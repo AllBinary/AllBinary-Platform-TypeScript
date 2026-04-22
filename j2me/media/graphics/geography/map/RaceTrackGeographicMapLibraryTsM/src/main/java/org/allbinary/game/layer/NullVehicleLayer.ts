@@ -49,12 +49,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { VehicleLayerInterface } from "./VehicleLayerInterface.js";
+
 import { VehicleProperties } from "./VehicleProperties.js";
 
 export class NullVehicleLayer

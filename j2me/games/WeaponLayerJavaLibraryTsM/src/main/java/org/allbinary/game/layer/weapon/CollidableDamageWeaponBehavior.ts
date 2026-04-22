@@ -58,7 +58,10 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class CollidableDamageWeaponBehavior extends CollidableDestroyableDamagea
     private collided: boolean= false
 
     collisionHelper: CollisionHelper
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-            var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                    var ownerLayer = ownerLayer
 var collidable = collidable
 
 
@@ -164,7 +164,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                         
                                     {
                                     
-                        if(layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
+                        if(this.layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
                         
                                     {
                                     

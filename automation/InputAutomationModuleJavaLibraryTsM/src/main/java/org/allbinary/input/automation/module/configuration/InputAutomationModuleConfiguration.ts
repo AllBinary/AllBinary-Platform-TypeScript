@@ -85,7 +85,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,12 +115,12 @@ export class InputAutomationModuleConfiguration
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, node: Node){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var node = node
 this.init(abeClientInformation, node);
     
@@ -126,7 +129,7 @@ this.init(abeClientInformation, node);
 public constructor (abeClientInformation: AbeClientInformationInterface, name: string, className: string){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var name = name
     //var className = className
 this.setName(name);
@@ -140,7 +143,7 @@ this.init(abeClientInformation);
 public constructor (inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
 
             super();
-            var inputAutomationModuleInterface = inputAutomationModuleInterface
+        var inputAutomationModuleInterface = inputAutomationModuleInterface
 this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
     
 this.setClassName(this.inputAutomationModuleInterface!..constructor.name.toString()!);

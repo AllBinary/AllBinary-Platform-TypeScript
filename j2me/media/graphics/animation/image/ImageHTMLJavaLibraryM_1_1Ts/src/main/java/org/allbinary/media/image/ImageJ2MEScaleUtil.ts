@@ -52,7 +52,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class ImageJ2MEScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

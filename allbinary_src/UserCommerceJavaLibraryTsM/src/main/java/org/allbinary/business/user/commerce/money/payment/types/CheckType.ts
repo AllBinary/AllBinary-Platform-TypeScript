@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class CheckType
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

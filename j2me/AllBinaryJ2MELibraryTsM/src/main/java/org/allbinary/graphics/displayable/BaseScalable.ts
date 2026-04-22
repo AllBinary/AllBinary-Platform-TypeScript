@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ScalableListener } from "./ScalableListener.js";
+
 export class BaseScalable
             extends Object
          implements ScalableListener {
@@ -45,7 +50,7 @@ export class BaseScalable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 1.toFloat();
+                        return 1;
     
 }
 

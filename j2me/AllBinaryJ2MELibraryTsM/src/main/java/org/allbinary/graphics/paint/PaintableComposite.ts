@@ -31,7 +31,10 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class PaintableComposite extends Paintable {
 public constructor (paintableArray: PaintableInterface[]){
 
             super();
-                //var paintableArray = paintableArray
+            //var paintableArray = paintableArray
 this.paintableArray= paintableArray;
     
 }
@@ -59,7 +62,7 @@ this.paintableArray= paintableArray;
 
 
                         for (
-    var index: number = paintableArray!.length -1;
+    var index: number = this.paintableArray!.length -1;
         
         
 index >= 0; index--)
@@ -78,7 +81,7 @@ var graphics = graphics
 
 
                         for (
-    var index: number = paintableArray!.length -1;
+    var index: number = this.paintableArray!.length -1;
         
         
 index >= 0; index--)

@@ -91,7 +91,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
@@ -118,7 +121,7 @@ export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
         

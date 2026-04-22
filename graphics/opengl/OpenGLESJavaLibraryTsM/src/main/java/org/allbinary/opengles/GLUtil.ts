@@ -43,7 +43,10 @@ import { OpenGLCapabilities } from "../../../org/allbinary/graphics/opengles/Ope
 
 
 
-        
+
+
+
+
 
 
 
@@ -174,9 +177,9 @@ b.order(ByteOrder.nativeOrder());
 
         while(byteBuffer!.hasRemaining())
         {
-unsigned= byteBuffer!.get() and 0xFF;
+unsigned= byteBuffer!.get()&0xFF;
     
-v= (unsigned.toFloat()) /255f;
+v= (unsigned) /255f;
     
 buffer.put(v);
     
@@ -265,13 +268,13 @@ i < uvs.length; )
 ;
     
 
-    var ru: number = (du *cosA -dv *sinA).toFloat() +pivotU;
+    var ru: number = (du *cosA -dv *sinA) +pivotU;
         
         
 ;
     
 
-    var rv: number = (du *sinA +dv *cosA).toFloat() +pivotV;
+    var rv: number = (du *sinA +dv *cosA) +pivotV;
         
         
 ;

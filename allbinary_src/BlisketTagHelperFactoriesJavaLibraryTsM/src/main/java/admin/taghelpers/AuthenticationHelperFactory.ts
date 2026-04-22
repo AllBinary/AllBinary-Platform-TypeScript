@@ -43,7 +43,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class AuthenticationHelperFactory extends TagHelperFactory {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

@@ -73,7 +73,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ export class LogoValidation extends Validation implements DomNodeInterface {
 public constructor (){
 
             super();
-            this.isFile= false;
+        this.isFile= false;
     
 this.logoAbPath= 
                                         null
@@ -113,7 +116,7 @@ this.logoFile=
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.isFile= false;
     
 this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
@@ -125,7 +128,7 @@ this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, no
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.isFile= true;
     
 this.getFormData(hashMap);
@@ -274,7 +277,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
                                     }
                                 
 
-                        if(this.logoFileItem!.getSize() > fileData!.MAXIMAGEFILESIZE || logoFileItem!.getSize() < fileData!.MINIMAGEFILESIZE)
+                        if(this.logoFileItem!.getSize() > fileData!.MAXIMAGEFILESIZE || this.logoFileItem!.getSize() < fileData!.MINIMAGEFILESIZE)
                         
                                     {
                                     

@@ -34,7 +34,10 @@ import { FrictionData } from "../../../../../org/allbinary/game/physics/friction
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,14 +54,14 @@ export class CharacterFrictionProperties extends FrictionProperties {
 public constructor (airFriction: number, waterFriction: number, collisionFriction: number){
 
             super();
-            var airFriction = airFriction
+        var airFriction = airFriction
 var waterFriction = waterFriction
 var collisionFriction = collisionFriction
-AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
+this.AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
     
-COLLISION_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -collisionFriction;
+this.COLLISION_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -collisionFriction;
     
-WATER_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -waterFriction;
+this.WATER_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -waterFriction;
     
 }
 

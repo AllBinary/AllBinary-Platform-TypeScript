@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class LayerPlacer
 public constructor (layerInterfaceVisitor: LayerInterfaceVisitor, dimension: GPoint){
 
             super();
-                //var layerInterfaceVisitor = layerInterfaceVisitor
+            //var layerInterfaceVisitor = layerInterfaceVisitor
     //var dimension = dimension
 this.layerInterfaceVisitor= layerInterfaceVisitor;
     
@@ -186,7 +189,7 @@ z= point.getZ() +relativePoint!.getZ();
     
 layerInterface= layerInterfaceFactory!.getInstance(layerHashtable, x, y, z);
     
-layerInterfaceVisitor!.visit(layerInterface);
+this.layerInterfaceVisitor!.visit(layerInterface);
     
 }
 
@@ -220,13 +223,13 @@ layerInterfaceVisitor!.visit(layerInterface);
 ;
     
 
-    var x: number = ((dimension.getX() -width) /2);
+    var x: number = ((this.dimension.getX() -width) /2);
         
         
 ;
     
 
-    var y: number = ((dimension.getY() -height) /2);
+    var y: number = ((this.dimension.getY() -height) /2);
         
         
 ;
@@ -259,7 +262,7 @@ layerInterfaceVisitor!.visit(layerInterface);
 ;
     
 
-    var x: number = ((dimension.getX() -width) /2);
+    var x: number = ((this.dimension.getX() -width) /2);
         
         
 ;

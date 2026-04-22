@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,18 +80,18 @@ export class LayerManagerEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(layerManagerEventListener: LayerManagerEventListener){
     //var layerManagerEventListener = layerManagerEventListener
 
-                        if(!list.contains(layerManagerEventListener);
+                        if(!this.list.contains(layerManagerEventListener);
 
                         )
                         
                                     {
-                                    list.add(layerManagerEventListener);
+                                    this.list.add(layerManagerEventListener);
     
 
                                     }

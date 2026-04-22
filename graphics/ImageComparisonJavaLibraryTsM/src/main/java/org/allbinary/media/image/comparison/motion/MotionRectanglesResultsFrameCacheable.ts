@@ -34,7 +34,10 @@ import { CacheableInterface } from "../../../../../../org/allbinary/logic/util/c
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class MotionRectanglesResultsFrameCacheable
 public constructor (motionRectangles: MotionRectangles, frame: Long){
 
             super();
-            var motionRectangles = motionRectangles
+        var motionRectangles = motionRectangles
 var frame = frame
 this.frame= frame;
     

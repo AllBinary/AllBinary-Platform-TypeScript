@@ -67,7 +67,10 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class HeadingValidation extends Validation implements DomNodeInterface {
 public constructor (){
 
             super();
-            this.title= new TitleValidation();
+        this.title= new TitleValidation();
     
 this.logo= new LogoValidation();
     
@@ -97,7 +100,7 @@ this.logo= new LogoValidation();
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;
         
@@ -125,7 +128,7 @@ this.logo= new LogoValidation(logoNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.getFormData(hashMap);
     
 }

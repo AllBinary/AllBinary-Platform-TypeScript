@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
     private readonly frame: Long
 
     private motionRectangles: MotionRectangles
-public constructor (anyType: any = {}, frame: Long, motionRectangles: MotionRectangles)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, frame: Long, motionRectangles: MotionRectangles){
+            super(anyType);
+                    var anyType = anyType
 var frame = frame
 var motionRectangles = motionRectangles
 

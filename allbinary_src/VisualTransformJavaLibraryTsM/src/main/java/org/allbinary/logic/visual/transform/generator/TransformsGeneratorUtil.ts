@@ -49,7 +49,10 @@ import { TransformInfoObjectConfigInterface } from "../../../../../../org/allbin
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class TransformsGeneratorUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

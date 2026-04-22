@@ -82,7 +82,10 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -127,7 +130,7 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 public constructor (){
 
             super();
-            this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet");
+        this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet");
     
 }
 
@@ -153,14 +156,14 @@ public constructor (){
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(SETTING_)!.append(title)!.append(_DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+                            append(this.SETTING_)!.append(title)!.append(this._DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
     
 
                                     }
                                 
                         else {
                             this.logUtil!.putF(new StringMaker().
-                            append(SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+                            append(this.SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
     
 
                         }
@@ -250,7 +253,7 @@ var unconditional = unconditional
     
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
+            this.logUtil!.putF(this.commonStrings!.START, this, METHOD_NAME);
     
 PreLogUtil.put(Memory.getInfo(), this, METHOD_NAME);
     
@@ -260,7 +263,7 @@ this.setDestroyed(true);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
 }
 
@@ -283,7 +286,7 @@ this.hashtable= hashtable;
             
     public getStartStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "getStartStateHashtable");
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
 
 
@@ -297,7 +300,7 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Error::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
-this.logUtil!.putF(commonStrings!.START, this, "getStateHashtable");
+this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
     
 
 

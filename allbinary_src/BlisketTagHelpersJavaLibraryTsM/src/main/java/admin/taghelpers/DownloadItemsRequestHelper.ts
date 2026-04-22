@@ -58,7 +58,10 @@ import { DownloadableInventoryItemView } from "../../views/admin/inventory/downl
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class DownloadItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
     var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT);

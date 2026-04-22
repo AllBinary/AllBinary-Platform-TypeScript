@@ -31,7 +31,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class BasicColorArrayIndexer
 public constructor (basicColorArray: BasicColor[]){
 
             super();
-            var basicColorArray = basicColorArray
+        var basicColorArray = basicColorArray
 this.basicColorArray= basicColorArray;
     
 this.circularIndexUtil= CircularIndexUtil.getInstance(this.basicColorArray!.length);

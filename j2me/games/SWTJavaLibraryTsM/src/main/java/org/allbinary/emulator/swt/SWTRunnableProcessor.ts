@@ -31,7 +31,10 @@ import { Display } from "../../../../org/eclipse/swt/widgets/Display.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class SWTRunnableProcessor extends SWTProcessor {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public process(display: Display){

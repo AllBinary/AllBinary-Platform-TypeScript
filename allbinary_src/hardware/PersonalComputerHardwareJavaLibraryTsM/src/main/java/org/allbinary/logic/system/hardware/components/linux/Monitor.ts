@@ -34,7 +34,10 @@ import { MonitorInterface } from "../../../../../../../org/allbinary/logic/syste
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class Monitor
 public constructor (data: string){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }

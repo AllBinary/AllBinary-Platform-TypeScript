@@ -67,7 +67,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export class BasketRequestHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 this.propertiesHashMap= propertiesHashMap;
     
@@ -145,9 +148,9 @@ this.getFormData();
 
 
     getFormData(){
-this.id= request.getParameter(BasicItemData.ID);
+this.id= this.request.getParameter(BasicItemData.ID);
     
-this.num= request.getParameter(BasketData.ITEMTOTALINBASKET);
+this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
     
 }
 
@@ -156,9 +159,9 @@ this.num= request.getParameter(BasketData.ITEMTOTALINBASKET);
 
         try {
             
-                        if(id != 
+                        if(this.id != 
                                     null
-                                 && num != 
+                                 && this.num != 
                                     null
                                 )
                         
@@ -170,7 +173,7 @@ this.num= request.getParameter(BasketData.ITEMTOTALINBASKET);
 ;
     
 
-                        if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(id) == 
+                        if(InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.getItem(this.id) == 
                                     null
                                 )
                         
@@ -184,7 +187,7 @@ this.num= request.getParameter(BasketData.ITEMTOTALINBASKET);
 
                                     }
                                 
-basket.addItem(id, num);
+basket.addItem(this.id, num);
     
 
                                     }
@@ -232,7 +235,7 @@ basket.addItem(id, num);
 
         try {
             
-                        if(id != 
+                        if(this.id != 
                                     null
                                 )
                         
@@ -243,7 +246,7 @@ basket.addItem(id, num);
         
 ;
     
-basket.removeItem(id);
+basket.removeItem(this.id);
     
 
                                     }
@@ -297,12 +300,12 @@ basket.removeItem(id);
 ;
     
 
-                        if(id != 
+                        if(this.id != 
                                     null
                                  && num != 
                                     null
                                 )
-                        basket.adjustItem(id, num);
+                        basket.adjustItem(this.id, num);
 
                         
 

@@ -33,13 +33,18 @@ import { Hashtable } from "../../../../java/util/Hashtable.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicColor } from "./BasicColor.js";
+
+import { BasicColorFactory } from "./BasicColorFactory.js";
 
 export class BasicColorCacheFactory
             extends Object
@@ -66,12 +71,12 @@ export class BasicColorCacheFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
+this.hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
     
 }
 
@@ -80,7 +85,7 @@ hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
     public getInstance(integer: Integer): BasicColor{
     //var integer = integer
 
-    var basicColor: BasicColor = hashtable.get(integer as Object);
+    var basicColor: BasicColor = this.hashtable.get(integer as Object);
 
                          as BasicColor;
         
@@ -93,9 +98,9 @@ hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
                                 )
                         
                                     {
-                                    basicColor= new BasicColor(integer.toInt());
+                                    basicColor= BasicColorFactory.getInstance()!.createInstance(integer.toInt());
     
-hashtable.put(integer, basicColor);
+this.hashtable.put(integer, basicColor);
     
 
                                     }

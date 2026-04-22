@@ -34,12 +34,17 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaintableInterface } from "./PaintableInterface.js";
+
 export class Paintable
             extends Object
          implements PaintableInterface {

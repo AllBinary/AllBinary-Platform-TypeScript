@@ -36,7 +36,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class AngleIncrementInfo
 public constructor (angleIncrement: number){
 
             super();
-            var angleIncrement = angleIncrement
+        var angleIncrement = angleIncrement
 this.angleIncrement= angleIncrement;
     
 
@@ -86,7 +89,7 @@ this.DOWN_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.DOWN.ge
     
 this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue();
 
-                        .toInt());
+                        );
     
 this.LEFT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.LEFT.getValue() /this.angleIncrement);
     
@@ -105,7 +108,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frameUtil!.getFrameAngle(frame, this.angleIncrement.toInt());
+                        return frameUtil!.getFrameAngle(frame, this.angleIncrement);
 
                         ;
     
@@ -144,37 +147,37 @@ var angle = angle
 ;
     
 
-                        if(UP_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(this.UP_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= UP_FRAME;
+                                    closestDirection= this.UP_FRAME;
     
 
                                     }
                                 
 
-                        if(DOWN_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(this.DOWN_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= DOWN_FRAME;
+                                    closestDirection= this.DOWN_FRAME;
     
 
                                     }
                                 
 
-                        if(LEFT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(this.LEFT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= LEFT_FRAME;
+                                    closestDirection= this.LEFT_FRAME;
     
 
                                     }
                                 
 
-                        if(RIGHT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(this.RIGHT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
                         
                                     {
-                                    closestDirection= RIGHT_FRAME;
+                                    closestDirection= this.RIGHT_FRAME;
     
 
                                     }

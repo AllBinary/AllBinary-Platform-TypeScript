@@ -49,7 +49,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string{
@@ -128,7 +131,7 @@ private constructor (){
     
 stringBuffer!.append(this.getO(exception));
     
-stringBuffer!.append(SPECIAL_MESSAGE);
+stringBuffer!.append(this.SPECIAL_MESSAGE);
     
 stringBuffer!.append(specialMessage);
     
@@ -155,7 +158,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
         
 ;
     
-stringBuffer!.append(SPECIAL_MESSAGE);
+stringBuffer!.append(this.SPECIAL_MESSAGE);
     
 stringBuffer!.append(specialMessage);
     
@@ -181,15 +184,15 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
         
 ;
     
-stringBuffer!.append(TIME);
+stringBuffer!.append(this.TIME);
     
-stringBuffer!.append(timeStampUtil!.getAsString());
+stringBuffer!.append(this.timeStampUtil!.getAsString());
     
-stringBuffer!.append(CLASS_NAME);
+stringBuffer!.append(this.CLASS_NAME);
     
 stringBuffer!.append(className);
     
-stringBuffer!.append(FUNCTION_CALL);
+stringBuffer!.append(this.FUNCTION_CALL);
     
 stringBuffer!.append(functionName);
     
@@ -217,7 +220,7 @@ stringBuffer!.append(functionName);
     /*actual*/ public getO(exception: any = {}): string{
     //var exception = exception
 
-                        if(exception != nullUtil!.NULL_OBJECT)
+                        if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
                                     
@@ -226,7 +229,7 @@ stringBuffer!.append(functionName);
         
 ;
     
-stringBuffer!.append(LOG_ERROR);
+stringBuffer!.append(this.LOG_ERROR);
     
 
     var exceptionAsString: string = exception.toString()!;
@@ -246,24 +249,24 @@ stringBuffer!.append(LOG_ERROR);
                                     }
                                 
                         else {
-                            stringBuffer!.append(EMPTY);
+                            stringBuffer!.append(this.EMPTY);
     
 
                         }
                             
-stringBuffer!.append(STACK_TRACE);
+stringBuffer!.append(this.STACK_TRACE);
     
 
-                        if(exception != nullUtil!.NULL_OBJECT)
+                        if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(exceptionUtil!.getStackTrace(exception as Error));
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
     
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(stringUtil!.NULL_STRING);
+                            stringBuffer!.append(this.stringUtil!.NULL_STRING);
     
 
                         }

@@ -25,7 +25,10 @@ import { ViewGroup } from "../../../android/view/ViewGroup.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class ViewSwapper
 public constructor (activity: Activity, rootViewId: number){
 
             super();
-            var activity = activity
+        var activity = activity
 var rootViewId = rootViewId
 this.activity= activity;
     
@@ -87,7 +90,7 @@ this.topViewArray= topViewArray;
     public setMainView(id: number){
 var id = id
 
-    var viewGroup: ViewGroup = this.activity.findViewById(rootViewId);
+    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId);
 
                          as ViewGroup;
         

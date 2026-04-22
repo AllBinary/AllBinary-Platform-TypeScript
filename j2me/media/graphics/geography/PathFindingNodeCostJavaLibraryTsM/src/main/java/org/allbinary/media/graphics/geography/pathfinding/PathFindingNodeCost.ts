@@ -40,13 +40,18 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { PathFindingNode } from "./PathFindingNode.js";
+
+import { Comparable } from "./Comparable.js";
 
 import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 
@@ -63,12 +68,9 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
         
 
     public pathFindingNodeCostInfoP: PathFindingNodeCostInfo
-public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo)                        
-
-                            : super(parent, geographicMapCellPosition){
-
-            super();
-                //var parent = parent
+public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
+            super(parent, geographicMapCellPosition);
+                        //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition
     //var pathFindingNodeCostInfo = pathFindingNodeCostInfo
 
@@ -166,7 +168,7 @@ stringBuffer!.append(this.geographicMapCellPosition!.toString());
         {
 stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString());
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
 pathFindingNode= pathFindingNode!.parent as PathFindingNode;
     

@@ -31,7 +31,10 @@ import { MutableTreeNode } from "../../../../../../../javax/swing/tree/MutableTr
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { EventObject } from "./EventObject.js";
 
 export class MyGraphicItemEvent extends java.util.EventObject {
         
-public constructor (source: any = {})                        
-
-                            : super(source){
-
-            super();
-            var source = source
+public constructor (source: any = {}){
+            super(source);
+                    var source = source
 
 
                             //For kotlin this is before the body of the constructor.

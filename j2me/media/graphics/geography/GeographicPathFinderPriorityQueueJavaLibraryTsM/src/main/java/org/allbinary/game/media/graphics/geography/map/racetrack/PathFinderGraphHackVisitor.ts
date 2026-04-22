@@ -34,7 +34,10 @@ import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
 
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         
-public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number)                        
-
-                            : super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight){
-
-            super();
-                //var geographicMapInterface = geographicMapInterface
+public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
+            super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight);
+                        //var geographicMapInterface = geographicMapInterface
 var edgeMinimum = edgeMinimum
 var minPathWeight = minPathWeight
 var maxPathWeight = maxPathWeight

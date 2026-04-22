@@ -42,7 +42,10 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
 
-        
+
+
+
+
 
 
 
@@ -128,7 +131,7 @@ this.setPriority();
                         
                                     {
                                     
-    var distance: number = layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;
+    var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;
         
         
 ;

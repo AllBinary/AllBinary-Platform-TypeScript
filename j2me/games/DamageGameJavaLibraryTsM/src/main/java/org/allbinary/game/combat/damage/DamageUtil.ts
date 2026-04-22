@@ -40,7 +40,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class DamageUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

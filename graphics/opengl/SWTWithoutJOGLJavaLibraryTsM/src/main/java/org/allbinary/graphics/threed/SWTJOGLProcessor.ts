@@ -31,12 +31,17 @@ import { MIDlet } from "../../../../javax/microedition/midlet/MIDlet.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 export class SWTJOGLProcessor
             extends Object
          implements Runnable {

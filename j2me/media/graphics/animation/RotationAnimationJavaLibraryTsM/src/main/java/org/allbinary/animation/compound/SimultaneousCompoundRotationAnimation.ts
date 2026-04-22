@@ -52,7 +52,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class SimultaneousCompoundRotationAnimation extends RotationAnimation {
         
 
     private animationInterfaceArray: RotationAnimation[]
-public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationInterfaceArray = animationInterfaceArray
     //var animationBehavior = animationBehavior
 
 
@@ -360,7 +360,7 @@ this.animationInterfaceArray[index]!.adjustFrame(angle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterfaceArray;
+                        return this.animationInterfaceArray;
     
 }
 

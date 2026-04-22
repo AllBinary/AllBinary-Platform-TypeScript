@@ -46,7 +46,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ export class ImageArrayAnimationFactory
     private readonly imageArray: Image[]
 
     private readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (imageArray: Image[], dx: number, dy: number)                        
-
-                            : this(imageArray, dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], dx: number, dy: number){
+            this(imageArray, dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var imageArray = imageArray
     //var dx = dx
     //var dy = dy
 
@@ -82,12 +82,9 @@ public constructor (imageArray: Image[], dx: number, dy: number)
                     
 }
 
-public constructor (imageArray: Image[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(imageArray, animationBehaviorFactory){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(imageArray, animationBehaviorFactory);
+                        //var imageArray = imageArray
     //var dx = dx
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -101,12 +98,9 @@ this.dy= dy;
     
 }
 
-public constructor (imageArray: Image[])                        
-
-                            : this(imageArray, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[]){
+            this(imageArray, AnimationBehaviorFactory.getInstance());
+                        //var imageArray = imageArray
 
 
                             //For kotlin this is before the body of the constructor.
@@ -116,7 +110,7 @@ public constructor (imageArray: Image[])
 public constructor (imageArray: Image[], animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var imageArray = imageArray
+            //var imageArray = imageArray
     //var animationBehaviorFactory = animationBehaviorFactory
 this.imageArray= imageArray;
     
@@ -130,7 +124,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-                        if(dx != 0 || dy != 0)
+                        if(this.dx != 0 || this.dy != 0)
                         
                                     {
                                     

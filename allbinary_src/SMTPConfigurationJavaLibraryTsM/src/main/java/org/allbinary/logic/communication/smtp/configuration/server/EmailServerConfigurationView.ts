@@ -49,7 +49,10 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class EmailServerConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var childNodeList: NodeList = node.getChildNodes()!;
         
@@ -100,7 +103,7 @@ this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName
 public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
 
             super();
-            var emailServerConfigurationInterface = emailServerConfigurationInterface
+        var emailServerConfigurationInterface = emailServerConfigurationInterface
 this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
 }

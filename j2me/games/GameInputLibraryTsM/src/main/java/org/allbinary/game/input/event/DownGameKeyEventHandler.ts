@@ -34,7 +34,10 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
 
 
-        
+
+
+
+
 
 
 
@@ -100,7 +103,7 @@ var playerInputId = playerInputId
 private constructor (){
 
             super();
-            }
+        }
 
 
     public removeAllListeners(){

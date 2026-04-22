@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,9 +72,9 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            LogConfigTypes.LOGGING.add(OS);
+        LogConfigTypes.LOGGING.add(OS);
     
-LogConfigTypes.LOGGING.add(FACTORYERROR);
+LogConfigTypes.LOGGING.add(this.FACTORYERROR);
     
 }
 

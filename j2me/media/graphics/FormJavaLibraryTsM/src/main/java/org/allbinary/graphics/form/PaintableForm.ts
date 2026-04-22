@@ -44,7 +44,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,12 +81,9 @@ export class PaintableForm extends CustomForm {
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
         
         
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var rectangle = rectangle
     //var formType = formType

@@ -67,7 +67,10 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class ContextUriResolver
 public constructor (basicURIResolver: BasicUriResolver){
 
             super();
-            var basicURIResolver = basicURIResolver
+        var basicURIResolver = basicURIResolver
 this.basicURIResolver= basicURIResolver;
     
 }

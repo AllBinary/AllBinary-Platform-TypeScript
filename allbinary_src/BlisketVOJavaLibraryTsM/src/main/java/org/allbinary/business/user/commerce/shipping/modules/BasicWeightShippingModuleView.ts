@@ -49,7 +49,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class BasicWeightShippingModuleView extends BasicWeightShippingModule imp
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): Boolean{

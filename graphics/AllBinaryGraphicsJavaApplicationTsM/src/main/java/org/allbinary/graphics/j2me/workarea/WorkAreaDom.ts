@@ -43,7 +43,10 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class WorkAreaDom
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;
         

@@ -45,7 +45,10 @@ import { BasicColor } from "../../../../../../org/allbinary/graphics/color/Basic
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,12 +116,9 @@ stringBuffer!.append(position.toString());
     private positionString: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-public constructor (position: number, location: number, direction: number, basicColor: BasicColor)                        
-
-                            : super(location, direction, 10, 40, 2, basicColor){
-
-            super();
-            var position = position
+public constructor (position: number, location: number, direction: number, basicColor: BasicColor){
+            super(location, direction, 10, 40, 2, basicColor);
+                    var position = position
 var location = location
 var direction = direction
 var basicColor = basicColor

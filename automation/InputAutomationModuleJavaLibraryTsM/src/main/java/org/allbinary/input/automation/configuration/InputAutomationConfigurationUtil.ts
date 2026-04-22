@@ -34,7 +34,10 @@ import { InputAutomationModuleConfiguration } from "../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ var inputAutomationModuleInterface = inputAutomationModuleInterface
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

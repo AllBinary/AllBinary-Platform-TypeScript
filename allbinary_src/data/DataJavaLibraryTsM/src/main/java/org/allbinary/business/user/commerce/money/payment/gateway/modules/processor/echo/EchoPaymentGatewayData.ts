@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -321,7 +324,7 @@ export class EchoPaymentGatewayData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

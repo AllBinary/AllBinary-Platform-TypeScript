@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RunnableInterface } from "./RunnableInterface.js";
+
 export class ABRunnable
             extends Object
          implements RunnableInterface {

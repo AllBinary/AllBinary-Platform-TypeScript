@@ -64,7 +64,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,12 +81,9 @@ export class SpriteIndexedAnimation extends IndexedAnimation implements ColorCom
     readonly image: Image
 
     private readonly basicColorArray: BasicColor[]
-public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior)                        
-
-                            : this(sprite, image, BasicColorUtil.getInstance()!.ZERO_ARRAY, animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior){
+            this(sprite, image, BasicColorUtil.getInstance()!.ZERO_ARRAY, animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var animationBehavior = animationBehavior
 
@@ -92,12 +92,9 @@ public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBe
                     
 }
 
-public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var sprite = sprite
+public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var sprite = sprite
     //var image = image
     //var basicColorArray = basicColorArray
     //var animationBehavior = animationBehavior
@@ -205,7 +202,7 @@ this.setFrame(frame);
     
 this.sprite.setPosition(x, y);
     
-sprite.paint(graphics);
+this.sprite.paint(graphics);
     
 }
 
@@ -216,14 +213,14 @@ sprite.paint(graphics);
     //var y = y
 this.sprite.setPosition(x, y);
     
-sprite.paint(graphics);
+this.sprite.paint(graphics);
     
 }
 
 
     paint(graphics: Graphics){
     //var graphics = graphics
-sprite.paint(graphics);
+this.sprite.paint(graphics);
     
 }
 

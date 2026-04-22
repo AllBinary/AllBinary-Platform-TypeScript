@@ -37,7 +37,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class CategoriesView
 public constructor (categoryInterface: CategoryInterface){
 
             super();
-            var categoryInterface = categoryInterface
+        var categoryInterface = categoryInterface
 this.categoryInterface= categoryInterface;
     
 }
@@ -65,7 +68,7 @@ this.categoryInterface= categoryInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = new CategoryView(categoryInterface).
+    var node: Node = new CategoryView(this.categoryInterface).
                             toXmlNode(document)!;
         
         

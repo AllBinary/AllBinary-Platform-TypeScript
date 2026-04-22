@@ -33,7 +33,10 @@ import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/Ba
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class RaceTrackInfo
 public constructor (id: Integer, name: string, raceTrackFrictionProperties: RaceTrackFrictionProperties, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, qualifyTime: number, worstContinuePosition: number, totalLaps: number){
 
             super();
-                //var id = id
+            //var id = id
     //var name = name
     //var raceTrackFrictionProperties = raceTrackFrictionProperties
     //var foregroundBasicColor = foregroundBasicColor

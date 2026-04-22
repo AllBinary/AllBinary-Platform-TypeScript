@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class PaymentProcessorInterfaceFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

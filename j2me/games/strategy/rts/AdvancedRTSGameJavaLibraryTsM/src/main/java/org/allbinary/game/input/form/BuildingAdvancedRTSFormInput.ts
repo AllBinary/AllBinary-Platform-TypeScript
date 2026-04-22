@@ -93,7 +93,10 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,12 +108,9 @@ export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
         
 
     readonly atLeastOneHouseGameNotificationEvent: GameNotificationEvent
-public constructor (groupInterface: Group[], isUnitProducer: boolean)                        
-
-                            : super(groupInterface, isUnitProducer){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], isUnitProducer: boolean){
+            super(groupInterface, isUnitProducer);
+                        //var groupInterface = groupInterface
     //var isUnitProducer = isUnitProducer
 
 
@@ -247,16 +247,16 @@ var layerInterface = layerInterface
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var layerInterface = layerInterface
-BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface);
+this.BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface);
     
-BuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT);
+BuildingEventHandler.getInstance()!.fireEvent(this.BUILD_BUILDING_RTS_LAYER_EVENT);
     
 
                         if(
                                     (rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface).isLocalPlayer())
                         
                                     {
-                                    LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(BUILD_BUILDING_RTS_LAYER_EVENT);
+                                    LocalPlayerBuildingEventHandler.getInstance()!.fireEvent(this.BUILD_BUILDING_RTS_LAYER_EVENT);
     
 
                                     }

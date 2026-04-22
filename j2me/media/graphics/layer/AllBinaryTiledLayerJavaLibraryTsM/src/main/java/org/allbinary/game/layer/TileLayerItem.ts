@@ -43,7 +43,10 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ export class TileLayerItem extends CustomItem implements CustomItemInterface {
         
 
     private readonly tiledLayer: AllBinaryTiledLayer
-public constructor (label: string, tiledLayer: AllBinaryTiledLayer, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(label, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var label = label
+public constructor (label: string, tiledLayer: AllBinaryTiledLayer, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(label, backgroundBasicColor, foregroundBasicColor);
+                    var label = label
 var tiledLayer = tiledLayer
 var layout = layout
 var altText = altText

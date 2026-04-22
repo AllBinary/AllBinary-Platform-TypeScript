@@ -37,7 +37,10 @@ import { NullOpenGLProcessorFactory } from "../../../../../org/allbinary/graphic
 
 
 
-        
+
+
+
+
 
 
 
@@ -134,7 +137,7 @@ export class ShaderComposite
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor, disableProgramShaderOpenGLProcessor: OpenGLProcessor){
 
             super();
-                //var requiresOpenGLVersion = requiresOpenGLVersion
+            //var requiresOpenGLVersion = requiresOpenGLVersion
     //var shaderArray = shaderArray
     //var compositeShaderUpdater = compositeShaderUpdater
     //var shaderInitializer = shaderInitializer

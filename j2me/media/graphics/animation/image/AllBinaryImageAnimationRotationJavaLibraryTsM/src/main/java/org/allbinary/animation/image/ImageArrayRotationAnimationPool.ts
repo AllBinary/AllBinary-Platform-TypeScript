@@ -40,7 +40,10 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool
     
 }
 
-public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface)                        
-
-                            : super(cacheableInterfaceFactoryInterface){
-
-            super();
-            var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
+public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
+            super(cacheableInterfaceFactoryInterface);
+                    var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

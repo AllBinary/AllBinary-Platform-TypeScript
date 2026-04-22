@@ -49,12 +49,17 @@ import { OrderHistoryEntityInterface } from "../../../../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontOrdersHistoryStatisticsInterface } from "./StoreFrontOrdersHistoryStatisticsInterface.js";
+
 import { StoreFrontOrdersHistoryStatisticsData } from "./StoreFrontOrdersHistoryStatisticsData.js";
 
 export class StoreFrontOrdersHistoryStatistics
@@ -74,7 +79,7 @@ export class StoreFrontOrdersHistoryStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 this.subTotalMoney= new Money();
     
 this.shippingCostMoney= new Money();

@@ -46,7 +46,10 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,13 +62,13 @@ export class LimitCommandsVisitor extends Visitor {
 public constructor (){
 
             super();
-            
+        
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
 ;
     
-isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait();
+this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait();
 
                          && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
     
@@ -87,7 +90,7 @@ var anyType = anyType
 ;
     
 
-                        if(isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)
+                        if(this.isNotSmallDisplay || command.getPriority() == 1 || command == GameCommandsFactory.getInstance()!.EXIT_COMMAND || command == GameCommandsFactory.getInstance()!.EXIT_WITHOUT_PROGRESS_COMMAND)
                         
                                     {
                                     

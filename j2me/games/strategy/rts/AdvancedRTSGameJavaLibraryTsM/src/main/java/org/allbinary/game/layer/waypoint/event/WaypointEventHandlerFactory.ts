@@ -31,7 +31,10 @@ import { Group } from "../../../../../../org/allbinary/game/identification/Group
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class WaypointEventHandlerFactory
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return eventHandlerArray[groupInterface!.getGroupId();
 
-                        .toInt()]!;
+                        ]!;
     
 }
 

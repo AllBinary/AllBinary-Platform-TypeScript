@@ -42,7 +42,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -236,14 +239,14 @@ index2 < size; index2++)
 private constructor (){
 
             super();
-            rand= new Random(System.currentTimeMillis());
+        this.rand= new Random(System.currentTimeMillis());
     
 }
 
 
     public setSeed(seed: number){
 var seed = seed
-rand= new Random(seed);
+this.rand= new Random(seed);
     
 }
 

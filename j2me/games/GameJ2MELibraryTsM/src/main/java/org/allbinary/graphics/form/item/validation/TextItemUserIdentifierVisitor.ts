@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class TextItemUserIdentifierVisitor extends Visitor {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{
@@ -161,7 +164,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     public isLetter(charValue: string): boolean{
 var charValue = charValue
 
-    var value: number = charValue.toInt();
+    var value: number = charValue;
         
         
 ;

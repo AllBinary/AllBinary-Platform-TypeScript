@@ -34,12 +34,17 @@ import { Money } from "../../../../../../../org/allbinary/business/user/commerce
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ShippingInterface } from "./ShippingInterface.js";
+
 export class FedExShippingModule
             extends Object
          implements ShippingInterface {
@@ -55,7 +60,7 @@ export class FedExShippingModule
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getCost(order: OrderInterface): Money{

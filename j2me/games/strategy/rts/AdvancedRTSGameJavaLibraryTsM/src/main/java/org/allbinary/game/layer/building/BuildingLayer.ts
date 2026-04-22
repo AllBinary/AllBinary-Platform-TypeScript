@@ -163,7 +163,10 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -201,12 +204,9 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
     private readonly healthBar: Paintable
 
     private readonly pathsHashtable: Hashtable<any, any>
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number)                        
-
-                            : super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y){
-
-            super();
-                //var remoteInfo = remoteInfo
+public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
+            super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y);
+                        //var remoteInfo = remoteInfo
     //var groupInterface = groupInterface
     //var rootName = rootName
     //var name = name
@@ -297,12 +297,9 @@ this.trackingEvent= new TrackingEvent(this);
     
 }
 
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -512,7 +509,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
     public getCost(): number{
 
-    var total: number = RTSLayerUtil.getInstance()!.getCostExponential((this.getLevel() *this.getBuildingLevelCost()).toLong())!;
+    var total: number = RTSLayerUtil.getInstance()!.getCostExponential((this.getLevel() *this.getBuildingLevelCost()))!;
         
         
 ;
@@ -521,14 +518,14 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return total.toInt();
+                        return total;
     
 }
 
 
     public getDowngradeCost(): number{
 
-    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *getBuildingLevelCost()).toLong())!;
+    var downgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() -1) *getBuildingLevelCost()))!;
         
         
 ;
@@ -539,14 +536,14 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return downgradeCost.toInt() *9 /10;
+                        return downgradeCost *9 /10;
     
 }
 
 
     public getUpgradeCost(): number{
 
-    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *getBuildingLevelCost()).toLong())!;
+    var upgradeCost: number = RTSLayerUtil.getInstance()!.getCostExponential(((this.getLevel() +1) *getBuildingLevelCost()))!;
         
         
 ;
@@ -555,7 +552,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return upgradeCost.toInt();
+                        return upgradeCost;
     
 }
 

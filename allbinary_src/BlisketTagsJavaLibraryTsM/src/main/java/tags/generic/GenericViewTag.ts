@@ -37,7 +37,10 @@ import { TransformTag } from "../../tags/TransformTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class GenericViewTag extends TransformTag {
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {

@@ -69,7 +69,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageP
         
 
     private imageProcessorInput: ImageProcessorInput
-public constructor (imageProcessorInput: ImageProcessorInput)                        
-
-                            : super(){
-
+public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                //var imageProcessorInput = imageProcessorInput
+                        //var imageProcessorInput = imageProcessorInput
 
 
                             //For kotlin this is before the body of the constructor.
@@ -361,9 +361,9 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     initComponents(){
-aboveJButton= new javax.swing.JButton();
+this.aboveJButton= new javax.swing.JButton();
     
-aboveJButton!.setText("Process");
+this.aboveJButton!.setText("Process");
     
 aboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {

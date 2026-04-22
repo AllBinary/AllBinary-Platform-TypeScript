@@ -40,7 +40,10 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class ImagesRatioUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
@@ -95,7 +98,7 @@ private constructor (){
 
     var ratio: number = (bufferedImageArray[0]!.getWidth();
 
-                        .toDouble() /bufferedImageArray[0]!.getHeight());
+                         /bufferedImageArray[0]!.getHeight());
         
         
 ;
@@ -113,7 +116,7 @@ index < end; index++)
 
                         if(ratio != (bufferedImageArray[index]!.getWidth();
 
-                        .toDouble() /bufferedImageArray[index]!.getHeight()))
+                         /bufferedImageArray[index]!.getHeight()))
                         
                                     {
                                     
@@ -166,7 +169,7 @@ index < end; index++)
         {
 ratio += (bufferedImageArray[index]!.getWidth();
 
-                        .toDouble() /bufferedImageArray[index]!.getHeight());
+                         /bufferedImageArray[index]!.getHeight());
     
 }
 
@@ -174,7 +177,7 @@ ratio += (bufferedImageArray[index]!.getWidth();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (ratio.toDouble() /end);
+                        return (ratio /end);
     
 }
 
@@ -187,7 +190,7 @@ var ratio = ratio
 
     var imageRatio: number = (bufferedImage!.getWidth();
 
-                        .toDouble() /bufferedImage!.getHeight());
+                         /bufferedImage!.getHeight());
         
         
 ;
@@ -216,7 +219,7 @@ var ratio = ratio
                                     {
                                     newWidth= (bufferedImage!.getHeight();
 
-                        .toDouble() *ratio).toInt();
+                         *ratio);
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -226,7 +229,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                         else {
                             newHeight= (bufferedImage!.getWidth();
 
-                        .toDouble() /ratio).toInt();
+                         /ratio);
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     
@@ -239,7 +242,7 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2;
         
 ;
     
-this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth.toDouble() /newHeight), this, "fudge");
+this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth /newHeight), this, "fudge");
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;

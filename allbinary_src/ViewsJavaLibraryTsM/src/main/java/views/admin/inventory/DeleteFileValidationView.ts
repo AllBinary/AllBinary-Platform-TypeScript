@@ -61,7 +61,10 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,12 +76,9 @@ export class DeleteFileValidationView extends InventoryItemView implements Valid
         
 
     private id: string
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -115,7 +115,7 @@ this.id= hashMap!.get(BasicItemData.ID);
 
         try {
             
-                        if(id == 
+                        if(this.id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id);
 
@@ -195,7 +195,7 @@ var document = document
 ;
     
 
-                        if(id == 
+                        if(this.id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id);
 

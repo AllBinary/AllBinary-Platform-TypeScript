@@ -31,12 +31,17 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
+
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
 export class FtpConfiguration
@@ -54,12 +59,12 @@ export class FtpConfiguration
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.ftpServer= hashMap!.get(FtpConfigurationData.SERVER);
 
                          as String;

@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -247,7 +250,7 @@ this.rtsLayerList!.remove(gameLayer);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return baseList!.size() +garrisonList!.size() +houseList!.size() +labList!.size() +factoryList!.size();
+                        return baseList!.size() +this.garrisonList!.size() +this.houseList!.size() +this.labList!.size() +this.factoryList!.size();
     
 }
 

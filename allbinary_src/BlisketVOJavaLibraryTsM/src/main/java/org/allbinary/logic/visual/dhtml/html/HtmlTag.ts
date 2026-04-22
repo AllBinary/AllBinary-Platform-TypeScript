@@ -31,7 +31,10 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class HtmlTag
 public constructor (){
 
             super();
-            this.otherAttributes= new HashMap<any, any>();
+        this.otherAttributes= new HashMap<any, any>();
     
 }
 

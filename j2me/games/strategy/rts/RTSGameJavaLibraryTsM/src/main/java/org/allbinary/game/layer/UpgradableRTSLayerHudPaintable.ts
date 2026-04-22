@@ -52,7 +52,10 @@ import { CommonButtons } from "../../../../org/allbinary/input/motion/button/Com
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public update(){
@@ -185,7 +188,7 @@ this.setName(rtsLayer!.getName());
 this.percentComplete= rtsLayer!.getPercentComplete();
     
 
-                        if(percentComplete < 10)
+                        if(this.percentComplete < 10)
                         
                                     {
                                     this.percentCompleteX= 32;
@@ -208,7 +211,7 @@ this.percentComplete= rtsLayer!.getPercentComplete();
 
                         }
                             
-this.percentCompleteArray= this.getPrimitiveLongUtil()!.getCharArray(percentComplete);
+this.percentCompleteArray= this.getPrimitiveLongUtil()!.getCharArray(this.percentComplete);
     
 this.currentTotalDigits= this.getPrimitiveLongUtil()!.getCurrentTotalDigits();
     

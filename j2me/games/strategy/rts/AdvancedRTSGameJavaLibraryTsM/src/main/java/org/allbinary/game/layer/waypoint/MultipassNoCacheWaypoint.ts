@@ -100,7 +100,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,12 +119,9 @@ export class MultipassNoCacheWaypoint extends WaypointBase implements BuildingEv
         
 
     readonly ownerLayer: PathFindingLayerInterface
-public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound)                        
-
-                            : super(sound){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound){
+            super(sound);
+                        //var ownerLayer = ownerLayer
     //var sound = sound
 
 

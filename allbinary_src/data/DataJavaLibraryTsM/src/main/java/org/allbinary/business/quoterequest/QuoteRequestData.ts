@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class QuoteRequestData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly ID: string = "QUOTEREQUEST_ID";

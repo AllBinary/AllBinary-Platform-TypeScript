@@ -40,7 +40,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,14 +64,11 @@ export class KeylessBasicArrayListCache extends IndexedBasicArrayListCache {
 public constructor (){
 
             super();
-            }
+        }
 
-public constructor (size: number)                        
-
-                            : super(size){
-
-            super();
-            var size = size
+public constructor (size: number){
+            super(size);
+                    var size = size
 
 
                             //For kotlin this is before the body of the constructor.

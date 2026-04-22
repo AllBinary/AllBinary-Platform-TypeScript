@@ -31,7 +31,10 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ import { YAxisMathVectorUtil } from "./YAxisMathVectorUtil.js";
 
 export class YAxisMathVector extends MathVector {
         
-public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number)                        
-
-                            : super(magnitudeBasicDecimal, direction){
-
-            super();
-            var magnitudeBasicDecimal = magnitudeBasicDecimal
+public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
+            super(magnitudeBasicDecimal, direction);
+                    var magnitudeBasicDecimal = magnitudeBasicDecimal
 var direction = direction
 
 

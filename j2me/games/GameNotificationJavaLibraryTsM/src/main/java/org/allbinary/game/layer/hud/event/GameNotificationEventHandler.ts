@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class GameNotificationEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public enabled: boolean = true;
@@ -118,7 +121,7 @@ super.removeAllListeners();
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-                        if(!enabled)
+                        if(!this.enabled)
                         
                                     {
                                     

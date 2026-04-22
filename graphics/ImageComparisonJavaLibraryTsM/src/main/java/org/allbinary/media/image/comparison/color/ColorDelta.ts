@@ -42,7 +42,10 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ var rgb2 = rgb2
 public constructor (rgb1: number, rgb2: number){
 
             super();
-            var rgb1 = rgb1
+        var rgb1 = rgb1
 var rgb2 = rgb2
 this.setRgb1(rgb1);
     

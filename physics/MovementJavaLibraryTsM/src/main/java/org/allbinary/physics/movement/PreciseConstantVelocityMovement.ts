@@ -29,7 +29,10 @@ import { ScaleFactorFactory } from "../../../../org/allbinary/logic/math/ScaleFa
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ export class PreciseConstantVelocityMovement extends BasicConstantVelocityMoveme
     private accumulatedY: number= 0
 
     private accumulatedZ: number= 0
-public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties)                        
-
-                            : super(basicDecimal, velocityProperties){
-
-            super();
-                //var basicDecimal = basicDecimal
+public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
+            super(basicDecimal, velocityProperties);
+                        //var basicDecimal = basicDecimal
     //var velocityProperties = velocityProperties
 
 
@@ -86,37 +86,37 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
         
 ;
     
-accumulatedX= (accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()).toInt();
+this.accumulatedX= (this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled());
     
-accumulatedY= (accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled()).toInt();
+this.accumulatedY= (this.accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled());
     
-accumulatedZ= (accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled()).toInt();
+this.accumulatedZ= (this.accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled());
     
-layer.move(accumulatedX /factorValue, accumulatedY /factorValue, accumulatedZ /factorValue);
+layer.move(this.accumulatedX /this.factorValue, this.accumulatedY /this.factorValue, this.accumulatedZ /this.factorValue);
     
 
-                        if(mathUtil!.abs(accumulatedX) > factorValue)
+                        if(mathUtil!.abs(this.accumulatedX) > this.factorValue)
                         
                                     {
-                                    accumulatedX= 0;
+                                    this.accumulatedX= 0;
     
 
                                     }
                                 
 
-                        if(mathUtil!.abs(accumulatedY) > factorValue)
+                        if(mathUtil!.abs(this.accumulatedY) > this.factorValue)
                         
                                     {
-                                    accumulatedY= 0;
+                                    this.accumulatedY= 0;
     
 
                                     }
                                 
 
-                        if(mathUtil!.abs(accumulatedZ) > factorValue)
+                        if(mathUtil!.abs(this.accumulatedZ) > this.factorValue)
                         
                                     {
-                                    accumulatedZ= 0;
+                                    this.accumulatedZ= 0;
     
 
                                     }

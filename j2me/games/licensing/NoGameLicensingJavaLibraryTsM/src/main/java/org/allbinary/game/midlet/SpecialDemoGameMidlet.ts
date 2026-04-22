@@ -37,7 +37,10 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ import { DemoSetup } from "./DemoSetup.js";
 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
-public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType)                        
-
-                            : super(clientInformationFactory){
-
-            super();
-                //var clientInformationFactory = clientInformationFactory
+public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType){
+            super(clientInformationFactory);
+                        //var clientInformationFactory = clientInformationFactory
     //var licenseLoadingType = licenseLoadingType
 
 
@@ -64,12 +64,9 @@ public constructor (clientInformationFactory: ClientInformationFactory, licenseL
                     
 }
 
-public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetup: DemoSetup, licenseCheckRunnable: RunnableInterface)                        
-
-                            : super(clientInformationFactory){
-
-            super();
-                //var clientInformationFactory = clientInformationFactory
+public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetup: DemoSetup, licenseCheckRunnable: RunnableInterface){
+            super(clientInformationFactory);
+                        //var clientInformationFactory = clientInformationFactory
     //var licenseLoadingType = licenseLoadingType
     //var demoSetup = demoSetup
     //var licenseCheckRunnable = licenseCheckRunnable

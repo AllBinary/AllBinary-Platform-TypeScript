@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
         
 export class VirtualKeyboardEvent extends AllBinaryEventObject {
         
-public constructor (anyType: any = {})                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}){
+            super(anyType);
+                    var anyType = anyType
 
 
                             //For kotlin this is before the body of the constructor.

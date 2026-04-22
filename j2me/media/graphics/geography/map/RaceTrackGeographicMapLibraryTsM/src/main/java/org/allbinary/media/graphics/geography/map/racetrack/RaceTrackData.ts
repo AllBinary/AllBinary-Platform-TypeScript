@@ -42,7 +42,10 @@ import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,12 +97,9 @@ export class RaceTrackData
         
 
     private id: Integer
-public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number)                        
-
-                            : this(id, cellWidth, cellHeight, miniCellWidth, miniCellHeight, NullUtil.getInstance()!.NULL_INT_ARRAY, NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY){
-
-            super();
-                //var id = id
+public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number){
+            this(id, cellWidth, cellHeight, miniCellWidth, miniCellHeight, NullUtil.getInstance()!.NULL_INT_ARRAY, NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY);
+                        //var id = id
     //var cellWidth = cellWidth
     //var cellHeight = cellHeight
     //var miniCellWidth = miniCellWidth
@@ -113,7 +113,7 @@ public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCell
 public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();
-                //var id = id
+            //var id = id
     //var cellWidth = cellWidth
     //var cellHeight = cellHeight
     //var miniCellWidth = miniCellWidth

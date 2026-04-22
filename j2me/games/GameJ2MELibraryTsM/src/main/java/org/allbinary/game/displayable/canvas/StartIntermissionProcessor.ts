@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class StartIntermissionProcessor extends Processor {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 this.gameCanvas= gameCanvas;
     
 }
@@ -74,7 +77,7 @@ this.gameCanvas= gameCanvas;
             
     public process(){
 
-                        if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsed(WAIT))
+                        if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsed(this.WAIT))
                         
                                     {
                                     this.logUtil!.putF("Intermission End", this, commonStrings!.PROCESS);

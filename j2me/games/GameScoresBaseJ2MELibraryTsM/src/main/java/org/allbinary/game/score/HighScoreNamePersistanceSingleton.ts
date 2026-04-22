@@ -93,7 +93,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -154,7 +157,7 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
 
-    var size: number = nameBasicArrayList!.size()!;
+    var size: number = this.nameBasicArrayList!.size()!;
         
         
 ;
@@ -330,7 +333,7 @@ this.name= inputStream!.readUTF();
     
 }
 
-nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
+this.nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
     
 }
 

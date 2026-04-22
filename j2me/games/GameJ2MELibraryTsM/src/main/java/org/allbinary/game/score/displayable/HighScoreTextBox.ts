@@ -88,7 +88,10 @@ import { InApplicationPurchaseFactory } from "../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,12 +119,9 @@ export class HighScoreTextBox extends CustomTextBox {
     public submitted: boolean = false;
         
         
-public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-                //var highScoresFactoryInterface = highScoresFactoryInterface
+public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, backgrounBasicColor, foregroundBasicColor);
+                        //var highScoresFactoryInterface = highScoresFactoryInterface
     //var highScoresHelper = highScoresHelper
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
@@ -134,7 +134,7 @@ public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, high
 
                             //For kotlin this is before the body of the constructor.
                     
-highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore);
+this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelper, abeClientInformation, gameInfo, cmdListener, name, highScore);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;

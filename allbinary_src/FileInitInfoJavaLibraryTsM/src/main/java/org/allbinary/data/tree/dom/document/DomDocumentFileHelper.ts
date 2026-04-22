@@ -58,7 +58,10 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -175,7 +178,7 @@ dataOutputStream!.flush();
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

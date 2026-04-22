@@ -37,12 +37,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
+
 export class NullCompleteMotionGestureReceiver
             extends Object
          implements CompleteMotionGestureListenerInterface {
@@ -54,7 +59,7 @@ export class NullCompleteMotionGestureReceiver
 public constructor (){
 
             super();
-            
+        
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         

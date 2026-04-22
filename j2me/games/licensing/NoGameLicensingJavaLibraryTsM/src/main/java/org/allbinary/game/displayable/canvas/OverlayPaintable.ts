@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class OverlayPaintable extends InitUpdatePaintable {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public update(){

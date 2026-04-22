@@ -37,7 +37,10 @@ import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinar
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class MotionRectangleConstraints
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getMinDimension(): Dimension{

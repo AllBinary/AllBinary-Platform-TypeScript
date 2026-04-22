@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class NewPasswordEmail
 public constructor (abeClientInformation: AbeClientInformationInterface, userInterface: UserInterface, newPassword: string){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var userInterface = userInterface
 var newPassword = newPassword
 this.abeClientInformation= abeClientInformation;
@@ -195,7 +198,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 ;
     
 
-    var body: string = "New Password: " +newPassword;
+    var body: string = "New Password: " +this.newPassword;
         
         
 ;

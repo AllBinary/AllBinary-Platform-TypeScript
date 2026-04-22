@@ -51,7 +51,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,53 +71,53 @@ export class UniqueTokens
 public constructor (){
 
             super();
-            specialCharacters!.add("!");
+        this.specialCharacters!.add("!");
     
-specialCharacters!.add("@");
+this.specialCharacters!.add("@");
     
-specialCharacters!.add(CommonPhoneStrings.getInstance()!.POUND);
+this.specialCharacters!.add(CommonPhoneStrings.getInstance()!.POUND);
     
-specialCharacters!.add("$");
+this.specialCharacters!.add("$");
     
-specialCharacters!.add("%");
+this.specialCharacters!.add("%");
     
-specialCharacters!.add("^");
+this.specialCharacters!.add("^");
     
-specialCharacters!.add(CommonSeps.getInstance()!.AMPERSAND);
+this.specialCharacters!.add(CommonSeps.getInstance()!.AMPERSAND);
     
-specialCharacters!.add(CommonPhoneStrings.getInstance()!.STAR);
+this.specialCharacters!.add(CommonPhoneStrings.getInstance()!.STAR);
     
-specialCharacters!.add("(");
+this.specialCharacters!.add("(");
     
-specialCharacters!.add(")");
+this.specialCharacters!.add(")");
     
-specialCharacters!.add("-");
+this.specialCharacters!.add("-");
     
-specialCharacters!.add("_");
+this.specialCharacters!.add("_");
     
-specialCharacters!.add("+");
+this.specialCharacters!.add("+");
     
-specialCharacters!.add("=");
+this.specialCharacters!.add("=");
     
-specialCharacters!.add("\\");
+this.specialCharacters!.add("\\");
     
-specialCharacters!.add("|");
+this.specialCharacters!.add("|");
     
-specialCharacters!.add(AbPathData.getInstance()!.EXTENSION_SEP);
+this.specialCharacters!.add(AbPathData.getInstance()!.EXTENSION_SEP);
     
-specialCharacters!.add(",");
+this.specialCharacters!.add(",");
     
-specialCharacters!.add("<");
+this.specialCharacters!.add("<");
     
-specialCharacters!.add(">");
+this.specialCharacters!.add(">");
     
-specialCharacters!.add("?");
+this.specialCharacters!.add("?");
     
-specialCharacters!.add("/");
+this.specialCharacters!.add("/");
     
-specialCharacters!.add("~");
+this.specialCharacters!.add("~");
     
-specialCharacters!.add("`");
+this.specialCharacters!.add("`");
     
 }
 
@@ -306,10 +309,10 @@ var subCleaningString = subCleaningString
     var index: number = 0;
         
         
-index < specialCharacters!.length; index++)
+index < this.specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.compareTo(specialCharacters!.elementAt(index);
+                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index);
 
                          as String) == 0)
                         

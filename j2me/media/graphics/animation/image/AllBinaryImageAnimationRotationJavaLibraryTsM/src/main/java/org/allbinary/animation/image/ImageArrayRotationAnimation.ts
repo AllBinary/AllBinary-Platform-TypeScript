@@ -40,7 +40,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,14 +55,11 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
         
 
     private expectedTotalFrames: number= 0
-protected constructor (anyType: any = {}, animationBehavior: AnimationBehavior)                        
-
-                            : super(
+protected constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
+            super(
                                     (anyType as ImageArrayRotationAnimationInfo).getImageArray(), 
-                                    (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), animationBehavior){
-
-            super();
-                //var anyType = anyType
+                                    (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), animationBehavior);
+                        //var anyType = anyType
     //var animationBehavior = animationBehavior
 
 
@@ -75,12 +75,9 @@ this.init(allBinaryImageRotationAnimationInfo!.getImageArray(), allBinaryImageRo
     
 }
 
-public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(imageArray, angleInfo, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(imageArray, angleInfo, animationBehavior);
+                        //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
     //var animationBehavior = animationBehavior
@@ -92,12 +89,9 @@ this.init(imageArray, angleInfo, totalAngle);
     
 }
 
-public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
-
-                            : this(imageArray, AngleInfo.getInstance(10.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
+            this(imageArray, AngleInfo.getInstance(10), AngleFactory.getInstance()!.TOTAL_ANGLE, animationBehavior);
+                        //var imageArray = imageArray
     //var animationBehavior = animationBehavior
 
 
@@ -105,12 +99,9 @@ public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)
                     
 }
 
-public constructor (imageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior)                        
-
-                            : this(imageArray, angleInfo, AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
+            this(imageArray, angleInfo, AngleFactory.getInstance()!.TOTAL_ANGLE, animationBehavior);
+                        //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior
 
@@ -131,7 +122,7 @@ this.expectedTotalFrames= totalAngle /this.angleInfo!.getAngleIncrementInfo()!.g
 this.angleInfo!.adjustAngle(0);
     
 
-                        if(expectedTotalFrames != this.getSize())
+                        if(this.expectedTotalFrames != this.getSize())
                         
                                     {
                                     

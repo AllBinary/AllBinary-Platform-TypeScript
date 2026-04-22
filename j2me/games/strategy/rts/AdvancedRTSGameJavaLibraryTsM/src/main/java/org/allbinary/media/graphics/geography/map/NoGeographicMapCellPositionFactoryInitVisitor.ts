@@ -31,12 +31,17 @@ import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeographicMapCellPositionFactoryInitVisitorInterface } from "./GeographicMapCellPositionFactoryInitVisitorInterface.js";
+
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class NoGeographicMapCellPositionFactoryInitVisitor

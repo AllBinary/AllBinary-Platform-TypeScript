@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,18 +69,18 @@ export class BasicLayerProcessor
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public add(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!list.contains(layerInterface);
+                        if(!this.list.contains(layerInterface);
 
                         )
                         
                                     {
-                                    list.add(layerInterface);
+                                    this.list.add(layerInterface);
     
 
                                     }

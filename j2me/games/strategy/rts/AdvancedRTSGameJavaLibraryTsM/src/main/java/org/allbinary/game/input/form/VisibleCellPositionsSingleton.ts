@@ -70,7 +70,10 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 
 
 
-        
+
+
+
+
 
 
 
@@ -123,7 +126,7 @@ export class VisibleCellPositionsSingleton
 private constructor (){
 
             super();
-            LocalPlayerBuildingEventHandler.getInstance()!.addListener(this);
+        LocalPlayerBuildingEventHandler.getInstance()!.addListener(this);
     
 ScrollMapEventHandler.getInstance()!.addListener(this);
     
@@ -132,7 +135,7 @@ ScrollMapEventHandler.getInstance()!.addListener(this);
 
     public init(simpleTiledLayer: SimpleTiledLayer){
 var simpleTiledLayer = simpleTiledLayer
-this.paintSimpleTiledLayer= ALL_VISIBLE_TILEDLAYER;
+this.paintSimpleTiledLayer= this.ALL_VISIBLE_TILEDLAYER;
     
 this.currentIndex= 0;
     

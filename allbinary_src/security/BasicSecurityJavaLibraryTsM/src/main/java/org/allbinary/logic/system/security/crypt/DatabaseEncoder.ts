@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -247,7 +250,7 @@ PreLogUtil.putSE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

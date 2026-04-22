@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class HtmlMetasData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public NAME: string = "HTMLMETAS_NAME";

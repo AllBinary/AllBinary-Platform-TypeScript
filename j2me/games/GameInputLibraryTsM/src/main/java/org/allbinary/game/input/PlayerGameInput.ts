@@ -57,7 +57,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
         
 
     private readonly playerInputId: number
-public constructor (gameKeyEventList: BasicArrayList, playerInputId: number)                        
-
-                            : this(gameKeyEventList, new BasicArrayList(), playerInputId){
-
-            super();
-                //var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, playerInputId: number){
+            this(gameKeyEventList, new BasicArrayList(), playerInputId);
+                        //var gameKeyEventList = gameKeyEventList
     //var playerInputId = playerInputId
 
 
@@ -88,12 +88,9 @@ public constructor (gameKeyEventList: BasicArrayList, playerInputId: number)
                     
 }
 
-public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number)                        
-
-                            : super(gameKeyEventList, removalGameKeyEventList){
-
-            super();
-                //var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number){
+            super(gameKeyEventList, removalGameKeyEventList);
+                        //var gameKeyEventList = gameKeyEventList
     //var removalGameKeyEventList = removalGameKeyEventList
     //var playerInputId = playerInputId
 

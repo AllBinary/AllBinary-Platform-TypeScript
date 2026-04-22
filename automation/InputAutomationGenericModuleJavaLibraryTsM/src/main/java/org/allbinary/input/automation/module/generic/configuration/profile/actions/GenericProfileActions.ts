@@ -76,7 +76,10 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -130,7 +133,7 @@ var name = name
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string){
 
             super();
-            var genericProfileActionsJPanel = genericProfileActionsJPanel
+        var genericProfileActionsJPanel = genericProfileActionsJPanel
 var name = name
 this.setName(name);
     
@@ -143,7 +146,7 @@ this.load();
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
 
             super();
-            var genericProfileActionsJPanel = genericProfileActionsJPanel
+        var genericProfileActionsJPanel = genericProfileActionsJPanel
 var abPath = abPath
 var name = name
 this.setName(name);
@@ -157,7 +160,7 @@ this.load();
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
 
             super();
-            var genericProfileActionsJPanel = genericProfileActionsJPanel
+        var genericProfileActionsJPanel = genericProfileActionsJPanel
 var fileInputStream = fileInputStream
 var name = name
 this.setName(name);

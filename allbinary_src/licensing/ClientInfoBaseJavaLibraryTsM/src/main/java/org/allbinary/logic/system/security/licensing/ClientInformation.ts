@@ -58,12 +58,17 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
+
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 export class ClientInformation
@@ -97,7 +102,7 @@ export class ClientInformation
 public constructor (name: string, version: string, specialName: string, shortName: string){
 
             super();
-                //var name = name
+            //var name = name
     //var version = version
     //var specialName = specialName
     //var shortName = shortName

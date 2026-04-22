@@ -34,7 +34,10 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { ThirdPartyStore } from "./ThirdPartyStore.js";
 
 export class NoThirdPartyStore extends ThirdPartyStore {
         
- constructor ()                        
-
-                            : super(StringUtil.getInstance()!.EMPTY_STRING){
-
-            super();
-            
+ constructor (){
+            super(StringUtil.getInstance()!.EMPTY_STRING);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

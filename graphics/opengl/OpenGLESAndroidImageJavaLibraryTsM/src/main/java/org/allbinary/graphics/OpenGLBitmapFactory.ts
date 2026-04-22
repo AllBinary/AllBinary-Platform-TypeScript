@@ -38,7 +38,10 @@ import { AndroidImageInterface } from "../../../org/microemu/android/device/Andr
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export inner class Config
  constructor (bitmapConfig: Bitmap.Config){
 
             super();
-                //var bitmapConfig = bitmapConfig
+            //var bitmapConfig = bitmapConfig
 this.bitmapConfig= bitmapConfig;
     
 }

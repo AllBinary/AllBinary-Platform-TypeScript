@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -118,7 +121,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

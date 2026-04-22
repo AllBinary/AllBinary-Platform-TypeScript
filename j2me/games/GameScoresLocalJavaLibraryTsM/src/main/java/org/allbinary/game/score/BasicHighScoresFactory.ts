@@ -26,7 +26,10 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class BasicHighScoresFactory extends HighScoresBase {
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
 this.abeClientInformation= abeClientInformation;
     
@@ -118,9 +121,9 @@ this.fetchHighScores(gameInfo, highScoresResultsListener, true);
     //var preload = preload
 
         try {
-            highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, gameInfo, TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
+            this.highScoresArray[0]= RecordStoreHighScores.getInstance(this.abeClientInformation, gameInfo, this.TOP, PERSONAL_HIGH_SCORES, SCORES, new ScoreComparator(true));
     
-highScoresResultsListener!.setHighScoresArray(highScoresArray);
+highScoresResultsListener!.setHighScoresArray(this.highScoresArray);
     
 
                 //: 

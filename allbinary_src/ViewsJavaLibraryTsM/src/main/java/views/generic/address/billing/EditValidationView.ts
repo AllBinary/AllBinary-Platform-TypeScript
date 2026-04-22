@@ -48,7 +48,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ export class EditValidationView extends BillingAddressView implements Validation
         
 
     private value: string
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -97,7 +97,7 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
         
 ;
     
-this.streetAddress= billingAddressesEntity!.get(new Integer(value));
+this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     
 
                         if(this.streetAddress == 

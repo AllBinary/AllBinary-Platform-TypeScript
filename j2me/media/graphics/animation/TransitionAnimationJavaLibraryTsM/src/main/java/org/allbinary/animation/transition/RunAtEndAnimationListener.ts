@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationListenerInterface } from "./AnimationListenerInterface.js";
+
 import { Runnable } from "./Runnable.js";
 
 export class RunAtEndAnimationListener
@@ -45,7 +50,7 @@ export class RunAtEndAnimationListener
 protected constructor (runnable: Runnable){
 
             super();
-            var runnable = runnable
+        var runnable = runnable
 this.runnable= runnable;
     
 }

@@ -31,7 +31,10 @@ import { LogHelperFactory } from "../../admin/taghelpers/LogHelperFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class LogTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new LogHelperFactory());
+        this.setTagHelperFactory(new LogHelperFactory());
     
 this.setTagRequestHelperFactory(new LogHelperFactory());
     

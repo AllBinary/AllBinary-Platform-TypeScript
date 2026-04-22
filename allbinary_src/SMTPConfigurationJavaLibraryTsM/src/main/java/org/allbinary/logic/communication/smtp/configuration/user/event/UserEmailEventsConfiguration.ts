@@ -49,12 +49,17 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
+
 import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
 
 import { UserEmailEventListenerFactory } from "./UserEmailEventListenerFactory.js";
@@ -76,14 +81,14 @@ export class UserEmailEventsConfiguration
 public constructor (){
 
             super();
-            this.init();
+        this.init();
     
 }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.init();
     
 }

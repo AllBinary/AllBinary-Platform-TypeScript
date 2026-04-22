@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ stringBuffer!.appendint(z);
 public constructor (point: GPoint){
 
             super();
-            var point = point
+        var point = point
 this.x= point.getX();
     
 this.y= point.getY();
@@ -117,7 +120,7 @@ this.z= point.getZ();
 public constructor (x: number, y: number){
 
             super();
-            var x = x
+        var x = x
 var y = y
 this.x= x;
     
@@ -130,7 +133,7 @@ this.z= 3;
 public constructor (x: number, y: number, z: number){
 
             super();
-            var x = x
+        var x = x
 var y = y
 var z = z
 this.x= x;

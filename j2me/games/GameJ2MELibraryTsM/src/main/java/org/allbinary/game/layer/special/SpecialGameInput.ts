@@ -37,12 +37,17 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
+
 export class SpecialGameInput
             extends Object
          implements SpecialGameInputInterface {

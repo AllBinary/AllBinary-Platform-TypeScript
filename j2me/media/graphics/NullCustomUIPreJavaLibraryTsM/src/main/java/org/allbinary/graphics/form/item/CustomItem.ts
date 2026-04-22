@@ -29,7 +29,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class CustomItem
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-            var label = label
+        var label = label
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor
 }

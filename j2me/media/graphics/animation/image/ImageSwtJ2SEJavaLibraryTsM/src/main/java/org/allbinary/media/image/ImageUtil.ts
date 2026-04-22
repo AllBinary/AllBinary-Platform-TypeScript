@@ -73,7 +73,10 @@ import { BareMain } from "../../../../org/microemu/app/BareMain.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -122,7 +125,7 @@ export class ImageUtil
 private constructor (){
 
             super();
-            
+        
         try {
             this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
@@ -197,13 +200,13 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = (imageData!.width *percent /100).toInt();
+    var newWidth: number = (imageData!.width *percent /100);
         
         
 ;
     
 
-    var newHeight: number = (imageData!.height *percent /100).toInt();
+    var newHeight: number = (imageData!.height *percent /100);
         
         
 ;
@@ -263,13 +266,13 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = (imageData!.width *percent).toInt();
+    var newWidth: number = (imageData!.width *percent);
         
         
 ;
     
 
-    var newHeight: number = (imageData!.height *percent).toInt();
+    var newHeight: number = (imageData!.height *percent);
         
         
 ;

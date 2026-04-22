@@ -64,7 +64,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -100,7 +103,7 @@ export class InputToGameKeyMapping extends InputMapping {
 public constructor (){
 
             super();
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.clear();
     
@@ -113,12 +116,12 @@ this.clear();
 
 
                         for (
-    var index: number = platformToGameKeyMapping!.length -1;
+    var index: number = this.platformToGameKeyMapping!.length -1;
         
         
 index >= 0; index--)
         {
-platformToGameKeyMapping[index]= gameKeyFactory!.NONE;
+this.platformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
     
 }
 
@@ -152,7 +155,7 @@ index >= 0; index--)
 ;
     
 
-                        if(input != gameKeyFactory!.NONE)
+                        if(input != this.gameKeyFactory!.NONE)
                         
                                     {
                                     this.addAll(input, inputToGameKeyMapping!.getMappedInput(input));
@@ -224,7 +227,7 @@ var mappedToInput = mappedToInput
 ;
     
 
-                        if(id >= 0 && id < platformToGameKeyMapping!.length)
+                        if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
                                     {
                                     this.platformToGameKeyMapping[id]= input as GameKey;
@@ -267,10 +270,10 @@ var id = id
     var index: number = 0;
         
         
-index < platformToGameKeyMapping!.length; index++)
+index < this.platformToGameKeyMapping!.length; index++)
         {
 
-                        if(platformToGameKeyMapping[index]!.getId() == id)
+                        if(this.platformToGameKeyMapping[index]!.getId() == id)
                         
                                     {
                                     
@@ -316,10 +319,10 @@ var gameKey = gameKey
 ;
     
 
-                        if(key < 0 &&  -key < negativePlatformToGameKeyMapping!.length)
+                        if(key < 0 &&  -key < this.negativePlatformToGameKeyMapping!.length)
                         
                                     {
-                                    negativePlatformToGameKeyMapping[ -key]= gameKey;
+                                    this.negativePlatformToGameKeyMapping[ -key]= gameKey;
     
 
                                     }
@@ -329,10 +332,10 @@ var gameKey = gameKey
                         
                                     {
                                     
-                        if(platformToGameKeyMapping[key] == gameKeyFactory!.NONE)
+                        if(this.platformToGameKeyMapping[key] == this.gameKeyFactory!.NONE)
                         
                                     {
-                                    platformToGameKeyMapping[key]= gameKey;
+                                    this.platformToGameKeyMapping[key]= gameKey;
     
 
                                     }
@@ -443,7 +446,7 @@ negativePlatformToGameKeyMapping= new Array( -smallestKey);
         
 --index >= 0; )
         {
-negativePlatformToGameKeyMapping[index]= gameKeyFactory!.NONE;
+negativePlatformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
     
 }
 
@@ -482,7 +485,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
 var canvas = canvas
 var id = id
 
-                        if(id >= 0 && id < platformToGameKeyMapping!.length)
+                        if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
                                     {
                                     
@@ -495,7 +498,7 @@ var id = id
                                     }
                                 
                              else 
-                        if(id < 0 &&  -id < negativePlatformToGameKeyMapping!.length)
+                        if(id < 0 &&  -id < this.negativePlatformToGameKeyMapping!.length)
                         
                                     {
                                     
@@ -523,7 +526,7 @@ var id = id
     public getInstance(id: number): GameKey{
 var id = id
 
-                        if(id >= 0 && id < platformToGameKeyMapping!.length)
+                        if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
                                     {
                                     
@@ -536,7 +539,7 @@ var id = id
                                     }
                                 
                              else 
-                        if(id < 0 &&  -id < negativePlatformToGameKeyMapping!.length)
+                        if(id < 0 &&  -id < this.negativePlatformToGameKeyMapping!.length)
                         
                                     {
                                     

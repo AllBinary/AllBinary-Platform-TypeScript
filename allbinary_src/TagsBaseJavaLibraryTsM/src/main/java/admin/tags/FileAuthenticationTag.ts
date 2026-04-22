@@ -84,7 +84,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -123,7 +126,7 @@ export class FileAuthenticationTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setCommand(command: string){
@@ -193,12 +196,12 @@ this.timeout= this.weblisketSession!.getTimeout();
 
     public nextAttempt(){
 
-                        if(attemptsInteger != 
+                        if(this.attemptsInteger != 
                                     null
-                                 && attemptsInteger!.toInt() > 0)
+                                 && this.attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.toInt() +1));
     
 
                                     }
@@ -218,25 +221,25 @@ this.timeout= this.weblisketSession!.getTimeout();
 
         try {
             
-    var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
+    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
 ;
     
 
-    var password: string = request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
+    var password: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
         
         
 ;
     
 
-    var newPassword: string = request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
+    var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
         
         
 ;
     
 
-    var newReenteredPassword: string = request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
+    var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
         
         
 ;
@@ -503,7 +506,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 ;
     
 
-    var timePassed: number = role.getSessionInactivityTimeout()!;
+    var timePassed: number = this.role.getSessionInactivityTimeout()!;
         
         
 ;
@@ -723,11 +726,11 @@ stringBuffer!.append("Trying New login<p>");
 
         try {
             
-                        if(BooleanUtil.getInstance()!.getFromString(authenticated))
+                        if(BooleanUtil.getInstance()!.getFromString(this.authenticated))
                         
                                     {
                                     
-    var size: number = roles.length!;
+    var size: number = this.roles.length!;
         
         
 ;
@@ -743,7 +746,7 @@ stringBuffer!.append("Trying New login<p>");
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = roles.get(index);
+    var mustBeOfRole: BasicUserRole = this.roles.get(index);
 
                          as BasicUserRole;
         
@@ -751,7 +754,7 @@ index < size; index++)
 ;
     
 
-                        if(sessionUserName != 
+                        if(this.sessionUserName != 
                                     null
                                  && role.equals(mustBeOfRole))
                         
@@ -827,11 +830,11 @@ index < size; index++)
                                     }
                                 
 
-                        if(userName != 
+                        if(this.userName != 
                                     null
-                                 && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
+                                 && this.userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
                                     null
-                                 && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && this.password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     
@@ -845,7 +848,7 @@ index < size; index++)
 ;
     
 
-                        if(installerInfo!.isValid(userName, password))
+                        if(installerInfo!.isValid(this.userName, this.password))
                         
                                     {
                                     login= org.allbinary.globals.GLOBALS2.LOGINSUCCESS;
@@ -929,7 +932,7 @@ this.nextAttempt();
 
         try {
             
-                        if(BooleanUtil.getInstance()!.getFromString(timeout))
+                        if(BooleanUtil.getInstance()!.getFromString(this.timeout))
                         
                                     {
                                     this.invalidateSession();
@@ -1014,13 +1017,13 @@ this.getFormData();
                                     }
                                 
 
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
                                     {
                                     
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
                         
                                     {
                                     
@@ -1109,7 +1112,7 @@ this.getFormData();
 pageContext!.getOut()!.print("Please login again.<p>");
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1145,7 +1148,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1174,9 +1177,9 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if((userName == 
+                        if((this.userName == 
                                     null
-                                 || userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
+                                 || this.userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
                                     null
                                  || password.compareTo(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
                                     null
@@ -1193,7 +1196,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1251,7 +1254,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
 pageContext!.getOut()!.print(validRole());
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1289,7 +1292,7 @@ pageContext!.getOut()!.print(validRole());
 pageContext!.getOut()!.print(invalidRole());
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1328,11 +1331,11 @@ pageContext!.getOut()!.print(invalidRole());
                                     }
                                 
 
-                        if(userName != 
+                        if(this.userName != 
                                     null
-                                 && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
+                                 && this.userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
                                     null
-                                 && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && this.password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p>");
@@ -1371,7 +1374,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     

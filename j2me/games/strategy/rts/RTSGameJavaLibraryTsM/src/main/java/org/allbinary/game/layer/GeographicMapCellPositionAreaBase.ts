@@ -37,12 +37,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeographicMapCellPositionAreaInterface } from "./GeographicMapCellPositionAreaInterface.js";
+
 export class GeographicMapCellPositionAreaBase
             extends Object
          implements GeographicMapCellPositionAreaInterface {

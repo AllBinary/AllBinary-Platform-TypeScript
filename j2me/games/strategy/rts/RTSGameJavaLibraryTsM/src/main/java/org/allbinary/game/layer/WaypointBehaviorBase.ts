@@ -49,7 +49,10 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class WaypointBehaviorBase
 public constructor (){
 
             super();
-            this.ownedWaypointList= new BasicArrayList(1);
+        this.ownedWaypointList= new BasicArrayList(1);
     
 }
 

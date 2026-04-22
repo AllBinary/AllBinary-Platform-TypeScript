@@ -31,7 +31,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ stringBuffer!.append(params[index]!.getName());
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

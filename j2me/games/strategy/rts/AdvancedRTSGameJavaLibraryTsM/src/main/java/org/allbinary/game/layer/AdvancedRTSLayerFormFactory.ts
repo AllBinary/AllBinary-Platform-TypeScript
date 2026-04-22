@@ -46,7 +46,10 @@ import { ItemArraySingletonFactoryInterface } from "../../../../org/allbinary/gr
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
 protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingletonFactoryInterface){
 
             super();
-                //var label = label
+            //var label = label
     //var itemArrayFactoryInterface = itemArrayFactoryInterface
 
     var scrollSelectionForm: ScrollSelectionForm = ScrollSelectionForm.NULL_SCROLL_SELECTION_FORM;

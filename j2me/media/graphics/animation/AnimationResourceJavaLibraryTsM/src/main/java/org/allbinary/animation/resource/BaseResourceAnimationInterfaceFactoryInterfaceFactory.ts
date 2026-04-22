@@ -61,12 +61,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { FeatureResourceAnimationInterfaceFactoryInterface } from "./FeatureResourceAnimationInterfaceFactoryInterface.js";
+
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object
          implements FeatureResourceAnimationInterfaceFactoryInterface {
@@ -92,7 +97,7 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
 public constructor (name: string){
 
             super();
-                //var name = name
+            //var name = name
 this.hashtable= new Hashtable<any, any>();
     
 this.rectangleHashtable= new Hashtable<any, any>();
@@ -106,7 +111,7 @@ this.name= name;
 public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
 
             super();
-                //var name = name
+            //var name = name
     //var hashtable = hashtable
     //var rectangleHashtable = rectangleHashtable
     //var rectangleArrayHashtable = rectangleArrayHashtable
@@ -142,7 +147,7 @@ this.name= name;
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append("Available List of Animations: ")!.append(hashtable.toString())!.toString(), this, commonStrings!.INIT);
+                            append("Available List of Animations: ")!.append(this.hashtable.toString())!.toString(), this, commonStrings!.INIT);
     
 this.setInitialized(true);
     
@@ -163,7 +168,7 @@ this.setInitialized(true);
     //var resource = resource
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
 
-                        if(hashtable.containsKey(resource as Object))
+                        if(this.hashtable.containsKey(resource as Object))
                         
                                     {
                                     
@@ -174,7 +179,7 @@ this.setInitialized(true);
 
                                     }
                                 
-hashtable.put(resource, animationInterfaceFactoryInterface);
+this.hashtable.put(resource, animationInterfaceFactoryInterface);
     
 }
 
@@ -184,7 +189,7 @@ hashtable.put(resource, animationInterfaceFactoryInterface);
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
 
-    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any? = hashtable.get(resource as Object);
+    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any? = this.hashtable.get(resource as Object);
         
         
 ;
@@ -218,7 +223,7 @@ hashtable.put(resource, animationInterfaceFactoryInterface);
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
 
-    var rectangleCanBeNull: any? = rectangleHashtable!.get(resource as Object);
+    var rectangleCanBeNull: any? = this.rectangleHashtable!.get(resource as Object);
         
         
 ;
@@ -252,7 +257,7 @@ hashtable.put(resource, animationInterfaceFactoryInterface);
     public addRectangle(resource: string, rectangle: Rectangle){
     //var resource = resource
     //var rectangle = rectangle
-rectangleHashtable!.put(resource, rectangle);
+this.rectangleHashtable!.put(resource, rectangle);
     
 }
 
@@ -265,7 +270,7 @@ rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangleArrayOfArraysHashtable!.get(resource as Object);
+                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object);
 
                         as Array<Rectangle[]?>;
     
@@ -277,7 +282,7 @@ rectangleHashtable!.put(resource, rectangle);
     public addRectangleArrayOfArrays(resource: string, rectangleArrayOfArrays: Rectangle[][]){
     //var resource = resource
     //var rectangleArrayOfArrays = rectangleArrayOfArrays
-rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
+this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
     
 }
 

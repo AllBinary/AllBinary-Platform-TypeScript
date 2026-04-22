@@ -40,7 +40,10 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class ImageThreadPool extends ThreadPool {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (poolName: string, numThreads: number)                        
-
-                            : super(poolName, numThreads){
-
-            super();
-                //var poolName = poolName
+public constructor (poolName: string, numThreads: number){
+            super(poolName, numThreads);
+                        //var poolName = poolName
     //var numThreads = numThreads
 
 

@@ -49,12 +49,17 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInterface.js";
+
 import { JPopupMenu } from "./JPopupMenu.js";
 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
@@ -117,12 +122,9 @@ export class ProfileActionScriptItem extends DefaultMutableTreeNode implements P
         
 
     private jPopupMenu: JPopupMenu
-public constructor (label: string, node: Node)                        
-
-                            : super(label){
-
-            super();
-            var label = label
+public constructor (label: string, node: Node){
+            super(label);
+                    var label = label
 var node = node
 
 
@@ -134,12 +136,9 @@ this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
-public constructor (label: string)                        
-
-                            : super(label){
-
-            super();
-            var label = label
+public constructor (label: string){
+            super(label);
+                    var label = label
 
 
                             //For kotlin this is before the body of the constructor.

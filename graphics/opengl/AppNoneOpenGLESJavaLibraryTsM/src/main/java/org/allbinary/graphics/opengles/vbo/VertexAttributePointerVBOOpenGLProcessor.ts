@@ -34,7 +34,10 @@ import { ObjectThreedOpenGLProcessor } from "../../../../../org/allbinary/graphi
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class VertexAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGL
 public constructor (){
 
             super();
-            }
+        }
 
 
     public process(gl: GL10, anyType: any = {}){

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class NameSpaceRequestParamData
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

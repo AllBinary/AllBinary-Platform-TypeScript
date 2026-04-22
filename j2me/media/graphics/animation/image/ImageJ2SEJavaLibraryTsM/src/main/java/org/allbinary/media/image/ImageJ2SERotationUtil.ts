@@ -37,7 +37,10 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class ImageJ2SERotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getRotatedImage(bufferedImage: Image, totalAngle: number): BufferedImage{
@@ -156,7 +159,7 @@ g.dispose();
         
 ;
     
-g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR);
+g.setBackground(this.imageJ2SEUtil!.TRANSPARENT_COLOR);
     
 g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
     
@@ -203,7 +206,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 ;
     
 
-    var arc: number = (TWO_PIE) *totalAngle /360;
+    var arc: number = () *totalAngle /360;
         
         
 ;

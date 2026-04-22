@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProgressActivityInterface } from "./ProgressActivityInterface.js";
+
 import { Runnable } from "./Runnable.js";
 
 export class NullProgressActivity

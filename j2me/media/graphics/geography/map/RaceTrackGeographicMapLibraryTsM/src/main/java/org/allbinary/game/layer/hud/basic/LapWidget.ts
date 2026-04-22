@@ -46,7 +46,10 @@ import { BasicColor } from "../../../../../../org/allbinary/graphics/color/Basic
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class LapWidget extends BasicHud {
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-public constructor (location: number, direction: number, basicColor: BasicColor)                        
-
-                            : super(location, direction, 15, 40, 2, basicColor){
-
-            super();
-            var location = location
+public constructor (location: number, direction: number, basicColor: BasicColor){
+            super(location, direction, 15, 40, 2, basicColor);
+                    var location = location
 var direction = direction
 var basicColor = basicColor
 
@@ -91,11 +91,11 @@ var lapInfo = lapInfo
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(LAP_STR);
+stringBuffer!.append(this.LAP_STR);
     
 stringBuffer!.appendint(lapInfo!.getCurrentLap());
     
-stringBuffer!.append(OF_STR);
+stringBuffer!.append(this.OF_STR);
     
 stringBuffer!.appendint(lapInfo!.getTotalLaps());
     

@@ -37,12 +37,17 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
+
 import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
 
 import { VectorRotationGenerator } from "./VectorRotationGenerator.js";
@@ -68,7 +73,7 @@ export class IndependentVectorExplosionRotationAnimationFactory
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, vectorAnimationFactoryInterface: VectorAnimationFactoryInterface){
 
             super();
-            var vectorInfo = vectorInfo
+        var vectorInfo = vectorInfo
 var basicColor = basicColor
 var vectorAnimationFactoryInterface = vectorAnimationFactoryInterface
 this.vectorInfo= vectorInfo;
@@ -85,7 +90,7 @@ this.init();
                 //@Throws(Error::class)
             
     init(){
-framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo);
+this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo);
     
 }
 
@@ -122,7 +127,7 @@ frame= rotationAnimationInterface!.getFrame();
                                     }
                                 
 
-    var points: number[][][] = vectorExplosionGenerator!.getInstance(framePoints[frame]!, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, vectorExplosionGenerator!.ROTATION)!;
         
         
 ;

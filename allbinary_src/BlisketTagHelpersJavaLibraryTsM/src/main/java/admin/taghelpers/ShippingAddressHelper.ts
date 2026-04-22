@@ -72,7 +72,10 @@ import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ export class ShippingAddressHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -119,7 +122,7 @@ this.getAddressForm();
 
 
     getAddressForm(){
-this.userName= request.getParameter(UserData.USERNAME);
+this.userName= this.request.getParameter(UserData.USERNAME);
     
 
                         if(this.userName == 
@@ -127,12 +130,12 @@ this.userName= request.getParameter(UserData.USERNAME);
                                 )
                         
                                     {
-                                    this.userName= request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME);
+                                    this.userName= this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME);
     
 
                                     }
                                 
-this.streetAddress= new StreetAddress(request);
+this.streetAddress= new StreetAddress(this.request);
     
 }
 
@@ -141,7 +144,7 @@ this.streetAddress= new StreetAddress(request);
 
         try {
             
-    var success: string = new ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             drop()!;
         
         
@@ -196,7 +199,7 @@ this.streetAddress= new StreetAddress(request);
 
         try {
             
-    var success: string = new ShippingAddressesEntity(stringUtil!.EMPTY_STRING).
+    var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             createTable()!;
         
         

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,7 +44,7 @@ export class AbCrypt
 public constructor (algorithm: string, key: string){
 
             super();
-            var algorithm = algorithm
+        var algorithm = algorithm
 var key = key
 }
 

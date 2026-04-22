@@ -43,7 +43,10 @@ import { EmailInfo } from "../../../../../../../org/allbinary/logic/communicatio
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class UserEmailEventHandler
 public constructor (){
 
             super();
-            this.emailVector= new Vector();
+        this.emailVector= new Vector();
     
 }
 
@@ -143,7 +146,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 ;
     
 
-    var size: number = emailVector!.length!;
+    var size: number = this.emailVector!.length!;
         
         
 ;
@@ -159,7 +162,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = emailVector!.get(index);
+    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index);
 
                          as UserEmailEventListenerInterface;
         

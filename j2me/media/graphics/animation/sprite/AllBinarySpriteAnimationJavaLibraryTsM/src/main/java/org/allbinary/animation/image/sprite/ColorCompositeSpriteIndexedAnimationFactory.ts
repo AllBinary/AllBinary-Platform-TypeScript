@@ -52,7 +52,10 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimat
         
 
     private readonly basicColorArray: BasicColor[]
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number)                        
-
-                            : this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number){
+            this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -81,12 +81,9 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
                     
 }
 
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
     //var height = height
@@ -105,7 +102,7 @@ this.basicColorArray= basicColorArray;
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-    var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
+    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
 ;

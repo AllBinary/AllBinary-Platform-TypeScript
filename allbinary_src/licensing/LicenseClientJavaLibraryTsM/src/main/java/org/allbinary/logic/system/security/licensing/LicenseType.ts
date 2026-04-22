@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class LicenseType
 protected constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.setName(name);
     
 }

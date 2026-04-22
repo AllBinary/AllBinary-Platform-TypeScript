@@ -33,7 +33,10 @@ import { HardwareComponentInterface } from "../../../../../../../org/allbinary/l
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class UnknownHardware
 public constructor (data: string){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }

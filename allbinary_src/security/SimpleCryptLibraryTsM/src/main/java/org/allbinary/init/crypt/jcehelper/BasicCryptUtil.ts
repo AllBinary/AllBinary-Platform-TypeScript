@@ -40,7 +40,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -122,7 +125,7 @@ buffer.write(ch);
 ;
     
 
-    var index: number = decryptedString!.indexOf(XML_START)!;
+    var index: number = decryptedString!.indexOf(this.XML_START)!;
         
         
 ;

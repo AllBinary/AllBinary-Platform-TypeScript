@@ -55,7 +55,10 @@ import { ImageToRotationImageArrayUtil } from "../../../../org/allbinary/media/i
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,18 +77,18 @@ export class PooledImageArrayRotationAnimationFactory
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory;
     
-this.init(image, image.getWidth(), image.getHeight(),  -(image.getWidth() shr 2),  -(image.getHeight() shr 2));
+this.init(image, image.getWidth(), image.getHeight(),  -(image.getWidth()>>2),  -(image.getHeight()>>2));
     
 }
 
 public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var dx = dx
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -98,7 +101,7 @@ this.init(image, image.getWidth(), image.getHeight(), dx, dy);
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -113,7 +116,7 @@ this.init(image, width, height, dx, dy);
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -136,7 +139,7 @@ this.init(image, width, height, dx, dy, angleIncrement);
     //var dx = dx
     //var dy = dy
 
-    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE.toInt();
+    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
         
         
 ;
@@ -162,7 +165,7 @@ this.init(image, width, height, dx, dy, angleIncrement);
     //var dy = dy
     //var angleIncrement = angleIncrement
 
-    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE.toInt();
+    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
         
         
 ;
@@ -173,7 +176,7 @@ this.init(image, width, height, dx, dy, angleIncrement);
         
 ;
     
-allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
+this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageArray, angleIncrement, totalAngle, dx, dy);
     
 }
 
@@ -186,7 +189,7 @@ allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(imageAr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdjustedImageArrayRotationAnimation(allBinaryImageRotationAnimationInfo, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(this.allBinaryImageRotationAnimationInfo, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

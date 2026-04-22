@@ -61,7 +61,10 @@ import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellP
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -155,7 +158,7 @@ var index = index
 ;
     
 
-    var randomCell: number = myRandomFactory!.getAbsoluteNextInt(this.totalCells)!;
+    var randomCell: number = this.myRandomFactory!.getAbsoluteNextInt(this.totalCells)!;
         
         
 ;

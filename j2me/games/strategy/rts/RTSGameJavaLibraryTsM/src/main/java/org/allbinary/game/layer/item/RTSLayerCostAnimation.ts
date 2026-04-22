@@ -67,7 +67,10 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,7 +111,7 @@ export class RTSLayerCostAnimation extends Animation implements TechEventListene
 public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface){
 
             super();
-            var image = image
+        var image = image
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.image= image;
     
@@ -168,7 +171,7 @@ var y = y
 super.paint(graphics, x, y);
     
 
-    var adjustedCostY: number = image.getHeight() -myFont!.DEFAULT_CHAR_HEIGHT;
+    var adjustedCostY: number = this.image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
 ;
@@ -179,7 +182,7 @@ super.paint(graphics, x, y);
         
 ;
     
-graphics.drawString(DOLLAR, xa, y +adjustedCostY, 0);
+graphics.drawString(this.DOLLAR, xa, y +adjustedCostY, 0);
     
 graphics.drawChars(costString, 0, this.len, x +adjustedCostX, y +adjustedCostY, 0);
     

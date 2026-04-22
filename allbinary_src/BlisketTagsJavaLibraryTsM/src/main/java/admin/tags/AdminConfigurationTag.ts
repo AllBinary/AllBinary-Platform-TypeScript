@@ -34,7 +34,10 @@ import { AdminConfigurationRequestHelperFactory } from "../../admin/taghelpers/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class AdminConfigurationTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new AdminConfigurationHelperFactory());
+        this.setTagHelperFactory(new AdminConfigurationHelperFactory());
     
 this.setTagRequestHelperFactory(new AdminConfigurationRequestHelperFactory());
     

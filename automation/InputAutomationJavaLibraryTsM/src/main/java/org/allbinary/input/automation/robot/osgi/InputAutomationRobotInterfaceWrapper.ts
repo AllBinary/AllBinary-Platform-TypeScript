@@ -31,7 +31,10 @@ import { InputRobotInterface } from "../../../../../../org/allbinary/input/autom
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class InputAutomationRobotInterfaceWrapper
 public constructor (inputRobotInterface: InputRobotInterface){
 
             super();
-            var inputRobotInterface = inputRobotInterface
+        var inputRobotInterface = inputRobotInterface
 this.setInputRobotInterface(inputRobotInterface);
     
 }

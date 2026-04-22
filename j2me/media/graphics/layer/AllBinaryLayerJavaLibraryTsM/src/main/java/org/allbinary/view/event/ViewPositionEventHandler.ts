@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,18 +81,18 @@ export class ViewPositionEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!list.contains(layerInterface);
+                        if(!this.list.contains(layerInterface);
 
                         )
                         
                                     {
-                                    list.add(layerInterface);
+                                    this.list.add(layerInterface);
     
 
                                     }

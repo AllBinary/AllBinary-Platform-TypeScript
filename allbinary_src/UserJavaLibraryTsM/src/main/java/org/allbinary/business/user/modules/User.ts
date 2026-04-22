@@ -106,7 +106,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -169,7 +172,7 @@ export class User
 public constructor (){
 
             super();
-            this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance();
+        this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance();
     
 this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -178,7 +181,7 @@ this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (request: HttpServletRequest){
 
             super();
-                //var request = request
+            //var request = request
 this.getFormData(new RequestParams(request).
                             toHashMap());
     
@@ -189,7 +192,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 public constructor (userHashMap: HashMap<any, any>){
 
             super();
-                //var userHashMap = userHashMap
+            //var userHashMap = userHashMap
 this.getFormData(userHashMap);
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
@@ -388,7 +391,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN);
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);
 
                         )
                         
@@ -399,7 +402,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN);
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);
 
                         )
                         
@@ -476,7 +479,7 @@ stringBuffer!.append(UserName.getValidationInfo(this.userName));
 stringBuffer!.append(this.password.getValidationInfo());
     
 
-                        if(!stringValidationUtil!.isValidRequired(firstName, 1, UserData.MAXLEN);
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);
 
                         )
                         
@@ -487,7 +490,7 @@ stringBuffer!.append(this.password.getValidationInfo());
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(lastName, 1, UserData.MAXLEN);
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);
 
                         )
                         
@@ -927,37 +930,37 @@ this.enable= enable;
         
 ;
     
-values.add(userName);
+values.add(this.userName);
     
-values.add(prefixName);
+values.add(this.prefixName);
     
-values.add(firstName);
+values.add(this.firstName);
     
-values.add(lastName);
+values.add(this.lastName);
     
-values.add(middleName);
+values.add(this.middleName);
     
-values.add(suffixName);
+values.add(this.suffixName);
     
-values.add(company);
+values.add(this.company);
     
-values.add(positionAtCompany);
+values.add(this.positionAtCompany);
     
-values.add(mainEmail);
+values.add(this.mainEmail);
     
-values.add(secondaryEmail);
+values.add(this.secondaryEmail);
     
-values.add(homePhone);
+values.add(this.homePhone);
     
-values.add(cellPhone);
+values.add(this.cellPhone);
     
-values.add(workPhone);
+values.add(this.workPhone);
     
-values.add(otherContact);
+values.add(this.otherContact);
     
-values.add(electronicDevice);
+values.add(this.electronicDevice);
     
-values.add(fax);
+values.add(this.fax);
     
 values.add(this.getRole()!.toString());
     

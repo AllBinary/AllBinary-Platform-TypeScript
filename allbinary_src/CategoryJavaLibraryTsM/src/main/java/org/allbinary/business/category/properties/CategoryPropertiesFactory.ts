@@ -40,12 +40,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CategoryPropertiesFactoryInterface } from "./CategoryPropertiesFactoryInterface.js";
+
 import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
 
 export class CategoryPropertiesFactory
@@ -61,7 +66,7 @@ export class CategoryPropertiesFactory
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
     
 }
@@ -69,7 +74,7 @@ this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryProper
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
     
 }
@@ -77,7 +82,7 @@ this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryProper
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-            var categoryPropertiesHashMap = categoryPropertiesHashMap
+        var categoryPropertiesHashMap = categoryPropertiesHashMap
 this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }

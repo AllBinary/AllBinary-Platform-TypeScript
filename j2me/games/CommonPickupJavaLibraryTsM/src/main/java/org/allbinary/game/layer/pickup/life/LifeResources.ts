@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class LifeResources
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

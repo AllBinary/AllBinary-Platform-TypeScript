@@ -46,7 +46,10 @@ import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
         
         
-public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping)                        
-
-                            : super(name, motionGestureInput){
-
-            super();
-            var name = name
+public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
+            super(name, motionGestureInput);
+                    var name = name
 var motionGestureInput = motionGestureInput
 var inputToGameKeyMapping = inputToGameKeyMapping
 

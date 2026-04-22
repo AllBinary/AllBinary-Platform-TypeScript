@@ -37,7 +37,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -110,7 +113,7 @@ var rect2Y2 = rect2Y2
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

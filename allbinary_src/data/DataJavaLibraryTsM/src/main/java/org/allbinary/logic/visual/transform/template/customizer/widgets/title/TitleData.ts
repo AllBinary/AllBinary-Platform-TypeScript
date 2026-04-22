@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TitleData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "TITLE_NAME";

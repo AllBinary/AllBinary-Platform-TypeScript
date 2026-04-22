@@ -49,7 +49,10 @@ import { EmailQueueFactory } from "../../../../../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class UserEmailEventListenerModule
 public constructor (userInterface: UserInterface){
 
             super();
-            var userInterface = userInterface
+        var userInterface = userInterface
 this.userInterface= userInterface;
     
 }

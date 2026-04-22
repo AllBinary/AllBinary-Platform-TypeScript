@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,7 +104,7 @@ export class UploadMediaSingleton
 private constructor (){
 
             super();
-            this.readerFileTypesHashMap= new HashMap<any, any>();
+        this.readerFileTypesHashMap= new HashMap<any, any>();
     
 this.writerFileTypesHashMap= new HashMap<any, any>();
     

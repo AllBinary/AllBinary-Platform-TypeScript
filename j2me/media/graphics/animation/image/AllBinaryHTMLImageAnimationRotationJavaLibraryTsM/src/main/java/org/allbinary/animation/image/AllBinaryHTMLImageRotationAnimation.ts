@@ -64,7 +64,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -104,12 +107,9 @@ export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimat
     private alphaProcessor: AlphaBaseProcessor = AlphaBaseProcessor.getInstance()!;
         
         
-protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(image, angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var originalImage = originalImage
+protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(image, angleInfo, totalAngle, animationBehavior);
+                        //var originalImage = originalImage
     //var image = image
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -257,11 +257,11 @@ this.updateImage();
     
 canvasSurface!.save();
     
-this.imageRotationUtil!.rotateImageClear(originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90);
+this.imageRotationUtil!.rotateImageClear(this.originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90);
     
-this.alphaProcessor!.setAlpha(imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
+this.alphaProcessor!.setAlpha(this.imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
     
-this.imageRotationUtil!.drawImage(originalImage, imageToShow, canvasSurface);
+this.imageRotationUtil!.drawImage(this.originalImage, imageToShow, canvasSurface);
     
 canvasSurface!.restore();
     

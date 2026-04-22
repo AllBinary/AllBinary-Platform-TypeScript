@@ -52,7 +52,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class QuoteRequestTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new QuoteHelperFactory());
+        this.setTagHelperFactory(new QuoteHelperFactory());
     
 this.setTagRequestHelperFactory(new QuoteRequestHelperFactory());
     

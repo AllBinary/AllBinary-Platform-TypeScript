@@ -31,7 +31,10 @@ import { AllBinarySensor } from "../../../../../org/allbinary/input/AllBinarySen
 
 
 
-        
+
+
+
+
 
 
 
@@ -42,7 +45,7 @@ export class AllBinaryMagneticFieldSensor extends AllBinarySensor {
 protected constructor (){
 
             super();
-            }
+        }
 
 
 }

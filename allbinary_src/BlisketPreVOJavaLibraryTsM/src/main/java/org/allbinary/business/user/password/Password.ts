@@ -60,7 +60,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class Password
 public constructor (password: string){
 
             super();
-            var password = password
+        var password = password
 this.password= password;
     
 }
@@ -230,7 +233,7 @@ vector.add(new Integer(random).
 vector.add(secret);
     
 vector.add(new SuperCrypt(random).
-                            encrypt(password));
+                            encrypt(this.password));
     
 
 

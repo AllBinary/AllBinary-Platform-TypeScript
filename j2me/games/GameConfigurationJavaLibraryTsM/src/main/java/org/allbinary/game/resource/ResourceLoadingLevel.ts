@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class ResourceLoadingLevel
  constructor (name: string, level: number){
 
             super();
-            var name = name
+        var name = name
 var level = level
 this.name= name;
     

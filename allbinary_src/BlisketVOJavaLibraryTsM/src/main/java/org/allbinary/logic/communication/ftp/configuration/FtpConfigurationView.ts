@@ -49,7 +49,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class FtpConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
@@ -114,7 +117,7 @@ this.getFtpConfigurationInterface()!.setPath(path);
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
-            var ftpConfigurationInterface = ftpConfigurationInterface
+        var ftpConfigurationInterface = ftpConfigurationInterface
 this.setFtpConfigurationInterface(ftpConfigurationInterface);
     
 }

@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,10 +71,10 @@ export class SmallDelete
 public constructor (fileName: string){
 
             super();
-            var fileName = fileName
+        var fileName = fileName
 this.fileName= fileName;
     
-string= FileUtil.getInstance()!.readAsString(fileName);
+this.string= FileUtil.getInstance()!.readAsString(fileName);
     
 }
 
@@ -137,7 +140,7 @@ idOutData!.writeBytes(text);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteAtStart", e);
     
 
                                     }
@@ -221,7 +224,7 @@ idOutData!.writeBytes(newStart +newText +text);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.IDLOGGING))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "deleteAtStart", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteAtStart", e);
     
 
                                     }

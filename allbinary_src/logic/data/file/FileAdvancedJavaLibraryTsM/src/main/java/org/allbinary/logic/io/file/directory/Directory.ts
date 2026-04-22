@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class Directory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public create(directoryAbPath: AbPath): boolean{

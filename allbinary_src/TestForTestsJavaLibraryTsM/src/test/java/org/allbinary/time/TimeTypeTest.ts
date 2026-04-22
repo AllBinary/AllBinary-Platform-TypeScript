@@ -26,7 +26,10 @@ import { Test } from "../../../org/junit/jupiter/api/Test.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class TestableTimeTypeUtil extends TimeTypeUtil {
  constructor (hour: number){
 
             super();
-            var hour = hour
+        var hour = hour
 this.hour= hour;
     
 }

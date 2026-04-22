@@ -51,7 +51,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class BasketReview
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): Boolean{
@@ -85,7 +88,7 @@ public constructor (){
 
     public addItem(item: Item){
 var item = item
-items.add(item);
+this.items.add(item);
     
 }
 
@@ -103,7 +106,7 @@ items.add(item);
     public removeItem(id: string){
 var id = id
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;
@@ -135,7 +138,7 @@ index < size; index++)
                         if(item.getId()!.compareTo(id) == 0)
                         
                                     {
-                                    items.remove(item);
+                                    this.items.remove(item);
     
 
                                     }
@@ -149,7 +152,7 @@ index < size; index++)
 var id = id
 var num = num
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;
@@ -199,7 +202,7 @@ index < size; index++)
 ;
     
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;
@@ -249,7 +252,7 @@ weightFloat += new Float(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(items.length);
+                        return new Integer(this.items.length);
     
 }
 
@@ -262,7 +265,7 @@ weightFloat += new Float(item.getWeight()).
 ;
     
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;
@@ -306,7 +309,7 @@ idSet!.add(item.getId());
     public getNumberOf(id: string): Integer{
 var id = id
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;
@@ -369,7 +372,7 @@ var document = document
 ;
     
 
-    var itemArray: any[] = items.toArray()!;
+    var itemArray: any[] = this.items.toArray()!;
         
         
 ;

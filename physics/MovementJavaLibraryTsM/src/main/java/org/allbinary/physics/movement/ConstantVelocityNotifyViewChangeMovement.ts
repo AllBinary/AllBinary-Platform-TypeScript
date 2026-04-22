@@ -46,7 +46,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class ConstantVelocityNotifyViewChangeMovement extends Movement {
 public constructor (){
 
             super();
-            this.speedBasicDecimal= BasicDecimal.ZERO_BIGDECIMAL;
+        this.speedBasicDecimal= BasicDecimal.ZERO_BIGDECIMAL;
     
 this.basicVelocityProperties= new BasicVelocityProperties();
     
@@ -103,19 +106,19 @@ var otherAngle = otherAngle
 ;
     
 
-    var xVector: number = (axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue).toInt();
+    var xVector: number = (this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
         
         
 ;
     
 
-    var yVector: number = (axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue).toInt();
+    var yVector: number = (this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
         
         
 ;
     
 
-    var zVector: number = (axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue).toInt();
+    var zVector: number = (this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue);
         
         
 ;

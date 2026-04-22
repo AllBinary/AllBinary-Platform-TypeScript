@@ -37,7 +37,10 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class DestroyEventCircularStaticPool
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(combatGameCanvas: AllBinaryGameCanvas){

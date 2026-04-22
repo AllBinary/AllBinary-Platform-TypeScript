@@ -31,7 +31,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export class HtmlTableData
 
     public readonly FRAMES: string[] = 
                                                         [
-                                                            NONE,TOP,BOTTOM,TOPBOT,SIDES,ALL,BORDERED
+                                                            this.NONE,TOP,BOTTOM,TOPBOT,SIDES,ALL,this.BORDERED
                                                         ];
         
         

@@ -55,7 +55,10 @@ import { ModifyTag } from "../../../tags/ModifyTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,23 +92,17 @@ export class TransformInfoTag extends ModifyTag {
     private data: string
 
     private type: string
-public constructor ()                        
-
-                            : super(new TransformInfoRequestHelperFactory()){
-
-            super();
-            
+public constructor (){
+            super(new TransformInfoRequestHelperFactory());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)                        
-
-                            : super(tagHelperFactoryInterface){
-
-            super();
-            var tagHelperFactoryInterface = tagHelperFactoryInterface
+public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
+            super(tagHelperFactoryInterface);
+                    var tagHelperFactoryInterface = tagHelperFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

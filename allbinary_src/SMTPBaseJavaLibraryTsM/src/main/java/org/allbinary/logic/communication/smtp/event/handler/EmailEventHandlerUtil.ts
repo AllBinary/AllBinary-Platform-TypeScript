@@ -61,7 +61,10 @@ import { AbeClientInformationInterface } from "../../../../../../../org/allbinar
 
 
 
-        
+
+
+
+
 
 
 
@@ -141,7 +144,7 @@ vector.add(userEmailEventListenerInterface);
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

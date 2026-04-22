@@ -43,7 +43,10 @@ import { RunnableInterface } from "../../../../../../../org/allbinary/thread/Run
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class TestModuleFactory extends AbstractInputAutomationFactory {
         
 
     private blankModuleConfigurationJPanel: BlankModuleConfigurationJPanel
-public constructor ()                        
-
-                            : super(NAME, new BlankModuleConfigurationJPanel()){
-
-            super();
-            
+public constructor (){
+            super(NAME, new BlankModuleConfigurationJPanel());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

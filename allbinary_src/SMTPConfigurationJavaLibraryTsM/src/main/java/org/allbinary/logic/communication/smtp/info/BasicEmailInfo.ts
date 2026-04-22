@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class BasicEmailInfo
 public constructor (subject: string, textBody: string){
 
             super();
-            var subject = subject
+        var subject = subject
 var textBody = textBody
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))

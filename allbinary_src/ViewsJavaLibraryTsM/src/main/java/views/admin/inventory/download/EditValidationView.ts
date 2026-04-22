@@ -81,7 +81,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class EditValidationView extends DownloadableInventoryItemView implements
         
 
     private downloadItemId: string
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

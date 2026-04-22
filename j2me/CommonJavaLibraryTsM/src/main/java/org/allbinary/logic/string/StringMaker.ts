@@ -16,7 +16,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -33,7 +36,7 @@ export class StringMaker
 public constructor (){
 
             super();
-            this.charArray= new Array(20);
+        this.charArray= new Array(20);
     
 }
 

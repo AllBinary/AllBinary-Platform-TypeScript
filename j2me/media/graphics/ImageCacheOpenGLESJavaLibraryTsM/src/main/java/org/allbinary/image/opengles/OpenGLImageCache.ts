@@ -61,7 +61,10 @@ import { SynchObject } from "../../../../org/allbinary/thread/SynchObject.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ export class OpenGLImageCache extends ImageCache {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(renderer: any = {}){
@@ -117,7 +120,7 @@ this.gl= gl;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lock) 
+        synchronized(this.lock) 
 
         //mutex.withLock
         {
@@ -126,13 +129,13 @@ this.gl= gl;
 
 
                         for (
-    var index: number = list.size() -1;
+    var index: number = this.list.size() -1;
         
         
 index >= 0; index--)
         {
 
-    var openGLESImage: OpenGLESImage = (list.objectArray[index]! as OpenGLESImage);
+    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);
         
         
 ;
@@ -192,7 +195,7 @@ height= textureSize;
 ;
     
 
-    var image: Image = preResourceImageUtil!.encapsulate(image2)!;
+    var image: Image = this.preResourceImageUtil!.encapsulate(image2)!;
         
         
 ;
@@ -200,7 +203,7 @@ height= textureSize;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lock) 
+        synchronized(this.lock) 
 
         //mutex.withLock
         {
@@ -208,7 +211,7 @@ height= textureSize;
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    list.add(image);
+                                    this.list.add(image);
     
 
                                     }
@@ -236,7 +239,7 @@ height= textureSize;
 ;
     
 
-    var image: Image = preResourceImageUtil!.encapsulate(cachedImage)!;
+    var image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;
         
         
 ;
@@ -244,7 +247,7 @@ height= textureSize;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lock) 
+        synchronized(this.lock) 
 
         //mutex.withLock
         {
@@ -252,7 +255,7 @@ height= textureSize;
                         if(image != NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    list.add(image);
+                                    this.list.add(image);
     
 
                                     }
@@ -285,12 +288,12 @@ height= textureSize;
             
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lock) 
+        synchronized(this.lock) 
 
         //mutex.withLock
         {
 
-                        if(list.contains(image))
+                        if(this.list.contains(image))
                         
                                     {
                                     
@@ -300,7 +303,7 @@ height= textureSize;
 
                                     }
                                 
-list.add(image);
+this.list.add(image);
     
 }
 

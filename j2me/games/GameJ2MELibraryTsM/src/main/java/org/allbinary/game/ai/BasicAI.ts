@@ -66,7 +66,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourc
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 
             super();
-            var ownerLayerInterface = ownerLayerInterface
+        var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 this.ownerLayerInterface= ownerLayerInterface;
     
@@ -121,7 +124,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -133,7 +136,7 @@ var key = key
                         if(key !=  -1)
                         
                                     {
-                                    this.gameInput!.add(gameKeyEventFactory!.getInstance(this, key));
+                                    this.gameInput!.add(this.gameKeyEventFactory!.getInstance(this, key));
     
 
                                     }

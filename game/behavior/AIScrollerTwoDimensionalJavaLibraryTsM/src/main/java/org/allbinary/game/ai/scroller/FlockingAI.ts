@@ -63,7 +63,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class FlockingAI extends BasicAI {
         
 
     private readonly allowedDistance: number
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 

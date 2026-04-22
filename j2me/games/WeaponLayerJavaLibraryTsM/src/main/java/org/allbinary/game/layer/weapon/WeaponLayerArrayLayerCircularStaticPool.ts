@@ -31,7 +31,10 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,21 +74,21 @@ export class WeaponLayerArrayLayerCircularStaticPool
 
     public init(){
 
-    var WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX *2)
+    var WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX *2)
                                                             ;
         
         
 ;
     
 
-    var TWO_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX)
+    var TWO_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX)
                                                             ;
         
         
 ;
     
 
-    var THREE_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(MAX)
+    var THREE_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX)
                                                             ;
         
         
@@ -99,7 +102,7 @@ export class WeaponLayerArrayLayerCircularStaticPool
     var index: number = 0;
         
         
-index < MAX; index++)
+index < this.MAX; index++)
         {
 WEAPONLAYER_ARRAY[index]= new Array(1);
     
@@ -109,11 +112,11 @@ THREE_WEAPONLAYER_ARRAY[index]= new Array(3);
     
 }
 
-ALL_WEAPONLAYER_ARRAY[1]= WEAPONLAYER_ARRAY;
+this.ALL_WEAPONLAYER_ARRAY[1]= WEAPONLAYER_ARRAY;
     
-ALL_WEAPONLAYER_ARRAY[2]= TWO_WEAPONLAYER_ARRAY;
+this.ALL_WEAPONLAYER_ARRAY[2]= TWO_WEAPONLAYER_ARRAY;
     
-ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
+this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
     
 }
 
@@ -124,12 +127,12 @@ ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
     public getInstance(size: number): WeaponLayer[]{
 var size = size
 
-    var weaponLayerArray: WeaponLayer[] = ALL_WEAPONLAYER_ARRAY[size]![circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
+    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
         
         
 ;
     
-circularIndexUtil!.next();
+this.circularIndexUtil!.next();
     
 
 

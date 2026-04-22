@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class LockableFeature
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.name= name;
     
 }
@@ -54,7 +57,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

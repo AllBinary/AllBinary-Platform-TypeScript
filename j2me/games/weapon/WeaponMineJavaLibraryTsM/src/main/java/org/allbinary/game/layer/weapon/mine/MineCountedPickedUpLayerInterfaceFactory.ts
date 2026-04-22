@@ -63,7 +63,10 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,12 +104,9 @@ pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFac
     private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool = MineLayerCircularStaticPool.getInstance()!;
         
         
-private constructor ()                        
-
-                            : super(PickedUpLayerTypeFactory.getInstance()!.MINE, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_ICON_RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_RESOURCE)!.getInstance(0)){
-
-            super();
-            
+private constructor (){
+            super(PickedUpLayerTypeFactory.getInstance()!.MINE, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_ICON_RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_RESOURCE)!.getInstance(0));
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -123,7 +123,7 @@ private constructor ()
 }
 
 
-    private readonly weaponProperties: WeaponProperties = new WeaponProperties(0, 8000, 10.toShort());
+    private readonly weaponProperties: WeaponProperties = new WeaponProperties(0, 8000, 10);
         
         
 
@@ -139,7 +139,7 @@ private constructor ()
     //var y = y
     //var z = z
 
-    var sourceLayerInterface: AllBinaryLayer = hashtable.get(smallIntegerSingletonFactory!.getInstance(0);
+    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(0);
 
                          as Object);
 
@@ -149,7 +149,7 @@ private constructor ()
 ;
     
 
-    var angle: Integer = hashtable.get(smallIntegerSingletonFactory!.getInstance(1);
+    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(1);
 
                          as Object);
 
@@ -164,7 +164,7 @@ private constructor ()
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, angle.toInt();
 
-                        .toInt(), 0, weaponProperties, sourceLayerInterface as ScoreableInterface);
+                        , 0, weaponProperties, sourceLayerInterface as ScoreableInterface);
 
                         ;
     

@@ -55,7 +55,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class CategoryView
 public constructor (categoryInterface: CategoryInterface){
 
             super();
-            var categoryInterface = categoryInterface
+        var categoryInterface = categoryInterface
 this.categoryInterface= categoryInterface;
     
 }

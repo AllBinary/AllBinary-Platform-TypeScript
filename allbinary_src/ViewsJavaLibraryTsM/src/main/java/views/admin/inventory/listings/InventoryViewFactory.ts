@@ -43,7 +43,10 @@ import { InventorySearch } from "../../../../views/generic/inventory/InventorySe
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(Sear
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

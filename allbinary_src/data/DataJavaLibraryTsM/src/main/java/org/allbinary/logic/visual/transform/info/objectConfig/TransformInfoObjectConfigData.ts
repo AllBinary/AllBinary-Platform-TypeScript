@@ -31,7 +31,10 @@ import { DataFileData } from "../../../../../../../org/allbinary/data/file/DataF
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class TransformInfoObjectConfigData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "OBJECTCONFIG_NAME";

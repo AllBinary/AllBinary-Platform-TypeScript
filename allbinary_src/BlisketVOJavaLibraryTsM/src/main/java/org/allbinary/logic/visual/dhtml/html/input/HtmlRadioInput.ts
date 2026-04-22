@@ -31,7 +31,10 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ export class HtmlRadioInput extends HtmlValueInput {
     private readonly CHECKED: string = "checked";
         
         
-public constructor (before: string, name: string, value: string, after: string)                        
-
-                            : super(before, HtmlInputData.getInstance()!.RADIO, name, value, after){
-
-            super();
-            var before = before
+public constructor (before: string, name: string, value: string, after: string){
+            super(before, HtmlInputData.getInstance()!.RADIO, name, value, after);
+                    var before = before
 var name = name
 var value = value
 var after = after
@@ -64,7 +64,7 @@ var after = after
 
 
     public setSelected(){
-super.addAttribute(CHECKED, BooleanFactory.getInstance()!.TRUE_STRING);
+super.addAttribute(this.CHECKED, BooleanFactory.getInstance()!.TRUE_STRING);
     
 }
 

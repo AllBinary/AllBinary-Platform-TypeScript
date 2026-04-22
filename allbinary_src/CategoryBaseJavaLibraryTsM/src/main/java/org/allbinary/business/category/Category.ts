@@ -69,7 +69,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,7 +119,7 @@ export class Category
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();
-            var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
+        var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
@@ -137,7 +140,7 @@ this.log();
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
 
             super();
-            var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
+        var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 var level = level
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
@@ -150,7 +153,7 @@ this.log();
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();
-            var rootCategoryInterface = rootCategoryInterface
+        var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();

@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -104,7 +107,7 @@ export class AbeLicenseInterfaceFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)
@@ -147,7 +150,7 @@ private constructor (){
         try {
             this.logUtil!.putF("Getting Keys", this, commonStrings!.GET);
     
-abeLicenseInterface= AbeNoLicense.getInstance();
+this.abeLicenseInterface= AbeNoLicense.getInstance();
     
 
     var licenseClient: AbeLicenseClient = new AbeLicenseClient();
@@ -155,15 +158,15 @@ abeLicenseInterface= AbeNoLicense.getInstance();
         
 ;
     
-abeLicenseInterface= licenseClient!.get(abeClientInformation);
+this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
     
 
-                        if(abeLicenseInterface != 
+                        if(this.abeLicenseInterface != 
                                     null
                                 )
                         
                                     {
-                                    this.logUtil!.putF("Default Key: " +abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET);
+                                    this.logUtil!.putF("Default Key: " +this.abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET);
     
 
                                     }
@@ -214,18 +217,18 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 ;
     
 
-                        if(abeLicenseInterface == 
+                        if(this.abeLicenseInterface == 
                                     null
-                                 || abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey();
+                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey();
 
                          || isCheck() || currentTime -checkPeriod > time)
                         
                                     {
-                                    abeLicenseInterface= 
+                                    this.abeLicenseInterface= 
                                         null
                                     ;
     
-time= currentTime;
+this.time= currentTime;
     
 
 

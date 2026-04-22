@@ -43,7 +43,10 @@ import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class PreGameSelectorPaintable extends InitUpdatePaintable {
 public constructor (title: string, preGameScrollSelectionForm: PreGameScrollSelectionForm){
 
             super();
-            var title = title
+        var title = title
 var preGameScrollSelectionForm = preGameScrollSelectionForm
 this.title= title;
     

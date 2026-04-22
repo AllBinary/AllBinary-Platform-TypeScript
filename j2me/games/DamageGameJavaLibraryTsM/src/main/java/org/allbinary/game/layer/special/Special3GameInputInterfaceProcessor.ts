@@ -34,7 +34,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
 
 export class Special3GameInputInterfaceProcessor extends SpecialGameInputInterfaceProcessor {
         
-public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface)                        
-
-                            : super(collidableDestroyableDamageableLayer){
-
-            super();
-            var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
+public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
+            super(collidableDestroyableDamageableLayer);
+                    var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
 
                             //For kotlin this is before the body of the constructor.

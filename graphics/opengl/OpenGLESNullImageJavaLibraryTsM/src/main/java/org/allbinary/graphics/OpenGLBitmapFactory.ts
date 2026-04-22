@@ -32,7 +32,10 @@ import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graph
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export inner class Config
 public constructor (bitmapConfig: any = {}){
 
             super();
-                //var bitmapConfig = bitmapConfig
+            //var bitmapConfig = bitmapConfig
 this.bitmapConfig= bitmapConfig;
     
 }

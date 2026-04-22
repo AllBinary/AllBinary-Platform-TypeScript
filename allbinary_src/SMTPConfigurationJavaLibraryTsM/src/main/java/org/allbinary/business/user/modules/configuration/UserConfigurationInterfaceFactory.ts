@@ -58,7 +58,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -147,7 +150,7 @@ var userRole = userRole
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

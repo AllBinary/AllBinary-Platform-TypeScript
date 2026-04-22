@@ -31,7 +31,10 @@ import { VelocityProperties } from "../../../../org/allbinary/game/physics/veloc
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class VehicleProperties
 public constructor (velocityProperties: VelocityProperties, vehicleFrictionProperties: VehicleFrictionProperties){
 
             super();
-            var velocityProperties = velocityProperties
+        var velocityProperties = velocityProperties
 var vehicleFrictionProperties = vehicleFrictionProperties
 this.velocityProperties= velocityProperties;
     

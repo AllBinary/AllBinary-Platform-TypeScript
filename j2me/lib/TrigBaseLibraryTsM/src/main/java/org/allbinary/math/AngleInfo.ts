@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ var angleIncrement = angleIncrement
 private constructor (angleIncrementInfo: AngleIncrementInfo){
 
             super();
-            var angleIncrementInfo = angleIncrementInfo
+        var angleIncrementInfo = angleIncrementInfo
 this.angleIncrementInfo= angleIncrementInfo;
     
 }
@@ -95,9 +98,9 @@ var frame = frame
         
 ;
     
-this.setAngle(frameUtil!.adjustAngleToFrameAngle(newAngle);
+this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle);
 
-                        .toShort());
+                        );
     
 }
 

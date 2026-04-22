@@ -70,12 +70,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DisplayableInterface } from "./DisplayableInterface.js";
+
 import { CanvasStrings } from "./CanvasStrings.js";
 
 import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
@@ -110,12 +115,9 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
     private readonly commandStack: Stack<any>
 
     private isPaused: boolean= false
-public constructor ()                        
-
-                            : this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayList()){
-
-            super();
-            
+public constructor (){
+            this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayList());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -124,11 +126,11 @@ public constructor ()
 public constructor (name: string, childNameList: BasicArrayList){
 
             super();
-                //var name = name
+            //var name = name
     //var childNameList = childNameList
 this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
     
-displayInfoSingleton!.update(this, canvasStrings!.CONSTRUCTOR);
+this.displayInfoSingleton!.update(this, canvasStrings!.CONSTRUCTOR);
     
 this.name= name;
     
@@ -143,7 +145,7 @@ this.commandStack= new Stack();
 var mode = mode
 super.setFullScreenMode(mode);
     
-displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE);
+this.displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE);
     
 }
 
@@ -151,7 +153,7 @@ displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE);
     sizeChanged(w: number, h: number){
 var w = w
 var h = h
-displayInfoSingleton!.update(this, canvasStrings!.SIZE_CHANGED);
+this.displayInfoSingleton!.update(this, canvasStrings!.SIZE_CHANGED);
     
 }
 
@@ -189,7 +191,7 @@ var command = command
                         )
                         
                                     {
-                                    commandStack!.push(command);
+                                    this.commandStack!.push(command);
     
 super.addCommand(command);
     
@@ -202,7 +204,7 @@ super.addCommand(command);
 
     public removeCommand(command: Command){
 var command = command
-commandStack!.removeElement(command);
+this.commandStack!.removeElement(command);
     
 super.removeCommand(command);
     
@@ -212,7 +214,7 @@ super.removeCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = commandStack!.length!;
+    var size: number = this.commandStack!.length!;
         
         
 ;
@@ -227,7 +229,7 @@ super.removeCommand(command);
         
 index < size; index++)
         {
-super.removeCommand(commandStack!.pop();
+super.removeCommand(this.commandStack!.pop();
 
                          as Command);
     
@@ -244,7 +246,7 @@ super.removeCommand(commandStack!.pop();
 var l = l
 super.setCommandListener(l);
     
-listener= l;
+this.listener= l;
     
 }
 
@@ -278,7 +280,7 @@ this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.PAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, canvasStrings!.PAUSE);
     
 this.removePauseCommand();
     
@@ -291,7 +293,7 @@ this.setPaused(true);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.UN_PAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, canvasStrings!.UN_PAUSE);
     
 this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND);
     
@@ -305,7 +307,7 @@ this.setPaused(false);
                 //@Throws(Error::class)
             
     process(){
-displayInfoSingleton!.process();
+this.displayInfoSingleton!.process();
     
 }
 
@@ -371,7 +373,7 @@ var deviceId = deviceId
     pointerDragged(x: number, y: number){
 var x = x
 var y = y
-touchME!.pointerDragged(x, y);
+this.touchME!.pointerDragged(x, y);
     
 }
 
@@ -379,7 +381,7 @@ touchME!.pointerDragged(x, y);
     pointerPressed(x: number, y: number){
 var x = x
 var y = y
-touchME!.pointerPressed(x, y);
+this.touchME!.pointerPressed(x, y);
     
 }
 
@@ -387,7 +389,7 @@ touchME!.pointerPressed(x, y);
     pointerReleased(x: number, y: number){
 var x = x
 var y = y
-touchME!.pointerReleased(x, y);
+this.touchME!.pointerReleased(x, y);
     
 }
 

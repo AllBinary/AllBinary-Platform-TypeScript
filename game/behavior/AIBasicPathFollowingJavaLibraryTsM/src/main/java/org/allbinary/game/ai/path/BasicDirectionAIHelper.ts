@@ -45,7 +45,10 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class BasicDirectionAIHelper
 public constructor (name: string, angleInfo: AngleInfo){
 
             super();
-                //var name = name
+            //var name = name
     //var angleInfo = angleInfo
 this.name= name;
     
@@ -160,7 +163,7 @@ var frame = frame
 
     var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.toInt());
 
-                        .toShort();
+                        ;
         
         
 ;

@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EventListenerInterface } from "./EventListenerInterface.js";
+
 import { AllBinaryEventObject } from "./AllBinaryEventObject.js";
 
 export class NullEventListener

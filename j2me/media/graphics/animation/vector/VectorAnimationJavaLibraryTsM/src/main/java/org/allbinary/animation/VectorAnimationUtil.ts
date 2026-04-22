@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class VectorAnimationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public toAnimationArrayFromBasicArrayListOfPointBasicArrayList(vector: BasicArrayList, pointsPerFrame: number): number[][][]{

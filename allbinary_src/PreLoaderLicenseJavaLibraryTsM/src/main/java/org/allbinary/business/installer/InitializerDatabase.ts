@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class InitializerDatabase
 public constructor (abeClientInformation: AbeClientInformationInterface, map: Map){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var map = map
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -194,7 +197,7 @@ this.getFormData(abeClientInformation, hashMap);
 public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var initHashMap = initHashMap
 this.getFormData(abeClientInformation, initHashMap);
     
@@ -342,7 +345,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX);
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);
 
                         )
                         
@@ -353,7 +356,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX);
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);
 
                         )
                         
@@ -436,7 +439,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(adminDbUserName, MIN, MAX);
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);
 
                         )
                         
@@ -447,7 +450,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(adminDbPassword, MINPASSWORD, MAX);
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);
 
                         )
                         
@@ -480,7 +483,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
     public createUsers(): boolean{
 
         try {
-            initDb!.addUsers();
+            this.initDb!.addUsers();
     
 
 
@@ -508,7 +511,7 @@ this.logUtil!.put("Unable to Create Users", this, "createUsers()", e);
     public createDatabases(): boolean{
 
         try {
-            initDb!.addDatabases();
+            this.initDb!.addDatabases();
     
 
 
@@ -536,7 +539,7 @@ this.logUtil!.put("Unable to Create Databases", this, "createDatabases()", e);
     public createTables(): boolean{
 
         try {
-            initDb!.addTables();
+            this.initDb!.addTables();
     
 
 

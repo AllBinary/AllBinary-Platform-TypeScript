@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class GameKeyEventFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(){
@@ -114,7 +117,7 @@ private constructor (){
 
 
                         for (
-    var index: number = MAX_SOURCES;
+    var index: number = this.MAX_SOURCES;
         
         
 --index >= 0; )
@@ -129,7 +132,7 @@ private constructor (){
         
 --index2 >= 0; )
         {
-ARRAY[index]![index2]= new GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2);
+this.ARRAY[index]![index2]= new GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2);
     
 }
 
@@ -144,7 +147,7 @@ ARRAY[index]![index2]= new GameKeyEvent(nullUtil!.NULL_OBJECT, index, index2);
 var anyType = anyType
 var key = key
 
-    var gameKeyEvent: GameKeyEvent = ARRAY[anyType!.getSourceId()]![key]!;
+    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;
         
         
 ;
@@ -164,7 +167,7 @@ var key = key
 var anyType = anyType
 var input = input
 
-    var gameKeyEvent: GameKeyEvent = ARRAY[anyType!.getSourceId()]![input.getId()]!;
+    var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;
         
         
 ;

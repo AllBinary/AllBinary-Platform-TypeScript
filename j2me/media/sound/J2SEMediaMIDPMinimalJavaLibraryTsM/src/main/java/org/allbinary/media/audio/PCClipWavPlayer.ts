@@ -79,7 +79,10 @@ import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPoo
 
 
 
-        
+
+
+
+
 
 
 
@@ -104,7 +107,7 @@ export class PCClipWavPlayer extends BasicPlayer implements LineListener {
 public constructor (inputStream: InputStream){
 
             super();
-            var inputStream = inputStream
+        var inputStream = inputStream
 
     var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
         
@@ -327,7 +330,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.setVolume((leftVolume.toFloat()) /100.0f);
+this.setVolume((leftVolume) /100.0f);
     
 }
 
@@ -347,7 +350,7 @@ this.setVolume((leftVolume.toFloat()) /100.0f);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return Math.pow(10f, masterGainFloatControl!.getValue() /20f);
 
-                        .toFloat();
+                        ;
     
 }
 
@@ -366,7 +369,7 @@ this.setVolume((leftVolume.toFloat()) /100.0f);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN);
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN);
 
                          as FloatControl;
         
@@ -375,7 +378,7 @@ this.setVolume((leftVolume.toFloat()) /100.0f);
     
 masterGainFloatControl!.setValue(20f *Math.log10(volume);
 
-                        .toFloat());
+                        );
     
 }
 

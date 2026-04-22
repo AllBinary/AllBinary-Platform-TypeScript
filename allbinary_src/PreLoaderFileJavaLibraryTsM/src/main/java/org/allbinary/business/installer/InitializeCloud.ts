@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class InitializeCloud
 public constructor (){
 
             super();
-            }
+        }
 
 
     public initialize(cloud: string, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number): boolean{

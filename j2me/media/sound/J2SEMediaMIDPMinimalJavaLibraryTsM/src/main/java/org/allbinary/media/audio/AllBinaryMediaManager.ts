@@ -73,7 +73,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -285,7 +288,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

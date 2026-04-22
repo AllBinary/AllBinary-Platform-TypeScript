@@ -58,7 +58,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class ShippingHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.propertiesHashMap= propertiesHashMap;
     
@@ -124,7 +127,7 @@ this.getFormData();
 
 
     getFormData(){
-this.shippingType= request.getParameter(ShippingMethodData.NAME);
+this.shippingType= this.request.getParameter(ShippingMethodData.NAME);
     
 }
 
@@ -144,7 +147,7 @@ this.shippingType= request.getParameter(ShippingMethodData.NAME);
         
 ;
     
-order.setShippingMethod(shippingType);
+order.setShippingMethod(this.shippingType);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

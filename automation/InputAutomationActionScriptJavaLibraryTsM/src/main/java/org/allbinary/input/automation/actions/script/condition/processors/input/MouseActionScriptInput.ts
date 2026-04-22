@@ -66,13 +66,18 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
+
+import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
 
 import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
 
@@ -96,12 +101,9 @@ export class MouseActionScriptInput extends BasicProfileActionScriptInput implem
     private buttons: number= 0
 
     private mouseActionScriptInputJPanel: MouseActionScriptInputJPanel
-public constructor (node: Node)                        
-
-                            : super(NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -237,12 +239,9 @@ this.mouseActionScriptInputJPanel= new MouseActionScriptInputJPanel(this);
     
 }
 
-public constructor ()                        
-
-                            : super(NAME){
-
-            super();
-            
+public constructor (){
+            super(NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -379,7 +378,7 @@ buttonStringBuffer!.append("1: ");
 ;
     
 
-                        if((this.getButtonClicks() and InputEvent.BUTTON1_MASK) != 0)
+                        if((this.getButtonClicks()&InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
                                     buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);
@@ -396,7 +395,7 @@ buttonStringBuffer!.append("1: ");
 buttonStringBuffer!.append(" 2: ");
     
 
-                        if((this.getButtonClicks() and InputEvent.BUTTON2_MASK) != 0)
+                        if((this.getButtonClicks()&InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
                                     buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);
@@ -413,7 +412,7 @@ buttonStringBuffer!.append(" 2: ");
 buttonStringBuffer!.append(" 3: ");
     
 
-                        if((this.getButtonClicks() and InputEvent.BUTTON3_MASK) != 0)
+                        if((this.getButtonClicks()&InputEvent.BUTTON3_MASK) != 0)
                         
                                     {
                                     buttonStringBuffer!.append(booleanFactory!.TRUE_STRING);

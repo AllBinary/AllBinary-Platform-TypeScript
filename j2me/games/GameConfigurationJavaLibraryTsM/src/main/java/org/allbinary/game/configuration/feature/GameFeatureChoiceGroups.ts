@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class GameFeatureChoiceGroups
 private constructor (){
 
             super();
-            }
+        }
 
 
     public get(): Hashtable<any, any>{
@@ -95,7 +98,7 @@ private constructor (){
     public add(name: string, list: BasicArrayList){
 var name = name
 var list = list
-hashtable.put(name, list);
+this.hashtable.put(name, list);
     
 }
 

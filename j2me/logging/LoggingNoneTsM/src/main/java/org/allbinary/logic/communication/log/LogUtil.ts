@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ import { Log } from "./Log.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public put(log: Log){

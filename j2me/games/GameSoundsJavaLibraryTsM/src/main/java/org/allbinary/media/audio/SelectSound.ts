@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class SelectSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/select.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/select.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

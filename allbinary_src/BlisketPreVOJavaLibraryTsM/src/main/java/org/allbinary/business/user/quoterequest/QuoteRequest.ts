@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export class QuoteRequest
 public constructor (userName: string, request: HttpServletRequest){
 
             super();
-            var userName = userName
+        var userName = userName
 var request = request
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
@@ -149,7 +152,7 @@ this.setComments(request.getParameter(quoteRequestData!.COMMENTS);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
         
@@ -206,9 +209,9 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
 ;
     
 
-                        if(userName == 
+                        if(this.userName == 
                                     null
-                                 || userName!.length < 4 || userName!.length > 250)
+                                 || this.userName!.length < 4 || this.userName!.length > 250)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -311,9 +314,9 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
 ;
     
 
-                        if(userName == 
+                        if(this.userName == 
                                     null
-                                 || userName!.length < 4 || userName!.length > 250)
+                                 || this.userName!.length < 4 || this.userName!.length > 250)
                         
                                     {
                                     stringBuffer!.append("Please enter a User Name with more than 4 characters.<br>");
@@ -415,9 +418,9 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
         
 ;
     
-values.add(id);
+values.add(this.id);
     
-values.add(userName);
+values.add(this.userName);
     
 values.add(this.projectInfo);
     

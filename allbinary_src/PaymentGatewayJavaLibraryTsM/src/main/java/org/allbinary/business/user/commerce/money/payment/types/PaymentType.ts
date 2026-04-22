@@ -43,7 +43,10 @@ import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../.
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class PaymentType
 protected constructor (basicPaymentType: BasicPaymentType){
 
             super();
-            var basicPaymentType = basicPaymentType
+        var basicPaymentType = basicPaymentType
 this.basicPaymentType= basicPaymentType;
     
 this.paymentTransactionInterfaceFactoryInterface= 
@@ -84,7 +87,7 @@ PaymentTypeUtil.getInstance()!.add(this);
 protected constructor (basicPaymentType: BasicPaymentType, paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface, paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface){
 
             super();
-            var basicPaymentType = basicPaymentType
+        var basicPaymentType = basicPaymentType
 var paymentTransactionInterfaceFactoryInterface = paymentTransactionInterfaceFactoryInterface
 var paymentProcessorInterfaceFactoryInterface = paymentProcessorInterfaceFactoryInterface
 this.basicPaymentType= basicPaymentType;

@@ -31,7 +31,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class CacheType
 public constructor (vendor: string, type: string){
 
             super();
-            var vendor = vendor
+        var vendor = vendor
 var type = type
 this.vendor= vendor;
     

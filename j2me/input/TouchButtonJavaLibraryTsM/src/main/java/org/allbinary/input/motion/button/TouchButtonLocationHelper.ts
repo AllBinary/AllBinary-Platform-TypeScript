@@ -34,7 +34,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class TouchButtonLocationHelper
 public constructor (){
 
             super();
-            
+        
     var buttonSize: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE;
         
         
@@ -79,11 +82,11 @@ this.totalRows= displayInfo!.getLastHeight() /buttonSize;
     
 this.columnsRemainder= displayInfo!.getLastWidth() % buttonSize;
     
-this.columnsRemainderHalf= (this.columnsRemainder shr 1);
+this.columnsRemainderHalf= (this.columnsRemainder>>1);
     
 this.rowsRemainder= displayInfo!.getLastHeight() % buttonSize;
     
-this.rowsRemainderHalf= (this.rowsRemainder shr 1);
+this.rowsRemainderHalf= (this.rowsRemainder>>1);
     
 }
 
@@ -157,27 +160,27 @@ this.rowsRemainderHalf= (this.rowsRemainder shr 1);
     
 stringBuffer!.append("totalColumns: ");
     
-stringBuffer!.appendint(totalColumns);
+stringBuffer!.appendint(this.totalColumns);
     
 stringBuffer!.append(" totalRows: ");
     
-stringBuffer!.appendint(totalRows);
+stringBuffer!.appendint(this.totalRows);
     
 stringBuffer!.append(" columnsRemainder: ");
     
-stringBuffer!.appendint(columnsRemainder);
+stringBuffer!.appendint(this.columnsRemainder);
     
 stringBuffer!.append(" rowsRemainder: ");
     
-stringBuffer!.appendint(rowsRemainder);
+stringBuffer!.appendint(this.rowsRemainder);
     
 stringBuffer!.append(" columnsRemainderHalf: ");
     
-stringBuffer!.appendint(columnsRemainderHalf);
+stringBuffer!.appendint(this.columnsRemainderHalf);
     
 stringBuffer!.append(" rowsRemainderHalf: ");
     
-stringBuffer!.appendint(rowsRemainderHalf);
+stringBuffer!.appendint(this.rowsRemainderHalf);
     
 
 

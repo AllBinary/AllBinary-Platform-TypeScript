@@ -79,12 +79,17 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInitializationInterface } from "./GameInitializationInterface.js";
+
 export class BaseGameInitialization
             extends Object
          implements GameInitializationInterface {
@@ -118,7 +123,7 @@ export class BaseGameInitialization
 public constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
 
             super();
-                //var resourceInitializationArray = resourceInitializationArray
+            //var resourceInitializationArray = resourceInitializationArray
     //var portion = portion
 this.resourceInitializationArray= resourceInitializationArray;
     
@@ -216,7 +221,7 @@ GameFeatureImageCacheFactory.init();
     
 progressCanvas!.addPortion(localPortion, "Image Cache");
     
-this.resourceInitializationArray[EARLY_RESOURCES]!.init();
+this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
     
 
                                     }

@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class InApplicationPurchaseFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(anyType: any = {}, stateObject: any = {}){

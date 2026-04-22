@@ -51,7 +51,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -179,11 +182,11 @@ blueTotal += color.getBlue();
         
 ;
     
-colorAverage!.setAvgRed(redTotal.toFloat() /totalPixels);
+colorAverage!.setAvgRed(redTotal /totalPixels);
     
-colorAverage!.setAvgGreen(greenTotal.toFloat() /totalPixels);
+colorAverage!.setAvgGreen(greenTotal /totalPixels);
     
-colorAverage!.setAvgBlue(blueTotal.toFloat() /totalPixels);
+colorAverage!.setAvgBlue(blueTotal /totalPixels);
     
 
 
@@ -283,7 +286,7 @@ var color = color
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

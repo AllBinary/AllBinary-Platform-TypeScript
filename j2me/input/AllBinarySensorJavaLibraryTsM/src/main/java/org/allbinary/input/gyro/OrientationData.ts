@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class OrientationData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly ORIENTATION_SENSOR_INPUT: string = "Orientation Sensor Input";

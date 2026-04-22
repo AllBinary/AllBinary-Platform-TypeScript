@@ -57,7 +57,10 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,12 +74,9 @@ export class WorkWaypoint extends Waypoint {
     public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(25)!;
         
         
-public constructor (ownerLayer: PathFindingLayerInterface)                        
-
-                            : super(ownerLayer, WorkSound.getInstance()){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: PathFindingLayerInterface){
+            super(ownerLayer, WorkSound.getInstance());
+                        //var ownerLayer = ownerLayer
 
 
                             //For kotlin this is before the body of the constructor.
@@ -156,7 +156,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
 
     var maxResourceLoad: number = unitLayer!.getMaxResourceLoad();
 
-                        .toInt();
+                        ;
         
         
 ;

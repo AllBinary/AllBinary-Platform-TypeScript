@@ -34,7 +34,10 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly NONE: string = "No Stack Trace";

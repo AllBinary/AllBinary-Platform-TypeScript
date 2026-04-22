@@ -31,7 +31,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);
 ;
     
 
-        while((highScores!.getTotal() < 1 || lastIndex == this.circularIndexUtil!.getIndex()) && index < this.highScoresArrayP!.length)
+        while((highScores!.getTotal() < 1 || this.lastIndex == this.circularIndexUtil!.getIndex()) && index < this.highScoresArrayP!.length)
         {
 this.circularIndexUtil!.next();
     
@@ -85,7 +88,7 @@ index++;
     
 }
 
-lastIndex= this.circularIndexUtil!.getIndex();
+this.lastIndex= this.circularIndexUtil!.getIndex();
     
 
 

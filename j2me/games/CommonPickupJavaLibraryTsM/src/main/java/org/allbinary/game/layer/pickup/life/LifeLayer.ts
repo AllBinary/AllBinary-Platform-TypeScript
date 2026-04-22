@@ -49,7 +49,10 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
         
 export class LifeLayer extends AllBinaryLayer implements LifeVisitorInterface {
         
-public constructor ()                        
-
-                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition()){
-
-            super();
-            
+public constructor (){
+            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -76,7 +76,7 @@ var graphics = graphics
 
     public visit(lifeInterface: Life){
 var lifeInterface = lifeInterface
-lifeInterface!.add(1.toShort());
+lifeInterface!.add(1);
     
 }
 

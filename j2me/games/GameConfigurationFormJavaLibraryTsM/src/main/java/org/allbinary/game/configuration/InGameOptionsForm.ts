@@ -55,7 +55,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class InGameOptionsForm extends CommandForm {
     public static readonly DEFAULT: Command = new Command("Default", Command.SCREEN, 1);
         
         
- constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(commandListener, title, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-            var commandListener = commandListener
+ constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+                    var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor

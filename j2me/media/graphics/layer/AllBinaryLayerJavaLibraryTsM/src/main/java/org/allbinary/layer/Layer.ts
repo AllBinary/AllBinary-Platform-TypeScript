@@ -48,7 +48,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class Layer
 public constructor (width: number, height: number){
 
             super();
-            var width = width
+        var width = width
 var height = height
 setLayerWidth(width);
     

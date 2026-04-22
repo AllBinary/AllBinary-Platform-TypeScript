@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class OpenGLESImageExclusionUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public isCustomScaling(image: Image): boolean{
@@ -81,7 +84,7 @@ private constructor (){
 ;
     
 
-    var isNormalScaling: boolean = list.size() == 0 || imageName!.startsWith(EXCLUSION);
+    var isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);
         
         
 ;
@@ -101,7 +104,7 @@ private constructor (){
                                 
                         else {
                             
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -120,7 +123,7 @@ private constructor (){
         
 index < size; index++)
         {
-name= list.get(index);
+name= this.list.get(index);
 
                          as String;
     

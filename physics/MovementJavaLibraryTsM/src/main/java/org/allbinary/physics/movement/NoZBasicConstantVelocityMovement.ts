@@ -49,7 +49,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class NoZBasicConstantVelocityMovement extends Movement implements Veloci
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
 
             super();
-            var basicDecimal = basicDecimal
+        var basicDecimal = basicDecimal
 var velocityProperties = velocityProperties
 this.setSpeedBasicDecimal(basicDecimal);
     
@@ -83,7 +86,7 @@ this.velocityProperties= velocityProperties;
 public constructor (){
 
             super();
-            this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL);
+        this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL);
     
 this.velocityProperties= new BasicVelocityProperties();
     
@@ -119,13 +122,13 @@ var otherAngle = otherAngle
 ;
     
 
-    var xVector: number = (axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue).toInt();
+    var xVector: number = (this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
         
         
 ;
     
 
-    var yVector: number = (axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue).toInt();
+    var yVector: number = (this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
         
         
 ;
@@ -167,7 +170,7 @@ this.velocityProperties!.zero();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return velocityProperties;
+                        return this.velocityProperties;
     
 }
 
@@ -191,7 +194,7 @@ this.speedBasicDecimal= speedBasicDecimal;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return speedBasicDecimal;
+                        return this.speedBasicDecimal;
     
 }
 

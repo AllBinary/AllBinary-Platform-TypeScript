@@ -73,7 +73,10 @@ import { VirtualKeyboardEventHandler } from "../../../../../org/allbinary/input/
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,12 +104,9 @@ export class LicenseRegistrationTextBox extends CustomTextBox {
     private paintable: Paintable = NullPaintable.getInstance()!;
         
         
-public constructor (cmdListener: CommandListener, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-            var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, backgrounBasicColor, foregroundBasicColor);
+                    var cmdListener = cmdListener
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor
 

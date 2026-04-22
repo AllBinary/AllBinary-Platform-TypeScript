@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class AuthorizeNetAimData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

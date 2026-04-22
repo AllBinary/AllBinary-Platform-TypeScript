@@ -49,7 +49,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class MakeCountedPartsSingletonArrayFactory
             
     public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
-list= new BasicArrayList();
+this.list= new BasicArrayList();
     
 
 
@@ -98,7 +101,7 @@ list= new BasicArrayList();
         
 index < partInterfaceArray!.length; index++)
         {
-list.add(partInterfaceArray[index]!);
+this.list.add(partInterfaceArray[index]!);
     
 }
 
@@ -142,7 +145,7 @@ list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface)
     
 stringBuffer!.append("Total Parts: ");
     
-stringBuffer!.appendint(list.size());
+stringBuffer!.appendint(this.list.size());
     
 stringBuffer!.append(" Counted: ");
     
@@ -157,7 +160,7 @@ stringBuffer!.appendint(countedBasicArrayList!.size());
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var newPartInterfaceArray: PartInterface[] = new Array(list.size());
+    var newPartInterfaceArray: PartInterface[] = new Array(this.list.size());
         
         
 ;
@@ -179,7 +182,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
         
 index < newSize; index++)
         {
-newPartInterfaceArray[index]= list.get(index);
+newPartInterfaceArray[index]= this.list.get(index);
 
                          as PartInterface;
     

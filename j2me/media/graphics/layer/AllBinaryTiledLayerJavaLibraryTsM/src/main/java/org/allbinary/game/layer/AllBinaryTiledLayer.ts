@@ -51,7 +51,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,12 +76,9 @@ export class AllBinaryTiledLayer extends Layer implements NamedInterface, Painta
     private readonly halfCellHeight: number
 
     private readonly dataId: Integer
-public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number)                        
-
-                            : super(0, 0){
-
-            super();
-                //var dataId = dataId
+public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number){
+            super(0, 0);
+                        //var dataId = dataId
     //var width = width
     //var height = height
     //var cellWidth = cellWidth
@@ -99,13 +99,13 @@ this.cellWidth= cellWidth;
     
 this.cellHeight= cellHeight;
     
-this.halfWidth= (this.getWidth() shr 1);
+this.halfWidth= (this.getWidth()>>1);
     
-this.halfHeight= (this.getHeight() shr 1);
+this.halfHeight= (this.getHeight()>>1);
     
-this.halfCellWidth= (cellWidth shr 1);
+this.halfCellWidth= (cellWidth>>1);
     
-this.halfCellHeight= (cellHeight shr 1);
+this.halfCellHeight= (cellHeight>>1);
     
 }
 
@@ -278,7 +278,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.z +this.getDepth()).toInt();
+                        return (this.z +this.getDepth());
     
 }
 

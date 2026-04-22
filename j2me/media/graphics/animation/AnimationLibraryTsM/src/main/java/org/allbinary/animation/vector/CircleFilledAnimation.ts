@@ -30,9 +30,6 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/color/ColorCompositeInterface.js";
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
-
-    
 
 
 
@@ -43,7 +40,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +55,9 @@ export class CircleFilledAnimation extends Animation implements ColorCompositeIn
     private width: number
 
     private height: number
-public constructor (width: number, height: number, basicColor: BasicColor)                        
-
-                            : super(){
-
+public constructor (width: number, height: number, basicColor: BasicColor){
             super();
-                //var width = width
+                        //var width = width
     //var height = height
     //var basicColor = basicColor
 
@@ -84,9 +81,9 @@ this.setBasicColorP(basicColor);
     //var graphics = graphics
     //var x = x
     //var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.fillRect(x, y, width, height);
+graphics.fillRect(x, y, this.width, this.height);
     
 }
 

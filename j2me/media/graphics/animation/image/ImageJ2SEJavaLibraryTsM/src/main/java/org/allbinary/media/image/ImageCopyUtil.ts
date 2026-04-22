@@ -43,7 +43,10 @@ import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImm
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class ImageCopyUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;
@@ -113,7 +116,7 @@ private constructor (){
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-    var image: Image = imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
+    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
 ;
@@ -151,13 +154,13 @@ private constructor (){
     //var canvasScale = canvasScale
     //var resize = resize
 
-    var newWidth: number = (originalImage!.getWidth() *canvasScale).toInt();
+    var newWidth: number = (originalImage!.getWidth() *canvasScale);
         
         
 ;
     
 
-    var newHeight: number = (originalImage!.getHeight() *canvasScale).toInt();
+    var newHeight: number = (originalImage!.getHeight() *canvasScale);
         
         
 ;
@@ -188,13 +191,13 @@ private constructor (){
                                     }
                                 
 
-    var originalBufferedImage: BufferedImage = imageUtil!.getBufferedImage(originalImage)!;
+    var originalBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
         
         
 ;
     
 
-    var bufferedImage: BufferedImage = imageUtil!.createBufferedImageWithLargerCanvas(originalBufferedImage, newWidth, newHeight)!;
+    var bufferedImage: BufferedImage = this.imageUtil!.createBufferedImageWithLargerCanvas(originalBufferedImage, newWidth, newHeight)!;
         
         
 ;

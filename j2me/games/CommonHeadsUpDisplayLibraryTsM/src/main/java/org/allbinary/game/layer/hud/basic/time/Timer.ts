@@ -40,7 +40,10 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../../../org/allbina
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,10 +84,10 @@ export class Timer
 public constructor (maxTime: number){
 
             super();
-            var maxTime = maxTime
+        var maxTime = maxTime
 this.primitiveLongUtil= new PrimitiveLongUtil(maxTime);
     
-this.maxTime= maxTime.toLong();
+this.maxTime= maxTime;
     
 }
 
@@ -151,7 +154,7 @@ this.hundredthTime= currentTime /100;
                         if(lastLowerTime != this.hundredthTime)
                         
                                     {
-                                    this.hundrethsString= primitiveLongUtil!.getCharArray(this.hundredthTime.toInt());
+                                    this.hundrethsString= this.primitiveLongUtil!.getCharArray(this.hundredthTime);
     
 this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
     

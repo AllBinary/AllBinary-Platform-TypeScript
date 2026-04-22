@@ -55,7 +55,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,12 +80,9 @@ export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasI
     private anchor: number = Anchor.TOP_LEFT;
         
         
-public constructor (highScoresCanvas: HighScoresCanvas)                        
-
-                            : super(highScoresCanvas){
-
-            super();
-            var highScoresCanvas = highScoresCanvas
+public constructor (highScoresCanvas: HighScoresCanvas){
+            super(highScoresCanvas);
+                    var highScoresCanvas = highScoresCanvas
 
 
                             //For kotlin this is before the body of the constructor.
@@ -180,12 +180,12 @@ var graphics = graphics
 ;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(INSTRUCTIONS) shr 1);
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);
         
         
 ;
     
-graphics.drawString(INSTRUCTIONS, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor);
+graphics.drawString(INSTRUCTIONS, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor);
     
 }
 

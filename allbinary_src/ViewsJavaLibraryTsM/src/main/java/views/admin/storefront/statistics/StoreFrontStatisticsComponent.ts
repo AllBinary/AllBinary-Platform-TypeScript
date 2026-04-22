@@ -52,7 +52,10 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ export class StoreFrontStatisticsComponent extends HttpStoreComponentView {
     newStoreFrontInterface: StoreFrontInterface
 
     private domNodeInterface: DomNodeInterface
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

@@ -46,7 +46,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class TimeLastModifiedView
 public constructor (timeLastModified: TimeLastModified){
 
             super();
-            var timeLastModified = timeLastModified
+        var timeLastModified = timeLastModified
 this.setTimeLastModified(timeLastModified);
     
 }
@@ -71,7 +74,7 @@ this.setTimeLastModified(timeLastModified);
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
     
 }

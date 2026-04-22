@@ -49,7 +49,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class DownloadableItemValidation extends Validation {
 public constructor (downloadableItem: DownloadableItem){
 
             super();
-            var downloadableItem = downloadableItem
+        var downloadableItem = downloadableItem
 this.downloadableItem= downloadableItem;
     
 }

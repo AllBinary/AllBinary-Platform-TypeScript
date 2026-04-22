@@ -61,7 +61,10 @@ import { WeakCrypt } from "../../../../org/allbinary/logic/system/security/crypt
 
 
 
-        
+
+
+
+
 
 
 
@@ -126,7 +129,7 @@ this.filePath= filePath;
     public write(initData: LicenseInitInfo){
 var initData = initData
 
-                        if(this.filePath == stringUtil!.EMPTY_STRING)
+                        if(this.filePath == this.stringUtil!.EMPTY_STRING)
                         
                                     {
                                     this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH;
@@ -224,7 +227,7 @@ var initializeCounter = initializeCounter
 ;
     
 
-                        if(this.filePath == stringUtil!.EMPTY_STRING)
+                        if(this.filePath == this.stringUtil!.EMPTY_STRING)
                         
                                     {
                                     this.filePath= URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.INIT_PATH;
@@ -234,7 +237,7 @@ var initializeCounter = initializeCounter
                                 
 
         try {
-            this.logUtil!.putF("LicenseInitInfo File: " +INITFILENAME, this, METHOD_NAME);
+            this.logUtil!.putF("LicenseInitInfo File: " +this.INITFILENAME, this, METHOD_NAME);
     
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;

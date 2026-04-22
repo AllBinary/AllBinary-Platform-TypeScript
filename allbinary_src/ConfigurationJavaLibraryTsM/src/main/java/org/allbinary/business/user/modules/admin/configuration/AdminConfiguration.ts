@@ -64,12 +64,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdminConfigurationInterface } from "./AdminConfigurationInterface.js";
+
 import { AdminConfigurationData } from "./AdminConfigurationData.js";
 
 export class AdminConfiguration
@@ -89,7 +94,7 @@ export class AdminConfiguration
 public constructor (){
 
             super();
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInstance()!.getInstance(AdminConfigurationData.CONTEXTNAME);
     
@@ -98,7 +103,7 @@ this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInst
 public constructor (request: HttpServletRequest){
 
             super();
-            var request = request
+        var request = request
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.getFormData(new RequestParams(request).
@@ -109,7 +114,7 @@ this.getFormData(new RequestParams(request).
 public constructor (storeHashMap: HashMap<any, any>){
 
             super();
-            var storeHashMap = storeHashMap
+        var storeHashMap = storeHashMap
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.getFormData(storeHashMap);
@@ -121,7 +126,7 @@ this.getFormData(storeHashMap);
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
-this.logUtil!.putF(commonStrings!.START, this, "getFormData");
+this.logUtil!.putF(this.commonStrings!.START, this, "getFormData");
     
 this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
     

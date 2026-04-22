@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class NativeLibraryHelperWrapper
 public constructor (libraryName: string){
 
             super();
-            var libraryName = libraryName
+        var libraryName = libraryName
 this.setLibraryName(libraryName);
     
 }
@@ -84,7 +87,7 @@ classes[0]= getLibraryName()!.constructor;
 this.loader= new NativeLibraryClassLoader(this.constructor.name.java.classLoader);
     
 
-    var myClass: Function = loader.loadClass("dynamic.NativeLibraryHelper")!;
+    var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;
         
         
 ;
@@ -104,13 +107,13 @@ this.anyType= constructor.newInstance(params);
 ;
     
 
-    var method: Method = anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
+    var method: Method = this.anyType!..constructor.name.getMethod(commonStrings!.LOAD, 
                             null)!;
         
         
 ;
     
-method.invoke(anyType, 
+method.invoke(this.anyType, 
                             null);
     
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class GamePersistanceSingleton extends KeyValuePersistance {
     
 }
 
-private constructor ()                        
-
-                            : super(GamePersistanceStrings.getInstance()!.SAVED_GAME_RECORD_ID){
-
-            super();
-            
+private constructor (){
+            super(GamePersistanceStrings.getInstance()!.SAVED_GAME_RECORD_ID);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

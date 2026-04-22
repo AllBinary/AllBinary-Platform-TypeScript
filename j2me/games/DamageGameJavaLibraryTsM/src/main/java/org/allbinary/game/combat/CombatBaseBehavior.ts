@@ -34,7 +34,10 @@ import { DestroyableBaseBehavior } from "../../../../org/allbinary/game/combat/d
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class CombatBaseBehavior
 public constructor (damageableBaseBehavior: DamageableBaseBehavior, destroyableBaseBehavior: DestroyableBaseBehavior){
 
             super();
-            var damageableBaseBehavior = damageableBaseBehavior
+        var damageableBaseBehavior = damageableBaseBehavior
 var destroyableBaseBehavior = destroyableBaseBehavior
 this.damageableBaseBehavior= damageableBaseBehavior;
     

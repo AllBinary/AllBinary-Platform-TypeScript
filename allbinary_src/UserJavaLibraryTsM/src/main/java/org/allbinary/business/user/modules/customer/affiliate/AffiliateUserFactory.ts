@@ -37,7 +37,10 @@ import { UserInterface } from "../../../../../../../org/allbinary/business/user/
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class AffiliateUserFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

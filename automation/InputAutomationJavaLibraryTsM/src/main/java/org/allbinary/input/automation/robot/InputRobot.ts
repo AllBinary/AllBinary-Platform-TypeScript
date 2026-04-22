@@ -51,12 +51,17 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputRobotInterface } from "./InputRobotInterface.js";
+
 import { GraphicsDevice } from "./GraphicsDevice.js";
 
 import { MouseInfo } from "./MouseInfo.js";
@@ -84,7 +89,7 @@ export class InputRobot
 public constructor (graphicsDevice: GraphicsDevice){
 
             super();
-                //var graphicsDevice = graphicsDevice
+            //var graphicsDevice = graphicsDevice
 this.robot= new Robot(graphicsDevice);
     
 }

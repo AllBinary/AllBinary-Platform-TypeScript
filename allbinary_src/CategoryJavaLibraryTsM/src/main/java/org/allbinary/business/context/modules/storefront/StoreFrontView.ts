@@ -52,7 +52,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class StoreFrontView
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

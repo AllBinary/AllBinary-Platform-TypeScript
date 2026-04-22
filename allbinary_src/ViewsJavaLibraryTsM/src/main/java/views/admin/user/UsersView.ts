@@ -58,7 +58,10 @@ import { HttpContextView } from "../../../views/business/context/HttpContextView
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class UsersView extends HttpContextView implements DomNodeInterface {
         
 
     userVector: Vector
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -96,7 +96,7 @@ var document = document
 ;
     
 
-    var size: number = userVector!.length!;
+    var size: number = this.userVector!.length!;
         
         
 ;
@@ -112,7 +112,7 @@ var document = document
 index < size; index++)
         {
 
-    var userInterface: User = userVector!.get(index);
+    var userInterface: User = this.userVector!.get(index);
 
                          as User;
         

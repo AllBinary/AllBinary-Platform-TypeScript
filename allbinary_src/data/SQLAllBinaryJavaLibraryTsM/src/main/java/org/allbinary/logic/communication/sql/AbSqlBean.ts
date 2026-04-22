@@ -46,7 +46,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ export class AbSqlBean extends AbSqlRow {
     private readonly METHOD_IS_SUBSET_OF_ENTRY: string = "isSubsetOfEntry";
         
         
-public constructor (databaseConnectionInfoInterface: DbConnectionInfo)                        
-
-                            : super(databaseConnectionInfoInterface){
-
-            super();
-                //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
+            super(databaseConnectionInfoInterface);
+                        //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

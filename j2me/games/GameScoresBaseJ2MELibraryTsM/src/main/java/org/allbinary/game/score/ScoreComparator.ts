@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class ScoreComparator
 public constructor (isHighestBest: boolean){
 
             super();
-                //var isHighestBest = isHighestBest
+            //var isHighestBest = isHighestBest
 this.isHighestBest= isHighestBest;
     
 }

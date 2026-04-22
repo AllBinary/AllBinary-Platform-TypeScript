@@ -34,7 +34,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { HealthBarAnimation } from "./HealthBarAnimation.js";
 
 export class HealthBarTwodAnimation extends HealthBarAnimation {
         
-public constructor (layerInterface: AllBinaryLayer, location: number)                        
-
-                            : super(layerInterface, location){
-
-            super();
-                //var layerInterface = layerInterface
+public constructor (layerInterface: AllBinaryLayer, location: number){
+            super(layerInterface, location);
+                        //var layerInterface = layerInterface
     //var location = location
 
 
@@ -68,7 +68,7 @@ public constructor (layerInterface: AllBinaryLayer, location: number)
         
 ;
     
-this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor, this.colorP);
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.colorP);
     
 graphics.fillRect(ax, this.getY() -1, x2, this.thickness);
     

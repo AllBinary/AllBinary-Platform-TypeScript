@@ -82,7 +82,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class SavedCaptureImagesWorker extends BasicEventHandler implements Captu
 public constructor (savedCaptureGenericProfileDataWorkerType: SavedCaptureGenericProfileDataWorkerType){
 
             super();
-            var savedCaptureGenericProfileDataWorkerType = savedCaptureGenericProfileDataWorkerType
+        var savedCaptureGenericProfileDataWorkerType = savedCaptureGenericProfileDataWorkerType
 this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType;
     
 this.screenScavangerRobot= new ScreenScavangerRobot();

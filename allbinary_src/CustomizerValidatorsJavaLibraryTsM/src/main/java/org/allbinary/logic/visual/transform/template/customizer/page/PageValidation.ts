@@ -61,7 +61,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,14 +81,14 @@ export class PageValidation extends Validation implements DomNodeInterface {
 public constructor (){
 
             super();
-            this.title= new TitleValidation();
+        this.title= new TitleValidation();
     
 }
 
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;
         
@@ -99,7 +102,7 @@ this.title= new TitleValidation(node);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.getFormData(hashMap);
     
 }

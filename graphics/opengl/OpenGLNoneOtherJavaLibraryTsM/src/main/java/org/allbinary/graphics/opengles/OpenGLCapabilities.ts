@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export class OpenGLCapabilities
 private constructor (){
 
             super();
-            }
+        }
 
 
     public initCapabilities(gl: any = {}){

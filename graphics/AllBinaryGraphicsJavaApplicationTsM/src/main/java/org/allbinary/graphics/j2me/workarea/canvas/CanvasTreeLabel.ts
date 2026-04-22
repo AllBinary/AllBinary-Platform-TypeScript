@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class CanvasTreeLabel
 public constructor (str: string){
 
             super();
-            var str = str
+        var str = str
 this.label= str;
     
 }

@@ -31,7 +31,10 @@ import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryPr
 public constructor (geographicMapCellHistoryArray: GeographicMapCellHistory[]){
 
             super();
-                //var geographicMapCellHistoryArray = geographicMapCellHistoryArray
+            //var geographicMapCellHistoryArray = geographicMapCellHistoryArray
 this.geographicMapCellHistoryArray= geographicMapCellHistoryArray;
     
 this.init();
@@ -76,7 +79,7 @@ this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
 ;
     
 
-    var size: number = geographicMapCellHistoryArray!.length
+    var size: number = this.geographicMapCellHistoryArray!.length
                 ;
         
         
@@ -100,7 +103,7 @@ this.totalVisitedArray= new Array(this.geographicMapCellHistoryArray!.length);
         
 index < size; index++)
         {
-totalVisited= geographicMapCellHistoryArray[index]!.getTotalVisited();
+totalVisited= this.geographicMapCellHistoryArray[index]!.getTotalVisited();
     
 currentTotalVisited= this.totalVisitedArray[index]!;
     

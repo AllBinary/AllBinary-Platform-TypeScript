@@ -34,7 +34,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class CollisionHelper
 public constructor (sourceLayerInterface: AllBinaryLayer){
 
             super();
-            var sourceLayerInterface = sourceLayerInterface
+        var sourceLayerInterface = sourceLayerInterface
 this.sourceLayerInterface= sourceLayerInterface;
     
 }

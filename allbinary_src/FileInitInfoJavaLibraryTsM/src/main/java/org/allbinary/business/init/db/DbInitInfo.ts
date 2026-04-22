@@ -82,7 +82,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -118,12 +121,9 @@ export class DbInitInfo extends DbConnectionInfo {
     private hasRead: boolean = false;
         
         
-public constructor (initFileName: string, read: boolean)                        
-
-                            : super(){
-
+public constructor (initFileName: string, read: boolean){
             super();
-            var initFileName = initFileName
+                    var initFileName = initFileName
 var read = read
 
 
@@ -178,7 +178,7 @@ this.initFileName= initFileName;
             
     public write(){
 
-    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE);
+    var PATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE);
         
         
 ;
@@ -186,7 +186,7 @@ this.initFileName= initFileName;
 this.directory.create(PATH);
     
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE, this.initFileName);
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);
         
         
 ;
@@ -272,7 +272,7 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedServer));
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPort));
     
-hasRead= false;
+this.hasRead= false;
     
 
          finally {
@@ -303,7 +303,7 @@ hasRead= false;
             
     load(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +PACKAGE, this.initFileName);
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getWebappPath() +this.PACKAGE, this.initFileName);
         
         
 ;
@@ -414,7 +414,7 @@ this.setPort(new WeakCrypt(7).
                                     }
                                 
                         else {
-                            hasRead= false;
+                            this.hasRead= false;
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
@@ -457,10 +457,10 @@ this.hasRead= value;
 
         try {
             
-                        if(!hasRead)
+                        if(!this.hasRead)
                         
                                     {
-                                    hasRead= true;
+                                    this.hasRead= true;
     
 this.load();
     
@@ -475,7 +475,7 @@ this.load();
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "updateIfNeeded", e);
+                                    PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "updateIfNeeded", e);
     
 
                                     }

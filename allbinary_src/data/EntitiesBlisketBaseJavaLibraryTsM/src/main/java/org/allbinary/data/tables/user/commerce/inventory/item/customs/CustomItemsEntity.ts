@@ -58,12 +58,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CustomItemsEntityInterface } from "./CustomItemsEntityInterface.js";
+
 export class CustomItemsEntity extends AbSqlBean implements CustomItemsEntityInterface {
         
 
@@ -74,16 +79,13 @@ export class CustomItemsEntity extends AbSqlBean implements CustomItemsEntityInt
     readonly tableName: string = "customitems";
         
         
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

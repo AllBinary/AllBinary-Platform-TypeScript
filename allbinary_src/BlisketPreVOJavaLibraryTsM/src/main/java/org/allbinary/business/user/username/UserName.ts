@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,12 +111,12 @@ var aUserName = aUserName
 private constructor (){
 
             super();
-            }
+        }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.userName= hashMap!.get(UserData.USERNAME);
 
                          as String;
@@ -128,7 +131,7 @@ this.userName= hashMap!.get(UserData.USERNAME);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isValid(userName);
+                        return this.isValid(this.userName);
 
                         ;
     

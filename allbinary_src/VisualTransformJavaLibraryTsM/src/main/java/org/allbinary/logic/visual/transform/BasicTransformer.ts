@@ -82,7 +82,10 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,12 +105,9 @@ export class BasicTransformer extends AbTransformer {
         
 
     private readonly abeClientInformation: AbeClientInformationInterface
-public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
 
 
@@ -151,7 +151,7 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
                          as ByteArrayOutputStream;
     
 
-    var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(abeClientInformation, file.getAbsolutePath()));
+    var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, file.getAbsolutePath()));
         
         
 ;
@@ -251,7 +251,7 @@ outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384));
                          as ByteArrayOutputStream;
     
 
-    var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(abeClientInformation, this.getTransformInfoInterface()!.getName()));
+    var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, this.getTransformInfoInterface()!.getName()));
         
         
 ;

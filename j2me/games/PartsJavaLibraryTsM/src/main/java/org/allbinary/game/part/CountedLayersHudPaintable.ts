@@ -46,7 +46,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class CountedLayersHudPaintable
 public constructor (partInterfaceArray: PartInterface[], dropSize: number, startIndex: number, countedTotalStringColor: number, countedPartsBorder: number){
 
             super();
-            var partInterfaceArray = partInterfaceArray
+        var partInterfaceArray = partInterfaceArray
 var dropSize = dropSize
 var startIndex = startIndex
 var countedTotalStringColor = countedTotalStringColor
@@ -102,13 +105,13 @@ this.dropSize= dropSize;
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    var height: number = myFont!.DEFAULT_CHAR_HEIGHT;
+    var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
         
         
 ;
     
 
-                        if(this.dropSize > myFont!.DEFAULT_CHAR_HEIGHT)
+                        if(this.dropSize > this.myFont!.DEFAULT_CHAR_HEIGHT)
                         
                                     {
                                     height= this.dropSize;
@@ -139,7 +142,7 @@ var graphics = graphics
 ;
     
 
-    var size: number = partInterfaceArray!.length
+    var size: number = this.partInterfaceArray!.length
                 ;
         
         
@@ -166,12 +169,12 @@ var graphics = graphics
 
 
                         for (
-    var index: number = startIndex;
+    var index: number = this.startIndex;
         
         
 index < size; index++)
         {
-countedLayerInterfaceFactory= partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
+countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
     
 
                         if(countedLayerInterfaceFactory!.getTotal() > 0)
@@ -187,7 +190,7 @@ layerInterface!.setPosition(widthEdge, y, layerInterface!.getZP());
     
 layerInterface!.paint(graphics);
     
-graphics.setColor(countedTotalStringColor);
+graphics.setColor(this.countedTotalStringColor);
     
 charArray= countedLayerInterfaceFactory!.getTotalString();
     
@@ -204,7 +207,7 @@ count++;
                         if(count > 0)
                         
                                     {
-                                    graphics.setColor(countedPartsBorder);
+                                    graphics.setColor(this.countedPartsBorder);
     
 graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3);
     

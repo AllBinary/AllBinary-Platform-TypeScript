@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class GameInfoData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly GAME_TYPE: string = "GAME_TYPE";

@@ -37,7 +37,10 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class GameKeyEvent extends AllBinaryEventObject {
     private gameActionKey: number= 0
 
     private originalKey: number= 0
-public constructor (anyType: any = {}, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean){
+            super(anyType);
+                    var anyType = anyType
 var sourceId = sourceId
 var originalKey = originalKey
 var gameActionKey = gameActionKey
@@ -86,12 +86,9 @@ this.setRepeatEvents(repeated);
     
 }
 
-public constructor (anyType: any = {}, sourceId: number, key: number)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, sourceId: number, key: number){
+            super(anyType);
+                    var anyType = anyType
 var sourceId = sourceId
 var key = key
 

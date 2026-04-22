@@ -51,7 +51,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class NameSpaceRequestParam
 public constructor (nameSpace: string, value: string){
 
             super();
-            var nameSpace = nameSpace
+        var nameSpace = nameSpace
 var value = value
 this.nameSpaceVector= new Vector();
     

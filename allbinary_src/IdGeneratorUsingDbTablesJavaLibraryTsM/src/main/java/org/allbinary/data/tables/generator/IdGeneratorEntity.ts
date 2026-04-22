@@ -49,12 +49,17 @@ import { AbSqlBean } from "../../../../../org/allbinary/logic/communication/sql/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { IdGeneratorEntityInterface } from "./IdGeneratorEntityInterface.js";
+
 export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInterface {
         
 
@@ -75,19 +80,16 @@ export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInt
     readonly VALUE: string = "VALUE";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 this.tableData= new StringBuilder().
                             append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString();
     
-super.setTableName(tableName);
+super.setTableName(this.tableName);
     
 }
 
@@ -102,7 +104,7 @@ var name = name
         
 ;
     
-keysAndValues!.put(NAME, name);
+keysAndValues!.put(this.NAME, name);
     
 
     var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
@@ -123,7 +125,7 @@ keysAndValues!.put(NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(VALUE as Object);
+    var value: string = hashMap!.get(this.VALUE);
 
                          as String;
         
@@ -164,7 +166,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
 var value = value
 
         try {
-            super.deleteWhere(NAME, value);
+            super.deleteWhere(this.NAME, value);
     
 this.logUtil!.putF(this.commonStrings!.SUCCESS, this, commonStrings!.delete);
     
@@ -188,9 +190,9 @@ var value = value
         
 ;
     
-map.put(NAME, name);
+map.put(this.NAME, name);
     
-map.put(VALUE, value.toString());
+map.put(this.VALUE, value.toString());
     
 this.update(map);
     

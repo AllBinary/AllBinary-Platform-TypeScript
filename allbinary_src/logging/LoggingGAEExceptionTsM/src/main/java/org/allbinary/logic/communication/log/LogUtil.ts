@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ import { Log } from "./Log.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public init(){

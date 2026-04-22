@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,9 +97,9 @@ var negativeValue = negativeValue
     var index: number = value -1;
         
         
-index >= lastMin; index--)
+index >= this.lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -108,28 +111,28 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
     var index: number = negativeValue -1;
         
         
-index >= lastNegativeMin; index--)
+index >= this.lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]= new Integer( -index);
+this.INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
 
-                        if(lastMin < value)
+                        if(this.lastMin < value)
                         
                                     {
-                                    lastMin= value;
+                                    this.lastMin= value;
     
-MIN= value;
+this.MIN= value;
     
 
                                     }
                                 
 
-                        if(lastNegativeMin < negativeValue)
+                        if(this.lastNegativeMin < negativeValue)
                         
                                     {
-                                    lastNegativeMin= negativeValue;
+                                    this.lastNegativeMin= negativeValue;
     
 
                                     }
@@ -139,7 +142,7 @@ MIN= value;
 
     public init(){
 
-                        if(lastMin < POSITIVE_MAX || lastNegativeMin < NEGATIVE_MAX)
+                        if(this.lastMin < this.POSITIVE_MAX || this.lastNegativeMin < this.NEGATIVE_MAX)
                         
                                     {
                                     
@@ -147,12 +150,12 @@ MIN= value;
 
 
                         for (
-    var index: number = POSITIVE_MAX -1;
+    var index: number = this.POSITIVE_MAX -1;
         
         
-index >= lastMin; index--)
+index >= this.lastMin; index--)
         {
-INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -161,18 +164,18 @@ INTEGER_ARRAY[index +NEGATIVE_MAX]= new Integer(index);
 
 
                         for (
-    var index: number = NEGATIVE_MAX -1;
+    var index: number = this.NEGATIVE_MAX -1;
         
         
-index >= lastNegativeMin; index--)
+index >= this.lastNegativeMin; index--)
         {
-INTEGER_ARRAY[index]= new Integer( -index);
+this.INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
-lastMin= POSITIVE_MAX;
+this.lastMin= this.POSITIVE_MAX;
     
-lastNegativeMin= NEGATIVE_MAX;
+this.lastNegativeMin= this.NEGATIVE_MAX;
     
 
                                     }
@@ -182,7 +185,7 @@ lastNegativeMin= NEGATIVE_MAX;
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(index: number): Integer{
@@ -191,7 +194,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INTEGER_ARRAY[index +NEGATIVE_MAX]!;
+                        return this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]!;
     
 }
 
@@ -199,14 +202,14 @@ var index = index
     public getInstanceNoThrow(index: number): Integer{
 var index = index
 
-                        if(index +NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
+                        if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INTEGER_ARRAY[ -1 +NEGATIVE_MAX]!;
+                        return this.INTEGER_ARRAY[ -1 +this.NEGATIVE_MAX]!;
     
 
                                     }
@@ -215,7 +218,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INTEGER_ARRAY[index +NEGATIVE_MAX]!;
+                        return this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]!;
     
 }
 
@@ -257,12 +260,12 @@ var index = index
 ;
     
 
-                        if(STRING_ARRAY[i] == 
+                        if(this.STRING_ARRAY[i] == 
                                     null
                                 )
                         
                                     {
-                                    STRING_ARRAY[i]= this.INTEGER_ARRAY[i]!.toString();
+                                    this.STRING_ARRAY[i]= this.INTEGER_ARRAY[i]!.toString();
     
 
                                     }
@@ -271,7 +274,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return STRING_ARRAY[i]!;
+                        return this.STRING_ARRAY[i]!;
     
 }
 

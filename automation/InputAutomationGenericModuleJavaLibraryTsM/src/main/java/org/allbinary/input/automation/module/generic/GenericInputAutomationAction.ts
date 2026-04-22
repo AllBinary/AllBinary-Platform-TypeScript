@@ -34,7 +34,10 @@ import { InputRobotInterface } from "../../../../../../org/allbinary/input/autom
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class GenericInputAutomationAction
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

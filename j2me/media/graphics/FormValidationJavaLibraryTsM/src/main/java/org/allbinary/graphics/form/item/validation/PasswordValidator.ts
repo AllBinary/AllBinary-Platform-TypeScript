@@ -31,7 +31,10 @@ import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/ite
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { TextFieldItemValidator } from "./TextFieldItemValidator.js";
 
 export class PasswordValidator extends TextFieldItemValidator {
         
-public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean)                        
-
-                            : super(textFieldItem, min, max, allowOnEmpty){
-
-            super();
-            var textFieldItem = textFieldItem
+public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean){
+            super(textFieldItem, min, max, allowOnEmpty);
+                    var textFieldItem = textFieldItem
 var min = min
 var max = max
 var allowOnEmpty = allowOnEmpty

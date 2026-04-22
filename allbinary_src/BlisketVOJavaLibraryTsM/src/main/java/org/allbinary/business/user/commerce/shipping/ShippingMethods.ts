@@ -46,12 +46,17 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ShippingMethodsInterface } from "./ShippingMethodsInterface.js";
+
 export class ShippingMethods
             extends Object
          implements ShippingMethodsInterface {
@@ -71,7 +76,7 @@ export class ShippingMethods
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var storeFrontInterface = storeFrontInterface
 this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
                             getDefaultInstance();
@@ -101,7 +106,7 @@ var name = name
 ;
     
 
-    var size: number = shippingVector!.length!;
+    var size: number = this.shippingVector!.length!;
         
         
 ;
@@ -116,7 +121,7 @@ var name = name
         
 index < size; index++)
         {
-shipping= shippingVector!.get(index);
+shipping= this.shippingVector!.get(index);
 
                          as ShippingInterface;
     
@@ -140,7 +145,7 @@ shipping= shippingVector!.get(index);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SHIPPINGERROR))
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.EXCEPTION, this, "getShippingInterface(String name)");
+                                    this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "getShippingInterface(String name)");
     
 
                                     }

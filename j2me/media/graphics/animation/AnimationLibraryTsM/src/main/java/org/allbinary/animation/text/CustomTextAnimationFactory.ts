@@ -52,7 +52,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,12 +91,9 @@ export class CustomTextAnimationFactory
     font: Font
 
     public scaleProperties: ScaleProperties
-public constructor (text: string, fontSize: number, dx: number, dy: number)                        
-
-                            : this(text, fontSize, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var text = text
+public constructor (text: string, fontSize: number, dx: number, dy: number){
+            this(text, fontSize, AnimationBehaviorFactory.getInstance());
+                        //var text = text
     //var fontSize = fontSize
     //var dx = dx
     //var dy = dy
@@ -107,12 +107,9 @@ this.dy= dy;
     
 }
 
-public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(text, fontSize, animationBehaviorFactory){
-
-            super();
-                //var text = text
+public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(text, fontSize, animationBehaviorFactory);
+                        //var text = text
     //var fontSize = fontSize
     //var dx = dx
     //var dy = dy
@@ -127,12 +124,9 @@ this.dy= dy;
     
 }
 
-public constructor (text: string, fontSize: number)                        
-
-                            : this(text, fontSize, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var text = text
+public constructor (text: string, fontSize: number){
+            this(text, fontSize, AnimationBehaviorFactory.getInstance());
+                        //var text = text
     //var fontSize = fontSize
 
 
@@ -143,14 +137,14 @@ public constructor (text: string, fontSize: number)
 public constructor (text: string, fontSize: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var text = text
+            //var text = text
     //var fontSize = fontSize
     //var animationBehaviorFactory = animationBehaviorFactory
 this.scaleProperties= new ScaleProperties();
     
 this.text= text;
     
-this.scaleProperties!.scaleHeight= fontSize.toInt() -(fontSize /4);
+this.scaleProperties!.scaleHeight= fontSize -(fontSize /4);
     
 this.initScaleHeight= this.scaleProperties!.scaleHeight;
     
@@ -170,21 +164,21 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
 ;
     
 
-                        if(dx != 0 || dy != 0)
+                        if(this.dx != 0 || this.dy != 0)
                         
                                     {
-                                    customTextAnimation= new AdjustCustomTextAnimation(text, this.scaleProperties!.scaleHeight, dx, dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                                    customTextAnimation= new AdjustCustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.dx, this.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
                                 
                         else {
-                            customTextAnimation= new CustomTextAnimation(text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
+                            customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }
                             
-customTextAnimation!.setBasicColorP(basicColor);
+customTextAnimation!.setBasicColorP(this.basicColor);
     
 
 
@@ -205,7 +199,7 @@ customTextAnimation!.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return font.stringWidth(this.text);
+                        return this.font.stringWidth(this.text);
 
                         ;
     
@@ -217,7 +211,7 @@ customTextAnimation!.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return font.getHeight();
+                        return this.font.getHeight();
 
                         ;
     

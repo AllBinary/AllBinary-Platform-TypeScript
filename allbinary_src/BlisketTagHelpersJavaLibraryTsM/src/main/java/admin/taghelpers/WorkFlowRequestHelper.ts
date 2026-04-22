@@ -58,7 +58,10 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class WorkFlowRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
     

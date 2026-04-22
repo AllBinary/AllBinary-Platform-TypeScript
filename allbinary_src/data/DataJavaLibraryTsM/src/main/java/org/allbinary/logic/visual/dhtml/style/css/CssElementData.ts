@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class CssElementData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "CSS_ELEMENT_NAME";

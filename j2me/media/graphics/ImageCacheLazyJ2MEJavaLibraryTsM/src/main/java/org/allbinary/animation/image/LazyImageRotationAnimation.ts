@@ -73,7 +73,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,12 +112,9 @@ export class LazyImageRotationAnimation extends RotationAnimation {
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
         
         
-public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var layoutIndex = layoutIndex
+public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var layoutIndex = layoutIndex
     //var instanceId = instanceId
     //var scaleProperties = scaleProperties
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
@@ -231,7 +231,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
         
 ;
     
-this.animationInterfaceFactoryInterface!.setInitialScale(scaleProperties);
+this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
 this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId);
 

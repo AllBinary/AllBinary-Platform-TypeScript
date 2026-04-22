@@ -55,12 +55,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionGestureEventListener } from "./MotionGestureEventListener.js";
+
 import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
 
 import { MotionGestureEvent } from "./MotionGestureEvent.js";
@@ -94,7 +99,7 @@ export class ReleaseControlledMotionGestureListener
 public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
-            var signed = signed
+        var signed = signed
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.signed= signed;
@@ -104,7 +109,7 @@ this.signed= signed;
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
@@ -167,9 +172,9 @@ onMotionGestureEvent(ev);
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-isMouseGestureOccurring= true;
+this.isMouseGestureOccurring= true;
     
-currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION;
+this.currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION;
     
 this.onMotionGestureEvent(ev);
     
@@ -181,25 +186,25 @@ var ev = ev
 
         try {
             
-                        if(isMouseGestureOccurring == false)
+                        if(this.isMouseGestureOccurring == false)
                         
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ;
     
-isMouseGestureOccurring= false;
+this.isMouseGestureOccurring= false;
     
-signed.onMotionGestureCompleted(motionGestureCollection);
+this.signed.onMotionGestureCompleted(this.motionGestureCollection);
     
-motionGestureCollection!.clear();
+this.motionGestureCollection!.clear();
     
 
                 //: 
 } catch(e) 
             {
 this.logUtil!.put(new StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e);
+                            append(this.commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(ev.getMotionGesture()))!.toString(), this, "release", e);
     
 }
 
@@ -209,7 +214,7 @@ this.logUtil!.put(new StringMaker().
     public onMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
 
-                        if(isMouseGestureOccurring == false)
+                        if(this.isMouseGestureOccurring == false)
                         
 
 
@@ -242,12 +247,12 @@ var ev = ev
                                 
                         else {
                             
-                        if(currentMotionGesture != motionGestureInput)
+                        if(this.currentMotionGesture != motionGestureInput)
                         
                                     {
-                                    currentMotionGesture= motionGestureInput;
+                                    this.currentMotionGesture= motionGestureInput;
     
-motionGestureCollection!.add(ev.getMotionGesture());
+this.motionGestureCollection!.add(ev.getMotionGesture());
     
 
                                     }

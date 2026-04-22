@@ -85,7 +85,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,12 +106,9 @@ export class CustomizersView extends HttpStoreComponentView implements DomNodeIn
         
 
     readonly customizersVector: Vector
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -135,7 +135,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 ;
     
 
-    var size: number = customizersVector!.length!;
+    var size: number = this.customizersVector!.length!;
         
         
 ;
@@ -151,7 +151,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 index < size; index++)
         {
 
-    var viewName: string = customizersVector!.get(index);
+    var viewName: string = this.customizersVector!.get(index);
 
                          as String;
         
@@ -264,7 +264,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

@@ -46,7 +46,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class ContextConfigurationInterfaceFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

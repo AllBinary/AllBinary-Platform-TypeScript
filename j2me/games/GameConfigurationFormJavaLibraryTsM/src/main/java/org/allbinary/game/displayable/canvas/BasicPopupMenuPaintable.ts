@@ -82,7 +82,10 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,12 +116,12 @@ export class BasicPopupMenuPaintable extends Paintable {
 public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-                //var rectangle = rectangle
+            //var rectangle = rectangle
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
-label= NAME;
+this.label= NAME;
     
 this.rectangle= rectangle;
     
@@ -228,7 +231,7 @@ this.rectangle= rectangle;
 
                                     }
                                 
-this.offset= (heightOffset shr 1);
+this.offset= (heightOffset>>1);
     
 
     var width: number = this.rectangle.getWidth()!;
@@ -306,7 +309,7 @@ this.animationInterface!.paint(graphics, x, y);
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor);
     
-drawStringUtil!.paintVerticle(graphics, label, x +BORDER, y +offset, 0);
+this.drawStringUtil!.paintVerticle(graphics, label, x +this.BORDER, y +this.offset, 0);
     
 graphics.drawRect(x, y, width, height);
     

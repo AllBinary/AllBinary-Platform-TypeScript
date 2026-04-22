@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,12 +68,9 @@ export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMoti
     private canvas: Canvas = NullCanvas.NULL_CANVAS;
         
         
-protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas)                        
-
-                            : super(gameKeyEventList, playerInputId){
-
-            super();
-            var gameKeyEventList = gameKeyEventList
+protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas){
+            super(gameKeyEventList, playerInputId);
+                    var gameKeyEventList = gameKeyEventList
 var playerInputId = playerInputId
 var gameCanvas = gameCanvas
 
@@ -84,7 +84,7 @@ this.canvas= gameCanvas;
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent
-motionGestureEventList!.add(motionGestureEvent);
+this.motionGestureEventList!.add(motionGestureEvent);
     
 }
 
@@ -101,7 +101,7 @@ this.canvas= canvas;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return canvas as MyCanvas;
+                        return this.canvas as MyCanvas;
     
 }
 

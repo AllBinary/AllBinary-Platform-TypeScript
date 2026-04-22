@@ -114,7 +114,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -190,12 +193,9 @@ export class UnitWaypointBehavior2 extends UnitWaypointBehavior {
     private targetWithoutCachedPathLayerInterface: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
         
         
-public constructor (ownerAdvancedRTSGameLayer: UnitLayer, fakeWaypoint: AdvancedRTSGameLayer)                        
-
-                            : super(ownerAdvancedRTSGameLayer, fakeWaypoint){
-
-            super();
-            var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
+public constructor (ownerAdvancedRTSGameLayer: UnitLayer, fakeWaypoint: AdvancedRTSGameLayer){
+            super(ownerAdvancedRTSGameLayer, fakeWaypoint);
+                    var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 var fakeWaypoint = fakeWaypoint
 
 
@@ -404,7 +404,7 @@ this.processTargetList();
     onEnemyMovement(layerInterface: AdvancedRTSGameLayer){
 var layerInterface = layerInterface
 
-    var anotherTargetDistance: number = layerDistanceUtil!.getDistance(this.associatedAdvancedRTSGameLayer, layerInterface)!;
+    var anotherTargetDistance: number = this.layerDistanceUtil!.getDistance(this.associatedAdvancedRTSGameLayer, layerInterface)!;
         
         
 ;
@@ -783,11 +783,11 @@ this.setWaypointPath(targetLayer);
     
 this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(this.unitWaypointStrings!.WANDERING, this.basicColorFactory!.RED);
     
-wanderPathsList!.clear();
+this.wanderPathsList!.clear();
     
-wanderPathsList!.add(this.associatedAdvancedRTSGameLayer!.getSurroundingGeographicMapCellPositionList());
+this.wanderPathsList!.add(this.associatedAdvancedRTSGameLayer!.getSurroundingGeographicMapCellPositionList());
     
-this.setRandomGeographicMapCellHistory(wanderPathsList);
+this.setRandomGeographicMapCellHistory(this.wanderPathsList);
     
 
                                     }

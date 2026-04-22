@@ -40,7 +40,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,9 +82,9 @@ export class GraphicItemFactory
 private constructor (){
 
             super();
-            graphicItems= new HashMap<any, any>();
+        this.graphicItems= new HashMap<any, any>();
     
-graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
+this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
     
 }
 
@@ -89,7 +92,7 @@ graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory(
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 var itemName = itemName
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = graphicItems!.get(itemName);
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName);
 
                          as GraphicsItemInterfaceFactoryInterface;
         

@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

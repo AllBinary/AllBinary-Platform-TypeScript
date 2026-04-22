@@ -79,7 +79,10 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class PageValidationView extends PageView implements ValidationComponentI
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

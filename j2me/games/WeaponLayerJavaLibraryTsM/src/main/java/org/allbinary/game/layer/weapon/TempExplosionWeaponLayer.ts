@@ -38,7 +38,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,19 +52,16 @@ import { SimpleWeaponLayer } from "./SimpleWeaponLayer.js";
 export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         
 
-    public readonly weaponProperties: WeaponProperties = new WeaponProperties(0, 1000, 0.toShort());
+    public readonly weaponProperties: WeaponProperties = new WeaponProperties(0, 1000, 0);
         
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
         
         
-public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number)                        
-
-                            : super(name, movement, animationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number){
+            super(name, movement, animationInterface, rectangle, viewPosition);
+                        //var name = name
     //var movement = movement
     //var animationInterface = animationInterface
     //var rectangle = rectangle
@@ -81,7 +81,7 @@ this.timeDelayHelper!.delay= timeDelay;
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
+                        if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
                                     this.getCollidableInferface()!.collide(this);

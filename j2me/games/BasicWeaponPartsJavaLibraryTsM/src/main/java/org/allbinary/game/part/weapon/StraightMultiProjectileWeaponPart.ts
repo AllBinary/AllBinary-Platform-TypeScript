@@ -55,7 +55,10 @@ import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalT
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,12 +72,9 @@ export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
     private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool
 
     private readonly total: number
-public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool)                        
-
-                            : super(animationInterface){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool){
+            super(animationInterface);
+                        //var animationInterface = animationInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
 
@@ -86,12 +86,9 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
     
 }
 
-public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship)                        
-
-                            : super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
+            super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
+                        //var animationInterface = animationInterface
     //var sourceLayerInterface = sourceLayerInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
     //var total = total
@@ -134,7 +131,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 ;
     
 
-    var halfWidth: number = (reducedWidth shr 1);
+    var halfWidth: number = (reducedWidth>>1);
         
         
 ;
@@ -191,17 +188,17 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
     var index: number = 0;
         
         
-index < total; index++)
+index < this.total; index++)
         {
-sine= (next *noDecimalTrigTable!.sin(angle.toInt())).toLong();
+sine= (next *this.noDecimalTrigTable!.sin(angle));
     
-beamX= (sine /noDecimalTrigTable!.SCALE).toInt();
+beamX= (sine /this.noDecimalTrigTable!.SCALE);
     
-cosine= (next *noDecimalTrigTable!.cos(angle.toInt())).toLong();
+cosine= (next *this.noDecimalTrigTable!.cos(angle));
     
-beamY=  -(cosine /noDecimalTrigTable!.SCALE).toInt();
+beamY=  -(cosine /this.noDecimalTrigTable!.SCALE);
     
-weaponLayer= weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface);
+weaponLayer= weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x +beamX, y +beamY, 0, angle, otherAngle, weaponProperties, scoreableInterface);
     
 allbinaryLayerManager!.append(weaponLayer);
     

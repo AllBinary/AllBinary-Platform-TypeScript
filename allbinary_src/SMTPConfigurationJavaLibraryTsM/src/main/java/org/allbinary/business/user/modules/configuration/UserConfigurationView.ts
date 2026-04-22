@@ -61,7 +61,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class UserConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
@@ -109,7 +112,7 @@ this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInt
         
 ;
     
-userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);
+this.userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);
     
 
     var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;
@@ -144,7 +147,7 @@ this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTi
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
-            var userConfigurationInterface = userConfigurationInterface
+        var userConfigurationInterface = userConfigurationInterface
 this.userConfigurationInterface= userConfigurationInterface;
     
 }
@@ -179,7 +182,7 @@ var document = document
 node.appendChild(userEmailConfigurationView!.toXmlNode(document));
     
 
-    var timeCreatedView: TimeCreatedView = new TimeCreatedView(userConfigurationInterface!.getTimeCreated());
+    var timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());
         
         
 ;
@@ -187,7 +190,7 @@ node.appendChild(userEmailConfigurationView!.toXmlNode(document));
 node.appendChild(timeCreatedView!.toXmlNode(document));
     
 
-    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(userConfigurationInterface!.getTimeLastModified());
+    var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());
         
         
 ;

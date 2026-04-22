@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class ToolFactory
 var tool = tool
 
         try {
-            StatusFactory.getInstance()!.setStatus(SELECTED_LABEL +tool);
+            StatusFactory.getInstance()!.setStatus(this.SELECTED_LABEL +tool);
     
 this.tool= tool;
     
@@ -102,7 +105,7 @@ this.tool= tool;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "setSelectionTool", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setSelectionTool", e);
     
 }
 
@@ -110,15 +113,15 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "setSelectionTool", e);
 
 
     public getSelectedToolFactory(): GraphicsItemInterfaceFactoryInterface{
-StatusFactory.getInstance()!.setStatus("Tool In Use: " +tool);
+StatusFactory.getInstance()!.setStatus("Tool In Use: " +this.tool);
     
 
-                        if(tool != 
+                        if(this.tool != 
                                     null
                                 )
                         
                                     {
-                                    this.selectedTool= GraphicItemFactory.getInstance()!.getInstance(tool);
+                                    this.selectedTool= GraphicItemFactory.getInstance()!.getInstance(this.tool);
     
 this.logUtil!.putF("New Tool: " +this.selectedTool, this, "getSelectedToolFactory");
     

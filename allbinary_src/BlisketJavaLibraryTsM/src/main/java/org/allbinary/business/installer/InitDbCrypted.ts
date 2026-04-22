@@ -118,7 +118,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -144,12 +147,9 @@ export class InitDbCrypted extends AbDatabaseManagement {
     private readonly SQL_FILE: string = "initWeblisket.sql";
         
         
-public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface)                        
-
-                            : super(databaseConnectionInfoInterface as DbConnectionInfo){
-
-            super();
-            var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
+            super(databaseConnectionInfoInterface as DbConnectionInfo);
+                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -162,30 +162,30 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_USERS);
     
-userDbInitInfo= new UserDbInitInfo();
+this.userDbInitInfo= new UserDbInitInfo();
     
-inventoryDbInitInfo= new InventoryDbInitInfo();
+this.inventoryDbInitInfo= new InventoryDbInitInfo();
     
-historyDbInitInfo= new HistoryDbInitInfo();
+this.historyDbInitInfo= new HistoryDbInitInfo();
     
-staticpagesDbInitInfo= new StaticPagesDbInitInfo();
+this.staticpagesDbInitInfo= new StaticPagesDbInitInfo();
     
-logDbInitInfo= new LogDbInitInfo();
+this.logDbInitInfo= new LogDbInitInfo();
     
 
-    var CUSTOMERDB: string = userDbInitInfo!.getName()!;
+    var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;
         
         
 ;
     
 
-    var CUSTOMERDBUSER: string = userDbInitInfo!.getUserName()!;
+    var CUSTOMERDBUSER: string = this.userDbInitInfo!.getUserName()!;
         
         
 ;
     
 
-    var CUSTOMERDBPASSWORD: string = userDbInitInfo!.getPassword()!;
+    var CUSTOMERDBPASSWORD: string = this.userDbInitInfo!.getPassword()!;
         
         
 ;
@@ -208,19 +208,19 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var INVENTORYDB: string = inventoryDbInitInfo!.getName()!;
+    var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;
         
         
 ;
     
 
-    var INVENTORYDBUSER: string = inventoryDbInitInfo!.getUserName()!;
+    var INVENTORYDBUSER: string = this.inventoryDbInitInfo!.getUserName()!;
         
         
 ;
     
 
-    var INVENTORYDBPASSWORD: string = inventoryDbInitInfo!.getPassword()!;
+    var INVENTORYDBPASSWORD: string = this.inventoryDbInitInfo!.getPassword()!;
         
         
 ;
@@ -243,19 +243,19 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var HISTORYDB: string = historyDbInitInfo!.getName()!;
+    var HISTORYDB: string = this.historyDbInitInfo!.getName()!;
         
         
 ;
     
 
-    var HISTORYDBUSER: string = historyDbInitInfo!.getUserName()!;
+    var HISTORYDBUSER: string = this.historyDbInitInfo!.getUserName()!;
         
         
 ;
     
 
-    var HISTORYDBPASSWORD: string = historyDbInitInfo!.getPassword()!;
+    var HISTORYDBPASSWORD: string = this.historyDbInitInfo!.getPassword()!;
         
         
 ;
@@ -278,19 +278,19 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var STATICPAGESDB: string = staticpagesDbInitInfo!.getName()!;
+    var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;
         
         
 ;
     
 
-    var STATICPAGESDBUSER: string = staticpagesDbInitInfo!.getUserName()!;
+    var STATICPAGESDBUSER: string = this.staticpagesDbInitInfo!.getUserName()!;
         
         
 ;
     
 
-    var STATICPAGESDBPASSWORD: string = staticpagesDbInitInfo!.getPassword()!;
+    var STATICPAGESDBPASSWORD: string = this.staticpagesDbInitInfo!.getPassword()!;
         
         
 ;
@@ -313,19 +313,19 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var LOGDB: string = logDbInitInfo!.getName()!;
+    var LOGDB: string = this.logDbInitInfo!.getName()!;
         
         
 ;
     
 
-    var LOGDBUSER: string = logDbInitInfo!.getUserName()!;
+    var LOGDBUSER: string = this.logDbInitInfo!.getUserName()!;
         
         
 ;
     
 
-    var LOGDBPASSWORD: string = logDbInitInfo!.getPassword()!;
+    var LOGDBPASSWORD: string = this.logDbInitInfo!.getPassword()!;
         
         
 ;
@@ -377,18 +377,18 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_USERS, e)
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_DATABASES);
     
-userDbInitInfo= new UserDbInitInfo();
+this.userDbInitInfo= new UserDbInitInfo();
     
-inventoryDbInitInfo= new InventoryDbInitInfo();
+this.inventoryDbInitInfo= new InventoryDbInitInfo();
     
-historyDbInitInfo= new HistoryDbInitInfo();
+this.historyDbInitInfo= new HistoryDbInitInfo();
     
-staticpagesDbInitInfo= new StaticPagesDbInitInfo();
+this.staticpagesDbInitInfo= new StaticPagesDbInitInfo();
     
-logDbInitInfo= new LogDbInitInfo();
+this.logDbInitInfo= new LogDbInitInfo();
     
 
-    var CUSTOMERDB: string = userDbInitInfo!.getName()!;
+    var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;
         
         
 ;
@@ -411,7 +411,7 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var INVENTORYDB: string = inventoryDbInitInfo!.getName()!;
+    var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;
         
         
 ;
@@ -434,7 +434,7 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var HISTORYDB: string = historyDbInitInfo!.getName()!;
+    var HISTORYDB: string = this.historyDbInitInfo!.getName()!;
         
         
 ;
@@ -457,7 +457,7 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var STATICPAGESDB: string = staticpagesDbInitInfo!.getName()!;
+    var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;
         
         
 ;
@@ -480,7 +480,7 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var LOGDB: string = logDbInitInfo!.getName()!;
+    var LOGDB: string = this.logDbInitInfo!.getName()!;
         
         
 ;
@@ -503,7 +503,7 @@ logDbInitInfo= new LogDbInitInfo();
                                     }
                                 
 
-    var file: AbFile = FileFactory.getInstance()!.getInstance(SQL_FILE)!;
+    var file: AbFile = FileFactory.getInstance()!.getInstance(this.SQL_FILE)!;
         
         
 ;

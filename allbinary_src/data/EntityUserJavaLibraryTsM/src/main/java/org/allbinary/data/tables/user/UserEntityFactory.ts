@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class UserEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

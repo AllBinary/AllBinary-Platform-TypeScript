@@ -43,7 +43,10 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class ImageRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
@@ -142,7 +145,7 @@ originalAwtImage= originalJ2SEImage!.getImage();
 
                         }
                             
-imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, totalAngle);
+this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, totalAngle);
     
 
                                     }
@@ -225,7 +228,7 @@ originalAwtImage= originalJ2SEImage!.getImage();
 ;
     
 
-    var bufferedImage: BufferedImage = imageJ2SERotationUtil!.getRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;
+    var bufferedImage: BufferedImage = this.imageJ2SERotationUtil!.getRotatedImage(originalAwtImage, newBufferedImage, rotationInDegrees)!;
         
         
 ;

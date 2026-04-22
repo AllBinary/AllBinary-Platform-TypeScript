@@ -31,7 +31,10 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class BasicColorSetUtil
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public setBasicColorP(graphics: Graphics, basicColor: BasicColor){
@@ -71,7 +74,7 @@ graphics.setColor(basicColor!.toInt());
 }
 
 
-    public setBasicColorP(graphics: Graphics, basicColor: BasicColor, value: number){
+    public setBasicColorP3(graphics: Graphics, basicColor: BasicColor, value: number){
 var graphics = graphics
 var basicColor = basicColor
 var value = value

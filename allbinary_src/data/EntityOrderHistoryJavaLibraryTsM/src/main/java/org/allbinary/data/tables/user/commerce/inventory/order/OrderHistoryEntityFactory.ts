@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class OrderHistoryEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

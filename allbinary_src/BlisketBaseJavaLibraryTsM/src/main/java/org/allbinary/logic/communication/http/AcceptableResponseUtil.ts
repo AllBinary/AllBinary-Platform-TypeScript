@@ -34,7 +34,10 @@ import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return candidateVector!.get(index);
+                        return this.candidateVector!.get(index);
 
                          as String;
     
@@ -93,7 +96,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tagNameVector!.get(index);
+                        return this.tagNameVector!.get(index);
 
                          as String;
     

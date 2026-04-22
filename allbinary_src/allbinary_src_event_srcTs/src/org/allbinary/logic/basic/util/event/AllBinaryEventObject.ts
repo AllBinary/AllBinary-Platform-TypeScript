@@ -31,7 +31,10 @@ import { EventObject } from "../../../../../java/util/EventObject.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { EventObject } from "../../../../../java/util/EventObject.js";
         
 export class AllBinaryEventObject extends EventObject {
         
-public constructor (anyType: any = {})                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}){
+            super(anyType);
+                    var anyType = anyType
 
 
                             //For kotlin this is before the body of the constructor.

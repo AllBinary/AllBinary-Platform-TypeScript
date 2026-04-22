@@ -38,7 +38,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -128,24 +131,18 @@ export class AbDatabaseManagement extends AbSqlBean {
     readonly ADD_TABLES_RESULTS_LABEL: string = "Add Table Results: ";
         
         
-public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface)                        
-
-                            : super(databaseConnectionInfoInterface as DbConnectionInfo){
-
-            super();
-            var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
+            super(databaseConnectionInfoInterface as DbConnectionInfo);
+                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (connectionInfo: DbConnectionInfo)                        
-
-                            : super(connectionInfo){
-
-            super();
-            var connectionInfo = connectionInfo
+public constructor (connectionInfo: DbConnectionInfo){
+            super(connectionInfo);
+                    var connectionInfo = connectionInfo
 
 
                             //For kotlin this is before the body of the constructor.
@@ -313,7 +310,7 @@ super.executeSQLStatement(sqlStatement);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e);
+this.logUtil!.put(this.UNABLE_TO_CREATE_DATABASE +db, this, this.METHOD_ADD_DB, e);
     
 
 

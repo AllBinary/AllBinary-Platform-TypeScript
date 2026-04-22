@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class CurrentlyPressedTouchButtonSingleton
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public size(): number{

@@ -72,7 +72,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,12 +99,9 @@ export class HorizontaRotationManeuverAI extends BasicAI implements ArtificialIn
     private readonly baseVelocityInterface: BasicVelocityProperties
 
     private readonly velocityInterface: VelocityInterface
-public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
 
@@ -127,7 +127,7 @@ this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.g
     
 this.baseVelocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
-this.velocityInterface= baseVelocityInterface as VelocityInterface;
+this.velocityInterface= this.baseVelocityInterface as VelocityInterface;
     
 
     var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
@@ -239,7 +239,7 @@ this.drop();
                                     }
                                 
 
-    var index: number = circularIndexUtil!.getIndex()!;
+    var index: number = this.circularIndexUtil!.getIndex()!;
         
         
 ;
@@ -340,7 +340,7 @@ this.baseVelocityInterface!.zero();
 
     accelerate(){
 
-                        if(currentSpeedDivisor > 1)
+                        if(this.currentSpeedDivisor > 1)
                         
                                     {
                                     currentSpeedDivisor--;

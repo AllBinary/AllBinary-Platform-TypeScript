@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TransformInfoTemplateData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly UNCRYPTED_EXTENSION: string = "xsl";

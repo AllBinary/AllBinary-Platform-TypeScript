@@ -70,13 +70,18 @@ import { TransformInfoObjectConfig } from "../../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { TransformInfo } from "./TransformInfo.js";
+
+import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
 
 import { TransformInfoData } from "./TransformInfoData.js";
 
@@ -88,12 +93,9 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
         
 
     private readonly abContext: AbContext
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean)                        
-
-                            : super(){
-
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean){
             super();
-            var propertiesHashMap = propertiesHashMap
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 var crud = crud
 
@@ -115,12 +117,9 @@ this.override(propertiesHashMap);
     
 }
 
-public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(){
-
+public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-            var request = request
+                    var request = request
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -145,12 +144,9 @@ this.override(propertiesHashMap);
     
 }
 
-public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(){
-
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-            var databaseHashMap = databaseHashMap
+                    var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -172,12 +168,9 @@ this.set(databaseHashMap);
     
 }
 
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(){
-
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-            var propertiesHashMap = propertiesHashMap
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
 
@@ -198,12 +191,9 @@ this.set(propertiesHashMap);
     
 }
 
-public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp)                        
-
-                            : super(){
-
+public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp){
             super();
-            var parentViewOfThisTransformInfoInterface = parentViewOfThisTransformInfoInterface
+                    var parentViewOfThisTransformInfoInterface = parentViewOfThisTransformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

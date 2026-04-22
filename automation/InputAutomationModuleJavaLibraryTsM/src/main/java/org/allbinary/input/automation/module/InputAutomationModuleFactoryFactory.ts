@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class InputAutomationModuleFactoryFactory
 public constructor (helpSetListenerInterface: HelpSetListener){
 
             super();
-                //var helpSetListenerInterface = helpSetListenerInterface
+            //var helpSetListenerInterface = helpSetListenerInterface
 this.helpSetListenerInterface= helpSetListenerInterface;
     
 this.defaultListModelHelper= new DefaultListModelHelper();

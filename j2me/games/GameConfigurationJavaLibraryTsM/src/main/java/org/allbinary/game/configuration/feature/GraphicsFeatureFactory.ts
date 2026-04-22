@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class GraphicsFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NONE: GraphicsFeature = new GraphicsFeature(StringUtil.getInstance()!.NULL_STRING);

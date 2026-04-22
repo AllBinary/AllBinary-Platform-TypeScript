@@ -37,7 +37,10 @@ import { MachineAccessControlAddressInterface } from "../../../../../../../org/a
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class MachineAccessControlAddress
 public constructor (){
 
             super();
-            }
+        }
 
 
     public compareTo(componentInterface: HardwareComponentInterface): boolean{

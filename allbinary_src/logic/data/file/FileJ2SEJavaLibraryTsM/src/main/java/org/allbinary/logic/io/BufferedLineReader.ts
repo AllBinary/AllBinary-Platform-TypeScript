@@ -40,7 +40,10 @@ import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFile
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class BufferedLineReader
 public constructor (file: AbFile){
 
             super();
-            var file = file
+        var file = file
 this.tmpIn= new BufferedReader(new FileReader(AbFileNativeUtil.get(file)));
     
 }

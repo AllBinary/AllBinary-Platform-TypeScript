@@ -72,7 +72,10 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -115,7 +118,7 @@ export class ResourceUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getContext(): Context{
@@ -123,7 +126,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return context as Context;
+                        return this.context as Context;
     
 }
 
@@ -203,7 +206,7 @@ this.hashMap!.put(resource, value);
 var resource = resource
 var value = value
 
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashMap)!;
+    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;
         
         
 ;

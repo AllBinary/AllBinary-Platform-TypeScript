@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {
 public constructor (demoCanvas: RunnableCanvas){
 
             super();
-            var demoCanvas = demoCanvas
+        var demoCanvas = demoCanvas
 this.runnableCanvas= demoCanvas;
     
 }
@@ -65,7 +68,7 @@ this.runnableCanvas= demoCanvas;
     public run(){
 
         try {
-            runnableCanvas!.run();
+            this.runnableCanvas!.run();
     
 
                 //: 
@@ -87,7 +90,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-runnableCanvas!.processLoopSleep();
+this.runnableCanvas!.processLoopSleep();
     
 }
 

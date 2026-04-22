@@ -34,7 +34,10 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -125,12 +128,9 @@ index < size; index++)
     private readonly sessionTimeout: number
 
     private readonly sessionInactivityTimeout: number
- constructor (aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number)                        
-
-                            : this(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout){
-
-            super();
-            var aRole = aRole
+ constructor (aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
+            this(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout);
+                    var aRole = aRole
 var a_int_RoleId = a_int_RoleId
 var aSessionTimeout = aSessionTimeout
 var aSessionInactivityTimeout = aSessionInactivityTimeout
@@ -143,7 +143,7 @@ var aSessionInactivityTimeout = aSessionInactivityTimeout
  constructor (aRole: string, aDisplayValue: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
 
             super();
-            var aRole = aRole
+        var aRole = aRole
 var aDisplayValue = aDisplayValue
 var a_int_RoleId = a_int_RoleId
 var aSessionTimeout = aSessionTimeout

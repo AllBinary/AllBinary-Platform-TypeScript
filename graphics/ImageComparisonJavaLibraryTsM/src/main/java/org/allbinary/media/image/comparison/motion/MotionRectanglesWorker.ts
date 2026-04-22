@@ -58,7 +58,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ export class MotionRectanglesWorker extends BasicEventHandler implements ImageCo
 public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
 
             super();
-                //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
+            //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
     
 }

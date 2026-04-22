@@ -58,7 +58,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class BasicItemView
 public constructor (itemInterface: ItemInterface, vector: Vector){
 
             super();
-            var itemInterface = itemInterface
+        var itemInterface = itemInterface
 var vector = vector
 this.itemInterface= itemInterface;
     
@@ -110,7 +113,7 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = itemInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
         
         
 ;

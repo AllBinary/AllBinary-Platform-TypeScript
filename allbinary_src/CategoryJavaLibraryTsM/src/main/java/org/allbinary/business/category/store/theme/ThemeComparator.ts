@@ -31,7 +31,10 @@ import { Comparator } from "../../../../../../java/util/Comparator.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class ThemeComparator
 public constructor (){
 
             super();
-            }
+        }
 
 
     public compare(anyType: any = {}, object2: any = {}): number{

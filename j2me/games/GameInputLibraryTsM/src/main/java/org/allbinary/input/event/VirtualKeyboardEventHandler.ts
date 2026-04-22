@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class VirtualKeyboardEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly SHOW_EVENT: VirtualKeyboardEvent = new VirtualKeyboardEvent(BooleanFactory.getInstance()!.TRUE);

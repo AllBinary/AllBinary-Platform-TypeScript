@@ -37,7 +37,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
 export class StoreThemeCategoryValidationView extends StoreThemeCategoryView implements ValidationInterface {
         
-public constructor (categoryInterface: StoreThemeCategoryInterface)                        
-
-                            : super(categoryInterface as StoreThemeCategoryInterface){
-
-            super();
-            var categoryInterface = categoryInterface
+public constructor (categoryInterface: StoreThemeCategoryInterface){
+            super(categoryInterface as StoreThemeCategoryInterface);
+                    var categoryInterface = categoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

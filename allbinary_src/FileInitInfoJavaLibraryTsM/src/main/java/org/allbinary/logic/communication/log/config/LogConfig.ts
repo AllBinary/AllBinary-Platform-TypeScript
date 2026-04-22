@@ -85,7 +85,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -110,7 +113,7 @@ export class LogConfig
 public constructor (aName: string, aDescription: string, aPath: string, aFileName: string){
 
             super();
-            var aName = aName
+        var aName = aName
 var aDescription = aDescription
 var aPath = aPath
 var aFileName = aFileName
@@ -129,7 +132,7 @@ this.fileName= aFileName;
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;
         

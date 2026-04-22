@@ -34,7 +34,10 @@ import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class Log
 public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
             super();
-                //var specialMessage = specialMessage
+            //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
     //var exception = exception

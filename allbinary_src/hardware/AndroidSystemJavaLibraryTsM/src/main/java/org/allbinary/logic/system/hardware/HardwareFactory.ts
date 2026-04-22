@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class HardwareFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

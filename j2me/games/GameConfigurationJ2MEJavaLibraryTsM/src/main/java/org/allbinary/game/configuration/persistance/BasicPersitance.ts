@@ -54,7 +54,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class BasicPersitance
 protected constructor (recordId: string){
 
             super();
-                //var recordId = recordId
+            //var recordId = recordId
 this.recordId= recordId;
     
 }
@@ -117,7 +120,7 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
 
-    var size: number = idList!.size()!;
+    var size: number = this.idList!.size()!;
         
         
 ;

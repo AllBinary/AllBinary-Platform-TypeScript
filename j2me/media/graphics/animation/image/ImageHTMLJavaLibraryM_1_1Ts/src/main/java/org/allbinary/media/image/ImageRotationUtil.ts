@@ -43,7 +43,10 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class ImageRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number): Image{
@@ -191,7 +194,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                                     {
                                     canvasSurface!.rotate(Math.toRadians(totalAngle);
 
-                        .toFloat());
+                        );
     
 
 

@@ -55,12 +55,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PermissionItemsEntityInterface } from "./PermissionItemsEntityInterface.js";
+
 export class PermissionItemsEntity extends AbSqlBean implements PermissionItemsEntityInterface {
         
 
@@ -71,16 +76,13 @@ export class PermissionItemsEntity extends AbSqlBean implements PermissionItemsE
     readonly tableName: string = "permissionitems";
         
         
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

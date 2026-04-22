@@ -37,7 +37,10 @@ import { InputRobotFactory } from "../../../../../../../../../org/allbinary/inpu
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ defaultComboBoxModel!.addElement(nameArray[index]! as String);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

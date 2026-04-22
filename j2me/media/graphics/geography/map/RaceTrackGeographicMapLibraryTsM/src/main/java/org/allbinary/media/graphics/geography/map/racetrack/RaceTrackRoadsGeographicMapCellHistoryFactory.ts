@@ -31,7 +31,10 @@ import { GeographicMapCellHistory } from "../../../../../../../org/allbinary/med
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class RaceTrackRoadsGeographicMapCellHistoryFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

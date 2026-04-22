@@ -34,7 +34,10 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,12 +51,9 @@ export class AdjustCustomTextAnimation extends CustomTextAnimation {
     private dx: number
 
     private dy: number
-public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(text, fontSize, animationBehavior){
-
-            super();
-                //var text = text
+public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(text, fontSize, animationBehavior);
+                        //var text = text
     //var fontSize = fontSize
     //var dx = dx
     //var dy = dy
@@ -74,7 +74,7 @@ this.dy= dy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dx;
+                        return this.dx;
     
 }
 
@@ -91,7 +91,7 @@ this.dx= dx;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dy;
+                        return this.dy;
     
 }
 

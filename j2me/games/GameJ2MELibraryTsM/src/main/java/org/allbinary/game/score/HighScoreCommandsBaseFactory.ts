@@ -37,7 +37,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class HighScoreCommandsBaseFactory
 protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
             super();
-            var HIGH_SCORE_COMMANDS = HIGH_SCORE_COMMANDS
+        var HIGH_SCORE_COMMANDS = HIGH_SCORE_COMMANDS
 
                         if(J2MEUtil.isJ2ME())
                         
@@ -89,13 +92,13 @@ var command = command
 
 
                         for (
-    var index: number = HIGH_SCORE_COMMANDS.length -1;
+    var index: number = this.HIGH_SCORE_COMMANDS.length -1;
         
         
 index >= 0; index--)
         {
 
-                        if(command == HIGH_SCORE_COMMANDS[index])
+                        if(command == this.HIGH_SCORE_COMMANDS[index])
                         
                                     {
                                     
@@ -127,13 +130,13 @@ var command = command
 
 
                         for (
-    var index: number = HIGH_SCORE_COMMANDS.length -1;
+    var index: number = this.HIGH_SCORE_COMMANDS.length -1;
         
         
 index >= 0; index--)
         {
 
-                        if(command == HIGH_SCORE_COMMANDS[index])
+                        if(command == this.HIGH_SCORE_COMMANDS[index])
                         
                                     {
                                     

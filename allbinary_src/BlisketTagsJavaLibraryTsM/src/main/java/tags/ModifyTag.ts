@@ -55,7 +55,10 @@ import { CommonStrings } from "../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,12 +72,9 @@ export class ModifyTag extends HelperTag {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)                        
-
-                            : super(tagHelperFactoryInterface){
-
-            super();
-            var tagHelperFactoryInterface = tagHelperFactoryInterface
+public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
+            super(tagHelperFactoryInterface);
+                    var tagHelperFactoryInterface = tagHelperFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

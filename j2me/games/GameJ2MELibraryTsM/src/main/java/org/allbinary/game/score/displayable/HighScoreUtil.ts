@@ -73,7 +73,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class HighScoreUtil
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
 
             super();
-                //var highScoresFactoryInterface = highScoresFactoryInterface
+            //var highScoresFactoryInterface = highScoresFactoryInterface
     //var highScoresHelper = highScoresHelper
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
@@ -140,7 +143,7 @@ this.gameInfo= gameInfo;
     //var highScoresArray = highScoresArray
 this.highScoresArray= highScoresArray;
     
-firstTime= false;
+this.firstTime= false;
     
 this.saveHighScore();
     
@@ -149,7 +152,7 @@ this.saveHighScore();
 
     public update(name: string){
     //var name = name
-HighScoreNamePersistanceSingleton.getInstance()!.save(abeClientInformation, gameInfo, name);
+HighScoreNamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, gameInfo, name);
     
 this.highScore!.setName(name);
     
@@ -158,7 +161,7 @@ this.highScore!.setName(name);
 
     public saveHighScore(){
 this.logUtil!.putF(new StringMaker().
-                            append(commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
+                            append(this.commonStrings!.START)!.append(StringUtil.getInstance()!.toString(this.highScore))!.toString(), this, "saveHighScore");
     
 
     var size: number = this.highScoresArray!.length
@@ -168,12 +171,12 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-                        if(firstTime && size == 0)
+                        if(this.firstTime && size == 0)
                         
                                     {
                                     this.logUtil!.putF("Games canvas did not give us any HighScores", this, "saveHighScore");
     
-highScoresFactoryInterface!.fetchHighScores(gameInfo, this);
+this.highScoresFactoryInterface!.fetchHighScores(this.gameInfo, this);
     
 
 
@@ -202,7 +205,7 @@ highScoresFactoryInterface!.fetchHighScores(gameInfo, this);
         
 index < size; index++)
         {
-highScores= highScoresArray[index]!;
+highScores= this.highScoresArray[index]!;
     
 highScores!.addHighScore(this.highScore);
     
@@ -213,7 +216,7 @@ this.logUtil!.putF(new StringMaker().
     
 }
 
-this.highScoresHelper!.setHighScoresArray(highScoresArray);
+this.highScoresHelper!.setHighScoresArray(this.highScoresArray);
     
 }
 

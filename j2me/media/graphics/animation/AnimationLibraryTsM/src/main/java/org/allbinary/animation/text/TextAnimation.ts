@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,24 +75,18 @@ export class TextAnimation extends IndexedAnimation {
     private anchor: number = Anchor.TOP_LEFT;
         
         
-public constructor (animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationBehavior = animationBehavior
+public constructor (animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationBehavior = animationBehavior
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (text: string, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var text = text
+public constructor (text: string, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var text = text
     //var animationBehavior = animationBehavior
 
 
@@ -110,7 +107,7 @@ this.setText(text);
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
     var height: number = this.getHeight()!;
@@ -119,7 +116,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
 ;
     
 
-    var size: number = textArrayP!.length
+    var size: number = this.textArrayP!.length
                 ;
         
         
@@ -135,7 +132,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
         
 index < size; index++)
         {
-graphics.drawString(textArrayP[index]!, x, y +(index *height), anchor);
+graphics.drawString(this.textArrayP[index]!, x, y +(index *height), anchor);
     
 }
 
@@ -262,7 +259,7 @@ this.textArrayP= textArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return textArrayP;
+                        return this.textArrayP;
     
 }
 

@@ -34,7 +34,10 @@ import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class GameFeatureCanvas extends Canvas {
 public constructor (){
 
             super();
-            }
+        }
 
 
     paint(graphics: Graphics){

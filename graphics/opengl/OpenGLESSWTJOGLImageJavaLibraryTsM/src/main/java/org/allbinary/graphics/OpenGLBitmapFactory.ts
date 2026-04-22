@@ -29,7 +29,10 @@ import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/Pla
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export inner class Config
 private constructor (bitmapConfig: any = {}){
 
             super();
-                //var bitmapConfig = bitmapConfig
+            //var bitmapConfig = bitmapConfig
 this.bitmapConfig= bitmapConfig;
     
 }

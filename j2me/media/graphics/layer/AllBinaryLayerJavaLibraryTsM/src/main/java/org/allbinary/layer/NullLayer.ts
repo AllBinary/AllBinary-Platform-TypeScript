@@ -31,7 +31,10 @@ import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ export class NullLayer extends Layer {
     
 }
 
-private constructor ()                        
-
-                            : super(0, 0){
-
-            super();
-            
+private constructor (){
+            super(0, 0);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -55,12 +55,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { XmlOptionItemsEntityInterface } from "./XmlOptionItemsEntityInterface.js";
+
 export class XmlOptionItemsEntity extends AbSqlBean implements XmlOptionItemsEntityInterface {
         
 
@@ -71,16 +76,13 @@ export class XmlOptionItemsEntity extends AbSqlBean implements XmlOptionItemsEnt
     readonly tableName: string = "xmloptionitems";
         
         
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

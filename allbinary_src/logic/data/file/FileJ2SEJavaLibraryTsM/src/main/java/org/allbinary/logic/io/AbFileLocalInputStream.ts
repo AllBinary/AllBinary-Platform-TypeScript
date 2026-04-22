@@ -37,7 +37,10 @@ import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFile
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { AbFileInputStream } from "./AbFileInputStream.js";
 
 export class AbFileLocalInputStream extends AbFileInputStream {
         
-public constructor (file: AbFile)                        
-
-                            : super(AbFileNativeUtil.get(file)){
-
-            super();
-            var file = file
+public constructor (file: AbFile){
+            super(AbFileNativeUtil.get(file));
+                    var file = file
 
 
                             //For kotlin this is before the body of the constructor.

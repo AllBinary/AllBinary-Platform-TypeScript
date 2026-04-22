@@ -72,7 +72,10 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,12 +87,9 @@ export class EditValidationView extends InventoryItemView implements ValidationC
         
 
     private id: string
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -126,7 +126,7 @@ this.id= hashMap!.get(BasicItemData.ID);
             
     public isValid(): Boolean{
 
-                        if(id == 
+                        if(this.id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id);
 
@@ -220,7 +220,7 @@ var document = document
 ;
     
 
-                        if(id == 
+                        if(this.id == 
                                     null
                                  || !StringValidationUtil.getInstance()!.isNumber(this.id);
 

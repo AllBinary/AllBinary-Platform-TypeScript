@@ -67,7 +67,10 @@ import { NodeList } from "../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ export class DomHelper
 private constructor (){
 
             super();
-            }
+        }
 
 
     public createDocument(): Document{

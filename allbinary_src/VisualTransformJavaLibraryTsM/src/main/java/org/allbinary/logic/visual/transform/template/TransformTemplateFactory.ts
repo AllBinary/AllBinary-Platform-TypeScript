@@ -52,7 +52,10 @@ import { TransformInfoObjectFactory } from "../../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class TransformTemplateFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

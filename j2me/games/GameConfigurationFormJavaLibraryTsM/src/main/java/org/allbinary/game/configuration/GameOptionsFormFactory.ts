@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class GameOptionsFormFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{

@@ -43,7 +43,10 @@ import { JarInputStream } from "../../../../../java/util/jar/JarInputStream.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ new JarUtil(new URL("file:///G:/mnt/bc/mydev/working/j2me/MiniSpaceWars/MiniSpac
 public constructor (jarURL: URL){
 
             super();
-            var jarURL = jarURL
+        var jarURL = jarURL
 this.jarURL= jarURL;
     
 }
@@ -84,7 +87,7 @@ this.jarURL= jarURL;
 
         try {
             
-    var conn: URLConnection = jarURL!.openConnection()!;
+    var conn: URLConnection = this.jarURL!.openConnection()!;
         
         
 ;

@@ -34,7 +34,10 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class ImageScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

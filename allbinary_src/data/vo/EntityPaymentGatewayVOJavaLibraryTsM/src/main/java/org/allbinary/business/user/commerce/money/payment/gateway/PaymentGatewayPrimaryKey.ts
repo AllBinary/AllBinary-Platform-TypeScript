@@ -37,12 +37,17 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Serializable } from "./Serializable.js";
+
 export class PaymentGatewayPrimaryKey
             extends Object
          implements java.io.Serializable {
@@ -54,7 +59,7 @@ export class PaymentGatewayPrimaryKey
 public constructor (storeName: string, gatewayName: string){
 
             super();
-            var storeName = storeName
+        var storeName = storeName
 var gatewayName = gatewayName
 this.setStoreName(storeName);
     

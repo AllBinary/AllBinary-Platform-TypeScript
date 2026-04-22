@@ -46,7 +46,10 @@ import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphic
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class PreGameLockablePaintable extends LockablePaintable {
     private readonly halfWidth: number
 
     private readonly paintableForm: ScrollCurrentSelectionForm
-public constructor (paintableForm: ScrollCurrentSelectionForm, lockedIndex: number)                        
-
-                            : super(lockedIndex){
-
-            super();
-            var paintableForm = paintableForm
+public constructor (paintableForm: ScrollCurrentSelectionForm, lockedIndex: number){
+            super(lockedIndex);
+                    var paintableForm = paintableForm
 var lockedIndex = lockedIndex
 
 

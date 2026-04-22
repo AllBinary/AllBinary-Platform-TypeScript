@@ -40,7 +40,10 @@ import { CommonPhoneStrings } from "../../../../../../../org/allbinary/string/Co
 
 
 
-        
+
+
+
+
 
 
 
@@ -145,7 +148,7 @@ export class HtmlTable extends HtmlTag {
 public constructor (before: string, cellpadding: string, cellspacing: string, after: string){
 
             super();
-            var before = before
+        var before = before
 var cellpadding = cellpadding
 var cellspacing = cellspacing
 var after = after
@@ -159,13 +162,13 @@ this.after= after;
     
 this.htmlRowsVector= new Vector();
     
-addAttribute(BORDER, CommonPhoneStrings.getInstance()!.ZERO);
+addAttribute(this.BORDER, CommonPhoneStrings.getInstance()!.ZERO);
     
-addAttribute(CELLPADDING, this.cellpadding);
+addAttribute(this.CELLPADDING, this.cellpadding);
     
-addAttribute(CELLSPACING, this.cellspacing);
+addAttribute(this.CELLSPACING, this.cellspacing);
     
-addAttribute(STYLE, this.BORDERCOLLAPSE);
+addAttribute(this.STYLE, this.BORDERCOLLAPSE);
     
 }
 
@@ -199,9 +202,9 @@ this.htmlRowsVector!.add(htmlRow);
         
 ;
     
-result= before;
+result= this.before;
     
-result += START;
+result += this.START;
     
 result += " ";
     
@@ -248,10 +251,10 @@ result += "\" ";
                                 
 }
 
-result += END;
+result += this.END;
     
 
-    var size: number = htmlRowsVector!.length!;
+    var size: number = this.htmlRowsVector!.length!;
         
         
 ;
@@ -266,15 +269,15 @@ result += END;
         
 i < size; i++)
         {
-result += htmlRowsVector!.get(i)!.toString();
+result += this.htmlRowsVector!.get(i)!.toString();
     
 result += " ";
     
 }
 
-result += ENDTAG;
+result += this.ENDTAG;
     
-result += after;
+result += this.after;
     
 
 

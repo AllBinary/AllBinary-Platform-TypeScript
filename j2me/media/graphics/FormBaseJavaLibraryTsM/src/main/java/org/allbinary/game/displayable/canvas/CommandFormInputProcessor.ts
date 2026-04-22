@@ -100,7 +100,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -140,12 +143,9 @@ export class CommandFormInputProcessor extends BasicMenuInputProcessor {
     private hasPressed: boolean = false;
         
         
-public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm)                        
-
-                            : super(gameKeyEventList, playerInputId, gameCanvas){
-
-            super();
-                //var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm){
+            super(gameKeyEventList, playerInputId, gameCanvas);
+                        //var gameKeyEventList = gameKeyEventList
     //var playerInputId = playerInputId
     //var gameCanvas = gameCanvas
     //var form = form
@@ -326,7 +326,7 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 key= gameKeyEvent!.getKey();
     
 
-                        if(gameKeyEvent!.getSourceId() != MOTION_GESTURE_SOURCE_ID)
+                        if(gameKeyEvent!.getSourceId() != this.MOTION_GESTURE_SOURCE_ID)
                         
                                     {
                                     
@@ -512,7 +512,7 @@ this.processCommand();
 
                                     }
                                 
-this.doubleClickTimeHelper!.delay= DOUBLE_CLICK_DELAY;
+this.doubleClickTimeHelper!.delay= this.DOUBLE_CLICK_DELAY;
     
 this.doubleClickTimeHelper!.setStartTime();
     

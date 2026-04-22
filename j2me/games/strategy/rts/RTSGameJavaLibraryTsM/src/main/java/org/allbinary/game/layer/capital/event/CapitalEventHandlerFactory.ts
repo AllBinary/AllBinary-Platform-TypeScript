@@ -31,7 +31,10 @@ import { Group } from "../../../../../../org/allbinary/game/identification/Group
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ var groupInterface = groupInterface
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return capitalEventHandlerArray[groupInterface!.getGroupId();
 
-                        .toInt()]!;
+                        ]!;
     
 }
 

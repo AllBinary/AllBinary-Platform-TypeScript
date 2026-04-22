@@ -96,7 +96,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -146,12 +149,9 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
     private selectedInput: Input = NONE;
         
         
-public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, helpPaintable: HelpPaintable)                        
-
-                            : super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor()){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, helpPaintable: HelpPaintable){
+            super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
+                        //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var helpPaintable = helpPaintable
@@ -192,9 +192,9 @@ super.close();
     
 this.paintable.process();
     
-this.selectedGameKey= NONE;
+this.selectedGameKey= this.NONE;
     
-this.selectedInput= NONE;
+this.selectedInput= this.NONE;
     
 this.update();
     
@@ -266,7 +266,7 @@ var repeated = repeated
 ;
     
 
-    var input: Input = inputFactory!.getInstance(keyCode)!;
+    var input: Input = this.inputFactory!.getInstance(keyCode)!;
         
         
 ;
@@ -306,7 +306,7 @@ stringBuffer!.append(this.stringUtil!.toString(input));
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.PROCESS);
     
 
-                        if(this.selectedGameKey != NONE)
+                        if(this.selectedGameKey != this.NONE)
                         
                                     {
                                     this.gameActionCrud(gameKey, input);
@@ -330,7 +330,7 @@ this.logUtil!.putF(new StringMaker().
     
 this.selectedGameKey= gameKey;
     
-this.selectedInput= NONE;
+this.selectedInput= this.NONE;
     
 this.helpPaintable!.update(this.selectedGameKey, this.selectedInput);
     
@@ -361,11 +361,11 @@ stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
 this.logUtil!.putF(stringBuffer!.toString(), this, "gameActionCrud");
     
 
-                        if(this.selectedInput == NONE)
+                        if(this.selectedInput == this.NONE)
                         
                                     {
                                     
-    var list: BasicArrayList = inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
+    var list: BasicArrayList = this.inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
         
         
 ;
@@ -433,7 +433,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
     
 
-    var isInputAlreadyMapped: boolean = inputMapping!.getInputMapping()!.isMapped(input)!;
+    var isInputAlreadyMapped: boolean = this.inputMapping!.getInputMapping()!.isMapped(input)!;
         
         
 ;
@@ -460,7 +460,7 @@ stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
     
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
-inputMapping!.getInputMapping()!.add(this.selectedGameKey, input);
+this.inputMapping!.getInputMapping()!.add(this.selectedGameKey, input);
     
 this.selectedInput= input;
     
@@ -490,7 +490,7 @@ this.setSelectedAction(gameKey);
 ;
     
 
-    var list: BasicArrayList = inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
+    var list: BasicArrayList = this.inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
         
         
 ;
@@ -517,9 +517,9 @@ stringBuffer!.append(stringUtil!.toString(this.selectedInput));
     
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
-inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput);
+this.inputMapping!.getInputMapping()!.remove(this.selectedGameKey, this.selectedInput);
     
-this.selectedInput= NONE;
+this.selectedInput= this.NONE;
     
 this.update();
     
@@ -538,7 +538,7 @@ this.update();
                 //@Throws(Error::class)
             
     public setDefault(){
-inputMapping!.setDefault(abeClientInformation);
+this.inputMapping!.setDefault(this.abeClientInformation);
     
 this.helpPaintable!.update(NONE, NONE);
     
@@ -550,7 +550,7 @@ this.repaintBehavior!.onChangeRepaint(this);
                 //@Throws(Error::class)
             
     public update(){
-inputMapping!.update(abeClientInformation);
+this.inputMapping!.update(this.abeClientInformation);
     
 this.helpPaintable!.update(this.selectedGameKey, this.selectedInput);
     

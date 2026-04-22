@@ -34,7 +34,10 @@ import { SpecialItemsRequestHelperFactory } from "../../admin/taghelpers/Special
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class SpecialItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new SpecialItemsHelperFactory());
+        this.setTagHelperFactory(new SpecialItemsHelperFactory());
     
 this.setTagRequestHelperFactory(new SpecialItemsRequestHelperFactory());
     

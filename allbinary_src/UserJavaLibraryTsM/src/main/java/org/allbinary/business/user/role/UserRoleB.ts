@@ -37,7 +37,10 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
 
-        
+
+
+
+
 
 
 
@@ -135,12 +138,9 @@ UserRoleFactory.getInstance();
     
 }
 
-protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface)                        
-
-                            : super(aBasicUserRole, aUserFactoryInterface){
-
-            super();
-            var aBasicUserRole = aBasicUserRole
+protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
+            super(aBasicUserRole, aUserFactoryInterface);
+                    var aBasicUserRole = aBasicUserRole
 var aUserFactoryInterface = aUserFactoryInterface
 
 

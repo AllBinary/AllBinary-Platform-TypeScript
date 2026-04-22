@@ -46,7 +46,10 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,12 +79,9 @@ export class TimeHudWidget extends BasicHud {
         
 
     private readonly timer: Timer
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer)                        
-
-                            : super(location, direction, maxHeight, maxWidth, bufferZone, basicColor){
-
-            super();
-            var location = location
+public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
+            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+                    var location = location
 var direction = direction
 var maxHeight = maxHeight
 var maxWidth = maxWidth
@@ -117,12 +117,9 @@ this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
                                 
 }
 
-public constructor (location: number, direction: number, maxWidth: number, basicColor: BasicColor, timer: Timer)                        
-
-                            : this(location, direction, 14, maxWidth, 2, basicColor, timer){
-
-            super();
-            var location = location
+public constructor (location: number, direction: number, maxWidth: number, basicColor: BasicColor, timer: Timer){
+            this(location, direction, 14, maxWidth, 2, basicColor, timer);
+                    var location = location
 var direction = direction
 var maxWidth = maxWidth
 var basicColor = basicColor
@@ -133,12 +130,9 @@ var timer = timer
                     
 }
 
-public constructor (location: number, direction: number, basicColor: BasicColor, timer: Timer)                        
-
-                            : this(location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, basicColor, timer){
-
-            super();
-            var location = location
+public constructor (location: number, direction: number, basicColor: BasicColor, timer: Timer){
+            this(location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, basicColor, timer);
+                    var location = location
 var direction = direction
 var basicColor = basicColor
 var timer = timer
@@ -158,9 +152,9 @@ this.set();
 
 
     set(){
-this.string= timer.getTimeChars();
+this.string= this.timer.getTimeChars();
     
-totalDigits= timer.getCurrentTotalDigits();
+this.totalDigits= this.timer.getCurrentTotalDigits();
     
 }
 

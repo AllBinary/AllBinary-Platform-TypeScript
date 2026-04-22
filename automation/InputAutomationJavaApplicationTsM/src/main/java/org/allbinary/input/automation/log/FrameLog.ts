@@ -49,7 +49,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class FrameLog
 public constructor (frame: Long){
 
             super();
-            var frame = frame
+        var frame = frame
 this.frame= frame;
     
 }
@@ -147,7 +150,7 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
     
-filePathStringBuffer!.append(LongUtil.fillIn(frame.toString()));
+filePathStringBuffer!.append(LongUtil.fillIn(this.frame.toString()));
     
 filePathStringBuffer!.append(".txt");
     
@@ -171,13 +174,13 @@ fileOutputStream!.write('\n');
     
 fileOutputStream!.write(info);
     
-fileOutputStream!.write(infoStringBuffer!.toString()!.encodeToByteArray());
+fileOutputStream!.write(this.infoStringBuffer!.toString()!.encodeToByteArray());
     
 fileOutputStream!.write('\n');
     
 fileOutputStream!.write(actions);
     
-fileOutputStream!.write(actionsStringBuffer!.toString()!.encodeToByteArray());
+fileOutputStream!.write(this.actionsStringBuffer!.toString()!.encodeToByteArray());
     
 fileOutputStream!.close();
     

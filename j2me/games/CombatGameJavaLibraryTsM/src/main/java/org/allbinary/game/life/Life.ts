@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LifeInterface } from "./LifeInterface.js";
+
 export class Life
             extends Object
          implements LifeInterface {
@@ -51,7 +56,7 @@ export class Life
 public constructor (){
 
             super();
-            this.lives= 0;
+        this.lives= 0;
     
 this.startLives= 0;
     
@@ -62,7 +67,7 @@ this.maxlives= 0;
 public constructor (lives: number, maxlives: number){
 
             super();
-            var lives = lives
+        var lives = lives
 var maxlives = maxlives
 this.maxlives= maxlives;
     
@@ -119,7 +124,7 @@ var lives = lives
                         if(this.lives +lives <= this.getMaxlives())
                         
                                     {
-                                    this.lives= (this.lives +lives).toShort();
+                                    this.lives= (this.lives +lives);
     
 
                                     }
@@ -212,7 +217,7 @@ var lives = lives
                         if(this.lives -lives >= 0)
                         
                                     {
-                                    this.lives= (this.lives -lives).toShort();
+                                    this.lives= (this.lives -lives);
     
 
                                     }

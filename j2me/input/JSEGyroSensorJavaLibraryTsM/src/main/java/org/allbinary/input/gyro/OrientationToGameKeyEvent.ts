@@ -37,7 +37,10 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,11 +61,11 @@ export class OrientationToGameKeyEvent
 public constructor (){
 
             super();
-            
+        
                         if(Features.getInstance()!.isFeature(SensorFeatureFactory.getInstance()!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryGyroSensor= new NoGyroSensor();
+                                    this.allBinaryGyroSensor= new NoGyroSensor();
     
 
                                     }

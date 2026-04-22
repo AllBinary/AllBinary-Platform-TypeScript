@@ -43,7 +43,10 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class ImageScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -155,13 +158,13 @@ private constructor (){
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this.constructor.name.toString()!, (width *scaleX).toInt(), (height *scaleY).toInt());
+                                    image= imageCache!.get(this.constructor.name.toString()!, (width *scaleX), (height *scaleY));
     
 
                                     }
                                 
                         else {
-                            image= imageCache!.get("createImage", (width *scaleX).toInt(), (height *scaleY).toInt());
+                            image= imageCache!.get("createImage", (width *scaleX), (height *scaleY));
     
 
                         }
@@ -236,7 +239,7 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
                         if(clear)
                         
                                     {
-                                    g.setBackground(imageJ2SEUtil!.TRANSPARENT_COLOR);
+                                    g.setBackground(this.imageJ2SEUtil!.TRANSPARENT_COLOR);
     
 g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
     

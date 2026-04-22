@@ -55,12 +55,17 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CategoryEntityInterface } from "./CategoryEntityInterface.js";
+
 export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface {
         
 
@@ -71,30 +76,24 @@ export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface
     readonly tableName: string = "categories";
         
         
-public constructor (categoryFactoryInterface: CategoryFactoryInterface)                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            var categoryFactoryInterface = categoryFactoryInterface
+public constructor (categoryFactoryInterface: CategoryFactoryInterface){
+            super(new InventoryDbInitInfo());
+                    var categoryFactoryInterface = categoryFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -190,7 +189,7 @@ var value = value
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     

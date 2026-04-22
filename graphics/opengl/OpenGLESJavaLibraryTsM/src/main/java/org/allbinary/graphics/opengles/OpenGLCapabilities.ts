@@ -75,7 +75,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -214,7 +217,7 @@ export class OpenGLCapabilities
 private constructor (){
 
             super();
-            }
+        }
 
 
     public isInitialized(): boolean{
@@ -281,7 +284,7 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
                                 )
                         
                                     {
-                                    this.glShaderVersionString= stringUtil!.EMPTY_STRING;
+                                    this.glShaderVersionString= this.stringUtil!.EMPTY_STRING;
     
 
                                     }
@@ -370,7 +373,7 @@ this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS);
                                 )
                         
                                     {
-                                    this.glRenderer= stringUtil!.EMPTY_STRING;
+                                    this.glRenderer= this.stringUtil!.EMPTY_STRING;
     
 
                                     }
@@ -405,7 +408,7 @@ this.glExtensionDrawTexture= false;
                                 )
                         
                                     {
-                                    this.glVersionString= stringUtil!.EMPTY_STRING;
+                                    this.glVersionString= this.stringUtil!.EMPTY_STRING;
     
 this.glVersion= this.VERSION_UNK;
     
@@ -460,7 +463,7 @@ this.glVersion= this.VERSION_UNK;
                                 )
                         
                                     {
-                                    this.glVendor= stringUtil!.EMPTY_STRING;
+                                    this.glVendor= this.stringUtil!.EMPTY_STRING;
     
 
                                     }
@@ -471,7 +474,7 @@ this.glVersion= this.VERSION_UNK;
                                 )
                         
                                     {
-                                    this.glExtensions= stringUtil!.EMPTY_STRING;
+                                    this.glExtensions= this.stringUtil!.EMPTY_STRING;
     
 
                                     }
@@ -834,7 +837,7 @@ index < size; index++)
         {
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(stringUtil!.toString(list.objectArray[index]!));
+stringBuffer!.append(this.stringUtil!.toString(list.objectArray[index]!));
     
 }
 

@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,12 +98,9 @@ export class CommandForm extends Form implements MyCommandInterface, MenuListene
         
 
     private commandStack: Stack<any>
-public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(formTitle){
-
-            super();
-            var commandListener = commandListener
+public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(formTitle);
+                    var commandListener = commandListener
 var formTitle = formTitle
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor
@@ -162,7 +162,7 @@ this.repaintProcessor!.process();
 
     public addCommand(command: Command){
 var command = command
-commandStack!.push(command);
+this.commandStack!.push(command);
     
 super.addCommand(command);
     
@@ -171,7 +171,7 @@ super.addCommand(command);
 
     public removeAllCommands(){
 
-    var size: number = commandStack!.length!;
+    var size: number = this.commandStack!.length!;
         
         
 ;
@@ -186,7 +186,7 @@ super.addCommand(command);
         
 index < size; index++)
         {
-super.removeCommand(commandStack!.pop();
+super.removeCommand(this.commandStack!.pop();
 
                          as Command);
     

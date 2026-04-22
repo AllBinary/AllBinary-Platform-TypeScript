@@ -67,12 +67,17 @@ import { StringValidationUtil } from "../../../../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InventoryEntityInterface } from "./InventoryEntityInterface.js";
+
 export class InventoryEntity extends AbSqlBean implements InventoryEntityInterface {
         
 
@@ -83,16 +88,13 @@ export class InventoryEntity extends AbSqlBean implements InventoryEntityInterfa
     private readonly tableName: string = "basicinventory";
         
         
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -325,7 +327,7 @@ var id = id
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     

@@ -34,7 +34,10 @@ import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFa
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceComp
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
- constructor (isCollidable: boolean)                        
-
-                            : super(new CollidableCompositeLayer(RectangleFactory.SINGLETON), isCollidable){
-
-            super();
-            var isCollidable = isCollidable
+ constructor (isCollidable: boolean){
+            super(new CollidableCompositeLayer(RectangleFactory.SINGLETON), isCollidable);
+                    var isCollidable = isCollidable
 
 
                             //For kotlin this is before the body of the constructor.

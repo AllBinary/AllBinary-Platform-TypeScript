@@ -58,7 +58,10 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,12 +87,9 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
     private valueTotalDigits: number= 0
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
-public constructor (prependString: string, max: number, location: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        
-
-                            : super(location, 1, maxHeight, maxWidth, bufferZone, basicColor){
-
-            super();
-            var prependString = prependString
+public constructor (prependString: string, max: number, location: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
+            super(location, 1, maxHeight, maxWidth, bufferZone, basicColor);
+                    var prependString = prependString
 var max = max
 var location = location
 var maxHeight = maxHeight
@@ -120,12 +120,9 @@ this.value= 0;
     
 }
 
-public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        
-
-                            : super(location, direction, maxHeight, maxWidth, bufferZone, basicColor){
-
-            super();
-            var prependString = prependString
+public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
+            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+                    var prependString = prependString
 var max = max
 var location = location
 var direction = direction
@@ -225,13 +222,13 @@ var graphics = graphics
 var x = x
 var y = y
 
-    var charArray: string[] = PREPEND_STRING;
+    var charArray: string[] = this.PREPEND_STRING;
         
         
 ;
     
 
-    var len: number = PREPEND_STRING.length
+    var len: number = this.PREPEND_STRING.length
                 ;
         
         

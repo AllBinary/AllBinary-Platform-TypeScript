@@ -37,7 +37,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class OrderHistoryIdGenerator extends UniqueIdGenerator {
 public constructor (){
 
             super();
-            
+        
     var stringBuffer: StringMaker = new StringMaker();
         
         
@@ -64,7 +67,7 @@ stringBuffer!.append(URLGLOBALS.getMainPath());
     
 stringBuffer!.append(PATH_GLOBALS.getInstance()!.INIT_PATH);
     
-stringBuffer!.append(IDFILE);
+stringBuffer!.append(this.IDFILE);
     
 stringBuffer!.append(UniqueIdGenerator.EXT);
     

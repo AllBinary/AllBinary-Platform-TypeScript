@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class DirectionFactory
 private constructor (){
 
             super();
-            
+        
     var stringBuffer: StringMaker = new StringMaker();
         
         
@@ -124,19 +127,19 @@ private constructor (){
         
 ;
     
-UP_LEFT= new Direction("UP LEFT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 4);
+this.UP_LEFT= new Direction("UP LEFT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 4);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-UP_RIGHT= new Direction("UP RIGHT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 5);
+this.UP_RIGHT= new Direction("UP RIGHT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 5);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-DOWN_LEFT= new Direction("DOWN LEFT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 6);
+this.DOWN_LEFT= new Direction("DOWN LEFT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 6);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-DOWN_RIGHT= new Direction("DOWN RIGHT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 7);
+this.DOWN_RIGHT= new Direction("DOWN RIGHT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 7);
     
 }
 

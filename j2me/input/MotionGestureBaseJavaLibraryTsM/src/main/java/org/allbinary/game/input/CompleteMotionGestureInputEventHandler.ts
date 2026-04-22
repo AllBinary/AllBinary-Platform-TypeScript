@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,18 +80,18 @@ export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener){
 var completeMotionGestureInputEventListener = completeMotionGestureInputEventListener
 
-                        if(!list.contains(completeMotionGestureInputEventListener);
+                        if(!this.list.contains(completeMotionGestureInputEventListener);
 
                         )
                         
                                     {
-                                    list.add(completeMotionGestureInputEventListener);
+                                    this.list.add(completeMotionGestureInputEventListener);
     
 
                                     }

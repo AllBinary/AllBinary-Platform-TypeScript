@@ -46,7 +46,10 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class PathFindingNode
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition){
 
             super();
-                //var parent = parent
+            //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition
 this.parent= parent;
     
@@ -92,7 +95,7 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return parent as PathFindingNode;
+                        return this.parent as PathFindingNode;
     
 }
 

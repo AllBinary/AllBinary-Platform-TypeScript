@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
+
 export class BaseSoundsFactory
             extends Object
          implements SoundsFactoryInterface {

@@ -34,7 +34,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class BasicTerrainInfo
 public constructor (angle: Angle){
 
             super();
-            var angle = angle
+        var angle = angle
 this.angle= angle;
     
 }

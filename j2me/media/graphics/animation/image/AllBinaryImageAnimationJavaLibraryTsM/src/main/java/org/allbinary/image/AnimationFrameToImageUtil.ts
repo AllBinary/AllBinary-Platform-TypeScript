@@ -37,7 +37,10 @@ import { Animation } from "../../../org/allbinary/animation/Animation.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ var width = width
 var height = height
 var animationInterface = animationInterface
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, ((width *3) shr 1), ((height *3) shr 1))!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
         
         
 ;
@@ -83,13 +86,13 @@ var animationInterface = animationInterface
 ;
     
 
-    var tranlateX: number = (width shr 2);
+    var tranlateX: number = (width>>2);
         
         
 ;
     
 
-    var tranlateY: number = (height shr 2);
+    var tranlateY: number = (height>>2);
         
         
 ;

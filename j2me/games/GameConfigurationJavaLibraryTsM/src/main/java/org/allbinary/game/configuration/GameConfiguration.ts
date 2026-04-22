@@ -48,7 +48,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class GameConfiguration
 public constructor (name: string, defaultValue: Integer, minValue: Integer, maxValue: Integer){
 
             super();
-                //var name = name
+            //var name = name
     //var defaultValue = defaultValue
     //var minValue = minValue
     //var maxValue = maxValue

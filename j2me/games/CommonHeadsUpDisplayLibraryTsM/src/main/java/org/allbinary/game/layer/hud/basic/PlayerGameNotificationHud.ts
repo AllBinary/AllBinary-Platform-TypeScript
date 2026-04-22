@@ -87,7 +87,10 @@ import { CircularIndexUtil } from "../../../../../../org/allbinary/util/Circular
 
 
 
-        
+
+
+
+
 
 
 
@@ -133,12 +136,9 @@ export class PlayerGameNotificationHud extends GameNotificationHud {
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
         
         
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        
-
-                            : super(location, direction, maxHeight, maxWidth, bufferZone, basicColor){
-
-            super();
-            var location = location
+public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
+            super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+                    var location = location
 var direction = direction
 var maxHeight = maxHeight
 var maxWidth = maxWidth
@@ -166,7 +166,7 @@ gameNotificationEventHandler!.addListener(this);
     getPoint(x: number, y: number): GPoint{
 var x = x
 var y = y
-point= new CustomGPoint(0, 0);
+this.point= new CustomGPoint(0, 0);
     
 this.point.setX(x);
     
@@ -199,13 +199,13 @@ this.point.setY(y);
                         
                                     {
                                     
-                        if(lastString != string)
+                        if(this.lastString != string)
                         
                                     {
                                     this.lastString= string;
     
 this.logUtil!.putF(new StringMaker().
-                            append(PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD);
+                            append(this.PERMANENT_GAME_NOTIFICATION)!.append(string)!.toString(), this, commonStrings!.ADD);
     
 
                                     }
@@ -230,7 +230,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
             
     public processTick(){
 
-                        if(this.timeDelayHelper!.isTime(gameTickTimeDelayHelper!.startTime))
+                        if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
                                     
@@ -297,7 +297,7 @@ this.string= this.gameNotification!.stringList!.remove(0);
         
 ;
     
-this.setX((displayInfo!.getLastWidth() -width) shr 1);
+this.setX((this.displayInfo!.getLastWidth() -width)>>1);
     
 this.point.setX(this.getX());
     
@@ -352,7 +352,7 @@ this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as 
         
 ;
     
-this.setX((displayInfo!.getLastWidth() -width) shr 1);
+this.setX((this.displayInfo!.getLastWidth() -width)>>1);
     
 this.point.setX(this.getX());
     

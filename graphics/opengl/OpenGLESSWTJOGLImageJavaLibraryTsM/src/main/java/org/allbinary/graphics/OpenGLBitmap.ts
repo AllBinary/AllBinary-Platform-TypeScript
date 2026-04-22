@@ -29,7 +29,10 @@ import { SwtMutableImage } from "../../../org/microemu/device/swt/SwtMutableImag
 
 
 
-        
+
+
+
+
 
 
 
@@ -42,7 +45,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
 public constructor (bitmap: any = {}){
 
             super();
-                //var bitmap = bitmap
+            //var bitmap = bitmap
 this.image= bitmap as Image;
     
 }

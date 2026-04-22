@@ -37,7 +37,10 @@ import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/vis
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class DirectoryFileVisitor
 public constructor (){
 
             super();
-            }
+        }
 
 
     public accept(arg0: java.io.File): boolean{

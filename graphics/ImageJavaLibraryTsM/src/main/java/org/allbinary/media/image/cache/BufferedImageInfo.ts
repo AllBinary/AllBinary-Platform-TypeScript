@@ -34,7 +34,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class BufferedImageInfo
 public constructor (width: number, height: number, type: number){
 
             super();
-            var width = width
+        var width = width
 var height = height
 var type = type
 this.width= width;

@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,16 +64,13 @@ export class BasicStoreFrontsEntity extends InitSql {
     readonly tableName: string = "storefronts";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTable(tableName);
+this.setTable(this.tableName);
     
 }
 

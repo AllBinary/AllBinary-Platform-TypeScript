@@ -46,7 +46,10 @@ import { BooleanUtil } from "../../../../org/allbinary/logic/java/bool/BooleanUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,7 +110,7 @@ export class InitInfo
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(InitException::class)
@@ -166,7 +169,7 @@ initInfoEntity!.update();
 
                         }
                             
-hasRead= false;
+this.hasRead= false;
     
 
                 //: 
@@ -191,15 +194,15 @@ hasRead= false;
 var hashMap = hashMap
 
         try {
-            testing= hashMap!.get(TESTING as Object);
+            this.testing= hashMap!.get(this.TESTING);
 
                          as String;
     
-mainPath= new AbPath(hashMap!.get(MAINPATH as Object);
+this.mainPath= new AbPath(hashMap!.get(this.MAINPATH);
 
                          as String);
     
-testHtmlPath= new AbPath(hashMap!.get(TESTHTMLPATH as Object);
+this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH);
 
                          as String);
     
@@ -225,15 +228,15 @@ testHtmlPath= new AbPath(hashMap!.get(TESTHTMLPATH as Object);
     get(){
 
         try {
-            testing= 
+            this.testing= 
                                         null
                                     ;
     
-mainPath= 
+this.mainPath= 
                                         null
                                     ;
     
-testHtmlPath= 
+this.testHtmlPath= 
                                         null
                                     ;
     
@@ -272,7 +275,7 @@ initInfoEntity!.get();
 
     public setHasRead(value: boolean){
 var value = value
-hasRead= value;
+this.hasRead= value;
     
 }
 
@@ -282,10 +285,10 @@ hasRead= value;
 
         try {
             
-                        if(!hasRead)
+                        if(!this.hasRead)
                         
                                     {
-                                    hasRead= true;
+                                    this.hasRead= true;
     
 this.get();
     
@@ -325,7 +328,7 @@ this.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BooleanUtil.getInstance()!.getFromString(testing);
+                        return BooleanUtil.getInstance()!.getFromString(this.testing);
 
                         ;
     
@@ -369,7 +372,7 @@ this.updateIfNeeded();
 this.updateIfNeeded();
     
 
-                        if(testHtmlPath != 
+                        if(this.testHtmlPath != 
                                     null
                                 )
                         
@@ -402,7 +405,7 @@ this.updateIfNeeded();
 this.updateIfNeeded();
     
 
-                        if(mainPath != 
+                        if(this.mainPath != 
                                     null
                                 )
                         
@@ -433,7 +436,7 @@ this.updateIfNeeded();
 
     public setTesting(value: string){
 var value = value
-testing= value;
+this.testing= value;
     
 }
 
@@ -496,11 +499,11 @@ var testing = testing
         
 ;
     
-hashMap!.put(TESTING, this.getTesting());
+hashMap!.put(this.TESTING, this.getTesting());
     
-hashMap!.put(MAINPATH, this.getMainPath());
+hashMap!.put(this.MAINPATH, this.getMainPath());
     
-hashMap!.put(TESTHTMLPATH, this.getTestHtmlPath());
+hashMap!.put(this.TESTHTMLPATH, this.getTestHtmlPath());
     
 
 

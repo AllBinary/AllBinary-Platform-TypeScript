@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class AdvertisementSearchData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly TITLE: string = "AFFILIATE_TITLE";

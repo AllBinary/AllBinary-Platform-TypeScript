@@ -61,7 +61,10 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,19 +117,19 @@ export class ImageSwtRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getRotatedImage(bufferedImage: org.eclipse.swt.graphics.Image, totalAngle: number): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
     //var totalAngle = totalAngle
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -152,12 +155,12 @@ private constructor (){
     //var gc = gc
     //var angle = angle
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 

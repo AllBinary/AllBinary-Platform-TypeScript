@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ var advertisementProcessorInterface = advertisementProcessorInterface
                         
                                     {
                                     
-    var random: number = myRandomFactory!.getAbsoluteNextInt(size)!;
+    var random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;
         
         
 ;
@@ -125,7 +128,7 @@ advertisementProcessorInterface!.start();
                         
                                     {
                                     
-    var random: number = myRandomFactory!.getAbsoluteNextInt(size)!;
+    var random: number = this.myRandomFactory!.getAbsoluteNextInt(size)!;
         
         
 ;

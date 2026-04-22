@@ -37,7 +37,10 @@ import { LayerManager } from "../../../../../org/allbinary/layer/LayerManager.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class AllBinaryCollisionManager
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

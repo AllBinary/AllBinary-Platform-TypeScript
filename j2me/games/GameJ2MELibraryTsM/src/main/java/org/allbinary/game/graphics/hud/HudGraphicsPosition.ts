@@ -34,7 +34,10 @@ import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class HudGraphicsPosition
 public constructor (point: GPoint, anchor: number){
 
             super();
-            var point = point
+        var point = point
 var anchor = anchor
 this.setAnchor(anchor);
     

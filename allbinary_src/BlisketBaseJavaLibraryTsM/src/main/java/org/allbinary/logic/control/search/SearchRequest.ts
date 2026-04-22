@@ -49,7 +49,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,12 +74,9 @@ export class SearchRequest extends AbContext {
     private searchParams: SearchParams
 
     private storeFront: StoreFrontInterface
-public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var storeFront = storeFront
+public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var storeFront = storeFront
 var searchParams = searchParams
 var xslFile = xslFile
 var contentType = contentType

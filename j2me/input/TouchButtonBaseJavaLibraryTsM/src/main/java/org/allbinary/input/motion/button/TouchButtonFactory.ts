@@ -34,7 +34,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,11 +76,11 @@ export class TouchButtonFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public defaultList(){
-this.list= LIST;
+this.list= this.LIST;
     
 this.toggle(false, LIST);
     
@@ -123,7 +126,7 @@ var list = list
     
 this.savedList= this.list;
     
-this.list= LIST;
+this.list= this.LIST;
     
 
                                     }

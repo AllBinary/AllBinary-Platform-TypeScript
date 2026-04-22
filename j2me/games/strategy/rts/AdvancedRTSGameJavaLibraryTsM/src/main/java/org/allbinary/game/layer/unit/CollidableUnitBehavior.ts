@@ -79,7 +79,10 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class CollidableUnitBehavior extends CollidableRTSBehavior {
     private readonly layerPartialCellPositionsUtil: LayerPartialCellPositionsUtil = LayerPartialCellPositionsUtil.getInstance()!;
         
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                        //var ownerLayer = ownerLayer
     //var collidable = collidable
 
 

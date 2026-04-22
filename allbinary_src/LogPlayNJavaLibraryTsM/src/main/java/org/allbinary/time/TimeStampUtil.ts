@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public getAsString(): string{

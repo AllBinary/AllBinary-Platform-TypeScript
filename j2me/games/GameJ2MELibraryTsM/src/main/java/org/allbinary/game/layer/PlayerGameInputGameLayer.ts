@@ -55,7 +55,10 @@ import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPos
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,12 +70,9 @@ export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements Play
         
 
     private playerGameInput: PlayerGameInput
-public constructor (playerInputId: number)                        
-
-                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new StaticViewPosition(0, 0, 0)){
-
-            super();
-            var playerInputId = playerInputId
+public constructor (playerInputId: number){
+            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new StaticViewPosition(0, 0, 0));
+                    var playerInputId = playerInputId
 
 
                             //For kotlin this is before the body of the constructor.

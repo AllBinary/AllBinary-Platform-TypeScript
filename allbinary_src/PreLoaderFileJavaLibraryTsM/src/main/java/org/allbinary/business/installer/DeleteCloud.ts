@@ -55,7 +55,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class DeleteCloud
 public constructor (){
 
             super();
-            }
+        }
 
 
     public delete(prePath: string, current: number, total: number): boolean{

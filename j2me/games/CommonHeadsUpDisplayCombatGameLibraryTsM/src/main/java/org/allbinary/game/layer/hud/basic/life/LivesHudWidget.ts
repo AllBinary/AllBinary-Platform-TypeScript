@@ -46,7 +46,10 @@ import { PaintableInterface } from "../../../../../../../org/allbinary/graphics/
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ export class LivesHudWidget extends BasicHud implements PaintableInterface {
     private xArray: number[]
 
     private readonly animationInterface: Animation
-public constructor (animationInterface: Animation, lifeInterface: Life, location: number, direction: number)                        
-
-                            : super(location, direction, 16, lifeInterface!.getMaxlives() *16, 2){
-
-            super();
-            var animationInterface = animationInterface
+public constructor (animationInterface: Animation, lifeInterface: Life, location: number, direction: number){
+            super(location, direction, 16, lifeInterface!.getMaxlives() *16, 2);
+                    var animationInterface = animationInterface
 var lifeInterface = lifeInterface
 var location = location
 var direction = direction
@@ -77,7 +77,7 @@ this.lifeInterface= lifeInterface;
     
 this.xArray= new Array(this.getLifeInterface()!.getMaxlives();
 
-                        .toInt());
+                        );
     
 this.update();
     
@@ -105,7 +105,7 @@ this.update();
                                     
     var maxLives: number = this.getLifeInterface()!.getMaxlives();
 
-                        .toInt();
+                        ;
         
         
 ;
@@ -148,7 +148,7 @@ var graphics = graphics
                         for (
     var index: number = this.getLifeInterface()!.get();
 
-                        .toInt();
+                        ;
         
         
 --index >= 0; )

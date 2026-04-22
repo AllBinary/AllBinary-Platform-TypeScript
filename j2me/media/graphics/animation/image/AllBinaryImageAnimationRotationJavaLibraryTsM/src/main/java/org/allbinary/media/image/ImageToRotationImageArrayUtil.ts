@@ -31,7 +31,10 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class ImageToRotationImageArrayUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

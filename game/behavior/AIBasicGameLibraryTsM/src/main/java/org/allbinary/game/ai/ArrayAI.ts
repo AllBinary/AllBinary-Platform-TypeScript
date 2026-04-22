@@ -40,7 +40,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class ArrayAI extends BasicAI {
         
 
     private readonly artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[]
-public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var artificialIntelligenceInterface = artificialIntelligenceInterface
+public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var artificialIntelligenceInterface = artificialIntelligenceInterface
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 

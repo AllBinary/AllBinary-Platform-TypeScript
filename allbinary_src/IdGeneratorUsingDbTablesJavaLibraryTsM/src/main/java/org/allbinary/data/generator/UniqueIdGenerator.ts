@@ -46,12 +46,17 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { IdGeneratorInterface } from "./IdGeneratorInterface.js";
+
 export class UniqueIdGenerator
             extends Object
          implements IdGeneratorInterface {
@@ -71,7 +76,7 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-            idGeneratorEntity= IdGeneratorEntityFactory.getInstance();
+        this.idGeneratorEntity= IdGeneratorEntityFactory.getInstance();
 
                          as IdGeneratorEntity;
     
@@ -88,11 +93,11 @@ var value = value
         
 ;
     
-vector.add(name);
+vector.add(this.name);
     
 vector.add(Long.valueOf(value)!.toString());
     
-idGeneratorEntity!.insert(vector);
+this.idGeneratorEntity!.insert(vector);
     
 
                 //: 
@@ -136,7 +141,7 @@ this.name= name;
 
         try {
             
-    var idLong: Long = this.idGeneratorEntity!.get(name)!;
+    var idLong: Long = this.idGeneratorEntity!.get(this.name)!;
         
         
 ;
@@ -147,7 +152,7 @@ this.name= name;
         
 ;
     
-this.idGeneratorEntity!.update(name, newValue);
+this.idGeneratorEntity!.update(this.name, newValue);
     
 
 

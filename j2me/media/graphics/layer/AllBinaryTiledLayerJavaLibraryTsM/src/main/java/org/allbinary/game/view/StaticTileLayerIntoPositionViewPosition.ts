@@ -43,7 +43,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ StaticTileLayerIntoPositionViewPosition.tiledLayer= tiledLayer;
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getX(): number{

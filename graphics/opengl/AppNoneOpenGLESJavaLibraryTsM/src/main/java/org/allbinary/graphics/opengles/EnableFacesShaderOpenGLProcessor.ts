@@ -20,7 +20,10 @@ import { ObjectThreedOpenGLProcessor } from "../../../../org/allbinary/graphics/
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class EnableFacesShaderOpenGLProcessor extends ObjectThreedOpenGLProcesso
 public constructor (){
 
             super();
-            }
+        }
 
 
     public process(gl: GL10, anyType: any = {}){

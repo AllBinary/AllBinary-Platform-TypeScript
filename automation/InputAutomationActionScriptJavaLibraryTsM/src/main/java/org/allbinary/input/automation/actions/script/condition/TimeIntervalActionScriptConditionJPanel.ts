@@ -36,7 +36,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel 
 public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface){
 
             super();
-            var timeIntervalActionScriptConditionInterface = timeIntervalActionScriptConditionInterface
+        var timeIntervalActionScriptConditionInterface = timeIntervalActionScriptConditionInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
@@ -132,25 +135,25 @@ this.timeIntervalActionJDialog= timeIntervalActionJDialog;
 
 
     initComponents(){
-timeIntervalActionJDialog= new javax.swing.JDialog();
+this.timeIntervalActionJDialog= new javax.swing.JDialog();
     
-titleJLabel= new javax.swing.JLabel();
+this.titleJLabel= new javax.swing.JLabel();
     
-okJButton= new javax.swing.JButton();
+this.okJButton= new javax.swing.JButton();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
-timeIntervalJTextField= new javax.swing.JTextField();
+this.timeIntervalJTextField= new javax.swing.JTextField();
     
-timeIntervalActionJButton= new javax.swing.JButton();
+this.timeIntervalActionJButton= new javax.swing.JButton();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-timeIntervalActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
+this.timeIntervalActionJDialog!.setMinimumSize(new java.awt.Dimension(250, 150));
     
-titleJLabel!.setText("Time Interval Condition Options");
+this.titleJLabel!.setText("Time Interval Condition Options");
     
-okJButton!.setText("OK");
+this.okJButton!.setText("OK");
     
 okJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -164,15 +167,15 @@ okJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel2!.setText("Time (ms):");
+this.jLabel2!.setText("Time (ms):");
     
 
-    var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(timeIntervalActionJDialog!.getContentPane());
+    var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());
         
         
 ;
     
-timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
+this.timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
     
 timeIntervalActionJDialogLayout!.setHorizontalGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(82, 82, 82)!.addComponent(okJButton))!.addGroup(javax.swing.GroupLayout.Alignment.LEADING, timeIntervalActionJDialogLayout!.createSequentialGroup()!.addGap(32, 32, 32)!.addGroup(timeIntervalActionJDialogLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(timeIntervalActionJDialogLayout!.createSequentialGroup()!.addComponent(jLabel2)!.addGap(16, 16, 16)!.addComponent(timeIntervalJTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE))!.addComponent(titleJLabel))))!.addContainerGap(36, Short.MAX_VALUE)));
     
@@ -180,7 +183,7 @@ timeIntervalActionJDialogLayout!.setVerticalGroup(timeIntervalActionJDialogLayou
     
 setMinimumSize(new java.awt.Dimension(100, 0));
     
-timeIntervalActionJButton!.setText("Edit");
+this.timeIntervalActionJButton!.setText("Edit");
     
 timeIntervalActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -194,7 +197,7 @@ timeIntervalActionJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel1!.setText("Time Interval:");
+this.jLabel1!.setText("Time Interval:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);

@@ -31,7 +31,10 @@ import { Vector } from "../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -139,7 +142,7 @@ var logType = logType
 private constructor (value: string){
 
             super();
-            var value = value
+        var value = value
 this.name= value;
     
 logging.add(value);

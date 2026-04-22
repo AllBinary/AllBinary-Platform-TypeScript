@@ -51,7 +51,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class SearchParams
 public constructor (request: HttpServletRequest){
 
             super();
-            var request = request
+        var request = request
 this.columnsAndSearchValues= new HashMap<any, any>();
     
 this.setLength(request.getParameter(SearchData.LENGTH));

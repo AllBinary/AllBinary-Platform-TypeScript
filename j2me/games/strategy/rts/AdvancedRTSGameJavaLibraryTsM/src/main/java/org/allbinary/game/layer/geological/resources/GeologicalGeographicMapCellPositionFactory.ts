@@ -43,7 +43,10 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class GeologicalGeographicMapCellPositionFactory
 public constructor (resourcePerMapCellType: number[]){
 
             super();
-            var resourcePerMapCellType = resourcePerMapCellType
+        var resourcePerMapCellType = resourcePerMapCellType
 this.resourcePerMapCellType= resourcePerMapCellType;
     
 }

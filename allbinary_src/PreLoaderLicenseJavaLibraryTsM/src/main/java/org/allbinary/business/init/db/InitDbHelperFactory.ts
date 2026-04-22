@@ -37,7 +37,10 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
 
-        
+
+
+
+
 
 
 
@@ -115,7 +118,7 @@ params[0]= databaseConnectionInfoInterface as Object;
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -55,7 +55,10 @@ import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/in
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class CategoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new CategoryHelperFactory());
+        this.setTagHelperFactory(new CategoryHelperFactory());
     
 this.setTagRequestHelperFactory(new CategoryRequestHelperFactory());
     

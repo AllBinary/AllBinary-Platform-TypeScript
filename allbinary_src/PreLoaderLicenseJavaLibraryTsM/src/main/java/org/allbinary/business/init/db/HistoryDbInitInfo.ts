@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -42,23 +45,17 @@ export class HistoryDbInitInfo extends DbInitInfo {
     private static readonly INITFILE: string = "historydbinitdata.dat";
         
         
-public constructor ()                        
-
-                            : super(INITFILE, true){
-
-            super();
-            
+public constructor (){
+            super(INITFILE, true);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (read: boolean)                        
-
-                            : super(INITFILE, read){
-
-            super();
-            var read = read
+public constructor (read: boolean){
+            super(INITFILE, read);
+                    var read = read
 
 
                             //For kotlin this is before the body of the constructor.

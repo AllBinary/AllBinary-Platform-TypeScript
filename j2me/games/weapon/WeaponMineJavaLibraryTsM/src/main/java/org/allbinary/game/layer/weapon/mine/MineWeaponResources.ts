@@ -31,7 +31,10 @@ import { BasicGameResources } from "../../../../../../org/allbinary/game/layer/r
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class MineWeaponResources extends BasicGameResources {
 protected constructor (){
 
             super();
-            
+        
     var ROOT: string = "/mine";
         
         

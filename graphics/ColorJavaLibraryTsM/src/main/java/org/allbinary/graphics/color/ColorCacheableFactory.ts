@@ -34,7 +34,10 @@ import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class ColorCacheableFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(key: any = {}): CacheableInterface{

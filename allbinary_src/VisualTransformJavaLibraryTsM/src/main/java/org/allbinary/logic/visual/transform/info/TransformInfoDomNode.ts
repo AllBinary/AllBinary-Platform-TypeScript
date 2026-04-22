@@ -52,7 +52,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class TransformInfoDomNode
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -262,7 +265,7 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
 this.mappedName= transformInfoInterface!.getName();
@@ -272,7 +275,7 @@ this.mappedName= transformInfoInterface!.getName();
 public constructor (transformInfoInterface: TransformInfoInterface, mappedName: string){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 var mappedName = mappedName
 this.transformInfoInterface= transformInfoInterface;
     
@@ -283,7 +286,7 @@ this.mappedName= mappedName;
 public constructor (name: string, mappedName: string){
 
             super();
-            var name = name
+        var name = name
 var mappedName = mappedName
 this.transformInfoInterface= new TransformInfo(name);
     

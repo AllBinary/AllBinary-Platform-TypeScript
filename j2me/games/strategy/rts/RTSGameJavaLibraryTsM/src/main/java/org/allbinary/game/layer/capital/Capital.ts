@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class Capital
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getTotalMoney(): number{

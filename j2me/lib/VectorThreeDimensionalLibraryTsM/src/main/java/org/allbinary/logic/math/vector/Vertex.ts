@@ -40,7 +40,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class Vertex
 public constructor (x: number, y: number, z: number){
 
             super();
-            var x = x
+        var x = x
 var y = y
 var z = z
 this.x.set(x);
@@ -79,7 +82,7 @@ this.z.set(z);
 public constructor (x: number, y: number){
 
             super();
-            var x = x
+        var x = x
 var y = y
 this.x.set(x);
     
@@ -90,7 +93,7 @@ this.y.set(y);
 public constructor (){
 
             super();
-            }
+        }
 
 
     public toString(): string{
@@ -108,19 +111,19 @@ public constructor (){
     
 stringBuffer!.append(positionStrings!.X_LABEL);
     
-stringBuffer!.append(x.toString());
+stringBuffer!.append(this.x.toString());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(positionStrings!.Y_LABEL);
     
-stringBuffer!.append(y.toString());
+stringBuffer!.append(this.y.toString());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(positionStrings!.Z_LABEL);
     
-stringBuffer!.append(z.toString());
+stringBuffer!.append(this.z.toString());
     
 
 

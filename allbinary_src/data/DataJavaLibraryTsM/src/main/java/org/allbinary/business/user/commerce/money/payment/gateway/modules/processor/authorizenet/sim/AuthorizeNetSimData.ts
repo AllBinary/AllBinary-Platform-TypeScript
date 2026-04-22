@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ export class AuthorizeNetSimData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

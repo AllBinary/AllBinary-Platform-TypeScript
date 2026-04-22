@@ -75,7 +75,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class GameCanvasInputProcessor extends InputProcessor {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-                //var allBinaryGameCanvas = allBinaryGameCanvas
+            //var allBinaryGameCanvas = allBinaryGameCanvas
 this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
@@ -142,11 +145,11 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, gameKey)!;
         
         
 ;
@@ -209,18 +212,18 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
         
         
 ;
     
-upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

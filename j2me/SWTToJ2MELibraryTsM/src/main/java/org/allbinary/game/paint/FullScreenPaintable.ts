@@ -46,7 +46,10 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class FullScreenPaintable extends Paintable {
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;
@@ -105,7 +108,7 @@ var graphics = graphics
 ;
     
 
-    var beginWidth: number = (font.stringWidth(this.FULLSCREEN_TEXT) shr 1);
+    var beginWidth: number = (font.stringWidth(this.FULLSCREEN_TEXT)>>1);
         
         
 ;

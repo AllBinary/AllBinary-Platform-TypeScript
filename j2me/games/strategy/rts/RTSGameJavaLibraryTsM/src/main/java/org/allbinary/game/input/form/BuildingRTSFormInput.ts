@@ -133,7 +133,10 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
 
 
-        
+
+
+
+
 
 
 
@@ -167,12 +170,9 @@ export class BuildingRTSFormInput extends RTSFormInput {
     private readonly dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
         
         
-public constructor (groupInterface: Group[], isUnitProducer: boolean)                        
-
-                            : super(groupInterface){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], isUnitProducer: boolean){
+            super(groupInterface);
+                        //var groupInterface = groupInterface
     //var isUnitProducer = isUnitProducer
 
 
@@ -714,7 +714,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 ;
     
 
-                        if(dropCellPositionHistory!.anyCellPositionWithDrop(occupyList))
+                        if(this.dropCellPositionHistory!.anyCellPositionWithDrop(occupyList))
                         
                                     {
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
@@ -822,7 +822,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
         
 ;
     
-dropCellPositionHistory!.add(occupyList, layerInterface);
+this.dropCellPositionHistory!.add(occupyList, layerInterface);
     
 
     var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput();

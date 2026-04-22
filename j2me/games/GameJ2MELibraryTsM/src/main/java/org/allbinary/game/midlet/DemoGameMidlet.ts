@@ -52,7 +52,10 @@ import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThrea
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ import { GameMidlet } from "./GameMidlet.js";
 
 export class DemoGameMidlet extends GameMidlet {
         
-public constructor (clientInformationFactory: ClientInformationFactory)                        
-
-                            : super(clientInformationFactory){
-
-            super();
-                //var clientInformationFactory = clientInformationFactory
+public constructor (clientInformationFactory: ClientInformationFactory){
+            super(clientInformationFactory);
+                        //var clientInformationFactory = clientInformationFactory
 
 
                             //For kotlin this is before the body of the constructor.

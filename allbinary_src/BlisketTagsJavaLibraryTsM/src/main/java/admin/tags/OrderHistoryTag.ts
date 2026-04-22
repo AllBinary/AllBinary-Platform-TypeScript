@@ -55,7 +55,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class OrderHistoryTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new OrderHistoryHelperFactory());
+        this.setTagHelperFactory(new OrderHistoryHelperFactory());
     
 this.setTagRequestHelperFactory(new OrderHistoryRequestHelperFactory());
     

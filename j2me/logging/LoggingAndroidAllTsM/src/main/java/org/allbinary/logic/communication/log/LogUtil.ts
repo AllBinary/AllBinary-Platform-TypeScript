@@ -44,7 +44,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -90,7 +93,7 @@ import { Log } from "./Log.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     /*actual*/ public putL(log: Log){

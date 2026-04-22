@@ -43,7 +43,10 @@ import { CommonStrings } from "../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class InventoryHelperFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

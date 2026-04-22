@@ -49,7 +49,10 @@ import { AbSqlTableUtil } from "../../org/allbinary/logic/communication/sql/AbSq
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class LogHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.portion= new Portion(hashMap);
     

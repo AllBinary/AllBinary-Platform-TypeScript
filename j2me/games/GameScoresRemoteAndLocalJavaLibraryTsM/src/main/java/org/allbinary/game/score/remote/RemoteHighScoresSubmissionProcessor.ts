@@ -64,12 +64,17 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RemoteHighScoresSubmissionProcessorInterface } from "./RemoteHighScoresSubmissionProcessorInterface.js";
+
 import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 
 import { RemoteHighScores } from "./RemoteHighScores.js";
@@ -93,7 +98,7 @@ export class RemoteHighScoresSubmissionProcessor
 public constructor (){
 
             super();
-            }
+        }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 

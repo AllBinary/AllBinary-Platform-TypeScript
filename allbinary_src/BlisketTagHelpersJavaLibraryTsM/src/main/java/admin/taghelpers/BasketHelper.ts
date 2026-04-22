@@ -52,7 +52,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,14 +84,14 @@ export class BasketHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.propertiesHashMap= hashMap;
     
 this.pageContext= pageContext;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
+    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
 
                          as String;
         

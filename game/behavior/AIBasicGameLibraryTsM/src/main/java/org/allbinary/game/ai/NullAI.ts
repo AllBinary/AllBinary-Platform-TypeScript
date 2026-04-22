@@ -34,7 +34,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class NullAI extends ArtificialIntelligence {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -31,12 +31,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DestroyableInterface } from "./DestroyableInterface.js";
+
 export class DestroyableBaseBehavior
             extends Object
          implements DestroyableInterface {

@@ -36,7 +36,10 @@ import { PointFactory } from "../../../org/allbinary/graphics/PointFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class GameGlobalsFactory
         
         
 
-    public newDisplaybleTime: number = Integer.MIN_VALUE.toLong();
+    public newDisplaybleTime: number = Integer.MIN_VALUE;
         
         
 

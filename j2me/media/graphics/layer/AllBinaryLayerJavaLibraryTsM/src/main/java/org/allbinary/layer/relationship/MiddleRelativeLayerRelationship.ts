@@ -37,7 +37,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { RelativeLayerRelationship } from "./RelativeLayerRelationship.js";
 
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         
-public constructor (layer: AllBinaryLayer)                        
-
-                            : super(layer, PointFactory.getInstance()!.getInstance(layer.getHalfWidth(), layer.getHalfHeight()), BasicArrayListUtil.getInstance()!.getImmutableInstance()){
-
-            super();
-            var layer = layer
+public constructor (layer: AllBinaryLayer){
+            super(layer, PointFactory.getInstance()!.getInstance(layer.getHalfWidth(), layer.getHalfHeight()), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+                    var layer = layer
 
 
                             //For kotlin this is before the body of the constructor.

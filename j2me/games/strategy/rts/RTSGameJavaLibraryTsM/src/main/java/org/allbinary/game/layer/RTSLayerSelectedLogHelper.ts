@@ -61,7 +61,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -148,17 +151,17 @@ stringBuffer!.append(this.commonSeps!.SPACE);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(nextUnvisitedPathGeographicMapCellPosition));
     
-stringBuffer!.append(positionStrings!.DX_LABEL);
+stringBuffer!.append(this.positionStrings!.DX_LABEL);
     
 stringBuffer!.appendint(dx);
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
-stringBuffer!.append(positionStrings!.DY_LABEL);
+stringBuffer!.append(this.positionStrings!.DY_LABEL);
     
 stringBuffer!.appendint(dy);
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
 stringBuffer!.append(reason);
     
@@ -186,13 +189,13 @@ stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
     
 stringBuffer!.append(" steering - ");
     
-stringBuffer!.append(positionStrings!.DX_LABEL);
+stringBuffer!.append(this.positionStrings!.DX_LABEL);
     
 stringBuffer!.appendint(dx);
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
-stringBuffer!.append(positionStrings!.DY_LABEL);
+stringBuffer!.append(this.positionStrings!.DY_LABEL);
     
 stringBuffer!.appendint(dy);
     
@@ -204,7 +207,7 @@ stringBuffer!.append(" movementAngle: ");
     
 stringBuffer!.append(movementAngle!.name);
     
-stringBuffer!.append(commonSeps!.FORWARD_SLASH);
+stringBuffer!.append(this.commonSeps!.FORWARD_SLASH);
     
 stringBuffer!.appendshort(movementAngle!.getValue());
     

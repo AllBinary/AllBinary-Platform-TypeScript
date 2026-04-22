@@ -76,7 +76,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,12 +97,9 @@ export class NameSpaceRequestParams extends RequestParams {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,12 +114,9 @@ public constructor ()
                                 
 }
 
-public constructor (httpServletRequest: HttpServletRequest)                        
-
-                            : super(httpServletRequest){
-
-            super();
-            var httpServletRequest = httpServletRequest
+public constructor (httpServletRequest: HttpServletRequest){
+            super(httpServletRequest);
+                    var httpServletRequest = httpServletRequest
 
 
                             //For kotlin this is before the body of the constructor.
@@ -135,12 +132,9 @@ public constructor (httpServletRequest: HttpServletRequest)
                                 
 }
 
-public constructor (pageContext: PageContext)                        
-
-                            : super(pageContext){
-
-            super();
-            var pageContext = pageContext
+public constructor (pageContext: PageContext){
+            super(pageContext);
+                    var pageContext = pageContext
 
 
                             //For kotlin this is before the body of the constructor.

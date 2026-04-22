@@ -96,7 +96,10 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,12 +115,9 @@ import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
 export class GameOptionsForm extends CommandForm {
         
-public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(commandListener, title, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-                //var commandListener = commandListener
+public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+                        //var commandListener = commandListener
     //var title = title
     //var backgrounBasicColor = backgrounBasicColor
     //var foregroundBasicColor = foregroundBasicColor

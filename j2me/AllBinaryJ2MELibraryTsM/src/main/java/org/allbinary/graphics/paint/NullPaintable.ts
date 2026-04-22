@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class NullPaintable extends Paintable {
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

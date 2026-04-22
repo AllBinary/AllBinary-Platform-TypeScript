@@ -48,7 +48,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class NumberOnOwnGroupSequenceAI extends SequenceAI {
         
 
     private numberOnSameTeam: Integer[]
-public constructor (numberOnSameTeam: Integer[], artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(artificialIntelligenceInterface, ownerLayerInterface, gameInput){
-
-            super();
-            var numberOnSameTeam = numberOnSameTeam
+public constructor (numberOnSameTeam: Integer[], artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+                    var numberOnSameTeam = numberOnSameTeam
 var artificialIntelligenceInterface = artificialIntelligenceInterface
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
@@ -93,7 +93,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(numberOnSameTeam!.length > index)
+                        if(this.numberOnSameTeam!.length > index)
                         
                                     {
                                     
@@ -103,7 +103,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(numberOnSameTeam[index]!.toInt() > size)
+                        if(this.numberOnSameTeam[index]!.toInt() > size)
                         
                                     {
                                     this.next();

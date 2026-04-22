@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 export class ARunnable
             extends Object
          implements Runnable {

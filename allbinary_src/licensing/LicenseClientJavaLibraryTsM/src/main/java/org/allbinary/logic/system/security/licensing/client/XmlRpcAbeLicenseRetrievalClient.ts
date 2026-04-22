@@ -70,7 +70,10 @@ import { XmlRpcException } from "../../../../../../../org/apache/xmlrpc/XmlRpcEx
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,12 +85,9 @@ export class XmlRpcAbeLicenseRetrievalClient extends XmlRpcAbeClient {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (clientInfo: AbeClientInformationInterface)                        
-
-                            : super(clientInfo, "LicServ.getLicense"){
-
-            super();
-            var clientInfo = clientInfo
+public constructor (clientInfo: AbeClientInformationInterface){
+            super(clientInfo, "LicServ.getLicense");
+                    var clientInfo = clientInfo
 
 
                             //For kotlin this is before the body of the constructor.

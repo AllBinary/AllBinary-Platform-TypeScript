@@ -31,7 +31,10 @@ import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterfa
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class SpeedTechnology
 public constructor (maxLevel: number){
 
             super();
-            var maxLevel = maxLevel
+        var maxLevel = maxLevel
 this.maxLevel= maxLevel;
     
 }

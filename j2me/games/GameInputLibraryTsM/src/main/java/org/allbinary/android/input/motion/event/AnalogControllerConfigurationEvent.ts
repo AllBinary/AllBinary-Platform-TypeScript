@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
         
 export class AnalogControllerConfigurationEvent extends AllBinaryEventObject {
         
-public constructor (anyType: any = {})                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}){
+            super(anyType);
+                    var anyType = anyType
 
 
                             //For kotlin this is before the body of the constructor.

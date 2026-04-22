@@ -43,12 +43,17 @@ import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/l
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementInterface } from "./AdvertisementInterface.js";
+
 export class Advertisement
             extends Object
          implements AdvertisementInterface {
@@ -82,7 +87,7 @@ export class Advertisement
 public constructor (){
 
             super();
-            this.displayInBrowserContraintsInterface= 
+        this.displayInBrowserContraintsInterface= 
                                         null
                                     ;
     

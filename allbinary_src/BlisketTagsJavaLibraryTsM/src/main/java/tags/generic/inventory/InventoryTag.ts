@@ -49,7 +49,10 @@ import { StoreValidationTransformTag } from "../../../tags/StoreValidationTransf
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,12 +64,9 @@ export class InventoryTag extends StoreValidationTransformTag {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

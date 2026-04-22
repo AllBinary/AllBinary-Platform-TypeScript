@@ -29,7 +29,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class LayerManager
 public constructor (layerManagerLogging: LayerManagerLogging){
 
             super();
-                //var layerManagerLogging = layerManagerLogging
+            //var layerManagerLogging = layerManagerLogging
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.layerManagerLogging= layerManagerLogging;
@@ -78,7 +81,7 @@ this.layerManagerLogging= layerManagerLogging;
 public constructor (){
 
             super();
-            this.layerManagerLogging= LayerManagerNoDebug.getInstance();
+        this.layerManagerLogging= LayerManagerNoDebug.getInstance();
     
 }
 
@@ -176,7 +179,7 @@ this.list.add(index, layerInterface);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(anyType) 
+        synchronized(this.anyType) 
 
         //mutex.withLock
         {
@@ -224,7 +227,7 @@ this.layerManagerLogging!.remove(this, layerInterface, result);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(anyType) 
+        synchronized(this.anyType) 
 
         //mutex.withLock
         {
@@ -248,7 +251,7 @@ var y = y
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(anyType) 
+        synchronized(this.anyType) 
 
         //mutex.withLock
         {
@@ -266,7 +269,7 @@ var y = y
         
 --index >= 0; )
         {
-comp= list.objectArray[index]! as Layer;
+comp= this.list.objectArray[index]! as Layer;
     
 
                         if(comp != 

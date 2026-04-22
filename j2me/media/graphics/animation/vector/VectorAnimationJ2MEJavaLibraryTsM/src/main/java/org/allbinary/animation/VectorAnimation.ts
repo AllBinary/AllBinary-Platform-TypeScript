@@ -49,13 +49,18 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { IndexedAnimation } from "./IndexedAnimation.js";
+
+import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
@@ -73,12 +78,9 @@ export class VectorAnimation extends IndexedAnimation implements VectorAnimation
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(0)!;
         
         
-public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehavior = animationBehavior
 
@@ -91,12 +93,9 @@ this.setBasicColorP(basicColor);
     
 }
 
-public constructor (currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var animationBehavior = animationBehavior
 

@@ -64,7 +64,10 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
 
-        
+
+
+
+
 
 
 
@@ -313,12 +316,9 @@ gl.glPopMatrix();
     private openGLESImageDraw: OpenGLESImageDraw = OpenGLESImageDraw.getInstance()!;
         
         
-public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory)                        
-
-                            : super(image, bitmapFactory, textureFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
+            super(image, bitmapFactory, textureFactory);
+                        //var image = image
     //var bitmapFactory = bitmapFactory
     //var textureFactory = textureFactory
 

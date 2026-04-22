@@ -31,12 +31,17 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputMappingEventListenerInterface } from "./InputMappingEventListenerInterface.js";
+
 import { InputMappingEvent } from "./InputMappingEvent.js";
 
 export class NullInputMappingEventListener

@@ -46,7 +46,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class AbPath
 public constructor (){
 
             super();
-            init();
+        init();
     
 }
 
@@ -110,7 +113,7 @@ public constructor (){
 public constructor (aPath: string){
 
             super();
-            var aPath = aPath
+        var aPath = aPath
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
         
@@ -125,9 +128,9 @@ public constructor (aPath: string){
                                     {
                                     this.schema= this.getSchema(aPath);
     
-this.nameP= EMPTY_STRING;
+this.nameP= this.EMPTY_STRING;
     
-this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
+this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath)));
     
 
                                     }
@@ -143,7 +146,7 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
 public constructor (aPath: string, name: string){
 
             super();
-            var aPath = aPath
+        var aPath = aPath
 var name = name
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
@@ -161,7 +164,7 @@ var name = name
     
 this.nameP= name;
     
-this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
+this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath)));
     
 
                                     }
@@ -187,11 +190,11 @@ this.path= abPathUtil!.adjustEnd(abPathUtil!.adjust(this.getPath(aPath)));
 
 
     init(){
-this.schema= EMPTY_STRING;
+this.schema= this.EMPTY_STRING;
     
-this.setPath(abPathData!.SEPARATOR);
+this.setPath(this.abPathData!.SEPARATOR);
     
-this.nameP= EMPTY_STRING;
+this.nameP= this.EMPTY_STRING;
     
 }
 
@@ -199,7 +202,7 @@ this.nameP= EMPTY_STRING;
     getSchema(aPath: string): string{
 var aPath = aPath
 
-    var beginIndex: number = aPath!.indexOf(commonSeps!.COLON)!;
+    var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;
         
         
 ;
@@ -264,14 +267,14 @@ var aPath = aPath
                         )
                         
                                     {
-                                    tempPath= abPathUtil!.adjustStart(tempPath);
+                                    tempPath= this.abPathUtil!.adjustStart(tempPath);
     
 
                                     }
                                 
                         else {
                             
-    var beginIndex: number = tempPath!.indexOf(commonSeps!.COLON)!;
+    var beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;
         
         
 ;
@@ -283,14 +286,14 @@ var aPath = aPath
                                     beginIndex++;
     
 
-        while(tempPath[beginIndex] == abPathData!.SEPARATORCHAR || tempPath[beginIndex] == filePathData!.SEPARATORCHAR)
+        while(tempPath[beginIndex] == this.abPathData!.SEPARATORCHAR || tempPath[beginIndex] == filePathData!.SEPARATORCHAR)
         {
 beginIndex++;
     
 numberOfSeps++;
     
 
-                        if(numberOfSeps > 2)
+                        if(this.numberOfSeps > 2)
                         
                                     {
                                     
@@ -388,7 +391,7 @@ stringBuffer!.append(this.nameP);
     
 stringBuffer!.append(this.schema);
     
-stringBuffer!.append(commonSeps!.COLON);
+stringBuffer!.append(this.commonSeps!.COLON);
     
 stringBuffer!.append(filePathData!.SEPARATOR);
     

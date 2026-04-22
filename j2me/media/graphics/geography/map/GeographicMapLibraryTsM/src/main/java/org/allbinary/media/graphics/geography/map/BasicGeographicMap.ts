@@ -45,13 +45,18 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { SimpleGeographicMap } from "./SimpleGeographicMap.js";
+
+import { GeographicMapInterface } from "./GeographicMapInterface.js";
 
 import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
 
@@ -83,12 +88,9 @@ export class BasicGeographicMap extends SimpleGeographicMap implements Geographi
     private readonly geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface
 
     private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory
-public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory)                        
-
-                            : super(id, name, cellTypeIdToGeographicMapCellType, tiledLayer, foregroundBasicColor, backgroundBasicColor){
-
-            super();
-                //var id = id
+public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
+            super(id, name, cellTypeIdToGeographicMapCellType, tiledLayer, foregroundBasicColor, backgroundBasicColor);
+                        //var id = id
     //var name = name
     //var cellTypeIdToGeographicMapCellType = cellTypeIdToGeographicMapCellType
     //var tiledLayer = tiledLayer
@@ -343,13 +345,13 @@ index < 4; index++)
 ;
     
 
-    var i_column: number = mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
+    var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
         
         
 ;
     
 
-    var i_row: number = mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
+    var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
         
         
 ;
@@ -375,13 +377,13 @@ index < 4; index++)
 ;
     
 
-    var i_column: number = mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
+    var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
         
         
 ;
     
 
-    var i_row: number = mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
+    var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
         
         
 ;
@@ -493,25 +495,25 @@ geographicMapCellPositionList!.clear();
 ;
     
 
-    var i_columnMin: number = mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
+    var i_columnMin: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
         
         
 ;
     
 
-    var i_rowMin: number = mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
+    var i_rowMin: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
         
         
 ;
     
 
-    var i_columnMax: number = mathUtil!.abs(x2 /allBinaryTiledLayer!.getCellHeight()) +1;
+    var i_columnMax: number = this.mathUtil!.abs(x2 /allBinaryTiledLayer!.getCellHeight()) +1;
         
         
 ;
     
 
-    var i_rowMax: number = mathUtil!.abs(y2 /allBinaryTiledLayer!.getCellWidth()) +1;
+    var i_rowMax: number = this.mathUtil!.abs(y2 /allBinaryTiledLayer!.getCellWidth()) +1;
         
         
 ;

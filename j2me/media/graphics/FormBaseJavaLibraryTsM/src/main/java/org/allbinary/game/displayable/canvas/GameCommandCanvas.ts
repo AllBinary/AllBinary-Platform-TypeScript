@@ -175,12 +175,17 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MenuListener } from "./MenuListener.js";
+
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
@@ -245,12 +250,9 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
     private isSingleKeyRepeatableProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
         
         
-public constructor (cmdListener: CommandListener, name: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(name, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST){
-
-            super();
-                //var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, name: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(name, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
+                        //var cmdListener = cmdListener
     //var name = name
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
@@ -264,9 +266,9 @@ this.foregroundBasicColor= foregroundBasicColor;
     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.foregroundColor= foregroundBasicColor!.toInt();
+this.foregroundColor= this.foregroundBasicColor!.toInt();
     
-this.backgroundColor= backgroundBasicColor!.toInt();
+this.backgroundColor= this.backgroundBasicColor!.toInt();
     
 this.initCommands(cmdListener);
     
@@ -546,14 +548,14 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
     
-downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }
@@ -593,14 +595,14 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
     
-upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

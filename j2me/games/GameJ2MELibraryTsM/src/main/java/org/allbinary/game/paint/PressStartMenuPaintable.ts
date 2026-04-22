@@ -55,7 +55,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,11 +91,11 @@ export class PressStartMenuPaintable extends Paintable {
 public constructor (){
 
             super();
-            
+        
                         if(TouchScreenFactory.getInstance()!.isTouch())
                         
                                     {
-                                    startString= PRESS_START;
+                                    this.startString= this.PRESS_START;
     
 
                                     }
@@ -101,13 +104,13 @@ public constructor (){
                         if(AppletUtil.isAppletLoader(this))
                         
                                     {
-                                    startString= KEY_START;
+                                    this.startString= this.KEY_START;
     
 
                                     }
                                 
                         else {
-                            startString= MENU_START;
+                            this.startString= this.MENU_START;
     
 
                         }
@@ -122,7 +125,7 @@ public constructor (){
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTime())
                         
                                     {
                                     
@@ -154,7 +157,7 @@ var graphics = graphics
 ;
     
 
-    var beginWidth: number = (graphics.getFont()!.stringWidth(startString) shr 1);
+    var beginWidth: number = (graphics.getFont()!.stringWidth(this.startString)>>1);
         
         
 ;
@@ -166,7 +169,7 @@ var graphics = graphics
 ;
     
 
-    var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT shr 1);
+    var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT>>1);
         
         
 ;

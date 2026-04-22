@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,11 +56,11 @@ export class ItemColorFactory
 }
 
 
-    public INVERT_PAINT: number = 0xFF000000.toInt();
+    public INVERT_PAINT: number = 0xFF000000;
         
         
 
-    public PAINT: number = 0xFFe07718.toInt();
+    public PAINT: number = 0xFFe07718;
         
         
 

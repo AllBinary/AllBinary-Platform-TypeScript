@@ -85,12 +85,17 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
+
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
 export class TransformInfoObjectConfig
@@ -114,7 +119,7 @@ export class TransformInfoObjectConfig
 public constructor (transformInfoInterface: Object){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.createDocument();
@@ -162,7 +167,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 public constructor (transformInfoInterface: Object, document: Object){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 var document = document
 this.ownerTransformInfoInterface= transformInfoInterface;
     
@@ -228,7 +233,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 public constructor (transformInfoInterface: Object, name: string, type: string){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 var name = name
 var type = type
 this.ownerTransformInfoInterface= transformInfoInterface;
@@ -296,7 +301,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 this.document= DomDocumentHelper.create();
     
 
-    var objectConfigNode: Node = document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;
+    var objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;
         
         
 ;

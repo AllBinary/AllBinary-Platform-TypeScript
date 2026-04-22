@@ -37,7 +37,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class FlagGameResources extends BasicGameResources {
 protected constructor (){
 
             super();
-            }
+        }
 
 
     private readonly ICON_SIZE: string = "_64_by_64.png";
@@ -128,7 +131,7 @@ stringBuffer!.append(ICON);
     
 stringBuffer!.append(string);
     
-stringBuffer!.append(ICON_SIZE);
+stringBuffer!.append(this.ICON_SIZE);
     
 this.RESOURCE_ICON= stringBuffer!.toString();
     
@@ -140,7 +143,7 @@ stringBuffer!.append(ICON_BUILD);
     
 stringBuffer!.append(string);
     
-stringBuffer!.append(ICON_SIZE);
+stringBuffer!.append(this.ICON_SIZE);
     
 this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
     

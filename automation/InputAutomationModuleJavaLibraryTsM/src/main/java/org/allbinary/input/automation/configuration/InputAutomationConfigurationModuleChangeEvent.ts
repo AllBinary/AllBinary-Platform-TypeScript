@@ -31,7 +31,10 @@ import { InputAutomationModuleConfiguration } from "../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class InputAutomationConfigurationModuleChangeEvent
 public constructor (inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
 
             super();
-            var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
+        var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
 this.setInputAutomationModuleConfiguration(inputAutomationModuleConfiguration);
     
 }

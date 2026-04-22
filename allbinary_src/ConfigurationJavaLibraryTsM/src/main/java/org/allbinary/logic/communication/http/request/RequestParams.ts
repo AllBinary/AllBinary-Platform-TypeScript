@@ -61,7 +61,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,15 +89,15 @@ export class RequestParams
 public constructor (){
 
             super();
-            this.logUtil!.putF("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF("New RequestParams Size: 0", this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
 public constructor (request: HttpServletRequest){
 
             super();
-            var request = request
-map= request.getParameterMap();
+        var request = request
+this.map= request.getParameterMap();
     
 this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -103,8 +106,8 @@ this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this
 public constructor (pageContext: PageContext){
 
             super();
-            var pageContext = pageContext
-map= pageContext!.getRequest()!.getParameterMap();
+        var pageContext = pageContext
+this.map= pageContext!.getRequest()!.getParameterMap();
     
 this.logUtil!.putF("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -153,7 +156,7 @@ var document = document
 ;
     
 
-    var keys: Set = map.keySet()!;
+    var keys: Set = this.map.keySet()!;
         
         
 ;
@@ -188,7 +191,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = map.get(key);
+    var values: string[] = this.map.get(key);
 
                          as Array<String?>;
         
@@ -197,11 +200,11 @@ i < size; i++)
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(KEY);
+stringBuffer!.append(this.KEY);
     
 stringBuffer!.append(key);
     
-stringBuffer!.append(VALUE);
+stringBuffer!.append(this.VALUE);
     
 stringBuffer!.append(values[0]!);
     
@@ -223,7 +226,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, RequestData.PARAMET
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
     
 
 
@@ -246,7 +249,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode(document)", e);
 ;
     
 
-    var keys: Set = map.keySet()!;
+    var keys: Set = this.map.keySet()!;
         
         
 ;
@@ -287,7 +290,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = map.get(key);
+    var values: string[] = this.map.get(key);
 
                          as Array<String?>;
         

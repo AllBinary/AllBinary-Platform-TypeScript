@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class AllBinarySensorManager
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(){

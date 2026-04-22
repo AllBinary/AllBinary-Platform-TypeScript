@@ -52,7 +52,10 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class UserDomNode
 public constructor (dataMappingInterface: TableMappingInterface){
 
             super();
-            var dataMappingInterface = dataMappingInterface
+        var dataMappingInterface = dataMappingInterface
 this.dataMappingInterface= dataMappingInterface;
     
 }
@@ -86,7 +89,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap<any, any> = dataMappingInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;
         
         
 ;

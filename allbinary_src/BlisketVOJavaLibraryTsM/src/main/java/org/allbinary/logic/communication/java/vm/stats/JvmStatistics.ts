@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class JvmStatistics
 public constructor (){
 
             super();
-            runtime= Runtime.getRuntime();
+        this.runtime= Runtime.getRuntime();
     
 }
 
@@ -379,7 +382,7 @@ public constructor (){
 
 
     public collectGarbage(){
-runtime.gc();
+this.runtime.gc();
     
 }
 

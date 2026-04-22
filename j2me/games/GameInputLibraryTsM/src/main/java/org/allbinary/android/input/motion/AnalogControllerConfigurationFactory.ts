@@ -37,7 +37,10 @@ import { ScaleFactorFactory } from "../../../../../org/allbinary/logic/math/Scal
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class AnalogControllerConfigurationFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public isAvailable(): boolean{

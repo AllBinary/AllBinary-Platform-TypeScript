@@ -66,7 +66,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class PaymentHelper extends Table {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -107,7 +110,7 @@ this.getFormData();
 
 
     getFormData(){
-this.value= request.getParameter("VALUE");
+this.value= this.request.getParameter("VALUE");
     
 }
 
@@ -128,7 +131,7 @@ this.value= request.getParameter("VALUE");
 ;
     
 
-    var paymentInterface: PaymentInterface = PaymentFactory.getInstance(request)!;
+    var paymentInterface: PaymentInterface = PaymentFactory.getInstance(this.request)!;
         
         
 ;

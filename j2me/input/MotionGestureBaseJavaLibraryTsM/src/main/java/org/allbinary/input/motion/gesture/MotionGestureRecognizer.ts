@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class MotionGestureRecognizer
 public constructor (id: number){
 
             super();
-                //var id = id
+            //var id = id
 this.motionEventCircularPool= MotionEventCircularPool.getInstance(id);
     
 
@@ -162,9 +165,9 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler;
     //var current = current
     //var deviceId = deviceId
     //var button = button
-intermediate= origin;
+this.intermediate= this.origin;
     
-previous= origin;
+this.previous= this.origin;
     
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.PRESSED)!;
@@ -172,11 +175,11 @@ previous= origin;
         
 ;
     
-event.setPreviousPoint(previous);
+event.setPreviousPoint(this.previous);
     
 event.setCurrentPoint(current);
     
-motionGesturesHandler!.fireEvent(event);
+this.motionGesturesHandler!.fireEvent(event);
     
 
 
@@ -199,11 +202,11 @@ motionGesturesHandler!.fireEvent(event);
         
 ;
     
-event.setPreviousPoint(previous);
+event.setPreviousPoint(this.previous);
     
 event.setCurrentPoint(current);
     
-motionGesturesHandler!.fireEvent(event);
+this.motionGesturesHandler!.fireEvent(event);
     
 
 
@@ -221,12 +224,12 @@ motionGesturesHandler!.fireEvent(event);
     //var deviceId = deviceId
     //var buttonMask = buttonMask
 
-                        if(previous == origin || intermediate == origin)
+                        if(this.previous == this.origin || this.intermediate == this.origin)
                         
                                     {
-                                    previous= current;
+                                    this.previous= current;
     
-intermediate= current;
+this.intermediate= current;
     
 
 
@@ -237,9 +240,9 @@ intermediate= current;
 
                                     }
                                 
-line.setP1(previous);
+this.line.setP1(this.previous);
     
-line.setP2(current);
+this.line.setP2(current);
     
 
     var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;
@@ -248,14 +251,14 @@ line.setP2(current);
 ;
     
 
-                        if(j2seMath!.abs(line.getDeltaX();
+                        if(this.j2seMath!.abs(this.line.getDeltaX();
 
-                        .toFloat()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY();
+                        ) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY();
 
-                        .toFloat()) < minimumMotionGesture)
+                        ) < minimumMotionGesture)
                         
                                     {
-                                    intermediate= current;
+                                    this.intermediate= current;
     
 
 
@@ -267,15 +270,15 @@ line.setP2(current);
                                     }
                                 
 
-    var gradient: number = line.getGradient()!;
+    var gradient: number = this.line.getGradient()!;
         
         
 ;
     
 
-    var absGradient: number = j2seMath!.abs(gradient.toFloat());
+    var absGradient: number = this.j2seMath!.abs(gradient);
 
-                        .toDouble();
+                        ;
         
         
 ;
@@ -314,11 +317,11 @@ line.setP2(current);
                         if(conf.isDiagonalMotionGestureAllowed())
                         
                                     {
-                                    diagonalToleranceHigher= (90 -conf.getDiagonalTolerance()).toDouble();
+                                    diagonalToleranceHigher= (90 -conf.getDiagonalTolerance());
     
 diagonalToleranceLower= conf.getDiagonalTolerance();
 
-                        .toDouble();
+                        ;
     
 
                                     }
@@ -328,7 +331,7 @@ diagonalToleranceLower= conf.getDiagonalTolerance();
                         
                                     {
                                     
-                        if(line.getDeltaY() > 0)
+                        if(this.line.getDeltaY() > 0)
                         
                                     {
                                     newMotionGesture= touchMotionGestureFactory!.UP;
@@ -351,7 +354,7 @@ diagonalToleranceLower= conf.getDiagonalTolerance();
                         
                                     {
                                     
-                        if(line.getDeltaX() > 0)
+                        if(this.line.getDeltaX() > 0)
                         
                                     {
                                     newMotionGesture= touchMotionGestureFactory!.LEFT;
@@ -374,7 +377,7 @@ diagonalToleranceLower= conf.getDiagonalTolerance();
                         
                                     {
                                     
-                        if(line.getDeltaX() > 0)
+                        if(this.line.getDeltaX() > 0)
                         
                                     {
                                     newMotionGesture= touchMotionGestureFactory!.DIAGONAL_UP_LEFT;
@@ -393,7 +396,7 @@ diagonalToleranceLower= conf.getDiagonalTolerance();
                                 
                         else {
                             
-                        if(line.getDeltaX() > 0)
+                        if(this.line.getDeltaX() > 0)
                         
                                     {
                                     newMotionGesture= touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT;
@@ -416,9 +419,9 @@ diagonalToleranceLower= conf.getDiagonalTolerance();
 
                         }
                             
-previous= current;
+this.previous= current;
     
-intermediate= current;
+this.intermediate= current;
     
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;
@@ -426,11 +429,11 @@ intermediate= current;
         
 ;
     
-event.setPreviousPoint(previous);
+event.setPreviousPoint(this.previous);
     
 event.setCurrentPoint(current);
     
-motionGesturesHandler!.fireEvent(event);
+this.motionGesturesHandler!.fireEvent(event);
     
 
 
@@ -453,11 +456,11 @@ motionGesturesHandler!.fireEvent(event);
         
 ;
     
-event.setPreviousPoint(previous);
+event.setPreviousPoint(this.previous);
     
 event.setCurrentPoint(current);
     
-movedMotionGesturesHandler!.fireEvent(event);
+this.movedMotionGesturesHandler!.fireEvent(event);
     
 
 

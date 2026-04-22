@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -131,7 +134,7 @@ stringBuffer!.append(NEW_LINE);
 private constructor (){
 
             super();
-            }
+        }
 
 
     public search(fileFilter: FileFilter, file: AbFile): BasicArrayList{

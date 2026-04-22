@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class StoreFrontOrdersStatisticsData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "STOREFRONT_ORDERS_STATISTICS_NAME";

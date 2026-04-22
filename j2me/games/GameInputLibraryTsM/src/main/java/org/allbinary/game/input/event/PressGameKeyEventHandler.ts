@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,18 +81,18 @@ export class PressGameKeyEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!list.contains(playerGameInput);
+                        if(!this.list.contains(playerGameInput);
 
                         )
                         
                                     {
-                                    list.add(playerGameInput);
+                                    this.list.add(playerGameInput);
     
 
                                     }

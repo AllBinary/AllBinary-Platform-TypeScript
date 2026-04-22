@@ -43,7 +43,10 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class SimultaneousCompoundIndexAnimation extends IndexedAnimation {
         
 
     private animationInterfaceArray: IndexedAnimation[]
-public constructor (animationInterfaceArray: IndexedAnimation[], animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: IndexedAnimation[], animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationInterfaceArray = animationInterfaceArray
     //var animationBehavior = animationBehavior
 
 

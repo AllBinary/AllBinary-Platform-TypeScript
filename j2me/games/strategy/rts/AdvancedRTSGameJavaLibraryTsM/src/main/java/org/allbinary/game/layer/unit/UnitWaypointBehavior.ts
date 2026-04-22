@@ -99,7 +99,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -170,7 +173,7 @@ export class UnitWaypointBehavior extends WaypointBehaviorBase implements Waypoi
 protected constructor (associatedAdvancedRTSGameLayer: UnitLayer, fakeWaypoint: CollidableDestroyableDamageableLayer){
 
             super();
-            var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
+        var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 var fakeWaypoint = fakeWaypoint
 this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer;
     
@@ -518,7 +521,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.needToMove(this.associa
                         if(this.isTrackingWaypoint() || this.sensorAction == SensorActionFactory.getInstance()!.EVADE || (this.currentTargetLayerInterfaceP != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && this.getCurrentTargetDistance() >= this.longWeaponRange +this.currentTargetLayerInterfaceP!.getHalfHeight()))
                         
                                     {
-                                    repeatedToLong!.setStartTime();
+                                    this.repeatedToLong!.setStartTime();
     
 
 
@@ -530,7 +533,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.needToMove(this.associa
                                     }
                                 
 
-                        if(repeatedToLong!.isTime())
+                        if(this.repeatedToLong!.isTime())
                         
                                     {
                                     

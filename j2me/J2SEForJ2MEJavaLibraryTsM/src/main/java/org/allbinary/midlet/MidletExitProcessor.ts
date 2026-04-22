@@ -34,7 +34,10 @@ import { Processor } from "../../../org/allbinary/canvas/Processor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class MidletExitProcessor extends Processor {
 public constructor (midlet: MIDlet){
 
             super();
-            var midlet = midlet
+        var midlet = midlet
 this.midlet= midlet;
     
 }

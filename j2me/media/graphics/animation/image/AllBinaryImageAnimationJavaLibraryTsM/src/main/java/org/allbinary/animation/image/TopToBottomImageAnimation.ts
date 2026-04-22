@@ -43,7 +43,10 @@ import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,12 +58,9 @@ export class TopToBottomImageAnimation extends ImageSegmentAnimation {
         
 
     private currentHeight: number
-public constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior)                        
-
-                            : super(image, sequenceArray, animationBehavior){
-
-            super();
-                //var image = image
+public constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior){
+            super(image, sequenceArray, animationBehavior);
+                        //var image = image
     //var sequenceArray = sequenceArray
     //var animationBehavior = animationBehavior
 

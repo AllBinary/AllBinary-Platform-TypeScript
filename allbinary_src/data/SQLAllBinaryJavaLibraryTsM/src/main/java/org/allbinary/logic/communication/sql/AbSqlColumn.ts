@@ -45,7 +45,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class AbSqlColumn extends AbSqlTable {
     private readonly INVALID_RESULT: string = "-1";
         
         
-public constructor (databaseConnectionInfoInterface: DbConnectionInfo)                        
-
-                            : super(databaseConnectionInfoInterface){
-
-            super();
-                //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
+            super(databaseConnectionInfoInterface);
+                        //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -177,7 +177,7 @@ stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
     
 stringBuffer!.append(sqlStatement);
     
-stringBuffer!.append(LARGEST_INT_VALUE_IN_COLUMN);
+stringBuffer!.append(this.LARGEST_INT_VALUE_IN_COLUMN);
     
 stringBuffer!.append(largestAsString);
     

@@ -34,7 +34,10 @@ import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class CaptionAnimation extends Animation {
 public constructor (animationInterface: Animation, overlayAnimationInterface: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();
-                //var animationInterface = animationInterface
+            //var animationInterface = animationInterface
     //var overlayAnimationInterface = overlayAnimationInterface
     //var captionDx = captionDx
     //var captionDy = captionDy
@@ -90,7 +93,7 @@ this.dy= dy;
     //var y = y
 this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy);
     
-this.overlayAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy);
+this.overlayAnimationInterface!.paint(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy);
     
 }
 
@@ -102,7 +105,7 @@ this.overlayAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.c
     //var z = z
 this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
     
-this.overlayAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z);
+this.overlayAnimationInterface!.paintThreed(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
     
 }
 

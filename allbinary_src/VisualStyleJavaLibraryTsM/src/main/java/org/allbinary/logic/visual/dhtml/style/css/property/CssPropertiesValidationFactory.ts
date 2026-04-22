@@ -43,7 +43,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -131,7 +134,7 @@ var hashMap = hashMap
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

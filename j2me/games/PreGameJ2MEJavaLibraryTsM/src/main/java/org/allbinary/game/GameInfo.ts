@@ -45,7 +45,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ export class GameInfo
 public constructor (gameType: GameType, gameMode: GameMode, highestLevel: number, currentLevel: number){
 
             super();
-                //var gameType = gameType
+            //var gameType = gameType
     //var gameMode = gameMode
     //var highestLevel = highestLevel
     //var currentLevel = currentLevel
@@ -115,7 +118,7 @@ this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE;
 public constructor (gameType: GameType, gameMode: GameMode, playerType: PlayerType, highestLevel: number, currentLevel: number){
 
             super();
-            var gameType = gameType
+        var gameType = gameType
 var gameMode = gameMode
 var playerType = playerType
 var highestLevel = highestLevel
@@ -203,7 +206,7 @@ this.highestLevel= highestLevel;
 this.currentLevel= currentLevel;
     
 this.logUtil!.putF(new StringMaker().
-                            append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, SET_CURRENT_LEVEL);
+                            append(this.NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, SET_CURRENT_LEVEL);
     
 }
 
@@ -227,7 +230,7 @@ this.logUtil!.putF(new StringMaker().
                                     }
                                 
 this.logUtil!.putF(new StringMaker().
-                            append(NEXT)!.append(NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, NEXT_GAME_LEVEL);
+                            append(this.NEXT)!.append(this.NEW_LEVEL)!.appendint(this.getCurrentLevel())!.toString(), this, NEXT_GAME_LEVEL);
     
 }
 

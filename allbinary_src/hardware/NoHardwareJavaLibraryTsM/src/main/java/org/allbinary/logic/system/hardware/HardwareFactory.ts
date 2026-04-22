@@ -31,7 +31,10 @@ import { OperatingSystemInterface } from "../../../../../org/allbinary/logic/sys
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class HardwareFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

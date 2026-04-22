@@ -52,12 +52,17 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
+
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
 
 import { RaceTrackData } from "./RaceTrackData.js";
@@ -74,12 +79,9 @@ export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements Ra
     private raceTrackData: RaceTrackData
 
     private miniGeographicMap: BasicGeographicMap
-public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayer: AllBinaryTiledLayer, miniGeographicMap: BasicGeographicMap, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory)                        
-
-                            : super(raceTrackInfo!.getId(), raceTrackInfo!.getName(), raceTrackData!.getCellTypeIdToGeographicMapCellTypeArray(), tiledLayer, raceTrackInfo!.getForegroundBasicColor(), raceTrackInfo!.getBackgroundBasicColor(), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory){
-
-            super();
-                //var raceTrackInfo = raceTrackInfo
+public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayer: AllBinaryTiledLayer, miniGeographicMap: BasicGeographicMap, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
+            super(raceTrackInfo!.getId(), raceTrackInfo!.getName(), raceTrackData!.getCellTypeIdToGeographicMapCellTypeArray(), tiledLayer, raceTrackInfo!.getForegroundBasicColor(), raceTrackInfo!.getBackgroundBasicColor(), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory);
+                        //var raceTrackInfo = raceTrackInfo
     //var raceTrackData = raceTrackData
     //var tiledLayer = tiledLayer
     //var miniGeographicMap = miniGeographicMap
@@ -168,7 +170,7 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
     public setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo){
 var aRaceTrackInfo = aRaceTrackInfo
-raceTrackInfo= aRaceTrackInfo;
+this.raceTrackInfo= aRaceTrackInfo;
     
 }
 

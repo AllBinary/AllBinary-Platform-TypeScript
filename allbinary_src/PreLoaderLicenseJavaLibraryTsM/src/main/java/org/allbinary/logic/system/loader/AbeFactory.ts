@@ -52,7 +52,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class AbeFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)
@@ -177,7 +180,7 @@ var params = params
 ;
     
 
-                        if(useCustomLoader)
+                        if(this.useCustomLoader)
                         
                                     {
                                     
@@ -310,7 +313,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 ;
     
 
-                        if(useCustomLoader)
+                        if(this.useCustomLoader)
                         
                                     {
                                     

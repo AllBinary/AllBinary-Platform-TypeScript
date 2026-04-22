@@ -34,7 +34,10 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class PropertiesTag extends CommandTag {
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {

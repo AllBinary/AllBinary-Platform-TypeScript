@@ -40,7 +40,10 @@ import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/colo
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class ARectangleFilledAnimation extends Animation implements ColorComposi
 public constructor (){
 
             super();
-            this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK);
+        this.setBasicColorP(BasicColorFactory.getInstance()!.BLACK);
     
 }
 
@@ -72,7 +75,7 @@ public constructor (){
     //var graphics = graphics
     //var unusedX = unusedX
     //var unusedY = unusedY
-graphics.fillRect(x, y, width, height);
+graphics.fillRect(this.x, this.y, this.width, this.height);
     
 }
 

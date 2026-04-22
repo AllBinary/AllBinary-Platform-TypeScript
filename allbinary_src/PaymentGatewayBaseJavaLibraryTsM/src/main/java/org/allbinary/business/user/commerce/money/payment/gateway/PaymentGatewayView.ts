@@ -49,7 +49,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class PaymentGatewayView
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
-                //var paymentGatewayInterface = paymentGatewayInterface
+            //var paymentGatewayInterface = paymentGatewayInterface
 this.paymentGatewayInterface= paymentGatewayInterface;
     
 }
@@ -154,7 +157,7 @@ hashMap!.putAll(this.toHashMap());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XSLLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode", e);
     
 
                                     }

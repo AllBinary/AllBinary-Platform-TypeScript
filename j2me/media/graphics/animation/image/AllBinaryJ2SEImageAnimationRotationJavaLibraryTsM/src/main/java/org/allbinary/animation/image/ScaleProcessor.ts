@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class ScaleProcessor extends ScaleBaseProcessor {
     //var maxScaleY = maxScaleY
 
         try {
-            imageScaleUtil!.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);
+            this.imageScaleUtil!.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);
     
 
                 //: 

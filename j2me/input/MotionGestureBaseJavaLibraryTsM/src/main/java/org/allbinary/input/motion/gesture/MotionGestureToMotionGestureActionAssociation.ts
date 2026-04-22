@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class MotionGestureToMotionGestureActionAssociation
 public constructor (list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){
 
             super();
-            var list = list
+        var list = list
 var commandAction = commandAction
 this.list= list;
     

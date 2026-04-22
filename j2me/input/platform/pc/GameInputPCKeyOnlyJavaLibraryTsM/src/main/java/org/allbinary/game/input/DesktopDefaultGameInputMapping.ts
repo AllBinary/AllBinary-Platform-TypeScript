@@ -37,7 +37,10 @@ import { PersistentInputMapping } from "../../../../org/allbinary/game/input/map
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ import { GameKeyFactory } from "./GameKeyFactory.js";
 
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         
-public constructor ()                        
-
-                            : super(GamePersistanceStrings.getInstance()!.DEFAULT_INPUT_MAPPING_RECORD_ID){
-
-            super();
-            
+public constructor (){
+            super(GamePersistanceStrings.getInstance()!.DEFAULT_INPUT_MAPPING_RECORD_ID);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

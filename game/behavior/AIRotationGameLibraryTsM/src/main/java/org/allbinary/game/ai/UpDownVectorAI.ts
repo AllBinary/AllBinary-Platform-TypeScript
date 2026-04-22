@@ -46,7 +46,10 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class UpDownVectorAI extends BasicAI {
     private index: number = 0;
         
         
-public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
 

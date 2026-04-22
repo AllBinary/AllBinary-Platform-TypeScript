@@ -61,7 +61,10 @@ import { HelperTag } from "../../tags/HelperTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -90,7 +93,7 @@ export class MultipartRequestParamForwardHelper
 public constructor (parentHelperTag: HelperTag, page: string, command: string, paramVector: Vector, pageContext: PageContext){
 
             super();
-            var parentHelperTag = parentHelperTag
+        var parentHelperTag = parentHelperTag
 var page = page
 var command = command
 var paramVector = paramVector
@@ -129,7 +132,7 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
         
 ;
     
-stringBuffer!.append(page);
+stringBuffer!.append(this.page);
     
 stringBuffer!.append(params);
     
@@ -281,7 +284,7 @@ stringBuffer!.append(value);
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand);
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand);
 
                          && command.compareTo(requestCommand) == 0))
                         

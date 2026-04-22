@@ -34,7 +34,10 @@ import { OrderHistoryData } from "../../../../../../org/allbinary/business/user/
 
 
 
-        
+
+
+
+
 
 
 
@@ -194,7 +197,7 @@ var userEmailEventNameString = userEmailEventNameString
 public constructor (eventHandlerName: string){
 
             super();
-            var eventHandlerName = eventHandlerName
+        var eventHandlerName = eventHandlerName
 this.eventHandlerName= eventHandlerName;
     
 this.initNextId();

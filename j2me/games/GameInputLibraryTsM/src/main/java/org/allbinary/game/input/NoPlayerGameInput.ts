@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class NoPlayerGameInput extends PlayerGameInput {
     
 }
 
-private constructor ()                        
-
-                            : super(new BasicArrayList(),  -1){
-
-            super();
-            
+private constructor (){
+            super(new BasicArrayList(),  -1);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -39,12 +39,17 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GroupInterface } from "./GroupInterface.js";
+
 export class Group
             extends Object
          implements GroupInterface {
@@ -74,7 +79,7 @@ export class Group
 public constructor (teamName: string, teamId: number){
 
             super();
-            var teamName = teamName
+        var teamName = teamName
 var teamId = teamId
 this.setName(teamName);
     

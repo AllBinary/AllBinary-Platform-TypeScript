@@ -43,7 +43,10 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class ColorFillBasePaintable extends Paintable implements ColorCompositeI
 public constructor (basicColor: BasicColor){
 
             super();
-            var basicColor = basicColor
+        var basicColor = basicColor
 this.setBasicColorP(basicColor);
     
 }

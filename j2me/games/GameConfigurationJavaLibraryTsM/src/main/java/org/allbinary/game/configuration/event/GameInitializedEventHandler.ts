@@ -37,7 +37,10 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class GameInitializedEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

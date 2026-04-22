@@ -90,7 +90,10 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,12 +109,9 @@ export class InputPersistance extends BasicPersitance {
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
         
         
-public constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-                //var name = name
+public constructor (name: string){
+            super(name);
+                        //var name = name
 
 
                             //For kotlin this is before the body of the constructor.
@@ -237,17 +237,17 @@ hashtable= new Hashtable<any, any>();
     
 value= Integer.parseInt(gameActionInputIdAsString);
     
-gameActionInputId= value.toLong();
+gameActionInputId= value;
     
 inputStream!.readUTF();
     
 value= Integer.parseInt(inputStream!.readUTF());
     
-inputId= value.toLong();
+inputId= value;
     
-gameActionInput= gameKeyFactory!.getInstance(gameActionInputId.toInt());
+gameActionInput= gameKeyFactory!.getInstance(gameActionInputId);
     
-input= inputFactory!.getInstance(inputId.toInt());
+input= inputFactory!.getInstance(inputId);
     
 
                         if(input == inputFactory!.NO_INPUT || gameActionInput == 
@@ -413,7 +413,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 ;
     
 
-    var inputObjectArray: any[] = hashtableUtil!.getKeysAsArray(hashtable)!;
+    var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;
         
         
 ;

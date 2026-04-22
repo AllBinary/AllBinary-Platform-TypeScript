@@ -55,7 +55,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class PlayerComposite
 public constructor (player: Player){
 
             super();
-                //var player = player
+            //var player = player
 this.player= player;
     
 this.timeElapsedHelper!.delay= 570;
@@ -92,7 +95,7 @@ this.timeElapsedHelper!.delay= 570;
 public constructor (player: Player, repeatTime: number){
 
             super();
-                //var player = player
+            //var player = player
     //var repeatTime = repeatTime
 this.player= player;
     
@@ -173,7 +176,7 @@ this.player.deallocate();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "prefetch", e);
     
 }
 
@@ -189,7 +192,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "prefetch", e);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "realize", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "realize", e);
     
 }
 
@@ -231,7 +234,7 @@ var now = now
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
     
 
 
@@ -252,7 +255,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "setMediaTime", e);
 
         try {
             
-                        if(timeElapsedHelper!.isTime(gameTickTimeDelayHelper!.startTime))
+                        if(this.timeElapsedHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
                                     this.player.start();
@@ -280,7 +283,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NA
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
     
 }
 

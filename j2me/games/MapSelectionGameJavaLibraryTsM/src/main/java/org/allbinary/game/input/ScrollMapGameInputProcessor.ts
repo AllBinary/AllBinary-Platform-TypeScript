@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class ScrollMapGameInputProcessor extends GameInputProcessor {
 public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
 
             super();
-            var scrollMapPlayerGameInput = scrollMapPlayerGameInput
+        var scrollMapPlayerGameInput = scrollMapPlayerGameInput
 this.scrollMapPlayerGameInput= scrollMapPlayerGameInput;
     
 }

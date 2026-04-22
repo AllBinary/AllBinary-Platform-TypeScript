@@ -70,7 +70,10 @@ import { HttpStoreComponentView } from "../../../../../../../../../views/busines
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,12 +91,9 @@ export class TitleBodyCustomizerView extends HttpStoreComponentView implements D
         
 
     titleBody: TitleBodyValidation
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

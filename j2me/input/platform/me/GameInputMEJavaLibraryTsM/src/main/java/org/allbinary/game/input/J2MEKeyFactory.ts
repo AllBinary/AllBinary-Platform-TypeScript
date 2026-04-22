@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class J2MEKeyFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
@@ -72,7 +75,7 @@ private constructor (){
 
     var gameKeyArray: GameKey[] = 
                                                         [
-                                                            gameKeyFactory!.DOWN,gameKeyFactory!.FIRE,gameKeyFactory!.GAME_A,gameKeyFactory!.GAME_B,gameKeyFactory!.GAME_C,gameKeyFactory!.GAME_D,gameKeyFactory!.KEY_NUM0,gameKeyFactory!.KEY_NUM1,gameKeyFactory!.KEY_NUM2,gameKeyFactory!.KEY_NUM3,gameKeyFactory!.KEY_NUM4,gameKeyFactory!.KEY_NUM5,gameKeyFactory!.KEY_NUM6,gameKeyFactory!.KEY_NUM7,gameKeyFactory!.KEY_NUM8,gameKeyFactory!.KEY_NUM9,gameKeyFactory!.KEY_POUND,gameKeyFactory!.KEY_STAR,gameKeyFactory!.LEFT,gameKeyFactory!.LEVEL_DOWN,gameKeyFactory!.LEVEL_UP,gameKeyFactory!.NONE,gameKeyFactory!.RIGHT,gameKeyFactory!.UP
+                                                            this.gameKeyFactory!.DOWN,this.gameKeyFactory!.FIRE,this.gameKeyFactory!.GAME_A,this.gameKeyFactory!.GAME_B,this.gameKeyFactory!.GAME_C,this.gameKeyFactory!.GAME_D,this.gameKeyFactory!.KEY_NUM0,this.gameKeyFactory!.KEY_NUM1,this.gameKeyFactory!.KEY_NUM2,this.gameKeyFactory!.KEY_NUM3,this.gameKeyFactory!.KEY_NUM4,this.gameKeyFactory!.KEY_NUM5,this.gameKeyFactory!.KEY_NUM6,this.gameKeyFactory!.KEY_NUM7,this.gameKeyFactory!.KEY_NUM8,this.gameKeyFactory!.KEY_NUM9,this.gameKeyFactory!.KEY_POUND,this.gameKeyFactory!.KEY_STAR,this.gameKeyFactory!.LEFT,this.gameKeyFactory!.LEVEL_DOWN,this.gameKeyFactory!.LEVEL_UP,this.gameKeyFactory!.NONE,this.gameKeyFactory!.RIGHT,this.gameKeyFactory!.UP
                                                         ];
         
         
@@ -105,7 +108,7 @@ inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!);
     public isSubmission(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.FIRE)
+                        if(input == this.gameKeyFactory!.FIRE)
                         
                                     {
                                     
@@ -129,7 +132,7 @@ var input = input
     public isDelete(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.GAME_D)
+                        if(input == this.gameKeyFactory!.GAME_D)
                         
                                     {
                                     
@@ -164,7 +167,7 @@ var input = input
     public isUp(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.UP)
+                        if(input == this.gameKeyFactory!.UP)
                         
                                     {
                                     
@@ -188,7 +191,7 @@ var input = input
     public isDown(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.DOWN)
+                        if(input == this.gameKeyFactory!.DOWN)
                         
                                     {
                                     
@@ -212,7 +215,7 @@ var input = input
     public isLeft(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.LEFT)
+                        if(input == this.gameKeyFactory!.LEFT)
                         
                                     {
                                     
@@ -236,7 +239,7 @@ var input = input
     public isRight(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.RIGHT)
+                        if(input == this.gameKeyFactory!.RIGHT)
                         
                                     {
                                     
@@ -260,7 +263,7 @@ var input = input
     public isEnter(input: Input): boolean{
 var input = input
 
-                        if(input == gameKeyFactory!.FIRE)
+                        if(input == this.gameKeyFactory!.FIRE)
                         
                                     {
                                     

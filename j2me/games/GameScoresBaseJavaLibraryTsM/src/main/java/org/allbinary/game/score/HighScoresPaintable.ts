@@ -61,7 +61,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class HighScoresPaintable extends Paintable implements ColorChangeListene
 public constructor (){
 
             super();
-            }
+        }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
@@ -137,12 +140,12 @@ graphics.setColor(getBasicColorP()!.toInt());
 ;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading) shr 1);
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);
         
         
 ;
     
-graphics.drawString(heading, (width shr 1) -topScoresWidth, charHeight, anchor);
+graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, anchor);
     
 graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, anchor);
     

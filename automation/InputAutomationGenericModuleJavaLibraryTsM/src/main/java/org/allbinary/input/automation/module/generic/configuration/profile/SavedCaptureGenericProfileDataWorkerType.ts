@@ -31,7 +31,10 @@ import { InputImageType } from "../../../../../../../../org/allbinary/input/medi
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileData
     private path: string
 
     private lastFrame: number= 0
-public constructor (name: string, path: string, lastFrame: number)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+public constructor (name: string, path: string, lastFrame: number){
+            super(name);
+                    var name = name
 var path = path
 var lastFrame = lastFrame
 

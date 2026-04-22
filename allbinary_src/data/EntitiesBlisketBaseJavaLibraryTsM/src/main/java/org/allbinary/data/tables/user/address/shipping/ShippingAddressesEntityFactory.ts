@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class ShippingAddressesEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(userName: string): StreetAddressesEntity{

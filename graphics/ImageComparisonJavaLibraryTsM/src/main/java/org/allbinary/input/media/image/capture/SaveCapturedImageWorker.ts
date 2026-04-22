@@ -52,12 +52,17 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CapturedImageWorkerResultsListener } from "./CapturedImageWorkerResultsListener.js";
+
 import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
 
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
@@ -79,7 +84,7 @@ export class SaveCapturedImageWorker extends BasicEventHandler implements Captur
 public constructor (){
 
             super();
-            }
+        }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
@@ -133,7 +138,7 @@ setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (capturedImageWorkerResultsEventVector!.get(0);
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0);
 
                          as CapturedImageWorkerResultsEvent);
         
@@ -149,7 +154,7 @@ timeHelper!.setStartTime();
 new CapturedImageInputOutput().
                             save(screenBufferedImage, capturedImageWorkerResultsEvent!.getFrame());
     
-capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);
+this.capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);
     
 this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
     

@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class OnDemandLoader
 public constructor (onDemandResourcesFactory: OnDemandResourcesFactory, gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory: GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory){
 
             super();
-            var onDemandResourcesFactory = onDemandResourcesFactory
+        var onDemandResourcesFactory = onDemandResourcesFactory
 var gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory = gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory
 var resourceAnimationInterfaceFactoryInterfaceFactory = resourceAnimationInterfaceFactoryInterfaceFactory
 this.onDemandResourcesFactory= onDemandResourcesFactory;
@@ -171,12 +174,12 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
 
 
                         for (
-    var onDemandIndex: number = onDemandResourcesFactory!.size()!;
+    var onDemandIndex: number = this.onDemandResourcesFactory!.size()!;
         
         
 --onDemandIndex >= 0; )
         {
-onDemandResources= onDemandResourcesFactory!.remove(onDemandIndex);
+onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
     
 
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)
@@ -241,7 +244,7 @@ PreLogUtil.put(new StringMaker().
         
 --onDemandIndex >= 0; )
         {
-onDemandResources= onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!);
+onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!);
     
 
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)

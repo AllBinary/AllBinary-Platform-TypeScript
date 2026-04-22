@@ -34,7 +34,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDam
 
 export class SpecialAnalogUpGameInputProcessor extends SpecialGameInputProcessor {
         
-public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer)                        
-
-                            : super(collidableDestroyableDamageableLayer){
-
-            super();
-            var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
+public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
+            super(collidableDestroyableDamageableLayer);
+                    var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
 
                             //For kotlin this is before the body of the constructor.

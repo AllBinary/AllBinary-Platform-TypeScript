@@ -40,7 +40,10 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ export class HtmlSelect extends HtmlTag {
 public constructor (before: string, size: string, name: string, after: string){
 
             super();
-            var before = before
+        var before = before
 var size = size
 var name = name
 var after = after
@@ -199,7 +202,7 @@ this.isMultipleSelect= value;
 ;
     
 
-    var optionsArray: any[] = options.toArray()!;
+    var optionsArray: any[] = this.options.toArray()!;
         
         
 ;
@@ -233,13 +236,13 @@ i < optionsSize; i++)
                                  && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
-                                    result += STARTOPTION;
+                                    result += this.STARTOPTION;
     
-result += END;
+result += this.END;
     
 result += value;
     
-result += ENDOPTION;
+result += this.ENDOPTION;
     
 
                                     }
@@ -281,19 +284,19 @@ result += ENDOPTION;
         
 ;
     
-result= before;
+result= this.before;
     
-result += STARTSELECT;
+result += this.STARTSELECT;
     
-result += NAME;
+result += this.NAME;
     
-result += name;
+result += this.name;
     
 result += "\" ";
     
-result += SIZE;
+result += this.SIZE;
     
-result += size;
+result += this.size;
     
 result += "\" ";
     
@@ -342,14 +345,14 @@ result += "\" ";
 
 
                         if(this.isMultiple())
-                        result += " " +multiple +" "
-result += END;
+                        result += " " +this.multiple +" "
+result += this.END;
     
 result += getOptions();
     
-result += ENDSELECT;
+result += this.ENDSELECT;
     
-result += after;
+result += this.after;
     
 
 

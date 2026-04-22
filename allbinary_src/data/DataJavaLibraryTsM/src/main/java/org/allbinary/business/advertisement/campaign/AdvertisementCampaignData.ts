@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class AdvertisementCampaignData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "ADVERTISEMENTCAMPAIGN_NAME";

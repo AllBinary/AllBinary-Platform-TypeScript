@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class ColorTemperatureUtil
     public getBasicColor(thirdTemp: number): BasicColor{
 var thirdTemp = thirdTemp
 
-    var basicColor: BasicColor = basicColorFactory!.RED;
+    var basicColor: BasicColor = this.basicColorFactory!.RED;
         
         
 ;
@@ -73,7 +76,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 3700)
                         
                                     {
-                                    basicColor= basicColorFactory!.PURPLE;
+                                    basicColor= this.basicColorFactory!.PURPLE;
     
 
                                     }
@@ -82,7 +85,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 3200)
                         
                                     {
-                                    basicColor= basicColorFactory!.BLUE;
+                                    basicColor= this.basicColorFactory!.BLUE;
     
 
                                     }
@@ -91,7 +94,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 2700)
                         
                                     {
-                                    basicColor= basicColorFactory!.PUCE;
+                                    basicColor= this.basicColorFactory!.PUCE;
     
 
                                     }
@@ -100,7 +103,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 2200)
                         
                                     {
-                                    basicColor= basicColorFactory!.WHITE;
+                                    basicColor= this.basicColorFactory!.WHITE;
     
 
                                     }
@@ -109,7 +112,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 1700)
                         
                                     {
-                                    basicColor= basicColorFactory!.GREEN;
+                                    basicColor= this.basicColorFactory!.GREEN;
     
 
                                     }
@@ -118,7 +121,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 1200)
                         
                                     {
-                                    basicColor= basicColorFactory!.YELLOW;
+                                    basicColor= this.basicColorFactory!.YELLOW;
     
 
                                     }
@@ -127,7 +130,7 @@ var thirdTemp = thirdTemp
                         if(thirdTemp > 700)
                         
                                     {
-                                    basicColor= basicColorFactory!.ORANGE;
+                                    basicColor= this.basicColorFactory!.ORANGE;
     
 
                                     }

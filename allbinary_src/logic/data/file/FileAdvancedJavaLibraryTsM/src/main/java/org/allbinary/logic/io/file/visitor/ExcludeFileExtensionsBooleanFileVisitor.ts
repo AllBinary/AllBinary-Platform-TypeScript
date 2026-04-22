@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { BooleanFileVisitor } from "./BooleanFileVisitor.js";
 
 export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         
-public constructor (filterStringBasicArrayList: BasicArrayList)                        
-
-                            : super(filterStringBasicArrayList){
-
-            super();
-            var filterStringBasicArrayList = filterStringBasicArrayList
+public constructor (filterStringBasicArrayList: BasicArrayList){
+            super(filterStringBasicArrayList);
+                    var filterStringBasicArrayList = filterStringBasicArrayList
 
 
                             //For kotlin this is before the body of the constructor.

@@ -40,7 +40,10 @@ import { GameConfigurationCentral } from "../../../org/allbinary/game/configurat
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,14 +97,14 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public vibrate(duration: number, type: number, volume: number){
 var duration = duration
 var type = type
 var volume = volume
-vibrator.vibrate(duration.toLong());
+vibrator.vibrate(duration);
     
 }
 

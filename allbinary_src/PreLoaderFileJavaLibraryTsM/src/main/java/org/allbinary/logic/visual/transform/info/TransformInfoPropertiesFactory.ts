@@ -49,7 +49,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,7 +87,7 @@ export class TransformInfoPropertiesFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

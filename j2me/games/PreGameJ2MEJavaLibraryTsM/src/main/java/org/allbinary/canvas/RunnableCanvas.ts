@@ -73,7 +73,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,12 +116,9 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
         
         
-public constructor (commandListener: CommandListener, childNameList: BasicArrayList, hasParam: boolean)                        
-
-                            : super(CommonStrings.getInstance()!.UNKNOWN, childNameList){
-
-            super();
-                //var commandListener = commandListener
+public constructor (commandListener: CommandListener, childNameList: BasicArrayList, hasParam: boolean){
+            super(CommonStrings.getInstance()!.UNKNOWN, childNameList);
+                        //var commandListener = commandListener
     //var childNameList = childNameList
     //var hasParam = hasParam
 
@@ -152,12 +152,9 @@ this.runnableCanvasRefreshHelper= new RunnableCanvasRefreshHelper(this);
                                 
 }
 
-public constructor (commandListener: CommandListener, childNameList: BasicArrayList)                        
-
-                            : this(commandListener, childNameList, true){
-
-            super();
-                //var commandListener = commandListener
+public constructor (commandListener: CommandListener, childNameList: BasicArrayList){
+            this(commandListener, childNameList, true);
+                        //var commandListener = commandListener
     //var childNameList = childNameList
 
 
@@ -165,12 +162,9 @@ public constructor (commandListener: CommandListener, childNameList: BasicArrayL
                     
 }
 
-public constructor ()                        
-
-                            : this(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false){
-
-            super();
-            
+public constructor (){
+            this(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -237,7 +231,7 @@ this.running= running;
 
         //mutex.withLock
         {
-threadObjectUtil!.notifyObject(this);
+this.threadObjectUtil!.notifyObject(this);
     
 }
 
@@ -245,7 +239,7 @@ threadObjectUtil!.notifyObject(this);
                                     }
                                 
 this.logUtil!.putF(new StringMaker().
-                            append(IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING);
+                            append(this.IS_RUNNING)!.appendboolean(this.running)!.toString(), this, SET_RUNNING);
     
 }
 
@@ -288,7 +282,7 @@ this.logUtil!.putF(new StringMaker().
         
 ;
     
-stringBuffer!.append(THREAD);
+stringBuffer!.append(this.THREAD);
     
 
                         if(this.thread != 
@@ -301,7 +295,7 @@ stringBuffer!.append(THREAD);
 
                                     }
                                 
-stringBuffer!.append(NOT_EQUAL);
+stringBuffer!.append(this.NOT_EQUAL);
     
 
                         if(this.currentThread != 
@@ -344,9 +338,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, IS_RUNNING);
 
     setWait(wait: number){
 var wait = wait
-loopTimeHelper!.delay= wait;
+this.loopTimeHelper!.delay= wait;
     
-this.pauseWait= wait.toLong() *3;
+this.pauseWait= wait *3;
     
 this.logUtil!.putF(new StringMaker().
                             append("setWait - delay: ")!.appendint(this.loopTimeHelper!.delay)!.toString(), this, this.commonStrings!.CONSTRUCTOR);
@@ -371,7 +365,7 @@ this.currentThread= Thread.currentThread();
 
 
     setCurrentThreadFake(){
-this.currentThread= thread;
+this.currentThread= this.thread;
     
 }
 
@@ -430,13 +424,13 @@ var wait = wait
                         if(wait > 0)
                         
                                     {
-                                    threadObjectUtil!.waitObject(this, wait.toLong());
+                                    this.threadObjectUtil!.waitObject(this, wait);
     
 
                                     }
                                 
                         else {
-                            threadObjectUtil!.waitObject(this);
+                            this.threadObjectUtil!.waitObject(this);
     
 
                         }
@@ -454,7 +448,7 @@ var wait = wait
                 //@Throws(Error::class)
             
     public processSleep(){
-Thread.sleep(pauseWait);
+Thread.sleep(this.pauseWait);
     
 }
 
@@ -507,7 +501,7 @@ this.runnableCanvasRefreshHelper!.process();
         
 ;
     
-this.logUtil!.putF(stringMaker!.append(START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP);
+this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP);
     
 
         while(this.isPaused() && this.isRunning() && !this.isSingleThread();
@@ -524,7 +518,7 @@ this.processSleep();
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP);
+this.logUtil!.putF(stringMaker!.append(this.END_PAUSE)!.appendlong(System.currentTimeMillis())!.toString(), this, PROCESS_LOOP_SLEEP);
     
 
 
@@ -547,7 +541,7 @@ this.logUtil!.putF(stringMaker!.append(END_PAUSE)!.appendlong(System.currentTime
 ;
     
 
-    var wait: number = this.loopTimeHelper!.delay.toLong();
+    var wait: number = this.loopTimeHelper!.delay;
         
         
 ;

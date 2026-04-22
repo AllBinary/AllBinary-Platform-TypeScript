@@ -33,7 +33,10 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class Driver
 public constructor (turnSpeed: Integer, trackPathSelectionSkill: Integer, aggression: Aggression){
 
             super();
-            var turnSpeed = turnSpeed
+        var turnSpeed = turnSpeed
 var trackPathSelectionSkill = trackPathSelectionSkill
 var aggression = aggression
 this.setTurnSpeed(turnSpeed);

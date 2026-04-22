@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class CommonGameInitialization extends BaseGameInitialization {
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-protected constructor (resourceInitializationArray: ResourceInitialization[], portion: number)                        
-
-                            : super(resourceInitializationArray, portion){
-
-            super();
-                //var resourceInitializationArray = resourceInitializationArray
+protected constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
+            super(resourceInitializationArray, portion);
+                        //var resourceInitializationArray = resourceInitializationArray
 var portion = portion
 
 
@@ -144,7 +144,7 @@ super.resourceInitialization(level);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

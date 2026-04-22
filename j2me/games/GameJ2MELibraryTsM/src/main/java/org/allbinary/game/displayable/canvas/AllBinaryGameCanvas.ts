@@ -393,12 +393,23 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AllBinaryGameCanvasInterface } from "./AllBinaryGameCanvasInterface.js";
+
+import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
+
+import { MenuListener } from "./MenuListener.js";
+
+import { PopupMenuInterface } from "./PopupMenuInterface.js";
+
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { BaseGameBehavior } from "./BaseGameBehavior.js";
@@ -693,12 +704,9 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
         
         
-public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean)                        
-
-                            : super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST){
-
-            super();
-                //var commandListener = commandListener
+public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
+            super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
+                        //var commandListener = commandListener
     //var gameLayerManager = gameLayerManager
     //var highScoresFactoryInterface = highScoresFactoryInterface
     //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
@@ -711,12 +719,12 @@ this.highScoresHelper= highScoresFactoryInterface!.createHighScoresHelper();
     
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface;
     
-this.init(gameLayerManager, buffered);
+this.init(this.gameLayerManager, buffered);
     
 this.highScoresFactoryInterface= highScoresFactoryInterface;
     
 
-                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == gameTypeFactory!.BOT)
+                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.BOT)
                         
                                     {
                                     this.gameBehavior= DemoGameBehavior.getInstance();
@@ -747,11 +755,11 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
 public constructor (gameLayerManager: AllBinaryGameLayerManager){
 
             super();
-                //var gameLayerManager = gameLayerManager
+            //var gameLayerManager = gameLayerManager
 this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
     
 
-                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == gameTypeFactory!.BOT)
+                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.BOT)
                         
                                     {
                                     this.gameBehavior= DemoGameBehavior.getInstance();
@@ -778,7 +786,7 @@ this.highScoresFactoryInterface= NoHighScoresFactory.getInstance();
 public constructor (){
 
             super();
-            this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
+        this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
     
 this.gameBehavior= DemoGameBehavior.getInstance();
     
@@ -905,7 +913,7 @@ this.menuForm!.init(rectangle, formType);
                         if(this.currentTouchInputFactory != NoButtonsTouchInputFactory.getInstance())
                         
                                     {
-                                    touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
+                                    this.touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
     
 
                                     }
@@ -964,7 +972,7 @@ super.processSleep();
 ;
     
 
-                        if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
+                        if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
                                     this.setOpenMenuPaintable(new BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
@@ -1051,7 +1059,7 @@ this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getIn
 ;
     
 
-                        if(features.isFeature(touchFeatureFactory!.TOUCH_ENABLED))
+                        if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
                                     this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor();
@@ -1184,7 +1192,7 @@ this.closeMenu();
     
 super.pause();
     
-touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+this.touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
 System.gc();
     
@@ -1201,7 +1209,7 @@ System.gc();
     
 super.unPause();
     
-touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+this.touchButtonFactory!.toggle(this.isPaused(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
 this.gameBehavior!.unPause(this);
     
@@ -1583,7 +1591,7 @@ gameInitializedEvent!.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_
     
 GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
     
-touchButtonFactory!.defaultList();
+this.touchButtonFactory!.defaultList();
     
 this.updateTouch();
     
@@ -1630,7 +1638,7 @@ this.gameBehavior!.updateTouch(this);
 ;
     
 
-                        if(features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
+                        if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
                         
                                     {
                                     
@@ -1823,7 +1831,7 @@ this.gameBehavior!.updateScreenButtonPaintable(this);
 ;
     
 
-                        if(features.isFeature(touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
+                        if(features.isFeature(this.touchFeatureFactory!.AUTO_HIDE_SHOW_SCREEN_BUTTONS))
                         
                                     {
                                     this.setTouchPaintableP(this.getTouchButtonsPaintable());
@@ -1834,7 +1842,7 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel());
                                     }
                                 
                              else 
-                        if(features.isFeature(touchFeatureFactory!.SHOW_SCREEN_BUTTONS))
+                        if(features.isFeature(this.touchFeatureFactory!.SHOW_SCREEN_BUTTONS))
                         
                                     {
                                     this.setTouchPaintableP(this.getTouchButtonsPaintable());
@@ -1843,7 +1851,7 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel());
                                     }
                                 
                              else 
-                        if(features.isFeature(touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
+                        if(features.isFeature(this.touchFeatureFactory!.HIDE_SCREEN_BUTTONS))
                         
                                     {
                                     this.setTouchPaintableP(NullPaintable.getInstance());
@@ -2162,9 +2170,9 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
             
     public buildGame(portion: number){
     //var portion = portion
-screenCapture!.endRecording();
+this.screenCapture!.endRecording();
     
-screenCapture!.startRecording();
+this.screenCapture!.startRecording();
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -2460,7 +2468,7 @@ baseGameStatistics!.nextRefresh();
     
 this.draw(graphics);
     
-menuPaintable!.paint(graphics);
+this.menuPaintable!.paint(graphics);
     
 this.progressPaintable!.paint(graphics);
     
@@ -2614,15 +2622,15 @@ portion= 4;
                 //@Throws(Error::class)
             
     processPlayingGame(){
-cheatProcessor!.update();
+this.cheatProcessor!.update();
     
-sensorGameUpdateProcessor!.getInputSensor()!.update();
+this.sensorGameUpdateProcessor!.getInputSensor()!.update();
     
-gameInputProcessor!.process();
+this.gameInputProcessor!.process();
     
-gameLayerManager!.process();
+this.gameLayerManager!.process();
     
-startIntermissionProcessor!.process();
+this.startIntermissionProcessor!.process();
     
 }
 
@@ -2656,11 +2664,11 @@ super.process();
 
                                     }
                                 
-mainStateProcessor!.process();
+this.mainStateProcessor!.process();
     
 menuInputProcessor!.processInput();
     
-endGameProcessor!.process();
+this.endGameProcessor!.process();
     
 baseGameStatistics!.nextFrame();
     
@@ -2711,7 +2719,7 @@ this.threadObjectUtil!.notifyObject(this);
                                 
                         else {
                             
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL))
+                        if(features.isDefault(this.openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
@@ -2723,7 +2731,7 @@ this.threadObjectUtil!.notifyObject(this);
 
         while(openGLImageSpecificFactory!.updating)
         {
-Thread.sleep(YIELD_SLEEP);
+Thread.sleep(this.YIELD_SLEEP);
     
 }
 
@@ -2757,7 +2765,7 @@ this.setRunning(true);
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    Thread.sleep(YIELD_SLEEP);
+                                    Thread.sleep(this.YIELD_SLEEP);
     
 
                                     }
@@ -2770,7 +2778,7 @@ this.threadInit();
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    Thread.sleep(YIELD_SLEEP);
+                                    Thread.sleep(this.YIELD_SLEEP);
     
 
                                     }
@@ -2778,7 +2786,7 @@ this.threadInit();
 this.open();
     
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -2812,14 +2820,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 ;
     
 
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
+                        if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
                         
                                     {
                                     
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
+                        if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
-                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
+                                    this.logUtil!.putF(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
     
 
                                     }
@@ -2839,7 +2847,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
         
 ;
     
-currentDisplayableFactory!.setRunnable(gameRunnable);
+currentDisplayableFactory!.setRunnable(this.gameRunnable);
     
 currentDisplayableFactory!.setDisplayable(this);
     
@@ -2891,7 +2899,7 @@ this.end();
     public run3(){
 this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
     
-gameTickDisplayInfoSingleton!.update();
+this.gameTickDisplayInfoSingleton!.update();
     
 this.processGame();
     
@@ -2921,11 +2929,11 @@ super.setRunning(running);
                                 
                         else {
                             
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL) || SWTUtil.isSWT)
+                        if(features.isDefault(this.openGLFeatureFactory!.OPENGL) || SWTUtil.isSWT)
                         
                                     {
                                     
-                        if(this.gameLayerManager!.getGameInfo()!.getGameType() != gameTypeFactory!.BOT)
+                        if(this.gameLayerManager!.getGameInfo()!.getGameType() != this.gameTypeFactory!.BOT)
                         
                                     {
                                     
@@ -2961,7 +2969,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
                 //@Throws(Error::class)
             
     public end(){
-screenCapture!.endRecording();
+this.screenCapture!.endRecording();
     
 baseGameStatistics!.add(new StringMaker().
                             append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
@@ -2987,7 +2995,7 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
     
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -3042,7 +3050,7 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
 ;
     
 
-    var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());
+    var textBox: HighScoreTextBox = new HighScoreTextBox(this.highScoresFactoryInterface, this.highScoresHelper, abeClientInformation, this.gameLayerManager!.getGameInfo(), this.getCustomCommandListener(), name, highScore, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor());
         
         
 ;

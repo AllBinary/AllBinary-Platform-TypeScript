@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class CachePolicy
 public constructor (name: string, maxTime: number, maxSize: number){
 
             super();
-            var name = name
+        var name = name
 var maxTime = maxTime
 var maxSize = maxSize
 this.name= name;

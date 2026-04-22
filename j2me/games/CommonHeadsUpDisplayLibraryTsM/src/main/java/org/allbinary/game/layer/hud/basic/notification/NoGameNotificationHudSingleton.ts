@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class NoGameNotificationHudSingleton
 private constructor (){
 
             super();
-            
+        
         try {
             
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;

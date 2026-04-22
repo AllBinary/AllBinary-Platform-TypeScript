@@ -49,12 +49,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
+
 export class BasicStoreFront
             extends Object
          implements BasicStoreFrontInterface {
@@ -118,12 +123,12 @@ export class BasicStoreFront
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (storeHashMap: HashMap<any, any>){
 
             super();
-            var storeHashMap = storeHashMap
+        var storeHashMap = storeHashMap
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
         

@@ -37,7 +37,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,12 +83,9 @@ new FileJDialog(new javax.swing.JFrame(), true).
         
 
     private finishedListenerInterface: FileJDialogListenerInterface
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -95,12 +95,9 @@ this.getJFileChooser1()!.setMultiSelectionEnabled(true);
     
 }
 
-public constructor (parent: java.awt.Frame, modal: boolean)                        
-
-                            : super(parent, modal){
-
-            super();
-            var parent = parent
+public constructor (parent: java.awt.Frame, modal: boolean){
+            super(parent, modal);
+                    var parent = parent
 var modal = modal
 
 
@@ -121,7 +118,7 @@ this.finishedListenerInterface= finishedListenerInterface;
 
 
     initComponents(){
-jFileChooser1= new javax.swing.JFileChooser();
+this.jFileChooser1= new javax.swing.JFileChooser();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     

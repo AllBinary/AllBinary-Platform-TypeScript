@@ -61,7 +61,10 @@ import { StatesView } from "../../../../views/generic/address/StatesView.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,12 +80,9 @@ export class ShippingAddressView extends HttpStoreComponentView implements DomNo
     private request: HttpServletRequest
 
     streetAddress: StreetAddress
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -124,7 +124,7 @@ var document = document
         
 ;
     
-formNode!.appendChild(streetAddress!.toXmlNode(document));
+formNode!.appendChild(this.streetAddress!.toXmlNode(document));
     
 
 

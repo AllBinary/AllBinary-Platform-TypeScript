@@ -55,7 +55,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,12 +83,12 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
 private constructor (){
 
             super();
-            }
+        }
 
 public constructor (resource: string){
 
             super();
-            var resource = resource
+        var resource = resource
 
         try {
             
@@ -313,7 +316,7 @@ listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat()) /100.0f);
+this.mediaPlayer!.setVolume((leftVolume) /100.0f, (rightVolume) /100.0f);
     
 }
 
@@ -323,9 +326,9 @@ this.mediaPlayer!.setVolume((leftVolume.toFloat()) /100.0f, (rightVolume.toFloat
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mediaPlayer!.getDuration();
+                        return this.mediaPlayer!.getDuration();
 
-                        .toLong();
+                        ;
     
 }
 

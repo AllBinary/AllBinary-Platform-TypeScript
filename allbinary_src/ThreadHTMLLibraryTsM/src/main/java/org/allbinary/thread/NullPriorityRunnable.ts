@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PriorityRunnable } from "./PriorityRunnable.js";
+
 export class NullPriorityRunnable
             extends Object
          implements PriorityRunnable {

@@ -46,22 +46,24 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProfileActionScriptProcessorInterface } from "./ProfileActionScriptProcessorInterface.js";
+
 import { GenericProfileActionScriptProcessorData } from "./GenericProfileActionScriptProcessorData.js";
 
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {
         
-public constructor (label: string, node: Node)                        
-
-                            : super(label, node){
-
-            super();
-            var label = label
+public constructor (label: string, node: Node){
+            super(label, node);
+                    var label = label
 var node = node
 
 
@@ -69,12 +71,9 @@ var node = node
                     
 }
 
-public constructor (label: string)                        
-
-                            : super(label){
-
-            super();
-            var label = label
+public constructor (label: string){
+            super(label);
+                    var label = label
 
 
                             //For kotlin this is before the body of the constructor.

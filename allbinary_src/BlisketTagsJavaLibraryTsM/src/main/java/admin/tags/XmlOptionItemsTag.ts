@@ -34,7 +34,10 @@ import { XmlOptionItemsRequestHelperFactory } from "../../admin/taghelpers/XmlOp
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class XmlOptionItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new XmlOptionItemsHelperFactory());
+        this.setTagHelperFactory(new XmlOptionItemsHelperFactory());
     
 this.setTagRequestHelperFactory(new XmlOptionItemsRequestHelperFactory());
     

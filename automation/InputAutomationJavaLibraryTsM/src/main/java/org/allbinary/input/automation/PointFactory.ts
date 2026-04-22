@@ -31,7 +31,10 @@ import { awt } from "../../../../java/awt.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ var y = y
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

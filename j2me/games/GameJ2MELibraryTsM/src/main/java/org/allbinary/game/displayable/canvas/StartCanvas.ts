@@ -277,12 +277,19 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
+
+import { MenuListener } from "./MenuListener.js";
+
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
@@ -290,8 +297,6 @@ import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
 import { FormUtil } from "./FormUtil.js";
 
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
-
-import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
@@ -405,12 +410,9 @@ export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInt
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
         
         
-public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean)                        
-
-                            : super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean){
+            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST);
+                        //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var highScoresFactoryInterface = highScoresFactoryInterface
     //var paintable = paintable
@@ -773,7 +775,7 @@ this.removeGameKeyEvent(keyCode, false);
 }
 
 
-    private isSingleKeyRepeatableProcessing: boolean = features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
+    private isSingleKeyRepeatableProcessing: boolean = this.features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
         
         
 
@@ -812,11 +814,11 @@ var repeated = repeated
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
@@ -856,11 +858,11 @@ var repeated = repeated
 ;
     
 
-                        if(gameKey != NONE)
+                        if(gameKey != this.NONE)
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = gameKeyEventFactory!.getInstance(this, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
         
         
 ;
@@ -1128,7 +1130,7 @@ this.getSpecialAnimationInterface()!.reset();
                                     }
                                 
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -1219,7 +1221,7 @@ this.preDemoProcess();
                         if(indexedAnimationBehavior!.loopIndex < 1)
                         
                                     {
-                                    timeDelayHelper!.setStartTime();
+                                    this.timeDelayHelper!.setStartTime();
     
 
                                     }
@@ -1274,7 +1276,7 @@ this.setCurrentThread();
 this.setRunning(true);
     
 
-                        if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
+                        if(this.features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
                                     {
                                     progressCanvas!.end();
@@ -1288,7 +1290,7 @@ this.setRunning(true);
 
                         }
                             
-fullScreenUtil!.init(this, this.getCustomCommandListener());
+this.fullScreenUtil!.init(this, this.getCustomCommandListener());
     
 this.initMenu();
     
@@ -1297,7 +1299,7 @@ this.initPostPaint();
 this.setState();
     
 
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
+                        if(this.features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
                                     OpenGLThreadUtil.getInstance()!.onResume();
@@ -1306,7 +1308,7 @@ this.setState();
                                     }
                                 
 
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
+                        if(this.features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD) || J2MEUtil.isHTML())
                         
                                     {
                                     
@@ -1349,7 +1351,7 @@ super.setRunning(running);
 
         try {
             
-                        if((features.isDefault(openGLFeatureFactory!.OPENGL) || J2MEUtil.isHTML()) && !running)
+                        if((this.features.isDefault(this.openGLFeatureFactory!.OPENGL) || J2MEUtil.isHTML()) && !running)
                         
                                     {
                                     
@@ -1395,7 +1397,7 @@ baseGameStatistics!.add(new StringMaker().
 baseGameStatistics!.init();
     
 
-                        if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
+                        if(this.features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
                         
                                     {
                                     progressCanvas!.start();

@@ -43,7 +43,10 @@ import { PrimitiveFloatUtil } from "../../../../org/allbinary/logic/math/Primiti
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ this.listener= completeMotionGestureInputEventListenerInterface;
 protected constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

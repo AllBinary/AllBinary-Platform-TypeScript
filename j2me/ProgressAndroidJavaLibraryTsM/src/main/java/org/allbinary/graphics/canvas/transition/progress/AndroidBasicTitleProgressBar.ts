@@ -111,7 +111,10 @@ import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnabl
 
 
 
-        
+
+
+
+
 
 
 
@@ -170,12 +173,9 @@ AndroidBasicTitleProgressBar.background= background;
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
- constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var title = title
+ constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, backgroundBasicColor, foregroundBasicColor);
+                    var title = title
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor
 
@@ -187,7 +187,7 @@ this.init();
 DisplayChangeEventHandler.getInstance()!.addListener(this);
     
 
-    var size: number = IMAGE.length
+    var size: number = this.IMAGE.length
                 ;
         
         
@@ -203,7 +203,7 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
         
 index < size; index++)
         {
-IMAGE[index]= NullCanvas.NULL_IMAGE;
+this.IMAGE[index]= NullCanvas.NULL_IMAGE;
     
 }
 
@@ -467,7 +467,7 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
 super.start();
     
-this.midletActivity!.runOnUiThread(showTitleProgressBarRunnable);
+this.midletActivity!.runOnUiThread(this.showTitleProgressBarRunnable);
     
 
                 //: 
@@ -485,7 +485,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NA
         try {
             this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
-this.midletActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
+this.midletActivity!.runOnUiThread(this.dismissTitleProgressBarRunnable);
     
 super.end();
     
@@ -514,7 +514,7 @@ super.addEarlyPortion(value, text, index);
                         if(this.midletActivity != AndroidUtil.NULL_ACTIVITY)
                         
                                     {
-                                    this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+                                    this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
 
                                     }
@@ -540,7 +540,7 @@ var index = index
     
 super.addPortion(value, text, index);
     
-this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
 
                 //: 
@@ -562,7 +562,7 @@ var text = text
     
 super.addPortion(value, text);
     
-this.midletActivity!.runOnUiThread(titleProgressDialogPortionSetProgressRunnable);
+this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
 
                 //: 
@@ -581,7 +581,7 @@ var value = value
         try {
             super.setValue(value);
     
-this.midletActivity!.runOnUiThread(titleProgressDialogSetProgressRunnable);
+this.midletActivity!.runOnUiThread(this.titleProgressDialogSetProgressRunnable);
     
 
                 //: 
@@ -622,11 +622,11 @@ var lastHeight = lastHeight
                         if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth();
+                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth();
 
-                        .toFloat(), lastHeight.toFloat() -20, image.getHeight();
+                        , lastHeight -20, image.getHeight();
 
-                        .toFloat(), false);
+                        , false);
     
 
                                     }
@@ -645,11 +645,11 @@ var lastHeight = lastHeight
                         if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth.toFloat(), image.getWidth();
+                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth();
 
-                        .toFloat(), lastHeight.toFloat() -28, image.getHeight();
+                        , lastHeight -28, image.getHeight();
 
-                        .toFloat(), false);
+                        , false);
     
 
                                     }
@@ -795,7 +795,7 @@ var index = index
 var graphics = graphics
 
         try {
-            animation.paint(graphics, 0, 20);
+            this.animation.paint(graphics, 0, 20);
     
 super.paint2(graphics);
     

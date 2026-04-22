@@ -43,7 +43,10 @@ import { LicensingException } from "../../../org/allbinary/logic/system/security
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class TransformInfoHelperFactory extends TagHelperFactory {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

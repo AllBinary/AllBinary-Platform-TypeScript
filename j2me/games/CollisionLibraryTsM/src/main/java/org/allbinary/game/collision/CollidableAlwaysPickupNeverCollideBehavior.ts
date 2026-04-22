@@ -31,7 +31,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ import { CollisionType } from "./CollisionType.js";
 
 export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverCollideBehavior {
         
- constructor ()                        
-
-                            : super(true){
-
-            super();
-            
+ constructor (){
+            super(true);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

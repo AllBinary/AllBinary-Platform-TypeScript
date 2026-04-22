@@ -40,7 +40,10 @@ import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cach
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class IIOImageCacheable
 public constructor (key: string){
 
             super();
-            var key = key
+        var key = key
 this.key= key;
     
 }

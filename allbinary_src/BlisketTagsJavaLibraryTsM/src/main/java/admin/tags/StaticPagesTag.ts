@@ -55,7 +55,10 @@ import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/in
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class StaticPagesTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new StaticPagesHelperFactory());
+        this.setTagHelperFactory(new StaticPagesHelperFactory());
     
 this.setTagRequestHelperFactory(new StaticPagesRequestHelperFactory());
     

@@ -31,7 +31,10 @@ import { DefaultFileItemFactory } from "../../../../../org/apache/commons/fileup
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { DefaultFileItemFactory } from "../../../../../org/apache/commons/fileup
         
 export class AbFileItemFactory extends DefaultFileItemFactory {
         
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

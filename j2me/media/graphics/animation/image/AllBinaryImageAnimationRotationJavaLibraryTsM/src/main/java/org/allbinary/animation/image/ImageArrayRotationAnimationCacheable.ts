@@ -40,7 +40,10 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotatio
 
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
-public constructor (anyType: any = {}, animationBehavior: AnimationBehavior)                        
-
-                            : super(anyType, animationBehavior){
-
-            super();
-                //var anyType = anyType
+public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
+            super(anyType, animationBehavior);
+                        //var anyType = anyType
     //var animationBehavior = animationBehavior
 
 

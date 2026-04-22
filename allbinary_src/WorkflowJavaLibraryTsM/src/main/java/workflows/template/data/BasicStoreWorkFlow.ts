@@ -40,7 +40,10 @@ import { StoreWorkFlowInterface } from "../../../org/allbinary/logic/control/wor
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { BasicWorkFlow } from "./BasicWorkFlow.js";
 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var propertiesHashMap = propertiesHashMap
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
 

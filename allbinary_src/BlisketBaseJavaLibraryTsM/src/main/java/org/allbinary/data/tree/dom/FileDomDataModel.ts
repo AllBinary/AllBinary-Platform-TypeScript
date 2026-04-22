@@ -43,12 +43,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DomNodeInterface } from "./DomNodeInterface.js";
+
 import { ModDomHelper } from "./ModDomHelper.js";
 
 export class FileDomDataModel
@@ -60,7 +65,7 @@ export class FileDomDataModel
 public constructor (file: AbFile){
 
             super();
-            var file = file
+        var file = file
 this.file= file;
     
 }

@@ -37,7 +37,10 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { InventorySearch } from "./InventorySearch.js";
 
 export class AutoSearchValidationInventoryView extends InventorySearch {
         
-public constructor (searchRequest: SearchRequest)                        
-
-                            : super(searchRequest){
-
-            super();
-            var searchRequest = searchRequest
+public constructor (searchRequest: SearchRequest){
+            super(searchRequest);
+                    var searchRequest = searchRequest
 
 
                             //For kotlin this is before the body of the constructor.

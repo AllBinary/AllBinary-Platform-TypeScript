@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -27,7 +30,7 @@ export class EGLConfig
 public constructor (){
 
             super();
-            
+        
 
 
                             throw new RuntimeException()

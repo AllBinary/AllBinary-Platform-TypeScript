@@ -70,7 +70,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,7 +104,7 @@ export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
 public constructor (workAreaName: string){
 
             super();
-            var workAreaName = workAreaName
+        var workAreaName = workAreaName
 initComponents();
     
 this.rootTreeNode= new DefaultMutableTreeNode(workAreaName);
@@ -123,7 +126,7 @@ this.rootTreeNode!.add(treeNode);
 
 
     public updateTree(){
-this.workAreaJTree= new JTree(rootTreeNode);
+this.workAreaJTree= new JTree(this.rootTreeNode);
     
 this.workAreaJTree!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -235,7 +238,7 @@ var treePath = treePath
             
     public deselectAll(){
 
-    var size: number = highlightedBasicArrayList!.size()!;
+    var size: number = this.highlightedBasicArrayList!.size()!;
         
         
 ;
@@ -253,7 +256,7 @@ this.logUtil!.putF("size: " +size, this, "deselectAll");
 index < size; index++)
         {
 
-    var node: DefaultMutableTreeNode = highlightedBasicArrayList!.get(index);
+    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index);
 
                          as DefaultMutableTreeNode;
         
@@ -273,7 +276,7 @@ this.highlightedBasicArrayList!.clear();
             
     public selectGraphicItem(node: DefaultMutableTreeNode){
 var node = node
-highlightedBasicArrayList!.add(node);
+this.highlightedBasicArrayList!.add(node);
     
 MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node) as Object));
     
@@ -474,15 +477,15 @@ this.workAreaJTree!.expandPath(treePath);
     initComponents(){
 itemJPopupMenu= new javax.swing.JPopupMenu();
     
-deleteJMenuItem= new javax.swing.JMenuItem();
+this.deleteJMenuItem= new javax.swing.JMenuItem();
     
-copyJMenuItem= new javax.swing.JMenuItem();
+this.copyJMenuItem= new javax.swing.JMenuItem();
     
-rotateJMenuItem= new javax.swing.JMenuItem();
+this.rotateJMenuItem= new javax.swing.JMenuItem();
     
-itemJScrollPane1= new javax.swing.JScrollPane();
+this.itemJScrollPane1= new javax.swing.JScrollPane();
     
-workAreaPropertiesJPanel= new javax.swing.JPanel();
+this.workAreaPropertiesJPanel= new javax.swing.JPanel();
     
 itemJPopupMenu!.addPopupMenuListener(new object: javax.swing.event.PopupMenuListener()
                                 {
@@ -506,7 +509,7 @@ itemJPopupMenuPopupMenuWillBecomeVisible(evt);
                                 }
                             );
     
-deleteJMenuItem!.setText("Delete");
+this.deleteJMenuItem!.setText("Delete");
     
 deleteJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -520,9 +523,9 @@ deleteJMenuItemMousePressed(evt);
                                 }
                             );
     
-itemJPopupMenu!.add(deleteJMenuItem);
+this.itemJPopupMenu!.add(this.deleteJMenuItem);
     
-copyJMenuItem!.setText("Copy");
+this.copyJMenuItem!.setText("Copy");
     
 copyJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -536,9 +539,9 @@ copyJMenuItemMousePressed(evt);
                                 }
                             );
     
-itemJPopupMenu!.add(copyJMenuItem);
+this.itemJPopupMenu!.add(this.copyJMenuItem);
     
-rotateJMenuItem!.setText("Rotate 45*");
+this.rotateJMenuItem!.setText("Rotate 45*");
     
 rotateJMenuItem!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -552,7 +555,7 @@ rotateJMenuItemMousePressed(evt);
                                 }
                             );
     
-itemJPopupMenu!.add(rotateJMenuItem);
+this.itemJPopupMenu!.add(this.rotateJMenuItem);
     
 setLayout(new java.awt.GridLayout(1, 1));
     
@@ -568,11 +571,11 @@ workAreaPropertiesJPanelMousePressed(evt);
                                 }
                             );
     
-workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout(1, 0));
+this.workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
-itemJScrollPane1!.setViewportView(workAreaPropertiesJPanel);
+this.itemJScrollPane1!.setViewportView(this.workAreaPropertiesJPanel);
     
-add(itemJScrollPane1);
+add(this.itemJScrollPane1);
     
 }
 
@@ -599,7 +602,7 @@ this.repaint();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePressed", e);
     
 }
 
@@ -627,7 +630,7 @@ var evt = evt
                         
                                     {
                                     
-                        if((evt.getModifiers() and evt.BUTTON3_MASK) == evt.BUTTON3_MASK)
+                        if((evt.getModifiers()&evt.BUTTON3_MASK) == evt.BUTTON3_MASK)
                         
                                     {
                                     
@@ -671,7 +674,7 @@ index < selectedTreePathArray!.length; index++)
                                     }
                                 
 
-                        if((evt.getModifiers() and evt.BUTTON1_MASK) == evt.BUTTON1_MASK)
+                        if((evt.getModifiers()&evt.BUTTON1_MASK) == evt.BUTTON1_MASK)
                         
                                     {
                                     this.deselectAll();
@@ -723,7 +726,7 @@ index < selectedTreePathArray!.length; index++)
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "workAreaJTreeMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "workAreaJTreeMousePressed", e);
     
 }
 
@@ -750,7 +753,7 @@ var evt = evt
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "copyJMenuItemMousePressed", e);
     
 }
 
@@ -797,7 +800,7 @@ this.repaint();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePressed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePressed", e);
     
 }
 

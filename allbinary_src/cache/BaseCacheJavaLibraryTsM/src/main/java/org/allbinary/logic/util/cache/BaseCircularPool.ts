@@ -34,7 +34,10 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class BaseCircularPool
 
     public getNextInstance(): any{
 
-    var anyType: any = OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;
+    var anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;
         
         
 ;
@@ -96,7 +99,7 @@ this.circularIndexUtil!.setIndex(0);
         
 index < size; index++)
         {
-OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
+this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
     
 }
 
@@ -111,7 +114,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OBJECT_ARRAY[index]!;
+                        return this.OBJECT_ARRAY[index]!;
     
 }
 

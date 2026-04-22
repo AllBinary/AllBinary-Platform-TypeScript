@@ -61,7 +61,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,12 +80,9 @@ export class CollidableCompositeLayer extends AllBinaryGameLayer implements Coll
         
 
     private collidableInferface: CollidableBaseBehavior
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior)                        
-
-                            : super(layerInfo, viewPosition){
-
-            super();
-                //var layerInfo = layerInfo
+public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior){
+            super(layerInfo, viewPosition);
+                        //var layerInfo = layerInfo
     //var viewPosition = viewPosition
     //var collidableInferface = collidableInferface
 
@@ -95,12 +95,9 @@ this.setCollidableInferface(collidableInferface);
     
 }
 
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior)                        
-
-                            : super(name, layerInfo, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior){
+            super(name, layerInfo, viewPosition);
+                        //var name = name
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
     //var collidableInferface = collidableInferface
@@ -114,48 +111,39 @@ this.setCollidableInferface(collidableInferface);
     
 }
 
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(layerInfo, viewPosition){
-
-            super();
-                //var layerInfo = layerInfo
+public constructor (layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(layerInfo, viewPosition);
+                        //var layerInfo = layerInfo
     //var viewPosition = viewPosition
 
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
     
 }
 
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(name, layerInfo, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(name, layerInfo, viewPosition);
+                        //var name = name
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
 
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
     
 }
 
-public constructor (layerInfo: Rectangle)                        
-
-                            : super(layerInfo){
-
-            super();
-                //var layerInfo = layerInfo
+public constructor (layerInfo: Rectangle){
+            super(layerInfo);
+                        //var layerInfo = layerInfo
 
 
                             //For kotlin this is before the body of the constructor.
                     
-collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
     
 }
 

@@ -52,12 +52,17 @@ import { UserEntityInterface } from "../../../../../../../../org/allbinary/data/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontUsersStatisticsInterface } from "./StoreFrontUsersStatisticsInterface.js";
+
 import { StoreFrontUsersStatisticsData } from "./StoreFrontUsersStatisticsData.js";
 
 export class StoreFrontUsersStatistics
@@ -71,7 +76,7 @@ export class StoreFrontUsersStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 this.totalUsersByRoleHashMap= new HashMap<any, any>();
     
 
@@ -124,7 +129,7 @@ index < size; index++)
         
 ;
     
-totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
+this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
     
 }
 
@@ -134,7 +139,7 @@ totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
     getNewTotal(userRole: UserRole): Long{
 var userRole = userRole
 
-    var numberOfUsersForRoleLong: Long = totalUsersByRoleHashMap!.get(userRole as Object);
+    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole as Object);
 
                          as Long;
         

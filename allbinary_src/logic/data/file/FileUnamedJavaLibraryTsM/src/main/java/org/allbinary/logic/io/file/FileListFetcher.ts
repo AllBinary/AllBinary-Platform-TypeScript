@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ var path = path
 
         try {
             
-    var files: BasicArrayList = subDirectory!.search(new AbFile(path))!;
+    var files: BasicArrayList = this.subDirectory!.search(new AbFile(path))!;
         
         
 ;
@@ -146,7 +149,7 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -196,7 +199,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -247,7 +250,7 @@ includeExtensionBasicArrayList!.add(includeExtension);
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;
@@ -288,7 +291,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 ;
     
 
-    var files: BasicArrayList = subDirectory!.search(visitorFileFilter, new AbFile(path))!;
+    var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
         
         
 ;

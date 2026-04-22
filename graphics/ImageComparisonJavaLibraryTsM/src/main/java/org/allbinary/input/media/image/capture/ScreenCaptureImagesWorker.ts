@@ -49,12 +49,17 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CaptureWorkerInterface } from "./CaptureWorkerInterface.js";
+
 import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
 
 import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
@@ -78,7 +83,7 @@ export class ScreenCaptureImagesWorker extends BasicEventHandler implements Capt
 public constructor (){
 
             super();
-            screenScavangerRobot= new ScreenScavangerRobot();
+        screenScavangerRobot= new ScreenScavangerRobot();
     
 index= ProcessingFrameIndexFactory.next();
     
@@ -130,7 +135,7 @@ setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var bufferedImage: BufferedImage = screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
+    var bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
         
         
 ;

@@ -49,7 +49,10 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ import { TransformInfoHttp } from "./TransformInfoHttp.js";
 
 export class TransformInfoHttpSearch extends TransformInfoHttp {
         
-public constructor (searchRequest: SearchRequest)                        
-
-                            : super(searchRequest!.getPropertiesHashMap(), searchRequest!.getPageContext()){
-
-            super();
-            var searchRequest = searchRequest
+public constructor (searchRequest: SearchRequest){
+            super(searchRequest!.getPropertiesHashMap(), searchRequest!.getPageContext());
+                    var searchRequest = searchRequest
 
 
                             //For kotlin this is before the body of the constructor.

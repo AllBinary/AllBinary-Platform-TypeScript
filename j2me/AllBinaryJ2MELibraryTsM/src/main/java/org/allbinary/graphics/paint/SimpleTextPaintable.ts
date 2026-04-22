@@ -43,7 +43,10 @@ import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class SimpleTextPaintable extends Paintable {
 public constructor (text: string, basicColor: BasicColor){
 
             super();
-                //var text = text
+            //var text = text
     //var basicColor = basicColor
 this.text= text;
     
@@ -92,14 +95,14 @@ this.basicColor= basicColor;
 ;
     
 
-    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text) shr 1);
+    var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);
         
         
 ;
     
 graphics.setColor(this.getBasicColorP()!.toInt());
     
-graphics.drawString(this.text, (width shr 1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor);
+graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor);
     
 }
 

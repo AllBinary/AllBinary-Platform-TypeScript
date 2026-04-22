@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,18 +79,18 @@ export class DestroyedEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
-                        if(!list.contains(collidableDestroyableDamageableLayer);
+                        if(!this.list.contains(collidableDestroyableDamageableLayer);
 
                         )
                         
                                     {
-                                    list.add(collidableDestroyableDamageableLayer);
+                                    this.list.add(collidableDestroyableDamageableLayer);
     
 
                                     }

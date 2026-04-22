@@ -31,12 +31,17 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TestInputInterface } from "./TestInputInterface.js";
+
 export class TestInputExample
             extends Object
          implements TestInputInterface {

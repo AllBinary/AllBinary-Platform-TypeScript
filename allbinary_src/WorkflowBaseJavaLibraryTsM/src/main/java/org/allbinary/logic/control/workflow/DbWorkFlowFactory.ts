@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class DbWorkFlowFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class, LicensingException::class)

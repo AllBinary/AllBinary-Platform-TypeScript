@@ -55,12 +55,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OpenGLSurfaceChangedInterface } from "./OpenGLSurfaceChangedInterface.js";
+
 import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
@@ -102,7 +107,7 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var bitmapFactory = bitmapFactory
     //var textureFactory = textureFactory
 this.openGLBitmap= bitmapFactory!.createBitmap(image);
@@ -119,7 +124,7 @@ var gl = gl
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

@@ -58,7 +58,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,12 +89,9 @@ export class CaptionIndexedAnimation extends IndexedAnimation {
     private timeDelayHelper: TimeDelayHelper
 
     private player: Player
-public constructor (animationInterface: Animation, movieIndexedAnimationInterface: IndexedAnimation, player: Player, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation, movieIndexedAnimationInterface: IndexedAnimation, player: Player, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationInterface = animationInterface
     //var movieIndexedAnimationInterface = movieIndexedAnimationInterface
     //var player = player
     //var captionDx = captionDx
@@ -246,7 +246,7 @@ var sequence = sequence
     //var y = y
 this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy);
     
-this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +this.captionDy +dy);
+this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy);
     
 }
 
@@ -258,7 +258,7 @@ this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +dx, y +t
     //var z = z
 this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
     
-this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +dx, y +this.captionDy +dy, z);
+this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);
     
 }
 

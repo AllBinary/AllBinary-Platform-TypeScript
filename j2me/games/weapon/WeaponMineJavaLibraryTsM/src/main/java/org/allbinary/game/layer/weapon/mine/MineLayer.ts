@@ -58,7 +58,10 @@ import { DropWeaponSound } from "../../../../../../org/allbinary/weapon/media/au
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class MineLayer extends SimpleWeaponLayer {
     private static readonly NAME: string = "MineLayer";
         
         
-public constructor (viewPosition: ViewPosition)                        
-
-                            : super(NAME, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition){
-
-            super();
-            var viewPosition = viewPosition
+public constructor (viewPosition: ViewPosition){
+            super(NAME, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
+                    var viewPosition = viewPosition
 
 
                             //For kotlin this is before the body of the constructor.

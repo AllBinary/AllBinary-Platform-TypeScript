@@ -37,7 +37,10 @@ import { UserInterface } from "../../../../../../../../org/allbinary/business/us
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class OrderStoreAdminUserFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

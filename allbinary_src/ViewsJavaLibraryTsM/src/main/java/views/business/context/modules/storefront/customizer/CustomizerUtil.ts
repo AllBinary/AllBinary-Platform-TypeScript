@@ -64,7 +64,10 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ export class CustomizerUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

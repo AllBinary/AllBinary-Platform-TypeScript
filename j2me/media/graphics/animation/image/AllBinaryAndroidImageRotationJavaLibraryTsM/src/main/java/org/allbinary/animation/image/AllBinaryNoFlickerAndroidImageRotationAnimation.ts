@@ -55,7 +55,10 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,12 +96,9 @@ export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRo
     private imageToShow: Image
 
     private bufferedImageIndex: number= 0
-protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(image, angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var originalImage = originalImage
+protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(image, angleInfo, totalAngle, animationBehavior);
+                        //var originalImage = originalImage
     //var image = image
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -109,11 +109,11 @@ protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo,
                     
 this.originalImage= originalImage;
     
-this.halfWidth= (image.getWidth() shr 1);
+this.halfWidth= (image.getWidth()>>1);
     
-this.halfHeight= (image.getHeight() shr 1);
+this.halfHeight= (image.getHeight()>>1);
     
-this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()).toShort();
+this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
     
 this.imageToShow= image;
     
@@ -138,7 +138,7 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor);
+                                    this.imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor);
     
 changed= true;
     
@@ -151,7 +151,7 @@ super.setBasicColorP(basicColor);
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -187,13 +187,13 @@ this.setBasicColorP(basicColor);
                                 
 super.setAlpha(alpha);
     
-imageModifierUtil!.setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImage, this.imageToShow, 0, this.alphaP);
     
 
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -206,7 +206,7 @@ this.updateImage();
     public nextRotation(){
 super.nextRotation();
     
-matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate(this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -216,7 +216,7 @@ this.updateImage();
     public previousRotation(){
 super.previousRotation();
     
-matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate( -this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -249,7 +249,7 @@ this.circularIndexUtil!.setIndex(index);
     
 this.angleInfo!.adjustAngle(newFrame);
     
-matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate((newFrame -currentFrame) *this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     

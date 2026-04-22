@@ -49,7 +49,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class BillingAddressTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new BillingAddressHelperFactory());
+        this.setTagHelperFactory(new BillingAddressHelperFactory());
     
 this.setTagRequestHelperFactory(new BillingAddressHelperFactory());
     

@@ -88,7 +88,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -147,12 +150,9 @@ export class InputMappingHelpPaintable extends HelpPaintable {
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor)                        
-
-                            : super("Input Mapping", backgroundBasicColor, basicColor){
-
-            super();
-                //var gameInputMappingArray = gameInputMappingArray
+protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
+            super("Input Mapping", backgroundBasicColor, basicColor);
+                        //var gameInputMappingArray = gameInputMappingArray
     //var backgroundBasicColor = backgroundBasicColor
     //var basicColor = basicColor
 
@@ -199,7 +199,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
 ;
     
 
-    var size: number = gameInputMappingArray!.length
+    var size: number = this.gameInputMappingArray!.length
                 ;
         
         
@@ -252,7 +252,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
         
 index < size; index++)
         {
-gameInputMapping= gameInputMappingArray[index]!;
+gameInputMapping= this.gameInputMappingArray[index]!;
     
 gameKey= gameInputMapping!.getGameKey();
     
@@ -264,7 +264,7 @@ list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
         
 ;
     
-inputBasicColorArray[index]= new Array(size2);
+this.inputBasicColorArray[index]= new Array(size2);
     
 
 
@@ -276,7 +276,7 @@ inputBasicColorArray[index]= new Array(size2);
         
 index2 < size2; index2++)
         {
-inputBasicColorArray[index]![index2]= this.basicColor;
+this.inputBasicColorArray[index]![index2]= this.basicColor;
     
 }
 
@@ -304,7 +304,7 @@ actionBasicColor[index]= this.selectedBasicColor;
     
 this.logUtil!.putF(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
     
-inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
+this.inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
     
 
                                     }
@@ -492,7 +492,7 @@ stringBuffer!.append(key.getName());
 ;
     
 
-    var beginWidth: number = (font.stringWidth(this.TITLE) shr 1);
+    var beginWidth: number = (font.stringWidth(this.TITLE)>>1);
         
         
 ;
@@ -578,7 +578,7 @@ actionString= stringMaker!.append(inputInfo[index]!)!.append(commonSeps!.COLON)!
     
 stringMaker!.delete(0, stringMaker!.length());
     
-beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString()) shr 1);
+beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString())>>1);
     
 graphics.setColor(this.actionBasicColor[index]!.toInt());
     

@@ -37,12 +37,19 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SoundInterface } from "./SoundInterface.js";
+
+import { Runnable } from "./Runnable.js";
+
 import { NoPlayer } from "./NoPlayer.js";
 
 export class Sound
@@ -58,7 +65,7 @@ export class Sound
 protected constructor (resource: string){
 
             super();
-            var resource = resource
+        var resource = resource
 this.resource= resource;
     
 }

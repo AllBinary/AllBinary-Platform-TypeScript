@@ -31,7 +31,10 @@ import { swing } from "../../../../../../javax/swing.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,14 +47,14 @@ export class PropertiesJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 }
 
 
     public set(panel: JPanel){
 var panel = panel
-workAreaPropertiesJPanel!.add(panel);
+this.workAreaPropertiesJPanel!.add(panel);
     
 this.repaint();
     
@@ -59,99 +62,99 @@ this.repaint();
 
 
     initComponents(){
-workAreaPropertiesJPanel= new javax.swing.JPanel();
+this.workAreaPropertiesJPanel= new javax.swing.JPanel();
     
-modifierJPanel= new javax.swing.JPanel();
+this.modifierJPanel= new javax.swing.JPanel();
     
-copyVerticalJButton= new javax.swing.JButton();
+this.copyVerticalJButton= new javax.swing.JButton();
     
-copyHorizontalJButton= new javax.swing.JButton();
+this.copyHorizontalJButton= new javax.swing.JButton();
     
-rotateJPanel= new javax.swing.JPanel();
+this.rotateJPanel= new javax.swing.JPanel();
     
-rotateJButton= new javax.swing.JButton();
+this.rotateJButton= new javax.swing.JButton();
     
-angleJTextField= new javax.swing.JTextField();
+this.angleJTextField= new javax.swing.JTextField();
     
-jPanel7= new javax.swing.JPanel();
+this.jPanel7= new javax.swing.JPanel();
     
-upJButton= new javax.swing.JButton();
+this.upJButton= new javax.swing.JButton();
     
-downJButton= new javax.swing.JButton();
+this.downJButton= new javax.swing.JButton();
     
-jPanel8= new javax.swing.JPanel();
+this.jPanel8= new javax.swing.JPanel();
     
-leftJButton= new javax.swing.JButton();
+this.leftJButton= new javax.swing.JButton();
     
-rightJButton= new javax.swing.JButton();
+this.rightJButton= new javax.swing.JButton();
     
 setLayout(new java.awt.GridLayout(2, 1));
     
-workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout());
+this.workAreaPropertiesJPanel!.setLayout(new java.awt.GridLayout());
     
-add(workAreaPropertiesJPanel);
+add(this.workAreaPropertiesJPanel);
     
-modifierJPanel!.setLayout(new java.awt.GridLayout(6, 0));
+this.modifierJPanel!.setLayout(new java.awt.GridLayout(6, 0));
     
-copyVerticalJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.copyVerticalJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-copyVerticalJButton!.setText("Copy Vertical");
+this.copyVerticalJButton!.setText("Copy Vertical");
     
-modifierJPanel!.add(copyVerticalJButton);
+this.modifierJPanel!.add(this.copyVerticalJButton);
     
-copyHorizontalJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.copyHorizontalJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-copyHorizontalJButton!.setText("Copy Horizontal");
+this.copyHorizontalJButton!.setText("Copy Horizontal");
     
-modifierJPanel!.add(copyHorizontalJButton);
+this.modifierJPanel!.add(this.copyHorizontalJButton);
     
-rotateJPanel!.setLayout(new java.awt.GridLayout(1, 2));
+this.rotateJPanel!.setLayout(new java.awt.GridLayout(1, 2));
     
-rotateJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.rotateJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-rotateJButton!.setText("Rotate");
+this.rotateJButton!.setText("Rotate");
     
-rotateJPanel!.add(rotateJButton);
+this.rotateJPanel!.add(this.rotateJButton);
     
-angleJTextField!.setText("Angle");
+this.angleJTextField!.setText("Angle");
     
-rotateJPanel!.add(angleJTextField);
+this.rotateJPanel!.add(this.angleJTextField);
     
-modifierJPanel!.add(rotateJPanel);
+this.modifierJPanel!.add(this.rotateJPanel);
     
-jPanel7!.setLayout(new java.awt.GridLayout(1, 2));
+this.jPanel7!.setLayout(new java.awt.GridLayout(1, 2));
     
-upJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.upJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-upJButton!.setText("Up");
+this.upJButton!.setText("Up");
     
-jPanel7!.add(upJButton);
+this.jPanel7!.add(this.upJButton);
     
-downJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.downJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-downJButton!.setText("Down");
+this.downJButton!.setText("Down");
     
-jPanel7!.add(downJButton);
+this.jPanel7!.add(this.downJButton);
     
-modifierJPanel!.add(jPanel7);
+this.modifierJPanel!.add(this.jPanel7);
     
-jPanel8!.setLayout(new java.awt.GridLayout(1, 2));
+this.jPanel8!.setLayout(new java.awt.GridLayout(1, 2));
     
-leftJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.leftJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-leftJButton!.setText("Left");
+this.leftJButton!.setText("Left");
     
-jPanel8!.add(leftJButton);
+this.jPanel8!.add(this.leftJButton);
     
-rightJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
+this.rightJButton!.setFont(new java.awt.Font("Dialog", 0, 10));
     
-rightJButton!.setText("Right");
+this.rightJButton!.setText("Right");
     
-jPanel8!.add(rightJButton);
+this.jPanel8!.add(this.rightJButton);
     
-modifierJPanel!.add(jPanel8);
+this.modifierJPanel!.add(this.jPanel8);
     
-add(modifierJPanel);
+add(this.modifierJPanel);
     
 }
 

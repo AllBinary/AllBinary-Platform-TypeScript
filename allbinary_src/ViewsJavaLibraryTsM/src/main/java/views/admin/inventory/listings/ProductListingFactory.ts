@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "ProductListingFactory", commonStrings!.G
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -34,7 +34,10 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ import { PreLogUtil } from "./PreLogUtil.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;

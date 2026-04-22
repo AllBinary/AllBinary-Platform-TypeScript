@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
 
 export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
         
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[])                        
-
-                            : super(uniformBlockArray, uniformArray, attributeArray){
-
-            super();
-                //var uniformBlockArray = uniformBlockArray
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[]){
+            super(uniformBlockArray, uniformArray, attributeArray);
+                        //var uniformBlockArray = uniformBlockArray
     //var uniformArray = uniformArray
     //var attributeArray = attributeArray
 
@@ -52,12 +52,9 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
                     
 }
 
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[])                        
-
-                            : super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray){
-
-            super();
-                //var uniformBlockArray = uniformBlockArray
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
+            super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
+                        //var uniformBlockArray = uniformBlockArray
     //var uniformArray = uniformArray
     //var attributeArray = attributeArray
     //var attributeHandleArray = attributeHandleArray

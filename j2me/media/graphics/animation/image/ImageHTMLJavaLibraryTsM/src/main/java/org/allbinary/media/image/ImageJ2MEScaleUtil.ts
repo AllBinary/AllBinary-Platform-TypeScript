@@ -31,7 +31,10 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class ImageJ2MEScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

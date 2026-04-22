@@ -55,7 +55,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -104,17 +107,17 @@ export class ImageCacheBase
 public constructor (){
 
             super();
-            
+        
 
 
 
                         for (
-    var index: number = listOfList!.length -1;
+    var index: number = this.listOfList!.length -1;
         
         
 index >= 0; index--)
         {
-listOfList[index]= new BasicArrayList();
+this.listOfList[index]= new BasicArrayList();
     
 }
 
@@ -123,12 +126,12 @@ listOfList[index]= new BasicArrayList();
 
 
                         for (
-    var index: number = availableListOfList!.length -1;
+    var index: number = this.availableListOfList!.length -1;
         
         
 index >= 0; index--)
         {
-availableListOfList[index]= new BasicArrayList();
+this.availableListOfList[index]= new BasicArrayList();
     
 }
 
@@ -173,14 +176,14 @@ availableListOfList[index]= new BasicArrayList();
 
 
                         for (
-    var index: number = listOfList!.length -1;
+    var index: number = this.listOfList!.length -1;
         
         
 index >= 0; index--)
         {
-availableListOfList[index]!.clear();
+this.availableListOfList[index]!.clear();
     
-availableListOfList[index]!.addAll(listOfList[index]!);
+this.availableListOfList[index]!.addAll(this.listOfList[index]!);
     
 }
 
@@ -200,7 +203,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-    var size: number = widths.length
+    var size: number = this.widths.length
                 ;
         
         
@@ -217,7 +220,7 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-                        if(widths[index] == width && heights[index] == height)
+                        if(this.widths[index] == width && this.heights[index] == height)
                         
                                     {
                                     foundIndex= index;
@@ -251,11 +254,11 @@ index < size; index++)
                         
                                     {
                                     
-                        if(availableListOfList[foundIndex]!.size() > 0)
+                        if(this.availableListOfList[foundIndex]!.size() > 0)
                         
                                     {
                                     
-    var list: BasicArrayList = availableListOfList[foundIndex]!;
+    var list: BasicArrayList = this.availableListOfList[foundIndex]!;
         
         
 ;

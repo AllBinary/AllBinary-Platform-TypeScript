@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class ImageUnifierCell
 public constructor (width: Integer, height: Integer){
 
             super();
-            var width = width
+        var width = width
 var height = height
 this.setWidth(width);
     

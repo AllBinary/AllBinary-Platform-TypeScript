@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class BasicViewData
 private constructor (){
 
             super();
-            }
+        }
 
 
     readonly GENERICDIR: string = "generic/";

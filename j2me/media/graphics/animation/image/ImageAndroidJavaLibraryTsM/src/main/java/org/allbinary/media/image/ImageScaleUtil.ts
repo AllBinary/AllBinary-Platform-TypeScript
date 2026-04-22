@@ -61,7 +61,10 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -92,7 +95,7 @@ export class ImageScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -195,19 +198,19 @@ private constructor (){
 ;
     
 
-    var width: number = (originalBitmap!.getWidth() *scaleX).toInt();
+    var width: number = (originalBitmap!.getWidth() *scaleX);
         
         
 ;
     
 
-    var height: number = (originalBitmap!.getHeight() *scaleY).toInt();
+    var height: number = (originalBitmap!.getHeight() *scaleY);
         
         
 ;
     
 
-    var index: number = imageBasicArrayList!.indexOf(originalImage)!;
+    var index: number = this.imageBasicArrayList!.indexOf(originalImage)!;
         
         
 ;
@@ -284,9 +287,9 @@ private constructor (){
         
 ;
     
-imageBasicArrayList!.add(originalImage);
+this.imageBasicArrayList!.add(originalImage);
     
-scaledImageBasicArrayList!.add(scaledImage);
+this.scaledImageBasicArrayList!.add(scaledImage);
     
 this.scaleXBasicArrayList!.add(scaleX);
     
@@ -330,7 +333,7 @@ this.scaleYBasicArrayList!.add(scaleY);
                                     }
                                 
                         else {
-                            image= imageCache!.get(commonStrings!.CREATE_IMAGE, width, height);
+                            image= imageCache!.get(this.commonStrings!.CREATE_IMAGE, width, height);
     
 
                         }

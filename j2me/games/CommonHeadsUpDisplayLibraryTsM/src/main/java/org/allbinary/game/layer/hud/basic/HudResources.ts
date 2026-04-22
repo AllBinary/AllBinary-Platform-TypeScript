@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class HudResources
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly RESOURCE_LIFE: string = "/hud_life_10_by_10.png";

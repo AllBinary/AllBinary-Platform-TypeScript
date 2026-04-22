@@ -37,12 +37,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ShippingInterface } from "./ShippingInterface.js";
+
 export class PickUpShippingModule
             extends Object
          implements ShippingInterface {
@@ -62,7 +67,7 @@ export class PickUpShippingModule
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getCost(order: OrderInterface): Money{

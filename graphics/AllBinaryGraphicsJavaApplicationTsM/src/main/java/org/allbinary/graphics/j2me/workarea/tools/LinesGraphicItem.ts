@@ -87,17 +87,20 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
+
 import { PointsDomUtil } from "./PointsDomUtil.js";
 
 import { Math } from "./Math.js";
-
-import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 import { PointsUtil } from "./PointsUtil.js";
 
@@ -190,7 +193,7 @@ export class LinesGraphicItem
 public constructor (){
 
             super();
-            this.points= new Points();
+        this.points= new Points();
     
 
         try {
@@ -211,7 +214,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 public constructor (linesNode: Node){
 
             super();
-            var linesNode = linesNode
+        var linesNode = linesNode
 this.points= new Points();
     
 init();
@@ -736,7 +739,7 @@ firstPoint= secondPoint;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -817,7 +820,7 @@ var y = y
 ;
     
 
-                        if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON1_MASK) == mouseEvent!.BUTTON1_MASK)
+                        if((mouseEvent!.getModifiers()&mouseEvent!.BUTTON1_MASK) == mouseEvent!.BUTTON1_MASK)
                         
                                     {
                                     
@@ -834,7 +837,7 @@ this.addPoint(point);
                                     }
                                 
                              else 
-                        if((mouseEvent!.getModifiers() and mouseEvent!.BUTTON3_MASK) == mouseEvent!.BUTTON3_MASK)
+                        if((mouseEvent!.getModifiers()&mouseEvent!.BUTTON3_MASK) == mouseEvent!.BUTTON3_MASK)
                         
                                     {
                                     StatusFactory.getInstance()!.setStatus("Line Point Removed");
@@ -850,7 +853,7 @@ this.currentMousePoint= mousePoint;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -912,7 +915,7 @@ this.currentMousePoint= point;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "mouseMoved", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
     
 }
 
@@ -980,7 +983,7 @@ this.deactivate();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
     
 }
 

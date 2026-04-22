@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -40,12 +43,9 @@ import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
 
 export class SingleLayerLayerProcessor extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new SingleLayerLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new SingleLayerLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

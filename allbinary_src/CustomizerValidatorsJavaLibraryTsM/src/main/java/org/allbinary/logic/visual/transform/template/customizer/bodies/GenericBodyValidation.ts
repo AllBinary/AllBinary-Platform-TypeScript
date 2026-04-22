@@ -73,7 +73,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -92,14 +95,14 @@ export class GenericBodyValidation extends Validation implements DomNodeInterfac
 public constructor (){
 
             super();
-            this.body= StringUtil.getInstance()!.EMPTY_STRING;
+        this.body= StringUtil.getInstance()!.EMPTY_STRING;
     
 }
 
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
         
@@ -137,7 +140,7 @@ this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.getFormData(hashMap);
     
 }

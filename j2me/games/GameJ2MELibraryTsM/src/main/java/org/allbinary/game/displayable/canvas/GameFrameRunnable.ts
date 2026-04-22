@@ -43,7 +43,10 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class GameFrameRunnable extends GameRunnable {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-            var allBinaryGameCanvas = allBinaryGameCanvas
+        var allBinaryGameCanvas = allBinaryGameCanvas
 this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 }
@@ -87,9 +90,9 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
         
 ;
     
-allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+allBinaryGameCanvas!.getLoopTimeHelperP()!.setStartTime(this.gameTickTimeDelayHelper!.setStartTime());
     
-gameTickDisplayInfoSingleton!.update();
+this.gameTickDisplayInfoSingleton!.update();
     
 allBinaryGameCanvas!.processGame();
     

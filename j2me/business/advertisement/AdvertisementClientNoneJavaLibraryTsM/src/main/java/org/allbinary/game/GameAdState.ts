@@ -55,7 +55,10 @@ import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrin
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class GameAdState
 public constructor (adConfiguration: AdConfiguration){
 
             super();
-            var adConfiguration = adConfiguration
+        var adConfiguration = adConfiguration
 this.adConfiguration= adConfiguration;
     
 VirtualKeyboardEventHandler.getInstance()!.addListener(this);

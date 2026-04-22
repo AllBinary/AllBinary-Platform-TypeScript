@@ -31,7 +31,10 @@ import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/laye
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
 public constructor (ownerLayer: CollidableCompositeLayer){
 
             super();
-            var ownerLayer = ownerLayer
+        var ownerLayer = ownerLayer
 this.ownerLayer= ownerLayer;
     
 }

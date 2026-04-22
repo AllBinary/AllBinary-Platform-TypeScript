@@ -34,7 +34,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class FREEBLISKET_PATH_GLOBALS
 private constructor (){
 
             super();
-            
+        
     var stringBuffer: StringMaker = new StringMaker();
         
         
@@ -123,7 +126,7 @@ this.XSLPATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(XSLPATH);
+stringBuffer!.append(this.XSLPATH);
     
 stringBuffer!.append("configuration");
     
@@ -133,7 +136,7 @@ this.CONFIGURATIONPATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(CONFIGURATIONPATH);
+stringBuffer!.append(this.CONFIGURATIONPATH);
     
 stringBuffer!.append("user");
     
@@ -143,7 +146,7 @@ this.USERCONFIGURATIONPATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(CONFIGURATIONPATH);
+stringBuffer!.append(this.CONFIGURATIONPATH);
     
 stringBuffer!.append("context");
     

@@ -34,7 +34,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class MathData
 private constructor (){
 
             super();
-            
+        
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         

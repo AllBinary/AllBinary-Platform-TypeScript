@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class ImageScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -135,12 +138,12 @@ private constructor (){
     //var cached = cached
     //var mutable = mutable
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -176,7 +179,7 @@ private constructor (){
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, (scaleX *width).toInt(), (scaleY *height).toInt(), mutable)!;
+    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, (scaleX *width), (scaleY *height), mutable)!;
         
         
 ;
@@ -231,7 +234,7 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, scaleX.toInt(), scaleY.toInt(), mutable)!;
+    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, scaleX, scaleY, mutable)!;
         
         
 ;

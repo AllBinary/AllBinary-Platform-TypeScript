@@ -37,7 +37,10 @@ import { OpenGLImageCacheFactory } from "../../../../../org/allbinary/image/open
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory } from "./
 
 export class TouchButtonResourceOpenGLESAnimationInterfaceFactoryInterfaceFactory extends TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory {
         
-public constructor ()                        
-
-                            : super("OpenGL TouchButton Animations"){
-
-            super();
-            
+public constructor (){
+            super("OpenGL TouchButton Animations");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ initInfo!.createNewLicenseInitInfo(new BasicArrayList());
 public constructor (options: string[]){
 
             super();
-            var options = options
+        var options = options
 LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
@@ -109,7 +112,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
         
 index < options.length; index++)
         {
-vector.add(options[index]!);
+this.vector.add(options[index]!);
     
 }
 

@@ -37,7 +37,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class BasicProfileActionScriptProcessorNode
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptProcessorData.NAME, node.getChildNodes())!;
         
@@ -64,7 +67,7 @@ public constructor (node: Node){
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

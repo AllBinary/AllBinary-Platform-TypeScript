@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,19 +64,19 @@ export class BasicGroupFactory
         
         
 
-    public readonly GOOD: Group = new Group("Good Guys", 0.toShort());
+    public readonly GOOD: Group = new Group("Good Guys", 0);
         
         
 
-    public readonly ENEMY: Group = new Group("Bad Guys", 1.toShort());
+    public readonly ENEMY: Group = new Group("Bad Guys", 1);
         
         
 
-    public readonly ENEMY_ON_LEVEL: Group = new Group("Bad Guys on Level", 2.toShort());
+    public readonly ENEMY_ON_LEVEL: Group = new Group("Bad Guys on Level", 2);
         
         
 
-    public readonly NONE: Group = new Group("Not On A Team", 3.toShort());
+    public readonly NONE: Group = new Group("Not On A Team", 3);
         
         
 

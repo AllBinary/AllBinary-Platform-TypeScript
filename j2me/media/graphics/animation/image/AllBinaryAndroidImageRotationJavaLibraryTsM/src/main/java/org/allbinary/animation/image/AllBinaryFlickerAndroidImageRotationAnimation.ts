@@ -49,7 +49,10 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRota
     private readonly increment: number
 
     private readonly originalImage: Image
-public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(image, angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var originalImage = originalImage
+public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(image, angleInfo, totalAngle, animationBehavior);
+                        //var originalImage = originalImage
     //var image = image
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -95,11 +95,11 @@ public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, to
                     
 this.originalImage= originalImage;
     
-this.halfWidth= (image.getWidth() shr 1);
+this.halfWidth= (image.getWidth()>>1);
     
-this.halfHeight= (image.getHeight() shr 1);
+this.halfHeight= (image.getHeight()>>1);
     
-this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()).toShort();
+this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
     
 }
 
@@ -118,7 +118,7 @@ this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()).t
                                  || this.getBasicColorP()!.toInt() != basicColor!.toInt())
                         
                                     {
-                                    imageModifierUtil!.setColor(this.originalImage, this.getImage(), 0, basicColor);
+                                    this.imageModifierUtil!.setColor(this.originalImage, this.getImage(), 0, basicColor);
     
 changed= true;
     
@@ -131,7 +131,7 @@ super.setBasicColorP(basicColor);
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -167,13 +167,13 @@ this.setBasicColorP(basicColor);
                                 
 super.setAlpha(alpha);
     
-imageModifierUtil!.setAlpha(this.originalImage, this.getImage(), 0, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImage, this.getImage(), 0, this.alphaP);
     
 
                         if(changed)
                         
                                     {
-                                    matrix.setRotate(0.0f, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -186,7 +186,7 @@ this.updateImage();
     public nextRotation(){
 super.nextRotation();
     
-matrix.setRotate(this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate(this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -196,7 +196,7 @@ this.updateImage();
     public previousRotation(){
 super.previousRotation();
     
-matrix.setRotate( -this.increment.toFloat(), this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate( -this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -227,7 +227,7 @@ this.circularIndexUtil!.setIndex(index);
     
 this.angleInfo!.adjustAngle(newFrame);
     
-matrix.setRotate((newFrame -currentFrame).toFloat() *increment, this.halfWidth.toFloat(), this.halfHeight.toFloat());
+this.matrix.setRotate((newFrame -currentFrame) *this.increment, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     

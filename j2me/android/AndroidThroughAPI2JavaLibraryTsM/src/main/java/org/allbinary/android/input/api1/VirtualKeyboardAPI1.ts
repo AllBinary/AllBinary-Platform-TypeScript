@@ -37,7 +37,10 @@ import { Activity } from "../../../../../android/app/Activity.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class VirtualKeyboardAPI1 extends VirtualKeyboard implements VirtualKeybo
 public constructor (activity: Activity){
 
             super();
-                //var activity = activity
+            //var activity = activity
 }
 
 

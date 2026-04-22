@@ -34,7 +34,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class MyCommandsFactory
 protected constructor (){
 
             super();
-            }
+        }
 
 
 }

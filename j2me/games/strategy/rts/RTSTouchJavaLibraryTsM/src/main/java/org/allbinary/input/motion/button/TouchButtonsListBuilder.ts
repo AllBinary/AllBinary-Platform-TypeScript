@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
     add(list: BasicArrayList){
     //var list = list
 
-    var size: number = baseTouchInputList!.size()!;
+    var size: number = this.baseTouchInputList!.size()!;
         
         
 ;
@@ -68,7 +71,7 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
         
 index < size; index++)
         {
-baseTouchInput= baseTouchInputList!.get(index);
+baseTouchInput= this.baseTouchInputList!.get(index);
 
                          as BaseTouchInput;
     

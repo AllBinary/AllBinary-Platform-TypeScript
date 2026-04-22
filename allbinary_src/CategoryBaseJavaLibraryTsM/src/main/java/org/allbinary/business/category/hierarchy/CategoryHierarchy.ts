@@ -42,12 +42,17 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CategoryHierarchyInterface } from "./CategoryHierarchyInterface.js";
+
 export class CategoryHierarchy
             extends Object
          implements CategoryHierarchyInterface {
@@ -61,7 +66,7 @@ export class CategoryHierarchy
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface){
 
             super();
-            var rootCategoryInterface = rootCategoryInterface
+        var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 this.level= 0;
     
@@ -74,7 +79,7 @@ this.setParent(parentCategoryInterface);
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
 
             super();
-            var rootCategoryInterface = rootCategoryInterface
+        var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var level = level
 this.level= level;
@@ -88,7 +93,7 @@ this.setParent(parentCategoryInterface);
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-            var rootCategoryInterface = rootCategoryInterface
+        var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 

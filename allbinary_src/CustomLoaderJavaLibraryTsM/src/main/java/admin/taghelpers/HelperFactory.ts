@@ -52,7 +52,10 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -478,7 +481,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

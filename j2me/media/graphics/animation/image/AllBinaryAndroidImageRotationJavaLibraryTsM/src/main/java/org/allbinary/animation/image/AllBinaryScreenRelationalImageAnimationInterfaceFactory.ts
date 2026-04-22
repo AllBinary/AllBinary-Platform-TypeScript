@@ -52,7 +52,10 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,31 +69,25 @@ export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends Bas
     private lastImage: Image = NullCanvas.NULL_IMAGE;
         
         
-public constructor (image: Image)                        
-
-                            : this(image, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image){
+            this(image, AnimationBehaviorFactory.getInstance());
+                        //var image = image
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, 0, 0, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, 0, 0, animationBehaviorFactory);
+                        //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
 
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(lastImage != NullCanvas.NULL_IMAGE)
+                        if(this.lastImage != NullCanvas.NULL_IMAGE)
                         
                                     {
                                     
@@ -110,7 +107,7 @@ androidImageInterface!.getBitmap()!.recycle();
         
 ;
     
-lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false);
+this.lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false);
     
 }
 
@@ -123,7 +120,7 @@ lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ImageAnimation(lastImage, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageAnimation(this.lastImage, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

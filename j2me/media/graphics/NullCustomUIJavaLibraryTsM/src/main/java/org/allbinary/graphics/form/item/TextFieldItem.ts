@@ -29,7 +29,10 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { TextItem } from "./TextItem.js";
 
 export class TextFieldItem extends TextItem {
         
-public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : this(canvas, visitor, label, value, maxSize, layout, altText, Font.getDefaultFont(), backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var canvas = canvas
+public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            this(canvas, visitor, label, value, maxSize, layout, altText, Font.getDefaultFont(), backgroundBasicColor, foregroundBasicColor);
+                    var canvas = canvas
 var visitor = visitor
 var label = label
 var value = value
@@ -59,12 +59,9 @@ var foregroundBasicColor = foregroundBasicColor
                     
 }
 
-public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(label, layout, altText, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var canvas = canvas
+public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
+                    var canvas = canvas
 var visitor = visitor
 var label = label
 var value = value

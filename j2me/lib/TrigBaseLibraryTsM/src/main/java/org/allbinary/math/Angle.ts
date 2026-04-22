@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class Angle
 public constructor (angle: number){
 
             super();
-                //var angle = angle
+            //var angle = angle
 this.value= angle;
     
 }

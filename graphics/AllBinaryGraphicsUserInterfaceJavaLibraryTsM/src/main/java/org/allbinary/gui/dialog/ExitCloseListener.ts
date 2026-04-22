@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.js";
+
 export class ExitCloseListener
             extends Object
          implements CloseJDialogListenerInterface {
@@ -41,7 +46,7 @@ export class ExitCloseListener
 public constructor (){
 
             super();
-            }
+        }
 
 
     public onClose(){

@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -174,7 +177,7 @@ securedNativeLibraryInterface!.load();
 private constructor (){
 
             super();
-            
+        
         try {
             
     var graphenv: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;

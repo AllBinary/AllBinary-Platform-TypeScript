@@ -37,7 +37,10 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class MineLayerFactory
 public constructor (viewPositionFactoryInterface: ViewPositionFactoryInterface){
 
             super();
-            var viewPositionFactoryInterface = viewPositionFactoryInterface
+        var viewPositionFactoryInterface = viewPositionFactoryInterface
 this.viewPositionFactoryInterface= viewPositionFactoryInterface;
     
 }

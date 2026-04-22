@@ -20,7 +20,10 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class NullCanvas extends Canvas {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setFullScreenMode(mode: boolean){

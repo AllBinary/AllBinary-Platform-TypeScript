@@ -37,7 +37,10 @@ import { VelocityProperties } from "../../../../org/allbinary/game/physics/veloc
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class FrictionProperties
 public constructor (){
 
             super();
-            }
+        }
 
 
     public friction(velocityProperties: VelocityProperties, nominator: number){

@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {
         
-public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas)                        
-
-                            : super(gameKeyEventList,  -1, gameCanvas){
-
-            super();
-            var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas){
+            super(gameKeyEventList,  -1, gameCanvas);
+                    var gameKeyEventList = gameKeyEventList
 var gameCanvas = gameCanvas
 
 

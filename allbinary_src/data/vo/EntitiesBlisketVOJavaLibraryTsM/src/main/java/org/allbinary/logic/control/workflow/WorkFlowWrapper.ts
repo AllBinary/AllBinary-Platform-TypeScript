@@ -39,12 +39,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WorkFlowInterface } from "./WorkFlowInterface.js";
+
 export class WorkFlowWrapper
             extends Object
          implements WorkFlowInterface {
@@ -62,7 +67,7 @@ export class WorkFlowWrapper
 public constructor (anyType: any = {}){
 
             super();
-            var anyType = anyType
+        var anyType = anyType
 this.anyType= anyType;
     
 }
@@ -84,7 +89,7 @@ this.anyType= anyType;
 
         try {
             
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = this.anyType!.constructor!;
         
         
 ;
@@ -125,7 +130,7 @@ this.anyType= anyType;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getName()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getName()", e);
     
 
                                     }
@@ -145,7 +150,7 @@ this.anyType= anyType;
 
         try {
             
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = this.anyType!.constructor!;
         
         
 ;
@@ -186,7 +191,7 @@ this.anyType= anyType;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getStoreName()", e);
     
 
                                     }
@@ -206,13 +211,13 @@ this.anyType= anyType;
 
         try {
             
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
+    var method: Method = helperClass!.getMethod(this.commonStrings!.PROCESS, 
                             null)!;
         
         

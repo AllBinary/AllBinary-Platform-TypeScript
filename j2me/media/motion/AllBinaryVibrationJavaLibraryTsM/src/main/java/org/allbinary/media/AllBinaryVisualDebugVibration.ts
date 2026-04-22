@@ -45,7 +45,10 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ this.timeDelayHelper!.delay= duration;
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTime())
                         
                                     {
                                     this.timeDelayHelper!.delay= Integer.MAX_VALUE;
@@ -98,12 +101,12 @@ var graphics = graphics
 ;
     
 
-    var width: number = myFont!.stringWidth(VIBRATING)!;
+    var width: number = myFont!.stringWidth(this.VIBRATING)!;
         
         
 ;
     
-graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width shr 1), 0, anchor);
+graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, anchor);
     
 
                                     }

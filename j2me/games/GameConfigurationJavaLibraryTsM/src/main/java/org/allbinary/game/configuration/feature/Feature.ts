@@ -34,7 +34,10 @@ import { ChangedGameFeatureListener } from "../../../../../org/allbinary/game/co
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ hashtable.put(name, gameFeature);
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.name= name;
     
 add(name, this);

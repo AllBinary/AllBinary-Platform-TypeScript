@@ -100,7 +100,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -128,12 +131,9 @@ export class Waypoint extends WaypointBase implements BuildingEventListenerInter
     private paths: BasicArrayList[][] = basicArrayListUtil!.NULL_ARRAY_OF_ARRAY;
         
         
-public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound)                        
-
-                            : super(sound){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound){
+            super(sound);
+                        //var ownerLayer = ownerLayer
     //var sound = sound
 
 
@@ -169,7 +169,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-                        if(paths != basicArrayListUtil!.NULL_ARRAY_OF_ARRAY)
+                        if(this.paths != this.basicArrayListUtil!.NULL_ARRAY_OF_ARRAY)
                         
                                     {
                                     
@@ -193,7 +193,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 
 
                         for (
-    var columnIndex: number = paths.length
+    var columnIndex: number = this.paths.length
                 ;
         
         
@@ -204,7 +204,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 
 
                         for (
-    var rowIndex: number = paths.length
+    var rowIndex: number = this.paths.length
                 ;
         
         
@@ -217,7 +217,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 ;
     
 
-                        if(pathsList != basicArrayListUtil!.getImmutableInstance())
+                        if(pathsList != this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
                                     BasicGeographicMapExtractedPathsCacheFactory.getInstance()!.release(pathsList);
@@ -256,7 +256,7 @@ this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tile
 ;
     
 
-                        if(pathsList == basicArrayListUtil!.getImmutableInstance())
+                        if(pathsList == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
                                     pathsList= this.createPaths(geographicMapCellPosition);
@@ -278,7 +278,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = basicArrayListUtil!.getRandom(this.endList);
+    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList);
 
                          as GeographicMapCellPosition;
         
@@ -491,7 +491,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         for (
-    var columnIndex: number = paths.length
+    var columnIndex: number = this.paths.length
                 ;
         
         
@@ -502,13 +502,13 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         for (
-    var rowIndex: number = paths.length
+    var rowIndex: number = this.paths.length
                 ;
         
         
 --rowIndex >= 0; )
         {
-this.paths[columnIndex]![rowIndex]= basicArrayListUtil!.getImmutableInstance();
+this.paths[columnIndex]![rowIndex]= this.basicArrayListUtil!.getImmutableInstance();
     
 }
 

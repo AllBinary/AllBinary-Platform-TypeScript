@@ -52,22 +52,24 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
+
 export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         
 
     private storeFrontInterface: StoreFrontInterface
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var storeFrontInterface = storeFrontInterface
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var storeFrontInterface = storeFrontInterface
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 

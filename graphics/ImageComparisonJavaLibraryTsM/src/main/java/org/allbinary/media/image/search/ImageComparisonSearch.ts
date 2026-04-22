@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class ImageComparisonSearch
 public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage, tolerance: number){
 
             super();
-            var bufferedImage = bufferedImage
+        var bufferedImage = bufferedImage
 var bufferedImage2 = bufferedImage2
 var tolerance = tolerance
 this.nonMatchingPixelVector= new Vector();
@@ -108,10 +111,10 @@ this.imageWidth= bufferedImage!.getWidth();
                         if(bufferedImage!.getHeight() != bufferedImage2!.getHeight())
                         
                                     {
-                                    isSameHeight= false;
+                                    this.isSameHeight= false;
     
 
-                        if(imageHeight > bufferedImage2!.getHeight())
+                        if(this.imageHeight > bufferedImage2!.getHeight())
                         
                                     {
                                     this.imageHeight= bufferedImage2!.getHeight();
@@ -123,7 +126,7 @@ this.imageWidth= bufferedImage!.getWidth();
                                     }
                                 
                         else {
-                            isSameHeight= true;
+                            this.isSameHeight= true;
     
 
                         }
@@ -132,10 +135,10 @@ this.imageWidth= bufferedImage!.getWidth();
                         if(bufferedImage!.getWidth() != bufferedImage2!.getWidth())
                         
                                     {
-                                    isSameWidth= false;
+                                    this.isSameWidth= false;
     
 
-                        if(imageWidth > bufferedImage2!.getWidth())
+                        if(this.imageWidth > bufferedImage2!.getWidth())
                         
                                     {
                                     this.imageWidth= bufferedImage2!.getWidth();
@@ -147,13 +150,13 @@ this.imageWidth= bufferedImage!.getWidth();
                                     }
                                 
                         else {
-                            isSameWidth= true;
+                            this.isSameWidth= true;
     
 
                         }
                             
 
-                        if(!isSameWidth || !isSameHeight)
+                        if(!this.isSameWidth || !this.isSameHeight)
                         
                                     {
                                     
@@ -179,7 +182,7 @@ this.logUtil!.putF("2: " +imageUtil!.toString(bufferedImage2), this, this.common
                         if(this.matchingPercent ==  -1)
                         
                                     {
-                                    this.matchingPercent= pixelsThatMatch.toFloat() /(this.imageWidth *this.imageHeight);
+                                    this.matchingPercent= this.pixelsThatMatch /(this.imageWidth *this.imageHeight);
     
 
                                     }

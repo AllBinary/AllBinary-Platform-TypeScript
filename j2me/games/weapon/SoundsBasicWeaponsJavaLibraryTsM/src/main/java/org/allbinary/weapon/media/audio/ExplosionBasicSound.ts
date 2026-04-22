@@ -34,7 +34,10 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ export class ExplosionBasicSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/explosion.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/explosion.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

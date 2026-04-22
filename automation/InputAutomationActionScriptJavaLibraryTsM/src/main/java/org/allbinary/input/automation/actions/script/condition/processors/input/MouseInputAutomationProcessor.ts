@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ Thread.sleep(mouseActionScriptInputInterface!.getTime());
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

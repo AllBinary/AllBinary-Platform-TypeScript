@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ var abSqlTable = abSqlTable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TABLE_LABEL +tableName +" Backup Failed";
+                        return this.TABLE_LABEL +tableName +" Backup Failed";
     
 }
 
@@ -126,7 +129,7 @@ var portion = portion
         
 ;
     
-stringBuffer!.append(TABLE_LABEL);
+stringBuffer!.append(this.TABLE_LABEL);
     
 stringBuffer!.append(tableName);
     

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly NONE: string = "No Stack Trace";

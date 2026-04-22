@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class KeySpecFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(algorithm: string, keyData: number[]): KeySpec{

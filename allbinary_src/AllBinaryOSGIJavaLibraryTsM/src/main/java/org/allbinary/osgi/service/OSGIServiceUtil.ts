@@ -43,7 +43,10 @@ import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIService
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class OSGIServiceUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

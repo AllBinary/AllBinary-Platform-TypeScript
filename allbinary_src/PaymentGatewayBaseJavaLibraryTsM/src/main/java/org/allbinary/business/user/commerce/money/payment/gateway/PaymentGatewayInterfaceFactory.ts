@@ -49,12 +49,17 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentGatewayInterfaceFactoryInterface } from "./PaymentGatewayInterfaceFactoryInterface.js";
+
 import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
 
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
@@ -70,7 +75,7 @@ export class PaymentGatewayInterfaceFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

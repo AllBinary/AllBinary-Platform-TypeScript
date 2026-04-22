@@ -31,7 +31,10 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class RegistrationConfiguration
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

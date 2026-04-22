@@ -32,7 +32,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class AndroidMediaPlayerWrapperListener
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper, listeningLevel: number){
 
             super();
-                //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
+            //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
     //var listeningLevel = listeningLevel
 
         try {
@@ -119,7 +122,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 
             super();
-                //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
+            //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
 
         try {
             this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);

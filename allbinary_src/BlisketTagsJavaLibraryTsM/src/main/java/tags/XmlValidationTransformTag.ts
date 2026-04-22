@@ -43,7 +43,10 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class XmlValidationTransformTag extends TransformTag {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

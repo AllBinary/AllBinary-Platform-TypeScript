@@ -82,7 +82,10 @@ import { SimpleGeographicMapCellPositionFactory } from "../../../../../org/allbi
 
 
 
-        
+
+
+
+
 
 
 
@@ -121,9 +124,9 @@ export class RTSFormInput
 public constructor (groupInterfaceArray: Group[]){
 
             super();
-                //var groupInterfaceArray = groupInterfaceArray
+            //var groupInterfaceArray = groupInterfaceArray
 
-    var size: number = newUnconstructedRTSLayerInterfaceArray!.length
+    var size: number = this.newUnconstructedRTSLayerInterfaceArray!.length
                 ;
         
         
@@ -139,7 +142,7 @@ public constructor (groupInterfaceArray: Group[]){
         
 index < size; index++)
         {
-newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+this.newUnconstructedRTSLayerInterfaceArray[index]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
     
 }
 
@@ -401,7 +404,7 @@ this.logUtil!.putF(new StringMaker().
                                 )
                         
                                     {
-                                    hashtable.put(AllBinaryGameLayerManager.ID, layerManager);
+                                    this.hashtable.put(AllBinaryGameLayerManager.ID, layerManager);
     
 
 

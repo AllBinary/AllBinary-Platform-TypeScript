@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class TouchScreenFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public isMultiTouch(): boolean{

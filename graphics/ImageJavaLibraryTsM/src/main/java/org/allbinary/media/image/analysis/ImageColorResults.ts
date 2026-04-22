@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class ImageColorResults
 public constructor (){
 
             super();
-            this.setColorRange(new ColorRange());
+        this.setColorRange(new ColorRange());
     
 this.getColorRange()!.setMaxRed( -1);
     

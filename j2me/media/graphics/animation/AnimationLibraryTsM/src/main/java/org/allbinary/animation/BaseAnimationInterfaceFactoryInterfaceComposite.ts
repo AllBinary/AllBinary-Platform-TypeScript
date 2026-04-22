@@ -31,12 +31,17 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
+
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
 
 import { Animation } from "./Animation.js";
@@ -50,7 +55,7 @@ export class BaseAnimationInterfaceFactoryInterfaceComposite
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]){
 
             super();
-            var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
+        var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
 this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
     
 }
@@ -76,7 +81,7 @@ this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicAnimationInterfaceFactoryInterfaceArray;
+                        return this.basicAnimationInterfaceFactoryInterfaceArray;
     
 }
 

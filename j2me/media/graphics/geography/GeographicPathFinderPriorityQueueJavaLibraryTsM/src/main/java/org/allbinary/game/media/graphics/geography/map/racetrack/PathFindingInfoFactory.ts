@@ -55,7 +55,10 @@ import { PathFindingNodeCostInfoFactory } from "../../../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ PathFindingInfoFactory.MAX= max;
 private constructor (){
 
             super();
-            this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX));
+        this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX));
     
 this.pathFinder= new PathFinder();
     
@@ -119,7 +122,7 @@ this.init(geographicMapInterface, pathFindingInfo, mapArray);
     
 this.pathFinder!.init(geographicMapInterface);
     
-pathFindingInfo!.setPathFinder(pathFinder);
+pathFindingInfo!.setPathFinder(this.pathFinder);
     
 
 

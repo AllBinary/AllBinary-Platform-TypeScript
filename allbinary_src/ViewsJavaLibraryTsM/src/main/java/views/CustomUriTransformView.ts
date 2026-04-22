@@ -64,7 +64,10 @@ import { Node } from "../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class CustomUriTransformView
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -239,7 +242,7 @@ this.transformDocumentInterface= transformDocumentInterface;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

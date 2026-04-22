@@ -48,7 +48,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,13 +71,10 @@ export class MobileClientInformation extends AbeClientInformation {
     static readonly ANDROID_DESC: string = "Android" +DESC;
         
         
-public constructor (name: string, version: string, specialName: string, shortName: string)                        
-
-                            : super(name, version, new StringMaker().
-                            append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName){
-
-            super();
-                //var name = name
+public constructor (name: string, version: string, specialName: string, shortName: string){
+            super(name, version, new StringMaker().
+                            append(specialName)!.append(CommonSeps.getInstance()!.SPACE)!.append(PartnerIdentifierFileUtil.getInstance()!.get())!.toString(), shortName);
+                        //var name = name
     //var version = version
     //var specialName = specialName
     //var shortName = shortName

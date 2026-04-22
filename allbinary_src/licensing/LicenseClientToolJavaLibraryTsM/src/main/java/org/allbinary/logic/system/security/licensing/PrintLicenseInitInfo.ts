@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ initInfo!.printInitInfo();
 public constructor (options: string[]){
 
             super();
-            var options = options
+        var options = options
 LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 }

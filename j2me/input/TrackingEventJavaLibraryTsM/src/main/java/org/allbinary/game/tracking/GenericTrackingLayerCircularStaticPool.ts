@@ -31,7 +31,10 @@ import { AllBinaryLayerCircularPool } from "../../../../org/allbinary/layer/AllB
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class GenericTrackingLayerCircularStaticPool extends AllBinaryLayerCircul
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

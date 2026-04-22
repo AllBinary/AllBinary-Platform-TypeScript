@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,7 +94,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            list.remove(0);
+            this.list.remove(0);
     
 
                 //: 

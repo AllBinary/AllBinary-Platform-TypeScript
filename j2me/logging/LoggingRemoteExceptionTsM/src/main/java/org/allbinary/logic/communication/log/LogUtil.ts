@@ -55,7 +55,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -100,7 +103,7 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly stringBuffer: StringMaker = new StringMaker();
@@ -259,7 +262,7 @@ this.stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 this.stringBuffer!.append(SpecialMessageUtil.getInstance()!.get());
     
-hashtable.put(MESSAGE, this.stringBuffer!.toString());
+hashtable.put(this.MESSAGE, this.stringBuffer!.toString());
     
 new XmlRpcRemoteLogClient(this.abeClientInformation).
                             get(hashtable);

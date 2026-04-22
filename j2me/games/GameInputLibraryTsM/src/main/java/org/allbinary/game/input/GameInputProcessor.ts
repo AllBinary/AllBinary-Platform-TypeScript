@@ -36,7 +36,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class GameInputProcessor
 protected constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

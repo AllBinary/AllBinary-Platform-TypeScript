@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class ForwardData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly PAGE: string = "FORWARD_PAGE";

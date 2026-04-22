@@ -111,7 +111,10 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -138,7 +141,7 @@ export class QuoteHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
     var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);

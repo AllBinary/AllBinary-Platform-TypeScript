@@ -43,7 +43,10 @@ import { SwtMutableImage } from "../../org/microemu/device/swt/SwtMutableImage.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -121,7 +124,7 @@ this.dispose(mutableImage!.getImage();
                         )
                         
                                     {
-                                    console.log(commonStrings!.CLOSE);
+                                    console.log(this.commonStrings!.CLOSE);
     
 resource.dispose();
     

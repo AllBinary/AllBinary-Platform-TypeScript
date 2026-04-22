@@ -26,7 +26,10 @@ import { GameStatisticsFactory } from "../../../../../org/allbinary/canvas/GameS
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class NullDisplayable extends Canvas {
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;

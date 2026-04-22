@@ -45,7 +45,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class AndroidSystemProperties
 public constructor (context: Context){
 
             super();
-            var context = context
+        var context = context
 }
 
 

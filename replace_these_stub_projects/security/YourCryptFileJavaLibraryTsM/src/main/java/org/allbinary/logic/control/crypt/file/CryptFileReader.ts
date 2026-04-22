@@ -20,7 +20,10 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -33,7 +36,7 @@ export class CryptFileReader
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();
-            var decryptedExtension = decryptedExtension
+        var decryptedExtension = decryptedExtension
 var encryptedExtension = encryptedExtension
 }
 

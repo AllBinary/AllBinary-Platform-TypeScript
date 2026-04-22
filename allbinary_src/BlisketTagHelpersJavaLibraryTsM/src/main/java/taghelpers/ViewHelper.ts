@@ -61,7 +61,10 @@ import { Document } from "../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class ViewHelper
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
     
@@ -144,7 +147,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }
@@ -166,7 +169,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             
 
 
-                            throw new Error("Hmm: " +componentInterface!.getTransformDocumentInterface()!.getDoc())
+                            throw new Error("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc())
 
                 //: 
 } catch(e) 
@@ -189,7 +192,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

@@ -52,7 +52,10 @@ import { TransformInfoTag } from "../tags/transform/info/TransformInfoTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class TransformTag extends TransformInfoTag {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor ()                        
-
-                            : super(new ViewHelperFactory()){
-
-            super();
-            
+public constructor (){
+            super(new ViewHelperFactory());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -84,12 +84,9 @@ public constructor ()
                                 
 }
 
-public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface)                        
-
-                            : super(tagHelperFactoryInterface){
-
-            super();
-            var tagHelperFactoryInterface = tagHelperFactoryInterface
+public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
+            super(tagHelperFactoryInterface);
+                    var tagHelperFactoryInterface = tagHelperFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.

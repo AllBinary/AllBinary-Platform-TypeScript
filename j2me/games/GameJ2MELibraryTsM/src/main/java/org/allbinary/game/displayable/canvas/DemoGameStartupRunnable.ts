@@ -37,7 +37,10 @@ import { ABRunnable } from "../../../../../org/allbinary/thread/ABRunnable.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class DemoGameStartupRunnable extends ABRunnable {
 public constructor (demoCanvas: DemoCanvas){
 
             super();
-            var demoCanvas = demoCanvas
+        var demoCanvas = demoCanvas
 this.demoCanvas= demoCanvas;
     
 }

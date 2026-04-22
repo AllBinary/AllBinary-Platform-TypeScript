@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class ImageColorRangeResults
 public constructor (){
 
             super();
-            this.setColorRangeInterface(new ColorRange() as ColorRangeInterface);
+        this.setColorRangeInterface(new ColorRange() as ColorRangeInterface);
     
 }
 
@@ -124,7 +127,7 @@ this.totalPixelsChecked= totalPixelsChecked;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return (this.getMatchingPixelsChecked();
 
-                        .toFloat() /this.getTotalPixelsChecked());
+                         /this.getTotalPixelsChecked());
     
 }
 

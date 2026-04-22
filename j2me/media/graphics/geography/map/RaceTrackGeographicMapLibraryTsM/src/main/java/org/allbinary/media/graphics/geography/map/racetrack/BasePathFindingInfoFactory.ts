@@ -61,7 +61,10 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
 
-        
+
+
+
+
 
 
 
@@ -96,7 +99,7 @@ class RaceTrackGeographicMapCellPositionFactoryInitVisitor
 public constructor (){
 
             super();
-            
+        
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;
         
         

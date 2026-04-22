@@ -58,7 +58,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class GlobalsValidation extends Validation implements DomNodeInterface {
 public constructor (storeName: string){
 
             super();
-            var storeName = storeName
+        var storeName = storeName
 this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
 }
@@ -85,7 +88,7 @@ this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
 
 

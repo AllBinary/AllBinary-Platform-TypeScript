@@ -46,7 +46,10 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFacto
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
         
         
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -79,27 +79,21 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, dx: number)                        
-
-                            : this(image, dx, 0){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number){
+            this(image, dx, 0);
+                        //var image = image
     //var dx = dx
 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width shr 2);
+this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
     
 }
 
-public constructor (image: Image, dx: number, dy: number, unused: any = {})                        
-
-                            : this(image, dx, dy){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, unused: any = {}){
+            this(image, dx, dy);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var unused = unused
@@ -107,18 +101,15 @@ public constructor (image: Image, dx: number, dy: number, unused: any = {})
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width shr 2);
+this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
     
-this.animationFactoryInitializationVisitor!.dy +=  -(this.animationFactoryInitializationVisitor!.height shr 2);
+this.animationFactoryInitializationVisitor!.dy +=  -(this.animationFactoryInitializationVisitor!.height>>2);
     
 }
 
-public constructor (image: Image, dx: number, dy: number)                        
-
-                            : this(image, dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number){
+            this(image, dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var dx = dx
     //var dy = dy
 
@@ -127,12 +118,9 @@ public constructor (image: Image, dx: number, dy: number)
                     
 }
 
-public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, animationBehaviorFactory);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -146,12 +134,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (width: number, height: number, image: Image)                        
-
-                            : this(width, height, image, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var width = width
+public constructor (width: number, height: number, image: Image){
+            this(width, height, image, AnimationBehaviorFactory.getInstance());
+                        //var width = width
     //var height = height
     //var image = image
 
@@ -160,12 +145,9 @@ public constructor (width: number, height: number, image: Image)
                     
 }
 
-public constructor (width: number, height: number, image: Image, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, width, height, animationBehaviorFactory){
-
-            super();
-                //var width = width
+public constructor (width: number, height: number, image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, width, height, animationBehaviorFactory);
+                        //var width = width
     //var height = height
     //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -175,24 +157,18 @@ public constructor (width: number, height: number, image: Image, animationBehavi
                     
 }
 
-public constructor (image: Image)                        
-
-                            : this(image, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image){
+            this(image, AnimationBehaviorFactory.getInstance());
+                        //var image = image
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, image.getHeight(), image.getHeight(), animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, image.getHeight(), image.getHeight(), animationBehaviorFactory);
+                        //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
 

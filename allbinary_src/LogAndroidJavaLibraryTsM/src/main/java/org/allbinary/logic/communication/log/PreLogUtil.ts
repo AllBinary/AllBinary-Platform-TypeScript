@@ -36,7 +36,10 @@ import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/
 
 
 
-        
+
+
+
+
 
 
 
@@ -129,7 +132,7 @@ hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

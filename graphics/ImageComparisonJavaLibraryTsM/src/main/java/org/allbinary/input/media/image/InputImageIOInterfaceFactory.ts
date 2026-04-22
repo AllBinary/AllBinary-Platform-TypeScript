@@ -40,7 +40,10 @@ import { ImageIOInterface } from "../../../../../org/allbinary/media/image/io/Im
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ var imageType = imageType
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

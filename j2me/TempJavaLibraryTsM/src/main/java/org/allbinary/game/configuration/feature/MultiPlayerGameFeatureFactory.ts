@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,7 +44,7 @@ export class MultiPlayerGameFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addCommands(anyType: any = {}){

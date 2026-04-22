@@ -52,7 +52,10 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class ImageRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly features: Features = Features.getInstance()!;
@@ -103,7 +106,7 @@ private constructor (){
 ;
     
 
-                        if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
@@ -176,7 +179,7 @@ copySwtImage= swtImage!.getImage();
     
 gc= swtImage!.getGc();
     
-imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, totalAngle);
+this.imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, totalAngle);
     
 
                                     }

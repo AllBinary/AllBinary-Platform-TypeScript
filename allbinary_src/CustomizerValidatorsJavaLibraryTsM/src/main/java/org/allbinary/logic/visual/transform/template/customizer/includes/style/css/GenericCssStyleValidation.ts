@@ -64,7 +64,10 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,12 @@ export class GenericCssStyleValidation extends Validation implements DomNodeInte
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;
         
@@ -96,7 +99,7 @@ public constructor (document: Document){
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.getFormData(hashMap);
     
 }

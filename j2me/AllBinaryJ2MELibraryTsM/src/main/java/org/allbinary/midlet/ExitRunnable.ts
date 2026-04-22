@@ -40,12 +40,17 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
 
 export class ExitRunnable
@@ -69,7 +74,7 @@ export class ExitRunnable
 public constructor (midlet: AllBinaryMidlet, processor: Processor, isProgress: boolean){
 
             super();
-            var midlet = midlet
+        var midlet = midlet
 var processor = processor
 var isProgress = isProgress
 this.midlet= midlet;
@@ -94,7 +99,7 @@ this.midlet.notifyDestroyed();
     
 this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
     
-processor.process();
+this.processor.process();
     
 
                 //: 
@@ -104,7 +109,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     
 
         try {
-            processor.process();
+            this.processor.process();
     
 
                 //: 

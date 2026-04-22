@@ -31,7 +31,10 @@ import { Scoreable } from "../../../../../../../org/allbinary/game/score/Scoreab
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ export class ScoreableAddOnlyForHud extends Scoreable {
         
 
     private readonly scoreHudWidget: ScoreHudWidget
-public constructor (scoreVectorGraphic: ScoreHudWidget)                        
-
-                            : super(0){
-
-            super();
-            var scoreVectorGraphic = scoreVectorGraphic
+public constructor (scoreVectorGraphic: ScoreHudWidget){
+            super(0);
+                    var scoreVectorGraphic = scoreVectorGraphic
 
 
                             //For kotlin this is before the body of the constructor.

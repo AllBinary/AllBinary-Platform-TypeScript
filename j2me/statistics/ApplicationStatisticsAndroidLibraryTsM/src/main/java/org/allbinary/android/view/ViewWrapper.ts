@@ -31,7 +31,10 @@ import { View } from "../../../../android/view/View.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class ViewWrapper extends BaseViewWrapper {
 public constructor (view: View){
 
             super();
-                //var view = view
+            //var view = view
 this.view= view;
     
 }

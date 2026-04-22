@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class PaymentGatewayEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

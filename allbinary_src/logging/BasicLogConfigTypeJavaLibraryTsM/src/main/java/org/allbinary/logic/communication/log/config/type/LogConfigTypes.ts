@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class LogConfigTypes
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

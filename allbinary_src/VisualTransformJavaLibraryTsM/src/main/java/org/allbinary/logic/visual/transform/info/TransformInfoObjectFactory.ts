@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class TransformInfoObjectFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

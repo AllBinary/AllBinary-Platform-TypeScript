@@ -79,7 +79,10 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class InputAutomationConfiguration
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isInstalled(): boolean{

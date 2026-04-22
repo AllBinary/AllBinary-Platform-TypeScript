@@ -58,7 +58,10 @@ import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communicat
 
 
 
-        
+
+
+
+
 
 
 
@@ -316,7 +319,7 @@ pageContext!.getOut()!.print("Error: " +page);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class InputAutomationRobotChangeEvent
 public constructor (inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper){
 
             super();
-            var inputAutomationRobotInterfaceWrapper = inputAutomationRobotInterfaceWrapper
+        var inputAutomationRobotInterfaceWrapper = inputAutomationRobotInterfaceWrapper
 this.setInputAutomationRobotInterfaceWrapper(inputAutomationRobotInterfaceWrapper);
     
 }

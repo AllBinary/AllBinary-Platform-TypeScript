@@ -49,7 +49,10 @@ import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrin
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class LayerBounds
 protected constructor (rectangle: Rectangle){
 
             super();
-            var rectangle = rectangle
+        var rectangle = rectangle
 this.rectangle= rectangle;
     
 }

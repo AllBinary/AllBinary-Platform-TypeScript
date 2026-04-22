@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class GameInput
     private readonly removalGameKeyEventList: BasicArrayList
 
     readonly isRemoveDuplicateKeyPresses: boolean
-public constructor (gameKeyEventList: BasicArrayList)                        
-
-                            : this(gameKeyEventList, new BasicArrayList()){
-
-            super();
-                //var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList){
+            this(gameKeyEventList, new BasicArrayList());
+                        //var gameKeyEventList = gameKeyEventList
 
 
                             //For kotlin this is before the body of the constructor.
@@ -85,7 +85,7 @@ public constructor (gameKeyEventList: BasicArrayList)
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList){
 
             super();
-                //var gameKeyEventList = gameKeyEventList
+            //var gameKeyEventList = gameKeyEventList
     //var removalGameKeyEventList = removalGameKeyEventList
 this.gameKeyEventList= gameKeyEventList;
     

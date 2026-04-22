@@ -82,7 +82,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class BasicWorkFlow
 public constructor (){
 
             super();
-            this.workFlowName= StringUtil.getInstance()!.EMPTY_STRING;
+        this.workFlowName= StringUtil.getInstance()!.EMPTY_STRING;
     
 this.workFlowDoc= DomDocumentHelper.create();
     
@@ -126,7 +129,7 @@ this.workFlowDoc!.appendChild(workFlowNode);
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
     var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
@@ -156,7 +159,7 @@ this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getI
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME);
 
                          as String;
@@ -361,7 +364,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode()", e);
     
 
                                     }
@@ -394,7 +397,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
     
 
                                     }

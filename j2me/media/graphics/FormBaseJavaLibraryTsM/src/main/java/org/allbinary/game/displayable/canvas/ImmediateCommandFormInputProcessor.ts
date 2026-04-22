@@ -46,7 +46,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class ImmediateCommandFormInputProcessor extends CommandFormInputProcesso
         
 
     gameCommandCanvas: GameCommandCanvas
-public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCommandCanvas: GameCommandCanvas, form: ScrollSelectionForm)                        
-
-                            : super(gameKeyEventList, playerInputId, gameCommandCanvas, form){
-
-            super();
-            var gameKeyEventList = gameKeyEventList
+public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCommandCanvas: GameCommandCanvas, form: ScrollSelectionForm){
+            super(gameKeyEventList, playerInputId, gameCommandCanvas, form);
+                    var gameKeyEventList = gameKeyEventList
 var playerInputId = playerInputId
 var gameCommandCanvas = gameCommandCanvas
 var form = form
@@ -90,7 +90,7 @@ var gameKeyEvent = gameKeyEvent
             super.onPressGameKeyEvent(gameKeyEvent);
     
 
-                        if(timeHelper!.isTime())
+                        if(this.timeHelper!.isTime())
                         
                                     {
                                     this.processInput();
@@ -148,7 +148,7 @@ var gameKeyEvent = gameKeyEvent
             super.onUpGameKeyEvent(gameKeyEvent);
     
 
-                        if(timeHelper!.isTime())
+                        if(this.timeHelper!.isTime())
                         
                                     {
                                     this.processInput();
@@ -176,7 +176,7 @@ var motionGestureEvent = motionGestureEvent
             super.onMotionGestureEvent(motionGestureEvent);
     
 
-                        if(timeHelper!.isTime())
+                        if(this.timeHelper!.isTime())
                         
                                     {
                                     this.processInput();

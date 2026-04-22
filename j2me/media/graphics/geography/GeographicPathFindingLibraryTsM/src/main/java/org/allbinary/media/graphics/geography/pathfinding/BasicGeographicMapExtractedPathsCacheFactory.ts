@@ -23,7 +23,10 @@ import { BasicGeographicMapExtractedPathCacheFactory } from "../../../../../../o
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class BasicGeographicMapExtractedPathsCacheFactory extends BaseBasicArray
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(maxConcurrentPaths: number, maxPaths: number){

@@ -37,7 +37,10 @@ import { CollidableDestroyableDamageableBehavior } from "../../../../org/allbina
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
 
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                        //var ownerLayer = ownerLayer
     //var collidable = collidable
 
 

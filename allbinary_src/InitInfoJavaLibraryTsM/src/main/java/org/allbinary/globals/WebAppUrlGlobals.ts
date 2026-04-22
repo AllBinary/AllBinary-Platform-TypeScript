@@ -34,7 +34,10 @@ import { StringValidationUtil } from "../../../org/allbinary/logic/string/String
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class WebAppUrlGlobals extends UrlGlobalsInterface {
 var path = path
 path= path;
     
-isWebappPathSet= true;
+this.isWebappPathSet= true;
     
 }
 
@@ -120,7 +123,7 @@ isWebappPathSet= true;
                                     }
                                 
                              else 
-                        if(isWebappPathSet)
+                        if(this.isWebappPathSet)
                         
                                     {
                                     

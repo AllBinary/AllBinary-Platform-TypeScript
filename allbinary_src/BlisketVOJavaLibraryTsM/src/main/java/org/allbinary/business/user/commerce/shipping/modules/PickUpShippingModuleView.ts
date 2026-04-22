@@ -43,7 +43,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class PickUpShippingModuleView extends PickUpShippingModule implements Do
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): Boolean{

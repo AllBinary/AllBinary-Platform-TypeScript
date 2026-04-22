@@ -37,7 +37,10 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class FileStreamFactory
 private constructor (context: Context){
 
             super();
-                //var context = context
+            //var context = context
 this.context= context;
     
 }
@@ -127,7 +130,7 @@ this.getContext()!.deleteFile(fileName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return context as Context;
+                        return this.context as Context;
     
 }
 

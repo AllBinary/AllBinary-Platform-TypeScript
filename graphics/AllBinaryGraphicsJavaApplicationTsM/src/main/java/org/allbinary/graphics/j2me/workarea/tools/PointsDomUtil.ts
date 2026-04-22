@@ -51,7 +51,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -120,7 +123,7 @@ var pointVector = pointVector
 ;
     
 
-    var linesNode: Node = document.createElement(LINES);
+    var linesNode: Node = document.createElement(this.LINES);
 
                          as Node;
         
@@ -182,7 +185,7 @@ index++;
         while(index < size && index < size2)
         {
 
-    var lineNode: Node = document.createElement(LINE);
+    var lineNode: Node = document.createElement(this.LINE);
 
                          as Node;
         

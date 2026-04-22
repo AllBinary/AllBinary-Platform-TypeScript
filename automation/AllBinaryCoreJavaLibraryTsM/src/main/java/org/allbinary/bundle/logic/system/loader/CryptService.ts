@@ -73,7 +73,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -100,7 +103,7 @@ export class CryptService
 public constructor (){
 
             super();
-            Globals.getInstance()!.init(this.constructor.name.java.classLoader, "./");
+        Globals.getInstance()!.init(this.constructor.name.java.classLoader, "./");
     
 this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -160,7 +163,7 @@ this.showLicenseDialog(abeClientInformation, e);
     //var e = e
 
         try {
-            this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
+            this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 
     var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
@@ -196,7 +199,7 @@ this.showLicenseDialog(abeClientInformation, e);
                 //: 
 } catch(e2) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e2);
     
 }
 
@@ -208,7 +211,7 @@ basicTextJDialog!.setVisible(true);
                 //: 
 } catch(e3) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e3);
     
 }
 

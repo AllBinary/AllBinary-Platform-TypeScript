@@ -43,7 +43,10 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -175,7 +178,7 @@ PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

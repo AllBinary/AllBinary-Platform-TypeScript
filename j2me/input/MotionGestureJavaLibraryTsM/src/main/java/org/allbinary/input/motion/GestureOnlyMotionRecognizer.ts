@@ -37,7 +37,10 @@ import { MotionGestureRecognizer } from "../../../../org/allbinary/input/motion/
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class GestureOnlyMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.id= index++;
+        this.id= index++;
     
 this.motionGestureRecognizer= new MotionGestureRecognizer(id);
     

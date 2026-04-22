@@ -34,7 +34,10 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class FormPaintable extends Paintable {
 public constructor (form: PaintableForm){
 
             super();
-            var form = form
+        var form = form
 this.form= form;
     
 }

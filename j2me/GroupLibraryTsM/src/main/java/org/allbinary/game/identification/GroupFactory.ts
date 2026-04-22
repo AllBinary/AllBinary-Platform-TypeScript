@@ -40,7 +40,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class GroupFactory
 
     public getNextGroup(): Group{
 
-    var group: Group = list.objectArray[index]! as Group;
+    var group: Group = this.list.objectArray[this.index]! as Group;
         
         
 ;
@@ -141,12 +144,12 @@ var nameArray = nameArray
         
 ;
     
-list.clear();
+this.list.clear();
     
-index= 0;
+this.index= 0;
     
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -177,7 +180,7 @@ name= stringMaker!.append(TEAM)!.appendint(size)!.toString();
 
                         }
                             
-list.add(new Group(name, (size +3).toShort()));
+this.list.add(new Group(name, (size +3)));
     
 size++;
     

@@ -40,7 +40,10 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,12 +51,9 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
         
 export class ScoreHudWidget extends NumberStringHud {
         
-public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor)                        
-
-                            : super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor){
-
-            super();
-            var maxscore = maxscore
+public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
+            super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor);
+                    var maxscore = maxscore
 var location = location
 var direction = direction
 var maxHeight = maxHeight
@@ -66,12 +66,9 @@ var basicColor = basicColor
                     
 }
 
-public constructor (maxscore: number, location: number, direction: number, maxWidth: number)                        
-
-                            : this(maxscore, location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY){
-
-            super();
-            var maxscore = maxscore
+public constructor (maxscore: number, location: number, direction: number, maxWidth: number){
+            this(maxscore, location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
+                    var maxscore = maxscore
 var location = location
 var direction = direction
 var maxWidth = maxWidth
@@ -81,12 +78,9 @@ var maxWidth = maxWidth
                     
 }
 
-public constructor (maxscore: number, location: number, direction: number)                        
-
-                            : this(maxscore, location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, BasicColorFactory.getInstance()!.GREY){
-
-            super();
-            var maxscore = maxscore
+public constructor (maxscore: number, location: number, direction: number){
+            this(maxscore, location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, BasicColorFactory.getInstance()!.GREY);
+                    var maxscore = maxscore
 var location = location
 var direction = direction
 

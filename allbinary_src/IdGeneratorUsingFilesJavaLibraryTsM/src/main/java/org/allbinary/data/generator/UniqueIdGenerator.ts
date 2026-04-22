@@ -58,12 +58,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { IdGeneratorInterface } from "./IdGeneratorInterface.js";
+
 export class UniqueIdGenerator
             extends Object
          implements IdGeneratorInterface {
@@ -85,17 +90,17 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-            }
+        }
 
 
     public initialize(value: number){
 var value = value
 
         try {
-            newFile!.createNewFile();
+            this.newFile!.createNewFile();
     
 
-    var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
+    var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.newFile)!;
         
         
 ;
@@ -132,7 +137,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
     public setFile(filePathName: string, name: string){
 var filePathName = filePathName
 var name = name
-newFile= new AbFile(filePathName);
+this.newFile= new AbFile(filePathName);
     
 }
 
@@ -167,7 +172,7 @@ newFile= new AbFile(filePathName);
     
 idData= new AbDataInputStream(idFile);
     
-id= idData!.readLong();
+this.id= idData!.readLong();
     
 
     var idOutFile: AbFileOutputStream = new AbFileOutputStream(this.newFile);
@@ -177,10 +182,10 @@ id= idData!.readLong();
     
 idOutData= new AbDataOutputStream(idOutFile);
     
-idOutData!.writeLong(id +1);
+idOutData!.writeLong(this.id +1);
     
 
-    var idLong: Long = id as Long;
+    var idLong: Long = this.id as Long;
         
         
 ;

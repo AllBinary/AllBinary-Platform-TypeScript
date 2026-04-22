@@ -37,7 +37,10 @@ import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/pain
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class RTSLayerInfoPaintable extends InitUpdatePaintable {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public update(){

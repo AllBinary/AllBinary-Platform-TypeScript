@@ -49,7 +49,10 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class ImageAnimation extends IndexedAnimation {
         
 
     private readonly image: Image
-public constructor (image: Image, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var image = image
+public constructor (image: Image, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var image = image
     //var animationBehavior = animationBehavior
 
 

@@ -79,7 +79,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
@@ -108,7 +111,7 @@ export class OrderStatusEmail
 public constructor (abeClientInformation: AbeClientInformationInterface, orderHistory: OrderHistory){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var orderHistory = orderHistory
 this.abeClientInformation= abeClientInformation;
     
@@ -158,7 +161,7 @@ this.notifyUser();
 ;
     
 
-    var adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +user.getUserName();
+    var adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();
         
         
 ;
@@ -248,7 +251,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
 ;
     
 
-    var textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +user.getUserName();
+    var textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();
         
         
 ;

@@ -49,7 +49,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class EmailsNotUsed
 public constructor (){
 
             super();
-            this.emailInfoVector= new Vector();
+        this.emailInfoVector= new Vector();
     
 }
 
@@ -101,7 +104,7 @@ var document = document
 ;
     
 
-    var size: number = emailInfoVector!.length!;
+    var size: number = this.emailInfoVector!.length!;
         
         
 ;
@@ -117,7 +120,7 @@ var document = document
 index < size; index++)
         {
 
-    var email: Email = emailInfoVector!.get(index);
+    var email: Email = this.emailInfoVector!.get(index);
 
                          as Email;
         
@@ -147,7 +150,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.END, this, "toXmlNode()");
+                                    this.logUtil!.putF(this.commonStrings!.END, this, "toXmlNode()");
     
 
                                     }
@@ -166,7 +169,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlNode()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode()", e);
     
 
                                     }

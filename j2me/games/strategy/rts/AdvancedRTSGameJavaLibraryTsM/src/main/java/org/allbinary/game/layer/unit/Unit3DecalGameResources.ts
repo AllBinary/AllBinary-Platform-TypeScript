@@ -40,7 +40,10 @@ import { GraphicsFeatureFactory } from "../../../../../org/allbinary/game/config
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class Unit3DecalGameResources extends BasicGameResources {
 private constructor (){
 
             super();
-            
+        
     var ROOT: string = "/unit_decal";
         
         

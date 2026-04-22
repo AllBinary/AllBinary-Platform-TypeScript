@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,14 +50,14 @@ export class BasicGameInfoFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(total: number){
 var total = total
-currentReleaseIndex= 0;
+this.currentReleaseIndex= 0;
     
-currentDestroyIndex= 0;
+this.currentDestroyIndex= 0;
     
 this.total= total;
     

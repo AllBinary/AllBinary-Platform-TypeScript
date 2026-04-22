@@ -52,12 +52,17 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicEventHandlerInterface } from "./BasicEventHandlerInterface.js";
+
 export class BasicEventHandler
             extends Object
          implements BasicEventHandlerInterface {
@@ -75,7 +80,7 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= new BasicArrayList();
+        this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 
@@ -262,7 +267,7 @@ eventListenerInterface!.onEvent(eventObject);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventListenerInterfaceList;
+                        return this.eventListenerInterfaceList;
     
 }
 

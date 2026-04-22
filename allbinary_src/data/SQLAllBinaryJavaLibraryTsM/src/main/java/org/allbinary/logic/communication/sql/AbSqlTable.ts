@@ -34,7 +34,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class AbSqlTable extends AbSqlBasic {
     private readonly DROPPED_SUCCESS: string = " Dropped Successfully";
         
         
-public constructor (databaseConnectionInfoInterface: DbConnectionInfo)                        
-
-                            : super(databaseConnectionInfoInterface){
-
-            super();
-            var databaseConnectionInfoInterface = databaseConnectionInfoInterface
+public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
+            super(databaseConnectionInfoInterface);
+                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -107,7 +107,7 @@ var data = data
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.putF(TABLE_CREATION_SUCCESS +this.tableName +" with statement: " +data, this, this.METHOD_CREATED_TABLE);
+                                    this.logUtil!.putF(this.TABLE_CREATION_SUCCESS +this.tableName +" with statement: " +data, this, this.METHOD_CREATED_TABLE);
     
 
                                     }
@@ -145,7 +145,7 @@ var data = data
 
     public dropTable(): string{
 
-    var sqlStatement: string = sqlStrings!.DROP_TABLE +tableName;
+    var sqlStatement: string = sqlStrings!.DROP_TABLE +this.tableName;
         
         
 ;
@@ -167,7 +167,7 @@ var data = data
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tableName +DROPPED_SUCCESS;
+                        return tableName +this.DROPPED_SUCCESS;
     
 
                 //: 

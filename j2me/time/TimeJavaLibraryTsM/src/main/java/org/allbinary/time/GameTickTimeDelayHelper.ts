@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,16 +50,16 @@ export class GameTickTimeDelayHelper
 public constructor (){
 
             super();
-            this.startTime= System.currentTimeMillis();
+        this.startTime= System.currentTimeMillis();
     
-this.lastStartTime= startTime;
+this.lastStartTime= this.startTime;
     
 }
 
 public constructor (startTime: number){
 
             super();
-                //var startTime = startTime
+            //var startTime = startTime
 this.startTime= startTime;
     
 this.lastStartTime= 0;

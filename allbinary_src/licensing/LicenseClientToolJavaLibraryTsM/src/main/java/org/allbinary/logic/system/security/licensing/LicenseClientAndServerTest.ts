@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
 public constructor (options: string[]){
 
             super();
-            var options = options
+        var options = options
 LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
@@ -125,7 +128,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
         
 index < options.length; index++)
         {
-vector.add(options[index]!);
+this.vector.add(options[index]!);
     
 }
 
@@ -166,7 +169,7 @@ vector.add(options[index]!);
                                 )
                         
                                     {
-                                    vector.add(line);
+                                    this.vector.add(line);
     
 
                                     }
@@ -227,7 +230,7 @@ vector.add(options[index]!);
 ;
     
 
-    var size: number = vector.size()!;
+    var size: number = this.vector.size()!;
         
         
 ;
@@ -245,7 +248,7 @@ index < size; index++)
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = vector.get(index);
+    var serverName: string = this.vector.get(index);
 
                          as String;
         

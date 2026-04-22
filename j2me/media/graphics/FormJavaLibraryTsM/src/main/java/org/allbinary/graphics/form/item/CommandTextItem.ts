@@ -34,7 +34,10 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ export class CommandTextItem extends TextItem {
         
 
     private readonly command: Command
-public constructor (command: Command, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(command.getLabel(), layout, altText, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var command = command
+public constructor (command: Command, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(command.getLabel(), layout, altText, backgroundBasicColor, foregroundBasicColor);
+                    var command = command
 var layout = layout
 var altText = altText
 var backgroundBasicColor = backgroundBasicColor

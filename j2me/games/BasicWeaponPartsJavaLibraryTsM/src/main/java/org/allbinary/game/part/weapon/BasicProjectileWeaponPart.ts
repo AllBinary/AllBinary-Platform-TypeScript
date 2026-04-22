@@ -52,7 +52,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 
     private weaponLayerCircularStaticPool: WeaponLayerCircularPool
-public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool)                        
-
-                            : super(animationInterface){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool){
+            super(animationInterface);
+                        //var animationInterface = animationInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
 
@@ -79,12 +79,9 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
     
 }
 
-public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship)                        
-
-                            : super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
+            super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
+                        //var animationInterface = animationInterface
     //var sourceLayerInterface = sourceLayerInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
     //var weaponProperties = weaponProperties
@@ -108,7 +105,7 @@ var otherAngle = otherAngle
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
 
-    var weaponLayer: WeaponLayer = weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), angle.toInt(), otherAngle.toInt(), weaponProperties, scoreableInterface)!;
+    var weaponLayer: WeaponLayer = weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), angle, otherAngle, weaponProperties, scoreableInterface)!;
         
         
 ;

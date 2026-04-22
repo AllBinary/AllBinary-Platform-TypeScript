@@ -23,7 +23,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ export class BasicArrayList
     private currentIndex: number = 0;
         
         
-public constructor (size: number)                        
-
-                            : super(){
-
+public constructor (size: number){
             super();
-                //var size = size
+                        //var size = size
 
 
                             //For kotlin this is before the body of the constructor.
@@ -71,24 +71,21 @@ public constructor (size: number)
 
                                     }
                                 
-objectArray= new Array(size);
+this.objectArray= new Array(size);
     
 }
 
 public constructor (objectArray: any[]){
 
             super();
-                //var objectArray = objectArray
+            //var objectArray = objectArray
 this.objectArray= objectArray;
     
 }
 
-public constructor ()                        
-
-                            : this(7){
-
-            super();
-            
+public constructor (){
+            this(7);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -99,7 +96,7 @@ public constructor ()
     //var index = index
     //var element = element
 
-                        if(index > currentIndex || index < 0)
+                        if(index > this.currentIndex || index < 0)
                         
                                     {
                                     
@@ -114,7 +111,7 @@ stringBuffer!.appendint(index);
     
 stringBuffer!.append(SIZE);
     
-stringBuffer!.appendint(currentIndex);
+stringBuffer!.appendint(this.currentIndex);
     
 
 
@@ -123,7 +120,7 @@ stringBuffer!.appendint(currentIndex);
 
                                     }
                                 
-ensureCapacity(currentIndex +1);
+ensureCapacity(this.currentIndex +1);
     
 
 
@@ -142,9 +139,9 @@ currentIndex++;
 
     public add(anyType: any = {}): boolean{
     //var anyType = anyType
-ensureCapacity(currentIndex +1);
+ensureCapacity(this.currentIndex +1);
     
-objectArray[currentIndex++]= anyType;
+this.objectArray[currentIndex++]= anyType;
     
 
 
@@ -158,7 +155,7 @@ objectArray[currentIndex++]= anyType;
     public remove(index: number): any{
     //var index = index
 
-                        if(index >= currentIndex)
+                        if(index >= this.currentIndex)
                         
                                     {
                                     
@@ -173,7 +170,7 @@ stringBuffer!.appendint(index);
     
 stringBuffer!.append(SIZE);
     
-stringBuffer!.appendint(currentIndex);
+stringBuffer!.appendint(this.currentIndex);
     
 
 
@@ -183,7 +180,7 @@ stringBuffer!.appendint(currentIndex);
                                     }
                                 
 
-    var oldValue: any = objectArray[index]!;
+    var oldValue: any = this.objectArray[index]!;
         
         
 ;
@@ -199,7 +196,7 @@ stringBuffer!.appendint(currentIndex);
                         System.arraycopy(objectArray, index +1, objectArray, index, numMoved);
 
                         
-objectArray[--currentIndex]= 
+objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -228,10 +225,10 @@ objectArray[--currentIndex]=
     var index: number = 0;
         
         
-index < currentIndex; index++)
+index < this.currentIndex; index++)
         {
 
-                        if(objectArray[index] == 
+                        if(this.objectArray[index] == 
                                     null
                                 )
                         
@@ -257,7 +254,7 @@ index < currentIndex; index++)
 
                                     }
                                 
-objectArray[--currentIndex]= 
+objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -284,7 +281,7 @@ objectArray[--currentIndex]=
     var index: number = 0;
         
         
-index < currentIndex; index++)
+index < this.currentIndex; index++)
         {
 
                         if(anyType == objectArray[index] || anyType!.equals(objectArray[index]!))
@@ -311,7 +308,7 @@ index < currentIndex; index++)
 
                                     }
                                 
-objectArray[--currentIndex]= 
+objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -388,7 +385,7 @@ index < size; index++)
 
     public addAll2(list: BasicArrayList): boolean{
     //var list = list
-ensureCapacity(currentIndex +list.currentIndex);
+ensureCapacity(this.currentIndex +list.currentIndex);
     
 
     var listSize: number = list.currentIndex;
@@ -406,7 +403,7 @@ ensureCapacity(currentIndex +list.currentIndex);
         
 index < listSize; index++)
         {
-objectArray[currentIndex++]= list.objectArray[index]!;
+this.objectArray[currentIndex++]= list.objectArray[index]!;
     
 }
 
@@ -447,7 +444,7 @@ objectArray[currentIndex++]= list.objectArray[index]!;
         
 ;
     
-ensureCapacity(currentIndex +numSize);
+ensureCapacity(this.currentIndex +numSize);
     
 
 
@@ -471,7 +468,7 @@ currentIndex += numSize;
     public ensureCapacity(minSize: number){
     //var minSize = minSize
 
-    var oldCapacity: number = objectArray!.length
+    var oldCapacity: number = this.objectArray!.length
                 ;
         
         
@@ -482,7 +479,7 @@ currentIndex += numSize;
                         
                                     {
                                     
-    var newCapacity: number = ((oldCapacity *3) shr 1) +1;
+    var newCapacity: number = ((oldCapacity *3)>>1) +1;
         
         
 ;
@@ -490,7 +487,7 @@ currentIndex += numSize;
 
                         if(newCapacity < minSize)
                         newCapacity= minSize
-objectArray= arrayUtil!.copyOf(objectArray, newCapacity);
+this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
     
 
                                     }
@@ -500,15 +497,15 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity);
 
     public trimToSize(){
 
-    var oldCapacity: number = objectArray!.length
+    var oldCapacity: number = this.objectArray!.length
                 ;
         
         
 ;
     
 
-                        if(currentIndex < oldCapacity)
-                        objectArray= arrayUtil!.copyOf(objectArray, currentIndex)
+                        if(this.currentIndex < oldCapacity)
+                        this.objectArray= this.arrayUtil!.copyOf(this.objectArray, currentIndex)
 }
 
 
@@ -528,10 +525,10 @@ objectArray= arrayUtil!.copyOf(objectArray, newCapacity);
     var i: number = 0;
         
         
-i < currentIndex; i++)
+i < this.currentIndex; i++)
         {
 
-                        if(objectArray[i] == 
+                        if(this.objectArray[i] == 
                                     null
                                 )
                         
@@ -554,10 +551,10 @@ i < currentIndex; i++)
     var i: number = 0;
         
         
-i < currentIndex; i++)
+i < this.currentIndex; i++)
         {
 
-                        if(anyType!.equals(objectArray[i]!))
+                        if(anyType!.equals(this.objectArray[i]!))
                         
 
 
@@ -591,13 +588,13 @@ i < currentIndex; i++)
 
 
                         for (
-    var i: number = currentIndex -1;
+    var i: number = this.currentIndex -1;
         
         
 i >= 0; i--)
         {
 
-                        if(objectArray[i] == 
+                        if(this.objectArray[i] == 
                                     null
                                 )
                         
@@ -617,13 +614,13 @@ i >= 0; i--)
 
 
                         for (
-    var i: number = currentIndex -1;
+    var i: number = this.currentIndex -1;
         
         
 i >= 0; i--)
         {
 
-                        if(anyType!.equals(objectArray[i]!))
+                        if(anyType!.equals(this.objectArray[i]!))
                         
 
 
@@ -647,7 +644,7 @@ i >= 0; i--)
     public get(index: number): any{
     //var index = index
 
-                        if(index >= currentIndex)
+                        if(index >= this.currentIndex)
                         
                                     {
                                     
@@ -662,7 +659,7 @@ stringBuffer!.appendint(index);
     
 stringBuffer!.append(SIZE);
     
-stringBuffer!.appendint(currentIndex);
+stringBuffer!.appendint(this.currentIndex);
     
 
 
@@ -684,7 +681,7 @@ stringBuffer!.appendint(currentIndex);
     //var index = index
     //var element = element
 
-                        if(index >= currentIndex)
+                        if(index >= this.currentIndex)
                         
                                     {
                                     
@@ -699,7 +696,7 @@ stringBuffer!.appendint(index);
     
 stringBuffer!.append(SIZE);
     
-stringBuffer!.appendint(currentIndex);
+stringBuffer!.appendint(this.currentIndex);
     
 
 
@@ -714,7 +711,7 @@ stringBuffer!.appendint(currentIndex);
         
 ;
     
-objectArray[index]= element;
+this.objectArray[index]= element;
     
 
 
@@ -734,15 +731,15 @@ objectArray[index]= element;
     var i: number = 0;
         
         
-i < currentIndex; i++)
+i < this.currentIndex; i++)
         {
-objectArray[i]= 
+this.objectArray[i]= 
                                         null
                                     ;
     
 }
 
-currentIndex= 0;
+this.currentIndex= 0;
     
 }
 
@@ -783,7 +780,7 @@ currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(objectArray, currentIndex);
+                        return arrayUtil!.copyOf(this.objectArray, currentIndex);
 
                         ;
     
@@ -793,7 +790,7 @@ currentIndex= 0;
     public toArray(objectArray: any[]): any[]{
     //var objectArray = objectArray
 
-                        if(objectArray!.length < currentIndex)
+                        if(objectArray!.length < this.currentIndex)
                         
 
 
@@ -887,9 +884,9 @@ list.add(anyType);
     var index: number = 0;
         
         
-index < currentIndex; index++)
+index < this.currentIndex; index++)
         {
-stringBuffer!.append(objectArray[index]!.toString());
+stringBuffer!.append(this.objectArray[index]!.toString());
     
 stringBuffer!.append(COMMA_SEP);
     

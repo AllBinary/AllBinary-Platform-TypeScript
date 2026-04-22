@@ -55,7 +55,10 @@ import { ImageScaleUtil } from "../../../../org/allbinary/media/image/ImageScale
 
 
 
-        
+
+
+
+
 
 
 
@@ -127,13 +130,13 @@ export class AnimationFactorySpriteScaleUtil
                         
                                     {
                                     
-    var scaleX: number = (scaleWidth.toFloat()) /(width.toFloat());
+    var scaleX: number = (scaleWidth) /(width);
         
         
 ;
     
 
-    var scaleY: number = (scaleHeight.toFloat()) /(height.toFloat());
+    var scaleY: number = (scaleHeight) /(height);
         
         
 ;
@@ -142,7 +145,7 @@ export class AnimationFactorySpriteScaleUtil
                         if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
                         
                                     {
-                                    scaledImage= openGLUtil!.add(image);
+                                    scaledImage= this.openGLUtil!.add(image);
     
 sprite= spriteFactory!.create(scaledImage, width, height);
     
@@ -151,17 +154,17 @@ sprite= spriteFactory!.create(scaledImage, width, height);
                                 
                         else {
                             
-                        if(openGLESImageExclusionUtil!.isCustomScaling(image))
+                        if(this.openGLESImageExclusionUtil!.isCustomScaling(image))
                         
                                     {
                                     
-    var width2: number = j2seMath!.round((scaleWidth) -0.5f)!;
+    var width2: number = this.j2seMath!.round((scaleWidth) -0.5f)!;
         
         
 ;
     
 
-    var height2: number = j2seMath!.round((scaleHeight) -0.5f)!;
+    var height2: number = this.j2seMath!.round((scaleHeight) -0.5f)!;
         
         
 ;
@@ -178,7 +181,7 @@ sprite= spriteFactory!.create(scaledImage, width, height);
         
 ;
     
-scaleX= (by16Width.toFloat()) /width;
+scaleX= (by16Width) /width;
     
 
     var multiplesOf16Height: number = height2 /16;
@@ -192,7 +195,7 @@ scaleX= (by16Width.toFloat()) /width;
         
 ;
     
-scaleY= (by16Height.toFloat()) /height;
+scaleY= (by16Height) /height;
     
 
                         if(scaleWidth < width)
@@ -215,9 +218,9 @@ scaleY= (by16Height.toFloat()) /height;
 
                                     }
                                 
-scaledImage= imageScaleUtil!.createImage(imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
+scaledImage= this.imageScaleUtil!.createImage(this.imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
     
-sprite= spriteFactory!.create(scaledImage, (width *scaleX).toInt(), (height *scaleY).toInt());
+sprite= spriteFactory!.create(scaledImage, (width *scaleX), (height *scaleY));
     
 
                         }
@@ -226,7 +229,7 @@ sprite= spriteFactory!.create(scaledImage, (width *scaleX).toInt(), (height *sca
                                     }
                                 
                         else {
-                            scaledImage= openGLUtil!.add(image);
+                            scaledImage= this.openGLUtil!.add(image);
     
 sprite= spriteFactory!.create(scaledImage, width, height);
     

@@ -34,7 +34,10 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ export class AdjustedVectorAnimation extends VectorAnimation {
     private dx: number
 
     private dy: number
-public constructor (currentPoints: number[][][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(currentPoints, basicColor, animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(currentPoints, basicColor, animationBehavior);
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var dx = dx
     //var dy = dy
@@ -70,12 +70,9 @@ this.dy= dy;
     
 }
 
-public constructor (currentPoints: number[][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(currentPoints, basicColor, animationBehavior){
-
-            super();
-                //var currentPoints = currentPoints
+public constructor (currentPoints: number[][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(currentPoints, basicColor, animationBehavior);
+                        //var currentPoints = currentPoints
     //var basicColor = basicColor
     //var dx = dx
     //var dy = dy

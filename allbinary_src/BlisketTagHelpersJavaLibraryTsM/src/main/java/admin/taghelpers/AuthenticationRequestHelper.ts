@@ -85,7 +85,10 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -110,7 +113,7 @@ export class AuthenticationRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -123,7 +126,7 @@ this.request= pageContext!.getRequest();
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
@@ -190,13 +193,13 @@ this.request= httpServletRequest;
 
         try {
             
-    var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
+    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
 ;
     
 
-    var email: string = request.getParameter(UserData.MAINEMAIL)!;
+    var email: string = this.request.getParameter(UserData.MAINEMAIL)!;
         
         
 ;
@@ -315,25 +318,25 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 
         try {
             
-    var userName: string = request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
+    var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
         
         
 ;
     
 
-    var passwordString: string = request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
+    var passwordString: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
         
         
 ;
     
 
-    var newPassword: string = request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
+    var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
         
         
 ;
     
 
-    var newReenteredPassword: string = request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
+    var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
         
         
 ;
@@ -571,7 +574,7 @@ index < size; index++)
                         if(userInterface!.getRole()!.getBasicUserRole()!.equals(nextRole))
                         
                                     {
-                                    userInterface!.validateSession(weblisketSession as WeblisketSessionInterface);
+                                    userInterface!.validateSession(this.weblisketSession as WeblisketSessionInterface);
     
 this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME);
     

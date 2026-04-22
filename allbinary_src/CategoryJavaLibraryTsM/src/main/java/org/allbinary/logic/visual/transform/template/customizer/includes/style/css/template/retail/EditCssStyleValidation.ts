@@ -52,7 +52,10 @@ import { Node } from "../../../../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,26 +68,20 @@ export class EditCssStyleValidation extends CssStyleValidation implements Valida
 public constructor (){
 
             super();
-            }
+        }
 
-public constructor (document: Document)                        
-
-                            : super(document){
-
-            super();
-            var document = document
+public constructor (document: Document){
+            super(document);
+                    var document = document
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (hashMap: HashMap<any, any>)                        
-
-                            : super(hashMap){
-
-            super();
-            var hashMap = hashMap
+public constructor (hashMap: HashMap<any, any>){
+            super(hashMap);
+                    var hashMap = hashMap
 
 
                             //For kotlin this is before the body of the constructor.

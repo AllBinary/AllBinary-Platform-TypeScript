@@ -14,7 +14,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -31,7 +34,7 @@ export class SuperCrypt
 public constructor (key: number){
 
             super();
-            var key = key
+        var key = key
 }
 
 

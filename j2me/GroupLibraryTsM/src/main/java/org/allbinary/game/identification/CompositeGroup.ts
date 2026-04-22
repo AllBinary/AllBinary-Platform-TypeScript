@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class CompositeGroup
 public constructor (groupInterface: Group){
 
             super();
-                //var groupInterface = groupInterface
+            //var groupInterface = groupInterface
 this.groupInterface= groupInterface;
     
 }
@@ -120,7 +123,7 @@ this.list.add(groupInterface);
     public isInGroup(groupInterface: Group): boolean{
     //var groupInterface = groupInterface
 
-                        if(list.contains(groupInterface))
+                        if(this.list.contains(groupInterface))
                         
                                     {
                                     

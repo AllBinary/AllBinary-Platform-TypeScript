@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class OperatingSystemFactory
 private constructor (){
 
             super();
-            }
+        }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
@@ -91,7 +94,7 @@ private constructor (){
         try {
             
     var osString: string = new StringMaker().
-                            append("OperatingSystem Info: ")!.append(genericOperatingSystem!.toString())!.toString()!;
+                            append("OperatingSystem Info: ")!.append(this.genericOperatingSystem!.toString())!.toString()!;
         
         
 ;

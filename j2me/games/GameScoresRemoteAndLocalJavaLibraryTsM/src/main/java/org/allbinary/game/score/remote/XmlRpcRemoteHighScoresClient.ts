@@ -61,7 +61,10 @@ import { XmlRpcException } from "../../../../../org/apache/xmlrpc/XmlRpcExceptio
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class XmlRpcRemoteHighScoresClient extends XmlRpcAbeClient {
         
 
     private page: string
-public constructor (clientInfo: AbeClientInformationInterface, page: string, remoteMethod: string)                        
-
-                            : super(clientInfo, remoteMethod){
-
-            super();
-            var clientInfo = clientInfo
+public constructor (clientInfo: AbeClientInformationInterface, page: string, remoteMethod: string){
+            super(clientInfo, remoteMethod);
+                    var clientInfo = clientInfo
 var page = page
 var remoteMethod = remoteMethod
 
@@ -119,7 +119,7 @@ this.setServer(0);
         
 ;
     
-serverUrl= serverUrl!.substring(0, index +1) +page;
+serverUrl= serverUrl!.substring(0, index +1) +this.page;
     
 
     var stringBuffer: StringMaker = new StringMaker();

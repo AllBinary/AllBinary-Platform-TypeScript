@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class AbContext
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -94,7 +97,7 @@ this.pageContext= pageContext;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new WeblisketSession(propertiesHashMap, pageContext);
+                        return new WeblisketSession(this.propertiesHashMap, pageContext);
     
 }
 

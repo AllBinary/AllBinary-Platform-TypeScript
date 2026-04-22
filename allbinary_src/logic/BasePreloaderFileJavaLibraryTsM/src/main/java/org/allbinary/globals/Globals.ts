@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class Globals
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(classLoader: ClassLoader, pathString: string){

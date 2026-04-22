@@ -40,7 +40,10 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
     //var relativeRelationship = relativeRelationship
-basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
+this.basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
     
 
 

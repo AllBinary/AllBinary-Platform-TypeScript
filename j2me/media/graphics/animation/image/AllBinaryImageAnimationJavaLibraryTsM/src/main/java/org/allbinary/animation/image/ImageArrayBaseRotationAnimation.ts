@@ -61,7 +61,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,12 +86,9 @@ export class ImageArrayBaseRotationAnimation extends RotationAnimation {
     private currentImage: Image
 
     private totalFrames: number= 0
-public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior)                        
-
-                            : super(angleInfo, animationBehavior){
-
-            super();
-                //var originalImageArray = originalImageArray
+public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
+            super(angleInfo, animationBehavior);
+                        //var originalImageArray = originalImageArray
     //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior
 
@@ -97,7 +97,7 @@ public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animation
                     
 this.originalImageArray= originalImageArray;
     
-this.setImageArray(imageModifierUtil!.getImageArray(originalImageArray));
+this.setImageArray(this.imageModifierUtil!.getImageArray(originalImageArray));
     
 this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
     
@@ -126,7 +126,7 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
                                     {
                                     super.setAlpha(alpha);
     
-imageModifierUtil!.reset();
+this.imageModifierUtil!.reset();
     
 
     var index: number = this.circularIndexUtil!.getIndex()!;
@@ -134,7 +134,7 @@ imageModifierUtil!.reset();
         
 ;
     
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
 
                                     }
@@ -151,7 +151,7 @@ super.nextRotation();
         
 ;
     
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
 this.currentImage= this.imageArray[index]!;
     
@@ -167,7 +167,7 @@ super.previousRotation();
         
 ;
     
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
 this.currentImage= this.imageArray[index]!;
     
@@ -184,7 +184,7 @@ super.setFrame(index2);
         
 ;
     
-imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
+this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
     
 this.currentImage= this.imageArray[index]!;
     

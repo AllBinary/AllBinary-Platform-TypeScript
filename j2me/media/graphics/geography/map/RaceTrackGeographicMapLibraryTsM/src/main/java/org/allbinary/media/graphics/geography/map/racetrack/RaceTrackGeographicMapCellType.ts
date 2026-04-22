@@ -34,7 +34,10 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ export class RaceTrackGeographicMapCellType extends GeographicMapCellType {
     public readonly name: string
 
     private readonly travelCost: number
-public constructor (type: number, travelCost: number)                        
-
-                            : super(type){
-
-            super();
-                //var type = type
+public constructor (type: number, travelCost: number){
+            super(type);
+                        //var type = type
     //var travelCost = travelCost
 
 
@@ -69,12 +69,9 @@ this.name= commonStrings!.UNKNOWN;
     
 }
 
-public constructor (name: string, type: number, travelCost: number)                        
-
-                            : super(type){
-
-            super();
-                //var name = name
+public constructor (name: string, type: number, travelCost: number){
+            super(type);
+                        //var name = name
     //var type = type
     //var travelCost = travelCost
 
@@ -87,12 +84,9 @@ this.travelCost= travelCost;
     
 }
 
-public constructor (name: string, type: number, travelCost: number, reset: number)                        
-
-                            : super(type, reset){
-
-            super();
-                //var name = name
+public constructor (name: string, type: number, travelCost: number, reset: number){
+            super(type, reset);
+                        //var name = name
     //var type = type
     //var travelCost = travelCost
     //var reset = reset

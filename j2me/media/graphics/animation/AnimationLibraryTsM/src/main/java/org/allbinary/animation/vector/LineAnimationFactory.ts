@@ -40,7 +40,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class LineAnimationFactory
 public constructor (basicColor: BasicColor){
 
             super();
-            var basicColor = basicColor
+        var basicColor = basicColor
 this.basicColor= basicColor;
     
 }

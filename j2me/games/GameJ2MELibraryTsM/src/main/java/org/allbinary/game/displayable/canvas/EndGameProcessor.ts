@@ -40,7 +40,10 @@ import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullP
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class EndGameProcessor extends Processor {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 this.gameCanvas= gameCanvas;
     
 }
@@ -73,7 +76,7 @@ this.gameCanvas= gameCanvas;
                         
                                     {
                                     
-                        if(this.gameCanvas!.getGameStateTimeHelper()!.isElapsed(WAIT))
+                        if(this.gameCanvas!.getGameStateTimeHelper()!.isElapsed(this.WAIT))
                         
                                     {
                                     

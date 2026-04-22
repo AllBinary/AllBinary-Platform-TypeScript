@@ -34,7 +34,10 @@ import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ var max = max
 private constructor (index: number, size: number){
 
             super();
-            var index = index
+        var index = index
 var size = size
 this.setSize(size);
     
@@ -97,7 +100,7 @@ this.setIndex(index);
 private constructor (size: number){
 
             super();
-            var size = size
+        var size = size
 this.setSize(size);
     
 }

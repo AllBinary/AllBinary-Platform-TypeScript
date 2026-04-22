@@ -39,7 +39,10 @@ import { MotionRectangleConstraints } from "../../../../../../../org/allbinary/i
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
 public constructor (){
 
             super();
-            this.setMinDimension(new Dimension(0, 0));
+        this.setMinDimension(new Dimension(0, 0));
     
 this.setMinArea(0);
     

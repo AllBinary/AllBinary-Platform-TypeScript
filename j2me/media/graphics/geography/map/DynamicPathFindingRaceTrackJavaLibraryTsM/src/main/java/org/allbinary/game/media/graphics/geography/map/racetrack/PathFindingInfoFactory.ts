@@ -84,7 +84,10 @@ import { PathFindingNodeCostInfoFactory } from "../../../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -126,7 +129,7 @@ instance= new PathFindingInfoFactory(new SimplePathFinderGraphVisitorFactory(1, 
 private constructor (pathFinderGraphVisitorFactoryInterface: PathFinderGraphVisitorFactoryBase, max: number){
 
             super();
-                //var pathFinderGraphVisitorFactoryInterface = pathFinderGraphVisitorFactoryInterface
+            //var pathFinderGraphVisitorFactoryInterface = pathFinderGraphVisitorFactoryInterface
     //var max = max
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -166,7 +169,7 @@ this.init(geographicMapInterface, pathFindingInfo, mapArray);
     
 this.basicGeographicMapPathFinder!.init(geographicMapInterface, basicGeographicMapGraph, pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface));
     
-pathFindingInfo!.setPathFinder(basicGeographicMapPathFinder);
+pathFindingInfo!.setPathFinder(this.basicGeographicMapPathFinder);
     
 
 
@@ -267,7 +270,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
     var index: number = 0;
         
         
-index < MAX_DIRECTIONS; index++)
+index < this.MAX_DIRECTIONS; index++)
         {
 row= basicGeographicMapUtil!.getBorderingRow(index, cellPosition);
     

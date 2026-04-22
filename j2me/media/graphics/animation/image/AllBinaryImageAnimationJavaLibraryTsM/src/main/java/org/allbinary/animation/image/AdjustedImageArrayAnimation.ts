@@ -37,7 +37,10 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class AdjustedImageArrayAnimation extends ImageArrayAnimation {
     private dx: number= 0
 
     private dy: number= 0
-public constructor (imageArray: Image[], dx: number, dy: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(imageArray, animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], dx: number, dy: number, animationBehavior: AnimationBehavior){
+            super(imageArray, animationBehavior);
+                        //var imageArray = imageArray
     //var dx = dx
     //var dy = dy
     //var animationBehavior = animationBehavior

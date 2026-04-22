@@ -55,7 +55,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class CommandTextItemArrayFactory
 public constructor (visitorInterface: Visitor){
 
             super();
-                //var visitorInterface = visitorInterface
+            //var visitorInterface = visitorInterface
 this.visitorInterface= visitorInterface;
     
 }
@@ -90,7 +93,7 @@ var vector = vector
         
 ;
     
-list.clear();
+this.list.clear();
     
 
     var textItem: CommandTextItem
@@ -161,7 +164,7 @@ command= vector.elementAt(index);
                                     {
                                     textItem= new CommandTextItem(command, ImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor);
     
-list.add(textItem);
+this.list.add(textItem);
     
 
                                     }
@@ -172,7 +175,7 @@ list.add(textItem);
 }
 
 
-    var textItemArray: CustomItem[] = new Array(list.size());
+    var textItemArray: CustomItem[] = new Array(this.list.size());
         
         
 ;
@@ -194,7 +197,7 @@ list.add(textItem);
         
 index < size2; index++)
         {
-textItemArray[index]= list.objectArray[index]! as CustomItem;
+textItemArray[index]= this.list.objectArray[index]! as CustomItem;
     
 }
 

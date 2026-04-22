@@ -40,7 +40,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class RTSLayerCompositePaintable extends Paintable {
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
 
             super();
-            var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
+        var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
 this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable;
     
 }
@@ -86,7 +89,7 @@ var rtsLayer = rtsLayer
                         
                                     {
                                     this.setUpgradeCost(new StringMaker().
-                            append(UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
+                            append(this.UPGRADE)!.appendint(rtsLayer!.getUpgradeCost())!.toString());
     
 
                                     }
@@ -102,7 +105,7 @@ var rtsLayer = rtsLayer
                         
                                     {
                                     this.setDownGradeCost(new StringMaker().
-                            append(DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
+                            append(this.DOWNGRADE)!.appendint(rtsLayer!.getDowngradeCost())!.toString());
     
 
                                     }

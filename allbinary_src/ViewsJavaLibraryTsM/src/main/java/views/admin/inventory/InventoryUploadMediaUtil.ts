@@ -73,7 +73,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -134,7 +137,7 @@ export class InventoryUploadMediaUtil
 public constructor (storeFrontInterface: StoreFrontInterface, itemInterface: ItemInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 var itemInterface = itemInterface
 this.storeFrontInterface= storeFrontInterface;
     
@@ -183,9 +186,9 @@ var mediaData = mediaData
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
     
-stringBuffer!.append(storeFrontInterface!.getCurrentHostNamePath());
+stringBuffer!.append(this.storeFrontInterface!.getCurrentHostNamePath());
     
-stringBuffer!.append(itemInterface!.getCategory());
+stringBuffer!.append(this.itemInterface!.getCategory());
     
 
     var fullPath: string = stringBuffer!.toString()!;
@@ -389,7 +392,7 @@ mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), full
                                 
                         else {
                             
-    var smallImageFile: AbFile = new AbFile(itemInterface!.getSmallImage());
+    var smallImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
         
         
 ;
@@ -399,7 +402,7 @@ smallImageFile!.createNewFile();
 fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
-    var mediumImageFile: AbFile = new AbFile(itemInterface!.getMediumImage());
+    var mediumImageFile: AbFile = new AbFile(this.itemInterface!.getMediumImage());
         
         
 ;
@@ -409,7 +412,7 @@ smallImageFile!.createNewFile();
 fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
-    var largeImageFile: AbFile = new AbFile(itemInterface!.getSmallImage());
+    var largeImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
         
         
 ;
@@ -475,7 +478,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(fileName);
     
-stringBuffer!.append(SMALL);
+stringBuffer!.append(this.SMALL);
     
 stringBuffer!.append(END);
     
@@ -491,7 +494,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(fileName);
     
-stringBuffer!.append(MEDIUM);
+stringBuffer!.append(this.MEDIUM);
     
 stringBuffer!.append(END);
     
@@ -503,7 +506,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(fileName);
     
-stringBuffer!.append(LARGE);
+stringBuffer!.append(this.LARGE);
     
 stringBuffer!.append(END);
     

@@ -31,7 +31,10 @@ import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/Fo
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ export class ImmutableBasicArrayList extends BasicArrayList {
         
 
     private readonly name: string
-public constructor (name: string, size: number)                        
-
-                            : super(size){
-
-            super();
-                //var name = name
+public constructor (name: string, size: number){
+            super(size);
+                        //var name = name
     //var size = size
 
 

@@ -91,7 +91,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,12 +110,9 @@ export class ShippingMethodsView extends HttpStoreComponentView implements DomNo
     private shippingMethods: ShippingMethods
 
     private storeFrontInterface: StoreFrontInterface
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

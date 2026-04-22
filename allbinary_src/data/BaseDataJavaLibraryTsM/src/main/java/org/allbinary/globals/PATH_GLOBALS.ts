@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class PATH_GLOBALS
 private constructor (){
 
             super();
-            
+        
     var stringBuffer: StringMaker = new StringMaker();
         
         
@@ -84,7 +87,7 @@ this.DATA_PATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(DATA_PATH);
+stringBuffer!.append(this.DATA_PATH);
     
 stringBuffer!.append(CommonStrings.getInstance()!.INIT);
     
@@ -94,7 +97,7 @@ this.INIT_PATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(DATA_PATH);
+stringBuffer!.append(this.DATA_PATH);
     
 stringBuffer!.append("log");
     
@@ -104,7 +107,7 @@ this.LOG_PATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(DATA_PATH);
+stringBuffer!.append(this.DATA_PATH);
     
 stringBuffer!.append("backup");
     
@@ -114,7 +117,7 @@ this.BACKUP_PATH= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(INIT_PATH);
+stringBuffer!.append(this.INIT_PATH);
     
 stringBuffer!.append("views");
     

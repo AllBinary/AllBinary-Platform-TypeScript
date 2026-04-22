@@ -46,7 +46,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -206,7 +209,7 @@ logConfigType= availableLogConfigTypes!.get(index);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

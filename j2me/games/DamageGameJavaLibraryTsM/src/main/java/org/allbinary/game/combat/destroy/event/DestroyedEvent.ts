@@ -46,7 +46,10 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class DestroyedEvent extends AllBinaryEventObject {
     private allBinaryLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor (combatGameCanvas: AllBinaryGameCanvas)                        
-
-                            : super(DestroyedEventHandler.getInstance()){
-
-            super();
-            var combatGameCanvas = combatGameCanvas
+public constructor (combatGameCanvas: AllBinaryGameCanvas){
+            super(DestroyedEventHandler.getInstance());
+                    var combatGameCanvas = combatGameCanvas
 
 
                             //For kotlin this is before the body of the constructor.

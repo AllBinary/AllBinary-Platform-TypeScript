@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { ViewPosition } from "./ViewPosition.js";
 
 export class StaticViewPosition extends ViewPosition {
         
-public constructor (x: number, y: number, z: number)                        
-
-                            : super(x, y, z){
-
-            super();
-            var x = x
+public constructor (x: number, y: number, z: number){
+            super(x, y, z);
+                    var x = x
 var y = y
 var z = z
 

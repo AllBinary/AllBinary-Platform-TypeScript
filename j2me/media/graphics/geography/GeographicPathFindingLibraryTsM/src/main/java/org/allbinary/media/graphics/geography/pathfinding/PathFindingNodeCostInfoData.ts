@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class PathFindingNodeCostInfoData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public MAX_TOTAL_COST: number = Integer.MAX_VALUE;

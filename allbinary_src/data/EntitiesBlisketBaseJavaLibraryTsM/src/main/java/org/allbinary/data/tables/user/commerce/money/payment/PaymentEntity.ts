@@ -78,12 +78,17 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentEntityInterface } from "./PaymentEntityInterface.js";
+
 export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {
         
 
@@ -94,16 +99,13 @@ export class PaymentEntity extends AbSqlBean implements PaymentEntityInterface {
     private readonly tableName: string = "payment";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -130,7 +133,7 @@ javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getHelpSet(filePath: string): HelpSet{
@@ -213,9 +216,9 @@ var helpSet = helpSet
         
 ;
     
-helpBroker!.setLocation(point);
+helpBroker!.setLocation(this.point);
     
-helpBroker!.setSize(dimension);
+helpBroker!.setSize(this.dimension);
     
 new CSH.DisplayHelpFromSource(helpBroker).
                             actionPerformed(contextSensitiveHelpActionEvent);

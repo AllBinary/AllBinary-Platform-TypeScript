@@ -34,7 +34,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class NoHighScoresFactory extends HighScoresBase {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
@@ -81,7 +84,7 @@ private constructor (){
     //var highScoresResultsListener = highScoresResultsListener
 this.logUtil!.putF("Getting No HighScores", this, "fetchHighScores");
     
-highScoresResultsListener!.setHighScoresArray(NO_HIGH_SCORES);
+highScoresResultsListener!.setHighScoresArray(this.NO_HIGH_SCORES);
     
 }
 

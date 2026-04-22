@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class BasicGameResources
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public init(ROOT: string, SIZE: string[]){

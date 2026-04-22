@@ -100,7 +100,10 @@ import { Node } from "../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -136,7 +139,7 @@ export class CategoryRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
         try {

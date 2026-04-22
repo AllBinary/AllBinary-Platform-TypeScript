@@ -67,7 +67,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class CustomTextBox extends GameCommandCanvas {
         
 
     private readonly textFieldItem: TextFieldItem
-public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : this(cmdListener, label, text, maxSize, constraints, Font.getDefaultFont(), backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            this(cmdListener, label, text, maxSize, constraints, Font.getDefaultFont(), backgroundBasicColor, foregroundBasicColor);
+                        //var cmdListener = cmdListener
     //var label = label
     //var text = text
     //var maxSize = maxSize
@@ -97,12 +97,9 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
                     
 }
 
-public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(cmdListener, label, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(cmdListener, label, backgroundBasicColor, foregroundBasicColor);
+                        //var cmdListener = cmdListener
     //var label = label
     //var text = text
     //var maxSize = maxSize
@@ -191,7 +188,7 @@ this.keyRepeated(keyCode, 0);
 ;
     
 
-    var input: Input = inputFactory!.getInstance(keyCode)!;
+    var input: Input = this.inputFactory!.getInstance(keyCode)!;
         
         
 ;
@@ -258,7 +255,7 @@ super.paint(graphics);
     //var graphics = graphics
     //var x = x
     //var y = y
-textFieldItem!.paint(graphics, x, y);
+this.textFieldItem!.paint(graphics, x, y);
     
 }
 

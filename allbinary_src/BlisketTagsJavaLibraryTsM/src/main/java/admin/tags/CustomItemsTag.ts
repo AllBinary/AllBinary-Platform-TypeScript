@@ -34,7 +34,10 @@ import { CustomItemsRequestHelperFactory } from "../../admin/taghelpers/CustomIt
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class CustomItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new CustomItemsHelperFactory());
+        this.setTagHelperFactory(new CustomItemsHelperFactory());
     
 this.setTagRequestHelperFactory(new CustomItemsRequestHelperFactory());
     

@@ -64,7 +64,10 @@ import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,13 +90,13 @@ export class PaymentGatewayHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
         try {
             this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-httpServletRequest= pageContext!.getRequest();
+this.httpServletRequest= pageContext!.getRequest();
 
                          as HttpServletRequest;
     
@@ -126,7 +129,7 @@ this.portion= new Portion(hashMap);
         try {
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(httpServletRequest)!;
+                            getInstance(this.httpServletRequest)!;
         
         
 ;
@@ -191,7 +194,7 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
         try {
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(httpServletRequest)!;
+                            getInstance(this.httpServletRequest)!;
         
         
 ;
@@ -279,7 +282,7 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
         try {
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
-                            getInstance(httpServletRequest)!;
+                            getInstance(this.httpServletRequest)!;
         
         
 ;

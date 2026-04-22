@@ -31,7 +31,10 @@ import { Globals } from "../../../org/allbinary/globals/Globals.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ Globals.init(classLoader, pathString);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

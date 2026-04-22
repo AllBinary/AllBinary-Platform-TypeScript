@@ -40,7 +40,10 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,12 +51,9 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
         
 export class OptimizedGameInputLayerProcessorForCollidableLayer extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new OptimizedGameInputLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new OptimizedGameInputLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

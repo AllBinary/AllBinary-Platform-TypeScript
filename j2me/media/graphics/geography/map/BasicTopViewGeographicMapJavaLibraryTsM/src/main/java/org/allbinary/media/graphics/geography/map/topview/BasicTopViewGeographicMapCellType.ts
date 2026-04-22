@@ -51,7 +51,10 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class BasicTopViewGeographicMapCellType
 public constructor (name: string, type: number, cost: number){
 
             super();
-                //var name = name
+            //var name = name
     //var type = type
     //var cost = cost
 
@@ -105,7 +108,7 @@ this.types[0]= type;
 public constructor (name: string, types: number[], cost: number){
 
             super();
-                //var name = name
+            //var name = name
     //var types = types
     //var cost = cost
 
@@ -159,7 +162,7 @@ this.cost= cost;
 public constructor (name: string, types: BasicArrayList, cost: number){
 
             super();
-                //var name = name
+            //var name = name
     //var types = types
     //var cost = cost
 
@@ -259,7 +262,7 @@ this.types= typeArray;
 index < size; index++)
         {
 
-                        if(types[index] == type)
+                        if(this.types[index] == type)
                         
                                     {
                                     
@@ -300,7 +303,7 @@ index < size; index++)
 ;
     
 
-    var size: number = types.length
+    var size: number = this.types.length
                 ;
         
         
@@ -316,7 +319,7 @@ index < size; index++)
         
 index < size; index++)
         {
-stringMaker!.appendint(types[index]!)!.append(CommonSeps.getInstance()!.COMMA);
+stringMaker!.appendint(this.types[index]!)!.append(CommonSeps.getInstance()!.COMMA);
     
 }
 

@@ -39,7 +39,10 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,18 +50,17 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
         
 import { MeteredGameObject } from "./MeteredGameObject.js";
 
+import { MagicGameObjectInterface } from "./MagicGameObjectInterface.js";
+
 export class MagicGameObject extends MeteredGameObject implements MagicGameObjectInterface {
         
 
     private readonly MP_LABEL: string = "MP:";
         
         
-public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object)                        
-
-                            : super(bufferedImage, minX, maxX, y){
-
-            super();
-            var bufferedImage = bufferedImage
+public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object){
+            super(bufferedImage, minX, maxX, y);
+                    var bufferedImage = bufferedImage
 var minX = minX
 var maxX = maxX
 var y = y
@@ -78,7 +80,7 @@ var y = y
     
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
-stringBuffer!.append(MP_LABEL);
+stringBuffer!.append(this.MP_LABEL);
     
 stringBuffer!.append(super.toString());
     

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class ThemeData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "THEME_NAME";

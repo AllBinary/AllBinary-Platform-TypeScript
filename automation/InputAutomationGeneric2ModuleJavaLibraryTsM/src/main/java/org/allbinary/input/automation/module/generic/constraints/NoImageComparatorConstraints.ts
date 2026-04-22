@@ -42,7 +42,10 @@ import { ImageComparatorConstraints } from "../../../../../../../org/allbinary/i
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ import { Color } from "./Color.js";
 
 export class NoImageComparatorConstraints extends ImageComparatorConstraints {
         
-public constructor ()                        
-
-                            : super(1){
-
-            super();
-            
+public constructor (){
+            super(1);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

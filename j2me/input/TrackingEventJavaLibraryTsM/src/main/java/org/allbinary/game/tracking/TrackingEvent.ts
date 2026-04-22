@@ -37,7 +37,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,23 +54,17 @@ export class TrackingEvent extends AllBinaryEventObject {
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor ()                        
-
-                            : super(TrackingEventHandler.getInstance()){
-
-            super();
-            
+public constructor (){
+            super(TrackingEventHandler.getInstance());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (allBinaryLayerInterface: AllBinaryLayer)                        
-
-                            : super(allBinaryLayerInterface){
-
-            super();
-            var allBinaryLayerInterface = allBinaryLayerInterface
+public constructor (allBinaryLayerInterface: AllBinaryLayer){
+            super(allBinaryLayerInterface);
+                    var allBinaryLayerInterface = allBinaryLayerInterface
 
 
                             //For kotlin this is before the body of the constructor.

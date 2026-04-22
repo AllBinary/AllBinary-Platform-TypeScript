@@ -40,12 +40,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HighScoresInterface } from "./HighScoresInterface.js";
+
 import { HighScore } from "./HighScore.js";
 
 export class HighScores
@@ -69,7 +74,7 @@ export class HighScores
 public constructor (name: string, heading: string, columnTwoHeading: string){
 
             super();
-            var name = name
+        var name = name
 var heading = heading
 var columnTwoHeading = columnTwoHeading
 this.name= name;

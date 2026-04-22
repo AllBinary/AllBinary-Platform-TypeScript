@@ -40,7 +40,10 @@ import { LayerProcessor } from "../../../../../org/allbinary/layer/LayerProcesso
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { AllBinaryCollisionManager } from "./AllBinaryCollisionManager.js";
 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new CollidableInterfaceLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new CollidableInterfaceLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

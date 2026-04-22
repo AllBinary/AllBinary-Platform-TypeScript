@@ -46,7 +46,10 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,14 +70,14 @@ export class CustomLoaderHelper
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 }
 
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -129,7 +132,7 @@ URLGLOBALS.init(urlGlobals);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setWebappPath()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setWebappPath()", e);
     
 
                                     }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class ColorData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "COLOR_NAME";

@@ -52,7 +52,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class AnimationDamageFloaters extends DamageFloaters {
 public constructor (layerInterface: AllBinaryLayer, animationInterfaceArray: IndexedAnimation[], dx: number, dy: number){
 
             super();
-            var layerInterface = layerInterface
+        var layerInterface = layerInterface
 var animationInterfaceArray = animationInterfaceArray
 var dx = dx
 var dy = dy
@@ -118,7 +121,7 @@ var damage = damage
         
 ;
     
-animationInterfaceArray[i]!.setFrame(0);
+this.animationInterfaceArray[i]!.setFrame(0);
     
 this.circularIndexUtil!.next();
     
@@ -158,7 +161,7 @@ var graphics = graphics
 index < this.animationInterfaceArray!.length; index++)
         {
 
-    var animationInterface: IndexedAnimation = animationInterfaceArray[index]!;
+    var animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;
         
         
 ;
@@ -173,7 +176,7 @@ index < this.animationInterfaceArray!.length; index++)
         
 ;
     
-animationInterface!.paint(graphics, x +dx, y -delta +dy);
+animationInterface!.paint(graphics, x +this.dx, y -delta +this.dy);
     
 animationInterface!.nextFrame();
     

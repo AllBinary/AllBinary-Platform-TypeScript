@@ -34,7 +34,10 @@ import { PermissionItemsRequestHelperFactory } from "../../admin/taghelpers/Perm
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class PermissionItemsTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new PermissionItemsHelperFactory());
+        this.setTagHelperFactory(new PermissionItemsHelperFactory());
     
 this.setTagRequestHelperFactory(new PermissionItemsRequestHelperFactory());
     

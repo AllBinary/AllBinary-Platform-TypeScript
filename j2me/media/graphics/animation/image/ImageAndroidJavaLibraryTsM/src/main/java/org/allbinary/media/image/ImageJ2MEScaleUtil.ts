@@ -34,7 +34,10 @@ import { GameFeatureImageCacheFactory } from "../../../../org/allbinary/image/Ga
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class ImageJ2MEScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -88,11 +91,11 @@ index < images.length; index++)
         
 ;
     
-images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat() /2, image.getWidth();
+images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth();
 
-                        .toFloat(), height.toFloat(), image.getHeight();
+                        , height, image.getHeight();
 
-                        .toFloat(), false);
+                        , false);
     
 }
 
@@ -115,11 +118,11 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width.toFloat(), image.getWidth();
+                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width, image.getWidth();
 
-                        .toFloat(), height.toFloat(), image.getHeight();
+                        , height, image.getHeight();
 
-                        .toFloat(), false);
+                        , false);
 
                         ;
     

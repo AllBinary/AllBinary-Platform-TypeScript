@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ export class TransformTemplateCustomizerUtil
 private constructor (){
 
             super();
-            
+        
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
@@ -117,21 +120,21 @@ private constructor (){
         
 ;
     
-CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
+this.CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
     
-BODY_VIEWNAMEKEY= SPACE +BodyData.getInstance()!.VIEWNAMEKEY;
+this.BODY_VIEWNAMEKEY= SPACE +BodyData.getInstance()!.VIEWNAMEKEY;
     
-TITLE_VIEWNAMEKEY= SPACE +TitleData.getInstance()!.VIEWNAMEKEY;
+this.TITLE_VIEWNAMEKEY= SPACE +TitleData.getInstance()!.VIEWNAMEKEY;
     
-GLOBALS_NEW= GLOBALS2.NEW +SPACE;
+this.GLOBALS_NEW= GLOBALS2.NEW +SPACE;
     
-GLOBALS_INSERT= commonStrings!.INSERT +SPACE;
+this.GLOBALS_INSERT= commonStrings!.INSERT +SPACE;
     
-GLOBALS_DELETE= commonStrings!.DELETE +SPACE;
+this.GLOBALS_DELETE= commonStrings!.DELETE +SPACE;
     
-GLOBALS_EDIT= GLOBALS2.EDIT +SPACE;
+this.GLOBALS_EDIT= GLOBALS2.EDIT +SPACE;
     
-GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
+this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
     
 }
 
@@ -201,28 +204,28 @@ hashMap!.put(
     
 hashMap!.put(
                                                 [
-                                                    GLOBALS_INSERT;
+                                                    this.GLOBALS_INSERT;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    GLOBALS_DELETE;
+                                                    this.GLOBALS_DELETE;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    GLOBALS_EDIT;
+                                                    this.GLOBALS_EDIT;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    GLOBALS_UPDATE;
+                                                    this.GLOBALS_UPDATE;
         
         
                                                 ], ONE_EMPTY_STRING_ARRAY);

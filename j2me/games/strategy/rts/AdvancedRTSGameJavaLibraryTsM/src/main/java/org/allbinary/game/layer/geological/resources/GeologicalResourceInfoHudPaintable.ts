@@ -46,7 +46,10 @@ import { MyFont } from "../../../../../../org/allbinary/graphics/font/MyFont.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable
 public constructor (){
 
             super();
-            keyvalueDrawString= new KeyValueDrawCharArray(RESOURCES, this.textX);
+        this.keyvalueDrawString= new KeyValueDrawCharArray(RESOURCES, this.textX);
     
 }
 

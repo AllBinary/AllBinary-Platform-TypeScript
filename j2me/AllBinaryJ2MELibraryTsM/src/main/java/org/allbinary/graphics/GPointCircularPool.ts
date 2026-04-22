@@ -34,7 +34,10 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class GPointCircularPool extends BaseCircularPool {
 public constructor (size: number){
 
             super();
-            var size = size
+        var size = size
 this.circularIndexUtil= CircularIndexUtil.getInstance(size);
     
 this.OBJECT_ARRAY= new Array(size);

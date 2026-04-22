@@ -58,7 +58,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ export class OwnershipPaintable extends Paintable {
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;
@@ -104,7 +107,7 @@ private constructor (){
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-graphics.setColor(color);
+graphics.setColor(this.color);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
@@ -137,7 +140,7 @@ graphics.setColor(color);
 ;
     
 
-    var beginWidth: number = (font.stringWidth(COPYRIGHT) shr 1);
+    var beginWidth: number = (font.stringWidth(this.COPYRIGHT)>>1);
         
         
 ;
@@ -148,7 +151,7 @@ graphics.setColor(color);
         
 ;
     
-graphics.drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor);
+graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor);
     
 }
 
@@ -157,7 +160,7 @@ graphics.drawString(COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, ancho
 var basicColor = basicColor
 this.basicColor= basicColor;
     
-color= basicColor!.toInt();
+this.color= basicColor!.toInt();
     
 }
 

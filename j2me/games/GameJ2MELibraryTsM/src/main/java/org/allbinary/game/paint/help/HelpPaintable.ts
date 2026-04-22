@@ -49,7 +49,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class HelpPaintable extends Paintable {
 public constructor (title: string, backgroundBasicColor: BasicColor, basicColor: BasicColor){
 
             super();
-                //var title = title
+            //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var basicColor = basicColor
 this.TITLE= title;
@@ -82,7 +85,7 @@ this.basicColor= basicColor;
 public constructor (basicColor: BasicColor){
 
             super();
-                //var basicColor = basicColor
+            //var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -130,7 +133,7 @@ this.inputInfo= inputInfo;
 ;
     
 
-    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE) shr 1);
+    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);
         
         
 ;
@@ -146,7 +149,7 @@ graphics.setColor(this.basicColor!.toInt());
 graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
     
 
-    var size: number = inputInfo!.length
+    var size: number = this.inputInfo!.length
                 ;
         
         
@@ -162,9 +165,9 @@ graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
         
 index < size; index++)
         {
-beginWidth= (graphics.getFont()!.stringWidth(inputInfo[index]!) shr 1);
+beginWidth= (graphics.getFont()!.stringWidth(this.inputInfo[index]!)>>1);
     
-graphics.drawString(inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, anchor);
+graphics.drawString(this.inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, anchor);
     
 }
 

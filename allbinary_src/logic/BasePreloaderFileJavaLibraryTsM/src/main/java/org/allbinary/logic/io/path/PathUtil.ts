@@ -37,7 +37,10 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,19 +81,19 @@ export class PathUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     getExtensionIndex(filePath: string): number{
 var filePath = filePath
 
-    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(abPathData!.EXTENSION_SEP)!;
+    var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;
         
         
 ;
     
 
-    var indexOfLatDelimiter: number = filePath!.lastIndexOf(abPathData!.SEPARATORCHAR)!;
+    var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.abPathData!.SEPARATORCHAR)!;
         
         
 ;
@@ -286,7 +289,7 @@ var path = path
     isValidStart(path: string): boolean{
 var path = path
 
-                        if(path[0] == abPathData!.SEPARATORCHAR || path[0] == '.')
+                        if(path[0] == this.abPathData!.SEPARATORCHAR || path[0] == '.')
                         
                                     {
                                     
@@ -333,7 +336,7 @@ var path = path
                                     }
                                 
 
-                        if(path[path.length -1] == abPathData!.SEPARATORCHAR)
+                        if(path[path.length -1] == this.abPathData!.SEPARATORCHAR)
                         
                                     {
                                     
@@ -366,7 +369,7 @@ var path = path
                         )
                         
                                     {
-                                    path= abPathData!.SEPARATOR +path;
+                                    path= this.abPathData!.SEPARATOR +path;
     
 
                                     }
@@ -388,7 +391,7 @@ var path = path
                         )
                         
                                     {
-                                    path= path +abPathData!.SEPARATOR;
+                                    path= path +this.abPathData!.SEPARATOR;
     
 
                                     }
@@ -445,7 +448,7 @@ var path = path
     public getNameFromPath(categoryPath: string): string{
 var categoryPath = categoryPath
 
-    var endIndex: number = categoryPath!.lastIndexOf(abPathData!.SEPARATOR)!;
+    var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
         
         
 ;
@@ -454,7 +457,7 @@ var categoryPath = categoryPath
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= categoryPath!.lastIndexOf(filePathData!.SEPARATORCHAR);
+                                    endIndex= categoryPath!.lastIndexOf(this.filePathData!.SEPARATORCHAR);
     
 
                                     }
@@ -513,7 +516,7 @@ var categoryPath = categoryPath
     public removeNameFromPath(path: string): AbPath{
 var path = path
 
-    var endIndex: number = path.lastIndexOf(abPathData!.SEPARATOR)!;
+    var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;
         
         
 ;
@@ -522,7 +525,7 @@ var path = path
                         if(endIndex < 0)
                         
                                     {
-                                    endIndex= path.lastIndexOf(filePathData!.SEPARATORCHAR);
+                                    endIndex= path.lastIndexOf(this.filePathData!.SEPARATORCHAR);
     
 
                                     }

@@ -46,13 +46,18 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { CategoryPrivateTree } from "./CategoryPrivateTree.js";
+
+import { CategoryModifierTreeInterface } from "./CategoryModifierTreeInterface.js";
 
 export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {
         
@@ -68,12 +73,9 @@ export class CategoryModifierTree extends CategoryPrivateTree implements Categor
     private readonly directory: Directory = Directory.getInstance()!;
         
         
-public constructor (categoryFactoryInterface: CategoryFactoryInterface)                        
-
-                            : super(categoryFactoryInterface){
-
-            super();
-            var categoryFactoryInterface = categoryFactoryInterface
+public constructor (categoryFactoryInterface: CategoryFactoryInterface){
+            super(categoryFactoryInterface);
+                    var categoryFactoryInterface = categoryFactoryInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -82,7 +84,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "CategoryModifierTree(CategoryFactoryInterface categoryFactoryInterface)");
     
 
                                     }

@@ -129,13 +129,22 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { JPanel } from "./JPanel.js";
+
+import { MouseListener } from "./MouseListener.js";
+
+import { MouseMotionListener } from "./MouseMotionListener.js";
+
+import { KeyListener } from "./KeyListener.js";
 
 import { Dimension } from "./Dimension.js";
 
@@ -204,7 +213,7 @@ export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.M
 public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, x: number, y: number){
 
             super();
-            var workAreaJTreeJPanel = workAreaJTreeJPanel
+        var workAreaJTreeJPanel = workAreaJTreeJPanel
 var dimension = dimension
 var x = x
 var y = y
@@ -242,7 +251,7 @@ this.setCanvasSize(x, y);
 public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, canvasDom: CanvasDom){
 
             super();
-            var workAreaJTreeJPanel = workAreaJTreeJPanel
+        var workAreaJTreeJPanel = workAreaJTreeJPanel
 var dimension = dimension
 var canvasDom = canvasDom
 this.grid= new Grid(canvasDom!.getGrid());
@@ -262,7 +271,7 @@ this.setCanvasSize(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimensio
 this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap();
     
 
-    var graphicItemArray: any[] = graphicItemHashMap!.keys.toTypedArray()!;
+    var graphicItemArray: any[] = this.graphicItemHashMap!.keys.toTypedArray()!;
         
         
 ;
@@ -290,7 +299,7 @@ index < size; index++)
         
 ;
     
-canvasTreeNode!.add(graphicItemTreeNode);
+this.canvasTreeNode!.add(graphicItemTreeNode);
     
 }
 
@@ -312,7 +321,7 @@ this.workAreaJTreeJPanel!.repaint();
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    guiLog!.put("Constructor Error", this, "contructor", e);
+                                    this.guiLog!.put("Constructor Error", this, "contructor", e);
     
 
                                     }
@@ -639,7 +648,7 @@ index < size2; index++)
         
 ;
     
-canvasTreeNode!.add(newGraphicItem!.getTreeNode());
+this.canvasTreeNode!.add(newGraphicItem!.getTreeNode());
     
 this.getGraphicItemHashMap()!.put(newGraphicItem!.getTreeNode(), newGraphicItem);
     
@@ -846,7 +855,7 @@ var graphicItem = graphicItem
     
 this.getGraphicItemHashMap()!.put(graphicItemClone!.getTreeNode(), graphicItemClone);
     
-canvasTreeNode!.add(graphicItemClone!.getTreeNode());
+this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
     
 }
 

@@ -54,7 +54,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -571,7 +574,7 @@ node.appendChild(ModDomHelper.createTextNode(document, name, value));
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

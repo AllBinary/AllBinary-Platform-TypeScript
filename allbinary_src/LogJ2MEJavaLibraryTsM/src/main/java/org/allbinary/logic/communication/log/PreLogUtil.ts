@@ -37,7 +37,10 @@ import { LogFormatUtil } from "../../../../../org/allbinary/logic/communication/
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ console.log(PreLogUtil.LOG_SUCCESS + message);
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

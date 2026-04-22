@@ -160,7 +160,10 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
 
-        
+
+
+
+
 
 
 
@@ -202,12 +205,9 @@ export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseM
     private selectedRtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
         
         
-public constructor (gameCanvas: AllBinaryGameCanvas, geographicMapInterface: BasicGeographicMap, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface)                        
-
-                            : this(gameCanvas, inputList, playerInputId, towerInfoPaintable, rtsPlayerLayerInterface, layerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface, TouchButtonsBuilderFactory.NO_TOUCH_BUTTON_BUILDER_FACTORY){
-
-            super();
-                //var gameCanvas = gameCanvas
+public constructor (gameCanvas: AllBinaryGameCanvas, geographicMapInterface: BasicGeographicMap, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
+            this(gameCanvas, inputList, playerInputId, towerInfoPaintable, rtsPlayerLayerInterface, layerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface, TouchButtonsBuilderFactory.NO_TOUCH_BUTTON_BUILDER_FACTORY);
+                        //var gameCanvas = gameCanvas
     //var geographicMapInterface = geographicMapInterface
     //var inputList = inputList
     //var playerInputId = playerInputId
@@ -221,12 +221,9 @@ public constructor (gameCanvas: AllBinaryGameCanvas, geographicMapInterface: Bas
                     
 }
 
-public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface, touchButtonsBuilderFactory: TouchButtonsBuilderFactory)                        
-
-                            : super(gameCanvas, inputList, playerInputId, towerInfoPaintable, rtsPlayerLayerInterface, layerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface){
-
-            super();
-                //var gameCanvas = gameCanvas
+public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface, touchButtonsBuilderFactory: TouchButtonsBuilderFactory){
+            super(gameCanvas, inputList, playerInputId, towerInfoPaintable, rtsPlayerLayerInterface, layerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface);
+                        //var gameCanvas = gameCanvas
     //var inputList = inputList
     //var playerInputId = playerInputId
     //var towerInfoPaintable = towerInfoPaintable
@@ -299,7 +296,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
 ;
     
 
-                        if(motionGestureInput == PRESSED)
+                        if(motionGestureInput == this.PRESSED)
                         
                                     {
                                     
@@ -312,7 +309,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
                         if(this.getRtsPlayerLayerInterface()!.getCurrentScrollSelectionForm()!.isInForm(point))
                         
                                     {
-                                    isDragging= rtsFormInput!.processSticky(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point);
+                                    this.isDragging= rtsFormInput!.processSticky(this.getSelectedRtsLayer(), this.getRtsPlayerLayerInterface(), layerManager, point);
     
 
                                     }
@@ -477,19 +474,19 @@ rectY1= this.endPoint!.getY();
         
 ;
     
-stringBuffer!.append(AT);
+stringBuffer!.append(this.AT);
     
 stringBuffer!.appendint(rectX1);
     
-stringBuffer!.append(SPACE);
+stringBuffer!.append(this.SPACE);
     
 stringBuffer!.appendint(rectY1);
     
-stringBuffer!.append(SPACE);
+stringBuffer!.append(this.SPACE);
     
 stringBuffer!.appendint(rectX2);
     
-stringBuffer!.append(SPACE);
+stringBuffer!.append(this.SPACE);
     
 stringBuffer!.appendint(rectY2);
     
@@ -515,28 +512,28 @@ rtsLayer= rtsLayerList!.get(index);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(POSSIBLE);
+stringBuffer!.append(this.POSSIBLE);
     
 stringBuffer!.append(rtsLayer!.getName());
     
-stringBuffer!.append(SPACE);
+stringBuffer!.append(this.SPACE);
     
-stringBuffer!.append(AT);
+stringBuffer!.append(this.AT);
     
 stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth()));
     
-stringBuffer!.append(SPACE);
+stringBuffer!.append(this.SPACE);
     
 stringBuffer!.appendint((rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()));
     
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD);
     
 
-                        if(rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
+                        if(this.rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, rtsLayer!.getViewPosition()!.getX() +rtsLayer!.getHalfWidth(), rtsLayer!.getViewPosition()!.getY() +rtsLayer!.getHalfHeight()))
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(ADDING)!.append(rtsLayer!.getName())!.toString(), this, METHOD);
+                            append(this.ADDING)!.append(rtsLayer!.getName())!.toString(), this, METHOD);
     
 rtsLayer!.select();
     
@@ -617,7 +614,7 @@ index >= 0; index--)
 ;
     
 
-                        if(motionGestureInput == touchMotionGestureFactory!.PRESSED)
+                        if(motionGestureInput == this.touchMotionGestureFactory!.PRESSED)
                         
                                     {
                                     this.startPoint= point;
@@ -628,7 +625,7 @@ this.endPoint= point;
                                     }
                                 
                              else 
-                        if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
+                        if(motionGestureInput == this.touchMotionGestureFactory!.RELEASED)
                         
                                     {
                                     this.endPoint= point;
@@ -668,7 +665,7 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
 ;
     
 
-                        if(!isDragging)
+                        if(!this.isDragging)
                         
                                     {
                                     this.processSelectionBoxMotionInput(layerManager);
@@ -680,7 +677,7 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
                         if(endDrag)
                         
                                     {
-                                    isDragging= false;
+                                    this.isDragging= false;
     
 
                                     }
@@ -931,7 +928,7 @@ this.updatePaintable();
     
 multiSelectPaintable!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
-multiSelectPaintable!.update(list);
+this.multiSelectPaintable!.update(list);
     
 this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(multiSelectPaintable);
     

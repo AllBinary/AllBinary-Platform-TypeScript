@@ -43,7 +43,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class HighScore
 public constructor (id: number, name: string, gameInfo: GameInfo, score: number){
 
             super();
-            var id = id
+        var id = id
 var name = name
 var gameInfo = gameInfo
 var score = score
@@ -182,7 +185,7 @@ this.name= name;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(name)!.append(commonSeps!.COLON)!.appendlong(this.score)!.append(commonSeps!.FORWARD_SLASH)!.append(this.scoreString)!.toString();
+                            append(this.name)!.append(commonSeps!.COLON)!.appendlong(this.score)!.append(commonSeps!.FORWARD_SLASH)!.append(this.scoreString)!.toString();
 
                         ;
     

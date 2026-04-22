@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class LockableFormPaintableFactory extends ItemPaintableFactory {
 public constructor (lockedIndex: number){
 
             super();
-            var lockedIndex = lockedIndex
+        var lockedIndex = lockedIndex
 this.lockedIndex= lockedIndex;
     
 }

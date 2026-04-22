@@ -43,7 +43,10 @@ import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicT
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class DesktopBundle
 public constructor (){
 
             super();
-            
+        
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
         
         

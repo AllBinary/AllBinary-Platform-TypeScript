@@ -34,7 +34,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class NoPlayer extends BasicPlayer {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public close(){

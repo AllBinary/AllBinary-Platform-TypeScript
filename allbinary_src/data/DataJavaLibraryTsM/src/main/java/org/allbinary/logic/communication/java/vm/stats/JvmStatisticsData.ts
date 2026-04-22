@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,12 +89,9 @@ export class JvmStatisticsData
     public static readonly NUMBER_OF_THREADS: string = JVM_STATISTICS +"NUMBER_OF_THREADS";
         
         
-private constructor ()                        
-
-                            : super(){
-
+private constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -31,7 +31,10 @@ import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").
 
 
     private closeListenerInterface: CloseJDialogListenerInterface
-public constructor (parent: java.awt.Frame, modal: boolean, text: string)                        
-
-                            : super(parent, modal){
-
-            super();
-            var parent = parent
+public constructor (parent: java.awt.Frame, modal: boolean, text: string){
+            super(parent, modal);
+                    var parent = parent
 var modal = modal
 var text = text
 
@@ -103,7 +103,7 @@ this.closeListenerInterface= closeListenerInterface;
 public constructor (text: string){
 
             super();
-            var text = text
+        var text = text
 initComponents();
     
 this.textJLabel!.setText(text);
@@ -112,13 +112,13 @@ this.textJLabel!.setText(text);
 
 
     initComponents(){
-jButton1= new javax.swing.JButton();
+this.jButton1= new javax.swing.JButton();
     
-textJLabel= new javax.swing.JLabel();
+this.textJLabel= new javax.swing.JLabel();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-jButton1!.setText("OK");
+this.jButton1!.setText("OK");
     
 jButton1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -132,7 +132,7 @@ jButton1ActionPerformed(evt);
                                 }
                             );
     
-textJLabel!.setText("No Text Set");
+this.textJLabel!.setText("No Text Set");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());

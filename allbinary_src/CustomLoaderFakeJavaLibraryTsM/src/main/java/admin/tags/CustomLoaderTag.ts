@@ -52,7 +52,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class CustomLoaderTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setCommand(command: string){
@@ -136,13 +139,13 @@ URLGLOBALS.init(urlGlobals);
                                     }
                                 
 
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
                                     {
                                     
-                        if(command.compareTo(GLOBALS2.SET) == 0)
+                        if(this.command.compareTo(GLOBALS2.SET) == 0)
                         
                                     {
                                     this.setCustomLoaderWebappPath();

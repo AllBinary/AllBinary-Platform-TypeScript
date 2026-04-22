@@ -64,7 +64,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class PathAnimation extends Animation {
 public constructor (pathFindingLayer: PathFindingLayerInterface, linePathAnimation: LinePathAnimation){
 
             super();
-                //var pathFindingLayer = pathFindingLayer
+            //var pathFindingLayer = pathFindingLayer
     //var linePathAnimation = linePathAnimation
 this.pathFindingLayer= pathFindingLayer;
     
@@ -223,7 +226,7 @@ index < size -1; index++)
                                     {
                                     this.setBasicColorP(this.startColor);
     
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
                                     }
@@ -234,7 +237,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
                                     {
                                     this.setBasicColorP(this.endColor);
     
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
                                     }
@@ -242,7 +245,7 @@ this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.get
                         else {
                             this.setBasicColorP(this.middleColor);
     
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
                         }

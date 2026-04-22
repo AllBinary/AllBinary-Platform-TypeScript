@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class PlayerQueue
  constructor (max: number){
 
             super();
-            var max = max
+        var max = max
 this.max= max;
     
 }
@@ -85,12 +88,12 @@ var sound = sound
 
         try {
             
-                        if(!list.contains(sound);
+                        if(!this.list.contains(sound);
 
                         )
                         
                                     {
-                                    list.add(sound);
+                                    this.list.add(sound);
     
 
                                     }
@@ -122,10 +125,10 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
 ;
     
 
-                        if(list.size() > 0)
+                        if(this.list.size() > 0)
                         
                                     {
-                                    sound= list.remove(0);
+                                    sound= this.list.remove(0);
 
                          as Sound;
     
@@ -141,9 +144,9 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
                                     }
                                 
 
-        while(list.size() > max)
+        while(this.list.size > this.max)
         {
-list.remove(0);
+this.list.remove(0);
     
 }
 

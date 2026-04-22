@@ -64,7 +64,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -415,7 +418,7 @@ index < size; index++)
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): boolean{

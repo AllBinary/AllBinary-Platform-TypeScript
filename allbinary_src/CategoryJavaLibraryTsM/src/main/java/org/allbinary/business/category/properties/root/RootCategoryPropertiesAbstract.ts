@@ -52,12 +52,17 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RootCategoryPropertiesInterface } from "./RootCategoryPropertiesInterface.js";
+
 export class RootCategoryPropertiesAbstract
             extends Object
          implements RootCategoryPropertiesInterface {
@@ -73,7 +78,7 @@ export class RootCategoryPropertiesAbstract
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getKey(): any{
@@ -228,7 +233,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
         
 ;
     
-categoryVector!.add(category);
+categoryVector!.add(this.category);
     
 
 

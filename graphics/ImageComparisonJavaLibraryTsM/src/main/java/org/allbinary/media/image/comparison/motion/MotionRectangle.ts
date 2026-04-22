@@ -34,12 +34,17 @@ import { Vector } from "../../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Cloneable } from "./Cloneable.js";
+
 import { Rectangle } from "./Rectangle.js";
 
 export class MotionRectangle
@@ -53,7 +58,7 @@ export class MotionRectangle
 public constructor (rectangle: Rectangle){
 
             super();
-            var rectangle = rectangle
+        var rectangle = rectangle
 this.setRectangle(rectangle);
     
 this.setPixelDeltaVector(new Vector());

@@ -43,7 +43,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ import { TransformInfoData } from "./TransformInfoData.js";
 
 export class TransformInfoDomNodeView extends TransformInfoDomNode implements DomNodeInterface {
         
-public constructor (transformInfoInterface: TransformInfoInterface, mapping: string)                        
-
-                            : super(transformInfoInterface, mapping){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, mapping: string){
+            super(transformInfoInterface, mapping);
+                    var transformInfoInterface = transformInfoInterface
 var mapping = mapping
 
 
@@ -70,24 +70,18 @@ var mapping = mapping
                     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (name: string, mappedName: string)                        
-
-                            : super(name, mappedName){
-
-            super();
-            var name = name
+public constructor (name: string, mappedName: string){
+            super(name, mappedName);
+                    var name = name
 var mappedName = mappedName
 
 
@@ -95,13 +89,10 @@ var mappedName = mappedName
                     
 }
 
-public constructor (name: string)                        
-
-                            : super(name, 
-                            null){
-
-            super();
-            var name = name
+public constructor (name: string){
+            super(name, 
+                            null);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.

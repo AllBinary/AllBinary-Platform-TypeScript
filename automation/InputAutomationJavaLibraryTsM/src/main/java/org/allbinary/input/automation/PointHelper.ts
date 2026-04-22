@@ -31,7 +31,10 @@ import { awt } from "../../../../java/awt.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ var rectangle = rectangle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance(x.toInt(), y.toInt());
+                        return PointFactory.getInstance(x, y);
 
                         ;
     
@@ -79,7 +82,7 @@ var rectangle = rectangle
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

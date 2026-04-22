@@ -17,7 +17,10 @@ import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -29,12 +32,9 @@ import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class NullRotationAnimation extends RotationAnimation {
         
- constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(angleInfo, totalAngle, animationBehavior){
-
-            super();
-                //var angleInfo = angleInfo
+ constructor (angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
+            super(angleInfo, totalAngle, animationBehavior);
+                        //var angleInfo = angleInfo
     //var totalAngle = totalAngle
     //var animationBehavior = animationBehavior
 
@@ -43,12 +43,9 @@ export class NullRotationAnimation extends RotationAnimation {
                     
 }
 
- constructor (animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationBehavior = animationBehavior
+ constructor (animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationBehavior = animationBehavior
 
 
                             //For kotlin this is before the body of the constructor.

@@ -34,7 +34,10 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class ScreenRepaintProcessor extends Processor {
 public constructor (displayable: Displayable){
 
             super();
-            var displayable = displayable
+        var displayable = displayable
 this.displayable= displayable;
     
 }
@@ -58,7 +61,7 @@ this.displayable= displayable;
                 //@Throws(Error::class)
             
     public process(){
-ScreenRepaintUtil.repaint(displayable);
+ScreenRepaintUtil.repaint(this.displayable);
     
 }
 

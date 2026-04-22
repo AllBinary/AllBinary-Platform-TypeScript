@@ -40,7 +40,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,10 +63,10 @@ export class AllBinaryRendererBase3
     update(gl: GL10){
     //var gl = gl
 
-        while(list.size() > 0)
+        while(this.list.size() > 0)
         {
 
-    var openGLESImage: OpenGLESImage = list.remove(0);
+    var openGLESImage: OpenGLESImage = this.list.remove(0);
 
                          as OpenGLESImage;
         

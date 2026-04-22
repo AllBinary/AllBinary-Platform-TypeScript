@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class HighScoresCanvasInputProcessor extends PlayerGameInput {
         
 
     private readonly highScoresCanvas: HighScoresCanvas
-public constructor (highScoresCanvas: HighScoresCanvas)                        
-
-                            : super(new BasicArrayList(),  -1){
-
-            super();
-            var highScoresCanvas = highScoresCanvas
+public constructor (highScoresCanvas: HighScoresCanvas){
+            super(new BasicArrayList(),  -1);
+                    var highScoresCanvas = highScoresCanvas
 
 
                             //For kotlin this is before the body of the constructor.

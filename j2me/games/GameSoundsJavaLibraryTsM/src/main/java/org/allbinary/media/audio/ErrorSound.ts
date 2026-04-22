@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class ErrorSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/error.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/error.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

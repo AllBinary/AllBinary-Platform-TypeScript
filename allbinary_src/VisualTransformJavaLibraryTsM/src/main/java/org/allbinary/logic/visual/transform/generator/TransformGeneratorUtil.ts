@@ -55,7 +55,10 @@ import { StoreFileGenerator } from "../../../../../../org/allbinary/logic/visual
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class TransformGeneratorUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

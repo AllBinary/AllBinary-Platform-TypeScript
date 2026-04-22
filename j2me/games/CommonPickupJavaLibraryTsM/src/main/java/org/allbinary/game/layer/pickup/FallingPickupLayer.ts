@@ -40,7 +40,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,24 +57,18 @@ export class FallingPickupLayer extends PickupLayer implements TickableInterface
     private static readonly NAME: string = "FallingPickupLayer";
         
         
-public constructor (remoteInfo: RemoteInfo)                        
-
-                            : super(NAME, remoteInfo, new ViewPosition()){
-
-            super();
-            var remoteInfo = remoteInfo
+public constructor (remoteInfo: RemoteInfo){
+            super(NAME, remoteInfo, new ViewPosition());
+                    var remoteInfo = remoteInfo
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor ()                        
-
-                            : super(NAME, new ViewPosition()){
-
-            super();
-            
+public constructor (){
+            super(NAME, new ViewPosition());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

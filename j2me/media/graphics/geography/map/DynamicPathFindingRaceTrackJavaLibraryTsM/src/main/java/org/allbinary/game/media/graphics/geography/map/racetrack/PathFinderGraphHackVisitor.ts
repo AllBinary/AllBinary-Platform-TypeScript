@@ -67,7 +67,10 @@ import { PathFindingNode } from "../../../../../../../../org/allbinary/media/gra
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,12 +86,9 @@ export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E>
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number)                        
-
-                            : super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight){
-
-            super();
-                //var geographicMapInterface = geographicMapInterface
+public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
+            super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight);
+                        //var geographicMapInterface = geographicMapInterface
 var edgeMinimum = edgeMinimum
 var minPathWeight = minPathWeight
 var maxPathWeight = maxPathWeight

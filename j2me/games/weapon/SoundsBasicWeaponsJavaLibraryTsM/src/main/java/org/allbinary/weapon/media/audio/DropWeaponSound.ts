@@ -34,7 +34,10 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ export class DropWeaponSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/mine.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/mine.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

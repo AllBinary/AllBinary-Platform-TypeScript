@@ -49,24 +49,26 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CompoundAnimationInterface } from "./CompoundAnimationInterface.js";
+
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         
 
     private circularIndexUtil: CircularIndexUtil
 
     private animationInterfaceArray: Animation[]
-public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationInterfaceArray = animationInterfaceArray
     //var animationBehavior = animationBehavior
 
 
@@ -242,7 +244,7 @@ this.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterfaceArray;
+                        return this.animationInterfaceArray;
     
 }
 

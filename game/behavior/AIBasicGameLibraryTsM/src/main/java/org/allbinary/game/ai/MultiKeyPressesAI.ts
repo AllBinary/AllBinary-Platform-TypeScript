@@ -54,7 +54,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class MultiKeyPressesAI extends KeyPressesAI {
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
         
         
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(hashtable, ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(hashtable, ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -146,7 +146,7 @@ index < size; index++)
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.add(gameKeyEventFactory!.getInstance(this, key));
+                                    gameInput!.add(this.gameKeyEventFactory!.getInstance(this, key));
     
 
                                     }
@@ -177,7 +177,7 @@ index < size; index++)
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.addForRemoval(gameKeyEventFactory!.getInstance(this, key));
+                                    gameInput!.addForRemoval(this.gameKeyEventFactory!.getInstance(this, key));
     
 
                                     }

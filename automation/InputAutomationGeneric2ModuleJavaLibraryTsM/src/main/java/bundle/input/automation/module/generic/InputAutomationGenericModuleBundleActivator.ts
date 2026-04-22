@@ -34,7 +34,10 @@ import { InputAutomationModuleBundleActivator } from "../../../../../org/allbina
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class InputAutomationGenericModuleBundleActivator extends InputAutomation
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -67,12 +67,17 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
+
 import { Color } from "./Color.js";
 
 import { Points } from "./Points.js";
@@ -88,8 +93,6 @@ import { MouseEvent } from "./MouseEvent.js";
 import { MouseStrings } from "./MouseStrings.js";
 
 import { KeyEvent } from "./KeyEvent.js";
-
-import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class SelectionTool
             extends Object
@@ -126,7 +129,7 @@ export class SelectionTool
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
-            var canvasJPanel = canvasJPanel
+        var canvasJPanel = canvasJPanel
 this.canvasJPanel= canvasJPanel;
     
 }
@@ -508,7 +511,7 @@ var mouseEvent = mouseEvent
 var mouseEvent = mouseEvent
 var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
-this.logUtil!.putF(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED);
+this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED);
     
 this.startPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouseEvent!.getY());
     
@@ -521,7 +524,7 @@ this.endPoint= this.startPoint;
 var mouseEvent = mouseEvent
 var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
-this.logUtil!.putF(commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED);
+this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED);
     
 this.endPoint= PointFactory.getInstance()!.getInstance(mouseEvent!.getX(), mouseEvent!.getY());
     

@@ -34,7 +34,10 @@ import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class ImageRotationUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;

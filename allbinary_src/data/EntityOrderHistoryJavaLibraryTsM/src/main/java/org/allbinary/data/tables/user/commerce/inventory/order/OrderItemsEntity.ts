@@ -106,12 +106,17 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OrderItemsEntityInterface } from "./OrderItemsEntityInterface.js";
+
 export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInterface {
         
 
@@ -122,16 +127,13 @@ export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInter
     readonly tableName: string = "orderitems";
         
         
-public constructor ()                        
-
-                            : super(new HistoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new HistoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -603,7 +605,7 @@ basketReview!.addItem(item);
     
 stringBuffer!.append("CREATE TABLE ");
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(" (");
     

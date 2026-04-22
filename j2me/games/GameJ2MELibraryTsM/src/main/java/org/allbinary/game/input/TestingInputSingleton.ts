@@ -55,12 +55,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInputInterface } from "./GameInputInterface.js";
+
 import { InputFactory } from "./InputFactory.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
@@ -87,12 +92,9 @@ export class TestingInputSingleton extends AllBinaryGameLayer implements GameInp
     readonly inputProcessorArray: GameInputProcessor[] = new Array(InputFactory.getInstance()!.MAX);
         
         
-private constructor ()                        
-
-                            : super(RectangleFactory.SINGLETON){
-
-            super();
-            
+private constructor (){
+            super(RectangleFactory.SINGLETON);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

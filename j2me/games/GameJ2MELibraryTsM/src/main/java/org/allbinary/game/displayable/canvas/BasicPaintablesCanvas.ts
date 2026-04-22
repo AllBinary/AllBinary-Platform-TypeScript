@@ -46,7 +46,10 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ export class BasicPaintablesCanvas extends GameCommandCanvas {
     private readonly paintableArray: Paintable[]
 
     private readonly colorFillPaintable: ColorFillBasePaintable
-public constructor (cmdListener: CommandListener, name: string, allBinaryGameLayerManager: AllBinaryGameLayerManager, paintableArray: Paintable[])                        
-
-                            : super(cmdListener, name, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor()){
-
-            super();
-                //var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, name: string, allBinaryGameLayerManager: AllBinaryGameLayerManager, paintableArray: Paintable[]){
+            super(cmdListener, name, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
+                        //var cmdListener = cmdListener
     //var name = name
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
     //var paintableArray = paintableArray

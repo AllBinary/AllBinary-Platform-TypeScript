@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class GenericProfileActionScriptJPanel extends javax.swing.JPanel impleme
 public constructor (){
 
             super();
-            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 initComponents();
     
@@ -144,13 +147,13 @@ this.actionScriptJTree= actionScriptJTree;
 
 
     initComponents(){
-jScrollPane1= new javax.swing.JScrollPane();
+this.jScrollPane1= new javax.swing.JScrollPane();
     
-actionScriptJTree= new javax.swing.JTree();
+this.actionScriptJTree= new javax.swing.JTree();
     
 setLayout(new java.awt.GridLayout(1, 0));
     
-actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
+this.actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
     
 actionScriptJTree!.addMouseListener(new object: java.awt.event.MouseAdapter()
                                 {
@@ -170,9 +173,9 @@ actionScriptJTreeMouseReleased(evt);
                                 }
                             );
     
-jScrollPane1!.setViewportView(actionScriptJTree);
+this.jScrollPane1!.setViewportView(this.actionScriptJTree);
     
-add(jScrollPane1);
+add(this.jScrollPane1);
     
 }
 

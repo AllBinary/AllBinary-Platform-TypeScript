@@ -40,7 +40,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,21 +80,21 @@ export class GameKeyCompleteMotionGestureInputEventFactory
 
     public add(gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent){
 var gameKeyCompleteMotionGestureInputEvent = gameKeyCompleteMotionGestureInputEvent
-eventList!.add(gameKeyCompleteMotionGestureInputEvent);
+this.eventList!.add(gameKeyCompleteMotionGestureInputEvent);
     
 }
 
 
     public updateAll(){
 this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.appendint(eventList!.size())!.toString(), this, "updateAll");
+                            append(CommonLabels.getInstance()!.START_LABEL)!.appendint(this.eventList!.size())!.toString(), this, "updateAll");
     
 
 
 
 
                         for (
-    var index: number = eventList!.size() -1;
+    var index: number = this.eventList!.size() -1;
         
         
 index >= 0; index--)

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { Exception } from "./Exception.js";
 
 export class PaymentException extends Error {
         
-public constructor (error: string)                        
-
-                            : super(error){
-
-            super();
-            var error = error
+public constructor (error: string){
+            super(error);
+                    var error = error
 
 
                             //For kotlin this is before the body of the constructor.

@@ -31,7 +31,10 @@ import { File } from "../../../../../java/io/File.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,11 +69,11 @@ export class FilePathData
 private constructor (){
 
             super();
-            
+        
                         if(File.separatorChar == '\\')
                         
                                     {
-                                    SEPARATOR= File.separator +File.separator;
+                                    this.SEPARATOR= File.separator +File.separator;
     
 
                                     }

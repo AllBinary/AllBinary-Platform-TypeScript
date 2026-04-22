@@ -64,7 +64,10 @@ import { Node } from "../../../../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,14 +84,14 @@ export class CssStyleValidation extends Validation implements DomNodeInterface {
 public constructor (){
 
             super();
-            this.cssStyleElementVector= new Vector();
+        this.cssStyleElementVector= new Vector();
     
 }
 
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
     
 }
@@ -96,7 +99,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(d
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
     
 }
@@ -121,7 +124,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
                                     }
                                 
 
-    var size: number = cssStyleElementVector!.length!;
+    var size: number = this.cssStyleElementVector!.length!;
         
         
 ;
@@ -137,7 +140,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
 i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = cssStyleElementVector!.get(i);
+    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i);
 
                          as ValidationInterface;
         
@@ -277,7 +280,7 @@ var document = document
 node.appendChild(styleNode);
     
 
-    var size: number = cssStyleElementVector!.length!;
+    var size: number = this.cssStyleElementVector!.length!;
         
         
 ;
@@ -293,7 +296,7 @@ node.appendChild(styleNode);
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i);
+    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i);
 
                          as DomNodeInterface;
         

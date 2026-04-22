@@ -34,7 +34,10 @@ import { swing } from "../../../../../javax/swing.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class DefaultListModelHelper
 public constructor (){
 
             super();
-            this.vector= new Vector();
+        this.vector= new Vector();
     
 this.defaultListModel= new DefaultListModel();
     

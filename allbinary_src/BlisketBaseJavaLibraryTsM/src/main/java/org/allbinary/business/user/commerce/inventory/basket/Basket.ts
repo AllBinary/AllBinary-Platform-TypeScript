@@ -54,12 +54,17 @@ import { InventoryEntityFactory } from "../../../../../../../org/allbinary/data/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasketInterface } from "./BasketInterface.js";
+
 export class Basket
             extends Object
          implements BasketInterface, Serializable {
@@ -71,14 +76,14 @@ export class Basket
 public constructor (){
 
             super();
-            }
+        }
 
 
     public addItem(id: string, num: string){
 var id = id
 var num = num
 
-                        if(items.containsKey(id))
+                        if(this.items.containsKey(id))
                         
                                     {
                                     
@@ -105,13 +110,13 @@ var num = num
         
 ;
     
-items.put(id, newNumInt!.toString());
+this.items.put(id, newNumInt!.toString());
     
 
                                     }
                                 
                         else {
-                            items.put(id, num);
+                            this.items.put(id, num);
     
 
                         }
@@ -121,7 +126,7 @@ items.put(id, newNumInt!.toString());
 
     public removeItem(id: string){
 var id = id
-items.remove(id);
+this.items.remove(id);
     
 }
 
@@ -133,13 +138,13 @@ var num = num
                         if(Integer.valueOf(num)!.toInt() > 0)
                         
                                     {
-                                    items.put(id, num);
+                                    this.items.put(id, num);
     
 
                                     }
                                 
                         else {
-                            items.remove(id);
+                            this.items.remove(id);
     
 
                         }
@@ -231,14 +236,14 @@ totalWeight!.add(weightFloat!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(items.size());
+                        return new Integer(this.items.size());
     
 }
 
 
     public getIds(): Set{
 
-    var set: Set = items.keySet()!;
+    var set: Set = this.items.keySet()!;
         
         
 ;
@@ -265,7 +270,7 @@ totalWeight!.add(weightFloat!.toString());
     public getNumberOf(product: string): Integer{
 var product = product
 
-    var numStr: string = items.get(product);
+    var numStr: string = this.items.get(product);
 
                          as String;
         

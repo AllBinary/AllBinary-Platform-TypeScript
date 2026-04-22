@@ -34,7 +34,10 @@ import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class RectangleCollisionUtil
 var rectangle = rectangle
 var point = point
 
-                        if(point.getX() > (rectangle.x.toInt() +rectangle.getWidth()) || point.getY() > (rectangle.y.toInt() +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
+                        if(point.getX() > (rectangle.x +rectangle.getWidth()) || point.getY() > (rectangle.y +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
                         
                                     {
                                     
@@ -127,7 +130,7 @@ var rect2Y2 = rect2Y2
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

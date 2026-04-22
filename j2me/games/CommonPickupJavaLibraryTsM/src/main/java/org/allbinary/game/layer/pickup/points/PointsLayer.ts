@@ -46,7 +46,10 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ export class PointsLayer extends AllBinaryLayer {
         
 
     private readonly points: number
-public constructor (points: number)                        
-
-                            : super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition()){
-
-            super();
-            var points = points
+public constructor (points: number){
+            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition());
+                    var points = points
 
 
                             //For kotlin this is before the body of the constructor.

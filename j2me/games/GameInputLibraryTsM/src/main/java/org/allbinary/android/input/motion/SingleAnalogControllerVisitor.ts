@@ -37,7 +37,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {
 public constructor (playerInputId: number){
 
             super();
-                //var playerInputId = playerInputId
+            //var playerInputId = playerInputId
 this.playerInputId= playerInputId;
     
 }

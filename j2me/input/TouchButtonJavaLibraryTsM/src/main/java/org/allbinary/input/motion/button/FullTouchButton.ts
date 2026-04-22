@@ -46,7 +46,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,12 +63,9 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 
 export class FullTouchButton extends TouchButton {
         
-public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number)                        
-
-                            : super(touchButtonInput, touchButtonResource, rawRectangle, cellPosition, xBorder, yBorder){
-
-            super();
-            var touchButtonInput = touchButtonInput
+public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
+            super(touchButtonInput, touchButtonResource, rawRectangle, cellPosition, xBorder, yBorder);
+                    var touchButtonInput = touchButtonInput
 var touchButtonResource = touchButtonResource
 var rawRectangle = rawRectangle
 var cellPosition = cellPosition
@@ -77,12 +77,9 @@ var yBorder = yBorder
                     
 }
 
-public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number)                        
-
-                            : super(touchButtonInput, animationInterface, hintAnimationInterface, rawRectangle, cellPosition, xBorder, yBorder){
-
-            super();
-            var touchButtonInput = touchButtonInput
+public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
+            super(touchButtonInput, animationInterface, hintAnimationInterface, rawRectangle, cellPosition, xBorder, yBorder);
+                    var touchButtonInput = touchButtonInput
 var animationInterface = animationInterface
 var hintAnimationInterface = hintAnimationInterface
 var rawRectangle = rawRectangle
@@ -123,7 +120,7 @@ this.animationX= point.getX() +xBorder;
     
 this.animationY= point.getY() +yBorder;
     
-this.hintAnimationY= animationY -this.rectangleP!.getHeight() shr 1;
+this.hintAnimationY= animationY -this.rectangleP!.getHeight()>>1;
     
 
                 //: 

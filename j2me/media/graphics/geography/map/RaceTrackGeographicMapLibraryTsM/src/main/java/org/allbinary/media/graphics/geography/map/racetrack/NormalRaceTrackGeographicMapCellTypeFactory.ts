@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class NormalRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeogra
 private constructor (){
 
             super();
-            this.EMPTY_CELL_TYPE= EmptyRaceRaceTrackGeographicMapCellTypeFactory.getInstance()!.EMPTY_CELL_TYPE;
+        this.EMPTY_CELL_TYPE= EmptyRaceRaceTrackGeographicMapCellTypeFactory.getInstance()!.EMPTY_CELL_TYPE;
     
 this.EASY_CELL_TYPE= this.EMPTY_CELL_TYPE;
     

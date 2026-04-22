@@ -67,7 +67,10 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
 
-        
+
+
+
+
 
 
 
@@ -229,11 +232,11 @@ index2 < height; index2++)
         {
 index3= (index2 *imageData!.bytesPerLine) +(index *4);
     
-rx= (imageData!.data[index3] and 0xFF) shl 16;
+rx= (imageData!.data[index3]&0xFF)<<16;
     
-gx= (imageData!.data[index3 +1] and 0xFF) shl 8;
+gx= (imageData!.data[index3 +1]&0xFF)<<8;
     
-bx= (imageData!.data[index3 +2] and 0xFF);
+bx= (imageData!.data[index3 +2]&0xFF);
     
 
                         if(rx != 0 || gx != 0 || bx != 0)
@@ -264,7 +267,7 @@ imageData!.data[index3 +2]= b.toByte();
     //var imageIndex = imageIndex
     //var basicColor = basicColor
 
-                        if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
@@ -339,19 +342,19 @@ newBufferedImage= swtImage!.getImage();
 ;
     
 
-    var r: number = (basicColor!.red.toFloat()) /MAX;
+    var r: number = (basicColor!.red) /MAX;
         
         
 ;
     
 
-    var g: number = (basicColor!.green.toFloat()) /MAX;
+    var g: number = (basicColor!.green) /MAX;
         
         
 ;
     
 
-    var b: number = (basicColor!.blue.toFloat()) /MAX;
+    var b: number = (basicColor!.blue) /MAX;
         
         
 ;
@@ -394,11 +397,11 @@ newBufferedImage= swtImage!.getImage();
         
 index < size; )
         {
-rx= (imageData!.data[index] and 0xFF) shl 16;
+rx= (imageData!.data[index]&0xFF)<<16;
     
-gx= (imageData!.data[index +1] and 0xFF) shl 8;
+gx= (imageData!.data[index +1]&0xFF)<<8;
     
-bx= (imageData!.data[index +2] and 0xFF);
+bx= (imageData!.data[index +2]&0xFF);
     
 rx *= r;
     
@@ -426,7 +429,7 @@ imageData!.data[index +2]= bx.toByte();
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-                        if(features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
@@ -441,7 +444,7 @@ imageData!.data[index +2]= bx.toByte();
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
     
-openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt.toFloat()) /255f;
+openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt) /255f;
     
 
 

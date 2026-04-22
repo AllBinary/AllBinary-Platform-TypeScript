@@ -1,0 +1,58 @@
+G:\mnt\bc\mydev\workingts\allbinary_src\BlisketVOJavaLibraryTsM\src\main\java\org\allbinary\logic\communication\http\request\NameSpaceRequestParams.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryBaseJavaLibraryTsM\src\main\java\org\allbinary\business\category\Category.xml : 3    
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryBaseJavaLibraryTsM\src\main\java\org\allbinary\business\category\hierarchy\CategoryHierarchy.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryBaseJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\CategoryProperties.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\CategoryPropertiesFactory.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\root\store\RootStoreCategoryProperties.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\root\store\RootStoreCategoryPropertiesFactory.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\root\store\theme\RootStoreThemeCategoryProperties.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\properties\root\store\theme\RootStoreThemeCategoryPropertiesFactory.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\business\category\store\theme\StoreThemeCategory.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\theme\ThemeValidation.xml : 3G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\theme\ThemesValidation.xml : 
+3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\includes\style\css\template\retail\CssStyleValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CategoryJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\includes\style\css\template\retail\EditCssStyleValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\ConfigurationJavaLibraryTsM\src\main\java\org\allbinary\business\user\modules\admin\configuration\AdminConfiguration.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\ConfigurationJavaLibraryTsM\src\main\java\org\allbinary\logic\communication\http\request\RequestParams.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\bodies\GenericBodyValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\bodies\title\TitleBodyValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\hedges\heading\HeadingValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\includes\style\css\GenericCssStyleValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\page\PageValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\widgets\logo\LogoValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\widgets\title\TitleNotRequiredValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\widgets\title\TitleValidation.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\CustomizerValidatorsJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\template\customizer\widgets\title\TitleView.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\PreLoaderJavaLibraryTsM\src\main\java\org\allbinary\logic\string\regex\replace\Replace.xml : 
+3
+G:\mnt\bc\mydev\workingts\allbinary_src\SMTPConfigurationJavaLibraryTsM\src\main\java\org\allbinary\logic\communication\smtp\configuration\server\EmailServerConfiguration.xml : 3
+
+G:\mnt\bc\mydev\workingts\allbinary_src\UserCommerceJavaLibraryTsM\src\main\java\org\allbinary\business\user\commerce\money\Money.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\UserJavaLibraryTsM\src\main\java\org\allbinary\business\user\modules\User.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\ViewsJavaLibraryTsM\src\main\java\views\business\context\modules\storefront\customizer\template\objectConfig\InsertTemplateCustomizerTransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\ViewsJavaLibraryTsM\src\main\java\views\business\context\modules\storefront\customizer\template\objectConfig\NoTemplateTransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\ViewsJavaLibraryTsM\src\main\java\views\compound\objectConfig\CompoundContextTransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\TransformInfo.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\TransformInfoDomNode.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\TransformInfoDomNodeView.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\TransformInfoHttp.xml : 5
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\TransformInfoHttpStore.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\objectConfig\GenericStoreTransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\objectConfig\OverrideStoreTransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\VisualTransformJavaLibraryTsM\src\main\java\org\allbinary\logic\visual\transform\info\objectConfig\TransformInfoObjectConfig.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\WorkflowBaseJavaLibraryTsM\src\main\java\org\allbinary\logic\control\workflow\request\BasicWorkFlow.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\data\vo\EntitiesBlisketVOJavaLibraryTsM\src\main\java\org\allbinary\business\user\address\StreetAddress.xml : 6
+G:\mnt\bc\mydev\workingts\allbinary_src\data\vo\EntitiesBlisketVOJavaLibraryTsM\src\main\java\org\allbinary\business\user\commerce\money\payment\Payment.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\data\vo\EntitiesOrderHistoryVOJavaLibraryTsM\src\main\java\org\allbinary\business\user\commerce\inventory\order\OrderHistory.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\data\vo\EntityStoreFrontVOJavaLibraryTsM\src\main\java\org\allbinary\business\context\modules\storefront\StoreFront.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\BasePreloaderFileJavaLibraryTsM\src\main\java\org\allbinary\logic\io\path\AbPath.xml : 
+3
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\data\file\FileAndroidJavaLibraryTsM\src\main\java\org\allbinary\logic\io\AbFileOutputStream.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\data\file\FileAndroidJavaLibraryTsM\src\main\java\org\allbinary\logic\io\file\AbFile.xml : 6
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\data\file\FileJ2SEJavaLibraryTsM\src\main\java\org\allbinary\logic\io\AbFileInputStream.xml : 3
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\data\file\FileJ2SEJavaLibraryTsM\src\main\java\org\allbinary\logic\io\AbFileOutputStream.xml : 4
+G:\mnt\bc\mydev\workingts\allbinary_src\logic\data\file\FileJ2SEJavaLibraryTsM\src\main\java\org\allbinary\logic\io\file\AbFile.xml : 6
+G:\mnt\bc\mydev\workingts\automation\InputAutomationGenericModuleJavaLibraryTsM\src\main\java\org\allbinary\input\automation\module\generic\configuration\profile\actions\GenericProfileActions.xml : 3
+G:\mnt\bc\mydev\workingts\automation\InputAutomationModuleJavaLibraryTsM\src\main\java\org\allbinary\input\automation\module\configuration\InputAutomationModuleConfiguration.xml : 4
+G:\mnt\bc\mydev\workingts\automation\InputAutomationModuleJavaLibraryTsM\src\main\java\org\allbinary\input\automation\module\configuration\InputAutomationModuleConfigurations.xml : 4
+

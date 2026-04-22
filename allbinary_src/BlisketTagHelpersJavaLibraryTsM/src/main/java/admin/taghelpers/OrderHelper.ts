@@ -85,7 +85,10 @@ import { StringValidationUtil } from "../../org/allbinary/logic/string/StringVal
 
 
 
-        
+
+
+
+
 
 
 
@@ -112,7 +115,7 @@ export class OrderHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 this.propertiesHashMap= propertiesHashMap;
     
@@ -162,7 +165,7 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 ;
     
 
-    var requestPaymentGateway: string = request.getParameter(PaymentGatewayData.NAME.toString());
+    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString());
 
                          as String;
         

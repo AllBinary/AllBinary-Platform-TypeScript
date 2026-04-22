@@ -61,7 +61,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,12 +92,9 @@ export class BaseImageAnimationFactory
     scaleProperties: ScaleProperties = ScaleProperties.instance;
         
         
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var dx = dx
@@ -110,12 +110,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, sequenceArray, width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, sequenceArray, width, height, animationBehaviorFactory);
+                        //var image = image
     //var sequenceArray = sequenceArray
     //var width = width
     //var height = height
@@ -132,12 +129,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -150,7 +144,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var sequenceArray = sequenceArray
     //var width = width
     //var height = height
@@ -228,7 +222,7 @@ stringBuffer!.append(super.toString());
     
 stringBuffer!.append(commonLabels!.HEIGHT_LABEL);
     
-stringBuffer!.appendint(image.getHeight());
+stringBuffer!.appendint(this.image.getHeight());
     
 stringBuffer!.append(commonSeps!.SPACE);
     
@@ -253,9 +247,9 @@ this.scaleProperties= scaleProperties;
                         if(this.scaleProperties!.shouldScale)
                         
                                     {
-                                    this.scaleProperties!.scaleWidth= (this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX).toInt();
+                                    this.scaleProperties!.scaleWidth= (this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX);
     
-this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY).toInt();
+this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY);
     
 
                                     }
@@ -272,7 +266,7 @@ this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationFactoryInitializationVisitor;
+                        return this.animationFactoryInitializationVisitor;
     
 }
 
@@ -282,7 +276,7 @@ this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scaleProperties;
+                        return this.scaleProperties;
     
 }
 

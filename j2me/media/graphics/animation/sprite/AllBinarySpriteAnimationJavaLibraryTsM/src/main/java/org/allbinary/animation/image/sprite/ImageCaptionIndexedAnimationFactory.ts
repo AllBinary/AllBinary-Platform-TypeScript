@@ -67,7 +67,10 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -111,12 +114,9 @@ export class ImageCaptionIndexedAnimationFactory
         
 
     private readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number)                        
-
-                            : this(captionImage, spriteMovieImage, soundInterface, frameWidth, frameHeight, captionDx, captionDy, dx, dy, time, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var captionImage = captionImage
+public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number){
+            this(captionImage, spriteMovieImage, soundInterface, frameWidth, frameHeight, captionDx, captionDy, dx, dy, time, AnimationBehaviorFactory.getInstance());
+                        //var captionImage = captionImage
     //var spriteMovieImage = spriteMovieImage
     //var soundInterface = soundInterface
     //var frameWidth = frameWidth
@@ -135,7 +135,7 @@ public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var captionImage = captionImage
+            //var captionImage = captionImage
     //var spriteMovieImage = spriteMovieImage
     //var soundInterface = soundInterface
     //var frameWidth = frameWidth
@@ -188,7 +188,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 ;
     
 
-    var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
+    var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
         
         
 ;
@@ -222,7 +222,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new CaptionIndexedAnimation(animationInterface, movieIndexedAnimationInterface, player, this.captionDx, this.captionDy, dx, dy, time, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new CaptionIndexedAnimation(animationInterface, movieIndexedAnimationInterface, player, this.captionDx, this.captionDy, this.dx, this.dy, this.time, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

@@ -40,7 +40,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -121,7 +124,7 @@ stringBuffer!.append(append);
 this.append= stringBuffer!.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 }
 
@@ -132,7 +135,7 @@ this.append= new StringMaker().
                             append(this.append)!.append(append)!.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 }
 
@@ -144,48 +147,48 @@ this.append= new StringMaker().
                             append(GPoint.toStringStatic(x, y, 0))!.append(CommonSeps.getInstance()!.SPACE)!.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 }
 
 
     public releaseAndNotFired(){
-this.append(RELEASED_AND_NOT_FIRED);
+this.append(this.RELEASED_AND_NOT_FIRED);
     
 }
 
 
     public releaseAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(RELEASED_AND_FIRED, touchButtonInput);
+this.append(this.RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public releaseAndFired2(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(RELEASED_AND_FIRED_2, touchButtonInput);
+this.append(this.RELEASED_AND_FIRED_2, touchButtonInput);
     
 }
 
 
     public releaseAndFiredAssociated(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput);
+this.append(this.ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(PRESSED_AND_FIRED, touchButtonInput);
+this.append(this.PRESSED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndNotFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(PRESSED_AND_NOT_FIRED, touchButtonInput);
+this.append(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
     
 }
 
@@ -201,7 +204,7 @@ var index = index
 this.listString= list.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 
 
@@ -223,7 +226,7 @@ var touchButtonInput = touchButtonInput
 this.listString= list.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 
 
@@ -241,7 +244,7 @@ super.add(touchButtonInput);
 this.listString= list.toString();
     
 this.string= new StringMaker().
-                            append(listString)!.append(this.append)!.toString();
+                            append(this.listString)!.append(this.append)!.toString();
     
 }
 

@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -98,7 +101,7 @@ logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", com
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -115,7 +118,7 @@ export class CpuInfo
 private constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.name= name;
     
 }

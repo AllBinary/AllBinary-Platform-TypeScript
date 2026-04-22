@@ -55,7 +55,10 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class SelectAdvancedRTSLayerVisitor extends Visitor {
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
 
             super();
-                //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
+            //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
 this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
     
 }
@@ -101,7 +104,7 @@ var anyType = anyType
 ;
     
 
-    var list: BasicArrayList = selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;
+    var list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;
         
         
 ;

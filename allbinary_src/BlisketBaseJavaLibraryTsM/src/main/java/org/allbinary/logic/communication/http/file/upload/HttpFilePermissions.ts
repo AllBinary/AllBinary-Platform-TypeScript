@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,8 +78,8 @@ export class HttpFilePermissions
 public constructor (fullPath: AbPath){
 
             super();
-            var fullPath = fullPath
-file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getInstance()!.FILE));
+        var fullPath = fullPath
+this.file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getInstance()!.FILE));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
@@ -91,7 +94,7 @@ file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getIn
                         if(this.isFile())
                         
                                     {
-                                    userRoles!.add(BasicUserRoleFactory.getInstance()!.ADMINISTRATOR);
+                                    this.userRoles!.add(BasicUserRoleFactory.getInstance()!.ADMINISTRATOR);
     
 
                                     }
@@ -100,7 +103,7 @@ file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.getIn
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.putF("User Roles: " +userRoles, this, this.commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("User Roles: " +this.userRoles, this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

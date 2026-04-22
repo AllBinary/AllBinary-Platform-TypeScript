@@ -55,7 +55,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,12 +68,9 @@ import { BasicGameDemoPaintable } from "./BasicGameDemoPaintable.js";
 
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         
-public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor)                        
-
-                            : super(mainDemoStatePaintable, ownershipPaintable, helpPaintableInterface){
-
-            super();
-            var mainDemoStatePaintable = mainDemoStatePaintable
+public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor){
+            super(mainDemoStatePaintable, ownershipPaintable, helpPaintableInterface);
+                    var mainDemoStatePaintable = mainDemoStatePaintable
 var ownershipPaintable = ownershipPaintable
 var helpPaintableInterface = helpPaintableInterface
 var basicColor = basicColor

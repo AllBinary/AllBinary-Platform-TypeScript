@@ -57,7 +57,10 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,12 +100,9 @@ export class TitleAnimation extends SpecialAnimation {
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[])                        
-
-                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, new IndexedAnimationBehavior(1, 250)){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[]){
+            this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, new IndexedAnimationBehavior(1, 250));
+                        //var animationInterfaceArray = animationInterfaceArray
     //var basicColorArray = basicColorArray
     //var dxArray = dxArray
     //var dyArray = dyArray
@@ -112,12 +112,9 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
                     
 }
 
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number)                        
-
-                            : this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, new IndexedAnimationBehavior(1, 250)){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number){
+            this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, new IndexedAnimationBehavior(1, 250));
+                        //var animationInterfaceArray = animationInterfaceArray
     //var basicColorArray = basicColorArray
     //var dxArray = dxArray
     //var dyArray = dyArray
@@ -129,12 +126,9 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
                     
 }
 
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var animationInterfaceArray = animationInterfaceArray
+public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var animationInterfaceArray = animationInterfaceArray
     //var basicColorArray = basicColorArray
     //var dxArray = dxArray
     //var dyArray = dyArray
@@ -174,7 +168,7 @@ this.reset();
 ;
     
 
-    var totalTimeElapsed: number = currentTime -lastFrameStartTime;
+    var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;
         
         
 ;
@@ -296,7 +290,7 @@ this.lastFrameStartTime= currentTime;
     var index: number = 0;
         
         
-index < sizeP; index++)
+index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.setFrame(frame);
     
@@ -336,7 +330,7 @@ indexedAnimationBehavior!.reset();
     var index: number = 0;
         
         
-index < sizeP; index++)
+index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.previousFrame();
     
@@ -396,14 +390,14 @@ this.paint(graphics, x, y);
     var index: number = 0;
         
         
-index < sizeP; index++)
+index < this.sizeP; index++)
         {
 deltaX= this.dxArray[index] +x;
     
-deltaY= this.dyArray[index] +y;
+deltaY= this.dyArray[index] +this.y;
     
 
-                        if(this.basicColorArray[index] != CLEAR_COLOR)
+                        if(this.basicColorArray[index] != this.CLEAR_COLOR)
                         
                                     {
                                     this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColorArray[index]!);

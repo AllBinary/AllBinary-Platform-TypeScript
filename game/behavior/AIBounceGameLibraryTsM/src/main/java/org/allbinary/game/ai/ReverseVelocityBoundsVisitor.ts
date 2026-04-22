@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class ReverseVelocityBoundsVisitor
 public constructor (layerInterface: LayerInterface){
 
             super();
-            var layerInterface = layerInterface
+        var layerInterface = layerInterface
 this.layerInterface= layerInterface;
     
 

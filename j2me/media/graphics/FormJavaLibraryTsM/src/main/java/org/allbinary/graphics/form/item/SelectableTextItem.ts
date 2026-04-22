@@ -34,7 +34,10 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { TextItem } from "./TextItem.js";
 
 export class SelectableTextItem extends TextItem {
         
-public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(label, layout, altText, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var label = label
+public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
+                    var label = label
 var layout = layout
 var altText = altText
 var backgroundBasicColor = backgroundBasicColor

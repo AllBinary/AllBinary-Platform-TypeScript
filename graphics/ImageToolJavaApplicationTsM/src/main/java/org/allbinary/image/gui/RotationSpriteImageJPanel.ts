@@ -72,7 +72,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,12 +105,9 @@ export class RotationSpriteImageJPanel extends javax.swing.JPanel implements Ima
     private imageProcessorInput: ImageProcessorInput
 
     private result: BufferedImage
-public constructor (imageProcessorInput: ImageProcessorInput)                        
-
-                            : super(){
-
+public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-            var imageProcessorInput = imageProcessorInput
+                    var imageProcessorInput = imageProcessorInput
 
 
                             //For kotlin this is before the body of the constructor.
@@ -266,46 +266,46 @@ var graphics = graphics
                                 }
                             ;
     
-jPanel2= new javax.swing.JPanel();
+this.jPanel2= new javax.swing.JPanel();
     
-totalFramesJComboBox= new javax.swing.JComboBox();
+this.totalFramesJComboBox= new javax.swing.JComboBox();
     
-jLabel1= new javax.swing.JLabel();
+this.jLabel1= new javax.swing.JLabel();
     
-generateJButton= new javax.swing.JButton();
+this.generateJButton= new javax.swing.JButton();
     
-totalAngleJComboBox= new javax.swing.JComboBox();
+this.totalAngleJComboBox= new javax.swing.JComboBox();
     
-jLabel3= new javax.swing.JLabel();
+this.jLabel3= new javax.swing.JLabel();
     
-writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
+this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel3= new javax.swing.JPanel();
+this.jPanel3= new javax.swing.JPanel();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel1);
+    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);
         
         
 ;
     
-jPanel1!.setLayout(jPanel1Layout);
+this.jPanel1!.setLayout(jPanel1Layout);
     
 jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 436, Short.MAX_VALUE));
     
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 227, Short.MAX_VALUE));
     
-totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
+this.totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     CommonPhoneStrings.getInstance()!.FOUR,CommonPhoneStrings.getInstance()!.NINE,"18","20","36";
         
         
                                                 ]));
     
-jLabel1!.setText("Total Frames:");
+this.jLabel1!.setText("Total Frames:");
     
-generateJButton!.setText("Generate");
+this.generateJButton!.setText("Generate");
     
 generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -319,7 +319,7 @@ generateJButtonActionPerformed(evt);
                                 }
                             );
     
-totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
+this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "360","90";
         
@@ -338,31 +338,31 @@ totalAngleJComboBoxActionPerformed(evt);
                                 }
                             );
     
-jLabel3!.setText("Total Angle:");
+this.jLabel3!.setText("Total Angle:");
     
-writeOverOriginalJCheckBox!.setText("Write Over Original");
+this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel2);
+    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);
         
         
 ;
     
-jPanel2!.setLayout(jPanel2Layout);
+this.jPanel2!.setLayout(jPanel2Layout);
     
 jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.add(8, 8, 8)!.add(jLabel1)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(totalFramesJComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(jLabel3)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(totalAngleJComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(writeOverOriginalJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(generateJButton)!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
     
 jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(jLabel1)!.add(totalFramesJComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(generateJButton)!.add(totalAngleJComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)!.add(jLabel3)!.add(writeOverOriginalJCheckBox)));
     
-jLabel2!.setText("Results:");
+this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel3);
+    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);
         
         
 ;
     
-jPanel3!.setLayout(jPanel3Layout);
+this.jPanel3!.setLayout(jPanel3Layout);
     
 jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel3Layout!.createSequentialGroup()!.add(jLabel2)!.addContainerGap(377, Short.MAX_VALUE)));
     

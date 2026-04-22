@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class InputAutomationRobotOSGIServiceVisitor
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{

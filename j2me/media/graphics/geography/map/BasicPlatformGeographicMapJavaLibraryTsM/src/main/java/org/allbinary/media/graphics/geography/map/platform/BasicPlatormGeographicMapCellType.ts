@@ -36,7 +36,10 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class BasicPlatormGeographicMapCellType
 public constructor (type: number){
 
             super();
-                //var type = type
+            //var type = type
 new GeographicMapCellType(type);
     
 this.types= new Array(1);
@@ -63,7 +66,7 @@ this.types[0]= type;
 public constructor (types: number[]){
 
             super();
-                //var types = types
+            //var types = types
 
     var size: number = types.length
                 ;
@@ -92,7 +95,7 @@ this.types= types;
 public constructor (types: BasicArrayList){
 
             super();
-                //var types = types
+            //var types = types
 
     var size: number = types.size()!;
         
@@ -173,7 +176,7 @@ this.types= typeArray;
 index < size; index++)
         {
 
-                        if(types[index] == type)
+                        if(this.types[index] == type)
                         
                                     {
                                     

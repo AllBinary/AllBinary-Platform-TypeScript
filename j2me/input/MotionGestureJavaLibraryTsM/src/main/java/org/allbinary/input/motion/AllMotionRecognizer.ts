@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,9 +81,9 @@ export class AllMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.id= index++;
+        this.id= index++;
     
-this.motionGestureRecognizer= new MotionGestureRecognizer(id);
+this.motionGestureRecognizer= new MotionGestureRecognizer(this.id);
     
 this.touchButtonRecognizer= new TouchButtonRecognizer();
     
@@ -98,13 +101,13 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
-                                    touchButtonProcessing= true;
+                                    this.touchButtonProcessing= true;
     
 
                                     }
                                 
 
-                        if(!touchButtonProcessing)
+                        if(!this.touchButtonProcessing)
                         
                                     {
                                     
@@ -142,7 +145,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                                     }
                                 
 
-                        if(!touchButtonProcessing)
+                        if(!this.touchButtonProcessing)
                         
                                     {
                                     
@@ -163,10 +166,10 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                                     }
                                 
 
-                        if(touchButtonProcessing)
+                        if(this.touchButtonProcessing)
                         
                                     {
-                                    touchButtonProcessing= false;
+                                    this.touchButtonProcessing= false;
     
 
                                     }
@@ -182,7 +185,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-                        if(touchButtonProcessing)
+                        if(this.touchButtonProcessing)
                         
                                     {
                                     this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId);
@@ -191,7 +194,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                                     }
                                 
 
-                        if(!touchButtonProcessing)
+                        if(!this.touchButtonProcessing)
                         
                                     {
                                     
@@ -226,7 +229,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
     //var deviceId = deviceId
     //var modifiers = modifiers
 
-                        if(x != lastX || y != lastY)
+                        if(x != this.lastX || y != this.lastY)
                         
                                     {
                                     this.lastX= x;

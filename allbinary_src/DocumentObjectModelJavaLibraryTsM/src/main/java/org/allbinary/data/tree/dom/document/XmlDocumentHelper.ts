@@ -73,7 +73,10 @@ import { InputSource } from "../../../../../../org/xml/sax/InputSource.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -110,7 +113,7 @@ export class XmlDocumentHelper
 private constructor (){
 
             super();
-            this.init(4, true);
+        this.init(4, true);
     
 }
 
@@ -132,13 +135,13 @@ private constructor (){
         
 ;
     
-transformerFactory!.setAttribute(INDENT_NUMBER, indent);
+transformerFactory!.setAttribute(this.INDENT_NUMBER, indent);
     
-transformer= transformerFactory!.newTransformer();
+this.transformer= transformerFactory!.newTransformer();
     
-transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8);
+this.transformer.setOutputProperty(OutputKeys.ENCODING, CharacterSetData.getInstance()!.UTF_8);
     
-transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
+this.transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
                         ?       
                                 booleanFactory!.YES
                                 :
@@ -147,7 +150,7 @@ transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, ignoreDeclaration
 
     );
     
-transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
+this.transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
     
 
                 //: 
@@ -188,7 +191,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
         
 ;
     
-transformer.transform(new DOMSource(document), new StreamResult(out));
+this.transformer.transform(new DOMSource(document), new StreamResult(out));
     
 
 

@@ -31,7 +31,10 @@ import { LongArrayIdentifierInterface } from "../../../../../../org/allbinary/th
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ export class StoreAppClientInformation extends AbeClientInformation implements L
         
 
     private readonly longArrayIdentifier: number[]
-public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: number[])                        
-
-                            : super(name, version, specialName, shortName){
-
-            super();
-                //var name = name
+public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: number[]){
+            super(name, version, specialName, shortName);
+                        //var name = name
     //var version = version
     //var specialName = specialName
     //var shortName = shortName
@@ -67,7 +67,7 @@ this.longArrayIdentifier= longArrayIdentifier;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return longArrayIdentifier;
+                        return this.longArrayIdentifier;
     
 }
 

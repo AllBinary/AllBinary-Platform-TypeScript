@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -202,7 +205,7 @@ inputAutomationConfiguration= new InputAutomationConfiguration();
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

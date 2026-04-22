@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class RawKeyEventHandler
 public constructor (){
 
             super();
-            this.eventListenerInterfaceList= new BasicArrayList();
+        this.eventListenerInterfaceList= new BasicArrayList();
     
 }
 

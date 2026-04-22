@@ -97,7 +97,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -149,12 +152,9 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
         
 
     private readonly multiPlayerType: number
-protected constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : this(name, movement, animationInterface, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getProcedural(ExplosionResources.getInstance()!.THIRD_EXPLOSION_RESOURCE)!.getInstance(NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0)), rectangle, viewPosition){
-
-            super();
-                //var name = name
+protected constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            this(name, movement, animationInterface, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getProcedural(ExplosionResources.getInstance()!.THIRD_EXPLOSION_RESOURCE)!.getInstance(NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0)), rectangle, viewPosition);
+                        //var name = name
     //var movement = movement
     //var animationInterface = animationInterface
     //var rectangle = rectangle
@@ -165,12 +165,9 @@ protected constructor (name: string, movement: Movement, animationInterface: Ani
                     
 }
 
-protected constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : this(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+protected constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            this(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
+                        //var name = name
     //var movement = movement
     //var animationInterface = animationInterface
     //var destroyedAnimationInterface = destroyedAnimationInterface
@@ -182,12 +179,9 @@ protected constructor (name: string, movement: Movement, animationInterface: Ani
                     
 }
 
-protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition){
-
-            super();
-                //var name = name
+protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
+                        //var name = name
     //var remoteInfo = remoteInfo
     //var multiPlayerType = multiPlayerType
     //var movement = movement
@@ -292,7 +286,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 ;
     
 
-                        if(sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
+                        if(this.sourceLayerInterface!.getGroupInterface()[0] == basicGroupFactory!.ENEMY)
                         
                                     {
                                     this.setGroupInterface(basicGroupFactory!.ENEMY_ARRAY);
@@ -301,7 +295,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                                     }
                                 
                         else {
-                            this.setGroupInterface(sourceLayerInterface!.getGroupInterface());
+                            this.setGroupInterface(this.sourceLayerInterface!.getGroupInterface());
     
 
                         }
@@ -416,7 +410,7 @@ this.totalDamage += damage *damage;
 
     givePoints(total: number){
 var total = total
-scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total);
+this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total);
     
 }
 

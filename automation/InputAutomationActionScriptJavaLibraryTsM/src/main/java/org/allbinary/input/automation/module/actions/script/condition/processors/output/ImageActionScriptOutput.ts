@@ -55,13 +55,18 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput.js";
+
+import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
 
 import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
 
@@ -93,12 +98,9 @@ export class ImageActionScriptOutput extends BasicProfileActionScriptOutput impl
     private imageTypes: ImageTypes
 
     private actionScriptOutputJPanel: ImageActionScriptOutputJPanel
-public constructor (node: Node)                        
-
-                            : super(NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -207,12 +209,9 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
     
 }
 
-public constructor ()                        
-
-                            : super(NAME){
-
-            super();
-            
+public constructor (){
+            super(NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

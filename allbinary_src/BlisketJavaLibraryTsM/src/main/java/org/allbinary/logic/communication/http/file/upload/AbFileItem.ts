@@ -70,7 +70,10 @@ import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class AbFileItem
 public constructor (name: string, fieldName: string, byteArray: number[]){
 
             super();
-            var name = name
+        var name = name
 var fieldName = fieldName
 var byteArray = byteArray
 this.name= name;
@@ -115,7 +118,7 @@ this.byteArray= byteArray;
 
 
 
-                            throw new IOException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -189,7 +192,7 @@ var encoding = encoding
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FileItemUtil.getInstance()!.getString(byteArray);
+                        return FileItemUtil.getInstance()!.getString(this.byteArray);
 
                         ;
     
@@ -201,7 +204,7 @@ var encoding = encoding
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getString", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getString", e);
     
 
                                     }
@@ -224,7 +227,7 @@ var file = file
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -235,12 +238,12 @@ var file = file
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
     public delete(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, "delete()");
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, "delete()");
     
 }
 
@@ -300,7 +303,7 @@ var state = state
 
 
 
-                            throw new IOException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -308,7 +311,7 @@ var state = state
 
 
 
-                            throw new RuntimeException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -317,7 +320,7 @@ var fih = fih
 
 
 
-                            throw new RuntimeException(commonStrings!.NOT_IMPLEMENTED)
+                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

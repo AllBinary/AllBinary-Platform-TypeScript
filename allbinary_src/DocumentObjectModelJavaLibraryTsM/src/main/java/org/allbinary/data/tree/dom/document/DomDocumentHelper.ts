@@ -58,7 +58,10 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -258,7 +261,7 @@ copyTransformer!.transform(domSource, streamResult);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

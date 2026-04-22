@@ -58,7 +58,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class Features
 private constructor (){
 
             super();
-            list= new BasicArrayList();
+        list= new BasicArrayList();
     
 defaultList= new BasicArrayList();
     
@@ -125,12 +128,12 @@ this.init();
 this.add(gameFeature);
     
 
-                        if(!defaultList!.contains(gameFeature);
+                        if(!this.defaultList!.contains(gameFeature);
 
                         )
                         
                                     {
-                                    defaultList!.add(gameFeature);
+                                    this.defaultList!.add(gameFeature);
     
 
                                     }
@@ -143,7 +146,7 @@ this.add(gameFeature);
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
 
-                        if(!list.contains(gameFeature);
+                        if(!this.list.contains(gameFeature);
 
                         )
                         
@@ -151,7 +154,7 @@ this.add(gameFeature);
                                     this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, commonStrings!.ADD);
     
-list.add(gameFeature);
+this.list.add(gameFeature);
     
 GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeature, gameFeature!.toString()));
     
@@ -170,7 +173,7 @@ this.logUtil!.putF(new StringMaker().
     
 this.remove(gameFeature);
     
-defaultList!.remove(gameFeature);
+this.defaultList!.remove(gameFeature);
     
 }
 
@@ -180,12 +183,12 @@ defaultList!.remove(gameFeature);
     public remove(gameFeature: Feature){
     //var gameFeature = gameFeature
 
-                        if(list.contains(gameFeature))
+                        if(this.list.contains(gameFeature))
                         
                                     {
                                     this.logUtil!.putF(commonStrings!.START, this, commonStrings!.REMOVE);
     
-list.remove(gameFeature);
+this.list.remove(gameFeature);
     
 GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeature, gameFeature!.toString()));
     

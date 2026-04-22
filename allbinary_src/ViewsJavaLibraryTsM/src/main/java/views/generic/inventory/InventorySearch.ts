@@ -82,7 +82,10 @@ import { InventoryViewSearchInterface } from "../../../views/admin/inventory/lis
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,12 +109,9 @@ export class InventorySearch
         
 
     private readonly searchRequest: SearchRequest
-public constructor (searchRequest: SearchRequest)                        
-
-                            : super(){
-
+public constructor (searchRequest: SearchRequest){
             super();
-            var searchRequest = searchRequest
+                    var searchRequest = searchRequest
 
 
                             //For kotlin this is before the body of the constructor.
@@ -281,7 +281,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 ;
     
 
-    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(searchRequest)!;
+    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;
         
         
 ;

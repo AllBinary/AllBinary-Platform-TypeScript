@@ -43,7 +43,10 @@ import { TagHelperFactoryInterface } from "../admin/taghelpers/TagHelperFactoryI
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class ViewHelperFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class, LicensingException::class)

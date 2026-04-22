@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
 
 
-        
+
+
+
+
 
 
 
@@ -133,7 +136,7 @@ imageIOInterface!.save(frame);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

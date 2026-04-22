@@ -43,7 +43,10 @@ import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ export class RightToLeftImageAnimation extends ImageSegmentAnimation {
     private startWidth: number= 0
 
     private currentWidth: number= 0
-public constructor (image: Image, animationBehavior: AnimationBehavior)                        
-
-                            : super(image, animationBehavior){
-
-            super();
-                //var image = image
+public constructor (image: Image, animationBehavior: AnimationBehavior){
+            super(image, animationBehavior);
+                        //var image = image
     //var animationBehavior = animationBehavior
 
 

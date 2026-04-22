@@ -37,7 +37,10 @@ import { LayerInterfaceFactoryInterface } from "../../../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,11 +71,11 @@ export class RaceTrackAdjacentDropLayerFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public clear(){
-list.clear();
+this.list.clear();
     
 }
 
@@ -98,7 +101,7 @@ list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getRandom(list);
+                        return this.basicArrayListUtil!.getRandom(this.list);
 
                          as LayerInterfaceFactoryInterface;
     
@@ -107,7 +110,7 @@ list.clear();
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
 var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-list.add(layerInterfaceFactoryInterface);
+this.list.add(layerInterfaceFactoryInterface);
     
 }
 

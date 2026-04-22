@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class PageData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "PAGE_NAME";

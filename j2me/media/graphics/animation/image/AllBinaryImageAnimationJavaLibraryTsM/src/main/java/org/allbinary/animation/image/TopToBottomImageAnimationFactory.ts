@@ -37,7 +37,10 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image, sequenceArray: number[])                        
-
-                            : this(image, sequenceArray, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, sequenceArray: number[]){
+            this(image, sequenceArray, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var sequenceArray = sequenceArray
 
 
@@ -60,12 +60,9 @@ public constructor (image: Image, sequenceArray: number[])
                     
 }
 
-public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory);
+                        //var image = image
     //var sequenceArray = sequenceArray
     //var animationBehaviorFactory = animationBehaviorFactory
 

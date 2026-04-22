@@ -73,12 +73,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
+
 export class CategoryProperties
             extends Object
          implements CategoryPropertiesInterface {
@@ -96,7 +101,7 @@ export class CategoryProperties
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.category= name;
     
 }
@@ -104,7 +109,7 @@ this.category= name;
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.category= CategoryUtil.getNameFromNode(node);
     
 }
@@ -112,7 +117,7 @@ this.category= CategoryUtil.getNameFromNode(node);
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-            var categoryPropertiesHashMap = categoryPropertiesHashMap
+        var categoryPropertiesHashMap = categoryPropertiesHashMap
 this.category= .toCharArray();
     
 }
@@ -383,7 +388,7 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
         
 ;
     
-categoryVector!.add(category);
+categoryVector!.add(this.category);
     
 
 

@@ -46,7 +46,10 @@ import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class InventoryTag extends TableTag {
         
 
     private storeName: string
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -40,7 +40,10 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ export class StoreValidationTransformTag extends ValidationTransformTag {
         
 
     private storeName: string
-public constructor ()                        
-
-                            : super(){
-
+public constructor (){
             super();
-            
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

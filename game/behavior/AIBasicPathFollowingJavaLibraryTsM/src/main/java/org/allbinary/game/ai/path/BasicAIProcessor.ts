@@ -55,7 +55,10 @@ import { GeographicMapCellPathHistoryInfo } from "../../../../../org/allbinary/m
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,12 +78,9 @@ export class BasicAIProcessor
     private geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo
 
     private basicAI: BasicDirectionAIHelper
-public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number)                        
-
-                            : this(name, geographicMapCellHistory, new GeographicMapCellPathHistoryInfo(), chosenPathList, angleInfo, seed){
-
-            super();
-                //var name = name
+public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
+            this(name, geographicMapCellHistory, new GeographicMapCellPathHistoryInfo(), chosenPathList, angleInfo, seed);
+                        //var name = name
     //var geographicMapCellHistory = geographicMapCellHistory
     //var chosenPathList = chosenPathList
     //var angleInfo = angleInfo
@@ -94,7 +94,7 @@ public constructor (name: string, geographicMapCellHistory: GeographicMapCellHis
 public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
 
             super();
-                //var name = name
+            //var name = name
     //var geographicMapCellHistory = geographicMapCellHistory
     //var geographicMapCellPathHistoryInfo = geographicMapCellPathHistoryInfo
     //var chosenPathList = chosenPathList

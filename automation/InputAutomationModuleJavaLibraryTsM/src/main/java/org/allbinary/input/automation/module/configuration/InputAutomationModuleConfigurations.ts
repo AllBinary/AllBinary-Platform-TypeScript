@@ -64,7 +64,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class InputAutomationModuleConfigurations
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var file = file
 this.setHashMap(new HashMap<any, any>());
     
@@ -171,7 +174,7 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 public constructor (abeClientInformation: AbeClientInformationInterface, document: Document){
 
             super();
-                //var abeClientInformation = abeClientInformation
+            //var abeClientInformation = abeClientInformation
     //var document = document
 this.setHashMap(new HashMap<any, any>());
     
@@ -208,7 +211,7 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 public constructor (inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>){
 
             super();
-                //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
+            //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
 this.setHashMap(new HashMap<any, any>());
     
 
@@ -242,7 +245,7 @@ this.add(inputAutomationModuleConfiguration);
 public constructor (){
 
             super();
-            this.setHashMap(new HashMap<any, any>());
+        this.setHashMap(new HashMap<any, any>());
     
 }
 

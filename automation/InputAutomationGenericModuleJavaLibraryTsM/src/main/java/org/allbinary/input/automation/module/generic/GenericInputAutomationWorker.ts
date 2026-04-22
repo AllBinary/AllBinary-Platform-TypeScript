@@ -76,7 +76,10 @@ import { MotionRectanglesWorker } from "../../../../../../org/allbinary/media/im
 
 
 
-        
+
+
+
+
 
 
 
@@ -104,12 +107,9 @@ export class GenericInputAutomationWorker extends AbstractInputAutomationWorker 
     private frame: Long
 
     private genericProfile: GenericProfile
-public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfile: GenericProfile, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface)                        
-
-                            : super(inputAutomationActionInterface){
-
-            super();
-                //var inputAutomationActionInterface = inputAutomationActionInterface
+public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfile: GenericProfile, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
+            super(inputAutomationActionInterface);
+                        //var inputAutomationActionInterface = inputAutomationActionInterface
     //var genericProfile = genericProfile
     //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
     //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
@@ -214,7 +214,7 @@ this.waitForDataWorkers();
 setFrame(keyArray[keyArray!.length -1]! as Long);
     
 
-                        if(getFrame() > lastFrame)
+                        if(getFrame() > this.lastFrame)
                         
                                     {
                                     this.logUtil!.putF("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS);
@@ -288,7 +288,7 @@ CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
     
 }
 
-lastFrame= getFrame();
+this.lastFrame= getFrame();
     
 
                                     }

@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,18 +75,18 @@ export class GeographicMapEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
 
-                        if(!list.contains(gameLayer);
+                        if(!this.list.contains(gameLayer);
 
                         )
                         
                                     {
-                                    list.add(gameLayer);
+                                    this.list.add(gameLayer);
     
 
                                     }

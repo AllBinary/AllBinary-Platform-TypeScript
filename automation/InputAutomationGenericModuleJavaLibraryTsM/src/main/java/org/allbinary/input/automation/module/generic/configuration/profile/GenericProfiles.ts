@@ -76,7 +76,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -117,7 +120,7 @@ export class GenericProfiles
 public constructor (fileName: string){
 
             super();
-            var fileName = fileName
+        var fileName = fileName
 this.fileName= fileName;
     
 this.profilesDefaultListModelHelper= new DefaultListModelHelper();

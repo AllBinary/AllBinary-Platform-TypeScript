@@ -35,12 +35,17 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GraphicsInterface } from "./GraphicsInterface.js";
+
 import { NullGL10 } from "./NullGL10.js";
 
 export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedInterface, GraphicsInterface {
@@ -56,7 +61,7 @@ export class OpenGLESGraphics extends Graphics implements OpenGLSurfaceChangedIn
 public constructor (){
 
             super();
-            }
+        }
 
 
     public update(gl: GL){

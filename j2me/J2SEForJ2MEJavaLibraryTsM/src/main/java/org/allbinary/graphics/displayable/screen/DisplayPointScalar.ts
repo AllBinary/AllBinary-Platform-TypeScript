@@ -31,7 +31,10 @@ import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class DisplayPointScalar
 public constructor (){
 
             super();
-            }
+        }
 
 
     public processX(value: number): number{

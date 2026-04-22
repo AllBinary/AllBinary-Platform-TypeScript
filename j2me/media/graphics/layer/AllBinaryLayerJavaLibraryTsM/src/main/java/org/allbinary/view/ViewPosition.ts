@@ -34,7 +34,10 @@ import { AllBinaryLayer } from "../../../org/allbinary/layer/AllBinaryLayer.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,23 +53,17 @@ export class ViewPosition extends GPoint {
     private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor ()                        
-
-                            : super(0, 0, 0){
-
-            super();
-            
+public constructor (){
+            super(0, 0, 0);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-protected constructor (x: number, y: number)                        
-
-                            : super(x, y, 0){
-
-            super();
-            var x = x
+protected constructor (x: number, y: number){
+            super(x, y, 0);
+                    var x = x
 var y = y
 
 
@@ -74,12 +71,9 @@ var y = y
                     
 }
 
-protected constructor (x: number, y: number, z: number)                        
-
-                            : super(x, y, z){
-
-            super();
-            var x = x
+protected constructor (x: number, y: number, z: number){
+            super(x, y, z);
+                    var x = x
 var y = y
 var z = z
 
@@ -150,7 +144,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getZ() +this.allbinaryLayer!.getDepth()).toInt();
+                        return (this.getZ() +this.allbinaryLayer!.getDepth());
     
 }
 

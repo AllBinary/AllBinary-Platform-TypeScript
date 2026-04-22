@@ -67,7 +67,10 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class InputPersistance extends BasicPersitance {
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
         
         
-public constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+public constructor (name: string){
+            super(name);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.

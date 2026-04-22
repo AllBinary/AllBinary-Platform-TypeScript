@@ -70,7 +70,10 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class StoreUriResolver
 public constructor (parentTransformInfoInterface: TransformInfoInterface, basicURIResolver: BasicUriResolver){
 
             super();
-            var parentTransformInfoInterface = parentTransformInfoInterface
+        var parentTransformInfoInterface = parentTransformInfoInterface
 var basicURIResolver = basicURIResolver
 this.parentTransformInfoInterface= parentTransformInfoInterface;
     
@@ -110,7 +113,7 @@ var base = base
 
         try {
             
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = parentTransformInfoInterface as TransformInfoHttpStoreInterface;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
         
         
 ;

@@ -61,7 +61,10 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
 
-        
+
+
+
+
 
 
 
@@ -162,7 +165,7 @@ var pageContext = pageContext
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -37,7 +37,10 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
         
 export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new ArtificialIntelligenceLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new ArtificialIntelligenceLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -40,7 +40,10 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { SequenceAI } from "./SequenceAI.js";
 
 export class ComboSequenceAI extends SequenceAI {
         
-public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(artificialIntelligenceInterface, ownerLayerInterface, gameInput){
-
-            super();
-            var artificialIntelligenceInterface = artificialIntelligenceInterface
+public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
+                    var artificialIntelligenceInterface = artificialIntelligenceInterface
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 

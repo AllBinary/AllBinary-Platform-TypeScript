@@ -40,7 +40,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class TransformInfoInterfaceView
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
 }

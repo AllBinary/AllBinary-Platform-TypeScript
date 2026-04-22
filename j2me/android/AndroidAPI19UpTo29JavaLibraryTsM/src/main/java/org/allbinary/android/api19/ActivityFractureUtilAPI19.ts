@@ -37,7 +37,10 @@ import { ActivityFractureUtilAPI5 } from "../../../../org/allbinary/android/api5
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
 ;
     
 
-    var visibility: number = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN;
+    var visibility: number = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
         
         
 ;

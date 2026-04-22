@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -172,7 +175,7 @@ export class GameCommandsFactory
 protected constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class AbeClientInformationData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly KEY: string = "KEY";

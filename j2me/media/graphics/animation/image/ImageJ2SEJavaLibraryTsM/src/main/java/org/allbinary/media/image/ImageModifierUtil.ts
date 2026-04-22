@@ -58,7 +58,10 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
 
 
-        
+
+
+
+
 
 
 
@@ -202,7 +205,7 @@ bx= colorModel!.getBlue(dataElements);
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    newBufferedImage!.setRGB(index, index2, (ax shl 24) or (r shl 16) or (g shl 8) or (b));
+                                    newBufferedImage!.setRGB(index, index2, (ax<<24) | (r<<16) | (g<<8) | (b));
     
 
                                     }
@@ -232,19 +235,19 @@ bx= colorModel!.getBlue(dataElements);
 ;
     
 
-    var r: number = (basicColor!.red.toFloat()) /MAX;
+    var r: number = (basicColor!.red) /MAX;
         
         
 ;
     
 
-    var g: number = (basicColor!.green.toFloat()) /MAX;
+    var g: number = (basicColor!.green) /MAX;
         
         
 ;
     
 
-    var b: number = (basicColor!.blue.toFloat()) /MAX;
+    var b: number = (basicColor!.blue) /MAX;
         
         
 ;
@@ -324,7 +327,7 @@ gx *= g;
     
 bx *= b;
     
-newBufferedImage!.setRGB(index, index2, (ax shl 24) or (rx shl 16) or (gx shl 8) or (bx));
+newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
     
 }
 
@@ -390,7 +393,7 @@ index2 < height; index2++)
         {
 raster.getPixel(index, index2, colorArray);
     
-colorArray[0]= alpha and colorArray[0];
+colorArray[0]= alpha&colorArray[0];
     
 raster.setPixel(index, index2, colorArray);
     

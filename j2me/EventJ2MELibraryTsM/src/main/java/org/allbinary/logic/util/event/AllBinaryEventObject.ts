@@ -31,7 +31,10 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class AllBinaryEventObject
 public constructor (anyType: any = {}){
 
             super();
-            var anyType = anyType
+        var anyType = anyType
 this.source= anyType;
     
 }

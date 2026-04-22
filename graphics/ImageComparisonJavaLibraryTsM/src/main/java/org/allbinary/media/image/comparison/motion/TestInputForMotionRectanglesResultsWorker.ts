@@ -67,12 +67,17 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
+
 import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
 
 export class TestInputForMotionRectanglesResultsWorker
@@ -96,7 +101,7 @@ export class TestInputForMotionRectanglesResultsWorker
 public constructor (){
 
             super();
-            this.motionRectanglesVector= new Vector();
+        this.motionRectanglesVector= new Vector();
     
 }
 

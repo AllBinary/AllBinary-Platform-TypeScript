@@ -31,7 +31,10 @@ import { InitHelperFactory } from "../../admin/taghelpers/InitHelperFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class InitTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new InitHelperFactory());
+        this.setTagHelperFactory(new InitHelperFactory());
     
 this.setTagRequestHelperFactory(new InitHelperFactory());
     

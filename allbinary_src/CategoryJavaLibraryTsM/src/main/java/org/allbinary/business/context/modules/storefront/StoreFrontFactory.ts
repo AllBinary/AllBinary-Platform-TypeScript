@@ -40,7 +40,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class StoreFrontFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

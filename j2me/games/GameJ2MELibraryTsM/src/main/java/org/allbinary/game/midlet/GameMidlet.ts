@@ -280,7 +280,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -383,19 +386,16 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
     private isFullScreen: boolean= false
 
     private resized: boolean= false
-public constructor (clientInformationFactory: ClientInformationFactory)                        
-
-                            : super(clientInformationFactory){
-
-            super();
-                //var clientInformationFactory = clientInformationFactory
+public constructor (clientInformationFactory: ClientInformationFactory){
+            super(clientInformationFactory);
+                        //var clientInformationFactory = clientInformationFactory
 
 
                             //For kotlin this is before the body of the constructor.
                     
 SmallIntegerSingletonFactory.getInstance()!.init(0x291, 6);
     
-loadGameForm= CommandForm.NULL_COMMAND_FORM;
+this.loadGameForm= CommandForm.NULL_COMMAND_FORM;
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -458,7 +458,7 @@ this.init();
 this.pauseAppBackground(true);
     
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -473,10 +473,10 @@ gameAdState!.getAdvertisements()!.stopAll();
 this.logUtil!.putF(commonStrings!.START, this, PAUSE_APP_BACKGROUND);
     
 
-                        if(allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
+                        if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    allbinaryGameCanvasRunnableInterface!.pause();
+                                    this.allbinaryGameCanvasRunnableInterface!.pause();
     
 
                                     }
@@ -496,7 +496,7 @@ AllBinarySensorManager.getInstance()!.shutdown();
 this.unPauseAppBackground(true);
     
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -551,7 +551,7 @@ var isProgress = isProgress
                                     {
                                     progressCanvas!.start();
     
-this.commandAction(myCommandsFactory!.SET_DISPLAYABLE, progressCanvas);
+this.commandAction(this.myCommandsFactory!.SET_DISPLAYABLE, progressCanvas);
     
 
                                     }
@@ -583,7 +583,7 @@ var unconditional = unconditional
             PreLogUtil.put(GameStatisticsFactory.getInstance()!.toString(), this, METHOD_NAME);
     
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -632,7 +632,7 @@ this.logUtil!.putF(commonStrings!.END, this, METHOD_NAME);
 
         try {
             
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
         
         
 ;
@@ -657,7 +657,7 @@ this.logUtil!.putF(commonStrings!.START, this, START_APP);
                         if(gameCanvasRunnableInterface == NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+                                    this.gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
     
 this.setDemo();
     
@@ -707,7 +707,7 @@ notifyDestroyed();
 
         try {
             
-    var displayableAsString: string = NO_DISPLAYABLE;
+    var displayableAsString: string = this.NO_DISPLAYABLE;
         
         
 ;
@@ -724,7 +724,7 @@ notifyDestroyed();
                                     }
                                 
 
-    var label: string = NO_COMMAND;
+    var label: string = this.NO_COMMAND;
         
         
 ;
@@ -741,7 +741,7 @@ notifyDestroyed();
                                     }
                                 
 PreLogUtil.put(new StringMaker().
-                            append(COMMAND_NAME)!.append(label)!.append(DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
+                            append(this.COMMAND_NAME)!.append(label)!.append(this.DISPLAYABLE)!.append(displayableAsString)!.toString(), this, this.COMMAND_ACTION);
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
@@ -818,7 +818,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
                         
                                     {
                                     
-                        if(gameMidletStateFactory!.getCurrentGameState() != GameState.PLAYING_GAME_STATE || command == gameCommandsFactory!.RESTART_COMMAND)
+                        if(this.gameMidletStateFactory!.getCurrentGameState() != GameState.PLAYING_GAME_STATE || command == gameCommandsFactory!.RESTART_COMMAND)
                         
                                     {
                                     
@@ -839,7 +839,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
     
 this.createGame();
     
-gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
+this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
     
 
                         }
@@ -934,7 +934,7 @@ menuListener!.close();
                                 
 this.stopGameCanvasRunnableInterface();
     
-gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
+this.gameMidletStateFactory!.setCurrentGameState(GameState.NO_GAME_STATE);
     
 this.setDemo();
     
@@ -945,7 +945,7 @@ this.setDemo();
                                     }
                                 
                              else 
-                        if(command == myCommandsFactory!.RESUME_COMMAND)
+                        if(command == this.myCommandsFactory!.RESUME_COMMAND)
                         
                                     {
                                     this.unPauseAppBackground(false);
@@ -954,7 +954,7 @@ this.setDemo();
                                     }
                                 
                              else 
-                        if(command == myCommandsFactory!.PAUSE_COMMAND)
+                        if(command == this.myCommandsFactory!.PAUSE_COMMAND)
                         
                                     {
                                     this.pauseAppBackground(false);
@@ -963,7 +963,7 @@ this.setDemo();
                                     }
                                 
                              else 
-                        if(command == myCommandsFactory!.SET_DISPLAYABLE)
+                        if(command == this.myCommandsFactory!.SET_DISPLAYABLE)
                         
                                     {
                                     this.pauseAppBackground(false);
@@ -1258,7 +1258,7 @@ this.stopAll();
         
 ;
     
-isFullScreen= features.isFeature(mainFeatureFactory!.FULL_SCREEN);
+this.isFullScreen= this.features.isFeature(mainFeatureFactory!.FULL_SCREEN);
     
 ResizableListenerHandler.getInstance()!.fireEvent(true);
     
@@ -1287,7 +1287,7 @@ stringBuffer!.append("Close isFullScreen/change: ");
     
 stringBuffer!.appendboolean(isFullScreen);
     
-stringBuffer!.appendboolean(fullScreenUtil!.isScreenChange(isFullScreen));
+stringBuffer!.appendboolean(this.fullScreenUtil!.isScreenChange(isFullScreen));
     
 stringBuffer!.append(" isResized: ");
     
@@ -1518,7 +1518,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
 ;
     
 
-    var isFullScreen: boolean = features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
+    var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
         
         
 ;
@@ -1527,13 +1527,13 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                         if(isFullScreen)
                         
                                     {
-                                    features.removeDefault(mainFeatureFactory!.FULL_SCREEN);
+                                    this.features.removeDefault(mainFeatureFactory!.FULL_SCREEN);
     
 
                                     }
                                 
                         else {
-                            features.addDefault(mainFeatureFactory!.FULL_SCREEN);
+                            this.features.addDefault(mainFeatureFactory!.FULL_SCREEN);
     
 
                         }
@@ -1571,7 +1571,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION,
 ;
     
 
-    var isFullScreen: boolean = features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
+    var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
         
         
 ;
@@ -1672,14 +1672,14 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
         
 ;
     
-thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface);
+this.thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface);
     
 this.logUtil!.putF(new StringMaker().
-                            append("Thread Priority: ")!.appendint(thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
+                            append("Thread Priority: ")!.appendint(this.thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
     
-this.allbinaryGameCanvasRunnableInterface!.setThread(thread);
+this.allbinaryGameCanvasRunnableInterface!.setThread(this.thread);
     
-threadFactoryUtil!.start(thread);
+threadFactoryUtil!.start(this.thread);
     
 }
 
@@ -1727,7 +1727,7 @@ ThreadUtil.getInstance()!.join(this.thread);
 ;
     
 
-                        if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
+                        if(this.features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
                         
                                     {
                                     progressCanvas!.addPortion(50, "Stopped Game Runnable");
@@ -1774,7 +1774,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AllBinaryGameLayerManager(basicColorFactory!.BLACK, basicColorFactory!.WHITE, gameInfo);
+                        return new AllBinaryGameLayerManager(this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE, gameInfo);
     
 }
 
@@ -1825,7 +1825,7 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
 ;
     
 
-                        if(allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
+                        if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
                                     
@@ -1877,7 +1877,7 @@ this.loadGameForm= loadGameForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return loadGameForm as LoadGameForm;
+                        return this.loadGameForm as LoadGameForm;
     
 }
 
@@ -1905,7 +1905,7 @@ this.resized= resized;
 
     public isDemoLoading(): boolean{
 
-                        if(startedBefore)
+                        if(this.startedBefore)
                         
                                     {
                                     

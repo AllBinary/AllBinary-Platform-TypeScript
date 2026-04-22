@@ -34,7 +34,10 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,7 +110,7 @@ stringBuffer!.append(lineBreak);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

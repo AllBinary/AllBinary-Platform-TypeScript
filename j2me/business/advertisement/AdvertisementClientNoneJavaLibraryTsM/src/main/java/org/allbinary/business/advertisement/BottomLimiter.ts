@@ -34,7 +34,10 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class BottomLimiter
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(lower: number, higher: number){
@@ -101,18 +104,18 @@ this.higher= higher;
                         if(gameAdState!.isShowingAt())
                         
                                     {
-                                    deltaY= higher;
+                                    this.deltaY= this.higher;
     
 
                                     }
                                 
                         else {
-                            deltaY= lower;
+                            this.deltaY= this.lower;
     
 
                         }
                             
-bottom= displayInfo!.getLastHeight() -deltaY;
+this.bottom= displayInfo!.getLastHeight() -this.deltaY;
     
 }
 

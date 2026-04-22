@@ -52,7 +52,10 @@ import { StoreValidationTransformTag } from "../../../../tags/StoreValidationTra
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,7 +72,7 @@ export class OrderHistoryTag extends StoreValidationTransformTag {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setStatus(value: string){

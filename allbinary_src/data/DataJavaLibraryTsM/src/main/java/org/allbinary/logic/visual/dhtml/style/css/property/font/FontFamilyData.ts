@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class FontFamilyData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "FONT_FAMILY_NAME";

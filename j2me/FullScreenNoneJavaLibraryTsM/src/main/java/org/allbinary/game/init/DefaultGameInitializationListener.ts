@@ -58,7 +58,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class DefaultGameInitializationListener
 public constructor (){
 
             super();
-            
+        
     var gameInitializedEventHandler: GameInitializedEventHandler = GameInitializedEventHandler.getInstance()!;
         
         
@@ -122,7 +125,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             this.logUtil!.putF(commonStrings!.START, this, ON_GAME_INITIALIZED);
     
 
-        while(!swtJOGLProcessor!.isHolderCreated();
+        while(!this.swtJOGLProcessor!.isHolderCreated();
 
                         )
         {
@@ -135,16 +138,16 @@ Thread.sleep(20);
 FeatureResourceInitializationUtil.getInstance()!.init(gameInitializedEvent!.getLevel());
     
 
-                        if(firstTime)
+                        if(this.firstTime)
                         
                                     {
-                                    firstTime= false;
+                                    this.firstTime= false;
     
 
                                     }
                                 
                         else {
-                            swtJOGLProcessor!.onSurfaceChanged();
+                            this.swtJOGLProcessor!.onSurfaceChanged();
     
 
                         }

@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
         
 
     private imageComparisonSearch: ImageComparisonSearch
-public constructor (anyType: any = {}, imageComparisonSearch: ImageComparisonSearch)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, imageComparisonSearch: ImageComparisonSearch){
+            super(anyType);
+                    var anyType = anyType
 var imageComparisonSearch = imageComparisonSearch
 
 

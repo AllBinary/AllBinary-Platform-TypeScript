@@ -70,7 +70,10 @@ import { CommonPhoneStrings } from "../../org/allbinary/string/CommonPhoneString
 
 
 
-        
+
+
+
+
 
 
 
@@ -99,7 +102,7 @@ export class OrderHistoryRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -111,11 +114,11 @@ this.getFormData();
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID);
+this.id= this.request.getParameter(OrderData.ID);
     
-this.groupId= request.getParameter(ShippingMethodData.GROUP);
+this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
     
-this.status= request.getParameter(OrderHistoryData.STATUS);
+this.status= this.request.getParameter(OrderHistoryData.STATUS);
     
 }
 
@@ -128,7 +131,7 @@ this.status= request.getParameter(OrderHistoryData.STATUS);
                         
                                     {
                                     
-                        if(OrderItemsEntityFactory.getInstance()!.isEverythingShipped(id))
+                        if(OrderItemsEntityFactory.getInstance()!.isEverythingShipped(this.id))
                         
                                     {
                                     this.status= OrderHistoryData.SHIPPED;
@@ -151,7 +154,7 @@ this.status= request.getParameter(OrderHistoryData.STATUS);
         
 ;
     
-OrderHistoryEntityFactory.getInstance()!.setStatus(id, this.status);
+OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -213,10 +216,10 @@ var newStatus = newStatus
         
 ;
     
-OrderHistoryEntityFactory.getInstance()!.setStatus(id, newStatus);
+OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, newStatus);
     
 
-    var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(id)!;
+    var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;
         
         
 ;

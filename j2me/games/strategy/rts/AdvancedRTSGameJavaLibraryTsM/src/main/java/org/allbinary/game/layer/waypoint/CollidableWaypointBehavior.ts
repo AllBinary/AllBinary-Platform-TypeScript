@@ -37,7 +37,10 @@ import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbin
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbin
         
 export class CollidableWaypointBehavior extends CollidableRTSBehavior {
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-            var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                    var ownerLayer = ownerLayer
 var collidable = collidable
 
 

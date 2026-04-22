@@ -63,7 +63,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -142,7 +145,7 @@ export class CanvasDom
 public constructor (canvasNode: Node){
 
             super();
-            var canvasNode = canvasNode
+        var canvasNode = canvasNode
 this.grid= new Grid();
     
 this.grid.grid= PointFactory.getInstance()!.getInstance(0, 0);
@@ -358,7 +361,7 @@ this.grid.isGridPossible= .
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
-            var canvasJPanel = canvasJPanel
+        var canvasJPanel = canvasJPanel
 this.angle= canvasJPanel!.getAngle();
     
 this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap();

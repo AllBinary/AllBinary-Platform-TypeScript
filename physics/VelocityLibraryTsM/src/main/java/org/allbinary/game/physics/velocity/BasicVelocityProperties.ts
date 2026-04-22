@@ -58,12 +58,17 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicVelocityInterface } from "./BasicVelocityInterface.js";
+
 export class BasicVelocityProperties
             extends Object
          implements BasicVelocityInterface {
@@ -85,7 +90,7 @@ export class BasicVelocityProperties
 public constructor (){
 
             super();
-            this.velocityXBasicDecimal= new BasicDecimal();
+        this.velocityXBasicDecimal= new BasicDecimal();
     
 this.velocityYBasicDecimal= new BasicDecimal();
     
@@ -109,7 +114,7 @@ this.velocityZBasicDecimal!.set(0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return velocityXBasicDecimal;
+                        return this.velocityXBasicDecimal;
     
 }
 
@@ -119,7 +124,7 @@ this.velocityZBasicDecimal!.set(0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return velocityYBasicDecimal;
+                        return this.velocityYBasicDecimal;
     
 }
 
@@ -129,7 +134,7 @@ this.velocityZBasicDecimal!.set(0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return velocityXBasicDecimal;
+                        return this.velocityZBasicDecimal;
     
 }
 
@@ -143,13 +148,13 @@ this.velocityZBasicDecimal!.set(0);
     //var direction = direction
     //var otherDirection = otherDirection
 
-    var angle: Angle = directionUtil!.getAngle(direction)!;
+    var angle: Angle = this.directionUtil!.getAngle(direction)!;
         
         
 ;
     
 
-    var otherAngle: Angle = directionUtil!.getAngle(otherDirection)!;
+    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;
         
         
 ;
@@ -164,13 +169,13 @@ this.setVelocity(magnitudeBasicDecimal, angle, otherAngle);
     //var direction = direction
     //var otherDirection = otherDirection
 
-    var angle: Angle = directionUtil!.getAngle(direction)!;
+    var angle: Angle = this.directionUtil!.getAngle(direction)!;
         
         
 ;
     
 
-    var otherAngle: Angle = directionUtil!.getAngle(otherDirection)!;
+    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;
         
         
 ;
@@ -185,13 +190,13 @@ this.setVelocity(magnitude, angle, otherAngle);
     //var direction = direction
     //var otherDirection = otherDirection
 
-    var angle: Angle = directionUtil!.getAngle(direction)!;
+    var angle: Angle = this.directionUtil!.getAngle(direction)!;
         
         
 ;
     
 
-    var otherAngle: Angle = directionUtil!.getAngle(otherDirection)!;
+    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;
         
         
 ;
@@ -206,13 +211,13 @@ this.addVelocity(magnitudeBasicDecimal, angle, otherAngle);
     //var direction = direction
     //var otherDirection = otherDirection
 
-    var angle: Angle = directionUtil!.getAngle(direction)!;
+    var angle: Angle = this.directionUtil!.getAngle(direction)!;
         
         
 ;
     
 
-    var otherAngle: Angle = directionUtil!.getAngle(otherDirection)!;
+    var otherAngle: Angle = this.directionUtil!.getAngle(otherDirection)!;
         
         
 ;
@@ -258,9 +263,9 @@ this.addVelocity(magnitude, angle, otherAngle);
     //var otherAngle = otherAngle
 this.setVelocity(magnitude, angle.getValue();
 
-                        .toInt(), otherAngle!.getValue();
+                        , otherAngle!.getValue();
 
-                        .toInt());
+                        );
     
 }
 
@@ -271,9 +276,9 @@ this.setVelocity(magnitude, angle.getValue();
     //var otherAngle = otherAngle
 this.addVelocity(magnitude, angle.getValue();
 
-                        .toInt(), otherAngle!.getValue();
+                        , otherAngle!.getValue();
 
-                        .toInt());
+                        );
     
 }
 
@@ -283,28 +288,28 @@ this.addVelocity(magnitude, angle.getValue();
     //var angle = angle
     //var otherAngle = otherAngle
 
-    var xVector: number = (axisMathVectorUtil!.calculateX(magnitude, angle) /velocityXBasicDecimal!.getScaledFactorValue());
+    var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
 
-    var yVector: number = (axisMathVectorUtil!.calculateY(magnitude, angle) /velocityYBasicDecimal!.getScaledFactorValue());
+    var yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
 
-    var zVector: number = (axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /velocityZBasicDecimal!.getScaledFactorValue());
+    var zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
-velocityXBasicDecimal!.set(xVector);
+this.velocityXBasicDecimal!.set(xVector);
     
-velocityYBasicDecimal!.set(yVector);
+this.velocityYBasicDecimal!.set(yVector);
     
-velocityZBasicDecimal!.set(zVector);
+this.velocityZBasicDecimal!.set(zVector);
     
 }
 
@@ -314,28 +319,28 @@ velocityZBasicDecimal!.set(zVector);
     //var angle = angle
     //var otherAngle = otherAngle
 
-    var xVector: number = (axisMathVectorUtil!.calculateX(magnitude, angle) /velocityXBasicDecimal!.getScaledFactorValue());
+    var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
 
-    var yVector: number = (axisMathVectorUtil!.calculateY(magnitude, angle) /velocityYBasicDecimal!.getScaledFactorValue());
+    var yVector: number = (this.axisMathVectorUtil!.calculateY(magnitude, angle) /this.velocityYBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
 
-    var zVector: number = (axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /velocityZBasicDecimal!.getScaledFactorValue());
+    var zVector: number = (this.axisMathVectorUtil!.calculateZ(magnitude, otherAngle) /this.velocityZBasicDecimal!.getScaledFactorValue());
         
         
 ;
     
-velocityXBasicDecimal!.add(xVector);
+this.velocityXBasicDecimal!.add(xVector);
     
-velocityYBasicDecimal!.add(yVector);
+this.velocityYBasicDecimal!.add(yVector);
     
-velocityZBasicDecimal!.add(zVector);
+this.velocityZBasicDecimal!.add(zVector);
     
 }
 

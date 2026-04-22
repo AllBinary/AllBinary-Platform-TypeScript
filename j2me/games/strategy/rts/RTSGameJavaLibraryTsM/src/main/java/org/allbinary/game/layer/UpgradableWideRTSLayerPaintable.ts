@@ -40,7 +40,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable 
     private cost: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
-public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable)                        
-
-                            : super(upgradableRTSLayerHudPaintable){
-
-            super();
-            var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
+public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
+            super(upgradableRTSLayerHudPaintable);
+                    var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
 
 
                             //For kotlin this is before the body of the constructor.

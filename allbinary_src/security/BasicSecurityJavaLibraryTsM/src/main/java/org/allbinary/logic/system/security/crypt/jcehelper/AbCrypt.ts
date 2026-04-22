@@ -61,7 +61,10 @@ import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/
 
 
 
-        
+
+
+
+
 
 
 
@@ -84,7 +87,7 @@ export class AbCrypt
 public constructor (algorithm: string){
 
             super();
-                //var algorithm = algorithm
+            //var algorithm = algorithm
 this.algorithm= algorithm;
     
 }
@@ -125,7 +128,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 ;
     
 
-    var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(algorithm)!;
+    var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;
         
         
 ;
@@ -137,7 +140,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 ;
     
 
-    var cipher: Cipher = Cipher.getInstance(algorithm)!;
+    var cipher: Cipher = Cipher.getInstance(this.algorithm)!;
         
         
 ;

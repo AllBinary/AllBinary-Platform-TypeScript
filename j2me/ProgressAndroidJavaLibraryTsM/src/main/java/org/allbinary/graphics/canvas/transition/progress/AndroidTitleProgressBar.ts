@@ -46,7 +46,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,12 +83,9 @@ export class AndroidTitleProgressBar extends ProgressCanvas {
     private portion: number = 0;
         
         
-protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-            var title = title
+protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, backgroundBasicColor, foregroundBasicColor);
+                    var title = title
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor
 
@@ -141,7 +141,7 @@ this.progressActivity= activity;
     
 super.start();
     
-this.progressActivity!.runOnUiThread(showTitleProgressBarRunnable);
+this.progressActivity!.runOnUiThread(this.showTitleProgressBarRunnable);
     
 
                 //: 
@@ -159,7 +159,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NA
         try {
             this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
     
-this.progressActivity!.runOnUiThread(dismissTitleProgressBarRunnable);
+this.progressActivity!.runOnUiThread(this.dismissTitleProgressBarRunnable);
     
 super.end();
     
@@ -184,7 +184,7 @@ var index = index
     
 this.portion= value;
     
-this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
+this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnable);
     
 
                 //: 
@@ -206,7 +206,7 @@ var text = text
     
 this.portion= value;
     
-this.progressActivity!.runOnUiThread(progressDialogPortionSetProgressRunnable);
+this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnable);
     
 
                 //: 
@@ -225,7 +225,7 @@ var value = value
         try {
             super.setValue(value);
     
-this.progressActivity!.runOnUiThread(progressDialogSetProgressRunnable);
+this.progressActivity!.runOnUiThread(this.progressDialogSetProgressRunnable);
     
 
                 //: 
@@ -264,7 +264,7 @@ export inner class TitleProgressBarSetProgressRunnable
             
     var value: number = this@AndroidTitleProgressBar.getValue();
 
-                        .toInt();
+                        ;
         
         
 ;
@@ -300,7 +300,7 @@ export inner class TitleProgressBarPortionSetProgressRunnable
 
         try {
             
-    var value: number = (this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion).toInt();
+    var value: number = (this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion);
         
         
 ;
@@ -338,7 +338,7 @@ export inner class ShowTitleProgressBarRunnable
             
     var maxValue: number = this@AndroidTitleProgressBar.getMaxValue();
 
-                        .toInt();
+                        ;
         
         
 ;

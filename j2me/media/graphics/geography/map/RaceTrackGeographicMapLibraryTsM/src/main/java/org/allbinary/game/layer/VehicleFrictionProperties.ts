@@ -34,7 +34,10 @@ import { FrictionData } from "../../../../org/allbinary/game/physics/friction/Fr
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,17 +56,17 @@ export class VehicleFrictionProperties extends FrictionProperties {
 public constructor (tireFriction: number, brakeFriction: number, airFriction: number, crashFriction: number){
 
             super();
-            var tireFriction = tireFriction
+        var tireFriction = tireFriction
 var brakeFriction = brakeFriction
 var airFriction = airFriction
 var crashFriction = crashFriction
-TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction;
+this.TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction;
     
-BRAKE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -brakeFriction;
+this.BRAKE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -brakeFriction;
     
-AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
+this.AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
     
-CRASH_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -crashFriction;
+this.CRASH_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -crashFriction;
     
 }
 

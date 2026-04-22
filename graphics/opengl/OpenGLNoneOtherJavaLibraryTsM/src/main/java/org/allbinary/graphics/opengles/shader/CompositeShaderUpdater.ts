@@ -40,7 +40,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ export class CompositeShaderUpdater extends ShaderUpdater {
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
         
         
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[])                        
-
-                            : this(uniformBlockArray, uniformArray, attributeArray, new Array(attributeArray!.length)){
-
-            super();
-                //var uniformBlockArray = uniformBlockArray
+public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[]){
+            this(uniformBlockArray, uniformArray, attributeArray, new Array(attributeArray!.length));
+                        //var uniformBlockArray = uniformBlockArray
     //var uniformArray = uniformArray
     //var attributeArray = attributeArray
 
@@ -85,7 +85,7 @@ public constructor (uniformBlockArray: string[], uniformArray: string[], attribu
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();
-                //var uniformBlockArray = uniformBlockArray
+            //var uniformBlockArray = uniformBlockArray
     //var uniformArray = uniformArray
     //var attributeArray = attributeArray
     //var attributeHandleArray = attributeHandleArray

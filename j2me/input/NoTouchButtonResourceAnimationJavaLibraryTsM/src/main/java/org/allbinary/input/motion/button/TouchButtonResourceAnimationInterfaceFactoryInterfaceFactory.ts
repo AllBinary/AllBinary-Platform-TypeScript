@@ -46,7 +46,10 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,23 +57,17 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
         
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
-public constructor ()                        
-
-                            : super("TouchButton Animations"){
-
-            super();
-            
+public constructor (){
+            super("TouchButton Animations");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+public constructor (name: string){
+            super(name);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.

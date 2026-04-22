@@ -28,12 +28,17 @@
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
+
 import { CacheableInterface } from "./CacheableInterface.js";
 
 export class BasicArrayListCacheableInterfaceFactory

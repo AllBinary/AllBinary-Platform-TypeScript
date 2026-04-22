@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class StoreFrontsEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getStoreFrontsEntityInstance(): StoreFrontsEntity{

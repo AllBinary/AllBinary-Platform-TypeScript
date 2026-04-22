@@ -43,7 +43,10 @@ import { StringValidationUtil } from "../../../../org/allbinary/logic/string/Str
 
 
 
-        
+
+
+
+
 
 
 
@@ -121,7 +124,7 @@ var hashMap = hashMap
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

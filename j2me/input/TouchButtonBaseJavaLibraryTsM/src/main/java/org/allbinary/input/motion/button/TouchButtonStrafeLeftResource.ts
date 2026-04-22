@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,12 +55,9 @@ export class TouchButtonStrafeLeftResource extends TouchButtonResource {
     
 }
 
-private constructor ()                        
-
-                            : super("/touch_button_strafe_left_arrow_64_by_64.png", "/touch_button_strafe_left_arrow_hint_64_by_64.png"){
-
-            super();
-            
+private constructor (){
+            super("/touch_button_strafe_left_arrow_64_by_64.png", "/touch_button_strafe_left_arrow_hint_64_by_64.png");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

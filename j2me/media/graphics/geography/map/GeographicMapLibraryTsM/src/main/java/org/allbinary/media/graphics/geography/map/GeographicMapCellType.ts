@@ -36,7 +36,10 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class GeographicMapCellType
         
 
     private readonly type: number
-public constructor (type: number)                        
-
-                            : this(type, 0){
-
-            super();
-                //var type = type
+public constructor (type: number){
+            this(type, 0);
+                        //var type = type
 
 
                             //For kotlin this is before the body of the constructor.
@@ -77,7 +77,7 @@ public constructor (type: number)
 public constructor (type: number, reset: number){
 
             super();
-                //var type = type
+            //var type = type
     //var reset = reset
 this.type= type;
     

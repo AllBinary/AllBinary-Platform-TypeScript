@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class PointFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(x: number, y: number): GPoint{

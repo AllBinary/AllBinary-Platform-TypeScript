@@ -37,7 +37,10 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class AllBinaryLayerManager extends LayerManager {
 protected constructor (){
 
             super();
-            }
+        }
 
 
     getLayerProcessorArray(): LayerProcessor[]{
@@ -107,7 +110,7 @@ this.basicLayerProcessorArray= layerProcessorArray;
 index < size; index++)
         {
 
-    var layerProcessorInterface: LayerProcessor = basicLayerProcessorArray[index]!;
+    var layerProcessorInterface: LayerProcessor = this.basicLayerProcessorArray[index]!;
         
         
 ;
@@ -181,7 +184,7 @@ layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent);
         
 --index >= 0; )
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!;
+layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
 
                         if(layerProcessorInterface!.isProcessorLayer(layerInterface))
@@ -202,7 +205,7 @@ layerProcessorInterface= basicLayerProcessorArray[index]!;
 
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-deleteLayerManagerEvent!.setLayerInterface(layerInterface);
+this.deleteLayerManagerEvent!.setLayerInterface(layerInterface);
     
 layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);
     
@@ -221,7 +224,7 @@ layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);
         
 --index >= 0; )
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!;
+layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
 layerProcessorInterface!.getLayerManager()!.remove(layerInterface);
     
@@ -256,7 +259,7 @@ super.remove(layerInterface);
         
 index < size; index++)
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!;
+layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
 layerProcessorInterface!.process(this);
     
@@ -289,7 +292,7 @@ layerProcessorInterface!.process(this);
         
 index < size; index++)
         {
-layerProcessorInterface= basicLayerProcessorArray[index]!;
+layerProcessorInterface= this.basicLayerProcessorArray[index]!;
     
 layerProcessorInterface!.getLayerManager()!.cleanup();
     

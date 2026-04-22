@@ -60,7 +60,10 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class DownloadableItemView
 public constructor (downloadableItem: DownloadableItem){
 
             super();
-            var downloadableItem = downloadableItem
+        var downloadableItem = downloadableItem
 this.downloadableItem= downloadableItem;
     
 }
@@ -107,13 +110,13 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = downloadableItem!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
         
         
 ;
     
 
-    var totalTime: number = downloadableItem!.getValidTime()!.longValue()!;
+    var totalTime: number = this.downloadableItem!.getValidTime()!.longValue()!;
         
         
 ;

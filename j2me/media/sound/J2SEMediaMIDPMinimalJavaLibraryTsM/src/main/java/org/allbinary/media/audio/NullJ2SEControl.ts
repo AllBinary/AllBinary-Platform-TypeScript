@@ -31,7 +31,10 @@ import { Control } from "../../../../javax/sound/sampled/Control.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { Type } from "./Type.js";
 
 export class NullJ2SEControl extends Control {
         
- constructor (type: Type)                        
-
-                            : super(type){
-
-            super();
-            var type = type
+ constructor (type: Type){
+            super(type);
+                    var type = type
 
 
                             //For kotlin this is before the body of the constructor.

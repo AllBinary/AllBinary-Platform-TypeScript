@@ -82,7 +82,10 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,7 +116,7 @@ export class ImageCopyUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -149,7 +152,7 @@ private constructor (){
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(features.isFeature(openGLFeatureFactory!.OPENGL))
+                        if(this.features.isFeature(this.openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
@@ -158,7 +161,7 @@ private constructor (){
         
 ;
     
-image= openGLUtil!.add(image);
+image= this.openGLUtil!.add(image);
     
 
 
@@ -189,12 +192,12 @@ image= openGLUtil!.add(image);
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -212,7 +215,7 @@ image= openGLUtil!.add(image);
 ;
     
 
-                        if(features.isFeature(openGLFeatureFactory!.OPENGL))
+                        if(this.features.isFeature(this.openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
@@ -268,7 +271,7 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage
 
                         }
                             
-image= openGLUtil!.add(image);
+image= this.openGLUtil!.add(image);
     
 
 
@@ -310,12 +313,12 @@ image= openGLUtil!.add(image);
 ;
     
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -327,11 +330,11 @@ image= openGLUtil!.add(image);
                                     }
                                 
 
-                        if(features.isFeature(openGLFeatureFactory!.OPENGL))
+                        if(this.features.isFeature(this.openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
-                        if(openGLESImageExclusionUtil!.isCustomScaling(originalImage))
+                        if(this.openGLESImageExclusionUtil!.isCustomScaling(originalImage))
                         
                                     {
                                     
@@ -452,7 +455,7 @@ image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.create
 
                         }
                             
-image= openGLUtil!.add(image);
+image= this.openGLUtil!.add(image);
     
 
 
@@ -485,12 +488,12 @@ image= openGLUtil!.add(image);
 ;
     
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -510,7 +513,7 @@ image= openGLUtil!.add(image);
 ;
     
 
-                        if(features.isFeature(openGLFeatureFactory!.OPENGL))
+                        if(this.features.isFeature(this.openGLFeatureFactory!.OPENGL))
                         
                                     {
                                     
@@ -547,9 +550,9 @@ image= openGLUtil!.add(image);
         
 ;
     
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLWidth);
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width) /openGLWidth);
     
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLHeight);
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height) /openGLHeight);
     
 openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f;
     
@@ -575,7 +578,7 @@ image= openGLESImage;
                             image= originalImage;
     
 
-    var openGLESImage: OpenGLESImage = openGLUtil!.add(image);
+    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image);
 
                          as OpenGLESImage;
         
@@ -588,12 +591,12 @@ image= openGLESImage;
         
 ;
     
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width.toFloat()) /openGLESImage!.getWidth()).toFloat();
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width) /openGLESImage!.getWidth());
     
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height.toFloat()) /openGLESImage!.getHeight()).toFloat();
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height) /openGLESImage!.getHeight());
     
 
-                        if(image.getName()!.startsWith(INFORMATION))
+                        if(image.getName()!.startsWith(this.INFORMATION))
                         
                                     {
                                     openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
@@ -621,7 +624,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25f;
 openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
     
 
-                        if(image.getName()!.startsWith(LEADERBOARD))
+                        if(image.getName()!.startsWith(this.LEADERBOARD))
                         
                                     {
                                     openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
@@ -747,7 +750,7 @@ image= new SwtImmutableImage(originalImage!.getName(), SwtDeviceComponent.create
 
                         }
                             
-image= openGLUtil!.add(image);
+image= this.openGLUtil!.add(image);
     
 
                         }
@@ -768,12 +771,12 @@ image= openGLUtil!.add(image);
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.putF(NO_COPY, this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
     
 
 
@@ -785,13 +788,13 @@ image= openGLUtil!.add(image);
                                     }
                                 
 
-    var newWidth: number = (originalImage!.getWidth() *canvasScale).toInt();
+    var newWidth: number = (originalImage!.getWidth() *canvasScale);
         
         
 ;
     
 
-    var newHeight: number = (originalImage!.getHeight() *canvasScale).toInt();
+    var newHeight: number = (originalImage!.getHeight() *canvasScale);
         
         
 ;

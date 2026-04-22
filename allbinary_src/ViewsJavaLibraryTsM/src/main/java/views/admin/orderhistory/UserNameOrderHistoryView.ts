@@ -79,7 +79,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,12 +112,9 @@ export class UserNameOrderHistoryView extends HttpStoreComponentView implements 
     private readonly ON: string = "on";
         
         
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -123,17 +123,17 @@ this.request= this.getPageContext()!.getRequest();
 
                          as HttpServletRequest;
     
-this.userName= request.getParameter(UserData.USERNAME);
+this.userName= this.request.getParameter(UserData.USERNAME);
     
-this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
+this.preprocessing= this.request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
     
-this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME);
+this.shipped= this.request.getParameter(OrderHistoryData.SHIPPEDNAME);
     
-this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
+this.partiallyShipped= this.request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
     
-this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME);
+this.processing= this.request.getParameter(OrderHistoryData.PROCESSINGNAME);
     
-this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME);
+this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
     
 }
 

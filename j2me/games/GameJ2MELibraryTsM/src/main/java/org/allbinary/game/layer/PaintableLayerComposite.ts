@@ -40,7 +40,10 @@ import { Layer } from "../../../../org/allbinary/layer/Layer.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class PaintableLayerComposite extends Paintable {
 public constructor (paintableArray: Layer[]){
 
             super();
-                //var paintableArray = paintableArray
+            //var paintableArray = paintableArray
 this.paintableArray= paintableArray;
     
 }
@@ -66,7 +69,7 @@ this.paintableArray= paintableArray;
 
 
                         for (
-    var index: number = paintableArray!.length
+    var index: number = this.paintableArray!.length
                 ;
         
         
@@ -90,7 +93,7 @@ this.paintableArray[index]!.paint(graphics);
 
 
                         for (
-    var index: number = paintableArray!.length
+    var index: number = this.paintableArray!.length
                 ;
         
         

@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class PaymentGatewayMapping
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
-            var paymentGatewayInterface = paymentGatewayInterface
+        var paymentGatewayInterface = paymentGatewayInterface
 this.paymentGatewayInterface= paymentGatewayInterface;
     
 }

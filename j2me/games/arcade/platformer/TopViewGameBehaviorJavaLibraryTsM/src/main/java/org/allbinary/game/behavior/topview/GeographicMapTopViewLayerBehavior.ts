@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ import { TopViewGameLayerBehavior } from "./TopViewGameLayerBehavior.js";
 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         
-public constructor (maxGravityActionIndex: number)                        
-
-                            : super(maxGravityActionIndex){
-
-            super();
-                //var maxGravityActionIndex = maxGravityActionIndex
+public constructor (maxGravityActionIndex: number){
+            super(maxGravityActionIndex);
+                        //var maxGravityActionIndex = maxGravityActionIndex
 
 
                             //For kotlin this is before the body of the constructor.

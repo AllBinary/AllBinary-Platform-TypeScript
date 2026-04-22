@@ -40,7 +40,10 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,12 +71,9 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
         
         
-private constructor ()                        
-
-                            : super(1){
-
-            super();
-            
+private constructor (){
+            super(1);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

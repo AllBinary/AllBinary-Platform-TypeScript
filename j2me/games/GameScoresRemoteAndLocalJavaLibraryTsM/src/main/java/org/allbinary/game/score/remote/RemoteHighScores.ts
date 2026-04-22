@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -181,12 +184,9 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
     public readonly ASCENDING: string = "ASCENDING";
         
         
-private constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, ascending: Boolean, preload: boolean)                        
-
-                            : super(gameInfo!.toString(), heading, columnTwoHeading){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+private constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, ascending: Boolean, preload: boolean){
+            super(gameInfo!.toString(), heading, columnTwoHeading);
+                        //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
     //var gameInfo = gameInfo
     //var heading = heading

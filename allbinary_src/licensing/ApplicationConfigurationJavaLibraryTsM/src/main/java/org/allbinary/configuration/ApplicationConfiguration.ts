@@ -62,7 +62,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -109,7 +112,7 @@ export class ApplicationConfiguration
 private constructor (){
 
             super();
-            
+        
         try {
             
                         if(FileFactory.getInstance()!.isFile(FILE))

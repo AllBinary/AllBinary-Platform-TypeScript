@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class AbBasicCrypt
 public constructor (algorithm: string, key: string){
 
             super();
-            var algorithm = algorithm
+        var algorithm = algorithm
 var key = key
 
         try {
@@ -123,14 +126,14 @@ Security.addProvider(sunJce);
 ;
     
 
-    var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(algorithm)!;
+    var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;
         
         
 ;
     
 this.secretKey= keyFactory!.generateSecret(keySpec);
     
-this.cipher= Cipher.getInstance(algorithm);
+this.cipher= Cipher.getInstance(this.algorithm);
     
 
                 //: 
@@ -153,7 +156,7 @@ PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
 var array = array
 
         try {
-            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
     
 
     var ivArray: number[] = secretKey!.getEncoded()!;
@@ -162,7 +165,7 @@ var array = array
 ;
     
 
-    var encrypted: number[] = cipher.doFinal(array)!;
+    var encrypted: number[] = this.cipher.doFinal(array)!;
         
         
 ;
@@ -230,7 +233,7 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 var array = array
 
         try {
-            cipher.init(Cipher.DECRYPT_MODE, secretKey);
+            this.cipher.init(Cipher.DECRYPT_MODE, secretKey);
     
 
     var ivArray: number[] = new Array(8);
@@ -276,7 +279,7 @@ result[index -ivArray!.length]= array[index]!;
 }
 
 
-    var decrypted: number[] = cipher.doFinal(result)!;
+    var decrypted: number[] = this.cipher.doFinal(result)!;
         
         
 ;

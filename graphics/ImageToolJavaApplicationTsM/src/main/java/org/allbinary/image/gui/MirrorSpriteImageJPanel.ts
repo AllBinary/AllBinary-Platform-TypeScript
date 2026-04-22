@@ -64,7 +64,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,12 +97,9 @@ export class MirrorSpriteImageJPanel extends javax.swing.JPanel implements Image
     private imageProcessorInput: ImageProcessorInput
 
     private result: BufferedImage
-public constructor (imageProcessorInput: ImageProcessorInput)                        
-
-                            : super(){
-
+public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-            var imageProcessorInput = imageProcessorInput
+                    var imageProcessorInput = imageProcessorInput
 
 
                             //For kotlin this is before the body of the constructor.
@@ -245,39 +245,39 @@ var graphics = graphics
                                 }
                             ;
     
-jPanel2= new javax.swing.JPanel();
+this.jPanel2= new javax.swing.JPanel();
     
-imageHeightIsFrameSizeJCheckBox= new javax.swing.JCheckBox();
+this.imageHeightIsFrameSizeJCheckBox= new javax.swing.JCheckBox();
     
-horizontalJCheckBox= new javax.swing.JCheckBox();
+this.horizontalJCheckBox= new javax.swing.JCheckBox();
     
-verticleJCheckBox= new javax.swing.JCheckBox();
+this.verticleJCheckBox= new javax.swing.JCheckBox();
     
-writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
+this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-generateJButton= new javax.swing.JButton();
+this.generateJButton= new javax.swing.JButton();
     
-jPanel3= new javax.swing.JPanel();
+this.jPanel3= new javax.swing.JPanel();
     
-jLabel2= new javax.swing.JLabel();
+this.jLabel2= new javax.swing.JLabel();
     
 
-    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel1);
+    var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);
         
         
 ;
     
-jPanel1!.setLayout(jPanel1Layout);
+this.jPanel1!.setLayout(jPanel1Layout);
     
 jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 507, Short.MAX_VALUE));
     
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(0, 230, Short.MAX_VALUE));
     
-imageHeightIsFrameSizeJCheckBox!.setSelected(true);
+this.imageHeightIsFrameSizeJCheckBox!.setSelected(true);
     
-imageHeightIsFrameSizeJCheckBox!.setText("Image Height Is Frame Size");
+this.imageHeightIsFrameSizeJCheckBox!.setText("Image Height Is Frame Size");
     
-imageHeightIsFrameSizeJCheckBox!.setEnabled(false);
+this.imageHeightIsFrameSizeJCheckBox!.setEnabled(false);
     
 imageHeightIsFrameSizeJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -291,19 +291,19 @@ imageHeightIsFrameSizeJCheckBoxActionPerformed(evt);
                                 }
                             );
     
-horizontalJCheckBox!.setSelected(true);
+this.horizontalJCheckBox!.setSelected(true);
     
-horizontalJCheckBox!.setText("Horizontal");
+this.horizontalJCheckBox!.setText("Horizontal");
     
-horizontalJCheckBox!.setEnabled(false);
+this.horizontalJCheckBox!.setEnabled(false);
     
-verticleJCheckBox!.setText("Verticle");
+this.verticleJCheckBox!.setText("Verticle");
     
-verticleJCheckBox!.setEnabled(false);
+this.verticleJCheckBox!.setEnabled(false);
     
-writeOverOriginalJCheckBox!.setText("Write Over Original");
+this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-generateJButton!.setText("Generate");
+this.generateJButton!.setText("Generate");
     
 generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -318,26 +318,26 @@ generateJButtonActionPerformed(evt);
                             );
     
 
-    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel2);
+    var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);
         
         
 ;
     
-jPanel2!.setLayout(jPanel2Layout);
+this.jPanel2!.setLayout(jPanel2Layout);
     
 jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(verticleJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)!.add(horizontalJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(imageHeightIsFrameSizeJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(writeOverOriginalJCheckBox)!.addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)!.add(generateJButton)));
     
 jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel2Layout!.createSequentialGroup()!.add(jPanel2Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)!.add(imageHeightIsFrameSizeJCheckBox, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)!.add(horizontalJCheckBox)!.add(verticleJCheckBox)!.add(writeOverOriginalJCheckBox)!.add(generateJButton, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))!.addContainerGap()));
     
-jLabel2!.setText("Results:");
+this.jLabel2!.setText("Results:");
     
 
-    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(jPanel3);
+    var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);
         
         
 ;
     
-jPanel3!.setLayout(jPanel3Layout);
+this.jPanel3!.setLayout(jPanel3Layout);
     
 jPanel3Layout!.setHorizontalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)!.add(jPanel3Layout!.createSequentialGroup()!.add(jLabel2)!.addContainerGap(448, Short.MAX_VALUE)));
     

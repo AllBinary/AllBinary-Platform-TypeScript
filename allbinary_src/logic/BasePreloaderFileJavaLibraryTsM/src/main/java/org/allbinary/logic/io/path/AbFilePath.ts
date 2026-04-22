@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -40,12 +43,9 @@ import { PathUtil } from "./PathUtil.js";
 
 export class AbFilePath extends AbPath {
         
-public constructor (aPath: string)                        
-
-                            : super(){
-
+public constructor (aPath: string){
             super();
-            var aPath = aPath
+                    var aPath = aPath
 
 
                             //For kotlin this is before the body of the constructor.

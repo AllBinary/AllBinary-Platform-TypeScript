@@ -52,7 +52,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class ImageArrayAnimation extends IndexedAnimation {
     circularIndexUtil: CircularIndexUtil = CircularIndexUtil.NULL_CIRCULAR_INDEX_UTIL;
         
         
-public constructor (imageArray: Image[], animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var imageArray = imageArray
+public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var imageArray = imageArray
     //var animationBehavior = animationBehavior
 
 

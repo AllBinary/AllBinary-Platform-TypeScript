@@ -58,7 +58,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,12 +79,9 @@ export class AllBinaryFlickerAndroidImageRotationAnimationFactory
     private readonly angleIncrement: number
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (image: Image, width: number, height: number)                        
-
-                            : this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort(), AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number){
+            this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
 
@@ -90,12 +90,9 @@ public constructor (image: Image, width: number, height: number)
                     
 }
 
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort(), animationBehaviorFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory);
+                        //var image = image
     //var width = width
     //var height = height
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -105,12 +102,9 @@ public constructor (image: Image, width: number, height: number, animationBehavi
                     
 }
 
-public constructor (image: Image, width: number, height: number, angleIncrement: number)                        
-
-                            : this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var image = image
+public constructor (image: Image, width: number, height: number, angleIncrement: number){
+            this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance());
+                        //var image = image
     //var width = width
     //var height = height
     //var angleIncrement = angleIncrement
@@ -123,7 +117,7 @@ public constructor (image: Image, width: number, height: number, angleIncrement:
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var image = image
+            //var image = image
     //var width = width
     //var height = height
     //var angleIncrement = angleIncrement

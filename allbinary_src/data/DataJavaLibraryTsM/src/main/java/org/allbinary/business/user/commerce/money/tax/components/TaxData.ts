@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class TaxData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

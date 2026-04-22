@@ -64,12 +64,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransactionEntityInterface } from "./TransactionEntityInterface.js";
+
 export class TransactionEntity extends AbSqlBean implements TransactionEntityInterface {
         
 
@@ -80,16 +85,13 @@ export class TransactionEntity extends AbSqlBean implements TransactionEntityInt
     private readonly tableName: string = "vtrans";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 
@@ -217,7 +219,7 @@ super.insert(values);
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
     
-stringBuffer!.append(tableName);
+stringBuffer!.append(this.tableName);
     
 stringBuffer!.append(this.sqlStrings!.START);
     

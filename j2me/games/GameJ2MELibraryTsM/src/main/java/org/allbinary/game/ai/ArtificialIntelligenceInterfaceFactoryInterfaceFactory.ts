@@ -39,7 +39,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ var hashtable = hashtable
 ;
     
 
-    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
+    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
         
         
 ;
@@ -111,7 +114,7 @@ var hashtable = hashtable
 
     public add(artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface){
 var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
-list.add(artificialIntelligenceInterfaceFactoryInterface);
+this.list.add(artificialIntelligenceInterfaceFactoryInterface);
     
 }
 

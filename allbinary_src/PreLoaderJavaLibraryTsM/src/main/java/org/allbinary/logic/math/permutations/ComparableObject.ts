@@ -31,12 +31,17 @@ import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Comparable } from "./Comparable.js";
+
 export class ComparableObject
             extends Object
          implements Comparable {

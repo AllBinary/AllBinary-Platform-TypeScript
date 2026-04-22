@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -125,7 +128,7 @@ osBuffer!.append("Hardware Info: \n");
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(operatingSystemInterface: GenericOperatingSystem): HardwareInterface{

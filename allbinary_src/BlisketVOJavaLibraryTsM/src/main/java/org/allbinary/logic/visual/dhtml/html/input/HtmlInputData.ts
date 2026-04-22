@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ export class HtmlInputData
 
     public readonly TYPES: string[] = 
                                                         [
-                                                            TEXT,RADIO,CHECKBOX,HIDDEN,IMAGE,PASSWORD,RADIO,RESET,SUBMIT
+                                                            this.TEXT,RADIO,CHECKBOX,HIDDEN,IMAGE,this.PASSWORD,RADIO,RESET,this.SUBMIT
                                                         ];
         
         

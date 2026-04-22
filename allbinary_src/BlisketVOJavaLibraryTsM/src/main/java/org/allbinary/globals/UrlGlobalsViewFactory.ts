@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ export class UrlGlobalsViewFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

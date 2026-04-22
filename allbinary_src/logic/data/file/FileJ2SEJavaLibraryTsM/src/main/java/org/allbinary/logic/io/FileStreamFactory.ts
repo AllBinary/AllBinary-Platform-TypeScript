@@ -34,7 +34,10 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class FileStreamFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

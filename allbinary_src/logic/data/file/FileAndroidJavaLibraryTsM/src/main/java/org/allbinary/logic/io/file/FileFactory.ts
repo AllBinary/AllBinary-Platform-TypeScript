@@ -40,7 +40,10 @@ import { ResourceUtil } from "../../../../../org/allbinary/data/resource/Resourc
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class FileFactory
 private constructor (context: Context){
 
             super();
-            var context = context
+        var context = context
 this.context= context;
     
 }
@@ -83,7 +86,7 @@ this.context= context;
 var path = path
 
         try {
-            context.openFileInput(path);
+            this.context.openFileInput(path);
     
 
 

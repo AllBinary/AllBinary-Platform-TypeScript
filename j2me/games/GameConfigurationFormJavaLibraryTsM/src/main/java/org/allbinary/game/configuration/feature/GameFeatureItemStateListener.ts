@@ -61,7 +61,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ var gameFeature = gameFeature
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
-            var gameOptionsForm = gameOptionsForm
+        var gameOptionsForm = gameOptionsForm
 this.gameOptionsForm= gameOptionsForm;
     
 

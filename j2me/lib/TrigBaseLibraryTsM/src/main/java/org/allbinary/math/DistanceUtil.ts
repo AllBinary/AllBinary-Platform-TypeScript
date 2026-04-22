@@ -31,7 +31,10 @@ import { MathUtil } from "../../../org/allbinary/logic/math/MathUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,9 +84,9 @@ export class DistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.sqrt((dx *dx) +(dy *dy));
+                        return this.mathUtil!.sqrt((dx *dx) +(dy *dy));
 
-                        .toInt();
+                        ;
     
 }
 

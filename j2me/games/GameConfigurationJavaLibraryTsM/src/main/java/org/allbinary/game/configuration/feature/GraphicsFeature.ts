@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,12 +41,9 @@ import { Feature } from "./Feature.js";
 
 export class GraphicsFeature extends Feature {
         
- constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+ constructor (name: string){
+            super(name);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.

@@ -70,7 +70,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -105,7 +108,7 @@ export class PCComponentFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(component: string, componentData: string): HardwareComponentInterface{

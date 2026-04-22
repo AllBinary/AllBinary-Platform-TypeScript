@@ -27,9 +27,6 @@ import { AndroidUtil } from "../../../../org/allbinary/AndroidUtil.js";
 import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
-
-    
 
 
 
@@ -40,7 +37,10 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +54,9 @@ export class AdjustedCircleAnimation extends CircleAnimation {
     private xAdjustment: number
 
     private yAdjustment: number
-public constructor (width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor)                        
-
-                            : super(width, height, basicColor){
-
-            super();
-            var width = width
+public constructor (width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor){
+            super(width, height, basicColor);
+                    var width = width
 var height = height
 var xAdjustment = xAdjustment
 var yAdjustment = yAdjustment
@@ -74,12 +71,9 @@ this.yAdjustment= yAdjustment;
     
 }
 
-public constructor (width: number, height: number, innerWidth: number, basicColor: BasicColor)                        
-
-                            : super(width, height, basicColor){
-
-            super();
-            var width = width
+public constructor (width: number, height: number, innerWidth: number, basicColor: BasicColor){
+            super(width, height, basicColor);
+                    var width = width
 var height = height
 var innerWidth = innerWidth
 var basicColor = basicColor
@@ -97,7 +91,7 @@ var basicColor = basicColor
         
 ;
     
-this.xAdjustment=  -((width shr 1) -widthPortion);
+this.xAdjustment=  -((width>>1) -widthPortion);
     
 this.yAdjustment= this.xAdjustment;
     
@@ -105,7 +99,7 @@ this.yAdjustment= this.xAdjustment;
                                     }
                                 
                         else {
-                            this.xAdjustment=  -((width shr 1) -innerWidth);
+                            this.xAdjustment=  -((width>>1) -innerWidth);
     
 this.yAdjustment= this.xAdjustment;
     
@@ -119,9 +113,9 @@ this.yAdjustment= this.xAdjustment;
 var graphics = graphics
 var x = x
 var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP(), this.getColor());
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, width, height, 0, TOTAL_ANGLE);
+graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, this.width, this.height, 0, TOTAL_ANGLE);
     
 }
 

@@ -37,7 +37,10 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,7 +75,7 @@ export class HtmlRow extends HtmlTag {
 public constructor (before: string, after: string){
 
             super();
-            var before = before
+        var before = before
 var after = after
 this.before= before.toCharArray()
                                         .slice(0, ).join('')
@@ -133,14 +136,14 @@ this.numberOfColumns++;
 ;
     
 
-    var cellSize: number = htmlCellsVector!.length!;
+    var cellSize: number = this.htmlCellsVector!.length!;
         
         
 ;
     
-result= before;
+result= this.before;
     
-result += START;
+result += this.START;
     
 result += " ";
     
@@ -187,7 +190,7 @@ result += "\" ";
                                 
 }
 
-result += END;
+result += this.END;
     
 
 
@@ -199,15 +202,15 @@ result += END;
         
 i < cellSize; i++)
         {
-result += htmlCellsVector!.get(i)!.toString();
+result += this.htmlCellsVector!.get(i)!.toString();
     
 result += " ";
     
 }
 
-result += ENDTAG;
+result += this.ENDTAG;
     
-result += after;
+result += this.after;
     
 
 

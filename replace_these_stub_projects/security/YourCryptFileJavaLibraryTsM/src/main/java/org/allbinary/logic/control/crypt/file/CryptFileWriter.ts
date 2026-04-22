@@ -20,7 +20,10 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -33,7 +36,7 @@ export class CryptFileWriter
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();
-            var decryptedExtension = decryptedExtension
+        var decryptedExtension = decryptedExtension
 var encryptedExtension = encryptedExtension
 }
 

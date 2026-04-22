@@ -30,7 +30,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class ImageUnifierProperties
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getWidth(): number{

@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class BasicOptionItemsEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getBasicOptionItemsEntityInstance(): BasicOptionItemsEntity{

@@ -40,7 +40,10 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class DemoGameRunnable extends GameRunnable {
 public constructor (demoCanvas: DemoCanvas){
 
             super();
-            var demoCanvas = demoCanvas
+        var demoCanvas = demoCanvas
 this.demoCanvas= demoCanvas;
     
 }
@@ -74,9 +77,9 @@ this.demoCanvas= demoCanvas;
     public run(){
 
         try {
-            demoCanvas!.getLoopTimeHelperP()!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+            this.demoCanvas!.getLoopTimeHelperP()!.setStartTime(this.gameTickTimeDelayHelper!.setStartTime());
     
-demoCanvas!.processGame();
+this.demoCanvas!.processGame();
     
 
                 //: 
@@ -98,7 +101,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                 //@Throws(Error::class)
             
     public processLoopSleep(){
-demoCanvas!.processLoopSleep();
+this.demoCanvas!.processLoopSleep();
     
 }
 

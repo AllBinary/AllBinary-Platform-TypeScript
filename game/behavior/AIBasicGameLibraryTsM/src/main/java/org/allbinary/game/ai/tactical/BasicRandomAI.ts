@@ -57,7 +57,10 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,12 +80,9 @@ export class BasicRandomAI extends BasicAI {
     private readonly keyArray: number[] = intArrayOf(Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9);
         
         
-public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, inputProbability: InputProbability, visitor: Visitor)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, inputProbability: InputProbability, visitor: Visitor){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 var inputProbability = inputProbability
 var visitor = visitor
@@ -109,7 +109,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         if(this.inputProbability!.getTimeDelayHelper()!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
-                                    i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
+                                    this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
     var repeat: boolean = false;
@@ -124,7 +124,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.toInt() >= i_random)
+                        if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.toInt() >= this.i_random)
                         
                                     {
                                     repeat= true;
@@ -142,7 +142,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 ;
     
-i_random= myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
+this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
     var size: number = keyArray!.length
@@ -180,7 +180,7 @@ likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;
                         
                                     {
                                     
-                        if(i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && i_random < likelyhoodIntegerKeyArray[1]!.toInt())
+                        if(this.i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && i_random < likelyhoodIntegerKeyArray[1]!.toInt())
                         
                                     {
                                     this.setLastKey(key);

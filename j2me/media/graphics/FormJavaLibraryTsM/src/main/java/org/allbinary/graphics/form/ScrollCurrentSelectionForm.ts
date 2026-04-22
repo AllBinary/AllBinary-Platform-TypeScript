@@ -46,7 +46,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
         
 
     private readonly moveForSmallScreen: boolean
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var formPaintableFactory = formPaintableFactory
     //var rectangle = rectangle
@@ -96,12 +96,9 @@ this.init();
     
 }
 
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var rectangle = rectangle
     //var formType = formType
@@ -143,9 +140,9 @@ this.init();
                         if(this.formType == formTypeFactory!.TEMP_HORIZONTAL_FORM)
                         
                                     {
-                                    dx= x -30 +(this.rectangle.getWidth() shr 1);
+                                    this.dx= x -30 +(this.rectangle.getWidth()>>1);
     
-dy= y;
+this.dy= y;
     
 
                                     }
@@ -188,9 +185,9 @@ totalWidth += item.getMinimumWidth() +border;
     
 }
 
-dx= x +(this.rectangle.getWidth() shr 1) -(totalWidth shr 1);
+this.dx= x +(this.rectangle.getWidth()>>1) -(totalWidth>>1);
     
-dy= y +(this.rectangle.getHeight() shr 1);
+this.dy= y +(this.rectangle.getHeight()>>1);
     
 
                         if(this.moveForSmallScreen)
@@ -203,10 +200,10 @@ dy= y +(this.rectangle.getHeight() shr 1);
 ;
     
 
-                        if(dy < maxTitleHeight)
+                        if(this.dy < maxTitleHeight)
                         
                                     {
-                                    dy= maxTitleHeight;
+                                    this.dy= maxTitleHeight;
     
 
                                     }
@@ -250,10 +247,10 @@ index < size; index++)
 ;
     
 
-                        if(maxWidth < item2.getMinimumWidth())
+                        if(this.maxWidth < item2.getMinimumWidth())
                         
                                     {
-                                    maxWidth= item2.getMinimumWidth();
+                                    this.maxWidth= item2.getMinimumWidth();
     
 
                                     }
@@ -262,13 +259,13 @@ totalHeight += item2.getMinimumHeight() +border;
     
 }
 
-dx= ((this.rectangle.getWidth() -maxWidth) /2);
+this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
     
 
                         if(this.size() > 0)
                         
                                     {
-                                    dy= y +((this.rectangle.getHeight() -totalHeight) /2);
+                                    this.dy= y +((this.rectangle.getHeight() -totalHeight) /2);
     
 
                         if(this.moveForSmallScreen)
@@ -281,10 +278,10 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2);
 ;
     
 
-                        if(dy < maxTitleHeight)
+                        if(this.dy < maxTitleHeight)
                         
                                     {
-                                    dy= maxTitleHeight;
+                                    this.dy= maxTitleHeight;
     
 
                                     }
@@ -296,7 +293,7 @@ dx= ((this.rectangle.getWidth() -maxWidth) /2);
                                     }
                                 
                         else {
-                            dy= y;
+                            this.dy= y;
     
 
                         }
@@ -475,7 +472,7 @@ var item = item
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ((maxWidth -item.getMinimumWidth()) shr 1);
+                        return ((this.maxWidth -item.getMinimumWidth())>>1);
     
 }
 

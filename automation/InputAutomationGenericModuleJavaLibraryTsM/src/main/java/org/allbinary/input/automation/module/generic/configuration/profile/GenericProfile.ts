@@ -52,7 +52,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class GenericProfile
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 this.setName(DomNodeHelper.getTextNodeValue(node));
     
 this.vector= new Vector();
@@ -134,7 +137,7 @@ this.vector.add(genericProfileDataWorkerType);
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.setName(name);
     
 this.vector= new Vector();
@@ -182,7 +185,7 @@ var document = document
 ;
     
 
-    var size: number = vector.length!;
+    var size: number = this.vector.length!;
         
         
 ;
@@ -198,7 +201,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index);
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index);
 
                          as GenericProfileDataWorkerType;
         

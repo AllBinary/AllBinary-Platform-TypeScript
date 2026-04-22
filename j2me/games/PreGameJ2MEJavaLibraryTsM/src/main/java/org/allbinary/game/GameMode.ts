@@ -31,7 +31,10 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class GameMode
 private constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.setName(name);
     
 }

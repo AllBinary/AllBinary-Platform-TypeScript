@@ -17,7 +17,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class AnalogLocationInputFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addPlayer(playerInputId: number){
@@ -62,10 +65,10 @@ var playerInputId = playerInputId
 ;
     
 
-                        if(playerInputId < list.size())
+                        if(playerInputId < this.list.size())
                         
                                     {
-                                    analogLocationInput= list.get(playerInputId);
+                                    analogLocationInput= this.list.get(playerInputId);
 
                          as AnalogLocationInput;
     
@@ -78,7 +81,7 @@ var playerInputId = playerInputId
                                     {
                                     analogLocationInput= new AnalogLocationInput(playerInputId);
     
-list.add(analogLocationInput);
+this.list.add(analogLocationInput);
     
 
                                     }
@@ -92,7 +95,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.get(playerInputId);
+                        return this.list.get(playerInputId);
 
                          as AnalogLocationInput;
     

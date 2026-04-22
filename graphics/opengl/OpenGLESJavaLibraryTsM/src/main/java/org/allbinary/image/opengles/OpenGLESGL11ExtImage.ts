@@ -64,7 +64,10 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,12 +85,9 @@ export class OpenGLESGL11ExtImage extends OpenGLESImage {
     private a: number= 0
 
     private readonly rectangle: number[]
-public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory)                        
-
-                            : super(image, bitmapFactory, textureFactory){
-
-            super();
-                //var image = image
+public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
+            super(image, bitmapFactory, textureFactory);
+                        //var image = image
     //var bitmapFactory = bitmapFactory
     //var textureFactory = textureFactory
 
@@ -97,7 +97,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 this.onDisplayChangeEvent(
                             null);
     
-rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
+this.rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();
 
                         ;
         

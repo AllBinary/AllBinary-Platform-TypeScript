@@ -55,12 +55,17 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PartInterface } from "./PartInterface.js";
+
 export class CountedLayerInterfaceFactoryPart
             extends Object
          implements PartInterface {
@@ -90,7 +95,7 @@ export class CountedLayerInterfaceFactoryPart
 public constructor (total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 
             super();
-            var total = total
+        var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
 this.primitiveLongUtil= new PrimitiveLongUtil(1000);
     
@@ -166,7 +171,7 @@ this.totalString= this.primitiveLongUtil!.getCharArray(total);
         
 ;
     
-this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize() shr 1));
+this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize()>>1));
     
 }
 

@@ -49,12 +49,17 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CategoryFactoryInterface } from "./CategoryFactoryInterface.js";
+
 import { CategoryInterface } from "./CategoryInterface.js";
 
 export class CategoryAbstractFactory
@@ -72,7 +77,7 @@ export class CategoryAbstractFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getRootInstance(): CategoryInterface{
@@ -134,7 +139,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
     
 
                                     }
@@ -185,7 +190,7 @@ var categoryName = categoryName
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(CategoryInterface, CategoryInterface , String, int)", e);
     
 
                                     }
@@ -234,7 +239,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
     
 
                                     }

@@ -57,7 +57,10 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class ImageCache extends ImageCacheBase {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(renderer: any = {}){

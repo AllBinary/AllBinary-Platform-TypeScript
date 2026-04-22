@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class BasicCrypt
 public constructor (keyAsString: string){
 
             super();
-            var keyAsString = keyAsString
+        var keyAsString = keyAsString
 
     var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
         
@@ -164,11 +167,11 @@ var array = array
     var index: number = 0;
         
         
-index < key.length; index++)
+index < this.key.length; index++)
         {
-value= key[index]!;
+value= this.key[index]!;
     
-array= byteUtil!.xor(array, value);
+array= this.byteUtil!.xor(array, value);
     
 }
 

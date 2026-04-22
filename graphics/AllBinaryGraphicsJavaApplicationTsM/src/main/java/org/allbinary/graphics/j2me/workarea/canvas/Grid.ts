@@ -31,7 +31,10 @@ import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,12 @@ export class Grid
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (grid: Grid){
 
             super();
-            var grid = grid
+        var grid = grid
 this.grid= grid.grid;
     
 this.showGrid(grid.isGridOn);

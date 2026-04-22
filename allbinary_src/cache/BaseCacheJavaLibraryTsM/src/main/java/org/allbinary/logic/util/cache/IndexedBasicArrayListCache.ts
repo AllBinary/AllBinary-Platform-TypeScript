@@ -31,13 +31,18 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BaseBasicArrayListCache } from "./BaseBasicArrayListCache.js";
+
+import { CacheInterface } from "./CacheInterface.js";
 
 import { CacheableInterface } from "./CacheableInterface.js";
 
@@ -58,12 +63,12 @@ export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implemen
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (size: number){
 
             super();
-            var size = size
+        var size = size
 this.init(size);
     
 }
@@ -148,7 +153,7 @@ var cacheableInterfaces = cacheableInterfaces
 
 
     public clear(){
-index= 0;
+this.index= 0;
     
 }
 

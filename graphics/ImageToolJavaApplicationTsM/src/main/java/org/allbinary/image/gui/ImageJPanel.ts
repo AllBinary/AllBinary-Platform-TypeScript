@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class ImageJPanel extends javax.swing.JPanel {
 public constructor (bufferedImage: BufferedImage){
 
             super();
-            var bufferedImage = bufferedImage
+        var bufferedImage = bufferedImage
 initComponents();
     
 this.bufferedImage= bufferedImage;
@@ -93,17 +96,17 @@ this.setSize(this.bufferedImage!.getWidth(
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(!isDrawn)
+                        if(!this.isDrawn)
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.PAINT);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, canvasStrings!.PAINT);
     
 graphics.drawImage(bufferedImage, 0, 0, this.bufferedImage!.getWidth(
                             null), this.bufferedImage!.getHeight(
                             null), 
                             null);
     
-isDrawn= true;
+this.isDrawn= true;
     
 
                                     }

@@ -71,7 +71,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -151,10 +154,10 @@ export class OpenGLUtil
 
         try {
             
-                        if(!created)
+                        if(!this.created)
                         
                                     {
-                                    created= true;
+                                    this.created= true;
     
 PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getInstance()!.toString(), this, this.renderStrings!.ON_SURFACE_CREATED);
     
@@ -202,12 +205,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE
     //var gl = gl
     //var graphics = graphics
 
-                        if(!surfaceCreatedAndInitialized)
+                        if(!this.surfaceCreatedAndInitialized)
                         
                                     {
                                     graphics.init();
     
-surfaceCreatedAndInitialized= true;
+this.surfaceCreatedAndInitialized= true;
     
 
                                     }
@@ -250,11 +253,11 @@ this.set(gl);
                                     
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(anyType) 
+        synchronized(this.anyType) 
 
         //mutex.withLock
         {
-list.add(encapsulateImage);
+this.list.add(encapsulateImage);
     
 }
 
@@ -280,11 +283,11 @@ list.add(encapsulateImage);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(anyType) 
+        synchronized(this.anyType) 
 
         //mutex.withLock
         {
-list.clear();
+this.list.clear();
     
 }
 
@@ -296,7 +299,7 @@ list.clear();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lockObject) 
+        synchronized(this.lockObject) 
 
         //mutex.withLock
         {
@@ -308,7 +311,7 @@ list.clear();
                                     {
                                     this.runnableList!.add(runnable);
     
-displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
+this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
     
 
                                     }
@@ -322,7 +325,7 @@ displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(lockObject) 
+        synchronized(this.lockObject) 
 
         //mutex.withLock
         {

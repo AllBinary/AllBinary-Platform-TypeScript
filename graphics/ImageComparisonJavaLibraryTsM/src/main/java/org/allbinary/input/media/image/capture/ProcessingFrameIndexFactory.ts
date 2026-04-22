@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class ProcessingFrameIndexFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ export class InputMapping
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public getTotalMapped(): number{
@@ -206,7 +209,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

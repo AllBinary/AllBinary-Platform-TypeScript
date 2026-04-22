@@ -46,7 +46,10 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,12 +61,9 @@ export class RelativeLayerRelationship extends RelativeRelationship {
     private layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor (layer: AllBinaryLayer, x: number, y: number)                        
-
-                            : this(layer, PointFactory.getInstance()!.getInstance(x, y), BasicArrayListUtil.getInstance()!.getImmutableInstance()){
-
-            super();
-            var layer = layer
+public constructor (layer: AllBinaryLayer, x: number, y: number){
+            this(layer, PointFactory.getInstance()!.getInstance(x, y), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+                    var layer = layer
 var x = x
 var y = y
 
@@ -72,12 +72,9 @@ var y = y
                     
 }
 
-public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList)                        
-
-                            : super(point, typesAllowedList){
-
-            super();
-            var layer = layer
+public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList){
+            super(point, typesAllowedList);
+                    var layer = layer
 var point = point
 var typesAllowedList = typesAllowedList
 

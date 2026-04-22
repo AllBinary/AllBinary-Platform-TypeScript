@@ -61,12 +61,17 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementsEntityInterface } from "./AdvertisementsEntityInterface.js";
+
 export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEntityInterface {
         
 
@@ -81,16 +86,13 @@ export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEnt
     private readonly _INDEX: string = "_index";
         
         
-public constructor ()                        
-
-                            : super(new UserDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new UserDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

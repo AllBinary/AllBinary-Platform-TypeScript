@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -111,12 +114,9 @@ export class TouchButton extends Paintable {
     animationY: number= 0
 
     hintAnimationY: number= 0
-public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number)                        
-
-                            : this(touchButtonInput, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.RESOURCE)!.getInstance(0), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.HINT)!.getInstance(0), rawRectangle, cellPosition, xBorder, yBorder){
-
-            super();
-            var touchButtonInput = touchButtonInput
+public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
+            this(touchButtonInput, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.RESOURCE)!.getInstance(0), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.HINT)!.getInstance(0), rawRectangle, cellPosition, xBorder, yBorder);
+                    var touchButtonInput = touchButtonInput
 var touchButtonResource = touchButtonResource
 var rawRectangle = rawRectangle
 var cellPosition = cellPosition
@@ -131,7 +131,7 @@ var yBorder = yBorder
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
 
             super();
-            var touchButtonInput = touchButtonInput
+        var touchButtonInput = touchButtonInput
 var animationInterface = animationInterface
 var hintAnimationInterface = hintAnimationInterface
 var rawRectangle = rawRectangle
@@ -178,13 +178,13 @@ this.animationInterface!.paint(graphics, animationX, animationY);
 
         try {
             
-    var x: number = this.rawRectangle!.getWidth() *cellPositionP!.getColumn();
+    var x: number = this.rawRectangle!.getWidth() *this.cellPositionP!.getColumn();
         
         
 ;
     
 
-    var y: number = this.rawRectangle!.getHeight() *cellPositionP!.getRow();
+    var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();
         
         
 ;
@@ -192,7 +192,7 @@ this.animationInterface!.paint(graphics, animationX, animationY);
 this.rectangleP= new Rectangle(PointFactory.getInstance()!.getInstance(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
-    var point: GPoint = rectangleP!.getPoint()!;
+    var point: GPoint = this.rectangleP!.getPoint()!;
         
         
 ;
@@ -201,13 +201,13 @@ this.animationX= point.getX();
     
 this.animationY= point.getY();
     
-this.hintAnimationY= animationY -32;
+this.hintAnimationY= this.animationY -32;
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
     
 }
 

@@ -40,12 +40,17 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementCampaignsInterface } from "./AdvertisementCampaignsInterface.js";
+
 export class AdvertisementCampaigns
             extends Object
          implements AdvertisementCampaignsInterface {
@@ -55,7 +60,7 @@ export class AdvertisementCampaigns
 public constructor (vector: Vector){
 
             super();
-            var vector = vector
+        var vector = vector
 this.advertisementsVector= advertisementsVector;
     
 }

@@ -63,7 +63,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class BasicWorkFlow
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
@@ -166,7 +169,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
                         if(this.validationDomNodeInterface!.isValid())
                         
                                     {
-                                    pageContext!.getOut()!.print(this.validationDomNodeInterface!.view());
+                                    this.pageContext!.getOut()!.print(this.validationDomNodeInterface!.view());
     
 
 
@@ -180,7 +183,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
                                     }
                                 
                         else {
-                            pageContext!.getOut()!.print(this.validationDomNodeInterface!.validationInfo());
+                            this.pageContext!.getOut()!.print(this.validationDomNodeInterface!.validationInfo());
     
 
 

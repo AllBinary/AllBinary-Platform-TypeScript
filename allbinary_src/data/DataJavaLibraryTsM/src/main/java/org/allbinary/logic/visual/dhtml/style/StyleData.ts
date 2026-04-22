@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class StyleData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "STYLE_NAME";

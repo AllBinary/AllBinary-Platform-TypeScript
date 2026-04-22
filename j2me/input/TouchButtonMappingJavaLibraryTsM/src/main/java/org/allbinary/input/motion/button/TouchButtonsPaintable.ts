@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class TouchButtonsPaintable extends Paintable {
 public constructor (basicColor: BasicColor){
 
             super();
-            var basicColor = basicColor
+        var basicColor = basicColor
 this.foregroundBasicColor= basicColor;
     
 this.foregroundColor= basicColor!.toInt();
@@ -84,7 +87,7 @@ var graphics = graphics
         
 ;
     
-this.basicSetColorUtil!.setBasicColorP(graphics, this.foregroundBasicColor, this.foregroundColor);
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, this.foregroundColor);
     
 
     var touchButton: TouchButton

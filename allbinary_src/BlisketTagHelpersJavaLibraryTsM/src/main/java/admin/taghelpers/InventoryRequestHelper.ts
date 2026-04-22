@@ -64,7 +64,10 @@ import { InventoryItemView } from "../../views/admin/inventory/InventoryItemView
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class InventoryRequestHelper extends ModifyTable {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var propertiesHashMap = propertiesHashMap
+        var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
     var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT);

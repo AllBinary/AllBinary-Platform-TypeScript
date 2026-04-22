@@ -52,7 +52,10 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,12 +69,9 @@ export class PaymentGatewayComponent extends HttpStoreComponentView {
         
 
     private paymentGatewayInterface: PaymentGatewayInterface
-public constructor (transformInfoInterface: TransformInfoInterface, paymentGatewayInterface: PaymentGatewayInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface, paymentGatewayInterface: PaymentGatewayInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 var paymentGatewayInterface = paymentGatewayInterface
 
 

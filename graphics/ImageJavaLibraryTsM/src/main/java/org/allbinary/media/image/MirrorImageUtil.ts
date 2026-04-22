@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class MirrorImageUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getImage(bufferedImage: BufferedImage, verticle: boolean, horizontal: boolean): BufferedImage{

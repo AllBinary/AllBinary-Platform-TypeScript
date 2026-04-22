@@ -43,7 +43,10 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class StoreFrontOrdersHistoryStatisticsView
 public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface){
 
             super();
-            var storeFrontOrdersHistoryStatisticsInterface = storeFrontOrdersHistoryStatisticsInterface
+        var storeFrontOrdersHistoryStatisticsInterface = storeFrontOrdersHistoryStatisticsInterface
 this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisticsInterface;
     
 }

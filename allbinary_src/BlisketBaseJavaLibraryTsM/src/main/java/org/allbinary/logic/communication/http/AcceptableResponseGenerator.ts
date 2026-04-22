@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class AcceptableResponseGenerator
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

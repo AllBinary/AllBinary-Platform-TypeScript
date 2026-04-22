@@ -46,7 +46,10 @@ import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class FileLockUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

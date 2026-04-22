@@ -31,7 +31,10 @@ import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPath
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class HttpRequestUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getLastSeparatorIndex(requestPath: string): number{

@@ -31,7 +31,10 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class GameProcessor extends Processor {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 this.gameCanvas= gameCanvas;
     
 }

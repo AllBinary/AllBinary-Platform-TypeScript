@@ -31,7 +31,10 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class LogBuffer
 public constructor (){
 
             super();
-            this.logEntryVector= new Vector();
+        this.logEntryVector= new Vector();
     
 }
 

@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,12 +90,9 @@ export class ThreadPool
     private numThreads: number= 0
 
     private runningTask: boolean= false
-public constructor (poolName: string, numThreads: number)                        
-
-                            : this(poolName, numThreads, 5){
-
-            super();
-                //var poolName = poolName
+public constructor (poolName: string, numThreads: number){
+            this(poolName, numThreads, 5);
+                        //var poolName = poolName
     //var numThreads = numThreads
 
 
@@ -103,7 +103,7 @@ public constructor (poolName: string, numThreads: number)
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
-                //var poolName = poolName
+            //var poolName = poolName
     //var numThreads = numThreads
     //var priority = priority
 }
@@ -117,12 +117,12 @@ public constructor (poolName: string, numThreads: number, priority: number){
             
     public runAPriorityTask(){
 
-                        if(!currentPriorityRunnable!.isDone();
+                        if(!this.currentPriorityRunnable!.isDone();
 
                         )
                         
                                     {
-                                    currentPriorityRunnable!.run();
+                                    this.currentPriorityRunnable!.run();
     
 
                                     }
@@ -135,7 +135,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 ;
     
 
-                        if(runnable == NULL_RUNNABLE)
+                        if(runnable == this.NULL_RUNNABLE)
                         
                                     {
                                     
@@ -147,15 +147,15 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
                                     }
                                 
-currentPriorityRunnable= runnable as PriorityRunnable;
+this.currentPriorityRunnable= runnable as PriorityRunnable;
     
 
-                        if(!(currentPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE))
+                        if(!(this.currentPriorityRunnable == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE))
                         
                                     {
-                                    currentPriorityRunnable!.reset();
+                                    this.currentPriorityRunnable!.reset();
     
-currentPriorityRunnable!.run();
+this.currentPriorityRunnable!.run();
     
 
                                     }
@@ -194,9 +194,9 @@ currentPriorityRunnable!.run();
                         if(!this.isAlive)
                         
                                     {
-                                    isAlive= true;
+                                    this.isAlive= true;
     
-taskQueue= new BasicArrayList();
+this.taskQueue= new BasicArrayList();
     
 
                                     }
@@ -233,7 +233,7 @@ taskQueue= new BasicArrayList();
 ;
     
 
-    var lowerPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
         
         
 ;
@@ -267,7 +267,7 @@ break;
 }
 
 
-                        if(lowerPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == NULL_RUNNABLE)
+                        if(lowerPriorityRunnable == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == this.NULL_RUNNABLE)
                         
                                     {
                                     this.taskQueue!.add(task);
@@ -297,7 +297,7 @@ this.taskQueue!.add(index, task);
     public runTask(task: Runnable){
     //var task = task
 
-                        if(!isAlive)
+                        if(!this.isAlive)
                         
                                     {
                                     this.init();
@@ -311,7 +311,7 @@ this.taskQueue!.add(index, task);
                                 )
                         
                                     {
-                                    taskQueue!.add(task);
+                                    this.taskQueue!.add(task);
     
 
                                     }
@@ -324,7 +324,7 @@ this.taskQueue!.add(index, task);
 
     getTask(): Runnable{
 
-                        if(taskQueue!.isEmpty())
+                        if(this.taskQueue!.isEmpty())
                         
                                     {
                                     
@@ -340,7 +340,7 @@ this.taskQueue!.add(index, task);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return taskQueue!.remove(0);
+                        return this.taskQueue!.remove(0);
 
                          as Runnable;
     
@@ -349,7 +349,7 @@ this.taskQueue!.add(index, task);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public clear(){
-taskQueue!.clear();
+this.taskQueue!.clear();
     
 }
 
@@ -357,14 +357,14 @@ taskQueue!.clear();
 
     public close(){
 
-                        if(isAlive)
+                        if(this.isAlive)
                         
                                     {
-                                    isAlive= false;
+                                    this.isAlive= false;
     
-taskQueue!.clear();
+this.taskQueue!.clear();
     
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+this.currentPriorityRunnable= this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
     
 
                                     }
@@ -373,11 +373,11 @@ this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
 
     public join(){
-isAlive= false;
+this.isAlive= false;
     
-taskQueue!.clear();
+this.taskQueue!.clear();
     
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+this.currentPriorityRunnable= this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
     
 }
 
@@ -442,9 +442,9 @@ this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
                                     {
                                     this.isAlive= false;
     
-taskQueue!.clear();
+this.taskQueue!.clear();
     
-this.currentPriorityRunnable= threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+this.currentPriorityRunnable= this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
     
 
                                     }

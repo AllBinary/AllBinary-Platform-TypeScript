@@ -31,7 +31,10 @@ import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -42,7 +45,7 @@ export class Anchor
          {
         
 
-    public TOP_LEFT: number = Graphics.TOP and Graphics.LEFT;
+    public TOP_LEFT: number = Graphics.TOP&Graphics.LEFT;
         
         
 

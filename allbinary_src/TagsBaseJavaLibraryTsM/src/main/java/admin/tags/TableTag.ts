@@ -66,7 +66,10 @@ import { PropertiesTag } from "../../tags/PropertiesTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -93,7 +96,7 @@ export class TableTag extends PropertiesTag {
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
@@ -496,7 +499,7 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = requestObject!constructor!;
+    var helperClass: Function = this.requestObject!.constructor!;
         
         
 ;
@@ -509,7 +512,7 @@ this.total= total;
 ;
     
 
-    var result: string = method.invoke(requestObject, 
+    var result: string = method.invoke(this.requestObject, 
                             null);
 
                          as String;
@@ -559,7 +562,7 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = requestObject!constructor!;
+    var helperClass: Function = this.requestObject!.constructor!;
         
         
 ;
@@ -572,7 +575,7 @@ this.total= total;
 ;
     
 
-    var result: string = method.invoke(requestObject, 
+    var result: string = method.invoke(this.requestObject, 
                             null);
 
                          as String;
@@ -622,7 +625,7 @@ this.total= total;
 
         try {
             
-    var helperClass: Function = requestObject!constructor!;
+    var helperClass: Function = this.requestObject!.constructor!;
         
         
 ;
@@ -635,7 +638,7 @@ this.total= total;
 ;
     
 
-    var result: string = method.invoke(requestObject, 
+    var result: string = method.invoke(this.requestObject, 
                             null);
 
                          as String;

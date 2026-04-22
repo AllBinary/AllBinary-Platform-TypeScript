@@ -46,12 +46,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
 import { DemoGameMidlet } from "./DemoGameMidlet.js";
@@ -77,7 +82,7 @@ export class DemoRunnable
 public constructor (demoGameMidlet: DemoGameMidlet){
 
             super();
-            var demoGameMidlet = demoGameMidlet
+        var demoGameMidlet = demoGameMidlet
 this.demoGameMidlet= demoGameMidlet;
     
 this.startDemoGameMidletEvent= new DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO);

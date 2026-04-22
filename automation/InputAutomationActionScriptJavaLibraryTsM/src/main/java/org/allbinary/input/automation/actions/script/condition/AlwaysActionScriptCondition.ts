@@ -52,13 +52,18 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
+
+import { AlwaysActionScriptConditionInterface } from "./AlwaysActionScriptConditionInterface.js";
 
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
 
@@ -76,12 +81,9 @@ export class AlwaysActionScriptCondition extends BasicProfileActionScriptConditi
     private alwaysActionScriptConditionJPanel: AlwaysActionScriptConditionJPanel
 
     private isOn: boolean= false
-public constructor (node: Node)                        
-
-                            : super(AlwaysActionScriptCondition.NAME, node){
-
-            super();
-            var node = node
+public constructor (node: Node){
+            super(AlwaysActionScriptCondition.NAME, node);
+                    var node = node
 
 
                             //For kotlin this is before the body of the constructor.
@@ -161,12 +163,9 @@ this.init();
     
 }
 
-public constructor ()                        
-
-                            : super(AlwaysActionScriptCondition.NAME){
-
-            super();
-            
+public constructor (){
+            super(AlwaysActionScriptCondition.NAME);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

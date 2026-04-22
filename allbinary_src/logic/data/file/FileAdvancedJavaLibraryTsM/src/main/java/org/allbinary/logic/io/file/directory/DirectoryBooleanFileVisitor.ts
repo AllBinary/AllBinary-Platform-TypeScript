@@ -34,7 +34,10 @@ import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/vis
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class DirectoryBooleanFileVisitor
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{

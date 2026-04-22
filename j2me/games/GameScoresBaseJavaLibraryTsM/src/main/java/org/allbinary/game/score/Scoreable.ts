@@ -33,12 +33,17 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ScoreableInterface } from "./ScoreableInterface.js";
+
 export class Scoreable
             extends Object
          implements ScoreableInterface {
@@ -52,7 +57,7 @@ export class Scoreable
 public constructor (points: number){
 
             super();
-            var points = points
+        var points = points
 this.points= points;
     
 }

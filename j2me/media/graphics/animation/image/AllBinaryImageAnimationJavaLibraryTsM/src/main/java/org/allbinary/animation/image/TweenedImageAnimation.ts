@@ -52,7 +52,10 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class TweenedImageAnimation extends IndexedAnimation {
     private totalFrames: number
 
     circularIndexUtil: CircularIndexUtil
-public constructor (image: Image, dx: number, dy: number, totalFrames: number, animationBehavior: AnimationBehavior)                        
-
-                            : super(animationBehavior){
-
-            super();
-                //var image = image
+public constructor (image: Image, dx: number, dy: number, totalFrames: number, animationBehavior: AnimationBehavior){
+            super(animationBehavior);
+                        //var image = image
     //var dx = dx
     //var dy = dy
     //var totalFrames = totalFrames
@@ -184,13 +184,13 @@ var y = y
 ;
     
 
-    var currentX: number = dx *frame;
+    var currentX: number = this.dx *frame;
         
         
 ;
     
 
-    var currentY: number = dy *frame;
+    var currentY: number = this.dy *frame;
         
         
 ;

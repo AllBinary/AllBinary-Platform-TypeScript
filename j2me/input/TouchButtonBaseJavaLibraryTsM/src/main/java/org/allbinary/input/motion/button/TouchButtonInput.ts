@@ -55,7 +55,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,12 +82,9 @@ export class TouchButtonInput extends Input implements GameKeyEventSourceInterfa
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
         
         
-public constructor (id: number, name: string)                        
-
-                            : super(id, name){
-
-            super();
-            var id = id
+public constructor (id: number, name: string){
+            super(id, name);
+                    var id = id
 var name = name
 
 

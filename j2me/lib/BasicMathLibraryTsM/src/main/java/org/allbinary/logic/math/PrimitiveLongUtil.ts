@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class PrimitiveLongUtil
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
         
         
-public constructor (powerOfTen: number)                        
-
-                            : this(powerOfTen, false){
-
-            super();
-            var powerOfTen = powerOfTen
+public constructor (powerOfTen: number){
+            this(powerOfTen, false);
+                    var powerOfTen = powerOfTen
 
 
                             //For kotlin this is before the body of the constructor.
@@ -94,7 +94,7 @@ public constructor (powerOfTen: number)
 public constructor (powerOfTen: number, throwException: boolean){
 
             super();
-            var powerOfTen = powerOfTen
+        var powerOfTen = powerOfTen
 var throwException = throwException
 this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
     
@@ -125,7 +125,7 @@ var value = value
                                     }
                                 
 
-                        if(value > maxValue)
+                        if(value > this.maxValue)
                         
                                     {
                                     this.setCurrentTotalDigits(3);
@@ -146,7 +146,7 @@ var value = value
 ;
     
 
-    var div: number = powerOfTen;
+    var div: number = this.powerOfTen;
         
         
 ;

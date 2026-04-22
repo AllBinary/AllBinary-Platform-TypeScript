@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,7 +98,7 @@ export class OperatingSystems
 private constructor (){
 
             super();
-            }
+        }
 
 
     private unknownSpecificOSAllowed: boolean = true;
@@ -114,7 +117,7 @@ private constructor (){
 
     public setUnknownSpecificOSAllowed(aUnknownSpecificOSAllowed: boolean){
 var aUnknownSpecificOSAllowed = aUnknownSpecificOSAllowed
-unknownSpecificOSAllowed= aUnknownSpecificOSAllowed;
+this.unknownSpecificOSAllowed= aUnknownSpecificOSAllowed;
     
 }
 

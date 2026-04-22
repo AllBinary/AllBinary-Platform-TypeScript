@@ -44,7 +44,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -131,7 +134,7 @@ hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

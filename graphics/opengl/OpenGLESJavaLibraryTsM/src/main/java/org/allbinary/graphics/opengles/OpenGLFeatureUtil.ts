@@ -34,7 +34,10 @@ import { Features } from "../../../../org/allbinary/game/configuration/feature/F
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class OpenGLFeatureUtil
 public constructor (){
 
             super();
-            
+        
     var openGLConfiguration: OpenGLConfiguration = OpenGLConfiguration.getInstance()!;
         
         

@@ -31,13 +31,18 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicColor } from "./BasicColor.js";
+
+import { BasicColorFactory } from "./BasicColorFactory.js";
 
 export class SmallBasicColorCacheFactory
             extends Object
@@ -76,14 +81,14 @@ export class SmallBasicColorCacheFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-BASIC_COLOR_ARRAY[colorIndex]= basicDefaultColor;
+this.BASIC_COLOR_ARRAY[this.colorIndex]= basicDefaultColor;
     
-INDEX_TO_COLOR[colorIndex]= basicDefaultColor!.toInt();
+this.INDEX_TO_COLOR[this.colorIndex]= basicDefaultColor!.toInt();
     
 colorIndex++;
     
@@ -104,17 +109,17 @@ colorIndex++;
     var index: number = 0;
         
         
-index < SIZE; index++)
+index < this.SIZE; index++)
         {
 
-                        if(INDEX_TO_COLOR[index] == colorAsInt)
+                        if(this.INDEX_TO_COLOR[index] == colorAsInt)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BASIC_COLOR_ARRAY[index]!;
+                        return this.BASIC_COLOR_ARRAY[index]!;
     
 
                                     }
@@ -122,12 +127,12 @@ index < SIZE; index++)
 }
 
 
-    var ALPHA_MASK: number = 0xFF000000.toInt();
+    var ALPHA_MASK: number = 0xFF000000;
         
         
 ;
     
-basicColor= new BasicColor(colorAsInt and ALPHA_MASK, colorAsInt and 0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
+basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);
     
 this.add(basicColor);
     

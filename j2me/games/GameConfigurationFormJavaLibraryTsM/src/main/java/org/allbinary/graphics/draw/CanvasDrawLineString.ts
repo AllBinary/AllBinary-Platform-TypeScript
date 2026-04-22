@@ -34,7 +34,10 @@ import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class CanvasDrawLineString
 public constructor (x: number, y: number){
 
             super();
-            var x = x
+        var x = x
 var y = y
 this.x= x;
     

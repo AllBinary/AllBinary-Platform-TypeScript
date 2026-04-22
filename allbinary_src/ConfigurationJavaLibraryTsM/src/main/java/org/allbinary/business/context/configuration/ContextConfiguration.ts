@@ -43,12 +43,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
+
 export class ContextConfiguration
             extends Object
          implements ContextConfigurationInterface {
@@ -66,7 +71,7 @@ export class ContextConfiguration
 public constructor (){
 
             super();
-            this.logUtil!.putF(commonStrings!.START, this, "ContextConfiguration");
+        this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
@@ -75,8 +80,8 @@ this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as Emai
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
-this.logUtil!.putF(commonStrings!.START, this, "ContextConfiguration(HashMap)");
+        var hashMap = hashMap
+this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     

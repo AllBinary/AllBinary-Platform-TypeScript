@@ -31,7 +31,10 @@ import { DomDocumentQueueInterface } from "../../../../../../org/allbinary/data/
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class FileEmailQueue
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

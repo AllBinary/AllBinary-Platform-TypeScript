@@ -40,24 +40,26 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MultiPlayerGameLayerInterface } from "./MultiPlayerGameLayerInterface.js";
+
 import { RemoteInfo } from "./RemoteInfo.js";
 
 import { MultiplayerBehavior } from "./MultiplayerBehavior.js";
 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(groupInterface, layerInfo, viewPosition){
-
-            super();
-                //var remoteInfo = remoteInfo
+public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(groupInterface, layerInfo, viewPosition);
+                        //var remoteInfo = remoteInfo
     //var groupInterface = groupInterface
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
@@ -67,12 +69,9 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], layerInfo: 
                     
 }
 
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(groupInterface, name, layerInfo, viewPosition){
-
-            super();
-                //var remoteInfo = remoteInfo
+public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
+            super(groupInterface, name, layerInfo, viewPosition);
+                        //var remoteInfo = remoteInfo
     //var groupInterface = groupInterface
     //var name = name
     //var layerInfo = layerInfo

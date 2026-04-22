@@ -34,7 +34,10 @@ import { VideoInterface } from "../../../../../../../org/allbinary/logic/system/
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class Video
 public constructor (data: string){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }

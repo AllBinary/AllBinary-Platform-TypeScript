@@ -37,7 +37,10 @@ import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class TimeDelayHelper
 public constructor (delay: number){
 
             super();
-                //var delay = delay
+            //var delay = delay
 this.delay= delay;
     
 this.setStartTime();
@@ -298,7 +301,7 @@ this.startTime= startTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return startTime;
+                        return this.startTime;
     
 }
 

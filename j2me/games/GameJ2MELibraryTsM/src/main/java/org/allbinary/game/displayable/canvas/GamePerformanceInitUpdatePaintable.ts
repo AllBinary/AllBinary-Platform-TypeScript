@@ -46,7 +46,10 @@ import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
         
         
 
-    private readonly yArray: number[] = intArrayOf(halfHeight +30,halfHeight +30,halfHeight +30 +15,halfHeight +30 +15,halfHeight +30 +30,halfHeight +30 +30,halfHeight +30 +45,halfHeight +30 +45);
+    private readonly yArray: number[] = intArrayOf(this.halfHeight +30,this.halfHeight +30,this.halfHeight +30 +15,this.halfHeight +30 +15,this.halfHeight +30 +30,this.halfHeight +30 +30,this.halfHeight +30 +45,this.halfHeight +30 +45);
         
         
 
@@ -72,7 +75,7 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
 
 
     public update(){
-baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArray();
+this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArray();
     
 }
 
@@ -89,7 +92,7 @@ var graphics = graphics
         
 ;
     
-graphics.setColor(RED);
+graphics.setColor(this.RED);
     
 
     var charArray: string[]
@@ -108,7 +111,7 @@ graphics.setColor(RED);
 ;
     
 
-    var size: number = baseRefreshHelperCharArray!.length -2;
+    var size: number = this.baseRefreshHelperCharArray!.length -2;
         
         
 ;
@@ -123,9 +126,9 @@ graphics.setColor(RED);
         
 index >= 0; )
         {
-charArray= baseRefreshHelperCharArray[index]!;
+charArray= this.baseRefreshHelperCharArray[index]!;
     
-charArray2= baseRefreshHelperCharArray[index +1]!;
+charArray2= this.baseRefreshHelperCharArray[index +1]!;
     
 size2= charArray!.length;
     

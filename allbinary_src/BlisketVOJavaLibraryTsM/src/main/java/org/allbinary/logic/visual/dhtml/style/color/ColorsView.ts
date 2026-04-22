@@ -48,7 +48,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class ColorsView
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -98,10 +101,10 @@ var blueIndex = blueIndex
 ;
     
 
-                        if(redIndex < HEXRADIX)
+                        if(redIndex < this.HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -112,7 +115,7 @@ hexColorStringBuffer!.append(redIndex, HEXRADIX.toString());
                         if(greenIndex < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -123,7 +126,7 @@ hexColorStringBuffer!.append(greenIndex, HEXRADIX.toString());
                         if(blueIndex < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -171,7 +174,7 @@ node.appendChild(blackNode);
     var index: number = 0;
         
         
-index < MAX; )
+index < this.MAX; )
         {
 
     var hexColorStringBuffer: StringMaker = new StringMaker();
@@ -180,10 +183,10 @@ index < MAX; )
 ;
     
 
-                        if(index < HEXRADIX)
+                        if(index < this.HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -194,7 +197,7 @@ hexColorStringBuffer!.append(index, HEXRADIX.toString());
                         if(index < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -205,7 +208,7 @@ hexColorStringBuffer!.append(index, HEXRADIX.toString());
                         if(index < HEXRADIX)
                         
                                     {
-                                    hexColorStringBuffer!.append(commonPhoneStrings!.ZERO);
+                                    hexColorStringBuffer!.append(this.commonPhoneStrings!.ZERO);
     
 
                                     }
@@ -235,10 +238,10 @@ node.appendChild(whiteNode);
 
 
                         for (
-    var blueIndex: number = MAX /2;
+    var blueIndex: number = this.MAX /2;
         
         
-blueIndex < MAX; )
+blueIndex < this.MAX; )
         {
 
 
@@ -248,7 +251,7 @@ blueIndex < MAX; )
     var greenIndex: number = 0;
         
         
-greenIndex < MAX /2; )
+greenIndex < this.MAX /2; )
         {
 
 
@@ -258,7 +261,7 @@ greenIndex < MAX /2; )
     var redIndex: number = 0;
         
         
-redIndex < MAX /2; )
+redIndex < this.MAX /2; )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -273,10 +276,10 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    var redIndex: number = MAX /2;
+    var redIndex: number = this.MAX /2;
         
         
-redIndex < MAX; )
+redIndex < this.MAX; )
         {
 
 
@@ -286,7 +289,7 @@ redIndex < MAX; )
     var greenIndex: number = 0;
         
         
-greenIndex < MAX /2; )
+greenIndex < this.MAX /2; )
         {
 
 
@@ -296,7 +299,7 @@ greenIndex < MAX /2; )
     var blueIndex: number = 0;
         
         
-blueIndex < MAX /2; )
+blueIndex < this.MAX /2; )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -311,10 +314,10 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
 
 
                         for (
-    var greenIndex: number = MAX /2;
+    var greenIndex: number = this.MAX /2;
         
         
-greenIndex < MAX; )
+greenIndex < this.MAX; )
         {
 
 
@@ -324,7 +327,7 @@ greenIndex < MAX; )
     var redIndex: number = 0;
         
         
-redIndex < MAX /2; )
+redIndex < this.MAX /2; )
         {
 
 
@@ -334,7 +337,7 @@ redIndex < MAX /2; )
     var blueIndex: number = 0;
         
         
-blueIndex < MAX /2; )
+blueIndex < this.MAX /2; )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     
@@ -352,7 +355,7 @@ node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     var greenIndex: number = 0;
         
         
-greenIndex < MAX; )
+greenIndex < this.MAX; )
         {
 
 
@@ -362,7 +365,7 @@ greenIndex < MAX; )
     var redIndex: number = 0;
         
         
-redIndex < MAX; )
+redIndex < this.MAX; )
         {
 
 
@@ -372,7 +375,7 @@ redIndex < MAX; )
     var blueIndex: number = 0;
         
         
-blueIndex < MAX; )
+blueIndex < this.MAX; )
         {
 node.appendChild(this.getColorNode(document, redIndex, greenIndex, blueIndex));
     

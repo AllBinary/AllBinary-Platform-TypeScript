@@ -72,7 +72,10 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,7 +100,7 @@ export class StaticPathGenerator
 protected constructor (){
 
             super();
-            PreLogUtil.put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR);
+        PreLogUtil.put("Using Static Path Finding", this, CommonStrings.getInstance()!.CONSTRUCTOR);
     
 }
 
@@ -198,7 +201,7 @@ list.add(geographicMapCellPosition);
 ;
     
 
-                        if(list == basicArrayListUtil!.getImmutableInstance())
+                        if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
                                     list= new BasicArrayList();

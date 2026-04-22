@@ -37,12 +37,17 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AllBinarySensorListener } from "./AllBinarySensorListener.js";
+
 export class AllBinarySensor
             extends Object
          implements AllBinarySensorListener {
@@ -83,7 +88,7 @@ AllBinarySensor.max= max;
 protected constructor (){
 
             super();
-            }
+        }
 
 
     public init(){
@@ -109,13 +114,13 @@ protected constructor (){
 
 
     public shutdown(){
-this.logUtil!.putF(commonStrings!.START, this, "shutdown");
+this.logUtil!.putF(this.commonStrings!.START, this, "shutdown");
     
 }
 
 
     public onSensorChange(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 

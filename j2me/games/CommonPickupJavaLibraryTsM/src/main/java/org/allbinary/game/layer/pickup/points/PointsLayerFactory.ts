@@ -34,7 +34,10 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class PointsLayerFactory
 public constructor (points: number){
 
             super();
-            var points = points
+        var points = points
 this.points= points;
     
 }
@@ -62,7 +65,7 @@ this.points= points;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new PointsLayer(points);
+                        return new PointsLayer(this.points);
     
 }
 

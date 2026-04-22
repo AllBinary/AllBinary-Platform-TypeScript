@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class GameYouLoseSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/youlose.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/youlose.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

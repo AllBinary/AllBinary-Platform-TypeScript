@@ -67,7 +67,10 @@ import { VectorInfo } from "../../../../org/allbinary/vector/VectorInfo.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,12 +86,9 @@ export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimati
         
 
     private angleIncrement: number= 0
-public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, dy: number)                        
-
-                            : this(vectorInfo, basicColor, dx, dy, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var vectorInfo = vectorInfo
+public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, dy: number){
+            this(vectorInfo, basicColor, dx, dy, AnimationBehaviorFactory.getInstance());
+                        //var vectorInfo = vectorInfo
     //var basicColor = basicColor
     //var dx = dx
     //var dy = dy
@@ -98,12 +98,9 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, 
                     
 }
 
-public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : this(vectorInfo, basicColor, animationBehaviorFactory){
-
-            super();
-                //var vectorInfo = vectorInfo
+public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            this(vectorInfo, basicColor, animationBehaviorFactory);
+                        //var vectorInfo = vectorInfo
     //var basicColor = basicColor
     //var dx = dx
     //var dy = dy
@@ -118,12 +115,9 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (vectorInfo: VectorInfo, basicColor: BasicColor)                        
-
-                            : this(vectorInfo, basicColor, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var vectorInfo = vectorInfo
+public constructor (vectorInfo: VectorInfo, basicColor: BasicColor){
+            this(vectorInfo, basicColor, AnimationBehaviorFactory.getInstance());
+                        //var vectorInfo = vectorInfo
     //var basicColor = basicColor
 
 
@@ -131,12 +125,9 @@ public constructor (vectorInfo: VectorInfo, basicColor: BasicColor)
                     
 }
 
-public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory)                        
-
-                            : super(AnimationFrameToImageUtil.getInstance()!.getInstanceTranslate(vectorInfo!.getWidth(), vectorInfo!.getHeight(), new VectorAnimation(vectorInfo!.getPoints(), basicColor, animationBehaviorFactory!.getOrCreateInstance())), 0, 0, animationBehaviorFactory){
-
-            super();
-                //var vectorInfo = vectorInfo
+public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(AnimationFrameToImageUtil.getInstance()!.getInstanceTranslate(vectorInfo!.getWidth(), vectorInfo!.getHeight(), new VectorAnimation(vectorInfo!.getPoints(), basicColor, animationBehaviorFactory!.getOrCreateInstance())), 0, 0, animationBehaviorFactory);
+                        //var vectorInfo = vectorInfo
     //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 
@@ -159,7 +150,7 @@ this.init();
     
 this.angleIncrement= angleFactory!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity();
     
-this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), angleFactory!.TOTAL_ANGLE.toInt());
+this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), angleFactory!.TOTAL_ANGLE);
     
 }
 
@@ -178,7 +169,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.getAngleIncrement();
 
-                        .toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        ), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -188,7 +179,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.angleIncrement.toShort()), AngleFactory.getInstance()!.TOTAL_ANGLE.toInt(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(this.imageArray, AngleInfo.getInstance(this.angleIncrement), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

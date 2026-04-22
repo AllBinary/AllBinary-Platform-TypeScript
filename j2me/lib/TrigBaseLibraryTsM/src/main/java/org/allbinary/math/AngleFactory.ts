@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -117,7 +120,7 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
         
         
 
-    private readonly angleArray: Angle[] = new Array(TOTAL_ANGLE.toInt());
+    private readonly angleArray: Angle[] = new Array(TOTAL_ANGLE);
         
         
 
@@ -139,21 +142,21 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
 public constructor (){
 
             super();
-            
+        
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
         
         
 ;
     
 
-    var total: number = angleArray!.length.toShort();
+    var total: number = this.angleArray!.length;
         
         
 ;
     
-UP= new NamedAngle(0.toShort(), commonPhoneStrings!.UP);
+this.UP= new NamedAngle(0, commonPhoneStrings!.UP);
     
-angleArray[0]= UP;
+this.angleArray[0]= this.UP;
     
 
 
@@ -165,13 +168,13 @@ angleArray[0]= UP;
         
 index < 90; index++)
         {
-angleArray[index]= new Angle(index.toShort());
+this.angleArray[index]= new Angle(index);
     
 }
 
-RIGHT= new NamedAngle(90.toShort(), commonPhoneStrings!.RIGHT);
+this.RIGHT= new NamedAngle(90, commonPhoneStrings!.RIGHT);
     
-angleArray[90]= RIGHT;
+this.angleArray[90]= this.RIGHT;
     
 
 
@@ -183,13 +186,13 @@ angleArray[90]= RIGHT;
         
 index < 180; index++)
         {
-angleArray[index]= new Angle(index.toShort());
+this.angleArray[index]= new Angle(index);
     
 }
 
-DOWN= new NamedAngle(180.toShort(), commonPhoneStrings!.DOWN);
+this.DOWN= new NamedAngle(180, commonPhoneStrings!.DOWN);
     
-angleArray[180]= DOWN;
+this.angleArray[180]= this.DOWN;
     
 
 
@@ -201,13 +204,13 @@ angleArray[180]= DOWN;
         
 index < 270; index++)
         {
-angleArray[index]= new Angle(index.toShort());
+this.angleArray[index]= new Angle(index);
     
 }
 
-LEFT= new NamedAngle(270.toShort(), commonPhoneStrings!.LEFT);
+this.LEFT= new NamedAngle(270, commonPhoneStrings!.LEFT);
     
-angleArray[270]= LEFT;
+this.angleArray[270]= this.LEFT;
     
 
 
@@ -219,7 +222,7 @@ angleArray[270]= LEFT;
         
 index < total; index++)
         {
-angleArray[index]= new Angle(index.toShort());
+this.angleArray[index]= new Angle(index);
     
 }
 
@@ -233,9 +236,9 @@ angleArray[index]= new Angle(index.toShort());
     public getInstance(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = frameUtil!.adjustAngleToFrameAngle(index);
+    var adjustedIndex: number = this.frameUtil!.adjustAngleToFrameAngle(index);
 
-                        .toInt();
+                        ;
         
         
 ;

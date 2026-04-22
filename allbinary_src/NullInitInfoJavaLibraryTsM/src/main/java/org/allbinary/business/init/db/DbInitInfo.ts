@@ -31,7 +31,10 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { DbConnectionInfo } from "./DbConnectionInfo.js";
 
 export class DbInitInfo extends DbConnectionInfo {
         
-public constructor (initFileName: string, read: boolean)                        
-
-                            : super(){
-
+public constructor (initFileName: string, read: boolean){
             super();
-            var initFileName = initFileName
+                    var initFileName = initFileName
 var read = read
 
 

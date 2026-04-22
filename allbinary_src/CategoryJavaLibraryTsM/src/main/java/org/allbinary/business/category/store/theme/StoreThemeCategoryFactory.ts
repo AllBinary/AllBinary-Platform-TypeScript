@@ -64,7 +64,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,12 +90,12 @@ export class StoreThemeCategoryFactory
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)");
+                                    this.logUtil!.putF(this.commonStrings!.START, this, "StoreCategoryFactory(TransformInfoInterface transformInfoInterface)");
     
 
                                     }
@@ -125,7 +128,7 @@ this.transformInfoInterface= transformInfoInterface;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getRootInstance()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getRootInstance()", e);
     
 
                                     }
@@ -171,7 +174,7 @@ var categoryAbPath = categoryAbPath
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getRootInstance(String)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getRootInstance(String)", e);
     
 
                                     }
@@ -223,7 +226,7 @@ var node = node
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getRootInstance(node)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getRootInstance(node)", e);
     
 
                                     }
@@ -264,7 +267,7 @@ var level = level
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(String, int)", e);
     
 
                                     }
@@ -347,7 +350,7 @@ var level = level
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(Node, int)", e);
     
 
                                     }
@@ -430,7 +433,7 @@ var level = level
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.ENTITYFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     
 
                                     }

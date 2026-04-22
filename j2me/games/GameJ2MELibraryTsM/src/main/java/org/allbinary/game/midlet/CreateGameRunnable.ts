@@ -46,12 +46,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Runnable } from "./Runnable.js";
+
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
 import { DemoGameMidlet } from "./DemoGameMidlet.js";
@@ -79,7 +84,7 @@ export class CreateGameRunnable
 public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
 
             super();
-            var demoGameMidlet = demoGameMidlet
+        var demoGameMidlet = demoGameMidlet
 var hashtable = hashtable
 this.demoGameMidlet= demoGameMidlet;
     
@@ -107,7 +112,7 @@ this.demoGameMidlet!.stopGameCanvasRunnableInterface();
     
 this.demoGameMidlet!.setGameCanvasRunnableInterface(this.demoGameMidlet!.createGameCanvasRunnableInterface());
     
-this.demoGameMidlet!.getGameCanvasRunnableInterface()!.setLoadStateHashtable(hashtable);
+this.demoGameMidlet!.getGameCanvasRunnableInterface()!.setLoadStateHashtable(this.hashtable);
     
 this.demoGameMidlet!.startGameCanvasRunnableInterface();
     

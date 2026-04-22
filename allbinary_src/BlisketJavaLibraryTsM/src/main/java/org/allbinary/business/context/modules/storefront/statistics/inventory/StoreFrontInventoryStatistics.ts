@@ -51,12 +51,17 @@ import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontInventoryStatisticsInterface } from "./StoreFrontInventoryStatisticsInterface.js";
+
 import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
 export class StoreFrontInventoryStatistics
@@ -70,7 +75,7 @@ export class StoreFrontInventoryStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 this.totalInventorySaleValueMoney= new Money();
     
 

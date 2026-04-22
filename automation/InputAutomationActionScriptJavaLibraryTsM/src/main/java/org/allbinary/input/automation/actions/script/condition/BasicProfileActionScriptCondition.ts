@@ -88,12 +88,17 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
+
 import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
 
 import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptConditionFactory.js";
@@ -110,12 +115,9 @@ export class BasicProfileActionScriptCondition extends ProfileActionScriptItem i
     private profileActionProcessorInterfaceVector: Vector
 
     private profileActionConditionInterfaceVector: Vector
-public constructor (label: string, node: Node)                        
-
-                            : super(label, node){
-
-            super();
-            var label = label
+public constructor (label: string, node: Node){
+            super(label, node);
+                    var label = label
 var node = node
 
 
@@ -232,12 +234,9 @@ index < nodeList!.getLength(); index++)
 
 }
 
-public constructor (label: string)                        
-
-                            : super(label){
-
-            super();
-            var label = label
+public constructor (label: string){
+            super(label);
+                    var label = label
 
 
                             //For kotlin this is before the body of the constructor.

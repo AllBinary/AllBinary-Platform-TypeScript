@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,24 +51,18 @@ export class CustomGPoint extends GPoint {
     private y: number= 0
 
     private z: number= 0
-private constructor (point: GPoint)                        
-
-                            : super(point){
-
-            super();
-            var point = point
+private constructor (point: GPoint){
+            super(point);
+                    var point = point
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (x: number, y: number)                        
-
-                            : super(x, y){
-
-            super();
-            var x = x
+public constructor (x: number, y: number){
+            super(x, y);
+                    var x = x
 var y = y
 
 
@@ -73,12 +70,9 @@ var y = y
                     
 }
 
-public constructor (x: number, y: number, z: number)                        
-
-                            : super(x, y, z){
-
-            super();
-            var x = x
+public constructor (x: number, y: number, z: number){
+            super(x, y, z);
+                    var x = x
 var y = y
 var z = z
 

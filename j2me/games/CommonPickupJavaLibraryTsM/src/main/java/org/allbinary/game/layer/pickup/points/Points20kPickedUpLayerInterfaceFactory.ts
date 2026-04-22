@@ -55,7 +55,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
 
 
-        
+
+
+
+
 
 
 
@@ -91,12 +94,9 @@ pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFacto
     private pool: PointsLayerCircularStaticPool = new PointsLayerCircularStaticPool(new PointsLayerFactory(GameConfigurationUtil.getInstance()!.getCompetitionValue() *20000), 1);
         
         
-private constructor ()                        
-
-                            : super(PickedUpLayerTypeFactory.getInstance()!.POINTS, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0)){
-
-            super();
-            
+private constructor (){
+            super(PickedUpLayerTypeFactory.getInstance()!.POINTS, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0));
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

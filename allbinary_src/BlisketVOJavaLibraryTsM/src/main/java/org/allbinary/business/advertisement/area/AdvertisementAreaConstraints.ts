@@ -49,12 +49,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstraintsInterface.js";
+
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
 export class AdvertisementAreaConstraints
@@ -68,7 +73,7 @@ export class AdvertisementAreaConstraints
 public constructor (document: Document){
 
             super();
-            var document = document
+        var document = document
 
     var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;
         

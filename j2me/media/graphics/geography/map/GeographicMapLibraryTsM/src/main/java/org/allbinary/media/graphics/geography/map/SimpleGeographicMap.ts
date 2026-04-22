@@ -42,7 +42,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -81,7 +84,7 @@ export class SimpleGeographicMap
 public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
-                //var id = id
+            //var id = id
     //var name = name
     //var cellTypeIdToGeographicMapCellType = cellTypeIdToGeographicMapCellType
     //var tiledLayer = tiledLayer

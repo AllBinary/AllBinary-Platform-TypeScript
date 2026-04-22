@@ -91,7 +91,10 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
 
 
-        
+
+
+
+
 
 
 
@@ -111,12 +114,9 @@ export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPos
     private readonly positionList: BasicArrayList
 
     private animationInterface: CircleFilledAnimation
-public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition)                        
-
-                            : super(new Rectangle(PointFactory.getInstance()!.getInstance(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition){
-
-            super();
-            var geographicMapInterface = geographicMapInterface
+public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
+            super(new Rectangle(PointFactory.getInstance()!.getInstance(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
+                    var geographicMapInterface = geographicMapInterface
 var viewPosition = viewPosition
 
 
@@ -211,7 +211,7 @@ this.positionList!.remove(index);
 ;
     
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -230,7 +230,7 @@ this.positionList!.remove(index);
         
 index < size; index++)
         {
-nextColorCompositeInterface= list.get(index);
+nextColorCompositeInterface= this.list.get(index);
 
                          as ColorCompositeInterface;
     

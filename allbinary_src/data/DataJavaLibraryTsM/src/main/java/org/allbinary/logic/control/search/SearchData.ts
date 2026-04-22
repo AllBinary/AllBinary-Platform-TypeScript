@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -133,7 +136,7 @@ export class SearchData
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

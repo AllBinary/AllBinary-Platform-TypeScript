@@ -34,7 +34,10 @@ import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cach
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class ImageComparisonResultFrameCacheable
 public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
 
             super();
-            var imageComparisonResult = imageComparisonResult
+        var imageComparisonResult = imageComparisonResult
 var frame = frame
 this.setImageComparisonResult(imageComparisonResult);
     

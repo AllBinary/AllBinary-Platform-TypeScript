@@ -31,7 +31,10 @@ import { GameConfigurationCentral } from "../../../org/allbinary/game/configurat
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public vibrate(duration: number, type: number, volume: number){

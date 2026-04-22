@@ -61,7 +61,10 @@ import { XmlRpcHandler } from "../../../../../org/apache/xmlrpc/XmlRpcHandler.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -154,7 +157,7 @@ export class XmlRpcAbeClient
 public constructor (clientInfo: AbeClientInformationInterface, remoteMethod: string){
 
             super();
-            var clientInfo = clientInfo
+        var clientInfo = clientInfo
 var remoteMethod = remoteMethod
 this.remoteMethod= remoteMethod;
     
@@ -166,7 +169,7 @@ this.clientInfo= clientInfo;
                                     {
                                     this.maxServers= clientInfo!.getNumberOfLicenseServers() -2;
     
-this.start= myRandomFactory!.getAbsoluteNextInt(maxServers) +1;
+this.start= this.myRandomFactory!.getAbsoluteNextInt(this.maxServers) +1;
     
 
                                     }
@@ -182,7 +185,7 @@ this.start= 0;
 
                                     }
                                 
-isDone= false;
+this.isDone= false;
     
 this.server= this.start;
     
@@ -192,11 +195,11 @@ this.server= this.start;
         
 ;
     
-stringBuffer!.append(START_SERVER);
+stringBuffer!.append(this.START_SERVER);
     
 stringBuffer!.appendint(this.getServer());
     
-stringBuffer!.append(SEP);
+stringBuffer!.append(this.SEP);
     
 stringBuffer!.append(clientInfo!.getLicenseServer(this.getServer()));
     
@@ -209,7 +212,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR);
             
     public get(anyType: any = {}): any{
 var anyType = anyType
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 
 

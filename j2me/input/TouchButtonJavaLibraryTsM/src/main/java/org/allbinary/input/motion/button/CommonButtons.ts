@@ -37,7 +37,10 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class CommonButtons
 private constructor (){
 
             super();
-            
+        
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
@@ -122,15 +125,15 @@ private constructor (){
 
                                     }
                                 
-commonButtonSize= commonButtonSize shr 1;
+commonButtonSize= commonButtonSize>>1;
     
 }
 
-STANDARD_BUTTON_SIZE= commonButtonSize;
+this.STANDARD_BUTTON_SIZE= commonButtonSize;
     
-NORMAL_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
+this.NORMAL_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
     
-LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE shl 1, STANDARD_BUTTON_SIZE shl 1);
+this.LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE<<1, STANDARD_BUTTON_SIZE<<1);
     
 }
 

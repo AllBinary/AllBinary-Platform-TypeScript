@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class InputOutputTypeData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly NAME: string = "INPUT_OUTPUT_TYPE_NAME";

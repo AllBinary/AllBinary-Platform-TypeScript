@@ -34,7 +34,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,12 +47,9 @@ import { CollisionHelper } from "./CollisionHelper.js";
 
 export class SourceCollisionHelper extends CollisionHelper {
         
-public constructor (layerInterface: AllBinaryLayer)                        
-
-                            : super(layerInterface){
-
-            super();
-            var layerInterface = layerInterface
+public constructor (layerInterface: AllBinaryLayer){
+            super(layerInterface);
+                    var layerInterface = layerInterface
 
 
                             //For kotlin this is before the body of the constructor.

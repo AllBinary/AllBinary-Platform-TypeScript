@@ -49,7 +49,10 @@ import { ImageComparatorConstraintsInterface } from "../../../../../org/allbinar
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class ImageComparatorConstraints
 public constructor (doImageComparisonEveryNthFrame: number){
 
             super();
-            var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
+        var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
 this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame;
     
 this.setAvoidVector(new Vector());

@@ -31,7 +31,10 @@ import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class UniformLightPositionOpenGLProcessor extends OpenGLObject3dProcessor
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
             super();
-                //var shaderComposite = shaderComposite
+            //var shaderComposite = shaderComposite
     //var handleIndex = handleIndex
 }
 

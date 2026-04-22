@@ -357,7 +357,10 @@ import { ExplosionBasicSound } from "../../../../../org/allbinary/weapon/media/a
 
 
 
-        
+
+
+
+
 
 
 
@@ -485,12 +488,9 @@ export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventList
     private steeringInsideGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
         
         
-protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number)                        
-
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition()){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number){
+            this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition());
+                        //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
     //var groupInterface = groupInterface
     //var rootName = rootName
@@ -518,12 +518,9 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
                     
 }
 
-protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition)                        
-
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, NullRotationAnimationFactory.getFactoryInstance(), proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, viewPosition){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition){
+            this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, NullRotationAnimationFactory.getFactoryInstance(), proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, viewPosition);
+                        //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
     //var groupInterface = groupInterface
     //var rootName = rootName
@@ -552,12 +549,9 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
                     
 }
 
-protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number)                        
-
-                            : this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition()){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number){
+            this(remoteInfo, parentLayer, groupInterface, rootName, name, vehicleProperties, healthInterface, maxLoad, moveSoundInterface, waypointLayerInterfaceFactoryInterface, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, direction, x, y, z, new TileLayerPositionIntoViewPosition());
+                        //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
     //var groupInterface = groupInterface
     //var rootName = rootName
@@ -586,12 +580,9 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
                     
 }
 
-protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxResourceLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition)                        
-
-                            : super(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, new WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition){
-
-            super();
-                //var remoteInfo = remoteInfo
+protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxResourceLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition){
+            super(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, new WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
+                        //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
     //var groupInterface = groupInterface
     //var rootName = rootName
@@ -1060,7 +1051,7 @@ index >= 0; index--)
         
 ;
     
-currentDistance= layerDistanceUtil!.getDistance(this, geographicMapCellPosition!.getMidPoint());
+currentDistance= this.layerDistanceUtil!.getDistance(this, geographicMapCellPosition!.getMidPoint());
     
 
                         if(currentDistance < shortestDistance)
@@ -1200,7 +1191,7 @@ this.getUnitWaypointBehavior()!.initRange(weaponRange);
     
 this.fireTimeHelper!.delay= (weaponProperties!.getReloadTime();
 
-                        .toInt());
+                        );
     
 }
 
@@ -1512,7 +1503,7 @@ this.move();
     //var accelerate = accelerate
 this.getVehicleProperties()!.getVelocityProperties()!.addVelocity(accelerate.getUnscaled(), this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle();
 
-                        .toInt(), 90);
+                        , 90);
     
 }
 
@@ -1528,14 +1519,14 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocity(accelerate.get
 ;
     
 
-    var angle: number = (angleInfo!.getAngle() +this.slightAngle).toInt();
+    var angle: number = (angleInfo!.getAngle() +this.slightAngle);
         
         
 ;
     
 hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getInstance(1), SmallIntegerSingletonFactory.getInstance()!.getInstance(AngleFactory.getInstance()!.getInstance(angle)!.getValue();
 
-                        .toInt()));
+                        ));
     
 
     var salvoInterface: SalvoInterface = this.getPartInterfaceArray()[0]! as SalvoInterface;
@@ -1543,7 +1534,7 @@ hashtable.put(SmallIntegerSingletonFactory.getInstance()!.getInstance(1), SmallI
         
 ;
     
-salvoInterface!.process(layerManager, angle.toShort(), 90.toShort());
+salvoInterface!.process(layerManager, angle, 90);
     
 }
 
@@ -1713,7 +1704,7 @@ this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading
                              else 
                         if((this.movementAngle!.getValue();
 
-                        .toInt()) == angle)
+                        ) == angle)
                         
                                     {
                                     
@@ -2103,7 +2094,7 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 
     var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
 
-                        .toLong();
+                        ;
         
         
 ;
@@ -2111,7 +2102,7 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 
     var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();
 
-                        .toLong();
+                        ;
         
         
 ;
@@ -2136,7 +2127,7 @@ this.getUnitWaypointBehavior()!.move();
         
 ;
     
-layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXScaled.toInt(), velocityYScaled.toInt(), getPartialpositionlist());
+layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXScaled, velocityYScaled, getPartialpositionlist());
     
 
     var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist());
@@ -2147,7 +2138,7 @@ layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXSca
 ;
     
 
-                        if(cellPosition == cellPositionFactory!.NONE)
+                        if(cellPosition == this.cellPositionFactory!.NONE)
                         
                                     {
                                     
@@ -2163,13 +2154,13 @@ layerPartialCellPositionsUtil!.getAll(geographicMapInterface, this, velocityXSca
 ;
     
 
-    var x: number = this.x +velocityXScaled.toInt();
+    var x: number = this.x +velocityXScaled;
         
         
 ;
     
 
-    var y: number = this.y +velocityYScaled.toInt();
+    var y: number = this.y +velocityYScaled;
         
         
 ;
@@ -2502,7 +2493,7 @@ var ownerLayer = ownerLayer
                         if(this.getLoad() > 0)
                         
                                     {
-                                    CAPITAL_EVENT.setValue(this.getLoad());
+                                    this.CAPITAL_EVENT.setValue(this.getLoad());
     
 CapitalEventHandlerFactory.getInstance(ownerLayer!.getGroupInterface()[0]!)!.fireEvent(CAPITAL_EVENT);
     

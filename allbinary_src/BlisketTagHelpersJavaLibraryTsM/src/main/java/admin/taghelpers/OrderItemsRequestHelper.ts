@@ -52,7 +52,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,7 +80,7 @@ export class OrderItemsRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -89,11 +92,11 @@ this.getFormData();
 
 
     getFormData(){
-this.id= request.getParameter(OrderData.ID);
+this.id= this.request.getParameter(OrderData.ID);
     
-this.groupId= request.getParameter(ShippingMethodData.GROUP);
+this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
     
-this.status= request.getParameter(OrderHistoryData.STATUS);
+this.status= this.request.getParameter(OrderHistoryData.STATUS);
     
 }
 
@@ -113,7 +116,7 @@ var newStatus = newStatus
         
 ;
     
-OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus);
+OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, newStatus);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -169,7 +172,7 @@ OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, newStatus);
         
 ;
     
-OrderItemsEntityFactory.getInstance()!.setStatus(id, groupId, this.status);
+OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, this.status);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

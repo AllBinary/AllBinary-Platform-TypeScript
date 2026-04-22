@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class SoftwareInformation
 public constructor (name: string, version: string, shortName: string){
 
             super();
-                //var name = name
+            //var name = name
     //var version = version
     //var shortName = shortName
 this.name= name;

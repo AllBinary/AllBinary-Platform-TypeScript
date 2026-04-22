@@ -52,7 +52,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -116,7 +119,7 @@ console.log(vector.size());
 private constructor (){
 
             super();
-            }
+        }
 
 
     public findAll(path: string): BasicArrayList{
@@ -137,13 +140,13 @@ var path = path
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "findAll", e);
     
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "findAll", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "findAll", e);
     
 
                                     }
@@ -204,7 +207,7 @@ var file = file
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstallationPath", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getInstallationPath", e);
     
 
                                     }

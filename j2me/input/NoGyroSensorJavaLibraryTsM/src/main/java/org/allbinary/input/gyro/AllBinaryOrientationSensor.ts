@@ -40,7 +40,10 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ this.listener= completeMotionGestureInputEventListenerInterface;
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

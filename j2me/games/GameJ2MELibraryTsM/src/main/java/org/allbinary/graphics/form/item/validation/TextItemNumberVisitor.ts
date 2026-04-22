@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class TextItemNumberVisitor extends Visitor {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{

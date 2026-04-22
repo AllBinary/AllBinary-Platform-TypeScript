@@ -70,7 +70,10 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class TransformInfoPropertiesDocument
 public constructor (filePath: string){
 
             super();
-                //var filePath = filePath
+            //var filePath = filePath
 
     var xmlFile: AbFile = new AbFile(filePath);
         

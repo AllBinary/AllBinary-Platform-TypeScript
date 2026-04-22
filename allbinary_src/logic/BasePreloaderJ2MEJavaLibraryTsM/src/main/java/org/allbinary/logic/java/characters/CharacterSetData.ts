@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class CharacterSetData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly US_ASCII: string = "US-ASCII";

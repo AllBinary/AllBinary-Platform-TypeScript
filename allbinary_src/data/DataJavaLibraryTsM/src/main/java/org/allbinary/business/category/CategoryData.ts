@@ -31,7 +31,10 @@ import { DataFileData } from "../../../../org/allbinary/data/file/DataFileData.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class CategoryData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly PARENT: string = "CATEGORY_PARENT";

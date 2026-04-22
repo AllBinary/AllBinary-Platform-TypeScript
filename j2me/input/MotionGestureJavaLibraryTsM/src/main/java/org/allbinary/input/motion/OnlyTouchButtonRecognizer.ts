@@ -31,7 +31,10 @@ import { TouchButtonRecognizer } from "../../../../org/allbinary/input/motion/bu
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,7 +53,7 @@ export class OnlyTouchButtonRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-            this.touchButtonRecognizer= new TouchButtonRecognizer();
+        this.touchButtonRecognizer= new TouchButtonRecognizer();
     
 }
 
@@ -66,7 +69,7 @@ var modifiers = modifiers
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
                                     {
-                                    touchButtonProcessing= true;
+                                    this.touchButtonProcessing= true;
     
 
                                     }
@@ -82,10 +85,10 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-                        if(touchButtonProcessing)
+                        if(this.touchButtonProcessing)
                         
                                     {
-                                    touchButtonProcessing= false;
+                                    this.touchButtonProcessing= false;
     
 
                                     }
@@ -114,7 +117,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-                        if(touchButtonProcessing)
+                        if(this.touchButtonProcessing)
                         
                                     {
                                     this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId);

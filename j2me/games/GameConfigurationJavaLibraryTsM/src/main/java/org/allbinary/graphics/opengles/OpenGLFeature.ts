@@ -31,7 +31,10 @@ import { Feature } from "../../../../org/allbinary/game/configuration/feature/Fe
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,12 +42,9 @@ import { Feature } from "../../../../org/allbinary/game/configuration/feature/Fe
         
 export class OpenGLFeature extends Feature {
         
- constructor (name: string)                        
-
-                            : super(name){
-
-            super();
-            var name = name
+ constructor (name: string){
+            super(name);
+                    var name = name
 
 
                             //For kotlin this is before the body of the constructor.

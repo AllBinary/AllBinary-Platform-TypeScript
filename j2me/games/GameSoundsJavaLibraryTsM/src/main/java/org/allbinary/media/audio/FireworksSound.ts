@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class FireworksSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/fireworks.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/fireworks.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

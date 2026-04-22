@@ -58,7 +58,10 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,18 +69,17 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
         
 import { TransformInfoHttp } from "./TransformInfoHttp.js";
 
+import { TransformInfoHttpStoreInterface } from "./TransformInfoHttpStoreInterface.js";
+
 export class TransformInfoHttpStore extends TransformInfoHttp implements TransformInfoHttpStoreInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext, true){
-
-            super();
-            var propertiesHashMap = propertiesHashMap
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext, true);
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
 
@@ -94,12 +96,9 @@ var pageContext = pageContext
                                 
 }
 
-public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(databaseHashMap, propertiesHashMap, pageContext){
-
-            super();
-            var databaseHashMap = databaseHashMap
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(databaseHashMap, propertiesHashMap, pageContext);
+                    var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -135,12 +134,9 @@ this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME);
     
 }
 
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var storeFrontInterface = storeFrontInterface
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var storeFrontInterface = storeFrontInterface
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 

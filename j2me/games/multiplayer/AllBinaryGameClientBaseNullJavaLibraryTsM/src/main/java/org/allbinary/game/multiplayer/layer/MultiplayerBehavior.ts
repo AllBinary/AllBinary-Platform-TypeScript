@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class MultiplayerBehavior
 protected constructor (username: string){
 
             super();
-            var username = username
+        var username = username
 }
 
 

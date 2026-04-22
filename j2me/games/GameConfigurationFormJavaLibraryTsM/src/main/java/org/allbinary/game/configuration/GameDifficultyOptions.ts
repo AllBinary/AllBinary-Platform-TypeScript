@@ -60,7 +60,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,12 +73,9 @@ export class GameDifficultyOptions extends CommandForm {
         
 
     private readonly list: BasicArrayList
-public constructor (commandListener: CommandListener, title: string, list: BasicArrayList, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(commandListener, title, backgrounBasicColor, foregroundBasicColor){
-
-            super();
-            var commandListener = commandListener
+public constructor (commandListener: CommandListener, title: string, list: BasicArrayList, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+                    var commandListener = commandListener
 var title = title
 var list = list
 var backgrounBasicColor = backgrounBasicColor
@@ -153,7 +153,7 @@ this.setCommandListener(cmdListener);
     public update(){
 this.deleteAll();
     
-this.add(list, "Difficulty", Choice.EXCLUSIVE);
+this.add(this.list, "Difficulty", Choice.EXCLUSIVE);
     
 super.update();
     

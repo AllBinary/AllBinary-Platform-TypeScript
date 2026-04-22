@@ -31,12 +31,17 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DisplayInBrowserContraintsInterface } from "./DisplayInBrowserContraintsInterface.js";
+
 export class DisplayInBrowserContraints
             extends Object
          implements DisplayInBrowserContraintsInterface {
@@ -52,7 +57,7 @@ export class DisplayInBrowserContraints
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 }
 
 

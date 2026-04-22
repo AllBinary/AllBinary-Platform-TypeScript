@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -36,12 +39,14 @@
         
 import { TransformInfo } from "./TransformInfo.js";
 
+import { TransformInfoInterface } from "./TransformInfoInterface.js";
+
 export class CustomTransformInfo extends TransformInfo implements TransformInfoInterface {
         
 public constructor (outputTypeName: string, inputOutputTypeName: string, inputOutputTypeFile: string, name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
 
             super();
-            var outputTypeName = outputTypeName
+        var outputTypeName = outputTypeName
 var inputOutputTypeName = inputOutputTypeName
 var inputOutputTypeFile = inputOutputTypeFile
 var name = name

@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,7 +83,7 @@ export class GameFeatureItemCommandListener
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
-            var gameOptionsForm = gameOptionsForm
+        var gameOptionsForm = gameOptionsForm
 this.gameOptionsForm= gameOptionsForm;
     
 }

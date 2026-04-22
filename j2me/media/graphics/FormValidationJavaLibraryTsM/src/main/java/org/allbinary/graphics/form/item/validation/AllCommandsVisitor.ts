@@ -34,7 +34,10 @@ import { Visitor } from "../../../../../../org/allbinary/logic/util/visitor/Visi
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class AllCommandsVisitor extends Visitor {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public visit(anyType: any = {}): any{

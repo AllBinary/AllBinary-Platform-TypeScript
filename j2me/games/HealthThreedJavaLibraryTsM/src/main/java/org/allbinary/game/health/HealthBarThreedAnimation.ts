@@ -64,7 +64,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -80,12 +83,9 @@ export class HealthBarThreedAnimation extends HealthBarAnimation {
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
         
         
-public constructor (layerInterface: AllBinaryLayer, location: number)                        
-
-                            : super(layerInterface, location){
-
-            super();
-            var layerInterface = layerInterface
+public constructor (layerInterface: AllBinaryLayer, location: number){
+            super(layerInterface, location);
+                    var layerInterface = layerInterface
 var location = location
 
 
@@ -95,20 +95,20 @@ this.basicColor= this.basicColorFactory!.GREEN;
     
 this.colorP= this.basicColor!.toInt();
     
-rectangle= new Rectangle(0, 0, 1, 1, this.basicColor);
+this.rectangle= new Rectangle(0, 0, 1, 1, this.basicColor);
     
-rectangle.setDoubleSidedEnabled(true);
+this.rectangle.setDoubleSidedEnabled(true);
     
-rectangle.setNormalsEnabled(false);
+this.rectangle.setNormalsEnabled(false);
     
-rectangle.setTexturesEnabled(false);
+this.rectangle.setTexturesEnabled(false);
     
 }
 
 
     updateColor(){
 
-    var colorBufferList: ColorBufferList = rectangle.getVertices()!.getColor4BufferList()!;
+    var colorBufferList: ColorBufferList = this.rectangle.getVertices()!.getColor4BufferList()!;
         
         
 ;
@@ -138,7 +138,7 @@ colorBufferList!.set(index, this.basicColor);
 
     updateSize(){
 
-    var number3dBufferList: Number3dBufferList = rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;
+    var number3dBufferList: Number3dBufferList = this.rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;
         
         
 ;
@@ -219,7 +219,7 @@ colorBufferList!.set(index, this.basicColor);
                         for (
     col <= segsW; col++)
         {
-number3dBufferList!.set(index++, col.toFloat() *w -width5, row.toFloat() *h -height5, 0f);
+number3dBufferList!.set(index++, col *w -width5, row *h -height5, 0f);
     
 }
 
@@ -274,15 +274,15 @@ this.updateSize();
     
 positionNumber3d!.x=  -(viewPosition!.getX();
 
-                        .toFloat());
+                        );
     
 positionNumber3d!.z=  -(viewPosition!.getY();
 
-                        .toFloat());
+                        );
     
 positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight();
     
-object3dProcessor!.drawObject(gl, this.rectangle);
+this.object3dProcessor!.drawObject(gl, this.rectangle);
     
 }
 

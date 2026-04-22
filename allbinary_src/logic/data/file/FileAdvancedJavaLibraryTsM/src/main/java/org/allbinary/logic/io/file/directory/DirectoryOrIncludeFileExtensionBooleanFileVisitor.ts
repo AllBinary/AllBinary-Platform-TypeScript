@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ export class DirectoryOrIncludeFileExtensionBooleanFileVisitor extends IncludeFi
         
 
     private readonly includesString: string
-public constructor (filterStringBasicArrayList: BasicArrayList)                        
-
-                            : super(filterStringBasicArrayList){
-
-            super();
-                //var filterStringBasicArrayList = filterStringBasicArrayList
+public constructor (filterStringBasicArrayList: BasicArrayList){
+            super(filterStringBasicArrayList);
+                        //var filterStringBasicArrayList = filterStringBasicArrayList
 
 
                             //For kotlin this is before the body of the constructor.
@@ -63,12 +63,9 @@ this.includesString=
     
 }
 
-public constructor (filterStringBasicArrayList: BasicArrayList, includesString: string)                        
-
-                            : super(filterStringBasicArrayList){
-
-            super();
-                //var filterStringBasicArrayList = filterStringBasicArrayList
+public constructor (filterStringBasicArrayList: BasicArrayList, includesString: string){
+            super(filterStringBasicArrayList);
+                        //var filterStringBasicArrayList = filterStringBasicArrayList
     //var includesString = includesString
 
 

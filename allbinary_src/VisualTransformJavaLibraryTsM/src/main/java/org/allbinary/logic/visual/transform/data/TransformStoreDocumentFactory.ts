@@ -37,7 +37,10 @@ import { SearchRequest } from "../../../../../../org/allbinary/logic/control/sea
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ var searchRequest = searchRequest
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

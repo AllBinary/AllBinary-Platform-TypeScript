@@ -40,7 +40,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class ThemePropertiesView
 public constructor (themeInterface: ThemeInterface){
 
             super();
-            var themeInterface = themeInterface
+        var themeInterface = themeInterface
 this.themeInterface= themeInterface;
     
 }

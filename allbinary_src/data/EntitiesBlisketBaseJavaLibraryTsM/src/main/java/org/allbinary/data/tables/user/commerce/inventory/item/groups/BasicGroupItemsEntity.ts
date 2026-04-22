@@ -55,12 +55,17 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicGroupItemsEntityInterface } from "./BasicGroupItemsEntityInterface.js";
+
 export class BasicGroupItemsEntity extends AbSqlBean implements BasicGroupItemsEntityInterface {
         
 
@@ -71,16 +76,13 @@ export class BasicGroupItemsEntity extends AbSqlBean implements BasicGroupItemsE
     readonly tableName: string = "basicgroupeditems";
         
         
-public constructor ()                        
-
-                            : super(new InventoryDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new InventoryDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

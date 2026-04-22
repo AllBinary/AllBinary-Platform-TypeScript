@@ -115,12 +115,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ThemeInterface } from "./ThemeInterface.js";
+
 import { ThemeData } from "./ThemeData.js";
 
 export class ThemeValidation
@@ -152,7 +157,7 @@ export class ThemeValidation
 public constructor (transformInfoInterface: TransformInfoInterface, cssStyleValidation: CssStyleValidation, categoryThemePath: string){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 var cssStyleValidation = cssStyleValidation
 var categoryThemePath = categoryThemePath
 this.transformInfoInterface= transformInfoInterface;
@@ -176,7 +181,7 @@ this.init();
 public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 var hashMap = hashMap
 this.transformInfoInterface= transformInfoInterface;
     
@@ -232,7 +237,7 @@ this.init();
 public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node){
 
             super();
-            var storeThemeCategoryInterface = storeThemeCategoryInterface
+        var storeThemeCategoryInterface = storeThemeCategoryInterface
 var node = node
 this.transformInfoInterface= storeThemeCategoryInterface!.getTransformInfoInterface();
     

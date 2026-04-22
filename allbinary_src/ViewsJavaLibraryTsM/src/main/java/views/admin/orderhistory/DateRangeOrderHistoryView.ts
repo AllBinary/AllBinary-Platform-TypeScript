@@ -88,7 +88,10 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
 
-        
+
+
+
+
 
 
 
@@ -164,12 +167,9 @@ export class DateRangeOrderHistoryView extends HttpStoreComponentView implements
     private MAXLEN: number = 15;
         
         
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -184,35 +184,35 @@ this.getFormData();
 
 
     getFormData(){
-this.dateType= request.getParameter(OrderHistoryData.DATETYPE);
+this.dateType= this.request.getParameter(OrderHistoryData.DATETYPE);
     
-this.preprocessing= request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
+this.preprocessing= this.request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
     
-this.shipped= request.getParameter(OrderHistoryData.SHIPPEDNAME);
+this.shipped= this.request.getParameter(OrderHistoryData.SHIPPEDNAME);
     
-this.partiallyShipped= request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
+this.partiallyShipped= this.request.getParameter(OrderHistoryData.PARTIALLYSHIPPEDNAME);
     
-this.processing= request.getParameter(OrderHistoryData.PROCESSINGNAME);
+this.processing= this.request.getParameter(OrderHistoryData.PROCESSINGNAME);
     
-this.cancelled= request.getParameter(OrderHistoryData.CANCELLEDNAME);
+this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
     
-this.fromYear= request.getParameter(OrderHistoryData.FROMYEAR);
+this.fromYear= this.request.getParameter(OrderHistoryData.FROMYEAR);
     
-this.fromMonth= request.getParameter(OrderHistoryData.FROMMONTH);
+this.fromMonth= this.request.getParameter(OrderHistoryData.FROMMONTH);
     
-this.fromDay= request.getParameter(OrderHistoryData.FROMDAY);
+this.fromDay= this.request.getParameter(OrderHistoryData.FROMDAY);
     
-this.fromHour= request.getParameter(OrderHistoryData.FROMHOUR);
+this.fromHour= this.request.getParameter(OrderHistoryData.FROMHOUR);
     
-this.toYear= request.getParameter(OrderHistoryData.TOYEAR);
+this.toYear= this.request.getParameter(OrderHistoryData.TOYEAR);
     
-this.toMonth= request.getParameter(OrderHistoryData.TOMONTH);
+this.toMonth= this.request.getParameter(OrderHistoryData.TOMONTH);
     
-this.toDay= request.getParameter(OrderHistoryData.TODAY);
+this.toDay= this.request.getParameter(OrderHistoryData.TODAY);
     
-this.toHour= request.getParameter(OrderHistoryData.TOHOUR);
+this.toHour= this.request.getParameter(OrderHistoryData.TOHOUR);
     
-this.command= request.getParameter(GLOBALS2.ADMINCOMMAND);
+this.command= this.request.getParameter(GLOBALS2.ADMINCOMMAND);
     
 }
 
@@ -296,9 +296,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
 ;
     
 
-                        if(preprocessing != 
+                        if(this.preprocessing != 
                                     null
-                                 && preprocessing.compareTo(ON) == 0)
+                                 && this.preprocessing.compareTo(this.ON) == 0)
                         
                                     {
                                     
@@ -348,9 +348,9 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-                        if(shipped != 
+                        if(this.shipped != 
                                     null
-                                 && shipped.compareTo(ON) == 0)
+                                 && this.shipped.compareTo(this.ON) == 0)
                         
                                     {
                                     
@@ -400,9 +400,9 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-                        if(partiallyShipped != 
+                        if(this.partiallyShipped != 
                                     null
-                                 && partiallyShipped!.compareTo(ON) == 0)
+                                 && this.partiallyShipped!.compareTo(this.ON) == 0)
                         
                                     {
                                     
@@ -452,9 +452,9 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-                        if(processing != 
+                        if(this.processing != 
                                     null
-                                 && processing.compareTo(ON) == 0)
+                                 && this.processing.compareTo(this.ON) == 0)
                         
                                     {
                                     
@@ -504,9 +504,9 @@ node.appendChild(orderHistory!.toXmlNode(document));
                                     }
                                 
 
-                        if(cancelled != 
+                        if(this.cancelled != 
                                     null
-                                 && cancelled.compareTo(ON) == 0)
+                                 && this.cancelled.compareTo(this.ON) == 0)
                         
                                     {
                                     
@@ -607,7 +607,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 ;
     
 
-                        if(dateType == 
+                        if(this.dateType == 
                                     null
                                  || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
@@ -618,13 +618,13 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                                     }
                                 
 
-                        if(dateType != 
+                        if(this.dateType != 
                                     null
                                 )
                         
                                     {
                                     
-                        if(dateType!.compareTo(OrderHistoryData.TYPELONG) == 0)
+                        if(this.dateType!.compareTo(OrderHistoryData.TYPELONG) == 0)
                         
                                     {
                                     
@@ -646,11 +646,11 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 ;
     
 
-                        if(command.compareTo(VIEWORDERSINLASTHOUR) == 0)
+                        if(this.command.compareTo(this.VIEWORDERSINLASTHOUR) == 0)
                         
                                     {
                                     
-    var oneHour: number = 60.toLong() *60 *1000;
+    var oneHour: number = 60 *60 *1000;
         
         
 ;
@@ -662,11 +662,11 @@ rangeDate= oneHour as Long.
                                     }
                                 
                              else 
-                        if(command.compareTo(VIEWORDERSINLASTDAY) == 0)
+                        if(this.command.compareTo(this.VIEWORDERSINLASTDAY) == 0)
                         
                                     {
                                     
-    var oneDay: number = 24.toLong() *60 *60 *1000;
+    var oneDay: number = 24 *60 *60 *1000;
         
         
 ;
@@ -678,11 +678,11 @@ rangeDate= oneDay as Long.
                                     }
                                 
                              else 
-                        if(command.compareTo(VIEWORDERSINLASTWEEK) == 0)
+                        if(this.command.compareTo(this.VIEWORDERSINLASTWEEK) == 0)
                         
                                     {
                                     
-    var oneWeek: number = 7.toLong() *24 *60 *60 *1000;
+    var oneWeek: number = 7 *24 *60 *60 *1000;
         
         
 ;
@@ -694,11 +694,11 @@ rangeDate= oneWeek as Long.
                                     }
                                 
                              else 
-                        if(command.compareTo(VIEWORDERSINLAST30DAYS) == 0)
+                        if(this.command.compareTo(this.VIEWORDERSINLAST30DAYS) == 0)
                         
                                     {
                                     
-    var thirtyDays: number = 30.toLong() *24 *60 *60 *1000;
+    var thirtyDays: number = 30 *24 *60 *60 *1000;
         
         
 ;
@@ -710,7 +710,7 @@ rangeDate= thirtyDays as Long.
                                     }
                                 
                              else 
-                        if(command.compareTo(VIEWALLORDERS) == 0)
+                        if(this.command.compareTo(this.VIEWALLORDERS) == 0)
                         
                                     {
                                     rangeDate= currentTime as Long.
@@ -742,7 +742,7 @@ this.toDate= time;
                                     }
                                 
                              else 
-                        if(dateType!.compareTo(OrderHistoryData.TYPECAESAR) == 0)
+                        if(this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) == 0)
                         
                                     {
                                     
@@ -765,7 +765,7 @@ this.toDate= calendar.getTimeInMillis() as Long.
                                     }
                                 
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(toDate) || toDate!.length > MAXLEN)
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.toDate) || this.toDate!.length > this.MAXLEN)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -774,7 +774,7 @@ this.toDate= calendar.getTimeInMillis() as Long.
                                     }
                                 
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(fromDate) || fromDate!.length > MAXLEN)
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.fromDate) || this.fromDate!.length > this.MAXLEN)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -873,7 +873,7 @@ var document = document
 ;
     
 
-                        if(dateType == 
+                        if(this.dateType == 
                                     null
                                  || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
@@ -884,7 +884,7 @@ var document = document
                                     }
                                 
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(toDate) || toDate!.length > MAXLEN)
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.toDate) || this.toDate!.length > this.MAXLEN)
                         
                                     {
                                     result.append("Invalid To Date");
@@ -893,7 +893,7 @@ var document = document
                                     }
                                 
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(fromDate) || fromDate!.length > MAXLEN)
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.fromDate) || this.fromDate!.length > this.MAXLEN)
                         
                                     {
                                     result.append("Invalid From Date");

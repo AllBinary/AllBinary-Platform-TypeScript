@@ -37,7 +37,10 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,12 +48,9 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
         
 export class TickableLayerProcessor extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new TickableLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new TickableLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

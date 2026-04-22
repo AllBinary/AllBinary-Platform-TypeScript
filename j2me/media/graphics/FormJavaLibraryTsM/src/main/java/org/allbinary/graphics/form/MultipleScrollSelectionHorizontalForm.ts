@@ -44,7 +44,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.toInt()!;
         
         
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var formPaintableFactory = formPaintableFactory
     //var rectangle = rectangle
@@ -83,12 +83,9 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
                     
 }
 
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var items = items
     //var rectangle = rectangle
     //var formType = formType
@@ -160,7 +157,7 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
                                     }
                                 
                         else {
-                            graphics.setColor(backgroundColor);
+                            graphics.setColor(this.backgroundColor);
     
 graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
     
@@ -198,14 +195,14 @@ item= this.get(index);
                         
                                     {
                                     
-                        if(logged)
+                        if(this.logged)
                         
                                     {
                                     
                                     }
                                 
                         else {
-                            logged= true;
+                            this.logged= true;
     
 PreLogUtil.put(new StringMaker().
                             append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT);

@@ -49,7 +49,10 @@ import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,12 +68,9 @@ export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBe
     totalImpactVelocity: number = 0;
         
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-                //var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                        //var ownerLayer = ownerLayer
     //var collidable = collidable
 
 
@@ -175,11 +175,11 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
                         if(impactVelocityX != 0L)
                         
                                     {
-                                    halfImpactVelocityX= (impactVelocityX shr 1);
+                                    this.halfImpactVelocityX= (impactVelocityX>>1);
     
-ownerVehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityX);
+ownerVehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(this.halfImpactVelocityX);
     
-vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityX);
+vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(this.halfImpactVelocityX);
     
 
                                     }
@@ -192,11 +192,11 @@ vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(hal
                         if(impactVelocityY != 0L)
                         
                                     {
-                                    halfImpactVelocityY= (impactVelocityY shr 1);
+                                    this.halfImpactVelocityY= (impactVelocityY>>1);
     
-ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(halfImpactVelocityY);
+ownerVehicleProperties!.getVelocityProperties()!.getVelocityYBasicDecimalP()!.add(this.halfImpactVelocityY);
     
-vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(halfImpactVelocityY);
+vehicleProperties!.getVelocityProperties()!.getVelocityXBasicDecimalP()!.add(this.halfImpactVelocityY);
     
 
                                     }
@@ -209,7 +209,7 @@ this.collideFriction(ownerVehicleLayerInterface);
     
 this.collideFriction(vehiclePropertiesCompositeInterface);
     
-totalImpactVelocity= impactVelocityX +impactVelocityY;
+this.totalImpactVelocity= impactVelocityX +impactVelocityY;
     
 }
 

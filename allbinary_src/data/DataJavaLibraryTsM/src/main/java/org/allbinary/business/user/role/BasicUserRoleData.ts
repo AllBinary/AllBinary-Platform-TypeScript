@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class BasicUserRoleData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

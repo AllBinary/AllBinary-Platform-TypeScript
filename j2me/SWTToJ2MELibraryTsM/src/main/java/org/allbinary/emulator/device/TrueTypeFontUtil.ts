@@ -91,7 +91,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -127,12 +130,9 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 
     private readonly widthScale: number
-private constructor ()                        
-
-                            : super(2){
-
-            super();
-            
+private constructor (){
+            super(2);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -140,13 +140,13 @@ private constructor ()
                         if(AvianUtil.isAvian())
                         
                                     {
-                                    widthFloatArray= new Array();
+                                    this.widthFloatArray= new Array();
     
 
                                     }
                                 
                         else {
-                            widthFloatArray= new Array();
+                            this.widthFloatArray= new Array();
     
 
                         }
@@ -431,11 +431,11 @@ _characterWidth[index]= bounds.getMaxX();
                         biggestHeight= bounds.getMaxY() -bounds.getPoint()!.getX()
 x= (index % CELLS_PER_ROW) *cellSize;
     
-x += (cellSize shr 1);
+x += (cellSize>>1);
     
-x -= (_characterWidth[index] shr 1);
+x -= (_characterWidth[index]>>1);
     
-y=  -(cellSize shr 1);
+y=  -(cellSize>>1);
     
 
                         if(index >= CELLS_PER_ROW)
@@ -460,7 +460,7 @@ y=  -(cellSize shr 1);
                         y += cellSize
 y += cellSize;
     
-y -= (cellSize shr 2);
+y -= (cellSize>>2);
     
 graphics.drawChar(characterArray[0]!, x, y, 0);
     
@@ -513,12 +513,12 @@ characterArray[0]= pattern[index];
 ;
     
 
-    var w: number = (widthFloatArray[shortPatternIndex] /75).toInt() +19;
+    var w: number = (widthFloatArray[shortPatternIndex] /75) +19;
         
         
 ;
     
-_characterWidth[index]= w.toInt();
+_characterWidth[index]= w;
     
 
                         if(characterArray[0] == '.' || characterArray[0] == '1')

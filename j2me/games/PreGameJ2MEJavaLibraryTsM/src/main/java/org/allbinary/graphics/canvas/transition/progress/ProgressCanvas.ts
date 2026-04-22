@@ -91,7 +91,10 @@ import { ThreadPool } from "../../../../../../org/allbinary/thread/ThreadPool.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -175,7 +178,7 @@ pathFindingThreadPool!.runAPriorityTask();
  constructor (){
 
             super();
-            this.paintable= NullPaintable.getInstance();
+        this.paintable= NullPaintable.getInstance();
     
 this.backgroundBasicColor= BasicColorFactory.getInstance()!.WHITE;
     
@@ -186,12 +189,12 @@ this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM;
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-                //var title = title
+            //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, maxValue.toInt(), 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, this.maxValue, 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 
@@ -234,7 +237,7 @@ this.gauge.setHeight(30);
     
 this.gauge.setLabel(commonStrings!.PLEASE_WAIT);
     
-this.setText(TEXT);
+this.setText(this.TEXT);
     
 this.setValue(0);
     
@@ -269,9 +272,9 @@ this.setBackground(background);
     
 this.gauge.setHeight(myFont!.DEFAULT_CHAR_HEIGHT +2);
     
-this.gauge.setLabel(backgroundLabel);
+this.gauge.setLabel(this.backgroundLabel);
     
-this.setText(TEXT);
+this.setText(this.TEXT);
     
 this.setValue(0);
     
@@ -377,9 +380,9 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 
     setValue(value: number){
 var value = value
-this.value= value.toFloat();
+this.value= value;
     
-this.gauge.setValue(value.toFloat());
+this.gauge.setValue(value);
     
 }
 
@@ -399,13 +402,13 @@ var graphics = graphics
         
 ;
     
-graphics.setColor(backgroundBasicColor!.toInt());
+graphics.setColor(this.backgroundBasicColor!.toInt());
     
 graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight());
     
-gauge.paint(graphics, 0, 0);
+this.gauge.paint(graphics, 0, 0);
     
-hasPainted= true;
+this.hasPainted= true;
     
 }
 

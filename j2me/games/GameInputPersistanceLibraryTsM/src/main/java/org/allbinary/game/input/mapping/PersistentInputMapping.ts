@@ -70,7 +70,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,15 +110,15 @@ export class PersistentInputMapping
 protected constructor (){
 
             super();
-            inputPersistance= new InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+        inputPersistance= new InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
     
 }
 
 protected constructor (name: string){
 
             super();
-            var name = name
-inputPersistance= new InputPersistance(name);
+        var name = name
+this.inputPersistance= new InputPersistance(name);
     
 }
 
@@ -184,9 +187,9 @@ this.save(abeClientInformation);
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable());
+this.inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable());
     
-inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
+this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
     
 
                         if(this.getInputMappingEventListenerInterface() != 
@@ -194,7 +197,7 @@ inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
                                 )
                         
                                     {
-                                    this.getInputMappingEventListenerInterface()!.onInputMappingEvent(inputMappingEvent);
+                                    this.getInputMappingEventListenerInterface()!.onInputMappingEvent(this.inputMappingEvent);
     
 
                                     }
@@ -210,7 +213,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
         try {
-            inputPersistance!.loadAll(abeClientInformation);
+            this.inputPersistance!.loadAll(abeClientInformation);
     
 
                 //: 
@@ -218,16 +221,16 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
             {
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     
-inputPersistance!.deleteRecoreStore(abeClientInformation);
+this.inputPersistance!.deleteRecoreStore(abeClientInformation);
     
 this.setDefault(abeClientInformation);
     
-inputPersistance!.loadAll(abeClientInformation);
+this.inputPersistance!.loadAll(abeClientInformation);
     
 }
 
 
-    var list: BasicArrayList = inputPersistance!.getList()!;
+    var list: BasicArrayList = this.inputPersistance!.getList()!;
         
         
 ;
@@ -346,7 +349,7 @@ var input = input
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 
@@ -357,7 +360,7 @@ var input = input
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

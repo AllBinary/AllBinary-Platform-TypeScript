@@ -46,7 +46,10 @@ import { KeyValueDrawString } from "../../../../../org/allbinary/graphics/draw/K
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class WaypointInfoHudPaintable extends SelectionHudPaintable {
 public constructor (){
 
             super();
-            keyvalueDrawString= new KeyValueDrawString("Owner: ", this.textX);
+        this.keyvalueDrawString= new KeyValueDrawString("Owner: ", this.textX);
     
 }
 

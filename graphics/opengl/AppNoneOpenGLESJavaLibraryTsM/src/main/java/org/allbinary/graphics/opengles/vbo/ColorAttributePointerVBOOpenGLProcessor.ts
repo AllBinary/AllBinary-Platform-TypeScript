@@ -34,7 +34,10 @@ import { ObjectThreedOpenGLProcessor } from "../../../../../org/allbinary/graphi
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,7 +62,7 @@ export class ColorAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGLP
 public constructor (){
 
             super();
-            }
+        }
 
 
     public process(gl: GL10, anyType: any = {}){

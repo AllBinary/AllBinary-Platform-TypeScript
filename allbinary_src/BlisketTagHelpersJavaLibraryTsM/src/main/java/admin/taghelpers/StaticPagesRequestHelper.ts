@@ -109,12 +109,17 @@ import { ProductListingFactory } from "../../views/admin/inventory/listings/Prod
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TagHelperInterface } from "./TagHelperInterface.js";
+
 export class StaticPagesRequestHelper extends AbContext implements TagHelperInterface {
         
 
@@ -133,12 +138,9 @@ export class StaticPagesRequestHelper extends AbContext implements TagHelperInte
     private searchParams: SearchParams
 
     private xslFile: string
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext)                        
-
-                            : super(propertiesHashMap, pageContext){
-
-            super();
-            var propertiesHashMap = propertiesHashMap
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+            super(propertiesHashMap, pageContext);
+                    var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
 
@@ -158,7 +160,7 @@ this.getFormData();
 
 
     getFormData(){
-this.storeName= request.getParameter(StoreFrontData.getInstance()!.NAME);
+this.storeName= this.request.getParameter(StoreFrontData.getInstance()!.NAME);
     
 this.searchParams= new SearchParams(this.request);
     
@@ -272,7 +274,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
 ;
     
 
-    var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(storeName)!;
+    var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;
         
         
 ;

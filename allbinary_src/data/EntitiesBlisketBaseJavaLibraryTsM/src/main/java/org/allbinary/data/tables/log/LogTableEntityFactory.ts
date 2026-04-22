@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class LogTableEntityFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getLogTableEntityInstance(): LogTableEntity{

@@ -37,7 +37,10 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,7 +57,7 @@ export class WaypointPathRunnable extends WaypointPathRunnableBase {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public run(){
@@ -91,7 +94,7 @@ waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointB
     
 pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
     
-Thread.sleep(15.toLong() +(this.priorityP *2));
+Thread.sleep(15 +(this.priorityP *2));
     
 
                 //: 

@@ -33,7 +33,10 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class Aggression
 public constructor (ram: Integer, projectile: Integer, drops: Integer){
 
             super();
-            var ram = ram
+        var ram = ram
 var projectile = projectile
 var drops = drops
 this.setRam(ram);

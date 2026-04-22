@@ -40,12 +40,17 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoObjectConfigGeneratorFactoryInterface } from "./TransformInfoObjectConfigGeneratorFactoryInterface.js";
+
 import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
 
 export class TransformInfoObjectConfigGeneratorFactory
@@ -73,7 +78,7 @@ export class TransformInfoObjectConfigGeneratorFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -37,7 +37,10 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,16 +58,13 @@ export class XYOscillateVelocityMovement extends BasicConstantVelocityMovement {
     private oscillate: number= 0
 
     private oscillatePositive: boolean= false
-public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number)                        
+public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number){
+            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
 
-                            : super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
+                        , speedBasicDecimal!.getUnscaled();
 
-                        .toInt(), speedBasicDecimal!.getUnscaled();
-
-                        .toInt())){
-
-            super();
-            var speedBasicDecimal = speedBasicDecimal
+                        ));
+                    var speedBasicDecimal = speedBasicDecimal
 var oscillateMin = oscillateMin
 var oscillateMax = oscillateMax
 

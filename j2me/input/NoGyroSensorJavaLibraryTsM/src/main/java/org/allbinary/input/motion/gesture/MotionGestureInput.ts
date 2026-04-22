@@ -34,7 +34,10 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
 
 
-        
+
+
+
+
 
 
 
@@ -42,12 +45,9 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
         
 export class MotionGestureInput extends Input {
         
-public constructor (id: number, name: string)                        
-
-                            : super(id, name){
-
-            super();
-            var id = id
+public constructor (id: number, name: string){
+            super(id, name);
+                    var id = id
 var name = name
 
 

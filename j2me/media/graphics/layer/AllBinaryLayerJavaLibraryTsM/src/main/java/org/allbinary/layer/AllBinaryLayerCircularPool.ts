@@ -34,7 +34,10 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class AllBinaryLayerCircularPool extends BaseCircularPool {
 protected constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

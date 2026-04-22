@@ -91,12 +91,17 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EmailInterface } from "./EmailInterface.js";
+
 import { EmailData } from "./EmailData.js";
 
 export class Email
@@ -146,7 +151,7 @@ export class Email
 public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 
             super();
-            var from = from
+        var from = from
 var to = to
 var subject = subject
 var server = server
@@ -162,7 +167,7 @@ init(from, to, subject, server, textBody, htmlAttachment, contentBase);
 public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string, isDebug: boolean){
 
             super();
-            var from = from
+        var from = from
 var to = to
 var subject = subject
 var server = server
@@ -336,7 +341,7 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
 }
 
 
-                        if(isDebug)
+                        if(this.isDebug)
                         
                                     {
                                     this.properties.put(DEBUG, "true");
@@ -345,21 +350,21 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
                                     }
                                 
 
-    var session: Session = Session.getInstance(properties, authenticator)!;
+    var session: Session = Session.getInstance(this.properties, authenticator)!;
         
         
 ;
     
 
-                        if(isDebug)
+                        if(this.isDebug)
                         
                                     {
                                     session.setDebug(true);
     
-bs= new ByteArrayOutputStream();
+this.bs= new ByteArrayOutputStream();
     
 
-    var printStream: PrintStream = new PrintStream(bs);
+    var printStream: PrintStream = new PrintStream(this.bs);
         
         
 ;
@@ -369,17 +374,17 @@ session.setDebugOut(printStream);
 
                                     }
                                 
-msg= new MimeMessage(session);
+this.msg= new MimeMessage(session);
     
-msg.addFrom(addresses_from);
+this.msg.addFrom(addresses_from);
     
-msg.setRecipients(Message.RecipientType.TO, addresses_to);
+this.msg.setRecipients(Message.RecipientType.TO, addresses_to);
     
-msg.setRecipients(Message.RecipientType.CC, addresses_cc);
+this.msg.setRecipients(Message.RecipientType.CC, addresses_cc);
     
-msg.setRecipients(Message.RecipientType.BCC, addresses_bcc);
+this.msg.setRecipients(Message.RecipientType.BCC, addresses_bcc);
     
-msg.setSubject(subject);
+this.msg.setSubject(subject);
     
 
     var mimeMultipart: MimeMultipart = new MimeMultipart();
@@ -401,7 +406,7 @@ mimeMultipart!.addBodyPart(mimeBodyParts[i]!);
     
 }
 
-msg.setContent(mimeMultipart);
+this.msg.setContent(mimeMultipart);
     
 }
 
@@ -418,7 +423,7 @@ msg.setContent(mimeMultipart);
 
     public getDebugInfo(): string{
 
-                        if(isDebug)
+                        if(this.isDebug)
                         
                                     {
                                     
@@ -468,12 +473,12 @@ msg.setContent(mimeMultipart);
         
 ;
     
-hashMap!.put(EmailData.SERVER, properties.get(SMTP_HOST);
+hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST);
 
                          as String);
     
 
-    var addresses: Address[] = msg.getFrom()!;
+    var addresses: Address[] = this.msg.getFrom()!;
         
         
 ;
@@ -501,7 +506,7 @@ hashMap!.put(EmailData.FROM, addresses[index]!.toString());
 
                                     }
                                 
-addresses= msg.getRecipients(Message.RecipientType.TO);
+addresses= this.msg.getRecipients(Message.RecipientType.TO);
     
 
                         if(addresses != 
@@ -526,7 +531,7 @@ hashMap!.put(EmailData.TO, addresses[index]!.toString());
 
                                     }
                                 
-addresses= msg.getRecipients(Message.RecipientType.CC);
+addresses= this.msg.getRecipients(Message.RecipientType.CC);
     
 
                         if(addresses != 
@@ -551,7 +556,7 @@ hashMap!.put(EmailData.CC, addresses[index]!.toString());
 
                                     }
                                 
-addresses= msg.getRecipients(Message.RecipientType.BCC);
+addresses= this.msg.getRecipients(Message.RecipientType.BCC);
     
 
                         if(addresses != 
@@ -631,7 +636,7 @@ hashMap!.put(EmailData.CONTENT, content);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toHashMap()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toHashMap()", e);
     
 
                                     }

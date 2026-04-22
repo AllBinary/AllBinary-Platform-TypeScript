@@ -34,12 +34,17 @@ import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoFactoryInterface } from "./TransformInfoFactoryInterface.js";
+
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoHttpStoreFactory
@@ -63,7 +68,7 @@ export class TransformInfoHttpStoreFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

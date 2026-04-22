@@ -52,7 +52,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class AllBinaryPreloaderActivator
 public constructor (){
 
             super();
-            }
+        }
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

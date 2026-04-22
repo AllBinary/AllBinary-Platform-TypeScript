@@ -42,7 +42,10 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,12 +65,9 @@ export class GameNotificationEvent extends AllBinaryEventObject {
         
 
     private readonly removeable: Boolean
-public constructor (anyType: any = {}, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
+            super(anyType);
+                    var anyType = anyType
 var string = string
 var seconds = seconds
 var basicColor = basicColor

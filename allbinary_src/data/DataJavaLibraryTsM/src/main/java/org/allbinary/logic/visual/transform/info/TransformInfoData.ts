@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class TransformInfoData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly PARENT: string = "TRANSFORM_INFO_PARENT";

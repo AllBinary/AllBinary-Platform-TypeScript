@@ -31,7 +31,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,7 +86,7 @@ SINGLETON.roll.set(roll);
 private constructor (yaw: number, pitch: number, roll: number){
 
             super();
-            var yaw = yaw
+        var yaw = yaw
 var pitch = pitch
 var roll = roll
 this.yaw.set(yaw);
@@ -104,15 +107,15 @@ this.roll.set(roll);
     
 stringBuffer!.append("Y: ");
     
-stringBuffer!.append(yaw.toString());
+stringBuffer!.append(this.yaw.toString());
     
 stringBuffer!.append(" P: ");
     
-stringBuffer!.append(pitch.toString());
+stringBuffer!.append(this.pitch.toString());
     
 stringBuffer!.append(" R: ");
     
-stringBuffer!.append(roll.toString());
+stringBuffer!.append(this.roll.toString());
     
 
 

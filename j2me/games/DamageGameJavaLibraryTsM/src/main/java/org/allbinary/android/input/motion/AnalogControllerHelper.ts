@@ -34,7 +34,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class AnalogControllerHelper
 public constructor (reduceTimeFactor: number){
 
             super();
-            var reduceTimeFactor = reduceTimeFactor
+        var reduceTimeFactor = reduceTimeFactor
 this.reduceTimeFactor= reduceTimeFactor;
     
 }
@@ -82,7 +85,7 @@ this.reduceTimeFactor= reduceTimeFactor;
     public right(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
-this.rightTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduceTimeFactor);
+this.rightTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
                         if(this.rightTimeElapsedHelper!.isTime())
@@ -101,7 +104,7 @@ this.rightTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduce
     public left(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
-this.leftTimeElapsedHelper!.delay= ((SCALE_VALUE +xAnalogValue) shr this.reduceTimeFactor);
+this.leftTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 
                         if(this.leftTimeElapsedHelper!.isTime())
@@ -120,7 +123,7 @@ this.leftTimeElapsedHelper!.delay= ((SCALE_VALUE +xAnalogValue) shr this.reduceT
     public up(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
-this.upTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduceTimeFactor);
+this.upTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
                         if(this.upTimeElapsedHelper!.isTime())
@@ -139,7 +142,7 @@ this.upTimeElapsedHelper!.delay= ((SCALE_VALUE -xAnalogValue) shr this.reduceTim
     public down(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 var xAnalogValue = xAnalogValue
-this.downTimeElapsedHelper!.delay= ((SCALE_VALUE +xAnalogValue) shr this.reduceTimeFactor);
+this.downTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 
                         if(this.downTimeElapsedHelper!.isTime())

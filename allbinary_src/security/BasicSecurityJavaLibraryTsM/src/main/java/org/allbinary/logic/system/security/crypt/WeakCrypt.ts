@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class WeakCrypt
 public constructor (key: number){
 
             super();
-            var key = key
+        var key = key
 
         try {
             this.abCrypt!.init(keys[key]!);
@@ -136,7 +139,7 @@ var value = value
 
         try {
             
-    var decrypted: number[] = abCrypt!.decrypt(DatabaseEncoder.decode(value))!;
+    var decrypted: number[] = this.abCrypt!.decrypt(DatabaseEncoder.decode(value))!;
         
         
 ;

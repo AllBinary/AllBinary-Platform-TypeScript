@@ -58,12 +58,17 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameFeatureListenerInterface } from "./GameFeatureListenerInterface.js";
+
 import { GameFeatureEvent } from "./GameFeatureEvent.js";
 
 export class BaseChangedGameFeatureListener
@@ -99,7 +104,7 @@ var gameFeatureEvent = gameFeatureEvent
 this.logUtil!.putF(new StringMaker().
                             append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
     
-list.add(gameFeatureEvent!.getGameOption());
+this.list.add(gameFeatureEvent!.getGameOption());
     
 setChanged(true);
     
@@ -108,14 +113,14 @@ setChanged(true);
 
     public add(gameFeature: Feature){
 var gameFeature = gameFeature
-list.add(gameFeature);
+this.list.add(gameFeature);
     
 }
 
 
     public remove(gameFeature: Feature){
 var gameFeature = gameFeature
-list.remove(gameFeature);
+this.list.remove(gameFeature);
     
 }
 
@@ -130,7 +135,7 @@ this.changed= initialized;
                         )
                         
                                     {
-                                    list.clear();
+                                    this.list.clear();
     
 
                                     }
@@ -141,7 +146,7 @@ this.changed= initialized;
     public isChanged(gameFeature: Feature): boolean{
 var gameFeature = gameFeature
 
-    var isChanged: boolean = list.contains(gameFeature)!;
+    var isChanged: boolean = this.list.contains(gameFeature)!;
         
         
 ;

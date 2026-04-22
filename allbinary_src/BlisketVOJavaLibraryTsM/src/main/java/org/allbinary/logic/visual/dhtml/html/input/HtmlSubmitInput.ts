@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -40,12 +43,9 @@ import { HtmlInputData } from "./HtmlInputData.js";
 
 export class HtmlSubmitInput extends HtmlValueInput {
         
-public constructor (before: string, name: string, value: string, after: string)                        
-
-                            : super(before, HtmlInputData.getInstance()!.SUBMIT, name, value, after){
-
-            super();
-            var before = before
+public constructor (before: string, name: string, value: string, after: string){
+            super(before, HtmlInputData.getInstance()!.SUBMIT, name, value, after);
+                    var before = before
 var name = name
 var value = value
 var after = after

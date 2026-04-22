@@ -20,7 +20,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -37,7 +40,7 @@ export class TouchButtonResource
 protected constructor (resource: string, hint: string){
 
             super();
-            var resource = resource
+        var resource = resource
 var hint = hint
 this.RESOURCE= resource;
     

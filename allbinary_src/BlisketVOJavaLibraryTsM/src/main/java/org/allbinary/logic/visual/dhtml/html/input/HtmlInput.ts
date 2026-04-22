@@ -34,7 +34,10 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class HtmlInput extends HtmlTag {
 public constructor (before: string, type: string, name: string, after: string){
 
             super();
-            var before = before
+        var before = before
 var type = type
 var name = name
 var after = after
@@ -114,19 +117,19 @@ this.after= after;
         
 ;
     
-result= before;
+result= this.before;
     
-result += STARTINPUT;
+result += this.STARTINPUT;
     
-result += TYPE;
+result += this.TYPE;
     
-result += type;
+result += this.type;
     
 result += "\" ";
     
-result += NAME;
+result += this.NAME;
     
-result += name;
+result += this.name;
     
 result += "\" ";
     
@@ -173,11 +176,11 @@ result += "\" ";
                                 
 }
 
-result += END;
+result += this.END;
     
-result += ENDINPUT;
+result += this.ENDINPUT;
     
-result += after;
+result += this.after;
     
 
 

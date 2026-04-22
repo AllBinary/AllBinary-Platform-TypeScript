@@ -67,12 +67,19 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
+
+import { PickupableInterface } from "./PickupableInterface.js";
+
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
 
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
@@ -89,12 +96,9 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosition)                        
-
-                            : super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosition){
+            super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), viewPosition);
+                        //var name = name
     //var remoteInfo = remoteInfo
     //var viewPosition = viewPosition
 
@@ -109,12 +113,9 @@ this.setLayerHeight(10);
     
 }
 
-public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
+                        //var name = name
     //var remoteInfo = remoteInfo
     //var total = total
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
@@ -135,12 +136,9 @@ this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface);
     
 }
 
-public constructor (name: string, viewPosition: ViewPosition)                        
-
-                            : this(name, RemoteInfo.REMOTE_INFO, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, viewPosition: ViewPosition){
+            this(name, RemoteInfo.REMOTE_INFO, viewPosition);
+                        //var name = name
     //var viewPosition = viewPosition
 
 
@@ -148,12 +146,9 @@ public constructor (name: string, viewPosition: ViewPosition)
                     
 }
 
-public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : this(name, RemoteInfo.REMOTE_INFO, total, pickedUpLayerInterfaceFactoryInterface, animationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            this(name, RemoteInfo.REMOTE_INFO, total, pickedUpLayerInterfaceFactoryInterface, animationInterface, rectangle, viewPosition);
+                        //var name = name
     //var total = total
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
     //var animationInterface = animationInterface

@@ -94,7 +94,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -182,12 +185,9 @@ hashTable!.put(highScores!.getName(), highScores);
     private readonly abeClientInformation: AbeClientInformationInterface
 
     private readonly recordComparatorInterface: RecordComparator
-private constructor (abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator)                        
-
-                            : super(name, heading, columnTwoHeading){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+private constructor (abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator){
+            super(name, heading, columnTwoHeading);
+                        //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
     //var name = name
     //var heading = heading
@@ -215,7 +215,7 @@ this.load();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
-                            append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(RECORD_ID)!.toString());
+                            append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());
 
                         ;
     
@@ -247,7 +247,7 @@ this.removeLowestHighScore();
 
                                     }
                                 
-recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
     var highScoreBytes: number[] = newHighScore!.getAsBytes()!;
@@ -324,7 +324,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 
         try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+            recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
@@ -475,7 +475,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
 
         try {
-            recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
+            recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
 this.setList(new BasicArrayList());
     
@@ -750,7 +750,7 @@ index < size; index++)
 ;
     
 
-                        if(recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
+                        if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
                         
                                     {
                                     this.logUtil!.putF("Obtained a High Score", this, "isBestScore");

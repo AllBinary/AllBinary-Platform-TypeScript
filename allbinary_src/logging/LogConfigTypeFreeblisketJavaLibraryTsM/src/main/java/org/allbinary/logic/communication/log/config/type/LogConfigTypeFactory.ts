@@ -34,7 +34,10 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
@@ -337,7 +340,7 @@ export class LogConfigTypeFactory
 private constructor (){
 
             super();
-            PreLogUtil.put("FreeBlisket", this, CommonStrings.getInstance()!.CONSTRUCTOR);
+        PreLogUtil.put("FreeBlisket", this, CommonStrings.getInstance()!.CONSTRUCTOR);
     
 }
 

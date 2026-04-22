@@ -34,12 +34,17 @@ import { GL2 } from "../../../com/jogamp/opengl/GL2.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GL11 } from "./GL11.js";
+
 import { Buffer } from "./Buffer.js";
 
 import { FloatBuffer } from "./FloatBuffer.js";
@@ -50,24 +55,18 @@ export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengle
         
 
     private readonly gl11: GL2
-public constructor (gl: GL)                        
-
-                            : this(gl, gl as com.jogamp.opengl.GL2){
-
-            super();
-                //var gl = gl
+public constructor (gl: GL){
+            this(gl, gl as com.jogamp.opengl.GL2);
+                        //var gl = gl
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (gl: GL, gl2: com.jogamp.opengl.GL2)                        
-
-                            : super(gl, gl2){
-
-            super();
-                //var gl = gl
+public constructor (gl: GL, gl2: com.jogamp.opengl.GL2){
+            super(gl, gl2);
+                        //var gl = gl
     //var gl2 = gl2
 
 

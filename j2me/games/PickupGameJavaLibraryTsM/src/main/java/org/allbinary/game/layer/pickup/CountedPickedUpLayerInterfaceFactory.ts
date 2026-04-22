@@ -46,13 +46,18 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { PickedUpLayerInterfaceFactory } from "./PickedUpLayerInterfaceFactory.js";
+
+import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
 
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
 
@@ -70,12 +75,9 @@ export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterface
         
 
     private readonly id: number
-public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation)                        
-
-                            : super(pickeUpLayerType, iconLayer, animationInterface){
-
-            super();
-            var pickeUpLayerType = pickeUpLayerType
+public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
+            super(pickeUpLayerType, iconLayer, animationInterface);
+                    var pickeUpLayerType = pickeUpLayerType
 var iconLayer = iconLayer
 var animationInterface = animationInterface
 

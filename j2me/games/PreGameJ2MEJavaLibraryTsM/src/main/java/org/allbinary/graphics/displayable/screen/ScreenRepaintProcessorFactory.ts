@@ -37,7 +37,10 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class ScreenRepaintProcessorFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getInstance(displayable: Displayable): Processor{

@@ -37,7 +37,10 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class InputMappingEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

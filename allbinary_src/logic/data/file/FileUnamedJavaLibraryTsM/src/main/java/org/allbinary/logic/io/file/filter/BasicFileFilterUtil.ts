@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ vector.add(extension);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

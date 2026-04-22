@@ -37,7 +37,10 @@ import { LicensingException } from "../../../../org/allbinary/logic/system/secur
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,12 +79,12 @@ export class InitDb
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (dbConnectionInfo: DbConnectionInfo){
 
             super();
-            var dbConnectionInfo = dbConnectionInfo
+        var dbConnectionInfo = dbConnectionInfo
 }
 
 
@@ -106,20 +109,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_GET_HOST_NAME, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_GET_HOST_NAME, 
                             null)!;
         
         
 ;
     
 
-    var result: string = method.invoke(anyType, 
+    var result: string = method.invoke(this.anyType, 
                             null);
 
                          as String;
@@ -152,20 +155,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_USERS, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_USERS, 
                             null)!;
         
         
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    var result: Boolean = method.invoke(this.anyType, 
                             null);
 
                          as Boolean;
@@ -200,20 +203,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_DATABASES, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_DATABASES, 
                             null)!;
         
         
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    var result: Boolean = method.invoke(this.anyType, 
                             null);
 
                          as Boolean;
@@ -248,20 +251,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_ADD_TABLES, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_ADD_TABLES, 
                             null)!;
         
         
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    var result: Boolean = method.invoke(this.anyType, 
                             null);
 
                          as Boolean;
@@ -296,20 +299,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_TEMP_MAIN_PATH, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_TEMP_MAIN_PATH, 
                             null)!;
         
         
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    var result: Boolean = method.invoke(this.anyType, 
                             null);
 
                          as Boolean;
@@ -344,20 +347,20 @@ this.anyType= anyType;
 
         try {
             
-    var dynamicClass: Function = anyType!constructor!;
+    var dynamicClass: Function = this.anyType!.constructor!;
         
         
 ;
     
 
-    var method: Method = dynamicClass!.getMethod(METHOD_CALL_MAIN_PATH, 
+    var method: Method = dynamicClass!.getMethod(this.METHOD_CALL_MAIN_PATH, 
                             null)!;
         
         
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
+    var result: Boolean = method.invoke(this.anyType, 
                             null);
 
                          as Boolean;

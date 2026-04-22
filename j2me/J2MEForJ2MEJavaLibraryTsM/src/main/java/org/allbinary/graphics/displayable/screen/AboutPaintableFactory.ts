@@ -40,7 +40,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ export class AboutPaintableFactory
 private constructor (){
 
             super();
-            
+        
     var INFO: string[] = 
                                                         [
                                                             "Built with the","AllBinary Platform",StringUtil.getInstance()!.EMPTY_STRING,"Comments or Questions:","support@allbinary.com"

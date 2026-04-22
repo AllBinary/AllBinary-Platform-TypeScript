@@ -40,7 +40,10 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class BasicGroupItemsHelperFactory extends TagHelperFactory {
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

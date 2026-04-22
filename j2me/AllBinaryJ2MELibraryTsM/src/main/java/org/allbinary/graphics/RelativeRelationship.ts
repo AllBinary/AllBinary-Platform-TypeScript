@@ -34,7 +34,10 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class RelativeRelationship
 public constructor (point: GPoint, typesAllowedList: BasicArrayList){
 
             super();
-            var point = point
+        var point = point
 var typesAllowedList = typesAllowedList
 this.x= point.getX();
     

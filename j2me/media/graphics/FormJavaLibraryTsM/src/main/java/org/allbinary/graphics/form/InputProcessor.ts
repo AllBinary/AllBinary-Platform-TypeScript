@@ -34,7 +34,10 @@ import { PlayerGameInputCompositeInterface } from "../../../../org/allbinary/gam
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class InputProcessor extends Processor {
 public constructor (playerGameInputCompositeInterface: PlayerGameInputCompositeInterface){
 
             super();
-            var playerGameInputCompositeInterface = playerGameInputCompositeInterface
+        var playerGameInputCompositeInterface = playerGameInputCompositeInterface
 this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
     
 }

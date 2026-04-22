@@ -34,7 +34,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class Input
 public constructor (id: number, name: string){
 
             super();
-            var id = id
+        var id = id
 var name = name
 this.setId(id);
     

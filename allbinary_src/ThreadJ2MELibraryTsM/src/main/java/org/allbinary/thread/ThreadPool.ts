@@ -46,7 +46,10 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,12 +109,9 @@ export class ThreadPool
     private threadID: number= 0
 
     private numThreads: number
-public constructor (poolName: string, numThreads: number)                        
-
-                            : this(poolName, numThreads, Thread.NORM_PRIORITY){
-
-            super();
-                //var poolName = poolName
+public constructor (poolName: string, numThreads: number){
+            this(poolName, numThreads, Thread.NORM_PRIORITY);
+                        //var poolName = poolName
     //var numThreads = numThreads
 
 
@@ -122,7 +122,7 @@ public constructor (poolName: string, numThreads: number)
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
-                //var poolName = poolName
+            //var poolName = poolName
     //var numThreads = numThreads
     //var priority = priority
 this.poolName= poolName;
@@ -159,7 +159,7 @@ i < this.numThreads; i++)
         {
 pooledThread= new PooledThread();
     
-pooledThread!.setPriority(priority);
+pooledThread!.setPriority(this.priority);
     
 pooledThread!.start();
     
@@ -216,7 +216,7 @@ pooledThread!.start();
 ;
     
 
-    var lowerPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
         
         
 ;
@@ -250,7 +250,7 @@ break;
 }
 
 
-                        if(lowerPriorityRunnable == threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == NULL_RUNNABLE)
+                        if(lowerPriorityRunnable == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE || lowerPriorityRunnable == this.NULL_RUNNABLE)
                         
                                     {
                                     this.taskQueue!.add(task);
@@ -290,7 +290,7 @@ notify();
         //mutex.withLock
         {
 
-                        if(!isAlive)
+                        if(!this.isAlive)
                         
                                     {
                                     this.init();
@@ -490,7 +490,7 @@ notifyAll();
                                     {
                                     this.isAlive= false;
     
-taskQueue!.clear();
+this.taskQueue!.clear();
     
 
                                     }
@@ -514,13 +514,10 @@ export inner class PooledThread extends Thread {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
-public constructor ()                        
-
-                            : super(new StringMaker().
-                            append(poolName)!.append(ROOT_NAME)!.appendint(threadID++)!.toString()){
-
-            super();
-            
+public constructor (){
+            super(new StringMaker().
+                            append(poolName)!.append(ROOT_NAME)!.appendint(threadID++)!.toString());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

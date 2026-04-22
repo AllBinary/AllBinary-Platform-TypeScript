@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class HtmlMetaAttributesData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public NAME_VALUE: string = "name";

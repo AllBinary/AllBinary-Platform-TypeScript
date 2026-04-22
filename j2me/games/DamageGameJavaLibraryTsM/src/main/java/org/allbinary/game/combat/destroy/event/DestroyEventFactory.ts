@@ -37,7 +37,10 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
 
 
-        
+
+
+
+
 
 
 
@@ -52,7 +55,7 @@ export class DestroyEventFactory
 public constructor (combatGameCanvas: AllBinaryGameCanvas){
 
             super();
-            var combatGameCanvas = combatGameCanvas
+        var combatGameCanvas = combatGameCanvas
 this.combatGameCanvas= combatGameCanvas;
     
 }

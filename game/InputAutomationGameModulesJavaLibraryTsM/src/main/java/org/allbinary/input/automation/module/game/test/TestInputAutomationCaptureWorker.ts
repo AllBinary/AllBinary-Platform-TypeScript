@@ -67,7 +67,10 @@ import { MotionRectangleConstraintsInterface } from "../../../../../../../org/al
 
 
 
-        
+
+
+
+
 
 
 
@@ -97,12 +100,9 @@ export class TestInputAutomationCaptureWorker extends AbstractInputAutomationWor
     private readonly IMAGE_NOT_AVAILABLE: string = "Image Not Available";
         
         
-public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfileActions: GenericProfileActions, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface)                        
-
-                            : super(inputAutomationActionInterface){
-
-            super();
-            var inputAutomationActionInterface = inputAutomationActionInterface
+public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfileActions: GenericProfileActions, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
+            super(inputAutomationActionInterface);
+                    var inputAutomationActionInterface = inputAutomationActionInterface
 var genericProfileActions = genericProfileActions
 var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
 var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
@@ -110,7 +110,7 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(MESSAGE, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.MESSAGE, this, commonStrings!.CONSTRUCTOR);
     
 this.setGenericProfileActions(genericProfileActions);
     
@@ -132,7 +132,7 @@ this.setGenericProfileActions(genericProfileActions);
                         if(cacheInterface!.keySet()!.size() > 0)
                         
                                     {
-                                    this.logUtil!.putF(IMAGE_AVAILABLE_SO_PROCESSING, this, PROCESS_DATA_WORKER_RESULTS);
+                                    this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, PROCESS_DATA_WORKER_RESULTS);
     
 
     var anyType: any = cacheInterface!.keySet()!.toTypedArray()[0]!;
@@ -209,7 +209,7 @@ cacheInterface!.get(anyType);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(IMAGE_NOT_AVAILABLE, this, PROCESS_DATA_WORKER_RESULTS);
+                            this.logUtil!.putF(this.IMAGE_NOT_AVAILABLE, this, PROCESS_DATA_WORKER_RESULTS);
     
 
                         }

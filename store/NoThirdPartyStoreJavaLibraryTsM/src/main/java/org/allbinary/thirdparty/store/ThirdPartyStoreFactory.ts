@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class ThirdPartyStoreFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

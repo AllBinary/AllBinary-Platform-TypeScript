@@ -46,7 +46,10 @@ import { IndexedAnimationToImageArrayUtil } from "../../../../org/allbinary/imag
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,24 +57,18 @@ import { IndexedAnimationToImageArrayUtil } from "../../../../org/allbinary/imag
         
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
-public constructor (animationInterface: Animation)                        
-
-                            : super(animationInterface){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: Animation){
+            super(animationInterface);
+                        //var animationInterface = animationInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (animationInterface: IndexedAnimation, width: number, height: number)                        
-
-                            : this(new ImageArrayAnimation(IndexedAnimationToImageArrayUtil.getInstance(width, height, animationInterface), AnimationBehavior.getInstance())){
-
-            super();
-                //var animationInterface = animationInterface
+public constructor (animationInterface: IndexedAnimation, width: number, height: number){
+            this(new ImageArrayAnimation(IndexedAnimationToImageArrayUtil.getInstance(width, height, animationInterface), AnimationBehavior.getInstance()));
+                        //var animationInterface = animationInterface
     //var width = width
     //var height = height
 
@@ -80,12 +77,9 @@ public constructor (animationInterface: IndexedAnimation, width: number, height:
                     
 }
 
-public constructor (imageArray: Image[])                        
-
-                            : this(new ImageArrayAnimation(imageArray, AnimationBehavior.getInstance())){
-
-            super();
-            var imageArray = imageArray
+public constructor (imageArray: Image[]){
+            this(new ImageArrayAnimation(imageArray, AnimationBehavior.getInstance()));
+                    var imageArray = imageArray
 
 
                             //For kotlin this is before the body of the constructor.

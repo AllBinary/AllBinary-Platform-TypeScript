@@ -73,7 +73,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ export class GroupLayerManagerListener extends LayerManagerEventListener {
 private constructor (){
 
             super();
-            LayerManagerEventHandler.getInstance()!.addListener(this);
+        LayerManagerEventHandler.getInstance()!.addListener(this);
     
 }
 
@@ -117,7 +120,7 @@ private constructor (){
 ;
     
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -165,7 +168,7 @@ groupList!.clear();
 
     var id: number = groupInterface!.getGroupId();
 
-                        .toInt();
+                        ;
         
         
 ;
@@ -186,7 +189,7 @@ groupList!.clear();
 
     var id: number = groupInterface!.getGroupId();
 
-                        .toInt();
+                        ;
         
         
 ;
@@ -247,13 +250,13 @@ groupList!.clear();
 
     var id: number = groupInterface!.getGroupId();
 
-                        .toInt();
+                        ;
         
         
 ;
     
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -362,7 +365,7 @@ groupInterface= groupInterfaceArray[index2]!;
     
 groupId= groupInterface!.getGroupId();
 
-                        .toInt();
+                        ;
     
 
                         if(groupId == id)
@@ -394,7 +397,7 @@ groupId= groupInterface!.getGroupId();
     //var excludeGroupList = excludeGroupList
     //var maxSize = maxSize
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -510,7 +513,7 @@ index < size; index++)
         {
 id= groupInterfaceArray[index]!.getGroupId();
 
-                        .toInt();
+                        ;
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     
@@ -589,7 +592,7 @@ index < size; index++)
         {
 id= groupInterfaceArray[index]!.getGroupId();
 
-                        .toInt();
+                        ;
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     
@@ -626,7 +629,7 @@ groupList!.remove(layerInterface);
 ;
     
 
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;

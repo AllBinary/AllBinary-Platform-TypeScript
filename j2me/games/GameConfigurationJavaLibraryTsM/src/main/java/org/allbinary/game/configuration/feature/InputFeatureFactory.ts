@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,7 +60,7 @@ export class InputFeatureFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly REMOVE_DUPLICATE_KEY_PRESSES: InputFeature = new InputFeature("Remove Duplicate Key Presses");

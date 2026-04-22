@@ -23,7 +23,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -38,7 +41,7 @@ export class ObjectPermutationVisitor extends Visitor {
 public constructor (data: any[]){
 
             super();
-            var data = data
+        var data = data
 this.data= data;
     
 }
@@ -52,7 +55,7 @@ this.data= data;
 var anyType = anyType
 stringBuilder!.delete(0, stringBuilder!.length());
     
-this.print(data, stringBuilder);
+this.print(this.data, stringBuilder);
     
 
 

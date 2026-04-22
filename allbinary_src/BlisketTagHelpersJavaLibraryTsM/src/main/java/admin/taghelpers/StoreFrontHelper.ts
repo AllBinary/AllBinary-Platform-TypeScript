@@ -55,7 +55,10 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,7 +77,7 @@ export class StoreFrontHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
     var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);

@@ -37,7 +37,10 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ import { Node } from "./Node.js";
 
 export class ValidationView extends MiniBasketView implements ValidationComponentInterface {
         
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.

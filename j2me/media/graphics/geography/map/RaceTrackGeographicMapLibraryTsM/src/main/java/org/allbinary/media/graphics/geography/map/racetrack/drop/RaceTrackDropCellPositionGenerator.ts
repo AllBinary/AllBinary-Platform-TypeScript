@@ -82,7 +82,10 @@ import { TimeDelayHelper } from "../../../../../../../../org/allbinary/time/Time
 
 
 
-        
+
+
+
+
 
 
 
@@ -111,7 +114,7 @@ export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGene
 protected constructor (){
 
             super();
-            timeDelayHelper= new TimeDelayHelper(10000);
+        this.timeDelayHelper= new TimeDelayHelper(10000);
     
 }
 
@@ -127,7 +130,7 @@ this.list.clear();
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);
 
                          as RaceTrackGeographicMapCellType;
         
@@ -237,7 +240,7 @@ ahead= index;
 total++;
     
 
-                        if(total > STRAIGHTAWAY)
+                        if(total > this.STRAIGHTAWAY)
                         
                                     {
                                     this.list.add(geographicMapCellPosition);
@@ -296,11 +299,11 @@ this.drop(allBinaryGameLayerManager, index);
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
+                        if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
                                     {
                                     
-    var index: number = basicArrayListUtil!.getRandomIndex(this.list)!;
+    var index: number = this.basicArrayListUtil!.getRandomIndex(this.list)!;
         
         
 ;

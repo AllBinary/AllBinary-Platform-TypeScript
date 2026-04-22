@@ -20,7 +20,10 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
 
 
-        
+
+
+
+
 
 
 
@@ -31,7 +34,7 @@ export class ShaderOpenGLProcessor extends OpenGLProcessor {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public process0(gl: GL10){

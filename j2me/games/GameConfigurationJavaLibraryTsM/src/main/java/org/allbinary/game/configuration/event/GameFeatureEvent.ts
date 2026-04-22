@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ export class GameFeatureEvent extends AllBinaryEventObject {
         
 
     private readonly whatChanged: string
-public constructor (anyType: any = {}, whatChanged: string)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, whatChanged: string){
+            super(anyType);
+                    var anyType = anyType
 var whatChanged = whatChanged
 
 

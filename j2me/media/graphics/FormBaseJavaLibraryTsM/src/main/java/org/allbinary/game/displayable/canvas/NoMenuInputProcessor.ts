@@ -40,7 +40,10 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,12 +67,9 @@ export class NoMenuInputProcessor extends BasicMenuInputProcessor {
     
 }
 
-private constructor ()                        
-
-                            : super(BasicArrayListUtil.getInstance()!.getImmutableInstance(),  -1, NullCanvas.NULL_CANVAS){
-
-            super();
-            
+private constructor (){
+            super(BasicArrayListUtil.getInstance()!.getImmutableInstance(),  -1, NullCanvas.NULL_CANVAS);
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

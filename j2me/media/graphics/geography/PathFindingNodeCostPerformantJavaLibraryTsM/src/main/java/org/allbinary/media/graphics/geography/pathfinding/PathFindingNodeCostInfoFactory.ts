@@ -40,7 +40,10 @@ import { RaceTrackGeographicMapCellType } from "../../../../../../org/allbinary/
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFacto
 public constructor (max: number){
 
             super();
-            var max = max
+        var max = max
 }
 
 
@@ -104,7 +107,7 @@ public constructor (max: number){
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return raceTrackGeographicMapCellType!.getTravelCost();
 
-                        .toLong() +raceTrackGeographicMapCellType2!.getTravelCost();
+                         +raceTrackGeographicMapCellType2!.getTravelCost();
     
 }
 

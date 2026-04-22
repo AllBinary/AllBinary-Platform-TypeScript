@@ -132,12 +132,17 @@ import { InventorySearchUtil } from "../../../../views/generic/inventory/Invento
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProductListingInterface } from "./ProductListingInterface.js";
+
 export class ProductListing
             extends Object
          implements ProductListingInterface {
@@ -165,7 +170,7 @@ export class ProductListing
 public constructor (searchRequest: SearchRequest){
 
             super();
-            var searchRequest = searchRequest
+        var searchRequest = searchRequest
 this.searchRequest= searchRequest;
     
 this.storeFronts= new StoreFrontsEntity();
@@ -631,7 +636,7 @@ stringBuffer!.append(" Store Not Found");
 ;
     
 
-    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(searchRequest)!;
+    var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;
         
         
 ;
@@ -675,7 +680,7 @@ stringBuffer!.append(" it used packages ");
     
 stringBuffer!.append(storeFront!.getPackageLocation());
     
-stringBuffer!.append(INVENTORY);
+stringBuffer!.append(this.INVENTORY);
     
 
 

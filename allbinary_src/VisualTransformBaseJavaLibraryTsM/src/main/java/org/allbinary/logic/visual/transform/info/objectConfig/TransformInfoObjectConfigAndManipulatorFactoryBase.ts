@@ -43,12 +43,17 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoObjectConfigAndManipulatorFactoryInterface } from "./TransformInfoObjectConfigAndManipulatorFactoryInterface.js";
+
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
 export class TransformInfoObjectConfigAndManipulatorFactoryBase

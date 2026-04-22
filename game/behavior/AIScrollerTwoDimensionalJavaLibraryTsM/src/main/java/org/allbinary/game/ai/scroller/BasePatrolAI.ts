@@ -57,7 +57,10 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -95,12 +98,9 @@ export class BasePatrolAI extends BasicAI {
     keyDirection: number = Canvas.RIGHT;
         
         
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var hashtable = hashtable
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -111,7 +111,7 @@ this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE);
 
                          as Integer;
     
-this.currentDistance= maxDistance!.toInt();
+this.currentDistance= this.maxDistance!.toInt();
     
 }
 
@@ -139,7 +139,7 @@ this.changeDirectionIfReachedPacingAreaMax();
         
 ;
     
-xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
+this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
     
 }
 
@@ -152,7 +152,7 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
 ;
     
 
-    var totalDistance: number = mathUtil!.abs(xTotalDistance)!;
+    var totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;
         
         
 ;
@@ -174,11 +174,11 @@ xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
                         if(this.lastKeyDirection == Canvas.LEFT)
                         
                                     {
-                                    keyDirection= Canvas.RIGHT;
+                                    this.keyDirection= Canvas.RIGHT;
     
-this.lastKeyDirection= keyDirection;
+this.lastKeyDirection= this.keyDirection;
     
-xTotalDistance= 0;
+this.xTotalDistance= 0;
     
 
                                     }
@@ -187,11 +187,11 @@ xTotalDistance= 0;
                         if(this.lastKeyDirection == Canvas.RIGHT)
                         
                                     {
-                                    keyDirection= Canvas.LEFT;
+                                    this.keyDirection= Canvas.LEFT;
     
-this.lastKeyDirection= keyDirection;
+this.lastKeyDirection= this.keyDirection;
     
-xTotalDistance= 0;
+this.xTotalDistance= 0;
     
 
                                     }

@@ -43,7 +43,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -60,7 +63,7 @@ export class CategoryPropertiesView
 public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 
             super();
-            var categoryPropertiesInterface = categoryPropertiesInterface
+        var categoryPropertiesInterface = categoryPropertiesInterface
 this.categoryPropertiesInterface= categoryPropertiesInterface;
     
 }

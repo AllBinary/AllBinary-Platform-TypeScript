@@ -73,7 +73,10 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,12 +88,9 @@ export class CombatGameCanvas extends AllBinaryGameCanvas {
     basicLayerProcessor: BasicLayerProcessor[] = [];
         
         
-public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean)                        
-
-                            : super(cmdListener, gameLayerManager, highScoresFactoryInterface, gameInitializationInterfaceFactoryInterface, buffered){
-
-            super();
-                //var cmdListener = cmdListener
+public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
+            super(cmdListener, gameLayerManager, highScoresFactoryInterface, gameInitializationInterfaceFactoryInterface, buffered);
+                        //var cmdListener = cmdListener
     //var gameLayerManager = gameLayerManager
     //var highScoresFactoryInterface = highScoresFactoryInterface
     //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface

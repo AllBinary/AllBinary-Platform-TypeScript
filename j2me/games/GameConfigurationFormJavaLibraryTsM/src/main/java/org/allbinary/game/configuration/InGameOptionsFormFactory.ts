@@ -46,7 +46,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,12 +91,12 @@ var foregroundBasicColor = foregroundBasicColor
 
         try {
             
-                        if(SINGLETON == CommandForm.NULL_COMMAND_FORM)
+                        if(this.SINGLETON == CommandForm.NULL_COMMAND_FORM)
                         
                                     {
                                     initInterface!.init();
     
-SINGLETON= new InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+this.SINGLETON= new InGameOptionsForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
 
                                     }

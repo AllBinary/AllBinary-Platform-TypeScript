@@ -40,7 +40,10 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class BuildingEventHandler extends BasicEventHandler {
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

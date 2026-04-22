@@ -34,7 +34,10 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,12 +49,9 @@ import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameI
 
 export class SelectedRTSLayersPlayerDowngradeGameInputProcessor extends SelectedRTSLayersPlayerGameInputProcessor {
         
-public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput)                        
-
-                            : super(selectedRTSLayersPlayerGameInput){
-
-            super();
-            var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
+public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
+            super(selectedRTSLayersPlayerGameInput);
+                    var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
 
 
                             //For kotlin this is before the body of the constructor.

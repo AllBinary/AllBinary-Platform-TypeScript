@@ -34,12 +34,17 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
+
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
@@ -56,12 +61,9 @@ export class VectorExplosionAnimationFactory
         
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (basicColor: BasicColor)                        
-
-                            : this(basicColor, AnimationBehaviorFactory.getInstance()){
-
-            super();
-                //var basicColor = basicColor
+public constructor (basicColor: BasicColor){
+            this(basicColor, AnimationBehaviorFactory.getInstance());
+                        //var basicColor = basicColor
 
 
                             //For kotlin this is before the body of the constructor.
@@ -71,7 +73,7 @@ public constructor (basicColor: BasicColor)
 public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-                //var basicColor = basicColor
+            //var basicColor = basicColor
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationBehaviorFactory= animationBehaviorFactory;
     
@@ -107,7 +109,7 @@ this.setBasicColorP(basicColor);
 ;
     
 
-    var points: number[][][] = vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
         
         
 ;

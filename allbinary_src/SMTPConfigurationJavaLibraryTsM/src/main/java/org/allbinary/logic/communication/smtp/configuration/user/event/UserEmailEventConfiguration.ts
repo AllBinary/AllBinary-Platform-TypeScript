@@ -37,12 +37,17 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
+
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
 export class UserEmailEventConfiguration
@@ -60,7 +65,7 @@ export class UserEmailEventConfiguration
 public constructor (){
 
             super();
-            this.setName(StringUtil.getInstance()!.EMPTY_STRING);
+        this.setName(StringUtil.getInstance()!.EMPTY_STRING);
     
 this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
     
@@ -78,7 +83,7 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME);
 
                          as String);

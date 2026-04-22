@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,18 +109,18 @@ TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
 private constructor (){
 
             super();
-            }
+        }
 
 
     public addListener(terrainEventListener: TerrainEventListener){
     //var terrainEventListener = terrainEventListener
 
-                        if(!list.contains(terrainEventListener);
+                        if(!this.list.contains(terrainEventListener);
 
                         )
                         
                                     {
-                                    list.add(terrainEventListener);
+                                    this.list.add(terrainEventListener);
     
 
                                     }

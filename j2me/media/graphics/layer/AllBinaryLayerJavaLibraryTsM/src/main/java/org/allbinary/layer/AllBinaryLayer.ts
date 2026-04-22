@@ -75,13 +75,18 @@ import { ViewPositionEvent } from "../../../org/allbinary/view/event/ViewPositio
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { Layer } from "./Layer.js";
+
+import { LayerInterface } from "./LayerInterface.js";
 
 export class AllBinaryLayer extends Layer implements LayerInterface {
         
@@ -107,12 +112,9 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
     private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
         
         
-public constructor (rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : this(StringUtil.getInstance()!.EMPTY_STRING, rectangle, viewPosition){
-
-            super();
-                //var rectangle = rectangle
+public constructor (rectangle: Rectangle, viewPosition: ViewPosition){
+            this(StringUtil.getInstance()!.EMPTY_STRING, rectangle, viewPosition);
+                        //var rectangle = rectangle
     //var viewPosition = viewPosition
 
 
@@ -120,12 +122,9 @@ public constructor (rectangle: Rectangle, viewPosition: ViewPosition)
                     
 }
 
-public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(rectangle.getWidth(), rectangle.getHeight()){
-
-            super();
-                //var name = name
+public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
+            super(rectangle.getWidth(), rectangle.getHeight());
+                        //var name = name
     //var rectangle = rectangle
     //var viewPosition = viewPosition
 
@@ -164,9 +163,9 @@ this.name= localName;
     
 this.setPosition(point.getX(), point.getY(), point.getZ());
     
-this.setHalfWidth((this.getWidth() shr 1));
+this.setHalfWidth((this.getWidth()>>1));
     
-this.setHalfHeight((this.getHeight() shr 1));
+this.setHalfHeight((this.getHeight()>>1));
     
 this.viewPosition= viewPosition;
     
@@ -212,7 +211,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getZP() +this.getDepth()).toInt();
+                        return (this.getZP() +this.getDepth());
     
 }
 
@@ -268,7 +267,7 @@ this.halfHeight= halfHeight;
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getDepth();
 
-                        .toInt() /2;
+                         /2;
     
 }
 

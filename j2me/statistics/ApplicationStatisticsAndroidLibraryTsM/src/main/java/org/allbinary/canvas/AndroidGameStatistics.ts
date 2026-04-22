@@ -43,7 +43,10 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ export class AndroidGameStatistics extends BaseGameStatistics {
 public constructor (){
 
             super();
-            
+        
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
@@ -80,7 +83,7 @@ public constructor (){
     var index: number = 0;
         
         
-index < STRING_ARRAY.length; index++)
+index < this.STRING_ARRAY.length; index++)
         {
 this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
     
@@ -101,7 +104,7 @@ this.totalOnDraws= 0;
 
 
     public process(){
-view.postInvalidate();
+this.view.postInvalidate();
     
 }
 
@@ -137,7 +140,7 @@ this.totalOnDraws++;
         
 index < stringArray!.length; index++)
         {
-STRING_ARRAY[index]= stringArray[index]!;
+this.STRING_ARRAY[index]= stringArray[index]!;
     
 }
 
@@ -149,13 +152,13 @@ STRING_ARRAY[index]= stringArray[index]!;
     
 totalTime= (totalTime /10000);
     
-STRING_ARRAY[10]= TOTAL_ONDRAWS;
+this.STRING_ARRAY[10]= this.TOTAL_ONDRAWS;
     
-STRING_ARRAY[11]= (this.totalOnDraws).toString();
+this.STRING_ARRAY[11]= (this.totalOnDraws).toString();
     
-STRING_ARRAY[12]= ONDRAWS_RATE;
+this.STRING_ARRAY[12]= this.ONDRAWS_RATE;
     
-STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
+this.STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
     
 
 
@@ -191,11 +194,11 @@ stringBuffer!.append(super.toString(totalTime));
                         if(this.totalOnDraws > 0)
                         
                                     {
-                                    stringBuffer!.append(TOTAL_ONDRAWS);
+                                    stringBuffer!.append(this.TOTAL_ONDRAWS);
     
 stringBuffer!.append(totalOnDraws.toString());
     
-stringBuffer!.append(ONDRAWS_RATE);
+stringBuffer!.append(this.ONDRAWS_RATE);
     
 
     var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;

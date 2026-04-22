@@ -31,7 +31,10 @@ import { Gauge } from "../../../../javax/microedition/lcdui/Gauge.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -41,12 +44,9 @@ import { GameConfiguration } from "./GameConfiguration.js";
 
 export class GameConfigurationGauge extends Gauge {
         
-public constructor (gameConfiguration: GameConfiguration)                        
-
-                            : super(gameConfiguration!.getName(), gameConfiguration!.isModifiable(), gameConfiguration!.getMaxValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt(), gameConfiguration!.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt()){
-
-            super();
-            var gameConfiguration = gameConfiguration
+public constructor (gameConfiguration: GameConfiguration){
+            super(gameConfiguration!.getName(), gameConfiguration!.isModifiable(), gameConfiguration!.getMaxValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt(), gameConfiguration!.getValue()!.toInt() -gameConfiguration!.getMinValue()!.toInt());
+                    var gameConfiguration = gameConfiguration
 
 
                             //For kotlin this is before the body of the constructor.

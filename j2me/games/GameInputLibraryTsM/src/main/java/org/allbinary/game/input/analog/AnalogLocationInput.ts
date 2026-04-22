@@ -17,7 +17,10 @@ import { CustomGPoint } from "../../../../../org/allbinary/graphics/CustomGPoint
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class AnalogLocationInput
  constructor (playerId: number){
 
             super();
-            var playerId = playerId
+        var playerId = playerId
 this.playerId= playerId;
     
 this.customGPoint= new CustomGPoint(0, 0, 0);

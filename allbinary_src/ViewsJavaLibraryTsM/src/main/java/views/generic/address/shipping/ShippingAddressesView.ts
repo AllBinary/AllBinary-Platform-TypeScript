@@ -69,7 +69,10 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,12 +88,9 @@ export class ShippingAddressesView extends HttpStoreComponentView implements Dom
     private request: HttpServletRequest
 
     streetAddressList: Vector
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -133,7 +133,7 @@ var document = document
 ;
     
 
-    var size: number = streetAddressList!.length!;
+    var size: number = this.streetAddressList!.length!;
         
         
 ;
@@ -149,7 +149,7 @@ var document = document
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index);
+    var streetAddress: StreetAddress = this.streetAddressList!.get(index);
 
                          as StreetAddress;
         

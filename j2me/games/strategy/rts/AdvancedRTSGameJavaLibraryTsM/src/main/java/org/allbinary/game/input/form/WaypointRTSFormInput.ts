@@ -142,7 +142,10 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
 
 
-        
+
+
+
+
 
 
 
@@ -176,12 +179,9 @@ export class WaypointRTSFormInput extends RTSFormInput {
     private stickyAssociatedRtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
         
         
-public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean)                        
-
-                            : super(groupInterface){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean){
+            super(groupInterface);
+                        //var groupInterface = groupInterface
     //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
 
 

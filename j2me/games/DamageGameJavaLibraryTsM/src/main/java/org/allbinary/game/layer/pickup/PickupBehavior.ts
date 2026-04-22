@@ -52,12 +52,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PickupBehaviorInterface } from "./PickupBehaviorInterface.js";
+
 import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
 
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
@@ -85,7 +90,7 @@ export class PickupBehavior
 public constructor (ownerLayerInterface: CollidableCompositeLayer, countedIndex: number){
 
             super();
-                //var ownerLayerInterface = ownerLayerInterface
+            //var ownerLayerInterface = ownerLayerInterface
     //var countedIndex = countedIndex
 this.ownerLayerInterface= ownerLayerInterface;
     
@@ -108,7 +113,7 @@ this.countedIndex= countedIndex;
                         if(healthInterfaceCompositeInterface!.getHealthInterface()!.isAlive())
                         
                                     {
-                                    pickupProcessorInterface!.process(ownerLayerInterface);
+                                    pickupProcessorInterface!.process(this.ownerLayerInterface);
     
 
                                     }

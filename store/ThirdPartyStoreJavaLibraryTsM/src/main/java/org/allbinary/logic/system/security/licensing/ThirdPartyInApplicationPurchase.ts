@@ -31,12 +31,17 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ThirdPartyInApplicationPurchaseInterface } from "./ThirdPartyInApplicationPurchaseInterface.js";
+
 import { LockableFeature } from "./LockableFeature.js";
 
 export class ThirdPartyInApplicationPurchase

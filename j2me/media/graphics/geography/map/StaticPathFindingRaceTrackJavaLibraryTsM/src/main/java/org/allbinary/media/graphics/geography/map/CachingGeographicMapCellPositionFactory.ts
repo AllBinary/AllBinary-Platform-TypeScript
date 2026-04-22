@@ -34,7 +34,10 @@ import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosit
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapCellPositionFactory {
         
-protected constructor (geographicMapInterface: BasicGeographicMap)                        
-
-                            : super(geographicMapInterface){
-
-            super();
-            var geographicMapInterface = geographicMapInterface
+protected constructor (geographicMapInterface: BasicGeographicMap){
+            super(geographicMapInterface);
+                    var geographicMapInterface = geographicMapInterface
 
 
                             //For kotlin this is before the body of the constructor.

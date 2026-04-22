@@ -60,7 +60,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor, gameInfo: GameInfo){
 
             super();
-                //var backgroundBasicColor = backgroundBasicColor
+            //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
     //var gameInfo = gameInfo
 this.backgroundBasicColor= backgroundBasicColor;

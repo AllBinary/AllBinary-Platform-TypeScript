@@ -66,12 +66,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ItemInterface } from "./ItemInterface.js";
+
 import { BasicItemData } from "./BasicItemData.js";
 
 export class BasicItem
@@ -149,7 +154,7 @@ export class BasicItem
 public constructor (itemHashMap: HashMap<any, any>){
 
             super();
-            var itemHashMap = itemHashMap
+        var itemHashMap = itemHashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
@@ -280,7 +285,7 @@ this.specials= itemHashMap!.get(BasicItemData.SPECIALS);
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
@@ -1020,37 +1025,37 @@ hashMap!.put(BasicItemData.SPECIALS, this.specials);
         
 ;
     
-values.add(itemId);
+values.add(this.itemId);
     
-values.add(number);
+values.add(this.number);
     
-values.add(inBaskets);
+values.add(this.inBaskets);
     
-values.add(weight);
+values.add(this.weight);
     
-values.add(enabled);
+values.add(this.enabled);
     
-values.add(newOrUsed);
+values.add(this.newOrUsed);
     
-values.add(summary);
+values.add(this.summary);
     
-values.add(distributor);
+values.add(this.distributor);
     
-values.add(idUsedByDistributor);
+values.add(this.idUsedByDistributor);
     
-values.add(producedBy);
+values.add(this.producedBy);
     
-values.add(productionDate);
+values.add(this.productionDate);
     
-values.add(startProductionDate);
+values.add(this.startProductionDate);
     
-values.add(description);
+values.add(this.description);
     
-values.add(keywords);
+values.add(this.keywords);
     
-values.add(category);
+values.add(this.category);
     
-values.add(type);
+values.add(this.type);
     
 values.add(this.getSmallImage());
     

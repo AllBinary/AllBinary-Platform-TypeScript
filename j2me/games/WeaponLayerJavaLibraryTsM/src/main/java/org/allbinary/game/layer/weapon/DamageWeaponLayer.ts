@@ -43,7 +43,10 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ import { WeaponLayer } from "./WeaponLayer.js";
 
 export class DamageWeaponLayer extends WeaponLayer {
         
-public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(name, movement, animationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            super(name, movement, animationInterface, rectangle, viewPosition);
+                        //var name = name
     //var movement = movement
     //var animationInterface = animationInterface
     //var rectangle = rectangle
@@ -71,12 +71,9 @@ this.setCollidableInferface(new CollidableDamageWeaponBehavior(this, true));
     
 }
 
-public constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition)                        
-
-                            : super(name, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
+            super(name, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
+                        //var name = name
     //var movement = movement
     //var animationInterface = animationInterface
     //var destroyedAnimationInterface = destroyedAnimationInterface
@@ -90,12 +87,9 @@ this.setCollidableInferface(new CollidableDamageWeaponBehavior(this, true));
     
 }
 
-public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, username: string, actorSessionId: number, id: number, multiPlayerType: number)                        
-
-                            : super(name, remoteInfo, multiPlayerType, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition){
-
-            super();
-                //var name = name
+public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, username: string, actorSessionId: number, id: number, multiPlayerType: number){
+            super(name, remoteInfo, multiPlayerType, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
+                        //var name = name
     //var remoteInfo = remoteInfo
     //var movement = movement
     //var animationInterface = animationInterface

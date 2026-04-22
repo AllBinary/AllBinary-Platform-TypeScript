@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -253,7 +256,7 @@ export class AuthorizeNetData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

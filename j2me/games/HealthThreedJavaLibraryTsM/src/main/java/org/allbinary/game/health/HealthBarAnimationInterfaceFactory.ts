@@ -43,7 +43,10 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class HealthBarAnimationInterfaceFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

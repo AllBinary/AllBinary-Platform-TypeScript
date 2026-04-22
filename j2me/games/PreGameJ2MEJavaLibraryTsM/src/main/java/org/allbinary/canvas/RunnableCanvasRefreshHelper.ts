@@ -31,7 +31,10 @@ import { MyCanvas } from "../../../org/allbinary/graphics/displayable/MyCanvas.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class RunnableCanvasRefreshHelper extends Processor {
 public constructor (runnableCanvas: MyCanvas){
 
             super();
-            var runnableCanvas = runnableCanvas
+        var runnableCanvas = runnableCanvas
 this.runnableCanvas= runnableCanvas;
     
 }

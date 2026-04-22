@@ -34,7 +34,10 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class ColorAverage
 public constructor (){
 
             super();
-            this.setAvgRed(0);
+        this.setAvgRed(0);
     
 this.setAvgGreen(0);
     

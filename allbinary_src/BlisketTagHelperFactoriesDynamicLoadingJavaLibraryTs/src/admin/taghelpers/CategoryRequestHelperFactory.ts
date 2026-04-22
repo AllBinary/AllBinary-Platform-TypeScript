@@ -40,12 +40,17 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
+
 import { HelperFactory } from "./HelperFactory.js";
 
 export class CategoryRequestHelperFactory
@@ -63,7 +68,7 @@ export class CategoryRequestHelperFactory
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(LicensingException::class)

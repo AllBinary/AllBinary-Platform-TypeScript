@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -69,11 +72,11 @@ export class BasicUserRoleFactory
         
         
 
-    public readonly INSTALLER: BasicUserRole = new BasicUserRole("Installer", 16, MAXSESSIONTIME, INACTIVITYTIMEOUT);
+    public readonly INSTALLER: BasicUserRole = new BasicUserRole("Installer", 16, MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
         
         
 
-    public readonly ADMINISTRATOR: BasicUserRole = new BasicUserRole("Administrator", 0, MAXSESSIONTIME, INACTIVITYTIMEOUT);
+    public readonly ADMINISTRATOR: BasicUserRole = new BasicUserRole("Administrator", 0, MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
         
         
 
@@ -113,15 +116,15 @@ export class BasicUserRoleFactory
         
         
 
-    public readonly REVIEWER: BasicUserRole = new BasicUserRole("Reviewer", 10, MAXSESSIONTIME, INACTIVITYTIMEOUT);
+    public readonly REVIEWER: BasicUserRole = new BasicUserRole("Reviewer", 10, MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
         
         
 
-    public readonly SHIPPING: BasicUserRole = new BasicUserRole("Shipping", 11, MAXSESSIONTIME, INACTIVITYTIMEOUT);
+    public readonly SHIPPING: BasicUserRole = new BasicUserRole("Shipping", 11, MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
         
         
 
-    public readonly ADJUSTER: BasicUserRole = new BasicUserRole("Adjuster", 12, MAXSESSIONTIME, INACTIVITYTIMEOUT);
+    public readonly ADJUSTER: BasicUserRole = new BasicUserRole("Adjuster", 12, MAXSESSIONTIME, this.INACTIVITYTIMEOUT);
         
         
 

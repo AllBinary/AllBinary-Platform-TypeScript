@@ -67,7 +67,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -100,7 +103,7 @@ export class TransformFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

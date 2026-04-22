@@ -39,7 +39,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-        
+
+
+
+
 
 
 
@@ -64,7 +67,7 @@ export class AbstractInputRobot
 public constructor (helpSet: HelpSet){
 
             super();
-            var helpSet = helpSet
+        var helpSet = helpSet
 this.setHelpSet(helpSet);
     
 }

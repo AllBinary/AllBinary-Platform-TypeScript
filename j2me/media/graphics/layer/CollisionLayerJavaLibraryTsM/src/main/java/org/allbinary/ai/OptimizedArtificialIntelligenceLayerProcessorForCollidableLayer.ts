@@ -40,7 +40,10 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,12 +51,9 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
         
 export class OptimizedArtificialIntelligenceLayerProcessorForCollidableLayer extends LayerProcessor {
         
-public constructor ()                        
-
-                            : super(new OptimizedArtificialIntelligenceLayerManager()){
-
-            super();
-            
+public constructor (){
+            super(new OptimizedArtificialIntelligenceLayerManager());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

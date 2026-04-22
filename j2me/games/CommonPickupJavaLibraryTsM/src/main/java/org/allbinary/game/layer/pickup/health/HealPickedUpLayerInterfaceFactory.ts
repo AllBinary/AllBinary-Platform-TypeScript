@@ -52,7 +52,10 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,12 +91,9 @@ pickedUpLayerInterfaceFactoryInterface= new HealPickedUpLayerInterfaceFactory();
     private pool: HealLayerCircularStaticPool = new HealLayerCircularStaticPool(new HealLayerFactory(), 1);
         
         
-private constructor ()                        
-
-                            : super(PickedUpLayerTypeFactory.getInstance()!.HEAL, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(HealthResources.getInstance()!.RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(HealthResources.getInstance()!.RESOURCE)!.getInstance(0)){
-
-            super();
-            
+private constructor (){
+            super(PickedUpLayerTypeFactory.getInstance()!.HEAL, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(HealthResources.getInstance()!.RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(HealthResources.getInstance()!.RESOURCE)!.getInstance(0));
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

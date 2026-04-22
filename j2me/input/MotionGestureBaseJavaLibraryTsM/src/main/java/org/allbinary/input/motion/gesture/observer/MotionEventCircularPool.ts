@@ -40,7 +40,10 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
 
-        
+
+
+
+
 
 
 
@@ -74,12 +77,12 @@ var id = id
 private constructor (){
 
             super();
-            }
+        }
 
 private constructor (id: number){
 
             super();
-            var id = id
+        var id = id
 eventPool!.init(new MotionEventFactory(eventPool, id));
     
 }

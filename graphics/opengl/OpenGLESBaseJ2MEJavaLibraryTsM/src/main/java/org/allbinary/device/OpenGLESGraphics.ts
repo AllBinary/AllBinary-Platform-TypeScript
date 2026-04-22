@@ -32,12 +32,17 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GraphicsInterface } from "./GraphicsInterface.js";
+
 import { NullGL10 } from "./NullGL10.js";
 
 export class OpenGLESGraphics
@@ -55,7 +60,7 @@ export class OpenGLESGraphics
  constructor (){
 
             super();
-            }
+        }
 
 
     public update(gl: GL){

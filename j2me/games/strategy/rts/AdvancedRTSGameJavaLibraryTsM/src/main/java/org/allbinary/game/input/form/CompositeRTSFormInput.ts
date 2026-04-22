@@ -70,7 +70,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,14 +89,11 @@ export class CompositeRTSFormInput extends RTSFormInput {
     private readonly itemIndex: number[]
 
     private readonly isPrimaryWaypointCreator: boolean
-public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean)                        
-
-                            : this(groupInterface, isPrimaryWaypointCreator, intArrayOf(0;
+public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean){
+            this(groupInterface, isPrimaryWaypointCreator, intArrayOf(0;
         
-        )){
-
-            super();
-                //var groupInterface = groupInterface
+        ));
+                        //var groupInterface = groupInterface
     //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
 
 
@@ -101,12 +101,9 @@ public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean)
                     
 }
 
-public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: number[])                        
-
-                            : super(groupInterface){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: number[]){
+            super(groupInterface);
+                        //var groupInterface = groupInterface
     //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
     //var itemIndex = itemIndex
 

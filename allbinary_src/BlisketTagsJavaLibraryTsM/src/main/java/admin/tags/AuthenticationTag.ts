@@ -75,7 +75,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ export class AuthenticationTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            
+        
     var stringUtil: StringUtil = StringUtil.getInstance()!;
         
         
@@ -995,7 +998,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
@@ -1003,7 +1006,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     this.propertiesHashMap= new HashMap<any, any>();
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.NEWPASSWORD) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.NEWPASSWORD) == 0)
                         
                                     {
                                     
@@ -1137,7 +1140,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
 pageContext!.getOut()!.print("Please login again.<p>");
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1173,7 +1176,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1202,9 +1205,9 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if((userName == 
+                        if((this.userName == 
                                     null
-                                 || userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
+                                 || this.userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
                                     null
                                  || password.compareTo(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
                                     null
@@ -1221,7 +1224,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1279,7 +1282,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
 pageContext!.getOut()!.print(validRole());
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1317,7 +1320,7 @@ pageContext!.getOut()!.print(validRole());
 pageContext!.getOut()!.print(invalidRole());
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1356,11 +1359,11 @@ pageContext!.getOut()!.print(invalidRole());
                                     }
                                 
 
-                        if(userName != 
+                        if(this.userName != 
                                     null
-                                 && userName!.compareTo(stringUtil!.EMPTY_STRING) != 0 && password != 
+                                 && this.userName!.compareTo(stringUtil!.EMPTY_STRING) != 0 && this.password != 
                                     null
-                                 && password.compareTo(stringUtil!.EMPTY_STRING) != 0)
+                                 && this.password.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p/>");
@@ -1382,7 +1385,7 @@ pageContext!.getOut()!.print(invalidRole());
                                     }
                                 
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     

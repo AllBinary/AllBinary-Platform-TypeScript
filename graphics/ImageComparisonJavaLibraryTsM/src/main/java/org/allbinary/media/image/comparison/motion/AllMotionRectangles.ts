@@ -40,7 +40,10 @@ import { PixelDelta } from "../../../../../../org/allbinary/media/image/comparis
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,12 +59,9 @@ export class AllMotionRectangles extends MotionRectangles {
     private static readonly NAME: string = "allMotionRectangles_";
         
         
-public constructor (imageComparisonResult: ImageComparisonResult)                        
-
-                            : super(NAME, imageComparisonResult){
-
-            super();
-            var imageComparisonResult = imageComparisonResult
+public constructor (imageComparisonResult: ImageComparisonResult){
+            super(NAME, imageComparisonResult);
+                    var imageComparisonResult = imageComparisonResult
 
 
                             //For kotlin this is before the body of the constructor.

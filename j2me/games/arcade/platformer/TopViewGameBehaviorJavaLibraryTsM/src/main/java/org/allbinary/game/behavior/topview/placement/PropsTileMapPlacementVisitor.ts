@@ -43,7 +43,10 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -141,7 +144,7 @@ index2 < size2; index2++)
                         
                                     {
                                     
-    var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;
+    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;
         
         
 ;
@@ -228,7 +231,7 @@ index2 < size2; index2++)
                         
                                     {
                                     
-    var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(4)!;
+    var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;
         
         
 ;

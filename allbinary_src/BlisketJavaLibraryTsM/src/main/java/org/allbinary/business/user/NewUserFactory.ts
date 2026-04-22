@@ -49,7 +49,10 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
 
-        
+
+
+
+
 
 
 
@@ -174,7 +177,7 @@ requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

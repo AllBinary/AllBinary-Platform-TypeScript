@@ -37,7 +37,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -78,7 +81,7 @@ export class GuiLog
 private constructor (){
 
             super();
-            }
+        }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
@@ -172,7 +175,7 @@ var exception = exception
 
         try {
             
-    var data: string = logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;
+    var data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;
         
         
 ;
@@ -191,7 +194,7 @@ console.log(data);
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "put", e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
     
 
 
@@ -230,7 +233,7 @@ var exception = exception
 
         try {
             
-    var data: string = logFormatUtil!.get(specialMessage, className, functionName, exception)!;
+    var data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;
         
         
 ;
@@ -249,7 +252,7 @@ console.log(data);
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "put", e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
     
 
 

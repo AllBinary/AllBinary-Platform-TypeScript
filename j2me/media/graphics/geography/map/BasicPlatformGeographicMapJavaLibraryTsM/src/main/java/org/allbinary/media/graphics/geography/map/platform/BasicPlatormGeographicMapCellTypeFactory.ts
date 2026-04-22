@@ -49,7 +49,10 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
 public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
-                //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
+            //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
     //var maxTileId = maxTileId
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;

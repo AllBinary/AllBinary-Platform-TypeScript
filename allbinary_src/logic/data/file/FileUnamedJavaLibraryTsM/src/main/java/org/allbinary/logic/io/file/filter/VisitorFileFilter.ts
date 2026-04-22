@@ -43,7 +43,10 @@ import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/vis
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class VisitorFileFilter
 public constructor (booleanVisitorInterface: VisitorInterface){
 
             super();
-            var booleanVisitorInterface = booleanVisitorInterface
+        var booleanVisitorInterface = booleanVisitorInterface
 this.booleanVisitorInterface= booleanVisitorInterface;
     
 }

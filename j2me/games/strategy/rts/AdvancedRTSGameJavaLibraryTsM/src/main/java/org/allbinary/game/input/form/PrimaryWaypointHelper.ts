@@ -40,7 +40,10 @@ import { WaypointLayer } from "../../../../../org/allbinary/game/layer/waypoint/
 
 
 
-        
+
+
+
+
 
 
 
@@ -71,7 +74,7 @@ export class PrimaryWaypointHelper
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getWaypointLayer(): PathFindingLayerInterface{

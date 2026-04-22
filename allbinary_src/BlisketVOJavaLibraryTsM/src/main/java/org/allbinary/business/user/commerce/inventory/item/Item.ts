@@ -55,13 +55,18 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { BasicItem } from "./BasicItem.js";
+
+import { OrderItemInterface } from "./OrderItemInterface.js";
 
 export class Item extends BasicItem implements OrderItemInterface {
         
@@ -79,12 +84,9 @@ export class Item extends BasicItem implements OrderItemInterface {
     private shippingAddress: StreetAddress
 
     private special: string
-public constructor (itemHashMap: HashMap<any, any>)                        
-
-                            : super(itemHashMap){
-
-            super();
-            var itemHashMap = itemHashMap
+public constructor (itemHashMap: HashMap<any, any>){
+            super(itemHashMap);
+                    var itemHashMap = itemHashMap
 
 
                             //For kotlin this is before the body of the constructor.
@@ -96,21 +98,21 @@ this.setData(itemHashMap);
 public constructor (){
 
             super();
-            
+        
     var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
         
         
 ;
     
-group= EMPTY;
+this.group= EMPTY;
     
-tax= EMPTY;
+this.tax= EMPTY;
     
-shippingType= EMPTY;
+this.shippingType= EMPTY;
     
-shippingCost= EMPTY;
+this.shippingCost= EMPTY;
     
-shippingAddress= new StreetAddress();
+this.shippingAddress= new StreetAddress();
     
 }
 

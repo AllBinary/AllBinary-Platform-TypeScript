@@ -32,7 +32,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,7 +56,7 @@ export class CustomForm extends CustomScreen {
 public constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-            var title = title
+        var title = title
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor
 }
@@ -61,7 +64,7 @@ var foregroundBasicColor = foregroundBasicColor
 public constructor (title: string, items: CustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-            var title = title
+        var title = title
 var items = items
 var backgroundBasicColor = backgroundBasicColor
 var foregroundBasicColor = foregroundBasicColor

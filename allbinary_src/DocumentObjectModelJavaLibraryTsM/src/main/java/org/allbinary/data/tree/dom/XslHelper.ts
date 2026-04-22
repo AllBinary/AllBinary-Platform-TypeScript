@@ -61,7 +61,10 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class XslHelper
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

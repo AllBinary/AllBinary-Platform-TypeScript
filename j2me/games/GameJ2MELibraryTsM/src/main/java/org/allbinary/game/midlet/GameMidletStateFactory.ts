@@ -26,7 +26,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class GameMidletStateFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getCurrentGameState(): GameState{

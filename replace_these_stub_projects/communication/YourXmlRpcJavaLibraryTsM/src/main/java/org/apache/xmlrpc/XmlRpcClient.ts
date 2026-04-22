@@ -32,12 +32,17 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { XmlRpcHandler } from "./XmlRpcHandler.js";
+
 export class XmlRpcClient
             extends Object
          implements XmlRpcHandler {
@@ -47,29 +52,23 @@ export class XmlRpcClient
 public constructor (url: URL){
 
             super();
-            var url = url
+        var url = url
 this.url= url;
     
 }
 
-public constructor (url: string)                        
-
-                            : this(new URL(url)){
-
-            super();
-            var url = url
+public constructor (url: string){
+            this(new URL(url));
+                    var url = url
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (hostname: string, port: number)                        
-
-                            : this(new URL("http://" +hostname +':' +port +"/RPC2")){
-
-            super();
-            var hostname = hostname
+public constructor (hostname: string, port: number){
+            this(new URL("http://" +hostname +':' +port +"/RPC2"));
+                    var hostname = hostname
 var port = port
 
 

@@ -82,7 +82,10 @@ import { NullCloseable } from "../../../../org/allbinary/logic/io/NullCloseable.
 
 
 
-        
+
+
+
+
 
 
 
@@ -145,10 +148,10 @@ export class OpenGLConfiguration
 private constructor (){
 
             super();
-            
+        
         try {
             
-                        if(FileFactory.getInstance()!.isFile(FILE))
+                        if(FileFactory.getInstance()!.isFile(this.FILE))
                         
                                     {
                                     this.read();

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,14 +46,14 @@ export class NativeLibraryHelper
 public constructor (library: string){
 
             super();
-            var library = library
+        var library = library
 this.library= library;
     
 }
 
 
     public load(){
-System.loadLibrary(library);
+System.loadLibrary(this.library);
     
 }
 

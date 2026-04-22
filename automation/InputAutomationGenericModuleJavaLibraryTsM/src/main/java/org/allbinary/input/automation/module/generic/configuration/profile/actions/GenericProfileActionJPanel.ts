@@ -49,7 +49,10 @@ import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communic
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class GenericProfileActionJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-            initComponents();
+        initComponents();
     
 }
 
@@ -150,43 +153,43 @@ this.genericProfileActionScriptJPanel= genericProfileActionScriptJPanel;
 
 
     initComponents(){
-genericProfileActionScriptJScrollPane= new javax.swing.JScrollPane();
+this.genericProfileActionScriptJScrollPane= new javax.swing.JScrollPane();
     
-blankProfileActionScriptJPanel= new javax.swing.JPanel();
+this.blankProfileActionScriptJPanel= new javax.swing.JPanel();
     
-ifJLabel= new javax.swing.JLabel();
+this.ifJLabel= new javax.swing.JLabel();
     
-newColorAtJButton= new javax.swing.JButton();
+this.newColorAtJButton= new javax.swing.JButton();
     
-newTimeIntervalJButton= new javax.swing.JButton();
+this.newTimeIntervalJButton= new javax.swing.JButton();
     
-newAlwaysJButton= new javax.swing.JButton();
+this.newAlwaysJButton= new javax.swing.JButton();
     
 setMinimumSize(new java.awt.Dimension(440, 275));
     
 setPreferredSize(new java.awt.Dimension(440, 275));
     
-genericProfileActionScriptJScrollPane!.setPreferredSize(new java.awt.Dimension(474, 270));
+this.genericProfileActionScriptJScrollPane!.setPreferredSize(new java.awt.Dimension(474, 270));
     
-blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 200));
+this.blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 200));
     
 
-    var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(blankProfileActionScriptJPanel);
+    var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);
         
         
 ;
     
-blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout);
+this.blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout);
     
 blankProfileActionScriptJPanelLayout!.setHorizontalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9996, Short.MAX_VALUE));
     
 blankProfileActionScriptJPanelLayout!.setVerticalGroup(blankProfileActionScriptJPanelLayout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 9967, Short.MAX_VALUE));
     
-genericProfileActionScriptJScrollPane!.setViewportView(blankProfileActionScriptJPanel);
+this.genericProfileActionScriptJScrollPane!.setViewportView(this.blankProfileActionScriptJPanel);
     
-ifJLabel!.setText("Conditions:");
+this.ifJLabel!.setText("Conditions:");
     
-newColorAtJButton!.setText("Color Range At");
+this.newColorAtJButton!.setText("Color Range At");
     
 newColorAtJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -200,7 +203,7 @@ newColorAtJButtonActionPerformed(evt);
                                 }
                             );
     
-newTimeIntervalJButton!.setText("Time Interval");
+this.newTimeIntervalJButton!.setText("Time Interval");
     
 newTimeIntervalJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -214,7 +217,7 @@ newTimeIntervalJButtonActionPerformed(evt);
                                 }
                             );
     
-newAlwaysJButton!.setText("Always On/Off");
+this.newAlwaysJButton!.setText("Always On/Off");
     
 newAlwaysJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {

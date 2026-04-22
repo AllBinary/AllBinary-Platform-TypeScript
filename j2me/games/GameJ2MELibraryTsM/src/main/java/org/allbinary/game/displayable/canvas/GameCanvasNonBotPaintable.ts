@@ -34,7 +34,10 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,7 +52,7 @@ export class GameCanvasNonBotPaintable extends Paintable {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-            var gameCanvas = gameCanvas
+        var gameCanvas = gameCanvas
 this.gameCanvas= gameCanvas;
     
 }

@@ -64,7 +64,10 @@ import { WeakCrypt } from "../../../../org/allbinary/logic/system/security/crypt
 
 
 
-        
+
+
+
+
 
 
 
@@ -113,7 +116,7 @@ InstallerInfo.hasRead= value;
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

@@ -31,7 +31,10 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class PathFindingThreadPool extends ThreadPool {
     
 }
 
-public constructor (poolName: string, numThreads: number, priority: number)                        
-
-                            : super(poolName, numThreads){
-
-            super();
-                //var poolName = poolName
+public constructor (poolName: string, numThreads: number, priority: number){
+            super(poolName, numThreads);
+                        //var poolName = poolName
     //var numThreads = numThreads
     //var priority = priority
 

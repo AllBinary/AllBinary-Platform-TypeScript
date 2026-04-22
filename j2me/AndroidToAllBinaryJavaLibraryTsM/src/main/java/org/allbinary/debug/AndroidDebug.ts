@@ -31,12 +31,17 @@ import { Debug } from "../../../android/os/Debug.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DebugInterface } from "./DebugInterface.js";
+
 export class AndroidDebug
             extends Object
          implements DebugInterface {
@@ -65,7 +70,7 @@ setRunning(true);
 
 
     public stop(){
-startTime= Long.MAX_VALUE;
+this.startTime= Long.MAX_VALUE;
     
 Debug.stopMethodTracing();
     

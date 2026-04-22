@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
@@ -88,7 +91,7 @@ export class ComparisonImageInputOutput
 public constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

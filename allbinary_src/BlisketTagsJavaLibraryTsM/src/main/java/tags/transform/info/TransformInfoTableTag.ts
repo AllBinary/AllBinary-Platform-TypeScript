@@ -34,7 +34,10 @@ import { TransformInfoHelperFactory } from "../../../taghelpers/transform/info/T
 
 
 
-        
+
+
+
+
 
 
 
@@ -45,7 +48,7 @@ export class TransformInfoTableTag extends TableTag {
 public constructor (){
 
             super();
-            this.setTagHelperFactory(new TransformInfoHelperFactory());
+        this.setTagHelperFactory(new TransformInfoHelperFactory());
     
 }
 

@@ -49,7 +49,10 @@ import { TransformInfoObjectConfigInterface } from "../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ import { BasicTransformer } from "./BasicTransformer.js";
 
 export class TransformInfoCustomUriTransformer extends BasicTransformer {
         
-public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(abeClientInformation, transformInfoInterface){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface){
+            super(abeClientInformation, transformInfoInterface);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
 
 

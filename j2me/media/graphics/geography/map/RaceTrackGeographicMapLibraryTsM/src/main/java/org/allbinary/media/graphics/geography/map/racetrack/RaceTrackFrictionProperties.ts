@@ -31,7 +31,10 @@ import { FrictionData } from "../../../../../../../org/allbinary/game/physics/fr
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,11 +51,11 @@ export class RaceTrackFrictionProperties
 public constructor (roadFriction: number, groundFriction: number){
 
             super();
-            var roadFriction = roadFriction
+        var roadFriction = roadFriction
 var groundFriction = groundFriction
-ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction;
+this.ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction;
     
-GROUND_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -groundFriction;
+this.GROUND_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -groundFriction;
     
 }
 

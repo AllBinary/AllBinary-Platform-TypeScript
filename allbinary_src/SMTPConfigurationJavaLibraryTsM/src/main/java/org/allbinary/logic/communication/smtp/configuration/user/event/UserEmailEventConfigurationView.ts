@@ -49,7 +49,10 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -68,7 +71,7 @@ export class UserEmailEventConfigurationView
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var childNodeList: NodeList = node.getChildNodes()!;
         
@@ -104,7 +107,7 @@ this.setUserEmailEventConfigurationInterface(new UserEmailEventConfiguration(has
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
-            var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
+        var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
 this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface);
     
 }

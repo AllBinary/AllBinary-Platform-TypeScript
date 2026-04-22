@@ -43,7 +43,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
 
-        
+
+
+
+
 
 
 
@@ -57,12 +60,9 @@ export class LazyProgressCanvas extends ProgressCanvas {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor)                        
-
-                            : super(title, backgroundBasicColor, foregroundBasicColor){
-
-            super();
-                //var title = title
+protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+            super(title, backgroundBasicColor, foregroundBasicColor);
+                        //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
 

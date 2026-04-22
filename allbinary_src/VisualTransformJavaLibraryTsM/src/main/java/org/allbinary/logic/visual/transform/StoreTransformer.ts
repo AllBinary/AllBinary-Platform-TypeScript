@@ -43,7 +43,10 @@ import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visua
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ import { BasicTransformer } from "./BasicTransformer.js";
 
 export class StoreTransformer extends BasicTransformer {
         
-public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(abeClientInformation, transformInfoInterface){
-
-            super();
-                //var abeClientInformation = abeClientInformation
+public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface){
+            super(abeClientInformation, transformInfoInterface);
+                        //var abeClientInformation = abeClientInformation
     //var transformInfoInterface = transformInfoInterface
 
 

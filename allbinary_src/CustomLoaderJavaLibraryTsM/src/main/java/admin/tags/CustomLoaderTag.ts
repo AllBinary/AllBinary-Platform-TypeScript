@@ -52,7 +52,10 @@ import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class CustomLoaderTag extends CustomTagSupport {
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setCommand(command: string){
@@ -176,7 +179,7 @@ setMethod!.invoke(anyType, methodArgs);
                                     }
                                 
 
-                        if(command != 
+                        if(this.command != 
                                     null
                                 )
                         
@@ -184,7 +187,7 @@ setMethod!.invoke(anyType, methodArgs);
                                     this.propertiesHashMap= new HashMap<any, any>();
     
 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
                         
                                     {
                                     this.setCustomLoaderWebappPath();

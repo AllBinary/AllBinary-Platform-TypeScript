@@ -31,7 +31,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,17 +80,17 @@ export class InventorySearchLoopInfo
         
 ;
     
-stringBuffer!.append(CURRENT);
+stringBuffer!.append(this.CURRENT);
     
-stringBuffer!.appendint(currentPage);
+stringBuffer!.appendint(this.currentPage);
     
-stringBuffer!.append(NUM);
+stringBuffer!.append(this.NUM);
     
-stringBuffer!.appendint(numberOfResults);
+stringBuffer!.appendint(this.numberOfResults);
     
-stringBuffer!.append(LAST);
+stringBuffer!.append(this.LAST);
     
-stringBuffer!.appendint(lastPage);
+stringBuffer!.appendint(this.lastPage);
     
 
 

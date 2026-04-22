@@ -55,7 +55,10 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,12 +92,9 @@ export class MotionGestureEvent extends AllBinaryEventObject {
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
         
         
-public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput)                        
-
-                            : super(source){
-
-            super();
-            var source = source
+public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
+            super(source);
+                    var source = source
 var id = id
 var motionGesture = motionGesture
 

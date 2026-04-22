@@ -43,7 +43,10 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -107,7 +110,7 @@ export class TrueTypeFontUtilBase
 public constructor (scale: number){
 
             super();
-                //var scale = scale
+            //var scale = scale
 
     var shortPattern: string = StringUtil.getInstance()!.EMPTY_STRING;
         
@@ -156,13 +159,13 @@ this.CELLS_PER_ROW= 16;
     
 this.fontSize= (20 +6) *this.scale;
     
-this.baseCharWidth= fontSize +(6 *this.scale);
+this.baseCharWidth= this.fontSize +(6 *this.scale);
     
-this.cellSize= fontSize +(6 *this.scale);
+this.cellSize= this.fontSize +(6 *this.scale);
     
-this.textureSize= this.getAsTextureSize(CELLS_PER_ROW *cellSize);
+this.textureSize= this.getAsTextureSize(this.CELLS_PER_ROW *this.cellSize);
     
-this.actualCellsPerRow= textureSize /cellSize;
+this.actualCellsPerRow= this.textureSize /this.cellSize;
     
 }
 

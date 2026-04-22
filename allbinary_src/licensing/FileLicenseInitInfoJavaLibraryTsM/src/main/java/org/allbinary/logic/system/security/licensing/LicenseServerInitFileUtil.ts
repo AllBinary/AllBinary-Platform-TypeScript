@@ -61,7 +61,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -154,7 +157,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
     write(){
 
-    var fileOutputStream: OutputStream = NULL_OUTPUT_STREAM;
+    var fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;
         
         
 ;

@@ -45,7 +45,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
     readonly tiledLayerP: TiledLayer
 
     readonly debugColor: number
-public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number)                        
-
-                            : super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()){
-
-            super();
-                //var dataId = dataId
+public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
+            super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight());
+                        //var dataId = dataId
     //var tiledLayer = tiledLayer
     //var mapTwoDArray = mapTwoDArray
     //var debugColor = debugColor
@@ -100,9 +100,9 @@ this.tiledLayerP!.paint(graphics);
         
 ;
     
-graphics.setFont(font2);
+graphics.setFont(this.font2);
     
-graphics.setColor(debugColor);
+graphics.setColor(this.debugColor);
     
 
     var x: number = this.tiledLayerP!.getX()!;

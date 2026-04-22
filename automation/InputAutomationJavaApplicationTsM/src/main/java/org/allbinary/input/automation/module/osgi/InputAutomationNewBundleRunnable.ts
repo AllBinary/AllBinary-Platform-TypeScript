@@ -91,7 +91,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -134,7 +137,7 @@ export class InputAutomationNewBundleRunnable
 public constructor (inputAutomationBundleActivator: InputAutomationBundleActivator){
 
             super();
-            var inputAutomationBundleActivator = inputAutomationBundleActivator
+        var inputAutomationBundleActivator = inputAutomationBundleActivator
 this.inputAutomationBundleActivator= inputAutomationBundleActivator;
     
 this.fileBasicArrayList= new BasicArrayList();

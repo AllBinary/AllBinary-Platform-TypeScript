@@ -58,12 +58,17 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicTransformerInterface } from "./BasicTransformerInterface.js";
+
 export class AbTransformer
             extends Object
          implements BasicTransformerInterface {
@@ -85,7 +90,7 @@ export class AbTransformer
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            var transformInfoInterface = transformInfoInterface
+        var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
 }

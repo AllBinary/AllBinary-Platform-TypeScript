@@ -31,12 +31,17 @@ import { InputRobotInterface } from "../../../../org/allbinary/input/automation/
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputAutomationRobotServiceInterface } from "./InputAutomationRobotServiceInterface.js";
+
 export class InputAutomationRobotService
             extends Object
          implements InputAutomationRobotServiceInterface {
@@ -46,7 +51,7 @@ export class InputAutomationRobotService
 public constructor (inputRobotInterfaceArray: InputRobotInterface[]){
 
             super();
-            var inputRobotInterfaceArray = inputRobotInterfaceArray
+        var inputRobotInterfaceArray = inputRobotInterfaceArray
 this.setInputRobotInterfaceArray(inputRobotInterfaceArray);
     
 }

@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
 
-        
+
+
+
+
 
 
 
@@ -66,7 +69,7 @@ SINGLETON= new CountedPickedUpLayerInterfaceFactoryPool();
 private constructor (){
 
             super();
-            list= new BasicArrayList();
+        list= new BasicArrayList();
     
 }
 

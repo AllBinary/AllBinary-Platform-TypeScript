@@ -31,7 +31,10 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class ImageJ2MEScaleUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -165,7 +168,7 @@ image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.ge
         
 --index >= 0; )
         {
-dy= (index *heightRatioFactor) shr 3;
+dy= (index *heightRatioFactor)>>3;
     
 
 
@@ -177,7 +180,7 @@ dy= (index *heightRatioFactor) shr 3;
         
 --index2 >= 0; )
         {
-dx= (index2 *widthRatioFactor) shr 3;
+dx= (index2 *widthRatioFactor)>>3;
     
 scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
     

@@ -91,7 +91,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -120,7 +123,7 @@ export class RootStoreCategoryProperties
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-                //var transformInfoInterface = transformInfoInterface
+            //var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
 this.abPath= new AbPath();
@@ -138,7 +141,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
 
             super();
-                //var transformInfoInterface = transformInfoInterface
+            //var transformInfoInterface = transformInfoInterface
     //var categoryAbPath = categoryAbPath
 this.transformInfoInterface= transformInfoInterface;
     
@@ -166,7 +169,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
 
             super();
-                //var transformInfoInterface = transformInfoInterface
+            //var transformInfoInterface = transformInfoInterface
     //var node = node
 this.transformInfoInterface= transformInfoInterface;
     
@@ -200,7 +203,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-                //var transformInfoInterface = transformInfoInterface
+            //var transformInfoInterface = transformInfoInterface
     //var categoryPropertiesHashMap = categoryPropertiesHashMap
 this.transformInfoInterface= transformInfoInterface;
     

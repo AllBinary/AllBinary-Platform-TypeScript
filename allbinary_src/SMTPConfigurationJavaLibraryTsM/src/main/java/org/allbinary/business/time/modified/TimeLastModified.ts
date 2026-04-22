@@ -31,7 +31,10 @@ import { Time } from "../../../../../org/allbinary/business/time/Time.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -39,24 +42,18 @@ import { Time } from "../../../../../org/allbinary/business/time/Time.js";
         
 export class TimeLastModified extends Time {
         
-public constructor (time: string)                        
-
-                            : super(time){
-
-            super();
-            var time = time
+public constructor (time: string){
+            super(time);
+                    var time = time
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (time: number)                        
-
-                            : super(time){
-
-            super();
-            var time = time
+public constructor (time: number){
+            super(time);
+                    var time = time
 
 
                             //For kotlin this is before the body of the constructor.

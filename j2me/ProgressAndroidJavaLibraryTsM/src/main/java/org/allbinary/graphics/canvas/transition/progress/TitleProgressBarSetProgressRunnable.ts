@@ -37,7 +37,10 @@ import { Activity } from "../../../../../../android/app/Activity.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -53,12 +56,9 @@ export class TitleProgressBarSetProgressRunnable extends ProgressRunnable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas)                        
-
-                            : super(midletActivity, progressCanvas){
-
-            super();
-            var midletActivity = midletActivity
+public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
+            super(midletActivity, progressCanvas);
+                    var midletActivity = midletActivity
 var progressCanvas = progressCanvas
 
 
@@ -72,7 +72,7 @@ var progressCanvas = progressCanvas
         try {
             this.midletActivity!.onSetProgress(this.progressCanvas!.getValue();
 
-                        .toInt(), this.progressCanvas!.getText());
+                        , this.progressCanvas!.getText());
     
 
                 //: 

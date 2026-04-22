@@ -38,7 +38,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -61,7 +64,7 @@ export class RuntimeEnvironmentVariables
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getTest1(): string{
@@ -236,7 +239,7 @@ environmentVariables!.put(key, value);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "get()", e);
     
 
                                     }
@@ -271,7 +274,7 @@ environmentVariables!.put(key, value);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getTempDir()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getTempDir()", e);
     
 
                                     }
@@ -306,7 +309,7 @@ environmentVariables!.put(key, value);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getLibraryPath()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getLibraryPath()", e);
     
 
                                     }
@@ -341,7 +344,7 @@ environmentVariables!.put(key, value);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getClassPath()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getClassPath()", e);
     
 
                                     }
@@ -377,7 +380,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateLibraryPath()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateLibraryPath()", e);
     
 
                                     }
@@ -406,7 +409,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getUserHome()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getUserHome()", e);
     
 
                                     }
@@ -441,7 +444,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "getUserDir()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "getUserDir()", e);
     
 
                                     }
@@ -468,7 +471,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "get()", e);
     
 
                                     }
@@ -558,7 +561,7 @@ var val = val
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.OSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setVariable()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setVariable()", e);
     
 
                                     }

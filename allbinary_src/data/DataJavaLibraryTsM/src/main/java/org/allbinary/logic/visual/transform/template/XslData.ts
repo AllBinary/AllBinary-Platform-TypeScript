@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class XslData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public NAME: string = "XSL_NAME";

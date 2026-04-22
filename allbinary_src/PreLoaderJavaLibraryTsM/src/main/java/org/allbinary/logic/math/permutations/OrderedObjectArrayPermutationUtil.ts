@@ -37,7 +37,10 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
 
-        
+
+
+
+
 
 
 
@@ -123,7 +126,7 @@ OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisit
 private constructor (){
 
             super();
-            }
+        }
 
 
     public getNext(data: any[]){
@@ -251,7 +254,7 @@ var visitor = visitor
         
 ;
     
-console.log(TOTAL_ITERATIONS_TABLE);
+console.log(this.TOTAL_ITERATIONS_TABLE);
     
 console.log(iterations);
     
@@ -271,7 +274,7 @@ visitor.visit(this);
     
 }
 
-console.log(FINISHED);
+console.log(this.FINISHED);
     
 }
 

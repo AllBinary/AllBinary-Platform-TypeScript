@@ -31,7 +31,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -67,7 +70,7 @@ var direction = direction
  constructor (name: string, otherName: string, value: number, frameFactor: number){
 
             super();
-            var name = name
+        var name = name
 var otherName = otherName
 var value = value
 var frameFactor = frameFactor
@@ -86,7 +89,7 @@ directionArray[value]= this;
  constructor (name: string, otherName: string, value: number){
 
             super();
-            var name = name
+        var name = name
 var otherName = otherName
 var value = value
 this.name= name;

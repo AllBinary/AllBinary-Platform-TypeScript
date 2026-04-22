@@ -49,7 +49,10 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,12 +66,9 @@ export class ImageMiniMapLayer extends MiniMapLayer {
     private image: Image = NullCanvas.NULL_IMAGE;
         
         
-public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition)                        
-
-                            : super(geographicMapInterface, viewPosition){
-
-            super();
-            var geographicMapInterface = geographicMapInterface
+public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
+            super(geographicMapInterface, viewPosition);
+                    var geographicMapInterface = geographicMapInterface
 var viewPosition = viewPosition
 
 
@@ -103,7 +103,7 @@ this.image= PaintableToImageUtil.getImage(allBinaryTiledLayer, aWidth, aHeight);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.drawImage(image, x, y, anchor);
+graphics.drawImage(this.image, x, y, anchor);
     
 this.paintDots(graphics);
     

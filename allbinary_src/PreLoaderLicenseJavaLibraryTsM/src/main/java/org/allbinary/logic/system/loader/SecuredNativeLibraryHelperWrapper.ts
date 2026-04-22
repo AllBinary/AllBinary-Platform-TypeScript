@@ -37,7 +37,10 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrappe
         
 
     private securedNativeLibraryInterface: SecuredNativeLibraryInterface
-public constructor (securedNativeLibraryInterface: SecuredNativeLibraryInterface)                        
-
-                            : super(securedNativeLibraryInterface!.getLibraryName()){
-
-            super();
-                //var securedNativeLibraryInterface = securedNativeLibraryInterface
+public constructor (securedNativeLibraryInterface: SecuredNativeLibraryInterface){
+            super(securedNativeLibraryInterface!.getLibraryName());
+                        //var securedNativeLibraryInterface = securedNativeLibraryInterface
 
 
                             //For kotlin this is before the body of the constructor.

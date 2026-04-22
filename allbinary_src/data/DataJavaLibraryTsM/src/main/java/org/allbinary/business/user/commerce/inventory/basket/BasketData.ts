@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -85,7 +88,7 @@ export class BasketData
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

@@ -36,7 +36,10 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,40 +76,40 @@ export class ProfilingRefreshHelper extends AndroidGameStatistics {
 private constructor (){
 
             super();
-            }
+        }
 
 
     public init(view: View){
 var view = view
 super.init(view);
     
-frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime();
+this.frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime();
     
-bestFrameProcessingTime= Integer.MAX_VALUE;
+this.bestFrameProcessingTime= Integer.MAX_VALUE;
     
-worstFrameProcessingTime= 0;
+this.worstFrameProcessingTime= 0;
     
 }
 
 
     public nextFrame(){
-frameProcessingTimeElapsed= System.currentTimeMillis() -frameProcessingTimeElapsed;
+this.frameProcessingTimeElapsed= System.currentTimeMillis() -this.frameProcessingTimeElapsed;
     
 
-                        if(firstTime != true)
+                        if(this.firstTime != true)
                         
                                     {
                                     
-                        if(frameProcessingTimeElapsed > worstFrameProcessingTime)
-                        worstFrameProcessingTime= frameProcessingTimeElapsed.toInt()
+                        if(this.frameProcessingTimeElapsed > this.worstFrameProcessingTime)
+                        this.worstFrameProcessingTime= this.frameProcessingTimeElapsed
 
-                        if(frameProcessingTimeElapsed < bestFrameProcessingTime)
-                        bestFrameProcessingTime= frameProcessingTimeElapsed.toInt()
+                        if(this.frameProcessingTimeElapsed < this.bestFrameProcessingTime)
+                        this.bestFrameProcessingTime= this.frameProcessingTimeElapsed
 
                                     }
                                 
                         else {
-                            firstTime= false;
+                            this.firstTime= false;
     
 
                         }

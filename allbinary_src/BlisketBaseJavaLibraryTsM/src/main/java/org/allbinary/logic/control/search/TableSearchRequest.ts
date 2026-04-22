@@ -43,7 +43,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class TableSearchRequest
 public constructor (keywords: string, searchParams: SearchParams, xslFile: string, contentType: string){
 
             super();
-            var keywords = keywords
+        var keywords = keywords
 var searchParams = searchParams
 var xslFile = xslFile
 var contentType = contentType

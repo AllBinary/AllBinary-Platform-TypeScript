@@ -112,7 +112,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -174,12 +177,9 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
         
         
-public constructor (ownerLayerInterface: AllBinaryLayer, artificialIntelligenceInterface: ArtificialIntelligenceInterface, gameInput: GameInput, visitor: Visitor)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var ownerLayerInterface = ownerLayerInterface
+public constructor (ownerLayerInterface: AllBinaryLayer, artificialIntelligenceInterface: ArtificialIntelligenceInterface, gameInput: GameInput, visitor: Visitor){
+            super(ownerLayerInterface, gameInput);
+                    var ownerLayerInterface = ownerLayerInterface
 var artificialIntelligenceInterface = artificialIntelligenceInterface
 var gameInput = gameInput
 var visitor = visitor
@@ -234,7 +234,7 @@ this.velocityInterface!.zero();
                                     }
                                 
 
-                        if(!dive)
+                        if(!this.dive)
                         
                                     {
                                     this.target(allBinaryLayerManager);
@@ -283,7 +283,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = list.remove(0);
+    var lastTrackingEvent: TrackingEvent = this.list.remove(0);
 
                          as TrackingEvent;
         
@@ -348,11 +348,11 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 ;
     
 
-                        if(mathUtil!.abs(yDistance) > mathUtil!.abs(xDistance))
+                        if(this.mathUtil!.abs(yDistance) > this.mathUtil!.abs(xDistance))
                         
                                     {
                                     
-                        if(yDistance > MIN_DISTANCE)
+                        if(yDistance > this.MIN_DISTANCE)
                         
                                     {
                                     this.directionOfTarget= directionFactory!.UP;
@@ -361,7 +361,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                     }
                                 
                              else 
-                        if(yDistance <  -MIN_DISTANCE)
+                        if(yDistance <  -this.MIN_DISTANCE)
                         
                                     {
                                     this.directionOfTarget= directionFactory!.DOWN;
@@ -374,7 +374,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                 
                         else {
                             
-                        if(xDistance > MIN_DISTANCE)
+                        if(xDistance > this.MIN_DISTANCE)
                         
                                     {
                                     this.directionOfTarget= directionFactory!.LEFT;
@@ -383,7 +383,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                     }
                                 
                              else 
-                        if(xDistance <  -MIN_DISTANCE)
+                        if(xDistance <  -this.MIN_DISTANCE)
                         
                                     {
                                     this.directionOfTarget= directionFactory!.RIGHT;
@@ -395,7 +395,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                         }
                             
 
-                        if(!initialDropped && this.directionOfTarget != directionFactory!.NOT_BORDERED_WITH)
+                        if(!this.initialDropped && this.directionOfTarget != directionFactory!.NOT_BORDERED_WITH)
                         
                                     {
                                     this.drop();
@@ -404,7 +404,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                     }
                                 
 
-                        if(initialDropped)
+                        if(this.initialDropped)
                         
                                     {
                                     
@@ -600,7 +600,7 @@ super.processAI(Canvas.KEY_NUM1);
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    initialDropped= true;
+                                    this.initialDropped= true;
     
 this.aiVistor!.visit(this);
     
@@ -612,7 +612,7 @@ this.aiVistor!.visit(this);
 
     isBeyondTarget(): boolean{
 
-                        if(this.directionOfTarget == directionFactory!.DOWN)
+                        if(this.directionOfTarget == this.directionFactory!.DOWN)
                         
                                     {
                                     
@@ -642,7 +642,7 @@ this.aiVistor!.visit(this);
                                     }
                                 
                              else 
-                        if(this.directionOfTarget == directionFactory!.UP)
+                        if(this.directionOfTarget == this.directionFactory!.UP)
                         
                                     {
                                     
@@ -672,7 +672,7 @@ this.aiVistor!.visit(this);
                                     }
                                 
                              else 
-                        if(this.directionOfTarget == directionFactory!.RIGHT)
+                        if(this.directionOfTarget == this.directionFactory!.RIGHT)
                         
                                     {
                                     
@@ -702,7 +702,7 @@ this.aiVistor!.visit(this);
                                     }
                                 
                              else 
-                        if(this.directionOfTarget == directionFactory!.LEFT)
+                        if(this.directionOfTarget == this.directionFactory!.LEFT)
                         
                                     {
                                     

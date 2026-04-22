@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -54,12 +57,9 @@ export class GameBeginSound extends CompositeSound {
     
 }
 
-private constructor ()                        
-
-                            : super("resource:/wav/begin.wav"){
-
-            super();
-            
+private constructor (){
+            super("resource:/wav/begin.wav");
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

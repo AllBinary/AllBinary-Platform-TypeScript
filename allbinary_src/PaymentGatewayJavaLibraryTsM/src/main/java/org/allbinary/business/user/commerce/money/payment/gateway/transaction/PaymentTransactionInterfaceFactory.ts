@@ -43,7 +43,10 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
 
-        
+
+
+
+
 
 
 
@@ -76,7 +79,7 @@ export class PaymentTransactionInterfaceFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

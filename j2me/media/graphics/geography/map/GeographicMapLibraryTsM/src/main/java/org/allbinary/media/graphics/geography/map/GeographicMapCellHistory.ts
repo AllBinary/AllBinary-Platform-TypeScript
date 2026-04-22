@@ -67,7 +67,10 @@ import { BasicDecimal } from "../../../../../../org/allbinary/logic/math/BasicDe
 
 
 
-        
+
+
+
+
 
 
 
@@ -114,7 +117,7 @@ export class GeographicMapCellHistory
 public constructor (){
 
             super();
-            this.list= new BasicArrayList();
+        this.list= new BasicArrayList();
     
 this.visitedList= new BasicArrayList();
     
@@ -202,7 +205,7 @@ this.track(geographicMapCellPosition);
                                     {
                                     this.list.add(geographicMapCellPosition);
     
-this.visitedList!.add(booleanFactory!.FALSE);
+this.visitedList!.add(this.booleanFactory!.FALSE);
     
 
                                     }
@@ -306,7 +309,7 @@ value= this.visitedList!.get(index);
                          as Boolean;
     
 
-                        if(value == booleanFactory!.FALSE)
+                        if(value == this.booleanFactory!.FALSE)
                         
                                     {
                                     
@@ -365,7 +368,7 @@ value= this.visitedList!.get(index);
                          as Boolean;
     
 
-                        if(value == booleanFactory!.FALSE)
+                        if(value == this.booleanFactory!.FALSE)
                         
                                     {
                                     
@@ -469,7 +472,7 @@ geographicMapCellPosition= pathList!.get(index);
 ;
     
 
-                        if(value == booleanFactory!.TRUE)
+                        if(value == this.booleanFactory!.TRUE)
                         
                                     {
                                     
@@ -518,7 +521,7 @@ geographicMapCellPosition= pathList!.get(index);
                          as Boolean;
     
 
-    var TRUE: Boolean = booleanFactory!.TRUE;
+    var TRUE: Boolean = this.booleanFactory!.TRUE;
         
         
 ;
@@ -625,9 +628,9 @@ this.totalVisited++;
 ;
     
 
-    var numberRequired: number = (size shl basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();
 
-                        .toInt();
+                        ;
         
         
 ;
@@ -674,7 +677,7 @@ this.totalVisited++;
 ;
     
 
-    var localFalseBoolean: Boolean = booleanFactory!.FALSE;
+    var localFalseBoolean: Boolean = this.booleanFactory!.FALSE;
         
         
 ;
@@ -721,10 +724,10 @@ this.totalVisited= 0;
 ;
     
 
-                        if(halfWidth == 0)
+                        if(this.halfWidth == 0)
                         
                                     {
-                                    this.halfWidth= (graphics.getFont()!.stringWidth(MISSED_INFO) shr 1);
+                                    this.halfWidth= (graphics.getFont()!.stringWidth(this.MISSED_INFO)>>1);
     
 
                                     }
@@ -755,7 +758,7 @@ this.animation.paint(graphics, x +halfWidth, y +(height));
     //var geographicMapInterface = geographicMapInterface
 
         try {
-            graphics.setColor(RED);
+            graphics.setColor(this.RED);
     
 
     var localVisitedList: BasicArrayList = this.visitedList;
@@ -787,7 +790,7 @@ this.animation.paint(graphics, x +halfWidth, y +(height));
         
 --index >= 0; )
         {
-geographicMapCellPosition= list.get(index);
+geographicMapCellPosition= this.list.get(index);
 
                          as GeographicMapCellPosition;
     

@@ -106,7 +106,10 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
 
-        
+
+
+
+
 
 
 
@@ -154,12 +157,9 @@ export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
     private readonly noMoneyGameNotificationEvent: GameNotificationEvent
 
     private readonly downgradeGameNotificationEvent: GameNotificationEvent
-public constructor (towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, list: BasicArrayList, playerInputId: number, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface)                        
-
-                            : super(list, playerInputId){
-
-            super();
-            var towerInfoPaintable = towerInfoPaintable
+public constructor (towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, list: BasicArrayList, playerInputId: number, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
+            super(list, playerInputId);
+                    var towerInfoPaintable = towerInfoPaintable
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var list = list
 var playerInputId = playerInputId
@@ -299,14 +299,14 @@ index >= 0; index--)
                                     {
                                     anyChanged= true;
     
-rtsPlayerLayerInterface!.add(UpgradeSound.getInstance());
+this.rtsPlayerLayerInterface!.add(UpgradeSound.getInstance());
     
 rtsLayer!.upgrade();
     
 capital.removeMoney(upgradeCost);
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
 
                         )
                         
@@ -320,10 +320,10 @@ capital.removeMoney(upgradeCost);
                                     }
                                 
                         else {
-                            rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
+                            this.rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
 
                         )
                         
@@ -394,7 +394,7 @@ rtsPlayerGameInput!.updatePaintable();
                                     {
                                     anyChanged= true;
     
-rtsPlayerLayerInterface!.add(DowngradeSound.getInstance());
+this.rtsPlayerLayerInterface!.add(DowngradeSound.getInstance());
     
 
     var downgradeCost: number = rtsLayer!.getDowngradeCost()!;
@@ -413,7 +413,7 @@ rtsLayer!.downgrade();
 capital.addMoney(downgradeCost);
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
 
                         )
                         
@@ -483,7 +483,7 @@ var layerManager = layerManager
 
         try {
             
-    var size: number = list.size()!;
+    var size: number = this.list.size()!;
         
         
 ;
@@ -505,7 +505,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = list.get(index);
+    var gameKeyEvent: GameKeyEvent = this.list.get(index);
 
                          as GameKeyEvent;
         

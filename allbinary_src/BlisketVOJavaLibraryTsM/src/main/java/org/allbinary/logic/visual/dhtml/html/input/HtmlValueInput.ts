@@ -31,7 +31,10 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,12 +50,9 @@ export class HtmlValueInput extends HtmlInput {
     private readonly VALUE: string = "VALUE";
         
         
-public constructor (before: string, type: string, name: string, value: string, after: string)                        
-
-                            : super(before, type, name, after){
-
-            super();
-            var before = before
+public constructor (before: string, type: string, name: string, value: string, after: string){
+            super(before, type, name, after);
+                    var before = before
 var type = type
 var name = name
 var value = value
@@ -69,7 +69,7 @@ var after = after
     
 this.value= stringUtil!.EMPTY_STRING;
     
-addAttribute(VALUE, value);
+addAttribute(this.VALUE, value);
     
 }
 

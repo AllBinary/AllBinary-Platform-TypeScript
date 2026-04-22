@@ -54,7 +54,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-        
+
+
+
+
 
 
 
@@ -72,12 +75,9 @@ export class TimedFireAI extends BasicAI {
         
 
     private readonly delay: number
-public constructor (delay: number, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput)                        
-
-                            : super(ownerLayerInterface, gameInput){
-
-            super();
-            var delay = delay
+public constructor (delay: number, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+            super(ownerLayerInterface, gameInput);
+                    var delay = delay
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
@@ -107,7 +107,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     {
                                     super.processAI(Canvas.KEY_NUM1);
     
-this.maxFireDelayTimeHelper!.delay= delay;
+this.maxFireDelayTimeHelper!.delay= this.delay;
     
 
                                     }

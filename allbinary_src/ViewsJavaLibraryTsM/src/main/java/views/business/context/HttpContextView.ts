@@ -49,7 +49,10 @@ import { HttpComponentView } from "../../../views/HttpComponentView.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,12 +68,9 @@ export class HttpContextView extends HttpComponentView {
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-public constructor (transformInfoInterface: TransformInfoInterface)                        
-
-                            : super(transformInfoInterface){
-
-            super();
-            var transformInfoInterface = transformInfoInterface
+public constructor (transformInfoInterface: TransformInfoInterface){
+            super(transformInfoInterface);
+                    var transformInfoInterface = transformInfoInterface
 
 
                             //For kotlin this is before the body of the constructor.
@@ -123,7 +123,7 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view", e);
     
 
                                     }

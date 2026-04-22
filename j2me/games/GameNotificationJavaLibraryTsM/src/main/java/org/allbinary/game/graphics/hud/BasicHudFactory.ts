@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class BasicHudFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly DIRECTION_EXCEPTION: string = "Only Horizontal Direction is Allowed Currently";

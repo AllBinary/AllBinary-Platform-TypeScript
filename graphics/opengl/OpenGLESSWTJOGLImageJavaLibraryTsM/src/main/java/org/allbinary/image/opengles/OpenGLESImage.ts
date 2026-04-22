@@ -73,12 +73,17 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OpenGLSurfaceChangedInterface } from "./OpenGLSurfaceChangedInterface.js";
+
 import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
@@ -123,12 +128,9 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
         
         
-public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory)                        
-
-                            : super(image.getName(), PostLoadImageProcessor.NULL_POST_LOAD_IMAGE_PROCESSOR){
-
-            super();
-                //var image = image
+public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
+            super(image.getName(), PostLoadImageProcessor.NULL_POST_LOAD_IMAGE_PROCESSOR);
+                        //var image = image
     //var bitmapFactory = bitmapFactory
     //var textureFactory = textureFactory
 
@@ -151,7 +153,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2).toInt();
+                        return (this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2);
     
 }
 
@@ -161,7 +163,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2).toInt();
+                        return (this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2);
     
 }
 
@@ -173,7 +175,7 @@ var gl = gl
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
 }
 
 

@@ -58,7 +58,10 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -79,7 +82,7 @@ export class BasicTextEmailHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.pageContext= pageContext;
     
@@ -92,7 +95,7 @@ this.hashMap= hashMap;
             
     public send(){
 
-    var adminEmailSubject: string = hashMap!.get("Subject");
+    var adminEmailSubject: string = this.hashMap!.get("Subject");
 
                          as String;
         
@@ -100,7 +103,7 @@ this.hashMap= hashMap;
 ;
     
 
-    var adminEmailTextBody: string = hashMap!.get("Body");
+    var adminEmailTextBody: string = this.hashMap!.get("Body");
 
                          as String;
         

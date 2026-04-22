@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class TextFieldItemValidator extends ValidatorBase {
 public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean){
 
             super();
-            var textFieldItem = textFieldItem
+        var textFieldItem = textFieldItem
 var min = min
 var max = max
 var allowOnEmpty = allowOnEmpty

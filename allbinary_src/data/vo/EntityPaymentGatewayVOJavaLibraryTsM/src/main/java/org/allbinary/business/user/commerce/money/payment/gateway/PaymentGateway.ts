@@ -52,12 +52,17 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
+
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGateway
@@ -135,7 +140,7 @@ export class PaymentGateway
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 this.getFormData(hashMap);
     
 }

@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,7 +54,7 @@ export class ItemInfo
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

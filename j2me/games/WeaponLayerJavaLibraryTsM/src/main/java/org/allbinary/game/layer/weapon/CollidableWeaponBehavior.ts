@@ -61,7 +61,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
 
-        
+
+
+
+
 
 
 
@@ -77,12 +80,9 @@ export class CollidableWeaponBehavior extends CollidableDestroyableDamageableBeh
     private collided: boolean= false
 
     collisionHelper: CollisionHelper
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean)                        
-
-                            : super(ownerLayer, collidable){
-
-            super();
-            var ownerLayer = ownerLayer
+public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+            super(ownerLayer, collidable);
+                    var ownerLayer = ownerLayer
 var collidable = collidable
 
 
@@ -171,7 +171,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                         
                                     {
                                     
-                        if(layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
+                        if(this.layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
                         
                                     {
                                     

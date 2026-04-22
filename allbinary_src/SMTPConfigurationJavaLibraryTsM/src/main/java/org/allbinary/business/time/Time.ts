@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,7 +46,7 @@ export class Time
 public constructor (time: string){
 
             super();
-            var time = time
+        var time = time
 this.timeLong= time as Long;
     
 }
@@ -51,7 +54,7 @@ this.timeLong= time as Long;
 public constructor (time: number){
 
             super();
-            var time = time
+        var time = time
 this.timeLong= time as Long;
     
 }

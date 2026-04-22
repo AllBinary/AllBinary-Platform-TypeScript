@@ -70,7 +70,10 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
 
-        
+
+
+
+
 
 
 
@@ -163,7 +166,7 @@ export class UpdateOrderHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 this.request= pageContext!.getRequest();
 
@@ -175,79 +178,79 @@ this.getFormData();
 
 
     getFormData(){
-this.entryId= request.getParameter(EntryData.getInstance()!.ID);
+this.entryId= this.request.getParameter(EntryData.getInstance()!.ID);
     
-this.orderId= request.getParameter(OrderData.ID);
+this.orderId= this.request.getParameter(OrderData.ID);
     
-this.userName= request.getParameter(UserData.USERNAME);
+this.userName= this.request.getParameter(UserData.USERNAME);
     
-this.storeName= request.getParameter(StoreFrontData.getInstance()!.NAME);
+this.storeName= this.request.getParameter(StoreFrontData.getInstance()!.NAME);
     
-this.shipDate= request.getParameter(OrderHistoryData.SHIPPEDDATE);
+this.shipDate= this.request.getParameter(OrderHistoryData.SHIPPEDDATE);
     
-this.orderDate= request.getParameter(OrderHistoryData.ORDERDATE);
+this.orderDate= this.request.getParameter(OrderHistoryData.ORDERDATE);
     
-this.transDate= request.getParameter(OrderHistoryData.TRANSDATE);
+this.transDate= this.request.getParameter(OrderHistoryData.TRANSDATE);
     
-this.cancelDate= request.getParameter(OrderHistoryData.CANCELDATE);
+this.cancelDate= this.request.getParameter(OrderHistoryData.CANCELDATE);
     
-this.status= request.getParameter(OrderHistoryData.STATUS);
+this.status= this.request.getParameter(OrderHistoryData.STATUS);
     
-this.paymentMethod= request.getParameter(PaymentData.METHOD);
+this.paymentMethod= this.request.getParameter(PaymentData.METHOD);
     
-this.name= request.getParameter(PaymentData.NAME);
+this.name= this.request.getParameter(PaymentData.NAME);
     
-this.type= request.getParameter(PaymentData.TYPE);
+this.type= this.request.getParameter(PaymentData.TYPE);
     
-this.expiration= request.getParameter(PaymentData.EXPIRATION);
+this.expiration= this.request.getParameter(PaymentData.EXPIRATION);
     
-this.number= request.getParameter(PaymentData.NUMBER);
+this.number= this.request.getParameter(PaymentData.NUMBER);
     
-this.encryption= request.getParameter(EntryData.getInstance()!.ENCRYPTION);
+this.encryption= this.request.getParameter(EntryData.getInstance()!.ENCRYPTION);
     
-this.billingName= request.getParameter(BillingAddressData.NAME);
+this.billingName= this.request.getParameter(BillingAddressData.NAME);
     
-this.billingStreet= request.getParameter(BillingAddressData.STREET);
+this.billingStreet= this.request.getParameter(BillingAddressData.STREET);
     
-this.billingCity= request.getParameter(BillingAddressData.CITY);
+this.billingCity= this.request.getParameter(BillingAddressData.CITY);
     
-this.billingState= request.getParameter(BillingAddressData.STATE);
+this.billingState= this.request.getParameter(BillingAddressData.STATE);
     
-this.billingCode= request.getParameter(BillingAddressData.CODE);
+this.billingCode= this.request.getParameter(BillingAddressData.CODE);
     
-this.billingCountry= request.getParameter(BillingAddressData.COUNTRY);
+this.billingCountry= this.request.getParameter(BillingAddressData.COUNTRY);
     
-this.shippingName= request.getParameter(ShippingAddressData.NAME);
+this.shippingName= this.request.getParameter(ShippingAddressData.NAME);
     
-this.shippingStreet= request.getParameter(ShippingAddressData.STREET);
+this.shippingStreet= this.request.getParameter(ShippingAddressData.STREET);
     
-this.shippingCity= request.getParameter(ShippingAddressData.CITY);
+this.shippingCity= this.request.getParameter(ShippingAddressData.CITY);
     
-this.shippingState= request.getParameter(ShippingAddressData.STATE);
+this.shippingState= this.request.getParameter(ShippingAddressData.STATE);
     
-this.shippingCode= request.getParameter(ShippingAddressData.CODE);
+this.shippingCode= this.request.getParameter(ShippingAddressData.CODE);
     
-this.shippingCountry= request.getParameter(ShippingAddressData.COUNTRY);
+this.shippingCountry= this.request.getParameter(ShippingAddressData.COUNTRY);
     
-this.shippingMethodName= request.getParameter(ShippingMethodData.NAME);
+this.shippingMethodName= this.request.getParameter(ShippingMethodData.NAME);
     
-this.subTotal= request.getParameter(OrderHistoryData.SUBTOTAL);
+this.subTotal= this.request.getParameter(OrderHistoryData.SUBTOTAL);
     
-this.shippingCost= request.getParameter(OrderHistoryData.SHIPPINGCOST);
+this.shippingCost= this.request.getParameter(OrderHistoryData.SHIPPINGCOST);
     
-this.tax= request.getParameter(OrderHistoryData.TAX);
+this.tax= this.request.getParameter(OrderHistoryData.TAX);
     
-this.total= request.getParameter(OrderHistoryData.TOTAL);
+this.total= this.request.getParameter(OrderHistoryData.TOTAL);
     
-this.special= request.getParameter(EntryData.getInstance()!.SPECIAL);
+this.special= this.request.getParameter(EntryData.getInstance()!.SPECIAL);
     
-this.userComment= request.getParameter(OrderData.CUSTOMERCOMMENT);
+this.userComment= this.request.getParameter(OrderData.CUSTOMERCOMMENT);
     
-this.userCancelComment= request.getParameter(OrderData.CUSTOMERCANCELCOMMENT);
+this.userCancelComment= this.request.getParameter(OrderData.CUSTOMERCANCELCOMMENT);
     
-this.storeComment= request.getParameter(OrderData.STORECOMMENT);
+this.storeComment= this.request.getParameter(OrderData.STORECOMMENT);
     
-this.storeCancelComment= request.getParameter(OrderData.STORECANCELCOMMENT);
+this.storeCancelComment= this.request.getParameter(OrderData.STORECANCELCOMMENT);
     
 }
 

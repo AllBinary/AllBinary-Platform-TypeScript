@@ -116,7 +116,10 @@ import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/me
 
 
 
-        
+
+
+
+
 
 
 
@@ -138,12 +141,9 @@ export class UnitRTSFormInput extends RTSFormInput {
     readonly noMoneyGameNotificationEvent: GameNotificationEvent
 
     readonly newUnitGameNotificationEvent: GameNotificationEvent
-public constructor (groupInterface: Group[])                        
-
-                            : super(groupInterface){
-
-            super();
-                //var groupInterface = groupInterface
+public constructor (groupInterface: Group[]){
+            super(groupInterface);
+                        //var groupInterface = groupInterface
 
 
                             //For kotlin this is before the body of the constructor.

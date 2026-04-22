@@ -31,7 +31,10 @@ import { StateControlledInterface } from "../../../../org/allbinary/graphics/dis
 
 
 
-        
+
+
+
+
 
 
 
@@ -44,7 +47,7 @@ export class StatePaintable extends Paintable implements StateControlledInterfac
 public constructor (){
 
             super();
-            }
+        }
 
 
     public setState(state: number){

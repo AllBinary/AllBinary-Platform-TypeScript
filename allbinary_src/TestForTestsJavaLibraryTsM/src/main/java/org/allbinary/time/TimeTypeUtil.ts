@@ -20,7 +20,10 @@ import { TimeZone } from "../../../java/util/TimeZone.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,10 +97,10 @@ export class TimeTypeUtil
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isNight()
                         ?       
-                                NIGHT
+                                this.NIGHT
                                 :
 
-                            DAY;
+                            this.DAY;
 
     ;
     
@@ -150,10 +153,10 @@ var timeInMillis = timeInMillis
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return isNight(timeInMillis)
                         ?       
-                                NIGHT
+                                this.NIGHT
                                 :
 
-                            DAY;
+                            this.DAY;
 
     ;
     

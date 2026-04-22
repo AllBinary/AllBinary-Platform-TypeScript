@@ -67,7 +67,10 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
 
 
-        
+
+
+
+
 
 
 
@@ -138,7 +141,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
 
                                     }
                                 
-geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerrainGeographicMapCellPosition);
+this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, nextTerrainGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;

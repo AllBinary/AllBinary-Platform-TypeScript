@@ -40,7 +40,10 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,16 +53,13 @@ import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.j
 
 export class BasicGravityConstantVelocityMovement extends BasicConstantVelocityMovement {
         
-public constructor (speedBasicDecimal: BasicDecimal)                        
+public constructor (speedBasicDecimal: BasicDecimal){
+            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
 
-                            : super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
+                        , speedBasicDecimal!.getUnscaled();
 
-                        .toInt(), speedBasicDecimal!.getUnscaled();
-
-                        .toInt())){
-
-            super();
-            var speedBasicDecimal = speedBasicDecimal
+                        ));
+                    var speedBasicDecimal = speedBasicDecimal
 
 
                             //For kotlin this is before the body of the constructor.
@@ -77,7 +77,7 @@ public constructor (speedBasicDecimal: BasicDecimal)
 var layer = layer
 super.process(layer);
     
-gravityUtil!.process(this.getVelocityProperties());
+this.gravityUtil!.process(this.getVelocityProperties());
     
 }
 

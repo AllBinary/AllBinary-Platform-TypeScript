@@ -31,7 +31,10 @@ import { Vector } from "../../../../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -63,7 +66,7 @@ export class BasicPaymentTypeUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private paymentTypeVector: Vector = new Vector();
@@ -82,7 +85,7 @@ this.paymentTypeVector!.add(paymentType);
     public get(paymentTypeString: string): BasicPaymentType{
 var paymentTypeString = paymentTypeString
 
-    var size: number = paymentTypeVector!.length!;
+    var size: number = this.paymentTypeVector!.length!;
         
         
 ;
@@ -98,7 +101,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(i);
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i);
 
                          as BasicPaymentType;
         
@@ -149,7 +152,7 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 ;
     
 
-    var size: number = paymentTypeVector!.length!;
+    var size: number = this.paymentTypeVector!.length!;
         
         
 ;
@@ -165,7 +168,7 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(i);
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i);
 
                          as BasicPaymentType;
         

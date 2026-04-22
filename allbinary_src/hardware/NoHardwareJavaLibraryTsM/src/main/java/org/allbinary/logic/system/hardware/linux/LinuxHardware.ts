@@ -76,7 +76,10 @@ import { VideoInterface } from "../../../../../../org/allbinary/logic/system/har
 
 
 
-        
+
+
+
+
 
 
 
@@ -89,7 +92,7 @@ export class LinuxHardware
 public constructor (){
 
             super();
-            }
+        }
 
 
     public getMultimedia(index: number): MediaInterface{

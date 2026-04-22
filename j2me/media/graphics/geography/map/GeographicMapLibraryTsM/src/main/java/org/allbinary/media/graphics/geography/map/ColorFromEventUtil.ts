@@ -37,7 +37,10 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class ColorFromEventUtil
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
     //var gameCanvasInterface = gameCanvasInterface
 
-    var color: BasicColor = YELLOW;
+    var color: BasicColor = this.YELLOW;
         
         
 ;

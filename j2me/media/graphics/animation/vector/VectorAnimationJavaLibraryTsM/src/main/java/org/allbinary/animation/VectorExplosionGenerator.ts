@@ -43,7 +43,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -86,7 +89,7 @@ export class VectorExplosionGenerator
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)
@@ -159,7 +162,7 @@ var type = type
 ;
     
 
-    var newPoints: number[][][] = vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, tempBasicArrayList!.size())!;
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, tempBasicArrayList!.size())!;
         
         
 ;
@@ -299,7 +302,7 @@ index++;
 sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howMuch);
     
 
-                        if(type == ROTATION)
+                        if(type == this.ROTATION)
                         
                                     {
                                     sectionBasicArrayList= randomRotationFactory!.getInstance(sectionBasicArrayList, howMuch);

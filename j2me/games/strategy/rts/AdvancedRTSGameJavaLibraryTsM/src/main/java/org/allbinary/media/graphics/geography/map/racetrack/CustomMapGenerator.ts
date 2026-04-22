@@ -49,7 +49,10 @@ import { DropCellPositionHistory } from "../../../../../../../org/allbinary/medi
 
 
 
-        
+
+
+
+
 
 
 
@@ -70,7 +73,7 @@ export class CustomMapGenerator extends CustomMapGeneratorBase {
 public constructor (raceTrackGeographicMap: RaceTrackGeographicMap){
 
             super();
-                //var raceTrackGeographicMap = raceTrackGeographicMap
+            //var raceTrackGeographicMap = raceTrackGeographicMap
 this.raceTrackGeographicMap= raceTrackGeographicMap;
     
 this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMapCellTypeFactory();
@@ -108,7 +111,7 @@ this.customMapArray= new Array(mapArray!.length) [size2];
             
     public copyMapIntoCustomMap(){
 
-    var mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
+    var mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
         
         
 ;
@@ -159,7 +162,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
     //var row = row
     //var currentType = currentType
 
-    var emptyType: number = geographicMapCellTypeFactory!.getEmptyType()!;
+    var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;
         
         
 ;

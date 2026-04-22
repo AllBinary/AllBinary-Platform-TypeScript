@@ -34,7 +34,10 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
 
-        
+
+
+
+
 
 
 
@@ -47,7 +50,7 @@ export class AllBinaryEventCircularPool extends BaseCircularPool {
 public constructor (max: number){
 
             super();
-            var max = max
+        var max = max
 this.OBJECT_ARRAY= new Array(max);
     
 this.circularIndexUtil= CircularIndexUtil.getInstance(max);

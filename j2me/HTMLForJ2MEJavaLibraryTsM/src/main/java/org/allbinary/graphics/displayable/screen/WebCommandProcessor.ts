@@ -49,7 +49,10 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -94,7 +97,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL(list.remove(0);
+            PlayN.openURL(this.list.remove(0);
 
                          as String);
     

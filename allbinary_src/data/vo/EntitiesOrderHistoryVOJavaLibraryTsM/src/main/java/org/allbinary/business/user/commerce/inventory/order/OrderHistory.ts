@@ -86,13 +86,18 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { Order } from "./Order.js";
+
+import { OrderHistoryInterface } from "./OrderHistoryInterface.js";
 
 import { OrderData } from "./OrderData.js";
 
@@ -126,24 +131,18 @@ export class OrderHistory extends Order implements OrderHistoryInterface {
     private taxes: Money
 
     private total: Money
-public constructor (basketInterface: BasketInterface)                        
-
-                            : super(basketInterface){
-
-            super();
-            var basketInterface = basketInterface
+public constructor (basketInterface: BasketInterface){
+            super(basketInterface);
+                    var basketInterface = basketInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
 }
 
-public constructor (basketInterface: BasketInterface, orderHistory: OrderHistory)                        
-
-                            : super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod()){
-
-            super();
-            var basketInterface = basketInterface
+public constructor (basketInterface: BasketInterface, orderHistory: OrderHistory){
+            super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod());
+                    var basketInterface = basketInterface
 var orderHistory = orderHistory
 
 
@@ -193,9 +192,8 @@ super.setStoreCancelComments(orderHistory!.getStoreCancelComments();
     
 }
 
-public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>)                        
-
-                            : super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME);
+public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>){
+            super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME);
 
                          as String, basketInterface, orderHistoryHashMap!.get(OrderData.ID);
 
@@ -205,10 +203,8 @@ public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashM
 
                          as String, orderHistoryHashMap!.get(PaymentData.METHOD);
 
-                         as String){
-
-            super();
-            var basketInterface = basketInterface
+                         as String);
+                    var basketInterface = basketInterface
 var orderHistoryHashMap = orderHistoryHashMap
 
 

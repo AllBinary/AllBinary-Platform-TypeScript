@@ -90,13 +90,20 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { JPanel } from "./JPanel.js";
+
+import { WorkAreaJPanelInterface } from "./WorkAreaJPanelInterface.js";
+
+import { Runnable } from "./Runnable.js";
 
 import { Dimension } from "./Dimension.js";
 
@@ -141,7 +148,7 @@ export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, M
 public constructor (name: string, dimension: Dimension, x: number, y: number){
 
             super();
-            var name = name
+        var name = name
 var dimension = dimension
 var x = x
 var y = y
@@ -184,7 +191,7 @@ this.canvasHolderJPanel!.add(canvasJPanel as Component);
 public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
 
             super();
-            var workAreaDom = workAreaDom
+        var workAreaDom = workAreaDom
 var dimension = dimension
 
         try {
@@ -328,9 +335,9 @@ gridBagConstraints!.weightx= 1;
     
 gridBagConstraints!.weighty= 1;
     
-gridBagLayout!.setConstraints(canvasHolderJPanel, gridBagConstraints);
+gridBagLayout!.setConstraints(this.canvasHolderJPanel, gridBagConstraints);
     
-this.innerJPanel!.add(canvasHolderJPanel);
+this.innerJPanel!.add(this.canvasHolderJPanel);
     
 gridBagConstraints= new GridBagConstraints();
     
@@ -346,11 +353,11 @@ gridBagConstraints!.weightx= .1;
     
 gridBagConstraints!.weighty= .1;
     
-propertiesJPanel= new PropertiesJPanel();
+this.propertiesJPanel= new PropertiesJPanel();
     
-gridBagLayout!.setConstraints(propertiesJPanel, gridBagConstraints);
+gridBagLayout!.setConstraints(this.propertiesJPanel, gridBagConstraints);
     
-this.innerJPanel!.add(propertiesJPanel);
+this.innerJPanel!.add(this.propertiesJPanel);
     
 MyCanvasEventService.addListener(this as MyCanvasEventListener);
     
@@ -403,14 +410,14 @@ canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), new Integer(index));
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public play(){
-isPlaying= true;
+this.isPlaying= true;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-isPlaying= false;
+this.isPlaying= false;
     
 }
 
@@ -496,7 +503,7 @@ super.setVisible(true);
     public changeZoom(factor: number){
 var factor = factor
 
-    var size: number = canvasJPanelList!.size()!;
+    var size: number = this.canvasJPanelList!.size()!;
         
         
 ;
@@ -512,7 +519,7 @@ var factor = factor
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index);
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
 
                          as CanvasJPanel;
         
@@ -600,7 +607,7 @@ initDuplicate(canvasJPanel!.duplicate());
 var increments = increments
 var totalAngle = totalAngle
 
-    var incrementAngle: number = (totalAngle /increments).toInt();
+    var incrementAngle: number = (totalAngle /increments);
         
         
 ;
@@ -818,7 +825,7 @@ nameNode!.appendChild(nameTextNode);
 ;
     
 
-    var size: number = canvasJPanelList!.size()!;
+    var size: number = this.canvasJPanelList!.size()!;
         
         
 ;
@@ -834,7 +841,7 @@ nameNode!.appendChild(nameTextNode);
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = canvasJPanelList!.get(index);
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
 
                          as CanvasJPanel;
         
@@ -861,7 +868,7 @@ document.appendChild(workAreaNode);
 
 
     initComponents(){
-innerJPanel= new javax.swing.JPanel();
+this.innerJPanel= new javax.swing.JPanel();
     
 setLayout(new java.awt.GridLayout(1, 1));
     
@@ -889,7 +896,7 @@ innerJPanelKeyReleased(evt);
                                 }
                             );
     
-add(innerJPanel);
+add(this.innerJPanel);
     
 }
 

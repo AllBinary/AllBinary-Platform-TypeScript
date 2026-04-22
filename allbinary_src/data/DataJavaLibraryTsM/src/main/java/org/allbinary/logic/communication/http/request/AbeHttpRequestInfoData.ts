@@ -28,7 +28,10 @@
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class AbeHttpRequestInfoData
 private constructor (){
 
             super();
-            }
+        }
 
 
     public readonly HTTP_USER_AGENT: string = "HTTP_USER_AGENT";

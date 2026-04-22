@@ -31,7 +31,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
 
-        
+
+
+
+
 
 
 
@@ -214,7 +217,7 @@ index < size; index++)
 public constructor (){
 
             super();
-            }
+        }
 
 
     public isValid(): boolean{

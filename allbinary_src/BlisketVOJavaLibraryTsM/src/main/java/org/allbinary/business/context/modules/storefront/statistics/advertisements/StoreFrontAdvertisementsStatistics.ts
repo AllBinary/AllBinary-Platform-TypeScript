@@ -37,12 +37,17 @@ import { StoreFrontInterface } from "../../../../../../../../org/allbinary/busin
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontAdvertisementsStatisticsInterface } from "./StoreFrontAdvertisementsStatisticsInterface.js";
+
 export class StoreFrontAdvertisementsStatistics
             extends Object
          implements StoreFrontAdvertisementsStatisticsInterface {
@@ -50,7 +55,7 @@ export class StoreFrontAdvertisementsStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-            var storeFrontInterface = storeFrontInterface
+        var storeFrontInterface = storeFrontInterface
 }
 
 

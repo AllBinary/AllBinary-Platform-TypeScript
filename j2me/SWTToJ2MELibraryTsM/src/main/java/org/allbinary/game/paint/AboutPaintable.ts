@@ -49,7 +49,10 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -87,7 +90,7 @@ var developers = developers
 private constructor (info: string[], developers: string[]){
 
             super();
-            var info = info
+        var info = info
 var developers = developers
 this.info= info;
     
@@ -137,7 +140,7 @@ var graphics = graphics
 ;
     
 
-    var beginWidth: number = (font.stringWidth(this.ABOUT) shr 1);
+    var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);
         
         
 ;
@@ -161,7 +164,7 @@ graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
         
 index < infoSize; index++)
         {
-beginWidth= (font.stringWidth(this.info[index]!) shr 1);
+beginWidth= (font.stringWidth(this.info[index]!)>>1);
     
 graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor);
     
@@ -184,7 +187,7 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
         
 index < size; index++)
         {
-beginWidth= (font.stringWidth(this.developers[index]!) shr 1);
+beginWidth= (font.stringWidth(this.developers[index]!)>>1);
     
 graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor);
     

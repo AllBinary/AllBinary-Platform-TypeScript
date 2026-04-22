@@ -37,7 +37,10 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
 
 
-        
+
+
+
+
 
 
 
@@ -51,12 +54,9 @@ export class ColorFillPaintable extends ColorFillBasePaintable {
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-public constructor (basicColor: BasicColor)                        
-
-                            : super(basicColor){
-
-            super();
-            var basicColor = basicColor
+public constructor (basicColor: BasicColor){
+            super(basicColor);
+                    var basicColor = basicColor
 
 
                             //For kotlin this is before the body of the constructor.

@@ -37,7 +37,10 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -103,7 +106,7 @@ stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE);
 public constructor (column: number, row: number, columns: number, rows: number){
 
             super();
-            var column = column
+        var column = column
 var row = row
 var columns = columns
 var rows = rows

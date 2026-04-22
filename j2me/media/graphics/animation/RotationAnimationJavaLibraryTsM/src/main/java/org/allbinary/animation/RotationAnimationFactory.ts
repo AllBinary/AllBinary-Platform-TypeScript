@@ -40,12 +40,19 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
+
+import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 import { Animation } from "./Animation.js";
@@ -61,16 +68,16 @@ export class RotationAnimationFactory
 public constructor (){
 
             super();
-            this.totalAngle= AngleFactory.getInstance()!.TOTAL_ANGLE;
+        this.totalAngle= AngleFactory.getInstance()!.TOTAL_ANGLE;
     
-this.angleIncrement= (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity()).toShort();
+this.angleIncrement= (this.totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());
     
 }
 
 public constructor (totalAngle: number, angleIncrement: number){
 
             super();
-            var totalAngle = totalAngle
+        var totalAngle = totalAngle
 var angleIncrement = angleIncrement
 this.totalAngle= totalAngle;
     

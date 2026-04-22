@@ -115,12 +115,17 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoInterface } from "./TransformInfoInterface.js";
+
 import { TransformInfoData } from "./TransformInfoData.js";
 
 export class TransformInfo
@@ -168,12 +173,12 @@ export class TransformInfo
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (name: string){
 
             super();
-            var name = name
+        var name = name
 this.setName(name);
     
 }
@@ -181,7 +186,7 @@ this.setName(name);
 public constructor (name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
 
             super();
-            var name = name
+        var name = name
 var objectFileName = objectFileName
 var objectConfigFileName = objectConfigFileName
 var templateFileName = templateFileName

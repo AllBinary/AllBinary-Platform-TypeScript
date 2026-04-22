@@ -34,7 +34,10 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -159,7 +162,7 @@ point= list.objectArray[index]! as GPoint;
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

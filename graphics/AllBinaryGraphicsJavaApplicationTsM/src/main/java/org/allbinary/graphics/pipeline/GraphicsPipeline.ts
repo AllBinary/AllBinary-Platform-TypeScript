@@ -37,7 +37,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -49,12 +52,9 @@ import { Math } from "./Math.js";
 
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         
-public constructor (points: BasicArrayList)                        
-
-                            : super(points){
-
-            super();
-            var points = points
+public constructor (points: BasicArrayList){
+            super(points);
+                    var points = points
 
 
                             //For kotlin this is before the body of the constructor.
@@ -109,7 +109,7 @@ index < size; index++)
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance((secondX.toInt()), (secondY.toInt()))!;
+    var point: GPoint = PointFactory.getInstance()!.getInstance((secondX), (secondY))!;
         
         
 ;

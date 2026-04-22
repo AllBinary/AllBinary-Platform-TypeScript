@@ -43,28 +43,30 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LogTableEntityInterface } from "./LogTableEntityInterface.js";
+
 export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {
         
 
     private readonly tableName: string = "log";
         
         
-public constructor ()                        
-
-                            : super(new LogDbInitInfo()){
-
-            super();
-            
+public constructor (){
+            super(new LogDbInitInfo());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setTableName(tableName);
+this.setTableName(this.tableName);
     
 }
 

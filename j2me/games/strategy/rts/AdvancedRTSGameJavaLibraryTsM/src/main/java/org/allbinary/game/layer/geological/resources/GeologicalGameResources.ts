@@ -40,7 +40,10 @@ import { GraphicsFeatureFactory } from "../../../../../../org/allbinary/game/con
 
 
 
-        
+
+
+
+
 
 
 
@@ -65,7 +68,7 @@ export class GeologicalGameResources extends BasicGameResources {
 private constructor (){
 
             super();
-            
+        
     var ROOT: string = "/resource";
         
         

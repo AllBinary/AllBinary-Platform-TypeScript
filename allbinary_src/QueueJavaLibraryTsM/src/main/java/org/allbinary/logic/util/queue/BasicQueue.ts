@@ -31,7 +31,10 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -48,7 +51,7 @@ export class BasicQueue
 protected constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

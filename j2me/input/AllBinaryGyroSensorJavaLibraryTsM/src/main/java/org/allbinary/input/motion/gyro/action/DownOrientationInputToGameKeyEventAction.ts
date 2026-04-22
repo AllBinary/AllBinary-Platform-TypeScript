@@ -37,7 +37,10 @@ import { OrientationMotionGestureFactory } from "../../../../../../org/allbinary
 
 
 
-        
+
+
+
+
 
 
 
@@ -59,12 +62,9 @@ export class DownOrientationInputToGameKeyEventAction extends GameKeyCompleteMot
     
 }
 
-private constructor ()                        
-
-                            : super("Down Action", OrientationMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()){
-
-            super();
-            
+private constructor (){
+            super("Down Action", OrientationMotionGestureFactory.getInstance()!.DOWN, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -43,7 +43,10 @@ import { StoreWorkFlowTag } from "../../../../tags/StoreWorkFlowTag.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -58,7 +61,7 @@ export class BasicWorkFlowTag extends StoreWorkFlowTag {
 public constructor (){
 
             super();
-            
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {

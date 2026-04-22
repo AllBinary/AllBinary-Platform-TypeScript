@@ -49,7 +49,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -90,7 +93,7 @@ export class ImageCopyUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
     private anchor: number = Anchor.TOP_LEFT;
@@ -129,12 +132,12 @@ private constructor (){
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -146,7 +149,7 @@ private constructor (){
                                     }
                                 
 
-    var image: Image = imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
+    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
         
         
 ;
@@ -184,12 +187,12 @@ private constructor (){
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!features.isFeature(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
 
                         )
                         
                                     {
-                                    this.logUtil!.put(NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
     
 
 
@@ -201,13 +204,13 @@ private constructor (){
                                     }
                                 
 
-    var newWidth: number = (originalImage!.getWidth() *canvasScale).toInt();
+    var newWidth: number = (originalImage!.getWidth() *canvasScale);
         
         
 ;
     
 
-    var newHeight: number = (originalImage!.getHeight() *canvasScale).toInt();
+    var newHeight: number = (originalImage!.getHeight() *canvasScale);
         
         
 ;
@@ -238,7 +241,7 @@ private constructor (){
                                     }
                                 
 
-    var image: Image = imageCreationUtil!.getInstance(newWidth, newHeight)!;
+    var image: Image = this.imageCreationUtil!.getInstance(newWidth, newHeight)!;
         
         
 ;

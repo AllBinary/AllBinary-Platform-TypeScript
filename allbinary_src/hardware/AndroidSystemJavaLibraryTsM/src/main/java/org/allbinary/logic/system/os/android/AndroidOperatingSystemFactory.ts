@@ -48,7 +48,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
 
-        
+
+
+
+
 
 
 
@@ -82,7 +85,7 @@ export class AndroidOperatingSystemFactory
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

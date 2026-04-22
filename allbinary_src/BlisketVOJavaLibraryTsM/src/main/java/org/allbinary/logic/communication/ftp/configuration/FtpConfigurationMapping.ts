@@ -37,7 +37,10 @@ import { TableMappingInterface } from "../../../../../../org/allbinary/data/tabl
 
 
 
-        
+
+
+
+
 
 
 
@@ -56,7 +59,7 @@ export class FtpConfigurationMapping
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
-            var ftpConfigurationInterface = ftpConfigurationInterface
+        var ftpConfigurationInterface = ftpConfigurationInterface
 this.ftpConfigurationInterface= ftpConfigurationInterface;
     
 }

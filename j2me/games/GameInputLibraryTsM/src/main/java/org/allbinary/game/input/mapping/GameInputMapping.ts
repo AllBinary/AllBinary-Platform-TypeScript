@@ -34,7 +34,10 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-        
+
+
+
+
 
 
 
@@ -55,7 +58,7 @@ export class GameInputMapping
 public constructor (name: string, gameKey: GameKey){
 
             super();
-            var name = name
+        var name = name
 var gameKey = gameKey
 this.setName(name);
     

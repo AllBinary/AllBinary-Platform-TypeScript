@@ -67,7 +67,10 @@ import { AbeClientInformationInterface } from "../../../../../../../org/allbinar
 
 
 
-        
+
+
+
+
 
 
 
@@ -83,12 +86,9 @@ export class XmlRpcRemoteLicenseRegistrationClient extends XmlRpcAbeClient {
     private readonly PAGE: string = "licenseregistrationserverssl.php";
         
         
-public constructor (clientInfo: AbeClientInformationInterface)                        
-
-                            : super(clientInfo, "LicenseRegistrationServer.process"){
-
-            super();
-            var clientInfo = clientInfo
+public constructor (clientInfo: AbeClientInformationInterface){
+            super(clientInfo, "LicenseRegistrationServer.process");
+                    var clientInfo = clientInfo
 
 
                             //For kotlin this is before the body of the constructor.
@@ -145,7 +145,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toStri
         
 ;
     
-serverUrl= serverUrl!.substring(0, index +1) +PAGE;
+serverUrl= serverUrl!.substring(0, index +1) +this.PAGE;
     
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);

@@ -43,7 +43,10 @@ import { CommonPhoneStrings } from "../../../../../../org/allbinary/string/Commo
 
 
 
-        
+
+
+
+
 
 
 
@@ -62,7 +65,7 @@ export class Money
 public constructor (money: Money){
 
             super();
-            var money = money
+        var money = money
 this.units= money.getUnits() as Long;
     
 }
@@ -70,14 +73,14 @@ this.units= money.getUnits() as Long;
 public constructor (){
 
             super();
-            this.units= 0 as Long;
+        this.units= 0 as Long;
     
 }
 
 public constructor (usDollarStr: string){
 
             super();
-            var usDollarStr = usDollarStr
+        var usDollarStr = usDollarStr
 
                         if(usDollarStr != 
                                     null
@@ -94,7 +97,7 @@ public constructor (usDollarStr: string){
 public constructor (units: number){
 
             super();
-            var units = units
+        var units = units
 this.units= units as Long;
     
 }
@@ -174,17 +177,17 @@ var currency = currency
 ;
     
 
-                        if(currency.compareTo(DEFAULT_CURRENCY) == 0)
+                        if(currency.compareTo(this.DEFAULT_CURRENCY) == 0)
                         
                                     {
                                     
-    var dollar: number = units.longValue() /100;
+    var dollar: number = this.units.longValue() /100;
         
         
 ;
     
 
-    var cents: number = units.longValue() -(dollar *100);
+    var cents: number = this.units.longValue() -(dollar *100);
         
         
 ;

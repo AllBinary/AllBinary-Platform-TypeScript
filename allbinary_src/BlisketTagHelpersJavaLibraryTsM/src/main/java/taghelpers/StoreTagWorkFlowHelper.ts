@@ -54,7 +54,10 @@ import { ServiceClientInformationInterfaceFactory } from "../org/allbinary/logic
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class StoreTagWorkFlowHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-            var hashMap = hashMap
+        var hashMap = hashMap
 var pageContext = pageContext
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))

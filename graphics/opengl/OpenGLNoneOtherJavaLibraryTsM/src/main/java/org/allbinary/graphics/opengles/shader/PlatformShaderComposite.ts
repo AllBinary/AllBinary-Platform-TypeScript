@@ -34,7 +34,10 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
 
 
 
-        
+
+
+
+
 
 
 
@@ -50,12 +53,9 @@ import { ModelViewProjection } from "./ModelViewProjection.js";
 
 export class PlatformShaderComposite extends ShaderComposite {
         
-public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor)                        
-
-                            : super(requiresOpenGLVersion, shaderArray, compositeShaderUpdater, shaderInitializer, modelViewProjection, colorOpenGLProcessor, vertexOpenGLProcessor, NullOpenGLProcessorFactory.getInstance()){
-
-            super();
-                //var requiresOpenGLVersion = requiresOpenGLVersion
+public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor){
+            super(requiresOpenGLVersion, shaderArray, compositeShaderUpdater, shaderInitializer, modelViewProjection, colorOpenGLProcessor, vertexOpenGLProcessor, NullOpenGLProcessorFactory.getInstance());
+                        //var requiresOpenGLVersion = requiresOpenGLVersion
     //var shaderArray = shaderArray
     //var compositeShaderUpdater = compositeShaderUpdater
     //var shaderInitializer = shaderInitializer

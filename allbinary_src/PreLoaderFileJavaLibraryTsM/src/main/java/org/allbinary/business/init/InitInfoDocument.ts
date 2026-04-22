@@ -31,7 +31,10 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -46,7 +49,7 @@ export class InitInfoDocument
 public constructor (){
 
             super();
-            }
+        }
 
 
 }

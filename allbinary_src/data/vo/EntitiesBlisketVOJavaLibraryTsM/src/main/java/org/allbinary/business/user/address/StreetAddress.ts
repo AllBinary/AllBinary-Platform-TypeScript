@@ -64,7 +64,10 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -101,12 +104,12 @@ export class StreetAddress
 public constructor (){
 
             super();
-            }
+        }
 
 public constructor (node: Node){
 
             super();
-            var node = node
+        var node = node
 
     var nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;
         
@@ -162,7 +165,7 @@ this.log();
 public constructor (streetAddress: StreetAddress){
 
             super();
-            var streetAddress = streetAddress
+        var streetAddress = streetAddress
 this.id= streetAddress!.getId();
     
 this.name= streetAddress!.getName();
@@ -186,7 +189,7 @@ this.log();
 public constructor (request: HttpServletRequest){
 
             super();
-            var request = request
+        var request = request
 this.setId(request.getParameter(StreetAddressData.ID));
     
 this.setName(request.getParameter(StreetAddressData.NAME));
@@ -208,7 +211,7 @@ this.log();
 public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
 
             super();
-            var name = name
+        var name = name
 var street = street
 var city = city
 var state = state
@@ -233,7 +236,7 @@ this.log();
 public constructor (address: HashMap<any, any>){
 
             super();
-            var address = address
+        var address = address
 this.id= address.get(StreetAddressData.ID);
 
                          as String;

@@ -81,7 +81,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
 
-        
+
+
+
+
 
 
 
@@ -115,12 +118,9 @@ export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProces
     private imageProcessorInput: ImageProcessorInput
 
     private result: BufferedImage
-public constructor (imageProcessorInput: ImageProcessorInput)                        
-
-                            : super(){
-
+public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                //var imageProcessorInput = imageProcessorInput
+                        //var imageProcessorInput = imageProcessorInput
 
 
                             //For kotlin this is before the body of the constructor.
@@ -214,7 +214,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
+this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
 jPanel1= new object: javax.swing.JPanel()
                                 {
@@ -240,31 +240,31 @@ var graphics = graphics
                                 }
                             ;
     
-generateJButton= new javax.swing.JButton();
+this.generateJButton= new javax.swing.JButton();
     
-jLabel4= new javax.swing.JLabel();
+this.jLabel4= new javax.swing.JLabel();
     
-jPanel2= new javax.swing.JPanel();
+this.jPanel2= new javax.swing.JPanel();
     
-jLabel5= new javax.swing.JLabel();
+this.jLabel5= new javax.swing.JLabel();
     
-widthReductionTextField= new javax.swing.JTextField();
+this.widthReductionTextField= new javax.swing.JTextField();
     
-jLabel6= new javax.swing.JLabel();
+this.jLabel6= new javax.swing.JLabel();
     
-heightReductionTextField= new javax.swing.JTextField();
+this.heightReductionTextField= new javax.swing.JTextField();
     
-widthReductionTextField1= new javax.swing.JTextField();
+this.widthReductionTextField1= new javax.swing.JTextField();
     
-jLabel7= new javax.swing.JLabel();
+this.jLabel7= new javax.swing.JLabel();
     
-jLabel8= new javax.swing.JLabel();
+this.jLabel8= new javax.swing.JLabel();
     
-heightReductionTextField1= new javax.swing.JTextField();
+this.heightReductionTextField1= new javax.swing.JTextField();
     
-writeOverOriginalJCheckBox!.setSelected(true);
+this.writeOverOriginalJCheckBox!.setSelected(true);
     
-writeOverOriginalJCheckBox!.setText("Write Over Original");
+this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 writeOverOriginalJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -279,18 +279,18 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
                             );
     
 
-    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(jPanel1);
+    var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
         
         
 ;
     
-jPanel1!.setLayout(jPanel1Layout);
+this.jPanel1!.setLayout(jPanel1Layout);
     
 jPanel1Layout!.setHorizontalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 0, Short.MAX_VALUE));
     
 jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 196, Short.MAX_VALUE));
     
-generateJButton!.setText("Generate");
+this.generateJButton!.setText("Generate");
     
 generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -304,11 +304,11 @@ generateJButtonActionPerformed(evt);
                                 }
                             );
     
-jLabel4!.setText("Results:");
+this.jLabel4!.setText("Results:");
     
-jLabel5!.setText("Right:");
+this.jLabel5!.setText("Right:");
     
-widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 widthReductionTextField!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -322,11 +322,11 @@ widthReductionTextFieldActionPerformed(evt);
                                 }
                             );
     
-jLabel6!.setText("Bottom");
+this.jLabel6!.setText("Bottom");
     
-heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+this.widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 widthReductionTextField1!.addActionListener(new object: java.awt.event.ActionListener()
                                 {
@@ -340,19 +340,19 @@ widthReductionTextField1ActionPerformed(evt);
                                 }
                             );
     
-jLabel7!.setText("Top");
+this.jLabel7!.setText("Top");
     
-jLabel8!.setText("Left:");
+this.jLabel8!.setText("Left:");
     
-heightReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
+this.heightReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
-    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(jPanel2);
+    var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);
         
         
 ;
     
-jPanel2!.setLayout(jPanel2Layout);
+this.jPanel2!.setLayout(jPanel2Layout);
     
 jPanel2Layout!.setHorizontalGroup(jPanel2Layout!.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGroup(jPanel2Layout!.createSequentialGroup()!.addContainerGap()!.addComponent(jLabel8)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(widthReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel5)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(widthReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel7)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(heightReductionTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(jLabel6)!.addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)!.addComponent(heightReductionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)!.addContainerGap(140, Short.MAX_VALUE)));
     
@@ -451,7 +451,7 @@ this.result= generatedBufferedImage;
 this.getParent()!.repaint();
     
 
-    var file: File = imageProcessorInput!.getFiles()[index]!;
+    var file: File = this.imageProcessorInput!.getFiles()[index]!;
         
         
 ;
@@ -469,13 +469,13 @@ this.getParent()!.repaint();
 ;
     
 
-    var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
+    var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
         
         
 ;
     
 filePath= new StringBuilder().
-                            append(filePath!.substring(0, extensionIndex))!.append(commonSeps!.UNDERSCORE)!.append(name)!.append(imageStrings!.PNG_EXTENSION)!.toString();
+                            append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 file= new File(filePath);
     

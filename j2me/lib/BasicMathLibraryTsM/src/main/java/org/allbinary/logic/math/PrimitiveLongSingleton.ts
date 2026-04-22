@@ -31,7 +31,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-        
+
+
+
+
 
 
 
@@ -106,7 +109,7 @@ var numberAsChar = numberAsChar
 index < size; index++)
         {
 
-                        if(NUMBER_CHAR_ARRAY[index] == numberAsChar)
+                        if(this.NUMBER_CHAR_ARRAY[index] == numberAsChar)
                         
                                     {
                                     

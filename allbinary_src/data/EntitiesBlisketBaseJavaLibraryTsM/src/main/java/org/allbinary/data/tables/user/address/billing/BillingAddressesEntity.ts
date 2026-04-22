@@ -31,7 +31,10 @@ import { StreetAddressesEntity } from "../../../../../../../org/allbinary/data/t
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,17 +46,14 @@ export class BillingAddressesEntity extends StreetAddressesEntity {
     private readonly TABLENAME: string = "billing";
         
         
-public constructor (userName: string)                        
-
-                            : super(userName){
-
-            super();
-            var userName = userName
+public constructor (userName: string){
+            super(userName);
+                    var userName = userName
 
 
                             //For kotlin this is before the body of the constructor.
                     
-setTableName(TABLENAME);
+setTableName(this.TABLENAME);
     
 }
 

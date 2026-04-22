@@ -64,12 +64,17 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
 
-        
+
+
+
+
 
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SalvoInterface } from "./SalvoInterface.js";
+
 export class BasicWeaponPart
             extends Object
          implements PartInterface, SalvoInterface {
@@ -101,7 +106,7 @@ export class BasicWeaponPart
 public constructor (animationInterface: Animation){
 
             super();
-                //var animationInterface = animationInterface
+            //var animationInterface = animationInterface
 this.setAnimationInterface(animationInterface);
     
 }
@@ -109,7 +114,7 @@ this.setAnimationInterface(animationInterface);
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
 
             super();
-                //var animationInterface = animationInterface
+            //var animationInterface = animationInterface
     //var sourceLayerInterface = sourceLayerInterface
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface

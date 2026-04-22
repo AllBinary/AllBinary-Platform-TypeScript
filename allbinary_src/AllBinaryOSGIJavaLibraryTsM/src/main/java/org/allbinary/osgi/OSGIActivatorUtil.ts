@@ -43,7 +43,10 @@ import { ServiceRegistration } from "../../../org/osgi/framework/ServiceRegistra
 
 
 
-        
+
+
+
+
 
 
 
@@ -102,7 +105,7 @@ serviceReference= bundleContext!.getServiceReference(serviceName);
 private constructor (){
 
             super();
-            }
+        }
 
 
 }

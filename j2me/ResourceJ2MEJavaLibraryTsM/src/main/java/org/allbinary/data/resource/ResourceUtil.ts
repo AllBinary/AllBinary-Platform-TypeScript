@@ -42,7 +42,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
 
-        
+
+
+
+
 
 
 
@@ -73,7 +76,7 @@ export class ResourceUtil
 private constructor (){
 
             super();
-            }
+        }
 
 
                 //@Throws(Error::class)

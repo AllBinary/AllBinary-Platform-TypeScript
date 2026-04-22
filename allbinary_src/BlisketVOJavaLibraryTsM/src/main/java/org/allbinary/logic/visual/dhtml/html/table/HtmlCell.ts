@@ -34,7 +34,10 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
 
 
-        
+
+
+
+
 
 
 
@@ -75,7 +78,7 @@ export class HtmlCell extends HtmlTag {
 public constructor (before: string, width: string, height: string, after: string){
 
             super();
-            var before = before
+        var before = before
 var width = width
 var height = height
 var after = after
@@ -95,9 +98,9 @@ this.width= width.toCharArray()
                                         .slice(0, ).join('')
                                     ;
     
-addAttribute(HEIGHT, this.height);
+addAttribute(this.HEIGHT, this.height);
     
-addAttribute(WIDTH, this.width);
+addAttribute(this.WIDTH, this.width);
     
 }
 
@@ -135,9 +138,9 @@ this.body= body;
         
 ;
     
-result= before;
+result= this.before;
     
-result += START;
+result += this.START;
     
 result += " ";
     
@@ -184,13 +187,13 @@ result += "\" ";
                                 
 }
 
-result += END;
+result += this.END;
     
-result += body;
+result += this.body;
     
-result += ENDTAG;
+result += this.ENDTAG;
     
-result += after;
+result += this.after;
     
 
 

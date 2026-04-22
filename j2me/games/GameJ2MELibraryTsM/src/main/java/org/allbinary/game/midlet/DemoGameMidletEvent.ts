@@ -31,7 +31,10 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
 
-        
+
+
+
+
 
 
 
@@ -43,12 +46,9 @@ export class DemoGameMidletEvent extends AllBinaryEventObject {
         
 
     private demoGameMidletState: DemoGameMidletState
-public constructor (anyType: any = {}, demoGameMidletState: DemoGameMidletState)                        
-
-                            : super(anyType){
-
-            super();
-            var anyType = anyType
+public constructor (anyType: any = {}, demoGameMidletState: DemoGameMidletState){
+            super(anyType);
+                    var anyType = anyType
 var demoGameMidletState = demoGameMidletState
 
 
