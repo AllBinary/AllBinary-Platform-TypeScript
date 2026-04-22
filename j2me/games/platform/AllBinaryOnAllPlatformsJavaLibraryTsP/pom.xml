@@ -2,13 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.allbinary</groupId>
-  <artifactId>AllBinaryOnAllPlaformsJavaLibraryPOMTs</artifactId>
+  <artifactId>AllBinaryOnAllPlatformsJavaLibraryPOMTs</artifactId>
   <packaging>pom</packaging>
   <!-- AllBinary Platform Version Start -->
   <version>1.0.0-SNAPSHOT</version>
   <!-- AllBinary Platform Version End -->
 
-  <name>AllBinaryOnAllPlaformsJavaLibraryPOMTs</name>
+  <name>AllBinaryOnAllPlatformsJavaLibraryPOMTs</name>
   <url>http://www.allbinary.com/</url>
     <distributionManagement>
         <snapshotRepository>

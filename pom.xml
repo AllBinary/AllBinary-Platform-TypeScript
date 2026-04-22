@@ -42,7 +42,7 @@
         <module>./allbinary_src/FreeblisketJavaLibraryTsP</module>
 -->
 
-        <module>./j2me/games/platform/AllBinaryOnAllPlaformsJavaLibraryTsP</module>
+        <module>./j2me/games/platform/AllBinaryOnAllPlatformsJavaLibraryTsP</module>
         
         <!--
         <module>./j2me/media/graphics/animation/image/AllBinaryHTMLImageAnimationRotationJavaLibraryTsM</module>
