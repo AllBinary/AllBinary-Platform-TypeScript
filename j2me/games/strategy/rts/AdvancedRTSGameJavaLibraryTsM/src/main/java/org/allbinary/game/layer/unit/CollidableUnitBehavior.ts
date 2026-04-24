@@ -149,9 +149,7 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
                         
                                     {
                                     
-    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0);
-
-                         as CollidableCompositeLayer;
+    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0); as CollidableCompositeLayer;
         
         
 ;
@@ -300,9 +298,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                         
                                     {
                                     
-                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface);
-
-                        )
+                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface);)
                         
                                     {
                                     this.simpleSteeringVisitor!.getList()!.add(collidableInterfaceCompositeInterface);
@@ -323,9 +319,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 ;
     
 
-                        if(!list.contains(this.simpleSteeringVisitor);
-
-                        )
+                        if(!list.contains(this.simpleSteeringVisitor);)
                         
                                     {
                                     list.add(this.simpleSteeringVisitor);
@@ -404,9 +398,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
-
-                        )
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
                         
                                     {
                                     
@@ -433,9 +425,7 @@ this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, diff, 0, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
-
-                        )
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
                         
                                     {
                                     
@@ -475,9 +465,7 @@ unitLayer!.setPosition(x, y, unitLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
-
-                        )
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
                         
                                     {
                                     
@@ -504,9 +492,7 @@ this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAll(basicGeographicMap, unitLayer, 0, diff, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);
-
-                        )
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
                         
                                     {
                                     

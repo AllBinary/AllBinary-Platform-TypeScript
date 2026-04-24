@@ -166,9 +166,7 @@ this.transformInfoInterface= transformInfoInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.transformDocumentInterface!.getDoc();
-
-                        ;
+                        return this.transformDocumentInterface!.getDoc();;
     
 }
 
@@ -203,9 +201,7 @@ this.transformInfoInterface= transformInfoInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformDocumentInterface()!.getDoc();
-
-                        ;
+                        return this.getTransformDocumentInterface()!.getDoc();;
     
 }
 

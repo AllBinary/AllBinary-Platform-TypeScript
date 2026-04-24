@@ -76,9 +76,7 @@ this.image= bitmap as Image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mutableImage!.getDepth();
-
-                        ;
+                        return mutableImage!.getDepth();;
     
 
                                     }
@@ -94,9 +92,7 @@ this.image= bitmap as Image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return immutableImage!.getDepth();
-
-                        ;
+                        return immutableImage!.getDepth();;
     
 
                         }
@@ -160,9 +156,7 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.image.getWidth();
-
-                        ;
+                        return this.image.getWidth();;
     
 }
 
@@ -172,9 +166,7 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.image.getHeight();
-
-                        ;
+                        return this.image.getHeight();;
     
 }
 

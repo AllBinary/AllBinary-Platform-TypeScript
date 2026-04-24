@@ -407,9 +407,7 @@ canvas.save();
         
 ;
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image);
-
-                         as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
 

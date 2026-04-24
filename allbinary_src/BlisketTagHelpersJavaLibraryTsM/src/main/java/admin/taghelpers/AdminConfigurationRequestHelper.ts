@@ -79,9 +79,7 @@ var pageContext = pageContext
 
                                     }
                                 
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 }
 

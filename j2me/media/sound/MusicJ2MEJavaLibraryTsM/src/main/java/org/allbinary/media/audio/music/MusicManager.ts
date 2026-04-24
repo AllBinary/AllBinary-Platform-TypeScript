@@ -195,9 +195,7 @@ this.songList= songList;
                         
                                     {
                                     
-    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList);
-
-                         as Sound;
+    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList); as Sound;
         
         
 ;
@@ -289,9 +287,7 @@ this.nextSongSound= NoSound.getInstance();
                         if(nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList);
-
-                         as Sound;
+                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList); as Sound;
     
 
                                     }

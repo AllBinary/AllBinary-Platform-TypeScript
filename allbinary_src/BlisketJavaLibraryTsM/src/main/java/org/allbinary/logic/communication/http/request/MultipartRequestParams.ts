@@ -94,9 +94,7 @@ public constructor (pageContext: PageContext){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(pageContext!.getRequest();
-
-                         as HttpServletRequest);
+this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest);
     
 }
 
@@ -253,9 +251,7 @@ super.setMap(request.getParameterMap());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMap();
-
-                         as HashMap<any, any>;
+                        return this.getMap(); as HashMap<any, any>;
     
 
                                     }
@@ -265,9 +261,7 @@ super.setMap(request.getParameterMap());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.toHashMap();
-
-                        ;
+                        return super.toHashMap();;
     
 
                         }

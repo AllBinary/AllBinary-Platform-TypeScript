@@ -152,24 +152,6 @@ this.runnableCanvasRefreshHelper= new RunnableCanvasRefreshHelper(this);
                                 
 }
 
-public constructor (commandListener: CommandListener, childNameList: BasicArrayList){
-            this(commandListener, childNameList, true);
-                        //var commandListener = commandListener
-    //var childNameList = childNameList
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (){
-            this(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public initCommands(cmdListener: CommandListener){
 var cmdListener = cmdListener
@@ -490,9 +472,7 @@ Thread.sleep(sleep);
 this.runnableCanvasRefreshHelper!.process();
     
 
-                        if(this.isPaused() && this.isRunning() && !this.isSingleThread();
-
-                        )
+                        if(this.isPaused() && this.isRunning() && !this.isSingleThread();)
                         
                                     {
                                     
@@ -504,16 +484,12 @@ this.runnableCanvasRefreshHelper!.process();
 this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(System.currentTimeMillis())!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP);
     
 
-        while(this.isPaused() && this.isRunning() && !this.isSingleThread();
-
-                        )
+        while(this.isPaused() && this.isRunning() && !this.isSingleThread();)
         {
 this.processSleep();
     
 
-                        if(!this.isPausable();
-
-                        )
+                        if(!this.isPausable();)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());

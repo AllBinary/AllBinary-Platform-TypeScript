@@ -110,9 +110,7 @@ public constructor (){
                                     {
                                     
     var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame);
-
-                         as ImageComparisonResultFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get(frame); as ImageComparisonResultFrameCacheable;
         
         
 ;

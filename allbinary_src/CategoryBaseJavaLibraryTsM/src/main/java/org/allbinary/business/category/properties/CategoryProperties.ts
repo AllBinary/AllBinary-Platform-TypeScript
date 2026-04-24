@@ -57,6 +57,9 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
@@ -148,9 +151,7 @@ this.category= .toCharArray();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue();
-
-                         as Object;
+                        return this.getValue(); as Object;
     
 }
 
@@ -182,7 +183,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -285,9 +286,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
         
 index < size; index++)
         {
-pathStringBuffer!.append(list.get(index);
-
-                         as String);
+pathStringBuffer!.append(list.get(index) as String);
     
 }
 

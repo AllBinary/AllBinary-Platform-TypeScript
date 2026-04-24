@@ -591,9 +591,7 @@ var unconditional = unconditional
 gameAdState!.getAdvertisements()!.stopAll();
     
 
-                        if(!this.isDestroyed();
-
-                        )
+                        if(!this.isDestroyed();)
                         
                                     {
                                     this.stopGameCanvasRunnableInterface();
@@ -882,17 +880,13 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
 ;
     
 
-    var lockableFeature: LockableFeature = list.get(0);
-
-                         as LockableFeature;
+    var lockableFeature: LockableFeature = list.get(0); as LockableFeature;
         
         
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature);
-
-                        )
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature);)
                         
                                     {
                                     inApplicationPurchaseFactory!.purchase(lockableFeature);
@@ -1232,9 +1226,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get();
-
-                         as InGameOptionsForm;
+    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get(); as InGameOptionsForm;
         
         
 ;
@@ -1790,9 +1782,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameOptionsFormFactory.getInstance()!.init(this, "Game Options", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
-
-                        ;
+                        return GameOptionsFormFactory.getInstance()!.init(this, "Game Options", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());;
     
 }
 

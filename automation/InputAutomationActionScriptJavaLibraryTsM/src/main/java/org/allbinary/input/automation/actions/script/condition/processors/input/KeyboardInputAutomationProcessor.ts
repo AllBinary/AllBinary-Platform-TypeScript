@@ -186,9 +186,7 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 ;
     
 
-        while(!timeHelper!.isTime();
-
-                         || toLong > 6000)
+        while(!timeHelper!.isTime(); || toLong > 6000)
         {
 toLong++;
     

@@ -36,6 +36,9 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -74,7 +77,7 @@ export class AnalogControllerConfigurationEventHandler extends BasicEventHandler
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -86,9 +89,7 @@ private constructor (){
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
 var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
-                        if(!this.list.contains(analogControllerConfigurationEventListenerInterface);
-
-                        )
+                        if(!this.list.contains(analogControllerConfigurationEventListenerInterface);)
                         
                                     {
                                     this.list.add(analogControllerConfigurationEventListenerInterface);

@@ -121,9 +121,7 @@ var name = name
         
 index < size; index++)
         {
-shipping= this.shippingVector!.get(index);
-
-                         as ShippingInterface;
+shipping= this.shippingVector!.get(index); as ShippingInterface;
     
 
                         if(name.compareTo(shipping.getName()) == 0)

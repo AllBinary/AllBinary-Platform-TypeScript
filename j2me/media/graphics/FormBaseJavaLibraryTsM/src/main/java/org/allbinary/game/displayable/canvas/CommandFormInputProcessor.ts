@@ -189,9 +189,7 @@ this.form.processInput(key);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.processCommand();
-
-                        ;
+                        return this.processCommand();;
     
 
                                     }
@@ -500,9 +498,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-                        if(!this.doubleClickTimeHelper!.isTime();
-
-                        )
+                        if(!this.doubleClickTimeHelper!.isTime();)
                         
                                     {
                                     this.logUtil!.putF("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT);
@@ -548,9 +544,7 @@ this.hasPressed= true;
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(super.toString())!.append(NAME_LABEL)!.append(this.form.toString())!.toString();
-
-                        ;
+                            append(super.toString())!.append(NAME_LABEL)!.append(this.form.toString())!.toString();;
     
 }
 

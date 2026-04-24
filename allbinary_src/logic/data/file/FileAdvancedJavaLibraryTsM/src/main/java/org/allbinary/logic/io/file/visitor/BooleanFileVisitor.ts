@@ -79,9 +79,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit(anyType as AbFile);
-
-                         as Object;
+                        return this.visit(anyType as AbFile); as Object;
     
 }
 
@@ -114,9 +112,7 @@ var file = file
         
 index < size; index++)
         {
-nextFileFilterString= list.get(index);
-
-                         as String;
+nextFileFilterString= list.get(index); as String;
     
 
                         if(this.visit(file, nextFileFilterString))

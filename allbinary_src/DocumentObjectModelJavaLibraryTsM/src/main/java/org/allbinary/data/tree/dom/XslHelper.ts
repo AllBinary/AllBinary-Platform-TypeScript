@@ -120,9 +120,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return streamResult!.getOutputStream();
-
-                        ;
+                        return streamResult!.getOutputStream();;
     
 
                 //: 
@@ -166,9 +164,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return streamResult!.getOutputStream();
-
-                        ;
+                        return streamResult!.getOutputStream();;
     
 
                 //: 
@@ -200,9 +196,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();
-
-                        ;
+                        return this.translate(xsltStreamSource, new StreamSource(new StringBufferInputStream(DomDocumentHelper.toString(xmlDocument))), new StreamResult(outputStream))!.toString();;
     
 
                 //: 
@@ -234,9 +228,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();
-
-                        ;
+                        return this.translate(xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();;
     
 
                 //: 
@@ -269,9 +261,7 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.translate(resolver, xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();
-
-                        ;
+                        return this.translate(resolver, xsltStreamSource, xmlStreamSource, new StreamResult(outputStream))!.toString();;
     
 
                 //: 

@@ -103,9 +103,7 @@ super.updateSelectionInfo();
 --index >= 0; )
         {
 
-    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index);
-
-                         as GeologicalGeographicMapCellPosition;
+    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index); as GeologicalGeographicMapCellPosition;
         
         
 ;

@@ -271,9 +271,7 @@ super.setPosition( -x,  -y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getCellWidth();
-
-                        ;
+                        return this.tiledLayerP!.getCellWidth();;
     
 }
 
@@ -283,9 +281,7 @@ super.setPosition( -x,  -y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getCellHeight();
-
-                        ;
+                        return this.tiledLayerP!.getCellHeight();;
     
 }
 
@@ -297,9 +293,7 @@ super.setPosition( -x,  -y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getCell(col, row);
-
-                        ;
+                        return this.tiledLayerP!.getCell(col, row);;
     
 }
 
@@ -309,9 +303,7 @@ super.setPosition( -x,  -y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getColumns();
-
-                        ;
+                        return this.tiledLayerP!.getColumns();;
     
 }
 
@@ -321,9 +313,7 @@ super.setPosition( -x,  -y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getRows();
-
-                        ;
+                        return this.tiledLayerP!.getRows();;
     
 }
 
@@ -343,9 +333,7 @@ this.tiledLayerP!.setCell(col, row, index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayerP!.getAnimatedTile(animationTileIndex);
-
-                        ;
+                        return this.tiledLayerP!.getAnimatedTile(animationTileIndex);;
     
 }
 

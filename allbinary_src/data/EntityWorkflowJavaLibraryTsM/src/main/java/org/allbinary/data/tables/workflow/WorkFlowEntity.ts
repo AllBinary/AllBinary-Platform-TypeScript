@@ -221,9 +221,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap);
-
-                         as WorkFlowInterface;
+                        return DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap); as WorkFlowInterface;
     
 
                 //: 
@@ -306,9 +304,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object);
-
-                         as HashMap<any, any>;
+    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object); as HashMap<any, any>;
         
         
 ;
@@ -366,13 +362,9 @@ var updatedValues = updatedValues
         
 ;
     
-wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME);
-
-                         as String);
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String);
     
-wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String);
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String);
     
 super.updateWhere(wherekeysAndValues, updatedValues);
     
@@ -413,9 +405,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -425,9 +415,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
@@ -437,9 +425,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

@@ -167,9 +167,7 @@ this.setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0);
-
-                         as MotionRectangles;
+    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0); as MotionRectangles;
         
         
 ;
@@ -185,9 +183,7 @@ timeHelper!.setStartTime();
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0);
-
-                         as Rectangle;
+    var rectangle: Rectangle = motionRectangleVector!.get(0); as Rectangle;
         
         
 ;
@@ -228,9 +224,7 @@ index < size; index++)
 ;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object);
-
-                         as InputRobotInterface;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object); as InputRobotInterface;
         
         
 ;

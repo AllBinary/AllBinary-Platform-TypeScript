@@ -26,6 +26,9 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -50,48 +53,34 @@ export class BasicPlatormGeographicMapCellType
          {
         
 
-    private readonly types: number[]
-public constructor (type: number){
+    public static create(type: number): BasicPlatormGeographicMapCellType{
+    //var type = type
 
-            super();
-            //var type = type
-new GeographicMapCellType(type);
-    
-this.types= new Array(1);
-    
-this.types[0]= type;
-    
-}
-
-public constructor (types: number[]){
-
-            super();
-            //var types = types
-
-    var size: number = types.length
-                ;
+    var types: BasicArrayList = new BasicArrayListS(1);
         
         
 ;
     
+types.add(type);
+    
 
-
-
-
-                        for (
-    var index: number = 0;
+    var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);
         
         
-index < size; index++)
-        {
-new GeographicMapCellType(types[index]!);
+;
+    
+new GeographicMapCellType(type, 0);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return basicPlatormGeographicMapCellType;
     
 }
 
-this.types= types;
-    
-}
 
+    private readonly types: number[]
 public constructor (types: BasicArrayList){
 
             super();
@@ -126,13 +115,11 @@ public constructor (types: BasicArrayList){
         
 index < size; index++)
         {
-typeAsInteger= (types.get(index);
-
-                         as Integer);
+typeAsInteger= (types.get(index); as Integer);
     
 type= typeAsInteger!.toInt();
     
-new GeographicMapCellType(type);
+new GeographicMapCellType(type, 0);
     
 typeArray[index]= type;
     
@@ -149,9 +136,7 @@ this.types= typeArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isType(type.getType());
-
-                        ;
+                        return this.isType(type.getType());;
     
 }
 

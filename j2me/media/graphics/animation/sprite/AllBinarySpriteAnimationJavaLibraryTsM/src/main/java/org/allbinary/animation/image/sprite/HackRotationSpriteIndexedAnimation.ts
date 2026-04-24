@@ -39,6 +39,9 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
     
+import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
+
+    
 
 
 
@@ -65,7 +68,7 @@ export class HackRotationSpriteIndexedAnimation extends RotationAnimation {
 
     private readonly image: Image
 public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
-            super(angleInfo, animationBehavior);
+            super(angleInfo, CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var sprite = sprite
     //var image = image
     //var angleInfo = angleInfo
@@ -88,9 +91,7 @@ this.image= image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -142,9 +143,7 @@ this.sprite.prevFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.sprite.getRawFrameCount();
-
-                        ;
+                        return this.sprite.getRawFrameCount();;
     
 }
 
@@ -161,9 +160,7 @@ this.sprite.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.sprite.getFrame();
-
-                        ;
+                        return this.sprite.getFrame();;
     
 }
 
@@ -178,9 +175,7 @@ this.sprite.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

@@ -117,9 +117,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 var pageContext = pageContext
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -160,9 +158,7 @@ this.request= httpServletRequest;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.weblisketSession!.getId()!.substring(startIndex -8);
-
-                        ;
+                        return this.weblisketSession!.getId()!.substring(startIndex -8);;
     
 
                                     }
@@ -357,9 +353,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 ;
     
 
-                        if(!password.isValid();
-
-                        )
+                        if(!password.isValid();)
                         
                                     {
                                     

@@ -455,9 +455,7 @@ var document = document
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index);
-
-                         as ProfileActionScriptConditionInterface;
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
         
         
 ;
@@ -489,9 +487,7 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 index < size2; index++)
         {
 
-    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index);
-
-                         as ProfileActionScriptProcessorInterface;
+    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
         
         
 ;
@@ -537,15 +533,11 @@ var actionEvent = actionEvent
                         
                                     {
                                     
-                        if(this.getParent();
-
-                         is ProfileActionScriptNodeInterface)
+                        if(this.getParent(); is ProfileActionScriptNodeInterface)
                         
                                     {
                                     
-    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface = this.getParent();
-
-                         as ProfileActionScriptNodeInterface;
+    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface = this.getParent(); as ProfileActionScriptNodeInterface;
         
         
 ;
@@ -695,17 +687,13 @@ var frame = frame
 index < size; index++)
         {
 
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index);
-
-                         as ProfileActionScriptConditionInterface;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
         
         
 ;
     
 
-                        if(!profileActionScriptConditionInterface!.shouldProcess(frame);
-
-                        )
+                        if(!profileActionScriptConditionInterface!.shouldProcess(frame);)
                         
                                     {
                                     
@@ -758,9 +746,7 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index);
-
-                         as ProfileActionScriptProcessorInterface;
+    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
         
         
 ;

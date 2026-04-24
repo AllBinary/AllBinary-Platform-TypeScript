@@ -27,6 +27,9 @@ import { RelativeRelationship } from "../../../../org/allbinary/graphics/Relativ
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -95,9 +98,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -126,7 +127,7 @@ var hardPoint = hardPoint
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= new BasicArrayList();
+                                    list= new BasicArrayListD();
     
 
                                     }

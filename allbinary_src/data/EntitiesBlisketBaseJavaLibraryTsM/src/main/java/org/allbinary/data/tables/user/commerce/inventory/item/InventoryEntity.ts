@@ -213,9 +213,7 @@ var storeFrontInterface = storeFrontInterface
 i < size; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object);
-
-                         as HashMap<any, any>;
+    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object); as HashMap<any, any>;
         
         
 ;
@@ -227,17 +225,13 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY);
-
-                         as String;
+    var category: string = itemHashMap!.get(BasicItemData.CATEGORY); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(category);
-
-                         && category.startsWith(storeFrontInterface!.getCategoryPath()))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(category); && category.startsWith(storeFrontInterface!.getCategoryPath()))
                         
                                     {
                                     itemVector!.add(new BasicItem(itemHashMap));
@@ -311,9 +305,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getField(BasicItemData.ID, id, BasicItemData.WEIGHT);
-
-                        ;
+                        return super.getField(BasicItemData.ID, id, BasicItemData.WEIGHT);;
     
 }
 
@@ -457,9 +449,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -469,18 +459,14 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID);
-
-                         as String, updatedValues);
+super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
     
 }
 
@@ -490,9 +476,7 @@ super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

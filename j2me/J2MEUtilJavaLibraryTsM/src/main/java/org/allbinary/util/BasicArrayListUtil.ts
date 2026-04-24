@@ -79,7 +79,7 @@ var args = args
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -145,9 +145,7 @@ var list = list
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myRandomFactory!.getAbsoluteNextInt(list.size());
-
-                        ;
+                        return myRandomFactory!.getAbsoluteNextInt(list.size());;
     
 }
 
@@ -247,9 +245,7 @@ stringBuffer!.appendint(usedList!.size());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

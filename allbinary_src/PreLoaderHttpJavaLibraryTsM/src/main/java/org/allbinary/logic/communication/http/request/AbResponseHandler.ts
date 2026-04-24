@@ -264,17 +264,13 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
     //var pageContext = pageContext
     //var page = page
 
-    var request: HttpServletRequest = pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
     
 
-    var response: HttpServletResponse = pageContext!.getResponse();
-
-                         as HttpServletResponse;
+    var response: HttpServletResponse = pageContext!.getResponse(); as HttpServletResponse;
         
         
 ;

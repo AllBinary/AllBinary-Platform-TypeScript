@@ -130,9 +130,7 @@ this.isJumpOver= false;
                         
                                     {
                                     
-    var acceleration2: number =  -acceleration.getForward();
-
-                         *accelerationMultiplier;
+    var acceleration2: number =  -acceleration.getForward(); *accelerationMultiplier;
         
         
 ;

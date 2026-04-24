@@ -42,6 +42,9 @@ import { OrientationData } from "../../../../org/allbinary/input/gyro/Orientatio
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -78,9 +81,7 @@ export class InGameFeatures extends Init {
 ;
     
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object);
-
-                         as BasicArrayList;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object); as BasicArrayList;
         
         
 ;
@@ -147,7 +148,7 @@ export class InGameFeatures extends Init {
                         
                                     {
                                     
-    var exclusiveScreenButtonsVector: BasicArrayList = new BasicArrayList();
+    var exclusiveScreenButtonsVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -180,7 +181,7 @@ inGameFeatureChoiceGroups!.add(LABEL, exclusiveScreenButtonsVector);
 ;
     
 
-    var inGameExclusiveOrientationSensorVector: BasicArrayList = new BasicArrayList();
+    var inGameExclusiveOrientationSensorVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -221,9 +222,7 @@ InGameFeatureChoiceGroups.getExclusiveInstance()!.add(orientationData!.ORIENTATI
                                     }
                                 
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT as Object);
-
-                         as BasicArrayList;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT as Object); as BasicArrayList;
         
         
 ;

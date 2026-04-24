@@ -148,17 +148,13 @@ this.setDocument(this.generate(this.toXmlDoc()));
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
-
-                         as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
         
         
 ;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL);
-
-                         as String)!;
+    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as String)!;
         
         
 ;
@@ -233,9 +229,7 @@ stringBuffer!.append(RootTransformInfoData.NAME);
 index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index);
-
-                         as TransformInfoDomNode;
+    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index); as TransformInfoDomNode;
         
         
 ;

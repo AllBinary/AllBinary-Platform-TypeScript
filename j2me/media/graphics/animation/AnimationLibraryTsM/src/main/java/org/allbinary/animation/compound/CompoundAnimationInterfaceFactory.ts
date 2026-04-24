@@ -107,9 +107,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(animationInterfaceArray);
-
-                        ;
+                        return this.getInstance(animationInterfaceArray);;
     
 }
 
@@ -131,9 +129,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullAnimationFactory.getFactoryInstance()!.getInstance(0);
-
-                        ;
+                        return NullAnimationFactory.getFactoryInstance()!.getInstance(0);;
     
 }
 

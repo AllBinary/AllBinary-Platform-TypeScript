@@ -210,17 +210,13 @@ keyValuePersistance!.loadAll(abeClientInformation);
 ;
     
 
-    var anyType: any = this.SCALE.getName();
-
-                         as Object;
+    var anyType: any = this.SCALE.getName(); as Object;
         
         
 ;
     
 
-    var value: string = hashtable.get(anyType as Object);
-
-                         as String;
+    var value: string = hashtable.get(anyType as Object); as String;
         
         
 ;
@@ -385,9 +381,7 @@ stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.toInt());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

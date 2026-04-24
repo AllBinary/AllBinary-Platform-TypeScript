@@ -109,9 +109,7 @@ export class PixelDeltaFactory
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
-
-                         as AutomaticCacheInterface;
+cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX); as AutomaticCacheInterface;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
@@ -133,7 +131,7 @@ var y = y
 var rgb1 = rgb1
 var rgb2 = rgb2
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance(x, y)!;
+    var point: GPoint = PointFactory.getInstance()!.getInstance0(x, y)!;
         
         
 ;
@@ -145,9 +143,7 @@ var rgb2 = rgb2
 ;
     
 
-    var pixelDelta: PixelDelta = cacheInterface!.get(PixelDelta.getKey(point, colorDelta));
-
-                         as PixelDelta;
+    var pixelDelta: PixelDelta = cacheInterface!.get(PixelDelta.getKey(point, colorDelta)); as PixelDelta;
         
         
 ;

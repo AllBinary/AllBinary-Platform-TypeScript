@@ -93,9 +93,7 @@ index > min_x.toInt(); )
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger);
-
-                         as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
         
         
 ;

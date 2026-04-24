@@ -127,9 +127,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger);
-
-                         as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
         
         
 ;
@@ -147,9 +145,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger);
-
-                         as ColorCacheable;
+    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
         
         
 ;
@@ -206,9 +202,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.compare(bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance, StringUtil.getInstance()!.EMPTY_STRING);
-
-                        ;
+                        return this.compare(bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance, StringUtil.getInstance()!.EMPTY_STRING);;
     
 }
 
@@ -263,7 +257,7 @@ indexY < imageComparisonInfo!.imageHeight; indexY++)
         
 indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
-this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance(indexX, indexY));
+this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance0(indexX, indexY));
     
 
                         if(imageComparisonInfo!.getNonMatchingPixelVector()!.size() > this.imageComparatorConstraintsInterface!.getMaxNonMatchingPixelDeltas())

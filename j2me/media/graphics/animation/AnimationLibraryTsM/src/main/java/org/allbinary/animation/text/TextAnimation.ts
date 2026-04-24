@@ -42,6 +42,9 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -142,7 +145,7 @@ graphics.drawString(this.textArrayP[index]!, x, y +(index *height), anchor);
     public setText(text: string){
 var text = text
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -234,9 +237,7 @@ index++;
         
 index < size; index++)
         {
-textArray[index]= list.get(index);
-
-                         as String;
+textArray[index]= list.get(index); as String;
     
 }
 

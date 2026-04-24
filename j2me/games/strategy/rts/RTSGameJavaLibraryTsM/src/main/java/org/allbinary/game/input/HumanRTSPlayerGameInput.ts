@@ -276,9 +276,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
     //var layerManager = layerManager
 
-    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1);
-
-                         as MotionGestureEvent;
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1); as MotionGestureEvent;
         
         
 ;
@@ -506,9 +504,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD);
         
 index >= 0; index--)
         {
-rtsLayer= rtsLayerList!.get(index);
-
-                         as RTSLayer;
+rtsLayer= rtsLayerList!.get(index); as RTSLayer;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -594,9 +590,7 @@ this.updatePaintable();
 index >= 0; index--)
         {
 
-    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(index);
-
-                         as MotionGestureEvent;
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(index); as MotionGestureEvent;
         
         
 ;
@@ -913,9 +907,7 @@ this.updatePaintable();
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.getGameCanvas();
-
-                         as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.getGameCanvas(); as GeographicMapCompositeInterface;
         
         
 ;
@@ -940,9 +932,7 @@ this.getRTSLayerInfoPaintable()!.updateRTSLayerInfo(multiSelectPaintable);
                         
                                     {
                                     
-    var rtsLayer: RTSLayer = list.get(0);
-
-                         as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(0); as RTSLayer;
         
         
 ;

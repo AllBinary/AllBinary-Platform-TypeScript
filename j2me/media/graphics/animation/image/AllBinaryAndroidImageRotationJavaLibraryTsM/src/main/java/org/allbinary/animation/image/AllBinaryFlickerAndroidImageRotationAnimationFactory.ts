@@ -79,41 +79,6 @@ export class AllBinaryFlickerAndroidImageRotationAnimationFactory
     private readonly angleIncrement: number
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (image: Image, width: number, height: number){
-            this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var width = width
-    //var height = height
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, width: number, height: number, angleIncrement: number){
-            this(image, width, height, angleIncrement, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();

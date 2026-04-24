@@ -100,9 +100,7 @@ public constructor (){
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -190,9 +188,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -314,9 +310,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                                     }

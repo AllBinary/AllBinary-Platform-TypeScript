@@ -124,36 +124,28 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 }
 1 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 }
 2 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 }
 3 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 }
 else -> {
@@ -184,9 +176,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 
                                     }
@@ -210,9 +200,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 
                                     }
@@ -236,9 +224,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 
                                     }
@@ -262,9 +248,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 
                                     }
@@ -360,9 +344,7 @@ index < 4; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);;
     
 }
 
@@ -398,9 +380,7 @@ index < 4; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);
-
-                        ;
+                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);;
     
 
                 //: 
@@ -669,9 +649,7 @@ var y = y
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getCellTypeAt(cellPosition);
-
-                        ;
+                        return this.getCellTypeAt(cellPosition);;
     
 }
 

@@ -24,6 +24,12 @@ import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/C
 import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
 
     
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
+import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
+
+    
 
 
 
@@ -45,12 +51,14 @@ import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFa
         
 import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
 
+import { CollidableNeverCollideBehaviorFactory } from "./CollidableNeverCollideBehaviorFactory.js";
+
 import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
  constructor (isCollidable: boolean){
-            super(new CollidableCompositeLayer(RectangleFactory.SINGLETON), isCollidable);
+            super(new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.getInstanceD(), CollidableNeverCollideBehaviorFactory.getInstance()), isCollidable);
                     var isCollidable = isCollidable
 
 

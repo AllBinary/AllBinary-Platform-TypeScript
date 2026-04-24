@@ -55,9 +55,7 @@ export class TouchButtonsBuilderFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NoButtonsTouchInputFactory.getInstance();
-
-                        ;
+                        return NoButtonsTouchInputFactory.getInstance();;
     
 }
 

@@ -84,9 +84,7 @@ public constructor (anyType: any = {}){
     
 
     var result: string = method.invoke(this.getWorkFlowObject(), 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;

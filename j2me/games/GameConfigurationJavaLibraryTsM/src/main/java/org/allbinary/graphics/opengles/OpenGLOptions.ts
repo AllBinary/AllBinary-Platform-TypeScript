@@ -27,6 +27,9 @@ import { GameFeatureChoiceGroups } from "../../../../org/allbinary/game/configur
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -65,7 +68,7 @@ export class OpenGLOptions
                         
                                     {
                                     
-    var openGLMultipleList: BasicArrayList = new BasicArrayList();
+    var openGLMultipleList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -75,7 +78,7 @@ openGLMultipleList!.add(openGLFeatureFactory!.OPENGL);
 GameFeatureChoiceGroups.getMultipleInstance()!.add("OpenGL (Complete Restart)", openGLMultipleList);
     
 
-    var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayList();
+    var openGLVersionSelectorMultipleList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -87,7 +90,7 @@ openGLVersionSelectorMultipleList!.add(openGLFeatureFactory!.OPENGL_MINIMUM);
 GameFeatureChoiceGroups.getExclusiveInstance()!.add("OpenGL Version Selector", openGLVersionSelectorMultipleList);
     
 
-    var openGLImageColorMultipleList: BasicArrayList = new BasicArrayList();
+    var openGLImageColorMultipleList: BasicArrayList = new BasicArrayListD();
         
         
 ;

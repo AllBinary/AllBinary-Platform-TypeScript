@@ -73,9 +73,7 @@ export class StupidTimer
     visitBool(visitorInterface: Visitor): boolean{
     //var visitorInterface = visitorInterface
 
-    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT);
-
-                         as Boolean;
+    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT); as Boolean;
         
         
 ;

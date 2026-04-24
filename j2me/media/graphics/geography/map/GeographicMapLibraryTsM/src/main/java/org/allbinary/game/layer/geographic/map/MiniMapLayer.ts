@@ -21,7 +21,13 @@
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
+import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
 
     
 import { ForcedLogUtil } from "../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
@@ -115,7 +121,7 @@ export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPos
 
     private animationInterface: CircleFilledAnimation
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
-            super(new Rectangle(PointFactory.getInstance()!.getInstance(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
+            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.getInstance0(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
                     var geographicMapInterface = geographicMapInterface
 var viewPosition = viewPosition
 
@@ -128,11 +134,11 @@ this.geographicMapCellPositionFactory= geographicMapInterface!.getGeographicMapC
     
 this.animationInterface= new CircleFilledAnimation(this.allBinaryTiledLayer!.getCellWidth(), this.allBinaryTiledLayer!.getCellHeight(), BasicColorFactory.getInstance()!.WHITE);
     
-this.list= new BasicArrayList();
+this.list= new BasicArrayListD();
     
-this.basicColorList= new BasicArrayList();
+this.basicColorList= new BasicArrayListD();
     
-this.positionList= new BasicArrayList();
+this.positionList= new BasicArrayListD();
     
 GeographicMapCellPositionEventHandler.getInstance()!.addListener(this);
     
@@ -162,9 +168,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource();
-
-                         as ColorCompositeInterface;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
         
         
 ;
@@ -197,9 +201,7 @@ this.positionList!.remove(index);
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource();
-
-                         as ColorCompositeInterface;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
         
         
 ;
@@ -230,9 +232,7 @@ this.positionList!.remove(index);
         
 index < size; index++)
         {
-nextColorCompositeInterface= this.list.get(index);
-
-                         as ColorCompositeInterface;
+nextColorCompositeInterface= this.list.get(index); as ColorCompositeInterface;
     
 
                         if(nextColorCompositeInterface == colorCompositeInterface)
@@ -328,13 +328,9 @@ var graphics = graphics
         
 --index >= 0; )
         {
-point= localPositionList!.get(index);
-
-                         as GPoint;
+point= localPositionList!.get(index); as GPoint;
     
-basicColor= localBasicColorList!.get(index);
-
-                         as BasicColor;
+basicColor= localBasicColorList!.get(index); as BasicColor;
     
 graphics.setColor(basicColor!.toInt());
     

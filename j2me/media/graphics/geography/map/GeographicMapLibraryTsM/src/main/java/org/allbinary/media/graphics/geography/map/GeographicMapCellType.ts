@@ -56,7 +56,7 @@ export class GeographicMapCellType
         
         
 
-    public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE: GeographicMapCellType = new GeographicMapCellType(Integer.MIN_VALUE);
+    public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE: GeographicMapCellType = new GeographicMapCellType(Integer.MIN_VALUE, 0);
         
         
 
@@ -65,15 +65,6 @@ export class GeographicMapCellType
         
 
     private readonly type: number
-public constructor (type: number){
-            this(type, 0);
-                        //var type = type
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (type: number, reset: number){
 
             super();
@@ -144,9 +135,7 @@ this.type= type;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SmallIntegerSingletonFactory.getInstance()!.getInstance(this.type)!.toString();
-
-                        ;
+                        return SmallIntegerSingletonFactory.getInstance()!.getInstance(this.type)!.toString();;
     
 }
 

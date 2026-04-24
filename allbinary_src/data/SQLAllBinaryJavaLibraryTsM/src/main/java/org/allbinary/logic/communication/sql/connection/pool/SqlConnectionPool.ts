@@ -158,18 +158,14 @@ var url = url
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DriverManager.getConnection(url);
-
-                        ;
+                        return DriverManager.getConnection(url);;
     
 
                                     }
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url as Object);
-
-                         as Vector;
+    var connectionVector: Vector = this.connectionHashMap!.get(url as Object); as Vector;
         
         
 ;
@@ -209,9 +205,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DriverManager.getConnection(url);
-
-                        ;
+                        return DriverManager.getConnection(url);;
     
 
                                     }
@@ -234,9 +228,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DriverManager.getConnection(url);
-
-                        ;
+                        return DriverManager.getConnection(url);;
     
 
                                     }
@@ -265,17 +257,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i);
-
-                         as Connection;
+    var sqlConnection: Connection = connectionVector!.get(i); as Connection;
         
         
 ;
     
 
-                        if(!sqlConnection!.isClosed();
-
-                        )
+                        if(!sqlConnection!.isClosed();)
                         
                                     {
                                     connectionVector!.remove(sqlConnection);
@@ -345,9 +333,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DriverManager.getConnection(url);
-
-                        ;
+                        return DriverManager.getConnection(url);;
     
 }
 
@@ -359,9 +345,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 var url = url
 var sqlConnection = sqlConnection
 
-                        if(!sqlConnection!.isClosed();
-
-                        )
+                        if(!sqlConnection!.isClosed();)
                         
                                     {
                                     
@@ -384,9 +368,7 @@ connectionVector!.add(sqlConnection);
                                     }
                                 
                         else {
-                            connectionVector= this.connectionHashMap!.get(url as Object);
-
-                         as Vector;
+                            connectionVector= this.connectionHashMap!.get(url as Object); as Vector;
     
 
                         if(connectionVector == 

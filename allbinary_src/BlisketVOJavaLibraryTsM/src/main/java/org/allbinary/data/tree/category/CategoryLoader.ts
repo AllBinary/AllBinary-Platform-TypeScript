@@ -130,17 +130,13 @@ var categoryInterface = categoryInterface
 ;
     
 
-                        if(!rootAbFile!.isDirectory();
-
-                        )
+                        if(!rootAbFile!.isDirectory();)
                         
                                     {
                                     rootAbFile!.mkdirs();
     
 
-                        if(!rootAbFile!.isDirectory();
-
-                        )
+                        if(!rootAbFile!.isDirectory();)
                         
                                     {
                                     
@@ -250,9 +246,7 @@ var categoryInterface = categoryInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addProperties(categoryInterface, categoryNode!.getChildNodes());
-
-                        ;
+                        return this.addProperties(categoryInterface, categoryNode!.getChildNodes());;
     
 
                 //: 
@@ -299,9 +293,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());
-
-                        ;
+                        return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());;
     
 
                 //: 
@@ -342,9 +334,7 @@ var categoryInterface = categoryInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getAll(document);
-
-                        ;
+                        return this.getAll(document);;
     
 
                 //: 
@@ -391,9 +381,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());
-
-                        ;
+                        return this.addProperties(loadedCategoryInterface, categoryNode!.getChildNodes());;
     
 
                 //: 
@@ -454,9 +442,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode);
-
-                         as CategoryInterface;
+    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode); as CategoryInterface;
         
         
 ;

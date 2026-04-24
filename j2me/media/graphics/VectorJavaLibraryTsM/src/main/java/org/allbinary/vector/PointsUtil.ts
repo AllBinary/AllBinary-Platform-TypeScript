@@ -141,9 +141,7 @@ var both = both
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adjust(points, both, both);
-
-                        ;
+                        return adjust(points, both, both);;
     
 }
 

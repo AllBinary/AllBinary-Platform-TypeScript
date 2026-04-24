@@ -83,9 +83,7 @@ export class TimeTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return calendar.get(Calendar.HOUR_OF_DAY);
-
-                        ;
+                        return calendar.get(Calendar.HOUR_OF_DAY);;
     
 }
 
@@ -121,9 +119,7 @@ calendar.setTimeInMillis(timeInMillis);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return calendar.get(Calendar.HOUR_OF_DAY);
-
-                        ;
+                        return calendar.get(Calendar.HOUR_OF_DAY);;
     
 }
 

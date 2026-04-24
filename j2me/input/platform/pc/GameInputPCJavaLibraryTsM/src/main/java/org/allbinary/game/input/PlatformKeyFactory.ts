@@ -68,9 +68,7 @@ var keyCode = keyCode
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCGameKey.getString(keyCode);
-
-                        ;
+                        return PCGameKey.getString(keyCode);;
     
 }
 
@@ -81,9 +79,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isSubmission(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isSubmission(input);;
     
 }
 
@@ -94,9 +90,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isDelete(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isDelete(input);;
     
 }
 
@@ -107,9 +101,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isBackSpace(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isBackSpace(input);;
     
 }
 
@@ -120,9 +112,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isUp(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isUp(input);;
     
 }
 
@@ -133,9 +123,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isDown(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isDown(input);;
     
 }
 
@@ -146,9 +134,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isEnter(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isEnter(input);;
     
 }
 
@@ -159,9 +145,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isLeft(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isLeft(input);;
     
 }
 
@@ -172,9 +156,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PCKeyFactory.getInstance()!.isRight(input);
-
-                        ;
+                        return PCKeyFactory.getInstance()!.isRight(input);;
     
 }
 

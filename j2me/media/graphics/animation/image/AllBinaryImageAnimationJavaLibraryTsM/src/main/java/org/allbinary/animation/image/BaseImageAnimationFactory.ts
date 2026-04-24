@@ -77,6 +77,23 @@ export class BaseImageAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
+                //@Throws(Error::class)
+            
+    public static create(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
+    //var image = image
+    //var sequenceArray = sequenceArray
+    //var width = width
+    //var height = height
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new BaseImageAnimationFactory(image, sequenceArray, width, height, 0, 0, animationBehaviorFactory);
+    
+}
+
+
     readonly animationFactoryImageScaleUtil: AnimationFactoryImageScaleUtil = AnimationFactoryImageScaleUtil.getInstance()!;
         
         
@@ -92,62 +109,15 @@ export class BaseImageAnimationFactory
     scaleProperties: ScaleProperties = ScaleProperties.instance;
         
         
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-}
-
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, sequenceArray, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-}
-
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, PrimitiveIntUtil.getArrayInstance(), width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
             //var image = image
     //var sequenceArray = sequenceArray
     //var width = width
     //var height = height
+    //var dx = dx
+    //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 this.animationFactoryInitializationVisitor= new AnimationFactoryInitializationVisitor();
     
@@ -161,6 +131,10 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     
 this.sequenceArray= sequenceArray;
     
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
 }
 
 
@@ -172,9 +146,7 @@ this.sequenceArray= sequenceArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullAnimationFactory.getFactoryInstance()!.getInstance(instanceId);
-
-                        ;
+                        return NullAnimationFactory.getFactoryInstance()!.getInstance(instanceId);;
     
 }
 
@@ -232,9 +204,7 @@ stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

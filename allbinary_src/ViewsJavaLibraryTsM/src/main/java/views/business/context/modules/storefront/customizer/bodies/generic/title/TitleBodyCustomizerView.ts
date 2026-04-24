@@ -134,9 +134,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, PageData.getInstance()!.NAME, pageName);
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, PageData.getInstance()!.NAME, pageName);;
     
 }
 
@@ -163,9 +161,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringEscapeUtils.unescapeHtml3(result);
-
-                        ;
+                        return StringEscapeUtils.unescapeHtml3(result);;
     
 
                 //: 

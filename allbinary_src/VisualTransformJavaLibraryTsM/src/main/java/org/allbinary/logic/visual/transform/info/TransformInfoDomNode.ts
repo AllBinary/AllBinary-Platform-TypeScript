@@ -103,9 +103,7 @@ public constructor (node: Node){
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME);
-
-                         as Attr;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME); as Attr;
         
         
 ;
@@ -236,9 +234,7 @@ this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
                         }
                             
 
-    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED);
-
-                         as Attr;
+    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED); as Attr;
         
         
 ;

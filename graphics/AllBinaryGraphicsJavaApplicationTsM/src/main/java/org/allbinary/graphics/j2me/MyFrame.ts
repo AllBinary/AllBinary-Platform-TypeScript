@@ -1086,9 +1086,7 @@ this.fileJDialog!.setVisible(true);
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent();
-
-                         as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
         
         
 ;
@@ -1131,9 +1129,7 @@ this.xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE,
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent();
-
-                         as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
         
         
 ;
@@ -1163,17 +1159,13 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
     public onHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
-    var angleIncrementInteger: Integer = hashMap!.get(Integer(Integer.valueOf(0)));
-
-                         as Integer;
+    var angleIncrementInteger: Integer = hashMap!.get(Integer(Integer.valueOf(0))); as Integer;
         
         
 ;
     
 
-    var totalRotationInteger: Integer = hashMap!.get(Integer(Integer.valueOf(1)));
-
-                         as Integer;
+    var totalRotationInteger: Integer = hashMap!.get(Integer(Integer.valueOf(1))); as Integer;
         
         
 ;
@@ -1188,9 +1180,7 @@ this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.toInt(), totalRota
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.jTabbedPane!.getSelectedComponent();
-
-                         as WorkAreaJPanelInterface;
+                        return this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
     
 }
 
@@ -1213,9 +1203,7 @@ this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.toInt(), totalRota
 index < numberOfTabs; index++)
         {
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index);
-
-                         as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index); as WorkAreaJPanelInterface;
         
         
 ;
@@ -1225,9 +1213,7 @@ workAreaJPanel!.deselect();
 }
 
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent();
-
-                         as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
         
         
 ;

@@ -58,6 +58,8 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicPlatormGeographicMapCellType } from "./BasicPlatormGeographicMapCellType.js";
+
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 
@@ -83,10 +85,10 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 this.maxTileId= maxTileId;
     
-new GeographicMapCellType(0);
+new GeographicMapCellType(0, 0);
     
 
-    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(1);
+    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.create(1)!;
         
         
 ;
@@ -142,15 +144,11 @@ new GeographicMapCellType(0);
 
         while(enumeration.hasMoreElements())
         {
-key= enumeration.nextElement()!;
-
-                         as String;
+key= enumeration.nextElement()!; as String;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key);
-
-                         as BasicArrayList;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
     
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     
@@ -189,9 +187,9 @@ this.JUMP_THRU_CELL_TYPE= JUMP_THRU_CELL_TYPE;
     
 this.LADDER_CELL_TYPE= LADDER_CELL_TYPE;
     
-new GeographicMapCellType(this.maxTileId -1);
+new GeographicMapCellType(this.maxTileId -1, 0);
     
-new GeographicMapCellType(this.maxTileId -2);
+new GeographicMapCellType(this.maxTileId -2, 0);
     
 }
 

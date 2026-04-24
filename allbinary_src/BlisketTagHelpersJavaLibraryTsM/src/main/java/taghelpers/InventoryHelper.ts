@@ -117,26 +117,18 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.response= pageContext!.getResponse();
-
-                         as HttpServletResponse;
+this.response= pageContext!.getResponse(); as HttpServletResponse;
     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;
     
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);
-
-                         as String;
+    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
         
         
 ;
@@ -251,9 +243,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 ;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS);
-
-                         as String;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS); as String;
         
         
 ;

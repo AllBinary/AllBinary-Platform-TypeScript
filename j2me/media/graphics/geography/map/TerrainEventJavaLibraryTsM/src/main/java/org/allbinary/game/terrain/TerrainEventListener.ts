@@ -16,6 +16,9 @@ import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventSt
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -44,7 +47,7 @@ export class TerrainEventListener
          implements TerrainEventListenerInterface {
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 

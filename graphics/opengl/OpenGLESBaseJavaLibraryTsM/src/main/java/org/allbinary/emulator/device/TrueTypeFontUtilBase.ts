@@ -149,12 +149,8 @@ this.shortPattern= shortPattern;
 this.scale= scale;
     
 
-                        if(!AndroidUtil.isAndroid();
-
-                        )
+                        if(!AndroidUtil.isAndroid();)
                         MyFont.getInstance();
-
-                        
 this.CELLS_PER_ROW= 16;
     
 this.fontSize= (20 +6) *this.scale;

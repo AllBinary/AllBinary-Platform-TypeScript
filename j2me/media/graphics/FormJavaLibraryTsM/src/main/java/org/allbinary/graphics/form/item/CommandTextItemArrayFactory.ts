@@ -45,6 +45,9 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -69,7 +72,7 @@ export class CommandTextItemArrayFactory
          {
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -112,9 +115,7 @@ this.list.clear();
 ;
     
 
-    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait();
-
-                         && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
+    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait(); && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
         
         
 ;
@@ -142,18 +143,14 @@ this.list.clear();
         
 index < size; index++)
         {
-command= vector.elementAt(index);
-
-                         as Command;
+command= vector.elementAt(index); as Command;
     
 
                         if(command.getPriority() < priorityLimit)
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command);
-
-                         as Boolean;
+    var aBoolean: Boolean = this.visitorInterface!.visit(command); as Boolean;
         
         
 ;

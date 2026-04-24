@@ -91,11 +91,7 @@ index < images.length; index++)
         
 ;
     
-images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth();
-
-                        , height, image.getHeight();
-
-                        , false);
+images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth(), height, image.getHeight(), false);
     
 }
 
@@ -118,13 +114,7 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width, image.getWidth();
-
-                        , height, image.getHeight();
-
-                        , false);
-
-                        ;
+                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width, image.getWidth(), height, image.getHeight(), false);;
     
 }
 

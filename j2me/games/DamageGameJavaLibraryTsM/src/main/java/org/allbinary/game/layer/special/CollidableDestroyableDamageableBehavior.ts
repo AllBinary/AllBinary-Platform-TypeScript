@@ -79,9 +79,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isCollision(collisionLayer);
-
-                        ;
+                        return super.isCollision(collisionLayer);;
     
 
                                     }

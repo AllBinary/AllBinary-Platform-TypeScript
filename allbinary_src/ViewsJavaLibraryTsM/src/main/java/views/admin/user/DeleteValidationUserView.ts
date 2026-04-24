@@ -88,9 +88,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -205,8 +203,6 @@ this.userName= new UserName(hashMap).
                                 )
                         stringBuffer!.append("User does not exist.<br />");
 
-                        
-
                                     }
                                 
                         else {
@@ -219,9 +215,7 @@ this.userName= new UserName(hashMap).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

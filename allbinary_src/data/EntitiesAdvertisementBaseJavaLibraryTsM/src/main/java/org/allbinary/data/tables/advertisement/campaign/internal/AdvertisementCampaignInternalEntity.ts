@@ -174,9 +174,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object);
-
-                         as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
         
         
 ;
@@ -252,9 +250,7 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID);
-
-                         as String, updatedValues);
+super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as String, updatedValues);
     
 }
 
@@ -290,9 +286,7 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -318,9 +312,7 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

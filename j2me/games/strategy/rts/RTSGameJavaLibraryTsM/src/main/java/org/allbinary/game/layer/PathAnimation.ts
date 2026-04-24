@@ -250,15 +250,11 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
                         }
                             
-geographicMapCellPosition= list.get(index);
-
-                         as GeographicMapCellPosition;
+geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
     
 point= geographicMapCellPosition!.getMidPoint();
     
-geographicMapCellPosition= list.get(index +1);
-
-                         as GeographicMapCellPosition;
+geographicMapCellPosition= list.get(index +1); as GeographicMapCellPosition;
     
 nextPoint= geographicMapCellPosition!.getMidPoint();
     

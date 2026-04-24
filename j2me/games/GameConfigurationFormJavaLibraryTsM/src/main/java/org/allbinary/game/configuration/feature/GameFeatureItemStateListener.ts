@@ -51,6 +51,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -81,16 +84,14 @@ export class GameFeatureItemStateListener
          implements ItemStateListener {
         
 
-    private toggleList: BasicArrayList = new BasicArrayList();
+    private toggleList: BasicArrayList = new BasicArrayListD();
         
         
 
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature
 
-                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature);
-
-                        )
+                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature);)
                         
                                     {
                                     GameFeatureItemStateListener.toggleList!.add(gameFeature);

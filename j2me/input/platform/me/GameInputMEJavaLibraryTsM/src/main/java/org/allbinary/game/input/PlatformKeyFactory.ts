@@ -68,9 +68,7 @@ var keyCode = keyCode
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEGameKey.getString(keyCode);
-
-                        ;
+                        return J2MEGameKey.getString(keyCode);;
     
 }
 
@@ -81,9 +79,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isSubmission(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isSubmission(input);;
     
 }
 
@@ -94,9 +90,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isDelete(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isDelete(input);;
     
 }
 
@@ -107,9 +101,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isBackSpace(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isBackSpace(input);;
     
 }
 
@@ -120,9 +112,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isLeft(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isLeft(input);;
     
 }
 
@@ -133,9 +123,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isRight(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isRight(input);;
     
 }
 
@@ -146,9 +134,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isUp(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isUp(input);;
     
 }
 
@@ -159,9 +145,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isDown(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isDown(input);;
     
 }
 
@@ -172,9 +156,7 @@ var input = input
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return J2MEKeyFactory.getInstance()!.isEnter(input);
-
-                        ;
+                        return J2MEKeyFactory.getInstance()!.isEnter(input);;
     
 }
 

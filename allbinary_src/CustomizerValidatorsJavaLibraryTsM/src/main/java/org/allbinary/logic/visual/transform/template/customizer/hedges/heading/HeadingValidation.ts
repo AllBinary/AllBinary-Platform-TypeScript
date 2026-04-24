@@ -176,9 +176,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.title.isValid();
-
-                        )
+                        if(!this.title.isValid();)
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -187,9 +185,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid();
-
-                        )
+                        if(!this.logo.isValid();)
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -204,11 +200,7 @@ this.logo= new LogoValidation(hashMap);
                         }
                             
 
-                        if(!titleValid;
-
-                         && !logoValid;
-
-                        )
+                        if(!titleValid; && !logoValid;)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -283,9 +275,7 @@ this.logo= new LogoValidation(hashMap);
 ;
     
 
-                        if(!this.title.isValid();
-
-                        )
+                        if(!this.title.isValid();)
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -294,9 +284,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid();
-
-                        )
+                        if(!this.logo.isValid();)
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -305,11 +293,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!titleValid;
-
-                         && !logoValid;
-
-                        )
+                        if(!titleValid; && !logoValid;)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -318,9 +302,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!valid;
-
-                        )
+                        if(!valid;)
                         
                                     {
                                     stringBuffer!.append("Include a title and/or logo for the header.");
@@ -332,9 +314,7 @@ this.logo= new LogoValidation(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

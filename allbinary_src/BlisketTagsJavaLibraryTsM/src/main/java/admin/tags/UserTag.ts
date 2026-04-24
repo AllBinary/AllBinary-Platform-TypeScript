@@ -101,9 +101,7 @@ this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                                     }

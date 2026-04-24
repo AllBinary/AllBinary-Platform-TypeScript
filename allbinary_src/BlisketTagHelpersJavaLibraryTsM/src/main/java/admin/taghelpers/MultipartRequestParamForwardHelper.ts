@@ -219,17 +219,13 @@ this.pageContext!.forward(stringBuffer!.toString());
 index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index);
-
-                         as String;
+    var key: string = this.paramVector!.get(index); as String;
         
         
 ;
     
 
-    var value: string = hashMap!.get(key as Object);
-
-                         as String;
+    var value: string = hashMap!.get(key as Object); as String;
         
         
 ;
@@ -261,9 +257,7 @@ stringBuffer!.append(value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -276,17 +270,13 @@ stringBuffer!.append(value);
 ;
     
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand);
-
-                         && command.compareTo(requestCommand) == 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand); && command.compareTo(requestCommand) == 0))
                         
                                     {
                                     

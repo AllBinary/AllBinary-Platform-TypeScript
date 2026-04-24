@@ -113,9 +113,7 @@ private constructor (){
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
@@ -127,9 +125,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }
@@ -141,9 +137,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;
@@ -156,15 +150,9 @@ originalPlayNImage= originalHTMLImage!.getImage();
     
 canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2);
     
-canvasSurface!.rotate(Math.toRadians(rotationInDegrees);
-
-                        );
+canvasSurface!.rotate(Math.toRadians(rotationInDegrees));
     
-canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width();
-
-                         /2,  -originalPlayNImage!.height();
-
-                         /2);
+canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width(); /2,  -originalPlayNImage!.height(); /2);
     
 
 

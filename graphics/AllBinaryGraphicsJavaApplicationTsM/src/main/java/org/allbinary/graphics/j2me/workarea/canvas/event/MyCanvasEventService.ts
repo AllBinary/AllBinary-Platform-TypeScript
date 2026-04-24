@@ -81,9 +81,7 @@ export class MyCanvasEventService
 
     public static addListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.add(listenerconstructor;
-
-                         as Class<*>, listener as java.util.EventListener);
+listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 
@@ -91,9 +89,7 @@ listenerList!.add(listenerconstructor;
 
     public static removeListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.remove(listenerconstructor;
-
-                         as Class<*>, listener as java.util.EventListener);
+listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 

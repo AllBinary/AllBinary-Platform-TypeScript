@@ -199,9 +199,7 @@ index < size; index++)
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object);
-
-                         as String;
+    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object); as String;
         
         
 ;
@@ -257,9 +255,7 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE);
-
-                         as String;
+    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE); as String;
         
         
 ;
@@ -432,9 +428,7 @@ index < size; index++)
 ;
     
 
-    var propertyValue: string = StringUtil.getInstance()!.getInstance(nextPackagePropertiesHashMap!.get(nextPropertyName as Object);
-
-                         as String)!;
+    var propertyValue: string = StringUtil.getInstance()!.getInstance(nextPackagePropertiesHashMap!.get(nextPropertyName as Object) as String)!;
         
         
 ;
@@ -536,9 +530,7 @@ var node = node
                                     }
                                 
 
-    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE);
-
-                         as String;
+    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE); as String;
         
         
 ;
@@ -636,9 +628,7 @@ var elementNodeVector = elementNodeVector
 index < size; index++)
         {
 
-    var existingElementNode: Node = elementNodeVector!.get(index);
-
-                         as Node;
+    var existingElementNode: Node = elementNodeVector!.get(index); as Node;
         
         
 ;
@@ -702,9 +692,7 @@ var nameSpaceRequestParam = nameSpaceRequestParam
 index < size; index++)
         {
 
-    var nextPackageName: string = packageVector!.get(index);
-
-                         as String;
+    var nextPackageName: string = packageVector!.get(index); as String;
         
         
 ;
@@ -747,9 +735,7 @@ index < size; index++)
 ;
     
 
-                        if((elementNodeVector!.length == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE);
-
-                        )
+                        if((elementNodeVector!.length == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE);)
                         
                                     {
                                     
@@ -822,9 +808,7 @@ node= nextNode;
                                     }
                                 
 
-    var nodeNameDuplicateNode: Node = elementNodeVector!.get(isElementValueTextNodeUniqueIndex);
-
-                         as Node;
+    var nodeNameDuplicateNode: Node = elementNodeVector!.get(isElementValueTextNodeUniqueIndex); as Node;
         
         
 ;
@@ -899,9 +883,7 @@ var document = document
 index < size; index++)
         {
 
-    var packageName: string = packageVector!.get(index);
-
-                         as String;
+    var packageName: string = packageVector!.get(index); as String;
         
         
 ;
@@ -926,9 +908,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addChildren(document, rootNode as Node, nameSpaceRequestParam);
-
-                        ;
+                        return this.addChildren(document, rootNode as Node, nameSpaceRequestParam);;
     
 
                                     }
@@ -1010,9 +990,7 @@ i < keySize; i++)
 ;
     
 
-    var className: string = anyType!.constructor.name.toString()!;
-
-                         as String;
+    var className: string = anyType!.constructor.name.toString()!; as String;
         
         
 ;
@@ -1027,15 +1005,11 @@ i < keySize; i++)
                                     }
                                 
 
-                        if(this.getMap()!.get(key);
-
-                         is String)
+                        if(this.getMap()!.get(key); is String)
                         
                                     {
                                     
-    var value: string = this.getMap()!.get(key);
-
-                         as String;
+    var value: string = this.getMap()!.get(key); as String;
         
         
 ;
@@ -1076,15 +1050,11 @@ hashMap!.put(key.toCharArray()
                                     }
                                 
                              else 
-                        if(this.getMap()!.get(key);
-
-                         is )
+                        if(this.getMap()!.get(key); is )
                         
                                     {
                                     
-    var values: string[] = this.getMap()!.get(key);
-
-                         as Array<String?>;
+    var values: string[] = this.getMap()!.get(key); as Array<String?>;
         
         
 ;

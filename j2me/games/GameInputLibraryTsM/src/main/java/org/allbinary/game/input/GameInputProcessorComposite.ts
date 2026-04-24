@@ -27,6 +27,9 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -57,7 +60,7 @@ export class GameInputProcessorComposite extends PlayerGameInput {
 
     private readonly gameInputProcessorInterface: GameInputProcessorInterface
 public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface){
-            super(new BasicArrayList(),  -1);
+            super(new BasicArrayListD(),  -1);
                     var name = name
 var gameInputProcessorInterface = gameInputProcessorInterface
 
@@ -104,9 +107,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(super.toString())!.append(NAME_LABEL)!.append(name)!.toString();
-
-                        ;
+                            append(super.toString())!.append(NAME_LABEL)!.append(name)!.toString();;
     
 }
 

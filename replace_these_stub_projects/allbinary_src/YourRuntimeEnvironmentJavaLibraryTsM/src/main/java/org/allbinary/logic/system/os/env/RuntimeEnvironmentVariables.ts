@@ -72,9 +72,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("java.java.home");
-
-                        ;
+                        return System.getProperty("java.java.home");;
     
 }
 
@@ -91,9 +89,7 @@ var var = var
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return environmentVariables!.getProperty(var);
-
-                        ;
+                        return environmentVariables!.getProperty(var);;
     
 }
 
@@ -262,9 +258,7 @@ environmentVariables!.put(key, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("java.io.tmpdir");
-
-                        ;
+                        return System.getProperty("java.io.tmpdir");;
     
 
                 //: 
@@ -297,9 +291,7 @@ environmentVariables!.put(key, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("java.library.path");
-
-                        ;
+                        return System.getProperty("java.library.path");;
     
 
                 //: 
@@ -332,9 +324,7 @@ environmentVariables!.put(key, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("java.class.path");
-
-                        ;
+                        return System.getProperty("java.class.path");;
     
 
                 //: 
@@ -397,9 +387,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("user.home");
-
-                        ;
+                        return System.getProperty("user.home");;
     
 
                 //: 
@@ -432,9 +420,7 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.getProperty("user.dir");
-
-                        ;
+                        return System.getProperty("user.dir");;
     
 
                 //: 

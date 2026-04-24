@@ -39,6 +39,9 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -75,7 +78,7 @@ export class PressGameKeyEventHandler extends BasicEventHandler {
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -87,9 +90,7 @@ private constructor (){
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);
-
-                        )
+                        if(!this.list.contains(playerGameInput);)
                         
                                     {
                                     this.list.add(playerGameInput);

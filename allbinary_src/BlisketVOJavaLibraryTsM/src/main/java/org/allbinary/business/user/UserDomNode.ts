@@ -104,9 +104,7 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, UserData.NAME, hashMap);
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, UserData.NAME, hashMap);;
     
 }
 

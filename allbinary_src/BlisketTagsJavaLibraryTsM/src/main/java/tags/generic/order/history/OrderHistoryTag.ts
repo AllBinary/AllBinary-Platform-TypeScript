@@ -109,9 +109,7 @@ this.status= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -206,9 +204,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                                     }

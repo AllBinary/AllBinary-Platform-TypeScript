@@ -213,9 +213,7 @@ mimeBodyParts[0]= new MimeBodyPart();
 mimeBodyParts[0]!.setText(textBody);
     
 
-                        if(!stringValidationUtil!.isEmpty(htmlAttachment);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(htmlAttachment);)
                         
                                     {
                                     
@@ -227,9 +225,7 @@ mimeBodyParts[0]!.setText(textBody);
 internetHeaders!.addHeader("Content-Type", "text/html");
     
 
-                        if(!stringValidationUtil!.isEmpty(contentBase);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(contentBase);)
                         
                                     {
                                     internetHeaders!.addHeader("Content-Base", contentBase);
@@ -473,9 +469,7 @@ this.msg.setContent(mimeMultipart);
         
 ;
     
-hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST);
-
-                         as String);
+hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as String);
     
 
     var addresses: Address[] = this.msg.getFrom()!;
@@ -584,9 +578,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 hashMap!.put(EmailData.SUBJECT, msg.getSubject());
     
 
-    var mimeMultipart: MimeMultipart = msg.getContent();
-
-                         as MimeMultipart;
+    var mimeMultipart: MimeMultipart = msg.getContent(); as MimeMultipart;
         
         
 ;
@@ -608,9 +600,7 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject());
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent();
-
-                         as String;
+    var content: string = mimeMultipart!.getBodyPart(index)!.getContent(); as String;
         
         
 ;

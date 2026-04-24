@@ -69,9 +69,7 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var lifeLayer: LifeLayer = this.getNextInstance();
-
-                         as LifeLayer;
+    var lifeLayer: LifeLayer = this.getNextInstance(); as LifeLayer;
         
         
 ;

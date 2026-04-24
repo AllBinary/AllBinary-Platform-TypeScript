@@ -73,9 +73,7 @@ this.bitmap.setPixels(pixels, offset, stride, x, y, width, height);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.bitmap.getWidth();
-
-                        ;
+                        return this.bitmap.getWidth();;
     
 }
 
@@ -85,9 +83,7 @@ this.bitmap.setPixels(pixels, offset, stride, x, y, width, height);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.bitmap.getHeight();
-
-                        ;
+                        return this.bitmap.getHeight();;
     
 }
 

@@ -56,7 +56,7 @@ import { Runnable } from "./Runnable.js";
 export class ImageThreadPool extends ThreadPool {
         
 
-    private static readonly instance: ThreadPool = new ImageThreadPool("ImageLoader", 1);
+    private static readonly instance: ThreadPool = new ImageThreadPool("ImageLoader", 1, ThreadPool.NORMAL_PRIORITY);
         
         
 
@@ -73,10 +73,11 @@ export class ImageThreadPool extends ThreadPool {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
-public constructor (poolName: string, numThreads: number){
-            super(poolName, numThreads);
+public constructor (poolName: string, numThreads: number, priority: number){
+            super(poolName, numThreads, priority);
                         //var poolName = poolName
     //var numThreads = numThreads
+    //var priority = priority
 
 
                             //For kotlin this is before the body of the constructor.

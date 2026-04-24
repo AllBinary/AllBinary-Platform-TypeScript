@@ -39,6 +39,9 @@ import { RTSPlayerLayerInterface } from "../../../../org/allbinary/game/layer/RT
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -163,7 +166,7 @@ export class RTSPlayerGameInput extends PlayerGameInput {
 
     private readonly gameCanvas: AllBinaryGameCanvas
 
-    private readonly motionGestureInputList: BasicArrayList = new BasicArrayList();
+    private readonly motionGestureInputList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -215,9 +218,7 @@ this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
-
-                         as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
         
         
 ;
@@ -349,9 +350,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index);
-
-                         as GameKeyEvent;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
         
         
 ;
@@ -412,9 +411,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
-
-                         as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
         
         
 ;
@@ -522,9 +519,7 @@ var graphics = graphics
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager();
-
-                         as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
         
         
 ;
@@ -576,9 +571,7 @@ graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt());
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index);
-
-                         as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
         
         
 ;

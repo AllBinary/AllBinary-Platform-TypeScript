@@ -199,9 +199,7 @@ var protocol = protocol
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringUtil.getInstance()!.getArrayInstance();
-
-                        ;
+                        return StringUtil.getInstance()!.getArrayInstance();;
     
 }
 
@@ -212,9 +210,7 @@ var content_type = content_type
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringUtil.getInstance()!.getArrayInstance();
-
-                        ;
+                        return StringUtil.getInstance()!.getArrayInstance();;
     
 }
 

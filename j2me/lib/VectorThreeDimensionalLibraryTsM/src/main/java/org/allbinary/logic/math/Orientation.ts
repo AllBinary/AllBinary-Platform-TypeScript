@@ -72,15 +72,15 @@ SINGLETON.roll.set(roll);
 }
 
 
-    public yaw: BasicDecimal = new BasicDecimal();
+    public yaw: BasicDecimal = new BasicDecimal(0);
         
         
 
-    public pitch: BasicDecimal = new BasicDecimal();
+    public pitch: BasicDecimal = new BasicDecimal(0);
         
         
 
-    public roll: BasicDecimal = new BasicDecimal();
+    public roll: BasicDecimal = new BasicDecimal(0);
         
         
 private constructor (yaw: number, pitch: number, roll: number){
@@ -121,9 +121,7 @@ stringBuffer!.append(this.roll.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

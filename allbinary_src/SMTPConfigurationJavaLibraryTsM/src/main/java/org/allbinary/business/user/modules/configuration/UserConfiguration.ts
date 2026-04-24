@@ -84,13 +84,9 @@ public constructor (hashMap: HashMap<any, any>){
         var hashMap = hashMap
 this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
     
-this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED);
-
-                         as String);
+this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED) as String);
     
-this.timeLastModified= new TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED);
-
-                         as String);
+this.timeLastModified= new TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as String);
     
 }
 

@@ -90,9 +90,7 @@ var gameInput = gameInput
 ;
     
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties();
-
-                         as VelocityInterface;
+    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
         
         
 ;
@@ -116,7 +114,7 @@ var gameInput = gameInput
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance(halfWidth, halfHeight +60)!;
+    var point: GPoint = PointFactory.getInstance()!.getInstance0(halfWidth, halfHeight +60)!;
         
         
 ;

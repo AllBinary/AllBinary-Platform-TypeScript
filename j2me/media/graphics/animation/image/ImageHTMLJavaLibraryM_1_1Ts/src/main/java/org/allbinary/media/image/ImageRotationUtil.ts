@@ -95,9 +95,7 @@ private constructor (){
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;
@@ -149,11 +147,7 @@ this.drawImage(originalImage, image, canvasSurface);
                         if(image.isMutable())
                         
                                     {
-                                    canvasSurface!.translate( -originalImage!.getWidth();
-
-                         /2,  -originalImage!.getHeight();
-
-                         /2);
+                                    canvasSurface!.translate( -originalImage!.getWidth(); /2,  -originalImage!.getHeight(); /2);
     
 canvasSurface!.clear();
     
@@ -163,9 +157,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rotateImage(originalImage, image, canvasSurface, totalAngle);
-
-                        ;
+                        return this.rotateImage(originalImage, image, canvasSurface, totalAngle);;
     
 
                                     }
@@ -192,9 +184,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                         if(image.isMutable())
                         
                                     {
-                                    canvasSurface!.rotate(Math.toRadians(totalAngle);
-
-                        );
+                                    canvasSurface!.rotate(Math.toRadians(totalAngle));
     
 
 
@@ -240,9 +230,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
@@ -254,18 +242,12 @@ originalPlayNImage= originalHTMLImage!.getImage();
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }
                             
-canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth();
-
-                         /2,  -originalImage!.getHeight();
-
-                         /2);
+canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth(); /2,  -originalImage!.getHeight(); /2);
     
 }
 

@@ -340,9 +340,7 @@ var buffer = buffer
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.gl11.glIsBuffer(buffer);
-
-                        ;
+                        return this.gl11.glIsBuffer(buffer);;
     
 }
 
@@ -353,9 +351,7 @@ var cap = cap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.gl11.glIsEnabled(cap);
-
-                        ;
+                        return this.gl11.glIsEnabled(cap);;
     
 }
 
@@ -366,9 +362,7 @@ var texture = texture
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.gl11.glIsTexture(texture);
-
-                        ;
+                        return this.gl11.glIsTexture(texture);;
     
 }
 

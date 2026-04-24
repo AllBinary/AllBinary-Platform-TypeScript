@@ -293,9 +293,7 @@ this.getGenericProfileActionJPanel()!.setGenericProfileAction(genericProfileActi
 this.getGenericProfileActionJPanel()!.updateProfileActionUI();
     
 
-    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout();
-
-                         as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout(); as javax.swing.GroupLayout;
         
         
 ;
@@ -317,9 +315,7 @@ var evt = evt
 
         try {
             
-    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue();
-
-                         as String;
+    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue(); as String;
         
         
 ;
@@ -422,9 +418,7 @@ this.setModel();
                                     {
                                     this.genericProfileActionsJList!.setSelectedValue(this.genericProfileActionsJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0);
-
-                         as String);
+this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as String);
     
 
                                     }

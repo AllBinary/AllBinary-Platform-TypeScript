@@ -71,6 +71,22 @@ import { SpecialAnimation } from "./SpecialAnimation.js";
 export class TitleAnimation extends SpecialAnimation {
         
 
+    public static create(animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number): TitleAnimation{
+    //var animationInterfaceArray = animationInterfaceArray
+    //var basicColorArray = basicColorArray
+    //var dxArray = dxArray
+    //var dyArray = dyArray
+    //var y = y
+    //var width = width
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new TitleAnimation(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, new IndexedAnimationBehavior(1, 250));
+    
+}
+
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -100,32 +116,6 @@ export class TitleAnimation extends SpecialAnimation {
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
         
         
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[]){
-            this(animationInterfaceArray, basicColorArray, dxArray, dyArray, 0, Integer.MIN_VALUE, new IndexedAnimationBehavior(1, 250));
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var basicColorArray = basicColorArray
-    //var dxArray = dxArray
-    //var dyArray = dyArray
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number){
-            this(animationInterfaceArray, basicColorArray, dxArray, dyArray, y, width, new IndexedAnimationBehavior(1, 250));
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var basicColorArray = basicColorArray
-    //var dxArray = dxArray
-    //var dyArray = dyArray
-    //var y = y
-    //var width = width
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var animationInterfaceArray = animationInterfaceArray
@@ -174,9 +164,7 @@ this.reset();
 ;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior();
-
-                         as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
         
         
 ;
@@ -206,9 +194,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior();
-
-                         as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
         
         
 ;
@@ -249,9 +235,7 @@ this.lastFrameStartTime= currentTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 
@@ -261,9 +245,7 @@ this.lastFrameStartTime= currentTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getSize();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getSize();;
     
 }
 
@@ -273,9 +255,7 @@ this.lastFrameStartTime= currentTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getFrame();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getFrame();;
     
 }
 
@@ -309,9 +289,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior();
-
-                         as IndexedAnimationBehavior);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior(); as IndexedAnimationBehavior);
         
         
 ;

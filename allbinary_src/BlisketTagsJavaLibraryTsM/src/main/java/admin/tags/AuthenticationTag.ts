@@ -180,9 +180,7 @@ this.roles= values;
     
 
     var result: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -191,9 +189,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -255,9 +251,7 @@ this.roles= values;
     
 
     var result: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -266,9 +260,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -330,9 +322,7 @@ this.roles= values;
     
 
     var resultInteger: Integer = method.invoke(anyType, 
-                            null);
-
-                         as Integer;
+                            null); as Integer;
         
         
 ;
@@ -341,9 +331,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultInteger!.toInt();
-
-                        ;
+                        return resultInteger!.toInt();;
     
 
                 //: 
@@ -405,9 +393,7 @@ this.roles= values;
     
 
     var resultBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -416,9 +402,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;
-
-                        ;
+                        return resultBoolean;;
     
 
                 //: 
@@ -496,9 +480,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs);
-
-                         as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
         
         
 ;
@@ -507,9 +489,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;
-
-                        ;
+                        return resultBoolean;;
     
 
                 //: 
@@ -571,9 +551,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -650,9 +628,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -745,9 +721,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs);
-
-                         as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
         
         
 ;
@@ -756,9 +730,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;
-
-                        ;
+                        return resultBoolean;;
     
 
                 //: 
@@ -836,9 +808,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs);
-
-                         as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
         
         
 ;
@@ -847,9 +817,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;
-
-                        ;
+                        return resultBoolean;;
     
 
                 //: 
@@ -911,9 +879,7 @@ this.roles= values;
     
 
     var resultBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -922,9 +888,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;
-
-                        ;
+                        return resultBoolean;;
     
 
                 //: 
@@ -975,9 +939,7 @@ this.roles= values;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -1019,9 +981,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(!this.newPassword();
-
-                        )
+                        if(!this.newPassword();)
                         
                                     {
                                     pageContext!.getOut()!.print("New Password Request Failed.<p/>");
@@ -1064,9 +1024,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(!this.changePassword();
-
-                        )
+                        if(!this.changePassword();)
                         
                                     {
                                     pageContext!.getOut()!.print("Password Change Attempt Failed.<p/>");
@@ -1112,9 +1070,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.invalidateSession();
-
-                        ;
+                        return this.invalidateSession();;
     
 
                                     }

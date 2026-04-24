@@ -123,9 +123,7 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN);
-
-                        ;
+                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN);;
     
 }
 
@@ -136,9 +134,7 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH);
-
-                        ;
+                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH);;
     
 }
 
@@ -149,9 +145,7 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT);
-
-                        ;
+                        return this.isFeature(activity, this.FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT);;
     
 }
 
@@ -163,9 +157,7 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return activity.getPackageManager()!.hasSystemFeature(property);
-
-                        ;
+                        return activity.getPackageManager()!.hasSystemFeature(property);;
     
 }
 

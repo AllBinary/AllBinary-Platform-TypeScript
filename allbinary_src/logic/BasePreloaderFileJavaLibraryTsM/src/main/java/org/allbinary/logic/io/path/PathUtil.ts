@@ -139,9 +139,7 @@ var abFilePath = abFilePath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getExtension(abFilePath!.toString());
-
-                        ;
+                        return this.getExtension(abFilePath!.toString());;
     
 }
 
@@ -152,9 +150,7 @@ var abPath = abPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getExtension(abPath!.toString());
-
-                        ;
+                        return this.getExtension(abPath!.toString());;
     
 }
 
@@ -199,9 +195,7 @@ var abFilePath = abFilePath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getWithoutExtension(abFilePath!.toString());
-
-                        ;
+                        return this.getWithoutExtension(abFilePath!.toString());;
     
 }
 
@@ -214,9 +208,7 @@ var abPath = abPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getWithoutExtension(abPath!.toString());
-
-                        ;
+                        return this.getWithoutExtension(abPath!.toString());;
     
 }
 
@@ -364,9 +356,7 @@ var path = path
     public adjustStart(path: string): string{
 var path = path
 
-                        if(!this.isValidStart(path);
-
-                        )
+                        if(!this.isValidStart(path);)
                         
                                     {
                                     path= this.abPathData!.SEPARATOR +path;
@@ -386,9 +376,7 @@ var path = path
     public adjustEnd(path: string): string{
 var path = path
 
-                        if(!this.isValidEnd(path);
-
-                        )
+                        if(!this.isValidEnd(path);)
                         
                                     {
                                     path= path +this.abPathData!.SEPARATOR;
@@ -484,9 +472,7 @@ var categoryPath = categoryPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getNameFromPath(categoryName);
-
-                        ;
+                        return this.getNameFromPath(categoryName);;
     
 
                                     }
@@ -551,9 +537,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.removeNameFromPath(path.substring(0, endIndex -1));
-
-                        ;
+                        return this.removeNameFromPath(path.substring(0, endIndex -1));;
     
 
                                     }

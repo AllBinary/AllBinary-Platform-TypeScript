@@ -125,9 +125,7 @@ this.rectangle= rectangle;
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas();
-
-                         as AllBinaryGameCanvas;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
         
         
 ;
@@ -355,9 +353,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas();
-
-                         as AllBinaryGameCanvas;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
         
         
 ;

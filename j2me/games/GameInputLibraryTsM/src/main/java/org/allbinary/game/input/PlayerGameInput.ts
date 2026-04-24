@@ -47,6 +47,9 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -79,7 +82,7 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
 
     private readonly playerInputId: number
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number){
-            this(gameKeyEventList, new BasicArrayList(), playerInputId);
+            this(gameKeyEventList, new BasicArrayListD(), playerInputId);
                         //var gameKeyEventList = gameKeyEventList
     //var playerInputId = playerInputId
 

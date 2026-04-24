@@ -124,9 +124,7 @@ private constructor (){
     //var bufferedImage = bufferedImage
     //var totalAngle = totalAngle
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -155,9 +153,7 @@ private constructor (){
     //var gc = gc
     //var angle = angle
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -189,9 +185,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage2(originalSwtImage, newSwtImage, gc, totalAngle);
-
-                        ;
+                        return this.getRotatedImage2(originalSwtImage, newSwtImage, gc, totalAngle);;
     
 }
 
@@ -205,9 +199,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage2(bufferedImage, newSwtImage, gc, totalAngle);
-
-                        ;
+                        return this.getRotatedImage2(bufferedImage, newSwtImage, gc, totalAngle);;
     
 }
 

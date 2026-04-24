@@ -24,6 +24,9 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -68,7 +71,7 @@ export class AbeNoLicense
 }
 
 
-    public serverVector: BasicArrayList = new BasicArrayList();
+    public serverVector: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){

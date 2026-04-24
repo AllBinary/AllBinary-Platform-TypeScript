@@ -33,6 +33,9 @@ import { VisitorFileFilter } from "../../../../../org/allbinary/logic/io/file/fi
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -116,7 +119,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -185,7 +188,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -236,7 +239,7 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
         try {
             
-    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayList();
+    var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;

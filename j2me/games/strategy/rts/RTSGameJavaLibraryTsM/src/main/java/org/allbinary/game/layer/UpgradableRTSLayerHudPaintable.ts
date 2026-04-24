@@ -150,9 +150,7 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer();
-
-                         as RTSLayer;
+    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
         
         
 ;
@@ -178,9 +176,7 @@ this.setName(rtsLayer!.getName());
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer();
-
-                         as RTSLayer;
+    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
         
         
 ;

@@ -308,17 +308,13 @@ this.timeDelayHelper!.delay= 0;
 --index >= 0; )
         {
 
-    var sound: Sound = this.songList!.get(index);
-
-                         as Sound;
+    var sound: Sound = this.songList!.get(index); as Sound;
         
         
 ;
     
 
-    var duration: number = sound.getDuration();
-
-                        ;
+    var duration: number = sound.getDuration();;
         
         
 ;
@@ -340,9 +336,7 @@ PreLogUtil.put(new StringBuilder().
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList);
-
-                         as Sound;
+                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList); as Sound;
     
 
                                     }
@@ -356,9 +350,7 @@ this.nextSongSound= NoSound.getInstance();
                         }
                             
 
-    var duration: number = this.currentSongSound!.getDuration();
-
-                        ;
+    var duration: number = this.currentSongSound!.getDuration();;
         
         
 ;

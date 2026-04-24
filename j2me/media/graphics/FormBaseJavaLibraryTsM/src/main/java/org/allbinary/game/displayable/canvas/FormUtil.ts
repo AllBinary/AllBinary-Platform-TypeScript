@@ -86,7 +86,13 @@ export class FormUtil
 ;
     
 
-    var rectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
+
+    var rectangle: Rectangle = new Rectangle(pointFactory!.getInstance0(30, 10), displayInfo!.getLastWidth() -30, displayInfo!.getLastHeight() -35);
         
         
 ;
@@ -120,16 +126,22 @@ export class FormUtil
 ;
     
 
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
+
                         if(displayInfo!.getLastHeight() < 320)
                         
                                     {
-                                    popupMenuRectangle= new Rectangle(PointFactory.getInstance()!.getInstance(0, 25), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *4) +2);
+                                    popupMenuRectangle= new Rectangle(pointFactory!.getInstance0(0, 25), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *4) +2);
     
 
                                     }
                                 
                         else {
-                            popupMenuRectangle= new Rectangle(PointFactory.getInstance()!.getInstance(0, displayInfo!.getLastHalfHeight() -70), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *5));
+                            popupMenuRectangle= new Rectangle(pointFactory!.getInstance0(0, displayInfo!.getLastHalfHeight() -70), myFont!.stringWidth(3), (myFont!.DEFAULT_CHAR_HEIGHT *5));
     
 
                         }

@@ -36,6 +36,9 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -128,7 +131,7 @@ export class BasicTouchInputFactory
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -195,9 +198,7 @@ this.logUtil!.putF(new StringMaker().
 index >= 0; index--)
         {
 
-    var touchButtonInput: TouchButtonInput = list.get(index);
-
-                         as TouchButtonInput;
+    var touchButtonInput: TouchButtonInput = list.get(index); as TouchButtonInput;
         
         
 ;

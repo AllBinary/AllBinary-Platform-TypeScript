@@ -113,9 +113,7 @@ var timeDelayHelper = timeDelayHelper
 ;
     
 
-                        if(!playnImage!.getImage()!.isReady();
-
-                         && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
+                        if(!playnImage!.getImage()!.isReady(); && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
                         
                                     {
                                     
@@ -160,9 +158,7 @@ var timeDelayHelper = timeDelayHelper
 ;
     
 
-        while(!playnImage!.getImage()!.isReady();
-
-                         && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
+        while(!playnImage!.getImage()!.isReady(); && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
         {
 
                         if(timeDelayHelper!.isTime())
@@ -216,9 +212,7 @@ PreLogUtil.put("Total: " +size, this, "waitForAll");
         
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!);
-
-                         as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
     
 }
 

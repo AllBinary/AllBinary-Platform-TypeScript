@@ -140,17 +140,13 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
 i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i);
-
-                         as ValidationInterface;
+    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i); as ValidationInterface;
         
         
 ;
     
 
-                        if(!styleValidationInterface!.isValid();
-
-                        )
+                        if(!styleValidationInterface!.isValid();)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -212,9 +208,7 @@ i < size; i++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -296,9 +290,7 @@ node.appendChild(styleNode);
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i);
-
-                         as DomNodeInterface;
+    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i); as DomNodeInterface;
         
         
 ;

@@ -48,6 +48,9 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -82,7 +85,7 @@ export class CheatGameInputProcessor extends PlayerGameInput {
 
     private readonly gameCanvas: AllBinaryGameCanvas
 public constructor (gameCanvas: AllBinaryGameCanvas){
-            super(new BasicArrayList(),  -1);
+            super(new BasicArrayListD(),  -1);
                     var gameCanvas = gameCanvas
 
 

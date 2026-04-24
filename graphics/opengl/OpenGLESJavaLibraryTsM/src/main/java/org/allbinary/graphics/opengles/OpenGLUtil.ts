@@ -61,6 +61,9 @@ import { SynchObject } from "../../../../org/allbinary/thread/SynchObject.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -137,11 +140,11 @@ export class OpenGLUtil
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly runnableList: BasicArrayList = new BasicArrayList();
+    public readonly runnableList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -225,9 +228,7 @@ graphics.update();
     
 progressCanvas!.update(graphics);
     
-getInstance = OpenGLImageCacheFactory.getInstance();
-
-                        getInstance as OpenGLImageCache
+getInstance = OpenGLImageCacheFactory.getInstance();getInstance as OpenGLImageCache
 getInstance.
                     update(gl);
     
@@ -304,9 +305,7 @@ this.list.clear();
         //mutex.withLock
         {
 
-                        if(!this.runnableList!.contains(runnable);
-
-                        )
+                        if(!this.runnableList!.contains(runnable);)
                         
                                     {
                                     this.runnableList!.add(runnable);
@@ -349,9 +348,7 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
         
 index < size; index++)
         {
-runnable= this.runnableList!.get(index);
-
-                         as Runnable;
+runnable= this.runnableList!.get(index); as Runnable;
     
 runnable.run();
     

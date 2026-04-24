@@ -134,9 +134,7 @@ this.title= new TitleValidation(hashMap);
                                     }
                                 
 
-                        if(!this.title.isValid();
-
-                        )
+                        if(!this.title.isValid();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -193,9 +191,7 @@ this.title= new TitleValidation(hashMap);
 ;
     
 
-                        if(!this.title.isValid();
-
-                        )
+                        if(!this.title.isValid();)
                         
                                     {
                                     stringBuffer!.append(this.title.validationInfo());
@@ -207,9 +203,7 @@ this.title= new TitleValidation(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

@@ -152,9 +152,7 @@ this.setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0);
-
-                         as ImageComparisonResult;
+    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0); as ImageComparisonResult;
         
         
 ;

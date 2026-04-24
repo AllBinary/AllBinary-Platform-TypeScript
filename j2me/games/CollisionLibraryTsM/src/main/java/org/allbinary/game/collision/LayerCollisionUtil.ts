@@ -85,9 +85,7 @@ private constructor (){
 ;
     
 
-                        if(OpenGLFeatureUtil.getInstance()!.isAnyThreed() && !features.isFeature(gameFeatureFactory!.COLLISIONS_FORCED_TWO_DIMENSIONAL);
-
-                        )
+                        if(OpenGLFeatureUtil.getInstance()!.isAnyThreed() && !features.isFeature(gameFeatureFactory!.COLLISIONS_FORCED_TWO_DIMENSIONAL);)
                         
                                     {
                                     this.collisionProcessor= new CollisionThreedProcessor();
@@ -111,9 +109,7 @@ var myLayer2 = myLayer2
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.collisionProcessor!.isCollision(myLayer, myLayer2);
-
-                        ;
+                        return this.collisionProcessor!.isCollision(myLayer, myLayer2);;
     
 }
 

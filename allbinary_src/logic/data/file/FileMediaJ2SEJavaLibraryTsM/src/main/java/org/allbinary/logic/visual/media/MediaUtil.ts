@@ -149,9 +149,7 @@ var newHeight = newHeight
 
                         if(originalImageFile == 
                                     null
-                                 || !originalImageFile!.isFile();
-
-                        )
+                                 || !originalImageFile!.isFile();)
                         
                                     {
                                     

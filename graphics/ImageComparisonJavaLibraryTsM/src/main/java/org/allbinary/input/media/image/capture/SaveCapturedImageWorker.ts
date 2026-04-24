@@ -138,9 +138,7 @@ setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0);
-
-                         as CapturedImageWorkerResultsEvent);
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0); as CapturedImageWorkerResultsEvent);
         
         
 ;

@@ -60,6 +60,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -116,7 +119,7 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 
     private isPaused: boolean= false
 public constructor (){
-            this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayList());
+            this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayListD());
                     
 
                             //For kotlin this is before the body of the constructor.
@@ -175,9 +178,7 @@ var command = command
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.commandStack!.contains(command);
-
-                        ;
+                        return this.commandStack!.contains(command);;
     
 }
 
@@ -186,9 +187,7 @@ var command = command
     public addCommand(command: Command){
 var command = command
 
-                        if(!this.commandStack!.contains(command);
-
-                        )
+                        if(!this.commandStack!.contains(command);)
                         
                                     {
                                     this.commandStack!.push(command);
@@ -229,9 +228,7 @@ super.removeCommand(command);
         
 index < size; index++)
         {
-super.removeCommand(this.commandStack!.pop();
-
-                         as Command);
+super.removeCommand(this.commandStack!.pop() as Command);
     
 }
 
@@ -328,9 +325,7 @@ var displayable = displayable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.childNameList!.contains(displayable.name);
-
-                        ;
+                        return this.childNameList!.contains(displayable.name);;
     
 }
 

@@ -281,9 +281,7 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.transformInfoFactoryInterface!.getInstance(hashMap, propertiesHashMap, pageContext);
-
-                        ;
+                        return this.transformInfoFactoryInterface!.getInstance(hashMap, propertiesHashMap, pageContext);;
     
 
                                     }
@@ -334,9 +332,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i);
-
-                         as String;
+    var objectConfigString: string = objectConfigColumnVector!.get(i); as String;
         
         
 ;
@@ -389,9 +385,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i);
-
-                         as String;
+    var viewNameString: string = columnVector!.get(i); as String;
         
         
 ;
@@ -484,9 +478,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -496,18 +488,14 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME);
-
-                         as String, updatedValues);
+super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues);
     
 }
 
@@ -517,9 +505,7 @@ super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(Tran
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

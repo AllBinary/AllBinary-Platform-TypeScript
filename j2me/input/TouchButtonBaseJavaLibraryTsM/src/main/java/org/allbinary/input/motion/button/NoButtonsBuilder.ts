@@ -82,9 +82,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_LIST, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 }
 

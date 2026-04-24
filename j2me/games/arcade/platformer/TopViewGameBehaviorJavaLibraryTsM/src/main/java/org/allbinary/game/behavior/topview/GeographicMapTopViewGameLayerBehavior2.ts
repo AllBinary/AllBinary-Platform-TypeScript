@@ -177,9 +177,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -207,9 +205,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -237,9 +233,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -267,9 +261,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -295,9 +287,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -323,9 +313,7 @@ this.gravity();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);
-
-                        ;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
     
 }
 

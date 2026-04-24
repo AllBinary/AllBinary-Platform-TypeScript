@@ -167,9 +167,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -190,9 +188,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return generateFromTestData(transformInfoInterface);
-
-                        ;
+                        return generateFromTestData(transformInfoInterface);;
     
 
                                     }
@@ -335,17 +331,13 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
     
 
-    var gatewayName: string = weblisketSession!.getPaymentMethod();
-
-                         as String;
+    var gatewayName: string = weblisketSession!.getPaymentMethod(); as String;
         
         
 ;

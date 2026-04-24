@@ -113,25 +113,19 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index as Object);
-
-                         as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index as Object); as HashMap<any, any>;
         
         
 ;
     
 
-    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY);
-
-                         as String;
+    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName);
-
-                         && categoryName!.startsWith(category))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName); && categoryName!.startsWith(category))
                         
                                     {
                                     keywords.add(hashMap!.get(column as Object));

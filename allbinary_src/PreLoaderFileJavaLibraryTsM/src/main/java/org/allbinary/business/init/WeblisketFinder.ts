@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -132,9 +135,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return subDirectory!.search(KEY, new AbFile(path));
-
-                        ;
+                        return subDirectory!.search(KEY, new AbFile(path));;
     
 
                 //: 
@@ -195,9 +196,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return filePath!.substring(0, end);
-
-                        ;
+                        return filePath!.substring(0, end);;
     
 
                 //: 

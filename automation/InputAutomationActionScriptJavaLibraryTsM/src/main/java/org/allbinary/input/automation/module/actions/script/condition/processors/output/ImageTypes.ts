@@ -204,9 +204,7 @@ var document = document
 index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index);
-
-                         as InputImageType;
+    var imageType: InputImageType = this.vector.get(index); as InputImageType;
         
         
 ;
@@ -250,9 +248,7 @@ stringBuffer!.append("ImageTypes: ");
 index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index);
-
-                         as InputImageType;
+    var imageType: InputImageType = this.vector.get(index); as InputImageType;
         
         
 ;
@@ -262,17 +258,13 @@ stringBuffer!.append(imageType!.getName());
 
                         if(index < size -1)
                         stringBuffer!.append(", ");
-
-                        
 }
 
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

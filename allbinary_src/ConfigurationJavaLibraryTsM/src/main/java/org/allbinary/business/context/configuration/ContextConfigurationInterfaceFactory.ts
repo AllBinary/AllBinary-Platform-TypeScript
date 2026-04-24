@@ -106,9 +106,7 @@ private constructor (){
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new ContextConfigurationView(contextConfigurationNode).
-                            getContextConfigurationInterface();
-
-                         as ContextConfigurationInterface;
+                            getContextConfigurationInterface(); as ContextConfigurationInterface;
     
 }
 
@@ -146,9 +144,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(document);
-
-                        ;
+                        return this.getInstance(document);;
     
 }
 

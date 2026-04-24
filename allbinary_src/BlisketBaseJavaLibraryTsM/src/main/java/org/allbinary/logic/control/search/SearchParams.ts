@@ -379,9 +379,7 @@ index < size; index++)
 ;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key);
-
-                         as String;
+    var searchValue: string = this.columnsAndSearchValues!.get(key); as String;
         
         
 ;
@@ -407,9 +405,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, SearchData.ORDER, ToDomHelper.convertNull(this.getOrder()));
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, SearchData.ORDER, ToDomHelper.convertNull(this.getOrder()));;
     
 }
 
@@ -422,9 +418,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, SearchData.SORTBY, ToDomHelper.convertNull(this.getSortBy()));
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, SearchData.SORTBY, ToDomHelper.convertNull(this.getSortBy()));;
     
 }
 
@@ -437,9 +431,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, SearchData.LENGTH, ToDomHelper.convertNull(this.getLength()));
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, SearchData.LENGTH, ToDomHelper.convertNull(this.getLength()));;
     
 }
 

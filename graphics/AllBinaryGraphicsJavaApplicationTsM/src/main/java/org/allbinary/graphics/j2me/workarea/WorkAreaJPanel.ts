@@ -224,9 +224,7 @@ initMyComponents(dimension);
 index < numberOfFrames; index++)
         {
 
-    var node: Node = canvasNodeList!.get(index);
-
-                         as Node;
+    var node: Node = canvasNodeList!.get(index); as Node;
         
         
 ;
@@ -243,9 +241,7 @@ this.canvasJPanelList!.add(canvasJPanel);
 
 this.selectedFrame= 0;
     
-this.canvasHolderJPanel!.add(this.getCurrentFrame();
-
-                         as Component);
+this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component);
     
 this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
     
@@ -388,9 +384,7 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener);
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
         
         
 ;
@@ -457,9 +451,7 @@ this.canvasHolderJPanel!.removeAll();
 
 
     public enableCanvas(){
-this.canvasHolderJPanel!.add(this.getCurrentFrame();
-
-                         as Component);
+this.canvasHolderJPanel!.add(this.getCurrentFrame() as Component);
     
 }
 
@@ -519,9 +511,7 @@ var factor = factor
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
         
         
 ;
@@ -538,9 +528,7 @@ canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.canvasJPanelList!.get(this.selectedFrame);
-
-                         as CanvasJPanel;
+                        return this.canvasJPanelList!.get(this.selectedFrame); as CanvasJPanel;
     
 }
 
@@ -578,17 +566,13 @@ var treeNode = treeNode
                         
                                     {
                                     
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object);
-
-                         as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object); as Integer;
         
         
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.toInt());
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.toInt()); as CanvasJPanel;
         
         
 ;
@@ -623,9 +607,7 @@ var totalAngle = totalAngle
 index < increments; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
         
         
 ;
@@ -647,9 +629,7 @@ initDuplicate(newCanvasJPanel);
 
     public explodeAll(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
         
         
 ;
@@ -675,9 +655,7 @@ var explodeType = explodeType
 index < numberOfFrames; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
         
         
 ;
@@ -701,9 +679,7 @@ initDuplicate(newCanvasJPanel);
             
     public autoMirror(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
         
         
 ;
@@ -729,9 +705,7 @@ var index = index
                         
                                     {
                                     
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
         
         
 ;
@@ -772,9 +746,7 @@ var treeNode = treeNode
 ;
     
 
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object);
-
-                         as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object); as Integer;
         
         
 ;
@@ -841,9 +813,7 @@ nameNode!.appendChild(nameTextNode);
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index);
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
         
         
 ;
@@ -954,9 +924,7 @@ var evt = evt
                                     this.canvasHolderJPanel!.removeAll();
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode());
-
-                         as Integer;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()); as Integer;
         
         
 ;
@@ -1004,17 +972,13 @@ var evt = evt
 ;
     
 
-    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode());
-
-                         as Integer;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()); as Integer;
         
         
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.toInt());
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.toInt()); as CanvasJPanel;
         
         
 ;
@@ -1057,9 +1021,7 @@ this.autoExplode(10, 0);
             
     public center(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame();
-
-                         as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
         
         
 ;
@@ -1105,9 +1067,7 @@ this.center();
 index < size; index++)
         {
 
-                        if(!this.isPlaying();
-
-                        )
+                        if(!this.isPlaying();)
                         
                                     {
                                     break;

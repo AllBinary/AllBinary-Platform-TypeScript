@@ -270,9 +270,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object);
-
-                        as Array<Rectangle[]?>;
+                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object);as Array<Rectangle[]?>;
     
 }
 
@@ -337,9 +335,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();
-
-                        ;
+                            append(this.constructor.name.toString()!)!.append(CommonSeps.getInstance()!.SEMICOLON)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.name)!.toString();;
     
 }
 

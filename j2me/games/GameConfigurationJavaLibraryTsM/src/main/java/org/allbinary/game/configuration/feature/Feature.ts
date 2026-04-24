@@ -58,9 +58,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(name as Object);
-
-                         as Feature;
+                        return hashtable.get(name as Object); as Feature;
     
 }
 
@@ -92,9 +90,7 @@ ChangedGameFeatureListener.getInstance()!.add(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getName();
-
-                        ;
+                        return getName();;
     
 }
 

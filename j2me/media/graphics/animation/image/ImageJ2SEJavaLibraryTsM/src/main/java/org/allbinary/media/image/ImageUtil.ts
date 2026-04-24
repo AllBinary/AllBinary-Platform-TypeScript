@@ -145,9 +145,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gd.getDefaultConfiguration();
-
-                        ;
+                        return gd.getDefaultConfiguration();;
     
 }
 
@@ -165,9 +163,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsConfiguration!.createCompatibleImage(width, height, Transparency.TRANSLUCENT);
-
-                        ;
+                        return graphicsConfiguration!.createCompatibleImage(width, height, Transparency.TRANSLUCENT);;
     
 }
 
@@ -345,9 +341,7 @@ var newHeight = newHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);
-
-                        ;
+                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);;
     
 }
 
@@ -363,9 +357,7 @@ var newHeight = newHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);
-
-                        ;
+                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);;
     
 }
 
@@ -650,9 +642,7 @@ g2d.dispose();
         
 ;
     
-bufferedImage= j2seImage!.getImage();
-
-                         as BufferedImage;
+bufferedImage= j2seImage!.getImage(); as BufferedImage;
     
 
                                     }
@@ -664,9 +654,7 @@ bufferedImage= j2seImage!.getImage();
         
 ;
     
-bufferedImage= j2seImage!.getImage();
-
-                         as BufferedImage;
+bufferedImage= j2seImage!.getImage(); as BufferedImage;
     
 
                         }
@@ -712,9 +700,7 @@ stringBuffer!.appendint(bufferedImage!.getType());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

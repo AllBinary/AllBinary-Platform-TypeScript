@@ -41,6 +41,9 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -73,7 +76,7 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
  constructor (){
@@ -85,9 +88,7 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);
-
-                        )
+                        if(!this.list.contains(playerGameInput);)
                         
                                     {
                                     this.list.add(playerGameInput);
@@ -174,9 +175,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -250,9 +249,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -332,9 +329,7 @@ index < this.list.size(); index++)
         {
 
         try {
-            eventListenerInterface= this.list.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.list.get(index); as EventListenerInterface;
     
 stringBuffer!.append(LISTENER_LABEL);
     
@@ -354,9 +349,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

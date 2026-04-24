@@ -24,6 +24,9 @@ import { GL } from "../../../../../javax/microedition/khronos/opengles/GL.js";
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
+import { CollidableNeverCollideBehaviorFactory } from "../../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js";
+
+    
 import { DamageableInterface } from "../../../../../org/allbinary/game/combat/damage/DamageableInterface.js";
 
     
@@ -78,6 +81,9 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { PositionStrings } from "../../../../../org/allbinary/math/PositionStrings.js";
 
     
@@ -111,7 +117,7 @@ import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
 export class CollidableDestroyableDamageableLayer extends CollidableCompositeLayer implements DestroyableInterface, DamageableInterface, PickupCompositeInterface, SpecialGameInputInterface {
         
 
-    public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
+    public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
         
         
 
@@ -150,27 +156,8 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
     public isDragged: boolean = false;
         
         
-public constructor (groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(layerInfo, viewPosition);
-                        //var groupInterface = groupInterface
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.initWidth= layerInfo!.getWidth();
-    
-this.initHeight= layerInfo!.getHeight();
-    
-this.groupInterface= groupInterface;
-    
-this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
-    
-}
-
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(name, layerInfo, viewPosition);
+            super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
                         //var groupInterface = groupInterface
     //var name = name
     //var layerInfo = layerInfo
@@ -631,9 +618,7 @@ this.toString(stringBuffer);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

@@ -120,9 +120,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(StreetAddressData.ID, index.toString();
-
-                         as String);
+whereHashMap!.put(StreetAddressData.ID, index.toString() as String);
     
 super.deleteWhere(whereHashMap);
     
@@ -291,9 +289,7 @@ this.setDefault(address.getId());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getLargestIntegerInColumnWhere(StreetAddressData.ID, UserData.USERNAME, userName);
-
-                        ;
+                        return super.getLargestIntegerInColumnWhere(StreetAddressData.ID, UserData.USERNAME, userName);;
     
 }
 
@@ -338,9 +334,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var addressHashMap: HashMap<any, any> = addressList!.get(index);
-
-                         as HashMap<any, any>;
+    var addressHashMap: HashMap<any, any> = addressList!.get(index); as HashMap<any, any>;
         
         
 ;
@@ -652,9 +646,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -664,9 +656,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
@@ -676,9 +666,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(this.getTableName())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

@@ -39,7 +39,13 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 import { Angle } from "../../../../org/allbinary/math/Angle.js";
 
     
+import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+
+    
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+
+    
+import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
 
     
 
@@ -66,7 +72,7 @@ export class SimultaneousCompoundRotationAnimation extends RotationAnimation {
 
     private animationInterfaceArray: RotationAnimation[]
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
-            super(animationBehavior);
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior);
                         //var animationInterfaceArray = animationInterfaceArray
     //var animationBehavior = animationBehavior
 
@@ -103,9 +109,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getFrame();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getFrame();;
     
 }
 
@@ -117,9 +121,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getAnimationSize();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getAnimationSize();;
     
 }
 
@@ -129,9 +131,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getSize();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getSize();;
     
 }
 
@@ -224,9 +224,7 @@ this.animationInterfaceArray[index]!.nextRotation();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 
@@ -348,9 +346,7 @@ this.animationInterfaceArray[index]!.adjustFrame(angle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animationInterfaceArray[0]!.getAngleInfoP();
-
-                        ;
+                        return this.animationInterfaceArray[0]!.getAngleInfoP();;
     
 }
 

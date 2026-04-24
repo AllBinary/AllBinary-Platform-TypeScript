@@ -41,6 +41,9 @@ import { HtmlNameMathData } from "../../../../../../org/allbinary/logic/visual/d
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -117,7 +120,7 @@ this.value= value;
 ;
     
 
-    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, new BasicArrayList())!;
+    var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, new BasicArrayListD())!;
         
         
 ;
@@ -144,7 +147,7 @@ this.value= value;
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -165,9 +168,7 @@ this.value= value;
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++);
-
-                         as String;
+    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++); as String;
         
         
 ;
@@ -194,9 +195,7 @@ list.clear();
                         
                                     {
                                     
-    var packageName: string = nameSpaceAndPropertiesVector!.get(0);
-
-                         as String;
+    var packageName: string = nameSpaceAndPropertiesVector!.get(0); as String;
         
         
 ;
@@ -221,9 +220,7 @@ this.nameSpaceVector!.add(packageName);
                         
                                     {
                                     
-    var properties: string = nameSpaceAndPropertiesVector!.get(1);
-
-                         as String;
+    var properties: string = nameSpaceAndPropertiesVector!.get(1); as String;
         
         
 ;
@@ -280,9 +277,7 @@ packageIndex++;
     public getPackageProperties(packageIndex: number): HashMap<any, any>{
 var packageIndex = packageIndex
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString());
-
-                         as HashMap<any, any>;
+    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()); as HashMap<any, any>;
         
         
 ;
@@ -352,13 +347,13 @@ var properties = properties
 ;
     
 
-    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, new BasicArrayList())!;
+    var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, new BasicArrayListD())!;
         
         
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -385,9 +380,7 @@ var properties = properties
         while(index < size)
         {
 
-    var property: string = propertyVector!.get(index);
-
-                         as String;
+    var property: string = propertyVector!.get(index); as String;
         
         
 ;
@@ -410,9 +403,7 @@ list.clear();
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string = propertyNameValueVector!.get(index2++);
-
-                         as String;
+    var propertyName: string = propertyNameValueVector!.get(index2++); as String;
         
         
 ;
@@ -422,9 +413,7 @@ list.clear();
                         
                                     {
                                     
-    var propertyValue: string = propertyNameValueVector!.get(index2++);
-
-                         as String;
+    var propertyValue: string = propertyNameValueVector!.get(index2++); as String;
         
         
 ;

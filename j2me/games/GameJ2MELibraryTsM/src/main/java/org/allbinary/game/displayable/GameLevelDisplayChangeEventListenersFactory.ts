@@ -30,6 +30,9 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -68,7 +71,7 @@ export class GameLevelDisplayChangeEventListenersFactory
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 

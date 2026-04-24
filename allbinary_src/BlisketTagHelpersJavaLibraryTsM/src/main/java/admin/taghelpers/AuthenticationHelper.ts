@@ -117,9 +117,7 @@ export class AuthenticationHelper extends TagHelper {
 
     private attemptsInteger: Integer
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-            this(hashMap, pageContext!.getRequest();
-
-                         as HttpServletRequest);
+            this(hashMap, pageContext!.getRequest() as HttpServletRequest);
                     var hashMap = hashMap
 var pageContext = pageContext
 
@@ -293,9 +291,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRarelyUsedSession();
-
-                        ;
+                        return this.isRarelyUsedSession();;
     
 }
 
@@ -404,9 +400,7 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -457,9 +451,7 @@ stringBuffer!.append("Trying New login<p/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -596,9 +588,7 @@ index < size; index++)
 ;
     
 
-                        if(!userInterface!.isSessionValid();
-
-                        )
+                        if(!userInterface!.isSessionValid();)
                         
                                     {
                                     
@@ -944,9 +934,7 @@ stringBuffer!.append("<br/>\n");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

@@ -50,45 +50,12 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image, sequenceArray: number[], dx: number, dy: number){
-            this(image, sequenceArray, dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, sequenceArray: number[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory);
                         //var image = image
     //var sequenceArray = sequenceArray
     //var dx = dx
     //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, sequenceArray: number[]){
-            this(image, sequenceArray, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var sequenceArray = sequenceArray
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory);
-                        //var image = image
-    //var sequenceArray = sequenceArray
     //var animationBehaviorFactory = animationBehaviorFactory
 
 

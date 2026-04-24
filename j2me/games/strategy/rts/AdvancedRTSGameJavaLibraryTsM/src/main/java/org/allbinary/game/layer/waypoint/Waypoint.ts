@@ -87,6 +87,9 @@ import { PathGenerator } from "../../../../../org/allbinary/media/graphics/geogr
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -278,9 +281,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList);
-
-                         as GeographicMapCellPosition;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList); as GeographicMapCellPosition;
         
         
 ;
@@ -299,9 +300,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
         
 index >= 0; index--)
         {
-endGeographicMapCellPosition= this.endList!.get(index);
-
-                         as GeographicMapCellPosition;
+endGeographicMapCellPosition= this.endList!.get(index); as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
@@ -339,9 +338,7 @@ endGeographicMapCellPosition= this.endList!.get(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -362,9 +359,7 @@ endGeographicMapCellPosition= this.endList!.get(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -381,9 +376,7 @@ endGeographicMapCellPosition= this.endList!.get(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -424,9 +417,7 @@ endGeographicMapCellPosition= this.endList!.get(index);
 ;
     
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator();
-
-                         as CustomMapGenerator;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
         
         
 ;
@@ -553,9 +544,7 @@ this.releaseCachedPaths();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
-
-                         as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
         
         
 ;
@@ -564,9 +553,7 @@ this.releaseCachedPaths();
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0);
-
-                         as CollidableDestroyableDamageableLayer;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
         
         
 ;

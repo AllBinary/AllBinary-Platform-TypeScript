@@ -33,6 +33,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -74,6 +77,10 @@ export class ThreadPool
         
         
 
+    public NORMAL_PRIORITY: number = Thread.NORM_PRIORITY;
+        
+        
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -109,16 +116,6 @@ export class ThreadPool
     private threadID: number= 0
 
     private numThreads: number
-public constructor (poolName: string, numThreads: number){
-            this(poolName, numThreads, Thread.NORM_PRIORITY);
-                        //var poolName = poolName
-    //var numThreads = numThreads
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
@@ -141,7 +138,7 @@ this.numThreads= numThreads;
                                     {
                                     this.isAlive= true;
     
-this.taskQueue= new BasicArrayList();
+this.taskQueue= new BasicArrayListD();
     
 
     var pooledThread: PooledThread
@@ -231,9 +228,7 @@ pooledThread!.start();
         
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index);
-
-                         as PriorityRunnable;
+runnable= this.taskQueue!.get(index); as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -347,9 +342,7 @@ this.wait();
 }
 
 
-    var runnable: Runnable = this.taskQueue!.remove(0);
-
-                         as Runnable;
+    var runnable: Runnable = this.taskQueue!.remove(0); as Runnable;
         
         
 ;

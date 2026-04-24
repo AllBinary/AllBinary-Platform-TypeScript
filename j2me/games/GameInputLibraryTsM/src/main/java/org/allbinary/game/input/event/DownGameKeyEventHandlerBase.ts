@@ -42,6 +42,9 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -72,7 +75,7 @@ export class DownGameKeyEventHandlerBase extends BasicEventHandler {
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
  constructor (){
@@ -84,9 +87,7 @@ export class DownGameKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);
-
-                        )
+                        if(!this.list.contains(playerGameInput);)
                         
                                     {
                                     this.list.add(playerGameInput);
@@ -213,9 +214,7 @@ stringBuffer!.appendint(this.list.size());
         {
 
         try {
-            eventListenerInterface= this.list.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.list.get(index); as EventListenerInterface;
     
 stringBuffer!.append(LISTENER_LABEL);
     
@@ -237,9 +236,7 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

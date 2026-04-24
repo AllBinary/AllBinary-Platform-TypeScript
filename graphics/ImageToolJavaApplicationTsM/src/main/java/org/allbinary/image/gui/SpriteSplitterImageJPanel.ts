@@ -149,25 +149,19 @@ new object: Thread()
 ;
     
 
-    var spriteType: string = spriteTypeJComboBox!.getSelectedItem();
-
-                         as String;
+    var spriteType: string = spriteTypeJComboBox!.getSelectedItem(); as String;
         
         
 ;
     
 
-    var totalFrames: Integer = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem();
-
-                         as String))!;
+    var totalFrames: Integer = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as String))!;
         
         
 ;
     
 
-    var totalAnimations: Integer = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem();
-
-                         as String))!;
+    var totalAnimations: Integer = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as String))!;
         
         
 ;
@@ -609,9 +603,7 @@ this.getParent()!.repaint();
 ;
     
 
-                        if(!this.writeOverOriginalJCheckBox!.isSelected();
-
-                        )
+                        if(!this.writeOverOriginalJCheckBox!.isSelected();)
                         
                                     {
                                     

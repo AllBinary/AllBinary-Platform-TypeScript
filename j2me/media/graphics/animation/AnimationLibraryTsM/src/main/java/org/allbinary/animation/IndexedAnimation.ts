@@ -57,13 +57,6 @@ export class IndexedAnimation extends Animation implements IndexedAnimationInter
         
 
     readonly animationBehaviorP: AnimationBehavior
-private constructor (){
-
-            super();
-        this.animationBehaviorP= AnimationBehavior.getInstance();
-    
-}
-
 protected constructor (animationBehavior: AnimationBehavior){
 
             super();
@@ -167,9 +160,7 @@ this.setFrame(0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

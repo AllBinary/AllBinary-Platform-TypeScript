@@ -259,9 +259,7 @@ this.logUtil!.put(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(anotherMapGeographicMapCellPosition!.getColumn(), anotherMapGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return this.getInstance(anotherMapGeographicMapCellPosition!.getColumn(), anotherMapGeographicMapCellPosition!.getRow());;
     
 }
 

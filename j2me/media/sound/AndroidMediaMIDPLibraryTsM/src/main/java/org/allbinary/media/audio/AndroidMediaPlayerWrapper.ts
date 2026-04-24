@@ -326,9 +326,7 @@ this.mediaPlayer!.setVolume((leftVolume) /100.0f, (rightVolume) /100.0f);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mediaPlayer!.getDuration();
-
-                        ;
+                        return this.mediaPlayer!.getDuration();;
     
 }
 

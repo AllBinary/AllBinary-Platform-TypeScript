@@ -168,9 +168,7 @@ new object: Thread()
 ;
     
 
-    var percent: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem();
-
-                         as String))!;
+    var percent: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem() as String))!;
         
         
 ;
@@ -221,17 +219,13 @@ new object: Thread()
                                 
                         else {
                             
-    var width: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText();
-
-                         as String))!;
+    var width: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText() as String))!;
         
         
 ;
     
 
-    var height: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText();
-
-                         as String))!;
+    var height: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText() as String))!;
         
         
 ;

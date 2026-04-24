@@ -141,9 +141,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -168,9 +166,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -275,9 +271,7 @@ stringBuffer!.append(this.STACK_TRACE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                                     }

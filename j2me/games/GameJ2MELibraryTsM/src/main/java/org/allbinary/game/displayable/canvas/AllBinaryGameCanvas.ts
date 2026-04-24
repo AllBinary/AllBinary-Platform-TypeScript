@@ -380,6 +380,9 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -549,7 +552,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
         
         
 
-    private localPlayerGameInputList: BasicArrayList = new BasicArrayList();
+    private localPlayerGameInputList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -705,7 +708,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
         
         
 public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
-            super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
+            super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, true);
                         //var commandListener = commandListener
     //var gameLayerManager = gameLayerManager
     //var highScoresFactoryInterface = highScoresFactoryInterface
@@ -719,12 +722,12 @@ this.highScoresHelper= highScoresFactoryInterface!.createHighScoresHelper();
     
 this.gameInitializationInterfaceFactoryInterface= gameInitializationInterfaceFactoryInterface;
     
-this.init(this.gameLayerManager, buffered);
+this.init(gameLayerManager, buffered);
     
 this.highScoresFactoryInterface= highScoresFactoryInterface;
     
 
-                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.BOT)
+                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.BOT || this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.NONE)
                         
                                     {
                                     this.gameBehavior= DemoGameBehavior.getInstance();
@@ -752,59 +755,13 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
     
 }
 
-public constructor (gameLayerManager: AllBinaryGameLayerManager){
-
-            super();
-            //var gameLayerManager = gameLayerManager
-this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
-    
-
-                        if(this.gameLayerManager!.getGameInfo()!.getGameType() == this.gameTypeFactory!.BOT)
-                        
-                                    {
-                                    this.gameBehavior= DemoGameBehavior.getInstance();
-    
-this.menuBehavior= BaseMenuBehavior.getInstance();
-    
-
-                                    }
-                                
-                        else {
-                            this.gameBehavior= BaseGameBehavior.getInstance();
-    
-this.menuBehavior= this.getInGameMenuBehavior();
-    
-
-                        }
-                            
-this.gameLayerManager= gameLayerManager;
-    
-this.highScoresFactoryInterface= NoHighScoresFactory.getInstance();
-    
-}
-
-public constructor (){
-
-            super();
-        this.highScoresHelper= NoHighScoresFactory.getInstance()!.createHighScoresHelper();
-    
-this.gameBehavior= DemoGameBehavior.getInstance();
-    
-this.menuBehavior= BaseMenuBehavior.getInstance();
-    
-this.highScoresFactoryInterface= NoHighScoresFactory.getInstance();
-    
-}
-
 
     public getInGameMenuBehavior(): BaseMenuBehavior{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InGameMenuBehavior.getInstance();
-
-                        ;
+                        return InGameMenuBehavior.getInstance();;
     
 }
 
@@ -869,9 +826,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 ;
     
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable();
-
-                         as BasicPopupMenuPaintable);
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable(); as BasicPopupMenuPaintable);
         
         
 ;
@@ -883,9 +838,7 @@ basicPopupMenuPaintable!.init(popupMenuRectangle);
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor();
-
-                         as PopupMenuInputProcessor);
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor(); as PopupMenuInputProcessor);
         
         
 ;
@@ -931,9 +884,7 @@ super.processSleep();
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process();
-
-                        )
+                        if(!primaryPlayerQueue!.process();)
                         
                                     {
                                     secondaryPlayerQueue!.process();
@@ -977,7 +928,7 @@ super.processSleep();
                                     {
                                     this.setOpenMenuPaintable(new BasicPopupMenuPaintable(popupMenuRectangle, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor()));
     
-this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayList(),  -1, this, popupMenuRectangle));
+this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayListD(),  -1, this, popupMenuRectangle));
     
 
                                     }
@@ -1031,9 +982,7 @@ this.closeMenu();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack();
-
-                         as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
         
         
 ;
@@ -1062,9 +1011,7 @@ this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getIn
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayList(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor();
-
-                         as PopupMenuInputProcessor);
+                                    this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayListD(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);
     
 
                                     }
@@ -1133,9 +1080,7 @@ scrollSelectionForm!.deleteAll();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack();
-
-                         as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
         
         
 ;
@@ -2045,9 +1990,7 @@ this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputL
 index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index);
-
-                         as PlayerGameInput;
+    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index); as PlayerGameInput;
         
         
 ;
@@ -2213,9 +2156,7 @@ this.updateColor();
 this.getStartIntermissionPaintable()!.update();
     
 
-                        if(!this.isRunningInAnotherThread();
-
-                        )
+                        if(!this.isRunningInAnotherThread();)
                         
                                     {
                                     
@@ -2230,9 +2171,7 @@ this.getStartIntermissionPaintable()!.update();
 progressCanvas!.addPortion(portion, "Finishing...");
     
 
-                        if(this.isMainCanvas() || !this.isInitialized();
-
-                        )
+                        if(this.isMainCanvas() || !this.isInitialized();)
                         
                                     {
                                     
@@ -2306,9 +2245,7 @@ PreLogUtil.put(new StringMaker().
         
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index);
-
-                         as PlayerGameInput;
+playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
     
 PreLogUtil.put(new StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
@@ -2358,9 +2295,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object);
-
-                         as String;
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object); as String;
         
         
 ;
@@ -2651,9 +2586,7 @@ super.process();
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process();
-
-                        )
+                        if(!primaryPlayerQueue!.process();)
                         
                                     {
                                     secondaryPlayerQueue!.process();
@@ -3293,9 +3226,7 @@ this.highScoresPaintable= highScoresPaintable;
         
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index);
-
-                         as PlayerGameInput;
+playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
     
 this.gameKeyEventHandler!.removeListener(playerGameInput);
     
@@ -3673,9 +3604,7 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRunning();
-
-                        ;
+                        return this.isRunning();;
     
 
                         }

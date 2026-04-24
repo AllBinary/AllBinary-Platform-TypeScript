@@ -233,9 +233,7 @@ transformInfoInterface!.setChild();
 ;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME);
-
-                         as String, propertiesHashMap, pageContext)!;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as String, propertiesHashMap, pageContext)!;
         
         
 ;
@@ -252,9 +250,7 @@ transformInfoInterface!.setChild();
                                     }
                                 
                         else {
-                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);
-
-                         as TransformInfoInterface;
+                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoInterface;
     
 
                         }
@@ -296,9 +292,7 @@ transformInfoInterface!.setChild();
     
 stringBuffer!.append("Failed To Get Instance: ");
     
-stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME);
-
-                         as String);
+stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME) as String);
     
 stringBuffer!.append("->TransformFactory");
     

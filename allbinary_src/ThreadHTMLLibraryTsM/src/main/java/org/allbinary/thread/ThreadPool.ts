@@ -27,6 +27,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -61,6 +64,10 @@ export class ThreadPool
          {
         
 
+    public NORMAL_PRIORITY: number = 5;
+        
+        
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -83,23 +90,13 @@ export class ThreadPool
 
     private isAlive: boolean= false
 
-    private taskQueue: BasicArrayList = new BasicArrayList();
+    private taskQueue: BasicArrayList = new BasicArrayListD();
         
         
 
     private numThreads: number= 0
 
     private runningTask: boolean= false
-public constructor (poolName: string, numThreads: number){
-            this(poolName, numThreads, 5);
-                        //var poolName = poolName
-    //var numThreads = numThreads
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
@@ -117,9 +114,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
             
     public runAPriorityTask(){
 
-                        if(!this.currentPriorityRunnable!.isDone();
-
-                        )
+                        if(!this.currentPriorityRunnable!.isDone();)
                         
                                     {
                                     this.currentPriorityRunnable!.run();
@@ -196,7 +191,7 @@ this.currentPriorityRunnable!.run();
                                     {
                                     this.isAlive= true;
     
-this.taskQueue= new BasicArrayList();
+this.taskQueue= new BasicArrayListD();
     
 
                                     }
@@ -248,9 +243,7 @@ this.taskQueue= new BasicArrayList();
         
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index);
-
-                         as PriorityRunnable;
+runnable= this.taskQueue!.get(index); as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -340,9 +333,7 @@ this.taskQueue!.add(index, task);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.taskQueue!.remove(0);
-
-                         as Runnable;
+                        return this.taskQueue!.remove(0); as Runnable;
     
 }
 

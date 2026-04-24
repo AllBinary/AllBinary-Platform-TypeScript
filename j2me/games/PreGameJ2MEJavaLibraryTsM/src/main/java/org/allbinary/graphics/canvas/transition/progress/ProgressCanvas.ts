@@ -27,6 +27,9 @@ import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js
 import { NullCanvas } from "../../../../../../javax/microedition/lcdui/NullCanvas.js";
 
     
+import { NullCommandListener } from "../../../../../../javax/microedition/lcdui/NullCommandListener.js";
+
+    
 import { Processor } from "../../../../../../org/allbinary/canvas/Processor.js";
 
     
@@ -40,6 +43,9 @@ import { BasicColor } from "../../../../../../org/allbinary/graphics/color/Basic
 
     
 import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+
+    
+import { CanvasStrings } from "../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
 
     
 import { DisplayInfoSingleton } from "../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
@@ -175,23 +181,15 @@ pathFindingThreadPool!.runAPriorityTask();
     public inGameProcessor: Processor = Processor.getInstance()!;
         
         
- constructor (){
-
-            super();
-        this.paintable= NullPaintable.getInstance();
-    
-this.backgroundBasicColor= BasicColorFactory.getInstance()!.WHITE;
-    
-this.gauge= CustomGaugeItem.NULL_GAUGE_ITEM;
-    
-}
-
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-
-            super();
-            //var title = title
+            super(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
+                        //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
+
+
+                            //For kotlin this is before the body of the constructor.
+                    
 this.backgroundBasicColor= backgroundBasicColor;
     
 this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, this.maxValue, 0, backgroundBasicColor, foregroundBasicColor);

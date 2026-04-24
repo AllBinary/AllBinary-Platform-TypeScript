@@ -150,9 +150,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createGameCanvasRunnableInterface(this.createGameLayerManager());
-
-                        ;
+                        return this.createGameCanvasRunnableInterface(this.createGameLayerManager());;
     
 }
 

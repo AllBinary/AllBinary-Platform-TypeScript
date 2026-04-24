@@ -116,9 +116,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface);
-
-                         as TransformTemplateInterface;
+                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface); as TransformTemplateInterface;
     
 
                 //: 

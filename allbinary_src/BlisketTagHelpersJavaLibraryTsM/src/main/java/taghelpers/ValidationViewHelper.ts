@@ -73,9 +73,7 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.viewInterface= this.getViewObject();
-
-                         as ValidationComponentInterface;
+this.viewInterface= this.getViewObject(); as ValidationComponentInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -105,9 +103,7 @@ this.viewInterface= this.getViewObject();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.isValid();
-
-                        ;
+                        return viewInterface!.isValid();;
     
 
                 //: 
@@ -140,9 +136,7 @@ this.viewInterface= this.getViewObject();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.validationInfo();
-
-                        ;
+                        return viewInterface!.validationInfo();;
     
 
                 //: 
@@ -175,9 +169,7 @@ this.viewInterface= this.getViewObject();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.toValidationInfoDoc();
-
-                        ;
+                        return viewInterface!.toValidationInfoDoc();;
     
 
                 //: 
@@ -211,9 +203,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.toValidationInfoNode(document);
-
-                        ;
+                        return viewInterface!.toValidationInfoNode(document);;
     
 
                 //: 

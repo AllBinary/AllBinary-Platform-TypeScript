@@ -221,9 +221,7 @@ var storeFront = storeFront
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index);
-
-                         as String;
+    var subStore: string = subStoreVector!.get(index); as String;
         
         
 ;
@@ -457,9 +455,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 ;
     
 
-                        if(!this.directory.create(staticPath);
-
-                        )
+                        if(!this.directory.create(staticPath);)
                         
                                     {
                                     
@@ -521,9 +517,7 @@ index < size; index++)
 ;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object);
-
-                         as String;
+    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object); as String;
         
         
 ;
@@ -622,9 +616,7 @@ stringBuffer!.append(" Store Not Found");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                                     }
@@ -686,9 +678,7 @@ stringBuffer!.append(this.INVENTORY);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -757,9 +747,7 @@ stringBuffer!.append("<br />");
         
 index < size; index++)
         {
-storeName= storeFrontVector!.get(index);
-
-                         as String;
+storeName= storeFrontVector!.get(index); as String;
     
 this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
     
@@ -791,9 +779,7 @@ stringBuffer!.append("All Static Pages Generated<br/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

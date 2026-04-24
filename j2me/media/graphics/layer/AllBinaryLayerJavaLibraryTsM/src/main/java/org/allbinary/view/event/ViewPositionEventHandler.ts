@@ -39,6 +39,9 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -75,7 +78,7 @@ export class ViewPositionEventHandler extends BasicEventHandler {
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -87,9 +90,7 @@ private constructor (){
     public addListener(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!this.list.contains(layerInterface);
-
-                        )
+                        if(!this.list.contains(layerInterface);)
                         
                                     {
                                     this.list.add(layerInterface);

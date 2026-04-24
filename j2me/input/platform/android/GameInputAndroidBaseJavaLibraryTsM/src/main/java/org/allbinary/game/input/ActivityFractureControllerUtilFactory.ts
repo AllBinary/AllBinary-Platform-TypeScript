@@ -54,9 +54,7 @@ export class ActivityFractureControllerUtilFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidAPI1KeyFactory.getInstance();
-
-                        ;
+                        return AndroidAPI1KeyFactory.getInstance();;
     
 
                                     }
@@ -69,9 +67,7 @@ export class ActivityFractureControllerUtilFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidAPI9KeyFactory.getInstance();
-
-                        ;
+                        return AndroidAPI9KeyFactory.getInstance();;
     
 
                                     }
@@ -81,9 +77,7 @@ export class ActivityFractureControllerUtilFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AndroidAPI12KeyFactory.getAPI12Instance();
-
-                        ;
+                        return AndroidAPI12KeyFactory.getAPI12Instance();;
     
 
                         }

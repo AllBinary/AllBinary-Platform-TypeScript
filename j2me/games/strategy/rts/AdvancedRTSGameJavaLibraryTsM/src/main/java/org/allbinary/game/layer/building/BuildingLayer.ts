@@ -24,6 +24,18 @@ import { Hashtable } from "../../../../../java/util/Hashtable.js";
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
+import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+
+    
+import { NullIndexedAnimationFactory } from "../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js";
+
+    
+import { GroupFactory } from "../../../../../org/allbinary/game/identification/GroupFactory.js";
+
+    
+import { NullRTSFormInputFactory } from "../../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js";
+
+    
 import { RTSFormInput } from "../../../../../org/allbinary/game/input/form/RTSFormInput.js";
 
     
@@ -34,6 +46,9 @@ import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/Ad
 
     
 import { AdvancedRTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js";
+
+    
+import { AdvancedRTSProperties } from "../../../../../org/allbinary/game/layer/AdvancedRTSProperties.js";
 
     
 import { CollidableRTSBehavior } from "../../../../../org/allbinary/game/layer/CollidableRTSBehavior.js";
@@ -51,7 +66,19 @@ import { SelectionHudPaintable } from "../../../../../org/allbinary/game/layer/S
 import { Waypoint } from "../../../../../org/allbinary/game/layer/waypoint/Waypoint.js";
 
     
+import { TileLayerPositionIntoViewPosition } from "../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js";
+
+    
+import { RectangleFactory } from "../../../../../org/allbinary/graphics/RectangleFactory.js";
+
+    
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
 
     
 import { AnimationInterfaceFactoryInterface } from "../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
@@ -72,25 +99,7 @@ import { DirectionFactory } from "../../../../../org/allbinary/direction/Directi
 import { DamageFloaters } from "../../../../../org/allbinary/game/combat/damage/DamageFloaters.js";
 
     
-import { PtsDamageFloaters } from "../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js";
-
-    
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
-
-    
-import { GameFeatureFactory } from "../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js";
-
-    
-import { BasicHudFactory } from "../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
-
-    
 import { Health } from "../../../../../org/allbinary/game/health/Health.js";
-
-    
-import { HealthBar } from "../../../../../org/allbinary/game/health/HealthBar.js";
-
-    
-import { HealthBarTwodAnimation } from "../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js";
 
     
 import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
@@ -114,13 +123,7 @@ import { TrackingEventListenerInterface } from "../../../../../org/allbinary/gam
 import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
     
-import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullPaintable.js";
-
-    
 import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable.js";
-
-    
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
 import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
@@ -144,13 +147,13 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
+import { BasicArrayListS } from "../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 import { ExplosionBasicSound } from "../../../../../org/allbinary/weapon/media/audio/ExplosionBasicSound.js";
 
     
 import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
-
-    
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
 
@@ -172,10 +175,38 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SimulatedBuildingPropertiesFactory } from "./SimulatedBuildingPropertiesFactory.js";
+
+import { BuildingPropertiesFactory } from "./BuildingPropertiesFactory.js";
+
 import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {
         
+
+                //@Throws(Error::class)
+            
+    public static createSimulated(): BuildingLayer{
+
+    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new BuildingLayer(RemoteInfo.REMOTE_INFO, SimulatedBuildingPropertiesFactory.getInstance(), AdvancedRTSProperties.createSimulated(), GroupFactory.getInstance()!.NULL_GROUP_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING, Health.NULL_HEALTH, NullRTSFormInputFactory.getInstance(), nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, NullIndexedAnimationFactory.getFactoryInstance(), RectangleFactory.SINGLETON, 0, 0);
+    
+}
+
 
     public static getStaticType(): number{
 
@@ -204,9 +235,11 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
     private readonly healthBar: Paintable
 
     private readonly pathsHashtable: Hashtable<any, any>
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
-            super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y);
+public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingPropertiesFactory, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
+            super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, advancedRTSProperties, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
                         //var remoteInfo = remoteInfo
+    //var buildingPropertiesFactory = buildingPropertiesFactory
+    //var advancedRTSProperties = advancedRTSProperties
     //var groupInterface = groupInterface
     //var rootName = rootName
     //var name = name
@@ -229,57 +262,13 @@ this.setCollidableInferface(new CollidableRTSBehavior(this, true));
     
 this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, SelectSound.getInstance()));
     
-
-    var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
-        
-        
-;
+this.damageFloaters= buildingPropertiesFactory!.getDamageFloaters(this);
     
-
-    var damageFloatersPaintableInterface: Paintable = NullPaintable.getInstance()!;
-        
-        
-;
+this.damageFloatersPaintableInterface= buildingPropertiesFactory!.damageFloatersPaintableInterface;
     
-
-                        if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.DAMAGE_FLOATERS))
-                        
-                                    {
-                                    damageFloaters= new PtsDamageFloaters(this);
+this.healthBar= buildingPropertiesFactory!.getHealthBar(this);
     
-damageFloatersPaintableInterface= damageFloaters;
-    
-
-                                    }
-                                
-                        else {
-                            damageFloaters= new DamageFloaters();
-    
-
-                        }
-                            
-this.damageFloaters= damageFloaters;
-    
-this.damageFloatersPaintableInterface= damageFloatersPaintableInterface;
-    
-
-    var healthBar: Paintable = NullPaintable.getInstance()!;
-        
-        
-;
-    
-
-                        if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
-                        
-                                    {
-                                    healthBar= new HealthBar(this, this.getHealthInterface(), new HealthBarTwodAnimation(this as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
-    
-
-                                    }
-                                
-this.healthBar= healthBar;
-    
-this.pathsHashtable= new Hashtable<any, any>();
+this.pathsHashtable= buildingPropertiesFactory!.getHashtable();
     
 this.setMaxLevel(30);
     
@@ -287,39 +276,13 @@ this.setProductivity(1);
     
 this.setEfficiency(this.calculateEfficiency());
     
-this.efficiencyPerLevel= 10000 /this.getMaxLevel() +10000 % this.getMaxLevel();
+this.efficiencyPerLevel= buildingPropertiesFactory!.getEfficiencyPerLevel(this);
     
 this.efficiency= this.efficiencyPerLevel;
     
 this.generateMoveOutOfBuildAreaPaths();
     
-this.trackingEvent= new TrackingEvent(this);
-    
-}
-
-public constructor (){
-            super();
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setCollidableInferface(new CollidableRTSBehavior(this, true));
-    
-this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, SelectSound.getInstance()));
-    
-this.efficiencyPerLevel= 0;
-    
-this.efficiency= 0;
-    
-this.trackingEvent= new TrackingEvent();
-    
-this.damageFloaters= DamageFloaters.getInstance();
-    
-this.damageFloatersPaintableInterface= this.damageFloaters;
-    
-this.healthBar= NullPaintable.getInstance();
-    
-this.pathsHashtable= NullUtil.getInstance()!.NULL_TABLE;
+this.trackingEvent= buildingPropertiesFactory!.getTrackingEvent(this);
     
 }
 
@@ -372,9 +335,7 @@ TrackingEventHandler.getInstance()!.addListener(this);
 
         try {
             
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface();
-
-                         as AdvancedRTSGameLayer;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface(); as AdvancedRTSGameLayer;
         
         
 ;
@@ -417,9 +378,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-                        if(!this.getHealthInterface()!.isAlive();
-
-                        )
+                        if(!this.getHealthInterface()!.isAlive();)
                         
                                     {
                                     
@@ -439,15 +398,11 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(currentFrame == size && !this.timeDelayHelper!.isTime();
-
-                        )
+                        if(currentFrame == size && !this.timeDelayHelper!.isTime();)
                         
                                     {
                                     
-                        if(!this.getHealthInterface()!.isAlive();
-
-                        )
+                        if(!this.getHealthInterface()!.isAlive();)
                         
                                     {
                                     this.setDestroyed(true);
@@ -685,11 +640,9 @@ this.efficiency= efficiency;
         
 index2 >= 0; index2--)
         {
-pathsList= new BasicArrayList();
+pathsList= new BasicArrayListD();
     
-occupyGeographicMapCellPosition= occupyList!.get(index2);
-
-                         as GeographicMapCellPosition;
+occupyGeographicMapCellPosition= occupyList!.get(index2); as GeographicMapCellPosition;
     
 
 
@@ -701,15 +654,13 @@ occupyGeographicMapCellPosition= occupyList!.get(index2);
         
 index >= 0; index--)
         {
-surroundGeographicMapCellPosition= surroundList!.get(index);
-
-                         as GeographicMapCellPosition;
+surroundGeographicMapCellPosition= surroundList!.get(index); as GeographicMapCellPosition;
     
 
                         if(geographicMapDirectionUtil!.getEightDirectionFromCellPositionToAdjacentCellPosition(surroundGeographicMapCellPosition, occupyGeographicMapCellPosition) != NO_DIRECTION)
                         
                                     {
-                                    list= new BasicArrayList(1);
+                                    list= new BasicArrayListS(1);
     
 list.add(surroundGeographicMapCellPosition);
     
@@ -730,9 +681,7 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition as Object);
-
-                         as BasicArrayList;
+    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition as Object); as BasicArrayList;
         
         
 ;
@@ -751,9 +700,7 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList();
-
-                        ;
+                        return this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList();;
     
 }
 
@@ -798,8 +745,6 @@ this.damageFloaters!.add(damage);
 
                         if(damage > 0)
                         this.getHealthInterface()!.damage(damage);
-
-                        
 }
 
 
@@ -886,9 +831,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
                                     }
                                 
 
-                        if(!this.getHealthInterface()!.isAlive();
-
-                        )
+                        if(!this.getHealthInterface()!.isAlive();)
                         
                                     {
                                     
@@ -989,9 +932,7 @@ buildingInfoHudPaintable!.setRtsLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BuildingLayer.getStaticType();
-
-                        ;
+                        return BuildingLayer.getStaticType();;
     
 }
 

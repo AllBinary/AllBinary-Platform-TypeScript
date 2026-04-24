@@ -113,9 +113,7 @@ var isReturnOnFailure = isReturnOnFailure
 index < size; index++)
         {
 
-    var file: AbFile = vector.get(index);
-
-                         as AbFile;
+    var file: AbFile = vector.get(index); as AbFile;
         
         
 ;
@@ -175,9 +173,7 @@ var vector = vector
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getAll(vector, false);
-
-                        ;
+                        return getAll(vector, false);;
     
 }
 
@@ -228,9 +224,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getLock(new AbFileOutputStream(file, true));
-
-                        ;
+                        return getLock(new AbFileOutputStream(file, true));;
     
 
                 //: 

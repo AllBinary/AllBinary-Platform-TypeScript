@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -51,7 +54,7 @@ export class Points
 public constructor (){
 
             super();
-        this.pointVector= new BasicArrayList();
+        this.pointVector= new BasicArrayListD();
     
 }
 
@@ -111,9 +114,7 @@ this.pointVector!.addAll2(vector);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.pointVector!.size();
-
-                        ;
+                        return this.pointVector!.size();;
     
 }
 

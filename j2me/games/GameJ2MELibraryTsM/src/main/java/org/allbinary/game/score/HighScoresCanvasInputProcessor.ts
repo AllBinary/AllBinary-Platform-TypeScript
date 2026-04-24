@@ -33,6 +33,9 @@ import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayab
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -57,7 +60,7 @@ export class HighScoresCanvasInputProcessor extends PlayerGameInput {
 
     private readonly highScoresCanvas: HighScoresCanvas
 public constructor (highScoresCanvas: HighScoresCanvas){
-            super(new BasicArrayList(),  -1);
+            super(new BasicArrayListD(),  -1);
                     var highScoresCanvas = highScoresCanvas
 
 

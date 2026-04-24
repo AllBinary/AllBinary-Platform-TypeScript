@@ -87,9 +87,7 @@ this.logEntryVector!.add(log);
 index < size; index++)
         {
 
-    var log: Log = this.logEntryVector!.get(index);
-
-                         as Log;
+    var log: Log = this.logEntryVector!.get(index); as Log;
         
         
 ;

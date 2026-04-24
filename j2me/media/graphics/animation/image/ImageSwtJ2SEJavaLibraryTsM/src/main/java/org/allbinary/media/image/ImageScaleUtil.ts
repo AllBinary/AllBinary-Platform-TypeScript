@@ -119,9 +119,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
-
-                        ;
+                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
@@ -138,9 +136,7 @@ private constructor (){
     //var cached = cached
     //var mutable = mutable
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);

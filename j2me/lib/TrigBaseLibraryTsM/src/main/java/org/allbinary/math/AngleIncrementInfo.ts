@@ -87,9 +87,7 @@ this.angleIncrement= angleIncrement;
     
 this.DOWN_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.DOWN.getValue() /this.angleIncrement);
     
-this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue();
-
-                        );
+this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue());
     
 this.LEFT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.LEFT.getValue() /this.angleIncrement);
     
@@ -108,9 +106,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frameUtil!.getFrameAngle(frame, this.angleIncrement);
-
-                        ;
+                        return frameUtil!.getFrameAngle(frame, this.angleIncrement);;
     
 }
 
@@ -131,9 +127,7 @@ var frame = frame
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(INCREMENT)!.appendshort(this.angleIncrement)!.toString();
-
-                        ;
+                            append(INCREMENT)!.appendshort(this.angleIncrement)!.toString();;
     
 }
 
@@ -186,9 +180,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return closestDirection!.toInt();
-
-                        ;
+                        return closestDirection!.toInt();;
     
 }
 

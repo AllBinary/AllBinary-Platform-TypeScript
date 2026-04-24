@@ -114,38 +114,22 @@ public constructor (payment: HashMap<any, any>){
 
             super();
         var payment = payment
-this.name= payment.get(PaymentData.NAME);
-
-                         as String;
+this.name= payment.get(PaymentData.NAME); as String;
     
-this.type= payment.get(PaymentData.TYPE);
-
-                         as String;
+this.type= payment.get(PaymentData.TYPE); as String;
     
-this.expiration= payment.get(PaymentData.EXPIRATION);
-
-                         as String;
+this.expiration= payment.get(PaymentData.EXPIRATION); as String;
     
-this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION);
-
-                         as String;
+this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION); as String;
     
 this.number= new SuperCrypt(new Integer(this.encryption).
                             toInt()).
-                            decrypt(payment.get(PaymentData.NUMBER);
-
-                         as String);
-
-                         as String;
+                            decrypt(payment.get(PaymentData.NUMBER) as String); as String;
     
-this.id= payment.get(PaymentData.ID);
-
-                         as String;
+this.id= payment.get(PaymentData.ID); as String;
     
 
-    var def: string = payment.get(EntryData.getInstance()!.DEFAULT);
-
-                         as String;
+    var def: string = payment.get(EntryData.getInstance()!.DEFAULT); as String;
         
         
 ;
@@ -167,45 +151,25 @@ this.id= payment.get(PaymentData.ID);
 
                         }
                             
-this.tenderType= payment.get(PaymentData.TENDERTYPE);
-
-                         as String;
+this.tenderType= payment.get(PaymentData.TENDERTYPE); as String;
     
-this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE);
-
-                         as String;
+this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE); as String;
     
-this.aba= payment.get(PaymentData.ABA);
-
-                         as String;
+this.aba= payment.get(PaymentData.ABA); as String;
     
-this.account= payment.get(PaymentData.ACCOUNT);
-
-                         as String;
+this.account= payment.get(PaymentData.ACCOUNT); as String;
     
-this.accountType= payment.get(PaymentData.ACCOUNTTYPE);
-
-                         as String;
+this.accountType= payment.get(PaymentData.ACCOUNTTYPE); as String;
     
-this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE);
-
-                         as String;
+this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE); as String;
     
-this.checkNumber= payment.get(PaymentData.CHECKNUMBER);
-
-                         as String;
+this.checkNumber= payment.get(PaymentData.CHECKNUMBER); as String;
     
-this.checkType= payment.get(PaymentData.CHECKTYPE);
-
-                         as String;
+this.checkType= payment.get(PaymentData.CHECKTYPE); as String;
     
-this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE);
-
-                         as String;
+this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE); as String;
     
-this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER);
-
-                         as String;
+this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER); as String;
     
 }
 
@@ -604,9 +568,7 @@ this.number= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.number.substring(this.number.length -4);
-
-                        ;
+                        return this.number.substring(this.number.length -4);;
     
 
                                     }

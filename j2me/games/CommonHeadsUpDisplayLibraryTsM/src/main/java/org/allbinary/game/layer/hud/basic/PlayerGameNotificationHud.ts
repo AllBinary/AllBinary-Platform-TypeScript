@@ -166,7 +166,7 @@ gameNotificationEventHandler!.addListener(this);
     getPoint(x: number, y: number): GPoint{
 var x = x
 var y = y
-this.point= new CustomGPoint(0, 0);
+this.point= CustomGPoint.getInstance3(0, 0);
     
 this.point.setX(x);
     
@@ -287,9 +287,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                 //@Throws(Error::class)
             
     setAndRemove(){
-this.string= this.gameNotification!.stringList!.remove(0);
-
-                         as String;
+this.string= this.gameNotification!.stringList!.remove(0); as String;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
@@ -304,9 +302,7 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: Integer = this.gameNotification!.timeList!.remove(0);
-
-                         as Integer;
+    var time: Integer = this.gameNotification!.timeList!.remove(0); as Integer;
         
         
 ;
@@ -328,9 +324,7 @@ this.point.setY(this.getY());
                                 
 this.timeDelayHelper!.delay= iTime;
     
-this.setBasicColorP(this.gameNotification!.colorList!.remove(0);
-
-                         as BasicColor);
+this.setBasicColorP(this.gameNotification!.colorList!.remove(0) as BasicColor);
     
 }
 

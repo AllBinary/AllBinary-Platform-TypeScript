@@ -104,9 +104,7 @@ this.paramVector= paramVector;
 
         try {
             
-    var parentTag: HelperTag = this.getParent();
-
-                         as HelperTag;
+    var parentTag: HelperTag = this.getParent(); as HelperTag;
         
         
 ;

@@ -96,9 +96,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cssProperty!.toXmlNode(document);
-
-                        ;
+                        return this.cssProperty!.toXmlNode(document);;
     
 }
 

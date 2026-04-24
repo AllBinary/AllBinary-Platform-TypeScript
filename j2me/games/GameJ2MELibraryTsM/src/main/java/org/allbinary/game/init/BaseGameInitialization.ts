@@ -173,9 +173,7 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
 ;
     
 
-                        if(!this.isInitialized();
-
-                         && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
+                        if(!this.isInitialized(); && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
                                     

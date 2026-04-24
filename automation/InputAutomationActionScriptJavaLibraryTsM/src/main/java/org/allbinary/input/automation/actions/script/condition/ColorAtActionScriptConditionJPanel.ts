@@ -146,9 +146,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(xString);
-
-                         && StringValidationUtil.getInstance()!.isNumber(xString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(xString); && StringValidationUtil.getInstance()!.isNumber(xString))
                         
                                     {
                                     this.colorAtActionScriptConditionInterface!.getPoint()!.x= Integer.parseInt(xString);
@@ -163,9 +161,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(yString);
-
-                         && StringValidationUtil.getInstance()!.isNumber(yString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(yString); && StringValidationUtil.getInstance()!.isNumber(yString))
                         
                                     {
                                     this.colorAtActionScriptConditionInterface!.getPoint()!.y= Integer.parseInt(xString);

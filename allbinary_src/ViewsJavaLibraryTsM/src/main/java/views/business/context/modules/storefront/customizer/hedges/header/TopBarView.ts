@@ -92,9 +92,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.heading.toXmlNode(document);
-
-                        ;
+                        return this.heading.toXmlNode(document);;
     
 
                 //: 
@@ -129,9 +127,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

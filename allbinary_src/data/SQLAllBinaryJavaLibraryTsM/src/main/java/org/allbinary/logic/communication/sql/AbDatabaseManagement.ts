@@ -163,9 +163,7 @@ public constructor (connectionInfo: DbConnectionInfo){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return addr.getHostName();
-
-                        ;
+                        return addr.getHostName();;
     
 
                 //: 

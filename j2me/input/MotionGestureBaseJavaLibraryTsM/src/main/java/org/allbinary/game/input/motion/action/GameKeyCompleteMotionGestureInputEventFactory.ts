@@ -30,6 +30,9 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -74,7 +77,7 @@ export class GameKeyCompleteMotionGestureInputEventFactory
         
         
 
-    private readonly eventList: BasicArrayList = new BasicArrayList();
+    private readonly eventList: BasicArrayList = new BasicArrayListD();
         
         
 

@@ -111,9 +111,7 @@ var activity = activity
                                     touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.FINGER);
     
 
-                        if(!touchScreenFactory!.isTouch();
-
-                        )
+                        if(!touchScreenFactory!.isTouch();)
                         
                                     {
                                     PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS);
@@ -133,9 +131,7 @@ touchScreenFactory!.setTouch(true);
                                     touchScreenFactory!.setTouchScreenType(touchScreenTypesFactory!.STYLUS);
     
 
-                        if(!touchScreenFactory!.isTouch();
-
-                        )
+                        if(!touchScreenFactory!.isTouch();)
                         
                                     {
                                     PreLogUtil.put("Not Really Exception: This indicates that a touch screen does exist but is not API8 so we will try it", this, commonStrings!.PROCESS);

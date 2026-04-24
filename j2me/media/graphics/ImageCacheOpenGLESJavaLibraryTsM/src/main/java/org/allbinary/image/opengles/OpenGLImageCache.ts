@@ -39,6 +39,9 @@ import { AllBinaryRendererBase3 } from "../../../../org/allbinary/graphics/openg
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
     
@@ -91,7 +94,7 @@ export class OpenGLImageCache extends ImageCache {
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 

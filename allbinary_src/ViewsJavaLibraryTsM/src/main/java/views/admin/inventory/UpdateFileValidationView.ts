@@ -129,9 +129,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -214,9 +212,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
 ;
     
 
-                        if(!categoryFile!.isDirectory();
-
-                        )
+                        if(!categoryFile!.isDirectory();)
                         
                                     {
                                     
@@ -365,9 +361,7 @@ var document = document
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -397,9 +391,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
 ;
     
 
-    var fullCategory: string = URLGLOBALS.getWebappPath();
-
-                         as String +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
+    var fullCategory: string = URLGLOBALS.getWebappPath(); as String +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
         
         
 ;
@@ -484,9 +476,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -511,9 +501,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     
@@ -599,9 +587,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     stringBuffer!.append("FileName must be >");

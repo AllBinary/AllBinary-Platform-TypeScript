@@ -42,7 +42,13 @@ import { PaintableInterface } from "../../../../org/allbinary/graphics/paint/Pai
 import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
 
     
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
     
 
@@ -93,7 +99,7 @@ export class TestingInputSingleton extends AllBinaryGameLayer implements GameInp
         
         
 private constructor (){
-            super(RectangleFactory.SINGLETON);
+            super(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.getInstanceD());
                     
 
                             //For kotlin this is before the body of the constructor.

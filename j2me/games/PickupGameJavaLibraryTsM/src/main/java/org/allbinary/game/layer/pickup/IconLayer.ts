@@ -36,6 +36,9 @@ import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -67,7 +70,7 @@ export class IconLayer extends AllBinaryLayer {
 
     private animationInterface: Animation
 public constructor (animationInterface: Animation, width: number, height: number){
-            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), new ViewPosition());
+            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), ViewPosition.getInstanceD());
                     var animationInterface = animationInterface
 var width = width
 var height = height

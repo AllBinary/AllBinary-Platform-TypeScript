@@ -113,9 +113,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.transformInfoInterface!.getPageContext();
-
-                        ;
+                        return this.transformInfoInterface!.getPageContext();;
     
 }
 
@@ -125,9 +123,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.transformInfoInterface!.getPropertiesHashMap();
-
-                        ;
+                        return this.transformInfoInterface!.getPropertiesHashMap();;
     
 }
 

@@ -92,18 +92,14 @@ export class BasicGeographicMapUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return oldGeographicMapCellPosition!.getRow();
-
-                        ;
+                        return oldGeographicMapCellPosition!.getRow();;
     
 }
 1 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return oldGeographicMapCellPosition!.getRow();
-
-                        ;
+                        return oldGeographicMapCellPosition!.getRow();;
     
 }
 2 -> {
@@ -164,18 +160,14 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return oldGeographicMapCellPosition!.getColumn();
-
-                        ;
+                        return oldGeographicMapCellPosition!.getColumn();;
     
 }
 3 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return oldGeographicMapCellPosition!.getColumn();
-
-                        ;
+                        return oldGeographicMapCellPosition!.getColumn();;
     
 }
 else -> {
@@ -257,9 +249,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createAllBinaryTiledLayerArray(geographicMapInterfaceArray, tiledLayerArray, 0);
-
-                        ;
+                        return this.createAllBinaryTiledLayerArray(geographicMapInterfaceArray, tiledLayerArray, 0);;
     
 }
 

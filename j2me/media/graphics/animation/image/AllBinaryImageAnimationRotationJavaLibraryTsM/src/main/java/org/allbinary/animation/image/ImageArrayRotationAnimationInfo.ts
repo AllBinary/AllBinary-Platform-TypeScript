@@ -100,9 +100,7 @@ this.imageArray= imageArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AngleInfo.getInstance(this.angleIncrement);
-
-                        ;
+                        return AngleInfo.getInstance(this.angleIncrement);;
     
 }
 

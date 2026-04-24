@@ -111,14 +111,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;
@@ -306,8 +302,6 @@ basket.removeItem(this.id);
                                     null
                                 )
                         basket.adjustItem(this.id, num);
-
-                        
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         

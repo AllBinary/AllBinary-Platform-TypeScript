@@ -92,9 +92,7 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 var itemName = itemName
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName);
-
-                         as GraphicsItemInterfaceFactoryInterface;
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName); as GraphicsItemInterfaceFactoryInterface;
         
         
 ;
@@ -153,9 +151,7 @@ var graphicItemNodeList = graphicItemNodeList
 index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index);
-
-                         as Node)!;
+    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;
         
         
 ;

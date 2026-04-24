@@ -36,6 +36,9 @@ import { Features } from "../../../../org/allbinary/game/configuration/feature/F
 import { OpenGLFeatureFactory } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
 
     
+import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
 
     
@@ -72,183 +75,8 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
     private readonly angleIncrement: number
 
     private readonly resizeCanvasForRotation: boolean
-public constructor (image: Image, unused: any = {}){
-            this(image, unused, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var unused = unused
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, image.getWidth(), image.getHeight(),  -(image.getWidth()>>2),  -(image.getHeight()>>2), animationBehaviorFactory);
-                        //var image = image
-    //var unused = unused
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, dx: number, dy: number, unused: any = {}){
-            this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var unused = unused
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, dx: number, dy: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var unused = unused
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, dx: number, dy: number, unused: any = {}, angleIncrement: number){
-            this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var unused = unused
-    //var angleIncrement = angleIncrement
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, dx: number, dy: number, angleIncrement: number, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, image.getWidth(), image.getHeight(), dx, dy, angleIncrement, animationBehaviorFactory);
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var angleIncrement = angleIncrement
-    //var unused = unused
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, width, height, angleIncrement, animationBehaviorFactory);
-                    var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-this.animationFactoryInitializationVisitor!.originalDx= dx;
-    
-this.animationFactoryInitializationVisitor!.originalDy= dy;
-    
-}
-
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-this.animationFactoryInitializationVisitor!.originalDx= dx;
-    
-this.animationFactoryInitializationVisitor!.originalDy= dy;
-    
-}
-
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
-            this(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-    //var resizeCanvasForRotation = resizeCanvasForRotation
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-this.animationFactoryInitializationVisitor!.originalDx= dx;
-    
-this.animationFactoryInitializationVisitor!.originalDy= dy;
-    
-}
-
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.angleIncrement= (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity());
-    
-this.resizeCanvasForRotation= false;
-    
-}
-
-public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.angleIncrement= angleIncrement;
-    
-this.resizeCanvasForRotation= false;
-    
-}
-
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                         //var image = image
     //var width = width
     //var height = height
@@ -276,18 +104,14 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 ;
     
 
-                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
-
-                        )
+                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageCopyUtil.getInstance()!.createImage(this.getImage(), 1.44f, false);
-
-                        ;
+                        return ImageCopyUtil.getInstance()!.createImage(this.getImage(), 1.44f, false);;
     
 
                                     }
@@ -297,9 +121,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getImage();
-
-                        ;
+                        return this.getImage();;
     
 
                         }

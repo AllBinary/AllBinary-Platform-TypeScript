@@ -45,6 +45,9 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -117,7 +120,7 @@ public constructor (){
         
 index >= 0; index--)
         {
-this.listOfList[index]= new BasicArrayList();
+this.listOfList[index]= new BasicArrayListD();
     
 }
 
@@ -131,7 +134,7 @@ this.listOfList[index]= new BasicArrayList();
         
 index >= 0; index--)
         {
-this.availableListOfList[index]= new BasicArrayList();
+this.availableListOfList[index]= new BasicArrayListD();
     
 }
 
@@ -267,9 +270,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.remove(list.size() -1);
-
-                         as Image;
+                        return list.remove(list.size() -1); as Image;
     
 
                                     }
@@ -296,9 +297,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(anyType!.constructor.name.toString()!, width, height);
-
-                        ;
+                        return this.get(anyType!.constructor.name.toString()!, width, height);;
     
 }
 
@@ -337,9 +336,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImage(width, height);
-
-                        ;
+                        return Image.createImage(width, height);;
     
 }
 
@@ -429,9 +426,7 @@ stringBuffer!.appendint(totalAvailable);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

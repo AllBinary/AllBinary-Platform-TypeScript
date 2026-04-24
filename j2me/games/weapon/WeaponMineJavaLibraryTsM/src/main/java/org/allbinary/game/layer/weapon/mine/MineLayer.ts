@@ -24,6 +24,9 @@ import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../.
 import { SimpleWeaponLayer } from "../../../../../../org/allbinary/game/layer/weapon/SimpleWeaponLayer.js";
 
     
+import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+
+    
 import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
 
     
@@ -76,7 +79,7 @@ export class MineLayer extends SimpleWeaponLayer {
         
         
 public constructor (viewPosition: ViewPosition){
-            super(NAME, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
+            super(NAME, RemoteInfo.REMOTE_INFO,  -1, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), SimpleWeaponLayer.createDestroyed(), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
                     var viewPosition = viewPosition
 
 
@@ -118,9 +121,7 @@ super.getDamage(damageType);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInitDamage();
-
-                        ;
+                        return this.getInitDamage();;
     
 }
 

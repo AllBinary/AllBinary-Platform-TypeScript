@@ -203,9 +203,7 @@ this.position(buffer, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return buffer.position(newPosition);
-
-                        ;
+                        return buffer.position(newPosition);;
     
 }
 

@@ -41,6 +41,9 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -181,7 +184,7 @@ result= BooleanFactory.getInstance()!.FALSE;
 
     public toList(): BasicArrayList{
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;

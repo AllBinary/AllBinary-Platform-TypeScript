@@ -39,6 +39,9 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -64,7 +67,7 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 export class HealLayer extends AllBinaryLayer implements HealthVisitorInterface {
         
 public constructor (){
-            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition());
+            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
                     
 
                             //For kotlin this is before the body of the constructor.

@@ -85,9 +85,7 @@ var owner = owner
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getWidth();
-
-                        ;
+                        return this.tiledLayer!.getWidth();;
     
 }
 
@@ -97,9 +95,7 @@ var owner = owner
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getHeight();
-
-                        ;
+                        return this.tiledLayer!.getHeight();;
     
 }
 
@@ -109,9 +105,7 @@ var owner = owner
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getHeight();
-
-                        ;
+                        return this.tiledLayer!.getHeight();;
     
 }
 
@@ -121,9 +115,7 @@ var owner = owner
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getWidth();
-
-                        ;
+                        return this.tiledLayer!.getWidth();;
     
 }
 
@@ -134,9 +126,7 @@ var width = width
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getHeight();
-
-                        ;
+                        return this.tiledLayer!.getHeight();;
     
 }
 
@@ -147,9 +137,7 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tiledLayer!.getWidth();
-
-                        ;
+                        return this.tiledLayer!.getWidth();;
     
 }
 

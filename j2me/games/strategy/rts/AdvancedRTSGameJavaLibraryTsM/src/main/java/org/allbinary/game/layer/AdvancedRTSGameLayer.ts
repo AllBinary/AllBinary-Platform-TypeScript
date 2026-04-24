@@ -24,16 +24,16 @@ import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
 
     
+import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAnimationFactory.js";
+
+    
+import { NullIndexedAnimationFactory } from "../../../../org/allbinary/animation/NullIndexedAnimationFactory.js";
+
+    
 import { ProceduralAnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js";
 
     
-import { NoShakeAnimationListener } from "../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js";
-
-    
 import { ShakeAnimationListener } from "../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js";
-
-    
-import { ShakeAnimationListenerFactory } from "../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js";
 
     
 import { Direction } from "../../../../org/allbinary/direction/Direction.js";
@@ -54,16 +54,19 @@ import { DestroyedEventHandler } from "../../../../org/allbinary/game/combat/des
 import { DestroyedEventListenerInterface } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js";
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
-
-    
 import { Health } from "../../../../org/allbinary/game/health/Health.js";
 
     
 import { Group } from "../../../../org/allbinary/game/identification/Group.js";
 
     
+import { GroupFactory } from "../../../../org/allbinary/game/identification/GroupFactory.js";
+
+    
 import { GameKeyEventFactory } from "../../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+
+    
+import { NullRTSFormInputFactory } from "../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js";
 
     
 import { RTSFormInput } from "../../../../org/allbinary/game/input/form/RTSFormInput.js";
@@ -111,19 +114,19 @@ import { TileLayerPositionIntoViewPosition } from "../../../../org/allbinary/gam
 import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 
     
+import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
+
+    
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+
+    
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
 
     
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
 import { FrameUtil } from "../../../../org/allbinary/math/FrameUtil.js";
-
-    
-import { AllBinaryNoVibration } from "../../../../org/allbinary/media/AllBinaryNoVibration.js";
-
-    
-import { AllBinaryVibration } from "../../../../org/allbinary/media/AllBinaryVibration.js";
 
     
 import { AllBinaryVibrationME } from "../../../../org/allbinary/media/AllBinaryVibrationME.js";
@@ -170,6 +173,8 @@ import { RTSLayer } from "./RTSLayer.js";
 
 import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
 
+import { AdvancedRTSProperties } from "./AdvancedRTSProperties.js";
+
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
@@ -180,6 +185,30 @@ import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
+
+                //@Throws(Error::class)
+            
+    public static createSimulated(): AdvancedRTSGameLayer{
+
+    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AdvancedRTSGameLayer(RemoteInfo.REMOTE_INFO, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, AdvancedRTSProperties.createSimulated(), GroupFactory.getInstance()!.NULL_GROUP_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING, Health.NULL_HEALTH, NullRTSFormInputFactory.getInstance(), nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, NullIndexedAnimationFactory.getFactoryInstance(), RectangleFactory.SINGLETON, 0, 0, new TileLayerPositionIntoViewPosition());
+    
+}
+
 
     readonly shakeListener: ShakeAnimationListener
 
@@ -194,34 +223,11 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
     waypointBehaviorBase: TickableInterface = NullTickable.getInstance()!;
         
         
-public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
-            this(remoteInfo, parentLayer, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
-                        //var remoteInfo = remoteInfo
-    //var parentLayer = parentLayer
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var healthInterface = healthInterface
-    //var rtsFormInput = rtsFormInput
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var emptyAnimationInterfaceFactoryInterface = emptyAnimationInterfaceFactoryInterface
-    //var baseAnimationInterfaceFactoryInterface = baseAnimationInterfaceFactoryInterface
-    //var buildAnimationInterfaceFactoryInterface = buildAnimationInterfaceFactoryInterface
-    //var verticleBuildAnimationInterfaceFactoryInterface = verticleBuildAnimationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
+public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
                         //var remoteInfo = remoteInfo
     //var parentLayer = parentLayer
+    //var advancedRTSProperties = advancedRTSProperties
     //var groupInterface = groupInterface
     //var rootName = rootName
     //var name = name
@@ -245,31 +251,13 @@ this.setVisible(false);
     
 this.setWaypointBehavior(new WaypointBehaviorBase());
     
-this.shakeListener= ShakeAnimationListenerFactory.getInstance();
+this.shakeListener= advancedRTSProperties!.shakeListener;
     
-this.vibration= AllBinaryVibration.getInstance();
+this.vibration= advancedRTSProperties!.vibration;
     
-this.duration= GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() *100;
+this.duration= advancedRTSProperties!.duration;
     
 this.setParentLayer(parentLayer);
-    
-}
-
-public constructor (){
-            super(RemoteInfo.REMOTE_INFO);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setWaypointBehavior(new WaypointBehaviorBase());
-    
-this.shakeListener= NoShakeAnimationListener.NO_SHAKE_ANIMATION_LISTENER;
-    
-this.vibration= AllBinaryNoVibration.NO_VIBRATION;
-    
-this.duration= 0;
-    
-this.setParentLayer(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
     
 }
 
@@ -762,9 +750,7 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList();
-
-                        ;
+                        return this.geographicMapCellPositionAreaBase!.getSurroundingGeographicMapCellPositionList();;
     
 }
 
@@ -823,9 +809,7 @@ var destroyedEvent = destroyedEvent
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint();
-
-                         as WaypointBase;
+    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint(); as WaypointBase;
         
         
 ;

@@ -27,6 +27,9 @@ import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbina
 import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
     
+import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -57,18 +60,6 @@ import { MultiplayerBehavior } from "./MultiplayerBehavior.js";
 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         
-public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(groupInterface, layerInfo, viewPosition);
-                        //var remoteInfo = remoteInfo
-    //var groupInterface = groupInterface
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(groupInterface, name, layerInfo, viewPosition);
                         //var remoteInfo = remoteInfo

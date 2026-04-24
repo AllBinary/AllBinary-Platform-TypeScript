@@ -27,6 +27,9 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -95,7 +98,7 @@ this.endSep= endSep;
     public getInsideSep(string: string): BasicArrayList{
 var string = string
 
-    var tokenList: BasicArrayList = new BasicArrayList();
+    var tokenList: BasicArrayList = new BasicArrayListD();
         
         
 ;

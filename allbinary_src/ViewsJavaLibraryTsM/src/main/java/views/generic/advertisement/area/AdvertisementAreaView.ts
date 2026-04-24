@@ -82,9 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME);
-
-                         as String;
+this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
     
 }
 
@@ -152,9 +150,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

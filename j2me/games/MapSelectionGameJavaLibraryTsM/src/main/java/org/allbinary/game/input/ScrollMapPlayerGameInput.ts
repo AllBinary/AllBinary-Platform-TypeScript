@@ -171,9 +171,7 @@ this.maxRight= this.getSpecialWidth();
         
 ;
     
-this.move( -terrainTiledLayer!.getXP();
-
-                        , 0);
+this.move( -terrainTiledLayer!.getXP(), 0);
     
 
                         if(terrainTiledLayer!.getWidth() < displayInfo!.getLastWidth())
@@ -300,9 +298,7 @@ this.move(0, diffY);
             
     down(){
 
-    var y: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP();
-
-                         +10;
+    var y: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP(); +10;
         
         
 ;
@@ -344,9 +340,7 @@ this.move(0, diffY);
             
     left(){
 
-    var x: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP();
-
-                         -10;
+    var x: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP(); -10;
         
         
 ;
@@ -415,9 +409,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index);
-
-                         as GameKeyEvent;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
         
         
 ;

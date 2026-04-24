@@ -228,9 +228,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName);
-
-                         as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
         
         
 ;
@@ -378,9 +376,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName);
-
-                         as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
         
         
 ;
@@ -456,9 +452,7 @@ i < size2; i++)
 ;
     
 
-    var value: string = whereKeyValuePairs!.get(key);
-
-                         as String;
+    var value: string = whereKeyValuePairs!.get(key); as String;
         
         
 ;
@@ -731,9 +725,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 i < values.length -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i);
-
-                         as String)!;
+    var value: string = this.getValue(values.get(i) as String)!;
         
         
 ;
@@ -748,9 +740,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement();
-
-                         as String)!;
+    var value: string = this.getValue(values.lastElement() as String)!;
         
         
 ;
@@ -1007,9 +997,7 @@ result.put(columnName, field);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRows(keysAndValues, StringUtil.getInstance()!.EMPTY_STRING);
-
-                        ;
+                        return this.getRows(keysAndValues, StringUtil.getInstance()!.EMPTY_STRING);;
     
 }
 
@@ -1410,9 +1398,7 @@ index < size; index++)
         {
 key= keyArray[index]! as String;
     
-value= whereKeyValuePairs!.get(key);
-
-                         as String;
+value= whereKeyValuePairs!.get(key); as String;
     
 stringBuffer!.append(key);
     

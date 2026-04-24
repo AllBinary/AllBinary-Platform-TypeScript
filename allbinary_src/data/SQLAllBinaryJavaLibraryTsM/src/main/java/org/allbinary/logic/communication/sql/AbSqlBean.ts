@@ -470,9 +470,7 @@ columnName= keyArray2[i]!.toString();
 field= rset.getObject(columnName)!.toString();
     
 
-                        if(field.compareTo(columnsAndValues!.get(columnName);
-
-                         as String) != 0)
+                        if(field.compareTo(columnsAndValues!.get(columnName) as String) != 0)
                         
                                     {
                                     

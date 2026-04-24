@@ -50,9 +50,7 @@ export class MediaIOUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageIO.getReaderFormatNames();
-
-                        ;
+                        return ImageIO.getReaderFormatNames();;
     
 }
 
@@ -62,9 +60,7 @@ export class MediaIOUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageIO.getWriterFormatNames();
-
-                        ;
+                        return ImageIO.getWriterFormatNames();;
     
 }
 

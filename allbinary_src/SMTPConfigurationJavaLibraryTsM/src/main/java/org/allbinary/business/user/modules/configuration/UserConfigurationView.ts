@@ -105,9 +105,7 @@ this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInt
 ;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface();
-
-                         as UserEmailConfigurationInterface;
+    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface(); as UserEmailConfigurationInterface;
         
         
 ;

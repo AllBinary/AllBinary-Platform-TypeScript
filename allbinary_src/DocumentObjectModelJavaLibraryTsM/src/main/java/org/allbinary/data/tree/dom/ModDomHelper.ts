@@ -108,9 +108,7 @@ var text = text
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createTextNode(document, DomData.VALUE, text);
-
-                        ;
+                        return ModDomHelper.createTextNode(document, DomData.VALUE, text);;
     
 }
 
@@ -124,9 +122,7 @@ var text = text
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createTextNode(document, DomData.NAME, text);
-
-                        ;
+                        return ModDomHelper.createTextNode(document, DomData.NAME, text);;
     
 }
 
@@ -141,9 +137,7 @@ var index = index
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return ModDomHelper.createTextNode(document, DomData.INDEX, new Integer(index).
-                            toString());
-
-                        ;
+                            toString());;
     
 }
 
@@ -235,9 +229,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, node, hashMap);
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, node, hashMap);;
     
 }
 
@@ -296,9 +288,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(objectKey as Object);
-
-                         as Object;
+    var anyType: any = hashMap!.get(objectKey as Object); as Object;
         
         
 ;
@@ -399,9 +389,7 @@ var valueVector = valueVector
 i < size; i++)
         {
 
-    var value: string = stringUtil!.getInstance(valueVector!.get(i);
-
-                         as String)!;
+    var value: string = stringUtil!.getInstance(valueVector!.get(i) as String)!;
         
         
 ;
@@ -455,9 +443,7 @@ var valueVector = valueVector
 index < size; index++)
         {
 
-    var value: string = stringUtil!.getInstance(valueVector!.get(index);
-
-                         as String)!;
+    var value: string = stringUtil!.getInstance(valueVector!.get(index) as String)!;
         
         
 ;
@@ -491,9 +477,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNodeWithValueNodes(document, node, hashMap);
-
-                        ;
+                        return ModDomHelper.createNodeWithValueNodes(document, node, hashMap);;
     
 }
 
@@ -546,9 +530,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(name as Object);
-
-                         as Object;
+    var anyType: any = hashMap!.get(name as Object); as Object;
         
         
 ;

@@ -228,9 +228,7 @@ var searchRequest = searchRequest
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index);
-
-                         as String;
+    var subStore: string = subStoreVector!.get(index); as String;
         
         
 ;
@@ -346,9 +344,7 @@ var column = column
     
 
     var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS);
-
-                         as String)!;
+                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String)!;
         
         
 ;

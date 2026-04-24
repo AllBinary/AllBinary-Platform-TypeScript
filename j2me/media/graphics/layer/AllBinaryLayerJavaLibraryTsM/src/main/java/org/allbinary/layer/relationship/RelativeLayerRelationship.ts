@@ -62,10 +62,10 @@ export class RelativeLayerRelationship extends RelativeRelationship {
         
         
 public constructor (layer: AllBinaryLayer, x: number, y: number){
-            this(layer, PointFactory.getInstance()!.getInstance(x, y), BasicArrayListUtil.getInstance()!.getImmutableInstance());
-                    var layer = layer
-var x = x
-var y = y
+            this(layer, PointFactory.getInstance()!.getInstance0(x, y), BasicArrayListUtil.getInstance()!.getImmutableInstance());
+                        //var layer = layer
+    //var x = x
+    //var y = y
 
 
                             //For kotlin this is before the body of the constructor.
@@ -74,9 +74,9 @@ var y = y
 
 public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList){
             super(point, typesAllowedList);
-                    var layer = layer
-var point = point
-var typesAllowedList = typesAllowedList
+                        //var layer = layer
+    //var point = point
+    //var typesAllowedList = typesAllowedList
 
 
                             //For kotlin this is before the body of the constructor.

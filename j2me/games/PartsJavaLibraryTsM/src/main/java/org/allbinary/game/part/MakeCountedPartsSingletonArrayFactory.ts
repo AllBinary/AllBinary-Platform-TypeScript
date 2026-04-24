@@ -36,6 +36,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -89,7 +92,7 @@ export class MakeCountedPartsSingletonArrayFactory
             
     public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
-this.list= new BasicArrayList();
+this.list= new BasicArrayListD();
     
 
 
@@ -182,9 +185,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
         
 index < newSize; index++)
         {
-newPartInterfaceArray[index]= this.list.get(index);
-
-                         as PartInterface;
+newPartInterfaceArray[index]= this.list.get(index); as PartInterface;
     
 }
 

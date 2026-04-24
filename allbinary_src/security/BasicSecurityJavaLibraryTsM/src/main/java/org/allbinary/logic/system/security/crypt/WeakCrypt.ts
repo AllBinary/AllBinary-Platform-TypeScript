@@ -113,9 +113,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DatabaseEncoder.encode(crypted);
-
-                        ;
+                        return DatabaseEncoder.encode(crypted);;
     
 
                 //: 

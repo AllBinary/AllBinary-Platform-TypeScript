@@ -122,9 +122,7 @@ public constructor (transformInfoInterface: Object){
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface();
-
-                         as TransformInfoHttp) as TransformInfoInterface;
+    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;
         
         
 ;
@@ -231,9 +229,7 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterface!.view();
-
-                        ;
+                        return componentInterface!.view();;
     
 
                 //: 

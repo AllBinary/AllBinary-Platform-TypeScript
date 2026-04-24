@@ -164,17 +164,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "write()");
 
                         }
                             
-outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384));
-
-                         as ByteArrayOutputStream;
+outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return outputStream!.toByteArray();
-
-                        ;
+                        return outputStream!.toByteArray();;
     
 
          finally {

@@ -45,6 +45,9 @@ import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -75,26 +78,13 @@ import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         
 
-    public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
+    public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
         
         
 
-    private collidableInferface: CollidableBaseBehavior
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior){
-            super(layerInfo, viewPosition);
-                        //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-    //var collidableInferface = collidableInferface
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
-    
-this.setCollidableInferface(collidableInferface);
-    
-}
-
+    private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!;
+        
+        
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior){
             super(name, layerInfo, viewPosition);
                         //var name = name
@@ -105,46 +95,15 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
                             //For kotlin this is before the body of the constructor.
                     
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
+
+                        if(collidableInferface != CollidableNeverCollideBehaviorFactory.getInstance())
+                        
+                                    {
+                                    this.setCollidableInferface(collidableInferface);
     
-this.setCollidableInferface(collidableInferface);
-    
-}
 
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(layerInfo, viewPosition);
-                        //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
-    
-}
-
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(name, layerInfo, viewPosition);
-                        //var name = name
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
-    
-}
-
-public constructor (layerInfo: Rectangle){
-            super(layerInfo);
-                        //var layerInfo = layerInfo
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.collidableInferface= CollidableNeverCollideBehaviorFactory.getInstance();
-    
+                                    }
+                                
 }
 
 
@@ -155,9 +114,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ArtificialIntelligence.getInstance();
-
-                        ;
+                        return ArtificialIntelligence.getInstance();;
     
 }
 
@@ -219,9 +176,7 @@ this.toString(stringBuffer);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

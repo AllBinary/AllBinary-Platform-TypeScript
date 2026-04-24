@@ -82,8 +82,8 @@ private constructor (){
                 //@Throws(Error::class)
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
-var motionGestureEvent = motionGestureEvent
-var halfWidth = halfWidth
+    //var motionGestureEvent = motionGestureEvent
+    //var halfWidth = halfWidth
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;
         
@@ -109,13 +109,13 @@ var halfWidth = halfWidth
 ;
     
 
-    var mirroredPreviousPoint: GPoint = pointFactory!.getInstance(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
+    var mirroredPreviousPoint: GPoint = pointFactory!.getInstance0(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
         
         
 ;
     
 
-    var mirroredCurrentPoint: GPoint = pointFactory!.getInstance(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
+    var mirroredCurrentPoint: GPoint = pointFactory!.getInstance0(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
         
         
 ;

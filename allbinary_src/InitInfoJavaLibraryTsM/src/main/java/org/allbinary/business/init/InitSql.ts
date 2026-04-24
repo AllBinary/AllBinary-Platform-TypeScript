@@ -553,9 +553,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName);
-
-                         as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
         
         
 ;
@@ -668,9 +666,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 i < size -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i);
-
-                         as String)!;
+    var value: string = this.getValue(values.get(i) as String)!;
         
         
 ;
@@ -682,9 +678,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement();
-
-                         as String)!;
+    var value: string = this.getValue(values.lastElement() as String)!;
         
         
 ;

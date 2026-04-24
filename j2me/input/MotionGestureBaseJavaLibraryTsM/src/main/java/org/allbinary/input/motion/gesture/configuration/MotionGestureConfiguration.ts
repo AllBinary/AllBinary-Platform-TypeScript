@@ -36,6 +36,9 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -88,7 +91,7 @@ export class MotionGestureConfiguration
         
         
 
-    private activeCommands: BasicArrayList = new BasicArrayList();
+    private activeCommands: BasicArrayList = new BasicArrayListD();
         
         
 public constructor (){

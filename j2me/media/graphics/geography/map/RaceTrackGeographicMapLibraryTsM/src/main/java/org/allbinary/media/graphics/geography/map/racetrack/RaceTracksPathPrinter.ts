@@ -107,9 +107,7 @@ index < size; index++)
 console.log(new StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
-this.printPath(list.get(index);
-
-                         as BasicArrayList);
+this.printPath(list.get(index) as BasicArrayList);
     
 }
 

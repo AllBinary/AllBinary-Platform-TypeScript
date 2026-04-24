@@ -58,9 +58,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRawX();
-
-                        ;
+                        return this.getRawX();;
     
 }
 
@@ -70,9 +68,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRawY();
-
-                        ;
+                        return this.getRawY();;
     
 }
 
@@ -82,9 +78,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRawZ();
-
-                        ;
+                        return this.getRawZ();;
     
 }
 

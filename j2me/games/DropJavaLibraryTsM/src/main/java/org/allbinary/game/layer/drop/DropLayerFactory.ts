@@ -24,6 +24,9 @@ import { PickedUpLayerInterfaceFactoryInterface } from "../../../../../org/allbi
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -65,7 +68,7 @@ export class DropLayerFactory
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -85,9 +88,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.size();
-
-                        ;
+                        return list.size();;
     
 }
 
@@ -101,9 +102,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicArrayListUtil!.getRandom(this.list);
-
-                         as PickedUpLayerInterfaceFactoryInterface;
+                        return this.basicArrayListUtil!.getRandom(this.list); as PickedUpLayerInterfaceFactoryInterface;
     
 }
 

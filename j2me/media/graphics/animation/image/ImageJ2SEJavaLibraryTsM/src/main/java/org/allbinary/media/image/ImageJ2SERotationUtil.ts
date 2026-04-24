@@ -91,9 +91,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage(bufferedImage, TWO_PIE *totalAngle /360);
-
-                        ;
+                        return this.getRotatedImage(bufferedImage, TWO_PIE *totalAngle /360);;
     
 }
 
@@ -113,9 +111,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage(bufferedImage, newBufferedImage, newBufferedImage!.createGraphics(), radians);
-
-                        ;
+                        return this.getRotatedImage(bufferedImage, newBufferedImage, newBufferedImage!.createGraphics(), radians);;
     
 }
 
@@ -167,9 +163,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);
-
-                        ;
+                        return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);;
     
 }
 
@@ -188,9 +182,7 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);
-
-                        ;
+                        return this.getRotatedImage(bufferedImage, newBufferedImage, g, TWO_PIE *totalAngle /360);;
     
 }
 

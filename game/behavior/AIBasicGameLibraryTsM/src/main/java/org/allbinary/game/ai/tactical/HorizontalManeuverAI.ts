@@ -120,7 +120,7 @@ this.drop();
                         if(this.currentRelativeAngle == 0)
                         
                                     {
-                                    x += ();
+                                    x += this.currentSpeed;
     
 
                                     }
@@ -129,7 +129,7 @@ this.drop();
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    x -= ();
+                                    x -= this.currentSpeed;
     
 
                                     }

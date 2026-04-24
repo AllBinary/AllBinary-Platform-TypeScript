@@ -215,9 +215,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i);
-
-                         as PaymentType;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
         
         
 ;
@@ -340,9 +338,7 @@ index < nodeList!.getLength(); index++)
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue);)
                         
                                     {
                                     this.defaultName= defaultPaymentGatewayNodeValue;
@@ -374,18 +370,14 @@ var storeName = storeName
 this.initDefault(storeName);
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName);)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(this.defaultName);
-
-                        ;
+                        return this.get(this.defaultName);;
     
 
                                     }
@@ -403,9 +395,7 @@ var paymentType = paymentType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentTypeVector!.contains(paymentType);
-
-                        ;
+                        return this.paymentTypeVector!.contains(paymentType);;
     
 }
 
@@ -435,20 +425,14 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i);
-
-                         as PaymentType;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
         
         
 ;
     
 
-                        if(!a_PaymentTypeVector!.contains(paymentType);
-
-                        )
+                        if(!a_PaymentTypeVector!.contains(paymentType);)
                         diff.add(paymentType);
-
-                        
 }
 
 

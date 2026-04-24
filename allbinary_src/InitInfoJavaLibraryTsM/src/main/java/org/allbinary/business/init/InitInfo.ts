@@ -135,9 +135,7 @@ private constructor (){
                                     }
                                 
 
-                        if(!initInfoEntity!.is();
-
-                        )
+                        if(!initInfoEntity!.is();)
                         
                                     {
                                     
@@ -194,17 +192,11 @@ this.hasRead= false;
 var hashMap = hashMap
 
         try {
-            this.testing= hashMap!.get(this.TESTING);
-
-                         as String;
+            this.testing= hashMap!.get(this.TESTING); as String;
     
-this.mainPath= new AbPath(hashMap!.get(this.MAINPATH);
-
-                         as String);
+this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as String);
     
-this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH);
-
-                         as String);
+this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as String);
     
 
                 //: 
@@ -328,9 +320,7 @@ this.get();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BooleanUtil.getInstance()!.getFromString(this.testing);
-
-                        ;
+                        return BooleanUtil.getInstance()!.getFromString(this.testing);;
     
 
                 //: 
@@ -381,9 +371,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return testHtmlPath!.toString();
-
-                        ;
+                        return testHtmlPath!.toString();;
     
 
                                     }
@@ -414,9 +402,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mainPath!.toString();
-
-                        ;
+                        return mainPath!.toString();;
     
 
                                     }
@@ -485,9 +471,7 @@ var testing = testing
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BooleanUtil.getInstance()!.isStringBoolean(testing);
-
-                        ;
+                        return BooleanUtil.getInstance()!.isStringBoolean(testing);;
     
 }
 

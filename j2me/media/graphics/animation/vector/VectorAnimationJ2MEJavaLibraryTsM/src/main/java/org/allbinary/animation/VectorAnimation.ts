@@ -139,9 +139,7 @@ this.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -166,9 +164,7 @@ this.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 
@@ -285,9 +281,7 @@ this.paintVectors(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.circularIndexUtil!.getIndex();
-
-                        ;
+                        return this.circularIndexUtil!.getIndex();;
     
 }
 

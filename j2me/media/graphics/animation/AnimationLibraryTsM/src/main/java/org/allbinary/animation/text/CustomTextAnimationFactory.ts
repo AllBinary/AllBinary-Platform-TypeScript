@@ -80,60 +80,9 @@ export class CustomTextAnimationFactory
 
     private initScaleHeight: number
 
-    private dx: number = 0;
-        
-        
-
-    private dy: number = 0;
-        
-        
-
     font: Font
 
     public scaleProperties: ScaleProperties
-public constructor (text: string, fontSize: number, dx: number, dy: number){
-            this(text, fontSize, AnimationBehaviorFactory.getInstance());
-                        //var text = text
-    //var fontSize = fontSize
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.dx= dx;
-    
-this.dy= dy;
-    
-}
-
-public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(text, fontSize, animationBehaviorFactory);
-                        //var text = text
-    //var fontSize = fontSize
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.dx= dx;
-    
-this.dy= dy;
-    
-}
-
-public constructor (text: string, fontSize: number){
-            this(text, fontSize, AnimationBehaviorFactory.getInstance());
-                        //var text = text
-    //var fontSize = fontSize
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (text: string, fontSize: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -163,21 +112,8 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
     var customTextAnimation: CustomTextAnimation
 ;
     
-
-                        if(this.dx != 0 || this.dy != 0)
-                        
-                                    {
-                                    customTextAnimation= new AdjustCustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.dx, this.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
     
-
-                                    }
-                                
-                        else {
-                            customTextAnimation= new CustomTextAnimation(this.text, this.scaleProperties!.scaleHeight, this.animationBehaviorFactory!.getOrCreateInstance());
-    
-
-                        }
-                            
 customTextAnimation!.setBasicColorP(this.basicColor);
     
 
@@ -199,9 +135,7 @@ customTextAnimation!.setBasicColorP(this.basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.font.stringWidth(this.text);
-
-                        ;
+                        return this.font.stringWidth(this.text);;
     
 }
 
@@ -211,9 +145,7 @@ customTextAnimation!.setBasicColorP(this.basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.font.getHeight();
-
-                        ;
+                        return this.font.getHeight();;
     
 }
 

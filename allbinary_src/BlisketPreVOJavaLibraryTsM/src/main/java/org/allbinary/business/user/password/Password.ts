@@ -130,9 +130,7 @@ this.password= value;
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);)
                         
                                     {
                                     
@@ -181,9 +179,7 @@ valid= Boolean.FALSE;
 
     public getValidationInfo(): string{
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.password, 6, UserData.MAXLEN);)
                         
                                     {
                                     

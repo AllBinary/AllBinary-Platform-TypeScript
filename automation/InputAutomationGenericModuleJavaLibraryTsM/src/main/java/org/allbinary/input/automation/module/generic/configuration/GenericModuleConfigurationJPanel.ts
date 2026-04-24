@@ -527,9 +527,7 @@ genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericPro
 genericProfileActionsJPanel!.selectFirstElement();
     
 
-    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout();
-
-                         as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout(); as javax.swing.GroupLayout;
         
         
 ;
@@ -565,9 +563,7 @@ this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListMod
                                     {
                                     this.genericProfilesJList!.setSelectedValue(this.genericProfilesJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0);
-
-                         as String);
+this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as String);
     
 
                                     }
@@ -617,9 +613,7 @@ this.captureMotionAnalysisJCheckBox!.setSelected(false);
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index);
-
-                         as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
         
         
 ;
@@ -673,11 +667,7 @@ this.captureMotionAnalysisJCheckBox!.setSelected(true);
 }
 
 
-                        if(!this.screenCaptureJRadioButton!.isSelected();
-
-                         && !this.savedCaptureJRadioButton!.isSelected();
-
-                        )
+                        if(!this.screenCaptureJRadioButton!.isSelected(); && !this.savedCaptureJRadioButton!.isSelected();)
                         
                                     {
                                     this.screenCaptureJRadioButton!.setSelected(true);
@@ -748,9 +738,7 @@ var evt = evt
 
         try {
             
-    var profileNameString: string = this.genericProfilesJList!.getSelectedValue();
-
-                         as String;
+    var profileNameString: string = this.genericProfilesJList!.getSelectedValue(); as String;
         
         
 ;

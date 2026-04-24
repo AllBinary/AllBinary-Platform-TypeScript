@@ -68,9 +68,7 @@ var keyCode = keyCode
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return input.getName();
-
-                        ;
+                        return input.getName();;
     
 
                                     }
@@ -125,9 +123,7 @@ inputFactory!.add(id, this);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append("J2MEGameKey: ")!.append(super.toString())!.toString();
-
-                        ;
+                            append("J2MEGameKey: ")!.append(super.toString())!.toString();;
     
 }
 

@@ -39,6 +39,9 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -88,9 +91,7 @@ var directoryAbPath = directoryAbPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.create(directoryAbPath!.toFileSystemString());
-
-                        ;
+                        return this.create(directoryAbPath!.toFileSystemString());;
     
 }
 
@@ -115,17 +116,13 @@ var directory = directory
 ;
     
 
-                        if(!directoryFile!.isDirectory();
-
-                        )
+                        if(!directoryFile!.isDirectory();)
                         
                                     {
                                     PreLogUtil.put("Creating Directories: " +directory, this, "create");
     
 
-                        if(!directoryFile!.mkdirs();
-
-                        )
+                        if(!directoryFile!.mkdirs();)
                         
                                     {
                                     
@@ -218,9 +215,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search(fileFilter, file, false);
-
-                        ;
+                        return this.search(fileFilter, file, false);;
     
 }
 
@@ -230,7 +225,7 @@ var fileFilter = fileFilter
 var file = file
 var isRecursiveSearch = isRecursiveSearch
 
-    var fileList: BasicArrayList = new BasicArrayList();
+    var fileList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -335,9 +330,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search(file, false);
-
-                        ;
+                        return this.search(file, false);;
     
 }
 
@@ -346,7 +339,7 @@ var file = file
     //var file = file
     //var isRecursiveSearch = isRecursiveSearch
 
-    var fileList: BasicArrayList = new BasicArrayList();
+    var fileList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -445,9 +438,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search(searchValue, file, false);
-
-                        ;
+                        return this.search(searchValue, file, false);;
     
 }
 
@@ -457,7 +448,7 @@ var file = file
     //var file = file
     //var isRecursiveSearch = isRecursiveSearch
 
-    var fileList: BasicArrayList = new BasicArrayList();
+    var fileList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -563,9 +554,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search(level, file, false);
-
-                        ;
+                        return this.search(level, file, false);;
     
 }
 
@@ -575,7 +564,7 @@ var level = level
 var file = file
 var isRecursiveSearch = isRecursiveSearch
 
-    var fileList: BasicArrayList = new BasicArrayList();
+    var fileList: BasicArrayList = new BasicArrayListD();
         
         
 ;

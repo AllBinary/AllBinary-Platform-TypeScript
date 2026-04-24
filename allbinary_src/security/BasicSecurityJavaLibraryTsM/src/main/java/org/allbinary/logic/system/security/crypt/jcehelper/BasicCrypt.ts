@@ -103,9 +103,7 @@ this.key= key;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mutilate(array);
-
-                        ;
+                        return this.mutilate(array);;
     
 
                 //: 
@@ -132,9 +130,7 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mutilate(array);
-
-                        ;
+                        return this.mutilate(array);;
     
 
                 //: 

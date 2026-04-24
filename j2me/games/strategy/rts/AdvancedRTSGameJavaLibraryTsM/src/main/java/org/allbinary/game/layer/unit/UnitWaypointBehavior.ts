@@ -20,15 +20,6 @@
 
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-import { SensorAction } from "../../../../../org/allbinary/game/layer/SensorAction.js";
-
-    
-import { SensorActionFactory } from "../../../../../org/allbinary/game/layer/SensorActionFactory.js";
-
-    
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { PrimaryWaypointHelper } from "../../../../../org/allbinary/game/input/form/PrimaryWaypointHelper.js";
 
     
@@ -36,6 +27,12 @@ import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/Ad
 
     
 import { RTSLayerEvent } from "../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
+
+    
+import { SensorAction } from "../../../../../org/allbinary/game/layer/SensorAction.js";
+
+    
+import { SensorActionFactory } from "../../../../../org/allbinary/game/layer/SensorActionFactory.js";
 
     
 import { WaypointBehaviorBase } from "../../../../../org/allbinary/game/layer/WaypointBehaviorBase.js";
@@ -50,22 +47,16 @@ import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbina
 import { WaypointEventListenerInterface } from "../../../../../org/allbinary/game/layer/waypoint/event/WaypointEventListenerInterface.js";
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
-
-    
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
-
-    
-import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
-
-    
 import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
 
     
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
@@ -86,7 +77,19 @@ import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/gr
 import { SimpleGeographicMapCellPositionFactory } from "../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js";
 
     
+import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+
+    
 import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+
+    
+import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
+import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
 
@@ -179,9 +182,9 @@ this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer;
     
 this.completeTimeDelayHelper= new TimeDelayHelper(30000);
     
-this.targetList= new BasicArrayList();
+this.targetList= new BasicArrayListD();
     
-this.possibleTargetList= new BasicArrayList();
+this.possibleTargetList= new BasicArrayListD();
     
 this.setWaypointPathsList(BasicArrayListUtil.getInstance()!.getImmutableInstance());
     
@@ -211,9 +214,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
 
-    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer();
-
-                         as AdvancedRTSGameLayer;
+    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer(); as AdvancedRTSGameLayer;
         
         
 ;
@@ -257,9 +258,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                         
                                     {
                                     
-                        if(!this.targetList!.contains(advancedRTSGameLayer);
-
-                        )
+                        if(!this.targetList!.contains(advancedRTSGameLayer);)
                         
                                     {
                                     this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer);
@@ -380,9 +379,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapC
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList);
-
-                         as BasicArrayList;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList); as BasicArrayList;
         
         
 ;
@@ -594,9 +591,7 @@ stringBuffer!.appendint(this.longWeaponRange +this.currentTargetLayerInterfaceP!
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

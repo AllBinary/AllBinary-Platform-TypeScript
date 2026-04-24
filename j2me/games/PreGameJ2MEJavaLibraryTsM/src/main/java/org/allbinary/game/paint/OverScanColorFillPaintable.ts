@@ -61,11 +61,7 @@ public constructor (basicColor: BasicColor){
 var graphics = graphics
 graphics.setColor(this.colorP);
     
-graphics.fillRect( -graphics.getClipX();
-
-                        ,  -graphics.getClipY();
-
-                        , this.displayInfoSingleton!.getLastWidth() +(graphics.getClipX() *2), this.displayInfoSingleton!.getLastHeight() +(graphics.getClipY() *2));
+graphics.fillRect( -graphics.getClipX(),  -graphics.getClipY(), this.displayInfoSingleton!.getLastWidth() +(graphics.getClipX() *2), this.displayInfoSingleton!.getLastHeight() +(graphics.getClipY() *2));
     
 }
 

@@ -83,9 +83,7 @@ var document = document
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface();
-
-                         as StoreThemeCategoryInterface;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface(); as StoreThemeCategoryInterface;
         
         
 ;

@@ -118,9 +118,7 @@ var requestPath = requestPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return requestPath!.substring(beginIndex +1);
-
-                        ;
+                        return requestPath!.substring(beginIndex +1);;
     
 
                         }

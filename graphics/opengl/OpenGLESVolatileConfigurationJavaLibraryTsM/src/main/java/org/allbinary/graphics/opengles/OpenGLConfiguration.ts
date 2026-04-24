@@ -142,9 +142,7 @@ private constructor (){
                         
                                     {
                                     
-                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
-
-                        )
+                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
                         
                                     {
                                     this.logUtil!.putF("Turning on OpenGL", this, commonStrings!.INIT);
@@ -184,9 +182,7 @@ features.addDefault(this.getVersionSelector());
                                 
                         else {
                             
-                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
-
-                        )
+                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
                         
                                     {
                                     PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT);
@@ -234,9 +230,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
                         
                                     {
                                     
-                        if(!this.isOpenGL();
-
-                        )
+                        if(!this.isOpenGL();)
                         
                                     {
                                     this.setOpenGL(true);
@@ -519,9 +513,7 @@ stringBuffer!.append(stringUtil!.toString(this.getColor()));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

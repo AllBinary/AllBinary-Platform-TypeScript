@@ -73,9 +73,7 @@ export class MyGraphicItemEventService
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.add(listenerconstructor;
-
-                         as Class<*>, listener as java.util.EventListener);
+listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 
@@ -83,9 +81,7 @@ listenerList!.add(listenerconstructor;
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.remove(listenerconstructor;
-
-                         as Class<*>, listener as java.util.EventListener);
+listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 

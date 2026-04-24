@@ -122,17 +122,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance();
-
-                         as StoreThemeCategoryInterface;
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
         
         
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface);
-
-                         as StoreThemeCategoryInterface;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface); as StoreThemeCategoryInterface;
         
         
 ;
@@ -217,9 +213,7 @@ stringBuffer!.append(this.validationInterface!.validationInfo());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

@@ -83,9 +83,7 @@ public constructor (file: AbFile){
             //var file = file
 this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
-this.transformDocumentInterface= TransformDocumentFactory.getInstance();
-
-                         as TransformDocumentInterface;
+this.transformDocumentInterface= TransformDocumentFactory.getInstance(); as TransformDocumentInterface;
     
 }
 
@@ -167,9 +165,7 @@ this.transformDocumentInterface= transformDocumentInterface;
         
 index < size; index++)
         {
-nextFile= this.fileBasicArrayList!.get(index);
-
-                         as AbFile;
+nextFile= this.fileBasicArrayList!.get(index); as AbFile;
     
 fileNode= new FileDomDataModel(nextFile).
                             toXmlNode(document);
@@ -194,9 +190,7 @@ dirNode!.appendChild(fileNode);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformDocumentInterface()!.getDoc();
-
-                        ;
+                        return this.getTransformDocumentInterface()!.getDoc();;
     
 }
 
@@ -216,9 +210,7 @@ this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(this.getTransformDocumentInterface()!.getDoc());
-
-                        ;
+                        return DomDocumentHelper.toString(this.getTransformDocumentInterface()!.getDoc());;
     
 }
 

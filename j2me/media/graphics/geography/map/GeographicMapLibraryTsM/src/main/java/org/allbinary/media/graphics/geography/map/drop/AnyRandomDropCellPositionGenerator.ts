@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { AllBinaryGameLayerManager } from "../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -69,7 +72,7 @@ import { BaseDropCellPositionGenerator } from "./BaseDropCellPositionGenerator.j
 export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGenerator {
         
 
-    readonly list: BasicArrayList = new BasicArrayList();
+    readonly list: BasicArrayList = new BasicArrayListD();
         
         
 

@@ -66,6 +66,9 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
@@ -300,7 +303,7 @@ stringBuffer!.append(this.getFileName());
             
     public getTypeVector(): BasicArrayList{
 
-    var logKeyVector: BasicArrayList = new BasicArrayList();
+    var logKeyVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -346,9 +349,7 @@ stringBuffer!.append(this.getFileName());
 i < size; i++)
         {
 
-    var node: Node = logConfigTypeNodeVector!.elementAt(i);
-
-                         as Node;
+    var node: Node = logConfigTypeNodeVector!.elementAt(i); as Node;
         
         
 ;

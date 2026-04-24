@@ -131,9 +131,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         
 ;
     
-this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME);
-
-                         as String;
+this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as String;
     
 }
 
@@ -216,9 +214,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = componentVector!.get(index);
-
-                         as TransformInfo;
+    var transformInfo: TransformInfo = componentVector!.get(index); as TransformInfo;
         
         
 ;
@@ -445,9 +441,7 @@ stringBuffer!.append("Error: Template Name Is Empty.");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -501,9 +495,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return views.ValidationOnlyTempUtil.getInstance()!.view(this);
-
-                        ;
+                        return views.ValidationOnlyTempUtil.getInstance()!.view(this);;
     
 }
 

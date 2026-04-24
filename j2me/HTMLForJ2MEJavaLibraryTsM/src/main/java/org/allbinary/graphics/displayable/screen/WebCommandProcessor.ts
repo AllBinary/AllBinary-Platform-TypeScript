@@ -36,6 +36,9 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { PlayN } from "../../../../../playn/core/PlayN.js";
 
     
@@ -87,7 +90,7 @@ export class WebCommandProcessor
         
         
 
-    public readonly list: BasicArrayList = new BasicArrayList();
+    public readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -97,9 +100,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL(this.list.remove(0);
-
-                         as String);
+            PlayN.openURL(this.list.remove(0) as String);
     
 
                 //: 

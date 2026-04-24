@@ -131,9 +131,7 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index);
-
-                         as TransformInfo;
+    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index); as TransformInfo;
         
         
 ;
@@ -195,9 +193,7 @@ var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index);
-
-                         as TransformInfo;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
         
         
 ;

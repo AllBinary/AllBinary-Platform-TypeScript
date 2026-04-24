@@ -107,9 +107,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 
@@ -160,9 +158,7 @@ var document = document
 index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index);
-
-                         as WorkFlowInterface;
+    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index); as WorkFlowInterface;
         
         
 ;

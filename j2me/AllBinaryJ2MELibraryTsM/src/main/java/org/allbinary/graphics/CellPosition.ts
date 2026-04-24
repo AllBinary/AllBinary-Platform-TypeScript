@@ -55,9 +55,7 @@ var basicGeographicMapCellPosition = basicGeographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return toString(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
-
-                        ;
+                        return toString(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());;
     
 }
 
@@ -91,9 +89,7 @@ stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -144,9 +140,7 @@ this.id= (row *columns) +column;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CellPosition.toString(this.getColumn(), this.getRow());
-
-                        ;
+                        return CellPosition.toString(this.getColumn(), this.getRow());;
     
 }
 

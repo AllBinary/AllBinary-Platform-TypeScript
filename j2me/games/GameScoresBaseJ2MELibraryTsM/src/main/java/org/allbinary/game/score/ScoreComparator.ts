@@ -191,9 +191,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getHighTooLow(scoreOne, scoreTwo);
-
-                        ;
+                        return this.getHighTooLow(scoreOne, scoreTwo);;
     
 
                                     }
@@ -203,9 +201,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getLowTooHigh(scoreOne, scoreTwo);
-
-                        ;
+                        return this.getLowTooHigh(scoreOne, scoreTwo);;
     
 
                         }

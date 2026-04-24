@@ -179,9 +179,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index);
-
-                         as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index); as DomNodeInterface;
         
         
 ;
@@ -194,9 +192,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformDocumentInterface()!.getDoc();
-
-                        ;
+                        return this.getTransformDocumentInterface()!.getDoc();;
     
 
                 //: 
@@ -265,9 +261,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformDocumentInterface()!.getDoc();
-
-                        ;
+                        return this.getTransformDocumentInterface()!.getDoc();;
     
 }
 

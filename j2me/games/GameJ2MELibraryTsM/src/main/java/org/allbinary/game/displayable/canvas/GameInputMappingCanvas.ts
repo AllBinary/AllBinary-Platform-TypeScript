@@ -439,9 +439,7 @@ this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
 ;
     
 
-                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input);
-
-                        )
+                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input);)
                         
                                     {
                                     

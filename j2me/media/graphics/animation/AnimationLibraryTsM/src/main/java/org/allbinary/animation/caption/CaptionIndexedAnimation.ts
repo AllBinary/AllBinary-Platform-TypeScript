@@ -204,9 +204,7 @@ this.movieIndexedAnimationInterface!.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.movieIndexedAnimationInterface!.getFrame();
-
-                        ;
+                        return this.movieIndexedAnimationInterface!.getFrame();;
     
 }
 
@@ -216,9 +214,7 @@ this.movieIndexedAnimationInterface!.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.movieIndexedAnimationInterface!.getSize();
-
-                        ;
+                        return this.movieIndexedAnimationInterface!.getSize();;
     
 }
 
@@ -233,9 +229,7 @@ var sequence = sequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

@@ -128,9 +128,7 @@ repeatLikelyhoodIntegerArray[Canvas.KEY_NUM1]= smallIntegerSingletonFactory!.get
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputProbability!.toHashtable();
-
-                        ;
+                        return inputProbability!.toHashtable();;
     
 }
 

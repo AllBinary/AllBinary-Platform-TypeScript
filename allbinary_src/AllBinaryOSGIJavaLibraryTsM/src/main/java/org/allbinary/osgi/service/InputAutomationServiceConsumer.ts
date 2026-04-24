@@ -130,14 +130,10 @@ this.logUtil!.putF("Processing " +vector.length +" Services", this, commonString
         
 index < size; index++)
         {
-osgiServiceInterface= vector.get(index);
-
-                         as OSGIServiceInterface;
+osgiServiceInterface= vector.get(index); as OSGIServiceInterface;
     
 
-                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);
-
-                        )
+                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);)
                         
                                     {
                                     
@@ -160,9 +156,7 @@ osgiServiceInterface= vector.get(index);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getBundleContext()!.getServiceReferences(this.getRegistryName(), 
-                            null);
-
-                        ;
+                            null);;
     
 }
 

@@ -112,9 +112,7 @@ var document = document
 index < size; index++)
         {
 
-    var userInterface: User = this.userVector!.get(index);
-
-                         as User;
+    var userInterface: User = this.userVector!.get(index); as User;
         
         
 ;
@@ -192,9 +190,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

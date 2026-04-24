@@ -130,9 +130,7 @@ this.basicColorArray= basicColorArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -242,9 +240,7 @@ this.sprite.prevFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.sprite.getRawFrameCount();
-
-                        ;
+                        return this.sprite.getRawFrameCount();;
     
 }
 
@@ -261,9 +257,7 @@ this.sprite.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.sprite.getFrame();
-
-                        ;
+                        return this.sprite.getFrame();;
     
 }
 
@@ -300,9 +294,7 @@ this.sprite.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -317,9 +309,7 @@ this.sprite.setFrame(frame);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

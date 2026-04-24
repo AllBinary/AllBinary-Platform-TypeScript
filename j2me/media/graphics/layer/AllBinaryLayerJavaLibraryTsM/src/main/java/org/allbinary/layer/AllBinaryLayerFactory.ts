@@ -21,6 +21,9 @@
 import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
 
     
+import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { ViewPosition } from "../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -67,7 +70,7 @@ this.rectangle= rectangle;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AllBinaryLayer(this.rectangle, new ViewPosition());
+                        return new AllBinaryLayer(StringUtil.getInstance()!.EMPTY_STRING, this.rectangle, ViewPosition.getInstanceD());
     
 }
 

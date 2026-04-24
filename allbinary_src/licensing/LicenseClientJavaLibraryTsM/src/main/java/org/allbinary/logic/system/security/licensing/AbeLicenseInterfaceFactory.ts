@@ -122,9 +122,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return get(abeClientInformation);
-
-                        ;
+                        return get(abeClientInformation);;
     
 
                                     }
@@ -219,9 +217,7 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 
                         if(this.abeLicenseInterface == 
                                     null
-                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey();
-
-                         || isCheck() || currentTime -checkPeriod > time)
+                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey(); || isCheck() || currentTime -checkPeriod > time)
                         
                                     {
                                     this.abeLicenseInterface= 

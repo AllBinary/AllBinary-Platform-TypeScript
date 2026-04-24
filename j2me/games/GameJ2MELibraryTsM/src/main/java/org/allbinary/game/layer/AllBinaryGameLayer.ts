@@ -66,6 +66,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -138,28 +141,9 @@ basicSetColorUtil!.setBasicColorP(graphics, BLACK);
         
         
 
-    private readonly gameKeyEventList: BasicArrayList = new BasicArrayList();
+    private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
         
         
-public constructor (layerInfo: Rectangle){
-            this(layerInfo, new ViewPosition());
-                        //var layerInfo = layerInfo
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (layerInfo: Rectangle, viewPosition: ViewPosition){
-            super(layerInfo, viewPosition);
-                        //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition);
                         //var name = name

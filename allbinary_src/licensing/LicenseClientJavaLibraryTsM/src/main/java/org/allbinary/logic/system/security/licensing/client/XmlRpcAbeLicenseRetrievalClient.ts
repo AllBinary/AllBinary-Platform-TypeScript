@@ -167,9 +167,7 @@ this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
 ;
     
 
-                        if(!AbeClientLicense.hasRequiredKeys(resultHashtable);
-
-                        )
+                        if(!AbeClientLicense.hasRequiredKeys(resultHashtable);)
                         
                                     {
                                     this.logUtil!.putF(INVALID, this, commonStrings!.GET);
@@ -178,9 +176,7 @@ this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 
                                     }
@@ -210,18 +206,14 @@ this.logUtil!.put(EXCEPTION_IN_CLIENT, this, commonStrings!.GET, e);
 this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
     
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);
-
-                        )
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 
                                     }
@@ -247,9 +239,7 @@ this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 }
 
@@ -262,9 +252,7 @@ this.logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 }
 

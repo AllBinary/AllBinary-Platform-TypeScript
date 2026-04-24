@@ -386,9 +386,7 @@ var gameFeature = gameFeature
                         
                                     {
                                     
-                        if(!this.isFullscreen();
-
-                        )
+                        if(!this.isFullscreen();)
                         
                                     {
                                     this.setFullscreen(true);
@@ -496,9 +494,7 @@ stringBuffer!.appendboolean(this.isShowTitleBar());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

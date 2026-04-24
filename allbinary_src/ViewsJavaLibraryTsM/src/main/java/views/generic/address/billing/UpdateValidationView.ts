@@ -88,9 +88,7 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.streetAddress!.isValid();
-
-                        ;
+                        return this.streetAddress!.isValid();;
     
 }
 
@@ -100,9 +98,7 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.streetAddress!.validationInfo();
-
-                        ;
+                        return this.streetAddress!.validationInfo();;
     
 }
 

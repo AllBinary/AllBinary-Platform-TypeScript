@@ -54,29 +54,11 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
         
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
-private constructor (animationInterface: Animation){
-            super(animationInterface);
-                    var animationInterface = animationInterface
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image){
-            super(new ImageAnimation(image, AnimationBehavior.getInstance()));
-                    var image = image
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (animationInterface: Animation, width: number, height: number){
-            this(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, animationInterface), AnimationBehavior.getInstance()));
-                    var animationInterface = animationInterface
-var width = width
-var height = height
+            super(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, animationInterface), AnimationBehavior.getInstance()));
+                        //var animationInterface = animationInterface
+    //var width = width
+    //var height = height
 
 
                             //For kotlin this is before the body of the constructor.

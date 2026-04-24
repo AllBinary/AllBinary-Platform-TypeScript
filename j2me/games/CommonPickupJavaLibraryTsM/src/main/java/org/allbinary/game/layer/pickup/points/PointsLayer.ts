@@ -33,6 +33,9 @@ import { Rectangle } from "../../../../../../org/allbinary/graphics/Rectangle.js
 import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
+import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -60,7 +63,7 @@ export class PointsLayer extends AllBinaryLayer {
 
     private readonly points: number
 public constructor (points: number){
-            super(new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new ViewPosition());
+            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
                     var points = points
 
 

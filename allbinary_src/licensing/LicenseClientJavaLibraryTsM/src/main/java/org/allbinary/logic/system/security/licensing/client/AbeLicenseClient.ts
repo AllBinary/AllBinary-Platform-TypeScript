@@ -103,9 +103,7 @@ public constructor (){
     
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null);
-
-                         as AbeLicenseInterface;
+                            null); as AbeLicenseInterface;
         
         
 ;
@@ -141,9 +139,7 @@ public constructor (){
 ;
     
 
-                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId);
-
-                        )
+                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId);)
                         
                                     {
                                     isNewLicenseId= true;
@@ -152,7 +148,7 @@ public constructor (){
                                     }
                                 
 
-                        if(servers.size >= this.MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
+                        if(servers.size() >= this.MINSERVERS && abeClientInformation!.isLargerOrDifferentServerList(servers))
                         
                                     {
                                     isBetterServerList= true;

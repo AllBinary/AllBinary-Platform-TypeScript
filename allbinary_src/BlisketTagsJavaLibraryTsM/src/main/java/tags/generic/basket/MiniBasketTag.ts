@@ -91,9 +91,7 @@ this.setObjectFile("views.generic.basket.mini.ValidationView");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                                     }

@@ -102,9 +102,7 @@ this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.g
 this.getGenericProfileActionScriptJPanel()!.updateJTree();
     
 
-    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout();
-
-                         as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout(); as javax.swing.GroupLayout;
         
         
 ;

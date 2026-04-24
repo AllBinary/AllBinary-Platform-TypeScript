@@ -93,9 +93,7 @@ var emailEvent = emailEvent
         
 ;
     
-EmailQueueFactory.getInstance()!.offer(email.getEmail();
-
-                         as EmailInterface);
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
 }
 
@@ -125,9 +123,7 @@ var emailEvent = emailEvent
         
 ;
     
-EmailQueueFactory.getInstance()!.offer(email.getEmail();
-
-                         as EmailInterface);
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
 }
 

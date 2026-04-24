@@ -109,9 +109,7 @@ index < RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RESOURCE_LOADING_LEVEL_ARRAY[index]!.getName();
-
-                        ;
+                        return RESOURCE_LOADING_LEVEL_ARRAY[index]!.getName();;
     
 
                                     }
@@ -122,9 +120,7 @@ index < RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return level.toString();
-
-                        ;
+                        return level.toString();;
     
 }
 

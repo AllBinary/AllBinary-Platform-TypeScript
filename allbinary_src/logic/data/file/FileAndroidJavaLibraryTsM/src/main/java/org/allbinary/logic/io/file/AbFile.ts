@@ -142,9 +142,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getName();
-
-                        ;
+                        return this.file.getName();;
     
 }
 
@@ -154,9 +152,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getParent();
-
-                        ;
+                        return this.file.getParent();;
     
 }
 
@@ -166,9 +162,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getParentFile();
-
-                        ;
+                        return this.file.getParentFile();;
     
 }
 
@@ -178,9 +172,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getPath();
-
-                        ;
+                        return this.file.getPath();;
     
 }
 
@@ -190,9 +182,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.isAbsolute();
-
-                        ;
+                        return this.file.isAbsolute();;
     
 }
 
@@ -202,9 +192,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getAbsolutePath();
-
-                        ;
+                        return this.file.getAbsolutePath();;
     
 }
 
@@ -214,9 +202,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getAbsoluteFile();
-
-                        ;
+                        return this.file.getAbsoluteFile();;
     
 }
 
@@ -228,9 +214,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getCanonicalPath();
-
-                        ;
+                        return this.file.getCanonicalPath();;
     
 }
 
@@ -242,9 +226,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getCanonicalFile();
-
-                        ;
+                        return this.file.getCanonicalFile();;
     
 }
 
@@ -254,9 +236,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.toURI();
-
-                        ;
+                        return this.file.toURI();;
     
 }
 
@@ -266,9 +246,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.canRead();
-
-                        ;
+                        return this.file.canRead();;
     
 }
 
@@ -278,9 +256,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.canWrite();
-
-                        ;
+                        return this.file.canWrite();;
     
 }
 
@@ -290,9 +266,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.exists();
-
-                        ;
+                        return this.file.exists();;
     
 }
 
@@ -302,9 +276,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.isDirectory();
-
-                        ;
+                        return this.file.isDirectory();;
     
 }
 
@@ -314,9 +286,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.isFile();
-
-                        ;
+                        return this.file.isFile();;
     
 }
 
@@ -326,9 +296,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.isHidden();
-
-                        ;
+                        return this.file.isHidden();;
     
 }
 
@@ -338,9 +306,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.lastModified();
-
-                        ;
+                        return this.file.lastModified();;
     
 }
 
@@ -350,9 +316,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.length();
-
-                        ;
+                        return this.file.length();;
     
 }
 
@@ -364,9 +328,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.createNewFile();
-
-                        ;
+                        return this.file.createNewFile();;
     
 }
 
@@ -378,9 +340,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.delete();
-
-                        ;
+                        return this.file.delete();;
     
 }
 
@@ -396,9 +356,7 @@ this.file.deleteOnExit();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.list();
-
-                        ;
+                        return this.file.list();;
     
 }
 
@@ -409,9 +367,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.list(filter);
-
-                        ;
+                        return this.file.list(filter);;
     
 }
 
@@ -421,9 +377,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles();
-
-                         as Array<any?>;
+                        return this.file.listFiles(); as Array<any?>;
     
 }
 
@@ -434,9 +388,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles(filter);
-
-                         as Array<any?>;
+                        return this.file.listFiles(filter); as Array<any?>;
     
 }
 
@@ -447,9 +399,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.listFiles(filter);
-
-                         as Array<any?>;
+                        return this.file.listFiles(filter); as Array<any?>;
     
 }
 
@@ -459,9 +409,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.mkdir();
-
-                        ;
+                        return this.file.mkdir();;
     
 }
 
@@ -471,9 +419,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.mkdirs();
-
-                        ;
+                        return this.file.mkdirs();;
     
 }
 
@@ -484,9 +430,7 @@ var dest = dest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.renameTo(dest.getFile());
-
-                        ;
+                        return this.file.renameTo(dest.getFile());;
     
 }
 
@@ -497,9 +441,7 @@ var time = time
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.setLastModified(time);
-
-                        ;
+                        return this.file.setLastModified(time);;
     
 }
 
@@ -509,9 +451,7 @@ var time = time
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.setReadOnly();
-
-                        ;
+                        return this.file.setReadOnly();;
     
 }
 
@@ -522,9 +462,7 @@ var pathname = pathname
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.compareTo(pathname);
-
-                        ;
+                        return this.file.compareTo(pathname);;
     
 }
 
@@ -535,9 +473,7 @@ var obj = obj
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.equals(obj);
-
-                        ;
+                        return this.file.equals(obj);;
     
 }
 
@@ -547,9 +483,7 @@ var obj = obj
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TsUtil.getInstance()!.hashCode(this.file);
-
-                        ;
+                        return TsUtil.getInstance()!.hashCode(this.file);;
     
 }
 
@@ -559,9 +493,7 @@ var obj = obj
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.toString();
-
-                        ;
+                        return this.file.toString();;
     
 }
 

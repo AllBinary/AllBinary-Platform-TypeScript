@@ -165,9 +165,7 @@ this.halfBorder= (border>>1);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.append(item);
-
-                        ;
+                        return super.append(item);;
     
 }
 
@@ -190,9 +188,7 @@ this.halfBorder= (border>>1);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(index);
-
-                        ;
+                        return this.get(index);;
     
 
                                     }
@@ -231,9 +227,7 @@ this.halfBorder= (border>>1);
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface = this.get(index);
-
-                         as CustomItemInterface;
+    var nextItem: CustomItemInterface = this.get(index); as CustomItemInterface;
         
         
 ;
@@ -352,9 +346,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
         
 index < size; index++)
         {
-item= this.get(index);
-
-                         as CustomItemInterface;
+item= this.get(index); as CustomItemInterface;
     
 width= item.getMinimumWidth();
     

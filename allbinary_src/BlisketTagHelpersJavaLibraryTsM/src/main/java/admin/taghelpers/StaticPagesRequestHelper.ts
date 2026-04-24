@@ -146,13 +146,9 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
-this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);
-
-                         as String;
+this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
     
 this.getFormData();
     

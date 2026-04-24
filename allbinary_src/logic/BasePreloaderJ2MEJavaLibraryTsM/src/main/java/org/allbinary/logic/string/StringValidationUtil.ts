@@ -116,9 +116,7 @@ index < value.length; index++)
 ;
     
 
-                        if(!isNumber(digit);
-
-                         && digit != '.')
+                        if(!isNumber(digit); && digit != '.')
                         
                                     {
                                     
@@ -233,9 +231,7 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value);
-
-                        )
+                        if(!this.isNumber(value);)
                         
                                     {
                                     
@@ -315,9 +311,7 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value);
-
-                        )
+                        if(!this.isNumber(value);)
                         
                                     {
                                     

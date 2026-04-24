@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -69,7 +72,7 @@ SINGLETON= new CountedPickedUpLayerInterfaceFactoryPool();
 private constructor (){
 
             super();
-        list= new BasicArrayList();
+        list= new BasicArrayListD();
     
 }
 

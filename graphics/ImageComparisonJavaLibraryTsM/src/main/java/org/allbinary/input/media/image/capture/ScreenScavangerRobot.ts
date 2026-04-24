@@ -114,9 +114,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages")
 ;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot");
-
-                         as InputRobotInterface;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot"); as InputRobotInterface;
         
         
 ;

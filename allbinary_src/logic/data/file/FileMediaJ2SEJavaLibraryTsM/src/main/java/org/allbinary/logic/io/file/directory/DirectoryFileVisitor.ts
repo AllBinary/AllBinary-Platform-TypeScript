@@ -62,13 +62,9 @@ var arg0 = arg0
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return visit = this.visit(arg0 as Object);
-
-                        visit as Boolean
+                        return visit = this.visit(arg0 as Object);visit as Boolean
 visit.
-                    ;
-
-                        ;
+                    ;;
     
 }
 

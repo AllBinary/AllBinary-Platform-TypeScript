@@ -142,9 +142,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
     //var userEmailEventNameData = userEmailEventNameData
     //var userInterface = userInterface
 
-    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString());
-
-                         as UserEmailEventConfigurationInterface;
+    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()); as UserEmailEventConfigurationInterface;
         
         
 ;
@@ -153,9 +151,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return UserEmailEventListenerFactory.getInstance(abeClientInformation, userEmailEventConfigurationInterface, userInterface);
-
-                        ;
+                        return UserEmailEventListenerFactory.getInstance(abeClientInformation, userEmailEventConfigurationInterface, userInterface);;
     
 }
 

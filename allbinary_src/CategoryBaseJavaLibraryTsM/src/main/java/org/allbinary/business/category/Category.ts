@@ -156,9 +156,7 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
         var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
-
-                         as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance(); as CategoryPropertiesInterface;
     
 this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
@@ -174,9 +172,7 @@ this.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.categoryPropertiesInterface!.getKey();
-
-                        ;
+                        return this.categoryPropertiesInterface!.getKey();;
     
 }
 
@@ -201,9 +197,7 @@ this.log();
                         
                                     {
                                     
-    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties();
-
-                         as RootCategoryPropertiesInterface;
+    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties(); as RootCategoryPropertiesInterface;
         
         
 ;
@@ -247,9 +241,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return categoryInterface!.getProperties()!.getWebAppPath();
-
-                        ;
+                        return categoryInterface!.getProperties()!.getWebAppPath();;
     
 }
 
@@ -261,9 +253,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.categoryPropertiesInterface!.getPath(this.categoryHierarchyInterface);
-
-                        ;
+                        return this.categoryPropertiesInterface!.getPath(this.categoryHierarchyInterface);;
     
 }
 
@@ -277,9 +267,7 @@ this.typeVector!.add(this.PROPERTIES);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.childCategoryVector!.add(categoryPropertiesInterface);
-
-                        ;
+                        return this.childCategoryVector!.add(categoryPropertiesInterface);;
     
 }
 
@@ -316,9 +304,7 @@ this.typeVector!.add(this.CATEGORY);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.childCategoryVector!.add(categoryInterface);
-
-                        ;
+                        return this.childCategoryVector!.add(categoryInterface);;
     
 }
 
@@ -637,9 +623,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
     public isValid(): Boolean{
 
-                        if(!this.categoryPropertiesInterface!.isValid();
-
-                        )
+                        if(!this.categoryPropertiesInterface!.isValid();)
                         
                                     {
                                     
@@ -684,9 +668,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryPropertiesInterface!.isValid();
-
-                        )
+                        if(!categoryPropertiesInterface!.isValid();)
                         
                                     {
                                     
@@ -712,9 +694,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryInterface!.isValid();
-
-                        )
+                        if(!categoryInterface!.isValid();)
                         
                                     {
                                     

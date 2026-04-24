@@ -95,9 +95,7 @@ private constructor (){
     
 
         try {
-            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));
-
-                         as ByteArrayOutputStream;
+            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)); as ByteArrayOutputStream;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);
@@ -111,9 +109,7 @@ abCrypt!.init(key);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return abCrypt!.decrypt(outputStream!.toByteArray());
-
-                        ;
+                        return abCrypt!.decrypt(outputStream!.toByteArray());;
     
 
          finally {

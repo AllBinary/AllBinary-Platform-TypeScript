@@ -191,9 +191,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = this.map.get(key);
-
-                         as Array<String?>;
+    var values: string[] = this.map.get(key); as Array<String?>;
         
         
 ;
@@ -290,9 +288,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = this.map.get(key);
-
-                         as Array<String?>;
+    var values: string[] = this.map.get(key); as Array<String?>;
         
         
 ;

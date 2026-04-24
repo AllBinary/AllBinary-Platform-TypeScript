@@ -479,9 +479,7 @@ lastIndex= index +1;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -516,9 +514,7 @@ var abSqlTable = abSqlTable
 ;
     
 
-                        if(!Directory.create(new AbPath(path));
-
-                        )
+                        if(!Directory.create(new AbPath(path));)
                         
                                     {
                                     
@@ -809,9 +805,7 @@ stringBuffer!.append(this.PORTION_RESTORED);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -842,9 +836,7 @@ stringBuffer!.append(" Restoration Failed");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

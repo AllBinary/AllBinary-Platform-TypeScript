@@ -274,9 +274,7 @@ var range = range
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.abs(this.getNextInt(range));
-
-                        ;
+                        return mathUtil!.abs(this.getNextInt(range));;
     
 }
 
@@ -301,9 +299,7 @@ var range = range
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.abs(this.getNextInt(range));
-
-                        ;
+                        return mathUtil!.abs(this.getNextInt(range));;
     
 
                         }

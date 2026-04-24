@@ -36,6 +36,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -74,7 +77,7 @@ export class GameInput
 
     readonly isRemoveDuplicateKeyPresses: boolean
 public constructor (gameKeyEventList: BasicArrayList){
-            this(gameKeyEventList, new BasicArrayList());
+            this(gameKeyEventList, new BasicArrayListD());
                         //var gameKeyEventList = gameKeyEventList
 
 
@@ -147,9 +150,7 @@ var gameKeyEvent = gameKeyEvent
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.removalGameKeyEventList!.contains(gameKeyEvent);
-
-                        ;
+                        return this.removalGameKeyEventList!.contains(gameKeyEvent);;
     
 }
 

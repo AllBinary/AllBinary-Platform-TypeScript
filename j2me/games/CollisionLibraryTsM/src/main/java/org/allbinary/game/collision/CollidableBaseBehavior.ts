@@ -107,9 +107,7 @@ this.collidable= collidable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.constructor.name.toString()!;
-
-                        ;
+                        return this.constructor.name.toString()!;;
     
 }
 
@@ -153,9 +151,7 @@ var collisionLayer = collisionLayer
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);
-
-                        ;
+                        return layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);;
     
 }
 
@@ -166,9 +162,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);
-
-                        ;
+                        return layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);;
     
 }
 

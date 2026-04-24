@@ -196,9 +196,7 @@ var screenRect = screenRect
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.robot.createScreenCapture(screenRect);
-
-                        ;
+                        return this.robot.createScreenCapture(screenRect);;
     
 }
 
@@ -215,9 +213,7 @@ this.robot.delay(ms);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.robot.getAutoDelay();
-
-                        ;
+                        return this.robot.getAutoDelay();;
     
 }
 
@@ -229,9 +225,7 @@ var y = y
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.robot.getPixelColor(x, y);
-
-                        ;
+                        return this.robot.getPixelColor(x, y);;
     
 }
 
@@ -241,9 +235,7 @@ var y = y
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.robot.isAutoWaitForIdle();
-
-                        ;
+                        return this.robot.isAutoWaitForIdle();;
     
 }
 
@@ -310,9 +302,7 @@ this.robot.setAutoWaitForIdle(isOn);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.robot.toString();
-
-                        ;
+                        return this.robot.toString();;
     
 }
 

@@ -128,9 +128,7 @@ this.inputPersistance= new InputPersistance(name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInputMapping()!.getHashtable()!.size;
-
-                        ;
+                        return this.getInputMapping()!.getHashtable()!.size;;
     
 }
 
@@ -273,17 +271,13 @@ index < size; index++)
         while(enumeration.hasMoreElements())
         {
 
-    var mappedToInput: Input = enumeration.nextElement()!;
-
-                         as Input;
+    var mappedToInput: Input = enumeration.nextElement()!; as Input;
         
         
 ;
     
 
-    var gameActionInput: Input = hashtable.get(mappedToInput as Object);
-
-                         as Input;
+    var gameActionInput: Input = hashtable.get(mappedToInput as Object); as Input;
         
         
 ;

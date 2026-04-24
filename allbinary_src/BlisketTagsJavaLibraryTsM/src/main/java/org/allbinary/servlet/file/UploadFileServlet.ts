@@ -148,9 +148,7 @@ this.requestHashMap= new MultipartRequestParams(request).
                             toHashMap();
     
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH);
-
-                         as String;
+    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH); as String;
         
         
 ;
@@ -182,9 +180,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
     
 
     var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request);
-
-                         as AuthenticationHelper;
+                            getInstance(hashMap, request); as AuthenticationHelper;
         
         
 ;
@@ -255,9 +251,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-                        if(!StreamUtil.getInstance()!.close(inputStream);
-
-                        )
+                        if(!StreamUtil.getInstance()!.close(inputStream);)
                         
                                     {
                                     
@@ -284,9 +278,7 @@ var filePath = filePath
 
         try {
             
-    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA);
-
-                         as FileItem;
+    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA); as FileItem;
         
         
 ;

@@ -120,9 +120,7 @@ var servletContext = servletContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowEntityFactory.getInstance()!.create2()!.get(requestName, storeName);
-
-                        ;
+                        return WorkFlowEntityFactory.getInstance()!.create2()!.get(requestName, storeName);;
     
 }
 
@@ -133,9 +131,7 @@ var servletContext = servletContext
 var hashMap = hashMap
 var pageContext = pageContext
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);
-
-                         as String;
+    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME); as String;
         
         
 ;
@@ -156,9 +152,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowEntityFactory.getInstance()!.create2()!.get(workFlowName, storeName);
-
-                        ;
+                        return WorkFlowEntityFactory.getInstance()!.create2()!.get(workFlowName, storeName);;
     
 }
 

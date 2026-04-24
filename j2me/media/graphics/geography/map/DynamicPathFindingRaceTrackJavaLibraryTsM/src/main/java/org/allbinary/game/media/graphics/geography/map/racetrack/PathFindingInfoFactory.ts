@@ -143,9 +143,7 @@ this.basicGeographicMapPathFinder= new BasicGeographicMapPathFinder(max);
     
 this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(max));
     
-this.basicGeographicMapGraph= new BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface();
-
-                         as PathFindingNodeCostInfoFactory);
+this.basicGeographicMapGraph= new BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface() as PathFindingNodeCostInfoFactory);
     
 this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterface;
     

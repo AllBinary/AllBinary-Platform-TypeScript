@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -110,9 +113,7 @@ stringBuffer!.append(array[index]!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -148,13 +149,13 @@ var value = value
 ;
     
 
-    var vector: BasicArrayList = tokenizer.getTokens(value, new BasicArrayList())!;
+    var vector: BasicArrayList = tokenizer.getTokens(value, new BasicArrayListD())!;
         
         
 ;
     
 
-    var byteVector: BasicArrayList = new BasicArrayList();
+    var byteVector: BasicArrayList = new BasicArrayListD();
         
         
 ;

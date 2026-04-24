@@ -165,9 +165,7 @@ this.getFormData(hashMap);
 
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title= hashMap!.get(TitleData.getInstance()!.TEXT);
-
-                         as String;
+this.title= hashMap!.get(TitleData.getInstance()!.TEXT); as String;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
@@ -222,9 +220,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, TitleData.getInstance()!.NAME, hashMap);
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, TitleData.getInstance()!.NAME, hashMap);;
     
 }
 

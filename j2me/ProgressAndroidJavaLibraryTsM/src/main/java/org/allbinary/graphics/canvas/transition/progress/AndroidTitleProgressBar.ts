@@ -262,9 +262,7 @@ export inner class TitleProgressBarSetProgressRunnable
 
         try {
             
-    var value: number = this@AndroidTitleProgressBar.getValue();
-
-                        ;
+    var value: number = this@AndroidTitleProgressBar.getValue();;
         
         
 ;
@@ -336,9 +334,7 @@ export inner class ShowTitleProgressBarRunnable
 
         try {
             
-    var maxValue: number = this@AndroidTitleProgressBar.getMaxValue();
-
-                        ;
+    var maxValue: number = this@AndroidTitleProgressBar.getMaxValue();;
         
         
 ;

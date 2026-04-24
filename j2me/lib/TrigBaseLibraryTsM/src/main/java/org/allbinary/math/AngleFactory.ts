@@ -236,9 +236,7 @@ this.angleArray[index]= new Angle(index);
     public getInstance(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = this.frameUtil!.adjustAngleToFrameAngle(index);
-
-                        ;
+    var adjustedIndex: number = this.frameUtil!.adjustAngleToFrameAngle(index);;
         
         
 ;

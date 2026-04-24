@@ -65,21 +65,13 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.ftpServer= hashMap!.get(FtpConfigurationData.SERVER);
-
-                         as String;
+this.ftpServer= hashMap!.get(FtpConfigurationData.SERVER); as String;
     
-this.ftpPath= hashMap!.get(FtpConfigurationData.PATH);
-
-                         as String;
+this.ftpPath= hashMap!.get(FtpConfigurationData.PATH); as String;
     
-this.ftpUserName= hashMap!.get(FtpConfigurationData.USERNAME);
-
-                         as String;
+this.ftpUserName= hashMap!.get(FtpConfigurationData.USERNAME); as String;
     
-this.ftpPassword= hashMap!.get(FtpConfigurationData.PASSWORD);
-
-                         as String;
+this.ftpPassword= hashMap!.get(FtpConfigurationData.PASSWORD); as String;
     
 }
 

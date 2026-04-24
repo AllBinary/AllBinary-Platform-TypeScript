@@ -72,9 +72,6 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
 import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -208,9 +205,7 @@ this.widthScale= (this.scale == 2)
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image);
-
-                         as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                                     }
@@ -233,9 +228,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image);
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image);
-
-                         as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                                     }
@@ -255,9 +248,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image);
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image);
-
-                         as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                         }
@@ -399,7 +390,7 @@ graphics.setColor(basicColor!.toInt());
 ;
     
 
-    var bounds: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(0, 0), cellSize, cellSize);
+    var bounds: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance0(0, 0), cellSize, cellSize);
         
         
 ;

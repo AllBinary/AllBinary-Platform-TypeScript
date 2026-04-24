@@ -69,9 +69,7 @@ var lineBreak = lineBreak
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ClassUtil.viewAll(anyType!constructor, lineBreak);
-
-                        ;
+                        return ClassUtil.viewAll(anyType!constructor, lineBreak);;
     
 
                                     }
@@ -155,9 +153,7 @@ stringBuffer!.append(MethodUtil.viewAll(myClass::class.java, lineBreak));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                                     }

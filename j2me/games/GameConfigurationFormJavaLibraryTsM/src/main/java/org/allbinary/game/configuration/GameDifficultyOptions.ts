@@ -247,9 +247,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
     public setSelectedId(id: number){
 var id = id
 
-    var choiceGroup: ChoiceGroup = this.get(0);
-
-                         as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
         
         
 ;
@@ -261,9 +259,7 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedId(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0);
-
-                         as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
         
         
 ;
@@ -272,18 +268,14 @@ choiceGroup!.setSelectedIndex(id, true);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return choiceGroup!.getSelectedIndex();
-
-                        ;
+                        return choiceGroup!.getSelectedIndex();;
     
 }
 
 
     public getSelectedText(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0);
-
-                         as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
         
         
 ;

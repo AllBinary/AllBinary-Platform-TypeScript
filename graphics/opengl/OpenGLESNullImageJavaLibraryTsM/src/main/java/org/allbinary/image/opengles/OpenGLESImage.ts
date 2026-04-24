@@ -45,6 +45,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -77,7 +80,7 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
         
         
 
-    public static readonly texture2dList: BasicArrayList = new BasicArrayList();
+    public static readonly texture2dList: BasicArrayList = new BasicArrayListD();
         
         
 

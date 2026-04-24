@@ -85,9 +85,7 @@ this.hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
     public getInstance(integer: Integer): BasicColor{
     //var integer = integer
 
-    var basicColor: BasicColor = this.hashtable.get(integer as Object);
-
-                         as BasicColor;
+    var basicColor: BasicColor = this.hashtable.get(integer as Object); as BasicColor;
         
         
 ;

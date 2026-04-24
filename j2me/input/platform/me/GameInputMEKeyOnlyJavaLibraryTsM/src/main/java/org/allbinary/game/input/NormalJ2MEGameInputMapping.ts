@@ -51,9 +51,7 @@ export class NormalJ2MEGameInputMapping extends J2MEGameInputMapping {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new NormalJ2MEDefaultGameInputMapping().
-                            getInputMapping();
-
-                        ;
+                            getInputMapping();;
     
 }
 

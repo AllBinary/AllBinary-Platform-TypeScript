@@ -59,6 +59,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -193,13 +196,13 @@ new object: Thread()
 ;
     
 
-    var iconWidthList: BasicArrayList = new BasicArrayList();
+    var iconWidthList: BasicArrayList = new BasicArrayListD();
         
         
 ;
     
 
-    var iconHeightList: BasicArrayList = new BasicArrayList();
+    var iconHeightList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -248,15 +251,11 @@ iconHeightList!.add(864);
         
 index2 < size; index2++)
         {
-width= get = iconWidthList!.get(index2);
-
-                        get as Integer
+width= get = iconWidthList!.get(index2);get as Integer
 get.
                     toInt();
     
-height= get = iconHeightList!.get(index2);
-
-                        get as Integer
+height= get = iconHeightList!.get(index2);get as Integer
 get.
                     toInt();
     

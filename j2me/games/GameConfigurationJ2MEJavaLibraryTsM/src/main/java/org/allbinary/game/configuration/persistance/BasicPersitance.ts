@@ -44,6 +44,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -90,11 +93,11 @@ export class BasicPersitance
 
     private readonly recordId: string
 
-    readonly valueList: BasicArrayList = new BasicArrayList();
+    readonly valueList: BasicArrayList = new BasicArrayListD();
         
         
 
-    readonly idList: BasicArrayList = new BasicArrayList();
+    readonly idList: BasicArrayList = new BasicArrayListD();
         
         
 protected constructor (recordId: string){
@@ -206,9 +209,7 @@ recordStore!.closeRecordStore();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformRecordIdUtil!.getRecordId(abeClientInformation, recordId);
-
-                        ;
+                        return platformRecordIdUtil!.getRecordId(abeClientInformation, recordId);;
     
 }
 

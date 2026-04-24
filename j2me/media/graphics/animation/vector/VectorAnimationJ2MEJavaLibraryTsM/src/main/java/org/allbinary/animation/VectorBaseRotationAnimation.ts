@@ -78,7 +78,7 @@ export class VectorBaseRotationAnimation extends RotationAnimation implements Ve
         
         
 public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
-            super(angleInfo, animationBehavior);
+            super(angleInfo, CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var angleInfo = angleInfo
     //var currentPoints = currentPoints
     //var basicColor = basicColor
@@ -93,45 +93,6 @@ this.setBasicColorP(basicColor);
     
 }
 
-public constructor (angleInfo: AngleInfo, currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
-            super(angleInfo, animationBehavior);
-                        //var angleInfo = angleInfo
-    //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setPoints(Array.from({ length: 1 }, () => Array.from({ length: currentPoints!.length }, () => new Array(0).fill(2))));
-    
-
-    var size: number = currentPoints!.length
-                ;
-        
-        
-;
-    
-
-
-
-
-                        for (
-    var index: number = 0;
-        
-        
-index < size; index++)
-        {
-this.currentPoints[0]![index]![0]= currentPoints[index]![0]!;
-    
-this.currentPoints[0]![index]![1]= currentPoints[index]![1]!;
-    
-}
-
-this.setBasicColorP(basicColor);
-    
-}
-
 
                 //@Throws(Error::class)
             
@@ -140,9 +101,7 @@ this.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -152,9 +111,7 @@ this.setBasicColorP(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.circularIndexUtil!.getIndex();
-
-                        ;
+                        return this.circularIndexUtil!.getIndex();;
     
 }
 
@@ -198,9 +155,7 @@ this.circularIndexUtil!.previous();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

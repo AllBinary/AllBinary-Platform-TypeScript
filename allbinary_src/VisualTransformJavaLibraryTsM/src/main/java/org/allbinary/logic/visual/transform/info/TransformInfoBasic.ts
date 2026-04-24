@@ -86,9 +86,7 @@ this.storeFrontInterface= storeFrontInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.storeFrontInterface!.getName();
-
-                        ;
+                        return this.storeFrontInterface!.getName();;
     
 }
 

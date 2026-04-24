@@ -79,9 +79,7 @@ this.EVENT_POOL.init(new TerrainEventFactory());
     public getInstance(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance();
-
-                         as TerrainEvent;
+    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance(); as TerrainEvent;
         
         
 ;

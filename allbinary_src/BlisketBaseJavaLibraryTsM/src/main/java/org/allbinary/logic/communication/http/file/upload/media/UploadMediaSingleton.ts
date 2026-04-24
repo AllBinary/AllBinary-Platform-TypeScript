@@ -150,9 +150,7 @@ index < size; index++)
 ;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName as Object);
-
-                         as MediaData;
+    var mediaData: MediaData = hashMap!.get(mediaDataName as Object); as MediaData;
         
         
 ;
@@ -245,9 +243,7 @@ var mediaFileType = mediaFileType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.readerFileTypesHashMap!.containsKey(mediaFileType);
-
-                        ;
+                        return this.readerFileTypesHashMap!.containsKey(mediaFileType);;
     
 }
 
@@ -258,9 +254,7 @@ var mediaFileType = mediaFileType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.readerFileTypesHashMap!.containsKey(mediaFileType);
-
-                        ;
+                        return this.readerFileTypesHashMap!.containsKey(mediaFileType);;
     
 }
 
@@ -295,9 +289,7 @@ var aMediaType = aMediaType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isMedia(mediaFileType, aMediaType, this.readerFileTypesHashMap);
-
-                        ;
+                        return this.isMedia(mediaFileType, aMediaType, this.readerFileTypesHashMap);;
     
 }
 
@@ -309,9 +301,7 @@ var aMediaType = aMediaType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isMedia(mediaFileType, aMediaType, this.writerFileTypesHashMap);
-
-                        ;
+                        return this.isMedia(mediaFileType, aMediaType, this.writerFileTypesHashMap);;
     
 }
 
@@ -325,9 +315,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object);
-
-                         as String;
+    var mediaType: string = hashMap!.get(mediaFileType as Object); as String;
         
         
 ;

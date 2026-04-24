@@ -100,9 +100,7 @@ graphicsPipe!.translate(x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsPipe!.getMatrix();
-
-                        ;
+                        return graphicsPipe!.getMatrix();;
     
 }
 
@@ -176,9 +174,7 @@ var hashMap = hashMap
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!);
-
-                         as GraphicItemInterface;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
         
         
 ;
@@ -288,9 +284,7 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!);
-
-                         as GraphicItemInterface;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
         
         
 ;
@@ -345,9 +339,7 @@ var pointVector = pointVector
 index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index);
-
-                         as GPoint;
+    var point: GPoint = pointVector!.get(index); as GPoint;
         
         
 ;

@@ -90,11 +90,11 @@ export class BasicVelocityProperties
 public constructor (){
 
             super();
-        this.velocityXBasicDecimal= new BasicDecimal();
+        this.velocityXBasicDecimal= new BasicDecimal(0);
     
-this.velocityYBasicDecimal= new BasicDecimal();
+this.velocityYBasicDecimal= new BasicDecimal(0);
     
-this.velocityZBasicDecimal= new BasicDecimal();
+this.velocityZBasicDecimal= new BasicDecimal(0);
     
 }
 
@@ -261,11 +261,7 @@ this.addVelocity(magnitude, angle, otherAngle);
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.setVelocity(magnitude, angle.getValue();
-
-                        , otherAngle!.getValue();
-
-                        );
+this.setVelocity(magnitude, angle.getValue(), otherAngle!.getValue());
     
 }
 
@@ -274,11 +270,7 @@ this.setVelocity(magnitude, angle.getValue();
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.addVelocity(magnitude, angle.getValue();
-
-                        , otherAngle!.getValue();
-
-                        );
+this.addVelocity(magnitude, angle.getValue(), otherAngle!.getValue());
     
 }
 
@@ -392,9 +384,7 @@ stringBuffer!.append(stringUtil!.toString(this.velocityZBasicDecimal));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

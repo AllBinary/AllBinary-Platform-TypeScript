@@ -140,9 +140,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage();
-
-                         as org.eclipse.swt.graphics.Image);
+    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage(); as org.eclipse.swt.graphics.Image);
         
         
 ;
@@ -173,9 +171,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
         
 ;
     
-copySwtImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+copySwtImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 gc= swtImage!.getGc();
     

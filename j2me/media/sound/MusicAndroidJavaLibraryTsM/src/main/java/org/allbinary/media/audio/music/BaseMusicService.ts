@@ -151,9 +151,7 @@ this.player.pause();
 
     public resume(){
 
-                        if(this.player != NullAndroidCanvas.NULL_MEDIA_PLAYER && !this.player.isPlaying();
-
-                        )
+                        if(this.player != NullAndroidCanvas.NULL_MEDIA_PLAYER && !this.player.isPlaying();)
                         
                                     {
                                     this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.RESUME);

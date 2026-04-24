@@ -267,6 +267,9 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -411,7 +414,7 @@ export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInt
         
         
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean){
-            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST);
+            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST, true);
                         //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var highScoresFactoryInterface = highScoresFactoryInterface
@@ -546,7 +549,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
                                 
                         else {
                             
-    var commandList: BasicArrayList = new BasicArrayList();
+    var commandList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -570,11 +573,7 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0);
-
-                         as LockableFeature);
-
-                        )
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature);)
                         
                                     {
                                     commandList!.add(gameCommandsFactory!.BUY_COMMAND);
@@ -1044,9 +1043,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                         
                                     {
                                     
-                        if(!this.highScoresHelper!.isAnyHighScores();
-
-                        )
+                        if(!this.highScoresHelper!.isAnyHighScores();)
                         
                                     {
                                     newState= 0;
@@ -1210,9 +1207,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior();
-
-                         as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior(); as IndexedAnimationBehavior;
         
         
 ;
@@ -1227,9 +1222,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener();
-
-                         as DemoGameMidlet;
+    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener(); as DemoGameMidlet;
         
         
 ;
@@ -1660,9 +1653,7 @@ this.tempWait= tempWait;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRunning();
-
-                        ;
+                        return this.isRunning();;
     
 
                         }

@@ -88,9 +88,7 @@ var pageContext = pageContext
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName());
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(weblisketSession!.getStoreName());)
                         
                                     {
                                     

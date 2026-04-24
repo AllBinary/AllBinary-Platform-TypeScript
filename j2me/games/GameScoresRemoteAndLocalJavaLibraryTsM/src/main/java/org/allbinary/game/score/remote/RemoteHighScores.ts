@@ -95,9 +95,7 @@ export class RemoteHighScores extends HighScores {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, true);
-
-                        ;
+                        return RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, true);;
     
 }
 
@@ -120,9 +118,7 @@ export class RemoteHighScores extends HighScores {
 
         try {
             
-    var highScores: HighScores = hashTable!.get(gameInfo);
-
-                         as HighScores;
+    var highScores: HighScores = hashTable!.get(gameInfo); as HighScores;
         
         
 ;
@@ -162,9 +158,7 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RemoteErrorHighScoresSingletonFactory.getInstance();
-
-                        ;
+                        return RemoteErrorHighScoresSingletonFactory.getInstance();;
     
 }
 
@@ -227,9 +221,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object);
-
-                         as Vector;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object); as Vector;
         
         
 ;
@@ -257,25 +249,19 @@ this.getList()!.clear();
 index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index);
-
-                         as Vector;
+    var highScoreVector: Vector = vector.elementAt(index); as Vector;
         
         
 ;
     
 
-    var displayName: string = highScoreVector!.elementAt(0);
-
-                         as String;
+    var displayName: string = highScoreVector!.elementAt(0); as String;
         
         
 ;
     
 
-    var score: string = highScoreVector!.elementAt(1);
-
-                         as String;
+    var score: string = highScoreVector!.elementAt(1); as String;
         
         
 ;

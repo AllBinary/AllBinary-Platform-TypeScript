@@ -79,9 +79,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.advertisementsVector!.get(index);
-
-                         as AdvertisementInterface;
+                        return this.advertisementsVector!.get(index); as AdvertisementInterface;
     
 }
 
@@ -91,9 +89,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.advertisementsVector!.length;
-
-                        ;
+                        return this.advertisementsVector!.length;;
     
 }
 

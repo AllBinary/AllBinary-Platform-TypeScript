@@ -86,9 +86,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFA
 ;
     
 
-                        if(!initEmulatorFactory!.isInitEmulator();
-
-                        )
+                        if(!initEmulatorFactory!.isInitEmulator();)
                         
                                     {
                                     
@@ -100,9 +98,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFA
 ;
     
 
-        while(!initEmulatorFactory!.isInitEmulator();
-
-                        )
+        while(!initEmulatorFactory!.isInitEmulator();)
         {
 PreLogUtil.put(WAIT_FOR_EMULATOR, this, this.renderStrings!.ON_SURFACE_CREATED);
     

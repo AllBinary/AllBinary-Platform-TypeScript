@@ -60,6 +60,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -113,7 +116,7 @@ this.workAreaPropertiesJPanel!.removeAll();
     
 updateTree();
     
-this.highlightedBasicArrayList= new BasicArrayList();
+this.highlightedBasicArrayList= new BasicArrayListD();
     
 }
 
@@ -150,7 +153,7 @@ this.workAreaPropertiesJPanel!.add(this.workAreaJTree);
     public getNode(treePathArray: TreePath[]): BasicArrayList{
 var treePathArray = treePathArray
 
-    var basicArrayList: BasicArrayList = new BasicArrayList();
+    var basicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -256,9 +259,7 @@ this.logUtil!.putF("size: " +size, this, "deselectAll");
 index < size; index++)
         {
 
-    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index);
-
-                         as DefaultMutableTreeNode;
+    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index); as DefaultMutableTreeNode;
         
         
 ;
@@ -318,9 +319,7 @@ var treePath = treePath
                         
                                     {
                                     
-                        if(node.getUserObject();
-
-                         is CanvasTreeLabel)
+                        if(node.getUserObject(); is CanvasTreeLabel)
                         
                                     {
                                     this.removeCanvas(node);
@@ -338,9 +337,7 @@ var treePath = treePath
                                     }
                                 
 
-    var parent: DefaultMutableTreeNode = node.getParent();
-
-                         as DefaultMutableTreeNode;
+    var parent: DefaultMutableTreeNode = node.getParent(); as DefaultMutableTreeNode;
         
         
 ;
@@ -387,9 +384,7 @@ var treePath = treePath
                         
                                     {
                                     
-                        if(node.getUserObject();
-
-                         is CanvasTreeLabel)
+                        if(node.getUserObject(); is CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node) as Object));
@@ -427,9 +422,7 @@ var angle = angle
                         
                                     {
                                     
-                        if(node.getUserObject();
-
-                         is CanvasTreeLabel)
+                        if(node.getUserObject(); is CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node) as Object));
@@ -644,17 +637,13 @@ var evt = evt
 index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index);
-
-                         as DefaultMutableTreeNode;
+    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index); as DefaultMutableTreeNode;
         
         
 ;
     
 
-                        if(defaultMutableTreeNode!.getUserObject();
-
-                         is CanvasTreeLabel)
+                        if(defaultMutableTreeNode!.getUserObject(); is CanvasTreeLabel)
                         
                                     {
                                     this.itemJPopupMenu!.show(this, evt.getX(), evt.getY());
@@ -690,17 +679,13 @@ index < selectedTreePathArray!.length; index++)
 index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index);
-
-                         as DefaultMutableTreeNode;
+    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index); as DefaultMutableTreeNode;
         
         
 ;
     
 
-                        if(defaultMutableTreeNode!.getUserObject();
-
-                         is CanvasTreeLabel)
+                        if(defaultMutableTreeNode!.getUserObject(); is CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode) as Object));

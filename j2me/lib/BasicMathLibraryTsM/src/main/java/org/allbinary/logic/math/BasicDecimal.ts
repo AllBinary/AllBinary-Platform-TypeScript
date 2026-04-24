@@ -44,30 +44,22 @@ export class BasicDecimal
          {
         
 
-    public static readonly ZERO_BIGDECIMAL: BasicDecimal = new BasicDecimal();
+    public static readonly ZERO_BIGDECIMAL: BasicDecimal = new BasicDecimal(0);
         
         
+
+    public static create(bigDecimal: BasicDecimal): BasicDecimal{
+    //var bigDecimal = bigDecimal
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new BasicDecimal(bigDecimal!.getUnscaled());
+    
+}
+
 
     private units: number
-public constructor (bigDecimal: BasicDecimal){
-
-            super();
-        var bigDecimal = bigDecimal
-this.units= bigDecimal!.getUnscaled();
-    
-this.updateScaled();
-    
-}
-
-public constructor (){
-
-            super();
-        this.units= 0;
-    
-this.updateScaled();
-    
-}
-
 public constructor (units: number){
 
             super();
@@ -247,9 +239,7 @@ this.scaled= (this.units /this.factorValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.units).toString();
-
-                        ;
+                        return (this.units).toString();;
     
 }
 

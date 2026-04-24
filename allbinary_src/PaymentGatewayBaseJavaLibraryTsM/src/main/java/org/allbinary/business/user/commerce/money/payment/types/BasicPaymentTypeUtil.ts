@@ -101,9 +101,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i);
-
-                         as BasicPaymentType;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
         
         
 ;
@@ -136,9 +134,7 @@ var paymentType = paymentType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentTypeVector!.contains(paymentType);
-
-                        ;
+                        return this.paymentTypeVector!.contains(paymentType);;
     
 }
 
@@ -168,20 +164,14 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i);
-
-                         as BasicPaymentType;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
         
         
 ;
     
 
-                        if(!a_PaymentTypeVector!.contains(paymentType);
-
-                        )
+                        if(!a_PaymentTypeVector!.contains(paymentType);)
                         diff.add(paymentType);
-
-                        
 }
 
 

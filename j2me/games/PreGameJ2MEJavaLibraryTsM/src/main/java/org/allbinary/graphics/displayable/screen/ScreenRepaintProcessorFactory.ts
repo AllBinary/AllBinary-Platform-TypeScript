@@ -73,9 +73,7 @@ private constructor (){
     public getInstance(displayable: Displayable): Processor{
 var displayable = displayable
 
-                        if(!J2MEUtil.isJ2ME();
-
-                        )
+                        if(!J2MEUtil.isJ2ME();)
                         
                                     {
                                     
@@ -92,9 +90,7 @@ var displayable = displayable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Processor.getInstance();
-
-                        ;
+                        return Processor.getInstance();;
     
 
                         }

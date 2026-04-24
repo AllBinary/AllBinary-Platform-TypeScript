@@ -158,9 +158,7 @@ export class UserEmailEventNameData
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object);
-
-                         as UserEmailEventNameData;
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object); as UserEmailEventNameData;
         
         
 ;
@@ -222,9 +220,7 @@ var userEmailEventNameString = userEmailEventNameString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.userNameEvenNameHashMap!.containsKey(userEmailEventNameString);
-
-                        ;
+                        return this.userNameEvenNameHashMap!.containsKey(userEmailEventNameString);;
     
 }
 

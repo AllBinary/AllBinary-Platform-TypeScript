@@ -76,9 +76,7 @@ export class RaceTrackStartPointUtil
 ;
     
 
-    var startPathFindingNode: PathFindingNode = list.get(index);
-
-                         as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = list.get(index); as PathFindingNode;
         
         
 ;
@@ -99,9 +97,7 @@ export class RaceTrackStartPointUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance()!.getInstance(point.getX(), point.getY() +geographicMapInterface!.getAllBinaryTiledLayer()!.getHalfCellHeight());
-
-                        ;
+                        return PointFactory.getInstance()!.getInstance0(point.getX(), point.getY() +geographicMapInterface!.getAllBinaryTiledLayer()!.getHalfCellHeight());;
     
 }
 

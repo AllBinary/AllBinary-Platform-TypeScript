@@ -39,6 +39,9 @@ import { CellPositionsUtil } from "../../../../org/allbinary/media/graphics/geog
 import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
 
     
+import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -74,11 +77,11 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
         
         
 
-    private readonly reusableOccupyingGeographicMapCellPositionList: BasicArrayList = new BasicArrayList(4);
+    private readonly reusableOccupyingGeographicMapCellPositionList: BasicArrayList = new BasicArrayListS(4);
         
         
 
-    private readonly reusableSurroundingGeographicMapCellPositionList: BasicArrayList = new BasicArrayList(12);
+    private readonly reusableSurroundingGeographicMapCellPositionList: BasicArrayList = new BasicArrayListS(12);
         
         
 
@@ -143,9 +146,7 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex());
-
-                         as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()); as GeographicMapCellPosition;
         
         
 ;

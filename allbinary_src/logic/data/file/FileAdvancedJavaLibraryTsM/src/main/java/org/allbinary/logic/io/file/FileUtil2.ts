@@ -120,9 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SimpleFileUtil.getInstance()!.loadFileAsList(inputStream, max, byteArray1);
-
-                        ;
+                        return SimpleFileUtil.getInstance()!.loadFileAsList(inputStream, max, byteArray1);;
     
 }
 

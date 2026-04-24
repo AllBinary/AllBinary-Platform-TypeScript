@@ -67,9 +67,7 @@ export class ArrayUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return copyOf(original, newLength, originalconstructor);
-
-                        ;
+                        return copyOf(original, newLength, originalconstructor);;
     
 }
 
@@ -476,9 +474,7 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -517,9 +513,7 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -558,9 +552,7 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

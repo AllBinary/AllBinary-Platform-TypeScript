@@ -33,6 +33,9 @@ import { EventStrings } from "../../../../../../org/allbinary/logic/util/event/E
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -69,7 +72,7 @@ export class GeographicMapEventHandler extends BasicEventHandler {
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -81,9 +84,7 @@ private constructor (){
     public addListener(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
 
-                        if(!this.list.contains(gameLayer);
-
-                        )
+                        if(!this.list.contains(gameLayer);)
                         
                                     {
                                     this.list.add(gameLayer);
@@ -125,9 +126,7 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var gameLayer: AllBinaryGameLayer = this.list.get(index);
-
-                         as AllBinaryGameLayer;
+    var gameLayer: AllBinaryGameLayer = this.list.get(index); as AllBinaryGameLayer;
         
         
 ;

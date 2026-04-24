@@ -19,6 +19,9 @@ import { SynchObject } from "../../../org/allbinary/thread/SynchObject.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -61,7 +64,7 @@ export class LayerManager
 
     private readonly layerManagerLogging: LayerManagerLoggingBase
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -92,9 +95,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.contains(layerInterface);
-
-                        ;
+                        return this.list.contains(layerInterface);;
     
 }
 
@@ -123,9 +124,7 @@ public constructor (){
         
 index < size; index++)
         {
-nextLayerInterface= this.list.get(index);
-
-                         as AllBinaryLayer;
+nextLayerInterface= this.list.get(index); as AllBinaryLayer;
     
 
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
@@ -214,9 +213,7 @@ this.layerManagerLogging!.remove(this, layerInterface, result);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.size();
-
-                        ;
+                        return this.list.size();;
     
 }
 

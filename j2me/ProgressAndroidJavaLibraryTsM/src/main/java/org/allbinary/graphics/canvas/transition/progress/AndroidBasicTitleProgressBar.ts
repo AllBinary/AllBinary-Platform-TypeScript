@@ -277,9 +277,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
         try {
             
-                        if(!this.isBackground();
-
-                        )
+                        if(!this.isBackground();)
                         
                                     {
                                     this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
@@ -622,11 +620,7 @@ var lastHeight = lastHeight
                         if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth();
-
-                        , lastHeight -20, image.getHeight();
-
-                        , false);
+                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -20, image.getHeight(), false);
     
 
                                     }
@@ -645,11 +639,7 @@ var lastHeight = lastHeight
                         if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth();
-
-                        , lastHeight -28, image.getHeight();
-
-                        , false);
+                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -28, image.getHeight(), false);
     
 
                                     }

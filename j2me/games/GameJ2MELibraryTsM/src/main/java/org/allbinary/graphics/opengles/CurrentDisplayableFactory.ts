@@ -84,6 +84,9 @@ import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -160,7 +163,7 @@ export class CurrentDisplayableFactory
         
         
 
-    public readonly DEFAULT_CHILD_NAME_LIST: BasicArrayList = new BasicArrayList();
+    public readonly DEFAULT_CHILD_NAME_LIST: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -317,9 +320,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 stringMaker!.append(this.stringUtil!.toString(this.openGlReadydisplayable));
     
 
-                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
-
-                        )
+                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(SWTUtil.SWT)!.append(commonSeps!.SPACE)!.append(this.RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE);

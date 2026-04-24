@@ -251,11 +251,7 @@ this.line.setP2(current);
 ;
     
 
-                        if(this.j2seMath!.abs(this.line.getDeltaX();
-
-                        ) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY();
-
-                        ) < minimumMotionGesture)
+                        if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY()) < minimumMotionGesture)
                         
                                     {
                                     this.intermediate= current;
@@ -276,9 +272,7 @@ this.line.setP2(current);
 ;
     
 
-    var absGradient: number = this.j2seMath!.abs(gradient);
-
-                        ;
+    var absGradient: number = this.j2seMath!.abs(gradient);;
         
         
 ;
@@ -319,9 +313,7 @@ this.line.setP2(current);
                                     {
                                     diagonalToleranceHigher= (90 -conf.getDiagonalTolerance());
     
-diagonalToleranceLower= conf.getDiagonalTolerance();
-
-                        ;
+diagonalToleranceLower= conf.getDiagonalTolerance();;
     
 
                                     }

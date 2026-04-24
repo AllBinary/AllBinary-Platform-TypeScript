@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -71,7 +74,7 @@ export class ImageTypeUtil
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -101,9 +104,7 @@ mediaFileType= mediaFileType!.lowercase();
 index >= 0; index--)
         {
 
-    var name: string = this.list.get(index);
-
-                         as String;
+    var name: string = this.list.get(index); as String;
         
         
 ;

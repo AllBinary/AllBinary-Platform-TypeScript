@@ -159,7 +159,13 @@ this.animationInterface!.paint(graphics, animationX, animationY);
         
 ;
     
-this.rectangle= new Rectangle(PointFactory.getInstance()!.getInstance(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
+this.rectangle= new Rectangle(pointFactory!.getInstance0(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
     var point: GPoint = this.rectangle.getPoint()!;
@@ -245,9 +251,7 @@ stringBuffer!.appendint(this.yBorder);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

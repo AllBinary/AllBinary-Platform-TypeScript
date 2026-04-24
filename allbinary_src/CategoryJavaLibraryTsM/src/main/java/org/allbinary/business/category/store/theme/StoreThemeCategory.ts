@@ -227,9 +227,7 @@ this.themeVector!.add(themeValidation);
             
     public isValid(): Boolean{
 
-                        if(!super.isValid();
-
-                        )
+                        if(!super.isValid();)
                         
                                     {
                                     

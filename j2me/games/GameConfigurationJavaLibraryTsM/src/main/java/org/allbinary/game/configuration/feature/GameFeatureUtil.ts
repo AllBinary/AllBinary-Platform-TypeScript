@@ -316,9 +316,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
                                     }
                                 
                              else 
-                        if(isSelected && !features.isFeature(gameFeature);
-
-                        )
+                        if(isSelected && !features.isFeature(gameFeature);)
                         
                                     {
                                     features.add(gameFeature);
@@ -437,9 +435,7 @@ var itemLabel = itemLabel
         while(enumeration.hasMoreElements())
         {
 
-    var name: string = enumeration.nextElement()!;
-
-                         as String;
+    var name: string = enumeration.nextElement()!; as String;
         
         
 ;
@@ -520,9 +516,7 @@ index < size; index++)
         {
 anyType= objectArray[index]! as Object;
     
-basicArrayList= hashtable.get(anyType as Object);
-
-                         as BasicArrayList;
+basicArrayList= hashtable.get(anyType as Object); as BasicArrayList;
     
 updateExclusive(gameFeature, basicArrayList);
     

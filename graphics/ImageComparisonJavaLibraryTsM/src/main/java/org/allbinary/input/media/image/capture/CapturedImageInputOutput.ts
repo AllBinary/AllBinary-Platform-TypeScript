@@ -96,9 +96,7 @@ var frame = frame
     
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (
-                                    (getInstance as AutomaticCacheInterface).get(frame);
-
-                         as Object as BufferedImageFrameCacheable);
+                                    (getInstance as AutomaticCacheInterface).get(frame); as Object as BufferedImageFrameCacheable);
         
         
 ;

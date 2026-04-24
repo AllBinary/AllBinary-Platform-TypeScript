@@ -105,9 +105,7 @@ indexedAnimation!.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexedAnimation!.getFrame();
-
-                        ;
+                        return indexedAnimation!.getFrame();;
     
 }
 
@@ -123,9 +121,7 @@ indexedAnimation!.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexedAnimation!.getSize();
-
-                        ;
+                        return indexedAnimation!.getSize();;
     
 }
 
@@ -152,9 +148,7 @@ var sequence = sequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

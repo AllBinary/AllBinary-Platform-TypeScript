@@ -133,17 +133,13 @@ this.waitFor(image, name, this.timeDelayHelper);
 ;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage();
-
-                         as playn.core.Image;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
         
         
 ;
     
 
-        while(!playnCoreImage!.isReady();
-
-                         || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+        while(!playnCoreImage!.isReady(); || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
         {
 
                         if(timeDelayHelper!.isTime())
@@ -159,9 +155,7 @@ this.waitFor(image, name, this.timeDelayHelper);
 }
 
 
-                        if(!image.isReady();
-
-                        )
+                        if(!image.isReady();)
                         
                                     {
                                     image.init(image.getImage());
@@ -208,9 +202,7 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll");
         
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!);
-
-                         as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
     
 }
 

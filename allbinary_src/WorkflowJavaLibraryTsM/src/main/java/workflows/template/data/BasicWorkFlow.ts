@@ -112,9 +112,7 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext);
-
-                         as ValidationComponentInterface;
+this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext); as ValidationComponentInterface;
     
 }
 
@@ -126,9 +124,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME);
-
-                         as String;
+                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME); as String;
     
 }
 
@@ -175,9 +171,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(TagSupport.EVAL_BODY_INCLUDE));
-
-                        ;
+                        return Integer(Integer.valueOf(TagSupport.EVAL_BODY_INCLUDE));;
     
 
                                     }
@@ -189,9 +183,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(TagSupport.SKIP_BODY));
-
-                        ;
+                        return Integer(Integer.valueOf(TagSupport.SKIP_BODY));;
     
 
                         }

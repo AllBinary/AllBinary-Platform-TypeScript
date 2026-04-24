@@ -80,9 +80,7 @@ var role = role
 index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index);
-
-                         as BasicUserRole;
+    var userRole: BasicUserRole = roleVector!.get(index); as BasicUserRole;
         
         
 ;
@@ -232,9 +230,7 @@ var basicUserRole = basicUserRole
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRole();
-
-                        ;
+                        return this.getRole();;
     
 }
 

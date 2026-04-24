@@ -66,6 +66,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -132,7 +135,7 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -141,49 +144,49 @@ list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, DiagonalDownLeftTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_RIGHT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, DiagonalDownRightTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.DIAGONAL_UP_LEFT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, DiagonalUpLeftTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.DIAGONAL_UP_RIGHT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, DiagonalUpRightTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.LEFT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, LeftTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.RIGHT);
     
 motionGestureConfiguration!.addMotionGestureAction(list, RightTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.DOWN);
     
 motionGestureConfiguration!.addMotionGestureAction(list, DownTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.UP);
     
 motionGestureConfiguration!.addMotionGestureAction(list, UpTouchInputToGameKeyEventAction.getInstance());
     
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 list.add(touchMotionGestureFactory!.RELEASED);
     

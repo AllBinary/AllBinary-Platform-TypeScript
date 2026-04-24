@@ -36,6 +36,9 @@ import { StringValidationUtil } from "../../../../../../org/allbinary/logic/stri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -147,19 +150,15 @@ this.hashtable= new Hashtable<any, any>();
 
                                     }
                                 
-this.id= hashtable.get(abeClientInformationData!.LICENSEID);
-
-                         as String;
+this.id= hashtable.get(abeClientInformationData!.LICENSEID); as String;
     
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS);
-
-                         as Vector;
+    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS); as Vector;
         
         
 ;
     
-this.servers= new BasicArrayList();
+this.servers= new BasicArrayListD();
     
 
     var size: number = vector.length!;
@@ -187,14 +186,10 @@ this.servers.add(vector.get(index));
         
 ;
     
-this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL);
-
-                         as String));
+this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL) as String));
     
 
-    var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE);
-
-                         as String)!;
+    var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
         
         
 ;
@@ -209,9 +204,7 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isValid();
-
-                        ;
+                        return this.isValid();;
     
 }
 
@@ -222,9 +215,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(keyName as Object);
-
-                         as String;
+                        return this.hashtable.get(keyName as Object); as String;
     
 }
 
@@ -257,9 +248,7 @@ var keyName = keyName
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY));
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY));)
                         
                                     {
                                     
@@ -334,9 +323,7 @@ stringBuffer!.append(BREAK);
 index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index);
-
-                         as String;
+    var nextServerString: string = serverVector!.get(index); as String;
         
         
 ;
@@ -353,9 +340,7 @@ stringBuffer!.append(BREAK);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

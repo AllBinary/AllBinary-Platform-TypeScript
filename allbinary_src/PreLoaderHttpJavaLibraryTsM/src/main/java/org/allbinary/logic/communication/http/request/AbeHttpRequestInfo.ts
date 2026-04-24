@@ -97,29 +97,17 @@ public constructor (hashMap: HashMap<any, any>){
         
 ;
     
-this.httpUserAgent= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.HTTP_USER_AGENT);
-
-                         as String);
+this.httpUserAgent= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.HTTP_USER_AGENT) as String);
     
-this.remoteAddress= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_ADDRESS);
-
-                         as String);
+this.remoteAddress= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_ADDRESS) as String);
     
-this.remoteHost= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST);
-
-                         as String);
+this.remoteHost= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST) as String);
     
-this.remoteHostByAddr= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS);
-
-                         as String);
+this.remoteHostByAddr= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS) as String);
     
-this.remotePort= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_PORT);
-
-                         as String);
+this.remotePort= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_PORT) as String);
     
-this.requestedFilePath= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REQUEST_FILE_PATH);
-
-                         as String);
+this.requestedFilePath= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REQUEST_FILE_PATH) as String);
     
 }
 
@@ -145,9 +133,7 @@ this.httpUserAgent= stringUtil!.EMPTY_STRING;
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()!;
-
-                         as String;
+    var key: string = enumuration.nextElement()!; as String;
         
         
 ;
@@ -238,9 +224,7 @@ vector.add(this.requestedFilePath);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringBuilder().
-                            append(this.NAME)!.append(this.commonSeps!.COLON_SEP)!.append(abeHttpRequestInfoData!.HTTP_USER_AGENT)!.append(this.commonSeps!.COLON_SEP)!.append(this.httpUserAgent)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_ADDRESS)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteAddress)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_HOST)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteHost)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteHostByAddr)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_PORT)!.append(this.commonSeps!.COLON_SEP)!.append(this.remotePort)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REQUEST_FILE_PATH)!.append(this.commonSeps!.COLON_SEP)!.append(this.requestedFilePath)!.toString();
-
-                        ;
+                            append(this.NAME)!.append(this.commonSeps!.COLON_SEP)!.append(abeHttpRequestInfoData!.HTTP_USER_AGENT)!.append(this.commonSeps!.COLON_SEP)!.append(this.httpUserAgent)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_ADDRESS)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteAddress)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_HOST)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteHost)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS)!.append(this.commonSeps!.COLON_SEP)!.append(this.remoteHostByAddr)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REMOTE_PORT)!.append(this.commonSeps!.COLON_SEP)!.append(this.remotePort)!.append(this.commonSeps!.SPACE)!.append(abeHttpRequestInfoData!.REQUEST_FILE_PATH)!.append(this.commonSeps!.COLON_SEP)!.append(this.requestedFilePath)!.toString();;
     
 }
 

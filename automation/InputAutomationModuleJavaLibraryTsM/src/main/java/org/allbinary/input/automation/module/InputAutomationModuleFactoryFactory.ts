@@ -129,9 +129,7 @@ this.hashMap= new HashMap<any, any>();
 
         while(iterator.hasNext())
         {
-inputAutomationModuleConfiguration= iterator.next();
-
-                         as InputAutomationModuleConfiguration;
+inputAutomationModuleConfiguration= iterator.next(); as InputAutomationModuleConfiguration;
     
 this.add(inputAutomationModuleConfiguration);
     
@@ -163,9 +161,7 @@ this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName());
 ;
     
 
-                        if(!JavaHelpSetNotifier.isNotified(helpSet);
-
-                        )
+                        if(!JavaHelpSetNotifier.isNotified(helpSet);)
                         
                                     {
                                     
@@ -187,9 +183,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.defaultListModelHelper!.getListModel();
-
-                         as ListModel;
+                        return this.defaultListModelHelper!.getListModel(); as ListModel;
     
 }
 
@@ -205,9 +199,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object);
-
-                         as InputAutomationModuleFactoryInterface;
+    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object); as InputAutomationModuleFactoryInterface;
         
         
 ;

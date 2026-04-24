@@ -127,9 +127,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 index < size; index++)
         {
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(index);
-
-                         as AllBinaryLayer, index);
+this.process(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index);
     
 }
 

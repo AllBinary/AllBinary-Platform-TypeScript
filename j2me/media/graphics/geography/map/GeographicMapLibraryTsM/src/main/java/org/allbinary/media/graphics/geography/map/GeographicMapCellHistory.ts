@@ -24,6 +24,9 @@ import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -117,9 +120,9 @@ export class GeographicMapCellHistory
 public constructor (){
 
             super();
-        this.list= new BasicArrayList();
+        this.list= new BasicArrayListD();
     
-this.visitedList= new BasicArrayList();
+this.visitedList= new BasicArrayListD();
     
 this.init();
     
@@ -151,9 +154,7 @@ this.init();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.size();
-
-                        ;
+                        return this.list.size();;
     
 }
 
@@ -184,9 +185,7 @@ this.visitedList!.ensureCapacity(size);
         
 index < size; index++)
         {
-geographicMapCellPosition= list.get(index);
-
-                         as GeographicMapCellPosition;
+geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
     
 this.track(geographicMapCellPosition);
     
@@ -198,9 +197,7 @@ this.track(geographicMapCellPosition);
     public track(geographicMapCellPosition: GeographicMapCellPosition){
     //var geographicMapCellPosition = geographicMapCellPosition
 
-                        if(!this.list.contains(geographicMapCellPosition);
-
-                        )
+                        if(!this.list.contains(geographicMapCellPosition);)
                         
                                     {
                                     this.list.add(geographicMapCellPosition);
@@ -255,9 +252,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index +1);
-
-                         as GeographicMapCellPosition;
+                        return localList!.get(index +1); as GeographicMapCellPosition;
     
 
                                     }
@@ -304,9 +299,7 @@ var geographicMapCellPosition = geographicMapCellPosition
         
 index < size; index++)
         {
-value= this.visitedList!.get(index);
-
-                         as Boolean;
+value= this.visitedList!.get(index); as Boolean;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -316,9 +309,7 @@ value= this.visitedList!.get(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index);
-
-                         as GeographicMapCellPosition;
+                        return localList!.get(index); as GeographicMapCellPosition;
     
 
                                     }
@@ -329,9 +320,7 @@ value= this.visitedList!.get(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(0);
-
-                         as GeographicMapCellPosition;
+                        return localList!.get(0); as GeographicMapCellPosition;
     
 }
 
@@ -363,9 +352,7 @@ value= this.visitedList!.get(index);
         
 index < size; index++)
         {
-value= this.visitedList!.get(index);
-
-                         as Boolean;
+value= this.visitedList!.get(index); as Boolean;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -394,7 +381,7 @@ value= this.visitedList!.get(index);
     public getInPathButNotTracked(pathList: BasicArrayList): BasicArrayList{
 var pathList = pathList
 
-    var inPathButNotTrackedList: BasicArrayList = new BasicArrayList();
+    var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -425,14 +412,10 @@ var pathList = pathList
         
 index < size; index++)
         {
-geographicMapCellPosition= pathList!.get(index);
-
-                         as GeographicMapCellPosition;
+geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
     
 
-                        if(!localList!.contains(geographicMapCellPosition);
-
-                        )
+                        if(!localList!.contains(geographicMapCellPosition);)
                         
                                     {
                                     inPathButNotTrackedList!.add(geographicMapCellPosition);
@@ -464,9 +447,7 @@ geographicMapCellPosition= pathList!.get(index);
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index);
-
-                         as Boolean;
+    var value: Boolean = this.visitedList!.get(index); as Boolean;
         
         
 ;
@@ -516,9 +497,7 @@ geographicMapCellPosition= pathList!.get(index);
                         if(index !=  -1)
                         
                                     {
-                                    value= this.visitedList!.get(index);
-
-                         as Boolean;
+                                    value= this.visitedList!.get(index); as Boolean;
     
 
     var TRUE: Boolean = this.booleanFactory!.TRUE;
@@ -628,9 +607,7 @@ this.totalVisited++;
 ;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();
-
-                        ;
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();;
         
         
 ;
@@ -790,18 +767,12 @@ this.animation.paint(graphics, x +halfWidth, y +(height));
         
 --index >= 0; )
         {
-geographicMapCellPosition= this.list.get(index);
-
-                         as GeographicMapCellPosition;
+geographicMapCellPosition= this.list.get(index); as GeographicMapCellPosition;
     
-isCellVisitedBoolean= localVisitedList!.get(index);
-
-                         as Boolean;
+isCellVisitedBoolean= localVisitedList!.get(index); as Boolean;
     
 
-                        if(!isCellVisitedBoolean;
-
-                        )
+                        if(!isCellVisitedBoolean;)
                         
                                     {
                                     this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint());

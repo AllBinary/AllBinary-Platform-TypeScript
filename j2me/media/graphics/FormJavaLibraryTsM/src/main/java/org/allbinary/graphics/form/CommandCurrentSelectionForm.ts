@@ -259,9 +259,7 @@ adjustedBorder= 4;
 ;
     
 
-    var commandTextItem: CommandTextItem = this.get(index);
-
-                         as CommandTextItem;
+    var commandTextItem: CommandTextItem = this.get(index); as CommandTextItem;
         
         
 ;
@@ -270,9 +268,7 @@ adjustedBorder= 4;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commandTextItem!.getCommand();
-
-                        ;
+                        return commandTextItem!.getCommand();;
     
 }
 
@@ -341,9 +337,7 @@ this.selectedAnimationArray[index]!.paint(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.paintItem(graphics, index, item, x, y);
-
-                        ;
+                        return super.paintItem(graphics, index, item, x, y);;
     
 }
 
@@ -362,9 +356,7 @@ this.unSelectedAnimationArray[index]!.paint(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.paintUnselectedItem(graphics, index, item, x, y);
-
-                        ;
+                        return super.paintUnselectedItem(graphics, index, item, x, y);;
     
 }
 

@@ -49,41 +49,6 @@ export class RaceTrackGeographicMapCellType extends GeographicMapCellType {
     public readonly name: string
 
     private readonly travelCost: number
-public constructor (type: number, travelCost: number){
-            super(type);
-                        //var type = type
-    //var travelCost = travelCost
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.travelCost= travelCost;
-    
-
-    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
-;
-    
-this.name= commonStrings!.UNKNOWN;
-    
-}
-
-public constructor (name: string, type: number, travelCost: number){
-            super(type);
-                        //var name = name
-    //var type = type
-    //var travelCost = travelCost
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.name= name;
-    
-this.travelCost= travelCost;
-    
-}
-
 public constructor (name: string, type: number, travelCost: number, reset: number){
             super(type, reset);
                         //var name = name

@@ -148,9 +148,7 @@ this.context= aContext;
     public getResourceId(resource: string): Integer{
 var resource = resource
 
-    var value: Integer = this.hashMap!.get(resource as Object);
-
-                         as Integer;
+    var value: Integer = this.hashMap!.get(resource as Object); as Integer;
         
         
 ;
@@ -223,9 +221,7 @@ var value = value
 --index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object);
-
-                         as Integer;
+    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object); as Integer;
         
         
 ;
@@ -283,9 +279,7 @@ this.resources= resources;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: Integer = this.hashMap!.get(resource as Object);
-
-                         as Integer;
+    var integer: Integer = this.hashMap!.get(resource as Object); as Integer;
         
         
 ;

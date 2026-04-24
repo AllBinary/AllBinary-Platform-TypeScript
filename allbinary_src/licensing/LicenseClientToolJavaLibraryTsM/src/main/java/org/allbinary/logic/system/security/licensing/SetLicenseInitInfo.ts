@@ -88,12 +88,12 @@ var args = args
         
 ;
     
-initInfo!.createNewLicenseInitInfo(new BasicArrayList());
+initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
     
 }
 
 
-    private vector: BasicArrayList = new BasicArrayList();
+    private vector: BasicArrayList = new BasicArrayListD();
         
         
 public constructor (options: string[]){
@@ -136,9 +136,7 @@ this.vector.add(options[index]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return licenseInitInfoUtil!.read();
-
-                        ;
+                        return licenseInitInfoUtil!.read();;
     
 
                                     }

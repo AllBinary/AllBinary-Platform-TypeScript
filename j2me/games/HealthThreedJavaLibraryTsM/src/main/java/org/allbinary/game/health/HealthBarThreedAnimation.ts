@@ -272,13 +272,9 @@ this.updateSize();
         
 ;
     
-positionNumber3d!.x=  -(viewPosition!.getX();
-
-                        );
+positionNumber3d!.x=  -(viewPosition!.getX(););
     
-positionNumber3d!.z=  -(viewPosition!.getY();
-
-                        );
+positionNumber3d!.z=  -(viewPosition!.getY(););
     
 positionNumber3d!.y= viewPosition!.getZ() +this.allbinaryLayer!.getHeight();
     

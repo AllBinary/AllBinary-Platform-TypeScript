@@ -333,9 +333,7 @@ this.weblisketSession!.setPassword(newPassword);
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new Integer(TagSupport.EVAL_BODY_INCLUDE).
-                            toInt();
-
-                        ;
+                            toInt();;
     
 
                 //: 
@@ -431,9 +429,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;
-
-                        ;
+                        return Boolean.TRUE.;;
     
 
                                     }
@@ -458,9 +454,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRarelyUsedSession();
-
-                        ;
+                        return this.isRarelyUsedSession();;
     
 
                 //: 
@@ -586,9 +580,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;
-
-                        ;
+                        return Boolean.TRUE.;;
     
 
                 //: 
@@ -631,9 +623,7 @@ stringBuffer!.append("Trying New login<p>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -686,9 +676,7 @@ stringBuffer!.append("Trying New login<p>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -746,9 +734,7 @@ stringBuffer!.append("Trying New login<p>");
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = this.roles.get(index);
-
-                         as BasicUserRole;
+    var mustBeOfRole: BasicUserRole = this.roles.get(index); as BasicUserRole;
         
         
 ;
@@ -763,9 +749,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;
-
-                        ;
+                        return Boolean.TRUE.;;
     
 
                                     }
@@ -776,9 +760,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;
-
-                        ;
+                        return Boolean.FALSE.;;
     
 
                                     }
@@ -787,9 +769,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;
-
-                        ;
+                        return Boolean.FALSE.;;
     
 
                 //: 
@@ -872,9 +852,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;
-
-                        ;
+                        return Boolean.TRUE.;;
     
 
                                     }
@@ -885,9 +863,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;
-
-                        ;
+                        return Boolean.FALSE.;;
     
 
                                     }
@@ -898,9 +874,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;
-
-                        ;
+                        return Boolean.FALSE.;;
     
 
                 //: 
@@ -941,9 +915,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;
-
-                        ;
+                        return Boolean.TRUE.;;
     
 
                                     }
@@ -957,9 +929,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;
-
-                        ;
+                        return Boolean.FALSE.;;
     
 
                             }
@@ -999,9 +969,7 @@ this.nextAttempt();
         
 ;
     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.weblisketSession= new BasicWeblisketSession(pageContext);
     
@@ -1036,9 +1004,7 @@ this.getFormData();
                                     }
                                 
 
-                        if(!this.changePassword();
-
-                        )
+                        if(!this.changePassword();)
                         
                                     {
                                     pageContext!.getOut()!.print("Password Change Attempt Failed.<p>");
@@ -1084,9 +1050,7 @@ this.getFormData();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.invalidateSession();
-
-                        ;
+                        return this.invalidateSession();;
     
 
                                     }

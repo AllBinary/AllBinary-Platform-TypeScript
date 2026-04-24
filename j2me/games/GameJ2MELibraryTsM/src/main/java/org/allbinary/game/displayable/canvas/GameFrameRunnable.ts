@@ -97,9 +97,7 @@ this.gameTickDisplayInfoSingleton!.update();
 allBinaryGameCanvas!.processGame();
     
 
-                        if(!allBinaryGameCanvas!.isRunning();
-
-                         || allBinaryGameCanvas!.isPaused())
+                        if(!allBinaryGameCanvas!.isRunning(); || allBinaryGameCanvas!.isPaused())
                         
                                     {
                                     allBinaryGameCanvas!.notifyDonePainting();

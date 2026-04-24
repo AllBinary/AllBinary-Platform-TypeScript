@@ -144,9 +144,7 @@ this.setRunning(true);
 timeHelper!.setStartTime();
     
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0);
-
-                         as MotionRectanglesResultsEvent;
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0); as MotionRectanglesResultsEvent;
         
         
 ;

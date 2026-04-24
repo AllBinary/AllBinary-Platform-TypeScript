@@ -501,9 +501,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getName();
-
-                        ;
+                        return super.getName();;
     
 }
 
@@ -524,9 +522,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getUserName();
-
-                        ;
+                        return super.getUserName();;
     
 }
 
@@ -538,9 +534,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getPassword();
-
-                        ;
+                        return super.getPassword();;
     
 }
 
@@ -552,9 +546,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getSchema();
-
-                        ;
+                        return super.getSchema();;
     
 }
 
@@ -566,9 +558,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getServer();
-
-                        ;
+                        return super.getServer();;
     
 }
 
@@ -580,9 +570,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getPort();
-
-                        ;
+                        return super.getPort();;
     
 }
 

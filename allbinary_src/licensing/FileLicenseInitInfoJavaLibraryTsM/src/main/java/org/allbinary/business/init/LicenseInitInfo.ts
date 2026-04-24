@@ -30,6 +30,9 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -58,7 +61,7 @@ export class LicenseInitInfo
         
         
 
-    private serverVector: BasicArrayList = new BasicArrayList();
+    private serverVector: BasicArrayList = new BasicArrayListD();
         
         
 public constructor (){
@@ -93,9 +96,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.serverVector!.size();
-
-                        ;
+                        return this.serverVector!.size();;
     
 }
 
@@ -108,7 +109,7 @@ this.id= value;
 
 
     public clearServers(){
-this.serverVector= new BasicArrayList();
+this.serverVector= new BasicArrayListD();
     
 }
 

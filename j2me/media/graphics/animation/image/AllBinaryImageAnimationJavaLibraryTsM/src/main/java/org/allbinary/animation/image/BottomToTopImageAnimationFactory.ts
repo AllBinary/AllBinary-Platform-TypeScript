@@ -27,6 +27,9 @@ import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
 
     
+import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -50,17 +53,8 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class BottomToTopImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image){
-            this(image, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, image.getWidth(), image.getHeight(), animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), image.getWidth(), image.getHeight(), 0, 0, animationBehaviorFactory);
                         //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 

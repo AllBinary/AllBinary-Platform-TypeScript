@@ -111,9 +111,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             
     var result: string = this.getHelper()!..constructor.name.getMethod("view", 
                             null)!.invoke(this.getHelper(), 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;

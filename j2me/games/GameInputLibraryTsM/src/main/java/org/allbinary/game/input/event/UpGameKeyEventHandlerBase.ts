@@ -42,6 +42,9 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -72,7 +75,7 @@ export class UpGameKeyEventHandlerBase extends BasicEventHandler {
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
  constructor (){
@@ -84,9 +87,7 @@ export class UpGameKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);
-
-                        )
+                        if(!this.list.contains(playerGameInput);)
                         
                                     {
                                     this.list.add(playerGameInput);
@@ -211,9 +212,7 @@ index < size; index++)
 
         try {
             
-    var eventListenerInterface: EventListenerInterface = this.list.get(index);
-
-                         as EventListenerInterface;
+    var eventListenerInterface: EventListenerInterface = this.list.get(index); as EventListenerInterface;
         
         
 ;
@@ -236,9 +235,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

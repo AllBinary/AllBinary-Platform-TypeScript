@@ -96,23 +96,6 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
         
         
-public constructor (name: string, remoteInfo: RemoteInfo, viewPosition: ViewPosition){
-            super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), viewPosition);
-                        //var name = name
-    //var remoteInfo = remoteInfo
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance());
-    
-this.setLayerWidth(10);
-    
-this.setLayerHeight(10);
-    
-}
-
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                         //var name = name
@@ -134,30 +117,6 @@ this.setLayerHeight(10);
     
 this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface);
     
-}
-
-public constructor (name: string, viewPosition: ViewPosition){
-            this(name, RemoteInfo.REMOTE_INFO, viewPosition);
-                        //var name = name
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (name: string, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
-            this(name, RemoteInfo.REMOTE_INFO, total, pickedUpLayerInterfaceFactoryInterface, animationInterface, rectangle, viewPosition);
-                        //var name = name
-    //var total = total
-    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
-    //var animationInterface = animationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 

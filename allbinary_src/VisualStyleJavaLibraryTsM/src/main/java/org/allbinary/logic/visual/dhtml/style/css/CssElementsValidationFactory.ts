@@ -90,13 +90,9 @@ export class CssElementsValidationFactory
         
 index < size; index++)
         {
-cssElementStyleNode= cssElementStyleNodeList!.get(index);
-
-                         as Node;
+cssElementStyleNode= cssElementStyleNodeList!.get(index); as Node;
     
-cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode);
-
-                         as ValidationInterface;
+cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode); as ValidationInterface;
     
 styles.add(cssValidationInterface);
     

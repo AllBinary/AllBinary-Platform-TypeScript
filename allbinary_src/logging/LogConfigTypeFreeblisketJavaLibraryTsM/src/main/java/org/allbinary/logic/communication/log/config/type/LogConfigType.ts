@@ -24,6 +24,9 @@ import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -48,7 +51,7 @@ export class LogConfigType
          {
         
 
-    public availableLogConfigTypes: BasicArrayList = new BasicArrayList();
+    public availableLogConfigTypes: BasicArrayList = new BasicArrayListD();
         
         
 

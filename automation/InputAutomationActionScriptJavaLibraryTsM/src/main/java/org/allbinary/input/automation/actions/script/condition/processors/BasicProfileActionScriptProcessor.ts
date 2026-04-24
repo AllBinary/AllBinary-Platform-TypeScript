@@ -90,15 +90,11 @@ super.actionPerformed(actionEvent);
                         
                                     {
                                     
-                        if(this.getParent();
-
-                         is ProfileActionScriptConditionInterface)
+                        if(this.getParent(); is ProfileActionScriptConditionInterface)
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent();
-
-                         as ProfileActionScriptConditionInterface;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent(); as ProfileActionScriptConditionInterface;
         
         
 ;

@@ -46,31 +46,23 @@ import { AllBinaryLayer } from "../../../org/allbinary/layer/AllBinaryLayer.js";
 export class ViewPosition extends GPoint {
         
 
-    public static readonly NULL_VIEW_POSITION: ViewPosition = new ViewPosition();
+    public static getInstanceD(): ViewPosition{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ViewPosition(0, 0, 0);
+    
+}
+
+
+    public static readonly NULL_VIEW_POSITION: ViewPosition = ViewPosition.getInstanceD()!;
         
         
 
     private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor (){
-            super(0, 0, 0);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-protected constructor (x: number, y: number){
-            super(x, y, 0);
-                    var x = x
-var y = y
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 protected constructor (x: number, y: number, z: number){
             super(x, y, z);
                     var x = x
@@ -88,9 +80,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getXP();
-
-                        ;
+                        return this.allbinaryLayer!.getXP();;
     
 }
 
@@ -100,9 +90,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getYP();
-
-                        ;
+                        return this.allbinaryLayer!.getYP();;
     
 }
 
@@ -112,9 +100,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.allbinaryLayer!.getZP();
-
-                        ;
+                        return this.allbinaryLayer!.getZP();;
     
 }
 

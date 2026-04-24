@@ -23,6 +23,9 @@
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -119,7 +122,7 @@ protected constructor (){
     //var geographicMapCellPositionFactory = geographicMapCellPositionFactory
     //var pathList = pathList
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -148,9 +151,7 @@ protected constructor (){
         
 index < size; index++)
         {
-basicGeographicMapCellPosition= pathList!.get(index);
-
-                         as CellPosition;
+basicGeographicMapCellPosition= pathList!.get(index); as CellPosition;
     
 geographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
     
@@ -204,7 +205,7 @@ list.add(geographicMapCellPosition);
                         if(list == this.basicArrayListUtil!.getImmutableInstance())
                         
                                     {
-                                    list= new BasicArrayList();
+                                    list= new BasicArrayListD();
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
@@ -250,9 +251,7 @@ list.add(geographicMapCellPosition);
         
 index < size; index++)
         {
-pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index);
-
-                         as BasicArrayList);
+pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList);
     
 list.add(pathList);
     
@@ -284,7 +283,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new BasicArrayList();
+                        return new BasicArrayListD();
     
 }
 

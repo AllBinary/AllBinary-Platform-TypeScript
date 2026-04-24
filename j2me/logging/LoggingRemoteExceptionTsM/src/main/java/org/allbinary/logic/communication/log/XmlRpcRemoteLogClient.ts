@@ -144,18 +144,14 @@ console.log("Result: \n" +result.toString());
 console.log("IOException Trying Other Servers");
     
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);
-
-                        )
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 
                                     }
@@ -177,9 +173,7 @@ console.log("IOException Trying Other Servers");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 }
 
@@ -190,9 +184,7 @@ console.log("IOException Trying Other Servers");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tryAnother(anyType);
-
-                        ;
+                        return this.tryAnother(anyType);;
     
 }
 

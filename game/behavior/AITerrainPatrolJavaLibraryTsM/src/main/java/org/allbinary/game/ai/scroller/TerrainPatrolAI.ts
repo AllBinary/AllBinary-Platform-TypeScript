@@ -137,9 +137,7 @@ this.changeDirectionIfCliffReached();
 index < size; index++)
         {
 
-    var terrainEvent: TerrainEvent = list.remove(index);
-
-                         as TerrainEvent;
+    var terrainEvent: TerrainEvent = list.remove(index); as TerrainEvent;
         
         
 ;

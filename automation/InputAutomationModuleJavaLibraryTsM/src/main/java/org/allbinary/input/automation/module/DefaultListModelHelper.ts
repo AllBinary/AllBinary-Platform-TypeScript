@@ -83,9 +83,7 @@ this.defaultListModel= new DefaultListModel();
 index < size; index++)
         {
 
-    var moduleName: string = this.vector.get(index);
-
-                         as String;
+    var moduleName: string = this.vector.get(index); as String;
         
         
 ;

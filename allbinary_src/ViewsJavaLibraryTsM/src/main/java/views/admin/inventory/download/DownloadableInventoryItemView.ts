@@ -133,9 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -149,9 +147,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -172,9 +168,7 @@ this.request= this.getPageContext()!.getRequest();
 this.setRequestHashMap(new MultipartRequestParams(this.request).
                             toHashMap());
     
-this.id= this.getRequestHashMap()!.get(BasicItemData.ID);
-
-                         as String;
+this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as String;
     
 }
 
@@ -213,9 +207,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 
@@ -376,9 +368,7 @@ stringBuffer!.append(filePathData!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

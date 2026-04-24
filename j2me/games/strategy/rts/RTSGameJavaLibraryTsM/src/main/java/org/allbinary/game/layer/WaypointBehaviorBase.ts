@@ -27,6 +27,9 @@ import { WaypointBase } from "../../../../org/allbinary/game/layer/waypoint/Wayp
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { TickableInterface } from "../../../../org/allbinary/game/tick/TickableInterface.js";
 
     
@@ -37,6 +40,9 @@ import { GeographicMapCellHistory } from "../../../../org/allbinary/media/graphi
 
     
 import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+
+    
+import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.js";
 
     
 
@@ -77,7 +83,7 @@ export class WaypointBehaviorBase
 public constructor (){
 
             super();
-        this.ownedWaypointList= new BasicArrayList(1);
+        this.ownedWaypointList= new BasicArrayListS(1);
     
 }
 
@@ -87,9 +93,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.constructor.name.toString()!;
-
-                        ;
+                        return this.constructor.name.toString()!;;
     
 }
 
@@ -297,7 +301,7 @@ this.waypoint= waypoint;
 }
 
 
-    private readonly steeringVisitorList: BasicArrayList = new BasicArrayList();
+    private readonly steeringVisitorList: BasicArrayList = new BasicArrayListD();
         
         
 

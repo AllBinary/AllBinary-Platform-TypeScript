@@ -165,9 +165,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Manager.createPlayer(resource);
-
-                        ;
+                        return Manager.createPlayer(resource);;
     
 
                                     }
@@ -183,9 +181,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Manager.createPlayer(inputStream, AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_WAV.getName());
-
-                        ;
+                        return Manager.createPlayer(inputStream, AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_WAV.getName());;
     
 
                         }

@@ -212,9 +212,7 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
         
 ;
     
-TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey();
-
-                         as String);
+TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

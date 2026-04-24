@@ -156,9 +156,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Manager.createPlayer(resource);
-
-                        ;
+                        return Manager.createPlayer(resource);;
     
 
                                     }
@@ -168,9 +166,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Manager.createPlayer(resource.substring(0, resource.length -4));
-
-                        ;
+                        return Manager.createPlayer(resource.substring(0, resource.length -4));;
     
 
                         }

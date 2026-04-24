@@ -58,9 +58,7 @@ export class MediaData
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
 
-    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object);
-
-                         as MediaData;
+    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object); as MediaData;
         
         
 ;
@@ -190,9 +188,7 @@ var mediaData = mediaData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName();
-
-                        ;
+                        return this.getName();;
     
 }
 

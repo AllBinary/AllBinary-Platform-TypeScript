@@ -21,7 +21,7 @@
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
 
     
 
@@ -45,7 +45,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { CacheableInterface } from "./CacheableInterface.js";
 
-export class BasicArrayListCacheable extends BasicArrayList implements CacheableInterface {
+export class BasicArrayListCacheable extends BasicArrayListD implements CacheableInterface {
         
 
     public getKey(): any{

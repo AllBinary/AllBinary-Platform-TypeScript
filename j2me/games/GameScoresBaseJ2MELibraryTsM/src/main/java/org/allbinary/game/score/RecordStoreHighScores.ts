@@ -84,6 +84,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -215,9 +218,7 @@ this.load();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
-                            append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());
-
-                        ;
+                            append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());;
     
 }
 
@@ -477,7 +478,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
         try {
             recordStore= RecordStore.openRecordStore(this.getRecordId(this.abeClientInformation), true);
     
-this.setList(new BasicArrayList());
+this.setList(new BasicArrayListD());
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
@@ -704,9 +705,7 @@ var newHighScore = newHighScore
 
         try {
             
-                        if(!this.isTooManyHighScores();
-
-                        )
+                        if(!this.isTooManyHighScores();)
                         
                                     {
                                     this.logUtil!.putF("Slot Available for a High Score", this, "isBestScore");
@@ -839,9 +838,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.COMMA_SEP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

@@ -56,9 +56,12 @@ export class TileLayerPositionIntoViewPosition extends ViewPosition {
         
         
 public constructor (){
+            super(0, 0, 0);
+                    
 
-            super();
-        }
+                            //For kotlin this is before the body of the constructor.
+                    
+}
 
 
     public getX(): number{

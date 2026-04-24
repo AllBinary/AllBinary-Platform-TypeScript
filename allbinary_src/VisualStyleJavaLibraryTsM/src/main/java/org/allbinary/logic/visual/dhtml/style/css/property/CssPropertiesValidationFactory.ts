@@ -92,9 +92,7 @@ index < nodeList!.getLength(); index++)
                         
                                     {
                                     
-    var cssPropertyValidationInterface: ValidationInterface = CssPropertyValidationFactory.getInstance(node);
-
-                         as ValidationInterface;
+    var cssPropertyValidationInterface: ValidationInterface = CssPropertyValidationFactory.getInstance(node); as ValidationInterface;
         
         
 ;

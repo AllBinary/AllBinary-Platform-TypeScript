@@ -785,9 +785,7 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue();
-
-                         as String;
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue(); as String;
         
         
 ;
@@ -803,9 +801,7 @@ var evt = evt
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout();
-
-                         as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout(); as javax.swing.GroupLayout;
         
         
 ;

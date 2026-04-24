@@ -143,9 +143,7 @@ indexX < bufferedImage!.getWidth(); indexX++)
 ;
     
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger);
-
-                         as ColorCacheable;
+    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger); as ColorCacheable;
         
         
 ;

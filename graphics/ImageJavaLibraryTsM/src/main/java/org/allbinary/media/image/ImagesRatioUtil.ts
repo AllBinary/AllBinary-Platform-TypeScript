@@ -96,9 +96,7 @@ private constructor (){
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
-    var ratio: number = (bufferedImageArray[0]!.getWidth();
-
-                         /bufferedImageArray[0]!.getHeight());
+    var ratio: number = (bufferedImageArray[0]!.getWidth(); /bufferedImageArray[0]!.getHeight());
         
         
 ;
@@ -114,9 +112,7 @@ private constructor (){
 index < end; index++)
         {
 
-                        if(ratio != (bufferedImageArray[index]!.getWidth();
-
-                         /bufferedImageArray[index]!.getHeight()))
+                        if(ratio != (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.getHeight()))
                         
                                     {
                                     
@@ -167,9 +163,7 @@ index < end; index++)
         
 index < end; index++)
         {
-ratio += (bufferedImageArray[index]!.getWidth();
-
-                         /bufferedImageArray[index]!.getHeight());
+ratio += (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.getHeight());
     
 }
 
@@ -188,9 +182,7 @@ ratio += (bufferedImageArray[index]!.getWidth();
 var bufferedImage = bufferedImage
 var ratio = ratio
 
-    var imageRatio: number = (bufferedImage!.getWidth();
-
-                         /bufferedImage!.getHeight());
+    var imageRatio: number = (bufferedImage!.getWidth(); /bufferedImage!.getHeight());
         
         
 ;
@@ -217,9 +209,7 @@ var ratio = ratio
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= (bufferedImage!.getHeight();
-
-                         *ratio);
+                                    newWidth= (bufferedImage!.getHeight(); *ratio);
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -227,9 +217,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                                     }
                                 
                         else {
-                            newHeight= (bufferedImage!.getWidth();
-
-                         /ratio);
+                            newHeight= (bufferedImage!.getWidth(); /ratio);
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     

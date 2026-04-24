@@ -53,9 +53,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getScale(image.getWidth(), image.getHeight());
-
-                        ;
+                        return this.getScale(image.getWidth(), image.getHeight());;
     
 }
 
@@ -67,9 +65,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getScale(aWidth, aHeight, 20);
-
-                        ;
+                        return this.getScale(aWidth, aHeight, 20);;
     
 }
 

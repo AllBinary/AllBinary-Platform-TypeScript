@@ -80,9 +80,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;

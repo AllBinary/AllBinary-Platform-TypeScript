@@ -174,9 +174,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -234,9 +232,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 
@@ -333,9 +329,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
-
-                         as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
         
         
 ;
@@ -385,9 +379,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
-
-                         as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
         
         
 ;
@@ -437,9 +429,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
-
-                         as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
         
         
 ;
@@ -489,9 +479,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
-
-                         as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
         
         
 ;
@@ -541,9 +529,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index);
-
-                         as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
         
         
 ;
@@ -905,9 +891,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result.toString();
-
-                        ;
+                        return result.toString();;
     
 
                 //: 

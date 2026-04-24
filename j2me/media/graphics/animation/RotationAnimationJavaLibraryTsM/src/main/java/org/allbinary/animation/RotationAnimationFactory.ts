@@ -53,6 +53,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 
+import { NullRotationAnimation } from "./NullRotationAnimation.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 import { Animation } from "./Animation.js";
@@ -94,7 +96,7 @@ this.angleIncrement= angleIncrement;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
+                        return NullRotationAnimation.createTotalAngle(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());;
     
 }
 
@@ -107,7 +109,7 @@ var animationInterface = animationInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NullRotationAnimation(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());
+                        return NullRotationAnimation.createTotalAngle(AngleInfo.getInstance(this.angleIncrement), this.totalAngle, AnimationBehavior.getInstance());;
     
 }
 

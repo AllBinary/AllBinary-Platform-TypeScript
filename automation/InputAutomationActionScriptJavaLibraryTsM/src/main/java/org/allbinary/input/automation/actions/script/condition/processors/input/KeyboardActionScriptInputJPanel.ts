@@ -192,17 +192,13 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem();
-
-                         as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
                         
                                     {
                                     this.keyActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem));
@@ -221,26 +217,20 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem();
-
-                         as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object);
-
-                         as Integer;
+                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object); as Integer;
     
 
                                     }

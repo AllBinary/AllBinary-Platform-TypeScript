@@ -121,9 +121,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return classes.get(name);
-
-                         as Class<*>;
+                        return classes.get(name); as Class<*>;
     
 }
 
@@ -137,9 +135,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loadClass(name, false);
-
-                        ;
+                        return this.loadClass(name, false);;
     
 }
 

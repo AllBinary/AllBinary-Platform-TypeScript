@@ -104,9 +104,7 @@ public constructor (title: string, items: CustomItem[], rectangle: Rectangle, fo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSelectedIndex();
-
-                        ;
+                        return this.getSelectedIndex();;
     
 }
 
@@ -186,9 +184,7 @@ graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
         
 index < size; index++)
         {
-item= this.get(index);
-
-                         as CustomItemInterface;
+item= this.get(index); as CustomItemInterface;
     
 
                         if(dx >= this.rectangle.getMaxX())

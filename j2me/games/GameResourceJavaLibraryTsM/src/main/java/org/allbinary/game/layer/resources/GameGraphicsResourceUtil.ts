@@ -183,9 +183,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getString(graphicsFeature);
-
-                        ;
+                        return getString(graphicsFeature);;
     
 }
 
@@ -284,9 +282,7 @@ stringBuffer!.append(this.SPRITE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

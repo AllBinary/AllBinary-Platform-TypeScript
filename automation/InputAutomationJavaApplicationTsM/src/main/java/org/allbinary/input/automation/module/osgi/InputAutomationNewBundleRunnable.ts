@@ -81,6 +81,9 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -140,7 +143,7 @@ public constructor (inputAutomationBundleActivator: InputAutomationBundleActivat
         var inputAutomationBundleActivator = inputAutomationBundleActivator
 this.inputAutomationBundleActivator= inputAutomationBundleActivator;
     
-this.fileBasicArrayList= new BasicArrayList();
+this.fileBasicArrayList= new BasicArrayListD();
     
 }
 
@@ -202,9 +205,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
         
 index < size; index++)
         {
-bundle= this.install(list.get(index);
-
-                         as URL);
+bundle= this.install(list.get(index) as URL);
     
 
                         if(bundle != 
@@ -261,14 +262,10 @@ this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJar
         
 index < size; index++)
         {
-file= jarFileBasicArrayList!.get(index);
-
-                         as File;
+file= jarFileBasicArrayList!.get(index); as File;
     
 
-                        if(!file.isDirectory();
-
-                        )
+                        if(!file.isDirectory();)
                         
                                     {
                                     
@@ -310,8 +307,6 @@ file= jarFileBasicArrayList!.get(index);
                                     null
                                 )
                         hashMap!.put(symbolicName, new URL(FILE +file.getAbsolutePath()));
-
-                        
 
                         }
                             
@@ -373,9 +368,7 @@ this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SubDirectory.getInstance()!.search(jarFileFilter, FileWrapperUtil.wrapFile(file));
-
-                        ;
+                        return SubDirectory.getInstance()!.search(jarFileFilter, FileWrapperUtil.wrapFile(file));;
     
 }
 
@@ -386,7 +379,7 @@ this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDi
 this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList");
     
 
-    var vector: BasicArrayList = new BasicArrayList();
+    var vector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -475,9 +468,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
         
 index < size; index++)
         {
-nextSymbolicName= list.get(index);
-
-                         as String;
+nextSymbolicName= list.get(index); as String;
     
 
                         if(nextSymbolicName!.compareTo(symbolicName) == 0)
@@ -509,7 +500,7 @@ nextSymbolicName= list.get(index);
 this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
     
 
-    var vector: BasicArrayList = new BasicArrayList();
+    var vector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -558,9 +549,7 @@ index < size; index++)
 ;
     
 
-                        if(!this.isInstalled(symbolicName);
-
-                        )
+                        if(!this.isInstalled(symbolicName);)
                         
                                     {
                                     vector.add(hashMap!.get(symbolicName as Object));
@@ -595,9 +584,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +url, this, "install");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bundleContext!.installBundle(url.toString());
-
-                        ;
+                        return bundleContext!.installBundle(url.toString());;
     
 }
 

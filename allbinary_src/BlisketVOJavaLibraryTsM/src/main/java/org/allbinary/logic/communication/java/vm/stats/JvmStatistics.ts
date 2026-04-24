@@ -58,9 +58,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.freeMemory();
-
-                        ;
+                        return runtime.freeMemory();;
     
 }
 
@@ -90,9 +88,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.maxMemory();
-
-                        ;
+                        return runtime.maxMemory();;
     
 }
 
@@ -122,9 +118,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.totalMemory();
-
-                        ;
+                        return runtime.totalMemory();;
     
 }
 
@@ -244,9 +238,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryBytesLong()!.toString();
-
-                        ;
+                        return this.getFreeMemoryBytesLong()!.toString();;
     
 }
 
@@ -256,9 +248,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryKilobytesLong()!.toString();
-
-                        ;
+                        return this.getFreeMemoryKilobytesLong()!.toString();;
     
 }
 
@@ -268,9 +258,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryMegabytesLong()!.toString();
-
-                        ;
+                        return this.getFreeMemoryMegabytesLong()!.toString();;
     
 }
 
@@ -280,9 +268,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryBytesLong()!.toString();
-
-                        ;
+                        return this.getMaxMemoryBytesLong()!.toString();;
     
 }
 
@@ -292,9 +278,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryKilobytesLong()!.toString();
-
-                        ;
+                        return this.getMaxMemoryKilobytesLong()!.toString();;
     
 }
 
@@ -304,9 +288,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryMegabytesLong()!.toString();
-
-                        ;
+                        return this.getMaxMemoryMegabytesLong()!.toString();;
     
 }
 
@@ -316,9 +298,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryBytesLong()!.toString();
-
-                        ;
+                        return this.getTotalMemoryBytesLong()!.toString();;
     
 }
 
@@ -328,9 +308,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryKilobytesLong()!.toString();
-
-                        ;
+                        return this.getTotalMemoryKilobytesLong()!.toString();;
     
 }
 
@@ -340,9 +318,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryMegabytesLong()!.toString();
-
-                        ;
+                        return this.getTotalMemoryMegabytesLong()!.toString();;
     
 }
 
@@ -352,9 +328,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Thread.activeCount();
-
-                        ;
+                        return Thread.activeCount();;
     
 }
 
@@ -374,9 +348,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getNumberOfThreadsLong()!.toString();
-
-                        ;
+                        return this.getNumberOfThreadsLong()!.toString();;
     
 }
 

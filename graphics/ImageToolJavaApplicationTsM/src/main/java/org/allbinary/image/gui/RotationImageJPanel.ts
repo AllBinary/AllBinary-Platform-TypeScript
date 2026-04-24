@@ -128,9 +128,7 @@ new object: Thread()
 
         try {
             
-    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem();
-
-                         as String;
+    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem(); as String;
         
         
 ;
@@ -349,9 +347,7 @@ this.getParent()!.repaint();
 ;
     
 
-                        if(!this.writeOverOriginalJCheckBox!.isSelected();
-
-                        )
+                        if(!this.writeOverOriginalJCheckBox!.isSelected();)
                         
                                     {
                                     

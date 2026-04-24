@@ -24,6 +24,9 @@ import { Hashtable } from "../../../../../../../../java/util/Hashtable.js";
 import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Direction } from "../../../../../../../../org/allbinary/direction/Direction.js";
 
     
@@ -169,9 +172,7 @@ this.surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory();
-
-                         as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
         
         
 ;
@@ -197,14 +198,10 @@ this.surroundingCellPositions[3]= geographicMapCellPositionFactory!.getInstance(
         {
 geographicMapCellPosition= this.surroundingCellPositions[index]!;
     
-raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);
-
-                         as RaceTrackGeographicMapCellType;
+raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition); as RaceTrackGeographicMapCellType;
     
 
-                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(raceTrackGeographicMapCellType);
-
-                        )
+                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(raceTrackGeographicMapCellType);)
                         
                                     {
                                     nonRoadGeographicMapCellPosition= geographicMapCellPosition;
@@ -252,9 +249,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
     //var allBinaryLayerManager = allBinaryLayerManager
     //var index = index
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index);
-
-                         as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index); as GeographicMapCellPosition;
         
         
 ;
@@ -287,9 +282,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
 ;
     
 
-                        if(!dropCellPositionHistory!.isCellPositionWithDrop(geographicMapCellPosition);
-
-                        )
+                        if(!dropCellPositionHistory!.isCellPositionWithDrop(geographicMapCellPosition);)
                         
                                     {
                                     
@@ -358,7 +351,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction);
 ;
     
 
-    var list: BasicArrayList = this.layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, new BasicArrayList())!;
+    var list: BasicArrayList = this.layerCoveringCellPositionsUtil!.getAll(baseRaceTrackGeographicMap, randomGeographicMapCellPosition, layerInterface, new BasicArrayListD())!;
         
         
 ;
@@ -390,9 +383,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, direction);
         
 --index2 >= 0; )
         {
-geographicMapCellType= this.raceTrackGeographicMap!.getCellTypeAt(list.get(index2);
-
-                         as GeographicMapCellPosition);
+geographicMapCellType= this.raceTrackGeographicMap!.getCellTypeAt(list.get(index2) as GeographicMapCellPosition);
     
 
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))

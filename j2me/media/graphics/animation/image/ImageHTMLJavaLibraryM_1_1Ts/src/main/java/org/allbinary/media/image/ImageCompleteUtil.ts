@@ -100,17 +100,13 @@ var name = name
 ;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage();
-
-                         as playn.core.Image;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
         
         
 ;
     
 
-                        if(!playnCoreImage!.isReady();
-
-                         || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+                        if(!playnCoreImage!.isReady(); || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
                         
                                     {
                                     this.handleTimeout(name);
@@ -125,17 +121,13 @@ var name = name
                                     }
                                 
 
-                        if(!image.isReady();
-
-                        )
+                        if(!image.isReady();)
                         
                                     {
                                     image.init(image.getImage());
     
 
-                        if(!image.isReady();
-
-                        )
+                        if(!image.isReady();)
                         
                                     {
                                     PreLogUtil.put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY);

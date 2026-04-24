@@ -161,9 +161,7 @@ i < attributeSize; i++)
 ;
     
 
-    var value: string = otherAttributes!.get(key);
-
-                         as String;
+    var value: string = otherAttributes!.get(key); as String;
         
         
 ;

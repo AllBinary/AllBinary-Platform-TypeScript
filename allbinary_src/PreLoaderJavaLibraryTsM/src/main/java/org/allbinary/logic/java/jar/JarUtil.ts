@@ -114,9 +114,7 @@ this.jarURL= jarURL;
                         
                                     {
                                     
-                        if(!entry.isDirectory();
-
-                        )
+                        if(!entry.isDirectory();)
                         
                                     {
                                     

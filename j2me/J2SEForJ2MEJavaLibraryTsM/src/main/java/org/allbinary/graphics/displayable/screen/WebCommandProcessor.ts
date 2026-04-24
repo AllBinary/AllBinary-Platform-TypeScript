@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -90,7 +93,7 @@ export class WebCommandProcessor
         
         
 
-    public readonly list: BasicArrayList = new BasicArrayList();
+    public readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -104,9 +107,7 @@ export class WebCommandProcessor
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    Desktop.getDesktop()!.browse(new URI(this.list.remove(0);
-
-                         as String));
+                                    Desktop.getDesktop()!.browse(new URI(this.list.remove(0) as String));
     
 
                                     }

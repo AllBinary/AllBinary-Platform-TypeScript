@@ -129,9 +129,7 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference);
-
-                         as InputAutomationRobotChangeListener;
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference); as InputAutomationRobotChangeListener;
         
         
 ;

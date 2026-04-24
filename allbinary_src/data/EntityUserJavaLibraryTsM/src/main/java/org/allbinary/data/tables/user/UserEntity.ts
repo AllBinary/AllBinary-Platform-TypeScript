@@ -184,9 +184,7 @@ var values = values
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getUsersWithRole(UserRoleFactory.getInstance()!.ADMINISTRATOR);
-
-                        ;
+                        return getUsersWithRole(UserRoleFactory.getInstance()!.ADMINISTRATOR);;
     
 }
 
@@ -234,9 +232,7 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
 i < size; i++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i as Object);
-
-                         as HashMap<any, any>;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i as Object); as HashMap<any, any>;
         
         
 ;
@@ -246,8 +242,6 @@ i < size; i++)
                                     null
                                 )
                         usersVector!.add(new User(userHashMap));
-
-                        
 }
 
 
@@ -266,9 +260,7 @@ i < size; i++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getUsersWithRole(UserRoleFactory.getInstance()!.CUSTOMER);
-
-                        ;
+                        return getUsersWithRole(UserRoleFactory.getInstance()!.CUSTOMER);;
     
 }
 
@@ -314,9 +306,7 @@ keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
 index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object);
-
-                         as HashMap<any, any>;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object); as HashMap<any, any>;
         
         
 ;
@@ -326,8 +316,6 @@ index < size; index++)
                                     null
                                 )
                         usersVector!.add(new User(userHashMap));
-
-                        
 }
 
 
@@ -380,9 +368,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getN
 index < size; index++)
         {
 
-    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object);
-
-                         as HashMap<any, any>;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object); as HashMap<any, any>;
         
         
 ;
@@ -392,8 +378,6 @@ index < size; index++)
                                     null
                                 )
                         usersVector!.add(new User(userHashMap));
-
-                        
 }
 
 
@@ -433,9 +417,7 @@ row.put(UserData.USERNAME, userName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CreateUserFactory.getInstance(userHashMap);
-
-                        ;
+                        return CreateUserFactory.getInstance(userHashMap);;
     
 
                                     }
@@ -654,9 +636,7 @@ super.updateWhere(UserData.USERNAME, userName, updatedValues);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 
@@ -680,9 +660,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -692,9 +670,7 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 

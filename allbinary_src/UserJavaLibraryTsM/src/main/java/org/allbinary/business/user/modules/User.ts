@@ -214,9 +214,7 @@ this.userName= new UserName(userHashMap).
 ;
     
 
-    var passwordString: string = stringUtil!.getInstance(userHashMap!.get(UserData.PASSWORD);
-
-                         as String)!;
+    var passwordString: string = stringUtil!.getInstance(userHashMap!.get(UserData.PASSWORD) as String)!;
         
         
 ;
@@ -231,110 +229,64 @@ this.userName= new UserName(userHashMap).
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
                         
                                     {
-                                    this.userName= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME);
-
-                         as String);
+                                    this.userName= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME) as String);
     
-passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD);
-
-                         as String);
+passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD) as String);
     
 
                                     }
                                 
 
-    var encryption: string = stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION);
-
-                         as String)!;
+    var encryption: string = stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as String)!;
         
         
 ;
     
 
-    var secret: string = stringUtil!.getInstance(userHashMap!.get(UserData.SECRET);
-
-                         as String)!;
+    var secret: string = stringUtil!.getInstance(userHashMap!.get(UserData.SECRET) as String)!;
         
         
 ;
     
 this.password= new Password(passwordString);
     
-this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME);
-
-                         as String);
+this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME) as String);
     
-this.firstName= stringUtil!.getInstance(userHashMap!.get(UserData.FIRSTNAME);
-
-                         as String);
+this.firstName= stringUtil!.getInstance(userHashMap!.get(UserData.FIRSTNAME) as String);
     
-this.lastName= stringUtil!.getInstance(userHashMap!.get(UserData.LASTNAME);
-
-                         as String);
+this.lastName= stringUtil!.getInstance(userHashMap!.get(UserData.LASTNAME) as String);
     
-this.middleName= stringUtil!.getInstance(userHashMap!.get(UserData.MIDDLENAME);
-
-                         as String);
+this.middleName= stringUtil!.getInstance(userHashMap!.get(UserData.MIDDLENAME) as String);
     
-this.suffixName= stringUtil!.getInstance(userHashMap!.get(UserData.SUFFIXNAME);
-
-                         as String);
+this.suffixName= stringUtil!.getInstance(userHashMap!.get(UserData.SUFFIXNAME) as String);
     
-this.company= stringUtil!.getInstance(userHashMap!.get(UserData.COMPANY);
-
-                         as String);
+this.company= stringUtil!.getInstance(userHashMap!.get(UserData.COMPANY) as String);
     
-this.positionAtCompany= stringUtil!.getInstance(userHashMap!.get(UserData.POSITIONATCOMPANY);
-
-                         as String);
+this.positionAtCompany= stringUtil!.getInstance(userHashMap!.get(UserData.POSITIONATCOMPANY) as String);
     
-this.mainEmail= stringUtil!.getInstance(userHashMap!.get(UserData.MAINEMAIL);
-
-                         as String);
+this.mainEmail= stringUtil!.getInstance(userHashMap!.get(UserData.MAINEMAIL) as String);
     
-this.secondaryEmail= stringUtil!.getInstance(userHashMap!.get(UserData.SECONDARYEMAIL);
-
-                         as String);
+this.secondaryEmail= stringUtil!.getInstance(userHashMap!.get(UserData.SECONDARYEMAIL) as String);
     
-this.homePhone= stringUtil!.getInstance(userHashMap!.get(UserData.HOMEPHONE);
-
-                         as String);
+this.homePhone= stringUtil!.getInstance(userHashMap!.get(UserData.HOMEPHONE) as String);
     
-this.cellPhone= stringUtil!.getInstance(userHashMap!.get(UserData.CELLPHONE);
-
-                         as String);
+this.cellPhone= stringUtil!.getInstance(userHashMap!.get(UserData.CELLPHONE) as String);
     
-this.workPhone= stringUtil!.getInstance(userHashMap!.get(UserData.WORKPHONE);
-
-                         as String);
+this.workPhone= stringUtil!.getInstance(userHashMap!.get(UserData.WORKPHONE) as String);
     
-this.otherContact= stringUtil!.getInstance(userHashMap!.get(UserData.OTHERCONTACT);
-
-                         as String);
+this.otherContact= stringUtil!.getInstance(userHashMap!.get(UserData.OTHERCONTACT) as String);
     
-this.electronicDevice= stringUtil!.getInstance(userHashMap!.get(UserData.ELECTRONICDEVICE);
-
-                         as String);
+this.electronicDevice= stringUtil!.getInstance(userHashMap!.get(UserData.ELECTRONICDEVICE) as String);
     
-this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX);
-
-                         as String);
+this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX) as String);
     
-this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString());
-
-                         as String);
+this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as String);
     
-this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS);
-
-                         as String);
+this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS) as String);
     
 
-                        if(!stringValidationUtil!.isEmpty(this.permissions);
-
-                         && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
-                        this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String)
+                        if(!stringValidationUtil!.isEmpty(this.permissions); && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
+                        this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
                              else 
                         if(this.permissions == 
                                     null
@@ -346,9 +298,7 @@ this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS)
 
                                     }
                                 
-this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENABLE);
-
-                         as String);
+this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENABLE) as String);
     
 }
 
@@ -363,9 +313,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
 ;
     
 
-                        if(!UserName.getInstance()!.isValid(this.userName);
-
-                        )
+                        if(!UserName.getInstance()!.isValid(this.userName);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -374,9 +322,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-                        if(!this.password.isValid();
-
-                        )
+                        if(!this.password.isValid();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -391,9 +337,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -402,9 +346,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -413,9 +355,7 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN);
-
-                         || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN); || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -479,9 +419,7 @@ stringBuffer!.append(UserName.getValidationInfo(this.userName));
 stringBuffer!.append(this.password.getValidationInfo());
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);)
                         
                                     {
                                     stringBuffer!.append("Please enter a valid First Name.<br />");
@@ -490,9 +428,7 @@ stringBuffer!.append(this.password.getValidationInfo());
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);)
                         
                                     {
                                     stringBuffer!.append("Please enter a valid Last Name.<br />");
@@ -501,9 +437,7 @@ stringBuffer!.append(this.password.getValidationInfo());
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN);
-
-                         || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN); || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
                                     stringBuffer!.append("Please enter a valid email address.<br />");
@@ -515,9 +449,7 @@ stringBuffer!.append(this.password.getValidationInfo());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -914,9 +846,7 @@ this.enable= enable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.password.get();
-
-                        ;
+                        return this.password.get();;
     
 }
 
@@ -1099,9 +1029,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.password.toHashMap(this.secret);
-
-                        ;
+                        return this.password.toHashMap(this.secret);;
     
 }
 

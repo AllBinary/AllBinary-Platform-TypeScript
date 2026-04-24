@@ -164,9 +164,7 @@ this.document= DomDocumentFileHelper.create(xmlFile);
         
 index < size; index++)
         {
-node= transformInfoNodeVector!.get(index);
-
-                         as Node;
+node= transformInfoNodeVector!.get(index); as Node;
     
 transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node);
     

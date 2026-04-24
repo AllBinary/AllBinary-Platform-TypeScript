@@ -33,6 +33,9 @@ import { LoggingInitInfo } from "../../../../../../../org/allbinary/logic/commun
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
     
@@ -70,7 +73,7 @@ export class LogConfigTypes
         
         
 
-    public LOGGING: BasicArrayList = new BasicArrayList();
+    public LOGGING: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -181,9 +184,7 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
         
 index < size; index++)
         {
-logConfigType= availableLogConfigTypes!.get(index);
-
-                         as LogConfigType;
+logConfigType= availableLogConfigTypes!.get(index); as LogConfigType;
     
 
                         if(logConfigType!.getName()!.compareTo(name) == 0)

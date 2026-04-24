@@ -151,9 +151,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());
-
-                        )
+                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
                         
                                     {
                                     
@@ -194,9 +192,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());
-
-                        )
+                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
                         
                                     {
                                     
@@ -501,9 +497,7 @@ i < size; i++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object);
-
-                         as String;
+    var value: string = hashMap!.get(name as Object); as String;
         
         
 ;

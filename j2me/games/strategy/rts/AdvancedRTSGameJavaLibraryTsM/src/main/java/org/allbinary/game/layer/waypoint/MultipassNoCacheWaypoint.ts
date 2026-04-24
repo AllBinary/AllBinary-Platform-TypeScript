@@ -87,6 +87,9 @@ import { PathGenerator } from "../../../../../org/allbinary/media/graphics/geogr
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -229,9 +232,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator();
-
-                         as CustomMapGenerator;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
         
         
 ;
@@ -283,9 +284,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 
                                     }
@@ -338,9 +337,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 
                 //: 
@@ -358,9 +355,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 }
 
@@ -378,9 +373,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
 ;
     
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList);
-
-                         as GeographicMapCellPosition;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList); as GeographicMapCellPosition;
         
         
 ;
@@ -399,9 +392,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
         
 index >= 0; index--)
         {
-endGeographicMapCellPosition= endList!.get(index);
-
-                         as GeographicMapCellPosition;
+endGeographicMapCellPosition= endList!.get(index); as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
@@ -475,9 +466,7 @@ this.getConnectedWaypointList()!.clear();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
-
-                         as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
         
         
 ;
@@ -486,9 +475,7 @@ this.getConnectedWaypointList()!.clear();
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0);
-
-                         as CollidableDestroyableDamageableLayer;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
         
         
 ;

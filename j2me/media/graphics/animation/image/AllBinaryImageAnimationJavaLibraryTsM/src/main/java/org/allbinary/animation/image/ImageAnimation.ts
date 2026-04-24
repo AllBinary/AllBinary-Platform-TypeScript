@@ -82,9 +82,7 @@ this.image= image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -132,9 +130,7 @@ var sequence = sequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

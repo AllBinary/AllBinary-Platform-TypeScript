@@ -190,9 +190,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformInfoObjectConfigComponentNodes(customizedTransformInfoInterface);
-
-                        ;
+                        return this.getTransformInfoObjectConfigComponentNodes(customizedTransformInfoInterface);;
     
 }
 
@@ -220,9 +218,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return transformInfoObjectConfigInterface!.getTransforms();
-
-                        ;
+                        return transformInfoObjectConfigInterface!.getTransforms();;
     
 }
 
@@ -250,9 +246,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return transformInfoObjectConfigInterface!.getGroupTransforms();
-
-                        ;
+                        return transformInfoObjectConfigInterface!.getGroupTransforms();;
     
 }
 
@@ -339,9 +333,7 @@ transformInfoInterface!.setData(documentString);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index);
-
-                         as TransformInfo;
+    var transformInfo: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
         
         
 ;
@@ -525,9 +517,7 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index);
-
-                         as TransformInfo;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
         
         
 ;
@@ -554,9 +544,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return specifiedTransformInfoInterface!.getDataDocument();
-
-                        ;
+                        return specifiedTransformInfoInterface!.getDataDocument();;
     
 }
 

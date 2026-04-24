@@ -121,9 +121,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterface!.view();
-
-                        ;
+                        return componentInterface!.view();;
     
 
                 //: 
@@ -223,9 +221,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentInterface!.getTransformInfoInterface();
-
-                        ;
+                        return this.componentInterface!.getTransformInfoInterface();;
     
 }
 

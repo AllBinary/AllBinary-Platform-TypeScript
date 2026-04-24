@@ -60,6 +60,22 @@ import { Timer } from "./Timer.js";
 export class TimeHudWidget extends BasicHud {
         
 
+                //@Throws(Error::class)
+            
+    public static getInstance(location: number, direction: number, basicColor: BasicColor, timer: Timer): TimeHudWidget{
+var location = location
+var direction = direction
+var basicColor = basicColor
+var timer = timer
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new TimeHudWidget(location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, basicColor, timer);
+    
+}
+
+
     private readonly TIME_STRING: string = "Time ";
         
         
@@ -115,31 +131,6 @@ this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
 
                                     }
                                 
-}
-
-public constructor (location: number, direction: number, maxWidth: number, basicColor: BasicColor, timer: Timer){
-            this(location, direction, 14, maxWidth, 2, basicColor, timer);
-                    var location = location
-var direction = direction
-var maxWidth = maxWidth
-var basicColor = basicColor
-var timer = timer
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (location: number, direction: number, basicColor: BasicColor, timer: Timer){
-            this(location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, basicColor, timer);
-                    var location = location
-var direction = direction
-var basicColor = basicColor
-var timer = timer
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 

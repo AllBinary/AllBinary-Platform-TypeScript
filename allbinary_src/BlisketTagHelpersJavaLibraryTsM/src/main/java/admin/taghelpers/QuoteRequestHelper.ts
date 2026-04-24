@@ -90,9 +90,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var request: HttpServletRequest = pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -102,9 +100,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;
@@ -128,9 +124,7 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.quoteRequest!.isValid();
-
-                        ;
+                        return this.quoteRequest!.isValid();;
     
 }
 
@@ -140,9 +134,7 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.quoteRequest!.validationInfo();
-
-                        ;
+                        return this.quoteRequest!.validationInfo();;
     
 }
 

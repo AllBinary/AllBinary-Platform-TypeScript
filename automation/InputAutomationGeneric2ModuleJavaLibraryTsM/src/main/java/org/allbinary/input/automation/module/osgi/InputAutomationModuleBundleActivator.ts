@@ -124,9 +124,7 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference);
-
-                         as InputAutomationConfigurationModuleChangeListener;
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference); as InputAutomationConfigurationModuleChangeListener;
         
         
 ;

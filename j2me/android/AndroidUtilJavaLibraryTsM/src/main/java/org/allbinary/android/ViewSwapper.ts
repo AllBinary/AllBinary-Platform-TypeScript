@@ -90,9 +90,7 @@ this.topViewArray= topViewArray;
     public setMainView(id: number){
 var id = id
 
-    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId);
-
-                         as ViewGroup;
+    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId); as ViewGroup;
         
         
 ;

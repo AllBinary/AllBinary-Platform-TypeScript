@@ -24,6 +24,9 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -52,35 +55,35 @@ import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
 export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
         
 
-    private readonly unitsList: BasicArrayList = new BasicArrayList();
+    private readonly unitsList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly waypointsList: BasicArrayList = new BasicArrayList();
+    private readonly waypointsList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly buildingList: BasicArrayList = new BasicArrayList();
+    private readonly buildingList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly baseList: BasicArrayList = new BasicArrayList();
+    private readonly baseList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly garrisonList: BasicArrayList = new BasicArrayList();
+    private readonly garrisonList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly houseList: BasicArrayList = new BasicArrayList();
+    private readonly houseList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly labList: BasicArrayList = new BasicArrayList();
+    private readonly labList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly factoryList: BasicArrayList = new BasicArrayList();
+    private readonly factoryList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -348,9 +351,7 @@ stringBuffer!.appendint(this.getUnitsList()!.size());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

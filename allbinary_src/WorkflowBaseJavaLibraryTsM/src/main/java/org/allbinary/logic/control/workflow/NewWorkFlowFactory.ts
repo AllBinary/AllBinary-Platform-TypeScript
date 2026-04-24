@@ -103,9 +103,7 @@ private constructor (){
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME);
-
-                         as String;
+    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
         
         
 ;

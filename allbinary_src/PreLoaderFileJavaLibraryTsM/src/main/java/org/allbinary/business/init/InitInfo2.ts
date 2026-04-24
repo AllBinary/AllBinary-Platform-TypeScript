@@ -72,9 +72,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.create(value);
-
-                        ;
+                        return directory.create(value);;
     
 }
 
@@ -85,9 +83,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.create(value);
-
-                        ;
+                        return directory.create(value);;
     
 }
 

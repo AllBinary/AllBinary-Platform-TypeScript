@@ -101,9 +101,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return licenseInitInfoUtil!.read();
-
-                        ;
+                        return licenseInitInfoUtil!.read();;
     
 
                                     }

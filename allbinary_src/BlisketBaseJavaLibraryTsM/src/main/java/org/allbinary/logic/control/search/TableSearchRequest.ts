@@ -191,9 +191,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueNodes(document, SearchData.FILENAME, this.getFileBaseName());
-
-                        ;
+                        return ModDomHelper.createNameValueNodes(document, SearchData.FILENAME, this.getFileBaseName());;
     
 }
 

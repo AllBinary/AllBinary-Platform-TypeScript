@@ -45,6 +45,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -83,11 +86,11 @@ export class GameMotionGestureListener
         
         
 
-    private motionGestureCollection: BasicArrayList = new BasicArrayList();
+    private motionGestureCollection: BasicArrayList = new BasicArrayListD();
         
         
 
-    private touchGestureCollection: BasicArrayList = new BasicArrayList();
+    private touchGestureCollection: BasicArrayList = new BasicArrayListD();
         
         
 

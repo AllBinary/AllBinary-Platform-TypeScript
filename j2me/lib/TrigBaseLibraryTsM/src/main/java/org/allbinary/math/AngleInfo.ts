@@ -98,9 +98,7 @@ var frame = frame
         
 ;
     
-this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle);
-
-                        );
+this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle));
     
 }
 
@@ -151,9 +149,7 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getAngleIncrementIn
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

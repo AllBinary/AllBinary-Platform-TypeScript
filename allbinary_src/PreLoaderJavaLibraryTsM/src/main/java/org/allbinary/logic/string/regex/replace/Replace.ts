@@ -193,9 +193,7 @@ var replace = replace
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.upTo(replace, Integer.MIN_VALUE);
-
-                        ;
+                        return this.upTo(replace, Integer.MIN_VALUE);;
     
 }
 
@@ -254,9 +252,7 @@ index2 < size; index2++)
         {
 keys= keyArray[index2]! as Array<String?>;
     
-values= this.hashMap!.get(keys as Object);
-
-                         as Array<String?>;
+values= this.hashMap!.get(keys as Object); as Array<String?>;
     
 
     var foundTotal: number = 0;
@@ -454,9 +450,7 @@ index2 < size; index2++)
         {
 key= keyArray[index2]! as String;
     
-value= this.hashMap!.get(key as Object);
-
-                         as String;
+value= this.hashMap!.get(key as Object); as String;
     
 
     var index: number = 0;

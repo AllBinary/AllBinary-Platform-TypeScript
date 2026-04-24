@@ -36,6 +36,9 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -73,7 +76,7 @@ export class DestroyedEventHandler extends BasicEventHandler {
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -85,9 +88,7 @@ private constructor (){
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
-                        if(!this.list.contains(collidableDestroyableDamageableLayer);
-
-                        )
+                        if(!this.list.contains(collidableDestroyableDamageableLayer);)
                         
                                     {
                                     this.list.add(collidableDestroyableDamageableLayer);

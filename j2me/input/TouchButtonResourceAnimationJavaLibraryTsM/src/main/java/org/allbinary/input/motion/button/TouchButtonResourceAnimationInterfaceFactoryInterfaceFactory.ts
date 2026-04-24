@@ -424,9 +424,7 @@ super.init(level);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isLoadingLevel(level);
-
-                        ;
+                        return super.isLoadingLevel(level);;
     
 
                         }
@@ -436,9 +434,7 @@ super.init(level);
 
     public isFeature(): boolean{
 
-                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
-
-                        )
+                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
                         
                                     {
                                     

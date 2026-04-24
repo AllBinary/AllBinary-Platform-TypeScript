@@ -128,9 +128,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.stringWidth(string);
-
-                        ;
+                        return defaultFont!.stringWidth(string);;
     
 }
 
@@ -140,9 +138,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.getSize();
-
-                        ;
+                        return defaultFont!.getSize();;
     
 }
 
@@ -153,9 +149,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.charWidth(aChar);
-
-                        ;
+                        return defaultFont!.charWidth(aChar);;
     
 }
 
@@ -168,9 +162,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.charsWidth(charArray, offset, length);
-
-                        ;
+                        return defaultFont!.charsWidth(charArray, offset, length);;
     
 }
 
@@ -187,9 +179,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(this.constructor.name.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();
-
-                        ;
+                            append(this.constructor.name.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();;
     
 }
 

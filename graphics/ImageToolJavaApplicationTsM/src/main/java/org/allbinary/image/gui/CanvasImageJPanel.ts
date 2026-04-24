@@ -457,9 +457,7 @@ this.getParent()!.repaint();
 ;
     
 
-                        if(!this.writeOverOriginalJCheckBox!.isSelected();
-
-                        )
+                        if(!this.writeOverOriginalJCheckBox!.isSelected();)
                         
                                     {
                                     

@@ -102,6 +102,9 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -138,7 +141,7 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -192,9 +195,7 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface();
-
-                         as DirectionalCompositeInterface;
+    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface(); as DirectionalCompositeInterface;
         
         
 ;
@@ -202,9 +203,7 @@ this.artificialIntelligenceInterface= artificialIntelligenceInterface;
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface();
-
-                         as VelocityInterfaceCompositeInterface;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
         
         
 ;
@@ -283,9 +282,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = this.list.remove(0);
-
-                         as TrackingEvent;
+    var lastTrackingEvent: TrackingEvent = this.list.remove(0); as TrackingEvent;
         
         
 ;
@@ -866,9 +863,7 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(this.getLastDirection())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

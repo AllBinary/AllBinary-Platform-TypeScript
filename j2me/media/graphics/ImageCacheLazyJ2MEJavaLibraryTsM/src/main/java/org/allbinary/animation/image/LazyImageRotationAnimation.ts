@@ -51,6 +51,12 @@ import { ImageCacheFactory } from "../../../../org/allbinary/image/ImageCacheFac
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+
+    
+import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+
+    
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -61,6 +67,9 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
     
 import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+
+    
+import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
 
     
 
@@ -113,7 +122,7 @@ export class LazyImageRotationAnimation extends RotationAnimation {
         
         
 public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior){
-            super(animationBehavior);
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior);
                         //var layoutIndex = layoutIndex
     //var instanceId = instanceId
     //var scaleProperties = scaleProperties
@@ -139,11 +148,9 @@ imageCache!.add(this);
     
 this.scaleProperties= scaleProperties;
     
-this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0);
-
-                         as IndexedAnimation;
+this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
     
-this.animation= new object: RotationAnimation(animationBehavior)
+this.animation= new object: RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior)
                                 {
                                 
     var private index: number= 0
@@ -233,9 +240,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
-this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId);
-
-                         as IndexedAnimation;
+this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId); as IndexedAnimation;
     
 this.animation.setState(animation);
     
@@ -263,9 +268,7 @@ this.animation.setScale(scaleX, scaleY);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getAnimationBehavior();
-
-                        ;
+                        return this.animation.getAnimationBehavior();;
     
 }
 
@@ -368,9 +371,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getBasicColorP();
-
-                        ;
+                        return this.animation.getBasicColorP();;
     
 }
 
@@ -380,9 +381,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getChangeBasicColor();
-
-                        ;
+                        return this.animation.getChangeBasicColor();;
     
 }
 
@@ -392,9 +391,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getChangeColor();
-
-                        ;
+                        return this.animation.getChangeColor();;
     
 }
 
@@ -404,9 +401,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getColor();
-
-                        ;
+                        return this.animation.getColor();;
     
 }
 
@@ -416,9 +411,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getDx();
-
-                        ;
+                        return this.animation.getDx();;
     
 }
 
@@ -428,9 +421,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getDy();
-
-                        ;
+                        return this.animation.getDy();;
     
 }
 
@@ -440,9 +431,7 @@ this.animation.changeBasicColor(basicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.isThreed();
-
-                        ;
+                        return this.animation.isThreed();;
     
 }
 
@@ -473,9 +462,7 @@ this.animation.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getFrame();
-
-                        ;
+                        return this.animation.getFrame();;
     
 }
 
@@ -487,9 +474,7 @@ this.animation.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getAnimationSize();
-
-                        ;
+                        return this.animation.getAnimationSize();;
     
 }
 
@@ -499,9 +484,7 @@ this.animation.setFrame(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getSize();
-
-                        ;
+                        return this.animation.getSize();;
     
 }
 
@@ -517,9 +500,7 @@ this.animation.previousFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.isLastFrame();
-
-                        ;
+                        return this.animation.isLastFrame();;
     
 }
 
@@ -536,9 +517,7 @@ this.animation.setSequence(sequence);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getSequence();
-
-                        ;
+                        return this.animation.getSequence();;
     
 }
 
@@ -548,9 +527,7 @@ this.animation.setSequence(sequence);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.animation.getWidth();
-
-                        ;
+                        return this.animation.getWidth();;
     
 }
 
@@ -612,9 +589,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(super.toString())!.append(commonSeps!.SPACE)!.append(image.getName())!.append(commonSeps!.SPACE)!.appendint(image.getWidth())!.append(commonSeps!.SPACE)!.appendint(image.getHeight())!.toString();
-
-                        ;
+                            append(super.toString())!.append(commonSeps!.SPACE)!.append(image.getName())!.append(commonSeps!.SPACE)!.appendint(image.getWidth())!.append(commonSeps!.SPACE)!.appendint(image.getHeight())!.toString();;
     
 }
 

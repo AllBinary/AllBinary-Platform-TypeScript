@@ -100,25 +100,19 @@ var eventObject = eventObject
     setColor(basicColor: BasicColor){
 var basicColor = basicColor
 
-    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable();
-
-                         as MainGameDemoStatePaintable;
+    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable(); as MainGameDemoStatePaintable;
         
         
 ;
     
 
-    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface();
-
-                         as FormPaintable;
+    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface(); as FormPaintable;
         
         
 ;
     
 
-    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm();
-
-                         as ScrollSelectionForm;
+    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm(); as ScrollSelectionForm;
         
         
 ;
@@ -138,9 +132,7 @@ scrollSelectionForm!.setButtonBasicColor(basicColor);
 index >= 0; index--)
         {
 
-    var item: TextItem = scrollSelectionForm!.get(index);
-
-                         as TextItem;
+    var item: TextItem = scrollSelectionForm!.get(index); as TextItem;
         
         
 ;

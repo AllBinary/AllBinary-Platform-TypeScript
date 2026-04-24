@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { CellPosition } from "../../../../../../../org/allbinary/graphics/CellPosition.js";
 
     
@@ -72,11 +75,11 @@ export class DropCellPositionHistory
         
         
 
-    private positionList: BasicArrayList = new BasicArrayList();
+    private positionList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private layerList: BasicArrayList = new BasicArrayList();
+    private layerList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -103,9 +106,7 @@ var layerInterface = layerInterface
         
 index >= 0; index--)
         {
-this.add(list.get(index);
-
-                         as CellPosition, layerInterface);
+this.add(list.get(index) as CellPosition, layerInterface);
     
 }
 
@@ -177,9 +178,7 @@ var cellPosition = cellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return positionList!.contains(cellPosition);
-
-                        ;
+                        return positionList!.contains(cellPosition);;
     
 }
 
@@ -197,9 +196,7 @@ var list = list
 index >= 0; index--)
         {
 
-                        if(this.isCellPositionWithDrop(list.get(index);
-
-                         as CellPosition))
+                        if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
                         
                                     {
                                     
@@ -235,9 +232,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index);
-
-                         as CellPosition;
+    var cellPosition: CellPosition = list.get(index); as CellPosition;
         
         
 ;
@@ -282,9 +277,7 @@ var cellPosition = cellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerList!.get(index);
-
-                         as AllBinaryLayer;
+                        return this.layerList!.get(index); as AllBinaryLayer;
     
 
                                     }

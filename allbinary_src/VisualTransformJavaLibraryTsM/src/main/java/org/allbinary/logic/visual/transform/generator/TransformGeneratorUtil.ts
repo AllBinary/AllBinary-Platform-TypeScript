@@ -122,9 +122,7 @@ private constructor (){
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface();
-
-                         as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface(); as TransformInfoHttpInterface;
         
         
 ;

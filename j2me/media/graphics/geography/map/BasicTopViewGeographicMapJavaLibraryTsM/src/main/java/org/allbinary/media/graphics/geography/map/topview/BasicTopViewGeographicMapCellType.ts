@@ -41,6 +41,9 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -65,6 +68,27 @@ export class BasicTopViewGeographicMapCellType
          {
         
 
+    public static create(name: string, type: number, cost: number): BasicTopViewGeographicMapCellType{
+    //var name = name
+    //var type = type
+    //var cost = cost
+
+    var types: BasicArrayList = new BasicArrayListS(1);
+        
+        
+;
+    
+types.add(type);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new BasicTopViewGeographicMapCellType(name, types, cost);
+    
+}
+
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -74,91 +98,6 @@ export class BasicTopViewGeographicMapCellType
     public readonly cost: number
 
     private readonly types: number[]
-public constructor (name: string, type: number, cost: number){
-
-            super();
-            //var name = name
-    //var type = type
-    //var cost = cost
-
-                        if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
-                                    null
-                                )
-                        
-                                    {
-                                    new RaceTrackGeographicMapCellType(name, type, cost);
-    
-
-                                    }
-                                
-                        else {
-                            
-                        }
-                            
-this.name= name;
-    
-this.cost= cost;
-    
-this.types= new Array(1);
-    
-this.types[0]= type;
-    
-}
-
-public constructor (name: string, types: number[], cost: number){
-
-            super();
-            //var name = name
-    //var types = types
-    //var cost = cost
-
-    var size: number = types.length
-                ;
-        
-        
-;
-    
-
-    var type: number= 0
-;
-    
-
-
-
-
-                        for (
-    var index: number = 0;
-        
-        
-index < size; index++)
-        {
-type= types[index]!;
-    
-
-                        if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 
-                                    null
-                                )
-                        
-                                    {
-                                    new RaceTrackGeographicMapCellType(name, type, cost);
-    
-
-                                    }
-                                
-                        else {
-                            
-                        }
-                            
-}
-
-this.name= name;
-    
-this.types= types;
-    
-this.cost= cost;
-    
-}
-
 public constructor (name: string, types: BasicArrayList, cost: number){
 
             super();
@@ -195,9 +134,7 @@ public constructor (name: string, types: BasicArrayList, cost: number){
         
 index < size; index++)
         {
-typeAsInteger= (types.get(index);
-
-                         as Integer);
+typeAsInteger= (types.get(index); as Integer);
     
 type= typeAsInteger!.toInt();
     
@@ -207,7 +144,7 @@ type= typeAsInteger!.toInt();
                                 )
                         
                                     {
-                                    new RaceTrackGeographicMapCellType(name, type, cost);
+                                    new RaceTrackGeographicMapCellType(name, type, cost, 0);
     
 
                                     }
@@ -235,9 +172,7 @@ this.types= typeArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isType(type.getType());
-
-                        ;
+                        return this.isType(type.getType());;
     
 }
 
@@ -327,9 +262,7 @@ stringMaker!.appendint(this.types[index]!)!.append(CommonSeps.getInstance()!.COM
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringMaker!.toString();
-
-                        ;
+                        return stringMaker!.toString();;
     
 }
 

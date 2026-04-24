@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -61,7 +64,7 @@ export class CurrentlyPressedTouchButtonSingleton
 }
 
 
-    readonly list: BasicArrayList = new BasicArrayList();
+    readonly list: BasicArrayList = new BasicArrayListD();
         
         
 protected constructor (){
@@ -75,9 +78,7 @@ protected constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.size();
-
-                        ;
+                        return this.list.size();;
     
 }
 
@@ -88,9 +89,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(index);
-
-                         as TouchButtonInput;
+                        return this.list.remove(index); as TouchButtonInput;
     
 }
 
@@ -101,9 +100,7 @@ var touchButtonInput = touchButtonInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(touchButtonInput);
-
-                        ;
+                        return this.list.remove(touchButtonInput);;
     
 }
 
@@ -125,9 +122,7 @@ var touchButtonInput = touchButtonInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.contains(touchButtonInput);
-
-                        ;
+                        return this.list.contains(touchButtonInput);;
     
 }
 

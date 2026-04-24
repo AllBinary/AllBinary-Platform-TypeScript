@@ -143,9 +143,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 var pageContext = pageContext
 
         try {
-            this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+            this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.pageContext= pageContext;
     
@@ -222,9 +220,7 @@ this.getXmlData();
 ;
     
 
-        while(index < size && !xmlRequest!.startsWith(categoryRequest);
-
-                        )
+        while(index < size && !xmlRequest!.startsWith(categoryRequest);)
         {
 xmlRequest= keyArray[index]! as String;
     
@@ -280,9 +276,7 @@ this.setCategoryLoader(requestNode);
 ;
     
 this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getRootInstanceFromNode(categoryNode);
-
-                         as CategoryInterface;
+                            getRootInstanceFromNode(categoryNode); as CategoryInterface;
     
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface);
     
@@ -319,9 +313,7 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
                                     }
                                 
 this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getInstance(childCategoryNode);
-
-                         as CategoryInterface;
+                            getInstance(childCategoryNode); as CategoryInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))

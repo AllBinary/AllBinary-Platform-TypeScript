@@ -48,6 +48,9 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Document } from "../../../org/w3c/dom/Document.js";
 
     
@@ -231,9 +234,7 @@ copyTransformer!.transform(domSource, streamResult);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return byteArrayOutputStream!.toString();
-
-                        ;
+                        return byteArrayOutputStream!.toString();;
     
 
                 //: 
@@ -331,9 +332,7 @@ index < numberOfNodes; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return node.getChildNodes();
-
-                        ;
+                        return node.getChildNodes();;
     
 
                                     }
@@ -353,7 +352,7 @@ index < numberOfNodes; index++)
 var nodeName = nodeName
 var nodeList = nodeList
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -411,7 +410,7 @@ index < numberOfChildren; index++)
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 var nodeList = nodeList
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -531,9 +530,7 @@ var nodeList = nodeList
 index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index);
-
-                         as Node;
+    var node: Node = nodeList!.get(index); as Node;
         
         
 ;

@@ -133,9 +133,7 @@ index >= 0; index--)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction();
-
-                         as GameKeyCompleteMotionGestureInputEvent;
+    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction(); as GameKeyCompleteMotionGestureInputEvent;
         
         
 ;

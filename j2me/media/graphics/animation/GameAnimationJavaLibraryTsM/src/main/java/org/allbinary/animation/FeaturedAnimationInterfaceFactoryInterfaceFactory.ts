@@ -48,6 +48,9 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -105,9 +108,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getRectangle(resource, 0, 0);
-
-                        ;
+                        return getRectangle(resource, 0, 0);;
     
 }
 
@@ -118,6 +119,12 @@ var resource = resource
     //var resource = resource
     //var x = x
     //var y = y
+
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
 
     var list: BasicArrayList = this.getList()!;
         
@@ -170,7 +177,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Rectangle(PointFactory.getInstance()!.getInstance(x, y), ((rectangle.getWidth() *scale)>>1), ((rectangle.getHeight() *scale)>>1));
+                        return new Rectangle(pointFactory!.getInstance0(x, y), ((rectangle.getWidth() *scale)>>1), ((rectangle.getHeight() *scale)>>1));
     
 
                                     }
@@ -196,9 +203,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getBasicAnimationInterfaceFactoryInstance(resource);
-
-                         as ProceduralAnimationInterfaceFactoryInterface;
+                        return getBasicAnimationInterfaceFactoryInstance(resource); as ProceduralAnimationInterfaceFactoryInterface;
     
 }
 
@@ -211,9 +216,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getBasicAnimationInterfaceFactoryInstance(resource);
-
-                         as AnimationInterfaceFactoryInterface;
+                        return getBasicAnimationInterfaceFactoryInstance(resource); as AnimationInterfaceFactoryInterface;
     
 }
 
@@ -229,7 +232,7 @@ var resource = resource
 ;
     
 
-    var resourceTypeAvailableList: BasicArrayList = new BasicArrayList();
+    var resourceTypeAvailableList: BasicArrayList = new BasicArrayListD();
         
         
 ;

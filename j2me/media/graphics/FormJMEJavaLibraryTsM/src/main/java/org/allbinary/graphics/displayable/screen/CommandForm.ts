@@ -186,9 +186,7 @@ super.addCommand(command);
         
 index < size; index++)
         {
-super.removeCommand(this.commandStack!.pop();
-
-                         as Command);
+super.removeCommand(this.commandStack!.pop() as Command);
     
 }
 

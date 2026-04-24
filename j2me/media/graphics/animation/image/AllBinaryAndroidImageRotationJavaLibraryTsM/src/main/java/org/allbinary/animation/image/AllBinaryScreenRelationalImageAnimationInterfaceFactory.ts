@@ -36,6 +36,9 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 import { ScreenRelationalUtil } from "../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 import { ImageScaleUtil } from "../../../../org/allbinary/media/image/ImageScaleUtil.js";
 
     
@@ -69,17 +72,8 @@ export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends Bas
     private lastImage: Image = NullCanvas.NULL_IMAGE;
         
         
-public constructor (image: Image){
-            this(image, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, 0, 0, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
                         //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 

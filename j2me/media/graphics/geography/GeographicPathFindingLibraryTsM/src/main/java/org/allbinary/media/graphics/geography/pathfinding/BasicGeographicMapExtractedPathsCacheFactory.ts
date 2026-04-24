@@ -10,7 +10,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 import { BaseBasicArrayListCache } from "../../../../../../org/allbinary/logic/util/cache/BaseBasicArrayListCache.js";
 
     
-import { BasicGeographicMapExtractedPathCacheFactory } from "../../../../../../org/allbinary/media/graphics/geography/pathfinding/BasicGeographicMapExtractedPathCacheFactory.js";
+import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArrayListS.js";
 
     
 
@@ -32,6 +32,8 @@ import { BasicGeographicMapExtractedPathCacheFactory } from "../../../../../../o
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicGeographicMapExtractedPathCacheFactory } from "./BasicGeographicMapExtractedPathCacheFactory.js";
+
 export class BasicGeographicMapExtractedPathsCacheFactory extends BaseBasicArrayListCache {
         
 
@@ -75,7 +77,7 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-this.list.add(new BasicArrayList(maxPaths));
+this.list.add(new BasicArrayListS(maxPaths));
     
 }
 
@@ -98,9 +100,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(0);
-
-                         as BasicArrayList;
+                        return this.list.remove(0); as BasicArrayList;
     
 
                                     }
@@ -110,7 +110,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new BasicArrayList(this.maxPaths);
+                        return new BasicArrayListS(this.maxPaths);
     
 
                         }
@@ -130,9 +130,7 @@ var list = list
         
 index >= 0; index--)
         {
-BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index);
-
-                         as BasicArrayList);
+BasicGeographicMapExtractedPathCacheFactory.getInstance()!.release(list.get(index) as BasicArrayList);
     
 }
 

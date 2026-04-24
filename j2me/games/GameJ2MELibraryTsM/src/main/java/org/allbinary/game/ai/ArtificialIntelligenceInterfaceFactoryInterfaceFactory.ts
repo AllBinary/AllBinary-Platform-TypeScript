@@ -26,6 +26,9 @@ import { Hashtable } from "../../../../java/util/Hashtable.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -76,7 +79,7 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
         
 
     public clear(){
-list= new BasicArrayList();
+list= new BasicArrayListD();
     
 }
 
@@ -84,9 +87,7 @@ list= new BasicArrayList();
     public getInstance(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
 var hashtable = hashtable
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object);
-
-                         as Integer;
+    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object); as Integer;
         
         
 ;

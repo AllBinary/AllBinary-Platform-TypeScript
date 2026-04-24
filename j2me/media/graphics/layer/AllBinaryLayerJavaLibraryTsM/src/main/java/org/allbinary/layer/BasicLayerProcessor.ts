@@ -27,6 +27,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -63,7 +66,7 @@ export class BasicLayerProcessor
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 protected constructor (){
@@ -75,9 +78,7 @@ protected constructor (){
     public add(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!this.list.contains(layerInterface);
-
-                        )
+                        if(!this.list.contains(layerInterface);)
                         
                                     {
                                     this.list.add(layerInterface);

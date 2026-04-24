@@ -54,6 +54,9 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -251,7 +254,7 @@ var mappedToInput = mappedToInput
     public getReverseInstance(id: number): BasicArrayList{
 var id = id
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;

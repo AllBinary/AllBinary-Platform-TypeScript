@@ -57,6 +57,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -294,9 +297,7 @@ var n = n
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loadFileAsList(inputStream, max, byteArray1, 0);
-
-                        ;
+                        return this.loadFileAsList(inputStream, max, byteArray1, 0);;
     
 }
 
@@ -307,7 +308,7 @@ var n = n
     //var byteArray1 = byteArray1
     //var includeReturnLine = includeReturnLine
 
-    var stringList: BasicArrayList = new BasicArrayList();
+    var stringList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -481,9 +482,7 @@ stringMaker!.append(stringArray[index]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringMaker!.toString();
-
-                        ;
+                        return stringMaker!.toString();;
     
 }
 

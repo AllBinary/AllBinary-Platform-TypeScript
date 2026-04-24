@@ -147,9 +147,7 @@ this.searchRequest= searchRequest;
 
     var file: string = new StaticPagesEntity().
                             getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS);
-
-                         as String))!;
+                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String))!;
         
         
 ;
@@ -290,9 +288,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inventorySearchUtil!.search(abeClientInformation, searchRequest, vector);
-
-                        ;
+                        return inventorySearchUtil!.search(abeClientInformation, searchRequest, vector);;
     
 }
 
@@ -311,9 +307,7 @@ var product = product
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InventorySearchProductUtil.getInstance()!.getProduct(abeClientInformation, searchRequest, product);
-
-                        ;
+                        return InventorySearchProductUtil.getInstance()!.getProduct(abeClientInformation, searchRequest, product);;
     
 }
 

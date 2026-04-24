@@ -129,9 +129,7 @@ classes[0]=
 params[0]= transformInfoInterface as Object;
     
 
-    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params);
-
-                         as TransformInterface;
+    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params); as TransformInterface;
         
         
 ;

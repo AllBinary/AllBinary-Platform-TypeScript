@@ -158,12 +158,8 @@ this.vector= new Vector();
     public add(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
 
-                        if(!this.vector.contains(genericProfileDataWorkerType);
-
-                        )
+                        if(!this.vector.contains(genericProfileDataWorkerType);)
                         this.vector.add(genericProfileDataWorkerType);
-
-                        
 }
 
 
@@ -201,9 +197,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index);
-
-                         as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index); as GenericProfileDataWorkerType;
         
         
 ;

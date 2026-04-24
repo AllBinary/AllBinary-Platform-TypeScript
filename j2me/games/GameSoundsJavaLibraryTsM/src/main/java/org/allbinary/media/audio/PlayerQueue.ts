@@ -33,6 +33,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -69,7 +72,7 @@ export class PlayerQueue
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -88,9 +91,7 @@ var sound = sound
 
         try {
             
-                        if(!this.list.contains(sound);
-
-                        )
+                        if(!this.list.contains(sound);)
                         
                                     {
                                     this.list.add(sound);
@@ -128,9 +129,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
                         if(this.list.size() > 0)
                         
                                     {
-                                    sound= this.list.remove(0);
-
-                         as Sound;
+                                    sound= this.list.remove(0); as Sound;
     
 
                         if(sound != 
@@ -144,7 +143,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
                                     }
                                 
 
-        while(this.list.size > this.max)
+        while(this.list.size() > this.max)
         {
 this.list.remove(0);
     
@@ -208,9 +207,7 @@ this.list.clear();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(TOTAL)!.appendint(this.list.size())!.toString();
-
-                        ;
+                            append(TOTAL)!.appendint(this.list.size())!.toString();;
     
 }
 

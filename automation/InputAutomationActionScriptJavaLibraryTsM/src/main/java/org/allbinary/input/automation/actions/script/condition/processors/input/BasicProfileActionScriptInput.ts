@@ -169,9 +169,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
 ;
     
 
-    var hashtable: Hashtable<any, any> = inputRobotFactory!.get();
-
-                         as Hashtable<any, any>;
+    var hashtable: Hashtable<any, any> = inputRobotFactory!.get(); as Hashtable<any, any>;
         
         
 ;
@@ -188,9 +186,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
         
 ;
     
-this.setInputRobotInterface(inputRobotFactory!.get(iterator.next();
-
-                         as String));
+this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String));
     
 this.setTime(0);
     
@@ -308,9 +304,7 @@ stringBuffer!.appendlong(this.getTime());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

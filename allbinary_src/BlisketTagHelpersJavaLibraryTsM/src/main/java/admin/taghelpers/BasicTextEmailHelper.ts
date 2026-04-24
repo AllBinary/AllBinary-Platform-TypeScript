@@ -95,17 +95,13 @@ this.hashMap= hashMap;
             
     public send(){
 
-    var adminEmailSubject: string = this.hashMap!.get("Subject");
-
-                         as String;
+    var adminEmailSubject: string = this.hashMap!.get("Subject"); as String;
         
         
 ;
     
 
-    var adminEmailTextBody: string = this.hashMap!.get("Body");
-
-                         as String;
+    var adminEmailTextBody: string = this.hashMap!.get("Body"); as String;
         
         
 ;

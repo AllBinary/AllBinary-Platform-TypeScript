@@ -107,9 +107,7 @@ this.totalInventorySaleValueMoney= new Money();
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index);
-
-                         as ItemInterface;
+    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
         
         
 ;

@@ -222,21 +222,13 @@ var hashMap = hashMap
         
 ;
     
-this.setName(hashMap!.get(transformInfoData!.NAME);
-
-                         as String);
+this.setName(hashMap!.get(transformInfoData!.NAME) as String);
     
-this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String);
+this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
     
-this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME);
-
-                         as String);
+this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String);
     
-this.setObject(hashMap!.get(transformInfoData!.OBJECT);
-
-                         as String);
+this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String);
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
@@ -245,9 +237,7 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT);
 ;
     
 
-    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG);
-
-                         as String;
+    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG); as String;
         
         
 ;
@@ -269,35 +259,21 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT);
                         }
                             
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME);
-
-                         as String);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);)
                         
                                     {
-                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME);
-
-                         as String);
+                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);
     
 
                                     }
                                 
-this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME);
-
-                         as String);
+this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String);
     
-this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE);
-
-                         as String);
+this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String);
     
-this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME);
-
-                         as String);
+this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String);
     
-this.setData(hashMap!.get(transformInfoData!.DATA);
-
-                         as String);
+this.setData(hashMap!.get(transformInfoData!.DATA) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -316,9 +292,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.abContext!.getWeblisketSession();
-
-                        ;
+                        return this.abContext!.getWeblisketSession();;
     
 }
 
@@ -328,9 +302,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.abContext!.getPageContext();
-
-                        ;
+                        return this.abContext!.getPageContext();;
     
 }
 
@@ -340,9 +312,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.abContext!.getPropertiesHashMap();
-
-                        ;
+                        return this.abContext!.getPropertiesHashMap();;
     
 }
 

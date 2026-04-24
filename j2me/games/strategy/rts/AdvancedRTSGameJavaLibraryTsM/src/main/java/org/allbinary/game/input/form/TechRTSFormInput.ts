@@ -237,9 +237,7 @@ TechEventHandler.getInstance()!.fireEvent(EVENT);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);

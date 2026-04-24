@@ -42,6 +42,9 @@ import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/im
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -121,7 +124,7 @@ public constructor (image: Image, dx: number, dy: number){
                     
 }
 
-public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+private constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             this(image, animationBehaviorFactory);
                         //var image = image
     //var dx = dx
@@ -147,7 +150,7 @@ public constructor (image: Image){
 }
 
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, (image.getHeight()>>2), (image.getHeight()>>2), animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, animationBehaviorFactory);
                         //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
@@ -157,7 +160,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 }
 
 public constructor (image: Image, unused: any = {}){
-            super(image, (image.getHeight()>>2), (image.getHeight()>>2), AnimationBehaviorFactory.getInstance());
+            super(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, AnimationBehaviorFactory.getInstance());
                         //var image = image
     //var unused = unused
 
@@ -167,7 +170,7 @@ public constructor (image: Image, unused: any = {}){
 }
 
 public constructor (image: Image, unused: any = {}, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, image.getHeight(), image.getHeight(), animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
                         //var image = image
     //var unused = unused
     //var animationBehaviorFactory = animationBehaviorFactory
@@ -222,9 +225,7 @@ public constructor (image: Image, unused: any = {}, animationBehaviorFactory: An
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(0);
-
-                        ;
+                        return this.getInstance(0);;
     
 }
 

@@ -101,9 +101,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
-
-                        ;
+                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
@@ -135,9 +133,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleX, scaleY, cached);
-
-                        ;
+                        return this.createImage(imageCache, originalImage, scaleX, scaleY, cached);;
     
 }
 
@@ -154,9 +150,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(originalImage, scaleX, scaleY);
-
-                        ;
+                        return this.createImage(originalImage, scaleX, scaleY);;
     
 }
 
@@ -195,9 +189,7 @@ private constructor (){
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
@@ -209,9 +201,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }
@@ -223,9 +213,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;

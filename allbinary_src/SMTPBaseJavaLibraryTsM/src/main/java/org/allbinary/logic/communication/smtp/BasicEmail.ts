@@ -86,9 +86,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.getEmail();
-
-                         as Email;
+                        return this.email.getEmail(); as Email;
     
 }
 
@@ -98,9 +96,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.getMimeMessage();
-
-                        ;
+                        return this.email.getMimeMessage();;
     
 }
 
@@ -110,9 +106,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.getDebugInfo();
-
-                        ;
+                        return this.email.getDebugInfo();;
     
 }
 
@@ -124,9 +118,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.log();
-
-                        ;
+                        return this.email.log();;
     
 }
 
@@ -138,9 +130,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.toHashMap();
-
-                        ;
+                        return this.email.toHashMap();;
     
 }
 
@@ -153,9 +143,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.toXmlNode(document);
-
-                        ;
+                        return this.email.toXmlNode(document);;
     
 }
 
@@ -167,9 +155,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.toXmlDoc();
-
-                        ;
+                        return this.email.toXmlDoc();;
     
 }
 

@@ -117,9 +117,7 @@ this.storeName= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -190,9 +188,7 @@ this.storeName= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;

@@ -90,9 +90,7 @@ this.portion= new Portion(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowEntityFactory.getInstance()!.create2()!.dropTable();
-
-                        ;
+                        return WorkFlowEntityFactory.getInstance()!.create2()!.dropTable();;
     
 
                 //: 
@@ -131,9 +129,7 @@ this.portion= new Portion(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return WorkFlowEntityFactory.getInstance()!.create2()!.createTable();
-
-                        ;
+                        return WorkFlowEntityFactory.getInstance()!.create2()!.createTable();;
     
 
                 //: 

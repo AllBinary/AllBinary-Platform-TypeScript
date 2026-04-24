@@ -116,9 +116,7 @@ this.file= new AbFile(new AbPath(fullPath!.toFileSystemString(), FileUploadData.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.isFile();
-
-                        ;
+                        return this.file.isFile();;
     
 }
 

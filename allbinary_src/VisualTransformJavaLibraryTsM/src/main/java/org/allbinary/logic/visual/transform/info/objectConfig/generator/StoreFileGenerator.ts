@@ -153,9 +153,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE);
-
-                         as String;
+    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE); as String;
         
         
 ;
@@ -213,9 +211,7 @@ fileName= replace.all(fileName);
                                     }
                                 
 
-    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME);
-
-                         as String;
+    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME); as String;
         
         
 ;
@@ -282,9 +278,7 @@ var input = input
                                     }
                                 
 
-                        if(!this.file.exists();
-
-                        )
+                        if(!this.file.exists();)
                         
                                     {
                                     this.file.createNewFile();

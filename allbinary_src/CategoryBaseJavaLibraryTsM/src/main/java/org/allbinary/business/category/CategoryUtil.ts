@@ -99,9 +99,7 @@ var node = node
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL);
-
-                         as Attr;
+    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL); as Attr;
         
         
 ;
@@ -116,9 +114,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return attrNode!.getValue();
-
-                        ;
+                        return attrNode!.getValue();;
     
 
                                     }
@@ -140,9 +136,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomNodeHelper.getTextNodeValue(labelNode);
-
-                        ;
+                        return DomNodeHelper.getTextNodeValue(labelNode);;
     
 
                                     }

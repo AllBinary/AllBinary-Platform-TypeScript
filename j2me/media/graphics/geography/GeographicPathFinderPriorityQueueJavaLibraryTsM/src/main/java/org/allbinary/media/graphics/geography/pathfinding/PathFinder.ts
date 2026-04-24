@@ -57,6 +57,9 @@ import { RaceTrackGeographicMapCellType } from "../../../../../../org/allbinary/
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -189,9 +192,7 @@ row < sizeY; row++)
         
 ;
     
-node= new PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getInstance(column, row), new PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost();
-
-                        ,  -1));
+node= new PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getInstance(column, row), new PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost(),  -1));
     
 this.costArray[column]![row]= node;
     
@@ -212,13 +213,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search(startPathFindingNodeList!.get(0);
-
-                         as PathFindingNode, endPathFindingNodeList!.get(0);
-
-                         as PathFindingNode);
-
-                        ;
+                        return this.search(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode);;
     
 
                 //: 
@@ -236,9 +231,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -265,11 +258,7 @@ var totalPaths = totalPaths
                         if(multipassState!.step == 1)
                         
                                     {
-                                    this.searchStart(startPathFindingNodeList!.get(0);
-
-                         as PathFindingNode, endPathFindingNodeList!.get(0);
-
-                         as PathFindingNode, multipassState);
+                                    this.searchStart(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState);
     
 
                                     }
@@ -282,13 +271,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.searchN(startPathFindingNodeList!.get(0);
-
-                         as PathFindingNode, endPathFindingNodeList!.get(0);
-
-                         as PathFindingNode, multipassState);
-
-                        ;
+                        return this.searchN(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState);;
     
 
                                     }
@@ -297,9 +280,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -316,7 +297,7 @@ var totalPaths = totalPaths
 ;
     
 
-    var pathList: BasicArrayList = new BasicArrayList();
+    var pathList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -365,15 +346,13 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
                                 
 
-    var pathList: BasicArrayList = new BasicArrayList();
+    var pathList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -456,9 +435,7 @@ column < sizeX; column++)
         
 row < sizeY; row++)
         {
-discoveryCalculation= this.mathUtil!.abs(column -targetColumn);
-
-                         +this.mathUtil!.abs(row -targetRow);
+discoveryCalculation= this.mathUtil!.abs(column -targetColumn); +this.mathUtil!.abs(row -targetRow);
     
 node= this.costArray[column]![row]!;
     
@@ -521,9 +498,7 @@ this.closedSet!.add(current);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.extractPath(start, current);
-
-                        ;
+                        return this.extractPath(start, current);;
     
 
                                     }
@@ -582,9 +557,7 @@ neighborInfo= neighbor.pathFindingNodeCostInfoP;
 calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.pathFindingNodeCostInfoP!.totalCostP;
     
 
-                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);
-
-                        )
+                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);)
                         
                                     {
                                     neighborInfo!.totalCostP= calculatedCost;
@@ -592,9 +565,7 @@ calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.
 neighbor.parent= current;
     
 
-                        if(!this.openPriorityQueue!.contains(neighbor);
-
-                        )
+                        if(!this.openPriorityQueue!.contains(neighbor);)
                         
                                     {
                                     
@@ -621,9 +592,7 @@ neighbor.parent= current;
 
 }
 
-        while(!this.openPriorityQueue!.isEmpty();
-
-                        )
+        while(!this.openPriorityQueue!.isEmpty();)
     
 
 
@@ -696,9 +665,7 @@ column < sizeX; column++)
         
 row < sizeY; row++)
         {
-discoveryCalculation= this.mathUtil!.abs(column -targetColumn);
-
-                         +this.mathUtil!.abs(row -targetRow);
+discoveryCalculation= this.mathUtil!.abs(column -targetColumn); +this.mathUtil!.abs(row -targetRow);
     
 node= this.costArray[column]![row]!;
     
@@ -778,9 +745,7 @@ this.closedSet!.add(current);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.extractPath(start, current);
-
-                        ;
+                        return this.extractPath(start, current);;
     
 
                                     }
@@ -839,9 +804,7 @@ neighborInfo= neighbor.pathFindingNodeCostInfoP;
 calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.pathFindingNodeCostInfoP!.totalCostP;
     
 
-                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);
-
-                        )
+                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);)
                         
                                     {
                                     neighborInfo!.totalCostP= calculatedCost;
@@ -849,9 +812,7 @@ calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.
 neighbor.parent= current;
     
 
-                        if(!this.openPriorityQueue!.contains(neighbor);
-
-                        )
+                        if(!this.openPriorityQueue!.contains(neighbor);)
                         
                                     {
                                     
@@ -886,18 +847,14 @@ total++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
                                 
 }
 
-        while(!this.openPriorityQueue!.isEmpty();
-
-                        )
+        while(!this.openPriorityQueue!.isEmpty();)
     
 
 
@@ -910,7 +867,7 @@ total++;
     //var start = start
 var current = current
 
-    var path: BasicArrayList = new BasicArrayList();
+    var path: BasicArrayList = new BasicArrayListD();
         
         
 ;

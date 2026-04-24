@@ -127,9 +127,7 @@ bufferedImageCacheables= new Array(2);
 index < bufferedImageCacheables!.length; index++)
         {
 
-    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo);
-
-                         as BufferedImageCacheable;
+    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
         
         
 ;
@@ -163,9 +161,7 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, buf
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index);
-
-                         as PixelDelta;
+    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
         
         
 ;

@@ -70,9 +70,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.toHashMap(true);
-
-                        ;
+                        return this.paymentGatewayInterface!.toHashMap(true);;
     
 }
 
@@ -82,9 +80,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.toVector(true);
-
-                        ;
+                        return this.paymentGatewayInterface!.toVector(true);;
     
 }
 
@@ -96,9 +92,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.getKey();
-
-                         as Object;
+                        return this.paymentGatewayInterface!.getKey(); as Object;
     
 }
 

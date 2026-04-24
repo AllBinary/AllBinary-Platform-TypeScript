@@ -155,9 +155,7 @@ response.getOutputStream()!.write(byteArray);
             StreamUtil.getInstance()!.close(response.getOutputStream());
     
 
-                        if(!StreamUtil.getInstance()!.close(inputStream);
-
-                        )
+                        if(!StreamUtil.getInstance()!.close(inputStream);)
                         
                                     {
                                     response.sendError(HttpServletResponse.SC_NOT_FOUND);

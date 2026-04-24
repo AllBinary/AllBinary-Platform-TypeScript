@@ -74,9 +74,7 @@ this.securedNativeLibraryInterface= securedNativeLibraryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return securedNativeLibraryInterface!.unlock(AbKeys.getInstance()!.getKey(abeClientInformation, securedNativeLibraryInterface!.getName()));
-
-                        ;
+                        return securedNativeLibraryInterface!.unlock(AbKeys.getInstance()!.getKey(abeClientInformation, securedNativeLibraryInterface!.getName()));;
     
 }
 

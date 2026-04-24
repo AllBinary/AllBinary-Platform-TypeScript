@@ -96,9 +96,7 @@ var pageContext = pageContext
         try {
             this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.httpServletRequest= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.httpServletRequest= pageContext!.getRequest(); as HttpServletRequest;
     
 this.portion= new Portion(hashMap);
     

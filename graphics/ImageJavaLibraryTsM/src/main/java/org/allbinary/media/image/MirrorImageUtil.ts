@@ -117,9 +117,7 @@ this.logUtil!.putF("Starting", this, "getImage");
 ;
     
 tx.translate(0,  -bufferedImage!.getHeight(
-                            null);
-
-                        );
+                            null));
     
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
@@ -144,9 +142,7 @@ bufferedImage= op.filter(bufferedImage,
 ;
     
 tx.translate( -bufferedImage!.getWidth(
-                            null);
-
-                        , 0);
+                            null), 0);
     
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);

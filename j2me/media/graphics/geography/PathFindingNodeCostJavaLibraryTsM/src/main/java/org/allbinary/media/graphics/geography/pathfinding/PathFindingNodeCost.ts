@@ -131,9 +131,7 @@ var pathFindingNodeCost = pathFindingNodeCost
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.pathFindingNodeCostInfoP!.compareTo(pathFindingNodeCost!.pathFindingNodeCostInfoP);
-
-                        ;
+                        return this.pathFindingNodeCostInfoP!.compareTo(pathFindingNodeCost!.pathFindingNodeCostInfoP);;
     
 }
 
@@ -178,9 +176,7 @@ pathFindingNode= pathFindingNode!.parent as PathFindingNode;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

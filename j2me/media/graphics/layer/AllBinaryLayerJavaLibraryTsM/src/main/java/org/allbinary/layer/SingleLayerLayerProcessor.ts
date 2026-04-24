@@ -62,9 +62,7 @@ var allBinaryLayerManager = allBinaryLayerManager
         
 ;
     
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(0);
-
-                         as AllBinaryLayer, 0);
+this.process(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0);
     
 }
 

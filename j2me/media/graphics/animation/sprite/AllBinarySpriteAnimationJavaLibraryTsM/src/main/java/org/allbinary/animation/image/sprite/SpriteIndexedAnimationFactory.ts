@@ -48,6 +48,9 @@ import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/Basi
 import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -77,22 +80,8 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
     private basicColorArray: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
         
         
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number){
-            this(image, basicColorArray, width, height, dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
@@ -106,22 +95,6 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
                     
 this.basicColorArray= basicColorArray;
     
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-}
-
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number){
-            this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -152,19 +125,6 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
                                 
 }
 
-public constructor (image: Image, width: number, height: number, dx: number, dy: number){
-            this(image, width, height, dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             this(image, width, height, animationBehaviorFactory);
                         //var image = image
@@ -183,19 +143,8 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (image: Image, width: number, height: number){
-            this(image, width, height, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var width = width
-    //var height = height
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                         //var image = image
     //var width = width
     //var height = height
@@ -251,9 +200,7 @@ public constructor (image: Image, width: number, height: number, animationBehavi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(0);
-
-                        ;
+                        return this.getInstance(0);;
     
 }
 

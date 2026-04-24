@@ -48,6 +48,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { AndroidImageInterface } from "../../../../org/microemu/android/device/AndroidImageInterface.js";
 
     
@@ -106,19 +109,19 @@ private constructor (){
         
         
 
-    private readonly imageBasicArrayList: BasicArrayList = new BasicArrayList();
+    private readonly imageBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly scaledImageBasicArrayList: BasicArrayList = new BasicArrayList();
+    private readonly scaledImageBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly scaleXBasicArrayList: BasicArrayList = new BasicArrayList();
+    private readonly scaleXBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly scaleYBasicArrayList: BasicArrayList = new BasicArrayList();
+    private readonly scaleYBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -136,9 +139,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);
-
-                        ;
+                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
@@ -170,9 +171,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleX, scaleY, cached);
-
-                        ;
+                        return this.createImage(imageCache, originalImage, scaleX, scaleY, cached);;
     
 }
 
@@ -226,9 +225,7 @@ private constructor (){
                         
                                     {
                                     
-    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index);
-
-                         as Float;
+    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index); as Float;
         
         
 ;
@@ -240,9 +237,7 @@ private constructor (){
 ;
     
 
-    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index);
-
-                         as Float;
+    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index); as Float;
         
         
 ;
@@ -273,9 +268,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.scaledImageBasicArrayList!.get(index);
-
-                         as Image;
+                        return this.scaledImageBasicArrayList!.get(index); as Image;
     
 
                                     }

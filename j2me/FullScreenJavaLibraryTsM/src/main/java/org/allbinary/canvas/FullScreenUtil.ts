@@ -165,9 +165,7 @@ var isFullScreen = isFullScreen
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isScreenChange(fullScreenInterface!.isFullScreenMode());
-
-                        ;
+                        return isScreenChange(fullScreenInterface!.isFullScreenMode());;
     
 }
 

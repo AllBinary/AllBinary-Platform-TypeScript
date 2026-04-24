@@ -158,9 +158,7 @@ layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), th
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.velocityProperties!.toString();
-
-                        ;
+                        return this.velocityProperties!.toString();;
     
 }
 

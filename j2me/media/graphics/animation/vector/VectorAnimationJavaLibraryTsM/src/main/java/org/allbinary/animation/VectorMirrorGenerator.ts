@@ -36,6 +36,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -120,7 +123,7 @@ var width = width
 ;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayList(size);
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(size);
         
         
 ;
@@ -139,7 +142,7 @@ nextPoints= points[frame]!;
     
 size2= nextPoints!.length;
     
-pointBasicArrayList= new BasicArrayList(size2);
+pointBasicArrayList= new BasicArrayListS(size2);
     
 
 
@@ -151,7 +154,7 @@ pointBasicArrayList= new BasicArrayList(size2);
         
 index < size2; index++)
         {
-pointBasicArrayList!.add(pointFactory!.getInstance(nextPoints[index]![0]!, nextPoints[index]![1]!));
+pointBasicArrayList!.add(pointFactory!.getInstance0(nextPoints[index]![0]!, nextPoints[index]![1]!));
     
 }
 
@@ -227,9 +230,7 @@ graphicsPipe!.mirror(width);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsPipe!.getMatrix();
-
-                        ;
+                        return graphicsPipe!.getMatrix();;
     
 }
 

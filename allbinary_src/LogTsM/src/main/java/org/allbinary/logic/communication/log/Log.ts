@@ -145,9 +145,7 @@ this.exception= exception;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.logFormatUtil!.get(className, this.functionName, this.specialMessage, this.exception);
-
-                        ;
+                        return this.logFormatUtil!.get(className, this.functionName, this.specialMessage, this.exception);;
     
 }
 

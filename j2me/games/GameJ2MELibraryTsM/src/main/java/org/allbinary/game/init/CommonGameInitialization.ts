@@ -101,9 +101,7 @@ super.init(abeClientInformation, commandListener, level);
 ;
     
 
-                        if(!this.isGameInitialized();
-
-                         && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
+                        if(!this.isGameInitialized(); && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
                                     this.setGameInitialized(true);

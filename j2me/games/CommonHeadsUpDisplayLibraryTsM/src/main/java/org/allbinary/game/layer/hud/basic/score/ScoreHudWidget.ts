@@ -51,6 +51,21 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
         
 export class ScoreHudWidget extends NumberStringHud {
         
+
+                //@Throws(Error::class)
+            
+    public static getInstance(maxscore: number, location: number, direction: number): ScoreHudWidget{
+    //var maxscore = maxscore
+    //var location = location
+    //var direction = direction
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ScoreHudWidget(maxscore, location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, BasicColorFactory.getInstance()!.GREY);
+    
+}
+
 public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     var maxscore = maxscore
@@ -60,29 +75,6 @@ var maxHeight = maxHeight
 var maxWidth = maxWidth
 var bufferZone = bufferZone
 var basicColor = basicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (maxscore: number, location: number, direction: number, maxWidth: number){
-            this(maxscore, location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
-                    var maxscore = maxscore
-var location = location
-var direction = direction
-var maxWidth = maxWidth
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (maxscore: number, location: number, direction: number){
-            this(maxscore, location, direction, 14, MyFont.getInstance()!.getSize() *5, 2, BasicColorFactory.getInstance()!.GREY);
-                    var maxscore = maxscore
-var location = location
-var direction = direction
 
 
                             //For kotlin this is before the body of the constructor.

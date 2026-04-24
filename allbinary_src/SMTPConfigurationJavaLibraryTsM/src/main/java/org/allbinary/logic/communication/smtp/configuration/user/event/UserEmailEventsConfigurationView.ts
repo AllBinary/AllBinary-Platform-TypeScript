@@ -122,9 +122,7 @@ this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() a
 index < size; index++)
         {
 
-    var userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index);
-
-                         as Node;
+    var userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index); as Node;
         
         
 ;
@@ -227,9 +225,7 @@ index < size; index++)
 ;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName as Object);
-
-                         as UserEmailEventConfigurationInterface;
+    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName as Object); as UserEmailEventConfigurationInterface;
         
         
 ;

@@ -24,6 +24,9 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -66,7 +69,7 @@ import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 export class MultiSelectPaintable extends SelectionHudPaintable {
         
 
-    private readonly rootNameList: BasicArrayList = new BasicArrayList();
+    private readonly rootNameList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -106,17 +109,13 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index);
-
-                         as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
         
         
 ;
     
 
-                        if(!this.rootNameList!.contains(rtsLayer!.getRootName());
-
-                        )
+                        if(!this.rootNameList!.contains(rtsLayer!.getRootName());)
                         
                                     {
                                     this.rootNameList!.add(rtsLayer!.getRootName());
@@ -149,9 +148,7 @@ index >= 0; index--)
 index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index);
-
-                         as String;
+    var rootName: string = this.rootNameList!.get(index); as String;
         
         
 ;

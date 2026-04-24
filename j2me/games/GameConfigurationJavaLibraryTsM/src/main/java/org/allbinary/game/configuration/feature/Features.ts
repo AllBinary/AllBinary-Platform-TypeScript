@@ -48,6 +48,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -112,9 +115,9 @@ export class Features
 private constructor (){
 
             super();
-        list= new BasicArrayList();
+        list= new BasicArrayListD();
     
-defaultList= new BasicArrayList();
+defaultList= new BasicArrayListD();
     
 this.init();
     
@@ -128,9 +131,7 @@ this.init();
 this.add(gameFeature);
     
 
-                        if(!this.defaultList!.contains(gameFeature);
-
-                        )
+                        if(!this.defaultList!.contains(gameFeature);)
                         
                                     {
                                     this.defaultList!.add(gameFeature);
@@ -146,9 +147,7 @@ this.add(gameFeature);
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
 
-                        if(!this.list.contains(gameFeature);
-
-                        )
+                        if(!this.list.contains(gameFeature);)
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
@@ -289,9 +288,7 @@ var gameFeature = gameFeature
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultList!.contains(gameFeature);
-
-                        ;
+                        return defaultList!.contains(gameFeature);;
     
 }
 
@@ -302,9 +299,7 @@ var gameFeature = gameFeature
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.contains(gameFeature);
-
-                        ;
+                        return this.list.contains(gameFeature);;
     
 }
 

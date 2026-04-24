@@ -71,7 +71,7 @@ private constructor (){
         }
 
 
-    public getInstance(x: number, y: number): GPoint{
+    public getInstance0(x: number, y: number): GPoint{
 var x = x
 var y = y
 

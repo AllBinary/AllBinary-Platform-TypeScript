@@ -168,9 +168,7 @@ processAllUnsent();
 index < size; index++)
         {
 
-    var emailInterface: EmailInterface = queueVector!.get(index);
-
-                         as EmailInterface;
+    var emailInterface: EmailInterface = queueVector!.get(index); as EmailInterface;
         
         
 ;

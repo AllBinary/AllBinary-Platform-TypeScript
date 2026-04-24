@@ -21,6 +21,15 @@
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+
+    
+import { NullIndexedAnimationFactory } from "../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js";
+
+    
+import { ExplosionResources } from "../../../../../org/allbinary/game/combat/damage/ExplosionResources.js";
+
+    
 import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
 
     
@@ -56,34 +65,15 @@ import { WeaponLayer } from "./WeaponLayer.js";
 
 export class SimpleWeaponLayer extends WeaponLayer {
         
-public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
-            super(name, movement, animationInterface, rectangle, viewPosition);
-                        //var name = name
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
+
+                //@Throws(Error::class)
+            
+    public static createDestroyed(): Animation{
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setCollidableInferface(new CollidableWeaponBehavior(this, true));
-    
-}
 
-public constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
-            super(name, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
-                        //var name = name
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var destroyedAnimationInterface = destroyedAnimationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setCollidableInferface(new CollidableWeaponBehavior(this, true));
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getProcedural(ExplosionResources.getInstance()!.THIRD_EXPLOSION_RESOURCE)!.getInstance(NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0));;
     
 }
 

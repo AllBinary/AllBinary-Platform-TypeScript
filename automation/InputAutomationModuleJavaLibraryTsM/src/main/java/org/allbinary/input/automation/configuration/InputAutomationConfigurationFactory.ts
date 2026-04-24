@@ -135,9 +135,7 @@ export class InputAutomationConfigurationFactory
         
 ;
     
-inputAutomationConfiguration= root.getValue();
-
-                         as InputAutomationConfiguration;
+inputAutomationConfiguration= root.getValue(); as InputAutomationConfiguration;
     
 
     var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;

@@ -175,8 +175,6 @@ import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
-import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
-
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
@@ -185,10 +183,37 @@ import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
+import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
+
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
+
+                //@Throws(Error::class)
+            
+    public static createSimulatedInstance(remoteInfo: RemoteInfo): RTSLayer{
+    //var remoteInfo = remoteInfo
+
+    var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+    var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
+        
+        
+;
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new RTSLayer(RemoteInfo.REMOTE_INFO, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING, Health.NULL_HEALTH, NullRTSFormInputFactory.getInstance(), nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, NullIndexedAnimationFactory.getFactoryInstance(), RectangleFactory.SINGLETON, 0, 0, new TileLayerPositionIntoViewPosition());
+    
+}
+
 
     private static readonly id: number = 0;
         
@@ -349,29 +374,6 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
     private selected: boolean = false;
         
         
-protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
-            this(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
-                        //var remoteInfo = remoteInfo
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var healthInterface = healthInterface
-    //var rtsFormInput = rtsFormInput
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var emptyAnimationInterfaceFactoryInterface = emptyAnimationInterfaceFactoryInterface
-    //var baseAnimationInterfaceFactoryInterface = baseAnimationInterfaceFactoryInterface
-    //var buildAnimationInterfaceFactoryInterface = buildAnimationInterfaceFactoryInterface
-    //var verticleBuildAnimationInterfaceFactoryInterface = verticleBuildAnimationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, name, rectangle, viewPosition);
                         //var remoteInfo = remoteInfo
@@ -404,27 +406,19 @@ this.rtsFormInput= rtsFormInput;
     
 this.setPosition(x, y, z);
     
-this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0);
-
-                         as IndexedAnimation;
+this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0);
     
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0);
     
-this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0);
-
-                         as IndexedAnimation;
+this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
-this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0);
-
-                         as IndexedAnimation;
+this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
 this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
     
-this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstance(this.indexedButShouldBeRotationAnimationInterface);
-
-                         as IndexedAnimation;
+this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstance(this.indexedButShouldBeRotationAnimationInterface); as IndexedAnimation;
     
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
@@ -443,61 +437,6 @@ this.initSensorRangeAnimation= animation;
 this.animationInterface= this.initAnimationInterface;
     
 this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
-    
-}
-
-protected constructor (remoteInfo: RemoteInfo){
-            super(remoteInfo, GroupFactory.getInstance()!.NULL_GROUP_ARRAY, RectangleFactory.SINGLETON, new TileLayerPositionIntoViewPosition());
-                        //var remoteInfo = remoteInfo
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.initInputProcessors();
-    
-this.rtsFormInput= NullRTSFormInputFactory.getInstance();
-    
-
-    var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
-;
-    
-this.baseAnimationInterface= animation;
-    
-this.buildAnimationInterface= animation;
-    
-this.rangeAnimation= animation;
-    
-this.initRangeAnimation= animation;
-    
-this.sensorRangeAnimation= animation;
-    
-this.initSensorRangeAnimation= animation;
-    
-this.animationInterface= animation;
-    
-
-    var indexedAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0);
-
-                         as IndexedAnimation;
-        
-        
-;
-    
-this.indexedButShouldBeRotationAnimationInterface= indexedAnimation;
-    
-this.initAnimationInterface= indexedAnimation;
-    
-this.emptyAnimationInterface= indexedAnimation;
-    
-this.destroyAnimationInterface= indexedAnimation;
-    
-this.verticleBuildAnimationInterface= indexedAnimation;
-    
-this.rootName= StringUtil.getInstance()!.EMPTY_STRING;
-    
-this.geographicMapCellPositionAreaBase= GeographicMapCellPositionAreaBase.NULL_GEOGRPAHIC_MAP_POSITION_AREA_BASE;
     
 }
 
@@ -527,9 +466,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition();
-
-                         as TileLayerPositionIntoViewPosition;
+    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
         
         
 ;
@@ -820,9 +757,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getCost(this);
-
-                        ;
+                        return rtsLayerUtil!.getCost(this);;
     
 }
 
@@ -832,9 +767,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getDowngradeCost(this);
-
-                        ;
+                        return rtsLayerUtil!.getDowngradeCost(this);;
     
 }
 
@@ -844,9 +777,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getUpgradeCost(this);
-
-                        ;
+                        return rtsLayerUtil!.getUpgradeCost(this);;
     
 }
 
@@ -1071,9 +1002,7 @@ ViewPositionEventHandler.getInstance()!.removeListener(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList();
-
-                        ;
+                        return this.geographicMapCellPositionAreaBase!.getOccupyingGeographicMapCellPositionList();;
     
 }
 

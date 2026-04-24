@@ -125,9 +125,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string = this.hashtable.get(command as Object);
-
-                         as String;
+    var url: string = this.hashtable.get(command as Object); as String;
         
         
 ;

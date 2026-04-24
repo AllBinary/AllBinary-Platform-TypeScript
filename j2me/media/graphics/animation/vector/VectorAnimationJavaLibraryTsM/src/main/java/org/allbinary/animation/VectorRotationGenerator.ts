@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
     
@@ -104,9 +107,7 @@ var vectorRotationInfo = vectorRotationInfo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getInstance(vectorRotationInfo!.getWidth(), vectorRotationInfo!.getHeight(), vectorRotationInfo!.getPoints(), vectorRotationInfo!.getTotalFrames());
-
-                        ;
+                        return getInstance(vectorRotationInfo!.getWidth(), vectorRotationInfo!.getHeight(), vectorRotationInfo!.getPoints(), vectorRotationInfo!.getTotalFrames());;
     
 }
 
@@ -135,13 +136,13 @@ var frames = frames
 ;
     
 
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayList(totalAngle /angleIncrement);
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(totalAngle /angleIncrement);
         
         
 ;
     
 
-    var pointBasicArrayList: BasicArrayList = new BasicArrayList(points.length);
+    var pointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);
         
         
 ;
@@ -169,7 +170,7 @@ var frames = frames
         
 index < size; index++)
         {
-pointBasicArrayList!.add(pointFactory!.getInstance(points[index]![0]!, points[index]![1]!));
+pointBasicArrayList!.add(pointFactory!.getInstance0(points[index]![0]!, points[index]![1]!));
     
 }
 
@@ -248,9 +249,7 @@ graphicsPipe!.translate((width>>1), (height>>1));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsPipe!.getMatrix();
-
-                        ;
+                        return graphicsPipe!.getMatrix();;
     
 }
 

@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -45,7 +48,7 @@ import { BaseTouchInput } from "./BaseTouchInput.js";
 export class TouchButtonsListBuilder extends BaseTouchInput {
         
 
-    private readonly baseTouchInputList: BasicArrayList = new BasicArrayList();
+    private readonly baseTouchInputList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -71,9 +74,7 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
         
 index < size; index++)
         {
-baseTouchInput= this.baseTouchInputList!.get(index);
-
-                         as BaseTouchInput;
+baseTouchInput= this.baseTouchInputList!.get(index); as BaseTouchInput;
     
 list.addAll(baseTouchInput!.getList());
     

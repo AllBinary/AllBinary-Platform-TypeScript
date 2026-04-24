@@ -64,9 +64,7 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);
-
-                         as TransformInfoHttpInterface;
+    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoHttpInterface;
         
         
 ;
@@ -83,9 +81,7 @@ this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentProcessorComponent!.view();
-
-                        ;
+                        return this.paymentProcessorComponent!.view();;
     
 }
 

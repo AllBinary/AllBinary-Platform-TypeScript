@@ -27,6 +27,9 @@ import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -67,7 +70,7 @@ public constructor (points: BasicArrayList){
     public rotateTheta(aTheta: number){
 var aTheta = aTheta
 
-    var newVector: BasicArrayList = new BasicArrayList();
+    var newVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -89,9 +92,7 @@ var aTheta = aTheta
 index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index);
-
-                         as GPoint;
+    var secondPoint: GPoint = pointBasicArrayList!.get(index); as GPoint;
         
         
 ;
@@ -109,7 +110,7 @@ index < size; index++)
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance((secondX), (secondY))!;
+    var point: GPoint = PointFactory.getInstance()!.getInstance0((secondX), (secondY))!;
         
         
 ;

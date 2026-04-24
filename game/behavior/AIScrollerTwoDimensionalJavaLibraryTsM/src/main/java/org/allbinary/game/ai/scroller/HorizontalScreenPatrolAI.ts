@@ -126,9 +126,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sound= hashtable.get(SOUND as Object);
-
-                         as Sound;
+this.sound= hashtable.get(SOUND as Object); as Sound;
     
 
                         if(this.sound == 
@@ -169,9 +167,7 @@ super.processAI(this.keyDirection);
 ;
     
 
-                        if(currentOwnerLayerX <  -layerInterface!.getWidth();
-
-                        )
+                        if(currentOwnerLayerX <  -layerInterface!.getWidth();)
                         
                                     {
                                     
@@ -192,9 +188,7 @@ this.secondaryPlayerQueue!.add(this.sound);
                                     }
                                 
 
-                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth();
-
-                        )
+                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth();)
                         
                                     {
                                     super.processAI(Canvas.KEY_NUM1);

@@ -128,9 +128,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap
 
                                     }
                                 
-this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String);
+this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
     
 }
 
@@ -178,9 +176,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

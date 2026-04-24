@@ -238,9 +238,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0);
-
-                         as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
         
         
 ;
@@ -249,9 +247,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return choiceGroup!.getSelectedIndex();
-
-                        ;
+                        return choiceGroup!.getSelectedIndex();;
     
 
                                     }
@@ -275,9 +271,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0);
-
-                         as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
         
         
 ;

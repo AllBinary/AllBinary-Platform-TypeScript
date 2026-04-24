@@ -125,9 +125,7 @@ var group = group
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.view(TransformInfosData.getInstance()!.ALL);
-
-                        ;
+                        return this.view(TransformInfosData.getInstance()!.ALL);;
     
 
                 //: 

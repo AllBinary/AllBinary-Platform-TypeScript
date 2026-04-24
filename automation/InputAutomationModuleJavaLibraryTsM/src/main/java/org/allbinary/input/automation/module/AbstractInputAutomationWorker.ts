@@ -153,9 +153,7 @@ this.running= running;
 
     startDataWorkers(){
 
-                        if(!isAnyDataWorkerRunning();
-
-                        )
+                        if(!isAnyDataWorkerRunning();)
                         
                                     {
                                     this.captureThread= new Thread(this.getCaptureWorker());

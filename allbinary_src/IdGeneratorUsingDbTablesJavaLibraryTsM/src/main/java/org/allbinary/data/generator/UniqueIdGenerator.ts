@@ -76,9 +76,7 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-        this.idGeneratorEntity= IdGeneratorEntityFactory.getInstance();
-
-                         as IdGeneratorEntity;
+        this.idGeneratorEntity= IdGeneratorEntityFactory.getInstance(); as IdGeneratorEntity;
     
 }
 
@@ -158,9 +156,7 @@ this.idGeneratorEntity!.update(this.name, newValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return idLong!.toString();
-
-                        ;
+                        return idLong!.toString();;
     
 
                 //: 

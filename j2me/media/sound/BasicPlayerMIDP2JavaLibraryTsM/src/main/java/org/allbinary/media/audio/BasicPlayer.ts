@@ -39,6 +39,9 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -77,7 +80,7 @@ export class BasicPlayer
 
     private timeBase: TimeBase
 
-    readonly listenersList: BasicArrayList = new BasicArrayList();
+    readonly listenersList: BasicArrayList = new BasicArrayListD();
         
         
 public constructor (){
@@ -129,9 +132,7 @@ var controlType = controlType
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
 
-                        if(!this.listenersList!.contains(playerListener);
-
-                        )
+                        if(!this.listenersList!.contains(playerListener);)
                         
                                     {
                                     this.listenersList!.add(playerListener);

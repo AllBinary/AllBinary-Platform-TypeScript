@@ -229,9 +229,7 @@ stringBuffer!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -241,9 +239,7 @@ stringBuffer!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
@@ -253,9 +249,7 @@ stringBuffer!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

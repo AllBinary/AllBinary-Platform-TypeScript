@@ -238,9 +238,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName);
-
-                         as ShippingInterface;
+    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName); as ShippingInterface;
         
         
 ;

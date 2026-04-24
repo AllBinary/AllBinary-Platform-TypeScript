@@ -41,6 +41,9 @@ import { OpenGLImageSpecificFactory } from "../../../../org/allbinary/image/open
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -814,7 +817,7 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
 ;
     
 
-    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayList())!;
+    var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayListD())!;
         
         
 ;
@@ -859,9 +862,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

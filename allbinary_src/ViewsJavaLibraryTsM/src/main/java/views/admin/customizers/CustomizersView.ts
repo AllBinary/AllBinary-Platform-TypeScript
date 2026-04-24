@@ -151,9 +151,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 index < size; index++)
         {
 
-    var viewName: string = this.customizersVector!.get(index);
-
-                         as String;
+    var viewName: string = this.customizersVector!.get(index); as String;
         
         
 ;
@@ -170,9 +168,7 @@ index < size; index++)
 }
 
 
-    var objectArray: any[] = unsortedCustomizerViewVector!.toArray();
-
-                         as Array<any?>;
+    var objectArray: any[] = unsortedCustomizerViewVector!.toArray(); as Array<any?>;
         
         
 ;
@@ -252,9 +248,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

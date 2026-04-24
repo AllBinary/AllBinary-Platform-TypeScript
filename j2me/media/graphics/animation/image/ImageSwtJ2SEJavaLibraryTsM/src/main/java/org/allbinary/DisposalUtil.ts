@@ -102,9 +102,7 @@ export class DisposalUtil
         
 ;
     
-this.dispose(mutableImage!.getImage();
-
-                         as Resource);
+this.dispose(mutableImage!.getImage() as Resource);
     
 
                                     }
@@ -119,9 +117,7 @@ this.dispose(mutableImage!.getImage();
     public dispose(resource: Resource){
     //var resource = resource
 
-                        if(!resource.isDisposed();
-
-                        )
+                        if(!resource.isDisposed();)
                         
                                     {
                                     console.log(this.commonStrings!.CLOSE);

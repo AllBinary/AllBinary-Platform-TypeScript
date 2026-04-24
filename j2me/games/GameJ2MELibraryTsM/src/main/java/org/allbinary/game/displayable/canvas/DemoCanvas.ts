@@ -315,6 +315,9 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -489,7 +492,7 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
         
         
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean){
-            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST);
+            super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST, true);
                         //var abeClientInformation = abeClientInformation
     //var commandListener = commandListener
     //var highScoresFactoryInterface = highScoresFactoryInterface
@@ -631,7 +634,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
                                 
                         else {
                             
-    var commandList: BasicArrayList = new BasicArrayList();
+    var commandList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -655,11 +658,7 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0);
-
-                         as LockableFeature);
-
-                        )
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature);)
                         
                                     {
                                     commandList!.add(gameCommandsFactory!.BUY_COMMAND);
@@ -799,9 +798,7 @@ this.close();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack();
-
-                         as Vector<any>, basicColorFactory!.BLACK, basicColorFactory!.WHITE)!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, basicColorFactory!.BLACK, basicColorFactory!.WHITE)!;
         
         
 ;
@@ -847,7 +844,7 @@ scrollSelectionForm!.init(rectangle2, formType2);
                         if(this.getMenuForm() != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(new CommandFormInputProcessor(new BasicArrayList(),  -1, this, this.getMenuForm()));
+                                    this.setMenuInputProcessor(new CommandFormInputProcessor(new BasicArrayListD(),  -1, this, this.getMenuForm()));
     
 
                                     }
@@ -1212,9 +1209,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                         
                                     {
                                     
-                        if(!this.highScoresHelper!.isAnyHighScores();
-
-                        )
+                        if(!this.highScoresHelper!.isAnyHighScores();)
                         
                                     {
                                     newState= 0;
@@ -1275,9 +1270,7 @@ this.getBasicGameDemoPaintable()!.setState(this.state);
 this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface();
     
 
-                        if(!this.demoGameRunnable!.isRunning();
-
-                         && this.gameCanvas!.isInitialized())
+                        if(!this.demoGameRunnable!.isRunning(); && this.gameCanvas!.isInitialized())
                         
                                     {
                                     this.getSpecialAnimationInterface()!.reset();
@@ -1362,9 +1355,7 @@ this.highScoresPaintable= NullPaintable.getInstance();
         
 ;
     
-this.gameCanvas= this.createRunnable(randomLevel);
-
-                         as AllBinaryGameCanvas;
+this.gameCanvas= this.createRunnable(randomLevel); as AllBinaryGameCanvas;
     
 this.basicColor= this.gameCanvas!.getLayerManager()!.getForegroundBasicColor();
     
@@ -1415,9 +1406,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
 
     public preDemoProcess(){
 
-                        if(!this.gameCanvas!.isInitialized();
-
-                         || gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
+                        if(!this.gameCanvas!.isInitialized(); || gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
                         
                                     {
                                     
@@ -1425,9 +1414,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
                         
                                     {
                                     
-                        if(!PrimaryPlayerQueueFactory.getInstance()!.process();
-
-                        )
+                        if(!PrimaryPlayerQueueFactory.getInstance()!.process();)
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.process();
@@ -1460,9 +1447,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior();
-
-                         as IndexedAnimationBehavior);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior(); as IndexedAnimationBehavior);
         
         
 ;
@@ -1477,9 +1462,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener();
-
-                         as DemoGameMidlet;
+    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener(); as DemoGameMidlet;
         
         
 ;
@@ -1516,9 +1499,7 @@ this.start();
                         
                                     {
                                     
-                        if(!this.demoGameRunnable!.isRunning();
-
-                        )
+                        if(!this.demoGameRunnable!.isRunning();)
                         
                                     {
                                     this.startDemoGame();
@@ -1620,9 +1601,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return !this.demoGameRunnable!.isRunning();
-
-                         && this.gameCanvas!.isInitialized();
+                        return !this.demoGameRunnable!.isRunning(); && this.gameCanvas!.isInitialized();
     
 }
 
@@ -1633,9 +1612,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 this.gameRunnable!.run();
     
 
-                        if(!this.specialAnimationInterface!.isComplete();
-
-                         && this.isReadyForStateChange())
+                        if(!this.specialAnimationInterface!.isComplete(); && this.isReadyForStateChange())
                         
                                     {
                                     this.specialAnimationInterface!.nextFrame();
@@ -1718,9 +1695,7 @@ this.setState();
                         
                                     {
                                     
-        while(this.gameCanvas == NullGameCanvas.getInstance() || !this.gameCanvas!.isInitialized();
-
-                        )
+        while(this.gameCanvas == NullGameCanvas.getInstance() || !this.gameCanvas!.isInitialized();)
         {
 this.loopTimeHelper!.setStartTime();
     
@@ -2211,9 +2186,7 @@ this.tempWait= tempWait;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRunning();
-
-                        ;
+                        return this.isRunning();;
     
 
                         }

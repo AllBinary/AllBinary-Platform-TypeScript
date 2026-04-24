@@ -337,9 +337,7 @@ this.setVolume((leftVolume) /100.0f);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN);
-
-                         as FloatControl;
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
         
         
 ;
@@ -348,9 +346,7 @@ this.setVolume((leftVolume) /100.0f);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);
-
-                        ;
+                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);;
     
 }
 
@@ -369,16 +365,12 @@ this.setVolume((leftVolume) /100.0f);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN);
-
-                         as FloatControl;
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
         
         
 ;
     
-masterGainFloatControl!.setValue(20f *Math.log10(volume);
-
-                        );
+masterGainFloatControl!.setValue(20f *Math.log10(volume););
     
 }
 
@@ -416,9 +408,7 @@ var event = event
 index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size);
-
-                         as PlayerListener;
+    var listener: PlayerListener = this.listenersList!.get(size); as PlayerListener;
         
         
 ;

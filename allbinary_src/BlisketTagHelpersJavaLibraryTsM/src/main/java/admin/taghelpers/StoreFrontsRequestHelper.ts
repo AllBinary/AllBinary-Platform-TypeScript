@@ -131,9 +131,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 var pageContext = pageContext
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest();
-
-                         as HttpServletRequest;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     

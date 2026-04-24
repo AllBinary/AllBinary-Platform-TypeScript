@@ -174,9 +174,7 @@ index < size2; index++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object);
-
-                         as String;
+    var value: string = hashMap!.get(name as Object); as String;
         
         
 ;
@@ -212,9 +210,7 @@ node.appendChild(totalNode);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.vector.get(index);
-
-                         as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = this.vector.get(index); as DomNodeInterface;
         
         
 ;

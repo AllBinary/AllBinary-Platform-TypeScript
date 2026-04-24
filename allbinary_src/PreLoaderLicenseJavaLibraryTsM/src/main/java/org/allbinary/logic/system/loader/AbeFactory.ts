@@ -109,9 +109,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.constructor.name.createInstance();
-
-                        ;
+                        return this.constructor.name.createInstance();;
     
 
                 //: 
@@ -201,9 +199,7 @@ constructor= myClass!.getConstructor(classes);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return constructor.newInstance(params);
-
-                        ;
+                        return constructor.newInstance(params);;
     
 
                                     }
@@ -221,9 +217,7 @@ constructor= myClass!.getConstructor(classes);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return constructor.newInstance(params);
-
-                        ;
+                        return constructor.newInstance(params);;
     
 
                         }

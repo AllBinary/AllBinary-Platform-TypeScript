@@ -63,6 +63,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -470,9 +473,7 @@ var lastHeight = lastHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isPortrait(this.last[this.WIDTH]!, this.last[this.HEIGHT]!);
-
-                        ;
+                        return this.isPortrait(this.last[this.WIDTH]!, this.last[this.HEIGHT]!);;
     
 }
 
@@ -493,7 +494,7 @@ var lastHeight = lastHeight
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -781,9 +782,7 @@ this.add(commonStrings!.UPDATE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.toString(stringBuffer);
-
-                        ;
+                        return this.toString(stringBuffer);;
     
 }
 
@@ -842,9 +841,7 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

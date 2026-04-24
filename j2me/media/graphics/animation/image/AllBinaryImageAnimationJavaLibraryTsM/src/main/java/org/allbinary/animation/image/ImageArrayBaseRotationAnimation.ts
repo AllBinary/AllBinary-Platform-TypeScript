@@ -87,7 +87,7 @@ export class ImageArrayBaseRotationAnimation extends RotationAnimation {
 
     private totalFrames: number= 0
 public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
-            super(angleInfo, animationBehavior);
+            super(angleInfo, CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var originalImageArray = originalImageArray
     //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior
@@ -111,9 +111,7 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -201,9 +199,7 @@ this.currentImage= this.imageArray[index]!;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

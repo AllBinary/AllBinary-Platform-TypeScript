@@ -263,9 +263,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index);
-
-                         as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
         
         
 ;
@@ -313,9 +311,7 @@ this.avgRatioJTextField!.setText(averageRatioString);
 this.fudgeItJButton!.setEnabled(false);
     
 
-                        if(!this.imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages);
-
-                        )
+                        if(!this.imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages);)
                         
                                     {
                                     
@@ -369,9 +365,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index);
-
-                         as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
         
         
 ;
@@ -460,9 +454,7 @@ this.imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getT
 this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
 
-    var cellRatio: number = (imageUnifierCell!.getWidth();
-
-                         /imageUnifierCell!.getHeight());
+    var cellRatio: number = (imageUnifierCell!.getWidth(); /imageUnifierCell!.getHeight());
         
         
 ;
@@ -883,9 +875,7 @@ var evt = evt
 ;
     
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel();
-
-                         as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
         
         
 ;
@@ -895,9 +885,7 @@ var evt = evt
                         
                                     {
                                     
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index);
-
-                         as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
         
         
 ;
@@ -927,17 +915,13 @@ var evt = evt
                         
                                     {
                                     
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel();
-
-                         as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
         
         
 ;
     
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index);
-
-                         as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
         
         
 ;
@@ -957,9 +941,7 @@ this.updateImage();
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel();
-
-                         as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
         
         
 ;
@@ -987,9 +969,7 @@ var evt = evt
 index >= 0; index--)
         {
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last);
-
-                         as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last); as ImageIconUnique;
         
         
 ;

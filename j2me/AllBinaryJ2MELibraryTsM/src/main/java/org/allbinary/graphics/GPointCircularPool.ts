@@ -43,6 +43,8 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CustomGPoint } from "./CustomGPoint.js";
+
 export class GPointCircularPool extends BaseCircularPool {
         
 public constructor (size: number){
@@ -63,7 +65,7 @@ this.OBJECT_ARRAY= new Array(size);
         
 index >= 0; index--)
         {
-this.OBJECT_ARRAY[index]= new CustomGPoint(0, 0);
+this.OBJECT_ARRAY[index]= CustomGPoint.getInstance3(0, 0);
     
 }
 

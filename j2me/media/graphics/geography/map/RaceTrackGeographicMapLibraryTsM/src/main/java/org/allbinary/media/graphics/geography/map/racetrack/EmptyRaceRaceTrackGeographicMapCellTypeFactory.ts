@@ -72,7 +72,7 @@ private constructor (){
     
 this.EMPTY_CELL_TYPE= new RaceTrackGeographicMapCellType(commonStrings!.EMPTY, 0, PathFindingNodeCostInfoData.getInstance()!.MAX_NODE_COST, 1);
     
-this.EASY_CELL_TYPE= new RaceTrackGeographicMapCellType("Easy", 19, 1);
+this.EASY_CELL_TYPE= new RaceTrackGeographicMapCellType("Easy", 19, 1, 0);
     
 this.FINISH_LINE_ROAD_CELL_TYPE= this.DEFAULT_FINISH_LINE_ROAD_CELL_TYPE;
     

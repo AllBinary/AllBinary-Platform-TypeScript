@@ -39,6 +39,9 @@ import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/ge
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -61,7 +64,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMotionGestureEventListener {
         
 
-    public readonly motionGestureEventList: BasicArrayList = new BasicArrayList();
+    public readonly motionGestureEventList: BasicArrayList = new BasicArrayListD();
         
         
 

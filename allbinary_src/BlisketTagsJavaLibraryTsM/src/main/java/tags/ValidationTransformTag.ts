@@ -120,9 +120,7 @@ this.logic= logic;
     
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -131,9 +129,7 @@ this.logic= logic;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -177,9 +173,7 @@ this.logic= logic;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -228,9 +222,7 @@ this.logic= logic;
 ;
     
 
-    var request: HttpServletRequest = this.pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -409,9 +401,7 @@ this.logic= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doEndTag();
-
-                        ;
+                        return super.doEndTag();;
     
 }
 

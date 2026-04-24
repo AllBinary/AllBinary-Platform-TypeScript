@@ -224,9 +224,7 @@ totalWeight!.add(weightFloat!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return totalWeight!.toString();
-
-                        ;
+                        return totalWeight!.toString();;
     
 }
 
@@ -270,9 +268,7 @@ totalWeight!.add(weightFloat!.toString());
     public getNumberOf(product: string): Integer{
 var product = product
 
-    var numStr: string = this.items.get(product);
-
-                         as String;
+    var numStr: string = this.items.get(product); as String;
         
         
 ;
@@ -281,9 +277,7 @@ var product = product
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(numStr));
-
-                        ;
+                        return Integer(Integer.valueOf(numStr));;
     
 }
 
@@ -320,9 +314,7 @@ var product = product
 ;
     
 
-    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance();
-
-                         as InventoryEntity;
+    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance(); as InventoryEntity;
         
         
 ;

@@ -36,6 +36,9 @@ import { BaseImageAnimationFactory } from "../../../../../org/allbinary/animatio
 import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -62,7 +65,7 @@ export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFacto
         
         
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
     //var width = width
     //var height = height
@@ -73,10 +76,6 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
 }
 
 public constructor (image: Image, dx: number){
@@ -146,7 +145,7 @@ public constructor (width: number, height: number, image: Image){
 }
 
 public constructor (width: number, height: number, image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                         //var width = width
     //var height = height
     //var image = image
@@ -167,7 +166,7 @@ public constructor (image: Image){
 }
 
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, image.getHeight(), image.getHeight(), animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
                         //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 

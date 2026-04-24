@@ -82,9 +82,9 @@ var height = height
         
 ;
     
-this.point= pointFactory!.getInstance(x, y);
+this.point= pointFactory!.getInstance0(x, y);
     
-this.midPoint= pointFactory!.getInstance(x +(width>>1), y +(height>>1));
+this.midPoint= pointFactory!.getInstance0(x +(width>>1), y +(height>>1));
     
 }
 

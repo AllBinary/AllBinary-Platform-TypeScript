@@ -88,9 +88,7 @@ public constructor (motionRectangles: MotionRectangles){
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index);
-
-                         as MotionRectangle;
+    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
         
         
 ;
@@ -136,9 +134,7 @@ this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMot
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index);
-
-                         as MotionRectangle;
+    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
         
         
 ;
@@ -154,9 +150,7 @@ index < size; index++)
 i < vector.length; i++)
         {
 
-    var motionRectangle2: MotionRectangle = vector.get(i);
-
-                         as MotionRectangle;
+    var motionRectangle2: MotionRectangle = vector.get(i); as MotionRectangle;
         
         
 ;

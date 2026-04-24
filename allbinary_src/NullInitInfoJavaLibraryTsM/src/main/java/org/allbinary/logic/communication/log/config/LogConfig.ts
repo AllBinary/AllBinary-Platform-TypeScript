@@ -33,6 +33,9 @@ import { BooleanUtil } from "../../../../../../org/allbinary/logic/java/bool/Boo
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
@@ -225,7 +228,7 @@ this.fileName= value;
             
     public getTypeVector(): BasicArrayList{
 
-    var logKeyVector: BasicArrayList = new BasicArrayList();
+    var logKeyVector: BasicArrayList = new BasicArrayListD();
         
         
 ;

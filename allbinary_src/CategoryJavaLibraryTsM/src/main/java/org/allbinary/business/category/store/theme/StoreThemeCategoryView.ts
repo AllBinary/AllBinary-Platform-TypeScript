@@ -80,17 +80,13 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface();
-
-                         as StoreThemeCategoryInterface;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface(); as StoreThemeCategoryInterface;
         
         
 ;
     
 
-    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray();
-
-                         as Array<ThemeValidation?>;
+    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray(); as Array<ThemeValidation?>;
         
         
 ;

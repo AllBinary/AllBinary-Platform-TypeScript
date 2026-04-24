@@ -86,9 +86,7 @@ public constructor (){
     
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -97,9 +95,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 

@@ -108,17 +108,11 @@ this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap
 
                                     }
                                 
-this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT);
-
-                         as String);
+this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String);
     
-this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD);
-
-                         as String);
+this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String);
     
-this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER);
-
-                         as String);
+this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String);
     
 this.log();
     

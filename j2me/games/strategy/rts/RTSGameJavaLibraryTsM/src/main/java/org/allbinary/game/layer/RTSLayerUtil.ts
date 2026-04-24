@@ -484,9 +484,7 @@ var list = list
         
 index >= 0; index--)
         {
-rtsLayer= list.get(index);
-
-                         as RTSLayer;
+rtsLayer= list.get(index); as RTSLayer;
     
 rtsLayer!.setDestroyed(true);
     

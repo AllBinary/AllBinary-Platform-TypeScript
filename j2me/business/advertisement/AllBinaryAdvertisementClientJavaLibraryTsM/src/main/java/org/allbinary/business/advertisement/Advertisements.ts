@@ -27,6 +27,9 @@ import { LockedUtil } from "../../../../org/allbinary/logic/system/security/lice
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -53,20 +56,18 @@ export class Advertisements
          {
         
 
-    private readonly bannerList: BasicArrayList = new BasicArrayList();
+    private readonly bannerList: BasicArrayList = new BasicArrayListD();
         
         
 
-    private readonly pageList: BasicArrayList = new BasicArrayList();
+    private readonly pageList: BasicArrayList = new BasicArrayListD();
         
         
 
     public addPage(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-                        if(!this.pageList!.contains(advertisementProcessorInterface);
-
-                        )
+                        if(!this.pageList!.contains(advertisementProcessorInterface);)
                         
                                     {
                                     this.pageList!.add(advertisementProcessorInterface);
@@ -177,9 +178,7 @@ advertisementProcessorInterface!.stop();
     public addBanner(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-                        if(!this.bannerList!.contains(advertisementProcessorInterface);
-
-                        )
+                        if(!this.bannerList!.contains(advertisementProcessorInterface);)
                         
                                     {
                                     this.bannerList!.add(advertisementProcessorInterface);

@@ -128,9 +128,7 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
     
 
     var result: Integer = method.invoke(this.getHelper(), 
-                            null);
-
-                         as Integer;
+                            null); as Integer;
         
         
 ;
@@ -139,9 +137,7 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result.toInt();
-
-                        ;
+                        return result.toInt();;
     
 
                 //: 
@@ -185,9 +181,7 @@ this.setHelper();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.process();
-
-                        ;
+                        return this.process();;
     
 
                 //: 

@@ -24,6 +24,9 @@ import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKey
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -62,7 +65,7 @@ export class NoPlayerGameInput extends PlayerGameInput {
 }
 
 private constructor (){
-            super(new BasicArrayList(),  -1);
+            super(new BasicArrayListD(),  -1);
                     
 
                             //For kotlin this is before the body of the constructor.

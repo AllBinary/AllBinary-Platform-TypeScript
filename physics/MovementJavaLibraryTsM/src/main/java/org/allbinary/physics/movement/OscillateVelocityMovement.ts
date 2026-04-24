@@ -59,11 +59,7 @@ export class OscillateVelocityMovement extends BasicConstantVelocityMovement {
 
     private oscillatePositive: boolean= false
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number){
-            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled();
-
-                        , speedBasicDecimal!.getUnscaled();
-
-                        ));
+            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled(), speedBasicDecimal!.getUnscaled()));
                     var speedBasicDecimal = speedBasicDecimal
 var oscillateMin = oscillateMin
 var oscillateMax = oscillateMax

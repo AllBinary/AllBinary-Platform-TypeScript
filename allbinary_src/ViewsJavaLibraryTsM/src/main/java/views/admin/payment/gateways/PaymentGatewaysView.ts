@@ -135,9 +135,7 @@ var document = document
 index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index);
-
-                         as BasicPaymentType;
+    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index); as BasicPaymentType;
         
         
 ;
@@ -203,9 +201,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

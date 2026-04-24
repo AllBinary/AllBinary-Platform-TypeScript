@@ -75,9 +75,7 @@ var direction = direction
                     
 this.lifeInterface= lifeInterface;
     
-this.xArray= new Array(this.getLifeInterface()!.getMaxlives();
-
-                        );
+this.xArray= new Array(this.getLifeInterface()!.getMaxlives(););
     
 this.update();
     
@@ -103,9 +101,7 @@ this.update();
                         
                                     {
                                     
-    var maxLives: number = this.getLifeInterface()!.getMaxlives();
-
-                        ;
+    var maxLives: number = this.getLifeInterface()!.getMaxlives();;
         
         
 ;
@@ -146,9 +142,7 @@ var graphics = graphics
 
 
                         for (
-    var index: number = this.getLifeInterface()!.get();
-
-                        ;
+    var index: number = this.getLifeInterface()!.get();;
         
         
 --index >= 0; )

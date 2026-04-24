@@ -27,22 +27,13 @@ import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
-
-    
 import { IndexedAnimation } from "../../../../../org/allbinary/animation/IndexedAnimation.js";
 
     
 import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
 
     
-import { NullIndexedAnimationFactory } from "../../../../../org/allbinary/animation/NullIndexedAnimationFactory.js";
-
-    
 import { CollidableBaseBehavior } from "../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
-
-    
-import { ExplosionResources } from "../../../../../org/allbinary/game/combat/damage/ExplosionResources.js";
 
     
 import { DestroyedLayerProcessor } from "../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js";
@@ -152,33 +143,6 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
         
 
     private readonly multiPlayerType: number
-protected constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
-            this(name, movement, animationInterface, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.getProcedural(ExplosionResources.getInstance()!.THIRD_EXPLOSION_RESOURCE)!.getInstance(NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0)), rectangle, viewPosition);
-                        //var name = name
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-protected constructor (name: string, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
-            this(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, destroyedAnimationInterface, rectangle, viewPosition);
-                        //var name = name
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var destroyedAnimationInterface = destroyedAnimationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                         //var name = name
@@ -214,9 +178,7 @@ this.multiPlayerType= multiPlayerType;
 var collidableInferface = collidableInferface
 super.setCollidableInferface(collidableInferface);
     
-this.collidableWeaponBehavior= this.getCollidableInferface();
-
-                         as CollidableWeaponBehavior;
+this.collidableWeaponBehavior= this.getCollidableInferface(); as CollidableWeaponBehavior;
     
 }
 
@@ -308,9 +270,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(this.isExhausted() && !this.isDestroyed();
-
-                        )
+                        if(this.isExhausted() && !this.isDestroyed();)
                         
                                     {
                                     
@@ -318,9 +278,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface();
-
-                         as IndexedAnimation;
+    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface(); as IndexedAnimation;
         
         
 ;
@@ -351,9 +309,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface();
-
-                         as CollidableWeaponBehavior;
+    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface(); as CollidableWeaponBehavior;
         
         
 ;
@@ -445,9 +401,7 @@ this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompe
     public getDamage(damageType: number): number{
 var damageType = damageType
 
-                        if(!this.isExhausted();
-
-                        )
+                        if(!this.isExhausted();)
                         
                                     {
                                     
@@ -613,9 +567,7 @@ this.movement= movement;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getStaticType();
-
-                        ;
+                        return getStaticType();;
     
 }
 

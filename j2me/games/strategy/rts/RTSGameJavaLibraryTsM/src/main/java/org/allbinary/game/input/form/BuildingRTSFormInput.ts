@@ -272,9 +272,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dropCellPositionHistory!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition());
-
-                        ;
+                        return dropCellPositionHistory!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition());;
     
 }
 
@@ -288,9 +286,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 ;
     
 
-    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface();
-
-                         as DemoLockedWithCostLayerInterfaceFactoryInterface;
+    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface(); as DemoLockedWithCostLayerInterfaceFactoryInterface;
         
         
 ;
@@ -389,9 +385,7 @@ LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getFor
                         
                                     {
                                     
-                        if(!this.isPositionBlocked();
-
-                        )
+                        if(!this.isPositionBlocked();)
                         
                                     {
                                     
@@ -401,17 +395,13 @@ LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getFor
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory();
-
-                         as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
         
         
 ;
     
 
-                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType);
-
-                        )
+                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType);)
                         
                                     {
                                     
@@ -458,9 +448,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(buildOnPathGameNotificationEvent);
@@ -478,9 +466,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(spotTakenGameNotificationEvent);
@@ -498,9 +484,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(selectBuildSpotGameNotificationEvent);
@@ -537,9 +521,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-                        if(!this.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);
-
-                        )
+                        if(!this.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);)
                         
                                     {
                                     
@@ -577,14 +559,10 @@ index >= 0; index--)
         
 ;
     
-geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index);
-
-                         as GeographicMapCellPosition);
+geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index) as GeographicMapCellPosition);
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory();
-
-                         as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
         
         
 ;
@@ -596,9 +574,7 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(ind
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(roadCollisionGameNotificationEvent);
@@ -674,9 +650,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
@@ -720,9 +694,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(buildingCollisionGameNotificationEvent);
@@ -746,9 +718,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(structureToCloseCollisionGameNotificationEvent);
@@ -773,9 +743,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(mapEdgeGameNotificationEvent);
@@ -825,9 +793,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 this.dropCellPositionHistory!.add(occupyList, layerInterface);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput();
-
-                         as RTSPlayerGameInput;
+    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
         
         
 ;
@@ -839,9 +805,7 @@ layerManager!.append(layerInterface);
 rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(buildingGameNotificationEvent);

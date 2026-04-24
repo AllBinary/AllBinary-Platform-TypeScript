@@ -126,13 +126,9 @@ this.getFormData();
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID);
-
-                         as String;
+this.id= hashMap!.get(BasicItemData.ID); as String;
     
-this.downloadItemId= hashMap!.get(DownloadItemData.ID);
-
-                         as String;
+this.downloadItemId= hashMap!.get(DownloadItemData.ID); as String;
     
 }
 
@@ -143,9 +139,7 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID);
             
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
-
-                        )
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
                         
                                     {
                                     
@@ -259,9 +253,7 @@ var document = document
 
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);
-
-                        )
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
                         
                                     {
                                     stringBuffer!.append("Id is not valid.<br />");
@@ -314,9 +306,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

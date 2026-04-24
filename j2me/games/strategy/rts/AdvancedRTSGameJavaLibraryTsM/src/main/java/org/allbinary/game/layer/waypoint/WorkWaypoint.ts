@@ -141,9 +141,7 @@ public constructor (ownerLayer: PathFindingLayerInterface){
         
 --index >= 0; )
         {
-geologicalGeographicMapCellPosition= occupyList!.get(index);
-
-                         as GeologicalGeographicMapCellPosition;
+geologicalGeographicMapCellPosition= occupyList!.get(index); as GeologicalGeographicMapCellPosition;
     
 geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource();
     
@@ -154,9 +152,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
                                     outOfResources= false;
     
 
-    var maxResourceLoad: number = unitLayer!.getMaxResourceLoad();
-
-                        ;
+    var maxResourceLoad: number = unitLayer!.getMaxResourceLoad();;
         
         
 ;
@@ -171,9 +167,7 @@ unitLayer!.setLoad(maxResourceLoad);
 }
 
 
-    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable();
-
-                         as WaypointInfoHudPaintable;
+    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable(); as WaypointInfoHudPaintable;
         
         
 ;
@@ -192,9 +186,7 @@ unitLayer!.setLoad(maxResourceLoad);
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior();
-
-                         as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
         
         
 ;
@@ -206,9 +198,7 @@ unitLayer!.setLoad(maxResourceLoad);
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
-rtsLayer= this.getConnectedWaypointList()!.get(0);
-
-                         as RTSLayer;
+rtsLayer= this.getConnectedWaypointList()!.get(0); as RTSLayer;
     
 
                         if(rtsLayer!.isDestroyed())

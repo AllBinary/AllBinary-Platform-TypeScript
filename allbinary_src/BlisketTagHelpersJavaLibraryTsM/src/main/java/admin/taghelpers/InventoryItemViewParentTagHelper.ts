@@ -90,9 +90,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
-
-                         as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
         
         
 ;
@@ -159,9 +157,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
-
-                         as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
         
         
 ;
@@ -228,9 +224,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper();
-
-                         as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
         
         
 ;

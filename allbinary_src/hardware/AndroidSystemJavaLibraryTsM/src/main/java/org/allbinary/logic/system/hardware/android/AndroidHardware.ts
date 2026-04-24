@@ -59,6 +59,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -94,7 +97,7 @@ export class AndroidHardware
         
         
 
-    private componentInterfaceVector: BasicArrayList = new BasicArrayList();
+    private componentInterfaceVector: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -115,7 +118,13 @@ public constructor (){
         this.init(this.DEVICES);
     
 
-                        if(this.componentInterfaceVector!.size < this.MINHARDWARE)
+    var size: number = this.componentInterfaceVector!.size()!;
+        
+        
+;
+    
+
+                        if(size < this.MINHARDWARE)
                         
                                     {
                                     
@@ -176,7 +185,7 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT,
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath
-this.componentInterfaceVector= new BasicArrayList();
+this.componentInterfaceVector= new BasicArrayListD();
     
 
     var pciFile: FileReader = new FileReader(filePath);
@@ -224,9 +233,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentInterfaceVector!.get(index);
-
-                         as HardwareComponentInterface;
+                        return this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
     
 }
 
@@ -255,9 +262,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index);
-
-                         as HardwareComponentInterface;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
         
         
 ;
@@ -272,9 +277,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardwareBuffer!.toString();
-
-                        ;
+                        return hardwareBuffer!.toString();;
     
 }
 

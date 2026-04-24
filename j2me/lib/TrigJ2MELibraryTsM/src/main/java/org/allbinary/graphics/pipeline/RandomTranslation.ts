@@ -60,9 +60,7 @@ var howMuch = howMuch
 ;
     
 
-    var x: number =  -myRandomFactory!.getNextInt(howMuch);
-
-                        ;
+    var x: number =  -myRandomFactory!.getNextInt(howMuch);;
         
         
 ;
@@ -87,9 +85,7 @@ graphicsPipe!.translate(x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsPipe!.getMatrix();
-
-                        ;
+                        return graphicsPipe!.getMatrix();;
     
 }
 

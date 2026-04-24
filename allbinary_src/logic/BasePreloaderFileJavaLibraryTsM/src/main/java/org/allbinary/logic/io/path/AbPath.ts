@@ -121,9 +121,7 @@ public constructor (aPath: string){
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aPath);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aPath);)
                         
                                     {
                                     this.schema= this.getSchema(aPath);
@@ -155,9 +153,7 @@ var name = name
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aPath);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aPath);)
                         
                                     {
                                     this.schema= this.getSchema(aPath);
@@ -173,9 +169,7 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
                             init();
     
 
-                        if(!stringValidationUtil!.isEmpty(name);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(name);)
                         
                                     {
                                     this.nameP= name;
@@ -217,9 +211,7 @@ var aPath = aPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return aPath!.substring(0, beginIndex);
-
-                        ;
+                        return aPath!.substring(0, beginIndex);;
     
 
                                     }
@@ -262,9 +254,7 @@ var aPath = aPath
 ;
     
 
-                        if(!this.hasSchema();
-
-                        )
+                        if(!this.hasSchema();)
                         
                                     {
                                     tempPath= this.abPathUtil!.adjustStart(tempPath);
@@ -365,9 +355,7 @@ stringBuffer!.append(this.nameP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -403,9 +391,7 @@ stringBuffer!.append(this.nameP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                                     }

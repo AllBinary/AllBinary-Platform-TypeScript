@@ -46,30 +46,34 @@ export class CustomGPoint extends GPoint {
         
         
 
+    public static getInstance(point: GPoint): CustomGPoint{
+    //var point = point
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new CustomGPoint(point.getX(), point.getY(), point.getZ());
+    
+}
+
+
+    public static getInstance3(x: number, y: number): CustomGPoint{
+    //var x = x
+    //var y = y
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new CustomGPoint(x, y, 3);
+    
+}
+
+
     private x: number= 0
 
     private y: number= 0
 
     private z: number= 0
-private constructor (point: GPoint){
-            super(point);
-                    var point = point
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (x: number, y: number){
-            super(x, y);
-                    var x = x
-var y = y
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
                     var x = x

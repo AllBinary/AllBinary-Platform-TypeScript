@@ -159,9 +159,7 @@ var functionName = functionName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.put(specialMessage, anyType, functionName, 
-                            null);
-
-                        ;
+                            null);;
     
 }
 
@@ -217,9 +215,7 @@ var functionName = functionName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.put(specialMessage, className, functionName, 
-                            null);
-
-                        ;
+                            null);;
     
 }
 

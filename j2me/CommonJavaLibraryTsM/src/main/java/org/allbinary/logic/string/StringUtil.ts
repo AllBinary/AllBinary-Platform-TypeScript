@@ -177,9 +177,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType!.toString();
-
-                        ;
+                        return anyType!.toString();;
     
 
                                     }

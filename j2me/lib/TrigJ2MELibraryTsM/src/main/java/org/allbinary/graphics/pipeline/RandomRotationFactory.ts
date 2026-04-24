@@ -92,9 +92,7 @@ graphicsPipe!.rotate(this.angleFactory!.getInstance(getNextRandomAngle(howMuch))
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return graphicsPipe!.getMatrix();
-
-                        ;
+                        return graphicsPipe!.getMatrix();;
     
 }
 
@@ -105,9 +103,7 @@ var howMuch = howMuch
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myRandomFactory!.getNextInt(howMuch *10);
-
-                        ;
+                        return myRandomFactory!.getNextInt(howMuch *10);;
     
 }
 

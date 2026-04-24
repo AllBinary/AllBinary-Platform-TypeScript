@@ -24,6 +24,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -58,7 +61,7 @@ export class AbstractArrayListPool
         
         
 
-    buffers: BasicArrayList = new BasicArrayList();
+    buffers: BasicArrayList = new BasicArrayListD();
         
         
 

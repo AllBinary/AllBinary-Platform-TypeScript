@@ -97,9 +97,7 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 
-    var levelString: string = StringUtil.getInstance()!.getInstance(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL);
-
-                         as String)!;
+    var levelString: string = StringUtil.getInstance()!.getInstance(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as String)!;
         
         
 ;
@@ -128,9 +126,7 @@ this.setParent(parentCategoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.level.toString();
-
-                        ;
+                        return this.level.toString();;
     
 }
 

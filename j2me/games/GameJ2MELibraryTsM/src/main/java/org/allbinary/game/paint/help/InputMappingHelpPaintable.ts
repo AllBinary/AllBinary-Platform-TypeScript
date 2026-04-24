@@ -264,7 +264,7 @@ list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
         
 ;
     
-this.inputBasicColorArray[index]= new Array(size2);
+inputBasicColorArray[index]= new Array(size2);
     
 
 
@@ -276,7 +276,7 @@ this.inputBasicColorArray[index]= new Array(size2);
         
 index2 < size2; index2++)
         {
-this.inputBasicColorArray[index]![index2]= this.basicColor;
+inputBasicColorArray[index]![index2]= this.basicColor;
     
 }
 
@@ -304,7 +304,7 @@ actionBasicColor[index]= this.selectedBasicColor;
     
 this.logUtil!.putF(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
     
-this.inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
+inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
     
 
                                     }
@@ -408,9 +408,7 @@ stringBuffer!.append(key.getName());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

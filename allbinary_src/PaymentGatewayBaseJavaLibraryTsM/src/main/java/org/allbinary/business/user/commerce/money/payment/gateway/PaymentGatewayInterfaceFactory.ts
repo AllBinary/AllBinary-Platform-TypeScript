@@ -104,9 +104,7 @@ var httpServletRequest = httpServletRequest
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.getInstance(new RequestParams(httpServletRequest).
-                            toHashMap());
-
-                        ;
+                            toHashMap());;
     
 
                 //: 
@@ -146,9 +144,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(hashMap);
-
-                        ;
+                        return this.getInstance(hashMap);;
     
 }
 
@@ -166,9 +162,7 @@ var hashMap = hashMap
 
         try {
             
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString());
-
-                         as String;
+    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()); as String;
         
         
 ;
@@ -198,9 +192,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paymentGatewayInterfaceFactoryInterface!.getInstance(hashMap);
-
-                        ;
+                        return paymentGatewayInterfaceFactoryInterface!.getInstance(hashMap);;
     
 
                 //: 

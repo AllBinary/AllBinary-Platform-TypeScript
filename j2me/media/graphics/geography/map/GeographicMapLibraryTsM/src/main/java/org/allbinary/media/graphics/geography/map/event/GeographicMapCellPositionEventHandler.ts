@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { MiniMapLayer } from "../../../../../../../org/allbinary/game/layer/geographic/map/MiniMapLayer.js";
 
     
@@ -72,7 +75,7 @@ export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -84,9 +87,7 @@ private constructor (){
     public addListener(miniMapLayer: MiniMapLayer){
 var miniMapLayer = miniMapLayer
 
-                        if(!this.list.contains(miniMapLayer);
-
-                        )
+                        if(!this.list.contains(miniMapLayer);)
                         
                                     {
                                     this.list.add(miniMapLayer);
@@ -131,9 +132,7 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index);
-
-                         as MiniMapLayer;
+    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
         
         
 ;
@@ -179,9 +178,7 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index);
-
-                         as MiniMapLayer;
+    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
         
         
 ;
@@ -224,9 +221,7 @@ index < size; index++)
         {
 
         try {
-            eventListenerInterface= list.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= list.get(index); as EventListenerInterface;
     
 geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
     

@@ -59,9 +59,7 @@ public constructor (source: any = {}){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getSource();
-
-                        ;
+                        return super.getSource();;
     
 }
 
@@ -71,18 +69,14 @@ public constructor (source: any = {}){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.toString();
-
-                        ;
+                        return super.toString();;
     
 }
 
 
     public getCommand(): string{
 
-    var myEventSource: MyCanvasEventSource = this.getSource();
-
-                         as MyCanvasEventSource;
+    var myEventSource: MyCanvasEventSource = this.getSource(); as MyCanvasEventSource;
         
         
 ;
@@ -91,18 +85,14 @@ public constructor (source: any = {}){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myEventSource!.getCommand();
-
-                        ;
+                        return myEventSource!.getCommand();;
     
 }
 
 
     public getTreeNode(): MutableTreeNode{
 
-    var myEventSource: MyCanvasEventSource = this.getSource();
-
-                         as MyCanvasEventSource;
+    var myEventSource: MyCanvasEventSource = this.getSource(); as MyCanvasEventSource;
         
         
 ;
@@ -111,18 +101,14 @@ public constructor (source: any = {}){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myEventSource!.getTreeNode();
-
-                        ;
+                        return myEventSource!.getTreeNode();;
     
 }
 
 
     public getAngle(): number{
 
-    var myEventSource: MyCanvasEventSource = this.getSource();
-
-                         as MyCanvasEventSource;
+    var myEventSource: MyCanvasEventSource = this.getSource(); as MyCanvasEventSource;
         
         
 ;
@@ -131,9 +117,7 @@ public constructor (source: any = {}){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myEventSource!.getAngle();
-
-                        ;
+                        return myEventSource!.getAngle();;
     
 }
 

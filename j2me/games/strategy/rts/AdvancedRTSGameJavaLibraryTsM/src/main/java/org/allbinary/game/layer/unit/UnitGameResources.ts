@@ -167,9 +167,7 @@ this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.getInstance()!.getString(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);
-
-                        ;
+                        return GameGraphicsResourceUtil.getInstance()!.getString(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);;
     
 
                                     }
@@ -179,9 +177,7 @@ this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getString();
-
-                        ;
+                        return super.getString();;
     
 
                         }

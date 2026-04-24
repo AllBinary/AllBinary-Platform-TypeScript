@@ -90,9 +90,7 @@ documentString= remove(documentString, XMLJSPROOTENDSTART, XMLEND);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return replaceXmlRoot!.all(documentString);
-
-                        ;
+                        return replaceXmlRoot!.all(documentString);;
     
 }
 
@@ -103,9 +101,7 @@ var documentString = documentString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return remove(documentString, XMLROOTSTART, XMLROOTEND);
-
-                        ;
+                        return remove(documentString, XMLROOTSTART, XMLROOTEND);;
     
 }
 

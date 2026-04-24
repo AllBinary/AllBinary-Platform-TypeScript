@@ -105,7 +105,7 @@ export class RTSScrollSelectionFormFactory
 ;
     
 
-    var menuRectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(menuX, 16), width, CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
+    var menuRectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance0(menuX, 16), width, CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
         
         
 ;

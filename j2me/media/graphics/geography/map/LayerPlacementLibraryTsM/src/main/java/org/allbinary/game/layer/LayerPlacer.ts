@@ -173,13 +173,9 @@ this.process(layerPlacementInterface);
 
         while(enumeration.hasMoreElements())
         {
-point= enumeration.nextElement()!;
-
-                         as GPoint;
+point= enumeration.nextElement()!; as GPoint;
     
-layerHashtable= hashtable.get(point as Object);
-
-                         as Hashtable<any, any>;
+layerHashtable= hashtable.get(point as Object); as Hashtable<any, any>;
     
 x= point.getX() +relativePoint!.getX();
     
@@ -200,6 +196,12 @@ this.layerInterfaceVisitor!.visit(layerInterface);
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
     //var layerPlacementInterface = layerPlacementInterface
+
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
 
     var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;
         
@@ -238,9 +240,7 @@ this.layerInterfaceVisitor!.visit(layerInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance()!.getInstance(x, y);
-
-                        ;
+                        return pointFactory!.getInstance0(x, y);;
     
 
                                     }
@@ -277,9 +277,7 @@ this.layerInterfaceVisitor!.visit(layerInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance()!.getInstance(x, y);
-
-                        ;
+                        return pointFactory!.getInstance0(x, y);;
     
 
                                     }

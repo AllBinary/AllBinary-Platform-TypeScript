@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -45,7 +48,7 @@ export class LogConfigTypes
          {
         
 
-    public LOGGING: BasicArrayList = new BasicArrayList();
+    public LOGGING: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){

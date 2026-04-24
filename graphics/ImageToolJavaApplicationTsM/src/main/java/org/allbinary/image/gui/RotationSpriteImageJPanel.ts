@@ -159,17 +159,13 @@ new object: Thread()
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem();
-
-                         as String))!;
+    var totalFrames: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as String))!;
         
         
 ;
     
 
-    var totalAngle: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem();
-
-                         as String))!;
+    var totalAngle: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as String))!;
         
         
 ;
@@ -187,9 +183,7 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
 ;
     
 
-                        if(!this@RotationSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();
-
-                        )
+                        if(!this@RotationSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();)
                         
                                     {
                                     

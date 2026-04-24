@@ -130,9 +130,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return nodeTextNode!.getNodeValue();
-
-                        ;
+                        return nodeTextNode!.getNodeValue();;
     
 
                                     }
@@ -165,9 +163,7 @@ var nodeList = nodeList
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomNodeHelper.getTextNodeValue(node);
-
-                        ;
+                        return DomNodeHelper.getTextNodeValue(node);;
     
 }
 
@@ -226,9 +222,7 @@ index < nodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

@@ -128,9 +128,7 @@ var storeFrontInterface = storeFrontInterface
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);
-
-                         as UserEmailEventHandler;
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object); as UserEmailEventHandler;
         
         
 ;

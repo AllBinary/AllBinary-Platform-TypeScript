@@ -183,9 +183,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                                     }
                                 
 
-    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface();
-
-                         as TransformInfoHttp;
+    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface(); as TransformInfoHttp;
         
         
 ;
@@ -206,9 +204,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.generate(objectConfigDocumentString, replaceHashMap);
-
-                        ;
+                        return this.generate(objectConfigDocumentString, replaceHashMap);;
     
 }
 
@@ -279,9 +275,7 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
 ;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL);
-
-                         as String)!;
+    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as String)!;
         
         
 ;

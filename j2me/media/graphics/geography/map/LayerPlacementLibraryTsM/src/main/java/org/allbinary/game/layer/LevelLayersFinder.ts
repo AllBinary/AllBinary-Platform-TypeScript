@@ -35,6 +35,9 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -82,7 +85,7 @@ var hashtable = hashtable
 ;
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -97,19 +100,13 @@ var hashtable = hashtable
         while(enumeration.hasMoreElements())
         {
 
-    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()!;
-
-                         as Object);
-
-                         as Hashtable<any, any>;
+    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()! as Object); as Hashtable<any, any>;
         
         
 ;
     
 
-    var integer: Integer = layerHashtable!.get(Layer.ID as Object);
-
-                         as Integer;
+    var integer: Integer = layerHashtable!.get(Layer.ID as Object); as Integer;
         
         
 ;
@@ -121,9 +118,7 @@ var hashtable = hashtable
 ;
     
 
-                        if(!list.contains(cachedInteger);
-
-                        )
+                        if(!list.contains(cachedInteger);)
                         
                                     {
                                     list.add(cachedInteger);

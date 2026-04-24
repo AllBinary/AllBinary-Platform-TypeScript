@@ -139,21 +139,13 @@ private constructor (){
     //var y = y
     //var z = z
 
-    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(0);
-
-                         as Object);
-
-                         as AllBinaryLayer;
+    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(0) as Object); as AllBinaryLayer;
         
         
 ;
     
 
-    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(1);
-
-                         as Object);
-
-                         as Integer;
+    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(1) as Object); as Integer;
         
         
 ;
@@ -162,11 +154,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, angle.toInt();
-
-                        , 0, weaponProperties, sourceLayerInterface as ScoreableInterface);
-
-                        ;
+                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, angle.toInt(), 0, weaponProperties, sourceLayerInterface as ScoreableInterface);;
     
 }
 

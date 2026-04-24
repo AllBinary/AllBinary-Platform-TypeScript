@@ -94,9 +94,7 @@ this.delay= delay;
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface();
-
-                         as TimeFiredInterface;
+    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface(); as TimeFiredInterface;
         
         
 ;

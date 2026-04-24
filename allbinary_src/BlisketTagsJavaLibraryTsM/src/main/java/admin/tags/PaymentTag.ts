@@ -120,9 +120,7 @@ this.storeName= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -224,9 +222,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                         }

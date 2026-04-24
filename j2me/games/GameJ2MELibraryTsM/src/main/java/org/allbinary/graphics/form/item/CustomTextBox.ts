@@ -234,9 +234,7 @@ graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayI
 graphics.setColor(this.foregroundColor);
     
 
-                        if(!J2MEUtil.isJ2ME();
-
-                        )
+                        if(!J2MEUtil.isJ2ME();)
                         
                                     {
                                     graphics.drawString(this.getTitle(), 8, 1, 0);

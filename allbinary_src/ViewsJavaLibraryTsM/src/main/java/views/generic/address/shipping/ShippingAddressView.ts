@@ -88,16 +88,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
-
-                         as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
         
         
 ;
     
-this.request= httpTransformInfoInterface!.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -173,9 +169,7 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

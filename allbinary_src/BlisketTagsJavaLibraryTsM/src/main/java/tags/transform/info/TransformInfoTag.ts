@@ -247,9 +247,7 @@ this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                 //: 

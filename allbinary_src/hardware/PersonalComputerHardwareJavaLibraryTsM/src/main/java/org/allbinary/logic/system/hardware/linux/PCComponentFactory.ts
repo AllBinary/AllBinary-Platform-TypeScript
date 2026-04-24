@@ -275,9 +275,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.ETHERNET.toString();
-
-                        ;
+                        return this.componentFactory!.ETHERNET.toString();;
     
 
                                     }
@@ -290,9 +288,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.BRIDGE.toString();
-
-                        ;
+                        return this.componentFactory!.BRIDGE.toString();;
     
 
                                     }
@@ -305,9 +301,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.IDE.toString();
-
-                        ;
+                        return this.componentFactory!.IDE.toString();;
     
 
                                     }
@@ -320,9 +314,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.MULTIMEDIA.toString();
-
-                        ;
+                        return this.componentFactory!.MULTIMEDIA.toString();;
     
 
                                     }
@@ -335,9 +327,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.SCSI.toString();
-
-                        ;
+                        return this.componentFactory!.SCSI.toString();;
     
 
                                     }
@@ -350,9 +340,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.USB.toString();
-
-                        ;
+                        return this.componentFactory!.USB.toString();;
     
 
                                     }
@@ -365,9 +353,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.VGA.toString();
-
-                        ;
+                        return this.componentFactory!.VGA.toString();;
     
 
                                     }
@@ -380,9 +366,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.PCI.toString();
-
-                        ;
+                        return this.componentFactory!.PCI.toString();;
     
 
                                     }
@@ -391,9 +375,7 @@ var component = component
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentFactory!.UNKNOWN.toString();
-
-                        ;
+                        return this.componentFactory!.UNKNOWN.toString();;
     
 }
 

@@ -33,6 +33,12 @@ import { RandomTranslation } from "../../../org/allbinary/graphics/pipeline/Rand
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
+import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -136,9 +142,7 @@ points[index]![1]= point.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getInstance(list, points, howMuch, type);
-
-                        ;
+                        return getInstance(list, points, howMuch, type);;
     
 }
 
@@ -186,7 +190,7 @@ var startFrame = startFrame
 
         try {
             
-    var pointsBasicArrayList: BasicArrayList = new BasicArrayList(howMuch);
+    var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(howMuch);
         
         
 ;
@@ -266,7 +270,7 @@ var type = type
 ;
     
 
-    var pointBasicArrayList: BasicArrayList = new BasicArrayList();
+    var pointBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -275,7 +279,7 @@ var type = type
         while(index < points.length)
         {
 
-    var sectionBasicArrayList: BasicArrayList = new BasicArrayList();
+    var sectionBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -378,7 +382,7 @@ var points = points
                                     }
                                 
 
-    var firstPointBasicArrayList: BasicArrayList = new BasicArrayList(points.length);
+    var firstPointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);
         
         
 ;
@@ -393,7 +397,7 @@ var points = points
         
 index < points.length; index++)
         {
-firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance(points[index]![0]!, points[index]![1]!));
+firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance0(points[index]![0]!, points[index]![1]!));
     
 }
 

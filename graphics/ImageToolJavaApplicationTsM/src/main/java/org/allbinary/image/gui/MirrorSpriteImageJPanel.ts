@@ -165,9 +165,7 @@ this@MirrorSpriteImageJPanel.getParent()!.repaint();
 ;
     
 
-                        if(!this@MirrorSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();
-
-                        )
+                        if(!this@MirrorSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();)
                         
                                     {
                                     

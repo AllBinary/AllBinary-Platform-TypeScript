@@ -133,9 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -230,9 +228,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
 ;
     
 
-                        if(!categoryFile!.isDirectory();
-
-                        )
+                        if(!categoryFile!.isDirectory();)
                         
                                     {
                                     
@@ -384,9 +380,7 @@ var document = document
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -450,9 +444,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!categoryFile!.isDirectory();
-
-                        )
+                        if(!categoryFile!.isDirectory();)
                         
                                     {
                                     stringBuffer!.append("Category ");
@@ -535,9 +527,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -583,9 +573,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     
@@ -617,11 +605,7 @@ var size = size
 ;
     
 
-                        if(!uploadMedia!.isWriterSupported(extension);
-
-                         && !uploadMedia!.isReaderSupported(extension);
-
-                        )
+                        if(!uploadMedia!.isWriterSupported(extension); && !uploadMedia!.isReaderSupported(extension);)
                         
                                     {
                                     
@@ -743,9 +727,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     stringBuffer!.append("FileName must be >");
@@ -781,11 +763,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!uploadMedia!.isWriterSupported(extension);
-
-                         && !uploadMedia!.isReaderSupported(extension);
-
-                        )
+                        if(!uploadMedia!.isWriterSupported(extension); && !uploadMedia!.isReaderSupported(extension);)
                         
                                     {
                                     stringBuffer!.append("Image type: ");

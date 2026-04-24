@@ -103,9 +103,7 @@ private constructor (){
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
-
-                         as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
         
         
 ;
@@ -163,9 +161,7 @@ params[1]= pageContext as Object;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params);
-
-                         as StoreWorkFlowInterface;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params); as StoreWorkFlowInterface;
     
 
                 //: 
@@ -176,9 +172,7 @@ params[1]= pageContext as Object;
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
-
-                         as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
         
         
 ;
@@ -222,9 +216,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME);
-
-                         as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
         
         
 ;

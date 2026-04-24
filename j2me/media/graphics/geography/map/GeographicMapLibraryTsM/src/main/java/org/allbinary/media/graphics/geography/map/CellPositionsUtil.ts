@@ -18,13 +18,13 @@
 
 
 
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+
+    
+import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArrayListS.js";
 
     
 
@@ -151,7 +151,7 @@ reusableList!.add(geographicMapCellPosition);
 }
 
 
-    private readonly reusableSingleThreadedSurroundingList: BasicArrayList = new BasicArrayList(8);
+    private readonly reusableSingleThreadedSurroundingList: BasicArrayList = new BasicArrayListS(8);
         
         
 
@@ -174,9 +174,7 @@ reusableList!.clear();
 index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index);
-
-                         as GeographicMapCellPosition;
+    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index); as GeographicMapCellPosition;
         
         
 ;
@@ -198,19 +196,13 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2);
-
-                         as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2); as GeographicMapCellPosition;
         
         
 ;
     
 
-                        if(!reusableList!.contains(geographicMapCellPosition);
-
-                         && !occupyList!.contains(geographicMapCellPosition);
-
-                        )
+                        if(!reusableList!.contains(geographicMapCellPosition); && !occupyList!.contains(geographicMapCellPosition);)
                         
                                     {
                                     reusableList!.add(geographicMapCellPosition);

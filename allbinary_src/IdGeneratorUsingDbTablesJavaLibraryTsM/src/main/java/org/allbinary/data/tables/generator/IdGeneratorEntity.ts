@@ -125,9 +125,7 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE);
-
-                         as String;
+    var value: string = hashMap!.get(this.VALUE); as String;
         
         
 ;
@@ -136,9 +134,7 @@ keysAndValues!.put(this.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Long.parseLong(value);
-
-                        ;
+                        return Long.parseLong(value);;
     
 }
 
@@ -201,9 +197,7 @@ this.update(map);
 
     public update(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-super.updateWhere(NAME, hashMap!.get(NAME as Object);
-
-                         as String, hashMap);
+super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap);
     
 }
 
@@ -229,9 +223,7 @@ super.updateWhere(NAME, hashMap!.get(NAME as Object);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

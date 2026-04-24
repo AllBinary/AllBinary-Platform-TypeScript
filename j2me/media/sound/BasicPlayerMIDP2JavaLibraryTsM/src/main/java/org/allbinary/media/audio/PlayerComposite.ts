@@ -142,9 +142,7 @@ this.player.deallocate();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.getContentType();
-
-                        ;
+                        return this.player.getContentType();;
     
 }
 
@@ -154,9 +152,7 @@ this.player.deallocate();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.getDuration();
-
-                        ;
+                        return this.player.getDuration();;
     
 }
 
@@ -166,9 +162,7 @@ this.player.deallocate();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.getMediaTime();
-
-                        ;
+                        return this.player.getMediaTime();;
     
 }
 
@@ -179,9 +173,7 @@ this.player.deallocate();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return 
-                                    (player as TimeBaseInterface).getTimeBase();
-
-                        ;
+                                    (player as TimeBaseInterface).getTimeBase();;
     
 }
 
@@ -235,9 +227,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "realize", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.getState();
-
-                        ;
+                        return this.player.getState();;
     
 }
 
@@ -257,9 +247,7 @@ var now = now
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.setMediaTime(now);
-
-                        ;
+                        return this.player.setMediaTime(now);;
     
 
                 //: 
@@ -327,9 +315,7 @@ var controlType = controlType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.player.getControl(controlType);
-
-                        ;
+                        return this.player.getControl(controlType);;
     
 }
 
@@ -339,9 +325,7 @@ var controlType = controlType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getControls();
-
-                        ;
+                        return this.getControls();;
     
 }
 

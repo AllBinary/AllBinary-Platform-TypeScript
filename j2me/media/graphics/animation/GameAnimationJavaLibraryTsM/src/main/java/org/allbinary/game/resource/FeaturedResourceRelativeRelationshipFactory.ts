@@ -36,6 +36,9 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -137,9 +140,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.duplicate(list, layer);
-
-                        ;
+                        return this.duplicate(list, layer);;
     
 
                                     }
@@ -160,10 +161,16 @@ index < size; index++)
                 //@Throws(Error::class)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
-var list = list
+    //var list = list
 var layer = layer
 
-    var newList: BasicArrayList = new BasicArrayList();
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
+
+    var newList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -190,7 +197,7 @@ index < size; index++)
         
 ;
     
-newList!.add(new RelativeLayerRelationship(layer, PointFactory.getInstance()!.getInstance(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
+newList!.add(new RelativeLayerRelationship(layer, pointFactory!.getInstance0(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
     
 }
 

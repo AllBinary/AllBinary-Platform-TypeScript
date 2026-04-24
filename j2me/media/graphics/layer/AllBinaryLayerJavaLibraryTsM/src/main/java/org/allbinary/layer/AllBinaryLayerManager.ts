@@ -125,9 +125,7 @@ index < size; index++)
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
 
-                        if(!this.contains(layerInterface);
-
-                        )
+                        if(!this.contains(layerInterface);)
                         
                                     {
                                     this.appendProcessors(layerInterface);
@@ -146,9 +144,7 @@ super.append(layerInterface);
     //var layerInterface = layerInterface
     //var index = index
 
-                        if(!this.contains(layerInterface);
-
-                        )
+                        if(!this.contains(layerInterface);)
                         
                                     {
                                     this.appendProcessors(layerInterface);

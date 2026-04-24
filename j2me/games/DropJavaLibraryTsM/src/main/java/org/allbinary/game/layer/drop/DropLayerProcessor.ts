@@ -109,9 +109,7 @@ index < size; index++)
         
 ;
     
-allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer();
-
-                         as AllBinaryLayer);
+allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer);
     
 }
 

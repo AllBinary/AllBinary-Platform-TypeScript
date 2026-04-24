@@ -120,9 +120,7 @@ var document = document
 index < size; index++)
         {
 
-    var email: Email = this.emailInfoVector!.get(index);
-
-                         as Email;
+    var email: Email = this.emailInfoVector!.get(index); as Email;
         
         
 ;
@@ -184,9 +182,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicErrorNodeUtil.get(document, error);
-
-                        ;
+                        return BasicErrorNodeUtil.get(document, error);;
     
 }
 

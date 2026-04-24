@@ -112,9 +112,7 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index);
-
-                         as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
         
         
 ;
@@ -131,7 +129,7 @@ pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
     public isValid(graphPath: GraphPath): boolean{
 var graphPath = graphPath
 
-                        if(graphPath!.getEdgeList()!.size > this.edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
+                        if(graphPath!.getEdgeList()!.size() > this.edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
                         
                                     {
                                     
@@ -165,7 +163,7 @@ var graphPath = graphPath
 ;
     
 
-                        if(graphPath!.getEdgeList()!.size < this.edgeMinimum)
+                        if(graphPath!.getEdgeList()!.size() < this.edgeMinimum)
                         
                                     {
                                     stringBuffer!.append("Ignoring Small: " +graphPath!.getEdgeList()!.size());
@@ -195,9 +193,7 @@ var graphPath = graphPath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

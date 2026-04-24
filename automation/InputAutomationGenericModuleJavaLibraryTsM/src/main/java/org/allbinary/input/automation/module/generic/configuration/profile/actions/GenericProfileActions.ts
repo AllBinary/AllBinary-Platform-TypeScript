@@ -398,9 +398,7 @@ var string = string
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getHashMap()!.get(string as Object);
-
-                         as GenericProfileAction;
+                        return this.getHashMap()!.get(string as Object); as GenericProfileAction;
     
 }
 
@@ -505,9 +503,7 @@ index < size; index++)
 ;
     
 
-    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName);
-
-                         as GenericProfileAction;
+    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName); as GenericProfileAction;
         
         
 ;

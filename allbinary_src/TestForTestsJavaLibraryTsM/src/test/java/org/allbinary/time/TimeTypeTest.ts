@@ -62,9 +62,7 @@ cal.set(Calendar.MILLISECOND, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cal.getTimeInMillis();
-
-                        ;
+                        return cal.getTimeInMillis();;
     
 }
 

@@ -140,9 +140,7 @@ this.propertyValueVector= new Vector();
 index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index);
-
-                         as Node;
+    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index); as Node;
         
         
 ;
@@ -207,9 +205,7 @@ index < size2; index++)
 ;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString());
-
-                         as String;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()); as String;
         
         
 ;
@@ -263,9 +259,7 @@ this.propertyValueVector!.add(propertyValue);
 index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index);
-
-                         as String;
+    var value: string = this.propertyValueVector!.get(index); as String;
         
         
 ;
@@ -318,9 +312,7 @@ this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "to
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createNameValueIndexNodes(document, CssPropertyData.getInstance()!.VALUES, CssPropertyValueData.getInstance()!.NAME, this.propertyValueVector);
-
-                        ;
+                        return ModDomHelper.createNameValueIndexNodes(document, CssPropertyData.getInstance()!.VALUES, CssPropertyValueData.getInstance()!.NAME, this.propertyValueVector);;
     
 }
 

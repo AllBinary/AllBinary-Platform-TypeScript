@@ -123,9 +123,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -134,9 +132,7 @@ this.storeName= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emptyBoolean;
-
-                        ;
+                        return emptyBoolean;;
     
 
                 //: 
@@ -192,9 +188,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -203,9 +197,7 @@ this.storeName= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emptyBoolean;
-
-                        ;
+                        return emptyBoolean;;
     
 
                 //: 
@@ -267,9 +259,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -278,9 +268,7 @@ this.storeName= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emptyBoolean;
-
-                        ;
+                        return emptyBoolean;;
     
 
                 //: 
@@ -342,9 +330,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -353,9 +339,7 @@ this.storeName= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emptyBoolean;
-
-                        ;
+                        return emptyBoolean;;
     
 
                 //: 
@@ -416,9 +400,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         
                                     {
                                     
-                        if(!this.addItemToBasket();
-
-                        )
+                        if(!this.addItemToBasket();)
                         
                                     {
                                     this.pageContext!.getOut()!.println("Item is not currently being sold.<p/>");

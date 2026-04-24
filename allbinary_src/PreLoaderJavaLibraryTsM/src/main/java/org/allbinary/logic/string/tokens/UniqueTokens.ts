@@ -41,6 +41,9 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -150,9 +153,7 @@ var stringVector = stringVector
         while(index < stringVector!.length)
         {
 
-    var keywords: string = stringVector!.elementAt(index);
-
-                         as String;
+    var keywords: string = stringVector!.elementAt(index); as String;
         
         
 ;
@@ -164,7 +165,7 @@ var stringVector = stringVector
 ;
     
 
-    var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, new BasicArrayList())!;
+    var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, new BasicArrayListD())!;
         
         
 ;
@@ -180,9 +181,7 @@ var stringVector = stringVector
 forIndex < keywordVector!.size(); forIndex++)
         {
 
-    var cleanString: string = keywordVector!.get(forIndex);
-
-                         as String;
+    var cleanString: string = keywordVector!.get(forIndex); as String;
         
         
 ;
@@ -206,7 +205,7 @@ hashSet!.add(cleanString);
 ;
     
 
-    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, new BasicArrayList())!;
+    var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, new BasicArrayListD())!;
         
         
 ;
@@ -222,19 +221,13 @@ hashSet!.add(cleanString);
 spaceIndex < subKeywordVector!.size(); spaceIndex++)
         {
 
-    var subCleanString: string = subKeywordVector!.get(spaceIndex);
-
-                         as String;
+    var subCleanString: string = subKeywordVector!.get(spaceIndex); as String;
         
         
 ;
     
 
-                        if(!isSpecialCharacter(subCleanString);
-
-                         && !numberOnly(subCleanString);
-
-                        )
+                        if(!isSpecialCharacter(subCleanString); && !numberOnly(subCleanString);)
                         
                                     {
                                     hashSet!.add(subCleanString);
@@ -312,9 +305,7 @@ var subCleaningString = subCleaningString
 index < this.specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index);
-
-                         as String) == 0)
+                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index) as String) == 0)
                         
 
 

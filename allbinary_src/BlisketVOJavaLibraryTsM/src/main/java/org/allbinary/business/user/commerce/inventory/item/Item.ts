@@ -119,25 +119,15 @@ this.shippingAddress= new StreetAddress();
 
     setData(itemHashMap: HashMap<any, any>){
 var itemHashMap = itemHashMap
-this.group= itemHashMap!.get(ShippingMethodData.GROUP);
-
-                         as String;
+this.group= itemHashMap!.get(ShippingMethodData.GROUP); as String;
     
-this.tax= itemHashMap!.get(OrderHistoryData.TAX);
-
-                         as String;
+this.tax= itemHashMap!.get(OrderHistoryData.TAX); as String;
     
-this.shippingType= itemHashMap!.get(ShippingMethodData.NAME);
-
-                         as String;
+this.shippingType= itemHashMap!.get(ShippingMethodData.NAME); as String;
     
-this.shippingCost= itemHashMap!.get(ShippingMethodData.COST);
-
-                         as String;
+this.shippingCost= itemHashMap!.get(ShippingMethodData.COST); as String;
     
-this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE);
-
-                         as String;
+this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE); as String;
     
 itemHashMap!.put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME));
     

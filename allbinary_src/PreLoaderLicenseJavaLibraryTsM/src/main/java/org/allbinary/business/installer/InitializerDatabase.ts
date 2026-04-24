@@ -165,9 +165,7 @@ index < size; index++)
 ;
     
 
-    var values: string[] = map.get(key);
-
-                         as Array<String?>;
+    var values: string[] = map.get(key); as Array<String?>;
         
         
 ;
@@ -215,29 +213,17 @@ this.getFormData(abeClientInformation, initHashMap);
         
 ;
     
-setAdminDbUserName(hashMap!.get(initializerData!.DBUSER);
-
-                         as String);
+setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as String);
     
-setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD);
-
-                         as String);
+setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as String);
     
-setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER);
-
-                         as String);
+setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as String);
     
-setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA);
-
-                         as String);
+setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as String);
     
-setAdminServer(hashMap!.get(initializerData!.ADMINSERVER);
-
-                         as String);
+setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as String);
     
-setAdminPort(hashMap!.get(initializerData!.ADMINPORT);
-
-                         as String);
+setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String);
     
 
     var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();
@@ -328,9 +314,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);
-
-                        )
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);)
                         
                                     {
                                     isValid= false;
@@ -345,9 +329,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);)
                         
                                     {
                                     isValid= false;
@@ -356,9 +338,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);
-
-                        )
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);)
                         
                                     {
                                     isValid= false;
@@ -393,9 +373,7 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -420,9 +398,7 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 ;
     
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);
-
-                        )
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);)
                         
                                     {
                                     isJdbcDriversValid= false;
@@ -439,9 +415,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);
-
-                        )
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);)
                         
                                     {
                                     stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -450,9 +424,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);
-
-                        )
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);)
                         
                                     {
                                     stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -473,9 +445,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

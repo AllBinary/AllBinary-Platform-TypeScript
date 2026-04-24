@@ -10,6 +10,9 @@ import { BaseBasicArrayListCache } from "../../../../../../org/allbinary/logic/u
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -72,7 +75,7 @@ var maxPaths = maxPaths
         
 index >= this.maxConcurrentPaths; index--)
         {
-this.list.add(new BasicArrayList(maxPaths));
+this.list.add(new BasicArrayListS(maxPaths));
     
 }
 
@@ -95,9 +98,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(0);
-
-                         as BasicArrayList;
+                        return this.list.remove(0); as BasicArrayList;
     
 
                                     }
@@ -107,7 +108,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new BasicArrayList(this.maxPaths);
+                        return new BasicArrayListS(this.maxPaths);
     
 
                         }

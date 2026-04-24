@@ -30,6 +30,9 @@ import { OpenGLESImage } from "../../../../../org/allbinary/image/opengles/OpenG
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -54,7 +57,7 @@ export class AllBinaryRendererBase3
          {
         
 
-    public readonly list: BasicArrayList = new BasicArrayList();
+    public readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -66,9 +69,7 @@ export class AllBinaryRendererBase3
         while(this.list.size() > 0)
         {
 
-    var openGLESImage: OpenGLESImage = this.list.remove(0);
-
-                         as OpenGLESImage;
+    var openGLESImage: OpenGLESImage = this.list.remove(0); as OpenGLESImage;
         
         
 ;

@@ -96,9 +96,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getService");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InputAutomationJFrame.getInstance();
-
-                        ;
+                        return InputAutomationJFrame.getInstance();;
     
 }
 

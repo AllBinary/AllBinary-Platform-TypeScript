@@ -18,6 +18,9 @@
 
 
 
+import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+
+    
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -55,7 +58,7 @@ export class FallingPickupLayerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new FallingPickupLayer();
+                        return new FallingPickupLayer(RemoteInfo.REMOTE_INFO);
     
 }
 

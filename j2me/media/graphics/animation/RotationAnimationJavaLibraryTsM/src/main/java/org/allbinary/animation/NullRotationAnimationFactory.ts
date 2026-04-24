@@ -21,7 +21,16 @@
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
+import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
+
+    
+import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
+
+    
 import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
+
+    
+import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil.js";
 
     
 
@@ -74,7 +83,7 @@ export class NullRotationAnimationFactory
         
         
 
-    private readonly NULL_ANIMATION: Animation = new object: NullRotationAnimation(AnimationBehavior.getInstance())
+    private readonly NULL_ANIMATION: Animation = new object: NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), AnimationBehavior.getInstance())
                                 {
                                 
     public paint(graphics: Graphics, x: number, y: number){

@@ -247,9 +247,7 @@ index < taxNameNodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, className);
-
-                         as TaxModuleInterface;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, className); as TaxModuleInterface;
     
 
                                     }

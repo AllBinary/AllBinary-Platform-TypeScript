@@ -79,9 +79,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
-
-                         as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
         
         
 ;
@@ -92,9 +90,7 @@ httpTransformInfoInterface!.getPropertiesHashMap()!.put(TransformInfoData.getIns
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.view(TransformInfosData.getInstance()!.PREVIEW);
-
-                        ;
+                        return this.view(TransformInfosData.getInstance()!.PREVIEW);;
     
 
                 //: 

@@ -97,17 +97,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest) as StoreFrontInterface;
+this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface;
     
 
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
                         this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName());
-
-                        
 }
 
 
@@ -199,9 +195,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -249,9 +243,7 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -305,9 +297,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return views.ValidationOnlyTempUtil.getInstance()!.view(this);
-
-                        ;
+                        return views.ValidationOnlyTempUtil.getInstance()!.view(this);;
     
 }
 

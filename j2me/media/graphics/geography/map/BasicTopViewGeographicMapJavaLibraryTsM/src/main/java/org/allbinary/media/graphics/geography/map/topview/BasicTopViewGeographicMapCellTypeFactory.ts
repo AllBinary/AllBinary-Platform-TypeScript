@@ -66,6 +66,8 @@ import { HashtableUtil } from "../../../../../../../org/allbinary/util/Hashtable
         
 import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
 
+import { BasicTopViewGeographicMapCellType } from "./BasicTopViewGeographicMapCellType.js";
+
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 
@@ -95,10 +97,10 @@ private constructor (){
         
 ;
     
-new RaceTrackGeographicMapCellType(0, 999);
+new RaceTrackGeographicMapCellType(CommonStrings.getInstance()!.UNKNOWN, 0, 999, 0);
     
 
-    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1);
+    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.create(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;
         
         
 ;
@@ -200,7 +202,7 @@ this.maxTileId= maxTileId;
                                 )
                         
                                     {
-                                    new RaceTrackGeographicMapCellType(type, 999);
+                                    new RaceTrackGeographicMapCellType(CommonStrings.getInstance()!.UNKNOWN, type, 999, 0);
     
 
                                     }
@@ -210,7 +212,7 @@ this.maxTileId= maxTileId;
                         }
                             
 
-    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1);
+    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.create(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;
         
         
 ;
@@ -288,9 +290,7 @@ index < size; index++)
         {
 key= keyArray[index]! as String;
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key);
-
-                         as BasicArrayList;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
     
 
                         if(key.equals(basicTopViewGeographicMapStrings!.WALL))
@@ -393,7 +393,7 @@ type= this.maxTileId -1;
                                 )
                         
                                     {
-                                    new RaceTrackGeographicMapCellType(commonStrings!.START, type, 1);
+                                    new RaceTrackGeographicMapCellType(commonStrings!.START, type, 1, 0);
     
 
                                     }
@@ -410,7 +410,7 @@ type= this.maxTileId -2;
                                 )
                         
                                     {
-                                    new RaceTrackGeographicMapCellType(commonStrings!.START, type, 1);
+                                    new RaceTrackGeographicMapCellType(commonStrings!.START, type, 1, 0);
     
 
                                     }
@@ -482,9 +482,7 @@ var cellType = cellType
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append("key: WALL/BLOCK_CELL_TYPE: ")!.append(this.BLOCK_CELL_TYPE.toString())!.append("key: FLOOR_CELL_TYPE: ")!.append(this.FLOOR_CELL_TYPE.toString())!.append("key: OTHER_CELL_TYPE: ")!.append(this.OTHER_CELL_TYPE.toString())!.append("key: OFF_MAP_CELL_TYPE: ")!.append(this.OFF_MAP_CELL_TYPE.toString())!.append("key: DOOR_CELL_TYPE: ")!.append(this.DOOR_CELL_TYPE.toString())!.append("key: STAIRS_DOWN_CELL_TYPE: ")!.append(this.STAIRS_DOWN_CELL_TYPE.toString())!.append("key: STAIRS_UP_CELL_TYPE: ")!.append(this.STAIRS_UP_CELL_TYPE.toString())!.toString();
-
-                        ;
+                            append("key: WALL/BLOCK_CELL_TYPE: ")!.append(this.BLOCK_CELL_TYPE.toString())!.append("key: FLOOR_CELL_TYPE: ")!.append(this.FLOOR_CELL_TYPE.toString())!.append("key: OTHER_CELL_TYPE: ")!.append(this.OTHER_CELL_TYPE.toString())!.append("key: OFF_MAP_CELL_TYPE: ")!.append(this.OFF_MAP_CELL_TYPE.toString())!.append("key: DOOR_CELL_TYPE: ")!.append(this.DOOR_CELL_TYPE.toString())!.append("key: STAIRS_DOWN_CELL_TYPE: ")!.append(this.STAIRS_DOWN_CELL_TYPE.toString())!.append("key: STAIRS_UP_CELL_TYPE: ")!.append(this.STAIRS_UP_CELL_TYPE.toString())!.toString();;
     
 }
 

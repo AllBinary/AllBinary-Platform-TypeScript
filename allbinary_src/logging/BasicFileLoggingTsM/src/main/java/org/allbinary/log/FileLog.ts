@@ -260,9 +260,7 @@ var functionName = functionName
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return put(specialMessage, anyType, functionName, 
-                            null);
-
-                        ;
+                            null);;
     
 }
 
@@ -387,9 +385,7 @@ fileOut!.flush();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return put(specialMessage, className, functionName, 
-                            null);
-
-                        ;
+                            null);;
     
 }
 

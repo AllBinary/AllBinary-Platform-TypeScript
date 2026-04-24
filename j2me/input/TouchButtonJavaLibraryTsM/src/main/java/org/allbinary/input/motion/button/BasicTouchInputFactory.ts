@@ -36,6 +36,9 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -110,7 +113,7 @@ export class BasicTouchInputFactory
         
         
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){

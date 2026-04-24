@@ -66,16 +66,6 @@ public constructor (url: string){
                     
 }
 
-public constructor (hostname: string, port: number){
-            this(new URL("http://" +hostname +':' +port +"/RPC2"));
-                    var hostname = hostname
-var port = port
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public getURL(): URL{
 

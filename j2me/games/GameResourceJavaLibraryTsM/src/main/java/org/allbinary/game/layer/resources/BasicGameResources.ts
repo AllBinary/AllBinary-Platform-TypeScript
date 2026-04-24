@@ -133,9 +133,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.getInstance()!.getName();
-
-                        ;
+                        return GameGraphicsResourceUtil.getInstance()!.getName();;
     
 }
 

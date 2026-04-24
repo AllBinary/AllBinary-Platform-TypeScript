@@ -69,9 +69,7 @@ export class BaseTouchInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -81,9 +79,7 @@ export class BaseTouchInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.constructor.name.toString()!;
-
-                        ;
+                        return this.constructor.name.toString()!;;
     
 }
 

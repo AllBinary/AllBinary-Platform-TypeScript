@@ -243,18 +243,14 @@ var anyType = anyType
                         }
                             
 
-                        if(getServer() != getStart() && !isIsDone();
-
-                        )
+                        if(getServer() != getStart() && !isIsDone();)
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(anyType);
-
-                        ;
+                        return this.get(anyType);;
     
 
                                     }

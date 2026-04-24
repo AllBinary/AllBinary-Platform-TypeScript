@@ -66,6 +66,9 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -110,7 +113,7 @@ var gameInput = gameInput
                     
 TrackingEventHandler.getInstance()!.addListener(this);
     
-this.trackingList= new BasicArrayList();
+this.trackingList= new BasicArrayListD();
     
 }
 
@@ -237,9 +240,7 @@ super.processAI(Canvas.KEY_NUM1);
         
 index < size; index++)
         {
-lastTrackingEvent= this.trackingList!.get(0);
-
-                         as TrackingEvent;
+lastTrackingEvent= this.trackingList!.get(0); as TrackingEvent;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
@@ -287,9 +288,7 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
-                                    directionCompositeInterface= this.getOwnerLayerInterface();
-
-                         as DirectionCompositeInterface;
+                                    directionCompositeInterface= this.getOwnerLayerInterface(); as DirectionCompositeInterface;
     
 
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)

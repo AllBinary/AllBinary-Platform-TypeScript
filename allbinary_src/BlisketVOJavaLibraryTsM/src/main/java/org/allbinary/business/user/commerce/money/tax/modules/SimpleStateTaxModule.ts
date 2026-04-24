@@ -226,11 +226,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country);
-
-                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
-
-                         && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
@@ -402,11 +398,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country);
-
-                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
-
-                         && taxableStreetAddress!.getCountry()!.compareTo(ALL) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && taxableStreetAddress!.getCountry()!.compareTo(ALL) == 0)
                         
                                     {
                                     
@@ -419,11 +411,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(country);
-
-                         && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry());
-
-                         && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     

@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -80,7 +83,7 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-        this.eventListenerInterfaceList= new BasicArrayList();
+        this.eventListenerInterfaceList= new BasicArrayListD();
     
 }
 
@@ -145,16 +148,14 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= new BasicArrayList();
+this.eventListenerInterfaceList= new BasicArrayListD();
     
 }
 
@@ -162,9 +163,7 @@ this.eventListenerInterfaceList= new BasicArrayList();
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
-
-                        )
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -179,9 +178,7 @@ var eventListenerInterface = eventListenerInterface
     public addListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
-
-                        )
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);

@@ -187,9 +187,7 @@ display.setCurrent(newDisplay);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Display.getDisplay(this);
-
-                        ;
+                        return Display.getDisplay(this);;
     
 }
 
@@ -199,9 +197,7 @@ display.setCurrent(newDisplay);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Display.getDisplay(this)!.getCurrent();
-
-                        ;
+                        return Display.getDisplay(this)!.getCurrent();;
     
 }
 

@@ -40,9 +40,9 @@ import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/Fo
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { BasicArrayList } from "./BasicArrayList.js";
+import { BasicArrayListS } from "./BasicArrayListS.js";
 
-export class ImmutableBasicArrayList extends BasicArrayList {
+export class ImmutableBasicArrayList extends BasicArrayListS {
         
 
     private readonly name: string

@@ -171,18 +171,14 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;
     
 
     var originalPlaynImage: playn.core.Image = 
-                                    (originalImage as PlaynImage).getImage();
-
-                         as playn.core.Image;
+                                    (originalImage as PlaynImage).getImage(); as playn.core.Image;
         
         
 ;
@@ -224,9 +220,7 @@ canvas.drawImage(originalPlaynImage, 0, 0);
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;
@@ -290,9 +284,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
     //var image = image
 
     var image3: playn.core.Image = 
-                                    (image as PlaynImage).getImage();
-
-                         as playn.core.Image;
+                                    (image as PlaynImage).getImage(); as playn.core.Image;
         
         
 ;

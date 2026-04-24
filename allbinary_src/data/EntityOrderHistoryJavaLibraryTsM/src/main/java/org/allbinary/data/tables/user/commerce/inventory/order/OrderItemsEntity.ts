@@ -398,9 +398,7 @@ var orderId = orderId
         while(itemStatusIter!.hasNext())
         {
 
-    var status: string = itemStatusIter!.next();
-
-                         as String;
+    var status: string = itemStatusIter!.next(); as String;
         
         
 ;
@@ -791,9 +789,7 @@ stringBuffer!.append(") )");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -803,9 +799,7 @@ stringBuffer!.append(") )");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
@@ -815,9 +809,7 @@ stringBuffer!.append(") )");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

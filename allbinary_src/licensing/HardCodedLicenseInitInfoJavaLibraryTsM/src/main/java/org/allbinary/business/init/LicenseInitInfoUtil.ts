@@ -101,9 +101,7 @@ var initData = initData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return readAgain(0);
-
-                        ;
+                        return readAgain(0);;
     
 }
 

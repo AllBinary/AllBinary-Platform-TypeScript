@@ -135,9 +135,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -151,9 +149,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -269,9 +265,7 @@ this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
         
 index < size; index++)
         {
-downloadableItem= this.downloadableItemVector!.get(index);
-
-                         as DownloadableItem;
+downloadableItem= this.downloadableItemVector!.get(index); as DownloadableItem;
     
 vector.add(new DownloadableItemView(downloadableItem));
     
@@ -303,9 +297,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 
@@ -384,9 +376,7 @@ index < size; index++)
 ;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE);
-
-                         as FileItem;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE); as FileItem;
         
         
 ;

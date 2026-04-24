@@ -177,9 +177,7 @@ image= this.openGLUtil!.add(image);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(originalImage);
-
-                        ;
+                        return this.createImage(originalImage);;
     
 
                         }
@@ -192,9 +190,7 @@ image= this.openGLUtil!.add(image);
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -292,9 +288,7 @@ image= this.openGLUtil!.add(image);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(originalImage, width, height, true);
-
-                        ;
+                        return this.createImage(originalImage, width, height, true);;
     
 }
 
@@ -313,9 +307,7 @@ image= this.openGLUtil!.add(image);
 ;
     
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -341,9 +333,7 @@ image= this.openGLUtil!.add(image);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage2(originalImage, width, height, mutable);
-
-                        ;
+                        return this.createImage2(originalImage, width, height, mutable);;
     
 
                                     }
@@ -488,9 +478,7 @@ image= this.openGLUtil!.add(image);
 ;
     
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -578,9 +566,7 @@ image= openGLESImage;
                             image= originalImage;
     
 
-    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image);
-
-                         as OpenGLESImage;
+    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image); as OpenGLESImage;
         
         
 ;
@@ -635,9 +621,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
         
 ;
     
-openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth();
-
-                         /40 /openGLESImageProperties!.scaleX;
+openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth(); /40 /openGLESImageProperties!.scaleX;
     
 
                                     }
@@ -771,9 +755,7 @@ image= this.openGLUtil!.add(image);
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
-
-                        )
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -923,9 +905,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = mutableImage2!.getImage();
-
-                        getImage as org.eclipse.swt.graphics.Image
+getImage = mutableImage2!.getImage();getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     
@@ -1028,9 +1008,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage = originalImmutableImage!.getImage();
-
-                        getImage as org.eclipse.swt.graphics.Image
+getImage = originalImmutableImage!.getImage();getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     

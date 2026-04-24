@@ -42,6 +42,9 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -82,7 +85,7 @@ public constructor (image: Image, basicColorArray: BasicColor[], width: number, 
 }
 
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                         //var image = image
     //var basicColorArray = basicColorArray
     //var width = width
@@ -124,9 +127,7 @@ this.basicColorArray= basicColorArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(0);
-
-                        ;
+                        return this.getInstance(0);;
     
 }
 

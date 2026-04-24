@@ -70,17 +70,13 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var roleString: string = hashMap!.get(UserRoleData.NAME.toString());
-
-                         as String;
+    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString);)
                         
                                     {
                                     
@@ -93,9 +89,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return role.getUserFactory()!.getInstance(hashMap);
-
-                        ;
+                        return role.getUserFactory()!.getInstance(hashMap);;
     
 
                                     }

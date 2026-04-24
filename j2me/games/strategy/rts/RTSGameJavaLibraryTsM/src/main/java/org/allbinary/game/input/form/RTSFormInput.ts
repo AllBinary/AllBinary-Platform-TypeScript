@@ -342,9 +342,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scrollSelectionForm!.getSelectedItem(point);
-
-                        ;
+                        return scrollSelectionForm!.getSelectedItem(point);;
     
 }
 
@@ -367,9 +365,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scrollSelectionForm!.getSelectedIndex(point);
-
-                        ;
+                        return scrollSelectionForm!.getSelectedIndex(point);;
     
 }
 
@@ -410,9 +406,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerInterfaceFactoryInterface!.getInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ());
-
-                         as RTSLayer;
+                        return layerInterfaceFactoryInterface!.getInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ()); as RTSLayer;
     
 
                                     }

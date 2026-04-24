@@ -207,9 +207,7 @@ var layerInterface = layerInterface
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();
-
-                        )
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(atLeastOneHouseGameNotificationEvent);
@@ -230,9 +228,7 @@ var layerInterface = layerInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);
-
-                        ;
+                        return super.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);;
     
 }
 

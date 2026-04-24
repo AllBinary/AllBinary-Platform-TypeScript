@@ -119,9 +119,7 @@ this.enabled= enabled;
             
     public isEnabled(): boolean{
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.enabled);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.enabled);)
                         
                                     {
                                     
@@ -243,9 +241,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -312,9 +308,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -381,9 +375,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -450,9 +442,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -513,9 +503,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -576,9 +564,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -639,9 +625,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -692,9 +676,7 @@ this.total= total;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;

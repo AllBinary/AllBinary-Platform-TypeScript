@@ -89,9 +89,7 @@ public constructor (size: number){
                                     }
                                 
 
-    var list: BasicArrayList = this.get(this.index++);
-
-                         as BasicArrayList;
+    var list: BasicArrayList = this.get(this.index++); as BasicArrayList;
         
         
 ;
@@ -112,9 +110,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();
-
-                        ;
+                        return basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -190,9 +186,7 @@ stringBuffer!.appendint(basicArrayList!.size());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

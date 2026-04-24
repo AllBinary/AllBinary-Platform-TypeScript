@@ -10,6 +10,9 @@ import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
 
     
+import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+
+    
 import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
     
@@ -60,7 +63,7 @@ export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         
         
 public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number){
-            super(name, movement, animationInterface, rectangle, viewPosition);
+            super(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, SimpleWeaponLayer.createDestroyed(), rectangle, viewPosition);
                         //var name = name
     //var movement = movement
     //var animationInterface = animationInterface

@@ -33,6 +33,9 @@ import { NoDecimalTrigTable } from "../../../../org/allbinary/math/NoDecimalTrig
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -84,7 +87,7 @@ this.pointBasicArrayList= points;
 var x = x
 var y = y
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayList();
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -121,7 +124,7 @@ secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    newBasicArrayList!.add(pointFactory!.getInstance(secondPoint!.getX() +x, secondPoint!.getY() +y));
+                                    newBasicArrayList!.add(pointFactory!.getInstance0(secondPoint!.getX() +x, secondPoint!.getY() +y));
     
 
                                     }
@@ -143,9 +146,7 @@ this.pointBasicArrayList= newBasicArrayList;
             
     public rotate(angle: Angle){
 var angle = angle
-this.rotate(angle.getValue();
-
-                        );
+this.rotate(angle.getValue());
     
 }
 
@@ -159,7 +160,7 @@ this.rotate(angle.getValue();
     rotate(angle: number){
 var angle = angle
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayList();
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -230,7 +231,7 @@ secondX= (secondPoint!.getX() *cos) -y;
     
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
     
-point= pointFactory!.getInstance(secondX /10000, secondY /10000);
+point= pointFactory!.getInstance0(secondX /10000, secondY /10000);
     
 newBasicArrayList!.add(point);
     
@@ -267,7 +268,7 @@ var width = width
 ;
     
 
-    var newBasicArrayList: BasicArrayList = new BasicArrayList();
+    var newBasicArrayList: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -323,7 +324,7 @@ secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
 
                         }
                             
-point= pointFactory!.getInstance(newX, secondPoint!.getY());
+point= pointFactory!.getInstance0(newX, secondPoint!.getY());
     
 newBasicArrayList!.add(point);
     

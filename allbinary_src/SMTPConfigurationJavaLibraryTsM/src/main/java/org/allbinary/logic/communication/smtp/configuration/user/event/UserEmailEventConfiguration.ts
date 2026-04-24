@@ -84,13 +84,9 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME);
-
-                         as String);
+this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as String);
     
-this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH);
-
-                         as String);
+this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))

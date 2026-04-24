@@ -203,9 +203,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
 ;
     
 
-                        if(!imageDirectoryFile!.isDirectory();
-
-                        )
+                        if(!imageDirectoryFile!.isDirectory();)
                         
                                     {
                                     

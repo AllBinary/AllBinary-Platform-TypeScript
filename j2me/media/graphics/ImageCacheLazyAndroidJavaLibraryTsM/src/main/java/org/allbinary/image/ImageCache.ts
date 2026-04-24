@@ -297,9 +297,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImageLater(key as String,  -1,  -1);
-
-                        ;
+                        return Image.createImageLater(key as String,  -1,  -1);;
     
 }
 

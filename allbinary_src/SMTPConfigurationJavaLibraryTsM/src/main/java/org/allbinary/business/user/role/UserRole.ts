@@ -70,9 +70,7 @@ this.userFactoryInterface= aUserFactoryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicUserRole!.toString();
-
-                        ;
+                        return this.basicUserRole!.toString();;
     
 }
 
@@ -104,9 +102,7 @@ this.userFactoryInterface= aUserFactoryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicUserRole!.getSessionTimeout();
-
-                        ;
+                        return this.basicUserRole!.getSessionTimeout();;
     
 }
 
@@ -116,9 +112,7 @@ this.userFactoryInterface= aUserFactoryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicUserRole!.getSessionInactivityTimeout();
-
-                        ;
+                        return this.basicUserRole!.getSessionInactivityTimeout();;
     
 }
 

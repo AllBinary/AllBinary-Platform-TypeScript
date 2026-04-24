@@ -90,9 +90,7 @@ this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cipher.doFinal(array);
-
-                        ;
+                        return cipher.doFinal(array);;
     
 }
 
@@ -107,9 +105,7 @@ cipher.init(Cipher.DECRYPT_MODE, secretKey);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mutilate(this.cipher.doFinal(array));
-
-                        ;
+                        return this.mutilate(this.cipher.doFinal(array));;
     
 }
 

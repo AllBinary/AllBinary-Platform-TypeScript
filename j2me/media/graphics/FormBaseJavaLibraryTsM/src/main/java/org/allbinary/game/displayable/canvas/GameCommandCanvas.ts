@@ -165,6 +165,9 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -358,7 +361,7 @@ this.menuForm= form;
                         if(form != ScrollSelectionFormNoneFactory.getInstance())
                         
                                     {
-                                    this.setMenuInputProcessor(new ImmediateCommandFormInputProcessor(new BasicArrayList(),  -1, this, form));
+                                    this.setMenuInputProcessor(new ImmediateCommandFormInputProcessor(new BasicArrayListD(),  -1, this, form));
     
 this.menuPaintable= new FormPaintable(form);
     
@@ -375,9 +378,7 @@ this.repaintBehavior!.onChangeRepaint(this);
     public createForm(): ScrollSelectionForm{
 
     var items: CustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
-                            getInstance(this.getCommandStack();
-
-                         as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
+                            getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
         
         
 ;
@@ -392,9 +393,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM, 15, false, this.backgroundBasicColor, this.foregroundBasicColor);
-
-                        ;
+                        return CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM, 15, false, this.backgroundBasicColor, this.foregroundBasicColor);;
     
 }
 
@@ -420,7 +419,13 @@ this.repaintBehavior!.onChangeRepaint(this);
 ;
     
 
-    var rectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance(30, startY), displayInfo!.getLastWidth() -30, startY);
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
+        
+        
+;
+    
+
+    var rectangle: Rectangle = new Rectangle(pointFactory!.getInstance0(30, startY), displayInfo!.getLastWidth() -30, startY);
         
         
 ;

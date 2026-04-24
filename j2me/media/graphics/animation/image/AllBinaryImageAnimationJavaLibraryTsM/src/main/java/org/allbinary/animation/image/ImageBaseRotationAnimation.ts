@@ -42,6 +42,9 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
+import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
+
+    
 
 
 
@@ -66,7 +69,7 @@ export class ImageBaseRotationAnimation extends RotationAnimation {
 
     private readonly image: Image
 public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
-            super(angleInfo, totalAngle, animationBehavior);
+            super(angleInfo, CircularIndexUtil.getInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var image = image
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -87,9 +90,7 @@ this.image= image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -104,9 +105,7 @@ var sequence = sequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 
@@ -139,9 +138,7 @@ graphics.drawImage(this.image, x, y, anchor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.image.getWidth();
-
-                        ;
+                        return this.image.getWidth();;
     
 }
 

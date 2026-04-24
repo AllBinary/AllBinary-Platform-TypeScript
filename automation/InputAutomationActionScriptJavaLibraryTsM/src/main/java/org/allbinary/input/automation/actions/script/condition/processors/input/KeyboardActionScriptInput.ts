@@ -142,9 +142,7 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -290,9 +288,7 @@ this.setRelease(value.concatToString()
                             
 }
 
-this.setKeyArray(vector.toArray(new Array(vector.length));
-
-                         as Array<Integer?>);
+this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
     
 
                                     }
@@ -308,11 +304,7 @@ this.setKeyArray(vector.toArray(new Array(vector.length));
 this.setAllowsChildren(false);
     
 
-                        if(!this.isPress();
-
-                         && !this.isRelease();
-
-                        )
+                        if(!this.isPress(); && !this.isRelease();)
                         
                                     {
                                     this.setNormal();
@@ -331,11 +323,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(!this.isPress();
-
-                         && !this.isRelease();
-
-                        )
+                        if(!this.isPress(); && !this.isRelease();)
                         
                                     {
                                     this.setNormal();
@@ -438,8 +426,6 @@ var keyArray = keyArray
                                     null
                                 )
                         this.logUtil!.putF(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray");
-
-                        
 this.keyArray= keyArray;
     
 }
@@ -456,9 +442,7 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getText(this.getKeyArray());
-
-                        ;
+                        return getText(this.getKeyArray());;
     
 }
 
@@ -555,9 +539,7 @@ index++;
 }
 
 
-    var integerArray: Integer[] = vector.toArray(new Array(vector.length));
-
-                         as Array<Integer?>;
+    var integerArray: Integer[] = vector.toArray(new Array(vector.length)); as Array<Integer?>;
         
         
 ;
@@ -674,9 +656,7 @@ stringBuffer!.appendint(this.getDelayBetweenKeys());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

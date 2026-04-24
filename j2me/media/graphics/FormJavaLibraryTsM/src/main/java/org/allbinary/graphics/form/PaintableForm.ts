@@ -137,9 +137,7 @@ this.formType= formType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangle.getWidth();
-
-                        ;
+                        return this.rectangle.getWidth();;
     
 }
 

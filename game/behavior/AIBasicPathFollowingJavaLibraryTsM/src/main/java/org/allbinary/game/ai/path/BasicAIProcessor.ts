@@ -132,13 +132,9 @@ this.init();
     public init(){
 this.geographicMapCellPathHistoryInfo= new GeographicMapCellPathHistoryInfo();
     
-this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1);
-
-                         as GeographicMapCellPosition);
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
     
-this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1);
-
-                         as GeographicMapCellPosition);
+this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
     
 this.update();
     

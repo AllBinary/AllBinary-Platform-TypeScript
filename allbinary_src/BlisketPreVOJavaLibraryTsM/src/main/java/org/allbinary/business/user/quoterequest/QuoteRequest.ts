@@ -118,25 +118,15 @@ this.id= new QuoteRequestIdGenerator().
     
 this.setUserName(userName);
     
-this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO);
-
-                         as String);
+this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String);
     
-this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS);
-
-                         as String);
+this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String);
     
-this.setBudget(request.getParameter(quoteRequestData!.BUDGET);
-
-                         as String);
+this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String);
     
-this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME);
-
-                         as String);
+this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String);
     
-this.setComments(request.getParameter(quoteRequestData!.COMMENTS);
-
-                         as String);
+this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -159,33 +149,19 @@ public constructor (hashMap: HashMap<any, any>){
         
 ;
     
-this.id= hashMap!.get(quoteRequestData!.ID);
-
-                         as String;
+this.id= hashMap!.get(quoteRequestData!.ID); as String;
     
-this.setUserName(hashMap!.get(UserData.USERNAME);
-
-                         as String);
+this.setUserName(hashMap!.get(UserData.USERNAME) as String);
     
-this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO);
-
-                         as String);
+this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String);
     
-this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS);
-
-                         as String);
+this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String);
     
-this.setBudget(hashMap!.get(quoteRequestData!.BUDGET);
-
-                         as String);
+this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String);
     
-this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME);
-
-                         as String);
+this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String);
     
-this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
-
-                         as String);
+this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -383,9 +359,7 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

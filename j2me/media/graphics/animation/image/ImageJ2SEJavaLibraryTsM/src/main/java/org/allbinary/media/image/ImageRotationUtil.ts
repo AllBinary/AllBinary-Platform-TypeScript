@@ -99,9 +99,7 @@ private constructor (){
 ;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage();
-
-                         as BufferedImage;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
         
         
 ;
@@ -124,9 +122,7 @@ private constructor (){
         
 ;
     
-originalAwtImage= originalJ2SEImage!.getImage();
-
-                         as java.awt.Image;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                                     }
@@ -138,9 +134,7 @@ originalAwtImage= originalJ2SEImage!.getImage();
         
 ;
     
-originalAwtImage= originalJ2SEImage!.getImage();
-
-                         as java.awt.Image;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                         }
@@ -192,9 +186,7 @@ var rotationInDegrees = rotationInDegrees
         
 ;
     
-originalAwtImage= originalJ2SEImage!.getImage();
-
-                         as java.awt.Image;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                                     }
@@ -206,9 +198,7 @@ originalAwtImage= originalJ2SEImage!.getImage();
         
 ;
     
-originalAwtImage= originalJ2SEImage!.getImage();
-
-                         as java.awt.Image;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                         }
@@ -220,9 +210,7 @@ originalAwtImage= originalJ2SEImage!.getImage();
 ;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage();
-
-                         as BufferedImage;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
         
         
 ;

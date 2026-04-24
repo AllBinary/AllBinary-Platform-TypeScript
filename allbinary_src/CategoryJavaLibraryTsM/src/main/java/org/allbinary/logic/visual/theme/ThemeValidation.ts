@@ -186,9 +186,7 @@ var hashMap = hashMap
 this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH);
-
-                         as String);
+    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as String);
         
         
 ;
@@ -294,9 +292,7 @@ this.init(storeThemeCategoryInterface);
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance();
-
-                         as StoreThemeCategoryInterface;
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
         
         
 ;
@@ -364,9 +360,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.categoryAbPath!.toString();
-
-                        ;
+                        return this.categoryAbPath!.toString();;
     
 }
 
@@ -431,9 +425,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING);)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -442,9 +434,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING);)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -453,9 +443,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!this.getCssStyleValidation()!.isValid();
-
-                        )
+                        if(!this.getCssStyleValidation()!.isValid();)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -517,9 +505,7 @@ stringBuffer!.append("Theme Validation Error");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -571,9 +557,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName();
-
-                         as Object;
+                        return this.getName(); as Object;
     
 }
 
@@ -643,9 +627,7 @@ var document = document
 ;
     
 
-    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation();
-
-                         as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation(); as DomNodeInterface;
         
         
 ;

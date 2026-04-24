@@ -146,13 +146,9 @@ this.storeName= weblisketSession!.getStoreName();
         
 ;
     
-this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME);
-
-                         as String;
+this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
     
-this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA);
-
-                         as String);
+this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
     
 }
 
@@ -160,17 +156,11 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME);
-
-                         as String;
+this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
     
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
     
-this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA);
-
-                         as String);
+this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
     
 }
 
@@ -200,9 +190,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName();
-
-                         as Object;
+                        return this.getName(); as Object;
     
 }
 
@@ -339,9 +327,7 @@ index < size; index++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object);
-
-                         as String;
+    var value: string = hashMap!.get(name as Object); as String;
         
         
 ;
@@ -478,14 +464,10 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                                 )
                         stringBuffer!.append("No WorkFlow name specified.");
 
-                        
-
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

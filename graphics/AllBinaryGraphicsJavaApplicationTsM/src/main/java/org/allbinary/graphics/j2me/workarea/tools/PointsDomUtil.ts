@@ -111,7 +111,7 @@ export class PointsDomUtil
 var canvasDom = canvasDom
 var pointVector = pointVector
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new Double(canvasDom!.getAngle()), PointFactory.getInstance()!.getInstance(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new Double(canvasDom!.getAngle()), PointFactory.getInstance()!.getInstance0(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
         
         
 ;
@@ -123,9 +123,7 @@ var pointVector = pointVector
 ;
     
 
-    var linesNode: Node = document.createElement(this.LINES);
-
-                         as Node;
+    var linesNode: Node = document.createElement(this.LINES); as Node;
         
         
 ;
@@ -168,13 +166,9 @@ var pointVector = pointVector
                         if(index < size && index < size2)
                         
                                     {
-                                    rotatedFirstPoint= tempPointVector!.get(index);
-
-                         as GPoint;
+                                    rotatedFirstPoint= tempPointVector!.get(index); as GPoint;
     
-firstPoint= pointVector!.get(index);
-
-                         as GPoint;
+firstPoint= pointVector!.get(index); as GPoint;
     
 index++;
     
@@ -185,25 +179,19 @@ index++;
         while(index < size && index < size2)
         {
 
-    var lineNode: Node = document.createElement(this.LINE);
-
-                         as Node;
+    var lineNode: Node = document.createElement(this.LINE); as Node;
         
         
 ;
     
 
-    var rotatedSecondPoint: GPoint = tempPointVector!.get(index);
-
-                         as GPoint;
+    var rotatedSecondPoint: GPoint = tempPointVector!.get(index); as GPoint;
         
         
 ;
     
 
-    var secondPoint: GPoint = pointVector!.get(index);
-
-                         as GPoint;
+    var secondPoint: GPoint = pointVector!.get(index); as GPoint;
         
         
 ;
@@ -269,25 +257,19 @@ var pointName = pointName
 ;
     
 
-    var pointNode: Node = document.createElement(pointName);
-
-                         as Node;
+    var pointNode: Node = document.createElement(pointName); as Node;
         
         
 ;
     
 
-    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X);
-
-                         as Node;
+    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X); as Node;
         
         
 ;
     
 
-    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX()));
-
-                         as Node;
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())); as Node;
         
         
 ;
@@ -295,17 +277,13 @@ var pointName = pointName
 xNode!.appendChild(xTextNode);
     
 
-    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y);
-
-                         as Node;
+    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y); as Node;
         
         
 ;
     
 
-    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY()));
-
-                         as Node;
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())); as Node;
         
         
 ;

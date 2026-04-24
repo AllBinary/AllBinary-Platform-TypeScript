@@ -18,10 +18,28 @@
 
 
 
+import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+
+    
+import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+
+    
+import { CollidableAlwaysPickupNeverCollideBehaviorFactory } from "../../../../../org/allbinary/game/collision/CollidableAlwaysPickupNeverCollideBehaviorFactory.js";
+
+    
+import { BasicGroupFactory } from "../../../../../org/allbinary/game/identification/BasicGroupFactory.js";
+
+    
 import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
 
     
 import { TickableInterface } from "../../../../../org/allbinary/game/tick/TickableInterface.js";
+
+    
+import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory.js";
+
+    
+import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
     
 import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
@@ -51,6 +69,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
         
 import { PickupLayer } from "./PickupLayer.js";
 
+import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
+
 export class FallingPickupLayer extends PickupLayer implements TickableInterface {
         
 
@@ -58,17 +78,9 @@ export class FallingPickupLayer extends PickupLayer implements TickableInterface
         
         
 public constructor (remoteInfo: RemoteInfo){
-            super(NAME, remoteInfo, new ViewPosition());
-                    var remoteInfo = remoteInfo
+            super(NAME, remoteInfo, 0, CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY, NullAnimationFactory.getFactoryInstance()!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
+                        //var remoteInfo = remoteInfo
 
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (){
-            super(NAME, new ViewPosition());
-                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -105,9 +105,7 @@ export class ThreadFactoryUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(runnable, runnable.getType());
-
-                        ;
+                        return this.getInstance(runnable, runnable.getType());;
     
 }
 
@@ -118,9 +116,7 @@ export class ThreadFactoryUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(runnable, runnable.getType());
-
-                        ;
+                        return this.getInstance(runnable, runnable.getType());;
     
 }
 

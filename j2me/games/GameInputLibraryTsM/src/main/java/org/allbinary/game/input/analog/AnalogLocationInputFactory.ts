@@ -7,6 +7,9 @@
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -47,7 +50,7 @@ export class AnalogLocationInputFactory
 }
 
 
-    private readonly list: BasicArrayList = new BasicArrayList();
+    private readonly list: BasicArrayList = new BasicArrayListD();
         
         
 private constructor (){
@@ -68,9 +71,7 @@ var playerInputId = playerInputId
                         if(playerInputId < this.list.size())
                         
                                     {
-                                    analogLocationInput= this.list.get(playerInputId);
-
-                         as AnalogLocationInput;
+                                    analogLocationInput= this.list.get(playerInputId); as AnalogLocationInput;
     
 
                                     }
@@ -95,9 +96,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.get(playerInputId);
-
-                         as AnalogLocationInput;
+                        return this.list.get(playerInputId); as AnalogLocationInput;
     
 }
 

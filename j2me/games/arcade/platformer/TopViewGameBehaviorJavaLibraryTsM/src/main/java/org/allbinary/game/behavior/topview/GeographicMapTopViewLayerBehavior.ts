@@ -209,9 +209,7 @@ var y = y
         
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();
-
-                         as BasicTopViewGeographicMapCellTypeFactory;
+basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
@@ -261,9 +259,7 @@ basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.ge
         
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();
-
-                         as BasicTopViewGeographicMapCellTypeFactory;
+basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.OFF_MAP_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))

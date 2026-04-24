@@ -67,9 +67,7 @@ var role = role
 UserRoleFactory.getInstance();
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(role);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(role);)
                         
                                     {
                                     
@@ -95,9 +93,7 @@ UserRoleFactory.getInstance();
 index < size; index++)
         {
 
-    var userRole: UserRole = roleVector!.get(index);
-
-                         as UserRole;
+    var userRole: UserRole = roleVector!.get(index); as UserRole;
         
         
 ;

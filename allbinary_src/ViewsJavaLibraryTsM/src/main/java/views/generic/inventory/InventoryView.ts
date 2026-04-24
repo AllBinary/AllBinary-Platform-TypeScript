@@ -153,9 +153,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index);
-
-                         as ItemInterface;
+    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
         
         
 ;
@@ -229,9 +227,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

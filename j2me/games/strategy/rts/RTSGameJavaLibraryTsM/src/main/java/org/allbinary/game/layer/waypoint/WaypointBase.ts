@@ -54,6 +54,9 @@ import { PathFindingInfo } from "../../../../../org/allbinary/media/graphics/geo
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -82,7 +85,7 @@ export class WaypointBase
         
         
 
-    private readonly connectedWaypointList: BasicArrayList = new BasicArrayList();
+    private readonly connectedWaypointList: BasicArrayList = new BasicArrayListD();
         
         
 

@@ -45,6 +45,9 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
     
@@ -188,7 +191,7 @@ export class LoggingInitInfo
         
 ;
     
-LoggingInitInfo.logConfigInfoList= new BasicArrayList();
+LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
     
 
     var size: number = logConfigNodeVector!.length!;
@@ -207,9 +210,7 @@ LoggingInitInfo.logConfigInfoList= new BasicArrayList();
 i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i);
-
-                         as Node;
+    var node: Node = logConfigNodeVector!.elementAt(i); as Node;
         
         
 ;
@@ -304,7 +305,7 @@ LoggingInitInfo.updateIfNeeded();
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayList();
+    var allLogTypeVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -363,7 +364,7 @@ index < size; index++)
 LoggingInitInfo.updateIfNeeded();
     
 
-    var allLogTypeVector: BasicArrayList = new BasicArrayList();
+    var allLogTypeVector: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -452,9 +453,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LoggingInitInfo.logConfigInfoList!.size();
-
-                        ;
+                        return LoggingInitInfo.logConfigInfoList!.size();;
     
 }
 
@@ -472,9 +471,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(document);
-
-                        ;
+                        return DomDocumentHelper.toString(document);;
     
 
                 //: 

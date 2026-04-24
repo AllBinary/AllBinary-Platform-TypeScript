@@ -116,9 +116,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 }
 

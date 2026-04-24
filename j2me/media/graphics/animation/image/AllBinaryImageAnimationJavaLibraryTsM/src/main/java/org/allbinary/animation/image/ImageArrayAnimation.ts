@@ -93,9 +93,7 @@ this.setImageArray(imageArray);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getSize();
-
-                        ;
+                        return this.getSize();;
     
 }
 
@@ -124,9 +122,7 @@ this.circularIndexUtil!.setIndex(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.circularIndexUtil!.getIndex();
-
-                        ;
+                        return this.circularIndexUtil!.getIndex();;
     
 }
 
@@ -151,9 +147,7 @@ var sequence = sequence
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

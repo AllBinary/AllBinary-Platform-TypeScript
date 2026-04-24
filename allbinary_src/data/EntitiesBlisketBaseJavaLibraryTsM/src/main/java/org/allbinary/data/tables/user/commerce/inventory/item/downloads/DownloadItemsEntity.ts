@@ -158,9 +158,7 @@ var value = value
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID);
-
-                         as String, updatedValues);
+super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues);
     
 }
 
@@ -204,9 +202,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index);
-
-                         as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
         
         
 ;
@@ -275,9 +271,7 @@ keysAndValues!.put(DownloadItemData.ID, downloadItemId);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index);
-
-                         as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
         
         
 ;
@@ -319,9 +313,7 @@ stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHA
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -331,9 +323,7 @@ stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHA
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 
@@ -343,9 +333,7 @@ stringBuffer!.append(DownloadItemData.FILE)!.append(this.sqlTypeStrings!.MAX_CHA
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.dropTable();
-
-                        ;
+                        return super.dropTable();;
     
 }
 

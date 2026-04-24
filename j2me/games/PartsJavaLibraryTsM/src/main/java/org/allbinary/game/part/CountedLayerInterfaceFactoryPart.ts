@@ -131,9 +131,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getCountedPickedUpLayerInterfaceFactory()!.getInstance(hashtable, x, y, z);
-
-                        ;
+                        return this.getCountedPickedUpLayerInterfaceFactory()!.getInstance(hashtable, x, y, z);;
     
 
                                     }

@@ -105,9 +105,7 @@ var vector = vector
 index < size; index++)
         {
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index);
-
-                         as UserEmailEventListenerInterface;
+    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index); as UserEmailEventListenerInterface;
         
         
 ;
@@ -162,9 +160,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index);
-
-                         as UserEmailEventListenerInterface;
+    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index); as UserEmailEventListenerInterface;
         
         
 ;

@@ -83,9 +83,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.candidateVector!.get(index);
-
-                         as String;
+                        return this.candidateVector!.get(index); as String;
     
 }
 
@@ -96,9 +94,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tagNameVector!.get(index);
-
-                         as String;
+                        return this.tagNameVector!.get(index); as String;
     
 }
 
@@ -108,9 +104,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return candidateVector!.length;
-
-                        ;
+                        return candidateVector!.length;;
     
 }
 

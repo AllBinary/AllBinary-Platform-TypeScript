@@ -53,7 +53,7 @@ import { Runnable } from "./Runnable.js";
 export class SecondaryThreadPool extends ThreadPool {
         
 
-    private static readonly instance: ThreadPool = new SecondaryThreadPool("Secondary", 1);
+    private static readonly instance: ThreadPool = new SecondaryThreadPool("Secondary", 1, ThreadPool.NORMAL_PRIORITY);
         
         
 
@@ -66,10 +66,11 @@ export class SecondaryThreadPool extends ThreadPool {
     
 }
 
-public constructor (poolName: string, numThreads: number){
-            super(poolName, numThreads);
+public constructor (poolName: string, numThreads: number, priority: number){
+            super(poolName, numThreads, priority);
                         //var poolName = poolName
     //var numThreads = numThreads
+    //var priority = priority
 
 
                             //For kotlin this is before the body of the constructor.

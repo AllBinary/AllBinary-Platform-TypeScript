@@ -139,9 +139,7 @@ var rectangle = rectangle
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index);
-
-                         as Rectangle;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
         
         
 ;
@@ -197,9 +195,7 @@ var point = point
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index);
-
-                         as Rectangle;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
         
         
 ;
@@ -322,9 +318,7 @@ var bufferedImage = bufferedImage
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index);
-
-                         as Rectangle;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
         
         
 ;

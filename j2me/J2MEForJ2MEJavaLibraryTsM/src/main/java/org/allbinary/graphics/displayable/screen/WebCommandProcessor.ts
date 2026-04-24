@@ -36,6 +36,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -84,7 +87,7 @@ export class WebCommandProcessor
         
         
 
-    public readonly list: BasicArrayList = new BasicArrayList();
+    public readonly list: BasicArrayList = new BasicArrayListD();
         
         
 

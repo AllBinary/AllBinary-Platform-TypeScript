@@ -91,7 +91,7 @@ import { LayerInterface } from "./LayerInterface.js";
 export class AllBinaryLayer extends Layer implements LayerInterface {
         
 
-    public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
+    public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
         
         
 
@@ -112,16 +112,6 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
     private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
         
         
-public constructor (rectangle: Rectangle, viewPosition: ViewPosition){
-            this(StringUtil.getInstance()!.EMPTY_STRING, rectangle, viewPosition);
-                        //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
             super(rectangle.getWidth(), rectangle.getHeight());
                         //var name = name
@@ -265,9 +255,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getDepth();
-
-                         /2;
+                        return this.getDepth(); /2;
     
 }
 
@@ -344,9 +332,7 @@ this.viewPosition= viewPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return OpenGLFeatureUtil.getInstance()!.isAnyThreed();
-
-                        ;
+                        return OpenGLFeatureUtil.getInstance()!.isAnyThreed();;
     
 }
 
@@ -445,9 +431,7 @@ this.toString(stringBuffer);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

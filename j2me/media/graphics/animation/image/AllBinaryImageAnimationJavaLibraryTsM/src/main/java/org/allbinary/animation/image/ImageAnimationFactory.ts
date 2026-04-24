@@ -30,6 +30,9 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 import { OpenGLUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLUtil.js";
 
     
+import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
 
     
@@ -56,40 +59,21 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image){
-            this(image, image.getWidth(), image.getHeight(), 0, 0, AnimationBehaviorFactory.getInstance());
-                        //var image = image
+
+                //@Throws(Error::class)
+            
+    public static create(image: Image): ImageAnimationFactory{
+    //var image = image
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
-}
 
-public constructor (image: Image, dx: number, dy: number){
-            this(image, image.getWidth(), image.getHeight(), dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ImageAnimationFactory(image, image.getWidth(), image.getHeight(), 0, 0, AnimationBehaviorFactory.getInstance());
+    
 }
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, width, height, dx, dy, animationBehaviorFactory);
+            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
     //var width = width
     //var height = height

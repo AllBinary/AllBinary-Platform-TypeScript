@@ -97,9 +97,7 @@ this.status= value;
 
         try {
             
-    var request: HttpServletRequest = this.pageContext!.getRequest();
-
-                         as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -132,9 +130,7 @@ this.status= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -180,9 +176,7 @@ this.status= value;
 ;
     
 
-    var result: string = method.invoke(anyType, methodArgs);
-
-                         as String;
+    var result: string = method.invoke(anyType, methodArgs); as String;
         
         
 ;
@@ -266,9 +260,7 @@ this.status= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.doStartTag();
-
-                        ;
+                        return super.doStartTag();;
     
 
                         }

@@ -86,9 +86,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 paymentProcessorInterface!.process();
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface();
-
-                         as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
         
         
 ;
@@ -111,9 +109,7 @@ this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

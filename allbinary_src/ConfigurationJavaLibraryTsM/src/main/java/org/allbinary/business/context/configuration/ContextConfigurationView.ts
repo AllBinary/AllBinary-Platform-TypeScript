@@ -95,9 +95,7 @@ this.contextConfigurationInterface= new ContextConfiguration();
         
 ;
     
-this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface();
-
-                         as EmailServerConfigurationInterface);
+this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailServerConfigurationView!.getEmailConfigurationInterface() as EmailServerConfigurationInterface);
     
 }
 

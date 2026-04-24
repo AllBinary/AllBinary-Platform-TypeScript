@@ -111,9 +111,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName);)
                         
                                     {
                                     
@@ -132,9 +130,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface);
-
-                         as PaymentProcessorInterface;
+                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface); as PaymentProcessorInterface;
     
 
                                     }

@@ -68,9 +68,7 @@ export class GameKey extends Input {
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append("GameKey ")!.append(super.toString())!.toString();
-
-                        ;
+                            append("GameKey ")!.append(super.toString())!.toString();;
     
 }
 

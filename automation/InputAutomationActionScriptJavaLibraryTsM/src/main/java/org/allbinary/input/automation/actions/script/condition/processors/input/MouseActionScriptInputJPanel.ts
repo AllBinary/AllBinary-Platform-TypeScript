@@ -180,17 +180,13 @@ this.mouseActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem();
-
-                         as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
         
         
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
                         
                                     {
                                     this.mouseActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem));
@@ -283,9 +279,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString);
-
-                         && StringValidationUtil.getInstance()!.isNumber(mouseXString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString); && StringValidationUtil.getInstance()!.isNumber(mouseXString))
                         
                                     {
                                     this.mouseActionScriptInputInterface!.getPoint()!.x= Integer.parseInt(mouseXString);
@@ -300,9 +294,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString);
-
-                         && StringValidationUtil.getInstance()!.isNumber(mouseYString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString); && StringValidationUtil.getInstance()!.isNumber(mouseYString))
                         
                                     {
                                     this.mouseActionScriptInputInterface!.getPoint()!.y= Integer.parseInt(mouseYString);

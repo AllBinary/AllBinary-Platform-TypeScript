@@ -271,9 +271,7 @@ var point = point
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
-
-                        ;
+                        return this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);;
     
 }
 
@@ -296,9 +294,7 @@ this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rtsFormInputArray[0]!.getSelectedStickyItemIndex();
-
-                        ;
+                        return this.rtsFormInputArray[0]!.getSelectedStickyItemIndex();;
     
 }
 
@@ -308,9 +304,7 @@ this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rtsFormInputArray[0]!.isStickyItemSelected();
-
-                        ;
+                        return this.rtsFormInputArray[0]!.isStickyItemSelected();;
     
 }
 
@@ -327,9 +321,7 @@ this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rtsFormInputArray[0]!.getSelectedStickyItem();
-
-                        ;
+                        return this.rtsFormInputArray[0]!.getSelectedStickyItem();;
     
 }
 

@@ -405,9 +405,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 var frame = frame
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get((frame).toLong());
-
-                         as BufferedImageFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get((frame).toLong()); as BufferedImageFrameCacheable;
         
         
 ;
@@ -431,9 +429,7 @@ var frame = frame
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger);
-
-                         as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
         
         
 ;
@@ -452,9 +448,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.shouldProcess(frame);
-
-                        ;
+                        return super.shouldProcess(frame);;
     
 
                                     }

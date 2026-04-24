@@ -133,9 +133,7 @@ export class ImageModifierUtil
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -147,9 +145,7 @@ newBufferedImage= swtImage!.getImage();
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -314,9 +310,7 @@ openGLESImage!.openGLESImageProperties!.bluef= basicColor!.getBlueComponent();
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -328,9 +322,7 @@ newBufferedImage= swtImage!.getImage();
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -486,9 +478,7 @@ this.setAlpha(image, alphaInt);
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -500,9 +490,7 @@ newBufferedImage= swtImage!.getImage();
         
 ;
     
-newBufferedImage= swtImage!.getImage();
-
-                         as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }

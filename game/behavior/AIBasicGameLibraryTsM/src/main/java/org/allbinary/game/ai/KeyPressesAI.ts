@@ -98,9 +98,7 @@ this.keys= new Array(hashtable.length);
         
 index < size; index++)
         {
-this.keys[index]= hashtable.get(objectArray[index]! as Object);
-
-                         as Integer;
+this.keys[index]= hashtable.get(objectArray[index]! as Object); as Integer;
     
 }
 

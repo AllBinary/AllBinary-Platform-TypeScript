@@ -343,9 +343,7 @@ var newHeight = newHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);
-
-                        ;
+                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, true);;
     
 }
 
@@ -361,9 +359,7 @@ var newHeight = newHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);
-
-                        ;
+                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);;
     
 }
 
@@ -601,9 +597,7 @@ stringBuffer!.appendint(imageData!.type);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

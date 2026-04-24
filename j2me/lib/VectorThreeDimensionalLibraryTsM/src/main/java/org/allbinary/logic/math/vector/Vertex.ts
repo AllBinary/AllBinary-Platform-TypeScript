@@ -54,42 +54,17 @@ export class Vertex
          {
         
 
-    public x: BasicDecimal = new BasicDecimal();
+    public x: BasicDecimal = new BasicDecimal(0);
         
         
 
-    public y: BasicDecimal = new BasicDecimal();
+    public y: BasicDecimal = new BasicDecimal(0);
         
         
 
-    public z: BasicDecimal = new BasicDecimal();
+    public z: BasicDecimal = new BasicDecimal(0);
         
         
-public constructor (x: number, y: number, z: number){
-
-            super();
-        var x = x
-var y = y
-var z = z
-this.x.set(x);
-    
-this.y.set(y);
-    
-this.z.set(z);
-    
-}
-
-public constructor (x: number, y: number){
-
-            super();
-        var x = x
-var y = y
-this.x.set(x);
-    
-this.y.set(y);
-    
-}
-
 public constructor (){
 
             super();
@@ -129,9 +104,7 @@ stringBuffer!.append(this.z.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

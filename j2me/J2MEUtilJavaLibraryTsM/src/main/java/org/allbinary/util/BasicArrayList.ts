@@ -52,43 +52,12 @@ export class BasicArrayList
     private currentIndex: number = 0;
         
         
-public constructor (size: number){
-            super();
-                        //var size = size
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-
-                        if(size < 0)
-                        
-                                    {
-                                    
-
-
-                            throw new IllegalArgumentException(new StringMaker().
-                            append("Init Size Exception: ")!.appendint(size)!.toString())
-
-                                    }
-                                
-this.objectArray= new Array(size);
-    
-}
-
 public constructor (objectArray: any[]){
 
             super();
             //var objectArray = objectArray
 this.objectArray= objectArray;
     
-}
-
-public constructor (){
-            this(7);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 
@@ -194,8 +163,6 @@ stringBuffer!.appendint(this.currentIndex);
 
                         if(numMoved > 0)
                         System.arraycopy(objectArray, index +1, objectArray, index, numMoved);
-
-                        
 objectArray[--this.currentIndex]= 
                                         null
                                     ;
@@ -428,9 +395,7 @@ this.objectArray[currentIndex++]= list.objectArray[index]!;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addAll(newObjectArray);
-
-                        ;
+                        return this.addAll(newObjectArray);;
     
 }
 
@@ -780,9 +745,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(this.objectArray, currentIndex);
-
-                        ;
+                        return arrayUtil!.copyOf(this.objectArray, currentIndex);;
     
 }
 
@@ -795,9 +758,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!constructor);
-
-                        ;
+                        return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!constructor);;
     
 
 
@@ -823,13 +784,13 @@ this.currentIndex= 0;
 
     public clone(): any{
 
-    var list: BasicArrayList = new BasicArrayList();
+    var size: number = this.size()!;
         
         
 ;
     
 
-    var size: number = this.size()!;
+    var list: BasicArrayList = new BasicArrayListS(size);
         
         
 ;
@@ -896,9 +857,7 @@ stringBuffer!.append(COMMA_SEP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

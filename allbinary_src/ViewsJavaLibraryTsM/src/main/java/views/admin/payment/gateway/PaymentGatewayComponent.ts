@@ -98,9 +98,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 ;
     
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface);
-
-                         as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface); as DomNodeInterface;
         
         
 ;
@@ -119,9 +117,7 @@ this.addDomNodeInterface(domNodeInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

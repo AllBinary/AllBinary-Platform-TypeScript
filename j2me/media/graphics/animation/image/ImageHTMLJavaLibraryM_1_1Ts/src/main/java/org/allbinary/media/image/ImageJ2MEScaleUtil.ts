@@ -149,9 +149,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
@@ -163,9 +161,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
         
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage();
-
-                         as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }
@@ -183,9 +179,7 @@ originalPlayNImage= originalHTMLImage!.getImage();
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;

@@ -41,6 +41,9 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -69,15 +72,15 @@ export class GameNotification
         
         
 
-    public readonly stringList: BasicArrayList = new BasicArrayList();
+    public readonly stringList: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly timeList: BasicArrayList = new BasicArrayList();
+    public readonly timeList: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly colorList: BasicArrayList = new BasicArrayList();
+    public readonly colorList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -86,9 +89,7 @@ var string = string
 var seconds = seconds
 var basicColor = basicColor
 
-                        if(!this.stringList!.contains(string);
-
-                        )
+                        if(!this.stringList!.contains(string);)
                         
                                     {
                                     this.stringList!.add(string);
@@ -118,9 +119,7 @@ this.colorList!.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.stringList!.size();
-
-                        ;
+                        return this.stringList!.size();;
     
 }
 

@@ -109,7 +109,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
         
         
 
-    private vector: BasicArrayList = new BasicArrayList();
+    private vector: BasicArrayList = new BasicArrayListD();
         
         
 public constructor (options: string[]){
@@ -200,7 +200,7 @@ this.vector.add(options[index]!);
 
         try {
             
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -248,9 +248,7 @@ index < size; index++)
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index);
-
-                         as String;
+    var serverName: string = this.vector.get(index); as String;
         
         
 ;
@@ -281,9 +279,7 @@ LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null);
-
-                         as AbeLicenseInterface;
+                            null); as AbeLicenseInterface;
         
         
 ;

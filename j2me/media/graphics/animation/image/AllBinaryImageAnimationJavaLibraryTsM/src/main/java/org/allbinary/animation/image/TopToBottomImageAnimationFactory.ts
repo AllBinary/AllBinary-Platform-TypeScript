@@ -61,7 +61,7 @@ public constructor (image: Image, sequenceArray: number[]){
 }
 
 public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, sequenceArray, image.getWidth(), image.getHeight(), animationBehaviorFactory);
+            super(image, sequenceArray, image.getWidth(), image.getHeight(), 0, 0, animationBehaviorFactory);
                         //var image = image
     //var sequenceArray = sequenceArray
     //var animationBehaviorFactory = animationBehaviorFactory

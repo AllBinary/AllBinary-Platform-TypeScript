@@ -123,9 +123,7 @@ this.anyType= anyType;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null);
-
-                         as String;
+                            null); as String;
         
         
 ;
@@ -169,9 +167,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -180,9 +176,7 @@ this.anyType= anyType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -217,9 +211,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -228,9 +220,7 @@ this.anyType= anyType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -265,9 +255,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -276,9 +264,7 @@ this.anyType= anyType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -313,9 +299,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -324,9 +308,7 @@ this.anyType= anyType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 
@@ -361,9 +343,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null);
-
-                         as Boolean;
+                            null); as Boolean;
         
         
 ;
@@ -372,9 +352,7 @@ this.anyType= anyType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;
-
-                        ;
+                        return result;;
     
 
                 //: 

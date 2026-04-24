@@ -112,9 +112,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(abeClientInformation, transformInfoInterface, DomDocumentHelper.create(data));
-
-                        ;
+                        return this.getInstance(abeClientInformation, transformInfoInterface, DomDocumentHelper.create(data));;
     
 
                 //: 
@@ -154,9 +152,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());
-
-                        )
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());)
                         
                                     {
                                     
@@ -234,9 +230,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());
-
-                        )
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());)
                         
                                     {
                                     

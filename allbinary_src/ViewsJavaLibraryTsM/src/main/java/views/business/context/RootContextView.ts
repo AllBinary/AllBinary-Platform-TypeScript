@@ -122,9 +122,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentInterface!.view();
-
-                        ;
+                        return componentInterface!.view();;
     
 
                 //: 
@@ -188,9 +186,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo = componentsVector!.get(0);
-
-                         as TransformInfo;
+    var transformInfoInterface: TransformInfo = componentsVector!.get(0); as TransformInfo;
         
         
 ;

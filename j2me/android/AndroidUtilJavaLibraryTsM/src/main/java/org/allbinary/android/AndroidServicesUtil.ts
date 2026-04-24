@@ -112,9 +112,7 @@ export class AndroidServicesUtil
     public isServiceRunning(name: string): boolean{
 var name = name
 
-    var activityManager: ActivityManager = resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE);
-
-                         as ActivityManager;
+    var activityManager: ActivityManager = resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE); as ActivityManager;
         
         
 ;

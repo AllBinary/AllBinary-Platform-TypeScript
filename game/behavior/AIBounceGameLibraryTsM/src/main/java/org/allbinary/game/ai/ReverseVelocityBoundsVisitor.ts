@@ -76,9 +76,7 @@ this.layerInterface= layerInterface;
         
 ;
     
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
-
-                         as VelocityInterface;
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
     
 }
 
@@ -88,9 +86,7 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerInterface!.getXP();
-
-                        ;
+                        return this.layerInterface!.getXP();;
     
 }
 
@@ -100,9 +96,7 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerInterface!.getYP();
-
-                        ;
+                        return this.layerInterface!.getYP();;
     
 }
 
@@ -111,8 +105,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() < 0)
                         this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
-
-                        
 }
 
 
@@ -120,8 +112,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() > 0)
                         this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
-
-                        
 }
 
 
@@ -129,8 +119,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() < 0)
                         this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
-
-                        
 }
 
 
@@ -138,8 +126,6 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
                         this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
-
-                        
 }
 
 

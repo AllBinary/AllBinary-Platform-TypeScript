@@ -74,9 +74,7 @@ var x = x
 var y = y
 var z = z
 
-    var pickupLayer: PickupLayer = this.getNextInstance();
-
-                         as PickupLayer;
+    var pickupLayer: PickupLayer = this.getNextInstance(); as PickupLayer;
         
         
 ;

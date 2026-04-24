@@ -147,7 +147,7 @@ objectArray[index++]= enumeration.nextElement()!;
     public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
 var hashtable = hashtable
 
-    var list: BasicArrayList = new BasicArrayList(hashtable.length);
+    var list: BasicArrayList = new BasicArrayListS(hashtable.length);
         
         
 ;

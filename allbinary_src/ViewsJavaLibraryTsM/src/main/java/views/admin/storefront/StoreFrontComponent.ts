@@ -70,9 +70,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest();
-
-                         as HttpServletRequest) as StoreFrontInterface;
+this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface;
     
 
                         if(this.newStoreFrontInterface!.getName() == 
@@ -97,9 +95,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.view();
-
-                        ;
+                        return super.view();;
     
 
                 //: 

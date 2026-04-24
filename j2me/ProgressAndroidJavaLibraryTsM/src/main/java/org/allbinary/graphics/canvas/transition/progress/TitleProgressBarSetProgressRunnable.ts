@@ -70,9 +70,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue();
-
-                        , this.progressCanvas!.getText());
+            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue(), this.progressCanvas!.getText());
     
 
                 //: 

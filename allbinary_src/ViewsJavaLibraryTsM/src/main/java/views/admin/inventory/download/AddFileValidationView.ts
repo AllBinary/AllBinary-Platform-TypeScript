@@ -142,9 +142,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -263,9 +261,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
 ;
     
 
-                        if(!categoryFile!.isDirectory();
-
-                        )
+                        if(!categoryFile!.isDirectory();)
                         
                                     {
                                     
@@ -599,9 +595,7 @@ var document = document
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);
-
-                         as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
         
         
 ;
@@ -695,9 +689,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!categoryFile!.isDirectory();
-
-                        )
+                        if(!categoryFile!.isDirectory();)
                         
                                     {
                                     stringBuffer!.append("Category ");
@@ -871,9 +863,7 @@ stringBuffer!.append("<br/>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 
@@ -919,9 +909,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     
@@ -1056,9 +1044,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
                         
                                     {
                                     stringBuffer!.append("File Name must be more than ");

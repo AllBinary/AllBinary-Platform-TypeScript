@@ -90,9 +90,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest();
-
-                         as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
         
         
 ;
@@ -105,9 +103,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString());
-
-                         as String;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()); as String;
         
         
 ;
@@ -118,9 +114,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CreateUserFactory.getInstance(hashMap);
-
-                        ;
+                        return CreateUserFactory.getInstance(hashMap);;
     
 }
 
@@ -144,9 +138,7 @@ var propertiesHashMap = propertiesHashMap
 ;
     
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString());
-
-                         as String;
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()); as String;
         
         
 ;
@@ -157,9 +149,7 @@ requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CreateUserFactory.getInstance(requestHashMap);
-
-                        ;
+                        return CreateUserFactory.getInstance(requestHashMap);;
     
 
                                     }

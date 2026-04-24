@@ -180,9 +180,7 @@ var userName = userName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.getColumnWhere(QuoteRequestData.getInstance()!.ID, UserData.USERNAME, userName);
-
-                        ;
+                        return super.getColumnWhere(QuoteRequestData.getInstance()!.ID, UserData.USERNAME, userName);;
     
 }
 
@@ -280,9 +278,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -292,9 +288,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.createTable(this.createTableStatement());
-
-                        ;
+                        return super.createTable(this.createTableStatement());;
     
 }
 

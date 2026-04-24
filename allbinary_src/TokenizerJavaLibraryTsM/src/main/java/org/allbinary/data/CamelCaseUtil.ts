@@ -36,6 +36,9 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -109,7 +112,7 @@ export class CamelCaseUtil
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -142,9 +145,7 @@ tokenizer.getTokens(string, list);
         
 i < size; i++)
         {
-word= list.get(i);
-
-                         as String;
+word= list.get(i); as String;
     
 word= stringValidationUtil!.isEmpty(word)
                         ?       
@@ -164,9 +165,7 @@ stringBuilder!.append(word);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuilder!.toString();
-
-                        ;
+                        return stringBuilder!.toString();;
     
 }
 

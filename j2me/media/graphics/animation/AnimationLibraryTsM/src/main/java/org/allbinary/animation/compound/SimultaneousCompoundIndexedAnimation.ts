@@ -106,9 +106,7 @@ indexedAnimation!.setFrame(frameIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexedAnimation!.getFrame();
-
-                        ;
+                        return indexedAnimation!.getFrame();;
     
 }
 
@@ -124,9 +122,7 @@ indexedAnimation!.setFrame(frameIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexedAnimation!.getSize();
-
-                        ;
+                        return indexedAnimation!.getSize();;
     
 }
 
@@ -166,9 +162,7 @@ indexedAnimation!.previousFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PrimitiveIntUtil.getArrayInstance();
-
-                        ;
+                        return PrimitiveIntUtil.getArrayInstance();;
     
 }
 

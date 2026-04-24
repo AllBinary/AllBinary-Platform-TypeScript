@@ -179,9 +179,7 @@ zipFile!.createNewFile();
 i < size; i++)
         {
 
-    var file: AbFile = fileBasicArrayList!.get(i);
-
-                         as AbFile;
+    var file: AbFile = fileBasicArrayList!.get(i); as AbFile;
         
         
 ;

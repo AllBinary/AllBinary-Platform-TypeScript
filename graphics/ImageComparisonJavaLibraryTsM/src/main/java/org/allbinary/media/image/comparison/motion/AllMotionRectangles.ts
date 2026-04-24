@@ -98,9 +98,7 @@ var imageComparisonInfo = imageComparisonInfo
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index);
-
-                         as PixelDelta;
+    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
         
         
 ;
@@ -139,9 +137,7 @@ var pixelDelta = pixelDelta
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index);
-
-                         as MotionRectangle;
+    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
         
         
 ;
@@ -207,9 +203,7 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
 
-                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta);
-
-                        )
+                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta);)
                         
                                     {
                                     
@@ -273,9 +267,7 @@ var pixelDelta = pixelDelta
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle, pixelDelta);
-
-                        ;
+                        return isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle, pixelDelta);;
     
 
                                     }

@@ -218,9 +218,7 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME);
-
-                         as String;
+this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
     
 this.titleValidation= new TitleNotRequiredValidation(hashMap);
     
@@ -246,9 +244,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);
-
-                        )
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -257,9 +253,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                                     }
                                 
 
-                        if(!this.titleValidation!.isValid();
-
-                        )
+                        if(!this.titleValidation!.isValid();)
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -333,9 +327,7 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 
                 //: 

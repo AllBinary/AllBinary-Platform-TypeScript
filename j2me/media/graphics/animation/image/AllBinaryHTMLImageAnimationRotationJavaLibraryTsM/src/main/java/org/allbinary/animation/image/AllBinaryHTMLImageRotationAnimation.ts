@@ -142,9 +142,7 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage();
-
-                         as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
         
         
 ;

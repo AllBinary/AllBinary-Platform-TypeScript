@@ -38,6 +38,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -94,7 +97,7 @@ export class LayerInterfaceFactory
         
 
     public init(){
-this.list= new BasicArrayList();
+this.list= new BasicArrayListD();
     
 }
 
@@ -120,9 +123,7 @@ this.logUtil!.putF(new StringMaker().
                             append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: Integer = hashtable.get(Layer.ID as Object);
-
-                         as Integer;
+    var typeInteger: Integer = hashtable.get(Layer.ID as Object); as Integer;
         
         
 ;
@@ -137,9 +138,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);
-
-                        ;
+                        return layerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);;
     
 }
 

@@ -221,17 +221,13 @@ var hashMap = hashMap
 ;
     
 
-    var aName: string = hashMap!.get(transformInfoData!.NAME);
-
-                         as String;
+    var aName: string = hashMap!.get(transformInfoData!.NAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aName);)
                         
                                     {
                                     this.name= aName;
@@ -263,17 +259,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aStoreName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aStoreName);)
                         
                                     {
                                     this.storeName= aStoreName;
@@ -282,17 +274,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME);
-
-                         as String;
+    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aObjectFileName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aObjectFileName);)
                         
                                     {
                                     this.objectFileName= aObjectFileName;
@@ -321,17 +309,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var aObject: string = hashMap!.get(transformInfoData!.OBJECT);
-
-                         as String;
+    var aObject: string = hashMap!.get(transformInfoData!.OBJECT); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aObject);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aObject);)
                         
                                     {
                                     
@@ -365,11 +349,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG);
-
-                         as String);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);)
                         
                                     {
                                     
@@ -381,25 +361,19 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                                     }
                                 
-this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG);
-
-                         as String);
+this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);
     
 
                                     }
                                 
 
-    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME);
-
-                         as String;
+    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(objectConfigFileName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(objectConfigFileName);)
                         
                                     {
                                     
@@ -417,17 +391,13 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME);
-
-                         as String;
+    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(type);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(type);)
                         
                                     {
                                     
@@ -447,17 +417,13 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME);
-
-                         as String;
+    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aTemplateFileName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aTemplateFileName);)
                         
                                     {
                                     this.templateFileName= aTemplateFileName;
@@ -466,17 +432,13 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE);
-
-                         as String;
+    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aTemplate);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aTemplate);)
                         
                                     {
                                     
@@ -496,9 +458,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(fileDataString);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(fileDataString);)
                         
                                     {
                                     this.template= fileDataString;
@@ -510,17 +470,13 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME);
-
-                         as String;
+    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aDataFileName);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aDataFileName);)
                         
                                     {
                                     this.dataFileName= aDataFileName;
@@ -529,17 +485,13 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string = hashMap!.get(transformInfoData!.DATA);
-
-                         as String;
+    var aData: string = hashMap!.get(transformInfoData!.DATA); as String;
         
         
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aData);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(aData);)
                         
                                     {
                                     
@@ -559,9 +511,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(fileDataString);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(fileDataString);)
                         
                                     {
                                     this.data= fileDataString;
@@ -668,9 +618,7 @@ stringBuffer!.append("TransformInfoInterface(HashMap)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 
@@ -886,9 +834,7 @@ this.data= value;
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(dataFileString);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(dataFileString);)
                         
                                     {
                                     
@@ -901,9 +847,7 @@ this.data= value;
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(this.data);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(this.data);)
                         
                                     {
                                     
@@ -941,9 +885,7 @@ this.data= fileData;
 
         try {
             
-                        if(!stringValidationUtil!.isEmpty(this.data);
-
-                        )
+                        if(!stringValidationUtil!.isEmpty(this.data);)
                         
                                     {
                                     
@@ -1052,9 +994,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.create();
-
-                        ;
+                        return DomDocumentHelper.create();;
     
 
                                     }
@@ -1203,9 +1143,7 @@ vector.add(time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName();
-
-                         as Object;
+                        return this.getName(); as Object;
     
 }
 

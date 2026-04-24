@@ -63,6 +63,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -97,7 +100,7 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
         
         
 
-    public static readonly texture2dList: BasicArrayList = new BasicArrayList();
+    public static readonly texture2dList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -182,9 +185,7 @@ var gl = gl
     initTexture(gl: GL10): boolean{
 var gl = gl
 
-                        if(!texture2dList!.contains(this);
-
-                        )
+                        if(!texture2dList!.contains(this);)
                         
                                     {
                                     texture2dList!.add(this);
@@ -281,9 +282,7 @@ var z = z
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(this.getName())!.append(super.toString())!.append(graphicsStrings!.OPACITY)!.appendfloat(this.openGLESImageProperties!.alphaf)!.toString();
-
-                        ;
+                            append(this.getName())!.append(super.toString())!.append(graphicsStrings!.OPACITY)!.appendfloat(this.openGLESImageProperties!.alphaf)!.toString();;
     
 }
 

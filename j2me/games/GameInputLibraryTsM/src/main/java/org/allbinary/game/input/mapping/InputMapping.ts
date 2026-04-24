@@ -42,6 +42,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -80,7 +83,7 @@ export class InputMapping
         
         
 
-    private readonly mappedList: BasicArrayList = new BasicArrayList();
+    private readonly mappedList: BasicArrayList = new BasicArrayListD();
         
         
 protected constructor (){
@@ -94,9 +97,7 @@ protected constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.length;
-
-                        ;
+                        return this.hashtable.length;;
     
 }
 
@@ -223,9 +224,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 ;
     
 
-                        if(!list.contains(mappedToInput);
-
-                        )
+                        if(!list.contains(mappedToInput);)
                         
                                     {
                                     list.add(mappedToInput);
@@ -244,9 +243,7 @@ this.mappedList!.add(mappedToInput);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mappedList!.contains(input);
-
-                        ;
+                        return this.mappedList!.contains(input);;
     
 }
 
@@ -266,7 +263,7 @@ this.mappedList!.add(mappedToInput);
                         
                                     {
                                     
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;

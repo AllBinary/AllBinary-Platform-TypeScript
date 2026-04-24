@@ -91,9 +91,7 @@ this.propertiesHashMap= hashMap;
 this.pageContext= pageContext;
     
 
-    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
         
         
 ;

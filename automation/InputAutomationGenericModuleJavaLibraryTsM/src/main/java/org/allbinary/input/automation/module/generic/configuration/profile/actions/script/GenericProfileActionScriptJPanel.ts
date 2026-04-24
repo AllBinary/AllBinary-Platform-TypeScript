@@ -226,9 +226,7 @@ var evt = evt
         
 ;
     
-jPopupMenu!.show(evt.getSource();
-
-                         as JComponent, evt.getX(), evt.getY());
+jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY());
     
 
                                     }

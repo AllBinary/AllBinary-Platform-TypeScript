@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -89,9 +92,9 @@ public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCost
             //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
 this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
     
-this.startPathFindingNodeList= new BasicArrayList(1);
+this.startPathFindingNodeList= new BasicArrayListS(1);
     
-this.endPathFindingNodeList= new BasicArrayList(1);
+this.endPathFindingNodeList= new BasicArrayListS(1);
     
 }
 

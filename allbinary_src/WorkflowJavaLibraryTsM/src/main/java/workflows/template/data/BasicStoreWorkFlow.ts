@@ -71,9 +71,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(StoreFrontData.getInstance()!.NAME);
-
-                         as String;
+                        return this.getPropertiesHashMap()!.get(StoreFrontData.getInstance()!.NAME); as String;
     
 }
 

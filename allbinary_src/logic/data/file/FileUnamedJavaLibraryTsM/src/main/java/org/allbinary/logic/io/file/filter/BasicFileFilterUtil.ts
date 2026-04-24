@@ -27,6 +27,9 @@ import { IncludeFileExtensionsBooleanFileVisitor } from "../../../../../../org/a
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -54,7 +57,7 @@ export class BasicFileFilterUtil
     public static getInstance(extension: string): FileFilter{
     //var extension = extension
 
-    var vector: BasicArrayList = new BasicArrayList();
+    var vector: BasicArrayList = new BasicArrayListD();
         
         
 ;

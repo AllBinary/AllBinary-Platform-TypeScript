@@ -21,6 +21,9 @@
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
 
     
@@ -69,7 +72,7 @@ export class BuildingScrollTouchButtonsBuilder extends BaseTouchInput {
             this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -124,9 +127,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();
-
-                        ;
+                        return BasicArrayListUtil.getInstance()!.getImmutableInstance();;
     
 }
 

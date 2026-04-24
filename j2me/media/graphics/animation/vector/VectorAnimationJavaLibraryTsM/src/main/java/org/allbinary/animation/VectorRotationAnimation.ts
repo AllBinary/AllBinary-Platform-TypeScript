@@ -106,9 +106,7 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
     public adjustFrame(newAngle: number){
     //var newAngle = newAngle
-this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
-
-                        ));
+this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
     
 }
 

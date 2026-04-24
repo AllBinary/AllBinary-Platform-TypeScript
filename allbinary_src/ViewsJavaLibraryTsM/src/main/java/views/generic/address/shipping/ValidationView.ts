@@ -110,9 +110,7 @@ this.streetAddressList= billingAddressesEntity!.get();
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index);
-
-                         as StreetAddress;
+    var streetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
         
         
 ;

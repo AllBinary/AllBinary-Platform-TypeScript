@@ -126,9 +126,7 @@ this.circularIndexUtil!.setIndex(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.circularIndexUtil!.getIndex();
-
-                        ;
+                        return this.circularIndexUtil!.getIndex();;
     
 }
 
@@ -138,9 +136,7 @@ this.circularIndexUtil!.setIndex(index);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.circularIndexUtil!.getSize();
-
-                        ;
+                        return this.circularIndexUtil!.getSize();;
     
 }
 

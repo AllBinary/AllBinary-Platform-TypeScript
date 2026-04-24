@@ -97,9 +97,7 @@ var motionGestureInput = motionGestureInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventPool!.getInstance(motionGestureInput!.getId() -MIN);
-
-                         as MotionGestureEvent;
+                        return eventPool!.getInstance(motionGestureInput!.getId() -MIN); as MotionGestureEvent;
     
 }
 

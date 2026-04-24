@@ -24,6 +24,9 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -48,7 +51,7 @@ export class BaseBasicArrayListCache
          {
         
 
-    readonly list: BasicArrayList = new BasicArrayList();
+    readonly list: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -67,9 +70,7 @@ stringBuffer!.appendint(this.list.size());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

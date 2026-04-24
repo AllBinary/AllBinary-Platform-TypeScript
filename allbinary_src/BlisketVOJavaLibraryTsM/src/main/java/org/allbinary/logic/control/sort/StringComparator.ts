@@ -69,9 +69,7 @@ var object2 = object2
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return string.compareTo(string2);
-
-                        ;
+                        return string.compareTo(string2);;
     
 }
 

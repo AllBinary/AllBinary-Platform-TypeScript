@@ -128,9 +128,7 @@ var pathFindingNodeCostInfo = pathFindingNodeCostInfo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return java.lang.Long.compare(this.totalCostP, pathFindingNodeCostInfo!.totalCostP);
-
-                        ;
+                        return java.lang.Long.compare(this.totalCostP, pathFindingNodeCostInfo!.totalCostP);;
     
 }
 
@@ -162,9 +160,7 @@ stringBuffer!.appendlong(this.totalCostP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

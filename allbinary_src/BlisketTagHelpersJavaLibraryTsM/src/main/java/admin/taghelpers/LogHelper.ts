@@ -85,9 +85,7 @@ this.portion= new Portion(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.dropTable();
-
-                        ;
+                        return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.dropTable();;
     
 
                 //: 
@@ -126,9 +124,7 @@ this.portion= new Portion(hashMap);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable();
-
-                        ;
+                        return LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!.createTable();;
     
 
                 //: 

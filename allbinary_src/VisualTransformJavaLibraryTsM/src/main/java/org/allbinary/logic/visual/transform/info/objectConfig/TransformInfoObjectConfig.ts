@@ -383,9 +383,7 @@ index < numberOfViews; index++)
 ;
     
 
-    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME);
-
-                         as Attr;
+    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME); as Attr;
         
         
 ;
@@ -427,9 +425,7 @@ index < numberOfViews; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return componentNode!.getAttributes();
-
-                        ;
+                        return componentNode!.getAttributes();;
     
 }
 
@@ -438,9 +434,7 @@ index < numberOfViews; index++)
             
     public getName(): string{
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);
-
-                         as Attr;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
         
         
 ;
@@ -449,9 +443,7 @@ index < numberOfViews; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return attrNode!.getValue();
-
-                        ;
+                        return attrNode!.getValue();;
     
 }
 
@@ -461,9 +453,7 @@ index < numberOfViews; index++)
     public setName(name: string){
 var name = name
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);
-
-                         as Attr;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
         
         
 ;
@@ -575,9 +565,7 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index);
-
-                         as Node;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
         
         
 ;
@@ -628,9 +616,7 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index);
-
-                         as Node;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
         
         
 ;
@@ -721,9 +707,7 @@ index < length; index++)
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(GROUP);
-
-                         as Attr;
+    var attrNode: Attr = attributes.getNamedItem(GROUP); as Attr;
         
         
 ;
@@ -786,9 +770,7 @@ break;
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index);
-
-                         as Node;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
         
         
 ;
@@ -844,9 +826,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransformDomNodes(TransformInfosData.getInstance()!.GROUP);
-
-                        ;
+                        return this.getTransformDomNodes(TransformInfosData.getInstance()!.GROUP);;
     
 }
 
@@ -858,9 +838,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransforms(TransformInfosData.getInstance()!.NAME);
-
-                        ;
+                        return this.getTransforms(TransformInfosData.getInstance()!.NAME);;
     
 }
 
@@ -872,9 +850,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransforms(TransformInfosData.getInstance()!.GROUP);
-
-                        ;
+                        return this.getTransforms(TransformInfosData.getInstance()!.GROUP);;
     
 }
 
@@ -886,9 +862,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTransforms(TransformInfoData.getInstance()!.PARENT);
-
-                        ;
+                        return this.getTransforms(TransformInfoData.getInstance()!.PARENT);;
     
 }
 
@@ -898,9 +872,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0);
-
-                        ;
+                        return this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0);;
     
 }
 
@@ -937,9 +909,7 @@ this.outputTypeName= outputTypeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomNodeHelper.getTextNodeValue(node);
-
-                        ;
+                        return DomNodeHelper.getTextNodeValue(node);;
     
 }
 
@@ -957,9 +927,7 @@ this.outputTypeName= outputTypeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomNodeHelper.getTextNodeValue(node);
-
-                        ;
+                        return DomNodeHelper.getTextNodeValue(node);;
     
 }
 
@@ -977,9 +945,7 @@ this.outputTypeName= outputTypeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomNodeHelper.getTextNodeValue(node);
-
-                        ;
+                        return DomNodeHelper.getTextNodeValue(node);;
     
 }
 
@@ -997,9 +963,7 @@ this.outputTypeName= outputTypeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DomDocumentHelper.toString(this.document);
-
-                        ;
+                        return DomDocumentHelper.toString(this.document);;
     
 
                                     }

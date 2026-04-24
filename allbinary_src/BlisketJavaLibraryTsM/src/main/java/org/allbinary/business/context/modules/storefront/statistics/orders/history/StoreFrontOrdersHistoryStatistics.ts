@@ -126,9 +126,7 @@ this.totalMoney= new Money();
         
 index < size; index++)
         {
-orderHistoryInterface= orderHistoryInterfaceVector!.get(index);
-
-                         as OrderHistoryInterface;
+orderHistoryInterface= orderHistoryInterfaceVector!.get(index); as OrderHistoryInterface;
     
 numberOfOrders= numberOfOrders +1;
     

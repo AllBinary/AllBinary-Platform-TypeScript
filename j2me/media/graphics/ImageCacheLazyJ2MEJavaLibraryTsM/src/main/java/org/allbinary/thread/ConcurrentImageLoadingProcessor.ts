@@ -133,9 +133,7 @@ this.imageCache= imageCache;
 
     public runTask(){
 
-                        if(!this.runnable.isRunning();
-
-                        )
+                        if(!this.runnable.isRunning();)
                         
                                     {
                                     ImageThreadPool.getInstance()!.runTask(this.runnable);

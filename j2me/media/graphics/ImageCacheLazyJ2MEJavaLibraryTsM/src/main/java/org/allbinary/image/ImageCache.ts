@@ -90,6 +90,9 @@ import { SynchObject } from "../../../org/allbinary/thread/SynchObject.js";
 import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -146,19 +149,19 @@ export class ImageCache extends ImageCacheBase {
         
         
 
-    public readonly loadNowList: BasicArrayList = new BasicArrayList();
+    public readonly loadNowList: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly loadSoonList: BasicArrayList = new BasicArrayList();
+    public readonly loadSoonList: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly loadList: BasicArrayList = new BasicArrayList();
+    public readonly loadList: BasicArrayList = new BasicArrayListD();
         
         
 
-    public readonly loadAfterList: BasicArrayList = new BasicArrayList();
+    public readonly loadAfterList: BasicArrayList = new BasicArrayListD();
         
         
 
@@ -362,9 +365,7 @@ var renderer = renderer
 ;
     
 
-        while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized();
-
-                         || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
+        while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized(); || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
         {
 Thread.sleep(120);
     
@@ -444,9 +445,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadAfterList!.get(0);
-
-                         as LazyImageRotationAnimation;
+                            lazyImageRotationAnimation= this.loadAfterList!.get(0); as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
@@ -464,9 +463,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadSoonList!.get(0);
-
-                         as LazyImageRotationAnimation;
+                            lazyImageRotationAnimation= this.loadSoonList!.get(0); as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForAnimation(lazyImageRotationAnimation))
@@ -489,9 +486,7 @@ this.firstTime= false;
 
                                     }
                                 
-lazyImageRotationAnimation= this.loadNowList!.get(0);
-
-                         as LazyImageRotationAnimation;
+lazyImageRotationAnimation= this.loadNowList!.get(0); as LazyImageRotationAnimation;
     
 }
 
@@ -591,11 +586,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
             
     public loadImages(){
 
-        while(!this.loadList!.isEmpty();
-
-                         || !this.loadNowList!.isEmpty();
-
-                        )
+        while(!this.loadList!.isEmpty(); || !this.loadNowList!.isEmpty();)
         {
 loadImageForAnimations();
     
@@ -610,9 +601,7 @@ loadImage();
             
     public loadImageForAnimations(){
 
-        while(!this.loadNowList!.isEmpty();
-
-                        )
+        while(!this.loadNowList!.isEmpty();)
         {
 loadImageForAnimation();
     
@@ -625,16 +614,10 @@ loadImageForAnimation();
             
     public loadRemainingAnimations(){
 
-        while(!this.loadAfterList!.isEmpty();
-
-                         || !this.loadNowList!.isEmpty();
-
-                        )
+        while(!this.loadAfterList!.isEmpty(); || !this.loadNowList!.isEmpty();)
         {
 
-        while(!this.loadNowList!.isEmpty();
-
-                        )
+        while(!this.loadNowList!.isEmpty();)
         {
 loadImageForAnimation();
     
@@ -656,12 +639,8 @@ loadImageForAnimation();
         //mutex.withLock
         {
 
-                        if(!this.loadAfterList!.isEmpty();
-
-                        )
-                        lazyImageRotationAnimation= this.loadAfterList!.remove(0);
-
-                         as LazyImageRotationAnimation
+                        if(!this.loadAfterList!.isEmpty();)
+                        lazyImageRotationAnimation= this.loadAfterList!.remove(0); as LazyImageRotationAnimation
 }
 
 
@@ -745,9 +724,7 @@ loadImageForAnimation();
 
                                     }
                                 
-image= this.loadList!.remove(0);
-
-                         as Image;
+image= this.loadList!.remove(0); as Image;
     
 }
 
@@ -1116,9 +1093,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.creatImage(key as String);
-
-                        ;
+                        return this.creatImage(key as String);;
     
 
                                     }
@@ -1181,9 +1156,7 @@ this.loadList!.add(image);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImageLater(key, width, height);
-
-                        ;
+                        return Image.createImageLater(key, width, height);;
     
 }
 
@@ -1191,7 +1164,7 @@ this.loadList!.add(image);
     public getAssociated(lazyImageRotationAnimation: LazyImageRotationAnimation): BasicArrayList{
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
-    var list: BasicArrayList = new BasicArrayList();
+    var list: BasicArrayList = new BasicArrayListD();
         
         
 ;
@@ -1227,9 +1200,7 @@ this.loadList!.add(image);
         
 index < size; index++)
         {
-lazyImageRotationAnimation2= this.loadAfterList!.get(index);
-
-                         as LazyImageRotationAnimation;
+lazyImageRotationAnimation2= this.loadAfterList!.get(index); as LazyImageRotationAnimation;
     
 
                         if(lazyImageRotationAnimation2!.instanceId == lazyImageRotationAnimation!.instanceId)

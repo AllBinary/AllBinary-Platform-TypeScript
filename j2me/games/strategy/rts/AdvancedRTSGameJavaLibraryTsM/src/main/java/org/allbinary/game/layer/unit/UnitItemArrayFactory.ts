@@ -145,9 +145,7 @@ this.resources= resources;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createFlagItem(flagResources, name, layerInterfaceFactoryInterface);
-
-                        ;
+                        return this.createFlagItem(flagResources, name, layerInterfaceFactoryInterface);;
     
 }
 

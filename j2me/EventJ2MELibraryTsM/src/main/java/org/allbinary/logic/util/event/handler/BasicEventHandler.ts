@@ -39,6 +39,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -81,13 +84,13 @@ export class BasicEventHandler
 public constructor (){
 
             super();
-        this.eventListenerInterfaceList= new BasicArrayList();
+        this.eventListenerInterfaceList= new BasicArrayListD();
     
 }
 
 
     public removeAllListeners(){
-this.eventListenerInterfaceList= new BasicArrayList();
+this.eventListenerInterfaceList= new BasicArrayListD();
     
 }
 
@@ -114,9 +117,7 @@ this.eventListenerInterfaceList= new BasicArrayList();
         
 index < size; index++)
         {
-eventListenerInterface= vector.get(index);
-
-                         as EventListenerInterface;
+eventListenerInterface= vector.get(index); as EventListenerInterface;
     
 this.addListener(eventListenerInterface);
     
@@ -147,9 +148,7 @@ this.addListener(eventListenerInterface);
         
 index < size; index++)
         {
-eventListenerInterface= vector.get(index);
-
-                         as EventListenerInterface;
+eventListenerInterface= vector.get(index); as EventListenerInterface;
     
 this.removeListener(eventListenerInterface);
     
@@ -161,9 +160,7 @@ this.removeListener(eventListenerInterface);
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
-
-                        )
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -177,9 +174,7 @@ this.removeListener(eventListenerInterface);
     public addListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);
-
-                        )
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -223,9 +218,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -290,9 +283,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index);
-
-                         as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 stringBuffer!.append(this.eventStrings!.LISTENER_LABEL);
     
@@ -314,9 +305,7 @@ index++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stringBuffer!.toString();
-
-                        ;
+                        return stringBuffer!.toString();;
     
 }
 

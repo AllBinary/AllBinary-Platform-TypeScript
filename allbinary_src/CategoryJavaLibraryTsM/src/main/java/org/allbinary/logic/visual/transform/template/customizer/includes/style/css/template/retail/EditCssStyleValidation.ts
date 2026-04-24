@@ -94,9 +94,7 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isValid();
-
-                        ;
+                        return super.isValid();;
     
 }
 
@@ -106,9 +104,7 @@ public constructor (hashMap: HashMap<any, any>){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.validationInfo();
-
-                        ;
+                        return super.validationInfo();;
     
 }
 
@@ -172,9 +168,7 @@ styleNode!.appendChild(new ColorsView().
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i);
-
-                         as DomNodeInterface;
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i); as DomNodeInterface;
         
         
 ;
