@@ -18,6 +18,9 @@
 
 
 
+import { GamePersistanceStrings } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
+
+    
 import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
 
     
@@ -54,6 +57,14 @@ import { Input } from "./Input.js";
 
 export class J2MEGameInputMapping extends PersistentInputMapping {
         
+public constructor (){
+            super(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
 
                 //@Throws(Error::class)
             

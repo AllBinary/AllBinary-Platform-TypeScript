@@ -75,50 +75,6 @@ export class AndroidMediaPlayerWrapperListener
     private androidMediaPlayerWrapper: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.NULL_ANDROID_MEDIA_PLAYER_WRAPPER;
         
         
-public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper, listeningLevel: number){
-
-            super();
-            //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
-    //var listeningLevel = listeningLevel
-
-        try {
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
-    
-this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
-    
-
-    var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
-        
-        
-;
-    
-
-                        if(listeningLevel == 1)
-                        
-                                    {
-                                    mediaPlayer!.setOnCompletionListener(mOnCompletionListener);
-    
-
-                                    }
-                                
-                        else {
-                            
-
-
-                            throw new Error("Unknow Listening Leve")
-
-                        }
-                            
-
-                //: 
-} catch(e) 
-            {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
-    
-}
-
-}
-
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 
             super();

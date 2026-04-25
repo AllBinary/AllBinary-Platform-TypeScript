@@ -53,14 +53,6 @@ export class CustomForm extends CustomScreen {
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
         
         
-public constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-
-            super();
-        var title = title
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-}
-
 public constructor (title: string, items: CustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();

@@ -50,16 +50,6 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         
-public constructor (image: Image, sequenceArray: number[]){
-            this(image, sequenceArray, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var sequenceArray = sequenceArray
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, image.getWidth(), image.getHeight(), 0, 0, animationBehaviorFactory);
                         //var image = image

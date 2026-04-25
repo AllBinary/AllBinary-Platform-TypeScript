@@ -44,7 +44,29 @@ export class Life
          implements LifeInterface {
         
 
-    public static readonly NO_LIFE: Life = new Life();
+    public static create(): Life{
+
+        try {
+            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new Life(0, 0);
+    
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw new RuntimeException()
+}
+
+}
+
+
+    public static readonly NO_LIFE: Life = Life.create()!;
         
         
 
@@ -53,17 +75,6 @@ export class Life
     private startLives: number
 
     private maxlives: number
-public constructor (){
-
-            super();
-        this.lives= 0;
-    
-this.startLives= 0;
-    
-this.maxlives= 0;
-    
-}
-
 public constructor (lives: number, maxlives: number){
 
             super();

@@ -30,6 +30,9 @@ import { WeaponLayer } from "../../../../../org/allbinary/game/layer/weapon/Weap
 import { WeaponLayerCircularPool } from "../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
 
     
+import { NoScoreable } from "../../../../../org/allbinary/game/score/NoScoreable.js";
+
+    
 import { ScoreableInterface } from "../../../../../org/allbinary/game/score/ScoreableInterface.js";
 
     
@@ -66,19 +69,19 @@ import { BasicWeaponPart } from "./BasicWeaponPart.js";
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 
-    private weaponLayerCircularStaticPool: WeaponLayerCircularPool
-public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool){
-            super(animationInterface);
-                        //var animationInterface = animationInterface
+    public static create(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
+    //var animationInterface = animationInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new BasicProjectileWeaponPart(animationInterface, AllBinaryLayer.NULL_ALLBINARY_LAYER, weaponLayerCircularStaticPool, WeaponProperties.NULL_WEAPON_PROPERTIES, NoScoreable.getInstance(), RelativeRelationship.NULL_RELATIVE_RELATIONSHIP);
     
 }
 
+
+    private weaponLayerCircularStaticPool: WeaponLayerCircularPool
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
                         //var animationInterface = animationInterface

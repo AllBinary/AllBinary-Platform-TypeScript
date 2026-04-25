@@ -24,9 +24,6 @@ import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
-import { BasicColorSetUtil } from "../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
-
-    
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -67,6 +64,48 @@ import { AnimationBehavior } from "./AnimationBehavior.js";
 export class VectorAnimation extends IndexedAnimation implements VectorAnimationInterface {
         
 
+    public static create(currentPoints2: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior): VectorAnimation{
+    //var currentPoints2 = currentPoints2
+    //var basicColor = basicColor
+    //var animationBehavior = animationBehavior
+
+    var currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));
+        
+        
+;
+    
+
+    var size: number = currentPoints2!.length
+                ;
+        
+        
+;
+    
+
+
+
+
+                        for (
+    var index: number = 0;
+        
+        
+index < size; index++)
+        {
+currentPoints[0]![index]![0]= currentPoints2[index]![0]!;
+    
+currentPoints[0]![index]![1]= currentPoints2[index]![1]!;
+    
+}
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new VectorAnimation(currentPoints, basicColor, animationBehavior);
+    
+}
+
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -89,44 +128,6 @@ public constructor (currentPoints: number[][][], basicColor: BasicColor, animati
                     
 this.setPoints(currentPoints);
     
-this.setBasicColorP(basicColor);
-    
-}
-
-public constructor (currentPoints: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
-            super(animationBehavior);
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.setPoints(Array.from({ length: 1 }, () => Array.from({ length: currentPoints!.length }, () => new Array(0).fill(2))));
-    
-
-    var size: number = currentPoints!.length
-                ;
-        
-        
-;
-    
-
-
-
-
-                        for (
-    var index: number = 0;
-        
-        
-index < size; index++)
-        {
-this.currentPoints[0]![index]![0]= currentPoints[index]![0]!;
-    
-this.currentPoints[0]![index]![1]= currentPoints[index]![1]!;
-    
-}
-
 this.setBasicColorP(basicColor);
     
 }

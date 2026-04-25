@@ -24,6 +24,9 @@ import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
+import { Font } from "../../../../../javax/microedition/lcdui/Font.js";
+
+    
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -105,7 +108,7 @@ export class LicenseRegistrationTextBox extends CustomTextBox {
         
         
 public constructor (cmdListener: CommandListener, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, backgrounBasicColor, foregroundBasicColor);
+            super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
                     var cmdListener = cmdListener
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor

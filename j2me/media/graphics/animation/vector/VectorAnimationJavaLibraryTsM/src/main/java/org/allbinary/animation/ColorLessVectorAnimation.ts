@@ -59,16 +59,6 @@ public constructor (currentPoints: number[][][], animationBehavior: AnimationBeh
                     
 }
 
-public constructor (currentPoints: number[][], animationBehavior: AnimationBehavior){
-            super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior);
-                        //var currentPoints = currentPoints
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public paint(graphics: Graphics, x: number, y: number){
 var graphics = graphics

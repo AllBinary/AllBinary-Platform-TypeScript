@@ -78,6 +78,8 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
         
 import { ScrollCurrentSelectionForm } from "./ScrollCurrentSelectionForm.js";
 
+import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
+
 import { FormType } from "./FormType.js";
 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
@@ -91,7 +93,7 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
         
         
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(title, items, rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
+            super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items
     //var rectangle = rectangle

@@ -79,18 +79,6 @@ this.onHealthChange();
     
 }
 
-public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number){
-            this(layerInterface, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);
-                    var layerInterface = layerInterface
-var healthInterface = healthInterface
-var location = location
-var direction = direction
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public onHealthChange(){
 this.animationInterface!.onHealthChange(this.healthInterface!.getHealth() *this.allbinaryLayer!.getWidth() /this.healthInterface!.getMaxHealth());

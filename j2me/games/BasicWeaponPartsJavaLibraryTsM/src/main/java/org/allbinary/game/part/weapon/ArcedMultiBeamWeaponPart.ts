@@ -72,20 +72,6 @@ export class ArcedMultiBeamWeaponPart extends BasicWeaponPart {
     private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool
 
     private readonly total: number
-public constructor (animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool){
-            super(animationInterface);
-                        //var animationInterface = animationInterface
-    //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.total= 2;
-    
-this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
-    
-}
-
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
                         //var animationInterface = animationInterface

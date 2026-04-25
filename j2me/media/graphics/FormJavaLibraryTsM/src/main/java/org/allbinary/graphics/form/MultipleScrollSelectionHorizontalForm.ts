@@ -64,6 +64,25 @@ import { FormTypeFactory } from "./FormTypeFactory.js";
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
         
 
+                //@Throws(Error::class)
+            
+    public static create(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
+    //var title = title
+    //var items = items
+    //var rectangle = rectangle
+    //var formType = formType
+    //var border = border
+    //var backgroundBasicColor = backgroundBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new MultipleScrollSelectionHorizontalForm(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+    
+}
+
+
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.toInt()!;
         
         
@@ -72,21 +91,6 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
                         //var title = title
     //var items = items
     //var formPaintableFactory = formPaintableFactory
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
     //var rectangle = rectangle
     //var formType = formType
     //var border = border

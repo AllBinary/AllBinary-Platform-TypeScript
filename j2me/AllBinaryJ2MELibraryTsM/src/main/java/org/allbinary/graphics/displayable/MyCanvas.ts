@@ -118,14 +118,6 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
     private readonly commandStack: Stack<any>
 
     private isPaused: boolean= false
-public constructor (){
-            this(CommonStrings.getInstance()!.UNKNOWN, new BasicArrayListD());
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (name: string, childNameList: BasicArrayList){
 
             super();

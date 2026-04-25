@@ -70,23 +70,6 @@ this.dy= dy;
     
 }
 
-public constructor (currentPoints: number[][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior){
-            super(currentPoints, basicColor, animationBehavior);
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.dx= dx;
-    
-this.dy= dy;
-    
-}
-
 
     public paint(graphics: Graphics, x: number, y: number){
     //var graphics = graphics

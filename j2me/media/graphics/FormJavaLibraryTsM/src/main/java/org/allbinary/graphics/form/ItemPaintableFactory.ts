@@ -48,7 +48,7 @@ export class ItemPaintableFactory extends ItemPaintable {
         
         
 
-    public static getInstance(): ItemPaintable{
+    public static getInstance(): ItemPaintableFactory{
 
 
 

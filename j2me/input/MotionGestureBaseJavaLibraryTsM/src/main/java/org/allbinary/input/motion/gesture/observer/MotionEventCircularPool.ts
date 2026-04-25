@@ -74,11 +74,6 @@ var id = id
     private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MIN);
         
         
-private constructor (){
-
-            super();
-        }
-
 private constructor (id: number){
 
             super();

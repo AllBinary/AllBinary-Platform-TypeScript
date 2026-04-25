@@ -24,6 +24,9 @@ import { EGLConfig } from "../../../../../javax/microedition/khronos/egl/EGLConf
 import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
+import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+
+    
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -56,7 +59,7 @@ import { ShaderStrings } from "./ShaderStrings.js";
 export class CompositeShaderUpdater extends ShaderUpdater {
         
 
-    private static readonly instance: CompositeShaderUpdater = new CompositeShaderUpdater(StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance());
+    private static readonly instance: CompositeShaderUpdater = new CompositeShaderUpdater(StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), NullUtil.getInstance()!.NULL_INT_ARRAY);
         
         
 
@@ -89,17 +92,6 @@ export class CompositeShaderUpdater extends ShaderUpdater {
     public readonly attributeHandleArray: number[]
 
     public readonly attributeArray: string[]
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[]){
-            this(uniformBlockArray, uniformArray, attributeArray, new Array(attributeArray!.length));
-                        //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();

@@ -62,19 +62,6 @@ export class CircleAnimation extends Animation implements ColorCompositeInterfac
     width: number
 
     height: number
-public constructor (widthAndHeight: number, basicColor: BasicColor){
-
-            super();
-        var widthAndHeight = widthAndHeight
-var basicColor = basicColor
-this.width= widthAndHeight;
-    
-this.height= widthAndHeight;
-    
-this.setBasicColorP(basicColor);
-    
-}
-
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();

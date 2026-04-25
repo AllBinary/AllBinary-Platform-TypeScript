@@ -53,6 +53,8 @@ import { BaseTouchInput } from "./BaseTouchInput.js";
 
 import { CommonButtons } from "./CommonButtons.js";
 
+import { TouchButton } from "./TouchButton.js";
+
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
@@ -98,19 +100,19 @@ export class PreGameScrollSelectionTouchButtonsBuilder extends BaseTouchInput {
 ;
     
 
-    var LEFT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.LEFT, TouchButtonStrafeLeftResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
+    var LEFT: TouchButton = TouchButton.create(BasicTouchInputFactory.getInstance()!.LEFT, TouchButtonStrafeLeftResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
         
         
 ;
     
 
-    var RIGHT: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.RIGHT, TouchButtonStrafeRightResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
+    var RIGHT: TouchButton = TouchButton.create(BasicTouchInputFactory.getInstance()!.RIGHT, TouchButtonStrafeRightResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.TOP_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
         
         
 ;
     
 
-    var START: TouchButton = new TouchButton(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_FIVE, TouchButtonStartResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf());
+    var START: TouchButton = TouchButton.create(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_FIVE, TouchButtonStartResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.BOTTOM_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
         
         
 ;

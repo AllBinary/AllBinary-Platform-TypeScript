@@ -36,6 +36,9 @@ import { TextAnimation } from "../../../../org/allbinary/animation/text/TextAnim
 import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
 
     
@@ -70,7 +73,7 @@ export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
         
         
 
-    private readonly textAnimation: TextAnimation = new TextAnimation(AnimationBehavior.getInstance());
+    private readonly textAnimation: TextAnimation = new TextAnimation(StringUtil.getInstance()!.EMPTY_STRING, AnimationBehavior.getInstance());
         
         
 

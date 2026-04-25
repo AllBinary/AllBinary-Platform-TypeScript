@@ -81,17 +81,6 @@ export class SpriteIndexedAnimation extends IndexedAnimation implements ColorCom
     readonly image: Image
 
     private readonly basicColorArray: BasicColor[]
-public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior){
-            this(sprite, image, BasicColorUtil.getInstance()!.ZERO_ARRAY, animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var sprite = sprite

@@ -184,7 +184,7 @@ export class RTSPlayerGameInput extends PlayerGameInput {
         
         
 public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
-            super(inputList, playerInputId);
+            super(inputList, new BasicArrayListD(), playerInputId);
                         //var gameCanvas = gameCanvas
     //var inputList = inputList
     //var playerInputId = playerInputId

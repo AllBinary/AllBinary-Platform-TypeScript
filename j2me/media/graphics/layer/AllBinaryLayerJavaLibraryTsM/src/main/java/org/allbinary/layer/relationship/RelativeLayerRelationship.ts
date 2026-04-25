@@ -61,17 +61,6 @@ export class RelativeLayerRelationship extends RelativeRelationship {
     private layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor (layer: AllBinaryLayer, x: number, y: number){
-            this(layer, PointFactory.getInstance()!.getInstance0(x, y), BasicArrayListUtil.getInstance()!.getImmutableInstance());
-                        //var layer = layer
-    //var x = x
-    //var y = y
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList){
             super(point, typesAllowedList);
                         //var layer = layer

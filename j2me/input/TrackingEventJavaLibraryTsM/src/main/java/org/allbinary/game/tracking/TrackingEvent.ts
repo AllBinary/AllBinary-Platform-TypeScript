@@ -54,23 +54,22 @@ export class TrackingEvent extends AllBinaryEventObject {
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
         
         
-public constructor (){
-            super(TrackingEventHandler.getInstance());
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (allBinaryLayerInterface: AllBinaryLayer){
+public constructor (allBinaryLayerInterface: any = {}){
             super(allBinaryLayerInterface);
                     var allBinaryLayerInterface = allBinaryLayerInterface
 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setLayerInterface(allBinaryLayerInterface);
+
+                        if(allBinaryLayerInterface != TrackingEventHandler.getInstance())
+                        
+                                    {
+                                    this.setLayerInterface(allBinaryLayerInterface as AllBinaryLayer);
     
+
+                                    }
+                                
 }
 
 

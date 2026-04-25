@@ -37,20 +37,20 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+import { DemoSetup } from "./DemoSetup.js";
 
-export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
+export class LicensedDemoSetupFactory
+            extends Object
+         {
         
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
-            super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
-                        //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-    //var attributeHandleArray = attributeHandleArray
+
+    public getInstance(): DemoSetup{
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new DemoSetup();
+    
 }
 
 

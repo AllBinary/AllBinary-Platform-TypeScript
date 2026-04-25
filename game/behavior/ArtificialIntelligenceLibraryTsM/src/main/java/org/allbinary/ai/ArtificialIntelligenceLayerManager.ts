@@ -21,6 +21,9 @@
 import { LayerManager } from "../../../org/allbinary/layer/LayerManager.js";
 
     
+import { LayerManagerNoDebug } from "../../../org/allbinary/layer/LayerManagerNoDebug.js";
+
+    
 
 
 
@@ -42,6 +45,14 @@ import { LayerManager } from "../../../org/allbinary/layer/LayerManager.js";
         
 export class ArtificialIntelligenceLayerManager extends LayerManager {
         
+public constructor (){
+            super(LayerManagerNoDebug.getInstance());
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
 
 }
                 

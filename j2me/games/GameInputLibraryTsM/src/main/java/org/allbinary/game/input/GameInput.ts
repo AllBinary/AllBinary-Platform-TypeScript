@@ -76,15 +76,6 @@ export class GameInput
     private readonly removalGameKeyEventList: BasicArrayList
 
     readonly isRemoveDuplicateKeyPresses: boolean
-public constructor (gameKeyEventList: BasicArrayList){
-            this(gameKeyEventList, new BasicArrayListD());
-                        //var gameKeyEventList = gameKeyEventList
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList){
 
             super();

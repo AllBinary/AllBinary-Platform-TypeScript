@@ -86,24 +86,6 @@ directionArray[value]= this;
     
 }
 
- constructor (name: string, otherName: string, value: number){
-
-            super();
-        var name = name
-var otherName = otherName
-var value = value
-this.name= name;
-    
-this.otherName= otherName;
-    
-this.value= value;
-    
-this.frameFactor= 0;
-    
-directionArray[value]= this;
-    
-}
-
 
     public getValue(): number{
 

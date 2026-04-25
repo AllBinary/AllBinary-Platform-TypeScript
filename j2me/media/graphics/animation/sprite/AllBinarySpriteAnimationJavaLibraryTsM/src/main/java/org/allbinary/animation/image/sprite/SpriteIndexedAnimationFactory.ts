@@ -73,6 +73,66 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
+                //@Throws(Error::class)
+            
+    public static createCWHDXY(image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
+    //var image = image
+    //var basicColorArray = basicColorArray
+    //var width = width
+    //var height = height
+    //var dx = dx
+    //var dy = dy
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createCWH(image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
+    //var image = image
+    //var basicColorArray = basicColorArray
+    //var width = width
+    //var height = height
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+    var spriteIndexedAnimationFactory: SpriteIndexedAnimationFactory = new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
+        
+        
+;
+    
+spriteIndexedAnimationFactory!.initHWH();
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return spriteIndexedAnimationFactory;
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
+    //var image = image
+    //var width = width
+    //var height = height
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new SpriteIndexedAnimationFactory(image, BasicColorUtil.getInstance()!.ZERO_ARRAY, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
+    
+}
+
+
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
         
         
@@ -80,10 +140,11 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
     private basicColorArray: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
         
         
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
+private constructor (image: Image, basicColorArray: BasicColor[], sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
     //var basicColorArray = basicColorArray
+    //var sequenceArray = sequenceArray
     //var width = width
     //var height = height
     //var dx = dx
@@ -97,19 +158,8 @@ this.basicColorArray= basicColorArray;
     
 }
 
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.basicColorArray= basicColorArray;
-    
+    initHWH(){
 this.animationFactoryInitializationVisitor!.dx=  -(this.animationFactoryInitializationVisitor!.width>>2);
     
 this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitializationVisitor!.height>>2);
@@ -123,36 +173,6 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 
                                     }
                                 
-}
-
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, width, height, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx= dx;
-    
-this.animationFactoryInitializationVisitor!.dy= dy;
-    
-}
-
-public constructor (image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 

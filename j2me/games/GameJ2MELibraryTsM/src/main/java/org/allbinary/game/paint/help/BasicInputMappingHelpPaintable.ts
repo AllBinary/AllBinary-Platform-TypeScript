@@ -39,6 +39,9 @@ import { PersistentInputMapping } from "../../../../../org/allbinary/game/input/
 import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
+import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+
+    
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -78,7 +81,7 @@ export class BasicInputMappingHelpPaintable extends HelpPaintable {
         
         
 protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor){
-            super(basicColor);
+            super("Help Screen", BasicColorFactory.getInstance()!.BLACK, basicColor);
                         //var gameInputMappingArray = gameInputMappingArray
     //var basicColor = basicColor
 

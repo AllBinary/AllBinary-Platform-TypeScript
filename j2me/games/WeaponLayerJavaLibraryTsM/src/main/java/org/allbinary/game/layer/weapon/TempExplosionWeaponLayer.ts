@@ -55,7 +55,7 @@ import { SimpleWeaponLayer } from "./SimpleWeaponLayer.js";
 export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         
 
-    public readonly weaponProperties: WeaponProperties = new WeaponProperties(0, 1000, 0);
+    public readonly weaponProperties: WeaponProperties = new WeaponProperties( -1L,  -1L, 0, 1000, 0);
         
         
 

@@ -84,7 +84,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 
 
 
-                            throw new RuntimeException(e)
+                            throw new RuntimeException()
 }
 
 }

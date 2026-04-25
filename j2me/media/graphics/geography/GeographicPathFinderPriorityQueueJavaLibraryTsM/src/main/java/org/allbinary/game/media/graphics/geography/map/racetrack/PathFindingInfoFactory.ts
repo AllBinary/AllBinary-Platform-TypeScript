@@ -45,6 +45,9 @@ import { PathFindingInfo } from "../../../../../../../../org/allbinary/media/gra
 import { PathFindingNodeCostInfoFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoFactory.js";
 
     
+import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -98,7 +101,7 @@ PathFindingInfoFactory.MAX= max;
 private constructor (){
 
             super();
-        this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX));
+        this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX), new BasicArrayListS(1), new BasicArrayListS(1));
     
 this.pathFinder= new PathFinder();
     
@@ -111,7 +114,7 @@ this.pathFinder= new PathFinder();
     //var geographicMapInterface = geographicMapInterface
     //var mapArray = mapArray
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface());
+    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface(), new BasicArrayListS(1), new BasicArrayListS(1));
         
         
 ;

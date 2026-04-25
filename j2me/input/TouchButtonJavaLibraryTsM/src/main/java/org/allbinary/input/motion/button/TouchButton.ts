@@ -83,6 +83,24 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 export class TouchButton extends Paintable {
         
 
+                //@Throws(Error::class)
+            
+    public static create(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): TouchButton{
+    //var touchButtonInput = touchButtonInput
+    //var touchButtonResource = touchButtonResource
+    //var rawRectangle = rawRectangle
+    //var cellPosition = cellPosition
+    //var xBorder = xBorder
+    //var yBorder = yBorder
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new TouchButton(touchButtonInput, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.RESOURCE)!.getInstance(0), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.HINT)!.getInstance(0), rawRectangle, cellPosition, xBorder, yBorder);
+    
+}
+
+
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
@@ -114,30 +132,16 @@ export class TouchButton extends Paintable {
     animationY: number= 0
 
     hintAnimationY: number= 0
-public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
-            this(touchButtonInput, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.RESOURCE)!.getInstance(0), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.HINT)!.getInstance(0), rawRectangle, cellPosition, xBorder, yBorder);
-                    var touchButtonInput = touchButtonInput
-var touchButtonResource = touchButtonResource
-var rawRectangle = rawRectangle
-var cellPosition = cellPosition
-var xBorder = xBorder
-var yBorder = yBorder
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
 
             super();
-        var touchButtonInput = touchButtonInput
-var animationInterface = animationInterface
-var hintAnimationInterface = hintAnimationInterface
-var rawRectangle = rawRectangle
-var cellPosition = cellPosition
-var xBorder = xBorder
-var yBorder = yBorder
+            //var touchButtonInput = touchButtonInput
+    //var animationInterface = animationInterface
+    //var hintAnimationInterface = hintAnimationInterface
+    //var rawRectangle = rawRectangle
+    //var cellPosition = cellPosition
+    //var xBorder = xBorder
+    //var yBorder = yBorder
 this.touchButtonInput= touchButtonInput;
     
 this.animationInterface= animationInterface;

@@ -82,16 +82,6 @@ export class PlayerComposite
     private readonly timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
         
         
-public constructor (player: Player){
-
-            super();
-            //var player = player
-this.player= player;
-    
-this.timeElapsedHelper!.delay= 570;
-    
-}
-
 public constructor (player: Player, repeatTime: number){
 
             super();

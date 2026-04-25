@@ -99,7 +99,7 @@ export class PooledImageArrayRotationAnimationFactory
 
                 //@Throws(Error::class)
             
-    public static createDX(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
+    public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
     //var image = image
     //var dx = dx
     //var dy = dy

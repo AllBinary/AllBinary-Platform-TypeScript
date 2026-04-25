@@ -33,6 +33,9 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
     
+import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+
+    
 
 
 
@@ -61,7 +64,7 @@ export class RightToLeftImageAnimation extends ImageSegmentAnimation {
 
     private currentWidth: number= 0
 public constructor (image: Image, animationBehavior: AnimationBehavior){
-            super(image, animationBehavior);
+            super(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior);
                         //var image = image
     //var animationBehavior = animationBehavior
 

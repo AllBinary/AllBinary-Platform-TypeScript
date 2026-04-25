@@ -18,6 +18,9 @@
 
 
 
+import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+
+    
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -52,11 +55,45 @@ export class PrimitiveLongUtil
          {
         
 
-    readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
+    public static create(powerOfTen: number): PrimitiveLongUtil{
+var powerOfTen = powerOfTen
 
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+    var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);
+        
+        
+;
+    
+
+                        if(powerOfTen % 10 != 0)
+                        
+                                    {
+                                    
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+        
+        
+;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+        
+        
+;
+    
+logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Error("Max must be power of 10"));
+    
+
+                                    }
+                                
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return primitiveLongUtil;
+    
+}
+
+
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
         
         
 
@@ -73,29 +110,11 @@ export class PrimitiveLongUtil
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
         
         
-public constructor (powerOfTen: number){
-            this(powerOfTen, false);
-                    var powerOfTen = powerOfTen
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-
-                        if(powerOfTen % 10 != 0)
-                        
-                                    {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, new Error("Max must be power of 10"));
-    
-
-                                    }
-                                
-}
-
-public constructor (powerOfTen: number, throwException: boolean){
+public constructor (powerOfTen: number, unused: any = {}){
 
             super();
         var powerOfTen = powerOfTen
-var throwException = throwException
+var unused = unused
 this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
     
 this.powerOfTen= powerOfTen;

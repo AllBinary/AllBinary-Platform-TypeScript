@@ -27,6 +27,9 @@ import { DamageFloaters } from "../../../../../org/allbinary/game/combat/damage/
 import { TrackingEvent } from "../../../../../org/allbinary/game/tracking/TrackingEvent.js";
 
     
+import { TrackingEventHandler } from "../../../../../org/allbinary/game/tracking/TrackingEventHandler.js";
+
+    
 import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullPaintable.js";
 
     
@@ -135,7 +138,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TrackingEvent();
+                        return new TrackingEvent(TrackingEventHandler.getInstance());
     
 }
 

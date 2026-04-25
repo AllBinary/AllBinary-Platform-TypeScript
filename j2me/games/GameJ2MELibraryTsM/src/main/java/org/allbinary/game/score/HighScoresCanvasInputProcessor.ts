@@ -60,7 +60,7 @@ export class HighScoresCanvasInputProcessor extends PlayerGameInput {
 
     private readonly highScoresCanvas: HighScoresCanvas
 public constructor (highScoresCanvas: HighScoresCanvas){
-            super(new BasicArrayListD(),  -1);
+            super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     var highScoresCanvas = highScoresCanvas
 
 

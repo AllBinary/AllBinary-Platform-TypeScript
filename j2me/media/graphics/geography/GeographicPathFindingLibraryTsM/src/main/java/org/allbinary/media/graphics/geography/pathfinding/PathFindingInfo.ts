@@ -86,18 +86,6 @@ this.endPathFindingNodeList= endPathFindingNodeList;
     
 }
 
-public constructor (pathFindingNodeCostInfoFactoryInterface: PathFindingNodeCostInfoFactoryBase){
-
-            super();
-            //var pathFindingNodeCostInfoFactoryInterface = pathFindingNodeCostInfoFactoryInterface
-this.pathFindingNodeCostInfoFactoryInterface= pathFindingNodeCostInfoFactoryInterface;
-    
-this.startPathFindingNodeList= new BasicArrayListS(1);
-    
-this.endPathFindingNodeList= new BasicArrayListS(1);
-    
-}
-
 
     public getStartPathFindingNodeList(): BasicArrayList{
 

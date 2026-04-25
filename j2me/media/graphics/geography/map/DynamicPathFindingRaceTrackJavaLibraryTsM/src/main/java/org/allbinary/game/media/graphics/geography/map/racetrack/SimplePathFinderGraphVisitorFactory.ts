@@ -54,14 +54,6 @@ export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorF
     private readonly minPathWeight: number
 
     private readonly maxPathWeight: number
-public constructor (){
-            this(10, 8, 100000);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();

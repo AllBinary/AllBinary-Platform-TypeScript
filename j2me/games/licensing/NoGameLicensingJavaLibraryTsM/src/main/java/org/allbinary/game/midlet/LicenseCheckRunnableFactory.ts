@@ -18,6 +18,12 @@
 
 
 
+import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
+
+    
+import { NullABRunnable } from "../../../../org/allbinary/thread/NullABRunnable.js";
+
+    
 
 
 
@@ -37,20 +43,21 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+import { SpecialDemoGameMidlet } from "./SpecialDemoGameMidlet.js";
 
-export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
+export class LicenseCheckRunnableFactory
+            extends Object
+         {
         
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
-            super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
-                        //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-    //var attributeHandleArray = attributeHandleArray
+
+    public getInstance(specialDemoGameMidlet: SpecialDemoGameMidlet): ABRunnable{
+    //var specialDemoGameMidlet = specialDemoGameMidlet
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return NullABRunnable.getInstance();;
+    
 }
 
 

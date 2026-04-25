@@ -72,6 +72,99 @@ import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
+                //@Throws(Error::class)
+            
+    public static create(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    //var image = image
+    //var width = width
+    //var height = height
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AllBinaryAndroidImageRotationAnimationFactory(image, width, height, (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    //var image = image
+    //var width = width
+    //var height = height
+    //var angleIncrement = angleIncrement
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AllBinaryAndroidImageRotationAnimationFactory(image, width, height, angleIncrement, animationBehaviorFactory, false);
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    //var image = image
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
+        
+        
+;
+    
+androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.getHeight()>>2));
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return androidImageRotationAnimationFactory;
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    //var image = image
+    //var dx = dx
+    //var dy = dy
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+    var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
+        
+        
+;
+    
+androidImageRotationAnimationFactory!.init(dx, dy);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return androidImageRotationAnimationFactory;
+    
+}
+
+
+    public init(dx: number, dy: number){
+    //var dx = dx
+    //var dy = dy
+this.animationFactoryInitializationVisitor!.dx= dx;
+    
+this.animationFactoryInitializationVisitor!.dy= dy;
+    
+this.animationFactoryInitializationVisitor!.originalDx= dx;
+    
+this.animationFactoryInitializationVisitor!.originalDy= dy;
+    
+}
+
+
     private readonly angleIncrement: number
 
     private readonly resizeCanvasForRotation: boolean

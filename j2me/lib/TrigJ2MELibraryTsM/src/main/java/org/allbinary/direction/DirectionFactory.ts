@@ -77,11 +77,11 @@ export class DirectionFactory
         
         
 
-    public readonly DOWN: Direction = new Direction(CommonPhoneStrings.getInstance()!.DOWN, "SOUTH", 2);
+    public readonly DOWN: Direction = new Direction(CommonPhoneStrings.getInstance()!.DOWN, "SOUTH", 2, 0);
         
         
 
-    public readonly UP: Direction = new Direction(CommonPhoneStrings.getInstance()!.UP, "NORTH", 3);
+    public readonly UP: Direction = new Direction(CommonPhoneStrings.getInstance()!.UP, "NORTH", 3, 0);
         
         
 
@@ -93,23 +93,23 @@ export class DirectionFactory
 
     public readonly DOWN_RIGHT: Direction
 
-    public readonly NOT_BORDERED_WITH: Direction = new Direction("NOT_BORDERED_WITH", "NOT_BORDERED_WITH", 8);
+    public readonly NOT_BORDERED_WITH: Direction = new Direction("NOT_BORDERED_WITH", "NOT_BORDERED_WITH", 8, 0);
         
         
 
-    public readonly NO_DIRECTION: Direction = new Direction("NO_DIRECTION", "NO_DIRECTION", 9);
+    public readonly NO_DIRECTION: Direction = new Direction("NO_DIRECTION", "NO_DIRECTION", 9, 0);
         
         
 
-    public readonly TOP: Direction = new Direction("TOP", "TOP", 10);
+    public readonly TOP: Direction = new Direction("TOP", "TOP", 10, 0);
         
         
 
-    public readonly BOTTOM: Direction = new Direction("BOTTOM", "BOTTOM", 11);
+    public readonly BOTTOM: Direction = new Direction("BOTTOM", "BOTTOM", 11, 0);
         
         
 
-    public readonly ALL_DIRECTION: Direction = new Direction("ALL_DIRECTION", "ALL_DIRECTION", 12);
+    public readonly ALL_DIRECTION: Direction = new Direction("ALL_DIRECTION", "ALL_DIRECTION", 12, 0);
         
         
 private constructor (){
@@ -127,19 +127,19 @@ private constructor (){
         
 ;
     
-this.UP_LEFT= new Direction("UP LEFT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 4);
+this.UP_LEFT= new Direction("UP LEFT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 4, 0);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-this.UP_RIGHT= new Direction("UP RIGHT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 5);
+this.UP_RIGHT= new Direction("UP RIGHT", stringBuffer!.append(UP.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 5, 0);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-this.DOWN_LEFT= new Direction("DOWN LEFT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 6);
+this.DOWN_LEFT= new Direction("DOWN LEFT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(LEFT.getOtherName())!.toString(), 6, 0);
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-this.DOWN_RIGHT= new Direction("DOWN RIGHT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 7);
+this.DOWN_RIGHT= new Direction("DOWN RIGHT", stringBuffer!.append(DOWN.getOtherName())!.append(commonSeps!.SPACE)!.append(RIGHT.getOtherName())!.toString(), 7, 0);
     
 }
 

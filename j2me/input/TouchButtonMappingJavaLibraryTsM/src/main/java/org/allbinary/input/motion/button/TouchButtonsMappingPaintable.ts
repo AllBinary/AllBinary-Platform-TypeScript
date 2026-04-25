@@ -57,6 +57,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { CommonButtons } from "./CommonButtons.js";
 
+import { TouchButton } from "./TouchButton.js";
+
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
@@ -165,7 +167,7 @@ index >= 0; index--)
         
 rowIndex >= 0; rowIndex--)
         {
-this.paintableTable[index]![rowIndex]= new TouchButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
+this.paintableTable[index]![rowIndex]= TouchButton.create(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
     
 }
 

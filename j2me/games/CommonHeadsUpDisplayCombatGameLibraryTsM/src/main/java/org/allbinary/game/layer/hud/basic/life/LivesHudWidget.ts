@@ -30,6 +30,9 @@ import { BasicHud } from "../../../../../../../org/allbinary/game/graphics/hud/B
 import { Life } from "../../../../../../../org/allbinary/game/life/Life.js";
 
     
+import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+
+    
 import { DisplayChangeEvent } from "../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js";
 
     
@@ -64,7 +67,7 @@ export class LivesHudWidget extends BasicHud implements PaintableInterface {
 
     private readonly animationInterface: Animation
 public constructor (animationInterface: Animation, lifeInterface: Life, location: number, direction: number){
-            super(location, direction, 16, lifeInterface!.getMaxlives() *16, 2);
+            super(location, direction, 16, lifeInterface!.getMaxlives() *16, 2, BasicColorFactory.getInstance()!.WHITE);
                     var animationInterface = animationInterface
 var lifeInterface = lifeInterface
 var location = location

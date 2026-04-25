@@ -57,6 +57,9 @@ import { ScrollMapEventHandler } from "../../../../org/allbinary/layer/event/Scr
 import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 
 
 
@@ -105,7 +108,7 @@ export class ScrollMapPlayerGameInput extends PlayerGameInput {
 
     private maxRight: number= 0
 public constructor (geographicMapInterface: BasicGeographicMap, list: BasicArrayList, playerInputId: number){
-            super(list, playerInputId);
+            super(list, new BasicArrayListD(), playerInputId);
                     var geographicMapInterface = geographicMapInterface
 var list = list
 var playerInputId = playerInputId

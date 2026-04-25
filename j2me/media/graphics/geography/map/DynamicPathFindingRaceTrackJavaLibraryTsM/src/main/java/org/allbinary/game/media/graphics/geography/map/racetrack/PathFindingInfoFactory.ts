@@ -74,6 +74,9 @@ import { PathFindingInfo } from "../../../../../../../../org/allbinary/media/gra
 import { PathFindingNodeCostInfoFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoFactory.js";
 
     
+import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -141,7 +144,7 @@ PreLogUtil.put("Using Dynamic Path Finding", this, commonStrings!.GET_INSTANCE);
     
 this.basicGeographicMapPathFinder= new BasicGeographicMapPathFinder(max);
     
-this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(max));
+this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(max), new BasicArrayListS(1), new BasicArrayListS(1));
     
 this.basicGeographicMapGraph= new BasicGeographicMapGraph(pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface() as PathFindingNodeCostInfoFactory);
     
@@ -156,7 +159,7 @@ this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterf
     //var geographicMapInterface = geographicMapInterface
     //var mapArray = mapArray
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface());
+    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface(), new BasicArrayListS(1), new BasicArrayListS(1));
         
         
 ;

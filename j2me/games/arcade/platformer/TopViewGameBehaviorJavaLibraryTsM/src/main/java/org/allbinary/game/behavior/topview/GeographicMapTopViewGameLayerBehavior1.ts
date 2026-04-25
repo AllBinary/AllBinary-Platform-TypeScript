@@ -95,18 +95,6 @@ export class GeographicMapTopViewGameLayerBehavior1 extends GeographicMapTopView
     private readonly offsetY: number
 
     private previousGeographicMapCellPosition: GeographicMapCellPosition
-public constructor (){
-            super(16);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.autoStepBlocks= true;
-    
-this.offsetY= 0;
-    
-}
-
 public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number){
             super(maxGravityActionIndex);
                         //var maxGravityActionIndex = maxGravityActionIndex

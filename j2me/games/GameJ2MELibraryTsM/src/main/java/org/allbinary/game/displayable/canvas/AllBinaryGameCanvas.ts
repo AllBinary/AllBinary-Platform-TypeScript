@@ -92,6 +92,9 @@ import { IntermissionEnableListenerInterface } from "../../../../../org/allbinar
 import { IntermissionInterface } from "../../../../../org/allbinary/game/IntermissionInterface.js";
 
     
+import { PlayerTypesFactory } from "../../../../../org/allbinary/game/PlayerTypesFactory.js";
+
+    
 import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
 
     
@@ -2950,7 +2953,7 @@ var score = score
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new HighScore(0, "NONE", new GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), 0, 0), score);
+                        return new HighScore(0, "NONE", new GameInfo(gameInfo!.getGameType(), gameInfo!.getGameMode(), PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 0, 0), score);
     
 }
 

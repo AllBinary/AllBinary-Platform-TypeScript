@@ -45,6 +45,9 @@ import { CaptionIndexedAnimation } from "../../../../../org/allbinary/animation/
 import { ImageAnimation } from "../../../../../org/allbinary/animation/image/ImageAnimation.js";
 
     
+import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/BasicColorUtil.js";
+
+    
 import { AnimationFactoryImageScaleUtil } from "../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js";
 
     
@@ -114,24 +117,6 @@ export class ImageCaptionIndexedAnimationFactory
         
 
     private readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number){
-            this(captionImage, spriteMovieImage, soundInterface, frameWidth, frameHeight, captionDx, captionDy, dx, dy, time, AnimationBehaviorFactory.getInstance());
-                        //var captionImage = captionImage
-    //var spriteMovieImage = spriteMovieImage
-    //var soundInterface = soundInterface
-    //var frameWidth = frameWidth
-    //var frameHeight = frameHeight
-    //var captionDx = captionDx
-    //var captionDy = captionDy
-    //var dx = dx
-    //var dy = dy
-    //var time = time
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -194,7 +179,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 ;
     
 
-    var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, this.animationBehaviorFactory!.getOrCreateInstance());
+    var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());
         
         
 ;

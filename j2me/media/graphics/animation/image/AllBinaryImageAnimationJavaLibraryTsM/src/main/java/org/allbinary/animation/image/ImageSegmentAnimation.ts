@@ -68,16 +68,6 @@ export class ImageSegmentAnimation extends ImageAnimation {
     private circularIndexUtil: CircularIndexUtil
 
     private sequenceArray: number[]
-protected constructor (image: Image, animationBehavior: AnimationBehavior){
-            this(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior);
-                        //var image = image
-    //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 protected constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior){
             super(image, animationBehavior);
                         //var image = image

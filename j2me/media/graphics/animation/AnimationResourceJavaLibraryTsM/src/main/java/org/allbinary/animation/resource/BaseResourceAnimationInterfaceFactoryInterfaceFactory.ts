@@ -94,20 +94,6 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
     private readonly name: string
 
     private initialized: boolean= false
-public constructor (name: string){
-
-            super();
-            //var name = name
-this.hashtable= new Hashtable<any, any>();
-    
-this.rectangleHashtable= new Hashtable<any, any>();
-    
-this.rectangleArrayOfArraysHashtable= new Hashtable<any, any>();
-    
-this.name= name;
-    
-}
-
 public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
 
             super();

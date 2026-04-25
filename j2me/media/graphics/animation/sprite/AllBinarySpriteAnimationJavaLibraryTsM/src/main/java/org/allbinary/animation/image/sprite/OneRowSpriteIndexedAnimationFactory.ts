@@ -33,6 +33,9 @@ import { AnimationBehaviorFactory } from "../../../../../org/allbinary/animation
 import { BaseImageAnimationFactory } from "../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js";
 
     
+import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/BasicColorUtil.js";
+
+    
 import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
 
     
@@ -61,12 +64,90 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFactory {
         
 
+                //@Throws(Error::class)
+            
+    public static createDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    //var image = image
+    //var dx = dx
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
+        
+        
+;
+    
+oneRowSpriteIndexedAnimationFactory!.initW(dx);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return oneRowSpriteIndexedAnimationFactory;
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    //var image = image
+    //var dx = dx
+    //var dy = dy
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+    var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
+        
+        
+;
+    
+oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return oneRowSpriteIndexedAnimationFactory;
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    //var image = image
+    //var width = width
+    //var height = height
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    public static create(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    //var image = image
+    //var animationBehaviorFactory = animationBehaviorFactory
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
+    
+}
+
+
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
         
         
-public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
+public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
+            super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
+    //var sequenceArray = sequenceArray
     //var width = width
     //var height = height
     //var dx = dx
@@ -78,101 +159,23 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
                     
 }
 
-public constructor (image: Image, dx: number){
-            this(image, dx, 0);
-                        //var image = image
-    //var dx = dx
 
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
-    
-}
-
-public constructor (image: Image, dx: number, dy: number, unused: any = {}){
-            this(image, dx, dy);
-                        //var image = image
+    public init(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
-    //var unused = unused
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
-    
-this.animationFactoryInitializationVisitor!.dy +=  -(this.animationFactoryInitializationVisitor!.height>>2);
-    
-}
-
-public constructor (image: Image, dx: number, dy: number){
-            this(image, dx, dy, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
-            this(image, animationBehaviorFactory);
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 this.animationFactoryInitializationVisitor!.dx= dx;
     
 this.animationFactoryInitializationVisitor!.dy= dy;
     
 }
 
-public constructor (width: number, height: number, image: Image){
-            this(width, height, image, AnimationBehaviorFactory.getInstance());
-                        //var width = width
-    //var height = height
-    //var image = image
 
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (width: number, height: number, image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var width = width
-    //var height = height
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image){
-            this(image, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
-            super(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
+    public initW(dx: number){
+    //var dx = dx
+this.init(dx, 0);
+    
+this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
+    
 }
 
 
@@ -194,7 +197,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdjustedSpriteIndexedAnimation(sprite, this.getImage(), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedSpriteIndexedAnimation(sprite, this.getImage(), BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -204,7 +207,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new SpriteIndexedAnimation(sprite, this.getImage(), this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new SpriteIndexedAnimation(sprite, this.getImage(), BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

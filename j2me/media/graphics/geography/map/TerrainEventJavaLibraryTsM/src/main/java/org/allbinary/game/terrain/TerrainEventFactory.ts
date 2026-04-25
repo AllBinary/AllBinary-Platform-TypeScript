@@ -18,6 +18,9 @@
 
 
 
+import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+
+    
 import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -58,7 +61,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TerrainEvent();
+                        return new TerrainEvent(NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 

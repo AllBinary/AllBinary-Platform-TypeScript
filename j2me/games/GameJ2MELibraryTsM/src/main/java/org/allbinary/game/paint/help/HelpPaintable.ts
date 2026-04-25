@@ -61,9 +61,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 export class HelpPaintable extends Paintable {
         
 
-    TITLE: string = "Help Screen";
-        
-        
+    readonly title: string
 
     inputInfo: string[] = StringUtil.getInstance()!.getArrayInstance()!;
         
@@ -76,16 +74,8 @@ public constructor (title: string, backgroundBasicColor: BasicColor, basicColor:
             //var title = title
     //var backgroundBasicColor = backgroundBasicColor
     //var basicColor = basicColor
-this.TITLE= title;
+this.title= title;
     
-this.basicColor= basicColor;
-    
-}
-
-public constructor (basicColor: BasicColor){
-
-            super();
-            //var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -133,7 +123,7 @@ this.inputInfo= inputInfo;
 ;
     
 
-    var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);
+    var beginWidth: number = (graphics.getFont()!.stringWidth(this.title)>>1);
         
         
 ;
@@ -146,7 +136,7 @@ graphics.setColor(this.basicColor!.toInt());
         
 ;
     
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
     
 
     var size: number = this.inputInfo!.length

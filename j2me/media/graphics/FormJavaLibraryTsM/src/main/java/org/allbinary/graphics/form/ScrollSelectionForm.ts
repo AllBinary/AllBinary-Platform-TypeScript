@@ -81,16 +81,65 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
         
 import { PaintableForm } from "./PaintableForm.js";
 
-import { FormTypeFactory } from "./FormTypeFactory.js";
-
 import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
 
 import { FormType } from "./FormType.js";
 
+import { FormTypeFactory } from "./FormTypeFactory.js";
+
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
+    static create(title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    //var title = title
+    //var items = items
+    //var formPaintableFactory = formPaintableFactory
+    //var rectangle = rectangle
+    //var formType = formType
+    //var border = border
+    //var backgroundBasicColor = backgroundBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
+
+        try {
+            
+                        if(formPaintableFactory == ItemPaintableFactory.getInstance())
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new ScrollSelectionForm(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                            throw new RuntimeException()
+
+                        }
+                            
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw new RuntimeException()
+}
+
+}
+
+
+    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = ScrollSelectionForm.create(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
+        
+        
+
+    public static readonly NULL_SCROLL_SELECTION_HORIZONTAL_FORM: ScrollSelectionForm = ScrollSelectionForm.create(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
         
         
 
@@ -120,27 +169,10 @@ export class ScrollSelectionForm extends PaintableForm {
         
         
 public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            this(title, items, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
-    //var formPaintableFactory = formPaintableFactory
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.paintable= formPaintableFactory!.getInstance(this);
-    
-}
-
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items
+    //var formPaintableFactory = formPaintableFactory
     //var rectangle = rectangle
     //var formType = formType
     //var border = border
@@ -155,6 +187,8 @@ this.buttonBasicColor= foregroundBasicColor;
 this.border= border;
     
 this.halfBorder= (border>>1);
+    
+this.paintable= formPaintableFactory!.getInstance(this);
     
 }
 

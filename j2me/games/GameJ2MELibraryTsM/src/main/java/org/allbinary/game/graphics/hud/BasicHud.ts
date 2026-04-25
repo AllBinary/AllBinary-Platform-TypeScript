@@ -131,19 +131,6 @@ export class BasicHud
         
 
     private color: number
-public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number){
-            this(location, direction, maxHeight, maxWidth, bufferZone, BasicColorFactory.getInstance()!.WHITE);
-                    var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
 
             super();

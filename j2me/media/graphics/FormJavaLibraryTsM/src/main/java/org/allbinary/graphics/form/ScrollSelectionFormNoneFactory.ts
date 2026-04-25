@@ -49,8 +49,6 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { FormTypeFactory } from "./FormTypeFactory.js";
-
 import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
 
 export class ScrollSelectionFormNoneFactory
@@ -58,16 +56,12 @@ export class ScrollSelectionFormNoneFactory
          {
         
 
-    private static readonly instance: ScrollSelectionForm = new ScrollSelectionForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
-
     public static getInstance(): ScrollSelectionForm{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ScrollSelectionForm.NULL_SCROLL_SELECTION_HORIZONTAL_FORM;
     
 }
 

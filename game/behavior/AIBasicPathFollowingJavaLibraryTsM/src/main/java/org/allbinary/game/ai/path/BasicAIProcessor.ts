@@ -78,19 +78,6 @@ export class BasicAIProcessor
     private geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo
 
     private basicAI: BasicDirectionAIHelper
-public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
-            this(name, geographicMapCellHistory, new GeographicMapCellPathHistoryInfo(), chosenPathList, angleInfo, seed);
-                        //var name = name
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var chosenPathList = chosenPathList
-    //var angleInfo = angleInfo
-    //var seed = seed
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
 
             super();

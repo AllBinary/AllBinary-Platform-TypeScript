@@ -86,7 +86,7 @@ export class PersistentInputMapping
          {
         
 
-    public static readonly NULL_PERSISTENT_INPUT_MAPPING: PersistentInputMapping = new PersistentInputMapping();
+    public static readonly NULL_PERSISTENT_INPUT_MAPPING: PersistentInputMapping = new PersistentInputMapping(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
         
         
 
@@ -107,13 +107,6 @@ export class PersistentInputMapping
         
 
     private readonly inputPersistance: InputPersistance
-protected constructor (){
-
-            super();
-        inputPersistance= new InputPersistance(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
-    
-}
-
 protected constructor (name: string){
 
             super();

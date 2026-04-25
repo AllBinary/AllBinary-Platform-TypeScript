@@ -24,9 +24,6 @@ import { ClientInformationFactory } from "../../../../org/allbinary/logic/system
 import { LicenseServerInitFileUtil } from "../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js";
 
     
-import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInterface.js";
-
-    
 
 
 
@@ -50,26 +47,18 @@ import { DemoGameMidlet } from "./DemoGameMidlet.js";
 
 import { LicenseLoadingType } from "./LicenseLoadingType.js";
 
-import { DemoSetup } from "./DemoSetup.js";
+import { LicensedDemoSetupFactory } from "./LicensedDemoSetupFactory.js";
+
+import { LicenseCheckRunnableFactory } from "./LicenseCheckRunnableFactory.js";
 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
-public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType){
+public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetupFactory: LicensedDemoSetupFactory, licenseCheckRunnableFactory: LicenseCheckRunnableFactory){
             super(clientInformationFactory);
                         //var clientInformationFactory = clientInformationFactory
     //var licenseLoadingType = licenseLoadingType
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetup: DemoSetup, licenseCheckRunnable: RunnableInterface){
-            super(clientInformationFactory);
-                        //var clientInformationFactory = clientInformationFactory
-    //var licenseLoadingType = licenseLoadingType
-    //var demoSetup = demoSetup
-    //var licenseCheckRunnable = licenseCheckRunnable
+    //var demoSetupFactory = demoSetupFactory
+    //var licenseCheckRunnableFactory = licenseCheckRunnableFactory
 
 
                             //For kotlin this is before the body of the constructor.

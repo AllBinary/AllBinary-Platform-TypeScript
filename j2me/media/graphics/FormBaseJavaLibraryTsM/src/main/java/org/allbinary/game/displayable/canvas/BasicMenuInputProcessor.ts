@@ -72,7 +72,7 @@ export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMoti
         
         
 protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas){
-            super(gameKeyEventList, playerInputId);
+            super(gameKeyEventList, new BasicArrayListD(), playerInputId);
                     var gameKeyEventList = gameKeyEventList
 var playerInputId = playerInputId
 var gameCanvas = gameCanvas

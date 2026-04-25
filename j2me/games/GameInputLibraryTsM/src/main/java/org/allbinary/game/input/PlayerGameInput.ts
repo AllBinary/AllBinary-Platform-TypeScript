@@ -81,16 +81,6 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
         
 
     private readonly playerInputId: number
-public constructor (gameKeyEventList: BasicArrayList, playerInputId: number){
-            this(gameKeyEventList, new BasicArrayListD(), playerInputId);
-                        //var gameKeyEventList = gameKeyEventList
-    //var playerInputId = playerInputId
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number){
             super(gameKeyEventList, removalGameKeyEventList);
                         //var gameKeyEventList = gameKeyEventList

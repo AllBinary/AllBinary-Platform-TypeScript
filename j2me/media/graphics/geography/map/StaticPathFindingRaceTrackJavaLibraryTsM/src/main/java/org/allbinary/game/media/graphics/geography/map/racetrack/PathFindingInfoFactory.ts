@@ -39,6 +39,9 @@ import { PathFindingInfo } from "../../../../../../../../org/allbinary/media/gra
 import { PathFindingNodeCostInfoFactoryBase } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoFactoryBase.js";
 
     
+import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/BasicArrayListS.js";
+
+    
 
 
 
@@ -94,7 +97,7 @@ private constructor (){
 PreLogUtil.put(commonStrings!.START, this, commonStrings!.GET_INSTANCE);
     
 
-    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(new PathFindingNodeCostInfoFactoryBase());
+    var pathFindingInfo: PathFindingInfo = new PathFindingInfo(new PathFindingNodeCostInfoFactoryBase(), new BasicArrayListS(1), new BasicArrayListS(1));
         
         
 ;

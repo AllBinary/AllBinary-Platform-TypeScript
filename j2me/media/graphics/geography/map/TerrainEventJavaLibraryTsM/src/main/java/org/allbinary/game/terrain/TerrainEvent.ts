@@ -54,22 +54,14 @@ export class TerrainEvent extends AllBinaryEventObject {
     private basicTerrainInfo: BasicTerrainInfo = BasicTerrainInfo.NULL_BASIC_TERRAIN_INFO;
         
         
-public constructor (){
-            super(NullUtil.getInstance()!.NULL_OBJECT);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
-public constructor (basicTerrainInfo: BasicTerrainInfo){
+public constructor (basicTerrainInfo: any = {}){
             super(basicTerrainInfo);
                         //var basicTerrainInfo = basicTerrainInfo
 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setBasicTerrainInfo(basicTerrainInfo);
+this.setBasicTerrainInfo(basicTerrainInfo as BasicTerrainInfo);
     
 }
 

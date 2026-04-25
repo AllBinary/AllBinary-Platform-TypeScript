@@ -97,19 +97,6 @@ export class RaceTrackData
         
 
     private id: Integer
-public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number){
-            this(id, cellWidth, cellHeight, miniCellWidth, miniCellHeight, NullUtil.getInstance()!.NULL_INT_ARRAY, NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY);
-                        //var id = id
-    //var cellWidth = cellWidth
-    //var cellHeight = cellHeight
-    //var miniCellWidth = miniCellWidth
-    //var miniCellHeight = miniCellHeight
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();

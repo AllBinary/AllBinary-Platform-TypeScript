@@ -60,7 +60,7 @@ export class GameInputProcessorComposite extends PlayerGameInput {
 
     private readonly gameInputProcessorInterface: GameInputProcessorInterface
 public constructor (name: string, gameInputProcessorInterface: GameInputProcessorInterface){
-            super(new BasicArrayListD(),  -1);
+            super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     var name = name
 var gameInputProcessorInterface = gameInputProcessorInterface
 

@@ -47,15 +47,6 @@ export class GameTickTimeDelayHelper
     public startTime: number
 
     public lastStartTime: number
-public constructor (){
-
-            super();
-        this.startTime= System.currentTimeMillis();
-    
-this.lastStartTime= this.startTime;
-    
-}
-
 public constructor (startTime: number){
 
             super();

@@ -43,6 +43,8 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TrackingEventHandler } from "./TrackingEventHandler.js";
+
 export class TrackingEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {
@@ -58,7 +60,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TrackingEvent();
+                        return new TrackingEvent(TrackingEventHandler.getInstance());
     
 }
 

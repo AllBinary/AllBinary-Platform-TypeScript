@@ -41,6 +41,8 @@ import { GameTypeFactory } from "./GameTypeFactory.js";
 
 import { GameMode } from "./GameMode.js";
 
+import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
+
 export class BasicHighScoresGameInfoFactory
             extends Object
          {
@@ -60,11 +62,11 @@ export class BasicHighScoresGameInfoFactory
 }
 
 
-    public readonly MULTI_PLAYER_SERVER: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.MULTI_PLAYER, GameMode.SERVER, 0, 0);
+    public readonly MULTI_PLAYER_SERVER: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.MULTI_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 0, 0);
         
         
 
-    public readonly SINGLE_PLAYER_SERVER: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, 0, 0);
+    public readonly SINGLE_PLAYER_SERVER: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 0, 0);
         
         
 

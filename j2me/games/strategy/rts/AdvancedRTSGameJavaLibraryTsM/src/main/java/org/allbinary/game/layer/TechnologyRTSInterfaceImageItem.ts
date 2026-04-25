@@ -94,7 +94,7 @@ export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
 
     private levelLength: number= 0
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(10000);
+    private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.create(10000)!;
         
         
 

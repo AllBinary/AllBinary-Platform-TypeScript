@@ -45,6 +45,9 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
 
     
+import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+
+    
 import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPosition.js";
 
     
@@ -80,7 +83,7 @@ public constructor (playerInputId: number){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), playerInputId);
+this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), new BasicArrayListD(), playerInputId);
     
 
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;

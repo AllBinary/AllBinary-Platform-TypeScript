@@ -45,6 +45,9 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
+import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+
+    
 
 
 
@@ -69,7 +72,29 @@ import { BasicPlayer } from "./BasicPlayer.js";
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         
 
-    public static readonly NULL_ANDROID_MEDIA_PLAYER_WRAPPER: AndroidMediaPlayerWrapper = new AndroidMediaPlayerWrapper();
+    public static create(): AndroidMediaPlayerWrapper{
+
+        try {
+            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new AndroidMediaPlayerWrapper(StringUtil.getInstance()!.EMPTY_STRING);
+    
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw new RuntimeException()
+}
+
+}
+
+
+    public static readonly NULL_ANDROID_MEDIA_PLAYER_WRAPPER: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.create()!;
         
         
 
@@ -80,11 +105,6 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
     private mediaPlayer: MediaPlayer = NullAndroidCanvas.NULL_MEDIA_PLAYER;
         
         
-private constructor (){
-
-            super();
-        }
-
 public constructor (resource: string){
 
             super();
@@ -92,6 +112,14 @@ public constructor (resource: string){
 
         try {
             
+                        if(resource == StringUtil.getInstance()!.EMPTY_STRING)
+                        
+                                    {
+                                    
+                                    }
+                                
+                        else {
+                            
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
         
         
@@ -121,6 +149,9 @@ this.setMediaPlayer(mediaPlayer);
     
 this.mediaPlayer!.setLooping(false);
     
+
+                        }
+                            
 
                 //: 
 } catch(e) 

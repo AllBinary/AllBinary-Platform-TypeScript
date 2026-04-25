@@ -51,36 +51,78 @@ import { CircleAnimation } from "./CircleAnimation.js";
 export class AdjustedCircleAnimation extends CircleAnimation {
         
 
-    private xAdjustment: number
+    public static create(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
+    //var width = width
+    //var height = height
+    //var xAdjustment = xAdjustment
+    //var yAdjustment = yAdjustment
+    //var basicColor = basicColor
 
-    private yAdjustment: number
-public constructor (width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor){
+    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
+        
+        
+;
+    
+adjustedCircleAnimation!.init(xAdjustment, yAdjustment);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return adjustedCircleAnimation;
+    
+}
+
+
+    public static createW(width: number, height: number, innerWidth: number, basicColor: BasicColor): AdjustedCircleAnimation{
+    //var width = width
+    //var height = height
+    //var innerWidth = innerWidth
+    //var basicColor = basicColor
+
+    var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
+        
+        
+;
+    
+adjustedCircleAnimation!.init(innerWidth);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return adjustedCircleAnimation;
+    
+}
+
+
+    private xAdjustment: number= 0
+
+    private yAdjustment: number= 0
+public constructor (width: number, height: number, basicColor: BasicColor){
             super(width, height, basicColor);
-                    var width = width
-var height = height
-var xAdjustment = xAdjustment
-var yAdjustment = yAdjustment
-var basicColor = basicColor
+                        //var width = width
+    //var height = height
+    //var basicColor = basicColor
 
 
                             //For kotlin this is before the body of the constructor.
                     
+}
+
+
+    init(xAdjustment: number, yAdjustment: number){
+    //var xAdjustment = xAdjustment
+    //var yAdjustment = yAdjustment
 this.xAdjustment= xAdjustment;
     
 this.yAdjustment= yAdjustment;
     
 }
 
-public constructor (width: number, height: number, innerWidth: number, basicColor: BasicColor){
-            super(width, height, basicColor);
-                    var width = width
-var height = height
-var innerWidth = innerWidth
-var basicColor = basicColor
 
-
-                            //For kotlin this is before the body of the constructor.
-                    
+    init(innerWidth: number){
+    //var innerWidth = innerWidth
 
                         if(AndroidUtil.isAndroid())
                         

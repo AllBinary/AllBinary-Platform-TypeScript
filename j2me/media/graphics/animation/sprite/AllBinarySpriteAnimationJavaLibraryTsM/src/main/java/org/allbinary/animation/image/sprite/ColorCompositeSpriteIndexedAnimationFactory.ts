@@ -72,18 +72,6 @@ export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimat
         
 
     private readonly basicColorArray: BasicColor[]
-public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number){
-            this(image, basicColorArray, width, height, AnimationBehaviorFactory.getInstance());
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
                         //var image = image

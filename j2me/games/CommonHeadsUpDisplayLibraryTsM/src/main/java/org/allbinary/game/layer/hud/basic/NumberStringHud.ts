@@ -70,7 +70,29 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 export class NumberStringHud extends BasicHud implements PaintableInterface {
         
 
-    public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 0, 0, 0, BasicColorFactory.getInstance()!.NULL_COLOR);
+    public static create(): NumberStringHud{
+
+        try {
+            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new NumberStringHud(StringUtil.getInstance()!.EMPTY_STRING, 9, BasicHudFactory.getInstance()!.ABSOLUTE, 1, 0, 0, 0, BasicColorFactory.getInstance()!.NULL_COLOR);
+    
+
+                //: 
+} catch(e) 
+            {
+
+
+
+                            throw new RuntimeException()
+}
+
+}
+
+
+    public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = NumberStringHud.create()!;
         
         
 
@@ -87,39 +109,6 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
     private valueTotalDigits: number= 0
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
-public constructor (prependString: string, max: number, location: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
-            super(location, 1, maxHeight, maxWidth, bufferZone, basicColor);
-                    var prependString = prependString
-var max = max
-var location = location
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.PREPEND_STRING= prependString!.toCharArray();
-    
-
-    var myFont: MyFont = MyFont.getInstance()!;
-        
-        
-;
-    
-this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
-    
-this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
-    
-this.primitiveLongUtil= new PrimitiveLongUtil(max +1);
-    
-this.max= max;
-    
-this.value= 0;
-    
-}
-
 public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     var prependString = prependString
@@ -146,7 +135,7 @@ this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
     
 this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
     
-this.primitiveLongUtil= new PrimitiveLongUtil(max +1);
+this.primitiveLongUtil= PrimitiveLongUtil.create(max +1);
     
 this.max= max;
     

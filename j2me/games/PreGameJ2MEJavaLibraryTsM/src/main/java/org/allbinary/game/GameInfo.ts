@@ -58,9 +58,9 @@ import { GameTypeFactory } from "./GameTypeFactory.js";
 
 import { GameMode } from "./GameMode.js";
 
-import { GameInfoData } from "./GameInfoData.js";
-
 import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
+
+import { GameInfoData } from "./GameInfoData.js";
 
 import { GameType } from "./GameType.js";
 
@@ -71,7 +71,7 @@ export class GameInfo
          {
         
 
-    public static readonly NONE: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.NONE, GameMode.NONE,  -1,  -1);
+    public static readonly NONE: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.NONE, GameMode.NONE, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE,  -1,  -1);
         
         
 
@@ -96,25 +96,6 @@ export class GameInfo
     private highestLevel: number= 0
 
     private currentLevel: number
-public constructor (gameType: GameType, gameMode: GameMode, highestLevel: number, currentLevel: number){
-
-            super();
-            //var gameType = gameType
-    //var gameMode = gameMode
-    //var highestLevel = highestLevel
-    //var currentLevel = currentLevel
-this.gameType= gameType;
-    
-this.gameMode= gameMode;
-    
-this.setHighestLevel(highestLevel);
-    
-this.currentLevel= currentLevel;
-    
-this.playerType= PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE;
-    
-}
-
 public constructor (gameType: GameType, gameMode: GameMode, playerType: PlayerType, highestLevel: number, currentLevel: number){
 
             super();

@@ -53,15 +53,6 @@ import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceF
 
 export class SimultaneousCompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
-public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[]){
-            this(basicAnimationInterfaceFactoryInterfaceArray, AnimationBehaviorFactory.getInstance());
-                        //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
                         //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray

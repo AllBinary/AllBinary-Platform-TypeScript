@@ -21,6 +21,9 @@
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+
+    
 import { CellPosition } from "../../../../../org/allbinary/graphics/CellPosition.js";
 
     
@@ -31,9 +34,6 @@ import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory
 
     
 import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
-
-    
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
 
@@ -63,29 +63,33 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 
 export class FullTouchButton extends TouchButton {
         
-public constructor (touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
-            super(touchButtonInput, touchButtonResource, rawRectangle, cellPosition, xBorder, yBorder);
-                    var touchButtonInput = touchButtonInput
-var touchButtonResource = touchButtonResource
-var rawRectangle = rawRectangle
-var cellPosition = cellPosition
-var xBorder = xBorder
-var yBorder = yBorder
+
+                //@Throws(Error::class)
+            
+    public static create(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): FullTouchButton{
+    //var touchButtonInput = touchButtonInput
+    //var touchButtonResource = touchButtonResource
+    //var rawRectangle = rawRectangle
+    //var cellPosition = cellPosition
+    //var xBorder = xBorder
+    //var yBorder = yBorder
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new FullTouchButton(touchButtonInput, FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.RESOURCE)!.getInstance(0), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(touchButtonResource!.HINT)!.getInstance(0), rawRectangle, cellPosition, xBorder, yBorder);
+    
 }
 
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
             super(touchButtonInput, animationInterface, hintAnimationInterface, rawRectangle, cellPosition, xBorder, yBorder);
-                    var touchButtonInput = touchButtonInput
-var animationInterface = animationInterface
-var hintAnimationInterface = hintAnimationInterface
-var rawRectangle = rawRectangle
-var cellPosition = cellPosition
-var xBorder = xBorder
-var yBorder = yBorder
+                        //var touchButtonInput = touchButtonInput
+    //var animationInterface = animationInterface
+    //var hintAnimationInterface = hintAnimationInterface
+    //var rawRectangle = rawRectangle
+    //var cellPosition = cellPosition
+    //var xBorder = xBorder
+    //var yBorder = yBorder
 
 
                             //For kotlin this is before the body of the constructor.

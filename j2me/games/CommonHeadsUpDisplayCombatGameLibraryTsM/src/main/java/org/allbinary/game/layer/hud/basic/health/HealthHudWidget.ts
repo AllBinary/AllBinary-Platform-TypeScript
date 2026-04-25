@@ -33,6 +33,9 @@ import { Health } from "../../../../../../../org/allbinary/game/health/Health.js
 import { HealthListenerInterface } from "../../../../../../../org/allbinary/game/health/HealthListenerInterface.js";
 
     
+import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+
+    
 import { PaintableInterface } from "../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
 
     
@@ -84,7 +87,7 @@ export class HealthHudWidget extends BasicHud implements PaintableInterface, Hea
         
         
 public constructor (animationInterface: Animation, healthInterface: Health, location: number, direction: number){
-            super(location, direction, 16, healthInterface!.getMaxHealth() *16, 2);
+            super(location, direction, 16, healthInterface!.getMaxHealth() *16, 2, BasicColorFactory.getInstance()!.WHITE);
                     var animationInterface = animationInterface
 var healthInterface = healthInterface
 var location = location

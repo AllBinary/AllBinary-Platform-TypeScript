@@ -161,7 +161,7 @@ export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
 
     private readonly downgradeGameNotificationEvent: GameNotificationEvent
 public constructor (towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, list: BasicArrayList, playerInputId: number, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
-            super(list, playerInputId);
+            super(list, new BasicArrayListD(), playerInputId);
                     var towerInfoPaintable = towerInfoPaintable
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var list = list

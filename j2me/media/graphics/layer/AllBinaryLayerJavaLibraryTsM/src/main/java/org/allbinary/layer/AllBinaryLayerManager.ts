@@ -48,6 +48,8 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
         
 import { LayerManager } from "./LayerManager.js";
 
+import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
+
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class AllBinaryLayerManager extends LayerManager {
@@ -69,9 +71,12 @@ export class AllBinaryLayerManager extends LayerManager {
         
         
 protected constructor (){
+            super(LayerManagerNoDebug.getInstance());
+                    
 
-            super();
-        }
+                            //For kotlin this is before the body of the constructor.
+                    
+}
 
 
     getLayerProcessorArray(): LayerProcessor[]{

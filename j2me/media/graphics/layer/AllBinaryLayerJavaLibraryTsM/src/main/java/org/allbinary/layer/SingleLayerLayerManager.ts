@@ -39,8 +39,18 @@
         
 import { LayerManager } from "./LayerManager.js";
 
+import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
+
 export class SingleLayerLayerManager extends LayerManager {
         
+public constructor (){
+            super(LayerManagerNoDebug.getInstance());
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
 
 }
                 

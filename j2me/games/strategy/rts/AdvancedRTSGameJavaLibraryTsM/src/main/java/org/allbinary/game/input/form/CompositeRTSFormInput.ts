@@ -89,18 +89,6 @@ export class CompositeRTSFormInput extends RTSFormInput {
     private readonly itemIndex: number[]
 
     private readonly isPrimaryWaypointCreator: boolean
-public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean){
-            this(groupInterface, isPrimaryWaypointCreator, intArrayOf(0;
-        
-        ));
-                        //var groupInterface = groupInterface
-    //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: number[]){
             super(groupInterface);
                         //var groupInterface = groupInterface

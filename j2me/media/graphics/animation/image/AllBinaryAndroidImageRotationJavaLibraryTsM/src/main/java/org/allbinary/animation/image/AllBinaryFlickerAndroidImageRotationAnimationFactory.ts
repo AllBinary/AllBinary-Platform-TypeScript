@@ -33,9 +33,6 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
-
-    
 import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
 
     

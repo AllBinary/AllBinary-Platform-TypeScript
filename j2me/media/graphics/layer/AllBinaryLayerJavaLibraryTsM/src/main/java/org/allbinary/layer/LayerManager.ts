@@ -41,9 +41,7 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { LayerManagerLogging } from "./LayerManagerLogging.js";
-
-import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
+import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
 
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
@@ -71,20 +69,13 @@ export class LayerManager
     private readonly anyType: SynchObject = new SynchObject();
         
         
-public constructor (layerManagerLogging: LayerManagerLogging){
+public constructor (layerManagerLogging: LayerManagerLoggingBase){
 
             super();
             //var layerManagerLogging = layerManagerLogging
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 this.layerManagerLogging= layerManagerLogging;
-    
-}
-
-public constructor (){
-
-            super();
-        this.layerManagerLogging= LayerManagerNoDebug.getInstance();
     
 }
 

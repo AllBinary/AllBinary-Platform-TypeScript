@@ -18,6 +18,9 @@
 
 
 
+import { Hashtable } from "../../../../../java/util/Hashtable.js";
+
+    
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js";
 
     
@@ -57,16 +60,18 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
         
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
-public constructor (){
-            super("TouchButton Animations");
-                    
 
-                            //For kotlin this is before the body of the constructor.
-                    
+    public static create(): TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory("TouchButton Animations");
+    
 }
 
 public constructor (name: string){
-            super(name);
+            super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
                     var name = name
 
 

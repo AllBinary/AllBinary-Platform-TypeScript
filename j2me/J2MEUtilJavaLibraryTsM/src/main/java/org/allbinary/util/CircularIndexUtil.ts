@@ -48,7 +48,7 @@ export class CircularIndexUtil
          {
         
 
-    public static readonly NULL_CIRCULAR_INDEX_UTIL: CircularIndexUtil = new CircularIndexUtil(0);
+    public static readonly NULL_CIRCULAR_INDEX_UTIL: CircularIndexUtil = new CircularIndexUtil(0, 0);
         
         
 
@@ -58,7 +58,7 @@ var max = max
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new CircularIndexUtil(max);
+                        return new CircularIndexUtil(0, max);
     
 }
 
@@ -94,14 +94,6 @@ var size = size
 this.setSize(size);
     
 this.setIndex(index);
-    
-}
-
-private constructor (size: number){
-
-            super();
-        var size = size
-this.setSize(size);
     
 }
 

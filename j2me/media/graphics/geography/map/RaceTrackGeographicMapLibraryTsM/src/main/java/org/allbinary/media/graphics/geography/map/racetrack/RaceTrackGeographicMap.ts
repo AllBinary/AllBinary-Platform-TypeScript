@@ -86,20 +86,6 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
     
 }
 
-public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory){
-            this(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, new GeographicMapCellPositionBaseFactory(), geographicMapCellTypeFactory, customMapGeneratorBaseFactory);
-                        //var raceTrackInfo = raceTrackInfo
-    //var raceTrackData = raceTrackData
-    //var tiledLayerFactoryInterface = tiledLayerFactoryInterface
-    //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface
-    //var geographicMapCellTypeFactory = geographicMapCellTypeFactory
-    //var customMapGeneratorBaseFactory = customMapGeneratorBaseFactory
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public getCustomMapGenerator(): CustomMapGeneratorBase{
 

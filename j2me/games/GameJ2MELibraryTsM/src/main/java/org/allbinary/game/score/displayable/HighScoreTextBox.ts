@@ -21,6 +21,9 @@
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
+import { Font } from "../../../../../javax/microedition/lcdui/Font.js";
+
+    
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -120,7 +123,7 @@ export class HighScoreTextBox extends CustomTextBox {
         
         
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, backgrounBasicColor, foregroundBasicColor);
+            super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
                         //var highScoresFactoryInterface = highScoresFactoryInterface
     //var highScoresHelper = highScoresHelper
     //var abeClientInformation = abeClientInformation

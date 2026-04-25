@@ -70,14 +70,6 @@ this.objectArray= new Array(size);
     
 }
 
-public constructor (){
-            this(7);
-                    
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
 }
                 

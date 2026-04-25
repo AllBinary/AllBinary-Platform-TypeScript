@@ -163,17 +163,6 @@ this.setRange((value *9) /10);
                                 
 }
 
-public constructor (speed: number, damage: number, dissipation: number){
-            this( -1L,  -1L, speed, damage, dissipation);
-                    var speed = speed
-var damage = damage
-var dissipation = dissipation
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     setReloadTime(reloadTime: number){
 var reloadTime = reloadTime

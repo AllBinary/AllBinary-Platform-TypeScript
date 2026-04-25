@@ -49,21 +49,12 @@ export class XmlRpcClient
         
 
     private readonly url: URL
-public constructor (url: URL){
+public constructor (url: string){
 
             super();
         var url = url
-this.url= url;
+this.url= new URL(url);
     
-}
-
-public constructor (url: string){
-            this(new URL(url));
-                    var url = url
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
 }
 
 

@@ -64,18 +64,25 @@ export class RotationAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    private totalAngle: number
+    public static create(): RotationAnimationFactory{
 
-    private angleIncrement: number
-public constructor (){
-
-            super();
-        this.totalAngle= AngleFactory.getInstance()!.TOTAL_ANGLE;
+    var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
+        
+        
+;
     
-this.angleIncrement= (this.totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity());
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new RotationAnimationFactory(totalAngle, (totalAngle /GameConfigurationCentral.getInstance()!.getGameControlFidelity()));
     
 }
 
+
+    private totalAngle: number
+
+    private angleIncrement: number
 public constructor (totalAngle: number, angleIncrement: number){
 
             super();

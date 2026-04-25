@@ -64,16 +64,6 @@ export class VectorAnimationInterfaceFactory
         
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
-public constructor (currentPoints: number[][][], basicColor: BasicColor){
-            this(currentPoints, basicColor, AnimationBehaviorFactory.getInstance());
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();

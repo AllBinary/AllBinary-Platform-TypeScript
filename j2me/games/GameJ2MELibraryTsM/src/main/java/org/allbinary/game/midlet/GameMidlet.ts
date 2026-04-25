@@ -72,6 +72,9 @@ import { GameStrings } from "../../../../org/allbinary/game/GameStrings.js";
 import { GameTypeFactory } from "../../../../org/allbinary/game/GameTypeFactory.js";
 
     
+import { PlayerTypesFactory } from "../../../../org/allbinary/game/PlayerTypesFactory.js";
+
+    
 import { GameCommandsFactory } from "../../../../org/allbinary/game/commands/GameCommandsFactory.js";
 
     
@@ -1757,7 +1760,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 
     createGameLayerManager(): AllBinaryGameLayerManager{
 
-    var gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, 1, 1);
+    var gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 1, 1);
         
         
 ;

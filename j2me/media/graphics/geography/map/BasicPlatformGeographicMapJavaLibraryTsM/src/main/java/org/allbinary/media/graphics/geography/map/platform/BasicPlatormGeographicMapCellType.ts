@@ -61,7 +61,7 @@ export class BasicPlatormGeographicMapCellType
         
 ;
     
-types.add(type);
+types.add(type.toBinaryString());
     
 
     var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);

@@ -78,15 +78,6 @@ export class TextAnimation extends IndexedAnimation {
     private anchor: number = Anchor.TOP_LEFT;
         
         
-public constructor (animationBehavior: AnimationBehavior){
-            super(animationBehavior);
-                        //var animationBehavior = animationBehavior
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (text: string, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var text = text
@@ -153,7 +144,7 @@ var text = text
 
                         if(text != 
                                     null
-                                )
+                                 && text.length > 0)
                         
                                     {
                                     

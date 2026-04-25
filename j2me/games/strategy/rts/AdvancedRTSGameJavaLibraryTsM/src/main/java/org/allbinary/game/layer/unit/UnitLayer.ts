@@ -1073,7 +1073,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
     
 this.weaponRange= weaponProperties!.getRange();
     
-this.initRangeAnimation= new AdjustedCircleAnimation(weaponRange, weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
+this.initRangeAnimation= AdjustedCircleAnimation.createW(weaponRange, weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
     
 
     var sensorRange: number = weaponRange *SENSOR_RANGE_MULTIPLIER;
@@ -1081,7 +1081,7 @@ this.initRangeAnimation= new AdjustedCircleAnimation(weaponRange, weaponRange, t
         
 ;
     
-this.initSensorRangeAnimation= new AdjustedCircleAnimation(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
+this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
     
 this.getUnitWaypointBehavior()!.initRange(weaponRange);
     

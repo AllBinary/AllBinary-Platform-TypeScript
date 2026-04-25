@@ -49,6 +49,19 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 export class GameKeyEvent extends AllBinaryEventObject {
         
 
+    public static create(anyType: any = {}, sourceId: number, key: number): GameKeyEvent{
+var anyType = anyType
+var sourceId = sourceId
+var key = key
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new GameKeyEvent(anyType, sourceId, 0, 0, key, false);
+    
+}
+
+
     public static readonly NONE: GameKeyEvent = new GameKeyEvent(NullUtil.getInstance()!.NULL_OBJECT,  -1,  -1,  -1,  -1, false);
         
         
@@ -83,23 +96,6 @@ this.key= key;
 this.setGameActionKey(gameActionKey);
     
 this.setRepeatEvents(repeated);
-    
-}
-
-public constructor (anyType: any = {}, sourceId: number, key: number){
-            super(anyType);
-                    var anyType = anyType
-var sourceId = sourceId
-var key = key
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.sourceId= sourceId;
-    
-this.key= key;
-    
-this.setRepeatEvents(false);
     
 }
 

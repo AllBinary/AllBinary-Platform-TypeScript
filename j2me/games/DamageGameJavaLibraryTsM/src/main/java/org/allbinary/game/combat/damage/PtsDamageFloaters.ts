@@ -111,7 +111,7 @@ public constructor (layerInterface: AllBinaryLayer){
 
             super();
         var layerInterface = layerInterface
-this.primitiveLongUtil= new PrimitiveLongUtil(100000);
+this.primitiveLongUtil= PrimitiveLongUtil.create(100000);
     
 this.layerInterface= layerInterface;
     

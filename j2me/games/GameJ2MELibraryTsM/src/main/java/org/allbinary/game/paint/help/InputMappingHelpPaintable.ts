@@ -490,14 +490,14 @@ stringBuffer!.append(key.getName());
 ;
     
 
-    var beginWidth: number = (font.stringWidth(this.TITLE)>>1);
+    var beginWidth: number = (font.stringWidth(this.title)>>1);
         
         
 ;
     
 graphics.setColor(this.basicColor!.toInt());
     
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
     
 
     var inputInfo: string[] = this.inputInfo;

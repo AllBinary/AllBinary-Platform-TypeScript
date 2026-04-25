@@ -21,6 +21,12 @@
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
+import { BasicVelocityProperties } from "../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js";
+
+    
+import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.js";
+
+    
 
 
 
@@ -44,6 +50,14 @@ import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.j
 
 export class NoBasicConstantVelocityMovement extends BasicConstantVelocityMovement {
         
+public constructor (){
+            super(BasicDecimal.ZERO_BIGDECIMAL, new BasicVelocityProperties());
+                    
+
+                            //For kotlin this is before the body of the constructor.
+                    
+}
+
 
                 //@Throws(Error::class)
             

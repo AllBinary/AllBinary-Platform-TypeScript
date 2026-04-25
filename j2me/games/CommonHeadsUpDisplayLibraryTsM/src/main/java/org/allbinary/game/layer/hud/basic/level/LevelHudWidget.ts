@@ -61,6 +61,21 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 export class LevelHudWidget extends BasicHud implements PaintableInterface {
         
 
+                //@Throws(Error::class)
+            
+    public static create(maxlevel: number, location: number, direction: number): LevelHudWidget{
+var maxlevel = maxlevel
+var location = location
+var direction = direction
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new LevelHudWidget(maxlevel, location, direction, MyFont.getInstance()!.getSize() *4);
+    
+}
+
+
     private level: number
 
     private maxlevel: number
@@ -76,17 +91,6 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
     private readonly offset: number
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
-public constructor (maxlevel: number, location: number, direction: number){
-            this(maxlevel, location, direction, MyFont.getInstance()!.getSize() *4);
-                    var maxlevel = maxlevel
-var location = location
-var direction = direction
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (maxlevel: number, location: number, direction: number, maxWidth: number){
             super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
                     var maxlevel = maxlevel
@@ -103,7 +107,7 @@ var maxWidth = maxWidth
         
 ;
     
-this.primitiveLongUtil= new PrimitiveLongUtil(1000);
+this.primitiveLongUtil= PrimitiveLongUtil.create(1000);
     
 
     var LEVEL: string = "Lv ";

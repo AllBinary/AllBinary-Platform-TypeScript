@@ -37,20 +37,33 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
+import { ABRunnable } from "./ABRunnable.js";
 
-export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
+export class NullABRunnable extends ABRunnable {
         
-public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
-            super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
-                        //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-    //var attributeHandleArray = attributeHandleArray
+
+    private static readonly instance: NullABRunnable = new NullABRunnable();
+        
+        
+
+    public static getInstance(): NullABRunnable{
 
 
-                            //For kotlin this is before the body of the constructor.
-                    
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return instance;
+    
+}
+
+@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+
+    public isRunning(): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
 }
 
 

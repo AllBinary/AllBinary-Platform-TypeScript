@@ -104,18 +104,6 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
         
 
     public readonly lastWidth: number[]
-public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor){
-            this(gameCanvas, stringArray, lineArray, basicColor, Font.getDefaultFont());
-                        //var gameCanvas = gameCanvas
-    //var stringArray = stringArray
-    //var lineArray = lineArray
-    //var basicColor = basicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor, font: Font){
 
             super();

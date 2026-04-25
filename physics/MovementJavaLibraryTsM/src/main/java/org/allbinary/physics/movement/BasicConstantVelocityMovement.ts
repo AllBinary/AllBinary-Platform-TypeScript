@@ -83,15 +83,6 @@ this.velocityProperties= velocityProperties;
     
 }
 
-public constructor (){
-
-            super();
-        this.setSpeedBasicDecimal(BasicDecimal.ZERO_BIGDECIMAL);
-    
-this.velocityProperties= new BasicVelocityProperties();
-    
-}
-
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){
 var speedBasicDecimal = speedBasicDecimal

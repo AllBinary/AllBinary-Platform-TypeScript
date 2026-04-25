@@ -65,7 +65,7 @@ export class NoPlayerGameInput extends PlayerGameInput {
 }
 
 private constructor (){
-            super(new BasicArrayListD(),  -1);
+            super(new BasicArrayListD(), new BasicArrayListD(),  -1);
                     
 
                             //For kotlin this is before the body of the constructor.

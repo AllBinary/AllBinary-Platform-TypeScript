@@ -97,7 +97,7 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             super();
         var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.primitiveLongUtil= new PrimitiveLongUtil(1000);
+this.primitiveLongUtil= PrimitiveLongUtil.create(1000);
     
 this.init(total, countedPickedUpLayerInterfaceFactory);
     

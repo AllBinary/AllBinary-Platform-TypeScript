@@ -73,16 +73,6 @@ this.geographicMapCellPosition= geographicMapCellPosition;
     
 }
 
-public constructor (anyType: any = {}, key: number){
-            super(anyType);
-                    var anyType = anyType
-var key = key
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public init(anyType: any = {}){
 var anyType = anyType

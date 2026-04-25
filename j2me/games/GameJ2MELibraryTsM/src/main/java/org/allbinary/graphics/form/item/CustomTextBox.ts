@@ -82,21 +82,6 @@ export class CustomTextBox extends GameCommandCanvas {
         
 
     private readonly textFieldItem: TextFieldItem
-public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-            this(cmdListener, label, text, maxSize, constraints, Font.getDefaultFont(), backgroundBasicColor, foregroundBasicColor);
-                        //var cmdListener = cmdListener
-    //var label = label
-    //var text = text
-    //var maxSize = maxSize
-    //var constraints = constraints
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, label, backgroundBasicColor, foregroundBasicColor);
                         //var cmdListener = cmdListener

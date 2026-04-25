@@ -62,7 +62,7 @@ export class LayerInterfaceFactoryImageItem extends CustomImageItem {
 
     private readonly layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, animationArray: Animation[], layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
-            super(label, img, layout, altText, basicColor);
+            super(label, img, layout, altText, basicColor, 0);
                     var label = label
 var img = img
 var layout = layout

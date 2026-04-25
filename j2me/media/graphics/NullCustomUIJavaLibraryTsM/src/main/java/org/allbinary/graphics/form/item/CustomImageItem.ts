@@ -40,19 +40,6 @@ export class CustomImageItem extends CustomItem {
     yOffset: number = 0;
         
         
-public constructor (label: string, image: Image, layout: number, altText: string, basicColor: BasicColor){
-            super(label, basicColor, basicColor);
-                    var label = label
-var image = image
-var layout = layout
-var altText = altText
-var basicColor = basicColor
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 public constructor (label: string, image: Image, layout: number, altText: string, basicColor: BasicColor, yOffset: number){
             super(label, basicColor, basicColor);
                     var label = label
