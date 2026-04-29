@@ -115,7 +115,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return angleIncrement;
+                        return this.angleIncrement;
     
 }
 
@@ -132,7 +132,7 @@ this.image= image;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return image;
+                        return this.image;
     
 }
 

@@ -134,9 +134,9 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
     var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this.allBinaryGameCanvas, gameKey)!;
 ;
     
-downGameKeyEventHandler!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }
@@ -152,9 +152,9 @@ downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent)
     var keyCodeAsInteger: number = smallIntegerSingletonFactory!.getAtNoThrow(keyCode)!;
 ;
     
-downKeyEventHandler!.fireEvent(keyCodeAsInteger);
+this.downKeyEventHandler!.fireEvent(keyCodeAsInteger);
     
-downKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(keyCodeAsInteger);
+this.downKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(keyCodeAsInteger);
     
 
                 //: 
@@ -192,7 +192,7 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput( as GameKeyEventSourceInterfacecanvas, gameKey)!;
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(canvas as GameKeyEventSourceInterface, gameKey)!;
 ;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);

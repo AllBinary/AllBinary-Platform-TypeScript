@@ -150,7 +150,7 @@ export interface UserInterface extends TableMappingInterface, ValidationInterfac
 
     public setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface)
 
-    public toPasswordHashMap(): HashMap
+    public toPasswordHashMap(): HashMap<any, any>
 
     public validateSession(weblisketSession: WeblisketSessionInterface)
 

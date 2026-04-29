@@ -136,7 +136,7 @@ this.init();
                 //@Throws(Error::class)
             
     init(){
-this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE));
+this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE)));
     
 }
 
@@ -194,7 +194,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE), this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -204,7 +204,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE), this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }
@@ -224,7 +224,7 @@ this.imageArray= imageArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return angleIncrement;
+                        return this.angleIncrement;
     
 }
 

@@ -92,7 +92,7 @@ export class AbDatabaseManagement extends AbSqlBean {
 
     readonly ADD_TABLES_RESULTS_LABEL: string = "Add Table Results: ";
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
-            super( as DbConnectionInfodatabaseConnectionInfoInterface);
+            super(databaseConnectionInfoInterface as DbConnectionInfo);
                     var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 

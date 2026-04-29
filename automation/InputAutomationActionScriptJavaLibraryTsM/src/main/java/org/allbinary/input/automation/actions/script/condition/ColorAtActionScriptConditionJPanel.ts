@@ -61,6 +61,8 @@ import { JLabel } from "./JLabel.js";
 
 import { JDialog } from "./JDialog.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -81,7 +83,7 @@ public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptCo
         var colorAtActionScriptConditionInterface = colorAtActionScriptConditionInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.colorAtActionScriptConditionInterface= colorAtActionScriptConditionInterface;
     
@@ -169,7 +171,7 @@ this.colorAtActionScriptConditionInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorAtXJTextField;
+                        return this.colorAtXJTextField;
     
 }
 
@@ -186,7 +188,7 @@ this.colorAtXJTextField= colorAtXJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorAtYJTextField;
+                        return this.colorAtYJTextField;
     
 }
 
@@ -203,7 +205,7 @@ this.colorAtYJTextField= colorAtYJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxBlueJTextField;
+                        return this.maxBlueJTextField;
     
 }
 
@@ -220,7 +222,7 @@ this.maxBlueJTextField= maxBlueJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxGreenJTextField;
+                        return this.maxGreenJTextField;
     
 }
 
@@ -237,7 +239,7 @@ this.maxGreenJTextField= maxGreenJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxRedJTextField;
+                        return this.maxRedJTextField;
     
 }
 
@@ -254,7 +256,7 @@ this.maxRedJTextField= maxRedJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minBlueJTextField;
+                        return this.minBlueJTextField;
     
 }
 
@@ -271,7 +273,7 @@ this.minBlueJTextField= minBlueJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minGreenJTextField;
+                        return this.minGreenJTextField;
     
 }
 
@@ -288,7 +290,7 @@ this.minGreenJTextField= minGreenJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minRedJTextField;
+                        return this.minRedJTextField;
     
 }
 
@@ -305,7 +307,7 @@ this.minRedJTextField= minRedJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return yJLabel;
+                        return this.yJLabel;
     
 }
 
@@ -322,7 +324,7 @@ this.yJLabel= yJLabel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorAtActionJDialog;
+                        return this.colorAtActionJDialog;
     
 }
 
@@ -403,7 +405,7 @@ this.blueJLabel!.setText("Blue:");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -429,7 +431,7 @@ setPreferredSize(new java.awt.Dimension(100, 0));
     
 this.colorAtActionJButton!.setText("Edit");
     
-colorAtActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.colorAtActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

@@ -154,13 +154,13 @@ var value = value
     public getStoreFrontInterface(name: string): StoreFront{
 var name = name
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
 
-    var storeHashMap: HashMap = super.getRow(keysAndValues)!;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -205,9 +205,9 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(StoreFrontData.getInstance()!.NAME,  as StringupdatedValues!.get(StoreFrontData.getInstance()!.NAME), updatedValues);
+super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String, updatedValues);
     
 }
 

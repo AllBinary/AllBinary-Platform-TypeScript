@@ -74,9 +74,9 @@ import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimat
 
 import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 
-import { NullAnimationFactory } from "./NullAnimationFactory.js";
-
 import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
+
+import { NullAnimationFactory } from "./NullAnimationFactory.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         
@@ -88,7 +88,7 @@ export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedR
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INSTANCE;
+                        return FeaturedAnimationInterfaceFactoryInterfaceFactory.INSTANCE;
     
 }
 
@@ -106,7 +106,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getRectangleXY(resource, 0, 0);;
+                        return this.getRectangleXY(resource, 0, 0);;
     
 }
 
@@ -142,7 +142,7 @@ var resource = resource
 index < size; index++)
         {
 
-    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface =  as FeatureResourceAnimationInterfaceFactoryInterfacelist.objectArray[index]!;
+    var featureInterface: FeatureResourceAnimationInterfaceFactoryInterface = list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
 ;
     
 
@@ -188,7 +188,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ProceduralAnimationInterfaceFactoryInterfacegetBasicAnimationInterfaceFactoryInstance(resource);;
+                        return this.getBasicAnimationInterfaceFactoryInstance(resource); as ProceduralAnimationInterfaceFactoryInterface;
     
 }
 
@@ -201,7 +201,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AnimationInterfaceFactoryInterfacegetBasicAnimationInterfaceFactoryInstance(resource);;
+                        return this.getBasicAnimationInterfaceFactoryInstance(resource); as AnimationInterfaceFactoryInterface;
     
 }
 
@@ -238,7 +238,7 @@ var resource = resource
     var index: number = 0;
 index < size; index++)
         {
-featureInterface=  as FeatureResourceAnimationInterfaceFactoryInterfacelist.objectArray[index]!;
+featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
 
                         if(featureInterface!.isFeature())
@@ -336,7 +336,7 @@ index < size; index++)
         {
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     
-featureInterface=  as FeatureResourceAnimationInterfaceFactoryInterfacelist.objectArray[index]!;
+featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
 
                         if(featureInterface!.isFeature())
@@ -376,7 +376,7 @@ stringBuffer!.append(RESOURCES_LABEL);
     var index: number = 0;
 index < size; index++)
         {
-featureInterface=  as FeatureResourceAnimationInterfaceFactoryInterfacelist.objectArray[index]!;
+featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceFactoryInterface;
     
 stringBuffer!.append(featureInterface!.toString());
     

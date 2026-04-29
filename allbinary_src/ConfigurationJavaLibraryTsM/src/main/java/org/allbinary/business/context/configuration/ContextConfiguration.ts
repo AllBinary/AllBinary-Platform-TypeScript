@@ -69,17 +69,17 @@ public constructor (){
             super();
         this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration");
     
-this.setEmailServerConfigurationInterface( as EmailServerConfigurationInterfacenew EmailServerConfiguration());
+this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
 this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
-this.setEmailServerConfigurationInterface( as EmailServerConfigurationInterfacenew EmailServerConfiguration(hashMap));
+this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     
 }
 
@@ -89,7 +89,7 @@ this.setEmailServerConfigurationInterface( as EmailServerConfigurationInterfacen
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emailServerConfigurationInterface;
+                        return this.emailServerConfigurationInterface;
     
 }
 

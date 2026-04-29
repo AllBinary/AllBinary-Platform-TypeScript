@@ -51,6 +51,8 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
         
 import { ImageArrayRotationAnimation } from "./ImageArrayRotationAnimation.js";
 
+import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
+
 export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnimation {
         
 
@@ -60,7 +62,7 @@ export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnima
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo =  as ImageArrayRotationAnimationInfoanyType;
+    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
 ;
     
 
@@ -141,7 +143,7 @@ this.dx= dx;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dx;
+                        return this.dx;
     
 }
 
@@ -158,7 +160,7 @@ this.dy= dy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dy;
+                        return this.dy;
     
 }
 

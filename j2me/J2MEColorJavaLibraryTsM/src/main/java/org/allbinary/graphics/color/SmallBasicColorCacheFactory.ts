@@ -56,16 +56,16 @@ export class SmallBasicColorCacheFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SmallBasicColorCacheFactory.instance;
     
 }
 
 
     private readonly SIZE: number = 255;
 
-    private readonly INDEX_TO_COLOR: number[] = new Array(SIZE);
+    private readonly INDEX_TO_COLOR: number[] = new Array(this.SIZE);
 
-    private readonly BASIC_COLOR_ARRAY: BasicColor[] = new Array(SIZE);
+    private readonly BASIC_COLOR_ARRAY: BasicColor[] = new Array(this.SIZE);
 
     private colorIndex: number = 0;
 private constructor (){
@@ -80,7 +80,7 @@ this.BASIC_COLOR_ARRAY[this.colorIndex]= basicDefaultColor;
     
 this.INDEX_TO_COLOR[this.colorIndex]= basicDefaultColor!.toInt();
     
-colorIndex++;
+this.colorIndex++;
     
 }
 
@@ -115,7 +115,7 @@ index < this.SIZE; index++)
 }
 
 
-    var ALPHA_MASK: number = Math.round0xFF000000;
+    var ALPHA_MASK: number = Math.round(0xFF000000);
 ;
     
 basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);

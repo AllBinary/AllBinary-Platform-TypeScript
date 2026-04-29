@@ -100,7 +100,7 @@ this.index++;
                         
                                     {
                                     
-    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = ( as ArtificialIntelligenceTransitionInterfaceartificialIntelligenceInterface);
+    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = (artificialIntelligenceInterface as ArtificialIntelligenceTransitionInterface);
 ;
     
 artificialIntelligenceTransitionInterface!.transition();
@@ -116,7 +116,7 @@ artificialIntelligenceTransitionInterface!.transition();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return index;
+                        return this.index;
     
 }
 
@@ -143,7 +143,7 @@ this.index= index;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SEQUENCE_AI;
+                        return SequenceAI.SEQUENCE_AI;
     
 }
 

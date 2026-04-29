@@ -85,14 +85,14 @@ export class NotificationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return NotificationUtil.SINGLETON;
     
 }
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private notificationManager: NotificationManager =  as NotificationManagerResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
 
     private readonly notificationBuilder: NotificationBuilder
 private constructor (){

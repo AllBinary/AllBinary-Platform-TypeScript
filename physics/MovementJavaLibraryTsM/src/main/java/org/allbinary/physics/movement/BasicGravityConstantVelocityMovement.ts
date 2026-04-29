@@ -54,7 +54,7 @@ import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.j
 export class BasicGravityConstantVelocityMovement extends BasicConstantVelocityMovement {
         
 public constructor (speedBasicDecimal: BasicDecimal){
-            super(speedBasicDecimal, new VelocityProperties(Math.roundspeedBasicDecimal!.getUnscaled(), Math.roundspeedBasicDecimal!.getUnscaled()));
+            super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
                     var speedBasicDecimal = speedBasicDecimal
 
 

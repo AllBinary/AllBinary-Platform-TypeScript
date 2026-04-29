@@ -52,6 +52,8 @@ import { FileJDialogListenerInterface } from "./FileJDialogListenerInterface.js"
 
 import { Frame } from "./Frame.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -87,7 +89,7 @@ public constructor (){
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 this.getJFileChooser1()!.setMultiSelectionEnabled(true);
     
@@ -101,7 +103,7 @@ var modal = modal
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 this.getJFileChooser1()!.setMultiSelectionEnabled(true);
     
@@ -120,7 +122,7 @@ this.jFileChooser1= new javax.swing.JFileChooser();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-jFileChooser1!.addActionListener(new java.awt.event.ActionListener()
+this.jFileChooser1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -190,7 +192,7 @@ this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "A
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return jFileChooser1;
+                        return this.jFileChooser1;
     
 }
 

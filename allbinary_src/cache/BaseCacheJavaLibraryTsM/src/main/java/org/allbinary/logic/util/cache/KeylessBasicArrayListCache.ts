@@ -85,7 +85,7 @@ public constructor (size: number){
                                     }
                                 
 
-    var list: BasicArrayList =  as BasicArrayListthis.get(this.index++);;
+    var list: BasicArrayList = this.get(this.index++); as BasicArrayList;
 ;
     
 
@@ -104,7 +104,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -126,7 +126,7 @@ super.clear();
     var index: number = this.list.size() -1;
 index >= 0; index--)
         {
-basicArrayList= ( as BasicArrayListthis.list.objectArray[index]!);
+basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
     
 basicArrayList!.clear();
     
@@ -162,7 +162,7 @@ index >= 0; index--)
         {
 stringBuffer!.append(S_LABEL);
     
-basicArrayList= ( as BasicArrayListthis.list.objectArray[index]!);
+basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
     
 stringBuffer!.appendint(basicArrayList!.size());
     

@@ -72,7 +72,7 @@ this.setDrops(drops);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ram;
+                        return this.ram;
     
 }
 
@@ -89,7 +89,7 @@ this.ram= ram;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return projectile;
+                        return this.projectile;
     
 }
 
@@ -106,7 +106,7 @@ this.projectile= projectile;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return drops;
+                        return this.drops;
     
 }
 

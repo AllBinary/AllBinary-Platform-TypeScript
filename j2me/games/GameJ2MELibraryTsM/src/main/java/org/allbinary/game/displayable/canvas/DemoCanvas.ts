@@ -408,7 +408,7 @@ export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInte
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(6000);
 
-    private basicColor: BasicColor = basicColorFactory!.RED;
+    private basicColor: BasicColor = this.basicColorFactory!.RED;
 
     readonly abeClientInformation: AbeClientInformationInterface
 
@@ -588,7 +588,7 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased( as LockableFeaturelist.get(0));)
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature);)
                         
                                     {
                                     commandList!.add(gameCommandsFactory!.BUY_COMMAND);
@@ -658,7 +658,7 @@ var cmdListener = cmdListener
 this.removeAllCommands();
     
 
-    var commandArray: any[] = getCustomCommands()!;
+    var commandArray: any[] = this.getCustomCommands()!;
 ;
     
 
@@ -674,7 +674,7 @@ this.removeAllCommands();
     var index: number = 0;
 index < size; index++)
         {
-this.addCommand( as CommandcommandArray[index]!);
+this.addCommand(commandArray[index]! as Command);
     
 }
 
@@ -716,7 +716,7 @@ this.close();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance( as Vector<any>this.getCommandStack(), basicColorFactory!.BLACK, basicColorFactory!.WHITE)!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;
 ;
     
 
@@ -731,7 +731,7 @@ PreLogUtil.put(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(displayInfoSingleton!.toString())!.toString(), this, "initMenu");
     
 
-    var scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, basicColorFactory!.BLACK, basicColorFactory!.WHITE)!;
+    var scrollSelectionForm: ScrollSelectionForm = CommandCurrentSelectionFormFactory.getInstance(StringUtil.getInstance()!.EMPTY_STRING, items, rectangle, formType, 15, true, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;
 ;
     
 this.setMenuForm(scrollSelectionForm);
@@ -781,7 +781,7 @@ GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return DemoCanvas.id;
     
 }
 
@@ -1003,7 +1003,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Error::class)
             
-    public setLoadStateHashtable(hashtable: Hashtable){
+    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
@@ -1012,7 +1012,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable{
+    public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
     
 
@@ -1026,7 +1026,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
     
 
@@ -1238,7 +1238,7 @@ this.highScoresPaintable= NullPaintable.getInstance();
     var randomLevel: number = this.getNextRandom()!;
 ;
     
-this.gameCanvas=  as AllBinaryGameCanvasthis.createRunnable(randomLevel);;
+this.gameCanvas= this.createRunnable(randomLevel); as AllBinaryGameCanvas;
     
 this.basicColor= this.gameCanvas!.getLayerManager()!.getForegroundBasicColor();
     
@@ -1285,7 +1285,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
 
     public preDemoProcess(){
 
-                        if(!this.gameCanvas!.isInitialized(); || gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
+                        if(!this.gameCanvas!.isInitialized(); || this.gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
                         
                                     {
                                     
@@ -1326,7 +1326,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = ( as IndexedAnimationBehaviorthis.getSpecialAnimationInterface()!.getAnimationBehavior(););
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior(); as IndexedAnimationBehavior);
 ;
     
 
@@ -1339,7 +1339,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet =  as DemoGameMidletthis.getCustomCommandListener();;
+    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener(); as DemoGameMidlet;
 ;
     
 
@@ -1702,10 +1702,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     var features: Features = Features.getInstance()!;
 ;
     
-baseGameStatistics!.add(new StringMaker().
+this.baseGameStatistics!.add(new StringMaker().
                             append(BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
-baseGameStatistics!.init();
+this.baseGameStatistics!.init();
     
 
                         if(features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND))
@@ -1747,7 +1747,7 @@ var gameState = gameState
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameCanvas;
+                        return this.gameCanvas;
     
 }
 
@@ -1797,7 +1797,7 @@ var gameState = gameState
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return state;
+                        return this.state;
     
 }
 
@@ -1826,7 +1826,7 @@ this.logUtil!.putF("Wow the AI got a high score!", this, "isHighScoreSubmitted")
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return realHighScoresPaintable;
+                        return this.realHighScoresPaintable;
     
 }
 
@@ -1845,7 +1845,7 @@ this.specialAnimationInterface= specialAnimationInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return specialAnimationInterface;
+                        return this.specialAnimationInterface;
     
 }
 
@@ -1862,7 +1862,7 @@ this.paintableInterface= paintableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paintableInterface;
+                        return this.paintableInterface;
     
 }
 
@@ -1879,7 +1879,7 @@ this.defaultPaintableInterface= defaultPaintableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultPaintableInterface;
+                        return this.defaultPaintableInterface;
     
 }
 
@@ -1889,7 +1889,7 @@ this.defaultPaintableInterface= defaultPaintableInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return highScoresFactoryInterface;
+                        return this.highScoresFactoryInterface;
     
 }
 
@@ -1906,7 +1906,7 @@ this.menuInputProcessor= menuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuInputProcessor;
+                        return this.menuInputProcessor;
     
 }
 
@@ -1916,7 +1916,7 @@ this.menuInputProcessor= menuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuForm;
+                        return this.menuForm;
     
 }
 
@@ -1933,7 +1933,7 @@ this.menuForm= menuForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return initialized;
+                        return this.initialized;
     
 }
 
@@ -1943,7 +1943,7 @@ this.menuForm= menuForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return overlayPaintable;
+                        return this.overlayPaintable;
     
 }
 
@@ -1960,7 +1960,7 @@ this.basicGameDemoPaintable= basicGameDemoPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicGameDemoPaintable;
+                        return this.basicGameDemoPaintable;
     
 }
 
@@ -1977,7 +1977,7 @@ this.tempWait= tempWait;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tempWait;
+                        return this.tempWait;
     
 }
 
@@ -2032,7 +2032,7 @@ this.tempWait= tempWait;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameInitializationInterfaceFactoryInterface;
+                        return this.gameInitializationInterfaceFactoryInterface;
     
 }
 
@@ -2042,7 +2042,7 @@ this.tempWait= tempWait;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE;
+                        return DemoCanvas.TYPE;
     
 }
 

@@ -43,7 +43,7 @@ export class GameAdStateFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameAdStateFactory.instance;
     
 }
 
@@ -53,7 +53,7 @@ export class GameAdStateFactory
                                                             new GameAdState(new AppNameLicensingAdConfiguration())
                                                         ];
 
-    private gameAdState: GameAdState = gameAdStateArray[0]!;
+    private gameAdState: GameAdState = this.gameAdStateArray[0]!;
 
     public getCurrentInstance(): GameAdState{
 
@@ -69,13 +69,13 @@ export class GameAdStateFactory
             
     public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdState{
     //var softwareInformation = softwareInformation
-this.gameAdState= gameAdStateArray[0]!;
+this.gameAdState= this.gameAdStateArray[0]!;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameAdStateArray[0]!;
+                        return this.gameAdStateArray[0]!;
     
 }
 

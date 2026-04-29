@@ -76,6 +76,8 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Input } from "./Input.js";
+
 export class InputPersistance extends BasicPersitance {
         
 
@@ -103,7 +105,7 @@ public constructor (name: string){
 ;
     
 
-    var hashtable: Hashtable
+    var hashtable: Hashtable<any, any>
 ;
     
 
@@ -127,7 +129,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-hashtable= new Hashtable();
+hashtable= new Hashtable<any, any>();
     
 this.valueList!.add(hashtable);
     
@@ -142,7 +144,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation
 var hashtable = hashtable
 PreLogUtil.put(new StringMaker().
@@ -181,9 +183,9 @@ PreLogUtil.put(new StringMaker().
     var index: number = 0;
 index < size; index++)
         {
-gameActionInput=  as InputinputObjectArray[index]!;
+gameActionInput= inputObjectArray[index]! as Input;
     
-list=  as BasicArrayListhashtable.get(inputObjectArray[index]!);;
+list= hashtable.get(inputObjectArray[index]!); as BasicArrayList;
     
 
 
@@ -193,7 +195,7 @@ list=  as BasicArrayListhashtable.get(inputObjectArray[index]!);;
     var index2: number = 0;
 index2 < list.size(); index2++)
         {
-input=  as Inputlist.get(index2);;
+input= list.get(index2); as Input;
     
 }
 

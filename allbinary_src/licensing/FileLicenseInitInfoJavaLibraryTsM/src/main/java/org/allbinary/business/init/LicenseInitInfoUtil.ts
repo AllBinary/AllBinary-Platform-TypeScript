@@ -84,7 +84,7 @@ export class LicenseInitInfoUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LicenseInitInfoUtil.instance;
     
 }
 
@@ -99,7 +99,7 @@ export class LicenseInitInfoUtil
 
     public readonly PRIVACY_POLICY: string = "privacy_policy";
 
-    private filePath: string = stringUtil!.EMPTY_STRING;
+    private filePath: string = this.stringUtil!.EMPTY_STRING;
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
@@ -126,7 +126,7 @@ var initData = initData
 
         try {
             
-    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, INITFILENAME)!;
+    var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, this.INITFILENAME)!;
 ;
     
 
@@ -167,7 +167,7 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseServerCrypted));
             {
 this.logUtil!.put("Command Failed: " +INITFILENAME, this, "write", e);
     
-FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME);
+FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
     
 
 
@@ -187,7 +187,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return readAgain(0);;
+                        return this.readAgain(0);;
     
 }
 
@@ -327,7 +327,7 @@ this.logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return filePath;
+                        return this.filePath;
     
 }
 

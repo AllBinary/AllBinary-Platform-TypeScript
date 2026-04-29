@@ -61,7 +61,7 @@ export class DropLayerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DROP_LAYER_FACTORY;
+                        return DropLayerFactory.DROP_LAYER_FACTORY;
     
 }
 
@@ -84,7 +84,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.size();;
+                        return this.list.size();;
     
 }
 
@@ -96,7 +96,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PickedUpLayerInterfaceFactoryInterfacethis.basicArrayListUtil!.getRandom(this.list);;
+                        return this.basicArrayListUtil!.getRandom(this.list); as PickedUpLayerInterfaceFactoryInterface;
     
 }
 
@@ -113,7 +113,7 @@ this.list.add(layerInterfaceFactoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

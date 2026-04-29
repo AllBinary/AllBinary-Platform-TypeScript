@@ -74,7 +74,7 @@ export class NameSpaceRequestParam
 
     private nameSpaceVector: Vector
 
-    private nameSpacePropertiesHashMap: HashMap
+    private nameSpacePropertiesHashMap: HashMap<any, any>
 
     private value: string
 public constructor (nameSpace: string, value: string){
@@ -84,7 +84,7 @@ public constructor (nameSpace: string, value: string){
 var value = value
 this.nameSpaceVector= new Vector();
     
-this.nameSpacePropertiesHashMap= new HashMap();
+this.nameSpacePropertiesHashMap= new HashMap<any, any>();
     
 this.value= value;
     
@@ -149,7 +149,7 @@ this.value= value;
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string =  as StringnameSpaceWithPropertiesVector!.get(index++);;
+    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++); as String;
 ;
     
 list.clear();
@@ -172,7 +172,7 @@ list.clear();
                         
                                     {
                                     
-    var packageName: string =  as StringnameSpaceAndPropertiesVector!.get(0);;
+    var packageName: string = nameSpaceAndPropertiesVector!.get(0); as String;
 ;
     
 
@@ -196,11 +196,11 @@ this.nameSpaceVector!.add(packageName);
                         
                                     {
                                     
-    var properties: string =  as StringnameSpaceAndPropertiesVector!.get(1);;
+    var properties: string = nameSpaceAndPropertiesVector!.get(1); as String;
 ;
     
 
-    var packagePropertiesHashMap: HashMap = this.generatePackagePropertiesHashMap(properties)!;
+    var packagePropertiesHashMap: HashMap<any, any> = this.generatePackagePropertiesHashMap(properties)!;
 ;
     
 this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap);
@@ -246,10 +246,10 @@ packageIndex++;
 }
 
 
-    public getPackageProperties(packageIndex: number): HashMap{
+    public getPackageProperties(packageIndex: number): HashMap<any, any>{
 var packageIndex = packageIndex
 
-    var packagePropertiesHashMap: HashMap =  as HashMapthis.nameSpacePropertiesHashMap!.get(packageIndex.toString());;
+    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()); as HashMap<any, any>;
 ;
     
 
@@ -258,7 +258,7 @@ var packageIndex = packageIndex
                                 )
                         
                                     {
-                                    packagePropertiesHashMap= new HashMap();
+                                    packagePropertiesHashMap= new HashMap<any, any>();
     
 
                                     }
@@ -302,14 +302,14 @@ var packageIndex = packageIndex
 
                 //@Throws(Error::class)
             
-    generatePackagePropertiesHashMap(properties: string): HashMap{
+    generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
 var properties = properties
 
     var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);
 ;
     
 
-    var packagePropertiesHashMap: HashMap = new HashMap();
+    var packagePropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -336,7 +336,7 @@ var properties = properties
         while(index < size)
         {
 
-    var property: string =  as StringpropertyVector!.get(index);;
+    var property: string = propertyVector!.get(index); as String;
 ;
     
 list.clear();
@@ -353,7 +353,7 @@ list.clear();
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string =  as StringpropertyNameValueVector!.get(index2++);;
+    var propertyName: string = propertyNameValueVector!.get(index2++); as String;
 ;
     
 
@@ -361,7 +361,7 @@ list.clear();
                         
                                     {
                                     
-    var propertyValue: string =  as StringpropertyNameValueVector!.get(index2++);;
+    var propertyValue: string = propertyNameValueVector!.get(index2++); as String;
 ;
     
 

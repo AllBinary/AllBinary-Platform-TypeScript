@@ -97,7 +97,7 @@ public constructor (){
 
     public addListener(renderer: any = {}){
 var renderer = renderer
-this.renderer=  as AllBinaryRendererBase3renderer;
+this.renderer= renderer as AllBinaryRendererBase3;
     
 }
 
@@ -124,7 +124,7 @@ this.gl= gl;
 index >= 0; index--)
         {
 
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImagethis.list.objectArray[index]!);
+    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);
 ;
     
 
@@ -253,7 +253,7 @@ height= textureSize;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gl;
+                        return this.gl;
     
 }
 

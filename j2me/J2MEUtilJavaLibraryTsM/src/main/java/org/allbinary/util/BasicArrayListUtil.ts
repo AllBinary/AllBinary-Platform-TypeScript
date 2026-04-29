@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { MyRandomFactory } from "../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -53,6 +55,8 @@ import { ImmutableBasicArrayList } from "./ImmutableBasicArrayList.js";
 
 import { BasicArrayList } from "./BasicArrayList.js";
 
+import { BasicArrayListD } from "./BasicArrayListD.js";
+
 export class BasicArrayListUtil
             extends Object
          {
@@ -65,7 +69,7 @@ export class BasicArrayListUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicArrayListUtil.instance;
     
 }
 
@@ -133,7 +137,7 @@ var list = list
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myRandomFactory!.getAbsoluteNextInt(list.size());;
+                        return this.myRandomFactory!.getAbsoluteNextInt(list.size());;
     
 }
 
@@ -204,7 +208,7 @@ stringBuffer!.appendint(size);
 index >= 0; index--)
         {
 
-    var usedList: BasicArrayList =  as BasicArrayListlist.objectArray[index]!;
+    var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;
 ;
     
 stringBuffer!.append(S_LABEL);
@@ -227,7 +231,7 @@ stringBuffer!.appendint(usedList!.size());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return immutableInstance;
+                        return this.immutableInstance;
     
 }
 

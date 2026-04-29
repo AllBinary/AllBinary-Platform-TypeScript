@@ -41,6 +41,8 @@ import { JPanel } from "./JPanel.js";
 
 import { JComboBox } from "./JComboBox.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { JLabel } from "./JLabel.js";
@@ -50,7 +52,7 @@ export class InputAutomationTypeJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 }
 
@@ -60,7 +62,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputAutomationTypeJComboBox;
+                        return this.inputAutomationTypeJComboBox;
     
 }
 

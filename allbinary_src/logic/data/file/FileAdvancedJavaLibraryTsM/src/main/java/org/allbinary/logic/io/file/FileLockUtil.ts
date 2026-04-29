@@ -69,7 +69,7 @@ export class FileLockUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FileLockUtil.instance;
     
 }
 
@@ -103,11 +103,11 @@ var isReturnOnFailure = isReturnOnFailure
 index < size; index++)
         {
 
-    var file: AbFile =  as AbFilevector.get(index);;
+    var file: AbFile = vector.get(index); as AbFile;
 ;
     
 
-    var fileLock: FileLock = getLock(file)!;
+    var fileLock: FileLock = this.getLock(file)!;
 ;
     
 
@@ -159,7 +159,7 @@ var vector = vector
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getAll(vector, false);;
+                        return this.getAll(vector, false);;
     
 }
 
@@ -169,7 +169,7 @@ var vector = vector
     public getAllOrNone(vector: Vector): Vector{
 var vector = vector
 
-    var fileLockVector: Vector = getAll(vector, true)!;
+    var fileLockVector: Vector = this.getAll(vector, true)!;
 ;
     
 
@@ -208,7 +208,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getLock(new AbFileOutputStream(file, true));;
+                        return this.getLock(new AbFileOutputStream(file, true));;
     
 
                 //: 
@@ -238,7 +238,7 @@ var fileOutputStream = fileOutputStream
 
         try {
             
-    var fileLock: FileLock = getLock(fileOutputStream!.getChannel())!;
+    var fileLock: FileLock = this.getLock(fileOutputStream!.getChannel())!;
 ;
     
 

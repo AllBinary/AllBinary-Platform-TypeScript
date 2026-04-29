@@ -64,7 +64,7 @@ public constructor (imageComparisonResult: ImageComparisonResult){
 
                             //For kotlin this is before the body of the constructor.
                     
-createMotionRectangles(imageComparisonResult);
+this.createMotionRectangles(imageComparisonResult);
     
 }
 
@@ -90,10 +90,10 @@ var imageComparisonInfo = imageComparisonInfo
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta =  as PixelDeltavector.get(index);;
+    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
 ;
     
-addPixelDeltaToAMotionRectangle(pixelDelta);
+this.addPixelDeltaToAMotionRectangle(pixelDelta);
     
 }
 
@@ -121,7 +121,7 @@ var pixelDelta = pixelDelta
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle =  as MotionRectanglevector.get(index);;
+    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
 ;
     
 
@@ -240,7 +240,7 @@ var pixelDelta = pixelDelta
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle, pixelDelta);;
+                        return this.isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle, pixelDelta);;
     
 
                                     }

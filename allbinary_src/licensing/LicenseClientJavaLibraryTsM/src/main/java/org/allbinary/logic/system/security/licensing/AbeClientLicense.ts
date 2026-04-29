@@ -71,7 +71,7 @@ export class AbeClientLicense
          implements AbeLicenseInterface {
         
 
-    public static hasRequiredKeys(resultHashtable: Hashtable): boolean{
+    public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{
 var resultHashtable = resultHashtable
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
@@ -103,7 +103,7 @@ var resultHashtable = resultHashtable
 }
 
 
-    private hashtable: Hashtable
+    private hashtable: Hashtable<any, any>
 
     private id: string
 
@@ -112,11 +112,11 @@ var resultHashtable = resultHashtable
     private special: string
 
     private licenseType: LicenseType
-public constructor (hashtable: Hashtable){
+public constructor (hashtable: Hashtable<any, any>){
 
             super();
         var hashtable = hashtable
-this.hashtable= new Hashtable();
+this.hashtable= new Hashtable<any, any>();
     
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
@@ -144,10 +144,10 @@ this.hashtable= new Hashtable();
 
                                     }
                                 
-this.id=  as Stringhashtable.get(abeClientInformationData!.LICENSEID);;
+this.id= hashtable.get(abeClientInformationData!.LICENSEID); as String;
     
 
-    var vector: Vector =  as Vectorhashtable.get(abeClientInformationData!.LICENSESERVERS);;
+    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS); as Vector;
 ;
     
 this.servers= new BasicArrayListD();
@@ -172,10 +172,10 @@ this.servers.add(vector.get(index));
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
-this.setSpecial(stringUtil!.getNonNull( as Stringhashtable.get(abeClientInformationData!.SPECIAL)));
+this.setSpecial(stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.SPECIAL) as String));
     
 
-    var licenseTypeString: string = stringUtil!.getNonNull( as Stringhashtable.get(abeClientInformationData!.LICENSE_TYPE))!;
+    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
 ;
     
 this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
@@ -199,7 +199,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Stringthis.hashtable.get(keyName as Object);;
+                        return this.hashtable.get(keyName as Object); as String;
     
 }
 
@@ -295,7 +295,7 @@ stringBuffer!.append(BREAK);
 index < size; index++)
         {
 
-    var nextServerString: string =  as StringserverVector!.get(index);;
+    var nextServerString: string = serverVector!.get(index); as String;
 ;
     
 stringBuffer!.append("Server: ");
@@ -327,7 +327,7 @@ this.special= special;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return special;
+                        return this.special;
     
 }
 
@@ -337,7 +337,7 @@ this.special= special;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return licenseType;
+                        return this.licenseType;
     
 }
 

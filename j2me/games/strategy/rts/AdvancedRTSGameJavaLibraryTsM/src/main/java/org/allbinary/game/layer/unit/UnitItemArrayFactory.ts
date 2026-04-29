@@ -155,7 +155,7 @@ this.resources= resources;
 ;
     
 
-    var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, basicColor, 
+    var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
                                                 [
                                                     new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image);
                                                 ], layerInterfaceFactoryInterface);
@@ -177,7 +177,7 @@ this.resources= resources;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ITEMS;
+                        return UnitItemArrayFactory.ITEMS;
     
 }
 
@@ -187,7 +187,7 @@ this.resources= resources;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resources;
+                        return this.resources;
     
 }
 

@@ -107,7 +107,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -131,7 +131,7 @@ var document = document
 ;
     
 
-    var itemsAndNumberInBasket: HashMap = basketInterface!.getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;
 ;
     
 
@@ -280,7 +280,7 @@ basketNode!.appendChild(subTotalNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

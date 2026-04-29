@@ -147,7 +147,7 @@ this.getRatios()[index]= new number(nominator /this.getSize());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return good;
+                        return this.good;
     
 }
 
@@ -164,7 +164,7 @@ this.good= good;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dropping;
+                        return this.dropping;
     
 }
 
@@ -253,7 +253,7 @@ this.ratios= ratios;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minX;
+                        return this.minX;
     
 }
 
@@ -270,7 +270,7 @@ this.minX= minX;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxX;
+                        return this.maxX;
     
 }
 
@@ -287,7 +287,7 @@ this.maxX= maxX;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 
@@ -304,7 +304,7 @@ this.y= y;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return size;
+                        return this.size;
     
 }
 

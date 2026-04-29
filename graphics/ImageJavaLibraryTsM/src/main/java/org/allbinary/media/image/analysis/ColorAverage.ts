@@ -102,7 +102,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return avgRed;
+                        return this.avgRed;
     
 }
 
@@ -119,7 +119,7 @@ this.avgRed= avgRed;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return avgGreen;
+                        return this.avgGreen;
     
 }
 
@@ -136,7 +136,7 @@ this.avgGreen= avgGreen;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return avgBlue;
+                        return this.avgBlue;
     
 }
 

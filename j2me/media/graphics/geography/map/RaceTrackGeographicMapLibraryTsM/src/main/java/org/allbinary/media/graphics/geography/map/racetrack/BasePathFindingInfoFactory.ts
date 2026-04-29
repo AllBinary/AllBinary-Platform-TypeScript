@@ -134,7 +134,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
 ;
     
 
-                        if(geographicCellType == startLineId)
+                        if(geographicCellType == this.startLineId)
                         
                                     {
                                     this@BasePathFindingInfoFactory.addStartPathFindingNode(pathFindingInfo, cellPosition);
@@ -143,11 +143,11 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                                     }
                                 
 
-                        if(geographicCellType == finishLineId)
+                        if(geographicCellType == this.finishLineId)
                         
                                     {
                                     
-                        if(geographicCellType == startLineId)
+                        if(geographicCellType == this.startLineId)
                         
                                     {
                                     this@BasePathFindingInfoFactory.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()));

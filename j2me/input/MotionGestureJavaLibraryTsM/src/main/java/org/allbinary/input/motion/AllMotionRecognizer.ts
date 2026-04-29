@@ -73,7 +73,7 @@ export class AllMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-        this.id= index++;
+        this.id= AllMotionRecognizer.index++;
     
 this.motionGestureRecognizer= new MotionGestureRecognizer(this.id);
     
@@ -103,7 +103,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                         
                                     {
                                     
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -137,7 +137,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                         
                                     {
                                     
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -182,7 +182,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         
                                     {
                                     
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -217,7 +217,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 this.lastY= y;
     
 
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -237,7 +237,7 @@ this.motionGestureRecognizer!.processMovedMotionEvent(point, deviceId, modifiers
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionGestureRecognizer;
+                        return this.motionGestureRecognizer;
     
 }
 

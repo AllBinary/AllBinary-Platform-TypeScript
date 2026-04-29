@@ -117,7 +117,7 @@ export class HighScoreNamePersistanceSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return HighScoreNamePersistanceSingleton.SINGLETON;
     
 }
 
@@ -158,7 +158,7 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
 index < size; index++)
         {
 
-    var integer: number =  as Integerthis.nameBasicArrayList!.objectArray[index]!;
+    var integer: number = this.nameBasicArrayList!.objectArray[index]! as Integer;
 ;
     
 this.delete(abeClientInformation, gameInfo, integer.toInt());
@@ -176,7 +176,7 @@ this.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformRecordIdUtil!.getRecordId(abeClientInformation, RECORD_ID);;
+                        return this.platformRecordIdUtil!.getRecordId(abeClientInformation, RECORD_ID);;
     
 }
 

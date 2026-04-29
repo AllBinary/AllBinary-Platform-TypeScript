@@ -69,12 +69,12 @@ export class LevelLayersFinder
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LevelLayersFinder.instance;
     
 }
 
 
-    public get(hashtable: Hashtable): BasicArrayList{
+    public get(hashtable: Hashtable<any, any>): BasicArrayList{
 var hashtable = hashtable
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
@@ -92,11 +92,11 @@ var hashtable = hashtable
         while(enumeration.hasMoreElements())
         {
 
-    var layerHashtable: Hashtable =  as Hashtablehashtable.get( as Objectenumeration.nextElement()!);;
+    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()! as Object); as Hashtable<any, any>;
 ;
     
 
-    var integer: number =  as IntegerlayerHashtable!.get( as ObjectLayer.ID);;
+    var integer: number = layerHashtable!.get(Layer.ID as Object); as Integer;
 ;
     
 

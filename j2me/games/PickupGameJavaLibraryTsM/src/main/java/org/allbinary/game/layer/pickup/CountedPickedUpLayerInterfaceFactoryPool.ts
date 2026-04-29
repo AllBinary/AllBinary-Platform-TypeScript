@@ -55,7 +55,7 @@ export class CountedPickedUpLayerInterfaceFactoryPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return CountedPickedUpLayerInterfaceFactoryPool.SINGLETON;
     
 }
 
@@ -80,7 +80,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

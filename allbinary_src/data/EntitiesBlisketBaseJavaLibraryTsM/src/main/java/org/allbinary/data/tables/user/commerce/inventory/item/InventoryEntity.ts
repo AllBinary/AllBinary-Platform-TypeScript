@@ -179,7 +179,7 @@ var storeFrontInterface = storeFrontInterface
 ;
     
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -199,7 +199,7 @@ var storeFrontInterface = storeFrontInterface
 i < size; i++)
         {
 
-    var itemHashMap: HashMap =  as HashMapitemHashMapVector!.get(i as Object);;
+    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object); as HashMap<any, any>;
 ;
     
 
@@ -209,7 +209,7 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string =  as StringitemHashMap!.get(BasicItemData.CATEGORY);;
+    var category: string = itemHashMap!.get(BasicItemData.CATEGORY); as String;
 ;
     
 
@@ -240,13 +240,13 @@ i < size; i++)
     public getItem(id: string): ItemInterface{
 var id = id
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
     
 
-    var itemHashMap: HashMap = super.getRow(keysAndValues)!;
+    var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -440,9 +440,9 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID,  as StringupdatedValues!.get(BasicItemData.ID), updatedValues);
+super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
     
 }
 

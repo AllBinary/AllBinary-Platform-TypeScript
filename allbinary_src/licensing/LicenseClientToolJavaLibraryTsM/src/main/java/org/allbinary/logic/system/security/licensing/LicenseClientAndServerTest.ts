@@ -216,7 +216,7 @@ index < size; index++)
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string =  as Stringthis.vector.get(index);;
+    var serverName: string = this.vector.get(index); as String;
 ;
     
 
@@ -238,8 +238,8 @@ LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
 ;
     
 
-    var abeLicenseInterface: AbeLicenseInterface =  as AbeLicenseInterfacexmlRpcAbeLicenseClient!.get(
-                            null);;
+    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
+                            null); as AbeLicenseInterface;
 ;
     
 

@@ -195,7 +195,7 @@ var value = value
 
                 //@Throws(Error::class)
             
-    public get(name: string, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
+    public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var name = name
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -204,13 +204,13 @@ var pageContext = pageContext
 ;
     
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(transformInfoData!.NAME, name);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -230,7 +230,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var string: string =  as StringanyType;
+    var string: string = anyType as String;
 ;
     
 hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
@@ -249,7 +249,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                         
                                     {
                                     
-    var string: string =  as StringobjectData;
+    var string: string = objectData as String;
 ;
     
 hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
@@ -304,12 +304,12 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var objectConfigString: string =  as StringobjectConfigColumnVector!.get(i);;
+    var objectConfigString: string = objectConfigColumnVector!.get(i); as String;
 ;
     
 objectConfigString= decode.toCharArray();
     
-objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation,  as TransformInfoInterfacethis, DomDocumentHelper.create(objectConfigString)));
+objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(this.abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)));
     
 }
 
@@ -347,7 +347,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var viewNameString: string =  as StringcolumnVector!.get(i);;
+    var viewNameString: string = columnVector!.get(i); as String;
 ;
     
 viewNameVector!.add(viewNameString);
@@ -449,9 +449,9 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(TransformInfoData.getInstance()!.NAME,  as StringupdatedValues!.get(TransformInfoData.getInstance()!.NAME), updatedValues);
+super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues);
     
 }
 

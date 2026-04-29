@@ -49,6 +49,8 @@ import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
 
+import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
+
 import { VectorRotationAnimation } from "./VectorRotationAnimation.js";
 
 import { Animation } from "./Animation.js";
@@ -80,7 +82,7 @@ this.setBasicColorP(basicColor);
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
-    var vectorRotationAnimationInterface: VectorAnimationInterface =  as VectorAnimationInterfaceanimationInterface;
+    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;
 ;
     
 
@@ -116,7 +118,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 

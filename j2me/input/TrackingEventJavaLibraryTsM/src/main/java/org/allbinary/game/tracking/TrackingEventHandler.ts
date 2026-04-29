@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TrackingEventListenerInterface } from "./TrackingEventListenerInterface.js";
+
 export class TrackingEventHandler extends BasicEventHandler {
         
 
@@ -72,10 +74,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var trackingEventListenerInterface: TrackingEventListenerInterface =  as TrackingEventListenerInterfaceeventListenerInterface;
+    var trackingEventListenerInterface: TrackingEventListenerInterface = eventListenerInterface as TrackingEventListenerInterface;
 ;
     
-trackingEventListenerInterface!.onMovement( as TrackingEventeventObject);
+trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
     
 }
 

@@ -103,7 +103,7 @@ export class OpenGLCapabilities
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OpenGLCapabilities.instance;
     
 }
 
@@ -116,21 +116,21 @@ export class OpenGLCapabilities
 
     private initialized: boolean = false;
 
-    private glVersionString: string = stringUtil!.EMPTY_STRING;
+    private glVersionString: string = this.stringUtil!.EMPTY_STRING;
 
-    private glShaderVersionString: string = stringUtil!.EMPTY_STRING;
+    private glShaderVersionString: string = this.stringUtil!.EMPTY_STRING;
 
     public shaderVersion: number = 0;
 
-    private glRenderer: string = stringUtil!.EMPTY_STRING;
+    private glRenderer: string = this.stringUtil!.EMPTY_STRING;
 
-    private glVendor: string = stringUtil!.EMPTY_STRING;
+    private glVendor: string = this.stringUtil!.EMPTY_STRING;
 
-    private glExtensions: string = stringUtil!.EMPTY_STRING;
+    private glExtensions: string = this.stringUtil!.EMPTY_STRING;
 
     private possiblyAccelerated: boolean= false
 
-    private acceleratedString: string = stringUtil!.EMPTY_STRING;
+    private acceleratedString: string = this.stringUtil!.EMPTY_STRING;
 
     public maxTextureSize: number = 64;
 
@@ -156,7 +156,7 @@ export class OpenGLCapabilities
 
     private glVersion: string = this.glVersionString;
 
-    public glInstanceVersion: string = VERSION_UNK;
+    public glInstanceVersion: string = this.VERSION_UNK;
 
     private glExtensionDrawTexture: boolean= false
 
@@ -178,7 +178,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return initialized;
+                        return this.initialized;
     
 }
 

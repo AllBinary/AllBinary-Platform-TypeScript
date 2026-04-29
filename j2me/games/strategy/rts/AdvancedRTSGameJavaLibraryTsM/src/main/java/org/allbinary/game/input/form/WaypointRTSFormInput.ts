@@ -215,7 +215,7 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -259,7 +259,7 @@ super.process(layerManager);
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -292,7 +292,7 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(dragToSpotGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.dragToSpotGameNotificationEvent);
     
 
                                     }
@@ -308,7 +308,7 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(spotTakenGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.spotTakenGameNotificationEvent);
     
 
                                     }
@@ -344,13 +344,13 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
 ;
     
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
+    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
 ;
     
 rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP());
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacertsLayer!.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -362,7 +362,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
 
                         }
                             
-this.attemptBuild(rtsPlayerLayerInterface, layerManager,  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!, itemIndex);
+this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer, itemIndex);
     
 }
 
@@ -383,7 +383,7 @@ this.setSelectedStickyItemIndex(index);
     
 this.setStickyItemSelected(true);
     
-this.stickyAssociatedRtsLayer=  as RTSLayerassociatedRtsLayer;
+this.stickyAssociatedRtsLayer= associatedRtsLayer as RTSLayer;
     
 this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
     
@@ -434,7 +434,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(buildingCollisionGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.buildingCollisionGameNotificationEvent);
     
 
                                     }
@@ -449,7 +449,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -457,7 +457,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorygeographicMapInterface!.getGeographicMapCellTypeFactory();;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -472,7 +472,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
     var index: number = list.size()!;
 --index >= 0; )
         {
-geographicMapCellType= geographicMapInterface!.getCellTypeAt( as GeographicMapCellPositionlist.get(index));
+geographicMapCellType= geographicMapInterface!.getCellTypeAt(list.get(index) as GeographicMapCellPosition);
     
 
                         if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
@@ -484,7 +484,7 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt( as GeographicMapCe
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(roadCollisionGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.roadCollisionGameNotificationEvent);
     
 
                                     }
@@ -543,19 +543,19 @@ WaypointCellPositionHistory.getInstance()!.addList(list, layerInterface);
 ;
     
 
-    var waypointLayer: WaypointLayer =  as WaypointLayerlayerInterface;
+    var waypointLayer: WaypointLayer = layerInterface as WaypointLayer;
 ;
     
 this.addWayPoint(waypointLayer);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput =  as RTSPlayerGameInputrtsPlayerLayerInterface!.getPlayerGameInput();;
+    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
 ;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, geographicMapCellPosition);
     
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
     
 advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!.addWaypoint(layerInterface);
@@ -563,7 +563,7 @@ advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!.addWaypoint(
 layerManager!.append(layerInterface);
     
 
-    var waypointAvancedRTSGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerwaypointLayer;
+    var waypointAvancedRTSGameLayer: AdvancedRTSGameLayer = waypointLayer as AdvancedRTSGameLayer;
 ;
     
 rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!.getWaypoint()!.getSound());
@@ -572,7 +572,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(newWaypointGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.newWaypointGameNotificationEvent);
     
 
                                     }
@@ -593,7 +593,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);
     
 
                                     }
@@ -615,7 +615,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
     addWayPoint(layerInterface: WaypointLayer){
     //var layerInterface = layerInterface
 
-    var stickyAssociatedAdvandedRtsLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerstickyAssociatedRtsLayer;
+    var stickyAssociatedAdvandedRtsLayer: AdvancedRTSGameLayer = stickyAssociatedRtsLayer as AdvancedRTSGameLayer;
 ;
     
 

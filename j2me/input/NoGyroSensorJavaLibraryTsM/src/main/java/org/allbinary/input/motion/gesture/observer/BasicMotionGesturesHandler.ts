@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BaseMotionGestureEventListener } from "./BaseMotionGestureEventListener.js";
+
 export class BasicMotionGesturesHandler extends BasicEventHandler {
         
 
@@ -56,7 +58,7 @@ export class BasicMotionGesturesHandler extends BasicEventHandler {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return BasicMotionGesturesHandler.SINGLETON;
     
 }
 
@@ -72,10 +74,10 @@ protected constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var baseMotionGestureEventListener: BaseMotionGestureEventListener =  as BaseMotionGestureEventListenereventListenerInterface;
+    var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;
 ;
     
-baseMotionGestureEventListener!.onMotionGestureEvent( as MotionGestureEventeventObject);
+baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent);
     
 }
 

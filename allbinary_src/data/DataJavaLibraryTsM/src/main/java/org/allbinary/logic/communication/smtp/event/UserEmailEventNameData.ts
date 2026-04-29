@@ -48,7 +48,7 @@ export class UserEmailEventNameData
          {
         
 
-    private userNameEvenNameHashMap: HashMap = new HashMap();
+    private userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
 
     private nextId: number = 0;
 
@@ -106,7 +106,7 @@ export class UserEmailEventNameData
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData =  as UserEmailEventNameDataUserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object);;
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object); as UserEmailEventNameData;
 ;
     
 

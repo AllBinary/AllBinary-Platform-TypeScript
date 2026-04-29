@@ -56,7 +56,7 @@ export class CancelTouchButtonInputFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CancelTouchButtonInputFactory.instance;
     
 }
 
@@ -98,7 +98,7 @@ var touchButtonInput = touchButtonInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cancelInputArray[touchButtonInput!.getSourceId()]!;
+                        return this.cancelInputArray[touchButtonInput!.getSourceId()]!;
     
 }
 

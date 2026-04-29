@@ -87,7 +87,7 @@ var emailEvent = emailEvent
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
 ;
     
-EmailQueueFactory.getInstance()!.offer( as EmailInterfaceemail.getEmail());
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
 }
 
@@ -113,7 +113,7 @@ var emailEvent = emailEvent
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
 ;
     
-EmailQueueFactory.getInstance()!.offer( as EmailInterfaceemail.getEmail());
+EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
     
 }
 

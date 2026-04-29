@@ -65,9 +65,9 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
         
 import { Layer } from "./Layer.js";
 
-import { AllBinaryLayer } from "./AllBinaryLayer.js";
-
 import { LayerInterfaceFactoryInterface } from "./LayerInterfaceFactoryInterface.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class LayerInterfaceFactory
             extends Object
@@ -81,7 +81,7 @@ export class LayerInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return LayerInterfaceFactory.SINGLETON;
     
 }
 
@@ -100,7 +100,7 @@ this.list= new BasicArrayListD();
 
                 //@Throws(Error::class)
             
-    public getNexInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
     //var x = x
     //var y = y
@@ -113,11 +113,11 @@ this.logUtil!.putF(new StringMaker().
                             append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: number =  as Integerhashtable.get( as ObjectLayer.ID);;
+    var typeInteger: number = hashtable.get(Layer.ID as Object); as Integer;
 ;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface =  as LayerInterfaceFactoryInterfacethis.list.objectArray[typeInteger!.toInt() -1]!;
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.toInt() -1]! as LayerInterfaceFactoryInterface;
 ;
     
 

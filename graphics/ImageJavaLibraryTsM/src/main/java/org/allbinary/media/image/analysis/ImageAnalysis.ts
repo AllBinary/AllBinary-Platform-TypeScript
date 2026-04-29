@@ -64,6 +64,8 @@ import { ColorRangeInterface } from "./ColorRangeInterface.js";
 
 import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
 
+import { ColorAverage } from "./ColorAverage.js";
+
 import { Color } from "./Color.js";
 
 import { ImageColorResults } from "./ImageColorResults.js";
@@ -80,7 +82,7 @@ export class ImageAnalysis
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageAnalysis.instance;
     
 }
 
@@ -127,16 +129,16 @@ indexX < bufferedImage!.getWidth(); indexX++)
 ;
     
 
-    var colorCacheable: ColorCacheable =  as ColorCacheableColorCacheFactory.getInstance()!.get(keyInteger);;
+    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger); as ColorCacheable;
 ;
     
 
     var color: Color = colorCacheable!.getColor()!;
 ;
     
-processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
+ImageAnalysis.processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
     
-processImageColorResults(imageAnalysisResults!.getImageColorResults(), colorRangeInterface, color);
+ImageAnalysis.processImageColorResults(imageAnalysisResults!.getImageColorResults(), colorRangeInterface, color);
     
 redTotal += color.getRed();
     

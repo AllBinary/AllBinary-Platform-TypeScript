@@ -147,7 +147,7 @@ public constructor (name: string){
 ;
     
 
-    var hashtable: Hashtable
+    var hashtable: Hashtable<any, any>
 ;
     
 
@@ -201,7 +201,7 @@ recordAsBytes= recordStore!.getRecord(id);
     
 inputStream= new DataInputStream(byteArrayInputStream);
     
-hashtable= new Hashtable();
+hashtable= new Hashtable<any, any>();
     
 
     var value: number= 0
@@ -224,9 +224,9 @@ value= Integer.parseInt(inputStream!.readUTF());
     
 inputId= value;
     
-gameActionInput= gameKeyFactory!.getGameKey(Math.roundgameActionInputId);
+gameActionInput= gameKeyFactory!.getGameKey(Math.round(gameActionInputId));
     
-input= inputFactory!.getInstanceById(Math.roundinputId);
+input= inputFactory!.getInstanceById(Math.round(inputId));
     
 
                         if(input == inputFactory!.NO_INPUT || gameActionInput == 
@@ -331,7 +331,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation
     //var hashtable = hashtable
 
@@ -397,9 +397,9 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     var index: number = 0;
 index < size; index++)
         {
-gameActionInput=  as InputinputObjectArray[index]!;
+gameActionInput= inputObjectArray[index]! as Input;
     
-list=  as BasicArrayListhashtable.get( as ObjectinputObjectArray[index]!);;
+list= hashtable.get(inputObjectArray[index]! as Object); as BasicArrayList;
     
 
 
@@ -417,7 +417,7 @@ outputStream!.writeUTF(gameActionInputIdAsString);
     
 outputStream!.writeUTF(commonSeps!.EQUALS);
     
-input=  as Inputlist.objectArray[index2]!;
+input= list.objectArray[index2]! as Input;
     
 
     var inputIdAsString: string = smallIntegerSingletonFactory!.getAt(input.getId())!.toString()!;

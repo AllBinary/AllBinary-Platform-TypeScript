@@ -31,6 +31,8 @@
     <modules>
         <module>../J2SEForJ2MEJavaLibraryTsM</module>
         <module>../J2MEForJ2MEJavaLibraryTsM</module>
+        
+        <module>../media/graphics/GameResourceNoneJavaLibraryTsM</module>
     </modules>
 
 </project>

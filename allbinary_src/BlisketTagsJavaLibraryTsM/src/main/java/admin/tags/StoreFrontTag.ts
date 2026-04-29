@@ -73,7 +73,7 @@ export class StoreFrontTag extends CustomTagSupport {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -110,8 +110,8 @@ this.storeName= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -174,8 +174,8 @@ this.storeName= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -233,7 +233,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

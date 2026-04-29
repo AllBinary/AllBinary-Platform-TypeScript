@@ -128,7 +128,7 @@ export class PaymentTransactionInterfaceRequestFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PaymentTransactionInterfaceRequestFactory.instance;
     
 }
 
@@ -149,7 +149,7 @@ var transformInfoInterface = transformInfoInterface
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -157,7 +157,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequestpageContext!.getRequest();;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 
@@ -174,14 +174,14 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return generateFromTestData(transformInfoInterface);;
+                        return this.generateFromTestData(transformInfoInterface);;
     
 
                                     }
                                 
                         else {
                             
-    var propertiesHashMap: HashMap = httpTransformInfoInterface!.getPropertiesHashMap()!;
+    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;
 ;
     
 
@@ -270,11 +270,11 @@ var transformInfoInterface = transformInfoInterface
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
-    var propertiesHashMap: HashMap = httpTransformInfoInterface!.getPropertiesHashMap()!;
+    var propertiesHashMap: HashMap<any, any> = httpTransformInfoInterface!.getPropertiesHashMap()!;
 ;
     
 
@@ -290,11 +290,11 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequestpageContext!.getRequest();;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 
-    var gatewayName: string =  as StringweblisketSession!.getPaymentMethod();;
+    var gatewayName: string = weblisketSession!.getPaymentMethod(); as String;
 ;
     
 

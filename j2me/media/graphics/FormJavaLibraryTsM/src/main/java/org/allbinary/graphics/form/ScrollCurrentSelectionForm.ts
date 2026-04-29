@@ -144,7 +144,7 @@ this.dy= y;
     var index: number = 0;
 index < size; index++)
         {
-item=  as CustomItemInterfacethis.get(index);;
+item= this.get(index); as CustomItemInterface;
     
 totalWidth += item.getMinimumWidth() +border;
     
@@ -274,11 +274,11 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 ;
     
 
-    var deltaX: number = getDx()!;
+    var deltaX: number = this.getDx()!;
 ;
     
 
-    var deltaY: number = getDy()!;
+    var deltaY: number = this.getDy()!;
 ;
     
 
@@ -301,7 +301,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
     var index: number = 0;
 index < size; index++)
         {
-item=  as CustomItemInterfacethis.get(index);;
+item= this.get(index); as CustomItemInterface;
     
 
     var diffX: number = 0;
@@ -423,7 +423,7 @@ var item = item
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dx;
+                        return this.dx;
     
 }
 
@@ -433,7 +433,7 @@ var item = item
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dy;
+                        return this.dy;
     
 }
 

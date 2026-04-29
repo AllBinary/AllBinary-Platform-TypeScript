@@ -108,26 +108,26 @@ export class Payment
     private magneticInkCheckReader: string
 
     private isDefault: boolean = false;
-public constructor (payment: HashMap){
+public constructor (payment: HashMap<any, any>){
 
             super();
         var payment = payment
-this.name=  as Stringpayment.get(PaymentData.NAME);;
+this.name= payment.get(PaymentData.NAME); as String;
     
-this.type=  as Stringpayment.get(PaymentData.TYPE);;
+this.type= payment.get(PaymentData.TYPE); as String;
     
-this.expiration=  as Stringpayment.get(PaymentData.EXPIRATION);;
+this.expiration= payment.get(PaymentData.EXPIRATION); as String;
     
-this.encryption=  as Stringpayment.get(EntryData.getInstance()!.ENCRYPTION);;
+this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION); as String;
     
-this.number=  as Stringnew SuperCrypt(this.encryption.
+this.number= new SuperCrypt(this.encryption.
                             toInt()).
-                            decrypt( as Stringpayment.get(PaymentData.NUMBER));;
+                            decrypt(payment.get(PaymentData.NUMBER) as String); as String;
     
-this.id=  as Stringpayment.get(PaymentData.ID);;
+this.id= payment.get(PaymentData.ID); as String;
     
 
-    var def: string =  as Stringpayment.get(EntryData.getInstance()!.DEFAULT);;
+    var def: string = payment.get(EntryData.getInstance()!.DEFAULT); as String;
 ;
     
 
@@ -147,25 +147,25 @@ this.id=  as Stringpayment.get(PaymentData.ID);;
 
                         }
                             
-this.tenderType=  as Stringpayment.get(PaymentData.TENDERTYPE);;
+this.tenderType= payment.get(PaymentData.TENDERTYPE); as String;
     
-this.transactionType=  as Stringpayment.get(PaymentData.TRANSACTIONTYPE);;
+this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE); as String;
     
-this.aba=  as Stringpayment.get(PaymentData.ABA);;
+this.aba= payment.get(PaymentData.ABA); as String;
     
-this.account=  as Stringpayment.get(PaymentData.ACCOUNT);;
+this.account= payment.get(PaymentData.ACCOUNT); as String;
     
-this.accountType=  as Stringpayment.get(PaymentData.ACCOUNTTYPE);;
+this.accountType= payment.get(PaymentData.ACCOUNTTYPE); as String;
     
-this.authorizationCode=  as Stringpayment.get(PaymentData.AUTHORIZATIONCODE);;
+this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE); as String;
     
-this.checkNumber=  as Stringpayment.get(PaymentData.CHECKNUMBER);;
+this.checkNumber= payment.get(PaymentData.CHECKNUMBER); as String;
     
-this.checkType=  as Stringpayment.get(PaymentData.CHECKTYPE);;
+this.checkType= payment.get(PaymentData.CHECKTYPE); as String;
     
-this.driversLicense=  as Stringpayment.get(PaymentData.DRIVERSLICENSE);;
+this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE); as String;
     
-this.magneticInkCheckReader=  as Stringpayment.get(PaymentData.MAGNETICINKCHECKREADER);;
+this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER); as String;
     
 }
 
@@ -583,14 +583,14 @@ this.number= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isDefault;
+                        return this.isDefault;
     
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(PaymentData.NAME, this.name);
@@ -648,7 +648,7 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 

@@ -106,7 +106,7 @@ export class SelectionTool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NAME;
+                        return SelectionTool.NAME;
     
 }
 
@@ -248,7 +248,7 @@ var angle = angle
 ;
     
 
-    var hashMap: HashMap = this.canvasJPanel!.getGraphicItemHashMap()!;
+    var hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;
 ;
     
 
@@ -269,7 +269,7 @@ var angle = angle
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
@@ -424,14 +424,14 @@ var point = point
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NAME;
+                        return SelectionTool.NAME;
     
 }
 
 
     private startPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
-    private endPoint: GPoint = startPoint;
+    private endPoint: GPoint = this.startPoint;
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
 var mouseEvent = mouseEvent

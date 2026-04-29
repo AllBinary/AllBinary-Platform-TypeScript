@@ -78,7 +78,7 @@ var direction = direction
                     
 this.lifeInterface= lifeInterface;
     
-this.xArray= new Array(Math.roundthis.getLifeInterface()!.getMaxlives(););
+this.xArray= new Array(Math.round(this.getLifeInterface()!.getMaxlives();));
     
 this.update();
     
@@ -104,7 +104,7 @@ this.update();
                         
                                     {
                                     
-    var maxLives: number = Math.roundthis.getLifeInterface()!.getMaxlives();;
+    var maxLives: number = Math.round(this.getLifeInterface()!.getMaxlives(););
 ;
     
 
@@ -141,7 +141,7 @@ var graphics = graphics
 
 
                         for (
-    var index: number = Math.roundthis.getLifeInterface()!.get();;
+    var index: number = Math.round(this.getLifeInterface()!.get(););
 --index >= 0; )
         {
 this.animationInterface!.paintXY(graphics, xArray[index]!, this.getY());
@@ -161,7 +161,7 @@ var graphics = graphics
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return lifeInterface;
+                        return this.lifeInterface;
     
 }
 

@@ -52,7 +52,7 @@ export class ImageColorRangeResults
 public constructor (){
 
             super();
-        this.setColorRangeInterface( as ColorRangeInterfacenew ColorRange());
+        this.setColorRangeInterface(new ColorRange() as ColorRangeInterface);
     
 }
 
@@ -62,7 +62,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorRangeInterface;
+                        return this.colorRangeInterface;
     
 }
 
@@ -79,7 +79,7 @@ this.colorRangeInterface= colorRangeInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return matchingPixelsChecked;
+                        return this.matchingPixelsChecked;
     
 }
 
@@ -102,13 +102,13 @@ this.matchingPixelsChecked++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return totalPixelsChecked;
+                        return this.totalPixelsChecked;
     
 }
 
 
     public addTotalPixelsChecked(){
-totalPixelsChecked++;
+this.totalPixelsChecked++;
     
 }
 

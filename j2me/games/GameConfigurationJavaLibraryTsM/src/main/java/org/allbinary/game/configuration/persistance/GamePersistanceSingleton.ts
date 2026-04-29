@@ -51,7 +51,7 @@ export class GamePersistanceSingleton extends KeyValuePersistance {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GAME_PERSISTANCE;
+                        return GamePersistanceSingleton.GAME_PERSISTANCE;
     
 }
 

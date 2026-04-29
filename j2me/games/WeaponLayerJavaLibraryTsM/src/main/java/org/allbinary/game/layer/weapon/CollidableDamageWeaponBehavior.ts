@@ -146,11 +146,11 @@ this.collided= true;
     public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-                        if(this.collisionHelper!.isCollidable( as CollidableCompositeLayercollidableInterfaceCompositeInterface))
+                        if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer =  as AllBinaryLayercollidableInterfaceCompositeInterface;
+    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;
 ;
     
 
@@ -189,7 +189,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-damageUtil!.process( as DamageableInterfacethis.ownerLayer,  as DamageableInterfacecollidableInterfaceCompositeInterface);
+damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
     
 this.collided= true;
     
@@ -212,7 +212,7 @@ var layerInterface = layerInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return collided;
+                        return this.collided;
     
 }
 

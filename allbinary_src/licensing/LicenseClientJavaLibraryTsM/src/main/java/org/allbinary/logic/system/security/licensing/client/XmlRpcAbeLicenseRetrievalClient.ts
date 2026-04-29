@@ -133,7 +133,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable = this.getClientInfo()!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getClientInfo()!.toHashtable()!;
 ;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
@@ -147,7 +147,7 @@ param.add(hashtable);
 this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
     
 
-    var resultHashtable: Hashtable =  as Hashtableresult;
+    var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;
 ;
     
 

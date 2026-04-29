@@ -59,7 +59,7 @@ export class Unit2DecalGameResources extends BasicGameResources {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return Unit2DecalGameResources.instance;
     
 }
 

@@ -112,7 +112,7 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap = new RequestParams(request).
+    var hashMap: HashMap<any, any> = new RequestParams(request).
                             toHashMap()!;
 ;
     
@@ -130,9 +130,9 @@ this.getFormData();
 
                                     }
                                 
-this.id=  as StringhashMap!.get(BasicItemData.ID);;
+this.id= hashMap!.get(BasicItemData.ID); as String;
     
-this.downloadItemId=  as StringhashMap!.get(DownloadItemData.ID);;
+this.downloadItemId= hashMap!.get(DownloadItemData.ID); as String;
     
 }
 
@@ -201,7 +201,7 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
                                     }
                                 
-this.downloadableItem=  as DownloadableItemvector.get(0);;
+this.downloadableItem= vector.get(0); as DownloadableItem;
     
 
                                     }

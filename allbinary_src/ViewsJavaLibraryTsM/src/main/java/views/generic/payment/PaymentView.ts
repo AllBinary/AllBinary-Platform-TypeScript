@@ -110,7 +110,7 @@ document.appendChild(paymentNode);
 index < size; index++)
         {
 
-    var payment: Payment =  as PaymentpaymentVector!.get(index);;
+    var payment: Payment = paymentVector!.get(index); as Payment;
 ;
     
 paymentNode!.appendChild(payment.toXmlNode(document));
@@ -147,7 +147,7 @@ paymentNode!.appendChild(payment.toXmlNode(document));
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

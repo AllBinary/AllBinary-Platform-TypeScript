@@ -62,6 +62,8 @@ import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInt
 
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
+import { EmailServerConfigurationMapping } from "./EmailServerConfigurationMapping.js";
+
 export class EmailServerConfigurationView
             extends Object
          implements DomNodeInterface {
@@ -88,7 +90,7 @@ public constructor (node: Node){
     var password: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.PASSWORD, childNodeList)!;
 ;
     
-this.emailServerConfigurationInterface=  as EmailServerConfigurationInterfacenew EmailServerConfiguration(accountName, password, server);
+this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
     
 }
 
@@ -120,7 +122,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = emailConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
 ;
     
 

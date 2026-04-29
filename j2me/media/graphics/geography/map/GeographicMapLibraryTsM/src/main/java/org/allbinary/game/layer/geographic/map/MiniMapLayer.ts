@@ -150,7 +150,7 @@ this.init();
                 //@Throws(Error::class)
             
     init(){
-allBinaryTiledLayer!.setPosition(this.x, this.y, this.z);
+this.allBinaryTiledLayer!.setPosition(this.x, this.y, this.z);
     
 }
 
@@ -168,7 +168,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface =  as ColorCompositeInterfacegeographicMapCellPositionEvent!.getSource();;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
 ;
     
 
@@ -197,7 +197,7 @@ this.positionList!.removeAt(index);
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface =  as ColorCompositeInterfacegeographicMapCellPositionEvent!.getSource();;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
 ;
     
 
@@ -220,7 +220,7 @@ this.positionList!.removeAt(index);
     var index: number = 0;
 index < size; index++)
         {
-nextColorCompositeInterface=  as ColorCompositeInterfacethis.list.get(index);;
+nextColorCompositeInterface= this.list.get(index); as ColorCompositeInterface;
     
 
                         if(nextColorCompositeInterface == colorCompositeInterface)
@@ -237,7 +237,7 @@ break;
 }
 
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(geographicMapCellPositionEvent!.getGeographicMapCellPosition())!;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPositionFactory!.getInstance(geographicMapCellPositionEvent!.getGeographicMapCellPosition())!;
 ;
     
 
@@ -302,9 +302,9 @@ var graphics = graphics
     var index: number = length;
 --index >= 0; )
         {
-point=  as GPointlocalPositionList!.get(index);;
+point= localPositionList!.get(index); as GPoint;
     
-basicColor=  as BasicColorlocalBasicColorList!.get(index);;
+basicColor= localBasicColorList!.get(index); as BasicColor;
     
 graphics.setColor(basicColor!.toInt());
     
@@ -319,7 +319,7 @@ this.animationInterface!.paintXY(graphics, point.getX() +this.x, point.getY() +t
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-allBinaryTiledLayer!.paint(graphics);
+this.allBinaryTiledLayer!.paint(graphics);
     
 this.paintDots(graphics);
     

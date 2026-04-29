@@ -61,16 +61,16 @@ export class GameAdStateBase
          {
         
 
-    readonly adConfiguration: AdConfiguration
+    readonly adConfigurationP: AdConfiguration
 
-    readonly advertisements: Advertisements = new Advertisements();
+    readonly advertisementsP: Advertisements = new Advertisements();
 
-    okayToShowAds: boolean= false
+    okayToShowAdsP: boolean= false
 public constructor (adConfiguration: AdConfiguration){
 
             super();
             //var adConfiguration = adConfiguration
-this.adConfiguration= adConfiguration;
+this.adConfigurationP= adConfiguration;
     
 }
 
@@ -177,7 +177,7 @@ var gameIsReady = gameIsReady
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return advertisements;
+                        return this.advertisementsP;
     
 }
 
@@ -187,7 +187,7 @@ var gameIsReady = gameIsReady
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adConfiguration;
+                        return this.adConfigurationP;
     
 }
 
@@ -204,7 +204,7 @@ var gameIsReady = gameIsReady
 
     public setOkayToShowAds(okayToShowAds: boolean){
 var okayToShowAds = okayToShowAds
-this.okayToShowAds= okayToShowAds;
+this.okayToShowAdsP= okayToShowAds;
     
 }
 
@@ -214,7 +214,7 @@ this.okayToShowAds= okayToShowAds;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return okayToShowAds;
+                        return this.okayToShowAdsP;
     
 }
 

@@ -78,6 +78,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
 
+import { MotionGestureInput } from "./MotionGestureInput.js";
+
 import { Math } from "./Math.js";
 
 export class MotionGestureRecognizer
@@ -91,11 +93,11 @@ export class MotionGestureRecognizer
 
     private readonly origin: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
-    private previous: GPoint = origin;
+    private previous: GPoint = this.origin;
 
-    private intermediate: GPoint = origin;
+    private intermediate: GPoint = this.origin;
 
-    private readonly line: Line = new Line(origin, origin);
+    private readonly line: Line = new Line(this.origin, this.origin);
 
     private readonly motionGesturesHandler: BasicMotionGesturesHandler
 
@@ -134,7 +136,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     
 }
 
-this.motionGesturesHandler=  as BasicMotionGesturesHandlermotionGesturesHandler;
+this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler;
     
 this.movedMotionGesturesHandler= movedMotionGesturesHandler;
     
@@ -227,7 +229,7 @@ this.line.setP2(current);
 ;
     
 
-                        if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && j2seMath!.abs(line.getDeltaY()) < minimumMotionGesture)
+                        if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && this.j2seMath!.abs(line.getDeltaY()) < minimumMotionGesture)
                         
                                     {
                                     this.intermediate= current;
@@ -426,7 +428,7 @@ this.movedMotionGesturesHandler!.fireEvent(event);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionGesturesHandler;
+                        return this.motionGesturesHandler;
     
 }
 

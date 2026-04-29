@@ -94,8 +94,8 @@ public constructor (){
 ;
     
 
-    var abeLicenseInterface: AbeLicenseInterface =  as AbeLicenseInterfacexmlRpcAbeLicenseClient!.get(
-                            null);;
+    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
+                            null); as AbeLicenseInterface;
 ;
     
 

@@ -88,8 +88,8 @@ public constructor (){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 

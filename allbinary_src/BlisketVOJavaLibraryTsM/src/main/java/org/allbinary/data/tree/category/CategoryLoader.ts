@@ -416,7 +416,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface =  as CategoryInterfacethis.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode);;
+    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode); as CategoryInterface;
 ;
     
 parentCategoryInterface!.addChild(categoryInterface);
@@ -490,7 +490,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface =  as CategoryPropertiesInterfacenew CategoryProperties(categoryNode);
+    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;
 ;
     
 loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);

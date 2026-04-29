@@ -163,7 +163,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
 ;
     
 
@@ -190,7 +190,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
 
@@ -217,7 +217,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -342,7 +342,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
 
@@ -362,7 +362,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
 ;
     
 
@@ -374,7 +374,7 @@ index < size; index++)
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

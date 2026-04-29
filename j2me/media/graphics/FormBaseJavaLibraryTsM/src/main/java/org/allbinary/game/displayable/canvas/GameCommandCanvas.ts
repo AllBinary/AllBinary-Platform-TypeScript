@@ -256,7 +256,7 @@ this.initCommands(cmdListener);
         try {
             this.initMenu();
     
-repaintProcessor!.process();
+this.repaintProcessor!.process();
     
 
                 //: 
@@ -348,7 +348,7 @@ this.repaintBehavior!.onChangeRepaint(this);
     public createForm(): ScrollSelectionForm{
 
     var items: CustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
-                            getInstance( as Vector<any>this.getCommandStack(), this.backgroundBasicColor, this.foregroundBasicColor)!;
+                            getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
 ;
     
 
@@ -432,7 +432,7 @@ this.repaintProcessor!.process();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return GameCommandCanvas.id;
     
 }
 
@@ -599,7 +599,7 @@ this.menuInputProcessor= menuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuInputProcessor;
+                        return this.menuInputProcessor;
     
 }
 

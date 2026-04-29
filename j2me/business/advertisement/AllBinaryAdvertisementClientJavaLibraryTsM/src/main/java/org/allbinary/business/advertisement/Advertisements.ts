@@ -88,7 +88,7 @@ var advertisementProcessorInterface = advertisementProcessorInterface
 ;
     
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.pageList!.objectArray[random]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;
 ;
     
 advertisementProcessorInterface!.start();
@@ -119,7 +119,7 @@ advertisementProcessorInterface!.start();
 ;
     
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.pageList!.objectArray[random]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[random]! as AdvertisementProcessorInterface;
 ;
     
 advertisementProcessorInterface!.process();
@@ -143,7 +143,7 @@ advertisementProcessorInterface!.process();
 --index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.pageList!.objectArray[index]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.pageList!.objectArray[index]! as AdvertisementProcessorInterface;
 ;
     
 advertisementProcessorInterface!.stop();
@@ -177,7 +177,7 @@ var advertisementProcessorInterface = advertisementProcessorInterface
 --index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.bannerList!.objectArray[index]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;
 ;
     
 advertisementProcessorInterface!.start();
@@ -197,7 +197,7 @@ advertisementProcessorInterface!.start();
 --index >= 0; )
         {
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.bannerList!.objectArray[index]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;
 ;
     
 advertisementProcessorInterface!.stop();
@@ -210,7 +210,7 @@ advertisementProcessorInterface!.stop();
     public getBanner(index: number): AdvertisementProcessorInterface{
 var index = index
 
-    var advertisementProcessorInterface: AdvertisementProcessorInterface =  as AdvertisementProcessorInterfacethis.bannerList!.objectArray[index]!;
+    var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;
 ;
     
 

@@ -167,7 +167,7 @@ this.player.deallocate();
 
     public setTimeBase(timeBase: TimeBase){
 var timeBase = timeBase
-player =  as TimeBaseInterfacethis.playerplayer
+player = this.playerplayer as TimeBaseInterface
 player.
                     setTimeBase(timeBase);
     
@@ -315,7 +315,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-player =  as Controllable2this.playerplayer
+player = this.playerplayer as Controllable2
 player.
                     setVolume(leftVolume, rightVolume);
     

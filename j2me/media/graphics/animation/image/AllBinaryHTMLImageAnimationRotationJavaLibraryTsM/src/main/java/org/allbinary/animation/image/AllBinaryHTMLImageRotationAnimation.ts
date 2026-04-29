@@ -123,11 +123,11 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
     public getCanvasSurface(image: Image): CanvasSurface{
     //var image = image
 
-    var htmlImage: PlaynMutableImage =  as PlaynMutableImageimage;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
 ;
     
 
-    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
 ;
     
 

@@ -78,6 +78,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -109,7 +111,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 this.imageProcessorInput= imageProcessorInput;
     
@@ -128,7 +130,7 @@ new Thread()
 
         try {
             
-    var angleAsString: string =  as Stringthis@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem();;
+    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem(); as String;
 ;
     
 ImageArrayRotationUtil.getInstance()!.process(this@RotationImageJPanel.getImageProcessorInput(), angleAsString, this@RotationImageJPanel);
@@ -151,7 +153,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jPanel1= new javax.swing.JPanel()
+this.jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -203,7 +205,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -220,7 +222,7 @@ this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                     commonStrings!.UP,commonStrings!.DOWN,"-90","90";
                                                 ]));
     
-totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -306,7 +308,7 @@ var evt = evt
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 
@@ -353,7 +355,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write( as RenderedImagethis@RotationImageJPanel.result, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(this@RotationImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);

@@ -149,7 +149,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return image;
+                        return this.image;
     
 }
 
@@ -159,7 +159,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return sequenceArray;
+                        return this.sequenceArray;
     
 }
 
@@ -204,9 +204,9 @@ this.scaleProperties= scaleProperties;
                         if(this.scaleProperties!.shouldScale)
                         
                                     {
-                                    this.scaleProperties!.scaleWidth= Math.round(this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX);
+                                    this.scaleProperties!.scaleWidth= Math.round((this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX));
     
-this.scaleProperties!.scaleHeight= Math.round(this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY);
+this.scaleProperties!.scaleHeight= Math.round((this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY));
     
 
                                     }

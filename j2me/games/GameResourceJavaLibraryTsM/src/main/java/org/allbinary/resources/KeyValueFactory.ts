@@ -52,17 +52,17 @@ export class KeyValueFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return KeyValueFactory.instance;
     
 }
 
 
-    public readonly MAP: Hashtable = new Hashtable();
+    public readonly MAP: Hashtable<any, any> = new Hashtable<any, any>();
 
     public get(key: string): string{
 var key = key
 
-    var value: string =  as StringMAP.get( as Objectkey);;
+    var value: string = MAP.get(key as Object); as String;
 ;
     
 

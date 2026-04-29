@@ -65,7 +65,7 @@ export class PlatformFormInputMappingFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PlatformFormInputMappingFactory.instance;
     
 }
 
@@ -136,7 +136,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return this.SINGLETON;
     
 }
 

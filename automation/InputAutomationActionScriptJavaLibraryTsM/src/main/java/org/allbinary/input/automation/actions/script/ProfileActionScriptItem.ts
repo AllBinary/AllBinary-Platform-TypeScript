@@ -62,6 +62,8 @@ import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInter
 
 import { JPopupMenu } from "./JPopupMenu.js";
 
+import { JMenuItem } from "./JMenuItem.js";
+
 import { RuntimeException } from "./RuntimeException.js";
 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
@@ -125,7 +127,7 @@ this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
 
 
     init(){
-setJPopupMenu(new JPopupMenu());
+this.setJPopupMenu(new JPopupMenu());
     
 
     var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);
@@ -139,9 +141,9 @@ jMenuItemEdit!.addActionListener(this);
     
 jMenuItemDelete!.addActionListener(this);
     
-getJPopupMenu()!.add(jMenuItemEdit);
+this.getJPopupMenu()!.add(jMenuItemEdit);
     
-getJPopupMenu()!.add(jMenuItemDelete);
+this.getJPopupMenu()!.add(jMenuItemDelete);
     
 }
 
@@ -163,7 +165,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return jPopupMenu;
+                        return this.jPopupMenu;
     
 }
 
@@ -180,7 +182,7 @@ var frame = frame
     public actionPerformed(actionEvent: ActionEvent){
 var actionEvent = actionEvent
 
-                        if(actionEvent!.getActionCommand()!.compareTo(EDIT) == 0)
+                        if(actionEvent!.getActionCommand()!.compareTo(ProfileActionScriptItem.EDIT) == 0)
                         
                                     {
                                     this.showDialog();

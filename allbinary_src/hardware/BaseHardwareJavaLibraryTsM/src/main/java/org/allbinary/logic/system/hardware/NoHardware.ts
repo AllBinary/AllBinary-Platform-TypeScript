@@ -63,7 +63,7 @@ export class NoHardware
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return NoHardware.instance;
     
 }
 
@@ -100,7 +100,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

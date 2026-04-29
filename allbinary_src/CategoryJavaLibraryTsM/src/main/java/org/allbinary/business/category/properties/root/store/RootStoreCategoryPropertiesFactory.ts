@@ -73,7 +73,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
         var transformInfoInterface = transformInfoInterface
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreCategoryProperties(transformInfoInterface);
+this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
     
 }
 
@@ -82,7 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPa
             super();
         var transformInfoInterface = transformInfoInterface
 var abPath = abPath
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreCategoryProperties(transformInfoInterface, abPath);
+this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
     
 }
 
@@ -91,16 +91,16 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super();
         var transformInfoInterface = transformInfoInterface
 var node = node
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreCategoryProperties(transformInfoInterface, node);
+this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         var transformInfoInterface = transformInfoInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreCategoryProperties(transformInfoInterface, categoryPropertiesHashMap);
+this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }
 
@@ -112,7 +112,7 @@ this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreCa
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryPropertiesInterfacethis.categoryPropertiesInterface;
+                        return this.categoryPropertiesInterface as CategoryPropertiesInterface;
     
 
                 //: 

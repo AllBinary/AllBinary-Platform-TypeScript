@@ -87,7 +87,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -102,16 +102,16 @@ this.running= running;
 
     public onCaptureEvent(capturedImageEvent: CapturedImageWorkerResultsEvent){
 var capturedImageEvent = capturedImageEvent
-capturedImageWorkerResultsEventVector!.add(capturedImageEvent);
+this.capturedImageWorkerResultsEventVector!.add(capturedImageEvent);
     
-run();
+this.run();
     
 }
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-onCaptureEvent( as CapturedImageWorkerResultsEventallBinaryEventObject);
+this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
     
 }
 
@@ -121,7 +121,7 @@ onCaptureEvent( as CapturedImageWorkerResultsEventallBinaryEventObject);
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
-setRunning(true);
+this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
@@ -130,7 +130,7 @@ setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = ( as CapturedImageWorkerResultsEventthis.capturedImageWorkerResultsEventVector!.get(0););
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0); as CapturedImageWorkerResultsEvent);
 ;
     
 
@@ -144,7 +144,7 @@ this.capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEve
     
 this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
-setRunning(false);
+this.setRunning(false);
     
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     

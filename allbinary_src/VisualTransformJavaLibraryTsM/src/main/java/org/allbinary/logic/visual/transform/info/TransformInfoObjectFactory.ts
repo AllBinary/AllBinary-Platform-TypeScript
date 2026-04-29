@@ -72,7 +72,7 @@ export class TransformInfoObjectFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoObjectFactory.instance;
     
 }
 
@@ -116,10 +116,10 @@ classes[0]=
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]=  as ObjecttransformInfoInterface;
+params[0]= transformInfoInterface as Object;
     
 
-    var anyType: TransformInterface =  as TransformInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params);;
+    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params); as TransformInterface;
 ;
     
 

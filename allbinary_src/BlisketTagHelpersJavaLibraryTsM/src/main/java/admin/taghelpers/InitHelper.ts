@@ -55,7 +55,7 @@ export class InitHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap

@@ -79,7 +79,7 @@ export class TransformTemplateCustomizerUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformTemplateCustomizerUtil.instance;
     
 }
 
@@ -143,7 +143,7 @@ var storeName = storeName
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(
@@ -158,22 +158,22 @@ hashMap!.put(
     
 hashMap!.put(
                                                 [
-                                                    CUSTOMIZER_NAME;
+                                                    this.CUSTOMIZER_NAME;
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    BODY_VIEWNAMEKEY;
+                                                    this.BODY_VIEWNAMEKEY;
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    TITLE_VIEWNAMEKEY;
+                                                    this.TITLE_VIEWNAMEKEY;
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    GLOBALS_NEW;
+                                                    this.GLOBALS_NEW;
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(

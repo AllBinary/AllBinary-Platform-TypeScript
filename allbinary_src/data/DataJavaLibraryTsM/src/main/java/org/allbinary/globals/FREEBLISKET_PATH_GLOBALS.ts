@@ -55,7 +55,7 @@ export class FREEBLISKET_PATH_GLOBALS
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FREEBLISKET_PATH_GLOBALS.instance;
     
 }
 
@@ -66,9 +66,9 @@ export class FREEBLISKET_PATH_GLOBALS
 
     public readonly TEMPLATEPATH: string = "template" +AbPathData.getInstance()!.SEPARATOR;
 
-    public readonly STYLEPATH: string = TEMPLATEPATH +"style" +AbPathData.getInstance()!.SEPARATOR;
+    public readonly STYLEPATH: string = this.TEMPLATEPATH +"style" +AbPathData.getInstance()!.SEPARATOR;
 
-    public readonly THEMEPATH: string = STYLEPATH +"theme" +AbPathData.getInstance()!.SEPARATOR;
+    public readonly THEMEPATH: string = this.STYLEPATH +"theme" +AbPathData.getInstance()!.SEPARATOR;
 
     public readonly DBINITPATH: string = PATH_GLOBALS.getInstance()!.INIT_PATH +"db" +AbPathData.getInstance()!.SEPARATOR;
 

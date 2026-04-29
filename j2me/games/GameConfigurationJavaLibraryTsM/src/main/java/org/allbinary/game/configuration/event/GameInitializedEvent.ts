@@ -76,7 +76,7 @@ this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return level;
+                        return this.level;
     
 }
 
@@ -95,7 +95,7 @@ this.level= this.resourceLoadingLevel!.getLevel();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resourceLoadingLevel;
+                        return this.resourceLoadingLevel;
     
 }
 

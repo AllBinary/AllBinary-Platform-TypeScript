@@ -242,7 +242,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation
     //var hashtable = hashtable
 
@@ -293,13 +293,13 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     var index: number = 0;
 index < size; index++)
         {
-outputStream!.writeUTF( as StringobjectArray[index]!);
+outputStream!.writeUTF(objectArray[index]! as String);
     
 outputStream!.writeUTF(commonSeps!.EQUALS);
     
-anyType=  as ObjectobjectArray[index]!;
+anyType= objectArray[index]! as Object;
     
-value=  as Stringhashtable.get(anyType as Object);;
+value= hashtable.get(anyType as Object); as String;
     
 outputStream!.writeUTF(value);
     
@@ -342,10 +342,10 @@ recordStore!.closeRecordStore();
 }
 
 
-    public get(index: number): Hashtable{
+    public get(index: number): Hashtable<any, any>{
 var index = index
 
-    var hashtable: Hashtable =  as Hashtablethis.valueList!.objectArray[index]!;
+    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;
 ;
     
 

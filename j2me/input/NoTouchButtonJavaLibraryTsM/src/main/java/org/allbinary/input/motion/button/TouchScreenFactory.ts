@@ -53,7 +53,7 @@ export class TouchScreenFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return TouchScreenFactory.SINGLETON;
     
 }
 
@@ -74,7 +74,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multiTouch;
+                        return this.multiTouch;
     
 }
 
@@ -89,7 +89,7 @@ var touch = touch
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touch;
+                        return this.touch;
     
 }
 
@@ -99,7 +99,7 @@ var touch = touch
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touchScreenType;
+                        return this.touchScreenType;
     
 }
 

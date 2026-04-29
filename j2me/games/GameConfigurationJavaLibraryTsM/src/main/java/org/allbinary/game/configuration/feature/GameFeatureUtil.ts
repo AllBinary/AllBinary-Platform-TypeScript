@@ -79,7 +79,7 @@ export class GameFeatureUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameFeatureUtil.instance;
     
 }
 
@@ -343,7 +343,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     var selectedChoiceLabel: string = choiceGroup!.getString(index)!;
 ;
     
-updateExclusive(selectedChoiceLabel);
+this.updateExclusive(selectedChoiceLabel);
     
 
                                     }
@@ -363,7 +363,7 @@ var itemLabel = itemLabel
         while(enumeration.hasMoreElements())
         {
 
-    var name: string =  as Stringenumeration.nextElement()!;;
+    var name: string = enumeration.nextElement()!; as String;
 ;
     
 
@@ -402,7 +402,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-    var hashtable: Hashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
+    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
 ;
     
 
@@ -430,11 +430,11 @@ this.logUtil!.putF(new StringMaker().
     var index: number = 0;
 index < size; index++)
         {
-anyType=  as ObjectobjectArray[index]!;
+anyType= objectArray[index]! as Object;
     
-basicArrayList=  as BasicArrayListhashtable.get(anyType as Object);;
+basicArrayList= hashtable.get(anyType as Object); as BasicArrayList;
     
-updateExclusiveList(gameFeature, basicArrayList);
+this.updateExclusiveList(gameFeature, basicArrayList);
     
 }
 
@@ -474,13 +474,13 @@ index < size; index++)
                         if(addIndex != index)
                         
                                     {
-                                    features.remove( as Featurelist.objectArray[index]!);
+                                    features.remove(list.objectArray[index]! as Feature);
     
 
                                     }
                                 
                         else {
-                            features.add( as Featurelist.objectArray[index]!);
+                            features.add(list.objectArray[index]! as Feature);
     
 
                         }

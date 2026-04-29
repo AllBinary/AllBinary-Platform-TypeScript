@@ -184,12 +184,12 @@ var response = response
                                     }
                                 
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var authenticationHelper: AuthenticationHelper =  as AuthenticationHelpernew AuthenticationHelperFactory().
-                            getInstance(hashMap, request);;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
+                            getInstance(hashMap, request); as AuthenticationHelper;
 ;
     
 
@@ -297,7 +297,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 
@@ -307,7 +307,7 @@ processRequest(request, response);
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 

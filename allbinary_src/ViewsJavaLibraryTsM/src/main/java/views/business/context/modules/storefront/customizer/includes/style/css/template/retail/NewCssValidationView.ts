@@ -101,7 +101,7 @@ this.styleValidationInterface= new CssStyleValidation();
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.styleValidationInterface);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
     
 
                             }

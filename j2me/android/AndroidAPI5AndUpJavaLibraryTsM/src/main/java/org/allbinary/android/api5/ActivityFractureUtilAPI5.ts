@@ -65,7 +65,7 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ActivityFractureUtilAPI5.instance;
     
 }
 

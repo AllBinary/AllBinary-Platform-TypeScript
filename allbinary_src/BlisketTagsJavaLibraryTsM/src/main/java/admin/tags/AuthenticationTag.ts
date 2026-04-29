@@ -99,7 +99,7 @@ export class AuthenticationTag extends CustomTagSupport {
 
     private roles: Vector
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -169,8 +169,8 @@ this.roles= values;
 ;
     
 
-    var result: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var result: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -233,8 +233,8 @@ this.roles= values;
 ;
     
 
-    var result: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var result: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -297,8 +297,8 @@ this.roles= values;
 ;
     
 
-    var resultInteger: number =  as Integermethod.invoke(anyType, 
-                            null);;
+    var resultInteger: number = method.invoke(anyType, 
+                            null); as Integer;
 ;
     
 
@@ -361,8 +361,8 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var resultBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -438,7 +438,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
 ;
     
 
@@ -501,8 +501,8 @@ this.roles= values;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -569,8 +569,8 @@ this.roles= values;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -650,7 +650,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
 ;
     
 
@@ -726,7 +726,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
 ;
     
 
@@ -789,8 +789,8 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var resultBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -847,7 +847,7 @@ this.roles= values;
                         
                                     {
                                     
-    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 
@@ -869,7 +869,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.NEWPASSWORD) == 0)
@@ -915,7 +915,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
                         
                                     {
                                     
@@ -958,7 +958,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(command.compareTo(WeblisketSessionData.INVALIDATESESSION) == 0)
+                        if(this.command.compareTo(WeblisketSessionData.INVALIDATESESSION) == 0)
                         
                                     {
                                     
@@ -1067,9 +1067,9 @@ pageContext!.getOut()!.print("Please login again.<p>");
 
                         if((this.userName == 
                                     null
-                                 || this.userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (password == 
+                                 || this.userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (this.password == 
                                     null
-                                 || password.compareTo(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
+                                 || this.password.compareTo(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
                                     null
                                  && this.isAuthenticationSessionValid())
                         

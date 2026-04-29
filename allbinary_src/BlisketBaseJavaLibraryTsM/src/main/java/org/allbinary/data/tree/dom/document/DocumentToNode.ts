@@ -64,9 +64,9 @@ export class DocumentToNode
             
     public static convertDocumentToNodeString(documentString: string): string{
 var documentString = documentString
-documentString= remove(documentString, XMLJSPROOTSTART, XMLEND);
+documentString= DocumentToNode.remove(documentString, XMLJSPROOTSTART, XMLEND);
     
-documentString= remove(documentString, XMLJSPROOTENDSTART, XMLEND);
+documentString= DocumentToNode.remove(documentString, XMLJSPROOTENDSTART, XMLEND);
     
 
     var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);
@@ -87,7 +87,7 @@ var documentString = documentString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return remove(documentString, XMLROOTSTART, XMLROOTEND);;
+                        return DocumentToNode.remove(documentString, XMLROOTSTART, XMLROOTEND);;
     
 }
 

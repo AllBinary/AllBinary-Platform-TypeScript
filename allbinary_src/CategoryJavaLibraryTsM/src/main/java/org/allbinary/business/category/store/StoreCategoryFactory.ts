@@ -98,14 +98,14 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
+                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -140,14 +140,14 @@ var categoryPath = categoryPath
 ;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface, level);
+                        return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -178,7 +178,7 @@ var node = node
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
 ;
     
 
@@ -193,7 +193,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface, level);
+                        return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 

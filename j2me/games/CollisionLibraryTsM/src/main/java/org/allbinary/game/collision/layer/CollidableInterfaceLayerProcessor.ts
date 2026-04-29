@@ -69,7 +69,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface =  as CollidableInterfaceCompositeInterfacelayerInterface;
+    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;
 ;
     
 

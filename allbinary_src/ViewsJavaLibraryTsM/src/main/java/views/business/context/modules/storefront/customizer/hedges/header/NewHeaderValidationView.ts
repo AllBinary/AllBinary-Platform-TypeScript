@@ -97,7 +97,7 @@ this.heading= new HeadingValidation();
     public isValid(): Boolean{
 
         try {
-            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
+            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
     
 
 

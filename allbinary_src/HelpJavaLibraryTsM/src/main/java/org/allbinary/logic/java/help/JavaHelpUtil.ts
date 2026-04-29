@@ -86,7 +86,7 @@ export class JavaHelpUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return JavaHelpUtil.instance;
     
 }
 
@@ -143,7 +143,7 @@ var filePath = filePath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getHelpSet(helpSetURL);;
+                        return this.getHelpSet(helpSetURL);;
     
 
                 //: 
@@ -203,7 +203,7 @@ helpBroker!.setLocation(this.point);
 helpBroker!.setSize(this.dimension);
     
 new CSH.DisplayHelpFromSource(helpBroker).
-                            actionPerformed(contextSensitiveHelpActionEvent);
+                            actionPerformed(this.contextSensitiveHelpActionEvent);
     
 this.logUtil!.putF("CSH Action", getInstance(), "show");
     

@@ -56,6 +56,8 @@ import { JPanel } from "./JPanel.js";
 
 import { Graphics } from "./Graphics.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 export class ImageJPanel extends javax.swing.JPanel {
@@ -74,7 +76,7 @@ public constructor (bufferedImage: BufferedImage){
 
             super();
         var bufferedImage = bufferedImage
-initComponents();
+this.initComponents();
     
 this.bufferedImage= bufferedImage;
     

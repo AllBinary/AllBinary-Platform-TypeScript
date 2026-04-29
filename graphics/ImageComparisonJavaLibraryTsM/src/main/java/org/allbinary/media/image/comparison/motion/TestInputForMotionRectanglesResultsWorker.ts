@@ -123,7 +123,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEventallBinaryEventObject);
+this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
     
 }
 
@@ -134,7 +134,7 @@ this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEv
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -161,7 +161,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectangles: MotionRectangles =  as MotionRectanglesthis.getMotionRectanglesVector()!.get(0);;
+    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0); as MotionRectangles;
 ;
     
 
@@ -173,11 +173,11 @@ timeHelper!.setStartTimeTNT();
                         
                                     {
                                     
-    var rectangle: Rectangle =  as RectanglemotionRectangleVector!.get(0);;
+    var rectangle: Rectangle = motionRectangleVector!.get(0); as Rectangle;
 ;
     
 
-    var robotHashtable: Hashtable = InputRobotFactory.getInstance()!.get()!;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
 ;
     
 
@@ -198,11 +198,11 @@ timeHelper!.setStartTimeTNT();
 index < size; index++)
         {
 
-    var inputTypeNameString: string =  as StringinputTypeNameArray[index]!;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as String;
 ;
     
 
-    var inputRobotInterface: InputRobotInterface =  as InputRobotInterfacerobotHashtable!.get(inputTypeNameString as Object);;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object); as InputRobotInterface;
 ;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);

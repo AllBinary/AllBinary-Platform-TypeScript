@@ -90,7 +90,7 @@ export class TransformFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformFactory.instance;
     
 }
 
@@ -122,7 +122,7 @@ private constructor (){
                                     }
                                 
 
-    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfaceownerTransformInfoInterface;
+    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -157,7 +157,7 @@ transformInfoInterface!.setChild();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    this.logUtil!.putF("Created Transform: " +viewName, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Created Transform: " +viewName, this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -166,7 +166,7 @@ transformInfoInterface!.setChild();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInterfaceanyType;
+                        return anyType as TransformInterface;
     
 
                 //: 
@@ -176,7 +176,7 @@ transformInfoInterface!.setChild();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.GET_INSTANCE, e);
     
 
                                     }
@@ -193,7 +193,7 @@ transformInfoInterface!.setChild();
 
                 //@Throws(Error::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap, pageContext: PageContext): TransformInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
     //var abeClientInformation = abeClientInformation
     //var propertiesHashMap = propertiesHashMap
     //var pageContext = pageContext
@@ -217,7 +217,7 @@ transformInfoInterface!.setChild();
 ;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get( as StringpropertiesHashMap!.get(transformInfoData!.NAME), propertiesHashMap, pageContext)!;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as String, propertiesHashMap, pageContext)!;
 ;
     
 
@@ -232,7 +232,7 @@ transformInfoInterface!.setChild();
                                     }
                                 
                         else {
-                            transformInfoInterface=  as TransformInfoInterfaceTransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);;
+                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoInterface;
     
 
                         }
@@ -245,7 +245,7 @@ transformInfoInterface!.setChild();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
                         
                                     {
-                                    this.logUtil!.putF("Created Transform: " +propertiesHashMap!.get(transformInfoData!.NAME), this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Created Transform: " +propertiesHashMap!.get(transformInfoData!.NAME), this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -254,7 +254,7 @@ transformInfoInterface!.setChild();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInterfaceanyType;
+                        return anyType as TransformInterface;
     
 
                 //: 
@@ -270,7 +270,7 @@ transformInfoInterface!.setChild();
     
 stringBuffer!.append("Failed To Get Instance: ");
     
-stringBuffer!.append( as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.NAME));
+stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME) as String);
     
 stringBuffer!.append("->TransformFactory");
     
@@ -322,7 +322,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInterfaceanyType;
+                        return anyType as TransformInterface;
     
 
                 //: 

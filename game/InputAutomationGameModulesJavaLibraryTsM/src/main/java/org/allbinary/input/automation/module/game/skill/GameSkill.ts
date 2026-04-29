@@ -58,7 +58,7 @@ export class GameSkill
          {
         
 
-    private hashMap: HashMap = new HashMap();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public static getInstance(gameSkillType: GameSkillType, extra: string): GameSkill{
 var gameSkillType = gameSkillType
@@ -67,8 +67,8 @@ var extra = extra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GameSkillhashMap!.get(new StringBuilder().
-                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString());;
+                        return GameSkill.hashMap!.get(new StringBuilder().
+                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()); as GameSkill;
     
 }
 
@@ -100,7 +100,7 @@ this.setTime(time);
     
 this.vector= new Vector();
     
-hashMap!.put(new StringBuilder().
+GameSkill.hashMap!.put(new StringBuilder().
                             append(this.getGameSkillType()!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString(), this);
     
 }
@@ -111,7 +111,7 @@ hashMap!.put(new StringBuilder().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameSkillType;
+                        return this.gameSkillType;
     
 }
 
@@ -128,7 +128,7 @@ this.gameSkillType= gameSkillType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return extra;
+                        return this.extra;
     
 }
 
@@ -145,7 +145,7 @@ this.extra= extra;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return time;
+                        return this.time;
     
 }
 

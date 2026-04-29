@@ -75,7 +75,7 @@ export class WebCommandProcessor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return WebCommandProcessor.instance;
     
 }
 
@@ -92,7 +92,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL( as Stringthis.list.removeAt(0));
+            PlayN.openURL(this.list.removeAt(0) as String);
     
 
                 //: 

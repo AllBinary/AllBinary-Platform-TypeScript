@@ -67,7 +67,7 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return ArtificialIntelligenceInterfaceFactoryInterfaceFactory.SINGLETON;
     
 }
 
@@ -80,10 +80,10 @@ list= new BasicArrayListD();
 }
 
 
-    public getInstanceFromCollection(hashtable: Hashtable): ArtificialIntelligenceInterfaceFactoryInterface{
+    public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
     //var hashtable = hashtable
 
-    var typeInteger: number =  as Integerhashtable.get( as ObjectBasicAI.ID);;
+    var typeInteger: number = hashtable.get(BasicAI.ID as Object); as Integer;
 ;
     
 
@@ -91,7 +91,7 @@ list= new BasicArrayListD();
 ;
     
 
-    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface =  as ArtificialIntelligenceInterfaceFactoryInterfacethis.list.objectArray[type -1]!;
+    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
 ;
     
 

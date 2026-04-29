@@ -63,13 +63,15 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { TerrainEventListener } from "./TerrainEventListener.js";
 
+import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.js";
+
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private hashtable: Hashtable = NullUtil.getInstance()!.NULL_TABLE;
+    private hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
 
     public static init(){
-TerrainEventHandler.hashtable= new Hashtable();
+TerrainEventHandler.hashtable= new Hashtable<any, any>();
     
 }
 
@@ -97,7 +99,7 @@ TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TerrainEventHandlereventHandlerCanBeNull;
+                        return eventHandlerCanBeNull as TerrainEventHandler;
     
 }
 
@@ -155,10 +157,10 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var terrainEventListener: TerrainEventListener =  as TerrainEventListenerthis.list.get(index);;
+    var terrainEventListener: TerrainEventListener = this.list.get(index); as TerrainEventListener;
 ;
     
-terrainEventListener!.onTerrainEvent( as TerrainEventeventObject);
+terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);
     
 
                 //: 
@@ -181,10 +183,10 @@ super.fireEvent(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var terrainEventListenerInterface: TerrainEventListenerInterface =  as TerrainEventListenerInterfaceeventListenerInterface;
+    var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;
 ;
     
-terrainEventListenerInterface!.onTerrainEvent( as TerrainEventeventObject);
+terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
     
 }
 

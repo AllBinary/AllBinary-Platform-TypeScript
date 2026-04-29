@@ -107,7 +107,7 @@ var vectorOfStrings = vectorOfStrings
     var index: number = 0;
 index < size; index++)
         {
-this.addAction( as StringvectorOfStrings!.get(index));
+this.addAction(vectorOfStrings!.get(index) as String);
     
 }
 
@@ -170,7 +170,7 @@ fileOutputStream!.close();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frame;
+                        return this.frame;
     
 }
 

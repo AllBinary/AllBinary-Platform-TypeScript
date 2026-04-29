@@ -125,7 +125,7 @@ this.onDisplayChangeEvent(
                             null);
     
 
-    var gl11: GL11 =  as GL11gl;
+    var gl11: GL11 = gl as GL11;
 ;
     
 
@@ -155,9 +155,9 @@ gl.glEnable(GL10.GL_TEXTURE_2D);
     
 gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
     
-gl =  as GL11Extglgl
+gl = glgl as GL11Ext
 gl.
-                    glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight());
+                    glDrawTexfOES(x, this.a -y, z, this.getWidth(), this.getHeight());
     
 gl.glDisable(GL10.GL_TEXTURE_2D);
     

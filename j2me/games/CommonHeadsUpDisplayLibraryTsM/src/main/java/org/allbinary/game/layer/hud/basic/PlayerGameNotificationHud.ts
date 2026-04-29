@@ -153,7 +153,7 @@ this.point.setY(y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return point;
+                        return this.point;
     
 }
 
@@ -258,7 +258,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                 //@Throws(Error::class)
             
     setAndRemove(){
-this.string=  as Stringthis.gameNotification!.stringList!.removeAt(0);;
+this.string= this.gameNotification!.stringList!.removeAt(0); as String;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
@@ -271,7 +271,7 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: number =  as Integerthis.gameNotification!.timeList!.removeAt(0);;
+    var time: number = this.gameNotification!.timeList!.removeAt(0); as Integer;
 ;
     
 
@@ -289,7 +289,7 @@ this.point.setY(this.getY());
                                 
 this.timeDelayHelper!.delay= iTime;
     
-this.setBasicColorP( as BasicColorthis.gameNotification!.colorList!.removeAt(0));
+this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor);
     
 }
 
@@ -301,7 +301,7 @@ this.setBasicColorP( as BasicColorthis.gameNotification!.colorList!.removeAt(0))
     var index: number = this.circularIndexUtil!.getIndex()!;
 ;
     
-this.string=  as Stringthis.permanentGameNotification!.stringList!.objectArray[index]!;
+this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as String;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
@@ -314,12 +314,12 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: number =  as Integerthis.permanentGameNotification!.timeList!.objectArray[index]!;
+    var time: number = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
 ;
     
 this.timeDelayHelper!.delay= time.toInt() *1000;
     
-this.setBasicColorP( as BasicColorthis.permanentGameNotification!.colorList!.objectArray[index]!);
+this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor);
     
 this.circularIndexUtil!.next();
     

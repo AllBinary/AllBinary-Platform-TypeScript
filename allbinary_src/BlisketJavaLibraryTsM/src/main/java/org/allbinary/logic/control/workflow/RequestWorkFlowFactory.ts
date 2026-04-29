@@ -87,7 +87,7 @@ var response = response
 var servletConfig = servletConfig
 var servletContext = servletContext
 
-    var httpRequest: HttpServletRequest =  as HttpServletRequestrequest;
+    var httpRequest: HttpServletRequest = request as HttpServletRequest;
 ;
     
 
@@ -117,11 +117,11 @@ var servletContext = servletContext
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public static getInstance(hashMap: HashMap, pageContext: PageContext): WorkFlowInterface{
+    public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 var hashMap = hashMap
 var pageContext = pageContext
 
-    var workFlowName: string =  as StringpageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);;
+    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME); as String;
 ;
     
 

@@ -99,7 +99,7 @@ var gameCanvas = gameCanvas
     var index: number = 0;
 index < size; index++)
         {
-gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
 this.logUtil!.putF(new StringMaker().
                             append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT);

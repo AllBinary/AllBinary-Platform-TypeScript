@@ -40,6 +40,8 @@ import { InputRobotInterface } from "../../../../../../org/allbinary/input/autom
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputAutomationRobotInterfaceWrapper } from "./InputAutomationRobotInterfaceWrapper.js";
+
 import { InputAutomationRobotChangeEvent } from "./InputAutomationRobotChangeEvent.js";
 
 export class InputAutomationRobotUtil

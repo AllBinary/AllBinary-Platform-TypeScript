@@ -162,7 +162,7 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
     var index: number = 0;
 index < size; index++)
         {
-logConfigType=  as LogConfigTypeavailableLogConfigTypes!.get(index);;
+logConfigType= availableLogConfigTypes!.get(index); as LogConfigType;
     
 
                         if(logConfigType!.getName()!.compareTo(name) == 0)

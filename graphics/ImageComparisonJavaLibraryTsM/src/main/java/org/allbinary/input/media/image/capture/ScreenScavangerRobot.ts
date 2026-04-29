@@ -60,6 +60,10 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
         
 import { Toolkit } from "./Toolkit.js";
 
+import { Dimension } from "./Dimension.js";
+
+import { Rectangle } from "./Rectangle.js";
+
 export class ScreenScavangerRobot
             extends Object
          {
@@ -88,7 +92,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages")
 ;
     
 
-    var robotHashtable: Hashtable = InputRobotFactory.getInstance()!.get()!;
+    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
 ;
     
 
@@ -100,7 +104,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages")
 ;
     
 
-    var inputRobotInterface: InputRobotInterface =  as InputRobotInterfacerobotHashtable!.get("Java Robot");;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get("Java Robot"); as InputRobotInterface;
 ;
     
 bufferedImageArray[index]= inputRobotInterface!.createScreenCapture(rectScreenSize);

@@ -144,7 +144,7 @@ var collisionLayer = collisionLayer
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);;
+                        return this.layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);;
     
 }
 
@@ -155,7 +155,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(this.ownerLayer,  as AllBinaryLayercollidableInterfaceCompositeInterface);;
+                        return this.layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);;
     
 }
 

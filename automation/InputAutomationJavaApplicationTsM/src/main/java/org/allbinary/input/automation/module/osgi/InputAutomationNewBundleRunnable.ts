@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../../java/lang/System";
+        
 import { File } from "../../../../../../java/io/File.js";
 
     
@@ -149,7 +151,7 @@ var thread = thread
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -187,7 +189,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
     var index: number = 0;
 index < size; index++)
         {
-bundle= this.install( as URLlist.get(index));
+bundle= this.install(list.get(index) as URL);
     
 
                         if(bundle != 
@@ -207,11 +209,11 @@ bundle= this.install( as URLlist.get(index));
 
                 //@Throws(Error::class)
             
-    getAllJarSymbolicNameHashMap(): HashMap{
+    getAllJarSymbolicNameHashMap(): HashMap<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap");
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -236,7 +238,7 @@ this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJar
     var index: number = 0;
 index < size; index++)
         {
-file=  as FilejarFileBasicArrayList!.get(index);;
+file= jarFileBasicArrayList!.get(index); as File;
     
 
                         if(!file.isDirectory();)
@@ -298,7 +300,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
 ;
     
 
-                        if(baseJarPath!.startsWith(FILE))
+                        if(baseJarPath!.startsWith(InputAutomationNewBundleRunnable.FILE))
                         
                                     {
                                     baseJarPath= baseJarPath!.substring(FILE.length);
@@ -410,7 +412,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
     var index: number = 0;
 index < size; index++)
         {
-nextSymbolicName=  as Stringlist.get(index);;
+nextSymbolicName= list.get(index); as String;
     
 
                         if(nextSymbolicName!.compareTo(symbolicName) == 0)
@@ -446,7 +448,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
 ;
     
 
-    var hashMap: HashMap = this.getAllJarSymbolicNameHashMap()!;
+    var hashMap: HashMap<any, any> = this.getAllJarSymbolicNameHashMap()!;
 ;
     
 this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
@@ -473,7 +475,7 @@ this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
 index < size; index++)
         {
 
-    var symbolicName: string =  as StringsymbolicNameArray[index]!;
+    var symbolicName: string = symbolicNameArray[index]! as String;
 ;
     
 

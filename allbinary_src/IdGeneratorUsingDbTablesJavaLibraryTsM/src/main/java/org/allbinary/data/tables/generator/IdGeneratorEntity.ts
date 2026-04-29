@@ -91,13 +91,13 @@ super.setTableName(this.tableName);
     public get(name: string): number{
 var name = name
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(this.NAME, name);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -114,7 +114,7 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string =  as StringhashMap!.get(this.VALUE);;
+    var value: string = hashMap!.get(this.VALUE); as String;
 ;
     
 
@@ -168,7 +168,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
 var name = name
 var value = value
 
-    var map: HashMap = new HashMap();
+    var map: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 map.put(this.NAME, name);
@@ -180,9 +180,9 @@ this.update(map);
 }
 
 
-    public update(hashMap: HashMap){
+    public update(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-super.updateWhere(NAME,  as StringhashMap!.get(NAME as Object), hashMap);
+super.updateWhere(this.NAME, hashMap!.get(this.NAME) as String, hashMap);
     
 }
 

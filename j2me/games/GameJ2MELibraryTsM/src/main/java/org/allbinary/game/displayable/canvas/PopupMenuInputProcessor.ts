@@ -82,7 +82,7 @@ export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
 
     private readonly CLICK_DELAY: number = 120;
 
-    private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(CLICK_DELAY);
+    private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(this.CLICK_DELAY);
 
     private rectangle: Rectangle
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle){
@@ -116,7 +116,7 @@ this.rectangle= rectangle;
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.getCanvas();;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
 ;
     
 gameCanvas!.toggleMenu();
@@ -172,7 +172,7 @@ gameCanvas!.toggleMenu();
     var index: number = 0;
 index < size; index++)
         {
-gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
 
                         if(gameKeyEvent != 
@@ -251,7 +251,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.motionGestureEventList!.objectArray[lastIndex]!;
+    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
 ;
     
 this.processMotionInput(motionGestureEvent);
@@ -320,7 +320,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.getCanvas();;
+    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
 ;
     
 gameCanvas!.toggleMenu();

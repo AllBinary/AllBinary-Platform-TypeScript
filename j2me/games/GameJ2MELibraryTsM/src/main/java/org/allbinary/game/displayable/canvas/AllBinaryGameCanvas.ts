@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
             import { Runnable } from "../../../../../java/lang/Runnable.js";
@@ -435,6 +437,8 @@ import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
 
 import { FormUtil } from "./FormUtil.js";
 
+import { BasicPopupMenuPaintable } from "./BasicPopupMenuPaintable.js";
+
 import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
@@ -514,7 +518,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private isCheating: boolean= false
 
-    private hashtable: Hashtable = this.nullUtil!.NULL_TABLE;
+    private hashtable: Hashtable<any, any> = this.nullUtil!.NULL_TABLE;
 
     private isSingleKeyRepeatableProcessing: boolean= false
 
@@ -570,7 +574,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
 
     private currentTouchInputFactory: BaseTouchInput = NoButtonsTouchInputFactory.getInstance()!;
 
-    colorFillPaintable: ColorFillBasePaintable = ColorFillPaintableFactory.getInstance()!.getInstance(basicColorFactory!.BLACK, true)!;
+    colorFillPaintable: ColorFillBasePaintable = ColorFillPaintableFactory.getInstance()!.getInstance(this.basicColorFactory!.BLACK, true)!;
 
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;
 
@@ -708,7 +712,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 ;
     
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = ( as BasicPopupMenuPaintablethis.getOpenMenuPaintable(););
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable(); as BasicPopupMenuPaintable);
 ;
     
 basicPopupMenuPaintable!.init(popupMenuRectangle);
@@ -718,7 +722,7 @@ basicPopupMenuPaintable!.init(popupMenuRectangle);
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = ( as PopupMenuInputProcessorthis.getPopupMenuInputProcessor(););
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor(); as PopupMenuInputProcessor);
 ;
     
 popupMenuInputProcessor!.init(popupMenuRectangle);
@@ -758,10 +762,10 @@ super.processSleep();
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process();)
+                        if(!this.primaryPlayerQueue!.process();)
                         
                                     {
-                                    secondaryPlayerQueue!.process();
+                                    this.secondaryPlayerQueue!.process();
     
 
                                     }
@@ -844,7 +848,7 @@ this.closeMenu();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance( as Vector<any>this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
 ;
     
 
@@ -865,7 +869,7 @@ this.setMenuForm(CommandCurrentSelectionFormFactory.getInstance(StringUtil.getIn
                         if(features.isFeature(this.touchFeatureFactory!.TOUCH_ENABLED))
                         
                                     {
-                                    this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayListD(),  -1, this, scrollSelectionForm,  as PopupMenuInputProcessorthis.getPopupMenuInputProcessor());
+                                    this.mainMenuInputProcessor= new PopupCommandFormInputProcessor(new BasicArrayListD(),  -1, this, scrollSelectionForm, this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);
     
 
                                     }
@@ -928,7 +932,7 @@ scrollSelectionForm!.deleteAll();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance( as Vector<any>this.getCommandStack(), this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
+    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.gameLayerManager!.getBackgroundBasicColor(), this.gameLayerManager!.getForegroundBasicColor())!;
 ;
     
 
@@ -1035,7 +1039,7 @@ this.menuBehavior!.popupMenu(this);
                 //@Throws(Error::class)
             
     public popupMenu2(){
-primaryPlayerQueue!.add(SelectSound.getInstance());
+this.primaryPlayerQueue!.add(SelectSound.getInstance());
     
 this.setMenuPaintable(this.getFormPaintable());
     
@@ -1070,7 +1074,7 @@ this.popupMenu();
                         if(this.getMenuPaintable() == this.getFormPaintable())
                         
                                     {
-                                    primaryPlayerQueue!.add(SelectSound.getInstance());
+                                    this.primaryPlayerQueue!.add(SelectSound.getInstance());
     
 this.unPause();
     
@@ -1111,9 +1115,9 @@ this.basicMotionGesturesHandler!.removeListener(this.menuInputProcessor);
     
 this.gameKeyEventHandler!.removeListener(this.menuInputProcessor);
     
-primaryPlayerQueue!.clear();
+this.primaryPlayerQueue!.clear();
     
-secondaryPlayerQueue!.clear();
+this.secondaryPlayerQueue!.clear();
     
 }
 
@@ -1267,7 +1271,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
     
 progressCanvas!.addNormalPortion(50, "Setting Configurables");
     
-GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, gameInitializationInterfaceFactoryInterface);
+GameInitializationUtil.getInstance()!.initGame(abeClientInformation, this, this.gameInitializationInterfaceFactoryInterface);
     
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
@@ -1374,7 +1378,7 @@ this.postInitTouch();
     
 PreLogUtil.put(this.currentTouchInputFactory!.toString(), this, this.gameInputStrings!.UDPATE_CURRENT_TOUCH_INPUT_FACTORY);
     
-touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
+this.touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.getList());
     
 
                                     }
@@ -1530,13 +1534,13 @@ this.logUtil!.putF(new StringMaker().
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    gameFeatureUtil!.updateExclusiveForChoiceGroup( as ChoiceGroupitem);
+                                    gameFeatureUtil!.updateExclusiveForChoiceGroup(item as ChoiceGroup);
     
 
                                     }
                                 
                         else {
-                            gameFeatureUtil!.updateMultiple( as ChoiceGroupitem);
+                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup);
     
 
                         }
@@ -1619,7 +1623,7 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameLayerManager;
+                        return this.gameLayerManager;
     
 }
 
@@ -1671,7 +1675,7 @@ this.setEndGamePaintable(getEndGameStatePaintable());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return highScoreSubmitted;
+                        return this.highScoreSubmitted;
     
 }
 
@@ -1702,7 +1706,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameState;
+                        return this.gameState;
     
 }
 
@@ -1787,7 +1791,7 @@ this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputL
 index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.localPlayerGameInputList!.get(index);;
+    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index); as PlayerGameInput;
 ;
     
 this.removeKeyInputListener(playerGameInput);
@@ -1818,7 +1822,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
             
     updateEndGameProcessor2(){
 
-                        if(this.getGameState() == SHOW_END_RESULT_GAME_STATE || this.getGameState() == SHOW_HIGH_SCORE_GAME_STATE)
+                        if(this.getGameState() == AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE || this.getGameState() == AllBinaryGameCanvas.SHOW_HIGH_SCORE_GAME_STATE)
                         
                                     {
                                     this.setEndGameProcessor(this.realEndGameProcessor);
@@ -1853,9 +1857,9 @@ this.logUtil!.putF(commonStrings!.START, this, this.commonStrings!.CLEANUP);
     
 progressCanvas!.addNormalPortion(10, "Cleaning Up");
     
-primaryPlayerQueue!.clear();
+this.primaryPlayerQueue!.clear();
     
-secondaryPlayerQueue!.clear();
+this.secondaryPlayerQueue!.clear();
     
 GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
     
@@ -2028,7 +2032,7 @@ PreLogUtil.put(new StringMaker().
     var index: number = this.localPlayerGameInputList!.size() -1;
 index >= 0; index--)
         {
-playerGameInput=  as PlayerGameInputthis.localPlayerGameInputList!.get(index);;
+playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
     
 PreLogUtil.put(new StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
@@ -2064,7 +2068,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
     
 
-    var hashtable: Hashtable = getLoadStateHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getLoadStateHashtable()!;
 ;
     
 
@@ -2074,7 +2078,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string =  as Stringhashtable.get( as ObjectGameInfo.LEVEL_NAME);;
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object); as String;
 ;
     
 
@@ -2095,7 +2099,7 @@ gameInfo!.setCurrentLevel(level);
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable{
+    public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
@@ -2108,7 +2112,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-    public setLoadStateHashtable(hashtable: Hashtable){
+    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
@@ -2118,9 +2122,9 @@ this.hashtable= hashtable;
 }
 
 
-    public getCurrentStateHashtable(): Hashtable{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 
-    var hashtable: Hashtable = new Hashtable();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 
@@ -2168,7 +2172,7 @@ this.colorFillPaintable!.paint(graphics);
 
     public paint(graphics: Graphics){
     //var graphics = graphics
-baseGameStatistics!.nextRefresh();
+this.baseGameStatistics!.nextRefresh();
     
 this.draw(graphics);
     
@@ -2212,7 +2216,7 @@ var graphics = graphics
 
     private readonly rawInputProcessor: InputProcessor = new FormInputProcessor(this);
 
-    private inputProcessor: InputProcessor = getRawGameInputProcessor()!;
+    private inputProcessor: InputProcessor = this.getRawGameInputProcessor()!;
 
     public keyPressed(keyCode: number){
 var keyCode = keyCode
@@ -2343,10 +2347,10 @@ super.process();
                         
                                     {
                                     
-                        if(!primaryPlayerQueue!.process();)
+                        if(!this.primaryPlayerQueue!.process();)
                         
                                     {
-                                    secondaryPlayerQueue!.process();
+                                    this.secondaryPlayerQueue!.process();
     
 
                                     }
@@ -2356,11 +2360,11 @@ super.process();
                                 
 this.mainStateProcessor!.process();
     
-menuInputProcessor!.processInputList();
+this.menuInputProcessor!.processInputList();
     
 this.endGameProcessor!.process();
     
-baseGameStatistics!.nextFrame();
+this.baseGameStatistics!.nextFrame();
     
 }
 
@@ -2397,7 +2401,7 @@ this.threadObjectUtil!.notifyObject(this);
                                     }
                                 
                              else 
-                        if(features.isFeature(openGLFeatureFactory!.OPENGL_2D))
+                        if(features.isFeature(this.openGLFeatureFactory!.OPENGL_2D))
                         
                                     {
                                     
@@ -2533,7 +2537,7 @@ OpenGLThreadUtil.getInstance()!.onResume();
                                     }
                                 
                              else 
-                        if(features.isDefault(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
+                        if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
                         
                                     {
                                     this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN);
@@ -2643,10 +2647,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     public end(){
 this.screenCapture!.endRecording();
     
-baseGameStatistics!.add(new StringMaker().
+this.baseGameStatistics!.add(new StringMaker().
                             append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
-baseGameStatistics!.init();
+this.baseGameStatistics!.init();
     
 this.gameKeyEventHandler!.removeListener(this.cheatProcessor);
     
@@ -2768,7 +2772,7 @@ class SaveHighScoreRunnable
             {
 logUtil!.put(commonStrings!.EXCEPTION, this, "run", e);
     
-progressCanvas!.end();
+this.progressCanvas!.end();
     
 }
 
@@ -2791,7 +2795,7 @@ SecondaryThreadPool.getInstance()!.runTask(new SaveHighScoreRunnable());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameStateTimeHelper;
+                        return this.gameStateTimeHelper;
     
 }
 
@@ -2808,7 +2812,7 @@ this.initialized= initialized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return initialized;
+                        return this.initialized;
     
 }
 
@@ -2818,7 +2822,7 @@ this.initialized= initialized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return AllBinaryGameCanvas.id;
     
 }
 
@@ -2845,7 +2849,7 @@ this.progressPaintable= paintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return endLevelIntermissionInterface;
+                        return this.endLevelIntermissionInterface;
     
 }
 
@@ -2862,7 +2866,7 @@ this.touchPaintable= paintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touchPaintable;
+                        return this.touchPaintable;
     
 }
 
@@ -2879,7 +2883,7 @@ this.endGamePaintable= endGamePaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return endGamePaintable;
+                        return this.endGamePaintable;
     
 }
 
@@ -2896,7 +2900,7 @@ this.intermissionPaintable= intermissionPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return intermissionPaintable;
+                        return this.intermissionPaintable;
     
 }
 
@@ -2906,7 +2910,7 @@ this.intermissionPaintable= intermissionPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return endGameInfo;
+                        return this.endGameInfo;
     
 }
 
@@ -2923,7 +2927,7 @@ this.highScoresPaintable= highScoresPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return highScoresPaintable;
+                        return this.highScoresPaintable;
     
 }
 
@@ -2933,7 +2937,7 @@ this.highScoresPaintable= highScoresPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return realHighScoresPaintable;
+                        return this.realHighScoresPaintable;
     
 }
 
@@ -2951,7 +2955,7 @@ this.highScoresPaintable= highScoresPaintable;
     var index: number = this.localPlayerGameInputList!.size() -1;
 index >= 0; index--)
         {
-playerGameInput=  as PlayerGameInputthis.localPlayerGameInputList!.get(index);;
+playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
     
 this.gameKeyEventHandler!.removeListener(playerGameInput);
     
@@ -2981,7 +2985,7 @@ this.menuInputProcessor= menuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuInputProcessor;
+                        return this.menuInputProcessor;
     
 }
 
@@ -2991,7 +2995,7 @@ this.menuInputProcessor= menuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuForm;
+                        return this.menuForm;
     
 }
 
@@ -3008,7 +3012,7 @@ this.menuForm= menuForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return startLevel;
+                        return this.startLevel;
     
 }
 
@@ -3032,7 +3036,7 @@ this.touchButtonsPaintable= touchButtonsPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touchButtonsPaintable;
+                        return this.touchButtonsPaintable;
     
 }
 
@@ -3049,7 +3053,7 @@ this.gameInputProcessor= gameInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameInputProcessor;
+                        return this.gameInputProcessor;
     
 }
 
@@ -3066,7 +3070,7 @@ this.endGameProcessor= endGameProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return endGameProcessor;
+                        return this.endGameProcessor;
     
 }
 
@@ -3083,7 +3087,7 @@ this.endGameStatePaintable= endGameStatePaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return endGameStatePaintable;
+                        return this.endGameStatePaintable;
     
 }
 
@@ -3100,7 +3104,7 @@ this.nonBotPaintable= nonBotPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return nonBotPaintable;
+                        return this.nonBotPaintable;
     
 }
 
@@ -3117,7 +3121,7 @@ this.startIntermissionPaintable= startIntermissionPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return startIntermissionPaintable;
+                        return this.startIntermissionPaintable;
     
 }
 
@@ -3134,7 +3138,7 @@ this.mainStateProcessor= mainStateProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mainStateProcessor;
+                        return this.mainStateProcessor;
     
 }
 
@@ -3151,7 +3155,7 @@ this.processGameProcessor= processGameProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return processGameProcessor;
+                        return this.processGameProcessor;
     
 }
 
@@ -3168,7 +3172,7 @@ this.openMenuPaintable= openMenuPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return openMenuPaintable;
+                        return this.openMenuPaintable;
     
 }
 
@@ -3185,7 +3189,7 @@ this.popupMenuInputProcessor= popupMenuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return popupMenuInputProcessor;
+                        return this.popupMenuInputProcessor;
     
 }
 
@@ -3195,7 +3199,7 @@ this.popupMenuInputProcessor= popupMenuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return sensorGameUpdateProcessor;
+                        return this.sensorGameUpdateProcessor;
     
 }
 
@@ -3205,7 +3209,7 @@ this.popupMenuInputProcessor= popupMenuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rawGameInputProcessor;
+                        return this.rawGameInputProcessor;
     
 }
 
@@ -3215,7 +3219,7 @@ this.popupMenuInputProcessor= popupMenuInputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rawInputProcessor;
+                        return this.rawInputProcessor;
     
 }
 
@@ -3232,7 +3236,7 @@ this.inputProcessor= inputProcessor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputProcessor;
+                        return this.inputProcessor;
     
 }
 
@@ -3249,7 +3253,7 @@ this.menuPaintable= menuPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return menuPaintable;
+                        return this.menuPaintable;
     
 }
 
@@ -3266,7 +3270,7 @@ this.formPaintable= formPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return formPaintable;
+                        return this.formPaintable;
     
 }
 
@@ -3283,7 +3287,7 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameSpecificPaintable;
+                        return this.gameSpecificPaintable;
     
 }
 
@@ -3338,7 +3342,7 @@ this.gameSpecificPaintable= gameSpecificPaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE;
+                        return AllBinaryGameCanvas.TYPE;
     
 }
 

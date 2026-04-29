@@ -86,14 +86,14 @@ export class GameFeatureFormUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameFeatureFormUtil.instance;
     
 }
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public getChoiceGroup(hashtable: Hashtable, name: string, option: number): ChoiceGroup{
+    public getChoiceGroup(hashtable: Hashtable<any, any>, name: string, option: number): ChoiceGroup{
 var hashtable = hashtable
 var name = name
 var option = option
@@ -106,7 +106,7 @@ var option = option
 ;
     
 
-    var list: BasicArrayList =  as BasicArrayListhashtable.get( as Objectname);;
+    var list: BasicArrayList = hashtable.get(name as Object); as BasicArrayList;
 ;
     
 
@@ -134,7 +134,7 @@ var option = option
 index < size; index++)
         {
 
-    var gameFeature: Feature =  as Featurelist.objectArray[index]!;
+    var gameFeature: Feature = list.objectArray[index]! as Feature;
 ;
     
 stringMaker!.delete(0, stringMaker!.length());
@@ -163,7 +163,7 @@ choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE);
 }
 
 
-    public addChoiceGroup(form: CommandForm, hashtable: Hashtable, option: number){
+    public addChoiceGroup(form: CommandForm, hashtable: Hashtable<any, any>, option: number){
 var form = form
 var hashtable = hashtable
 var option = option
@@ -196,7 +196,7 @@ var option = option
 index < size; index++)
         {
 
-    var name: string =  as StringobjectArray[index]!;
+    var name: string = objectArray[index]! as String;
 ;
     
 stringMaker!.delete(0, stringMaker!.length());
@@ -234,7 +234,7 @@ index < size; index++)
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.setDefault( as GameConfigurationGaugeitem);
+                                    GameConfigurationUtil.getInstance()!.setDefault(item as GameConfigurationGauge);
     
 
                                     }
@@ -243,7 +243,7 @@ index < size; index++)
                         if(item is ChoiceGroup)
                         
                                     {
-                                    GameFeatureUtil.getInstance()!.setDefault( as ChoiceGroupitem);
+                                    GameFeatureUtil.getInstance()!.setDefault(item as ChoiceGroup);
     
 
                                     }

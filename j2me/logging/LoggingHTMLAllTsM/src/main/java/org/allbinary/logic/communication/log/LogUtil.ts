@@ -156,7 +156,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
                                 )
                         
                                     {
-                                    PlayN.log()!.error(this.LOG_SUCCESS +message,  as Errorexception);
+                                    PlayN.log()!.error(this.LOG_SUCCESS +message, exception as Error);
     
 
                                     }

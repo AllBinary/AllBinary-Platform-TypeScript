@@ -47,7 +47,7 @@ export interface LayerInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getNextInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer
+    getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
 
 }
                 

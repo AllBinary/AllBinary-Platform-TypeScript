@@ -72,7 +72,7 @@ export class VectorMirrorGenerator
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return VectorMirrorGenerator.instance;
     
 }
 
@@ -154,7 +154,7 @@ pointsBasicArrayList!.add(pointBasicArrayList);
     var index: number = 0;
 index < points.length; index++)
         {
-pointsBasicArrayList!.add(getInstance( as BasicArrayListpointsBasicArrayList!.objectArray[index]!, width));
+pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
     
 }
 

@@ -77,7 +77,7 @@ this.globalsValidation= new GlobalsValidation(this.getWeblisketSession()!.getSto
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis.globalsValidation);
+this.addDomNodeInterface(this.globalsValidation as DomNodeInterface);
     
 }
 

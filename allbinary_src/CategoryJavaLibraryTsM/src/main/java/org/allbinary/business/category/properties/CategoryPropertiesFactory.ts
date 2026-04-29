@@ -65,7 +65,7 @@ public constructor (name: string){
 
             super();
         var name = name
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(name);
+this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
     
 }
 
@@ -73,15 +73,15 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(node);
+this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
     
 }
 
-public constructor (categoryPropertiesHashMap: HashMap){
+public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(categoryPropertiesHashMap);
+this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }
 
@@ -93,7 +93,7 @@ this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryPro
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryPropertiesInterfacethis.categoryPropertiesInterface;
+                        return this.categoryPropertiesInterface as CategoryPropertiesInterface;
     
 
                 //: 

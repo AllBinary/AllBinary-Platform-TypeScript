@@ -109,7 +109,7 @@ public constructor (){
 ;
     
 
-    var hashtable: Hashtable = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
 ;
     
 HashtableUtil.getInstance()!.putAll(highScore!.getGameInfo()!.toHashtable(), hashtable);
@@ -137,8 +137,8 @@ hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore())
                         
                                     {
                                     
-    var resultHashtable: Hashtable =  as Hashtablenew XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
-                            get(hashtable, noCrypt);;
+    var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
+                            get(hashtable, noCrypt); as Hashtable<any, any>;
 ;
     
 remoteHighScores!.update(resultHashtable);

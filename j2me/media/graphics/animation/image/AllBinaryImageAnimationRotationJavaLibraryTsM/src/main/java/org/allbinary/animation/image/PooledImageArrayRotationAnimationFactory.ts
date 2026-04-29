@@ -77,7 +77,7 @@ export class PooledImageArrayRotationAnimationFactory
     //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
-    var totalAngle: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
     
 
@@ -101,7 +101,7 @@ export class PooledImageArrayRotationAnimationFactory
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 
-    var totalAngle: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
     
 
@@ -133,7 +133,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 this.animationBehaviorFactory= animationBehaviorFactory;
     
 
-    var totalAngle: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
+    var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
     
 

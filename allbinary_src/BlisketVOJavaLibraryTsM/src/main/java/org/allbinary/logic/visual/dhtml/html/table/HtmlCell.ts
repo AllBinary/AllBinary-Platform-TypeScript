@@ -135,11 +135,11 @@ result += " ";
 i < attributeSize; i++)
         {
 
-    var key: string =  as StringattributeKeys[i]!;
+    var key: string = attributeKeys[i]! as String;
 ;
     
 
-    var value: string =  as StringotherAttributes!.get(key);;
+    var value: string = otherAttributes!.get(key); as String;
 ;
     
 

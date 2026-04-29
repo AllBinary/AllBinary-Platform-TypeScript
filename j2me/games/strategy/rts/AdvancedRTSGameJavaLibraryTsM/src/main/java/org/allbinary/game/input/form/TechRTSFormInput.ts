@@ -137,7 +137,7 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -168,7 +168,7 @@ super.process(layerManager);
 ;
     
 
-    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem =  as TechnologyRTSInterfaceImageItemitem;
+    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;
 ;
     
 
@@ -205,7 +205,7 @@ rtsInterface!.upgrade();
     
 technologyRTSInterfaceImageItem!.update();
     
-TechEventHandler.getInstance()!.fireEvent(EVENT);
+TechEventHandler.getInstance()!.fireEvent(this.EVENT);
     
 
                                     }
@@ -217,7 +217,7 @@ TechEventHandler.getInstance()!.fireEvent(EVENT);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);
     
 
                                     }

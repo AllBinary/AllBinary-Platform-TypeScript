@@ -95,7 +95,7 @@ this.status= value;
 
         try {
             
-    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 
@@ -119,8 +119,8 @@ this.status= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -156,7 +156,7 @@ this.status= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, methodArgs);;
+    var result: string = method.invoke(anyType, methodArgs); as String;
 ;
     
 

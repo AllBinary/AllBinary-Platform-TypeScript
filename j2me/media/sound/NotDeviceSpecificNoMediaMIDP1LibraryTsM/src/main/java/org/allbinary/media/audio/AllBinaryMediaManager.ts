@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -145,7 +147,7 @@ logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PlayerNoPlayer.NO_PLAYER;
+                        return NoPlayer.NO_PLAYER as Player;
     
 }
 
@@ -166,7 +168,7 @@ logUtil!.putF(commonString!.START, THIS, "creatPlayer(locator)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PlayerNoPlayer.NO_PLAYER;
+                        return NoPlayer.NO_PLAYER as Player;
     
 }
 

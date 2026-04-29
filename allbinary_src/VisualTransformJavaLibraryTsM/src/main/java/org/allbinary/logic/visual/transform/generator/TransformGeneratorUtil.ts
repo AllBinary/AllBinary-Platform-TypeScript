@@ -76,7 +76,7 @@ export class TransformGeneratorUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformGeneratorUtil.instance;
     
 }
 
@@ -114,7 +114,7 @@ private constructor (){
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecomponentInterface!.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
 
@@ -168,7 +168,7 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
     //var abeClientInformation = abeClientInformation
     //var transformInfoDomNode = transformInfoDomNode
     //var ownerTransformInfoInterface = ownerTransformInfoInterface
-generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface);
+this.generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface);
     
 }
 

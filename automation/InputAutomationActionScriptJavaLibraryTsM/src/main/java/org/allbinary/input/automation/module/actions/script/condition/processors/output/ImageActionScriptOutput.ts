@@ -211,14 +211,14 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return actionScriptOutputJPanel;
+                        return this.actionScriptOutputJPanel;
     
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
@@ -281,7 +281,7 @@ this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return saved;
+                        return this.saved;
     
 }
 
@@ -298,7 +298,7 @@ this.saved= saved;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return display;
+                        return this.display;
     
 }
 
@@ -347,7 +347,7 @@ this.logUtil!.putF(this.future_toString(), this, "log");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageTypes;
+                        return this.imageTypes;
     
 }
 

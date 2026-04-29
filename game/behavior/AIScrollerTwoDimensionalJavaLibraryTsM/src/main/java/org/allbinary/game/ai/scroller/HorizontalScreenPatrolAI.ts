@@ -90,7 +90,7 @@ export class HorizontalScreenPatrolAI extends BasicAI {
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
-    private firingX: number = displayInfoSingleton!.getLastHalfWidth()!;
+    private firingX: number = this.displayInfoSingleton!.getLastHalfWidth()!;
 
     private firedIndex: number = 0;
 
@@ -101,7 +101,7 @@ export class HorizontalScreenPatrolAI extends BasicAI {
     private readonly secondaryPlayerQueue: PlayerQueue = SecondaryPlayerQueueFactory.getInstance()!;
 
     private readonly sound: Sound
-public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -110,7 +110,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sound=  as Soundhashtable.get(SOUND as Object);;
+this.sound= hashtable.get(HorizontalScreenPatrolAI.SOUND); as Sound;
     
 
                         if(this.sound == 
@@ -159,7 +159,7 @@ layerInterface!.setPosition(this.displayInfoSingleton!.getLastWidth() +layerInte
     
 this.firedIndex= 0;
     
-this.firingX= this.displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(displayInfoSingleton!.getLastHalfWidth());
+this.firingX= this.displayInfoSingleton!.getLastHalfWidth() +MyRandomFactory.getInstance()!.getNextInt(this.displayInfoSingleton!.getLastHalfWidth());
     
 this.secondaryPlayerQueue!.add(this.sound);
     
@@ -173,7 +173,7 @@ this.secondaryPlayerQueue!.add(this.sound);
                                     super.processKeyAI(Canvas.KEY_NUM1);
     
 
-    var gameLayerManager: AllBinaryGameLayerManager =  as AllBinaryGameLayerManagerallBinaryLayerManager;
+    var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;
 ;
     
 
@@ -200,7 +200,7 @@ this.firingX= Integer.MIN_VALUE;
 
                                     }
                                 
-firedIndex++;
+this.firedIndex++;
     
 
                                     }

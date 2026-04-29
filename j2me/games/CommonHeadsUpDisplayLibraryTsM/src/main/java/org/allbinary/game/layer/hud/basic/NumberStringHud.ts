@@ -199,7 +199,7 @@ this.set(this.value -value);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paintDX(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset);
+super.paintDX(graphics, this.PREPEND_STRING, 0, this.PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, this.offset);
     
 }
 

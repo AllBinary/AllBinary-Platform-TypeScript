@@ -162,6 +162,8 @@ import { Graphics } from "./Graphics.js";
 
 import { MouseEvent } from "./MouseEvent.js";
 
+import { StringBuilder } from "./StringBuilder.js";
+
 import { KeyEvent } from "./KeyEvent.js";
 
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
@@ -183,7 +185,7 @@ export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.M
                 null
             ;
 
-    private graphicItemHashMap: HashMap
+    private graphicItemHashMap: HashMap<any, any>
 
     private canvasDimension: IntegerDimension
 
@@ -209,9 +211,9 @@ this.grid= new Grid();
         try {
             this.workAreaJTreeJPanel= workAreaJTreeJPanel;
     
-initComponents();
+this.initComponents();
     
-initMyComponents();
+this.initMyComponents();
     
 this.setSize(dimension);
     
@@ -225,7 +227,7 @@ this.setCanvasSize(x, y);
                         if(LOGGING.contains(LOGGING.GRAPHICSCREATION))
                         
                                     {
-                                    guiLog!.put("Constructor Error", this, "contructor", e);
+                                    this.guiLog!.put("Constructor Error", this, "contructor", e);
     
 
                                     }
@@ -246,9 +248,9 @@ this.grid= new Grid(canvasDom!.getGrid());
         try {
             this.workAreaJTreeJPanel= workAreaJTreeJPanel;
     
-initComponents();
+this.initComponents();
     
-initMyComponents();
+this.initMyComponents();
     
 this.setSize(dimension);
     
@@ -274,7 +276,7 @@ this.graphicItemHashMap= canvasDom!.getGraphicItemHashMap();
 index < size; index++)
         {
 
-    var graphicItemTreeNode: MutableTreeNode =  as MutableTreeNodegraphicItemArray[index]!;
+    var graphicItemTreeNode: MutableTreeNode = graphicItemArray[index]! as MutableTreeNode;
 ;
     
 this.canvasTreeNode!.add(graphicItemTreeNode);
@@ -312,16 +314,16 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Error::class)
             
     initMyComponents(){
-this.frameLabel= new CanvasTreeLabel("FrameLabel" +frame.
+this.frameLabel= new CanvasTreeLabel("FrameLabel" +CanvasJPanel.frame.
                             toString());
     
 this.canvasTreeNode= new DefaultMutableTreeNode(this.frameLabel);
     
-frame++;
+CanvasJPanel.frame++;
     
 this.workAreaJTreeJPanel!.add(this.getTreeNode());
     
-this.graphicItemHashMap= new HashMap();
+this.graphicItemHashMap= new HashMap<any, any>();
     
 this.grid.grid= PointFactory.getInstance()!.createXY(0, 0);
     
@@ -532,11 +534,11 @@ this.setAngle(this.angle +angle);
 index < size; index++)
         {
 
-    var graphicItemNode: MutableTreeNode =  as MutableTreeNodegraphicItemArray[index]!;
+    var graphicItemNode: MutableTreeNode = graphicItemArray[index]! as MutableTreeNode;
 ;
     
 
-    var graphicItem: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(graphicItemNode as Object);;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemNode as Object); as GraphicItemInterface;
 ;
     
 
@@ -595,7 +597,7 @@ newPoints!.add(newGraphicItem);
 index < size2; index++)
         {
 
-    var newGraphicItem: GraphicItemInterface =  as GraphicItemInterfacenewPoints!.get(index);;
+    var newGraphicItem: GraphicItemInterface = newPoints!.get(index); as GraphicItemInterface;
 ;
     
 this.canvasTreeNode!.add(newGraphicItem!.getTreeNode());
@@ -636,7 +638,7 @@ var explosionType = explosionType
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
@@ -689,7 +691,7 @@ this.repaint();
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
@@ -777,7 +779,7 @@ this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
 
                 //@Throws(Error::class)
             
-    public duplicateGraphicItemHashMap(hashMap: HashMap){
+    public duplicateGraphicItemHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
     var mutableTreeNodeArray: any[] = hashMap!.keys.toTypedArray()!;
@@ -797,11 +799,11 @@ var hashMap = hashMap
 index < size; index++)
         {
 
-    var treeNode: MutableTreeNode =  as MutableTreeNodemutableTreeNodeArray[index]!;
+    var treeNode: MutableTreeNode = mutableTreeNodeArray[index]! as MutableTreeNode;
 ;
     
 
-    var graphicItem: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(treeNode as Object);;
+    var graphicItem: GraphicItemInterface = hashMap!.get(treeNode as Object); as GraphicItemInterface;
 ;
     
 this.duplicateGraphicItem(graphicItem);
@@ -811,7 +813,7 @@ this.duplicateGraphicItem(graphicItem);
 }
 
 
-    public getGraphicItemHashMap(): HashMap{
+    public getGraphicItemHashMap(): HashMap<any, any>{
 
 
 
@@ -917,7 +919,7 @@ var graphics = graphics
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 item.paint(graphics, angleDouble, this.getCanvasDimension(), this.getXPixelsPerWorkAreaPixel(), this.getYPixelsPerWorkAreaPixel());
@@ -1288,7 +1290,7 @@ StatusFactory.getInstance()!.setStatus("Key Pressed");
 index < size; index++)
         {
 
-    var graphicItemInterface: GraphicItemInterface =  as GraphicItemInterfacethis.graphicItemHashMap!.get(graphicItemArray[index]!);;
+    var graphicItemInterface: GraphicItemInterface = this.graphicItemHashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
@@ -1408,7 +1410,7 @@ this.workAreaJTreeJPanel!.repaint();
     public deselect(evt: MyGraphicItemEvent){
 var evt = evt
 
-    var graphicItemInterface: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(evt.getTreeNode());;
+    var graphicItemInterface: GraphicItemInterface = this.getGraphicItemHashMap()!.get(evt.getTreeNode()); as GraphicItemInterface;
 ;
     
 
@@ -1432,7 +1434,7 @@ this.workAreaJTreeJPanel!.repaint();
     public highlight(evt: MyGraphicItemEvent){
 var evt = evt
 
-    var graphicItemInterface: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(evt.getTreeNode());;
+    var graphicItemInterface: GraphicItemInterface = this.getGraphicItemHashMap()!.get(evt.getTreeNode()); as GraphicItemInterface;
 ;
     
 
@@ -1490,7 +1492,7 @@ var event = event
 ;
     
 
-    var graphicItem: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(treeNode as Object);;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode as Object); as GraphicItemInterface;
 ;
     
 
@@ -1520,7 +1522,7 @@ var event = event
 ;
     
 
-    var graphicItem: GraphicItemInterface =  as GraphicItemInterfacethis.getGraphicItemHashMap()!.get(treeNode as Object);;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode as Object); as GraphicItemInterface;
 ;
     
 
@@ -1542,7 +1544,7 @@ var event = event
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return canvasDimension;
+                        return this.canvasDimension;
     
 }
 
@@ -1559,7 +1561,7 @@ this.canvasDimension= canvasDimension;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return grid;
+                        return this.grid;
     
 }
 

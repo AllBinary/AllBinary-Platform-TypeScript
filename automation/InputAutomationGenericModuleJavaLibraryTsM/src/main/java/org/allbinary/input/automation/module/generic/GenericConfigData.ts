@@ -46,11 +46,11 @@ export class GenericConfigData
 
     public CONFIG_PATH: string = "modules/configs/";
 
-    public MODULE_RELATIVE_PATH: string = RELATIVE_PATH +CONFIG_PATH +"allbinary/input/automation/module/";
+    public MODULE_RELATIVE_PATH: string = GenericConfigData.RELATIVE_PATH +GenericConfigData.CONFIG_PATH +"allbinary/input/automation/module/";
 
-    public GAME_MODULE_RELATIVE_PATH: string = MODULE_RELATIVE_PATH +"game/";
+    public GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.MODULE_RELATIVE_PATH +"game/";
 
-    public MMO_GAME_MODULE_RELATIVE_PATH: string = GAME_MODULE_RELATIVE_PATH +"mmog/";
+    public MMO_GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.GAME_MODULE_RELATIVE_PATH +"mmog/";
 
     public FREE_MMO_GAME_MODULE_RELATIVE_PATH: string = "free/";
 private constructor (){

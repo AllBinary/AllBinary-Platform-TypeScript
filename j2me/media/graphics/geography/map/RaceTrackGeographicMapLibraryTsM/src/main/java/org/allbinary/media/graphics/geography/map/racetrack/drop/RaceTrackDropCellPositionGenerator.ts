@@ -125,11 +125,11 @@ this.list.clear();
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypethis.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition); as RaceTrackGeographicMapCellType;
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorythis.raceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = this.raceTrackGeographicMapCellTypeFactory as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -162,12 +162,12 @@ this.list.clear();
 this.init();
     
 
-    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap =  as BaseRaceTrackGeographicMapgeographicMapInterface;
+    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
 ;
     
 this.raceTrackGeographicMap= baseRaceTrackGeographicMap;
     
-this.raceTrackGeographicMapCellTypeFactory=  as RaceTrackGeographicMapCellTypeFactorybaseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory();;
+this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
     
 
     var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;
@@ -201,14 +201,14 @@ this.raceTrackGeographicMapCellTypeFactory=  as RaceTrackGeographicMapCellTypeFa
     var index: number = lastIndex;
 index > 0; index--)
         {
-geographicMapCellPosition=  as GeographicMapCellPositiontrackedList!.get(index);;
+geographicMapCellPosition= trackedList!.get(index); as GeographicMapCellPosition;
     
 total= 0;
     
 ahead= index;
     
 
-        while(this.isDropAllowedAt( as GeographicMapCellPositiontrackedList!.get(ahead)))
+        while(this.isDropAllowedAt(trackedList!.get(ahead) as GeographicMapCellPosition))
         {
 total++;
     

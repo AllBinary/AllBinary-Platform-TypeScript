@@ -55,6 +55,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CountedLayerInterfaceFactoryPart } from "./CountedLayerInterfaceFactoryPart.js";
+
 export class CountedLayersHudPaintable
             extends Object
          implements PaintableInterface {
@@ -62,7 +64,7 @@ export class CountedLayersHudPaintable
 
     private static readonly XXString: string = "XX";
 
-    private static readonly XXStringWidth: number = MyFont.getInstance()!.stringWidth(XXString)!;
+    private static readonly XXStringWidth: number = MyFont.getInstance()!.stringWidth(CountedLayersHudPaintable.XXString)!;
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
 
@@ -156,7 +158,7 @@ var graphics = graphics
     var index: number = this.startIndex;
 index < size; index++)
         {
-countedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartthis.partInterfaceArray[index]!;
+countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
     
 
                         if(countedLayerInterfaceFactory!.getTotal() > 0)
@@ -191,7 +193,7 @@ count++;
                                     {
                                     graphics.setColor(this.countedPartsBorder);
     
-graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, XXStringWidth +this.dropSize, (count *height) +3);
+graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, CountedLayersHudPaintable.XXStringWidth +this.dropSize, (count *height) +3);
     
 
                                     }

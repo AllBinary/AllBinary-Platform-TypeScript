@@ -127,11 +127,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -264,7 +264,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemimageFileItemObject;
+    var fileItem: FileItem = imageFileItemObject as FileItem;
 ;
     
 
@@ -352,11 +352,11 @@ var document = document
 ;
     
 
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -455,7 +455,7 @@ stringBuffer!.append(" does not exist.<br />");
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemanyType;
+    var fileItem: FileItem = anyType as FileItem;
 ;
     
 

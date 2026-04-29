@@ -77,7 +77,7 @@ this.file= file;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.file.getPath();;
+                        return this.file.getPath(); as Object;
     
 }
 
@@ -110,9 +110,9 @@ filePropertyVector!.add(this.file.getPath());
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var filePropertyHashMap: HashMap = new HashMap();
+    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

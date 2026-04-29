@@ -109,7 +109,7 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle =  as MotionRectanglevector2.get(index);;
+    var motionRectangle: MotionRectangle = vector2.get(index); as MotionRectangle;
 ;
     
 
@@ -191,7 +191,7 @@ this.setVector(vector);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionRectangleConstraintsInterface;
+                        return this.motionRectangleConstraintsInterface;
     
 }
 

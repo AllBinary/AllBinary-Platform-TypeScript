@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { InputStream } from "../../../java/io/InputStream.js";
@@ -158,7 +160,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var resourceId: number = resourceUtil!.getResourceId( as Stringkey)!;
+    var resourceId: number = resourceUtil!.getResourceId(key as String)!;
 ;
     
 
@@ -274,7 +276,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImageLater( as Stringkey,  -1,  -1);;
+                        return Image.createImageLater(key as String,  -1,  -1);;
     
 }
 

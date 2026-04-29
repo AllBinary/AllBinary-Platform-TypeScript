@@ -98,7 +98,7 @@ export class RTSFormInput
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly hashtable: Hashtable = new Hashtable();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     readonly newUnconstructedRTSLayerInterfaceArray: CollidableDestroyableDamageableLayer[] = new Array(7);
 
@@ -213,7 +213,7 @@ this.processGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManag
             
     public process(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
-this.setAllBinaryGameLayerManager( as AllBinaryGameLayerManagerlayerManager);
+this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
     
 }
 
@@ -347,7 +347,7 @@ this.logUtil!.putF(new StringMaker().
     //var aItem = aItem
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var item: LayerInterfaceFactoryImageItem =  as LayerInterfaceFactoryImageItemaItem;
+    var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;
 ;
     
 
@@ -370,7 +370,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as RTSLayerlayerInterfaceFactoryInterface!.getNextInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ());;
+                        return layerInterfaceFactoryInterface!.getNextInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ()); as RTSLayer;
     
 
                                     }
@@ -389,7 +389,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedGeographicCellPosition;
+                        return this.selectedGeographicCellPosition;
     
 }
 
@@ -409,7 +409,7 @@ this.selectedGeographicCellPosition= selectedGeographicCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return stickyItemSelected;
+                        return this.stickyItemSelected;
     
 }
 
@@ -426,7 +426,7 @@ this.stickyItemSelected= stickyItemSelected;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedStickyItem;
+                        return this.selectedStickyItem;
     
 }
 
@@ -443,7 +443,7 @@ this.selectedStickyItem= selectedStickyItem;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedStickyItemIndex;
+                        return this.selectedStickyItemIndex;
     
 }
 
@@ -455,12 +455,12 @@ this.selectedStickyItemIndex= selectedStickyItemIndex;
 }
 
 
-    public getHashtable(): Hashtable{
+    public getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 

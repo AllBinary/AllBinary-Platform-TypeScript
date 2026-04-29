@@ -108,7 +108,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent( as ImageComparisonResultsEventallBinaryEventObject);
+this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
     
 }
 
@@ -119,7 +119,7 @@ this.onImageComparisonResultsEvent( as ImageComparisonResultsEventallBinaryEvent
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -146,7 +146,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonInfo: ImageComparisonResult =  as ImageComparisonResultthis.imageComparisonInfoVector!.get(0);;
+    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0); as ImageComparisonResult;
 ;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);

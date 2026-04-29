@@ -146,7 +146,7 @@ this.setTableName(this.tableName);
 
         try {
             
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
@@ -190,7 +190,7 @@ super.deleteWhere(keysAndValues);
 
         try {
             
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
@@ -198,14 +198,14 @@ keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as WorkFlowInterfaceDbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap);;
+                        return DbWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap); as WorkFlowInterface;
     
 
                 //: 
@@ -258,7 +258,7 @@ var storeName = storeName
 ;
     
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -280,7 +280,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 i < size; i++)
         {
 
-    var workFlowHashMap: HashMap =  as HashMaphashMapVector!.get(i as Object);;
+    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object); as HashMap<any, any>;
 ;
     
 
@@ -326,17 +326,17 @@ i < size; i++)
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
 
         try {
             
-    var wherekeysAndValues: HashMap = new HashMap();
+    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME,  as StringupdatedValues!.get(WorkFlowData.getInstance()!.NAME));
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String);
     
-wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME,  as StringupdatedValues!.get(StoreFrontData.getInstance()!.NAME));
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String);
     
 super.updateWhere(wherekeysAndValues, updatedValues);
     

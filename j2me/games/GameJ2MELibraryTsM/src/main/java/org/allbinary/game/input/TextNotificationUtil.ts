@@ -75,7 +75,7 @@ export class TextNotificationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TextNotificationUtil.instance;
     
 }
 
@@ -124,10 +124,10 @@ this.fire(message);
     public fire(message: string){
 var message = message
 
-    var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, TWO, BasicColorFactory.getInstance()!.RED, FALSE);
+    var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, this.TWO, BasicColorFactory.getInstance()!.RED, this.FALSE);
 ;
     
-gameNotificationEventHandler!.fireEvent(gameNotificationEvent);
+this.gameNotificationEventHandler!.fireEvent(gameNotificationEvent);
     
 }
 

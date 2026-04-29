@@ -68,7 +68,7 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
-    private readonly SOURCE_ID: number = gameKeyEventFactory!.MOTION_GESTURE_SOURCE_ID;
+    private readonly SOURCE_ID: number = this.gameKeyEventFactory!.MOTION_GESTURE_SOURCE_ID;
 
     private gameKey: GameKey = GameKey.NULL_GAME_KEY;
 
@@ -137,7 +137,7 @@ this.gameKeyEvent= gameKeyEvent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKeyEvent;
+                        return this.gameKeyEvent;
     
 }
 
@@ -154,7 +154,7 @@ this.gameKey= gameKey;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKey;
+                        return this.gameKey;
     
 }
 

@@ -65,12 +65,12 @@ export class NullAIFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_AI;
+                        return NullAIFactory.NULL_AI;
     
 }
 
 
-    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
@@ -78,7 +78,7 @@ var gameInput = gameInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_AI;
+                        return NullAIFactory.NULL_AI;
     
 }
 

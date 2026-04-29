@@ -63,6 +63,8 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TimeFiredInterface } from "./TimeFiredInterface.js";
+
 export class TimedFireAI extends BasicAI {
         
 
@@ -90,7 +92,7 @@ this.delay= delay;
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    var timeFiredInterface: TimeFiredInterface =  as TimeFiredInterfacethis.getOwnerLayerInterface();;
+    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface(); as TimeFiredInterface;
 ;
     
 

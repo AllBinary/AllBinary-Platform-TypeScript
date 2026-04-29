@@ -58,7 +58,7 @@ export class JavaHelpSetNotifier
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return vector;
+                        return JavaHelpSetNotifier.vector;
     
 }
 
@@ -90,7 +90,7 @@ var helpSet = helpSet
 i < size; i++)
         {
 
-    var nextURL: URL =  as URLurlArray[i]!;
+    var nextURL: URL = urlArray[i]! as URL;
 ;
     
 
@@ -104,7 +104,7 @@ i < size; i++)
                                 
 }
 
-vector.add(url);
+JavaHelpSetNotifier.vector.add(url);
     
 
 

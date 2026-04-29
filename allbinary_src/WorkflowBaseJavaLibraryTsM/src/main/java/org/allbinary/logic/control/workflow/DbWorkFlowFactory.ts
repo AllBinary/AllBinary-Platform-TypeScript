@@ -72,7 +72,7 @@ export class DbWorkFlowFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DbWorkFlowFactory.instance;
     
 }
 
@@ -86,13 +86,13 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap): WorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
         try {
             
-    var className: string =  as StringhashMap!.get(DynamicObjectData.NAME);;
+    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
 ;
     
 
@@ -105,7 +105,7 @@ private constructor (){
     
 classes[0]= hashMap!constructor;
     
-params[0]=  as ObjecthashMap;
+params[0]= hashMap as Object;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
@@ -115,7 +115,7 @@ params[0]=  as ObjecthashMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
+                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
 
                 //: 

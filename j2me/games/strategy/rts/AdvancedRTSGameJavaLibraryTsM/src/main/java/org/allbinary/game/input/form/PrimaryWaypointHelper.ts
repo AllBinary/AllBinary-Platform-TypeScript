@@ -61,7 +61,7 @@ export class PrimaryWaypointHelper
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PrimaryWaypointHelper.instance;
     
 }
 
@@ -78,7 +78,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return waypointLayer;
+                        return this.waypointLayer;
     
 }
 

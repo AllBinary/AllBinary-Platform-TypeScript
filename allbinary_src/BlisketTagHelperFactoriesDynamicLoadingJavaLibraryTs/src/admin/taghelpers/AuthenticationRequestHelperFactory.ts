@@ -69,28 +69,28 @@ public constructor (){
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap, pageContext: PageContext): any{
+    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HelperFactory.getInstance(FACTORYNAME, CLASSNAME, hashMap, pageContext);;
+                        return HelperFactory.getInstance(AuthenticationRequestHelperFactory.FACTORYNAME, AuthenticationRequestHelperFactory.CLASSNAME, hashMap, pageContext);;
     
 }
 
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap, httpServletRequest: HttpServletRequest): any{
+    public getInstance(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
 var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return HelperFactory.getInstance(FACTORYNAME, CLASSNAME, hashMap, httpServletRequest);;
+                        return HelperFactory.getInstance(AuthenticationRequestHelperFactory.FACTORYNAME, AuthenticationRequestHelperFactory.CLASSNAME, hashMap, httpServletRequest);;
     
 }
 

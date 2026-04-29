@@ -55,7 +55,7 @@ export class FlagGameResources extends BasicGameResources {
 
     private static readonly DESTROY: string = "_destroy";
 
-    private static readonly ICON_BUILD: string = "_icon" +BUILD;
+    private static readonly ICON_BUILD: string = "_icon" +FlagGameResources.BUILD;
 
     public NAME: string = StringUtil.getInstance()!.EMPTY_STRING;
 

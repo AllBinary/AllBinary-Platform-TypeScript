@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../java/lang/System";
+        
 import { Image } from "../../javax/microedition/lcdui/Image.js";
 
     
@@ -61,7 +63,7 @@ export class DisposalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DisposalUtil.instance;
     
 }
 
@@ -90,10 +92,10 @@ export class DisposalUtil
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage =  as SwtMutableImageimage;
+    var mutableImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-this.disposeResource( as ResourcemutableImage!.getImage());
+this.disposeResource(mutableImage!.getImage() as Resource);
     
 
                                     }

@@ -64,6 +64,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UpGameKeyEventListenerInterface } from "./UpGameKeyEventListenerInterface.js";
+
 export class UpGameKeyEventHandlerBase extends BasicEventHandler {
         
 
@@ -134,10 +136,10 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
-playerGameInput!.onUpGameKeyEvent( as GameKeyEventeventObject);
+playerGameInput!.onUpGameKeyEvent(eventObject as GameKeyEvent);
     
 
                 //: 
@@ -160,10 +162,10 @@ super.fireEvent(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var upGameKeyEventListenerInterface: UpGameKeyEventListenerInterface =  as UpGameKeyEventListenerInterfaceeventListenerInterface;
+    var upGameKeyEventListenerInterface: UpGameKeyEventListenerInterface = eventListenerInterface as UpGameKeyEventListenerInterface;
 ;
     
-upGameKeyEventListenerInterface!.onUpGameKeyEvent( as GameKeyEventeventObject);
+upGameKeyEventListenerInterface!.onUpGameKeyEvent(eventObject as GameKeyEvent);
     
 }
 
@@ -194,7 +196,7 @@ index < size; index++)
 
         try {
             
-    var eventListenerInterface: EventListenerInterface =  as EventListenerInterfacethis.list.get(index);;
+    var eventListenerInterface: EventListenerInterface = this.list.get(index); as EventListenerInterface;
 ;
     
 stringBuffer!.append(LISTENER_LABEL);

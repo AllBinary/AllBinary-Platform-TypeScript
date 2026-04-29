@@ -147,7 +147,7 @@ this.conn=
     //var statement = statement
 
         try {
-            initialize();
+            this.initialize();
     
 
     var stmt: Statement = this.conn.createStatement()!;
@@ -277,7 +277,7 @@ this.conn=
                         if(this.connectAttemptCounter < 10)
                         
                                     {
-                                    connectAttemptCounter++;
+                                    this.connectAttemptCounter++;
     
 this.initialize();
     
@@ -365,7 +365,7 @@ this.createConnection();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return databaseConnectionInfoInterface;
+                        return this.databaseConnectionInfoInterface;
     
 }
 

@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
 import { Service } from "../../../../../android/app/Service.js";
@@ -163,7 +165,7 @@ this.player.start();
     public onStart(intent: Intent, startid: number){
     //var intent = intent
     //var startid = startid
-onStartCommandIntent(intent);
+this.onStartCommandIntent(intent);
     
 this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.START);
     
@@ -174,7 +176,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.START);
     //var intent = intent
     //var flags = flags
     //var startId = startId
-onStartCommandIntent(intent);
+this.onStartCommandIntent(intent);
     
 
 

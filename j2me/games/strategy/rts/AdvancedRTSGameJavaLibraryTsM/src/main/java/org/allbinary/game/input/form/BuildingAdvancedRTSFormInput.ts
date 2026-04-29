@@ -129,7 +129,7 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -174,7 +174,7 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerInterface = layerInterface
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
     
 
@@ -195,7 +195,7 @@ var layerInterface = layerInterface
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(atLeastOneHouseGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.atLeastOneHouseGameNotificationEvent);
     
 
                                     }

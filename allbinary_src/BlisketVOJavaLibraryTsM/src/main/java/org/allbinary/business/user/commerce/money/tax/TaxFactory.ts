@@ -115,7 +115,7 @@ export class TaxFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TaxFactory.instance;
     
 }
 
@@ -217,7 +217,7 @@ index < taxNameNodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TaxModuleInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, className);;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, className); as TaxModuleInterface;
     
 
                                     }
@@ -257,7 +257,7 @@ index < taxNameNodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TaxModuleInterfacenew SimpleStateTaxModule();
+                        return new SimpleStateTaxModule() as TaxModuleInterface;
     
 }
 

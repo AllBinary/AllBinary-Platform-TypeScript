@@ -116,7 +116,7 @@ this.totalMoney= new Money();
     var index: number = 0;
 index < size; index++)
         {
-orderHistoryInterface=  as OrderHistoryInterfaceorderHistoryInterfaceVector!.get(index);;
+orderHistoryInterface= orderHistoryInterfaceVector!.get(index); as OrderHistoryInterface;
     
 numberOfOrders= numberOfOrders +1;
     
@@ -185,9 +185,9 @@ this.numberOfOrdersLong= numberOfOrders;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

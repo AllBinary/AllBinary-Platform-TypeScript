@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -150,7 +152,7 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
 
     private readonly highScoresCanvasInputProcessor: HighScoresCanvasInputProcessor
 
-    private currentCommand: Command = highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
+    private currentCommand: Command = this.highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, gameInfo: GameInfo, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface, highScoresCanvasInputProcessorFactoryInterface: HighScoresCanvasInputProcessorFactoryInterface){
             super(commandListener, HighScoresCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                         //var commandListener = commandListener
@@ -340,7 +342,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return highScoresPaintable;
+                        return this.highScoresPaintable;
     
 }
 
@@ -396,7 +398,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-                        if(highScoreCommandsFactory!.isHighScoreCommand(command))
+                        if(this.highScoreCommandsFactory!.isHighScoreCommand(command))
                         
                                     {
                                     
@@ -469,7 +471,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameInfo;
+                        return this.gameInfo;
     
 }
 

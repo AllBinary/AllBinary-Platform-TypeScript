@@ -57,7 +57,7 @@ export class CurrentlyPressedTouchButtonSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CurrentlyPressedTouchButtonSingleton.instance;
     
 }
 
@@ -85,7 +85,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TouchButtonInputthis.list.removeAt(index);;
+                        return this.list.removeAt(index); as TouchButtonInput;
     
 }
 
@@ -107,7 +107,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TouchButtonInputthis.list.objectArray[index]!;
+                        return this.list.objectArray[index]! as TouchButtonInput;
     
 }
 

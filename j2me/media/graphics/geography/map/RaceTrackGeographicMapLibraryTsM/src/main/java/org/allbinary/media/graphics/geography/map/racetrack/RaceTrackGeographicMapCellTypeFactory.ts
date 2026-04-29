@@ -57,14 +57,14 @@ export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return RaceTrackGeographicMapCellTypeFactory.instance;
     
 }
 
 
     public EMPTY_CELL_TYPE: GeographicMapCellType = new GeographicMapCellType(0,  -1);
 
-    public EASY_CELL_TYPE: GeographicMapCellType = EMPTY_CELL_TYPE;
+    public EASY_CELL_TYPE: GeographicMapCellType = this.EMPTY_CELL_TYPE;
 
     public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
 

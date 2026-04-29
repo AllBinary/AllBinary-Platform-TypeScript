@@ -92,7 +92,7 @@ this.basicColor= basicColor;
     
 graphics.setColor(this.getBasicColorP()!.toInt());
     
-graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, anchor);
+graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, this.anchor);
     
 }
 
@@ -109,7 +109,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 
@@ -126,7 +126,7 @@ this.text= text;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return text;
+                        return this.text;
     
 }
 

@@ -85,7 +85,7 @@ UserRoleFactory.getInstance();
 index < size; index++)
         {
 
-    var userRole: UserRole =  as UserRoleroleVector!.get(index);;
+    var userRole: UserRole = roleVector!.get(index); as UserRole;
 ;
     
 
@@ -133,7 +133,7 @@ var aUserFactoryInterface = aUserFactoryInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-roleVector!.add(this);
+UserRoleB.roleVector!.add(this);
     
 }
 

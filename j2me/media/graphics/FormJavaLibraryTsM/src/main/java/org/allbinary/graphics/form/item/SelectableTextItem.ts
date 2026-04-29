@@ -45,6 +45,8 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
         
 import { TextItem } from "./TextItem.js";
 
+import { StringComponent } from "./StringComponent.js";
+
 export class SelectableTextItem extends TextItem {
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){

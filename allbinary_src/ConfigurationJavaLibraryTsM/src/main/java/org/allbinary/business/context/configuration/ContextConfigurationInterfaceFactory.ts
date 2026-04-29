@@ -73,7 +73,7 @@ export class ContextConfigurationInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ContextConfigurationInterfaceFactory.instance;
     
 }
 
@@ -99,8 +99,8 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ContextConfigurationInterfacenew ContextConfigurationView(contextConfigurationNode).
-                            getContextConfigurationInterface();;
+                        return new ContextConfigurationView(contextConfigurationNode).
+                            getContextConfigurationInterface(); as ContextConfigurationInterface;
     
 }
 

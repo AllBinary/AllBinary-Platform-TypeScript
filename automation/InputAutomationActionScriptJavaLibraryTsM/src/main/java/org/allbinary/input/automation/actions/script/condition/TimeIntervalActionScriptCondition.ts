@@ -182,9 +182,9 @@ this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.se
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay));
@@ -230,7 +230,7 @@ this.logUtil!.putF("Time Interval: " +this.timeHelper!.delay, this, "log");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return timeHelper;
+                        return this.timeHelper;
     
 }
 

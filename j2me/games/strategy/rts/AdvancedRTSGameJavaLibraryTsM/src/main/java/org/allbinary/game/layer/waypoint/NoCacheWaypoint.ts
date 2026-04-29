@@ -167,7 +167,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionBasicArrayListUtil.getInstance()!.getRandom(endList);;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList); as GeographicMapCellPosition;
 ;
     
 
@@ -182,7 +182,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     var index: number = endList!.size() -1;
 index >= 0; index--)
         {
-endGeographicMapCellPosition=  as GeographicMapCellPositionendList!.get(index);;
+endGeographicMapCellPosition= endList!.get(index); as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
@@ -261,7 +261,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionendList!.get(index);;
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -269,7 +269,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionendList!.get(index);;
 ;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap =  as RaceTrackGeographicMapgeographicMapInterface;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
 ;
     
 
@@ -277,7 +277,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionendList!.get(index);;
 ;
     
 
-    var customMapGenerator: CustomMapGenerator =  as CustomMapGeneratorraceTrackGeographicMap!.getCustomMapGenerator();;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
 ;
     
 customMapGenerator!.copyMapIntoCustomMap();
@@ -365,14 +365,14 @@ this.getConnectedWaypointList()!.clear();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
 ;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.getConnectedWaypointList()!.get(0);;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
 ;
     
 

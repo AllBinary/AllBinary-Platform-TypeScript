@@ -84,7 +84,7 @@ public constructor (){
     
 gameInitializedEventHandler!.removeAllListeners();
     
-gameInitializedEventHandler!.addListener( as GameInitializedListenerInterfacethis);
+gameInitializedEventHandler!.addListener(this as GameInitializedListenerInterface);
     
 }
 

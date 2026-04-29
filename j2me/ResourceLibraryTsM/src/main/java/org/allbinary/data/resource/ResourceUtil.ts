@@ -70,7 +70,7 @@ export class ResourceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ResourceUtil.instance;
     
 }
 
@@ -172,7 +172,7 @@ ResourceUtil.classLoader= classLoader;
                                     }
                                 
 
-    var classLoader: ClassLoader =  as ClassLoaderResourceUtil.classLoader;
+    var classLoader: ClassLoader = ResourceUtil.classLoader as ClassLoader;
 ;
     
 inputStream= classLoader!.getResourceAsStream(resourcePath);

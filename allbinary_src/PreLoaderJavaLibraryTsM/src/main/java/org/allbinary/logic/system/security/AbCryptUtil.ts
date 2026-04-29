@@ -64,7 +64,7 @@ export class AbCryptUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AbCryptUtil.instance;
     
 }
 
@@ -89,7 +89,7 @@ private constructor (){
     
 
         try {
-            outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));;
+            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)); as ByteArrayOutputStream;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);

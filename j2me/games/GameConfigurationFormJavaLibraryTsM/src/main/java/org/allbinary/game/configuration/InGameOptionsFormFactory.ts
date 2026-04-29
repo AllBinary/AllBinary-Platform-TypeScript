@@ -67,7 +67,7 @@ export class InGameOptionsFormFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InGameOptionsFormFactory.instance;
     
 }
 
@@ -115,7 +115,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return this.SINGLETON;
     
 }
 

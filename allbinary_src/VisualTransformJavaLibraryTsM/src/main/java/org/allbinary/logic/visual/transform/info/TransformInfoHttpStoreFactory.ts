@@ -61,7 +61,7 @@ export class TransformInfoHttpStoreFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoHttpStoreFactory.instance;
     
 }
 
@@ -73,7 +73,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
+    public getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext

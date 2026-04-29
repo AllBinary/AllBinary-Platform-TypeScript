@@ -112,7 +112,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -137,11 +137,11 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 index < size; index++)
         {
 
-    var key: string =  as StringkeyArray[index]!;
+    var key: string = keyArray[index]! as String;
 ;
     
 
-    var values: string[] =  as Array<String?>map.get(key);;
+    var values: string[] = map.get(key); as Array<String?>;
 ;
     
 hashMap!.put(key.toCharArray()
@@ -166,7 +166,7 @@ this.getFormData(abeClientInformation, hashMap);
     
 }
 
-public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap){
+public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
 
             super();
             //var abeClientInformation = abeClientInformation
@@ -176,7 +176,7 @@ this.getFormData(abeClientInformation, initHashMap);
 }
 
 
-    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap){
+    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
@@ -185,17 +185,17 @@ this.getFormData(abeClientInformation, initHashMap);
     var initializerData: InitializerData = InitializerData.getInstance()!;
 ;
     
-setAdminDbUserName( as StringhashMap!.get(initializerData!.DBUSER));
+this.setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as String);
     
-setAdminDbPassword( as StringhashMap!.get(initializerData!.DBPASSWORD));
+this.setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as String);
     
-setAdminJdbcDriver( as StringhashMap!.get(initializerData!.ADMINJDBCDRIVER));
+this.setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as String);
     
-setAdminSchema( as StringhashMap!.get(initializerData!.ADMINSCHEMA));
+this.setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as String);
     
-setAdminServer( as StringhashMap!.get(initializerData!.ADMINSERVER));
+this.setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as String);
     
-setAdminPort( as StringhashMap!.get(initializerData!.ADMINPORT));
+this.setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String);
     
 
     var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();
@@ -219,7 +219,7 @@ dbConnectionInfo!.setServer(getAdminServer());
     
 dbConnectionInfo!.setPort(getAdminPort());
     
-this.initDb= new DynamicInitDb(abeClientInformation,  as DatabaseConnectionInfoInterfacedbConnectionInfo);
+this.initDb= new DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
     
 
                 //: 
@@ -291,7 +291,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX);)
                         
                                     {
                                     isValid= false;
@@ -300,7 +300,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX);)
                         
                                     {
                                     isValid= false;
@@ -367,7 +367,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX);)
                         
                                     {
                                     stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -376,7 +376,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX);)
                         
                                     {
                                     stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -491,7 +491,7 @@ this.logUtil!.put("Unable to Create Tables", this, "createTables()", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminDbUserName;
+                        return this.adminDbUserName;
     
 }
 
@@ -508,7 +508,7 @@ this.adminDbUserName= adminDbUserName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminDbPassword;
+                        return this.adminDbPassword;
     
 }
 
@@ -525,7 +525,7 @@ this.adminDbPassword= adminDbPassword;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminJdbcDriver;
+                        return this.adminJdbcDriver;
     
 }
 
@@ -542,7 +542,7 @@ this.adminJdbcDriver= adminJdbcDriver;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminSchema;
+                        return this.adminSchema;
     
 }
 
@@ -559,7 +559,7 @@ this.adminSchema= adminSchema;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminServer;
+                        return this.adminServer;
     
 }
 
@@ -576,7 +576,7 @@ this.adminServer= adminServer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return adminPort;
+                        return this.adminPort;
     
 }
 

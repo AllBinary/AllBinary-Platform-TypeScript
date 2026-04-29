@@ -58,7 +58,7 @@ export class Properties
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -71,12 +71,12 @@ public constructor (){
 
                                     }
                                 
-this.propertiesHashMap= new HashMap();
+this.propertiesHashMap= new HashMap<any, any>();
     
 }
 
 
-    getPropertiesHashMap(): HashMap{
+    getPropertiesHashMap(): HashMap<any, any>{
 
 
 
@@ -96,7 +96,7 @@ this.propertiesHashMap= new HashMap();
 
                                     }
                                 
-this.propertiesHashMap= new HashMap();
+this.propertiesHashMap= new HashMap<any, any>();
     
 
 

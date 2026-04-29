@@ -51,7 +51,7 @@ export class PropertiesJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 }
 

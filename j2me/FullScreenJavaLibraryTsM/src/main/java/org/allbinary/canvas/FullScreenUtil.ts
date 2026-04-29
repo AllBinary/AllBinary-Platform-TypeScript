@@ -61,7 +61,7 @@ export class FullScreenUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FullScreenUtil.instance;
     
 }
 
@@ -71,7 +71,7 @@ export class FullScreenUtil
     public initOnRun(fullScreenInterface: Canvas, commandListener: CommandListener){
     //var fullScreenInterface = fullScreenInterface
     //var commandListener = commandListener
-fullScreenInterface =  as RunnableCanvasfullScreenInterfacefullScreenInterface
+fullScreenInterface = fullScreenInterfacefullScreenInterface as RunnableCanvas
 fullScreenInterface.
                     waitOnNotify(0);
     
@@ -155,7 +155,7 @@ var isFullScreen = isFullScreen
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isScreenChange(fullScreenInterface!.isFullScreenMode());;
+                        return this.isScreenChange(fullScreenInterface!.isFullScreenMode());;
     
 }
 

@@ -134,7 +134,7 @@ export class StaticPagesRequestHelper extends AbContext implements TagHelperInte
     private searchParams: SearchParams
 
     private xslFile: string
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -142,9 +142,9 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
-this.xslFile=  as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);;
+this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
     
 this.getFormData();
     
@@ -186,11 +186,11 @@ this.searchParams= new SearchParams(this.request);
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody);
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
@@ -240,7 +240,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
     
 
     var searchRequest: SearchRequest = new SearchRequest(
-                            null, this.searchParams, xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());
+                            null, this.searchParams, this.xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());
 ;
     
 

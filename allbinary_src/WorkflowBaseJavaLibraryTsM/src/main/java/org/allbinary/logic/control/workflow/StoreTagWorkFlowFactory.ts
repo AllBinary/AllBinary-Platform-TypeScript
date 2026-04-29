@@ -78,7 +78,7 @@ export class StoreTagWorkFlowFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return StoreTagWorkFlowFactory.instance;
     
 }
 
@@ -92,14 +92,14 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap, pageContext: PageContext): StoreWorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): StoreWorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var propertiesHashMap = propertiesHashMap
     //var pageContext = pageContext
 
         try {
             
-    var workFlowClassName: string =  as StringpropertiesHashMap!.get(DynamicObjectData.NAME);;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
 ;
     
 
@@ -139,15 +139,15 @@ classes[0]= propertiesHashMap!constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
-params[0]=  as ObjectpropertiesHashMap;
+params[0]= propertiesHashMap as Object;
     
-params[1]=  as ObjectpageContext;
+params[1]= pageContext as Object;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as StoreWorkFlowInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params);;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params); as StoreWorkFlowInterface;
     
 
                 //: 
@@ -158,7 +158,7 @@ params[1]=  as ObjectpageContext;
                         
                                     {
                                     
-    var workFlowClassName: string =  as StringpropertiesHashMap!.get(DynamicObjectData.NAME);;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
 ;
     
 
@@ -197,7 +197,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string =  as StringpropertiesHashMap!.get(DynamicObjectData.NAME);;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
 ;
     
 

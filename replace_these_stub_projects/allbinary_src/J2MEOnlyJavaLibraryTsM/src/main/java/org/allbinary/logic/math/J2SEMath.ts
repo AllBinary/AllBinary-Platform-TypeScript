@@ -49,7 +49,7 @@ export class J2SEMath
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return J2SEMath.instance;
     
 }
 
@@ -60,7 +60,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundvalue;
+                        return Math.round(value);
     
 }
 

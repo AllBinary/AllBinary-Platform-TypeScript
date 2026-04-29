@@ -79,7 +79,7 @@ public constructor (document: Document){
                     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
                     var hashMap = hashMap
 
@@ -160,7 +160,7 @@ styleNode!.appendChild(new ColorsView().
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface =  as DomNodeInterfacecssStyleElementVector!.get(i);;
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i); as DomNodeInterface;
 ;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));

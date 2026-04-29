@@ -76,17 +76,17 @@ export class ImageCacheBase
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    readonly hashtable: Hashtable = new Hashtable();
+    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     readonly SIZE: number = 128;
 
-    readonly widths: number[] = new Array(SIZE);
+    readonly widths: number[] = new Array(this.SIZE);
 
-    readonly heights: number[] = new Array(SIZE);
+    readonly heights: number[] = new Array(this.SIZE);
 
-    readonly listOfList: BasicArrayList[] = new Array(SIZE);
+    readonly listOfList: BasicArrayList[] = new Array(this.SIZE);
 
-    readonly availableListOfList: BasicArrayList[] = new Array(SIZE);
+    readonly availableListOfList: BasicArrayList[] = new Array(this.SIZE);
 
     volume: number = 0;
 
@@ -146,7 +146,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ImageimageCanBeNull;
+                        return imageCanBeNull as Image;
     
 }
 
@@ -238,7 +238,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Imagelist.removeAt(list.size() -1);;
+                        return list.removeAt(list.size() -1); as Image;
     
 
                                     }
@@ -372,12 +372,12 @@ stringBuffer!.appendint(totalAvailable);
 }
 
 
-    public getHashtableP(): Hashtable{
+    public getHashtableP(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 

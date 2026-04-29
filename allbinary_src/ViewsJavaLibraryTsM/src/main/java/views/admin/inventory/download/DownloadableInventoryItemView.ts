@@ -121,7 +121,7 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
 
     downloadableItem: DownloadableItem
 
-    private requestHashMap: HashMap
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -129,7 +129,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -143,7 +143,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -153,7 +153,7 @@ this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE_ID;
+                        return DownloadableInventoryItemView.TYPE_ID;
     
 }
 
@@ -164,7 +164,7 @@ this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
 this.setRequestHashMap(new MultipartRequestParams(this.request).
                             toHashMap());
     
-this.id=  as Stringthis.getRequestHashMap()!.get(BasicItemData.ID);;
+this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as String;
     
 }
 
@@ -342,19 +342,19 @@ stringBuffer!.append(filePathData!.SEPARATOR);
 }
 
 
-    setRequestHashMap(requestHashMap: HashMap){
+    setRequestHashMap(requestHashMap: HashMap<any, any>){
 var requestHashMap = requestHashMap
 this.requestHashMap= requestHashMap;
     
 }
 
 
-    public getRequestHashMap(): HashMap{
+    public getRequestHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return requestHashMap;
+                        return this.requestHashMap;
     
 }
 
@@ -364,7 +364,7 @@ this.requestHashMap= requestHashMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return downloadableItem;
+                        return this.downloadableItem;
     
 }
 

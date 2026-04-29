@@ -99,7 +99,7 @@ var base = base
 
         try {
             
-    var fileAbPath: AbPath =  as AbPathnew AbFilePath(this.path +AbPathData.getInstance()!.SEPARATOR +href);
+    var fileAbPath: AbPath = new AbFilePath(this.path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
 ;
     
 
@@ -147,7 +147,7 @@ var base = base
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return path;
+                        return this.path;
     
 }
 

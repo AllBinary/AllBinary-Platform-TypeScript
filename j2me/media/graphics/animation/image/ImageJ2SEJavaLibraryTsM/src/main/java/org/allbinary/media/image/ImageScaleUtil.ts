@@ -70,7 +70,7 @@ export class ImageScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageScaleUtil.instance;
     
 }
 
@@ -140,13 +140,13 @@ private constructor (){
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this.constructor.name.toString()!, Math.round(width *scaleX), Math.round(height *scaleY));
+                                    image= imageCache!.get(this.constructor.name.toString()!, Math.round((width *scaleX)), Math.round((height *scaleY)));
     
 
                                     }
                                 
                         else {
-                            image= imageCache!.get("createImage", Math.round(width *scaleX), Math.round(height *scaleY));
+                            image= imageCache!.get("createImage", Math.round((width *scaleX)), Math.round((height *scaleY)));
     
 
                         }

@@ -66,7 +66,7 @@ export class GameKeyEventFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameKeyEventFactory.instance;
     
 }
 
@@ -79,7 +79,7 @@ export class GameKeyEventFactory
 
     private readonly MAX_SOURCES: number = 4;
 
-    private ARRAY: GameKeyEvent[][] = Array(MAX_SOURCES) { arrayOfNulls<GameKeyEvent?>(InputFactory.getInstance()!.MAX) }
+    private ARRAY: GameKeyEvent[][] = Array(this.MAX_SOURCES) { arrayOfNulls<GameKeyEvent?>(InputFactory.getInstance()!.MAX) }
                                                             ;
 private constructor (){
 

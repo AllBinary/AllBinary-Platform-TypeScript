@@ -58,16 +58,16 @@ export class MyFont
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MyFont.instance;
     
 }
 
 
     private readonly defaultFont: Font = Font.getDefaultFont()!;
 
-    public DEFAULT_CHAR_HEIGHT: number = defaultFont!.getHeight()!;
+    public DEFAULT_CHAR_HEIGHT: number = this.defaultFont!.getHeight()!;
 
-    private DEFAULT_CHAR_WIDTH: number = defaultFont!.charWidth('C')!;
+    private DEFAULT_CHAR_WIDTH: number = this.defaultFont!.charWidth('C')!;
 private constructor (){
 
             super();
@@ -75,7 +75,7 @@ private constructor (){
 
 
     public update(){
-this.DEFAULT_CHAR_HEIGHT= defaultFont!.getHeight();
+this.DEFAULT_CHAR_HEIGHT= this.defaultFont!.getHeight();
     
 this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
     
@@ -87,7 +87,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DEFAULT_CHAR_WIDTH;
+                        return this.DEFAULT_CHAR_WIDTH;
     
 }
 
@@ -120,7 +120,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.stringWidth(string);;
+                        return this.defaultFont!.stringWidth(string);;
     
 }
 
@@ -130,7 +130,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.getSize();;
+                        return this.defaultFont!.getSize();;
     
 }
 
@@ -141,7 +141,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.charWidth(aChar);;
+                        return this.defaultFont!.charWidth(aChar);;
     
 }
 
@@ -154,7 +154,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultFont!.charsWidth(charArray, offset, length);;
+                        return this.defaultFont!.charsWidth(charArray, offset, length);;
     
 }
 

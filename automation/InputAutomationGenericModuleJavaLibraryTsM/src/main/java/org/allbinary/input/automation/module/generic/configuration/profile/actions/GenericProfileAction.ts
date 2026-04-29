@@ -129,7 +129,7 @@ this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericPr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -141,9 +141,9 @@ this.name= name;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(GenericProfileActionData.NAME, this.name);
@@ -183,7 +183,7 @@ node.appendChild(getGenericProfileActionScript()!.toXmlNode(document));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfileActionScript;
+                        return this.genericProfileActionScript;
     
 }
 

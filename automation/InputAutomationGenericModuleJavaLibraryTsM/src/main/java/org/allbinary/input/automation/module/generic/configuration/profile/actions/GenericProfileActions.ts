@@ -123,7 +123,7 @@ var name = name
 
     private actionsDefaultListModelHelper: DefaultListModelHelper
 
-    private hashMap: HashMap
+    private hashMap: HashMap<any, any>
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string){
 
             super();
@@ -174,7 +174,7 @@ this.setGenericProfileActionsJPanel(genericProfileActionsJPanel);
     
 this.actionsDefaultListModelHelper= new DefaultListModelHelper();
     
-this.setHashMap(new HashMap());
+this.setHashMap(new HashMap<any, any>());
     
 }
 
@@ -183,7 +183,7 @@ this.setHashMap(new HashMap());
             
     public save(){
 
-    var idFile: FileOutputStream = new FileOutputStream(DEFAULT_PROFILE_ACTIONS_PATH +getName() +".xml");
+    var idFile: FileOutputStream = new FileOutputStream(GenericProfileActions.DEFAULT_PROFILE_ACTIONS_PATH +getName() +".xml");
 ;
     
 
@@ -199,7 +199,7 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
             
     load(){
 
-    var file: File = getFile(getName())!;
+    var file: File = GenericProfileActions.getFile(getName())!;
 ;
     
 
@@ -362,7 +362,7 @@ var string = string
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GenericProfileActionthis.getHashMap()!.get(string as Object);;
+                        return this.getHashMap()!.get(string as Object); as GenericProfileAction;
     
 }
 
@@ -401,9 +401,9 @@ this.save();
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
@@ -447,11 +447,11 @@ var document = document
 index < size; index++)
         {
 
-    var nextActionName: string =  as StringactionNameArray[index]!;
+    var nextActionName: string = actionNameArray[index]! as String;
 ;
     
 
-    var nextGenericProfileAction: GenericProfileAction =  as GenericProfileActionthis.getAction(nextActionName);;
+    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName); as GenericProfileAction;
 ;
     
 node.appendChild(nextGenericProfileAction!.toXmlNode(document));
@@ -494,7 +494,7 @@ document.appendChild(node);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfileActionsJPanel;
+                        return this.genericProfileActionsJPanel;
     
 }
 
@@ -506,17 +506,17 @@ this.genericProfileActionsJPanel= genericProfileActionsJPanel;
 }
 
 
-    public getHashMap(): HashMap{
+    public getHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap;
+                        return this.hashMap;
     
 }
 
 
-    public setHashMap(hashMap: HashMap){
+    public setHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 this.hashMap= hashMap;
     
@@ -528,7 +528,7 @@ this.hashMap= hashMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

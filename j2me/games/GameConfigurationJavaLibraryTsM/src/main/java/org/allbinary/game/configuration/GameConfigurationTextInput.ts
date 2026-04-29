@@ -51,7 +51,7 @@ export class GameConfigurationTextInput
          {
         
 
-    private hashtable: Hashtable = new Hashtable();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
 
@@ -60,11 +60,11 @@ export class GameConfigurationTextInput
     public static update(textField: TextField){
 var textField = textField
 
-    var anyType: any =  as ObjecttextField!.getLabel();;
+    var anyType: any = textField!.getLabel(); as Object;
 ;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput =  as GameConfigurationTextInputhashtable.get(anyType as Object);;
+    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType as Object); as GameConfigurationTextInput;
 ;
     
 gameConfigurationTextInput!.setText(textField!.getString());
@@ -72,12 +72,12 @@ gameConfigurationTextInput!.setText(textField!.getString());
 }
 
 
-    public static getHashtable(): Hashtable{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return GameConfigurationTextInput.hashtable;
     
 }
 
@@ -94,7 +94,7 @@ this.setText(text);
     
 this.setLabel(label);
     
-hashtable.put(this.getLabel(), this);
+GameConfigurationTextInput.hashtable.put(this.getLabel(), this);
     
 }
 
@@ -111,7 +111,7 @@ this.text= text;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return text;
+                        return this.text;
     
 }
 
@@ -128,7 +128,7 @@ this.label= label;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return label;
+                        return this.label;
     
 }
 

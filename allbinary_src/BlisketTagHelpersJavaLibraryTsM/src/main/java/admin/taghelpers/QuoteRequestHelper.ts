@@ -82,13 +82,13 @@ export class QuoteRequestHelper extends ModifyTable {
     private storeFrontInterface: StoreFrontInterface
 
     private quoteRequest: QuoteRequest
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var request: HttpServletRequest =  as HttpServletRequestpageContext!.getRequest();;
+    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
@@ -96,7 +96,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
@@ -193,7 +193,7 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
 
         try {
             
-    var values: HashMap = this.quoteRequest!.toHashMap()!;
+    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;
 ;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values);

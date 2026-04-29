@@ -61,7 +61,7 @@ export class UserEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as UserEntitynew org.allbinary.data.tables.user.UserEntity();
+                        return new org.allbinary.data.tables.user.UserEntity() as UserEntity;
     
 
                 //: 

@@ -61,6 +61,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PressGameKeyEventListenerInterface } from "./PressGameKeyEventListenerInterface.js";
+
 export class PressGameKeyEventHandler extends BasicEventHandler {
         
 
@@ -129,10 +131,10 @@ var eventObject = eventObject
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
-playerGameInput!.onPressGameKeyEvent( as GameKeyEventeventObject);
+playerGameInput!.onPressGameKeyEvent(eventObject as GameKeyEvent);
     
 
                 //: 
@@ -155,10 +157,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = ( as PressGameKeyEventListenerInterfaceeventListenerInterface);
+    var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);
 ;
     
-pressGameKeyEventListenerInterface!.onPressGameKeyEvent( as GameKeyEventeventObject);
+pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEvent);
     
 }
 

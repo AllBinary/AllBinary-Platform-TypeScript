@@ -82,9 +82,9 @@ public constructor (width: number, height: number){
             super();
         var width = width
 var height = height
-setLayerWidth(width);
+this.setLayerWidth(width);
     
-setLayerHeight(height);
+this.setLayerHeight(height);
     
 }
 
@@ -130,7 +130,7 @@ this.z += dz;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 
@@ -140,7 +140,7 @@ this.z += dz;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 
@@ -150,7 +150,7 @@ this.z += dz;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return z;
+                        return this.z;
     
 }
 
@@ -160,7 +160,7 @@ this.z += dz;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return width;
+                        return this.width;
     
 }
 
@@ -170,7 +170,7 @@ this.z += dz;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return height;
+                        return this.height;
     
 }
 
@@ -197,7 +197,7 @@ this.visible= visible;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return visible;
+                        return this.visible;
     
 }
 

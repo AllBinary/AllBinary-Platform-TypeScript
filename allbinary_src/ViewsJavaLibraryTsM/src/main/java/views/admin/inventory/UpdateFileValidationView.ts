@@ -125,13 +125,13 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
                         if(command == 
                                     null
-                                 || command.compareTo(UPDATEPRODUCT) != 0)
+                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -247,7 +247,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemanyType;
+    var fileItem: FileItem = anyType as FileItem;
 ;
     
 
@@ -335,13 +335,13 @@ var document = document
 ;
     
 
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
                         if(command == 
                                     null
-                                 || command.compareTo(UPDATEPRODUCT) != 0)
+                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -361,7 +361,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
 ;
     
 
-    var fullCategory: string =  as StringURLGLOBALS.getWebappPath(); +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
+    var fullCategory: string = URLGLOBALS.getWebappPath(); as String +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
 ;
     
 
@@ -410,7 +410,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemanyType;
+    var fileItem: FileItem = anyType as FileItem;
 ;
     
 

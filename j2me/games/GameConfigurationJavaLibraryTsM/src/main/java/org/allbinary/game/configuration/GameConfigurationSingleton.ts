@@ -60,20 +60,20 @@ export class GameConfigurationSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return GameConfigurationSingleton.SINGLETON;
     
 }
 
 
     private list: BasicArrayList
 
-    private hashtable: Hashtable
+    private hashtable: Hashtable<any, any>
 private constructor (){
 
             super();
         this.list= new BasicArrayListD();
     
-this.hashtable= new Hashtable();
+this.hashtable= new Hashtable<any, any>();
     
 }
 
@@ -84,7 +84,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GameConfigurationthis.hashtable.get(name as Object);;
+                        return this.hashtable.get(name as Object); as GameConfiguration;
     
 }
 
@@ -94,7 +94,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 
@@ -106,7 +106,7 @@ this.list.add(gameConfiguration);
 }
 
 
-    public getHashtable(): Hashtable{
+    public getHashtable(): Hashtable<any, any>{
 
 
 

@@ -80,11 +80,11 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
     var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;
 ;
     
-this.accumulatedX= Math.round(this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled());
+this.accumulatedX= Math.round((this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled()));
     
-this.accumulatedY= Math.round(this.accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled());
+this.accumulatedY= Math.round((this.accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled()));
     
-this.accumulatedZ= Math.round(this.accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled());
+this.accumulatedZ= Math.round((this.accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled()));
     
 layer.moveDXYZ(this.accumulatedX /this.factorValue, this.accumulatedY /this.factorValue, this.accumulatedZ /this.factorValue);
     

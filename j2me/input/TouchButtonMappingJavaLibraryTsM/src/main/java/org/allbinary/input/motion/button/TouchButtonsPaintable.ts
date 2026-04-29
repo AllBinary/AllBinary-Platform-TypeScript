@@ -54,6 +54,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
+import { TouchButton } from "./TouchButton.js";
+
 export class TouchButtonsPaintable extends Paintable {
         
 
@@ -95,7 +97,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, thi
     var index: number = list.size()!;
 --index >= 0; )
         {
-touchButton=  as TouchButtonlist.objectArray[index]!;
+touchButton= list.objectArray[index]! as TouchButton;
     
 touchButton!.paint(graphics);
     
@@ -109,7 +111,7 @@ touchButton!.paint(graphics);
     var index: number = list.size()!;
 --index >= 0; )
         {
-touchButton=  as TouchButtonlist.objectArray[index]!;
+touchButton= list.objectArray[index]! as TouchButton;
     
 touchButton!.paintHint(graphics);
     

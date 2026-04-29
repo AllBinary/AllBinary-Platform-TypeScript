@@ -84,9 +84,9 @@ export class CssElementsValidationFactory
     var index: number = 0;
 index < size; index++)
         {
-cssElementStyleNode=  as NodecssElementStyleNodeList!.get(index);;
+cssElementStyleNode= cssElementStyleNodeList!.get(index); as Node;
     
-cssValidationInterface=  as ValidationInterfaceCssElementValidationFactory.getInstance(cssElementStyleNode);;
+cssValidationInterface= CssElementValidationFactory.getInstance(cssElementStyleNode); as ValidationInterface;
     
 styles.add(cssValidationInterface);
     
@@ -101,7 +101,7 @@ styles.add(cssValidationInterface);
 }
 
 
-    public static getInstance(hashMap: HashMap): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): Vector{
     //var hashMap = hashMap
 
     var styles: Vector = new Vector();

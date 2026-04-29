@@ -51,12 +51,14 @@ import { NoTimeDelayHelper } from "../../../../org/allbinary/time/NoTimeDelayHel
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputProbability } from "./InputProbability.js";
+
 export class BasicProbabilityAIDataFactory
             extends Object
          {
         
 
-    public getInstance(): Hashtable{
+    public getInstance(): Hashtable<any, any>{
 
     var likelyhoodIntegerArray: number[][] = Array(Canvas.KEY_NUM9 +1) { arrayOfNulls<Integer?>(2) }
                                                             ;

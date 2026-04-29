@@ -134,7 +134,7 @@ var value = value
     public getCampaignsInStore(storeName: string): AdvertisementCampaignsInterface{
 var storeName = storeName
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -160,7 +160,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMaphashMapVector!.get(index as Object);;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -169,7 +169,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    vector.add( as AdvertisementCampaignInterfacenew AdvertisementCampaign(hashMap));
+                                    vector.add(new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface);
     
 
                                     }
@@ -180,7 +180,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AdvertisementCampaignsInterfacenew AdvertisementCampaigns(vector);
+                        return new AdvertisementCampaigns(vector) as AdvertisementCampaignsInterface;
     
 }
 
@@ -189,7 +189,7 @@ index < size; index++)
 var storeName = storeName
 var name = name
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -197,7 +197,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -210,7 +210,7 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AdvertisementCampaignInterfacenew AdvertisementCampaign(hashMap);
+                        return new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface;
     
 
                                     }
@@ -228,9 +228,9 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.getInstance()!.ID,  as StringupdatedValues!.get(EntryData.getInstance()!.getInstance()!.ID), updatedValues);
+super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as String, updatedValues);
     
 }
 

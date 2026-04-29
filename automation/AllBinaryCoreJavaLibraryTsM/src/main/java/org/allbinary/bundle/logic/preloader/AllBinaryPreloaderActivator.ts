@@ -75,7 +75,7 @@ export class AllBinaryPreloaderActivator
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return context;
+                        return AllBinaryPreloaderActivator.context;
     
 }
 
@@ -121,18 +121,18 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: Hashtable = new Hashtable();
+    var properties: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 
-    var serviceRegistration: ServiceRegistration = context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;
+    var serviceRegistration: ServiceRegistration = AllBinaryPreloaderActivator.context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;
 ;
     
 
     var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
 ;
     
-serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME);
+serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_REGISTRY_NAME);
     
 
                         if(serviceReference == 

@@ -100,7 +100,7 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
     private firingDistance: number= 0
 
     isFollowLimitedByTerrain: boolean = false;
-public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -224,7 +224,7 @@ super.processKeyAI(Canvas.KEY_NUM1);
     var index: number = 0;
 index < size; index++)
         {
-lastTrackingEvent=  as TrackingEventthis.trackingList!.get(0);;
+lastTrackingEvent= this.trackingList!.get(0); as TrackingEvent;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
@@ -260,7 +260,7 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
-                                    directionCompositeInterface=  as DirectionCompositeInterfacethis.getOwnerLayerInterface();;
+                                    directionCompositeInterface= this.getOwnerLayerInterface(); as DirectionCompositeInterface;
     
 
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)

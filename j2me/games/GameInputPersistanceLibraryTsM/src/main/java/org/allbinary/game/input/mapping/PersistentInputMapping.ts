@@ -229,7 +229,7 @@ this.inputPersistance!.loadAll(abeClientInformation);
 index < size; index++)
         {
 
-    var hashtable: Hashtable =  as Hashtablelist.objectArray[index]!;
+    var hashtable: Hashtable<any, any> = list.objectArray[index]! as Hashtable<any, any>;
 ;
     
 
@@ -240,11 +240,11 @@ index < size; index++)
         while(enumeration.hasMoreElements())
         {
 
-    var mappedToInput: Input =  as Inputenumeration.nextElement()!;;
+    var mappedToInput: Input = enumeration.nextElement()!; as Input;
 ;
     
 
-    var gameActionInput: Input =  as Inputhashtable.get(mappedToInput as Object);;
+    var gameActionInput: Input = hashtable.get(mappedToInput as Object); as Input;
 ;
     
 totalMappedTo++;
@@ -284,7 +284,7 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputMappingEventListenerInterface;
+                        return this.inputMappingEventListenerInterface;
     
 }
 
@@ -294,7 +294,7 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputMapping;
+                        return this.inputMapping;
     
 }
 

@@ -261,7 +261,7 @@ this.setRelease(value.concatToString()
                             
 }
 
-this.setKeyArray( as Array<Integer?>vector.toArray(new Array(vector.length)));
+this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
     
 
                                     }
@@ -388,7 +388,7 @@ this.setRelease(true);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return keyArray;
+                        return this.keyArray;
     
 }
 
@@ -416,7 +416,7 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getText(this.getKeyArray());;
+                        return this.getText(this.getKeyArray());;
     
 }
 
@@ -501,7 +501,7 @@ index++;
 }
 
 
-    var integerArray: number[] =  as Array<Integer?>vector.toArray(new Array(vector.length));;
+    var integerArray: number[] = vector.toArray(new Array(vector.length)); as Array<Integer?>;
 ;
     
 
@@ -513,9 +513,9 @@ index++;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

@@ -63,14 +63,14 @@ export class OSGIActivatorUtil
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
-OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable());
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable<any, any>());
     
 }
 
 
                 //@Throws(Error::class)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable){
+    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName

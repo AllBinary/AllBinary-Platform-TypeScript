@@ -104,7 +104,7 @@ var document = document
 index < size; index++)
         {
 
-    var userInterface: User =  as Userthis.userVector!.get(index);;
+    var userInterface: User = this.userVector!.get(index); as User;
 ;
     
 
@@ -162,7 +162,7 @@ usersNode!.appendChild(node);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

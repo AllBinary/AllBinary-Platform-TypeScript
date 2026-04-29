@@ -69,7 +69,7 @@ export class ImageRotationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageRotationUtil.instance;
     
 }
 
@@ -118,7 +118,7 @@ this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 canvas.concat(this.matrix);
     
-image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
     
 
 

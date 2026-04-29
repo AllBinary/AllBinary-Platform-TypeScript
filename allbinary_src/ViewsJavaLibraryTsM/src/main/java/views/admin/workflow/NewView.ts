@@ -86,10 +86,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
-this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation,  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(DynamicObjectData.NAME));
+this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, httpTransformInfoInterface!.getPropertiesHashMap()!.get(DynamicObjectData.NAME) as String);
     
 }
 

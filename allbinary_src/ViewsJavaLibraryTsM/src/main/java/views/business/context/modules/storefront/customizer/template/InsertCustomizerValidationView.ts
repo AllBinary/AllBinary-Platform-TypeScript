@@ -123,11 +123,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var requestHashMap: HashMap = new RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
                             toHashMap()!;
 ;
     
-this.viewName=  as StringrequestHashMap!.get(TransformInfoData.getInstance()!.NAME);;
+this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as String;
     
 }
 
@@ -198,7 +198,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo =  as TransformInfocomponentVector!.get(index);;
+    var transformInfo: TransformInfo = componentVector!.get(index); as TransformInfo;
 ;
     
 
@@ -340,7 +340,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig);
     
 
-    var updatedTransformInfoHashMap: HashMap = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
+    var updatedTransformInfoHashMap: HashMap<any, any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
 ;
     
 TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);

@@ -67,7 +67,7 @@ export class InventoryColumnUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InventoryColumnUtil.instance;
     
 }
 
@@ -101,11 +101,11 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMapvectorOfHashMaps!.get(index as Object);;
+    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index as Object); as HashMap<any, any>;
 ;
     
 
-    var categoryName: string =  as StringhashMap!.get(BasicItemData.CATEGORY);;
+    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY); as String;
 ;
     
 

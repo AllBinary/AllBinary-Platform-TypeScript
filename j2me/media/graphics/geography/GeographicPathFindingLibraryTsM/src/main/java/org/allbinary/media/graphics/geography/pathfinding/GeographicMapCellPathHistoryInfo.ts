@@ -63,7 +63,7 @@ export class GeographicMapCellPathHistoryInfo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return previousGeographicMapCellPosition;
+                        return this.previousGeographicMapCellPosition;
     
 }
 
@@ -80,7 +80,7 @@ this.previousGeographicMapCellPosition= previousGeographicMapCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return previousOnPathGeographicMapCellPosition;
+                        return this.previousOnPathGeographicMapCellPosition;
     
 }
 
@@ -97,7 +97,7 @@ this.previousOnPathGeographicMapCellPosition= previousOnPathGeographicMapCellPos
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return nextUnvisitedOnPathGeographicMapCellPosition;
+                        return this.nextUnvisitedOnPathGeographicMapCellPosition;
     
 }
 
@@ -114,7 +114,7 @@ this.nextUnvisitedOnPathGeographicMapCellPosition= nextUnvisitedOnPathGeographic
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return nextOnPathGeographicMapCellPosition;
+                        return this.nextOnPathGeographicMapCellPosition;
     
 }
 
@@ -131,7 +131,7 @@ this.nextOnPathGeographicMapCellPosition= nextOnPathGeographicMapCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return nextChosenOnPathGeographicMapCellPosition;
+                        return this.nextChosenOnPathGeographicMapCellPosition;
     
 }
 

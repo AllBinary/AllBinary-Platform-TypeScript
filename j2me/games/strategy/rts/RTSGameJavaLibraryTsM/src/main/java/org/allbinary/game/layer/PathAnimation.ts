@@ -155,7 +155,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -220,11 +220,11 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
                         }
                             
-geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index);;
+geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
     
 point= geographicMapCellPosition!.getMidPoint();
     
-geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index +1);;
+geographicMapCellPosition= list.get(index +1); as GeographicMapCellPosition;
     
 nextPoint= geographicMapCellPosition!.getMidPoint();
     

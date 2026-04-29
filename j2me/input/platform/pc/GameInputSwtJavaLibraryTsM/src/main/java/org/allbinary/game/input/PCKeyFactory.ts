@@ -59,7 +59,7 @@ export class PCKeyFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return PCKeyFactory.SINGLETON;
     
 }
 
@@ -200,13 +200,13 @@ export class PCKeyFactory
 
     public readonly DPAD_RIGHT: PCGameKey = new PCGameKey(39, CommonPhoneStrings.getInstance()!.RIGHT);
 
-    public readonly DPAD_UP2: PCGameKey = DPAD_UP;
+    public readonly DPAD_UP2: PCGameKey = this.DPAD_UP;
 
-    public readonly DPAD_DOWN2: PCGameKey = DPAD_DOWN;
+    public readonly DPAD_DOWN2: PCGameKey = this.DPAD_DOWN;
 
-    public readonly DPAD_LEFT2: PCGameKey = DPAD_LEFT;
+    public readonly DPAD_LEFT2: PCGameKey = this.DPAD_LEFT;
 
-    public readonly DPAD_RIGHT2: PCGameKey = DPAD_RIGHT;
+    public readonly DPAD_RIGHT2: PCGameKey = this.DPAD_RIGHT;
 
     public readonly COMMA: PCGameKey = new PCGameKey(44, "COMMA");
 

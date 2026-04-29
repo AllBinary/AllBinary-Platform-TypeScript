@@ -47,7 +47,7 @@ export interface PaymentGatewayInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap): PaymentGatewayInterface
+    public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface
 
 }
                 

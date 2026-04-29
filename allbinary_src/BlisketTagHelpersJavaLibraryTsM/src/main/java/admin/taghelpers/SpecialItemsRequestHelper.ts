@@ -97,12 +97,12 @@ export class SpecialItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -129,9 +129,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 }
 
 
-    getHashMap(): HashMap{
+    getHashMap(): HashMap<any, any>{
 
-    var values: HashMap = new HashMap();
+    var values: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 values.put(BasicItemData.ID, this.id);
@@ -307,7 +307,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
 ;
     
 
-    var values: HashMap = this.getHashMap()!;
+    var values: HashMap<any, any> = this.getHashMap()!;
 ;
     
 SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update(values);

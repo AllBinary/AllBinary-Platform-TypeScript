@@ -98,7 +98,7 @@ this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -118,7 +118,7 @@ this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return helpSet;
+                        return this.helpSet;
     
 }
 

@@ -105,14 +105,14 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, 0);
+                        return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, 0) as CategoryInterface;
     
 
                 //: 
@@ -147,14 +147,14 @@ var categoryAbPath = categoryAbPath
 ;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, categoryAbPath) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level);
+                        return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -185,7 +185,7 @@ var node = node
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreThemeCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
 ;
     
 
@@ -200,7 +200,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, node, categoryPropertiesFactoryInterface, level);
+                        return new StoreThemeCategory(this.transformInfoInterface, node, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -232,14 +232,14 @@ var level = level
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPath);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level);
+                        return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -272,14 +272,14 @@ var categoryPath = categoryPath
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPath);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPath) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -311,14 +311,14 @@ var level = level
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level);
+                        return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -351,14 +351,14 @@ var node = node
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -384,20 +384,20 @@ var node = node
 }
 
 
-    public getInstance(categoryPropertiesHashMap: HashMap, level: number): CategoryInterface{
+    public getInstance(categoryPropertiesHashMap: HashMap<any, any>, level: number): CategoryInterface{
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 var level = level
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPropertiesHashMap);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level);
+                        return new StoreThemeCategory(this.transformInfoInterface, categoryPropertiesFactoryInterface, level) as CategoryInterface;
     
 
                 //: 
@@ -423,21 +423,21 @@ var level = level
 }
 
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap): CategoryInterface{
+    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPropertiesHashMap);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new StoreThemeCategory(this.transformInfoInterface, rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 

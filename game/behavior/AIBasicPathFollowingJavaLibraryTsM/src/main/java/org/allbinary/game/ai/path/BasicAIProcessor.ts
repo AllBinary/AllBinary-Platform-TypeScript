@@ -121,9 +121,9 @@ this.init();
     public init(){
 this.geographicMapCellPathHistoryInfo= new GeographicMapCellPathHistoryInfo();
     
-this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition( as GeographicMapCellPositiongeographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1));
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(this.geographicMapCellPositionBasicArrayList!.get(this.geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
     
-this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition( as GeographicMapCellPositiongeographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1));
+this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(this.geographicMapCellPositionBasicArrayList!.get(this.geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
     
 this.update();
     
@@ -145,14 +145,14 @@ var currentGeographicMapCellPosition = currentGeographicMapCellPosition
 ;
     
 
-    var geographicMapDirectionData: Direction = geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;
+    var geographicMapDirectionData: Direction = this.geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;
 ;
     
 
                         if(geographicMapDirectionData == DirectionFactory.getInstance()!.NOT_BORDERED_WITH)
                         
                                     {
-                                    geographicMapDirectionData= geographicMapDirectionUtil!.getDirectionFromCellPositionToCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition);
+                                    geographicMapDirectionData= this.geographicMapDirectionUtil!.getDirectionFromCellPositionToCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition);
     
 
                                     }
@@ -218,7 +218,7 @@ this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPositio
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -235,7 +235,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPathHistoryInfo;
+                        return this.geographicMapCellPathHistoryInfo;
     
 }
 
@@ -252,7 +252,7 @@ this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellHistory;
+                        return this.geographicMapCellHistory;
     
 }
 

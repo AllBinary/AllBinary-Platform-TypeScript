@@ -84,7 +84,7 @@ export class AbPath
 public constructor (){
 
             super();
-        init();
+        this.init();
     
 }
 
@@ -112,7 +112,7 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
                                     }
                                 
                         else {
-                            init();
+                            this.init();
     
 
                         }
@@ -142,7 +142,7 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
                                     }
                                 
                         else {
-                            init();
+                            this.init();
     
 
                         if(!stringValidationUtil!.isEmpty(name);)
@@ -196,7 +196,7 @@ this.hasSchema= false;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EMPTY_STRING;
+                        return this.EMPTY_STRING;
     
 }
 
@@ -248,7 +248,7 @@ var aPath = aPath
         {
 beginIndex++;
     
-numberOfSeps++;
+this.numberOfSeps++;
     
 
                         if(this.numberOfSeps > 2)
@@ -377,7 +377,7 @@ stringBuffer!.append(this.nameP);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return path;
+                        return this.path;
     
 }
 

@@ -68,9 +68,9 @@ this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType,
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
+this.geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
     
-geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent);
+this.geographicMapCellPositionEventHandler!.fireEvent(this.geographicMapCellPositionEvent);
     
 }
 
@@ -79,9 +79,9 @@ geographicMapCellPositionEventHandler!.fireEvent(geographicMapCellPositionEvent)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
-geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
+this.geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
     
-geographicMapCellPositionEventHandler!.fireRemoveEvent(geographicMapCellPositionEvent);
+this.geographicMapCellPositionEventHandler!.fireRemoveEvent(this.geographicMapCellPositionEvent);
     
 }
 

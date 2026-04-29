@@ -106,7 +106,7 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TrueTypeFontUtil.instance;
     
 }
 
@@ -227,7 +227,7 @@ paint.setTypeface(typeface);
     
 paint.setTextSize(this.realFontSize);
     
-paint.setAlpha(Math.roundbasicColor!.alpha);
+paint.setAlpha(Math.round(basicColor!.alpha));
     
 paint.setColor(basicColor!.toInt());
     
@@ -355,7 +355,7 @@ canvas.save();
     var image: Image = AndroidImmutableImage.create(bitmap)!;
 ;
     
-this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
 

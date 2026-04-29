@@ -75,7 +75,7 @@ export class InputMapping
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable = new Hashtable();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private readonly mappedList: BasicArrayList = new BasicArrayListD();
 protected constructor (){
@@ -264,17 +264,17 @@ this.hashtable.put(id, list);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicArrayListmappingInputCanBeNullList;
+                        return mappingInputCanBeNullList as BasicArrayList;
     
 }
 
 
-    public getHashtable(): Hashtable{
+    public getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 

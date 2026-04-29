@@ -93,7 +93,7 @@ export class RTSLayerCostAnimation extends Animation implements TechEventListene
 
     private readonly DOLLAR: string = "$";
 
-    private readonly adjustedCostX: number = myFont!.stringWidth(DOLLAR)!;
+    private readonly adjustedCostX: number = this.myFont!.stringWidth(this.DOLLAR)!;
 
     private readonly layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface
 public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface){

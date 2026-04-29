@@ -80,7 +80,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CacheableInterfacebuffers.removeAt(size -1);;
+                        return buffers.removeAt(size -1); as CacheableInterface;
     
 
                                     }
@@ -111,7 +111,7 @@ var usedList = usedList
 --index >= 0; )
         {
 
-    var anyType: CacheableInterface =  as CacheableInterfaceusedList!.objectArray[index]!;
+    var anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;
 ;
     
 this.add(anyType);
@@ -136,7 +136,7 @@ var usedList = usedList
 --index >= 0; )
         {
 
-    var list: BasicArrayListCacheable =  as BasicArrayListCacheableusedList!.objectArray[index]!;
+    var list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;
 ;
     
 

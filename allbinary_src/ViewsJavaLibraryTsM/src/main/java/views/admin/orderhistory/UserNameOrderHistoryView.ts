@@ -115,7 +115,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.userName= this.request.getParameter(UserData.USERNAME);
     
@@ -133,7 +133,7 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 
@@ -203,7 +203,7 @@ var document = document
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderReviewVector!.get(index);;
+    var orderHistory: OrderHistory = orderReviewVector!.get(index); as OrderHistory;
 ;
     
 

@@ -67,7 +67,7 @@ export interface AdvertisementSearchInterface {
 
     public getProductsPerPage(): number
 
-    public getSearchParams(): HashMap
+    public getSearchParams(): HashMap<any, any>
 
     public setCategory(advertisementCategoryInterface: AdvertisementCategoryInterface)
 
@@ -79,7 +79,7 @@ export interface AdvertisementSearchInterface {
 
     public setProductsPerPage(productsPerPage: number)
 
-    public setSearchParams(columnAndKeywordHashMap: HashMap)
+    public setSearchParams(columnAndKeywordHashMap: HashMap<any, any>)
 
 }
                 

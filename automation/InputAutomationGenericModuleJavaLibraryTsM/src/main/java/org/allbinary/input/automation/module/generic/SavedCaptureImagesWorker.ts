@@ -131,7 +131,7 @@ var thread = thread
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -192,7 +192,7 @@ this.logUtil!.putF("Loading Image File Path: " +filePath, this, this.commonStrin
     var bufferedImage: BufferedImage = ImageIO.read(file)!;
 ;
     
-index++;
+SavedCaptureImagesWorker.index++;
     
 CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     

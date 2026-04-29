@@ -80,7 +80,7 @@ this.frame= frame;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frame;
+                        return this.frame;
     
 }
 
@@ -97,7 +97,7 @@ this.frame= frame;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageComparisonResult;
+                        return this.imageComparisonResult;
     
 }
 

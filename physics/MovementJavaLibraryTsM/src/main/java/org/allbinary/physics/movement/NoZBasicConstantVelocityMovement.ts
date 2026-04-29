@@ -105,11 +105,11 @@ var otherAngle = otherAngle
 ;
     
 
-    var xVector: number = Math.round(this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
+    var xVector: number = Math.round((this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue));
 ;
     
 
-    var yVector: number = Math.round(this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
+    var yVector: number = Math.round((this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue));
 ;
     
 layer.moveDXYZ(xVector, yVector, 0);

@@ -79,8 +79,8 @@ export class TerrainPatrolAI extends PacePatrolAI {
 
     private readonly DOWN: Angle = AngleFactory.getInstance()!.DOWN;
 
-    private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(DOWN);
-public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+    private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(this.DOWN);
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                         //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
@@ -122,7 +122,7 @@ this.changeDirectionIfCliffReached();
 index < size; index++)
         {
 
-    var terrainEvent: TerrainEvent =  as TerrainEventlist.removeAt(index);;
+    var terrainEvent: TerrainEvent = list.removeAt(index); as TerrainEvent;
 ;
     
 

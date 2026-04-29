@@ -51,7 +51,7 @@ export class PlayerTypesFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return PlayerTypesFactory.SINGLETON;
     
 }
 

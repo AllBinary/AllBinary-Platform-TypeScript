@@ -91,8 +91,8 @@ public constructor (){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 pageContext!.getOut()!.print(result);
@@ -170,8 +170,8 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 pageContext!.getOut()!.print(result);

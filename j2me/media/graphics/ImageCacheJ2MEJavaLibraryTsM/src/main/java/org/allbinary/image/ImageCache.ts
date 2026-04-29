@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
@@ -224,7 +226,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream( as Stringkey)!;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
 ;
     
 

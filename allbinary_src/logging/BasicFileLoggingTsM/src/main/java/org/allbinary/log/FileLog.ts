@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { BufferedReader } from "../../../java/io/BufferedReader.js";
 
     
@@ -79,13 +81,13 @@ export class FileLog
 
     private static readonly fileName: string = .toCharArray();
 
-    private static readonly backupFileName: string = fileName!.concat(".bak")!;
+    private static readonly backupFileName: string = FileLog.fileName!.concat(".bak")!;
 
     private static readonly ORG_ALLBINARY: string = "org.allbinary: ";
 
     private firstTime: boolean = true;
 
-    private logFile: File = new File(logPath, fileName);
+    private logFile: File = new File(FileLog.logPath, FileLog.fileName);
 
     private logFileBak: File
 
@@ -97,19 +99,19 @@ export class FileLog
     public static createLogFile(): boolean{
 
         try {
-            logFile= new File(logPath, fileName);
+            FileLog.logFile= new File(logPath, fileName);
     
 
-                        if(!firstTime)
+                        if(!FileLog.firstTime)
                         
                                     {
-                                    fileOut= new BufferedWriter(new FileWriter(logFile));
+                                    FileLog.fileOut= new BufferedWriter(new FileWriter(logFile));
     
 
                                     }
                                 
                         else {
-                            firstTime= false;
+                            FileLog.firstTime= false;
     
 
     var raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");
@@ -117,7 +119,7 @@ export class FileLog
     
 raFile!.seek(raFile!.length());
     
-fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
+FileLog.fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
     
 
                         }
@@ -153,15 +155,15 @@ console.log("Error Creating Log: " +e);
     static createLogFileBackup(): boolean{
 
         try {
-            logFileBak= new File(logPath, new StringBuilder().
+            FileLog.logFileBak= new File(logPath, new StringBuilder().
                             append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.append(backupIndex)!.toString());
     
 
-        while(logFileBak!.isFile())
+        while(FileLog.logFileBak!.isFile())
         {
-backupIndex++;
+FileLog.backupIndex++;
     
-logFileBak= new File(logPath, new StringBuilder().
+FileLog.logFileBak= new File(logPath, new StringBuilder().
                             append(backupFileName)!.append(CommonSeps.getInstance()!.PERIOD)!.append(backupIndex)!.toString());
     
 }
@@ -195,7 +197,7 @@ tmpOut!.close();
     
 tmpIn!.close();
     
-logFile!.delete();
+FileLog.logFile!.delete();
     
 
 
@@ -229,7 +231,7 @@ var functionName = functionName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return put(specialMessage, anyType, functionName, 
+                        return FileLog.put(specialMessage, anyType, functionName, 
                             null);;
     
 }
@@ -244,10 +246,10 @@ var exception = exception
 
         try {
             
-                        if(firstTime == true)
+                        if(FileLog.firstTime == true)
                         
                                     {
-                                    createLogFileBackup();
+                                    FileLog.createLogFileBackup();
     
 
                         if(createLogFile() == false)
@@ -270,7 +272,7 @@ var exception = exception
 ;
     
 
-                        if(length > logLength)
+                        if(length > FileLog.logLength)
                         
                                     {
                                     
@@ -312,11 +314,11 @@ var exception = exception
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-fileOut!.write(message, 0, message.length);
+FileLog.fileOut!.write(message, 0, message.length);
     
-fileOut!.newLine();
+FileLog.fileOut!.newLine();
     
-fileOut!.flush();
+FileLog.fileOut!.flush();
     
 
 
@@ -348,7 +350,7 @@ fileOut!.flush();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return put(specialMessage, className, functionName, 
+                        return FileLog.put(specialMessage, className, functionName, 
                             null);;
     
 }
@@ -363,10 +365,10 @@ var functionName = functionName
 
         try {
             
-                        if(firstTime == true)
+                        if(FileLog.firstTime == true)
                         
                                     {
-                                    createLogFileBackup();
+                                    FileLog.createLogFileBackup();
     
 
                         if(createLogFile() == false)
@@ -389,7 +391,7 @@ var functionName = functionName
 ;
     
 
-                        if(length > logLength)
+                        if(length > FileLog.logLength)
                         
                                     {
                                     
@@ -422,11 +424,11 @@ var functionName = functionName
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-fileOut!.write(message, 0, message.length);
+FileLog.fileOut!.write(message, 0, message.length);
     
-fileOut!.newLine();
+FileLog.fileOut!.newLine();
     
-fileOut!.flush();
+FileLog.fileOut!.flush();
     
 
 
@@ -454,7 +456,7 @@ fileOut!.flush();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return logPath +fileName;
+                        return FileLog.logPath +FileLog.fileName;
     
 }
 

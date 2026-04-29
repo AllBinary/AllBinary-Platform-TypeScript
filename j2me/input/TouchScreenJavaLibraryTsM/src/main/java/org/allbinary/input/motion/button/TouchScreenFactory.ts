@@ -65,7 +65,7 @@ export class TouchScreenFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return TouchScreenFactory.SINGLETON;
     
 }
 
@@ -115,7 +115,7 @@ this.multiTouch= multiTouch;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multiTouch;
+                        return this.multiTouch;
     
 }
 
@@ -132,7 +132,7 @@ this.touch= touch;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touch;
+                        return this.touch;
     
 }
 
@@ -149,7 +149,7 @@ this.multiTouchDistinct= multiTouchDistinct;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return multiTouchDistinct;
+                        return this.multiTouchDistinct;
     
 }
 
@@ -166,7 +166,7 @@ this.touchScreenType= touchScreenType;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touchScreenType;
+                        return this.touchScreenType;
     
 }
 

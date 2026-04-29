@@ -65,7 +65,7 @@ var request = request
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PaymentInterfacenew org.allbinary.business.user.commerce.money.payment.Payment(request);
+                        return new org.allbinary.business.user.commerce.money.payment.Payment(request) as PaymentInterface;
     
 
                 //: 

@@ -121,7 +121,7 @@ this.init();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return operatingSystemInterface;
+                        return this.operatingSystemInterface;
     
 }
 
@@ -182,7 +182,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Stringthis.licenseServers!.objectArray[index]!;
+                        return this.licenseServers!.objectArray[index]! as String;
     
 }
 
@@ -197,13 +197,13 @@ var index = index
 }
 
 
-    public toHashtable(): Hashtable{
+    public toHashtable(): Hashtable<any, any>{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
 ;
     
 
-    var clientInfoHashtable: Hashtable = new Hashtable();
+    var clientInfoHashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
@@ -301,7 +301,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var newServerName: string =  as Stringlist.objectArray[index]!;
+    var newServerName: string = list.objectArray[index]! as String;
 ;
     
 
@@ -313,7 +313,7 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var nextOldServerName: string =  as Stringthis.licenseServers!.objectArray[index]!;
+    var nextOldServerName: string = this.licenseServers!.objectArray[index]! as String;
 ;
     
 
@@ -354,7 +354,7 @@ this.hardSale= hardSale;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hardSale;
+                        return this.hardSale;
     
 }
 

@@ -71,7 +71,7 @@ var otherAngle = otherAngle
 var weaponProperties = weaponProperties
 var scoreable = scoreable
 
-    var weaponLayer: WeaponLayer =  as WeaponLayersuper.getNextInstance();;
+    var weaponLayer: WeaponLayer = super.getNextInstance(); as WeaponLayer;
 ;
     
 weaponLayer!.initXYZ(x, y, z);

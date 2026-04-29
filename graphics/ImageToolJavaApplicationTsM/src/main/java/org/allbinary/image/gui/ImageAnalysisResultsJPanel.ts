@@ -51,6 +51,8 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { JTextField } from "./JTextField.js";
@@ -65,7 +67,7 @@ public constructor (imageAnalysisResultsArray: ImageAnalysisResults[]){
 
             super();
             //var imageAnalysisResultsArray = imageAnalysisResultsArray
-initComponents();
+this.initComponents();
     
 
     var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;

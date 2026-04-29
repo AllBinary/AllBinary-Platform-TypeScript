@@ -58,6 +58,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DestroyedEventListenerInterface } from "./DestroyedEventListenerInterface.js";
+
 export class DestroyedEventHandler extends BasicEventHandler {
         
 
@@ -129,10 +131,10 @@ var eventObject = eventObject
 
         try {
             
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.list.objectArray[index]!;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.list.objectArray[index]! as CollidableDestroyableDamageableLayer;
 ;
     
-collidableDestroyableDamageableLayer!.onDestroyed( as DestroyedEventeventObject);
+collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent);
     
 
                 //: 
@@ -155,10 +157,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var destroyedEventListenerInterface: DestroyedEventListenerInterface =  as DestroyedEventListenerInterfaceeventListenerInterface;
+    var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;
 ;
     
-destroyedEventListenerInterface!.onDestroyed( as DestroyedEventeventObject);
+destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent);
     
 }
 

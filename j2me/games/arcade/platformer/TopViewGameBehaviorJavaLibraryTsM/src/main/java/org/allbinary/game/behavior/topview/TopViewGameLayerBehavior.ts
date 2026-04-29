@@ -126,7 +126,7 @@ velocityProperties!.getVelocityYBasicDecimalP()!.addint(acceleration2);
     
 velocityProperties!.limitXYToForwardAndReverseMaxVelocity();
     
-gravityActionIndex++;
+this.gravityActionIndex++;
     
 
                                     }

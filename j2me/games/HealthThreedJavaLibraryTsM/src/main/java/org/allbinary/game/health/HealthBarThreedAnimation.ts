@@ -219,7 +219,7 @@ this.updateSize();
     //var y = y
     //var z = z
 
-    var openGLESGraphics: OpenGLESGraphics =  as OpenGLESGraphicsgraphics;
+    var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;
 ;
     
 

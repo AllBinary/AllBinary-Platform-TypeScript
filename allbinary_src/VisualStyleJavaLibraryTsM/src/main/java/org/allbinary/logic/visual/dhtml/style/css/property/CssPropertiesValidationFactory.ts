@@ -86,7 +86,7 @@ index < nodeList!.getLength(); index++)
                         
                                     {
                                     
-    var cssPropertyValidationInterface: ValidationInterface =  as ValidationInterfaceCssPropertyValidationFactory.getInstance(node);;
+    var cssPropertyValidationInterface: ValidationInterface = CssPropertyValidationFactory.getInstance(node); as ValidationInterface;
 ;
     
 propertiesVector!.add(cssPropertyValidationInterface);
@@ -105,7 +105,7 @@ propertiesVector!.add(cssPropertyValidationInterface);
 }
 
 
-    public static getInstance(hashMap: HashMap): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): Vector{
 var hashMap = hashMap
 
     var styles: Vector = new Vector();

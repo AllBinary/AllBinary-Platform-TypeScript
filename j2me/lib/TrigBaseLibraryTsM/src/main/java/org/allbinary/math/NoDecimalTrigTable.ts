@@ -58,6 +58,8 @@ import { AngleFactory } from "./AngleFactory.js";
 
 import { PositionStrings } from "./PositionStrings.js";
 
+import { Angle } from "./Angle.js";
+
 export class NoDecimalTrigTable
             extends Object
          {
@@ -70,7 +72,7 @@ export class NoDecimalTrigTable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return NoDecimalTrigTable.instance;
     
 }
 
@@ -86,7 +88,7 @@ private constructor (){
 
             super();
         
-    var TOTAL_ANGLE: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
+    var TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
     
 
@@ -2281,7 +2283,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return noDecimalCos[angle]!;
+                        return this.noDecimalCos[angle]!;
     
 }
 
@@ -2292,7 +2294,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return noDecimalTan[angle]!;
+                        return this.noDecimalTan[angle]!;
     
 }
 
@@ -2548,19 +2550,19 @@ var targetY = targetY
 PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME);
     
 
-    var targetX2: number = Math.round -targetX;
+    var targetX2: number = Math.round( -targetX);
 ;
     
 
-    var targetY2: number = Math.round -targetY;
+    var targetY2: number = Math.round( -targetY);
 ;
     
 
-    var screenX2: number = Math.round -screenX;
+    var screenX2: number = Math.round( -screenX);
 ;
     
 
-    var screenY2: number = Math.round -screenY;
+    var screenY2: number = Math.round( -screenY);
 ;
     
 
@@ -2617,7 +2619,7 @@ index2 < dy.length; index2++)
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!);
     
-angle= angleFactory!.getAt(Math.roundangleOfTarget);
+angle= angleFactory!.getAt(Math.round(angleOfTarget));
     
 stringMaker!.delete(0, stringMaker!.length());
     

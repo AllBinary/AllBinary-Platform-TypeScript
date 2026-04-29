@@ -95,7 +95,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     var index: number = 0;
 index < size; index++)
         {
-animationInterfaceArray[index]=  as IndexedAnimationthis.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId);;
+animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId); as IndexedAnimation;
     
 }
 
@@ -124,7 +124,7 @@ animationInterfaceArray[index]=  as IndexedAnimationthis.basicAnimationInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicAnimationInterfaceFactoryInterfaceArray;
+                        return this.basicAnimationInterfaceFactoryInterfaceArray;
     
 }
 

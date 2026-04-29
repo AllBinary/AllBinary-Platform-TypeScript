@@ -111,7 +111,7 @@ export class PaymentTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PaymentTypeUtil.instance;
     
 }
 
@@ -195,7 +195,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: PaymentType =  as PaymentTypethis.paymentTypeVector!.get(i);;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
 ;
     
 
@@ -253,7 +253,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 stringBuffer!.append(this.PAYMENTGATEWAYFILEPATHSTRING);
     
 
-    var abPath: AbPath =  as AbPathnew AbPath(stringBuffer!.toString(), SHIPPINGMETHODSFILENAME);
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
 ;
     
 
@@ -381,7 +381,7 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: PaymentType =  as PaymentTypethis.paymentTypeVector!.get(i);;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
 ;
     
 

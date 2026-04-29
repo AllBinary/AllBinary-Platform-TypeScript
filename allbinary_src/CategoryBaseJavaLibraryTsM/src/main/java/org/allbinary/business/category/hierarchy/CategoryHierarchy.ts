@@ -90,14 +90,14 @@ this.setParent(parentCategoryInterface);
     
 }
 
-public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap){
+public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 
-    var levelString: string = StringUtil.getInstance()!.getNonNull( as StringcategoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL))!;
+    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as String)!;
 ;
     
 this.level= Integer.valueOf(levelString)!.toInt();

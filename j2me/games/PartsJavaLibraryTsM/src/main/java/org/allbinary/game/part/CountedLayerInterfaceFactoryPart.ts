@@ -108,7 +108,7 @@ this.total= total;
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -145,7 +145,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return total;
+                        return this.total;
     
 }
 
@@ -180,7 +180,7 @@ var graphics = graphics
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterface;
+                        return this.animationInterface;
     
 }
 
@@ -197,7 +197,7 @@ this.animationInterface= animationInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return xOffset;
+                        return this.xOffset;
     
 }
 
@@ -214,7 +214,7 @@ this.xOffset= totalStringWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return totalString;
+                        return this.totalString;
     
 }
 
@@ -224,7 +224,7 @@ this.xOffset= totalStringWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return countedPickedUpLayerInterfaceFactory;
+                        return this.countedPickedUpLayerInterfaceFactory;
     
 }
 

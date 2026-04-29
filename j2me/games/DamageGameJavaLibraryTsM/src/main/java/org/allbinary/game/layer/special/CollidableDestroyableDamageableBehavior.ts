@@ -52,6 +52,8 @@ import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
+
 export class CollidableDestroyableDamageableBehavior extends CollidableBaseBehavior {
         
 
@@ -96,11 +98,11 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayer;
+    var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
 ;
     
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayercollidableInterfaceCompositeInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
 ;
     
 ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageableLayer!.getDamage(0), 0);

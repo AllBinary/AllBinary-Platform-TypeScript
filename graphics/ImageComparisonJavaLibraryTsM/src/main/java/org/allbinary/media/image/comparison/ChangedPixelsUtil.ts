@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -109,12 +111,12 @@ bufferedImageCacheables= new Array(2);
 index < bufferedImageCacheables!.length; index++)
         {
 
-    var bufferedImageCacheable: BufferedImageCacheable =  as BufferedImageCacheablepoolInterface!.remove(bufferedImageInfo);;
+    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
 ;
     
 bufferedImageCacheables[index]= bufferedImageCacheable;
     
-bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), CLEAR_INT_ARRAY, OFFSET, SCAN_SIZE);
+bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(ChangedPixelsUtil.START_X, ChangedPixelsUtil.START_Y, bufferedImageInfo!.getWidth(), bufferedImageInfo!.getHeight(), ChangedPixelsUtil.CLEAR_INT_ARRAY, ChangedPixelsUtil.OFFSET, ChangedPixelsUtil.SCAN_SIZE);
     
 }
 
@@ -135,7 +137,7 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, buf
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta =  as PixelDeltavector.get(index);;
+    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
 ;
     
 

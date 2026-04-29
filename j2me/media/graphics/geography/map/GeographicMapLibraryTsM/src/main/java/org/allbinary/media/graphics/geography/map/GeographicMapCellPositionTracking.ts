@@ -105,7 +105,7 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacegameCanvasInterface!.getLayerManager();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager(); as GeographicMapCompositeInterface;
 ;
     
 
@@ -171,7 +171,7 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(l
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return previousGeographicMapCellPosition;
+                        return this.previousGeographicMapCellPosition;
     
 }
 
@@ -181,7 +181,7 @@ this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(l
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentGeographicMapCellPosition;
+                        return this.currentGeographicMapCellPosition;
     
 }
 

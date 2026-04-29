@@ -120,14 +120,14 @@ export class StoreFrontsRequestHelper extends ModifyTable {
     private modifyingStoreFrontInterface: StoreFrontInterface
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 this.pageContext= pageContext;
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -143,7 +143,7 @@ this.getFormData();
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName();
     
-this.modifyingStoreFrontInterface=  as StoreFrontInterfacenew StoreFront(this.request);
+this.modifyingStoreFrontInterface= new StoreFront(this.request) as StoreFrontInterface;
     
 }
 
@@ -156,7 +156,7 @@ this.modifyingStoreFrontInterface=  as StoreFrontInterfacenew StoreFront(this.re
 ;
     
 
-    var hashMapData: HashMap = this.modifyingStoreFrontInterface!.toHashMap()!;
+    var hashMapData: HashMap<any, any> = this.modifyingStoreFrontInterface!.toHashMap()!;
 ;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(hashMapData);
@@ -250,11 +250,11 @@ stringBuffer!.append(this.weblisketSession!.getUserName());
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody);
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 

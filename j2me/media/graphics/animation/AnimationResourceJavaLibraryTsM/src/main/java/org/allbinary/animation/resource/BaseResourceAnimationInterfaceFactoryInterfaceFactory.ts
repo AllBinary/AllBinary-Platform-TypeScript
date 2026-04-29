@@ -81,16 +81,16 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable
+    private readonly hashtable: Hashtable<any, any>
 
-    private readonly rectangleHashtable: Hashtable
+    private readonly rectangleHashtable: Hashtable<any, any>
 
-    private readonly rectangleArrayOfArraysHashtable: Hashtable
+    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>
 
     private readonly name: string
 
     private initialized: boolean= false
-public constructor (name: string, hashtable: Hashtable, rectangleHashtable: Hashtable, rectangleArrayHashtable: Hashtable){
+public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
 
             super();
             //var name = name
@@ -148,7 +148,7 @@ this.setInitialized(true);
     //var resource = resource
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
 
-                        if(this.hashtable.containsKey( as Objectresource))
+                        if(this.hashtable.containsKey(resource as Object))
                         
                                     {
                                     
@@ -192,7 +192,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicAnimationInterfaceFactoryInterfacebasicAnimationInterfaceFactoryInterfaceCanBeNull;
+                        return basicAnimationInterfaceFactoryInterfaceCanBeNull as BasicAnimationInterfaceFactoryInterface;
     
 }
 
@@ -224,7 +224,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as RectanglerectangleCanBeNull;
+                        return rectangleCanBeNull as Rectangle;
     
 }
 
@@ -247,7 +247,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return as Array<Rectangle[]?>this.rectangleArrayOfArraysHashtable!.get(resource as Object);;
+                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object);as Array<Rectangle[]?>;
     
 }
 
@@ -315,27 +315,27 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getHashtable(): Hashtable{
+    public getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 
 
-    public getRectangleHashtable(): Hashtable{
+    public getRectangleHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangleHashtable;
+                        return this.rectangleHashtable;
     
 }
 
 
-    public getRectangleArrayOfArraysHashtable(): Hashtable{
+    public getRectangleArrayOfArraysHashtable(): Hashtable<any, any>{
 
 
 
@@ -357,7 +357,7 @@ this.initialized= initialized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return initialized;
+                        return this.initialized;
     
 }
 

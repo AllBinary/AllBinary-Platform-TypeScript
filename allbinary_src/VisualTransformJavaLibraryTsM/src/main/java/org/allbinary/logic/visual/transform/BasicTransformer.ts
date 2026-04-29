@@ -138,7 +138,7 @@ this.setTemplateAsInputStream();
     
 inputStream= new AbFileInputStream(file);
     
-outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputStream, new Array(16384));;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, file.getAbsolutePath()));
@@ -159,9 +159,9 @@ outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputS
 
                                     }
                                 
-this.setInputStream( as InputStreamnew ByteArrayInputStream(decrypted));
+this.setInputStream(new ByteArrayInputStream(decrypted) as InputStream);
     
-this.setURIResolver( as URIResolvernew BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION));
+this.setURIResolver(new BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
     
 
                 //: 
@@ -227,7 +227,7 @@ this.streamUtil!.close(inputStream);
     
 inputStream= new ByteArrayInputStream(this.getTransformInfoInterface()!.getTemplate()!.encodeToByteArray());
     
-outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputStream, new Array(16384));;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.DESEDE, AbKeys.getInstance()!.getKey(this.abeClientInformation, this.getTransformInfoInterface()!.getName()));
@@ -246,9 +246,9 @@ outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputS
 
                                     }
                                 
-this.setInputStream( as InputStreamnew ByteArrayInputStream(decrypted));
+this.setInputStream(new ByteArrayInputStream(decrypted) as InputStream);
     
-this.setURIResolver( as URIResolvernew BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION));
+this.setURIResolver(new BasicUriResolver(TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION) as URIResolver);
     
 
                 //: 
@@ -430,7 +430,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setTemplateAsInputStream()")
     
 outputStream= new ByteArrayOutputStream();
     
-outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputStream, new Array(16384));;
+outputStream= this.streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -441,9 +441,9 @@ outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, outputS
 
                                     }
                                 
-this.setInputStream( as InputStreamnew ByteArrayInputStream(outputStream!.toByteArray()));
+this.setInputStream(new ByteArrayInputStream(outputStream!.toByteArray()) as InputStream);
     
-this.setURIResolver( as URIResolvernew BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION));
+this.setURIResolver(new BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EXTENSION) as URIResolver);
     
 
 

@@ -85,7 +85,7 @@ this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -102,11 +102,11 @@ this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap
 
                                     }
                                 
-this.setAccountName( as StringhashMap!.get(EmailServerConfigurationData.ACCOUNT));
+this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String);
     
-this.setPassword( as StringhashMap!.get(EmailServerConfigurationData.PASSWORD));
+this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String);
     
-this.setSmtpServer( as StringhashMap!.get(EmailServerConfigurationData.SERVER));
+this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String);
     
 this.log();
     
@@ -164,7 +164,7 @@ this.smtpServer= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return accountName;
+                        return this.accountName;
     
 }
 
@@ -181,7 +181,7 @@ this.accountName= accountName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return password;
+                        return this.password;
     
 }
 

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Random } from "../../../../java/util/Random.js";
@@ -232,7 +234,7 @@ var range = range
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.rand.nextInt() /div);
+                        return Math.round((this.rand.nextInt() /div));
     
 }
 

@@ -145,7 +145,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 
 
 
@@ -157,7 +157,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable{
+    public getLoadStateHashtable(): Hashtable<any, any>{
 
 
 
@@ -169,7 +169,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public setLoadStateHashtable(hashtable: Hashtable){
+    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
 }
 

@@ -78,9 +78,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { DefaultListModelHelper } from "./DefaultListModelHelper.js";
 
-import { ListModel } from "./ListModel.js";
-
 import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
+
+import { ListModel } from "./ListModel.js";
 
 export class InputAutomationModuleFactoryFactory
             extends Object
@@ -89,7 +89,7 @@ export class InputAutomationModuleFactoryFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap
+    private hashMap: HashMap<any, any>
 
     private defaultListModelHelper: DefaultListModelHelper
 
@@ -102,7 +102,7 @@ this.helpSetListenerInterface= helpSetListenerInterface;
     
 this.defaultListModelHelper= new DefaultListModelHelper();
     
-this.hashMap= new HashMap();
+this.hashMap= new HashMap<any, any>();
     
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
@@ -123,7 +123,7 @@ this.hashMap= new HashMap();
 
         while(iterator.hasNext())
         {
-inputAutomationModuleConfiguration=  as InputAutomationModuleConfigurationiterator.next();;
+inputAutomationModuleConfiguration= iterator.next(); as InputAutomationModuleConfiguration;
     
 this.add(inputAutomationModuleConfiguration);
     
@@ -171,7 +171,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ListModelthis.defaultListModelHelper!.getListModel();;
+                        return this.defaultListModelHelper!.getListModel(); as ListModel;
     
 }
 
@@ -185,7 +185,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface =  as InputAutomationModuleFactoryInterfacethis.hashMap!.get(moduleName as Object);;
+    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object); as InputAutomationModuleFactoryInterface;
 ;
     
 

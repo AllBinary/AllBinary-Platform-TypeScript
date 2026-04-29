@@ -72,7 +72,7 @@ export class RootCategoryPropertiesAbstract
 
     private readonly category: string = CategoryData.getInstance()!.ROOTCATEGORY;
 
-    private readonly fileName: string = category +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION;
+    private readonly fileName: string = this.category +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION;
 public constructor (){
 
             super();
@@ -84,7 +84,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getValue();;
+                        return this.getValue(); as Object;
     
 }
 
@@ -196,7 +196,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return fileName;
+                        return this.fileName;
     
 }
 
@@ -211,9 +211,9 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap = new HashMap();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);

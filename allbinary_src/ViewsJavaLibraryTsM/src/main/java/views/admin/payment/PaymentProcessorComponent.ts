@@ -82,12 +82,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 paymentProcessorInterface!.process();
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
 httpTransformInfoInterface!.getWeblisketSession()!.removeBasket();
     
-this.addDomNodeInterface( as DomNodeInterfacepaymentProcessorInterface);
+this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface);
     
 }
 

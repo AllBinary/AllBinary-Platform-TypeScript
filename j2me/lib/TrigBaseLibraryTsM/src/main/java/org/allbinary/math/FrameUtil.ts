@@ -51,7 +51,7 @@ export class FrameUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FrameUtil.instance;
     
 }
 
@@ -68,7 +68,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.adjustAngleToFrameAngle(Math.roundangle) /angleIncrement;
+                        return this.adjustAngleToFrameAngle(Math.round(angle)) /angleIncrement;
     
 }
 

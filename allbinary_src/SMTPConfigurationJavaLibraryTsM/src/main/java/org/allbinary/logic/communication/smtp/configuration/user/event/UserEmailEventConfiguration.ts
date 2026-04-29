@@ -78,13 +78,13 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
                                 
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.setName( as StringhashMap!.get(UserEmailEventConfigurationData.NAME));
+this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as String);
     
-this.setEventListenerClassPath( as StringhashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH));
+this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
@@ -103,7 +103,7 @@ this.setEventListenerClassPath( as StringhashMap!.get(UserEmailEventConfiguratio
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -120,7 +120,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventListenerClassPath;
+                        return this.eventListenerClassPath;
     
 }
 

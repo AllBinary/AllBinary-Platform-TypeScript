@@ -242,9 +242,9 @@ this.themeVector!.add(themeValidation);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap = super.toHashMap()!;
+    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;
 ;
     
 categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);

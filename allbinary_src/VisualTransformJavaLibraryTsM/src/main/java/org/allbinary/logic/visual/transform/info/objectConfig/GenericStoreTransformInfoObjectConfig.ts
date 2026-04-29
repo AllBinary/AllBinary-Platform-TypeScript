@@ -179,7 +179,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                                     }
                                 
 
-    var transformInfoHttpStoreInterface: TransformInfoHttp =  as TransformInfoHttpthis.getTransformInfoInterface();;
+    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface(); as TransformInfoHttp;
 ;
     
 
@@ -187,7 +187,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 ;
     
 
-    var replaceHashMap: HashMap = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
+    var replaceHashMap: HashMap<any, any> = this.createReplaceHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
 ;
     
 
@@ -201,7 +201,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 
                 //@Throws(Error::class)
             
-    createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap{
+    createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
     //var objectConfigDocumentString = objectConfigDocumentString
 
@@ -209,7 +209,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 ;
     
 
-    var hashMap: HashMap = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
+    var hashMap: HashMap<any, any> = this.createHashMap(transformInfoHttpStoreInterface, objectConfigDocumentString)!;
 ;
     
 
@@ -235,11 +235,11 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
 
                 //@Throws(Error::class)
             
-    createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap{
+    createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
     //var objectConfigDocumentString = objectConfigDocumentString
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -247,11 +247,11 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
 ;
     
 
-    var propertiesHashMap: HashMap = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;
+    var propertiesHashMap: HashMap<any, any> = transformInfoHttpStoreInterface!.getPropertiesHashMap()!;
 ;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull( as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL))!;
+    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull(propertiesHashMap!.get(TransformInfoData.getInstance()!.PARTIAL) as String)!;
 ;
     
 
@@ -284,7 +284,7 @@ templateNameStringBuffer!.append(RootTransformInfoData.NAME);
                         
                                     {
                                     
-    var templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;
+    var templateInterface: TransformTemplateInterface = TransformTemplateFactory.getInstance()!.getInstance(this.abeClientInformation, templateNameStringBuffer!.toString(), transformInfoHttpStoreInterface!.getPropertiesHashMap(), transformInfoHttpStoreInterface!.getPageContext())!;
 ;
     
 
@@ -307,7 +307,7 @@ hashMap!.put(templateNameKey, selectedTemplate);
 
                 //@Throws(Error::class)
             
-    generate(objectConfigDocumentString: string, hashMap: HashMap): Document{
+    generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
 var objectConfigDocumentString = objectConfigDocumentString
 var hashMap = hashMap
 

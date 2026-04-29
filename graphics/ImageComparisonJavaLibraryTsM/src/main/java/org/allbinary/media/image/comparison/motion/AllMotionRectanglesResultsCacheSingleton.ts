@@ -85,7 +85,7 @@ export class AllMotionRectanglesResultsCacheSingleton
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.ONE_MINUTE_FIVE_MAX);
+AllMotionRectanglesResultsCacheSingleton.cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.ONE_MINUTE_FIVE_MAX);
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
@@ -104,7 +104,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cacheInterface;
+                        return AllMotionRectanglesResultsCacheSingleton.cacheInterface;
     
 }
 

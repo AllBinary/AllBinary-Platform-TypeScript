@@ -73,7 +73,7 @@ export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourc
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INSTANCE;
+                        return FeaturedResourceRelativeRelationshipFactory.INSTANCE;
     
 }
 
@@ -107,7 +107,7 @@ var layer = layer
 index < size; index++)
         {
 
-    var featureInterface: ResourceRelativeRelationshipFactoryInterface =  as ResourceRelativeRelationshipFactoryInterfacefeatureReleaseList!.objectArray[index]!;
+    var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;
 ;
     
 
@@ -171,7 +171,7 @@ var layer = layer
 index < size; index++)
         {
 
-    var relativeRelationship: RelativeRelationship =  as RelativeRelationshiplist.objectArray[index]!;
+    var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;
 ;
     
 newList!.add(new RelativeLayerRelationship(layer, pointFactory!.createXY(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));

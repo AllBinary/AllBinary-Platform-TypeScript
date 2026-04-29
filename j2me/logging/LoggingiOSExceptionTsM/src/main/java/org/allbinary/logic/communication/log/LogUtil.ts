@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -118,7 +120,7 @@ private constructor (){
     var functionName: string = log.getFunctionName()!;
 ;
     
-put(specialMessage, anyType, functionName, exception);
+this.put(specialMessage, anyType, functionName, exception);
     
 }
 

@@ -112,7 +112,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.styleValidationInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
     
 
                                     }

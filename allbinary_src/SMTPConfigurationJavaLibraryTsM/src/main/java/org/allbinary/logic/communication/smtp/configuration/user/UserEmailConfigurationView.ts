@@ -75,6 +75,8 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
         
 import { UserEmailConfigurationInterface } from "./UserEmailConfigurationInterface.js";
 
+import { UserEmailConfigurationMapping } from "./UserEmailConfigurationMapping.js";
+
 import { UserEmailConfigurationData } from "./UserEmailConfigurationData.js";
 
 export class UserEmailConfigurationView
@@ -100,7 +102,7 @@ public constructor (node: Node){
 
                                     }
                                 
-this.userEmailConfigurationInterface=  as UserEmailConfigurationInterfacenew UserEmailConfiguration();
+this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
@@ -146,7 +148,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = emailConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
 ;
     
 

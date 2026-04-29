@@ -293,7 +293,7 @@ this.updateUrl();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return USER_NAME_KEY;
+                        return this.USER_NAME_KEY;
     
 }
 
@@ -303,7 +303,7 @@ this.updateUrl();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PASSWORD_KEY;
+                        return this.PASSWORD_KEY;
     
 }
 

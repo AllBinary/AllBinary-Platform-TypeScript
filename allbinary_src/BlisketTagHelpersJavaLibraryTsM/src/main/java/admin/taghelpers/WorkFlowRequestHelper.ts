@@ -77,7 +77,7 @@ export class WorkFlowRequestHelper extends ModifyTable {
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 
     private workFlowInterface: WorkFlowInterface
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap

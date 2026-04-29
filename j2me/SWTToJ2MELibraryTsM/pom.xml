@@ -158,7 +158,7 @@
         </dependency>
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>3.0.0-SNAPSHOT</version>
             <optional>true</optional>
         </dependency>
@@ -172,7 +172,7 @@
 
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>3.0.0-SNAPSHOT</version>
             <optional>true</optional>
         </dependency>

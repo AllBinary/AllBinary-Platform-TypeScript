@@ -111,12 +111,12 @@ var index = index
 
         try {
             
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(StreetAddressData.ID,  as Stringindex.toString());
+whereHashMap!.put(StreetAddressData.ID, index.toString() as String);
     
 super.deleteWhere(whereHashMap);
     
@@ -228,11 +228,11 @@ var address = address
 
         try {
             
-    var addressHashMap: HashMap = address.toHashMap()!;
+    var addressHashMap: HashMap<any, any> = address.toHashMap()!;
 ;
     
 
-    var whereKeyValuePairs: HashMap = new HashMap();
+    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereKeyValuePairs!.put(StreetAddressData.ID, address.getId());
@@ -288,7 +288,7 @@ this.setDefault(address.getId());
 ;
     
 
-    var keyAndValue: HashMap = new HashMap();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyAndValue!.put(UserData.USERNAME, userName);
@@ -310,7 +310,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var addressHashMap: HashMap =  as HashMapaddressList!.get(index);;
+    var addressHashMap: HashMap<any, any> = addressList!.get(index); as HashMap<any, any>;
 ;
     
 
@@ -365,7 +365,7 @@ var index = index
 
         try {
             
-    var keyAndValue: HashMap = new HashMap();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyAndValue!.put(UserData.USERNAME, userName);
@@ -373,7 +373,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 keyAndValue!.put(StreetAddressData.ID, index.toString());
     
 
-    var addressHashMap: HashMap = super.getRow(keyAndValue)!;
+    var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;
 ;
     
 
@@ -429,11 +429,11 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
 
         try {
             
-    var addressHashMap: HashMap = new HashMap();
+    var addressHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var updateKeyAndValue: HashMap = new HashMap();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
@@ -518,17 +518,17 @@ var value = value
 
         try {
             
-    var updateKeyAndValue: HashMap = new HashMap();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var whereKeyAndValue: HashMap = new HashMap();
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereKeyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var streetAddress: StreetAddress = getDefault()!;
+    var streetAddress: StreetAddress = this.getDefault()!;
 ;
     
 

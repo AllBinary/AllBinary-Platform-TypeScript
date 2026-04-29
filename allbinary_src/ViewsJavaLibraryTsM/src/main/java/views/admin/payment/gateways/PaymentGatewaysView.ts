@@ -125,11 +125,11 @@ var document = document
 index < size; index++)
         {
 
-    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentGatewayVector!.get(index);;
+    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index); as BasicPaymentType;
 ;
     
 
-    var hashMap: HashMap = paymentType!.toHashMap()!;
+    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;
 ;
     
 hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName());
@@ -172,7 +172,7 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

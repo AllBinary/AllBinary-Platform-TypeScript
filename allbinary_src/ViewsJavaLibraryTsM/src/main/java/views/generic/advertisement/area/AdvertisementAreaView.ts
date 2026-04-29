@@ -80,7 +80,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.advertisementAreaName=  as Stringthis.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME);;
+this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
     
 }
 
@@ -96,7 +96,7 @@ var document = document
 ;
     
 
-    var advertisementAreaInterface: AdvertisementAreaInterface = advertisementAreasEntityInterface!.get(this.getTransformInfoInterface()!.getStoreName(), advertisementAreaName)!;
+    var advertisementAreaInterface: AdvertisementAreaInterface = advertisementAreasEntityInterface!.get(this.getTransformInfoInterface()!.getStoreName(), this.advertisementAreaName)!;
 ;
     
 
@@ -129,7 +129,7 @@ var document = document
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

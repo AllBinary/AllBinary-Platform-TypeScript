@@ -62,6 +62,8 @@ import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
 
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
+import { FtpConfigurationMapping } from "./FtpConfigurationMapping.js";
+
 export class FtpConfigurationView
             extends Object
          implements DomNodeInterface {
@@ -72,7 +74,7 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.setFtpConfigurationInterface( as FtpConfigurationInterfacenew FtpConfiguration());
+this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
     var chileNodeList: NodeList = node.getChildNodes()!;
@@ -122,7 +124,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = ftpConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;
 ;
     
 
@@ -143,7 +145,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ftpConfigurationInterface;
+                        return this.ftpConfigurationInterface;
     
 }
 

@@ -81,7 +81,7 @@ this.defaultListModel= new DefaultListModel();
 index < size; index++)
         {
 
-    var moduleName: string =  as Stringthis.vector.get(index);;
+    var moduleName: string = this.vector.get(index); as String;
 ;
     
 this.defaultListModel!.addElement(moduleName);
@@ -96,7 +96,7 @@ this.defaultListModel!.addElement(moduleName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ListModelthis.defaultListModel;
+                        return this.defaultListModel as ListModel;
     
 }
 

@@ -99,7 +99,7 @@ public constructor (node: Node){
             super();
         var node = node
 
-    var indexPropertyValueHashMap: HashMap = new HashMap();
+    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 this.propertyValueVector= new Vector();
@@ -130,7 +130,7 @@ this.propertyValueVector= new Vector();
 index < size; index++)
         {
 
-    var cssPropertyValueNode: Node =  as NodecssPropertyNodeVector!.get(index);;
+    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index); as Node;
 ;
     
 
@@ -179,7 +179,7 @@ index < size2; index++)
 ;
     
 
-    var propertyValue: string =  as StringindexPropertyValueHashMap!.get(indexInt!.toString());;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()); as String;
 ;
     
 this.propertyValueVector!.add(propertyValue);
@@ -189,7 +189,7 @@ this.propertyValueVector!.add(propertyValue);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;
@@ -199,7 +199,7 @@ this.propertyValueVector!.add(propertyValue);
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -219,7 +219,7 @@ this.propertyValueVector!.add(propertyValue);
 index < size; index++)
         {
 
-    var value: string =  as Stringthis.propertyValueVector!.get(index);;
+    var value: string = this.propertyValueVector!.get(index); as String;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -256,7 +256,7 @@ var document = document
                         
                                     {
                                     
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");

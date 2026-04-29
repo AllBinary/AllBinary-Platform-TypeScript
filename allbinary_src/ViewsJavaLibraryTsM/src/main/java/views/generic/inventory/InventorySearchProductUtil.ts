@@ -94,7 +94,7 @@ export class InventorySearchProductUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InventorySearchProductUtil.instance;
     
 }
 
@@ -139,7 +139,7 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 ;
     
 
-    var outputStr: string = new StoreTransformer(abeClientInformation,  as TransformInfoInterfacenew TransformInfoHttpSearch(searchRequest)).
+    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
                             translate(success)!;
 ;
     
@@ -157,7 +157,7 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ITEM_NOT_FOUND;
+                        return this.ITEM_NOT_FOUND;
     
 
                         }

@@ -98,17 +98,17 @@ this.inputProcessorArray= inputProcessorArray;
     
 
         try {
-            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.LEFT);
+            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.LEFT);
     
-this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.RIGHT);
+this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.RIGHT);
     
-this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.UP);
+this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.UP);
     
-this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.DOWN);
+this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.DOWN);
     
-this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.KEY_NUM0);
+this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.KEY_NUM0);
     
-this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.KEY_NUM5);
+this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, this.gameKeyFactory!.KEY_NUM5);
     
 
                 //: 
@@ -165,7 +165,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(x > 0)
                         
                                     {
-                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.rightGameKeyEvent, x);
+                                    this.inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.rightGameKeyEvent, x);
     
 
                                     }
@@ -183,7 +183,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(y > 0)
                         
                                     {
-                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.upGameKeyEvent, y);
+                                    this.inputProcessorArray[this.upGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.upGameKeyEvent, y);
     
 
                                     }

@@ -165,7 +165,7 @@ stringBuffer!.append(sep);
 stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING);
     
 
-    var abPath: AbPath =  as AbPathnew AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME);
+    var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;
 ;
     
 
@@ -210,7 +210,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-    var shippingMethodInterface: ShippingInterface =  as ShippingInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName);;
+    var shippingMethodInterface: ShippingInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, shippingMethodClassName); as ShippingInterface;
 ;
     
 this.shippingVector!.add(shippingMethodInterface);
@@ -253,7 +253,7 @@ this.shippingVector!.add(new NoShippingModuleView());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return shippingVector;
+                        return this.shippingVector;
     
 }
 
@@ -263,7 +263,7 @@ this.shippingVector!.add(new NoShippingModuleView());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultShippingMethodInterface;
+                        return this.defaultShippingMethodInterface;
     
 }
 

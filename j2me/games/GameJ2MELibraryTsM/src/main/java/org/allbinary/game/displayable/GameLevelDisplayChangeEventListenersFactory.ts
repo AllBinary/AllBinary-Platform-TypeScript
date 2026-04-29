@@ -64,7 +64,7 @@ export class GameLevelDisplayChangeEventListenersFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameLevelDisplayChangeEventListenersFactory.instance;
     
 }
 
@@ -97,7 +97,7 @@ DisplayChangeEventHandler.getInstance()!.addListener(displayChangeEventListener)
     var index: number = this.list.size()!;
 --index >= 0; )
         {
-displayChangeEventListener=  as DisplayChangeEventListenerthis.list.objectArray[index]!;
+displayChangeEventListener= this.list.objectArray[index]! as DisplayChangeEventListener;
     
 displayChangeEventHandler!.removeListener(displayChangeEventListener);
     

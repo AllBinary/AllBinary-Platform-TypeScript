@@ -89,17 +89,17 @@ export class StylesValidationFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return StylesValidationFactory.instance;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public static getInstance(hashMap: HashMap): Vector{
+    public static getInstance(hashMap: HashMap<any, any>): Vector{
 var hashMap = hashMap
 
-    var stylesDocument: Document =  as DocumenthashMap!.get(NameSpaceRequestParamData.DOCUMENT);;
+    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT); as Document;
 ;
     
 
@@ -182,7 +182,7 @@ index < nodeList!.getLength(); index++)
 styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
         {
 
-    var styleNode: Node =  as NodestyleNodeList!.get(styleNodesIndex);;
+    var styleNode: Node = styleNodeList!.get(styleNodesIndex); as Node;
 ;
     
 

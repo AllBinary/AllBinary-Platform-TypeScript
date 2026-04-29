@@ -48,6 +48,8 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
         
 import { ImageArrayBaseRotationAnimation } from "./ImageArrayBaseRotationAnimation.js";
 
+import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
+
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         
 
@@ -57,7 +59,7 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo =  as ImageArrayRotationAnimationInfoanyType;
+    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
 ;
     
 

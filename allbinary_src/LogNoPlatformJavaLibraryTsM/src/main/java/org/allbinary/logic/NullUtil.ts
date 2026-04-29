@@ -62,7 +62,7 @@ expect export class NullUtil
     public readonly NULL_INT_ARRAY_ARRAY_ARRAY: number[][][]
     public readonly NULL_FLOAT_ARRAY: number[]
     public readonly EMPTY_VECTOR: Vector<any>
-    public readonly NULL_TABLE: Hashtable
+    public readonly NULL_TABLE: Hashtable<any, any>
 }
                 
             

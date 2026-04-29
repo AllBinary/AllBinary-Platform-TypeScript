@@ -313,7 +313,7 @@ var keyList = keyList
     var index: number = 0;
 index < size; index++)
         {
-key=  as InputkeyList!.objectArray[index]!;
+key= keyList!.objectArray[index]! as Input;
     
 stringBuffer!.append(key.getName());
     
@@ -506,7 +506,7 @@ deltaX += font.stringWidth(actionString);
     var index2: number = 0;
 index2 < size2; index2++)
         {
-input=  as Inputlist.objectArray[index2]!;
+input= list.objectArray[index2]! as Input;
     
 graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt());
     

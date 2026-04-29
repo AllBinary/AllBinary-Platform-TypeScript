@@ -75,7 +75,7 @@ import { ClassLoader } from "./ClassLoader.js";
 export class AbeClassLoader extends ClassLoader {
         
 
-    private classes: Map = new HashMap();
+    private classes: Map = new HashMap<any, any>();
 
     private PATH: string
 
@@ -109,7 +109,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Class<*>classes.get(name);;
+                        return AbeClassLoader.classes.get(name); as Class<*>;
     
 }
 
@@ -233,7 +233,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-classes.put(name, myClass::class.java);
+AbeClassLoader.classes.put(name, myClass::class.java);
     
 
                                     }
@@ -492,7 +492,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-classes.put(name, myClass::class.java);
+AbeClassLoader.classes.put(name, myClass::class.java);
     
 
                                     }

@@ -118,7 +118,7 @@ this.logUtil!.putF("Processing " +vector.length +" Services", this, commonString
     var index: number = 0;
 index < size; index++)
         {
-osgiServiceInterface=  as OSGIServiceInterfacevector.get(index);;
+osgiServiceInterface= vector.get(index); as OSGIServiceInterface;
     
 
                         if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);)
@@ -155,7 +155,7 @@ osgiServiceInterface=  as OSGIServiceInterfacevector.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bundleContext;
+                        return this.bundleContext;
     
 }
 
@@ -172,7 +172,7 @@ this.bundleContext= aBundleContext;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return registryName;
+                        return this.registryName;
     
 }
 
@@ -189,7 +189,7 @@ this.registryName= registryName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return osgiServiceVisitorInterface;
+                        return this.osgiServiceVisitorInterface;
     
 }
 

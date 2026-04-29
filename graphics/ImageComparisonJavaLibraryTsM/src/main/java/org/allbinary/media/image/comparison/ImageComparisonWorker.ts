@@ -106,7 +106,7 @@ this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -139,7 +139,7 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onCaptureEvent( as CapturedImageWorkerResultsEventallBinaryEventObject);
+this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
     
 }
 
@@ -165,9 +165,9 @@ timeHelper!.setStartTimeTNT();
     var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent[] = new Array(2);
 ;
     
-capturedImageWorkerResultsEvent[0]=  as CapturedImageWorkerResultsEventthis.bufferedImageVector!.get(0);;
+capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0); as CapturedImageWorkerResultsEvent;
     
-capturedImageWorkerResultsEvent[1]=  as CapturedImageWorkerResultsEventthis.bufferedImageVector!.get(1);;
+capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1); as CapturedImageWorkerResultsEvent;
     
 
                         if(this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[0]!.getBufferedImage()) && this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[1]!.getBufferedImage()))
@@ -206,7 +206,7 @@ this.logUtil!.putF(new StringMaker().
                                 
 this.bufferedImageVector!.remove(0);
     
-index2++;
+this.index2++;
     
 
     var message: string = new StringMaker().

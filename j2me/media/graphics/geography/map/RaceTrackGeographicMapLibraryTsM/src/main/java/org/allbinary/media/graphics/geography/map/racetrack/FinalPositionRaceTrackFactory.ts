@@ -44,7 +44,7 @@ export class FinalPositionRaceTrackFactory
 
     public static readonly FIRST_POSITION: number = 1;
 
-    private index: number = FIRST_POSITION;
+    private index: number = FinalPositionRaceTrackFactory.FIRST_POSITION;
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): number{
@@ -52,7 +52,7 @@ export class FinalPositionRaceTrackFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return index++;
+                        return FinalPositionRaceTrackFactory.index++;
     
 }
 

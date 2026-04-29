@@ -70,11 +70,17 @@ import { JPanel } from "./JPanel.js";
 
 import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+
 import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxModelFactory.js";
 
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
 
+import { ComboBoxModel } from "./ComboBoxModel.js";
+
 import { JDialog } from "./JDialog.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -104,7 +110,7 @@ public constructor (keyActionScriptInputInterface: KeyboardActionScriptInputInte
         var keyActionScriptInputInterface = keyActionScriptInputInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.keyActionScriptInputInterface= keyActionScriptInputInterface;
     
@@ -192,7 +198,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
 ;
     
 
@@ -213,7 +219,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
 ;
     
 
@@ -224,7 +230,7 @@ this.keyActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as IntegerKeySingletonFactory.getHashtable()!.get(selectedItem as Object);;
+                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object); as Integer;
     
 
                                     }
@@ -267,7 +273,7 @@ this.keyActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return keyActionJDialog;
+                        return this.keyActionJDialog;
     
 }
 
@@ -332,7 +338,7 @@ this.titleJLabel!.setText("Keyboard Input Options");
     
 this.addKeyJLabel!.setText("Add Key:");
     
-keyNameJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.keyNameJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -364,7 +370,7 @@ this.pressJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0,
     
 this.pressJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-pressJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.pressJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -382,7 +388,7 @@ this.releaseJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(
     
 this.releaseJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-releaseJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.releaseJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -402,7 +408,7 @@ this.normalJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0
     
 this.normalJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-normalJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.normalJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -422,7 +428,7 @@ this.simultaneousJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBo
     
 this.simultaneousJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-simultaneousJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.simultaneousJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -440,7 +446,7 @@ this.sequenceJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder
     
 this.sequenceJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-sequenceJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.sequenceJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -456,7 +462,7 @@ this.okJButton!.setText("OK");
     
 this.okJButton!.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -470,7 +476,7 @@ okJButtonActionPerformed(evt);
     
 this.jPanel1!.add(this.okJButton);
     
-keyIntegerJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.keyIntegerJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -496,7 +502,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.keyActionJButton!.setText("Edit");
     
-keyActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.keyActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -587,7 +593,7 @@ this.sequenceJRadioButton!.setSelected(false);
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var integer: number = getSelectedKey()!;
+    var integer: number = this.getSelectedKey()!;
 ;
     
 this.prependText(integer);

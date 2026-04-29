@@ -79,7 +79,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ( as VelocityInterfaceCompositeInterfaceownerLayerInterface);
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = (ownerLayerInterface as VelocityInterfaceCompositeInterface);
 ;
     
 

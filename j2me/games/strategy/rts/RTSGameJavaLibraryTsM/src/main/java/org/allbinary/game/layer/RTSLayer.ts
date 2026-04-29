@@ -177,17 +177,19 @@ import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
+import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
+
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+
 import { RuntimeException } from "./RuntimeException.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-
-import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
@@ -265,7 +267,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     readonly debug: boolean = true;
 
-    public readonly showMoreCaptionStates: boolean = debug;
+    public readonly showMoreCaptionStates: boolean = this.debug;
 
     readonly inputProcessorArray: GameInputProcessor[] = new Array(InputFactory.getInstance()!.MAX);
 
@@ -309,7 +311,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private readonly rootName: string
 
-    readonly hashtable: Hashtable = new Hashtable();
+    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private readonly BUILD_VALUE: number = 63;
 
@@ -321,7 +323,7 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
     private maxLevel: number = 1;
 
-    private hackVerticleBuild: number = BUILD_VALUE;
+    private hackVerticleBuild: number = this.BUILD_VALUE;
 
     slightAngle: number = 0;
 
@@ -362,19 +364,19 @@ this.rtsFormInput= rtsFormInput;
     
 this.setPosition(x, y, z);
     
-this.verticleBuildAnimationInterface=  as IndexedAnimationverticleBuildAnimationInterfaceFactoryInterface!.getInstance(0);;
+this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0);
     
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0);
     
-this.emptyAnimationInterface=  as IndexedAnimationemptyAnimationInterfaceFactoryInterface!.getInstance(0);;
+this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
-this.indexedButShouldBeRotationAnimationInterface=  as IndexedAnimationanimationInterfaceFactoryInterface!.getInstance(0);;
+this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
     
 this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
     
-this.destroyAnimationInterface=  as IndexedAnimationproceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface);;
+this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface); as IndexedAnimation;
     
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
@@ -402,7 +404,7 @@ this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -414,7 +416,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var viewPosition2: TileLayerPositionIntoViewPosition =  as TileLayerPositionIntoViewPositionthis.getViewPosition();;
+    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
 ;
     
 viewPosition2!.setTiledLayer(tiledLayer);
@@ -437,7 +439,7 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-ViewPositionEventHandler.getInstance()!.addListener( as AllBinaryLayerthis);
+ViewPositionEventHandler.getInstance()!.addListener(this as AllBinaryLayer);
     
 this.animationInterface= this.buildAnimationInterface;
     
@@ -609,7 +611,7 @@ this.getAnimationInterface()!.paintXY(graphics, viewX, viewY);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return RTSLayer.id;
     
 }
 
@@ -693,7 +695,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getCost(this);;
+                        return this.rtsLayerUtil!.getCost(this);;
     
 }
 
@@ -703,7 +705,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getDowngradeCost(this);;
+                        return this.rtsLayerUtil!.getDowngradeCost(this);;
     
 }
 
@@ -713,7 +715,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerUtil!.getUpgradeCost(this);;
+                        return this.rtsLayerUtil!.getUpgradeCost(this);;
     
 }
 
@@ -777,7 +779,7 @@ this.getHudPaintable()!.updateInfo();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return level;
+                        return this.level;
     
 }
 
@@ -794,7 +796,7 @@ this.level= level;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return verticleBuildAnimationInterface;
+                        return this.verticleBuildAnimationInterface;
     
 }
 
@@ -804,7 +806,7 @@ this.level= level;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterface;
+                        return this.animationInterface;
     
 }
 
@@ -823,14 +825,14 @@ this.animationInterface= animationInterface;
     public setTarget(targetGameLayer: PathFindingLayerInterface){
     //var targetGameLayer = targetGameLayer
 
-    var anotherTargetDistance: number = layerDistanceUtil!.getDistance( as AllBinaryLayerthis,  as AllBinaryLayertargetGameLayer)!;
+    var anotherTargetDistance: number = layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;
 ;
     
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;
 ;
     
-waypointBehaviorBase!.setTargetWithDistance( as PathFindingLayerInterfacetargetGameLayer, anotherTargetDistance);
+waypointBehaviorBase!.setTargetWithDistance(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance);
     
 }
 
@@ -858,7 +860,7 @@ waypointBehaviorBase!.setTargetWithDistance( as PathFindingLayerInterfacetargetG
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxLevel;
+                        return this.maxLevel;
     
 }
 
@@ -875,7 +877,7 @@ this.maxLevel= maxLevel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return healthInterface;
+                        return this.healthInterface;
     
 }
 
@@ -944,7 +946,7 @@ ViewPositionEventHandler.getInstance()!.removeListener(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionAreaBase;
+                        return this.geographicMapCellPositionAreaBase;
     
 }
 
@@ -1200,7 +1202,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rootName;
+                        return this.rootName;
     
 }
 
@@ -1210,7 +1212,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as RotationAnimationthis.indexedButShouldBeRotationAnimationInterface;
+                        return this.indexedButShouldBeRotationAnimationInterface as RotationAnimation;
     
 }
 

@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -103,7 +105,7 @@ this.layerManagerLogging= layerManagerLogging;
     var index: number = 0;
 index < size; index++)
         {
-nextLayerInterface=  as AllBinaryLayerthis.list.get(index);;
+nextLayerInterface= this.list.get(index); as AllBinaryLayer;
     
 
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
@@ -180,7 +182,7 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Layerthis.list.objectArray[index]!;
+                        return this.list.objectArray[index]! as Layer;
     
 }
 
@@ -241,7 +243,7 @@ var y = y
     var index: number = this.list.size()!;
 --index >= 0; )
         {
-comp=  as Layerthis.list.objectArray[index]!;
+comp= this.list.objectArray[index]! as Layer;
     
 
                         if(comp != 

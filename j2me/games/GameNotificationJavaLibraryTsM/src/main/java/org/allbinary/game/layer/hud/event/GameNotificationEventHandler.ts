@@ -55,6 +55,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameNotificationListenerInterface } from "./GameNotificationListenerInterface.js";
+
 export class GameNotificationEventHandler extends BasicEventHandler {
         
 
@@ -65,7 +67,7 @@ export class GameNotificationEventHandler extends BasicEventHandler {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameNotificationEventHandler.instance;
     
 }
 
@@ -91,7 +93,7 @@ private constructor (){
                         if(list.size() > 0)
                         
                                     {
-                                    eventListenerInterface=  as EventListenerInterfacelist.objectArray[0]!;
+                                    eventListenerInterface= list.objectArray[0]! as EventListenerInterface;
     
 
                                     }
@@ -129,10 +131,10 @@ var eventListenerInterface = eventListenerInterface
                                     }
                                 
 
-    var gameNotificationListenerInterface: GameNotificationListenerInterface =  as GameNotificationListenerInterfaceeventListenerInterface;
+    var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;
 ;
     
-gameNotificationListenerInterface!.onGameNotificationEvent( as GameNotificationEventeventObject);
+gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent);
     
 }
 

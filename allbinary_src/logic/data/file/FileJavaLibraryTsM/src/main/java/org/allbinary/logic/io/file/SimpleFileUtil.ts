@@ -91,7 +91,7 @@ export class SimpleFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SimpleFileUtil.instance;
     
 }
 
@@ -265,9 +265,9 @@ var n = n
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public readonly NULL_WRITER: Writer = nullWriter()!;
+    public readonly NULL_WRITER: Writer = SimpleFileUtil.nullWriter()!;
 
-    public readonly NULL_READER: Reader = nullReader()!;
+    public readonly NULL_READER: Reader = SimpleFileUtil.nullReader()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
@@ -374,7 +374,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 startIndex= index;
     
 
-        while(index < size -1 && byteArray[index] != .code.toByte()'\n')
+        while(index < size -1 && byteArray[index] != .code'\n'.code.toByte())
         {
 index++;
     
@@ -385,7 +385,7 @@ index++;
                         
                                     {
                                     
-                        if(index > 0 && byteArray[index -1] == .code.toByte()'\r')
+                        if(index > 0 && byteArray[index -1] == .code'\r'.code.toByte())
                         
                                     {
                                     returnLine= 1;

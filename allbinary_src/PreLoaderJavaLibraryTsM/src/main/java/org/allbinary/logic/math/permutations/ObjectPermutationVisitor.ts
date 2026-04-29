@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
     
@@ -51,7 +53,7 @@ this.data= data;
 
     public visit(anyType: any = {}): any{
 var anyType = anyType
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
     

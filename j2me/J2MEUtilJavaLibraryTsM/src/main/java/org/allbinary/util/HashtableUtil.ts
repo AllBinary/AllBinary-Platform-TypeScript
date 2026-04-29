@@ -43,6 +43,8 @@ import { Hashtable } from "../../../java/util/Hashtable.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicArrayListS } from "./BasicArrayListS.js";
+
 import { BasicArrayList } from "./BasicArrayList.js";
 
 export class HashtableUtil
@@ -57,28 +59,32 @@ export class HashtableUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return HashtableUtil.instance;
     
 }
 
 
-    public putAll(fromHashtable: Hashtable, hashtable: Hashtable){
-var fromHashtable = fromHashtable
-var hashtable = hashtable
+    public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
+    //var fromHashtable = fromHashtable
+    //var hashtable = hashtable
 
     var enumeration: Enumeration = fromHashtable!.keys()!;
 ;
     
 
-        while(enumeration.hasMoreElements())
-        {
-
-    var key: any = enumeration.nextElement()!!;
+    var key: any
 ;
     
 
-    var value: any = hashtable.get(key as Object)!;
+    var value: any
 ;
+    
+
+        while(enumeration.hasMoreElements())
+        {
+key= enumeration.nextElement()!;
+    
+value= hashtable.get(key as Object);
     
 
                         if(value == 
@@ -100,8 +106,8 @@ var hashtable = hashtable
 }
 
 
-    public getKeysAsArray(hashtable: Hashtable): any[]{
-var hashtable = hashtable
+    public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
+    //var hashtable = hashtable
 
     var objectArray: any[] = new Array(hashtable.length);
 ;
@@ -130,8 +136,8 @@ objectArray[index++]= enumeration.nextElement()!;
 }
 
 
-    public getKeysAsList(hashtable: Hashtable): BasicArrayList{
-var hashtable = hashtable
+    public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
+    //var hashtable = hashtable
 
     var list: BasicArrayList = new BasicArrayListS(hashtable.length);
 ;

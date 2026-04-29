@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
@@ -57,6 +59,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { JDialog } from "./JDialog.js";
 
 import { Frame } from "./Frame.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -107,7 +111,7 @@ dialog.setVisible(true);
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap = new HashMap();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
                     var parent = parent
@@ -116,7 +120,7 @@ var modal = modal
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 }
 
@@ -146,7 +150,7 @@ this.jLabel2!.setText("Total Angular Rotation:");
     
 this.jButton1!.setText("OK");
     
-jButton1!.addActionListener(new java.awt.event.ActionListener()
+this.jButton1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -191,7 +195,7 @@ var evt = evt
     
 this.hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotationJTextField!.getText())));
     
-getParent =  as HashMapJDialogListenerInterfacethis.getParent();getParent
+getParent = this.getParent();getParent as HashMapJDialogListenerInterface
 getParent.
                     onHashMap(this.hashMap);
     

@@ -86,7 +86,7 @@ export class OwnershipPaintable extends Paintable {
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    private color: number = basicColor!.toInt()!;
+    private color: number = this.basicColor!.toInt()!;
 private constructor (){
 
             super();
@@ -146,7 +146,7 @@ this.color= basicColor!.toInt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 

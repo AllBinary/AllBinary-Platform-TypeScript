@@ -86,7 +86,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Emailthis.email.getEmail();;
+                        return this.email.getEmail(); as Email;
     
 }
 
@@ -125,7 +125,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
 
 

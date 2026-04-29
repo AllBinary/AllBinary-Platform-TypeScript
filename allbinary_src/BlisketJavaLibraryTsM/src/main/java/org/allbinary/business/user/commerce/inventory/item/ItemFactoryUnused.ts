@@ -59,13 +59,13 @@ export class ItemFactoryUnused
 
                 //@Throws(MoneyException::class)
             
-    public static getInstance(hashMap: HashMap): TableMappingInterface{
+    public static getInstance(hashMap: HashMap<any, any>): TableMappingInterface{
 var hashMap = hashMap
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TableMappingInterfacenew Item(hashMap);
+                        return new Item(hashMap) as TableMappingInterface;
     
 }
 
@@ -78,8 +78,8 @@ var request = request
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TableMappingInterfacenew Item(new RequestParams(request).
-                            toHashMap());
+                        return new Item(new RequestParams(request).
+                            toHashMap()) as TableMappingInterface;
     
 }
 

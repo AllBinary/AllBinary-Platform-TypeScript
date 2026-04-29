@@ -94,7 +94,7 @@ export class InputRobotFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputRobotFactory;
+                        return InputRobotFactory.inputRobotFactory;
     
 }
 
@@ -116,7 +116,7 @@ logUtil!.putF("Loading Libraries", "InputRobotFactory", "loadLibraries");
 
         while(iterator.hasNext())
         {
-loadLibrary( as InputRobotInterfaceiterator.next());
+InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
     
 }
 
@@ -138,7 +138,7 @@ loadLibrary( as InputRobotInterfaceiterator.next());
                                     logUtil!.putF("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface =  as SecuredNativeLibraryInterfaceinputRobotInterface;
+    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
 ;
     
 securedNativeLibraryInterface!.load();
@@ -153,7 +153,7 @@ securedNativeLibraryInterface!.load();
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly hashtable: Hashtable = new Hashtable();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private helpSetListenerInterface: HelpSetListener
 private constructor (){
@@ -181,7 +181,7 @@ private constructor (){
     var i: number = 0;
 i < screens.length; i++)
         {
-inputRobotInterface=  as InputRobotInterfacenew InputRobot(screens[i]!);
+inputRobotInterface= new InputRobot(screens[i]!) as InputRobotInterface;
     
 this.logUtil!.putF("Adding Robot: " +inputRobotInterface!.getName(), this, "getRobots");
     
@@ -294,10 +294,10 @@ this.logUtil!.putF("Loading Libraries", this, "loadLibraries");
 index < size; index++)
         {
 
-    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get( as StringnameArray[index]!)!;
+    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as String)!;
 ;
     
-loadLibrary(inputRobotInterface);
+InputRobotFactory.loadLibrary(inputRobotInterface);
     
 }
 
@@ -334,7 +334,7 @@ this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
     var index: number = 0;
 index < size; index++)
         {
-inputRobotInterface= this.get( as StringinputRobotArray[index]!);
+inputRobotInterface= this.get(inputRobotArray[index]! as String);
     
 
                         if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))
@@ -343,7 +343,7 @@ inputRobotInterface= this.get( as StringinputRobotArray[index]!);
                                     this.logUtil!.putF("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries");
     
 
-    var securedNativeLibraryInterface: SecuredNativeLibraryInterface =  as SecuredNativeLibraryInterfaceinputRobotInterface;
+    var securedNativeLibraryInterface: SecuredNativeLibraryInterface = inputRobotInterface as SecuredNativeLibraryInterface;
 ;
     
 securedNativeLibraryInterface!.unload();
@@ -358,12 +358,12 @@ securedNativeLibraryInterface!.unload();
 
                 //@Throws(Error::class)
             
-    public get(): Hashtable{
+    public get(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 
@@ -376,7 +376,7 @@ this.logUtil!.putF("Getting Robot: " +name, this, "getRobots");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as InputRobotInterfacethis.hashtable.get(name as Object);;
+                        return this.hashtable.get(name as Object); as InputRobotInterface;
     
 }
 

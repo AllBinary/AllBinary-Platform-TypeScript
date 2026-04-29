@@ -46,7 +46,7 @@ export class ColorChooser extends javax.swing.JPanel {
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 }
 

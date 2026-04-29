@@ -69,7 +69,7 @@ export class ValidatorBase
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ValidatorBase.instance;
     
 }
 
@@ -99,7 +99,7 @@ public constructor (){
 }
 
 
-    public toHashtable(): Hashtable{
+    public toHashtable(): Hashtable<any, any>{
 
 
 

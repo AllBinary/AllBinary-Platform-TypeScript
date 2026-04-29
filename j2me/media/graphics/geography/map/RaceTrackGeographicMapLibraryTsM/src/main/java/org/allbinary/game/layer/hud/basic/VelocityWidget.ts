@@ -66,7 +66,7 @@ export class VelocityWidget extends BasicHud {
 
     private readonly KILOMETERS_PER_HOUR_STR: string[] = [' ','k','m','/','h'];
 
-    private readonly totalChars: number = KILOMETERS_PER_HOUR_STR.length
+    private readonly totalChars: number = this.KILOMETERS_PER_HOUR_STR.length
                 ;
 
     private velocity: number
@@ -183,7 +183,7 @@ this.set(this.velocity -value);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paintDXY(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset);
+super.paintDXY(graphics, this.string, 0, this.totalDigits, this.KILOMETERS_PER_HOUR_STR, 0, this.totalChars, this.offset2, this.offset);
     
 }
 

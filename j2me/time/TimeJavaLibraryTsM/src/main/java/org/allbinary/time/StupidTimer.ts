@@ -65,7 +65,7 @@ export class StupidTimer
     visitBool(visitorInterface: Visitor): boolean{
     //var visitorInterface = visitorInterface
 
-    var result: Boolean =  as BooleanvisitorInterface!.visit(nullUtil!.NULL_OBJECT);;
+    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT); as Boolean;
 ;
     
 
@@ -145,7 +145,7 @@ break;
                         if(tookTooLong)
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, new Error(new StringMaker().
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.VISIT, new Error(new StringMaker().
                             append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
     
 

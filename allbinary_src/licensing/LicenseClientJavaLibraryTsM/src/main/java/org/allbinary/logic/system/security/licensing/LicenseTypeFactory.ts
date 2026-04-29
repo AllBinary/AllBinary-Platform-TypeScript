@@ -54,7 +54,7 @@ export class LicenseTypeFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LicenseTypeFactory.instance;
     
 }
 
@@ -75,7 +75,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DEMO;
+                        return this.DEMO;
     
 
                                     }
@@ -88,7 +88,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NORMAL;
+                        return this.NORMAL;
     
 
                                     }
@@ -97,7 +97,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return UNKNOWN;
+                        return this.UNKNOWN;
     
 }
 

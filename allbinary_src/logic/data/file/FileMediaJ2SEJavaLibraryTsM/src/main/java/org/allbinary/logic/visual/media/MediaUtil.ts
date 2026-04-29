@@ -69,15 +69,15 @@ export class MediaUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MediaUtil.instance;
     
 }
 
 
-    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap{
+    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
     //var bufferedImage = bufferedImage
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -171,7 +171,7 @@ var newHeight = newHeight
                         
                                     {
                                     
-    var hashMap: HashMap = this.getImageBufferPropertyHashMap(bufferedImage)!;
+    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
 ;
     
 this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFile()");
@@ -194,7 +194,7 @@ imageFile!.createNewFile();
 ;
     
 
-    var isWritten: boolean = ImageIOUtil.write( as RenderedImagenewBufferedImage, mediaData!.getName(), imageFile)!;
+    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;
 ;
     
 

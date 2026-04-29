@@ -77,7 +77,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PathFindingInfoFactory.instance;
     
 }
 
@@ -97,7 +97,7 @@ PathFindingInfoFactory.MAX= max;
 private constructor (){
 
             super();
-        this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(MAX), new BasicArrayListS(1), new BasicArrayListS(1));
+        this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(PathFindingInfoFactory.MAX), new BasicArrayListS(1), new BasicArrayListS(1));
     
 this.pathFinder= new PathFinder();
     

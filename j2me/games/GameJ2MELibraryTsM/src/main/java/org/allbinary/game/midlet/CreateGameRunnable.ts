@@ -76,10 +76,10 @@ export class CreateGameRunnable
 
     private readonly demoGameMidlet: DemoGameMidlet
 
-    private readonly hashtable: Hashtable
+    private readonly hashtable: Hashtable<any, any>
 
     private readonly startGameMidletEvent: DemoGameMidletEvent
-public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable){
+public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
 
             super();
         var demoGameMidlet = demoGameMidlet

@@ -85,7 +85,7 @@ this.hour= hour;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hour;
+                        return this.hour;
     
 }
 
@@ -161,11 +161,11 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
 ;
     
 
-    var nightMillis: number = millisForHourLocal(0)!;
+    var nightMillis: number = TimeTypeTest.millisForHourLocal(0)!;
 ;
     
 
-    var dayMillis: number = millisForHourLocal(12)!;
+    var dayMillis: number = TimeTypeTest.millisForHourLocal(12)!;
 ;
     
 Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis));

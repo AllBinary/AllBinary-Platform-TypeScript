@@ -67,7 +67,7 @@ this.setMaxSize(maxSize);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxTime;
+                        return this.maxTime;
     
 }
 
@@ -84,7 +84,7 @@ this.maxTime= maxTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxSize;
+                        return this.maxSize;
     
 }
 
@@ -101,7 +101,7 @@ this.maxSize= maxSize;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

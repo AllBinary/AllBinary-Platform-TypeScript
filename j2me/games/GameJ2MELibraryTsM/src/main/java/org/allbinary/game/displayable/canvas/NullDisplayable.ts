@@ -45,7 +45,7 @@ export class NullDisplayable extends Canvas {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return NullDisplayable.SINGLETON;
     
 }
 
@@ -59,7 +59,7 @@ private constructor (){
 
     public paint(graphics: Graphics){
 var graphics = graphics
-baseGameStatistics!.nextRefresh();
+this.baseGameStatistics!.nextRefresh();
     
 }
 

@@ -74,7 +74,7 @@ this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var command: Command =  as CommandanyType;
+    var command: Command = anyType as Command;
 ;
     
 

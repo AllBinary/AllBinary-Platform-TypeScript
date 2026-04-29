@@ -74,7 +74,7 @@ export class TransformInfoPropertiesFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoPropertiesFactory.instance;
     
 }
 
@@ -103,7 +103,7 @@ var node = node
 ;
     
 
-    var attrNode: Attr =  as Attrattributes.getNamedItem(transformInfoData!.NAME);;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME); as Attr;
 ;
     
 

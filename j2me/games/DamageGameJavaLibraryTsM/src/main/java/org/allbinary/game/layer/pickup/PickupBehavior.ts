@@ -71,6 +71,8 @@ import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 
 import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
 
+import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
+
 export class PickupBehavior
             extends Object
          implements PickupBehaviorInterface {
@@ -100,7 +102,7 @@ this.countedIndex= countedIndex;
 
         try {
             
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface =  as HealthInterfaceCompositeInterfacethis.ownerLayerInterface;
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = this.ownerLayerInterface as HealthInterfaceCompositeInterface;
 ;
     
 
@@ -147,7 +149,7 @@ var pickupLayerInterface = pickupLayerInterface
                         if(pickedUpLayerType == pickedUpLayerTypeFactory!.BEAM || pickedUpLayerType == pickedUpLayerTypeFactory!.MINE || pickedUpLayerType == pickedUpLayerTypeFactory!.PROJECTILE || pickedUpLayerType == pickedUpLayerTypeFactory!.ENHANCEMENT)
                         
                                     {
-                                    this.add( as CountedPickedUpLayerInterfaceFactoryInterfacepickedUpLayerInterfaceFactoryInterface);
+                                    this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface);
     
 
                                     }
@@ -157,7 +159,7 @@ var pickupLayerInterface = pickupLayerInterface
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
     
 collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInterface);
@@ -173,7 +175,7 @@ collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInter
                                     }
                                 
                         else {
-                            this.doPickup( as PickupProcessorInterfacepickedUpLayerInterfaceFactoryInterface);
+                            this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface);
     
 
                         }
@@ -210,11 +212,11 @@ this.addAt(countedPickedUpLayerInterfaceFactoryInterface, partIndex);
     //var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfaceFactoryInterface
     //var partIndex = partIndex
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
     
 
-    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart =  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[partIndex]!;
+    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart = collidableDestroyableDamageableLayer!.getPartInterfaceArray()[partIndex]! as CountedLayerInterfaceFactoryPart;
 ;
     
 countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() +countedPickedUpLayerInterfaceFactoryInterface!.getTotal());
@@ -225,7 +227,7 @@ countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() 
     public getFirstAvailableCountedLayerInterfaceFactory(pickedUpLayerTypeArray: PickedUpLayerType[]): CountedLayerInterfaceFactoryPart{
 var pickedUpLayerTypeArray = pickedUpLayerTypeArray
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
     
 
@@ -253,7 +255,7 @@ var pickedUpLayerTypeArray = pickedUpLayerTypeArray
     var index: number = this.countedIndex;
 index < size; index++)
         {
-nextCountedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]!;
+nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]! as CountedLayerInterfaceFactoryPart;
     
 countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCountedPickedUpLayerInterfaceFactory();
     
@@ -308,7 +310,7 @@ var slotIndex = slotIndex
 ;
     
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
     
 
@@ -332,7 +334,7 @@ var slotIndex = slotIndex
     var index: number = this.countedIndex;
 index < size; index++)
         {
-nextCountedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]!;
+nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]! as CountedLayerInterfaceFactoryPart;
     
 
                         if(nextCountedLayerInterfaceFactory!.getTotal() > 0)
@@ -376,7 +378,7 @@ nextCountedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartcollidable
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return countedIndex;
+                        return this.countedIndex;
     
 }
 

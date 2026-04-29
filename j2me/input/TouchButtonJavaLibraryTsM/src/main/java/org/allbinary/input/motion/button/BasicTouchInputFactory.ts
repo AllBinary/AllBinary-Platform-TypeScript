@@ -74,7 +74,7 @@ export class BasicTouchInputFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return BasicTouchInputFactory.SINGLETON;
     
 }
 
@@ -216,7 +216,7 @@ this.logUtil!.putF(new StringMaker().
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-touchButtonInput=  as TouchButtonInputlist.objectArray[index]!;
+touchButtonInput= list.objectArray[index]! as TouchButtonInput;
     
 touchButtonInput!.update(inputToGameKeyMapping);
     
@@ -230,7 +230,7 @@ touchButtonInput!.update(inputToGameKeyMapping);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

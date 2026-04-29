@@ -96,7 +96,7 @@ export class ImageUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageUtil.instance;
     
 }
 
@@ -180,11 +180,11 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round(imageData!.width *percent /100);
+    var newWidth: number = Math.round((imageData!.width *percent /100));
 ;
     
 
-    var newHeight: number = Math.round(imageData!.height *percent /100);
+    var newHeight: number = Math.round((imageData!.height *percent /100));
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
@@ -236,11 +236,11 @@ bufferedImage= bufferedImageArray[index]!;
 imageData= bufferedImage!.getImageData();
     
 
-    var newWidth: number = Math.round(imageData!.width *percent);
+    var newWidth: number = Math.round((imageData!.width *percent));
 ;
     
 
-    var newHeight: number = Math.round(imageData!.height *percent);
+    var newHeight: number = Math.round((imageData!.height *percent));
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWidth, newHeight, scale);
@@ -380,7 +380,7 @@ ratioY= heightRatio;
                                     }
                                 
 this.logUtil!.putF(new StringMaker().
-                            appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, CREATE_BUFFERED_IMAGE);
+                            appendfloat(width)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(height)!.append(this.commonSeps!.COLON)!.appendint(newWidth)!.append(this.commonSeps!.FORWARD_SLASH)!.appendint(newHeight)!.append(this.commonSeps!.COLON)!.appendfloat(widthRatio)!.append(this.commonSeps!.FORWARD_SLASH)!.appendfloat(heightRatio)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
     
 
     var dx: number = 0;

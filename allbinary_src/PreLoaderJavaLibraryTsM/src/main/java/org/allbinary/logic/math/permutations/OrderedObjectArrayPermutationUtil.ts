@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { Arrays } from "../../../../../java/util/Arrays.js";
 
     
@@ -46,6 +48,8 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ObjectPermutationVisitor } from "./ObjectPermutationVisitor.js";
+
 export class OrderedObjectArrayPermutationUtil
             extends Object
          {
@@ -58,7 +62,7 @@ export class OrderedObjectArrayPermutationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OrderedObjectArrayPermutationUtil.instance;
     
 }
 

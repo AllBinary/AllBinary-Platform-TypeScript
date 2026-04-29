@@ -70,7 +70,7 @@ export class CustomLoaderTag extends CustomTagSupport {
 
     private webappPath: string
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -173,7 +173,7 @@ setMethod!.invoke(anyType, methodArgs);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)

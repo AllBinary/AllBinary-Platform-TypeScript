@@ -49,7 +49,7 @@ export class TransformInfoData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoData.instance;
     
 }
 
@@ -87,9 +87,9 @@ private constructor (){
 
     public readonly LABEL: string = "TRANSFORM_INFO_LABEL";
 
-    public readonly OWNER: string = "OWNER_" +NAME;
+    public readonly OWNER: string = "OWNER_" +this.NAME;
 
-    public readonly PARTIAL: string = "PARTIAL_" +NAME;
+    public readonly PARTIAL: string = "PARTIAL_" +this.NAME;
 
 }
                 

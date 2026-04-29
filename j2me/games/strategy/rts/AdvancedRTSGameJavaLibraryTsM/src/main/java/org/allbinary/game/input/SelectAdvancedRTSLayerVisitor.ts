@@ -82,7 +82,7 @@ this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var selectedLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayeranyType;
+    var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;
 ;
     
 
@@ -90,7 +90,7 @@ var anyType = anyType
                         
                                     {
                                     
-    var rtsGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerselectedLayer;
+    var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;
 ;
     
 
@@ -117,13 +117,13 @@ var anyType = anyType
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-currentRTSLayer=  as RTSLayerlist.get(index);;
+currentRTSLayer= list.get(index); as RTSLayer;
     
 
                         if(currentRTSLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    unitLayer=  as UnitLayercurrentRTSLayer;
+                                    unitLayer= currentRTSLayer as UnitLayer;
     
 unitLayer!.setParentLayer(rtsGameLayer);
     

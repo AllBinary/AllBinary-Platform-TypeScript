@@ -89,7 +89,7 @@ this.workFlowsVector= WorkFlowEntityFactory.getInstance()!.create2()!.get(this.g
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 
@@ -151,7 +151,7 @@ var document = document
 index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface =  as WorkFlowInterfacethis.workFlowsVector!.get(index);;
+    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index); as WorkFlowInterface;
 ;
     
 }

@@ -67,7 +67,7 @@ this.vehicleFrictionProperties= vehicleFrictionProperties;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return vehicleFrictionProperties;
+                        return this.vehicleFrictionProperties;
     
 }
 
@@ -84,7 +84,7 @@ this.vehicleFrictionProperties= vehicleFrictionProperties;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return velocityProperties;
+                        return this.velocityProperties;
     
 }
 

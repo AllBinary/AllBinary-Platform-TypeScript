@@ -100,11 +100,11 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
 }
 
 
-    public toTransformInfoPropertiesHashMap(): HashMap{
+    public toTransformInfoPropertiesHashMap(): HashMap<any, any>{
 
         try {
             
-    var transformInfoPropertiesHashMap: HashMap = new HashMap();
+    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -148,7 +148,7 @@ this.document= DomDocumentFileHelper.createDocument(xmlFile);
     var index: number = 0;
 index < size; index++)
         {
-node=  as NodetransformInfoNodeVector!.get(index);;
+node= transformInfoNodeVector!.get(index); as Node;
     
 transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node);
     

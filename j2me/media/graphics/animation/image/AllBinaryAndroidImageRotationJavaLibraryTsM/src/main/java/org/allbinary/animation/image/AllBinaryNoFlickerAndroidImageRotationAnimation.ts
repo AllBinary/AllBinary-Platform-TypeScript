@@ -212,7 +212,7 @@ this.updateImage();
 
 
     updateImage(){
-androidImageUtil!.rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint);
+this.androidImageUtil!.rotate(this.twoImages[this.bufferedImageIndex]!, originalImage, matrix, imageModifierUtil!.paint);
     
 this.swap();
     

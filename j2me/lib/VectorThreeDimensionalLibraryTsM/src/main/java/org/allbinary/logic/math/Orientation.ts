@@ -55,17 +55,17 @@ export class Orientation
 var yaw = yaw
 var pitch = pitch
 var roll = roll
-SINGLETON.yaw.setint(yaw);
+Orientation.SINGLETON.yaw.setint(yaw);
     
-SINGLETON.pitch.setint(pitch);
+Orientation.SINGLETON.pitch.setint(pitch);
     
-SINGLETON.roll.setint(roll);
+Orientation.SINGLETON.roll.setint(roll);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return Orientation.SINGLETON;
     
 }
 

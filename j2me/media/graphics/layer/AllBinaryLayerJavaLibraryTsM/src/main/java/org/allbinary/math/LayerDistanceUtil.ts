@@ -58,7 +58,7 @@ export class LayerDistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LayerDistanceUtil.instance;
     
 }
 
@@ -80,7 +80,7 @@ export class LayerDistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy));;
+                        return Math.round(this.mathUtil!.sqrt((dx *dx) +(dy *dy)););
     
 }
 
@@ -104,7 +104,7 @@ export class LayerDistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz));;
+                        return Math.round(this.mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz)););
     
 }
 
@@ -124,7 +124,7 @@ export class LayerDistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy));;
+                        return Math.round(this.mathUtil!.sqrt((dx *dx) +(dy *dy)););
     
 }
 

@@ -117,7 +117,7 @@ this.getCurrentStatePaintable()!.paint(graphics);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return helpPaintableInterface;
+                        return this.helpPaintableInterface;
     
 }
 
@@ -134,7 +134,7 @@ this.currentStatePaintable= currentStatePaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentStatePaintable;
+                        return this.currentStatePaintable;
     
 }
 
@@ -144,7 +144,7 @@ this.currentStatePaintable= currentStatePaintable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mainDemoStatePaintable;
+                        return this.mainDemoStatePaintable;
     
 }
 

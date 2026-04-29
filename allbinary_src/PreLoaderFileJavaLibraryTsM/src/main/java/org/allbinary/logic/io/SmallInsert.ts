@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { DataOutputStream } from "../../../../java/io/DataOutputStream.js";
 
     

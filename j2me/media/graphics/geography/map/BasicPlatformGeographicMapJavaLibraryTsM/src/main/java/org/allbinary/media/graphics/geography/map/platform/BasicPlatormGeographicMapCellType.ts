@@ -105,7 +105,7 @@ public constructor (types: BasicArrayList){
     var index: number = 0;
 index < size; index++)
         {
-typeAsInteger= ( as Integertypes.get(index););
+typeAsInteger= (types.get(index); as Integer);
     
 type= typeAsInteger!.toInt();
     

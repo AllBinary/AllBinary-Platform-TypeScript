@@ -353,7 +353,7 @@ index < numberOfViews; index++)
 ;
     
 
-    var attrNode: Attr =  as AttrviewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME);;
+    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME); as Attr;
 ;
     
 
@@ -400,7 +400,7 @@ index < numberOfViews; index++)
             
     public getName(): string{
 
-    var attrNode: Attr =  as Attrthis.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
 ;
     
 
@@ -417,7 +417,7 @@ index < numberOfViews; index++)
     public setName(name: string){
 var name = name
 
-    var attrNode: Attr =  as Attrthis.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);;
+    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
 ;
     
 attrNode!.setValue(name);
@@ -511,7 +511,7 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
@@ -552,7 +552,7 @@ var nodeName = nodeName
 index < size; index++)
         {
 
-    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode).
@@ -625,7 +625,7 @@ index < length; index++)
 ;
     
 
-    var attrNode: Attr =  as Attrattributes.getNamedItem(GROUP);;
+    var attrNode: Attr = attributes.getNamedItem(GROUP); as Attr;
 ;
     
 
@@ -676,7 +676,7 @@ break;
 index < size; index++)
         {
 
-    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
+    var viewNode: Node = viewNodeVector!.get(index); as Node;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));

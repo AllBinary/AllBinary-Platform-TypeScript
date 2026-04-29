@@ -92,7 +92,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 }
 
 
-    private currentPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
+    private currentPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
                 //@Throws(Error::class)
             
@@ -124,7 +124,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
                                     }
                                 
-this.currentPriorityRunnable=  as PriorityRunnablerunnable;
+this.currentPriorityRunnable= runnable as PriorityRunnable;
     
 
                         if(!(this.currentPriorityRunnable == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE))
@@ -217,7 +217,7 @@ this.taskQueue= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-runnable=  as PriorityRunnablethis.taskQueue!.get(index);;
+runnable= this.taskQueue!.get(index); as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -296,7 +296,7 @@ this.taskQueue!.addAt(index, task);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_RUNNABLE;
+                        return this.NULL_RUNNABLE;
     
 
                                     }
@@ -305,7 +305,7 @@ this.taskQueue!.addAt(index, task);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Runnablethis.taskQueue!.removeAt(0);;
+                        return this.taskQueue!.removeAt(0); as Runnable;
     
 }
 

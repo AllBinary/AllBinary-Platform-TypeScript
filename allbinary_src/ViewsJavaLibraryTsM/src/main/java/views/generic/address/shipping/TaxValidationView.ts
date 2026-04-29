@@ -115,7 +115,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
 ;
     
 

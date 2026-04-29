@@ -123,7 +123,7 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
 
     downloadableItemVector: Vector
 
-    private requestHashMap: HashMap
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -131,7 +131,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -145,7 +145,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -155,7 +155,7 @@ this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE_ID;
+                        return InventoryItemView.TYPE_ID;
     
 }
 
@@ -175,7 +175,7 @@ this.setRequestHashMap(new MultipartRequestParams(this.request).
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemimageFileItemObject;
+    var fileItem: FileItem = imageFileItemObject as FileItem;
 ;
     
 
@@ -221,7 +221,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
 
                                     }
                                 
-this.itemInterface=  as ItemInterfacenew BasicItem(this.getRequestHashMap());
+this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
     
 }
 
@@ -247,7 +247,7 @@ this.itemInterface=  as ItemInterfacenew BasicItem(this.getRequestHashMap());
     var index: number = 0;
 index < size; index++)
         {
-downloadableItem=  as DownloadableItemthis.downloadableItemVector!.get(index);;
+downloadableItem= this.downloadableItemVector!.get(index); as DownloadableItem;
     
 vector.add(new DownloadableItemView(downloadableItem));
     
@@ -329,7 +329,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 index < size; index++)
         {
 
-    var fieldName: string =  as StringfieldNameArray[index]!;
+    var fieldName: string = fieldNameArray[index]! as String;
 ;
     
 
@@ -345,7 +345,7 @@ index < size; index++)
 ;
     
 
-    var fileItem: FileItem =  as FileItemthis.getRequestHashMap()!.get(BasicItemData.IMAGE);;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE); as FileItem;
 ;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);
@@ -358,19 +358,19 @@ this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.im
 }
 
 
-    setRequestHashMap(requestHashMap: HashMap){
+    setRequestHashMap(requestHashMap: HashMap<any, any>){
 var requestHashMap = requestHashMap
 this.requestHashMap= requestHashMap;
     
 }
 
 
-    public getRequestHashMap(): HashMap{
+    public getRequestHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return requestHashMap;
+                        return this.requestHashMap;
     
 }
 

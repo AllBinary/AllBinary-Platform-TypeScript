@@ -72,7 +72,7 @@ export interface InventoryEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap)
+    public update(updatedValues: HashMap<any, any>)
 
 }
                 

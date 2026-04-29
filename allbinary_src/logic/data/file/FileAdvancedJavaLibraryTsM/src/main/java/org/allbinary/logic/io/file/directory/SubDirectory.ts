@@ -66,7 +66,7 @@ export class SubDirectory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SubDirectory.instance;
     
 }
 
@@ -94,7 +94,7 @@ var files = files
 index < size; index++)
         {
 
-    var file: AbFile =  as AbFilefiles.get(index);;
+    var file: AbFile = files.get(index); as AbFile;
 ;
     
 stringBuffer!.append(file.getPath());
@@ -126,7 +126,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.search(fileFilter, file, true);;
+                        return this.directory.search(fileFilter, file, true);;
     
 }
 
@@ -137,7 +137,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.search(file, true);;
+                        return this.directory.search(file, true);;
     
 }
 
@@ -149,7 +149,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.search(searchValue, file, true);;
+                        return this.directory.search(searchValue, file, true);;
     
 }
 
@@ -161,7 +161,7 @@ var file = file
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.search(level, file, true);;
+                        return this.directory.search(level, file, true);;
     
 }
 

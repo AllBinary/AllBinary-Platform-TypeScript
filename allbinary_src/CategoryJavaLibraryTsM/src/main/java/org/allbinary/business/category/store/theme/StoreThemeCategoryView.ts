@@ -60,7 +60,7 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){
-            super( as StoreThemeCategoryInterfacecategoryInterface);
+            super(categoryInterface as StoreThemeCategoryInterface);
                         //var categoryInterface = categoryInterface
 
 
@@ -78,11 +78,11 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface =  as StoreThemeCategoryInterfacethis.getCategoryInterface();;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface(); as StoreThemeCategoryInterface;
 ;
     
 
-    var themeValidationArray: ThemeValidation[] =  as Array<ThemeValidation?>storeThemeCategoryInterface!.getThemes()!.toArray();;
+    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray(); as Array<ThemeValidation?>;
 ;
     
 Arrays.sort(themeValidationArray, new ThemeComparator());
@@ -101,7 +101,7 @@ Arrays.sort(themeValidationArray, new ThemeComparator());
 index < size; index++)
         {
 
-    var themeValidation: ThemeValidation =  as ThemeValidationthemeValidationArray[index]!;
+    var themeValidation: ThemeValidation = themeValidationArray[index]! as ThemeValidation;
 ;
     
 node.appendChild(themeValidation!.toXmlNode(document));

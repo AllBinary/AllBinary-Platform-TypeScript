@@ -112,15 +112,15 @@ this.id= new QuoteRequestIdGenerator().
     
 this.setUserName(userName);
     
-this.setProjectInfo( as Stringrequest.getParameter(quoteRequestData!.PROJECT_INFO));
+this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String);
     
-this.setUserComments( as Stringrequest.getParameter(quoteRequestData!.CUSTOMER_COMMENTS));
+this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String);
     
-this.setBudget( as Stringrequest.getParameter(quoteRequestData!.BUDGET));
+this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String);
     
-this.setTimeFrame( as Stringrequest.getParameter(quoteRequestData!.TIMEFRAME));
+this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String);
     
-this.setComments( as Stringrequest.getParameter(quoteRequestData!.COMMENTS));
+this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -133,7 +133,7 @@ this.setComments( as Stringrequest.getParameter(quoteRequestData!.COMMENTS));
                                 
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -141,19 +141,19 @@ public constructor (hashMap: HashMap){
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
-this.id=  as StringhashMap!.get(quoteRequestData!.ID);;
+this.id= hashMap!.get(quoteRequestData!.ID); as String;
     
-this.setUserName( as StringhashMap!.get(UserData.USERNAME));
+this.setUserName(hashMap!.get(UserData.USERNAME) as String);
     
-this.setProjectInfo( as StringhashMap!.get(quoteRequestData!.PROJECT_INFO));
+this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String);
     
-this.setUserComments( as StringhashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS));
+this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String);
     
-this.setBudget( as StringhashMap!.get(quoteRequestData!.BUDGET));
+this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String);
     
-this.setTimeFrame( as StringhashMap!.get(quoteRequestData!.TIMEFRAME));
+this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String);
     
-this.setComments( as StringhashMap!.get(quoteRequestData!.COMMENTS));
+this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -414,13 +414,13 @@ values.add(time);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
 
-    var values: HashMap = new HashMap();
+    var values: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 values.put(UserData.USERNAME, userName);

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -82,6 +84,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { JPanel } from "./JPanel.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -217,11 +221,11 @@ iconHeightList!.add(864);
     var index2: number = 0;
 index2 < size; index2++)
         {
-width= get =  as IntegericonWidthList!.get(index2);get
+width= get = iconWidthList!.get(index2);get as Integer
 get.
                     toInt();
     
-height= get =  as IntegericonHeightList!.get(index2);get
+height= get = iconHeightList!.get(index2);get as Integer
 get.
                     toInt();
     
@@ -299,7 +303,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 
@@ -316,7 +320,7 @@ this.aboveJButton= new javax.swing.JButton();
     
 this.aboveJButton!.setText("Process");
     
-aboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.aboveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

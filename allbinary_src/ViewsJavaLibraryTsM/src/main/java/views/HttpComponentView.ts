@@ -122,7 +122,7 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NO_TYPE;
+                        return this.NO_TYPE;
     
 }
 
@@ -132,7 +132,7 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return transformDocumentInterface;
+                        return this.transformDocumentInterface;
     
 }
 
@@ -169,7 +169,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.domNodeInterfaceVector!.get(index);;
+    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index); as DomNodeInterface;
 ;
     
 this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()));

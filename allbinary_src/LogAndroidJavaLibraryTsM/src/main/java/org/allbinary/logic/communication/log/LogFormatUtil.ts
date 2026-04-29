@@ -233,7 +233,7 @@ stringBuffer!.append(this.STACK_TRACE);
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace( as Errorexception));
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
     
 
                                     }

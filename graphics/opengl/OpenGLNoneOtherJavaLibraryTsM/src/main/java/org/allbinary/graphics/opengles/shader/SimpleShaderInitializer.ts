@@ -49,7 +49,7 @@ export class SimpleShaderInitializer extends ShaderInitializer {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SimpleShaderInitializer.instance;
     
 }
 

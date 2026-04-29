@@ -72,7 +72,7 @@ export class TransformsGeneratorUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformsGeneratorUtil.instance;
     
 }
 
@@ -191,7 +191,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
 index < size; index++)
         {
 
-    var transformInfoObjectConfigComponent: TransformInfoDomNode =  as TransformInfoDomNodetransformInfoObjectConfigComponentVector!.get(index);;
+    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index); as TransformInfoDomNode;
 ;
     
 TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface);

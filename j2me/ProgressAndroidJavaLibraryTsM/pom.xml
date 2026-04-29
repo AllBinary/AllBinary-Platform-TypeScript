@@ -134,7 +134,7 @@
         
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>
@@ -150,7 +150,7 @@
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>microemu-midpTs</artifactId>
+                    <artifactId>microemu-midp-for-ts</artifactId>
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>
@@ -172,7 +172,7 @@
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>microemu-midpTs</artifactId>
+                    <artifactId>microemu-midp-for-ts</artifactId>
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>
@@ -193,7 +193,7 @@
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>
-                    <artifactId>microemu-midpTs</artifactId>
+                    <artifactId>microemu-midp-for-ts</artifactId>
                     <groupId>org.microemu</groupId>
                 </exclusion>
                 <exclusion>

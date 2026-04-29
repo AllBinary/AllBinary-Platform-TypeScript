@@ -91,7 +91,7 @@ export class DomHelper
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DomHelper.instance;
     
 }
 
@@ -320,7 +320,7 @@ var nodeList = nodeList
 ;
     
 
-    var childNodeList: NodeList = getChildNodeList(nodeName, nodeList)!;
+    var childNodeList: NodeList = this.getChildNodeList(nodeName, nodeList)!;
 ;
     
 
@@ -467,7 +467,7 @@ var nodeList = nodeList
 index < numberOfNodes; index++)
         {
 
-    var node: Node =  as NodenodeList!.get(index);;
+    var node: Node = nodeList!.get(index); as Node;
 ;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");

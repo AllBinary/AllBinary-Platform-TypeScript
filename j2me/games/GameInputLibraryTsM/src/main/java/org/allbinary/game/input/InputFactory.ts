@@ -63,7 +63,7 @@ export class InputFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InputFactory.instance;
     
 }
 
@@ -80,7 +80,7 @@ export class InputFactory
 
     readonly inputIntegerArray: Input[] = new Array(this.MAX);
 
-    public readonly NO_INPUT: Input = new Input(0, commonStrings!.UNKNOWN);
+    public readonly NO_INPUT: Input = new Input(0, this.commonStrings!.UNKNOWN);
 private constructor (){
 
             super();
@@ -134,7 +134,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NO_INPUT;
+                        return this.NO_INPUT;
     
 
                                     }
@@ -143,7 +143,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputIntegerArray[id]!;
+                        return this.inputIntegerArray[id]!;
     
 }
 

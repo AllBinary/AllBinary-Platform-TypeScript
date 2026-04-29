@@ -134,7 +134,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
 stringBuffer!.append(href);
     
 
-    var abPath: AbPath =  as AbPathnew AbFilePath(stringBuffer!.toString());
+    var abPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
 ;
     
 

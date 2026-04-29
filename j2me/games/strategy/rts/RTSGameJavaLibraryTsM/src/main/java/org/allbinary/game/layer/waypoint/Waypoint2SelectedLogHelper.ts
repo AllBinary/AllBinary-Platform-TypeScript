@@ -79,7 +79,7 @@ export class Waypoint2SelectedLogHelper extends Waypoint2LogHelper {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return Waypoint2SelectedLogHelper.instance;
     
 }
 
@@ -139,7 +139,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: initRange");
     //var isShorterThanCurrentTargetDistance = isShorterThanCurrentTargetDistance
     //var isCurrentTargetDestroyed = isCurrentTargetDestroyed
 
-                        if(waypointBehaviorBase!.isWaypointListEmptyOrOnlyTargets() && waypointBehaviorBase!.isInSensorRange( as CollidableDestroyableDamageableLayerlayerInterface, anotherTargetDistance))
+                        if(waypointBehaviorBase!.isWaypointListEmptyOrOnlyTargets() && waypointBehaviorBase!.isInSensorRange(layerInterface as CollidableDestroyableDamageableLayer, anotherTargetDistance))
                         
                                     {
                                     

@@ -109,7 +109,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent( as ImageComparisonResultsEventallBinaryEventObject);
+this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
     
 }
 
@@ -120,7 +120,7 @@ this.onImageComparisonResultsEvent( as ImageComparisonResultsEventallBinaryEvent
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -147,11 +147,11 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonResultsEvent: ImageComparisonResultsEvent =  as ImageComparisonResultsEventthis.imageComparisonInfoVector!.get(0);;
+    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0); as ImageComparisonResultsEvent;
 ;
     
 
-    var imageComparisonInfo: ImageComparisonResult =  as ImageComparisonResultimageComparisonResultsEvent!.getImageComparisonResult();;
+    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult(); as ImageComparisonResult;
 ;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
@@ -176,7 +176,7 @@ constrainedMotionRectangles!.applyMotionRectangleConstraints(consolidatedMotionR
     
 ConstrainedMotionRectanglesResultsCacheSingleton.getInstance()!.add(new MotionRectanglesResultsFrameCacheable(constrainedMotionRectangles, imageComparisonInfo!.getFrameTwo()));
     
-this.fireEvent(new MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(),  as MotionRectanglesconstrainedMotionRectangles));
+this.fireEvent(new MotionRectanglesResultsEvent(this, imageComparisonInfo!.getFrameTwo(), constrainedMotionRectangles as MotionRectangles));
     
 this.imageComparisonInfoVector!.remove(imageComparisonResultsEvent);
     

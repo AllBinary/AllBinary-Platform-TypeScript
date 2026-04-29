@@ -58,12 +58,12 @@ export class BasicColorCacheFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicColorCacheFactory.instance;
     
 }
 
 
-    private readonly hashtable: Hashtable = new Hashtable();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 private constructor (){
 
             super();
@@ -81,7 +81,7 @@ this.hashtable.put(basicDefaultColor!.toInt(), basicDefaultColor);
     public getAndOrCreate(integer: number): BasicColor{
     //var integer = integer
 
-    var basicColor: BasicColor =  as BasicColorthis.hashtable.get(integer as Object);;
+    var basicColor: BasicColor = this.hashtable.get(integer as Object); as BasicColor;
 ;
     
 

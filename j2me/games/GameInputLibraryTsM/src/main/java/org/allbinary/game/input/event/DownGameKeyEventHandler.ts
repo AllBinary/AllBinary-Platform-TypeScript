@@ -60,7 +60,7 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DownGameKeyEventHandler.instance;
     
 }
 
@@ -77,7 +77,7 @@ var deviceId = deviceId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instanceArray[playerInputId]!;
+                        return DownGameKeyEventHandler.instanceArray[playerInputId]!;
     
 }
 
@@ -88,7 +88,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instanceArray[playerInputId]!;
+                        return DownGameKeyEventHandler.instanceArray[playerInputId]!;
     
 }
 
@@ -106,10 +106,10 @@ super.removeAllListeners();
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeAllListeners();
+DownGameKeyEventHandler.instanceArray[index]!.removeAllListeners();
     
 }
 
@@ -125,10 +125,10 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
+DownGameKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
     
 }
 
@@ -145,10 +145,10 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = DownGameKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeListener(eventListenerInterface);
+DownGameKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
     
 }
 

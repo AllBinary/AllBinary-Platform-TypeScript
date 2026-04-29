@@ -70,7 +70,7 @@ export class UserConfiguration
 public constructor (){
 
             super();
-        this.userEmailConfigurationInterface=  as UserEmailConfigurationInterfacenew UserEmailConfiguration();
+        this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(0);
     
@@ -78,15 +78,15 @@ this.timeLastModified= new TimeLastModified(0);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.userEmailConfigurationInterface=  as UserEmailConfigurationInterfacenew UserEmailConfiguration(hashMap);
+this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
     
-this.timeCreated= new TimeCreated( as StringhashMap!.get(EntryData.getInstance()!.TIMECREATED));
+this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED) as String);
     
-this.timeLastModified= new TimeLastModified( as StringhashMap!.get(EntryData.getInstance()!.LASTMODIFIED));
+this.timeLastModified= new TimeLastModified(hashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as String);
     
 }
 

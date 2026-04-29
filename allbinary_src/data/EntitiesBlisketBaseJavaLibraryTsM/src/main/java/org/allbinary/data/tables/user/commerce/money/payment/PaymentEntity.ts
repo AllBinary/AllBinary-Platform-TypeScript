@@ -123,17 +123,17 @@ var index = index
 
         try {
             
-    var updateKeyAndValue: HashMap = new HashMap();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var whereKeyAndValue: HashMap = new HashMap();
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereKeyAndValue!.put(UserData.USERNAME, userName);
     
 
-    var paymentInterface: PaymentInterface = getDefault(userName)!;
+    var paymentInterface: PaymentInterface = this.getDefault(userName)!;
 ;
     
 
@@ -193,7 +193,7 @@ var userName = userName
 ;
     
 
-    var keyAndValue: HashMap = new HashMap();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyAndValue!.put(UserData.USERNAME, userName);
@@ -215,7 +215,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var paymentHashMap: HashMap =  as HashMappaymentList!.get(index);;
+    var paymentHashMap: HashMap<any, any> = paymentList!.get(index); as HashMap<any, any>;
 ;
     
 
@@ -270,11 +270,11 @@ var userName = userName
 
         try {
             
-    var paymentHashMap: HashMap = new HashMap();
+    var paymentHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var updateKeyAndValue: HashMap = new HashMap();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
@@ -306,7 +306,7 @@ paymentHashMap= super.getRow(updateKeyAndValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PaymentInterfacepayment;
+                        return payment as PaymentInterface;
     
 
                                     }
@@ -351,12 +351,12 @@ var index = index
 
         try {
             
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(PaymentData.ID,  as Stringindex.toString());
+whereHashMap!.put(PaymentData.ID, index.toString() as String);
     
 super.deleteWhere(whereHashMap);
     

@@ -67,7 +67,7 @@ export class TransformInfoRequestHelper extends ModifyTable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private transformInfoInterface: TransformInfoHttpInterface
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -85,7 +85,7 @@ this.transformInfoInterface= new TransformInfoHttpStoreNoManipulation(properties
 ;
     
 
-    var hashMapData: HashMap = this.transformInfoInterface!.toHashMap()!;
+    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;
 ;
     
 TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
@@ -196,7 +196,7 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
     var success: string = "Delete Successfully";
 ;
     
-TransformInfoEntityBuilder.getInstance()!.delete( as Stringthis.transformInfoInterface!.getKey());
+TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

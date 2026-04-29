@@ -60,7 +60,7 @@ export class UpKeyEventHandler extends UpKeyEventHandlerBase {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return UpKeyEventHandler.instance;
     
 }
 
@@ -77,7 +77,7 @@ var deviceId = deviceId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instanceArray[playerInputId]!;
+                        return UpKeyEventHandler.instanceArray[playerInputId]!;
     
 }
 
@@ -88,7 +88,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instanceArray[playerInputId]!;
+                        return UpKeyEventHandler.instanceArray[playerInputId]!;
     
 }
 
@@ -106,10 +106,10 @@ super.removeAllListeners();
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeAllListeners();
+UpKeyEventHandler.instanceArray[index]!.removeAllListeners();
     
 }
 
@@ -125,10 +125,10 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
+UpKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
     
 }
 
@@ -144,10 +144,10 @@ super.removeListener(eventListenerInterface);
 
 
                         for (
-    var index: number = instanceArray!.length -1;
+    var index: number = UpKeyEventHandler.instanceArray!.length -1;
 index >= 0; index--)
         {
-instanceArray[index]!.removeListener(eventListenerInterface);
+UpKeyEventHandler.instanceArray[index]!.removeListener(eventListenerInterface);
     
 }
 

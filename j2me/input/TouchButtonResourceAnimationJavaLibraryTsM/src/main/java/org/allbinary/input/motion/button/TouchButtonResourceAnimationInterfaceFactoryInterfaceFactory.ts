@@ -87,6 +87,8 @@ import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/Imag
         
 import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
 
+import { TouchButtonResource } from "./TouchButtonResource.js";
+
 import { TouchButtonGenericActionResource } from "./TouchButtonGenericActionResource.js";
 
 import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
@@ -116,7 +118,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
 }
 
 public constructor (name: string){
-            super(name, new Hashtable(), new Hashtable(), new Hashtable());
+            super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
                         //var name = name
 
 

@@ -63,7 +63,7 @@ export class MyGraphicItemEventService
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.add( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
+MyGraphicItemEventService.listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 
@@ -71,7 +71,7 @@ listenerList!.add( as Class<*>listenerconstructor,  as java.util.EventListenerli
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.remove( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
+MyGraphicItemEventService.listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
     
 }
 
@@ -98,10 +98,10 @@ i < listeners.length; )
                         
                                     {
                                     
-                        if(evt.getCommand()!.compareTo(SELECT) == 0)
+                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.SELECT) == 0)
                         
                                     {
-                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
+                                     = listeners[i +1]! as MyGraphicItemEventListener
 .
                     highlight(evt);
     
@@ -109,10 +109,10 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(DESELECT) == 0)
+                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DESELECT) == 0)
                         
                                     {
-                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
+                                     = listeners[i +1]! as MyGraphicItemEventListener
 .
                     deselect(evt);
     
@@ -120,10 +120,10 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(DELETE) == 0)
+                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DELETE) == 0)
                         
                                     {
-                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
+                                     = listeners[i +1]! as MyGraphicItemEventListener
 .
                     delete(evt);
     
@@ -131,10 +131,10 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(DUPLICATE) == 0)
+                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DUPLICATE) == 0)
                         
                                     {
-                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
+                                     = listeners[i +1]! as MyGraphicItemEventListener
 .
                     duplicate(evt);
     
@@ -142,10 +142,10 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(ROTATE) == 0)
+                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.ROTATE) == 0)
                         
                                     {
-                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
+                                     = listeners[i +1]! as MyGraphicItemEventListener
 .
                     rotate(evt);
     

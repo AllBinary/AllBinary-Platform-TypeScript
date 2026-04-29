@@ -49,14 +49,14 @@ export class BasicColorUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicColorUtil.instance;
     
 }
 
 
     public readonly ZERO_ARRAY: BasicColor[] = [];
 
-    public readonly ALPHA: number = Math.round0xFF000000;
+    public readonly ALPHA: number = Math.round(0xFF000000);
 
     public readonly isAlpha: boolean = true;
 

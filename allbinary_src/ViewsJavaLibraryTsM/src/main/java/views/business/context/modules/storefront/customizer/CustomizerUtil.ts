@@ -85,7 +85,7 @@ export class CustomizerUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CustomizerUtil.instance;
     
 }
 
@@ -120,7 +120,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecustomizerTransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -159,7 +159,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecustomizerTransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -295,7 +295,7 @@ transformInfoInterface!.setData(documentString);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo =  as TransformInfoallViewsToBeModified!.get(index);;
+    var transformInfo: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
 ;
     
 
@@ -320,7 +320,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -459,7 +459,7 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModified!.get(index);;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
 ;
     
 
@@ -467,7 +467,7 @@ index < size; index++)
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 

@@ -71,7 +71,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis.styleValidationInterface);
+this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
     
 }
 

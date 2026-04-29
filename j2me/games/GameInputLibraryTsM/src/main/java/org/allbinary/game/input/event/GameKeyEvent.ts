@@ -127,7 +127,7 @@ this.repeated= repeated;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return key;
+                        return this.key;
     
 }
 
@@ -155,7 +155,7 @@ stringBuffer!.appendint(this.getKey());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return originalKey;
+                        return this.originalKey;
     
 }
 
@@ -172,7 +172,7 @@ this.originalKey= originalKey;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameActionKey;
+                        return this.gameActionKey;
     
 }
 
@@ -189,7 +189,7 @@ this.gameActionKey= gameActionKey;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return sourceId;
+                        return this.sourceId;
     
 }
 

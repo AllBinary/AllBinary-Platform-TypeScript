@@ -108,7 +108,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -125,7 +125,7 @@ this.motionGestureInput= motionGestureInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionGestureInput;
+                        return this.motionGestureInput;
     
 }
 

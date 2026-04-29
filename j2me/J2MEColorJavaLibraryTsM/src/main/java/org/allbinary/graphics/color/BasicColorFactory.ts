@@ -56,7 +56,7 @@ export class BasicColorFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicColorFactory.instance;
     
 }
 
@@ -104,7 +104,7 @@ export class BasicColorFactory
     //var b = b
     //var name = name
 
-    var ALPHA_MASK: number = Math.round0xFF000000;
+    var ALPHA_MASK: number = Math.round(0xFF000000);
 ;
     
 
@@ -170,9 +170,9 @@ export class BasicColorFactory
 
     public readonly TRANSPARENT_RED: BasicColor = this.createInstanceAN(0x52000000, 0xFF0000, StringUtil.getInstance()!.EMPTY_STRING)!;
 
-    public readonly CLEAR_COLOR: BasicColor = BLACK;
+    public readonly CLEAR_COLOR: BasicColor = this.BLACK;
 
-    public readonly BORDER_COLOR: BasicColor = WHITE;
+    public readonly BORDER_COLOR: BasicColor = this.WHITE;
 
 }
                 

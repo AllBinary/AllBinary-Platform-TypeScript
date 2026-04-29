@@ -83,7 +83,7 @@ var anyType = anyType
 index < anyType!.length; index++)
         {
 
-    var imageType: InputImageType = InputImageType.getInstance( as StringanyType[index]!)!;
+    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as String)!;
 ;
     
 imageTypes!.getVector()!.add(imageType);
@@ -157,7 +157,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return vector;
+                        return this.vector;
     
 }
 
@@ -183,7 +183,7 @@ var document = document
 index < size; index++)
         {
 
-    var imageType: InputImageType =  as InputImageTypethis.vector.get(index);;
+    var imageType: InputImageType = this.vector.get(index); as InputImageType;
 ;
     
 newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()));
@@ -219,7 +219,7 @@ stringBuffer!.append("ImageTypes: ");
 index < size; index++)
         {
 
-    var imageType: InputImageType =  as InputImageTypethis.vector.get(index);;
+    var imageType: InputImageType = this.vector.get(index); as InputImageType;
 ;
     
 stringBuffer!.append(imageType!.getName());

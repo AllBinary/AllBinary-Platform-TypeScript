@@ -62,7 +62,7 @@ export class FileStreamFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return FileStreamFactory.SINGLETON;
     
 }
 
@@ -126,7 +126,7 @@ this.getContext()!.deleteFile(fileName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Contextthis.context;
+                        return this.context as Context;
     
 }
 

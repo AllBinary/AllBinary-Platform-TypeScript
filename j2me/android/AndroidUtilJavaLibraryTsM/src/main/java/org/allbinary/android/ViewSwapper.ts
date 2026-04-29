@@ -50,9 +50,9 @@ export class ViewSwapper
 
     private currentMainViewId: number =  -1;
 
-    private mainViewArray: View[] = NULL_VIEW_ARRAY;
+    private mainViewArray: View[] = ViewSwapper.NULL_VIEW_ARRAY;
 
-    private topViewArray: View[] = NULL_VIEW_ARRAY;
+    private topViewArray: View[] = ViewSwapper.NULL_VIEW_ARRAY;
 public constructor (activity: Activity, rootViewId: number){
 
             super();
@@ -82,7 +82,7 @@ this.topViewArray= topViewArray;
     public setMainView(id: number){
 var id = id
 
-    var viewGroup: ViewGroup =  as ViewGroupthis.activity.findViewById(this.rootViewId);;
+    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId); as ViewGroup;
 ;
     
 

@@ -83,7 +83,7 @@ export class GameConfigurationCentral
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return GameConfigurationCentral.SINGLETON;
     
 }
 
@@ -190,15 +190,15 @@ keyValuePersistance!.loadAll(abeClientInformation);
                         
                                     {
                                     
-    var hashtable: Hashtable = keyValuePersistance!.get(0)!;
+    var hashtable: Hashtable<any, any> = keyValuePersistance!.get(0)!;
 ;
     
 
-    var anyType: any =  as Objectthis.SCALE.getName();;
+    var anyType: any = this.SCALE.getName(); as Object;
 ;
     
 
-    var value: string =  as Stringhashtable.get(anyType as Object);;
+    var value: string = hashtable.get(anyType as Object); as String;
 ;
     
 this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.toInt()));

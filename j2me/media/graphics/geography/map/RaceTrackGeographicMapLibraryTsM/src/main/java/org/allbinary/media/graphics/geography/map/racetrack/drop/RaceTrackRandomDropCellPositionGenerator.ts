@@ -82,7 +82,7 @@ export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellP
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return RaceTrackRandomDropCellPositionGenerator.SINGLETON;
     
 }
 
@@ -91,7 +91,7 @@ export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellP
 
     private readonly cellsPerRowOrColumn: number = 3;
 
-    private readonly totalCells: number = cellsPerRowOrColumn *cellsPerRowOrColumn;
+    private readonly totalCells: number = this.cellsPerRowOrColumn *this.cellsPerRowOrColumn;
 
     private readonly rowArray: number[] = [0,1,2,0,1,2,0,1,2];
 
@@ -130,7 +130,7 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
 var allBinaryLayerManager = allBinaryLayerManager
 var index = index
 
-    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionthis.list.get(index);;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index); as GeographicMapCellPosition;
 ;
     
 
@@ -166,7 +166,7 @@ var index = index
 ;
     
 
-    var pickupLayer: RaceTrackPickupLayer =  as RaceTrackPickupLayerPickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3);;
+    var pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3); as RaceTrackPickupLayer;
 ;
     
 pickupLayer!.setTiledLayer(tiledLayer);

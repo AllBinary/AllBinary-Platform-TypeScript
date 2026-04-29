@@ -54,7 +54,7 @@ export class StoreRoleFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return StoreRoleFactory.instance;
     
 }
 
@@ -89,7 +89,7 @@ this.wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return roles;
+                        return this.roles;
     
 }
 
@@ -99,7 +99,7 @@ this.wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return subscriberRoles;
+                        return this.subscriberRoles;
     
 }
 
@@ -109,7 +109,7 @@ this.wholesaleRoles!.add(basicUserRoleFactory!.WHOLESALECUSTOMER);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return wholesaleRoles;
+                        return this.wholesaleRoles;
     
 }
 

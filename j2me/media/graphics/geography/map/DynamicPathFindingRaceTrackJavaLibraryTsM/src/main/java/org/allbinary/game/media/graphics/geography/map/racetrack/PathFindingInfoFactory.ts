@@ -106,7 +106,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PathFindingInfoFactory.instance;
     
 }
 
@@ -142,7 +142,7 @@ this.basicGeographicMapPathFinder= new BasicGeographicMapPathFinder(max);
     
 this.pathFindingInfo= new PathFindingInfo(new PathFindingNodeCostInfoFactory(max), new BasicArrayListS(1), new BasicArrayListS(1));
     
-this.basicGeographicMapGraph= new BasicGeographicMapGraph( as PathFindingNodeCostInfoFactorypathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface());
+this.basicGeographicMapGraph= new BasicGeographicMapGraph(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface() as PathFindingNodeCostInfoFactory);
     
 this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterface;
     
@@ -162,7 +162,7 @@ RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.init();
     
 this.init(geographicMapInterface, pathFindingInfo, mapArray);
     
-this.basicGeographicMapPathFinder!.init(geographicMapInterface, basicGeographicMapGraph, pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface));
+this.basicGeographicMapPathFinder!.init(geographicMapInterface, this.basicGeographicMapGraph, this.pathFinderGraphVisitorFactoryInterface!.getInstance(geographicMapInterface));
     
 pathFindingInfo!.setPathFinder(this.basicGeographicMapPathFinder);
     
@@ -208,7 +208,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 ;
     
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
 ;
     
 

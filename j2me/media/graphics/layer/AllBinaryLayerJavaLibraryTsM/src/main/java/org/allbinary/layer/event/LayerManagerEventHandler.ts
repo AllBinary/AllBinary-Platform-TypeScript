@@ -60,6 +60,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { LayerManagerEventListener } from "./LayerManagerEventListener.js";
 
+import { LayerManagerEventListenerInterface } from "./LayerManagerEventListenerInterface.js";
+
 export class LayerManagerEventHandler extends BasicEventHandler {
         
 
@@ -128,10 +130,10 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener =  as LayerManagerEventListenerthis.list.objectArray[index]!;
+    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
 ;
     
-layerManagerEventListener!.onCreateLayerManagerEvent( as LayerManagerEventeventObject);
+layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     
 
                 //: 
@@ -168,10 +170,10 @@ super.fireEvent(eventObject);
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener =  as LayerManagerEventListenerthis.list.objectArray[index]!;
+    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
 ;
     
-layerManagerEventListener!.onDeleteLayerManagerEvent( as LayerManagerEventeventObject);
+layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
     
 
                 //: 
@@ -204,11 +206,11 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfaceeventListenerInterfaceList!.objectArray[index]!;
+            eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
-layerManagerEventListenerInterface= ( as LayerManagerEventListenerInterfaceeventListenerInterface);
+layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface);
     
-layerManagerEventListenerInterface!.onDeleteLayerManagerEvent( as LayerManagerEventeventObject);
+layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
     
 
                 //: 
@@ -231,10 +233,10 @@ index++;
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = ( as LayerManagerEventListenerInterfaceeventListenerInterface);
+    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);
 ;
     
-layerManagerEventListenerInterface!.onCreateLayerManagerEvent( as LayerManagerEventeventObject);
+layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
     
 }
 

@@ -54,7 +54,7 @@ export class OpenGLImageCacheFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return IMAGE_CACHE;
+                        return OpenGLImageCacheFactory.IMAGE_CACHE;
     
 }
 

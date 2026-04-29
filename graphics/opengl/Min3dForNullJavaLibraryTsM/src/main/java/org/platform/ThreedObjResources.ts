@@ -52,17 +52,17 @@ export class ThreedObjResources
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ThreedObjResources.instance;
     
 }
 
 
-    public readonly hashtable: Hashtable = new Hashtable();
+    public readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public get(resourceName: string): string{
     //var resourceName = resourceName
 
-    var resourceName2: string =  as Stringthis.hashtable.get(resourceName as Object);;
+    var resourceName2: string = this.hashtable.get(resourceName as Object); as String;
 ;
     
 

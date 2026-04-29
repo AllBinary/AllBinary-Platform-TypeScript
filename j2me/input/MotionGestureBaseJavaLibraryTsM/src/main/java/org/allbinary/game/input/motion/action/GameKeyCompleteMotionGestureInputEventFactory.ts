@@ -66,7 +66,7 @@ export class GameKeyCompleteMotionGestureInputEventFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return GameKeyCompleteMotionGestureInputEventFactory.SINGLETON;
     
 }
 
@@ -95,7 +95,7 @@ this.logUtil!.putF(new StringMaker().
 index >= 0; index--)
         {
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventeventList!.objectArray[index]!;
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = this.eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;
 ;
     
 gameKeyCompleteMotionGestureInputEvent!.update();

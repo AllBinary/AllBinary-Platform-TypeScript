@@ -62,7 +62,7 @@ export class KeyPressesAI extends BasicAI {
     private on: boolean = true;
 
     keys: number[]
-public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -90,7 +90,7 @@ this.keys= new Array(hashtable.length);
     var index: number = 0;
 index < size; index++)
         {
-this.keys[index]=  as Integerhashtable.get( as ObjectobjectArray[index]!);;
+this.keys[index]= hashtable.get(objectArray[index]! as Object); as Integer;
     
 }
 
@@ -130,13 +130,13 @@ super.processKeyAI(this.keys[index]!.toInt());
                         if(isOn())
                         
                                     {
-                                    setOn(false);
+                                    this.setOn(false);
     
 
                                     }
                                 
                         else {
-                            setOn(true);
+                            this.setOn(true);
     
 
                         }
@@ -147,7 +147,7 @@ super.processKeyAI(this.keys[index]!.toInt());
                 //@Throws(Error::class)
             
     public disable(){
-setOn(false);
+this.setOn(false);
     
 }
 
@@ -155,7 +155,7 @@ setOn(false);
                 //@Throws(Error::class)
             
     public enable(){
-setOn(true);
+this.setOn(true);
     
 }
 
@@ -172,7 +172,7 @@ this.on= on;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return on;
+                        return this.on;
     
 }
 

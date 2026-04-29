@@ -55,7 +55,7 @@ export class InitInfo2
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InitInfo2.instance;
     
 }
 
@@ -68,7 +68,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.create(value);;
+                        return this.directory.create(value);;
     
 }
 
@@ -79,7 +79,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.create(value);;
+                        return this.directory.create(value);;
     
 }
 

@@ -83,9 +83,9 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
 
     private LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
-    private occupyingGeographicMapCellPositionList: BasicArrayList = LIST;
+    private occupyingGeographicMapCellPositionList: BasicArrayList = this.LIST;
 
-    private surroundingGeographicMapCellPositionList: BasicArrayList = LIST;
+    private surroundingGeographicMapCellPositionList: BasicArrayList = this.LIST;
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
@@ -99,9 +99,9 @@ this.layerInterface= layerInterface;
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAllXY(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList);
+this.occupyingGeographicMapCellPositionList= this.layerCoveringCellPositionsUtil!.getAllXY(geographicMapInterface, this.layerInterface, this.layerInterface!.getXP(), this.layerInterface!.getYP(), this.reusableOccupyingGeographicMapCellPositionList);
     
-this.surroundingGeographicMapCellPositionList= cellPositionsUtil!.getAllSurrounding(geographicMapInterface, occupyingGeographicMapCellPositionList, reusableSurroundingGeographicMapCellPositionList);
+this.surroundingGeographicMapCellPositionList= this.cellPositionsUtil!.getAllSurrounding(geographicMapInterface, this.occupyingGeographicMapCellPositionList, this.reusableSurroundingGeographicMapCellPositionList);
     
 this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPositionList!.size());
     
@@ -113,7 +113,7 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return occupyingGeographicMapCellPositionList;
+                        return this.occupyingGeographicMapCellPositionList;
     
 }
 
@@ -123,14 +123,14 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return surroundingGeographicMapCellPositionList;
+                        return this.surroundingGeographicMapCellPositionList;
     
 }
 
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionthis.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex());;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()); as GeographicMapCellPosition;
 ;
     
 this.surroundingCircularIndexUtil!.next();

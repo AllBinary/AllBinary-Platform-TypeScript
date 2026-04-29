@@ -70,7 +70,7 @@ this.list.add(terrainEvent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

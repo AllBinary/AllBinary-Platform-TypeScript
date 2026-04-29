@@ -119,7 +119,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
                         if(this.list.size() > 0)
                         
                                     {
-                                    sound=  as Soundthis.list.removeAt(0);;
+                                    sound= this.list.removeAt(0); as Sound;
     
 
                         if(sound != 
@@ -195,7 +195,7 @@ this.list.clear();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(TOTAL)!.appendint(this.list.size())!.toString();;
+                            append(PlayerQueue.TOTAL)!.appendint(this.list.size())!.toString();;
     
 }
 

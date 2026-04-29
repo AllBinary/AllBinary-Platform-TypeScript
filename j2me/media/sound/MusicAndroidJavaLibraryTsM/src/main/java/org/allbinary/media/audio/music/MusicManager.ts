@@ -86,7 +86,7 @@ var musicServiceClass = musicServiceClass
 ;
     
 
-    var musicPauseIntent: Intent = new Intent( as Contextactivity, musicServiceClass::class.java);
+    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass::class.java);
 ;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
@@ -266,7 +266,7 @@ this.timeDelayHelper!.delay= 0;
 --index >= 0; )
         {
 
-    var sound: Sound =  as Soundthis.songList!.get(index);;
+    var sound: Sound = this.songList!.get(index); as Sound;
 ;
     
 
@@ -290,7 +290,7 @@ PreLogUtil.put(new StringBuilder().
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound=  as Soundthis.basicArrayListUtil!.getRandom(this.songList);;
+                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList); as Sound;
     
 
                                     }
@@ -310,7 +310,7 @@ this.nextSongSound= NoSound.getInstance();
 PreLogUtil.put(new StringBuilder().
                             append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
     
-this.timeDelayHelper!.delay= Math.roundduration;
+this.timeDelayHelper!.delay= Math.round(duration);
     
 this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt());
     

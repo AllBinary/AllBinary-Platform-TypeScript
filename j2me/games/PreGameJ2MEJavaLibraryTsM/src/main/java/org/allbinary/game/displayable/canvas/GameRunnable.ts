@@ -51,7 +51,7 @@ export class GameRunnable
 
     public readonly FAST: number = 60;
 
-    public wait: number = WAIT;
+    public wait: number = this.WAIT;
 public constructor (){
 
             super();

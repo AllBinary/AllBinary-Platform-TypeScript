@@ -74,7 +74,7 @@ this.intermissionEnableListener= enableListener;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return timeElapsedHelper;
+                        return this.timeElapsedHelper;
     
 }
 
@@ -102,7 +102,7 @@ this.intermissionEnableListener!.notifyIntermission(enabled);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return enabled;
+                        return this.enabled;
     
 }
 

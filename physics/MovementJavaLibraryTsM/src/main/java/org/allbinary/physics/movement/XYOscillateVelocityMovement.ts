@@ -59,7 +59,7 @@ export class XYOscillateVelocityMovement extends BasicConstantVelocityMovement {
 
     private oscillatePositive: boolean= false
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number){
-            super(speedBasicDecimal, new VelocityProperties(Math.roundspeedBasicDecimal!.getUnscaled(), Math.roundspeedBasicDecimal!.getUnscaled()));
+            super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
                     var speedBasicDecimal = speedBasicDecimal
 var oscillateMin = oscillateMin
 var oscillateMax = oscillateMax

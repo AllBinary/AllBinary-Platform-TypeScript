@@ -112,11 +112,11 @@ export class CommandFormInputProcessor extends BasicMenuInputProcessor {
 
     private readonly CLICK_DELAY: number = 150;
 
-    private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(CLICK_DELAY);
+    private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(this.CLICK_DELAY);
 
     private readonly DOUBLE_CLICK_DELAY: number = 1200;
 
-    private readonly doubleClickTimeHelper: TimeDelayHelper = new TimeDelayHelper(DOUBLE_CLICK_DELAY);
+    private readonly doubleClickTimeHelper: TimeDelayHelper = new TimeDelayHelper(this.DOUBLE_CLICK_DELAY);
 
     readonly isSingleKeyProcessing: boolean = InputFeatureFactory.getInstance()!.isSingleKeyProcessing()!;
 
@@ -187,7 +187,7 @@ this.form.processInput(key);
 
     processCommand(): number{
 
-    var commandCurrentSelectionForm: CommandCurrentSelectionForm =  as CommandCurrentSelectionFormthis.form;
+    var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;
 ;
     
 
@@ -279,7 +279,7 @@ this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
     var index: number = 0;
 index < size; index++)
         {
-gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
 key= gameKeyEvent!.getKey();
     
@@ -356,7 +356,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.motionGestureEventList!.objectArray[lastIndex]!;
+    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
 ;
     
 this.processMotionInput(motionGestureEvent);

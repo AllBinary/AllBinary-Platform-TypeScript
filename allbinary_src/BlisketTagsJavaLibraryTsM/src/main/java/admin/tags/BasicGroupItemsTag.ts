@@ -51,7 +51,7 @@ import { TableTag } from "./TableTag.js";
 export class BasicGroupItemsTag extends TableTag {
         
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();

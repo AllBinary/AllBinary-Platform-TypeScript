@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -48,7 +50,7 @@ this.data= data;
 
     public visit(anyType: any = {}): any{
 var anyType = anyType
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
     

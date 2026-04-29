@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     

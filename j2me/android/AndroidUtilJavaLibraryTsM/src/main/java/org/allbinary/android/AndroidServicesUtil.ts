@@ -76,7 +76,7 @@ export class AndroidServicesUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AndroidServicesUtil.instance;
     
 }
 
@@ -98,7 +98,7 @@ export class AndroidServicesUtil
     public isServiceRunning(name: string): boolean{
 var name = name
 
-    var activityManager: ActivityManager =  as ActivityManagerresourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE);;
+    var activityManager: ActivityManager = resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE); as ActivityManager;
 ;
     
 

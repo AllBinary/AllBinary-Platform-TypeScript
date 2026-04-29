@@ -77,7 +77,7 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoObjectConfigAndManipulatorFactory.instance;
     
 }
 
@@ -152,7 +152,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoObjectConfigInterfacenew GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface);
+                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface) as TransformInfoObjectConfigInterface;
     
 
                                     }
@@ -162,7 +162,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoObjectConfigInterfacenew TransformInfoObjectConfig(transformInfoInterface);
+                        return new TransformInfoObjectConfig(transformInfoInterface) as TransformInfoObjectConfigInterface;
     
 
                         }
@@ -227,7 +227,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoObjectConfigInterfacenew GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document);
+                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document) as TransformInfoObjectConfigInterface;
     
 
                                     }
@@ -237,7 +237,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoObjectConfigInterfacenew TransformInfoObjectConfig(transformInfoInterface, document);
+                        return new TransformInfoObjectConfig(transformInfoInterface, document) as TransformInfoObjectConfigInterface;
     
 
                         }

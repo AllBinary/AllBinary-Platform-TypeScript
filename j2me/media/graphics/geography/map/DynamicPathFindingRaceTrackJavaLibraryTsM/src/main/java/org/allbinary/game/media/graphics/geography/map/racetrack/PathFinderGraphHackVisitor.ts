@@ -134,7 +134,7 @@ var startPathFindingNodeList = startPathFindingNodeList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode =  as PathFindingNodestartPathFindingNodeList!.get(index);;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
 ;
     
 
@@ -193,7 +193,7 @@ var endPathFindingNodeList = endPathFindingNodeList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode =  as PathFindingNodeendPathFindingNodeList!.get(index);;
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index); as PathFindingNode;
 ;
     
 
@@ -241,7 +241,7 @@ var graph = graph
 ;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap =  as RaceTrackGeographicMapthis.geographicMapInterface;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = this.geographicMapInterface as RaceTrackGeographicMap;
 ;
     
 
@@ -304,11 +304,11 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode =  as PathFindingNodeendPathFindingNodeList!.get(index);;
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index); as PathFindingNode;
 ;
     
 
-    var startPathFindingNode: PathFindingNode =  as PathFindingNodestartPathFindingNodeList!.get(index);;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
 ;
     
 
@@ -345,7 +345,7 @@ var pathList = pathList
 ;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap =  as RaceTrackGeographicMapthis.geographicMapInterface;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = this.geographicMapInterface as RaceTrackGeographicMap;
 ;
     
 

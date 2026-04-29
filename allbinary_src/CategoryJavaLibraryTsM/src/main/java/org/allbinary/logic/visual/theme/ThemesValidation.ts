@@ -74,7 +74,7 @@ public constructor (node: Node){
         var node = node
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -143,7 +143,7 @@ var document = document
 i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.themeVector!.get(i);;
+    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i); as DomNodeInterface;
 ;
     
 node.appendChild(themeDomNodeInterface!.toXmlNode(document));

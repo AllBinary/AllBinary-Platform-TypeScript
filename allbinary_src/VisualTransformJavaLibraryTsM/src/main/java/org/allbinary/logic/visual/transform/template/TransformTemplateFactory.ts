@@ -75,7 +75,7 @@ export class TransformTemplateFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformTemplateFactory.instance;
     
 }
 
@@ -89,7 +89,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap, pageContext: PageContext): TransformTemplateInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
     //var abeClientInformation = abeClientInformation
     //var templateName = templateName
     //var propertiesHashMap = propertiesHashMap
@@ -108,7 +108,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformTemplateInterfaceTransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface);;
+                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface); as TransformTemplateInterface;
     
 
                 //: 

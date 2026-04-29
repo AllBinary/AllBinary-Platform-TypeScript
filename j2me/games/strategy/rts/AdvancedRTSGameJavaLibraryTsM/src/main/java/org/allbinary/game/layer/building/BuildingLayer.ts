@@ -230,7 +230,7 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
 
     private readonly healthBar: Paintable
 
-    private readonly pathsHashtable: Hashtable
+    private readonly pathsHashtable: Hashtable<any, any>
 public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingPropertiesFactory, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, advancedRTSProperties, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
                         //var remoteInfo = remoteInfo
@@ -288,7 +288,7 @@ this.trackingEvent= buildingPropertiesFactory!.getTrackingEvent(this);
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
     
 
@@ -329,7 +329,7 @@ TrackingEventHandler.getInstance()!.addListener(this);
 
         try {
             
-    var layerInterface: AdvancedRTSGameLayer =  as AdvancedRTSGameLayertrackingEvent!.getLayerInterface();;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface(); as AdvancedRTSGameLayer;
 ;
     
 
@@ -457,7 +457,7 @@ this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundtotal;
+                        return Math.round(total);
     
 }
 
@@ -473,7 +473,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.rounddowngradeCost *9 /10;
+                        return Math.round(downgradeCost) *9 /10;
     
 }
 
@@ -487,7 +487,7 @@ this.logUtil!.putF("Cost: " +downgradeCost, this, "getDowngradeCost");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundupgradeCost;
+                        return Math.round(upgradeCost);
     
 }
 
@@ -521,7 +521,7 @@ this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth(
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return buildingLevelCost;
+                        return this.buildingLevelCost;
     
 }
 
@@ -538,7 +538,7 @@ this.buildingLevelCost= buildingLevelCost;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return productivity;
+                        return this.productivity;
     
 }
 
@@ -555,7 +555,7 @@ this.productivity= productivity;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return efficiency;
+                        return this.efficiency;
     
 }
 
@@ -612,7 +612,7 @@ index2 >= 0; index2--)
         {
 pathsList= new BasicArrayListD();
     
-occupyGeographicMapCellPosition=  as GeographicMapCellPositionoccupyList!.get(index2);;
+occupyGeographicMapCellPosition= occupyList!.get(index2); as GeographicMapCellPosition;
     
 
 
@@ -622,7 +622,7 @@ occupyGeographicMapCellPosition=  as GeographicMapCellPositionoccupyList!.get(in
     var index: number = surroundList!.size() -1;
 index >= 0; index--)
         {
-surroundGeographicMapCellPosition=  as GeographicMapCellPositionsurroundList!.get(index);;
+surroundGeographicMapCellPosition= surroundList!.get(index); as GeographicMapCellPosition;
     
 
                         if(geographicMapDirectionUtil!.getEightDirectionFromCellPositionToAdjacentCellPosition(surroundGeographicMapCellPosition, occupyGeographicMapCellPosition) != NO_DIRECTION)
@@ -649,7 +649,7 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var pathsList: BasicArrayList =  as BasicArrayListthis.pathsHashtable!.get(geographicMapCellPosition as Object);;
+    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition as Object); as BasicArrayList;
 ;
     
 

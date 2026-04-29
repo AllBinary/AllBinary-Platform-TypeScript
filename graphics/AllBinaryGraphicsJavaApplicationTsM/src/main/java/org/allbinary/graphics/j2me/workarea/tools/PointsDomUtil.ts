@@ -62,6 +62,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { PointsUtil } from "./PointsUtil.js";
 
+import { Document } from "./Document.js";
+
 export class PointsDomUtil
             extends Object
          {
@@ -74,7 +76,7 @@ export class PointsDomUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PointsDomUtil.instance;
     
 }
 
@@ -105,7 +107,7 @@ var pointVector = pointVector
 ;
     
 
-    var linesNode: Node =  as Nodedocument.createElement(this.LINES);;
+    var linesNode: Node = document.createElement(this.LINES); as Node;
 ;
     
 
@@ -136,9 +138,9 @@ var pointVector = pointVector
                         if(index < size && index < size2)
                         
                                     {
-                                    rotatedFirstPoint=  as GPointtempPointVector!.get(index);;
+                                    rotatedFirstPoint= tempPointVector!.get(index); as GPoint;
     
-firstPoint=  as GPointpointVector!.get(index);;
+firstPoint= pointVector!.get(index); as GPoint;
     
 index++;
     
@@ -149,15 +151,15 @@ index++;
         while(index < size && index < size2)
         {
 
-    var lineNode: Node =  as Nodedocument.createElement(this.LINE);;
+    var lineNode: Node = document.createElement(this.LINE); as Node;
 ;
     
 
-    var rotatedSecondPoint: GPoint =  as GPointtempPointVector!.get(index);;
+    var rotatedSecondPoint: GPoint = tempPointVector!.get(index); as GPoint;
 ;
     
 
-    var secondPoint: GPoint =  as GPointpointVector!.get(index);;
+    var secondPoint: GPoint = pointVector!.get(index); as GPoint;
 ;
     
 
@@ -211,25 +213,25 @@ var pointName = pointName
 ;
     
 
-    var pointNode: Node =  as Nodedocument.createElement(pointName);;
+    var pointNode: Node = document.createElement(pointName); as Node;
 ;
     
 
-    var xNode: Node =  as Nodedocument.createElement(PositionStrings.getInstance()!.X);;
+    var xNode: Node = document.createElement(PositionStrings.getInstance()!.X); as Node;
 ;
     
 
-    var xTextNode: Node =  as Nodedocument.createTextNode(Integer.toString(point.getX()));;
+    var xTextNode: Node = document.createTextNode(Integer.toString(point.getX())); as Node;
 ;
     
 xNode!.appendChild(xTextNode);
     
 
-    var yNode: Node =  as Nodedocument.createElement(PositionStrings.getInstance()!.Y);;
+    var yNode: Node = document.createElement(PositionStrings.getInstance()!.Y); as Node;
 ;
     
 
-    var yTextNode: Node =  as Nodedocument.createTextNode(Integer.toString(point.getY()));;
+    var yTextNode: Node = document.createTextNode(Integer.toString(point.getY())); as Node;
 ;
     
 yNode!.appendChild(yTextNode);

@@ -84,7 +84,7 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterface
     public setFrame(index: number){
     //var index = index
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
 ;
     
 indexedAnimation!.setFrame(index);
@@ -94,7 +94,7 @@ indexedAnimation!.setFrame(index);
 
     public getFrame(): number{
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
 ;
     
 
@@ -108,7 +108,7 @@ indexedAnimation!.setFrame(index);
 
     public getSize(): number{
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
 ;
     
 
@@ -122,7 +122,7 @@ indexedAnimation!.setFrame(index);
 
     public previousFrame(){
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
 ;
     
 indexedAnimation!.previousFrame();
@@ -177,7 +177,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as IndexedAnimationthis.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!;
+                        return this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
     
 }
 

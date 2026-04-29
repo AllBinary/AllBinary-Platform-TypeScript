@@ -59,7 +59,7 @@ public constructor (basicTerrainInfo: any = {}){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setBasicTerrainInfo( as BasicTerrainInfobasicTerrainInfo);
+this.setBasicTerrainInfo(basicTerrainInfo as BasicTerrainInfo);
     
 }
 
@@ -89,7 +89,7 @@ stringBuffer!.append(this.basicTerrainInfo!.toString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicTerrainInfo;
+                        return this.basicTerrainInfo;
     
 }
 

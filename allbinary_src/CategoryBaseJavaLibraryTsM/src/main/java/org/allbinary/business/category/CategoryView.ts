@@ -142,7 +142,7 @@ i < size; i++)
                         if(InterfaceUtil.isImplemented("CategoryPropertiesInterface", anyType))
                         
                                     {
-                                    categoryPropertiesInterface=  as CategoryPropertiesInterfaceanyType;
+                                    categoryPropertiesInterface= anyType as CategoryPropertiesInterface;
     
 
                                     }
@@ -152,7 +152,7 @@ i < size; i++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface =  as CategoryInterfaceanyType;
+    var categoryInterface: CategoryInterface = anyType as CategoryInterface;
 ;
     
 categoryPropertiesInterface= categoryInterface!.getProperties();

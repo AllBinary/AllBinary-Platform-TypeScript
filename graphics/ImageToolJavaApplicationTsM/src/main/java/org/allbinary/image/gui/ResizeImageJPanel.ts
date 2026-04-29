@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -70,6 +72,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { JPanel } from "./JPanel.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -162,7 +166,7 @@ new Thread()
 ;
     
 
-    var percent: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jComboBox1!.getSelectedItem()))!;
+    var percent: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem() as String))!;
 ;
     
 
@@ -203,11 +207,11 @@ new Thread()
                                 
                         else {
                             
-    var width: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jTextField1!.getText()))!;
+    var width: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText() as String))!;
 ;
     
 
-    var height: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jTextField2!.getText()))!;
+    var height: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText() as String))!;
 ;
     
 generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);
@@ -462,7 +466,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 
@@ -506,7 +510,7 @@ this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel<>(
     
 this.aboveJButton!.setText("Process");
     
-aboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.aboveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -524,7 +528,7 @@ this.jLabel3!.setText("Height:");
     
 this.updateJButton!.setText("Update");
     
-updateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.updateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -542,7 +546,7 @@ this.floatPercentJTextField!.setMinimumSize(new java.awt.Dimension(120, 22));
     
 this.adjustFor16AboveJButton!.setText("Adjust for 16 Above");
     
-adjustFor16AboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.adjustFor16AboveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -556,7 +560,7 @@ adjustFor16AboveJButtonActionPerformed(evt);
     
 this.adjustFor16BelowJButton!.setText("Adjust for 16 Below");
     
-adjustFor16BelowJButton!.addActionListener(new java.awt.event.ActionListener()
+this.adjustFor16BelowJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

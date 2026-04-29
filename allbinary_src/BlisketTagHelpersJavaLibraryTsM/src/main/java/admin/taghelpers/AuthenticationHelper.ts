@@ -114,8 +114,8 @@ export class AuthenticationHelper extends TagHelper {
     private timeout: string
 
     private attemptsInteger: number
-public constructor (hashMap: HashMap, pageContext: PageContext){
-            this(hashMap,  as HttpServletRequestpageContext!.getRequest());
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+            this(hashMap, pageContext!.getRequest() as HttpServletRequest);
                     var hashMap = hashMap
 var pageContext = pageContext
 
@@ -124,7 +124,7 @@ var pageContext = pageContext
                     
 }
 
-public constructor (hashMap: HashMap, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
         var hashMap = hashMap
@@ -522,7 +522,7 @@ var roles = roles
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole =  as BasicUserRolebasicUserRoleArray[index]!;
+    var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
 ;
     
 
@@ -898,7 +898,7 @@ stringBuffer!.append("<br/>\n");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return role;
+                        return this.role;
     
 }
 

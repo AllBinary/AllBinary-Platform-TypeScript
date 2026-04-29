@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../../java/lang/System";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -125,13 +127,13 @@ console.log("New String: " +testString);
 
     private readonly FOUND_KEY: string = "found key total: ";
 
-    private readonly hashMap: HashMap
+    private readonly hashMap: HashMap<any, any>
 public constructor (key: string, value: string){
 
             super();
             //var key = key
     //var value = value
-this.hashMap= new HashMap();
+this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(
                                                 [
@@ -148,13 +150,13 @@ public constructor (keys: string[], values: string[]){
             super();
             //var keys = keys
     //var values = values
-this.hashMap= new HashMap();
+this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(keys, values);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -214,9 +216,9 @@ var total = total
     var index2: number = 0;
 index2 < size; index2++)
         {
-keys=  as Array<String?>keyArray[index2]!;
+keys= keyArray[index2]! as Array<String?>;
     
-values=  as Array<String?>this.hashMap!.get(keys as Object);;
+values= this.hashMap!.get(keys as Object); as Array<String?>;
     
 
     var foundTotal: number = 0;
@@ -388,9 +390,9 @@ var replace = replace
     var index2: number = 0;
 index2 < size; index2++)
         {
-key=  as StringkeyArray[index2]!;
+key= keyArray[index2]! as String;
     
-value=  as Stringthis.hashMap!.get(key as Object);;
+value= this.hashMap!.get(key as Object); as String;
     
 
     var index: number = 0;

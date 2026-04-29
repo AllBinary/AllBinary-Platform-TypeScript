@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -33,6 +35,8 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { ArrayUtil } from "./ArrayUtil.js";
+
+import { BasicArrayListS } from "./BasicArrayListS.js";
 
 export class BasicArrayList
             extends Object
@@ -70,40 +74,40 @@ stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
 stringBuffer!.appendint(index);
     
-stringBuffer!.append(SIZE);
+stringBuffer!.append(BasicArrayList.SIZE);
     
 stringBuffer!.appendint(this.currentIndex);
     
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                            throw Error();
                     
 
                                     }
                                 
-ensureCapacity(this.currentIndex +1);
+this.ensureCapacity(this.currentIndex +1);
     
 
 
 
         for (let i = ; i < ; i++) {
-            objectArray[ + i] = objectArray[i]!;
+            this.objectArray[ + i] = this.objectArray[i]!;
         }
     ;
     
-objectArray[index]= element;
+this.objectArray[index]= element;
     
-currentIndex++;
+this.currentIndex++;
     
 }
 
 
     public add(anyType: any = {}): boolean{
     //var anyType = anyType
-ensureCapacity(this.currentIndex +1);
+this.ensureCapacity(this.currentIndex +1);
     
-this.objectArray[currentIndex++]= anyType;
+this.objectArray[this.currentIndex++]= anyType;
     
 
 
@@ -128,14 +132,14 @@ stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
 stringBuffer!.appendint(index);
     
-stringBuffer!.append(SIZE);
+stringBuffer!.append(BasicArrayList.SIZE);
     
 stringBuffer!.appendint(this.currentIndex);
     
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                            throw Error();
                     
 
                                     }
@@ -145,13 +149,13 @@ stringBuffer!.appendint(this.currentIndex);
 ;
     
 
-    var numMoved: number = currentIndex -index -1;
+    var numMoved: number = this.currentIndex -index -1;
 ;
     
 
                         if(numMoved > 0)
-                        System.arraycopy(objectArray, index +1, objectArray, index, numMoved);
-objectArray[--this.currentIndex]= 
+                        System.arraycopy(this.objectArray, index +1, this.objectArray, index, numMoved);
+this.objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -187,7 +191,7 @@ index < this.currentIndex; index++)
                         
                                     {
                                     
-    var numMoved: number = currentIndex -index -1;
+    var numMoved: number = this.currentIndex -index -1;
 ;
     
 
@@ -198,14 +202,14 @@ index < this.currentIndex; index++)
 
 
         for (let i = ; i < numMoved; i++) {
-            objectArray[index + i] = objectArray[i]!;
+            this.objectArray[index + i] = this.objectArray[i]!;
         }
     ;
     
 
                                     }
                                 
-objectArray[--this.currentIndex]= 
+this.objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -233,11 +237,11 @@ objectArray[--this.currentIndex]=
 index < this.currentIndex; index++)
         {
 
-                        if(anyType == objectArray[index] || anyType!.equals(objectArray[index]!))
+                        if(anyType == this.objectArray[index] || anyType!.equals(this.objectArray[index]!))
                         
                                     {
                                     
-    var numMoved: number = currentIndex -index -1;
+    var numMoved: number = this.currentIndex -index -1;
 ;
     
 
@@ -248,14 +252,14 @@ index < this.currentIndex; index++)
 
 
         for (let i = ; i < numMoved; i++) {
-            objectArray[index + i] = objectArray[i]!;
+            this.objectArray[index + i] = this.objectArray[i]!;
         }
     ;
     
 
                                     }
                                 
-objectArray[--this.currentIndex]= 
+this.objectArray[--this.currentIndex]= 
                                         null
                                     ;
     
@@ -326,7 +330,7 @@ index < size; index++)
 
     public addAll2(list: BasicArrayList): boolean{
     //var list = list
-ensureCapacity(this.currentIndex +list.currentIndex);
+this.ensureCapacity(this.currentIndex +list.currentIndex);
     
 
     var listSize: number = list.currentIndex;
@@ -340,7 +344,7 @@ ensureCapacity(this.currentIndex +list.currentIndex);
     var index: number = 0;
 index < listSize; index++)
         {
-this.objectArray[currentIndex++]= list.objectArray[index]!;
+this.objectArray[this.currentIndex++]= list.objectArray[index]!;
     
 }
 
@@ -375,17 +379,17 @@ this.objectArray[currentIndex++]= list.objectArray[index]!;
                 ;
 ;
     
-ensureCapacity(this.currentIndex +numSize);
+this.ensureCapacity(this.currentIndex +numSize);
     
 
 
 
         for (let i = 0; i < numSize; i++) {
-            objectArray[currentIndex + i] = newObjectArray[i]!;
+            this.objectArray[this.currentIndex + i] = newObjectArray[i]!;
         }
     ;
     
-currentIndex += numSize;
+this.currentIndex += numSize;
     
 
 
@@ -413,7 +417,13 @@ currentIndex += numSize;
     
 
                         if(newCapacity < minSize)
-                        newCapacity= minSize
+                        
+                                    {
+                                    newCapacity= minSize;
+    
+
+                                    }
+                                
 this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
     
 
@@ -430,7 +440,13 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
     
 
                         if(this.currentIndex < oldCapacity)
-                        this.objectArray= this.arrayUtil!.copyOf(this.objectArray, currentIndex)
+                        
+                                    {
+                                    this.objectArray= this.arrayUtil!.copyOf(this.objectArray, this.currentIndex);
+    
+
+                                    }
+                                
 }
 
 
@@ -455,11 +471,16 @@ i < this.currentIndex; i++)
                                     null
                                 )
                         
+                                    {
+                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return i;
     
+
+                                    }
+                                
 }
 
 
@@ -477,11 +498,16 @@ i < this.currentIndex; i++)
 
                         if(anyType!.equals(this.objectArray[i]!))
                         
+                                    {
+                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return i;
     
+
+                                    }
+                                
 }
 
 
@@ -572,14 +598,14 @@ stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
 stringBuffer!.appendint(index);
     
-stringBuffer!.append(SIZE);
+stringBuffer!.append(BasicArrayList.SIZE);
     
 stringBuffer!.appendint(this.currentIndex);
     
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                            throw Error();
                     
 
                                     }
@@ -588,7 +614,7 @@ stringBuffer!.appendint(this.currentIndex);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return objectArray[index]!;
+                        return this.objectArray[index]!;
     
 }
 
@@ -608,20 +634,20 @@ stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
     
 stringBuffer!.appendint(index);
     
-stringBuffer!.append(SIZE);
+stringBuffer!.append(BasicArrayList.SIZE);
     
 stringBuffer!.appendint(this.currentIndex);
     
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                            throw Error();
                     
 
                                     }
                                 
 
-    var oldValue: any = objectArray[index]!;
+    var oldValue: any = this.objectArray[index]!;
 ;
     
 this.objectArray[index]= element;
@@ -660,7 +686,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentIndex;
+                        return this.currentIndex;
     
 }
 
@@ -670,7 +696,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentIndex == 0;
+                        return this.currentIndex == 0;
     
 }
 
@@ -681,7 +707,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return indexOf(anyType) >= 0;
+                        return this.indexOf(anyType) >= 0;
     
 }
 
@@ -691,7 +717,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(this.objectArray, currentIndex);;
+                        return this.arrayUtil!.copyOf(this.objectArray, this.currentIndex);;
     
 }
 
@@ -701,24 +727,35 @@ this.currentIndex= 0;
 
                         if(objectArray!.length < this.currentIndex)
                         
+                                    {
+                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOfType(this.objectArray, currentIndex, objectArray!constructor);;
+                        return this.arrayUtil!.copyOfType(this.objectArray, this.currentIndex, objectArray!.constructor);;
     
 
+                                    }
+                                
 
 
-        for (let i = 0; i < currentIndex; i++) {
+
+        for (let i = 0; i < ; i++) {
             objectArray[0 + i] = this.objectArray[i]!;
         }
     ;
     
 
-                        if(objectArray!.length > currentIndex)
-                        objectArray[currentIndex]= 
+                        if(objectArray!.length > this.currentIndex)
+                        
+                                    {
+                                    objectArray[this.currentIndex]= 
                                         null
-                                    
+                                    ;
+    
+
+                                    }
+                                
 
 
 

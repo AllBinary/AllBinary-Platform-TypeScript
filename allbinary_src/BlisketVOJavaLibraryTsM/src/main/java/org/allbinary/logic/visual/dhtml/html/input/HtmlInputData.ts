@@ -49,7 +49,7 @@ export class HtmlInputData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return HtmlInputData.instance;
     
 }
 
@@ -72,7 +72,7 @@ export class HtmlInputData
 
     public readonly TYPES: string[] = 
                                                         [
-                                                            this.TEXT,RADIO,CHECKBOX,HIDDEN,IMAGE,this.PASSWORD,RADIO,RESET,this.SUBMIT
+                                                            this.TEXT,this.RADIO,this.CHECKBOX,this.HIDDEN,this.IMAGE,this.PASSWORD,this.RADIO,this.RESET,this.SUBMIT
                                                         ];
 
 }

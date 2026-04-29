@@ -73,7 +73,7 @@ this.setName(gatewayName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return storeName;
+                        return this.storeName;
     
 }
 
@@ -90,7 +90,7 @@ this.storeName= storeName;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

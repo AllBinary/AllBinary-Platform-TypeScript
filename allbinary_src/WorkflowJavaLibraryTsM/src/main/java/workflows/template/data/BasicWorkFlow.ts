@@ -85,10 +85,10 @@ export class BasicWorkFlow
 
     private validationDomNodeInterface: ValidationComponentInterface
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -106,7 +106,7 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.validationDomNodeInterface=  as ValidationComponentInterfaceTransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext);;
+this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, propertiesHashMap, pageContext); as ValidationComponentInterface;
     
 }
 
@@ -118,12 +118,12 @@ this.validationDomNodeInterface=  as ValidationComponentInterfaceTransformFactor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Stringthis.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME);;
+                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME); as String;
     
 }
 
 
-    getPropertiesHashMap(): HashMap{
+    getPropertiesHashMap(): HashMap<any, any>{
 
 
 

@@ -81,7 +81,7 @@ var genericProfile = genericProfile
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypevector.get(index);;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
 ;
     
 
@@ -105,7 +105,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new SavedCaptureImagesWorker( as SavedCaptureGenericProfileDataWorkerTypegenericProfileDataWorkerType);
+                        return new SavedCaptureImagesWorker(genericProfileDataWorkerType as SavedCaptureGenericProfileDataWorkerType);
     
 
                                     }

@@ -65,6 +65,8 @@ import { OrderItemInterface } from "./OrderItemInterface.js";
 
 import { ItemData } from "./ItemData.js";
 
+import { BasicItemView } from "./BasicItemView.js";
+
 export class ItemView
             extends Object
          {
@@ -90,7 +92,7 @@ this.vector= vector;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.itemInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
 ;
     
 
@@ -102,7 +104,7 @@ var document = document
 ;
     
 
-    var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, vector);
+    var basicItemView: BasicItemView = new BasicItemView(this.itemInterface, this.vector);
 ;
     
 node.appendChild(basicItemView!.toXmlNode(document));
@@ -129,11 +131,11 @@ node.appendChild(basicItemView!.toXmlNode(document));
 index < size; index++)
         {
 
-    var name: string =  as StringnameArray[index]!;
+    var name: string = nameArray[index]! as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(name as Object);;
+    var value: string = hashMap!.get(name as Object); as String;
 ;
     
 value= stringUtil!.getNonNull(value);

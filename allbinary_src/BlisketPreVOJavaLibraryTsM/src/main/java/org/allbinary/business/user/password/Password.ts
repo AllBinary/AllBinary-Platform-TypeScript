@@ -228,12 +228,12 @@ vector.add(new SuperCrypt(random).
 }
 
 
-    public toHashMap(secret: string): HashMap{
+    public toHashMap(secret: string): HashMap<any, any>{
 var secret = secret
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var values: HashMap = new HashMap();
+    var values: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

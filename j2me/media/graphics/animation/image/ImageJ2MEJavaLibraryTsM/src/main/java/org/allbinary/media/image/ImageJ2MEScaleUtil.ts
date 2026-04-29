@@ -52,7 +52,7 @@ export class ImageJ2MEScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageJ2MEScaleUtil.instance;
     
 }
 

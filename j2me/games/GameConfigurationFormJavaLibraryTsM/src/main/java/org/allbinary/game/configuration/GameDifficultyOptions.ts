@@ -227,7 +227,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
     public setSelectedId(id: number){
 var id = id
 
-    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
 ;
     
 choiceGroup!.setSelectedIndex(id, true);
@@ -237,7 +237,7 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedId(): number{
 
-    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
 ;
     
 
@@ -251,7 +251,7 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedText(): number{
 
-    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
+    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
 ;
     
 

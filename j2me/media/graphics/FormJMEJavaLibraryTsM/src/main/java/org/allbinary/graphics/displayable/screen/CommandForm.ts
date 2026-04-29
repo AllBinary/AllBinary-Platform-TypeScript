@@ -104,7 +104,7 @@ this.commandStack= new Stack<any>();
     
 
         try {
-            repaintProcessor!.process();
+            this.repaintProcessor!.process();
     
 
                 //: 
@@ -174,7 +174,7 @@ super.addCommand(command);
     var index: number = 0;
 index < size; index++)
         {
-super.removeCommand( as Commandthis.commandStack!.pop());
+super.removeCommand(this.commandStack!.pop() as Command);
     
 }
 

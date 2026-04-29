@@ -107,9 +107,9 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
         try {
             
-    var result: string =  as Stringthis.getHelper()!..constructor.name.getMethod("view", 
+    var result: string = this.getHelper()!..constructor.name.getMethod("view", 
                             null)!.invoke(this.getHelper(), 
-                            null);;
+                            null); as String;
 ;
     
 

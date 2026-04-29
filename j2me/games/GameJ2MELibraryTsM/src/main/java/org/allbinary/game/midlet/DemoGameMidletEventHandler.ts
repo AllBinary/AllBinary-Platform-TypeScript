@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DemoGameMidletEventListener } from "./DemoGameMidletEventListener.js";
+
 export class DemoGameMidletEventHandler extends BasicEventHandler {
         
 
@@ -72,10 +74,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var demoGameMidletEventListener: DemoGameMidletEventListener =  as DemoGameMidletEventListenereventListenerInterface;
+    var demoGameMidletEventListener: DemoGameMidletEventListener = eventListenerInterface as DemoGameMidletEventListener;
 ;
     
-demoGameMidletEventListener!.onDemoGameMidletEvent( as DemoGameMidletEventeventObject);
+demoGameMidletEventListener!.onDemoGameMidletEvent(eventObject as DemoGameMidletEvent);
     
 }
 

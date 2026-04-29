@@ -205,7 +205,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 
                 //@Throws(Error::class)
             
-    public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap): Node{
+    public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
 var rootNode = rootNode
 var hashMap = hashMap
@@ -224,7 +224,7 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap): Node{
+    public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document
 var node = node
 var hashMap = hashMap
@@ -258,11 +258,11 @@ i < size; i++)
 ;
     
 
-    var name: string =  as StringobjectKey;
+    var name: string = objectKey as String;
 ;
     
 
-    var anyType: any =  as ObjecthashMap!.get(objectKey as Object);;
+    var anyType: any = hashMap!.get(objectKey as Object); as Object;
 ;
     
 
@@ -285,7 +285,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         
                                     {
                                     
-    var value: string = stringUtil!.getNonNull( as StringanyType)!;
+    var value: string = stringUtil!.getNonNull(anyType as String)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
@@ -350,7 +350,7 @@ var valueVector = valueVector
 i < size; i++)
         {
 
-    var value: string = stringUtil!.getNonNull( as StringvalueVector!.get(i))!;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as String)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value));
@@ -394,7 +394,7 @@ var valueVector = valueVector
 index < size; index++)
         {
 
-    var value: string = stringUtil!.getNonNull( as StringvalueVector!.get(index))!;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as String)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value));
@@ -412,7 +412,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 
                 //@Throws(Error::class)
             
-    public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap): Node{
+    public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
 var rootNode = rootNode
 var hashMap = hashMap
@@ -431,7 +431,7 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap): Node{
+    public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document
 var node = node
 var hashMap = hashMap
@@ -461,15 +461,15 @@ var hashMap = hashMap
 i < size; i++)
         {
 
-    var name: string =  as StringkeyArray[i]!;
+    var name: string = keyArray[i]! as String;
 ;
     
 
-    var anyType: any =  as ObjecthashMap!.get(name as Object);;
+    var anyType: any = hashMap!.get(name as Object); as Object;
 ;
     
 
-    var value: string = stringUtil!.getNonNull( as StringanyType)!;
+    var value: string = stringUtil!.getNonNull(anyType as String)!;
 ;
     
 node.appendChild(ModDomHelper.createTextNode(document, name, value));

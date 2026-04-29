@@ -200,7 +200,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -208,7 +208,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap =  as RaceTrackGeographicMapgeographicMapInterface;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
 ;
     
 
@@ -216,7 +216,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var customMapGenerator: CustomMapGenerator =  as CustomMapGeneratorraceTrackGeographicMap!.getCustomMapGenerator();;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
 ;
     
 customMapGenerator!.copyMapIntoCustomMap();
@@ -268,7 +268,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -342,7 +342,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
 ;
     
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionBasicArrayListUtil.getInstance()!.getRandom(endList);;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList); as GeographicMapCellPosition;
 ;
     
 
@@ -357,7 +357,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
     var index: number = endList!.size() -1;
 index >= 0; index--)
         {
-endGeographicMapCellPosition=  as GeographicMapCellPositionendList!.get(index);;
+endGeographicMapCellPosition= endList!.get(index); as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
@@ -429,14 +429,14 @@ this.getConnectedWaypointList()!.clear();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
 ;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.getConnectedWaypointList()!.get(0);;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
 ;
     
 

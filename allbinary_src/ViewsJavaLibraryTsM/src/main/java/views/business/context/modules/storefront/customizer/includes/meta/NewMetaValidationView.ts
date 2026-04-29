@@ -95,7 +95,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
     
 
                             }

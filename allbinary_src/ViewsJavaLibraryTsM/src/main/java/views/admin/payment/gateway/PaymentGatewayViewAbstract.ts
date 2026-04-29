@@ -63,7 +63,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData( as HttpServletRequestthis.getPageContext()!.getRequest());
+this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
     
 }
 
@@ -88,7 +88,7 @@ this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gateway
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paymentGatewayPrimaryKey;
+                        return this.paymentGatewayPrimaryKey;
     
 }
 

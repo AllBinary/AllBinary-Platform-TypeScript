@@ -87,10 +87,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayer;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
 ;
     
-collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer( as PickedUpLayerInterfacecollidableInterfaceCompositeInterface);
+collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
     
 
                                     }

@@ -196,7 +196,7 @@ this.setDataFile(dataFileName);
 
                 //@Throws(Error::class)
             
-    public override(hashMap: HashMap){
+    public override(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
@@ -207,7 +207,7 @@ var hashMap = hashMap
 ;
     
 
-    var aName: string =  as StringhashMap!.get(transformInfoData!.NAME);;
+    var aName: string = hashMap!.get(transformInfoData!.NAME); as String;
 ;
     
 
@@ -241,7 +241,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
@@ -254,7 +254,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string =  as StringhashMap!.get(transformInfoData!.OBJECTFILENAME);;
+    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME); as String;
 ;
     
 
@@ -283,7 +283,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var aObject: string =  as StringhashMap!.get(transformInfoData!.OBJECT);;
+    var aObject: string = hashMap!.get(transformInfoData!.OBJECT); as String;
 ;
     
 
@@ -319,7 +319,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty( as StringhashMap!.get(transformInfoData!.OBJECTCONFIG));)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);)
                         
                                     {
                                     
@@ -331,13 +331,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                                     }
                                 
-this.setObjectConfig( as StringhashMap!.get(transformInfoData!.OBJECTCONFIG));
+this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);
     
 
                                     }
                                 
 
-    var objectConfigFileName: string =  as StringhashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME);;
+    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME); as String;
 ;
     
 
@@ -359,7 +359,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string =  as StringhashMap!.get(OutputTypeData.getInstance()!.NAME);;
+    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME); as String;
 ;
     
 
@@ -383,7 +383,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string =  as StringhashMap!.get(transformInfoData!.TEMPLATEFILENAME);;
+    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME); as String;
 ;
     
 
@@ -396,7 +396,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string =  as StringhashMap!.get(transformInfoData!.TEMPLATE);;
+    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE); as String;
 ;
     
 
@@ -430,7 +430,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string =  as StringhashMap!.get(transformInfoData!.DATAFILENAME);;
+    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME); as String;
 ;
     
 
@@ -443,7 +443,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string =  as StringhashMap!.get(transformInfoData!.DATA);;
+    var aData: string = hashMap!.get(transformInfoData!.DATA); as String;
 ;
     
 
@@ -642,7 +642,7 @@ this.objectConfigFileName= value;
 var value = value
 this.objectConfigFileName= value;
     
-this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, this.getObjectConfigFilePath()));
+this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, this, this.getObjectConfigFilePath()));
     
 }
 
@@ -655,7 +655,7 @@ var value = value
     var document: Document = DomDocumentHelper.create(value)!;
 ;
     
-this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, document));
+this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, this, document));
     
 }
 
@@ -964,13 +964,13 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(transformInfoData!.NAME, this.name);
@@ -1065,7 +1065,7 @@ vector.add(time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getName();;
+                        return this.getName(); as Object;
     
 }
 
@@ -1091,7 +1091,7 @@ this.isChild= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return objectConfigInterface;
+                        return this.objectConfigInterface;
     
 }
 

@@ -145,7 +145,7 @@ outputStream!.writeLong(this.getScore());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameInfo;
+                        return this.gameInfo;
     
 }
 
@@ -155,7 +155,7 @@ outputStream!.writeLong(this.getScore());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scoreString;
+                        return this.scoreString;
     
 }
 

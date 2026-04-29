@@ -68,6 +68,8 @@ import { JPanel } from "./JPanel.js";
 
 import { GenericModuleConfigurationInterface } from "./GenericModuleConfigurationInterface.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -109,7 +111,7 @@ export class GenericModuleConfigurationJPanel extends javax.swing.JPanel impleme
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 this.setGenericProfiles(new GenericProfiles(GenericProfiles.DEFAULT_FILE));
     
@@ -165,7 +167,7 @@ this.newProfileJDialog!.setResizable(false);
     
 this.okNewProfileJButton!.setText("Ok");
     
-okNewProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okNewProfileJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -203,7 +205,7 @@ this.genericProfilesJPanel!.setMinimumSize(new java.awt.Dimension(400, 300));
     
 this.genericProfilesJPanel!.setPreferredSize(new java.awt.Dimension(0, 0));
     
-genericProfilesJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
+this.genericProfilesJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -221,7 +223,7 @@ this.newProfileJButton!.setText("New");
     
 this.newProfileJButton!.setToolTipText("Creates a new profile");
     
-newProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newProfileJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -237,7 +239,7 @@ this.deleteProfileJButton!.setText("Delete");
     
 this.deleteProfileJButton!.setToolTipText("Deletes the selected profile");
     
-deleteProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.deleteProfileJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -259,7 +261,7 @@ this.screenCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyB
     
 this.screenCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-screenCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.screenCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -283,7 +285,7 @@ this.savedCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBo
     
 this.savedCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-savedCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.savedCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -303,7 +305,7 @@ this.captureMotionAnalysisJCheckBox!.setBorder(javax.swing.BorderFactory.createE
     
 this.captureMotionAnalysisJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-captureMotionAnalysisJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.captureMotionAnalysisJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -323,7 +325,7 @@ this.captureComparisonJCheckBox!.setBorder(javax.swing.BorderFactory.createEmpty
     
 this.captureComparisonJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-captureComparisonJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.captureComparisonJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -531,7 +533,7 @@ genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericPro
 genericProfileActionsJPanel!.selectFirstElement();
     
 
-    var layout: javax.swing.GroupLayout =  as javax.swing.GroupLayoutthis.getBlankGenericProfileActionsJPanel()!.getLayout();;
+    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout(); as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -565,7 +567,7 @@ this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListMod
                                     {
                                     this.genericProfilesJList!.setSelectedValue(this.genericProfilesJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileUI( as Stringthis.genericProfilesJList!.getModel()!.getElementAt(0));
+this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as String);
     
 
                                     }
@@ -607,7 +609,7 @@ this.captureMotionAnalysisJCheckBox!.setSelected(false);
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypevector.get(index);;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
 ;
     
 this.logUtil!.putF(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
@@ -679,7 +681,7 @@ this.logUtil!.putF(this.commonStrings!.END, this, "updateProfileOptions");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return blankGenericProfileActionsJPanel;
+                        return this.blankGenericProfileActionsJPanel;
     
 }
 
@@ -696,7 +698,7 @@ this.blankGenericProfileActionsJPanel= blankGenericProfileActionsJPanel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfiles;
+                        return this.genericProfiles;
     
 }
 
@@ -713,7 +715,7 @@ this.genericProfiles= genericProfiles;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedGenericProfile;
+                        return this.selectedGenericProfile;
     
 }
 
@@ -730,7 +732,7 @@ var evt = evt
 
         try {
             
-    var profileNameString: string =  as Stringthis.genericProfilesJList!.getSelectedValue();;
+    var profileNameString: string = this.genericProfilesJList!.getSelectedValue(); as String;
 ;
     
 this.updateProfileUI(profileNameString);
@@ -763,7 +765,7 @@ var evt = evt
 index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string =  as StringanyType[index]!;
+    var nextSelectedValueString: string = anyType[index]! as String;
 ;
     
 this.getGenericProfiles()!.remove(nextSelectedValueString);

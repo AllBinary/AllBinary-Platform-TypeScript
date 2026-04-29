@@ -42,7 +42,7 @@ export class BasicGeographicMapExtractedPathCacheFactory extends BaseBasicArrayL
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicGeographicMapExtractedPathCacheFactory.instance;
     
 }
 
@@ -94,7 +94,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicArrayListthis.list.removeAt(0);;
+                        return this.list.removeAt(0); as BasicArrayList;
     
 
                                     }

@@ -93,7 +93,7 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return key;
+                        return this.key;
     
 }
 
@@ -103,7 +103,7 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rgb1;
+                        return this.rgb1;
     
 }
 
@@ -120,7 +120,7 @@ this.rgb1= rgb1;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rgb2;
+                        return this.rgb2;
     
 }
 

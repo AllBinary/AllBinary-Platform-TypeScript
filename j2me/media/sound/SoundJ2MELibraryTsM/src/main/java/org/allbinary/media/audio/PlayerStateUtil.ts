@@ -55,7 +55,7 @@ export class PlayerStateUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PlayerStateUtil.instance;
     
 }
 
@@ -143,7 +143,7 @@ export class PlayerStateUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.UNKNOWN;
+                        return this.commonStrings!.UNKNOWN;
     
 }
 

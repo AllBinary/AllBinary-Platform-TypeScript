@@ -83,6 +83,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -114,7 +116,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 this.imageProcessorInput= imageProcessorInput;
     
@@ -153,11 +155,11 @@ new Thread()
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: number = Integer(Integer.valueOf( as Stringthis@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem()))!;
+    var totalFrames: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as String))!;
 ;
     
 
-    var totalAngle: number = Integer(Integer.valueOf( as Stringthis@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem()))!;
+    var totalAngle: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as String))!;
 ;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);
@@ -193,7 +195,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write( as RenderedImagethis@RotationSpriteImageJPanel.result, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(this@RotationSpriteImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
@@ -218,7 +220,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jPanel1= new javax.swing.JPanel()
+this.jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -279,7 +281,7 @@ this.jLabel1!.setText("Total Frames:");
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -296,7 +298,7 @@ this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                     "360","90";
                                                 ]));
     
-totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -384,7 +386,7 @@ var evt = evt
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 

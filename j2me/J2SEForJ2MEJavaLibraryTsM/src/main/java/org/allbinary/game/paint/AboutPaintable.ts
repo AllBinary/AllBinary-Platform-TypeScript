@@ -100,7 +100,7 @@ this.developers= developers;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paintableArray;
+                        return this.paintableArray;
     
 }
 
@@ -146,7 +146,7 @@ index < infoSize; index++)
         {
 beginWidth= (font.stringWidth(this.info[index]!)>>1);
     
-graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, anchor);
+graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHeight, this.anchor);
     
 }
 
@@ -165,7 +165,7 @@ index < size; index++)
         {
 beginWidth= (font.stringWidth(this.developers[index]!)>>1);
     
-graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, anchor);
+graphics.drawString(this.developers[index]!, halfWidth -beginWidth, (5 +infoSize +index) *charHeight, this.anchor);
     
 }
 

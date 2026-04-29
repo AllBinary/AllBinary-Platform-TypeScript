@@ -103,7 +103,7 @@ this.logUtil!.putF(new StringMaker().
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm,  as GameConfigurationGaugeitem);
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
     
 
                                     }

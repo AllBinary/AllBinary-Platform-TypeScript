@@ -49,14 +49,14 @@ export class ItemColorFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ItemColorFactory.instance;
     
 }
 
 
-    public INVERT_PAINT: number = Math.round0xFF000000;
+    public INVERT_PAINT: number = Math.round(0xFF000000);
 
-    public PAINT: number = Math.round0xFFe07718;
+    public PAINT: number = Math.round(0xFFe07718);
 
     public TEXT_FIELD_NO_FOCUS: number = 0x7F7F7F;
 

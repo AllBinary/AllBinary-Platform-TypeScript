@@ -54,9 +54,9 @@ export class PaymentGatewayPageData
 
     public static readonly FORWARDMAKEPAYMENT: string = "MakePayment.jsp";
 
-    public static readonly PAYMENTOPTIONS: string = "PaymentOptions" +EXTENSION;
+    public static readonly PAYMENTOPTIONS: string = "PaymentOptions" +PaymentGatewayPageData.EXTENSION;
 
-    public static readonly STARTCHECKOUT: string = "StartCheckout" +EXTENSION;
+    public static readonly STARTCHECKOUT: string = "StartCheckout" +PaymentGatewayPageData.EXTENSION;
 
     public readonly MAKEPAYMENT: string
 

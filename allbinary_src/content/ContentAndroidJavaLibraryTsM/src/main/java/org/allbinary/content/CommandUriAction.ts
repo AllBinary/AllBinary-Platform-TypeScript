@@ -70,14 +70,14 @@ export class CommandUriAction
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CommandUriAction.instance;
     
 }
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashtable: Hashtable = new Hashtable();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public add(command: Command, url: string){
 var command = command
@@ -92,7 +92,7 @@ var command = command
 
         try {
             
-    var intent: Intent = getIntent(command)!;
+    var intent: Intent = this.getIntent(command)!;
 ;
     
 ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
@@ -115,7 +115,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string =  as Stringthis.hashtable.get(command as Object);;
+    var url: string = this.hashtable.get(command as Object); as String;
 ;
     
 

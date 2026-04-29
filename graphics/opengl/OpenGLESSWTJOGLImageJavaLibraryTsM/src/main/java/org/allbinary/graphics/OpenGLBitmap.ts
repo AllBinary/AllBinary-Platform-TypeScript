@@ -46,7 +46,7 @@ public constructor (bitmap: any = {}){
 
             super();
             //var bitmap = bitmap
-this.image=  as Imagebitmap;
+this.image= bitmap as Image;
     
 }
 
@@ -56,7 +56,7 @@ this.image=  as Imagebitmap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return image;
+                        return this.image;
     
 }
 
@@ -67,7 +67,7 @@ this.image=  as Imagebitmap;
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage =  as SwtMutableImagethis.image;
+    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
 ;
     
 
@@ -81,7 +81,7 @@ this.image=  as Imagebitmap;
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage =  as SwtImmutableImagethis.image;
+    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
 ;
     
 
@@ -109,7 +109,7 @@ var height = height
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage =  as SwtMutableImagethis.image;
+    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
 ;
     
 mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
@@ -119,7 +119,7 @@ mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage =  as SwtImmutableImagethis.image;
+    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
 ;
     
 immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
@@ -164,7 +164,7 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height);
 
 
     public recycle(){
-DisposalUtil.getInstance()!.disposeImage(image);
+DisposalUtil.getInstance()!.disposeImage(this.image);
     
 }
 

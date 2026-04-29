@@ -409,9 +409,9 @@ var storeFrontInterface = storeFrontInterface
 }
 
 
-    public toHashMapOrder(): HashMap{
+    public toHashMapOrder(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(PaymentData.METHOD, this.paymentMethod);
@@ -446,7 +446,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.toHashMapOrder()!;
+    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;
 ;
     
 
@@ -475,11 +475,11 @@ var document = document
 i < size; i++)
         {
 
-    var name: string =  as StringkeyArray[i]!;
+    var name: string = keyArray[i]! as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(name as Object);;
+    var value: string = hashMap!.get(name as Object); as String;
 ;
     
 value= StringUtil.getInstance()!.getNonNull(value);

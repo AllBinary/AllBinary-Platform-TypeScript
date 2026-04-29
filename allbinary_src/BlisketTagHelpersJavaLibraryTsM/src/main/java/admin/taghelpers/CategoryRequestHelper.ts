@@ -121,7 +121,7 @@ export class CategoryRequestHelper extends ModifyTable {
 
     private pageContext: PageContext
 
-    private hashMap: HashMap
+    private hashMap: HashMap<any, any>
 
     private request: HttpServletRequest
 
@@ -132,14 +132,14 @@ export class CategoryRequestHelper extends ModifyTable {
     private childCategoryInterface: CategoryInterface
 
     private transformInfoInterface: TransformInfoInterface
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
         try {
-            this.request=  as HttpServletRequestpageContext!.getRequest();;
+            this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.pageContext= pageContext;
     
@@ -194,7 +194,7 @@ this.getXmlData();
                         
                                     {
                                     
-    var xmlRequest: string =  as StringkeyArray[0]!;
+    var xmlRequest: string = keyArray[0]! as String;
 ;
     
 
@@ -202,12 +202,12 @@ this.getXmlData();
 ;
     
 
-        while(index < size && !xmlRequest!.startsWith(categoryRequest);)
+        while(index < size && !xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest);)
         {
-xmlRequest=  as StringkeyArray[index]!;
+xmlRequest= keyArray[index]! as String;
     
 
-                        if(xmlRequest!.startsWith(categoryRequest))
+                        if(xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest))
                         
                                     //Otherwise - thenStmt - BreakStmt
 
@@ -249,8 +249,8 @@ this.setCategoryLoader(requestNode);
     var categoryNode: Node = DomSearchHelper.getNode(categoryData!.NAME, parentCategoryNode!.getChildNodes())!;
 ;
     
-this.categoryInterface=  as CategoryInterfacenew StoreCategoryFactory(this.transformInfoInterface).
-                            getRootInstanceFromNode(categoryNode);;
+this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
+                            getRootInstanceFromNode(categoryNode); as CategoryInterface;
     
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface);
     
@@ -284,8 +284,8 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
 
                                     }
                                 
-this.childCategoryInterface=  as CategoryInterfacenew StoreCategoryFactory(this.transformInfoInterface).
-                            getInstance(childCategoryNode);;
+this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
+                            getInstance(childCategoryNode); as CategoryInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -356,7 +356,7 @@ var requestNode = requestNode
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;
 ;
     
-this.transformInfoInterface=  as TransformInfoInterfacenew TransformInfoBasic(storeFrontInterface, hashMap, pageContext);
+this.transformInfoInterface= new TransformInfoBasic(storeFrontInterface, this.hashMap, this.pageContext) as TransformInfoInterface;
     
 
                         if(this.transformInfoInterface == 

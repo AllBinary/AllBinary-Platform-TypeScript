@@ -133,32 +133,32 @@ this.retries= EMPTY_STRING;
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.id=  as StringhashMap!.get(DownloadItemData.ID);;
+this.id= hashMap!.get(DownloadItemData.ID); as String;
     
-this.basicItemId=  as StringhashMap!.get(BasicItemData.ID);;
+this.basicItemId= hashMap!.get(BasicItemData.ID); as String;
     
-this.enabled=  as StringhashMap!.get(EntryData.getInstance()!.ENABLE);;
+this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE); as String;
     
-this.system=  as StringhashMap!.get(DownloadItemData.SYSTEM);;
+this.system= hashMap!.get(DownloadItemData.SYSTEM); as String;
     
-this.platform=  as StringhashMap!.get(DownloadItemData.PLATFORM);;
+this.platform= hashMap!.get(DownloadItemData.PLATFORM); as String;
     
-this.specialName=  as StringhashMap!.get(DownloadItemData.SPECIAL_NAME);;
+this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME); as String;
     
-this.version=  as StringhashMap!.get(DownloadItemData.VERSION);;
+this.version= hashMap!.get(DownloadItemData.VERSION); as String;
     
-this.changes=  as StringhashMap!.get(DownloadItemData.CHANGES);;
+this.changes= hashMap!.get(DownloadItemData.CHANGES); as String;
     
-this.licenseFile=  as StringhashMap!.get(DownloadItemData.LICENSE_FILE);;
+this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as String;
     
-this.file=  as StringhashMap!.get(DownloadItemData.FILE);;
+this.file= hashMap!.get(DownloadItemData.FILE); as String;
     
 
-    var value: string =  as StringhashMap!.get(DownloadItemData.SIZE);;
+    var value: string = hashMap!.get(DownloadItemData.SIZE); as String;
 ;
     
 
@@ -177,7 +177,7 @@ this.file=  as StringhashMap!.get(DownloadItemData.FILE);;
                         }
                             
 
-    var validTime: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME);;
+    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME); as String;
 ;
     
 
@@ -191,27 +191,27 @@ this.file=  as StringhashMap!.get(DownloadItemData.FILE);;
                                 
                         else {
                             
-    var totalYears: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_YEARS);;
+    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS); as String;
 ;
     
 
-    var totalMonths: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_MONTHS);;
+    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS); as String;
 ;
     
 
-    var totalDays: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_DAYS);;
+    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS); as String;
 ;
     
 
-    var totalHours: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_HOURS);;
+    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS); as String;
 ;
     
 
-    var totalMinutes: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_MINUTES);;
+    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES); as String;
 ;
     
 
-    var totalSeconds: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_SECONDS);;
+    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS); as String;
 ;
     
 
@@ -223,7 +223,7 @@ this.validTime= totalTime;
 
                         }
                             
-this.retries=  as StringhashMap!.get(DownloadItemData.RETRIES);;
+this.retries= hashMap!.get(DownloadItemData.RETRIES); as String;
     
 }
 
@@ -281,9 +281,9 @@ values.add(time);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var values: HashMap = new HashMap();
+    var values: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 values.put(DownloadItemData.ID, this.getId());
@@ -337,7 +337,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return this.id;
     
 }
 
@@ -347,7 +347,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return system;
+                        return this.system;
     
 }
 
@@ -357,7 +357,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platform;
+                        return this.platform;
     
 }
 
@@ -367,7 +367,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return specialName;
+                        return this.specialName;
     
 }
 
@@ -377,7 +377,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return version;
+                        return this.version;
     
 }
 
@@ -387,7 +387,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return changes;
+                        return this.changes;
     
 }
 
@@ -397,7 +397,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return licenseFile;
+                        return this.licenseFile;
     
 }
 
@@ -407,7 +407,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return file;
+                        return this.file;
     
 }
 
@@ -417,7 +417,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return size;
+                        return this.size;
     
 }
 
@@ -427,7 +427,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return validTime;
+                        return this.validTime;
     
 }
 
@@ -437,7 +437,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return retries;
+                        return this.retries;
     
 }
 

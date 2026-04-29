@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     

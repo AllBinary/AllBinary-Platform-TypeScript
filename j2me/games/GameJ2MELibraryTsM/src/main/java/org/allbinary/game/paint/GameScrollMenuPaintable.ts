@@ -66,6 +66,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
         
 import { BasicGameDemoPaintable } from "./BasicGameDemoPaintable.js";
 
+import { MainGameDemoStatePaintable } from "./MainGameDemoStatePaintable.js";
+
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor){
@@ -100,15 +102,15 @@ var eventObject = eventObject
     setColor(basicColor: BasicColor){
 var basicColor = basicColor
 
-    var mainGameDemoStatePaintable: MainGameDemoStatePaintable =  as MainGameDemoStatePaintablethis.getMainDemoStatePaintable();;
+    var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable(); as MainGameDemoStatePaintable;
 ;
     
 
-    var formPaintable: FormPaintable =  as FormPaintablemainGameDemoStatePaintable!.getMenuPaintableInterface();;
+    var formPaintable: FormPaintable = mainGameDemoStatePaintable!.getMenuPaintableInterface(); as FormPaintable;
 ;
     
 
-    var scrollSelectionForm: ScrollSelectionForm =  as ScrollSelectionFormformPaintable!.getForm();;
+    var scrollSelectionForm: ScrollSelectionForm = formPaintable!.getForm(); as ScrollSelectionForm;
 ;
     
 mainGameDemoStatePaintable!.getOwnershipPaintableInterface()!.setBasicColorP(basicColor);
@@ -124,7 +126,7 @@ scrollSelectionForm!.setButtonBasicColor(basicColor);
 index >= 0; index--)
         {
 
-    var item: TextItem =  as TextItemscrollSelectionForm!.get(index);;
+    var item: TextItem = scrollSelectionForm!.get(index); as TextItem;
 ;
     
 

@@ -69,18 +69,18 @@ export class GraphicItemFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GraphicItemFactory.instance;
     
 }
 
 
-    private readonly graphicItems: HashMap
+    private readonly graphicItems: HashMap<any, any>
 
     private readonly DEFAULT: GraphicsItemInterfaceFactoryInterface = new SelectionToolFactory();
 private constructor (){
 
             super();
-        this.graphicItems= new HashMap();
+        this.graphicItems= new HashMap<any, any>();
     
 this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
     
@@ -90,7 +90,7 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 var itemName = itemName
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface =  as GraphicsItemInterfaceFactoryInterfacethis.graphicItems!.get(itemName);;
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName); as GraphicsItemInterfaceFactoryInterface;
 ;
     
 
@@ -115,14 +115,14 @@ var itemName = itemName
 
                 //@Throws(Error::class)
             
-    public getInstance(graphicItemNodeList: BasicArrayList): HashMap{
+    public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 var graphicItemNodeList = graphicItemNodeList
 
     var numberOfItems: number = graphicItemNodeList!.size()!;
 ;
     
 
-    var graphicItemHashMap: HashMap = new HashMap();
+    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -141,7 +141,7 @@ var graphicItemNodeList = graphicItemNodeList
 index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance( as NodegraphicItemNodeList!.get(index))!;
+    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;
 ;
     
 graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);

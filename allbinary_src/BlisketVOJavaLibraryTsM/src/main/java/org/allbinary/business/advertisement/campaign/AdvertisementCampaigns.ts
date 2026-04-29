@@ -61,7 +61,7 @@ public constructor (vector: Vector){
 
             super();
         var vector = vector
-this.advertisementsVector= advertisementsVector;
+this.advertisementsVector= this.advertisementsVector;
     
 }
 
@@ -79,7 +79,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AdvertisementInterfacethis.advertisementsVector!.get(index);;
+                        return this.advertisementsVector!.get(index); as AdvertisementInterface;
     
 }
 

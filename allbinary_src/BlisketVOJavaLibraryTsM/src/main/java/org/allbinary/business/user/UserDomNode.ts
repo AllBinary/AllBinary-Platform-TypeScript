@@ -87,7 +87,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = this.dataMappingInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING);

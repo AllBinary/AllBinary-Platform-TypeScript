@@ -235,7 +235,7 @@ this.addVelocity(magnitude, angle, otherAngle);
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.setVelocityi(magnitude, Math.roundangle.getValue(), Math.roundotherAngle!.getValue());
+this.setVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
     
 }
 
@@ -244,7 +244,7 @@ this.setVelocityi(magnitude, Math.roundangle.getValue(), Math.roundotherAngle!.g
     //var magnitude = magnitude
     //var angle = angle
     //var otherAngle = otherAngle
-this.addVelocityi(magnitude, Math.roundangle.getValue(), Math.roundotherAngle!.getValue());
+this.addVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
     
 }
 

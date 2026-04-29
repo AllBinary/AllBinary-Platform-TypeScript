@@ -301,23 +301,23 @@ this.initVertices();
 
 
     initVertices(){
-textureVertexFloatBuffer!.put(0);
+this.textureVertexFloatBuffer!.put(0);
     
-textureVertexFloatBuffer!.put(1);
+this.textureVertexFloatBuffer!.put(1);
     
-textureVertexFloatBuffer!.put(1);
+this.textureVertexFloatBuffer!.put(1);
     
-textureVertexFloatBuffer!.put(1);
+this.textureVertexFloatBuffer!.put(1);
     
-textureVertexFloatBuffer!.put(0);
+this.textureVertexFloatBuffer!.put(0);
     
-textureVertexFloatBuffer!.put(0);
+this.textureVertexFloatBuffer!.put(0);
     
-textureVertexFloatBuffer!.put(1);
+this.textureVertexFloatBuffer!.put(1);
     
-textureVertexFloatBuffer!.put(0);
+this.textureVertexFloatBuffer!.put(0);
     
-textureVertexFloatBuffer!.rewind();
+this.textureVertexFloatBuffer!.rewind();
     
 }
 
@@ -325,7 +325,7 @@ textureVertexFloatBuffer!.rewind();
     public set(gl: GL){
     //var gl = gl
 
-    var gl10: GL10 =  as GL10gl;
+    var gl10: GL10 = gl as GL10;
 ;
     
 

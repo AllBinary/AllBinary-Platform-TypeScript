@@ -86,11 +86,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequestthis.getPageContext()!.getRequest();;
+    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest(); as HttpServletRequest;
 ;
     
 
-    var hashMap: HashMap = new RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
 ;
     

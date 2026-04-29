@@ -208,7 +208,7 @@ this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.gameCanvas!.getLayerManager();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
 ;
     
 
@@ -330,7 +330,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent =  as GameKeyEventthis.inputList!.get(index);;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
 ;
     
 key= gameKeyEvent!.getKey();
@@ -387,7 +387,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.gameCanvas!.getLayerManager();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
 ;
     
 
@@ -436,7 +436,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
                         }
                             
 
-    var foundRTSLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerlayer;
+    var foundRTSLayer: CollidableDestroyableDamageableLayer = layer as CollidableDestroyableDamageableLayer;
 ;
     
 this.setSelectedRTSLayer(foundRTSLayer, geographicMapCellPosition);
@@ -475,7 +475,7 @@ var graphics = graphics
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.gameCanvas!.getLayerManager();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
 ;
     
 
@@ -513,7 +513,7 @@ graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt());
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer =  as RTSLayerlist.get(index);;
+    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
 ;
     
 width= rtsLayer!.getWidth();
@@ -556,7 +556,7 @@ graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allB
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedRTSLayerPlayerGameInput;
+                        return this.selectedRTSLayerPlayerGameInput;
     
 }
 
@@ -586,7 +586,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsPlayerLayerInterface;
+                        return this.rtsPlayerLayerInterface;
     
 }
 
@@ -596,7 +596,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return towerInfoPaintable;
+                        return this.towerInfoPaintable;
     
 }
 
@@ -606,7 +606,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionGestureInputList;
+                        return this.motionGestureInputList;
     
 }
 
@@ -616,7 +616,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameCanvas;
+                        return this.gameCanvas;
     
 }
 
@@ -626,7 +626,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isSingleKeyProcessing;
+                        return this.isSingleKeyProcessing;
     
 }
 
@@ -636,7 +636,7 @@ this.selectedRtsFormInput= selectedRtsFormInput;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scrollPlayerGameInput;
+                        return this.scrollPlayerGameInput;
     
 }
 

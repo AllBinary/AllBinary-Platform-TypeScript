@@ -84,20 +84,20 @@ export class NewUserFactory
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
 var transformInfoInterface = transformInfoInterface
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequesthttpTransformInfoInterface!.getPageContext()!.getRequest();;
+    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
 ;
     
 
-    var hashMap: HashMap = new RequestParams(httpServletRequest).
+    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
 ;
     
 
-    var role: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString());;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()); as String;
 ;
     
 hashMap!.put(UserRoleData.NAME.toString(), role);
@@ -113,7 +113,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
 
                 //@Throws(Error::class)
             
-    public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap): UserInterface{
+    public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
 var httpServletRequest = httpServletRequest
 var propertiesHashMap = propertiesHashMap
 
@@ -123,12 +123,12 @@ var propertiesHashMap = propertiesHashMap
                         
                                     {
                                     
-    var requestHashMap: HashMap = new RequestParams(httpServletRequest).
+    var requestHashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
                             toHashMap()!;
 ;
     
 
-    var roleString: string =  as StringpropertiesHashMap!.get(UserRoleData.NAME.toString());;
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()); as String;
 ;
     
 requestHashMap!.put(UserRoleData.NAME.toString(), roleString);

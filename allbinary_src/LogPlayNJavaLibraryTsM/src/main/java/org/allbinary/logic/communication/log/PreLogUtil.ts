@@ -85,7 +85,7 @@ className= new StringMaker().
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
 ;
     
-PlayN.log()!.debug(LOG_SUCCESS +message);
+PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     
 }
 
@@ -119,7 +119,7 @@ className= new StringMaker().
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-PlayN.log()!.error(LOG_SUCCESS +message,  as Errorexception);
+PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Error);
     
 }
 
@@ -132,7 +132,7 @@ PlayN.log()!.error(LOG_SUCCESS +message,  as Errorexception);
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
 ;
     
-PlayN.log()!.debug(LOG_SUCCESS +message);
+PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     
 }
 
@@ -146,7 +146,7 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-PlayN.log()!.error(LOG_SUCCESS +message,  as Errorexception);
+PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Error);
     
 }
 

@@ -74,15 +74,15 @@ this.setP2(p2);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getDeltaY() /getDeltaX();
+                        return this.getDeltaY() /this.getDeltaX();
     
 }
 
 
     update(){
-this.deltaX= getP1()!.getX(); -getP2()!.getX();
+this.deltaX= this.getP1()!.getX(); -this.getP2()!.getX();
     
-this.deltaY= getP1()!.getY(); -getP2()!.getY();
+this.deltaY= this.getP1()!.getY(); -this.getP2()!.getY();
     
 }
 
@@ -92,7 +92,7 @@ this.deltaY= getP1()!.getY(); -getP2()!.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return deltaX;
+                        return this.deltaX;
     
 }
 
@@ -102,7 +102,7 @@ this.deltaY= getP1()!.getY(); -getP2()!.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return deltaY;
+                        return this.deltaY;
     
 }
 
@@ -112,7 +112,7 @@ this.deltaY= getP1()!.getY(); -getP2()!.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return p1;
+                        return this.p1;
     
 }
 
@@ -122,7 +122,7 @@ this.deltaY= getP1()!.getY(); -getP2()!.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return p2;
+                        return this.p2;
     
 }
 

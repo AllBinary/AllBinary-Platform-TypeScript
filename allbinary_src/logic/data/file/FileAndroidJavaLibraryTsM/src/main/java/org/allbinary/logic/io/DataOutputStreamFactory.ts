@@ -40,6 +40,8 @@ import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbFileOutputStream } from "./AbFileOutputStream.js";
+
 import { AbDataOutputStream } from "./AbDataOutputStream.js";
 
 import { FileStreamFactory } from "./FileStreamFactory.js";
@@ -56,7 +58,7 @@ export class DataOutputStreamFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DataOutputStreamFactory.instance;
     
 }
 

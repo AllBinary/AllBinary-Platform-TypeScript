@@ -157,7 +157,7 @@ this.songList= songList;
                         
                                     {
                                     
-    var randomSongSound: Sound =  as Soundthis.basicArrayListUtil!.getRandom(this.songList);;
+    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList); as Sound;
 ;
     
 this.nextSong(randomSongSound, 0, 0);
@@ -243,7 +243,7 @@ this.nextSongSound= NoSound.getInstance();
                         if(nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound=  as SoundBasicArrayListUtil.getInstance()!.getRandom(this.songList);;
+                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList); as Sound;
     
 
                                     }
@@ -262,7 +262,7 @@ this.nextSongSound= NoSound.getInstance();
     var duration: number = this.currentSongSound!.getDuration()!;
 ;
     
-this.timeDelayHelper!.delay= Math.roundduration;
+this.timeDelayHelper!.delay= Math.round(duration);
     
 
                         if(duration <= 0)

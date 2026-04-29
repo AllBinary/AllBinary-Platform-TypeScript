@@ -96,7 +96,7 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new MotionGestureEvent(this.source, this.id,  as MotionGestureInputTouchMotionGestureFactory.getInstance()!.NO_MOTION);
+                        return new MotionGestureEvent(this.source, this.id, TouchMotionGestureFactory.getInstance()!.NO_MOTION as MotionGestureInput);
     
 
                                     }
@@ -106,7 +106,7 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new MotionGestureEvent(this.source, this.id,  as MotionGestureInputinput);
+                        return new MotionGestureEvent(this.source, this.id, input as MotionGestureInput);
     
 
                         }

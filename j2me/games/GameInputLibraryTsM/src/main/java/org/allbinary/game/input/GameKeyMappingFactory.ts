@@ -55,7 +55,7 @@ export class GameKeyMappingFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return GameKeyMappingFactory.SINGLETON;
     
 }
 
@@ -125,7 +125,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return intKeyToGameKey[key]!;
+                        return this.intKeyToGameKey[key]!;
     
 }
 

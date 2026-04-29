@@ -72,6 +72,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -109,7 +111,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
                     
 this.logUtil!.putF("Starting", this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.imageProcessorInput= imageProcessorInput;
     
@@ -178,7 +180,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write( as RenderedImagethis@MirrorImageJPanel.result, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(this@MirrorImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
@@ -209,7 +211,7 @@ jLayeredPane1= new javax.swing.JLayeredPane();
     
 this.buttonGroup= new javax.swing.ButtonGroup();
     
-jPanel1= new javax.swing.JPanel()
+this.jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -271,7 +273,7 @@ this.verticleJCheckBox!.setEnabled(false);
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -285,7 +287,7 @@ generateJButtonActionPerformed(evt);
     
 this.renameJRadioButton!.setText("Save As filename_mirror");
     
-renameJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.renameJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -373,7 +375,7 @@ var evt = evt
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 

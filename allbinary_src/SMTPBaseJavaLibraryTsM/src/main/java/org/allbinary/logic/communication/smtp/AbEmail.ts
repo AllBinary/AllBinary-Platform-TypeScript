@@ -121,7 +121,7 @@ var contentBase = contentBase
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
 
 
@@ -149,7 +149,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Emailthis.email;
+                        return this.email as Email;
     
 }
 

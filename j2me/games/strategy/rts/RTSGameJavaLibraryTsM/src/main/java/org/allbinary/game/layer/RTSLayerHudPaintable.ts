@@ -66,7 +66,7 @@ export class RTSLayerHudPaintable extends SelectionHudPaintable {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return RTSLayerHudPaintable.instance;
     
 }
 
@@ -92,7 +92,7 @@ private constructor (){
 this.setName(this.getRtsLayer()!.getName());
     
 
-    var partInterface: BasicWeaponPart =  as BasicWeaponPartthis.getRtsLayer()!.getPartInterfaceArray()[0]!;
+    var partInterface: BasicWeaponPart = this.getRtsLayer()!.getPartInterfaceArray()[0]! as BasicWeaponPart;
 ;
     
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
@@ -157,7 +157,7 @@ this.rtsLayer= rtsLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayer;
+                        return this.rtsLayer;
     
 }
 

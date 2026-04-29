@@ -248,9 +248,9 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(DomData.VALUE, this.value);
@@ -273,7 +273,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 
@@ -302,7 +302,7 @@ var document = document
 index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.cssPropertyVector!.get(index);;
+    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index); as DomNodeInterface;
 ;
     
 node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
@@ -322,7 +322,7 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
 index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.cssElementVector!.get(index);;
+    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index); as DomNodeInterface;
 ;
     
 node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));

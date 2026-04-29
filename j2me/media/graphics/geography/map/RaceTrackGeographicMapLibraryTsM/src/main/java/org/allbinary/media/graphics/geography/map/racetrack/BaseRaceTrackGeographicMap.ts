@@ -153,7 +153,7 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return raceTrackInfo;
+                        return this.raceTrackInfo;
     
 }
 
@@ -177,7 +177,7 @@ this.miniGeographicMap= miniBasicGeographicMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return miniGeographicMap;
+                        return this.miniGeographicMap;
     
 }
 
@@ -187,7 +187,7 @@ this.miniGeographicMap= miniBasicGeographicMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return raceTrackData;
+                        return this.raceTrackData;
     
 }
 

@@ -62,6 +62,10 @@ import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
 
 import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
 
+import { VehicleProperties } from "./VehicleProperties.js";
+
+import { VehicleFrictionProperties } from "./VehicleFrictionProperties.js";
+
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         
 
@@ -94,10 +98,10 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ( as CollidableDestroyableDamageableLayerthis.ownerLayer);
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = (this.ownerLayer as CollidableDestroyableDamageableLayer);
 ;
     
-collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer( as PickedUpLayerInterfacecollidableInterfaceCompositeInterface);
+collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
     
 
                                     }
@@ -112,7 +116,7 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer( as Pic
                                     }
                                 
                         else {
-                            this.collideVehicle( as VehiclePropertiesCompositeInterfacecollidableInterfaceCompositeInterface);
+                            this.collideVehicle(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface);
     
 
                         }
@@ -134,7 +138,7 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
     collideVehicle(vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
     //var vehiclePropertiesCompositeInterface = vehiclePropertiesCompositeInterface
 
-    var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = ( as VehiclePropertiesCompositeInterfacethis.ownerLayer);
+    var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (this.ownerLayer as VehiclePropertiesCompositeInterface);
 ;
     
 

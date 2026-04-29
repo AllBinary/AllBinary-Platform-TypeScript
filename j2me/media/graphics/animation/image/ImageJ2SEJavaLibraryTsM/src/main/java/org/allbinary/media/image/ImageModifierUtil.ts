@@ -77,7 +77,7 @@ export class ImageModifierUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageModifierUtil.instance;
     
 }
 
@@ -296,7 +296,7 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-    var alpha: number = .toByte()alphaInt;
+    var alpha: number = alphaInt.toByte();
 ;
     
 
@@ -333,7 +333,7 @@ index2 < height; index2++)
         {
 raster.getPixel(index, index2, colorArray);
     
-colorArray[0]= alpha&colorArray[0];
+this.colorArray[0]= alpha&this.colorArray[0];
     
 raster.setPixel(index, index2, colorArray);
     

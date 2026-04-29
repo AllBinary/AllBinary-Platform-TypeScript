@@ -149,7 +149,7 @@ export class InventorySearchUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InventorySearchUtil.instance;
     
 }
 
@@ -206,7 +206,7 @@ var searchRequest = searchRequest
 index < size; index++)
         {
 
-    var subStore: string =  as StringsubStoreVector!.get(index);;
+    var subStore: string = subStoreVector!.get(index); as String;
 ;
     
 
@@ -240,9 +240,9 @@ column.addAll(substoreIdColumn);
     getNoResults(viewDocumentInterface: TransformDocumentInterface, inventoryNode: Node): string{
 var viewDocumentInterface = viewDocumentInterface
 var inventoryNode = inventoryNode
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_PAGES, commonPhoneStrings!.ZERO));
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_PAGES, this.commonPhoneStrings!.ZERO));
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, commonPhoneStrings!.ZERO));
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, this.commonPhoneStrings!.ZERO));
     
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
@@ -297,12 +297,12 @@ var column = column
 ;
     
 
-    var columnValueHashMap: HashMap = searchParams!.get()!;
+    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
 ;
     
 
     var keyword: string = new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all( as StringcolumnValueHashMap!.get(BasicItemData.KEYWORDS))!;
+                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String)!;
 ;
     
 
@@ -427,7 +427,7 @@ keywords= keywords.uppercase();
                             toXmlNode(viewDocumentInterface!.getDoc())!;
 ;
     
-itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, commonPhoneStrings!.ONE));
+itemNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), BasketData.ITEMTOTALINBASKET, this.commonPhoneStrings!.ONE));
     
 inventoryNode!.appendChild(itemNode!.cloneNode(true));
     
@@ -600,7 +600,7 @@ inventoryNodes[index]!.appendChild(ModDomHelper.createNameValueNodes(tempDocumen
     var success: string = DomDocumentHelper.toString(tempDocument)!;
 ;
     
-productListingPages[index]= new StoreTransformer(abeClientInformation,  as TransformInfoInterfacenew TransformInfoHttpSearch(searchRequest)).
+productListingPages[index]= new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
                             translate(success);
     
 

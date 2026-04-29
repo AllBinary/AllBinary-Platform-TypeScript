@@ -80,7 +80,7 @@ this.setMotionRectangles(motionRectangles);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionRectangles;
+                        return this.motionRectangles;
     
 }
 

@@ -130,7 +130,7 @@ export class LoggingInitInfo
     public static write(){
 
         try {
-            hasRead= false;
+            LoggingInitInfo.hasRead= false;
     
 
                 //: 
@@ -183,7 +183,7 @@ LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
 i < size; i++)
         {
 
-    var node: Node =  as NodelogConfigNodeVector!.elementAt(i);;
+    var node: Node = logConfigNodeVector!.elementAt(i); as Node;
 ;
     
 
@@ -221,12 +221,12 @@ LoggingInitInfo.hasRead= value;
 
     static updateIfNeeded(){
 
-                        if(!hasRead)
+                        if(!LoggingInitInfo.hasRead)
                         
                                     {
                                     LoggingInitInfo.read();
     
-hasRead= true;
+LoggingInitInfo.hasRead= true;
     
 
                         if(LoggingInitInfo.logConfigInfoList == 
@@ -292,7 +292,7 @@ LoggingInitInfo.updateIfNeeded();
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
 ;
     
 
@@ -341,7 +341,7 @@ LoggingInitInfo.updateIfNeeded();
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
 ;
     
 

@@ -95,7 +95,7 @@ this.paintableArray[index]!.paint(graphics);
                 ;
 --index >= 0; )
         {
-paintableInterface=  as PaintableInterfacethis.paintableArray[index]!;
+paintableInterface= this.paintableArray[index]! as PaintableInterface;
     
 paintableInterface!.paintThreed(graphics);
     

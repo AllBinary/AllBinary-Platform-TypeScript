@@ -67,7 +67,7 @@ export class WebAppUrlGlobals extends UrlGlobalsInterface {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return path;
+                        return this.path;
     
 }
 
@@ -120,7 +120,7 @@ this.isWebappPathSet= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getWebappPath();;
+                        return this.getWebappPath();;
     
 
                                     }

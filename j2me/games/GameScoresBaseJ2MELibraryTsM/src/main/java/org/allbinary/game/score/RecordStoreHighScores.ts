@@ -113,7 +113,7 @@ import { HighScore } from "./HighScore.js";
 export class RecordStoreHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable = new Hashtable();
+    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
@@ -124,7 +124,7 @@ export class RecordStoreHighScores extends HighScores {
     //var columnTwoHeading = columnTwoHeading
     //var recordComparatorInterface = recordComparatorInterface
 
-    var highScoresCanBeNull: any? = hashTable!.get( as ObjecthighScoreName);
+    var highScoresCanBeNull: any? = hashTable!.get(highScoreName as Object);
 ;
     
 
@@ -137,7 +137,7 @@ export class RecordStoreHighScores extends HighScores {
     var highScores: HighScores = new RecordStoreHighScores(abeClientInformation, gameInfo, highScoreName, heading, columnTwoHeading, recordComparatorInterface);
 ;
     
-hashTable!.put(highScores!.getName(), highScores);
+RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
     
 
 
@@ -152,7 +152,7 @@ hashTable!.put(highScores!.getName(), highScores);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HighScoreshighScoresCanBeNull;
+                        return highScoresCanBeNull as HighScores;
     
 }
 
@@ -201,7 +201,7 @@ this.load();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
+                        return this.platformRecordIdUtil!.getRecordId(abeClientInformation, new StringMaker().
                             append(CommonSeps.getInstance()!.UNDERSCORE)!.append(this.getName())!.append(this.RECORD_ID)!.toString());;
     
 }
@@ -308,7 +308,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 ;
     
 
-    var scoreComparator: ScoreComparator = ( as ScoreComparatorthis.recordComparatorInterface);
+    var scoreComparator: ScoreComparator = (this.recordComparatorInterface as ScoreComparator);
 ;
     
 
@@ -510,7 +510,7 @@ inputStream= new DataInputStream(byteArrayInputStream);
 index < size; index++)
         {
 
-    var highScore: HighScore =  as HighScorelist.objectArray[index]!;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;
 ;
     
 
@@ -610,7 +610,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
 
                         if(this.getList() != 
                                     null
-                                 && this.getList()!.size() < MAXHIGHSCORES)
+                                 && this.getList()!.size() < this.MAXHIGHSCORES)
                         
                                     {
                                     
@@ -678,7 +678,7 @@ var newHighScore = newHighScore
 index < size; index++)
         {
 
-    var highScore: HighScore =  as HighScorelist.objectArray[index]!;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;
 ;
     
 
@@ -749,7 +749,7 @@ stringBuffer!.append(super.toString());
 index < size; index++)
         {
 
-    var highScore: HighScore =  as HighScorelist.objectArray[index]!;
+    var highScore: HighScore = list.objectArray[index]! as HighScore;
 ;
     
 stringBuffer!.append(highScore!.getScoreString());

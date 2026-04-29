@@ -84,7 +84,7 @@ export class AssignWaypointsUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AssignWaypointsUtil.instance;
     
 }
 
@@ -103,7 +103,7 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 ;
     
 
-    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
 ;
     
 
@@ -115,7 +115,7 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer =  as RTSLayerlist.get(index);;
+    var waypointLayer: RTSLayer = list.get(index); as RTSLayer;
 ;
     
 this.WAYPOINT_EVENT.setRtsLayer(waypointLayer);

@@ -57,7 +57,7 @@ export class AcceptableResponseUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AcceptableResponseUtil.instance;
     
 }
 
@@ -77,7 +77,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Stringthis.candidateVector!.get(index);;
+                        return this.candidateVector!.get(index); as String;
     
 }
 
@@ -88,7 +88,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Stringthis.tagNameVector!.get(index);;
+                        return this.tagNameVector!.get(index); as String;
     
 }
 
@@ -98,7 +98,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return candidateVector!.length;;
+                        return this.candidateVector!.length;;
     
 }
 

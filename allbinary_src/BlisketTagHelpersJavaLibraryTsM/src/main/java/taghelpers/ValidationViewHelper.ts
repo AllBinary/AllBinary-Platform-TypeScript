@@ -63,7 +63,7 @@ export class ValidationViewHelper extends ViewHelper implements ValidationCompon
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private viewInterface: ValidationComponentInterface
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super(hashMap, pageContext);
                     var hashMap = hashMap
 var pageContext = pageContext
@@ -71,7 +71,7 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.viewInterface=  as ValidationComponentInterfacethis.getViewObject();;
+this.viewInterface= this.getViewObject(); as ValidationComponentInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -101,7 +101,7 @@ this.viewInterface=  as ValidationComponentInterfacethis.getViewObject();;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.isValid();;
+                        return this.viewInterface!.isValid();;
     
 
                 //: 
@@ -134,7 +134,7 @@ this.viewInterface=  as ValidationComponentInterfacethis.getViewObject();;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.validationInfo();;
+                        return this.viewInterface!.validationInfo();;
     
 
                 //: 
@@ -167,7 +167,7 @@ this.viewInterface=  as ValidationComponentInterfacethis.getViewObject();;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.toValidationInfoDoc();;
+                        return this.viewInterface!.toValidationInfoDoc();;
     
 
                 //: 
@@ -201,7 +201,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewInterface!.toValidationInfoNode(document);;
+                        return this.viewInterface!.toValidationInfoNode(document);;
     
 
                 //: 

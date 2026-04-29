@@ -64,7 +64,7 @@ export class ImageCompleteUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageCompleteUtil.instance;
     
 }
 
@@ -88,11 +88,11 @@ var name = name
     //var name = name
     //var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage =  as PlaynImageimage;
+    var playnImage: PlaynImage = image as PlaynImage;
 ;
     
 
-    var playnCoreImage: playn.core.Image =  as playn.core.ImageplaynImage!.getImage();;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
 ;
     
 

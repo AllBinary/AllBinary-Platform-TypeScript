@@ -75,6 +75,8 @@ import { TouchScreenFactory } from "./TouchScreenFactory.js";
 
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
+import { TouchButton } from "./TouchButton.js";
+
 export class TouchButtonRecognizer
             extends Object
          {
@@ -254,7 +256,7 @@ var deviceId = deviceId
 ;
     
 
-                        if(currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
+                        if(this.currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
                         
                                     {
                                     this.lastPressedTouchButtonInput= BasicTouchInputFactory.getInstance()!.NONE;
@@ -295,7 +297,7 @@ this.processRelease(touchButtonInput, deviceId);
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-touchButton=  as TouchButtonlist.objectArray[index]!;
+touchButton= list.objectArray[index]! as TouchButton;
     
 rectangle= touchButton!.getRectangle();
     
@@ -367,7 +369,7 @@ var deviceId = deviceId
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-touchButton=  as TouchButtonlist.objectArray[index]!;
+touchButton= list.objectArray[index]! as TouchButton;
     
 rectangle= touchButton!.getRectangle();
     
@@ -380,14 +382,14 @@ point= rectangle.getPoint();
                                     touchButtonInput= touchButton!.getTouchButtonInput();
     
 
-                        if(!currentlyPressedTouchButtonSingleton!.contains(touchButtonInput);)
+                        if(!this.currentlyPressedTouchButtonSingleton!.contains(touchButtonInput);)
                         
                                     {
                                     this.releaseHelper!.release(touchButtonInput, deviceId);
     
 this.lastPressedTouchButtonInput= touchButtonInput;
     
-currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
+this.currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
     
 
     var gameKeyEvent: GameKeyEvent = touchButtonInput!.getGameKeyEvent()!;

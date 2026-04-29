@@ -84,7 +84,7 @@ export class EmailEventHandlerUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return EmailEventHandlerUtil.instance;
     
 }
 
@@ -177,7 +177,7 @@ userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
 index < size; index++)
         {
 
-    var userInterface: UserInterface =  as UserInterfaceuserVector!.get(index);;
+    var userInterface: UserInterface = userVector!.get(index); as UserInterface;
 ;
     
 

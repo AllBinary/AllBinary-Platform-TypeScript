@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -48,6 +50,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
+import { JDialog } from "./JDialog.js";
+
 import { PreLogUtil } from "./PreLogUtil.js";
 
 export class GuiLog
@@ -62,7 +66,7 @@ export class GuiLog
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GuiLog.instance;
     
 }
 

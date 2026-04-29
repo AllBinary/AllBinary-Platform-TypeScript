@@ -58,7 +58,11 @@ import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInter
 
 import { ImageTypes } from "./ImageTypes.js";
 
+import { DefaultListModel } from "./DefaultListModel.js";
+
 import { JDialog } from "./JDialog.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -88,7 +92,7 @@ public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptO
         var capturedImageActionScriptOutputInterface = capturedImageActionScriptOutputInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.capturedImageActionScriptOutputInterface= capturedImageActionScriptOutputInterface;
     
@@ -125,7 +129,7 @@ this.setImageTypeJlistModel();
 index < size; index++)
         {
 
-    var imageType: InputImageType =  as InputImageTypevector.get(index);;
+    var imageType: InputImageType = vector.get(index); as InputImageType;
 ;
     
 selectedArray[index++]= imageType!.getIndex();
@@ -227,7 +231,7 @@ this.capturedImageActionScriptOutputInterface!.log();
 index < size; index++)
         {
 
-    var imageType: InputImageType =  as InputImageTypevector.get(index);;
+    var imageType: InputImageType = vector.get(index); as InputImageType;
 ;
     
 defaultListModel!.addElement(imageType!.getName());
@@ -244,7 +248,7 @@ this.itemTypesJList!.setModel(defaultListModel);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return capturedImageActionJDialog;
+                        return this.capturedImageActionJDialog;
     
 }
 
@@ -281,7 +285,7 @@ this.titleJLabel!.setText("Image Output Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -305,7 +309,7 @@ this.displayJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.displayJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-displayJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.displayJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -317,7 +321,7 @@ displayJCheckBoxActionPerformed(evt);
                                 }
                             );
     
-itemTypesJList!.setModel(new javax.swing.AbstractListModel()
+this.itemTypesJList!.setModel(new javax.swing.AbstractListModel()
                                 {
                                 
     var strings: string[] = 
@@ -363,7 +367,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.capturedImageActionJButton!.setText("Edit");
     
-capturedImageActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.capturedImageActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

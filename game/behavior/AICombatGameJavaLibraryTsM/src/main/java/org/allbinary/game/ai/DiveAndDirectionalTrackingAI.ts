@@ -175,13 +175,13 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface =  as DirectionalCompositeInterfacethis.getOwnerLayerInterface();;
+    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface(); as DirectionalCompositeInterface;
 ;
     
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
 ;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
@@ -258,7 +258,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent =  as TrackingEventthis.list.removeAt(0);;
+    var lastTrackingEvent: TrackingEvent = this.list.removeAt(0); as TrackingEvent;
 ;
     
 this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
@@ -569,7 +569,7 @@ this.aiVistor!.visit(this);
                         
                                     {
                                     
-                        if(this.getOwnerLayerInterface()!.getYP() > this.lastTrackingLayerInterface!.getYP() +MIN_DISTANCE)
+                        if(this.getOwnerLayerInterface()!.getYP() > this.lastTrackingLayerInterface!.getYP() +this.MIN_DISTANCE)
                         
                                     {
                                     
@@ -599,7 +599,7 @@ this.aiVistor!.visit(this);
                         
                                     {
                                     
-                        if(this.getOwnerLayerInterface()!.getYP() < this.lastTrackingLayerInterface!.getYP() +MIN_DISTANCE)
+                        if(this.getOwnerLayerInterface()!.getYP() < this.lastTrackingLayerInterface!.getYP() +this.MIN_DISTANCE)
                         
                                     {
                                     
@@ -629,7 +629,7 @@ this.aiVistor!.visit(this);
                         
                                     {
                                     
-                        if(this.getOwnerLayerInterface()!.getXP() > this.lastTrackingLayerInterface!.getXP() +MIN_DISTANCE)
+                        if(this.getOwnerLayerInterface()!.getXP() > this.lastTrackingLayerInterface!.getXP() +this.MIN_DISTANCE)
                         
                                     {
                                     
@@ -659,7 +659,7 @@ this.aiVistor!.visit(this);
                         
                                     {
                                     
-                        if(this.getOwnerLayerInterface()!.getXP() < this.lastTrackingLayerInterface!.getXP() +MIN_DISTANCE)
+                        if(this.getOwnerLayerInterface()!.getXP() < this.lastTrackingLayerInterface!.getXP() +this.MIN_DISTANCE)
                         
                                     {
                                     
@@ -795,7 +795,7 @@ super.setLastKey(lastKey);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return lastDirection;
+                        return this.lastDirection;
     
 }
 

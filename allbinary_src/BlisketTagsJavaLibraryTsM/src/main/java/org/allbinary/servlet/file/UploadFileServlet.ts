@@ -113,7 +113,7 @@ export class UploadFileServlet extends HttpServlet {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    requestHashMap: HashMap
+    requestHashMap: HashMap<any, any>
 
     private fileName: string
 
@@ -140,7 +140,7 @@ this.requestHashMap= new MultipartRequestParams(request).
                             toHashMap();
     
 
-    var filePath: string =  as Stringthis.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH);;
+    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH); as String;
 ;
     
 
@@ -163,12 +163,12 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var authenticationHelper: AuthenticationHelper =  as AuthenticationHelpernew AuthenticationHelperFactory().
-                            getInstance(hashMap, request);;
+    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
+                            getInstance(hashMap, request); as AuthenticationHelper;
 ;
     
 
@@ -262,7 +262,7 @@ var filePath = filePath
 
         try {
             
-    var fileItem: FileItem =  as FileItemthis.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA);;
+    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA); as FileItem;
 ;
     
 
@@ -355,7 +355,7 @@ fileOutputStream!.write(byteArray);
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 
@@ -365,7 +365,7 @@ processRequest(request, response);
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 

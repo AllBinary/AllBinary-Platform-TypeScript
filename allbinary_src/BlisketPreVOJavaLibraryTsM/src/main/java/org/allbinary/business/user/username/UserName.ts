@@ -70,7 +70,7 @@ export class UserName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return UserName.instance;
     
 }
 
@@ -107,11 +107,11 @@ private constructor (){
             super();
         }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.userName=  as StringhashMap!.get(UserData.USERNAME);;
+this.userName= hashMap!.get(UserData.USERNAME); as String;
     
 }
 

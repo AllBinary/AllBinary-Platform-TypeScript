@@ -57,6 +57,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { VirtualKeyboardEvent } from "./VirtualKeyboardEvent.js";
 
+import { VirtualKeyboardEventListenerInterface } from "./VirtualKeyboardEventListenerInterface.js";
+
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         
 
@@ -87,10 +89,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface =  as VirtualKeyboardEventListenerInterfaceeventListenerInterface;
+    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as VirtualKeyboardEventListenerInterface;
 ;
     
-virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent( as VirtualKeyboardEventeventObject);
+virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent);
     
 }
 

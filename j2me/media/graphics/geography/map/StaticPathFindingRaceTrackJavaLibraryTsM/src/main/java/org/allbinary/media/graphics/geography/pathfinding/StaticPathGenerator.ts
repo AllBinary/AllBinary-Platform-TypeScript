@@ -143,7 +143,7 @@ protected constructor (){
     var index: number = 0;
 index < size; index++)
         {
-basicGeographicMapCellPosition=  as CellPositionpathList!.get(index);;
+basicGeographicMapCellPosition= pathList!.get(index); as CellPosition;
     
 geographicMapCellPosition= geographicMapCellPositionFactory!.getAt(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
     
@@ -162,7 +162,7 @@ list.add(geographicMapCellPosition);
 
                 //@Throws(Error::class)
             
-    public create(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
+    public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var geographicMapCellHistory = geographicMapCellHistory
     //var pathFindingInfo = pathFindingInfo
@@ -223,7 +223,7 @@ list.add(geographicMapCellPosition);
     var index: number = 0;
 index < size; index++)
         {
-pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory,  as BasicArrayListbasicList!.get(index));
+pathList= this.getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory, basicList!.get(index) as BasicArrayList);
     
 list.add(pathList);
     

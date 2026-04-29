@@ -56,7 +56,7 @@ export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengle
 
     private readonly gl11: GL2
 public constructor (gl: GL){
-            this(gl,  as com.jogamp.opengl.GL2gl);
+            this(gl, gl as com.jogamp.opengl.GL2);
                         //var gl = gl
 
 

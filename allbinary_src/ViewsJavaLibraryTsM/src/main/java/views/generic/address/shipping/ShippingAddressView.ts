@@ -86,10 +86,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
 ;
     
-this.request=  as HttpServletRequesthttpTransformInfoInterface!.getPageContext()!.getRequest();;
+this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
     
 }
 
@@ -146,9 +146,9 @@ formNode!.appendChild(this.streetAddress!.toXmlNode(document));
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
-this.addDomNodeInterface( as DomNodeInterfacenew StatesView());
+this.addDomNodeInterface(new StatesView() as DomNodeInterface);
     
 }
 

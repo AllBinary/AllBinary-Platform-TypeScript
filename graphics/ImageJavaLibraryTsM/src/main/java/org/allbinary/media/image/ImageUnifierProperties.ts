@@ -82,7 +82,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rows;
+                        return this.rows;
     
 }
 
@@ -99,7 +99,7 @@ this.rows= rows;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return columns;
+                        return this.columns;
     
 }
 
@@ -116,7 +116,7 @@ this.columns= columns;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageUnifierCell;
+                        return this.imageUnifierCell;
     
 }
 

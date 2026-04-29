@@ -109,7 +109,7 @@ this.logUtil!.putF("Begin Remote HighScores Retrieval", this, commonStrings!.PRO
 ;
     
 
-    var hashtable: Hashtable = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
 ;
     
 HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable);
@@ -131,8 +131,8 @@ hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfig
                         
                                     {
                                     
-    var resultHashtable: Hashtable =  as Hashtablenew XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
-                            get(hashtable, noCrypt);;
+    var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
+                            get(hashtable, noCrypt); as Hashtable<any, any>;
 ;
     
 remoteHighScores!.update(resultHashtable);

@@ -60,7 +60,7 @@ export class DestroyEventCircularStaticPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DestroyEventCircularStaticPool.instance;
     
 }
 
@@ -74,7 +74,7 @@ private constructor (){
 
     public init(combatGameCanvas: AllBinaryGameCanvas){
 var combatGameCanvas = combatGameCanvas
-EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
+this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
     
 }
 
@@ -84,7 +84,7 @@ EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface
 
-    var destroyedEvent: DestroyedEvent =  as DestroyedEventEVENT_POOL.getNextInstance();;
+    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance(); as DestroyedEvent;
 ;
     
 destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

@@ -132,7 +132,7 @@ paint2(graphics);
 
     private readonly TEXT: string = commonStrings!.LOADING;
 
-    private text: string = TEXT;
+    private text: string = this.TEXT;
 
     private background: boolean = true;
 
@@ -167,7 +167,7 @@ pathFindingThreadPool!.runAPriorityTask();
                     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.roundthis.maxValue, 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.round(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 
@@ -384,7 +384,7 @@ var graphics = graphics
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return value;
+                        return this.value;
     
 }
 
@@ -401,7 +401,7 @@ this.text= text;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return text;
+                        return this.text;
     
 }
 
@@ -418,7 +418,7 @@ this.background= background;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return background;
+                        return this.background;
     
 }
 

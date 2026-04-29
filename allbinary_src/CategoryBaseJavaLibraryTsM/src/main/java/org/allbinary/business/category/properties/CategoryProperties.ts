@@ -113,7 +113,7 @@ this.category= CategoryUtil.getNameFromNode(node);
     
 }
 
-public constructor (categoryPropertiesHashMap: HashMap){
+public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
         var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -147,7 +147,7 @@ this.category= .toCharArray();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getValue();;
+                        return this.getValue(); as Object;
     
 }
 
@@ -237,7 +237,7 @@ nextParentCategoryInterface= nextParentCategoryInterface!.getHierarchy()!.getPar
 depthIndex++;
     
 
-                        if(depthIndex > MAXDEPTH)
+                        if(depthIndex > CategoryProperties.MAXDEPTH)
                         
                                     {
                                     
@@ -269,7 +269,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
     var index: number = 0;
 index < size; index++)
         {
-pathStringBuffer!.append( as Stringlist.get(index));
+pathStringBuffer!.append(list.get(index) as String);
     
 }
 
@@ -344,9 +344,9 @@ this.category= value;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap = new HashMap();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);

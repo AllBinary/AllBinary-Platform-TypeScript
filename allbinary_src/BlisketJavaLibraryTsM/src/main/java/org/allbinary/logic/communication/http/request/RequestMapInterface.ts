@@ -43,7 +43,7 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 export interface RequestMapInterface {
         
 
-    getRequestHashMap(): HashMap
+    getRequestHashMap(): HashMap<any, any>
 
 }
                 

@@ -79,7 +79,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var artificialIntelligenceInterface = artificialIntelligenceInterface
     //var ownerLayerInterface = ownerLayerInterface
@@ -101,7 +101,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 index < integerArray!.length; index++)
         {
 
-    var integerCanBeNull: any? = hashtable.get( as ObjectintegerArray[index]!);
+    var integerCanBeNull: any? = hashtable.get(integerArray[index]! as Object);
 ;
     
 
@@ -176,7 +176,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     var index: number = 0;
 index < numberOnSameTeam!.length; index++)
         {
-numberOnSameTeam[index]=  as Integerlist.objectArray[index]!;
+numberOnSameTeam[index]= list.objectArray[index]! as Integer;
     
 }
 

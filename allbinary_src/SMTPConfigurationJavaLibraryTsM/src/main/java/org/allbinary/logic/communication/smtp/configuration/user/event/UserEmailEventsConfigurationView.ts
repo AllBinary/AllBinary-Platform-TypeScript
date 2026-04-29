@@ -71,6 +71,8 @@ import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigur
 
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
+import { UserEmailEventsConfigurationMapping } from "./UserEmailEventsConfigurationMapping.js";
+
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
 
 export class UserEmailEventsConfigurationView
@@ -87,7 +89,7 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.userEmailEventsConfigurationInterface=  as UserEmailEventsConfigurationInterfacenew UserEmailEventsConfiguration();
+this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() as UserEmailEventsConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
@@ -110,7 +112,7 @@ this.userEmailEventsConfigurationInterface=  as UserEmailEventsConfigurationInte
 index < size; index++)
         {
 
-    var userEmailConfigurationNode: Node =  as NodeemailEventConfigurationNodeVector!.get(index);;
+    var userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index); as Node;
 ;
     
 
@@ -155,7 +157,7 @@ var document = document
 ;
     
 
-    var emailEventHashMap: HashMap = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;
+    var emailEventHashMap: HashMap<any, any> = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;
 ;
     
 
@@ -189,11 +191,11 @@ var document = document
 index < size; index++)
         {
 
-    var eventName: string =  as StringeventNameArray[index]!;
+    var eventName: string = eventNameArray[index]! as String;
 ;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface =  as UserEmailEventConfigurationInterfaceemailEventHashMap!.get(eventName as Object);;
+    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName as Object); as UserEmailEventConfigurationInterface;
 ;
     
 

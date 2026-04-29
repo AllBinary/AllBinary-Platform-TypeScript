@@ -70,7 +70,7 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
 
     private gameCanvas: Canvas = NullCanvas.NULL_CANVAS;
 
-    private readonly offScreenImage: Image[] = new Array(MAX_IMAGES);
+    private readonly offScreenImage: Image[] = new Array(BufferedGameCanvasPaintHelper.MAX_IMAGES);
 
     private previousImage: Image = NullCanvas.NULL_IMAGE;
 
@@ -91,7 +91,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
     public process(){
 
-    var myCanvas: MyCanvas = ( as MyCanvasthis.gameCanvas);
+    var myCanvas: MyCanvas = (this.gameCanvas as MyCanvas);
 ;
     
 myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics());

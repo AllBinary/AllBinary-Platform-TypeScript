@@ -92,7 +92,7 @@ private constructor (){
 
     public offer(emailInterface: EmailInterface): boolean{
 var emailInterface = emailInterface
-this.offer( as ObjectemailInterface);
+this.offer(emailInterface as Object);
     
 this.post(emailInterface);
     
@@ -108,7 +108,7 @@ this.post(emailInterface);
 
     remove(emailInterface: EmailInterface){
 var emailInterface = emailInterface
-this.remove( as ObjectemailInterface);
+this.remove(emailInterface as Object);
     
 }
 
@@ -135,7 +135,7 @@ var emailInterface = emailInterface
                                     {
                                     this.remove(emailInterface);
     
-processAllUnsent();
+this.processAllUnsent();
     
 
                                     }
@@ -160,7 +160,7 @@ processAllUnsent();
 index < size; index++)
         {
 
-    var emailInterface: EmailInterface =  as EmailInterfacequeueVector!.get(index);;
+    var emailInterface: EmailInterface = queueVector!.get(index); as EmailInterface;
 ;
     
 
@@ -169,7 +169,7 @@ index < size; index++)
                                     {
                                     this.remove(emailInterface);
     
-processAllUnsent();
+this.processAllUnsent();
     
 
                                     }

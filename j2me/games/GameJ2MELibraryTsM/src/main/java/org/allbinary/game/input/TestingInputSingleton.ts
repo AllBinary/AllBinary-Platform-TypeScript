@@ -88,7 +88,7 @@ export class TestingInputSingleton extends AllBinaryGameLayer implements GameInp
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TestingInputSingleton.instance;
     
 }
 
@@ -240,7 +240,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
     var index: number = 0;
 index < size; index++)
         {
-gameKeyEvent= ( as GameKeyEventlist.objectArray[index]!);
+gameKeyEvent= (list.objectArray[index]! as GameKeyEvent);
     
 key= gameKeyEvent!.getKey();
     

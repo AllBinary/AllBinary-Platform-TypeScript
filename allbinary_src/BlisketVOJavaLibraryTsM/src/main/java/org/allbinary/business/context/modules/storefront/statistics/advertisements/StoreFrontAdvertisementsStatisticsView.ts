@@ -76,7 +76,7 @@ this.storeFrontAdvertisementsStatisticsInterface= storeFrontAdvertisementsStatis
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.storeFrontAdvertisementsStatisticsInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontAdvertisementsStatisticsInterface!.toHashMap()!;
 ;
     
 

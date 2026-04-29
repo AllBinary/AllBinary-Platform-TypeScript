@@ -66,7 +66,7 @@ export class GroupFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GroupFactory.instance;
     
 }
 
@@ -81,7 +81,7 @@ export class GroupFactory
 
     public getNextGroup(): Group{
 
-    var group: Group =  as Groupthis.list.objectArray[this.index]!;
+    var group: Group = this.list.objectArray[this.index]! as Group;
 ;
     
 index++;

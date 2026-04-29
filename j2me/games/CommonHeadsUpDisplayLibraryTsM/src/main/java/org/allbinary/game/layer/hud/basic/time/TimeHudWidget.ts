@@ -153,7 +153,7 @@ super.paintDX(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, t
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return timer;
+                        return this.timer;
     
 }
 

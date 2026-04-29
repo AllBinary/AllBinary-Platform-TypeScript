@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { View } from "../../../android/view/View.js";
@@ -57,7 +59,7 @@ export class ProfilingRefreshHelper extends AndroidGameStatistics {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ProfilingRefreshHelper.instance;
     
 }
 
@@ -97,10 +99,10 @@ this.frameProcessingTimeElapsed= Date.now() -this.frameProcessingTimeElapsed;
                                     {
                                     
                         if(this.frameProcessingTimeElapsed > this.worstFrameProcessingTime)
-                        this.worstFrameProcessingTime= Math.roundthis.frameProcessingTimeElapsed
+                        this.worstFrameProcessingTime= Math.round(this.frameProcessingTimeElapsed)
 
                         if(this.frameProcessingTimeElapsed < this.bestFrameProcessingTime)
-                        this.bestFrameProcessingTime= Math.roundthis.frameProcessingTimeElapsed
+                        this.bestFrameProcessingTime= Math.round(this.frameProcessingTimeElapsed)
 
                                     }
                                 
@@ -121,7 +123,7 @@ super.nextFrame();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(super.toString())!.append(" Worst: ")!.appendint(worstFrameProcessingTime)!.append(" Best: ")!.appendint(bestFrameProcessingTime)!.toString();;
+                            append(super.toString())!.append(" Worst: ")!.appendint(this.worstFrameProcessingTime)!.append(" Best: ")!.appendint(this.bestFrameProcessingTime)!.toString();;
     
 }
 

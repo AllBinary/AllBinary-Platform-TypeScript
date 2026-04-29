@@ -81,6 +81,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StringBuilder } from "./StringBuilder.js";
+
 export class AndroidHardware
             extends Object
          implements HardwareInterface {
@@ -97,7 +99,7 @@ export class AndroidHardware
 
     private readonly PROC_BUS_INPUT_DIRECTORY: string = "/proc/bus/input/";
 
-    private readonly DEVICES: string = PROC_BUS_INPUT_DIRECTORY +"devices/";
+    private readonly DEVICES: string = this.PROC_BUS_INPUT_DIRECTORY +"devices/";
 
     private readonly MINHARDWARE: number = 3;
 public constructor (){
@@ -213,7 +215,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
+                        return this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
     
 }
 
@@ -236,7 +238,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface =  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
 ;
     
 hardwareBuffer!.append(componentInterface!.toString());
@@ -265,7 +267,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

@@ -54,7 +54,7 @@ export interface ArtificialIntelligenceInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
+    getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
 
 }
                 

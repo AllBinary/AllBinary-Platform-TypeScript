@@ -68,7 +68,7 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, prof
             super();
         var genericProfileActionJPanel = genericProfileActionJPanel
 var profileActionScriptConditionInterface = profileActionScriptConditionInterface
-initComponents();
+this.initComponents();
     
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
@@ -84,7 +84,7 @@ setLayout(new java.awt.GridLayout());
     
 this.removeJButton!.setText("Remove");
     
-removeJButton!.addActionListener(new java.awt.event.ActionListener()
+this.removeJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

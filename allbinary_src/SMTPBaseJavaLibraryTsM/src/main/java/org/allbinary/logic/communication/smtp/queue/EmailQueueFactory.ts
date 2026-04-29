@@ -46,14 +46,14 @@ export class EmailQueueFactory
          {
         
 
-    private emailQueueInterface: EmailQueueInterface =  as EmailQueueInterfaceBasicEmailQueue.getInstance();;
+    private emailQueueInterface: EmailQueueInterface = BasicEmailQueue.getInstance(); as EmailQueueInterface;
 
     public static getInstance(): EmailQueueInterface{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return emailQueueInterface;
+                        return EmailQueueFactory.emailQueueInterface;
     
 }
 

@@ -60,6 +60,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { CompleteMotionGestureInputEventListener } from "./CompleteMotionGestureInputEventListener.js";
 
+import { CompleteMotionGestureInputEventListenerInterface } from "./CompleteMotionGestureInputEventListenerInterface.js";
+
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
         
 
@@ -70,7 +72,7 @@ export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return CompleteMotionGestureInputEventHandler.SINGLETON;
     
 }
 
@@ -128,10 +130,10 @@ var eventObject = eventObject
 
         try {
             
-    var completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener =  as CompleteMotionGestureInputEventListenerthis.list.objectArray[index]!;
+    var completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener = this.list.objectArray[index]! as CompleteMotionGestureInputEventListener;
 ;
     
-completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent( as CompleteMotionGestureInputEventeventObject);
+completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
     
 
                 //: 
@@ -154,10 +156,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface =  as CompleteMotionGestureInputEventListenerInterfaceeventListenerInterface;
+    var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface = eventListenerInterface as CompleteMotionGestureInputEventListenerInterface;
 ;
     
-completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent( as CompleteMotionGestureInputEventeventObject);
+completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
     
 }
 

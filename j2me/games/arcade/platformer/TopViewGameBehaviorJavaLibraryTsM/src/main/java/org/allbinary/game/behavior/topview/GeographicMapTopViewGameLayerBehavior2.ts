@@ -483,7 +483,7 @@ this.previousGeographicMapCellPosition=
                                 )
                         
                                     {
-                                    layer =  as TopViewCharacterInterfacelayerlayer
+                                    layer = layerlayer as TopViewCharacterInterface
 layer.
                     terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y);
     
@@ -575,7 +575,7 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer =  as TopViewCharacterInterfacelayerlayer
+                                    layer = layerlayer as TopViewCharacterInterface
 layer.
                     leftp();
     
@@ -592,7 +592,7 @@ layer.
                                     }
                                 
                         else {
-                            layer =  as TopViewCharacterInterfacelayerlayer
+                            layer = layerlayer as TopViewCharacterInterface
 layer.
                     leftp();
     
@@ -640,7 +640,7 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer =  as TopViewCharacterInterfacelayerlayer
+                                    layer = layerlayer as TopViewCharacterInterface
 layer.
                     rightp();
     
@@ -657,7 +657,7 @@ layer.
                                     }
                                 
                         else {
-                            layer =  as TopViewCharacterInterfacelayerlayer
+                            layer = layerlayer as TopViewCharacterInterface
 layer.
                     rightp();
     

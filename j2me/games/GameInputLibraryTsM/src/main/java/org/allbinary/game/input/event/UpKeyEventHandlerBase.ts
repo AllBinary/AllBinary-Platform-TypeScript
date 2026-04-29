@@ -63,6 +63,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { UpKeyEventListenerInterface } from "./UpKeyEventListenerInterface.js";
+
 export class UpKeyEventHandlerBase extends BasicEventHandler {
         
 
@@ -133,7 +135,7 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
 playerGameInput!.onUpKeyEvent(eventObject);
@@ -161,7 +163,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -186,7 +188,7 @@ index++;
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var upKeyEventListenerInterface: UpKeyEventListenerInterface =  as UpKeyEventListenerInterfaceeventListenerInterface;
+    var upKeyEventListenerInterface: UpKeyEventListenerInterface = eventListenerInterface as UpKeyEventListenerInterface;
 ;
     
 upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
@@ -216,7 +218,7 @@ index < this.list.size(); index++)
 
         try {
             
-    var eventListenerInterface: EventListenerInterface =  as EventListenerInterfacethis.list.get(index);;
+    var eventListenerInterface: EventListenerInterface = this.list.get(index); as EventListenerInterface;
 ;
     
 stringBuffer!.append(LISTENER_LABEL);

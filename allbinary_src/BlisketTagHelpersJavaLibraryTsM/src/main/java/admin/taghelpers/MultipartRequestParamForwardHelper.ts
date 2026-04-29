@@ -175,7 +175,7 @@ this.pageContext!.forward(stringBuffer!.toString());
 ;
     
 
-    var hashMap: HashMap = this.requestMapInterface!.getRequestHashMap()!;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
 ;
     
 
@@ -195,11 +195,11 @@ this.pageContext!.forward(stringBuffer!.toString());
 index < size; index++)
         {
 
-    var key: string =  as Stringthis.paramVector!.get(index);;
+    var key: string = this.paramVector!.get(index); as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(key as Object);;
+    var value: string = hashMap!.get(key as Object); as String;
 ;
     
 
@@ -236,15 +236,15 @@ stringBuffer!.append(value);
 
     shouldForward(): boolean{
 
-    var hashMap: HashMap = this.requestMapInterface!.getRequestHashMap()!;
+    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
 ;
     
 
-    var requestCommand: string =  as StringhashMap!.get(GLOBALS2.ADMINCOMMAND);;
+    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand); && command.compareTo(requestCommand) == 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand); && this.command.compareTo(requestCommand) == 0))
                         
                                     {
                                     

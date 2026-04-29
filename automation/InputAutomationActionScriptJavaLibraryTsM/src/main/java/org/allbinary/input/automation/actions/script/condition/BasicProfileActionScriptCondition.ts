@@ -105,6 +105,8 @@ import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptCondit
 
 import { JMenu } from "./JMenu.js";
 
+import { JMenuItem } from "./JMenuItem.js";
+
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         
 
@@ -413,7 +415,7 @@ var document = document
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfaceprofileActionConditionInterfaceVector!.get(index);;
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
 ;
     
 node.appendChild(profileActionConditionInterface!.toXmlNode(document));
@@ -437,7 +439,7 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 index < size2; index++)
         {
 
-    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface =  as ProfileActionScriptProcessorInterfaceprofileActionProcessorInterfaceVector!.get(index);;
+    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
 ;
     
 node.appendChild(profileActionProcessorInterface!.toXmlNode(document));
@@ -458,7 +460,7 @@ node.appendChild(profileActionProcessorInterface!.toXmlNode(document));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return profileActionConditionInterfaceVector;
+                        return this.profileActionConditionInterfaceVector;
     
 }
 
@@ -485,7 +487,7 @@ var actionEvent = actionEvent
                         
                                     {
                                     
-    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface =  as ProfileActionScriptNodeInterfacethis.getParent();;
+    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface = this.getParent(); as ProfileActionScriptNodeInterface;
 ;
     
 profileActionScriptNodeInterface!.removeCondition(this);
@@ -580,7 +582,7 @@ this.logUtil!.put("Error", this, "actionPerformed", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return profileActionProcessorInterfaceVector;
+                        return this.profileActionProcessorInterfaceVector;
     
 }
 
@@ -625,7 +627,7 @@ var frame = frame
 index < size; index++)
         {
 
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfaceprofileActionConditionInterfaceVector!.get(index);;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
 ;
     
 
@@ -676,7 +678,7 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface =  as ProfileActionScriptProcessorInterfaceprofileActionProcessorInterfaceVector!.get(index);;
+    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
 ;
     
 profileActionScriptProcessorInterface!.process(frame);

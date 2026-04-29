@@ -61,7 +61,7 @@ export class ResourceRelativeRelationshipFactory
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-    private readonly hashtable: Hashtable = new Hashtable();
+    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private initialized: boolean= false
 
@@ -101,7 +101,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicArrayListlistCanBeNull;
+                        return listCanBeNull as BasicArrayList;
     
 }
 
@@ -164,7 +164,7 @@ this.initialized= initialized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return initialized;
+                        return this.initialized;
     
 }
 

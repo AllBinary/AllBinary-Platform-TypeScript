@@ -168,7 +168,7 @@ public constructor (map: Map){
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -193,11 +193,11 @@ public constructor (map: Map){
 index < size; index++)
         {
 
-    var key: string =  as StringkeyArray[index]!;
+    var key: string = keyArray[index]! as String;
 ;
     
 
-    var values: string[] =  as Array<String?>map.get(key);;
+    var values: string[] = map.get(key); as Array<String?>;
 ;
     
 hashMap!.put(key.toCharArray()
@@ -222,7 +222,7 @@ this.getFormData(hashMap);
     
 }
 
-public constructor (initHashMap: HashMap){
+public constructor (initHashMap: HashMap<any, any>){
 
             super();
         var initHashMap = initHashMap
@@ -231,7 +231,7 @@ this.getFormData(initHashMap);
 }
 
 
-    public getFormData(hashMap: HashMap){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
         try {
@@ -239,75 +239,75 @@ var hashMap = hashMap
     var initializerData: InitializerData = InitializerData.getInstance()!;
 ;
     
-this.userJdbcDriver=  as StringhashMap!.get(initializerData!.CUSTOMERJDBCDRIVER);;
+this.userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER); as String;
     
-this.userName=  as StringhashMap!.get(initializerData!.CUSTOMERNAME);;
+this.userName= hashMap!.get(initializerData!.CUSTOMERNAME); as String;
     
-this.userUserName=  as StringhashMap!.get(initializerData!.CUSTOMERUSERNAME);;
+this.userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME); as String;
     
-this.userPassword=  as StringhashMap!.get(initializerData!.CUSTOMERPASSWORD);;
+this.userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD); as String;
     
-this.userSchema=  as StringhashMap!.get(initializerData!.CUSTOMERSCHEMA);;
+this.userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA); as String;
     
-this.userServer=  as StringhashMap!.get(initializerData!.CUSTOMERSERVER);;
+this.userServer= hashMap!.get(initializerData!.CUSTOMERSERVER); as String;
     
-this.userPort=  as StringhashMap!.get(initializerData!.CUSTOMERPORT);;
+this.userPort= hashMap!.get(initializerData!.CUSTOMERPORT); as String;
     
-this.historyJdbcDriver=  as StringhashMap!.get(initializerData!.HISTORYJDBCDRIVER);;
+this.historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER); as String;
     
-this.historyName=  as StringhashMap!.get(initializerData!.HISTORYNAME);;
+this.historyName= hashMap!.get(initializerData!.HISTORYNAME); as String;
     
-this.historyUserName=  as StringhashMap!.get(initializerData!.HISTORYUSERNAME);;
+this.historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME); as String;
     
-this.historyPassword=  as StringhashMap!.get(initializerData!.HISTORYPASSWORD);;
+this.historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD); as String;
     
-this.historySchema=  as StringhashMap!.get(initializerData!.HISTORYSCHEMA);;
+this.historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA); as String;
     
-this.historyServer=  as StringhashMap!.get(initializerData!.HISTORYSERVER);;
+this.historyServer= hashMap!.get(initializerData!.HISTORYSERVER); as String;
     
-this.historyPort=  as StringhashMap!.get(initializerData!.HISTORYPORT);;
+this.historyPort= hashMap!.get(initializerData!.HISTORYPORT); as String;
     
-this.logJdbcDriver=  as StringhashMap!.get(initializerData!.LOGJDBCDRIVER);;
+this.logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER); as String;
     
-this.logName=  as StringhashMap!.get(initializerData!.LOGNAME);;
+this.logName= hashMap!.get(initializerData!.LOGNAME); as String;
     
-this.logUserName=  as StringhashMap!.get(initializerData!.LOGUSERNAME);;
+this.logUserName= hashMap!.get(initializerData!.LOGUSERNAME); as String;
     
-this.logPassword=  as StringhashMap!.get(initializerData!.LOGPASSWORD);;
+this.logPassword= hashMap!.get(initializerData!.LOGPASSWORD); as String;
     
-this.logSchema=  as StringhashMap!.get(initializerData!.LOGSCHEMA);;
+this.logSchema= hashMap!.get(initializerData!.LOGSCHEMA); as String;
     
-this.logServer=  as StringhashMap!.get(initializerData!.LOGSERVER);;
+this.logServer= hashMap!.get(initializerData!.LOGSERVER); as String;
     
-this.logPort=  as StringhashMap!.get(initializerData!.LOGPORT);;
+this.logPort= hashMap!.get(initializerData!.LOGPORT); as String;
     
-this.inventoryJdbcDriver=  as StringhashMap!.get(initializerData!.INVENTORYJDBCDRIVER);;
+this.inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER); as String;
     
-this.inventoryName=  as StringhashMap!.get(initializerData!.INVENTORYNAME);;
+this.inventoryName= hashMap!.get(initializerData!.INVENTORYNAME); as String;
     
-this.inventoryUserName=  as StringhashMap!.get(initializerData!.INVENTORYUSERNAME);;
+this.inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME); as String;
     
-this.inventoryPassword=  as StringhashMap!.get(initializerData!.INVENTORYPASSWORD);;
+this.inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD); as String;
     
-this.inventorySchema=  as StringhashMap!.get(initializerData!.INVENTORYSCHEMA);;
+this.inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA); as String;
     
-this.inventoryServer=  as StringhashMap!.get(initializerData!.INVENTORYSERVER);;
+this.inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER); as String;
     
-this.inventoryPort=  as StringhashMap!.get(initializerData!.INVENTORYPORT);;
+this.inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT); as String;
     
-this.staticPagesJdbcDriver=  as StringhashMap!.get(initializerData!.STATICPAGESJDBCDRIVER);;
+this.staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER); as String;
     
-this.staticPagesName=  as StringhashMap!.get(initializerData!.STATICPAGESNAME);;
+this.staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME); as String;
     
-this.staticPagesUserName=  as StringhashMap!.get(initializerData!.STATICPAGESUSERNAME);;
+this.staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME); as String;
     
-this.staticPagesPassword=  as StringhashMap!.get(initializerData!.STATICPAGESPASSWORD);;
+this.staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD); as String;
     
-this.staticPagesSchema=  as StringhashMap!.get(initializerData!.STATICPAGESSCHEMA);;
+this.staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA); as String;
     
-this.staticPagesServer=  as StringhashMap!.get(initializerData!.STATICPAGESSERVER);;
+this.staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER); as String;
     
-this.staticPagesPort=  as StringhashMap!.get(initializerData!.STATICPAGESPORT);;
+this.staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT); as String;
     
 
                 //: 
@@ -379,7 +379,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.userName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.userName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     isValid= false;
@@ -388,7 +388,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.userUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.userUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -397,7 +397,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.userPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.userPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -415,7 +415,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.historyName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.historyName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     isValid= false;
@@ -424,7 +424,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.historyUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.historyUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -433,7 +433,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.historyPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.historyPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -451,7 +451,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.logName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     isValid= false;
@@ -460,7 +460,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.logUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -469,7 +469,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -487,7 +487,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     isValid= false;
@@ -496,7 +496,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -505,7 +505,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.inventoryPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.inventoryPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -523,7 +523,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPagesName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPagesName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     isValid= false;
@@ -532,7 +532,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPagesUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPagesUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -541,7 +541,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.staticPagesPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.staticPagesPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     isValid= false;
@@ -636,7 +636,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.userName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.userName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     stringBuffer!.append("User db name should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
@@ -645,7 +645,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.userUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.userUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("User db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -654,7 +654,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.userPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.userPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("User DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -674,7 +674,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.historyName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.historyName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     stringBuffer!.append("History db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
@@ -683,7 +683,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.historyUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.historyUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("History db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -692,7 +692,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.historyJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.historyPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.historyPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("History db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -712,7 +712,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.logName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     stringBuffer!.append("Log db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
@@ -721,7 +721,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.logUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.logUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Log db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -730,7 +730,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.logJdbcDriver));
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.logPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Log db password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -750,7 +750,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     stringBuffer!.append("Inventory db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
@@ -759,7 +759,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Inventory db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -768,7 +768,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.inventoryJdbcDriver))
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.inventoryPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.inventoryPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Inventory DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");
@@ -788,7 +788,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPagesName, MIN, MAXDB);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPagesName, Initializer.MIN, Initializer.MAXDB);)
                         
                                     {
                                     stringBuffer!.append("Static Pages db should be < " +MAXDB +" and > " +MIN +" characters in length.<br />");
@@ -797,7 +797,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPagesUserName, MIN, MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPagesUserName, Initializer.MIN, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Static Pages db username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -806,7 +806,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.staticPagesPassword, MINPASSWORD, MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.staticPagesPassword, Initializer.MINPASSWORD, Initializer.MAX);)
                         
                                     {
                                     stringBuffer!.append("Static Pages DB password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");

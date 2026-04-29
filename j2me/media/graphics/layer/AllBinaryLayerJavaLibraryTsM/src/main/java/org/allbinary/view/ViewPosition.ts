@@ -126,7 +126,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.getZ() +this.allbinaryLayer!.getDepth());
+                        return Math.round((this.getZ() +this.allbinaryLayer!.getDepth()));
     
 }
 

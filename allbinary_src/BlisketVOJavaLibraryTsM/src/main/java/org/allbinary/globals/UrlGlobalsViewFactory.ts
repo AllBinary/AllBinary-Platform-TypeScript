@@ -62,7 +62,7 @@ export class UrlGlobalsViewFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as DomNodeInterfacenew UrlGlobalsView();
+                        return new UrlGlobalsView() as DomNodeInterface;
     
 
                 //: 

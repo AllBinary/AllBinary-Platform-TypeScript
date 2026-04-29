@@ -121,7 +121,7 @@ export class FileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FileUtil.instance;
     
 }
 
@@ -205,7 +205,7 @@ var inputStream = inputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream=  as AbDataOutputStreamStreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384));;
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)); as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -227,7 +227,7 @@ var dataOutputStream = dataOutputStream
 var buffer = buffer
 
         try {
-            dataOutputStream=  as AbDataOutputStreamStreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer);;
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer); as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -248,7 +248,7 @@ var dataInputStream = dataInputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream=  as AbDataOutputStreamStreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384));;
+            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)); as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -339,7 +339,7 @@ var overwriteAll = overwriteAll
 
         try {
             
-    var outPath: AbPath = fixPath(file, path, realPath, cloud)!;
+    var outPath: AbPath = this.fixPath(file, path, realPath, cloud)!;
 ;
     
 
@@ -860,7 +860,7 @@ stringBuffer!.appendint(end);
 index < end; index++)
         {
 
-    var nextFile: AbFile =  as AbFilefileList!.get(index);;
+    var nextFile: AbFile = fileList!.get(index); as AbFile;
 ;
     
 
@@ -937,7 +937,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
                                     }
                                 
 
-    var newDirectory: string = getNewDirectory(fromFile)!;
+    var newDirectory: string = FileUtil.getNewDirectory(fromFile)!;
 ;
     
 
@@ -1259,7 +1259,7 @@ this.copyFile(file, aFile);
                         if(file.isDirectory())
                         
                                     {
-                                    copyDirectory(file, toLocationFile);
+                                    this.copyDirectory(file, toLocationFile);
     
 
                                     }
@@ -1297,7 +1297,7 @@ this.copyFile(file, aFile);
 
                                     }
                                 
-copyDirectory(fromLocationFile, toLocationFile);
+this.copyDirectory(fromLocationFile, toLocationFile);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(this.logConfigTypeFactory!.FILE))

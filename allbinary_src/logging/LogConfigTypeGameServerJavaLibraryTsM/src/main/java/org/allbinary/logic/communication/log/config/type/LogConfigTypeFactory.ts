@@ -57,22 +57,22 @@ export class LogConfigTypeFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogConfigTypeFactory.instance;
     
 }
 
 
     private readonly NO_DESCRIPTION: string = "No Description";
 
-    public readonly INIT_SERVER: LogConfigType = new LogConfigType("Init Server", NO_DESCRIPTION);
+    public readonly INIT_SERVER: LogConfigType = new LogConfigType("Init Server", this.NO_DESCRIPTION);
 
-    public readonly LOBBY_SERVER: LogConfigType = new LogConfigType("Lobby Server", NO_DESCRIPTION);
+    public readonly LOBBY_SERVER: LogConfigType = new LogConfigType("Lobby Server", this.NO_DESCRIPTION);
 
-    public readonly GAME_SERVER: LogConfigType = new LogConfigType("Game Server", NO_DESCRIPTION);
+    public readonly GAME_SERVER: LogConfigType = new LogConfigType("Game Server", this.NO_DESCRIPTION);
 
-    public readonly GAME_SIMULATOR: LogConfigType = new LogConfigType("Game Simulator", NO_DESCRIPTION);
+    public readonly GAME_SIMULATOR: LogConfigType = new LogConfigType("Game Simulator", this.NO_DESCRIPTION);
 
-    public readonly CUSTOM_TYPES: LogConfigType = new LogConfigType("Custom Types", NO_DESCRIPTION);
+    public readonly CUSTOM_TYPES: LogConfigType = new LogConfigType("Custom Types", this.NO_DESCRIPTION);
 private constructor (){
 
             super();

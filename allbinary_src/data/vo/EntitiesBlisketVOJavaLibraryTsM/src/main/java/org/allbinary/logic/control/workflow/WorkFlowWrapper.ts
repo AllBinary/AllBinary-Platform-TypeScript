@@ -94,8 +94,8 @@ this.anyType= anyType;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.anyType, 
-                            null);;
+    var result: string = method.invoke(this.anyType, 
+                            null); as String;
 ;
     
 
@@ -146,8 +146,8 @@ this.anyType= anyType;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.anyType, 
-                            null);;
+    var result: string = method.invoke(this.anyType, 
+                            null); as String;
 ;
     
 
@@ -198,8 +198,8 @@ this.anyType= anyType;
 ;
     
 
-    var result: number =  as Integermethod.invoke(this.anyType, 
-                            null);;
+    var result: number = method.invoke(this.anyType, 
+                            null); as Integer;
 ;
     
 

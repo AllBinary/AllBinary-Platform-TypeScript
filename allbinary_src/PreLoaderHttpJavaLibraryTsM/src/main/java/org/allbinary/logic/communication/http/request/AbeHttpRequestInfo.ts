@@ -81,7 +81,7 @@ export class AbeHttpRequestInfo
     private remotePort: string
 
     private requestedFilePath: string
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -89,17 +89,17 @@ public constructor (hashMap: HashMap){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
-this.httpUserAgent= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.HTTP_USER_AGENT));
+this.httpUserAgent= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.HTTP_USER_AGENT) as String);
     
-this.remoteAddress= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_ADDRESS));
+this.remoteAddress= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_ADDRESS) as String);
     
-this.remoteHost= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST));
+this.remoteHost= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST) as String);
     
-this.remoteHostByAddr= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS));
+this.remoteHostByAddr= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS) as String);
     
-this.remotePort= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_PORT));
+this.remotePort= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_PORT) as String);
     
-this.requestedFilePath= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REQUEST_FILE_PATH));
+this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REQUEST_FILE_PATH) as String);
     
 }
 
@@ -121,7 +121,7 @@ this.httpUserAgent= stringUtil!.EMPTY_STRING;
         while(enumuration.hasMoreElements())
         {
 
-    var key: string =  as Stringenumuration.nextElement()!;;
+    var key: string = enumuration.nextElement()!; as String;
 ;
     
 
@@ -146,9 +146,9 @@ this.remotePort= Integer.toString(httpServletRequest!.getRemotePort());
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent);

@@ -52,7 +52,7 @@ export class HtmlTableData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return HtmlTableData.instance;
     
 }
 
@@ -81,7 +81,7 @@ export class HtmlTableData
 
     public readonly FRAMES: string[] = 
                                                         [
-                                                            this.NONE,TOP,BOTTOM,TOPBOT,SIDES,ALL,this.BORDERED
+                                                            this.NONE,this.TOP,this.BOTTOM,this.TOPBOT,this.SIDES,this.ALL,this.BORDERED
                                                         ];
 
 }

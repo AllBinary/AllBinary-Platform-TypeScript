@@ -69,7 +69,7 @@ export class RawKeyEventHandler
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return RawKeyEventHandler.instance;
     
 }
 
@@ -113,7 +113,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface=  as RawKeyEventListenervector.get(index);;
+eventListenerInterface= vector.get(index); as RawKeyEventListener;
     
 this.addListener(eventListenerInterface);
     
@@ -183,7 +183,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface=  as RawKeyEventListenerthis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
     
 this.process(keyCode, deviceId, repeated, eventListenerInterface);
     
@@ -223,7 +223,7 @@ eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventListenerInterfaceList;
+                        return this.eventListenerInterfaceList;
     
 }
 
@@ -250,7 +250,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface=  as RawKeyEventListenerthis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
     
 stringBuffer!.append(LISTENER_LABEL);
     

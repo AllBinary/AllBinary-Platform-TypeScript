@@ -60,14 +60,14 @@ export class PathCacheFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pathFactory;
+                        return PathCacheFactory.pathFactory;
     
 }
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-    private hashtable: Hashtable = new Hashtable();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 private constructor (){
 
             super();
@@ -142,7 +142,7 @@ this.hashtable.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicArrayListlistCanBeNull;
+                        return listCanBeNull as BasicArrayList;
     
 }
 

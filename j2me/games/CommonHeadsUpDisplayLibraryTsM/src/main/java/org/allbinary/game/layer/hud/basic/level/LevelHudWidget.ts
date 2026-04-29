@@ -193,7 +193,7 @@ this.update();
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paintDX(graphics, levelString, 0, levelString!.length, levelNumberCharArray, 0, levelNumberTotalDigits, this.offset);
+super.paintDX(graphics, this.levelString, 0, this.levelString!.length, this.levelNumberCharArray, 0, this.levelNumberTotalDigits, this.offset);
     
 }
 

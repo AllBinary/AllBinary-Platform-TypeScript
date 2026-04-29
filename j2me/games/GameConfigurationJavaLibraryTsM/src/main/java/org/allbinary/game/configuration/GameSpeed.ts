@@ -39,6 +39,8 @@
         
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
+import { GameConfiguration } from "./GameConfiguration.js";
+
 export class GameSpeed
             extends Object
          {
@@ -51,7 +53,7 @@ export class GameSpeed
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameSpeed.instance;
     
 }
 

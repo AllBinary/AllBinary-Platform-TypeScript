@@ -233,7 +233,7 @@ adjustedBorder= 4;
 ;
     
 
-    var commandTextItem: CommandTextItem =  as CommandTextItemthis.get(index);;
+    var commandTextItem: CommandTextItem = this.get(index); as CommandTextItem;
 ;
     
 

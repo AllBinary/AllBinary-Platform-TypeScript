@@ -77,7 +77,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.visit( as AbFileanyType);;
+                        return this.visit(anyType as AbFile); as Object;
     
 }
 
@@ -104,7 +104,7 @@ var file = file
     var index: number = 0;
 index < size; index++)
         {
-nextFileFilterString=  as Stringlist.get(index);;
+nextFileFilterString= list.get(index); as String;
     
 
                         if(this.visit(file, nextFileFilterString))
@@ -135,7 +135,7 @@ nextFileFilterString=  as Stringlist.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return filterStringBasicArrayList;
+                        return this.filterStringBasicArrayList;
     
 }
 

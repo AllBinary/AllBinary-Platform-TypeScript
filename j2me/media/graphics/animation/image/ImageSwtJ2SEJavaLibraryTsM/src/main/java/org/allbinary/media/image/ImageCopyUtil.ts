@@ -103,7 +103,7 @@ export class ImageCopyUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageCopyUtil.instance;
     
 }
 
@@ -197,7 +197,7 @@ image= this.openGLUtil!.add(image);
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageoriginalImage);
+    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
 ;
     
 originalImage2= openGLESImage!.openGLBitmap!.getImage();
@@ -219,7 +219,7 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage();
                         
                                     {
                                     
-    var originalMutableImage: SwtMutableImage =  as SwtMutableImageoriginalImage2;
+    var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
 ;
     
 image= new SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.image.getImageData()));
@@ -229,7 +229,7 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(originalMutableImage!.
                                 
                         else {
                             
-    var originalImmutableImage: SwtImmutableImage =  as SwtImmutableImageoriginalImage2;
+    var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
 ;
     
 image= new SwtMutableImage(SwtDeviceComponent.createImage(originalImmutableImage!.image.getImageData()));
@@ -296,7 +296,7 @@ image= this.openGLUtil!.add(image);
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageoriginalImage);
+    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
 ;
     
 originalImage2= openGLESImage!.openGLBitmap!.getImage();
@@ -318,7 +318,7 @@ originalImage2= openGLESImage!.openGLBitmap!.getImage();
                         
                                     {
                                     
-    var originalMutableImage: SwtMutableImage =  as SwtMutableImageoriginalImage2;
+    var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
 ;
     
 
@@ -351,7 +351,7 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(imageData));
                                 
                         else {
                             
-    var originalImmutableImage: SwtImmutableImage =  as SwtImmutableImageoriginalImage2;
+    var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
 ;
     
 
@@ -442,7 +442,7 @@ image= this.openGLUtil!.add(image);
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageoriginalImage);
+    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
 ;
     
 
@@ -485,7 +485,7 @@ image= openGLESImage;
                             image= originalImage;
     
 
-    var openGLESImage: OpenGLESImage =  as OpenGLESImagethis.openGLUtil!.add(image);;
+    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image); as OpenGLESImage;
 ;
     
 
@@ -503,7 +503,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height) /op
                                     openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
     
 
-    var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate =  as OpenGLESDeviceImageTranslateopenGLESImage!.openGLESImageTranslate;
+    var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
 ;
     
 openGLESDeviceImageTranslate!.translateX= displayInfoSingleton!.getLastWidth() /1.4f /openGLESImageProperties!.scaleX;
@@ -529,7 +529,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
                                     openGLESImage!.openGLESImageTranslate= new OpenGLESDeviceImageTranslate();
     
 
-    var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate =  as OpenGLESDeviceImageTranslateopenGLESImage!.openGLESImageTranslate;
+    var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
 ;
     
 openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth(); /40 /openGLESImageProperties!.scaleX;
@@ -538,7 +538,7 @@ openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth()
                                     }
                                 
 
-                        if(image.getName()!.startsWith(LEADERBOARD))
+                        if(image.getName()!.startsWith(this.LEADERBOARD))
                         
                                     {
                                     
@@ -569,7 +569,7 @@ image= openGLESImage;
                         
                                     {
                                     
-    var originalMutableImage: SwtMutableImage =  as SwtMutableImageoriginalImage2;
+    var originalMutableImage: SwtMutableImage = originalImage2 as SwtMutableImage;
 ;
     
 
@@ -602,7 +602,7 @@ image= new SwtMutableImage(SwtDeviceComponent.createImage(imageData));
                                 
                         else {
                             
-    var originalImmutableImage: SwtImmutableImage =  as SwtImmutableImageoriginalImage2;
+    var originalImmutableImage: SwtImmutableImage = originalImage2 as SwtImmutableImage;
 ;
     
 
@@ -669,11 +669,11 @@ image= this.openGLUtil!.add(image);
                                     }
                                 
 
-    var newWidth: number = Math.round(originalImage!.getWidth() *canvasScale);
+    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));
 ;
     
 
-    var newHeight: number = Math.round(originalImage!.getHeight() *canvasScale);
+    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));
 ;
     
 
@@ -715,7 +715,7 @@ image= this.openGLUtil!.add(image);
 ;
     
 
-    var mutableImage2: SwtMutableImage =  as SwtMutableImageimage;
+    var mutableImage2: SwtMutableImage = image as SwtMutableImage;
 ;
     
 
@@ -776,7 +776,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage =  as org.eclipse.swt.graphics.ImagemutableImage2!.getImage();getImage
+getImage = mutableImage2!.getImage();getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     
@@ -791,7 +791,7 @@ getImage.
                                 
                         else {
                             
-    var originalImmutableImage: SwtImmutableImage =  as SwtImmutableImageimage;
+    var originalImmutableImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
 
@@ -857,7 +857,7 @@ newPixelArray[index +(index2 *width)]= originalPixelArray[(index -halfWidthDelta
 
 }
 
-getImage =  as org.eclipse.swt.graphics.ImageoriginalImmutableImage!.getImage();getImage
+getImage = originalImmutableImage!.getImage();getImage as org.eclipse.swt.graphics.Image
 getImage.
                     getImageData()!.setPixels(0, 0, image.getWidth(), newPixelArray, 0);
     

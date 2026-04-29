@@ -53,16 +53,16 @@ export class LogConfigTypeFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogConfigTypeFactory.instance;
     
 }
 
 
     private readonly NO_DESCRIPTION: string = "No Description";
 
-    public readonly OS: LogConfigType = new LogConfigType("Operating System", NO_DESCRIPTION);
+    public readonly OS: LogConfigType = new LogConfigType("Operating System", this.NO_DESCRIPTION);
 
-    public readonly FACTORYERROR: LogConfigType = new LogConfigType("Factory Error", NO_DESCRIPTION);
+    public readonly FACTORYERROR: LogConfigType = new LogConfigType("Factory Error", this.NO_DESCRIPTION);
 private constructor (){
 
             super();

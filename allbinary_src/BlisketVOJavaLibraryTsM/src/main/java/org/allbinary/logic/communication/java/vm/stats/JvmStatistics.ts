@@ -58,7 +58,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.freeMemory();;
+                        return this.runtime.freeMemory();;
     
 }
 
@@ -88,7 +88,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.maxMemory();;
+                        return this.runtime.maxMemory();;
     
 }
 
@@ -118,7 +118,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return runtime.totalMemory();;
+                        return this.runtime.totalMemory();;
     
 }
 

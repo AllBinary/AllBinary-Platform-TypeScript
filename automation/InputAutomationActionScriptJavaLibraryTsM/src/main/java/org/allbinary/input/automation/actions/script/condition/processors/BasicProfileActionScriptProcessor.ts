@@ -94,10 +94,10 @@ super.actionPerformed(actionEvent);
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacethis.getParent();;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent(); as ProfileActionScriptConditionInterface;
 ;
     
-profileActionScriptConditionInterface!.removeProcessor( as ProfileActionScriptProcessorInterfacethis);
+profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface);
     
 JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
     

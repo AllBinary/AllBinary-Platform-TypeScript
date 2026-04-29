@@ -110,7 +110,7 @@ var len = len
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly NULL_OUTPUT_STREAM: OutputStream = nullOutputStream()!;
+    private readonly NULL_OUTPUT_STREAM: OutputStream = LicenseServerInitFileUtil.nullOutputStream()!;
 
     public init(){
 
@@ -131,7 +131,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_S
                                     }
                                 
                         else {
-                            write();
+                            this.write();
     
 
                         }

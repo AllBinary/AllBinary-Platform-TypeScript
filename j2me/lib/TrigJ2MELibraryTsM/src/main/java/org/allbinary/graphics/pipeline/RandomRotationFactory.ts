@@ -46,6 +46,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicGraphicsPipeline } from "./BasicGraphicsPipeline.js";
+
 export class RandomRotationFactory
             extends Object
          {
@@ -58,7 +60,7 @@ export class RandomRotationFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return RandomRotationFactory.instance;
     
 }
 
@@ -95,7 +97,7 @@ var howMuch = howMuch
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return myRandomFactory!.getNextInt(howMuch *10);;
+                        return this.myRandomFactory!.getNextInt(howMuch *10);;
     
 }
 

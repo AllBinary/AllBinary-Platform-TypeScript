@@ -142,7 +142,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2);
+                        return Math.round((this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2));
     
 }
 
@@ -152,7 +152,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2);
+                        return Math.round((this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2));
     
 }
 
@@ -172,10 +172,10 @@ var gl = gl
     initTexture(gl: GL10): boolean{
 var gl = gl
 
-                        if(!texture2dList!.contains(this);)
+                        if(!OpenGLESImage.texture2dList!.contains(this);)
                         
                                     {
-                                    texture2dList!.add(this);
+                                    OpenGLESImage.texture2dList!.add(this);
     
 
     var textures: number[] = new Array(1);
@@ -250,7 +250,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE;
+                        return OpenGLESImage.TYPE;
     
 }
 

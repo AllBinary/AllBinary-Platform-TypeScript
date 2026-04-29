@@ -1,4 +1,5 @@
-interface Enumeration<E> {
-    hasMoreElements(): boolean;
-    nextElement(): E;
+
+export interface Enumeration<E> extends IterableIterator<E> {
+    //hasMoreElements(): boolean;
+    //nextElement(): E;
 }

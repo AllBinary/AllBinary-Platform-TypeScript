@@ -63,7 +63,7 @@ export class DamageUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return DamageUtil.instance;
     
 }
 
@@ -93,7 +93,7 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
 var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayercollidableInterfaceCompositeInterface;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
 ;
     
 

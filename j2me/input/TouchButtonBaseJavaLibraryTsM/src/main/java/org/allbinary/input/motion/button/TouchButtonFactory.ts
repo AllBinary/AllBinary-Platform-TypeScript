@@ -55,16 +55,16 @@ export class TouchButtonFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return TouchButtonFactory.SINGLETON;
     
 }
 
 
     private LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
-    private list: BasicArrayList = LIST;
+    private list: BasicArrayList = this.LIST;
 
-    private savedList: BasicArrayList = LIST;
+    private savedList: BasicArrayList = this.LIST;
 private constructor (){
 
             super();
@@ -170,7 +170,7 @@ this.list= list;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

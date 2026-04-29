@@ -53,6 +53,8 @@ import { JTextField } from "./JTextField.js";
 
 import { JDialog } from "./JDialog.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -75,7 +77,7 @@ public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActi
         var timeIntervalActionScriptConditionInterface = timeIntervalActionScriptConditionInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.timeIntervalActionScriptConditionInterface= timeIntervalActionScriptConditionInterface;
     
@@ -105,7 +107,7 @@ this.timeIntervalActionScriptConditionInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return timeIntervalJTextField;
+                        return this.timeIntervalJTextField;
     
 }
 
@@ -122,7 +124,7 @@ this.timeIntervalJTextField= timeIntervalJTextField;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return timeIntervalActionJDialog;
+                        return this.timeIntervalActionJDialog;
     
 }
 
@@ -155,7 +157,7 @@ this.titleJLabel!.setText("Time Interval Condition Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -183,7 +185,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.timeIntervalActionJButton!.setText("Edit");
     
-timeIntervalActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.timeIntervalActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

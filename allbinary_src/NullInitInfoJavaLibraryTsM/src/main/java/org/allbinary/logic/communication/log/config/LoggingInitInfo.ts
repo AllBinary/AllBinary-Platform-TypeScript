@@ -60,7 +60,7 @@ export class LoggingInitInfo
     public static write(){
 
         try {
-            hasRead= false;
+            LoggingInitInfo.hasRead= false;
     
 
                 //: 
@@ -109,12 +109,12 @@ LoggingInitInfo.hasRead= value;
 
     static updateIfNeeded(){
 
-                        if(!hasRead)
+                        if(!LoggingInitInfo.hasRead)
                         
                                     {
                                     LoggingInitInfo.read();
     
-hasRead= true;
+LoggingInitInfo.hasRead= true;
     
 
                         if(LoggingInitInfo.logConfigInfoList == 
@@ -180,7 +180,7 @@ LoggingInitInfo.updateIfNeeded();
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
+    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
 ;
     
 

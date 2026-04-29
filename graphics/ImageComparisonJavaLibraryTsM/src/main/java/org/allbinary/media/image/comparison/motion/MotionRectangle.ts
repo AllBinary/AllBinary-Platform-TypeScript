@@ -71,7 +71,7 @@ this.setPixelDeltaVector(new Vector());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangle;
+                        return this.rectangle;
     
 }
 
@@ -88,7 +88,7 @@ this.rectangle= rectangle;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pixelDeltaVector;
+                        return this.pixelDeltaVector;
     
 }
 
@@ -102,10 +102,10 @@ this.pixelDeltaVector= pixelDeltaVector;
 
     public clone(): any{
 
-    var motionRectangle: MotionRectangle = new MotionRectangle( as Rectanglethis.getRectangle()!.clone());
+    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);
 ;
     
-motionRectangle!.setPixelDeltaVector( as Vectorthis.getPixelDeltaVector()!.clone());
+motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector);
     
 
 

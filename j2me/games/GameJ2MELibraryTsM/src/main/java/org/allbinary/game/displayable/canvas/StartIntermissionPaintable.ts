@@ -137,7 +137,7 @@ this.fontDebugFactory!.setFont(this.font, graphics);
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
     
-basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
+this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
     
 
     var beginWidth: number= 0
@@ -162,7 +162,7 @@ index >= 0; index--)
                                 
 beginWidth= this.lastWidth[index]!;
     
-graphics.drawString(this.stringArray[index]!, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHalfHeight() -lineArray[index], anchor);
+graphics.drawString(this.stringArray[index]!, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHalfHeight() -this.lineArray[index], this.anchor);
     
 }
 
@@ -212,7 +212,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 

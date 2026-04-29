@@ -87,7 +87,7 @@ public constructor (){
             super();
         this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 }
 
@@ -111,7 +111,7 @@ this.logUtil!.putF("Updated UI", this, "updateJTree");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfileActionScript;
+                        return this.genericProfileActionScript;
     
 }
 
@@ -128,7 +128,7 @@ this.genericProfileActionScript= genericProfileActionScript;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return actionScriptJTree;
+                        return this.actionScriptJTree;
     
 }
 
@@ -149,7 +149,7 @@ setLayout(new java.awt.GridLayout(1, 0));
     
 this.actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
     
-actionScriptJTree!.addMouseListener(new java.awt.event.MouseAdapter()
+this.actionScriptJTree!.addMouseListener(new java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
@@ -203,14 +203,14 @@ var evt = evt
                         
                                     {
                                     
-    var customTreeNodeInterface: CustomTreeNodeInterface =  as CustomTreeNodeInterfaceanyType;
+    var customTreeNodeInterface: CustomTreeNodeInterface = anyType as CustomTreeNodeInterface;
 ;
     
 
     var jPopupMenu: JPopupMenu = customTreeNodeInterface!.getJPopupMenu()!;
 ;
     
-jPopupMenu!.show( as JComponentevt.getSource(), evt.getX(), evt.getY());
+jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY());
     
 
                                     }

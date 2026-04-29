@@ -95,7 +95,7 @@ list.add(this);
 
                 //@Throws(Error::class)
             
-    public getNextInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -123,7 +123,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return this.id;
     
 }
 

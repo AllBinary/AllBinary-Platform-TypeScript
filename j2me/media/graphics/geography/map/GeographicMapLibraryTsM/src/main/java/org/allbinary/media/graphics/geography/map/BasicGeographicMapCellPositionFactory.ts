@@ -221,7 +221,7 @@ this.logUtil!.put(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionArray[i_row]![i_column]!;
+                        return this.geographicMapCellPositionArray[i_row]![i_column]!;
     
 }
 
@@ -256,9 +256,9 @@ this.logUtil!.put(new StringMaker().
                                 )
                         
                                     {
-                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, columns, rows, width, height);
+                                    cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, this.columns, this.rows, width, height);
     
-this.geographicMapCellPositionArray[i_row]![i_column]=  as GeographicMapCellPositioncellPositionCanBeNull;
+this.geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition;
     
 
                                     }
@@ -267,7 +267,7 @@ this.geographicMapCellPositionArray[i_row]![i_column]=  as GeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GeographicMapCellPositioncellPositionCanBeNull;
+                        return cellPositionCanBeNull as GeographicMapCellPosition;
     
 }
 
@@ -277,7 +277,7 @@ this.geographicMapCellPositionArray[i_row]![i_column]=  as GeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return columns;
+                        return this.columns;
     
 }
 
@@ -287,7 +287,7 @@ this.geographicMapCellPositionArray[i_row]![i_column]=  as GeographicMapCellPosi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rows;
+                        return this.rows;
     
 }
 

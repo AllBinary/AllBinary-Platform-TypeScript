@@ -83,7 +83,7 @@ pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pickedUpLayerInterfaceFactoryInterface;
+                        return LifePickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface;
     
 }
 
@@ -112,7 +112,7 @@ private constructor (){
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-pool.visit(sourceLayerInterface);
+this.pool.visit(sourceLayerInterface);
     
 }
 

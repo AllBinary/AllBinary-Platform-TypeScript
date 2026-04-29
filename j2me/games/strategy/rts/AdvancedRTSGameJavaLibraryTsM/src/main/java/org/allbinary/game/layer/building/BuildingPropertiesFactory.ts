@@ -87,7 +87,7 @@ export class BuildingPropertiesFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BuildingPropertiesFactory.instance;
     
 }
 
@@ -117,7 +117,7 @@ export class BuildingPropertiesFactory
                                     {
                                     damageFloaters= new PtsDamageFloaters(buildingLayer);
     
-damageFloatersPaintableInterface= damageFloaters;
+this.damageFloatersPaintableInterface= damageFloaters;
     
 
                                     }
@@ -149,7 +149,7 @@ damageFloatersPaintableInterface= damageFloaters;
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
-                                    healthBar= new HealthBar(buildingLayer, buildingLayer!.getHealthInterface(), new HealthBarTwodAnimation( as AllBinaryLayerbuildingLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
+                                    healthBar= new HealthBar(buildingLayer, buildingLayer!.getHealthInterface(), new HealthBarTwodAnimation(buildingLayer as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
     
 
                                     }
@@ -163,12 +163,12 @@ damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-    public getHashtable(): Hashtable{
+    public getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Hashtable();
+                        return new Hashtable<any, any>();
     
 }
 

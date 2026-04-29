@@ -85,7 +85,7 @@ export class StoreFrontsHelper extends BasicTable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -317,7 +317,7 @@ this.portion= new Portion(hashMap);
 ;
     
 
-    var storeSelect: HtmlSelect = new HtmlSelect(StringUtil.getInstance()!.EMPTY_STRING, commonPhoneStrings!.ONE, StoreFrontData.getInstance()!.SELECTSTORENAME, StringUtil.getInstance()!.EMPTY_STRING);
+    var storeSelect: HtmlSelect = new HtmlSelect(StringUtil.getInstance()!.EMPTY_STRING, this.commonPhoneStrings!.ONE, StoreFrontData.getInstance()!.SELECTSTORENAME, StringUtil.getInstance()!.EMPTY_STRING);
 ;
     
 storeSelect!.addAttribute(CLASS, TEXT);
@@ -335,7 +335,7 @@ storeSelect!.addAttribute(CLASS, TEXT);
 index < size; index++)
         {
 
-    var storeName: string =  as StringstoreNamesVector!.get(index);;
+    var storeName: string = storeNamesVector!.get(index); as String;
 ;
     
 storeSelect!.addOption(storeName);

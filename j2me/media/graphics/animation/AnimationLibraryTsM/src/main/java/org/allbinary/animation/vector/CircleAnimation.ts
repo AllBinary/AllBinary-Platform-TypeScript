@@ -55,7 +55,7 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 export class CircleAnimation extends Animation implements ColorCompositeInterface {
         
 
-    readonly TOTAL_ANGLE: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
+    readonly TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 
     width: number
 

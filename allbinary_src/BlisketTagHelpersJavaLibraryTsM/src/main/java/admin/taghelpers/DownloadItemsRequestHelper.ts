@@ -77,13 +77,13 @@ export class DownloadItemsRequestHelper extends ModifyTable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly downloadableItem: DownloadableItem
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag =  as HelperTaghashMap!.get(AbTagData.PARENT);;
+    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT); as HelperTag;
 ;
     
 
@@ -215,7 +215,7 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
 ;
     
 
-    var values: HashMap = this.downloadableItem!.toHashMap()!;
+    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
 ;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values);

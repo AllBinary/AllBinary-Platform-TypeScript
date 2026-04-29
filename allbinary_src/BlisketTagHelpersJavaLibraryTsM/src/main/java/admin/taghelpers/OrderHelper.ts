@@ -105,12 +105,12 @@ export class OrderHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
 
     private request: HttpServletRequest
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -119,10 +119,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
@@ -151,7 +151,7 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 ;
     
 
-    var requestPaymentGateway: string =  as Stringthis.request.getParameter(PaymentGatewayData.NAME.toString());;
+    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()); as String;
 ;
     
 
@@ -168,7 +168,7 @@ paymentGatewayBoolean= Boolean.TRUE;
                                     }
                                 
 
-    var paymentGatewayEntityInterface: PaymentGatewayEntity =  as PaymentGatewayEntityPaymentGatewayEntityFactory.getInstance();;
+    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance(); as PaymentGatewayEntity;
 ;
     
 
@@ -180,11 +180,11 @@ paymentGatewayBoolean= Boolean.TRUE;
                         
                                     {
                                     
-    var paymentType: BasicPaymentType =  as BasicPaymentTypepaymentTypeVector!.get(0);;
+    var paymentType: BasicPaymentType = paymentTypeVector!.get(0); as BasicPaymentType;
 ;
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface =  as PaymentGatewayInterfacepaymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType);;
+    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType); as PaymentGatewayInterface;
 ;
     
 
@@ -296,7 +296,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
 order.setStoreName(this.storeFrontInterface!.getName());
     
 
-    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(),  as Orderorder)!;
+    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;
 ;
     
 

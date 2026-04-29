@@ -100,7 +100,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEventallBinaryEventObject);
+this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
     
 }
 
@@ -111,7 +111,7 @@ this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEv
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -138,7 +138,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent =  as MotionRectanglesResultsEventthis.getMotionRectanglesVector()!.get(0);;
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0); as MotionRectanglesResultsEvent;
 ;
     
 

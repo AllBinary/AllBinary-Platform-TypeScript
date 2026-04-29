@@ -64,7 +64,7 @@ export class AnimationFactoryImageScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AnimationFactoryImageScaleUtil.instance;
     
 }
 
@@ -105,7 +105,7 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            scaledImage= this.imageScaleUtil!.scale(image, Math.round(scaleX *width), Math.round(scaleY *height));
+                            scaledImage= this.imageScaleUtil!.scale(image, Math.round((scaleX *width)), Math.round((scaleY *height)));
     
 
                         }
@@ -160,9 +160,9 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            animationFactoryInitializationVisitor!.dx= Math.round(animationFactoryInitializationVisitor!.originalDx *scaleX);
+                            animationFactoryInitializationVisitor!.dx= Math.round((animationFactoryInitializationVisitor!.originalDx *scaleX));
     
-animationFactoryInitializationVisitor!.dy= Math.round(animationFactoryInitializationVisitor!.originalDy *scaleY);
+animationFactoryInitializationVisitor!.dy= Math.round((animationFactoryInitializationVisitor!.originalDy *scaleY));
     
 
                         }

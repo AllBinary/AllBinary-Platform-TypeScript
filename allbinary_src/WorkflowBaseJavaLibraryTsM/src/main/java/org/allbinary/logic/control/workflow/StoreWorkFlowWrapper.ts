@@ -77,8 +77,8 @@ public constructor (anyType: any = {}){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.getWorkFlowObject(), 
-                            null);;
+    var result: string = method.invoke(this.getWorkFlowObject(), 
+                            null); as String;
 ;
     
 

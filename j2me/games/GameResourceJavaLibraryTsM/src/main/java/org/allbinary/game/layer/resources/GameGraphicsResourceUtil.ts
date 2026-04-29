@@ -76,7 +76,7 @@ export class GameGraphicsResourceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameGraphicsResourceUtil.instance;
     
 }
 
@@ -165,7 +165,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getStringForFeature(graphicsFeature);;
+                        return this.getStringForFeature(graphicsFeature);;
     
 }
 
@@ -270,7 +270,7 @@ stringBuffer!.append(this.SPRITE);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 

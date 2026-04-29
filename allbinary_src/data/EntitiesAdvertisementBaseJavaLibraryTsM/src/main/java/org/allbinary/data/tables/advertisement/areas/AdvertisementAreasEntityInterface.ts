@@ -64,7 +64,7 @@ export interface AdvertisementAreasEntityInterface extends BasicDataTableInterfa
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap)
+    public update(updatedValues: HashMap<any, any>)
 
 }
                 

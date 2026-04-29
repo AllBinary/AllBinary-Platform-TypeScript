@@ -72,7 +72,7 @@ export class StoreCustomizerComponentUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return StoreCustomizerComponentUtil.instance;
     
 }
 
@@ -119,7 +119,7 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallCustomizedViews!.get(index);;
+    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index); as TransformInfo;
 ;
     
 
@@ -135,7 +135,7 @@ index < size; index++)
 
                                     }
                                 
-generate(abeClientInformation, transformInfoInterface, allViewsToBeModified);
+this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified);
     
 }
 
@@ -171,7 +171,7 @@ var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
 ;
     
 

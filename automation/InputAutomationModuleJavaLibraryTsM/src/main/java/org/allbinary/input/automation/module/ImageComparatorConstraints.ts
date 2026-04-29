@@ -92,7 +92,7 @@ this.setAvoidVector(new Vector());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return avoidVector;
+                        return this.avoidVector;
     
 }
 
@@ -132,7 +132,7 @@ var rectangle = rectangle
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
 ;
     
 
@@ -178,7 +178,7 @@ var point = point
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
 ;
     
 
@@ -216,7 +216,7 @@ this.avoidVector= avoidVector;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxNonMatchingPixelDeltas;
+                        return this.maxNonMatchingPixelDeltas;
     
 }
 
@@ -292,7 +292,7 @@ var bufferedImage = bufferedImage
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
+    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
 ;
     
 this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");

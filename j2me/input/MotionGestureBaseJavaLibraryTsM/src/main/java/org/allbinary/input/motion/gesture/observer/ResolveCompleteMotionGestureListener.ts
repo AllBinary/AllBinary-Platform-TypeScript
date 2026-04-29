@@ -111,7 +111,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var association: MotionGestureToMotionGestureActionAssociation =  as MotionGestureToMotionGestureActionAssociationcommandActionsList!.objectArray[index]!;
+    var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;
 ;
     
 
@@ -119,7 +119,7 @@ index >= 0; index--)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventassociation.getCommandAction();;
+    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction(); as GameKeyCompleteMotionGestureInputEvent;
 ;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent);

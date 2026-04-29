@@ -62,6 +62,8 @@ import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurat
 
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
+import { UserEmailEventConfigurationMapping } from "./UserEmailEventConfigurationMapping.js";
+
 export class UserEmailEventConfigurationView
             extends Object
          implements DomNodeInterface {
@@ -77,7 +79,7 @@ public constructor (node: Node){
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -92,7 +94,7 @@ hashMap!.put(UserEmailEventConfigurationData.NAME, name);
     
 hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, eventListenerClassPath);
     
-this.setUserEmailEventConfigurationInterface( as UserEmailEventConfigurationInterfacenew UserEmailEventConfiguration(hashMap));
+this.setUserEmailEventConfigurationInterface(new UserEmailEventConfiguration(hashMap) as UserEmailEventConfigurationInterface);
     
 }
 
@@ -114,7 +116,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = userEmailEventConfigurationMapping!.toHashMap()!;
+    var hashMap: HashMap<any, any> = userEmailEventConfigurationMapping!.toHashMap()!;
 ;
     
 

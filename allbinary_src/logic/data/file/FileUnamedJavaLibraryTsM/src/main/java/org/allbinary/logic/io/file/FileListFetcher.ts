@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { DirectoryBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js";
 
     
@@ -67,7 +69,7 @@ export class FileListFetcher
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FileListFetcher.instance;
     
 }
 

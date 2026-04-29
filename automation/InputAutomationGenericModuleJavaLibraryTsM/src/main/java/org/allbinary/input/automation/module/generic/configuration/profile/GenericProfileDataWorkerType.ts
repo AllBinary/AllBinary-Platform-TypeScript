@@ -66,7 +66,7 @@ export class GenericProfileDataWorkerType
          implements GenericProfileDataWorkerTypeInterface {
         
 
-    private hashMap: HashMap = new HashMap();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public SAVED_CAPTURE: GenericProfileDataWorkerType = SavedCaptureGenericProfileDataWorkerType.SAVED_CAPTURE;
 
@@ -86,7 +86,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GenericProfileDataWorkerTypehashMap!.get(name as Object);;
+                        return GenericProfileDataWorkerType.hashMap!.get(name as Object); as GenericProfileDataWorkerType;
     
 }
 
@@ -98,7 +98,7 @@ public constructor (name: string){
         var name = name
 this.setName(name);
     
-hashMap!.put(this.getName(), this);
+GenericProfileDataWorkerType.hashMap!.put(this.getName(), this);
     
 }
 
@@ -108,7 +108,7 @@ hashMap!.put(this.getName(), this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -125,7 +125,7 @@ this.name= name;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, name)!;
+    var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;
 ;
     
 

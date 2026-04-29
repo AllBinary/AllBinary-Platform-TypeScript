@@ -65,9 +65,9 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

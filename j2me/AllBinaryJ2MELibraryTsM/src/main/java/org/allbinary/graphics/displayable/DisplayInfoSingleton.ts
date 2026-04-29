@@ -101,7 +101,7 @@ export class DisplayInfoSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return DisplayInfoSingleton.SINGLETON;
     
 }
 
@@ -175,7 +175,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return lastHalf;
+                        return this.lastHalf;
     
 }
 
@@ -185,7 +185,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return last;
+                        return this.last;
     
 }
 
@@ -195,7 +195,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return full;
+                        return this.full;
     
 }
 
@@ -205,7 +205,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scaleLargestTo;
+                        return this.scaleLargestTo;
     
 }
 
@@ -251,7 +251,7 @@ var aLastHeight = aLastHeight
     var stringMaker: StringMaker = new StringMaker();
 ;
     
-this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
     var aFullWidth: number = aLastWidth;
@@ -263,7 +263,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.append(FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.FULL_WIDTH)!.appendint(aFullWidth)!.append(this.FULL_HEIGHT)!.appendint(aFullHeight)!.append(this.toString())!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
@@ -298,11 +298,11 @@ this.ratio= aLastHeight /this.scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= Math.round(aLastWidth *this.displayRatio);
+aLastWidth= Math.round((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round(aLastHeight *this.displayRatio);
+aLastHeight= Math.round((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -331,11 +331,11 @@ this.ratio= aLastWidth /this.scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= Math.round(aLastWidth *this.displayRatio);
+aLastWidth= Math.round((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round(aLastHeight *this.displayRatio);
+aLastHeight= Math.round((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -358,7 +358,7 @@ this.scalableListener!.scale(this.ratio);
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.LAST_WIDTH)!.appendint(aLastWidth)!.append(this.LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, this.SET_LAST_SIZE_METHOD_NAME);
     
 this.xOffset= aFullWidth -aLastWidth;
     
@@ -382,7 +382,7 @@ this.lastHalf[this.HEIGHT]= (this.last[this.HEIGHT]>>1);
     
 SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio);
     
-this.add(SET_LAST_SIZE_METHOD_NAME);
+this.add(this.SET_LAST_SIZE_METHOD_NAME);
     
 }
 
@@ -442,11 +442,11 @@ this.add(SET_LAST_SIZE_METHOD_NAME);
     var stringMaker: StringMaker = new StringMaker();
 ;
     
-this.logUtil!.putF(stringMaker!.append(this.REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME);
+this.logUtil!.putF(stringMaker!.append(this.REASON)!.append(reason)!.toString(), this, this.FIRE_METHOD_NAME);
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(this.toStringAppend(stringMaker), this, FIRE_METHOD_NAME);
+this.logUtil!.putF(this.toStringAppend(stringMaker), this, this.FIRE_METHOD_NAME);
     
 this.list.add(reason);
     
@@ -471,7 +471,7 @@ this.list.clear();
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
     
 }
 
@@ -497,7 +497,7 @@ swtJOGLProcessor!.onSurfaceChanged();
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
     
 }
 
@@ -527,7 +527,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
     var stringMaker: StringMaker = new StringMaker();
 ;
     
-this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(this.LAST_WIDTH)!.appendint(aLastWidth)!.append(this.LAST_HEIGHT)!.appendint(aLastHeight)!.append(this.commonSeps!.SPACE)!.append(this.toString())!.toString(), this, this.commonStrings!.UPDATE);
     
 
                         if(aLastWidth > 0 && aLastHeight > 0)
@@ -539,7 +539,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toString(), this, this.commonStrings!.UPDATE);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
@@ -574,11 +574,11 @@ this.ratio= aLastHeight /this.scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, this.commonStrings!.UPDATE);
     
-aLastWidth= Math.round(aLastWidth *this.displayRatio);
+aLastWidth= Math.round((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round(aLastHeight *this.displayRatio);
+aLastHeight= Math.round((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -597,7 +597,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("Found Landscape Orientation", this, commonStrings!.UPDATE);
+                            this.logUtil!.putF("Found Landscape Orientation", this, this.commonStrings!.UPDATE);
     
 
                         if(aLastWidth > this.scaleLargestTo)
@@ -609,11 +609,11 @@ this.ratio= aLastWidth /this.scaleLargestTo;
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, this.commonStrings!.UPDATE);
     
-aLastWidth= Math.round(aLastWidth *this.displayRatio);
+aLastWidth= Math.round((aLastWidth *this.displayRatio));
     
-aLastHeight= Math.round(aLastHeight *this.displayRatio);
+aLastHeight= Math.round((aLastHeight *this.displayRatio));
     
 this.scalableListener!.scale(this.ratio);
     
@@ -636,7 +636,7 @@ this.scalableListener!.scale(this.ratio);
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append(UPDATE_FROM_ORIENTATION_CHANGE)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.append(this.LAST_WIDTH)!.appendint(aLastWidth)!.append(this.LAST_HEIGHT)!.appendint(aLastHeight)!.toString(), this, this.commonStrings!.UPDATE);
     
 this.xOffset= aFullWidth -aLastWidth;
     
@@ -660,7 +660,7 @@ this.lastHalf[this.HEIGHT]= (this.last[this.HEIGHT]>>1);
     
 SWTJOGLProcessor.getInstance()!.setCustom(aLastWidth, aLastHeight, this.ratio);
     
-this.add(commonStrings!.UPDATE);
+this.add(this.commonStrings!.UPDATE);
     
 
 
@@ -763,7 +763,7 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return top;
+                        return this.top;
     
 }
 
@@ -773,7 +773,7 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return left;
+                        return this.left;
     
 }
 
@@ -861,7 +861,7 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
     public setCustom(width: number, height: number){
     //var width = width
     //var height = height
-this.last[CUSTOM_WIDTH]= width;
+this.last[this.CUSTOM_WIDTH]= width;
     
 this.lastHalf[this.CUSTOM_WIDTH]= (this.last[this.CUSTOM_WIDTH]>>1);
     
@@ -884,7 +884,7 @@ this.scalableListener= scalableListener;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scalableListener;
+                        return this.scalableListener;
     
 }
 
@@ -894,7 +894,7 @@ this.scalableListener= scalableListener;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ratio;
+                        return this.ratio;
     
 }
 
@@ -904,7 +904,7 @@ this.scalableListener= scalableListener;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return displayRatio;
+                        return this.displayRatio;
     
 }
 
@@ -922,7 +922,7 @@ this.left= left;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return xOffset;
+                        return this.xOffset;
     
 }
 
@@ -932,7 +932,7 @@ this.left= left;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return yOffset;
+                        return this.yOffset;
     
 }
 

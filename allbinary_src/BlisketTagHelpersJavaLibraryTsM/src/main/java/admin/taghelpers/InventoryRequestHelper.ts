@@ -83,13 +83,13 @@ export class InventoryRequestHelper extends ModifyTable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly itemInterface: ItemInterface
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag =  as HelperTagpropertiesHashMap!.get(AbTagData.PARENT);;
+    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT); as HelperTag;
 ;
     
 
@@ -107,7 +107,7 @@ this.itemInterface= itemView!.getItemInterface();
 
         try {
             
-    var dataMappingInterface: TableMappingInterface =  as TableMappingInterfacethis.getItemInterface();;
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface(); as TableMappingInterface;
 ;
     
 
@@ -167,11 +167,11 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
         try {
             
-    var dataMappingInterface: TableMappingInterface =  as TableMappingInterfacethis.getItemInterface();;
+    var dataMappingInterface: TableMappingInterface = this.getItemInterface(); as TableMappingInterface;
 ;
     
 
-    var id: string =  as StringdataMappingInterface!.getKey();;
+    var id: string = dataMappingInterface!.getKey(); as String;
 ;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);
@@ -296,7 +296,7 @@ this.insert();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return itemInterface;
+                        return this.itemInterface;
     
 }
 

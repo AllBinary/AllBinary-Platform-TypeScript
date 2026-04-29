@@ -88,9 +88,9 @@ import { Vector } from "../../../java/util/Vector.js";
 
     /*actual*/ public readonly EMPTY_VECTOR: Vector<any> = new Vector<any>();
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable = new Hashtable();
+    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = new Hashtable<any, any>();
 
-    /*actual*/ public readonly NULL_MAP: HashMap = new HashMap();
+    /*actual*/ public readonly NULL_MAP: HashMap<any, any> = new HashMap<any, any>();
 
 }
                 

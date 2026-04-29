@@ -100,7 +100,7 @@ this.canvas= canvas;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MyCanvasthis.canvas;
+                        return this.canvas as MyCanvas;
     
 }
 

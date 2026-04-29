@@ -73,7 +73,7 @@ export class MakeCountedPartsSingletonArrayFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MakeCountedPartsSingletonArrayFactory.instance;
     
 }
 
@@ -120,9 +120,9 @@ this.list.add(partInterfaceArray[index]!);
     var index: number = 0;
 index < size; index++)
         {
-layerInterfaceFactoryInterface=  as CountedPickedUpLayerInterfaceFactorycountedBasicArrayList!.objectArray[index]!;
+layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
     
-list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
+this.list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
     
 }
 
@@ -161,7 +161,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     var index: number = 0;
 index < newSize; index++)
         {
-newPartInterfaceArray[index]=  as PartInterfacethis.list.get(index);;
+newPartInterfaceArray[index]= this.list.get(index); as PartInterface;
     
 }
 

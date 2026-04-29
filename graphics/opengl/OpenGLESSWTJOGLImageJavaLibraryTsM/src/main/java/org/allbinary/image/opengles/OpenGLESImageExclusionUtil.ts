@@ -58,7 +58,7 @@ export class OpenGLESImageExclusionUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OpenGLESImageExclusionUtil.instance;
     
 }
 
@@ -112,7 +112,7 @@ private constructor (){
     var index: number = 0;
 index < size; index++)
         {
-name=  as Stringthis.list.get(index);;
+name= this.list.get(index); as String;
     
 
                         if(imageName!.startsWith(name))

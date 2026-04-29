@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
 
     
@@ -74,13 +76,13 @@ this.setLibraryName(libraryName);
     var params: any[] = new Array(1);
 ;
     
-params[0]= getLibraryName();
+params[0]= this.getLibraryName();
     
 
     var classes: Function[] = new Array(1);
 ;
     
-classes[0]= getLibraryName()!.constructor;
+classes[0]= this.getLibraryName()!.constructor;
     
 this.loader= new NativeLibraryClassLoader(this.constructor.name.java.classLoader);
     
@@ -140,7 +142,7 @@ System.gc();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return libraryName;
+                        return this.libraryName;
     
 }
 

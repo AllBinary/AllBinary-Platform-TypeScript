@@ -98,7 +98,7 @@ var key = key
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
-buffers.add(cacheableInterface);
+this.buffers.add(cacheableInterface);
     
 }
 

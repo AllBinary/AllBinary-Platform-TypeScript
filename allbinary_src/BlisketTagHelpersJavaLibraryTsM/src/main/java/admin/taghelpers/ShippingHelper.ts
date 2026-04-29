@@ -78,26 +78,24 @@ export class ShippingHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
 
     private request: HttpServletRequest
 
     private shippingType: string
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.propertiesHashMap= propertiesHashMap;
-    
 this.pageContext= pageContext;
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 

@@ -68,7 +68,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            this.midletActivity!.onSetProgress(Math.roundthis.progressCanvas!.getValue(), this.progressCanvas!.getText());
+            this.midletActivity!.onSetProgress(Math.round(this.progressCanvas!.getValue()), this.progressCanvas!.getText());
     
 
                 //: 

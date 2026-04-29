@@ -95,12 +95,12 @@ export class OrderHistoryRequestHelper extends TagHelper {
     private groupId: string
 
     private status: string
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     

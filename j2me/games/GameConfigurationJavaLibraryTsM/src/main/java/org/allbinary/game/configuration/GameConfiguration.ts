@@ -70,9 +70,9 @@ export class GameConfiguration
 
     private value: number
 
-    private minValue: number = defaultValue;
+    private minValue: number = this.defaultValue;
 
-    private maxValue: number = defaultValue;
+    private maxValue: number = this.defaultValue;
 
     private modifiable: Boolean = BooleanFactory.getInstance()!.TRUE;
 public constructor (name: string, defaultValue: number, minValue: number, maxValue: number){
@@ -125,7 +125,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return value;
+                        return this.value;
     
 }
 
@@ -142,7 +142,7 @@ this.maxValue= maxValue;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxValue;
+                        return this.maxValue;
     
 }
 
@@ -159,7 +159,7 @@ this.minValue= minValue;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minValue;
+                        return this.minValue;
     
 }
 
@@ -176,7 +176,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -193,7 +193,7 @@ this.defaultValue= defaultValue;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultValue;
+                        return this.defaultValue;
     
 }
 
@@ -256,7 +256,7 @@ this.modifiable= modifiable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return modifiable;
+                        return this.modifiable;
     
 }
 

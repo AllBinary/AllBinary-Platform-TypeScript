@@ -184,9 +184,9 @@ export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseM
 
     private readonly touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
 
-    private readonly PRESSED: MotionGestureInput = touchMotionGestureFactory!.PRESSED;
+    private readonly PRESSED: MotionGestureInput = this.touchMotionGestureFactory!.PRESSED;
 
-    private readonly RELEASED: MotionGestureInput = touchMotionGestureFactory!.RELEASED;
+    private readonly RELEASED: MotionGestureInput = this.touchMotionGestureFactory!.RELEASED;
 
     private readonly touchButtonsBuilderFactory: TouchButtonsBuilderFactory
 
@@ -225,7 +225,7 @@ BasicMotionGesturesHandler.getInstance()!.addListener(this);
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -242,7 +242,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
     //var layerManager = layerManager
 
-    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1);;
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1); as MotionGestureEvent;
 ;
     
 
@@ -274,7 +274,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
                                     }
                                 
                              else 
-                        if(motionGestureInput == RELEASED)
+                        if(motionGestureInput == this.RELEASED)
                         
                                     {
                                     
@@ -430,7 +430,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD);
     var index: number = rtsLayerList!.size() -1;
 index >= 0; index--)
         {
-rtsLayer=  as RTSLayerrtsLayerList!.get(index);;
+rtsLayer= rtsLayerList!.get(index); as RTSLayer;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
@@ -475,7 +475,7 @@ this.getSelectedBuildingPlayerGameInput()!.addSelectedRTSLayer(rtsLayer);
                         
                                     {
                                     
-    var lastRTSLayer: RTSLayer =  as RTSLayergameLayer;
+    var lastRTSLayer: RTSLayer = gameLayer as RTSLayer;
 ;
     
 
@@ -510,7 +510,7 @@ this.updatePaintable();
 index >= 0; index--)
         {
 
-    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.getMotionGestureInputList()!.get(index);;
+    var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(index); as MotionGestureEvent;
 ;
     
 
@@ -665,7 +665,7 @@ this.setSelectedRtsFormInput(rtfFormInput);
                                     {
                                     this.getRtsPlayerLayerInterface()!.add(ErrorSound.getInstance());
     
-GameNotificationEventHandler.getInstance()!.fireEvent(notYoursGameNotificationEvent);
+GameNotificationEventHandler.getInstance()!.fireEvent(this.notYoursGameNotificationEvent);
     
 
 
@@ -687,7 +687,7 @@ GameNotificationEventHandler.getInstance()!.fireEvent(notYoursGameNotificationEv
                                     this.getRtsPlayerLayerInterface()!.add(SelectBuildingSound.getInstance());
     
 
-    var rtsLayer: RTSLayer =  as RTSLayerrtSLayer;
+    var rtsLayer: RTSLayer = rtSLayer as RTSLayer;
 ;
     
 rtsLayer!.select();
@@ -803,18 +803,18 @@ this.updatePaintable();
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.getGameCanvas();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.getGameCanvas(); as GeographicMapCompositeInterface;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
 ;
     
-multiSelectPaintable!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
+this.multiSelectPaintable!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
     
 this.multiSelectPaintable!.update(list);
     
-this.getRTSLayerInfoPaintable()!.updateRTSLayerInfoSelection(multiSelectPaintable);
+this.getRTSLayerInfoPaintable()!.updateRTSLayerInfoSelection(this.multiSelectPaintable);
     
 
                                     }
@@ -824,7 +824,7 @@ this.getRTSLayerInfoPaintable()!.updateRTSLayerInfoSelection(multiSelectPaintabl
                         
                                     {
                                     
-    var rtsLayer: RTSLayer =  as RTSLayerlist.get(0);;
+    var rtsLayer: RTSLayer = list.get(0); as RTSLayer;
 ;
     
 this.getRTSLayerInfoPaintable()!.updateRTSLayerInfoSelection(rtsLayer!.createHudPaintable());
@@ -909,7 +909,7 @@ getMotionGestureInputList()!.add(motionGestureEvent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return selectedRtsLayer;
+                        return this.selectedRtsLayer;
     
 }
 

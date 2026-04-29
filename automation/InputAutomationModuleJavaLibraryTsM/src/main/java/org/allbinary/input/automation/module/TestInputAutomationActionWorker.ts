@@ -99,7 +99,7 @@ Thread.sleep(2000);
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
     
 
-    var hashtable: Hashtable = InputRobotFactory.getInstance()!.get()!;
+    var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
 ;
     
 
@@ -124,11 +124,11 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
 index < size; index++)
         {
 
-    var inputTypeNameString: string =  as StringinputTypeNameArray[index]!;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as String;
 ;
     
 
-    var robot: InputRobotInterface =  as InputRobotInterfacehashtable.get(inputTypeNameString as Object);;
+    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object); as InputRobotInterface;
 ;
     
 

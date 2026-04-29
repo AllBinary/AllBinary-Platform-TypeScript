@@ -113,7 +113,7 @@ var xBorder = xBorder
 var yBorder = yBorder
 this.touchButtonInput= touchButtonInput;
     
-this.animationInterface=  as AnimationanimationInterface;
+this.animationInterface= animationInterface as Animation;
     
 this.rawRectangle= rawRectangle;
     
@@ -179,7 +179,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellPosition;
+                        return this.cellPosition;
     
 }
 
@@ -189,7 +189,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangle;
+                        return this.rectangle;
     
 }
 
@@ -199,7 +199,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return touchButtonInput;
+                        return this.touchButtonInput;
     
 }
 

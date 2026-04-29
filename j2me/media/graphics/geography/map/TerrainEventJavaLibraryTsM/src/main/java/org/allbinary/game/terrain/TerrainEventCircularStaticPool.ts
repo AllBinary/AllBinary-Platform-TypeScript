@@ -56,7 +56,7 @@ export class TerrainEventCircularStaticPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TerrainEventCircularStaticPool.instance;
     
 }
 
@@ -75,7 +75,7 @@ this.EVENT_POOL.init(new TerrainEventFactory());
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent =  as TerrainEventthis.EVENT_POOL.getNextInstance();;
+    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance(); as TerrainEvent;
 ;
     
 trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);

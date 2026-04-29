@@ -100,7 +100,7 @@ this.body= new GenericBodyValidation();
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.body);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.body as DomNodeInterface);
     
 
                             }

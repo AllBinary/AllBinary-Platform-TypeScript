@@ -127,7 +127,7 @@ var value = value
     public get(storeName: string): Vector{
 var storeName = storeName
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -153,7 +153,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMaphashMapVector!.get(index as Object);;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 }
@@ -162,7 +162,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Vectorvector;
+                        return vector as Vector;
     
 }
 
@@ -171,7 +171,7 @@ index < size; index++)
 var storeName = storeName
 var advertismentName = advertismentName
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -179,7 +179,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 keysAndValues!.put(AdvertisementData.getInstance()!.NAME, advertismentName);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -229,9 +229,9 @@ stringBuffer!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CH
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.ID,  as StringupdatedValues!.get(EntryData.getInstance()!.ID), updatedValues);
+super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.ID) as String, updatedValues);
     
 }
 

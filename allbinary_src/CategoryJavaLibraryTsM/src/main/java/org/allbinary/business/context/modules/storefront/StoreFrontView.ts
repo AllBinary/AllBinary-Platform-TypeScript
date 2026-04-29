@@ -100,7 +100,7 @@ this.storeFrontInterface= storeFrontInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.storeFrontInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;
 ;
     
 

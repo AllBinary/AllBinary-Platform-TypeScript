@@ -91,14 +91,14 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 }
 
 
-    private static readonly SINGLETON: NullGameCanvas = createNull()!;
+    private static readonly SINGLETON: NullGameCanvas = NullGameCanvas.createNull()!;
 
     public static getInstance(): NullGameCanvas{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return NullGameCanvas.SINGLETON;
     
 }
 
@@ -165,7 +165,7 @@ this.running= running;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -228,7 +228,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TYPE;
+                        return NullGameCanvas.TYPE;
     
 }
 

@@ -144,7 +144,7 @@ this.saveHighScore();
 
     public update(name: string){
     //var name = name
-HighScoreNamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, gameInfo, name);
+HighScoreNamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, this.gameInfo, name);
     
 this.highScore!.setName(name);
     

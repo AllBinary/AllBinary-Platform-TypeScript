@@ -72,7 +72,7 @@ var paintableForm = paintableForm
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new PreGameLockablePaintable( as ScrollCurrentSelectionFormpaintableForm, this.lockedIndex);
+                        return new PreGameLockablePaintable(paintableForm as ScrollCurrentSelectionForm, this.lockedIndex);
     
 }
 

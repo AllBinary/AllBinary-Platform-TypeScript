@@ -58,6 +58,8 @@ import { BasicEventHandler } from "../../../../../../../org/allbinary/logic/util
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeographicMapCellPositionEventListenerInterface } from "./GeographicMapCellPositionEventListenerInterface.js";
+
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         
 
@@ -126,10 +128,10 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer =  as MiniMapLayerthis.list.get(index);;
+    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
 ;
     
-miniMapLayer!.onGeographicMapCellPositionEvent( as GeographicMapCellPositionEventeventObject);
+miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
 
                 //: 
@@ -166,10 +168,10 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer =  as MiniMapLayerthis.list.get(index);;
+    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
 ;
     
-miniMapLayer!.onRemoveGeographicMapCellPositionEvent( as GeographicMapCellPositionEventeventObject);
+miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
 
                 //: 
@@ -203,11 +205,11 @@ index < size; index++)
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacelist.get(index);;
+            eventListenerInterface= list.get(index); as EventListenerInterface;
     
-geographicMapCellPositionEventListenerInterface= ( as GeographicMapCellPositionEventListenerInterfaceeventListenerInterface);
+geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
     
-geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositionEvent( as GeographicMapCellPositionEventeventObject);
+geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
 
                 //: 
@@ -228,10 +230,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = ( as GeographicMapCellPositionEventListenerInterfaceeventListenerInterface);
+    var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
 ;
     
-geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent( as GeographicMapCellPositionEventeventObject);
+geographicMapCellPositionEventListenerInterface!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
     
 }
 

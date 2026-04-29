@@ -41,7 +41,7 @@ export class MultiPlayerGameFeatureFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MultiPlayerGameFeatureFactory.instance;
     
 }
 
@@ -58,7 +58,7 @@ private constructor (){
 ;
     
 
-    var canvas: Canvas =  as CanvasanyType;
+    var canvas: Canvas = anyType as Canvas;
 ;
     
 canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);

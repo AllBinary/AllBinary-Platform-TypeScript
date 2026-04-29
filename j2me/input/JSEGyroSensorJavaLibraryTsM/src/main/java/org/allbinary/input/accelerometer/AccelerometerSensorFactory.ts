@@ -92,7 +92,7 @@ export class AccelerometerSensorFactory
                         if(features.isFeature(sensorFeatureFactory!.NO_ORIENTATION))
                         
                                     {
-                                    allBinaryAccelerometerSensor= new NoAccelerometerSensor();
+                                    AccelerometerSensorFactory.allBinaryAccelerometerSensor= new NoAccelerometerSensor();
     
 
                                     }
@@ -114,7 +114,7 @@ export class AccelerometerSensorFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return allBinaryAccelerometerSensor;
+                        return AccelerometerSensorFactory.allBinaryAccelerometerSensor;
     
 }
 

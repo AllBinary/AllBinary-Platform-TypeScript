@@ -58,7 +58,7 @@ export class WaypointEventHandlerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventHandlerArray[Math.roundgroupInterface!.getGroupId();]!;
+                        return WaypointEventHandlerFactory.eventHandlerArray[Math.round(groupInterface!.getGroupId();)]!;
     
 }
 
@@ -69,10 +69,10 @@ export class WaypointEventHandlerFactory
 
 
                         for (
-    var index: number = eventHandlerArray!.length -1;
+    var index: number = WaypointEventHandlerFactory.eventHandlerArray!.length -1;
 index >= 0; index--)
         {
-eventHandlerArray[index]!.removeAllListeners();
+WaypointEventHandlerFactory.eventHandlerArray[index]!.removeAllListeners();
     
 }
 

@@ -73,7 +73,7 @@ var storeName = storeName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as DomNodeInterfacenew StoreFrontView(storeFronts!.getStoreFrontInterface(storeName));
+                        return new StoreFrontView(storeFronts!.getStoreFrontInterface(storeName)) as DomNodeInterface;
     
 
                 //: 

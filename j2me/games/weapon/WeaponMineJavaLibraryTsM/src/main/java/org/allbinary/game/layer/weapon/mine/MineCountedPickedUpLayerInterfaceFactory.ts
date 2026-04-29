@@ -94,7 +94,7 @@ pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFac
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pickedUpLayerInterfaceFactoryInterface;
+                        return MineCountedPickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface;
     
 }
 
@@ -125,24 +125,24 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getNextInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
     //var x = x
     //var y = y
     //var z = z
 
-    var sourceLayerInterface: AllBinaryLayer =  as AllBinaryLayerhashtable.get( as Objectthis.smallIntegerSingletonFactory!.getAt(0));;
+    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0) as Object); as AllBinaryLayer;
 ;
     
 
-    var angle: number =  as Integerhashtable.get( as Objectthis.smallIntegerSingletonFactory!.getAt(1));;
+    var angle: number = hashtable.get(this.smallIntegerSingletonFactory!.getAt(1) as Object); as Integer;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, Math.roundangle.toInt(), 0, weaponProperties,  as ScoreableInterfacesourceLayerInterface);;
+                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, Math.round(angle.toInt()), 0, this.weaponProperties, sourceLayerInterface as ScoreableInterface);;
     
 }
 

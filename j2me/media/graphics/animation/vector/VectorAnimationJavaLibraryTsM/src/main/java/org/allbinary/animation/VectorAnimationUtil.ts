@@ -55,7 +55,7 @@ export class VectorAnimationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return VectorAnimationUtil.instance;
     
 }
 
@@ -92,7 +92,7 @@ private constructor (){
     var index: number = 0;
 index < size; index++)
         {
-nextBasicArrayList=  as BasicArrayListvector.objectArray[index]!;
+nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
 framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
@@ -147,7 +147,7 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
     var index: number = 0;
 index < size; index++)
         {
-nextBasicArrayList=  as BasicArrayListvector.objectArray[index]!;
+nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
 framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
@@ -197,7 +197,7 @@ var list = list
 index < size; index++)
         {
 
-    var nextPoint: GPoint =  as GPointlist.objectArray[index]!;
+    var nextPoint: GPoint = list.objectArray[index]! as GPoint;
 ;
     
 points[index]![0]= nextPoint!.getX();

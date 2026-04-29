@@ -78,7 +78,7 @@ export class NewWorkFlowFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return NewWorkFlowFactory.instance;
     
 }
 
@@ -92,14 +92,14 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap, pageContext: PageContext): WorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
     //var pageContext = pageContext
 
         try {
             
-    var className: string =  as StringhashMap!.get(DynamicObjectData.NAME);;
+    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
 ;
     
 
@@ -114,9 +114,9 @@ classes[0]= hashMap!constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
-params[0]=  as ObjecthashMap;
+params[0]= hashMap as Object;
     
-params[1]=  as ObjectpageContext;
+params[1]= pageContext as Object;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
@@ -126,7 +126,7 @@ params[1]=  as ObjectpageContext;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
+                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
 
                 //: 
@@ -205,7 +205,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
+                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
     
 
                                     }

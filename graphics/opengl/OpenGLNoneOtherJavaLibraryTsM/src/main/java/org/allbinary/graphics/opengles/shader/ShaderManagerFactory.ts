@@ -51,7 +51,7 @@ export class ShaderManagerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ShaderManagerFactory.instance;
     
 }
 

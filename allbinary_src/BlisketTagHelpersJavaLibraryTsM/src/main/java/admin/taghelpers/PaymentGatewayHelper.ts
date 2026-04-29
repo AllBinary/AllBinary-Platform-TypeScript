@@ -85,7 +85,7 @@ export class PaymentGatewayHelper extends BasicTable {
     private readonly httpServletRequest: HttpServletRequest
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -94,7 +94,7 @@ var pageContext = pageContext
         try {
             this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.httpServletRequest=  as HttpServletRequestpageContext!.getRequest();;
+this.httpServletRequest= pageContext!.getRequest(); as HttpServletRequest;
     
 this.portion= new Portion(hashMap);
     

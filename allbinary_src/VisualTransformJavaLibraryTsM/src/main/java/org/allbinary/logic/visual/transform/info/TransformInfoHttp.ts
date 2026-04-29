@@ -91,7 +91,7 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly abContext: AbContext
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext, crud: boolean){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean){
             super();
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -115,7 +115,7 @@ this.override(propertiesHashMap);
     
 }
 
-public constructor (request: HttpServletRequest, propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
                     var request = request
 var propertiesHashMap = propertiesHashMap
@@ -135,14 +135,14 @@ this.abContext= new AbContext(propertiesHashMap, pageContext);
 
                                     }
                                 
-this.set(new RequestParams( as HttpServletRequestrequest).
+this.set(new RequestParams(request as HttpServletRequest).
                             toHashMap());
     
 this.override(propertiesHashMap);
     
 }
 
-public constructor (databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
                     var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
@@ -166,7 +166,7 @@ this.set(databaseHashMap);
     
 }
 
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -203,7 +203,7 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
 
                 //@Throws(Error::class)
             
-    set(hashMap: HashMap){
+    set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
@@ -218,20 +218,20 @@ var hashMap = hashMap
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;
     
-this.setName( as StringhashMap!.get(transformInfoData!.NAME));
+this.setName(hashMap!.get(transformInfoData!.NAME) as String);
     
-this.setStoreName( as StringhashMap!.get(StoreFrontData.getInstance()!.NAME));
+this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
     
-this.setObjectFile( as StringhashMap!.get(transformInfoData!.OBJECTFILENAME));
+this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String);
     
-this.setObject( as StringhashMap!.get(transformInfoData!.OBJECT));
+this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String);
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
     
 
-    var objectConfigString: string =  as StringhashMap!.get(transformInfoData!.OBJECTCONFIG);;
+    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG); as String;
 ;
     
 
@@ -251,21 +251,21 @@ this.setObject( as StringhashMap!.get(transformInfoData!.OBJECT));
                         }
                             
 
-                        if(!stringValidationUtil!.isEmpty( as StringhashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME));)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);)
                         
                                     {
-                                    this.setObjectConfigFile( as StringhashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME));
+                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);
     
 
                                     }
                                 
-this.setTemplateFile( as StringhashMap!.get(transformInfoData!.TEMPLATEFILENAME));
+this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String);
     
-this.setTemplate( as StringhashMap!.get(transformInfoData!.TEMPLATE));
+this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String);
     
-this.setDataFile( as StringhashMap!.get(transformInfoData!.DATAFILENAME));
+this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String);
     
-this.setData( as StringhashMap!.get(transformInfoData!.DATA));
+this.setData(hashMap!.get(transformInfoData!.DATA) as String);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))
@@ -299,7 +299,7 @@ this.setData( as StringhashMap!.get(transformInfoData!.DATA));
 }
 
 
-    public getPropertiesHashMap(): HashMap{
+    public getPropertiesHashMap(): HashMap<any, any>{
 
 
 

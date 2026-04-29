@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";

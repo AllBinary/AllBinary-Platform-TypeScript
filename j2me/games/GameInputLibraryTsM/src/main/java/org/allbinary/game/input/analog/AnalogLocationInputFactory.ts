@@ -43,7 +43,7 @@ export class AnalogLocationInputFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AnalogLocationInputFactory.instance;
     
 }
 
@@ -65,7 +65,7 @@ var playerInputId = playerInputId
                         if(playerInputId < this.list.size())
                         
                                     {
-                                    analogLocationInput=  as AnalogLocationInputthis.list.get(playerInputId);;
+                                    analogLocationInput= this.list.get(playerInputId); as AnalogLocationInput;
     
 
                                     }
@@ -90,7 +90,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AnalogLocationInputthis.list.get(playerInputId);;
+                        return this.list.get(playerInputId); as AnalogLocationInput;
     
 }
 
@@ -100,7 +100,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

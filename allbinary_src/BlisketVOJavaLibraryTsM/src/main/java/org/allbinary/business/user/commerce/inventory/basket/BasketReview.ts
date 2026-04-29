@@ -96,7 +96,7 @@ this.items.add(item);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return items;
+                        return this.items;
     
 }
 
@@ -121,7 +121,7 @@ var id = id
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 
@@ -159,7 +159,7 @@ var num = num
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 
@@ -199,7 +199,7 @@ index < size; index++)
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 weightFloat += new number(item.getWeight()).
@@ -250,7 +250,7 @@ weightFloat += new number(item.getWeight()).
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 idSet!.add(item.getId());
@@ -261,7 +261,7 @@ idSet!.add(item.getId());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as SetidSet;
+                        return idSet as Set;
     
 }
 
@@ -286,7 +286,7 @@ var id = id
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 
@@ -339,7 +339,7 @@ var document = document
 index < size; index++)
         {
 
-    var item: Item =  as ItemitemArray[index]!;
+    var item: Item = itemArray[index]! as Item;
 ;
     
 node.appendChild(new ItemView(item, new Vector()).

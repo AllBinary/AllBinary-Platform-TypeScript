@@ -50,7 +50,7 @@ export interface TransformInfoFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface
+    getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 
 }
                 

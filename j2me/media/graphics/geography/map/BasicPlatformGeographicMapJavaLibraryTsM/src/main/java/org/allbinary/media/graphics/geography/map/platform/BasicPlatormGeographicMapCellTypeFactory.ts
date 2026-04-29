@@ -70,7 +70,7 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
     public readonly LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType
 
     private readonly maxTileId: number
-public constructor (tileTypeToTileIdsMap: Hashtable, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
             //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
@@ -128,11 +128,11 @@ new GeographicMapCellType(0, 0);
 
         while(enumeration.hasMoreElements())
         {
-key=  as Stringenumeration.nextElement()!;;
+key= enumeration.nextElement()!; as String;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     
-idsWithTypeList=  as BasicArrayListtileTypeToTileIdsMap!.get(key);;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
     
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     

@@ -204,10 +204,10 @@ break;
 }
 
 
-    public getTokens(stringVector: BasicArrayList): Hashtable{
+    public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
 var stringVector = stringVector
 
-    var tokenHashtable: Hashtable = new Hashtable();
+    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 
@@ -230,7 +230,7 @@ var stringVector = stringVector
     var index: number = 0;
 index < size; index++)
         {
-string=  as StringstringVector!.objectArray[index]!;
+string= stringVector!.objectArray[index]! as String;
     
 end= string.indexOf(this.sep);
     

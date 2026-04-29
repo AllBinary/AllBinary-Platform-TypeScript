@@ -104,8 +104,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.getHelper(), 
-                            null);;
+    var result: string = method.invoke(this.getHelper(), 
+                            null); as String;
 ;
     
 
@@ -157,8 +157,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.getHelper(), 
-                            null);;
+    var result: string = method.invoke(this.getHelper(), 
+                            null); as String;
 ;
     
 
@@ -210,8 +210,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.getHelper(), 
-                            null);;
+    var result: string = method.invoke(this.getHelper(), 
+                            null); as String;
 ;
     
 
@@ -258,7 +258,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         
                                     {
                                     
-    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 

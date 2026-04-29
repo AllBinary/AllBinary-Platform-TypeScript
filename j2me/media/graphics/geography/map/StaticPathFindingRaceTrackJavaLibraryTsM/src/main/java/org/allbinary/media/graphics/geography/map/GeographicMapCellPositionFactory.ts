@@ -61,14 +61,14 @@ import { BasicGeographicMap } from "./BasicGeographicMap.js";
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: Hashtable = new Hashtable();
+    private static readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    public static getHashtable(): Hashtable{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return GeographicMapCellPositionFactory.hashtable;
     
 }
 
@@ -102,13 +102,13 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
     
 geographicMapCellPositionFactoryCanBeNull= new BasicGeographicMapCellPositionFactory(geographicMapInterface);
     
-hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull);
+GeographicMapCellPositionFactory.hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactoryCanBeNull);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicGeographicMapCellPositionFactorygeographicMapCellPositionFactoryCanBeNull;
+                        return geographicMapCellPositionFactoryCanBeNull as BasicGeographicMapCellPositionFactory;
     
 
                                     }
@@ -121,7 +121,7 @@ hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicGeographicMapCellPositionFactorygeographicMapCellPositionFactoryCanBeNull;
+                        return geographicMapCellPositionFactoryCanBeNull as BasicGeographicMapCellPositionFactory;
     
 
                         }

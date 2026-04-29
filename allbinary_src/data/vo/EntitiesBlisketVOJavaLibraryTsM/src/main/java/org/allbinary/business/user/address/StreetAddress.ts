@@ -75,6 +75,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { StreetAddressData } from "./StreetAddressData.js";
 
+import { StringBuilder } from "./StringBuilder.js";
+
 export class StreetAddress
             extends Object
          {
@@ -217,26 +219,26 @@ this.log();
     
 }
 
-public constructor (address: HashMap){
+public constructor (address: HashMap<any, any>){
 
             super();
         var address = address
-this.id=  as Stringaddress.get(StreetAddressData.ID);;
+this.id= address.get(StreetAddressData.ID); as String;
     
-this.name=  as Stringaddress.get(StreetAddressData.NAME);;
+this.name= address.get(StreetAddressData.NAME); as String;
     
-this.street=  as Stringaddress.get(StreetAddressData.STREET);;
+this.street= address.get(StreetAddressData.STREET); as String;
     
-this.city=  as Stringaddress.get(StreetAddressData.CITY);;
+this.city= address.get(StreetAddressData.CITY); as String;
     
-this.state=  as Stringaddress.get(StreetAddressData.STATE);;
+this.state= address.get(StreetAddressData.STATE); as String;
     
-this.code=  as Stringaddress.get(StreetAddressData.CODE);;
+this.code= address.get(StreetAddressData.CODE); as String;
     
-this.country=  as Stringaddress.get(StreetAddressData.COUNTRY);;
+this.country= address.get(StreetAddressData.COUNTRY); as String;
     
 
-    var def: string =  as Stringaddress.get(StreetAddressData.DEFAULT);;
+    var def: string = address.get(StreetAddressData.DEFAULT); as String;
 ;
     
 
@@ -398,7 +400,7 @@ this.country= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isDefault;
+                        return this.isDefault;
     
 }
 
@@ -621,9 +623,9 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(StreetAddressData.ID, this.id);
@@ -658,7 +660,7 @@ var document = document
 ;
     
 
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 
@@ -687,11 +689,11 @@ var document = document
 i < size; i++)
         {
 
-    var name: string =  as StringkeyArray[i]!;
+    var name: string = keyArray[i]! as String;
 ;
     
 
-    var value: string = stringUtil!.getNonNull( as StringhashMap!.get(name as Object))!;
+    var value: string = stringUtil!.getNonNull(hashMap!.get(name as Object) as String)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

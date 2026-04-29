@@ -175,7 +175,7 @@ this.alwaysActionScriptConditionJPanel= new AlwaysActionScriptConditionJPanel(th
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isOn;
+                        return this.isOn;
     
 }
 
@@ -193,9 +193,9 @@ this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(tru
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()));

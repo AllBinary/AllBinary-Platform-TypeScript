@@ -90,7 +90,7 @@
 
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>
@@ -98,14 +98,14 @@
         Public microemu
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>
         Custom microemu
         <dependency>
             <groupId>org.microemu</groupId>
-            <artifactId>microemu-midpTs</artifactId>
+            <artifactId>microemu-midp-for-ts</artifactId>
             <version>2.0.4</version>
             <optional>true</optional>
         </dependency>

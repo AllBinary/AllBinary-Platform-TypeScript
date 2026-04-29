@@ -120,7 +120,7 @@ this.workFlowDoc!.appendChild(workFlowNode);
     
 }
 
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -132,25 +132,25 @@ var pageContext = pageContext
 this.storeName= weblisketSession!.getStoreName();
     
 
-    var requestHashMap: HashMap = new RequestParams(pageContext).
+    var requestHashMap: HashMap<any, any> = new RequestParams(pageContext).
                             toHashMap()!;
 ;
     
-this.workFlowName=  as StringrequestHashMap!.get(WorkFlowData.getInstance()!.NAME);;
+this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
     
-this.workFlowDoc= DomDocumentHelper.create( as StringrequestHashMap!.get(WorkFlowData.getInstance()!.DATA));
+this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.workFlowName=  as StringhashMap!.get(WorkFlowData.getInstance()!.NAME);;
+this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
     
-this.storeName=  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
     
-this.workFlowDoc= DomDocumentHelper.create( as StringhashMap!.get(WorkFlowData.getInstance()!.DATA));
+this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
     
 }
 
@@ -180,7 +180,7 @@ this.workFlowDoc= DomDocumentHelper.create( as StringhashMap!.get(WorkFlowData.g
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getName();;
+                        return this.getName(); as Object;
     
 }
 
@@ -222,9 +222,9 @@ values.add(time);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(WorkFlowData.getInstance()!.NAME, this.workFlowName);
@@ -258,7 +258,7 @@ var document = document
 
         try {
             
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 
@@ -287,11 +287,11 @@ var document = document
 index < size; index++)
         {
 
-    var name: string =  as StringnameArray[index]!;
+    var name: string = nameArray[index]! as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(name as Object);;
+    var value: string = hashMap!.get(name as Object); as String;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

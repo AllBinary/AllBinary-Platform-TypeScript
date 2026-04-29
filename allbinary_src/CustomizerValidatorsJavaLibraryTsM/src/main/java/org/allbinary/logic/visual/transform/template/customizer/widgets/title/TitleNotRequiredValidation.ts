@@ -83,7 +83,7 @@ public constructor (node: Node){
                     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
                     var hashMap = hashMap
 

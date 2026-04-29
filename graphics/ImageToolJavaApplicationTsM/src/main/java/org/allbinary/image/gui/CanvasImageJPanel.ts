@@ -92,6 +92,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -202,7 +204,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     initComponents(){
 this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel1= new javax.swing.JPanel()
+this.jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -252,7 +254,7 @@ this.writeOverOriginalJCheckBox!.setSelected(true);
     
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -276,7 +278,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -294,7 +296,7 @@ this.jLabel5!.setText("Right:");
     
 this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -312,7 +314,7 @@ this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 this.widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField1!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -406,7 +408,7 @@ var evt = evt
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 
@@ -455,7 +457,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write( as RenderedImagethis@CanvasImageJPanel.result, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(this@CanvasImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

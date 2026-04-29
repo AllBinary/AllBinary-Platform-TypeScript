@@ -68,7 +68,7 @@ export class HtmlForm
 
     private readonly METHODS: string[] = 
                                                         [
-                                                            GET,POST
+                                                            this.GET,this.POST
                                                         ];
 
     private readonly METHOD: string = "METHOD=\"";

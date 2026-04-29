@@ -65,7 +65,7 @@ var searchRequest = searchRequest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ProductListingInterfacenew views.admin.inventory.listings.ProductListing(searchRequest);
+                        return new views.admin.inventory.listings.ProductListing(searchRequest) as ProductListingInterface;
     
 
                 //: 

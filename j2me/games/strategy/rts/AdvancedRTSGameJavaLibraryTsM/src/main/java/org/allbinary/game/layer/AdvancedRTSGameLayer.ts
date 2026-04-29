@@ -177,6 +177,8 @@ import { AdvancedRTSProperties } from "./AdvancedRTSProperties.js";
 
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
+import { AdvancedRTSPlayerLayerInterface } from "./AdvancedRTSPlayerLayerInterface.js";
+
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
@@ -268,7 +270,7 @@ this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.all
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
     
 
@@ -331,7 +333,7 @@ RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwned
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return parentLayer;
+                        return this.parentLayer;
     
 }
 
@@ -348,7 +350,7 @@ this.parentLayer= parentLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as WaypointBehaviorBasethis.waypointBehaviorBase;
+                        return this.waypointBehaviorBase as WaypointBehaviorBase;
     
 }
 
@@ -396,7 +398,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
                         
                                     {
                                     
-    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerthis.parentLayer;
+    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;
 ;
     
 
@@ -711,7 +713,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -781,7 +783,7 @@ var destroyedEvent = destroyedEvent
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase =  as WaypointBasethis.getWaypointBehavior()!.getWaypoint();;
+    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint(); as WaypointBase;
 ;
     
 waypoint.reset();

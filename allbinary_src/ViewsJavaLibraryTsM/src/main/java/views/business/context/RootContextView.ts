@@ -179,7 +179,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo =  as TransformInfocomponentsVector!.get(0);;
+    var transformInfoInterface: TransformInfo = componentsVector!.get(0); as TransformInfo;
 ;
     
 

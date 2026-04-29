@@ -49,7 +49,7 @@ export class ByteUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ByteUtil.instance;
     
 }
 
@@ -84,7 +84,7 @@ private constructor (){
         {
 currentByte= array[index]!;
     
-bytes[index]= .toByte()(currentByte xor mask);
+bytes[index]= (currentByte xor mask).toByte();
     
 index++;
     
@@ -117,7 +117,7 @@ index++;
 
         while(index < size)
         {
-bytes[index]= .toByte()array[index].inv();
+bytes[index]= array[index].inv().toByte();
     
 index++;
     

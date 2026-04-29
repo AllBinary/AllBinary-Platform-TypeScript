@@ -87,7 +87,7 @@ export class BasketRequestHelper extends TagHelper {
 
     private readonly storeFrontInterface: StoreFrontInterface
 
-    private readonly propertiesHashMap: HashMap
+    private readonly propertiesHashMap: HashMap<any, any>
 
     private readonly pageContext: PageContext
 
@@ -98,7 +98,7 @@ export class BasketRequestHelper extends TagHelper {
     private num: string
 
     private readonly MAX: number = 200;
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -107,10 +107,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
@@ -286,10 +286,10 @@ basket.removeItem(this.id);
 
                         if(this.id != 
                                     null
-                                 && num != 
+                                 && this.num != 
                                     null
                                 )
-                        basket.adjustItem(this.id, num);
+                        basket.adjustItem(this.id, this.num);
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         

@@ -72,12 +72,12 @@ export class BasketHelper extends TagHelper {
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
 
     private readonly MAX: number = 200;
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -87,7 +87,7 @@ this.propertiesHashMap= hashMap;
 this.pageContext= pageContext;
     
 
-    var storeName: string =  as Stringthis.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 

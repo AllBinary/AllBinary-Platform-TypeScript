@@ -111,7 +111,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pathFindingNodeCostInfoP;
+                        return this.pathFindingNodeCostInfoP;
     
 }
 
@@ -150,7 +150,7 @@ stringBuffer!.append(" Path: ");
 stringBuffer!.append(this.geographicMapCellPosition!.toString());
     
 
-    var pathFindingNode: PathFindingNode =  as PathFindingNodethis.parent;
+    var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;
 ;
     
 
@@ -162,7 +162,7 @@ stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString());
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
-pathFindingNode=  as PathFindingNodepathFindingNode!.parent;
+pathFindingNode= pathFindingNode!.parent as PathFindingNode;
     
 }
 

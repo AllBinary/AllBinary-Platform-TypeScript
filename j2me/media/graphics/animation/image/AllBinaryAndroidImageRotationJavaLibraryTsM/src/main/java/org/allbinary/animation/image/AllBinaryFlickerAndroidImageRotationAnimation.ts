@@ -194,7 +194,7 @@ this.updateImage();
 
 
     updateImage(){
-androidImageUtil!.rotate(this.getImage(), originalImage, matrix, imageModifierUtil!.paint);
+this.androidImageUtil!.rotate(this.getImage(), originalImage, matrix, imageModifierUtil!.paint);
     
 }
 

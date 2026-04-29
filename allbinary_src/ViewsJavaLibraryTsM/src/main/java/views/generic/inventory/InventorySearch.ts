@@ -131,13 +131,13 @@ this.searchRequest= searchRequest;
 ;
     
 
-    var columnValueHashMap: HashMap = searchParams!.get()!;
+    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
 ;
     
 
     var file: string = new StaticPagesEntity().
                             getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all( as StringcolumnValueHashMap!.get(BasicItemData.KEYWORDS)))!;
+                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String))!;
 ;
     
 
@@ -215,7 +215,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
         try {
             
-    var str: string[] = search()!;
+    var str: string[] = this.search()!;
 ;
     
 
@@ -283,7 +283,7 @@ var product = product
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return InventorySearchProductUtil.getInstance()!.getProduct(abeClientInformation, searchRequest, product);;
+                        return InventorySearchProductUtil.getInstance()!.getProduct(abeClientInformation, this.searchRequest, product);;
     
 }
 

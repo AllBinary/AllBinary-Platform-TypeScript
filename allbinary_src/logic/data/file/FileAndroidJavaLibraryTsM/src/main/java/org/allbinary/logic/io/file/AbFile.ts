@@ -130,7 +130,7 @@ this.file= new File(abPath!.toFileSystemString());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return file;
+                        return this.file;
     
 }
 
@@ -375,7 +375,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Array<any?>this.file.listFiles();;
+                        return this.file.listFiles(); as Array<any?>;
     
 }
 
@@ -386,7 +386,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Array<any?>this.file.listFiles(filter);;
+                        return this.file.listFiles(filter); as Array<any?>;
     
 }
 
@@ -397,7 +397,7 @@ var filter = filter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Array<any?>this.file.listFiles(filter);;
+                        return this.file.listFiles(filter); as Array<any?>;
     
 }
 

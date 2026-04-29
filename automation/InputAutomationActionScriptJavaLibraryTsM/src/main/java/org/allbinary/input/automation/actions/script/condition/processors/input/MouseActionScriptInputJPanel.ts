@@ -73,7 +73,13 @@ import { JPanel } from "./JPanel.js";
 
 import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
 
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+
+import { ComboBoxModel } from "./ComboBoxModel.js";
+
 import { JDialog } from "./JDialog.js";
+
+import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
@@ -103,7 +109,7 @@ public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInter
             //var mouseActionScriptInputInterface = mouseActionScriptInputInterface
 this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.mouseActionScriptInputInterface= mouseActionScriptInputInterface;
     
@@ -180,7 +186,7 @@ this.mouseActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
+    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
 ;
     
 
@@ -306,7 +312,7 @@ this.mouseActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mouseActionJDialog;
+                        return this.mouseActionJDialog;
     
 }
 
@@ -359,7 +365,7 @@ this.titleJLabel!.setText("Mouse Input Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -387,7 +393,7 @@ this.button2JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.button2JCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-button2JCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.button2JCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -427,7 +433,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.mouseActionJButton!.setText("Edit");
     
-mouseActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.mouseActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

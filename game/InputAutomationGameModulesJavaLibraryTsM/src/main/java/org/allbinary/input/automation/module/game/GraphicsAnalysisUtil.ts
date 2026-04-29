@@ -85,7 +85,7 @@ index > min_x.toInt(); )
 ;
     
 
-    var colorCacheable: ColorCacheable =  as ColorCacheableautomaticCacheInterface!.get(colorInteger);;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
 ;
     
 
@@ -93,7 +93,7 @@ index > min_x.toInt(); )
 ;
     
 
-                        if(color.getRed() < MAX && color.getGreen() < MAX && color.getBlue() < MAX)
+                        if(color.getRed() < GraphicsAnalysisUtil.MAX && color.getGreen() < GraphicsAnalysisUtil.MAX && color.getBlue() < GraphicsAnalysisUtil.MAX)
                         
                                     {
                                     

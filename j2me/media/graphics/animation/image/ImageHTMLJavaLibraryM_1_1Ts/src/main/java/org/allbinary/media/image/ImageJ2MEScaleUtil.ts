@@ -67,7 +67,7 @@ export class ImageJ2MEScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageJ2MEScaleUtil.instance;
     
 }
 
@@ -128,20 +128,20 @@ scaledImages[index]= this.scale(images[index]!, width, height);
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage =  as PlaynMutableImageimage;
+    var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;
 ;
     
-originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage =  as PlaynImmutableImageimage;
+    var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;
 ;
     
-originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }
@@ -151,11 +151,11 @@ originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
 ;
     
 
-    var htmlImage: PlaynMutableImage =  as PlaynMutableImagescaledImage;
+    var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;
 ;
     
 
-    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
 ;
     
 

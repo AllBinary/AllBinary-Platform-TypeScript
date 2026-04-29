@@ -55,7 +55,7 @@ export class ImageTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return ImageTypeUtil.SINGLETON;
     
 }
 
@@ -70,11 +70,11 @@ export class ImageTypeUtil
 private constructor (){
 
             super();
-        list.add(JPG);
+        this.list.add(JPG);
     
-list.add(GIF);
+this.list.add(GIF);
     
-list.add(PNG);
+this.list.add(PNG);
     
 }
 
@@ -92,7 +92,7 @@ mediaFileType= mediaFileType!.lowercase();
 index >= 0; index--)
         {
 
-    var name: string =  as Stringthis.list.get(index);;
+    var name: string = this.list.get(index); as String;
 ;
     
 

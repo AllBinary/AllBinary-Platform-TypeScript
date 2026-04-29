@@ -245,7 +245,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface =  as CustomItemInterfacethis.get(index);;
+    var nextItem: CustomItemInterface = this.get(index); as CustomItemInterface;
 ;
     
 
@@ -346,7 +346,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     var index: number = start;
 index < size; index++)
         {
-item=  as CustomItemInterfacethis.get(index);;
+item= this.get(index); as CustomItemInterface;
     
 width= item.getMinimumWidth();
     
@@ -815,7 +815,7 @@ this.buttonBasicColor= buttonBasicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return buttonBasicColor;
+                        return this.buttonBasicColor;
     
 }
 

@@ -57,7 +57,7 @@ export class BasicPaymentTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicPaymentTypeUtil.instance;
     
 }
 
@@ -93,7 +93,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentTypeVector!.get(i);;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
 ;
     
 
@@ -149,7 +149,7 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentTypeVector!.get(i);;
+    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
 ;
     
 

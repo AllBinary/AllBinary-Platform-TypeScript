@@ -120,7 +120,7 @@ public constructor (transformInfoInterface: Object){
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface =  as TransformInfoInterfacenew TransformInfoHttp( as TransformInfoHttpthis.getTransformInfoInterface());
+    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;
 ;
     
 
@@ -184,7 +184,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
 ;
     
 
-    var transformTemplateInterface: TransformTemplateInterface =  as TransformTemplateInterfacerootComponentInterface;
+    var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;
 ;
     
 

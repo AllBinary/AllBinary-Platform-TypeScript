@@ -117,7 +117,7 @@ public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, fore
     //var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
-this.label= NAME;
+this.label= BasicPopupMenuPaintable.NAME;
     
 this.rectangle= rectangle;
     
@@ -236,7 +236,7 @@ this.offset= (heightOffset>>1);
                                 
                         else {
                             
-    var rectangleFilledAnimation: RectangleFilledAnimation =  as RectangleFilledAnimationthis.animationInterface;
+    var rectangleFilledAnimation: RectangleFilledAnimation = this.animationInterface as RectangleFilledAnimation;
 ;
     
 rectangleFilledAnimation!.setWidth(width);

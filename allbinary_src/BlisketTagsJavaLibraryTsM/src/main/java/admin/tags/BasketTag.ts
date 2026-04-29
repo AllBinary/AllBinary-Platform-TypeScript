@@ -79,7 +79,7 @@ export class BasketTag extends CustomTagSupport {
 
     private storeName: string
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 public constructor (){
 
             super();
@@ -116,8 +116,8 @@ this.storeName= value;
 ;
     
 
-    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var emptyBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -176,8 +176,8 @@ this.storeName= value;
 ;
     
 
-    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var emptyBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -240,8 +240,8 @@ this.storeName= value;
 ;
     
 
-    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var emptyBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -304,8 +304,8 @@ this.storeName= value;
 ;
     
 
-    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
-                            null);;
+    var emptyBoolean: Boolean = method.invoke(anyType, 
+                            null); as Boolean;
 ;
     
 
@@ -363,7 +363,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap();
+                                    this.propertiesHashMap= new HashMap<any, any>();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

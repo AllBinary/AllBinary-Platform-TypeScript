@@ -67,7 +67,7 @@ export class InitInfo
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InitInfo.instance;
     
 }
 
@@ -170,15 +170,15 @@ this.hasRead= false;
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public set(hashMap: HashMap){
+    public set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
         try {
-            this.testing=  as StringhashMap!.get(this.TESTING);;
+            this.testing= hashMap!.get(this.TESTING); as String;
     
-this.mainPath= new AbPath( as StringhashMap!.get(this.MAINPATH));
+this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as String);
     
-this.testHtmlPath= new AbPath( as StringhashMap!.get(this.TESTHTMLPATH));
+this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as String);
     
 
                 //: 
@@ -333,7 +333,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return testing;
+                        return this.testing;
     
 }
 
@@ -351,7 +351,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return testHtmlPath!.toString();;
+                        return this.testHtmlPath!.toString();;
     
 
                                     }
@@ -382,7 +382,7 @@ this.updateIfNeeded();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mainPath!.toString();;
+                        return this.mainPath!.toString();;
     
 
                                     }
@@ -456,9 +456,9 @@ var testing = testing
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(this.TESTING, this.getTesting());

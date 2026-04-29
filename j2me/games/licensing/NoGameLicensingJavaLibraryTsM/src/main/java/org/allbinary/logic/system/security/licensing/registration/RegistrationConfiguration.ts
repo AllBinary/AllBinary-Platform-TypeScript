@@ -52,7 +52,7 @@ export class RegistrationConfiguration
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return RegistrationConfiguration.SINGLETON;
     
 }
 
@@ -101,7 +101,7 @@ this.registrationCode= registrationCode;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return registrationCode;
+                        return this.registrationCode;
     
 }
 

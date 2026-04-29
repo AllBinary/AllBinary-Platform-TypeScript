@@ -91,7 +91,7 @@ this.init();
             
     init(){
 
-    var adminConfigurationInterface: AdminConfigurationInterface =  as AdminConfigurationInterfacenew AdminConfiguration();
+    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration() as AdminConfigurationInterface;
 ;
     
 

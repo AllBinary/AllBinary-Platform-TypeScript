@@ -160,7 +160,7 @@ response.getOutputStream()!.write(byteArray);
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 
@@ -170,7 +170,7 @@ processRequest(request, response);
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 

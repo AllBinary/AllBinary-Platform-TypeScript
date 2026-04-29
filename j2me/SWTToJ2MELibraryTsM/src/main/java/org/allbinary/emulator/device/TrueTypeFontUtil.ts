@@ -109,7 +109,7 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TrueTypeFontUtil.instance;
     
 }
 
@@ -191,7 +191,7 @@ this.widthScale= (this.scale == 2)
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                                     }
@@ -210,7 +210,7 @@ this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                                     }
@@ -226,7 +226,7 @@ this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 
                         }
@@ -281,7 +281,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 ;
     
 
-    var imageData: ImageData = image =  as SwtMutableImageimageimage
+    var imageData: ImageData = image = imageimage as SwtMutableImage
 image.
                     image.getImageData()!;
 ;
@@ -445,10 +445,10 @@ characterArray[0]= pattern[index];
 ;
     
 
-    var w: number = Math.round(widthFloatArray[shortPatternIndex] /75) +19;
+    var w: number = Math.round((widthFloatArray[shortPatternIndex] /75)) +19;
 ;
     
-_characterWidth[index]= Math.roundw;
+_characterWidth[index]= Math.round(w);
     
 
                         if(characterArray[0] == '.' || characterArray[0] == '1')

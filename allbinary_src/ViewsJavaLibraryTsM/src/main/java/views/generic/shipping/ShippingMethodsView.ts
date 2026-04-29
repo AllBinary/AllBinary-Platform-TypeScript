@@ -117,7 +117,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                     
 this.storeFrontInterface= StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName());
     
-this.shippingMethods= new ShippingMethods(this.abeClientInformation, storeFrontInterface);
+this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeFrontInterface);
     
 }
 
@@ -169,11 +169,11 @@ index < size; index++)
 ;
     
 
-    var shipping: ShippingInterface =  as ShippingInterfaceshippingVector!.get(index);;
+    var shipping: ShippingInterface = shippingVector!.get(index); as ShippingInterface;
 ;
     
 
-    var shippingView: DomNodeInterface =  as DomNodeInterfaceshipping;
+    var shippingView: DomNodeInterface = shipping as DomNodeInterface;
 ;
     
 shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
@@ -254,7 +254,7 @@ shippingMethodsNode!.appendChild(shippingMethodNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

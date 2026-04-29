@@ -87,7 +87,7 @@ export class TitleView
 public constructor (){
 
             super();
-        this.title= NAME;
+        this.title= TitleView.NAME;
     
 }
 
@@ -109,7 +109,7 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
-                                    this.title= NAME;
+                                    this.title= TitleView.NAME;
     
 
                                     }
@@ -125,7 +125,7 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
                                 
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -153,15 +153,15 @@ this.getFormData(hashMap);
 }
 
 
-    public getFormData(hashMap: HashMap){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.title=  as StringhashMap!.get(TitleData.getInstance()!.TEXT);;
+this.title= hashMap!.get(TitleData.getInstance()!.TEXT); as String;
     
 
                         if(StringValidationUtil.getInstance()!.isEmpty(this.title))
                         
                                     {
-                                    this.title= NAME;
+                                    this.title= TitleView.NAME;
     
 
                                     }
@@ -169,9 +169,9 @@ this.title=  as StringhashMap!.get(TitleData.getInstance()!.TEXT);;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
@@ -190,7 +190,7 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 

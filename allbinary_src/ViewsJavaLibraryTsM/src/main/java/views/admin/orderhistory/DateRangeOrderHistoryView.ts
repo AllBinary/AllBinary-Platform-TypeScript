@@ -158,7 +158,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
+this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
     
 this.getFormData();
     
@@ -200,7 +200,7 @@ this.command= this.request.getParameter(GLOBALS2.ADMINCOMMAND);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 
@@ -304,7 +304,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderHistoryVector!.get(index);;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -346,7 +346,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderHistoryVector!.get(index);;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -388,7 +388,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderHistoryVector!.get(index);;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -430,7 +430,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderHistoryVector!.get(index);;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -472,7 +472,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory =  as OrderHistoryorderHistoryVector!.get(index);;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -534,7 +534,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
                         if(this.dateType == 
                                     null
-                                 || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
+                                 || (this.dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -656,12 +656,12 @@ this.toDate= time;
     var calendar: Calendar = Calendar.getInstance()!;
 ;
     
-TimeUtil.getInstance()!.setCalendar(calendar, fromYear, fromMonth, fromDay, fromHour);
+TimeUtil.getInstance()!.setCalendar(calendar, this.fromYear, this.fromMonth, this.fromDay, this.fromHour);
     
 this.fromDate= calendar.getTimeInMillis().
                             toString();
     
-TimeUtil.getInstance()!.setCalendar(calendar, toYear, toMonth, toDay, toHour);
+TimeUtil.getInstance()!.setCalendar(calendar, this.toYear, this.toMonth, this.toDay, this.toHour);
     
 this.toDate= calendar.getTimeInMillis().
                             toString();
@@ -776,7 +776,7 @@ var document = document
 
                         if(this.dateType == 
                                     null
-                                 || (dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
+                                 || (this.dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
                                     result.append("DATETYPE not recognized");

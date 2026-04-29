@@ -111,7 +111,7 @@ this.setGenericProfileActions(genericProfileActions);
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface =  as J2SECacheInterfaceCapturedBufferedImagesCacheSingleton.getInstance();;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance(); as J2SECacheInterface;
 ;
     
 
@@ -125,7 +125,7 @@ this.setGenericProfileActions(genericProfileActions);
 ;
     
 
-    var hashMap: HashMap = this.getGenericProfileActions()!.getHashMap()!;
+    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;
 ;
     
 
@@ -150,11 +150,11 @@ this.setGenericProfileActions(genericProfileActions);
 index < size; index++)
         {
 
-    var actionNameString: string =  as StringactionNameArray[index]!;
+    var actionNameString: string = actionNameArray[index]! as String;
 ;
     
 
-    var genericProfileAction: GenericProfileAction =  as GenericProfileActionhashMap!.get(actionNameString as Object);;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object); as GenericProfileAction;
 ;
     
 
@@ -198,7 +198,7 @@ this.processDataWorkerResults();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfileActions;
+                        return this.genericProfileActions;
     
 }
 

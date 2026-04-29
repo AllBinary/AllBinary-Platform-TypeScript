@@ -109,7 +109,7 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap = this.itemInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
 ;
     
 
@@ -148,11 +148,11 @@ hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
 index < size2; index++)
         {
 
-    var name: string =  as StringnameArray[index]!;
+    var name: string = nameArray[index]! as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(name as Object);;
+    var value: string = hashMap!.get(name as Object); as String;
 ;
     
 value= stringUtil!.getNonNull(value);
@@ -180,7 +180,7 @@ node.appendChild(totalNode);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.vector.get(index);;
+    var domNodeInterface: DomNodeInterface = this.vector.get(index); as DomNodeInterface;
 ;
     
 

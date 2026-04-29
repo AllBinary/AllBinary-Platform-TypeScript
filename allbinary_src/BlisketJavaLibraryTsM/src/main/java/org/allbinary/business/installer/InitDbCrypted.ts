@@ -144,7 +144,7 @@ export class InitDbCrypted extends AbDatabaseManagement {
 
     private readonly SQL_FILE: string = "initWeblisket.sql";
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
-            super( as DbConnectionInfodatabaseConnectionInfoInterface);
+            super(databaseConnectionInfoInterface as DbConnectionInfo);
                     var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 

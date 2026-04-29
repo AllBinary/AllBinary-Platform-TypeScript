@@ -76,6 +76,8 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MetaValidation } from "./MetaValidation.js";
+
 export class MetasValidation extends Validation implements DomNodeInterface {
         
 
@@ -232,7 +234,7 @@ var document = document
 ;
     
 
-    var metaArray: MetaValidation[] =  as Array<MetaValidation?>this.metaValidationVector!.toArray([]);;
+    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]); as Array<MetaValidation?>;
 ;
     
 

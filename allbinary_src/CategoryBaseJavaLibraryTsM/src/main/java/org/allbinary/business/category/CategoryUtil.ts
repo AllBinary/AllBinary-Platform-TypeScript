@@ -95,7 +95,7 @@ var node = node
 ;
     
 
-    var attrNode: Attr =  as Attrattributes.getNamedItem(CategoryData.getInstance()!.LABEL);;
+    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL); as Attr;
 ;
     
 

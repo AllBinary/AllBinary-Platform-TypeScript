@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
@@ -311,7 +313,7 @@ var renderer = renderer
 ;
     
 
-    var abCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasabToGBUtil!.abCanvas;
+    var abCanvas: AllBinaryGameCanvas = abToGBUtil!.abCanvas as AllBinaryGameCanvas;
 ;
     
 
@@ -369,14 +371,14 @@ this.firstTime= false;
                                     }
                                 
                              else 
-                        if(gameGlobalsFactory!.newCanvas)
+                        if(this.gameGlobalsFactory!.newCanvas)
                         
                                     {
                                     
                                     }
                                 
                         else {
-                            loadNextImage();
+                            this.loadNextImage();
     
 
                         }
@@ -391,7 +393,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation=  as LazyImageRotationAnimationthis.loadAfterList!.get(0);;
+                            lazyImageRotationAnimation= this.loadAfterList!.get(0); as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForLazyAnimation(lazyImageRotationAnimation))
@@ -409,7 +411,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation=  as LazyImageRotationAnimationthis.loadSoonList!.get(0);;
+                            lazyImageRotationAnimation= this.loadSoonList!.get(0); as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForLazyAnimation(lazyImageRotationAnimation))
@@ -432,7 +434,7 @@ this.firstTime= false;
 
                                     }
                                 
-lazyImageRotationAnimation=  as LazyImageRotationAnimationthis.loadNowList!.get(0);;
+lazyImageRotationAnimation= this.loadNowList!.get(0); as LazyImageRotationAnimation;
     
 }
 
@@ -526,9 +528,9 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
 
         while(!this.loadList!.isEmpty(); || !this.loadNowList!.isEmpty();)
         {
-loadImageForAnimations();
+this.loadImageForAnimations();
     
-loadNextImage();
+this.loadNextImage();
     
 }
 
@@ -541,7 +543,7 @@ loadNextImage();
 
         while(!this.loadNowList!.isEmpty();)
         {
-loadImageForAnimation();
+this.loadImageForAnimation();
     
 }
 
@@ -557,7 +559,7 @@ loadImageForAnimation();
 
         while(!this.loadNowList!.isEmpty();)
         {
-loadImageForAnimation();
+this.loadImageForAnimation();
     
 }
 
@@ -576,7 +578,7 @@ loadImageForAnimation();
         {
 
                         if(!this.loadAfterList!.isEmpty();)
-                        lazyImageRotationAnimation=  as LazyImageRotationAnimationthis.loadAfterList!.removeAt(0);
+                        lazyImageRotationAnimation= this.loadAfterList!.removeAt(0); as LazyImageRotationAnimation
 }
 
 
@@ -656,7 +658,7 @@ loadImageForAnimation();
 
                                     }
                                 
-image=  as Imagethis.loadList!.removeAt(0);;
+image= this.loadList!.removeAt(0); as Image;
     
 }
 
@@ -994,7 +996,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.creatImage( as Stringkey);;
+                        return this.creatImage(key as String);;
     
 
                                     }
@@ -1016,7 +1018,7 @@ this.runTask();
 ;
     
 
-    var image: Image = this.createImageLater( as Stringkey, width, height)!;
+    var image: Image = this.createImageLater(key as String, width, height)!;
 ;
     
 
@@ -1085,7 +1087,7 @@ this.loadList!.add(image);
     var index: number = 0;
 index < size; index++)
         {
-lazyImageRotationAnimation2=  as LazyImageRotationAnimationthis.loadAfterList!.get(index);;
+lazyImageRotationAnimation2= this.loadAfterList!.get(index); as LazyImageRotationAnimation;
     
 
                         if(lazyImageRotationAnimation2!.instanceId == lazyImageRotationAnimation!.instanceId)

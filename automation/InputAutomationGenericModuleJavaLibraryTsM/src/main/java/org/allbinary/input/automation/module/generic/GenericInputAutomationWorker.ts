@@ -140,7 +140,7 @@ this.setGenericProfile(genericProfile);
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypevector.get(index);;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
 ;
     
 this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR);
@@ -176,7 +176,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RES
 this.waitForDataWorkers();
     
 
-    var cacheInterface: J2SECacheInterface =  as J2SECacheInterfaceCapturedBufferedImagesCacheSingleton.getInstance();;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance(); as J2SECacheInterface;
 ;
     
 
@@ -189,7 +189,7 @@ this.waitForDataWorkers();
                                     {
                                     this.logUtil!.putF("Image Available", this, this.PROCESS_DATA_WORKER_RESULTS);
     
-setFrame( as LongkeyArray[keyArray!.length -1]!);
+this.setFrame(keyArray[keyArray!.length -1]! as Long);
     
 
                         if(getFrame() > this.lastFrame)
@@ -198,7 +198,7 @@ setFrame( as LongkeyArray[keyArray!.length -1]!);
                                     this.logUtil!.putF("Processing new frame: " +getFrame(), this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var hashMap: HashMap = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
+    var hashMap: HashMap<any, any> = this.getGenericProfile()!.getGenericProfileActions()!.getHashMap()!;
 ;
     
 
@@ -225,13 +225,13 @@ this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA
 index < size; index++)
         {
 
-    var actionNameString: string =  as StringactionNameArray[index]!;
+    var actionNameString: string = actionNameArray[index]! as String;
 ;
     
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var genericProfileAction: GenericProfileAction =  as GenericProfileActionhashMap!.get(actionNameString as Object);;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object); as GenericProfileAction;
 ;
     
 
@@ -246,7 +246,7 @@ CaptureWorkerUtil.processProfileActionConditions(vector, getFrame());
     
 }
 
-this.lastFrame= getFrame();
+this.lastFrame= this.getFrame();
     
 
                                     }
@@ -280,7 +280,7 @@ this.processDataWorkerResults();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfile;
+                        return this.genericProfile;
     
 }
 
@@ -297,7 +297,7 @@ this.genericProfile= genericProfile;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frame;
+                        return this.frame;
     
 }
 

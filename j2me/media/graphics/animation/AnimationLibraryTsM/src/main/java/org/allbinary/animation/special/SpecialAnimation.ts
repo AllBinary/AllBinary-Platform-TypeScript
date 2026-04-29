@@ -58,7 +58,7 @@ export class SpecialAnimation extends IndexedAnimation implements SpecialAnimati
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_SPECIAL_ANIMATION;
+                        return SpecialAnimation.NULL_SPECIAL_ANIMATION;
     
 }
 
@@ -74,7 +74,7 @@ public constructor (animationBehavior: AnimationBehavior){
 
     public nextFrame(){
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = ( as IndexedAnimationBehaviorthis.animationBehaviorP);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);
 ;
     
 indexedAnimationBehavior!.loopIndex++;

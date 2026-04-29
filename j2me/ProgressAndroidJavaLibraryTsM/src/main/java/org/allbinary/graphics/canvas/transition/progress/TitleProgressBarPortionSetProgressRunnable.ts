@@ -69,10 +69,10 @@ var progressCanvas = progressCanvas
 
         try {
             
-    var progressCanvas: AndroidBasicTitleProgressBar =  as AndroidBasicTitleProgressBarthis.progressCanvas;
+    var progressCanvas: AndroidBasicTitleProgressBar = this.progressCanvas as AndroidBasicTitleProgressBar;
 ;
     
-this.midletActivity!.onSetProgress(Math.round(this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()), this.progressCanvas!.getText());
+this.midletActivity!.onSetProgress(Math.round((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion())), this.progressCanvas!.getText());
     
 
                 //: 

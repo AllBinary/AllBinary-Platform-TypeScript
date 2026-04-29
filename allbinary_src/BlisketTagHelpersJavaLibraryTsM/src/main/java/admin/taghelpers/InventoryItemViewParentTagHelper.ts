@@ -70,7 +70,7 @@ export class InventoryItemViewParentTagHelper
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InventoryItemViewParentTagHelper.instance;
     
 }
 
@@ -88,7 +88,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
 ;
     
 
@@ -121,7 +121,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as InventoryItemViewviewObject;
+                        return viewObject as InventoryItemView;
     
 
                                     }
@@ -151,7 +151,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
 ;
     
 
@@ -184,7 +184,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as DownloadableInventoryItemViewviewObject;
+                        return viewObject as DownloadableInventoryItemView;
     
 
                                     }
@@ -214,7 +214,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
 ;
     
 
@@ -247,7 +247,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as RequestMapInterfaceviewObject;
+                        return viewObject as RequestMapInterface;
     
 
                                     }

@@ -45,6 +45,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TechEventListenerInterface } from "./TechEventListenerInterface.js";
+
 export class TechEventHandler extends BasicEventHandler {
         
 
@@ -71,7 +73,7 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var techEventListenerInterface: TechEventListenerInterface = ( as TechEventListenerInterfaceeventListenerInterface);
+    var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);
 ;
     
 techEventListenerInterface!.onTechEvent(eventObject);

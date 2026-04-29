@@ -86,7 +86,7 @@ var aTheta = aTheta
 index < size; index++)
         {
 
-    var secondPoint: GPoint =  as GPointpointBasicArrayList!.get(index);;
+    var secondPoint: GPoint = pointBasicArrayList!.get(index); as GPoint;
 ;
     
 
@@ -98,7 +98,7 @@ index < size; index++)
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY((Math.roundsecondX), (Math.roundsecondY))!;
+    var point: GPoint = PointFactory.getInstance()!.createXY((Math.round(secondX)), (Math.round(secondY)))!;
 ;
     
 newVector!.add(point);

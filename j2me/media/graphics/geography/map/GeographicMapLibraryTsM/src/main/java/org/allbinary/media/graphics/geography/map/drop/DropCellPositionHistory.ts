@@ -64,7 +64,7 @@ export class DropCellPositionHistory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return DropCellPositionHistory.SINGLETON;
     
 }
 
@@ -96,7 +96,7 @@ this.layerList!.add(layerInterface);
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-this.add( as CellPositionlist.get(index), layerInterface);
+this.add(list.get(index) as CellPosition, layerInterface);
     
 }
 
@@ -164,7 +164,7 @@ this.layerList!.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return positionList!.contains(cellPosition);;
+                        return this.positionList!.contains(cellPosition);;
     
 }
 
@@ -180,7 +180,7 @@ this.layerList!.clear();
 index >= 0; index--)
         {
 
-                        if(this.isCellPositionWithDrop( as CellPositionlist.get(index)))
+                        if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
                         
                                     {
                                     
@@ -217,7 +217,7 @@ index >= 0; index--)
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-cellPosition=  as CellPositionlist.get(index);;
+cellPosition= list.get(index); as CellPosition;
     
 
                         if(this.isCellPositionWithDrop(cellPosition))
@@ -257,7 +257,7 @@ cellPosition=  as CellPositionlist.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AllBinaryLayerthis.layerList!.get(index);;
+                        return this.layerList!.get(index); as AllBinaryLayer;
     
 
                                     }

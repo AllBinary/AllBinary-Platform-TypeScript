@@ -101,7 +101,7 @@ this.logUtil!.putF(new StringMaker().
     
 this.list.add(gameFeatureEvent!.getGameOption());
     
-setChanged(true);
+this.setChanged(true);
     
 }
 

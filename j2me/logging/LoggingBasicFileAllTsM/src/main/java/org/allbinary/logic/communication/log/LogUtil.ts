@@ -91,7 +91,7 @@ var log = log
     var exception: any = log.getThrowable()!;
 ;
     
-put(specialMessage, anyType, functionName, exception);
+this.put(specialMessage, anyType, functionName, exception);
     
 }
 
@@ -110,7 +110,7 @@ var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
 var exception = exception
-FileLog.put(specialMessage, anyType, functionName,  as Errorexception);
+FileLog.put(specialMessage, anyType, functionName, exception as Error);
     
 }
 

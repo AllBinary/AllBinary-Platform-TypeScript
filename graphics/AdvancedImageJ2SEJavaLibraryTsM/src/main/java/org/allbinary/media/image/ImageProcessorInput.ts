@@ -71,7 +71,7 @@ this.files= files;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bufferedImageArray;
+                        return this.bufferedImageArray;
     
 }
 
@@ -81,7 +81,7 @@ this.files= files;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return files;
+                        return this.files;
     
 }
 

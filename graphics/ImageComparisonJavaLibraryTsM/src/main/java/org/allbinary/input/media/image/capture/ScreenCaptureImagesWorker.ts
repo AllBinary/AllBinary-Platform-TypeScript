@@ -94,7 +94,7 @@ index= ProcessingFrameIndexFactory.next();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -119,7 +119,7 @@ var thread = thread
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.RUN);
     
-setRunning(true);
+this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
@@ -138,7 +138,7 @@ timeHelper!.setStartTimeTNT();
     var frame: number = index;
 ;
     
-index++;
+ScreenCaptureImagesWorker.index++;
     
 CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCacheable(bufferedImage, frame));
     
@@ -150,7 +150,7 @@ fireEvent(capturedImageEvent);
     
 this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
-setRunning(false);
+this.setRunning(false);
     
 }
 

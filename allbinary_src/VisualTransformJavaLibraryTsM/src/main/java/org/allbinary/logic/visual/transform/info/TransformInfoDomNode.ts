@@ -97,7 +97,7 @@ public constructor (node: Node){
 ;
     
 
-    var attrNode: Attr =  as Attrattributes.getNamedItem(transformInfoData!.NAME);;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME); as Attr;
 ;
     
 
@@ -167,7 +167,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoObjectConfigCom
     var dataFileName: string = DomNodeHelper.getTextNodeValue(dataFileNameNode)!;
 ;
     
-this.transformInfoInterface=  as TransformInfoInterfacenew TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName);
+this.transformInfoInterface= new TransformInfo(name, objectFileName, objectConfigFileName, templateFileName, dataFileName) as TransformInfoInterface;
     
 
                                     }
@@ -196,13 +196,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoObjectConfigCom
 
                                     }
                                 
-this.transformInfoInterface=  as TransformInfoInterfacenew TransformInfo(name);
+this.transformInfoInterface= new TransformInfo(name) as TransformInfoInterface;
     
 
                         }
                             
 
-    var templateAttrNode: Attr =  as Attrattributes.getNamedItem(transformInfoData!.MAPPED);;
+    var templateAttrNode: Attr = attributes.getNamedItem(transformInfoData!.MAPPED); as Attr;
 ;
     
 

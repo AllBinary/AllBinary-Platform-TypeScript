@@ -124,7 +124,7 @@ public constructor (name: string, types: BasicArrayList, cost: number){
     var index: number = 0;
 index < size; index++)
         {
-typeAsInteger= ( as Integertypes.get(index););
+typeAsInteger= (types.get(index); as Integer);
     
 type= typeAsInteger!.toInt();
     

@@ -128,7 +128,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 
@@ -138,7 +138,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 
@@ -148,7 +148,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return z;
+                        return this.z;
     
 }
 
@@ -158,7 +158,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 
@@ -168,7 +168,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 
@@ -178,7 +178,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return z;
+                        return this.z;
     
 }
 
@@ -188,7 +188,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return toStringStatic(this.getX(), this.getY(), this.getZ());;
+                        return GPoint.toStringStatic(this.getX(), this.getY(), this.getZ());;
     
 }
 

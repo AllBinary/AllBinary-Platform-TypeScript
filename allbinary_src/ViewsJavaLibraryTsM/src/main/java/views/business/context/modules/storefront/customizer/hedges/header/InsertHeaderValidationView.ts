@@ -98,7 +98,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap = new MultipartRequestParams(this.getPageContext()).
+    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).
                             toHashMap()!;
 ;
     
@@ -107,7 +107,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +LOGOPATH;
+    var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +this.LOGOPATH;
 ;
     
 multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
@@ -149,7 +149,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
     
 
                                     }

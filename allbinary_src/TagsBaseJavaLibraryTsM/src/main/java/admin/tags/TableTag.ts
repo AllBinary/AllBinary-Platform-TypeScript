@@ -157,7 +157,7 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tagHelperFactoryInterface;
+                        return this.tagHelperFactoryInterface;
     
 }
 
@@ -174,7 +174,7 @@ this.tagRequestHelperFactoryInterface= tagHelperFactoryInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tagRequestHelperFactoryInterface;
+                        return this.tagRequestHelperFactoryInterface;
     
 }
 
@@ -191,7 +191,7 @@ this.current= current;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return current;
+                        return this.current;
     
 }
 
@@ -208,7 +208,7 @@ this.total= total;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return total;
+                        return this.total;
     
 }
 
@@ -219,7 +219,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
 ;
     
 
@@ -232,8 +232,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -276,7 +276,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
 ;
     
 
@@ -289,8 +289,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -333,7 +333,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
 ;
     
 
@@ -346,8 +346,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -390,7 +390,7 @@ this.total= total;
 
         try {
             
-    var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
+    var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
 ;
     
 
@@ -403,8 +403,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -456,8 +456,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.requestObject, 
-                            null);;
+    var result: string = method.invoke(this.requestObject, 
+                            null); as String;
 ;
     
 
@@ -509,8 +509,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.requestObject, 
-                            null);;
+    var result: string = method.invoke(this.requestObject, 
+                            null); as String;
 ;
     
 
@@ -562,8 +562,8 @@ this.total= total;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(this.requestObject, 
-                            null);;
+    var result: string = method.invoke(this.requestObject, 
+                            null); as String;
 ;
     
 
@@ -610,7 +610,7 @@ this.total= total;
                         
                                     {
                                     
-    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
+    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
 ;
     
 
@@ -684,7 +684,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.compareTo(commonStrings!.DELETE) == 0 || this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
-                                    this.requestObject= getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext);
+                                    this.requestObject= this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext);
     
 
                                     }

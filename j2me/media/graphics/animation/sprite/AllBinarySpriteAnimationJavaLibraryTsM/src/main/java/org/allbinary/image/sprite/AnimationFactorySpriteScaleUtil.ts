@@ -76,7 +76,7 @@ export class AnimationFactorySpriteScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AnimationFactorySpriteScaleUtil.instance;
     
 }
 
@@ -190,7 +190,7 @@ scaleY= (by16Height) /height;
                                 
 scaledImage= this.imageScaleUtil!.createImage2(this.imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
     
-sprite= spriteFactory!.createSprite(scaledImage, Math.round(width *scaleX), Math.round(height *scaleY));
+sprite= spriteFactory!.createSprite(scaledImage, Math.round((width *scaleX)), Math.round((height *scaleY)));
     
 
                         }

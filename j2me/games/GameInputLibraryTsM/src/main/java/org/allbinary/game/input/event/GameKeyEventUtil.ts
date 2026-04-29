@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameKeyEvent } from "./GameKeyEvent.js";
+
 export class GameKeyEventUtil
             extends Object
          {
@@ -45,7 +47,7 @@ export class GameKeyEventUtil
     public static getKey(anyType: any = {}): number{
 var anyType = anyType
 
-    var gameKeyEvent: GameKeyEvent =  as GameKeyEventanyType;
+    var gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;
 ;
     
 

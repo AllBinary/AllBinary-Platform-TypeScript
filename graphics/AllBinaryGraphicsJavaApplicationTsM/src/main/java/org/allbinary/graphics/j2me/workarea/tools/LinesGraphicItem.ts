@@ -138,7 +138,7 @@ export class LinesGraphicItem
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NAME;
+                        return LinesGraphicItem.NAME;
     
 }
 
@@ -171,7 +171,7 @@ public constructor (){
     
 
         try {
-            init();
+            this.init();
     
 this.active= true;
     
@@ -191,7 +191,7 @@ public constructor (linesNode: Node){
         var linesNode = linesNode
 this.points= new Points();
     
-init();
+this.init();
     
 this.active= false;
     
@@ -212,7 +212,7 @@ this.active= false;
 index < numberOfLines; index++)
         {
 
-    var lineNode: Node =  as NodelineNodes!.get(index);;
+    var lineNode: Node = lineNodes!.get(index); as Node;
 ;
     
 
@@ -258,9 +258,9 @@ this.addPoint(pointTwoNode!.getChildNodes());
                 //@Throws(Error::class)
             
     public init(){
-this.treeNode= new DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +item);
+this.treeNode= new DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +LinesGraphicItem.item);
     
-item++;
+LinesGraphicItem.item++;
     
 this.points.init();
     
@@ -338,7 +338,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MutableTreeNodethis.treeNode;
+                        return this.treeNode as MutableTreeNode;
     
 }
 
@@ -348,7 +348,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NAME;
+                        return LinesGraphicItem.NAME;
     
 }
 
@@ -404,7 +404,7 @@ this.logUtil!.putF(point.toString(), this, "addPoint");
     
 this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
-this.treeNode!.add( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1));
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode);
     
 }
 
@@ -425,7 +425,7 @@ this.treeNode!.add( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(this.
     var lastPoint: number = this.points.getSize() -1;
 ;
     
-point=  as GPointthis.points.getPoints()!.removeAt(lastPoint);;
+point= this.points.getPoints()!.removeAt(lastPoint); as GPoint;
     
 
     var index: number = this.pointTreeNodeVector!.length -1;
@@ -435,7 +435,7 @@ point=  as GPointthis.points.getPoints()!.removeAt(lastPoint);;
                         if(index > 0)
                         
                                     {
-                                    this.treeNode!.remove( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(index));
+                                    this.treeNode!.remove(this.pointTreeNodeVector!.get(index) as DefaultMutableTreeNode);
     
 this.pointTreeNodeVector!.remove(index);
     
@@ -493,7 +493,7 @@ var list = list
 index < size; index++)
         {
 
-    var point: GPoint =  as GPointlist.get(index);;
+    var point: GPoint = list.get(index); as GPoint;
 ;
     
 
@@ -506,7 +506,7 @@ index < size; index++)
     
 this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
-this.treeNode!.add( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1));
+this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode);
     
 
                                     }
@@ -562,7 +562,7 @@ var y = y
 
         try {
             
-    var graphics: Graphics2D =  as Graphics2Dg;
+    var graphics: Graphics2D = g as Graphics2D;
 ;
     
 graphics.setColor(getColor());
@@ -590,7 +590,7 @@ graphics.setStroke(new BasicStroke(x));
                                 )
                         
                                     {
-                                    this.currentMousePoint=  as GPointthis.points.getPoints()!.removeAt(this.points.getSize() -1);;
+                                    this.currentMousePoint= this.points.getPoints()!.removeAt(this.points.getSize() -1); as GPoint;
     
 
                                     }
@@ -609,7 +609,7 @@ graphics.setStroke(new BasicStroke(x));
                         if(size > 0)
                         
                                     {
-                                    firstPoint=  as GPointtempPointVector!.get(0);;
+                                    firstPoint= tempPointVector!.get(0); as GPoint;
     
 
                                     }
@@ -623,7 +623,7 @@ graphics.setStroke(new BasicStroke(x));
 index < size; index++)
         {
 
-    var secondPoint: GPoint =  as GPointtempPointVector!.get(index);;
+    var secondPoint: GPoint = tempPointVector!.get(index); as GPoint;
 ;
     
 graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));
@@ -688,7 +688,7 @@ this.points= points;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return color;
+                        return this.color;
     
 }
 

@@ -130,7 +130,7 @@ var value = value
     public get(storeName: string): Vector{
 var storeName = storeName
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -156,7 +156,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMaphashMapVector!.get(index as Object);;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -165,7 +165,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    vector.add( as AdvertisementAreaInterfacenew AdvertisementArea(hashMap));
+                                    vector.add(new AdvertisementArea(hashMap) as AdvertisementAreaInterface);
     
 
                                     }
@@ -187,7 +187,7 @@ index < size; index++)
 var storeName = storeName
 var advertisementAreaName = advertisementAreaName
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -195,7 +195,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaName);
     
 
-    var hashMap: HashMap = super.getRow(keysAndValues)!;
+    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -208,7 +208,7 @@ keysAndValues!.put(AdvertisementAreaData.getInstance()!.NAME, advertisementAreaN
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AdvertisementAreaInterfacenew AdvertisementArea(hashMap);
+                        return new AdvertisementArea(hashMap) as AdvertisementAreaInterface;
     
 
                                     }
@@ -266,9 +266,9 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(AdvertisementAreaData.getInstance()!.NAME,  as StringupdatedValues!.get(AdvertisementAreaData.getInstance()!.NAME), updatedValues);
+super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME) as String, updatedValues);
     
 }
 

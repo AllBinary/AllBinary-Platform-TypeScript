@@ -196,7 +196,7 @@ this.log();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
             //var transformInfoInterface = transformInfoInterface
@@ -233,7 +233,7 @@ this.log();
             
     initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.transformInfoInterface;
+    var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -245,7 +245,7 @@ this.log();
 ;
     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequesttransformInfoHttpStoreInterface!.getPageContext()!.getRequest();;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
 ;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);
@@ -280,7 +280,7 @@ this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getValue();;
+                        return this.getValue(); as Object;
     
 }
 
@@ -369,9 +369,9 @@ this.category= value;
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap = new HashMap();
+    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());

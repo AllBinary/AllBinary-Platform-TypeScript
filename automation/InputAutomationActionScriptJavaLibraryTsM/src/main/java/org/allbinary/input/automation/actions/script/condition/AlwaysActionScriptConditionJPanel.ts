@@ -49,6 +49,8 @@ import { AlwaysActionScriptConditionInterface } from "./AlwaysActionScriptCondit
 
 import { JDialog } from "./JDialog.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -73,7 +75,7 @@ public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptCond
         var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
-initComponents();
+this.initComponents();
     
 this.alwaysActionScriptConditionInterface= alwaysActionScriptConditionInterface;
     
@@ -129,7 +131,7 @@ this.alwaysActionScriptConditionInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return alwaysActionJDialog;
+                        return this.alwaysActionJDialog;
     
 }
 
@@ -162,7 +164,7 @@ this.titleJLabel!.setText("Always Condition Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -195,7 +197,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.alwaysActionJButton!.setText("Edit");
     
-alwaysActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.alwaysActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

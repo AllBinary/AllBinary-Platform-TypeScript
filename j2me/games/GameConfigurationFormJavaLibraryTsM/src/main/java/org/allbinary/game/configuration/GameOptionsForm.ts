@@ -109,6 +109,10 @@ import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
 
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
+import { GameConfiguration } from "./GameConfiguration.js";
+
+import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
+
 import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
@@ -161,7 +165,7 @@ this.save(abeClientInformation);
 ;
     
 
-    var hashtable: Hashtable = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
+    var hashtable: Hashtable<any, any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!;
 ;
     
 
@@ -181,7 +185,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var list: BasicArrayList =  as BasicArrayListlistCanBeNull;
+    var list: BasicArrayList = listCanBeNull as BasicArrayList;
 ;
     
 
@@ -204,7 +208,7 @@ this.save(abeClientInformation);
 
     addTextFields(){
 
-    var hashtable: Hashtable = GameConfigurationTextInput.getHashtable()!;
+    var hashtable: Hashtable<any, any> = GameConfigurationTextInput.getHashtable()!;
 ;
     
 
@@ -231,7 +235,7 @@ this.save(abeClientInformation);
     var index: number = 0;
 index < size; index++)
         {
-gameConfigurationTextInput=  as GameConfigurationTextInputhashtable.get( as ObjectobjectArray[index]!);;
+gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object); as GameConfigurationTextInput;
     
 textField= new TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY);
     
@@ -283,7 +287,7 @@ this.append(textField);
     var index: number = 0;
 index < size; index++)
         {
-gameConfiguration=  as GameConfigurationlist.objectArray[index]!;
+gameConfiguration= list.objectArray[index]! as GameConfiguration;
     
 stringMaker!.delete(0, stringMaker!.length());
     
@@ -345,7 +349,7 @@ item= this.get(index);
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.update( as GameConfigurationGaugeitem);
+                                    GameConfigurationUtil.getInstance()!.update(item as GameConfigurationGauge);
     
 
                                     }
@@ -354,7 +358,7 @@ item= this.get(index);
                         if(item is TextField)
                         
                                     {
-                                    GameConfigurationTextInput.update( as TextFielditem);
+                                    GameConfigurationTextInput.update(item as TextField);
     
 
                                     }
@@ -364,7 +368,7 @@ item= this.get(index);
 GameConfigurationUtil.getInstance()!.updateCompetitionValue();
     
 
-    var hashtable: Hashtable = new Hashtable();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 
@@ -403,7 +407,7 @@ keyValuePersistance!.save(abeClientInformation, hashtable);
     var index: number = 0;
 index < size2; index++)
         {
-integer=  as Integerlist.objectArray[index]!;
+integer= list.objectArray[index]! as Integer;
     
 keyValuePersistance!.delete(abeClientInformation, integer.toInt());
     

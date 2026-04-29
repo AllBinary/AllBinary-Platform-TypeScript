@@ -74,13 +74,13 @@ classes[0]=
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]=  as ObjectuserInterface;
+params[0]= userInterface as Object;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as UserEmailEventListenerInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, userEmailEventConfigurationInterface!.getEventListenerClassPath(), classes, params);;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, userEmailEventConfigurationInterface!.getEventListenerClassPath(), classes, params); as UserEmailEventListenerInterface;
     
 }
 

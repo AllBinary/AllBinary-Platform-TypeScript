@@ -121,8 +121,8 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
 ;
     
 
-    var result: number =  as Integermethod.invoke(this.getHelper(), 
-                            null);;
+    var result: number = method.invoke(this.getHelper(), 
+                            null); as Integer;
 ;
     
 

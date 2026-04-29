@@ -57,7 +57,7 @@ export class GameFeatureChoiceGroups
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameFeatureChoiceGroupsExclusive;
+                        return GameFeatureChoiceGroups.gameFeatureChoiceGroupsExclusive;
     
 }
 
@@ -67,24 +67,24 @@ export class GameFeatureChoiceGroups
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameFeatureChoiceGroupsMultiple;
+                        return GameFeatureChoiceGroups.gameFeatureChoiceGroupsMultiple;
     
 }
 
 
-    private hashtable: Hashtable = new Hashtable();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 private constructor (){
 
             super();
         }
 
 
-    public get(): Hashtable{
+    public get(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable;
+                        return this.hashtable;
     
 }
 

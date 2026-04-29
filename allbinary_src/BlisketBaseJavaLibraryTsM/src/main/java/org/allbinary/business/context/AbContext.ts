@@ -64,10 +64,10 @@ export class AbContext
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private propertiesHashMap: HashMap
+    private propertiesHashMap: HashMap<any, any>
 
     private pageContext: PageContext
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -108,12 +108,12 @@ this.pageContext= pageContext;
 }
 
 
-    public getPropertiesHashMap(): HashMap{
+    public getPropertiesHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return propertiesHashMap;
+                        return this.propertiesHashMap;
     
 }
 

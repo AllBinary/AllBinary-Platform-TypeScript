@@ -51,6 +51,10 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
         
 import { ImageUtil } from "./ImageUtil.js";
 
+import { Point } from "./Point.js";
+
+import { Graphics2D } from "./Graphics2D.js";
+
 export class ImagesRatioUtil
             extends Object
          {
@@ -63,7 +67,7 @@ export class ImagesRatioUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImagesRatioUtil.instance;
     
 }
 
@@ -183,7 +187,7 @@ var ratio = ratio
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= Math.round(bufferedImage!.getHeight(); *ratio);
+                                    newWidth= Math.round((bufferedImage!.getHeight(); *ratio));
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -191,7 +195,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                                     }
                                 
                         else {
-                            newHeight= Math.round(bufferedImage!.getWidth(); /ratio);
+                            newHeight= Math.round((bufferedImage!.getWidth(); /ratio));
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     

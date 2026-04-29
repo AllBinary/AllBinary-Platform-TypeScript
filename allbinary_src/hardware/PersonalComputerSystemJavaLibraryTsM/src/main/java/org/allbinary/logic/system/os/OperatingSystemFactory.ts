@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
 
     
@@ -90,7 +92,7 @@ export class OperatingSystemFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OperatingSystemFactory.instance;
     
 }
 

@@ -141,7 +141,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface =  as ItemInterfaceitemVector!.get(index);;
+    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
 ;
     
 
@@ -198,7 +198,7 @@ inventoryNode!.appendChild(node);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

@@ -47,7 +47,7 @@ export class GameMidletStateFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INSTANCE;
+                        return GameMidletStateFactory.INSTANCE;
     
 }
 
@@ -66,7 +66,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentGameState;
+                        return this.currentGameState;
     
 }
 

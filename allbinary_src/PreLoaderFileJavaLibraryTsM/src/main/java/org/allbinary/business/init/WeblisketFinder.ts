@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -76,7 +78,7 @@ export class WeblisketFinder
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return WeblisketFinder.instance;
     
 }
 
@@ -121,7 +123,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return subDirectory!.search(KEY, new AbFile(path));;
+                        return this.subDirectory!.search(KEY, new AbFile(path));;
     
 
                 //: 

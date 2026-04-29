@@ -79,7 +79,7 @@ import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable = new Hashtable();
+    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
@@ -114,7 +114,7 @@ export class RemoteHighScores extends HighScores {
 
         try {
             
-    var highScores: HighScores =  as HighScoreshashTable!.get(gameInfo);;
+    var highScores: HighScores = hashTable!.get(gameInfo); as HighScores;
 ;
     
 
@@ -125,7 +125,7 @@ export class RemoteHighScores extends HighScores {
                                     {
                                     highScores= new RemoteHighScores(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, preload);
     
-hashTable!.put(gameInfo, highScores);
+RemoteHighScores.hashTable!.put(gameInfo, highScores);
     
 
                                     }
@@ -204,12 +204,12 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 }
 
 
-    public update(hashtable: Hashtable){
+    public update(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
 this.getList()!.clear();
     
 
-    var vector: Vector =  as Vectorhashtable.get( as ObjectRemoteHighScoresData.getInstance()!.HIGH_SCORES);;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object); as Vector;
 ;
     
 
@@ -231,15 +231,15 @@ this.getList()!.clear();
 index < size; index++)
         {
 
-    var highScoreVector: Vector =  as Vectorvector.elementAt(index);;
+    var highScoreVector: Vector = vector.elementAt(index); as Vector;
 ;
     
 
-    var displayName: string =  as StringhighScoreVector!.elementAt(0);;
+    var displayName: string = highScoreVector!.elementAt(0); as String;
 ;
     
 
-    var score: string =  as StringhighScoreVector!.elementAt(1);;
+    var score: string = highScoreVector!.elementAt(1); as String;
 ;
     
 
@@ -298,7 +298,7 @@ this.ascending= ascending;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ascending;
+                        return this.ascending;
     
 }
 
@@ -308,7 +308,7 @@ this.ascending= ascending;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return softwareInformation;
+                        return this.softwareInformation;
     
 }
 

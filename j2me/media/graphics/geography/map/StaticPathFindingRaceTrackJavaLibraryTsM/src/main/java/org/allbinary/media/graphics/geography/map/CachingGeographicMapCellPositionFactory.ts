@@ -71,7 +71,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
     //var width = width
     //var height = height
 
-    var hashtable: Hashtable = GeographicMapCellPositionFactory.getHashtable()!;
+    var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;
 ;
     
 
@@ -90,7 +90,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
                                     {
                                     cellPositionCanBeNull= this.geographicMapCellPositionFactoryInterface!.getInstance(this.geographicMapInterface, i_column, i_row, this.getColumns(), this.getRows(), width, height);
     
-geographicMapCellPositionArray[i_row]![i_column]=  as GeographicMapCellPositioncellPositionCanBeNull;
+geographicMapCellPositionArray[i_row]![i_column]= cellPositionCanBeNull as GeographicMapCellPosition;
     
 hashtable.put(cellPositionKey, cellPositionCanBeNull);
     
@@ -101,7 +101,7 @@ hashtable.put(cellPositionKey, cellPositionCanBeNull);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GeographicMapCellPositioncellPositionCanBeNull;
+                        return cellPositionCanBeNull as GeographicMapCellPosition;
     
 }
 

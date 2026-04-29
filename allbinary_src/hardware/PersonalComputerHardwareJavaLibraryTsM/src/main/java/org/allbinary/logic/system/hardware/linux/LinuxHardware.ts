@@ -230,7 +230,7 @@ var filePath = filePath
     
 
         try {
-            init(lineNumberReader, filePath);
+            this.init(lineNumberReader, filePath);
     
 
                 //: 
@@ -307,7 +307,7 @@ lineNumberReader= new LineNumberReader(pciFile);
                         
                                     {
                                     
-    var file: AbFile =  as AbFilefileVector!.get(0);;
+    var file: AbFile = fileVector!.get(0); as AbFile;
 ;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
@@ -477,7 +477,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MediaInterfacethis.multimediaInterfaceVector!.get(index);;
+                        return this.multimediaInterfaceVector!.get(index); as MediaInterface;
     
 }
 
@@ -488,7 +488,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BridgeInterfacethis.bridgeInterfaceVector!.get(index);;
+                        return this.bridgeInterfaceVector!.get(index); as BridgeInterface;
     
 }
 
@@ -499,7 +499,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CpuInterfacethis.cpuInterfaceVector!.get(index);;
+                        return this.cpuInterfaceVector!.get(index); as CpuInterface;
     
 }
 
@@ -510,7 +510,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as EthernetInterfacethis.ethernetInterfaceVector!.get(index);;
+                        return this.ethernetInterfaceVector!.get(index); as EthernetInterface;
     
 }
 
@@ -521,7 +521,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as FireWireInterfacethis.fireWireInterfaceVector!.get(index);;
+                        return this.fireWireInterfaceVector!.get(index); as FireWireInterface;
     
 }
 
@@ -532,7 +532,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardDriveControllerInterfacethis.hardDriveControllerInterfaceVector!.get(index);;
+                        return this.hardDriveControllerInterfaceVector!.get(index); as HardDriveControllerInterface;
     
 }
 
@@ -543,7 +543,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardDriveInterfacethis.hardDriveInterfaceVector!.get(index);;
+                        return this.hardDriveInterfaceVector!.get(index); as HardDriveInterface;
     
 }
 
@@ -554,7 +554,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MachineAccessControlAddressInterfacethis.macInterfaceVector!.get(index);;
+                        return this.macInterfaceVector!.get(index); as MachineAccessControlAddressInterface;
     
 }
 
@@ -565,7 +565,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MonitorInterfacethis.monitorInterfaceVector!.get(index);;
+                        return this.monitorInterfaceVector!.get(index); as MonitorInterface;
     
 }
 
@@ -576,7 +576,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as UsbInterfacethis.usbInterfaceVector!.get(index);;
+                        return this.usbInterfaceVector!.get(index); as UsbInterface;
     
 }
 
@@ -587,7 +587,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as VideoInterfacethis.videoInterfaceVector!.get(index);;
+                        return this.videoInterfaceVector!.get(index); as VideoInterface;
     
 }
 
@@ -598,7 +598,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
+                        return this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
     
 }
 
@@ -621,7 +621,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface =  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
 ;
     
 hardwareBuffer!.append("Component ");
@@ -656,7 +656,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable{
+    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
 var hardwareInterface = hardwareInterface
 
 

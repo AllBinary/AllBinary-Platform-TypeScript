@@ -179,9 +179,9 @@ stringBuffer!.append(BasicOptionItemData.OPTION_ONE_ONE_ITEM)!.append(this.sqlTy
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID,  as StringupdatedValues!.get(BasicItemData.ID), updatedValues);
+super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
     
 }
 

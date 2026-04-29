@@ -68,7 +68,7 @@ export class ImageRotationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageRotationUtil.instance;
     
 }
 
@@ -87,11 +87,11 @@ private constructor (){
                         
                                     {
                                     
-    var htmlImage: PlaynMutableImage =  as PlaynMutableImageimage;
+    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
 ;
     
 
-    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
 ;
     
 
@@ -213,20 +213,20 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage =  as PlaynMutableImageoriginalImage;
+    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
 ;
     
-originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                                     }
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage =  as PlaynImmutableImageoriginalImage;
+    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
 ;
     
-originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
+originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     
 
                         }

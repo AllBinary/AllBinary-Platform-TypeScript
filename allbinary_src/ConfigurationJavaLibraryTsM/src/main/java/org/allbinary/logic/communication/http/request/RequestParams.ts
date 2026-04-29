@@ -165,11 +165,11 @@ var document = document
 i < size; i++)
         {
 
-    var key: string =  as StringkeyArray[i]!;
+    var key: string = keyArray[i]! as String;
 ;
     
 
-    var values: string[] =  as Array<String?>this.map.get(key);;
+    var values: string[] = this.map.get(key); as Array<String?>;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -215,9 +215,9 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -246,11 +246,11 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 i < size; i++)
         {
 
-    var key: string =  as StringkeyArray[i]!;
+    var key: string = keyArray[i]! as String;
 ;
     
 
-    var values: string[] =  as Array<String?>this.map.get(key);;
+    var values: string[] = this.map.get(key); as Array<String?>;
 ;
     
 hashMap!.put(key.toCharArray()

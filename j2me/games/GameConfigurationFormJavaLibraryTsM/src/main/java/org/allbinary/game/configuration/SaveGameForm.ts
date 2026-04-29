@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -80,7 +82,7 @@ FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBa
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FORM;
+                        return SaveGameForm.FORM;
     
 }
 

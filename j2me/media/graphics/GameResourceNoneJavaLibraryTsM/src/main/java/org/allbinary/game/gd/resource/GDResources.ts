@@ -49,7 +49,7 @@ export class GDResources
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GDResources.instance;
     
 }
 

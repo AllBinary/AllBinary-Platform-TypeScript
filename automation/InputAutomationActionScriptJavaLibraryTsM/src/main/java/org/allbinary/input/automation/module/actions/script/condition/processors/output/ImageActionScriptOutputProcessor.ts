@@ -55,6 +55,8 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageTypes } from "./ImageTypes.js";
+
 import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
 
 export class ImageActionScriptOutputProcessor
@@ -98,7 +100,7 @@ logUtil!.putF("Start - Processing at: " +imageActionScriptOutputInterface!.toStr
 index < size; index++)
         {
 
-    var imageType: InputImageType =  as InputImageTypevector.get(index);;
+    var imageType: InputImageType = vector.get(index); as InputImageType;
 ;
     
 

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../../java/lang/System";
+        
 import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
 
     

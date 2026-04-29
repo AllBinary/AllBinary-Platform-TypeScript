@@ -205,7 +205,7 @@ var y = y
     var index: number = 0;
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeFactorygeographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();;
+basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
@@ -251,7 +251,7 @@ basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeF
     var index: number = 0;
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeFactorygeographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();;
+basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.OFF_MAP_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))

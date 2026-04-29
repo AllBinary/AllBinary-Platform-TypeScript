@@ -75,7 +75,7 @@ export class AndroidImageUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AndroidImageUtil.instance;
     
 }
 
@@ -102,7 +102,7 @@ canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint);
     //var originalImage = originalImage
     //var paint = paint
 
-    var androidImage: AndroidImageInterface =  as AndroidImageInterfaceimage;
+    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
 ;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
@@ -112,7 +112,7 @@ androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
 ;
     
 
-    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
+    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
@@ -126,7 +126,7 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
     //var matrix = matrix
     //var paint = paint
 
-    var androidImage: AndroidImageInterface =  as AndroidImageInterfaceimage;
+    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
 ;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
@@ -138,7 +138,7 @@ androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
 canvas.concat(matrix);
     
 
-    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
+    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);

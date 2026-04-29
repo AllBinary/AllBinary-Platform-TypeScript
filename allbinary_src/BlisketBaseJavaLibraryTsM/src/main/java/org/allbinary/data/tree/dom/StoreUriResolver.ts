@@ -111,11 +111,11 @@ var base = base
 
         try {
             
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface =  as TransformInfoHttpStoreInterfacethis.parentTransformInfoInterface;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
 ;
     
 
-    var fileAbPath: AbPath =  as AbPathnew AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href);
+    var fileAbPath: AbPath = new AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
 ;
     
 

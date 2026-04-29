@@ -61,7 +61,7 @@ export class WaypointCellPositionHistory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return WaypointCellPositionHistory.SINGLETON;
     
 }
 
@@ -91,7 +91,7 @@ var layerInterface = layerInterface
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-this.add( as CellPositionlist.get(index), layerInterface);
+this.add(list.get(index) as CellPosition, layerInterface);
     
 }
 
@@ -159,7 +159,7 @@ var cellPosition = cellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return positionList!.contains(cellPosition);;
+                        return this.positionList!.contains(cellPosition);;
     
 }
 
@@ -175,7 +175,7 @@ var list = list
 index >= 0; index--)
         {
 
-                        if(this.isCellPositionWithDrop( as CellPositionlist.get(index)))
+                        if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
                         
                                     {
                                     
@@ -212,7 +212,7 @@ var cellPosition = cellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AllBinaryLayerthis.layerList!.get(index);;
+                        return this.layerList!.get(index); as AllBinaryLayer;
     
 
                                     }

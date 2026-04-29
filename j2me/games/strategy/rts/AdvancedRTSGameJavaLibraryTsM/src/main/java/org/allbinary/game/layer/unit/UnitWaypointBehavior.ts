@@ -192,7 +192,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
 
-    var advancedRTSGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerevent.getRtsLayer();;
+    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer(); as AdvancedRTSGameLayer;
 ;
     
 this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer);
@@ -230,7 +230,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
     addWaypointFromBuilding(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
 
-                        if(advancedRTSGameLayer == PrimaryWaypointHelper.getInstance()!.getWaypointLayer() || advancedRTSGameLayer!.getParentLayer() == associatedAdvancedRTSGameLayer!.getParentLayer())
+                        if(advancedRTSGameLayer == PrimaryWaypointHelper.getInstance()!.getWaypointLayer() || advancedRTSGameLayer!.getParentLayer() == this.associatedAdvancedRTSGameLayer!.getParentLayer())
                         
                                     {
                                     
@@ -355,7 +355,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapC
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList =  as BasicArrayListBasicArrayListUtil.getInstance()!.getRandom(pathsList);;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList); as BasicArrayList;
 ;
     
 this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
@@ -376,7 +376,7 @@ this.lastPathGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.N
                         if(this.associatedAdvancedRTSGameLayer!.showMoreCaptionStates)
                         
                                     {
-                                    this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(PATHING, BasicColorFactory.getInstance()!.GREEN);
+                                    this.associatedAdvancedRTSGameLayer!.getCaptionAnimationHelper()!.update(UnitWaypointBehavior.PATHING, BasicColorFactory.getInstance()!.GREEN);
     
 
                                     }
@@ -458,7 +458,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
                                     {
                                     this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.moveAwayFromBuilding(this.associatedAdvancedRTSGameLayer);
     
-this.setCurrentTargetLayerInterface( as CollidableDestroyableDamageableLayerthis.FAKE_WAYPOINT_LAYER);
+this.setCurrentTargetLayerInterface(this.FAKE_WAYPOINT_LAYER as CollidableDestroyableDamageableLayer);
     
 
     var pathsList: BasicArrayList = buildingLayer!.getMoveOutOfBuildAreaPath(geographicMapCellPosition)!;
@@ -587,7 +587,7 @@ this.waypointPathsListP= waypointPathsList;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return waypointPathsListP;
+                        return this.waypointPathsListP;
     
 }
 
@@ -597,7 +597,7 @@ this.waypointPathsListP= waypointPathsList;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return moving;
+                        return this.moving;
     
 }
 
@@ -614,7 +614,7 @@ this.moving= moving;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return trackingWaypoint;
+                        return this.trackingWaypoint;
     
 }
 
@@ -624,7 +624,7 @@ this.moving= moving;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return possibleTargetList;
+                        return this.possibleTargetList;
     
 }
 
@@ -641,7 +641,7 @@ this.lastPathGeographicMapCellPosition= lastPathGeographicMapCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return lastPathGeographicMapCellPosition;
+                        return this.lastPathGeographicMapCellPosition;
     
 }
 
@@ -658,7 +658,7 @@ this.currentPathGeographicMapCellPosition= currentPathGeographicMapCellPosition;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentPathGeographicMapCellPosition;
+                        return this.currentPathGeographicMapCellPosition;
     
 }
 
@@ -675,7 +675,7 @@ this.sensorAction= sensorAction;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return sensorAction;
+                        return this.sensorAction;
     
 }
 
@@ -692,7 +692,7 @@ this.currentTargetLayerInterfaceP= currentTargetLayerInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentTargetLayerInterfaceP;
+                        return this.currentTargetLayerInterfaceP;
     
 }
 
@@ -709,7 +709,7 @@ this.currentTargetDistance= currentTargetDistance;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentTargetDistance;
+                        return this.currentTargetDistance;
     
 }
 
@@ -719,7 +719,7 @@ this.currentTargetDistance= currentTargetDistance;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return completeTimeDelayHelper;
+                        return this.completeTimeDelayHelper;
     
 }
 
@@ -729,7 +729,7 @@ this.currentTargetDistance= currentTargetDistance;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentGeographicMapCellHistoryP;
+                        return this.currentGeographicMapCellHistoryP;
     
 }
 

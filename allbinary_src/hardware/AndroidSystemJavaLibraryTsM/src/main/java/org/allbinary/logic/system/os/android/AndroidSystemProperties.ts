@@ -69,7 +69,7 @@ export class AndroidSystemProperties
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return AndroidSystemProperties.SINGLETON;
     
 }
 
@@ -97,7 +97,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -107,7 +107,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -117,7 +117,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -127,7 +127,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -137,7 +137,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -147,7 +147,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -157,7 +157,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -167,7 +167,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -177,7 +177,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -187,7 +187,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -197,7 +197,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 
@@ -207,7 +207,7 @@ public constructor (context: Context){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return commonStrings!.DISABLE;
+                        return this.commonStrings!.DISABLE;
     
 }
 

@@ -120,9 +120,9 @@ export class Waypoint extends WaypointBase implements BuildingEventListenerInter
 
     readonly ownerLayer: PathFindingLayerInterface
 
-    private endList: BasicArrayList = basicArrayListUtil!.getImmutableInstance()!;
+    private endList: BasicArrayList = this.basicArrayListUtil!.getImmutableInstance()!;
 
-    private paths: BasicArrayList[][] = basicArrayListUtil!.NULL_ARRAY_OF_ARRAY;
+    private paths: BasicArrayList[][] = this.basicArrayListUtil!.NULL_ARRAY_OF_ARRAY;
 public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound){
             super(sound);
                         //var ownerLayer = ownerLayer
@@ -143,7 +143,7 @@ this.ownerLayer= ownerLayer;
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -257,7 +257,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionthis.basicArrayListUtil!.getRandom(this.endList);;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList); as GeographicMapCellPosition;
 ;
     
 
@@ -272,7 +272,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     var index: number = this.endList!.size() -1;
 index >= 0; index--)
         {
-endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(index);;
+endGeographicMapCellPosition= this.endList!.get(index); as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)
@@ -310,7 +310,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -329,7 +329,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -346,7 +346,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -364,7 +364,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 
@@ -372,7 +372,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
 ;
     
 
-    var raceTrackGeographicMap: RaceTrackGeographicMap =  as RaceTrackGeographicMapgeographicMapInterface;
+    var raceTrackGeographicMap: RaceTrackGeographicMap = geographicMapInterface as RaceTrackGeographicMap;
 ;
     
 
@@ -380,7 +380,7 @@ endGeographicMapCellPosition=  as GeographicMapCellPositionthis.endList!.get(ind
 ;
     
 
-    var customMapGenerator: CustomMapGenerator =  as CustomMapGeneratorraceTrackGeographicMap!.getCustomMapGenerator();;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
 ;
     
 customMapGenerator!.copyMapIntoCustomMap();
@@ -494,14 +494,14 @@ this.releaseCachedPaths();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
 ;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.getConnectedWaypointList()!.get(0);;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
 ;
     
 

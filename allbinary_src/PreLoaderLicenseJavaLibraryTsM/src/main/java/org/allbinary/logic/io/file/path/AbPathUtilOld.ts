@@ -67,7 +67,7 @@ export class AbPathUtilOld
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AbPathUtilOld.instance;
     
 }
 
@@ -116,7 +116,7 @@ var abPath = abPath
     public getExtension(filePath: string): string{
 var filePath = filePath
 
-                        if(filePath!.length < MIN)
+                        if(filePath!.length < AbPathUtilOld.MIN)
                         
                                     {
                                     
@@ -184,7 +184,7 @@ var abPath = abPath
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
 
-                        if(filePath!.length < MIN)
+                        if(filePath!.length < AbPathUtilOld.MIN)
                         
                                     {
                                     
@@ -371,7 +371,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return abPathData!.SEPARATOR;
+                        return this.abPathData!.SEPARATOR;
     
 
                                     }

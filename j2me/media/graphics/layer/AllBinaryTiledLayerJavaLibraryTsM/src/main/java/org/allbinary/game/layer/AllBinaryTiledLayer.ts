@@ -258,7 +258,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.z +this.getDepth());
+                        return Math.round((this.z +this.getDepth()));
     
 }
 
@@ -268,7 +268,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellWidth;
+                        return this.cellWidth;
     
 }
 
@@ -278,7 +278,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellHeight;
+                        return this.cellHeight;
     
 }
 
@@ -327,7 +327,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfWidth;
+                        return this.halfWidth;
     
 }
 
@@ -337,7 +337,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfHeight;
+                        return this.halfHeight;
     
 }
 
@@ -347,7 +347,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dataId;
+                        return this.dataId;
     
 }
 
@@ -357,7 +357,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfCellWidth;
+                        return this.halfCellWidth;
     
 }
 
@@ -367,7 +367,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfCellHeight;
+                        return this.halfCellHeight;
     
 }
 

@@ -86,11 +86,11 @@ public constructor (max: number){
 ;
     
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
 ;
     
 
-    var raceTrackGeographicMapCellType2: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType2;
+    var raceTrackGeographicMapCellType2: RaceTrackGeographicMapCellType = geographicMapCellType2 as RaceTrackGeographicMapCellType;
 ;
     
 

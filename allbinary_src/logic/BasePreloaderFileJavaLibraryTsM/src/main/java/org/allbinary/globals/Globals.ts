@@ -55,6 +55,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AppUrlGlobals } from "./AppUrlGlobals.js";
+
 import { ClassLoader } from "./ClassLoader.js";
 
 export class Globals
@@ -69,7 +71,7 @@ export class Globals
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return Globals.instance;
     
 }
 

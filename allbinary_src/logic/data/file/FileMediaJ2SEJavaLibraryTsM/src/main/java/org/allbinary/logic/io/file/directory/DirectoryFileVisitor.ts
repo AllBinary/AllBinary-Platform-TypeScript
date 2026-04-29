@@ -62,7 +62,7 @@ var arg0 = arg0
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return visit =  as Booleanthis.visit( as Objectarg0);visit
+                        return visit = this.visit(arg0 as Object);visit as Boolean
 visit.
                     ;;
     
@@ -72,7 +72,7 @@ visit.
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var file: File =  as FileanyType;
+    var file: File = anyType as File;
 ;
     
 

@@ -72,7 +72,7 @@ export class ImageCopyUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageCopyUtil.instance;
     
 }
 
@@ -113,7 +113,7 @@ private constructor (){
                         if(image.isMutable())
                         
                                     {
-                                    image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+                                    image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
     
 
 
@@ -143,11 +143,11 @@ private constructor (){
     //var canvasScale = canvasScale
     //var resize = resize
 
-    var newWidth: number = Math.round(originalImage!.getWidth() *canvasScale);
+    var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));
 ;
     
 
-    var newHeight: number = Math.round(originalImage!.getHeight() *canvasScale);
+    var newHeight: number = Math.round((originalImage!.getHeight() *canvasScale));
 ;
     
 

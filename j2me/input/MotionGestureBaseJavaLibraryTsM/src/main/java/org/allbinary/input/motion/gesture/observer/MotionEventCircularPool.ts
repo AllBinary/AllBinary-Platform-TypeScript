@@ -69,12 +69,12 @@ var id = id
 
     private static readonly MIN: number = TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()!;
 
-    private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MIN);
+    private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MotionEventCircularPool.MIN);
 private constructor (id: number){
 
             super();
         var id = id
-eventPool!.init(new MotionEventFactory(eventPool, id));
+this.eventPool!.init(new MotionEventFactory(eventPool, id));
     
 }
 
@@ -88,7 +88,7 @@ var motionGestureInput = motionGestureInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as MotionGestureEventeventPool!.getInstance(motionGestureInput!.getId() -MIN);;
+                        return this.eventPool!.getInstance(motionGestureInput!.getId() -MotionEventCircularPool.MIN); as MotionGestureEvent;
     
 }
 

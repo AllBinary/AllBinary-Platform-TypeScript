@@ -74,7 +74,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareInterfacenew LinuxHardware();
+                        return new LinuxHardware() as HardwareInterface;
     
 
                                     }
@@ -87,7 +87,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareInterfacenew WindowsHardware();
+                        return new WindowsHardware() as HardwareInterface;
     
 
                                     }

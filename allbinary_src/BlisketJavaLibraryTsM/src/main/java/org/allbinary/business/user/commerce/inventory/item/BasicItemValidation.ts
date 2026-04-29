@@ -179,7 +179,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getWeight() == 
                                     null
-                                 || this.itemInterface!.getWeight()!.length() < 1 || this.itemInterface!.getWeight()!.length() > MAXWEIGHT)
+                                 || this.itemInterface!.getWeight()!.length() < 1 || this.itemInterface!.getWeight()!.length() > this.MAXWEIGHT)
                         
                                     {
                                     
@@ -526,7 +526,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getWeight() == 
                                     null
-                                 || this.itemInterface!.getWeight()!.length() < 1 || this.itemInterface!.getWeight()!.length() > MAXWEIGHT)
+                                 || this.itemInterface!.getWeight()!.length() < 1 || this.itemInterface!.getWeight()!.length() > this.MAXWEIGHT)
                         
                                     {
                                     stringBuffer!.append("Weight value is invalid. Must be < " +this.MAXWEIGHT +" and > 0 digits.<br />");

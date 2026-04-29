@@ -247,7 +247,7 @@ this.nonMatchingPixelVector!.add(pixel);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bufferedImages;
+                        return this.bufferedImages;
     
 }
 
@@ -257,7 +257,7 @@ this.nonMatchingPixelVector!.add(pixel);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tolerance;
+                        return this.tolerance;
     
 }
 
@@ -274,7 +274,7 @@ this.tolerance= tolerance;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frameOne;
+                        return this.frameOne;
     
 }
 
@@ -284,7 +284,7 @@ this.tolerance= tolerance;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frameTwo;
+                        return this.frameTwo;
     
 }
 

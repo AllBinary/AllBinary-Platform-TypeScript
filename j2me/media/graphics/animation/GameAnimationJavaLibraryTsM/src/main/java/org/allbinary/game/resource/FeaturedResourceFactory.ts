@@ -123,7 +123,7 @@ var level = level
 index < size; index++)
         {
 
-    var featureInterface: GameFeatureControlledInterface =  as GameFeatureControlledInterfacethis.list.objectArray[index]!;
+    var featureInterface: GameFeatureControlledInterface = this.list.objectArray[index]! as GameFeatureControlledInterface;
 ;
     
 
@@ -135,7 +135,7 @@ index < size; index++)
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, commonStrings!.INIT);
+                            append(this.GAME_FEATURE_CONTROLLED)!.append(featureInterface!.toString())!.append(this.IS_LOADING_LEVEL_LABEL)!.append(ResourceLoadingLevelFactory.getInstance()!.getLevelString(level))!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendboolean(isLoadingLevel)!.append(this.IS_FEATURE)!.appendboolean(isFeature)!.toString(), this, this.commonStrings!.INIT);
     
 
                         if(isLoadingLevel && isFeature)
@@ -221,7 +221,7 @@ this.list.add(featureInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

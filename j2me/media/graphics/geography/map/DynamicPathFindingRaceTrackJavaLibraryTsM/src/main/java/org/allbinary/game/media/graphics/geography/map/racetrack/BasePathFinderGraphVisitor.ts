@@ -110,7 +110,7 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode =  as PathFindingNodestartPathFindingNodeList!.get(index);;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
 ;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
@@ -125,7 +125,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
     public isValid(graphPath: GraphPath): boolean{
 var graphPath = graphPath
 
-                        if(graphPath!.getEdgeList()!.size() > this.edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
+                        if(graphPath!.getEdgeList()!.size() > this.edgeMinimum && graphPath!.getWeight() < this.maxPathWeight && graphPath!.getWeight() > this.minPathWeight)
                         
                                     {
                                     

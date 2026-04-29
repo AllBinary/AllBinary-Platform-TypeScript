@@ -137,19 +137,19 @@ ProgressCanvasFactory.getInstance()!.addNormalPortion(portion, "Basic Processors
                         if(features.isFeature(gameFeatureFactory!.DROPPED_ITEMS) && features.isFeature(gameFeatureFactory!.DROPPED_ITEMS_FROM_DEATH))
                         
                                     {
-                                    basicLayerProcessor= new Array(2);
+                                    CombatGameCanvas.basicLayerProcessor= new Array(2);
     
-basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
+CombatGameCanvas.basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
     
-basicLayerProcessor[1]= DropLayerProcessor.getInstance();
+CombatGameCanvas.basicLayerProcessor[1]= DropLayerProcessor.getInstance();
     
 
                                     }
                                 
                         else {
-                            basicLayerProcessor= new Array(1);
+                            CombatGameCanvas.basicLayerProcessor= new Array(1);
     
-basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
+CombatGameCanvas.basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
     
 
                         }
@@ -167,11 +167,11 @@ super.processPlayingGame();
 
 
                         for (
-    var index: number = basicLayerProcessor!.length
+    var index: number = CombatGameCanvas.basicLayerProcessor!.length
                 ;
 --index >= 0; )
         {
-basicLayerProcessor[index]!.process(this.gameLayerManager);
+CombatGameCanvas.basicLayerProcessor[index]!.process(this.gameLayerManager);
     
 }
 
@@ -188,11 +188,11 @@ super.cleanupGame();
 
 
                         for (
-    var index: number = basicLayerProcessor!.length
+    var index: number = CombatGameCanvas.basicLayerProcessor!.length
                 ;
 --index >= 0; )
         {
-basicLayerProcessor[index]!.getList()!.clear();
+CombatGameCanvas.basicLayerProcessor[index]!.getList()!.clear();
     
 }
 

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../../java/lang/System";
+        
 import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
 
     
@@ -75,7 +77,7 @@ public constructor (options: string[]){
 
             super();
         var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 }
 

@@ -117,7 +117,7 @@ this.logo= new LogoValidation(logoNode);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -128,7 +128,7 @@ this.getFormData(hashMap);
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 this.title= new TitleValidation(hashMap);
     

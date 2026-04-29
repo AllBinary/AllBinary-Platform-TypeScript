@@ -80,7 +80,7 @@ this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration()
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap

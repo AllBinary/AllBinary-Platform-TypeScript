@@ -101,7 +101,7 @@ this.setMotionGesture(motionGesture);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionGesture;
+                        return this.motionGesture;
     
 }
 
@@ -118,7 +118,7 @@ this.motionGesture= motionGesture;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return previousPoint;
+                        return this.previousPoint;
     
 }
 
@@ -135,7 +135,7 @@ this.previousPoint= previousPoint;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentPoint;
+                        return this.currentPoint;
     
 }
 
@@ -184,7 +184,7 @@ stringBuffer!.appendint(TsUtil.getInstance()!.hashCode(this));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return this.id;
     
 }
 

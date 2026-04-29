@@ -108,13 +108,13 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private readonly SETTING_NO_TITLE: string = "Setting: No Title, Display: ";
 
-    private hashtable: Hashtable = new Hashtable();
+    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private destroyed: boolean= false
 public constructor (){
 
             super();
-        this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet");
+        this.logUtil!.putF(this.commonStrings!.CONSTRUCTOR, this, "AllBinaryMidlet::AllBinaryMidlet");
     
 }
 
@@ -138,14 +138,14 @@ public constructor (){
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(this.SETTING_)!.append(title)!.append(this._DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+                            append(this.SETTING_)!.append(title)!.append(this._DISPLAY_)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
     
 
                                     }
                                 
                         else {
                             this.logUtil!.putF(new StringMaker().
-                            append(this.SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, SET_DISPLAY);
+                            append(this.SETTING_NO_TITLE)!.append(StringUtil.getInstance()!.toString(newDisplay))!.toString(), this, this.SET_DISPLAY);
     
 
                         }
@@ -154,7 +154,7 @@ public constructor (){
                                     }
                                 
 
-    var display: Display = getDisplay()!;
+    var display: Display = this.getDisplay()!;
 ;
     
 display.setCurrent(newDisplay);
@@ -194,7 +194,7 @@ this.destroyed= destroyed;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return destroyed;
+                        return this.destroyed;
     
 }
 
@@ -246,7 +246,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
                 //@Throws(Error::class)
             
-    public setStartStateHashtable(hashtable: Hashtable){
+    public setStartStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
@@ -258,7 +258,7 @@ this.hashtable= hashtable;
 
                 //@Throws(Error::class)
             
-    public getStartStateHashtable(): Hashtable{
+    public getStartStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
@@ -273,7 +273,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
     
 

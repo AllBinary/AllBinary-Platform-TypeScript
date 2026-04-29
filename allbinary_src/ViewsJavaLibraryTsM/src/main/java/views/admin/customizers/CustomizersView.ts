@@ -139,7 +139,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 index < size; index++)
         {
 
-    var viewName: string =  as Stringthis.customizersVector!.get(index);;
+    var viewName: string = this.customizersVector!.get(index); as String;
 ;
     
 
@@ -154,7 +154,7 @@ index < size; index++)
 }
 
 
-    var objectArray: any[] =  as Array<any?>unsortedCustomizerViewVector!.toArray();;
+    var objectArray: any[] = unsortedCustomizerViewVector!.toArray(); as Array<any?>;
 ;
     
 Arrays.sort(objectArray, new StringComparator());
@@ -168,7 +168,7 @@ Arrays.sort(objectArray, new StringComparator());
 index < objectArray!.length; index++)
         {
 
-    var viewName: string =  as StringobjectArray[index]!;
+    var viewName: string = objectArray[index]! as String;
 ;
     
 
@@ -210,7 +210,7 @@ node.appendChild(viewNameNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

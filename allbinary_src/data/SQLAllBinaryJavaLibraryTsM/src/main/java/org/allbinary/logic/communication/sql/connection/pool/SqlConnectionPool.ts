@@ -70,14 +70,14 @@ export class SqlConnectionPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SqlConnectionPool.instance;
     
 }
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private connectionHashMap: HashMap = 
+    private connectionHashMap: HashMap<any, any> = 
                 null
             ;
 
@@ -117,7 +117,7 @@ var url = url
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap();
+                                    this.connectionHashMap= new HashMap<any, any>();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -139,7 +139,7 @@ var url = url
                                 
                         else {
                             
-    var connectionVector: Vector =  as Vectorthis.connectionHashMap!.get(url as Object);;
+    var connectionVector: Vector = this.connectionHashMap!.get(url as Object); as Vector;
 ;
     
 
@@ -221,7 +221,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 i < size; i++)
         {
 
-    var sqlConnection: Connection =  as ConnectionconnectionVector!.get(i);;
+    var sqlConnection: Connection = connectionVector!.get(i); as Connection;
 ;
     
 
@@ -246,7 +246,7 @@ stringBuffer!.append(this.IS);
     
 stringBuffer!.appendint(connectionVector!.length);
     
-this.logUtil!.putF(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_GET);
+this.logUtil!.putF(NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, this.METHOD_GET);
     
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
     
@@ -257,7 +257,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as ConnectionsqlConnection;
+                        return sqlConnection as Connection;
     
 
                                     }
@@ -318,7 +318,7 @@ var sqlConnection = sqlConnection
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap();
+                                    this.connectionHashMap= new HashMap<any, any>();
     
 connectionVector= new Vector();
     
@@ -328,7 +328,7 @@ connectionVector!.add(sqlConnection);
                                     }
                                 
                         else {
-                            connectionVector=  as Vectorthis.connectionHashMap!.get(url as Object);;
+                            connectionVector= this.connectionHashMap!.get(url as Object); as Vector;
     
 
                         if(connectionVector == 

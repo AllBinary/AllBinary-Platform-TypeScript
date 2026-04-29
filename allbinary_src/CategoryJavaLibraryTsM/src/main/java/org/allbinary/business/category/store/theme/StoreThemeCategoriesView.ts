@@ -93,11 +93,11 @@ var document = document
 i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface =  as CategoryInterfacechildArray[i]!;
+    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;
 ;
     
 
-    var childCategoryNode: Node = new StoreThemeCategoriesView( as StoreThemeCategoryInterfacechildCategoryInterface).
+    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
                             toXmlNode(document)!;
 ;
     

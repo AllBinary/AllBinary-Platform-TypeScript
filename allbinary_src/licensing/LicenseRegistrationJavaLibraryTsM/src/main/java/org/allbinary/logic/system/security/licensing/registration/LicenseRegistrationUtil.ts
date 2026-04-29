@@ -79,7 +79,7 @@ RegistrationConfiguration.getInstance()!.setRegistrationCode(registrationId);
 RegistrationConfiguration.getInstance()!.write();
     
 
-    var hashtable: Hashtable = abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
 ;
     
 hashtable.put(RegistrationConfiguration.getInstance()!.NAME, registrationId);

@@ -207,7 +207,7 @@ this.maxDimension= maxDimension;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxMotionRectangles;
+                        return this.maxMotionRectangles;
     
 }
 
@@ -224,7 +224,7 @@ this.maxMotionRectangles= maxMotionRectangles;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return minArea;
+                        return this.minArea;
     
 }
 

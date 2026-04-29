@@ -64,7 +64,7 @@ export class LayerCoveringCellPositionsUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LayerCoveringCellPositionsUtil.instance;
     
 }
 
@@ -119,7 +119,7 @@ reusableList!.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellPositionsUtil!.getAll(geographicMapInterface, topLeftGeographicMapCellPosition, columns, rows, reusableList);;
+                        return this.cellPositionsUtil!.getAll(geographicMapInterface, topLeftGeographicMapCellPosition, columns, rows, reusableList);;
     
 }
 

@@ -144,7 +144,7 @@ var htmlAttachment = htmlAttachment
 var contentBase = contentBase
 this.isDebug= false;
     
-init(from, to, subject, server, textBody, htmlAttachment, contentBase);
+this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
 }
 
@@ -161,7 +161,7 @@ var contentBase = contentBase
 var isDebug = isDebug
 this.isDebug= isDebug;
     
-init(from, to, subject, server, textBody, htmlAttachment, contentBase);
+this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
 }
 
@@ -216,13 +216,13 @@ mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByte
 
                                     }
                                 
-init(server,  as Authenticatornull, 
+this.init(server, null as Authenticator, 
                                                 [
                                                     new InternetAddress(from);
                                                 ], 
                                                 [
                                                     new InternetAddress(to);
-                                                ],  as Array<InternetAddress?>null,  as Array<InternetAddress?>null, subject, mimeBodyParts);
+                                                ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
     
 
                 //: 
@@ -423,14 +423,14 @@ this.msg.setContent(mimeMultipart);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
         try {
             
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-hashMap!.put(EmailData.SERVER,  as Stringthis.properties.get(SMTP_HOST));
+hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as String);
     
 
     var addresses: Address[] = this.msg.getFrom()!;
@@ -529,7 +529,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 hashMap!.put(EmailData.SUBJECT, msg.getSubject());
     
 
-    var mimeMultipart: MimeMultipart =  as MimeMultipartmsg.getContent();;
+    var mimeMultipart: MimeMultipart = msg.getContent(); as MimeMultipart;
 ;
     
 
@@ -547,7 +547,7 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject());
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string =  as StringmimeMultipart!.getBodyPart(index)!.getContent();;
+    var content: string = mimeMultipart!.getBodyPart(index)!.getContent(); as String;
 ;
     
 hashMap!.put(EmailData.CONTENT, content);

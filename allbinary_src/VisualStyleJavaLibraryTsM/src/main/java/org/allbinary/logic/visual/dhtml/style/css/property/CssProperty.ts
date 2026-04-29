@@ -126,9 +126,9 @@ this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
@@ -147,7 +147,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
     
 

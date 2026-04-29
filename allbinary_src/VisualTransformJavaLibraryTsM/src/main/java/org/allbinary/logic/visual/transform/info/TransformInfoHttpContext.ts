@@ -70,7 +70,7 @@ export class TransformInfoHttpContext extends TransformInfoHttp {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-public constructor (databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(databaseHashMap, propertiesHashMap, pageContext);
                     var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
@@ -104,7 +104,7 @@ this.setStoreName(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext

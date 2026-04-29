@@ -91,7 +91,7 @@ export class ImageUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageUtil.instance;
     
 }
 
@@ -173,11 +173,11 @@ index < size; index++)
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = Math.round(bufferedImage!.getWidth() *percent /100);
+    var newWidth: number = Math.round((bufferedImage!.getWidth() *percent /100));
 ;
     
 
-    var newHeight: number = Math.round(bufferedImage!.getHeight() *percent /100);
+    var newHeight: number = Math.round((bufferedImage!.getHeight() *percent /100));
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
@@ -223,11 +223,11 @@ index < size; index++)
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = Math.round(bufferedImage!.getWidth() *percent);
+    var newWidth: number = Math.round((bufferedImage!.getWidth() *percent));
 ;
     
 
-    var newHeight: number = Math.round(bufferedImage!.getHeight() *percent);
+    var newHeight: number = Math.round((bufferedImage!.getHeight() *percent));
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
@@ -433,27 +433,27 @@ var newHeight = newHeight
 ;
     
 
-    var dx2: number = Math.round(newWidth -width);
+    var dx2: number = Math.round((newWidth -width));
 ;
     
 
-    var dy2: number = Math.round(newHeight -height);
+    var dy2: number = Math.round((newHeight -height));
 ;
     
 
-    var dx: number = Math.rounddx2 /2;
+    var dx: number = Math.round(dx2) /2;
 ;
     
 
-    var dy: number = Math.rounddy2 /2;
+    var dy: number = Math.round(dy2) /2;
 ;
     
 
-    var dx4: number = Math.rounddx2 /4;
+    var dx4: number = Math.round(dx2) /4;
 ;
     
 
-    var dy4: number = Math.rounddy2 /4;
+    var dy4: number = Math.round(dy2) /4;
 ;
     
 
@@ -528,20 +528,20 @@ g2d.dispose();
                         
                                     {
                                     
-    var j2seImage: J2SEMutableImage =  as J2SEMutableImageimage;
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
 ;
     
-bufferedImage=  as BufferedImagej2seImage!.getImage();;
+bufferedImage= j2seImage!.getImage(); as BufferedImage;
     
 
                                     }
                                 
                         else {
                             
-    var j2seImage: J2SEImmutableImage =  as J2SEImmutableImageimage;
+    var j2seImage: J2SEImmutableImage = image as J2SEImmutableImage;
 ;
     
-bufferedImage=  as BufferedImagej2seImage!.getImage();;
+bufferedImage= j2seImage!.getImage(); as BufferedImage;
     
 
                         }

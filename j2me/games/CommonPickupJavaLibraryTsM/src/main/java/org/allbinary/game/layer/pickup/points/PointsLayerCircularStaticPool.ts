@@ -49,6 +49,8 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PointsLayer } from "./PointsLayer.js";
+
 export class PointsLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
@@ -66,11 +68,11 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var pointsLayer: PointsLayer =  as PointsLayerthis.getNextInstance();;
+    var pointsLayer: PointsLayer = this.getNextInstance(); as PointsLayer;
 ;
     
 
-    var scoreableInterface: ScoreableInterface =  as ScoreableInterfacesourceLayerInterface;
+    var scoreableInterface: ScoreableInterface = sourceLayerInterface as ScoreableInterface;
 ;
     
 pointsLayer!.visit(scoreableInterface);

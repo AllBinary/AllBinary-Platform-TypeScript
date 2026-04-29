@@ -95,7 +95,7 @@ this.startTime= this.gameTickTimeDelayHelper!.startTime;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hundredthTime;
+                        return this.hundredthTime;
     
 }
 
@@ -128,7 +128,7 @@ this.hundredthTime= currentTime /100;
                         if(this.startTime > 0)
                         
                                     {
-                                    this.hundrethsString= MAX;
+                                    this.hundrethsString= this.MAX;
     
 
                                     }
@@ -140,7 +140,7 @@ this.hundredthTime= currentTime /100;
                         if(lastLowerTime != this.hundredthTime)
                         
                                     {
-                                    this.hundrethsString= this.primitiveLongUtil!.getCharArray(Math.roundthis.hundredthTime);
+                                    this.hundrethsString= this.primitiveLongUtil!.getCharArray(Math.round(this.hundredthTime));
     
 this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
     
@@ -179,7 +179,7 @@ this.modifier += value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return totalDigits;
+                        return this.totalDigits;
     
 }
 

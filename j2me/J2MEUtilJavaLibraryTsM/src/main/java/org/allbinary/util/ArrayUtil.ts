@@ -4,6 +4,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
 import { MathUtil } from "../../../org/allbinary/logic/math/MathUtil.js";
 
     
@@ -47,7 +49,7 @@ export class ArrayUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ArrayUtil.instance;
     
 }
 
@@ -61,7 +63,7 @@ export class ArrayUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return copyOfType(original, newLength, originalconstructor);;
+                        return this.copyOfType(original, newLength, original.constructor);;
     
 }
 

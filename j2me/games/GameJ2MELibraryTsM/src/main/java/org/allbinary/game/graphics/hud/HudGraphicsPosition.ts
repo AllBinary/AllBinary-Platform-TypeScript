@@ -70,7 +70,7 @@ this.setPoint(point);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anchor;
+                        return this.anchor;
     
 }
 
@@ -87,7 +87,7 @@ this.anchor= anchor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return point;
+                        return this.point;
     
 }
 

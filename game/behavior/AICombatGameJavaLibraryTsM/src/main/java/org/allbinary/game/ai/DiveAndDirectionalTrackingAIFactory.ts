@@ -72,12 +72,12 @@ export class DiveAndDirectionalTrackingAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var visitorCanBeNull: any? = hashtable.get( as ObjectBasicAI.AI_VISITOR);
+    var visitorCanBeNull: any? = hashtable.get(BasicAI.AI_VISITOR as Object);
 ;
     
 
@@ -92,7 +92,7 @@ var gameInput = gameInput
                                     }
                                 
 
-    var hashtable2: Hashtable = new BasicProbabilityAIDataFactory().
+    var hashtable2: Hashtable<any, any> = new BasicProbabilityAIDataFactory().
                             getInstance()!;
 ;
     
@@ -107,7 +107,7 @@ hashtable2.put(BasicAI.AI_VISITOR, LastKeyAIVisitorFactory.getInstance());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new DiveAndDirectionalTrackingAI(ownerLayerInterface, artificialIntelligenceInterface, gameInput,  as VisitorvisitorCanBeNull);
+                        return new DiveAndDirectionalTrackingAI(ownerLayerInterface, artificialIntelligenceInterface, gameInput, visitorCanBeNull as Visitor);
     
 }
 

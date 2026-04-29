@@ -155,16 +155,16 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
     //var imageIndex = imageIndex
     //var alpha = alpha
 
-    var htmlImage: PlaynImage =  as PlaynImageimage;
+    var htmlImage: PlaynImage = image as PlaynImage;
 ;
     
 
-    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
 ;
     
 
-    var originalPlaynImage: playn.core.Image =  as playn.core.Image
-                                    (originalImage as PlaynImage).getImage();;
+    var originalPlaynImage: playn.core.Image = 
+                                    (originalImage as PlaynImage).getImage(); as playn.core.Image;
 ;
     
 
@@ -192,11 +192,11 @@ canvas.drawImage(originalPlaynImage, 0, 0);
 ;
     
 
-    var htmlImage: PlaynImage =  as PlaynImageimage;
+    var htmlImage: PlaynImage = image as PlaynImage;
 ;
     
 
-    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
+    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
 ;
     
 
@@ -249,8 +249,8 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
     //var index = index
     //var image = image
 
-    var image3: playn.core.Image =  as playn.core.Image
-                                    (image as PlaynImage).getImage();;
+    var image3: playn.core.Image = 
+                                    (image as PlaynImage).getImage(); as playn.core.Image;
 ;
     
 
@@ -263,7 +263,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                         if(image3.isReady() || image3.width() +image3.height() <= 0 || image.getName() == this.resourceCallbackStrings!.FROM_DATA)
                         
                                     {
-                                    copy(imageArray, index, image, image3);
+                                    this.copy(imageArray, index, image, image3);
     
 
                                     }

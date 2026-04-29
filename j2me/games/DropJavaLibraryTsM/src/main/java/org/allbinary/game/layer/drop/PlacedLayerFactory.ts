@@ -47,7 +47,7 @@ export class PlacedLayerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PlacedLayerFactory.instance;
     
 }
 
@@ -70,7 +70,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.size();;
+                        return this.list.size();;
     
 }
 
@@ -82,7 +82,7 @@ this.list.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AllBinaryLayerFactoryInterfacethis.basicArrayListUtil!.getRandom(this.list);;
+                        return this.basicArrayListUtil!.getRandom(this.list); as AllBinaryLayerFactoryInterface;
     
 }
 

@@ -129,9 +129,9 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
-    private selectedGameKey: GameKey = NONE;
+    private selectedGameKey: GameKey = this.NONE;
 
-    private selectedInput: Input = NONE;
+    private selectedInput: Input = this.NONE;
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, helpPaintable: HelpPaintable){
             super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                         //var abeClientInformation = abeClientInformation
@@ -160,7 +160,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
                                 
 this.abeClientInformation= abeClientInformation;
     
-this.helpPaintable=  as InputMappingHelpPaintablehelpPaintable;
+this.helpPaintable= helpPaintable as InputMappingHelpPaintable;
     
 this.inputMapping= PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance();
     

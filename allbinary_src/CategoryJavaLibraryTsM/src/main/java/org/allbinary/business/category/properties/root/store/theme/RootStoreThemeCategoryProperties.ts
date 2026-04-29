@@ -107,7 +107,7 @@ var node = node
                     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
             super(transformInfoInterface, categoryPropertiesHashMap);
                     var transformInfoInterface = transformInfoInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -122,7 +122,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
             
     public initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface =  as TransformInfoHttpStoreInterfacethis.transformInfoInterface;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.transformInfoInterface as TransformInfoHttpStoreInterface;
 ;
     
 
@@ -148,7 +148,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
 ;
     
 
-    var httpServletRequest: HttpServletRequest =  as HttpServletRequesttransformInfoHttpStoreInterface!.getPageContext()!.getRequest();;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
 ;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString());

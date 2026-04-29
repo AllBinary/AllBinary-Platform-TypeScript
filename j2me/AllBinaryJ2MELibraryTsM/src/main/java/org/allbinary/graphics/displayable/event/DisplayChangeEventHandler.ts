@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DisplayChangeEventListener } from "./DisplayChangeEventListener.js";
+
 export class DisplayChangeEventHandler extends BasicEventHandler {
         
 
@@ -56,7 +58,7 @@ export class DisplayChangeEventHandler extends BasicEventHandler {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return DisplayChangeEventHandler.SINGLETON;
     
 }
 
@@ -72,10 +74,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var displayChangeEventListener: DisplayChangeEventListener = ( as DisplayChangeEventListenereventListenerInterface);
+    var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);
 ;
     
-displayChangeEventListener!.onDisplayChangeEvent( as DisplayChangeEventeventObject);
+displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent);
     
 }
 

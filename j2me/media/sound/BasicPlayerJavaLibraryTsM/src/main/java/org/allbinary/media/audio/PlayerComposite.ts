@@ -64,6 +64,8 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Controllable2 } from "./Controllable2.js";
+
 export class PlayerComposite
             extends Object
          implements Controllable, Player {
@@ -287,7 +289,7 @@ var controlType = controlType
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 
-    var controllable2: Controllable2 = ( as Controllable2this.player);
+    var controllable2: Controllable2 = (this.player as Controllable2);
 ;
     
 controllable2.setVolume(leftVolume, rightVolume);

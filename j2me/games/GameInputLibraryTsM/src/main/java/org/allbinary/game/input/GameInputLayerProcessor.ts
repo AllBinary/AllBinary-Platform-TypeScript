@@ -46,6 +46,8 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInputInterface } from "./GameInputInterface.js";
+
 export class GameInputLayerProcessor extends LayerProcessor {
         
 public constructor (){
@@ -64,7 +66,7 @@ public constructor (){
     //var layerInterface = layerInterface
     //var index = index
 
-    var gameInputInterface: GameInputInterface =  as GameInputInterfacelayerInterface;
+    var gameInputInterface: GameInputInterface = layerInterface as GameInputInterface;
 ;
     
 gameInputInterface!.processInput(allBinaryLayerManager);

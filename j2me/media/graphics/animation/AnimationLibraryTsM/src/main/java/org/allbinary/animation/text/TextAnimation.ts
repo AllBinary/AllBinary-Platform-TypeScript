@@ -202,7 +202,7 @@ index++;
     var index: number = 0;
 index < size; index++)
         {
-textArray[index]=  as Stringlist.get(index);;
+textArray[index]= list.get(index); as String;
     
 }
 

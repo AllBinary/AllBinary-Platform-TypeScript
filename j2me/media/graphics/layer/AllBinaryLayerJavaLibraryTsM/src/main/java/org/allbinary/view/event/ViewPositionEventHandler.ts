@@ -61,6 +61,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ViewPositionEventListenerInterface } from "./ViewPositionEventListenerInterface.js";
+
 export class ViewPositionEventHandler extends BasicEventHandler {
         
 
@@ -129,10 +131,10 @@ var eventObject = eventObject
 
         try {
             
-    var layerInterface: AllBinaryLayer =  as AllBinaryLayerthis.list.objectArray[index]!;
+    var layerInterface: AllBinaryLayer = this.list.objectArray[index]! as AllBinaryLayer;
 ;
     
-layerInterface!.onChangeEvent( as ViewPositionEventeventObject);
+layerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     
 
                 //: 
@@ -155,10 +157,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = ( as ViewPositionEventListenerInterfaceeventListenerInterface);
+    var viewPositionEventListenerInterface: ViewPositionEventListenerInterface = (eventListenerInterface as ViewPositionEventListenerInterface);
 ;
     
-viewPositionEventListenerInterface!.onChangeEvent( as ViewPositionEventeventObject);
+viewPositionEventListenerInterface!.onChangeEvent(eventObject as ViewPositionEvent);
     
 }
 

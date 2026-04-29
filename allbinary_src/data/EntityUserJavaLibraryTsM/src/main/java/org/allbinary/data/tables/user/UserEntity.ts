@@ -166,7 +166,7 @@ var values = values
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getUsersWithRole(UserRoleFactory.getInstance()!.ADMINISTRATOR);;
+                        return this.getUsersWithRole(UserRoleFactory.getInstance()!.ADMINISTRATOR);;
     
 }
 
@@ -176,7 +176,7 @@ var values = values
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -204,7 +204,7 @@ keysAndValues!.put(UserData.PERMISSIONS, storeFrontInterface!.getName());
 i < size; i++)
         {
 
-    var userHashMap: HashMap =  as HashMapusersHashMapVector!.get(i as Object);;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(i as Object); as HashMap<any, any>;
 ;
     
 
@@ -230,7 +230,7 @@ i < size; i++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getUsersWithRole(UserRoleFactory.getInstance()!.CUSTOMER);;
+                        return this.getUsersWithRole(UserRoleFactory.getInstance()!.CUSTOMER);;
     
 }
 
@@ -240,7 +240,7 @@ i < size; i++)
     public getUsersWithRole(userRole: UserRole): Vector{
 var userRole = userRole
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -266,7 +266,7 @@ keysAndValues!.put(UserRoleData.NAME.toString(), userRole!.toString());
 index < size; index++)
         {
 
-    var userHashMap: HashMap =  as HashMapusersHashMapVector!.get(index as Object);;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -290,7 +290,7 @@ index < size; index++)
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -316,7 +316,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getN
 index < size; index++)
         {
 
-    var userHashMap: HashMap =  as HashMapusersHashMapVector!.get(index as Object);;
+    var userHashMap: HashMap<any, any> = usersHashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -340,13 +340,13 @@ index < size; index++)
     public getUser(userName: string): UserInterface{
 var userName = userName
 
-    var row: HashMap = new HashMap();
+    var row: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 row.put(UserData.USERNAME, userName);
     
 
-    var userHashMap: HashMap = super.getRow(row)!;
+    var userHashMap: HashMap<any, any> = super.getRow(row)!;
 ;
     
 
@@ -555,7 +555,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
 }
 
 
-    public update(userName: string, updatedValues: HashMap){
+    public update(userName: string, updatedValues: HashMap<any, any>){
 var userName = userName
 var updatedValues = updatedValues
 super.updateWhere(UserData.USERNAME, userName, updatedValues);

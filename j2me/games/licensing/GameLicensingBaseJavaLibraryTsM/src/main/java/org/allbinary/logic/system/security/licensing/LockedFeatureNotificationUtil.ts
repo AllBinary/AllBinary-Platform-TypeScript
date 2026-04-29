@@ -75,7 +75,7 @@ export class LockedFeatureNotificationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LockedFeatureNotificationUtil.instance;
     
 }
 
@@ -87,7 +87,7 @@ export class LockedFeatureNotificationUtil
     public fire(){
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
     
-GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
+GameNotificationEventHandler.getInstance()!.fireEvent(this.gameNotificationEvent);
     
 }
 
@@ -98,9 +98,9 @@ GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
 var basicColor = basicColor
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
     
-gameNotificationEvent!.setBasicColorP(basicColor);
+this.gameNotificationEvent!.setBasicColorP(basicColor);
     
-GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
+GameNotificationEventHandler.getInstance()!.fireEvent(this.gameNotificationEvent);
     
 }
 

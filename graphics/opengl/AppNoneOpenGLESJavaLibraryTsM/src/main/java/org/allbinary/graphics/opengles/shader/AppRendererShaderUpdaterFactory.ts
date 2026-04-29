@@ -49,14 +49,14 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AppRendererShaderUpdaterFactory.instance;
     
 }
 
 
     private readonly NULL_SHADER_COMPOSITE_ARRAY: ShaderComposite[] = [];
 
-    public readonly shaderCompositeArray: ShaderComposite[] = NULL_SHADER_COMPOSITE_ARRAY;
+    public readonly shaderCompositeArray: ShaderComposite[] = this.NULL_SHADER_COMPOSITE_ARRAY;
 
     private readonly shaderOpenGLProcessorArray: ShaderOpenGLProcessor[] = [];
 

@@ -60,7 +60,7 @@ export class FileItemUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FileItemUtil.instance;
     
 }
 
@@ -150,7 +150,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "write()");
 
                         }
                             
-outputStream=  as ByteArrayOutputStreamstreamUtil!.get(inputStream, outputStream, new Array(16384));;
+outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
     
 
 

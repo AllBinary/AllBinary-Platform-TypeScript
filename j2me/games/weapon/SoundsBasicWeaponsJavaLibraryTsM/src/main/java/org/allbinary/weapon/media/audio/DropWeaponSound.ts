@@ -53,7 +53,7 @@ export class DropWeaponSound extends CompositeSound {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return soundInterface;
+                        return DropWeaponSound.soundInterface;
     
 }
 

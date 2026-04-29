@@ -203,7 +203,7 @@ var paymentGatewayInterface = paymentGatewayInterface
 paymentGatewayInterface!.setLastModified(time);
     
 
-    var whereKeyValuePairs: HashMap = new HashMap();
+    var whereKeyValuePairs: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereKeyValuePairs!.put(StoreFrontData.getInstance()!.NAME.toString(), paymentGatewayInterface!.getStoreName());
@@ -225,7 +225,7 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     }
                                 
 
-    var updateHashMap: HashMap = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
+    var updateHashMap: HashMap<any, any> = new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
                             toHashMap()!;
 ;
     
@@ -264,11 +264,11 @@ var paymentType = paymentType
 
         try {
             
-    var paymentGatewayHashMap: HashMap = new HashMap();
+    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var whereKeyAndValue: HashMap = new HashMap();
+    var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereKeyAndValue!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);
@@ -284,47 +284,47 @@ paymentGatewayHashMap= super.getRow(whereKeyAndValue);
                         
                                     {
                                     
-    var userName: string =  as StringpaymentGatewayHashMap!.get(UserData.USERNAME.toString());;
+    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()); as String;
 ;
     
 
-    var password: string =  as StringpaymentGatewayHashMap!.get(UserData.PASSWORD.toString());;
+    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()); as String;
 ;
     
 
-    var special1: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString());;
+    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()); as String;
 ;
     
 
-    var special2: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString());;
+    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()); as String;
 ;
     
 
-    var special3: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString());;
+    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()); as String;
 ;
     
 
-    var special4: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString());;
+    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()); as String;
 ;
     
 
-    var special5: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString());;
+    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()); as String;
 ;
     
 
-    var special6: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString());;
+    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()); as String;
 ;
     
 
-    var special7: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString());;
+    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()); as String;
 ;
     
 
-    var special8: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString());;
+    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()); as String;
 ;
     
 
-    var special9: string =  as StringpaymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString());;
+    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()); as String;
 ;
     
 
@@ -444,7 +444,7 @@ paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(
 i < size; i++)
         {
 
-    var paymentTypeString: string =  as StringpaymentGatewayNameVector!.get(i);;
+    var paymentTypeString: string = paymentGatewayNameVector!.get(i); as String;
 ;
     
 
@@ -513,7 +513,7 @@ var paymentType = paymentType
 
         try {
             
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME.toString(), storeName);

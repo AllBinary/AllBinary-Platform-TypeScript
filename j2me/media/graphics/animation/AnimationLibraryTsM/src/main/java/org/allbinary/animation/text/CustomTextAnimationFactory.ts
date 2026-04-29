@@ -61,6 +61,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CustomTextAnimation } from "./CustomTextAnimation.js";
+
 export class CustomTextAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {
@@ -89,7 +91,7 @@ this.scaleProperties= new ScaleProperties();
     
 this.text= text;
     
-this.scaleProperties!.scaleHeight= Math.roundfontSize -(fontSize /4);
+this.scaleProperties!.scaleHeight= Math.round(fontSize) -(fontSize /4);
     
 this.initScaleHeight= this.scaleProperties!.scaleHeight;
     

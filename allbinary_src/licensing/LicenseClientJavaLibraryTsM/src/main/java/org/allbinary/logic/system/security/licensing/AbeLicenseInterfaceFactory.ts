@@ -72,7 +72,7 @@ export class AbeLicenseInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return AbeLicenseInterfaceFactory.SINGLETON;
     
 }
 
@@ -108,7 +108,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return get(abeClientInformation);;
+                        return this.get(abeClientInformation);;
     
 
                                     }
@@ -118,7 +118,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return abeLicenseInterface;
+                        return this.abeLicenseInterface;
     
 
                         }
@@ -157,7 +157,7 @@ this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return abeLicenseInterface;
+                        return this.abeLicenseInterface;
     
 
                 //: 
@@ -199,7 +199,7 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 
                         if(this.abeLicenseInterface == 
                                     null
-                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !abeLicenseInterface!.hasKey(); || isCheck() || currentTime -checkPeriod > time)
+                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !this.abeLicenseInterface!.hasKey(); || isCheck() || currentTime -checkPeriod > time)
                         
                                     {
                                     this.abeLicenseInterface= 
@@ -235,7 +235,7 @@ this.check= check;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return check;
+                        return this.check;
     
 }
 

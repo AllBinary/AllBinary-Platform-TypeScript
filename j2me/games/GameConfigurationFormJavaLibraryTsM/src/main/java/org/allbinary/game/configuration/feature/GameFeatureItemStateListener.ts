@@ -147,7 +147,7 @@ this.logUtil!.putF(new StringMaker().
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm,  as GameConfigurationGaugeitem);
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
     
 
                                     }
@@ -164,13 +164,13 @@ this.logUtil!.putF(new StringMaker().
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    gameFeatureUtil!.updateExclusiveForChoiceGroup( as ChoiceGroupitem);
+                                    gameFeatureUtil!.updateExclusiveForChoiceGroup(item as ChoiceGroup);
     
 
                                     }
                                 
                         else {
-                            gameFeatureUtil!.updateMultiple( as ChoiceGroupitem);
+                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup);
     
 
                         }

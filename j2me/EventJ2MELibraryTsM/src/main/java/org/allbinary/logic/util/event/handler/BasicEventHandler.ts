@@ -107,7 +107,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface=  as EventListenerInterfacevector.get(index);;
+eventListenerInterface= vector.get(index); as EventListenerInterface;
     
 this.addListener(eventListenerInterface);
     
@@ -134,7 +134,7 @@ this.addListener(eventListenerInterface);
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface=  as EventListenerInterfacevector.get(index);;
+eventListenerInterface= vector.get(index); as EventListenerInterface;
     
 this.removeListener(eventListenerInterface);
     
@@ -202,7 +202,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -236,7 +236,7 @@ eventListenerInterface!.onEvent(eventObject);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventListenerInterfaceList;
+                        return this.eventListenerInterfaceList;
     
 }
 
@@ -263,7 +263,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 stringBuffer!.append(this.eventStrings!.LISTENER_LABEL);
     

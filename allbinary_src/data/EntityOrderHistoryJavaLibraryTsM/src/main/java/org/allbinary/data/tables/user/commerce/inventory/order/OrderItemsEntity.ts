@@ -181,7 +181,7 @@ var order = order
 i < itemsSize; i++)
         {
 
-    var item: string =  as StringitemsArray[i]!;
+    var item: string = itemsArray[i]! as String;
 ;
     
 
@@ -315,11 +315,11 @@ var status = status
 
         try {
             
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var updateHashMap: HashMap = new HashMap();
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(OrderData.ID, orderId);
@@ -364,7 +364,7 @@ var orderId = orderId
         while(itemStatusIter!.hasNext())
         {
 
-    var status: string =  as StringitemStatusIter!.next();;
+    var status: string = itemStatusIter!.next(); as String;
 ;
     
 
@@ -421,7 +421,7 @@ var orderId = orderId
 ;
     
 
-    var keyValues: HashMap = new HashMap();
+    var keyValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyValues!.put(OrderData.ID, orderId);
@@ -462,7 +462,7 @@ keyValues!.put(OrderData.ID, orderId);
 i < itemsSize; i++)
         {
 
-    var itemHashMap: HashMap =  as HashMapitemsArray[i]!;
+    var itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;
 ;
     
 itemHashMap!.put(BasicItemData.INBASKETS, EMPTY_STRING);

@@ -72,7 +72,7 @@ var list = list
     var index: number = list.size()!;
 --index >= 0; )
         {
-point=  as GPointlist.objectArray[index]!;
+point= list.objectArray[index]! as GPoint;
     
 
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX(), point.getY());)
@@ -122,7 +122,7 @@ var yCellSize = yCellSize
     var index: number = list.size()!;
 --index >= 0; )
         {
-point=  as GPointlist.objectArray[index]!;
+point= list.objectArray[index]! as GPoint;
     
 
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX() *xCellSize, point.getY() *yCellSize);)

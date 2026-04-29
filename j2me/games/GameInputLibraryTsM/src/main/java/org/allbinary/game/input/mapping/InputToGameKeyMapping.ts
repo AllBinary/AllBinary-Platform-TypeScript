@@ -164,7 +164,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var mappedToInput: Input =  as Inputlist.objectArray[index]!;
+    var mappedToInput: Input = list.objectArray[index]! as Input;
 ;
     
 this.add(input, mappedToInput);
@@ -208,7 +208,7 @@ var mappedToInput = mappedToInput
                         if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
                                     {
-                                    this.platformToGameKeyMapping[id]=  as GameKeyinput;
+                                    this.platformToGameKeyMapping[id]= input as GameKey;
     
 
                                     }
@@ -221,7 +221,7 @@ var mappedToInput = mappedToInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformToGameKeyMapping!.length;
+                        return this.platformToGameKeyMapping!.length;
     
 }
 
@@ -338,7 +338,7 @@ var canvas = canvas
 
 
                         for (
-    var index: number = mappedGameKeys!.length
+    var index: number = this.mappedGameKeys!.length
                 ;
 --index >= 0; )
         {
@@ -446,7 +446,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformToGameKeyMapping[id]!;
+                        return this.platformToGameKeyMapping[id]!;
     
 
                                     }
@@ -469,7 +469,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKeyFactory!.NONE;
+                        return this.gameKeyFactory!.NONE;
     
 
                         }
@@ -487,7 +487,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformToGameKeyMapping[id]!;
+                        return this.platformToGameKeyMapping[id]!;
     
 
                                     }
@@ -510,7 +510,7 @@ var id = id
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKeyFactory!.NONE;
+                        return this.gameKeyFactory!.NONE;
     
 
                         }

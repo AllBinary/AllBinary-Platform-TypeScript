@@ -76,11 +76,11 @@ this.file= file;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var tableMappingInterface: TableMappingInterface =  as TableMappingInterfacenew FileTableMapping(this.file);
+    var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;
 ;
     
 
-    var hashMap: HashMap = tableMappingInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = tableMappingInterface!.toHashMap()!;
 ;
     
 

@@ -110,9 +110,9 @@ public constructor (name: string, childNameList: BasicArrayList){
             super();
             //var name = name
     //var childNameList = childNameList
-this.logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
     
-this.displayInfoSingleton!.update(this, canvasStrings!.CONSTRUCTOR);
+this.displayInfoSingleton!.update(this, this.canvasStrings!.CONSTRUCTOR);
     
 this.name= name;
     
@@ -127,7 +127,7 @@ this.commandStack= new Stack();
 var mode = mode
 super.setFullScreenMode(mode);
     
-this.displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE);
+this.displayInfoSingleton!.update(this, this.canvasStrings!.SET_FULL_SCREEN_MODE);
     
 }
 
@@ -135,7 +135,7 @@ this.displayInfoSingleton!.update(this, canvasStrings!.SET_FULL_SCREEN_MODE);
     sizeChanged(w: number, h: number){
 var w = w
 var h = h
-this.displayInfoSingleton!.update(this, canvasStrings!.SIZE_CHANGED);
+this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
 
@@ -203,7 +203,7 @@ super.removeCommand(command);
     var index: number = 0;
 index < size; index++)
         {
-super.removeCommand( as Commandthis.commandStack!.pop());
+super.removeCommand(this.commandStack!.pop() as Command);
     
 }
 
@@ -250,7 +250,7 @@ this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
-this.logUtil!.putF(this.commonStrings!.START, this, canvasStrings!.PAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.PAUSE);
     
 this.removePauseCommand();
     
@@ -263,7 +263,7 @@ this.setPaused(true);
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.logUtil!.putF(this.commonStrings!.START, this, canvasStrings!.UN_PAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.UN_PAUSE);
     
 this.removeCommand(MyCommandsFactory.getInstance()!.RESUME_COMMAND);
     

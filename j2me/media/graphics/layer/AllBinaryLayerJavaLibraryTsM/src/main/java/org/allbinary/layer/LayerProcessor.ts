@@ -96,7 +96,7 @@ var layerInterface = layerInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerManager;
+                        return this.layerManager;
     
 }
 
@@ -121,7 +121,7 @@ var allBinaryLayerManager = allBinaryLayerManager
     var index: number = 0;
 index < size; index++)
         {
-this.processAt(allBinaryLayerManager,  as AllBinaryLayerlayerManager!.getLayerAt(index), index);
+this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index);
     
 }
 

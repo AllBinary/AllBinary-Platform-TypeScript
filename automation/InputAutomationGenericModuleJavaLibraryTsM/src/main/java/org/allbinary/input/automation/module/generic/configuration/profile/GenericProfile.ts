@@ -165,7 +165,7 @@ this.vector.remove(genericProfileDataWorkerType);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, name)!;
+    var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, this.name)!;
 ;
     
 
@@ -181,7 +181,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypethis.vector.get(index);;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index); as GenericProfileDataWorkerType;
 ;
     
 node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));
@@ -202,7 +202,7 @@ node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -219,7 +219,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return genericProfileActions;
+                        return this.genericProfileActions;
     
 }
 

@@ -106,7 +106,7 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap = this.downloadableItem!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
 ;
     
 
@@ -209,11 +209,11 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(second
 index < size; index++)
         {
 
-    var name: string =  as StringnameArray[index]!;
+    var name: string = nameArray[index]! as String;
 ;
     
 
-    var value: string =  as StringhashMap!.get(name as Object);;
+    var value: string = hashMap!.get(name as Object); as String;
 ;
     
 value= stringUtil!.getNonNull(value);

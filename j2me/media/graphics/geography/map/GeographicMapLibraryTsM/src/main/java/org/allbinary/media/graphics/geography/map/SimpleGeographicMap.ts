@@ -104,7 +104,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return this.id;
     
 }
 
@@ -114,7 +114,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -128,7 +128,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tiledLayer;
+                        return this.tiledLayer;
     
 }
 
@@ -185,7 +185,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return foregroundBasicColor;
+                        return this.foregroundBasicColor;
     
 }
 
@@ -202,7 +202,7 @@ this.foregroundBasicColor= foregroundBasicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return backgroundBasicColor;
+                        return this.backgroundBasicColor;
     
 }
 

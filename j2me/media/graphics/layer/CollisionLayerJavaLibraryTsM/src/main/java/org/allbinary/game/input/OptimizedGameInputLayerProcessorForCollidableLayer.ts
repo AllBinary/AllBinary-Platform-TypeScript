@@ -67,7 +67,7 @@ public constructor (){
     //var layerInterface = layerInterface
     //var index = index
 
-    var gameInputInterface: AllBinaryGameLayer =  as AllBinaryGameLayerlayerInterface;
+    var gameInputInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;
 ;
     
 gameInputInterface!.processInput(allBinaryLayerManager);

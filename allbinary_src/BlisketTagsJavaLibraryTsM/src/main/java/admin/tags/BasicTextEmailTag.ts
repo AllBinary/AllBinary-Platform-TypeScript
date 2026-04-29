@@ -90,7 +90,7 @@ this.body= value;
 
         try {
             
-    var propertiesHashMap: HashMap = new HashMap();
+    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 propertiesHashMap!.put("Subject", this.subject);

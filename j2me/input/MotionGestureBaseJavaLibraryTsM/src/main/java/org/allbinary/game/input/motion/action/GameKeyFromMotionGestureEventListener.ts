@@ -86,7 +86,7 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
             
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventcompleteMotionGestureInputEvent;
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
 ;
     
 
@@ -101,7 +101,7 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
                         if(this.previousGameKeyEvent != GameKeyEvent.NONE)
                         
                                     {
-                                    UpGameKeyEventHandler.getInstance()!.fireEvent(previousGameKeyEvent);
+                                    UpGameKeyEventHandler.getInstance()!.fireEvent(this.previousGameKeyEvent);
     
 
                                     }

@@ -91,7 +91,7 @@ export class PCComponentFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PCComponentFactory.instance;
     
 }
 
@@ -124,7 +124,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Ethernet(componentData);
+                        return new Ethernet(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -137,7 +137,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Bridge(componentData);
+                        return new Bridge(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -150,7 +150,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew HardDriveController(componentData);
+                        return new HardDriveController(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -163,7 +163,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Media(componentData);
+                        return new Media(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -176,7 +176,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew HardDriveController(componentData);
+                        return new HardDriveController(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -189,7 +189,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Usb(componentData);
+                        return new Usb(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -202,7 +202,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Video(componentData);
+                        return new Video(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -215,7 +215,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew PCI(componentData);
+                        return new PCI(componentData) as HardwareComponentInterface;
     
 
                                     }
@@ -227,7 +227,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HardwareComponentInterfacenew Unknown(componentData);
+                        return new Unknown(componentData) as HardwareComponentInterface;
     
 
                 //: 

@@ -72,7 +72,7 @@ export class CamelCaseUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CamelCaseUtil.instance;
     
 }
 
@@ -131,7 +131,7 @@ tokenizer.getTokens(string, list);
     var i: number = 0;
 i < size; i++)
         {
-word=  as Stringlist.get(i);;
+word= list.get(i); as String;
     
 word= stringValidationUtil!.isEmpty(word)
                         ?       

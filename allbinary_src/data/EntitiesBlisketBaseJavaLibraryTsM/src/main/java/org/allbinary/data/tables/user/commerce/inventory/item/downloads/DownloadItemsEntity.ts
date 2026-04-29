@@ -152,9 +152,9 @@ var value = value
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(DownloadItemData.ID,  as StringupdatedValues!.get(DownloadItemData.ID), updatedValues);
+super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues);
     
 }
 
@@ -166,7 +166,7 @@ var id = id
 ;
     
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
@@ -188,7 +188,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMapvector.get(index);;
+    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));
@@ -221,7 +221,7 @@ var downloadItemId = downloadItemId
 ;
     
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
@@ -245,7 +245,7 @@ keysAndValues!.put(DownloadItemData.ID, downloadItemId);
 index < size; index++)
         {
 
-    var hashMap: HashMap =  as HashMapvector.get(index);;
+    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));

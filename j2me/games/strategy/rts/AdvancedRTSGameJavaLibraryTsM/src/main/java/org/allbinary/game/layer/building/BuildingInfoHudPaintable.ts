@@ -70,6 +70,8 @@ import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BuildingLayer } from "./BuildingLayer.js";
+
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         
 
@@ -80,7 +82,7 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BuildingInfoHudPaintable.instance;
     
 }
 
@@ -204,7 +206,7 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
 
     public updateSelectionInfo(){
 
-    var buildingLayer: BuildingLayer =  as BuildingLayerthis.rtsLayer;
+    var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;
 ;
     
 this.setName(buildingLayer!.getName());

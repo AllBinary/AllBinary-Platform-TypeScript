@@ -75,7 +75,7 @@ export class PaymentProcessorInterfaceFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PaymentProcessorInterfaceFactory.instance;
     
 }
 
@@ -118,7 +118,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as PaymentProcessorInterfacepaymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface);;
+                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface); as PaymentProcessorInterface;
     
 
                                     }

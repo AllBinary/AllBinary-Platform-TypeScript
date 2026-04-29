@@ -277,7 +277,7 @@ localUnit += centsStr.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return units.longValue();;
+                        return this.units.longValue();;
     
 }
 
@@ -287,7 +287,7 @@ localUnit += centsStr.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return units;
+                        return this.units;
     
 }
 

@@ -52,67 +52,67 @@ export class AndroidKeyFactory extends ActivityFractureUtil {
 
     public readonly UNKNOWN: AndroidGameKey = new AndroidGameKey(KeyEvent.KEYCODE_UNKNOWN, "UNKNOWN");
 
-    public KEYCODE_BUTTON_L1: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_L1: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_R1: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_R1: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_THUMBR: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_THUMBR: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_THUMBL: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_THUMBL: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_START: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_START: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_MODE: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_MODE: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_B: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_B: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_A: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_A: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_X: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_X: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_Y: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_Y: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_L2: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_L2: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_R2: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_R2: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_SELECT: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_SELECT: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_C: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_C: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_Z: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_Z: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_1: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_1: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_10: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_10: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_11: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_11: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_12: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_12: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_13: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_13: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_14: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_14: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_15: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_15: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_16: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_16: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_2: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_2: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_3: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_3: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_4: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_4: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_5: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_5: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_6: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_6: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_7: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_7: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_8: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_8: AndroidGameKey = this.UNKNOWN;
 
-    public KEYCODE_BUTTON_9: AndroidGameKey = UNKNOWN;
+    public KEYCODE_BUTTON_9: AndroidGameKey = this.UNKNOWN;
 
     public readonly SOFT_LEFT: AndroidGameKey = new AndroidGameKey(KeyEvent.KEYCODE_SOFT_LEFT, "SOFT_LEFT");
 
@@ -308,7 +308,7 @@ var input = input
                                     }
                                 
                              else 
-                        if(input == DPAD_CENTER)
+                        if(input == this.DPAD_CENTER)
                         
                                     {
                                     

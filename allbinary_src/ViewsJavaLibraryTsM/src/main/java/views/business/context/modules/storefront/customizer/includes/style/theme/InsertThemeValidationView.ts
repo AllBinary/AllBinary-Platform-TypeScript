@@ -80,7 +80,7 @@ export class InsertThemeValidationView extends ThemeCustomizerView implements Va
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private requestHashMap: HashMap
+    private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -141,7 +141,7 @@ this.requestHashMap= new NameSpaceRequestParams(this.getPageContext()).
                                     }
                                 
 
-    var themeValidation: ThemeValidation = new ThemeValidation(this.getTransformInfoInterface(), requestHashMap);
+    var themeValidation: ThemeValidation = new ThemeValidation(this.getTransformInfoInterface(), this.requestHashMap);
 ;
     
 
@@ -161,7 +161,7 @@ isValid= this.validationInterface!.isValid();
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.validationInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.validationInterface as DomNodeInterface);
     
 
                                     }

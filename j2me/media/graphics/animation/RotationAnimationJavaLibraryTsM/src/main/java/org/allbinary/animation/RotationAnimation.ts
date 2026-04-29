@@ -158,7 +158,7 @@ this.adjustFrame(angle.getValue());
 
     public adjustFrame(angle: number){
     //var angle = angle
-this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.roundthis.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
+this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.round(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
     
 }
 

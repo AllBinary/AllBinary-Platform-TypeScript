@@ -93,9 +93,9 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -123,7 +123,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
                                     }
                                 
 
-    var hashMap: HashMap = new PaymentGatewayMapping(this.paymentGatewayInterface).
+    var hashMap: HashMap<any, any> = new PaymentGatewayMapping(this.paymentGatewayInterface).
                             toHashMap()!;
 ;
     

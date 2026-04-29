@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
@@ -156,7 +158,7 @@ this.reset();
 ;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior =  as IndexedAnimationBehaviorthis.getAnimationBehavior();;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
 ;
     
 
@@ -184,7 +186,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior =  as IndexedAnimationBehaviorthis.getAnimationBehavior();;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
 ;
     
 
@@ -275,7 +277,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = ( as IndexedAnimationBehaviorthis.getAnimationBehavior(););
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior(); as IndexedAnimationBehavior);
 ;
     
 indexedAnimationBehavior!.reset();

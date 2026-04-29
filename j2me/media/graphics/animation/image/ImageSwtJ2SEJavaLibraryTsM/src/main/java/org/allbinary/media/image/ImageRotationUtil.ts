@@ -75,7 +75,7 @@ export class ImageRotationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageRotationUtil.instance;
     
 }
 
@@ -106,7 +106,7 @@ private constructor (){
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageoriginalImage);
+    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
 ;
     
 openGLESImage!.openGLESImageProperties!.angle= totalAngle;
@@ -130,7 +130,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = ( as org.eclipse.swt.graphics.ImageoriginalImage2!.getImage(););
+    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage(); as org.eclipse.swt.graphics.Image);
 ;
     
 
@@ -150,10 +150,10 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                         
                                     {
                                     
-    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
+    var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-copySwtImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+copySwtImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 gc= swtImage!.getGc();
     

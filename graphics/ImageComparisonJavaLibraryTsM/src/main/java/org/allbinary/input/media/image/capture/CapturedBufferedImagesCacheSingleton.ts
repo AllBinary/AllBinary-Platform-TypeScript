@@ -72,7 +72,7 @@ export class CapturedBufferedImagesCacheSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cacheInterface;
+                        return CapturedBufferedImagesCacheSingleton.cacheInterface;
     
 }
 
@@ -98,7 +98,7 @@ export class CapturedBufferedImagesCacheSingleton
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-cacheInterface=  as AutomaticCacheInterfaceCacheInterfaceFactory.getInstance((), ());;
+CapturedBufferedImagesCacheSingleton.cacheInterface= CacheInterfaceFactory.getInstance((), ()); as AutomaticCacheInterface;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     

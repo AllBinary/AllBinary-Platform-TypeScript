@@ -321,7 +321,7 @@ this.logUtil!.putF("LineEvent: " +event, this, commonStrings!.UPDATE);
 index < size; index++)
         {
 
-    var listener: PlayerListener =  as PlayerListenerthis.listenersList!.objectArray[index]!;
+    var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;
 ;
     
 listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
@@ -361,7 +361,7 @@ this.mediaPlayer= mediaPlayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mediaPlayer;
+                        return this.mediaPlayer;
     
 }
 

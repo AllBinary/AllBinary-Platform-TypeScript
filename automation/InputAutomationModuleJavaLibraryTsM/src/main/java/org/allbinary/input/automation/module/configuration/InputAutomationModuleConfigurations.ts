@@ -82,13 +82,13 @@ export class InputAutomationModuleConfigurations
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap
+    private hashMap: HashMap<any, any>
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
             //var abeClientInformation = abeClientInformation
     //var file = file
-this.setHashMap(new HashMap());
+this.setHashMap(new HashMap<any, any>());
     
 
     var bytes: number[] = new Array(100000);
@@ -154,7 +154,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
             //var abeClientInformation = abeClientInformation
     //var document = document
-this.setHashMap(new HashMap());
+this.setHashMap(new HashMap<any, any>());
     
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
@@ -184,7 +184,7 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
             //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(new HashMap());
+this.setHashMap(new HashMap<any, any>());
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
@@ -213,7 +213,7 @@ this.add(inputAutomationModuleConfiguration);
 public constructor (){
 
             super();
-        this.setHashMap(new HashMap());
+        this.setHashMap(new HashMap<any, any>());
     
 }
 
@@ -232,17 +232,17 @@ this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
 }
 
 
-    public getHashMap(): HashMap{
+    public getHashMap(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap;
+                        return this.hashMap;
     
 }
 
 
-    public setHashMap(hashMap: HashMap){
+    public setHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 this.hashMap= hashMap;
     

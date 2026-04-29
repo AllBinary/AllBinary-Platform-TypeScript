@@ -136,11 +136,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(ADDANOTHERDOWNLOADABLE) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(ADDANOTHERDOWNLOADABLE) != 0))
                         
                                     {
                                     
@@ -275,7 +275,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemdownloadableFileObject;
+    var fileItem: FileItem = downloadableFileObject as FileItem;
 ;
     
 
@@ -327,7 +327,7 @@ this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString());
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemlicenseFileObject;
+    var fileItem: FileItem = licenseFileObject as FileItem;
 ;
     
 
@@ -371,7 +371,7 @@ HttpFileUploadUtil.log(fileItem);
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemextraFilesObject;
+    var fileItem: FileItem = extraFilesObject as FileItem;
 ;
     
 
@@ -409,7 +409,7 @@ this.unzip(fileItem);
                         }
                             
 
-    var hashMap: HashMap = this.getRequestHashMap()!;
+    var hashMap: HashMap<any, any> = this.getRequestHashMap()!;
 ;
     
 hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
@@ -545,11 +545,11 @@ var document = document
 ;
     
 
-    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(ADDPRODUCT) != 0 && command.compareTo(ADDANOTHERDOWNLOADABLE) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(ADDANOTHERDOWNLOADABLE) != 0))
                         
                                     {
                                     
@@ -650,7 +650,7 @@ stringBuffer!.append("<br />");
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemdownloadableFileObject;
+    var fileItem: FileItem = downloadableFileObject as FileItem;
 ;
     
 
@@ -683,7 +683,7 @@ stringBuffer!.append("<br/>");
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemlicenseFileObject;
+    var fileItem: FileItem = licenseFileObject as FileItem;
 ;
     
 
@@ -712,7 +712,7 @@ this.validationInfo(stringBuffer, fileName, size);
                         
                                     {
                                     
-    var fileItem: FileItem =  as FileItemextraFilesObject;
+    var fileItem: FileItem = extraFilesObject as FileItem;
 ;
     
 

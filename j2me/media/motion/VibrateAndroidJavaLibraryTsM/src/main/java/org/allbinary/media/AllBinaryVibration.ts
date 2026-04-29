@@ -63,7 +63,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VIBRATION;
+                        return AllBinaryVibration.VIBRATION;
     
 }
 
@@ -73,13 +73,13 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
                         if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
                         
                                     {
-                                    VIBRATION= AllBinaryNoVibration.NO_VIBRATION;
+                                    AllBinaryVibration.VIBRATION= AllBinaryNoVibration.NO_VIBRATION;
     
 
                                     }
                                 
                         else {
-                            VIBRATION= new AllBinaryVibration();
+                            AllBinaryVibration.VIBRATION= new AllBinaryVibration();
     
 
                         }
@@ -87,7 +87,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 }
 
 
-    private readonly vibrator: Vibrator =  as VibratorResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE);;
+    private readonly vibrator: Vibrator = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE); as Vibrator;
 protected constructor (){
 
             super();
@@ -98,7 +98,7 @@ protected constructor (){
 var duration = duration
 var type = type
 var volume = volume
-vibrator.vibrate(duration);
+this.vibrator.vibrate(duration);
     
 }
 

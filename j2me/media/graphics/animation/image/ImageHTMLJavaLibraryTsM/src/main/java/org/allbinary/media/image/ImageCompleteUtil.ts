@@ -73,7 +73,7 @@ export class ImageCompleteUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageCompleteUtil.instance;
     
 }
 
@@ -101,7 +101,7 @@ var image = image
 var name = name
 var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage =  as PlaynImageimage;
+    var playnImage: PlaynImage = image as PlaynImage;
 ;
     
 
@@ -145,7 +145,7 @@ var image = image
 var name = name
 var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage =  as PlaynImageimage;
+    var playnImage: PlaynImage = image as PlaynImage;
 ;
     
 
@@ -174,7 +174,7 @@ var timeDelayHelper = timeDelayHelper
 this.allTimeDelayHelper!.setStartTime();
     
 
-    var hashtable: Hashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;
+    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;
 ;
     
 
@@ -196,7 +196,7 @@ PreLogUtil.put("Total: " +size, this, "waitForAll");
     var index: number = 0;
 index < size; index++)
         {
-this.waitForATime( as Imagehashtable.get(objectArray[index]!),  as StringobjectArray[index]!, this.allTimeDelayHelper);
+this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
     
 }
 

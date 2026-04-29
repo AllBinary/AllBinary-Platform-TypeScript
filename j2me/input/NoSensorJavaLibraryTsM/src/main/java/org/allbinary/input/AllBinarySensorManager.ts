@@ -67,7 +67,7 @@ export class AllBinarySensorManager
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return AllBinarySensorManager.SINGLETON;
     
 }
 
@@ -110,7 +110,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list;
+                        return this.list;
     
 }
 

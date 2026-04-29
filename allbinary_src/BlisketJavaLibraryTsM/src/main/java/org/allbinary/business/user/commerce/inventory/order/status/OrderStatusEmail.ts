@@ -157,11 +157,11 @@ this.notifyUser();
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
+    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody);
+    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
@@ -229,7 +229,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, subject, textBody);
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, subject, textBody) as BasicEmailInfo;
 ;
     
 

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -60,7 +62,7 @@ export class SecondaryThreadPool extends ThreadPool {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SecondaryThreadPool.instance;
     
 }
 

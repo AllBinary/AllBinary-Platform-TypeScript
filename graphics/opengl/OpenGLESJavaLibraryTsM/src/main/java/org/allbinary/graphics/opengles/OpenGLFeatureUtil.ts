@@ -59,7 +59,7 @@ export class OpenGLFeatureUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OpenGLFeatureUtil.instance;
     
 }
 
@@ -90,7 +90,7 @@ this.anyThreed= openGLConfiguration!.isOpenGL() && (features.isFeature(openGLFea
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyThreed;
+                        return this.anyThreed;
     
 }
 

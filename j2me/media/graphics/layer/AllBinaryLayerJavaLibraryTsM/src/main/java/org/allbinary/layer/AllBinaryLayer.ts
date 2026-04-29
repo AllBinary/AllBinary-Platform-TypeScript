@@ -191,7 +191,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.getZP() +this.getDepth());
+                        return Math.round((this.getZP() +this.getDepth()));
     
 }
 
@@ -201,7 +201,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -218,7 +218,7 @@ this.halfWidth= halfWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfWidth;
+                        return this.halfWidth;
     
 }
 
@@ -235,7 +235,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return halfHeight;
+                        return this.halfHeight;
     
 }
 
@@ -245,7 +245,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundthis.getDepth(); /2;
+                        return Math.round(this.getDepth();) /2;
     
 }
 
@@ -255,7 +255,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewPosition;
+                        return this.viewPosition;
     
 }
 

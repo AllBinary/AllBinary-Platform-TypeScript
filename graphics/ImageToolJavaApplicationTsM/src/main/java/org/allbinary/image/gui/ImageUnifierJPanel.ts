@@ -98,6 +98,12 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { Icon } from "./Icon.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -106,13 +112,13 @@ import { KeyEvent } from "./KeyEvent.js";
 
 import { PropertyChangeEvent } from "./PropertyChangeEvent.js";
 
+import { DefaultListModel } from "./DefaultListModel.js";
+
 import { JTextField } from "./JTextField.js";
 
 import { JButton } from "./JButton.js";
 
 import { JList } from "./JList.js";
-
-import { JLabel } from "./JLabel.js";
 
 import { JScrollPane } from "./JScrollPane.js";
 
@@ -140,7 +146,7 @@ public constructor (imageProcessorInput: ImageProcessorInput){
 
             super();
             //var imageProcessorInput = imageProcessorInput
-initComponents();
+this.initComponents();
     
 this.setImageProcessorInput(imageProcessorInput);
     
@@ -189,7 +195,7 @@ index < bufferedImageArray!.length; index++)
 ;
     
 
-    var newHeight: number = Math.round(newWidth /oldRatio);
+    var newHeight: number = Math.round((newWidth /oldRatio));
 ;
     
 
@@ -237,7 +243,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquethis.imageJList!.getModel()!.getElementAt(index);;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
 ;
     
 
@@ -323,7 +329,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquethis.imageJList!.getModel()!.getElementAt(index);;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
 ;
     
 
@@ -482,7 +488,7 @@ this.jScrollPane1!.setViewportView(this.imageJList);
     
 this.jButton1!.setText("Save");
     
-jButton1!.addActionListener(new java.awt.event.ActionListener()
+this.jButton1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -496,7 +502,7 @@ jButton1ActionPerformed(evt);
     
 this.upJButton!.setText("Up");
     
-upJButton!.addActionListener(new java.awt.event.ActionListener()
+this.upJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -510,7 +516,7 @@ upJButtonActionPerformed(evt);
     
 this.downJButton!.setText("Down");
     
-downJButton!.addActionListener(new java.awt.event.ActionListener()
+this.downJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -524,7 +530,7 @@ downJButtonActionPerformed(evt);
     
 this.fudgeItJButton!.setText("Fudge It!");
     
-fudgeItJButton!.addActionListener(new java.awt.event.ActionListener()
+this.fudgeItJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -540,7 +546,7 @@ this.jLabel2!.setText("Columns:");
     
 this.columnsJTextField!.setText(commonPhoneStrings!.TWO);
     
-columnsJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.columnsJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -552,7 +558,7 @@ columnsJTextFieldActionPerformed(evt);
                                 }
                             );
     
-columnsJTextField!.addPropertyChangeListener(new java.beans.PropertyChangeListener()
+this.columnsJTextField!.addPropertyChangeListener(new java.beans.PropertyChangeListener()
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
@@ -564,7 +570,7 @@ columnsJTextFieldPropertyChange(evt);
                                 }
                             );
     
-columnsJTextField!.addKeyListener(new java.awt.event.KeyAdapter()
+this.columnsJTextField!.addKeyListener(new java.awt.event.KeyAdapter()
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
@@ -586,7 +592,7 @@ this.jLabel1!.setText("Rows:");
     
 this.rowsJTextField!.setText(commonPhoneStrings!.TWO);
     
-rowsJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.rowsJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -602,7 +608,7 @@ this.jLabel3!.setText("Cell Width:");
     
 this.cellWidthJTextField!.setText("200");
     
-cellWidthJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.cellWidthJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -618,7 +624,7 @@ this.jLabel4!.setText("Cell Height:");
     
 this.cellHeightJTextField!.setText("150");
     
-cellHeightJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.cellHeightJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -640,7 +646,7 @@ this.avgRatioJTextField!.setEditable(false);
     
 this.jButton2!.setText(this.commonStrings!.UPDATE);
     
-jButton2!.addActionListener(new java.awt.event.ActionListener()
+this.jButton2!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -654,7 +660,7 @@ jButton2ActionPerformed(evt);
     
 this.jButtonOrder!.setText("Order");
     
-jButtonOrder!.addActionListener(new java.awt.event.ActionListener()
+this.jButtonOrder!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -795,7 +801,7 @@ var evt = evt
 ;
     
 
-    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
 ;
     
 
@@ -803,7 +809,7 @@ var evt = evt
                         
                                     {
                                     
-    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(index);;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index +1);
@@ -829,11 +835,11 @@ var evt = evt
                         
                                     {
                                     
-    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
 ;
     
 
-    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(index);;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index -1);
@@ -851,7 +857,7 @@ this.updateImage();
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
 ;
     
 
@@ -871,7 +877,7 @@ var evt = evt
 index >= 0; index--)
         {
 
-    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(last);;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last); as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, last -index);
@@ -941,7 +947,7 @@ this.updateImage();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 

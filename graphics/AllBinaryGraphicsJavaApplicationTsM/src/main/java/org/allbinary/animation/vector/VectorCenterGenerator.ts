@@ -130,7 +130,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public calculate(hashMap: HashMap){
+    public calculate(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
@@ -150,7 +150,7 @@ var hashMap = hashMap
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
@@ -166,19 +166,19 @@ index < size; index++)
 
 this.logUtil!.putF("minX: " +this.minX +" minY: " +this.minY +" maxX: " +this.maxX +" maxY: " +this.maxY, this, commonStrings!.GET_INSTANCE);
     
-setWidth(this.maxX -this.minX);
+this.setWidth(this.maxX -this.minX);
     
-setHeight(this.maxY -this.minY);
+this.setHeight(this.maxY -this.minY);
     
 
-    var max: number = getWidth()!;
+    var max: number = this.getWidth()!;
 ;
     
 
                         if(getHeight() > max)
                         
                                     {
-                                    max= getHeight();
+                                    max= this.getHeight();
     
 
                                     }
@@ -199,11 +199,11 @@ setHeight(this.maxY -this.minY);
 this.logUtil!.putF(s, this, commonStrings!.GET_INSTANCE);
     
 
-    var currentMiddleX: number = this.minX +getWidth() /2;
+    var currentMiddleX: number = this.minX +this.getWidth() /2;
 ;
     
 
-    var currentMiddleY: number = this.minY +getHeight() /2;
+    var currentMiddleY: number = this.minY +this.getHeight() /2;
 ;
     
 this.dx= middle -currentMiddleX;
@@ -215,7 +215,7 @@ this.dy= middle -currentMiddleY;
 
                 //@Throws(Error::class)
             
-    public transform(hashMap: HashMap){
+    public transform(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 this.calculate(hashMap);
     
@@ -240,11 +240,11 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
 ;
     
 
-    var list: BasicArrayList = translate(item.getPointsInterface()!.getPoints(), dx, dy)!;
+    var list: BasicArrayList = VectorCenterGenerator.translate(item.getPointsInterface()!.getPoints(), dx, dy)!;
 ;
     
 
@@ -283,7 +283,7 @@ var pointVector = pointVector
 index < size; index++)
         {
 
-    var point: GPoint =  as GPointpointVector!.get(index);;
+    var point: GPoint = pointVector!.get(index); as GPoint;
 ;
     
 
@@ -345,7 +345,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return width;
+                        return this.width;
     
 }
 
@@ -362,7 +362,7 @@ this.width= width;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return height;
+                        return this.height;
     
 }
 

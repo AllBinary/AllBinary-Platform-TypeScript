@@ -74,7 +74,7 @@ export class RaceTrackData
 
     private NO_OVER_PASSES_ARRAY: CellPosition[] = [];
 
-    private overPassGeographicMapCellPositionArray: CellPosition[] = NO_OVER_PASSES_ARRAY;
+    private overPassGeographicMapCellPositionArray: CellPosition[] = this.NO_OVER_PASSES_ARRAY;
 
     private id: number
 public constructor (id: number, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
@@ -116,7 +116,7 @@ this.mapArray= mapArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mapArray;
+                        return this.mapArray;
     
 }
 
@@ -133,7 +133,7 @@ this.cellTypeIdToGeographicMapCellTypeArray= cellTypeIdToGeographicMapCellTypeAr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellTypeIdToGeographicMapCellTypeArray;
+                        return this.cellTypeIdToGeographicMapCellTypeArray;
     
 }
 
@@ -150,7 +150,7 @@ this.cellWidth= cellWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellWidth;
+                        return this.cellWidth;
     
 }
 
@@ -167,7 +167,7 @@ this.cellHeight= cellHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cellHeight;
+                        return this.cellHeight;
     
 }
 
@@ -177,7 +177,7 @@ this.cellHeight= cellHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return overPassGeographicMapCellPositionArray;
+                        return this.overPassGeographicMapCellPositionArray;
     
 }
 
@@ -194,7 +194,7 @@ this.overPassGeographicMapCellPositionArray= overPassGeographicMapCellPositionAr
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return tileSetImage;
+                        return this.tileSetImage;
     
 }
 
@@ -211,7 +211,7 @@ this.tileSetImage= tileSetImage;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return miniTileSetImage;
+                        return this.miniTileSetImage;
     
 }
 
@@ -228,7 +228,7 @@ this.miniTileSetImage= miniTileSetImage;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return miniCellWidth;
+                        return this.miniCellWidth;
     
 }
 
@@ -245,7 +245,7 @@ this.miniCellWidth= miniCellWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return miniCellHeight;
+                        return this.miniCellHeight;
     
 }
 
@@ -269,7 +269,7 @@ this.id= id;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return id;
+                        return this.id;
     
 }
 

@@ -179,7 +179,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "initialize()");
 index < end; index++)
         {
 
-    var nextFile: AbFile =  as AbFilefileBasicArrayList!.get(index);;
+    var nextFile: AbFile = fileBasicArrayList!.get(index); as AbFile;
 ;
     
 

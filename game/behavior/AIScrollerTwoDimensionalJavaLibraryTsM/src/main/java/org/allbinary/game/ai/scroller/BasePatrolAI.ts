@@ -86,7 +86,7 @@ export class BasePatrolAI extends BasicAI {
     lastKeyDirection: number = Canvas.RIGHT;
 
     keyDirection: number = Canvas.RIGHT;
-public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -95,7 +95,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.maxDistance=  as Integerhashtable.get(BasePatrolAI.MAX_DISTANCE);;
+this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
     
 this.currentDistance= this.maxDistance!.toInt();
     
@@ -112,7 +112,7 @@ this.changeDirectionIfReachedPacingAreaMax();
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
 ;
     
 

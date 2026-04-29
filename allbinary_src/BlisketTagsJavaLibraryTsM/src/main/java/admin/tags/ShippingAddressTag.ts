@@ -103,8 +103,8 @@ this.value= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -171,8 +171,8 @@ this.value= value;
 ;
     
 
-    var result: string =  as Stringmethod.invoke(anyType, 
-                            null);;
+    var result: string = method.invoke(anyType, 
+                            null); as String;
 ;
     
 
@@ -238,7 +238,7 @@ this.value= value;
                         if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
-                                    set();
+                                    this.set();
     
 
 
@@ -253,7 +253,7 @@ this.value= value;
                         if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
-                                    setToBillingAddress();
+                                    this.setToBillingAddress();
     
 
                                     }

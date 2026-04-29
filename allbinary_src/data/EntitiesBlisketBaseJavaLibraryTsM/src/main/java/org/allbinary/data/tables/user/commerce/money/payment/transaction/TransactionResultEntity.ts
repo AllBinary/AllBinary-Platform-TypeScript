@@ -101,10 +101,10 @@ var orderNumber = orderNumber
 
         try {
             
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-whereHashMap!.put(OrderData.ID,  as StringorderNumber);
+whereHashMap!.put(OrderData.ID, orderNumber as String);
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
@@ -200,11 +200,11 @@ var orderNumber = orderNumber
 
         try {
             
-    var resultHashMap: HashMap = new HashMap();
+    var resultHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
-    var updateKeyAndValue: HashMap = new HashMap();
+    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 updateKeyAndValue!.put(OrderData.ID, orderNumber);
@@ -234,7 +234,7 @@ resultHashMap= super.getRow(updateKeyAndValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransactionResultInterfacetransactionResult;
+                        return transactionResult as TransactionResultInterface;
     
 
                                     }

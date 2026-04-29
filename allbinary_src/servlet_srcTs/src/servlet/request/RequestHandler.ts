@@ -101,7 +101,7 @@ var response = response
 ;
     
 
-    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance( as ServletRequestrequest,  as ServletResponseresponse, this.getServletConfig(), this.getServletContext())!;
+    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;
 ;
     
 
@@ -160,7 +160,7 @@ response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 
@@ -170,7 +170,7 @@ processRequest(request, response);
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
 var response = response
-processRequest(request, response);
+this.processRequest(request, response);
     
 }
 

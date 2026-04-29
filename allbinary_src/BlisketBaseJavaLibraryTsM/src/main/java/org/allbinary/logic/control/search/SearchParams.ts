@@ -67,7 +67,7 @@ export class SearchParams
          {
         
 
-    private columnsAndSearchValues: HashMap
+    private columnsAndSearchValues: HashMap<any, any>
 
     private order: string
 
@@ -82,7 +82,7 @@ public constructor (request: HttpServletRequest){
 
             super();
         var request = request
-this.columnsAndSearchValues= new HashMap();
+this.columnsAndSearchValues= new HashMap<any, any>();
     
 this.setLength(request.getParameter(SearchData.LENGTH));
     
@@ -171,7 +171,7 @@ this.endPage= value;
 }
 
 
-    public get(): HashMap{
+    public get(): HashMap<any, any>{
 
 
 
@@ -327,7 +327,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
     getFieldsNode(document: Document): Node{
 var document = document
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, columnsAndSearchValues!.size().
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, this.columnsAndSearchValues!.size().
                             toString())!;
 ;
     
@@ -353,11 +353,11 @@ var document = document
 index < size; index++)
         {
 
-    var key: string =  as StringsearchValueArray[index]!;
+    var key: string = searchValueArray[index]! as String;
 ;
     
 
-    var searchValue: string =  as Stringthis.columnsAndSearchValues!.get(key);;
+    var searchValue: string = this.columnsAndSearchValues!.get(key); as String;
 ;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));

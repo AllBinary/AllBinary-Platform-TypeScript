@@ -110,7 +110,7 @@ var y = y
     var index: number = 0;
 index < size; index++)
         {
-secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)
@@ -138,7 +138,7 @@ this.pointBasicArrayList= newBasicArrayList;
             
     public rotateToAngle(angle: Angle){
 var angle = angle
-this.rotate(Math.roundangle.getValue());
+this.rotate(Math.round(angle.getValue()));
     
 }
 
@@ -197,7 +197,7 @@ var angle = angle
     var index: number = 0;
 index < size; index++)
         {
-secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)
@@ -213,7 +213,7 @@ secondX= (secondPoint!.getX() *cos) -y;
     
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
     
-point= pointFactory!.createXY(Math.roundsecondX /10000, Math.roundsecondY /10000);
+point= pointFactory!.createXY(Math.round(secondX) /10000, Math.round(secondY) /10000);
     
 newBasicArrayList!.add(point);
     
@@ -273,7 +273,7 @@ var width = width
     var index: number = 0;
 index < size; index++)
         {
-secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
+secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
     
 
                         if(secondPoint!.getX() != 1000)

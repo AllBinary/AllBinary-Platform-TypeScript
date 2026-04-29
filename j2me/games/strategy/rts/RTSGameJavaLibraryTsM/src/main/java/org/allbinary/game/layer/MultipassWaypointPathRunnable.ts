@@ -79,7 +79,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
 
     private done: boolean = false;
 
-    private list: BasicArrayList = basicArrayListUtil!.getImmutableInstance()!;
+    private list: BasicArrayList = this.basicArrayListUtil!.getImmutableInstance()!;
 
     private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
 
@@ -118,7 +118,7 @@ reset2();
 pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
     
 
-    var localPathFindingInfo: PathFindingInfo =  as PathFindingInfopathFindingInfo;
+    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
 ;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
@@ -174,7 +174,7 @@ finish();
 ;
     
 
-    var localPathFindingInfo: PathFindingInfo =  as PathFindingInfopathFindingInfo;
+    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
 ;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
@@ -314,7 +314,7 @@ this.setRunning(false);
 
 
     reset2(){
-multipassState!.step= 0;
+this.multipassState!.step= 0;
     
 this.multipassState!.iteration= 0;
     
@@ -340,7 +340,7 @@ this.done= true;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return done;
+                        return this.done;
     
 }
 

@@ -97,7 +97,7 @@ export class BlisketBackupFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BlisketBackupFactory.instance;
     
 }
 
@@ -124,7 +124,7 @@ var pathString = pathString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return directory.search(file, true);;
+                        return this.directory.search(file, true);;
     
 }
 
@@ -213,7 +213,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -303,7 +303,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
 ;
     
 
@@ -397,7 +397,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
 ;
     
 PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()");

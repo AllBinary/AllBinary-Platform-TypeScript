@@ -49,7 +49,7 @@ export class InputOutputTypeData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return InputOutputTypeData.instance;
     
 }
 
@@ -77,9 +77,9 @@ private constructor (){
 
     public readonly PL: string = "pl";
 
-    public readonly DEFAULT: string = JSP;
+    public readonly DEFAULT: string = this.JSP;
 
-    public readonly DEFAULT_FRAGMENT: string = JSP_FRAGMENT;
+    public readonly DEFAULT_FRAGMENT: string = this.JSP_FRAGMENT;
 
 }
                 

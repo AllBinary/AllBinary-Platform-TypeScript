@@ -90,7 +90,7 @@ public constructor (pageContext: PageContext){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest( as HttpServletRequestpageContext!.getRequest());
+this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest);
     
 }
 
@@ -106,7 +106,7 @@ var request = request
 
         try {
             
-    var specialRequest: HashMap = new HashMap();
+    var specialRequest: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -146,7 +146,7 @@ var request = request
 index < size; index++)
         {
 
-    var fileItem: FileItem =  as FileItemfileItemArray[index]!;
+    var fileItem: FileItem = fileItemArray[index]! as FileItem;
 ;
     
 
@@ -224,7 +224,7 @@ super.setMap(request.getParameterMap());
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
                         if(this.special)
                         
@@ -233,7 +233,7 @@ super.setMap(request.getParameterMap());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as HashMapthis.getMap();;
+                        return this.getMap(); as HashMap<any, any>;
     
 
                                     }

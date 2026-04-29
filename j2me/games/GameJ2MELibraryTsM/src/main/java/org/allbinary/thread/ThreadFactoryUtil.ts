@@ -88,7 +88,7 @@ export class ThreadFactoryUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ThreadFactoryUtil.instance;
     
 }
 
@@ -133,7 +133,7 @@ export class ThreadFactoryUtil
                         
                                     {
                                     
-    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable( as RunnableCanvasrunnable);
+    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);
 ;
     
 PreLogUtil.put(new StringMaker().

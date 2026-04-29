@@ -68,7 +68,7 @@ export class ImageRotationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageRotationUtil.instance;
     
 }
 
@@ -89,11 +89,11 @@ private constructor (){
                         
                                     {
                                     
-    var j2seImage: J2SEMutableImage =  as J2SEMutableImageimage;
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
 ;
     
 
-    var newBufferedImage: BufferedImage =  as BufferedImagej2seImage!.getImage();;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
 ;
     
 
@@ -107,20 +107,20 @@ private constructor (){
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage =  as J2SEMutableImageoriginalImage;
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
 ;
     
-originalAwtImage=  as java.awt.ImageoriginalJ2SEImage!.getImage();;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                                     }
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage =  as J2SEImmutableImageoriginalImage;
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
 ;
     
-originalAwtImage=  as java.awt.ImageoriginalJ2SEImage!.getImage();;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                         }
@@ -163,30 +163,30 @@ var rotationInDegrees = rotationInDegrees
                         
                                     {
                                     
-    var originalJ2SEImage: J2SEMutableImage =  as J2SEMutableImageoriginalImage;
+    var originalJ2SEImage: J2SEMutableImage = originalImage as J2SEMutableImage;
 ;
     
-originalAwtImage=  as java.awt.ImageoriginalJ2SEImage!.getImage();;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                                     }
                                 
                         else {
                             
-    var originalJ2SEImage: J2SEImmutableImage =  as J2SEImmutableImageoriginalImage;
+    var originalJ2SEImage: J2SEImmutableImage = originalImage as J2SEImmutableImage;
 ;
     
-originalAwtImage=  as java.awt.ImageoriginalJ2SEImage!.getImage();;
+originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
     
 
                         }
                             
 
-    var j2seImage: J2SEMutableImage =  as J2SEMutableImageimage;
+    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
 ;
     
 
-    var newBufferedImage: BufferedImage =  as BufferedImagej2seImage!.getImage();;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
 ;
     
 

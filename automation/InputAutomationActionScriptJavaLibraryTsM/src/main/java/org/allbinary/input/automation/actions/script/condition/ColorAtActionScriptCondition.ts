@@ -106,6 +106,8 @@ import { Point } from "./Point.js";
 
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
 
+import { Color } from "./Color.js";
+
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         
 
@@ -117,7 +119,7 @@ export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondit
 
     private point: Point
 
-    private colorRangeInterface: ColorRangeInterface =  as ColorRangeInterfacenew ColorRange();
+    private colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
 public constructor (node: Node){
             super(ColorAtActionScriptCondition.NAME, node);
                     var node = node
@@ -299,7 +301,7 @@ this.colorAtActionScriptConditionJPanel= new ColorAtActionScriptConditionJPanel(
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return point;
+                        return this.point;
     
 }
 
@@ -317,9 +319,9 @@ this.colorAtActionScriptConditionJPanel!.getColorAtActionJDialog()!.setVisible(t
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(ColorAtActionScriptConditionData.LOCATION_X, Integer.toString(this.getPoint()!.x));
@@ -373,8 +375,8 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
     public shouldProcess(frame: number): boolean{
 var frame = frame
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable =  as BufferedImageFrameCacheable
-                                    (getInstance as AutomaticCacheInterface).get((frame).toLong());;
+    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = 
+                                    (getInstance as AutomaticCacheInterface).get((frame).toLong()); as BufferedImageFrameCacheable;
 ;
     
 
@@ -390,7 +392,7 @@ var frame = frame
 ;
     
 
-    var colorCacheable: ColorCacheable =  as ColorCacheableautomaticCacheInterface!.get(colorInteger);;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
 ;
     
 
@@ -435,7 +437,7 @@ this.logUtil!.putF(message, this, "log");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorRangeInterface;
+                        return this.colorRangeInterface;
     
 }
 

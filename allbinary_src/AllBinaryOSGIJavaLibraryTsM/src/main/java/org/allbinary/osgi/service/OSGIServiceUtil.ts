@@ -64,7 +64,7 @@ export class OSGIServiceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OSGIServiceUtil.instance;
     
 }
 
@@ -117,7 +117,7 @@ index < size; index++)
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface =  as OSGIServiceInterfacebundleContext!.getService(serviceReference);;
+    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference); as OSGIServiceInterface;
 ;
     
 

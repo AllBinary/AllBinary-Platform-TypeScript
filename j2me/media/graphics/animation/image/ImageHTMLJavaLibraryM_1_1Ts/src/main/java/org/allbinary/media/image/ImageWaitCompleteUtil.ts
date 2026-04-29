@@ -117,11 +117,11 @@ this.waitForATime(image, name, this.timeDelayHelper);
     //var name = name
     //var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage =  as PlaynImageimage;
+    var playnImage: PlaynImage = image as PlaynImage;
 ;
     
 
-    var playnCoreImage: playn.core.Image =  as playn.core.ImageplaynImage!.getImage();;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
 ;
     
 
@@ -159,7 +159,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 this.allTimeDelayHelper!.setStartTimeTNT();
     
 
-    var hashtable: Hashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
+    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
 ;
     
 
@@ -181,7 +181,7 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll");
     var index: number = 0;
 index < size; index++)
         {
-this.waitForATime( as Imagehashtable.get(objectArray[index]!),  as StringobjectArray[index]!, this.allTimeDelayHelper);
+this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
     
 }
 

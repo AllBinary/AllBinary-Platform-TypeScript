@@ -89,12 +89,12 @@ public constructor (){
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 var tiledLayer = tiledLayer
 
-    var viewPosition: TileLayerPositionIntoViewPosition =  as TileLayerPositionIntoViewPositionthis.getViewPosition();;
+    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
 ;
     
 viewPosition!.setTiledLayer(tiledLayer);
     
-viewPositionEventHandler!.addListener( as AllBinaryLayerthis);
+this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
     
 }
 
@@ -107,7 +107,7 @@ super.setDestroyed(destroyed);
                         if(this.isDestroyed())
                         
                                     {
-                                    viewPositionEventHandler!.removeListener(this);
+                                    this.viewPositionEventHandler!.removeListener(this);
     
 
                                     }

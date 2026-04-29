@@ -49,6 +49,10 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
+
+import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
+
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 
@@ -82,11 +86,11 @@ var key = key
 ;
     
 
-    var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo =  as ImageArrayRotationAnimationInfokey;
+    var allBinaryImageRotationAnimationInfo: ImageArrayRotationAnimationInfo = key as ImageArrayRotationAnimationInfo;
 ;
     
 
-    var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = ( as ImageArrayRotationAnimationCacheablecacheableInterface);
+    var imageArrayRotationAnimationCacheable: ImageArrayRotationAnimationCacheable = (cacheableInterface as ImageArrayRotationAnimationCacheable);
 ;
     
 imageArrayRotationAnimationCacheable!.setImageArray(allBinaryImageRotationAnimationInfo!.getImageArray());

@@ -191,9 +191,9 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
@@ -234,7 +234,7 @@ hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicPaymentType;
+                        return this.basicPaymentType;
     
 }
 

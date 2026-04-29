@@ -98,13 +98,13 @@ export class GenericProfiles
 
     public static readonly DEFAULT_PROFILES_PATH: string = "./modules/configs/profiles/";
 
-    public static readonly DEFAULT_PROFILE_ACTIONS_PATH: string = DEFAULT_PROFILES_PATH +"actions/";
+    public static readonly DEFAULT_PROFILE_ACTIONS_PATH: string = GenericProfiles.DEFAULT_PROFILES_PATH +"actions/";
 
-    public static readonly DEFAULT_FILE: string = DEFAULT_PROFILES_PATH +"profiles.xml";
+    public static readonly DEFAULT_FILE: string = GenericProfiles.DEFAULT_PROFILES_PATH +"profiles.xml";
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private hashMap: HashMap
+    private hashMap: HashMap<any, any>
 
     private profilesDefaultListModelHelper: DefaultListModelHelper
 
@@ -117,7 +117,7 @@ this.fileName= fileName;
     
 this.profilesDefaultListModelHelper= new DefaultListModelHelper();
     
-this.hashMap= new HashMap();
+this.hashMap= new HashMap<any, any>();
     
 
                         if(new File(fileName).
@@ -245,7 +245,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
     public get(name: string): GenericProfile{
 var name = name
 
-    var genericProfile: GenericProfile =  as GenericProfilethis.hashMap!.get(name as Object);;
+    var genericProfile: GenericProfile = this.hashMap!.get(name as Object); as GenericProfile;
 ;
     
 
@@ -332,7 +332,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfile: GenericProfile =  as GenericProfilethis.hashMap!.get( as StringnameArray[index]!);;
+    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String); as GenericProfile;
 ;
     
 node.appendChild(genericProfile!.toXmlNode(document));

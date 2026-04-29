@@ -117,7 +117,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
                                 
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
-this.categoryHierarchyInterface=  as CategoryHierarchyInterfacenew CategoryHierarchy(this, this);
+this.categoryHierarchyInterface= new CategoryHierarchy(this, this) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -130,7 +130,7 @@ public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactor
 var level = level
 this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
-this.categoryHierarchyInterface=  as CategoryHierarchyInterfacenew CategoryHierarchy(this, this, level);
+this.categoryHierarchyInterface= new CategoryHierarchy(this, this, level) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -142,9 +142,9 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
         var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-this.categoryPropertiesInterface=  as CategoryPropertiesInterfacecategoryPropertiesFactoryInterface!.getInstance();;
+this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance(); as CategoryPropertiesInterface;
     
-this.categoryHierarchyInterface=  as CategoryHierarchyInterfacenew CategoryHierarchy(rootCategoryInterface, parentCategoryInterface);
+this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
 this.log();
     
@@ -179,7 +179,7 @@ this.log();
                         
                                     {
                                     
-    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface =  as RootCategoryPropertiesInterfacecategoryInterface!.getProperties();;
+    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties(); as RootCategoryPropertiesInterface;
 ;
     
 rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
@@ -327,7 +327,7 @@ index < size; index++)
 ;
     
 
-    var currentCategoryInterface: CategoryInterface =  as CategoryInterfaceanyType;
+    var currentCategoryInterface: CategoryInterface = anyType as CategoryInterface;
 ;
     
 
@@ -420,7 +420,7 @@ index < size; index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface =  as CategoryPropertiesInterfaceanyType;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;
 ;
     
 
@@ -445,7 +445,7 @@ break;
                         
                                     {
                                     
-    var existingCategoryInterface: CategoryInterface =  as CategoryInterfaceanyType;
+    var existingCategoryInterface: CategoryInterface = anyType as CategoryInterface;
 ;
     
 
@@ -597,7 +597,7 @@ index < size; index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface =  as CategoryPropertiesInterfaceanyType;
+    var categoryPropertiesInterface: CategoryPropertiesInterface = anyType as CategoryPropertiesInterface;
 ;
     
 
@@ -621,7 +621,7 @@ index < size; index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface =  as CategoryInterfaceanyType;
+    var categoryInterface: CategoryInterface = anyType as CategoryInterface;
 ;
     
 
@@ -690,9 +690,9 @@ var document = document
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var categoryHashMap: HashMap = this.categoryPropertiesInterface!.toHashMap()!;
+    var categoryHashMap: HashMap<any, any> = this.categoryPropertiesInterface!.toHashMap()!;
 ;
     
 

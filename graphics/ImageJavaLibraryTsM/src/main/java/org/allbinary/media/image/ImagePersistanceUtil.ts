@@ -86,7 +86,7 @@ export class ImagePersistanceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImagePersistanceUtil.instance;
     
 }
 
@@ -129,7 +129,7 @@ this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!
     public saveWithImageIO(filePath: string, bufferedImage: BufferedImage){
 var filePath = filePath
 var bufferedImage = bufferedImage
-saveWithImageIO(new File(filePath), bufferedImage);
+this.saveWithImageIO(new File(filePath), bufferedImage);
     
 }
 
@@ -170,7 +170,7 @@ var bufferedImage = bufferedImage
 
                                     }
                                 
-writer=  as ImageWriteriter.next();;
+writer= iter.next(); as ImageWriter;
     
 ios= ImageIO.createImageOutputStream(file);
     

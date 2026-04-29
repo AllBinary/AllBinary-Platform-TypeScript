@@ -56,7 +56,7 @@ export class KeySingletonFactory
          {
         
 
-    private keyStringHashtable: Hashtable = new Hashtable();
+    private keyStringHashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     private keyArray: number[] = 
                                                         [
@@ -90,7 +90,7 @@ index < keyArray!.length; index++)
     var keyAsString: string = KeyEvent.getKeyText(keyArray[index]!)!;
 ;
     
-keyStringHashtable!.put(keyAsString, keyArray[index]!);
+KeySingletonFactory.keyStringHashtable!.put(keyAsString, keyArray[index]!);
     
 }
 
@@ -104,12 +104,12 @@ logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
 
 }
 
-    public static getHashtable(): Hashtable{
+    public static getHashtable(): Hashtable<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return keyStringHashtable;
+                        return KeySingletonFactory.keyStringHashtable;
     
 }
 
@@ -130,7 +130,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return keyArray;
+                        return KeySingletonFactory.keyArray;
     
 }
 

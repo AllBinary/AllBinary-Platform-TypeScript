@@ -93,6 +93,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
         
 import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
 
+import { MotionRectanglesResultsFrameCacheable } from "./MotionRectanglesResultsFrameCacheable.js";
+
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
 
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
@@ -124,8 +126,8 @@ var frame = frame
 ;
     
 
-    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable =  as MotionRectanglesResultsFrameCacheable
-                                    (getInstance as AutomaticCacheInterface).get(frame);;
+    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
+                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
 ;
     
 
@@ -140,15 +142,15 @@ var frame = frame
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable=  as MotionRectanglesResultsFrameCacheable
-                                    (getInstance as AutomaticCacheInterface).get(frame);;
+motionRectanglesResultsFrameCacheable= 
+                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable=  as MotionRectanglesResultsFrameCacheable
-                                    (getInstance as AutomaticCacheInterface).get(frame);;
+motionRectanglesResultsFrameCacheable= 
+                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
@@ -249,7 +251,7 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString
     var index: number = 0;
 index < this.NUMBER_OF_IMAGES; index++)
         {
-bufferedImageCacheables[index]=  as BufferedImageCacheablepoolInterface!.remove(bufferedImageInfo);;
+bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
     
 }
 
@@ -299,7 +301,7 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 index2 < size; index2++)
         {
 
-    var motionRectangle: MotionRectangle =  as MotionRectanglerectangelList!.get(index2);;
+    var motionRectangle: MotionRectangle = rectangelList!.get(index2); as MotionRectangle;
 ;
     
 

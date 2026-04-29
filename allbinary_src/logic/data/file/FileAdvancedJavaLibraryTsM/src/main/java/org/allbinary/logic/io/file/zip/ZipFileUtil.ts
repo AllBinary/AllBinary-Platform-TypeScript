@@ -91,7 +91,7 @@ export class ZipFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ZipFileUtil.instance;
     
 }
 
@@ -157,7 +157,7 @@ zipFile!.createNewFile();
 i < size; i++)
         {
 
-    var file: AbFile =  as AbFilefileBasicArrayList!.get(i);;
+    var file: AbFile = fileBasicArrayList!.get(i); as AbFile;
 ;
     
 

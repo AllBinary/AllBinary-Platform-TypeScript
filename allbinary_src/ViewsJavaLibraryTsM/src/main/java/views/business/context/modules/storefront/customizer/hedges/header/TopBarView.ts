@@ -75,7 +75,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

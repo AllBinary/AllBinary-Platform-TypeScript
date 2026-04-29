@@ -193,7 +193,7 @@ this.setDestroyed(true);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return destroyed;
+                        return this.destroyed;
     
 }
 
@@ -236,7 +236,7 @@ var damageType = damageType
     public set(gl: GL){
 var gl = gl
 
-    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface =  as OpenGLSurfaceChangedInterfacethis.animationInterface;
+    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;
 ;
     
 openGLSurfaceChangedInterface!.set(gl);

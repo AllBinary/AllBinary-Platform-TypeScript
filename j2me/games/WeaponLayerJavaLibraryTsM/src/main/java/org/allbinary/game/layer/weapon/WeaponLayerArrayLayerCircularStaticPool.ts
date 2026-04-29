@@ -52,14 +52,14 @@ export class WeaponLayerArrayLayerCircularStaticPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return WeaponLayerArrayLayerCircularStaticPool.instance;
     
 }
 
 
     private readonly MAX: number = 5;
 
-    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(MAX)!;
+    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(this.MAX)!;
 
     private ALL_WEAPONLAYER_ARRAY: any[][][] = new Array(4)
                                                         ;
@@ -111,7 +111,7 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
     public getInstanceArray(size: number): WeaponLayer[]{
 var size = size
 
-    var weaponLayerArray: WeaponLayer[] =  as Array<WeaponLayer?>this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]!;
+    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
 ;
     
 this.circularIndexUtil!.next();

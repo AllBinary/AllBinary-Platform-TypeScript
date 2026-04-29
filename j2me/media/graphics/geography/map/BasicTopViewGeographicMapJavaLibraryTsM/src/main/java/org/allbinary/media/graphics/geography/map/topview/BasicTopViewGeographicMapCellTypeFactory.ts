@@ -86,7 +86,7 @@ export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellT
     public readonly OTHER_CELL_TYPE: BasicTopViewGeographicMapCellType
 
     private readonly maxTileId: number
-public constructor (tileTypeToTileIdsMap: Hashtable, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
             //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
@@ -187,9 +187,9 @@ this.maxTileId= maxTileId;
     var index: number = 0;
 index < size; index++)
         {
-key=  as StringkeyArray[index]!;
+key= keyArray[index]! as String;
     
-idsWithTypeList=  as BasicArrayListtileTypeToTileIdsMap!.get(key);;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
     
 
                         if(key.equals(basicTopViewGeographicMapStrings!.WALL))

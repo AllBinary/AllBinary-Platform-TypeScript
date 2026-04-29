@@ -110,7 +110,7 @@ var animationInterface = animationInterface
                         
                                     {
                                     
-    var rotationAnimationInterface: IndexedAnimation =  as IndexedAnimationanimationInterface;
+    var rotationAnimationInterface: IndexedAnimation = animationInterface as IndexedAnimation;
 ;
     
 frame= rotationAnimationInterface!.getFrame();

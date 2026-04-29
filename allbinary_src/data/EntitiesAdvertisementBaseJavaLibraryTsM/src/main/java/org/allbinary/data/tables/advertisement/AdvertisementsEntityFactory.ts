@@ -63,7 +63,7 @@ export class AdvertisementsEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as AdvertisementsEntityInterfacenew AdvertisementsEntity();
+                        return new AdvertisementsEntity() as AdvertisementsEntityInterface;
     
 
                 //: 

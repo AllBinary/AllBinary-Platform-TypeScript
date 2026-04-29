@@ -88,7 +88,7 @@ this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cipher.doFinal(array);;
+                        return this.cipher.doFinal(array);;
     
 }
 
@@ -97,7 +97,7 @@ this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
             
     public decrypt(array: number[]): number[]{
 var array = array
-cipher.init(Cipher.DECRYPT_MODE, secretKey);
+this.cipher.init(Cipher.DECRYPT_MODE, secretKey);
     
 
 
@@ -126,7 +126,7 @@ index < this.key.length; index++)
                         if(value < 8 && value > 0)
                         
                                     {
-                                    array= this.byteUtil!.xorByte(array, Math.roundvalue);
+                                    array= this.byteUtil!.xorByte(array, Math.round(value));
     
 
                                     }

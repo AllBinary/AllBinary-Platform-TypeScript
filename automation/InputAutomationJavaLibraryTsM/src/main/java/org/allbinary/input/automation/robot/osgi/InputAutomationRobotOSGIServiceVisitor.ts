@@ -78,7 +78,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit( as OSGIServiceInterfaceanyType);;
+                        return this.visit(anyType as OSGIServiceInterface);;
     
 }
 
@@ -90,7 +90,7 @@ public constructor (){
             this.logUtil!.putF(this.commonStrings!.START, this, "visit");
     
 
-    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface =  as InputAutomationRobotServiceInterfaceosgiServiceInterface;
+    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;
 ;
     
 

@@ -110,7 +110,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.objectArray[index]!;
+            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
 stringBuffer!.append(LISTENER);
     
@@ -210,7 +210,7 @@ var eventObject = eventObject
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.objectArray[index]!;
+            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     

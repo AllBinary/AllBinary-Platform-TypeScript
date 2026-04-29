@@ -78,7 +78,7 @@ export class WebCommandProcessor
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return WebCommandProcessor.instance;
     
 }
 
@@ -99,7 +99,7 @@ export class WebCommandProcessor
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    Desktop.getDesktop()!.browse(new URI( as Stringthis.list.removeAt(0)));
+                                    Desktop.getDesktop()!.browse(new URI(this.list.removeAt(0) as String));
     
 
                                     }

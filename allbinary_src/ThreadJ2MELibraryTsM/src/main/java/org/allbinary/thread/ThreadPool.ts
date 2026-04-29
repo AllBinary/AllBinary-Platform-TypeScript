@@ -205,7 +205,7 @@ pooledThread!.start();
     var index: number = 0;
 index < size; index++)
         {
-runnable=  as PriorityRunnablethis.taskQueue!.get(index);;
+runnable= this.taskQueue!.get(index); as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -307,7 +307,7 @@ notify();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_RUNNABLE;
+                        return this.NULL_RUNNABLE;
     
 
                                     }
@@ -317,7 +317,7 @@ this.wait();
 }
 
 
-    var runnable: Runnable =  as Runnablethis.taskQueue!.removeAt(0);;
+    var runnable: Runnable = this.taskQueue!.removeAt(0); as Runnable;
 ;
     
 

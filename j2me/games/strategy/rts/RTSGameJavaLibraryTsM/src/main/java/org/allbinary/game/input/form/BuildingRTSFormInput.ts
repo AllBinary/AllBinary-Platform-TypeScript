@@ -211,7 +211,7 @@ this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -259,7 +259,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dropCellPositionHistory!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition());;
+                        return this.dropCellPositionHistory!.isCellPositionWithDrop(this.getSelectedGeographicCellPosition());;
     
 }
 
@@ -267,11 +267,11 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
     isDemoLocked(item: CustomItem): boolean{
     //var item = item
 
-    var factoryItem: LayerInterfaceFactoryImageItem =  as LayerInterfaceFactoryImageItemitem;
+    var factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;
 ;
     
 
-    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface =  as DemoLockedWithCostLayerInterfaceFactoryInterfacefactoryItem!.getLayerInterfaceFactoryInterface();;
+    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface(); as DemoLockedWithCostLayerInterfaceFactoryInterface;
 ;
     
 
@@ -328,7 +328,7 @@ this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
 ;
     
 
@@ -369,7 +369,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorygeographicMapInterface!.getGeographicMapCellTypeFactory();;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -387,7 +387,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
                                 
                         else {
                             
-    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
+    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
 ;
     
 
@@ -402,7 +402,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
                         }
                             
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
+    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
 ;
     
 this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
@@ -417,7 +417,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(buildOnPathGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.buildOnPathGameNotificationEvent);
     
 
                                     }
@@ -435,7 +435,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(spotTakenGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.spotTakenGameNotificationEvent);
     
 
                                     }
@@ -453,7 +453,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(selectBuildSpotGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.selectBuildSpotGameNotificationEvent);
     
 
                                     }
@@ -508,17 +508,17 @@ this.logUtil!.putF(new StringMaker().
 index >= 0; index--)
         {
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
 ;
     
-geographicMapCellType= geographicMapInterface!.getCellTypeAt( as GeographicMapCellPositionoccupyList!.get(index));
+geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index) as GeographicMapCellPosition);
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorygeographicMapInterface!.getGeographicMapCellTypeFactory();;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -531,7 +531,7 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt( as GeographicMapCe
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(roadCollisionGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.roadCollisionGameNotificationEvent);
     
 
                                     }
@@ -601,7 +601,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(noMoneyGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);
     
 
                                     }
@@ -641,7 +641,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(buildingCollisionGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.buildingCollisionGameNotificationEvent);
     
 
                                     }
@@ -665,7 +665,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(structureToCloseCollisionGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.structureToCloseCollisionGameNotificationEvent);
     
 
                                     }
@@ -690,7 +690,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(mapEdgeGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.mapEdgeGameNotificationEvent);
     
 
                                     }
@@ -733,7 +733,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 this.dropCellPositionHistory!.addAll(occupyList, layerInterface);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput =  as RTSPlayerGameInputrtsPlayerLayerInterface!.getPlayerGameInput();;
+    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
 ;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, this.getSelectedGeographicCellPosition());
@@ -746,7 +746,7 @@ rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
                         if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
                         
                                     {
-                                    GameNotificationEventHandler.getInstance()!.fireEvent(buildingGameNotificationEvent);
+                                    GameNotificationEventHandler.getInstance()!.fireEvent(this.buildingGameNotificationEvent);
     
 
                                     }

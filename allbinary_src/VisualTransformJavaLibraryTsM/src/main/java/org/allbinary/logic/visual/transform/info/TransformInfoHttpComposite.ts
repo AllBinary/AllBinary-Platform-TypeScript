@@ -79,7 +79,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                                     }
                                 
-this.transformInfoInterface=  as TransformInfoHttpInterfacetransformInfoInterface;
+this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterface;
     
 }
 
@@ -116,7 +116,7 @@ this.transformInfoInterface=  as TransformInfoHttpInterfacetransformInfoInterfac
 }
 
 
-    public getPropertiesHashMap(): HashMap{
+    public getPropertiesHashMap(): HashMap<any, any>{
 
 
 

@@ -39,6 +39,8 @@
         
 import { LayerProcessor } from "./LayerProcessor.js";
 
+import { LayerManager } from "./LayerManager.js";
+
 import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
 
 export class SingleLayerLayerProcessor extends LayerProcessor {
@@ -60,7 +62,7 @@ var allBinaryLayerManager = allBinaryLayerManager
     var layerManager: LayerManager = this.getLayerManager()!;
 ;
     
-this.processAt(allBinaryLayerManager,  as AllBinaryLayerlayerManager!.getLayerAt(0), 0);
+this.processAt(allBinaryLayerManager, layerManager!.getLayerAt(0) as AllBinaryLayer, 0);
     
 }
 

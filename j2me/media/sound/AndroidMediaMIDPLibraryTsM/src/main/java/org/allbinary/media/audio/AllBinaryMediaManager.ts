@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { IOException } from "../../../../java/io/IOException.js";
 
     
@@ -201,7 +203,7 @@ i < soundInterfaceArray!.length; i++)
                         if(player2 is AndroidMediaPlayerWrapper)
                         
                                     {
-                                    androidMediaPlayerWrapper=  as AndroidMediaPlayerWrapperplayer2;
+                                    androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper;
     
 MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer());
     
@@ -232,7 +234,7 @@ System.gc();
     
 soundsFactoryInterface!.setInitialized(false);
     
-mostUsedTotal= 0;
+AllBinaryMediaManager.mostUsedTotal= 0;
     
 
                                     }
@@ -246,7 +248,7 @@ logUtil!.putF(commonString!.START, THIS, "shutdown");
             
     public static createPlayer(resource: string): Player{
 var resource = resource
-mostUsedTotal++;
+AllBinaryMediaManager.mostUsedTotal++;
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
@@ -268,7 +270,7 @@ mostUsedTotal++;
                 //: 
 } catch(e) 
             {
-logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +mostUsedTotal, THIS, "createPlayer", e);
+logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +CommonLabels.getInstance()!.TOTAL_LABEL +AllBinaryMediaManager.mostUsedTotal, AllBinaryMediaManager.THIS, "createPlayer", e);
     
 
 

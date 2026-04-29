@@ -78,7 +78,7 @@ var document = document
 ;
     
 
-    var newCategoryNode: Element =  as ElementcategoryNode;
+    var newCategoryNode: Element = categoryNode as Element;
 ;
     
 newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue());

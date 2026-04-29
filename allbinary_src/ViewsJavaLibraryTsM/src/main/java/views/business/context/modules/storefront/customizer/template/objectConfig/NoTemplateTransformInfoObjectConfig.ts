@@ -135,7 +135,7 @@ var objectConfigDocument = objectConfigDocument
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 

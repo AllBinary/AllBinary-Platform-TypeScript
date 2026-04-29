@@ -35,7 +35,8 @@
         <module>../allbinary_src/cache/AllBinaryCacheLibraryTsM</module>
         <module>../allbinary_src/logic/BasePreloaderFileJavaLibraryTsM</module>
         <module>../allbinary_src/logic/data/file/FileJavaLibraryTsM</module>
-<!--        <module>../allbinary_src/logic/data/file/FileJ2SEJavaLibraryTsM</module>
+        <module>../allbinary_src/logic/data/file/FileJ2SEJavaLibraryTsM</module>
+<!--
         <module>../allbinary_src/data/DataJavaLibraryTsM</module>
         <module>../allbinary_src/logic/data/file/FileUnamedJavaLibraryTsM</module>
         <module>../allbinary_src/logic/data/file/FileAdvancedJavaLibraryTsM</module>
@@ -46,7 +47,8 @@
         <module>../j2me/PCResourceLibraryTsM</module>
         <module>../j2me/ProgressJ2MEJavaLibraryTsM</module>
         <module>../allbinary_src/licensing/ClientInfoBaseJavaLibraryTsM</module>
-<!--        <module>../allbinary_src/licensing/RemoteXmlRpcJavaLibraryTsM</module>
+        <module>../allbinary_src/licensing/RemoteXmlRpcJavaLibraryTsM</module>
+<!--        
         <module>../allbinary_src/licensing/LicenseClientJavaLibraryTsM</module>-->
 
         <!--

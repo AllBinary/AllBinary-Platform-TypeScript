@@ -91,7 +91,7 @@ export class VisibleCellPositionsSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return VisibleCellPositionsSingleton.instance;
     
 }
 
@@ -104,9 +104,9 @@ export class VisibleCellPositionsSingleton
 
     public readonly ALL_VISIBLE_TILEDLAYER: SimpleTiledLayer = new SimpleTiledLayer(0, 0, 0, 0);
 
-    private simpleTiledLayer: SimpleTiledLayer = ALL_VISIBLE_TILEDLAYER;
+    private simpleTiledLayer: SimpleTiledLayer = this.ALL_VISIBLE_TILEDLAYER;
 
-    private paintSimpleTiledLayer: SimpleTiledLayer = ALL_VISIBLE_TILEDLAYER;
+    private paintSimpleTiledLayer: SimpleTiledLayer = this.ALL_VISIBLE_TILEDLAYER;
 
     private currentIndex: number= 0
 private constructor (){
@@ -180,7 +180,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
+    var cellPosition: CellPosition = list.get(index); as CellPosition;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
@@ -201,7 +201,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
+    var cellPosition: CellPosition = list.get(index); as CellPosition;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
@@ -301,7 +301,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
+    var cellPosition: CellPosition = list.get(index); as CellPosition;
 ;
     
 this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
@@ -366,7 +366,7 @@ this.simpleTiledLayer= simpleTiledLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return simpleTiledLayer;
+                        return this.simpleTiledLayer;
     
 }
 

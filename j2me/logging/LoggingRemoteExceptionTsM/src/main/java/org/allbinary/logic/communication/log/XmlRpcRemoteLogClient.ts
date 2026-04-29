@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
@@ -106,7 +108,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable =  as HashtableanyType;
+    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
 ;
     
 param.add(hashtable);

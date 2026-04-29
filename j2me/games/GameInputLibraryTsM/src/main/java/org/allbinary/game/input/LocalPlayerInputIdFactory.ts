@@ -58,7 +58,7 @@ export class LocalPlayerInputIdFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LocalPlayerInputIdFactory.instance;
     
 }
 
@@ -69,11 +69,11 @@ export class LocalPlayerInputIdFactory
 
     private readonly MAX_FAST_DEVICEID: number = 65;
 
-    private readonly deviceIdToplayerId: number[] = new Array(MAX_FAST_DEVICEID);
+    private readonly deviceIdToplayerId: number[] = new Array(this.MAX_FAST_DEVICEID);
 
-    private readonly playerIdToDeviceId: number[] = new Array(MAX_NUMBER_OF_PLAYERS);
+    private readonly playerIdToDeviceId: number[] = new Array(this.MAX_NUMBER_OF_PLAYERS);
 
-    private readonly playersInPlay: boolean[] = new Array(MAX_NUMBER_OF_PLAYERS);
+    private readonly playersInPlay: boolean[] = new Array(this.MAX_NUMBER_OF_PLAYERS);
 
     private totalDevicesMapped: number = 0;
 private constructor (){
@@ -266,7 +266,7 @@ this.playersInPlay[playerInputId]= false;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return playersInPlay;
+                        return this.playersInPlay;
     
 }
 

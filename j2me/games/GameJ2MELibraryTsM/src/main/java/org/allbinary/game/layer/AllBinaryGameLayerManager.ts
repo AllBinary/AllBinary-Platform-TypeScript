@@ -125,7 +125,7 @@ this.gameInfo= gameInfo;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return backgroundBasicColor;
+                        return this.backgroundBasicColor;
     
 }
 
@@ -144,7 +144,7 @@ ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt()
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return foregroundBasicColor;
+                        return this.foregroundBasicColor;
     
 }
 
@@ -163,7 +163,7 @@ ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.toInt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameInfo;
+                        return this.gameInfo;
     
 }
 
@@ -194,7 +194,7 @@ this.gameInfo= gameInfo;
     var index: number = 0;
 index < size; index++)
         {
-layerProcessorInterfaceArray[index]=  as LayerProcessorlist.objectArray[index]!;
+layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor;
     
 }
 
@@ -215,7 +215,7 @@ this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return playerGameInputCompositeInterface;
+                        return this.playerGameInputCompositeInterface;
     
 }
 

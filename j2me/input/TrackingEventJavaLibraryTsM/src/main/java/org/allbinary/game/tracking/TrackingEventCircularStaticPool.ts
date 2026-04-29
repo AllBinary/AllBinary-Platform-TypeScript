@@ -57,7 +57,7 @@ export class TrackingEventCircularStaticPool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TrackingEventCircularStaticPool.instance;
     
 }
 
@@ -65,7 +65,7 @@ export class TrackingEventCircularStaticPool
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
 
     public init(){
-EVENT_POOL.init(new TrackingEventFactory());
+this.EVENT_POOL.init(new TrackingEventFactory());
     
 }
 
@@ -76,7 +76,7 @@ EVENT_POOL.init(new TrackingEventFactory());
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{
 var layerInterface = layerInterface
 
-    var trackingEvent: TrackingEvent =  as TrackingEventEVENT_POOL.getNextInstance();;
+    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance(); as TrackingEvent;
 ;
     
 trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

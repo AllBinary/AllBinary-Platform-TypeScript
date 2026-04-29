@@ -64,6 +64,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DownGameKeyEventListenerInterface } from "./DownGameKeyEventListenerInterface.js";
+
 export class DownGameKeyEventHandlerBase extends BasicEventHandler {
         
 
@@ -134,10 +136,10 @@ var eventObject = eventObject
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
-playerGameInput!.onDownGameKeyEvent( as GameKeyEventeventObject);
+playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
 
                 //: 
@@ -160,10 +162,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface =  as DownGameKeyEventListenerInterfaceeventListenerInterface;
+    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;
 ;
     
-downGameKeyEventListenerInterface!.onDownGameKeyEvent( as GameKeyEventeventObject);
+downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent);
     
 }
 
@@ -196,7 +198,7 @@ stringBuffer!.appendint(this.list.size());
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.list.get(index);;
+            eventListenerInterface= this.list.get(index); as EventListenerInterface;
     
 stringBuffer!.append(LISTENER_LABEL);
     

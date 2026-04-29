@@ -106,18 +106,18 @@ export class AuthenticationRequestHelper extends TagHelper {
     private weblisketSession: WeblisketSession
 
     private request: HttpServletRequest
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 }
 
-public constructor (hashMap: HashMap, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
         var hashMap = hashMap
@@ -247,7 +247,7 @@ this.request= httpServletRequest;
 userInterface!.setPassword(newPassword);
     
 
-    var newPasswordHashMap: HashMap = userInterface!.toPasswordHashMap()!;
+    var newPasswordHashMap: HashMap<any, any> = userInterface!.toPasswordHashMap()!;
 ;
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
@@ -400,7 +400,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                     }
                                 
 
-    var newPasswordHashMap: HashMap = password.toHashMap(
+    var newPasswordHashMap: HashMap<any, any> = password.toHashMap(
                             null)!;
 ;
     
@@ -513,14 +513,14 @@ var roles = roles
 index < size; index++)
         {
 
-    var nextRole: BasicUserRole =  as BasicUserRolebasicUserRoleArray[index]!;
+    var nextRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
 ;
     
 
                         if(userInterface!.getRole()!.getBasicUserRole()!.equals(nextRole))
                         
                                     {
-                                    userInterface!.validateSession( as WeblisketSessionInterfacethis.weblisketSession);
+                                    userInterface!.validateSession(this.weblisketSession as WeblisketSessionInterface);
     
 this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME);
     

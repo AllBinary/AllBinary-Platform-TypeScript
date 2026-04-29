@@ -217,7 +217,7 @@ this.updateScaled();
     private scaled: number= 0
 
     updateScaled(){
-this.scaled= Math.round(this.units /this.factorValue);
+this.scaled= Math.round((this.units /this.factorValue));
     
 }
 

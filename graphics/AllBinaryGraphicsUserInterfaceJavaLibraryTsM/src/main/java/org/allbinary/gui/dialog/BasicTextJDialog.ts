@@ -46,6 +46,8 @@ import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.j
 
 import { Frame } from "./Frame.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -84,7 +86,7 @@ var text = text
 
                             //For kotlin this is before the body of the constructor.
                     
-initComponents();
+this.initComponents();
     
 this.setText(text);
     
@@ -108,7 +110,7 @@ public constructor (text: string){
 
             super();
         var text = text
-initComponents();
+this.initComponents();
     
 this.textJLabel!.setText(text);
     

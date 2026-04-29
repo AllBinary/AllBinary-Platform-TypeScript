@@ -136,13 +136,13 @@ this.setTable(this.tableName);
 
         try {
             
-    var keyAndValue: HashMap = new HashMap();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyAndValue!.put(NOTHING, NOTHING);
     
 
-    var hashMap: HashMap = getRow(keyAndValue)!;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
 ;
     
 
@@ -209,13 +209,13 @@ keyAndValue!.put(NOTHING, NOTHING);
 
         try {
             
-    var keyAndValue: HashMap = new HashMap();
+    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keyAndValue!.put(NOTHING, NOTHING);
     
 
-    var hashMap: HashMap = getRow(keyAndValue)!;
+    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
 ;
     
 

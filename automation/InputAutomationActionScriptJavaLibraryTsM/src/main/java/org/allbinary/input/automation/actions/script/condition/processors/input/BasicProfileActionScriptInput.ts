@@ -157,7 +157,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
 ;
     
 
-    var hashtable: Hashtable =  as HashtableinputRobotFactory!.get();;
+    var hashtable: Hashtable<any, any> = inputRobotFactory!.get(); as Hashtable<any, any>;
 ;
     
 
@@ -168,7 +168,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
     var iterator: Iterator = set.iterator()!;
 ;
     
-this.setInputRobotInterface(inputRobotFactory!.get( as Stringiterator.next()));
+this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String));
     
 this.setTime(0);
     
@@ -180,7 +180,7 @@ this.setTime(0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return time;
+                        return this.time;
     
 }
 
@@ -192,9 +192,9 @@ this.time= time;
 }
 
 
-    public BasicProfileActionScriptInput_toHashMap(): HashMap{
+    public BasicProfileActionScriptInput_toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName());
@@ -241,7 +241,7 @@ this.inputRobotInterface= inputRobotInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputRobotInterface;
+                        return this.inputRobotInterface;
     
 }
 

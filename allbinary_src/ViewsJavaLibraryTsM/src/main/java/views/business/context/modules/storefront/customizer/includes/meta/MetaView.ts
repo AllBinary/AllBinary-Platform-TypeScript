@@ -77,7 +77,7 @@ this.metasValidation= new MetasValidation(this.getWeblisketSession()!.getStoreNa
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis.metasValidation);
+this.addDomNodeInterface(this.metasValidation as DomNodeInterface);
     
 }
 

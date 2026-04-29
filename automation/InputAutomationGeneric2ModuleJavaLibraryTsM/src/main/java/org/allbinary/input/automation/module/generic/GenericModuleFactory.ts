@@ -84,14 +84,14 @@ public constructor (){
 ;
     
 
-    var inputAutomationActionInterface: InputAutomationActionInterface =  as InputAutomationActionInterfacenew GenericInputAutomationAction();
+    var inputAutomationActionInterface: InputAutomationActionInterface = new GenericInputAutomationAction() as InputAutomationActionInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as RunnableInterfacenew GenericInputAutomationWorker(inputAutomationActionInterface, genericProfile, new NoMotionRectangleConstraints(), new NoImageComparatorConstraints());
+                        return new GenericInputAutomationWorker(inputAutomationActionInterface, genericProfile, new NoMotionRectangleConstraints(), new NoImageComparatorConstraints()) as RunnableInterface;
     
 }
 

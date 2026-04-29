@@ -95,7 +95,7 @@ this.title= new TitleValidation(node);
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -104,7 +104,7 @@ this.getFormData(hashMap);
 }
 
 
-    public getFormData(hashMap: HashMap){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 this.title= new TitleValidation(hashMap);
     

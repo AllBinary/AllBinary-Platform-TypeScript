@@ -65,7 +65,7 @@ export class TransformInfoObjectConfigGeneratorFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TransformInfoObjectConfigGeneratorFactory.instance;
     
 }
 
@@ -82,7 +82,7 @@ private constructor (){
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
 
-    var type: string =  as StringtransformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName();;
+    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName(); as String;
 ;
     
 

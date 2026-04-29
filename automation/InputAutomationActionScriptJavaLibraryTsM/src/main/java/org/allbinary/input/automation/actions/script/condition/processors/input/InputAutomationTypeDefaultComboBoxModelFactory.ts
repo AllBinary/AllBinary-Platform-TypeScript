@@ -81,7 +81,7 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
     var index: number = 0;
 index < size; index++)
         {
-defaultComboBoxModel!.addElement( as StringnameArray[index]!);
+defaultComboBoxModel!.addElement(nameArray[index]! as String);
     
 }
 

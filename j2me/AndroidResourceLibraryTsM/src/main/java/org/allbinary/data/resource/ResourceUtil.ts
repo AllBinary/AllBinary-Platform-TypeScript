@@ -93,7 +93,7 @@ export class ResourceUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ResourceUtil.instance;
     
 }
 
@@ -104,7 +104,7 @@ export class ResourceUtil
 
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private hashMap: Hashtable = new Hashtable();
+    private hashMap: Hashtable<any, any> = new Hashtable<any, any>();
 private constructor (){
 
             super();
@@ -116,7 +116,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Contextthis.context;
+                        return this.context as Context;
     
 }
 
@@ -138,7 +138,7 @@ this.context= aContext;
     public getResourceId(resource: string): number{
 var resource = resource
 
-    var value: number =  as Integerthis.hashMap!.get(resource as Object);;
+    var value: number = this.hashMap!.get(resource as Object); as Integer;
 ;
     
 
@@ -205,7 +205,7 @@ var value = value
 --index >= 0; )
         {
 
-    var integer: number =  as Integerthis.hashMap!.get( as ObjectobjectArray[index]!);;
+    var integer: number = this.hashMap!.get(objectArray[index]! as Object); as Integer;
 ;
     
 
@@ -261,7 +261,7 @@ this.resources= resources;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: number =  as Integerthis.hashMap!.get(resource as Object);;
+    var integer: number = this.hashMap!.get(resource as Object); as Integer;
 ;
     
 

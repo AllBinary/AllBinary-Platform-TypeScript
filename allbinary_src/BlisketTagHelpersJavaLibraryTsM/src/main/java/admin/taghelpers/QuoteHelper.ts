@@ -134,13 +134,13 @@ export class QuoteHelper extends BasicTable {
     private readonly storeFrontInterface: StoreFrontInterface
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap, pageContext: PageContext){
+public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
@@ -194,7 +194,7 @@ stringBuffer!.append("\n\nThank You For Your Business.");
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody);
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;
 ;
     
 
@@ -251,7 +251,7 @@ stringBuffer!.append(quoteRequest!.getComments());
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody);
+    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
 ;
     
 
@@ -307,7 +307,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 index < size; index++)
         {
 
-    var nextId: number = get =  as Integervector.get(index);get
+    var nextId: number = get = vector.get(index);get as Integer
 get.
                     toInt()!;
 ;

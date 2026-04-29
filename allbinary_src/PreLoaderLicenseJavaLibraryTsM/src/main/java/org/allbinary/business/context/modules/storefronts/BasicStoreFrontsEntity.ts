@@ -76,13 +76,13 @@ this.setTable(this.tableName);
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name
 
-    var keysAndValues: HashMap = new HashMap();
+    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
 
-    var storeHashMap: HashMap = super.getRow(keysAndValues)!;
+    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
 ;
     
 
@@ -105,7 +105,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as BasicStoreFrontInterfacenew BasicStoreFront(storeHashMap);
+                        return new BasicStoreFront(storeHashMap) as BasicStoreFrontInterface;
     
 }
 

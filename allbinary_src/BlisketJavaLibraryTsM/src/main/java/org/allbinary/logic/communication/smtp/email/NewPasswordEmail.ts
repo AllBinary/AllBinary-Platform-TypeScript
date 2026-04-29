@@ -132,7 +132,7 @@ this.notifyUser();
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(emailSubject, emailBody);
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
 ;
     
 
@@ -140,7 +140,7 @@ this.notifyUser();
 ;
     
 
-    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;
+    var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;
 ;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
@@ -186,7 +186,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(subject, body);
+    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;
 ;
     
 
@@ -194,7 +194,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 ;
     
 
-    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;
+    var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;
 ;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);

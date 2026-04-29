@@ -101,7 +101,7 @@ export class OpenGLUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OpenGLUtil.instance;
     
 }
 
@@ -200,7 +200,7 @@ graphics.update();
     
 progressCanvas!.update(graphics);
     
-getInstance =  as OpenGLImageCacheOpenGLImageCacheFactory.getInstance();getInstance
+getInstance = OpenGLImageCacheFactory.getInstance();getInstance as OpenGLImageCache
 getInstance.
                     update(gl);
     
@@ -314,7 +314,7 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
     var index: number = 0;
 index < size; index++)
         {
-runnable=  as Runnablethis.runnableList!.get(index);;
+runnable= this.runnableList!.get(index); as Runnable;
     
 runnable.run();
     
@@ -349,7 +349,7 @@ index2 < size; index2++)
         {
 image= this.list.get(index2);
     
-image =  as OpenGLESImageimageimage
+image = imageimage as OpenGLESImage
 image.
                     set(gl);
     

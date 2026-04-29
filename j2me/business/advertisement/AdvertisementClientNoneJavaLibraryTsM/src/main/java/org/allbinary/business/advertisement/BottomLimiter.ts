@@ -57,7 +57,7 @@ export class BottomLimiter
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BottomLimiter.instance;
     
 }
 
@@ -119,7 +119,7 @@ this.bottom= displayInfo!.getLastHeight() -this.deltaY;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return deltaY;
+                        return this.deltaY;
     
 }
 
@@ -129,7 +129,7 @@ this.bottom= displayInfo!.getLastHeight() -this.deltaY;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bottom;
+                        return this.bottom;
     
 }
 

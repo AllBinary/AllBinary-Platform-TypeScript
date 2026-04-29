@@ -88,7 +88,7 @@ this.removeable= permanent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return string;
+                        return this.string;
     
 }
 
@@ -98,7 +98,7 @@ this.removeable= permanent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return seconds;
+                        return this.seconds;
     
 }
 
@@ -108,7 +108,7 @@ this.removeable= permanent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 
@@ -118,7 +118,7 @@ this.removeable= permanent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return removeable;
+                        return this.removeable;
     
 }
 

@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     

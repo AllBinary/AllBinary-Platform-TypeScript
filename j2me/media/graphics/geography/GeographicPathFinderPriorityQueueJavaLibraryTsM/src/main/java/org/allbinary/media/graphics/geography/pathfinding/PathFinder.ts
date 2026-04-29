@@ -161,7 +161,7 @@ row < sizeY; row++)
 ;
     
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
 ;
     
 node= new PathFindingNodeCost(NullUtil.getInstance()!.NULL_OBJECT, basicGeographicMapCellPositionFactory!.getAt(column, row), new PathFindingNodeCostInfo(raceTrackGeographicMapCellType!.getTravelCost(),  -1));
@@ -185,7 +185,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.search( as PathFindingNodestartPathFindingNodeList!.get(0),  as PathFindingNodeendPathFindingNodeList!.get(0));;
+                        return this.search(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode);;
     
 
                 //: 
@@ -201,7 +201,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -228,7 +228,7 @@ var totalPaths = totalPaths
                         if(multipassState!.step == 1)
                         
                                     {
-                                    this.searchStart( as PathFindingNodestartPathFindingNodeList!.get(0),  as PathFindingNodeendPathFindingNodeList!.get(0), multipassState);
+                                    this.searchStart(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState);
     
 
                                     }
@@ -241,7 +241,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.searchN( as PathFindingNodestartPathFindingNodeList!.get(0),  as PathFindingNodeendPathFindingNodeList!.get(0), multipassState);;
+                        return this.searchN(startPathFindingNodeList!.get(0) as PathFindingNode, endPathFindingNodeList!.get(0) as PathFindingNode, multipassState);;
     
 
                                     }
@@ -250,7 +250,7 @@ var totalPaths = totalPaths
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 }
 
@@ -310,7 +310,7 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -404,7 +404,7 @@ node.pathFindingNodeCostInfoP!.costToEndP= discoveryCalculation;
 this.openPriorityQueue!.add(startNode);
     
 
-    var geographicMapInterface: BasicGeographicMap =  as BasicGeographicMapthis.geographicMapInterface;
+    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;
 ;
     
 
@@ -620,7 +620,7 @@ multipassState!.step++;
     //var target = target
     //var multipassState = multipassState
 
-    var geographicMapInterface: BasicGeographicMap =  as BasicGeographicMapthis.geographicMapInterface;
+    var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;
 ;
     
 
@@ -756,7 +756,7 @@ total++;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicArrayListUtil!.getImmutableInstance();;
+                        return this.basicArrayListUtil!.getImmutableInstance();;
     
 
                                     }
@@ -785,7 +785,7 @@ var current = current
         {
 path.add(current.geographicMapCellPosition);
     
-current=  as PathFindingNodeCostcurrent.parent;
+current= current.parent as PathFindingNodeCost;
     
 }
 

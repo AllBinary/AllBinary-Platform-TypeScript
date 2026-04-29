@@ -91,7 +91,7 @@ public constructor (){
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
 
-    var colorChangeEvent: ColorChangeEvent =  as ColorChangeEventeventObject;
+    var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;
 ;
     
 this.basicColor= colorChangeEvent!.getBasicColorP();
@@ -163,7 +163,7 @@ graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeig
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
 
-    var highScore: HighScore =  as HighScorelist.objectArray[vectorIndex]!;
+    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
 ;
     
 
@@ -189,7 +189,7 @@ vectorIndex= 0;
         while(vectorIndex < size && charHeight *index < height -(charHeight *2))
         {
 
-    var highScore: HighScore =  as HighScorelist.objectArray[vectorIndex]!;
+    var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
 ;
     
 graphics.drawString(highScore!.getName(), 10, charHeight *index, anchor);
@@ -217,7 +217,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 

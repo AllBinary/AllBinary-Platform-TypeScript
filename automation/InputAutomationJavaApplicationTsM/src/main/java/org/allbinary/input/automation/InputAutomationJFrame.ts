@@ -135,11 +135,17 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
         
 import { JFrame } from "./JFrame.js";
 
+import { ImageIcon } from "./ImageIcon.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { Desktop } from "./Desktop.js";
 
 import { ActionEvent } from "./ActionEvent.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { WindowEvent } from "./WindowEvent.js";
 
@@ -159,8 +165,6 @@ import { JScrollPane } from "./JScrollPane.js";
 
 import { JMenuBar } from "./JMenuBar.js";
 
-import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
 
 import { JMenu } from "./JMenu.js";
@@ -177,13 +181,13 @@ export class InputAutomationJFrame extends javax.swing.JFrame implements InputAu
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INPUTAUTOMATION_JFRAME;
+                        return InputAutomationJFrame.INPUTAUTOMATION_JFRAME;
     
 }
 
 
     public static destroy(){
-INPUTAUTOMATION_JFRAME.setVisible(false);
+InputAutomationJFrame.INPUTAUTOMATION_JFRAME.setVisible(false);
     
 }
 
@@ -281,7 +285,7 @@ InputAutomationJFrame.create(
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 
     var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
@@ -391,7 +395,7 @@ noModuleSelectedJDialogLayout!.setVerticalGroup(noModuleSelectedJDialogLayout!.c
     
 setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
     
-setMinimumSize(new java.awt.Dimension(325, 215));
+this.setMinimumSize(new java.awt.Dimension(325, 215));
     
 setResizable(false);
     
@@ -435,7 +439,7 @@ this.gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
     
 this.inputAutomationModuleJList!.setMinimumSize(new java.awt.Dimension(200, 0));
     
-inputAutomationModuleJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
+this.inputAutomationModuleJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -479,7 +483,7 @@ this.processingJMenu!.setToolTipText("Set module processing state");
     
 this.startJMenuItem!.setText(this.commonStrings!.START);
     
-startJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.startJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -495,7 +499,7 @@ this.processingJMenu!.add(this.startJMenuItem);
     
 this.stopJMenuItem!.setText("Stop");
     
-stopJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.stopJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -513,7 +517,7 @@ this.mainJMenuBar!.add(this.processingJMenu);
     
 this.optionsJMenu!.setText("Options");
     
-optionsJMenu!.addActionListener(new java.awt.event.ActionListener()
+this.optionsJMenu!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -531,7 +535,7 @@ this.stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
     
 this.stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
     
-stopOnFocusJCheckBoxMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.stopOnFocusJCheckBoxMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -551,7 +555,7 @@ this.toolsJMenu!.setText("Help");
     
 this.helpJMenuItem!.setText("Help");
     
-helpJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.helpJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -567,7 +571,7 @@ this.toolsJMenu!.add(this.helpJMenuItem);
     
 this.updatesJMenuItem!.setText("Updates");
     
-updatesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.updatesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -583,7 +587,7 @@ this.toolsJMenu!.add(this.updatesJMenuItem);
     
 this.subscriptionJMenuItem!.setText("Subscription");
     
-subscriptionJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.subscriptionJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -599,7 +603,7 @@ this.toolsJMenu!.add(this.subscriptionJMenuItem);
     
 this.modulesJMenuItem!.setText("Module Manager");
     
-modulesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.modulesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -615,7 +619,7 @@ this.toolsJMenu!.add(this.modulesJMenuItem);
     
 this.aboutJMenuItem!.setText("About");
     
-aboutJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.aboutJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -777,7 +781,7 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string =  as Stringthis.inputAutomationModuleJList!.getSelectedValue();;
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue(); as String;
 ;
     
 
@@ -791,7 +795,7 @@ var evt = evt
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout =  as javax.swing.GroupLayoutthis.getAutomationModuleConfigurationJPanel()!.getLayout();;
+    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout(); as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -916,7 +920,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerf
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return automationModuleConfigurationJPanel;
+                        return this.automationModuleConfigurationJPanel;
     
 }
 

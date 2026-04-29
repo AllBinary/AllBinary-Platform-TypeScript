@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../java/lang/System";
+        
 import { IOException } from "../../../../../java/io/IOException.js";
 
     
@@ -228,7 +230,7 @@ this.isFirstException= false;
                                     }
                                 
 
-    var hashtable: Hashtable = this.abeClientInformation!.toHashtable()!;
+    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;
 ;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());

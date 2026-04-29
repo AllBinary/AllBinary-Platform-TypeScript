@@ -45,7 +45,7 @@ export interface HashMapJDialogListenerInterface {
 
                 //@Throws(Error::class)
             
-    onHashMap(hashMap: HashMap)
+    onHashMap(hashMap: HashMap<any, any>)
 
 }
                 

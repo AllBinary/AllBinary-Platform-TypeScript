@@ -70,7 +70,7 @@ export class AnalogControllerConfigurationEventHandler extends BasicEventHandler
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AnalogControllerConfigurationEventHandler.instance;
     
 }
 
@@ -128,10 +128,10 @@ var eventObject = eventObject
 
         try {
             
-    var playerGameInput: AnalogControllerConfigurationEventListenerInterface =  as AnalogControllerConfigurationEventListenerInterfacethis.list.objectArray[index]!;
+    var playerGameInput: AnalogControllerConfigurationEventListenerInterface = this.list.objectArray[index]! as AnalogControllerConfigurationEventListenerInterface;
 ;
     
-playerGameInput!.onAnalogControllerConfigurationEvent( as AnalogControllerConfigurationEventeventObject);
+playerGameInput!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
     
 
                 //: 
@@ -154,10 +154,10 @@ super.fireEvent(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = ( as AnalogControllerConfigurationEventListenerInterfaceeventListenerInterface);
+    var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = (eventListenerInterface as AnalogControllerConfigurationEventListenerInterface);
 ;
     
-analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent( as AnalogControllerConfigurationEventeventObject);
+analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
     
 }
 

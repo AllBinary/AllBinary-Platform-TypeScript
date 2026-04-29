@@ -184,7 +184,7 @@ super.setInputInfoP(keyInfo);
     var index: number = 0;
 index < size; index++)
         {
-key=  as InputkeyList!.objectArray[index]!;
+key= keyList!.objectArray[index]! as Input;
     
 stringBuffer!.append(key.getName());
     

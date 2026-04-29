@@ -72,18 +72,18 @@ export class AdvertisementArea
     private advertisementAreaConstraintsInterface: AdvertisementAreaConstraintsInterface
 
     private campaign: string
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.name=  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.NAME);;
+this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
     
-this.storeName=  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
     
-this.description=  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION);;
+this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION); as String;
     
 
-    var constraintsDomString: string =  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS);;
+    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS); as String;
 ;
     
 
@@ -92,7 +92,7 @@ this.description=  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.DE
     
 this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     
-this.campaign=  as StringhashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);;
+this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME); as String;
     
 }
 

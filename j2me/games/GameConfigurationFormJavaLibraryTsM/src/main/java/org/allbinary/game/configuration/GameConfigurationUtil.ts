@@ -56,13 +56,13 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
+import { GameConfiguration } from "./GameConfiguration.js";
+
 import { GameOptionsForm } from "./GameOptionsForm.js";
 
 import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
-
-import { GameConfiguration } from "./GameConfiguration.js";
 
 export class GameConfigurationUtil
             extends Object
@@ -76,7 +76,7 @@ export class GameConfigurationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameConfigurationUtil.instance;
     
 }
 
@@ -235,7 +235,7 @@ index < size; index++)
                         
                                     {
                                     
-    var gauge: GameConfigurationGauge =  as GameConfigurationGaugeitem;
+    var gauge: GameConfigurationGauge = item as GameConfigurationGauge;
 ;
     
 
@@ -314,7 +314,7 @@ this.COMPETITION_VALUE= (this.COMPETITION_VALUE>>2);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return COMPETITION_VALUE;
+                        return this.COMPETITION_VALUE;
     
 }
 

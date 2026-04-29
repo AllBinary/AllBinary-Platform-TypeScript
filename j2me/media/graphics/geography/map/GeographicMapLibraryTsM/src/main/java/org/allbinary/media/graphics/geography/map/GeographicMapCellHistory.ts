@@ -100,7 +100,7 @@ export class GeographicMapCellHistory
 
     private readonly MISSED_INFO: string = "Missed";
 
-    private readonly animation: Animation = new TextAnimation(MISSED_INFO, AnimationBehavior.getInstance());
+    private readonly animation: Animation = new TextAnimation(this.MISSED_INFO, AnimationBehavior.getInstance());
 
     private totalVisited: number= 0
 
@@ -169,7 +169,7 @@ this.visitedList!.ensureCapacity(size);
     var index: number = 0;
 index < size; index++)
         {
-geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index);;
+geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
     
 this.track(geographicMapCellPosition);
     
@@ -232,7 +232,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GeographicMapCellPositionlocalList!.get(index +1);;
+                        return localList!.get(index +1); as GeographicMapCellPosition;
     
 
                                     }
@@ -271,7 +271,7 @@ var geographicMapCellPosition = geographicMapCellPosition
     var index: number = 0;
 index < size; index++)
         {
-value=  as Booleanthis.visitedList!.get(index);;
+value= this.visitedList!.get(index); as Boolean;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -281,7 +281,7 @@ value=  as Booleanthis.visitedList!.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GeographicMapCellPositionlocalList!.get(index);;
+                        return localList!.get(index); as GeographicMapCellPosition;
     
 
                                     }
@@ -292,7 +292,7 @@ value=  as Booleanthis.visitedList!.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as GeographicMapCellPositionlocalList!.get(0);;
+                        return localList!.get(0); as GeographicMapCellPosition;
     
 }
 
@@ -318,7 +318,7 @@ value=  as Booleanthis.visitedList!.get(index);;
     var index: number = 0;
 index < size; index++)
         {
-value=  as Booleanthis.visitedList!.get(index);;
+value= this.visitedList!.get(index); as Boolean;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -370,7 +370,7 @@ var pathList = pathList
     var index: number = 0;
 index < size; index++)
         {
-geographicMapCellPosition=  as GeographicMapCellPositionpathList!.get(index);;
+geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
     
 
                         if(!localList!.contains(geographicMapCellPosition);)
@@ -403,7 +403,7 @@ geographicMapCellPosition=  as GeographicMapCellPositionpathList!.get(index);;
                         
                                     {
                                     
-    var value: Boolean =  as Booleanthis.visitedList!.get(index);;
+    var value: Boolean = this.visitedList!.get(index); as Boolean;
 ;
     
 
@@ -449,7 +449,7 @@ geographicMapCellPosition=  as GeographicMapCellPositionpathList!.get(index);;
                         if(index !=  -1)
                         
                                     {
-                                    value=  as Booleanthis.visitedList!.get(index);;
+                                    value= this.visitedList!.get(index); as Boolean;
     
 
     var TRUE: Boolean = this.booleanFactory!.TRUE;
@@ -555,7 +555,7 @@ this.totalVisited++;
 ;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.roundbasicDecimal!.getUnscaled();;
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled(););
 ;
     
 
@@ -687,9 +687,9 @@ this.animation.paintXY(graphics, x +halfWidth, y +(height));
     var index: number = size;
 --index >= 0; )
         {
-geographicMapCellPosition=  as GeographicMapCellPositionthis.list.get(index);;
+geographicMapCellPosition= this.list.get(index); as GeographicMapCellPosition;
     
-isCellVisitedBoolean=  as BooleanlocalVisitedList!.get(index);;
+isCellVisitedBoolean= localVisitedList!.get(index); as Boolean;
     
 
                         if(!isCellVisitedBoolean;)

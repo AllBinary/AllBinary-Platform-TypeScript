@@ -294,7 +294,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
                 //@Throws(Error::class)
             
     stop2(){
-clip.stop();
+this.clip.stop();
     
 super.stop();
     
@@ -332,7 +332,7 @@ this.setVolumeF((leftVolume) /100.0f);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl =  as FloatControlclip.getControl(FloatControl.Type.MASTER_GAIN);;
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
 ;
     
 
@@ -359,7 +359,7 @@ this.setVolumeF((leftVolume) /100.0f);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl =  as FloatControlthis.clip.getControl(FloatControl.Type.MASTER_GAIN);;
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
 ;
     
 masterGainFloatControl!.setValue(20f *Math.log10(volume););
@@ -396,7 +396,7 @@ var event = event
 index < size; index++)
         {
 
-    var listener: PlayerListener =  as PlayerListenerthis.listenersList!.get(size);;
+    var listener: PlayerListener = this.listenersList!.get(size); as PlayerListener;
 ;
     
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 

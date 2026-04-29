@@ -107,7 +107,7 @@ var thread = thread
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return running;
+                        return this.running;
     
 }
 
@@ -125,7 +125,7 @@ this.running= running;
 
                         if(this.captureThread != 
                                     null
-                                 && (captureThread!.isAlive() || this.getCaptureWorker()!.isRunning() || this.getMotionRectanglesWorker()!.isRunning() || this.getImageComparisonWorker()!.isRunning()))
+                                 && (this.captureThread!.isAlive() || this.getCaptureWorker()!.isRunning() || this.getMotionRectanglesWorker()!.isRunning() || this.getImageComparisonWorker()!.isRunning()))
                         
                                     {
                                     
@@ -156,7 +156,7 @@ this.running= running;
                                     {
                                     this.captureThread= new Thread(this.getCaptureWorker());
     
-this.logUtil!.putF("Starting CaptureWorkers - Need more images - Thread State: " +captureThread!.getState()!.toString(), this, "startCaptureWorkers");
+this.logUtil!.putF("Starting CaptureWorkers - Need more images - Thread State: " +this.captureThread!.getState()!.toString(), this, "startCaptureWorkers");
     
 this.captureThread!.start();
     
@@ -247,7 +247,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputAutomationActionInterface;
+                        return this.inputAutomationActionInterface;
     
 }
 
@@ -264,7 +264,7 @@ this.inputAutomationActionInterface= inputAutomationActionInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return captureWorkerInterface;
+                        return this.captureWorkerInterface;
     
 }
 
@@ -281,7 +281,7 @@ this.captureWorkerInterface= captureWorkerInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageComparisonWorker;
+                        return this.imageComparisonWorker;
     
 }
 
@@ -298,7 +298,7 @@ this.imageComparisonWorker= imageComparisonWorker;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return motionRectanglesWorker;
+                        return this.motionRectanglesWorker;
     
 }
 

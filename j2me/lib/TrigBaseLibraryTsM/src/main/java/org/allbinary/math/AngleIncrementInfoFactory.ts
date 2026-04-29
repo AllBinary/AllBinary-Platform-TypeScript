@@ -53,17 +53,17 @@ export class AngleIncrementInfoFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AngleIncrementInfoFactory.instance;
     
 }
 
 
-    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE);
+    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE));
 
     public getAt(angleIncrement: number): AngleIncrementInfo{
 var angleIncrement = angleIncrement
 
-    var halfAngleIncrement: number = (Math.roundangleIncrement>>1);
+    var halfAngleIncrement: number = (Math.round(angleIncrement)>>1);
 ;
     
 

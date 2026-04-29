@@ -109,56 +109,56 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
     public onUpMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDownMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent){
 var ev = ev
-onMotionGestureEvent(ev);
+this.onMotionGestureEvent(ev);
     
 }
 

@@ -137,7 +137,7 @@ export class PaymentGateway
     private lastModified: string
 
     private timeEntered: string
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
@@ -146,7 +146,7 @@ this.getFormData(hashMap);
 }
 
 
-    public getFormData(hashMap: HashMap){
+    public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
@@ -156,198 +156,198 @@ var hashMap = hashMap
     var empty: string = stringUtil!.EMPTY_STRING;
 ;
     
-this.storeName=  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME.toString());;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME.toString()); as String;
     
-this.name=  as StringhashMap!.get(PaymentGatewayData.NAME.toString());;
+this.name= hashMap!.get(PaymentGatewayData.NAME.toString()); as String;
     
-this.enable= stringUtil!.getNonNull( as StringhashMap!.get(EntryData.getInstance()!.ENABLE.toString()));
+this.enable= stringUtil!.getNonNull(hashMap!.get(EntryData.getInstance()!.ENABLE.toString()) as String);
     
-this.paymentMethod= stringUtil!.getNonNull( as StringhashMap!.get(PaymentData.METHOD.toString()));
+this.paymentMethod= stringUtil!.getNonNull(hashMap!.get(PaymentData.METHOD.toString()) as String);
     
-this.mode= stringUtil!.getNonNull( as StringhashMap!.get(PaymentGatewayData.MODE.toString()));
+this.mode= stringUtil!.getNonNull(hashMap!.get(PaymentGatewayData.MODE.toString()) as String);
     
-this.testProtocol= stringUtil!.getNonNull( as StringhashMap!.get(PaymentGatewayData.TESTPROTOCOL.toString()));
+this.testProtocol= stringUtil!.getNonNull(hashMap!.get(PaymentGatewayData.TESTPROTOCOL.toString()) as String);
     
-this.testServer= stringUtil!.getNonNull( as StringhashMap!.get(PaymentGatewayData.TESTSERVER.toString()));
+this.testServer= stringUtil!.getNonNull(hashMap!.get(PaymentGatewayData.TESTSERVER.toString()) as String);
     
-this.testPort= stringUtil!.getNonNull( as StringhashMap!.get(PaymentGatewayData.TESTPORT.toString()));
+this.testPort= stringUtil!.getNonNull(hashMap!.get(PaymentGatewayData.TESTPORT.toString()) as String);
     
-this.testPath=  as StringhashMap!.get(PaymentGatewayData.TESTPATH.toString());;
+this.testPath= hashMap!.get(PaymentGatewayData.TESTPATH.toString()); as String;
     
 
                         if(this.testPath == 
                                     null
                                 )
                         this.testPath= empty
-this.serverProtocol=  as StringhashMap!.get(PaymentGatewayData.SERVERPROTOCOL.toString());;
+this.serverProtocol= hashMap!.get(PaymentGatewayData.SERVERPROTOCOL.toString()); as String;
     
 
                         if(this.serverProtocol == 
                                     null
                                 )
                         this.serverProtocol= empty
-this.server=  as StringhashMap!.get(PaymentGatewayData.SERVER.toString());;
+this.server= hashMap!.get(PaymentGatewayData.SERVER.toString()); as String;
     
 
                         if(this.server == 
                                     null
                                 )
                         this.server= empty
-this.serverPort=  as StringhashMap!.get(PaymentGatewayData.SERVERPORT.toString());;
+this.serverPort= hashMap!.get(PaymentGatewayData.SERVERPORT.toString()); as String;
     
 
                         if(this.serverPort == 
                                     null
                                 )
                         this.serverPort= empty
-this.serverPath=  as StringhashMap!.get(PaymentGatewayData.SERVERPATH.toString());;
+this.serverPath= hashMap!.get(PaymentGatewayData.SERVERPATH.toString()); as String;
     
 
                         if(this.serverPath == 
                                     null
                                 )
                         this.serverPath= empty
-this.userName=  as StringhashMap!.get(UserData.USERNAME.toString());;
+this.userName= hashMap!.get(UserData.USERNAME.toString()); as String;
     
 
                         if(this.userName == 
                                     null
                                 )
                         this.userName= empty
-this.password=  as StringhashMap!.get(UserData.PASSWORD.toString());;
+this.password= hashMap!.get(UserData.PASSWORD.toString()); as String;
     
 
                         if(this.password == 
                                     null
                                 )
                         this.password= empty
-this.timeout=  as StringhashMap!.get(PaymentGatewayData.TIMEOUT.toString());;
+this.timeout= hashMap!.get(PaymentGatewayData.TIMEOUT.toString()); as String;
     
 
                         if(this.timeout == 
                                     null
                                 )
                         this.timeout= empty
-this.proxyProtocol=  as StringhashMap!.get(PaymentGatewayData.PROXYPROTOCOL.toString());;
+this.proxyProtocol= hashMap!.get(PaymentGatewayData.PROXYPROTOCOL.toString()); as String;
     
 
                         if(this.proxyProtocol == 
                                     null
                                 )
                         this.proxyProtocol= empty
-this.proxyServer=  as StringhashMap!.get(PaymentGatewayData.PROXYSERVER.toString());;
+this.proxyServer= hashMap!.get(PaymentGatewayData.PROXYSERVER.toString()); as String;
     
 
                         if(this.proxyServer == 
                                     null
                                 )
                         this.proxyServer= empty
-this.proxyPort=  as StringhashMap!.get(PaymentGatewayData.PROXYPORT.toString());;
+this.proxyPort= hashMap!.get(PaymentGatewayData.PROXYPORT.toString()); as String;
     
 
                         if(this.proxyPort == 
                                     null
                                 )
                         this.proxyPort= empty
-this.proxyPath=  as StringhashMap!.get(PaymentGatewayData.PROXYPATH.toString());;
+this.proxyPath= hashMap!.get(PaymentGatewayData.PROXYPATH.toString()); as String;
     
 
                         if(this.proxyPath == 
                                     null
                                 )
                         this.proxyPath= empty
-this.proxyUserName=  as StringhashMap!.get(PaymentGatewayData.PROXYUSERNAME.toString());;
+this.proxyUserName= hashMap!.get(PaymentGatewayData.PROXYUSERNAME.toString()); as String;
     
 
                         if(this.proxyUserName == 
                                     null
                                 )
                         this.proxyUserName= empty
-this.proxyPassword=  as StringhashMap!.get(PaymentGatewayData.PROXYPASSWORD.toString());;
+this.proxyPassword= hashMap!.get(PaymentGatewayData.PROXYPASSWORD.toString()); as String;
     
 
                         if(this.proxyPassword == 
                                     null
                                 )
                         this.proxyPassword= empty
-this.proxyTimeout=  as StringhashMap!.get(PaymentGatewayData.PROXYTIMEOUT.toString());;
+this.proxyTimeout= hashMap!.get(PaymentGatewayData.PROXYTIMEOUT.toString()); as String;
     
 
                         if(this.proxyTimeout == 
                                     null
                                 )
                         this.proxyTimeout= empty
-this.special1=  as StringhashMap!.get(PaymentGatewayData.SPECIAL1.toString());;
+this.special1= hashMap!.get(PaymentGatewayData.SPECIAL1.toString()); as String;
     
 
                         if(this.special1 == 
                                     null
                                 )
                         this.special1= empty
-this.special2=  as StringhashMap!.get(PaymentGatewayData.SPECIAL2.toString());;
+this.special2= hashMap!.get(PaymentGatewayData.SPECIAL2.toString()); as String;
     
 
                         if(this.special2 == 
                                     null
                                 )
                         this.special2= empty
-this.special3=  as StringhashMap!.get(PaymentGatewayData.SPECIAL3.toString());;
+this.special3= hashMap!.get(PaymentGatewayData.SPECIAL3.toString()); as String;
     
 
                         if(this.special3 == 
                                     null
                                 )
                         this.special3= empty
-this.special4=  as StringhashMap!.get(PaymentGatewayData.SPECIAL4.toString());;
+this.special4= hashMap!.get(PaymentGatewayData.SPECIAL4.toString()); as String;
     
 
                         if(this.special4 == 
                                     null
                                 )
                         this.special4= empty
-this.special5=  as StringhashMap!.get(PaymentGatewayData.SPECIAL5.toString());;
+this.special5= hashMap!.get(PaymentGatewayData.SPECIAL5.toString()); as String;
     
 
                         if(this.special5 == 
                                     null
                                 )
                         this.special5= empty
-this.special6=  as StringhashMap!.get(PaymentGatewayData.SPECIAL6.toString());;
+this.special6= hashMap!.get(PaymentGatewayData.SPECIAL6.toString()); as String;
     
 
                         if(this.special6 == 
                                     null
                                 )
                         this.special6= empty
-this.special7=  as StringhashMap!.get(PaymentGatewayData.SPECIAL7.toString());;
+this.special7= hashMap!.get(PaymentGatewayData.SPECIAL7.toString()); as String;
     
 
                         if(this.special7 == 
                                     null
                                 )
                         this.special7= empty
-this.special8=  as StringhashMap!.get(PaymentGatewayData.SPECIAL8.toString());;
+this.special8= hashMap!.get(PaymentGatewayData.SPECIAL8.toString()); as String;
     
 
                         if(this.special8 == 
                                     null
                                 )
                         this.special8= empty
-this.special9=  as StringhashMap!.get(PaymentGatewayData.SPECIAL9.toString());;
+this.special9= hashMap!.get(PaymentGatewayData.SPECIAL9.toString()); as String;
     
 
                         if(this.special9 == 
                                     null
                                 )
                         this.special9= empty
-this.lastModified=  as StringhashMap!.get(EntryData.getInstance()!.LASTMODIFIED.toString());;
+this.lastModified= hashMap!.get(EntryData.getInstance()!.LASTMODIFIED.toString()); as String;
     
 
                         if(this.lastModified == 
                                     null
                                 )
                         this.lastModified= empty
-this.timeEntered=  as StringhashMap!.get(EntryData.getInstance()!.TIMECREATED.toString());;
+this.timeEntered= hashMap!.get(EntryData.getInstance()!.TIMECREATED.toString()); as String;
     
 
                         if(this.timeEntered == 
@@ -937,7 +937,7 @@ this.timeEntered= value;
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
 
 
@@ -949,10 +949,10 @@ this.timeEntered= value;
 
                 //@Throws(Error::class)
             
-    public toHashMap(isEncrypted: boolean): HashMap{
+    public toHashMap(isEncrypted: boolean): HashMap<any, any>{
 var isEncrypted = isEncrypted
 
-    var paymentGatewayHashMap: HashMap = new HashMap();
+    var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 paymentGatewayHashMap!.put(EntryData.getInstance()!.ENABLE, this.enable);
@@ -1228,7 +1228,7 @@ updateVector!.add(this.special9);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectnew PaymentGatewayPrimaryKey(this.getStoreName(), this.getName());
+                        return new PaymentGatewayPrimaryKey(this.getStoreName(), this.getName()) as Object;
     
 }
 

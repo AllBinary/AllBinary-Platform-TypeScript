@@ -99,7 +99,7 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer =  as RTSLayerlist.get(index);;
+    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
 ;
     
 
@@ -130,7 +130,7 @@ index >= 0; index--)
 index >= 0; index--)
         {
 
-    var rootName: string =  as Stringthis.rootNameList!.get(index);;
+    var rootName: string = this.rootNameList!.get(index); as String;
 ;
     
 stringBuffer!.append(rootName);
@@ -159,7 +159,7 @@ this.rootNameList!.clear();
 
     private readonly TOTAL: string = "Total Selected: ";
 
-    private readonly totalWidth: number = MyFont.getInstance()!.stringWidth(TOTAL)!;
+    private readonly totalWidth: number = MyFont.getInstance()!.stringWidth(this.TOTAL)!;
 
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.toInt()!;
 

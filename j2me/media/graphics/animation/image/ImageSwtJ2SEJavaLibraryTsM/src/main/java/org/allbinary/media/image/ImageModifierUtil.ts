@@ -87,7 +87,7 @@ export class ImageModifierUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageModifierUtil.instance;
     
 }
 
@@ -117,20 +117,20 @@ export class ImageModifierUtil
                         
                                     {
                                     
-    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
+    var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
+    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -207,11 +207,11 @@ bx= (imageData!.data[index3 +2]&0xFF);
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    imageData!.data[index3]= .toByte()r;
+                                    imageData!.data[index3]= r.toByte();
     
-imageData!.data[index3 +1]= .toByte()g;
+imageData!.data[index3 +1]= g.toByte();
     
-imageData!.data[index3 +2]= .toByte()b;
+imageData!.data[index3 +2]= b.toByte();
     
 
                                     }
@@ -240,7 +240,7 @@ imageData!.data[index3 +2]= .toByte()b;
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageimage);
+    var openGLESImage: OpenGLESImage = (image as OpenGLESImage);
 ;
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
@@ -272,20 +272,20 @@ openGLESImage!.openGLESImageProperties!.bluef= basicColor!.getBlueComponent();
                         
                                     {
                                     
-    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
+    var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
+    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -350,11 +350,11 @@ gx *= g;
     
 bx *= b;
     
-imageData!.data[index]= .toByte()rx;
+imageData!.data[index]= rx.toByte();
     
-imageData!.data[index +1]= .toByte()gx;
+imageData!.data[index +1]= gx.toByte();
     
-imageData!.data[index +2]= .toByte()bx;
+imageData!.data[index +2]= bx.toByte();
     
 }
 
@@ -378,7 +378,7 @@ imageData!.data[index +2]= .toByte()bx;
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = ( as OpenGLESImageimage);
+    var openGLESImage: OpenGLESImage = (image as OpenGLESImage);
 ;
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
@@ -406,7 +406,7 @@ this.setAlphaSWT(image, alphaInt);
     //var image = image
     //var alphaInt = alphaInt
 
-    var alpha: number = .toByte()alphaInt;
+    var alpha: number = alphaInt.toByte();
 ;
     
 
@@ -418,20 +418,20 @@ this.setAlphaSWT(image, alphaInt);
                         
                                     {
                                     
-    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
+    var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
+    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
+newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
                         }

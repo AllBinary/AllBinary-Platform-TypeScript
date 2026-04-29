@@ -57,7 +57,7 @@ export class IdGeneratorEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as IdGeneratorEntityInterfacenew org.allbinary.data.tables.generator.IdGeneratorEntity();
+                        return new org.allbinary.data.tables.generator.IdGeneratorEntity() as IdGeneratorEntityInterface;
     
 
                 //: 

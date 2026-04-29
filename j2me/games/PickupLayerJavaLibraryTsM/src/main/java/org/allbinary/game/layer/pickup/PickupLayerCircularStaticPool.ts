@@ -40,6 +40,8 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PickupLayer } from "./PickupLayer.js";
+
 import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
@@ -54,7 +56,7 @@ export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return PickupLayerCircularStaticPool.SINGLETON;
     
 }
 
@@ -72,7 +74,7 @@ private constructor (){
     //var y = y
     //var z = z
 
-    var pickupLayer: PickupLayer =  as PickupLayerthis.getNextInstance();;
+    var pickupLayer: PickupLayer = this.getNextInstance(); as PickupLayer;
 ;
     
 pickupLayer!.initXYZ(x, y, z);

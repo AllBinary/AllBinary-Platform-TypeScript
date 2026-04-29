@@ -70,7 +70,7 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LogFormatUtil.instance;
     
 }
 
@@ -104,7 +104,7 @@ private constructor (){
     //var specialMessage = specialMessage
     //var exception = exception
 
-    var stringBuffer: StringMaker = getF(className, functionName)!;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;
 ;
     
 stringBuffer!.append(this.getO(exception));
@@ -129,7 +129,7 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
     //var functionName = functionName
     //var specialMessage = specialMessage
 
-    var stringBuffer: StringMaker = getF(className, functionName)!;
+    var stringBuffer: StringMaker = this.getF(className, functionName)!;
 ;
     
 stringBuffer!.append(this.SPECIAL_MESSAGE);
@@ -220,7 +220,7 @@ stringBuffer!.append(this.STACK_TRACE);
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace( as Errorexception));
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
     
 
                                     }

@@ -123,7 +123,7 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
 index < size; index++)
         {
 
-    var integer: number =  as Integerthis.idList!.objectArray[index]!;
+    var integer: number = this.idList!.objectArray[index]! as Integer;
 ;
     
 this.delete(abeClientInformation, integer.toInt());
@@ -190,7 +190,7 @@ recordStore!.closeRecordStore();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return platformRecordIdUtil!.getRecordId(abeClientInformation, recordId);;
+                        return this.platformRecordIdUtil!.getRecordId(abeClientInformation, recordId);;
     
 }
 

@@ -205,7 +205,7 @@ var storeFront = storeFront
 index < size; index++)
         {
 
-    var subStore: string =  as StringsubStoreVector!.get(index);;
+    var subStore: string = subStoreVector!.get(index); as String;
 ;
     
 
@@ -302,7 +302,7 @@ StreamUtil.getInstance()!.close(idOutData);
 
                 //@Throws(Error::class)
             
-    create(keywordData: string, keywordFilenameHashMap: HashMap, vector: Vector, staticPath: AbPath){
+    create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
 var keywordFilenameHashMap = keywordFilenameHashMap
 var vector = vector
@@ -312,7 +312,7 @@ var staticPath = staticPath
 ;
     
 
-    var hashMap: HashMap = SpecialCharacterUtil.getHashMap()!;
+    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;
 ;
     
 hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
@@ -426,7 +426,7 @@ this.savePage(file, productListingPages[index]!);
 }
 
 
-    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap){
+    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
 var storeFront = storeFront
 var keywordFilenameHashMap = keywordFilenameHashMap
 
@@ -455,11 +455,11 @@ index < size; index++)
 ;
     
 
-    var keywordData: string =  as StringkeywordArray[index]!;
+    var keywordData: string = keywordArray[index]! as String;
 ;
     
 
-    var fileName: string =  as StringkeywordFilenameHashMap!.get(keywordData as Object);;
+    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object); as String;
 ;
     
 insertVector!.add(storeFront!.getName());
@@ -523,7 +523,7 @@ stringBuffer!.append(storeFront!.getStaticPath());
 ;
     
 
-    var keywordFilenameHashMap: HashMap = new HashMap();
+    var keywordFilenameHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -564,7 +564,7 @@ stringBuffer!.append(" Store Not Found");
 index < size; index++)
         {
 
-    var keywordData: string =  as StringkeywordArray[index]!;
+    var keywordData: string = keywordArray[index]! as String;
 ;
     
 
@@ -658,7 +658,7 @@ stringBuffer!.append("<br />");
     var index: number = 0;
 index < size; index++)
         {
-storeName=  as StringstoreFrontVector!.get(index);;
+storeName= storeFrontVector!.get(index); as String;
     
 this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
     

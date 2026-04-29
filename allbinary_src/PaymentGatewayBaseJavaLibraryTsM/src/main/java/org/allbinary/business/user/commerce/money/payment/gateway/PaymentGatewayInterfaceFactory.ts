@@ -130,7 +130,7 @@ var httpServletRequest = httpServletRequest
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
@@ -146,7 +146,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap): PaymentGatewayInterface{
+    public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 var hashMap = hashMap
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -155,7 +155,7 @@ var hashMap = hashMap
 
         try {
             
-    var gatewayName: string =  as StringhashMap!.get(PaymentGatewayData.NAME.toString());;
+    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()); as String;
 ;
     
 

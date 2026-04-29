@@ -72,7 +72,7 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-        this.idGeneratorEntity=  as IdGeneratorEntityIdGeneratorEntityFactory.getInstance();;
+        this.idGeneratorEntity= IdGeneratorEntityFactory.getInstance(); as IdGeneratorEntity;
     
 }
 

@@ -70,7 +70,7 @@ export class Basket
          implements BasketInterface, Serializable {
         
 
-    private items: HashMap = new HashMap();
+    private items: HashMap<any, any> = new HashMap<any, any>();
 public constructor (){
 
             super();
@@ -144,7 +144,7 @@ var num = num
 
     public getTotalWeight(): string{
 
-    var itemsAndNumberInBasket: HashMap = getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = this.getItems()!;
 ;
     
 
@@ -231,12 +231,12 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getItems(): HashMap{
+    public getItems(): HashMap<any, any>{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return items;
+                        return this.items;
     
 }
 
@@ -244,7 +244,7 @@ totalWeight!.add(weightFloat!.toString());
     public getNumberOf(product: string): number{
 var product = product
 
-    var numStr: string =  as Stringthis.items.get(product);;
+    var numStr: string = this.items.get(product); as String;
 ;
     
 
@@ -260,7 +260,7 @@ var product = product
             
     public getSubTotal(): Money{
 
-    var itemsAndNumberInBasket: HashMap = getItems()!;
+    var itemsAndNumberInBasket: HashMap<any, any> = this.getItems()!;
 ;
     
 
@@ -280,7 +280,7 @@ var product = product
 ;
     
 
-    var inventoryEntity: InventoryEntity =  as InventoryEntityinventoryEntityFactory!.getInventoryEntityInstance();;
+    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance(); as InventoryEntity;
 ;
     
 

@@ -88,7 +88,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap = new NameSpaceRequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = new NameSpaceRequestParams(this.getPageContext()).
                             toHashMap()!;
 ;
     
@@ -129,7 +129,7 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.styleValidationInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
     
 
                                     }

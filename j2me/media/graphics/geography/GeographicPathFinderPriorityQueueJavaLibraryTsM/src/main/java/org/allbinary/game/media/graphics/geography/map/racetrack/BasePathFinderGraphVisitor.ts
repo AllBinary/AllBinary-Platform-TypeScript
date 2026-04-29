@@ -107,7 +107,7 @@ this.maxPathWeight= maxPathWeight;
     var index: number = startPathFindingNodeList!.size() -1;
 index >= 0; index--)
         {
-startPathFindingNode=  as PathFindingNodestartPathFindingNodeList!.get(index);;
+startPathFindingNode= startPathFindingNodeList!.get(index); as PathFindingNode;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
     

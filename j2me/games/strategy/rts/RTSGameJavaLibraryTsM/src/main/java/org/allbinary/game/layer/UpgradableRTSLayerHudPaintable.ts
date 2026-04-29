@@ -71,7 +71,7 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return UpgradableRTSLayerHudPaintable.instance;
     
 }
 
@@ -134,7 +134,7 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.getRtsLayer();;
+    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
 ;
     
 this.rtsLayerCompositePaintableLateInit!.update(rtsLayer);
@@ -156,7 +156,7 @@ this.setName(rtsLayer!.getName());
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.getRtsLayer();;
+    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
 ;
     
 this.percentComplete= rtsLayer!.getPercentComplete();
@@ -171,7 +171,7 @@ this.percentComplete= rtsLayer!.getPercentComplete();
                                     }
                                 
                              else 
-                        if(percentComplete < 100)
+                        if(this.percentComplete < 100)
                         
                                     {
                                     this.percentCompleteX= 24;
@@ -198,7 +198,7 @@ super.paint(graphics);
     
 this.rtsLayerCompositePaintableLateInit!.paint(graphics);
     
-graphics.drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, costY, 0);
+graphics.drawChars(this.percentCompleteArray, 0, this.currentTotalDigits, this.imageX +this.percentCompleteX, this.costY, 0);
     
 graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0);
     
@@ -219,7 +219,7 @@ this.rtsLayer= rtsLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayer;
+                        return this.rtsLayer;
     
 }
 

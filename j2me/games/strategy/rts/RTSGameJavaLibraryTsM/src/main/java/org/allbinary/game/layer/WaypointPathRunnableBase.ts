@@ -105,11 +105,11 @@ this.setPriority();
 
     public setPriority(){
 
-    var pathFindingLayer: AllBinaryLayer =  as AllBinaryLayerthis.pathFindingLayer;
+    var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;
 ;
     
 
-    var targetLayer: AllBinaryLayer =  as AllBinaryLayerthis.targetPathFindingLayer;
+    var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;
 ;
     
 
@@ -139,7 +139,7 @@ this.priorityP= distanceCategory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return targetPathFindingLayer;
+                        return this.targetPathFindingLayer;
     
 }
 

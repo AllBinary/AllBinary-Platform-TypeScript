@@ -88,7 +88,7 @@ this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFront
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return shippingVector;
+                        return this.shippingVector;
     
 }
 
@@ -113,7 +113,7 @@ var name = name
     var index: number = 0;
 index < size; index++)
         {
-shipping=  as ShippingInterfacethis.shippingVector!.get(index);;
+shipping= this.shippingVector!.get(index); as ShippingInterface;
     
 
                         if(name.compareTo(shipping.getName()) == 0)
@@ -153,7 +153,7 @@ shipping=  as ShippingInterfacethis.shippingVector!.get(index);;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return defaultShippingMethodInterface;
+                        return this.defaultShippingMethodInterface;
     
 }
 

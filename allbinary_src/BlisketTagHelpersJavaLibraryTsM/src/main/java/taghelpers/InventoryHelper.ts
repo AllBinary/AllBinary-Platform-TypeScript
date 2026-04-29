@@ -110,21 +110,21 @@ export class InventoryHelper extends TagHelper {
     private id: string
 
     private searchRequest: SearchRequest
-public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.response=  as HttpServletResponsepageContext!.getResponse();;
+this.response= pageContext!.getResponse(); as HttpServletResponse;
     
-this.request=  as HttpServletRequestpageContext!.getRequest();;
+this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 ;
     
 
-    var xslFile: string =  as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);;
+    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
 ;
     
 
@@ -223,7 +223,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 ;
     
 
-    var keywords: string =  as Stringthis.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS);;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS); as String;
 ;
     
 

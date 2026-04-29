@@ -322,7 +322,7 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
     private readonly NO_DISPLAYABLE: string = "No Displayable";
 
     private readonly COMMAND_ACTION: string = new StringMaker().
-                            append("GameMidlet::")!.append(midletStrings!.COMMAND_ACTION)!.toString()!;
+                            append("GameMidlet::")!.append(this.midletStrings!.COMMAND_ACTION)!.toString()!;
 
     private readonly PAUSE_APP_BACKGROUND: string = "pauseAppBackground";
 
@@ -635,7 +635,7 @@ this.setDemo();
             {
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "startApp", e);
     
-destroyApp(false);
+this.destroyApp(false);
     
 notifyDestroyed();
     
@@ -695,7 +695,7 @@ PreLogUtil.put(new StringMaker().
                         if(this.getDisplay()!.getCurrent() != this.allbinaryGameCanvasRunnableInterface && this.allbinaryGameCanvasRunnableInterface!.getType() != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE.getType())
                         
                                     {
-                                    this.setDisplay( as Displayablethis.allbinaryGameCanvasRunnableInterface);
+                                    this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
     
 
                                     }
@@ -710,12 +710,12 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: MenuListener =  as MenuListenerdisplayable;
+    var menuListener: MenuListener = displayable as MenuListener;
 ;
     
 menuListener!.close();
     
-this.setDisplay( as Displayablethis.allbinaryGameCanvasRunnableInterface);
+this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
     
 this.unPauseAppBackground(false);
     
@@ -814,7 +814,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
 ;
     
 
-    var lockableFeature: LockableFeature =  as LockableFeaturelist.get(0);;
+    var lockableFeature: LockableFeature = list.get(0); as LockableFeature;
 ;
     
 
@@ -848,7 +848,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                         
                                     {
                                     
-    var menuListener: MenuListener =  as MenuListenerdisplayable;
+    var menuListener: MenuListener = displayable as MenuListener;
 ;
     
 menuListener!.close();
@@ -904,7 +904,7 @@ this.setDisplay(displayable);
                                     this.pauseAppBackground(false);
     
 
-    var menuListener: MenuListener =  as MenuListenerdisplayable;
+    var menuListener: MenuListener = displayable as MenuListener;
 ;
     
 menuListener!.open();
@@ -921,7 +921,7 @@ this.setDisplay(displayable);
                                     this.debugInterface!.start();
     
 
-    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.allbinaryGameCanvasRunnableInterface;
+    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
 ;
     
 gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE);
@@ -942,7 +942,7 @@ this.debugInterface!.stop();
 this.unPauseAppBackground(false);
     
 
-    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.allbinaryGameCanvasRunnableInterface;
+    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
 ;
     
 gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE);
@@ -964,7 +964,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                         if(tempDisplayable is GameOptionsForm)
                         
                                     {
-                                    GameFeatureFormUtil.getInstance()!.setDefault( as CommandFormtempDisplayable);
+                                    GameFeatureFormUtil.getInstance()!.setDefault(tempDisplayable as CommandForm);
     
 
                                     }
@@ -985,7 +985,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas =  as GameInputMappingCanvastempDisplayable;
+    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
 ;
     
 gameInputMappingCanvas!.update();
@@ -1011,7 +1011,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var highScoresCanvas: HighScoresCanvas =  as HighScoresCanvastempDisplayable;
+    var highScoresCanvas: HighScoresCanvas = tempDisplayable as HighScoresCanvas;
 ;
     
 highScoresCanvas!.updateCommand(command);
@@ -1036,7 +1036,7 @@ highScoresCanvas!.updateCommand(command);
                         
                                     {
                                     
-    var menuListener: MenuListener =  as MenuListenerdisplayable;
+    var menuListener: MenuListener = displayable as MenuListener;
 ;
     
 menuListener!.close();
@@ -1077,7 +1077,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas =  as GameInputMappingCanvastempDisplayable;
+    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
 ;
     
 gameInputMappingCanvas!.setDefault();
@@ -1126,7 +1126,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm =  as InGameOptionsFormInGameOptionsFormFactory.getInstance()!.get();;
+    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get(); as InGameOptionsForm;
 ;
     
 GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
@@ -1182,7 +1182,7 @@ stringBuffer!.appendboolean(this.isResized());
 PreLogUtil.put(stringBuffer!.toString(), this, COMMAND_ACTION);
     
 
-                        if(this.isResized() || fullScreenUtil!.isScreenChange(isFullScreen))
+                        if(this.isResized() || this.fullScreenUtil!.isScreenChange(isFullScreen))
                         
                                     {
                                     this.updateFullScreen();
@@ -1257,11 +1257,11 @@ this.setStartStateHashtable(keyValuePersistance!.get(index));
     
 menuListener!.close();
     
-PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION);
+PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, this.COMMAND_ACTION);
     
 this.commandAction(gameCommandsFactory!.START_COMMAND, NullCanvas.NULL_CANVAS);
     
-PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMAND_ACTION);
+PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, this.COMMAND_ACTION);
     
 
                                     }
@@ -1327,7 +1327,7 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: HighScoreTextBox =  as HighScoreTextBoxdisplayable;
+    var menuListener: HighScoreTextBox = displayable as HighScoreTextBox;
 ;
     
 menuListener!.submitted= true;
@@ -1443,7 +1443,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION,
                         
                                     {
                                     
-    var canvas: Canvas =  as Canvasdisplayable;
+    var canvas: Canvas = displayable as Canvas;
 ;
     
 canvas.setFullScreenMode(isFullScreen);
@@ -1601,7 +1601,7 @@ this.logUtil!.putF(commonStrings!.END, this, gameStrings!.STOP_GAME_CANVAS_RUNNA
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return allbinaryGameCanvasRunnableInterface;
+                        return this.allbinaryGameCanvasRunnableInterface;
     
 }
 
@@ -1647,7 +1647,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.SAVE);
     
 
-    var hashtable: Hashtable = this.getCurrentStateHashtable()!;
+    var hashtable: Hashtable<any, any> = this.getCurrentStateHashtable()!;
 ;
     
 GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
@@ -1657,11 +1657,11 @@ GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable{
+    public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: Hashtable = new Hashtable();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 
@@ -1669,7 +1669,7 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
                         
                                     {
                                     
-    var currentHashtable: Hashtable = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
+    var currentHashtable: Hashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
 ;
     
 
@@ -1713,7 +1713,7 @@ this.loadGameForm= loadGameForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as LoadGameFormthis.loadGameForm;
+                        return this.loadGameForm as LoadGameForm;
     
 }
 
@@ -1730,7 +1730,7 @@ this.resized= resized;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resized;
+                        return this.resized;
     
 }
 
@@ -1760,7 +1760,7 @@ this.resized= resized;
                         
                                     {
                                     
-    var demoCanvas: DemoCanvas =  as DemoCanvasdisplayable;
+    var demoCanvas: DemoCanvas = displayable as DemoCanvas;
 ;
     
 

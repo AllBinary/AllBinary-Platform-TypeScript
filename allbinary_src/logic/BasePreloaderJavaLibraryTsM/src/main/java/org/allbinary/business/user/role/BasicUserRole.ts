@@ -72,7 +72,7 @@ var role = role
 index < size; index++)
         {
 
-    var userRole: BasicUserRole =  as BasicUserRoleroleVector!.get(index);;
+    var userRole: BasicUserRole = roleVector!.get(index); as BasicUserRole;
 ;
     
 
@@ -147,7 +147,7 @@ this.sessionTimeout= aSessionTimeout;
     
 this.sessionInactivityTimeout= aSessionInactivityTimeout;
     
-roleVector!.add(this);
+BasicUserRole.roleVector!.add(this);
     
 }
 

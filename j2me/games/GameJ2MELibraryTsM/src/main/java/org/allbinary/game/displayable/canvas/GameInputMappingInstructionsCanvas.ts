@@ -150,7 +150,7 @@ graphics.setColor(this.foregroundColor);
     
 graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
     
-drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
+this.drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
     
 super.paint(graphics);
     

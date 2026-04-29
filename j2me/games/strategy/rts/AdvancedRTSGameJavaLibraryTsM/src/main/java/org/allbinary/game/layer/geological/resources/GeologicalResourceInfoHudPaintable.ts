@@ -64,7 +64,7 @@ export class GeologicalResourceInfoHudPaintable extends WaypointInfoHudPaintable
 public constructor (){
 
             super();
-        this.keyvalueDrawString= new KeyValueDrawCharArray(RESOURCES, this.textX);
+        this.keyvalueDrawString= new KeyValueDrawCharArray(GeologicalResourceInfoHudPaintable.RESOURCES, this.textX);
     
 }
 
@@ -73,7 +73,7 @@ public constructor (){
 super.updateSelectionInfo();
     
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.rtsLayerP;
+    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
 ;
     
 
@@ -93,7 +93,7 @@ super.updateSelectionInfo();
 --index >= 0; )
         {
 
-    var geographicMapCellPosition: GeologicalGeographicMapCellPosition =  as GeologicalGeographicMapCellPositionlist.get(index);;
+    var geographicMapCellPosition: GeologicalGeographicMapCellPosition = list.get(index); as GeologicalGeographicMapCellPosition;
 ;
     
 total += geographicMapCellPosition!.getGeologicalResource()!.getTotal();

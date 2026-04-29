@@ -79,8 +79,8 @@ public constructor (){
 ;
     
 
-    var result: Boolean =  as Booleanmethod.invoke(this.getHelper(), 
-                            null);;
+    var result: Boolean = method.invoke(this.getHelper(), 
+                            null); as Boolean;
 ;
     
 

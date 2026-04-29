@@ -81,7 +81,7 @@ this.setColor(this.getBasicColorP()!.toInt());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 
@@ -91,7 +91,7 @@ this.setColor(this.getBasicColorP()!.toInt());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return colorP;
+                        return this.colorP;
     
 }
 

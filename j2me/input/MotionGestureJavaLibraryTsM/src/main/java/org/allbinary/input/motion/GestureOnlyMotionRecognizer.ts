@@ -61,9 +61,9 @@ export class GestureOnlyMotionRecognizer extends MotionRecognizer {
 public constructor (){
 
             super();
-        this.id= index++;
+        this.id= GestureOnlyMotionRecognizer.index++;
     
-this.motionGestureRecognizer= new MotionGestureRecognizer(id);
+this.motionGestureRecognizer= new MotionGestureRecognizer(this.id);
     
 }
 
@@ -76,7 +76,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -96,7 +96,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);
@@ -116,7 +116,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
 ;
     
 point.setX(x);

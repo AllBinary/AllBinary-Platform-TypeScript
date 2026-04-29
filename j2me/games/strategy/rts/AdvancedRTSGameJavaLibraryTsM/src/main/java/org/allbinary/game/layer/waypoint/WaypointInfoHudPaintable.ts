@@ -71,7 +71,7 @@ public constructor (){
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer =  as RTSLayerthis.rtsLayerP;
+    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
 ;
     
 this.setName(rtsLayer!.getName());
@@ -110,7 +110,7 @@ this.rtsLayerP= rtsLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rtsLayerP;
+                        return this.rtsLayerP;
     
 }
 

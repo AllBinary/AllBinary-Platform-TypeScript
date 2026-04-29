@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameFeatureListenerInterface } from "./GameFeatureListenerInterface.js";
+
 export class GameFeatureEventHandler extends BasicEventHandler {
         
 
@@ -72,10 +74,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var gameFeatureListenerInterface: GameFeatureListenerInterface = ( as GameFeatureListenerInterfaceeventListenerInterface);
+    var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);
 ;
     
-gameFeatureListenerInterface!.onGameFeatureChange( as GameFeatureEventeventObject);
+gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent);
     
 }
 

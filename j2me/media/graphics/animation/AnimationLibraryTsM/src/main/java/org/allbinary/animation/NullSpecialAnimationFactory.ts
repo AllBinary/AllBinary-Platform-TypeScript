@@ -61,7 +61,7 @@ export class NullSpecialAnimationFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_SPECIAL_ANIMATION_FACTORY;
+                        return NullSpecialAnimationFactory.NULL_SPECIAL_ANIMATION_FACTORY;
     
 }
 

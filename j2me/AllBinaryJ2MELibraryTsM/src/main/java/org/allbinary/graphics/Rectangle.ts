@@ -78,7 +78,7 @@ this.height= height;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return point;
+                        return this.point;
     
 }
 
@@ -115,7 +115,7 @@ this.point= point;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return width;
+                        return this.width;
     
 }
 
@@ -132,7 +132,7 @@ this.width= width;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return height;
+                        return this.height;
     
 }
 

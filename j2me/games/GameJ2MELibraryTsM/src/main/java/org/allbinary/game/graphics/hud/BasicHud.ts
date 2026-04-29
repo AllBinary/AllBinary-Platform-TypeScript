@@ -343,7 +343,7 @@ var y = y
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bufferZone;
+                        return this.bufferZone;
     
 }
 
@@ -375,7 +375,7 @@ this.bufferZone= bufferZone;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxWidth;
+                        return this.maxWidth;
     
 }
 
@@ -392,7 +392,7 @@ this.maxWidth= maxWidth;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxHeight;
+                        return this.maxHeight;
     
 }
 
@@ -425,9 +425,9 @@ var string2 = string2
 var offset = offset
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
     
-graphics.drawString(string, x, getY(), hudGraphicsPosition!.getAnchor());
+graphics.drawString(string, this.x, getY(), this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawString(string2, x +offset, getY(), hudGraphicsPosition!.getAnchor());
+graphics.drawString(string2, this.x +offset, getY(), this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -440,9 +440,9 @@ var offset = offset
 var offset2 = offset2
 graphics.setColor(this.getColor());
     
-graphics.drawString(string, x +offset, getY(), hudGraphicsPosition!.getAnchor());
+graphics.drawString(string, this.x +offset, getY(), this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawString(string2, x +offset2, getY(), hudGraphicsPosition!.getAnchor());
+graphics.drawString(string2, this.x +offset2, getY(), this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -460,12 +460,12 @@ var xOffset2 = xOffset2
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
     
 
-    var y: number = getY()!;
+    var y: number = this.getY()!;
 ;
     
-graphics.drawChars(charArray, offset, len, x +xOffset, y, hudGraphicsPosition!.getAnchor());
+graphics.drawChars(charArray, offset, len, this.x +xOffset, y, this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawChars(charArray2, offset2, len2, x +xOffset2, y, hudGraphicsPosition!.getAnchor());
+graphics.drawChars(charArray2, offset2, len2, this.x +xOffset2, y, this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -482,12 +482,12 @@ var xOffset = xOffset
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
     
 
-    var y: number = getY()!;
+    var y: number = this.getY()!;
 ;
     
-graphics.drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor());
+graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawChars(charArray2, offset2, len2, x +xOffset, y, hudGraphicsPosition!.getAnchor());
+graphics.drawChars(charArray2, offset2, len2, this.x +xOffset, y, this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -500,10 +500,10 @@ var len = len
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
     
 
-    var y: number = getY()!;
+    var y: number = this.getY()!;
 ;
     
-graphics.drawChars(charArray, offset, len, x, y, hudGraphicsPosition!.getAnchor());
+graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -516,10 +516,10 @@ var string = string
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
     
 
-    var y: number = getY() +this.offsetY;
+    var y: number = this.getY() +this.offsetY;
 ;
     
-graphics.drawString(string, x, y, hudGraphicsPosition!.getAnchor());
+graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
     
 }
 
@@ -529,7 +529,7 @@ graphics.drawString(string, x, y, hudGraphicsPosition!.getAnchor());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hudGraphicsPosition;
+                        return this.hudGraphicsPosition;
     
 }
 
@@ -539,7 +539,7 @@ graphics.drawString(string, x, y, hudGraphicsPosition!.getAnchor());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return color;
+                        return this.color;
     
 }
 
@@ -549,7 +549,7 @@ graphics.drawString(string, x, y, hudGraphicsPosition!.getAnchor());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 
@@ -573,7 +573,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 
@@ -590,7 +590,7 @@ this.y= y;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 

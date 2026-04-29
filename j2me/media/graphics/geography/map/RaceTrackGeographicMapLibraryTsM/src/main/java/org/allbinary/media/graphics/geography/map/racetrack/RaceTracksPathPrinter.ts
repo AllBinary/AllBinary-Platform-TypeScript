@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../../../../java/lang/System";
+        
 import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -97,7 +99,7 @@ index < size; index++)
 console.log(new StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
-this.printPath( as BasicArrayListlist.get(index));
+this.printPath(list.get(index) as BasicArrayList);
     
 }
 

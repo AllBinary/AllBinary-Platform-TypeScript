@@ -107,7 +107,7 @@ this.getFormData(new RequestParams(request).
     
 }
 
-public constructor (storeHashMap: HashMap){
+public constructor (storeHashMap: HashMap<any, any>){
 
             super();
         var storeHashMap = storeHashMap
@@ -120,11 +120,11 @@ this.getFormData(storeHashMap);
 
                 //@Throws(Error::class)
             
-    getFormData(storeHashMap: HashMap){
+    getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
 this.logUtil!.putF(this.commonStrings!.START, this, "getFormData");
     
-this.setContextConfigurationInterface( as ContextConfigurationInterfacenew ContextConfiguration(storeHashMap));
+this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
     
 }
 
@@ -151,7 +151,7 @@ cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfiguration
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return contextConfigurationInterface;
+                        return this.contextConfigurationInterface;
     
 }
 

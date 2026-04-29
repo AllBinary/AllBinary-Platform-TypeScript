@@ -39,6 +39,8 @@
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 export class ActionScriptItemJPanel extends javax.swing.JPanel {
@@ -46,7 +48,7 @@ export class ActionScriptItemJPanel extends javax.swing.JPanel {
 public constructor (){
 
             super();
-        initComponents();
+        this.initComponents();
     
 }
 
@@ -56,7 +58,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return newActionScriptInputJPanel;
+                        return this.newActionScriptInputJPanel;
     
 }
 
@@ -73,7 +75,7 @@ this.newActionScriptInputJPanel= newActionScriptInputJPanel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return removeJPanel;
+                        return this.removeJPanel;
     
 }
 
@@ -90,7 +92,7 @@ this.removeJPanel= removeJPanel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return scriptItemJPanel;
+                        return this.scriptItemJPanel;
     
 }
 
@@ -107,7 +109,7 @@ this.scriptItemJPanel= scriptItemJPanel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return newActionScriptConditionJPanel;
+                        return this.newActionScriptConditionJPanel;
     
 }
 
@@ -124,7 +126,7 @@ this.newActionScriptConditionJPanel= newActionScriptConditionJPanel;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return childActionScriptConditionJPanel;
+                        return this.childActionScriptConditionJPanel;
     
 }
 

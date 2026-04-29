@@ -85,7 +85,7 @@ export class BufferedImagePoolSingleton
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-poolInterface= PoolInterfaceFactory.getInstance(new BufferedImageCacheableFactory(), PoolTypeFactory.getInstance()!.VECTOR_POOL, CachePolicyFactory.getInstance()!.MAX_TIME_THOUSAND_MAX);
+BufferedImagePoolSingleton.poolInterface= PoolInterfaceFactory.getInstance(new BufferedImageCacheableFactory(), PoolTypeFactory.getInstance()!.VECTOR_POOL, CachePolicyFactory.getInstance()!.MAX_TIME_THOUSAND_MAX);
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
@@ -104,7 +104,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return poolInterface;
+                        return BufferedImagePoolSingleton.poolInterface;
     
 }
 

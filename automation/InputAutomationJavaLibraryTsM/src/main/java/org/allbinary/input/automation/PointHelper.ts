@@ -67,7 +67,7 @@ var rectangle = rectangle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance(Math.roundx, Math.roundy);;
+                        return PointFactory.getInstance(Math.round(x), Math.round(y));;
     
 }
 

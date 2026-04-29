@@ -100,7 +100,7 @@ var args = args
 
     private nameJTextField: JTextField
 public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string){
-            super( as java.awt.Frameparent, modal);
+            super(parent as java.awt.Frame, modal);
                     var parent = parent
 var modal = modal
 var dimension = dimension
@@ -111,7 +111,7 @@ var newName = newName
                     
 
         try {
-            initComponents();
+            this.initComponents();
     
 this.parent= parent;
     
@@ -215,7 +215,7 @@ this.show();
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
-this.parent.add( as WorkAreaJPanelInterfaceworkAreaJPanel);
+this.parent.add(workAreaJPanel as WorkAreaJPanelInterface);
     
 this.dispose();
     

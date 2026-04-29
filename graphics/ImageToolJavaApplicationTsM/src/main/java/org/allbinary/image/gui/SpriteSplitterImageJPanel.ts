@@ -89,6 +89,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { GroupLayout } from "./GroupLayout.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
@@ -147,15 +149,15 @@ new Thread()
 ;
     
 
-    var spriteType: string =  as StringspriteTypeJComboBox!.getSelectedItem();;
+    var spriteType: string = spriteTypeJComboBox!.getSelectedItem(); as String;
 ;
     
 
-    var totalFrames: number = Integer(Integer.valueOf( as StringtotalFramesJComboBox!.getSelectedItem()))!;
+    var totalFrames: number = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as String))!;
 ;
     
 
-    var totalAnimations: number = Integer(Integer.valueOf( as StringtotalAnimationsJComboBox!.getSelectedItem()))!;
+    var totalAnimations: number = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as String))!;
 ;
     
 
@@ -200,7 +202,7 @@ this.widthReductionTextField= new javax.swing.JTextField();
     
 this.jLabel5= new javax.swing.JLabel();
     
-jPanel1= new javax.swing.JPanel()
+this.jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -286,7 +288,7 @@ this.jLabel3= new javax.swing.JLabel();
     
 this.spriteTypeJComboBox= new javax.swing.JComboBox<>();
     
-spriteTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
+this.spriteTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.DIRECTIONAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_SPRITE;
                                                 ]));
@@ -301,7 +303,7 @@ this.increaseHeightTextField= new javax.swing.JTextField();
     
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -315,7 +317,7 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
     
 this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -347,7 +349,7 @@ this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -363,7 +365,7 @@ this.jLabel1!.setText("Row Total:");
     
 this.totalFramesJComboBox!.setSelectedIndex(1);
     
-totalFramesJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalFramesJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -379,7 +381,7 @@ this.jLabel2!.setText("Column Total :");
     
 this.totalAnimationsJComboBox!.setSelectedIndex(3);
     
-totalAnimationsJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAnimationsJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -393,7 +395,7 @@ totalAnimationsJComboBoxActionPerformed(evt);
     
 this.jLabel3!.setText("Type:");
     
-spriteTypeJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.spriteTypeJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -419,7 +421,7 @@ this.jLabel7!.setText("More Width:");
     
 this.increaseWidthTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-increaseWidthTextField!.addActionListener(new java.awt.event.ActionListener()
+this.increaseWidthTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -536,7 +538,7 @@ var evt = evt
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageProcessorInput;
+                        return this.imageProcessorInput;
     
 }
 
@@ -585,7 +587,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write( as RenderedImagethis@SpriteSplitterImageJPanel.result, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(this@SpriteSplitterImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

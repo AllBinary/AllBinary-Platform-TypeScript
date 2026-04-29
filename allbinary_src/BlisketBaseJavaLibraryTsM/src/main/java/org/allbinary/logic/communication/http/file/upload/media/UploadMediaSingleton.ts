@@ -94,18 +94,18 @@ export class UploadMediaSingleton
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readerFileTypesHashMap: HashMap
+    private readerFileTypesHashMap: HashMap<any, any>
 
-    private writerFileTypesHashMap: HashMap
+    private writerFileTypesHashMap: HashMap<any, any>
 private constructor (){
 
             super();
-        this.readerFileTypesHashMap= new HashMap();
+        this.readerFileTypesHashMap= new HashMap<any, any>();
     
-this.writerFileTypesHashMap= new HashMap();
+this.writerFileTypesHashMap= new HashMap<any, any>();
     
 
-    var hashMap: HashMap = MediaData.toHashMap()!;
+    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;
 ;
     
 
@@ -130,11 +130,11 @@ this.writerFileTypesHashMap= new HashMap();
 index < size; index++)
         {
 
-    var mediaDataName: string =  as StringmediaDataNameArray[index]!;
+    var mediaDataName: string = mediaDataNameArray[index]! as String;
 ;
     
 
-    var mediaData: MediaData =  as MediaDatahashMap!.get(mediaDataName as Object);;
+    var mediaData: MediaData = hashMap!.get(mediaDataName as Object); as MediaData;
 ;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
@@ -274,7 +274,7 @@ var aMediaType = aMediaType
 }
 
 
-    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap): boolean{
+    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
 var mediaFileType = mediaFileType
 var aMediaType = aMediaType
 var hashMap = hashMap
@@ -283,7 +283,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string =  as StringhashMap!.get(mediaFileType as Object);;
+    var mediaType: string = hashMap!.get(mediaFileType as Object); as String;
 ;
     
 

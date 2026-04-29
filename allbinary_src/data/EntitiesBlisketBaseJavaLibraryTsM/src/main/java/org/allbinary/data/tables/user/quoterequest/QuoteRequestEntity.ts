@@ -127,7 +127,7 @@ var values = values
 var userName = userName
 var id = id
 
-    var row: HashMap = new HashMap();
+    var row: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 row.put(UserData.USERNAME, userName);
@@ -135,7 +135,7 @@ row.put(UserData.USERNAME, userName);
 row.put(QuoteRequestData.getInstance()!.ID, id.toString());
     
 
-    var quoteRequestHashMap: HashMap = super.getRow(row)!;
+    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;
 ;
     
 
@@ -295,7 +295,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(userName: string, updatedValues: HashMap){
+    public update(userName: string, updatedValues: HashMap<any, any>){
 var userName = userName
 var updatedValues = updatedValues
 super.updateWhere(UserData.USERNAME, userName, updatedValues);

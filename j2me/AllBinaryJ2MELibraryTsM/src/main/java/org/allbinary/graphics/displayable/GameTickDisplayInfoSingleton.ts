@@ -51,23 +51,23 @@ export class GameTickDisplayInfoSingleton
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return GameTickDisplayInfoSingleton.instance;
     
 }
 
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
-    private lastWidth: number = displayInfoSingleton!.getLastWidth()!;
+    private lastWidth: number = this.displayInfoSingleton!.getLastWidth()!;
 
-    private lastHeight: number = displayInfoSingleton!.getLastHeight()!;
+    private lastHeight: number = this.displayInfoSingleton!.getLastHeight()!;
 
-    private lastHalfWidth: number = displayInfoSingleton!.getLastHalfWidth()!;
+    private lastHalfWidth: number = this.displayInfoSingleton!.getLastHalfWidth()!;
 
-    private lastHalfHeight: number = displayInfoSingleton!.getLastHalfHeight()!;
+    private lastHalfHeight: number = this.displayInfoSingleton!.getLastHalfHeight()!;
 
     public update(){
-this.lastWidth= displayInfoSingleton!.getLastWidth();
+this.lastWidth= this.displayInfoSingleton!.getLastWidth();
     
 this.lastHeight= this.displayInfoSingleton!.getLastHeight();
     

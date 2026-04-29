@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WaypointEventListenerInterface } from "./WaypointEventListenerInterface.js";
+
 export class WaypointEventHandler extends BasicEventHandler {
         
 public constructor (){
@@ -62,10 +64,10 @@ public constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var waypointEventListenerInterface: WaypointEventListenerInterface = ( as WaypointEventListenerInterfaceeventListenerInterface);
+    var waypointEventListenerInterface: WaypointEventListenerInterface = (eventListenerInterface as WaypointEventListenerInterface);
 ;
     
-waypointEventListenerInterface!.onWaypointEvent( as RTSLayerEventeventObject);
+waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
     
 }
 

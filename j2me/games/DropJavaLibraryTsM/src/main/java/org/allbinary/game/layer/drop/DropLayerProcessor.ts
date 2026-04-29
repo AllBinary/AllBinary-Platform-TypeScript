@@ -59,7 +59,7 @@ export class DropLayerProcessor extends BasicLayerProcessor {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LAYER_PROCESSOR;
+                        return DropLayerProcessor.LAYER_PROCESSOR;
     
 }
 
@@ -90,14 +90,14 @@ var allBinaryLayerManager = allBinaryLayerManager
 index < size; index++)
         {
 
-    var layerInterface: AllBinaryLayer =  as AllBinaryLayerlist.objectArray[index]!;
+    var layerInterface: AllBinaryLayer = list.objectArray[index]! as AllBinaryLayer;
 ;
     
 
-    var dropLayerInterface: DropLayerInterface =  as DropLayerInterfacelayerInterface;
+    var dropLayerInterface: DropLayerInterface = layerInterface as DropLayerInterface;
 ;
     
-allBinaryLayerManager!.append( as AllBinaryLayerdropLayerInterface!.getDroppedLayer());
+allBinaryLayerManager!.append(dropLayerInterface!.getDroppedLayer() as AllBinaryLayer);
     
 }
 

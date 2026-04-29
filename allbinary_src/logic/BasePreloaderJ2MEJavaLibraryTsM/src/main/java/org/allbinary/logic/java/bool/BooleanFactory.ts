@@ -49,7 +49,7 @@ export class BooleanFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BooleanFactory.instance;
     
 }
 
@@ -58,9 +58,9 @@ export class BooleanFactory
 
     public readonly FALSE: Boolean = false;
 
-    public readonly TRUE_STRING: string = TRUE.toString()!;
+    public readonly TRUE_STRING: string = this.TRUE.toString()!;
 
-    public readonly FALSE_STRING: string = FALSE.toString()!;
+    public readonly FALSE_STRING: string = this.FALSE.toString()!;
 
     public readonly YES: string = "yes";
 
@@ -76,7 +76,7 @@ var bool = bool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TRUE_STRING;
+                        return this.TRUE_STRING;
     
 
                                     }
@@ -86,7 +86,7 @@ var bool = bool
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FALSE_STRING;
+                        return this.FALSE_STRING;
     
 
                         }

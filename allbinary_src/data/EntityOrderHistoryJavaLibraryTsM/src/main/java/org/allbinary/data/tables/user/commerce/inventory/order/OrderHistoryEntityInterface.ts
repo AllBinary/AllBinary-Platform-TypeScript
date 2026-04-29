@@ -82,7 +82,7 @@ export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public update(whereHashMap: HashMap, orderHashMap: HashMap)
+    public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 
 }
                 

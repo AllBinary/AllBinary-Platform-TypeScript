@@ -69,10 +69,10 @@ public constructor (layerInterface: LayerInterface){
 this.layerInterface= layerInterface;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacelayerInterface;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;
 ;
     
-this.velocityInterface=  as VelocityInterfacevelocityInterfaceCompositeInterface!.getVelocityProperties();;
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
     
 }
 

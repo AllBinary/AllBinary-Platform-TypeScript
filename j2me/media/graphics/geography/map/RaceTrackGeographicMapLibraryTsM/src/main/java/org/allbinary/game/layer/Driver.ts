@@ -76,7 +76,7 @@ this.aggression= aggression;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return turnSpeed;
+                        return this.turnSpeed;
     
 }
 
@@ -93,7 +93,7 @@ this.turnSpeed= turnSpeed;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return trackPathSelectionSkill;
+                        return this.trackPathSelectionSkill;
     
 }
 
@@ -110,7 +110,7 @@ this.trackPathSelectionSkill= trackPathSelectionSkill;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return aggression;
+                        return this.aggression;
     
 }
 

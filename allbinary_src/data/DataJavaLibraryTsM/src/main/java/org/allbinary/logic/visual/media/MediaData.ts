@@ -49,14 +49,14 @@ export class MediaData
          {
         
 
-    private hashMap: HashMap = new HashMap();
+    private hashMap: HashMap<any, any> = new HashMap<any, any>();
 
                 //@Throws(Error::class)
             
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
 
-    var mediaData: MediaData =  as MediaDataMediaData.hashMap!.get(a_Name as Object);;
+    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object); as MediaData;
 ;
     
 
@@ -96,7 +96,7 @@ var a_Name = a_Name
 }
 
 
-    public static toHashMap(): HashMap{
+    public static toHashMap(): HashMap<any, any>{
 
 
 

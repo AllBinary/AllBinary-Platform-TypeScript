@@ -110,7 +110,7 @@ public constructor (){
 
     public write(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);
 ;
     
 
@@ -139,7 +139,7 @@ dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedPassword));
     
-hasRead= false;
+InstallerInfo.hasRead= false;
     
 
                 //: 
@@ -169,7 +169,7 @@ hasRead= false;
 
     read(){
 
-    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
+    var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +InstallerInfo.PACKAGE, InstallerInfo.INITFILENAME);
 ;
     
 
@@ -257,10 +257,10 @@ InstallerInfo.password= password;
 
     updateIfNeeded(){
 
-                        if(!hasRead)
+                        if(!InstallerInfo.hasRead)
                         
                                     {
-                                    hasRead= true;
+                                    InstallerInfo.hasRead= true;
     
 this.read();
     

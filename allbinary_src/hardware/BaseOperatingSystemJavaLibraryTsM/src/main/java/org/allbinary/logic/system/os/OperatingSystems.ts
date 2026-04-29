@@ -49,7 +49,7 @@ export class OperatingSystems
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OperatingSystems.instance;
     
 }
 
@@ -72,7 +72,7 @@ export class OperatingSystems
 
     public readonly WINDOWS_XP: string = "Windows XP";
 
-    public readonly ANDROID: string = LINUX;
+    public readonly ANDROID: string = this.LINUX;
 private constructor (){
 
             super();
@@ -86,7 +86,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return unknownSpecificOSAllowed;
+                        return this.unknownSpecificOSAllowed;
     
 }
 

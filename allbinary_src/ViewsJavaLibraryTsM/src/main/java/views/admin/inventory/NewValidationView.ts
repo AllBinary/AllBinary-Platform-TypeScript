@@ -69,7 +69,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.itemInterface=  as ItemInterfacenew BasicItem();
+this.itemInterface= new BasicItem() as ItemInterface;
     
 }
 

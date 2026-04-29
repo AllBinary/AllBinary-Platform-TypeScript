@@ -79,7 +79,7 @@ var exception = exception
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LOG;
+                        return LogFactory.LOG;
     
 }
 
@@ -92,7 +92,7 @@ var functionName = functionName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return LOG;
+                        return LogFactory.LOG;
     
 }
 

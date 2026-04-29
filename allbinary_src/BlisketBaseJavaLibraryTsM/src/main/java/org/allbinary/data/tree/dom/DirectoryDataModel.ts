@@ -83,7 +83,7 @@ public constructor (file: AbFile){
             //var file = file
 this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
-this.transformDocumentInterface=  as TransformDocumentInterfaceTransformDocumentFactory.getInstance();;
+this.transformDocumentInterface= TransformDocumentFactory.getInstance(); as TransformDocumentInterface;
     
 }
 
@@ -95,7 +95,7 @@ this.transformDocumentInterface=  as TransformDocumentInterfaceTransformDocument
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NO_TYPE;
+                        return this.NO_TYPE;
     
 }
 
@@ -157,7 +157,7 @@ this.transformDocumentInterface= transformDocumentInterface;
     var index: number = 0;
 index < size; index++)
         {
-nextFile=  as AbFilethis.fileBasicArrayList!.get(index);;
+nextFile= this.fileBasicArrayList!.get(index); as AbFile;
     
 fileNode= new FileDomDataModel(nextFile).
                             toXmlNode(document);

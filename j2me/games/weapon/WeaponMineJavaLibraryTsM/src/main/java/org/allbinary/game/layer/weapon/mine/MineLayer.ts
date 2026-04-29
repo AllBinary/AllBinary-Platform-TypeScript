@@ -94,7 +94,7 @@ var y = y
 var z = z
 this.setPosition(x +5, y +5, z);
     
-this.viewPositionEventHandler!.addListener( as AllBinaryLayerthis);
+this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
     
 SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance());
     

@@ -99,7 +99,7 @@ this.gameKeyEvent= gameKeyEvent;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKeyEvent;
+                        return this.gameKeyEvent;
     
 }
 
@@ -116,7 +116,7 @@ this.gameKey= gameKey;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKey;
+                        return this.gameKey;
     
 }
 

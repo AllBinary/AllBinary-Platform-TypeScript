@@ -79,7 +79,7 @@ export class UserEmailEventHandlerSingletons
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return UserEmailEventHandlerSingletons.instance;
     
 }
 
@@ -88,7 +88,7 @@ export class UserEmailEventHandlerSingletons
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly userEmailEventHandlerHashMap: HashMap = new HashMap();
+    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
 private constructor (){
 
             super();
@@ -120,7 +120,7 @@ var userInterface = userInterface
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler =  as UserEmailEventHandlerthis.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);;
+    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object); as UserEmailEventHandler;
 ;
     
 

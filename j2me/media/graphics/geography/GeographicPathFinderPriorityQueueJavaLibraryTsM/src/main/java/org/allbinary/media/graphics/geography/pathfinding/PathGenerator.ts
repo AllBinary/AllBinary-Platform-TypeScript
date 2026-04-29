@@ -52,6 +52,8 @@ import { PathFindingInfo } from "./PathFindingInfo.js";
 
 import { RuntimeException } from "./RuntimeException.js";
 
+import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
+
 import { MultipassState } from "./MultipassState.js";
 
 export class PathGenerator
@@ -66,7 +68,7 @@ export class PathGenerator
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return PathGenerator.SINGLETON;
     
 }
 
@@ -105,7 +107,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public create(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
+    public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var geographicMapCellHistory = geographicMapCellHistory
     //var pathFindingInfo = pathFindingInfo

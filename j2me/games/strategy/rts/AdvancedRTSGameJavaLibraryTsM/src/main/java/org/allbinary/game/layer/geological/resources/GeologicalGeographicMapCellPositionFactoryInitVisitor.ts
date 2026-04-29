@@ -46,6 +46,8 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from "../../../.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
+
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object
          implements GeographicMapCellPositionFactoryInitVisitorInterface {
@@ -57,7 +59,7 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
 var tiledLayer = tiledLayer
 var cellPosition = cellPosition
 
-    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = ( as GeologicalGeographicMapCellPositioncellPosition);
+    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);
 ;
     
 geologicalGeographicMapCellPosition!.getGeologicalResource()!.init();

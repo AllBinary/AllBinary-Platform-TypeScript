@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
@@ -54,6 +56,10 @@ import { NotificationManager } from "./NotificationManager.js";
 
 import { CommandUriAction } from "./CommandUriAction.js";
 
+import { Intent } from "./Intent.js";
+
+import { Notification } from "./Notification.js";
+
 import { PendingIntent } from "./PendingIntent.js";
 
 export class NotificationUtil
@@ -68,12 +74,12 @@ export class NotificationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return NotificationUtil.SINGLETON;
     
 }
 
 
-    private notificationManager: NotificationManager =  as NotificationManagerResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
 
     public notify(command: Command, resource: string, message: string){
 var command = command
@@ -101,7 +107,7 @@ var message = message
     
 notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);
     
-notificationManager!.notify(TsUtil.getInstance()!.hashCode(command), notification);
+this.notificationManager!.notify(TsUtil.getInstance()!.hashCode(command), notification);
     
 }
 

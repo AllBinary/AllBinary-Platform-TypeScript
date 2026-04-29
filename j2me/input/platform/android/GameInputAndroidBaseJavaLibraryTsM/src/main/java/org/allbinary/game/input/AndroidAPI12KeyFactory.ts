@@ -38,7 +38,7 @@ export class AndroidAPI12KeyFactory extends AndroidAPI9KeyFactory {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return AndroidAPI12KeyFactory.SINGLETON;
     
 }
 

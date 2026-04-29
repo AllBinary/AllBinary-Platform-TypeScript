@@ -46,6 +46,10 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeographicMapCompositeInterface } from "./GeographicMapCompositeInterface.js";
+
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 export class ColorFromEventUtil
             extends Object
          {
@@ -58,14 +62,14 @@ export class ColorFromEventUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ColorFromEventUtil.instance;
     
 }
 
 
     private readonly YELLOW: BasicColor = BasicColorFactory.getInstance()!.YELLOW;
 
-    public readonly COLOR_INT: number = YELLOW.toInt()!;
+    public readonly COLOR_INT: number = this.YELLOW.toInt()!;
 
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
     //var gameCanvasInterface = gameCanvasInterface
@@ -74,7 +78,7 @@ export class ColorFromEventUtil
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacegameCanvasInterface!.getLayerManager();;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager(); as GeographicMapCompositeInterface;
 ;
     
 

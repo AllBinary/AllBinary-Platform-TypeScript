@@ -140,7 +140,7 @@ var aFloat = aFloat
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return closeDeath;
+                        return this.closeDeath;
     
 }
 
@@ -157,7 +157,7 @@ this.closeDeath= closeDeath;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return damaged;
+                        return this.damaged;
     
 }
 

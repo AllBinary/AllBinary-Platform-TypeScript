@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../../java/lang/System";
+        
 import { Manager } from "../../../../javax/microedition/media/Manager.js";
 
     

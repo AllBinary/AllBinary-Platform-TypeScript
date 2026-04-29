@@ -100,9 +100,9 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface( as DomNodeInterfacethis.body);
+this.addDomNodeInterface(this.body as DomNodeInterface);
     
-this.addDomNodeInterface( as DomNodeInterfacethis);
+this.addDomNodeInterface(this as DomNodeInterface);
     
 }
 

@@ -185,7 +185,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return INVALID_RESULT;
+                        return this.INVALID_RESULT;
     
 }
 

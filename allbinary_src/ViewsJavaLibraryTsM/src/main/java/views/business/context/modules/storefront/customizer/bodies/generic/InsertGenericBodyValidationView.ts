@@ -87,7 +87,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap = new RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
                             toHashMap()!;
 ;
     
@@ -128,7 +128,7 @@ this.body= new GenericBodyValidation(requestHashMap);
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.body);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.body as DomNodeInterface);
     
 
                                     }

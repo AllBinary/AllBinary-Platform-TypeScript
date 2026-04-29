@@ -76,7 +76,7 @@ this.storeFrontUsersStatisticsInterface= storeFrontUsersStatisticsInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap = this.storeFrontUsersStatisticsInterface!.toHashMap()!;
+    var hashMap: HashMap<any, any> = this.storeFrontUsersStatisticsInterface!.toHashMap()!;
 ;
     
 

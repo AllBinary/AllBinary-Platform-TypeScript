@@ -147,7 +147,7 @@ export class BasicItem
     timeEntered: string
 
     lastModified: string
-public constructor (itemHashMap: HashMap){
+public constructor (itemHashMap: HashMap<any, any>){
 
             super();
         var itemHashMap = itemHashMap
@@ -160,63 +160,63 @@ public constructor (itemHashMap: HashMap){
 
                                     }
                                 
-this.itemId=  as StringitemHashMap!.get(BasicItemData.ID);;
+this.itemId= itemHashMap!.get(BasicItemData.ID); as String;
     
-this.number=  as StringitemHashMap!.get(BasicItemData.NUMBER);;
+this.number= itemHashMap!.get(BasicItemData.NUMBER); as String;
     
-this.inBaskets=  as StringitemHashMap!.get(BasicItemData.INBASKETS);;
+this.inBaskets= itemHashMap!.get(BasicItemData.INBASKETS); as String;
     
-this.weight=  as StringitemHashMap!.get(BasicItemData.WEIGHT);;
+this.weight= itemHashMap!.get(BasicItemData.WEIGHT); as String;
     
-this.enabled=  as StringitemHashMap!.get(EntryData.getInstance()!.ENABLE);;
+this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE); as String;
     
-this.newOrUsed=  as StringitemHashMap!.get(BasicItemData.NEWORUSED);;
+this.newOrUsed= itemHashMap!.get(BasicItemData.NEWORUSED); as String;
     
-this.summary=  as StringitemHashMap!.get(BasicItemData.SUMMARY);;
+this.summary= itemHashMap!.get(BasicItemData.SUMMARY); as String;
     
-this.distributor=  as StringitemHashMap!.get(BasicItemData.DISTRIBUTOR);;
+this.distributor= itemHashMap!.get(BasicItemData.DISTRIBUTOR); as String;
     
-this.idUsedByDistributor=  as StringitemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR);;
+this.idUsedByDistributor= itemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR); as String;
     
-this.producedBy=  as StringitemHashMap!.get(BasicItemData.PRODUCEDBY);;
+this.producedBy= itemHashMap!.get(BasicItemData.PRODUCEDBY); as String;
     
-this.productionDate=  as StringitemHashMap!.get(BasicItemData.PRODUCTIONDATE);;
+this.productionDate= itemHashMap!.get(BasicItemData.PRODUCTIONDATE); as String;
     
-this.startProductionDate=  as StringitemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE);;
+this.startProductionDate= itemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE); as String;
     
-this.description=  as StringitemHashMap!.get(BasicItemData.DESCRIPTION);;
+this.description= itemHashMap!.get(BasicItemData.DESCRIPTION); as String;
     
-this.keywords=  as StringitemHashMap!.get(BasicItemData.KEYWORDS);;
+this.keywords= itemHashMap!.get(BasicItemData.KEYWORDS); as String;
     
-this.category=  as StringitemHashMap!.get(BasicItemData.CATEGORY);;
+this.category= itemHashMap!.get(BasicItemData.CATEGORY); as String;
     
-this.type=  as StringitemHashMap!.get(BasicItemData.TYPE);;
+this.type= itemHashMap!.get(BasicItemData.TYPE); as String;
     
-this.smallImage=  as StringitemHashMap!.get(BasicItemData.SMALLIMAGE);;
+this.smallImage= itemHashMap!.get(BasicItemData.SMALLIMAGE); as String;
     
-this.mediumImage=  as StringitemHashMap!.get(BasicItemData.MEDIUMIMAGE);;
+this.mediumImage= itemHashMap!.get(BasicItemData.MEDIUMIMAGE); as String;
     
-this.largeImage=  as StringitemHashMap!.get(BasicItemData.LARGEIMAGE);;
+this.largeImage= itemHashMap!.get(BasicItemData.LARGEIMAGE); as String;
     
-this.timeEntered=  as StringitemHashMap!.get(EntryData.getInstance()!.TIMECREATED);;
+this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED); as String;
     
-this.lastModified=  as StringitemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);;
+this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as String;
     
-this.price= new Money( as StringitemHashMap!.get(BasicItemData.PRICE));
+this.price= new Money(itemHashMap!.get(BasicItemData.PRICE) as String);
     
-this.comment=  as StringitemHashMap!.get(BasicItemData.COMMENT);;
+this.comment= itemHashMap!.get(BasicItemData.COMMENT); as String;
     
-this.customs=  as StringitemHashMap!.get(BasicItemData.CUSTOMS);;
+this.customs= itemHashMap!.get(BasicItemData.CUSTOMS); as String;
     
-this.setDownloads( as StringitemHashMap!.get(BasicItemData.DOWNLOADS));
+this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String);
     
-this.groups=  as StringitemHashMap!.get(BasicItemData.GROUPS);;
+this.groups= itemHashMap!.get(BasicItemData.GROUPS); as String;
     
-this.options=  as StringitemHashMap!.get(BasicItemData.OPTIONS);;
+this.options= itemHashMap!.get(BasicItemData.OPTIONS); as String;
     
-this.permissions=  as StringitemHashMap!.get(BasicItemData.PERMISSIONS);;
+this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS); as String;
     
-this.specials=  as StringitemHashMap!.get(BasicItemData.SPECIALS);;
+this.specials= itemHashMap!.get(BasicItemData.SPECIALS); as String;
     
 }
 
@@ -756,7 +756,7 @@ this.enabled= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return downloads;
+                        return this.downloads;
     
 }
 
@@ -813,7 +813,7 @@ this.downloadable= downloadable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return downloadable;
+                        return this.downloadable;
     
 }
 
@@ -845,7 +845,7 @@ itemTotal!.multiply(this.number.
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
@@ -856,7 +856,7 @@ itemTotal!.multiply(this.number.
                                     }
                                 
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(BasicItemData.ID, this.itemId);
@@ -1030,7 +1030,7 @@ values.add(this.specials);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getId();;
+                        return this.getId(); as Object;
     
 }
 

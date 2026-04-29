@@ -119,7 +119,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             super();
         var transformInfoInterface = transformInfoInterface
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
 
@@ -141,7 +141,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var fileName: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE);;
+    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE); as String;
 ;
     
 
@@ -153,13 +153,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface =  as TransformInfoHttpStoreInterfacetransformInfoInterface;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;
 ;
     
 fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1);
     
 
-    var outputMappingHashMap: HashMap = new HashMap();
+    var outputMappingHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview");
@@ -190,7 +190,7 @@ fileName= replace.all(fileName);
                                     }
                                 
 
-    var tempOutput: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME);;
+    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME); as String;
 ;
     
 

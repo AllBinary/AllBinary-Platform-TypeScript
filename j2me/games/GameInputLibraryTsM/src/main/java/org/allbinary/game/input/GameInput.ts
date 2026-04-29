@@ -164,7 +164,7 @@ this.gameKeyEventList!.clear();
     var index: number = list.size()!;
 --index >= 0; )
         {
-gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
+gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     
 
                         if(gameKeyEvent!.getSourceId() != 1)
@@ -247,7 +247,7 @@ removeList!.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return gameKeyEventList;
+                        return this.gameKeyEventList;
     
 }
 

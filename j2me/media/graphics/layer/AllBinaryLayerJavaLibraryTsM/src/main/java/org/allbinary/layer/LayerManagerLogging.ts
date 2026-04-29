@@ -70,7 +70,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return LayerManagerLogging.instance;
     
 }
 
@@ -101,7 +101,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.APPEND_)!.append(layerInterface!.getName())!.toString(), this, APPEND);
     
@@ -111,7 +111,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
     public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.APPEND_)!.append(layerInterface!.getName())!.append(this._AT_)!.appendint(index)!.toString(), this, APPEND);
     
@@ -126,7 +126,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
                                 )
                         
                                     {
-                                    stringBuilder!.delete(0, stringBuilder!.length());
+                                    this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.ATTEMPT_REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
     
@@ -134,7 +134,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
                                     }
                                 
                         else {
-                            stringBuilder!.delete(0, stringBuilder!.length());
+                            this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.ATTEMPT_REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
@@ -154,7 +154,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
                                 )
                         
                                     {
-                                    stringBuilder!.delete(0, stringBuilder!.length());
+                                    this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.REMOVE_)!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, REMOVE);
     
@@ -169,7 +169,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
                         if(LayerManagerLogging.removeFailed)
                         
                                     {
-                                    stringBuilder!.delete(0, stringBuilder!.length());
+                                    this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.REMOVE_)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
@@ -180,7 +180,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
                                     }
                                 
                         else {
-                            stringBuilder!.delete(0, stringBuilder!.length());
+                            this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.DID_NOT_REMOVE)!.append(layerInterface!.getName())!.toString(), this, REMOVE);
     
@@ -194,7 +194,7 @@ LayerManagerLogging.removeFailed= true;
 
     log(layerManager: LayerManager){
     //var layerManager = layerManager
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 
     var size: number = layerManager!.getSize()!;
@@ -204,9 +204,9 @@ stringBuilder!.delete(0, stringBuilder!.length());
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;
     
-stringBuilder!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(layerManager)))!.append(commonSeps!.COLON_SEP);
+this.stringBuilder!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(layerManager)))!.append(commonSeps!.COLON_SEP);
     
-stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
+this.stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
     
 
     var allBinaryLayer: AllBinaryLayer
@@ -220,9 +220,9 @@ stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
     var index: number = 0;
 index < size; index++)
         {
-allBinaryLayer= ( as AllBinaryLayerlayerManager!.getLayerAt(index););
+allBinaryLayer= (layerManager!.getLayerAt(index); as AllBinaryLayer);
     
-stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA);
+this.stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA);
     
 }
 
@@ -232,7 +232,7 @@ this.logUtil!.putF(stringBuilder!.toString(), this, REMOVE);
 
 
     public clear(){
-stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(CLEAR)!.toString(), this, CLEAR);
     

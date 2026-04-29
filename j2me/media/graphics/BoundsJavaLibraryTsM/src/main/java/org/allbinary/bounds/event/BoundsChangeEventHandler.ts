@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BoundsChangeEventListener } from "./BoundsChangeEventListener.js";
+
 export class BoundsChangeEventHandler extends BasicEventHandler {
         
 
@@ -56,7 +58,7 @@ export class BoundsChangeEventHandler extends BasicEventHandler {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SINGLETON;
+                        return BoundsChangeEventHandler.SINGLETON;
     
 }
 
@@ -72,10 +74,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var boundsChangeEventListener: BoundsChangeEventListener =  as BoundsChangeEventListenereventListenerInterface;
+    var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;
 ;
     
-boundsChangeEventListener!.onBoundsChangeEvent( as BoundsChangeEventeventObject);
+boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent);
     
 }
 

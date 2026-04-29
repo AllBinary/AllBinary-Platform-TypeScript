@@ -52,7 +52,7 @@ export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ModifierOpenGLESImageProcessor.instance;
     
 }
 

@@ -60,7 +60,7 @@ export class OrderProcessorUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return OrderProcessorUtil.instance;
     
 }
 
@@ -91,7 +91,7 @@ orderHistory!.insert(userName, order);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ORDER_PROCESSED;
+                        return this.ORDER_PROCESSED;
     
 }
 

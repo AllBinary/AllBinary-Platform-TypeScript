@@ -70,7 +70,7 @@ export class TransformInfoHttpFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
+    public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
@@ -101,7 +101,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoInterfacenew TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext);
+                        return new TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext) as TransformInfoInterface;
     
 
                                     }
@@ -123,7 +123,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as TransformInfoInterfacenew TransformInfoHttpContext(propertiesHashMap, pageContext);
+                        return new TransformInfoHttpContext(propertiesHashMap, pageContext) as TransformInfoInterface;
     
 
                         }

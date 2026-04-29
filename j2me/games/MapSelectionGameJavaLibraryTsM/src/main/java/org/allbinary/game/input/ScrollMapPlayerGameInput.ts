@@ -373,7 +373,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent =  as GameKeyEventthis.inputList!.get(index);;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
 ;
     
 key= gameKeyEvent!.getKey();
@@ -383,7 +383,7 @@ this.processInputKey(key);
 }
 
 
-                        if(isSingleKeyProcessing)
+                        if(this.isSingleKeyProcessing)
                         
                                     {
                                     this.clear();

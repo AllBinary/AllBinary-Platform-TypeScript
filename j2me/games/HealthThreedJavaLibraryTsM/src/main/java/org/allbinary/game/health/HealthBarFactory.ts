@@ -71,7 +71,7 @@ var direction = direction
 ;
     
 
-    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory =  as HealthBarAnimationInterfaceFactoryfeaturedAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME);;
+    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory = featuredAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME); as HealthBarAnimationInterfaceFactory;
 ;
     
 

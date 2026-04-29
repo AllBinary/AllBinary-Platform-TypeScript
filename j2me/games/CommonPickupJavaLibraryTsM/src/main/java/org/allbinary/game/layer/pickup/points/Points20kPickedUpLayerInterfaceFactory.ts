@@ -86,7 +86,7 @@ pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFacto
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pickedUpLayerInterfaceFactoryInterface;
+                        return Points20kPickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface;
     
 }
 
@@ -115,7 +115,7 @@ private constructor (){
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
-pool.visit(sourceLayerInterface);
+this.pool.visit(sourceLayerInterface);
     
 }
 

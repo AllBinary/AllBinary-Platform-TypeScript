@@ -58,7 +58,7 @@ export class CommonButtons
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CommonButtons.instance;
     
 }
 
@@ -119,9 +119,9 @@ commonButtonSize= commonButtonSize>>1;
 
 this.STANDARD_BUTTON_SIZE= commonButtonSize;
     
-this.NORMAL_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE, STANDARD_BUTTON_SIZE);
+this.NORMAL_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, this.STANDARD_BUTTON_SIZE, this.STANDARD_BUTTON_SIZE);
     
-this.LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, STANDARD_BUTTON_SIZE<<1, STANDARD_BUTTON_SIZE<<1);
+this.LARGE_BUTTON= new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, this.STANDARD_BUTTON_SIZE<<1, this.STANDARD_BUTTON_SIZE<<1);
     
 }
 

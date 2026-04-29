@@ -235,7 +235,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentPoints[frame]!;
+                        return this.currentPoints[frame]!;
     
 }
 

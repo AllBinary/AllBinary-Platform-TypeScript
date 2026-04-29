@@ -99,7 +99,7 @@ this.totalInventorySaleValueMoney= new Money();
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface =  as ItemInterfaceitemVector!.get(index);;
+    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
 ;
     
 
@@ -141,9 +141,9 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());

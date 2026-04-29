@@ -49,7 +49,7 @@ export class BasicViewData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicViewData.instance;
     
 }
 
@@ -61,87 +61,87 @@ private constructor (){
 
     readonly GENERICDIR: string = "generic/";
 
-    readonly USERDIR: string = GENERICDIR +"user/";
+    readonly USERDIR: string = this.GENERICDIR +"user/";
 
-    readonly ADDRESSDIR: string = USERDIR +"address/";
+    readonly ADDRESSDIR: string = this.USERDIR +"address/";
 
-    readonly BILLINGADDRESSDIR: string = ADDRESSDIR +"billing/";
+    readonly BILLINGADDRESSDIR: string = this.ADDRESSDIR +"billing/";
 
-    readonly SHIPPINGADDRESSDIR: string = ADDRESSDIR +"shipping/";
+    readonly SHIPPINGADDRESSDIR: string = this.ADDRESSDIR +"shipping/";
 
-    readonly COMMERCEDIR: string = USERDIR +"commerce/";
+    readonly COMMERCEDIR: string = this.USERDIR +"commerce/";
 
-    readonly INVENTORYDIR: string = COMMERCEDIR +"inventory/";
+    readonly INVENTORYDIR: string = this.COMMERCEDIR +"inventory/";
 
-    readonly BASKETDIR: string = INVENTORYDIR +"basket/";
+    readonly BASKETDIR: string = this.INVENTORYDIR +"basket/";
 
-    readonly ITEMDIR: string = INVENTORYDIR +"item/";
+    readonly ITEMDIR: string = this.INVENTORYDIR +"item/";
 
-    readonly MONEYDIR: string = COMMERCEDIR +"money/";
+    readonly MONEYDIR: string = this.COMMERCEDIR +"money/";
 
-    readonly SHIPPINGDIR: string = COMMERCEDIR +"shipping/";
+    readonly SHIPPINGDIR: string = this.COMMERCEDIR +"shipping/";
 
-    readonly ORDERDIR: string = INVENTORYDIR +"order/";
+    readonly ORDERDIR: string = this.INVENTORYDIR +"order/";
 
-    readonly ORDEREMAILDIR: string = ORDERDIR +"email/";
+    readonly ORDEREMAILDIR: string = this.ORDERDIR +"email/";
 
-    readonly ORDERHISTORYDIR: string = ORDERDIR +"history/";
+    readonly ORDERHISTORYDIR: string = this.ORDERDIR +"history/";
 
-    readonly ORDERREVIEWDIR: string = ORDERDIR +"review/";
+    readonly ORDERREVIEWDIR: string = this.ORDERDIR +"review/";
 
-    public readonly PAYMENTDIR: string = MONEYDIR +"payment/";
+    public readonly PAYMENTDIR: string = this.MONEYDIR +"payment/";
 
-    readonly GENERATIONDIR: string = GENERICDIR +"generation/";
+    readonly GENERATIONDIR: string = this.GENERICDIR +"generation/";
 
-    readonly PRODUCTSDIR: string = GENERICDIR +"products/";
+    readonly PRODUCTSDIR: string = this.GENERICDIR +"products/";
 
-    public readonly IGNOREXMLXSL: string = GENERICDIR +"ignoreXmlView.xsl";
+    public readonly IGNOREXMLXSL: string = this.GENERICDIR +"ignoreXmlView.xsl";
 
-    public readonly REVIEWORDERVIEWXSL: string = ORDERREVIEWDIR +"reviewOrderView.xsl";
+    public readonly REVIEWORDERVIEWXSL: string = this.ORDERREVIEWDIR +"reviewOrderView.xsl";
 
-    public readonly ORDERVIEWXSL: string = REVIEWORDERVIEWXSL;
+    public readonly ORDERVIEWXSL: string = this.REVIEWORDERVIEWXSL;
 
-    public readonly INVENTORYXSL: string = INVENTORYDIR +"inventory.xsl";
+    public readonly INVENTORYXSL: string = this.INVENTORYDIR +"inventory.xsl";
 
-    public readonly BASKETXSL: string = BASKETDIR +"basket.xsl";
+    public readonly BASKETXSL: string = this.BASKETDIR +"basket.xsl";
 
-    public readonly CHECKOUTBASKETXSL: string = BASKETDIR +"staticBasket.xsl";
+    public readonly CHECKOUTBASKETXSL: string = this.BASKETDIR +"staticBasket.xsl";
 
-    public readonly MINIBASKETXSL: string = BASKETDIR +"miniBasket.xsl";
+    public readonly MINIBASKETXSL: string = this.BASKETDIR +"miniBasket.xsl";
 
-    public readonly BILLINGADDRESSCHANGEFORMXSL: string = BILLINGADDRESSDIR +"billingAddressChangeForm.xsl";
+    public readonly BILLINGADDRESSCHANGEFORMXSL: string = this.BILLINGADDRESSDIR +"billingAddressChangeForm.xsl";
 
-    public readonly BILLINGADDRESSINPUTFORMXSL: string = BILLINGADDRESSDIR +"billingAddressInputForm.xsl";
+    public readonly BILLINGADDRESSINPUTFORMXSL: string = this.BILLINGADDRESSDIR +"billingAddressInputForm.xsl";
 
-    public readonly BILLINGADDRESSVIEWXSL: string = BILLINGADDRESSDIR +"billingAddressView.xsl";
+    public readonly BILLINGADDRESSVIEWXSL: string = this.BILLINGADDRESSDIR +"billingAddressView.xsl";
 
-    public readonly SHIPPINGADDRESSCHANGEFORMXSL: string = SHIPPINGADDRESSDIR +"shippingAddressChangeForm.xsl";
+    public readonly SHIPPINGADDRESSCHANGEFORMXSL: string = this.SHIPPINGADDRESSDIR +"shippingAddressChangeForm.xsl";
 
-    public readonly SHIPPINGADDRESSINPUTFORMXSL: string = SHIPPINGADDRESSDIR +"shippingAddressInputForm.xsl";
+    public readonly SHIPPINGADDRESSINPUTFORMXSL: string = this.SHIPPINGADDRESSDIR +"shippingAddressInputForm.xsl";
 
-    public readonly SHIPPINGADDRESSVIEWXSL: string = SHIPPINGADDRESSDIR +"shippingAddressView.xsl";
+    public readonly SHIPPINGADDRESSVIEWXSL: string = this.SHIPPINGADDRESSDIR +"shippingAddressView.xsl";
 
-    public readonly NEWTAXADDRESSXSL: string = SHIPPINGADDRESSDIR +"newTaxAddressView.xsl";
+    public readonly NEWTAXADDRESSXSL: string = this.SHIPPINGADDRESSDIR +"newTaxAddressView.xsl";
 
-    public readonly EDITTAXADDRESSXSL: string = SHIPPINGADDRESSDIR +"editTaxAddressView.xsl";
+    public readonly EDITTAXADDRESSXSL: string = this.SHIPPINGADDRESSDIR +"editTaxAddressView.xsl";
 
-    public readonly SHIPPINGMETHODSXSL: string = SHIPPINGDIR +"shippingMethods.xsl";
+    public readonly SHIPPINGMETHODSXSL: string = this.SHIPPINGDIR +"shippingMethods.xsl";
 
-    public readonly ORDERCUSTOMEREMAILVIEWXSL: string = ORDEREMAILDIR +"orderCustomerEmailView.xsl";
+    public readonly ORDERCUSTOMEREMAILVIEWXSL: string = this.ORDEREMAILDIR +"orderCustomerEmailView.xsl";
 
-    public readonly ORDERMANAGEREMAILVIEWXSL: string = ORDEREMAILDIR +"orderManagerEmailView.xsl";
+    public readonly ORDERMANAGEREMAILVIEWXSL: string = this.ORDEREMAILDIR +"orderManagerEmailView.xsl";
 
-    public readonly EDITCUSTOMERXSL: string = USERDIR +"editCustomerInputForm.xsl";
+    public readonly EDITCUSTOMERXSL: string = this.USERDIR +"editCustomerInputForm.xsl";
 
-    public readonly ORDERHISTORYXSL: string = ORDERHISTORYDIR +"orderHistory.xsl";
+    public readonly ORDERHISTORYXSL: string = this.ORDERHISTORYDIR +"orderHistory.xsl";
 
-    public readonly PAYMENTVIEWXSL: string = PAYMENTDIR +"paymentView.xsl";
+    public readonly PAYMENTVIEWXSL: string = this.PAYMENTDIR +"paymentView.xsl";
 
-    public readonly SUMMARYXSL: string = ITEMDIR +"summary/summary.xsl";
+    public readonly SUMMARYXSL: string = this.ITEMDIR +"summary/summary.xsl";
 
-    public readonly PAYMENTGATEWAYOPTIONSXSL: string = PAYMENTDIR +"paymentGatewayOptions.xsl";
+    public readonly PAYMENTGATEWAYOPTIONSXSL: string = this.PAYMENTDIR +"paymentGatewayOptions.xsl";
 
-    public readonly MAKEPAYMENTVIEWXSL: string = PAYMENTDIR +"invoice/" +"makePayment.xsl";
+    public readonly MAKEPAYMENTVIEWXSL: string = this.PAYMENTDIR +"invoice/" +"makePayment.xsl";
 
 }
                 

@@ -67,7 +67,7 @@ export class FormUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return FormUtil.instance;
     
 }
 

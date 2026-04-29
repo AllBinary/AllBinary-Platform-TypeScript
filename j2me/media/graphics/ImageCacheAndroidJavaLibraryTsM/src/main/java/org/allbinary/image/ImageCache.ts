@@ -18,6 +18,8 @@
 
 
 
+            import { System } from "../../../java/lang/System";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { InputStream } from "../../../java/io/InputStream.js";
@@ -207,7 +209,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var resourceId: number = resourceUtil!.getResourceId( as Stringkey)!;
+    var resourceId: number = resourceUtil!.getResourceId(key as String)!;
 ;
     
 
@@ -219,7 +221,7 @@ listOfList[foundIndex]!.add(image);
                         
                                     {
                                     
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream( as Stringkey)!;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
 ;
     
 

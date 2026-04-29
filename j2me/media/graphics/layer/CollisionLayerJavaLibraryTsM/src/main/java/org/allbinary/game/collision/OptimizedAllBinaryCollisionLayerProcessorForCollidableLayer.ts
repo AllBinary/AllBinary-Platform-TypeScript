@@ -52,6 +52,8 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
+
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {
         
 public constructor (){
@@ -70,7 +72,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var startIndex = startIndex
 
-    var collidableInterfaceCompositeInterface: CollidableCompositeLayer =  as CollidableCompositeLayerlayerInterface;
+    var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
 ;
     
 
@@ -105,7 +107,7 @@ var startIndex = startIndex
     var index: number = startIndex +1;
 index < size; index++)
         {
-collidableInterfaceCompositeInterface2=  as CollidableCompositeLayerlayerManager!.getLayerAt(index);;
+collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index); as CollidableCompositeLayer;
     
 collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface();
     

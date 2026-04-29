@@ -121,14 +121,14 @@ var categoryName = categoryName
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryName);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
+                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -170,14 +170,14 @@ var categoryName = categoryName
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryName);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -217,14 +217,14 @@ var node = node
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
+                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -266,14 +266,14 @@ var node = node
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 
@@ -299,7 +299,7 @@ var node = node
 }
 
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap): CategoryInterface{
+    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -315,14 +315,14 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPropertiesHashMap);
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
+                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
     
 
                 //: 

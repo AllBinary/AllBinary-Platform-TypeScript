@@ -45,6 +45,8 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
         
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 export class BasicGeographicMapUtil
             extends Object
          {
@@ -57,7 +59,7 @@ export class BasicGeographicMapUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return BasicGeographicMapUtil.instance;
     
 }
 

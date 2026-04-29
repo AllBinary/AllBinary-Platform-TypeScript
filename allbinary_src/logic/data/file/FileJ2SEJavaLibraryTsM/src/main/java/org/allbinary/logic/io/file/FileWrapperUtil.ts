@@ -66,7 +66,7 @@ var files = files
     var index: number = files.length -1;
 index >= 0; index--)
         {
-abFileArray[index]= new AbFile( as Filefiles[index]!);
+abFileArray[index]= new AbFile(files[index]! as File);
     
 }
 

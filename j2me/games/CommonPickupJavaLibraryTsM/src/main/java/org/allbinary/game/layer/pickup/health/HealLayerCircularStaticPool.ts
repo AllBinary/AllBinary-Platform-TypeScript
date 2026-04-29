@@ -52,6 +52,8 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HealLayer } from "./HealLayer.js";
+
 export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 public constructor (allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
@@ -69,11 +71,11 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var healLayer: HealLayer =  as HealLayerthis.getNextInstance();;
+    var healLayer: HealLayer = this.getNextInstance(); as HealLayer;
 ;
     
 
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface =  as HealthInterfaceCompositeInterfacesourceLayerInterface;
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as HealthInterfaceCompositeInterface;
 ;
     
 

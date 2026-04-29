@@ -144,7 +144,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap){
+    public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
     //var key = key
     //var value = value
     //var updatedKeyValuePairs = updatedKeyValuePairs
@@ -188,7 +188,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string =  as StringupdatedKeyValuePairs!.get(columnName);;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
 ;
     
 
@@ -270,7 +270,7 @@ this.executeSQLStatement(sqlStatement);
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public updateWhere(whereKeyValuePairs: HashMap, updatedKeyValuePairs: HashMap){
+    public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
     //var whereKeyValuePairs = whereKeyValuePairs
     //var updatedKeyValuePairs = updatedKeyValuePairs
 
@@ -322,7 +322,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string =  as StringupdatedKeyValuePairs!.get(columnName);;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
 ;
     
 
@@ -382,11 +382,11 @@ stringBuffer!.append(sqlStrings!.WHERE);
 i < size2; i++)
         {
 
-    var key: string =  as StringkeyArray2[i]!;
+    var key: string = keyArray2[i]! as String;
 ;
     
 
-    var value: string =  as StringwhereKeyValuePairs!.get(key);;
+    var value: string = whereKeyValuePairs!.get(key); as String;
 ;
     
 
@@ -512,7 +512,7 @@ this.executeSQLStatement(sqlStatement);
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public deleteWhere(keysAndValues: HashMap){
+    public deleteWhere(keysAndValues: HashMap<any, any>){
     //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -550,7 +550,7 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 i < size; i++)
         {
 
-    var key: string =  as StringkeyArray[i]!;
+    var key: string = keyArray[i]! as String;
 ;
     
 
@@ -632,7 +632,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 i < values.length -1; i++)
         {
 
-    var value: string = this.getValue( as Stringvalues.get(i))!;
+    var value: string = this.getValue(values.get(i) as String)!;
 ;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
@@ -645,7 +645,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue( as Stringvalues.lastElement())!;
+    var value: string = this.getValue(values.lastElement() as String)!;
 ;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
@@ -688,7 +688,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 
-    public getRow(keysAndValues: HashMap): HashMap{
+    public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
     //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
@@ -703,7 +703,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
 
         try {
             
-    var result: HashMap = 
+    var result: HashMap<any, any> = 
                 null
             ;
 ;
@@ -730,7 +730,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
 index < size; index++)
         {
 
-    var key: string =  as StringkeyArray[index]!;
+    var key: string = keyArray[index]! as String;
 ;
     
 
@@ -780,7 +780,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap();
+result= new HashMap<any, any>();
     
 
     var columnCount: number = resultSetMetaData!.getColumnCount()!;
@@ -862,7 +862,7 @@ result.put(columnName, field);
 }
 
 
-    public getRows(keysAndValues: HashMap): Vector{
+    public getRows(keysAndValues: HashMap<any, any>): Vector{
     //var keysAndValues = keysAndValues
 
 
@@ -873,7 +873,7 @@ result.put(columnName, field);
 }
 
 
-    public getRows(keysAndValues: HashMap, more: string): Vector{
+    public getRows(keysAndValues: HashMap<any, any>, more: string): Vector{
     //var keysAndValues = keysAndValues
     //var more = more
 
@@ -914,7 +914,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
 index < size; index++)
         {
 
-    var key: string =  as StringkeyArray[index]!;
+    var key: string = keyArray[index]! as String;
 ;
     
 
@@ -967,7 +967,7 @@ stringBuffer!.append(more);
         while(rset.next())
         {
 
-    var result: HashMap = new HashMap();
+    var result: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -1081,7 +1081,7 @@ stringBuffer!.append(this.getTableName());
         while(rset.next())
         {
 
-    var result: HashMap = new HashMap();
+    var result: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 
@@ -1151,7 +1151,7 @@ rows.add(result);
 }
 
 
-    public getRowsWhereBetween(whereKeyValuePairs: HashMap, betweenColumn: string, smallest: string, largest: string): Vector{
+    public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): Vector{
     //var whereKeyValuePairs = whereKeyValuePairs
     //var betweenColumn = betweenColumn
     //var smallest = smallest
@@ -1201,9 +1201,9 @@ stringBuffer!.append(sqlStrings!.WHERE);
     var index: number = 0;
 index < size; index++)
         {
-key=  as StringkeyArray[index]!;
+key= keyArray[index]! as String;
     
-value=  as StringwhereKeyValuePairs!.get(key);;
+value= whereKeyValuePairs!.get(key); as String;
     
 stringBuffer!.append(key);
     
@@ -1257,7 +1257,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 ;
     
 
-    var result: HashMap
+    var result: HashMap<any, any>
 ;
     
 
@@ -1279,7 +1279,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap();
+result= new HashMap<any, any>();
     
 columnNames= new Vector();
     
@@ -1412,7 +1412,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 ;
     
 
-    var result: HashMap
+    var result: HashMap<any, any>
 ;
     
 
@@ -1426,7 +1426,7 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
         while(rset.next())
         {
-result= new HashMap();
+result= new HashMap<any, any>();
     
 columnNames= new Vector();
     

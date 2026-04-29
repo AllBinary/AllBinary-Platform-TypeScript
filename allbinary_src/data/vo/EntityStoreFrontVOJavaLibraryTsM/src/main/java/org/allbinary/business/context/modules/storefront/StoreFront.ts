@@ -157,61 +157,61 @@ export class StoreFront
 
     private readonly abPathUtil: AbPathUtil = AbPathUtil.getInstance()!;
 
-    private name: string = stringUtil!.EMPTY_STRING;
+    private name: string = this.stringUtil!.EMPTY_STRING;
 
-    private basketName: string = stringUtil!.EMPTY_STRING;
+    private basketName: string = this.stringUtil!.EMPTY_STRING;
 
-    private homeHostName: string = stringUtil!.EMPTY_STRING;
+    private homeHostName: string = this.stringUtil!.EMPTY_STRING;
 
-    private homeHostNamePath: AbPath = abPathUtil!.NO_ABPATH;
+    private homeHostNamePath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private hostName: string = stringUtil!.EMPTY_STRING;
+    private hostName: string = this.stringUtil!.EMPTY_STRING;
 
-    private hostNamePath: AbPath = abPathUtil!.NO_ABPATH;
+    private hostNamePath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private testHomeHostName: string = stringUtil!.EMPTY_STRING;
+    private testHomeHostName: string = this.stringUtil!.EMPTY_STRING;
 
-    private testHomeHostNamePath: AbPath = abPathUtil!.NO_ABPATH;
+    private testHomeHostNamePath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private testHostName: string = stringUtil!.EMPTY_STRING;
+    private testHostName: string = this.stringUtil!.EMPTY_STRING;
 
-    private testHostNamePath: AbPath = abPathUtil!.NO_ABPATH;
+    private testHostNamePath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private imagePath: AbPath = abPathUtil!.NO_ABPATH;
+    private imagePath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private staticPath: AbPath = abPathUtil!.NO_ABPATH;
+    private staticPath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private categoryPath: AbPath = abPathUtil!.NO_ABPATH;
+    private categoryPath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private inventoryControl: string = stringUtil!.EMPTY_STRING;
+    private inventoryControl: string = this.stringUtil!.EMPTY_STRING;
 
     private contextConfigurationInterface: ContextConfigurationInterface
 
-    private subStores: string = stringUtil!.EMPTY_STRING;
+    private subStores: string = this.stringUtil!.EMPTY_STRING;
 
-    private tagLocation: string = stringUtil!.EMPTY_STRING;
+    private tagLocation: string = this.stringUtil!.EMPTY_STRING;
 
-    private packageLocation: string = stringUtil!.EMPTY_STRING;
+    private packageLocation: string = this.stringUtil!.EMPTY_STRING;
 
-    private ftp: string = stringUtil!.EMPTY_STRING;
+    private ftp: string = this.stringUtil!.EMPTY_STRING;
 
-    private ftpPath: AbPath = abPathUtil!.NO_ABPATH;
+    private ftpPath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private ftpUserName: string = stringUtil!.EMPTY_STRING;
+    private ftpUserName: string = this.stringUtil!.EMPTY_STRING;
 
-    private ftpPassword: string = stringUtil!.EMPTY_STRING;
+    private ftpPassword: string = this.stringUtil!.EMPTY_STRING;
 
-    private testFtp: string = stringUtil!.EMPTY_STRING;
+    private testFtp: string = this.stringUtil!.EMPTY_STRING;
 
-    private testFtpPath: AbPath = abPathUtil!.NO_ABPATH;
+    private testFtpPath: AbPath = this.abPathUtil!.NO_ABPATH;
 
-    private testFtpUserName: string = stringUtil!.EMPTY_STRING;
+    private testFtpUserName: string = this.stringUtil!.EMPTY_STRING;
 
-    private testFtpPassword: string = stringUtil!.EMPTY_STRING;
+    private testFtpPassword: string = this.stringUtil!.EMPTY_STRING;
 
-    private timeCreated: string = stringUtil!.EMPTY_STRING;
+    private timeCreated: string = this.stringUtil!.EMPTY_STRING;
 
-    private lastModified: string = stringUtil!.EMPTY_STRING;
+    private lastModified: string = this.stringUtil!.EMPTY_STRING;
 
     private readonly MINCHAR: number = 0;
 
@@ -249,14 +249,14 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
     
 }
 
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
             //var hashMap = hashMap
 this.getFormData(hashMap);
     
 
-    var domDocumentString: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION);;
+    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION); as String;
 ;
     
 
@@ -307,7 +307,7 @@ var columnName = columnName
 
                 //@Throws(Error::class)
             
-    createPath(key: string, hashMap: HashMap): AbPath{
+    createPath(key: string, hashMap: HashMap<any, any>): AbPath{
 var key = key
 var hashMap = hashMap
 
@@ -321,7 +321,7 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    createPath(append: string, key: string, hashMap: HashMap): AbPath{
+    createPath(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
 var append = append
 var key = key
 var hashMap = hashMap
@@ -334,7 +334,7 @@ var hashMap = hashMap
 }
 
 
-    get(key: string, hashMap: HashMap): string{
+    get(key: string, hashMap: HashMap<any, any>): string{
 var key = key
 var hashMap = hashMap
 
@@ -346,12 +346,12 @@ var hashMap = hashMap
 }
 
 
-    create(append: string, key: string, hashMap: HashMap): string{
+    create(append: string, key: string, hashMap: HashMap<any, any>): string{
 var append = append
 var key = key
 var hashMap = hashMap
 
-    var path: string =  as StringhashMap!.get(key as Object);;
+    var path: string = hashMap!.get(key as Object); as String;
 ;
     
 
@@ -362,7 +362,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EMPTY_STRING;
+                        return this.EMPTY_STRING;
     
 
                                     }
@@ -376,7 +376,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as StringhashMap!.get(path as Object); +append;
+                        return hashMap!.get(path as Object); as String +append;
     
 
                                     }
@@ -399,72 +399,72 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    getFormData(storeHashMap: HashMap){
+    getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
 ;
     
-this.name=  as StringstoreHashMap!.get(storeFrontData!.NAME);;
+this.name= storeHashMap!.get(storeFrontData!.NAME); as String;
     
-this.basketName=  as StringstoreHashMap!.get(storeFrontData!.NAME);;
+this.basketName= storeHashMap!.get(storeFrontData!.NAME); as String;
     
-this.homeHostName=  as StringstoreHashMap!.get(storeFrontData!.HOMEHOSTNAME);;
+this.homeHostName= storeHashMap!.get(storeFrontData!.HOMEHOSTNAME); as String;
     
 this.homeHostNamePath= this.createPath(storeFrontData!.HOMEHOSTNAMEPATH, storeHashMap);
     
-this.hostName=  as StringstoreHashMap!.get(storeFrontData!.HOSTNAME);;
+this.hostName= storeHashMap!.get(storeFrontData!.HOSTNAME); as String;
     
 this.hostNamePath= this.createPath(storeFrontData!.HOSTNAMEPATH, storeHashMap);
     
-this.testHomeHostName=  as StringstoreHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME);;
+this.testHomeHostName= storeHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME); as String;
     
 this.testHomeHostNamePath= this.createPath(storeFrontData!.TESTHOMEHOSTNAMEPATH, storeHashMap);
     
-this.testHostName=  as StringstoreHashMap!.get(storeFrontData!.TESTHOSTNAME);;
+this.testHostName= storeHashMap!.get(storeFrontData!.TESTHOSTNAME); as String;
     
 this.testHostNamePath= this.createPath(storeFrontData!.TESTHOSTNAMEPATH, storeHashMap);
     
-this.imagePath= this.createPath(RESOURCES, storeFrontData!.IMAGEPATH, storeHashMap);
+this.imagePath= this.createPath(StoreFront.RESOURCES, storeFrontData!.IMAGEPATH, storeHashMap);
     
 this.staticPath= this.createPath(" Products" +AbPathData.getInstance()!.SEPARATOR, storeFrontData!.STATICPATH, storeHashMap);
     
-this.categoryPath= this.createPath(RESOURCES, storeFrontData!.CATEGORYPATH, storeHashMap);
+this.categoryPath= this.createPath(StoreFront.RESOURCES, storeFrontData!.CATEGORYPATH, storeHashMap);
     
-this.inventoryControl=  as StringstoreHashMap!.get(storeFrontData!.INVENTORYCONTROL);;
+this.inventoryControl= storeHashMap!.get(storeFrontData!.INVENTORYCONTROL); as String;
     
-this.subStores=  as StringstoreHashMap!.get(storeFrontData!.SUBSTORES);;
+this.subStores= storeHashMap!.get(storeFrontData!.SUBSTORES); as String;
     
-this.tagLocation=  as StringstoreHashMap!.get(storeFrontData!.TAGLOCATION);;
+this.tagLocation= storeHashMap!.get(storeFrontData!.TAGLOCATION); as String;
     
-this.packageLocation=  as StringstoreHashMap!.get(storeFrontData!.PACKAGELOCATION);;
+this.packageLocation= storeHashMap!.get(storeFrontData!.PACKAGELOCATION); as String;
     
-this.ftp=  as StringstoreHashMap!.get(storeFrontData!.FTP);;
+this.ftp= storeHashMap!.get(storeFrontData!.FTP); as String;
     
 this.ftpPath= this.createPath(storeFrontData!.FTPPATH, storeHashMap);
     
-this.ftpUserName=  as StringstoreHashMap!.get(storeFrontData!.FTPUSERNAME);;
+this.ftpUserName= storeHashMap!.get(storeFrontData!.FTPUSERNAME); as String;
     
-this.ftpPassword=  as StringstoreHashMap!.get(storeFrontData!.FTPPASSWORD);;
+this.ftpPassword= storeHashMap!.get(storeFrontData!.FTPPASSWORD); as String;
     
-this.testFtp=  as StringstoreHashMap!.get(storeFrontData!.TESTFTP);;
+this.testFtp= storeHashMap!.get(storeFrontData!.TESTFTP); as String;
     
 this.testFtpPath= this.createPath(storeFrontData!.TESTFTPPATH, storeHashMap);
     
-this.testFtpUserName=  as StringstoreHashMap!.get(storeFrontData!.TESTFTPUSERNAME);;
+this.testFtpUserName= storeHashMap!.get(storeFrontData!.TESTFTPUSERNAME); as String;
     
-this.testFtpPassword=  as StringstoreHashMap!.get(storeFrontData!.TESTFTPPASSWORD);;
+this.testFtpPassword= storeHashMap!.get(storeFrontData!.TESTFTPPASSWORD); as String;
     
-this.timeCreated=  as StringstoreHashMap!.get(EntryData.getInstance()!.TIMECREATED);;
+this.timeCreated= storeHashMap!.get(EntryData.getInstance()!.TIMECREATED); as String;
     
-this.lastModified=  as StringstoreHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);;
+this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as String;
     
 }
 
 
     public isNameValid(): Boolean{
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.name, MINSTORENAMELENGTH, this.MAXCHAR);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.name, this.MINSTORENAMELENGTH, this.MAXCHAR);)
                         
                                     {
                                     
@@ -516,13 +516,13 @@ this.lastModified=  as StringstoreHashMap!.get(EntryData.getInstance()!.LASTMODI
                         
                                     {
                                     
-    var hashMap: HashMap = SpecialCharacterUtil.getHashMap()!;
+    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;
 ;
     
 hashMap!.put(
                                                 [
                                                     CommonSeps.getInstance()!.SPACE;
-                                                ], ONE_EMPTY_STRING_ARRAY);
+                                                ], this.ONE_EMPTY_STRING_ARRAY);
     
 this.name= new Replace(hashMap).
                             all(this.name);
@@ -554,7 +554,7 @@ valid= this.isNameValid();
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.basketName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.basketName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -563,7 +563,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.homeHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.homeHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -572,7 +572,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -581,7 +581,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.hostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.hostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -590,7 +590,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -599,7 +599,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -608,7 +608,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -617,7 +617,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -626,7 +626,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -635,7 +635,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -644,7 +644,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -653,7 +653,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -662,7 +662,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryControl, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryControl, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -671,7 +671,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.subStores, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.subStores, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -680,7 +680,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -689,7 +689,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.packageLocation, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.packageLocation, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -698,7 +698,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftp, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftp, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -707,7 +707,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -716,7 +716,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -725,7 +725,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -734,7 +734,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtp, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtp, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -743,7 +743,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -752,7 +752,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -761,7 +761,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -801,7 +801,7 @@ valid= this.isNameValid();
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.name, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.name, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     
@@ -827,7 +827,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return EMPTY_STRING;
+                        return this.EMPTY_STRING;
     
 }
 
@@ -846,7 +846,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 stringBuffer!.append(this.nameValidationInfo());
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.basketName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.basketName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Basket name is invalid. Must be < ");
@@ -859,7 +859,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.homeHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.homeHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Home host name is invalid. Must be < ");
@@ -872,7 +872,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.homeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Home host name path is invalid. Must be < ");
@@ -885,7 +885,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.hostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.hostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Host name is invalid. Must be < ");
@@ -898,7 +898,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.hostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Host name path is invalid. Must be < ");
@@ -911,7 +911,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test home host name is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -920,7 +920,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHomeHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test home host name path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -929,7 +929,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHostName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHostName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test host name is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -938,7 +938,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testHostNamePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test host name path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -947,7 +947,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.imagePath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Image path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -956,7 +956,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.staticPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Static path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -965,7 +965,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.categoryPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Category path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -974,7 +974,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.inventoryControl, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.inventoryControl, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Inventory control is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -983,7 +983,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.subStores, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.subStores, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Sub stores is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -992,7 +992,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.tagLocation, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Tag location is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1001,7 +1001,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.packageLocation, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidRequired(this.packageLocation, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Package location is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1010,7 +1010,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftp, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftp, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Ftp is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1019,7 +1019,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Ftp path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1028,7 +1028,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpUserName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Ftp username is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1037,7 +1037,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.ftpPassword, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Ftp password is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1046,7 +1046,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtp, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtp, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test ftp is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1055,7 +1055,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPath!.toString(), this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test ftp Path is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1064,7 +1064,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpUserName, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test ftp username is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -1073,7 +1073,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, MINCHAR, this.MAXCHAR);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.testFtpPassword, this.MINCHAR, this.MAXCHAR);)
                         
                                     {
                                     stringBuffer!.append("Test ftp password is invalid. Must be < " +this.MAXCHAR +" and > 0 characters.<br>");
@@ -2138,13 +2138,13 @@ dataVector!.add(time);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
 ;
     
 
-    var dataHashMap: HashMap = new HashMap();
+    var dataHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 dataHashMap!.put(storeFrontData!.NAME, this.name);
@@ -2226,7 +2226,7 @@ dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getName();;
+                        return this.getName(); as Object;
     
 }
 
@@ -2236,7 +2236,7 @@ dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return contextConfigurationInterface;
+                        return this.contextConfigurationInterface;
     
 }
 

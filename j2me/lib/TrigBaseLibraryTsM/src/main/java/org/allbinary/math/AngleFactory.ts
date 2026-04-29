@@ -72,7 +72,7 @@ export class AngleFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AngleFactory.instance;
     
 }
 
@@ -110,11 +110,11 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
 
     public readonly QUARTER_TOTAL_ANGLE: number = 90;
 
-    private readonly angleArray: Angle[] = new Array(Math.roundTOTAL_ANGLE);
+    private readonly angleArray: Angle[] = new Array(Math.round(this.TOTAL_ANGLE));
 
     private readonly NEGATIVE_ONE: number =  -1;
 
-    public readonly NOT_ANGLE: NamedAngle = new NamedAngle(NEGATIVE_ONE, CommonStrings.getInstance()!.EMPTY);
+    public readonly NOT_ANGLE: NamedAngle = new NamedAngle(this.NEGATIVE_ONE, CommonStrings.getInstance()!.EMPTY);
 
     public readonly DOWN: NamedAngle
 
@@ -206,14 +206,14 @@ this.angleArray[index]= new Angle(index);
     public getAt(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = Math.roundthis.frameUtil!.adjustAngleToFrameAngle(index);;
+    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index););
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return angleArray[adjustedIndex]!;
+                        return this.angleArray[adjustedIndex]!;
     
 }
 
@@ -285,7 +285,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NOT_ANGLE;
+                        return this.NOT_ANGLE;
     
 }
 

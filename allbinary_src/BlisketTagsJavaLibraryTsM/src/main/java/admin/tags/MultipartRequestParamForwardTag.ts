@@ -104,13 +104,13 @@ this.paramVector= paramVector;
 
         try {
             
-    var parentTag: HelperTag =  as HelperTagthis.getParent();;
+    var parentTag: HelperTag = this.getParent(); as HelperTag;
 ;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(AbTagData.PARENT, parentTag);

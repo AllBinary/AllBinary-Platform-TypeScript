@@ -89,7 +89,7 @@ export class InputAutomationBundleActivator
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return bundleContext;
+                        return InputAutomationBundleActivator.bundleContext;
     
 }
 
@@ -108,9 +108,9 @@ export class InputAutomationBundleActivator
     
 this.bundleContext= bundleContext;
     
-moduleManagementThread= new Thread(new InputAutomationNewBundleRunnable(this));
+InputAutomationBundleActivator.moduleManagementThread= new Thread(new InputAutomationNewBundleRunnable(this));
     
-moduleManagementThread!.start();
+InputAutomationBundleActivator.moduleManagementThread!.start();
     
 InputAutomationJFrame.create(this);
     

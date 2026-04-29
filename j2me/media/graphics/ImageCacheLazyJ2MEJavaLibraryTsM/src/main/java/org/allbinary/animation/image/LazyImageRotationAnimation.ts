@@ -138,7 +138,7 @@ imageCache!.add(this);
     
 this.scaleProperties= scaleProperties;
     
-this.NULL_INDEX_ANIMATION=  as IndexedAnimationNullRotationAnimationFactory.getFactoryInstance()!.getInstance(0);;
+this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
     
 this.animation= new RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior)
                                 {
@@ -224,7 +224,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
-this.animation=  as IndexedAnimationthis.animationInterfaceFactoryInterface!.getInstance(this.instanceId);;
+this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId); as IndexedAnimation;
     
 this.animation.setState(animation);
     
@@ -296,7 +296,7 @@ this.animation.setMaxScale(maxScaleX, maxScaleY);
 
 
     public nextRotation(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     nextRotation();
     
@@ -304,7 +304,7 @@ animation.
 
 
     public previousRotation(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     previousRotation();
     
@@ -312,7 +312,7 @@ animation.
 
 
     public nextRotationX(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     nextRotationX();
     
@@ -320,7 +320,7 @@ animation.
 
 
     public previousRotationX(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     previousRotationX();
     
@@ -328,7 +328,7 @@ animation.
 
 
     public nextRotationZ(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     nextRotationZ();
     
@@ -336,7 +336,7 @@ animation.
 
 
     public previousRotationZ(){
-animation =  as RotationAnimationthis.animationanimation
+animation = this.animationanimation as RotationAnimation
 animation.
                     previousRotationZ();
     

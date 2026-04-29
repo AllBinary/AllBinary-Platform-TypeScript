@@ -69,7 +69,7 @@ export class ImageScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageScaleUtil.instance;
     
 }
 
@@ -153,7 +153,7 @@ private constructor (){
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX *width), Math.round(scaleY *height), mutable)!;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round((scaleX *width)), Math.round((scaleY *height)), mutable)!;
 ;
     
 
@@ -202,7 +202,7 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.roundscaleX, Math.roundscaleY, mutable)!;
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX), Math.round(scaleY), mutable)!;
 ;
     
 originalImageArray[0]= scaledImage;

@@ -96,7 +96,7 @@ var weblisketSession = weblisketSession
 
         try {
             
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get( as HttpServletRequestpageContext!.getRequest())!;
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;
 ;
     
 this.document= DomDocumentHelper.create();

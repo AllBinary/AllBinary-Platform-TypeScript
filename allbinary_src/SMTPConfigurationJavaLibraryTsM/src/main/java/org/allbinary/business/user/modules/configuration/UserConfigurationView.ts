@@ -84,7 +84,7 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.userConfigurationInterface=  as UserConfigurationInterfacenew UserConfiguration();
+this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
@@ -99,7 +99,7 @@ this.userConfigurationInterface=  as UserConfigurationInterfacenew UserConfigura
 ;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface =  as UserEmailConfigurationInterfaceuserEmailConfigurationView!.getEmailConfigurationInterface();;
+    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface(); as UserEmailConfigurationInterface;
 ;
     
 this.userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);

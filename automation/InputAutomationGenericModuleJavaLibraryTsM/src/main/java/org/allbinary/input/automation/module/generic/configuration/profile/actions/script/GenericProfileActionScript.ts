@@ -187,9 +187,9 @@ this.remove(profileActionScriptNodeInterface);
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
@@ -208,7 +208,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return profileActionConditionInterfaceVector;
+                        return this.profileActionConditionInterfaceVector;
     
 }
 
@@ -245,7 +245,7 @@ var document = document
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacevector.get(index);;
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index); as ProfileActionScriptConditionInterface;
 ;
     
 node.appendChild(profileActionConditionInterface!.toXmlNode(document));

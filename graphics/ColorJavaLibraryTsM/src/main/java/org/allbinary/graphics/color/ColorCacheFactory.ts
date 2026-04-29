@@ -81,7 +81,7 @@ export class ColorCacheFactory
         try {
             logUtil!.putF(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK);
     
-cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
+ColorCacheFactory.cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
     
 logUtil!.putF(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK);
     
@@ -100,7 +100,7 @@ logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return cacheInterface;
+                        return ColorCacheFactory.cacheInterface;
     
 }
 

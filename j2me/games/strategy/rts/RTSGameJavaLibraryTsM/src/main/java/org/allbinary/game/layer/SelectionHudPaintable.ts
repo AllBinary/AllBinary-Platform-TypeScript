@@ -159,7 +159,7 @@ graphics.drawString(getName(), this.textX, y, 0);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return primitiveLongUtil;
+                        return this.primitiveLongUtil;
     
 }
 
@@ -176,7 +176,7 @@ this.animationInterface= animationInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterface;
+                        return this.animationInterface;
     
 }
 
@@ -193,7 +193,7 @@ this.name= name;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return name;
+                        return this.name;
     
 }
 
@@ -212,7 +212,7 @@ this.setColor(basicColor!.toInt());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 
@@ -229,7 +229,7 @@ this.color= color;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return color;
+                        return this.color;
     
 }
 
@@ -239,7 +239,7 @@ this.color= color;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return width;
+                        return this.width;
     
 }
 
@@ -256,7 +256,7 @@ this.height= height;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return height;
+                        return this.height;
     
 }
 
@@ -266,7 +266,7 @@ this.height= height;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 

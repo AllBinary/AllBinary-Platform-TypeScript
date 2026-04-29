@@ -84,7 +84,7 @@ this.animationInterfaceArray= animationInterfaceArray;
                 ;
 --index >= 0; )
         {
-indexedAnimation=  as IndexedAnimationthis.animationInterfaceArray[index]!;
+indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
     
 indexedAnimation!.setFrame(frameIndex);
     
@@ -95,7 +95,7 @@ indexedAnimation!.setFrame(frameIndex);
 
     public getFrame(): number{
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[0]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
 ;
     
 
@@ -109,7 +109,7 @@ indexedAnimation!.setFrame(frameIndex);
 
     public getSize(): number{
 
-    var indexedAnimation: IndexedAnimation =  as IndexedAnimationthis.animationInterfaceArray[0]!;
+    var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[0]! as IndexedAnimation;
 ;
     
 
@@ -135,7 +135,7 @@ indexedAnimation!.setFrame(frameIndex);
                 ;
 --index >= 0; )
         {
-indexedAnimation=  as IndexedAnimationthis.animationInterfaceArray[index]!;
+indexedAnimation= this.animationInterfaceArray[index]! as IndexedAnimation;
     
 indexedAnimation!.previousFrame();
     
@@ -232,7 +232,7 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return animationInterfaceArray;
+                        return this.animationInterfaceArray;
     
 }
 

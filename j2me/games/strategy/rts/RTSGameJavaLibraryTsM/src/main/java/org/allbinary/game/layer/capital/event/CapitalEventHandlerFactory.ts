@@ -72,7 +72,7 @@ var groupInterface = groupInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return capitalEventHandlerArray[Math.roundgroupInterface!.getGroupId();]!;
+                        return CapitalEventHandlerFactory.capitalEventHandlerArray[Math.round(groupInterface!.getGroupId();)]!;
     
 }
 
@@ -83,10 +83,10 @@ var groupInterface = groupInterface
 
 
                         for (
-    var index: number = capitalEventHandlerArray!.length -1;
+    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;
 index >= 0; index--)
         {
-capitalEventHandlerArray[index]!.removeAllListeners();
+CapitalEventHandlerFactory.capitalEventHandlerArray[index]!.removeAllListeners();
     
 }
 

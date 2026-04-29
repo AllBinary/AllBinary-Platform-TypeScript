@@ -41,7 +41,7 @@ export class TimeTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return TimeTypeUtil.instance;
     
 }
 
@@ -83,7 +83,7 @@ export class TimeTypeUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isNight()
+                        return this.isNight()
                         ?       
                                 this.NIGHT
                                 :
@@ -133,7 +133,7 @@ var timeInMillis = timeInMillis
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return isNight(timeInMillis)
+                        return this.isNight(timeInMillis)
                         ?       
                                 this.NIGHT
                                 :

@@ -61,7 +61,7 @@ export class CreateUserFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(hashMap: HashMap): UserInterface{
+    public static getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap
 
                         if(hashMap != 
@@ -70,7 +70,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var roleString: string =  as StringhashMap!.get(UserRoleData.NAME.toString());;
+    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()); as String;
 ;
     
 

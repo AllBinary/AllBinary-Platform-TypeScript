@@ -50,13 +50,13 @@ export class Portion
     private readonly current: number
 
     private readonly total: number
-public constructor (hashMap: HashMap){
+public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.current=  as IntegerhashMap!.get("current");;
+this.current= hashMap!.get("current"); as Integer;
     
-this.total=  as IntegerhashMap!.get("total");;
+this.total= hashMap!.get("total"); as Integer;
     
 }
 
@@ -66,7 +66,7 @@ this.total=  as IntegerhashMap!.get("total");;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return current;
+                        return this.current;
     
 }
 
@@ -76,7 +76,7 @@ this.total=  as IntegerhashMap!.get("total");;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return total;
+                        return this.total;
     
 }
 

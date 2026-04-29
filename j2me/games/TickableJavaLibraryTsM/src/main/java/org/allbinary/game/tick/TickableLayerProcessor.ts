@@ -46,6 +46,8 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TickableInterface } from "./TickableInterface.js";
+
 export class TickableLayerProcessor extends LayerProcessor {
         
 public constructor (){
@@ -64,7 +66,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var tickableInterface: TickableInterface =  as TickableInterfacelayerInterface;
+    var tickableInterface: TickableInterface = layerInterface as TickableInterface;
 ;
     
 tickableInterface!.processTick(allBinaryLayerManager);

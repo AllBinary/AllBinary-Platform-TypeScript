@@ -46,6 +46,8 @@ import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
+
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
@@ -62,7 +64,7 @@ export class CellPositionsUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return CellPositionsUtil.instance;
     
 }
 
@@ -156,11 +158,11 @@ reusableList!.clear();
 index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionoccupyList!.get(index);;
+    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index); as GeographicMapCellPosition;
 ;
     
 
-    var surroundingGeographicMapCellPositionList: BasicArrayList = getAllSurroundingAt(geographicMapInterface, layerGeographicMapCellPosition, reusableSingleThreadedSurroundingList)!;
+    var surroundingGeographicMapCellPositionList: BasicArrayList = this.getAllSurroundingAt(geographicMapInterface, layerGeographicMapCellPosition, this.reusableSingleThreadedSurroundingList)!;
 ;
     
 
@@ -172,7 +174,7 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionsurroundingGeographicMapCellPositionList!.get(index2);;
+    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2); as GeographicMapCellPosition;
 ;
     
 

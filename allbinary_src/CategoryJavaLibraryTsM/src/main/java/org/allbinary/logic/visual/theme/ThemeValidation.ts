@@ -172,7 +172,7 @@ this.init();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap){
+public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>){
 
             super();
         var transformInfoInterface = transformInfoInterface
@@ -180,7 +180,7 @@ var hashMap = hashMap
 this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath( as StringhashMap!.get(ThemeData.getInstance()!.PATH));
+    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as String);
 ;
     
 
@@ -268,7 +268,7 @@ this.init(storeThemeCategoryInterface);
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface =  as StoreThemeCategoryInterfacecategoryFactoryInterface!.getRootInstance();;
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
 ;
     
 this.init(rootStoreThemeCategoryInterface);
@@ -294,7 +294,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return transformInfoInterface;
+                        return this.transformInfoInterface;
     
 }
 
@@ -369,7 +369,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as CssStyleValidationthis.styleValidationInterface;
+                        return this.styleValidationInterface as CssStyleValidation;
     
 }
 
@@ -521,7 +521,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Objectthis.getName();;
+                        return this.getName(); as Object;
     
 }
 
@@ -548,13 +548,13 @@ vector.add(this.getPreviewImagePath());
 }
 
 
-    public toHashMap(): HashMap{
+    public toHashMap(): HashMap<any, any>{
 
     var themeData: ThemeData = ThemeData.getInstance()!;
 ;
     
 
-    var hashMap: HashMap = new HashMap();
+    var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 hashMap!.put(themeData!.NAME, this.getName());
@@ -583,7 +583,7 @@ var document = document
 ;
     
 
-    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.getCssStyleValidation();;
+    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation(); as DomNodeInterface;
 ;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));

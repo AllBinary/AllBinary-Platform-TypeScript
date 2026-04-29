@@ -55,7 +55,7 @@ export class ImageCreationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageCreationUtil.instance;
     
 }
 
@@ -91,7 +91,7 @@ private constructor (){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round(width *maxScaleX) +1, Math.round(height *maxScaleY) +1)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round((width *maxScaleX)) +1, Math.round((height *maxScaleY)) +1)!;
 ;
     
 

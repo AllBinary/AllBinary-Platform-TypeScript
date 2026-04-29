@@ -114,14 +114,14 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 this.chase(collidableInterfaceCompositeInterface);
     
 
-    var rtsLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayercollidableInterfaceCompositeInterface;
+    var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
 ;
     
 
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    this.collideUnit( as UnitLayerrtsLayer);
+                                    this.collideUnit(rtsLayer as UnitLayer);
     
 
                                     }
@@ -145,7 +145,7 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
                         
                                     {
                                     
-    var allbinaryLayer: CollidableCompositeLayer =  as CollidableCompositeLayerthis.getList()!.get(0);;
+    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0); as CollidableCompositeLayer;
 ;
     
 
@@ -209,11 +209,11 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
     steer(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var ownerUnitLayer: UnitLayer =  as UnitLayerthis.ownerLayer;
+    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
 ;
     
 
-    var unitLayer: UnitLayer =  as UnitLayercollidableInterfaceCompositeInterface;
+    var unitLayer: UnitLayer = collidableInterfaceCompositeInterface as UnitLayer;
 ;
     
 
@@ -269,7 +269,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
     chase(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var rtsLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayercollidableInterfaceCompositeInterface;
+    var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
 ;
     
 
@@ -286,7 +286,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                                     }
                                 
 
-    var ownerUnitLayer: UnitLayer =  as UnitLayerthis.ownerLayer;
+    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
 ;
     
 
@@ -313,7 +313,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
     collideUnit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer
 
-    var ownerUnitLayer: UnitLayer =  as UnitLayerthis.ownerLayer;
+    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
 ;
     
 
@@ -321,7 +321,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceownerUnitLayer!.allBinaryGameLayerManagerP;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = ownerUnitLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
 ;
     
 

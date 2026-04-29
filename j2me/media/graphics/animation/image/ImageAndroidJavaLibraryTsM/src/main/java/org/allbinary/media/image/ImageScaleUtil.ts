@@ -85,7 +85,7 @@ export class ImageScaleUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ImageScaleUtil.instance;
     
 }
 
@@ -165,7 +165,7 @@ private constructor (){
     //var scaleY = scaleY
     //var cached = cached
 
-    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
+    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
     
 
@@ -173,11 +173,11 @@ private constructor (){
 ;
     
 
-    var width: number = Math.round(originalBitmap!.getWidth() *scaleX);
+    var width: number = Math.round((originalBitmap!.getWidth() *scaleX));
 ;
     
 
-    var height: number = Math.round(originalBitmap!.getHeight() *scaleY);
+    var height: number = Math.round((originalBitmap!.getHeight() *scaleY));
 ;
     
 
@@ -193,7 +193,7 @@ private constructor (){
                         
                                     {
                                     
-    var scaleX2Float: number =  as Floatthis.scaleXBasicArrayList!.get(index);;
+    var scaleX2Float: number = this.scaleXBasicArrayList!.get(index); as Float;
 ;
     
 
@@ -201,7 +201,7 @@ private constructor (){
 ;
     
 
-    var scaleY2Float: number =  as Floatthis.scaleYBasicArrayList!.get(index);;
+    var scaleY2Float: number = this.scaleYBasicArrayList!.get(index); as Float;
 ;
     
 
@@ -228,7 +228,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as Imagethis.scaledImageBasicArrayList!.get(index);;
+                        return this.scaledImageBasicArrayList!.get(index); as Image;
     
 
                                     }
@@ -297,7 +297,7 @@ this.scaleYBasicArrayList!.add(scaleY);
     
 this.scale(image, matrix, scaleX, scaleY);
     
-image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
+image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
     
 
 

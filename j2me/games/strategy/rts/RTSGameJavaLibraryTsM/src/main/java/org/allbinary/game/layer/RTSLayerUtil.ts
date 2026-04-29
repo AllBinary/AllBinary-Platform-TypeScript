@@ -80,6 +80,8 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
         
 import { RTSLayer } from "./RTSLayer.js";
 
+import { FakeLayerManager } from "./FakeLayerManager.js";
+
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class RTSLayerUtil
@@ -94,7 +96,7 @@ export class RTSLayerUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return RTSLayerUtil.instance;
     
 }
 
@@ -165,7 +167,7 @@ rtsLayer!.setLevel(rtsLayer!.getLevel() -1);
     var index: number = size;
 --index >= 0; )
         {
-partInterface=  as BasicWeaponPartpartInterfaceArray[index]!;
+partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
 partInterface!.setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() +1));
     
@@ -201,7 +203,7 @@ rtsLayer!.setLevel(rtsLayer!.getLevel() +1);
     var index: number = size;
 --index >= 0; )
         {
-partInterface=  as BasicWeaponPartpartInterfaceArray[index]!;
+partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
 partInterface!.setWeaponProperties(this.createWeaponProperties(partInterface!.getWeaponProperties(), rtsLayer!.getLevel(), rtsLayer!.getLevel() -1));
     
@@ -237,7 +239,7 @@ cost= this.getCostExponential(cost);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.roundcost;
+                        return Math.round(cost);
     
 }
 
@@ -273,7 +275,7 @@ var rtsLayer = rtsLayer
     var index: number = size -1;
 index >= 0; index--)
         {
-partInterface=  as BasicWeaponPartpartInterfaceArray[index]!;
+partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
 weaponProperties= partInterface!.getWeaponProperties();
     
@@ -329,7 +331,7 @@ total += this.getWeaponPropertiesCost(weaponProperties);
     var index: number = size -1;
 index >= 0; index--)
         {
-partInterface=  as BasicWeaponPartpartInterfaceArray[index]!;
+partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
 weaponProperties= partInterface!.getWeaponProperties();
     
@@ -394,7 +396,7 @@ this.logUtil!.putF(new StringMaker().
     var index: number = size -1;
 index >= 0; index--)
         {
-partInterface=  as BasicWeaponPartpartInterfaceArray[index]!;
+partInterface= partInterfaceArray[index]! as BasicWeaponPart;
     
 weaponProperties= partInterface!.getWeaponProperties();
     
@@ -434,7 +436,7 @@ var list = list
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-rtsLayer=  as RTSLayerlist.get(index);;
+rtsLayer= list.get(index); as RTSLayer;
     
 rtsLayer!.setDestroyed(true);
     
@@ -445,10 +447,10 @@ list.clear();
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
     //var baseRaceTrackGeographicMap = baseRaceTrackGeographicMap
 
-    var hashtable: Hashtable = new Hashtable();
+    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
 

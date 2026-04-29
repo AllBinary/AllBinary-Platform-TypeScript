@@ -55,7 +55,7 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ExceptionUtil.instance;
     
 }
 
@@ -115,7 +115,7 @@ e.printStackTrace(printStream);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NONE;
+                        return this.NONE;
     
 }
 

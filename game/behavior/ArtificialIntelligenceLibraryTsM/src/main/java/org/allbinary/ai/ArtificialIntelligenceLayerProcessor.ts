@@ -46,6 +46,8 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ArtificialIntelligenceCompositeInterface } from "./ArtificialIntelligenceCompositeInterface.js";
+
 export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {
         
 public constructor (){
@@ -64,7 +66,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface =  as ArtificialIntelligenceCompositeInterfacelayerInterface;
+    var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface = layerInterface as ArtificialIntelligenceCompositeInterface;
 ;
     
 artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);

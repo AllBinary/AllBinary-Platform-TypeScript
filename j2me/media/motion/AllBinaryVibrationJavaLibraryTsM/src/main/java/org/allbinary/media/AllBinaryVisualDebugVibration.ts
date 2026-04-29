@@ -94,7 +94,7 @@ var graphics = graphics
     var width: number = myFont!.stringWidth(this.VIBRATING)!;
 ;
     
-graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, anchor);
+graphics.drawString(VIBRATING, displayInfoSingleton!.getLastHalfWidth() -(width>>1), 0, this.anchor);
     
 
                                     }

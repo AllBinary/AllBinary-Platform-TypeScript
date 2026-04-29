@@ -90,7 +90,7 @@ this.imageArray= imageArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageArray;
+                        return this.imageArray;
     
 }
 
@@ -117,7 +117,7 @@ this.totalAngle= totalAngle;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return totalAngle;
+                        return this.totalAngle;
     
 }
 
@@ -134,7 +134,7 @@ this.dx= dx;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dx;
+                        return this.dx;
     
 }
 
@@ -151,7 +151,7 @@ this.dy= dy;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dy;
+                        return this.dy;
     
 }
 

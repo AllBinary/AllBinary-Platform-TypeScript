@@ -492,7 +492,7 @@ var status = status
 ;
     
 
-    var updateHashMap: HashMap = new HashMap();
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 updateHashMap!.put(OrderHistoryData.STATUS, status);
@@ -550,7 +550,7 @@ var paymentMethod = paymentMethod
 ;
     
 
-    var updateHashMap: HashMap = new HashMap();
+    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 updateHashMap!.put(PaymentData.METHOD, paymentMethod);
@@ -586,7 +586,7 @@ var storeFrontInterface = storeFrontInterface
 ;
     
 
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getName());
@@ -608,7 +608,7 @@ whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getNa
 i < size; i++)
         {
 
-    var orderReviewHashMap: HashMap =  as HashMaporderHashMapVector!.get(i as Object);;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i as Object); as HashMap<any, any>;
 ;
     
 
@@ -637,7 +637,7 @@ var userName = userName
 ;
     
 
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(UserData.USERNAME, userName);
@@ -659,7 +659,7 @@ whereHashMap!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap =  as HashMaporderHashMapVector!.get(index as Object);;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -690,7 +690,7 @@ var toDate = toDate
 ;
     
 
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(OrderHistoryData.STATUS, status);
@@ -712,7 +712,7 @@ whereHashMap!.put(OrderHistoryData.STATUS, status);
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap =  as HashMaporderHashMapVector!.get(index as Object);;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -758,7 +758,7 @@ var toDate = toDate
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap =  as HashMaporderHashMapVector!.get(index as Object);;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object); as HashMap<any, any>;
 ;
     
 
@@ -783,13 +783,13 @@ orderReviewVector!.add(orderReview);
     public getOrder(id: string): OrderHistory{
 var id = id
 
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(OrderData.ID, id);
     
 
-    var orderReviewHashMap: HashMap = super.getRow(whereHashMap)!;
+    var orderReviewHashMap: HashMap<any, any> = super.getRow(whereHashMap)!;
 ;
     
 
@@ -1024,7 +1024,7 @@ stringBuffer!.append(") )");
 
                 //@Throws(Error::class)
             
-    public update(whereHashMap: HashMap, orderHashMap: HashMap){
+    public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
 var whereHashMap = whereHashMap
 var orderHashMap = orderHashMap
 

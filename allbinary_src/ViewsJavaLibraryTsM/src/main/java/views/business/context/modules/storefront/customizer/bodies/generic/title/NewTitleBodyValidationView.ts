@@ -118,7 +118,7 @@ this.titleBody= new TitleBodyValidation();
 
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.titleBody);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.titleBody as DomNodeInterface);
     
 
                             }

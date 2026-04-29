@@ -119,10 +119,10 @@ export class InputAutomationConfigurationFactory
     var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration::class)!;
 ;
     
-inputAutomationConfiguration=  as InputAutomationConfigurationroot.getValue();;
+InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue(); as InputAutomationConfiguration;
     
 
-    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
+    var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
 ;
     
 logUtil!.putF("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
@@ -157,7 +157,7 @@ logUtil!.putF("LoadedConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrin
                         else {
                             logUtil!.putF("New Configuration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
-inputAutomationConfiguration= new InputAutomationConfiguration();
+InputAutomationConfigurationFactory.inputAutomationConfiguration= new InputAutomationConfiguration();
     
 
                         }
@@ -170,7 +170,7 @@ inputAutomationConfiguration= new InputAutomationConfiguration();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return inputAutomationConfiguration;
+                        return InputAutomationConfigurationFactory.inputAutomationConfiguration;
     
 }
 

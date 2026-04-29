@@ -60,7 +60,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap): UserInterface{
+    public getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap
 
 

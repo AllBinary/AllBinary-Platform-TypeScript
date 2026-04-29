@@ -63,6 +63,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
 
+import { LayerPlacementType } from "./LayerPlacementType.js";
+
 import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 
 export class LayerPlacer
@@ -105,7 +107,7 @@ this.dimension= dimension;
     var index: number = 0;
 index < size; index++)
         {
-layerPlacementInterface=  as LayerPlacementInterfacelist.objectArray[index]!;
+layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface;
     
 this.process(layerPlacementInterface);
     
@@ -127,7 +129,7 @@ this.process(layerPlacementInterface);
 ;
     
 
-    var hashtable: Hashtable = layerPlacementInterface!.getInstance()!;
+    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;
 ;
     
 
@@ -139,7 +141,7 @@ this.process(layerPlacementInterface);
 ;
     
 
-    var layerHashtable: Hashtable
+    var layerHashtable: Hashtable<any, any>
 ;
     
 
@@ -161,9 +163,9 @@ this.process(layerPlacementInterface);
 
         while(enumeration.hasMoreElements())
         {
-point=  as GPointenumeration.nextElement()!;;
+point= enumeration.nextElement()!; as GPoint;
     
-layerHashtable=  as Hashtablehashtable.get(point as Object);;
+layerHashtable= hashtable.get(point as Object); as Hashtable<any, any>;
     
 x= point.getX() +relativePoint!.getX();
     

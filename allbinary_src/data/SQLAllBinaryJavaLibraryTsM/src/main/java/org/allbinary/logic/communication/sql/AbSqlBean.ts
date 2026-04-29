@@ -177,7 +177,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
 }
 
 
-    public getField(keysAndValues: HashMap, requestedField: string): string{
+    public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
     //var keysAndValues = keysAndValues
     //var requestedField = requestedField
 
@@ -229,7 +229,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
     var i: number = 0;
 i < size; i++)
         {
-key=  as StringkeyArray[i]!;
+key= keyArray[i]! as String;
     
 value= .toCharArray();
     
@@ -326,7 +326,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
 }
 
 
-    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap): string{
+    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
     //var key = key
     //var value = value
     //var columnsAndValues = columnsAndValues
@@ -420,7 +420,7 @@ columnName= keyArray2[i]!.toString();
 field= rset.getObject(columnName)!.toString();
     
 
-                        if(field.compareTo( as StringcolumnsAndValues!.get(columnName)) != 0)
+                        if(field.compareTo(columnsAndValues!.get(columnName) as String) != 0)
                         
                                     {
                                     

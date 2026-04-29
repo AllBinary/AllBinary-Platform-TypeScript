@@ -82,7 +82,7 @@ logUtil!.putF(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionCo
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacevector.get(index);;
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index); as ProfileActionScriptConditionInterface;
 ;
     
 

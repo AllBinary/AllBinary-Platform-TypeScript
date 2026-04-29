@@ -54,7 +54,7 @@ export class AndroidInfoFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return AndroidInfoFactory.instance;
     
 }
 
@@ -66,7 +66,7 @@ export class AndroidInfoFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return version;
+                        return this.version;
     
 }
 

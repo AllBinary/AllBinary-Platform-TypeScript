@@ -71,7 +71,7 @@ this.damage= damage;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return damage;
+                        return this.damage;
     
 }
 
@@ -88,7 +88,7 @@ this.dissipation= dissipation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return dissipation;
+                        return this.dissipation;
     
 }
 
@@ -98,7 +98,7 @@ this.dissipation= dissipation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return range;
+                        return this.range;
     
 }
 

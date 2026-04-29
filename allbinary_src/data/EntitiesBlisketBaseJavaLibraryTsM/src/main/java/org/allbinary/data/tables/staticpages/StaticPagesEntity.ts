@@ -123,7 +123,7 @@ var values = values
 var store = store
 var keywords = keywords
 
-    var whereHashMap: HashMap = new HashMap();
+    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
 whereHashMap!.put(StoreFrontData.getInstance()!.NAME, store);
@@ -164,9 +164,9 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords);
 }
 
 
-    public update(updatedValues: HashMap){
+    public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.KEYWORDS,  as StringupdatedValues!.get(BasicItemData.KEYWORDS), updatedValues);
+super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as String, updatedValues);
     
 }
 

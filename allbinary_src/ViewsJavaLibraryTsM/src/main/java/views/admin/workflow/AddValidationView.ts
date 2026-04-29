@@ -82,7 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, this.getPropertiesHashMap(), this.getPageContext());
+this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, this.getPropertiesHashMap(), this.getPageContext());
     
 }
 

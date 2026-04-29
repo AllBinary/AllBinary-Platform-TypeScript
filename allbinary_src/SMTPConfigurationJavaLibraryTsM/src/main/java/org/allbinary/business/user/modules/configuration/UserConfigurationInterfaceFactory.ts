@@ -92,8 +92,8 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return  as UserConfigurationInterfacenew UserConfigurationView(configurationNode).
-                            getUserConfigurationInterface();;
+                        return new UserConfigurationView(configurationNode).
+                            getUserConfigurationInterface(); as UserConfigurationInterface;
     
 }
 
@@ -103,7 +103,7 @@ var document = document
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
 var userRole = userRole
 
-    var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
+    var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
 ;
     
 

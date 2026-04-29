@@ -62,6 +62,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
         
 import { GameKeyEvent } from "./GameKeyEvent.js";
 
+import { DownKeyEventListenerInterface } from "./DownKeyEventListenerInterface.js";
+
 export class DownKeyEventHandlerBase extends BasicEventHandler {
         
 
@@ -132,7 +134,7 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
 playerGameInput!.onDownKey(eventObject);
@@ -160,7 +162,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -198,7 +200,7 @@ index++;
 
         try {
             
-    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
+    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
 ;
     
 playerGameInput!.onDownKeyEvent(eventObject);
@@ -226,7 +228,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
     
 this.processEvent(eventObject, eventListenerInterface);
     
@@ -251,7 +253,7 @@ index++;
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var downKeyEventListenerInterface: DownKeyEventListenerInterface =  as DownKeyEventListenerInterfaceeventListenerInterface;
+    var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;
 ;
     
 downKeyEventListenerInterface!.onDownKey(eventObject);
@@ -265,7 +267,7 @@ downKeyEventListenerInterface!.onDownKey(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var downKeyEventListenerInterface: DownKeyEventListenerInterface =  as DownKeyEventListenerInterfaceeventListenerInterface;
+    var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;
 ;
     
 downKeyEventListenerInterface!.onDownKeyEvent(eventObject);
@@ -298,7 +300,7 @@ index < this.list.size(); index++)
         {
 
         try {
-            eventListenerInterface=  as EventListenerInterfacethis.list.get(index);;
+            eventListenerInterface= this.list.get(index); as EventListenerInterface;
     
 stringBuffer!.append(LISTENER_LABEL);
     
