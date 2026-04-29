@@ -45,14 +45,14 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
         
 import { PathFindingNodeCostInfoFactoryBaseInterface } from "./PathFindingNodeCostInfoFactoryBaseInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class PathFindingNodeCostInfoFactoryBase
             extends Object
          implements PathFindingNodeCostInfoFactoryBaseInterface {
         
 
     public static readonly NULL_PATH_FINDING_NODE_COST_INFO_FACTORY_BASE: PathFindingNodeCostInfoFactoryBase = new PathFindingNodeCostInfoFactoryBase();
-        
-        
 
                 //@Throws(Error::class)
             
@@ -65,7 +65,8 @@ export class PathFindingNodeCostInfoFactoryBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -78,7 +79,8 @@ export class PathFindingNodeCostInfoFactoryBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

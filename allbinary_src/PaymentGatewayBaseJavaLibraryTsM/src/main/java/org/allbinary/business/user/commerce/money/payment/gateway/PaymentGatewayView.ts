@@ -68,12 +68,8 @@ export class PaymentGatewayView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private paymentGatewayInterface: PaymentGatewayInterface
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
@@ -97,11 +93,9 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
@@ -129,18 +123,14 @@ this.paymentGatewayInterface= paymentGatewayInterface;
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new PaymentGatewayMapping(this.paymentGatewayInterface).
+    var hashMap: HashMap = new PaymentGatewayMapping(this.paymentGatewayInterface).
                             toHashMap()!;
-        
-        
 ;
     
 hashMap!.putAll(this.toHashMap());
     
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
-        
-        
 ;
     
 
@@ -165,7 +155,8 @@ hashMap!.putAll(this.toHashMap());
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

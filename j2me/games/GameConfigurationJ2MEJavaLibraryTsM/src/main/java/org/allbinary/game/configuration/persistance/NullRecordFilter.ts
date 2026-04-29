@@ -46,8 +46,6 @@ export class NullRecordFilter
         
 
     public NULL_RECORD_FILTER: NullRecordFilter = new NullRecordFilter();
-        
-        
 
     public matches(candidate: number[]): boolean{
 var candidate = candidate

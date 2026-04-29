@@ -43,8 +43,6 @@ export class OrientationData
         
 
     private static readonly SINGLETON: OrientationData = new OrientationData();
-        
-        
 
     public static getInstance(): OrientationData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly ORIENTATION_SENSOR_INPUT: string = "Orientation Sensor Input";
-        
-        
 
     public readonly ORIENTATION_TYPE: string = "Orientation Type";
-        
-        
 
 }
                 

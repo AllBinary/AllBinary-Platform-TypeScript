@@ -109,16 +109,10 @@ export class AddFileValidationView extends InventoryItemView implements Validati
         
 
     private static readonly ADDPRODUCT: string = "Add Product";
-        
-        
 
     private static readonly NEXTSTEP: string = "Next Step";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -133,9 +127,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -148,8 +140,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Invalid AdminCommand: ");
@@ -180,8 +170,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                 
 
     var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
-        
-        
 ;
     
 
@@ -208,8 +196,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.itemInterface!.getCategory());
@@ -217,14 +203,10 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
 
     var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-        
-        
 ;
     
 
     var categoryFile: AbFile = new AbFile(fullCategory);
-        
-        
 ;
     
 
@@ -275,8 +257,6 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                                 
 
     var imageFileItemObject: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-        
-        
 ;
     
 
@@ -284,21 +264,15 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
                         
                                     {
                                     
-    var fileItem: FileItem = imageFileItemObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemimageFileItemObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItem);
@@ -375,14 +349,10 @@ var document = document
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -400,8 +370,6 @@ var document = document
                                 
 
     var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
-        
-        
 ;
     
 
@@ -417,15 +385,11 @@ stringBuffer!.append("<br/>");
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-        
-        
 ;
     
 
@@ -439,8 +403,6 @@ stringBuffer!.append("<br/>");
                                 
 
     var categoryFile: AbFile = new AbFile(fullCategory);
-        
-        
 ;
     
 
@@ -486,8 +448,6 @@ stringBuffer!.append(" does not exist.<br />");
 
 
     var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-        
-        
 ;
     
 
@@ -495,27 +455,19 @@ stringBuffer!.append(" does not exist.<br />");
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemanyType;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var fileItemFieldName: string = fileItem!.getFieldName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
@@ -560,8 +512,6 @@ var fileName = fileName
 var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 
@@ -588,20 +538,14 @@ var size = size
                         else {
                             
     var pathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 
     var extension: string = pathUtil!.getExtension(fileName)!;
-        
-        
 ;
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -630,8 +574,6 @@ var size = size
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File Size To Large: ");
@@ -668,8 +610,6 @@ this.processImageFiles();
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File Size To Small: ");
@@ -710,8 +650,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     //var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 
@@ -746,20 +684,14 @@ stringBuffer!.append("<br/>");
                         else {
                             
     var pathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 
     var extension: string = pathUtil!.getExtension(fileName)!;
-        
-        
 ;
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-        
-        
 ;
     
 

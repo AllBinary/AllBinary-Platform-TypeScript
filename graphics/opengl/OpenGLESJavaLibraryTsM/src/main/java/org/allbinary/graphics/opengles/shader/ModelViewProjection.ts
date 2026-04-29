@@ -43,8 +43,6 @@ export class ModelViewProjection
         
 
     private static readonly instance: ModelViewProjection = new ModelViewProjection();
-        
-        
 
     public static getInstance(): ModelViewProjection{
 

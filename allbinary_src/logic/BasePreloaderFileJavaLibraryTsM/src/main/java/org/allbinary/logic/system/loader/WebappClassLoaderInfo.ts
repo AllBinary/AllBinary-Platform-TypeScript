@@ -48,8 +48,6 @@ export class WebappClassLoaderInfo
         
 
     private classLoader: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setLoader(classLoader: ClassLoader){
@@ -65,7 +63,7 @@ WebappClassLoaderInfo.classLoader= classLoader;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return classLoader as ClassLoader;
+                        return  as ClassLoaderclassLoader;
     
 }
 

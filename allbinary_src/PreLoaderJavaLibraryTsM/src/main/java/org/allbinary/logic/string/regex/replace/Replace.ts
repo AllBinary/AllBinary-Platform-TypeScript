@@ -74,14 +74,10 @@ var args = args
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work/allbinary_src/ToolsJavaLibrary/tools");
@@ -90,14 +86,10 @@ URLGLOBALS.init(appUrlGlobals);
     
 
     var testString: string = "\"super gun\" big tank \"goodgunriflegun";
-        
-        
 ;
     
 
     var replace: Replace = new Replace("gun", "abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz");
-        
-        
 ;
     
 console.log("Old String: " +testString);
@@ -108,8 +100,6 @@ console.log("New String: " +testString);
     
 
     var replaceCat: Replace = new Replace("abcdefghijklmnopqrstuxwxyzabcdefghijklmnopqrstuxwxyz", stringUtil!.EMPTY_STRING);
-        
-        
 ;
     
 testString= replaceCat!.all(testString);
@@ -126,43 +116,29 @@ console.log("New String: " +testString);
 
 
     private readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly REPLACERS_: string = "Replacers: ";
-        
-        
 
     private readonly ALL: string = "all";
-        
-        
 
     private readonly FOUND_KEY: string = "found key total: ";
-        
-        
 
-    private readonly hashMap: HashMap<any, any>
+    private readonly hashMap: HashMap
 public constructor (key: string, value: string){
 
             super();
             //var key = key
     //var value = value
-this.hashMap= new HashMap<any, any>();
+this.hashMap= new HashMap();
     
 this.hashMap!.put(
                                                 [
                                                     key;
-        
-        
                                                 ], 
                                                 [
                                                     value;
-        
-        
                                                 ]);
     
 }
@@ -172,13 +148,13 @@ public constructor (keys: string[], values: string[]){
             super();
             //var keys = keys
     //var values = values
-this.hashMap= new HashMap<any, any>();
+this.hashMap= new HashMap();
     
 this.hashMap!.put(keys, values);
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -203,20 +179,14 @@ var replace = replace
 var total = total
 
     var newStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var totalNumberOfReplaces: number = 0;
-        
-        
 ;
     
 
     var keySet: Set = this.hashMap!.keys!;
-        
-        
 ;
     
 
@@ -229,15 +199,11 @@ var total = total
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -246,24 +212,18 @@ var total = total
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
-keys= keyArray[index2]! as Array<String?>;
+keys=  as Array<String?>keyArray[index2]!;
     
-values= this.hashMap!.get(keys as Object); as Array<String?>;
+values=  as Array<String?>this.hashMap!.get(keys as Object);;
     
 
     var foundTotal: number = 0;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -271,8 +231,6 @@ values= this.hashMap!.get(keys as Object); as Array<String?>;
         {
 
     var begin: number = replace.indexOf(keys[0]!, index)!;
-        
-        
 ;
     
 
@@ -292,8 +250,6 @@ values= this.hashMap!.get(keys as Object); as Array<String?>;
                                 
 
     var end: number = begin +keys[0]!.length();
-        
-        
 ;
     
 newStringBuffer!.delete(0, newStringBuffer!.length());
@@ -314,8 +270,6 @@ replace= newStringBuffer!.toString();
                                     {
                                     
     var begin2: number = replace.indexOf(keys[1]!, index)!;
-        
-        
 ;
     
 
@@ -324,8 +278,6 @@ replace= newStringBuffer!.toString();
                                     {
                                     
     var end2: number = begin2 +keys[1]!.length();
-        
-        
 ;
     
 newStringBuffer!.delete(0, newStringBuffer!.length());
@@ -401,20 +353,14 @@ totalNumberOfReplaces++;
 var replace = replace
 
     var newStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var totalNumberOfReplaces: number = 0;
-        
-        
 ;
     
 
     var keySet: Set = this.hashMap!.keys!;
-        
-        
 ;
     
 
@@ -427,15 +373,11 @@ var replace = replace
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -444,18 +386,14 @@ var replace = replace
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
-key= keyArray[index2]! as String;
+key=  as StringkeyArray[index2]!;
     
-value= this.hashMap!.get(key as Object); as String;
+value=  as Stringthis.hashMap!.get(key as Object);;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -465,8 +403,6 @@ newStringBuffer!.delete(0, newStringBuffer!.length());
     
 
     var begin: number = replace.indexOf(key, index)!;
-        
-        
 ;
     
 
@@ -477,8 +413,6 @@ newStringBuffer!.delete(0, newStringBuffer!.length());
     
 
     var end: number = replace.indexOf('\n', begin +key.length) +1;
-        
-        
 ;
     
 

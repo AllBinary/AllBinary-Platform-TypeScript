@@ -57,8 +57,6 @@ export class ShowTitleProgressBarRunnable extends ProgressRunnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super(midletActivity, progressCanvas);
                     var midletActivity = midletActivity
@@ -70,9 +68,7 @@ var progressCanvas = progressCanvas
 }
 
 
-    private readonly FADE_IN_HALF: number[] = intArrayOf(TransistionTypes.getInstance()!.FADE_IN_TO_HALF_ALPHA,TransistionTypes.getInstance()!.FADE_IN_FROM_HALF_ALPHA);
-        
-        
+    private readonly FADE_IN_HALF: number[] = [TransistionTypes.getInstance()!.FADE_IN_TO_HALF_ALPHA,TransistionTypes.getInstance()!.FADE_IN_FROM_HALF_ALPHA];
 
     public run(){
 
@@ -85,8 +81,6 @@ var progressCanvas = progressCanvas
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

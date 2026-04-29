@@ -49,8 +49,6 @@ export class ImageModifierUtil
         
 
     private static readonly instance: ImageModifierUtil = new ImageModifierUtil();
-        
-        
 
     public static getInstanceOrCreate(): ImageModifierUtil{
 

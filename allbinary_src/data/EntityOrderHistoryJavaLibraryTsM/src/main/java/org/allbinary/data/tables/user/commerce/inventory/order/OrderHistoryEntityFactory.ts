@@ -53,8 +53,6 @@ export class OrderHistoryEntityFactory
     public static getInstance(): OrderHistoryEntity{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -71,8 +69,6 @@ export class OrderHistoryEntityFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

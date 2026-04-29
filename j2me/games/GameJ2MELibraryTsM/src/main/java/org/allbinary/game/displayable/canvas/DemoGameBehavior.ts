@@ -60,8 +60,6 @@ export class DemoGameBehavior
         
 
     private static readonly instance: DemoGameBehavior = new DemoGameBehavior();
-        
-        
 
     public static getInstance(): DemoGameBehavior{
 
@@ -74,8 +72,6 @@ export class DemoGameBehavior
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -141,8 +137,6 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
     //var allBinaryGameCanvas = allBinaryGameCanvas
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonStrings!.RUN);

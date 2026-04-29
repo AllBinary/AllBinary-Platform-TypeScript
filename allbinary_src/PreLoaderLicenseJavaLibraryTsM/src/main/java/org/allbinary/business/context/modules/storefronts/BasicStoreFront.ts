@@ -128,71 +128,69 @@ public constructor (){
             super();
         }
 
-public constructor (storeHashMap: HashMap<any, any>){
+public constructor (storeHashMap: HashMap){
 
             super();
         var storeHashMap = storeHashMap
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-        
-        
 ;
     
-this.name= storeHashMap!.get(storeFrontData!.NAME); as String;
+this.name=  as StringstoreHashMap!.get(storeFrontData!.NAME);;
     
-this.userName= storeHashMap!.get(UserData.USERNAME); as String;
+this.userName=  as StringstoreHashMap!.get(UserData.USERNAME);;
     
-this.basketName= storeHashMap!.get(storeFrontData!.NAME); as String;
+this.basketName=  as StringstoreHashMap!.get(storeFrontData!.NAME);;
     
-this.homeHostName= storeHashMap!.get(storeFrontData!.HOMEHOSTNAME); as String;
+this.homeHostName=  as StringstoreHashMap!.get(storeFrontData!.HOMEHOSTNAME);;
     
-this.homeHostNamePath= storeHashMap!.get(storeFrontData!.HOMEHOSTNAMEPATH); as String;
+this.homeHostNamePath=  as StringstoreHashMap!.get(storeFrontData!.HOMEHOSTNAMEPATH);;
     
-this.hostName= storeHashMap!.get(storeFrontData!.HOSTNAME); as String;
+this.hostName=  as StringstoreHashMap!.get(storeFrontData!.HOSTNAME);;
     
-this.hostNamePath= storeHashMap!.get(storeFrontData!.HOSTNAMEPATH); as String;
+this.hostNamePath=  as StringstoreHashMap!.get(storeFrontData!.HOSTNAMEPATH);;
     
-this.testHomeHostName= storeHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME); as String;
+this.testHomeHostName=  as StringstoreHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME);;
     
-this.testHomeHostNamePath= storeHashMap!.get(storeFrontData!.TESTHOMEHOSTNAMEPATH); as String;
+this.testHomeHostNamePath=  as StringstoreHashMap!.get(storeFrontData!.TESTHOMEHOSTNAMEPATH);;
     
-this.testHostName= storeHashMap!.get(storeFrontData!.TESTHOSTNAME); as String;
+this.testHostName=  as StringstoreHashMap!.get(storeFrontData!.TESTHOSTNAME);;
     
-this.testHostNamePath= storeHashMap!.get(storeFrontData!.TESTHOSTNAMEPATH); as String;
+this.testHostNamePath=  as StringstoreHashMap!.get(storeFrontData!.TESTHOSTNAMEPATH);;
     
-this.imagePath= storeHashMap!.get(storeFrontData!.IMAGEPATH); as String;
+this.imagePath=  as StringstoreHashMap!.get(storeFrontData!.IMAGEPATH);;
     
-this.staticPath= storeHashMap!.get(storeFrontData!.STATICPATH); as String;
+this.staticPath=  as StringstoreHashMap!.get(storeFrontData!.STATICPATH);;
     
-this.categoryPath= storeHashMap!.get(storeFrontData!.CATEGORYPATH); as String;
+this.categoryPath=  as StringstoreHashMap!.get(storeFrontData!.CATEGORYPATH);;
     
-this.inventoryControl= storeHashMap!.get(storeFrontData!.INVENTORYCONTROL); as String;
+this.inventoryControl=  as StringstoreHashMap!.get(storeFrontData!.INVENTORYCONTROL);;
     
-this.subStores= storeHashMap!.get(storeFrontData!.SUBSTORES); as String;
+this.subStores=  as StringstoreHashMap!.get(storeFrontData!.SUBSTORES);;
     
-this.tagLocation= storeHashMap!.get(storeFrontData!.TAGLOCATION); as String;
+this.tagLocation=  as StringstoreHashMap!.get(storeFrontData!.TAGLOCATION);;
     
-this.packageLocation= storeHashMap!.get(storeFrontData!.PACKAGELOCATION); as String;
+this.packageLocation=  as StringstoreHashMap!.get(storeFrontData!.PACKAGELOCATION);;
     
-this.ftp= storeHashMap!.get(storeFrontData!.FTP); as String;
+this.ftp=  as StringstoreHashMap!.get(storeFrontData!.FTP);;
     
-this.ftpPath= storeHashMap!.get(storeFrontData!.FTPPATH); as String;
+this.ftpPath=  as StringstoreHashMap!.get(storeFrontData!.FTPPATH);;
     
-this.ftpUserName= storeHashMap!.get(storeFrontData!.FTPUSERNAME); as String;
+this.ftpUserName=  as StringstoreHashMap!.get(storeFrontData!.FTPUSERNAME);;
     
-this.ftpPassword= storeHashMap!.get(storeFrontData!.FTPPASSWORD); as String;
+this.ftpPassword=  as StringstoreHashMap!.get(storeFrontData!.FTPPASSWORD);;
     
-this.testFtp= storeHashMap!.get(storeFrontData!.TESTFTP); as String;
+this.testFtp=  as StringstoreHashMap!.get(storeFrontData!.TESTFTP);;
     
-this.testFtpPath= storeHashMap!.get(storeFrontData!.TESTFTPPATH); as String;
+this.testFtpPath=  as StringstoreHashMap!.get(storeFrontData!.TESTFTPPATH);;
     
-this.testFtpUserName= storeHashMap!.get(storeFrontData!.TESTFTPUSERNAME); as String;
+this.testFtpUserName=  as StringstoreHashMap!.get(storeFrontData!.TESTFTPUSERNAME);;
     
-this.testFtpPassword= storeHashMap!.get(storeFrontData!.TESTFTPPASSWORD); as String;
+this.testFtpPassword=  as StringstoreHashMap!.get(storeFrontData!.TESTFTPPASSWORD);;
     
-this.timeCreated= storeHashMap!.get(EntryData.getInstance()!.TIMECREATED); as String;
+this.timeCreated=  as StringstoreHashMap!.get(EntryData.getInstance()!.TIMECREATED);;
     
-this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as String;
+this.lastModified=  as StringstoreHashMap!.get(EntryData.getInstance()!.LASTMODIFIED);;
     
 }
 
@@ -212,8 +210,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
     var location: string = 
                 null
             ;
-        
-        
 ;
     
 
@@ -245,8 +241,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
     var location: string = 
                 null
             ;
-        
-        
 ;
     
 
@@ -278,8 +272,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
     var location: string = 
                 null
             ;
-        
-        
 ;
     
 
@@ -311,8 +303,6 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
     var location: string = 
                 null
             ;
-        
-        
 ;
     
 
@@ -486,14 +476,10 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
         try {
             
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SEMICOLON);
-        
-        
 ;
     
 
     var subStoreVector: BasicArrayList = tokenizer.getTokens(this.subStores, new BasicArrayListD())!;
-        
-        
 ;
     
 
@@ -509,7 +495,8 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -43,8 +43,6 @@ export class AllMotionRecognizer
         
 
     private index: number = 0;
-        
-        
 
     private readonly id: number
 public constructor (){

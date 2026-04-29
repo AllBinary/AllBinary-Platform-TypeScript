@@ -49,8 +49,6 @@ export class BasicUserRole
         
 
     private static readonly roleVector: Vector<any> = new Vector<any>();
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -59,14 +57,10 @@ export class BasicUserRole
 var role = role
 
     var roleVector: Vector<any> = BasicUserRole.getAll()!;
-        
-        
 ;
     
 
     var size: number = roleVector!.length!;
-        
-        
 ;
     
 
@@ -75,14 +69,10 @@ var role = role
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index); as BasicUserRole;
-        
-        
+    var userRole: BasicUserRole =  as BasicUserRoleroleVector!.get(index);;
 ;
     
 
@@ -103,7 +93,8 @@ index < size; index++)
 
 
 
-                            throw new Error("Unable to get role - Unknown Role")
+                            throw new Error("Unable to get role - Unknown Role");
+                    
 }
 
 

@@ -54,14 +54,10 @@ export class DomNodeListHelper
 var nodeList = nodeList
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -70,8 +66,6 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 vector.add(DomNodeHelper.getTextNodeValue(nodeList!.item(index)));

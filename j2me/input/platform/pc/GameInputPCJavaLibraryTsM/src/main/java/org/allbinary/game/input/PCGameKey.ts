@@ -50,9 +50,7 @@ export class PCGameKey extends Input {
     public static getString(keyCode: number): string{
 var keyCode = keyCode
 
-    var input: Input = InputFactory.getInstance()!.getInstance(keyCode)!;
-        
-        
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
 ;
     
 
@@ -92,8 +90,6 @@ var name = name
                     
 
     var id: number = this.getId()!;
-        
-        
 ;
     
 

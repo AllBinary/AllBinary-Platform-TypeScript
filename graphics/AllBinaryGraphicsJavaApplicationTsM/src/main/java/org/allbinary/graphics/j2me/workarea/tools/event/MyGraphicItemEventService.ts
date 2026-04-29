@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EventListenerList } from "./EventListenerList.js";
+
 import { MyGraphicItemEventListener } from "./MyGraphicItemEventListener.js";
 
 import { MyGraphicItemEvent } from "./MyGraphicItemEvent.js";
@@ -47,33 +49,21 @@ export class MyGraphicItemEventService
         
 
     private listenerList: javax.swing.event.EventListenerList = new javax.swing.event.EventListenerList();
-        
-        
 
     public DELETE: string = "delete";
-        
-        
 
     public DESELECT: string = "deselect";
-        
-        
 
     public SELECT: string = "select";
-        
-        
 
     public DUPLICATE: string = "duplicate";
-        
-        
 
     public ROTATE: string = "rotate";
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
+listenerList!.add( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
     
 }
 
@@ -81,7 +71,7 @@ listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventLi
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
+listenerList!.remove( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
     
 }
 
@@ -93,8 +83,6 @@ listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.Even
 var evt = evt
 
     var listeners: any[] = listenerList!.getListenerList()!;
-        
-        
 ;
     
 
@@ -103,8 +91,6 @@ var evt = evt
 
                         for (
     var i: number = 0;
-        
-        
 i < listeners.length; )
         {
 
@@ -115,7 +101,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(SELECT) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyGraphicItemEventListener
+                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
 .
                     highlight(evt);
     
@@ -126,7 +112,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(DESELECT) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyGraphicItemEventListener
+                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
 .
                     deselect(evt);
     
@@ -137,7 +123,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(DELETE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyGraphicItemEventListener
+                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
 .
                     delete(evt);
     
@@ -148,7 +134,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(DUPLICATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyGraphicItemEventListener
+                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
 .
                     duplicate(evt);
     
@@ -159,7 +145,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(ROTATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyGraphicItemEventListener
+                                     =  as MyGraphicItemEventListenerlisteners[i +1]!
 .
                     rotate(evt);
     

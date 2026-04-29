@@ -43,8 +43,6 @@ export class AdvertisementCampaignData
         
 
     private static readonly instance: AdvertisementCampaignData = new AdvertisementCampaignData();
-        
-        
 
     public static getInstance(): AdvertisementCampaignData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly NAME: string = "ADVERTISEMENTCAMPAIGN_NAME";
-        
-        
 
     public readonly DESCRIPTION: string = "ADVERTISEMENTCAMPAIGN_DESCRIPTION";
-        
-        
 
     public readonly CONFIG: string = "ADVERTISEMENTCAMPAIGN_CONFIG";
-        
-        
 
 }
                 

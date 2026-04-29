@@ -58,12 +58,8 @@ export class SmallInsert
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private fileName: string
 
@@ -85,14 +81,10 @@ var text = text
         try {
             
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-        
-        
 ;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
-        
-        
 ;
     
 idOutData!.writeBytes(text +this.string);
@@ -134,8 +126,6 @@ var after = after
         try {
             
     var index: number = this.string.indexOf(after)!;
-        
-        
 ;
     
 
@@ -157,26 +147,18 @@ index= index +after.length;
     
 
     var start: string = this.string.substring(0, index)!;
-        
-        
 ;
     
 
     var end: string = this.string.substring(index +1, this.string.length)!;
-        
-        
 ;
     
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-        
-        
 ;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
-        
-        
 ;
     
 idOutData!.writeBytes(start +text +end);
@@ -221,14 +203,10 @@ var text = text
         try {
             
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-        
-        
 ;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
-        
-        
 ;
     
 idOutData!.writeBytes(this.string +text);

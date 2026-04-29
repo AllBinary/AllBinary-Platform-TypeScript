@@ -70,12 +70,8 @@ export class AffiliateSalesEntity extends AbSqlBean implements AffiliateSalesEnt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "affiliate";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -123,14 +119,10 @@ var value = value
     public createTableStatement(): string{
 
     var entryData: EntryData = EntryData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -153,8 +145,6 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
     public createTable(): string{
 
     var returnStr: string = super.createTable(this.createTableStatement())!;
-        
-        
 ;
     
 
@@ -166,9 +156,9 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.ID) as String, updatedValues);
+super.updateWhere(EntryData.getInstance()!.ID,  as StringupdatedValues!.get(EntryData.getInstance()!.ID), updatedValues);
     
 }
 

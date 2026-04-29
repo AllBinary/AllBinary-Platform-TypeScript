@@ -71,8 +71,6 @@ export class RootContextView extends HttpStoreComponentView implements Transform
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -108,14 +106,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var viewName: string = this.getName()!;
-        
-        
 ;
     
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, viewName, this.getTransformInfoInterface())!;
-        
-        
 ;
     
 
@@ -140,7 +134,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -153,14 +148,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-        
-        
 ;
     
 
     var componentsVector: Vector = objectConfig!.getTransforms()!;
-        
-        
 ;
     
 
@@ -170,7 +161,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("Template View Not Set - No Components")
+                            throw new Error("Template View Not Set - No Components");
+                    
 
                                     }
                                 
@@ -181,20 +173,17 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("To Many Root Template Views: " +componentsVector!.length)
+                            throw new Error("To Many Root Template Views: " +componentsVector!.length);
+                    
 
                                     }
                                 
 
-    var transformInfoInterface: TransformInfo = componentsVector!.get(0); as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo =  as TransformInfocomponentsVector!.get(0);;
 ;
     
 
     var viewName: string = transformInfoInterface!.getName()!;
-        
-        
 ;
     
 
@@ -213,7 +202,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("Template View Not Set - No View Name")
+                            throw new Error("Template View Not Set - No View Name");
+                    
 
                                     }
                                 
@@ -239,7 +229,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

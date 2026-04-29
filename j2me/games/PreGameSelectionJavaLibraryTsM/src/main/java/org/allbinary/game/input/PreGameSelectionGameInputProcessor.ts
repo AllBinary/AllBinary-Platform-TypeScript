@@ -39,18 +39,6 @@ import { AllBinaryGameCanvas } from "../../../../org/allbinary/game/displayable/
 import { PreGameSelectorPaintable } from "../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js";
 
     
-import { GameInputProcessorComposite } from "../../../../org/allbinary/game/input/GameInputProcessorComposite.js";
-
-    
-import { GameInputProcessorInterface } from "../../../../org/allbinary/game/input/GameInputProcessorInterface.js";
-
-    
-import { PlayerGameInput } from "../../../../org/allbinary/game/input/PlayerGameInput.js";
-
-    
-import { PlayerGameInputCompositeInterface } from "../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js";
-
-    
 import { GameKeyEventHandler } from "../../../../org/allbinary/game/input/event/GameKeyEventHandler.js";
 
     
@@ -78,12 +66,6 @@ import { SelectSound } from "../../../../org/allbinary/media/audio/SelectSound.j
 import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
 
     
-import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryThreadPool.js";
-
-    
-import { SoundThreadPool } from "../../../../org/allbinary/thread/SoundThreadPool.js";
-
-    
 import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
@@ -106,20 +88,22 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
+
+import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
+
+import { PlayerGameInput } from "./PlayerGameInput.js";
+
 export class PreGameSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly gameCanvas: AllBinaryGameCanvas
 
     private readonly preGameSelectorPaintable: PreGameSelectorPaintable
 
     private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
-        
-        
 
     private readonly nextGameState: GameState
 
@@ -127,7 +111,7 @@ export class PreGameSelectionGameInputProcessor extends Processor implements Gam
 
     private readonly lockedIndex: number
 
-    private readonly abRunnable: ABRunnable = new object: ABRunnable()
+    private readonly abRunnable: ABRunnable = new ABRunnable()
                                 {
                                 
     public run(){
@@ -151,14 +135,10 @@ this.setRunning(false);
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -169,8 +149,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             ;
-        
-        
 public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
 
             super();
@@ -205,8 +183,6 @@ this.getPlayerGameInput()!.update();
 var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -215,20 +191,14 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.get(index)!;
-        
-        
 ;
     
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
-        
-        
 ;
     
 
@@ -236,7 +206,7 @@ index < size; index++)
                         
                                     {
                                     
-                        if(this.inputTimeHelper!.isTime())
+                        if(this.inputTimeHelper!.isTimeTNT())
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
@@ -258,12 +228,10 @@ break;
                                     {
                                     
     var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;
-        
-        
 ;
     
 
-                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature();)
+                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked();)
                         
                                     {
                                     
@@ -274,8 +242,6 @@ break;
     
 
     var thread: Thread = new Thread(abRunnable);
-        
-        
 ;
     
 thread.start();

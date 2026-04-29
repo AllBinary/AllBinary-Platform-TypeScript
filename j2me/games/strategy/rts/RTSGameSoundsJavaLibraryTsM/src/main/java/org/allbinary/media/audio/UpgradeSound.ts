@@ -46,8 +46,6 @@ export class UpgradeSound extends CompositeSound {
         
 
     private soundInterface: Sound = new UpgradeSound();
-        
-        
 
     public static getInstance(): Sound{
 

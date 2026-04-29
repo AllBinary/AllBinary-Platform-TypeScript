@@ -59,7 +59,7 @@ import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPo
 export interface GeographicMapInterface {
         
 
-    public getId(): Integer
+    public getId(): number
 
     public getName(): string
 
@@ -73,17 +73,17 @@ export interface GeographicMapInterface {
 
                 //@Throws(Error::class)
             
-    getCellPositionAt(x: number, y: number): GeographicMapCellPosition
+    getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition
 
                 //@Throws(Error::class)
             
-    getCellPositionAtNoThrow(x: number, y: number): GeographicMapCellPosition
+    getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition
 
     getCellTypeFromMapCellTypeInt(cellTypeId: number): number
 
                 //@Throws(Error::class)
             
-    getCellTypeAt(x: number, y: number): GeographicMapCellType
+    getCellTypeAtXY(x: number, y: number): GeographicMapCellType
 
                 //@Throws(Error::class)
             

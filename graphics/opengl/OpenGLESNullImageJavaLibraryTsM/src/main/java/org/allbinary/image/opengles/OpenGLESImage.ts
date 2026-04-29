@@ -73,40 +73,28 @@ import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
 
+import { OpenGLESImageProperties } from "./OpenGLESImageProperties.js";
+
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 
     public static readonly NULL_OPENGL_IMAGE: OpenGLESImage = new OpenGLESImage(NullCanvas.NULL_IMAGE, PlatformBitmapBaseFactory.NULL_PLATFORM_BITMAP_BASE_FACTORY, PlatformTextureBaseFactory.NULL_PLATFORM_TEXTURE_BASE_FACTORY);
-        
-        
 
     public static readonly texture2dList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public static readonly TYPE: number = 4;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly textureFactory: PlatformTextureBaseFactory
 
     public readonly openGLBitmap: PlatformBitmapBase
 
     public imageProcessor: OpenGLESImageProcessor = OpenGLESImageProcessor.getInstance()!;
-        
-        
 
     public openGLESImageTranslate: OpenGLESImageTranslate = OpenGLESImageTranslate.getInstance()!;
-        
-        
 
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
-        
-        
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();
@@ -127,7 +115,8 @@ var gl = gl
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

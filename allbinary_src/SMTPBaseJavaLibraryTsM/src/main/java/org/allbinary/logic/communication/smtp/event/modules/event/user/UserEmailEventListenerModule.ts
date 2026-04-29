@@ -64,8 +64,6 @@ export class UserEmailEventListenerModule
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userInterface: UserInterface
 public constructor (userInterface: UserInterface){
@@ -83,17 +81,13 @@ this.userInterface= userInterface;
 var emailEvent = emailEvent
 
     var to: string = this.userInterface!.getSecondaryEmail()!;
-        
-        
 ;
     
 
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
-        
-        
 ;
     
-EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
+EmailQueueFactory.getInstance()!.offer( as EmailInterfaceemail.getEmail());
     
 }
 
@@ -113,17 +107,13 @@ var emailEvent = emailEvent
                                 
 
     var to: string = this.userInterface!.getMainEmail()!;
-        
-        
 ;
     
 
     var email: BasicEmail = new BasicEmail(emailEvent!.getEmailInfo(), to);
-        
-        
 ;
     
-EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
+EmailQueueFactory.getInstance()!.offer( as EmailInterfaceemail.getEmail());
     
 }
 

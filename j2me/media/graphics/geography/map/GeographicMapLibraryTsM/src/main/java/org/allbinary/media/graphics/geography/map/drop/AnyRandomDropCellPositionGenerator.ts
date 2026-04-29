@@ -73,12 +73,8 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
         
 
     readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     geographicMapInterface: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -89,26 +85,18 @@ this.geographicMapInterface= geographicMapInterface;
     
 
     var basicGeographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-        
-        
 ;
     
 
     var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var total: number = tiledLayer!.getColumns() *tiledLayer!.getRows();
-        
-        
 ;
     
 
@@ -129,15 +117,13 @@ this.geographicMapInterface= geographicMapInterface;
 
                         for (
     var index: number = total;
-        
-        
 --index >= 0; )
         {
 randomColumn= randomFactory!.getAbsoluteNextInt(tiledLayer!.getColumns());
     
 randomRow= randomFactory!.getAbsoluteNextInt(tiledLayer!.getRows());
     
-geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getInstance(randomColumn, randomRow);
+geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getAt(randomColumn, randomRow);
     
 
                         if(this.isDropAllowedAt(geographicMapCellPosition))

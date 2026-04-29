@@ -29,8 +29,6 @@ export class OpenGLStrings
         
 
     private static readonly instance: OpenGLStrings = new OpenGLStrings();
-        
-        
 
     public static getInstance(): OpenGLStrings{
 
@@ -43,12 +41,8 @@ export class OpenGLStrings
 
 
     public readonly GL_ERROR_LABEL: string = "GLError: ";
-        
-        
 
     public readonly SET: string = "set(GL10)";
-        
-        
 
 }
                 

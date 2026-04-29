@@ -79,8 +79,6 @@ export class OpenGLESGL11ExtImage extends OpenGLESImage {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private a: number= 0
 
@@ -97,9 +95,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
 this.onDisplayChangeEvent(
                             null);
     
-this.rectangle= intArrayOf(0,this.getHeight(), this.getWidth(),  -this.getHeight();;
-        
-        );
+this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();;];
     
 }
 
@@ -129,9 +125,7 @@ this.onDisplayChangeEvent(
                             null);
     
 
-    var gl11: GL11 = gl as GL11;
-        
-        
+    var gl11: GL11 =  as GL11gl;
 ;
     
 
@@ -161,7 +155,7 @@ gl.glEnable(GL10.GL_TEXTURE_2D);
     
 gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
     
-gl = glgl as GL11Ext
+gl =  as GL11Extglgl
 gl.
                     glDrawTexfOES(x, a -y, z, this.getWidth(), this.getHeight());
     

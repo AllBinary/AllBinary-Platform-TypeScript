@@ -73,8 +73,6 @@ export class CommonGameInitialization extends BaseGameInitialization {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 protected constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
             super(resourceInitializationArray, portion);
                         //var resourceInitializationArray = resourceInitializationArray
@@ -96,8 +94,6 @@ super.init(abeClientInformation, commandListener, level);
     
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -108,21 +104,19 @@ super.init(abeClientInformation, commandListener, level);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 SmallIntegerSingletonFactory.getInstance()!.init();
     
-progressCanvas!.addPortion(50, "Integers");
+progressCanvas!.addNormalPortion(50, "Integers");
     
 PointFactory.getInstance()!.init();
     
-progressCanvas!.addPortion(50, "Points");
+progressCanvas!.addNormalPortion(50, "Points");
     
 AngleFactory.getInstance();
     
-progressCanvas!.addPortion(50, "Angles");
+progressCanvas!.addNormalPortion(50, "Angles");
     
 this.initGame();
     
@@ -142,7 +136,8 @@ super.resourceInitialization(level);
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

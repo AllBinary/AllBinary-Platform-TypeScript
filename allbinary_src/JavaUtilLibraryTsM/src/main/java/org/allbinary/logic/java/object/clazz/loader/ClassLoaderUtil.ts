@@ -48,8 +48,6 @@ export class ClassLoaderUtil
 var anyType = anyType
 
     var classLoader: ClassLoader = anyType!.constructor.name.java.classLoader!;
-        
-        
 ;
     
 
@@ -70,7 +68,8 @@ var anyType = anyType
 
 
 
-                            throw new Error("Unable to get ClassLoader")
+                            throw new Error("Unable to get ClassLoader");
+                    
 }
 
 private constructor (){

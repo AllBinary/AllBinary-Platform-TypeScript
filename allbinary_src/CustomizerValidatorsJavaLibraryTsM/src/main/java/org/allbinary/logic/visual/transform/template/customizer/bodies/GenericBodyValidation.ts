@@ -88,8 +88,6 @@ export class GenericBodyValidation extends Validation implements DomNodeInterfac
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private body: string
 public constructor (){
@@ -105,8 +103,6 @@ public constructor (document: Document){
         var document = document
 
     var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
@@ -115,20 +111,14 @@ public constructor (document: Document){
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var aBodyNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
     var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
-        
-        
 ;
     
 this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
@@ -137,7 +127,7 @@ this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
 
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -148,9 +138,9 @@ this.getFormData(hashMap);
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
+this.body=  as StringhashMap!.get(BodyData.getInstance()!.NAME);;
     
 }
 
@@ -160,8 +150,6 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -226,8 +214,6 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -301,8 +287,6 @@ var document = document
 var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
-        
-        
 ;
     
 

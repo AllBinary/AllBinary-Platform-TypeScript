@@ -43,8 +43,6 @@ export class StaticPagesDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "staticpagesbinitdata.dat";
-        
-        
 public constructor (){
             super(INITFILE, true);
                     

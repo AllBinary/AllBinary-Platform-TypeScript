@@ -49,20 +49,14 @@ export class Driver
          {
         
 
-    public static readonly NULL_DRIVER: Driver = new Driver(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), new Aggression(SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0), SmallIntegerSingletonFactory.getInstance()!.getInstance(0)));
-        
-        
+    public static readonly NULL_DRIVER: Driver = new Driver(SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0), new Aggression(SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0)));
 
-    private turnSpeed: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(0)!;
-        
-        
+    private turnSpeed: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private trackPathSelectionSkill: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(0)!;
-        
-        
+    private trackPathSelectionSkill: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     private aggression: Aggression
-public constructor (turnSpeed: Integer, trackPathSelectionSkill: Integer, aggression: Aggression){
+public constructor (turnSpeed: number, trackPathSelectionSkill: number, aggression: Aggression){
 
             super();
         var turnSpeed = turnSpeed
@@ -77,7 +71,7 @@ this.aggression= aggression;
 }
 
 
-    public getTurnSpeed(): Integer{
+    public getTurnSpeed(): number{
 
 
 
@@ -87,14 +81,14 @@ this.aggression= aggression;
 }
 
 
-    public setTurnSpeed(turnSpeed: Integer){
+    public setTurnSpeed(turnSpeed: number){
 var turnSpeed = turnSpeed
 this.turnSpeed= turnSpeed;
     
 }
 
 
-    public getTrackPathSelectionSkill(): Integer{
+    public getTrackPathSelectionSkill(): number{
 
 
 
@@ -104,7 +98,7 @@ this.turnSpeed= turnSpeed;
 }
 
 
-    public setTrackPathSelectionSkill(trackPathSelectionSkill: Integer){
+    public setTrackPathSelectionSkill(trackPathSelectionSkill: number){
 var trackPathSelectionSkill = trackPathSelectionSkill
 this.trackPathSelectionSkill= trackPathSelectionSkill;
     

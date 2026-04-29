@@ -55,12 +55,8 @@ export class NullAnimationFactory
         
 
     public NULL_NOT_FOR_USE_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
-        
-        
 
     private NULL_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
-        
-        
 
     public static getFactoryInstance(): NullAnimationFactory{
 
@@ -72,10 +68,10 @@ export class NullAnimationFactory
 }
 
 
-    private readonly NULL_ANIMATION: Animation = new object: Animation()
+    private readonly NULL_ANIMATION: Animation = new Animation()
                                 {
                                 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -83,12 +79,8 @@ export class NullAnimationFactory
 
                                 }
                             ;
-        
-        
 
     public readonly EMPTY_ARRAY: Animation[] = [];
-        
-        
 private constructor (){
 
             super();
@@ -108,7 +100,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface
 
 

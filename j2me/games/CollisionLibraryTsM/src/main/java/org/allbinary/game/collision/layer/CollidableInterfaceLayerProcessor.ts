@@ -64,14 +64,12 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
+    public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface = layerInterface as CollidableInterfaceCompositeInterface;
-        
-        
+    var collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface =  as CollidableInterfaceCompositeInterfacelayerInterface;
 ;
     
 

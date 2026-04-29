@@ -45,12 +45,8 @@ export class HtmlLengthInput extends HtmlValueInput {
         
 
     private readonly MAXLENGTH: string = "MAXLENGTH";
-        
-        
 
     private readonly SIZE: string = "SIZE";
-        
-        
 
     private length: string
 
@@ -69,7 +65,7 @@ var after = after
 }
 
 
-    public setMaxLength(length: Integer){
+    public setMaxLength(length: number){
 var length = length
 this.length= length.toString();
     
@@ -78,7 +74,7 @@ addAttribute(this.MAXLENGTH, this.length);
 }
 
 
-    public setSize(size: Integer){
+    public setSize(size: number){
 var size = size
 this.size= size.toString();
     

@@ -63,18 +63,16 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
         
 import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class AbstractInputAutomationWorker
             extends Object
          implements RunnableInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private index: number= 0
 
@@ -198,7 +196,8 @@ this.getCaptureWorker()!.setRunning(false);
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -211,20 +210,18 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
 
         while(this.isRunning())
         {
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 this.process();
     
 this.index++;
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed() +" Index: " +this.index, this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT() +" Index: " +this.index, this, this.commonStrings!.RUN);
     
 }
 

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DemoGameMidletState } from "./DemoGameMidletState.js";
+
 export class DemoGameMidletStateFactory
             extends Object
          {
         
 
     private STATE: DemoGameMidletStateFactory = new DemoGameMidletStateFactory();
-        
-        
 
     public static getInstance(): DemoGameMidletStateFactory{
 
@@ -57,20 +57,12 @@ export class DemoGameMidletStateFactory
 
 
     public readonly NONE: DemoGameMidletState = new DemoGameMidletState();
-        
-        
 
     public readonly START_DEMO: DemoGameMidletState = new DemoGameMidletState();
-        
-        
 
     public readonly START_GAME: DemoGameMidletState = new DemoGameMidletState();
-        
-        
 
     public readonly START_INPUT_MAPPING: DemoGameMidletState = new DemoGameMidletState();
-        
-        
 private constructor (){
 
             super();

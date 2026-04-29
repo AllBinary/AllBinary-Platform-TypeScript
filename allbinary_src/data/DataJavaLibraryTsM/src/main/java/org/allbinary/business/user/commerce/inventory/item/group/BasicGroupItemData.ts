@@ -43,44 +43,24 @@ export class BasicGroupItemData
         
 
     public static readonly ITEM_ONE: string = "BASICGROUPITEM_ONE";
-        
-        
 
     public static readonly ITEM_TWO: string = "BASICGROUPITEM_TWO";
-        
-        
 
     public static readonly ITEM_THREE: string = "BASICGROUPITEM_THREE";
-        
-        
 
     public static readonly ITEM_FOUR: string = "BASICGROUPITEM_FOUR";
-        
-        
 
     public static readonly ITEM_FIVE: string = "BASICGROUPITEM_FIVE";
-        
-        
 
     public static readonly ITEM_SIX: string = "BASICGROUPITEM_SIX";
-        
-        
 
     public static readonly ITEM_SEVEN: string = "BASICGROUPITEM_SEVEN";
-        
-        
 
     public static readonly ITEM_EIGHT: string = "BASICGROUPITEM_EIGHT";
-        
-        
 
     public static readonly ITEM_NINE: string = "BASICGROUPITEM_NINE";
-        
-        
 
     public static readonly ITEM_TEN: string = "BASICGROUPITEM_TEN";
-        
-        
 
 }
                 

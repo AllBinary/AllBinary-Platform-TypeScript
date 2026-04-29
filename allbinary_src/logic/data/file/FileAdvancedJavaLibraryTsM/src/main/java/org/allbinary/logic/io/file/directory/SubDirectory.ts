@@ -60,8 +60,6 @@ export class SubDirectory
         
 
     private static readonly instance: SubDirectory = new SubDirectory();
-        
-        
 
     public static getInstance(): SubDirectory{
 
@@ -77,20 +75,14 @@ export class SubDirectory
 var files = files
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
-        
-        
 ;
     
 
     var size: number = files.size()!;
-        
-        
 ;
     
 
@@ -99,14 +91,10 @@ var files = files
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var file: AbFile = files.get(index); as AbFile;
-        
-        
+    var file: AbFile =  as AbFilefiles.get(index);;
 ;
     
 stringBuffer!.append(file.getPath());
@@ -125,8 +113,6 @@ stringBuffer!.append(NEW_LINE);
 
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 private constructor (){
 
             super();

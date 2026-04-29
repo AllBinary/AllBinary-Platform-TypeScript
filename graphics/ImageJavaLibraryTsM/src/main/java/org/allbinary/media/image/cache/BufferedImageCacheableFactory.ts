@@ -43,6 +43,8 @@ import { CacheableInterfaceFactoryInterface } from "../../../../../org/allbinary
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BufferedImageCacheable } from "./BufferedImageCacheable.js";
+
 export class BufferedImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {
@@ -59,7 +61,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new BufferedImageCacheable(key as BufferedImageInfo);
+                        return new BufferedImageCacheable( as BufferedImageInfokey);
     
 }
 

@@ -49,8 +49,6 @@ export class IntArrayUtil
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -59,8 +57,6 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < array.length; index++)
         {
 stringBuffer!.appendint(array[index]!);
@@ -89,8 +85,6 @@ stringBuffer!.appendint(array[index]!);
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -99,8 +93,6 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < array.length; index++)
         {
 stringBuffer!.append("{");
@@ -111,8 +103,6 @@ stringBuffer!.append("{");
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < array[index]!.length; index2++)
         {
 stringBuffer!.appendint(array[index]![index2]!);
@@ -154,8 +144,6 @@ stringBuffer!.append("}");
 var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -164,8 +152,6 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < array.length; index++)
         {
 stringBuffer!.append("{");
@@ -176,8 +162,6 @@ stringBuffer!.append("{");
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < array[index]!.length; index2++)
         {
 stringBuffer!.append("{");
@@ -188,8 +172,6 @@ stringBuffer!.append("{");
 
                         for (
     var index3: number = 0;
-        
-        
 index3 < array[index]![index2]!.length; index3++)
         {
 stringBuffer!.appendint(array[index]![index2]![index3]!);

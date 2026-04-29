@@ -43,8 +43,6 @@ export class CssElementData
         
 
     private static readonly instance: CssElementData = new CssElementData();
-        
-        
 
     public static getInstance(): CssElementData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "CSS_ELEMENT_NAME";
-        
-        
 
 }
                 

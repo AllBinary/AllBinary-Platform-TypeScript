@@ -64,8 +64,6 @@ export class SqlConnectionPool
         
 
     private static readonly instance: SqlConnectionPool = new SqlConnectionPool();
-        
-        
 
     public static getInstance(): SqlConnectionPool{
 
@@ -78,54 +76,30 @@ export class SqlConnectionPool
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private connectionHashMap: HashMap<any, any> = 
+    private connectionHashMap: HashMap = 
                 null
             ;
-        
-        
 
     private readonly FIRST_NEW_CONNECTION_CREATED: string = "First New Connection Created: ";
-        
-        
 
     private readonly FIRST: string = "First ";
-        
-        
 
     private readonly NEW_CONNECTION_FOR: string = "New Connection For ";
-        
-        
 
     private readonly CREATED: string = " Created";
-        
-        
 
     private readonly NUMBER_OF_SQL_CONNECTIONS_FOR: string = "Number Of Sql Connections for: ";
-        
-        
 
     private readonly NUMBER_OF_SQL_CONNECTION_VECTORS: string = "Number Of Sql Connection Vectors: ";
-        
-        
 
     private readonly IS: string = " is ";
-        
-        
 
     private readonly CONNECTION_ALLREADY_CLOSED: string = "Connection AllReady Closed";
-        
-        
 
     private readonly METHOD_GET: string = "get()";
-        
-        
 
     private readonly METHOD_ADD: string = "add()";
-        
-        
 private constructor (){
 
             super();
@@ -143,7 +117,7 @@ var url = url
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap<any, any>();
+                                    this.connectionHashMap= new HashMap();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGINGPOOL))
@@ -165,9 +139,7 @@ var url = url
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url as Object); as Vector;
-        
-        
+    var connectionVector: Vector =  as Vectorthis.connectionHashMap!.get(url as Object);;
 ;
     
 
@@ -184,8 +156,6 @@ var url = url
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.FIRST);
@@ -236,14 +206,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
                         else {
                             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = connectionVector!.length!;
-        
-        
 ;
     
 
@@ -252,14 +218,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i); as Connection;
-        
-        
+    var sqlConnection: Connection =  as ConnectionconnectionVector!.get(i);;
 ;
     
 
@@ -295,7 +257,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return sqlConnection as Connection;
+                        return  as ConnectionsqlConnection;
     
 
                                     }
@@ -314,8 +276,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.NEW_CONNECTION_FOR);
@@ -358,7 +318,7 @@ var sqlConnection = sqlConnection
                                 )
                         
                                     {
-                                    this.connectionHashMap= new HashMap<any, any>();
+                                    this.connectionHashMap= new HashMap();
     
 connectionVector= new Vector();
     
@@ -368,7 +328,7 @@ connectionVector!.add(sqlConnection);
                                     }
                                 
                         else {
-                            connectionVector= this.connectionHashMap!.get(url as Object); as Vector;
+                            connectionVector=  as Vectorthis.connectionHashMap!.get(url as Object);;
     
 
                         if(connectionVector == 
@@ -394,8 +354,6 @@ this.connectionHashMap!.put(url, connectionVector);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.NUMBER_OF_SQL_CONNECTIONS_FOR);

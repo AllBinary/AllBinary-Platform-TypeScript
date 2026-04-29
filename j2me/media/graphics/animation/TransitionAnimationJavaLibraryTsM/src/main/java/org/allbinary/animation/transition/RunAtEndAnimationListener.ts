@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 
 
 
@@ -38,8 +40,6 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { AnimationListenerInterface } from "./AnimationListenerInterface.js";
-
-import { Runnable } from "./Runnable.js";
 
 export class RunAtEndAnimationListener
             extends Object

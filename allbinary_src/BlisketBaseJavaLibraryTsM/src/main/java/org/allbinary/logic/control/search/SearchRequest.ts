@@ -74,7 +74,7 @@ export class SearchRequest extends AbContext {
     private searchParams: SearchParams
 
     private storeFront: StoreFrontInterface
-public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var storeFront = storeFront
 var searchParams = searchParams

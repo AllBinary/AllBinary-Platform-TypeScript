@@ -80,8 +80,6 @@ export class MetasValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private storeFrontInterface: StoreFrontInterface
 
@@ -96,26 +94,18 @@ this.metaValidationVector= new Vector();
     
 
     var contentValue: string = this.storeFrontInterface!.getName() +" E-Commerce Site";
-        
-        
 ;
     
 
     var keywordsMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Keywords", HtmlMetaAttributeValuesData.getInstance()!.KEYWORDS, contentValue);
-        
-        
 ;
     
 
     var abstractMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Abstract", HtmlMetaAttributeValuesData.getInstance()!.ABSTRACT, contentValue);
-        
-        
 ;
     
 
     var descriptionMetaValidation: MetaValidation = new MetaValidation(HtmlMetaAttributeDataFactory.getInstance()!.NAME, "Description", HtmlMetaAttributeValuesData.getInstance()!.DESCRIPTION, contentValue);
-        
-        
 ;
     
 this.metaValidationVector!.add(keywordsMetaValidation);
@@ -133,7 +123,8 @@ public constructor (document: Document){
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -142,8 +133,6 @@ public constructor (document: Document){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -181,8 +170,6 @@ public constructor (document: Document){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -242,21 +229,15 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]); as Array<MetaValidation?>;
-        
-        
+    var metaArray: MetaValidation[] =  as Array<MetaValidation?>this.metaValidationVector!.toArray([]);;
 ;
     
 
     var size: number = metaArray!.length
                 ;
-        
-        
 ;
     
 
@@ -265,14 +246,10 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
     var metaValidation: MetaValidation = metaArray[i]!;
-        
-        
 ;
     
 node.appendChild(metaValidation!.toXmlNode(document));

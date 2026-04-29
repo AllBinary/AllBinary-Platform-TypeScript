@@ -43,8 +43,6 @@ export class NoAllBinarySensor extends AllBinarySensor {
         
 
     private static readonly instance: NoAllBinarySensor = new NoAllBinarySensor();
-        
-        
 
     public static getInstance(): NoAllBinarySensor{
 

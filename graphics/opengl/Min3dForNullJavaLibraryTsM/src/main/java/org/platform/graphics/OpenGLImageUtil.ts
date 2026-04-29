@@ -35,14 +35,14 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class OpenGLImageUtil
             extends Object
          {
         
 
     private static readonly instance: OpenGLImageUtil = new OpenGLImageUtil();
-        
-        
 
     public static getInstance(): OpenGLImageUtil{
 
@@ -61,7 +61,8 @@ export class OpenGLImageUtil
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -72,7 +73,8 @@ export class OpenGLImageUtil
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -84,7 +86,8 @@ export class OpenGLImageUtil
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -95,7 +98,8 @@ export class OpenGLImageUtil
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

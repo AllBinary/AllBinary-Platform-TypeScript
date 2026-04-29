@@ -43,8 +43,6 @@ export class StoreFrontOrdersHistoryStatisticsData
         
 
     private static readonly instance: StoreFrontOrdersHistoryStatisticsData = new StoreFrontOrdersHistoryStatisticsData();
-        
-        
 
     public static getInstance(): StoreFrontOrdersHistoryStatisticsData{
 
@@ -62,28 +60,16 @@ private constructor (){
 
 
     public readonly NAME: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_NAME";
-        
-        
 
     public readonly NUMBEROFORDERS: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_NUMBER_OF_ORDERS";
-        
-        
 
     public readonly SUBTOTAL: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_SUBTOTAL";
-        
-        
 
     public readonly SHIPPINGCOST: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_SHIPPINGCOST";
-        
-        
 
     public readonly TAXES: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_TAXES";
-        
-        
 
     public readonly TOTAL: string = "STOREFRONT_ORDERS_HISTORY_STATISTICS_TOTAL";
-        
-        
 
 }
                 

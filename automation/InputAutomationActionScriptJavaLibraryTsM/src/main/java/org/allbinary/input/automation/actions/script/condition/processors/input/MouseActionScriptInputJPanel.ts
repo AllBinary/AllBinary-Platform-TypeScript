@@ -79,16 +79,22 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JCheckBox } from "./JCheckBox.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JButton } from "./JButton.js";
+
+import { JTextField } from "./JTextField.js";
+
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private mouseActionScriptInputInterface: MouseActionScriptInputInterface
 public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInterface){
@@ -103,8 +109,6 @@ this.mouseActionScriptInputInterface= mouseActionScriptInputInterface;
     
 
     var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-        
-        
 ;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.LOW_NAME);
@@ -123,8 +127,6 @@ this.set();
     set(){
 
     var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-        
-        
 ;
     
 inputTypeComboBoxModel!.setSelectedItem(this.mouseActionScriptInputInterface!.getInputRobotInterface()!.getName());
@@ -175,14 +177,10 @@ this.mouseActionScriptInputInterface!.log();
     updateInputType(){
 
     var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-        
-        
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
-        
-        
+    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
 ;
     
 
@@ -274,8 +272,6 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                             
 
     var mouseXString: string = this.mouseXJTextField!.getText()!;
-        
-        
 ;
     
 
@@ -289,8 +285,6 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
                                 
 
     var mouseYString: string = this.mouseYJTextField!.getText()!;
-        
-        
 ;
     
 
@@ -365,7 +359,7 @@ this.titleJLabel!.setText("Mouse Input Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -393,7 +387,7 @@ this.button2JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.button2JCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-button2JCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
+button2JCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -421,8 +415,6 @@ this.mouseDelayJTextField!.setText("100");
     
 
     var mouseActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.mouseActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.mouseActionJDialog!.getContentPane()!.setLayout(mouseActionJDialogLayout);
@@ -435,7 +427,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.mouseActionJButton!.setText("Edit");
     
-mouseActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+mouseActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -451,8 +443,6 @@ this.jLabel1!.setText("Mouse:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

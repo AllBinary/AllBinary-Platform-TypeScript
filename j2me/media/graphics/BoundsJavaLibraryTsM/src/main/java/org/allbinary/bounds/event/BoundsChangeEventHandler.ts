@@ -50,8 +50,6 @@ export class BoundsChangeEventHandler extends BasicEventHandler {
         
 
     private SINGLETON: BasicEventHandler = new BoundsChangeEventHandler();
-        
-        
 
     public static getInstance(): BasicEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var boundsChangeEventListener: BoundsChangeEventListener = eventListenerInterface as BoundsChangeEventListener;
-        
-        
+    var boundsChangeEventListener: BoundsChangeEventListener =  as BoundsChangeEventListenereventListenerInterface;
 ;
     
-boundsChangeEventListener!.onBoundsChangeEvent(eventObject as BoundsChangeEvent);
+boundsChangeEventListener!.onBoundsChangeEvent( as BoundsChangeEventeventObject);
     
 }
 

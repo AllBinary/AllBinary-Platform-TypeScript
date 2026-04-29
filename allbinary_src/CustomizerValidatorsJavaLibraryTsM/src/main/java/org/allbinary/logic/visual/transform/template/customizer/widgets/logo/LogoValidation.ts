@@ -88,8 +88,6 @@ export class LogoValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private logoFileItem: FileItem
 
@@ -125,7 +123,7 @@ this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, no
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -138,11 +136,11 @@ this.getFormData(hashMap);
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
-this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE); as FileItem;
+this.logoFileItem=  as FileItemhashMap!.get(LogoData.getInstance()!.IMAGE);;
     
-this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as String);
+this.logoAbPath= new AbPath( as StringhashMap!.get(LogoData.getInstance()!.IMAGEPATH));
     
 
                         if(this.logoFileItem != 
@@ -161,8 +159,6 @@ this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as S
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("HashMap: ");
@@ -186,14 +182,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 
@@ -337,8 +329,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Logo is not valid.");
@@ -394,17 +384,13 @@ var document = document
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(LogoData.getInstance()!.IMAGE, stringUtil!.EMPTY_STRING);
@@ -445,9 +431,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 
@@ -468,8 +452,6 @@ var document = document
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Processing logoFile: ");

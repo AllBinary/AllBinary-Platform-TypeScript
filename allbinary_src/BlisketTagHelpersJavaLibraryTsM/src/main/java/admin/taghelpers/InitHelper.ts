@@ -55,9 +55,7 @@ export class InitHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -86,8 +84,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to drop log table";
-        
-        
 ;
     
 
@@ -126,8 +122,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to create new log table";
-        
-        
 ;
     
 
@@ -155,8 +149,6 @@ var pageContext = pageContext
         try {
             
     var success: string = "Fix Me";
-        
-        
 ;
     
 
@@ -180,8 +172,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to view Log table";
-        
-        
 ;
     
 
@@ -209,14 +199,10 @@ var pageContext = pageContext
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = "Fix Me";
-        
-        
 ;
     
 
@@ -240,8 +226,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -269,14 +253,10 @@ var pageContext = pageContext
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = "Fix Me";
-        
-        
 ;
     
 
@@ -300,8 +280,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

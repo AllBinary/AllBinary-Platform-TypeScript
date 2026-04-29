@@ -43,8 +43,6 @@ export class HtmlMetaAttributeValuesData
         
 
     private static readonly instance: HtmlMetaAttributeValuesData = new HtmlMetaAttributeValuesData();
-        
-        
 
     public static getInstance(): HtmlMetaAttributeValuesData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public ABSTRACT: string = "abstract";
-        
-        
 
     public DESCRIPTION: string = "description";
-        
-        
 
     public KEYWORDS: string = "keywords";
-        
-        
 
 }
                 

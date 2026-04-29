@@ -89,34 +89,22 @@ export class GeographicMapCellHistory
         
 
     public static readonly NULL_GEOGRPAHIC_MAP_HISTORY_ARRAY: GeographicMapCellHistory[] = [];
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 
     private readonly list: BasicArrayList
 
     private readonly visitedList: BasicArrayList
 
     private readonly MISSED_INFO: string = "Missed";
-        
-        
 
     private readonly animation: Animation = new TextAnimation(MISSED_INFO, AnimationBehavior.getInstance());
-        
-        
 
     private totalVisited: number= 0
 
     private halfWidth: number = 0;
-        
-        
 public constructor (){
 
             super();
@@ -159,12 +147,10 @@ this.init();
 }
 
 
-    public track(list: BasicArrayList){
+    public trackAll(list: BasicArrayList){
     //var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 this.list.ensureCapacity(size);
@@ -181,11 +167,9 @@ this.visitedList!.ensureCapacity(size);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index);;
     
 this.track(geographicMapCellPosition);
     
@@ -234,14 +218,10 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 var geographicMapCellPosition = geographicMapCellPosition
 
     var localList: BasicArrayList = this.list;
-        
-        
 ;
     
 
     var index: number = localList!.indexOf(geographicMapCellPosition)!;
-        
-        
 ;
     
 
@@ -252,7 +232,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index +1); as GeographicMapCellPosition;
+                        return  as GeographicMapCellPositionlocalList!.get(index +1);;
     
 
                                     }
@@ -269,20 +249,14 @@ var geographicMapCellPosition = geographicMapCellPosition
     public getFirstUnvisited(): GeographicMapCellPosition{
 
     var localList: BasicArrayList = this.list;
-        
-        
 ;
     
 
     var localVisitedList: BasicArrayList = this.visitedList;
-        
-        
 ;
     
 
     var size: number = localVisitedList!.size()!;
-        
-        
 ;
     
 
@@ -295,11 +269,9 @@ var geographicMapCellPosition = geographicMapCellPosition
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-value= this.visitedList!.get(index); as Boolean;
+value=  as Booleanthis.visitedList!.get(index);;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -309,7 +281,7 @@ value= this.visitedList!.get(index); as Boolean;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index); as GeographicMapCellPosition;
+                        return  as GeographicMapCellPositionlocalList!.get(index);;
     
 
                                     }
@@ -320,7 +292,7 @@ value= this.visitedList!.get(index); as Boolean;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(0); as GeographicMapCellPosition;
+                        return  as GeographicMapCellPositionlocalList!.get(0);;
     
 }
 
@@ -328,14 +300,10 @@ value= this.visitedList!.get(index); as Boolean;
     public getFirstUnvisitedIndex(): number{
 
     var localVisitedList: BasicArrayList = this.visitedList;
-        
-        
 ;
     
 
     var size: number = localVisitedList!.size()!;
-        
-        
 ;
     
 
@@ -348,11 +316,9 @@ value= this.visitedList!.get(index); as Boolean;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-value= this.visitedList!.get(index); as Boolean;
+value=  as Booleanthis.visitedList!.get(index);;
     
 
                         if(value == this.booleanFactory!.FALSE)
@@ -382,20 +348,14 @@ value= this.visitedList!.get(index); as Boolean;
 var pathList = pathList
 
     var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var localList: BasicArrayList = this.list;
-        
-        
 ;
     
 
     var size: number = pathList!.size()!;
-        
-        
 ;
     
 
@@ -408,11 +368,9 @@ var pathList = pathList
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositionpathList!.get(index);;
     
 
                         if(!localList!.contains(geographicMapCellPosition);)
@@ -438,8 +396,6 @@ geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
-        
-        
 ;
     
 
@@ -447,9 +403,7 @@ geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index); as Boolean;
-        
-        
+    var value: Boolean =  as Booleanthis.visitedList!.get(index);;
 ;
     
 
@@ -485,8 +439,6 @@ geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
-        
-        
 ;
     
 
@@ -497,12 +449,10 @@ geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
                         if(index !=  -1)
                         
                                     {
-                                    value= this.visitedList!.get(index); as Boolean;
+                                    value=  as Booleanthis.visitedList!.get(index);;
     
 
     var TRUE: Boolean = this.booleanFactory!.TRUE;
-        
-        
 ;
     
 
@@ -598,24 +548,18 @@ this.totalVisited++;
 
                 //@Throws(Error::class)
             
-    public isVisited(basicDecimal: BasicDecimal): boolean{
+    public isPortionVisited(basicDecimal: BasicDecimal): boolean{
     //var basicDecimal = basicDecimal
 
     var size: number = this.getSize()!;
-        
-        
 ;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /basicDecimal!.getUnscaled();;
-        
-        
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.roundbasicDecimal!.getUnscaled();;
 ;
     
 
     var numberNotVisited: number = this.getSize() -1 -this.totalVisited;
-        
-        
 ;
     
 
@@ -649,20 +593,14 @@ this.totalVisited++;
     public reset(){
 
     var localVisitedList: BasicArrayList = this.visitedList;
-        
-        
 ;
     
 
     var localFalseBoolean: Boolean = this.booleanFactory!.FALSE;
-        
-        
 ;
     
 
     var size: number = localVisitedList!.size()!;
-        
-        
 ;
     
 
@@ -671,8 +609,6 @@ this.totalVisited++;
 
                         for (
     var index: number = size -1;
-        
-        
 index >= 0; index--)
         {
 localVisitedList!.set(index, localFalseBoolean);
@@ -684,20 +620,16 @@ this.totalVisited= 0;
 }
 
 
-    paintNotVisited(graphics: Graphics, tiledLayer: AllBinaryTiledLayer, point: GPoint){
+    paintNotVisitedRelativeToPoint(graphics: Graphics, tiledLayer: AllBinaryTiledLayer, point: GPoint){
     //var graphics = graphics
     //var tiledLayer = tiledLayer
     //var point = point
 
     var x: number = point.getX() -tiledLayer!.getXP();
-        
-        
 ;
     
 
     var y: number = point.getY() -tiledLayer!.getYP();
-        
-        
 ;
     
 
@@ -711,24 +643,18 @@ this.totalVisited= 0;
                                 
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var height: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
-this.animation.paint(graphics, x +halfWidth, y +(height));
+this.animation.paintXY(graphics, x +halfWidth, y +(height));
     
 }
 
 
     private readonly RED: number = BasicColorFactory.getInstance()!.RED.toInt()!;
-        
-        
 
     public paintNotVisited(graphics: Graphics, geographicMapInterface: BasicGeographicMap){
     //var graphics = graphics
@@ -739,14 +665,10 @@ this.animation.paint(graphics, x +halfWidth, y +(height));
     
 
     var localVisitedList: BasicArrayList = this.visitedList;
-        
-        
 ;
     
 
     var size: number = localVisitedList!.size()!;
-        
-        
 ;
     
 
@@ -763,19 +685,17 @@ this.animation.paint(graphics, x +halfWidth, y +(height));
 
                         for (
     var index: number = size;
-        
-        
 --index >= 0; )
         {
-geographicMapCellPosition= this.list.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositionthis.list.get(index);;
     
-isCellVisitedBoolean= localVisitedList!.get(index); as Boolean;
+isCellVisitedBoolean=  as BooleanlocalVisitedList!.get(index);;
     
 
                         if(!isCellVisitedBoolean;)
                         
                                     {
-                                    this.paintNotVisited(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint());
+                                    this.paintNotVisitedRelativeToPoint(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint());
     
 
                                     }
@@ -788,8 +708,6 @@ isCellVisitedBoolean= localVisitedList!.get(index); as Boolean;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintNotVisited", e);

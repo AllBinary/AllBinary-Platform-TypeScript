@@ -49,8 +49,6 @@ export class InitInfo2
         
 
     private static readonly instance: InitInfo2 = new InitInfo2();
-        
-        
 
     public static getInstance(): InitInfo2{
 
@@ -63,8 +61,6 @@ export class InitInfo2
 
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 
     public isTestHtmlPathValid(value: AbPath): boolean{
 var value = value

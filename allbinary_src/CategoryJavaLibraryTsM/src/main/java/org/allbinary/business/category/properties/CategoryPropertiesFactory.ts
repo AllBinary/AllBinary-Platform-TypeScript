@@ -59,15 +59,13 @@ export class CategoryPropertiesFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private categoryPropertiesInterface: CategoryPropertiesInterface
 public constructor (name: string){
 
             super();
         var name = name
-this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(name);
     
 }
 
@@ -75,15 +73,15 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(node);
     
 }
 
-public constructor (categoryPropertiesHashMap: HashMap<any, any>){
+public constructor (categoryPropertiesHashMap: HashMap){
 
             super();
         var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew CategoryProperties(categoryPropertiesHashMap);
     
 }
 
@@ -95,7 +93,7 @@ this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashM
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.categoryPropertiesInterface as CategoryPropertiesInterface;
+                        return  as CategoryPropertiesInterfacethis.categoryPropertiesInterface;
     
 
                 //: 
@@ -103,8 +101,6 @@ this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashM
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

@@ -52,22 +52,18 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CryptService } from "./CryptService.js";
+
 export class CryptServiceFactory
             extends Object
          implements ServiceFactory {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private cryptService: CryptService = new CryptService();
-        
-        
 public constructor (){
 
             super();

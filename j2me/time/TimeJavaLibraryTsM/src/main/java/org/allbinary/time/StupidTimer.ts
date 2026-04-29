@@ -55,33 +55,21 @@ export class StupidTimer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 
     private readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
-        
-        
 
     visitBool(visitorInterface: Visitor): boolean{
     //var visitorInterface = visitorInterface
 
-    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT); as Boolean;
-        
-        
+    var result: Boolean =  as BooleanvisitorInterface!.visit(nullUtil!.NULL_OBJECT);;
 ;
     
 
     var result2: boolean = result!;
-        
-        
 ;
     
 
@@ -100,14 +88,10 @@ export class StupidTimer
     //var timeDelayHelper = timeDelayHelper
 
     var tookTooLong: boolean = false;
-        
-        
 ;
     
 
     var WAITING_FOR: string = "Waiting for: ";
-        
-        
 ;
     
 PreLogUtil.put(new StringMaker().
@@ -115,8 +99,6 @@ PreLogUtil.put(new StringMaker().
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -146,7 +128,7 @@ this.threadObjectUtil!.waitObject(this, 1800);
 }
 
 
-                        if(timeDelayHelper!.isTime())
+                        if(timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     tookTooLong= true;

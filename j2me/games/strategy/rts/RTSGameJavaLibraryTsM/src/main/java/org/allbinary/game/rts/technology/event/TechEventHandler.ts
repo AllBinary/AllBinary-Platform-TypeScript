@@ -49,8 +49,6 @@ export class TechEventHandler extends BasicEventHandler {
         
 
     private static readonly eventHandler: TechEventHandler = new TechEventHandler();
-        
-        
 
     public static getInstance(): TechEventHandler{
 
@@ -73,9 +71,7 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);
-        
-        
+    var techEventListenerInterface: TechEventListenerInterface = ( as TechEventListenerInterfaceeventListenerInterface);
 ;
     
 techEventListenerInterface!.onTechEvent(eventObject);

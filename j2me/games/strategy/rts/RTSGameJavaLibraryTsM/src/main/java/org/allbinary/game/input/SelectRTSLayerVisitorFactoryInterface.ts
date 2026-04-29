@@ -45,7 +45,7 @@ import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameI
 export interface SelectRTSLayerVisitorFactoryInterface {
         
 
-    getInstance(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor
+    create(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor
 
 }
                 

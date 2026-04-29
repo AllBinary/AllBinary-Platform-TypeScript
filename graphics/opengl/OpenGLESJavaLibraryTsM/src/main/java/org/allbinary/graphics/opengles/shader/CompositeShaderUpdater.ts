@@ -60,8 +60,6 @@ export class CompositeShaderUpdater extends ShaderUpdater {
         
 
     private static readonly instance: CompositeShaderUpdater = new CompositeShaderUpdater(StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), StringUtil.getInstance()!.getArrayInstance(), NullUtil.getInstance()!.NULL_INT_ARRAY);
-        
-        
 
     public static getInstance(): CompositeShaderUpdater{
 
@@ -74,12 +72,8 @@ export class CompositeShaderUpdater extends ShaderUpdater {
 
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     readonly shaderStrings: ShaderStrings = ShaderStrings.getInstance()!;
-        
-        
 
     public readonly uniformBlockHandleArray: number[]
 

@@ -43,24 +43,14 @@ export class DisplayInBrowserContraintsData
         
 
     public static readonly NAME: string = "DISPLAYBROWSERCONSTRAINTS_NAME";
-        
-        
 
     public static readonly FRAMEABLE: string = "DISPLAYBROWSERCONSTRAINTS_FRAMEABLE";
-        
-        
 
     public static readonly MOUNTABLE: string = "DISPLAYBROWSERCONSTRAINTS_MOUNTABLE";
-        
-        
 
     public static readonly QUICKFRAMEABLE: string = "DISPLAYBROWSERCONSTRAINTS_QUICKFRAMEABLE";
-        
-        
 
     public static readonly MOUNTABLELINK: string = "DISPLAYBROWSERCONSTRAINTS_MOUNTABLELINK";
-        
-        
 private constructor (){
 
             super();

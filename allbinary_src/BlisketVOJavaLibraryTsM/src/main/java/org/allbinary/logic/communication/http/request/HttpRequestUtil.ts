@@ -46,8 +46,6 @@ export class HttpRequestUtil
         
 
     private static readonly instance: HttpRequestUtil = new HttpRequestUtil();
-        
-        
 
     public static getInstance(): HttpRequestUtil{
 
@@ -68,8 +66,6 @@ private constructor (){
 var requestPath = requestPath
 
     var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -96,8 +92,6 @@ var requestPath = requestPath
 var requestPath = requestPath
 
     var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;
-        
-        
 ;
     
 

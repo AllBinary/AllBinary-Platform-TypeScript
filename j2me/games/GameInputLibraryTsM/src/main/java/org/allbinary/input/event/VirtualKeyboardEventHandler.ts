@@ -55,12 +55,12 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { VirtualKeyboardEvent } from "./VirtualKeyboardEvent.js";
+
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         
 
     private static readonly gameKeyEventHandler: VirtualKeyboardEventHandler = new VirtualKeyboardEventHandler();
-        
-        
 
     public static getInstance(): VirtualKeyboardEventHandler{
 
@@ -78,12 +78,8 @@ private constructor (){
 
 
     public readonly SHOW_EVENT: VirtualKeyboardEvent = new VirtualKeyboardEvent(BooleanFactory.getInstance()!.TRUE);
-        
-        
 
     public readonly HIDE_EVENT: VirtualKeyboardEvent = new VirtualKeyboardEvent(BooleanFactory.getInstance()!.FALSE);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -91,12 +87,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as VirtualKeyboardEventListenerInterface;
-        
-        
+    var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface =  as VirtualKeyboardEventListenerInterfaceeventListenerInterface;
 ;
     
-virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent(eventObject as VirtualKeyboardEvent);
+virtualKeyboardEventListenerInterface!.onVirtualKeyboardEvent( as VirtualKeyboardEventeventObject);
     
 }
 

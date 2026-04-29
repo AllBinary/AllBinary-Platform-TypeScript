@@ -100,19 +100,17 @@ export class OrderHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 
     private pageContext: PageContext
 
     private request: HttpServletRequest
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -121,12 +119,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -148,20 +144,14 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
         try {
             
     var paymentGatewayBoolean: Boolean = Boolean.FALSE;
-        
-        
 ;
     
 
     var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;
-        
-        
 ;
     
 
-    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()); as String;
-        
-        
+    var requestPaymentGateway: string =  as Stringthis.request.getParameter(PaymentGatewayData.NAME.toString());;
 ;
     
 
@@ -178,15 +168,11 @@ paymentGatewayBoolean= Boolean.TRUE;
                                     }
                                 
 
-    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance(); as PaymentGatewayEntity;
-        
-        
+    var paymentGatewayEntityInterface: PaymentGatewayEntity =  as PaymentGatewayEntityPaymentGatewayEntityFactory.getInstance();;
 ;
     
 
     var paymentTypeVector: Vector = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.weblisketSession!.getStoreName())!;
-        
-        
 ;
     
 
@@ -194,21 +180,15 @@ paymentGatewayBoolean= Boolean.TRUE;
                         
                                     {
                                     
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(0); as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType =  as BasicPaymentTypepaymentTypeVector!.get(0);;
 ;
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType); as PaymentGatewayInterface;
-        
-        
+    var paymentGatewayInterface: PaymentGatewayInterface =  as PaymentGatewayInterfacepaymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType);;
 ;
     
 
     var paymentGateway: string = paymentGatewayInterface!.getName()!;
-        
-        
 ;
     
 this.weblisketSession!.setPaymentMethod(paymentGateway);
@@ -226,8 +206,6 @@ paymentGatewayBoolean= Boolean.TRUE;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Successfully set PaymentGateway Order: ");
@@ -259,8 +237,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setPaymentGateway()");
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Failed to set PaymentGateway for Order: ");
@@ -269,8 +245,6 @@ stringBuffer!.append("Failed to set PaymentGateway for Order: ");
         try {
             
     var orderInterface: OrderInterface = this.weblisketSession!.getOrder()!;
-        
-        
 ;
     
 
@@ -317,16 +291,12 @@ this.logUtil!.put(stringBuffer!.toString(), this, "setPaymentGateway()", e);
         try {
             
     var order: OrderInterface = this.weblisketSession!.getOrder()!;
-        
-        
 ;
     
 order.setStoreName(this.storeFrontInterface!.getName());
     
 
-    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(), order as Order)!;
-        
-        
+    var result: string = OrderProcessorUtil.getInstance()!.process(this.weblisketSession!.getUserName(),  as Orderorder)!;
 ;
     
 
@@ -350,8 +320,6 @@ order.setStoreName(this.storeFrontInterface!.getName());
             {
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Failed to Process Order: ");
@@ -370,8 +338,6 @@ stringBuffer!.append(" Exception Getting Id");
 
 
     var error: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 

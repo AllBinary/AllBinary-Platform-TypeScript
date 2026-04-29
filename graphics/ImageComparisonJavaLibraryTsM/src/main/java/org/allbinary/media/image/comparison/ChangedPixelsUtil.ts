@@ -69,24 +69,14 @@ export class ChangedPixelsUtil
         
 
     private static readonly START_X: number = 0;
-        
-        
 
     private static readonly START_Y: number = 0;
-        
-        
 
     private static readonly OFFSET: number = 0;
-        
-        
 
     private static readonly SCAN_SIZE: number = 0;
-        
-        
 
     private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -98,22 +88,16 @@ var imageComparisonInfo = imageComparisonInfo
     
 
     var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;
-        
-        
 ;
     
 bufferedImageCacheables= new Array(2);
     
 
     var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;
-        
-        
 ;
     
 
     var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -122,14 +106,10 @@ bufferedImageCacheables= new Array(2);
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageCacheables!.length; index++)
         {
 
-    var bufferedImageCacheable: BufferedImageCacheable = poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
-        
-        
+    var bufferedImageCacheable: BufferedImageCacheable =  as BufferedImageCacheablepoolInterface!.remove(bufferedImageInfo);;
 ;
     
 bufferedImageCacheables[index]= bufferedImageCacheable;
@@ -140,14 +120,10 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, buf
 
 
     var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -156,14 +132,10 @@ bufferedImageCacheables[index]!.getBufferedImage()!.setRGB(START_X, START_Y, buf
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
-        
-        
+    var pixelDelta: PixelDelta =  as PixelDeltavector.get(index);;
 ;
     
 

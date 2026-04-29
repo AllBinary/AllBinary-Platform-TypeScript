@@ -79,28 +79,16 @@ export class InstallerInfo
         
 
     private static readonly instance: InstallerInfo = new InstallerInfo();
-        
-        
 
     private static readonly INITFILENAME: string = "installerdata.dat";
-        
-        
 
     private static readonly PACKAGE: string = PATH_GLOBALS.getInstance()!.INIT_PATH;
-        
-        
 
     private userName: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private password: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private hasRead: boolean = false;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
@@ -111,8 +99,6 @@ InstallerInfo.hasRead= value;
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -125,38 +111,28 @@ public constructor (){
     public write(){
 
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
-        
-        
 ;
     
 
         try {
             
     var newFile: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 newFile!.createNewFile();
     
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
-        
-        
 ;
     
 
     var cryptedUserName: number[] = new WeakCrypt(1).
                             encrypt(this.getUserName())!.encodeToByteArray()!;
-        
-        
 ;
     
 
     var cryptedPassword: number[] = new WeakCrypt(2).
                             encrypt(this.getPassword())!.encodeToByteArray()!;
-        
-        
 ;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(cryptedUserName));
@@ -181,7 +157,8 @@ hasRead= false;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -193,16 +170,12 @@ hasRead= false;
     read(){
 
     var FILEABPATH: AbPath = new AbPath(URLGLOBALS.getMainPath() +PACKAGE, INITFILENAME);
-        
-        
 ;
     
 
         try {
             
     var file: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 
@@ -211,26 +184,18 @@ hasRead= false;
                                     {
                                     
     var iFile: AbFileLocalInputStream = new AbFileLocalInputStream(file);
-        
-        
 ;
     
 
     var iData: AbDataInputStream = new AbDataInputStream(iFile);
-        
-        
 ;
     
 
     var decryptedUserName: string = decode.toCharArray();
-        
-        
 ;
     
 
     var decryptedPassword: string = decode.toCharArray();
-        
-        
 ;
     
 this.setUserName(new WeakCrypt(1).

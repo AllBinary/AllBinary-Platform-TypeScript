@@ -33,8 +33,6 @@ export class EnableFacesShaderOpenGLProcessor extends ObjectThreedOpenGLProcesso
         
 
     private static readonly instance: EnableFacesShaderOpenGLProcessor = new EnableFacesShaderOpenGLProcessor();
-        
-        
 
     public static getInstance(): EnableFacesShaderOpenGLProcessor{
 

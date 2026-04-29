@@ -61,8 +61,6 @@ export class StreamUtil
         
 
     private static readonly instance: StreamUtil = new StreamUtil();
-        
-        
 
     public static getInstance(): StreamUtil{
 
@@ -75,8 +73,6 @@ export class StreamUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -91,8 +87,6 @@ private constructor (){
 var buffer = buffer
 
     var len: number = 0;
-        
-        
 ;
     
 
@@ -135,8 +129,6 @@ outputStream!.write(buffer, 0, len);
     //var byteArray = byteArray
 
     var outputStream: ByteArrayOutputStream = outputStream2;
-        
-        
 ;
     
 
@@ -156,7 +148,8 @@ outputStream!.write(buffer, 0, len);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -195,8 +188,6 @@ var closeable = closeable
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);

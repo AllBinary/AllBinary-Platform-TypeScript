@@ -53,9 +53,7 @@ export class J2MEGameKey extends Input {
     public static getString(keyCode: number): string{
 var keyCode = keyCode
 
-    var input: Input = InputFactory.getInstance()!.getInstance(keyCode)!;
-        
-        
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
 ;
     
 
@@ -95,8 +93,6 @@ var keyName = keyName
                     
 
     var id: number = this.getId()!;
-        
-        
 ;
     
 
@@ -105,8 +101,6 @@ var keyName = keyName
                                     {
                                     
     var inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 ;
     
 inputFactory!.add(id, this);

@@ -42,6 +42,10 @@ import { swing } from "../../../../../../javax/swing.js";
         
 import { JPanel } from "./JPanel.js";
 
+import { JButton } from "./JButton.js";
+
+import { JTextField } from "./JTextField.js";
+
 export class PropertiesJPanel extends javax.swing.JPanel {
         
 public constructor (){

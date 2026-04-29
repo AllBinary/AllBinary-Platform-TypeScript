@@ -57,7 +57,7 @@ import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurat
 export interface UserEmailEventsConfigurationInterface {
         
 
-    public getEventConfigurationHashMap(): HashMap<any, any>
+    public getEventConfigurationHashMap(): HashMap
 
     public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 

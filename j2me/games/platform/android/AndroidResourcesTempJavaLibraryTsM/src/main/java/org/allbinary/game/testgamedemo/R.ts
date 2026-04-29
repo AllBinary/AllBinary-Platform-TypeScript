@@ -61,24 +61,14 @@ export class id
         
 /*Static stuff is not allowed for Typescript inner classes*/
     public static readonly custom_web_view: number = 0x7f050000;
-        
-        
 
     public static readonly ad_area_bottom: number = 0x7f060002;
-        
-        
 
     public static readonly ad_area_left: number = 0x7f060003;
-        
-        
 
     public static readonly ad_area_right: number = 0x7f060004;
-        
-        
 
     public static readonly ad_area_top: number = 0x7f060001;
-        
-        
 /**/
 
 
@@ -91,8 +81,6 @@ export class layout
         
 /*Static stuff is not allowed for Typescript inner classes*/
     public static readonly webview_layout: number = 0x7f020000;
-        
-        
 /**/
 
 
@@ -105,132 +93,68 @@ export class raw
         
 /*Static stuff is not allowed for Typescript inner classes*/
     public static readonly about: number = 0x7f030000;
-        
-        
 
     public static readonly privacy_policy: number = 0x7f030001;
-        
-        
 
     public static readonly error: number = 0x7f040000;
-        
-        
 
     public static readonly licenseinitdata: number = 0x7f040001;
-        
-        
 
     public static readonly partner: number = 0x7f040002;
-        
-        
 
     public static readonly select: number = 0x7f040003;
-        
-        
 
     public static readonly test: number = 0x7f040004;
-        
-        
 
     public static readonly testgamedemo_wait_256_by_256: number = 0x7f040005;
-        
-        
 
     public static readonly touch_button_128_by_128: number = 0x7f040026;
-        
-        
 
     public static readonly touch_button_64_by_64: number = 0x7f040027;
-        
-        
 
     public static readonly touch_button_down_arrow_128_by_128: number = 0x7f04002a;
-        
-        
 
     public static readonly touch_button_down_arrow_64_by_64: number = 0x7f04002b;
-        
-        
 
     public static readonly touch_button_generic_action_128_by_128: number = 0x7f04002c;
-        
-        
 
     public static readonly touch_button_generic_action_64_by_64: number = 0x7f04002d;
-        
-        
 
     public static readonly touch_button_start_128_by_128: number = 0x7f040038;
-        
-        
 
     public static readonly touch_button_start_64_by_64: number = 0x7f040039;
-        
-        
 
     public static readonly touch_button_strafe_left_arrow_128_by_128: number = 0x7f04003a;
-        
-        
 
     public static readonly touch_button_strafe_left_arrow_64_by_64: number = 0x7f04003b;
-        
-        
 
     public static readonly touch_button_strafe_right_arrow_128_by_128: number = 0x7f04003c;
-        
-        
 
     public static readonly touch_button_strafe_right_arrow_64_by_64: number = 0x7f04003d;
-        
-        
 
     public static readonly touch_button_turn_left_arrow_128_by_128: number = 0x7f04003e;
-        
-        
 
     public static readonly touch_button_turn_left_arrow_64_by_64: number = 0x7f04003f;
-        
-        
 
     public static readonly touch_button_turn_right_arrow_128_by_128: number = 0x7f040040;
-        
-        
 
     public static readonly touch_button_turn_right_arrow_64_by_64: number = 0x7f040041;
-        
-        
 
     public static readonly touch_button_up_arrow_128_by_128: number = 0x7f040042;
-        
-        
 
     public static readonly touch_button_up_arrow_64_by_64: number = 0x7f040043;
-        
-        
 
     public static readonly ouya_a: number = 0x7f040012;
-        
-        
 
     public static readonly ouya_o: number = 0x7f040014;
-        
-        
 
     public static readonly ouya_u: number = 0x7f040015;
-        
-        
 
     public static readonly ouya_y: number = 0x7f040016;
-        
-        
 
     public static readonly ouya_key: number = 0x7f040013;
-        
-        
 
     public static readonly google_key: number = 0x7f040013;
-        
-        
 /**/
 
 
@@ -243,8 +167,6 @@ export class string
         
 /*Static stuff is not allowed for Typescript inner classes*/
     public static readonly progressbar_in_title_string: number = 0x7f050001;
-        
-        
 /**/
 
 

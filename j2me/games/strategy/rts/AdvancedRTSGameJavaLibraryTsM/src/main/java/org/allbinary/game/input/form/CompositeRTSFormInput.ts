@@ -18,9 +18,6 @@
 
 
 
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
-
-    
 import { RTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
 
     
@@ -28,9 +25,6 @@ import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/Cust
 
     
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
-
-    
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
 import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
@@ -118,22 +112,16 @@ this.rtsFormInputArray[1]= new UnitRTSFormInput(this.groupInterfaceArray);
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 
     var size: number = this.rtsFormInputArray!.length
                 ;
-        
-        
 ;
     
 
@@ -142,8 +130,6 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
@@ -155,21 +141,17 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
 
                 //@Throws(Error::class)
             
-    public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
+    public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var point = point
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
-        
-        
 ;
     
 
     var index: number = scrollSelectionForm!.getSelectedIndex(point)!;
-        
-        
 ;
     
 
@@ -182,7 +164,7 @@ var point = point
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
+                                    this.rtsFormInputArray[0]!.processAtPoint(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
     
 
                                     }
@@ -194,7 +176,7 @@ var point = point
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
+                                    this.rtsFormInputArray[1]!.processAtPoint(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, point);
     
 
                                     }
@@ -204,7 +186,7 @@ var point = point
 
                 //@Throws(Error::class)
             
-    public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
@@ -212,8 +194,6 @@ var item = item
 var index = index
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.itemIndex[0], this, commonStrings!.PROCESS);
@@ -228,7 +208,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.i
                         if(this.getSelectedStickyItemIndex() <= this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[0]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+                                    this.rtsFormInputArray[0]!.processGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
     
 
                                     }
@@ -240,7 +220,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.i
                         if(index > this.itemIndex[0])
                         
                                     {
-                                    this.rtsFormInputArray[1]!.process(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+                                    this.rtsFormInputArray[1]!.processGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
     
 
                                     }
@@ -266,13 +246,13 @@ var point = point
 
                 //@Throws(Error::class)
             
-    public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
 var item = item
 var index = index
-this.rtsFormInputArray[0]!.processSticky(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
+this.rtsFormInputArray[0]!.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
     
 }
 

@@ -57,6 +57,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { EmailInterface } from "./EmailInterface.js";
 
+import { AbEmail } from "./AbEmail.js";
+
 import { Email } from "./Email.js";
 
 export class BasicEmail
@@ -72,8 +74,6 @@ public constructor (emailInfo: EmailInfo, to: string){
 var to = to
 
     var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;
-        
-        
 ;
     
 this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.getSmtpServer(), basicEmailInfo!.getEmailServerConfigurationInterface()!.getAccountName(), to, basicEmailInfo!.getSubject(), basicEmailInfo!.getTextBody(), emailInfo!.getHtmlAttachment(), emailInfo!.getContentBase());
@@ -86,7 +86,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.email.getEmail(); as Email;
+                        return  as Emailthis.email.getEmail();;
     
 }
 
@@ -125,7 +125,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
 
 

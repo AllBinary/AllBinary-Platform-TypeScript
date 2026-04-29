@@ -66,14 +66,10 @@ public constructor (){
             super();
         
     var buttonSize: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 this.totalColumns= displayInfo!.getLastWidth() /buttonSize;
@@ -154,8 +150,6 @@ this.rowsRemainderHalf= (this.rowsRemainder>>1);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("totalColumns: ");

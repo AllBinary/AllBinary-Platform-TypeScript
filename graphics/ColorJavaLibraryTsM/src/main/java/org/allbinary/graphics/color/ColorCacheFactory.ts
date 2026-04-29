@@ -63,26 +63,18 @@ export class ColorCacheFactory
     private cacheInterface: AutomaticCacheInterface = 
                 null
             ;
-        
-        
 
                 init{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var STATIC_BLOCK: string = "Static Block";
-        
-        
 ;
     
 

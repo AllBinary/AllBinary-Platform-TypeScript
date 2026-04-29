@@ -18,9 +18,6 @@
 
 
 
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { MultiGeographicMapBehavior } from "../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js";
 
     
@@ -70,12 +67,8 @@ export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopView
         
 
     private readonly gravityUtil: GravityUtil = GravityUtil.getInstance()!;
-        
-        
 
     private readonly geographicMapBehavior: MultiGeographicMapBehavior = new MultiGeographicMapBehavior();
-        
-        
 
     private readonly autoStepBlocks: boolean
 
@@ -115,15 +108,13 @@ this.offsetY= offsetY;
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
                         if(!hasSolidBlock)
                         
                                     {
-                                    this.gravityUtil!.process(velocityProperties);
+                                    this.gravityUtil!.process(velocityProperties, gravityUtil!.GAME_GRAVITY_VELOCITY);
     
 velocityProperties!.limitXYToForwardAndReverseMaxVelocity();
     
@@ -151,21 +142,17 @@ this.gravity();
     //var y = y
 
     var xCellPosition: number = layer.getXP() + -x;
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() + -y;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -179,21 +166,17 @@ this.gravity();
     //var y = y
 
     var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() + -y;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -207,21 +190,17 @@ this.gravity();
     //var y = y
 
     var xCellPosition: number = layer.getXP() + -x;
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() + -y +layer.getHeight();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -235,21 +214,17 @@ this.gravity();
     //var y = y
 
     var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() + -y +layer.getHeight();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -261,21 +236,17 @@ this.gravity();
     //var layer = layer
 
     var xCellPosition: number = layer.getXP()!;
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() +layer.getHeight();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
@@ -287,28 +258,24 @@ this.gravity();
     //var layer = layer
 
     var xCellPosition: number = layer.getXP() +layer.getWidth();
-        
-        
 ;
     
 
     var yCellPosition: number = layer.getYP() +layer.getHeight();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapInterfaceArray[0]!.getCellPositionAtNoThrow(xCellPosition, yCellPosition);;
+                        return geographicMapInterfaceArray[0]!.getCellPositionAtXYNoThrow(xCellPosition, yCellPosition);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
+    public getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellTypeArray = geographicMapCellTypeArray
     //var velocityProperties = velocityProperties
@@ -319,14 +286,10 @@ var y = y
     var geographicMapCellPosition: GeographicMapCellPosition = 
                 null
             ;
-        
-        
 ;
     
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopLeft(geographicMapInterfaceArray, layer, x, y)!;
-        
-        
 ;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topLeftGeographicMapCellPosition, velocityProperties, layer);
@@ -348,8 +311,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                 
 
     var topRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionTopRight(geographicMapInterfaceArray, layer, x, y)!;
-        
-        
 ;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, topRightGeographicMapCellPosition, velocityProperties, layer);
@@ -371,8 +332,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                 
 
     var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomLeft(geographicMapInterfaceArray, layer, x, y)!;
-        
-        
 ;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomLeftGeographicMapCellPosition, velocityProperties, layer);
@@ -394,8 +353,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                 
 
     var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = this.getPositionBottomRight(geographicMapInterfaceArray, layer, x, y)!;
-        
-        
 ;
     
 geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, bottomRightGeographicMapCellPosition, velocityProperties, layer);
@@ -438,14 +395,10 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                                     {
                                     
     var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPosition;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
@@ -456,14 +409,10 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
     var hasOffMap: boolean = this.isOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
@@ -534,7 +483,7 @@ this.previousGeographicMapCellPosition=
                                 )
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
+                                    layer =  as TopViewCharacterInterfacelayerlayer
 layer.
                     terrainMove(geographicMapInterfaceArray, geographicMapCellTypeArray, x, y);
     
@@ -558,9 +507,7 @@ layer.
     //var x = x
     //var y = y
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray, geographicMapCellTypeArray, velocityProperties, layer, x, y)!;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition = this.getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray, geographicMapCellTypeArray, velocityProperties, layer, x, y)!;
 ;
     
 this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geographicMapCellPosition, velocityProperties, layer, x, y);
@@ -602,8 +549,6 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
     //var layer = layer
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getLeftPosition(geographicMapInterfaceArray, layer)!;
-        
-        
 ;
     
 
@@ -613,17 +558,13 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
                         
                                     {
                                     
-    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getInstance(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
-        
-        
+    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
 ;
     
 this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
@@ -634,7 +575,7 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
+                                    layer =  as TopViewCharacterInterfacelayerlayer
 layer.
                     leftp();
     
@@ -642,7 +583,7 @@ layer.
                                     }
                                 
                         else {
-                            velocityProperties!.getVelocityXBasicDecimalP()!.set(0);
+                            velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
 
                         }
@@ -651,7 +592,7 @@ layer.
                                     }
                                 
                         else {
-                            layer = layerlayer as TopViewCharacterInterface
+                            layer =  as TopViewCharacterInterfacelayerlayer
 layer.
                     leftp();
     
@@ -673,8 +614,6 @@ layer.
     //var layer = layer
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getRightPosition(geographicMapInterfaceArray, layer)!;
-        
-        
 ;
     
 
@@ -684,17 +623,13 @@ layer.
                         
                                     {
                                     
-    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getInstance(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
-        
-        
+    var possibleStepGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!.getAt(geographicMapCellPosition!.getColumn(), geographicMapCellPosition!.getRow() -1)!;
 ;
     
 this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographicMapCellTypeArray, possibleStepGeographicMapCellPosition);
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
@@ -705,7 +640,7 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         if(this.autoStepBlocks)
                         
                                     {
-                                    layer = layerlayer as TopViewCharacterInterface
+                                    layer =  as TopViewCharacterInterfacelayerlayer
 layer.
                     rightp();
     
@@ -713,7 +648,7 @@ layer.
                                     }
                                 
                         else {
-                            velocityProperties!.getVelocityXBasicDecimalP()!.set(0);
+                            velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
 
                         }
@@ -722,7 +657,7 @@ layer.
                                     }
                                 
                         else {
-                            layer = layerlayer as TopViewCharacterInterface
+                            layer =  as TopViewCharacterInterfacelayerlayer
 layer.
                     rightp();
     

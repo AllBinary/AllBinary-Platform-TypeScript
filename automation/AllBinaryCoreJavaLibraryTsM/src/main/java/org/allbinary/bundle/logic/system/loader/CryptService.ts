@@ -82,24 +82,16 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Exception } from "./Exception.js";
-
 export class CryptService
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abCryptUtil: AbCryptUtil = AbCryptUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -118,14 +110,10 @@ this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commo
         try {
             
     var key: string = AbKeys.getInstance()!.getKey(abeClientInformation, name)!;
-        
-        
 ;
     
 
     var decrypted: number[] = this.abCryptUtil!.decrypt(inputStream, key)!;
-        
-        
 ;
     
 
@@ -167,16 +155,12 @@ this.showLicenseDialog(abeClientInformation, e);
     
 
     var basicTextJDialog: BasicTextJDialog = new BasicTextJDialog(e.message);
-        
-        
 ;
     
 
         try {
             
     var abeLicenseInterface: AbeLicenseInterface = AbeLicenseInterfaceFactory.getInstance()!.getLicenseInstance(abeClientInformation)!;
-        
-        
 ;
     
 

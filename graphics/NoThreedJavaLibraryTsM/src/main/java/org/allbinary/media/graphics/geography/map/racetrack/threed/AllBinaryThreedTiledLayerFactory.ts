@@ -52,8 +52,6 @@ export class AllBinaryThreedTiledLayerFactory
         
 
     private static readonly instance: AllBinaryThreedTiledLayerFactory = new AllBinaryThreedTiledLayerFactory();
-        
-        
 
     public static getInstance(): AllBinaryThreedTiledLayerFactory{
 
@@ -73,7 +71,8 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw new Error("No Threed")
+                            throw new Error("No Threed");
+                    
 }
 
 

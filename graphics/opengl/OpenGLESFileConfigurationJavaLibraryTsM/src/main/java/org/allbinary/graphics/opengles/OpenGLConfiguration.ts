@@ -101,8 +101,6 @@ export class OpenGLConfiguration
         
 
     private static readonly instance: OpenGLConfiguration = new OpenGLConfiguration();
-        
-        
 
     public static getInstance(): OpenGLConfiguration{
 
@@ -115,36 +113,20 @@ export class OpenGLConfiguration
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly FILE: string = "OpenGLConfiguration.dat";
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private opengl: boolean = false;
-        
-        
 
     private type: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD;
-        
-        
 
     private imageColor: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
-        
-        
 
     private color: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
-        
-        
 
     private versionSelector: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT;
-        
-        
 private constructor (){
 
             super();
@@ -181,32 +163,22 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     read(){
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 
     var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
-        
-        
 ;
     
 
     var openGLValue: number = dataInputStream!.readInt()!;
-        
-        
 ;
     
 
@@ -231,14 +203,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid OpenGL Setting")
+                            throw new Error("Invalid OpenGL Setting");
+                    
 
                         }
                             
 
     var version: string = dataInputStream!.readUTF()!;
-        
-        
 ;
     
 
@@ -263,14 +234,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading version selector: " +version)
+                            throw new Error("OpenGLConfiguration: Error reading version selector: " +version);
+                    
 
                         }
                             
 
     var type: string = dataInputStream!.readUTF()!;
-        
-        
 ;
     
 
@@ -295,14 +265,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading image color")
+                            throw new Error("OpenGLConfiguration: Error reading image color");
+                    
 
                         }
                             
 
     var imageColor: string = dataInputStream!.readUTF()!;
-        
-        
 ;
     
 
@@ -336,14 +305,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading image color: " +imageColor)
+                            throw new Error("OpenGLConfiguration: Error reading image color: " +imageColor);
+                    
 
                         }
                             
 
     var color: string = dataInputStream!.readUTF()!;
-        
-        
 ;
     
 
@@ -377,7 +345,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading color: " +color)
+                            throw new Error("OpenGLConfiguration: Error reading color: " +color);
+                    
 
                         }
                             
@@ -391,8 +360,6 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
     public write(){
 
     var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;
-        
-        
 ;
     
 
@@ -401,20 +368,14 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 
     var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-        
-        
 ;
     
 closeable= dataOutputStream;
@@ -451,7 +412,8 @@ dataOutputStream!.flush();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -468,12 +430,10 @@ dataOutputStream!.flush();
     public init(){
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
@@ -544,20 +504,14 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
     //var colorLocked = colorLocked
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var modified: boolean = false;
-        
-        
 ;
     
 
@@ -612,7 +566,7 @@ modified= true;
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.setType(gameFeature as OpenGLFeature);
+                                    this.setType( as OpenGLFeaturegameFeature);
     
 modified= true;
     
@@ -637,7 +591,7 @@ modified= true;
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.setImageColor(gameFeature as OpenGLFeature);
+                                    this.setImageColor( as OpenGLFeaturegameFeature);
     
 
                         if(colorLocked)
@@ -696,7 +650,7 @@ modified= true;
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.setColor(gameFeature as OpenGLFeature);
+                                    this.setColor( as OpenGLFeaturegameFeature);
     
 modified= true;
     
@@ -717,7 +671,7 @@ modified= true;
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.setVersionSelector(gameFeature as OpenGLFeature);
+                                    this.setVersionSelector( as OpenGLFeaturegameFeature);
     
 
                                     }
@@ -827,14 +781,10 @@ this.type= type;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(" isOpenGL: ");

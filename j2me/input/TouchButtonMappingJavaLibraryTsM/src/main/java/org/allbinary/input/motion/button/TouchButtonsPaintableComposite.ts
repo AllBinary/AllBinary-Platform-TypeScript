@@ -91,28 +91,22 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TouchButtonsMappingPaintable } from "./TouchButtonsMappingPaintable.js";
+
 export class TouchButtonsPaintableComposite extends ProcessPaintable implements CompleteMotionGestureInputEventListenerInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private inputMappingInterface: InputMappingInterface
 
     touchButtonsPaintable: TouchButtonsMappingPaintable
 
     private timeHelper: TimeDelayHelper = new TimeDelayHelper(250);
-        
-        
 
     private released: boolean = true;
-        
-        
 public constructor (inputMappingInterface: InputMappingInterface, basicColor: BasicColor){
 
             super();
@@ -135,20 +129,12 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
     private readonly METHOD_NAME: string = "onCompleteMotionGestureInputEvent";
-        
-        
 
     private readonly RELEASE: string = "Ignoring: MotionGestureInput Release";
-        
-        
 
     private readonly FAST_REPEAT: string = "Ignoring: MotionGestureInput Repeated To Quickly";
-        
-        
 
     private readonly IGNORE: string = "Ignoring: Until Released";
-        
-        
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
     //var completeMotionGestureInputEvent = completeMotionGestureInputEvent
@@ -158,26 +144,18 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventcompleteMotionGestureInputEvent;
 ;
     
 
     var gameKey: GameKey = gameKeyCompleteMotionGestureInputEvent!.getGameKey()!;
-        
-        
 ;
     
 
     var motionGestureInput: MotionGestureInput = completeMotionGestureInputEvent!.getMotionGestureInput()!;
-        
-        
 ;
     
 
@@ -198,7 +176,7 @@ this.released= true;
                                     }
                                 
 
-                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTime();)
+                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTimeTNT();)
                         
                                     {
                                     this.logUtil!.putF(this.FAST_REPEAT, this, METHOD_NAME);

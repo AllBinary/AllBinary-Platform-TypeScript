@@ -88,8 +88,6 @@ var x = x
 var y = y
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);
-        
-        
 ;
     
 graphicsPipe!.createMatrix();
@@ -106,36 +104,20 @@ graphicsPipe!.translate(x, y);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     minX: number = Integer.MAX_VALUE;
-        
-        
 
     minY: number = Integer.MAX_VALUE;
-        
-        
 
     maxX: number = Integer.MIN_VALUE;
-        
-        
 
     maxY: number = Integer.MIN_VALUE;
-        
-        
 
     private dx: number = 0;
-        
-        
 
     private dy: number = 0;
-        
-        
 
     private width: number= 0
 
@@ -148,19 +130,15 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public calculate(hashMap: HashMap<any, any>){
+    public calculate(hashMap: HashMap){
 var hashMap = hashMap
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = graphicItemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -169,14 +147,10 @@ var hashMap = hashMap
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
 ;
     
 
@@ -198,8 +172,6 @@ setHeight(this.maxY -this.minY);
     
 
     var max: number = getWidth()!;
-        
-        
 ;
     
 
@@ -213,35 +185,25 @@ setHeight(this.maxY -this.minY);
                                 
 
     var middle: number = max /2;
-        
-        
 ;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var s: string = new StringMaker().
                             append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
-        
-        
 ;
     
 this.logUtil!.putF(s, this, commonStrings!.GET_INSTANCE);
     
 
     var currentMiddleX: number = this.minX +getWidth() /2;
-        
-        
 ;
     
 
     var currentMiddleY: number = this.minY +getHeight() /2;
-        
-        
 ;
     
 this.dx= middle -currentMiddleX;
@@ -253,7 +215,7 @@ this.dy= middle -currentMiddleY;
 
                 //@Throws(Error::class)
             
-    public transform(hashMap: HashMap<any, any>){
+    public transform(hashMap: HashMap){
 var hashMap = hashMap
 this.calculate(hashMap);
     
@@ -262,15 +224,11 @@ this.logUtil!.putF(new StringMaker().
     
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = graphicItemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -279,26 +237,18 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
 ;
     
 
     var list: BasicArrayList = translate(item.getPointsInterface()!.getPoints(), dx, dy)!;
-        
-        
 ;
     
 
     var newPoints: Points = new Points();
-        
-        
 ;
     
 newPoints!.addPoints(list);
@@ -318,14 +268,10 @@ var pointVector = pointVector
         try {
             
     var newVector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = pointVector!.size()!;
-        
-        
 ;
     
 
@@ -334,14 +280,10 @@ var pointVector = pointVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index); as GPoint;
-        
-        
+    var point: GPoint =  as GPointpointVector!.get(index);;
 ;
     
 
@@ -391,7 +333,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

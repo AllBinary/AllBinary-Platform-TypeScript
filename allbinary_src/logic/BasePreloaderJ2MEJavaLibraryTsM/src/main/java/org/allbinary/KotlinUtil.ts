@@ -32,8 +32,6 @@ export class KotlinUtil
         
 
     private static readonly KT: string = "kt";
-        
-        
 
     public static isKotlin(): boolean{
 

@@ -70,8 +70,6 @@ export class GameGraphicsResourceUtil
         
 
     private static readonly instance: GameGraphicsResourceUtil = new GameGraphicsResourceUtil();
-        
-        
 
     public static getInstance(): GameGraphicsResourceUtil{
 
@@ -84,20 +82,12 @@ export class GameGraphicsResourceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly SPRITE: string = "_sprite";
-        
-        
 
     public readonly QUARTER: string = "_quarter";
-        
-        
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (){
 
             super();
@@ -111,8 +101,6 @@ public constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
@@ -127,20 +115,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     getString(): string{
 
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var graphicsFeature: GraphicsFeature = graphicsFeatureFactory!.NONE;
-        
-        
 ;
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -183,33 +165,27 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getString(graphicsFeature);;
+                        return getStringForFeature(graphicsFeature);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public getString(graphicsFeature: GraphicsFeature): string{
-var graphicsFeature = graphicsFeature
+    public getStringForFeature(graphicsFeature: GraphicsFeature): string{
+    //var graphicsFeature = graphicsFeature
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -254,7 +230,8 @@ stringBuffer!.append(this.SPRITE);
                             
 
 
-                            throw new Error("None/Unknown Sub Image Resource Type Specified")
+                            throw new Error("None/Unknown Sub Image Resource Type Specified");
+                    
 
                         }
                             
@@ -274,7 +251,8 @@ stringBuffer!.append(this.SPRITE);
                             
 
 
-                            throw new Error("None/Unknown Main Image Resource Type Specified")
+                            throw new Error("None/Unknown Main Image Resource Type Specified");
+                    
 
                         }
                             

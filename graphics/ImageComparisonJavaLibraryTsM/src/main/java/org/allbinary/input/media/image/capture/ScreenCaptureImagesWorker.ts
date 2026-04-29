@@ -60,6 +60,8 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
         
 import { CaptureWorkerInterface } from "./CaptureWorkerInterface.js";
 
+import { ScreenScavangerRobot } from "./ScreenScavangerRobot.js";
+
 import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
 
 import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
@@ -70,12 +72,8 @@ export class ScreenCaptureImagesWorker extends BasicEventHandler implements Capt
     private index: number
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private running: boolean= false
 
@@ -125,25 +123,19 @@ setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
 
         while(isRunning())
         {
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
     var bufferedImage: BufferedImage = this.screenScavangerRobot!.getScreenAsBufferedImages()[0]!;
-        
-        
 ;
     
 
-    var frame: Long = index as Long;
-        
-        
+    var frame: number = index;
 ;
     
 index++;
@@ -152,13 +144,11 @@ CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCa
     
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
-        
-        
 ;
     
 fireEvent(capturedImageEvent);
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 setRunning(false);
     

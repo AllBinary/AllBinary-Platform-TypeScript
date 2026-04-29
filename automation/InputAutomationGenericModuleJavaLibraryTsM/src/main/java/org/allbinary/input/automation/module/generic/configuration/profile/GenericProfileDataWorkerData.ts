@@ -43,8 +43,6 @@ export class GenericProfileDataWorkerData
         
 
     public NAME: string = "GENERIC_PROFILE_DATA_WORKER_NAME";
-        
-        
 private constructor (){
 
             super();

@@ -67,8 +67,6 @@ export class ValidationView extends OrderView implements ValidationComponentInte
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -84,8 +82,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -121,8 +117,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
-        
-        
 ;
     
 this.basketReview= orderItems!.getBasketReview(this.order.getId());
@@ -180,8 +174,6 @@ this.basketReview= orderItems!.getBasketReview(this.order.getId());
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -213,8 +205,6 @@ stringBuffer!.append("<br />");
                                 
 
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
-        
-        
 ;
     
 this.basketReview= orderItems!.getBasketReview(this.order.getId());

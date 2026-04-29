@@ -121,14 +121,10 @@ this.scoreString= (this.score).toString();
     public getAsBytes(): number[]{
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-        
-        
 ;
     
 outputStream!.writeUTF(this.getName());
@@ -174,8 +170,6 @@ this.name= name;
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 

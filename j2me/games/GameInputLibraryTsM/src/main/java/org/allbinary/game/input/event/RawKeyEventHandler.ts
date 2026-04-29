@@ -63,8 +63,6 @@ export class RawKeyEventHandler
         
 
     private static readonly instance: RawKeyEventHandler = new RawKeyEventHandler();
-        
-        
 
     public static getInstance(): RawKeyEventHandler{
 
@@ -77,16 +75,10 @@ export class RawKeyEventHandler
 
 
     private static readonly TOTAL_LISTENERS: string = "Total Listeners: ";
-        
-        
 
     private static readonly LISTENER_LABEL: string = " Listener: ";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     eventListenerInterfaceList: BasicArrayList
 public constructor (){
@@ -111,8 +103,6 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     
 
     var size: number = vector.size()!;
-        
-        
 ;
     
 
@@ -121,11 +111,9 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-eventListenerInterface= vector.get(index); as RawKeyEventListener;
+eventListenerInterface=  as RawKeyEventListenervector.get(index);;
     
 this.addListener(eventListenerInterface);
     
@@ -188,8 +176,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -197,7 +183,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
+            eventListenerInterface=  as RawKeyEventListenerthis.eventListenerInterfaceList!.get(index);;
     
 this.process(keyCode, deviceId, repeated, eventListenerInterface);
     
@@ -207,8 +193,6 @@ this.process(keyCode, deviceId, repeated, eventListenerInterface);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
@@ -247,8 +231,6 @@ eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(TOTAL_LISTENERS);
@@ -261,8 +243,6 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -270,7 +250,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
+            eventListenerInterface=  as RawKeyEventListenerthis.eventListenerInterfaceList!.get(index);;
     
 stringBuffer!.append(LISTENER_LABEL);
     
@@ -282,8 +262,6 @@ stringBuffer!.append(eventListenerInterface!.toString());
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);

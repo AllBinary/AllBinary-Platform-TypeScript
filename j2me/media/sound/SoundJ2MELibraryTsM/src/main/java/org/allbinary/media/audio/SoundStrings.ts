@@ -43,8 +43,6 @@ export class SoundStrings
         
 
     private static readonly instance: SoundStrings = new SoundStrings();
-        
-        
 
     public static getInstance(): SoundStrings{
 
@@ -57,28 +55,16 @@ export class SoundStrings
 
 
     public readonly STOP_ALL: string = "stopAll";
-        
-        
 
     public readonly CLOSE_ALL: string = "closeAll";
-        
-        
 
     public readonly SOUND: string = " Sound: ";
-        
-        
 
     public readonly INIT_SOUND: string = "Initializing Sound: ";
-        
-        
 
     public readonly STOPPING_SOUND: string = "Stopping Sound: ";
-        
-        
 
     public readonly CLOSING_SOUND: string = "Closing Sound: ";
-        
-        
 
 }
                 

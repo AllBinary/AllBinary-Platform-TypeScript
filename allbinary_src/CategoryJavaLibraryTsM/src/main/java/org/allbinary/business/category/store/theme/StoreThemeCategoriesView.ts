@@ -73,21 +73,15 @@ var document = document
 
     var node: Node = new StoreThemeCategoryView(this.categoryInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 
     var childArray: any[] = this.categoryInterface!.getChildNodes()!.toArray()!;
-        
-        
 ;
     
 
     var size: number = childArray!.length
                 ;
-        
-        
 ;
     
 
@@ -96,21 +90,15 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var childCategoryInterface: CategoryInterface = childArray[i]! as CategoryInterface;
-        
-        
+    var childCategoryInterface: CategoryInterface =  as CategoryInterfacechildArray[i]!;
 ;
     
 
-    var childCategoryNode: Node = new StoreThemeCategoriesView(childCategoryInterface as StoreThemeCategoryInterface).
+    var childCategoryNode: Node = new StoreThemeCategoriesView( as StoreThemeCategoryInterfacechildCategoryInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(childCategoryNode);

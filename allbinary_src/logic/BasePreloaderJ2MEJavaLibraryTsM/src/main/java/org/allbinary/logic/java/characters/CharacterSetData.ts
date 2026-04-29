@@ -43,8 +43,6 @@ export class CharacterSetData
         
 
     private static readonly instance: CharacterSetData = new CharacterSetData();
-        
-        
 
     public static getInstance(): CharacterSetData{
 
@@ -62,28 +60,16 @@ private constructor (){
 
 
     public readonly US_ASCII: string = "US-ASCII";
-        
-        
 
     public readonly ISO_8859_1: string = "ISO-8859-1";
-        
-        
 
     public readonly UTF_8: string = "UTF-8";
-        
-        
 
     public readonly UTF_16: string = "UTF-16";
-        
-        
 
     public readonly UTF_16BE: string = "UTF-16BE";
-        
-        
 
     public readonly UTF_16LE: string = "UTF-16LE";
-        
-        
 
 }
                 

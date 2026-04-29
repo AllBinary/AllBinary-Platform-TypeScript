@@ -63,8 +63,6 @@ export class UpDownVectorAI extends BasicAI {
     private velocityInterface: BasicVelocityProperties
 
     private index: number = 0;
-        
-        
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var ownerLayerInterface = ownerLayerInterface
@@ -74,14 +72,12 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
-this.velocityInterface!.getVelocityYBasicDecimalP()!.set(0);
+this.velocityInterface!.getVelocityYBasicDecimalP()!.setint(0);
     
 }
 
@@ -92,8 +88,6 @@ this.velocityInterface!.getVelocityYBasicDecimalP()!.set(0);
 var allBinaryLayerManager = allBinaryLayerManager
 
     var y: number = this.getOwnerLayerInterface()!.getHeight() *270;
-        
-        
 ;
     
 
@@ -102,13 +96,11 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     {
                                     
     var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;
-        
-        
 ;
     
-basicDecimal!.set(0);
+basicDecimal!.setint(0);
     
-basicDecimal!.add(y);
+basicDecimal!.addint(y);
     
 this.index++;
     
@@ -121,13 +113,11 @@ this.index++;
                                     {
                                     
     var basicDecimal: BasicDecimal = this.velocityInterface!.getVelocityYBasicDecimalP()!;
-        
-        
 ;
     
-basicDecimal!.set(0);
+basicDecimal!.setint(0);
     
-basicDecimal!.subtract(y);
+basicDecimal!.subtractint(y);
     
 this.index++;
     

@@ -61,16 +61,10 @@ export class AbSqlBean extends AbSqlRow {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly METHOD_GET_FIELD: string = "getField";
-        
-        
 
     private readonly METHOD_IS_SUBSET_OF_ENTRY: string = "isSubsetOfEntry";
-        
-        
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                         //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
@@ -87,8 +81,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
     //var requestedField = requestedField
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -111,22 +103,16 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
         try {
             
     var field: string = this.stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
@@ -191,13 +177,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
 }
 
 
-    public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
+    public getField(keysAndValues: HashMap, requestedField: string): string{
     //var keysAndValues = keysAndValues
     //var requestedField = requestedField
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -214,27 +198,19 @@ stringBuffer!.append(sqlStrings!.WHERE);
         try {
             
     var field: string = this.stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var set: Set = keysAndValues!.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -251,11 +227,9 @@ stringBuffer!.append(sqlStrings!.WHERE);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
-key= keyArray[i]! as String;
+key=  as StringkeyArray[i]!;
     
 value= .toCharArray();
     
@@ -280,14 +254,10 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
@@ -334,8 +304,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
             {
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -358,14 +326,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
 }
 
 
-    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
+    public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap): string{
     //var key = key
     //var value = value
     //var columnsAndValues = columnsAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -374,15 +340,11 @@ stringBuffer!.append(sqlStrings!.SELECT);
         try {
             
     var keyArray: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 stringBuffer!.append(this.commonSeps!.SPACE);
@@ -395,8 +357,6 @@ stringBuffer!.append(key);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 stringBuffer!.append(this.commonSeps!.SPACE);
@@ -421,14 +381,10 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
@@ -444,15 +400,11 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
         {
 
     var keyArray2: any[] = columnsAndValues!.keySet()!.toTypedArray()!;
-        
-        
 ;
     
 
     var size2: number = keyArray2!.length
                 ;
-        
-        
 ;
     
 
@@ -461,8 +413,6 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 
                         for (
     var i: number = 0;
-        
-        
 i < size2; i++)
         {
 columnName= keyArray2[i]!.toString();
@@ -470,7 +420,7 @@ columnName= keyArray2[i]!.toString();
 field= rset.getObject(columnName)!.toString();
     
 
-                        if(field.compareTo(columnsAndValues!.get(columnName) as String) != 0)
+                        if(field.compareTo( as StringcolumnsAndValues!.get(columnName)) != 0)
                         
                                     {
                                     
@@ -515,8 +465,6 @@ field= rset.getObject(columnName)!.toString();
             {
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 

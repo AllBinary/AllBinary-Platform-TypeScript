@@ -70,8 +70,6 @@ export class AnimationFactorySpriteScaleUtil
         
 
     private static readonly instance: AnimationFactorySpriteScaleUtil = new AnimationFactorySpriteScaleUtil();
-        
-        
 
     public static getInstance(): AnimationFactorySpriteScaleUtil{
 
@@ -84,24 +82,14 @@ export class AnimationFactorySpriteScaleUtil
 
 
     private readonly imageCache: ImageCache = ImageCacheFactory.getInstance()!;
-        
-        
 
     private readonly imageScaleUtil: ImageScaleUtil = ImageScaleUtil.getInstance()!;
-        
-        
 
     private readonly openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
-        
-        
 
     private readonly j2seMath: J2SEMath = J2SEMath.getInstance()!;
-        
-        
 
     private readonly openGLESImageExclusionUtil: OpenGLESImageExclusionUtil = OpenGLESImageExclusionUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -113,8 +101,6 @@ export class AnimationFactorySpriteScaleUtil
     //var scaleHeight = scaleHeight
 
     var spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -131,14 +117,10 @@ export class AnimationFactorySpriteScaleUtil
                                     {
                                     
     var scaleX: number = (scaleWidth) /(width);
-        
-        
 ;
     
 
     var scaleY: number = (scaleHeight) /(height);
-        
-        
 ;
     
 
@@ -147,7 +129,7 @@ export class AnimationFactorySpriteScaleUtil
                                     {
                                     scaledImage= this.openGLUtil!.add(image);
     
-sprite= spriteFactory!.create(scaledImage, width, height);
+sprite= spriteFactory!.createSprite(scaledImage, width, height);
     
 
                                     }
@@ -159,40 +141,28 @@ sprite= spriteFactory!.create(scaledImage, width, height);
                                     {
                                     
     var width2: number = this.j2seMath!.round((scaleWidth) -0.5f)!;
-        
-        
 ;
     
 
     var height2: number = this.j2seMath!.round((scaleHeight) -0.5f)!;
-        
-        
 ;
     
 
     var multiplesOf16Width: number = width2 /16;
-        
-        
 ;
     
 
     var by16Width: number = multiplesOf16Width *16;
-        
-        
 ;
     
 scaleX= (by16Width) /width;
     
 
     var multiplesOf16Height: number = height2 /16;
-        
-        
 ;
     
 
     var by16Height: number = multiplesOf16Height *16;
-        
-        
 ;
     
 scaleY= (by16Height) /height;
@@ -218,9 +188,9 @@ scaleY= (by16Height) /height;
 
                                     }
                                 
-scaledImage= this.imageScaleUtil!.createImage(this.imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
+scaledImage= this.imageScaleUtil!.createImage2(this.imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
     
-sprite= spriteFactory!.create(scaledImage, (width *scaleX), (height *scaleY));
+sprite= spriteFactory!.createSprite(scaledImage, Math.round(width *scaleX), Math.round(height *scaleY));
     
 
                         }
@@ -231,7 +201,7 @@ sprite= spriteFactory!.create(scaledImage, (width *scaleX), (height *scaleY));
                         else {
                             scaledImage= this.openGLUtil!.add(image);
     
-sprite= spriteFactory!.create(scaledImage, width, height);
+sprite= spriteFactory!.createSprite(scaledImage, width, height);
     
 
                         }

@@ -48,8 +48,6 @@ export class LocationPaintable
         
 
     private static readonly instance: LocationPaintable = new LocationPaintable();
-        
-        
 
     public static getInstance(): LocationPaintable{
 
@@ -61,7 +59,7 @@ export class LocationPaintable
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y

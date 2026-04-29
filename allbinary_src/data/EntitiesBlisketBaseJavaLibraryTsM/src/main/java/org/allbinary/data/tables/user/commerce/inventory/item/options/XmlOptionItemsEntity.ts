@@ -70,12 +70,8 @@ export class XmlOptionItemsEntity extends AbSqlBean implements XmlOptionItemsEnt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "xmloptionitems";
-        
-        
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -156,8 +152,6 @@ var value = value
     public createTableStatement(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(BasicItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL);
@@ -183,9 +177,9 @@ stringBuffer!.append(XmlOptionItemData.XML_FILE_STATUS)!.append(this.sqlTypeStri
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
+super.updateWhere(BasicItemData.ID,  as StringupdatedValues!.get(BasicItemData.ID), updatedValues);
     
 }
 

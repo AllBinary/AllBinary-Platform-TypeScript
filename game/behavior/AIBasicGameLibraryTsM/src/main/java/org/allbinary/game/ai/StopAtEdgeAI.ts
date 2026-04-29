@@ -76,62 +76,42 @@ var gameInput = gameInput
 var allBinaryLayerManager = allBinaryLayerManager
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = (ownerLayerInterface as VelocityInterfaceCompositeInterface);
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ( as VelocityInterfaceCompositeInterfaceownerLayerInterface);
 ;
     
 
     var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;
-        
-        
 ;
     
 
     var x: number = ownerLayerInterface!.getXP()!;
-        
-        
 ;
     
 
     var y: number = ownerLayerInterface!.getYP()!;
-        
-        
 ;
     
 
     var x2: number = ownerLayerInterface!.getX2()!;
-        
-        
 ;
     
 
     var y2: number = ownerLayerInterface!.getY2()!;
-        
-        
 ;
     
 
     var width: number = ownerLayerInterface!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = ownerLayerInterface!.getHeight()!;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -140,7 +120,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     {
                                     ownerLayerInterface!.setPosition(displayInfo!.getLastWidth() -width, y, ownerLayerInterface!.getZP());
     
-velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
+velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
     
 
                                     }
@@ -151,7 +131,7 @@ velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
                                     {
                                     ownerLayerInterface!.setPosition(x, displayInfo!.getLastHeight() -height, ownerLayerInterface!.getZP());
     
-velocityProperties!.getVelocityXBasicDecimalP()!.set(0);
+velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
 
                                     }
@@ -162,7 +142,7 @@ velocityProperties!.getVelocityXBasicDecimalP()!.set(0);
                                     {
                                     ownerLayerInterface!.setPosition(0, y, ownerLayerInterface!.getZP());
     
-velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
+velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
     
 
                                     }
@@ -173,7 +153,7 @@ velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
                                     {
                                     ownerLayerInterface!.setPosition(x, 0, ownerLayerInterface!.getZP());
     
-velocityProperties!.getVelocityXBasicDecimalP()!.set(0);
+velocityProperties!.getVelocityXBasicDecimalP()!.setint(0);
     
 
                                     }

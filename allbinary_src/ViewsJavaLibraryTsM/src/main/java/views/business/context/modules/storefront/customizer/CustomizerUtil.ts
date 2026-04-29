@@ -79,8 +79,6 @@ export class CustomizerUtil
         
 
     private static readonly instance: CustomizerUtil = new CustomizerUtil();
-        
-        
 
     public static getInstance(): CustomizerUtil{
 
@@ -93,8 +91,6 @@ export class CustomizerUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -117,26 +113,18 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var viewName: string = transformInfoInterface!.getName()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecustomizerTransformInfoInterface;
 ;
     
 
     var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -164,26 +152,18 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var viewName: string = transformInfoInterface!.getName()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = customizerTransformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecustomizerTransformInfoInterface;
 ;
     
 
     var customizedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewName, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -210,8 +190,6 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
@@ -238,8 +216,6 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
@@ -267,34 +243,24 @@ var domNodeInterface = domNodeInterface
                                 
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var allViewsToBeModified: Vector = this.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 document.appendChild(domNodeInterface!.toXmlNode(document));
     
 
     var documentString: string = DomDocumentHelper.toString(document)!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -318,8 +284,6 @@ transformInfoInterface!.setData(documentString);
     
 
     var size: number = allViewsToBeModified!.length!;
-        
-        
 ;
     
 
@@ -328,20 +292,14 @@ transformInfoInterface!.setData(documentString);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
-        
-        
+    var transformInfo: TransformInfo =  as TransformInfoallViewsToBeModified!.get(index);;
 ;
     
 
     var viewNameOfViewToBeModified: string = transformInfo!.getName()!;
-        
-        
 ;
     
 
@@ -362,15 +320,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
 ;
     
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -458,8 +412,6 @@ var documentString = documentString
                                 
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 specifiedTransformInfoInterface!.setData(documentString);
@@ -484,26 +436,18 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
     var allViewsToBeModified: Vector = transformInfoObjectConfigInterface!.getGroupTransforms()!;
-        
-        
 ;
     
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var size: number = allViewsToBeModified!.length!;
-        
-        
 ;
     
 
@@ -512,32 +456,22 @@ var transformInfoInterface = transformInfoInterface
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModified!.get(index);;
 ;
     
 
     var viewNameOfViewToBeModified: string = nextTransformInfoInterface!.getName()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
 ;
     
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -551,7 +485,8 @@ index < size; index++)
 
 
 
-                            throw new Error("No Components Specified in ObjectConfig")
+                            throw new Error("No Components Specified in ObjectConfig");
+                    
 }
 
 

@@ -49,6 +49,8 @@ import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStr
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImmutableBasicArrayList } from "./ImmutableBasicArrayList.js";
+
 import { BasicArrayList } from "./BasicArrayList.js";
 
 export class BasicArrayListUtil
@@ -57,8 +59,6 @@ export class BasicArrayListUtil
         
 
     private static readonly instance: BasicArrayListUtil = new BasicArrayListUtil();
-        
-        
 
     public static getInstance(): BasicArrayListUtil{
 
@@ -74,14 +74,10 @@ export class BasicArrayListUtil
 var args = args
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 list.add(commonPhoneStrings!.ONE);
@@ -111,23 +107,15 @@ console.log(list);
 
     public readonly NULL_ARRAY_OF_ARRAY: BasicArrayList[][] = Array(0) { arrayOfNulls<BasicArrayList?>(0) }
                                                             ;
-        
-        
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
     private readonly immutableInstance: BasicArrayList = new ImmutableBasicArrayList("Immutable", 0);
-        
-        
 
     public getRandom(list: BasicArrayList): any{
 var list = list
 
     var i_random: number = this.getRandomIndex(list)!;
-        
-        
 ;
     
 
@@ -154,8 +142,6 @@ var list = list
     //var list = list
 
     var lastMinusOneIndex: number = list.size() -2;
-        
-        
 ;
     
 
@@ -164,8 +150,6 @@ var list = list
     
 
     var size: number = lastMinusOneIndex /2;
-        
-        
 ;
     
 
@@ -178,17 +162,15 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index <= size; index++)
         {
 secondSwapIndex= lastMinusOneIndex -index;
     
-temp= list.remove(index);
+temp= list.removeAt(index);
     
-list.add(index, list.remove(secondSwapIndex));
+list.addAt(index, list.removeAt(secondSwapIndex));
     
-list.add(secondSwapIndex +1, temp);
+list.addAt(secondSwapIndex +1, temp);
     
 }
 
@@ -199,20 +181,14 @@ list.add(secondSwapIndex +1, temp);
     //var list = list
 
     var S_LABEL: string = " s: ";
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.TOTAL_LABEL);
@@ -225,14 +201,10 @@ stringBuffer!.appendint(size);
 
                         for (
     var index: number = size -1;
-        
-        
 index >= 0; index--)
         {
 
-    var usedList: BasicArrayList = list.objectArray[index]! as BasicArrayList;
-        
-        
+    var usedList: BasicArrayList =  as BasicArrayListlist.objectArray[index]!;
 ;
     
 stringBuffer!.append(S_LABEL);

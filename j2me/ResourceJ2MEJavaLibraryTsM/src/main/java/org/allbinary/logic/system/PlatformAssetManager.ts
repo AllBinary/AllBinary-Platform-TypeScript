@@ -49,8 +49,6 @@ export class PlatformAssetManager
         
 
     private static readonly instance: PlatformAssetManager = new PlatformAssetManager();
-        
-        
 
     public static getInstance(): PlatformAssetManager{
 
@@ -68,14 +66,10 @@ export class PlatformAssetManager
     //var resource = resource
 
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(resource)!;
-        
-        
 ;
     
 

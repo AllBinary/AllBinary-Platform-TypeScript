@@ -46,8 +46,6 @@ export class BaseSecretComposite
         
 
     public static readonly NULL_SECRET_COMPOSITE: BaseSecretComposite = new BaseSecretComposite();
-        
-        
 
                 //@Throws(Error::class)
             

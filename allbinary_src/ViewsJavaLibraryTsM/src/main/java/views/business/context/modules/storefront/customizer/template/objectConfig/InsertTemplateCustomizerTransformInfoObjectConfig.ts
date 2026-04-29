@@ -67,8 +67,6 @@ export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplat
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -119,14 +117,10 @@ var aParentViewName = aParentViewName
                                 
 
     var document: Document = this.toXmlDoc()!;
-        
-        
 ;
     
 
     var parentComponentsNodeList: NodeList = document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
@@ -146,8 +140,6 @@ var aParentViewName = aParentViewName
                                 
 
     var componentNode: Node = parentComponentsNodeList!.item(0)!.getChildNodes()!.item(0)!;
-        
-        
 ;
     
 
@@ -179,22 +171,16 @@ parentComponentsNodeList!.item(0)!.appendChild(new TransformInfoDomNodeView(aPar
                                 
 
     var objectConfigNode: Node = document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 
     var parentComponentsNode: Node = document.createElement(TransformInfosData.getInstance()!.NAME)!;
-        
-        
 ;
     
 objectConfigNode!.appendChild(parentComponentsNode);
     
 
     var transformInfoDomNodeView: TransformInfoDomNodeView = new TransformInfoDomNodeView(aParentViewName);
-        
-        
 ;
     
 parentComponentsNode!.appendChild(transformInfoDomNodeView!.toXmlNode(document));

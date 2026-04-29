@@ -55,9 +55,7 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 export class CircleAnimation extends Animation implements ColorCompositeInterface {
         
 
-    readonly TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
-        
-        
+    readonly TOTAL_ANGLE: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
 
     width: number
 
@@ -81,7 +79,7 @@ this.setBasicColorP(basicColor);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

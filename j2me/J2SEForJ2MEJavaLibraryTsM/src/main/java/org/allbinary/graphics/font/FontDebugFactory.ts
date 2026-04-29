@@ -49,8 +49,6 @@ export class FontDebugFactory
         
 
     private static readonly instance: FontDebugFactory = new FontDebugFactory();
-        
-        
 
     public static getInstance(): FontDebugFactory{
 

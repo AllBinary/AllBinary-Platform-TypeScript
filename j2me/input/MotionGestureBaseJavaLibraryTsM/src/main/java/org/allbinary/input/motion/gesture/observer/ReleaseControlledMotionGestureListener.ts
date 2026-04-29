@@ -79,24 +79,14 @@ export class ReleaseControlledMotionGestureListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private currentMotionGesture: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
-        
-        
 
     private isMouseGestureOccurring: boolean = false;
-        
-        
 
     private motionGestureCollection: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private signed: CompleteMotionGestureListenerInterface
 public constructor (signed: CompleteMotionGestureListenerInterface){
@@ -226,8 +216,6 @@ var ev = ev
     
 
     var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
-        
-        
 ;
     
 

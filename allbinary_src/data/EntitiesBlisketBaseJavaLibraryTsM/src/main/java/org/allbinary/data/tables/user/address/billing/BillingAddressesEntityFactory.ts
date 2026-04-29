@@ -52,8 +52,6 @@ export class BillingAddressesEntityFactory
         
 
     private static readonly instance: BillingAddressesEntityFactory = new BillingAddressesEntityFactory();
-        
-        
 
     public static getInstance(): BillingAddressesEntityFactory{
 
@@ -66,8 +64,6 @@ export class BillingAddressesEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -94,8 +90,6 @@ var userName = userName
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

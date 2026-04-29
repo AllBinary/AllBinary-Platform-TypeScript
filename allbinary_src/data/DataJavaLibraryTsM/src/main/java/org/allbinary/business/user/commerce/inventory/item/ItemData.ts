@@ -43,8 +43,6 @@ export class ItemData
         
 
     public static readonly ITEM: string = "ITEM";
-        
-        
 
 }
                 

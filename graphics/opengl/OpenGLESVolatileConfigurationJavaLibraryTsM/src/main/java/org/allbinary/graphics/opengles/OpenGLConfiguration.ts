@@ -74,8 +74,6 @@ export class OpenGLConfiguration
         
 
     private static readonly instance: OpenGLConfiguration = new OpenGLConfiguration();
-        
-        
 
     public static getInstance(): OpenGLConfiguration{
 
@@ -88,32 +86,18 @@ export class OpenGLConfiguration
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private opengl: boolean = false;
-        
-        
 
     private type: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AS_GAME_THREAD;
-        
-        
 
     private imageColor: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
-        
-        
 
     private color: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.IMAGE_COLOR_DEPTH_4444;
-        
-        
 
     private versionSelector: OpenGLFeature = OpenGLFeatureFactory.getInstance()!.OPENGL_AUTO_SELECT;
-        
-        
 private constructor (){
 
             super();
@@ -129,12 +113,10 @@ private constructor (){
     public init(){
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
@@ -205,20 +187,14 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
     //var colorLocked = colorLocked
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var modified: boolean = false;
-        
-        
 ;
     
 
@@ -273,7 +249,7 @@ modified= true;
                         if(gameFeature != this.getType())
                         
                                     {
-                                    this.setType(gameFeature as OpenGLFeature);
+                                    this.setType( as OpenGLFeaturegameFeature);
     
 modified= true;
     
@@ -298,7 +274,7 @@ modified= true;
                         if(this.getImageColor() != gameFeature)
                         
                                     {
-                                    this.setImageColor(gameFeature as OpenGLFeature);
+                                    this.setImageColor( as OpenGLFeaturegameFeature);
     
 
                         if(colorLocked)
@@ -357,7 +333,7 @@ modified= true;
                         if(this.getColor() != gameFeature)
                         
                                     {
-                                    this.setColor(gameFeature as OpenGLFeature);
+                                    this.setColor( as OpenGLFeaturegameFeature);
     
 modified= true;
     
@@ -378,7 +354,7 @@ modified= true;
                         if(features.isFeature(gameFeature))
                         
                                     {
-                                    this.setVersionSelector(gameFeature as OpenGLFeature);
+                                    this.setVersionSelector( as OpenGLFeaturegameFeature);
     
 
                                     }
@@ -479,14 +455,10 @@ this.type= type;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(" isOpenGL: ");

@@ -46,11 +46,11 @@ export interface RaceTrackGeographicMapInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getLevelInstance(id: Integer): RaceTrackGeographicMap
+    getLevelInstance(id: number): RaceTrackGeographicMap
 
                 //@Throws(Error::class)
             
-    getTrackInstance(id: Integer): RaceTrackGeographicMap
+    getTrackInstance(id: number): RaceTrackGeographicMap
 
 }
                 

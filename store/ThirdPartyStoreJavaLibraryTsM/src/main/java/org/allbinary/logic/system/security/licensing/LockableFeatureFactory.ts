@@ -49,8 +49,6 @@ export class LockableFeatureFactory
         
 
     private static readonly instance: LockableFeatureFactory = new LockableFeatureFactory();
-        
-        
 
     public static getInstance(): LockableFeatureFactory{
 
@@ -63,8 +61,6 @@ export class LockableFeatureFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public getList(): BasicArrayList{
 

@@ -49,7 +49,7 @@ export class RaceTrackInfo
          {
         
 
-    private id: Integer
+    private id: number
 
     private name: string
 
@@ -64,7 +64,7 @@ export class RaceTrackInfo
     private worstContinuePosition: number
 
     private totalLaps: number
-public constructor (id: Integer, name: string, raceTrackFrictionProperties: RaceTrackFrictionProperties, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, qualifyTime: number, worstContinuePosition: number, totalLaps: number){
+public constructor (id: number, name: string, raceTrackFrictionProperties: RaceTrackFrictionProperties, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, qualifyTime: number, worstContinuePosition: number, totalLaps: number){
 
             super();
             //var id = id
@@ -94,7 +94,7 @@ this.totalLaps= totalLaps;
 }
 
 
-    public getId(): Integer{
+    public getId(): number{
 
 
 
@@ -104,7 +104,7 @@ this.totalLaps= totalLaps;
 }
 
 
-    setId(id: Integer){
+    setId(id: number){
 var id = id
 this.id= id;
     

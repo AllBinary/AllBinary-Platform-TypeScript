@@ -45,6 +45,8 @@ import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js"
         
 import { TransformInfoFactoryInterface } from "./TransformInfoFactoryInterface.js";
 
+import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
+
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoHttpStoreFactory
@@ -53,8 +55,6 @@ export class TransformInfoHttpStoreFactory
         
 
     private static readonly instance: TransformInfoHttpStoreFactory = new TransformInfoHttpStoreFactory();
-        
-        
 
     public static getInstance(): TransformInfoHttpStoreFactory{
 
@@ -73,7 +73,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
+    public getInstance(databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
 var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext

@@ -43,8 +43,6 @@ export class EntryData
         
 
     private static readonly instance: EntryData = new EntryData();
-        
-        
 
     public static getInstance(): EntryData{
 
@@ -62,40 +60,22 @@ private constructor (){
 
 
     public readonly ID: string = "ENTRY_ID";
-        
-        
 
     public readonly ENCRYPTION: string = "ENTRY_ENCRYPTION";
-        
-        
 
     public readonly TIMECREATED: string = "ENTRY_TIMECREATED";
-        
-        
 
     public readonly LASTMODIFIED: string = "ENTRY_LASTMODIFIED";
-        
-        
 
     public readonly DEFAULT: string = "ENTRY_DEFAULT";
-        
-        
 
     public readonly SPECIAL: string = "ENTRY_SPECIAL";
-        
-        
 
     public readonly ENABLE: string = "ENTRY_ENABLE";
-        
-        
 
     public readonly YES: string = "Yes";
-        
-        
 
     public readonly NO: string = "No";
-        
-        
 
 }
                 

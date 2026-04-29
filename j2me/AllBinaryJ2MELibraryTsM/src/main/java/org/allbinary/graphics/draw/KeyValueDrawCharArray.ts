@@ -60,8 +60,6 @@ export class KeyValueDrawCharArray
     private valueX: number
 
     private value: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-        
-        
 
     private len: number= 0
 public constructor (label: string, x: number){

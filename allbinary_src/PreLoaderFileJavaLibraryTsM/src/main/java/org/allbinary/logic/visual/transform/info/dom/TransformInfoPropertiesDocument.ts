@@ -85,8 +85,6 @@ export class TransformInfoPropertiesDocument
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly document: Document
 public constructor (filePath: string){
@@ -95,40 +93,30 @@ public constructor (filePath: string){
             //var filePath = filePath
 
     var xmlFile: AbFile = new AbFile(filePath);
-        
-        
 ;
     
-this.document= DomDocumentFileHelper.create(xmlFile);
+this.document= DomDocumentFileHelper.createDocument(xmlFile);
     
 }
 
 
-    public toTransformInfoPropertiesHashMap(): HashMap<any, any>{
+    public toTransformInfoPropertiesHashMap(): HashMap{
 
         try {
             
-    var transformInfoPropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var transformInfoPropertiesHashMap: HashMap = new HashMap();
 ;
     
 
     var transformInfosNode: Node = this.document.getElementsByTagName(TransformInfosData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 
     var transformInfosChildNodeList: NodeList = transformInfosNode!.getChildNodes()!;
-        
-        
 ;
     
 
     var transformInfoNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, transformInfosChildNodeList)!;
-        
-        
 ;
     
 
@@ -142,8 +130,6 @@ this.document= DomDocumentFileHelper.create(xmlFile);
                                 
 
     var size: number = transformInfoNodeVector!.length!;
-        
-        
 ;
     
 
@@ -160,11 +146,9 @@ this.document= DomDocumentFileHelper.create(xmlFile);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-node= transformInfoNodeVector!.get(index); as Node;
+node=  as NodetransformInfoNodeVector!.get(index);;
     
 transformInfoProperties= TransformInfoPropertiesFactory.getInstance()!.getInstance(node);
     
@@ -188,8 +172,6 @@ transformInfoPropertiesHashMap!.put(transformInfoProperties!.getName(), transfor
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "toTransformInfoPropertiesHashMap()", e);

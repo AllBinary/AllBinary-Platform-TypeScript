@@ -83,12 +83,8 @@ export class TitleBodyCustomizerView extends HttpStoreComponentView implements D
         
 
     private static readonly NAME: string = "None";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     titleBody: TitleBodyValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -104,9 +100,9 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.titleBody as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.titleBody);
     
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -117,8 +113,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
 var document = document
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
@@ -146,15 +140,11 @@ var document = document
         try {
             
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
-        
-        
 ;
     
 
     var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -179,7 +169,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

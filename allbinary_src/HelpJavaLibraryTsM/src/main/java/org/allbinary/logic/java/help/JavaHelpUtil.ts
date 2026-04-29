@@ -70,14 +70,16 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Point } from "./Point.js";
+
+import { Dimension } from "./Dimension.js";
+
 export class JavaHelpUtil
             extends Object
          {
         
 
     private static readonly instance: JavaHelpUtil = new JavaHelpUtil();
-        
-        
 
     public static getInstance(): JavaHelpUtil{
 
@@ -95,8 +97,6 @@ var args = args
         try {
             
     var javaHelpUtil: JavaHelpUtil = JavaHelpUtil.getInstance()!;
-        
-        
 ;
     
 javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/InputAutomationJavaApplication/AllBinaryInputAutomationHelp/AllBinaryInputAutomation.hs"));
@@ -111,25 +111,15 @@ javaHelpUtil!.show(javaHelpUtil!.getHelpSet("G:/mnt/bc/mydev/working/automation/
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly point: Point = new Point(0, 0);
-        
-        
 
     private readonly dimension: Dimension = new Dimension(640, 480);
-        
-        
 
     private contextSensitiveHelpActionEvent: ActionEvent = new ActionEvent(new JLabel(), ActionEvent.ACTION_FIRST, 
                             null);
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -143,14 +133,10 @@ var filePath = filePath
             
     var helpSetURI: URI = new File(filePath).
                             toURI()!;
-        
-        
 ;
     
 
     var helpSetURL: URL = helpSetURI!.toURL()!;
-        
-        
 ;
     
 
@@ -210,8 +196,6 @@ var helpSet = helpSet
         try {
             
     var helpBroker: HelpBroker = helpSet!.createHelpBroker()!;
-        
-        
 ;
     
 helpBroker!.setLocation(this.point);

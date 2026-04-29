@@ -75,14 +75,10 @@ this.categoryPropertiesInterface= categoryPropertiesInterface;
 var document = document
 
     var categoryNode: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
-    var newCategoryNode: Element = categoryNode as Element;
-        
-        
+    var newCategoryNode: Element =  as ElementcategoryNode;
 ;
     
 newCategoryNode!.setAttribute(CategoryData.getInstance()!.LABEL, this.categoryPropertiesInterface!.getValue());

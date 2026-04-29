@@ -74,9 +74,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(StreetAddressData.ID);
@@ -102,11 +100,9 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
                                 
 
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
-this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
+this.streetAddress= billingAddressesEntity!.get(this.value);
     
 
                         if(this.streetAddress == 

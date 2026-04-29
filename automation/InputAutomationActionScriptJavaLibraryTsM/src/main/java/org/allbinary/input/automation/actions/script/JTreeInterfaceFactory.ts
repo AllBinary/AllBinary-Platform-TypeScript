@@ -37,8 +37,6 @@ export class JTreeInterfaceFactory
         
 
     private static readonly instance: JTreeInterfaceFactory = new JTreeInterfaceFactory();
-        
-        
 
     public static getInstance(): JTreeInterfaceFactory{
 

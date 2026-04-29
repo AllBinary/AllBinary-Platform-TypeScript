@@ -70,8 +70,6 @@ export class ModifyTag extends HelperTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);
                     var tagHelperFactoryInterface = tagHelperFactoryInterface
@@ -98,22 +96,16 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
         try {
             
     var helperClass: Function = this.getHelper()!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("insert", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.getHelper(), 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.getHelper(), 
+                            null);;
 ;
     
 
@@ -128,8 +120,6 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             {
 
     var error: string = "Failed to insert";
-        
-        
 ;
     
 
@@ -159,22 +149,16 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
         try {
             
     var helperClass: Function = this.getHelper()!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.delete, 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.getHelper(), 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.getHelper(), 
+                            null);;
 ;
     
 
@@ -189,8 +173,6 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -220,22 +202,16 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
         try {
             
     var helperClass: Function = this.getHelper()!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("update", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.getHelper(), 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.getHelper(), 
+                            null);;
 ;
     
 
@@ -250,8 +226,6 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             {
 
     var error: string = "Failed to update";
-        
-        
 ;
     
 
@@ -284,15 +258,11 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Command: ");
@@ -325,8 +295,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -335,8 +303,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     {
                                     
     var output: string = this.insert()!;
-        
-        
 ;
     
 
@@ -357,8 +323,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     {
                                     
     var output: string = this.delete()!;
-        
-        
 ;
     
 
@@ -379,8 +343,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     {
                                     
     var output: string = this.update()!;
-        
-        
 ;
     
 

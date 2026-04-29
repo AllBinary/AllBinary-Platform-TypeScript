@@ -45,6 +45,8 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
         
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export class PickedUpLayerInterfaceFactoryBase
@@ -53,14 +55,13 @@ export class PickedUpLayerInterfaceFactoryBase
         
 
     public static readonly NULL_PICKED_UP_LAYER_FACTORY_BASE: PickedUpLayerInterfaceFactoryBase = new PickedUpLayerInterfaceFactoryBase();
-        
-        
 
     public getIconLayer(): AllBinaryLayer{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -68,7 +69,8 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -76,7 +78,8 @@ export class PickedUpLayerInterfaceFactoryBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

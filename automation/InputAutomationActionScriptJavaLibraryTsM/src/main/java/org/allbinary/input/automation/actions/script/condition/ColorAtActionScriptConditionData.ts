@@ -43,40 +43,22 @@ export class ColorAtActionScriptConditionData
         
 
     public NAME: string = "COLOR_AT_ACTION_CONDITION_NAME";
-        
-        
 
     public LOCATION_X: string = "COLOR_AT_ACTION_CONDITION_LOCATION_X";
-        
-        
 
     public LOCATION_Y: string = "COLOR_AT_ACTION_CONDITION_LOCATION_Y";
-        
-        
 
     public MIN_RED: string = "COLOR_AT_ACTION_CONDITION_MIN_RED";
-        
-        
 
     public MAX_RED: string = "COLOR_AT_ACTION_CONDITION_MAX_RED";
-        
-        
 
     public MIN_GREEN: string = "COLOR_AT_ACTION_CONDITION_MIN_GREEN";
-        
-        
 
     public MAX_GREEN: string = "COLOR_AT_ACTION_CONDITION_MAX_GREEN";
-        
-        
 
     public MIN_BLUE: string = "COLOR_AT_ACTION_CONDITION_MIN_BLUE";
-        
-        
 
     public MAX_BLUE: string = "COLOR_AT_ACTION_CONDITION_MAX_BLUE";
-        
-        
 private constructor (){
 
             super();

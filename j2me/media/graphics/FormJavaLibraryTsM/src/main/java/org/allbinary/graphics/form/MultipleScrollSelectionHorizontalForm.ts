@@ -66,7 +66,7 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
 
                 //@Throws(Error::class)
             
-    public static create(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
+    public static createForm(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
     //var title = title
     //var items = items
     //var rectangle = rectangle
@@ -84,8 +84,6 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
 
 
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.toInt()!;
-        
-        
 public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
@@ -114,8 +112,6 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
 
 
     private logged: boolean = false;
-        
-        
 
     public paint(graphics: Graphics){
     //var graphics = graphics
@@ -123,32 +119,22 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
         try {
             
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var start: number = this.getStartIndex()!;
-        
-        
 ;
     
 
     var size: number = this.size()!;
-        
-        
 ;
     
 
     var dx: number = x;
-        
-        
 ;
     
 
     var dy: number = y;
-        
-        
 ;
     
 
@@ -168,8 +154,6 @@ graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
                             
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
@@ -184,11 +168,9 @@ graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
 
                         for (
     var index: number = start;
-        
-        
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item=  as CustomItemInterfacethis.get(index);;
     
 
                         if(dx >= this.rectangle.getMaxX())
@@ -219,8 +201,6 @@ PreLogUtil.put(new StringMaker().
                                     {
                                     
     var dx2: number = this.paintItem(graphics, index, item, dx, dy) +border;
-        
-        
 ;
     
 this.paintable.paint(graphics, index, dx, dy);
@@ -245,7 +225,8 @@ this.paintable.paint(graphics, index, dx, dy);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             

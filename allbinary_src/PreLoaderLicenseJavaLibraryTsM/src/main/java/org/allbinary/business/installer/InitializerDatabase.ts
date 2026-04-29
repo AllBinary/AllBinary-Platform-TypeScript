@@ -70,9 +70,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { InitializerData } from "./InitializerData.js";
+import { DynamicInitDb } from "./DynamicInitDb.js";
 
-import { Class } from "./Class.js";
+import { InitializerData } from "./InitializerData.js";
 
 export class InitializerDatabase
             extends Object
@@ -80,24 +80,14 @@ export class InitializerDatabase
         
 
     private static readonly MAXDB: number = 30;
-        
-        
 
     private static readonly MAX: number = 16;
-        
-        
 
     private static readonly MIN: number = 4;
-        
-        
 
     private static readonly MINPASSWORD: number = 0;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private adminDbUserName: string
 
@@ -119,33 +109,23 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
     //var map = map
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var keys: Set = map.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -154,20 +134,14 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
-        
-        
+    var key: string =  as StringkeyArray[index]!;
 ;
     
 
-    var values: string[] = map.get(key); as Array<String?>;
-        
-        
+    var values: string[] =  as Array<String?>map.get(key);;
 ;
     
 hashMap!.put(key.toCharArray()
@@ -192,7 +166,7 @@ this.getFormData(abeClientInformation, hashMap);
     
 }
 
-public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
+public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap){
 
             super();
             //var abeClientInformation = abeClientInformation
@@ -202,39 +176,33 @@ this.getFormData(abeClientInformation, initHashMap);
 }
 
 
-    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
+    public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap){
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
         try {
             
     var initializerData: InitializerData = InitializerData.getInstance()!;
-        
-        
 ;
     
-setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as String);
+setAdminDbUserName( as StringhashMap!.get(initializerData!.DBUSER));
     
-setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as String);
+setAdminDbPassword( as StringhashMap!.get(initializerData!.DBPASSWORD));
     
-setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as String);
+setAdminJdbcDriver( as StringhashMap!.get(initializerData!.ADMINJDBCDRIVER));
     
-setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as String);
+setAdminSchema( as StringhashMap!.get(initializerData!.ADMINSCHEMA));
     
-setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as String);
+setAdminServer( as StringhashMap!.get(initializerData!.ADMINSERVER));
     
-setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String);
+setAdminPort( as StringhashMap!.get(initializerData!.ADMINPORT));
     
 
     var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();
-        
-        
 ;
     
 
     var adminDbName: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 dbConnectionInfo!.setJdbcDriver(getAdminJdbcDriver());
@@ -251,7 +219,7 @@ dbConnectionInfo!.setServer(getAdminServer());
     
 dbConnectionInfo!.setPort(getAdminPort());
     
-this.initDb= new DynamicInitDb(abeClientInformation, dbConnectionInfo as DatabaseConnectionInfoInterface);
+this.initDb= new DynamicInitDb(abeClientInformation,  as DatabaseConnectionInfoInterfacedbConnectionInfo);
     
 
                 //: 
@@ -286,8 +254,6 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
@@ -309,8 +275,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     public isValid(): boolean{
 
     var isValid: boolean = true;
-        
-        
 ;
     
 
@@ -324,8 +288,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -359,8 +321,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 var jdbcDriver = jdbcDriver
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("The JDBC driver (");
@@ -381,20 +341,14 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
     public getInvalidInfo(): string{
 
     var isValid: boolean = true;
-        
-        
 ;
     
 
     var isJdbcDriversValid: boolean = true;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -410,8 +364,6 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 

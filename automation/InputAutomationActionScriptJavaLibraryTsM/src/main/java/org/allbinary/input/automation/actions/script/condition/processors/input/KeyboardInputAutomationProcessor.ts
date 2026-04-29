@@ -67,28 +67,20 @@ export class KeyboardInputAutomationProcessor
 var keyActionScriptInputInterface = keyActionScriptInputInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.toString(), "KeyInputAutomationProcessor", commonStrings!.PROCESS);
     
 
     var inputRobotInterface: InputRobotInterface = keyActionScriptInputInterface!.getInputRobotInterface()!;
-        
-        
 ;
     
 
-    var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;
-        
-        
+    var integer: number[] = keyActionScriptInputInterface!.getKeyArray()!;
 ;
     
 
@@ -101,8 +93,6 @@ logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.
 
                         for (
     var index: number = 0;
-        
-        
 index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
@@ -124,8 +114,6 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 
                         for (
     var index: number = keyActionScriptInputInterface!.getKeyArray()!.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -149,8 +137,6 @@ index >= 0; index--)
 
                         for (
     var index: number = 0;
-        
-        
 index < keyActionScriptInputInterface!.getKeyArray()!.length; index++)
         {
 
@@ -175,18 +161,14 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
                                 
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(keyActionScriptInputInterface!.getDelayBetweenKeys());
-        
-        
 ;
     
 
     var toLong: number = 0;
-        
-        
 ;
     
 
-        while(!timeHelper!.isTime(); || toLong > 6000)
+        while(!timeHelper!.isTimeTNT(); || toLong > 6000)
         {
 toLong++;
     

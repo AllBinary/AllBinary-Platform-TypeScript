@@ -51,8 +51,6 @@ export class TransactionEntityFactory
         
 
     private static readonly instance: TransactionEntityFactory = new TransactionEntityFactory();
-        
-        
 
     public static getInstance(): TransactionEntityFactory{
 
@@ -65,8 +63,6 @@ export class TransactionEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

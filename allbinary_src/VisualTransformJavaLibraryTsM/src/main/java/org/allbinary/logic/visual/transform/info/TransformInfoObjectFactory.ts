@@ -66,8 +66,6 @@ export class TransformInfoObjectFactory
         
 
     private static readonly instance: TransformInfoObjectFactory = new TransformInfoObjectFactory();
-        
-        
 
     public static getInstance(): TransformInfoObjectFactory{
 
@@ -80,8 +78,6 @@ export class TransformInfoObjectFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -101,8 +97,6 @@ private constructor (){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, commonStrings!.GET_INSTANCE);
@@ -112,26 +106,20 @@ this.logUtil!.putF("Creating View: " +transformInfoInterface!.getName(), this, c
                                 
 
     var params: any[] = new Array(1);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(1);
-        
-        
 ;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]= transformInfoInterface as Object;
+params[0]=  as ObjecttransformInfoInterface;
     
 
-    var anyType: TransformInterface = AbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params); as TransformInterface;
-        
-        
+    var anyType: TransformInterface =  as TransformInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getObjectFile(), classes, params);;
 ;
     
 
@@ -148,8 +136,6 @@ params[0]= transformInfoInterface as Object;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("\nNo Such View Name: ");
@@ -163,7 +149,8 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -171,7 +158,8 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                             
 
 
-                            throw new Error("No Such View Object since transformInfo is null")
+                            throw new Error("No Such View Object since transformInfo is null");
+                    
 
                         }
                             
@@ -190,8 +178,6 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
             {
 
     var error: string = "Failed To Get Instance: ";
-        
-        
 ;
     
 
@@ -211,8 +197,6 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
@@ -223,7 +207,8 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -231,8 +216,6 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
             {
 
     var error: string = "Failed To Get Instance: ";
-        
-        
 ;
     
 
@@ -252,8 +235,6 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
@@ -264,7 +245,8 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

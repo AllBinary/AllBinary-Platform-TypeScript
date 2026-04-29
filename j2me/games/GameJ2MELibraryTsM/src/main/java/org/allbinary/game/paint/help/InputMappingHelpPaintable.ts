@@ -103,53 +103,31 @@ export class InputMappingHelpPaintable extends HelpPaintable {
         
 
     private static readonly AND: string = " and ";
-        
-        
 
     private static readonly SEP: string = ", ";
-        
-        
 
     private static readonly MORE_THAN_TWO_IN_LIST_AND: string = ", and ";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private gameInputMappingArray: GameInputMapping[]
 
     private keyMappingArray: BasicArrayList[] = [];
-        
-        
 
     private actionBasicColor: BasicColor[] = [];
-        
-        
 
     private inputBasicColorArray: BasicColor[][] = Array(0) { arrayOfNulls<BasicColor?>(0) }
                                                             ;
-        
-        
 
     private selectedBasicColor: BasicColor
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
-        
-        
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
             super("Input Mapping", backgroundBasicColor, basicColor);
                         //var gameInputMappingArray = gameInputMappingArray
@@ -186,48 +164,34 @@ this.update(NONE, NONE);
     //var selectedInput = selectedInput
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
     
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
-        
-        
 ;
     
 
     var size: number = this.gameInputMappingArray!.length
                 ;
-        
-        
 ;
     
 
     var keyInfo: string[] = new Array(size);
-        
-        
 ;
     
 
     var keyMappingArray: BasicArrayList[] = new Array(size);
-        
-        
 ;
     
 
     var actionBasicColor: BasicColor[] = new Array(size);
-        
-        
 ;
     
 
     var inputBasicColorArray: BasicColor[][] = arrayOfNulls<Array<BasicColor?>>(size)
                                                             ;
-        
-        
 ;
     
 
@@ -248,8 +212,6 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
@@ -260,8 +222,6 @@ list= gameKeyMapping!.getInputMapping()!.getMappedInput(gameKey);
     
 
     var size2: number = list.size()!;
-        
-        
 ;
     
 inputBasicColorArray[index]= new Array(size2);
@@ -272,8 +232,6 @@ inputBasicColorArray[index]= new Array(size2);
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; index2++)
         {
 inputBasicColorArray[index]![index2]= this.basicColor;
@@ -292,8 +250,6 @@ actionBasicColor[index]= this.selectedBasicColor;
     
 
     var indexOfSelectedInput: number = list.indexOf(selectedInput)!;
-        
-        
 ;
     
 
@@ -339,8 +295,6 @@ super.setInputInfoP(keyInfo);
 var keyList = keyList
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -349,8 +303,6 @@ var keyList = keyList
     
 
     var size: number = keyList!.size()!;
-        
-        
 ;
     
 
@@ -359,11 +311,9 @@ var keyList = keyList
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-key= keyList!.objectArray[index]! as Input;
+key=  as InputkeyList!.objectArray[index]!;
     
 stringBuffer!.append(key.getName());
     
@@ -416,20 +366,14 @@ stringBuffer!.append(key.getName());
     public getHeight(): number{
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var inputInfo: string[] = this.inputInfo;
-        
-        
 ;
     
 
     var size: number = (inputInfo!.length +4);
-        
-        
 ;
     
 
@@ -442,57 +386,39 @@ stringBuffer!.append(key.getName());
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
     //var graphics = graphics
 
     var font: Font = graphics.getFont()!;
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
-        
-        
 ;
     
 
     var beginWidth: number = (font.stringWidth(this.title)>>1);
-        
-        
 ;
     
 graphics.setColor(this.basicColor!.toInt());
@@ -501,33 +427,23 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
     
 
     var inputInfo: string[] = this.inputInfo;
-        
-        
 ;
     
 
     var size: number = inputInfo!.length
                 ;
-        
-        
 ;
     
 
     var y: number = 0;
-        
-        
 ;
     
 
     var deltaX: number = 0;
-        
-        
 ;
     
 
     var size2: number = 0;
-        
-        
 ;
     
 
@@ -556,8 +472,6 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 y= (index +3) *charHeight;
@@ -590,11 +504,9 @@ deltaX += font.stringWidth(actionString);
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; index2++)
         {
-input= list.objectArray[index2]! as Input;
+input=  as Inputlist.objectArray[index2]!;
     
 graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt());
     

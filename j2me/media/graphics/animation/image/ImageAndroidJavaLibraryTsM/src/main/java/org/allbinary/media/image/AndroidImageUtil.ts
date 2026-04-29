@@ -69,8 +69,6 @@ export class AndroidImageUtil
             
 
     private static readonly instance: AndroidImageUtil = new AndroidImageUtil();
-        
-        
 
     public static getInstance(): AndroidImageUtil{
 
@@ -82,7 +80,7 @@ export class AndroidImageUtil
 }
 
 
-    public paint(bitmap: Bitmap, originalBitmap: Bitmap, paint: Paint){
+    public paintBitmap(bitmap: Bitmap, originalBitmap: Bitmap, paint: Paint){
     //var bitmap = bitmap
     //var originalBitmap = originalBitmap
     //var paint = paint
@@ -90,8 +88,6 @@ bitmap.eraseColor(Color.TRANSPARENT);
     
 
     var canvas: Canvas = new android.graphics.Canvas();
-        
-        
 ;
     
 canvas.setBitmap(bitmap);
@@ -106,23 +102,17 @@ canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint);
     //var originalImage = originalImage
     //var paint = paint
 
-    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
-        
-        
+    var androidImage: AndroidImageInterface =  as AndroidImageInterfaceimage;
 ;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
     
 
     var canvas: Canvas = androidImage!.getCanvas()!;
-        
-        
 ;
     
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
-        
-        
+    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
 ;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
@@ -136,25 +126,19 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
     //var matrix = matrix
     //var paint = paint
 
-    var androidImage: AndroidImageInterface = image as AndroidImageInterface;
-        
-        
+    var androidImage: AndroidImageInterface =  as AndroidImageInterfaceimage;
 ;
     
 androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
     
 
     var canvas: Canvas = androidImage!.getCanvas()!;
-        
-        
 ;
     
 canvas.concat(matrix);
     
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
-        
-        
+    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
 ;
     
 canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);

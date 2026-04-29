@@ -24,9 +24,6 @@ import { GamePersistanceStrings } from "../../../../org/allbinary/game/configura
 import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
 
     
@@ -80,7 +77,7 @@ super.init(abeClientInformation);
                         if(this.getTotalMapped() == 0 || this.isDefaultNew())
                         
                                     {
-                                    this.getInputMapping()!.add(this.getDefault());
+                                    this.getInputMapping()!.addMapping(this.getDefault());
     
 this.save(abeClientInformation);
     

@@ -78,17 +78,13 @@ var gameCanvas = gameCanvas
 
                 //@Throws(Error::class)
             
-    public processInput(): number{
+    public processInputList(): number{
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -101,11 +97,9 @@ var gameCanvas = gameCanvas
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
     
 this.logUtil!.putF(new StringMaker().
                             append("Start GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKeyEvent))!.toString(), this, GameInputStrings.getInstance()!.PROCESS_INPUT);

@@ -43,8 +43,6 @@ export class LogDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "logdbinitdata.dat";
-        
-        
 public constructor (){
             super(INITFILE, true);
                     

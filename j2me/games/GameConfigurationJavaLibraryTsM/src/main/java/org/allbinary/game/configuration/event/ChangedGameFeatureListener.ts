@@ -46,8 +46,6 @@ export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {
         
 
     private static readonly gameFeatureListener: ChangedGameFeatureListener = new ChangedGameFeatureListener();
-        
-        
 
     public static getInstance(): ChangedGameFeatureListener{
 

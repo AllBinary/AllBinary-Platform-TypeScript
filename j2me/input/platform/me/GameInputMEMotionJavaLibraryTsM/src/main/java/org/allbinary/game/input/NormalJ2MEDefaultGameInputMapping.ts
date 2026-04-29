@@ -58,14 +58,10 @@ public constructor (){
                     
 
     var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-        
-        
 ;
     
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.KEY_NUM2);

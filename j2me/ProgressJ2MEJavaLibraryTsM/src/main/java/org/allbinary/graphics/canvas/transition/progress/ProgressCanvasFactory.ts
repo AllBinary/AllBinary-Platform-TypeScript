@@ -57,8 +57,6 @@ export class ProgressCanvasFactory
         
 
     private PROGRESS_FORM_SCREEN: ProgressCanvas = new ProgressCanvas(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     public static getInstance(): ProgressCanvas{
 

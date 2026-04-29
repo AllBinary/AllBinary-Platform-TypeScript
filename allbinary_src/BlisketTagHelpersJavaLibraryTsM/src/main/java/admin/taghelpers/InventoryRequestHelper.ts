@@ -81,25 +81,19 @@ export class InventoryRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly itemInterface: ItemInterface
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT); as HelperTag;
-        
-        
+    var inventoryTag: HelperTag =  as HelperTagpropertiesHashMap!.get(AbTagData.PARENT);;
 ;
     
 
     var itemView: InventoryItemView = InventoryItemViewParentTagHelper.getInstance()!.getInventoryItemView(inventoryTag)!;
-        
-        
 ;
     
 this.itemInterface= itemView!.getItemInterface();
@@ -113,23 +107,17 @@ this.itemInterface= itemView!.getItemInterface();
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface(); as TableMappingInterface;
-        
-        
+    var dataMappingInterface: TableMappingInterface =  as TableMappingInterfacethis.getItemInterface();;
 ;
     
 
     var values: Vector = dataMappingInterface!.toVector()!;
-        
-        
 ;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(values);
     
 
     var success: string = "Successfully Added Product";
-        
-        
 ;
     
 
@@ -153,8 +141,6 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
             {
 
     var error: string = "Failed to add item to Inventory";
-        
-        
 ;
     
 
@@ -181,23 +167,17 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 
         try {
             
-    var dataMappingInterface: TableMappingInterface = this.getItemInterface(); as TableMappingInterface;
-        
-        
+    var dataMappingInterface: TableMappingInterface =  as TableMappingInterfacethis.getItemInterface();;
 ;
     
 
-    var id: string = dataMappingInterface!.getKey(); as String;
-        
-        
+    var id: string =  as StringdataMappingInterface!.getKey();;
 ;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Successfully Removed the item with ");
@@ -212,8 +192,6 @@ stringBuffer!.append(" from to the Inventory table");
     
 
     var success: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -237,8 +215,6 @@ stringBuffer!.append(" from to the Inventory table");
             {
 
     var error: string = "Failed to remove item with from Inventory";
-        
-        
 ;
     
 
@@ -270,8 +246,6 @@ this.insert();
     
 
     var success: string = "Item Successfully Updated";
-        
-        
 ;
     
 
@@ -295,8 +269,6 @@ this.insert();
             {
 
     var error: string = "Failed To Update Item";
-        
-        
 ;
     
 

@@ -104,11 +104,9 @@ super.paint(graphics, x, y);
                         for (
     var index: number = this.animationArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
-this.animationArray[index]!.paint(graphics, x, y);
+this.animationArray[index]!.paintXY(graphics, x, y);
     
 }
 

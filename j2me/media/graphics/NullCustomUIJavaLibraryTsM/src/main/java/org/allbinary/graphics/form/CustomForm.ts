@@ -43,16 +43,14 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { CustomScreen } from "./CustomScreen.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class CustomForm extends CustomScreen {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (title: string, items: CustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
@@ -135,7 +133,8 @@ var itemNum = itemNum
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

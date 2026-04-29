@@ -57,8 +57,6 @@ export class DismissTitleProgressBarRunnable extends ProgressRunnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super(midletActivity, progressCanvas);
                     var midletActivity = midletActivity
@@ -70,9 +68,7 @@ var progressCanvas = progressCanvas
 }
 
 
-    private readonly ZOOM_OUT_AND_IN: number[] = intArrayOf(TransistionTypes.getInstance()!.ZOOM_OUT,TransistionTypes.getInstance()!.ZOOM_IN);
-        
-        
+    private readonly ZOOM_OUT_AND_IN: number[] = [TransistionTypes.getInstance()!.ZOOM_OUT,TransistionTypes.getInstance()!.ZOOM_IN];
 
     public run(){
 
@@ -85,8 +81,6 @@ var progressCanvas = progressCanvas
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

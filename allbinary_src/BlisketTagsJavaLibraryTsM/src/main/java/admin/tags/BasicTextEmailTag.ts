@@ -62,8 +62,6 @@ export class BasicTextEmailTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private subject: string
 
@@ -92,9 +90,7 @@ this.body= value;
 
         try {
             
-    var propertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var propertiesHashMap: HashMap = new HashMap();
 ;
     
 propertiesHashMap!.put("Subject", this.subject);
@@ -104,15 +100,11 @@ propertiesHashMap!.put("Body", this.body);
 
     var anyType: any = new BasicTextEmailHelperFactory().
                             getInstance(propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("send", 
                             null)!;
-        
-        
 ;
     
 method.invoke(anyType, 
@@ -130,8 +122,6 @@ method.invoke(anyType,
             {
 
     var error: string = "Failed to Send Email.";
-        
-        
 ;
     
 

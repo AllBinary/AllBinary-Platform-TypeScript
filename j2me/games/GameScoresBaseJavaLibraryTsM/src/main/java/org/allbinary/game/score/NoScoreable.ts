@@ -43,8 +43,6 @@ export class NoScoreable extends Scoreable {
         
 
     private static readonly SINGLETON: NoScoreable = new NoScoreable();
-        
-        
 
     public static getInstance(): NoScoreable{
 

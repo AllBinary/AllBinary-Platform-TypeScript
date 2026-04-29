@@ -46,8 +46,6 @@ export class LicenseUtil
         
 
     private static readonly instance: LicenseUtil = new LicenseUtil();
-        
-        
 
     public static getInstance(): LicenseUtil{
 

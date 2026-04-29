@@ -73,31 +73,21 @@ this.basicColor= basicColor;
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 
     public paint(graphics: Graphics){
     //var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var width: number = this.displayInfoSingleton!.getLast()[this.displayInfoSingleton!.WIDTH]!;
-        
-        
 ;
     
 
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);
-        
-        
 ;
     
 graphics.setColor(this.getBasicColorP()!.toInt());

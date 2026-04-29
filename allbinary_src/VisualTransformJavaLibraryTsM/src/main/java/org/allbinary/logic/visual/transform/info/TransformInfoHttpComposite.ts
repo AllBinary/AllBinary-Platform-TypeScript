@@ -52,6 +52,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
+
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoHttpComposite
@@ -60,12 +62,8 @@ export class TransformInfoHttpComposite
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoHttpInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -81,7 +79,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                                     }
                                 
-this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterface;
+this.transformInfoInterface=  as TransformInfoHttpInterfacetransformInfoInterface;
     
 }
 
@@ -118,7 +116,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 }
 
 
-    public getPropertiesHashMap(): HashMap<any, any>{
+    public getPropertiesHashMap(): HashMap{
 
 
 

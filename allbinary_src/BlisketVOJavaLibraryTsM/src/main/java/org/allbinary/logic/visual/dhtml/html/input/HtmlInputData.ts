@@ -43,8 +43,6 @@ export class HtmlInputData
         
 
     private static readonly instance: HtmlInputData = new HtmlInputData();
-        
-        
 
     public static getInstance(): HtmlInputData{
 
@@ -57,43 +55,25 @@ export class HtmlInputData
 
 
     public readonly TEXT: string = "text";
-        
-        
 
     public readonly RADIO: string = "radio";
-        
-        
 
     public readonly CHECKBOX: string = "checkbox";
-        
-        
 
     public readonly HIDDEN: string = "hidden";
-        
-        
 
     public readonly IMAGE: string = "image";
-        
-        
 
     public readonly PASSWORD: string = "password";
-        
-        
 
     public readonly RESET: string = "reset";
-        
-        
 
     public readonly SUBMIT: string = "submit";
-        
-        
 
     public readonly TYPES: string[] = 
                                                         [
                                                             this.TEXT,RADIO,CHECKBOX,HIDDEN,IMAGE,this.PASSWORD,RADIO,RESET,this.SUBMIT
                                                         ];
-        
-        
 
 }
                 

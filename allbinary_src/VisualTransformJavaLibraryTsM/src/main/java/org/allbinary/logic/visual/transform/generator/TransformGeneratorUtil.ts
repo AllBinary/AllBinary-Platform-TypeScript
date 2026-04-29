@@ -70,8 +70,6 @@ export class TransformGeneratorUtil
         
 
     private static readonly instance: TransformGeneratorUtil = new TransformGeneratorUtil();
-        
-        
 
     public static getInstance(): TransformGeneratorUtil{
 
@@ -84,8 +82,6 @@ export class TransformGeneratorUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -111,26 +107,18 @@ private constructor (){
                                 
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface!.getName(), ownerTransformInfoInterface)!;
-        
-        
 ;
     
 
     var result: string = componentInterface!.view()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = componentInterface!.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacecomponentInterface!.getTransformInfoInterface();;
 ;
     
 
     var inputOutputTypeData: InputOutputTypeData = InputOutputTypeData.getInstance()!;
-        
-        
 ;
     
 
@@ -167,7 +155,8 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -45,8 +45,6 @@ export class NormalRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeogra
         
 
     private static readonly instance: NormalRaceTrackGeographicMapCellTypeFactory = new NormalRaceTrackGeographicMapCellTypeFactory();
-        
-        
 
     public static getInstance(): NormalRaceTrackGeographicMapCellTypeFactory{
 

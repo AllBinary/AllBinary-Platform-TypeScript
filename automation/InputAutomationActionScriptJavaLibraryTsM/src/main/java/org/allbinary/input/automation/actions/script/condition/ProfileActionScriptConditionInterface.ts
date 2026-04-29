@@ -57,7 +57,7 @@ export interface ProfileActionScriptConditionInterface extends ProfileActionScri
 
                 //@Throws(Error::class)
             
-    shouldProcess(frame: Long): boolean
+    shouldProcess(frame: number): boolean
 
 }
                 

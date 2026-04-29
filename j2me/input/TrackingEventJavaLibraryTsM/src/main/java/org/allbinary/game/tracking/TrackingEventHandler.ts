@@ -50,8 +50,6 @@ export class TrackingEventHandler extends BasicEventHandler {
         
 
     private static readonly instance: TrackingEventHandler = new TrackingEventHandler();
-        
-        
 
     public static getInstance(): TrackingEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var trackingEventListenerInterface: TrackingEventListenerInterface = eventListenerInterface as TrackingEventListenerInterface;
-        
-        
+    var trackingEventListenerInterface: TrackingEventListenerInterface =  as TrackingEventListenerInterfaceeventListenerInterface;
 ;
     
-trackingEventListenerInterface!.onMovement(eventObject as TrackingEvent);
+trackingEventListenerInterface!.onMovement( as TrackingEventeventObject);
     
 }
 

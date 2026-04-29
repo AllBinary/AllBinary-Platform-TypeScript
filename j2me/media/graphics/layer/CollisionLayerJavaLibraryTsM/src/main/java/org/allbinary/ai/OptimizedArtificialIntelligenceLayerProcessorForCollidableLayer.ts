@@ -62,14 +62,12 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
+    public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var artificialIntelligenceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
-        
-        
+    var artificialIntelligenceCompositeInterface: CollidableCompositeLayer =  as CollidableCompositeLayerlayerInterface;
 ;
     
 artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);

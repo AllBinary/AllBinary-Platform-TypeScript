@@ -50,16 +50,10 @@ export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implemen
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private size: number = 0;
-        
-        
 
     index: number = 0;
-        
-        
 public constructor (){
 
             super();
@@ -90,8 +84,6 @@ var size = size
 
                         for (
     var index: number = size -1;
-        
-        
 index >= this.size; index--)
         {
 this.add();
@@ -148,7 +140,8 @@ var cacheableInterfaces = cacheableInterfaces
 
 
 
-                            throw new Error("No Imple")
+                            throw new Error("No Imple");
+                    
 }
 
 

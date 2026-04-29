@@ -43,8 +43,6 @@ export class GLHolder
         
 
     public isCreated: boolean = true;
-        
-        
 public constructor (){
 
             super();

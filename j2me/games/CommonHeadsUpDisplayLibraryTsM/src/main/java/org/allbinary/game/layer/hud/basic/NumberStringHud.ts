@@ -70,7 +70,7 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 export class NumberStringHud extends BasicHud implements PaintableInterface {
         
 
-    public static create(): NumberStringHud{
+    public static createHud(): NumberStringHud{
 
         try {
             
@@ -86,15 +86,14 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }
 
 
-    public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = NumberStringHud.create()!;
-        
-        
+    public static readonly NULL_NUMBER_STRING_HUD: NumberStringHud = NumberStringHud.createHud()!;
 
     private readonly PREPEND_STRING: string[]
 
@@ -127,15 +126,13 @@ this.PREPEND_STRING= prependString!.toCharArray();
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
-this.offset= myFont!.stringWidth(prependString) +myFont!.charWidth();
+this.offset= myFont!.stringWidth(prependString) +myFont!.defaultCharWidth();
     
 this.valueString= PrimitiveLongSingleton.getInstance()!.NUMBER_CHAR_ARRAYS[0]!;
     
-this.primitiveLongUtil= PrimitiveLongUtil.create(max +1);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(max +1);
     
 this.max= max;
     
@@ -148,7 +145,8 @@ this.value= 0;
                                     
 
 
-                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
+                    
 
                                     }
                                 
@@ -201,38 +199,30 @@ this.set(this.value -value);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset);
+super.paintDX(graphics, PREPEND_STRING, 0, PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, offset);
     
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
 
     var charArray: string[] = this.PREPEND_STRING;
-        
-        
 ;
     
 
     var len: number = this.PREPEND_STRING.length
                 ;
-        
-        
 ;
     
 
     var charArray2: string[] = this.valueString;
-        
-        
 ;
     
 
     var len2: number = this.valueTotalDigits;
-        
-        
 ;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());

@@ -65,8 +65,6 @@ export class AllBinaryMediaManager
         
 
     private static readonly THIS: string = "AllBinaryMediaManagerNoMediaMIDP1";
-        
-        
 
     public static isMuted(): boolean{
 
@@ -99,19 +97,15 @@ var aMuted = aMuted
 var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
 new Sounds(soundsFactoryInterface).
                             init();
@@ -134,19 +128,15 @@ System.gc();
 }
 
 
-    public static createPlayer(stream: InputStream, type: string): Player{
+    public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
 var stream = stream
 var type = type
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
@@ -155,7 +145,7 @@ logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NoPlayer.NO_PLAYER as Player;
+                        return  as PlayerNoPlayer.NO_PLAYER;
     
 }
 
@@ -164,14 +154,10 @@ logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
 var locator = locator
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, "creatPlayer(locator)");
@@ -180,7 +166,7 @@ logUtil!.putF(commonString!.START, THIS, "creatPlayer(locator)");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NoPlayer.NO_PLAYER as Player;
+                        return  as PlayerNoPlayer.NO_PLAYER;
     
 }
 

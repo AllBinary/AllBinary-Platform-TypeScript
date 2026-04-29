@@ -49,8 +49,6 @@ export class AllBinarySensorManager
         
 
     private static readonly SINGLETON: AllBinarySensorManager = new AllBinarySensorManager();
-        
-        
 
     public static getInstance(): AllBinarySensorManager{
 
@@ -63,12 +61,8 @@ export class AllBinarySensorManager
 
 
     public readonly ORIENTATION_SENSOR_INPUT: string = "Orientation Sensor Input";
-        
-        
 
     public readonly ORIENTATION_TYPE: string = "Orientation Type";
-        
-        
 private constructor (){
 
             super();
@@ -80,8 +74,6 @@ private constructor (){
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public getSensorNamesList(): BasicArrayList{
 

@@ -58,12 +58,8 @@ export class SmallDelete
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private fileName: string
 
@@ -99,20 +95,14 @@ endIndex= this.string.indexOf(end);
                                     {
                                     
     var text: string = this.string.substring(endIndex, this.string.length)!;
-        
-        
 ;
     
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-        
-        
 ;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
-        
-        
 ;
     
 idOutData!.writeBytes(text);
@@ -177,26 +167,18 @@ endIndex= this.string.indexOf(end);
                                     {
                                     
     var newStart: string = this.string.substring(0, beginIndex)!;
-        
-        
 ;
     
 
     var text: string = this.string.substring(endIndex +end.length, this.string.length)!;
-        
-        
 ;
     
 
     var idFile: FileOutputStream = new FileOutputStream(this.fileName);
-        
-        
 ;
     
 
     var idOutData: DataOutputStream = new DataOutputStream(idFile);
-        
-        
 ;
     
 idOutData!.writeBytes(newStart +newText +text);

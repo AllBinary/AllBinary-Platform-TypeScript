@@ -43,8 +43,6 @@ export class PointsResources
         
 
     private static readonly SINGLETON: PointsResources = new PointsResources();
-        
-        
 
     public static getInstance(): PointsResources{
 
@@ -57,20 +55,12 @@ export class PointsResources
 
 
     public RESOURCE: string = "points_drop_20_by_20.png";
-        
-        
 
     public RESOURCE_2: string = "points_2_drop_20_by_20.png";
-        
-        
 
     public RESOURCE_3: string = "points_3_drop_20_by_20.png";
-        
-        
 
     public RESOURCE_4: string = "points_4_drop_20_by_20.png";
-        
-        
 private constructor (){
 
             super();

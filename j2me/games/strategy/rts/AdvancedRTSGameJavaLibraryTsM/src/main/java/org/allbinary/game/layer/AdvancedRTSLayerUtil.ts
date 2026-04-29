@@ -56,8 +56,6 @@ export class AdvancedRTSLayerUtil
         
 
     private static readonly instance: AdvancedRTSLayerUtil = new AdvancedRTSLayerUtil();
-        
-        
 
     public static getInstance(): AdvancedRTSLayerUtil{
 
@@ -69,15 +67,13 @@ export class AdvancedRTSLayerUtil
 }
 
 
-    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
+    public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable{
     //var baseRaceTrackGeographicMap = baseRaceTrackGeographicMap
 
-    var hashtable: Hashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;
-        
-        
+    var hashtable: Hashtable = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;
 ;
     
-hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getInstance(50));
+hashtable.put(WorkWaypoint.ID, SmallIntegerSingletonFactory.getInstance()!.getAt(50));
     
 
 

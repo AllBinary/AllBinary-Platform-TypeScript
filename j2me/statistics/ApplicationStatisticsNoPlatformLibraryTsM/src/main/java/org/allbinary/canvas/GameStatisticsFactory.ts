@@ -39,6 +39,8 @@
         
 import { BaseGameStatistics } from "./BaseGameStatistics.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 expect export class GameStatisticsFactory extends BaseGameStatistics {
         
 

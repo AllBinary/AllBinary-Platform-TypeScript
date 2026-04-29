@@ -43,8 +43,6 @@ export class TouchButtonStrafeLeftResource extends TouchButtonResource {
         
 
     private static readonly instance: TouchButtonResource = new TouchButtonStrafeLeftResource();
-        
-        
 
     public static getInstance(): TouchButtonResource{
 

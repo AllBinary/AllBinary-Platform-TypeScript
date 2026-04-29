@@ -85,12 +85,8 @@ export class AdvertisementCampaignInternalEntity extends AbSqlBean implements Ad
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "adCampaignInternal";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -138,29 +134,21 @@ var value = value
     public getCampaignsInStore(storeName: string): AdvertisementCampaignsInterface{
 var storeName = storeName
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = hashMapVector!.length!;
-        
-        
 ;
     
 
@@ -169,14 +157,10 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
-        
-        
+    var hashMap: HashMap =  as HashMaphashMapVector!.get(index as Object);;
 ;
     
 
@@ -185,7 +169,7 @@ index < size; index++)
                                 )
                         
                                     {
-                                    vector.add(new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface);
+                                    vector.add( as AdvertisementCampaignInterfacenew AdvertisementCampaign(hashMap));
     
 
                                     }
@@ -196,7 +180,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdvertisementCampaigns(vector) as AdvertisementCampaignsInterface;
+                        return  as AdvertisementCampaignsInterfacenew AdvertisementCampaigns(vector);
     
 }
 
@@ -205,9 +189,7 @@ index < size; index++)
 var storeName = storeName
 var name = name
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -215,9 +197,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var hashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -230,7 +210,7 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdvertisementCampaign(hashMap) as AdvertisementCampaignInterface;
+                        return  as AdvertisementCampaignInterfacenew AdvertisementCampaign(hashMap);
     
 
                                     }
@@ -248,9 +228,9 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as String, updatedValues);
+super.updateWhere(EntryData.getInstance()!.getInstance()!.ID,  as StringupdatedValues!.get(EntryData.getInstance()!.getInstance()!.ID), updatedValues);
     
 }
 
@@ -258,20 +238,14 @@ super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get
     public createTableStatement(): string{
 
     var entryData: EntryData = EntryData.getInstance()!.getInstance()!;
-        
-        
 ;
     
 
     var advertisementCampaignData: AdvertisementCampaignData = AdvertisementCampaignData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -294,8 +268,6 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
     public createTable(): string{
 
     var returnStr: string = super.createTable(this.createTableStatement())!;
-        
-        
 ;
     
 

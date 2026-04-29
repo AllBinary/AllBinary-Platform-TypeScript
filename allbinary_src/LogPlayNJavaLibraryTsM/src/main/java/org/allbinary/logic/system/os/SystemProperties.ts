@@ -43,8 +43,6 @@
         
 
     private static readonly instance: SystemProperties = new SystemProperties();
-        
-        
 
     /*actual*/ public static getInstance(): SystemProperties{
 
@@ -57,16 +55,10 @@
 
 
     private readonly OS_NAME: string = "os.name";
-        
-        
 
     private readonly OS_ARCH: string = "os.arch";
-        
-        
 
     private readonly OS_VERSION: string = "os.version";
-        
-        
 private constructor (){
 
             super();

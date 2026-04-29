@@ -75,8 +75,8 @@ export class AllBinaryTiledLayer extends Layer implements NamedInterface, Painta
 
     private readonly halfCellHeight: number
 
-    private readonly dataId: Integer
-public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number){
+    private readonly dataId: number
+public constructor (dataId: number, width: number, height: number, cellWidth: number, cellHeight: number){
             super(0, 0);
                         //var dataId = dataId
     //var width = width
@@ -114,8 +114,6 @@ this.halfCellHeight= (cellHeight>>1);
     //var mapTwoDArray = mapTwoDArray
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Start: r: ");
@@ -138,14 +136,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setCells");
     
 
     var rows: number = this.getRows()!;
-        
-        
 ;
     
 
     var columns: number = this.getColumns()!;
-        
-        
 ;
     
 
@@ -154,8 +148,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "setCells");
 
                         for (
     var col: number = 0;
-        
-        
 col < columns; col++)
         {
 
@@ -164,8 +156,6 @@ col < columns; col++)
 
                         for (
     var row: number = 0;
-        
-        
 row < rows; row++)
         {
 this.setCell(col, row, mapTwoDArray[row]![col]!);
@@ -183,14 +173,10 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
     //var toTileId = toTileId
 
     var rows: number = this.getRows()!;
-        
-        
 ;
     
 
     var columns: number = this.getColumns()!;
-        
-        
 ;
     
 
@@ -199,8 +185,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
                         for (
     var col: number = 0;
-        
-        
 col < columns; col++)
         {
 
@@ -209,8 +193,6 @@ col < columns; col++)
 
                         for (
     var row: number = 0;
-        
-        
 row < rows; row++)
         {
 
@@ -276,7 +258,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.z +this.getDepth());
+                        return Math.round(this.z +this.getDepth());
     
 }
 
@@ -360,7 +342,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 }
 
 
-    public getDataId(): Integer{
+    public getDataId(): number{
 
 
 

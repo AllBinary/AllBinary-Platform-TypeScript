@@ -35,8 +35,6 @@ export class MultiPlayerGameFeatureFactory
         
 
     private static readonly instance: MultiPlayerGameFeatureFactory = new MultiPlayerGameFeatureFactory();
-        
-        
 
     public static getInstance(): MultiPlayerGameFeatureFactory{
 
@@ -57,14 +55,10 @@ private constructor (){
     //var anyType = anyType
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 
-    var canvas: Canvas = anyType as Canvas;
-        
-        
+    var canvas: Canvas =  as CanvasanyType;
 ;
     
 canvas.addCommand(gameCommandsFactory!.QUIT_COMMAND);

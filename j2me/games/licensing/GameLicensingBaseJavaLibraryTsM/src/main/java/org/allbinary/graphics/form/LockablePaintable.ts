@@ -58,8 +58,6 @@ export class LockablePaintable extends ItemPaintable {
         
 
     private readonly animation: Animation = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LockedResources.getInstance()!.LOCKED_DEMO_GAME_FEATURE_RESOURCE)!.getInstance(0)!;
-        
-        
 
     private readonly lockedIndex: number
 public constructor (lockedIndex: number){
@@ -77,10 +75,10 @@ var currentIndex = currentIndex
 var x = x
 var y = y
 
-                        if(LockedUtil.getInstance()!.isLockedFeature() && currentIndex >= this.getLockedIndex())
+                        if(LockedUtil.getInstance()!.isLocked() && currentIndex >= this.getLockedIndex())
                         
                                     {
-                                    this.getAnimation()!.paint(graphics, x, y);
+                                    this.getAnimation()!.paintXY(graphics, x, y);
     
 
                                     }

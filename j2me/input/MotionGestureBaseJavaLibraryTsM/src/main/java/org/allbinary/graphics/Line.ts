@@ -37,9 +37,9 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { PointFactory } from "./PointFactory.js";
-
 import { GPoint } from "./GPoint.js";
+
+import { PointFactory } from "./PointFactory.js";
 
 export class Line
             extends Object

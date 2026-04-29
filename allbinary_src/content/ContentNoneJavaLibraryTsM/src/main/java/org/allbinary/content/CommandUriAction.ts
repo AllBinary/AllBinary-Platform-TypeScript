@@ -49,8 +49,6 @@ export class CommandUriAction
         
 
     private static readonly instance: CommandUriAction = new CommandUriAction();
-        
-        
 
     public static getInstance(): CommandUriAction{
 
@@ -63,8 +61,6 @@ export class CommandUriAction
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public add(command: Command, url: string){
 var command = command

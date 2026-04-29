@@ -58,8 +58,6 @@ export class PathUtil
         
 
     private static readonly instance: PathUtil = new PathUtil();
-        
-        
 
     public static getInstance(): PathUtil{
 
@@ -72,12 +70,8 @@ export class PathUtil
 
 
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 
     private readonly filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,14 +82,10 @@ private constructor (){
 var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;
-        
-        
 ;
     
 
     var indexOfLatDelimiter: number = filePath!.lastIndexOf(this.abPathData!.SEPARATORCHAR)!;
-        
-        
 ;
     
 
@@ -159,14 +149,10 @@ var abPath = abPath
 var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
-        
-        
 ;
     
 
     var extension: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -219,14 +205,10 @@ var abPath = abPath
 var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
-        
-        
 ;
     
 
     var pathWithoutExtension: string = filePath;
-        
-        
 ;
     
 
@@ -310,8 +292,6 @@ var path = path
 var path = path
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -397,8 +377,6 @@ var path = path
 var path = path
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -437,8 +415,6 @@ var path = path
 var categoryPath = categoryPath
 
     var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -464,8 +440,6 @@ var categoryPath = categoryPath
                                     {
                                     
     var categoryName: string = categoryPath!.substring(0, endIndex)!;
-        
-        
 ;
     
 
@@ -480,8 +454,6 @@ var categoryPath = categoryPath
                         else {
                             
     var categoryName: string = categoryPath!.substring(endIndex +1)!;
-        
-        
 ;
     
 
@@ -503,8 +475,6 @@ var categoryPath = categoryPath
 var path = path
 
     var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -545,8 +515,6 @@ var path = path
                         else {
                             
     var categoryName: string = path.substring(0, endIndex)!;
-        
-        
 ;
     
 

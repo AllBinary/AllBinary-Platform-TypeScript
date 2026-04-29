@@ -97,8 +97,6 @@ this.bufferedImage= bufferedImage;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);

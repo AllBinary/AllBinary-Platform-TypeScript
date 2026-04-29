@@ -43,24 +43,14 @@ export class UrlGlobalsData
         
 
     public static readonly NAME: string = "URLGLOBALS_NAME";
-        
-        
 
     public static readonly WEBAPPPATH: string = "URLGLOBALS_WEBAPPPATH";
-        
-        
 
     public static readonly TESTINGMODE: string = "URLGLOBALS_TESTINGMODE";
-        
-        
 
     public static readonly TESTINGHTMLPATH: string = "URLGLOBALS_TESTINGHTMLPATH";
-        
-        
 
     public static readonly MAINPATH: string = "URLGLOBALS_MAINPATH";
-        
-        
 private constructor (){
 
             super();

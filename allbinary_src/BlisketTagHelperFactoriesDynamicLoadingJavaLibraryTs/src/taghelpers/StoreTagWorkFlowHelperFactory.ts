@@ -58,12 +58,8 @@ export class StoreTagWorkFlowHelperFactory
         
 
     private static readonly CLASSNAME: string = "taghelpers.StoreTagWorkFlowHelper";
-        
-        
 
     private static readonly FACTORYNAME: string = "taghelpers.StoreTagWorkFlowHelperFactory";
-        
-        
 public constructor (){
 
             super();
@@ -72,7 +68,7 @@ public constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance(propertiesHashMap: HashMap, pageContext: PageContext): any{
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 

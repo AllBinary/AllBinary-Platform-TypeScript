@@ -80,8 +80,6 @@ this.gameInputProcessorInterface= gameInputProcessorInterface;
         try {
             
     var list: BasicArrayList = this.getGameKeyEventList()!;
-        
-        
 ;
     
 this.gameInputProcessorInterface!.onInput(list);
@@ -98,8 +96,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
     private readonly NAME_LABEL: string = " GameInputProcessorInterface: ";
-        
-        
 
     public toString(): string{
 

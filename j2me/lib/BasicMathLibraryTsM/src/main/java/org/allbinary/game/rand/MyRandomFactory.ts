@@ -57,15 +57,13 @@ export class MyRandomFactory
         
 
     private static readonly instance: MyRandomFactory = new MyRandomFactory();
-        
-        
 
     public static getInstance(): MyRandomFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MyRandomFactory.instance;
     
 }
 
@@ -74,26 +72,18 @@ export class MyRandomFactory
     //var args = args
 
     var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuilder: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var size2: number = 100;
-        
-        
 ;
     
 
@@ -102,8 +92,6 @@ export class MyRandomFactory
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
 stringBuilder!.appendint(randomFactory!.getAbsoluteNextInt(3))!.append(commonSeps!.COMMA);
@@ -116,21 +104,15 @@ stringBuilder!.delete(0, stringBuilder!.length());
     
 
     var intArray: number[] = new Array(52);
-        
-        
 ;
     
 
     var intArray2: number[] = new Array(52);
-        
-        
 ;
     
 
     var size: number = intArray!.length
                 ;
-        
-        
 ;
     
 
@@ -139,8 +121,6 @@ stringBuilder!.delete(0, stringBuilder!.length());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 intArray[index]= index;
@@ -149,7 +129,7 @@ intArray2[index]= index;
     
 }
 
-randomFactory!.shuffle(intArray, intArray2);
+randomFactory!.shuffle2(intArray, intArray2);
     
 
 
@@ -157,8 +137,6 @@ randomFactory!.shuffle(intArray, intArray2);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringBuilder!.appendint(intArray[index]!)!.append(commonSeps!.COMMA);
@@ -175,8 +153,6 @@ stringBuilder!.delete(0, stringBuilder!.length());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringBuilder!.appendint(intArray2[index]!)!.append(commonSeps!.COMMA);
@@ -195,8 +171,6 @@ console.log(stringBuilder!.toString());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 found= false;
@@ -207,8 +181,6 @@ found= false;
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
 
@@ -225,21 +197,20 @@ index2 < size; index2++)
 
                         if(!found)
                         
-                                    throw new RuntimeException()
+                                    throw Error();
+                                
 }
 
 }
 
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     private rand: Random
 private constructor (){
 
             super();
-        this.rand= new Random(System.currentTimeMillis());
+        this.rand= new Random(Date.now());
     
 }
 
@@ -255,15 +226,13 @@ this.rand= new Random(seed);
 var range = range
 
     var div: number = (Integer.MAX_VALUE /range) +1;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rand.nextInt() /div;
+                        return Math.round(this.rand.nextInt() /div);
     
 }
 
@@ -274,7 +243,7 @@ var range = range
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.abs(this.getNextInt(range));;
+                        return this.mathUtil!.abs(this.getNextInt(range));;
     
 }
 
@@ -299,7 +268,7 @@ var range = range
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mathUtil!.abs(this.getNextInt(range));;
+                        return this.mathUtil!.abs(this.getNextInt(range));;
     
 
                         }
@@ -309,19 +278,17 @@ var range = range
 
     public shuffle(intArray: number[]){
     //var intArray = intArray
-this.shuffle(intArray, intArray!.length *7);
+this.shuffleTotal(intArray, intArray!.length *7);
     
 }
 
 
-    public shuffle(intArray: number[], shuffleTotal: number){
+    public shuffleTotal(intArray: number[], shuffleTotal: number){
     //var intArray = intArray
     //var shuffleTotal = shuffleTotal
 
     var size: number = intArray!.length
                 ;
-        
-        
 ;
     
 
@@ -342,8 +309,6 @@ this.shuffle(intArray, intArray!.length *7);
 
                         for (
     var index: number = 0;
-        
-        
 index < shuffleTotal; index++)
         {
 randomIndex= this.getAbsoluteNextIntAllowZero(size);
@@ -361,23 +326,21 @@ intArray[randomIndex2]= value;
 }
 
 
-    public shuffle(intArray: number[], intArray2: number[]){
+    public shuffle2(intArray: number[], intArray2: number[]){
     //var intArray = intArray
     //var intArray2 = intArray2
-this.shuffle(intArray, intArray2, intArray!.length *7);
+this.shuffle2Total(intArray, intArray2, intArray!.length *7);
     
 }
 
 
-    public shuffle(intArray: number[], intArray2: number[], shuffleTotal: number){
+    public shuffle2Total(intArray: number[], intArray2: number[], shuffleTotal: number){
     //var intArray = intArray
     //var intArray2 = intArray2
     //var shuffleTotal = shuffleTotal
 
     var size: number = intArray!.length
                 ;
-        
-        
 ;
     
 
@@ -402,8 +365,6 @@ this.shuffle(intArray, intArray2, intArray!.length *7);
 
                         for (
     var index: number = 0;
-        
-        
 index < shuffleTotal; index++)
         {
 randomIndex= this.getAbsoluteNextIntAllowZero(size);

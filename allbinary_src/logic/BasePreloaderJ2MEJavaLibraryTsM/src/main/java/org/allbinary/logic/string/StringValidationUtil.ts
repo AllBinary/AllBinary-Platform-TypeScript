@@ -45,8 +45,6 @@ export class StringValidationUtil
         
 
     private static readonly instance: StringValidationUtil = new StringValidationUtil();
-        
-        
 
     public static getInstance(): StringValidationUtil{
 
@@ -59,8 +57,6 @@ export class StringValidationUtil
 
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -95,8 +91,6 @@ var value = value
 var value = value
 
     var numberOfDecimalPoints: number = 0;
-        
-        
 ;
     
 
@@ -105,14 +99,10 @@ var value = value
 
                         for (
     var index: number = 0;
-        
-        
 index < value.length; index++)
         {
 
     var digit: string = value[index]!;
-        
-        
 ;
     
 

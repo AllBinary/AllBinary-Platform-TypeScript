@@ -71,8 +71,6 @@ export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterface
         
 
     public static readonly NULL_COUNTED_PICKUP_LAYER_FACTORY: CountedPickedUpLayerInterfaceFactory = new CountedPickedUpLayerInterfaceFactory(PickedUpLayerTypeFactory.getInstance()!.NONE, IconLayer.NULL_ICON_LAYER, NullAnimationFactory.getFactoryInstance()!.getInstance(0));
-        
-        
 
     private readonly id: number
 public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
@@ -86,8 +84,6 @@ var animationInterface = animationInterface
                     
 
     var list: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
-        
-        
 ;
     
 this.id= list.size();
@@ -99,7 +95,7 @@ list.add(this);
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -107,7 +103,8 @@ var z = z
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 

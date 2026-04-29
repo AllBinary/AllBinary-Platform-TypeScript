@@ -58,46 +58,32 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
     public visit(lastMap: TiledMap, mapData: number[][]){
     //var lastMap = lastMap
     //var mapData = mapData
 
     var layerIndex: number = 0;
-        
-        
 ;
     
 
-    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex); as TileLayer);
-        
-        
+    var tileLayer: TileLayer = ( as TileLayerlastMap!.getLayer(layerIndex););
 ;
     
 
     var mapArray: number[][] = tileLayer!.getMapArray()!;
-        
-        
 ;
     
 
     var size: number = mapData!.length
                 ;
-        
-        
 ;
     
 
     var size2: number = mapData[0]!.length
                 ;
-        
-        
 ;
     
 
@@ -106,8 +92,6 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -116,8 +100,6 @@ index < size; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; index2++)
         {
 
@@ -143,8 +125,6 @@ index2 < size2; index2++)
                                     {
                                     
     var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(3)!;
-        
-        
 ;
     
 
@@ -183,8 +163,6 @@ index2 < size2; index2++)
                                     {
                                     
     var randomInt: number = randomFactory!.getAbsoluteNextIntAllowZero(3)!;
-        
-        
 ;
     
 
@@ -230,8 +208,6 @@ index2 < size2; index2++)
                                     {
                                     
     var randomInt: number = this.randomFactory!.getAbsoluteNextIntAllowZero(4)!;
-        
-        
 ;
     
 
@@ -290,26 +266,18 @@ index2 < size2; index2++)
     //var index2 = index2
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var countX: number = 0;
-        
-        
 ;
     
 
     var countY: number = 0;
-        
-        
 ;
     
 
     var index3: number = index -1;
-        
-        
 ;
     
 
@@ -318,8 +286,6 @@ index2 < size2; index2++)
 
                         for (
     var index4: number = index2 -1;
-        
-        
 index4 > 0; index4--)
         {
 index3--;
@@ -351,8 +317,6 @@ index3--;
 
                         for (
     var index5: number = index3 +1;
-        
-        
 index5 < index -1; index5++)
         {
 
@@ -361,8 +325,6 @@ index5 < index -1; index5++)
 
                         for (
     var index6: number = index4 +1;
-        
-        
 index6 < index2 -1; index6++)
         {
 
@@ -384,14 +346,10 @@ index6 < index2 -1; index6++)
 
 
     var x: number = index -(countX /2);
-        
-        
 ;
     
 
     var y: number = index2 -(countY /2);
-        
-        
 ;
     
 

@@ -50,8 +50,6 @@ export class SmallBasicColorCacheFactory
         
 
     private static readonly instance: SmallBasicColorCacheFactory = new SmallBasicColorCacheFactory();
-        
-        
 
     public static getInstance(): SmallBasicColorCacheFactory{
 
@@ -64,20 +62,12 @@ export class SmallBasicColorCacheFactory
 
 
     private readonly SIZE: number = 255;
-        
-        
 
     private readonly INDEX_TO_COLOR: number[] = new Array(SIZE);
-        
-        
 
     private readonly BASIC_COLOR_ARRAY: BasicColor[] = new Array(SIZE);
-        
-        
 
     private colorIndex: number = 0;
-        
-        
 private constructor (){
 
             super();
@@ -95,7 +85,7 @@ colorIndex++;
 }
 
 
-    public getInstance(colorAsInt: number): BasicColor{
+    public getAndOrCreate(colorAsInt: number): BasicColor{
     //var colorAsInt = colorAsInt
 
     var basicColor: BasicColor
@@ -107,8 +97,6 @@ colorIndex++;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.SIZE; index++)
         {
 
@@ -127,9 +115,7 @@ index < this.SIZE; index++)
 }
 
 
-    var ALPHA_MASK: number = 0xFF000000;
-        
-        
+    var ALPHA_MASK: number = Math.round0xFF000000;
 ;
     
 basicColor= BasicColorFactory.getInstance()!.createInstanceAN(colorAsInt&ALPHA_MASK, colorAsInt&0x00FFFFFF, StringUtil.getInstance()!.EMPTY_STRING);

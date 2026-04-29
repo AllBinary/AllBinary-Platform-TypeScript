@@ -90,28 +90,16 @@ export class AndroidHardware
             
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private componentInterfaceVector: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly PROC_BUS_INPUT_DIRECTORY: string = "/proc/bus/input/";
-        
-        
 
     private readonly DEVICES: string = PROC_BUS_INPUT_DIRECTORY +"devices/";
-        
-        
 
     private readonly MINHARDWARE: number = 3;
-        
-        
 public constructor (){
 
             super();
@@ -119,8 +107,6 @@ public constructor (){
     
 
     var size: number = this.componentInterfaceVector!.size()!;
-        
-        
 ;
     
 
@@ -130,7 +116,8 @@ public constructor (){
                                     
 
 
-                            throw new Error("Not Enough Data For A Valid License On Linux")
+                            throw new Error("Not Enough Data For A Valid License On Linux");
+                    
 
                                     }
                                 
@@ -143,8 +130,6 @@ public constructor (){
     //var filePath = filePath
 
     var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;
-        
-        
 ;
     
 
@@ -160,7 +145,8 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT,
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -189,22 +175,16 @@ this.componentInterfaceVector= new BasicArrayListD();
     
 
     var pciFile: FileReader = new FileReader(filePath);
-        
-        
 ;
     
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);
-        
-        
 ;
     
 this.logUtil!.putF("File Found", this, commonStrings!.CONSTRUCTOR);
     
 
     var nextLine: string = lineNumberReader!.readLine()!;
-        
-        
 ;
     
 
@@ -233,7 +213,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
     
 }
 
@@ -241,14 +221,10 @@ var index = index
     public toString(): string{
 
     var hardwareBuffer: StringBuilder = new StringBuilder();
-        
-        
 ;
     
 
     var size: number = this.componentInterfaceVector!.size()!;
-        
-        
 ;
     
 
@@ -257,14 +233,10 @@ var index = index
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
-        
-        
+    var componentInterface: HardwareComponentInterface =  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
 ;
     
 hardwareBuffer!.append(componentInterface!.toString());
@@ -293,7 +265,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable{
 var hardwareInterface = hardwareInterface
 
 

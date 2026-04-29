@@ -53,7 +53,7 @@ export interface XmlOptionItemsEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    public update(updatedValues: HashMap)
 
 }
                 

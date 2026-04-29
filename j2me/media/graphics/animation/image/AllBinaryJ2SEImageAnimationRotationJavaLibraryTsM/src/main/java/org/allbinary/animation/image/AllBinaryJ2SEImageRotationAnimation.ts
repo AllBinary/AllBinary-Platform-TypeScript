@@ -73,6 +73,8 @@ import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
 
 import { ScaleProcessor } from "./ScaleProcessor.js";
 
+import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
+
 import { SetColorProcessor } from "./SetColorProcessor.js";
 
 import { ChangeColorProcessor } from "./ChangeColorProcessor.js";
@@ -83,62 +85,38 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
         
 
     private readonly imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;
-        
-        
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
-        
-        
 
     private readonly realOriginalImage: Image
 
     private readonly originalImageArray: Image[] = new Array(1);
-        
-        
 
     private readonly twoImages: Image[] = new Array(2);
-        
-        
 
     private imageToShow: Image
 
     private bufferedImageIndex: number= 0
 
     private lastScaleX: number = 1.0f;
-        
-        
 
     private lastScaleY: number = 1.0f;
-        
-        
 
     private scaleX: number = 1.0f;
-        
-        
 
     private scaleY: number = 1.0f;
-        
-        
 
     private maxScaleX: number= 0.0f
 
     private maxScaleY: number= 0.0f
 
     private alphaProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
-        
-        
 
     private setColorProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
-        
-        
 
     private changeColorProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
-        
-        
 
     private scaleProcessor: ScaleBaseProcessor = ScaleProcessor.getInstance()!;
-        
-        
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                         //var originalImage = originalImage
@@ -167,8 +145,6 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image);
     //var basicColor = basicColor
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -202,8 +178,6 @@ this.updateImage();
     //var basicColor = basicColor
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -237,8 +211,6 @@ this.updateImage();
     //var alpha = alpha
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -324,11 +296,11 @@ this.updateImage();
     updateImage(){
 this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90);
     
-this.alphaProcessor!.update(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP);
+this.alphaProcessor!.updateAlpha(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP);
     
-this.setColorProcessor!.update(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor);
+this.setColorProcessor!.updateColor(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor);
     
-this.changeColorProcessor!.update(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP);
+this.changeColorProcessor!.updateColor(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP);
     
 this.swap();
     
@@ -365,7 +337,7 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -379,15 +351,11 @@ super.close();
     
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-        
-        
 ;
     
 
     var size2: number = this.twoImages!.length
                 ;
-        
-        
 ;
     
 
@@ -396,19 +364,15 @@ super.close();
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
-disposalUtil!.dispose(this.twoImages[index]!);
+disposalUtil!.disposeImage(this.twoImages[index]!);
     
 }
 
 
     var size: number = this.originalImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -417,17 +381,15 @@ disposalUtil!.dispose(this.twoImages[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!);
+disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
 }
 
-disposalUtil!.dispose(this.realOriginalImage);
+disposalUtil!.disposeImage(this.realOriginalImage);
     
-disposalUtil!.dispose(this.imageToShow);
+disposalUtil!.disposeImage(this.imageToShow);
     
 }
 
@@ -439,15 +401,11 @@ super.finalize();
     
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-        
-        
 ;
     
 
     var size2: number = this.twoImages!.length
                 ;
-        
-        
 ;
     
 
@@ -456,19 +414,15 @@ super.finalize();
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
-disposalUtil!.dispose(this.twoImages[index]!);
+disposalUtil!.disposeImage(this.twoImages[index]!);
     
 }
 
 
     var size: number = this.originalImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -477,17 +431,15 @@ disposalUtil!.dispose(this.twoImages[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!);
+disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
 }
 
-disposalUtil!.dispose(this.realOriginalImage);
+disposalUtil!.disposeImage(this.realOriginalImage);
     
-disposalUtil!.dispose(this.imageToShow);
+disposalUtil!.disposeImage(this.imageToShow);
     
 }
 

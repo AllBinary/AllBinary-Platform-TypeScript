@@ -55,12 +55,10 @@ export class PrimitiveLongUtil
          {
         
 
-    public static create(powerOfTen: number): PrimitiveLongUtil{
+    public static createPowerOfTen(powerOfTen: number): PrimitiveLongUtil{
 var powerOfTen = powerOfTen
 
     var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);
-        
-        
 ;
     
 
@@ -69,14 +67,10 @@ var powerOfTen = powerOfTen
                                     {
                                     
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Error("Max must be power of 10"));
@@ -94,8 +88,6 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private powerOfTen: number
 
@@ -108,8 +100,6 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
     private currentTotalDigits: number= 0
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
-        
-        
 public constructor (powerOfTen: number, unused: any = {}){
 
             super();
@@ -160,20 +150,14 @@ var value = value
                                 
 
     var index: number = 0;
-        
-        
 ;
     
 
     var div: number = this.powerOfTen;
-        
-        
 ;
     
 
     var lastValue: number = 0;
-        
-        
 ;
     
 
@@ -181,8 +165,6 @@ var value = value
         {
 
     var digit: number = (value -lastValue) /div;
-        
-        
 ;
     
 
@@ -234,7 +216,7 @@ this.currentTotalDigits= currentTotalDigits;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return currentTotalDigits;
+                        return this.currentTotalDigits;
     
 }
 
@@ -244,7 +226,7 @@ this.currentTotalDigits= currentTotalDigits;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return maxDigits;
+                        return this.maxDigits;
     
 }
 

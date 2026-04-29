@@ -49,6 +49,8 @@ import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
 
+import { VectorRotationAnimation } from "./VectorRotationAnimation.js";
+
 import { Animation } from "./Animation.js";
 
 export class VectorExplosionAnimationFactory
@@ -57,8 +59,6 @@ export class VectorExplosionAnimationFactory
         
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
 public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -74,35 +74,25 @@ this.setBasicColorP(basicColor);
 
 
     private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
-    var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;
-        
-        
+    var vectorRotationAnimationInterface: VectorAnimationInterface =  as VectorAnimationInterfaceanimationInterface;
 ;
     
 
     var frame: number = vectorRotationAnimationInterface!.getFrame()!;
-        
-        
 ;
     
 
     var framePoints: number[][] = vectorRotationAnimationInterface!.getPoints(frame)!;
-        
-        
 ;
     
 
     var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
-        
-        
 ;
     
 

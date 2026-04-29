@@ -92,13 +92,11 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 }
 
 
-    private readonly TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
-        
-        
+    private readonly TOTAL_ANGLE: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
+    public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
@@ -106,20 +104,14 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
     //var scoreableInterface = scoreableInterface
 
     var increment: number = ((this.total -1) /TOTAL_ANGLE);
-        
-        
 ;
     
 
     var minAngle: number = (angle -((increment *total)>>1));
-        
-        
 ;
     
 
     var next: number = 0;
-        
-        
 ;
     
 
@@ -132,11 +124,9 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.total; index++)
         {
-weaponLayer= weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, (minAngle +increment), otherAngle, weaponProperties, scoreableInterface);
+weaponLayer= weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), 0, Math.round(minAngle +increment), Math.roundotherAngle, weaponProperties, scoreableInterface);
     
 allbinaryLayerManager!.append(weaponLayer);
     

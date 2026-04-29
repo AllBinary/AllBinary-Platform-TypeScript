@@ -43,8 +43,6 @@ export class OpenGLFeatureUtil
         
 
     private static readonly instance: OpenGLFeatureUtil = new OpenGLFeatureUtil();
-        
-        
 
     public static getInstance(): OpenGLFeatureUtil{
 

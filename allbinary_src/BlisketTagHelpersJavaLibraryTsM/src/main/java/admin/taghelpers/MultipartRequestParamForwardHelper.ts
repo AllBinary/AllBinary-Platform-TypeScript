@@ -78,8 +78,6 @@ export class MultipartRequestParamForwardHelper
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly pageContext: PageContext
 
@@ -122,14 +120,10 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
                                     {
                                     
     var params: string = this.getParams()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.page);
@@ -147,8 +141,6 @@ this.pageContext!.forward(stringBuffer!.toString());
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -168,44 +160,30 @@ this.pageContext!.forward(stringBuffer!.toString());
     getParams(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var AMP: string = commonSeps!.AMPERSAND;
-        
-        
 ;
     
 
     var QUESTION: string = commonSeps!.QUESTION;
-        
-        
 ;
     
 
     var EQUALS: string = commonSeps!.EQUALS;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
-        
-        
+    var hashMap: HashMap = this.requestMapInterface!.getRequestHashMap()!;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = this.paramVector!.length!;
-        
-        
 ;
     
 
@@ -214,20 +192,14 @@ this.pageContext!.forward(stringBuffer!.toString());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index); as String;
-        
-        
+    var key: string =  as Stringthis.paramVector!.get(index);;
 ;
     
 
-    var value: string = hashMap!.get(key as Object); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(key as Object);;
 ;
     
 
@@ -264,15 +236,11 @@ stringBuffer!.append(value);
 
     shouldForward(): boolean{
 
-    var hashMap: HashMap<any, any> = this.requestMapInterface!.getRequestHashMap()!;
-        
-        
+    var hashMap: HashMap = this.requestMapInterface!.getRequestHashMap()!;
 ;
     
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var requestCommand: string =  as StringhashMap!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 

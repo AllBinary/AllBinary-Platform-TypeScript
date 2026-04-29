@@ -51,14 +51,10 @@ export class AdvertisementCampaignInternalEntityFactory
         
 
     private static readonly CLASSNAME: string = "org.allbinary.data.tables.AdvertisementCampaignEntity";
-        
-        
 
     public static getInstance(): AdvertisementCampaignInternalEntityInterface{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -67,7 +63,7 @@ export class AdvertisementCampaignInternalEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdvertisementCampaignInternalEntity() as AdvertisementCampaignInternalEntityInterface;
+                        return  as AdvertisementCampaignInternalEntityInterfacenew AdvertisementCampaignInternalEntity();
     
 
                 //: 
@@ -79,8 +75,6 @@ export class AdvertisementCampaignInternalEntityFactory
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementCampaignEntityFactory", commonStrings!.GET_INSTANCE, e);

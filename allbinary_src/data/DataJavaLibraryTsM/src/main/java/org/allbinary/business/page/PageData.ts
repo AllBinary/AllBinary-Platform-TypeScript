@@ -43,8 +43,6 @@ export class PageData
         
 
     private static readonly instance: PageData = new PageData();
-        
-        
 
     public static getInstance(): PageData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "PAGE_NAME";
-        
-        
 
 }
                 

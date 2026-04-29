@@ -95,8 +95,6 @@ export class DisplayInfoSingleton
         
 
     private static readonly SINGLETON: DisplayInfoSingleton = new DisplayInfoSingleton();
-        
-        
 
     public static getInstance(): DisplayInfoSingleton{
 
@@ -109,44 +107,24 @@ export class DisplayInfoSingleton
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public readonly ORIENTATION: string = "ORIENTATION";
-        
-        
 
     public readonly ADJUSTING_FOR_SCALING_IN_PORTRAIT: string = "Adjusting for Scaling in portrait display ratio: ";
-        
-        
 
     public readonly ADJUSTING_FOR_SCALING_IN_LANDSCAPE: string = "Adjusting for Scaling in landscape display ratio: ";
-        
-        
 
     private last: number[] = new Array(4);
-        
-        
 
     private lastHalf: number[] = new Array(4);
-        
-        
 
     private full: number[] = new Array(4);
-        
-        
 
     private top: number= 0
 
@@ -159,30 +137,18 @@ export class DisplayInfoSingleton
     private scaleLargestTo: number= 0.0f
 
     public readonly WIDTH: number = 0;
-        
-        
 
     public readonly HEIGHT: number = 1;
-        
-        
 
     public readonly CUSTOM_WIDTH: number = 2;
-        
-        
 
     public readonly CUSTOM_HEIGHT: number = 3;
-        
-        
 
     private scalableListener: BaseScalable = new BaseScalable();
-        
-        
 
     private displayRatio: number= 0.0f
 
     private ratio: number = 1.0f;
-        
-        
 private constructor (){
 
             super();
@@ -252,24 +218,14 @@ this.scaleLargestTo= scaleLargestTo;
 
 
     private readonly SET_LAST_SIZE_METHOD_NAME: string = "setLastSize";
-        
-        
 
     private readonly FULL_WIDTH: string = " FullWidth: ";
-        
-        
 
     private readonly FULL_HEIGHT: string = " FullHeight: ";
-        
-        
 
     private readonly LAST_WIDTH: string = "LastWidth: ";
-        
-        
 
     private readonly LAST_HEIGHT: string = " LastHeight: ";
-        
-        
 
     public setLastSize(aLastWidth: number, aLastHeight: number, reason: string){
     //var aLastWidth = aLastWidth
@@ -293,22 +249,16 @@ var aLastHeight = aLastHeight
     //var reason = reason
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
 
     var aFullWidth: number = aLastWidth;
-        
-        
 ;
     
 
     var aFullHeight: number = aLastHeight;
-        
-        
 ;
     
 stringMaker!.delete(0, stringMaker!.length());
@@ -317,8 +267,6 @@ this.logUtil!.putF(stringMaker!.append(FULL_WIDTH)!.appendint(aFullWidth)!.appen
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 
@@ -337,7 +285,7 @@ aLastHeight= aLastHeight *operatingSystemInterface!.getOverScanYPercent() /100;
                         
                                     {
                                     
-                        if(this.isPortrait(aLastWidth, aLastHeight))
+                        if(this.isPortraitWH(aLastWidth, aLastHeight))
                         
                                     {
                                     
@@ -352,9 +300,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= (aLastWidth *this.displayRatio);
+aLastWidth= Math.round(aLastWidth *this.displayRatio);
     
-aLastHeight= (aLastHeight *this.displayRatio);
+aLastHeight= Math.round(aLastHeight *this.displayRatio);
     
 this.scalableListener!.scale(this.ratio);
     
@@ -385,9 +333,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, SET_LAST_SIZE_METHOD_NAME);
     
-aLastWidth= (aLastWidth *this.displayRatio);
+aLastWidth= Math.round(aLastWidth *this.displayRatio);
     
-aLastHeight= (aLastHeight *this.displayRatio);
+aLastHeight= Math.round(aLastHeight *this.displayRatio);
     
 this.scalableListener!.scale(this.ratio);
     
@@ -439,9 +387,9 @@ this.add(SET_LAST_SIZE_METHOD_NAME);
 }
 
 
-    public isPortrait(lastWidth: number, lastHeight: number): boolean{
-var lastWidth = lastWidth
-var lastHeight = lastHeight
+    public isPortraitWH(lastWidth: number, lastHeight: number): boolean{
+    //var lastWidth = lastWidth
+    //var lastHeight = lastHeight
 
                         if(lastHeight > lastWidth)
                         
@@ -473,44 +421,32 @@ var lastHeight = lastHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isPortrait(this.last[this.WIDTH]!, this.last[this.HEIGHT]!);;
+                        return this.isPortraitWH(this.last[this.WIDTH]!, this.last[this.HEIGHT]!);;
     
 }
 
 
     public readonly displayChangeEvent: DisplayChangeEvent = new DisplayChangeEvent(this);
-        
-        
 
     private readonly FIRE_METHOD_NAME: string = "fire";
-        
-        
 
     private readonly REASON: string = "reason: ";
-        
-        
 
     private readonly UPDATE_FROM_ORIENTATION_CHANGE: string = "Updating from Orientation Change ";
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public add(reason: string){
     //var reason = reason
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.logUtil!.putF(stringMaker!.append(this.REASON)!.append(reason)!.toString(), this, FIRE_METHOD_NAME);
     
 stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(this.toString(stringMaker), this, FIRE_METHOD_NAME);
+this.logUtil!.putF(this.toStringAppend(stringMaker), this, FIRE_METHOD_NAME);
     
 this.list.add(reason);
     
@@ -547,8 +483,6 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
         try {
             
     var swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;
-        
-        
 ;
     
 swtJOGLProcessor!.clear();
@@ -575,32 +509,22 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, FIRE_METHOD_NAME, e);
     //var reason = reason
 
     var aLastWidth: number = displayable.getWidth()!;
-        
-        
 ;
     
 
     var aLastHeight: number = displayable.getHeight()!;
-        
-        
 ;
     
 
     var aFullWidth: number = aLastWidth;
-        
-        
 ;
     
 
     var aFullHeight: number = aLastHeight;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append(reason)!.append(LAST_WIDTH)!.appendint(aLastWidth)!.append(LAST_HEIGHT)!.appendint(aLastHeight)!.append(commonSeps!.SPACE)!.append(this.toString())!.toString(), this, commonStrings!.UPDATE);
@@ -619,8 +543,6 @@ this.logUtil!.putF(stringMaker!.append(this.UPDATE_FROM_ORIENTATION_CHANGE)!.toS
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 
@@ -639,7 +561,7 @@ aLastHeight= aLastHeight *operatingSystemInterface!.getOverScanYPercent() /100;
                         
                                     {
                                     
-                        if(this.isPortrait(aLastWidth, aLastHeight))
+                        if(this.isPortraitWH(aLastWidth, aLastHeight))
                         
                                     {
                                     
@@ -654,9 +576,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_PORTRAIT)!.appendfloat(this.displayRatio)!.toString(), this, commonStrings!.UPDATE);
     
-aLastWidth= (aLastWidth *this.displayRatio);
+aLastWidth= Math.round(aLastWidth *this.displayRatio);
     
-aLastHeight= (aLastHeight *this.displayRatio);
+aLastHeight= Math.round(aLastHeight *this.displayRatio);
     
 this.scalableListener!.scale(this.ratio);
     
@@ -689,9 +611,9 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(this.ADJUSTING_FOR_SCALING_IN_LANDSCAPE)!.appendfloat(this.displayRatio)!.toString(), this, commonStrings!.UPDATE);
     
-aLastWidth= (aLastWidth *this.displayRatio);
+aLastWidth= Math.round(aLastWidth *this.displayRatio);
     
-aLastHeight= (aLastHeight *this.displayRatio);
+aLastHeight= Math.round(aLastHeight *this.displayRatio);
     
 this.scalableListener!.scale(this.ratio);
     
@@ -756,38 +678,28 @@ this.add(commonStrings!.UPDATE);
 
 
     private readonly DISPLAY_INFO: string = "Display Info: ";
-        
-        
 
     private readonly FULL: string = "full";
-        
-        
 
     private readonly LAST: string = "last";
-        
-        
 
     private readonly LAST_HALF: string = "lastHalf";
-        
-        
 
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.toString(stringBuffer);;
+                        return this.toStringAppend(stringBuffer);;
     
 }
 
 
-    public toString(stringBuffer: StringMaker): string{
+    public toStringAppend(stringBuffer: StringMaker): string{
     //var stringBuffer = stringBuffer
 stringBuffer!.append(this.DISPLAY_INFO);
     

@@ -70,8 +70,6 @@ export class NewGenericBodyValidationView extends GenericBodyCustomizerView impl
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -102,7 +100,7 @@ this.body= new GenericBodyValidation();
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.body as DomNodeInterface);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.body);
     
 
                             }
@@ -142,8 +140,6 @@ this.body= new GenericBodyValidation();
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.body.validationInfo());

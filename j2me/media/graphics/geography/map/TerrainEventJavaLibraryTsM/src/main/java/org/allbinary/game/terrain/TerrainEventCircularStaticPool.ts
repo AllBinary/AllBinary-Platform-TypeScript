@@ -50,8 +50,6 @@ export class TerrainEventCircularStaticPool
         
 
     private static readonly instance: TerrainEventCircularStaticPool = new TerrainEventCircularStaticPool();
-        
-        
 
     public static getInstance(): TerrainEventCircularStaticPool{
 
@@ -64,8 +62,6 @@ export class TerrainEventCircularStaticPool
 
 
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
-        
-        
 
     public init(){
 this.EVENT_POOL.init(new TerrainEventFactory());
@@ -76,12 +72,10 @@ this.EVENT_POOL.init(new TerrainEventFactory());
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
+    public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance(); as TerrainEvent;
-        
-        
+    var trackingEvent: TerrainEvent =  as TerrainEventthis.EVENT_POOL.getNextInstance();;
 ;
     
 trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);

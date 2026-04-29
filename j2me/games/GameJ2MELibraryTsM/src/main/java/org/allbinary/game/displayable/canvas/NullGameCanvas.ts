@@ -66,7 +66,7 @@ import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 export class NullGameCanvas extends AllBinaryGameCanvas {
         
 
-    static create(): NullGameCanvas{
+    static createNull(): NullGameCanvas{
 
         try {
             
@@ -84,15 +84,14 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }
 
 
-    private static readonly SINGLETON: NullGameCanvas = create()!;
-        
-        
+    private static readonly SINGLETON: NullGameCanvas = createNull()!;
 
     public static getInstance(): NullGameCanvas{
 
@@ -106,12 +105,10 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 
                 //@Throws(Error::class)
             
-    public static getInstance(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
+    public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
     //var gameLayerManager = gameLayerManager
 
     var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);
-        
-        
 ;
     
 nullGameCanvas!.setInitialized(true);
@@ -128,12 +125,8 @@ nullGameCanvas!.setTitle(NO_GAME);
 
 
     public static readonly NO_GAME: string = "No Background Game";
-        
-        
 
     public static readonly TYPE: number = 1;
-        
-        
 protected constructor (gameLayerManager: AllBinaryGameLayerManager){
             super(NullCommandListener.NULL_COMMAND_LISTENER, gameLayerManager, NoHighScoresFactory.getInstance(), BasicBuildGameInitializerFactory.NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY, false);
                         //var gameLayerManager = gameLayerManager
@@ -158,8 +151,6 @@ super.setWait(1200);
 
 
     private running: boolean = true;
-        
-        
 
     public setRunning(running: boolean){
 var running = running
@@ -204,7 +195,7 @@ this.setCommandListener(cmdListener);
 
                 //@Throws(Error::class)
             
-    public buildGame(isProgress: boolean){
+    public buildGameInit(isProgress: boolean){
     //var isProgress = isProgress
 }
 

@@ -102,8 +102,6 @@ export class AuthenticationHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
@@ -115,9 +113,9 @@ export class AuthenticationHelper extends TagHelper {
 
     private timeout: string
 
-    private attemptsInteger: Integer
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-            this(hashMap, pageContext!.getRequest() as HttpServletRequest);
+    private attemptsInteger: number
+public constructor (hashMap: HashMap, pageContext: PageContext){
+            this(hashMap,  as HttpServletRequestpageContext!.getRequest());
                     var hashMap = hashMap
 var pageContext = pageContext
 
@@ -126,7 +124,7 @@ var pageContext = pageContext
                     
 }
 
-public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap, httpServletRequest: HttpServletRequest){
 
             super();
         var hashMap = hashMap
@@ -165,7 +163,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 
                 //@Throws(Error::class)
             
-    public invalidateSession(): Integer{
+    public invalidateSession(): number{
 
         try {
             this.weblisketSession!.clear();
@@ -174,7 +172,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(TagSupport.EVAL_BODY_INCLUDE);
+                        return TagSupport.EVAL_BODY_INCLUDE;
     
 
                 //: 
@@ -209,26 +207,18 @@ this.timeout= this.weblisketSession!.getTimeout();
                                     {
                                     
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-        
-        
 ;
     
 
     var sessionTimout: number = this.role.getSessionTimeout()!;
-        
-        
 ;
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;
-        
-        
 ;
     
 
@@ -241,8 +231,6 @@ this.timeout= this.weblisketSession!.getTimeout();
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Session Is Old - Timeout: ");
@@ -305,32 +293,22 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                                     {
                                     
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-        
-        
 ;
     
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
-        
-        
 ;
     
 
     var inactivityAllowed: number = this.role.getSessionInactivityTimeout()!;
-        
-        
 ;
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var timeFirst: number = calendar.getTimeInMillis() -lastAccess;
-        
-        
 ;
     
 
@@ -339,8 +317,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Session Is Rarely Used - Timeout: ");
@@ -390,8 +366,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Trying New login<p/>");
@@ -408,8 +382,6 @@ stringBuffer!.append("Trying New login<p/>");
             {
 
     var error: string = "Failed to set valid role";
-        
-        
 ;
     
 
@@ -439,8 +411,6 @@ stringBuffer!.append("Trying New login<p/>");
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Sorry your username and password is invalid on this page. ");
@@ -459,8 +429,6 @@ stringBuffer!.append("Trying New login<p/>");
             {
 
     var error: string = "Failed to set role invalid";
-        
-        
 ;
     
 
@@ -534,21 +502,15 @@ var roles = roles
                                     {
                                     
     var basicUserRole: BasicUserRole = this.role.getBasicUserRole()!;
-        
-        
 ;
     
 
     var basicUserRoleArray: any[] = roles.toArray()!;
-        
-        
 ;
     
 
     var size: number = basicUserRoleArray!.length
                 ;
-        
-        
 ;
     
 
@@ -557,14 +519,10 @@ var roles = roles
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
-        
-        
+    var mustBeOfRole: BasicUserRole =  as BasicUserRolebasicUserRoleArray[index]!;
 ;
     
 
@@ -577,14 +535,10 @@ index < size; index++)
                                     {
                                     
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var userInterface: UserInterface = userEntityInterface!.getUser(this.sessionUserName)!;
-        
-        
 ;
     
 
@@ -679,13 +633,13 @@ index < size; index++)
                                  && this.attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(this.attemptsInteger!.toInt() +1);
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(new Integer(1));
+                            this.weblisketSession!.setAttempts(1);
     
 
                         }
@@ -721,8 +675,6 @@ var password = password
     
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-        
-        
 ;
     
 login= userEntityInterface!.login(userName, password);
@@ -733,15 +685,13 @@ login= userEntityInterface!.login(userName, password);
                                     {
                                     
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-        
-        
 ;
     
 
                         if(userInterface!.isSessionValid())
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(0));
+                                    this.weblisketSession!.setAttempts(0);
     
 
 
@@ -859,26 +809,18 @@ this.nextAttempt();
         try {
             
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
-        
-        
 ;
     
 stringBuffer!.append("Time Since Last Access: " +(calendar.getTimeInMillis() -lastAccess) +"<br/>\n");

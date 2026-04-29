@@ -70,8 +70,6 @@ export class PaymentGatewayInterfaceFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -84,8 +82,6 @@ public constructor (){
 var httpServletRequest = httpServletRequest
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -122,7 +118,8 @@ var httpServletRequest = httpServletRequest
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -133,9 +130,7 @@ var httpServletRequest = httpServletRequest
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
@@ -151,26 +146,20 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
+    public getInstance(hashMap: HashMap): PaymentGatewayInterface{
 var hashMap = hashMap
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
         try {
             
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()); as String;
-        
-        
+    var gatewayName: string =  as StringhashMap!.get(PaymentGatewayData.NAME.toString());;
 ;
     
 
     var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(gatewayName)!;
-        
-        
 ;
     
 
@@ -184,8 +173,6 @@ var hashMap = hashMap
                                 
 
     var paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface = paymentType!.getPaymentGatewayInterfaceFactoryInterface()!;
-        
-        
 ;
     
 
@@ -210,7 +197,8 @@ var hashMap = hashMap
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -53,86 +53,46 @@ export class AbDatabaseManagement extends AbSqlBean {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly sqlCommandLog: StringMaker = new StringMaker();
-        
-        
 
     private readonly GRANT_ALL: string = "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER ON ";
-        
-        
 
     private readonly DOT_STAR: string = ".*";
-        
-        
 
     private readonly TO: string = " TO ";
-        
-        
 
     private readonly AT_LOCALHOST: string = "@localhost";
-        
-        
 
     private readonly IDENTIFIED_BY: string = " IDENTIFIED BY '";
-        
-        
 
     private readonly WITH_GRANT_OPTION: string = "' WITH GRANT OPTION";
-        
-        
 
     private readonly FAILED: string = "Failed";
-        
-        
 
     private readonly GET_HOST_NAME: string = "getHostName()";
-        
-        
 
     private readonly METHOD_ADD_USER: string = "addUser()";
-        
-        
 
     readonly METHOD_ADD_USERS: string = "addUsers()";
-        
-        
 
     private readonly METHOD_ADD_DB: string = "addDb()";
-        
-        
 
     readonly METHOD_ADD_DATABASES: string = "addDatabases()";
-        
-        
 
     readonly METHOD_ADD_TABLES: string = "addTables()";
-        
-        
 
     readonly UNABLE_TO_CREATE_USER: string = "Unable to Create User: ";
-        
-        
 
     readonly UNABLE_TO_CREATE_DATABASE: string = "Unable to Create Database: ";
-        
-        
 
     readonly UNABLE_TO_CREATE_TABLES: string = "Unable to Create Tables";
-        
-        
 
     readonly ADD_TABLES_RESULTS_LABEL: string = "Add Table Results: ";
-        
-        
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
-            super(databaseConnectionInfoInterface as DbConnectionInfo);
+            super( as DbConnectionInfodatabaseConnectionInfoInterface);
                     var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
@@ -155,8 +115,6 @@ public constructor (connectionInfo: DbConnectionInfo){
         try {
             
     var addr: InetAddress = InetAddress.getLocalHost()!;
-        
-        
 ;
     
 
@@ -191,8 +149,6 @@ var userName = userName
 var password = password
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.GRANT_ALL);
@@ -215,8 +171,6 @@ stringBuffer!.append(this.WITH_GRANT_OPTION);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 this.sqlCommandLog!.append(sqlStatement);
@@ -244,8 +198,6 @@ var password = password
     
 
     var hostName: string = this.getHostName()!;
-        
-        
 ;
     
 
@@ -288,8 +240,6 @@ var db = db
         try {
             
     var sqlStatement: string = this.sqlStrings!.CREATE_DATABASE +db;
-        
-        
 ;
     
 this.sqlCommandLog!.append(sqlStatement);

@@ -71,9 +71,7 @@ import { Waypoint } from "./Waypoint.js";
 export class WorkWaypoint extends Waypoint {
         
 
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(25)!;
-        
-        
+    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(25)!;
 public constructor (ownerLayer: PathFindingLayerInterface){
             super(ownerLayer, WorkSound.getInstance());
                         //var ownerLayer = ownerLayer
@@ -103,8 +101,6 @@ public constructor (ownerLayer: PathFindingLayerInterface){
                                 
 
     var size: number = this.getConnectedWaypointList()!.size()!;
-        
-        
 ;
     
 
@@ -113,14 +109,10 @@ public constructor (ownerLayer: PathFindingLayerInterface){
                                     {
                                     
     var occupyList: BasicArrayList = this.ownerLayer!.getGeographicMapCellPositionArea()!.getOccupyingGeographicMapCellPositionList()!;
-        
-        
 ;
     
 
     var outOfResources: boolean = true;
-        
-        
 ;
     
 
@@ -137,11 +129,9 @@ public constructor (ownerLayer: PathFindingLayerInterface){
 
                         for (
     var index: number = occupyList!.size()!;
-        
-        
 --index >= 0; )
         {
-geologicalGeographicMapCellPosition= occupyList!.get(index); as GeologicalGeographicMapCellPosition;
+geologicalGeographicMapCellPosition=  as GeologicalGeographicMapCellPositionoccupyList!.get(index);;
     
 geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource();
     
@@ -152,9 +142,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
                                     outOfResources= false;
     
 
-    var maxResourceLoad: number = unitLayer!.getMaxResourceLoad();;
-        
-        
+    var maxResourceLoad: number = Math.roundunitLayer!.getMaxResourceLoad();;
 ;
     
 geologicalResource!.remove(maxResourceLoad);
@@ -167,9 +155,7 @@ unitLayer!.setLoad(maxResourceLoad);
 }
 
 
-    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable(); as WaypointInfoHudPaintable;
-        
-        
+    var waypointInfoHudPaintable: WaypointInfoHudPaintable =  as WaypointInfoHudPaintablethis.ownerLayer!.getHudPaintable();;
 ;
     
 
@@ -186,9 +172,7 @@ unitLayer!.setLoad(maxResourceLoad);
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
 ;
     
 
@@ -198,7 +182,7 @@ unitLayer!.setLoad(maxResourceLoad);
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
-rtsLayer= this.getConnectedWaypointList()!.get(0); as RTSLayer;
+rtsLayer=  as RTSLayerthis.getConnectedWaypointList()!.get(0);;
     
 
                         if(rtsLayer!.isDestroyed())

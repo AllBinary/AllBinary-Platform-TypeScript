@@ -40,14 +40,14 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionGestureInput } from "./MotionGestureInput.js";
+
 export class TrackballMotionGestureFactory
             extends Object
          {
         
 
     private static readonly MOTION: TrackballMotionGestureFactory = new TrackballMotionGestureFactory();
-        
-        
 
     public static getInstance(): TrackballMotionGestureFactory{
 
@@ -71,8 +71,6 @@ private constructor (){
             super();
         
     var MAX: number = InputFactory.getInstance()!.MAX;
-        
-        
 ;
     
 this.LEFT= new MotionGestureInput(MAX -26, "L Trackball");

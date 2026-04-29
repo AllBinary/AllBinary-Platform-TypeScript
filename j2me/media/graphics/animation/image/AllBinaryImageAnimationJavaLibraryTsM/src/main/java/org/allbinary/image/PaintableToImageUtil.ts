@@ -54,8 +54,6 @@ export class PaintableToImageUtil
         
 
     private static readonly instance: PaintableToImageUtil = new PaintableToImageUtil();
-        
-        
 
                 //@Throws(Error::class)
             
@@ -65,14 +63,10 @@ var width = width
 var height = height
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, width, height)!;
-        
-        
 ;
     
 
     var graphics: Graphics = image.getGraphics()!;
-        
-        
 ;
     
 paintableInterface!.paint(graphics);

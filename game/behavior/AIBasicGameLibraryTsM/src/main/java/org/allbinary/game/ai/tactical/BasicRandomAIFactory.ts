@@ -61,6 +61,8 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicRandomAI } from "./BasicRandomAI.js";
+
 export class BasicRandomAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
@@ -68,14 +70,12 @@ export class BasicRandomAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object); as Visitor;
-        
-        
+    var visitor: Visitor =  as Visitorhashtable.get( as ObjectBasicAI.AI_VISITOR);;
 ;
     
 
@@ -87,14 +87,13 @@ var gameInput = gameInput
                                     
 
 
-                            throw new Error("No Visitor Provided")
+                            throw new Error("No Visitor Provided");
+                    
 
                                     }
                                 
 
-    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object); as InputProbability;
-        
-        
+    var inputProbability: InputProbability =  as InputProbabilityhashtable.get( as ObjectInputProbability.INPUT_PROBABILITY);;
 ;
     
 

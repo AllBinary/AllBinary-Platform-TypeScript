@@ -85,12 +85,12 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 }
 
 
-    public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 }
 
 
-    public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 

@@ -57,12 +57,8 @@ export class FakeLayerManager extends AllBinaryGameLayerManager implements Geogr
         
 
     private geographicMapInterfaceArray: BasicGeographicMap[] = BasicGeographicMap.NULL_BASIC_GEOGRAPHIC_MAP_ARRAY;
-        
-        
 
     private geographicMapCellTypeArray: GeographicMapCellType[] = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE_ARRAY;
-        
-        
 public constructor (gameInfo: GameInfo){
             super(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, gameInfo);
                     var gameInfo = gameInfo

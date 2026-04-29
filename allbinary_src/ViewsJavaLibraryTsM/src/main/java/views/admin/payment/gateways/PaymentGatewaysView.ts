@@ -83,8 +83,6 @@ export class PaymentGatewaysView extends HttpStoreComponentView implements DomNo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private paymentGatewayVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface, gatewayVector: Vector){
@@ -108,20 +106,14 @@ var document = document
         try {
             
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-        
-        
 ;
     
 
     var paymentGatewaysNode: Node = document.createElement(PaymentGatewaysData.NAME)!;
-        
-        
 ;
     
 
     var size: number = this.paymentGatewayVector!.length!;
-        
-        
 ;
     
 
@@ -130,28 +122,20 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index); as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentGatewayVector!.get(index);;
 ;
     
 
-    var hashMap: HashMap<any, any> = paymentType!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = paymentType!.toHashMap()!;
 ;
     
 hashMap!.put(EntryData.getInstance()!.DEFAULT, PaymentTypeUtil.getInstance()!.getDefault(storeName)!.getBasicPaymentType()!.getName());
     
 
     var paymentGatewayNode: Node = ModDomHelper.createNodeWithValueNodes(document, PaymentGatewayData.NAME.toString(), hashMap)!;
-        
-        
 ;
     
 paymentGatewaysNode!.appendChild(paymentGatewayNode);
@@ -180,14 +164,15 @@ paymentGatewaysNode!.appendChild(paymentGatewayNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -209,8 +194,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
             {
 
     var error: string = "Failed to view payment gateways";
-        
-        
 ;
     
 

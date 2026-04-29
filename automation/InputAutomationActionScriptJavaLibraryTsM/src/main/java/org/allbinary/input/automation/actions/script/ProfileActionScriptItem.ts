@@ -62,64 +62,38 @@ import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInter
 
 import { JPopupMenu } from "./JPopupMenu.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         
 
     private static readonly EDIT: string = "Edit";
-        
-        
 
     static readonly DELETE: string = "Delete";
-        
-        
 
     static readonly NEW_CONDITION: string = "New Condition";
-        
-        
 
     static readonly NEW_INPUT: string = "New Input";
-        
-        
 
     static readonly NEW_OUTPUT: string = "New Output";
-        
-        
 
     static readonly NEW_COLOR_AT: string = "Color At";
-        
-        
 
     static readonly NEW_TIME_INTERVAL: string = "Time Interval";
-        
-        
 
     static readonly NEW_ALWAYS: string = "Always On/Off";
-        
-        
 
     static readonly NEW_KEY_INPUT: string = "Key";
-        
-        
 
     static readonly NEW_MOUSE_INPUT: string = "Mouse";
-        
-        
 
     static readonly NEW_JOYSTICK_INPUT: string = "Joystick";
-        
-        
 
     static readonly NEW_IMAGE_OUTPUT: string = "Image";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private jPopupMenu: JPopupMenu
 public constructor (label: string, node: Node){
@@ -155,14 +129,10 @@ setJPopupMenu(new JPopupMenu());
     
 
     var jMenuItemEdit: JMenuItem = new JMenuItem(EDIT);
-        
-        
 ;
     
 
     var jMenuItemDelete: JMenuItem = new JMenuItem(DELETE);
-        
-        
 ;
     
 jMenuItemEdit!.addActionListener(this);
@@ -178,12 +148,13 @@ getJPopupMenu()!.add(jMenuItemDelete);
 
                 //@Throws(Error::class)
             
-    public process(frame: Long){
+    public process(frame: number){
 var frame = frame
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -201,7 +172,8 @@ var frame = frame
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

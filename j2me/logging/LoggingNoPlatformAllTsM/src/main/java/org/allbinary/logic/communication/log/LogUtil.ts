@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Log } from "./Log.js";
 
 export class LogUtil
@@ -45,8 +47,6 @@ export class LogUtil
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     public static getInstance(): LogUtil{
 
@@ -63,47 +63,41 @@ private constructor (){
         }
 
 
-    public put(log: Log){
+    public putL(log: Log){
 var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string){
+    public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -115,7 +109,8 @@ var log = log
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

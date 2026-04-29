@@ -72,20 +72,12 @@ export class GameInfo
         
 
     public static readonly NONE: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.NONE, GameMode.NONE, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE,  -1,  -1);
-        
-        
 
     public static readonly LEVEL_NAME: string = "LEVEL";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly gameInfoData: GameInfoData = GameInfoData.getInstance()!;
-        
-        
 
     private readonly gameType: GameType
 
@@ -175,12 +167,8 @@ this.highestLevel= highestLevel;
 
 
     private readonly NEW_LEVEL: string = "New Level: ";
-        
-        
 
     private readonly SET_CURRENT_LEVEL: string = "setCurrentLevel";
-        
-        
 
     public setCurrentLevel(currentLevel: number){
     //var currentLevel = currentLevel
@@ -193,12 +181,8 @@ this.logUtil!.putF(new StringMaker().
 
 
     private readonly NEXT: string = "Next ";
-        
-        
 
     private readonly NEXT_GAME_LEVEL: string = "nextGameLevel";
-        
-        
 
     public nextGameLevel(){
 
@@ -250,11 +234,9 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): Hashtable{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var hashtable: Hashtable = new Hashtable();
 ;
     
 hashtable.put(this.gameInfoData!.GAME_TYPE, this.getGameType()!.toString());
@@ -279,14 +261,10 @@ hashtable.put(this.gameInfoData!.CURRENT_LEVEL, this.currentLevel.toString());
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(this.gameInfoData!.GAME_TYPE);

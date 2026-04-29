@@ -82,8 +82,6 @@ export class HeadingValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private title: TitleValidation
 
@@ -103,20 +101,14 @@ public constructor (document: Document){
         var document = document
 
     var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;
-        
-        
 ;
     
 
     var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
-        
-        
 ;
     
 
     var logoNode: Node = DomSearchHelper.getNode(LogoData.getInstance()!.NAME, headingNodeList!.item(0)!.getChildNodes())!;
-        
-        
 ;
     
 this.title= new TitleValidation(titleNode);
@@ -125,7 +117,7 @@ this.logo= new LogoValidation(logoNode);
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -136,7 +128,7 @@ this.getFormData(hashMap);
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
 this.title= new TitleValidation(hashMap);
     
@@ -150,20 +142,14 @@ this.logo= new LogoValidation(hashMap);
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var titleValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var logoValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -252,26 +238,18 @@ this.logo= new LogoValidation(hashMap);
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var titleValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var logoValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -367,8 +345,6 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(HeadingData.NAME)!;
-        
-        
 ;
     
 node.appendChild(this.logo.toXmlNode(document));

@@ -43,8 +43,6 @@ export class Processor
         
 
     private static readonly SINGLETON: Processor = new Processor();
-        
-        
 
     public static getInstance(): Processor{
 
@@ -64,7 +62,7 @@ export class Processor
 
                 //@Throws(Error::class)
             
-    public process(timeDelta: number){
+    public processt(timeDelta: number){
     //var timeDelta = timeDelta
 }
 

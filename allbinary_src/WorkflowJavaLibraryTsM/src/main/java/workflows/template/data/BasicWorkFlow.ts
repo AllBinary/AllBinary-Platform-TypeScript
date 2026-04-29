@@ -78,23 +78,17 @@ export class BasicWorkFlow
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private validationDomNodeInterface: ValidationComponentInterface
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 
     private pageContext: PageContext
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -112,7 +106,7 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext); as ValidationComponentInterface;
+this.validationDomNodeInterface=  as ValidationComponentInterfaceTransformFactory.getInstance()!.getInstance(abeClientInformation, propertiesHashMap, pageContext);;
     
 }
 
@@ -124,12 +118,12 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME); as String;
+                        return  as Stringthis.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME);;
     
 }
 
 
-    getPropertiesHashMap(): HashMap<any, any>{
+    getPropertiesHashMap(): HashMap{
 
 
 
@@ -151,7 +145,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(abe
 
                 //@Throws(Error::class)
             
-    public process(): Integer{
+    public process(): number{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         

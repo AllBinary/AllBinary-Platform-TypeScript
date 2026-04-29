@@ -49,8 +49,6 @@ export class DemoLimitedCommandTextItemArrayFactory
         
 
     private static readonly instance: DemoLimitedCommandTextItemArrayFactory = new DemoLimitedCommandTextItemArrayFactory();
-        
-        
 
     public static getInstance(): DemoLimitedCommandTextItemArrayFactory{
 
@@ -63,8 +61,6 @@ export class DemoLimitedCommandTextItemArrayFactory
 
 
     private readonly commandTextItemArrayFactory: CommandTextItemArrayFactory = new CommandTextItemArrayFactory(new LimitCommandsVisitor());
-        
-        
 
     public getCommandTextItemArrayFactory(): CommandTextItemArrayFactory{
 

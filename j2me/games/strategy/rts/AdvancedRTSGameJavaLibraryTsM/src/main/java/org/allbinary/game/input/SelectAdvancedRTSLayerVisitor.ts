@@ -82,9 +82,7 @@ this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;
-        
-        
+    var selectedLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayeranyType;
 ;
     
 
@@ -92,21 +90,15 @@ var anyType = anyType
                         
                                     {
                                     
-    var rtsGameLayer: AdvancedRTSGameLayer = selectedLayer as AdvancedRTSGameLayer;
-        
-        
+    var rtsGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerselectedLayer;
 ;
     
 
     var assignWaypointsUtil: AssignWaypointsUtil = AssignWaypointsUtil.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.selectedRTSLayersPlayerGameInput!.getSelectedBasicArrayList()!;
-        
-        
 ;
     
 
@@ -123,17 +115,15 @@ var anyType = anyType
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
-currentRTSLayer= list.get(index); as RTSLayer;
+currentRTSLayer=  as RTSLayerlist.get(index);;
     
 
                         if(currentRTSLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    unitLayer= currentRTSLayer as UnitLayer;
+                                    unitLayer=  as UnitLayercurrentRTSLayer;
     
 unitLayer!.setParentLayer(rtsGameLayer);
     

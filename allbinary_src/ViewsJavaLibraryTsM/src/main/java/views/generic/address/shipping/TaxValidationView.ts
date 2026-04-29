@@ -81,14 +81,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     public isValid(): Boolean{
 
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
-        
-        
 ;
     
 
@@ -108,8 +104,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var size: number = streetAddressList!.length!;
-        
-        
 ;
     
 
@@ -118,14 +112,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
 ;
     
 

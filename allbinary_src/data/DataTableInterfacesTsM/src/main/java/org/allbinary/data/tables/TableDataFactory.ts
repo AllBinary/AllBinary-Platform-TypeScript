@@ -48,8 +48,6 @@ export class TableDataFactory
         
 
     private static readonly instance: TableDataFactory = new TableDataFactory();
-        
-        
 
     public static getInstance(): TableDataFactory{
 
@@ -62,12 +60,8 @@ export class TableDataFactory
 
 
     public readonly INTEGER_MAX_VALUE_STRING: string = Integer.toString(Integer.MAX_VALUE)!;
-        
-        
 
     public readonly ZERO_STRING: string = CommonPhoneStrings.getInstance()!.ZERO;
-        
-        
 
 }
                 

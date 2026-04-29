@@ -126,27 +126,21 @@ export class QuoteHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private readonly weblisketSession: WeblisketSession
 
     private readonly storeFrontInterface: StoreFrontInterface
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -179,20 +173,14 @@ this.portion= new Portion(hashMap);
 var quoteRequest = quoteRequest
 
     var user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;
-        
-        
 ;
     
 
     var userEmailSubject: string = "Quote Request Receipt";
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("This is just a verification email. ");
@@ -203,26 +191,18 @@ stringBuffer!.append("\n\nThank You For Your Business.");
     
 
     var userEmailTextBody: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody) as BasicEmailInfo;
-        
-        
+    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, userEmailSubject, userEmailTextBody);
 ;
     
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-        
-        
 ;
     
 
     var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST, user)!;
-        
-        
 ;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
@@ -236,14 +216,10 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
 var quoteRequest = quoteRequest
 
     var adminEmailSubject: string = "Quote Request";
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("\nUserName: ");
@@ -272,32 +248,22 @@ stringBuffer!.append(quoteRequest!.getComments());
     
 
     var adminEmailTextBody: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody);
 ;
     
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-        
-        
 ;
     
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.QUOTEREQUEST)!;
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.QUOTEREQUEST, this.abeClientInformation, this.storeFrontInterface)!;
-        
-        
 ;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, emailInfo);
@@ -314,32 +280,22 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
         try {
             
     var quoteRequestEntity: QuoteRequestEntity = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!;
-        
-        
 ;
     
 
     var userName: string = this.weblisketSession!.getUserName()!;
-        
-        
 ;
     
 
     var vector: Vector = quoteRequestEntity!.getIds(userName)!;
-        
-        
 ;
     
 
     var id: number = 0;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -348,16 +304,12 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextId: number = get = vector.get(index);get as Integer
+    var nextId: number = get =  as Integervector.get(index);get
 get.
                     toInt()!;
-        
-        
 ;
     
 
@@ -373,8 +325,6 @@ get.
 
 
     var quoteRequest: QuoteRequest = quoteRequestEntity!.get(userName, id)!;
-        
-        
 ;
     
 
@@ -400,7 +350,8 @@ this.emailAdmins(quoteRequest);
                             
 
 
-                            throw new Error("No Quote Request")
+                            throw new Error("No Quote Request");
+                    
 
                         }
                             
@@ -433,8 +384,6 @@ this.emailAdmins(quoteRequest);
         try {
             
     var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -458,8 +407,6 @@ this.emailAdmins(quoteRequest);
             {
 
     var error: string = "Failed to drop QuoteRequest table";
-        
-        
 ;
     
 
@@ -487,8 +434,6 @@ this.emailAdmins(quoteRequest);
         try {
             
     var success: string = QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -512,8 +457,6 @@ this.emailAdmins(quoteRequest);
             {
 
     var error: string = "Failed to create new QuoteRequest table";
-        
-        
 ;
     
 
@@ -541,14 +484,10 @@ this.emailAdmins(quoteRequest);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance(), portion)!;
-        
-        
 ;
     
 
@@ -572,8 +511,6 @@ this.emailAdmins(quoteRequest);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -601,14 +538,10 @@ this.emailAdmins(quoteRequest);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance())!;
-        
-        
 ;
     
 
@@ -632,8 +565,6 @@ this.emailAdmins(quoteRequest);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

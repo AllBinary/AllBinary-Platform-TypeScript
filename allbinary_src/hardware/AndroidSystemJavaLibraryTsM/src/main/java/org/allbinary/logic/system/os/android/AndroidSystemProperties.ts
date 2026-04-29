@@ -63,8 +63,6 @@ export class AndroidSystemProperties
             
 
     private static readonly SINGLETON: AndroidSystemProperties = new AndroidSystemProperties(ResourceUtil.getInstance()!.getContext());
-        
-        
 
     public static getInstance(): AndroidSystemProperties{
 
@@ -77,8 +75,6 @@ export class AndroidSystemProperties
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (context: Context){
 
             super();

@@ -35,8 +35,6 @@ export class StringComponent
         
 
     public static readonly NULL_STRING_COMPONENT: StringComponent = new StringComponent();
-        
-        
 
     public getBackgroundBasicColor(): BasicColor{
 

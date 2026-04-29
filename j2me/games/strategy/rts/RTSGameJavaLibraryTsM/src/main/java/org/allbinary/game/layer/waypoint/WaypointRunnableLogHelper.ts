@@ -46,8 +46,6 @@ export class WaypointRunnableLogHelper
         
 
     private static readonly instance: WaypointRunnableLogHelper = new WaypointRunnableLogHelper();
-        
-        
 
     public static getInstance(): WaypointRunnableLogHelper{
 

@@ -64,16 +64,22 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
+import { JCheckBox } from "./JCheckBox.js";
+
+import { JList } from "./JList.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
 export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface
 public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface){
@@ -96,26 +102,18 @@ this.setImageTypeJlistModel();
     
 
     var imageTypes: ImageTypes = this.capturedImageActionScriptOutputInterface!.getImageTypes()!;
-        
-        
 ;
     
 
     var vector: Vector = imageTypes!.getVector()!;
-        
-        
 ;
     
 
     var selectedArray: number[] = new Array(vector.length);
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -124,14 +122,10 @@ this.setImageTypeJlistModel();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index); as InputImageType;
-        
-        
+    var imageType: InputImageType =  as InputImageTypevector.get(index);;
 ;
     
 selectedArray[index++]= imageType!.getIndex();
@@ -166,16 +160,12 @@ this.capturedImageActionScriptOutputInterface!.log();
     update(){
 
     var anyType: any[] = this.itemTypesJList!.getSelectedValues()!;
-        
-        
 ;
     
 
     var imageTypes: ImageTypes = anyType.concatToString()
 
                                     !;
-        
-        
 ;
     
 this.capturedImageActionScriptOutputInterface!.setImageTypes(imageTypes);
@@ -218,20 +208,14 @@ this.capturedImageActionScriptOutputInterface!.log();
     setImageTypeJlistModel(){
 
     var defaultListModel: DefaultListModel = new DefaultListModel();
-        
-        
 ;
     
 
     var vector: Vector = InputImageType.getAllAsVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -240,14 +224,10 @@ this.capturedImageActionScriptOutputInterface!.log();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index); as InputImageType;
-        
-        
+    var imageType: InputImageType =  as InputImageTypevector.get(index);;
 ;
     
 defaultListModel!.addElement(imageType!.getName());
@@ -301,7 +281,7 @@ this.titleJLabel!.setText("Image Output Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -325,7 +305,7 @@ this.displayJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.displayJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-displayJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
+displayJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -337,15 +317,13 @@ displayJCheckBoxActionPerformed(evt);
                                 }
                             );
     
-itemTypesJList!.setModel(new object: javax.swing.AbstractListModel()
+itemTypesJList!.setModel(new javax.swing.AbstractListModel()
                                 {
                                 
     var strings: string[] = 
                                                         [
                                                             "Item 1","Item 2","Item 3","Item 4","Item 5"
                                                         ];
-        
-        
 
     public getSize(): number{
 
@@ -373,8 +351,6 @@ this.jScrollPane1!.setViewportView(this.itemTypesJList);
     
 
     var capturedImageActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.capturedImageActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.capturedImageActionJDialog!.getContentPane()!.setLayout(capturedImageActionJDialogLayout);
@@ -387,7 +363,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.capturedImageActionJButton!.setText("Edit");
     
-capturedImageActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+capturedImageActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -403,8 +379,6 @@ this.jLabel1!.setText("Capture Image:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

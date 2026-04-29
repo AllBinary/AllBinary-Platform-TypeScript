@@ -43,8 +43,6 @@ export class LayerManagerNoDebug extends LayerManagerLoggingBase {
         
 
     private static readonly instance: LayerManagerNoDebug = new LayerManagerNoDebug();
-        
-        
 
     public static getInstance(): LayerManagerNoDebug{
 

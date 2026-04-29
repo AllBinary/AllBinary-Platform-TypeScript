@@ -55,80 +55,42 @@ export class HtmlTable extends HtmlTag {
         
 
     private readonly END: string = ">";
-        
-        
 
     private readonly START: string = "<table ";
-        
-        
 
     private readonly ENDTAG: string = "</table>";
-        
-        
 
     private readonly CLASS: string = "class";
-        
-        
 
     private readonly DIRECTION: string = "dir";
-        
-        
 
     private readonly ID: string = "id";
-        
-        
 
     private readonly LANG: string = "lang";
-        
-        
 
     private readonly UNITS: string = "units";
-        
-        
 
     private readonly BORDER: string = "border";
-        
-        
 
     private readonly CELLPADDING: string = "cellpadding";
-        
-        
 
     private readonly CELLSPACING: string = "cellspacing";
-        
-        
 
     private readonly COLS: string = "cols";
-        
-        
 
     private readonly FLOAT: string = "float";
-        
-        
 
     private readonly FRAME: string = "frame";
-        
-        
 
     private readonly RULES: string = "rules";
-        
-        
 
     private readonly WIDTH: string = "width";
-        
-        
 
     private readonly STYLE: string = "style";
-        
-        
 
     public readonly BORDERCOLLAPSE: string = "border-collapse: collapse";
-        
-        
 
     private numberOfColumns: number = 0;
-        
-        
 
     private before: string
 
@@ -186,20 +148,14 @@ this.htmlRowsVector!.add(htmlRow);
     public toString(): string{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var result: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
-        
-        
 ;
     
 result= this.before;
@@ -214,20 +170,14 @@ result += " ";
 
                         for (
     var i: number = 0;
-        
-        
 i < attributeKeys!.length; i++)
         {
 
-    var key: string = attributeKeys[i]! as String;
-        
-        
+    var key: string =  as StringattributeKeys[i]!;
 ;
     
 
-    var value: string = otherAttributes!.get(key); as String;
-        
-        
+    var value: string =  as StringotherAttributes!.get(key);;
 ;
     
 
@@ -253,8 +203,6 @@ result += this.END;
     
 
     var size: number = this.htmlRowsVector!.length!;
-        
-        
 ;
     
 
@@ -263,8 +211,6 @@ result += this.END;
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 result += this.htmlRowsVector!.get(i)!.toString();

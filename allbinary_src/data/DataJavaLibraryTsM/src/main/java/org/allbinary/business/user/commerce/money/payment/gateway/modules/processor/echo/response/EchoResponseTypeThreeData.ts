@@ -43,8 +43,6 @@ export class EchoResponseTypeThreeData
         
 
     public NAME: string = "ECHOTYPE3";
-        
-        
 private constructor (){
 
             super();

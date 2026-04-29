@@ -67,8 +67,6 @@ export class OrderItemsRequestHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -77,12 +75,12 @@ export class OrderItemsRequestHelper extends TagHelper {
     private groupId: string
 
     private status: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.getFormData();
     
@@ -110,8 +108,6 @@ var newStatus = newStatus
                         newStatus= this.status
 
     var success: string = "Status successfully set to: " +newStatus;
-        
-        
 ;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, newStatus);
@@ -137,8 +133,6 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, newStatus);
             {
 
     var error: string = "Failed to view order table";
-        
-        
 ;
     
 
@@ -166,8 +160,6 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, newStatus);
         try {
             
     var success: string = "Status successfully set to: " +this.status;
-        
-        
 ;
     
 OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, this.status);
@@ -193,8 +185,6 @@ OrderItemsEntityFactory.getInstance()!.setStatus(this.id, groupId, this.status);
             {
 
     var error: string = "Failed to view order table";
-        
-        
 ;
     
 

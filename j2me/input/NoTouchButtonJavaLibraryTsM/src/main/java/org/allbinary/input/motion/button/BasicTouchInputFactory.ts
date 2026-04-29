@@ -58,6 +58,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
 import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
 
 export class BasicTouchInputFactory
@@ -66,8 +68,6 @@ export class BasicTouchInputFactory
         
 
     private static readonly SINGLETON: BasicTouchInputFactory = new BasicTouchInputFactory();
-        
-        
 
     public static getInstance(): BasicTouchInputFactory{
 
@@ -80,60 +80,32 @@ export class BasicTouchInputFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly SPECIAL_BUTTON_SIX: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -30, "Button 6");
-        
-        
 
     public readonly SPECIAL_BUTTON_FIVE: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -31, "Button 5");
-        
-        
 
     public readonly SPECIAL_BUTTON_FOUR: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -32, "Button 4");
-        
-        
 
     public readonly SPECIAL_BUTTON_THREE: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -33, "Button 3");
-        
-        
 
     public readonly SPECIAL_BUTTON_TWO: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -34, "Button 2");
-        
-        
 
     public readonly SPECIAL_BUTTON_ONE: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -35, "Button 1");
-        
-        
 
     public readonly UP: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -36, "Up Button");
-        
-        
 
     public readonly LEFT: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -37, "Left Button");
-        
-        
 
     public readonly RIGHT: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -38, "Right Button");
-        
-        
 
     public readonly DOWN: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -39, "Down Button");
-        
-        
 
     public readonly NONE: TouchButtonInput = new TouchButtonInput(InputFactory.getInstance()!.MAX -40, "No Button");
-        
-        
 
     private initialized: boolean = false;
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
@@ -164,7 +136,7 @@ this.list.add(SPECIAL_BUTTON_FIVE);
     
 this.list.add(SPECIAL_BUTTON_SIX);
     
-this.updateAll(this.list, inputToGameKeyMapping);
+this.updateAllList(this.list, inputToGameKeyMapping);
     
 CancelTouchButtonInputFactory.getInstance();
     
@@ -176,12 +148,12 @@ CancelTouchButtonInputFactory.getInstance();
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
-this.updateAll(this.getList(), inputToGameKeyMapping);
+this.updateAllList(this.getList(), inputToGameKeyMapping);
     
 }
 
 
-    public updateAll(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
+    public updateAllList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
 var list = list
 var inputToGameKeyMapping = inputToGameKeyMapping
 this.logUtil!.putF(new StringMaker().
@@ -193,14 +165,10 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var touchButtonInput: TouchButtonInput = list.get(index); as TouchButtonInput;
-        
-        
+    var touchButtonInput: TouchButtonInput =  as TouchButtonInputlist.get(index);;
 ;
     
 touchButtonInput!.update(inputToGameKeyMapping);

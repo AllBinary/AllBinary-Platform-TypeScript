@@ -66,32 +66,22 @@ public constructor (){
                     
 
     var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-        
-        
 ;
     
 
     var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-        
-        
 ;
     
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.FIRE, pcKeyFactory!.ENTER);

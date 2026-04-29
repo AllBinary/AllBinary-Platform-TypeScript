@@ -45,8 +45,6 @@ export class OpenGLESGraphicsCompositeFactory
         
 
     private static readonly instance: OpenGLESGraphicsCompositeFactory = new OpenGLESGraphicsCompositeFactory();
-        
-        
 
     public static getInstance(): OpenGLESGraphicsCompositeFactory{
 
@@ -59,8 +57,6 @@ export class OpenGLESGraphicsCompositeFactory
 
 
     private openGLESGraphicsFactory: OpenGLESGraphicsFactory = new OpenGLESGraphicsFactory();
-        
-        
 
     public set(openGLESGraphicsFactory: OpenGLESGraphicsFactory){
 var openGLESGraphicsFactory = openGLESGraphicsFactory

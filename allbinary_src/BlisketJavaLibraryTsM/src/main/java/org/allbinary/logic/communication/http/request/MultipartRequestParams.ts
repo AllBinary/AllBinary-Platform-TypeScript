@@ -70,12 +70,8 @@ export class MultipartRequestParams extends RequestParams {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private special: boolean = false;
-        
-        
 public constructor (request: HttpServletRequest){
             super();
                     var request = request
@@ -94,7 +90,7 @@ public constructor (pageContext: PageContext){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.processMultipartRequest(pageContext!.getRequest() as HttpServletRequest);
+this.processMultipartRequest( as HttpServletRequestpageContext!.getRequest());
     
 }
 
@@ -110,15 +106,11 @@ var request = request
 
         try {
             
-    var specialRequest: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var specialRequest: HashMap = new HashMap();
 ;
     
 
     var multipartRequestList: List = AbFileUploadFactory.getInstance()!.getFileItemStreamList(request)!;
-        
-        
 ;
     
 
@@ -138,15 +130,11 @@ var request = request
                                 
 
     var fileItemArray: any[] = multipartRequestList!.toArray()!;
-        
-        
 ;
     
 
     var size: number = fileItemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -155,20 +143,14 @@ var request = request
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var fileItem: FileItem = fileItemArray[index]! as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemfileItemArray[index]!;
 ;
     
 
     var name: string = fileItem!.getName()!;
-        
-        
 ;
     
 
@@ -242,7 +224,7 @@ super.setMap(request.getParameterMap());
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
                         if(this.special)
                         
@@ -251,7 +233,7 @@ super.setMap(request.getParameterMap());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMap(); as HashMap<any, any>;
+                        return  as HashMapthis.getMap();;
     
 
                                     }

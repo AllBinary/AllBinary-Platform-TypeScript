@@ -63,16 +63,10 @@ export class CategoryModifierTree extends CategoryPrivateTree implements Categor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
                     var categoryFactoryInterface = categoryFactoryInterface
@@ -115,8 +109,6 @@ var newChildCategoryInterface = newChildCategoryInterface
     
 
     var directoryToBeCreatedAbPath: AbPath = new AbPath(newChildCategoryInterface!.getRootFilePath()!.toString() +newChildCategoryInterface!.getPath()!.toString());
-        
-        
 ;
     
 this.directory.create(directoryToBeCreatedAbPath);
@@ -172,8 +164,6 @@ var existingChildCategoryInterface = existingChildCategoryInterface
     
 
     var directoryToBeDeletedAbPath: AbPath = new AbPath(existingChildCategoryInterface!.getRootFilePath()!.toString() +existingChildCategoryInterface!.getPath()!.toString());
-        
-        
 ;
     
 this.delete(existingChildCategoryInterface);

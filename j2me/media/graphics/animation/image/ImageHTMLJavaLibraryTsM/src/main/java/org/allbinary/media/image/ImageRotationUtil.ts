@@ -62,8 +62,6 @@ export class ImageRotationUtil
         
 
     private static readonly instance: ImageRotationUtil = new ImageRotationUtil();
-        
-        
 
     public static getInstance(): ImageRotationUtil{
 
@@ -87,8 +85,6 @@ private constructor (){
     //var rotationInDegrees = rotationInDegrees
 
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-        
-        
 ;
     
 
@@ -99,8 +95,6 @@ private constructor (){
     var originalPlayNImage: playn.core.Image = 
                 null
             ;
-        
-        
 ;
     
 
@@ -108,44 +102,34 @@ private constructor (){
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
-        
-        
+    var originalHTMLImage: PlaynMutableImage =  as PlaynMutableImageoriginalImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
-        
-        
+    var originalHTMLImage: PlaynImmutableImage =  as PlaynImmutableImageoriginalImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-        
-        
+    var htmlImage: PlaynMutableImage =  as PlaynMutableImageimage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-        
-        
 ;
     
 canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.height() /2);
@@ -167,7 +151,8 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width(); /2, 
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             

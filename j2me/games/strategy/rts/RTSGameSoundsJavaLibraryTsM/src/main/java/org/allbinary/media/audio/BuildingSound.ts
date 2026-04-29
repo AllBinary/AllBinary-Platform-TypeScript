@@ -46,8 +46,6 @@ export class BuildingSound extends CompositeSound {
         
 
     private soundInterface: Sound = new BuildingSound();
-        
-        
 
     public static getInstance(): Sound{
 

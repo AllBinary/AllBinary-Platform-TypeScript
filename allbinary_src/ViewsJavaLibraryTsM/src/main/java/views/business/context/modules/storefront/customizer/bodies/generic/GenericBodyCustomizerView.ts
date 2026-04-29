@@ -83,12 +83,8 @@ export class GenericBodyCustomizerView extends HttpStoreComponentView implements
         
 
     private static readonly NAME: string = "None";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     body: GenericBodyValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -104,9 +100,9 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.body as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.body);
     
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -117,8 +113,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
 var document = document
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
@@ -148,15 +142,11 @@ var document = document
     
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
-        
-        
 ;
     
 
     var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -181,7 +171,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

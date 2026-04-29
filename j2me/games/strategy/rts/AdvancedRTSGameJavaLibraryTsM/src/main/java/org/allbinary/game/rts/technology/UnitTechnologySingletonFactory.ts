@@ -43,8 +43,6 @@ export class UnitTechnologySingletonFactory
         
 
     private static readonly instance: UnitTechnologySingletonFactory = new UnitTechnologySingletonFactory();
-        
-        
 
     public static getInstance(): UnitTechnologySingletonFactory{
 

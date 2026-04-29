@@ -46,8 +46,6 @@ export class WeaponLayerArrayLayerCircularStaticPool
         
 
     private static readonly instance: WeaponLayerArrayLayerCircularStaticPool = new WeaponLayerArrayLayerCircularStaticPool();
-        
-        
 
     public static getInstance(): WeaponLayerArrayLayerCircularStaticPool{
 
@@ -60,38 +58,26 @@ export class WeaponLayerArrayLayerCircularStaticPool
 
 
     private readonly MAX: number = 5;
-        
-        
 
-    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(MAX)!;
-        
-        
+    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(MAX)!;
 
     private ALL_WEAPONLAYER_ARRAY: any[][][] = new Array(4)
                                                         ;
-        
-        
 
     public init(){
 
     var WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX *2)
                                                             ;
-        
-        
 ;
     
 
     var TWO_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX)
                                                             ;
-        
-        
 ;
     
 
     var THREE_WEAPONLAYER_ARRAY: any[][] = arrayOfNulls<Array<Any?>>(this.MAX)
                                                             ;
-        
-        
 ;
     
 
@@ -100,8 +86,6 @@ export class WeaponLayerArrayLayerCircularStaticPool
 
                         for (
     var index: number = 0;
-        
-        
 index < this.MAX; index++)
         {
 WEAPONLAYER_ARRAY[index]= new Array(1);
@@ -124,12 +108,10 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(size: number): WeaponLayer[]{
+    public getInstanceArray(size: number): WeaponLayer[]{
 var size = size
 
-    var weaponLayerArray: WeaponLayer[] = this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]! as Array<WeaponLayer?>;
-        
-        
+    var weaponLayerArray: WeaponLayer[] =  as Array<WeaponLayer?>this.ALL_WEAPONLAYER_ARRAY[size]![this.circularIndexUtil!.getIndex()]!;
 ;
     
 this.circularIndexUtil!.next();

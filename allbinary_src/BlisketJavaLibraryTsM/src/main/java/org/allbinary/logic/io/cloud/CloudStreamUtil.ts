@@ -52,8 +52,6 @@ export class CloudStreamUtil
         
 
     private static readonly instance: CloudStreamUtil = new CloudStreamUtil();
-        
-        
 
     public static getInstance(): CloudStreamUtil{
 
@@ -66,8 +64,6 @@ export class CloudStreamUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -75,14 +71,10 @@ export class CloudStreamUtil
 var file = file
 
     var inputStream: InputStream = new AbFileInputStream(file);
-        
-        
 ;
     
 
     var available: number = inputStream!.available()!;
-        
-        
 ;
     
 
@@ -116,14 +108,10 @@ var file = file
 var file = file
 
     var inputStream: InputStream = new AbFileLocalInputStream(file);
-        
-        
 ;
     
 
     var available: number = inputStream!.available()!;
-        
-        
 ;
     
 
@@ -181,14 +169,10 @@ available= inputStream!.available();
 var file = file
 
     var inputStream: InputStream = new AbFileLocalInputStream(file);
-        
-        
 ;
     
 
     var available: number = inputStream!.available()!;
-        
-        
 ;
     
 

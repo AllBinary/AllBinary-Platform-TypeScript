@@ -45,12 +45,8 @@ export class GameState
         
 
     public NO_GAME_STATE: GameState = GameStateFactory.getInstance("NO_GAME_STATE")!;
-        
-        
 
     public PLAYING_GAME_STATE: GameState = GameStateFactory.getInstance("PLAYING_GAME_STATE")!;
-        
-        
 
     private name: string
 public constructor (name: string, state: number){

@@ -60,8 +60,6 @@ export class SpecialMessageUtil
         
 
     private static readonly SINGLETON: SpecialMessageUtil = new SpecialMessageUtil();
-        
-        
 
     public static getInstance(): SpecialMessageUtil{
 
@@ -76,8 +74,6 @@ export class SpecialMessageUtil
     public get(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(Memory.getInfo());

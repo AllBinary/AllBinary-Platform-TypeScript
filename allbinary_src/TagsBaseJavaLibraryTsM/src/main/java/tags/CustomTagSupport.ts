@@ -49,12 +49,8 @@ export class CustomTagSupport extends TagSupport {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
-        
-        
 
 }
                 

@@ -94,8 +94,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     //var point = point
 
     var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;
-        
-        
 ;
     
 
@@ -104,56 +102,38 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                                     {
                                     
     var rgb1: number = imageComparisonInfo!.getBufferedImages()[0]!.getRGB(point.getX(), point.getY())!;
-        
-        
 ;
     
 
     var rgb2: number = imageComparisonInfo!.getBufferedImages()[1]!.getRGB(point.getX(), point.getY())!;
-        
-        
 ;
     
 
     var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
-        
-        
 ;
     
 
-    var colorInteger: Integer = Integer(Integer.valueOf(rgb1))!;
-        
-        
+    var colorInteger: number = Integer(Integer.valueOf(rgb1))!;
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
-        
-        
+    var colorCacheable: ColorCacheable =  as ColorCacheableautomaticCacheInterface!.get(colorInteger);;
 ;
     
 
     var color: Color = colorCacheable!.getColor()!;
-        
-        
 ;
     
 
-    var colorInteger2: Integer = Integer(Integer.valueOf(rgb2))!;
-        
-        
+    var colorInteger2: number = Integer(Integer.valueOf(rgb2))!;
 ;
     
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
-        
-        
+    var colorCacheable2: ColorCacheable =  as ColorCacheableautomaticCacheInterface!.get(colorInteger);;
 ;
     
 
     var color2: Color = colorCacheable!.getColor()!;
-        
-        
 ;
     
 
@@ -192,7 +172,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
                 //@Throws(Error::class)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
+    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
     //var bufferedImage2 = bufferedImage2
     //var frameOne = frameOne
@@ -209,7 +189,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
                 //@Throws(Error::class)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
+    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number, name: string): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
     //var bufferedImage2 = bufferedImage2
     //var frameOne = frameOne
@@ -227,14 +207,13 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                                     
 
 
-                            throw new Error("Input images must not be null.")
+                            throw new Error("Input images must not be null.");
+                    
 
                                     }
                                 
 
     var imageComparisonInfo: ImageComparisonResult = new ImageComparisonResult(name, bufferedImage1, bufferedImage2, frameOne, frameTwo, tolerance);
-        
-        
 ;
     
 
@@ -243,8 +222,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
                         for (
     var indexY: number = 0;
-        
-        
 indexY < imageComparisonInfo!.imageHeight; indexY++)
         {
 
@@ -253,11 +230,9 @@ indexY < imageComparisonInfo!.imageHeight; indexY++)
 
                         for (
     var indexX: number = 0;
-        
-        
 indexX < imageComparisonInfo!.imageWidth; indexX++)
         {
-this.process(imageComparisonInfo, PointFactory.getInstance()!.getInstance0(indexX, indexY));
+this.process(imageComparisonInfo, PointFactory.getInstance()!.createXY(indexX, indexY));
     
 
                         if(imageComparisonInfo!.getNonMatchingPixelVector()!.size() > this.imageComparatorConstraintsInterface!.getMaxNonMatchingPixelDeltas())

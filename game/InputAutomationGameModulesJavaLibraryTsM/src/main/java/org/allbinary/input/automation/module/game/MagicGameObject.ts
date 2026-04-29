@@ -56,9 +56,7 @@ export class MagicGameObject extends MeteredGameObject implements MagicGameObjec
         
 
     private readonly MP_LABEL: string = "MP:";
-        
-        
-public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object){
+public constructor (bufferedImage: BufferedImage[], minX: number, maxX: number, y: number){
             super(bufferedImage, minX, maxX, y);
                     var bufferedImage = bufferedImage
 var minX = minX
@@ -74,8 +72,6 @@ var y = y
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);

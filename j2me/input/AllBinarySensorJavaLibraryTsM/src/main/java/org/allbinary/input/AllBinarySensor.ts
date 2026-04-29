@@ -54,12 +54,8 @@ export class AllBinarySensor
         
 
     public static readonly NULL_ALLBINARY_SENSOR: AllBinarySensor = new AllBinarySensor();
-        
-        
 
     private max: number = 100;
-        
-        
 
     public static setMax(max: number){
 var max = max
@@ -79,12 +75,8 @@ AllBinarySensor.max= max;
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 protected constructor (){
 
             super();

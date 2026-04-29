@@ -51,8 +51,6 @@ export class HashtableUtil
         
 
     private static readonly instance: HashtableUtil = new HashtableUtil();
-        
-        
 
     public static getInstance(): HashtableUtil{
 
@@ -64,13 +62,11 @@ export class HashtableUtil
 }
 
 
-    public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
+    public putAll(fromHashtable: Hashtable, hashtable: Hashtable){
 var fromHashtable = fromHashtable
 var hashtable = hashtable
 
-    var enumeration: Enumeration<any?> = fromHashtable!.keys()!;
-        
-        
+    var enumeration: Enumeration = fromHashtable!.keys()!;
 ;
     
 
@@ -78,14 +74,10 @@ var hashtable = hashtable
         {
 
     var key: any = enumeration.nextElement()!!;
-        
-        
 ;
     
 
     var value: any = hashtable.get(key as Object)!;
-        
-        
 ;
     
 
@@ -108,24 +100,18 @@ var hashtable = hashtable
 }
 
 
-    public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
+    public getKeysAsArray(hashtable: Hashtable): any[]{
 var hashtable = hashtable
 
     var objectArray: any[] = new Array(hashtable.length);
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
-    var enumeration: Enumeration<any?> = hashtable.keys()!;
-        
-        
+    var enumeration: Enumeration = hashtable.keys()!;
 ;
     
 
@@ -144,18 +130,14 @@ objectArray[index++]= enumeration.nextElement()!;
 }
 
 
-    public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
+    public getKeysAsList(hashtable: Hashtable): BasicArrayList{
 var hashtable = hashtable
 
     var list: BasicArrayList = new BasicArrayListS(hashtable.length);
-        
-        
 ;
     
 
-    var enumeration: Enumeration<any?> = hashtable.keys()!;
-        
-        
+    var enumeration: Enumeration = hashtable.keys()!;
 ;
     
 

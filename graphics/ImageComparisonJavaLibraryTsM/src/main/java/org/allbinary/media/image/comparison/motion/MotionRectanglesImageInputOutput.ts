@@ -107,12 +107,8 @@ export class MotionRectanglesImageInputOutput
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly NUMBER_OF_IMAGES: number = 1;
-        
-        
 public constructor (){
 
             super();
@@ -121,19 +117,15 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public save(frame: Long){
+    public save(frame: number){
 var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
-    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
-        
-        
+    var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable =  as MotionRectanglesResultsFrameCacheable
+                                    (getInstance as AutomaticCacheInterface).get(frame);;
 ;
     
 
@@ -144,21 +136,19 @@ var frame = frame
                                     {
                                     
     var motionRectangles: MotionRectangles = motionRectanglesResultsFrameCacheable!.getMotionRectangles()!;
-        
-        
 ;
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable=  as MotionRectanglesResultsFrameCacheable
+                                    (getInstance as AutomaticCacheInterface).get(frame);;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
 this.save(motionRectangles, frame);
     
-motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
+motionRectanglesResultsFrameCacheable=  as MotionRectanglesResultsFrameCacheable
+                                    (getInstance as AutomaticCacheInterface).get(frame);;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
@@ -178,19 +168,15 @@ this.save(motionRectangles, frame);
 
                 //@Throws(Error::class)
             
-    public save(motionRectangles: MotionRectangles, frame: Long){
+    public save(motionRectangles: MotionRectangles, frame: number){
 var motionRectangles = motionRectangles
 var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var filePathStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
@@ -203,8 +189,6 @@ filePathStringBuffer!.append(motionRectangles!.getName());
     
 
     var filePathStringBuffer1: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer1!.append(filePathStringBuffer!.toString());
@@ -215,8 +199,6 @@ filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension()
     
 
     var filePathStringBuffer2: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer2!.append(filePathStringBuffer!.toString());
@@ -227,8 +209,6 @@ filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension()
     
 
     var filePathStringBuffer3: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer3!.append(filePathStringBuffer!.toString());
@@ -243,32 +223,22 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString
     
 
     var bufferedImageCacheables: BufferedImageCacheable[] = new Array(this.NUMBER_OF_IMAGES);
-        
-        
 ;
     
 
     var imageComparisonInfo: ImageComparisonResult = motionRectangles!.getImageComparisonResult()!;
-        
-        
 ;
     
 
     var originalBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[0]!;
-        
-        
 ;
     
 
     var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.getInstance(imageComparisonInfo!.imageWidth, imageComparisonInfo!.imageHeight, originalBufferedImage!.getType())!;
-        
-        
 ;
     
 
     var poolInterface: PoolInterface = BufferedImagePoolSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -277,11 +247,9 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString
 
                         for (
     var index: number = 0;
-        
-        
 index < this.NUMBER_OF_IMAGES; index++)
         {
-bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
+bufferedImageCacheables[index]=  as BufferedImageCacheablepoolInterface!.remove(bufferedImageInfo);;
     
 }
 
@@ -308,8 +276,6 @@ bufferedImageGraphicsArray= new Array(this.NUMBER_OF_IMAGES);
 
                         for (
     var index: number = 0;
-        
-        
 index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedImage()!.getGraphics();
@@ -318,14 +284,10 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 
 
     var rectangelList: Vector = motionRectangles!.getVector()!;
-        
-        
 ;
     
 
     var size: number = rectangelList!.length!;
-        
-        
 ;
     
 
@@ -334,20 +296,14 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
 
-    var motionRectangle: MotionRectangle = rectangelList!.get(index2); as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle =  as MotionRectanglerectangelList!.get(index2);;
 ;
     
 
     var rectangle: Rectangle = motionRectangle!.getRectangle()!;
-        
-        
 ;
     
 
@@ -356,8 +312,6 @@ index2 < size; index2++)
 
                         for (
     var index: number = 0;
-        
-        
 index < this.NUMBER_OF_IMAGES; index++)
         {
 bufferedImageGraphicsArray[index]!.setColor(Color.ORANGE);
@@ -370,8 +324,6 @@ bufferedImageGraphicsArray[index]!.drawRect(rectangle.x, rectangle.y, rectangle.
 
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-        
-        
 ;
     
 

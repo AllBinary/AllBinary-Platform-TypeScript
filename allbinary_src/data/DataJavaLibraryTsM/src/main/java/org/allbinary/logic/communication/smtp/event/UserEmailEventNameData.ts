@@ -48,109 +48,57 @@ export class UserEmailEventNameData
          {
         
 
-    private userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private userNameEvenNameHashMap: HashMap = new HashMap();
 
     private nextId: number = 0;
-        
-        
 
     public static readonly INSTALLER: UserEmailEventNameData = new UserEmailEventNameData("Installer");
-        
-        
 
     public static readonly EXCEPTION: UserEmailEventNameData = new UserEmailEventNameData("Exception");
-        
-        
 
     public static readonly LOGGEDEXCEPTION: UserEmailEventNameData = new UserEmailEventNameData("Logged Exception");
-        
-        
 
     public static readonly ERROR: UserEmailEventNameData = new UserEmailEventNameData("Error");
-        
-        
 
     public static readonly OUTOFMEMORY: UserEmailEventNameData = new UserEmailEventNameData("Out Of Memory Error");
-        
-        
 
     public static readonly ADMINGENERATINGSTATICPAGES: UserEmailEventNameData = new UserEmailEventNameData("Admin Generating Static Pages");
-        
-        
 
     public static readonly STOREERROROCCURRED: UserEmailEventNameData = new UserEmailEventNameData("Store Error Occurred");
-        
-        
 
     public static readonly STOREOUTOFMEMORY: UserEmailEventNameData = new UserEmailEventNameData("Store Out Of Memory Error");
-        
-        
 
     public static readonly STORECREATED: UserEmailEventNameData = new UserEmailEventNameData("Store Created");
-        
-        
 
     public static readonly STOREOPENED: UserEmailEventNameData = new UserEmailEventNameData("Store Opened");
-        
-        
 
     public static readonly STORECLOSED: UserEmailEventNameData = new UserEmailEventNameData("Store Closed");
-        
-        
 
     public static readonly STOREGENERATINGSTATICPAGES: UserEmailEventNameData = new UserEmailEventNameData("Store Generating Static Pages");
-        
-        
 
     public static readonly PRODUCTISOUT: UserEmailEventNameData = new UserEmailEventNameData("Product Is Out");
-        
-        
 
     public static readonly PRODUCTISAVAILABLE: UserEmailEventNameData = new UserEmailEventNameData("Product Is Available");
-        
-        
 
     public static readonly PRODUCTISOLD: UserEmailEventNameData = new UserEmailEventNameData("Product Is Old");
-        
-        
 
     public static readonly PRODUCTISONSALE: UserEmailEventNameData = new UserEmailEventNameData("Product Is On Sale");
-        
-        
 
     public static readonly PRODUCTSALEISOVER: UserEmailEventNameData = new UserEmailEventNameData("Product Sale Is Over");
-        
-        
 
     public static readonly ORDERPREPROCESSING: UserEmailEventNameData = new UserEmailEventNameData(OrderHistoryData.PREPROCESSING);
-        
-        
 
     public static readonly ORDERPROCESSING: UserEmailEventNameData = new UserEmailEventNameData(OrderHistoryData.PROCESSING);
-        
-        
 
     public static readonly ORDERCANCELLED: UserEmailEventNameData = new UserEmailEventNameData(OrderHistoryData.CANCELLED);
-        
-        
 
     public static readonly ORDERPARTIALLYSHIPPED: UserEmailEventNameData = new UserEmailEventNameData(OrderHistoryData.PARTIALLYSHIPPED);
-        
-        
 
     public static readonly ORDERSHIPPED: UserEmailEventNameData = new UserEmailEventNameData(OrderHistoryData.SHIPPED);
-        
-        
 
     public static readonly QUOTEREQUEST: UserEmailEventNameData = new UserEmailEventNameData("Quote Request");
-        
-        
 
     public static readonly NEWPASSWORD: UserEmailEventNameData = new UserEmailEventNameData("New Password");
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -158,9 +106,7 @@ export class UserEmailEventNameData
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object); as UserEmailEventNameData;
-        
-        
+    var userEmailEventNameData: UserEmailEventNameData =  as UserEmailEventNameDataUserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object);;
 ;
     
 
@@ -172,7 +118,8 @@ var userEmailEventNameString = userEmailEventNameString
                                     
 
 
-                            throw new Error()
+                            throw new Error();
+                    
 
                                     }
                                 

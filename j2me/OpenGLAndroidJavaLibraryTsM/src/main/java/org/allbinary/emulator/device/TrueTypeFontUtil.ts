@@ -100,8 +100,6 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 
     private static readonly instance: TrueTypeFontUtil = new TrueTypeFontUtil();
-        
-        
 
     public static getInstance(): TrueTypeFontUtil{
 
@@ -114,20 +112,12 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-        
-        
 
     private readonly realFontSize: number = 18;
-        
-        
 
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
-        
-        
 private constructor (){
             super(1);
                     
@@ -142,35 +132,25 @@ private constructor (){
         try {
             
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var file: File = ResourceUtil.getInstance()!.getContext()!.getFilesDir()!;
-        
-        
 ;
     
 
     var path: string = file.getAbsolutePath() +CanvasStrings.getInstance()!.FONT_ATLAS;
-        
-        
 ;
     
 this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     
 
     var fos: FileOutputStream = new FileOutputStream(path);
-        
-        
 ;
     
 
     var bitmap: Bitmap = 
                                     (getImage as AndroidImageInterface).getBitmap()!;
-        
-        
 ;
     
 bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
@@ -181,8 +161,6 @@ bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
@@ -203,88 +181,62 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
                                     {
                                     
     var cellsPerRow2: number = CELLS_PER_ROW *2;
-        
-        
 ;
     
 
     var cellsPerRow3: number = CELLS_PER_ROW *3;
-        
-        
 ;
     
 
     var cellsPerRow4: number = CELLS_PER_ROW *4;
-        
-        
 ;
     
 
     var cellsPerRow5: number = CELLS_PER_ROW *5;
-        
-        
 ;
     
 
     var cellsPerRow6: number = CELLS_PER_ROW *6;
-        
-        
 ;
     
 
     var cellsPerRow7: number = CELLS_PER_ROW *7;
-        
-        
 ;
     
 
     var typeface: Typeface = Typeface.DEFAULT;
-        
-        
 ;
     
 
     var textureSize: number = this.getAsTextureSize(CELLS_PER_ROW *cellSize)!;
-        
-        
 ;
     
 
     var bitmap: Bitmap = Bitmap.createBitmap(textureSize, textureSize, Bitmap.Config.ARGB_8888)!;
-        
-        
 ;
     
 
     var canvas: Canvas = new Canvas(bitmap);
-        
-        
 ;
     
 
     var paint: Paint = new Paint();
-        
-        
 ;
     
 paint.setTypeface(typeface);
     
 paint.setTextSize(this.realFontSize);
     
-paint.setAlpha(basicColor!.alpha);
+paint.setAlpha(Math.roundbasicColor!.alpha);
     
 paint.setColor(basicColor!.toInt());
     
 
     var biggestHeight: number = 0;
-        
-        
 ;
     
 
     var bounds: Rect = new Rect();
-        
-        
 ;
     
 
@@ -301,8 +253,6 @@ paint.setColor(basicColor!.toInt());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 characterArray[0]= pattern[index];
@@ -403,11 +353,9 @@ canvas.save();
     
 
     var image: Image = AndroidImmutableImage.create(bitmap)!;
-        
-        
 ;
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
+this.fontImage=  as OpenGLESImagethis.preResourceImageUtil!.encapsulate(image);;
     
 
 
@@ -436,14 +384,10 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     //var fontSize = fontSize
 
     var typeface: Typeface = Typeface.DEFAULT;
-        
-        
 ;
     
 
     var paint: Paint = new Paint();
-        
-        
 ;
     
 paint.setTypeface(typeface);
@@ -454,8 +398,6 @@ paint.setARGB(255, 255, 255, 255);
     
 
     var bounds: Rect = new Rect();
-        
-        
 ;
     
 
@@ -464,8 +406,6 @@ paint.setARGB(255, 255, 255, 255);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 characterArray[0]= pattern[index];

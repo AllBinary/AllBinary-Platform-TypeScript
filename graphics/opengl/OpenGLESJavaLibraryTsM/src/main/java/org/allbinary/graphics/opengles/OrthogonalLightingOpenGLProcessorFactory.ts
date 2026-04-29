@@ -39,14 +39,14 @@
         
 import { NullOpenGLProcessorFactory } from "./NullOpenGLProcessorFactory.js";
 
+import { OpenGLProcessor } from "./OpenGLProcessor.js";
+
 export class OrthogonalLightingOpenGLProcessorFactory
             extends Object
          {
         
 
     private static readonly instance: OrthogonalLightingOpenGLProcessorFactory = new OrthogonalLightingOpenGLProcessorFactory();
-        
-        
 
     public static getInstance(): OrthogonalLightingOpenGLProcessorFactory{
 
@@ -59,12 +59,8 @@ export class OrthogonalLightingOpenGLProcessorFactory
 
 
     public sceneLightingOrthogonalModeOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public sceneLightsOrthogonalModeOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
 }
                 

@@ -43,8 +43,6 @@ export class ShaderStrings
         
 
     private static readonly instance: ShaderStrings = new ShaderStrings();
-        
-        
 
     public static getInstance(): ShaderStrings{
 
@@ -57,20 +55,12 @@ export class ShaderStrings
 
 
     public readonly NO_PROGRAM_HANDLE: string = "No program handle";
-        
-        
 
     public readonly UNIFORM_BLOCK_HANDLE: string = "Uniform Block Handle: ";
-        
-        
 
     public readonly UNIFORM_HANDLE: string = "Uniform Handle: ";
-        
-        
 
     public readonly UNIFORM_ATTRIBUTE_HANDLE: string = "Uniform Attribute Handle: ";
-        
-        
 
 }
                 

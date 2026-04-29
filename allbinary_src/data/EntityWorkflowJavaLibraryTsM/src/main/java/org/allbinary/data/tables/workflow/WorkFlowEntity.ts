@@ -88,24 +88,14 @@ export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     readonly tableName: string = "workflows";
-        
-        
 
     private readonly METHOD_GET: string = "get()";
-        
-        
 
     private readonly METHOD_UPDATE: string = "update";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -156,9 +146,7 @@ this.setTableName(this.tableName);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
@@ -202,9 +190,7 @@ super.deleteWhere(keysAndValues);
 
         try {
             
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
@@ -212,16 +198,14 @@ keysAndValues!.put(WorkFlowData.getInstance()!.NAME, name);
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var hashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap); as WorkFlowInterface;
+                        return  as WorkFlowInterfaceDbWorkFlowFactory.getInstance()!.getInstance(abeClientInformation, hashMap);;
     
 
                 //: 
@@ -239,7 +223,8 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -257,7 +242,8 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -269,28 +255,20 @@ var storeName = storeName
         try {
             
     var workFlowsVector: Vector = new Vector();
-        
-        
 ;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var size: number = hashMapVector!.length!;
-        
-        
 ;
     
 
@@ -299,14 +277,10 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object); as HashMap<any, any>;
-        
-        
+    var workFlowHashMap: HashMap =  as HashMaphashMapVector!.get(i as Object);;
 ;
     
 
@@ -352,19 +326,17 @@ i < size; i++)
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
 
         try {
             
-    var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var wherekeysAndValues: HashMap = new HashMap();
 ;
     
-wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String);
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME,  as StringupdatedValues!.get(WorkFlowData.getInstance()!.NAME));
     
-wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String);
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME,  as StringupdatedValues!.get(StoreFrontData.getInstance()!.NAME));
     
 super.updateWhere(wherekeysAndValues, updatedValues);
     
@@ -389,14 +361,10 @@ super.updateWhere(wherekeysAndValues, updatedValues);
     public createTableStatement(): string{
 
     var workFlowData: WorkFlowData = WorkFlowData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(workFlowData!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(StoreFrontData.getInstance()!.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(workFlowData!.DATA)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(EntryData.getInstance()!.TIMECREATED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.LASTMODIFIED)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(workFlowData!.NAME)!.append(this.sqlStrings!.END);

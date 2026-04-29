@@ -66,8 +66,6 @@ export class CamelCaseUtil
         
 
     private static readonly instance: CamelCaseUtil = new CamelCaseUtil();
-        
-        
 
     public static getInstance(): CamelCaseUtil{
 
@@ -80,8 +78,6 @@ export class CamelCaseUtil
 
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -105,30 +101,22 @@ export class CamelCaseUtil
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 stringBuilder!.delete(0, stringBuilder!.length());
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var tokenizer: Tokenizer = new Tokenizer(this.commonSeps!.UNDERSCORE);
-        
-        
 ;
     
 tokenizer.getTokens(string, list);
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -141,11 +129,9 @@ tokenizer.getTokens(string, list);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
-word= list.get(i); as String;
+word=  as Stringlist.get(i);;
     
 word= stringValidationUtil!.isEmpty(word)
                         ?       

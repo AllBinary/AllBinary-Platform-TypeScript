@@ -47,24 +47,14 @@ export class HtmlInput extends HtmlTag {
         
 
     private readonly END: string = ">";
-        
-        
 
     private readonly STARTINPUT: string = "<INPUT ";
-        
-        
 
     private readonly ENDINPUT: string = "</INPUT>";
-        
-        
 
     private readonly TYPE: string = "TYPE=\"";
-        
-        
 
     private readonly NAME: string = "NAME=\"";
-        
-        
 
     private before: string
 
@@ -94,27 +84,19 @@ this.after= after;
     public toString(): string{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var result: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
-        
-        
 ;
     
 
     var attributeSize: number = attributeKeys!.length
                 ;
-        
-        
 ;
     
 result= this.before;
@@ -139,20 +121,14 @@ result += "\" ";
 
                         for (
     var i: number = 0;
-        
-        
 i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as String;
-        
-        
+    var key: string =  as StringattributeKeys[i]!;
 ;
     
 
-    var value: string = otherAttributes!.get(key); as String;
-        
-        
+    var value: string =  as StringotherAttributes!.get(key);;
 ;
     
 

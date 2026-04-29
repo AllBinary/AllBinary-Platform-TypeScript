@@ -131,20 +131,12 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
         
 
     public static readonly NAME: string = "HighScoresCanvas";
-        
-        
 
     private paintable: Paintable = NullPaintable.getInstance()!;
-        
-        
 
     private readonly highScoreCommandsFactory: HighScoreCommandsFactory = HighScoreCommandsFactory.getInstance()!;
-        
-        
 
     private readonly waitPaintable: SimpleTextPaintable = new SimpleTextPaintable(commonStrings!.PLEASE_WAIT_FOR_SERVER, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     private readonly highScoresPaintable: HighScoresPaintable
 
@@ -153,16 +145,12 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
     colorFillPaintable: ColorFillBasePaintable
 
     private readonly highScoresHelper: HighScoresHelperBase = new HighScoresHelperBase();
-        
-        
 
     private readonly gameInfo: GameInfo
 
     private readonly highScoresCanvasInputProcessor: HighScoresCanvasInputProcessor
 
     private currentCommand: Command = highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
-        
-        
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, gameInfo: GameInfo, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface, highScoresCanvasInputProcessorFactoryInterface: HighScoresCanvasInputProcessorFactoryInterface){
             super(commandListener, HighScoresCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                         //var commandListener = commandListener
@@ -210,22 +198,18 @@ this.setPaintable(this.getHighScoresPaintable());
 
                         }
                             
-SecondaryThreadPool.getInstance()!.runTask(new object: ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var isHTML: boolean = J2MEUtil.isHTML()!;
-        
-        
 ;
     
 
@@ -244,11 +228,9 @@ hasPainted= false;
                                 
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
-logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
 repaintBehavior!.onChangeRepaint(this@HighScoresCanvas);
     
@@ -266,7 +248,7 @@ repaintBehavior!.onChangeRepaint(this@HighScoresCanvas);
                                 
 stringMaker!.delete(0, stringMaker!.length());
     
-logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(System.currentTimeMillis())!.toString(), this, commonStrings!.RUN);
+logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
 executeUpdate();
     
@@ -314,8 +296,6 @@ this.highScoresCanvasInputProcessor!.close();
 
 
     hasPainted: boolean = false;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
@@ -413,8 +393,6 @@ this.logUtil!.putF(new StringMaker().
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -423,20 +401,14 @@ this.logUtil!.putF(new StringMaker().
                                     {
                                     
     var index: number = highScoreCommandsFactory!.getIndex(command)!;
-        
-        
 ;
     
 
     var nextIndex: number = index +1;
-        
-        
 ;
     
 
     var highScoresArray: HighScores[] = this.highScoresHelper!.getHighScoresArray()!;
-        
-        
 ;
     
 

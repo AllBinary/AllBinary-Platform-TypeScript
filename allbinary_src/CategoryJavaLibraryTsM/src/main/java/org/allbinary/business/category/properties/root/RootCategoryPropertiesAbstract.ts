@@ -63,18 +63,16 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { RootCategoryPropertiesInterface } from "./RootCategoryPropertiesInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class RootCategoryPropertiesAbstract
             extends Object
          implements RootCategoryPropertiesInterface {
         
 
     private readonly category: string = CategoryData.getInstance()!.ROOTCATEGORY;
-        
-        
 
     private readonly fileName: string = category +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION;
-        
-        
 public constructor (){
 
             super();
@@ -86,7 +84,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue(); as Object;
+                        return  as Objectthis.getValue();;
     
 }
 
@@ -108,7 +106,8 @@ var value = value
 
 
 
-                            throw new Error("No Value Allowed")
+                            throw new Error("No Value Allowed");
+                    
 }
 
 
@@ -119,7 +118,8 @@ var value = value
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -130,7 +130,8 @@ var value = value
 
 
 
-                            throw new Error("No Value Allowed")
+                            throw new Error("No Value Allowed");
+                    
 }
 
 
@@ -140,7 +141,8 @@ var value = value
 
 
 
-                            throw new Error("No Value Allowed")
+                            throw new Error("No Value Allowed");
+                    
 }
 
 
@@ -150,7 +152,8 @@ var value = value
 
 
 
-                            throw new Error("No A Real Root")
+                            throw new Error("No A Real Root");
+                    
 }
 
 
@@ -160,7 +163,8 @@ var value = value
 
 
 
-                            throw new Error("Root but not implemented")
+                            throw new Error("Root but not implemented");
+                    
 }
 
 
@@ -171,7 +175,8 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
-                            throw new Error("Not Root")
+                            throw new Error("Not Root");
+                    
 }
 
 
@@ -206,11 +211,9 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var categoryHashMap: HashMap = new HashMap();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
@@ -227,8 +230,6 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     public toVector(): Vector{
 
     var categoryVector: Vector = new Vector();
-        
-        
 ;
     
 categoryVector!.add(this.category);

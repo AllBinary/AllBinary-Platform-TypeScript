@@ -84,14 +84,10 @@ this.dataMappingInterface= dataMappingInterface;
 var document = document
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.dataMappingInterface!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.dataMappingInterface!.toHashMap()!;
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, EMPTY_STRING);

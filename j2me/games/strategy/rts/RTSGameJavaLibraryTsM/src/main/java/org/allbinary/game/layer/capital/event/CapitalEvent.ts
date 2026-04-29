@@ -59,8 +59,6 @@ public constructor (anyType: any = {}){
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("CapitalEvent: Value: \n");

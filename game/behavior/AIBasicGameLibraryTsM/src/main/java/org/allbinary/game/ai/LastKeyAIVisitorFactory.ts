@@ -45,8 +45,6 @@ export class LastKeyAIVisitorFactory
         
 
     private static readonly instance: LastKeyAIVisitor = new LastKeyAIVisitor();
-        
-        
 
     public static getInstance(): LastKeyAIVisitor{
 

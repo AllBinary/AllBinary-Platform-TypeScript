@@ -70,12 +70,8 @@ export class LogConfigTypes
         
 
     public static readonly JSP_ERROR_NO_FUNCTION: string = "in JSP Not In Function";
-        
-        
 
     public LOGGING: BasicArrayList = new BasicArrayListD();
-        
-        
 
                 init{
 LogConfigTypes.init();
@@ -92,21 +88,17 @@ LogConfigTypeFactory.getInstance();
     
 
     var loggingInitInfo: LoggingInitInfo = new LoggingInitInfo();
-        
-        
 ;
     
 
     var logConfigTypeVector: BasicArrayList = loggingInitInfo!.getTypeList()!;
-        
-        
 ;
     
 PreLogUtil.put("Number Of Log Configs: " +loggingInitInfo!.getNumberOfLogConfigs(), "LogConfigTypes", "init()");
     
 PreLogUtil.put("Number Of Log Config Type Names: " +logConfigTypeVector!.size(), "LogConfigTypes", "init()");
     
-LogConfigTypes.LOGGING.addAll(logConfigTypeVector);
+LogConfigTypes.LOGGING.addAllList(logConfigTypeVector);
     
 LogConfigTypes.LOGGING.add(LogConfigTypeFactory.getInstance()!.NETBEANS_MODULE);
     
@@ -127,20 +119,14 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
     //var node = node
 
     var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
     var name: string = DomNodeHelper.getTextNodeValue(nameValueNode)!;
-        
-        
 ;
     
 
     var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(LogConfigTypeData.getInstance()!.DESCRIPTION, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -151,8 +137,6 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
                                     {
                                     
     var description: string = DomNodeHelper.getTextNodeValue(descriptionValueNode)!;
-        
-        
 ;
     
 
@@ -160,14 +144,10 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
                                 
 
     var availableLogConfigTypes: BasicArrayList = LogConfigType.availableLogConfigTypes;
-        
-        
 ;
     
 
     var size: number = availableLogConfigTypes!.size()!;
-        
-        
 ;
     
 
@@ -180,11 +160,9 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-logConfigType= availableLogConfigTypes!.get(index); as LogConfigType;
+logConfigType=  as LogConfigTypeavailableLogConfigTypes!.get(index);;
     
 
                         if(logConfigType!.getName()!.compareTo(name) == 0)
@@ -204,7 +182,8 @@ logConfigType= availableLogConfigTypes!.get(index); as LogConfigType;
 
 
 
-                            throw new Error("No Such LogConfigType: " +name)
+                            throw new Error("No Such LogConfigType: " +name);
+                    
 }
 
 private constructor (){

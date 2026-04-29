@@ -43,12 +43,8 @@ export class DataFileData
         
 
     public static readonly UNCRYPTED_EXTENSION: string = "xml";
-        
-        
 
     public static readonly ENCRYPTED_EXTENSION: string = "abd";
-        
-        
 private constructor (){
 
             super();

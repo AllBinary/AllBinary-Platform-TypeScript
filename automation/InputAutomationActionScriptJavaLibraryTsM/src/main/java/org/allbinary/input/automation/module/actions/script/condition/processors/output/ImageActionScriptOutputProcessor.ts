@@ -64,39 +64,29 @@ export class ImageActionScriptOutputProcessor
 
                 //@Throws(Error::class)
             
-    public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: Long){
+    public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: number){
     //var imageActionScriptOutputInterface = imageActionScriptOutputInterface
     //var frame = frame
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF("Start - Processing at: " +imageActionScriptOutputInterface!.toString(), "ImageActionScriptOutputProcessor", commonStrings!.PROCESS);
     
 
     var imageTypes: ImageTypes = imageActionScriptOutputInterface!.getImageTypes()!;
-        
-        
 ;
     
 
     var vector: Vector = imageTypes!.getVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -105,20 +95,14 @@ logUtil!.putF("Start - Processing at: " +imageActionScriptOutputInterface!.toStr
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index); as InputImageType;
-        
-        
+    var imageType: InputImageType =  as InputImageTypevector.get(index);;
 ;
     
 
     var imageIOInterface: ImageIOInterface = InputImageIOInterfaceFactory.getInstance(imageType)!;
-        
-        
 ;
     
 imageIOInterface!.save(frame);
@@ -129,8 +113,6 @@ imageIOInterface!.save(frame);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

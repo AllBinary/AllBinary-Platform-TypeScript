@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -50,6 +50,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
+import { VectorAnimation } from "./VectorAnimation.js";
+
 import { Animation } from "./Animation.js";
 
 export class VectorAnimationInterfaceFactory
@@ -60,8 +62,6 @@ export class VectorAnimationInterfaceFactory
     private currentPoints: number[][][]
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -104,7 +104,7 @@ this.basicColor= basicColor;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicColor;
+                        return this.basicColor;
     
 }
 

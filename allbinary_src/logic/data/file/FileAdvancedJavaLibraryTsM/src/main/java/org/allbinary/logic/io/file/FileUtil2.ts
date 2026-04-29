@@ -62,8 +62,6 @@ export class FileUtil2
         
 
     private static readonly instance: FileUtil2 = new FileUtil2();
-        
-        
 
     public static getInstance(): FileUtil2{
 
@@ -76,16 +74,10 @@ export class FileUtil2
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -100,8 +92,6 @@ private constructor (){
     var inputStream: AbFileInputStream = 
                 null
             ;
-        
-        
 ;
     
 

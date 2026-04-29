@@ -48,19 +48,13 @@ export class AndroidDebug
         
 
     private startTime: number = Long.MAX_VALUE;
-        
-        
 
     private running: boolean = false;
-        
-        
 
     private bufferSize: number = 32 *1024 *1024;
-        
-        
 
     public start(){
-this.setStartTime(System.currentTimeMillis());
+this.setStartTime(Date.now());
     
 Debug.startMethodTracing("trace", bufferSize);
     

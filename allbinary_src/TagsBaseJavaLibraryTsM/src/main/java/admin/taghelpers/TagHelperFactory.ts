@@ -51,24 +51,25 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
         
 import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class TagHelperFactory
             extends Object
          implements TagHelperFactoryInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance(hashMap: HashMap, pageContext: PageContext): any{
     //var hashMap = hashMap
     //var pageContext = pageContext
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

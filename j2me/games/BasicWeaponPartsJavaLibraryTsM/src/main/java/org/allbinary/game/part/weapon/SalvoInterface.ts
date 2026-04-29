@@ -55,7 +55,7 @@ export interface SalvoInterface {
 
                 //@Throws(Error::class)
             
-    process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
+    processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
 
 }
                 

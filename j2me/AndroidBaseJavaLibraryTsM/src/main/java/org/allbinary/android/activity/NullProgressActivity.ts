@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 
 
 
@@ -39,16 +41,12 @@
         
 import { ProgressActivityInterface } from "./ProgressActivityInterface.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class NullProgressActivity
             extends Object
          implements ProgressActivityInterface {
         
 
     public static readonly NULL_PROGRESS_ACTIVITY: NullProgressActivity = new NullProgressActivity();
-        
-        
 
     public runOnUiThread(action: Runnable){
 var action = action

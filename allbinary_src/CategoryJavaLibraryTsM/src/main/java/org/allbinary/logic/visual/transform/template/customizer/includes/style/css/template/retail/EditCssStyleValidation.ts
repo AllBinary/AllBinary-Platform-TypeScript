@@ -79,7 +79,7 @@ public constructor (document: Document){
                     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
             super(hashMap);
                     var hashMap = hashMap
 
@@ -136,14 +136,10 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
-        
-        
 ;
     
 node.appendChild(styleNode);
@@ -153,8 +149,6 @@ styleNode!.appendChild(new ColorsView().
     
 
     var size: number = cssStyleElementVector!.size()!;
-        
-        
 ;
     
 
@@ -163,14 +157,10 @@ styleNode!.appendChild(new ColorsView().
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i); as DomNodeInterface;
-        
-        
+    var styleDomNodeInterface: DomNodeInterface =  as DomNodeInterfacecssStyleElementVector!.get(i);;
 ;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));

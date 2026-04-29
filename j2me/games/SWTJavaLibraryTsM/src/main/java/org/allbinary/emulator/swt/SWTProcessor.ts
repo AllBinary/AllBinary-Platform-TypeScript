@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
 
     
@@ -49,8 +51,6 @@ export class SWTProcessor
         
 
     private static readonly instance: SWTProcessor = new SWTProcessor();
-        
-        
 
     public static getInstance(): SWTProcessor{
 
@@ -68,8 +68,6 @@ protected constructor (){
 
 
     public runnable: Runnable = NullRunnable.getInstance()!;
-        
-        
 
     public process(display: Display){
     //var display = display

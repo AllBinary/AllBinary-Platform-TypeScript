@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Group } from "./Group.js";
+
 export class BasicGroupFactory
             extends Object
          {
         
 
     private static readonly instance: BasicGroupFactory = new BasicGroupFactory();
-        
-        
 
     public static getInstance(): BasicGroupFactory{
 
@@ -57,56 +57,36 @@ export class BasicGroupFactory
 
 
     public readonly NAME: string = "GROUP_NAME";
-        
-        
 
     public readonly NO_SUCH_GROUP: string = "No Such Group: ";
-        
-        
 
     public readonly GOOD: Group = new Group("Good Guys", 0);
-        
-        
 
     public readonly ENEMY: Group = new Group("Bad Guys", 1);
-        
-        
 
     public readonly ENEMY_ON_LEVEL: Group = new Group("Bad Guys on Level", 2);
-        
-        
 
     public readonly NONE: Group = new Group("Not On A Team", 3);
-        
-        
 
     public readonly GOOD_ARRAY: Group[] = 
                                                         [
                                                             this.GOOD
                                                         ];
-        
-        
 
     public readonly ENEMY_ARRAY: Group[] = 
                                                         [
                                                             this.ENEMY
                                                         ];
-        
-        
 
     public readonly ENEMY_ON_LEVEL_ARRAY: Group[] = 
                                                         [
                                                             this.ENEMY,this.ENEMY_ON_LEVEL
                                                         ];
-        
-        
 
     public readonly NONE_ARRAY: Group[] = 
                                                         [
                                                             this.NONE
                                                         ];
-        
-        
 
 }
                 

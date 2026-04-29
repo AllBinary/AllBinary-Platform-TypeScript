@@ -46,8 +46,6 @@ export class DisposalUtil
         
 
     private static readonly instance: DisposalUtil = new DisposalUtil();
-        
-        
 
     public static getInstance(): DisposalUtil{
 

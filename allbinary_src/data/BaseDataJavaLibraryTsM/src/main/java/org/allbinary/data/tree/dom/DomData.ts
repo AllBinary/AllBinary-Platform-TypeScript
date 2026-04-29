@@ -43,24 +43,14 @@ export class DomData
         
 
     public static readonly ID: string = "id";
-        
-        
 
     public static readonly CHILD: string = "child";
-        
-        
 
     public static readonly NAME: string = "name";
-        
-        
 
     public static readonly VALUE: string = "value";
-        
-        
 
     public static readonly INDEX: string = "index";
-        
-        
 private constructor (){
 
             super();

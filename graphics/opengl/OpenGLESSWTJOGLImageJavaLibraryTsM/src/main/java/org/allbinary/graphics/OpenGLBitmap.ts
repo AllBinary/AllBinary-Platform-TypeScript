@@ -46,7 +46,7 @@ public constructor (bitmap: any = {}){
 
             super();
             //var bitmap = bitmap
-this.image= bitmap as Image;
+this.image=  as Imagebitmap;
     
 }
 
@@ -67,9 +67,7 @@ this.image= bitmap as Image;
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
-        
-        
+    var mutableImage: SwtMutableImage =  as SwtMutableImagethis.image;
 ;
     
 
@@ -83,9 +81,7 @@ this.image= bitmap as Image;
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
-        
-        
+    var immutableImage: SwtImmutableImage =  as SwtImmutableImagethis.image;
 ;
     
 
@@ -113,9 +109,7 @@ var height = height
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = this.image as SwtMutableImage;
-        
-        
+    var mutableImage: SwtMutableImage =  as SwtMutableImagethis.image;
 ;
     
 mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
@@ -125,9 +119,7 @@ mutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
                                 
                         else {
                             
-    var immutableImage: SwtImmutableImage = this.image as SwtImmutableImage;
-        
-        
+    var immutableImage: SwtImmutableImage =  as SwtImmutableImagethis.image;
 ;
     
 immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
@@ -172,7 +164,7 @@ this.image.setRGB2(pixels, offset, height, x, y, width, height);
 
 
     public recycle(){
-DisposalUtil.getInstance()!.dispose(image);
+DisposalUtil.getInstance()!.disposeImage(image);
     
 }
 

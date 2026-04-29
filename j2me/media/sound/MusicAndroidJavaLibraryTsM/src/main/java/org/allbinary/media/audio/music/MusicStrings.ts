@@ -43,8 +43,6 @@ export class MusicStrings
         
 
     private static readonly instance: MusicStrings = new MusicStrings();
-        
-        
 
     public static getInstance(): MusicStrings{
 
@@ -57,16 +55,10 @@ export class MusicStrings
 
 
     public readonly SONG_EXTRA: string = "SONG";
-        
-        
 
     public readonly LEFT_VOLUME: string = "LEFT_VOLUME";
-        
-        
 
     public readonly RIGHT_VOLUME: string = "RIGHT_VOLUME";
-        
-        
 
 }
                 

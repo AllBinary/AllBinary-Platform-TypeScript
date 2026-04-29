@@ -97,8 +97,6 @@ export class OpenGLCapabilities
         
 
     private static readonly instance: OpenGLCapabilities = new OpenGLCapabilities();
-        
-        
 
     public static getInstance(): OpenGLCapabilities{
 
@@ -111,102 +109,54 @@ export class OpenGLCapabilities
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly CUSTOM_GL_SURFACE_VIEW: boolean = true;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private initialized: boolean = false;
-        
-        
 
     private glVersionString: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     private glShaderVersionString: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     public shaderVersion: number = 0;
-        
-        
 
     private glRenderer: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     private glVendor: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     private glExtensions: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     private possiblyAccelerated: boolean= false
 
     private acceleratedString: string = stringUtil!.EMPTY_STRING;
-        
-        
 
     public maxTextureSize: number = 64;
-        
-        
 
     public readonly VERSION_1_0: string = "1.0";
-        
-        
 
     public readonly VERSION_1_1: string = "1.1";
-        
-        
 
     public readonly VERSION_2_0: string = "2.0";
-        
-        
 
     public readonly VERSION_3_0: string = "3.0";
-        
-        
 
     public readonly VERSION_3_1: string = "3.1";
-        
-        
 
     public readonly VERSION_3_2: string = "3.2";
-        
-        
 
     public readonly VERSION_HIGHER_THAN_EXISTS: string = "999.999";
-        
-        
 
     public readonly VERSION_UNK: string = "Unk";
-        
-        
 
     public readonly GL_EXT_GPU_SHADER_100: string = "GL_ARB_shading_language_100";
-        
-        
 
     public readonly GL_EXT_GPU_SHADER4: string = "GL_EXT_gpu_shader4";
-        
-        
 
     private glVersion: string = this.glVersionString;
-        
-        
 
     public glInstanceVersion: string = VERSION_UNK;
-        
-        
 
     private glExtensionDrawTexture: boolean= false
 
@@ -241,42 +191,30 @@ private constructor (){
 var gl = gl
 
     var METHOD_NAME: string = "initGLCapabilities";
-        
-        
 ;
     
 
         try {
             
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var openGLImageSpecificFactory: OpenGLImageSpecificFactory = OpenGLImageSpecificFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.glVersionString= gl.glGetString(GL10.GL_VERSION);
     
 
     var GL_SHADING_LANGUAGE_VERSION: number = 0x8b8c;
-        
-        
 ;
     
 this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
@@ -302,8 +240,6 @@ this.glShaderVersionString= gl.glGetString(GL_SHADING_LANGUAGE_VERSION);
                                     {
                                     
     var startIndex: number = this.glShaderVersionString!.lastIndexOf(' ')!;
-        
-        
 ;
     
 
@@ -326,8 +262,6 @@ this.shaderVersion= Integer.parseInt(this.glShaderVersionString!.replace(CommonS
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
@@ -516,8 +450,6 @@ this.glVersion= this.VERSION_UNK;
                                 
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -564,8 +496,6 @@ openGLImageSpecificFactory!.setImageFactory(new OpenGLESGL10ImageFactory());
                             
 
     var maxTextureSizeArray: number[] = new Array(1);
-        
-        
 ;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSizeArray, 0);
@@ -580,8 +510,6 @@ this.initialized= true;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
@@ -595,8 +523,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 var gameFeature = gameFeature
 
     var index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;
-        
-        
 ;
     
 
@@ -760,14 +686,10 @@ this.requireInitialization();
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("GL_VERSION: ");
@@ -812,20 +734,14 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
         try {
             
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);
-        
-        
 ;
     
 
     var list: BasicArrayList = tokenizer.getTokens(this.glExtensions, new BasicArrayListD())!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -834,8 +750,6 @@ stringBuffer!.append(" GL_EXTENSIONS: ");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringBuffer!.append(commonSeps!.NEW_LINE);
@@ -850,8 +764,6 @@ stringBuffer!.append(this.stringUtil!.toString(list.objectArray[index]!));
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);

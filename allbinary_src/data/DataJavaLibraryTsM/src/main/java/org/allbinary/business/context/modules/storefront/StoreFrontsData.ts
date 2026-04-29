@@ -43,8 +43,6 @@ export class StoreFrontsData
         
 
     private static readonly instance: StoreFrontsData = new StoreFrontsData();
-        
-        
 
     public static getInstance(): StoreFrontsData{
 
@@ -57,32 +55,18 @@ export class StoreFrontsData
 
 
     public readonly TYPE: string = "STOREFRONTS_TYPE";
-        
-        
 
     public readonly RETAIL: string = "STOREFRONTS_RETAIL";
-        
-        
 
     public readonly SUBSCRIPTION: string = "STOREFRONTS_SUBSCRIPTION";
-        
-        
 
     public readonly AUCTION: string = "STOREFRONTS_AUCTION";
-        
-        
 
     public readonly NEWS: string = "STOREFRONTS_NEWS";
-        
-        
 
     public readonly BLOG: string = "STOREFRONTS_BLOG";
-        
-        
 
     public readonly FORUM: string = "STOREFRONTS_FORUM";
-        
-        
 
 }
                 

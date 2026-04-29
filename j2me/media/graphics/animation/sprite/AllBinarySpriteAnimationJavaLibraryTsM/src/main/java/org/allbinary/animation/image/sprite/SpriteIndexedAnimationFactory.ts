@@ -102,8 +102,6 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteIndexedAnimationFactory: SpriteIndexedAnimationFactory = new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 spriteIndexedAnimationFactory!.initHWH();
@@ -134,12 +132,8 @@ spriteIndexedAnimationFactory!.initHWH();
 
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
-        
-        
 
     private basicColorArray: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
-        
-        
 private constructor (image: Image, basicColorArray: BasicColor[], sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
@@ -182,8 +176,6 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
     //var instanceId = instanceId
 
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
@@ -214,7 +206,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

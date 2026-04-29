@@ -52,12 +52,8 @@ export class BaseTouchInput
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
  constructor (){
 
             super();

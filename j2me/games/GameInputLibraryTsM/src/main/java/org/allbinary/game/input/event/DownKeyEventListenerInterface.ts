@@ -53,7 +53,7 @@ export interface DownKeyEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Error::class)
             
-    onDownKeyEvent(keyInteger: Integer)
+    onDownKey(keyInteger: number)
 
 }
                 

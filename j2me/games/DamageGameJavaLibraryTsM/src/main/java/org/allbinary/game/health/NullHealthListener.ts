@@ -45,8 +45,6 @@ export class NullHealthListener
         
 
     public static readonly NULL_HEALTH_LISTENER: NullHealthListener = new NullHealthListener();
-        
-        
 
     public onHealthChange(){
 }

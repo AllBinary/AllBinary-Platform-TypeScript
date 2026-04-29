@@ -64,8 +64,6 @@ export class NoDecimalTrigTable
         
 
     private static readonly instance: NoDecimalTrigTable = new NoDecimalTrigTable();
-        
-        
 
     public static getInstance(): NoDecimalTrigTable{
 
@@ -78,8 +76,6 @@ export class NoDecimalTrigTable
 
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     private readonly noDecimalSin: number[]
 
@@ -90,15 +86,11 @@ private constructor (){
 
             super();
         
-    var TOTAL_ANGLE: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
-        
-        
+    var TOTAL_ANGLE: number = Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE;
 ;
     
 
     var MAX_VALUE: number = (Integer.MAX_VALUE);
-        
-        
 ;
     
 this.noDecimalSin= new Array(TOTAL_ANGLE);
@@ -2306,8 +2298,6 @@ var angle = angle
 
 
     public SCALE: number = 10000;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -2316,20 +2306,14 @@ var dx = dx
 var dy = dy
 
     var MAX_VALUE: number = (Integer.MAX_VALUE);
-        
-        
 ;
     
 
     var MIN_VALUE: number = (Integer.MIN_VALUE);
-        
-        
 ;
     
 
     var ratio: number = (MAX_VALUE -1);
-        
-        
 ;
     
 
@@ -2338,8 +2322,6 @@ var dy = dy
                                     {
                                     
     var dxl: number = (dx);
-        
-        
 ;
     
 ratio= this.SCALE *dxl /dy;
@@ -2348,7 +2330,7 @@ ratio= this.SCALE *dxl /dy;
                         if(dx <= 0 && dy < 0)
                         
                                     {
-                                    ratio= this.mathUtil!.abs(ratio);
+                                    ratio= this.mathUtil!.abslong(ratio);
     
 
                                     }
@@ -2366,8 +2348,6 @@ ratio= this.SCALE *dxl /dy;
 
                         for (
     var index: number = 180;
-        
-        
 index > 90; index--)
         {
 
@@ -2418,8 +2398,6 @@ index > 90; index--)
 
                         for (
     var index: number = 270;
-        
-        
 index > 180; index--)
         {
 
@@ -2450,8 +2428,6 @@ index > 180; index--)
 
                         for (
     var index: number = (this.noDecimalTan!.length -1);
-        
-        
 index > 270; index--)
         {
 
@@ -2502,8 +2478,6 @@ index > 270; index--)
 
                         for (
     var index: number = 90;
-        
-        
 index > 0; index--)
         {
 
@@ -2526,8 +2500,6 @@ index > 0; index--)
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Invalid Ratio: ");
@@ -2549,7 +2521,8 @@ stringBuffer!.appendint(dy);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 }
 
 
@@ -2562,52 +2535,36 @@ var targetX = targetX
 var targetY = targetY
 
     var METHOD_NAME: string = "antiTanDebug";
-        
-        
 ;
     
 
     var TARGET_ANGLE: string = " Targeting angle: ";
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 PreLogUtil.put(stringMaker!.append("screenX: ")!.appendint(screenX)!.append(" screenY: ")!.appendint(screenY)!.append(" targetX: ")!.appendint(targetX)!.append(" targetY: ")!.appendint(targetY)!.toString(), this, METHOD_NAME);
     
 
-    var targetX2: number =  -targetX;
-        
-        
+    var targetX2: number = Math.round -targetX;
 ;
     
 
-    var targetY2: number =  -targetY;
-        
-        
+    var targetY2: number = Math.round -targetY;
 ;
     
 
-    var screenX2: number =  -screenX;
-        
-        
+    var screenX2: number = Math.round -screenX;
 ;
     
 
-    var screenY2: number =  -screenY;
-        
-        
+    var screenY2: number = Math.round -screenY;
 ;
     
 
     var dx: number[] = new Array(4);
-        
-        
 ;
     
 dx[0]= (screenX -targetX);
@@ -2620,8 +2577,6 @@ dx[3]= (screenX2 -targetX2);
     
 
     var dy: number[] = new Array(4);
-        
-        
 ;
     
 dy[0]= (screenY -targetY);
@@ -2638,8 +2593,6 @@ dy[3]= (screenY2 -targetY2);
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -2652,8 +2605,6 @@ dy[3]= (screenY2 -targetY2);
 
                         for (
     var index: number = 0;
-        
-        
 index < dx.length; index++)
         {
 
@@ -2662,13 +2613,11 @@ index < dx.length; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < dy.length; index2++)
         {
 angleOfTarget= this.antiTan(dx[index]!, dy[index2]!);
     
-angle= angleFactory!.getInstance(angleOfTarget);
+angle= angleFactory!.getAt(Math.roundangleOfTarget);
     
 stringMaker!.delete(0, stringMaker!.length());
     

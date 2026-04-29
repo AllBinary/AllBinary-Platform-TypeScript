@@ -81,8 +81,6 @@ export class HealthBarThreedAnimation extends HealthBarAnimation {
     private rectangle: Rectangle
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 public constructor (layerInterface: AllBinaryLayer, location: number){
             super(layerInterface, location);
                     var layerInterface = layerInterface
@@ -109,14 +107,10 @@ this.rectangle.setTexturesEnabled(false);
     updateColor(){
 
     var colorBufferList: ColorBufferList = this.rectangle.getVertices()!.getColor4BufferList()!;
-        
-        
 ;
     
 
     var size: number = colorBufferList!.size()!;
-        
-        
 ;
     
 
@@ -125,8 +119,6 @@ this.rectangle.setTexturesEnabled(false);
 
                         for (
     var index: number = size;
-        
-        
 --index >= 0; )
         {
 colorBufferList!.set(index, this.basicColor);
@@ -139,32 +131,22 @@ colorBufferList!.set(index, this.basicColor);
     updateSize(){
 
     var number3dBufferList: Number3dBufferList = this.rectangle.getVertices()!.getPointsOnFacesNumber3dBufferList()!;
-        
-        
 ;
     
 
     var width: number = x2;
-        
-        
 ;
     
 
     var height: number = this.thickness *2;
-        
-        
 ;
     
 
     var segsH: number = 1;
-        
-        
 ;
     
 
     var segsW: number = 1;
-        
-        
 ;
     
 
@@ -177,32 +159,22 @@ colorBufferList!.set(index, this.basicColor);
     
 
     var w: number = width /segsW;
-        
-        
 ;
     
 
     var h: number = height /segsH;
-        
-        
 ;
     
 
     var width5: number = width /2f;
-        
-        
 ;
     
 
     var height5: number = height /2f;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -240,8 +212,6 @@ this.updateSize();
 
 
     private readonly object3dProcessor: Object3dProcessor = Object3dProcessorUtil.getInstance()!.getInstanceObject3dProcessor()!;
-        
-        
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
     //var graphics = graphics
@@ -249,27 +219,19 @@ this.updateSize();
     //var y = y
     //var z = z
 
-    var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;
-        
-        
+    var openGLESGraphics: OpenGLESGraphics =  as OpenGLESGraphicsgraphics;
 ;
     
 
     var gl: GL10 = openGLESGraphics!.getGl10()!;
-        
-        
 ;
     
 
     var viewPosition: ViewPosition = this.allbinaryLayer!.getViewPosition()!;
-        
-        
 ;
     
 
     var positionNumber3d: Number3d = this.rectangle.getPosition()!;
-        
-        
 ;
     
 positionNumber3d!.x=  -(viewPosition!.getX(););

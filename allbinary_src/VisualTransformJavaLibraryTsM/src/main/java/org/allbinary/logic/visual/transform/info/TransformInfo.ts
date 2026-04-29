@@ -134,20 +134,12 @@ export class TransformInfo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private isChild: boolean = false;
-        
-        
 
     private name: string
 
@@ -168,8 +160,6 @@ export class TransformInfo
     private dataFileName: string
 
     private data: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (){
 
             super();
@@ -206,24 +196,18 @@ this.setDataFile(dataFileName);
 
                 //@Throws(Error::class)
             
-    public override(hashMap: HashMap<any, any>){
+    public override(hashMap: HashMap){
 var hashMap = hashMap
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
-    var aName: string = hashMap!.get(transformInfoData!.NAME); as String;
-        
-        
+    var aName: string =  as StringhashMap!.get(transformInfoData!.NAME);;
 ;
     
 
@@ -241,8 +225,6 @@ var hashMap = hashMap
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TransformInfo properties overridden for: ");
@@ -259,9 +241,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var aStoreName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -274,9 +254,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME); as String;
-        
-        
+    var aObjectFileName: string =  as StringhashMap!.get(transformInfoData!.OBJECTFILENAME);;
 ;
     
 
@@ -290,8 +268,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
@@ -304,14 +280,10 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
     var fileAbPath: AbPath = new AbPath(stringBuffer!.toString());
-        
-        
 ;
     
 
-    var aObject: string = hashMap!.get(transformInfoData!.OBJECT); as String;
-        
-        
+    var aObject: string =  as StringhashMap!.get(transformInfoData!.OBJECT);;
 ;
     
 
@@ -330,8 +302,6 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
     var fileDataString: string = new CryptFileReader(TransformInfoObjectData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(new AbPath(fileAbPath!.toString(), aObject))!;
-        
-        
 ;
     
 
@@ -349,7 +319,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);)
+                        if(!stringValidationUtil!.isEmpty( as StringhashMap!.get(transformInfoData!.OBJECTCONFIG));)
                         
                                     {
                                     
@@ -361,15 +331,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                                     }
                                 
-this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);
+this.setObjectConfig( as StringhashMap!.get(transformInfoData!.OBJECTCONFIG));
     
 
                                     }
                                 
 
-    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME); as String;
-        
-        
+    var objectConfigFileName: string =  as StringhashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME);;
 ;
     
 
@@ -391,9 +359,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME); as String;
-        
-        
+    var type: string =  as StringhashMap!.get(OutputTypeData.getInstance()!.NAME);;
 ;
     
 
@@ -417,9 +383,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME); as String;
-        
-        
+    var aTemplateFileName: string =  as StringhashMap!.get(transformInfoData!.TEMPLATEFILENAME);;
 ;
     
 
@@ -432,9 +396,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE); as String;
-        
-        
+    var aTemplate: string =  as StringhashMap!.get(transformInfoData!.TEMPLATE);;
 ;
     
 
@@ -453,8 +415,6 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 
     var fileDataString: string = new CryptFileReader(TransformInfoTemplateData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoTemplateData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(new AbPath(fileAbPath!.toString(), aTemplate))!;
-        
-        
 ;
     
 
@@ -470,9 +430,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME); as String;
-        
-        
+    var aDataFileName: string =  as StringhashMap!.get(transformInfoData!.DATAFILENAME);;
 ;
     
 
@@ -485,9 +443,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string = hashMap!.get(transformInfoData!.DATA); as String;
-        
-        
+    var aData: string =  as StringhashMap!.get(transformInfoData!.DATA);;
 ;
     
 
@@ -506,8 +462,6 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 
     var fileDataString: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(new AbPath(fileAbPath!.toString(), aData))!;
-        
-        
 ;
     
 
@@ -578,8 +532,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "TransformInfoInterface(HashM
     public log(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Name: ");
@@ -701,8 +653,6 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
 var value = value
 
     var document: Document = DomDocumentHelper.create(value)!;
-        
-        
 ;
     
 this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, this, document));
@@ -823,14 +773,10 @@ this.data= value;
     getData(): string{
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var dataFileString: string = this.getDataFile()!;
-        
-        
 ;
     
 
@@ -842,8 +788,6 @@ this.data= value;
             
     var fileData: string = new CryptFileReader(TransformInfoDataData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoDataData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(this.getDataFilePath())!;
-        
-        
 ;
     
 
@@ -907,8 +851,6 @@ this.data= fileData;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Name: ");
@@ -967,14 +909,10 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
     public getDataDocument(): Document{
 
     var localData: string = this.getData()!;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -1002,8 +940,6 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
                         else {
                             
     var document: Document = DomDocumentHelper.create(localData)!;
-        
-        
 ;
     
 
@@ -1028,17 +964,13 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(transformInfoData!.NAME, this.name);
@@ -1063,15 +995,11 @@ hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -1088,8 +1016,6 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
     public toVector(): java.util.Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.name);
@@ -1114,15 +1040,11 @@ vector.add(Encoder.encode(this.data.encodeToByteArray()));
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 vector.add(time);
@@ -1143,7 +1065,7 @@ vector.add(time);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName(); as Object;
+                        return  as Objectthis.getName();;
     
 }
 

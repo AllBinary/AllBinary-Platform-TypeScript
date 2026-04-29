@@ -63,8 +63,6 @@ export class FileLockUtil
         
 
     private static readonly instance: FileLockUtil = new FileLockUtil();
-        
-        
 
     public static getInstance(): FileLockUtil{
 
@@ -77,8 +75,6 @@ export class FileLockUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -92,14 +88,10 @@ var vector = vector
 var isReturnOnFailure = isReturnOnFailure
 
     var fileLockVector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -108,20 +100,14 @@ var isReturnOnFailure = isReturnOnFailure
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var file: AbFile = vector.get(index); as AbFile;
-        
-        
+    var file: AbFile =  as AbFilevector.get(index);;
 ;
     
 
     var fileLock: FileLock = getLock(file)!;
-        
-        
 ;
     
 
@@ -184,8 +170,6 @@ var vector = vector
 var vector = vector
 
     var fileLockVector: Vector = getAll(vector, true)!;
-        
-        
 ;
     
 
@@ -255,8 +239,6 @@ var fileOutputStream = fileOutputStream
         try {
             
     var fileLock: FileLock = getLock(fileOutputStream!.getChannel())!;
-        
-        
 ;
     
 
@@ -298,8 +280,6 @@ var fileChannel = fileChannel
         try {
             
     var fileLock: FileLock = fileChannel!.tryLock()!;
-        
-        
 ;
     
 

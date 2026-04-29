@@ -45,8 +45,6 @@ export class SecondaryPlayerQueueFactory
         
 
     private static readonly SINGLETON: PlayerQueue = new PlayerQueue(4);
-        
-        
 
     public static getInstance(): PlayerQueue{
 

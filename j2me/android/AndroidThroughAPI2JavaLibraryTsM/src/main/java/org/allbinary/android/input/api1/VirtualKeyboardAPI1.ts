@@ -50,12 +50,8 @@ export class VirtualKeyboardAPI1 extends VirtualKeyboard implements VirtualKeybo
         
 
     public MIN_API: number = 1;
-        
-        
 
     public MAX_API: number = 2;
-        
-        
 public constructor (activity: Activity){
 
             super();

@@ -64,8 +64,6 @@ export class AnalogControllerConfigurationEventHandler extends BasicEventHandler
         
 
     private static readonly instance: AnalogControllerConfigurationEventHandler = new AnalogControllerConfigurationEventHandler();
-        
-        
 
     public static getInstance(): AnalogControllerConfigurationEventHandler{
 
@@ -78,8 +76,6 @@ export class AnalogControllerConfigurationEventHandler extends BasicEventHandler
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -127,19 +123,15 @@ var eventObject = eventObject
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var playerGameInput: AnalogControllerConfigurationEventListenerInterface = this.list.objectArray[index]! as AnalogControllerConfigurationEventListenerInterface;
-        
-        
+    var playerGameInput: AnalogControllerConfigurationEventListenerInterface =  as AnalogControllerConfigurationEventListenerInterfacethis.list.objectArray[index]!;
 ;
     
-playerGameInput!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
+playerGameInput!.onAnalogControllerConfigurationEvent( as AnalogControllerConfigurationEventeventObject);
     
 
                 //: 
@@ -162,12 +154,10 @@ super.fireEvent(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = (eventListenerInterface as AnalogControllerConfigurationEventListenerInterface);
-        
-        
+    var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = ( as AnalogControllerConfigurationEventListenerInterfaceeventListenerInterface);
 ;
     
-analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent(eventObject as AnalogControllerConfigurationEvent);
+analogControllerConfigurationEventListenerInterface!.onAnalogControllerConfigurationEvent( as AnalogControllerConfigurationEventeventObject);
     
 }
 

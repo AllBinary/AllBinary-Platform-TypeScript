@@ -58,8 +58,6 @@ export class CanvasExpandUtil
         
 
     private static readonly instance: CanvasExpandUtil = new CanvasExpandUtil();
-        
-        
 
     public static getInstance(): CanvasExpandUtil{
 
@@ -72,12 +70,8 @@ export class CanvasExpandUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -88,27 +82,19 @@ export class CanvasExpandUtil
     //var visitor = visitor
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
     var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
-        
-        
 ;
     
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -121,8 +107,6 @@ export class CanvasExpandUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;

@@ -50,8 +50,6 @@ export class GameMidletEventHandler extends BasicEventHandler {
         
 
     private static readonly gameKeyEventHandler: GameMidletEventHandler = new GameMidletEventHandler();
-        
-        
 
     public static getInstance(): GameMidletEventHandler{
 
@@ -74,9 +72,7 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var gameMidletEventListener: GameMidletEventListener = eventListenerInterface as GameMidletEventListener;
-        
-        
+    var gameMidletEventListener: GameMidletEventListener =  as GameMidletEventListenereventListenerInterface;
 ;
     
 gameMidletEventListener!.onGameEnd(eventObject);

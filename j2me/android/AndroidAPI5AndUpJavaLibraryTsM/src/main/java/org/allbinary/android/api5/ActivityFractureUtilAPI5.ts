@@ -59,8 +59,6 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
         
 
     private static readonly instance: ActivityFractureUtilAPI5 = new ActivityFractureUtilAPI5();
-        
-        
 
     public static getInstance(): ActivityFractureUtilAPI5{
 
@@ -73,29 +71,19 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
 
 
     private readonly FEATURE_TOUCHSCREEN_MULTITOUCH: string = "android.hardware.touchscreen.multitouch";
-        
-        
 
     private readonly FEATURE_TOUCHSCREEN: string = "android.hardware.touchscreen";
-        
-        
 
     private readonly FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT: string = "android.hardware.touchscreen.multitouch.distinct";
-        
-        
 
     public process(activity: Activity){
     //var activity = activity
 
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchScreenTypeFactory: TouchScreenTypeFactory = TouchScreenTypeFactory.getInstance()!;
-        
-        
 ;
     
 touchScreenFactory!.setTouch(this.isTouch(activity));
@@ -108,8 +96,6 @@ touchScreenTypeFactory!.update(activity);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);

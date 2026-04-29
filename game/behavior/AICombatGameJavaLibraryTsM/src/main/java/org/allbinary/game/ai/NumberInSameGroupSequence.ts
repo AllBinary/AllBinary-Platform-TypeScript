@@ -57,61 +57,57 @@ export class NumberInSameGroupSequence
 }
 
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: Integer
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: number
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE: Integer[]
+    public NUMBER_ON_SAME_TEAM_SEQUENCE: number[]
 private constructor (){
 
             super();
         
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getInstance(100);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO= smallIntegerSingletonFactory!.getAt(100);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_ONE= smallIntegerSingletonFactory!.getInstance(101);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_ONE= smallIntegerSingletonFactory!.getAt(101);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_TWO= smallIntegerSingletonFactory!.getInstance(102);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_TWO= smallIntegerSingletonFactory!.getAt(102);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_THREE= smallIntegerSingletonFactory!.getInstance(103);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_THREE= smallIntegerSingletonFactory!.getAt(103);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR= smallIntegerSingletonFactory!.getInstance(104);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR= smallIntegerSingletonFactory!.getAt(104);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE= smallIntegerSingletonFactory!.getInstance(105);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE= smallIntegerSingletonFactory!.getAt(105);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_SIX= smallIntegerSingletonFactory!.getInstance(106);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_SIX= smallIntegerSingletonFactory!.getAt(106);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN= smallIntegerSingletonFactory!.getInstance(107);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN= smallIntegerSingletonFactory!.getAt(107);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT= smallIntegerSingletonFactory!.getInstance(108);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT= smallIntegerSingletonFactory!.getAt(108);
     
-this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE= smallIntegerSingletonFactory!.getInstance(109);
+this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE= smallIntegerSingletonFactory!.getAt(109);
     
 this.NUMBER_ON_SAME_TEAM_SEQUENCE= 
                                                 [
                                                     this.NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO,this.NUMBER_ON_SAME_TEAM_SEQUENCE_ONE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_THREE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR,this.NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SIX,this.NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN,this.NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT,this.NUMBER_ON_SAME_TEAM_SEQUENCE_NINE;
-        
-        
                                                 ];
     
 }

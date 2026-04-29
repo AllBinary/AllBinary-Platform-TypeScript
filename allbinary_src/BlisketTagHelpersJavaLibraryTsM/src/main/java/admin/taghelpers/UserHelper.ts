@@ -97,10 +97,8 @@ export class UserHelper extends Table {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private readonly hashMap: HashMap<any, any>
+    private readonly hashMap: HashMap
 
     private readonly pageContext: PageContext
 
@@ -109,7 +107,7 @@ export class UserHelper extends Table {
     private readonly path: string
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -118,7 +116,7 @@ this.hashMap= hashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.path= URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH;
     
@@ -131,24 +129,18 @@ this.portion= new Portion(hashMap);
 
         try {
             
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.request).
+    var requestHashMap: HashMap = new RequestParams(this.request).
                             toHashMap()!;
-        
-        
 ;
     
 
     var userName: UserName = new UserName(requestHashMap);
-        
-        
 ;
     
 UserEntityFactory.getInstance()!.deleteWhere(UserData.USERNAME, userName!.get());
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Successfully Removed the user with ");
@@ -163,8 +155,6 @@ stringBuffer!.append(" from to the user table");
     
 
     var success: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -188,8 +178,6 @@ stringBuffer!.append(" from to the user table");
             {
 
     var error: string = "Failed to remove user with " +UserData.USERNAME +" from User table";
-        
-        
 ;
     
 
@@ -219,14 +207,10 @@ stringBuffer!.append(" from to the user table");
         try {
             
     var userInterface: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
-        
-        
 ;
     
 
-    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE); as String;
-        
-        
+    var enable: string =  as Stringthis.hashMap!.get(EntryData.getInstance()!.ENABLE);;
 ;
     
 
@@ -240,16 +224,12 @@ stringBuffer!.append(" from to the user table");
                                 
 
     var values: Vector = userInterface!.toVector()!;
-        
-        
 ;
     
 UserEntityFactory.getInstance()!.insert(values);
     
 
     var success: string = "New User Successfully added to the Users Table";
-        
-        
 ;
     
 
@@ -273,8 +253,6 @@ UserEntityFactory.getInstance()!.insert(values);
             {
 
     var error: string = "Failed to add User";
-        
-        
 ;
     
 
@@ -302,22 +280,16 @@ UserEntityFactory.getInstance()!.insert(values);
         try {
             
     var user: UserInterface = NewUserFactory.getInstance(this.request, hashMap)!;
-        
-        
 ;
     
 
-    var values: HashMap<any, any> = user.toHashMap()!;
-        
-        
+    var values: HashMap = user.toHashMap()!;
 ;
     
 UserEntityFactory.getInstance()!.update(user.getUserName(), values);
     
 
     var success: string = "New User Successfully added to the Users Table";
-        
-        
 ;
     
 
@@ -341,8 +313,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
             {
 
     var error: string = "Failed to add User";
-        
-        
 ;
     
 
@@ -370,8 +340,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
         try {
             
     var success: string = UserEntityFactory.getInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -395,8 +363,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
             {
 
     var error: string = "Failed to drop user table";
-        
-        
 ;
     
 
@@ -424,8 +390,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
         try {
             
     var success: string = UserEntityFactory.getInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -449,8 +413,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
             {
 
     var error: string = "Failed to create user table";
-        
-        
 ;
     
 
@@ -478,14 +440,10 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(UserEntityFactory.getInstance(), this.portion)!;
-        
-        
 ;
     
 
@@ -509,8 +467,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -538,14 +494,10 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(UserEntityFactory.getInstance())!;
-        
-        
 ;
     
 
@@ -569,8 +521,6 @@ UserEntityFactory.getInstance()!.update(user.getUserName(), values);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

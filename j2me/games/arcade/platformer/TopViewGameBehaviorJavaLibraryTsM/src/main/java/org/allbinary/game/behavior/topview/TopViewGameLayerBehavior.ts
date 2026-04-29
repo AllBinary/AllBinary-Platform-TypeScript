@@ -27,9 +27,6 @@ import { BasicAccelerationProperties } from "../../../../../org/allbinary/game/p
 import { VelocityProperties } from "../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js";
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
-
-    
 
 
 
@@ -57,20 +54,12 @@ export class TopViewGameLayerBehavior extends GameLayerBehavior {
     public readonly maxGravityActionIndex: number
 
     public isJumpAction: boolean = true;
-        
-        
 
     public isJumpOver: boolean = false;
-        
-        
 
     public isFallingWithoutJumpAttempt: boolean = false;
-        
-        
 
     public gravityActionIndex: number = 0;
-        
-        
 public constructor (maxGravityActionIndex: number){
 
             super();
@@ -97,14 +86,14 @@ this.isFallingWithoutJumpAttempt= true;
 
     public land(velocityProperties: VelocityProperties){
     //var velocityProperties = velocityProperties
-velocityProperties!.getVelocityYBasicDecimalP()!.set(0);
+velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
     
-this.land();
+this.landReset();
     
 }
 
 
-    public land(){
+    public landReset(){
 this.gravityActionIndex= 0;
     
 this.isFallingWithoutJumpAttempt= false;
@@ -131,11 +120,9 @@ this.isJumpOver= false;
                                     {
                                     
     var acceleration2: number =  -acceleration.getForward(); *accelerationMultiplier;
-        
-        
 ;
     
-velocityProperties!.getVelocityYBasicDecimalP()!.add(acceleration2);
+velocityProperties!.getVelocityYBasicDecimalP()!.addint(acceleration2);
     
 velocityProperties!.limitXYToForwardAndReverseMaxVelocity();
     

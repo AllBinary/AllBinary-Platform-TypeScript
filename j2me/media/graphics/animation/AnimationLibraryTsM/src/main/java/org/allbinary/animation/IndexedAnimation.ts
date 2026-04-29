@@ -53,8 +53,6 @@ export class IndexedAnimation extends Animation implements IndexedAnimationInter
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly animationBehaviorP: AnimationBehavior
 protected constructor (animationBehavior: AnimationBehavior){
@@ -105,7 +103,8 @@ this.setFrame(0);
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

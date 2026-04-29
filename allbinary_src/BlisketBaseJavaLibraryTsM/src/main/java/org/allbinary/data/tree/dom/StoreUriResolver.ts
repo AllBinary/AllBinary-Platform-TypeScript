@@ -87,8 +87,6 @@ export class StoreUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private basicURIResolver: BasicUriResolver
 
@@ -113,15 +111,11 @@ var base = base
 
         try {
             
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
-        
-        
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface =  as TransformInfoHttpStoreInterfacethis.parentTransformInfoInterface;
 ;
     
 
-    var fileAbPath: AbPath = new AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
-        
-        
+    var fileAbPath: AbPath =  as AbPathnew AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href);
 ;
     
 
@@ -147,7 +141,8 @@ var base = base
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -156,7 +151,8 @@ var base = base
 
 
 
-                            throw new TransformerException(e)
+                            throw new TransformerException(e);
+                    
 }
 
 }

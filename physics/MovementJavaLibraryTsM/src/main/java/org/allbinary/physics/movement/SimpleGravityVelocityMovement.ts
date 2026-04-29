@@ -54,7 +54,7 @@ import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.j
 export class SimpleGravityVelocityMovement extends BasicConstantVelocityMovement {
         
 public constructor (speedBasicDecimal: BasicDecimal){
-            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled(), speedBasicDecimal!.getUnscaled()));
+            super(speedBasicDecimal, new VelocityProperties(Math.roundspeedBasicDecimal!.getUnscaled(), Math.roundspeedBasicDecimal!.getUnscaled()));
                     var speedBasicDecimal = speedBasicDecimal
 
 
@@ -64,14 +64,12 @@ public constructor (speedBasicDecimal: BasicDecimal){
 
 
     private readonly gravityUtil: GravityUtil = GravityUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-this.gravityUtil!.process(this.getVelocityProperties());
+this.gravityUtil!.process(this.getVelocityProperties(), gravityUtil!.GAME_GRAVITY_VELOCITY);
     
 super.process(layer);
     

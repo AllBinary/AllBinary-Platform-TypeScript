@@ -55,8 +55,6 @@ export class NullRTSGameLayerPositionFinder
         
 
     private static readonly instance: NullRTSGameLayerPositionFinder = new NullRTSGameLayerPositionFinder();
-        
-        
 
     public static getInstance(): NullRTSGameLayerPositionFinder{
 
@@ -77,8 +75,6 @@ protected constructor (){
 var geographicMapCellPosition = geographicMapCellPosition
 
     var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
-        
-        
 ;
     
 

@@ -70,8 +70,6 @@ export class GameConfigurationUtil
         
 
     private static readonly instance: GameConfigurationUtil = new GameConfigurationUtil();
-        
-        
 
     public static getInstance(): GameConfigurationUtil{
 
@@ -84,12 +82,8 @@ export class GameConfigurationUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -100,14 +94,10 @@ this.update(gauge);
     
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
-        
-        
 ;
     
 
-    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
-        
-        
+    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstanceByName(gauge.getLabel())!;
 ;
     
 this.updateChallange(gameOptionsForm, gameConfiguration);
@@ -116,16 +106,10 @@ this.updateChallange(gameOptionsForm, gameConfiguration);
 
 
     private readonly GAUGE_UPDATE: string = "Gauge Update: ";
-        
-        
 
     private readonly FROM: string = " from: ";
-        
-        
 
     private readonly TO: string = " to: ";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -133,32 +117,22 @@ this.updateChallange(gameOptionsForm, gameConfiguration);
 var gauge = gauge
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
-        
-        
 ;
     
 
-    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
-        
-        
+    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstanceByName(gauge.getLabel())!;
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
-    var value: Integer = smallIntegerSingletonFactory!.getInstance(gauge.getValue() +gameConfiguration!.getMinValue()!.toInt())!;
-        
-        
+    var value: number = smallIntegerSingletonFactory!.getAt(gauge.getValue() +gameConfiguration!.getMinValue()!.toInt())!;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.GAUGE_UPDATE);
@@ -186,20 +160,14 @@ gameConfiguration!.setValue(value);
 var gauge = gauge
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
-        
-        
 ;
     
 
-    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(gauge.getLabel())!;
-        
-        
+    var gameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstanceByName(gauge.getLabel())!;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Gauge Default: ");
@@ -226,14 +194,10 @@ var gameOptionsForm = gameOptionsForm
 var gameConfiguration = gameConfiguration
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
-        
-        
 ;
     
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
-        
-        
 ;
     
 
@@ -252,8 +216,6 @@ gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.setValue(gameConfiguration!.getV
     
 
     var size: number = gameOptionsForm!.size()!;
-        
-        
 ;
     
 
@@ -262,14 +224,10 @@ gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.setValue(gameConfiguration!.getV
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var item: Item = gameOptionsForm!.get(index)!;
-        
-        
 ;
     
 
@@ -277,21 +235,15 @@ index < size; index++)
                         
                                     {
                                     
-    var gauge: GameConfigurationGauge = item as GameConfigurationGauge;
-        
-        
+    var gauge: GameConfigurationGauge =  as GameConfigurationGaugeitem;
 ;
     
 
     var name: string = item.getLabel()!;
-        
-        
 ;
     
 
-    var nextGameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstance(name)!;
-        
-        
+    var nextGameConfiguration: GameConfiguration = gameConfigurationSingleton!.getInstanceByName(name)!;
 ;
     
 
@@ -342,16 +294,12 @@ index < size; index++)
 
 
     private COMPETITION_VALUE: number = 1;
-        
-        
 
     public updateCompetitionValue(){
 this.logUtil!.putF(this.commonStrings!.START, this, "updateCompetitionValue");
     
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
-        
-        
 ;
     
 this.COMPETITION_VALUE= gameConfigurationCentral!.COLLIDE_DAMAGE.getValue()!.toInt() +gameConfigurationCentral!.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt() +gameConfigurationCentral!.SPEED_CHALLENGE_LEVEL.getValue()!.toInt();

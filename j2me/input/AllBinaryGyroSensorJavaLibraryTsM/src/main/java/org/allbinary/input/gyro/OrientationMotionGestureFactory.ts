@@ -49,8 +49,6 @@ export class OrientationMotionGestureFactory
         
 
     private static readonly instance: OrientationMotionGestureFactory = new OrientationMotionGestureFactory();
-        
-        
 
     public static getInstance(): OrientationMotionGestureFactory{
 
@@ -78,8 +76,6 @@ private constructor (){
             super();
         
     var MAX: number = InputFactory.getInstance()!.MAX;
-        
-        
 ;
     
 this.LEFT= new MotionGestureInput(MAX -20, "Left Orient");

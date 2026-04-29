@@ -175,15 +175,17 @@ import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
+import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
+
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
-import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+import { RuntimeException } from "./RuntimeException.js";
 
-import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
+import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
@@ -196,14 +198,10 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
     //var remoteInfo = remoteInfo
 
     var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
-        
-        
 ;
     
 
     var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
-        
-        
 ;
     
 
@@ -216,16 +214,10 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
 
     private static readonly id: number = 0;
-        
-        
 
     static readonly MAIN_INDEX: number = 0;
-        
-        
 
     static readonly SECONDARY_INDEX: number = 1;
-        
-        
 
     public static getMinStaticType(): number{
 
@@ -272,32 +264,18 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
 
 
     readonly debug: boolean = true;
-        
-        
 
     public readonly showMoreCaptionStates: boolean = debug;
-        
-        
 
     readonly inputProcessorArray: GameInputProcessor[] = new Array(InputFactory.getInstance()!.MAX);
-        
-        
 
     public rtsLayer2LogHelper: RTSLayer2LogHelper = RTSLayer2LogHelper.getInstance()!;
-        
-        
 
     public waypointLogHelperP: WaypointLogHelper = WaypointLogHelper.getInstance()!;
-        
-        
 
     public waypoint2LogHelperP: Waypoint2LogHelper = Waypoint2LogHelper.getInstance()!;
-        
-        
 
     public waypointRunnableLogHelperP: WaypointRunnableLogHelper = WaypointRunnableLogHelper.getInstance()!;
-        
-        
 
     private readonly rtsFormInput: RTSFormInput
 
@@ -314,8 +292,6 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
     readonly baseAnimationInterface: Animation
 
     private readonly buildFrameTimeHelper: TimeDelayHelper = new TimeDelayHelper(50);
-        
-        
 
     private readonly buildAnimationInterface: Animation
 
@@ -330,50 +306,30 @@ export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface,
     readonly destroyAnimationInterface: IndexedAnimation
 
     readonly fireTimeHelper: TimeDelayHelper = new TimeDelayHelper(700);
-        
-        
 
     private readonly rootName: string
 
-    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    readonly hashtable: Hashtable = new Hashtable();
 
     private readonly BUILD_VALUE: number = 63;
-        
-        
 
     public readonly geographicMapCellPositionAreaBase: GeographicMapCellPositionAreaBase
 
     private healthInterface: Health = Health.NULL_HEALTH;
-        
-        
 
     private level: number = 1;
-        
-        
 
     private maxLevel: number = 1;
-        
-        
 
     private hackVerticleBuild: number = BUILD_VALUE;
-        
-        
 
     slightAngle: number = 0;
-        
-        
 
     percentCompleteP: number= 0
 
     private destroyed: boolean = false;
-        
-        
 
     private selected: boolean = false;
-        
-        
 protected constructor (remoteInfo: RemoteInfo, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, name, rectangle, viewPosition);
                         //var remoteInfo = remoteInfo
@@ -406,24 +362,22 @@ this.rtsFormInput= rtsFormInput;
     
 this.setPosition(x, y, z);
     
-this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.verticleBuildAnimationInterface=  as IndexedAnimationverticleBuildAnimationInterfaceFactoryInterface!.getInstance(0);;
     
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0);
     
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0);
     
-this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.emptyAnimationInterface=  as IndexedAnimationemptyAnimationInterfaceFactoryInterface!.getInstance(0);;
     
-this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.indexedButShouldBeRotationAnimationInterface=  as IndexedAnimationanimationInterfaceFactoryInterface!.getInstance(0);;
     
 this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
     
-this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstance(this.indexedButShouldBeRotationAnimationInterface); as IndexedAnimation;
+this.destroyAnimationInterface=  as IndexedAnimationproceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface);;
     
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 ;
     
 this.rangeAnimation= animation;
@@ -448,27 +402,19 @@ this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
-    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
-        
-        
+    var viewPosition2: TileLayerPositionIntoViewPosition =  as TileLayerPositionIntoViewPositionthis.getViewPosition();;
 ;
     
 viewPosition2!.setTiledLayer(tiledLayer);
@@ -491,7 +437,7 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-ViewPositionEventHandler.getInstance()!.addListener(this as AllBinaryLayer);
+ViewPositionEventHandler.getInstance()!.addListener( as AllBinaryLayerthis);
     
 this.animationInterface= this.buildAnimationInterface;
     
@@ -513,8 +459,6 @@ this.setSelected(true);
     public deselect(){
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 ;
     
 this.rangeAnimation= animation;
@@ -637,23 +581,17 @@ super.paintFirst(graphics);
     
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
 
     var viewX: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var viewY: number = viewPosition!.getY()!;
-        
-        
 ;
     
-this.getAnimationInterface()!.paint(graphics, viewX, viewY);
+this.getAnimationInterface()!.paintXY(graphics, viewX, viewY);
     
 }
 
@@ -677,8 +615,6 @@ this.getAnimationInterface()!.paint(graphics, viewX, viewY);
 
 
     private readonly rtsLayerUtil: RTSLayerUtil = RTSLayerUtil.getInstance()!;
-        
-        
 
     public downgrade(){
 this.rtsLayerUtil!.downgrade(this);
@@ -723,7 +659,7 @@ this.rtsLayerUtil!.upgrade(this);
             
     build(){
 
-                        if(this.buildFrameTimeHelper!.isTime())
+                        if(this.buildFrameTimeHelper!.isTimeTNT())
                         
                                     {
                                     this.animationInterface= this.buildAnimationInterface;
@@ -881,26 +817,20 @@ this.animationInterface= animationInterface;
 
 
     private readonly layerDistanceUtil: LayerDistanceUtil = LayerDistanceUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
     //var targetGameLayer = targetGameLayer
 
-    var anotherTargetDistance: number = layerDistanceUtil!.getDistance(this as AllBinaryLayer, targetGameLayer as AllBinaryLayer)!;
-        
-        
+    var anotherTargetDistance: number = layerDistanceUtil!.getDistance( as AllBinaryLayerthis,  as AllBinaryLayertargetGameLayer)!;
 ;
     
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.getWaypointBehavior()!;
-        
-        
 ;
     
-waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, anotherTargetDistance);
+waypointBehaviorBase!.setTargetWithDistance( as PathFindingLayerInterfacetargetGameLayer, anotherTargetDistance);
     
 }
 
@@ -909,7 +839,8 @@ waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, an
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -917,7 +848,8 @@ waypointBehaviorBase!.setTarget(targetGameLayer as PathFindingLayerInterface, an
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1038,7 +970,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1046,7 +979,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1104,7 +1038,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1132,7 +1067,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1142,7 +1078,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1151,7 +1088,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1180,7 +1118,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1193,7 +1132,7 @@ var resource = resource
 
                 //@Throws(Error::class)
             
-    public trackTo(dx: number, dy: number){
+    public trackToDXY(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
 }
@@ -1213,7 +1152,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -1270,7 +1210,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.indexedButShouldBeRotationAnimationInterface as RotationAnimation;
+                        return  as RotationAnimationthis.indexedButShouldBeRotationAnimationInterface;
     
 }
 

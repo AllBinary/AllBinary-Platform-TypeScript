@@ -174,57 +174,57 @@ this.taxes= orderHistory!.getTaxes();
     
 this.total= orderHistory!.getTotal();
     
-super.setUserComments(orderHistory!.getUserComments() as String);
+super.setUserComments( as StringorderHistory!.getUserComments());
     
-super.setUserCancelComments(orderHistory!.getUserCancelComments() as String);
+super.setUserCancelComments( as StringorderHistory!.getUserCancelComments());
     
-super.setStoreComments(orderHistory!.getStoreComments() as String);
+super.setStoreComments( as StringorderHistory!.getStoreComments());
     
-super.setStoreCancelComments(orderHistory!.getStoreCancelComments() as String);
+super.setStoreCancelComments( as StringorderHistory!.getStoreCancelComments());
     
 }
 
-public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>){
-            super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME) as String, basketInterface, orderHistoryHashMap!.get(OrderData.ID) as String, orderHistoryHashMap!.get(ShippingMethodData.NAME) as String, orderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL) as String, orderHistoryHashMap!.get(PaymentData.METHOD) as String);
+public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap){
+            super( as StringorderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME), basketInterface,  as StringorderHistoryHashMap!.get(OrderData.ID),  as StringorderHistoryHashMap!.get(ShippingMethodData.NAME),  as StringorderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL),  as StringorderHistoryHashMap!.get(PaymentData.METHOD));
                     var basketInterface = basketInterface
 var orderHistoryHashMap = orderHistoryHashMap
 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.shippingAddress= new StreetAddress(orderHistoryHashMap!.get(ShippingAddressData.NAME) as String, orderHistoryHashMap!.get(ShippingAddressData.STREET) as String, orderHistoryHashMap!.get(ShippingAddressData.CITY) as String, orderHistoryHashMap!.get(ShippingAddressData.STATE) as String, orderHistoryHashMap!.get(ShippingAddressData.CODE) as String, orderHistoryHashMap!.get(ShippingAddressData.COUNTRY) as String);
+this.shippingAddress= new StreetAddress( as StringorderHistoryHashMap!.get(ShippingAddressData.NAME),  as StringorderHistoryHashMap!.get(ShippingAddressData.STREET),  as StringorderHistoryHashMap!.get(ShippingAddressData.CITY),  as StringorderHistoryHashMap!.get(ShippingAddressData.STATE),  as StringorderHistoryHashMap!.get(ShippingAddressData.CODE),  as StringorderHistoryHashMap!.get(ShippingAddressData.COUNTRY));
     
-this.billingAddress= new StreetAddress(orderHistoryHashMap!.get(BillingAddressData.NAME) as String, orderHistoryHashMap!.get(BillingAddressData.STREET) as String, orderHistoryHashMap!.get(BillingAddressData.CITY) as String, orderHistoryHashMap!.get(BillingAddressData.STATE) as String, orderHistoryHashMap!.get(BillingAddressData.CODE) as String, orderHistoryHashMap!.get(BillingAddressData.COUNTRY) as String);
+this.billingAddress= new StreetAddress( as StringorderHistoryHashMap!.get(BillingAddressData.NAME),  as StringorderHistoryHashMap!.get(BillingAddressData.STREET),  as StringorderHistoryHashMap!.get(BillingAddressData.CITY),  as StringorderHistoryHashMap!.get(BillingAddressData.STATE),  as StringorderHistoryHashMap!.get(BillingAddressData.CODE),  as StringorderHistoryHashMap!.get(BillingAddressData.COUNTRY));
     
 this.payment= new Payment(orderHistoryHashMap);
     
-this.userName= orderHistoryHashMap!.get(UserData.USERNAME); as String;
+this.userName=  as StringorderHistoryHashMap!.get(UserData.USERNAME);;
     
-this.orderDate= orderHistoryHashMap!.get(OrderHistoryData.ORDERDATE); as String;
+this.orderDate=  as StringorderHistoryHashMap!.get(OrderHistoryData.ORDERDATE);;
     
-this.shipDate= orderHistoryHashMap!.get(OrderHistoryData.SHIPPEDDATE); as String;
+this.shipDate=  as StringorderHistoryHashMap!.get(OrderHistoryData.SHIPPEDDATE);;
     
-this.transDate= orderHistoryHashMap!.get(OrderHistoryData.TRANSDATE); as String;
+this.transDate=  as StringorderHistoryHashMap!.get(OrderHistoryData.TRANSDATE);;
     
-this.cancelDate= orderHistoryHashMap!.get(OrderHistoryData.CANCELDATE); as String;
+this.cancelDate=  as StringorderHistoryHashMap!.get(OrderHistoryData.CANCELDATE);;
     
-this.status= orderHistoryHashMap!.get(OrderHistoryData.STATUS); as String;
+this.status=  as StringorderHistoryHashMap!.get(OrderHistoryData.STATUS);;
     
-this.subTotal= new Money(orderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL) as String);
+this.subTotal= new Money( as StringorderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL));
     
-this.total= new Money(orderHistoryHashMap!.get(OrderHistoryData.TOTAL) as String);
+this.total= new Money( as StringorderHistoryHashMap!.get(OrderHistoryData.TOTAL));
     
-this.shippingCost= new Money(orderHistoryHashMap!.get(OrderHistoryData.SHIPPINGCOST) as String);
+this.shippingCost= new Money( as StringorderHistoryHashMap!.get(OrderHistoryData.SHIPPINGCOST));
     
-this.taxes= new Money(orderHistoryHashMap!.get(OrderHistoryData.TAX) as String);
+this.taxes= new Money( as StringorderHistoryHashMap!.get(OrderHistoryData.TAX));
     
-super.setUserComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCOMMENT) as String);
+super.setUserComments( as StringorderHistoryHashMap!.get(OrderData.CUSTOMERCOMMENT));
     
-super.setUserCancelComments(orderHistoryHashMap!.get(OrderData.CUSTOMERCANCELCOMMENT) as String);
+super.setUserCancelComments( as StringorderHistoryHashMap!.get(OrderData.CUSTOMERCANCELCOMMENT));
     
-super.setStoreComments(orderHistoryHashMap!.get(OrderData.STORECOMMENT) as String);
+super.setStoreComments( as StringorderHistoryHashMap!.get(OrderData.STORECOMMENT));
     
-super.setStoreCancelComments(orderHistoryHashMap!.get(OrderData.STORECANCELCOMMENT) as String);
+super.setStoreCancelComments( as StringorderHistoryHashMap!.get(OrderData.STORECANCELCOMMENT));
     
 }
 
@@ -450,11 +450,9 @@ this.total= value;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(UserData.USERNAME, this.userName);
@@ -467,19 +465,19 @@ hashMap!.put(OrderHistoryData.TRANSDATE, this.transDate);
     
 hashMap!.put(OrderHistoryData.CANCELDATE, this.cancelDate);
     
-hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, new Date(this.orderDate as Long.
+hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, new Date(this.orderDate.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, new Date(this.shipDate as Long.
+hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, new Date(this.shipDate.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, new Date(this.transDate as Long.
+hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, new Date(this.transDate.
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, new Date(this.cancelDate as Long.
+hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, new Date(this.cancelDate.
                             longValue()).
                             toString());
     
@@ -507,50 +505,36 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
     var node: Node = document.createElement(OrderHistoryData.ORDERHISTORY)!;
-        
-        
 ;
     
 node.appendChild(super.toXmlNode(document));
     
 
     var billingAddressNode: Node = document.createElement(BillingAddressData.BILLINGADDRESS)!;
-        
-        
 ;
     
 billingAddressNode!.appendChild(this.billingAddress!.toXmlNode(document));
     
 
     var shippingAddressNode: Node = document.createElement(ShippingAddressData.SHIPPINGADDRESS)!;
-        
-        
 ;
     
 shippingAddressNode!.appendChild(this.shippingAddress!.toXmlNode(document));
@@ -567,23 +551,17 @@ node.appendChild(this.payment.toXmlNode(document));
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
-        
-        
+    var name: string =  as StringkeyArray[i]!;
 ;
     
 
-    var value: string = hashMap!.get(name as Object); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(name as Object);;
 ;
     
-value= StringUtil.getInstance()!.getInstance(value);
+value= StringUtil.getInstance()!.getNonNull(value);
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     

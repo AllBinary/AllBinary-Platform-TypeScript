@@ -63,7 +63,7 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
 
                 //@Throws(Error::class)
             
-    public static create(maxlevel: number, location: number, direction: number): LevelHudWidget{
+    public static createHud(maxlevel: number, location: number, direction: number): LevelHudWidget{
 var maxlevel = maxlevel
 var location = location
 var direction = direction
@@ -83,8 +83,6 @@ var direction = direction
     private readonly levelString: string[]
 
     private levelNumberCharArray: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
-        
-        
 
     private levelNumberTotalDigits: number= 0
 
@@ -103,16 +101,12 @@ var maxWidth = maxWidth
                     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
-this.primitiveLongUtil= PrimitiveLongUtil.create(1000);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 
     var LEVEL: string = "Lv ";
-        
-        
 ;
     
 this.levelString= LEVEL.toCharArray();
@@ -199,7 +193,7 @@ this.update();
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, levelString, 0, levelString!.length, levelNumberCharArray, 0, levelNumberTotalDigits, this.offset);
+super.paintDX(graphics, levelString, 0, levelString!.length, levelNumberCharArray, 0, levelNumberTotalDigits, this.offset);
     
 }
 

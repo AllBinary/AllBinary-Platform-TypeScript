@@ -49,15 +49,11 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
         
 
     private readonly baseTouchInputList: BasicArrayList = new BasicArrayListD();
-        
-        
 
-    add(list: BasicArrayList){
+    addList(list: BasicArrayList){
     //var list = list
 
     var size: number = this.baseTouchInputList!.size()!;
-        
-        
 ;
     
 
@@ -70,13 +66,11 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-baseTouchInput= this.baseTouchInputList!.get(index); as BaseTouchInput;
+baseTouchInput=  as BaseTouchInputthis.baseTouchInputList!.get(index);;
     
-list.addAll(baseTouchInput!.getList());
+list.addAllList(baseTouchInput!.getList());
     
 }
 

@@ -70,15 +70,13 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
     public readonly LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType
 
     private readonly maxTileId: number
-public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: Hashtable, maxTileId: number){
 
             super();
             //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
     //var maxTileId = maxTileId
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
@@ -88,45 +86,31 @@ this.maxTileId= maxTileId;
 new GeographicMapCellType(0, 0);
     
 
-    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.create(1)!;
-        
-        
+    var BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType = BasicPlatormGeographicMapCellType.createType(1)!;
 ;
     
 
     var JUMP_THRU_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var LADDER_CELL_TYPE: BasicPlatormGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var PLATFORM: string = "Platform";
-        
-        
 ;
     
 
     var JUMP_TRHU: string = "JumpThru";
-        
-        
 ;
     
 
     var LADDER: string = "Ladder";
-        
-        
 ;
     
 
-    var enumeration: Enumeration<any?> = tileTypeToTileIdsMap!.keys()!;
-        
-        
+    var enumeration: Enumeration = tileTypeToTileIdsMap!.keys()!;
 ;
     
 
@@ -144,11 +128,11 @@ new GeographicMapCellType(0, 0);
 
         while(enumeration.hasMoreElements())
         {
-key= enumeration.nextElement()!; as String;
+key=  as Stringenumeration.nextElement()!;;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
+idsWithTypeList=  as BasicArrayListtileTypeToTileIdsMap!.get(key);;
     
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     

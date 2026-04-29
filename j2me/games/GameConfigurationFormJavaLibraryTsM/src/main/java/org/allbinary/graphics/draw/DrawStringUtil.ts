@@ -73,8 +73,6 @@ export class DrawStringUtil
         
 
     private static readonly instance: DrawStringUtil = new DrawStringUtil();
-        
-        
 
     public static getInstance(): DrawStringUtil{
 
@@ -94,26 +92,18 @@ export class DrawStringUtil
     //var anchor = anchor
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureUtil: OpenGLFeatureUtil = OpenGLFeatureUtil.getInstance()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var offsetY: number = 0;
-        
-        
 ;
     
 
@@ -149,14 +139,10 @@ export class DrawStringUtil
                                 
 
     var size: number = string.length!;
-        
-        
 ;
     
 
     var offsetX: number = 0;
-        
-        
 ;
     
 
@@ -169,8 +155,6 @@ export class DrawStringUtil
 
                         for (
     var index: number = size -1;
-        
-        
 index >= 0; index--)
         {
 aChar= string[index];
@@ -192,8 +176,6 @@ graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public drawCenterString(graphics: Graphics, string: string, offset: number, length: number, x: number, y: number){
     //var graphics = graphics
@@ -204,8 +186,6 @@ var x = x
 var y = y
 
     var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);
-        
-        
 ;
     
 
@@ -225,8 +205,6 @@ PreLogUtil.put(new StringMaker().
 
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, x: number, y: number){
     //var graphics = graphics
@@ -236,20 +214,14 @@ PreLogUtil.put(new StringMaker().
     //var y = y
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var extraLines: number = 0;
-        
-        
 ;
     
 
@@ -258,14 +230,10 @@ PreLogUtil.put(new StringMaker().
 
                         for (
     var index: number = 0;
-        
-        
 index < stringArray!.length; index++)
         {
 
     var string: string = stringArray[index]!;
-        
-        
 ;
     
 
@@ -274,14 +242,10 @@ index < stringArray!.length; index++)
                                     {
                                     
     var width: number = graphics.getFont()!.stringWidth(string)!;
-        
-        
 ;
     
 
     var minTotalLines: number = 1;
-        
-        
 ;
     
 
@@ -295,26 +259,18 @@ index < stringArray!.length; index++)
                                 
 
     var linePortion: number = string.length /minTotalLines;
-        
-        
 ;
     
 
     var offset: number = 0;
-        
-        
 ;
     
 
     var currentLength: number = linePortion;
-        
-        
 ;
     
 
     var size: number = string.length!;
-        
-        
 ;
     
 

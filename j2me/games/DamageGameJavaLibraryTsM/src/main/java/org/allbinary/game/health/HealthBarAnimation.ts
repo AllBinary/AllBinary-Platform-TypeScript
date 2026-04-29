@@ -53,8 +53,6 @@ export class HealthBarAnimation extends Animation {
         
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 
     x2: number= 0
 
@@ -74,8 +72,6 @@ this.location= location;
     
 
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -85,7 +81,8 @@ this.location= location;
                                     
 
 
-                            throw new Error("Location Not Valid")
+                            throw new Error("Location Not Valid");
+                    
 
                                     }
                                 
@@ -122,8 +119,6 @@ this.x2= newX2;
     
 
     var quarter: number = (this.allbinaryLayer!.getWidth()>>2);
-        
-        
 ;
     
 
@@ -173,8 +168,6 @@ this.colorP= this.basicColor!.toInt();
     getY(): number{
 
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-        
-        
 ;
     
 

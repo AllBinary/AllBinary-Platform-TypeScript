@@ -80,8 +80,6 @@ export class InsertCssValidationView extends CssCustomizerView implements Valida
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -90,10 +88,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<any, any> = new NameSpaceRequestParams(this.getPageContext()).
+    var requestHashMap: HashMap = new NameSpaceRequestParams(this.getPageContext()).
                             toHashMap()!;
-        
-        
 ;
     
 this.styleValidationInterface= new CssStyleValidation(requestHashMap);
@@ -118,8 +114,6 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -135,7 +129,7 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.styleValidationInterface);
     
 
                                     }
@@ -175,8 +169,6 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -257,7 +249,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -43,8 +43,6 @@ export class CommonStateStrings
         
 
     private static readonly instance: CommonStateStrings = new CommonStateStrings();
-        
-        
 
     public static getInstance(): CommonStateStrings{
 
@@ -57,52 +55,28 @@ export class CommonStateStrings
 
 
     public readonly CONTEXT: string = "Context: ";
-        
-        
 
     public readonly FINISH: string = "finish";
-        
-        
 
     public readonly CREATE: string = "onCreate";
-        
-        
 
     public readonly START: string = "onStart";
-        
-        
 
     public readonly RESTART: string = "onRestart";
-        
-        
 
     public readonly RESUME: string = "onResume";
-        
-        
 
     public readonly PAUSE: string = "onPause";
-        
-        
 
     public readonly STOP: string = "onStop";
-        
-        
 
     public readonly DESTROY: string = "onDestroy";
-        
-        
 
     public readonly BIND: string = "onBind";
-        
-        
 
     public readonly ON_SAVE_INSTANCE_STATE: string = "onSaveInstanceState";
-        
-        
 
     public readonly ON_START_COMMAND: string = "onStartCommand";
-        
-        
 
 }
                 

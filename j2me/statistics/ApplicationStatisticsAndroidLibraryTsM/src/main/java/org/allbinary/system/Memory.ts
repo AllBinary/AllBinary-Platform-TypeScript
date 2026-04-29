@@ -50,20 +50,14 @@ import { Runtime } from "./Runtime.js";
     /*actual*/ public static getInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var maxUtilizedMemoryAvailable: number = Runtime.getRuntime()!.maxMemory()!;
-        
-        
 ;
     
 
     var memoryUsed: number = Runtime.getRuntime()!.totalMemory()!;
-        
-        
 ;
     
 stringBuffer!.append("APK Memory: Available: ");

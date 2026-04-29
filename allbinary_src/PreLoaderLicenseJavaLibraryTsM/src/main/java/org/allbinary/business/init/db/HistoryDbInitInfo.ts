@@ -43,8 +43,6 @@ export class HistoryDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "historydbinitdata.dat";
-        
-        
 public constructor (){
             super(INITFILE, true);
                     

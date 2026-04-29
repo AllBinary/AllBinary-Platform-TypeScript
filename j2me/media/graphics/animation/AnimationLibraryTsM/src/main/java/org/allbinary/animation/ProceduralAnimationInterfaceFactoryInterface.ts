@@ -46,7 +46,7 @@ export interface ProceduralAnimationInterfaceFactoryInterface extends BasicAnima
 
                 //@Throws(Error::class)
             
-    getInstance(animationInterface: Animation): Animation
+    getInstanceAnimation(animationInterface: Animation): Animation
 
 }
                 

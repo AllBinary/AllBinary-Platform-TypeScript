@@ -50,7 +50,7 @@ export interface WeblisketSessionInterface {
 
     clear()
 
-    getAttempts(): Integer
+    getAttempts(): number
 
     getAuthentication(): string
 
@@ -82,7 +82,7 @@ export interface WeblisketSessionInterface {
 
     removeBasket()
 
-    setAttempts(value: Integer)
+    setAttempts(value: number)
 
     setAuthenticated()
 

@@ -43,8 +43,6 @@ export class BasicHudFactory
         
 
     private static readonly instance: BasicHudFactory = new BasicHudFactory();
-        
-        
 
     public static getInstance(): BasicHudFactory{
 
@@ -62,44 +60,24 @@ private constructor (){
 
 
     public readonly DIRECTION_EXCEPTION: string = "Only Horizontal Direction is Allowed Currently";
-        
-        
 
     public readonly VERTICAL: number = 0;
-        
-        
 
     public readonly HORIZONTAL: number = 1;
-        
-        
 
     public readonly BOTTOMLEFT: number = 0;
-        
-        
 
     public readonly BOTTOMRIGHT: number = 1;
-        
-        
 
     public readonly TOPLEFT: number = 2;
-        
-        
 
     public readonly TOPRIGHT: number = 3;
-        
-        
 
     public readonly BOTTOMCENTER: number = 4;
-        
-        
 
     public readonly TOPCENTER: number = 5;
-        
-        
 
     public readonly ABSOLUTE: number = 6;
-        
-        
 
 }
                 

@@ -69,21 +69,15 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var healLayer: HealLayer = this.getNextInstance(); as HealLayer;
-        
-        
+    var healLayer: HealLayer =  as HealLayerthis.getNextInstance();;
 ;
     
 
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = sourceLayerInterface as HealthInterfaceCompositeInterface;
-        
-        
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface =  as HealthInterfaceCompositeInterfacesourceLayerInterface;
 ;
     
 
     var healthInterface: HealthInterface = healthInterfaceCompositeInterface!.getHealthInterface()!;
-        
-        
 ;
     
 healLayer!.visit(healthInterface);

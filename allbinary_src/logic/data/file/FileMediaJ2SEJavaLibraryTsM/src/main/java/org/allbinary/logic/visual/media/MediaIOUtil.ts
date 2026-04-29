@@ -32,8 +32,6 @@ export class MediaIOUtil
         
 
     private static readonly instance: MediaIOUtil = new MediaIOUtil();
-        
-        
 
     public static getInstance(): MediaIOUtil{
 

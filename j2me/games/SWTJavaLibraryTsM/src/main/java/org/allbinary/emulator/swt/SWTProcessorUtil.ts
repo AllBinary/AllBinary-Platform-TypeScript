@@ -45,8 +45,6 @@ export class SWTProcessorUtil
         
 
     private static readonly instance: SWTProcessorUtil = new SWTProcessorUtil();
-        
-        
 
     public static getInstance(): SWTProcessorUtil{
 
@@ -59,8 +57,6 @@ export class SWTProcessorUtil
 
 
     public swtProcessor: SWTProcessor = SWTProcessor.getInstance()!;
-        
-        
 
 }
                 

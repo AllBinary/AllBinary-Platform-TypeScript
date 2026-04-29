@@ -58,16 +58,10 @@ export class WorkAreaDom
         
 
     public static readonly WORKAREA: string = "workArea";
-        
-        
 
     public static readonly NAME: string = "name";
-        
-        
 
     public static readonly FRAMES: string = "frames";
-        
-        
 
     private name: string
 
@@ -78,8 +72,6 @@ public constructor (document: Document){
         var document = document
 
     var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;
-        
-        
 ;
     
 
@@ -90,8 +82,6 @@ public constructor (document: Document){
                                     {
                                     
     var numberOfworkAreas: number = workAreaNodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -100,20 +90,14 @@ public constructor (document: Document){
                                     {
                                     
     var numberOfNodes: number = workAreaNodeList!.getLength()!;
-        
-        
 ;
     
 
     var nameNode: Node = DomHelper.getInstance()!.searchNodeList(this.NAME, workAreaNodeList!.item(0)!.getChildNodes())!;
-        
-        
 ;
     
 
     var nameTextNode: Node = nameNode!.getFirstChild()!;
-        
-        
 ;
     
 this.name= nameTextNode!.getNodeValue();
@@ -125,7 +109,8 @@ this.name= nameTextNode!.getNodeValue();
                             
 
 
-                            throw new Error("Wrong Number of WorkAreas: " +numberOfworkAreas)
+                            throw new Error("Wrong Number of WorkAreas: " +numberOfworkAreas);
+                    
 
                         }
                             
@@ -138,7 +123,8 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.F
                             
 
 
-                            throw new Error("workArea Node Not Found")
+                            throw new Error("workArea Node Not Found");
+                    
 
                         }
                             

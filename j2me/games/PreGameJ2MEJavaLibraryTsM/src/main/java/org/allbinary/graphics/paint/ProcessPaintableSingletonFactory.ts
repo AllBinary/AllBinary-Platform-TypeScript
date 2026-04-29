@@ -45,8 +45,6 @@ export class ProcessPaintableSingletonFactory
         
 
     private static readonly SINGLETON: ProcessPaintable = new ProcessPaintable();
-        
-        
 
     public static getInstance(): ProcessPaintable{
 

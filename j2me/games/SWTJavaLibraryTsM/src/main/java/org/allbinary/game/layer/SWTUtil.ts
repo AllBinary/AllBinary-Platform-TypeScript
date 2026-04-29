@@ -43,12 +43,8 @@ export class SWTUtil
         
 
     public isSWT: boolean = true;
-        
-        
 
     public SWT: string = "SWT";
-        
-        
 
 }
                 

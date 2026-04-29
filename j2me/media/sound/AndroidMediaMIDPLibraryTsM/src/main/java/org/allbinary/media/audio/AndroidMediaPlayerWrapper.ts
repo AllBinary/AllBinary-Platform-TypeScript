@@ -72,7 +72,7 @@ import { BasicPlayer } from "./BasicPlayer.js";
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         
 
-    public static create(): AndroidMediaPlayerWrapper{
+    public static createPlayerWrapper(): AndroidMediaPlayerWrapper{
 
         try {
             
@@ -88,23 +88,18 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }
 
 
-    public static readonly NULL_ANDROID_MEDIA_PLAYER_WRAPPER: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.create()!;
-        
-        
+    public static readonly NULL_ANDROID_MEDIA_PLAYER_WRAPPER: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.createPlayerWrapper()!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private mediaPlayer: MediaPlayer = NullAndroidCanvas.NULL_MEDIA_PLAYER;
-        
-        
 public constructor (resource: string){
 
             super();
@@ -121,14 +116,10 @@ public constructor (resource: string){
                         else {
                             
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
     var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.toInt())!;
-        
-        
 ;
     
 
@@ -141,7 +132,8 @@ public constructor (resource: string){
 
 
                             throw new Error(new StringMaker().
-                            append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString())
+                            append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString());
+                    
 
                                     }
                                 
@@ -161,7 +153,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -317,8 +310,6 @@ this.logUtil!.putF("LineEvent: " +event, this, commonStrings!.UPDATE);
     
 
     var size: number = this.listenersList!.size()!;
-        
-        
 ;
     
 
@@ -327,14 +318,10 @@ this.logUtil!.putF("LineEvent: " +event, this, commonStrings!.UPDATE);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.objectArray[index]! as PlayerListener;
-        
-        
+    var listener: PlayerListener =  as PlayerListenerthis.listenersList!.objectArray[index]!;
 ;
     
 listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);

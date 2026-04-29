@@ -49,8 +49,6 @@ export class ImageScaleUtil
         
 
     private static readonly instance: ImageScaleUtil = new ImageScaleUtil();
-        
-        
 
     public static getInstance(): ImageScaleUtil{
 
@@ -69,7 +67,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
+    public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX

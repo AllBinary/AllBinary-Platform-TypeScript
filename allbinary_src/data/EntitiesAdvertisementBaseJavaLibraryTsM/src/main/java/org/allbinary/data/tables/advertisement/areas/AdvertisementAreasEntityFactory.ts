@@ -51,14 +51,10 @@ export class AdvertisementAreasEntityFactory
         
 
     private static readonly CLASSNAME: string = "org.allbinary.data.tables.AdvertisementEntity";
-        
-        
 
     public static getInstance(): AdvertisementAreasEntityInterface{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -67,7 +63,7 @@ export class AdvertisementAreasEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdvertisementAreasEntity() as AdvertisementAreasEntityInterface;
+                        return  as AdvertisementAreasEntityInterfacenew AdvertisementAreasEntity();
     
 
                 //: 
@@ -79,8 +75,6 @@ export class AdvertisementAreasEntityFactory
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "AdvertisementAreasEntityFactory", commonStrings!.GET_INSTANCE, e);

@@ -43,8 +43,6 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         
 
     private static readonly instance: AppRendererShaderUpdaterFactory = new AppRendererShaderUpdaterFactory();
-        
-        
 
     public static getInstance(): AppRendererShaderUpdaterFactory{
 
@@ -57,16 +55,10 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
 
 
     private readonly NULL_SHADER_COMPOSITE_ARRAY: ShaderComposite[] = [];
-        
-        
 
     public readonly shaderCompositeArray: ShaderComposite[] = NULL_SHADER_COMPOSITE_ARRAY;
-        
-        
 
     private readonly shaderOpenGLProcessorArray: ShaderOpenGLProcessor[] = [];
-        
-        
 
     public getTestShaders(): ShaderOpenGLProcessor[]{
 

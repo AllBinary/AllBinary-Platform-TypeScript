@@ -162,9 +162,6 @@ import { EventStrings } from "../../../../../org/allbinary/logic/util/event/Even
 import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
-
-    
 import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
 
     
@@ -197,40 +194,24 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
         
 
     private static readonly id: number = 0;
-        
-        
 
-    private readonly repaintProcessor: Processor = ScreenRepaintProcessorFactory.getInstance()!.getInstance(this)!;
-        
-        
+    private readonly repaintProcessor: Processor = ScreenRepaintProcessorFactory.getInstance()!.create(this)!;
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
-        
-        
 
     readonly foregroundBasicColor: BasicColor
 
     readonly backgroundBasicColor: BasicColor
 
     private readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
-        
-        
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
     private readonly downGameKeyEventHandler: DownGameKeyEventHandler = DownGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly upGameKeyEventHandler: UpGameKeyEventHandler = UpGameKeyEventHandler.getInstance()!;
-        
-        
 
     public readonly repaintBehavior: RepaintBehavior
 
@@ -239,20 +220,12 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
     backgroundColor: number
 
     private menuInputProcessor: BasicMenuInputProcessor = NoMenuInputProcessor.getInstance()!;
-        
-        
 
     private menuPaintable: Paintable = NullPaintable.getInstance()!;
-        
-        
 
     private menuForm: PaintableForm = PaintableForm.NULL_PAINTABLE_FORM;
-        
-        
 
     private isSingleKeyRepeatableProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
-        
-        
 public constructor (cmdListener: CommandListener, name: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(name, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
                         //var cmdListener = cmdListener
@@ -292,7 +265,8 @@ repaintProcessor!.process();
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -316,8 +290,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;
-        
-        
 ;
     
 this.menuForm!.init(rectangle, FormTypeFactory.getInstance()!.VERTICAL_CENTER_FORM);
@@ -351,8 +323,6 @@ this.setCommandListener(cmdListener);
     initMenu(){
 
     var form: ScrollSelectionForm = this.createForm()!;
-        
-        
 ;
     
 this.menuForm= form;
@@ -378,15 +348,11 @@ this.repaintBehavior!.onChangeRepaint(this);
     public createForm(): ScrollSelectionForm{
 
     var items: CustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
-                            getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
-        
-        
+                            getInstance( as Vector<any>this.getCommandStack(), this.backgroundBasicColor, this.foregroundBasicColor)!;
 ;
     
 
     var rectangle: Rectangle = this.createRectangle(items.length)!;
-        
-        
 ;
     
 
@@ -402,32 +368,22 @@ this.repaintBehavior!.onChangeRepaint(this);
     //var size = size
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var height: number = size *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var startY: number = (displayInfo!.getLastHeight() *2 /3) -height;
-        
-        
 ;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
-    var rectangle: Rectangle = new Rectangle(pointFactory!.getInstance0(30, startY), displayInfo!.getLastWidth() -30, startY);
-        
-        
+    var rectangle: Rectangle = new Rectangle(pointFactory!.createXY(30, startY), displayInfo!.getLastWidth() -30, startY);
 ;
     
 
@@ -483,26 +439,26 @@ this.repaintProcessor!.process();
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0);
+this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0);
+this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0);
+this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
 this.logUtil!.putF(new StringMaker().
@@ -513,7 +469,7 @@ this.addGameKeyEvent(keyCode, 0, false);
 }
 
 
-    public keyReleased(keyCode: number, deviceId: number){
+    public keyReleasedByDevice(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
 this.removeGameKeyEvent(keyCode, deviceId, false);
@@ -521,7 +477,7 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
 }
 
 
-    public keyRepeated(keyCode: number, deviceId: number){
+    public keyRepeatedByDevice(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
 
@@ -543,9 +499,7 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
 
         try {
             
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
-        
-        
+    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;
 ;
     
 
@@ -553,14 +507,12 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;
 ;
     
 this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }
@@ -590,9 +542,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 
         try {
             
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
-        
-        
+    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;
 ;
     
 
@@ -600,14 +550,12 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this, gameKey)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this, gameKey)!;
 ;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

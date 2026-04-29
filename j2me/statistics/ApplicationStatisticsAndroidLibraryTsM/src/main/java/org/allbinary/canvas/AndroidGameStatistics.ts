@@ -58,21 +58,15 @@ export class AndroidGameStatistics extends BaseGameStatistics {
         
 
     private view: BaseViewWrapper = BaseViewWrapper.NULL_VIEW_WRAPPER;
-        
-        
 
     private totalOnDraws: number= 0
 
     private readonly STRING_ARRAY: string[] = new Array(14);
-        
-        
 public constructor (){
 
             super();
         
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -81,8 +75,6 @@ public constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < this.STRING_ARRAY.length; index++)
         {
 this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
@@ -116,18 +108,12 @@ this.totalOnDraws++;
 
 
     private readonly TOTAL_ONDRAWS: string = " Total onDraws: ";
-        
-        
 
     private readonly ONDRAWS_RATE: string = " onDraws(/10) Sec: ";
-        
-        
 
     public toStringArray(): string[]{
 
     var stringArray: string[] = super.toStringArray()!;
-        
-        
 ;
     
 
@@ -136,8 +122,6 @@ this.totalOnDraws++;
 
                         for (
     var index: number = 0;
-        
-        
 index < stringArray!.length; index++)
         {
 this.STRING_ARRAY[index]= stringArray[index]!;
@@ -146,8 +130,6 @@ this.STRING_ARRAY[index]= stringArray[index]!;
 
 
     var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 totalTime= (totalTime /10000);
@@ -172,8 +154,6 @@ this.STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
     public toString(): string{
 
     var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 totalTime= (totalTime /1000);
@@ -184,11 +164,9 @@ totalTime= (totalTime /1000);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
-stringBuffer!.append(super.toString(totalTime));
+stringBuffer!.append(super.toStringAt(totalTime));
     
 
                         if(this.totalOnDraws > 0)
@@ -202,8 +180,6 @@ stringBuffer!.append(this.ONDRAWS_RATE);
     
 
     var drawsOverTime: string = (this.totalOnDraws /totalTime).toString()!;
-        
-        
 ;
     
 stringBuffer!.append(drawsOverTime);

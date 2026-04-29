@@ -43,28 +43,16 @@ export class NameSpaceRequestParamData
         
 
     public static readonly NAME: string = "NAMESPACE_REQUESTDATA_NAME";
-        
-        
 
     public static readonly VALUE: string = "INPUT_VALUE";
-        
-        
 
     public static readonly PROPERTIES: string = "_PROPERTIES_";
-        
-        
 
     public static readonly SEP: string = "_DOT_";
-        
-        
 
     public static readonly PROPERTIESSEPARATOR: string = "_PROPDOT_";
-        
-        
 
     public static readonly DOCUMENT: string = "NAMESPACE_REQUESTDATA_DOCUMENT";
-        
-        
 public constructor (){
 
             super();

@@ -69,8 +69,6 @@ public constructor (categoryInterface: CategoryInterface){
 
 
     public NO_TYPE: number = 0;
-        
-        
 
     public getTypeId(): number{
 
@@ -114,8 +112,6 @@ var viewDocumentInterface = viewDocumentInterface
     public toXmlDoc(): Document{
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 document.appendChild(new CategoryView(this.getCategoryInterface()).

@@ -93,12 +93,8 @@ export class CategoryProperties
         
 
     private static readonly MAXDEPTH: number = 100;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private category: string
 public constructor (name: string){
@@ -117,7 +113,7 @@ this.category= CategoryUtil.getNameFromNode(node);
     
 }
 
-public constructor (categoryPropertiesHashMap: HashMap<any, any>){
+public constructor (categoryPropertiesHashMap: HashMap){
 
             super();
         var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -151,7 +147,7 @@ this.category= .toCharArray();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue(); as Object;
+                        return  as Objectthis.getValue();;
     
 }
 
@@ -172,26 +168,18 @@ this.category= .toCharArray();
 var categoryHierarchyInterface = categoryHierarchyInterface
 
     var abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 ;
     
 
     var pathStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var nextParentCategoryInterface: CategoryInterface = categoryHierarchyInterface!.getParent()!;
-        
-        
 ;
     
 
@@ -200,8 +188,6 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                                     {
                                     
     var depthIndex: number = 0;
-        
-        
 ;
     
 
@@ -223,7 +209,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                         if(nextParentCategoryInterface!.getProperties()!.isRoot())
                         
                                     {
-                                    list.add(0, nextParentCategoryInterface!.getPath()!.toString());
+                                    list.addAt(0, nextParentCategoryInterface!.getPath()!.toString());
     
 
                                     }
@@ -231,7 +217,7 @@ var categoryHierarchyInterface = categoryHierarchyInterface
                         else {
                             pathStringBuffer!.delete(0, pathStringBuffer!.length());
     
-list.add(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString());
+list.addAt(0, pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(nextParentCategoryInterface!.getProperties()!.getValue())!.toString());
     
 
                         }
@@ -257,7 +243,8 @@ depthIndex++;
                                     
 
 
-                            throw new Error("Probably Major Error")
+                            throw new Error("Probably Major Error");
+                    
 
                                     }
                                 
@@ -272,8 +259,6 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -282,11 +267,9 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-pathStringBuffer!.append(list.get(index) as String);
+pathStringBuffer!.append( as Stringlist.get(index));
     
 }
 
@@ -326,7 +309,8 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 
 
 
-                            throw new Error("Not Root")
+                            throw new Error("Not Root");
+                    
 }
 
 
@@ -340,8 +324,6 @@ this.category= value;
     public isValid(): Boolean{
 
     var returnBoolean: Boolean = Boolean.FALSE;
-        
-        
 ;
     
 
@@ -362,11 +344,9 @@ this.category= value;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var categoryHashMap: HashMap = new HashMap();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
@@ -383,8 +363,6 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.category);
     public toVector(): Vector{
 
     var categoryVector: Vector = new Vector();
-        
-        
 ;
     
 categoryVector!.add(this.category);

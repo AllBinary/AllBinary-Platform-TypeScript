@@ -61,7 +61,7 @@ export class CreateUserFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(hashMap: HashMap<any, any>): UserInterface{
+    public static getInstance(hashMap: HashMap): UserInterface{
 var hashMap = hashMap
 
                         if(hashMap != 
@@ -70,9 +70,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()); as String;
-        
-        
+    var roleString: string =  as StringhashMap!.get(UserRoleData.NAME.toString());;
 ;
     
 
@@ -81,8 +79,6 @@ var hashMap = hashMap
                                     {
                                     
     var role: UserRole = UserRoleB.getRole(roleString)!;
-        
-        
 ;
     
 
@@ -98,7 +94,8 @@ var hashMap = hashMap
                             
 
 
-                            throw new Error("No Role Specified")
+                            throw new Error("No Role Specified");
+                    
 
                         }
                             
@@ -109,7 +106,8 @@ var hashMap = hashMap
                             
 
 
-                            throw new Error("Null HashMap")
+                            throw new Error("Null HashMap");
+                    
 
                         }
                             

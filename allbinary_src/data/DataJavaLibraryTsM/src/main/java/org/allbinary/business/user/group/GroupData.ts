@@ -43,8 +43,6 @@ export class GroupData
         
 
     public static readonly NAME: string = "GROUP_NAME";
-        
-        
 public constructor (){
 
             super();

@@ -74,8 +74,6 @@ export class ShippingAddressView extends HttpStoreComponentView implements DomNo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -88,12 +86,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
-this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequesthttpTransformInfoInterface!.getPageContext()!.getRequest();;
     
 }
 
@@ -116,8 +112,6 @@ var document = document
         try {
             
     var formNode: Node = document.createElement(StreetAddressData.FORM)!;
-        
-        
 ;
     
 formNode!.appendChild(this.streetAddress!.toXmlNode(document));
@@ -144,16 +138,17 @@ formNode!.appendChild(this.streetAddress!.toXmlNode(document));
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
-this.addDomNodeInterface(new StatesView() as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacenew StatesView());
     
 }
 
@@ -187,7 +182,8 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

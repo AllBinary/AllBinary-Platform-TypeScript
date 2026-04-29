@@ -43,8 +43,6 @@ export class ColorData
         
 
     private static readonly instance: ColorData = new ColorData();
-        
-        
 
     public static getInstance(): ColorData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "COLOR_NAME";
-        
-        
 
 }
                 

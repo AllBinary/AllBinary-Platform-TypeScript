@@ -83,14 +83,12 @@ public constructor (file: AbFile){
             //var file = file
 this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
-this.transformDocumentInterface= TransformDocumentFactory.getInstance(); as TransformDocumentInterface;
+this.transformDocumentInterface=  as TransformDocumentInterfaceTransformDocumentFactory.getInstance();;
     
 }
 
 
     public NO_TYPE: number = 0;
-        
-        
 
     public getTypeId(): number{
 
@@ -137,14 +135,10 @@ this.transformDocumentInterface= transformDocumentInterface;
     //var document = document
 
     var dirNode: Node = document.createElement("dir")!;
-        
-        
 ;
     
 
     var size: number = this.fileBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -161,11 +155,9 @@ this.transformDocumentInterface= transformDocumentInterface;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-nextFile= this.fileBasicArrayList!.get(index); as AbFile;
+nextFile=  as AbFilethis.fileBasicArrayList!.get(index);;
     
 fileNode= new FileDomDataModel(nextFile).
                             toXmlNode(document);
@@ -200,8 +192,6 @@ dirNode!.appendChild(fileNode);
     public view(): string{
 
     var node: Node = this.toXmlNode(this.getTransformDocumentInterface()!.getDoc())!;
-        
-        
 ;
     
 this.getTransformDocumentInterface()!.getBaseNode()!.appendChild(node);

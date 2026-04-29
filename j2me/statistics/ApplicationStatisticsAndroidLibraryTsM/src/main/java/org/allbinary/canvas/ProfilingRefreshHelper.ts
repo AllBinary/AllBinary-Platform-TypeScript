@@ -51,8 +51,6 @@ export class ProfilingRefreshHelper extends AndroidGameStatistics {
         
 
     private static readonly instance: ProfilingRefreshHelper = new ProfilingRefreshHelper();
-        
-        
 
     public static getInstance(): AndroidGameStatistics{
 
@@ -65,8 +63,6 @@ export class ProfilingRefreshHelper extends AndroidGameStatistics {
 
 
     private firstTime: boolean = true;
-        
-        
 
     private bestFrameProcessingTime: number= 0
 
@@ -93,7 +89,7 @@ this.worstFrameProcessingTime= 0;
 
 
     public nextFrame(){
-this.frameProcessingTimeElapsed= System.currentTimeMillis() -this.frameProcessingTimeElapsed;
+this.frameProcessingTimeElapsed= Date.now() -this.frameProcessingTimeElapsed;
     
 
                         if(this.firstTime != true)
@@ -101,10 +97,10 @@ this.frameProcessingTimeElapsed= System.currentTimeMillis() -this.frameProcessin
                                     {
                                     
                         if(this.frameProcessingTimeElapsed > this.worstFrameProcessingTime)
-                        this.worstFrameProcessingTime= this.frameProcessingTimeElapsed
+                        this.worstFrameProcessingTime= Math.roundthis.frameProcessingTimeElapsed
 
                         if(this.frameProcessingTimeElapsed < this.bestFrameProcessingTime)
-                        this.bestFrameProcessingTime= this.frameProcessingTimeElapsed
+                        this.bestFrameProcessingTime= Math.roundthis.frameProcessingTimeElapsed
 
                                     }
                                 

@@ -4,6 +4,8 @@
 
 
 
+            import { Runnable } from "../../../../../java/lang/Runnable.js";
+        
 import { Service } from "../../../../../android/app/Service.js";
 
     
@@ -59,40 +61,22 @@ export class BaseMusicService extends Service {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-        
-        
 
     private readonly ALREADY_PLAYING: string = "This is one song per music service";
-        
-        
 
     private readonly WAITING_FOR_MUSIC_TO_END: string = "Waiting for music to end";
-        
-        
 
     private player: MediaPlayer = NullAndroidCanvas.NULL_MEDIA_PLAYER;
-        
-        
 
     private songId: number =  -1;
-        
-        
 
     private leftVolume: number =  -1;
-        
-        
 
     private rightVolume: number =  -1;
-        
-        
 
     public onBind(intent: Intent): IBinder?{
     //var intent = intent
@@ -179,7 +163,7 @@ this.player.start();
     public onStart(intent: Intent, startid: number){
     //var intent = intent
     //var startid = startid
-onStartCommand(intent);
+onStartCommandIntent(intent);
     
 this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.START);
     
@@ -190,7 +174,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.START);
     //var intent = intent
     //var flags = flags
     //var startId = startId
-onStartCommand(intent);
+onStartCommandIntent(intent);
     
 
 
@@ -201,14 +185,12 @@ onStartCommand(intent);
 }
 
 
-    public onStartCommand(intent: Intent){
+    public onStartCommandIntent(intent: Intent){
     //var intent = intent
 this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.ON_START_COMMAND);
     
 
     var musicStrings: MusicStrings = MusicStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -219,8 +201,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.ON_START
                                     {
                                     
     var command: number = intent.getIntExtra(commonStateStrings!.ON_START_COMMAND,  -1)!;
-        
-        
 ;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.COMMAND_LABEL +command, this, commonStateStrings!.ON_START_COMMAND);
@@ -272,7 +252,8 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
                             
 
 
-                            throw new RuntimeException("Started service without intent")
+                            throw Error();
+                    
 
                         }
                             
@@ -288,21 +269,17 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
                                     {
                                     
     var player: MediaPlayer = this.player;
-        
-        
 ;
     
 this.logUtil!.putF(this.ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND);
     
 
-    var runnable: Runnable = new object: ARunnable()
+    var runnable: Runnable = new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -316,7 +293,7 @@ Thread.sleep(1200);
     
 }
 
-onStartCommand(intent);
+onStartCommandIntent(intent);
     
 
                 //: 
@@ -330,14 +307,10 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStateStrings!.ON_START_COMMAN
 
                                 }
                             ;
-        
-        
 ;
     
 
     var thread: Thread = new Thread(runnable);
-        
-        
 ;
     
 thread.start();

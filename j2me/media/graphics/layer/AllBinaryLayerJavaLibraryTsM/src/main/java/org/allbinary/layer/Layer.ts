@@ -62,29 +62,21 @@ export class Layer
          {
         
 
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(0)!;
-        
-        
+    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     x: number= 0
 
     y: number= 0
 
     z: number = 3;
-        
-        
 
     private width: number= 0
 
     private height: number= 0
 
     private visible: boolean = true;
-        
-        
 public constructor (width: number, height: number){
 
             super();
@@ -110,7 +102,7 @@ this.z= z;
 }
 
 
-    public move(dx: number, dy: number){
+    public moveDXY(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
 this.x += dx;
@@ -120,7 +112,7 @@ this.y += dy;
 }
 
 
-    public move(dx: number, dy: number, dz: number){
+    public moveDXYZ(dx: number, dy: number, dz: number){
 var dx = dx
 var dy = dy
 var dz = dz
@@ -214,14 +206,10 @@ this.visible= visible;
 var graphics = graphics
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
@@ -238,7 +226,8 @@ var width = width
                                     
 
 
-                            throw new IllegalArgumentException()
+                            throw Error();
+                    
 
                                     }
                                 
@@ -256,7 +245,8 @@ var height = height
                                     
 
 
-                            throw new IllegalArgumentException()
+                            throw Error();
+                    
 
                                     }
                                 
@@ -265,7 +255,7 @@ this.height= height;
 }
 
 
-    public toString(stringBuffer: StringMaker){
+    public toStringAppend(stringBuffer: StringMaker){
     //var stringBuffer = stringBuffer
 }
 

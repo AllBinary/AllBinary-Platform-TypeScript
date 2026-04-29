@@ -49,9 +49,11 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { LinesGraphicItem } from "./LinesGraphicItem.js";
+import { SelectionToolFactory } from "./SelectionToolFactory.js";
 
 import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
+
+import { LinesGraphicItem } from "./LinesGraphicItem.js";
 
 import { GraphicItemBuilder } from "./GraphicItemBuilder.js";
 
@@ -61,8 +63,6 @@ export class GraphicItemFactory
         
 
     private static readonly instance: GraphicItemFactory = new GraphicItemFactory();
-        
-        
 
     public static getInstance(): GraphicItemFactory{
 
@@ -74,15 +74,13 @@ export class GraphicItemFactory
 }
 
 
-    private readonly graphicItems: HashMap<any, any>
+    private readonly graphicItems: HashMap
 
     private readonly DEFAULT: GraphicsItemInterfaceFactoryInterface = new SelectionToolFactory();
-        
-        
 private constructor (){
 
             super();
-        this.graphicItems= new HashMap<any, any>();
+        this.graphicItems= new HashMap();
     
 this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFactory());
     
@@ -92,9 +90,7 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
 var itemName = itemName
 
-    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName); as GraphicsItemInterfaceFactoryInterface;
-        
-        
+    var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface =  as GraphicsItemInterfaceFactoryInterfacethis.graphicItems!.get(itemName);;
 ;
     
 
@@ -119,18 +115,14 @@ var itemName = itemName
 
                 //@Throws(Error::class)
             
-    public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
+    public getInstance(graphicItemNodeList: BasicArrayList): HashMap{
 var graphicItemNodeList = graphicItemNodeList
 
     var numberOfItems: number = graphicItemNodeList!.size()!;
-        
-        
 ;
     
 
-    var graphicItemHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var graphicItemHashMap: HashMap = new HashMap();
 ;
     
 
@@ -146,14 +138,10 @@ var graphicItemNodeList = graphicItemNodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfItems; index++)
         {
 
-    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance(graphicItemNodeList!.get(index) as Node)!;
-        
-        
+    var graphicItem: GraphicItemInterface = GraphicItemBuilder.getInstance( as NodegraphicItemNodeList!.get(index))!;
 ;
     
 graphicItemHashMap!.put(graphicItem!.getTreeNode(), graphicItem);

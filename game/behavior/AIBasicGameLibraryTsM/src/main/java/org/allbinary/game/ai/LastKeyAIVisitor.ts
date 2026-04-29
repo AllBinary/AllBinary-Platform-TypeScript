@@ -53,12 +53,8 @@ export class LastKeyAIVisitor extends Visitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly TRUE: Boolean = BooleanFactory.getInstance()!.TRUE;
-        
-        
 public constructor (){
 
             super();
@@ -70,22 +66,18 @@ var anyType = anyType
 
         try {
             
-    var basicAI: BasicAI = anyType as BasicAI;
-        
-        
+    var basicAI: BasicAI =  as BasicAIanyType;
 ;
     
 
     var key: number = basicAI!.getLastKey()!;
-        
-        
 ;
     
 
                         if(key !=  -1)
                         
                                     {
-                                    basicAI!.processAI(key);
+                                    basicAI!.processKeyAI(key);
     
 
                                     }
@@ -96,8 +88,6 @@ var anyType = anyType
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);

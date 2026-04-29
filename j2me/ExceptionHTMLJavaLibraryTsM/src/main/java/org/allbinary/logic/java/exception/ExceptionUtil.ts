@@ -43,8 +43,6 @@
         
 
     private static readonly instance: ExceptionUtil = new ExceptionUtil();
-        
-        
 
     /*actual*/ public static getInstance(): ExceptionUtil{
 
@@ -57,8 +55,6 @@
 
 
     /*actual*/ public static readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
-        
-        
 private constructor (){
 
             super();
@@ -66,8 +62,6 @@ private constructor (){
 
 
     private readonly NONE: string = "No Stack Trace";
-        
-        
 
     /*actual*/ public getStackTrace(e: Error): string{
 var e = e

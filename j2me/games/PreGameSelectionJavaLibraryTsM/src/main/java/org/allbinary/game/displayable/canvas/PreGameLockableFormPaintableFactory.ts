@@ -49,6 +49,8 @@ import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphic
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PreGameLockablePaintable } from "./PreGameLockablePaintable.js";
+
 export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
         
 
@@ -64,13 +66,13 @@ this.lockedIndex= lockedIndex;
 
                 //@Throws(Error::class)
             
-    public getInstance(paintableForm: PaintableForm): ItemPaintable{
+    public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
 var paintableForm = paintableForm
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new PreGameLockablePaintable(paintableForm as ScrollCurrentSelectionForm, this.lockedIndex);
+                        return new PreGameLockablePaintable( as ScrollCurrentSelectionFormpaintableForm, this.lockedIndex);
     
 }
 

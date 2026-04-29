@@ -45,8 +45,6 @@ export class GameTickDisplayInfoSingleton
         
 
     private static readonly instance: GameTickDisplayInfoSingleton = new GameTickDisplayInfoSingleton();
-        
-        
 
     public static getInstance(): GameTickDisplayInfoSingleton{
 
@@ -59,24 +57,14 @@ export class GameTickDisplayInfoSingleton
 
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 
     private lastWidth: number = displayInfoSingleton!.getLastWidth()!;
-        
-        
 
     private lastHeight: number = displayInfoSingleton!.getLastHeight()!;
-        
-        
 
     private lastHalfWidth: number = displayInfoSingleton!.getLastHalfWidth()!;
-        
-        
 
     private lastHalfHeight: number = displayInfoSingleton!.getLastHalfHeight()!;
-        
-        
 
     public update(){
 this.lastWidth= displayInfoSingleton!.getLastWidth();

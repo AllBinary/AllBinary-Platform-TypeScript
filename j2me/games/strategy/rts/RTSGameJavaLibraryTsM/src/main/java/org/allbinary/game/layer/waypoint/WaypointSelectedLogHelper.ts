@@ -73,8 +73,6 @@ export class WaypointSelectedLogHelper extends WaypointLogHelper {
         
 
     private static readonly instance: WaypointSelectedLogHelper = new WaypointSelectedLogHelper();
-        
-        
 
     public static getInstance(): WaypointSelectedLogHelper{
 
@@ -87,24 +85,16 @@ export class WaypointSelectedLogHelper extends WaypointLogHelper {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     public onWaypointEvent(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var advancedRTSGameLayer = advancedRTSGameLayer
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -136,8 +126,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "onWaypointEvent");
     //var advancedRTSGameLayer = advancedRTSGameLayer
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -164,14 +152,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 }
 
 
-    public addWaypointFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
+    public addWaypointFromBuildingList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var advancedRTSGameLayer = advancedRTSGameLayer
     //var list = list
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -192,8 +178,6 @@ var rtsLayer = rtsLayer
     //var waypointName = waypointName
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -213,7 +197,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 }
 
 
-    public insertWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
+    public insertWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var index = index
     //var rtsLayer = rtsLayer
@@ -221,8 +205,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
     //var list = list
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -244,19 +226,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 }
 
 
-    public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
+    public setRandomGeographicMapCellHistoryList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var pathsList = pathsList
 
     var size: number = pathsList!.size()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());

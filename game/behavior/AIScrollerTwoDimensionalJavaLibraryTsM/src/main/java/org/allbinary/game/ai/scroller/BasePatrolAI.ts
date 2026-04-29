@@ -69,36 +69,24 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 export class BasePatrolAI extends BasicAI {
         
 
-    public static readonly MAX_DISTANCE: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(2)!;
-        
-        
+    public static readonly MAX_DISTANCE: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
-    public static readonly DIRECTION_ARRAY: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(3)!;
-        
-        
+    public static readonly DIRECTION_ARRAY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
 
-    public static readonly FIRING_DISTANCE: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(4)!;
-        
-        
+    public static readonly FIRING_DISTANCE: number = SmallIntegerSingletonFactory.getInstance()!.getAt(4)!;
 
-    public SPEED: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(5)!;
-        
-        
+    public SPEED: number = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
 
-    maxDistance: Integer
+    maxDistance: number
 
     currentDistance: number
 
     xTotalDistance: number= 0
 
     lastKeyDirection: number = Canvas.RIGHT;
-        
-        
 
     keyDirection: number = Canvas.RIGHT;
-        
-        
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -107,7 +95,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
+this.maxDistance=  as Integerhashtable.get(BasePatrolAI.MAX_DISTANCE);;
     
 this.currentDistance= this.maxDistance!.toInt();
     
@@ -124,15 +112,11 @@ this.changeDirectionIfReachedPacingAreaMax();
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 
     var velocityProperties: BasicVelocityProperties = velocityInterfaceCompositeInterface!.getVelocityProperties()!;
-        
-        
 ;
     
 this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
@@ -143,14 +127,10 @@ this.xTotalDistance += velocityProperties!.getVelocityXBasicDecimalP()!.getScale
     changeDirectionIfReachedPacingAreaMax(){
 
     var mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 ;
     
 
     var totalDistance: number = mathUtil!.abs(this.xTotalDistance)!;
-        
-        
 ;
     
 

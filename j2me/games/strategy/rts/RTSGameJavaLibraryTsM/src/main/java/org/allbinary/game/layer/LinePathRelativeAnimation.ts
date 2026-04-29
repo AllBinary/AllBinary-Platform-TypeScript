@@ -52,8 +52,6 @@ export class LinePathRelativeAnimation extends LinePathAnimation {
         
 
     private static readonly instance: LinePathRelativeAnimation = new LinePathRelativeAnimation();
-        
-        
 
     public static getInstance(): LinePathAnimation{
 

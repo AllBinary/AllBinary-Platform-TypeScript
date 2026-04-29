@@ -110,36 +110,20 @@ export class Email
         
 
     private static readonly DEBUG: string = "mail.debug";
-        
-        
 
     private static readonly SMTP_HOST: string = "mail.smtp.host";
-        
-        
 
     private static readonly SMTP_PORT: string = "mail.smtp.port";
-        
-        
 
     private static readonly SMTP_USER: string = "mail.smtp.user";
-        
-        
 
     private static readonly SMTP_RETURN_ADDRESS: string = "mail.from";
-        
-        
 
     private static readonly SMTP_LOCAL_HOST: string = "mail.smtp.localhost";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private msg: MimeMessage
 
@@ -196,16 +180,12 @@ var contentBase = contentBase
         try {
             
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var mimeBodyParts: MimeBodyPart[] = new Array(
                             //Otherwise - levels - level - dimension - ConditionalExpr
 );
-        
-        
 ;
     
 mimeBodyParts[0]= new MimeBodyPart();
@@ -218,8 +198,6 @@ mimeBodyParts[0]!.setText(textBody);
                                     {
                                     
     var internetHeaders: InternetHeaders = new InternetHeaders();
-        
-        
 ;
     
 internetHeaders!.addHeader("Content-Type", "text/html");
@@ -238,17 +216,13 @@ mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByte
 
                                     }
                                 
-init(server, null as Authenticator, 
+init(server,  as Authenticatornull, 
                                                 [
                                                     new InternetAddress(from);
-        
-        
                                                 ], 
                                                 [
                                                     new InternetAddress(to);
-        
-        
-                                                ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
+                                                ],  as Array<InternetAddress?>null,  as Array<InternetAddress?>null, subject, mimeBodyParts);
     
 
                 //: 
@@ -260,8 +234,6 @@ init(server, null as Authenticator,
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
@@ -272,7 +244,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -297,8 +270,6 @@ this.properties.put(SMTP_HOST, server);
         try {
             
     var hostName: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -347,8 +318,6 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
                                 
 
     var session: Session = Session.getInstance(this.properties, authenticator)!;
-        
-        
 ;
     
 
@@ -361,8 +330,6 @@ this.bs= new ByteArrayOutputStream();
     
 
     var printStream: PrintStream = new PrintStream(this.bs);
-        
-        
 ;
     
 session.setDebugOut(printStream);
@@ -384,8 +351,6 @@ this.msg.setSubject(subject);
     
 
     var mimeMultipart: MimeMultipart = new MimeMultipart();
-        
-        
 ;
     
 
@@ -394,8 +359,6 @@ this.msg.setSubject(subject);
 
                         for (
     var i: number = 0;
-        
-        
 i < mimeBodyParts!.length; i++)
         {
 mimeMultipart!.addBodyPart(mimeBodyParts[i]!);
@@ -460,21 +423,17 @@ this.msg.setContent(mimeMultipart);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
         try {
             
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
-hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as String);
+hashMap!.put(EmailData.SERVER,  as Stringthis.properties.get(SMTP_HOST));
     
 
     var addresses: Address[] = this.msg.getFrom()!;
-        
-        
 ;
     
 
@@ -489,8 +448,6 @@ hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as String);
 
                         for (
     var index: number = 0;
-        
-        
 index < addresses.length; index++)
         {
 hashMap!.put(EmailData.FROM, addresses[index]!.toString());
@@ -514,8 +471,6 @@ addresses= this.msg.getRecipients(Message.RecipientType.TO);
 
                         for (
     var index: number = 0;
-        
-        
 index < addresses.length; index++)
         {
 hashMap!.put(EmailData.TO, addresses[index]!.toString());
@@ -539,8 +494,6 @@ addresses= this.msg.getRecipients(Message.RecipientType.CC);
 
                         for (
     var index: number = 0;
-        
-        
 index < addresses.length; index++)
         {
 hashMap!.put(EmailData.CC, addresses[index]!.toString());
@@ -564,8 +517,6 @@ addresses= this.msg.getRecipients(Message.RecipientType.BCC);
 
                         for (
     var index: number = 0;
-        
-        
 index < addresses.length; index++)
         {
 hashMap!.put(EmailData.BCC, addresses[index]!.toString());
@@ -578,9 +529,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 hashMap!.put(EmailData.SUBJECT, msg.getSubject());
     
 
-    var mimeMultipart: MimeMultipart = msg.getContent(); as MimeMultipart;
-        
-        
+    var mimeMultipart: MimeMultipart =  as MimeMultipartmsg.getContent();;
 ;
     
 
@@ -595,14 +544,10 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject());
 
                         for (
     var index: number = 0;
-        
-        
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent(); as String;
-        
-        
+    var content: string =  as StringmimeMultipart!.getBodyPart(index)!.getContent();;
 ;
     
 hashMap!.put(EmailData.CONTENT, content);
@@ -634,7 +579,8 @@ hashMap!.put(EmailData.CONTENT, content);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -646,8 +592,6 @@ hashMap!.put(EmailData.CONTENT, content);
 var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, EmailData.NAME, this.toHashMap())!;
-        
-        
 ;
     
 
@@ -665,7 +609,8 @@ var document = document
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 

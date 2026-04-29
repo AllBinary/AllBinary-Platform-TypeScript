@@ -66,8 +66,6 @@ export class NullGameCanvasRunnable
         
 
     public static readonly NULL_GAME_CANVAS_RUNNABLE: NullGameCanvasRunnable = new NullGameCanvasRunnable();
-        
-        
 
     public getTitle(): string{
 
@@ -126,7 +124,7 @@ var highScoreSubmitted = highScoreSubmitted
 
                 //@Throws(Error::class)
             
-    public setGameOver(){
+    public processGameOver(){
 }
 
 
@@ -147,7 +145,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): Hashtable{
 
 
 
@@ -159,7 +157,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public getLoadStateHashtable(): Hashtable<any, any>{
+    public getLoadStateHashtable(): Hashtable{
 
 
 
@@ -171,7 +169,7 @@ var cmdListener = cmdListener
 
                 //@Throws(Error::class)
             
-    public setLoadStateHashtable(hashtable: Hashtable<any, any>){
+    public setLoadStateHashtable(hashtable: Hashtable){
 var hashtable = hashtable
 }
 

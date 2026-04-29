@@ -49,8 +49,6 @@ export class MathData
         
 
     private static readonly instance: MathData = new MathData();
-        
-        
 
     public static getInstance(): MathData{
 
@@ -65,12 +63,8 @@ export class MathData
     public readonly EQUALS: string
 
     public readonly PLUS: string = "+";
-        
-        
 
     public readonly GREATER_THAN: string = ">";
-        
-        
 
     public readonly MINUS: string
 
@@ -82,8 +76,6 @@ private constructor (){
             super();
         
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 this.EQUALS= commonSeps!.EQUALS;

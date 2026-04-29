@@ -52,8 +52,6 @@ export class PlatformRecordIdUtil
         
 
     private static readonly instance: PlatformRecordIdUtil = new PlatformRecordIdUtil();
-        
-        
 
     public static getInstance(): PlatformRecordIdUtil{
 
@@ -66,8 +64,6 @@ export class PlatformRecordIdUtil
 
 
     private readonly PLATFORM_SHORT_NAME: string = "JSE";
-        
-        
 
     public getRecordId(abeClientInformation: AbeClientInformationInterface, baseRecordId: string): string{
     //var abeClientInformation = abeClientInformation

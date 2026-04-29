@@ -61,7 +61,7 @@ import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCache
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         
 
-    public static create(): TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory{
+    public static createFactory(): TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory{
 
 
 
@@ -71,7 +71,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
 }
 
 public constructor (name: string){
-            super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
+            super(name, new Hashtable(), new Hashtable(), new Hashtable());
                     var name = name
 
 
@@ -84,14 +84,14 @@ public constructor (name: string){
             
     public init(level: number){
 var level = level
-this.init(ImageCacheFactory.getInstance(), level);
+this.initImageCache(ImageCacheFactory.getInstance(), level);
     
 }
 
 
                 //@Throws(Error::class)
             
-    init(imageCache: ImageCache, level: number){
+    initImageCache(imageCache: ImageCache, level: number){
 var imageCache = imageCache
 var level = level
 
@@ -116,8 +116,6 @@ super.init(level);
 var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 

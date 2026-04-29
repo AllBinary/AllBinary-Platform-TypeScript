@@ -43,8 +43,6 @@ export class AbTagData
         
 
     public static readonly PARENT: string = "TAG_PARENT";
-        
-        
 private constructor (){
 
             super();

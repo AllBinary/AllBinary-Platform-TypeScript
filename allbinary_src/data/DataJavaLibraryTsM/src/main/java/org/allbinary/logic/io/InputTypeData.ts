@@ -43,8 +43,6 @@ export class InputTypeData
         
 
     private static readonly instance: InputTypeData = new InputTypeData();
-        
-        
 
     public static getInstance(): InputTypeData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "INPUT_TYPE_NAME";
-        
-        
 
 }
                 

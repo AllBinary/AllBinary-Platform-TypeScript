@@ -43,8 +43,6 @@
         
 
     private static readonly instance: TimeStampUtil = new TimeStampUtil();
-        
-        
 
     /*actual*/ public static getInstance(): TimeStampUtil{
 

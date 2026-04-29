@@ -52,8 +52,6 @@ export class TrackingEvent extends AllBinaryEventObject {
         
 
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 public constructor (allBinaryLayerInterface: any = {}){
             super(allBinaryLayerInterface);
                     var allBinaryLayerInterface = allBinaryLayerInterface
@@ -65,7 +63,7 @@ public constructor (allBinaryLayerInterface: any = {}){
                         if(allBinaryLayerInterface != TrackingEventHandler.getInstance())
                         
                                     {
-                                    this.setLayerInterface(allBinaryLayerInterface as AllBinaryLayer);
+                                    this.setLayerInterface( as AllBinaryLayerallBinaryLayerInterface);
     
 
                                     }
@@ -107,8 +105,6 @@ this.layerInterface= layerInterface;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TrackingEvent: \n");

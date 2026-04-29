@@ -62,8 +62,6 @@ export class MetaView extends HttpStoreComponentView implements DomNodeInterface
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     metasValidation: MetasValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -79,7 +77,7 @@ this.metasValidation= new MetasValidation(this.getWeblisketSession()!.getStoreNa
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.metasValidation as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.metasValidation);
     
 }
 
@@ -112,7 +110,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -147,7 +146,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

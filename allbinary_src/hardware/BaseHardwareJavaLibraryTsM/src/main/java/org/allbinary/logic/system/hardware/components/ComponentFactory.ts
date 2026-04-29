@@ -40,14 +40,14 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Component } from "./Component.js";
+
 export class ComponentFactory
             extends Object
          {
         
 
     private static readonly instance: ComponentFactory = new ComponentFactory();
-        
-        
 
     public static getInstance(): ComponentFactory{
 
@@ -60,56 +60,30 @@ export class ComponentFactory
 
 
     public readonly VGA: Component = new Component("VGA");
-        
-        
 
     public readonly IDE: Component = new Component("IDE");
-        
-        
 
     public readonly SCSI: Component = new Component("SCSI");
-        
-        
 
     public readonly BRIDGE: Component = new Component("bridge");
-        
-        
 
     public readonly ETHERNET: Component = new Component("Ethernet");
-        
-        
 
     public readonly USB: Component = new Component("USB");
-        
-        
 
     public readonly MULTIMEDIA: Component = new Component("Multimedia");
-        
-        
 
     public readonly PCI: Component = new Component("PCI");
-        
-        
 
     public readonly RAID: Component = new Component("RAID");
-        
-        
 
     public readonly SMBUS: Component = new Component("SMBus");
-        
-        
 
     public readonly PIC: Component = new Component("PIC");
-        
-        
 
     public readonly Class: Component = new Component("Class");
-        
-        
 
     public readonly UNKNOWN: Component = new Component(CommonStrings.getInstance()!.UNKNOWN);
-        
-        
 
 }
                 

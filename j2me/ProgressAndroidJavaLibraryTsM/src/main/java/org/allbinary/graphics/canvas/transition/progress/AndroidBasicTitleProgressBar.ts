@@ -126,12 +126,10 @@ export class AndroidBasicTitleProgressBar extends ProgressCanvas implements Disp
         
 
     public static readonly RESOURCE: string = "ProgressImage";
-        
-        
 
     private background: number= 0
 
-    public static setBackground(background: number){
+    public static setBackgroundResource(background: number){
 var background = background
 AndroidBasicTitleProgressBar.background= background;
     
@@ -139,40 +137,22 @@ AndroidBasicTitleProgressBar.background= background;
 
 
     private showTitleProgressBarRunnable: ARunnable = NullRunnable.getInstance()!;
-        
-        
 
     private dismissTitleProgressBarRunnable: ARunnable = NullRunnable.getInstance()!;
-        
-        
 
     private titleProgressDialogPortionSetProgressRunnable: ARunnable = NullRunnable.getInstance()!;
-        
-        
 
     private titleProgressDialogSetProgressRunnable: ARunnable = NullRunnable.getInstance()!;
-        
-        
 
     private midletActivity: Activity = AndroidUtil.NULL_ACTIVITY;
-        
-        
 
     private portion: number = 0;
-        
-        
 
     private readonly IMAGE: Image[] = new Array(4);
-        
-        
 
     private image: Image = NullCanvas.NULL_IMAGE;
-        
-        
 
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
                     var title = title
@@ -189,8 +169,6 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
 
     var size: number = this.IMAGE.length
                 ;
-        
-        
 ;
     
 
@@ -199,8 +177,6 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.IMAGE[index]= NullCanvas.NULL_IMAGE;
@@ -217,11 +193,11 @@ this.IMAGE[index]= NullCanvas.NULL_IMAGE;
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
-                                    ResourceUtil.getInstance()!.addResource(RESOURCE, new Integer(AndroidBasicTitleProgressBar.background));
+                                    ResourceUtil.getInstance()!.addResource(RESOURCE, AndroidBasicTitleProgressBar.background);
     
 GameFeatureImageCacheFactory.init();
     
-this.image= ImageCacheFactory.getInstance()!.get(RESOURCE);
+this.image= ImageCacheFactory.getInstance()!.getWithKey(RESOURCE);
     
 
                                     }
@@ -237,7 +213,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-    public init(activity: Activity){
+    public initActivity(activity: Activity){
 var activity = activity
 
         try {
@@ -291,8 +267,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                                     {
                                     
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -378,24 +352,18 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
         try {
             
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var lastWidth: number = displayInfo!.getLastWidth()!;
-        
-        
 ;
     
 
     var lastHeight: number = displayInfo!.getLastHeight()!;
-        
-        
 ;
     
 
-                        if(displayInfo!.isPortrait(lastWidth, lastHeight))
+                        if(displayInfo!.isPortraitWH(lastWidth, lastHeight))
                         
                                     {
                                     this.setImages(0, lastWidth, lastHeight);
@@ -551,14 +519,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
 }
 
 
-    public addPortion(value: number, text: string){
+    public addNormalPortion(value: number, text: string){
 var value = value
 var text = text
 
         try {
             this.portion= value;
     
-super.addPortion(value, text);
+super.addNormalPortion(value, text);
     
 this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRunnable);
     
@@ -604,8 +572,6 @@ var lastWidth = lastWidth
 var lastHeight = lastHeight
 
     var image: Image = this.image;
-        
-        
 ;
     
 
@@ -620,7 +586,7 @@ var lastHeight = lastHeight
                         if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -20, image.getHeight(), false);
+                                    this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage2(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -20, image.getHeight(), false);
     
 
                                     }
@@ -631,15 +597,13 @@ var lastHeight = lastHeight
                         else {
                             
     var nextIndex: number = index +1;
-        
-        
 ;
     
 
                         if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -28, image.getHeight(), false);
+                                    this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage2(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -28, image.getHeight(), false);
     
 
                                     }
@@ -659,19 +623,15 @@ var lastHeight = lastHeight
 var graphics = graphics
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
-this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
+this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(RESOURCE);
     
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-        
-        
 ;
     
 
     var size: number = this.IMAGE.length
                 ;
-        
-        
 ;
     
 
@@ -680,8 +640,6 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -708,19 +666,15 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.UPDATE);
     
 this.initOpenGL(graphics);
     
-this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
+this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(RESOURCE);
     
 
     var preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-        
-        
 ;
     
 
     var size: number = this.IMAGE.length
                 ;
-        
-        
 ;
     
 
@@ -729,8 +683,6 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.get(RESOURCE);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -753,8 +705,6 @@ index < size; index++)
 var index = index
 
     var image: Image = NullCanvas.NULL_IMAGE;
-        
-        
 ;
     
 
@@ -785,7 +735,7 @@ var index = index
 var graphics = graphics
 
         try {
-            this.animation.paint(graphics, 0, 20);
+            this.animation.paintXY(graphics, 0, 20);
     
 super.paint2(graphics);
     

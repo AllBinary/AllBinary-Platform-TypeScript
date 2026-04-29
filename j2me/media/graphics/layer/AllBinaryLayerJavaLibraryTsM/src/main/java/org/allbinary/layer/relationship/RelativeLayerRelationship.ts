@@ -59,8 +59,6 @@ export class RelativeLayerRelationship extends RelativeRelationship {
         
 
     private layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList){
             super(point, typesAllowedList);
                         //var layer = layer

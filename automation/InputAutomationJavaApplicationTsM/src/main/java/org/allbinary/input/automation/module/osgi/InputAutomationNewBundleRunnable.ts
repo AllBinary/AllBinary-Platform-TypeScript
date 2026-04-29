@@ -109,28 +109,16 @@ export class InputAutomationNewBundleRunnable
         
 
     private static readonly FILE: string = "file:";
-        
-        
 
     private static readonly JAR_DIR_PROP: string = "org.knopflerfish.gosg.jars";
-        
-        
 
     private static readonly INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH: string = "ia/auto";
-        
-        
 
     private static readonly MODULES_START_LEVEL: number = 8;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly inputAutomationBundleActivator: InputAutomationBundleActivator
 
@@ -181,14 +169,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
     
 
     var list: BasicArrayList = this.findNewModules()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -201,11 +185,9 @@ this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-bundle= this.install(list.get(index) as URL);
+bundle= this.install( as URLlist.get(index));
     
 
                         if(bundle != 
@@ -225,27 +207,21 @@ bundle= this.install(list.get(index) as URL);
 
                 //@Throws(Error::class)
             
-    getAllJarSymbolicNameHashMap(): HashMap<any, any>{
+    getAllJarSymbolicNameHashMap(): HashMap{
 this.logUtil!.putF(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap");
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var jarFileBasicArrayList: BasicArrayList = this.getJarModuleFileBasicArrayList()!;
-        
-        
 ;
     
 this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJarSymbolicNameHashMap");
     
 
     var size: number = jarFileBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -258,11 +234,9 @@ this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJar
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-file= jarFileBasicArrayList!.get(index); as File;
+file=  as FilejarFileBasicArrayList!.get(index);;
     
 
                         if(!file.isDirectory();)
@@ -270,20 +244,14 @@ file= jarFileBasicArrayList!.get(index); as File;
                                     {
                                     
     var fileInputStream: FileInputStream = new FileInputStream(file);
-        
-        
 ;
     
 
     var jarInputStream: JarInputStream = new JarInputStream(fileInputStream);
-        
-        
 ;
     
 
     var manifest: Manifest = jarInputStream!.getManifest()!;
-        
-        
 ;
     
 
@@ -298,8 +266,6 @@ file= jarFileBasicArrayList!.get(index); as File;
                         else {
                             
     var symbolicName: string = manifest.getMainAttributes()!.getValue(Constants.BUNDLE_SYMBOLICNAME)!;
-        
-        
 ;
     
 
@@ -329,8 +295,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
     
 
     var baseJarPath: string = System.getProperty(JAR_DIR_PROP)!;
-        
-        
 ;
     
 
@@ -344,22 +308,16 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
                                 
 
     var jarFileFilter: FileFilter = BasicFileFilterUtil.getInstance(".jar")!;
-        
-        
 ;
     
 
     var path: string = baseJarPath +INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH;
-        
-        
 ;
     
 this.logUtil!.putF("Path: " +path, this, "getJarModuleFileBasicArrayList");
     
 
     var file: File = new File(path);
-        
-        
 ;
     
 this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDirectory(), this, "getJarModuleFileBasicArrayList");
@@ -380,20 +338,14 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicName
     
 
     var vector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
-        
-        
 ;
     
 
     var bundleArray: Bundle[] = bundleContext!.getBundles()!;
-        
-        
 ;
     
 
@@ -410,14 +362,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicName
 
                         for (
     var index: number = 0;
-        
-        
 index < bundleArray!.length; index++)
         {
 
     var bundle: Bundle = bundleArray[index]!;
-        
-        
 ;
     
 vector.add(bundle.getSymbolicName());
@@ -444,14 +392,10 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
     
 
     var list: BasicArrayList = this.getInstalledJarSymbolicNameBasicArrayList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -464,11 +408,9 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-nextSymbolicName= list.get(index); as String;
+nextSymbolicName=  as Stringlist.get(index);;
     
 
                         if(nextSymbolicName!.compareTo(symbolicName) == 0)
@@ -501,35 +443,25 @@ this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
     
 
     var vector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.getAllJarSymbolicNameHashMap()!;
-        
-        
+    var hashMap: HashMap = this.getAllJarSymbolicNameHashMap()!;
 ;
     
 this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
     
 
     var set: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var symbolicNameArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = symbolicNameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -538,14 +470,10 @@ this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var symbolicName: string = symbolicNameArray[index]! as String;
-        
-        
+    var symbolicName: string =  as StringsymbolicNameArray[index]!;
 ;
     
 
@@ -576,8 +504,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +url, this, "install");
     
 
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
-        
-        
 ;
     
 
@@ -598,16 +524,14 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
 
         while(this.isRunning())
         {
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 this.updateModules();
     

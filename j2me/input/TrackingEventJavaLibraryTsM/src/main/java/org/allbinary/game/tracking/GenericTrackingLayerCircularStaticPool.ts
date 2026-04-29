@@ -44,8 +44,6 @@ export class GenericTrackingLayerCircularStaticPool extends AllBinaryLayerCircul
         
 
     private SINGLETON: GenericTrackingLayerCircularStaticPool = new GenericTrackingLayerCircularStaticPool();
-        
-        
 
     public static getInstance(): GenericTrackingLayerCircularStaticPool{
 

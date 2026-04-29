@@ -49,8 +49,6 @@ export class AlphaProcessor extends AlphaBaseProcessor {
         
 
     private static readonly instance: AlphaProcessor = new AlphaProcessor();
-        
-        
 
     public static getInstance(): AlphaProcessor{
 

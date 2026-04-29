@@ -43,8 +43,6 @@ export class LogoData
         
 
     private static readonly instance: LogoData = new LogoData();
-        
-        
 
     public static getInstance(): LogoData{
 
@@ -62,20 +60,12 @@ private constructor (){
 
 
     public readonly NAME: string = "LOGO_NAME";
-        
-        
 
     public readonly IMAGEPATH: string = "LOGO_IMAGE_PATH";
-        
-        
 
     public readonly IMAGEFILENAME: string = "LOGO_IMAGE_FILE_NAME";
-        
-        
 
     public readonly IMAGE: string = "LOGO_IMAGE";
-        
-        
 
 }
                 

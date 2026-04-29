@@ -54,7 +54,7 @@ export class RectangleCollisionUtil
 var rectangle = rectangle
 var point = point
 
-                        if(point.getX() > (rectangle.x +rectangle.getWidth()) || point.getY() > (rectangle.y +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
+                        if(point.getX() > (Math.roundrectangle.x +rectangle.getWidth()) || point.getY() > (Math.roundrectangle.y +rectangle.getHeight()) || point.getX() < rectangle.x || point.getY() < rectangle.y)
                         
                                     {
                                     

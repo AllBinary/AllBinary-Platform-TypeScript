@@ -58,8 +58,6 @@ export class BooleanFileVisitor
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private filterStringBasicArrayList: BasicArrayList
 public constructor (filterStringBasicArrayList: BasicArrayList){
@@ -79,7 +77,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit(anyType as AbFile); as Object;
+                        return  as Objectthis.visit( as AbFileanyType);;
     
 }
 
@@ -88,14 +86,10 @@ var anyType = anyType
 var file = file
 
     var list: BasicArrayList = this.getFilterStringBasicArrayList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -108,11 +102,9 @@ var file = file
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-nextFileFilterString= list.get(index); as String;
+nextFileFilterString=  as Stringlist.get(index);;
     
 
                         if(this.visit(file, nextFileFilterString))

@@ -48,8 +48,6 @@ export class InputAutomationModuleConfigurationsSingletonFactory
         
 
     private inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(InputAutomationConfigurationFactory.getInstance()!.getInputAutomationModuleConfigurationList());
-        
-        
 
     public static getInstance(): InputAutomationModuleConfigurations{
 

@@ -49,12 +49,8 @@ export class GameInputMapping
         
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private gameKey: GameKey = GameKey.NULL_GAME_KEY;
-        
-        
 public constructor (name: string, gameKey: GameKey){
 
             super();

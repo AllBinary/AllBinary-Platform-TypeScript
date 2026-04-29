@@ -109,8 +109,6 @@ export class TaxFactory
         
 
     private static readonly instance: TaxFactory = new TaxFactory();
-        
-        
 
     public static getInstance(): TaxFactory{
 
@@ -123,16 +121,10 @@ export class TaxFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly TAXATIONFILENAME: string = "taxationMethod.xml";
-        
-        
 private constructor (){
 
             super();
@@ -146,8 +138,6 @@ private constructor (){
     //var storeFrontInterface = storeFrontInterface
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
@@ -168,33 +158,23 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString(), TAXATIONFILENAME);
-        
-        
 ;
     
 
     var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;
-        
-        
 ;
     
 
     var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(data)!;
-        
-        
 ;
     
 
     var taxNameNodeList: NodeList = document.getElementsByTagName(TaxData.NAME)!;
-        
-        
 ;
     
 
@@ -203,20 +183,14 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                         for (
     var index: number = 0;
-        
-        
 index < taxNameNodeList!.getLength(); index++)
         {
 
     var node: Node = taxNameNodeList!.item(index)!;
-        
-        
 ;
     
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
@@ -227,8 +201,6 @@ index < taxNameNodeList!.getLength(); index++)
                                     {
                                     
     var classNameNode: Node = DomSearchHelper.getNode(DynamicObjectData.NAME, nodeList)!;
-        
-        
 ;
     
 
@@ -239,15 +211,13 @@ index < taxNameNodeList!.getLength(); index++)
                                     {
                                     
     var className: string = DomNodeHelper.getTextNodeValue(classNameNode)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, className); as TaxModuleInterface;
+                        return  as TaxModuleInterfaceAbeFactory.getInstance()!.getInstance(abeClientInformation, className);;
     
 
                                     }
@@ -287,7 +257,7 @@ index < taxNameNodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new SimpleStateTaxModule() as TaxModuleInterface;
+                        return  as TaxModuleInterfacenew SimpleStateTaxModule();
     
 }
 

@@ -43,8 +43,6 @@ export class NullInitUpdatePaintable extends InitUpdatePaintable {
         
 
     private static readonly SINGLETON: NullInitUpdatePaintable = new NullInitUpdatePaintable();
-        
-        
 
     public static getInstance(): InitUpdatePaintable{
 

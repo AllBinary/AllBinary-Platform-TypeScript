@@ -53,7 +53,7 @@ import { BasicWorkFlow } from "./BasicWorkFlow.js";
 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -71,7 +71,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(StoreFrontData.getInstance()!.NAME); as String;
+                        return  as Stringthis.getPropertiesHashMap()!.get(StoreFrontData.getInstance()!.NAME);;
     
 }
 

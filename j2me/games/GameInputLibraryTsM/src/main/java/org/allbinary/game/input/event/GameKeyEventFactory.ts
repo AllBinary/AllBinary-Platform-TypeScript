@@ -60,8 +60,6 @@ export class GameKeyEventFactory
         
 
     private static readonly instance: GameKeyEventFactory = new GameKeyEventFactory();
-        
-        
 
     public static getInstance(): GameKeyEventFactory{
 
@@ -74,25 +72,15 @@ export class GameKeyEventFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly TOUCH_BUTTON_SOURCE_ID: number = 2;
-        
-        
 
     public readonly MOTION_GESTURE_SOURCE_ID: number = 3;
-        
-        
 
     private readonly MAX_SOURCES: number = 4;
-        
-        
 
     private ARRAY: GameKeyEvent[][] = Array(MAX_SOURCES) { arrayOfNulls<GameKeyEvent?>(InputFactory.getInstance()!.MAX) }
                                                             ;
-        
-        
 private constructor (){
 
             super();
@@ -102,14 +90,10 @@ private constructor (){
     public init(){
 
     var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 ;
     
 
     var size: number = InputFactory.getInstance()!.MAX;
-        
-        
 ;
     
 
@@ -118,8 +102,6 @@ private constructor (){
 
                         for (
     var index: number = this.MAX_SOURCES;
-        
-        
 --index >= 0; )
         {
 
@@ -128,11 +110,9 @@ private constructor (){
 
                         for (
     var index2: number = size;
-        
-        
 --index2 >= 0; )
         {
-this.ARRAY[index]![index2]= GameKeyEvent.create(nullUtil!.NULL_OBJECT, index, index2);
+this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, index, index2);
     
 }
 
@@ -143,13 +123,11 @@ this.ARRAY[index]![index2]= GameKeyEvent.create(nullUtil!.NULL_OBJECT, index, in
 
                 //@Throws(Error::class)
             
-    public getInstance(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
-var anyType = anyType
-var key = key
+    public getInstanceForKey(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
+    //var anyType = anyType
+    //var key = key
 
     var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;
-        
-        
 ;
     
 
@@ -163,13 +141,11 @@ var key = key
 
                 //@Throws(Error::class)
             
-    public getInstance(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
-var anyType = anyType
-var input = input
+    public getInstanceForInput(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
+    //var anyType = anyType
+    //var input = input
 
     var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;
-        
-        
 ;
     
 

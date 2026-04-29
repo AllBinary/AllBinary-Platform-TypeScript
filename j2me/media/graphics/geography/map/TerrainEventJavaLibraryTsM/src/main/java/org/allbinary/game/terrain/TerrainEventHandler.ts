@@ -66,12 +66,10 @@ import { TerrainEventListener } from "./TerrainEventListener.js";
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
-        
-        
+    private hashtable: Hashtable = NullUtil.getInstance()!.NULL_TABLE;
 
     public static init(){
-TerrainEventHandler.hashtable= new Hashtable<any, any>();
+TerrainEventHandler.hashtable= new Hashtable();
     
 }
 
@@ -80,8 +78,6 @@ TerrainEventHandler.hashtable= new Hashtable<any, any>();
     //var anyType = anyType
 
     var eventHandlerCanBeNull: any? = TerrainEventHandler.hashtable.get(anyType as Object);
-        
-        
 ;
     
 
@@ -101,14 +97,12 @@ TerrainEventHandler.hashtable.put(anyType, eventHandlerCanBeNull);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventHandlerCanBeNull as TerrainEventHandler;
+                        return  as TerrainEventHandlereventHandlerCanBeNull;
     
 }
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -156,19 +150,15 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var terrainEventListener: TerrainEventListener = this.list.get(index); as TerrainEventListener;
-        
-        
+    var terrainEventListener: TerrainEventListener =  as TerrainEventListenerthis.list.get(index);;
 ;
     
-terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);
+terrainEventListener!.onTerrainEvent( as TerrainEventeventObject);
     
 
                 //: 
@@ -191,12 +181,10 @@ super.fireEvent(eventObject);
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;
-        
-        
+    var terrainEventListenerInterface: TerrainEventListenerInterface =  as TerrainEventListenerInterfaceeventListenerInterface;
 ;
     
-terrainEventListenerInterface!.onTerrainEvent(eventObject as TerrainEvent);
+terrainEventListenerInterface!.onTerrainEvent( as TerrainEventeventObject);
     
 }
 

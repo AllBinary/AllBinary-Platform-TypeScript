@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RemoteHighScoresSubmissionProcessor } from "./RemoteHighScoresSubmissionProcessor.js";
+
 import { RemoteHighScoresSubmissionProcessorInterface } from "./RemoteHighScoresSubmissionProcessorInterface.js";
 
 export class RemoteHighScoresSubmissionProcessorFactory
@@ -45,8 +47,6 @@ export class RemoteHighScoresSubmissionProcessorFactory
         
 
     private static readonly SINGLETON: RemoteHighScoresSubmissionProcessorInterface = new RemoteHighScoresSubmissionProcessor();
-        
-        
 
     public static getInstance(): RemoteHighScoresSubmissionProcessorInterface{
 

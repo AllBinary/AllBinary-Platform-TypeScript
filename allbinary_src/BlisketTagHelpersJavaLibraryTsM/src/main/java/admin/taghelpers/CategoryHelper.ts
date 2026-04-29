@@ -61,11 +61,9 @@ export class CategoryHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -80,8 +78,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = CategoryEntityFactory.getInstance()!.getCategoryEntityInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -105,8 +101,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to drop Category table";
-        
-        
 ;
     
 
@@ -134,8 +128,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = CategoryEntityFactory.getInstance()!.getCategoryEntityInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -159,8 +151,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to create new Category table";
-        
-        
 ;
     
 
@@ -188,14 +178,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(CategoryEntityFactory.getInstance()!.getCategoryEntityInstance(), this.portion)!;
-        
-        
 ;
     
 
@@ -219,8 +205,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -248,14 +232,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(CategoryEntityFactory.getInstance()!.getCategoryEntityInstance())!;
-        
-        
 ;
     
 
@@ -279,8 +259,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

@@ -70,18 +70,16 @@ import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCon
 
 import { TimeIntervalActionScriptConditionInterface } from "./TimeIntervalActionScriptConditionInterface.js";
 
+import { TimeIntervalActionScriptConditionJPanel } from "./TimeIntervalActionScriptConditionJPanel.js";
+
 import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
 
 export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {
         
 
     private static readonly NAME: string = "Time Interval";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private timeIntervalActionScriptConditionJPanel: TimeIntervalActionScriptConditionJPanel
 
@@ -95,8 +93,6 @@ public constructor (node: Node){
                     
 
     var actionNode: Node = DomSearchHelper.getNode(TimeIntervalActionScriptConditionData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -107,8 +103,6 @@ public constructor (node: Node){
                                     {
                                     
     var nodeList: NodeList = actionNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -117,14 +111,10 @@ public constructor (node: Node){
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var childNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -133,8 +123,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var interval: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))));
@@ -146,7 +134,8 @@ this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw new Error("Time Interval Action Script Condition Unknown Node")
+                            throw new Error("Time Interval Action Script Condition Unknown Node");
+                    
 
                         }
                             
@@ -159,7 +148,8 @@ this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw new Error("Time Interval Action Script Condition Node Null")
+                            throw new Error("Time Interval Action Script Condition Node Null");
+                    
 
                         }
                             
@@ -192,11 +182,9 @@ this.timeIntervalActionScriptConditionJPanel!.getTimeIntervalActionJDialog()!.se
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(TimeIntervalActionScriptConditionData.TIME, Integer.toString(this.timeHelper!.delay));
@@ -218,8 +206,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, TimeIntervalActionScriptConditionData.NAME, this.toHashMap()));
@@ -258,19 +244,17 @@ this.timeHelper= timeHelper;
 
                 //@Throws(Error::class)
             
-    public shouldProcess(frame: Long): boolean{
+    public shouldProcess(frame: number): boolean{
 var frame = frame
 
     var timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;
-        
-        
 ;
     
 
-                        if(timeHelper!.isTime())
+                        if(timeHelper!.isTimeTNT())
                         
                                     {
-                                    timeHelper!.setStartTime();
+                                    timeHelper!.setStartTimeTNT();
     
 
 

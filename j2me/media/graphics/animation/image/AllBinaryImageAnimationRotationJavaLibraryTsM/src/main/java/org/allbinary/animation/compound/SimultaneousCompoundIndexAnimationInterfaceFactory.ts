@@ -52,6 +52,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SimultaneousCompoundIndexAnimation } from "./SimultaneousCompoundIndexAnimation.js";
+
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {
@@ -79,14 +81,10 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
     var animationInterfaceArray: IndexedAnimation[] = new Array(size);
-        
-        
 ;
     
 
@@ -95,11 +93,9 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId); as IndexedAnimation;
+animationInterfaceArray[index]=  as IndexedAnimationthis.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId);;
     
 }
 
@@ -107,12 +103,12 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(animationInterfaceArray);;
+                        return this.getOrCreate(animationInterfaceArray);;
     
 }
 
 
-    getInstance(animationInterfaceArray: IndexedAnimation[]): Animation{
+    getOrCreate(animationInterfaceArray: IndexedAnimation[]): Animation{
     //var animationInterfaceArray = animationInterfaceArray
 
 

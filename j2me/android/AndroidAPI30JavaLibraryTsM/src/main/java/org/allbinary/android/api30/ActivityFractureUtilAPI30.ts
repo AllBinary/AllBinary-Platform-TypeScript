@@ -59,8 +59,6 @@ export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
         
 
     private static readonly instance: ActivityFractureUtilAPI30 = new ActivityFractureUtilAPI30();
-        
-        
 
     public static getInstance(): ActivityFractureUtilAPI30{
 
@@ -76,14 +74,10 @@ export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
     //var activity = activity
 
     var window: Window = activity.getWindow()!;
-        
-        
 ;
     
 
     var windowInsetsController: WindowInsetsControllerCompat = WindowCompat.getInsetsController(window, window.getDecorView())!;
-        
-        
 ;
     
 windowInsetsController!.hide(WindowInsetsCompat.Type.systemBars());

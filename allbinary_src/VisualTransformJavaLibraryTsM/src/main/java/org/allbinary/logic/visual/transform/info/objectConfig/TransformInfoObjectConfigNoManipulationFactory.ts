@@ -65,8 +65,6 @@ export class TransformInfoObjectConfigNoManipulationFactory
         
 
     private static readonly instance: TransformInfoObjectConfigNoManipulationFactory = new TransformInfoObjectConfigNoManipulationFactory();
-        
-        
 
     public static getInstance(): TransformInfoObjectConfigNoManipulationFactory{
 
@@ -79,8 +77,6 @@ export class TransformInfoObjectConfigNoManipulationFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -96,15 +92,11 @@ var objectConfigFileAbPath = objectConfigFileAbPath
         try {
             
     var transformInfoObjectConfigData: TransformInfoObjectConfigData = TransformInfoObjectConfigData.getInstance()!;
-        
-        
 ;
     
 
     var data: string = new CryptFileReader(transformInfoObjectConfigData!.UNCRYPTED_EXTENSION, transformInfoObjectConfigData!.getInstance()!.ENCRYPTED_EXTENSION).
                             get(objectConfigFileAbPath)!;
-        
-        
 ;
     
 
@@ -119,8 +111,6 @@ var objectConfigFileAbPath = objectConfigFileAbPath
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -135,7 +125,8 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

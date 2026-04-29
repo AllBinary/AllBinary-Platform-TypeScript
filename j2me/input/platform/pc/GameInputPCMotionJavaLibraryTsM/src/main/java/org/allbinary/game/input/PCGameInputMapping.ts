@@ -33,9 +33,6 @@ import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motio
 import { TrackballMotionGestureFactory } from "../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js";
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
 
     
@@ -93,7 +90,7 @@ super.init(abeClientInformation);
                         if(this.getTotalMapped() == 0 || this.isDefaultNew())
                         
                                     {
-                                    this.getInputMapping()!.add(this.getDefault());
+                                    this.getInputMapping()!.addMapping(this.getDefault());
     
 this.save(abeClientInformation);
     

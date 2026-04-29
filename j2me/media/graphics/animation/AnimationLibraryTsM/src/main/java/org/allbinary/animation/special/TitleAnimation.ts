@@ -71,7 +71,7 @@ import { SpecialAnimation } from "./SpecialAnimation.js";
 export class TitleAnimation extends SpecialAnimation {
         
 
-    public static create(animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number): TitleAnimation{
+    public static createAnimation(animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number): TitleAnimation{
     //var animationInterfaceArray = animationInterfaceArray
     //var basicColorArray = basicColorArray
     //var dxArray = dxArray
@@ -88,8 +88,6 @@ export class TitleAnimation extends SpecialAnimation {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public deltaX: number= 0.0f
 
@@ -114,8 +112,6 @@ export class TitleAnimation extends SpecialAnimation {
     private lastFrameStartTime: number
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var animationInterfaceArray = animationInterfaceArray
@@ -129,7 +125,7 @@ public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray
 
                             //For kotlin this is before the body of the constructor.
                     
-this.lastFrameStartTime= System.currentTimeMillis();
+this.lastFrameStartTime= Date.now();
     
 this.animationInterfaceArray= animationInterfaceArray;
     
@@ -152,21 +148,15 @@ this.reset();
 
     public nextFrame(){
 
-    var currentTime: number = System.currentTimeMillis()!;
-        
-        
+    var currentTime: number = Date.now()!;
 ;
     
 
     var totalTimeElapsed: number = currentTime -this.lastFrameStartTime;
-        
-        
 ;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
-        
-        
+    var indexedAnimationBehavior: IndexedAnimationBehavior =  as IndexedAnimationBehaviorthis.getAnimationBehavior();;
 ;
     
 
@@ -194,9 +184,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
-        
-        
+    var indexedAnimationBehavior: IndexedAnimationBehavior =  as IndexedAnimationBehaviorthis.getAnimationBehavior();;
 ;
     
 
@@ -268,8 +256,6 @@ this.lastFrameStartTime= currentTime;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.setFrame(frame);
@@ -289,9 +275,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior(); as IndexedAnimationBehavior);
-        
-        
+    var indexedAnimationBehavior: IndexedAnimationBehavior = ( as IndexedAnimationBehaviorthis.getAnimationBehavior(););
 ;
     
 indexedAnimationBehavior!.reset();
@@ -306,8 +290,6 @@ indexedAnimationBehavior!.reset();
 
                         for (
     var index: number = 0;
-        
-        
 index < this.sizeP; index++)
         {
 this.animationInterfaceArray[index]!.previousFrame();
@@ -317,30 +299,26 @@ this.animationInterfaceArray[index]!.previousFrame();
 }
 
 
-    public paint(graphics: Graphics, frame: number, x: number, y: number){
+    public paintFrameXY(graphics: Graphics, frame: number, x: number, y: number){
     //var graphics = graphics
     //var frame = frame
     //var x = x
     //var y = y
 this.setFrame(frame);
     
-this.paint(graphics, x, y);
+this.paintXY(graphics, x, y);
     
 }
 
 
     readonly CLEAR_COLOR: BasicColor = BasicColorFactory.getInstance()!.CLEAR_COLOR;
-        
-        
 
-    public paint(graphics: Graphics, ax: number, ay: number){
+    public paintXY(graphics: Graphics, ax: number, ay: number){
     //var graphics = graphics
     //var ax = ax
     //var ay = ay
 
     var x: number = 0;
-        
-        
 ;
     
 
@@ -366,8 +344,6 @@ this.paint(graphics, x, y);
 
                         for (
     var index: number = 0;
-        
-        
 index < this.sizeP; index++)
         {
 deltaX= this.dxArray[index] +x;
@@ -383,7 +359,7 @@ deltaY= this.dyArray[index] +this.y;
 
                                     }
                                 
-this.animationInterfaceArray[index]!.paint(graphics, deltaX, deltaY);
+this.animationInterfaceArray[index]!.paintXY(graphics, deltaX, deltaY);
     
 }
 

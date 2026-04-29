@@ -53,8 +53,6 @@ export class BuildingEventHandler extends BasicEventHandler {
         
 
     private eventHandler: BuildingEventHandler = new BuildingEventHandler();
-        
-        
 
     public static getInstance(): BuildingEventHandler{
 
@@ -77,12 +75,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);
-        
-        
+    var buildingEventListenerInterface: BuildingEventListenerInterface = ( as BuildingEventListenerInterfaceeventListenerInterface);
 ;
     
-buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
+buildingEventListenerInterface!.onBuildingEvent( as RTSLayerEventeventObject);
     
 }
 

@@ -50,7 +50,7 @@ export interface UserFactoryInterface extends Serializable {
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<any, any>): UserInterface
+    public getInstance(hashMap: HashMap): UserInterface
 
 }
                 

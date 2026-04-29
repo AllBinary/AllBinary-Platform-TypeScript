@@ -47,8 +47,6 @@ export class AngleIncrementInfoFactory
         
 
     private static readonly instance: AngleIncrementInfoFactory = new AngleIncrementInfoFactory();
-        
-        
 
     public static getInstance(): AngleIncrementInfoFactory{
 
@@ -60,22 +58,16 @@ export class AngleIncrementInfoFactory
 }
 
 
-    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(AngleFactory.getInstance()!.TOTAL_ANGLE);
-        
-        
+    private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE);
 
-    public getInstance(angleIncrement: number): AngleIncrementInfo{
+    public getAt(angleIncrement: number): AngleIncrementInfo{
 var angleIncrement = angleIncrement
 
-    var halfAngleIncrement: number = (angleIncrement>>1);
-        
-        
+    var halfAngleIncrement: number = (Math.roundangleIncrement>>1);
 ;
     
 
     var angleIncrementInfoCanBeNull: AngleIncrementInfo? = this.angleIncrementInfo[halfAngleIncrement];
-        
-        
 ;
     
 

@@ -52,8 +52,6 @@ export class CanvasUtil
 var key = key
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 

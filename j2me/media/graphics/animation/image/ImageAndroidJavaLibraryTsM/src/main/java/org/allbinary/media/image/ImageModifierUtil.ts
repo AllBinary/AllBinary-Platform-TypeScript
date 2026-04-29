@@ -68,8 +68,6 @@ export class ImageModifierUtil
 
 
     public readonly paint: Paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        
-        
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
     //var unusedOriginalImage = unusedOriginalImage

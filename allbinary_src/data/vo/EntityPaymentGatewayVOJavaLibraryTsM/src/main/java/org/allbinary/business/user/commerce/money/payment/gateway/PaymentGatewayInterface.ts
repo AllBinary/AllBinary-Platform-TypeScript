@@ -187,7 +187,7 @@ export interface PaymentGatewayInterface extends TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public toHashMap(isEncrypted: boolean): HashMap<any, any>
+    public toHashMap(isEncrypted: boolean): HashMap
 
     public toVector(isEncrypted: boolean): Vector
 

@@ -48,8 +48,6 @@ export class DragVelocityBehavior extends VelocityBehaviorBase {
         
 
     public static readonly instance: DragVelocityBehavior = new DragVelocityBehavior();
-        
-        
 
     public reduce(velocityProperties: BasicVelocityProperties, nominator: number, denominator: number){
     //var velocityProperties = velocityProperties
@@ -61,13 +59,11 @@ export class DragVelocityBehavior extends VelocityBehaviorBase {
                                     {
                                     
     var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;
-        
-        
 ;
     
-basicDecimal!.multiply(nominator);
+basicDecimal!.multiplyint(nominator);
     
-basicDecimal!.divide(denominator);
+basicDecimal!.divideint(denominator);
     
 
                                     }
@@ -78,13 +74,11 @@ basicDecimal!.divide(denominator);
                                     {
                                     
     var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;
-        
-        
 ;
     
-basicDecimal!.multiply(nominator);
+basicDecimal!.multiplyint(nominator);
     
-basicDecimal!.divide(denominator);
+basicDecimal!.divideint(denominator);
     
 
                                     }
@@ -98,17 +92,15 @@ basicDecimal!.divide(denominator);
     //var denominator = denominator
 
     var basicDecimal: BasicDecimal = velocityProperties!.getVelocityXBasicDecimalP()!;
-        
-        
 ;
     
 
                         if(basicDecimal!.getUnscaled() != 0L)
                         
                                     {
-                                    basicDecimal!.multiply(nominator);
+                                    basicDecimal!.multiplyint(nominator);
     
-basicDecimal!.divide(denominator);
+basicDecimal!.divideint(denominator);
     
 
                                     }
@@ -126,13 +118,11 @@ basicDecimal!.divide(denominator);
                                     {
                                     
     var basicDecimal: BasicDecimal = velocityProperties!.getVelocityYBasicDecimalP()!;
-        
-        
 ;
     
-basicDecimal!.multiply(nominator);
+basicDecimal!.multiplyint(nominator);
     
-basicDecimal!.divide(denominator);
+basicDecimal!.divideint(denominator);
     
 
                                     }

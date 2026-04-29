@@ -48,26 +48,34 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
         
 import { JPanel } from "./JPanel.js";
 
+import { GenericProfileActions } from "./GenericProfileActions.js";
+
+import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
+
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
 import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
-import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
+import { JButton } from "./JButton.js";
 
-import { GenericProfileActions } from "./GenericProfileActions.js";
+import { JList } from "./JList.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
+import { JDialog } from "./JDialog.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JTextField } from "./JTextField.js";
 
 export class GenericProfileActionsJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private genericProfileActions: GenericProfileActions
 
@@ -111,7 +119,7 @@ this.newProfileActionJLabel!.setText("New Action Name");
     
 this.okNewProfileActionJButton!.setText("Ok");
     
-okNewProfileActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okNewProfileActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -125,8 +133,6 @@ okNewProfileActionJButtonActionPerformed(evt);
     
 
     var newProfileActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.newProfileActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.newProfileActionJDialog!.getContentPane()!.setLayout(newProfileActionJDialogLayout);
@@ -137,7 +143,7 @@ newProfileActionJDialogLayout!.setVerticalGroup(newProfileActionJDialogLayout!.c
     
 this.genericProfileActionsJPanel!.setPreferredSize(new java.awt.Dimension(10000, 10000));
     
-genericProfileActionsJList!.addListSelectionListener(new object: javax.swing.event.ListSelectionListener()
+genericProfileActionsJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -153,7 +159,7 @@ this.genericProfileActionsJScrollPane!.setViewportView(this.genericProfileAction
     
 this.newActionJButton!.setText("New");
     
-newActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+newActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -167,7 +173,7 @@ newActionJButtonActionPerformed(evt);
     
 this.deleteActionJButton!.setText("Delete");
     
-deleteActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+deleteActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -181,7 +187,7 @@ deleteActionJButtonActionPerformed(evt);
     
 this.saveJButton!.setText("Save");
     
-saveJButton!.addActionListener(new object: java.awt.event.ActionListener()
+saveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -197,8 +203,6 @@ this.blankGenericProfileActionJPanel!.setMinimumSize(new java.awt.Dimension(500,
     
 
     var blankGenericProfileActionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankGenericProfileActionJPanel);
-        
-        
 ;
     
 this.blankGenericProfileActionJPanel!.setLayout(blankGenericProfileActionJPanelLayout);
@@ -209,8 +213,6 @@ blankGenericProfileActionJPanelLayout!.setVerticalGroup(blankGenericProfileActio
     
 
     var genericProfileActionsJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.genericProfileActionsJPanel);
-        
-        
 ;
     
 this.genericProfileActionsJPanel!.setLayout(genericProfileActionsJPanelLayout);
@@ -221,8 +223,6 @@ genericProfileActionsJPanelLayout!.setVerticalGroup(genericProfileActionsJPanelL
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -237,8 +237,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     public setModel(){
 
     var defaultListModelHelper: DefaultListModelHelper = this.getGenericProfileActions()!.getDefaultListModelHelper()!;
-        
-        
 ;
     
 
@@ -282,8 +280,6 @@ this.blankGenericProfileActionJPanel!.removeAll();
                                     {
                                     
     var genericProfileAction: GenericProfileAction = this.getGenericProfileActions()!.getAction(profileActionNameString)!;
-        
-        
 ;
     
 this.setGenericProfileActionJPanel(new GenericProfileActionJPanel());
@@ -293,9 +289,7 @@ this.getGenericProfileActionJPanel()!.setGenericProfileAction(genericProfileActi
 this.getGenericProfileActionJPanel()!.updateProfileActionUI();
     
 
-    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout(); as javax.swing.GroupLayout;
-        
-        
+    var layout: javax.swing.GroupLayout =  as javax.swing.GroupLayoutthis.blankGenericProfileActionJPanel!.getLayout();;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -315,9 +309,7 @@ var evt = evt
 
         try {
             
-    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue(); as String;
-        
-        
+    var profileActionNameString: string =  as Stringthis.genericProfileActionsJList!.getSelectedValue();;
 ;
     
 this.updateProfileActionUI(profileActionNameString);
@@ -339,8 +331,6 @@ var evt = evt
         try {
             
     var newActionName: string = this.newProfileActionJTextField!.getText()!;
-        
-        
 ;
     
 this.getGenericProfileActions()!.add(newActionName);
@@ -370,8 +360,6 @@ var evt = evt
         try {
             
     var anyType: any[] = this.genericProfileActionsJList!.getSelectedValues()!;
-        
-        
 ;
     
 
@@ -380,14 +368,10 @@ var evt = evt
 
                         for (
     var index: number = 0;
-        
-        
 index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as String;
-        
-        
+    var nextSelectedValueString: string =  as StringanyType[index]!;
 ;
     
 this.getGenericProfileActions()!.remove(nextSelectedValueString);
@@ -418,7 +402,7 @@ this.setModel();
                                     {
                                     this.genericProfileActionsJList!.setSelectedValue(this.genericProfileActionsJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as String);
+this.updateProfileActionUI( as Stringthis.genericProfileActionsJList!.getModel()!.getElementAt(0));
     
 
                                     }

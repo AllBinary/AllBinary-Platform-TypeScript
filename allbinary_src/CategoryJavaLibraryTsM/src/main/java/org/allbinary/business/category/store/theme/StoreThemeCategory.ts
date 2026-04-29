@@ -166,14 +166,10 @@ this.addThemes(node);
 var node = node
 
     var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
     var nodeList: NodeList = themesNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -182,14 +178,10 @@ var node = node
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var themeNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -250,11 +242,9 @@ this.themeVector!.add(themeValidation);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var categoryHashMap: HashMap<any, any> = super.toHashMap()!;
-        
-        
+    var categoryHashMap: HashMap = super.toHashMap()!;
 ;
     
 categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
@@ -273,8 +263,6 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
     public toVector(): Vector{
 
     var categoryVector: Vector = super.toVector()!;
-        
-        
 ;
     
 

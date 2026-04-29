@@ -42,9 +42,6 @@ import { TerrainEventListener } from "../../../../../org/allbinary/game/terrain/
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { Angle } from "../../../../../org/allbinary/math/Angle.js";
 
     
@@ -79,17 +76,11 @@ export class TerrainPatrolAI extends PacePatrolAI {
         
 
     private readonly terrainEventListener: TerrainEventListener = new TerrainEventListener();
-        
-        
 
     private readonly DOWN: Angle = AngleFactory.getInstance()!.DOWN;
-        
-        
 
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(DOWN);
-        
-        
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                         //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
@@ -100,7 +91,7 @@ public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBina
                     
 TerrainEventHandler.getInstance(ownerLayerInterface)!.addListener(this.terrainEventListener);
     
-this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF));
+this.terrainEventListener!.onTerrainEvent(TerrainEventCircularStaticPool.getInstance()!.getNext(this.CLIFF));
     
 }
 
@@ -116,14 +107,10 @@ this.changeDirectionIfCliffReached();
     changeDirectionIfCliffReached(){
 
     var list: BasicArrayList = this.terrainEventListener!.getList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -132,26 +119,18 @@ this.changeDirectionIfCliffReached();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var terrainEvent: TerrainEvent = list.remove(index); as TerrainEvent;
-        
-        
+    var terrainEvent: TerrainEvent =  as TerrainEventlist.removeAt(index);;
 ;
     
 
     var basicTerrainInfo: BasicTerrainInfo = terrainEvent!.getBasicTerrainInfo()!;
-        
-        
 ;
     
 
     var angle: Angle = basicTerrainInfo!.getAngle()!;
-        
-        
 ;
     
 

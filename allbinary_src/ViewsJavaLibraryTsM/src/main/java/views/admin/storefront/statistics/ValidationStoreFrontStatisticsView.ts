@@ -64,8 +64,6 @@ export class ValidationStoreFrontStatisticsView extends StoreFrontStatisticsComp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     newStoreFrontInterface: StoreFrontInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -83,8 +81,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -122,8 +118,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Never");

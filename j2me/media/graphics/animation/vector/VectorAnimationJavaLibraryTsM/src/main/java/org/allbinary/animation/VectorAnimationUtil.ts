@@ -49,8 +49,6 @@ export class VectorAnimationUtil
         
 
     private static readonly instance: VectorAnimationUtil = new VectorAnimationUtil();
-        
-        
 
     public static getInstance(): VectorAnimationUtil{
 
@@ -67,19 +65,23 @@ private constructor (){
         }
 
 
-    public toAnimationArrayFromBasicArrayListOfPointBasicArrayList(vector: BasicArrayList, pointsPerFrame: number): number[][][]{
-var vector = vector
-var pointsPerFrame = pointsPerFrame
+    public toAnimationArrayFromListOfPointListWithPointsPerFrame(vector: BasicArrayList, pointsPerFrame: number): number[][][]{
+    //var vector = vector
+    //var pointsPerFrame = pointsPerFrame
 
     var size: number = vector.size()!;
-        
-        
 ;
     
 
     var points: number[][][] = Array.from({ length: size }, () => Array.from({ length: pointsPerFrame }, () => new Array(0).fill(2)));
-        
-        
+;
+    
+
+    var nextBasicArrayList: BasicArrayList
+;
+    
+
+    var framePoints: number[][]
 ;
     
 
@@ -88,21 +90,11 @@ var pointsPerFrame = pointsPerFrame
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var nextBasicArrayList: BasicArrayList = vector.objectArray[index]! as BasicArrayList;
-        
-        
-;
+nextBasicArrayList=  as BasicArrayListvector.objectArray[index]!;
     
-
-    var frame: number[][] = toFrameArrayFromPointBasicArrayList(nextBasicArrayList)!;
-        
-        
-;
+framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
 
 
@@ -110,13 +102,11 @@ index < size; index++)
 
                         for (
     var pointIndex: number = 0;
-        
-        
-pointIndex < frame.length; pointIndex++)
+pointIndex < framePoints!.length; pointIndex++)
         {
-points[index]![pointIndex]![0]= frame[pointIndex]![0]!;
+points[index]![pointIndex]![0]= framePoints[pointIndex]![0]!;
     
-points[index]![pointIndex]![1]= frame[pointIndex]![1]!;
+points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
     
 }
 
@@ -131,18 +121,22 @@ points[index]![pointIndex]![1]= frame[pointIndex]![1]!;
 }
 
 
-    public toAnimationArrayFromBasicArrayListOfPointBasicArrayList(vector: BasicArrayList): number[][][]{
-var vector = vector
+    public toAnimationArrayFromListOfPointList(vector: BasicArrayList): number[][][]{
+    //var vector = vector
 
     var size: number = vector.size()!;
-        
-        
 ;
     
 
     var points: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
-        
-        
+;
+    
+
+    var nextBasicArrayList: BasicArrayList
+;
+    
+
+    var framePoints: number[][]
 ;
     
 
@@ -151,21 +145,11 @@ var vector = vector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var nextBasicArrayList: BasicArrayList = vector.objectArray[index]! as BasicArrayList;
-        
-        
-;
+nextBasicArrayList=  as BasicArrayListvector.objectArray[index]!;
     
-
-    var framePoints: number[][] = toFrameArrayFromPointBasicArrayList(nextBasicArrayList)!;
-        
-        
-;
+framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
 points[index]= new Array(framePoints!.length) [2];
     
@@ -175,8 +159,6 @@ points[index]= new Array(framePoints!.length) [2];
 
                         for (
     var pointIndex: number = 0;
-        
-        
 pointIndex < framePoints!.length; pointIndex++)
         {
 points[index]![pointIndex]![0]= framePoints[pointIndex]![0]!;
@@ -200,14 +182,10 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 var list = list
 
     var points: number[][] = new Array(list.size()) [2];
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -216,14 +194,10 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextPoint: GPoint = list.objectArray[index]! as GPoint;
-        
-        
+    var nextPoint: GPoint =  as GPointlist.objectArray[index]!;
 ;
     
 points[index]![0]= nextPoint!.getX();

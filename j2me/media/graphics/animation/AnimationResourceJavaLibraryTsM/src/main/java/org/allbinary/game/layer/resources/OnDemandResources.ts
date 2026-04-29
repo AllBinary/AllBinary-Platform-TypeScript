@@ -52,12 +52,8 @@ export class OnDemandResources
         
 
     public static readonly NULL_ON_DEMAND_RESOURCES: OnDemandResources = new OnDemandResources();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 protected constructor (){
 
             super();
@@ -78,7 +74,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public init(imageCache: ImageCache, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory, portion: number, loadingString: string, index: number): number{
+    public initAt(imageCache: ImageCache, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory, portion: number, loadingString: string, index: number): number{
 var imageCache = imageCache
 var resourceAnimationInterfaceFactoryInterfaceFactory = resourceAnimationInterfaceFactoryInterfaceFactory
 var portion = portion

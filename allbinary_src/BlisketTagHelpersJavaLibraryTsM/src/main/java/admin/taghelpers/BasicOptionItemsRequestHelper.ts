@@ -79,8 +79,6 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -99,12 +97,12 @@ export class BasicOptionItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.getFormData();
     
@@ -167,11 +165,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 }
 
 
-    getHashMap(): HashMap<any, any>{
+    getHashMap(): HashMap{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 values.put(BasicItemData.ID, id);
@@ -214,15 +210,11 @@ values.put(BasicOptionItemData.OPTION_ONE_NINE_VALUE, this.optionValue!.get(8));
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -241,29 +233,21 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
         try {
             
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(this.id);
     
 
     var size: number = this.optionValue!.length!;
-        
-        
 ;
     
 
@@ -272,8 +256,6 @@ values.add(this.id);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 values.add(this.optionValue!.get(index));
@@ -290,8 +272,6 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
     
 
     var success: string = "Successfully inserted " +id +" into items table";
-        
-        
 ;
     
 
@@ -315,8 +295,6 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
             {
 
     var error: string = "Failed to insert " +this.id +" into items table";
-        
-        
 ;
     
 
@@ -346,8 +324,6 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
     
 
     var success: string = "Successfully deleted";
-        
-        
 ;
     
 
@@ -371,8 +347,6 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -400,14 +374,10 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
         try {
             
     var success: string = "Update Pricing Successful";
-        
-        
 ;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-        
-        
+    var values: HashMap = this.getHashMap()!;
 ;
     
 BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.update(values);
@@ -434,8 +404,6 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
             {
 
     var error: string = "Failed to update: " +this.id;
-        
-        
 ;
     
 

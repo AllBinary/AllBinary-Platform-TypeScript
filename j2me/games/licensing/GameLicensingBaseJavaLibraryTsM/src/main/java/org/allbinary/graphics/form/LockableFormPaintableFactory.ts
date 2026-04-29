@@ -39,6 +39,8 @@
         
 import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
 
+import { LockablePaintable } from "./LockablePaintable.js";
+
 import { ItemPaintable } from "./ItemPaintable.js";
 
 import { PaintableForm } from "./PaintableForm.js";
@@ -58,7 +60,7 @@ this.lockedIndex= lockedIndex;
 
                 //@Throws(Error::class)
             
-    public getInstance(paintableForm: PaintableForm): ItemPaintable{
+    public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
 var paintableForm = paintableForm
 
 

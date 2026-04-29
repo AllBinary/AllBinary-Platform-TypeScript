@@ -71,15 +71,11 @@ this.userConfigurationInterface= userConfigurationInterface;
     public toXmlDoc(): Document{
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 
     var node: Node = new UserConfigurationView(this.userConfigurationInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 document.appendChild(node);

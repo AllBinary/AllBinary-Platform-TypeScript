@@ -50,8 +50,6 @@ import { Calendar } from "../../../java/util/Calendar.js";
         
 
     private static readonly instance: TimeStampUtil = new TimeStampUtil();
-        
-        
 
     /*actual*/ public static getInstance(): TimeStampUtil{
 
@@ -71,14 +69,10 @@ private constructor (){
     /*actual*/ public getAsString(): string{
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var date: Date = calendar.getTime()!;
-        
-        
 ;
     
 

@@ -53,8 +53,6 @@ export class OrderItemsEntityFactory
     public static getInstance(): OrderItemsEntity{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -71,8 +69,6 @@ export class OrderItemsEntityFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

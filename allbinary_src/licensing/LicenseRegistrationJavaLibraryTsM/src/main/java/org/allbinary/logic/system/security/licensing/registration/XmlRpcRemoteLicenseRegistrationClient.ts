@@ -80,12 +80,8 @@ export class XmlRpcRemoteLicenseRegistrationClient extends XmlRpcAbeClient {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly PAGE: string = "licenseregistrationserverssl.php";
-        
-        
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicenseRegistrationServer.process");
                     var clientInfo = clientInfo
@@ -107,14 +103,10 @@ this.setServer(0);
         try {
             
     var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(TRYING);
@@ -129,28 +121,20 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toStri
     
 
     var param: Vector = new Vector();
-        
-        
 ;
     
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-        
-        
 ;
     
 
     var index: number = serverUrl!.lastIndexOf("/")!;
-        
-        
 ;
     
 serverUrl= serverUrl!.substring(0, index +1) +this.PAGE;
     
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
-        
-        
 ;
     
 this.setClient(xmlRpcClient);
@@ -160,9 +144,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
-        
-        
+    var hashtable: Hashtable =  as HashtableanyType;
 ;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
@@ -171,8 +153,6 @@ param.add(hashtable);
     
 
     var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
-        
-        
 ;
     
 this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
@@ -208,7 +188,8 @@ this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTr
                             
 
 
-                            throw new Error(HOST_NOT_RESOLVED_MSG)
+                            throw new Error(HOST_NOT_RESOLVED_MSG);
+                    
 
                         }
                             

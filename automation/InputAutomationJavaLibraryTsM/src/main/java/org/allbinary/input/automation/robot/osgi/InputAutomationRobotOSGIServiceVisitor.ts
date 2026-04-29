@@ -64,12 +64,8 @@ export class InputAutomationRobotOSGIServiceVisitor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -82,7 +78,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit(anyType as OSGIServiceInterface);;
+                        return this.visit( as OSGIServiceInterfaceanyType);;
     
 }
 
@@ -94,15 +90,11 @@ public constructor (){
             this.logUtil!.putF(this.commonStrings!.START, this, "visit");
     
 
-    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface = osgiServiceInterface as InputAutomationRobotServiceInterface;
-        
-        
+    var inputAutomationRobotServiceInterface: InputAutomationRobotServiceInterface =  as InputAutomationRobotServiceInterfaceosgiServiceInterface;
 ;
     
 
     var inputRobotInterfaceArray: InputRobotInterface[] = inputAutomationRobotServiceInterface!.getInputRobotInterfaceArray()!;
-        
-        
 ;
     
 
@@ -111,8 +103,6 @@ public constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < inputRobotInterfaceArray!.length; index++)
         {
 this.logUtil!.putF("Adding: " +inputRobotInterfaceArray[index]!.getName(), this, "visit");

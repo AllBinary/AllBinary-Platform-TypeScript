@@ -46,8 +46,6 @@ export class OpenGLVersionValidator
         
 
     private static readonly instance: OpenGLVersionValidator = new OpenGLVersionValidator();
-        
-        
 
     public static getInstance(): OpenGLVersionValidator{
 
@@ -87,8 +85,6 @@ export class OpenGLVersionValidator
 
 
     public EGL_CONTEXT_CLIENT_VERSION_VALUE: number =  -1;
-        
-        
 
 }
                 

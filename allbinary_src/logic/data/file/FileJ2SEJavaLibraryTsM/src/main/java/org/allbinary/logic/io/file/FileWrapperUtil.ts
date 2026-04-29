@@ -56,8 +56,6 @@ var files = files
         try {
             
     var abFileArray: AbFile[] = new Array(files.length);
-        
-        
 ;
     
 
@@ -66,11 +64,9 @@ var files = files
 
                         for (
     var index: number = files.length -1;
-        
-        
 index >= 0; index--)
         {
-abFileArray[index]= new AbFile(files[index]! as File);
+abFileArray[index]= new AbFile( as Filefiles[index]!);
     
 }
 

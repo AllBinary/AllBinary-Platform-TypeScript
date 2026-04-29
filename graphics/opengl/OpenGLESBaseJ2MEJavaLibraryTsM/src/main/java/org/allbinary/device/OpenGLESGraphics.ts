@@ -45,18 +45,16 @@ import { GraphicsInterface } from "./GraphicsInterface.js";
 
 import { NullGL10 } from "./NullGL10.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class OpenGLESGraphics
             extends Object
          implements OpenGLSurfaceChangedInterface, GraphicsInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     gl: GL10 = NullGL10.NULL_GL10;
-        
-        
  constructor (){
 
             super();
@@ -109,7 +107,8 @@ var gl = gl
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

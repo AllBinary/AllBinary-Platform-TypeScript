@@ -55,8 +55,6 @@ export class PointsUtil
         
 
     private static readonly instance: PointsUtil = new PointsUtil();
-        
-        
 
     public static getInstance(): PointsUtil{
 
@@ -70,7 +68,7 @@ export class PointsUtil
 
                 //@Throws(Error::class)
             
-    public doTransforms(pointVector: BasicArrayList, angle: Double, fulcrumPoint: GPoint): BasicArrayList{
+    public doTransforms(pointVector: BasicArrayList, angle: number, fulcrumPoint: GPoint): BasicArrayList{
 var pointVector = pointVector
 var angle = angle
 var fulcrumPoint = fulcrumPoint
@@ -78,7 +76,7 @@ var fulcrumPoint = fulcrumPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VectorRotationGenerator.getInstance()!.getInstance(fulcrumPoint!.getX(), fulcrumPoint!.getY(), pointVector, AngleFactory.getInstance()!.getInstance(angle.toInt()));;
+                        return VectorRotationGenerator.getInstance()!.getListAtAngle(fulcrumPoint!.getX(), fulcrumPoint!.getY(), pointVector, AngleFactory.getInstance()!.getAt(angle.toInt()));;
     
 }
 

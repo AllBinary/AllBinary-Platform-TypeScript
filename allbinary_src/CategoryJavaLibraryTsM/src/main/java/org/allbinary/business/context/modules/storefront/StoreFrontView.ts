@@ -71,8 +71,6 @@ export class StoreFrontView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private storeFrontInterface: StoreFrontInterface
 public constructor (storeFrontInterface: StoreFrontInterface){
@@ -85,8 +83,6 @@ public constructor (storeFrontInterface: StoreFrontInterface){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Constructing: StoreFrontView for: " +storeFrontInterface!.getName(), this, commonStrings!.GET_INSTANCE);
@@ -104,15 +100,11 @@ this.storeFrontInterface= storeFrontInterface;
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.storeFrontInterface!.toHashMap()!;
 ;
     
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-        
-        
 ;
     
 hashMap!.put(storeFrontData!.CURRENTHOMEHOSTNAME, this.storeFrontInterface!.getCurrentHomeHostName());
@@ -127,8 +119,6 @@ hashMap!.put(BasketData.NAME, this.storeFrontInterface!.getBasketName());
     
 
     var node: Node = ModDomHelper.createNameValueNodes(document, storeFrontData!.NAME, hashMap)!;
-        
-        
 ;
     
 

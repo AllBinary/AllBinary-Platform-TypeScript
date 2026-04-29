@@ -74,8 +74,6 @@ export class StoreCategoryFactory extends CategoryAbstractFactory implements Cat
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -100,16 +98,14 @@ this.transformInfoInterface= transformInfoInterface;
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
     
 
                 //: 
@@ -141,21 +137,17 @@ var categoryPath = categoryPath
         try {
             
     var level: number = CategoryUtil.getPathLevel(categoryPath)!;
-        
-        
 ;
     
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface, categoryPath);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface, level);
     
 
                 //: 
@@ -186,28 +178,22 @@ var node = node
 
         try {
             
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew RootStoreCategoryPropertiesFactory(this.transformInfoInterface, node);
 ;
     
 
     var categoryPath: AbPath = new AbPath(CategoryUtil.getNameFromNode(node));
-        
-        
 ;
     
 
     var level: number = CategoryUtil.getPathLevel(categoryPath)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(categoryPropertiesFactoryInterface, level) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface, level);
     
 
                 //: 

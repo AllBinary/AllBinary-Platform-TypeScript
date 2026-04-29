@@ -54,8 +54,6 @@ export class FeatureResourceInitializationUtil
         
 
     private static readonly instance: FeatureResourceInitializationUtil = new FeatureResourceInitializationUtil();
-        
-        
 
     public static getInstance(): FeatureResourceInitializationUtil{
 
@@ -68,8 +66,6 @@ export class FeatureResourceInitializationUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -77,16 +73,12 @@ export class FeatureResourceInitializationUtil
 var level = level
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
     var featuredResourceFactory: FeaturedResourceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 featuredResourceFactory!.init(level);

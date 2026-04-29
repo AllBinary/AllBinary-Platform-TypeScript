@@ -58,8 +58,6 @@ export class AllBinaryRendererBase3
         
 
     public readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
                 //@Throws(Error::class)
             
@@ -69,9 +67,7 @@ export class AllBinaryRendererBase3
         while(this.list.size() > 0)
         {
 
-    var openGLESImage: OpenGLESImage = this.list.remove(0); as OpenGLESImage;
-        
-        
+    var openGLESImage: OpenGLESImage =  as OpenGLESImagethis.list.removeAt(0);;
 ;
     
 

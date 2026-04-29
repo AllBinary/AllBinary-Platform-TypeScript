@@ -52,18 +52,12 @@ export class StartIntermissionProcessor extends Processor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private gameCanvas: AllBinaryGameCanvas
 
     private readonly WAIT: number = 5000;
-        
-        
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -77,7 +71,7 @@ this.gameCanvas= gameCanvas;
             
     public process(){
 
-                        if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsed(this.WAIT))
+                        if(this.gameCanvas!.getStartIntermissionInterface()!.getTimeDelayHelper()!.isElapsedTNT(this.WAIT))
                         
                                     {
                                     this.logUtil!.putF("Intermission End", this, commonStrings!.PROCESS);

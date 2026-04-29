@@ -50,8 +50,6 @@ export class LeftTrackballInputToGameKeyEventAction extends GameKeyCompleteMotio
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new LeftTrackballInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

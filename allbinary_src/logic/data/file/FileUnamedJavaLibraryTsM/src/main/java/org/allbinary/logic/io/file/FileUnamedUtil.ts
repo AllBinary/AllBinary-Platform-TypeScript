@@ -46,8 +46,6 @@ export class FileUnamedUtil
         
 
     private static readonly instance: FileUnamedUtil = new FileUnamedUtil();
-        
-        
 
     public static getInstance(): FileUnamedUtil{
 
@@ -60,15 +58,11 @@ export class FileUnamedUtil
 
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     public process(string: string): string{
 var string = string
 
     var simplifiedString: string = string.lowercase()!;
-        
-        
 ;
     
 simplifiedString= simplifiedString!.replace(commonSeps!.SPACE, commonSeps!.UNDERSCORE);

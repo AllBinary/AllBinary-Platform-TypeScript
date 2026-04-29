@@ -43,8 +43,6 @@ export class PostLoadPlatformImage extends PlatformImage {
         
 
     private static readonly instance: PostLoadPlatformImage = new PostLoadPlatformImage();
-        
-        
 
     public static getInstance(): PostLoadPlatformImage{
 

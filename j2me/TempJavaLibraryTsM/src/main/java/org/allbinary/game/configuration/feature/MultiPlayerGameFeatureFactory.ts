@@ -29,8 +29,6 @@ export class MultiPlayerGameFeatureFactory
         
 
     private static readonly instance: MultiPlayerGameFeatureFactory = new MultiPlayerGameFeatureFactory();
-        
-        
 
     public static getInstance(): MultiPlayerGameFeatureFactory{
 

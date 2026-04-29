@@ -70,8 +70,6 @@ export class EditValidationView extends WorkFlowView implements ValidationCompon
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private workFlowName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -82,9 +80,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);
@@ -169,8 +165,6 @@ this.workFlowName= httpTransformInfoInterface!.getPageContext()!.getRequest()!.g
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

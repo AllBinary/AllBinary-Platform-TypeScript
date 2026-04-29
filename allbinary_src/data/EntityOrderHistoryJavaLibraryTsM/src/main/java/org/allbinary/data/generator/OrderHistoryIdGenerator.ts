@@ -52,15 +52,11 @@ export class OrderHistoryIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "orderhistoryId";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

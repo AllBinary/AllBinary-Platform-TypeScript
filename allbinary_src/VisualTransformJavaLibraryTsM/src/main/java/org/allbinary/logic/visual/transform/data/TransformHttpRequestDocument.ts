@@ -78,20 +78,12 @@ export class TransformHttpRequestDocument
         
 
     private static readonly language: string = "en";
-        
-        
 
     private static readonly local: string = "US";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private baseNode: Node
 
@@ -104,29 +96,21 @@ var weblisketSession = weblisketSession
 
         try {
             
-    var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;
-        
-        
+    var contentType: string = AcceptableResponseGenerator.getInstance()!.get( as HttpServletRequestpageContext!.getRequest())!;
 ;
     
 this.document= DomDocumentHelper.create();
     
 
     var contentTypeNode: Node = this.document.createElement(contentType)!;
-        
-        
 ;
     
 
     var languageTypeNode: Node = this.document.createElement(language)!;
-        
-        
 ;
     
 
     var localTypeNode: Node = this.document.createElement(local)!;
-        
-        
 ;
     
 this.baseNode= localTypeNode;
@@ -162,7 +146,8 @@ this.document.appendChild(contentTypeNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -175,28 +160,20 @@ public constructor (searchRequest: SearchRequest){
         try {
             
     var contentType: string = searchRequest!.getContentType()!;
-        
-        
 ;
     
 this.document= DomDocumentHelper.create();
     
 
     var contentTypeNode: Node = this.document.createElement(contentType)!;
-        
-        
 ;
     
 
     var languageTypeNode: Node = this.document.createElement(language)!;
-        
-        
 ;
     
 
     var localTypeNode: Node = this.document.createElement(local)!;
-        
-        
 ;
     
 this.baseNode= localTypeNode;
@@ -223,7 +200,8 @@ this.document.appendChild(contentTypeNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -254,8 +232,6 @@ this.document.appendChild(contentTypeNode);
     public log(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

@@ -70,8 +70,6 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getList(): BasicArrayList{
 
@@ -80,26 +78,18 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-        
-        
 ;
     
 
     var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;
-        
-        
 ;
     
 
     var basicTouchButtonCellPositionFactory: BasicTouchButtonCellPositionFactory = new BasicTouchButtonCellPositionFactory();
-        
-        
 ;
     
 
@@ -108,20 +98,14 @@ export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
                                     {
                                     
     var commonButtons: CommonButtons = CommonButtons.getInstance()!;
-        
-        
 ;
     
 
-    var UP: TouchButton = TouchButton.create(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_TWO, TouchButtonUpgradeResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
-        
-        
+    var UP: TouchButton = TouchButton.createButton(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_TWO, TouchButtonUpgradeResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_LEFT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
 ;
     
 
-    var DOWN: TouchButton = TouchButton.create(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_ONE, TouchButtonDowngradeResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
-        
-        
+    var DOWN: TouchButton = TouchButton.createButton(BasicTouchInputFactory.getInstance()!.SPECIAL_BUTTON_ONE, TouchButtonDowngradeResource.getInstance(), commonButtons!.NORMAL_BUTTON, basicTouchButtonCellPositionFactory!.SECOND_FROM_TOP_RIGHT, touchButtonLocationHelper!.getColumnsRemainderHalf(), touchButtonLocationHelper!.getRowsRemainderHalf())!;
 ;
     
 list.add(UP);

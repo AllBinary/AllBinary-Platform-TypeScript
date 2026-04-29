@@ -63,18 +63,12 @@ export class Animation
         
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
-        
-        
 
     basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     colorP: number= 0
 
     changeBasicColorP: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
-        
-        
 
     changeColorP: number= 0
 
@@ -98,7 +92,7 @@ this.alphaP= alpha;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y

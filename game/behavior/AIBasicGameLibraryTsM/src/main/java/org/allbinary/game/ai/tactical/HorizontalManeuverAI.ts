@@ -59,8 +59,6 @@ export class HorizontalManeuverAI extends BasicAI {
         
 
     currentRelativeAngle: number = 0;
-        
-        
 
     private currentSpeed: number
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
@@ -82,14 +80,10 @@ this.currentSpeed= 5;
 var allBinaryLayerManager = allBinaryLayerManager
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var x: number = ownerLayerInterface!.getXP()!;
-        
-        
 ;
     
 
@@ -140,7 +134,7 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(this.currentRelativeAngle == 0)
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM0);
+                                    super.processKeyAI(Canvas.KEY_NUM0);
     
 
                                     }
@@ -149,7 +143,7 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
                         if(currentRelativeAngle == 180)
                         
                                     {
-                                    super.processAI(Canvas.KEY_POUND);
+                                    super.processKeyAI(Canvas.KEY_POUND);
     
 
                                     }
@@ -195,14 +189,10 @@ ownerLayerInterface!.setPosition(x, ownerLayerInterface!.getYP(), ownerLayerInte
     drop(){
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var y: number = ownerLayerInterface!.getYP()!;
-        
-        
 ;
     
 

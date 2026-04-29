@@ -92,14 +92,14 @@ import { BasicPlayer } from "./BasicPlayer.js";
 
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
+import { NullControl } from "./NullControl.js";
+
 import { Math } from "./Math.js";
 
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly audioInputStream: AudioInputStream
 
@@ -110,14 +110,10 @@ public constructor (inputStream: InputStream){
         var inputStream = inputStream
 
     var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
-        
-        
 ;
     
 
     var clip: Clip = new NullClip();
-        
-        
 ;
     
 
@@ -137,7 +133,8 @@ clip= this.create(audioInputStream);
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 
@@ -157,7 +154,7 @@ this.clip= clip;
 
 
     public close(){
-MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new ARunnable()
                                 {
                                 
     public run(){
@@ -207,7 +204,7 @@ this.clip.close();
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new ARunnable()
                                 {
                                 
     public run(){
@@ -251,8 +248,6 @@ super.start();
 var audioInputStream = audioInputStream
 
     var clip: Clip = AudioSystem.getClip()!;
-        
-        
 ;
     
 clip.addLineListener(this);
@@ -272,7 +267,7 @@ clip.open(audioInputStream);
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-MusicThreadPool.getInstance()!.runTask(new object: ARunnable()
+MusicThreadPool.getInstance()!.runTask(new ARunnable()
                                 {
                                 
     public run(){
@@ -330,16 +325,14 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.setVolume((leftVolume) /100.0f);
+this.setVolumeF((leftVolume) /100.0f);
     
 }
 
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
-        
-        
+    var masterGainFloatControl: FloatControl =  as FloatControlclip.getControl(FloatControl.Type.MASTER_GAIN);;
 ;
     
 
@@ -351,7 +344,7 @@ this.setVolume((leftVolume) /100.0f);
 }
 
 
-    setVolume(volume: number){
+    setVolumeF(volume: number){
     //var volume = volume
 
                         if(volume < 0f || volume > 1f)
@@ -360,14 +353,13 @@ this.setVolume((leftVolume) /100.0f);
                                     
 
 
-                            throw new IllegalArgumentException("Volume: " +volume)
+                            throw Error();
+                    
 
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
-        
-        
+    var masterGainFloatControl: FloatControl =  as FloatControlthis.clip.getControl(FloatControl.Type.MASTER_GAIN);;
 ;
     
 masterGainFloatControl!.setValue(20f *Math.log10(volume););
@@ -393,8 +385,6 @@ var event = event
                                     {
                                     
     var size: number = this.listenersList!.size()!;
-        
-        
 ;
     
 
@@ -403,14 +393,10 @@ var event = event
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size); as PlayerListener;
-        
-        
+    var listener: PlayerListener =  as PlayerListenerthis.listenersList!.get(size);;
 ;
     
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 

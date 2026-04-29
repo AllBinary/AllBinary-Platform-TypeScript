@@ -70,16 +70,10 @@ export class MultiSelectPaintable extends SelectionHudPaintable {
         
 
     private readonly rootNameList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private totalCharArray: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
-        
-        
 
     private rootNamesString: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (){
 
             super();
@@ -92,8 +86,6 @@ this.clear();
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
@@ -104,14 +96,10 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerlist.get(index);;
 ;
     
 
@@ -127,14 +115,10 @@ index >= 0; index--)
 
 
     var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -143,14 +127,10 @@ index >= 0; index--)
 
                         for (
     var index: number = this.rootNameList!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index); as String;
-        
-        
+    var rootName: string =  as Stringthis.rootNameList!.get(index);;
 ;
     
 stringBuffer!.append(rootName);
@@ -178,16 +158,10 @@ this.rootNameList!.clear();
 
 
     private readonly TOTAL: string = "Total Selected: ";
-        
-        
 
     private readonly totalWidth: number = MyFont.getInstance()!.stringWidth(TOTAL)!;
-        
-        
 
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.toInt()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
@@ -203,8 +177,6 @@ graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurre
     
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
-        
-        
 ;
     
 graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0);

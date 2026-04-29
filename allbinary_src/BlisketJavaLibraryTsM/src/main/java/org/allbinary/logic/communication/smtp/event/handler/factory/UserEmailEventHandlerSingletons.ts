@@ -73,8 +73,6 @@ export class UserEmailEventHandlerSingletons
         
 
     private static readonly instance: UserEmailEventHandlerSingletons = new UserEmailEventHandlerSingletons();
-        
-        
 
     public static getInstance(): UserEmailEventHandlerSingletons{
 
@@ -87,16 +85,10 @@ export class UserEmailEventHandlerSingletons
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private readonly userEmailEventHandlerHashMap: HashMap = new HashMap();
 private constructor (){
 
             super();
@@ -128,9 +120,7 @@ var userInterface = userInterface
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object); as UserEmailEventHandler;
-        
-        
+    var userEmailEventHandler: UserEmailEventHandler =  as UserEmailEventHandlerthis.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);;
 ;
     
 
@@ -150,14 +140,10 @@ var userInterface = userInterface
                                 
 
     var newUserEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();
-        
-        
 ;
     
 
     var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;
-        
-        
 ;
     
 newUserEmailEventHandler!.addListener(vector);

@@ -46,8 +46,6 @@ export class Direction
         
 
     private directionArray: Direction[] = new Array(13);
-        
-        
 
     public static getInstance(direction: number): Direction{
 var direction = direction
@@ -130,8 +128,6 @@ directionArray[value]= this;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Direction: ");

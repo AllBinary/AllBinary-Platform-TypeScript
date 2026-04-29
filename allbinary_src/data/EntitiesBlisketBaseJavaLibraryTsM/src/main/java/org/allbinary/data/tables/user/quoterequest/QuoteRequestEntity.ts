@@ -75,12 +75,8 @@ export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tableName: string = "quoterequest";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -131,9 +127,7 @@ var values = values
 var userName = userName
 var id = id
 
-    var row: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var row: HashMap = new HashMap();
 ;
     
 row.put(UserData.USERNAME, userName);
@@ -141,9 +135,7 @@ row.put(UserData.USERNAME, userName);
 row.put(QuoteRequestData.getInstance()!.ID, id.toString());
     
 
-    var quoteRequestHashMap: HashMap<any, any> = super.getRow(row)!;
-        
-        
+    var quoteRequestHashMap: HashMap = super.getRow(row)!;
 ;
     
 
@@ -222,14 +214,10 @@ var value = value
     public createTableStatement(): string{
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START);
@@ -296,8 +284,6 @@ stringBuffer!.append(this.sqlStrings!.END);
     public dropTable(): string{
 
     var result: string = dropTable.toCharArray();
-        
-        
 ;
     
 
@@ -309,7 +295,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(userName: string, updatedValues: HashMap<any, any>){
+    public update(userName: string, updatedValues: HashMap){
 var userName = userName
 var updatedValues = updatedValues
 super.updateWhere(UserData.USERNAME, userName, updatedValues);

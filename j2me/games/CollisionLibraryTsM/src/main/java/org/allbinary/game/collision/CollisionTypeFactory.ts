@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CollisionType } from "./CollisionType.js";
+
 export class CollisionTypeFactory
             extends Object
          {
         
 
     private SINGLETON: CollisionTypeFactory = new CollisionTypeFactory();
-        
-        
 
     public static getInstance(): CollisionTypeFactory{
 
@@ -57,20 +57,12 @@ export class CollisionTypeFactory
 
 
     public NONE: CollisionType = new CollisionType("None");
-        
-        
 
     public DAMAGE: CollisionType = new CollisionType("Damage");
-        
-        
 
     public PICKUP: CollisionType = new CollisionType("Pickup");
-        
-        
 
     public COLLISION: CollisionType = new CollisionType("Collision");
-        
-        
 
 }
                 

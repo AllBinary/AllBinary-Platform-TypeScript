@@ -59,8 +59,6 @@ export class GeographicMapEventHandler extends BasicEventHandler {
         
 
     private instance: GeographicMapEventHandler = new GeographicMapEventHandler();
-        
-        
 
     public static getInstance(): GeographicMapEventHandler{
 
@@ -73,8 +71,6 @@ export class GeographicMapEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -119,16 +115,12 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var gameLayer: AllBinaryGameLayer = this.list.get(index); as AllBinaryGameLayer;
-        
-        
+    var gameLayer: AllBinaryGameLayer =  as AllBinaryGameLayerthis.list.get(index);;
 ;
     
 gameLayer!.move();

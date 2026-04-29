@@ -74,38 +74,24 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Class } from "./Class.js";
-
 export class MusicManager
             extends Object
          {
         
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 
     private readonly playerStateUtil: PlayerStateUtil = PlayerStateUtil.getInstance()!;
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
-    private readonly playerListener: PlayerListener = new object: PlayerListener()
+    private readonly playerListener: PlayerListener = new PlayerListener()
                                 {
                                 
     public playerUpdate(player: Player, event: string, eventData: any = {}){
@@ -127,58 +113,34 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
 
                                 }
                             ;
-        
-        
 
     private readonly PLAY: string = "Play ";
-        
-        
 
     private readonly SONG: string = " for: ";
-        
-        
 
     private readonly NEXT_SONG: string = "Next Song: ";
-        
-        
 
     private readonly STOPPING: string = "Stopping Current Song: ";
-        
-        
 
     private readonly ENDING: string = "Ending Current Song: ";
-        
-        
 
     private readonly WAITING_FOR_MEDIA_TO_END: string = "Waiting for media to end";
-        
-        
 
     private readonly ALREADY_PLAYING: string = "Already Playing: ";
-        
-        
 
     private readonly ALREADY_ENDED: string = "Last Song already ended: ";
-        
-        
 
     private readonly songList: BasicArrayList
 
     private currentSongSound: Sound = NoSound.getInstance()!;
-        
-        
 
     private nextSongSound: Sound = NoSound.getInstance()!;
-        
-        
 
     private reset: boolean= false
 
     private noDuration: boolean= false
 
     private stopped: boolean = true;
-        
-        
 public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
@@ -195,9 +157,7 @@ this.songList= songList;
                         
                                     {
                                     
-    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList); as Sound;
-        
-        
+    var randomSongSound: Sound =  as Soundthis.basicArrayListUtil!.getRandom(this.songList);;
 ;
     
 this.nextSong(randomSongSound, 0, 0);
@@ -271,14 +231,10 @@ this.noDuration= false;
     
 
     var endingCurrentSongSound: Sound = this.currentSongSound;
-        
-        
 ;
     
 
     var nextSongSound: Sound = this.nextSongSound;
-        
-        
 ;
     
 this.nextSongSound= NoSound.getInstance();
@@ -287,7 +243,7 @@ this.nextSongSound= NoSound.getInstance();
                         if(nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList); as Sound;
+                                    this.currentSongSound=  as SoundBasicArrayListUtil.getInstance()!.getRandom(this.songList);;
     
 
                                     }
@@ -300,17 +256,13 @@ this.nextSongSound= NoSound.getInstance();
                             
 
     var startingCurrentSongSound: Sound = this.currentSongSound;
-        
-        
 ;
     
 
     var duration: number = this.currentSongSound!.getDuration()!;
-        
-        
 ;
     
-this.timeDelayHelper!.delay= duration;
+this.timeDelayHelper!.delay= Math.roundduration;
     
 
                         if(duration <= 0)
@@ -318,8 +270,6 @@ this.timeDelayHelper!.delay= duration;
                                     {
                                     
     var NO_DURATION_FOR: string = "No Duration for: ";
-        
-        
 ;
     
 PreLogUtil.put(new StringMaker().
@@ -412,8 +362,6 @@ this.currentSongSound!.getPlayerP()!.start();
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -461,8 +409,6 @@ startingCurrentSongSound!.getPlayerP()!.start();
         try {
             
     var currentSongSound: Sound = this.currentSongSound;
-        
-        
 ;
     
 
@@ -490,8 +436,6 @@ PreLogUtil.put(new StringMaker().
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 

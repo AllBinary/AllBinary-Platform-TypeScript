@@ -51,14 +51,10 @@ export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlace
 
     var size: number = mapData!.length
                 ;
-        
-        
 ;
     
 
     var size2: number = mapData[0]!.length -7;
-        
-        
 ;
     
 
@@ -67,8 +63,6 @@ export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlace
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -77,8 +71,6 @@ index < size; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; )
         {
 mapData[index]![index2]= 1;

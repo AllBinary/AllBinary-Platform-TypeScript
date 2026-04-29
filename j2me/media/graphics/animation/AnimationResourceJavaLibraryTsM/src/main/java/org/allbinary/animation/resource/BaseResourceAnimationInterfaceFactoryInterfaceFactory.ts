@@ -78,23 +78,19 @@ export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly hashtable: Hashtable<any, any>
+    private readonly hashtable: Hashtable
 
-    private readonly rectangleHashtable: Hashtable<any, any>
+    private readonly rectangleHashtable: Hashtable
 
-    private readonly rectangleArrayOfArraysHashtable: Hashtable<any, any>
+    private readonly rectangleArrayOfArraysHashtable: Hashtable
 
     private readonly name: string
 
     private initialized: boolean= false
-public constructor (name: string, hashtable: Hashtable<any, any>, rectangleHashtable: Hashtable<any, any>, rectangleArrayHashtable: Hashtable<any, any>){
+public constructor (name: string, hashtable: Hashtable, rectangleHashtable: Hashtable, rectangleArrayHashtable: Hashtable){
 
             super();
             //var name = name
@@ -128,8 +124,6 @@ this.name= name;
     //var level = level
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -142,7 +136,7 @@ this.setInitialized(true);
 
                 //@Throws(Error::class)
             
-    init(imageCache: ImageCache, level: number){
+    initImageCache(imageCache: ImageCache, level: number){
     //var imageCache = imageCache
     //var level = level
 }
@@ -154,14 +148,15 @@ this.setInitialized(true);
     //var resource = resource
     //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
 
-                        if(this.hashtable.containsKey(resource as Object))
+                        if(this.hashtable.containsKey( as Objectresource))
                         
                                     {
                                     
 
 
                             throw new Error(new StringMaker().
-                            append("Resource Already Created: ")!.append(resource)!.toString())
+                            append("Resource Already Created: ")!.append(resource)!.toString());
+                    
 
                                     }
                                 
@@ -176,8 +171,6 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
     //var resource = resource
 
     var basicAnimationInterfaceFactoryInterfaceCanBeNull: any? = this.hashtable.get(resource as Object);
-        
-        
 ;
     
 
@@ -199,7 +192,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return basicAnimationInterfaceFactoryInterfaceCanBeNull as BasicAnimationInterfaceFactoryInterface;
+                        return  as BasicAnimationInterfaceFactoryInterfacebasicAnimationInterfaceFactoryInterfaceCanBeNull;
     
 }
 
@@ -210,8 +203,6 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
     //var resource = resource
 
     var rectangleCanBeNull: any? = this.rectangleHashtable!.get(resource as Object);
-        
-        
 ;
     
 
@@ -233,7 +224,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return rectangleCanBeNull as Rectangle;
+                        return  as RectanglerectangleCanBeNull;
     
 }
 
@@ -256,7 +247,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object);as Array<Rectangle[]?>;
+                        return as Array<Rectangle[]?>this.rectangleArrayOfArraysHashtable!.get(resource as Object);;
     
 }
 
@@ -285,8 +276,6 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
     //var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -326,7 +315,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): Hashtable{
 
 
 
@@ -336,7 +325,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleHashtable(): Hashtable<any, any>{
+    public getRectangleHashtable(): Hashtable{
 
 
 
@@ -346,7 +335,7 @@ this.rectangleArrayOfArraysHashtable!.put(resource, rectangleArrayOfArrays);
 }
 
 
-    public getRectangleArrayOfArraysHashtable(): Hashtable<any, any>{
+    public getRectangleArrayOfArraysHashtable(): Hashtable{
 
 
 

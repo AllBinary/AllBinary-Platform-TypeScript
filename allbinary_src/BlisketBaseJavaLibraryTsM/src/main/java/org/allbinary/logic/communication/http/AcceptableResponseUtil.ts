@@ -51,8 +51,6 @@ export class AcceptableResponseUtil
         
 
     private static readonly instance: AcceptableResponseUtil = new AcceptableResponseUtil();
-        
-        
 
     public static getInstance(): AcceptableResponseUtil{
 
@@ -70,12 +68,8 @@ TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
 }
 
     public readonly candidateVector: Vector = new Vector();
-        
-        
 
     public readonly tagNameVector: Vector = new Vector();
-        
-        
 
     public get(index: number): string{
 var index = index
@@ -83,7 +77,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.candidateVector!.get(index); as String;
+                        return  as Stringthis.candidateVector!.get(index);;
     
 }
 
@@ -94,7 +88,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.tagNameVector!.get(index); as String;
+                        return  as Stringthis.tagNameVector!.get(index);;
     
 }
 

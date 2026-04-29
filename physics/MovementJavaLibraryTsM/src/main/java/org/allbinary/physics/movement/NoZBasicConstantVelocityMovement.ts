@@ -66,12 +66,8 @@ export class NoZBasicConstantVelocityMovement extends Movement implements Veloci
     private velocityProperties: BasicVelocityProperties
 
     private speedBasicDecimal: BasicDecimal = BasicDecimal.ZERO_BIGDECIMAL;
-        
-        
 
     private readonly axisMathVectorUtil: AxisMathVectorUtil = AxisMathVectorUtil.getInstance()!;
-        
-        
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
 
             super();
@@ -92,11 +88,9 @@ this.speedBasicDecimal= speedBasicDecimal;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
-this.velocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle));
+this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
 }
 
@@ -108,23 +102,17 @@ var angle = angle
 var otherAngle = otherAngle
 
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
-        
-        
 ;
     
 
-    var xVector: number = (this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
-        
-        
+    var xVector: number = Math.round(this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
 ;
     
 
-    var yVector: number = (this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
-        
-        
+    var yVector: number = Math.round(this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
 ;
     
-layer.move(xVector, yVector, 0);
+layer.moveDXYZ(xVector, yVector, 0);
     
 }
 
@@ -133,7 +121,7 @@ layer.move(xVector, yVector, 0);
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), 0);
+layer.moveDXYZ(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), 0);
     
 }
 

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LogConfigType } from "./LogConfigType.js";
+
 export class LogConfigTypeFactory
             extends Object
          {
         
 
     private static readonly instance: LogConfigTypeFactory = new LogConfigTypeFactory();
-        
-        
 
     public static getInstance(): LogConfigTypeFactory{
 
@@ -57,32 +57,18 @@ export class LogConfigTypeFactory
 
 
     private readonly NO_DESCRIPTION: string = "No Description";
-        
-        
 
     public readonly FILE: LogConfigType = new LogConfigType("File", NO_DESCRIPTION);
-        
-        
 
     public readonly FILEERROR: LogConfigType = new LogConfigType("File Error", NO_DESCRIPTION);
-        
-        
 
     public readonly IDLOGGING: LogConfigType = new LogConfigType("ID Logging", NO_DESCRIPTION);
-        
-        
 
     public readonly REPLACE: LogConfigType = new LogConfigType("Replace", NO_DESCRIPTION);
-        
-        
 
     public readonly REPLACE_INFO: LogConfigType = new LogConfigType("Replace Info", NO_DESCRIPTION);
-        
-        
 
     public readonly REPLACEERROR: LogConfigType = new LogConfigType("Replace Error", NO_DESCRIPTION);
-        
-        
 
 }
                 

@@ -62,20 +62,12 @@ export class ImageJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 
     private isDrawn: boolean = false;
-        
-        
 
     private bufferedImage: BufferedImage
 public constructor (bufferedImage: BufferedImage){
@@ -117,8 +109,6 @@ this.isDrawn= true;
     initComponents(){
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

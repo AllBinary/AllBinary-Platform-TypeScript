@@ -45,8 +45,6 @@ export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeo
         
 
     private static readonly instance: CloseLoopRaceTrackGeographicMapCellTypeFactory = new CloseLoopRaceTrackGeographicMapCellTypeFactory();
-        
-        
 
     public static getInstance(): CloseLoopRaceTrackGeographicMapCellTypeFactory{
 

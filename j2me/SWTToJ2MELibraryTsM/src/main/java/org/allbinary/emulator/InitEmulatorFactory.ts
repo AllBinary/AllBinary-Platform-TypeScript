@@ -43,8 +43,6 @@ export class InitEmulatorFactory
         
 
     private static readonly instance: InitEmulatorFactory = new InitEmulatorFactory();
-        
-        
 
     public static getInstance(): InitEmulatorFactory{
 
@@ -74,8 +72,6 @@ this.initEmulator= initEmulator;
 
 
     private initEmulator: boolean = false;
-        
-        
 
 }
                 

@@ -85,8 +85,6 @@ export class CssPropertyValues
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private propertyValueVector: Vector
 public constructor (){
@@ -101,17 +99,13 @@ public constructor (node: Node){
             super();
         var node = node
 
-    var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var indexPropertyValueHashMap: HashMap = new HashMap();
 ;
     
 this.propertyValueVector= new Vector();
     
 
     var cssPropertyNodeVector: Vector = DomSearchHelper.getAllNodes(CssPropertyValueData.getInstance()!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -125,8 +119,6 @@ this.propertyValueVector= new Vector();
                                 
 
     var size: number = cssPropertyNodeVector!.length!;
-        
-        
 ;
     
 
@@ -135,26 +127,18 @@ this.propertyValueVector= new Vector();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index); as Node;
-        
-        
+    var cssPropertyValueNode: Node =  as NodecssPropertyNodeVector!.get(index);;
 ;
     
 
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, cssPropertyValueNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var propertyValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;
-        
-        
 ;
     
 
@@ -168,14 +152,10 @@ index < size; index++)
                                 
 
     var indexNode: Node = DomSearchHelper.getNode(DomData.INDEX, cssPropertyValueNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var indexValue: string = DomNodeHelper.getTextNodeValue(indexNode)!;
-        
-        
 ;
     
 indexPropertyValueHashMap!.put(indexValue, propertyValue);
@@ -184,8 +164,6 @@ indexPropertyValueHashMap!.put(indexValue, propertyValue);
 
 
     var size2: number = indexPropertyValueHashMap!.keys.size()!;
-        
-        
 ;
     
 
@@ -194,20 +172,14 @@ indexPropertyValueHashMap!.put(indexValue, propertyValue);
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
 
-    var indexInt: Integer = new Integer(index);
-        
-        
+    var indexInt: number = index;
 ;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()); as String;
-        
-        
+    var propertyValue: string =  as StringindexPropertyValueHashMap!.get(indexInt!.toString());;
 ;
     
 this.propertyValueVector!.add(propertyValue);
@@ -217,35 +189,25 @@ this.propertyValueVector!.add(propertyValue);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var cssPropertyValueData: CssPropertyValueData = CssPropertyValueData.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = this.propertyValueVector!.length!;
-        
-        
 ;
     
 
@@ -254,14 +216,10 @@ this.propertyValueVector!.add(propertyValue);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index); as String;
-        
-        
+    var value: string =  as Stringthis.propertyValueVector!.get(index);;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -298,9 +256,7 @@ var document = document
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 this.logUtil!.putF("CssPropertyValues HashMap: " +hashMap!.toString(), this, "toXmlNode()");

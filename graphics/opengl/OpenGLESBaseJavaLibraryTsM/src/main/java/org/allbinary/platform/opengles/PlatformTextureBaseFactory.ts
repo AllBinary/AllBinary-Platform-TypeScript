@@ -52,12 +52,8 @@ export class PlatformTextureBaseFactory
         
 
     public static readonly NULL_PLATFORM_TEXTURE_BASE_FACTORY: PlatformTextureBaseFactory = new PlatformTextureBaseFactory();
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public load(gl: GL10, target: number, level: number, image: Image, border: number, flip: boolean){
     //var gl = gl

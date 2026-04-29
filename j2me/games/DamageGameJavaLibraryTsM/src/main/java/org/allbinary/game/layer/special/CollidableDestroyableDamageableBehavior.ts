@@ -56,8 +56,6 @@ export class CollidableDestroyableDamageableBehavior extends CollidableBaseBehav
         
 
     readonly damageUtil: DamageUtil = DamageUtil.getInstance()!;
-        
-        
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
             super(ownerLayer, collidable);
                         //var ownerLayer = ownerLayer
@@ -98,15 +96,11 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
-        
-        
+    var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayer;
 ;
     
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayercollidableInterfaceCompositeInterface;
 ;
     
 ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageableLayer!.getDamage(0), 0);
@@ -114,7 +108,7 @@ ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageabl
 }
 
 
-    public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("No Longer Used", this);
     
@@ -129,7 +123,7 @@ ForcedLogUtil.log("No Longer Used", this);
 
                 //@Throws(Error::class)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("No Longer Used", this);
     

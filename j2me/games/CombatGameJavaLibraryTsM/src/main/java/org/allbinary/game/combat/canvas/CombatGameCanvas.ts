@@ -86,8 +86,6 @@ export class CombatGameCanvas extends AllBinaryGameCanvas {
         
 
     basicLayerProcessor: BasicLayerProcessor[] = [];
-        
-        
 public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(cmdListener, gameLayerManager, highScoresFactoryInterface, gameInitializationInterfaceFactoryInterface, buffered);
                         //var cmdListener = cmdListener
@@ -105,18 +103,18 @@ public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGam
     CombatGameCanvas_init(){
 DestroyEventCircularStaticPool.getInstance()!.init(this);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Destroy Events");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Destroy Events");
     
 }
 
 
                 //@Throws(Error::class)
             
-    init(abeClientInformation: AbeClientInformationInterface){
+    initApp(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
 this.CombatGameCanvas_init();
     
-super.init(abeClientInformation);
+super.initApp(abeClientInformation);
     
 }
 
@@ -125,18 +123,14 @@ super.init(abeClientInformation);
     //var portion = portion
 DestroyedLayerProcessor.init();
     
-ProgressCanvasFactory.getInstance()!.addPortion(portion, "Basic Processors");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(portion, "Basic Processors");
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -175,8 +169,6 @@ super.processPlayingGame();
                         for (
     var index: number = basicLayerProcessor!.length
                 ;
-        
-        
 --index >= 0; )
         {
 basicLayerProcessor[index]!.process(this.gameLayerManager);
@@ -198,8 +190,6 @@ super.cleanupGame();
                         for (
     var index: number = basicLayerProcessor!.length
                 ;
-        
-        
 --index >= 0; )
         {
 basicLayerProcessor[index]!.getList()!.clear();

@@ -64,6 +64,8 @@ import { GeographicMapCellPathHistoryInfo } from "../../../../../org/allbinary/m
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicDirectionAIHelper } from "./BasicDirectionAIHelper.js";
+
 export class BasicAIProcessor
             extends Object
          {
@@ -119,9 +121,9 @@ this.init();
     public init(){
 this.geographicMapCellPathHistoryInfo= new GeographicMapCellPathHistoryInfo();
     
-this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
+this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPosition( as GeographicMapCellPositiongeographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1));
     
-this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition(geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition);
+this.geographicMapCellPathHistoryInfo!.setNextOnPathGeographicMapCellPosition( as GeographicMapCellPositiongeographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1));
     
 this.update();
     
@@ -129,8 +131,6 @@ this.update();
 
 
     private readonly geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -138,20 +138,14 @@ this.update();
 var currentGeographicMapCellPosition = currentGeographicMapCellPosition
 
     var keyDirection: number =  -1;
-        
-        
 ;
     
 
     var goToGeographicMapCellPosition: GeographicMapCellPosition = this.geographicMapCellPathHistoryInfo!.getNextChosenOnPathGeographicMapCellPosition()!;
-        
-        
 ;
     
 
     var geographicMapDirectionData: Direction = geographicMapDirectionUtil!.getDirectionFromCellPositionToAdjacentCellPosition(currentGeographicMapCellPosition, goToGeographicMapCellPosition)!;
-        
-        
 ;
     
 
@@ -189,8 +183,6 @@ var myManager = myManager
 var currentGeographicMapCellPosition = currentGeographicMapCellPosition
 
     var keyDirection: number =  -1;
-        
-        
 ;
     
 

@@ -47,8 +47,6 @@ export class TouchButtonsBuilderFactory
         
 
     public static readonly NO_TOUCH_BUTTON_BUILDER_FACTORY: TouchButtonsBuilderFactory = new TouchButtonsBuilderFactory();
-        
-        
 
     public getInstance(): BaseTouchInput{
 

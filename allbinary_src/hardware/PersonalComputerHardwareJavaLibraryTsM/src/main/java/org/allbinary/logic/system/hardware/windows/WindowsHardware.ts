@@ -124,16 +124,10 @@ export class WindowsHardware
     private monitorInterfaceVector: Vector
 
     private readonly NAME: string = "Windows Hardware Profile";
-        
-        
 
     private readonly MINHARDWARE: number = 0;
-        
-        
 
     private readonly componentFactory: ComponentFactory = ComponentFactory.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -166,7 +160,8 @@ this.monitorInterfaceVector= new Vector();
 
                         if(this.componentInterfaceVector!.length < this.MINHARDWARE)
                         
-                                    throw new Error("Not Enough Data For A Valid License On Windows")
+                                    throw new Error("Not Enough Data For A Valid License On Windows");
+                                
 
                 //: 
 } catch(e) 
@@ -174,7 +169,8 @@ this.monitorInterfaceVector= new Vector();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -285,7 +281,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.multimediaInterfaceVector!.get(index); as MediaInterface;
+                        return  as MediaInterfacethis.multimediaInterfaceVector!.get(index);;
     
 }
 
@@ -296,7 +292,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.bridgeInterfaceVector!.get(index); as BridgeInterface;
+                        return  as BridgeInterfacethis.bridgeInterfaceVector!.get(index);;
     
 }
 
@@ -307,7 +303,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuInterfaceVector!.get(index); as CpuInterface;
+                        return  as CpuInterfacethis.cpuInterfaceVector!.get(index);;
     
 }
 
@@ -318,7 +314,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.ethernetInterfaceVector!.get(index); as EthernetInterface;
+                        return  as EthernetInterfacethis.ethernetInterfaceVector!.get(index);;
     
 }
 
@@ -329,7 +325,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.fireWireInterfaceVector!.get(index); as FireWireInterface;
+                        return  as FireWireInterfacethis.fireWireInterfaceVector!.get(index);;
     
 }
 
@@ -340,7 +336,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hardDriveControllerInterfaceVector!.get(index); as HardDriveControllerInterface;
+                        return  as HardDriveControllerInterfacethis.hardDriveControllerInterfaceVector!.get(index);;
     
 }
 
@@ -351,7 +347,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hardDriveInterfaceVector!.get(index); as HardDriveInterface;
+                        return  as HardDriveInterfacethis.hardDriveInterfaceVector!.get(index);;
     
 }
 
@@ -362,7 +358,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.macInterfaceVector!.get(index); as MachineAccessControlAddressInterface;
+                        return  as MachineAccessControlAddressInterfacethis.macInterfaceVector!.get(index);;
     
 }
 
@@ -373,7 +369,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.monitorInterfaceVector!.get(index); as MonitorInterface;
+                        return  as MonitorInterfacethis.monitorInterfaceVector!.get(index);;
     
 }
 
@@ -384,7 +380,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.usbInterfaceVector!.get(index); as UsbInterface;
+                        return  as UsbInterfacethis.usbInterfaceVector!.get(index);;
     
 }
 
@@ -395,7 +391,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.videoInterfaceVector!.get(index); as VideoInterface;
+                        return  as VideoInterfacethis.videoInterfaceVector!.get(index);;
     
 }
 
@@ -406,7 +402,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
     
 }
 
@@ -414,14 +410,10 @@ var index = index
     public toString(): string{
 
     var hardwareBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = this.componentInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -430,14 +422,10 @@ var index = index
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
-        
-        
+    var componentInterface: HardwareComponentInterface =  as HardwareComponentInterfacethis.componentInterfaceVector!.get(index);;
 ;
     
 hardwareBuffer!.append(componentInterface!.toString());
@@ -466,7 +454,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable{
 var hardwareInterface = hardwareInterface
 
 

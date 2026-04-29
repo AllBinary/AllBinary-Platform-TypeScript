@@ -53,8 +53,6 @@ export class UserEntityFactory
     public static getInstance(): UserEntity{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -63,7 +61,7 @@ export class UserEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new org.allbinary.data.tables.user.UserEntity() as UserEntity;
+                        return  as UserEntitynew org.allbinary.data.tables.user.UserEntity();
     
 
                 //: 
@@ -71,8 +69,6 @@ export class UserEntityFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

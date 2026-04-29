@@ -64,8 +64,6 @@ public constructor (){
             super();
         
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait(); && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
@@ -76,15 +74,11 @@ this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var command: Command = anyType as Command;
-        
-        
+    var command: Command =  as CommandanyType;
 ;
     
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 

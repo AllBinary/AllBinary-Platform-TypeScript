@@ -87,12 +87,8 @@ export class BillingAddressHelper extends Table {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
@@ -103,12 +99,12 @@ export class BillingAddressHelper extends Table {
     private streetAddress: StreetAddress
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -144,8 +140,6 @@ this.streetAddress= new StreetAddress(this.request);
             
     var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             drop()!;
-        
-        
 ;
     
 
@@ -169,8 +163,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to drop Admin table";
-        
-        
 ;
     
 
@@ -199,8 +191,6 @@ this.streetAddress= new StreetAddress(this.request);
             
     var success: string = new BillingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             createTable()!;
-        
-        
 ;
     
 
@@ -224,8 +214,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to create user table";
-        
-        
 ;
     
 
@@ -253,20 +241,14 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING);
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(billingAddressesEntity, this.portion)!;
-        
-        
 ;
     
 
@@ -290,8 +272,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -319,14 +299,10 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Backup Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(new BillingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
-        
-        
 ;
     
 
@@ -350,8 +326,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 
@@ -379,8 +353,6 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Successfully Added Billing Address";
-        
-        
 ;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
@@ -406,8 +378,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
             {
 
     var error: string = "Failed to add Billing Address";
-        
-        
 ;
     
 
@@ -435,8 +405,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
         try {
             
     var success: string = "Successfully Updated Billing Address";
-        
-        
 ;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
@@ -462,8 +430,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
             {
 
     var error: string = "Failed update of a User Billing Address Table";
-        
-        
 ;
     
 
@@ -491,14 +457,10 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
         try {
             
     var shippingAddressesEntityFactory: ShippingAddressesEntityFactory = ShippingAddressesEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var streetAddress: StreetAddress = shippingAddressesEntityFactory!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;
-        
-        
 ;
     
 
@@ -534,8 +496,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
             {
 
     var error: string = "Failed to Set Billing address to Shipping Address";
-        
-        
 ;
     
 
@@ -563,11 +523,9 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
         try {
             
     var success: string = "Successfully Removed Billing Address";
-        
-        
 ;
     
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(this.streetAddress!.getId());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -590,8 +548,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
             {
 
     var error: string = "Failed to remove Billing Address";
-        
-        
 ;
     
 
@@ -619,8 +575,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
         try {
             
     var success: string = "Successfully Set Billing Address";
-        
-        
 ;
     
 BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
@@ -646,8 +600,6 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
             {
 
     var error: string = "Failed to set billing Address";
-        
-        
 ;
     
 

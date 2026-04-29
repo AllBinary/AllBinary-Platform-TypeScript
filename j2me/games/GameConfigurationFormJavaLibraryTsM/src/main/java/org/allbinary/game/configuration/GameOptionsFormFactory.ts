@@ -58,8 +58,6 @@ export class GameOptionsFormFactory
         
 
     private static readonly instance: GameOptionsFormFactory = new GameOptionsFormFactory();
-        
-        
 
     public static getInstance(): GameOptionsFormFactory{
 
@@ -72,8 +70,6 @@ export class GameOptionsFormFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -99,8 +95,6 @@ var foregroundBasicColor = foregroundBasicColor
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);

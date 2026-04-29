@@ -53,16 +53,10 @@ export class GeographicMapCellType
         
 
     public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE_ARRAY: GeographicMapCellType[] = [];
-        
-        
 
     public static readonly NULL_GEOGRAPHIC_MAP_CELL_TYPE: GeographicMapCellType = new GeographicMapCellType(Integer.MIN_VALUE, 0);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly type: number
 public constructor (type: number, reset: number){
@@ -78,14 +72,10 @@ this.type= type;
                                     {
                                     
     var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;
-        
-        
 ;
     
 
@@ -107,7 +97,8 @@ this.type= type;
                                     
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 
@@ -135,7 +126,7 @@ this.type= type;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SmallIntegerSingletonFactory.getInstance()!.getInstance(this.type)!.toString();;
+                        return SmallIntegerSingletonFactory.getInstance()!.getAt(this.type)!.toString();;
     
 }
 

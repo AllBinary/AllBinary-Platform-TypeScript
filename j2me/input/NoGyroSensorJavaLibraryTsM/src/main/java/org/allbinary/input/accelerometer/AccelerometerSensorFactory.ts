@@ -52,22 +52,16 @@ export class AccelerometerSensorFactory
         
 
     private allBinaryAccelerometerSensor: AllBinaryOrientationSensor = AllBinaryOrientationSensor.NULL_ALLBINARY_ORIENTATION_SENSOR;
-        
-        
 
                 //@Throws(Error::class)
             
     public static init(){
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -77,7 +71,8 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Orientation Sensors")
+                            throw new Error("No Orientation Sensors");
+                    
 
                                     }
                                 
@@ -88,7 +83,8 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Simulation Sensors")
+                            throw new Error("No Simulation Sensors");
+                    
 
                                     }
                                 
@@ -105,7 +101,8 @@ export class AccelerometerSensorFactory
                             
 
 
-                            throw new Error("Not Such SensorFeature")
+                            throw new Error("Not Such SensorFeature");
+                    
 
                         }
                             

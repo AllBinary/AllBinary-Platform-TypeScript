@@ -32,8 +32,6 @@ export class AnalogLocationInput
         
 
     public static readonly NULL_ANALOG_LOCATION_INPUT: AnalogLocationInput = new AnalogLocationInput( -1);
-        
-        
 
     private readonly playerId: number
 

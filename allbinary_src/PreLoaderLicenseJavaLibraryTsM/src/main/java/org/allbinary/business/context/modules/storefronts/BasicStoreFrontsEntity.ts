@@ -58,12 +58,8 @@ export class BasicStoreFrontsEntity extends InitSql {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "storefronts";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -80,17 +76,13 @@ this.setTable(this.tableName);
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
     
 
-    var storeHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var storeHashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -98,7 +90,8 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
                                     null
                                 )
                         
-                                    throw new Error("No Such Store: " +name)
+                                    throw new Error("No Such Store: " +name);
+                                
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
@@ -112,7 +105,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new BasicStoreFront(storeHashMap) as BasicStoreFrontInterface;
+                        return  as BasicStoreFrontInterfacenew BasicStoreFront(storeHashMap);
     
 }
 

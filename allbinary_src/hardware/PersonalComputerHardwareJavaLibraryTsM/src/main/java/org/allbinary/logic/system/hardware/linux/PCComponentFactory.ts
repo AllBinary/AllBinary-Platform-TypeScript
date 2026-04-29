@@ -85,8 +85,6 @@ export class PCComponentFactory
         
 
     private static readonly instance: PCComponentFactory = new PCComponentFactory();
-        
-        
 
     public static getInstance(): PCComponentFactory{
 
@@ -99,12 +97,8 @@ export class PCComponentFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly componentFactory: ComponentFactory = ComponentFactory.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -130,7 +124,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Ethernet(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Ethernet(componentData);
     
 
                                     }
@@ -143,7 +137,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Bridge(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Bridge(componentData);
     
 
                                     }
@@ -156,7 +150,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new HardDriveController(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew HardDriveController(componentData);
     
 
                                     }
@@ -169,7 +163,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Media(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Media(componentData);
     
 
                                     }
@@ -182,7 +176,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new HardDriveController(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew HardDriveController(componentData);
     
 
                                     }
@@ -195,7 +189,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Usb(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Usb(componentData);
     
 
                                     }
@@ -208,7 +202,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Video(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Video(componentData);
     
 
                                     }
@@ -221,7 +215,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new PCI(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew PCI(componentData);
     
 
                                     }
@@ -233,7 +227,7 @@ var componentData = componentData
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Unknown(componentData) as HardwareComponentInterface;
+                        return  as HardwareComponentInterfacenew Unknown(componentData);
     
 
                 //: 
@@ -241,8 +235,6 @@ var componentData = componentData
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

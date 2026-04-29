@@ -149,12 +149,8 @@ export class ProductListing
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 
     private readonly storeFronts: StoreFrontsEntity
 
@@ -165,8 +161,6 @@ export class ProductListing
     private readonly searchRequest: SearchRequest
 
     private readonly INVENTORY: string = ".InventoryView";
-        
-        
 public constructor (searchRequest: SearchRequest){
 
             super();
@@ -188,26 +182,18 @@ this.inventory= new InventoryEntity();
 var storeFront = storeFront
 
     var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;
-        
-        
 ;
     
 
     var keywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, storeFront!.getCategoryPath(), BasicItemData.KEYWORDS)!;
-        
-        
 ;
     
 
     var subStoreVector: BasicArrayList = storeFront!.getSubStores()!;
-        
-        
 ;
     
 
     var size: number = subStoreVector!.size()!;
-        
-        
 ;
     
 
@@ -216,20 +202,14 @@ var storeFront = storeFront
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index); as String;
-        
-        
+    var subStore: string =  as StringsubStoreVector!.get(index);;
 ;
     
 
     var substoreKeywords: Vector = inventoryColumnUtil!.getColumnWhereLike(this.inventory, AbPathData.getInstance()!.SEPARATOR +subStore, BasicItemData.CATEGORY)!;
-        
-        
 ;
     
 keywords.addAll(substoreKeywords);
@@ -238,14 +218,10 @@ keywords.addAll(substoreKeywords);
 
 
     var uniqueTokens: UniqueTokens = new UniqueTokens();
-        
-        
 ;
     
 
     var keywordHashSet: HashSet = uniqueTokens!.getWhithoutDashesAndSkipNumberOnlyTokens(keywords)!;
-        
-        
 ;
     
 
@@ -273,8 +249,6 @@ var data = data
                                 
 
     var newFile: AbFile = new AbFile(file);
-        
-        
 ;
     
 
@@ -294,8 +268,6 @@ newFile!.createNewFile();
                                     {
                                     
     var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(newFile)!;
-        
-        
 ;
     
 idOutData!.writeBytes(data);
@@ -320,7 +292,8 @@ StreamUtil.getInstance()!.close(idOutData);
                             
 
 
-                            throw new Error("Could Not Create: " +file)
+                            throw new Error("Could Not Create: " +file);
+                    
 
                         }
                             
@@ -329,21 +302,17 @@ StreamUtil.getInstance()!.close(idOutData);
 
                 //@Throws(Error::class)
             
-    create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
+    create(keywordData: string, keywordFilenameHashMap: HashMap, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
 var keywordFilenameHashMap = keywordFilenameHashMap
 var vector = vector
 var staticPath = staticPath
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = SpecialCharacterUtil.getHashMap()!;
-        
-        
+    var hashMap: HashMap = SpecialCharacterUtil.getHashMap()!;
 ;
     
 hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_STRING);
@@ -351,14 +320,10 @@ hashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstance()!.EMPTY_ST
 
     var pageName: string = new Replace(hashMap).
                             all(keywordData)!;
-        
-        
 ;
     
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;
-        
-        
 ;
     
 searchParams!.add(BasicItemData.KEYWORDS, keywordData);
@@ -371,20 +336,14 @@ this.searchRequest!.setFileBaseName(pageName);
     
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
-        
-        
 ;
     
 
     var productListingPages: string[] = inventorySearchUtil!.search(abeClientInformation, searchRequest, vector)!;
-        
-        
 ;
     
 
@@ -393,8 +352,6 @@ this.searchRequest!.setFileBaseName(pageName);
 
                         for (
     var index: number = 0;
-        
-        
 index < productListingPages!.length; index++)
         {
 
@@ -420,15 +377,13 @@ index < productListingPages!.length; index++)
                                 
 
     var indexStr: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
                         if(index > 0)
                         
                                     {
-                                    indexStr= new Integer(index).
+                                    indexStr= index.
                             toString();
     
 
@@ -450,8 +405,6 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     
 
     var file: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -461,7 +414,8 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
                                     
 
 
-                            throw new Error("Could Not Create Directory: " +staticPath)
+                            throw new Error("Could Not Create Directory: " +staticPath);
+                    
 
                                     }
                                 
@@ -472,26 +426,20 @@ this.savePage(file, productListingPages[index]!);
 }
 
 
-    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
+    addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap){
 var storeFront = storeFront
 var keywordFilenameHashMap = keywordFilenameHashMap
 
     var keywordHashSet: Set = keywordFilenameHashMap!.keys!;
-        
-        
 ;
     
 
     var keywordArray: any[] = keywordHashSet!.toArray()!;
-        
-        
 ;
     
 
     var size: number = keywordArray!.length
                 ;
-        
-        
 ;
     
 
@@ -500,26 +448,18 @@ var keywordFilenameHashMap = keywordFilenameHashMap
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var insertVector: Vector = new Vector();
-        
-        
 ;
     
 
-    var keywordData: string = keywordArray[index]! as String;
-        
-        
+    var keywordData: string =  as StringkeywordArray[index]!;
 ;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object); as String;
-        
-        
+    var fileName: string =  as StringkeywordFilenameHashMap!.get(keywordData as Object);;
 ;
     
 insertVector!.add(storeFront!.getName());
@@ -542,14 +482,10 @@ this.staticPages!.insert(insertVector);
         try {
             
     var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -562,8 +498,6 @@ stringBuffer!.append(storeFront!.getStaticPath());
     
 
     var staticPath: AbPath = new AbPath(stringBuffer!.toString());
-        
-        
 ;
     
 
@@ -577,27 +511,19 @@ stringBuffer!.append(storeFront!.getStaticPath());
                                 
 
     var keywordHashSet: HashSet = this.getHashSet(storeFront)!;
-        
-        
 ;
     
 
     var keywordArray: any[] = keywordHashSet!.toArray()!;
-        
-        
 ;
     
 
     var size: number = keywordArray!.length
                 ;
-        
-        
 ;
     
 
-    var keywordFilenameHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keywordFilenameHashMap: HashMap = new HashMap();
 ;
     
 
@@ -623,14 +549,10 @@ stringBuffer!.append(" Store Not Found");
                                 
 
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
-        
-        
 ;
     
 
     var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;
-        
-        
 ;
     
 
@@ -639,14 +561,10 @@ stringBuffer!.append(" Store Not Found");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var keywordData: string = keywordArray[index]! as String;
-        
-        
+    var keywordData: string =  as StringkeywordArray[index]!;
 ;
     
 
@@ -687,7 +605,8 @@ stringBuffer!.append(this.INVENTORY);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -701,8 +620,6 @@ var storeName = storeName
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -727,14 +644,10 @@ stringBuffer!.append("<br />");
                         else {
                             
     var storeFrontVector: Vector = this.storeFronts!.getStoreFrontNames()!;
-        
-        
 ;
     
 
     var size: number = storeFrontVector!.length!;
-        
-        
 ;
     
 
@@ -743,11 +656,9 @@ stringBuffer!.append("<br />");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-storeName= storeFrontVector!.get(index); as String;
+storeName=  as StringstoreFrontVector!.get(index);;
     
 this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
     
@@ -788,7 +699,8 @@ stringBuffer!.append("All Static Pages Generated<br/>");
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

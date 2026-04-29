@@ -58,30 +58,22 @@ export class LayerUtil
         
 
     private static readonly HASHTABLE: string = "Hashtable: ";
-        
-        
 
-    public static toString(hashtable: Hashtable<any, any>, x: number, y: number, z: number): string{
+    public static toString(hashtable: Hashtable, x: number, y: number, z: number): string{
 var hashtable = hashtable
 var x = x
 var y = y
 var z = z
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(HASHTABLE);

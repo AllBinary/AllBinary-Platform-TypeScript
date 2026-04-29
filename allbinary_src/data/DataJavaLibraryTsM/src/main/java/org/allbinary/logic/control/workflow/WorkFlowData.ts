@@ -43,8 +43,6 @@ export class WorkFlowData
         
 
     private static readonly instance: WorkFlowData = new WorkFlowData();
-        
-        
 
     public static getInstance(): WorkFlowData{
 
@@ -62,20 +60,12 @@ private constructor (){
 
 
     public WORKFLOWS: string = "WORKFLOWS";
-        
-        
 
     public WORKFLOW: string = "WORKFLOW";
-        
-        
 
     public NAME: string = "WORKFLOW_NAME";
-        
-        
 
     public DATA: string = "WORKFLOW_DATA";
-        
-        
 
 }
                 

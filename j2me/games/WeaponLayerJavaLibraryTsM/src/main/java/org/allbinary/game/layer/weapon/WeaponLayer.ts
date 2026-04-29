@@ -113,34 +113,24 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
 
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 
     initAnimationInterface: Animation
 
     private destroyedAnimationInterface: Animation
 
     private sourceLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 
     totalDamage: number= 0
 
     private initDamage: number= 0
 
     private destroyed: boolean = true;
-        
-        
 
     scoreableInterface: ScoreableInterface = NoScoreable.getInstance()!;
-        
-        
 
     private movement: Movement
 
     private weaponProperties: WeaponProperties = WeaponProperties.NULL_WEAPON_PROPERTIES;
-        
-        
 
     private readonly multiPlayerType: number
 protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
@@ -171,21 +161,19 @@ this.multiPlayerType= multiPlayerType;
 
 
     private collidableWeaponBehavior: CollidableWeaponBehavior = CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR;
-        
-        
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
 var collidableInferface = collidableInferface
 super.setCollidableInferface(collidableInferface);
     
-this.collidableWeaponBehavior= this.getCollidableInferface(); as CollidableWeaponBehavior;
+this.collidableWeaponBehavior=  as CollidableWeaponBehaviorthis.getCollidableInferface();;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public init(x: number, y: number, z: number){
+    public initXYZ(x: number, y: number, z: number){
 var x = x
 var y = y
 var z = z
@@ -243,8 +231,6 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
     setGroupInterface(){
 
     var basicGroupFactory: BasicGroupFactory = BasicGroupFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -278,15 +264,11 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface(); as IndexedAnimation;
-        
-        
+    var indexedAnimationInterface: IndexedAnimation =  as IndexedAnimationthis.getAnimationInterface();;
 ;
     
 
     var currentFrame: number = indexedAnimationInterface!.getFrame()!;
-        
-        
 ;
     
 
@@ -309,9 +291,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface(); as CollidableWeaponBehavior;
-        
-        
+    var collidableWeaponBehavior: CollidableWeaponBehavior =  as CollidableWeaponBehaviorthis.getCollidableInferface();;
 ;
     
 
@@ -406,8 +386,6 @@ var damageType = damageType
                                     {
                                     
     var total: number = this.getInitDamage() -this.totalDamage;
-        
-        
 ;
     
 this.givePoints(total);
@@ -523,11 +501,9 @@ this.sourceLayerInterface= sourceLayerInterface;
 var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
-this.animationInterface!.paint(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
+this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight());
     
 }
 
@@ -536,8 +512,6 @@ this.animationInterface!.paint(graphics, viewPosition!.getX() -this.getHalfWidth
 var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
 this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHalfWidth(), viewPosition!.getY() -this.getHalfHeight(), viewPosition!.getZ() -this.getHalfDepth());

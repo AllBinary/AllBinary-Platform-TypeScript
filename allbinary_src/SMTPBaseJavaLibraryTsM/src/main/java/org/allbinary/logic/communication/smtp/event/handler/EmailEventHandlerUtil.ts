@@ -78,8 +78,6 @@ export class EmailEventHandlerUtil
         
 
     private static readonly instance: EmailEventHandlerUtil = new EmailEventHandlerUtil();
-        
-        
 
     public static getInstance(): EmailEventHandlerUtil{
 
@@ -99,32 +97,22 @@ export class EmailEventHandlerUtil
     //var userInterface = userInterface
 
     var userConfigurationInterface: UserConfigurationInterface = userInterface!.getUserConfigurationInterface()!;
-        
-        
 ;
     
 
     var userEmailConfigurationInterface: UserEmailConfigurationInterface = userConfigurationInterface!.getUserEmailConfigurationInterface()!;
-        
-        
 ;
     
 
     var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;
-        
-        
 ;
     
 
     var userEmailEventListenerInterface: UserEmailEventListenerInterface = userEmailEventsConfigurationInterface!.getEventListener(abeClientInformation, userEmailEventNameData, userInterface)!;
-        
-        
 ;
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(userEmailEventListenerInterface);
@@ -139,8 +127,6 @@ vector.add(userEmailEventListenerInterface);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -159,8 +145,6 @@ private constructor (){
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Returning UserEmailEventHandler for ");
@@ -176,16 +160,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getEventHandler");
                                 
 
     var userEmailEventHandler: UserEmailEventHandler = new UserEmailEventHandler();
-        
-        
 ;
     
 userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
     
 
     var size: number = userVector!.length!;
-        
-        
 ;
     
 
@@ -194,20 +174,14 @@ userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userInterface: UserInterface = userVector!.get(index); as UserInterface;
-        
-        
+    var userInterface: UserInterface =  as UserInterfaceuserVector!.get(index);;
 ;
     
 
     var vector: Vector = EmailEventHandlerUtil.getUserEmailEventListenerVector(abeClientInformation, userEmailEventNameData, userInterface)!;
-        
-        
 ;
     
 userEmailEventHandler!.addListener(vector);

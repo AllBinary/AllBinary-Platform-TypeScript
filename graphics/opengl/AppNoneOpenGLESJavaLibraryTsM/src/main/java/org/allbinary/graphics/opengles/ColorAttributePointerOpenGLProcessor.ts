@@ -43,12 +43,12 @@ import { ObjectThreedOpenGLProcessor } from "../../../../org/allbinary/graphics/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ColorAttributePointerOpenGLProcessor extends ObjectThreedOpenGLProcessor {
         
 
     private static readonly instance: ColorAttributePointerOpenGLProcessor = new ColorAttributePointerOpenGLProcessor();
-        
-        
 
     public static getInstance(): ColorAttributePointerOpenGLProcessor{
 
@@ -71,7 +71,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

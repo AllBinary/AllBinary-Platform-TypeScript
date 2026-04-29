@@ -53,8 +53,6 @@ export class PathFindingNodeCostInfo
         
 
     private readonly pathFindingNodeCostInfoData: PathFindingNodeCostInfoData = PathFindingNodeCostInfoData.getInstance()!;
-        
-        
 
     public costFromStartP: number
 
@@ -70,7 +68,7 @@ this.costFromStartP= costFromStart;
     
 this.costToEndP= costToGoal;
     
-this.setTotalCost();
+this.setCalculatedTotalCost();
     
 }
 
@@ -91,7 +89,7 @@ this.totalCostP= totalCost;
 
                 //@Throws(Error::class)
             
-    public setTotalCost(){
+    public setCalculatedTotalCost(){
 this.totalCostP= this.costFromStartP +this.costToEndP;
     
 
@@ -101,7 +99,8 @@ this.totalCostP= this.costFromStartP +this.costToEndP;
                                     
 
 
-                            throw new Error("Max Cost Exceeded")
+                            throw new Error("Max Cost Exceeded");
+                    
 
                                     }
                                 
@@ -136,8 +135,6 @@ var pathFindingNodeCostInfo = pathFindingNodeCostInfo
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);

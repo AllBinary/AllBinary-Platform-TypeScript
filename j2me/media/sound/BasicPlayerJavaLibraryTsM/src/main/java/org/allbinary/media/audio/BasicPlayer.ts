@@ -63,26 +63,22 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { Controllable2 } from "./Controllable2.js";
 
+import { NullControl } from "./NullControl.js";
+
 export class BasicPlayer
             extends Object
          implements Player, Controllable2 {
         
 
     public CONTROL_TYPE: string = "ToneControl";
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private state: number= 0
 
     private loopCount: number= 0
 
     readonly listenersList: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (){
 
             super();

@@ -43,8 +43,6 @@ export class TagStrings
         
 
     private static readonly instance: TagStrings = new TagStrings();
-        
-        
 
     public static getInstance(): TagStrings{
 
@@ -57,8 +55,6 @@ export class TagStrings
 
 
     public readonly DO_START_TAG: string = "doStartTag";
-        
-        
 
 }
                 

@@ -67,8 +67,6 @@ export class RepaintBehavior
         
 
     private static readonly instance: RepaintBehavior = new RepaintBehavior();
-        
-        
 
     public static getInstance(): RepaintBehavior{
 
@@ -81,8 +79,6 @@ export class RepaintBehavior
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public repaint(canvas: Canvas){
     //var canvas = canvas
@@ -90,21 +86,15 @@ export class RepaintBehavior
 
 
     private readonly NAME: string = "RepaintBehavior";
-        
-        
 
     public onChangeRepaint(canvas: Canvas){
     //var canvas = canvas
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -118,7 +108,7 @@ export class RepaintBehavior
                                 
                         else {
                             
-    var thread: Thread = new Thread(new object: ARunnable()
+    var thread: Thread = new Thread(new ARunnable()
                                 {
                                 
     public run(){
@@ -134,14 +124,10 @@ DisplayInfoSingleton.getInstance()!.process();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -152,8 +138,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             , NAME);
-        
-        
 ;
     
 thread.start();

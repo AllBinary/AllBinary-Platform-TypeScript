@@ -72,8 +72,6 @@ export class AuthenticationHelperUtil
         
 
     private static readonly instance: AuthenticationHelperUtil = new AuthenticationHelperUtil();
-        
-        
 
     public static getInstance(): AuthenticationHelperUtil{
 
@@ -86,8 +84,6 @@ export class AuthenticationHelperUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -105,38 +101,26 @@ var filePath = filePath
                                 
 
     var endIndex: number = HttpRequestUtil.getInstance()!.getLastSeparatorIndex(filePath)!;
-        
-        
 ;
     
 
     var fullPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +filePath!.substring(0, endIndex));
-        
-        
 ;
     
 
     var downloadFilePermissions: HttpFilePermissions = new HttpFilePermissions(fullPath);
-        
-        
 ;
     
 
     var userRoles: Vector = downloadFilePermissions!.getUserRoles()!;
-        
-        
 ;
     
 
     var userRole: UserRole = authenticationHelper!.getRole()!;
-        
-        
 ;
     
 
     var basicUserRole: BasicUserRole = userRole!.getBasicUserRole()!;
-        
-        
 ;
     
 

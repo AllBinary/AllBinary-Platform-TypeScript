@@ -43,8 +43,6 @@ export class PositionStrings
         
 
     private static readonly instance: PositionStrings = new PositionStrings();
-        
-        
 
     public static getInstance(): PositionStrings{
 
@@ -57,36 +55,20 @@ export class PositionStrings
 
 
     public readonly X: string = "x";
-        
-        
 
     public readonly Y: string = "y";
-        
-        
 
     public readonly X_LABEL: string = "x: ";
-        
-        
 
     public readonly Y_LABEL: string = "y: ";
-        
-        
 
     public readonly Z_LABEL: string = "z: ";
-        
-        
 
     public readonly DX_LABEL: string = "dx: ";
-        
-        
 
     public readonly DY_LABEL: string = "dy: ";
-        
-        
 
     public readonly DZ_LABEL: string = "dz: ";
-        
-        
 
 }
                 

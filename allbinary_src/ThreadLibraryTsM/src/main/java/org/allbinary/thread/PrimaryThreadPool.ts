@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -48,14 +50,10 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
         
 import { ThreadPool } from "./ThreadPool.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class PrimaryThreadPool extends ThreadPool {
         
 
     private static readonly THREAD_POOL: ThreadPool = new ThreadPool("Primary", 1, ThreadPool.NORMAL_PRIORITY);
-        
-        
 
     public static getInstance(): ThreadPool{
 
@@ -81,7 +79,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
     public runTask(task: Runnable){
 var task = task
 this.logUtil!.putF(new StringMaker().
-                            append(StringUtil.getInstance()!.toString(task))!.appendlong(System.currentTimeMillis())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
+                            append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
     
 super.runTask(task);
     

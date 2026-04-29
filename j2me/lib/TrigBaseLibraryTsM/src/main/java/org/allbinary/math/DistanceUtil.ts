@@ -46,8 +46,6 @@ export class DistanceUtil
         
 
     private static readonly instance: DistanceUtil = new DistanceUtil();
-        
-        
 
     public static getInstance(): DistanceUtil{
 
@@ -60,8 +58,6 @@ export class DistanceUtil
 
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     public getDistance(x1: number, y1: number, x2: number, y2: number): number{
     //var x1 = x1
@@ -70,21 +66,17 @@ export class DistanceUtil
     //var y2 = y2
 
     var dx: number = x1 -x2;
-        
-        
 ;
     
 
     var dy: number = y1 -y2;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mathUtil!.sqrt((dx *dx) +(dy *dy));;
+                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy));;
     
 }
 

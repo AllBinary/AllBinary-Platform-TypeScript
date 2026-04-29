@@ -49,8 +49,6 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
         
 
     private static readonly instance: ExceptionUtil = new ExceptionUtil();
-        
-        
 
     /*actual*/ public static getInstance(): ExceptionUtil{
 
@@ -63,8 +61,6 @@ import { PrintStream } from "../../../../../java/io/PrintStream.js";
 
 
     /*actual*/ public static readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
-        
-        
 private constructor (){
 
             super();
@@ -72,8 +68,6 @@ private constructor (){
 
 
     private readonly NONE: string = "No Stack Trace";
-        
-        
 
     /*actual*/ public getStackTrace(e: Error): string{
     //var e = e
@@ -85,22 +79,16 @@ private constructor (){
                                     {
                                     
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var printStream: PrintStream = new PrintStream(byteArrayOutputStream);
-        
-        
 ;
     
 e.printStackTrace(printStream);
     
 
     var output: string = byteArrayOutputStream!.toString()!;
-        
-        
 ;
     
 

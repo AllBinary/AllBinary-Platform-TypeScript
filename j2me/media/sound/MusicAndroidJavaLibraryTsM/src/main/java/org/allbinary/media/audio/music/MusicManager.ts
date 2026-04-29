@@ -73,8 +73,6 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
         
 import { MusicStrings } from "./MusicStrings.js";
 
-import { Class } from "./Class.js";
-
 export class MusicManager
             extends Object
          {
@@ -85,14 +83,10 @@ export class MusicManager
 var musicServiceClass = musicServiceClass
 
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-        
-        
 ;
     
 
-    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass::class.java);
-        
-        
+    var musicPauseIntent: Intent = new Intent( as Contextactivity, musicServiceClass::class.java);
 ;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
@@ -111,14 +105,10 @@ var musicServiceClass = musicServiceClass
                                     {
                                     
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-        
-        
 ;
     
 
     var musicResumeIntent: Intent = new Intent(activity, musicServiceClass::class.java);
-        
-        
 ;
     
 musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
@@ -132,66 +122,36 @@ activity.startService(musicResumeIntent);
 
 
     private readonly PLAY: string = "Play ";
-        
-        
 
     private readonly FOR: string = " for: ";
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly musicStrings: MusicStrings = MusicStrings.getInstance()!;
-        
-        
 
     private readonly commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
-        
-        
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     private readonly resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 
     private readonly androidServicesUtil: AndroidServicesUtil = AndroidServicesUtil.getInstance()!;
-        
-        
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private readonly timeDelayHelper2: TimeDelayHelper = new TimeDelayHelper(1200);
-        
-        
 
     private readonly songList: BasicArrayList
 
     private currentSongSound: Sound = NoSound.getInstance()!;
-        
-        
 
     private nextSongSound: Sound = NoSound.getInstance()!;
-        
-        
 
     private leftVolume: number = 100;
-        
-        
 
     private rightVolume: number = 100;
-        
-        
 
     private readonly musicServiceClass: Function
 
@@ -303,20 +263,14 @@ this.timeDelayHelper!.delay= 0;
 
                         for (
     var index: number = this.songList!.size()!;
-        
-        
 --index >= 0; )
         {
 
-    var sound: Sound = this.songList!.get(index); as Sound;
-        
-        
+    var sound: Sound =  as Soundthis.songList!.get(index);;
 ;
     
 
     var duration: number = sound.getDuration();;
-        
-        
 ;
     
 PreLogUtil.put(new StringBuilder().
@@ -336,7 +290,7 @@ PreLogUtil.put(new StringBuilder().
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList); as Sound;
+                                    this.currentSongSound=  as Soundthis.basicArrayListUtil!.getRandom(this.songList);;
     
 
                                     }
@@ -351,14 +305,12 @@ this.nextSongSound= NoSound.getInstance();
                             
 
     var duration: number = this.currentSongSound!.getDuration();;
-        
-        
 ;
     
 PreLogUtil.put(new StringBuilder().
                             append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
     
-this.timeDelayHelper!.delay= duration;
+this.timeDelayHelper!.delay= Math.roundduration;
     
 this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt());
     
@@ -374,8 +326,6 @@ this.resourceUtil!.getContext()!.startService(this.currentIntent);
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 

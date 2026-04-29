@@ -30,12 +30,8 @@ export class BouncyCastleProvider extends Provider {
         
 
     private info: string = "BouncyCastle Security Provider v1.41";
-        
-        
 
     public PROVIDER_NAME: string = "BC";
-        
-        
 public constructor (){
             super(BouncyCastleProvider.PROVIDER_NAME, 1.41, BouncyCastleProvider.info);
                     

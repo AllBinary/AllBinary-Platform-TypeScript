@@ -45,10 +45,8 @@ export class BasicDecimal
         
 
     public static readonly ZERO_BIGDECIMAL: BasicDecimal = new BasicDecimal(0);
-        
-        
 
-    public static create(bigDecimal: BasicDecimal): BasicDecimal{
+    public static createBigDecimal(bigDecimal: BasicDecimal): BasicDecimal{
     //var bigDecimal = bigDecimal
 
 
@@ -71,7 +69,7 @@ this.updateScaled();
 }
 
 
-    public set(value: number){
+    public setint(value: number){
 var value = value
 this.units= value;
     
@@ -80,7 +78,7 @@ this.updateScaled();
 }
 
 
-    public set(value: number){
+    public setlong(value: number){
 var value = value
 this.units= value;
     
@@ -98,7 +96,7 @@ this.updateScaled();
 }
 
 
-    public add(value: number){
+    public addint(value: number){
 var value = value
 this.units= this.units +value;
     
@@ -107,7 +105,7 @@ this.updateScaled();
 }
 
 
-    public add(value: number){
+    public addlong(value: number){
 var value = value
 this.units= this.units +value;
     
@@ -125,7 +123,7 @@ this.updateScaled();
 }
 
 
-    public subtract(value: number){
+    public subtractint(value: number){
 var value = value
 this.units= this.units -value;
     
@@ -134,7 +132,7 @@ this.updateScaled();
 }
 
 
-    public subtract(value: number){
+    public subtractlong(value: number){
 var value = value
 this.units= this.units -value;
     
@@ -152,7 +150,7 @@ this.updateScaled();
 }
 
 
-    public multiply(value: number){
+    public multiplyint(value: number){
 var value = value
 this.units= this.units *value;
     
@@ -161,7 +159,7 @@ this.updateScaled();
 }
 
 
-    public multiply(value: number){
+    public multiplylong(value: number){
 var value = value
 this.units= this.units *value;
     
@@ -179,7 +177,7 @@ this.updateScaled();
 }
 
 
-    public divide(value: number){
+    public divideint(value: number){
 var value = value
 this.units= this.units /value;
     
@@ -188,7 +186,7 @@ this.updateScaled();
 }
 
 
-    public divide(value: number){
+    public dividelong(value: number){
 var value = value
 this.units= this.units /value;
     
@@ -219,7 +217,7 @@ this.updateScaled();
     private scaled: number= 0
 
     updateScaled(){
-this.scaled= (this.units /this.factorValue);
+this.scaled= Math.round(this.units /this.factorValue);
     
 }
 
@@ -245,19 +243,15 @@ this.scaled= (this.units /this.factorValue);
 
 
     private readonly factor: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_FACTOR;
-        
-        
 
     private readonly factorValue: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
-        
-        
 
     public getScaledFactor(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return factor;
+                        return this.factor;
     
 }
 
@@ -267,7 +261,7 @@ this.scaled= (this.units /this.factorValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return factorValue;
+                        return this.factorValue;
     
 }
 

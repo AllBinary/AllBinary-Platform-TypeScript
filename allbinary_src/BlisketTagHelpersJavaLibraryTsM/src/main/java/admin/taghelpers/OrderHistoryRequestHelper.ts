@@ -85,12 +85,8 @@ export class OrderHistoryRequestHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -99,12 +95,12 @@ export class OrderHistoryRequestHelper extends TagHelper {
     private groupId: string
 
     private status: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.getFormData();
     
@@ -148,8 +144,6 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
                                 
 
     var success: string = "Status successfully set to: " +this.status;
-        
-        
 ;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
@@ -175,8 +169,6 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
             {
 
     var error: string = "Failed to set order status";
-        
-        
 ;
     
 
@@ -210,16 +202,12 @@ var newStatus = newStatus
                         newStatus= this.status
 
     var success: string = "Status successfully set to: " +newStatus;
-        
-        
 ;
     
 OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, newStatus);
     
 
     var orderHistory: OrderHistory = OrderHistoryEntityFactory.getInstance()!.getOrder(this.id)!;
-        
-        
 ;
     
 new OrderStatusEmail(this.abeClientInformation, orderHistory).
@@ -246,8 +234,6 @@ new OrderStatusEmail(this.abeClientInformation, orderHistory).
             {
 
     var error: string = "Failed to view order table";
-        
-        
 ;
     
 

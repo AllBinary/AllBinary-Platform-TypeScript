@@ -92,8 +92,6 @@ export class AllBinaryMediaManager
         
 
     private static readonly THIS: string = "AllBinaryMediaManagerPC";
-        
-        
 
     public static isMuted(): boolean{
 
@@ -126,19 +124,15 @@ export class AllBinaryMediaManager
     //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
 new Sounds(soundsFactoryInterface).
                             init();
@@ -162,8 +156,6 @@ System.gc();
 
 
     private static readonly CREATE_PLAYER: string = "createPlayer";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -177,7 +169,7 @@ System.gc();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return createPlayer(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_TONE.getName());;
+                        return createPlayerFromInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), AudioContentTypeDataFactory.getInstance()!.MIME_AUDIO_TONE.getName());;
     
 
                                     }
@@ -190,14 +182,10 @@ System.gc();
         try {
             
     var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
-        
-        
 ;
     
 
     var bufferedInputStream: BufferedInputStream = new BufferedInputStream(inputStream);
-        
-        
 ;
     
 
@@ -212,14 +200,10 @@ System.gc();
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
@@ -250,13 +234,14 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 
                 //@Throws(IOException::class, MediaException::class)
             
-    public static createPlayer(stream: InputStream, type: string): Player{
+    public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
     //var stream = stream
     //var type = type
 
 
 
-                            throw new MediaException("No Impl")
+                            throw new MediaException("No Impl");
+                    
 }
 
 
@@ -270,7 +255,8 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 
 
 
-                            throw new MediaException("No Impl")
+                            throw new MediaException("No Impl");
+                    
 }
 
 

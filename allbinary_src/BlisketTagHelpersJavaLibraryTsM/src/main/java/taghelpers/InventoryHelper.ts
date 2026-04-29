@@ -98,8 +98,6 @@ export class InventoryHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
@@ -112,25 +110,21 @@ export class InventoryHelper extends TagHelper {
     private id: string
 
     private searchRequest: SearchRequest
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.response= pageContext!.getResponse(); as HttpServletResponse;
+this.response=  as HttpServletResponsepageContext!.getResponse();;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
-        
-        
+    var xslFile: string =  as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);;
 ;
     
 
@@ -141,20 +135,14 @@ this.request= pageContext!.getRequest(); as HttpServletRequest;
                                     {
                                     
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;
-        
-        
 ;
     
 
     var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
-        
-        
 ;
     
 
     var searchParams: SearchParams = new SearchParams(this.request);
-        
-        
 ;
     
 this.searchRequest= new SearchRequest(storeFrontInterface, searchParams, xslFile, contentType, propertiesHashMap, pageContext);
@@ -178,14 +166,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
         try {
             
     var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
-        
-        
 ;
     
 
     var result: string = inventoryViewSearchInterface!.getProduct(this.id)!;
-        
-        
 ;
     
 
@@ -209,8 +193,6 @@ this.id= this.request.getParameter(BasicItemData.ID);
             {
 
     var error: string = "Failed to View Summary";
-        
-        
 ;
     
 
@@ -238,14 +220,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS); as String;
-        
-        
+    var keywords: string =  as Stringthis.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS);;
 ;
     
 
@@ -265,14 +243,10 @@ this.id= this.request.getParameter(BasicItemData.ID);
                                 
 
     var inventoryViewSearchInterface: InventoryViewSearchInterface = InventoryViewFactory.getInstance(this.searchRequest)!;
-        
-        
 ;
     
 
     var result: string = inventoryViewSearchInterface!.searchSingleDynamicPage()!;
-        
-        
 ;
     
 
@@ -296,8 +270,6 @@ this.id= this.request.getParameter(BasicItemData.ID);
             {
 
     var error: string = "Failed to search Inventory by keyword";
-        
-        
 ;
     
 

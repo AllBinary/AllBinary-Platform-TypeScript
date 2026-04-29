@@ -49,10 +49,8 @@ export class PropertiesTag extends CommandTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -65,12 +63,12 @@ public constructor (){
 
                                     }
                                 
-this.propertiesHashMap= new HashMap<any, any>();
+this.propertiesHashMap= new HashMap();
     
 }
 
 
-    getPropertiesHashMap(): HashMap<any, any>{
+    getPropertiesHashMap(): HashMap{
 
 
 
@@ -90,7 +88,7 @@ this.propertiesHashMap= new HashMap<any, any>();
 
                                     }
                                 
-this.propertiesHashMap= new HashMap<any, any>();
+this.propertiesHashMap= new HashMap();
     
 
 

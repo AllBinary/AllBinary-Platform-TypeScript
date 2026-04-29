@@ -50,8 +50,6 @@ export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
         
 
     private static readonly instance: ActivityFractureUtilAPI19 = new ActivityFractureUtilAPI19();
-        
-        
 
     public static getInstance(): ActivityFractureUtilAPI19{
 
@@ -67,14 +65,10 @@ export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
     //var activity = activity
 
     var decorView: View = activity.getWindow()!.getDecorView()!;
-        
-        
 ;
     
 
     var visibility: number = View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN;
-        
-        
 ;
     
 decorView!.setSystemUiVisibility(visibility);

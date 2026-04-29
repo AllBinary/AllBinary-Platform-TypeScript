@@ -63,7 +63,7 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 export class StoreThemeCategoryPathView extends CategoryView implements DomNodeInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){
-            super(categoryInterface as StoreThemeCategoryInterface);
+            super( as StoreThemeCategoryInterfacecategoryInterface);
                     var categoryInterface = categoryInterface
 
 
@@ -78,27 +78,19 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface(); as StoreThemeCategoryInterface;
-        
-        
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface =  as StoreThemeCategoryInterfacethis.getCategoryInterface();;
 ;
     
 
     var themeArray: any[] = storeThemeCategoryInterface!.getThemes()!.toArray()!;
-        
-        
 ;
     
 
     var size: number = themeArray!.length
                 ;
-        
-        
 ;
     
 
@@ -107,20 +99,14 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var themeValidation: ThemeValidation = themeArray[i]! as ThemeValidation;
-        
-        
+    var themeValidation: ThemeValidation =  as ThemeValidationthemeArray[i]!;
 ;
     
 
-    var domNodeInterface: DomNodeInterface = new ThemePropertiesView(themeValidation as ThemeInterface) as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacenew ThemePropertiesView( as ThemeInterfacethemeValidation);
 ;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));

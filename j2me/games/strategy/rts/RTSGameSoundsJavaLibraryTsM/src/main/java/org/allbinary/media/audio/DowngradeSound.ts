@@ -46,8 +46,6 @@ export class DowngradeSound extends CompositeSound {
         
 
     private soundInterface: Sound = new DowngradeSound();
-        
-        
 
     public static getInstance(): Sound{
 

@@ -58,12 +58,8 @@ export class LicenseInitInfo
         
 
     private id: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private serverList: BasicArrayList = new BasicArrayListD();
-        
-        
  constructor (){
 
             super();
@@ -86,7 +82,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.serverList!.get(index); as String;
+                        return  as Stringthis.serverList!.get(index);;
     
 }
 
@@ -117,7 +113,7 @@ this.serverList!.clear();
     public setServer(value: string, index: number){
 var value = value
 var index = index
-this.serverList!.add(index, value);
+this.serverList!.addAt(index, value);
     
 }
 

@@ -51,30 +51,20 @@ export class GameConfigurationTextInput
          {
         
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 
     public SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
-        
-        
 
     public SIMULATOR_PORT: GameConfigurationTextInput = new GameConfigurationTextInput("Port: ", "8010");
-        
-        
 
     public static update(textField: TextField){
 var textField = textField
 
-    var anyType: any = textField!.getLabel(); as Object;
-        
-        
+    var anyType: any =  as ObjecttextField!.getLabel();;
 ;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput = hashtable.get(anyType as Object); as GameConfigurationTextInput;
-        
-        
+    var gameConfigurationTextInput: GameConfigurationTextInput =  as GameConfigurationTextInputhashtable.get(anyType as Object);;
 ;
     
 gameConfigurationTextInput!.setText(textField!.getString());
@@ -82,7 +72,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
 }
 
 
-    public static getHashtable(): Hashtable<any, any>{
+    public static getHashtable(): Hashtable{
 
 
 
@@ -93,12 +83,8 @@ gameConfigurationTextInput!.setText(textField!.getString());
 
 
     private label: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private text: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (label: string, text: string){
 
             super();

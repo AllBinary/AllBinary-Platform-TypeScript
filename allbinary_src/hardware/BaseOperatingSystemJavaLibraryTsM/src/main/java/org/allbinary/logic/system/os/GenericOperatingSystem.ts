@@ -68,31 +68,21 @@ export class GenericOperatingSystem
     private readonly osVersion: string
 
     private readonly characterSet: CharacterSet = new CharacterSet();
-        
-        
 
     scalable: boolean = false;
-        
-        
 public constructor (){
 
             super();
         
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -236,14 +226,10 @@ public constructor (){
     public toString(): string{
 
     var NEW_LINE: string = CommonSeps.getInstance()!.NEW_LINE;
-        
-        
 ;
     
 
     var osBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 osBuffer!.append("Operating System Info: \n");

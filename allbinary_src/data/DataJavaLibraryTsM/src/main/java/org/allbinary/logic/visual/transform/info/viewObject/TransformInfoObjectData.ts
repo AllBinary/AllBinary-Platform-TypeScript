@@ -43,8 +43,6 @@ export class TransformInfoObjectData
         
 
     private static readonly instance: TransformInfoObjectData = new TransformInfoObjectData();
-        
-        
 
     public static getInstance(): TransformInfoObjectData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly UNCRYPTED_EXTENSION: string = "class";
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = "abw";
-        
-        
 
 }
                 

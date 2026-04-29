@@ -47,9 +47,6 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
-
-    
 
 
 
@@ -77,8 +74,6 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
         
 
     readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
-        
-        
 
     private readonly playerInputId: number
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number){
@@ -124,7 +119,7 @@ this.addForRemoval(gameKeyEvent);
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public onDownKeyEvent(gameKeyEvent: Integer){
+    public onDownKey(gameKeyEvent: number){
     //var gameKeyEvent = gameKeyEvent
 PreLogUtil.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY);
@@ -141,7 +136,7 @@ this.addForRemoval(gameKeyEvent);
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public onUpKeyEvent(gameKeyEvent: Integer){
+    public onUpKeyEvent(gameKeyEvent: number){
     //var gameKeyEvent = gameKeyEvent
 }
 

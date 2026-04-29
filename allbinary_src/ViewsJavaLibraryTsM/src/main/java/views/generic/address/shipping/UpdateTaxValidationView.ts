@@ -91,8 +91,6 @@ this.streetAddress= new StreetAddress(this.getRequest());
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
-        
-        
 ;
     
 
@@ -110,14 +108,10 @@ this.streetAddress= new StreetAddress(this.getRequest());
                                 
 
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
-        
-        
 ;
     
 
@@ -137,14 +131,10 @@ this.streetAddress= new StreetAddress(this.getRequest());
                                 
 
     var count: number = 0;
-        
-        
 ;
     
 
     var size: number = streetAddressList!.length!;
-        
-        
 ;
     
 
@@ -153,14 +143,10 @@ this.streetAddress= new StreetAddress(this.getRequest());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
 ;
     
 

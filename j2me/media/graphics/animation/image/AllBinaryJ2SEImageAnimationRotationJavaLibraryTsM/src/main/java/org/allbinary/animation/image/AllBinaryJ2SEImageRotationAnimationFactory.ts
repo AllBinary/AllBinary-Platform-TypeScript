@@ -27,9 +27,6 @@ import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
-
-    
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -102,8 +99,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
     getCanvasImage(): Image{
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -114,7 +109,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageCopyUtil.getInstance()!.createImage(this.getImage(), 1.44f, false);;
+                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44f, false);;
     
 
                                     }
@@ -138,34 +133,24 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
     //var instanceId = instanceId
 
     var imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;
-        
-        
 ;
     
 
     var canvasImage: Image = this.getCanvasImage()!;
-        
-        
 ;
     
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
     var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
-        
-        
 ;
     
 scaledImage= openGLUtil!.add(scaledImage);
     
 
     var copyOfScaledImage: Image = imageCopyUtil!.createImageForRotation(scaledImage)!;
-        
-        
 ;
     
 

@@ -43,8 +43,6 @@ export class PathData
         
 
     private static readonly instance: PathData = new PathData();
-        
-        
 
     public static getInstance(): PathData{
 
@@ -57,8 +55,6 @@ export class PathData
 
 
     public readonly OFFSET: number = 400;
-        
-        
 
 }
                 

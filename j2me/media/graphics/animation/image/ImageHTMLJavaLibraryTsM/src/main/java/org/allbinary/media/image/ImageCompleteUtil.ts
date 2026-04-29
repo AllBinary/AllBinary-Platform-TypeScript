@@ -67,8 +67,6 @@ export class ImageCompleteUtil
         
 
     private static readonly instance: ImageCompleteUtil = new ImageCompleteUtil();
-        
-        
 
     public static getInstance(): ImageCompleteUtil{
 
@@ -81,12 +79,8 @@ export class ImageCompleteUtil
 
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(18000);
-        
-        
 
     private readonly allTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(120000);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -95,7 +89,7 @@ var image = image
 var name = name
 this.timeDelayHelper!.setStartTime();
     
-this.waitFor(image, name, this.timeDelayHelper);
+this.waitForATime(image, name, this.timeDelayHelper);
     
 }
 
@@ -107,9 +101,7 @@ var image = image
 var name = name
 var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage = image as PlaynImage;
-        
-        
+    var playnImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
@@ -123,7 +115,8 @@ var timeDelayHelper = timeDelayHelper
                                     
 
 
-                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                    
 
                                     }
                                 
@@ -147,14 +140,12 @@ var timeDelayHelper = timeDelayHelper
 
                 //@Throws(Error::class)
             
-    waitFor(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
+    waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
 var image = image
 var name = name
 var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage = image as PlaynImage;
-        
-        
+    var playnImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
@@ -167,7 +158,8 @@ var timeDelayHelper = timeDelayHelper
                                     
 
 
-                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                    
 
                                     }
                                 
@@ -182,22 +174,16 @@ var timeDelayHelper = timeDelayHelper
 this.allTimeDelayHelper!.setStartTime();
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;
-        
-        
+    var hashtable: Hashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtable()!;
 ;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-        
-        
 ;
     
 
     var size: number = objectArray!.length
                 ;
-        
-        
 ;
     
 PreLogUtil.put("Total: " +size, this, "waitForAll");
@@ -208,11 +194,9 @@ PreLogUtil.put("Total: " +size, this, "waitForAll");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+this.waitForATime( as Imagehashtable.get(objectArray[index]!),  as StringobjectArray[index]!, this.allTimeDelayHelper);
     
 }
 

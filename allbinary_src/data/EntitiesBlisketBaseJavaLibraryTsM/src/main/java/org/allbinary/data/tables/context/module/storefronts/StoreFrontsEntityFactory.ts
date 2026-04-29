@@ -51,8 +51,6 @@ export class StoreFrontsEntityFactory
         
 
     private static readonly instance: StoreFrontsEntityFactory = new StoreFrontsEntityFactory();
-        
-        
 
     public static getInstance(): StoreFrontsEntityFactory{
 
@@ -65,8 +63,6 @@ export class StoreFrontsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

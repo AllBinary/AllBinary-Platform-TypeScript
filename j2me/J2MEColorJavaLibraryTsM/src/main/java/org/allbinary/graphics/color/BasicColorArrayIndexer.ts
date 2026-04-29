@@ -56,7 +56,7 @@ public constructor (basicColorArray: BasicColor[]){
         var basicColorArray = basicColorArray
 this.basicColorArray= basicColorArray;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.basicColorArray!.length);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.basicColorArray!.length);
     
 }
 

@@ -57,8 +57,6 @@ export class EndGameProcessor extends Processor {
     private gameCanvas: AllBinaryGameCanvas
 
     private readonly WAIT: number = 5000;
-        
-        
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -76,7 +74,7 @@ this.gameCanvas= gameCanvas;
                         
                                     {
                                     
-                        if(this.gameCanvas!.getGameStateTimeHelper()!.isElapsed(this.WAIT))
+                        if(this.gameCanvas!.getGameStateTimeHelper()!.isElapsedTNT(this.WAIT))
                         
                                     {
                                     
@@ -85,8 +83,6 @@ this.gameCanvas= gameCanvas;
                                     {
                                     
     var highScores: HighScores = this.gameCanvas!.highScoresHelper!.getSelectedHighScores()!;
-        
-        
 ;
     
 

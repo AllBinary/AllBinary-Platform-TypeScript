@@ -70,18 +70,12 @@ export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
         
 
     private readonly timeHelper: TimeDelayHelper = new TimeDelayHelper(620);
-        
-        
 
     private readonly textAnimation: TextAnimation = new TextAnimation(StringUtil.getInstance()!.EMPTY_STRING, AnimationBehavior.getInstance());
-        
-        
 
     private readonly captionAnimation: Animation
 
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 public constructor (captionAnimation: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();
@@ -144,16 +138,16 @@ this.textAnimation!.setText(message);
     
 this.animation= this.captionAnimation;
     
-this.timeHelper!.setStartTime();
+this.timeHelper!.setStartTimeTNT();
     
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
-this.animation.paint(graphics, x, y);
+this.animation.paintXY(graphics, x, y);
     
 }
 

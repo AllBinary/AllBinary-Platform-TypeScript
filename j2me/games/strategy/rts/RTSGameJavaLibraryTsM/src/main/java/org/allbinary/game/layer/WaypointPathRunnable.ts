@@ -52,8 +52,6 @@ export class WaypointPathRunnable extends WaypointPathRunnableBase {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -67,14 +65,10 @@ public constructor (){
     
 
     var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
-        
-        
 ;
     
 
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
-        
-        
 ;
     
 
@@ -86,11 +80,12 @@ public constructor (){
                                     
 
 
-                            throw new Error("Should never be running here")
+                            throw new Error("Should never be running here");
+                    
 
                                     }
                                 
-waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition));
+waypointBehavior!.setWaypointPathsList(this.targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsListRunnable(geographicMapCellPosition));
     
 pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
     
@@ -102,8 +97,6 @@ Thread.sleep(15 +(this.priorityP *2));
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

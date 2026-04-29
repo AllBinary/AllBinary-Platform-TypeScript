@@ -49,8 +49,6 @@ export class NullCloseable
         
 
     public static readonly NULL_CLOSEABLE: NullCloseable = new NullCloseable();
-        
-        
 
     public close(){
 }

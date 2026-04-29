@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Feature } from "./Feature.js";
+
 export class MainFeatureFactory
             extends Object
          {
         
 
     private static readonly instance: MainFeatureFactory = new MainFeatureFactory();
-        
-        
 
     public static getInstance(): MainFeatureFactory{
 
@@ -57,24 +57,14 @@ export class MainFeatureFactory
 
 
     public readonly FULL_SCREEN: Feature = new Feature("Full Screen");
-        
-        
 
     public readonly TITLE_BAR: Feature = new Feature("Title Bar");
-        
-        
 
     public readonly STATIC: Feature = new Feature("Static Dependent Feature");
-        
-        
 
     public readonly LOAD_ONDEMAND: Feature = new Feature("Load OnDemand");
-        
-        
 
     public readonly LOAD_ALL: Feature = new Feature("Load All");
-        
-        
 
 }
                 

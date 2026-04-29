@@ -55,8 +55,6 @@ export class MotionRectangles
     private imageComparisonResult: ImageComparisonResult
 
     readonly MAX_PIXEL_DISTANCE_THRESHOLD: number = 2;
-        
-        
 public constructor (name: string, imageComparisonResult: ImageComparisonResult){
 
             super();

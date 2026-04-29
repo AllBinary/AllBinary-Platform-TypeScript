@@ -43,8 +43,6 @@ export class TransformTemplateCustomizerData
         
 
     public NAME: string = "TEMPLATE_CUSTOMIZER_NAME";
-        
-        
 public constructor (){
 
             super();

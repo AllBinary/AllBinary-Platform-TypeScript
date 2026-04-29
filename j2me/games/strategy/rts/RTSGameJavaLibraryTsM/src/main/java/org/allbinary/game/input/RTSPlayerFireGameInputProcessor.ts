@@ -61,7 +61,7 @@ public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
+    public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 rtsPlayerGameInput!.addForRemoval(gameKeyEvent);

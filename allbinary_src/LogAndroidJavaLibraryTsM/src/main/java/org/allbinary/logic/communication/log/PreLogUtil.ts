@@ -63,8 +63,6 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
 
     private static readonly LABEL: string = "org.allbinary";
-        
-        
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
@@ -73,14 +71,10 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
     //var exception = exception
 
     var className: string = PreLogUtil.LABEL;
-        
-        
 ;
     
 
     var actualClassName: string = anyType!.constructor.name.toString()!!;
-        
-        
 ;
     
 
@@ -96,8 +90,6 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
                                 
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);
@@ -121,8 +113,6 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
     //var exception = exception
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 hilog.info(0x0000, className, PreLogUtil.PUBLIC, message);

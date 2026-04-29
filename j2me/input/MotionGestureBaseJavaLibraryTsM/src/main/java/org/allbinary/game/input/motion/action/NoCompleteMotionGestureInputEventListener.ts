@@ -56,8 +56,6 @@ export class NoCompleteMotionGestureInputEventListener extends CompleteMotionGes
         
 
     private static readonly instance: NoCompleteMotionGestureInputEventListener = new NoCompleteMotionGestureInputEventListener();
-        
-        
 
     public static getInstance(): NoCompleteMotionGestureInputEventListener{
 

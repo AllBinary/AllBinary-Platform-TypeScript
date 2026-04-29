@@ -46,12 +46,8 @@ export class AppUrlGlobals extends UrlGlobalsInterface {
         
 
     public static readonly NULL_APP_URL_GLOBALS: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 
     private path: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public isTestingMode(): boolean{
 

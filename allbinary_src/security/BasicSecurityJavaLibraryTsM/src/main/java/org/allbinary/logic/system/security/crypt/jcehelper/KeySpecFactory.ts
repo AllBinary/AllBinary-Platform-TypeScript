@@ -58,8 +58,6 @@ export class KeySpecFactory
         
 
     private static readonly instance: KeySpecFactory = new KeySpecFactory();
-        
-        
 
     public static getInstance(): KeySpecFactory{
 
@@ -72,16 +70,10 @@ export class KeySpecFactory
 
 
     public readonly DES: string = "DES";
-        
-        
 
     public readonly DESEDE: string = "DESede";
-        
-        
 
     public readonly BLOWFISH: string = "Blowfish";
-        
-        
 private constructor (){
 
             super();
@@ -123,7 +115,8 @@ var keyData = keyData
                             
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                         }
                             
@@ -133,8 +126,6 @@ var keyData = keyData
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
@@ -142,7 +133,8 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }

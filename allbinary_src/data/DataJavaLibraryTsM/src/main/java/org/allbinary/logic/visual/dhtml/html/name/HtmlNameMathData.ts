@@ -43,8 +43,6 @@ export class HtmlNameMathData
         
 
     private static readonly instance: HtmlNameMathData = new HtmlNameMathData();
-        
-        
 
     public static getInstance(): HtmlNameMathData{
 
@@ -62,24 +60,14 @@ private constructor (){
 
 
     public EQUALS: string = "_EQUALS_";
-        
-        
 
     public PLUS: string = "_PLUS_";
-        
-        
 
     public MINUS: string = "_MINUS_";
-        
-        
 
     public DIVIDE: string = "_DIVIDE_";
-        
-        
 
     public MULTIPLY: string = "_MULTIPLY_";
-        
-        
 
 }
                 

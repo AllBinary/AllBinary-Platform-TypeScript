@@ -46,6 +46,8 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MineLayer } from "./MineLayer.js";
+
 export class MineLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

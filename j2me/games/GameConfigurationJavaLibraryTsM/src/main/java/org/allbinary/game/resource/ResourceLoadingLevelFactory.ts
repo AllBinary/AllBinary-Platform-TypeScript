@@ -39,14 +39,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ResourceLoadingLevel } from "./ResourceLoadingLevel.js";
+
 export class ResourceLoadingLevelFactory
             extends Object
          {
         
 
     private static readonly instance: ResourceLoadingLevelFactory = new ResourceLoadingLevelFactory();
-        
-        
 
     public static getInstance(): ResourceLoadingLevelFactory{
 
@@ -59,35 +59,21 @@ export class ResourceLoadingLevelFactory
 
 
     public readonly LOAD_EARLY: ResourceLoadingLevel = new ResourceLoadingLevel("Load Early", Integer.MAX_VALUE);
-        
-        
 
     public readonly LOAD_TOUCH: ResourceLoadingLevel = new ResourceLoadingLevel("Load Touch", Integer.MAX_VALUE -1);
-        
-        
 
     public readonly LOAD_GAME: ResourceLoadingLevel = new ResourceLoadingLevel("Load Game", Integer.MAX_VALUE -2);
-        
-        
 
     public readonly LEVEL: ResourceLoadingLevel = new ResourceLoadingLevel("Level", Integer.MAX_VALUE -99);
-        
-        
 
     public readonly MAX_LEVEL: ResourceLoadingLevel = new ResourceLoadingLevel("Max Level", Integer.MAX_VALUE -100);
-        
-        
 
     public readonly LOAD_ALL: ResourceLoadingLevel = new ResourceLoadingLevel("Load All",  -1);
-        
-        
 
     private readonly RESOURCE_LOADING_LEVEL_ARRAY: ResourceLoadingLevel[] = 
                                                         [
                                                             this.LOAD_ALL,this.MAX_LEVEL,this.LEVEL,this.LOAD_GAME,this.LOAD_TOUCH,this.LOAD_EARLY
                                                         ];
-        
-        
 
     public getLevelString(level: number): string{
 var level = level
@@ -97,8 +83,6 @@ var level = level
 
                         for (
     var index: number = 0;
-        
-        
 index < RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
         {
 

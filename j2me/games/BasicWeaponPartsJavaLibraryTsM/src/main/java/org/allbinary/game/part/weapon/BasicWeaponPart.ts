@@ -80,7 +80,7 @@ export class BasicWeaponPart
          implements PartInterface, SalvoInterface {
         
 
-    public static create(animationInterface: Animation): BasicWeaponPart{
+    public static createPart(animationInterface: Animation): BasicWeaponPart{
     //var animationInterface = animationInterface
 
 
@@ -91,29 +91,17 @@ export class BasicWeaponPart
 }
 
 
-    public static readonly NULL_BASIC_WEAPON_PART: BasicWeaponPart = BasicWeaponPart.create(NullAnimationFactory.getFactoryInstance()!.getInstance(0))!;
-        
-        
+    public static readonly NULL_BASIC_WEAPON_PART: BasicWeaponPart = BasicWeaponPart.createPart(NullAnimationFactory.getFactoryInstance()!.getInstance(0))!;
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 
     private ownerLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 
     private weaponProperties: WeaponProperties = WeaponProperties.NULL_WEAPON_PROPERTIES;
-        
-        
 
     private scoreableInterface: ScoreableInterface = NoScoreable.getInstance()!;
-        
-        
 
     relativeRelationship: RelativeRelationship = RelativeRelationship.NULL_RELATIVE_RELATIONSHIP;
-        
-        
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
 
             super();
@@ -151,14 +139,14 @@ this.relativeRelationship= relativeRelationship;
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
-this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface);
+this.processScore(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(), this.scoreableInterface);
     
 }
 
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
+    public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
     //var otherAngle = otherAngle
@@ -167,7 +155,8 @@ this.process(allbinaryLayerManager, angle, otherAngle, this.getWeaponProperties(
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -209,23 +198,17 @@ this.animationInterface= animationInterface;
     //var graphics = graphics
 
     var viewPosition: ViewPosition = this.getOwnerLayerInterface()!.getViewPosition()!;
-        
-        
 ;
     
 
     var viewX: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var viewY: number = viewPosition!.getY()!;
-        
-        
 ;
     
-this.animationInterface!.paint(graphics, viewX, viewY);
+this.animationInterface!.paintXY(graphics, viewX, viewY);
     
 }
 

@@ -68,14 +68,12 @@ export class ShippingTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -104,28 +102,20 @@ this.storeName= value;
             
     var anyType: any = new ShippingHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("setShippingType", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -141,7 +131,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -149,8 +140,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to view Shipping Type";
-        
-        
 ;
     
 
@@ -184,7 +173,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

@@ -48,20 +48,21 @@ import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/lay
         
 import { AllBinaryGameCanvasInterface } from "./AllBinaryGameCanvasInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class NullAllBinaryGameCanvas
             extends Object
          implements AllBinaryGameCanvasInterface {
         
 
     public static readonly NULL_ALLBINARY_GAME_CANVAS: NullAllBinaryGameCanvas = new NullAllBinaryGameCanvas();
-        
-        
 
     public getLayerManager(): AllBinaryGameLayerManager{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -70,7 +71,8 @@ var cmd = cmd
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -78,7 +80,8 @@ var cmd = cmd
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -86,7 +89,8 @@ var cmd = cmd
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -95,7 +99,8 @@ var cmd = cmd
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -104,7 +109,8 @@ var l = l
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

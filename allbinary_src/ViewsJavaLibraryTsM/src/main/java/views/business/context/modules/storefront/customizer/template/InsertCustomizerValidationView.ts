@@ -104,8 +104,6 @@ export class InsertCustomizerValidationView extends HttpStoreComponentView imple
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private viewName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -125,13 +123,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     }
                                 
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap = new RequestParams(this.getPageContext()).
                             toHashMap()!;
-        
-        
 ;
     
-this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as String;
+this.viewName=  as StringrequestHashMap!.get(TransformInfoData.getInstance()!.NAME);;
     
 }
 
@@ -150,8 +146,6 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as St
                                 
 
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -166,20 +160,14 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as St
                         else {
                             
     var objectConfig: NoTemplateTransformInfoObjectConfig = new NoTemplateTransformInfoObjectConfig(this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-        
-        
 ;
     
 
     var componentVector: Vector = objectConfig!.getGroupTransforms()!;
-        
-        
 ;
     
 
     var size: number = componentVector!.length!;
-        
-        
 ;
     
 
@@ -188,8 +176,6 @@ this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as St
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Pointing ");
@@ -209,20 +195,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = componentVector!.get(index); as TransformInfo;
-        
-        
+    var transformInfo: TransformInfo =  as TransformInfocomponentVector!.get(index);;
 ;
     
 
     var transformInfoName: string = transformInfo!.getName()!;
-        
-        
 ;
     
 
@@ -236,58 +216,40 @@ index < size; index++)
                                 
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(this.abeClientInformation, transformInfoName, this.getTransformInfoInterface())!;
-        
-        
 ;
     
 
     var templateViewObjectConfig: InsertTemplateCustomizerTransformInfoObjectConfig = new InsertTemplateCustomizerTransformInfoObjectConfig(componentInterface!.getTransformInfoInterface(), componentInterface!.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-        
-        
 ;
     
 
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-        
-        
 ;
     
 
     var endIndex: number = this.viewName!.indexOf(storeName) +storeName!.length;
-        
-        
 ;
     
 
     var storePrepend: string = this.viewName!.substring(0, endIndex)!;
-        
-        
 ;
     
 
     var viewNamePostfix: string = this.viewName!.substring(endIndex, this.viewName!.length)!;
-        
-        
 ;
     
 
     var newViewNameStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 newViewNameStringBuffer!.append(storePrepend);
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var transformInfosData: TransformInfosData = TransformInfosData.getInstance()!;
-        
-        
 ;
     
 
@@ -329,8 +291,6 @@ newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME);
                                 
 
     var newViewName: string = newViewNameStringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -339,8 +299,6 @@ newViewNameStringBuffer!.append(GeneratorTransformInfoData.NAME);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Template Component: ");
@@ -364,8 +322,6 @@ templateViewObjectConfig!.set(newViewName);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Template Component: ");
@@ -384,9 +340,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(templateViewObjectConfig);
     
 
-    var updatedTransformInfoHashMap: HashMap<any, any> = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
-        
-        
+    var updatedTransformInfoHashMap: HashMap = componentInterface!.getTransformInfoInterface()!.toHashMap()!;
 ;
     
 TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
@@ -431,8 +385,6 @@ TransformInfoEntityBuilder.getInstance()!.update(updatedTransformInfoHashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Error: Template Name Is Empty.");

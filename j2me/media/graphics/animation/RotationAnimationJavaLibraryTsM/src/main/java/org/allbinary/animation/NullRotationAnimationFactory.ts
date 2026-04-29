@@ -56,6 +56,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 
+import { NullRotationAnimation } from "./NullRotationAnimation.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 import { Animation } from "./Animation.js";
@@ -66,8 +68,6 @@ export class NullRotationAnimationFactory
         
 
     private NULL_ROTATION_ANIMATION_FACTORY: NullRotationAnimationFactory = new NullRotationAnimationFactory();
-        
-        
 
     public static getFactoryInstance(): NullRotationAnimationFactory{
 
@@ -80,13 +80,11 @@ export class NullRotationAnimationFactory
 
 
     public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
-        
-        
 
-    private readonly NULL_ANIMATION: Animation = new object: NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), AnimationBehavior.getInstance())
+    private readonly NULL_ANIMATION: Animation = new NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), AnimationBehavior.getInstance())
                                 {
                                 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -94,8 +92,6 @@ export class NullRotationAnimationFactory
 
                                 }
                             ;
-        
-        
 private constructor (){
 
             super();
@@ -115,7 +111,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface
 
 

@@ -21,13 +21,7 @@
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
-
-    
 import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
-
-    
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
 import { PlaynImmutableImage } from "../../../../org/microemu/device/playn/PlaynImmutableImage.js";
@@ -69,8 +63,6 @@ export class ImageScaleUtil
         
 
     private static readonly instance: ImageScaleUtil = new ImageScaleUtil();
-        
-        
 
     public static getInstance(): ImageScaleUtil{
 
@@ -89,7 +81,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
+    public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -101,14 +93,14 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
+                        return this.createImage3(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
+    public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -119,14 +111,10 @@ private constructor (){
     //var mutable = mutable
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
-        
-        
 ;
     
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
-        
-        
 ;
     
 
@@ -150,21 +138,19 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(originalImage, scaleX, scaleY);;
+                        return this.createImageInternal(originalImage, scaleX, scaleY);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createImage(originalImage: Image, scaleX: number, scaleY: number): Image{
+    public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
     //var originalImage = originalImage
     //var scaleX = scaleX
     //var scaleY = scaleY
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance((originalImage!.getWidth() *scaleX), (originalImage!.getHeight() *scaleY))!;
-        
-        
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(Math.round(originalImage!.getWidth() *scaleX), Math.round(originalImage!.getHeight() *scaleY))!;
 ;
     
 
@@ -175,8 +161,6 @@ private constructor (){
     var originalPlayNImage: playn.core.Image = 
                 null
             ;
-        
-        
 ;
     
 
@@ -184,44 +168,34 @@ private constructor (){
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
-        
-        
+    var originalHTMLImage: PlaynMutableImage =  as PlaynMutableImageoriginalImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
-        
-        
+    var originalHTMLImage: PlaynImmutableImage =  as PlaynImmutableImageoriginalImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                         }
                             
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-        
-        
+    var htmlImage: PlaynMutableImage =  as PlaynMutableImageimage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-        
-        
 ;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHeight(), 0, 0, originalImage!.getWidth(), originalImage!.getHeight());
@@ -239,7 +213,8 @@ canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHe
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             

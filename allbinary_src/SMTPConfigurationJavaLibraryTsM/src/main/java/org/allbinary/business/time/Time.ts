@@ -42,12 +42,12 @@ export class Time
          {
         
 
-    private timeLong: Long
+    private timeLong: number
 public constructor (time: string){
 
             super();
         var time = time
-this.timeLong= time as Long;
+this.timeLong= time;
     
 }
 
@@ -55,12 +55,12 @@ public constructor (time: number){
 
             super();
         var time = time
-this.timeLong= time as Long;
+this.timeLong= time;
     
 }
 
 
-    public getLong(): Long{
+    public getLong(): number{
 
 
 

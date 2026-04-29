@@ -57,20 +57,12 @@ export class RTSLayerCompositePaintable extends Paintable {
         
 
     private upgradeCost: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private downGradeCost: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private readonly UPGRADE: string = "Up: $";
-        
-        
 
     private readonly DOWNGRADE: string = "Down: $-";
-        
-        
 
     readonly upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){

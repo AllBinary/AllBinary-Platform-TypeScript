@@ -91,9 +91,9 @@ export class DownloadableItem
 
     private readonly file: string
 
-    private readonly size: Long
+    private readonly size: number
 
-    private readonly validTime: Long
+    private readonly validTime: number
 
     private readonly retries: string
 public constructor (id: string){
@@ -102,8 +102,6 @@ public constructor (id: string){
         var id = id
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 this.id= new ProductIdGenerator().
@@ -135,34 +133,32 @@ this.retries= EMPTY_STRING;
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
-this.id= hashMap!.get(DownloadItemData.ID); as String;
+this.id=  as StringhashMap!.get(DownloadItemData.ID);;
     
-this.basicItemId= hashMap!.get(BasicItemData.ID); as String;
+this.basicItemId=  as StringhashMap!.get(BasicItemData.ID);;
     
-this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE); as String;
+this.enabled=  as StringhashMap!.get(EntryData.getInstance()!.ENABLE);;
     
-this.system= hashMap!.get(DownloadItemData.SYSTEM); as String;
+this.system=  as StringhashMap!.get(DownloadItemData.SYSTEM);;
     
-this.platform= hashMap!.get(DownloadItemData.PLATFORM); as String;
+this.platform=  as StringhashMap!.get(DownloadItemData.PLATFORM);;
     
-this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME); as String;
+this.specialName=  as StringhashMap!.get(DownloadItemData.SPECIAL_NAME);;
     
-this.version= hashMap!.get(DownloadItemData.VERSION); as String;
+this.version=  as StringhashMap!.get(DownloadItemData.VERSION);;
     
-this.changes= hashMap!.get(DownloadItemData.CHANGES); as String;
+this.changes=  as StringhashMap!.get(DownloadItemData.CHANGES);;
     
-this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as String;
+this.licenseFile=  as StringhashMap!.get(DownloadItemData.LICENSE_FILE);;
     
-this.file= hashMap!.get(DownloadItemData.FILE); as String;
+this.file=  as StringhashMap!.get(DownloadItemData.FILE);;
     
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(DownloadItemData.SIZE);;
 ;
     
 
@@ -175,15 +171,13 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                                     }
                                 
                         else {
-                            this.size= 0 as Long;
+                            this.size= 0;
     
 
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME); as String;
-        
-        
+    var validTime: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME);;
 ;
     
 
@@ -197,53 +191,39 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS); as String;
-        
-        
+    var totalYears: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_YEARS);;
 ;
     
 
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS); as String;
-        
-        
+    var totalMonths: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_MONTHS);;
 ;
     
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS); as String;
-        
-        
+    var totalDays: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_DAYS);;
 ;
     
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS); as String;
-        
-        
+    var totalHours: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_HOURS);;
 ;
     
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES); as String;
-        
-        
+    var totalMinutes: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_MINUTES);;
 ;
     
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS); as String;
-        
-        
+    var totalSeconds: string =  as StringhashMap!.get(DownloadItemData.VALID_TIME_SECONDS);;
 ;
     
 
     var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;
-        
-        
 ;
     
-this.validTime= totalTime as Long;
+this.validTime= totalTime;
     
 
                         }
                             
-this.retries= hashMap!.get(DownloadItemData.RETRIES); as String;
+this.retries=  as StringhashMap!.get(DownloadItemData.RETRIES);;
     
 }
 
@@ -251,21 +231,15 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES); as String;
     public toVector(): Vector{
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString()!;
-        
-        
 ;
     
 
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(getId());
@@ -307,11 +281,9 @@ values.add(time);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 values.put(DownloadItemData.ID, this.getId());
@@ -342,15 +314,11 @@ values.put(DownloadItemData.RETRIES, this.getRetries());
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -444,7 +412,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public getSize(): Long{
+    public getSize(): number{
 
 
 
@@ -454,7 +422,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public getValidTime(): Long{
+    public getValidTime(): number{
 
 
 

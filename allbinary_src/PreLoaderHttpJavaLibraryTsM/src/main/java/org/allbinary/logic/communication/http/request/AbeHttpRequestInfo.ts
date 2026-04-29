@@ -65,16 +65,10 @@ export class AbeHttpRequestInfo
         
 
     private readonly NAME: string = "AbeHttpRequestInfo";
-        
-        
 
     private readonly abeHttpRequestInfoData: AbeHttpRequestInfoData = AbeHttpRequestInfoData.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private httpUserAgent: string
 
@@ -87,27 +81,25 @@ export class AbeHttpRequestInfo
     private remotePort: string
 
     private requestedFilePath: string
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
-this.httpUserAgent= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.HTTP_USER_AGENT) as String);
+this.httpUserAgent= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.HTTP_USER_AGENT));
     
-this.remoteAddress= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_ADDRESS) as String);
+this.remoteAddress= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_ADDRESS));
     
-this.remoteHost= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST) as String);
+this.remoteHost= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST));
     
-this.remoteHostByAddr= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS) as String);
+this.remoteHostByAddr= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS));
     
-this.remotePort= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REMOTE_PORT) as String);
+this.remotePort= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REMOTE_PORT));
     
-this.requestedFilePath= stringUtil!.getInstance(hashMap!.get(abeHttpRequestInfoData!.REQUEST_FILE_PATH) as String);
+this.requestedFilePath= stringUtil!.getNonNull( as StringhashMap!.get(abeHttpRequestInfoData!.REQUEST_FILE_PATH));
     
 }
 
@@ -117,31 +109,23 @@ public constructor (httpServletRequest: HttpServletRequest){
         var httpServletRequest = httpServletRequest
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.httpUserAgent= stringUtil!.EMPTY_STRING;
     
 
-    var enumuration: Enumeration<any?> = httpServletRequest!.getHeaderNames()!;
-        
-        
+    var enumuration: Enumeration = httpServletRequest!.getHeaderNames()!;
 ;
     
 
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()!; as String;
-        
-        
+    var key: string =  as Stringenumuration.nextElement()!;;
 ;
     
 
     var value: string = httpServletRequest!.getHeader(key)!;
-        
-        
 ;
     
 
@@ -162,11 +146,9 @@ this.remotePort= Integer.toString(httpServletRequest!.getRemotePort());
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(abeHttpRequestInfoData!.HTTP_USER_AGENT, this.httpUserAgent);
@@ -193,8 +175,6 @@ hashMap!.put(abeHttpRequestInfoData!.REQUEST_FILE_PATH, this.requestedFilePath);
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.httpUserAgent);

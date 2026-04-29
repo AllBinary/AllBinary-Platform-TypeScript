@@ -49,7 +49,7 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 export class GameKeyEvent extends AllBinaryEventObject {
         
 
-    public static create(anyType: any = {}, sourceId: number, key: number): GameKeyEvent{
+    public static createEvent(anyType: any = {}, sourceId: number, key: number): GameKeyEvent{
 var anyType = anyType
 var sourceId = sourceId
 var key = key
@@ -63,8 +63,6 @@ var key = key
 
 
     public static readonly NONE: GameKeyEvent = new GameKeyEvent(NullUtil.getInstance()!.NULL_OBJECT,  -1,  -1,  -1,  -1, false);
-        
-        
 
     private readonly sourceId: number
 
@@ -137,8 +135,6 @@ this.repeated= repeated;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("\nKey: ");

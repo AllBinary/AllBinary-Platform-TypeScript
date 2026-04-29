@@ -68,20 +68,12 @@ export class TouchButtonInput extends Input implements GameKeyEventSourceInterfa
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
     private readonly TOUCH_BUTTON_SOURCE_ID: number = this.gameKeyEventFactory!.TOUCH_BUTTON_SOURCE_ID;
-        
-        
 
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 public constructor (id: number, name: string){
             super(id, name);
                     var id = id
@@ -92,8 +84,6 @@ var name = name
                     
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 ;
     
 inputFactory!.add(this.getId(), this);
@@ -107,11 +97,9 @@ var inputToGameKeyMapping = inputToGameKeyMapping
         try {
             
     var gameKey: GameKey = inputToGameKeyMapping!.getInstance(this.getId())!;
-        
-        
 ;
     
-this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey);
+this.gameKeyEvent= this.gameKeyEventFactory!.getInstanceForInput(this, gameKey);
     
 
                 //: 
@@ -119,8 +107,6 @@ this.gameKeyEvent= this.gameKeyEventFactory!.getInstance(this, gameKey);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);

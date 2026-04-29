@@ -49,8 +49,6 @@ export class CanvasStrings
         
 
     private static readonly instance: CanvasStrings = new CanvasStrings();
-        
-        
 
     public static getInstance(): CanvasStrings{
 
@@ -63,64 +61,34 @@ export class CanvasStrings
 
 
     public readonly CONSTRUCTOR: string = "MyCanvas::MyCanvas";
-        
-        
 
     public readonly PAUSE: string = "MyCanvas::pause";
-        
-        
 
     public readonly UN_PAUSE: string = "MyCanvas::unPause";
-        
-        
 
     public readonly SET_FULL_SCREEN_MODE: string = "setFullScreenMode";
-        
-        
 
     public readonly SIZE_CHANGED: string = "sizeChanged";
-        
-        
 
     public readonly SCALED_IMAGES: string = "scaledImages";
-        
-        
 
     public readonly PAINT: string = "paint";
-        
-        
 
     public readonly ON_DISPLAY_CHANGE_EVENT: string = "onDisplayChangeEvent";
-        
-        
 
     public readonly EMPTY_CHILD_NAME_LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     public readonly ABOUT: string = "About";
-        
-        
 
     public readonly OPTIONS: string = "Options";
-        
-        
 
     public readonly FONT_ATLAS: string = "/font.png";
-        
-        
 
     public readonly OBJ_MODEL: string = "_obj";
-        
-        
 
     public readonly MD2_MODEL: string = "_md2";
-        
-        
 
     public readonly _PNG: string = ".png";
-        
-        
 
 }
                 

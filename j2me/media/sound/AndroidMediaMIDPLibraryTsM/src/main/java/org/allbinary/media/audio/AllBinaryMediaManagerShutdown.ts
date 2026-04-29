@@ -48,8 +48,6 @@ export class AllBinaryMediaManagerShutdown
         
 
     private static readonly instance: AllBinaryMediaManagerShutdown = new AllBinaryMediaManagerShutdown();
-        
-        
 
                 //@Throws(Error::class)
             
@@ -57,8 +55,6 @@ export class AllBinaryMediaManagerShutdown
 var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF("No Media Shutdown for Android Process", instance, "shutdown");

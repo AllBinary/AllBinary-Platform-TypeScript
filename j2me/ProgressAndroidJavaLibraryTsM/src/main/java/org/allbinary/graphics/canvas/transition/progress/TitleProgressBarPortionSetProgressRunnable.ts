@@ -54,8 +54,6 @@ export class TitleProgressBarPortionSetProgressRunnable extends ProgressRunnable
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super(midletActivity, progressCanvas);
                     var midletActivity = midletActivity
@@ -71,12 +69,10 @@ var progressCanvas = progressCanvas
 
         try {
             
-    var progressCanvas: AndroidBasicTitleProgressBar = this.progressCanvas as AndroidBasicTitleProgressBar;
-        
-        
+    var progressCanvas: AndroidBasicTitleProgressBar =  as AndroidBasicTitleProgressBarthis.progressCanvas;
 ;
     
-this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()), this.progressCanvas!.getText());
+this.midletActivity!.onSetProgress(Math.round(this.progressCanvas!.getValue() +this.progressCanvas!.getMaxValue() /progressCanvas!.getPortion()), this.progressCanvas!.getText());
     
 
                 //: 
@@ -84,8 +80,6 @@ this.midletActivity!.onSetProgress((this.progressCanvas!.getValue() +this.progre
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

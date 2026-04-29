@@ -67,8 +67,6 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 
 
     private readonly factorValue: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -76,23 +74,19 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
     //var layer = layer
 
     var mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 ;
     
 
     var velocityProperties: BasicVelocityProperties = this.getVelocityProperties()!;
-        
-        
 ;
     
-this.accumulatedX= (this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled());
+this.accumulatedX= Math.round(this.accumulatedX +velocityProperties!.getVelocityXBasicDecimalP()!.getUnscaled());
     
-this.accumulatedY= (this.accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled());
+this.accumulatedY= Math.round(this.accumulatedY +velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled());
     
-this.accumulatedZ= (this.accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled());
+this.accumulatedZ= Math.round(this.accumulatedZ +velocityProperties!.getVelocityZBasicDecimalP()!.getUnscaled());
     
-layer.move(this.accumulatedX /this.factorValue, this.accumulatedY /this.factorValue, this.accumulatedZ /this.factorValue);
+layer.moveDXYZ(this.accumulatedX /this.factorValue, this.accumulatedY /this.factorValue, this.accumulatedZ /this.factorValue);
     
 
                         if(mathUtil!.abs(this.accumulatedX) > this.factorValue)

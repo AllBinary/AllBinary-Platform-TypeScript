@@ -43,8 +43,6 @@ export class LicenseStrings
         
 
     private static readonly instance: LicenseStrings = new LicenseStrings();
-        
-        
 
     public static getInstance(): LicenseStrings{
 
@@ -57,8 +55,6 @@ export class LicenseStrings
 
 
     public readonly LOCKED: string = "Demo Locked Feature";
-        
-        
 
 }
                 

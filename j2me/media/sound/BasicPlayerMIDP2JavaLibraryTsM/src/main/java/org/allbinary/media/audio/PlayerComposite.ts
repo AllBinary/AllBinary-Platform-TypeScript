@@ -76,18 +76,12 @@ export class PlayerComposite
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly player: Player
 
     private readonly timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 public constructor (player: Player, repeatTime: number){
 
             super();
@@ -173,7 +167,7 @@ this.player.deallocate();
 
     public setTimeBase(timeBase: TimeBase){
 var timeBase = timeBase
-player = this.playerplayer as TimeBaseInterface
+player =  as TimeBaseInterfacethis.playerplayer
 player.
                     setTimeBase(timeBase);
     
@@ -257,8 +251,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setMediaTime", e);
 
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 
     public start(){
 
@@ -323,7 +315,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-player = this.playerplayer as Controllable2
+player =  as Controllable2this.playerplayer
 player.
                     setVolume(leftVolume, rightVolume);
     

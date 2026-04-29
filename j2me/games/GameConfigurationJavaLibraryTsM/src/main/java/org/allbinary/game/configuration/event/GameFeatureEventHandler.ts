@@ -50,8 +50,6 @@ export class GameFeatureEventHandler extends BasicEventHandler {
         
 
     private static readonly gameKeyEventHandler: GameFeatureEventHandler = new GameFeatureEventHandler();
-        
-        
 
     public static getInstance(): GameFeatureEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var gameFeatureListenerInterface: GameFeatureListenerInterface = (eventListenerInterface as GameFeatureListenerInterface);
-        
-        
+    var gameFeatureListenerInterface: GameFeatureListenerInterface = ( as GameFeatureListenerInterfaceeventListenerInterface);
 ;
     
-gameFeatureListenerInterface!.onGameFeatureChange(eventObject as GameFeatureEvent);
+gameFeatureListenerInterface!.onGameFeatureChange( as GameFeatureEventeventObject);
     
 }
 

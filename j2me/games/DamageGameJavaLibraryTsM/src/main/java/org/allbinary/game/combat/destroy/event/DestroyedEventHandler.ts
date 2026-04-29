@@ -62,8 +62,6 @@ export class DestroyedEventHandler extends BasicEventHandler {
         
 
     private static readonly instance: DestroyedEventHandler = new DestroyedEventHandler();
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): DestroyedEventHandler{
@@ -77,8 +75,6 @@ export class DestroyedEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -128,19 +124,15 @@ var eventObject = eventObject
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.list.objectArray[index]! as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.list.objectArray[index]!;
 ;
     
-collidableDestroyableDamageableLayer!.onDestroyed(eventObject as DestroyedEvent);
+collidableDestroyableDamageableLayer!.onDestroyed( as DestroyedEventeventObject);
     
 
                 //: 
@@ -163,12 +155,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;
-        
-        
+    var destroyedEventListenerInterface: DestroyedEventListenerInterface =  as DestroyedEventListenerInterfaceeventListenerInterface;
 ;
     
-destroyedEventListenerInterface!.onDestroyed(eventObject as DestroyedEvent);
+destroyedEventListenerInterface!.onDestroyed( as DestroyedEventeventObject);
     
 }
 

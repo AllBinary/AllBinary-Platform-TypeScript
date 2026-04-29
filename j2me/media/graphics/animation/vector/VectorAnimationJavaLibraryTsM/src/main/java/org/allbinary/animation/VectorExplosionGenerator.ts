@@ -58,9 +58,9 @@ import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js"
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
-
 import { VectorExplosionType } from "./VectorExplosionType.js";
+
+import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
 
 export class VectorExplosionGenerator
             extends Object
@@ -68,8 +68,6 @@ export class VectorExplosionGenerator
         
 
     private static readonly instance: VectorExplosionGenerator = new VectorExplosionGenerator();
-        
-        
 
     public static getInstance(): VectorExplosionGenerator{
 
@@ -82,16 +80,10 @@ export class VectorExplosionGenerator
 
 
     public readonly RANDOM: VectorExplosionType = new VectorExplosionType();
-        
-        
 
     public readonly ROTATION: VectorExplosionType = new VectorExplosionType();
-        
-        
 
     private readonly vectorAnimationUtil: VectorAnimationUtil = VectorAnimationUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -100,20 +92,20 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
-var list = list
-var howMuch = howMuch
-var type = type
+    public createList(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
+    //var list = list
+    //var howMuch = howMuch
+    //var type = type
+
+    var point: GPoint
+;
+    
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
     var points: number[][] = new Array(size) [2];
-        
-        
 ;
     
 
@@ -122,15 +114,9 @@ var type = type
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var point: GPoint = list.objectArray[index]! as GPoint;
-        
-        
-;
+point=  as GPointlist.objectArray[index]!;
     
 points[index]![0]= point.getX();
     
@@ -142,7 +128,7 @@ points[index]![1]= point.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return getInstance(list, points, howMuch, type);;
+                        return createListFromPoints(list, points, howMuch, type);;
     
 }
 
@@ -150,25 +136,19 @@ points[index]![1]= point.getY();
                 //@Throws(Error::class)
             
     public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
-var points = points
-var howMuch = howMuch
-var type = type
+    //var points = points
+    //var howMuch = howMuch
+    //var type = type
 
-    var pointsBasicArrayList: BasicArrayList = getInstance(points, howMuch, type, true)!;
-        
-        
+    var pointsBasicArrayList: BasicArrayList = getInstanceStartFrame(points, howMuch, type, true)!;
 ;
     
 
-    var tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[0]! as BasicArrayList;
-        
-        
+    var tempBasicArrayList: BasicArrayList =  as BasicArrayListpointsBasicArrayList!.objectArray[0]!;
 ;
     
 
-    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromBasicArrayListOfPointBasicArrayList(pointsBasicArrayList, tempBasicArrayList!.size())!;
-        
-        
+    var newPoints: number[][][] = this.vectorAnimationUtil!.toAnimationArrayFromListOfPointListWithPointsPerFrame(pointsBasicArrayList, tempBasicArrayList!.size())!;
 ;
     
 
@@ -182,41 +162,37 @@ var type = type
 
                 //@Throws(Error::class)
             
-    public getInstance(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
-var points = points
-var howMuch = howMuch
-var type = type
-var startFrame = startFrame
+    public getInstanceStartFrame(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
+    //var points = points
+    //var howMuch = howMuch
+    //var type = type
+    //var startFrame = startFrame
 
         try {
             
     var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(howMuch);
-        
-        
 ;
     
 pointsBasicArrayList!.add(createPointsBasicArrayList(points));
     
 
     var frameIndex: number = 0;
-        
-        
+;
+    
+
+    var tempBasicArrayList: BasicArrayList
+;
+    
+
+    var pointBasicArrayList: BasicArrayList
 ;
     
 
         while(frameIndex < howMuch)
         {
-
-    var tempBasicArrayList: BasicArrayList = pointsBasicArrayList!.objectArray[frameIndex]! as BasicArrayList;
-        
-        
-;
+tempBasicArrayList=  as BasicArrayListpointsBasicArrayList!.objectArray[frameIndex]!;
     
-
-    var pointBasicArrayList: BasicArrayList = getInstance(tempBasicArrayList, points, howMuch, type)!;
-        
-        
-;
+pointBasicArrayList= createListFromPoints(tempBasicArrayList, points, howMuch, type);
     
 pointsBasicArrayList!.add(pointBasicArrayList);
     
@@ -228,7 +204,7 @@ frameIndex++;
                         if(!startFrame)
                         
                                     {
-                                    pointsBasicArrayList!.remove(0);
+                                    pointsBasicArrayList!.removeAt(0);
     
 
                                     }
@@ -246,43 +222,38 @@ frameIndex++;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     private readonly randomRotationFactory: RandomRotationFactory = RandomRotationFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    getInstance(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
-var tempBasicArrayList = tempBasicArrayList
-var points = points
-var howMuch = howMuch
-var type = type
+    createListFromPoints(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
+    //var tempBasicArrayList = tempBasicArrayList
+    //var points = points
+    //var howMuch = howMuch
+    //var type = type
 
     var index: number = 0;
-        
-        
 ;
     
 
     var pointBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
+;
+    
+
+    var sectionBasicArrayList: BasicArrayList
 ;
     
 
         while(index < points.length)
         {
-
-    var sectionBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
-;
+sectionBasicArrayList= new BasicArrayListD();
     
 
         while(points[index]![0] != 1000)
@@ -309,15 +280,13 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
                         if(type == this.ROTATION)
                         
                                     {
-                                    sectionBasicArrayList= randomRotationFactory!.getInstance(sectionBasicArrayList, howMuch);
+                                    sectionBasicArrayList= randomRotationFactory!.getInstanceList(sectionBasicArrayList, howMuch);
     
 
                                     }
                                 
 
     var size: number = sectionBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -326,8 +295,6 @@ sectionBasicArrayList= RandomTranslation.getInstance(sectionBasicArrayList, howM
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
 pointBasicArrayList!.add(sectionBasicArrayList!.objectArray[index2]!);
@@ -369,7 +336,7 @@ index++;
                 //@Throws(Error::class)
             
     createPointsBasicArrayList(points: number[][]): BasicArrayList{
-var points = points
+    //var points = points
 
                         if(points.length == 0)
                         
@@ -377,14 +344,17 @@ var points = points
                                     
 
 
-                            throw new Error("Not Points Provided")
+                            throw new Error("Not Points Provided");
+                    
 
                                     }
                                 
 
     var firstPointBasicArrayList: BasicArrayList = new BasicArrayListS(points.length);
-        
-        
+;
+    
+
+    var pointFactory: PointFactory = PointFactory.getInstance()!;
 ;
     
 
@@ -393,11 +363,9 @@ var points = points
 
                         for (
     var index: number = 0;
-        
-        
 index < points.length; index++)
         {
-firstPointBasicArrayList!.add(PointFactory.getInstance()!.getInstance0(points[index]![0]!, points[index]![1]!));
+firstPointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[index]![1]!));
     
 }
 

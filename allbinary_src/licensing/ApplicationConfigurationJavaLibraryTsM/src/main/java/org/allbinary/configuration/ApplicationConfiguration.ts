@@ -77,8 +77,6 @@ export class ApplicationConfiguration
         
 
     private static readonly instance: ApplicationConfiguration = new ApplicationConfiguration();
-        
-        
 
     public static getInstance(): ApplicationConfiguration{
 
@@ -91,24 +89,14 @@ export class ApplicationConfiguration
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private fullscreen: boolean = true;
-        
-        
 
     private showTitleBar: boolean = false;
-        
-        
 
     private progressBarView: boolean = false;
-        
-        
 
     private readonly FILE: string = "ReloadConfiguration.dat";
-        
-        
 private constructor (){
 
             super();
@@ -135,8 +123,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
@@ -151,26 +137,18 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     read(){
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 
     var dataInputStream: AbDataInputStream = new AbDataInputStream(fileInputStream);
-        
-        
 ;
     
 
     var fullScreen: number = dataInputStream!.readInt()!;
-        
-        
 ;
     
 
@@ -195,14 +173,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid FullScreen ActivityConfiguration")
+                            throw new Error("Invalid FullScreen ActivityConfiguration");
+                    
 
                         }
                             
 
     var progressBarView: number = dataInputStream!.readInt()!;
-        
-        
 ;
     
 
@@ -227,14 +204,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid ProgressBarView ActivityConfiguration")
+                            throw new Error("Invalid ProgressBarView ActivityConfiguration");
+                    
 
                         }
                             
 
     var showTitleBar: number = dataInputStream!.readInt()!;
-        
-        
 ;
     
 
@@ -259,7 +235,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid ShowTitleBar ActivityConfiguration")
+                            throw new Error("Invalid ShowTitleBar ActivityConfiguration");
+                    
 
                         }
                             
@@ -273,8 +250,6 @@ this.logUtil!.putF("Read Configuration: " +this.toString(), this, "read");
     public write(){
 
     var closeable: Closeable = NullCloseable.NULL_CLOSEABLE;
-        
-        
 ;
     
 
@@ -283,20 +258,14 @@ this.logUtil!.putF("Read Configuration: " +this.toString(), this, "read");
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 
     var dataOutputStream: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-        
-        
 ;
     
 closeable= dataOutputStream;
@@ -355,7 +324,8 @@ dataOutputStream!.flush();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -377,8 +347,6 @@ var gameFeature = gameFeature
                                     {
                                     
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -474,8 +442,6 @@ this.progressBarView= progressBarView;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("isFullscreen: ");

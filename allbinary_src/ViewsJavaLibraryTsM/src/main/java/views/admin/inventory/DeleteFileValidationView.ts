@@ -92,10 +92,8 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).
+    var hashMap: HashMap = new RequestParams(request).
                             toHashMap()!;
-        
-        
 ;
     
 
@@ -103,8 +101,9 @@ this.getFormData();
                                     null
                                 )
                         
-                                    throw new Error("No Request Params Found")
-this.id= hashMap!.get(BasicItemData.ID); as String;
+                                    throw new Error("No Request Params Found");
+                                
+this.id=  as StringhashMap!.get(BasicItemData.ID);;
     
 }
 
@@ -186,8 +185,6 @@ var document = document
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

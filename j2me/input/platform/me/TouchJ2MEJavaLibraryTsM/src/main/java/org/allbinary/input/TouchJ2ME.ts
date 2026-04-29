@@ -61,23 +61,15 @@ export class TouchJ2ME
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly DEVICE_ID: number = 0;
-        
-        
 
     private motionRecognizer: AllMotionRecognizer = new AllMotionRecognizer();
-        
-        
 public constructor (){
 
             super();
         
     var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
-        
-        
 ;
     
 motionGesturesHandler!.addListener(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
@@ -98,8 +90,6 @@ var y = y
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerDragged", e);
@@ -122,8 +112,6 @@ var y = y
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerPressed", e);
@@ -146,8 +134,6 @@ var y = y
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "pointerReleased", e);

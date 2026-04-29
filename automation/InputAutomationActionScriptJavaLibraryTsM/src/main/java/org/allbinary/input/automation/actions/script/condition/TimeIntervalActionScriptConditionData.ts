@@ -43,12 +43,8 @@ export class TimeIntervalActionScriptConditionData
         
 
     public NAME: string = "TIME_INTERVAL_ACTION_CONDITION_NAME";
-        
-        
 
     public TIME: string = "TIME_INTERVAL_ACTION_CONDITION_TIME";
-        
-        
 private constructor (){
 
             super();

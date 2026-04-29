@@ -131,8 +131,6 @@ export class InitDbCrypted extends AbDatabaseManagement {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userDbInitInfo: UserDbInitInfo
 
@@ -145,10 +143,8 @@ export class InitDbCrypted extends AbDatabaseManagement {
     private logDbInitInfo: LogDbInitInfo
 
     private readonly SQL_FILE: string = "initWeblisket.sql";
-        
-        
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
-            super(databaseConnectionInfoInterface as DbConnectionInfo);
+            super( as DbConnectionInfodatabaseConnectionInfoInterface);
                     var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
 
@@ -174,20 +170,14 @@ this.logDbInitInfo= new LogDbInitInfo();
     
 
     var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;
-        
-        
 ;
     
 
     var CUSTOMERDBUSER: string = this.userDbInitInfo!.getUserName()!;
-        
-        
 ;
     
 
     var CUSTOMERDBPASSWORD: string = this.userDbInitInfo!.getPassword()!;
-        
-        
 ;
     
 
@@ -207,20 +197,14 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;
-        
-        
 ;
     
 
     var INVENTORYDBUSER: string = this.inventoryDbInitInfo!.getUserName()!;
-        
-        
 ;
     
 
     var INVENTORYDBPASSWORD: string = this.inventoryDbInitInfo!.getPassword()!;
-        
-        
 ;
     
 
@@ -240,20 +224,14 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var HISTORYDB: string = this.historyDbInitInfo!.getName()!;
-        
-        
 ;
     
 
     var HISTORYDBUSER: string = this.historyDbInitInfo!.getUserName()!;
-        
-        
 ;
     
 
     var HISTORYDBPASSWORD: string = this.historyDbInitInfo!.getPassword()!;
-        
-        
 ;
     
 
@@ -273,20 +251,14 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;
-        
-        
 ;
     
 
     var STATICPAGESDBUSER: string = this.staticpagesDbInitInfo!.getUserName()!;
-        
-        
 ;
     
 
     var STATICPAGESDBPASSWORD: string = this.staticpagesDbInitInfo!.getPassword()!;
-        
-        
 ;
     
 
@@ -306,20 +278,14 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var LOGDB: string = this.logDbInitInfo!.getName()!;
-        
-        
 ;
     
 
     var LOGDBUSER: string = this.logDbInitInfo!.getUserName()!;
-        
-        
 ;
     
 
     var LOGDBPASSWORD: string = this.logDbInitInfo!.getPassword()!;
-        
-        
 ;
     
 
@@ -379,8 +345,6 @@ this.logDbInitInfo= new LogDbInitInfo();
     
 
     var CUSTOMERDB: string = this.userDbInitInfo!.getName()!;
-        
-        
 ;
     
 
@@ -400,8 +364,6 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var INVENTORYDB: string = this.inventoryDbInitInfo!.getName()!;
-        
-        
 ;
     
 
@@ -421,8 +383,6 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var HISTORYDB: string = this.historyDbInitInfo!.getName()!;
-        
-        
 ;
     
 
@@ -442,8 +402,6 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var STATICPAGESDB: string = this.staticpagesDbInitInfo!.getName()!;
-        
-        
 ;
     
 
@@ -463,8 +421,6 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var LOGDB: string = this.logDbInitInfo!.getName()!;
-        
-        
 ;
     
 
@@ -484,16 +440,12 @@ this.logDbInitInfo= new LogDbInitInfo();
                                 
 
     var file: AbFile = FileFactory.getInstance()!.getInstance(this.SQL_FILE)!;
-        
-        
 ;
     
 file.createNewFile();
     
 
     var idOutData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
-        
-        
 ;
     
 idOutData!.writeBytes(this.sqlCommandLog!.toString());
@@ -526,8 +478,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, this.METHOD_ADD_TABLES);

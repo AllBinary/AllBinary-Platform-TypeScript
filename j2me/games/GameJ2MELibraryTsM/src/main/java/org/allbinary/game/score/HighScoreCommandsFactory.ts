@@ -48,8 +48,6 @@ export class HighScoreCommandsFactory extends HighScoreCommandsBaseFactory {
         
 
     private static readonly instance: HighScoreCommandsFactory = new HighScoreCommandsFactory();
-        
-        
 
     public static getInstance(): HighScoreCommandsFactory{
 
@@ -64,8 +62,6 @@ private constructor (){
             super(
                                                 [
                                                     HighScoreCommands.getInstance()!.PERSONAL,HighScoreCommands.getInstance()!.WORLD;
-        
-        
                                                 ]);
                     
 

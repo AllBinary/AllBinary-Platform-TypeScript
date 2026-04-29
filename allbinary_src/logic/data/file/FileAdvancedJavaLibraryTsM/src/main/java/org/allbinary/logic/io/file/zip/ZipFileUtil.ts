@@ -85,8 +85,6 @@ export class ZipFileUtil
         
 
     private static readonly instance: ZipFileUtil = new ZipFileUtil();
-        
-        
 
     public static getInstance(): ZipFileUtil{
 
@@ -99,12 +97,8 @@ export class ZipFileUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public create(outFilename: string, fileBasicArrayList: BasicArrayList){
 var outFilename = outFilename
@@ -113,8 +107,6 @@ var fileBasicArrayList = fileBasicArrayList
         try {
             
     var zipFile: AbFile = new AbFile(outFilename);
-        
-        
 ;
     
 
@@ -130,26 +122,18 @@ zipFile!.createNewFile();
     
 
     var outputStream: ZipOutputStream = new ZipOutputStream(new AbFileOutputStream(zipFile));
-        
-        
 ;
     
 
     var streamUtil: StreamUtil = StreamUtil.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var byteArray: number[] = new Array(16384);
-        
-        
 ;
     
 
@@ -158,14 +142,10 @@ zipFile!.createNewFile();
     
 
     var size: number = fileBasicArrayList!.size()!;
-        
-        
 ;
     
 
     var current: number = 0;
-        
-        
 ;
     
 
@@ -174,14 +154,10 @@ zipFile!.createNewFile();
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var file: AbFile = fileBasicArrayList!.get(i); as AbFile;
-        
-        
+    var file: AbFile =  as AbFilefileBasicArrayList!.get(i);;
 ;
     
 
@@ -253,16 +229,12 @@ var zipFile = zipFile
 var fileName = fileName
 
     var buffer: number[] = new Array(16384);
-        
-        
 ;
     
 
     var inputStream: ZipInputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -275,14 +247,10 @@ var fileName = fileName
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var fileUtil: FileUtil = FileUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -292,8 +260,6 @@ var fileName = fileName
         {
 
     var entryName: string = zipEntry!.getName()!;
-        
-        
 ;
     
 
@@ -306,8 +272,6 @@ var fileName = fileName
                         else {
                             
     var entryFile: AbFile = new AbFile(path +entryName);
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -332,8 +296,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "unzip");
     
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(entryFile)!;
-        
-        
 ;
     
 fileUtil!.write(inputStream, dataOutputStream, buffer);

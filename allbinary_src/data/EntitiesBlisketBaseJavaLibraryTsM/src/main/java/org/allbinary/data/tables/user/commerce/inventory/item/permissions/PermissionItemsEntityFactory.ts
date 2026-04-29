@@ -51,8 +51,6 @@ export class PermissionItemsEntityFactory
         
 
     private static readonly instance: PermissionItemsEntityFactory = new PermissionItemsEntityFactory();
-        
-        
 
     public static getInstance(): PermissionItemsEntityFactory{
 
@@ -67,8 +65,6 @@ export class PermissionItemsEntityFactory
     public static getPermissionItemsEntityInstance(): PermissionItemsEntity{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -85,8 +81,6 @@ export class PermissionItemsEntityFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -110,8 +104,6 @@ export class PermissionItemsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

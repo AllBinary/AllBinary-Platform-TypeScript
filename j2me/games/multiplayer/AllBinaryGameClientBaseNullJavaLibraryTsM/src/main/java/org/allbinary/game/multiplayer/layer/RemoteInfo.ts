@@ -38,12 +38,8 @@ export class RemoteInfo
         
 
     public static readonly REMOTE_INFO: RemoteInfo = new RemoteInfo(StringUtil.getInstance()!.EMPTY_STRING,  -1,  -1, RemoteInfo.NEW_PLAYER_ID);
-        
-        
 
     public static readonly NEW_PLAYER_ID: number = 0;
-        
-        
 public constructor (username: string, actorSessionId: number, playerInputId: number, id: number){
 
             super();

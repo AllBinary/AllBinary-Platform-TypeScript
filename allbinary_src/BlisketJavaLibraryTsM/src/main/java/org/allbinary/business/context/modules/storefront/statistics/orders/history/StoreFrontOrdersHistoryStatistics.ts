@@ -67,7 +67,7 @@ export class StoreFrontOrdersHistoryStatistics
          implements StoreFrontOrdersHistoryStatisticsInterface {
         
 
-    private numberOfOrdersLong: Long
+    private numberOfOrdersLong: number
 
     private subTotalMoney: Money
 
@@ -90,20 +90,14 @@ this.totalMoney= new Money();
     
 
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var orderHistoryInterfaceVector: Vector = orderHistoryEntityInterface!.getStoreOrders(storeFrontInterface)!;
-        
-        
 ;
     
 
     var numberOfOrders: number = 0;
-        
-        
 ;
     
 
@@ -112,8 +106,6 @@ this.totalMoney= new Money();
     
 
     var size: number = orderHistoryInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -122,11 +114,9 @@ this.totalMoney= new Money();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-orderHistoryInterface= orderHistoryInterfaceVector!.get(index); as OrderHistoryInterface;
+orderHistoryInterface=  as OrderHistoryInterfaceorderHistoryInterfaceVector!.get(index);;
     
 numberOfOrders= numberOfOrders +1;
     
@@ -140,12 +130,12 @@ this.totalMoney!.add(orderHistoryInterface!.getTotal());
     
 }
 
-this.numberOfOrdersLong= numberOfOrders as Long;
+this.numberOfOrdersLong= numberOfOrders;
     
 }
 
 
-    public getNumberOfOrders(): Long{
+    public getNumberOfOrders(): number{
 
 
 
@@ -195,17 +185,13 @@ this.numberOfOrdersLong= numberOfOrders as Long;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var storeFrontOrdersHistoryStatisticsData: StoreFrontOrdersHistoryStatisticsData = StoreFrontOrdersHistoryStatisticsData.getInstance()!;
-        
-        
 ;
     
 hashMap!.put(storeFrontOrdersHistoryStatisticsData!.NUMBEROFORDERS, this.getNumberOfOrders()!.toString());

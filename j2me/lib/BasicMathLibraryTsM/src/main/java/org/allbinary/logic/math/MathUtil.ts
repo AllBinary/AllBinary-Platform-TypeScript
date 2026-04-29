@@ -29,15 +29,13 @@ export class MathUtil
         
 
     private static readonly instance: MathUtil = new MathUtil();
-        
-        
 
     public static getInstance(): MathUtil{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return MathUtil.instance;
     
 }
 
@@ -46,8 +44,6 @@ export class MathUtil
 var digits = digits
 
     var total: number = 0;
-        
-        
 ;
     
 
@@ -85,14 +81,10 @@ total++;
                                 
 
     var accumulated: number = value>>1;
-        
-        
 ;
     
 
     var result: number = (accumulated +(value /accumulated))>>1;
-        
-        
 ;
     
 
@@ -133,7 +125,7 @@ var value = value
 }
 
 
-    public abs(value: number): number{
+    public abslong(value: number): number{
 var value = value
 
 

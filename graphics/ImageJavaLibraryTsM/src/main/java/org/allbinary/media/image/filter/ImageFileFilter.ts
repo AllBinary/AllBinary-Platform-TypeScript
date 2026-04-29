@@ -63,14 +63,10 @@ var f = f
                                 
 
     var s: string = f.getName()!;
-        
-        
 ;
     
 
     var i: number = s.lastIndexOf('.')!;
-        
-        
 ;
     
 
@@ -79,8 +75,6 @@ var f = f
                                     {
                                     
     var ext: string = s.substring(i +1)!.lowercase()!;
-        
-        
 ;
     
 

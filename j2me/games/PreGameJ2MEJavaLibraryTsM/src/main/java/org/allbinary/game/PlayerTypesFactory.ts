@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PlayerType } from "./PlayerType.js";
+
 export class PlayerTypesFactory
             extends Object
          {
         
 
     private static readonly SINGLETON: PlayerTypesFactory = new PlayerTypesFactory();
-        
-        
 
     public static getInstance(): PlayerTypesFactory{
 
@@ -57,16 +57,10 @@ export class PlayerTypesFactory
 
 
     public readonly PLAYER_TYPE_ONE: PlayerType = new PlayerType("Player Type One", 0);
-        
-        
 
     public readonly PLAYER_TYPE_TWO: PlayerType = new PlayerType("Player Type Two", 1);
-        
-        
 
     public readonly PLAYER_TYPE_THREE: PlayerType = new PlayerType("Player Type Three", 2);
-        
-        
 
 }
                 

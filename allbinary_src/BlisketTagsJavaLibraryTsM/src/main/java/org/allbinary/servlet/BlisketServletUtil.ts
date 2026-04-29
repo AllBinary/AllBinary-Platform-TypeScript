@@ -58,8 +58,6 @@ export class BlisketServletUtil
         
 
     private static readonly instance: BlisketServletUtil = new BlisketServletUtil();
-        
-        
 
     public static getInstance(): BlisketServletUtil{
 
@@ -75,8 +73,6 @@ export class BlisketServletUtil
 var request = request
 
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 urlGlobals!.setWebappPath(request.getServletContext()!.getRealPath(AbPathData.getInstance()!.SEPARATOR));

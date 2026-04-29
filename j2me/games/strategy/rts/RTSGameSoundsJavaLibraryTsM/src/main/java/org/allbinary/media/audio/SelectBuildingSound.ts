@@ -46,8 +46,6 @@ export class SelectBuildingSound extends CompositeSound {
         
 
     private soundInterface: Sound = new SelectBuildingSound();
-        
-        
 
     public static getInstance(): Sound{
 

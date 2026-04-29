@@ -48,8 +48,6 @@ export class InApplicationPurchaseFactory
         
 
     private static readonly instance: InApplicationPurchaseFactory = new InApplicationPurchaseFactory();
-        
-        
 
     public static getInstance(): InApplicationPurchaseFactory{
 

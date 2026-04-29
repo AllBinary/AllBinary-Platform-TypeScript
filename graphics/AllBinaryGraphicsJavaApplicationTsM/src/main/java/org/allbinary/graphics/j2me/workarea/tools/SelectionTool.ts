@@ -100,8 +100,6 @@ export class SelectionTool
         
 
     private static readonly NAME: string = "Selection Tool";
-        
-        
 
     public static getStaticName(): string{
 
@@ -114,18 +112,12 @@ export class SelectionTool
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly canvasJPanel: CanvasJPanel
 
     private active: boolean = true;
-        
-        
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
@@ -241,45 +233,31 @@ var angle = angle
     makeSelection(){
 
     var xRect: number = this.getXRect()!;
-        
-        
 ;
     
 
     var xRect2: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX()) +xRect;
-        
-        
 ;
     
 
     var yRect: number = this.getYRect()!;
-        
-        
 ;
     
 
     var yRect2: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY()) +yRect;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.canvasJPanel!.getGraphicItemHashMap()!;
-        
-        
+    var hashMap: HashMap = this.canvasJPanel!.getGraphicItemHashMap()!;
 ;
     
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = graphicItemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -288,14 +266,10 @@ var angle = angle
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
-        
-        
+    var item: GraphicItemInterface =  as GraphicItemInterfacehashMap!.get(graphicItemArray[index]!);;
 ;
     
 
@@ -303,7 +277,7 @@ index < size; index++)
                         
                                     {
                                     
-                        if(RectangleCollisionPointUtil.allPointsInside(xRect, yRect, xRect2, yRect2, item.getPointsInterface()!.getPoints(), this.canvasJPanel!.getXPixelsPerWorkAreaPixel(), this.canvasJPanel!.getYPixelsPerWorkAreaPixel()))
+                        if(RectangleCollisionPointUtil.allPointsInsideCell(xRect, yRect, xRect2, yRect2, item.getPointsInterface()!.getPoints(), this.canvasJPanel!.getXPixelsPerWorkAreaPixel(), this.canvasJPanel!.getYPixelsPerWorkAreaPixel()))
                         
                                     {
                                     item.setColor(Color.YELLOW);
@@ -333,20 +307,14 @@ item.deactivate();
 
 
     private readonly rectColor: Color = new Color(BasicColorFactory.getInstance()!.RED.toInt());
-        
-        
 
     public getXRect(): number{
 
     var xDiff: number = this.endPoint!.getX() -this.startPoint!.getX();
-        
-        
 ;
     
 
     var xRect: number = this.startPoint!.getX()!;
-        
-        
 ;
     
 
@@ -370,14 +338,10 @@ item.deactivate();
     public getYRect(): number{
 
     var yDiff: number = this.endPoint!.getY() -this.startPoint!.getY();
-        
-        
 ;
     
 
     var yRect: number = this.startPoint!.getY()!;
-        
-        
 ;
     
 
@@ -398,7 +362,7 @@ item.deactivate();
 }
 
 
-    public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
+    public paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number){
 var g = g
 var canvasAngle = canvasAngle
 var dimension = dimension
@@ -408,26 +372,18 @@ g.setColor(this.rectColor);
     
 
     var xRect: number = this.getXRect()!;
-        
-        
 ;
     
 
     var width: number = Math.abs(this.endPoint!.getX() -this.startPoint!.getX())!;
-        
-        
 ;
     
 
     var yRect: number = this.getYRect()!;
-        
-        
 ;
     
 
     var height: number = Math.abs(this.endPoint!.getY() -this.startPoint!.getY())!;
-        
-        
 ;
     
 g.drawRect(xRect, yRect, width, height);
@@ -474,12 +430,8 @@ var point = point
 
 
     private startPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-        
-        
 
     private endPoint: GPoint = startPoint;
-        
-        
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
 var mouseEvent = mouseEvent
@@ -511,7 +463,7 @@ var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
 this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED);
     
-this.startPoint= PointFactory.getInstance()!.getInstance0(mouseEvent!.getX(), mouseEvent!.getY());
+this.startPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
     
 this.endPoint= this.startPoint;
     
@@ -524,7 +476,7 @@ var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
 this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED);
     
-this.endPoint= PointFactory.getInstance()!.getInstance0(mouseEvent!.getX(), mouseEvent!.getY());
+this.endPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
     
 this.active= false;
     
@@ -537,7 +489,7 @@ this.makeSelection();
 var mouseEvent = mouseEvent
 var xPixelsPerCell = xPixelsPerCell
 var yPixelsPerCell = yPixelsPerCell
-this.endPoint= PointFactory.getInstance()!.getInstance0(mouseEvent!.getX(), mouseEvent!.getY());
+this.endPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
     
 }
 

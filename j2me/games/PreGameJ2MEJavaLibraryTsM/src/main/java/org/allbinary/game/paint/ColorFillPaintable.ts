@@ -52,8 +52,6 @@ export class ColorFillPaintable extends ColorFillBasePaintable {
         
 
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 public constructor (basicColor: BasicColor){
             super(basicColor);
                     var basicColor = basicColor

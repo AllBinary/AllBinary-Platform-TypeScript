@@ -75,7 +75,7 @@ this.dy= dy;
 }
 
 
-    public paint(g: Graphics, x: number, y: number){
+    public paintXY(g: Graphics, x: number, y: number){
     //var g = g
     //var x = x
     //var y = y

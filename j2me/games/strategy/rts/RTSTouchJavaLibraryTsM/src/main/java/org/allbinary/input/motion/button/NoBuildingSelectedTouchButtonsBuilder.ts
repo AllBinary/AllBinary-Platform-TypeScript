@@ -55,8 +55,6 @@ export class NoBuildingSelectedTouchButtonsBuilder extends BaseTouchInput {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getList(): BasicArrayList{
 
@@ -65,14 +63,12 @@ export class NoBuildingSelectedTouchButtonsBuilder extends BaseTouchInput {
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
-list.addAll(new BasicTouchButtonsBuilder().
+list.addAllList(new BasicTouchButtonsBuilder().
                             getList());
     
-list.addAll(new BuildingScrollTouchButtonsBuilder().
+list.addAllList(new BuildingScrollTouchButtonsBuilder().
                             getList());
     
 

@@ -50,8 +50,6 @@ export class UpTrackballInputToGameKeyEventAction extends GameKeyCompleteMotionG
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new UpTrackballInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

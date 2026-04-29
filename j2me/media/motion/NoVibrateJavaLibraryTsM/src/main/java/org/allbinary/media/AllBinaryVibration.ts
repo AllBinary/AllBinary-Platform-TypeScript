@@ -48,8 +48,6 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
         
 
     private VIBRATION: AllBinaryVibrationME = AllBinaryNoVibration.NO_VIBRATION;
-        
-        
 
     public static getInstance(): AllBinaryVibrationME{
 

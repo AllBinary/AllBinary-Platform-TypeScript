@@ -48,8 +48,6 @@ export class ImageJ2MEScaleUtil
         
 
     private static readonly instance: ImageJ2MEScaleUtil = new ImageJ2MEScaleUtil();
-        
-        
 
     public static getInstance(): ImageJ2MEScaleUtil{
 
@@ -68,14 +66,12 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public scale(images: Image[], width: number, height: number): Image[]{
+    public scaleArray(images: Image[], width: number, height: number): Image[]{
     //var images = images
     //var width = width
     //var height = height
 
     var scaledImages: Image[] = new Array(images.length);
-        
-        
 ;
     
 
@@ -85,8 +81,6 @@ private constructor (){
                         for (
     var index: number = images.length
                 ;
-        
-        
 --index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
@@ -109,9 +103,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
     //var width = width
     //var height = height
 
-    var scaledImage: Image = ImageCopyUtil.getInstance()!.createImage(image, width, height)!;
-        
-        
+    var scaledImage: Image = ImageCopyUtil.getInstance()!.createImageWH(image, width, height, true)!;
 ;
     
 

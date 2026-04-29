@@ -53,7 +53,7 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 export class StoreThemeCategoryPathValidationView extends StoreThemeCategoryPathView implements ValidationInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){
-            super(categoryInterface as StoreThemeCategoryInterface);
+            super( as StoreThemeCategoryInterfacecategoryInterface);
                     var categoryInterface = categoryInterface
 
 

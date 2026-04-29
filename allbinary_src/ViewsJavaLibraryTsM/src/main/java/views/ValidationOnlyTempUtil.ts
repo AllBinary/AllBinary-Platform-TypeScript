@@ -55,8 +55,6 @@ export class ValidationOnlyTempUtil
         
 
     private static readonly instance: ValidationOnlyTempUtil = new ValidationOnlyTempUtil();
-        
-        
 
     public static getInstance(): ValidationOnlyTempUtil{
 
@@ -69,8 +67,6 @@ export class ValidationOnlyTempUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -83,8 +79,6 @@ private constructor (){
 var validationComponentInterface = validationComponentInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -120,7 +114,8 @@ var validationComponentInterface = validationComponentInterface
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

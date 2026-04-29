@@ -85,6 +85,8 @@ import { VideoInterface } from "../../../../../../org/allbinary/logic/system/har
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class LinuxHardware
             extends Object
          implements HardwareInterface {
@@ -100,7 +102,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -109,7 +112,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -118,7 +122,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -127,7 +132,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -136,7 +142,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -145,7 +152,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -154,7 +162,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -163,7 +172,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -172,7 +182,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -181,7 +192,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -190,7 +202,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -199,7 +212,8 @@ var index = index
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -224,7 +238,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable{
 var hardwareInterface = hardwareInterface
 
 

@@ -52,8 +52,6 @@ export class OpenGLESImageExclusionUtil
         
 
     private static readonly instance: OpenGLESImageExclusionUtil = new OpenGLESImageExclusionUtil();
-        
-        
 
     public static getInstance(): OpenGLESImageExclusionUtil{
 
@@ -66,12 +64,8 @@ export class OpenGLESImageExclusionUtil
 
 
     private readonly EXCLUSION: string = "font";
-        
-        
 
     public readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -82,14 +76,10 @@ private constructor (){
     //var image = image
 
     var imageName: string = image.getName()!;
-        
-        
 ;
     
 
     var isNormalScaling: boolean = this.list.size() == 0 || imageName!.startsWith(this.EXCLUSION);
-        
-        
 ;
     
 
@@ -108,8 +98,6 @@ private constructor (){
                         else {
                             
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -122,11 +110,9 @@ private constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-name= this.list.get(index); as String;
+name=  as Stringthis.list.get(index);;
     
 
                         if(imageName!.startsWith(name))

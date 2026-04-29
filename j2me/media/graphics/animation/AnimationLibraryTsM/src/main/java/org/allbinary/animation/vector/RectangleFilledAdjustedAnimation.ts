@@ -84,7 +84,7 @@ this.setBasicColorP(basicColor);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

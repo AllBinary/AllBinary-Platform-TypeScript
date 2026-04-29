@@ -49,8 +49,6 @@ export class HttpFilePermissionsUtil
         
 
     private static readonly instance: HttpFilePermissionsUtil = new HttpFilePermissionsUtil();
-        
-        
 
     public static getInstance(): HttpFilePermissionsUtil{
 
@@ -68,8 +66,6 @@ export class HttpFilePermissionsUtil
 var path = path
 
     var file: AbFile = new AbFile(path);
-        
-        
 ;
     
 

@@ -57,8 +57,6 @@ export class FileFactory
         
 
     private static readonly SINGLETON: FileFactory = new FileFactory(ResourceUtil.getInstance()!.getContext());
-        
-        
 
     public static getInstance(): FileFactory{
 

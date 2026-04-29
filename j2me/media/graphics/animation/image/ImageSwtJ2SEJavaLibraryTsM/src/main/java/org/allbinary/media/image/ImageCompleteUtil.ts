@@ -46,8 +46,6 @@ export class ImageCompleteUtil
         
 
     private static readonly instance: ImageCompleteUtil = new ImageCompleteUtil();
-        
-        
 
     public static getInstance(): ImageCompleteUtil{
 

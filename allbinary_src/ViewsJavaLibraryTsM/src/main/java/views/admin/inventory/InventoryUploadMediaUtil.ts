@@ -88,48 +88,26 @@ export class InventoryUploadMediaUtil
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly mediaUtil: MediaUtil = MediaUtil.getInstance()!;
-        
-        
 
     private readonly LARGEWIDTH: number = 1024;
-        
-        
 
     private readonly LARGEHEIGHT: number = 1024;
-        
-        
 
     private readonly MEDIUMWIDTH: number = 256;
-        
-        
 
     private readonly MEDIUMHEIGHT: number = 256;
-        
-        
 
     private readonly SMALLWIDTH: number = 128;
-        
-        
 
     private readonly SMALLHEIGHT: number = 128;
-        
-        
 
     private readonly SMALL: string = "Small";
-        
-        
 
     private readonly MEDIUM: string = "Medium";
-        
-        
 
     private readonly LARGE: string = "Large";
-        
-        
 
     private storeFrontInterface: StoreFrontInterface
 
@@ -168,20 +146,17 @@ var mediaData = mediaData
                                     
 
 
-                            throw new Error("Image File Name Was Null")
+                            throw new Error("Image File Name Was Null");
+                    
 
                                     }
                                 
 
     var fileUtil: FileUtil = FileUtil.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -192,14 +167,10 @@ stringBuffer!.append(this.itemInterface!.getCategory());
     
 
     var fullPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var imageDirectoryFile: AbFile = new AbFile(fullPath);
-        
-        
 ;
     
 
@@ -209,7 +180,8 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                     
 
 
-                            throw new Error("Unable to save file to non existant directory")
+                            throw new Error("Unable to save file to non existant directory");
+                    
 
                                     }
                                 
@@ -225,8 +197,6 @@ stringBuffer!.append(mediaData!.getName());
     
 
     var originalImageFile: AbFile = new AbFile(stringBuffer!.toString());
-        
-        
 ;
     
 
@@ -244,14 +214,10 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), originalImageFile);
     
 
     var uploadMedia: UploadMediaSingleton = UploadMediaSingleton.getInstance()!;
-        
-        
 ;
     
 
     var isMediaSupported: boolean = uploadMedia!.isWriterSupported(mediaData!.getName()) || uploadMedia!.isReaderSupported(mediaData!.getName());
-        
-        
 ;
     
 
@@ -275,8 +241,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "saveFiles()");
                                 
 
     var defaultMediaData: MediaData = MediaData.getDefault()!;
-        
-        
 ;
     
 this.setFileNames(fileName);
@@ -287,8 +251,6 @@ this.setFileNames(fileName);
                                     {
                                     
     var isMediaResizable: boolean = uploadMedia!.isWriterMedia(mediaData!.getName(), MediaTypeData.getInstance()!.RESIZABLE_MEDIA)!;
-        
-        
 ;
     
 
@@ -339,8 +301,6 @@ mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), full
                         else {
                             
     var isConvertable: boolean = mediaData!.isConvertableTo(defaultMediaData)!;
-        
-        
 ;
     
 
@@ -391,8 +351,6 @@ mediaUtil!.saveImageFile(originalImageFile, itemInterface!.getLargeImage(), full
                         else {
                             
     var smallImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
-        
-        
 ;
     
 smallImageFile!.createNewFile();
@@ -401,8 +359,6 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), smallImageFile);
     
 
     var mediumImageFile: AbFile = new AbFile(this.itemInterface!.getMediumImage());
-        
-        
 ;
     
 smallImageFile!.createNewFile();
@@ -411,8 +367,6 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), mediumImageFile);
     
 
     var largeImageFile: AbFile = new AbFile(this.itemInterface!.getSmallImage());
-        
-        
 ;
     
 largeImageFile!.createNewFile();
@@ -434,8 +388,6 @@ fileUtil!.write(new ByteArrayInputStream(byteArray), largeImageFile);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
@@ -456,8 +408,6 @@ this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
 var fileName = fileName
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.itemInterface!.getId());
@@ -468,8 +418,6 @@ stringBuffer!.append(MediaData.getDefault()!.getName());
     
 
     var END: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -482,8 +430,6 @@ stringBuffer!.append(END);
     
 
     var newImageFileName: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 this.itemInterface!.setSmallImage(newImageFileName);

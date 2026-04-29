@@ -50,8 +50,6 @@ export class RightOrientationInputToGameKeyEventAction extends GameKeyCompleteMo
         
 
     private static readonly instance: GameKeyCompleteMotionGestureInputEvent = new RightOrientationInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

@@ -46,8 +46,6 @@ export class NotificationUtil
         
 
     private static readonly SINGLETON: NotificationUtil = new NotificationUtil();
-        
-        
 
     public static getInstance(): NotificationUtil{
 

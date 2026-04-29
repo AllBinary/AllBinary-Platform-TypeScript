@@ -43,12 +43,8 @@ export class TaxData
         
 
     public static readonly NAME: string = "TAX_NAME";
-        
-        
 
     public static readonly RATE: string = "TAX_RATE";
-        
-        
 private constructor (){
 
             super();

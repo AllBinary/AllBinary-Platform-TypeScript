@@ -55,8 +55,6 @@ import { PreLogUtil } from "./PreLogUtil.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -69,8 +67,6 @@ import { PreLogUtil } from "./PreLogUtil.js";
 
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
-        
-        
 private constructor (){
 
             super();
@@ -78,33 +74,23 @@ private constructor (){
 
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 
     /*actual*/ public putL(log: Log){
     //var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 this.put(specialMessage, anyType, functionName, exception);
@@ -118,8 +104,6 @@ this.put(specialMessage, anyType, functionName, exception);
     //var functionName = functionName
 
     var className: string = PreLogUtil.getClassName(anyType)!;
-        
-        
 ;
     
 
@@ -135,8 +119,6 @@ this.put(specialMessage, anyType, functionName, exception);
                                 
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-        
-        
 ;
     
 PlayN.log()!.debug(this.LOG_SUCCESS +message);
@@ -151,8 +133,6 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
     //var exception = exception
 
     var className: string = PreLogUtil.getClassName(anyType)!;
-        
-        
 ;
     
 
@@ -168,8 +148,6 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
                                 
 
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 
@@ -178,7 +156,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
                                 )
                         
                                     {
-                                    PlayN.log()!.error(this.LOG_SUCCESS +message, exception as Error);
+                                    PlayN.log()!.error(this.LOG_SUCCESS +message,  as Errorexception);
     
 
                                     }

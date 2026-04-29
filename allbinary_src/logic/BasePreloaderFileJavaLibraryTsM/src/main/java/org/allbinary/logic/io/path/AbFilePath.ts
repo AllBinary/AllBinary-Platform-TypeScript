@@ -52,8 +52,6 @@ public constructor (aPath: string){
                     
 
     var abPathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 this.schema= this.getSchema(aPath);

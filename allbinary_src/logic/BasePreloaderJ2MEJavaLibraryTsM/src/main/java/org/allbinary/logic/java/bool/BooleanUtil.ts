@@ -48,8 +48,6 @@ export class BooleanUtil
         
 
     private static readonly instance: BooleanUtil = new BooleanUtil();
-        
-        
 
     public static getInstance(): BooleanUtil{
 
@@ -72,14 +70,10 @@ private constructor (){
     //var booleanString = booleanString
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -97,8 +91,6 @@ private constructor (){
                                 
 
     var booleanStringLowerCase: string = booleanString!.lowercase()!;
-        
-        
 ;
     
 
@@ -131,7 +123,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Invalid booleanString - Must be true or false")
+                            throw new Error("Invalid booleanString - Must be true or false");
+                    
 
                         }
                             
@@ -144,14 +137,10 @@ private constructor (){
     //var booleanString = booleanString
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 
     var booleanStringLowerCase: string = booleanString!.lowercase()!;
-        
-        
 ;
     
 

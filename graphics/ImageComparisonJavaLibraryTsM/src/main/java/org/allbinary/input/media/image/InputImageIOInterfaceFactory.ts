@@ -103,7 +103,8 @@ var imageType = imageType
                             
 
 
-                            throw new Error("No ImageIOInterface for: " +imageType!.toString())
+                            throw new Error("No ImageIOInterface for: " +imageType!.toString());
+                    
 
                         }
                             

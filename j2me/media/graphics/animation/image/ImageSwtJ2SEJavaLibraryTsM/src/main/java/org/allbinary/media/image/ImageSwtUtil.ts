@@ -52,8 +52,6 @@ export class ImageSwtUtil
         
 
     private static readonly instance: ImageSwtUtil = new ImageSwtUtil();
-        
-        
 
     public static getInstance(): ImageSwtUtil{
 

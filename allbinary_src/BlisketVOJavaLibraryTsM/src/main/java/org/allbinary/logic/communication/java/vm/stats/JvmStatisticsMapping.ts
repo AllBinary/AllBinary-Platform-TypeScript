@@ -61,11 +61,9 @@ public constructor (){
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(JvmStatisticsData.FREE_MEMORY_BYTES, this.getFreeMemoryBytesString());
@@ -114,8 +112,6 @@ hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegaby
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.getFreeMemoryBytesString());

@@ -43,24 +43,14 @@ export class FtpConfigurationData
         
 
     public static readonly NAME: string = "FTP_NAME";
-        
-        
 
     public static readonly SERVER: string = "FTP_SERVER";
-        
-        
 
     public static readonly PATH: string = "FTP_PATH";
-        
-        
 
     public static readonly USERNAME: string = "FTP_USERNAME";
-        
-        
 
     public static readonly PASSWORD: string = "FTP_PASSWORD";
-        
-        
 private constructor (){
 
             super();

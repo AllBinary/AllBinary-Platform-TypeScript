@@ -48,9 +48,11 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { HealthListenerInterface } from "./HealthListenerInterface.js";
 
-import { Health } from "./Health.js";
-
 import { HealthBarAnimation } from "./HealthBarAnimation.js";
+
+import { HealthInterface } from "./HealthInterface.js";
+
+import { Health } from "./Health.js";
 
 export class HealthBar extends Paintable implements HealthListenerInterface {
         
@@ -88,7 +90,7 @@ this.animationInterface!.onHealthChange(this.healthInterface!.getHealth() *this.
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paint(graphics, 0, 0);
+this.animationInterface!.paintXY(graphics, 0, 0);
     
 }
 

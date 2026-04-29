@@ -58,8 +58,6 @@ export class AdvancedRTSGameLayerPositionFinder
         
 
     private static readonly instance: AdvancedRTSGameLayerPositionFinder = new AdvancedRTSGameLayerPositionFinder();
-        
-        
 
     public static getInstance(): AdvancedRTSGameLayerPositionFinder{
 
@@ -80,8 +78,6 @@ private constructor (){
 var geographicMapCellPosition = geographicMapCellPosition
 
     var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
-        
-        
 ;
     
 

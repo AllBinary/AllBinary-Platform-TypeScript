@@ -67,9 +67,9 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-
 import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
+
+import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
 
@@ -79,36 +79,26 @@ export class UserEmailEventsConfigurationView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface
 public constructor (node: Node){
 
             super();
         var node = node
-this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() as UserEmailEventsConfigurationInterface;
+this.userEmailEventsConfigurationInterface=  as UserEmailEventsConfigurationInterfacenew UserEmailEventsConfiguration();
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var emailEventConfigurationNodeVector: Vector = DomSearchHelper.getAllNodesNoThrow(UserEmailEventConfigurationData.NAME, childNodeList)!;
-        
-        
 ;
     
 
     var size: number = emailEventConfigurationNodeVector!.length!;
-        
-        
 ;
     
 
@@ -117,20 +107,14 @@ this.userEmailEventsConfigurationInterface= new UserEmailEventsConfiguration() a
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userEmailConfigurationNode: Node = emailEventConfigurationNodeVector!.get(index); as Node;
-        
-        
+    var userEmailConfigurationNode: Node =  as NodeemailEventConfigurationNodeVector!.get(index);;
 ;
     
 
     var userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailConfigurationNode);
-        
-        
 ;
     
 this.userEmailEventsConfigurationInterface!.addUserEmailEventConfiguration(userEmailEventConfigurationView!.getUserEmailEventConfigurationInterface());
@@ -164,26 +148,18 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 var document = document
 
     var userEmailConfigurationMapping: UserEmailEventsConfigurationMapping = new UserEmailEventsConfigurationMapping(this.userEmailEventsConfigurationInterface);
-        
-        
 ;
     
 
     var node: Node = document.createElement(UserEmailEventsConfigurationData.NAME)!;
-        
-        
 ;
     
 
-    var emailEventHashMap: HashMap<any, any> = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;
-        
-        
+    var emailEventHashMap: HashMap = this.getUserEmailEventsConfigurationInterface()!.getEventConfigurationHashMap()!;
 ;
     
 
     var set: Set = emailEventHashMap!.keys!;
-        
-        
 ;
     
 
@@ -197,15 +173,11 @@ var document = document
                                 
 
     var eventNameArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = eventNameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -214,26 +186,18 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var eventName: string = eventNameArray[index]! as String;
-        
-        
+    var eventName: string =  as StringeventNameArray[index]!;
 ;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName as Object); as UserEmailEventConfigurationInterface;
-        
-        
+    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface =  as UserEmailEventConfigurationInterfaceemailEventHashMap!.get(eventName as Object);;
 ;
     
 
     var userEmailEventConfigurationView: UserEmailEventConfigurationView = new UserEmailEventConfigurationView(userEmailEventsConfigurationInterface);
-        
-        
 ;
     
 node.appendChild(userEmailEventConfigurationView!.toXmlNode(document));

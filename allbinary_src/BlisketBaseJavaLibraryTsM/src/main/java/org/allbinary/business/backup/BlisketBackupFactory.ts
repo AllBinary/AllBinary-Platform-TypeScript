@@ -91,8 +91,6 @@ export class BlisketBackupFactory
         
 
     private static readonly instance: BlisketBackupFactory = new BlisketBackupFactory();
-        
-        
 
     public static getInstance(): BlisketBackupFactory{
 
@@ -105,16 +103,10 @@ export class BlisketBackupFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -122,14 +114,10 @@ export class BlisketBackupFactory
 var pathString = pathString
 
     var path: AbPath = new AbPath(pathString);
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(path);
-        
-        
 ;
     
 
@@ -148,8 +136,6 @@ var pathString = pathString
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -158,20 +144,14 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
     var backupPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var path: AbPath = new AbPath(backupPath);
-        
-        
 ;
     
 
     var fileBasicArrayList: BasicArrayList = this.getFileBasicArrayList(backupPath)!;
-        
-        
 ;
     
 this.backup(fileBasicArrayList, path.toFileSystemString() +"backup.zip");
@@ -194,8 +174,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -204,38 +182,26 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
     var backupPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var path: AbPath = new AbPath(backupPath);
-        
-        
 ;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
-        
-        
 ;
     
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
-        
-        
 ;
     
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
-        
-        
 ;
     
 
@@ -244,14 +210,10 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
-        
-        
+    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -264,8 +226,6 @@ stringBuffer!.append(nextStore);
     
 
     var viewsPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -280,7 +240,7 @@ stringBuffer!.append(viewsPath);
     
 PreLogUtil.put(stringBuffer!.toString(), this, "backupViews()");
     
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(viewsPath));
+fileBasicArrayList!.addAllList(this.getFileBasicArrayList(viewsPath));
     
 }
 
@@ -304,8 +264,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupViews()", e);
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -314,38 +272,26 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
     var backupPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var path: AbPath = new AbPath(backupPath);
-        
-        
 ;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
-        
-        
 ;
     
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
-        
-        
 ;
     
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
-        
-        
 ;
     
 
@@ -354,20 +300,14 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
-        
-        
+    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
 ;
     
 
     var storeFrontInterface: StoreFrontInterface = storeFrontsEntity!.getStoreFrontInterface(nextStore)!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -380,8 +320,6 @@ stringBuffer!.append(storeFrontInterface!.getCategoryPath());
     
 
     var resourcesPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -396,7 +334,7 @@ stringBuffer!.append(resourcesPath);
     
 PreLogUtil.put(stringBuffer!.toString(), this, "backupResources()");
     
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(resourcesPath));
+fileBasicArrayList!.addAllList(this.getFileBasicArrayList(resourcesPath));
     
 }
 
@@ -420,8 +358,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupResources()", e);
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -430,38 +366,26 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
     
 
     var backupPath: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var path: AbPath = new AbPath(backupPath);
-        
-        
 ;
     
 
     var fileBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var storeFrontsEntity: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
-        
-        
 ;
     
 
     var storeFrontNamesBasicArrayList: Vector = storeFrontsEntity!.getStoreFrontNames()!;
-        
-        
 ;
     
 
     var size: number = storeFrontNamesBasicArrayList!.length!;
-        
-        
 ;
     
 
@@ -470,14 +394,10 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
-        
-        
+    var nextStore: string =  as StringstoreFrontNamesBasicArrayList!.get(index);;
 ;
     
 PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()");
@@ -488,7 +408,7 @@ stringBuffer!.append(URLGLOBALS.getWebappPath());
     
 stringBuffer!.append(nextStore);
     
-fileBasicArrayList!.addAll(this.getFileBasicArrayList(stringBuffer!.toString()));
+fileBasicArrayList!.addAllList(this.getFileBasicArrayList(stringBuffer!.toString()));
     
 }
 
@@ -512,8 +432,6 @@ var zipFile = zipFile
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());

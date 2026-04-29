@@ -138,44 +138,32 @@ public constructor (node: Node){
         var node = node
 
     var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;
-        
-        
 ;
     
 
     var isEnabledString: string = DomNodeHelper.getTextNodeValue(enabledValueNode)!;
-        
-        
 ;
     
 this.isEnabled= BooleanUtil.getInstance()!.getFromString(isEnabledString);
     
 
     var logConfigData: LogConfigData = LogConfigData.getInstance()!;
-        
-        
 ;
     
 
     var nameValueNode: Node = DomSearchHelper.getNode(logConfigData!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 this.name= DomNodeHelper.getTextNodeValue(nameValueNode);
     
 
     var descriptionValueNode: Node = DomSearchHelper.getNode(logConfigData!.DESCRIPTION, node.getChildNodes())!;
-        
-        
 ;
     
 this.description= DomNodeHelper.getTextNodeValue(descriptionValueNode);
     
 
     var fileValueNode: Node = DomSearchHelper.getNode(logConfigData!.FILE, node.getChildNodes())!;
-        
-        
 ;
     
 this.fileName= DomNodeHelper.getTextNodeValue(fileValueNode);
@@ -268,8 +256,6 @@ this.fileName= value;
     getDoc(): Document{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -280,14 +266,10 @@ stringBuffer!.append(this.getFileName());
     
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;
-        
-        
 ;
     
 
@@ -304,38 +286,26 @@ stringBuffer!.append(this.getFileName());
     public getTypeVector(): BasicArrayList{
 
     var logKeyVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var document: Document = this.getDoc()!;
-        
-        
 ;
     
 
     var logConfigTypesNodeList: NodeList = document.getElementsByTagName(LogConfigTypesData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var logConfigTypesNode: Node = logConfigTypesNodeList!.item(0)!;
-        
-        
 ;
     
 
     var logConfigTypeNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigTypeData.getInstance()!.NAME, logConfigTypesNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var size: number = logConfigTypeNodeVector!.length!;
-        
-        
 ;
     
 
@@ -344,20 +314,14 @@ stringBuffer!.append(this.getFileName());
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var node: Node = logConfigTypeNodeVector!.elementAt(i); as Node;
-        
-        
+    var node: Node =  as NodelogConfigTypeNodeVector!.elementAt(i);;
 ;
     
 
     var logType: LogConfigType = LogConfigTypes.getInstance(node)!;
-        
-        
 ;
     
 logKeyVector!.add(logType);

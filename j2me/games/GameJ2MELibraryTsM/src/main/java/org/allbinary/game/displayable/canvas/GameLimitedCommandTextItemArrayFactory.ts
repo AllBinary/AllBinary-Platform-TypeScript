@@ -49,8 +49,6 @@ export class GameLimitedCommandTextItemArrayFactory
         
 
     private static readonly instance: GameLimitedCommandTextItemArrayFactory = new GameLimitedCommandTextItemArrayFactory();
-        
-        
 
     public static getInstance(): GameLimitedCommandTextItemArrayFactory{
 
@@ -63,8 +61,6 @@ export class GameLimitedCommandTextItemArrayFactory
 
 
     private readonly commandTextItemArrayFactory: CommandTextItemArrayFactory = new CommandTextItemArrayFactory(new LimitCommandsVisitor());
-        
-        
 
     public getCommandTextItemArrayFactory(): CommandTextItemArrayFactory{
 

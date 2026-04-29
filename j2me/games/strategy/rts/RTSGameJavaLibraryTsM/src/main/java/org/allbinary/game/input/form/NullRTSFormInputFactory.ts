@@ -48,8 +48,6 @@ export class NullRTSFormInputFactory
         
 
     private static readonly SINGLETON: RTSFormInput = new RTSFormInput(BasicGroupFactory.getInstance()!.NONE_ARRAY);
-        
-        
 
     public static getInstance(): RTSFormInput{
 

@@ -83,8 +83,6 @@ export class StylesValidationFactory
         
 
     private static readonly instance: StylesValidationFactory = new StylesValidationFactory();
-        
-        
 
     public static getInstance(): StylesValidationFactory{
 
@@ -98,12 +96,10 @@ export class StylesValidationFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(hashMap: HashMap<any, any>): Vector{
+    public static getInstance(hashMap: HashMap): Vector{
 var hashMap = hashMap
 
-    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT); as Document;
-        
-        
+    var stylesDocument: Document =  as DocumenthashMap!.get(NameSpaceRequestParamData.DOCUMENT);;
 ;
     
 
@@ -116,8 +112,6 @@ var hashMap = hashMap
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -130,14 +124,10 @@ private constructor (){
 var document = document
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
@@ -164,20 +154,14 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var stylesNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
     var styleNodeList: Vector = DomSearchHelper.getAllNodes(StyleData.getInstance()!.NAME, stylesNode!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -195,20 +179,14 @@ index < nodeList!.getLength(); index++)
 
                         for (
     var styleNodesIndex: number = 0;
-        
-        
 styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
         {
 
-    var styleNode: Node = styleNodeList!.get(styleNodesIndex); as Node;
-        
-        
+    var styleNode: Node =  as NodestyleNodeList!.get(styleNodesIndex);;
 ;
     
 
     var cssElementStyleNodeList: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, styleNode!.getChildNodes())!;
-        
-        
 ;
     
 

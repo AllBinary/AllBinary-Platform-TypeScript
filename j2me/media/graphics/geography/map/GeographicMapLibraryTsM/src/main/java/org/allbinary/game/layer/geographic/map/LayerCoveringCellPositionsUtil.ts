@@ -18,9 +18,6 @@
 
 
 
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -61,8 +58,6 @@ export class LayerCoveringCellPositionsUtil
         
 
     private static readonly instance: LayerCoveringCellPositionsUtil = new LayerCoveringCellPositionsUtil();
-        
-        
 
     public static getInstance(): LayerCoveringCellPositionsUtil{
 
@@ -75,21 +70,17 @@ export class LayerCoveringCellPositionsUtil
 
 
     private readonly cellPositionsUtil: CellPositionsUtil = CellPositionsUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
+    public getAllXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var layerInterface = layerInterface
     //var x = x
     //var y = y
     //var reusableList = reusableList
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAt(x, y)!;
-        
-        
+    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(x, y)!;
 ;
     
 
@@ -112,14 +103,10 @@ reusableList!.clear();
     
 
     var columns: number = layerInterface!.getWidth() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellWidth();
-        
-        
 ;
     
 
     var rows: number = layerInterface!.getHeight() /geographicMapInterface!.getAllBinaryTiledLayer()!.getCellHeight();
-        
-        
 ;
     
 

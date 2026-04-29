@@ -88,8 +88,6 @@ export class InventoryView extends HttpStoreComponentView implements DomNodeInte
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -117,29 +115,21 @@ var document = document
                                 
 
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
     var inventoryNode: Node = document.createElement(InventoryData.INVENTORY)!;
-        
-        
 ;
     
 
     var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;
-        
-        
 ;
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, itemVector!.length.
                             toString()));
     
 
     var size: number = itemVector!.length!;
-        
-        
 ;
     
 
@@ -148,14 +138,10 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchDat
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
-        
-        
+    var itemInterface: ItemInterface =  as ItemInterfaceitemVector!.get(index);;
 ;
     
 
@@ -167,8 +153,6 @@ index < size; index++)
                                     
     var node: Node = new BasicItemView(itemInterface, new Vector()).
                             toXmlNode(document)!;
-        
-        
 ;
     
 inventoryNode!.appendChild(node);
@@ -206,14 +190,15 @@ inventoryNode!.appendChild(node);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -235,8 +220,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
             {
 
     var error: string = "Failed to view Inventory";
-        
-        
 ;
     
 

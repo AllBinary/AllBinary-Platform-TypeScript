@@ -55,16 +55,10 @@ export class Vertex
         
 
     public x: BasicDecimal = new BasicDecimal(0);
-        
-        
 
     public y: BasicDecimal = new BasicDecimal(0);
-        
-        
 
     public z: BasicDecimal = new BasicDecimal(0);
-        
-        
 public constructor (){
 
             super();
@@ -74,14 +68,10 @@ public constructor (){
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(positionStrings!.X_LABEL);

@@ -43,8 +43,6 @@ export class ThemesData
         
 
     private static readonly instance: ThemesData = new ThemesData();
-        
-        
 
     public static getInstance(): ThemesData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "THEMES_NAME";
-        
-        
 
 }
                 

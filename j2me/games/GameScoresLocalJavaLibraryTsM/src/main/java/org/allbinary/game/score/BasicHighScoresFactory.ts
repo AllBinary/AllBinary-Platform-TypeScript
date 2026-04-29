@@ -41,6 +41,8 @@ import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
 
+import { HighScoresHelper2 } from "./HighScoresHelper2.js";
+
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 
 export class BasicHighScoresFactory extends HighScoresBase {
@@ -71,8 +73,6 @@ export class BasicHighScoresFactory extends HighScoresBase {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
@@ -86,36 +86,26 @@ this.abeClientInformation= abeClientInformation;
 
 
     private readonly highScoresArray: HighScores[] = new Array(1);
-        
-        
 
     private readonly TOP: string = "Top";
-        
-        
 
     private readonly SCORES: string = "Scores";
-        
-        
 
     private readonly PERSONAL_HIGH_SCORES: string = "Personal Top Scores";
-        
-        
 
     private readonly FETCH: string = "fetchHighScores";
-        
-        
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
 this.logUtil!.putF("Getting Local HighScores", this, FETCH);
     
-this.fetchHighScores(gameInfo, highScoresResultsListener, true);
+this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
     
 }
 
 
-    public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
+    public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload

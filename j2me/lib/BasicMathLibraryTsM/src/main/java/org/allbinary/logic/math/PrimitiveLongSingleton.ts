@@ -46,56 +46,40 @@ export class PrimitiveLongSingleton
         
 
     private static readonly instance: PrimitiveLongSingleton = new PrimitiveLongSingleton();
-        
-        
 
     public static getInstance(): PrimitiveLongSingleton{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return PrimitiveLongSingleton.instance;
     
 }
 
 
-    public readonly UNK: string[] = charArrayOf('U','n','k');
-        
-        
+    public readonly UNK: string[] = ['U','n','k'];
 
-    public readonly NUMBER_ARRAY: number[] = byteArrayOf(0,1,2,3,4,5,6,7,8,9);
-        
-        
+    public readonly NUMBER_ARRAY: number[] = [0,1,2,3,4,5,6,7,8,9];
 
-    public readonly NUMBER_CHAR_ARRAY: string[] = charArrayOf('0','1','2','3','4','5','6','7','8','9');
-        
-        
+    public readonly NUMBER_CHAR_ARRAY: string[] = ['0','1','2','3','4','5','6','7','8','9'];
 
     public readonly NUMBER_CHAR_ARRAYS: string[][] = 
                                                         [
-                                                            charArrayOf('0'),charArrayOf('1'),charArrayOf('2'),charArrayOf('3'),charArrayOf('4'),charArrayOf('5'),charArrayOf('6'),charArrayOf('7'),charArrayOf('8'),charArrayOf('9')
+                                                            ['0'],['1'],['2'],['3'],['4'],['5'],['6'],['7'],['8'],['9']
                                                         ];
-        
-        
 
     public readonly ZERO: string[] = 
                                                         
-                                                        charArrayOf(this.NUMBER_CHAR_ARRAY[0];
-        
-        )
+                                                        [this.NUMBER_CHAR_ARRAY[0]]
                                                     ;
-        
-        
 
                 //@Throws(Error::class)
             
     public getNumberFromChar(numberAsChar: string): number{
 var numberAsChar = numberAsChar
 
-    var size: number = NUMBER_CHAR_ARRAY.length
+    var size: number = this.NUMBER_CHAR_ARRAY.length
                 ;
-        
-        
 ;
     
 
@@ -104,8 +88,6 @@ var numberAsChar = numberAsChar
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -127,7 +109,8 @@ index < size; index++)
 
 
                             throw new Error(new StringMaker().
-                            append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString())
+                            append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString());
+                    
 }
 
 

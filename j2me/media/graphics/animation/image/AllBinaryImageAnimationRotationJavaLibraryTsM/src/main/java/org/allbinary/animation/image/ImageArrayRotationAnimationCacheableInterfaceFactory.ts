@@ -46,6 +46,8 @@ import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/lo
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
+
 export class ImageArrayRotationAnimationCacheableInterfaceFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

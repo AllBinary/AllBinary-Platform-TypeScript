@@ -45,8 +45,6 @@ export class GeologicalResourceInfoHudPaintableSingleton
         
 
     private static readonly instance: GeologicalResourceInfoHudPaintable = new GeologicalResourceInfoHudPaintable();
-        
-        
 
     public static getInstance(): GeologicalResourceInfoHudPaintable{
 

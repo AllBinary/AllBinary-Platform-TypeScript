@@ -45,8 +45,6 @@ export class ShaderManagerFactory
         
 
     private static readonly instance: ShaderManagerFactory = new ShaderManagerFactory();
-        
-        
 
     public static getInstance(): ShaderManagerFactory{
 

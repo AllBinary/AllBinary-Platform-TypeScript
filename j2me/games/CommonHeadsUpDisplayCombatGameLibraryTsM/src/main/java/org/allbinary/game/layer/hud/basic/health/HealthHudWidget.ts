@@ -84,8 +84,6 @@ export class HealthHudWidget extends BasicHud implements PaintableInterface, Hea
     private xArray: number[]
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 public constructor (animationInterface: Animation, healthInterface: Health, location: number, direction: number){
             super(location, direction, 16, healthInterface!.getMaxHealth() *16, 2, BasicColorFactory.getInstance()!.WHITE);
                     var animationInterface = animationInterface
@@ -126,8 +124,6 @@ this.update();
 
                         for (
     var index: number = 0;
-        
-        
 index < this.xArray!.length; index++)
         {
 this.xArray[index]= this.getX() +(index *16);
@@ -150,20 +146,12 @@ this.update();
 
 
     private timeDelayHelper: TimeDelayHelper = NoTimeDelayHelper.SINGLETON;
-        
-        
 
     private readonly slowBeatTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(1280);
-        
-        
 
     private readonly mediumBeatTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(640);
-        
-        
 
     private readonly fastBeatTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(320);
-        
-        
 
     public onHealthChange(){
 this.max= (this.healthInterface!.getHealth() /this.healthScale);
@@ -214,15 +202,13 @@ var graphics = graphics
 
                         for (
     var index: number = 0;
-        
-        
 index < this.max; index++)
         {
 
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.animationInterface!.paint(graphics, xArray[index]!, this.getY());
+                                    this.animationInterface!.paintXY(graphics, xArray[index]!, this.getY());
     
 
                                     }

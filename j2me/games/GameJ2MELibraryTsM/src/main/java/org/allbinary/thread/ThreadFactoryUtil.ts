@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { J2MEUtil } from "../../../org/allbinary/J2MEUtil.js";
 
     
@@ -74,16 +76,12 @@ import { ABRunnable } from "./ABRunnable.js";
 
 import { PrimaryThreadPool } from "./PrimaryThreadPool.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class ThreadFactoryUtil
             extends Object
          {
         
 
     private static readonly instance: ThreadFactoryUtil = new ThreadFactoryUtil();
-        
-        
 
     public static getInstance(): ThreadFactoryUtil{
 
@@ -96,38 +94,34 @@ export class ThreadFactoryUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    public getInstance(runnable: GameCanvasRunnableInterface): Thread{
+    public getInstanceGameCanvasRunnable(runnable: GameCanvasRunnableInterface): Thread{
     //var runnable = runnable
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(runnable, runnable.getType());;
+                        return this.getInstanceType(runnable, runnable.getType());;
     
 }
 
 
-    public getInstance(runnable: ABRunnable): Thread{
+    public getInstanceForRunnable(runnable: ABRunnable): Thread{
     //var runnable = runnable
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(runnable, runnable.getType());;
+                        return this.getInstanceType(runnable, runnable.getType());;
     
 }
 
 
-    getInstance(runnable: Runnable, type: number): Thread{
+    getInstanceType(runnable: Runnable, type: number): Thread{
     //var runnable = runnable
     //var type = type
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -139,9 +133,7 @@ export class ThreadFactoryUtil
                         
                                     {
                                     
-    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable(runnable as RunnableCanvas);
-        
-        
+    var demoGameSingleThreadStartRunnable: RunnableCanvasSingleThreadStartRunnable = new RunnableCanvasSingleThreadStartRunnable( as RunnableCanvasrunnable);
 ;
     
 PreLogUtil.put(new StringMaker().
@@ -149,8 +141,6 @@ PreLogUtil.put(new StringMaker().
     
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-        
-        
 ;
     
 primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
@@ -164,8 +154,6 @@ primaryThreadPool!.runTask(demoGameSingleThreadStartRunnable);
     
 
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-        
-        
 ;
     
 primaryThreadPool!.runTask(runnable);
@@ -178,8 +166,6 @@ primaryThreadPool!.runTask(runnable);
                                 
 
     var thread: Thread = new Thread(runnable, runnable.toString());
-        
-        
 ;
     
 this.logUtil!.putF(thread.toString(), this, commonStrings!.CONSTRUCTOR);

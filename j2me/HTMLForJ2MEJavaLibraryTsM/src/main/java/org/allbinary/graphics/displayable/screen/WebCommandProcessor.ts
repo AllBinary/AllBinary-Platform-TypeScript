@@ -69,8 +69,6 @@ export class WebCommandProcessor
         
 
     private static readonly instance: WebCommandProcessor = new WebCommandProcessor();
-        
-        
 
     public static getInstance(): WebCommandProcessor{
 
@@ -83,16 +81,10 @@ export class WebCommandProcessor
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly aboutCommandProcessor: AboutCommandProcessor = AboutCommandProcessor.getInstance()!;
-        
-        
 
     public readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public process(midletCommandListener: CommandListener, command: Command, canvas: Canvas){
     //var midletCommandListener = midletCommandListener
@@ -100,7 +92,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL(this.list.remove(0) as String);
+            PlayN.openURL( as Stringthis.list.removeAt(0));
     
 
                 //: 
@@ -108,8 +100,6 @@ export class WebCommandProcessor
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);

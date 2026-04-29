@@ -69,8 +69,6 @@ export class TransformTemplateFactory
         
 
     private static readonly instance: TransformTemplateFactory = new TransformTemplateFactory();
-        
-        
 
     public static getInstance(): TransformTemplateFactory{
 
@@ -83,8 +81,6 @@ export class TransformTemplateFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -93,7 +89,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap, pageContext: PageContext): TransformTemplateInterface{
     //var abeClientInformation = abeClientInformation
     //var templateName = templateName
     //var propertiesHashMap = propertiesHashMap
@@ -102,21 +98,17 @@ var pageContext = pageContext
         try {
             
     var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(templateName, propertiesHashMap, pageContext)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface); as TransformTemplateInterface;
+                        return  as TransformTemplateInterfaceTransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface);;
     
 
                 //: 
@@ -124,8 +116,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed To Get Instance";
-        
-        
 ;
     
 
@@ -140,7 +130,8 @@ var pageContext = pageContext
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

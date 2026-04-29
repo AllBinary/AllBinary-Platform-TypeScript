@@ -50,8 +50,6 @@ export class DataOutputStreamFactory
         
 
     private static readonly instance: DataOutputStreamFactory = new DataOutputStreamFactory();
-        
-        
 
     public static getInstance(): DataOutputStreamFactory{
 
@@ -69,14 +67,10 @@ export class DataOutputStreamFactory
 var file = file
 
     var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
-        
-        
 ;
     
 
     var idOutData: AbDataOutputStream = new AbDataOutputStream(idFileOutputStream);
-        
-        
 ;
     
 
@@ -95,20 +89,14 @@ var filePath = filePath
 var fileName = fileName
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileOutputStream: AbFileOutputStream = fileStreamFactory!.getFileOutputStreamInstance(filePath, fileName)!;
-        
-        
 ;
     
 
     var idOutData: AbDataOutputStream = new AbDataOutputStream(fileOutputStream);
-        
-        
 ;
     
 

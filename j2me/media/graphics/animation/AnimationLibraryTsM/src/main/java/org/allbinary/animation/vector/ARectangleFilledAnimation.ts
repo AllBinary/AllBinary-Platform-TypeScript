@@ -71,7 +71,7 @@ public constructor (){
 }
 
 
-    public paint(graphics: Graphics, unusedX: number, unusedY: number){
+    public paintXY(graphics: Graphics, unusedX: number, unusedY: number){
     //var graphics = graphics
     //var unusedX = unusedX
     //var unusedY = unusedY

@@ -47,8 +47,6 @@ export class ExplosionBasicSound extends CompositeSound {
         
 
     private soundInterface: Sound = new ExplosionBasicSound();
-        
-        
 
     public static getInstance(): Sound{
 

@@ -43,8 +43,6 @@ export class CreditCardType
         
 
     public static readonly MAXLEN: number = 19;
-        
-        
 
     private name: string
 public constructor (cardType: string){

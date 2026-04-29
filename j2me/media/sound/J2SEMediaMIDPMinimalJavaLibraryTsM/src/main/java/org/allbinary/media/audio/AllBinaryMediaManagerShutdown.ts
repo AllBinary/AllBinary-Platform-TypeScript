@@ -53,8 +53,6 @@ export class AllBinaryMediaManagerShutdown
         
 
     private static readonly instance: AllBinaryMediaManagerShutdown = new AllBinaryMediaManagerShutdown();
-        
-        
 
                 //@Throws(Error::class)
             
@@ -62,14 +60,10 @@ export class AllBinaryMediaManagerShutdown
 var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonStrings!.START, instance, "shutdown");

@@ -87,24 +87,14 @@ export class PersistentInputMapping
         
 
     public static readonly NULL_PERSISTENT_INPUT_MAPPING: PersistentInputMapping = new PersistentInputMapping(GamePersistanceStrings.getInstance()!.SAVED_INPUT_CONFIGURATION_RECORD_ID);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly inputMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
-        
-        
 
     private inputMappingEventListenerInterface: InputMappingEventListenerInterface = NullInputMappingEventListener.NULL_INPUT_MAPPING_EVENT_LISTENER;
-        
-        
 
     private readonly inputPersistance: InputPersistance
 protected constructor (name: string){
@@ -152,7 +142,7 @@ this.inputPersistance= new InputPersistance(name);
     //var abeClientInformation = abeClientInformation
 this.getInputMapping()!.removeAll();
     
-this.getInputMapping()!.add(this.getDefault());
+this.getInputMapping()!.addMapping(this.getDefault());
     
 this.save(abeClientInformation);
     
@@ -171,8 +161,6 @@ this.save(abeClientInformation);
 
 
     private inputMappingEvent: InputMappingEvent = new InputMappingEvent(this);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -222,28 +210,22 @@ this.inputPersistance!.loadAll(abeClientInformation);
 
 
     var list: BasicArrayList = this.inputPersistance!.getList()!;
-        
-        
 ;
     
 
     var totalMappedTo: number = 0;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any>
+    var hashtable: Hashtable
 ;
     
 
-    var enumeration: Enumeration<any?>
+    var enumeration: Enumeration
 ;
     
 
@@ -260,20 +242,18 @@ this.inputPersistance!.loadAll(abeClientInformation);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-hashtable= list.objectArray[index]! as Hashtable<any, any>;
+hashtable=  as Hashtablelist.objectArray[index]!;
     
 enumeration= hashtable.keys();
     
 
         while(enumeration.hasMoreElements())
         {
-mappedToInput= enumeration.nextElement()!; as Input;
+mappedToInput=  as Inputenumeration.nextElement()!;;
     
-gameActionInput= hashtable.get(mappedToInput as Object); as Input;
+gameActionInput=  as Inputhashtable.get(mappedToInput as Object);;
     
 totalMappedTo++;
     
@@ -285,8 +265,6 @@ this.getInputMapping()!.add(gameActionInput, mappedToInput);
 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("End - Total Loaded Keys Mapped: ");
@@ -336,7 +314,8 @@ var input = input
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -347,7 +326,8 @@ var input = input
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

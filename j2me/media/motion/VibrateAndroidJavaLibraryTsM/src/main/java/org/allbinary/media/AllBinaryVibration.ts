@@ -57,8 +57,6 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
         
 
     private VIBRATION: AllBinaryVibrationME = AllBinaryNoVibration.NO_VIBRATION;
-        
-        
 
     public static getInstance(): AllBinaryVibrationME{
 
@@ -89,9 +87,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 }
 
 
-    private readonly vibrator: Vibrator = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE); as Vibrator;
-        
-        
+    private readonly vibrator: Vibrator =  as VibratorResourceUtil.getInstance()!.getContext()!.getSystemService(Context.VIBRATOR_SERVICE);;
 protected constructor (){
 
             super();

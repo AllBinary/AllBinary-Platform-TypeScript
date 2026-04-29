@@ -64,8 +64,6 @@ export class HelpPaintable extends Paintable {
     readonly title: string
 
     inputInfo: string[] = StringUtil.getInstance()!.getArrayInstance()!;
-        
-        
 
     basicColor: BasicColor
 public constructor (title: string, backgroundBasicColor: BasicColor, basicColor: BasicColor){
@@ -91,8 +89,6 @@ this.inputInfo= inputInfo;
     public getHeight(): number{
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
@@ -105,35 +101,25 @@ this.inputInfo= inputInfo;
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
     //var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
-        
-        
 ;
     
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.title)>>1);
-        
-        
 ;
     
 graphics.setColor(this.basicColor!.toInt());
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
@@ -141,8 +127,6 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
 
     var size: number = this.inputInfo!.length
                 ;
-        
-        
 ;
     
 
@@ -151,8 +135,6 @@ graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 beginWidth= (graphics.getFont()!.stringWidth(this.inputInfo[index]!)>>1);

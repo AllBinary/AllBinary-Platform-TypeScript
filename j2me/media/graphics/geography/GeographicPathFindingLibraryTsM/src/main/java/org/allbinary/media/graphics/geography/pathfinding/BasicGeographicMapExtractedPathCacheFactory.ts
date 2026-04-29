@@ -36,8 +36,6 @@ export class BasicGeographicMapExtractedPathCacheFactory extends BaseBasicArrayL
         
 
     private static readonly instance: BasicGeographicMapExtractedPathCacheFactory = new BasicGeographicMapExtractedPathCacheFactory();
-        
-        
 
     public static getInstance(): BasicGeographicMapExtractedPathCacheFactory{
 
@@ -71,8 +69,6 @@ var maxPaths = maxPaths
 
                         for (
     var index: number = maxConcurrentPaths;
-        
-        
 index >= this.maxConcurrentPaths; index--)
         {
 this.list.add(new BasicArrayListS(maxPaths));
@@ -98,7 +94,7 @@ this.maxPaths= maxPaths;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(0); as BasicArrayList;
+                        return  as BasicArrayListthis.list.removeAt(0);;
     
 
                                     }

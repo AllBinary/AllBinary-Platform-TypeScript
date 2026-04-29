@@ -41,8 +41,6 @@ export class GameMidletStateFactory
         
 
     private static readonly INSTANCE: GameMidletStateFactory = new GameMidletStateFactory();
-        
-        
 
     public static getInstance(): GameMidletStateFactory{
 
@@ -55,12 +53,8 @@ export class GameMidletStateFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private currentGameState: GameState = GameState.NO_GAME_STATE;
-        
-        
 private constructor (){
 
             super();

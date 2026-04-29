@@ -49,8 +49,6 @@ import { Vector } from "../../../java/util/Vector.js";
         
 
     private static readonly instance: NullUtil = new NullUtil();
-        
-        
 
     /*actual*/ public static getInstance(): NullUtil{
 
@@ -63,55 +61,31 @@ import { Vector } from "../../../java/util/Vector.js";
 
 
     /*actual*/ public readonly NULL_OBJECT: any = {};
-        
-        
 
     /*actual*/ public readonly NULL_CLASS: Function = this.NULL_OBJECT.constructor!;
-        
-        
 
     /*actual*/ public readonly NULL_OBJECT_ARRAY: any[] = [];
-        
-        
 
     /*actual*/ public readonly NULL_CHAR_ARRAY: string[] = 
                                                         
                                                         new Array(0)
                                                     ;
-        
-        
 
     /*actual*/ public readonly NULL_BYTE_ARRAY: number[] = [];
-        
-        
 
     /*actual*/ public readonly NULL_SHORT_ARRAY_ARRAY: number[][] = new Array(0) [0];
-        
-        
 
     /*actual*/ public readonly NULL_INT_ARRAY: number[] = [];
-        
-        
 
     /*actual*/ public readonly NULL_INT_ARRAY_ARRAY: number[][] = new Array(0) [0];
-        
-        
 
     /*actual*/ public readonly NULL_INT_ARRAY_ARRAY_ARRAY: number[][][] = Array.from({ length: 0 }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
-        
-        
 
     /*actual*/ public readonly NULL_FLOAT_ARRAY: number[] = [];
-        
-        
 
     /*actual*/ public readonly EMPTY_VECTOR: Vector<any> = new Vector<any>();
-        
-        
 
-    /*actual*/ public readonly NULL_TABLE: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    /*actual*/ public readonly NULL_TABLE: Hashtable = new Hashtable();
 
 }
                 

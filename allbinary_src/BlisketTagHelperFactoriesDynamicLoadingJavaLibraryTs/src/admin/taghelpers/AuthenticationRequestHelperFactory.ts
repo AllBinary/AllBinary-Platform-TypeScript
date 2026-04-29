@@ -59,12 +59,8 @@ export class AuthenticationRequestHelperFactory
         
 
     private static readonly CLASSNAME: string = "admin.taghelpers.AuthenticationRequestHelper";
-        
-        
 
     private static readonly FACTORYNAME: string = "AuthenticationRequestHelperFactory";
-        
-        
 public constructor (){
 
             super();
@@ -73,7 +69,7 @@ public constructor (){
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance(hashMap: HashMap, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 
@@ -87,7 +83,7 @@ var pageContext = pageContext
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
+    public getInstance(hashMap: HashMap, httpServletRequest: HttpServletRequest): any{
 var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 

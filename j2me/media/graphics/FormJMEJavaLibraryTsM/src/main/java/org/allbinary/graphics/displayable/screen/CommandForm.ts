@@ -82,20 +82,12 @@ export class CommandForm extends Form implements MyCommandInterface, MenuListene
         
 
     public static readonly NULL_COMMAND_FORM: CommandForm = new CommandForm(NullCommandListener.NULL_COMMAND_LISTENER, StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly repaintProcessor: Processor = ScreenRepaintProcessorFactory.getInstance()!.getInstance(this)!;
-        
-        
+    private readonly repaintProcessor: Processor = ScreenRepaintProcessorFactory.getInstance()!.create(this)!;
 
     private commandStack: Stack<any>
 public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
@@ -172,8 +164,6 @@ super.addCommand(command);
     public removeAllCommands(){
 
     var size: number = this.commandStack!.length!;
-        
-        
 ;
     
 
@@ -182,11 +172,9 @@ super.addCommand(command);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-super.removeCommand(this.commandStack!.pop() as Command);
+super.removeCommand( as Commandthis.commandStack!.pop());
     
 }
 

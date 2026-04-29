@@ -52,8 +52,6 @@ export class CommonButtons
         
 
     private static readonly instance: CommonButtons = new CommonButtons();
-        
-        
 
     public static getInstance(): CommonButtons{
 
@@ -75,14 +73,10 @@ private constructor (){
             super();
         
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var commonButtonSize: number = 128;
-        
-        
 ;
     
 
@@ -90,20 +84,14 @@ private constructor (){
         {
 
     var totalColumns: number = displayInfo!.getLastWidth() /commonButtonSize;
-        
-        
 ;
     
 
     var totalRows: number = displayInfo!.getLastHeight() /commonButtonSize;
-        
-        
 ;
     
 
     var max: number = totalColumns;
-        
-        
 ;
     
 

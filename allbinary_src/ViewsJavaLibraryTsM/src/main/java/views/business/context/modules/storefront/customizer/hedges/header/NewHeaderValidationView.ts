@@ -70,8 +70,6 @@ export class NewHeaderValidationView extends TopBarView implements ValidationCom
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -99,7 +97,7 @@ this.heading= new HeadingValidation();
     public isValid(): Boolean{
 
         try {
-            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
+            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
     
 
 
@@ -136,8 +134,6 @@ this.heading= new HeadingValidation();
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.heading.validationInfo());

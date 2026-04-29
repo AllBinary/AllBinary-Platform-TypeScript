@@ -54,8 +54,6 @@ export class LongUtil
     //var end = end
 
     var frameStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -64,14 +62,10 @@ export class LongUtil
                                     {
                                     
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 
     var size: number = LongData.MAX_LONG_LENGTH -frameStringBuffer!.length();
-        
-        
 ;
     
 
@@ -80,8 +74,6 @@ export class LongUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 frameStringBuffer!.append(commonPhoneStrings!.ZERO);

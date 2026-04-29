@@ -66,8 +66,6 @@ export class TitleValidation extends TitleView implements ValidationInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super();
                     
@@ -85,7 +83,7 @@ public constructor (node: Node){
                     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
             super(hashMap);
                     var hashMap = hashMap
 
@@ -109,8 +107,6 @@ public constructor (hashMap: HashMap<any, any>){
                                 
 
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -166,8 +162,6 @@ public constructor (hashMap: HashMap<any, any>){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Title is not valid.");

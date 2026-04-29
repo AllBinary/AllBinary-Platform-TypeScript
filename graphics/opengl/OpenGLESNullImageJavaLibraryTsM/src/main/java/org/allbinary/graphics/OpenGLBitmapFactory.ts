@@ -41,16 +41,14 @@ import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graph
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { OpenGLBitmap } from "./OpenGLBitmap.js";
-
 import { Config } from "./Config.js";
+
+import { OpenGLBitmap } from "./OpenGLBitmap.js";
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         
 
     private static readonly instance: OpenGLBitmapFactory = new OpenGLBitmapFactory();
-        
-        
 
     public static getInstance(): OpenGLBitmapFactory{
 
@@ -83,8 +81,6 @@ this.bitmapConfig= bitmapConfig;
                 
             
     public readonly ARGB_8888: Config = new Config(NullUtil.getInstance()!.NULL_OBJECT);
-        
-        
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
 var width = width

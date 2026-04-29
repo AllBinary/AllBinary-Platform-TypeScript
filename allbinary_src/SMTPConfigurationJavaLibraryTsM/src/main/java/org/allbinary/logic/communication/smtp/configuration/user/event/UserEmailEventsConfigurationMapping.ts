@@ -65,11 +65,9 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
@@ -98,8 +96,6 @@ this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterfac
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 

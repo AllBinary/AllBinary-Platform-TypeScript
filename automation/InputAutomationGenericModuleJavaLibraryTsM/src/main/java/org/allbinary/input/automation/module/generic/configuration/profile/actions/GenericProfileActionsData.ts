@@ -43,8 +43,6 @@ export class GenericProfileActionsData
         
 
     public NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTIONS_NAME";
-        
-        
 private constructor (){
 
             super();

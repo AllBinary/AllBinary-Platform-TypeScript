@@ -52,15 +52,11 @@ export class PaymentIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "paymentId";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

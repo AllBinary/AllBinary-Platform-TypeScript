@@ -74,8 +74,6 @@ export class ResourceUtil
         
 
     private static readonly instance: ResourceUtil = new ResourceUtil();
-        
-        
 
     public static getInstance(): ResourceUtil{
 
@@ -88,16 +86,10 @@ export class ResourceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private path: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private ext: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 private constructor (){
 
             super();
@@ -124,9 +116,7 @@ this.ext= ext;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var inputStream: InputStream = this.getResourceAsStream(resource, 2)!;
-        
-        
+    var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;
 ;
     
 
@@ -135,7 +125,7 @@ this.ext= ext;
                                 )
                         
                                     {
-                                    inputStream= this.getResourceAsStream(resource, 1);
+                                    inputStream= this.getResourceAsStreamAtStart(resource, 1);
     
 
                         if(inputStream == 
@@ -147,7 +137,8 @@ this.ext= ext;
 
 
                             throw new Error(new StringMaker().
-                            append("Unable to obtain: ")!.append(resource)!.toString())
+                            append("Unable to obtain: ")!.append(resource)!.toString());
+                    
 
                                     }
                                 
@@ -165,26 +156,20 @@ this.ext= ext;
 
                 //@Throws(Error::class)
             
-    getResourceAsStream(resource: string, startIndex: number): InputStream{
+    getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
     //var resource = resource
     //var startIndex = startIndex
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var inputStream: InputStream = new FileInputStream(new StringMaker().
                             append(this.path)!.append(resource)!.append(this.ext)!.toString());
-        
-        
 ;
     
 
@@ -195,8 +180,6 @@ this.ext= ext;
                                     {
                                     
     var byteArray: number[] = new Array(inputStream!.available());
-        
-        
 ;
     
 StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(), byteArray);
@@ -219,7 +202,7 @@ StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(),
 }
 
 
-    public addResource(resource: string, value: Integer){
+    public addResource(resource: string, value: number){
     //var resource = resource
     //var value = value
 }

@@ -52,8 +52,6 @@ export class LocalPlayerBuildingEventHandler extends BasicEventHandler {
         
 
     private eventHandler: LocalPlayerBuildingEventHandler = new LocalPlayerBuildingEventHandler();
-        
-        
 
     public static getInstance(): LocalPlayerBuildingEventHandler{
 
@@ -76,12 +74,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var buildingEventListenerInterface: BuildingEventListenerInterface = (eventListenerInterface as BuildingEventListenerInterface);
-        
-        
+    var buildingEventListenerInterface: BuildingEventListenerInterface = ( as BuildingEventListenerInterfaceeventListenerInterface);
 ;
     
-buildingEventListenerInterface!.onBuildingEvent(eventObject as RTSLayerEvent);
+buildingEventListenerInterface!.onBuildingEvent( as RTSLayerEventeventObject);
     
 }
 

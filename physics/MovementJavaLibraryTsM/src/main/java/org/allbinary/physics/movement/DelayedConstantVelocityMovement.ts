@@ -58,8 +58,6 @@ export class DelayedConstantVelocityMovement extends BasicConstantVelocityMoveme
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(60);
-        
-        
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
             super(basicDecimal, velocityProperties);
                     var basicDecimal = basicDecimal

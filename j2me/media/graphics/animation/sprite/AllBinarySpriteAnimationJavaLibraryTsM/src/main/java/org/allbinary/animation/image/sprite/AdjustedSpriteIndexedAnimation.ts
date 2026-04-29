@@ -82,7 +82,7 @@ this.dy= dy;
 }
 
 
-    public paint(graphics: Graphics, frame: number, x: number, y: number){
+    public paintFrame(graphics: Graphics, frame: number, x: number, y: number){
     //var graphics = graphics
     //var frame = frame
     //var x = x
@@ -96,7 +96,7 @@ super.paint(graphics);
 }
 
 
-    public paint(g: Graphics, x: number, y: number){
+    public paintXY(g: Graphics, x: number, y: number){
     //var g = g
     //var x = x
     //var y = y

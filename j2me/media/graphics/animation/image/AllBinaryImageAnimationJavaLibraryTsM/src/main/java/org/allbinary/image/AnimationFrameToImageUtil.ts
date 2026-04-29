@@ -54,8 +54,6 @@ export class AnimationFrameToImageUtil
         
 
     private static readonly instance: AnimationFrameToImageUtil = new AnimationFrameToImageUtil();
-        
-        
 
     public static getInstance(): AnimationFrameToImageUtil{
 
@@ -75,31 +73,23 @@ var height = height
 var animationInterface = animationInterface
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
-        
-        
 ;
     
 
     var graphics: Graphics = image.getGraphics()!;
-        
-        
 ;
     
 
     var tranlateX: number = (width>>2);
-        
-        
 ;
     
 
     var tranlateY: number = (height>>2);
-        
-        
 ;
     
 graphics.translate(tranlateX, tranlateY);
     
-animationInterface!.paint(graphics, 0, 0);
+animationInterface!.paintXY(graphics, 0, 0);
     
 graphics.translate( -tranlateX,  -tranlateY);
     
@@ -114,23 +104,19 @@ graphics.translate( -tranlateX,  -tranlateY);
 
                 //@Throws(Error::class)
             
-    public getInstance(width: number, height: number, animationInterface: Animation): Image{
+    public getInstanceWH(width: number, height: number, animationInterface: Animation): Image{
 var width = width
 var height = height
 var animationInterface = animationInterface
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(instance.constructor.name.toString()!, width, height)!;
-        
-        
 ;
     
 
     var graphics: Graphics = image.getGraphics()!;
-        
-        
 ;
     
-animationInterface!.paint(graphics, 0, 0);
+animationInterface!.paintXY(graphics, 0, 0);
     
 
 

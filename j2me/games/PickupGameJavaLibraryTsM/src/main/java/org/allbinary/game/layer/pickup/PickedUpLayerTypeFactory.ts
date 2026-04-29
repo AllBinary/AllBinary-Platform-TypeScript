@@ -40,14 +40,14 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PickedUpLayerType } from "./PickedUpLayerType.js";
+
 export class PickedUpLayerTypeFactory
             extends Object
          {
         
 
     private static readonly instance: PickedUpLayerTypeFactory = new PickedUpLayerTypeFactory();
-        
-        
 
     public static getInstance(): PickedUpLayerTypeFactory{
 
@@ -60,44 +60,24 @@ export class PickedUpLayerTypeFactory
 
 
     public NONE: PickedUpLayerType = new PickedUpLayerType(StringUtil.getInstance()!.NULL_STRING);
-        
-        
 
     public BEAM: PickedUpLayerType = new PickedUpLayerType("BEAM");
-        
-        
 
     public MINE: PickedUpLayerType = new PickedUpLayerType("MINE");
-        
-        
 
     public PROJECTILE: PickedUpLayerType = new PickedUpLayerType("PROJECTILE");
-        
-        
 
     public ENHANCEMENT: PickedUpLayerType = new PickedUpLayerType("Enhancement");
-        
-        
 
     public MORPH: PickedUpLayerType = new PickedUpLayerType("Morph");
-        
-        
 
     public PART: PickedUpLayerType = new PickedUpLayerType("Part");
-        
-        
 
     public HEAL: PickedUpLayerType = new PickedUpLayerType("Heal");
-        
-        
 
     public LIFE: PickedUpLayerType = new PickedUpLayerType("Life");
-        
-        
 
     public POINTS: PickedUpLayerType = new PickedUpLayerType("Points");
-        
-        
 
 }
                 

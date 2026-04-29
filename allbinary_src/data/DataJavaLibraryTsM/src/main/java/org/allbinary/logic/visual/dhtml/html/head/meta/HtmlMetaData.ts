@@ -43,8 +43,6 @@ export class HtmlMetaData
         
 
     private static readonly instance: HtmlMetaData = new HtmlMetaData();
-        
-        
 
     public static getInstance(): HtmlMetaData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public NAME: string = "HTMLMETA_NAME";
-        
-        
 
     public LABEL: string = "HTMLMETA_LABEL";
-        
-        
 
     public VALUE: string = "meta";
-        
-        
 
 }
                 

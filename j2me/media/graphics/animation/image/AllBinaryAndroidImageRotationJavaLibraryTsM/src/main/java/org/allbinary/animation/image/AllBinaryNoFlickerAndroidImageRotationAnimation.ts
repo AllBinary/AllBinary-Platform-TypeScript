@@ -70,16 +70,10 @@ export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRo
         
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
-        
-        
 
     private readonly androidImageUtil: AndroidImageUtil = AndroidImageUtil.getInstance()!;
-        
-        
 
     private readonly matrix: Matrix = new Matrix();
-        
-        
 
     private readonly halfWidth: number
 
@@ -90,8 +84,6 @@ export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRo
     private readonly originalImage: Image
 
     private readonly twoImages: Image[] = new Array(2);
-        
-        
 
     private imageToShow: Image
 
@@ -128,8 +120,6 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
     //var basicColor = basicColor
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -172,8 +162,6 @@ this.setBasicColorP(basicColor);
     //var alpha = alpha
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -235,16 +223,12 @@ this.swap();
     //var index = index
 
     var currentFrame: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.circularIndexUtil!.setIndex(index);
     
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.angleInfo!.adjustAngle(newFrame);
@@ -277,7 +261,7 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

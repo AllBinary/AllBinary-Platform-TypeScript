@@ -58,8 +58,8 @@ export class AdvertisementCampaign
          implements AdvertisementCampaignInterface {
         
 
-    private hashMap: HashMap<any, any>
-public constructor (hashMap: HashMap<any, any>){
+    private hashMap: HashMap
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -83,7 +83,7 @@ this.hashMap= hashMap;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME); as String;
+                        return  as Stringthis.hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);;
     
 }
 

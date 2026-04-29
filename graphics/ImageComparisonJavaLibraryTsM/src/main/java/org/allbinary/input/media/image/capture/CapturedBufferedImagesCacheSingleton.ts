@@ -66,8 +66,6 @@ export class CapturedBufferedImagesCacheSingleton
     private cacheInterface: AutomaticCacheInterface = 
                 null
             ;
-        
-        
 
     public static getInstance(): CacheInterface{
 
@@ -82,33 +80,25 @@ export class CapturedBufferedImagesCacheSingleton
                 init{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var STATIC_BLOCK: string = "Static Block";
-        
-        
 ;
     
 
     var instance: string = "CapturedBufferedImagesCacheSingleton";
-        
-        
 ;
     
 
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-cacheInterface= CacheInterfaceFactory.getInstance((), ()); as AutomaticCacheInterface;
+cacheInterface=  as AutomaticCacheInterfaceCacheInterfaceFactory.getInstance((), ());;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
@@ -123,8 +113,6 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 }
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

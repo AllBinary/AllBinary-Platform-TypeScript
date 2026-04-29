@@ -51,6 +51,8 @@ import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAni
         
 import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
 
+import { CompoundIndexedAnimation } from "./CompoundIndexedAnimation.js";
+
 export class CompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
@@ -75,7 +77,7 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 }
 
 
-    getInstance(animationArray: Animation[]): Animation{
+    createAnimation(animationArray: Animation[]): Animation{
     //var animationArray = animationArray
 
 

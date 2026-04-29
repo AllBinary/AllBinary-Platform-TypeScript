@@ -56,36 +56,20 @@ export class UnitGameResources extends BasicGameResources {
         
 
     private static readonly ICON: string = "_icon";
-        
-        
 
     private static readonly BUILD: string = "_build";
-        
-        
 
     private static readonly DESTROY: string = "_destroy";
-        
-        
 
     private static readonly ICON_BUILD: string = "_icon" +BUILD;
-        
-        
 
     public NAME: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON_ANIMATION: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON_BUILD: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 protected constructor (){
 
             super();
@@ -93,20 +77,16 @@ protected constructor (){
 
 
     private readonly ICON_SIZE: string = "_64_by_64.png";
-        
-        
 
                 //@Throws(Error::class)
             
-    init(ROOT: string, sizeString: string){
+    append(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-super.init(ROOT, sizeString);
+super.append(ROOT, sizeString);
     
 
     var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -167,7 +147,7 @@ this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.getInstance()!.getString(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);;
+                        return GameGraphicsResourceUtil.getInstance()!.getStringForFeature(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);;
     
 
                                     }

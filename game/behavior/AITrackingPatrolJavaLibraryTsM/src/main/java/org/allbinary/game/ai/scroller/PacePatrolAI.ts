@@ -100,9 +100,7 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
     private firingDistance: number= 0
 
     isFollowLimitedByTerrain: boolean = false;
-        
-        
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -126,14 +124,10 @@ this.update();
     
 
     var direction: Direction = this.setFiringDirectionForTargetIfInRange()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -144,7 +138,7 @@ this.update();
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    super.processAI(Canvas.LEFT);
+                                    super.processKeyAI(Canvas.LEFT);
     
 
                                     }
@@ -155,7 +149,7 @@ this.lastKeyDirection= keyDirection;
     
 xTotalDistance= 0;
     
-super.processAI(Canvas.KEY_NUM1);
+super.processKeyAI(Canvas.KEY_NUM1);
     
 
                                     }
@@ -168,7 +162,7 @@ super.processAI(Canvas.KEY_NUM1);
                         if(this.lastKeyDirection != keyDirection || !this.isFollowLimitedByTerrain)
                         
                                     {
-                                    super.processAI(Canvas.RIGHT);
+                                    super.processKeyAI(Canvas.RIGHT);
     
 
                                     }
@@ -179,13 +173,13 @@ this.lastKeyDirection= keyDirection;
     
 xTotalDistance= 0;
     
-super.processAI(Canvas.KEY_NUM1);
+super.processKeyAI(Canvas.KEY_NUM1);
     
 
                                     }
                                 
                         else {
-                            super.processAI(this.keyDirection);
+                            super.processKeyAI(this.keyDirection);
     
 
                         }
@@ -196,20 +190,14 @@ super.processAI(Canvas.KEY_NUM1);
     setFiringDirectionForTargetIfInRange(): Direction{
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var direction: Direction = directionFactory!.NOT_BORDERED_WITH;
-        
-        
 ;
     
 
@@ -226,8 +214,6 @@ super.processAI(Canvas.KEY_NUM1);
     
 
     var size: number = this.trackingList!.size()!;
-        
-        
 ;
     
 
@@ -236,48 +222,34 @@ super.processAI(Canvas.KEY_NUM1);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-lastTrackingEvent= this.trackingList!.get(0); as TrackingEvent;
+lastTrackingEvent=  as TrackingEventthis.trackingList!.get(0);;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
 
     var x: number = lastTrackingLayerInterface!.getXP()!;
-        
-        
 ;
     
 
     var y: number = lastTrackingLayerInterface!.getYP()!;
-        
-        
 ;
     
 
     var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();
-        
-        
 ;
     
 
     var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();
-        
-        
 ;
     
 
     var absXDistance: number = Math.abs(xDistance)!;
-        
-        
 ;
     
 
     var absYDistance: number = Math.abs(yDistance)!;
-        
-        
 ;
     
 
@@ -288,7 +260,7 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
-                                    directionCompositeInterface= this.getOwnerLayerInterface(); as DirectionCompositeInterface;
+                                    directionCompositeInterface=  as DirectionCompositeInterfacethis.getOwnerLayerInterface();;
     
 
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)

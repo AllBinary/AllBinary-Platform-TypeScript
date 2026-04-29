@@ -56,8 +56,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -66,14 +64,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfNodes; index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -107,8 +101,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;
-        
-        
 ;
     
 
@@ -130,7 +122,8 @@ var nodeList = nodeList
                             
 
 
-                            throw new Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search");
+                    
 
                         }
                             
@@ -144,8 +137,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
-        
-        
 ;
     
 
@@ -164,8 +155,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;
-        
-        
 ;
     
 
@@ -177,7 +166,8 @@ var nodeList = nodeList
                                     
 
 
-                            throw new Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search");
+                    
 
                                     }
                                 
@@ -199,14 +189,10 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var nodeVector: Vector = new Vector();
-        
-        
 ;
     
 
     var numberOfNodes: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -215,14 +201,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfNodes; index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 

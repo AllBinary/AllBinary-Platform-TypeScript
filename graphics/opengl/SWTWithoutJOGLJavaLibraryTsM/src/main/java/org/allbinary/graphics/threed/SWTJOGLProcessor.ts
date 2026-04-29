@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { MIDlet } from "../../../../javax/microedition/midlet/MIDlet.js";
 
     
@@ -40,7 +42,7 @@ import { MIDlet } from "../../../../javax/microedition/midlet/MIDlet.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
+import { GLHolder } from "./GLHolder.js";
 
 export class SWTJOGLProcessor
             extends Object
@@ -48,8 +50,6 @@ export class SWTJOGLProcessor
         
 
     private static readonly instance: SWTJOGLProcessor = new SWTJOGLProcessor();
-        
-        
 
     public static getInstance(): SWTJOGLProcessor{
 
@@ -61,7 +61,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public glHolder: GLHolder = new object: GLHolder()
+    public glHolder: GLHolder = new GLHolder()
                                 {
                                 
     public run(renderer: any = {}){
@@ -70,8 +70,6 @@ var renderer = renderer
 
                                 }
                             ;
-        
-        
 
     public init(display: any = {}, comp: any = {}){
     //var display = display

@@ -58,14 +58,10 @@ export class AccelerometerSensorFactory
     public static init(){
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -75,7 +71,8 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Orientation Sensors")
+                            throw new Error("No Orientation Sensors");
+                    
 
                                     }
                                 
@@ -86,7 +83,8 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Simulation Sensors")
+                            throw new Error("No Simulation Sensors");
+                    
 
                                     }
                                 
@@ -103,7 +101,8 @@ export class AccelerometerSensorFactory
                             
 
 
-                            throw new Error("Not Such SensorFeature")
+                            throw new Error("Not Such SensorFeature");
+                    
 
                         }
                             

@@ -43,8 +43,6 @@ export class BackgroundColorData
         
 
     private static readonly instance: BackgroundColorData = new BackgroundColorData();
-        
-        
 
     public static getInstance(): BackgroundColorData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly VALUE: string = "background-color";
-        
-        
 
 }
                 

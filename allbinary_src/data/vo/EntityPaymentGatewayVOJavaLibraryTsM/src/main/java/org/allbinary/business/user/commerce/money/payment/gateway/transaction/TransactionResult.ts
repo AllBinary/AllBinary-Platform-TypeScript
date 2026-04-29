@@ -77,14 +77,10 @@ export class TransactionResult
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private keyValuePairs: HashMap<any, any>
+    private keyValuePairs: HashMap
 
     private result: string
 public constructor (result: string){
@@ -97,26 +93,18 @@ public constructor (result: string){
     
 
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.AMPERSAND);
-        
-        
 ;
     
 
     var tokens: BasicArrayList = tokenizer.getTokens(result, new BasicArrayListD())!;
-        
-        
 ;
     
 
     var tokenizer2: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.EQUALS);
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any> = tokenizer2.getTokens(tokens)!;
-        
-        
+    var hashtable: Hashtable = tokenizer2.getTokens(tokens)!;
 ;
     
 this.keyValuePairs!.putAll(hashtable);
@@ -127,8 +115,6 @@ this.keyValuePairs!.putAll(hashtable);
             {
 
     var exceptionMessage: string = "TransactionResult Constructor Failed";
-        
-        
 ;
     
 this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
@@ -137,7 +123,7 @@ this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
 
 }
 
-public constructor (keyValuePairs: HashMap<any, any>){
+public constructor (keyValuePairs: HashMap){
 
             super();
         var keyValuePairs = keyValuePairs
@@ -158,7 +144,7 @@ this.result= "Needs to have the hashmap converted to string for other constructo
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
 
 
@@ -171,14 +157,10 @@ this.result= "Needs to have the hashmap converted to string for other constructo
     getAllPossibleKeys(): Vector{
 
     var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
-        
-        
 ;
     
 
     var verisignResponseKeys: Vector = new Vector();
-        
-        
 ;
     
 verisignResponseKeys!.add(paymentTransactionKeysFactory!.RESULT.toString());
@@ -237,20 +219,14 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
     public getValues(): Vector{
 
     var keyVector: Vector = this.getAllPossibleKeys()!;
-        
-        
 ;
     
 
     var valueVector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = keyVector!.length!;
-        
-        
 ;
     
 
@@ -259,14 +235,10 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var key: string = keyVector!.get(i); as String;
-        
-        
+    var key: string =  as StringkeyVector!.get(i);;
 ;
     
 
@@ -281,8 +253,6 @@ i < size; i++)
                         else {
                             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 valueVector!.add(stringUtil!.EMPTY_STRING);
@@ -306,7 +276,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.PNREF.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.PNREF.toString());;
     
 }
 
@@ -316,7 +286,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.RESPMSG.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.RESPMSG.toString());;
     
 }
 
@@ -326,7 +296,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.RESULT.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.RESULT.toString());;
     
 }
 
@@ -336,7 +306,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.SCORE.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.SCORE.toString());;
     
 }
 
@@ -346,7 +316,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.STATUS.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.STATUS.toString());;
     
 }
 
@@ -356,7 +326,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.FRAUDCODE.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.FRAUDCODE.toString());;
     
 }
 
@@ -366,7 +336,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.FRAUDMSG.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.FRAUDMSG.toString());;
     
 }
 
@@ -376,7 +346,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.ORIGRESULT.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.ORIGRESULT.toString());;
     
 }
 
@@ -386,7 +356,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.AVSADDR.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.AVSADDR.toString());;
     
 }
 
@@ -396,7 +366,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.AVSZIP.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.AVSZIP.toString());;
     
 }
 
@@ -406,7 +376,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.ERRCODE.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.ERRCODE.toString());;
     
 }
 
@@ -416,7 +386,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION1.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION1.toString());;
     
 }
 
@@ -426,7 +396,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION2.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION2.toString());;
     
 }
 
@@ -436,7 +406,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION3.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION3.toString());;
     
 }
 
@@ -446,7 +416,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION4.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION4.toString());;
     
 }
 
@@ -456,7 +426,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION5.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION5.toString());;
     
 }
 
@@ -466,7 +436,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION6.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION6.toString());;
     
 }
 
@@ -476,7 +446,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION7.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.EXCEPTION7.toString());;
     
 }
 
@@ -486,7 +456,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON1.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON1.toString());;
     
 }
 
@@ -496,7 +466,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON2.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON2.toString());;
     
 }
 
@@ -506,7 +476,7 @@ valueVector!.add(stringUtil!.EMPTY_STRING);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON3.toString()); as String;
+                        return  as Stringthis.keyValuePairs!.get(PaymentTransactionKeysFactory.getInstance()!.REASON3.toString());;
     
 }
 

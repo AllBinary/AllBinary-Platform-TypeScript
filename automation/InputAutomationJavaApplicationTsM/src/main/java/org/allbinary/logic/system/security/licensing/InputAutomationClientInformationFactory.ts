@@ -45,8 +45,6 @@ export class InputAutomationClientInformationFactory
         
 
     private static readonly instance: InputAutomationClientInformation = new InputAutomationClientInformation();
-        
-        
 
     public static getInstance(): InputAutomationClientInformation{
 

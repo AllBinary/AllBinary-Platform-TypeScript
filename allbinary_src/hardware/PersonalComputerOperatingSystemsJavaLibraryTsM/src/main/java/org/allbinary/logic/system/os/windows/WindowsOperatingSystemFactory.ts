@@ -67,8 +67,6 @@ export class WindowsOperatingSystemFactory
         
 
     private static readonly instance: WindowsOperatingSystemFactory = new WindowsOperatingSystemFactory();
-        
-        
 
     public static getInstance(): WindowsOperatingSystemFactory{
 
@@ -81,8 +79,6 @@ export class WindowsOperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -94,14 +90,10 @@ private constructor (){
         try {
             
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = SystemProperties.getInstance()!.getName()!;
-        
-        
 ;
     
 
@@ -176,7 +168,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Specific Windows OS Not Supported: " +osName)
+                            throw new Error("Specific Windows OS Not Supported: " +osName);
+                    
 
                         }
                             
@@ -199,8 +192,6 @@ private constructor (){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

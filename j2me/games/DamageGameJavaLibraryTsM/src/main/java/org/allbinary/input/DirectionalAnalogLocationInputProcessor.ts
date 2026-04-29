@@ -74,38 +74,22 @@ export class DirectionalAnalogLocationInputProcessor extends AnalogLocationInput
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly inputProcessorArray: GameInputProcessor[]
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 
     private leftGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private rightGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private upGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private downGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private leftTriggerGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private rightTriggerGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 public constructor (inputProcessorArray: GameInputProcessor[]){
 
             super();
@@ -114,17 +98,17 @@ this.inputProcessorArray= inputProcessorArray;
     
 
         try {
-            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.LEFT);
+            this.leftGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.LEFT);
     
-this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.RIGHT);
+this.rightGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.RIGHT);
     
-this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.UP);
+this.upGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.UP);
     
-this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.DOWN);
+this.downGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.DOWN);
     
-this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM0);
+this.leftTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.KEY_NUM0);
     
-this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(this, gameKeyFactory!.KEY_NUM5);
+this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstanceForInput(this, gameKeyFactory!.KEY_NUM5);
     
 
                 //: 
@@ -132,8 +116,6 @@ this.rightTriggerGameKeyEvent= GameKeyEventFactory.getInstance()!.getInstance(th
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
@@ -156,33 +138,25 @@ customGPoint= analogLocationInput!.getCustomGPoint();
     
 
     var x: number = customGPoint!.getX()!;
-        
-        
 ;
     
 
     var y: number = customGPoint!.getY()!;
-        
-        
 ;
     
 
     var leftTrigger: number = analogLocationInput!.getLeftTrigger()!;
-        
-        
 ;
     
 
     var rightTrigger: number = analogLocationInput!.getRightTrigger()!;
-        
-        
 ;
     
 
                         if(x < 0)
                         
                                     {
-                                    this.inputProcessorArray[this.leftGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftGameKeyEvent, x);
+                                    this.inputProcessorArray[this.leftGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.leftGameKeyEvent, x);
     
 
                                     }
@@ -191,7 +165,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(x > 0)
                         
                                     {
-                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightGameKeyEvent, x);
+                                    inputProcessorArray[this.rightGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.rightGameKeyEvent, x);
     
 
                                     }
@@ -200,7 +174,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(y < 0)
                         
                                     {
-                                    this.inputProcessorArray[this.downGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.downGameKeyEvent, y);
+                                    this.inputProcessorArray[this.downGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.downGameKeyEvent, y);
     
 
                                     }
@@ -209,7 +183,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(y > 0)
                         
                                     {
-                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.upGameKeyEvent, y);
+                                    inputProcessorArray[this.upGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.upGameKeyEvent, y);
     
 
                                     }
@@ -218,7 +192,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(leftTrigger > 0)
                         
                                     {
-                                    this.inputProcessorArray[this.leftTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger);
+                                    this.inputProcessorArray[this.leftTriggerGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.leftTriggerGameKeyEvent, leftTrigger);
     
 
                                     }
@@ -227,7 +201,7 @@ customGPoint= analogLocationInput!.getCustomGPoint();
                         if(rightTrigger > 0)
                         
                                     {
-                                    this.inputProcessorArray[this.rightTriggerGameKeyEvent!.getKey()]!.process(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger);
+                                    this.inputProcessorArray[this.rightTriggerGameKeyEvent!.getKey()]!.processAnalog(allbinaryLayerManager, this.rightTriggerGameKeyEvent, rightTrigger);
     
 
                                     }
@@ -238,8 +212,6 @@ customGPoint= analogLocationInput!.getCustomGPoint();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put("Unable to process analog input", this, commonStrings!.PROCESS, e);

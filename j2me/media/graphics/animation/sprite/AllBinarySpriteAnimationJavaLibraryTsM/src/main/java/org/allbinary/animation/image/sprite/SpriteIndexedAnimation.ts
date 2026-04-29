@@ -39,9 +39,6 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
 
     
-import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/BasicColorUtil.js";
-
-    
 import { ColorCompositeInterface } from "../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js";
 
     
@@ -105,7 +102,8 @@ this.basicColorArray= basicColorArray;
 
 
                             throw new Error(new StringMaker().
-                            append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString())
+                            append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString());
+                    
 
                                     }
                                 
@@ -132,8 +130,6 @@ this.basicColorArray= basicColorArray;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.basicColorArray!.length; index++)
         {
 
@@ -180,7 +176,7 @@ break;
 }
 
 
-    public paint(graphics: Graphics, frame: number, x: number, y: number){
+    public paintFrame(graphics: Graphics, frame: number, x: number, y: number){
     //var graphics = graphics
     //var frame = frame
     //var x = x
@@ -194,7 +190,7 @@ this.sprite.paint(graphics);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y

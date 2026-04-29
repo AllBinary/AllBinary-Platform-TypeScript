@@ -106,12 +106,8 @@ export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly output: string
 
@@ -123,21 +119,15 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             super();
         var transformInfoInterface = transformInfoInterface
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacetransformInfoInterface;
 ;
     
 
     var weblisketSession: WeblisketSession = new WeblisketSession(httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext());
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -148,20 +138,14 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
     
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString());
-        
-        
 ;
     
 
-    var fileName: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE); as String;
-        
-        
+    var fileName: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.FILE);;
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -169,17 +153,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                         
                                     {
                                     
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = transformInfoInterface as TransformInfoHttpStoreInterface;
-        
-        
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface =  as TransformInfoHttpStoreInterfacetransformInfoInterface;
 ;
     
 fileName= transformInfoInterface!.getName()!.substring(transformInfoHttpStoreInterface!.getStoreName()!.length() +1);
     
 
-    var outputMappingHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var outputMappingHashMap: HashMap = new HashMap();
 ;
     
 outputMappingHashMap!.put(TransformInfosData.getInstance()!.PREVIEW, "Preview");
@@ -190,8 +170,6 @@ outputMappingHashMap!.put(CommonSeps.getInstance()!.SPACE, StringUtil.getInstanc
     
 
     var replace: Replace = new Replace(outputMappingHashMap);
-        
-        
 ;
     
 fileName= replace.all(fileName);
@@ -206,14 +184,13 @@ fileName= replace.all(fileName);
                                     
 
 
-                            throw new Error("TransformInfoObjectConfigGenerator FileName Not Specified")
+                            throw new Error("TransformInfoObjectConfigGenerator FileName Not Specified");
+                    
 
                                     }
                                 
 
-    var tempOutput: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME); as String;
-        
-        
+    var tempOutput: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(InputOutputTypeData.getInstance()!.NAME);;
 ;
     
 
@@ -234,7 +211,8 @@ this.output= tempOutput;
                                     
 
 
-                            throw new Error("TransformInfoObjectConfigGenerator Output=extension Not Specified")
+                            throw new Error("TransformInfoObjectConfigGenerator Output=extension Not Specified");
+                    
 
                                     }
                                 
@@ -292,8 +270,6 @@ var input = input
                                     {
                                     
     var inputStream: InputStream = new ByteArrayInputStream(input.encodeToByteArray());
-        
-        
 ;
     
 FileUtil.getInstance()!.write(inputStream, this.file);
@@ -305,7 +281,8 @@ FileUtil.getInstance()!.write(inputStream, this.file);
                             
 
 
-                            throw new Error("Could Not Create: " +this.fileAbPath!.toString())
+                            throw new Error("Could Not Create: " +this.fileAbPath!.toString());
+                    
 
                         }
                             

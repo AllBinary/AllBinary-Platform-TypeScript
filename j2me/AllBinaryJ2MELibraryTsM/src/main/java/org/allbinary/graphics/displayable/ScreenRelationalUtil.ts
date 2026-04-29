@@ -34,8 +34,6 @@ export class ScreenRelationalUtil
         
 
     private static readonly instance: ScreenRelationalUtil = new ScreenRelationalUtil();
-        
-        
 
     public static getInstance(): ScreenRelationalUtil{
 
@@ -47,61 +45,51 @@ export class ScreenRelationalUtil
 }
 
 
-    public getScale(image: Image): number{
+    public getScaleImage(image: Image): number{
     //var image = image
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getScale(image.getWidth(), image.getHeight());;
+                        return this.getScaleWH(image.getWidth(), image.getHeight());;
     
 }
 
 
-    public getScale(aWidth: number, aHeight: number): number{
+    public getScaleWH(aWidth: number, aHeight: number): number{
     //var aWidth = aWidth
     //var aHeight = aHeight
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getScale(aWidth, aHeight, 20);;
+                        return this.getScaleWHA(aWidth, aHeight, 20);;
     
 }
 
 
-    public getScale(aWidth: number, aHeight: number, add: number): number{
+    public getScaleWHA(aWidth: number, aHeight: number, add: number): number{
     //var aWidth = aWidth
     //var aHeight = aHeight
     //var add = add
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var last: number[] = displayInfoSingleton!.getLast()!;
-        
-        
 ;
     
 
     var width: number = last[displayInfoSingleton!.WIDTH]!;
-        
-        
 ;
     
 
     var height: number = last[displayInfoSingleton!.HEIGHT]!;
-        
-        
 ;
     
 
     var largestSize: number = width;
-        
-        
 ;
     
 
@@ -115,8 +103,6 @@ export class ScreenRelationalUtil
                                 
 
     var scale: number = (largestSize) /aWidth;
-        
-        
 ;
     
 
@@ -135,12 +121,12 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getScale(aWidth, aHeight) *aHeight);
+                        return Math.round(this.getScaleWH(aWidth, aHeight) *aHeight);
     
 }
 
 
-    public getScaledHeight(aWidth: number, aHeight: number, add: number): number{
+    public getScaledHeightAdd(aWidth: number, aHeight: number, add: number): number{
     //var aWidth = aWidth
     //var aHeight = aHeight
     //var add = add
@@ -148,7 +134,7 @@ export class ScreenRelationalUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getScale(aWidth, aHeight, add) *aHeight);
+                        return Math.round(this.getScaleWHA(aWidth, aHeight, add) *aHeight);
     
 }
 

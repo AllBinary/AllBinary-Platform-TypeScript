@@ -27,9 +27,6 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
-
-    
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
@@ -63,9 +60,7 @@ export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnima
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
-        
-        
+    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo =  as ImageArrayRotationAnimationInfoanyType;
 ;
     
 
@@ -79,7 +74,7 @@ export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnima
 
                 //@Throws(Error::class)
             
-    public static create(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior): AdjustedImageArrayRotationAnimation{
+    public static createAnimation(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior): AdjustedImageArrayRotationAnimation{
     //var imageArray = imageArray
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -125,11 +120,11 @@ this.setDy(dy);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy);
+super.paintXY(graphics, x +this.dx, y +this.dy);
     
 }
 

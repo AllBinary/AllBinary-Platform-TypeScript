@@ -60,28 +60,16 @@ export class AbSqlColumn extends AbSqlTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly LARGEST_INT_VALUE_IN_COLUMN: string = "\nLargest Int Value in column: ";
-        
-        
 
     private readonly METHOD_GET_LARGETS_INTEGER_IN_COLUMN: string = "getLargestIntegerInColumn";
-        
-        
 
     private readonly METHOD_GET_COLUMN: string = "getColumn";
-        
-        
 
     private readonly METHOD_GET_COLUMN_WHERE: string = "getColumnWhere";
-        
-        
 
     private readonly INVALID_RESULT: string = "-1";
-        
-        
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
                         //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
@@ -98,8 +86,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
     //var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -122,22 +108,16 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
         try {
             
     var largest: number = 0;
-        
-        
 ;
     
 
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
@@ -145,8 +125,6 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
         {
 
     var intValue: number = rset.getInt(columnName)!;
-        
-        
 ;
     
 
@@ -161,10 +139,8 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
 }
 
 
-    var largestAsString: string = new Integer(largest).
+    var largestAsString: string = largest.
                             toString()!;
-        
-        
 ;
     
 
@@ -220,14 +196,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_LARGETS_INTEGER_IN
     //var columnName = columnName
 
     var column: Vector = new Vector();
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -240,16 +212,12 @@ stringBuffer!.append(this.getTableName());
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
         try {
             
     var rset: ResultSet = executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
@@ -257,8 +225,6 @@ stringBuffer!.append(this.getTableName());
         {
 
     var field: string = rset.getObject(columnName)!.toString()!;
-        
-        
 ;
     
 column.add(field);
@@ -320,8 +286,6 @@ var key = key
 var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(sqlStrings!.SELECT);
@@ -344,14 +308,10 @@ stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var column: Vector = new Vector();
-        
-        
 ;
     
 

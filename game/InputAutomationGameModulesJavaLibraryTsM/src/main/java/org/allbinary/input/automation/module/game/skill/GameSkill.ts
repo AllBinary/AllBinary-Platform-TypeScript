@@ -58,9 +58,7 @@ export class GameSkill
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 
     public static getInstance(gameSkillType: GameSkillType, extra: string): GameSkill{
 var gameSkillType = gameSkillType
@@ -69,8 +67,8 @@ var extra = extra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(new StringBuilder().
-                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()); as GameSkill;
+                        return  as GameSkillhashMap!.get(new StringBuilder().
+                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString());;
     
 }
 
@@ -84,16 +82,10 @@ var extra = extra
     private vector: Vector
 
     private readonly GAME_SKILL_LABEL: string = "GameSkill: ";
-        
-        
 
     private readonly EXTRA_LABEL: string = "Extra: ";
-        
-        
 
     private readonly TIME_LABEL: string = "Time: ";
-        
-        
 public constructor (gameSkillType: GameSkillType, extra: string, time: number){
 
             super();
@@ -185,14 +177,10 @@ this.vector.add(gameSkillPropertyInterface);
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.GAME_SKILL_LABEL);

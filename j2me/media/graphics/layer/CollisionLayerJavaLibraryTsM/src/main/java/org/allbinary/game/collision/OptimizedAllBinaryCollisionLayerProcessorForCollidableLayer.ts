@@ -65,20 +65,16 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, startIndex: number){
+    public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, startIndex: number){
 var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var startIndex = startIndex
 
-    var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
-        
-        
+    var collidableInterfaceCompositeInterface: CollidableCompositeLayer =  as CollidableCompositeLayerlayerInterface;
 ;
     
 
     var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;
-        
-        
 ;
     
 
@@ -87,14 +83,10 @@ var startIndex = startIndex
                                     {
                                     
     var layerManager: LayerManager = this.getLayerManager()!;
-        
-        
 ;
     
 
     var size: number = layerManager!.getSize()!;
-        
-        
 ;
     
 
@@ -111,11 +103,9 @@ var startIndex = startIndex
 
                         for (
     var index: number = startIndex +1;
-        
-        
 index < size; index++)
         {
-collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index); as CollidableCompositeLayer;
+collidableInterfaceCompositeInterface2=  as CollidableCompositeLayerlayerManager!.getLayerAt(index);;
     
 collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface();
     

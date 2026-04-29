@@ -43,6 +43,8 @@ import { ViewPositionFactoryInterface } from "../../../../org/allbinary/view/Vie
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StaticTileLayerIntoPositionViewPosition } from "./StaticTileLayerIntoPositionViewPosition.js";
+
 export class StaticTileLayerViewPositionFactory
             extends Object
          implements ViewPositionFactoryInterface {

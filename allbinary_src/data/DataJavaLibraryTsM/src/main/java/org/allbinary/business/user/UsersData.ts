@@ -43,8 +43,6 @@ export class UsersData
         
 
     public static readonly NAME: string = "USERS_NAME";
-        
-        
 private constructor (){
 
             super();

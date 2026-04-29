@@ -75,18 +75,12 @@ export class UniqueIdGenerator
         
 
     public static readonly EXT: string = ".unq";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private newFile: AbFile
 
     private id: number = 0;
-        
-        
 public constructor (){
 
             super();
@@ -101,8 +95,6 @@ var value = value
     
 
     var idData: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.newFile)!;
-        
-        
 ;
     
 idData!.writeLong(value);
@@ -117,8 +109,6 @@ idData!.writeLong(value);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
@@ -150,24 +140,18 @@ this.newFile= new AbFile(filePathName);
     var idData: AbDataInputStream = 
                 null
             ;
-        
-        
 ;
     
 
     var idOutData: AbDataOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
         try {
             
     var idFile: AbFileInputStream = new AbFileInputStream(this.newFile);
-        
-        
 ;
     
 idData= new AbDataInputStream(idFile);
@@ -176,8 +160,6 @@ this.id= idData!.readLong();
     
 
     var idOutFile: AbFileOutputStream = new AbFileOutputStream(this.newFile);
-        
-        
 ;
     
 idOutData= new AbDataOutputStream(idOutFile);
@@ -185,9 +167,7 @@ idOutData= new AbDataOutputStream(idOutFile);
 idOutData!.writeLong(this.id +1);
     
 
-    var idLong: Long = this.id as Long;
-        
-        
+    var idLong: number = this.id;
 ;
     
 
@@ -206,8 +186,6 @@ idOutData!.writeLong(this.id +1);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);

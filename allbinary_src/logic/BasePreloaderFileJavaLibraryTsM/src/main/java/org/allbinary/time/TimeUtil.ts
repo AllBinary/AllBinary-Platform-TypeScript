@@ -48,8 +48,6 @@ export class TimeUtil
         
 
     private static readonly instance: TimeUtil = new TimeUtil();
-        
-        
 
     public static getInstance(): TimeUtil{
 
@@ -62,8 +60,6 @@ export class TimeUtil
 
 
     private static readonly calendar: Calendar = Calendar.getInstance()!;
-        
-        
 
     public setCalendar(calendar: Calendar, yearString: string, monthString: string, dayString: string, hourString: string){
 var calendar = calendar
@@ -72,31 +68,23 @@ var monthString = monthString
 var dayString = dayString
 var hourString = hourString
 
-    var year: number = new Integer(yearString).
+    var year: number = yearString.
                             toInt()!;
-        
-        
 ;
     
 
-    var month: number = new Integer(monthString).
+    var month: number = monthString.
                             toInt()!;
-        
-        
 ;
     
 
-    var day: number = new Integer(dayString).
+    var day: number = dayString.
                             toInt()!;
-        
-        
 ;
     
 
-    var hour: number = new Integer(hourString).
+    var hour: number = hourString.
                             toInt()!;
-        
-        
 ;
     
 calendar.set(year, month, day, hour, 0);
@@ -113,45 +101,33 @@ var hourString = hourString
 var minuteString = minuteString
 var secondString = secondString
 
-    var year: number = new Integer(yearString).
+    var year: number = yearString.
                             toInt()!;
-        
-        
 ;
     
 
-    var month: number = new Integer(monthString).
+    var month: number = monthString.
                             toInt()!;
-        
-        
 ;
     
 
-    var day: number = new Integer(dayString).
+    var day: number = dayString.
                             toInt()!;
-        
-        
 ;
     
 
-    var hour: number = new Integer(hourString).
+    var hour: number = hourString.
                             toInt()!;
-        
-        
 ;
     
 
-    var minute: number = new Integer(minuteString).
+    var minute: number = minuteString.
                             toInt()!;
-        
-        
 ;
     
 
-    var second: number = new Integer(secondString).
+    var second: number = secondString.
                             toInt()!;
-        
-        
 ;
     
 calendar.set(year, month, day, hour, minute, second);
@@ -168,45 +144,33 @@ var hoursString = hoursString
 var minutesString = minutesString
 var secondsString = secondsString
 
-    var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).
+    var year: number = calendar.get(Calendar.YEAR) +yearsString.
                             toInt();
-        
-        
 ;
     
 
-    var month: number = calendar.get(Calendar.MONTH) +new Integer(monthsString).
+    var month: number = calendar.get(Calendar.MONTH) +monthsString.
                             toInt();
-        
-        
 ;
     
 
-    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +new Integer(daysString).
+    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +daysString.
                             toInt();
-        
-        
 ;
     
 
-    var hour: number = calendar.get(Calendar.HOUR) +new Integer(hoursString).
+    var hour: number = calendar.get(Calendar.HOUR) +hoursString.
                             toInt();
-        
-        
 ;
     
 
-    var minute: number = calendar.get(Calendar.MINUTE) +new Integer(minutesString).
+    var minute: number = calendar.get(Calendar.MINUTE) +minutesString.
                             toInt();
-        
-        
 ;
     
 
-    var second: number = calendar.get(Calendar.SECOND) +new Integer(secondsString).
+    var second: number = calendar.get(Calendar.SECOND) +secondsString.
                             toInt();
-        
-        
 ;
     
 calendar.set(year, month, day, hour, minute, second);
@@ -223,16 +187,12 @@ var minuteString = minuteString
 var secondString = secondString
 
     var time: number = calendar.getTimeInMillis()!;
-        
-        
 ;
     
 this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
     
 
     var timeDelta: number = calendar.getTimeInMillis()!;
-        
-        
 ;
     
 

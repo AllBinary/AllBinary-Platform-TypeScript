@@ -56,7 +56,7 @@ public constructor (){
                     
 }
 
-public constructor (userHashMap: HashMap<any, any>){
+public constructor (userHashMap: HashMap){
             super(userHashMap);
                     var userHashMap = userHashMap
 

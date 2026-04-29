@@ -69,8 +69,6 @@ export class ImageRotationUtil
         
 
     private static readonly instance: ImageRotationUtil = new ImageRotationUtil();
-        
-        
 
     public static getInstance(): ImageRotationUtil{
 
@@ -83,8 +81,6 @@ export class ImageRotationUtil
 
 
     private readonly imageSwtRotationUtil: ImageSwtRotationUtil = ImageSwtRotationUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -92,8 +88,6 @@ private constructor (){
 
 
     private readonly features: Features = Features.getInstance()!;
-        
-        
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
     //var originalImage = originalImage
@@ -101,8 +95,6 @@ private constructor (){
     //var totalAngle = totalAngle
 
     var originalImage2: Image = originalImage;
-        
-        
 ;
     
 
@@ -114,9 +106,7 @@ private constructor (){
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = (originalImage as OpenGLESImage);
-        
-        
+    var openGLESImage: OpenGLESImage = ( as OpenGLESImageoriginalImage);
 ;
     
 openGLESImage!.openGLESImageProperties!.angle= totalAngle;
@@ -140,25 +130,19 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                                     }
                                 
 
-    var originalSwtImage: org.eclipse.swt.graphics.Image = (originalImage2!.getImage(); as org.eclipse.swt.graphics.Image);
-        
-        
+    var originalSwtImage: org.eclipse.swt.graphics.Image = ( as org.eclipse.swt.graphics.ImageoriginalImage2!.getImage(););
 ;
     
 
     var gc: GC = 
                 null
             ;
-        
-        
 ;
     
 
     var copySwtImage: org.eclipse.swt.graphics.Image = 
                 null
             ;
-        
-        
 ;
     
 
@@ -166,12 +150,10 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;
-        
-        
+    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
 ;
     
-copySwtImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+copySwtImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 gc= swtImage!.getGc();
     

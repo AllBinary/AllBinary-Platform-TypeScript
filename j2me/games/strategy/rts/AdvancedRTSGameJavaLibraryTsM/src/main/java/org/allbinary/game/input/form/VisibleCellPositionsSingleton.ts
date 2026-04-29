@@ -85,8 +85,6 @@ export class VisibleCellPositionsSingleton
         
 
     private static readonly instance: VisibleCellPositionsSingleton = new VisibleCellPositionsSingleton();
-        
-        
 
     public static getInstance(): VisibleCellPositionsSingleton{
 
@@ -99,28 +97,16 @@ export class VisibleCellPositionsSingleton
 
 
     private stationaryVisibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
-        
-        
 
     private visibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
-        
-        
 
     private currentlyVisibleCellPositions: number[][] = NullUtil.getInstance()!.NULL_SHORT_ARRAY_ARRAY;
-        
-        
 
     public readonly ALL_VISIBLE_TILEDLAYER: SimpleTiledLayer = new SimpleTiledLayer(0, 0, 0, 0);
-        
-        
 
     private simpleTiledLayer: SimpleTiledLayer = ALL_VISIBLE_TILEDLAYER;
-        
-        
 
     private paintSimpleTiledLayer: SimpleTiledLayer = ALL_VISIBLE_TILEDLAYER;
-        
-        
 
     private currentIndex: number= 0
 private constructor (){
@@ -141,14 +127,10 @@ this.currentIndex= 0;
     
 
     var rows: number = simpleTiledLayer!.getRows()!;
-        
-        
 ;
     
 
     var columns: number = simpleTiledLayer!.getColumns()!;
-        
-        
 ;
     
 this.stationaryVisibleCellPositions= new Array(rows) [columns];
@@ -195,14 +177,10 @@ var list = list
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
-        
-        
+    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
@@ -220,14 +198,10 @@ var list = list
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
-        
-        
+    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
@@ -244,8 +218,6 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
                                     {
                                     
     var temp: number[][] = this.currentlyVisibleCellPositions;
-        
-        
 ;
     
 this.currentlyVisibleCellPositions= this.visibleCellPositions;
@@ -258,8 +230,6 @@ this.visibleCellPositions= temp;
 
                         for (
     var index: number = this.visibleCellPositions!.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -268,8 +238,6 @@ index >= 0; index--)
 
                         for (
     var index2: number = this.visibleCellPositions[0]!.length -1;
-        
-        
 index2 >= 0; index2--)
         {
 this.visibleCellPositions[index]![index2]= this.stationaryVisibleCellPositions[index]![index2]!;
@@ -330,14 +298,10 @@ var list = list
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
-        
-        
+    var cellPosition: CellPosition =  as CellPositionlist.get(index);;
 ;
     
 this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
@@ -378,7 +342,7 @@ var cellPosition = cellPosition
     public move(dx: number, dy: number){
 var dx = dx
 var dy = dy
-this.getSimpleTiledLayer()!.move(dx, dy);
+this.getSimpleTiledLayer()!.moveDXY(dx, dy);
     
 }
 

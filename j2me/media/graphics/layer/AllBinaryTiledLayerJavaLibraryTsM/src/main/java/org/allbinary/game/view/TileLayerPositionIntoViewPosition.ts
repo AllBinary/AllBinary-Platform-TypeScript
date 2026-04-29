@@ -53,8 +53,6 @@ export class TileLayerPositionIntoViewPosition extends ViewPosition {
         
 
     private tiledLayer: Layer = NullLayer.getInstance()!;
-        
-        
 public constructor (){
             super(0, 0, 0);
                     

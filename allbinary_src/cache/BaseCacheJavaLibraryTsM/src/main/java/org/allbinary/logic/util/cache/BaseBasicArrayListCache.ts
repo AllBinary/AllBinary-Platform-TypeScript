@@ -52,14 +52,10 @@ export class BaseBasicArrayListCache
         
 
     readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public log(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("S: ");

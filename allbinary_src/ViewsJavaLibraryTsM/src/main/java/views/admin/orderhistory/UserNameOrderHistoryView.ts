@@ -92,8 +92,6 @@ export class UserNameOrderHistoryView extends HttpStoreComponentView implements 
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -110,8 +108,6 @@ export class UserNameOrderHistoryView extends HttpStoreComponentView implements 
     private cancelled: string
 
     private readonly ON: string = "on";
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -119,7 +115,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 this.userName= this.request.getParameter(UserData.USERNAME);
     
@@ -137,7 +133,7 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -171,7 +167,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -183,26 +180,18 @@ var document = document
         try {
             
     var node: Node = document.createElement(OrderData.ORDERS)!;
-        
-        
 ;
     
 
     var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();
-        
-        
 ;
     
 
     var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.userName)!;
-        
-        
 ;
     
 
     var size: number = orderReviewVector!.length!;
-        
-        
 ;
     
 
@@ -211,26 +200,18 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index); as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory =  as OrderHistoryorderReviewVector!.get(index);;
 ;
     
 
     var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
-        
-        
 ;
     
 
     var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;
-        
-        
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));

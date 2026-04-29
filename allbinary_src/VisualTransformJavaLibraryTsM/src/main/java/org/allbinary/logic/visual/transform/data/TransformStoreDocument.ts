@@ -64,8 +64,6 @@ export class TransformStoreDocument extends TransformHttpRequestDocument {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
             super(pageContext, weblisketSession);
                     var pageContext = pageContext
@@ -78,8 +76,6 @@ var weblisketSession = weblisketSession
         try {
             
     var storeName: string = weblisketSession!.getStoreName()!;
-        
-        
 ;
     
 
@@ -93,7 +89,7 @@ var weblisketSession = weblisketSession
                                 
 this.getBaseNode()!.appendChild(StoreFrontViewFactory.getInstance(storeName)!.toXmlNode(this.getDoc()));
     
-this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as HttpServletRequest).
+this.getBaseNode()!.appendChild(new RequestParams( as HttpServletRequestpageContext!.getRequest()).
                             toXmlNode(this.getDoc()));
     
 
@@ -112,7 +108,8 @@ this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as H
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -146,7 +143,8 @@ this.getBaseNode()!.appendChild(searchRequest!.getParams()!.getParamsNode(this.g
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

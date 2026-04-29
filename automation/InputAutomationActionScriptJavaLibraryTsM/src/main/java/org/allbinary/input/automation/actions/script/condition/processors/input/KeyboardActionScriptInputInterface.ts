@@ -46,7 +46,7 @@ export interface KeyboardActionScriptInputInterface extends ProfileActionScriptI
 
     getDelayBetweenKeys(): number
 
-    getKeyArray(): Integer[]
+    getKeyArray(): number[]
 
     isPress(): boolean
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -64,9 +66,9 @@ import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
 
 import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
 
-import { PriorityRunnable } from "./PriorityRunnable.js";
+import { RuntimeException } from "./RuntimeException.js";
 
-import { Runnable } from "./Runnable.js";
+import { PriorityRunnable } from "./PriorityRunnable.js";
 
 export class ThreadPool
             extends Object
@@ -74,44 +76,26 @@ export class ThreadPool
         
 
     private static readonly ROOT_NAME: string = "-PooledThread-";
-        
-        
 
     public NORMAL_PRIORITY: number = Thread.NORM_PRIORITY;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly NULL_RUNNABLE: NullRunnable = NullRunnable.getInstance()!;
-        
-        
 
     readonly threadPoolStrings: ThreadPoolStrings = ThreadPoolStrings.getInstance()!;
-        
-        
 
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
-        
-        
 
     private readonly poolName: string
 
     private readonly priority: number
 
     private isAlive: boolean = false;
-        
-        
 
     private taskQueue: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     private threadID: number= 0
 
@@ -150,8 +134,6 @@ this.taskQueue= new BasicArrayListD();
 
                         for (
     var i: number = 0;
-        
-        
 i < this.numThreads; i++)
         {
 pooledThread= new PooledThread();
@@ -174,7 +156,8 @@ pooledThread!.start();
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -204,8 +187,6 @@ pooledThread!.start();
                                     {
                                     
     var size: number = this.taskQueue!.size()!;
-        
-        
 ;
     
 
@@ -214,8 +195,6 @@ pooledThread!.start();
     
 
     var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-        
-        
 ;
     
 
@@ -224,11 +203,9 @@ pooledThread!.start();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index); as PriorityRunnable;
+runnable=  as PriorityRunnablethis.taskQueue!.get(index);;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -256,11 +233,9 @@ break;
                         else {
                             
     var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;
-        
-        
 ;
     
-this.taskQueue!.add(index, task);
+this.taskQueue!.addAt(index, task);
     
 
                         }
@@ -342,9 +317,7 @@ this.wait();
 }
 
 
-    var runnable: Runnable = this.taskQueue!.remove(0); as Runnable;
-        
-        
+    var runnable: Runnable =  as Runnablethis.taskQueue!.removeAt(0);;
 ;
     
 
@@ -516,8 +489,6 @@ public constructor (){
                     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
@@ -526,8 +497,6 @@ logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
 
 
     private readonly INTERRUPT_EXCEPTION: string = "Exit InterruptedException";
-        
-        
 
     public run(){
 threadStarted();
@@ -537,8 +506,6 @@ threadStarted();
         {
 
     var task2: Runnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-        
-        
 ;
     
 
@@ -555,8 +522,6 @@ startTask(task2);
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(INTERRUPT_EXCEPTION, this, commonStrings!.RUN);
@@ -590,8 +555,6 @@ runningTask= false;
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(new StringMaker().

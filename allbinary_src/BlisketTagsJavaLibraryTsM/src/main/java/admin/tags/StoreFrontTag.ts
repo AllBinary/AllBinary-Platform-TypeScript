@@ -68,14 +68,12 @@ export class StoreFrontTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -104,22 +102,16 @@ this.storeName= value;
             
     var anyType: any = new StoreFrontHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("getCurrentLocation", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -135,7 +127,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -143,8 +136,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to retrieve current location";
-        
-        
 ;
     
 
@@ -175,22 +166,16 @@ this.storeName= value;
             
     var anyType: any = new StoreFrontHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("getCurrentHomeLocation", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -206,7 +191,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -214,8 +200,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to retrieve current home location";
-        
-        
 ;
     
 
@@ -249,7 +233,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

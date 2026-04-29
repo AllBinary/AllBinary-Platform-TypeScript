@@ -67,8 +67,6 @@ export class MakeCountedPartsSingletonArrayFactory
         
 
     private static readonly instance: MakeCountedPartsSingletonArrayFactory = new MakeCountedPartsSingletonArrayFactory();
-        
-        
 
     public static getInstance(): MakeCountedPartsSingletonArrayFactory{
 
@@ -81,16 +79,12 @@ export class MakeCountedPartsSingletonArrayFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(partInterfaceArray: PartInterface[]): PartInterface[]{
+    public getUpdated(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray
 this.list= new BasicArrayListD();
     
@@ -100,8 +94,6 @@ this.list= new BasicArrayListD();
 
                         for (
     var index: number = 0;
-        
-        
 index < partInterfaceArray!.length; index++)
         {
 this.list.add(partInterfaceArray[index]!);
@@ -110,8 +102,6 @@ this.list.add(partInterfaceArray[index]!);
 
 
     var countedBasicArrayList: BasicArrayList = CountedPickedUpLayerInterfaceFactoryPool.getInstance()!.getList()!;
-        
-        
 ;
     
 
@@ -120,8 +110,6 @@ this.list.add(partInterfaceArray[index]!);
     
 
     var size: number = countedBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -130,11 +118,9 @@ this.list.add(partInterfaceArray[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-layerInterfaceFactoryInterface= countedBasicArrayList!.objectArray[index]! as CountedPickedUpLayerInterfaceFactory;
+layerInterfaceFactoryInterface=  as CountedPickedUpLayerInterfaceFactorycountedBasicArrayList!.objectArray[index]!;
     
 list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface));
     
@@ -142,8 +128,6 @@ list.add(new CountedLayerInterfaceFactoryPart(0, layerInterfaceFactoryInterface)
 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Total Parts: ");
@@ -156,23 +140,17 @@ stringBuffer!.appendint(countedBasicArrayList!.size());
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
     var newPartInterfaceArray: PartInterface[] = new Array(this.list.size());
-        
-        
 ;
     
 
     var newSize: number = newPartInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -181,11 +159,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
 
                         for (
     var index: number = 0;
-        
-        
 index < newSize; index++)
         {
-newPartInterfaceArray[index]= this.list.get(index); as PartInterface;
+newPartInterfaceArray[index]=  as PartInterfacethis.list.get(index);;
     
 }
 

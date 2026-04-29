@@ -67,7 +67,7 @@ export class SearchParams
          {
         
 
-    private columnsAndSearchValues: HashMap<any, any>
+    private columnsAndSearchValues: HashMap
 
     private order: string
 
@@ -82,7 +82,7 @@ public constructor (request: HttpServletRequest){
 
             super();
         var request = request
-this.columnsAndSearchValues= new HashMap<any, any>();
+this.columnsAndSearchValues= new HashMap();
     
 this.setLength(request.getParameter(SearchData.LENGTH));
     
@@ -90,8 +90,6 @@ this.setOrder(request.getParameter(SearchData.ORDER));
     
 
     var page: string = request.getParameter(SearchData.PAGE)!;
-        
-        
 ;
     
 this.setStartPage(page);
@@ -102,20 +100,14 @@ this.setSortBy(request.getParameter(SearchData.SORTBY));
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var columnName: string = request.getParameter(SearchData.COLUMNNAME +"[0]")!;
-        
-        
 ;
     
 
     var columnValue: string = request.getParameter(SearchData.COLUMNVALUE +"[0]")!;
-        
-        
 ;
     
 
@@ -179,7 +171,7 @@ this.endPage= value;
 }
 
 
-    public get(): HashMap<any, any>{
+    public get(): HashMap{
 
 
 
@@ -219,7 +211,7 @@ this.endPage= value;
 }
 
 
-    public getLengthInt(): Integer{
+    public getLengthInt(): number{
 
                         if(this.listLength != 
                                     null
@@ -230,7 +222,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.listLength);
+                        return this.listLength;
     
 
                                     }
@@ -261,7 +253,7 @@ this.endPage= value;
 }
 
 
-    public getStartPageInt(): Integer{
+    public getStartPageInt(): number{
 
                         if(this.startPage != 
                                     null
@@ -272,7 +264,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.startPage);
+                        return this.startPage;
     
 
                                     }
@@ -283,7 +275,7 @@ this.endPage= value;
 }
 
 
-    public getEndPageInt(): Integer{
+    public getEndPageInt(): number{
 
                         if(this.endPage != 
                                     null
@@ -294,7 +286,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.endPage);
+                        return this.endPage;
     
 
                                     }
@@ -311,8 +303,6 @@ this.endPage= value;
 var document = document
 
     var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;
-        
-        
 ;
     
 paramsNode!.appendChild(this.getFieldsNode(document));
@@ -337,29 +327,21 @@ paramsNode!.appendChild(this.getLengthNode(document));
     getFieldsNode(document: Document): Node{
 var document = document
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(columnsAndSearchValues!.size()).
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, columnsAndSearchValues!.size().
                             toString())!;
-        
-        
 ;
     
 
     var set: Set = this.columnsAndSearchValues!.keySet()!;
-        
-        
 ;
     
 
     var searchValueArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = searchValueArray!.length
                 ;
-        
-        
 ;
     
 
@@ -368,20 +350,14 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var key: string = searchValueArray[index]! as String;
-        
-        
+    var key: string =  as StringsearchValueArray[index]!;
 ;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key); as String;
-        
-        
+    var searchValue: string =  as Stringthis.columnsAndSearchValues!.get(key);;
 ;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));

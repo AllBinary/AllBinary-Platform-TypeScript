@@ -29,14 +29,14 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameAdStateFactoryInterface } from "./GameAdStateFactoryInterface.js";
+
 export class GameAdStateFactory
             extends Object
-         {
+         implements GameAdStateFactoryInterface {
         
 
     private static readonly instance: GameAdStateFactory = new GameAdStateFactory();
-        
-        
 
     public static getInstance(): GameAdStateFactory{
 
@@ -52,12 +52,8 @@ export class GameAdStateFactory
                                                         [
                                                             new GameAdState(new AppNameLicensingAdConfiguration())
                                                         ];
-        
-        
 
     private gameAdState: GameAdState = gameAdStateArray[0]!;
-        
-        
 
     public getCurrentInstance(): GameAdState{
 
@@ -71,7 +67,7 @@ export class GameAdStateFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(softwareInformation: SoftwareInformation): GameAdState{
+    public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdState{
     //var softwareInformation = softwareInformation
 this.gameAdState= gameAdStateArray[0]!;
     

@@ -63,8 +63,6 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
     public process(){
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -98,7 +96,8 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                             
 
 
-                            throw new Error("Sensor Feature Not Set")
+                            throw new Error("Sensor Feature Not Set");
+                    
 
                         }
                             

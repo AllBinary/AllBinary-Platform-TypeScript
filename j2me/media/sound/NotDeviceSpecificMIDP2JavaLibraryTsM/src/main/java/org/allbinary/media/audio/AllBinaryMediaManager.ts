@@ -80,8 +80,6 @@ export class AllBinaryMediaManager
         
 
     private static readonly THIS: string = "AllBinaryMediaManagerNoMIPD2";
-        
-        
 
     public static isMuted(): boolean{
 
@@ -114,19 +112,15 @@ var aMuted = aMuted
 var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
 new Sounds(soundsFactoryInterface).
                             init();
@@ -173,8 +167,6 @@ var resource = resource
                         else {
                             
     var inputStream: InputStream = ResourceUtil.getInstance()!.getResourceAsStream(resource)!;
-        
-        
 ;
     
 

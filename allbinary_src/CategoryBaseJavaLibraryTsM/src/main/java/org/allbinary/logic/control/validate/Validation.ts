@@ -48,14 +48,14 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { ValidationInterface } from "./ValidationInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class Validation
             extends Object
          implements ValidationInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -63,7 +63,8 @@ export class Validation
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -74,7 +75,8 @@ var document = document
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -84,7 +86,8 @@ var document = document
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -94,7 +97,8 @@ var document = document
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -45,8 +45,6 @@ export class ResizableListenerHandler
         
 
     private static readonly instance: ResizableListenerHandler = new ResizableListenerHandler();
-        
-        
 
     public static getInstance(): ResizableListenerHandler{
 

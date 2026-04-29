@@ -57,7 +57,7 @@ export class IdGeneratorEntityFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new org.allbinary.data.tables.generator.IdGeneratorEntity() as IdGeneratorEntityInterface;
+                        return  as IdGeneratorEntityInterfacenew org.allbinary.data.tables.generator.IdGeneratorEntity();
     
 
                 //: 
@@ -65,14 +65,10 @@ export class IdGeneratorEntityFactory
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "ServerLicenseRequestEntityFactory", commonStrings!.GET_INSTANCE, e);

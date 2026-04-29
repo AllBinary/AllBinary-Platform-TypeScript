@@ -40,28 +40,26 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicDecimal } from "./BasicDecimal.js";
+
 export class Orientation
             extends Object
          {
         
 
     public NONE: Orientation = new Orientation(0, 0, 0);
-        
-        
 
     private SINGLETON: Orientation = new Orientation(0, 0, 0);
-        
-        
 
     public static getInstance(yaw: number, pitch: number, roll: number): Orientation{
 var yaw = yaw
 var pitch = pitch
 var roll = roll
-SINGLETON.yaw.set(yaw);
+SINGLETON.yaw.setint(yaw);
     
-SINGLETON.pitch.set(pitch);
+SINGLETON.pitch.setint(pitch);
     
-SINGLETON.roll.set(roll);
+SINGLETON.roll.setint(roll);
     
 
 
@@ -73,27 +71,21 @@ SINGLETON.roll.set(roll);
 
 
     public yaw: BasicDecimal = new BasicDecimal(0);
-        
-        
 
     public pitch: BasicDecimal = new BasicDecimal(0);
-        
-        
 
     public roll: BasicDecimal = new BasicDecimal(0);
-        
-        
 private constructor (yaw: number, pitch: number, roll: number){
 
             super();
         var yaw = yaw
 var pitch = pitch
 var roll = roll
-this.yaw.set(yaw);
+this.yaw.setint(yaw);
     
-this.pitch.set(pitch);
+this.pitch.setint(pitch);
     
-this.roll.set(roll);
+this.roll.setint(roll);
     
 }
 
@@ -101,8 +93,6 @@ this.roll.set(roll);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Y: ");

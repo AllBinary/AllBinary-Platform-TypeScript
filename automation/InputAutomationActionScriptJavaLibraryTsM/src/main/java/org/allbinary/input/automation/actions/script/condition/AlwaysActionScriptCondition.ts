@@ -65,18 +65,16 @@ import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCon
 
 import { AlwaysActionScriptConditionInterface } from "./AlwaysActionScriptConditionInterface.js";
 
+import { AlwaysActionScriptConditionJPanel } from "./AlwaysActionScriptConditionJPanel.js";
+
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
 
 export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition implements AlwaysActionScriptConditionInterface {
         
 
     private static readonly NAME: string = "Always On/Off";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private alwaysActionScriptConditionJPanel: AlwaysActionScriptConditionJPanel
 
@@ -90,8 +88,6 @@ public constructor (node: Node){
                     
 
     var actionNode: Node = DomSearchHelper.getNode(AlwaysActionScriptConditionData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -102,8 +98,6 @@ public constructor (node: Node){
                                     {
                                     
     var nodeList: NodeList = actionNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -112,14 +106,10 @@ public constructor (node: Node){
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var childNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -128,8 +118,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setIsOn(.
@@ -142,7 +130,8 @@ this.setIsOn(.
                             
 
 
-                            throw new Error("Action Script Condition Unknown Node")
+                            throw new Error("Action Script Condition Unknown Node");
+                    
 
                         }
                             
@@ -155,7 +144,8 @@ this.setIsOn(.
                             
 
 
-                            throw new Error("Action Script Condition Node Null")
+                            throw new Error("Action Script Condition Node Null");
+                    
 
                         }
                             
@@ -203,11 +193,9 @@ this.alwaysActionScriptConditionJPanel!.getAlwaysActionJDialog()!.setVisible(tru
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(AlwaysActionScriptConditionData.IS_ON, Boolean.toString(this.isIsOn()));
@@ -229,8 +217,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScriptConditionData.NAME, this.toHashMap()));
@@ -246,7 +232,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScr
 
                 //@Throws(Error::class)
             
-    public shouldProcess(frame: Long): boolean{
+    public shouldProcess(frame: number): boolean{
 var frame = frame
 
                         if(this.isIsOn())

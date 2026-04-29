@@ -54,8 +54,6 @@ export class TimedVectorAnimation extends VectorAnimation {
         
 
     private timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(200);
-        
-        
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(currentPoints, basicColor, animationBehavior);
                         //var currentPoints = currentPoints

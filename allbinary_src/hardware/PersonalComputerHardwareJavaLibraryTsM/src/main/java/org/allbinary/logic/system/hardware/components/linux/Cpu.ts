@@ -93,18 +93,12 @@ export class Cpu
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly CPUFILE: string = "/proc/cpuinfo";
-        
-        
 
-    private cpuHashMap: HashMap<any, any>
+    private cpuHashMap: HashMap
 public constructor (filePath: string){
 
             super();
@@ -129,8 +123,6 @@ var filePath = filePath
     var lineNumberReader: LineNumberReader = 
                 null
             ;
-        
-        
 ;
     
 
@@ -154,7 +146,8 @@ var filePath = filePath
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -169,13 +162,11 @@ var filePath = filePath
         try {
             
     var fileReader: FileReader = new FileReader(filePath);
-        
-        
 ;
     
 lineNumberReader= new LineNumberReader(fileReader);
     
-this.cpuHashMap= new HashMap<any, any>();
+this.cpuHashMap= new HashMap();
     
 
                         if(lineNumberReader == 
@@ -185,8 +176,6 @@ this.cpuHashMap= new HashMap<any, any>();
                                     {
                                     
     var fileVector: BasicArrayList = SubDirectory.getInstance()!.search(filePath, new AbFile(FilePathData.getInstance()!.SEPARATOR))!;
-        
-        
 ;
     
 
@@ -204,9 +193,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0); as AbFile;
-        
-        
+    var file: AbFile =  as AbFilefileVector!.get(0);;
 ;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
@@ -225,8 +212,6 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                     {
                                     
     var nextLine: string = lineNumberReader!.readLine()!;
-        
-        
 ;
     
 
@@ -238,8 +223,6 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
         {
 
     var index: number = nextLine!.indexOf(':')!;
-        
-        
 ;
     
 
@@ -248,20 +231,14 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                     {
                                     
     var key: string = nextLine!.substring(0, index)!;
-        
-        
 ;
     
 
     var valueIndex: number = index +1;
-        
-        
 ;
     
 
     var value: string = nextLine!.substring(valueIndex, nextLine!.length)!;
-        
-        
 ;
     
 
@@ -316,7 +293,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.PROCESSOR); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.PROCESSOR);;
     
 }
 
@@ -326,7 +303,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.VENDORID); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.VENDORID);;
     
 }
 
@@ -336,7 +313,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CPUFAMILY); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.CPUFAMILY);;
     
 }
 
@@ -346,7 +323,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.MODEL); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.MODEL);;
     
 }
 
@@ -356,7 +333,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.MODELNAME); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.MODELNAME);;
     
 }
 
@@ -366,7 +343,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.STEPPING); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.STEPPING);;
     
 }
 
@@ -376,7 +353,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CPUMHZ); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.CPUMHZ);;
     
 }
 
@@ -386,7 +363,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CACHESIZE); as String;
+                        return  as Stringthis.cpuHashMap!.get(CpuInfo.CACHESIZE);;
     
 }
 
@@ -416,20 +393,14 @@ var componentInterface = componentInterface
     public toString(): string{
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringMaker!.append(CpuInfo.PROCESSOR.toString())!.append(commonLabels!.COLON_SEP)!.append(this.getProcessor());

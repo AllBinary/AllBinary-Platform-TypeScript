@@ -50,9 +50,7 @@ export class BufferedImageInfoFactory
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
 var width = width
@@ -60,8 +58,6 @@ var height = height
 var type = type
 
     var stringbuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringbuffer.appendint(width);
@@ -72,14 +68,10 @@ stringbuffer.appendint(type);
     
 
     var key: string = stringbuffer.toString()!;
-        
-        
 ;
     
 
-    var bufferedImageInfo: BufferedImageInfo = hashMap!.get(key as Object); as BufferedImageInfo;
-        
-        
+    var bufferedImageInfo: BufferedImageInfo =  as BufferedImageInfohashMap!.get(key as Object);;
 ;
     
 

@@ -53,12 +53,12 @@ import { Panel } from "./Panel.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
 export class RemoveActionScriptItemJPanel extends java.awt.Panel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private genericProfileActionJPanel: GenericProfileActionJPanel
 
@@ -84,7 +84,7 @@ setLayout(new java.awt.GridLayout());
     
 this.removeJButton!.setText("Remove");
     
-removeJButton!.addActionListener(new object: java.awt.event.ActionListener()
+removeJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -105,8 +105,6 @@ add(this.removeJButton);
 var evt = evt
 
     var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;
-        
-        
 ;
     
 

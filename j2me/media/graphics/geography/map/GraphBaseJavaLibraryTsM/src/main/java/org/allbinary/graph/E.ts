@@ -29,8 +29,6 @@ export class E
         
 
     private static readonly e: E = new E();
-        
-        
 
     public newInstance(): E{
 

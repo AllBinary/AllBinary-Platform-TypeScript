@@ -69,16 +69,10 @@ export class NullInputRobot extends AbstractInputRobot implements InputRobotInte
         
 
     public static readonly LIBRARY_NAME: string = "null";
-        
-        
 
     public static readonly NAME: string = "NULL";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super(
                             null);
@@ -119,21 +113,21 @@ public constructor (){
 }
 
 
-    public keyPress(keycode: Integer){
+    public keyPress(keycode: number){
 var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyPress");
     
 }
 
 
-    public keyRelease(keycode: Integer){
+    public keyRelease(keycode: number){
 var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyRelease");
     
 }
 
 
-    public mouseMove(x: Integer, y: Integer){
+    public mouseMove(x: number, y: number){
 var x = x
 var y = y
 this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
@@ -141,14 +135,14 @@ this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
 }
 
 
-    public mousePress(buttons: Integer){
+    public mousePress(buttons: number){
 var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mousePress");
     
 }
 
 
-    public mouseRelease(buttons: Integer){
+    public mouseRelease(buttons: number){
 var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mouseRelease");
     
@@ -166,12 +160,12 @@ var screenRect = screenRect
 }
 
 
-    public delay(ms: Integer){
+    public delay(ms: number){
 var ms = ms
 }
 
 
-    public getAutoDelay(): Integer{
+    public getAutoDelay(): number{
 
 
 
@@ -181,7 +175,7 @@ var ms = ms
 }
 
 
-    public getPixelColor(x: Integer, y: Integer): Color{
+    public getPixelColor(x: number, y: number): Color{
 var x = x
 var y = y
 
@@ -203,12 +197,12 @@ var y = y
 }
 
 
-    public mouseWheel(wheelAmt: Integer){
+    public mouseWheel(wheelAmt: number){
 var wheelAmt = wheelAmt
 }
 
 
-    public setAutoDelay(ms: Integer){
+    public setAutoDelay(ms: number){
 var ms = ms
 }
 

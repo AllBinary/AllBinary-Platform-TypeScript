@@ -91,46 +91,34 @@ export class UploadMediaSingleton
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readerFileTypesHashMap: HashMap<any, any>
+    private readerFileTypesHashMap: HashMap
 
-    private writerFileTypesHashMap: HashMap<any, any>
+    private writerFileTypesHashMap: HashMap
 private constructor (){
 
             super();
-        this.readerFileTypesHashMap= new HashMap<any, any>();
+        this.readerFileTypesHashMap= new HashMap();
     
-this.writerFileTypesHashMap= new HashMap<any, any>();
+this.writerFileTypesHashMap= new HashMap();
     
 
-    var hashMap: HashMap<any, any> = MediaData.toHashMap()!;
-        
-        
+    var hashMap: HashMap = MediaData.toHashMap()!;
 ;
     
 
     var set: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var mediaDataNameArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = mediaDataNameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -139,20 +127,14 @@ this.writerFileTypesHashMap= new HashMap<any, any>();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var mediaDataName: string = mediaDataNameArray[index]! as String;
-        
-        
+    var mediaDataName: string =  as StringmediaDataNameArray[index]!;
 ;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName as Object); as MediaData;
-        
-        
+    var mediaData: MediaData =  as MediaDatahashMap!.get(mediaDataName as Object);;
 ;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
@@ -161,20 +143,14 @@ this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
 
 
     var mediaIOUtil: MediaIOUtil = MediaIOUtil.getInstance()!;
-        
-        
 ;
     
 
     var RESIZABLE_MEDIA: string = MediaTypeData.getInstance()!.RESIZABLE_MEDIA;
-        
-        
 ;
     
 
     var readerFileTypes: string[] = mediaIOUtil!.getReaderFormatNames()!;
-        
-        
 ;
     
 
@@ -183,8 +159,6 @@ this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
 
                         for (
     var index: number = 0;
-        
-        
 index < readerFileTypes!.length; index++)
         {
 this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
@@ -193,8 +167,6 @@ this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
 
 
     var writerFileTypes: string[] = mediaIOUtil!.getWriterFormatNames()!;
-        
-        
 ;
     
 
@@ -203,8 +175,6 @@ this.readerFileTypesHashMap!.put(readerFileTypes[index]!, RESIZABLE_MEDIA);
 
                         for (
     var index: number = 0;
-        
-        
 index < writerFileTypes!.length; index++)
         {
 this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
@@ -217,8 +187,6 @@ this.writerFileTypesHashMap!.put(writerFileTypes[index]!, RESIZABLE_MEDIA);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Supported Media Readers: ");
@@ -306,7 +274,7 @@ var aMediaType = aMediaType
 }
 
 
-    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
+    isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap): boolean{
 var mediaFileType = mediaFileType
 var aMediaType = aMediaType
 var hashMap = hashMap
@@ -315,9 +283,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object); as String;
-        
-        
+    var mediaType: string =  as StringhashMap!.get(mediaFileType as Object);;
 ;
     
 

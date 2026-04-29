@@ -62,8 +62,6 @@ var node = node
     var profileActionScriptInputInterface: ProfileActionScriptInputInterface = 
                 null
             ;
-        
-        
 ;
     
 
@@ -92,7 +90,8 @@ var node = node
                             
 
 
-                            throw new Error("No Such ActionScript Input")
+                            throw new Error("No Such ActionScript Input");
+                    
 
                         }
                             

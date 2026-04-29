@@ -43,8 +43,6 @@ export class QuoteRequestData
         
 
     private static readonly instance: QuoteRequestData = new QuoteRequestData();
-        
-        
 
     public static getInstance(): QuoteRequestData{
 
@@ -62,28 +60,16 @@ private constructor (){
 
 
     public readonly ID: string = "QUOTEREQUEST_ID";
-        
-        
 
     public readonly PROJECT_INFO: string = "QUOTEREQUEST_PROJECT_INFO";
-        
-        
 
     public readonly CUSTOMER_COMMENTS: string = "QUOTEREQUEST_CUSTOMER_COMMENTS";
-        
-        
 
     public readonly BUDGET: string = "QUOTEREQUEST_BUDGET";
-        
-        
 
     public readonly TIMEFRAME: string = "QUOTEREQUEST_TIMEFRAME";
-        
-        
 
     public readonly COMMENTS: string = "QUOTEREQUEST_COMMENTS";
-        
-        
 
 }
                 

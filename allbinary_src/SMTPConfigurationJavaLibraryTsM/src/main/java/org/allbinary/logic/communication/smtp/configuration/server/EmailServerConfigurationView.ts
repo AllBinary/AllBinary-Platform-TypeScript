@@ -58,9 +58,9 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
-
 import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInterface.js";
+
+import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
 export class EmailServerConfigurationView
             extends Object
@@ -74,29 +74,21 @@ public constructor (node: Node){
         var node = node
 
     var childNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var server: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.SERVER, childNodeList)!;
-        
-        
 ;
     
 
     var accountName: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.ACCOUNT, childNodeList)!;
-        
-        
 ;
     
 
     var password: string = DomNodeHelper.getTextNodeValue(EmailServerConfigurationData.PASSWORD, childNodeList)!;
-        
-        
 ;
     
-this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName, password, server) as EmailServerConfigurationInterface;
+this.emailServerConfigurationInterface=  as EmailServerConfigurationInterfacenew EmailServerConfiguration(accountName, password, server);
     
 }
 
@@ -125,20 +117,14 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface;
 var document = document
 
     var emailConfigurationMapping: EmailServerConfigurationMapping = new EmailServerConfigurationMapping(this.emailServerConfigurationInterface);
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = emailConfigurationMapping!.toHashMap()!;
 ;
     
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, EmailServerConfigurationData.NAME, hashMap)!;
-        
-        
 ;
     
 

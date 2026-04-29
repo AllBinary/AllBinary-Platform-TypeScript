@@ -49,15 +49,11 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
         
 
     private static readonly instance: DownGameKeyEventHandler = new DownGameKeyEventHandler();
-        
-        
 
     private static readonly instanceArray: DownGameKeyEventHandlerBase[] = 
                                                         [
                                                             new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase(),new DownGameKeyEventHandlerBase()
                                                         ];
-        
-        
 
     public static getInstance(): DownGameKeyEventHandler{
 
@@ -70,15 +66,11 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
 
 
     private readonly playerInputIdFactory: LocalPlayerInputIdFactory = LocalPlayerInputIdFactory.getInstance()!;
-        
-        
 
-    public getInstance(deviceId: number): DownGameKeyEventHandlerBase{
+    public getInstanceForDevice(deviceId: number): DownGameKeyEventHandlerBase{
 var deviceId = deviceId
 
     var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
-        
-        
 ;
     
 
@@ -115,8 +107,6 @@ super.removeAllListeners();
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeAllListeners();
@@ -136,8 +126,6 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
@@ -158,8 +146,6 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListener(eventListenerInterface);

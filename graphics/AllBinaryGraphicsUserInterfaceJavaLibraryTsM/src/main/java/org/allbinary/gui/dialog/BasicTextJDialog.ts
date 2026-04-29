@@ -42,20 +42,24 @@ import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
         
 import { JDialog } from "./JDialog.js";
 
-import { Frame } from "./Frame.js";
-
 import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.js";
+
+import { Frame } from "./Frame.js";
 
 import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
+
+import { JButton } from "./JButton.js";
+
+import { JLabel } from "./JLabel.js";
 
 export class BasicTextJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new object: ARunnable()
+java.awt.EventQueue.invokeLater(new ARunnable()
                                 {
                                 
     public run(){
@@ -120,7 +124,7 @@ setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
 this.jButton1!.setText("OK");
     
-jButton1!.addActionListener(new object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -136,8 +140,6 @@ this.textJLabel!.setText("No Text Set");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-        
-        
 ;
     
 getContentPane()!.setLayout(layout);

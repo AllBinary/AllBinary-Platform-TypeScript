@@ -52,8 +52,6 @@ export class PreResourceImageUtil
         
 
     private static readonly instance: PreResourceImageUtil = new PreResourceImageUtil();
-        
-        
 
     public static getInstance(): PreResourceImageUtil{
 

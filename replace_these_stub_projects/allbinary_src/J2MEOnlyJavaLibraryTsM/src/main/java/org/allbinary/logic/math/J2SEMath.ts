@@ -43,8 +43,6 @@ export class J2SEMath
         
 
     private static readonly instance: J2SEMath = new J2SEMath();
-        
-        
 
     public static getInstance(): J2SEMath{
 
@@ -62,7 +60,7 @@ var value = value
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return value;
+                        return Math.roundvalue;
     
 }
 

@@ -79,20 +79,12 @@ export class GameMotionGestureListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private motionGestureCollection: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private touchGestureCollection: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private signed: CompleteMotionGestureListenerInterface
 public constructor (signed: CompleteMotionGestureListenerInterface){
@@ -192,8 +184,6 @@ this.touchGestureCollection!.clear();
             {
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);
@@ -213,8 +203,6 @@ var ev = ev
         try {
             
     var motionGestureInput: MotionGestureInput = ev.getMotionGesture()!;
-        
-        
 ;
     
 
@@ -253,8 +241,6 @@ this.touchGestureCollection!.clear();
             {
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.commonStrings!.EXCEPTION_LABEL);

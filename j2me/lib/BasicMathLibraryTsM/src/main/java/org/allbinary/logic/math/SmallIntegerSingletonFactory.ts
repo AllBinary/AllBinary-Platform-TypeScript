@@ -45,48 +45,32 @@ export class SmallIntegerSingletonFactory
         
 
     private static readonly instance: SmallIntegerSingletonFactory = new SmallIntegerSingletonFactory();
-        
-        
 
     public static getInstance(): SmallIntegerSingletonFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return SmallIntegerSingletonFactory.instance;
     
 }
 
 
     public readonly NEGATIVE_MAX: number = 500;
-        
-        
 
     public readonly POSITIVE_MAX: number = 0x2D1;
-        
-        
 
-    private readonly INTEGER_ARRAY: Integer[] = new Array(NEGATIVE_MAX +POSITIVE_MAX);
-        
-        
+    private readonly INTEGER_ARRAY: number[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
-    private readonly STRING_ARRAY: string[] = new Array(NEGATIVE_MAX +POSITIVE_MAX);
-        
-        
+    private readonly STRING_ARRAY: string[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
     public MIN: number = 0;
-        
-        
 
     public lastMin: number = 0;
-        
-        
 
     public lastNegativeMin: number = 0;
-        
-        
 
-    public init(value: number, negativeValue: number){
+    public initWithRange(value: number, negativeValue: number){
 var value = value
 var negativeValue = negativeValue
 
@@ -95,11 +79,9 @@ var negativeValue = negativeValue
 
                         for (
     var index: number = value -1;
-        
-        
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     
 }
 
@@ -109,11 +91,9 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
 
                         for (
     var index: number = negativeValue -1;
-        
-        
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]= new Integer( -index);
+this.INTEGER_ARRAY[index]=  -index;
     
 }
 
@@ -151,11 +131,9 @@ this.MIN= value;
 
                         for (
     var index: number = this.POSITIVE_MAX -1;
-        
-        
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     
 }
 
@@ -165,11 +143,9 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
 
                         for (
     var index: number = this.NEGATIVE_MAX -1;
-        
-        
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]= new Integer( -index);
+this.INTEGER_ARRAY[index]=  -index;
     
 }
 
@@ -188,7 +164,7 @@ private constructor (){
         }
 
 
-    public getInstance(index: number): Integer{
+    public getAt(index: number): number{
 var index = index
 
 
@@ -199,7 +175,7 @@ var index = index
 }
 
 
-    public getInstanceNoThrow(index: number): Integer{
+    public getAtNoThrow(index: number): number{
 var index = index
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
@@ -223,12 +199,10 @@ var index = index
 }
 
 
-    public createInstance(index: number): Integer{
+    public createInstance(index: number): number{
 var index = index
 
-    var integer: Integer = getInstance(index)!;
-        
-        
+    var integer: number = this.getAt(index)!;
 ;
     
 
@@ -237,7 +211,7 @@ var index = index
                                 )
                         
                                     {
-                                    integer= new Integer(index);
+                                    integer= index;
     
 
                                     }
@@ -254,9 +228,7 @@ var index = index
     public getString(index: number): string{
 var index = index
 
-    var i: number = index +NEGATIVE_MAX;
-        
-        
+    var i: number = index +this.NEGATIVE_MAX;
 ;
     
 

@@ -49,8 +49,6 @@ export class LogConfigTypes
         
 
     public LOGGING: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();

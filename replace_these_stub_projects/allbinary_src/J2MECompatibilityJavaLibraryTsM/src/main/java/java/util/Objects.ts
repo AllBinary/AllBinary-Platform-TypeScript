@@ -39,7 +39,8 @@ export class Objects
                                     
 
 
-                            throw new NullPointerException()
+                            throw new NullPointerException();
+                    
 
                                     }
                                 
@@ -68,7 +69,8 @@ var message = message
                                     
 
 
-                            throw new NullPointerException(message)
+                            throw new NullPointerException(message);
+                    
 
                                     }
                                 

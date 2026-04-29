@@ -134,12 +134,8 @@ export class ThemeValidation
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoInterface
 
@@ -164,8 +160,6 @@ this.transformInfoInterface= transformInfoInterface;
     
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemePath);
@@ -178,7 +172,7 @@ this.init();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>){
+public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap){
 
             super();
         var transformInfoInterface = transformInfoInterface
@@ -186,15 +180,11 @@ var hashMap = hashMap
 this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as String);
-        
-        
+    var categoryThemeAbPath: AbPath = new AbPath( as StringhashMap!.get(ThemeData.getInstance()!.PATH));
 ;
     
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 this.categoryAbPath= pathUtil!.removeNameFromPath(categoryThemeAbPath!.toString());
@@ -207,8 +197,6 @@ this.themeName= pathUtil!.getNameFromPath(categoryThemeAbPath!.toString());
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("CategoryThemePath: ");
@@ -243,28 +231,20 @@ this.categoryAbPath= storeThemeCategoryInterface!.getPath();
     
 
     var themeNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, themeNameNode!.getChildNodes())!;
-        
-        
 ;
     
 this.themeName= DomNodeHelper.getTextNodeValue(valueNode);
     
 
     var previewImageNameNode: Node = DomSearchHelper.getNode(ThemeData.getInstance()!.PREVIEW_IMAGE_NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
     var previewImageNameValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, previewImageNameNode!.getChildNodes())!;
-        
-        
 ;
     
 this.themePreviewImageName= DomNodeHelper.getTextNodeValue(previewImageNameValueNode);
@@ -281,20 +261,14 @@ this.init(storeThemeCategoryInterface);
     init(){
 
     var categoryFactoryInterface: CategoryFactoryInterface = new StoreThemeCategoryFactory(this.getTransformInfoInterface());
-        
-        
 ;
     
 
     var categoryLoaderInterface: CategoryLoaderInterface = CategoryLoaderFactory.getInstance(categoryFactoryInterface)!;
-        
-        
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
-        
-        
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface =  as StoreThemeCategoryInterfacecategoryFactoryInterface!.getRootInstance();;
 ;
     
 this.init(rootStoreThemeCategoryInterface);
@@ -376,20 +350,14 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
                                     {
                                     
     var cssStyleFileAbPath: AbPath = new AbPath(this.fileAbPath!.toString(), this.themeName +AbPathData.getInstance()!.EXTENSION_SEP +CategoryData.getInstance()!.UNCRYPTED_EXTENSION);
-        
-        
 ;
     
 
     var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(cryptFileReader!.get(cssStyleFileAbPath))!;
-        
-        
 ;
     
 this.styleValidationInterface= new CssStyleValidation(document);
@@ -401,7 +369,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.styleValidationInterface as CssStyleValidation;
+                        return  as CssStyleValidationthis.styleValidationInterface;
     
 }
 
@@ -411,8 +379,6 @@ this.styleValidationInterface= new CssStyleValidation(document);
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -495,8 +461,6 @@ this.styleValidationInterface= new CssStyleValidation(document);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Theme Validation Error");
@@ -557,7 +521,7 @@ var document = document
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName(); as Object;
+                        return  as Objectthis.getName();;
     
 }
 
@@ -565,8 +529,6 @@ var document = document
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.getName());
@@ -586,17 +548,13 @@ vector.add(this.getPreviewImagePath());
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var themeData: ThemeData = ThemeData.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(themeData!.NAME, this.getName());
@@ -622,14 +580,10 @@ hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath());
 var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.toHashMap())!;
-        
-        
 ;
     
 
-    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation(); as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.getCssStyleValidation();;
 ;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));

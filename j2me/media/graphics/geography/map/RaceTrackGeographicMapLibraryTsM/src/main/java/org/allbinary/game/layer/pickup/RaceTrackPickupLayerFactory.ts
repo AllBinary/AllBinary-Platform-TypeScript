@@ -43,6 +43,8 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../org/allbinary/lay
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RaceTrackPickupLayer } from "./RaceTrackPickupLayer.js";
+
 export class RaceTrackPickupLayerFactory
             extends Object
          implements AllBinaryLayerFactoryInterface {

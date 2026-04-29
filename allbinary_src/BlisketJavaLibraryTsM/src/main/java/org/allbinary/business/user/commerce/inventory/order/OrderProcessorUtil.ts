@@ -54,8 +54,6 @@ export class OrderProcessorUtil
         
 
     private static readonly instance: OrderProcessorUtil = new OrderProcessorUtil();
-        
-        
 
     public static getInstance(): OrderProcessorUtil{
 
@@ -68,8 +66,6 @@ export class OrderProcessorUtil
 
 
     private readonly ORDER_PROCESSED: string = "Order Processed";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -78,14 +74,10 @@ var userName = userName
 var order = order
 
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
-        
-        
 ;
     
 
     var orderHistory: OrderHistoryEntity = new OrderHistoryEntity();
-        
-        
 ;
     
 order.setId(new OrderIdGenerator().

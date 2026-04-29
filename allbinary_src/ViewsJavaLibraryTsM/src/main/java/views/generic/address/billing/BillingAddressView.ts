@@ -71,8 +71,6 @@ export class BillingAddressView extends HttpStoreComponentView implements DomNod
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -84,7 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 }
 
@@ -107,8 +105,6 @@ var document = document
         try {
             
     var formNode: Node = document.createElement(StreetAddressData.FORM)!;
-        
-        
 ;
     
 formNode!.appendChild(this.streetAddress!.toXmlNode(document));
@@ -135,16 +131,17 @@ formNode!.appendChild(this.streetAddress!.toXmlNode(document));
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
-this.addDomNodeInterface(new StatesView() as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacenew StatesView());
     
 }
 
@@ -178,7 +175,8 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

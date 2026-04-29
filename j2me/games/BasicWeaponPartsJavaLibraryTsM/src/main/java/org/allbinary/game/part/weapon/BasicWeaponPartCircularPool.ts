@@ -59,12 +59,8 @@ export class BasicWeaponPartCircularPool
         
 
     public static readonly NULL_BASIC_WEAPON_PART_CIRCULAR_POOL: BasicWeaponPartCircularPool = new BasicWeaponPartCircularPool();
-        
-        
 
     private basicWeaponPart: BasicWeaponPart = BasicWeaponPart.NULL_BASIC_WEAPON_PART;
-        
-        
 
                 //@Throws(Error::class)
             

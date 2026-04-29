@@ -52,8 +52,6 @@ export class StoreWorkFlowWrapper extends WorkFlowWrapper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (anyType: any = {}){
             super(anyType);
                     var anyType = anyType
@@ -71,22 +69,16 @@ public constructor (anyType: any = {}){
         try {
             
     var helperClass: Function = this.getWorkFlowObject()!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.getWorkFlowObject(), 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.getWorkFlowObject(), 
+                            null);;
 ;
     
 
@@ -101,8 +93,6 @@ public constructor (anyType: any = {}){
             {
 
     var error: string = "Reflection Exception";
-        
-        
 ;
     
 
@@ -111,8 +101,6 @@ public constructor (anyType: any = {}){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
@@ -123,7 +111,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 }
 
 }

@@ -50,8 +50,6 @@ export class MyCanvasEventSource
     private treeNode: MutableTreeNode
 
     private angle: number = 0;
-        
-        
 public constructor (command: string, treeNode: MutableTreeNode){
 
             super();

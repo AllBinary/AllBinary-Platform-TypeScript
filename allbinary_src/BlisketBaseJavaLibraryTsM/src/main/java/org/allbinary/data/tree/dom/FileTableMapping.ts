@@ -77,7 +77,7 @@ this.file= file;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.getPath(); as Object;
+                        return  as Objectthis.file.getPath();;
     
 }
 
@@ -87,8 +87,6 @@ this.file= file;
     public toVector(): Vector{
 
     var filePropertyVector: Vector = new Vector();
-        
-        
 ;
     
 filePropertyVector!.add(this.file.getAbsolutePath());
@@ -112,29 +110,21 @@ filePropertyVector!.add(this.file.getPath());
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var filePropertyHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var filePropertyHashMap: HashMap = new HashMap();
 ;
     
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 ;
     
 
     var rootFileName: string = pathUtil!.getNameFromPath(pathUtil!.getWithoutExtension(this.file.getPath()))!;
-        
-        
 ;
     
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 filePropertyHashMap!.put(fileData!.ROOT_NAME, rootFileName);

@@ -43,8 +43,6 @@ export class UserRoleData
         
 
     public static readonly NAME: string = "ROLE";
-        
-        
 private constructor (){
 
             super();

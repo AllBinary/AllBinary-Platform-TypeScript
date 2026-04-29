@@ -60,9 +60,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
-
-    
 
 
 
@@ -92,24 +89,14 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 
     private readonly name: string
 
@@ -206,8 +193,6 @@ super.removeCommand(command);
     public removeAllCommands(){
 
     var size: number = this.commandStack!.length!;
-        
-        
 ;
     
 
@@ -216,11 +201,9 @@ super.removeCommand(command);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-super.removeCommand(this.commandStack!.pop() as Command);
+super.removeCommand( as Commandthis.commandStack!.pop());
     
 }
 
@@ -228,8 +211,6 @@ super.removeCommand(this.commandStack!.pop() as Command);
 
 
     private listener: CommandListener = NullCommandListener.NULL_COMMAND_LISTENER;
-        
-        
 
     public setCommandListener(l: CommandListener){
 var l = l
@@ -335,27 +316,25 @@ this.isPaused= isPaused;
 }
 
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
 }
 
 
-    public keyRepeated(keyCode: number, deviceId: number){
+    public keyRepeatedByDevice(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
 }
 
 
-    public keyReleased(keyCode: number, deviceId: number){
+    public keyReleasedByDevice(keyCode: number, deviceId: number){
 var keyCode = keyCode
 var deviceId = deviceId
 }
 
 
     private readonly touchME: TouchJ2ME = new TouchJ2ME();
-        
-        
 
     pointerDragged(x: number, y: number){
 var x = x

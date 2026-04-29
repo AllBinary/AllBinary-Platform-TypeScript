@@ -60,8 +60,6 @@ var node = node
     var profileActionScriptOutputInterface: ProfileActionScriptOutputInterface = 
                 null
             ;
-        
-        
 ;
     
 
@@ -79,7 +77,8 @@ var node = node
                             
 
 
-                            throw new Error("No Such ActionScript Output")
+                            throw new Error("No Such ActionScript Output");
+                    
 
                         }
                             

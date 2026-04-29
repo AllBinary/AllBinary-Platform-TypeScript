@@ -57,12 +57,8 @@ export class ViewPosition extends GPoint {
 
 
     public static readonly NULL_VIEW_POSITION: ViewPosition = ViewPosition.getInstanceD()!;
-        
-        
 
     private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 protected constructor (x: number, y: number, z: number){
             super(x, y, z);
                     var x = x
@@ -130,7 +126,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getZ() +this.allbinaryLayer!.getDepth());
+                        return Math.round(this.getZ() +this.allbinaryLayer!.getDepth());
     
 }
 

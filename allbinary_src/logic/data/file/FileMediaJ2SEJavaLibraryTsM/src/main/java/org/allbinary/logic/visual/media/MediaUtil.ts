@@ -63,8 +63,6 @@ export class MediaUtil
         
 
     private static readonly instance: MediaUtil = new MediaUtil();
-        
-        
 
     public static getInstance(): MediaUtil{
 
@@ -76,18 +74,14 @@ export class MediaUtil
 }
 
 
-    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
+    static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap{
     //var bufferedImage = bufferedImage
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var propertyStringArray: string[] = bufferedImage!.getPropertyNames()!;
-        
-        
 ;
     
 
@@ -102,14 +96,10 @@ export class MediaUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < propertyStringArray!.length; index++)
         {
 
     var propertyObject: any = bufferedImage!.getProperty(propertyStringArray[index]!)!;
-        
-        
 ;
     
 hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
@@ -129,8 +119,6 @@ hashMap!.put(propertyStringArray[index]!, propertyObject!.toString());
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -155,14 +143,13 @@ var newHeight = newHeight
                                     
 
 
-                            throw new Error("Original Image File Does Not Exist.")
+                            throw new Error("Original Image File Does Not Exist.");
+                    
 
                                     }
                                 
 
     var bufferedImage: BufferedImage = ImageIOUtil.read(originalImageFile)!;
-        
-        
 ;
     
 
@@ -174,7 +161,8 @@ var newHeight = newHeight
                                     
 
 
-                            throw new Error("Unable to find ImageReader for this file.")
+                            throw new Error("Unable to find ImageReader for this file.");
+                    
 
                                     }
                                 
@@ -183,9 +171,7 @@ var newHeight = newHeight
                         
                                     {
                                     
-    var hashMap: HashMap<any, any> = this.getImageBufferPropertyHashMap(bufferedImage)!;
-        
-        
+    var hashMap: HashMap = this.getImageBufferPropertyHashMap(bufferedImage)!;
 ;
     
 this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFile()");
@@ -195,28 +181,20 @@ this.logUtil!.putF("Image Properties: " +hashMap!.toString(), this, "saveImageFi
                                 
 
     var imageFile: AbFile = new AbFile(category +newImageFileName);
-        
-        
 ;
     
 imageFile!.createNewFile();
     
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 
-    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImage(bufferedImage, newWidth, newHeight)!;
-        
-        
+    var newBufferedImage: BufferedImage = imageUtil!.createBufferedImageForSave(bufferedImage, newWidth, newHeight)!;
 ;
     
 
-    var isWritten: boolean = ImageIOUtil.write(newBufferedImage as RenderedImage, mediaData!.getName(), imageFile)!;
-        
-        
+    var isWritten: boolean = ImageIOUtil.write( as RenderedImagenewBufferedImage, mediaData!.getName(), imageFile)!;
 ;
     
 
@@ -226,7 +204,8 @@ imageFile!.createNewFile();
                                     
 
 
-                            throw new Error("Unable to write.")
+                            throw new Error("Unable to write.");
+                    
 
                                     }
                                 
@@ -236,14 +215,10 @@ imageFile!.createNewFile();
                                     {
                                     
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Get Path: ");

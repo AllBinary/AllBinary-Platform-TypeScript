@@ -50,7 +50,7 @@ export interface ValidatorBaseInterface {
 
     public validationInfo(): string
 
-    public toHashtable(): Hashtable<any, any>
+    public toHashtable(): Hashtable
 
     public toList(): BasicArrayList
 

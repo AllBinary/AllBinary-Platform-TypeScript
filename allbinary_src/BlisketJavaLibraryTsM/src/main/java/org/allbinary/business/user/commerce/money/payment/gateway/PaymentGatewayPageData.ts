@@ -49,24 +49,14 @@ export class PaymentGatewayPageData
         
 
     private static readonly EXTENSION: string = ".jsp";
-        
-        
 
     private static readonly NAME: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public static readonly FORWARDMAKEPAYMENT: string = "MakePayment.jsp";
-        
-        
 
     public static readonly PAYMENTOPTIONS: string = "PaymentOptions" +EXTENSION;
-        
-        
 
     public static readonly STARTCHECKOUT: string = "StartCheckout" +EXTENSION;
-        
-        
 
     public readonly MAKEPAYMENT: string
 
@@ -92,14 +82,10 @@ public constructor (location: string, paymentMethod: string){
 var paymentMethod = paymentMethod
 
     var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(location);

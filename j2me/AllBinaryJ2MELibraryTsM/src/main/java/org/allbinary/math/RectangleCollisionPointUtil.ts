@@ -58,8 +58,6 @@ var rectY2 = rectY2
 var list = list
 
     var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -72,11 +70,9 @@ var list = list
 
                         for (
     var index: number = list.size()!;
-        
-        
 --index >= 0; )
         {
-point= list.objectArray[index]! as GPoint;
+point=  as GPointlist.objectArray[index]!;
     
 
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX(), point.getY());)
@@ -102,7 +98,7 @@ point= list.objectArray[index]! as GPoint;
 }
 
 
-    public static allPointsInside(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList, xCellSize: number, yCellSize: number): boolean{
+    public static allPointsInsideCell(rectX1: number, rectY1: number, rectX2: number, rectY2: number, list: BasicArrayList, xCellSize: number, yCellSize: number): boolean{
 var rectX1 = rectX1
 var rectY1 = rectY1
 var rectX2 = rectX2
@@ -112,8 +108,6 @@ var xCellSize = xCellSize
 var yCellSize = yCellSize
 
     var rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -126,11 +120,9 @@ var yCellSize = yCellSize
 
                         for (
     var index: number = list.size()!;
-        
-        
 --index >= 0; )
         {
-point= list.objectArray[index]! as GPoint;
+point=  as GPointlist.objectArray[index]!;
     
 
                         if(!rectangleCollisionUtil!.isInside(rectX1, rectY1, rectX2, rectY2, point.getX() *xCellSize, point.getY() *yCellSize);)

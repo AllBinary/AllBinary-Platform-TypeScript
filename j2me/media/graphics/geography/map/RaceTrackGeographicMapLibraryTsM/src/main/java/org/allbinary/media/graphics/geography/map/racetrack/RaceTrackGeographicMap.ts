@@ -54,6 +54,8 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
         
 import { BaseRaceTrackGeographicMap } from "./BaseRaceTrackGeographicMap.js";
 
+import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
+
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
 
 import { RaceTrackData } from "./RaceTrackData.js";
@@ -61,8 +63,6 @@ import { RaceTrackData } from "./RaceTrackData.js";
 import { AllBinaryTiledLayerFactoryInterface } from "./AllBinaryTiledLayerFactoryInterface.js";
 
 import { CustomMapGeneratorBaseFactory } from "./CustomMapGeneratorBaseFactory.js";
-
-import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
 
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         
@@ -82,7 +82,7 @@ public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, 
 
                             //For kotlin this is before the body of the constructor.
                     
-this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
+this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
     
 }
 
@@ -103,8 +103,6 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;
-        
-        
 ;
     
 
@@ -113,8 +111,6 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.getInstance(this);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Column: ");
@@ -159,8 +155,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Row: ");

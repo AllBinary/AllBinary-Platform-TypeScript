@@ -43,16 +43,10 @@ export class TempInputRobotNames
         
 
     public static readonly LOW_NAME: string = "Low Level";
-        
-        
 
     public static readonly SYS_NAME: string = "System Drivers";
-        
-        
 
     public static readonly DX_NAME: string = "DirectX";
-        
-        
 public constructor (){
 
             super();

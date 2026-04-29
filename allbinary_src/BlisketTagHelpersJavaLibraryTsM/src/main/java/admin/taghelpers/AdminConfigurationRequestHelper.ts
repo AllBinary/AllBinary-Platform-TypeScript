@@ -61,11 +61,9 @@ export class AdminConfigurationRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -79,7 +77,7 @@ var pageContext = pageContext
 
                                     }
                                 
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 }
 
@@ -98,14 +96,10 @@ this.request= pageContext!.getRequest(); as HttpServletRequest;
                                 
 
     var success: string = "Successfully inserted AdminConfiguration";
-        
-        
 ;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
-        
-        
+    var adminConfigurationInterface: AdminConfigurationInterface =  as AdminConfigurationInterfacenew AdminConfiguration(this.request);
 ;
     
 adminConfigurationInterface!.write();
@@ -131,8 +125,6 @@ adminConfigurationInterface!.write();
             {
 
     var error: string = "Failed to created AdminConfiguration";
-        
-        
 ;
     
 
@@ -160,8 +152,6 @@ adminConfigurationInterface!.write();
         try {
             
     var success: string = "Successfully deleted AdminConfiguration";
-        
-        
 ;
     
 
@@ -185,8 +175,6 @@ adminConfigurationInterface!.write();
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -214,14 +202,10 @@ adminConfigurationInterface!.write();
         try {
             
     var success: string = "Updated AdminConfiguration Successful";
-        
-        
 ;
     
 
-    var adminConfigurationInterface: AdminConfigurationInterface = new AdminConfiguration(this.request) as AdminConfigurationInterface;
-        
-        
+    var adminConfigurationInterface: AdminConfigurationInterface =  as AdminConfigurationInterfacenew AdminConfiguration(this.request);
 ;
     
 
@@ -245,8 +229,6 @@ adminConfigurationInterface!.write();
             {
 
     var error: string = "Failed to update";
-        
-        
 ;
     
 

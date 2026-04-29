@@ -64,11 +64,9 @@ export class RotationAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    public static create(): RotationAnimationFactory{
+    public static createFactory(): RotationAnimationFactory{
 
     var totalAngle: number = AngleFactory.getInstance()!.TOTAL_ANGLE;
-        
-        
 ;
     
 
@@ -110,7 +108,7 @@ this.angleIncrement= angleIncrement;
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface
 
 

@@ -67,15 +67,11 @@ export class StoreTagWorkFlowHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private storeWorkFlowInterface: StoreWorkFlowInterface
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -96,7 +92,7 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 
                 //@Throws(Error::class)
             
-    public process(): Integer{
+    public process(): number{
 
         try {
             
@@ -120,8 +116,6 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
             {
 
     var error: string = "Failed to process workflow: ";
-        
-        
 ;
     
 
@@ -136,7 +130,8 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

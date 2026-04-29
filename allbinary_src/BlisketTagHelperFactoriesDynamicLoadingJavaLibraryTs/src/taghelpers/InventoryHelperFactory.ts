@@ -55,16 +55,12 @@ export class InventoryHelperFactory
         
 
     private static readonly CLASSNAME: string = "taghelpers.InventoryHelper";
-        
-        
 
     private static readonly FACTORYNAME: string = "taghelpers.InventoryHelperFactory";
-        
-        
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public static getInstance(hashMap: HashMap, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 

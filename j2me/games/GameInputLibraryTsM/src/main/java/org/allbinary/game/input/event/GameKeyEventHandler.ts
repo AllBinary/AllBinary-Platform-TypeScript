@@ -58,8 +58,6 @@ export class GameKeyEventHandler
         
 
     private static readonly instance: GameKeyEventHandler = new GameKeyEventHandler();
-        
-        
 
     public static getInstance(): GameKeyEventHandler{
 
@@ -72,24 +70,14 @@ export class GameKeyEventHandler
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly pressGameKeyEventHandler: PressGameKeyEventHandler = PressGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly upGameKeyEventHandler: UpGameKeyEventHandler = UpGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly downGameKeyEventHandler: DownGameKeyEventHandler = DownGameKeyEventHandler.getInstance()!;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
@@ -102,7 +90,7 @@ this.downGameKeyEventHandler!.removeAllListeners();
 }
 
 
-    public addListener(eventListenerInterface: EventListenerInterface, playerInputId: number){
+    public addListenerForPlayer(eventListenerInterface: EventListenerInterface, playerInputId: number){
 var eventListenerInterface = eventListenerInterface
 var playerInputId = playerInputId
 this.logUtil!.putF(eventListenerInterface!.toString(), this, commonStrings!.ADD_LISTENER);

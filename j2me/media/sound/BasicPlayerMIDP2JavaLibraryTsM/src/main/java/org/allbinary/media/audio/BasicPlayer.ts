@@ -65,14 +65,14 @@ import { TimeBaseInterface } from "./TimeBaseInterface.js";
 
 import { Controllable2 } from "./Controllable2.js";
 
+import { NullControl } from "./NullControl.js";
+
 export class BasicPlayer
             extends Object
          implements Player, TimeBaseInterface, Controllable2 {
         
 
     public CONTROL_TYPE: string = "ToneControl";
-        
-        
 
     private state: number= 0
 
@@ -81,8 +81,6 @@ export class BasicPlayer
     private timeBase: TimeBase
 
     readonly listenersList: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (){
 
             super();

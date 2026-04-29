@@ -63,29 +63,29 @@ export interface InputRobotInterface {
 
     createScreenCapture(screenRect: Rectangle): BufferedImage
 
-    delay(ms: Integer)
+    delay(ms: number)
 
-    getAutoDelay(): Integer
+    getAutoDelay(): number
 
-    getPixelColor(x: Integer, y: Integer): Color
+    getPixelColor(x: number, y: number): Color
 
     isAutoWaitForIdle(): boolean
 
-    keyPress(keycode: Integer)
+    keyPress(keycode: number)
 
-    keyRelease(keycode: Integer)
+    keyRelease(keycode: number)
 
     getMousePoint(): Point
 
-    mouseMove(x: Integer, y: Integer)
+    mouseMove(x: number, y: number)
 
-    mousePress(buttons: Integer)
+    mousePress(buttons: number)
 
-    mouseRelease(buttons: Integer)
+    mouseRelease(buttons: number)
 
-    mouseWheel(wheelAmt: Integer)
+    mouseWheel(wheelAmt: number)
 
-    setAutoDelay(ms: Integer)
+    setAutoDelay(ms: number)
 
     setAutoWaitForIdle(isOn: boolean)
 
@@ -101,7 +101,7 @@ export interface InputRobotInterface {
 
                 //@Throws(Error::class)
             
-    mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer)
+    mouseMoveToTarget(rectangle: Rectangle, x: number, y: number)
 
 }
                 

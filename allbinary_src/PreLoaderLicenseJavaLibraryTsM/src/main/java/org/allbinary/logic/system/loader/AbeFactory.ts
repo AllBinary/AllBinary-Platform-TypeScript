@@ -63,16 +63,12 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
         
 import { WebappClassLoaderInfo } from "./WebappClassLoaderInfo.js";
 
-import { Class } from "./Class.js";
-
 export class AbeFactory
             extends Object
          {
         
 
     private static readonly instance: AbeFactory = new AbeFactory();
-        
-        
 
     public static getInstance(): AbeFactory{
 
@@ -85,12 +81,8 @@ export class AbeFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private useCustomLoader: boolean = false;
-        
-        
 private constructor (){
 
             super();
@@ -127,7 +119,8 @@ private constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -165,16 +158,12 @@ var params = params
     var constructor: Constructor = 
                 null
             ;
-        
-        
 ;
     
 
         try {
             
     var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
-        
-        
 ;
     
 
@@ -183,14 +172,10 @@ var params = params
                                     {
                                     
     var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
-        
-        
 ;
     
 
     var myClass: Function = loader.loadClass(className)!;
-        
-        
 ;
     
 constructor= myClass!.getConstructor(classes);
@@ -207,8 +192,6 @@ constructor= myClass!.getConstructor(classes);
                         else {
                             
     var myClass: Function = parent.loadClass(className)!;
-        
-        
 ;
     
 constructor= myClass!.getConstructor(classes);
@@ -232,8 +215,6 @@ constructor= myClass!.getConstructor(classes);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Failure for: ");
@@ -252,7 +233,8 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -264,8 +246,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Failure for: ");
@@ -302,8 +282,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
         try {
             
     var parent: ClassLoader = WebappClassLoaderInfo.getLoader()!;
-        
-        
 ;
     
 
@@ -312,14 +290,10 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                                     {
                                     
     var loader: ClassLoader = new AbeClassLoader(parent, AbKeys.getInstance()!.getKey(abeClientInformation, className));
-        
-        
 ;
     
 
     var c: Function = loader.loadClass(className)!;
-        
-        
 ;
     
 
@@ -334,8 +308,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         else {
                             
     var c: Function = parent.loadClass(className)!;
-        
-        
 ;
     
 
@@ -363,7 +335,8 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 

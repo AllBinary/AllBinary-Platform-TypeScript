@@ -57,23 +57,21 @@ export class Money
          {
         
 
-    private units: Long
+    private units: number
 
     private readonly DEFAULT_CURRENCY: string = "USD";
-        
-        
 public constructor (money: Money){
 
             super();
         var money = money
-this.units= money.getUnits() as Long;
+this.units= money.getUnits();
     
 }
 
 public constructor (){
 
             super();
-        this.units= 0 as Long;
+        this.units= 0;
     
 }
 
@@ -87,7 +85,7 @@ public constructor (usDollarStr: string){
                                  && StringValidationUtil.getInstance()!.isNumber(usDollarStr))
                         
                                     {
-                                    this.units= convertUsdToUnits(usDollarStr) as Long;
+                                    this.units= convertUsdToUnits(usDollarStr);
     
 
                                     }
@@ -98,7 +96,7 @@ public constructor (units: number){
 
             super();
         var units = units
-this.units= units as Long;
+this.units= units;
     
 }
 
@@ -141,29 +139,29 @@ this.add(moreMoney!.toString());
 
     public add(usDollarStr: string){
 var usDollarStr = usDollarStr
-this.units= this.units.longValue() +convertUsdToUnits(usDollarStr) as Long;
+this.units= this.units.longValue() +convertUsdToUnits(usDollarStr);
     
 }
 
 
     public subtract(usDollarStr: string){
 var usDollarStr = usDollarStr
-this.units= this.units.longValue() -convertUsdToUnits(usDollarStr) as Long;
-    
-}
-
-
-    public multiply(multiplier: Float){
-var multiplier = multiplier
-this.units= new Float(this.units.longValue() *multiplier.toFloat()).
-                            longValue() as Long;
+this.units= this.units.longValue() -convertUsdToUnits(usDollarStr);
     
 }
 
 
     public multiply(multiplier: number){
 var multiplier = multiplier
-this.units= this.units.longValue() *multiplier as Long;
+this.units= new number(this.units.longValue() *multiplier.toFloat()).
+                            longValue();
+    
+}
+
+
+    public multiply(multiplier: number){
+var multiplier = multiplier
+this.units= this.units.longValue() *multiplier;
     
 }
 
@@ -172,8 +170,6 @@ this.units= this.units.longValue() *multiplier as Long;
 var currency = currency
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -182,17 +178,13 @@ var currency = currency
                                     {
                                     
     var dollar: number = this.units.longValue() /100;
-        
-        
 ;
     
 
     var cents: number = this.units.longValue() -(dollar *100);
-        
-        
 ;
     
-stringBuffer!.append(dollar as Long.
+stringBuffer!.append(dollar.
                             toString());
     
 stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
@@ -206,7 +198,7 @@ stringBuffer!.append(AbPathData.getInstance()!.EXTENSION_SEP);
 
                                     }
                                 
-stringBuffer!.append(cents as Long.
+stringBuffer!.append(cents.
                             toString());
     
 
@@ -225,32 +217,22 @@ stringBuffer!.append(cents as Long.
 var usDollarStr = usDollarStr
 
     var localUnit: number = 0;
-        
-        
 ;
     
 
     var index: number = usDollarStr!.indexOf(AbPathData.getInstance()!.EXTENSION_SEP)!;
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var dollarStr: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var centsStr: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -274,11 +256,11 @@ centsStr= substring.toCharArray();
 
                         }
                             
-localUnit= dollarStr as Long.
-                            longValue() *100 as Long.
+localUnit= dollarStr.
+                            longValue() *100.
                             longValue();
     
-localUnit += centsStr as Long.
+localUnit += centsStr.
                             longValue();
     
 
@@ -300,7 +282,7 @@ localUnit += centsStr as Long.
 }
 
 
-    public getUnitsLong(): Long{
+    public getUnitsLong(): number{
 
 
 

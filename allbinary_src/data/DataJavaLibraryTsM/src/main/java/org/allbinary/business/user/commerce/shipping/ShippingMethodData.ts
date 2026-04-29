@@ -43,24 +43,14 @@ export class ShippingMethodData
         
 
     public static readonly DESCRIPTION: string = "SHIPPINGMETHOD_DESCRIPTION";
-        
-        
 
     public static readonly DEFAULT: string = "SHIPPINGMETHOD_DEFAULT";
-        
-        
 
     public static readonly NAME: string = "SHIPPINGMETHOD_NAME";
-        
-        
 
     public static readonly GROUP: string = "SHIPPINGMETHOD_GROUP";
-        
-        
 
     public static readonly COST: string = "SHIPPINGMETHOD_COST";
-        
-        
 public constructor (){
 
             super();

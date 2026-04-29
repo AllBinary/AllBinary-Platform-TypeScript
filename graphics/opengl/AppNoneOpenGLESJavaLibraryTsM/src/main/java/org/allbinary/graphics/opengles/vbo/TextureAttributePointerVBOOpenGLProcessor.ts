@@ -43,12 +43,12 @@ import { ObjectThreedOpenGLProcessor } from "../../../../../org/allbinary/graphi
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class TextureAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGLProcessor {
         
 
     private static readonly instance: TextureAttributePointerVBOOpenGLProcessor = new TextureAttributePointerVBOOpenGLProcessor();
-        
-        
 
     public static getInstance(): TextureAttributePointerVBOOpenGLProcessor{
 
@@ -71,7 +71,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

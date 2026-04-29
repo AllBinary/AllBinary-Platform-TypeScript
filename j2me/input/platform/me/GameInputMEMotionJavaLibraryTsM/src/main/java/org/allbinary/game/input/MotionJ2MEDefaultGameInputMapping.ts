@@ -64,14 +64,10 @@ public constructor (){
                     
 
     var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-        
-        
 ;
     
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, gameKeyFactory!.KEY_NUM2);
@@ -130,8 +126,6 @@ inputToGameKeyMapping!.add(gameKeyFactory!.RIGHT, TouchMotionGestureFactory.getI
     
 
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, basicTouchInputFactory!.UP);

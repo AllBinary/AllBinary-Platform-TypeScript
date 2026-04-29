@@ -57,36 +57,26 @@ export class MeteredGameObject
          implements MeteredGameObjectInterface {
         
 
-    private ratios: Double[]
+    private ratios: number[]
 
     private good: boolean = false;
-        
-        
 
     private dropping: boolean = false;
-        
-        
 
-    private minX: Integer
+    private minX: number
 
-    private maxX: Integer
+    private maxX: number
 
-    private y: Integer
+    private y: number
 
-    private size: Integer
+    private size: number
 
     private readonly RATIOS_LABEL: string = "Ratios: ";
-        
-        
 
     private readonly IS_GOOD_LABEL: string = "isGood: ";
-        
-        
 
     private readonly IS_DROPPPING_LABEL: string = "isDropping: ";
-        
-        
-public constructor (bufferedImage: BufferedImage[], minX: Object, maxX: Object, y: Object){
+public constructor (bufferedImage: BufferedImage[], minX: number, maxX: number, y: number){
 
             super();
         var bufferedImage = bufferedImage
@@ -109,17 +99,13 @@ this.setSize(maxX -minX);
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImage!.length; index++)
         {
 
     var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;
-        
-        
 ;
     
-this.getRatios()[index]= new Double(nominator /this.getSize());
+this.getRatios()[index]= new number(nominator /this.getSize());
     
 }
 
@@ -190,7 +176,7 @@ this.dropping= dropping;
 }
 
 
-    public getRatios(): Double[]{
+    public getRatios(): number[]{
 
 
 
@@ -203,14 +189,10 @@ this.dropping= dropping;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
@@ -223,8 +205,6 @@ stringBuffer!.append(this.RATIOS_LABEL);
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getRatios()!.length; index++)
         {
 stringBuffer!.append(this.getRatios()[index]!.toString());
@@ -261,14 +241,14 @@ stringBuffer!.appendboolean(this.isDropping());
 }
 
 
-    public setRatios(ratios: Double[]){
+    public setRatios(ratios: number[]){
 var ratios = ratios
 this.ratios= ratios;
     
 }
 
 
-    public getMinX(): Integer{
+    public getMinX(): number{
 
 
 
@@ -278,14 +258,14 @@ this.ratios= ratios;
 }
 
 
-    public setMinX(minX: Integer){
+    public setMinX(minX: number){
 var minX = minX
 this.minX= minX;
     
 }
 
 
-    public getMaxX(): Integer{
+    public getMaxX(): number{
 
 
 
@@ -295,14 +275,14 @@ this.minX= minX;
 }
 
 
-    public setMaxX(maxX: Integer){
+    public setMaxX(maxX: number){
 var maxX = maxX
 this.maxX= maxX;
     
 }
 
 
-    public getY(): Integer{
+    public getY(): number{
 
 
 
@@ -312,14 +292,14 @@ this.maxX= maxX;
 }
 
 
-    public setY(y: Integer){
+    public setY(y: number){
 var y = y
 this.y= y;
     
 }
 
 
-    public getSize(): Integer{
+    public getSize(): number{
 
 
 
@@ -329,7 +309,7 @@ this.y= y;
 }
 
 
-    public setSize(size: Integer){
+    public setSize(size: number){
 var size = size
 this.size= size;
     

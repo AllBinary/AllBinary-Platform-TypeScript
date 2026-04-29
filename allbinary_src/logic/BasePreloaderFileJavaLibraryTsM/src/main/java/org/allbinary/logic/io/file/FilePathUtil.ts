@@ -54,20 +54,14 @@ export class FilePathUtil
 var path = path
 
     var abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 ;
     
 

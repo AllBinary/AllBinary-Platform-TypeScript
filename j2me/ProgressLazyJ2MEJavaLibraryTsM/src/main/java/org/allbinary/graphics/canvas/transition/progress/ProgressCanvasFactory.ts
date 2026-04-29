@@ -46,6 +46,8 @@ import { PaintableInterface } from "../../../../../../org/allbinary/graphics/pai
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LazyProgressCanvas } from "./LazyProgressCanvas.js";
+
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
 export class ProgressCanvasFactory
@@ -54,8 +56,6 @@ export class ProgressCanvasFactory
         
 
     private PROGRESS_FORM_SCREEN: ProgressCanvas = new LazyProgressCanvas(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     public static getInstance(): ProgressCanvas{
 

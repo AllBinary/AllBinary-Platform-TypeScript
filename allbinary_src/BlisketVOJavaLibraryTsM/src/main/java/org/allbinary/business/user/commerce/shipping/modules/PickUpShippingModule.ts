@@ -54,16 +54,10 @@ export class PickUpShippingModule
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly name: string = "No Shipping (For Pickup Orders Only)";
-        
-        
 
     private readonly description: string = "This shipping method is for pickup orders only.";
-        
-        
 public constructor (){
 
             super();

@@ -58,22 +58,14 @@ export class AllMotionRecognizer extends MotionRecognizer {
         
 
     private index: number = 0;
-        
-        
 
     private static readonly pointCircularPool: GPointCircularPool = new GPointCircularPool(40);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly motionGestureRecognizer: MotionGestureRecognizer
 
     private touchButtonProcessing: boolean = false;
-        
-        
 
     private readonly touchButtonRecognizer: TouchButtonRecognizer
 
@@ -111,9 +103,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
-        
-        
+    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
 ;
     
 point.setX(x);
@@ -147,9 +137,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
-        
-        
+    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
 ;
     
 point.setX(x);
@@ -194,9 +182,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
-        
-        
+    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
 ;
     
 point.setX(x);
@@ -231,9 +217,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 this.lastY= y;
     
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
-        
-        
+    var point: CustomGPoint =  as CustomGPointpointCircularPool!.getNextInstance();;
 ;
     
 point.setX(x);

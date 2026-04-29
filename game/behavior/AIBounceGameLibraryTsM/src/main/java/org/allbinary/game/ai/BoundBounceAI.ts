@@ -64,8 +64,6 @@ export class BoundBounceAI extends BasicAI {
         
 
     currentRelativeAngle: number = 0;
-        
-        
 
     private layerBounds: LayerBounds
 
@@ -91,8 +89,6 @@ this.boundsVisitorInterface= boundsVisitorInterface;
 var graphics = graphics
 
     var rectange: Rectangle = this.layerBounds!.getRectangleP()!;
-        
-        
 ;
     
 graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rectange.getWidth(), rectange.getHeight());

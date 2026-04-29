@@ -50,8 +50,6 @@ export class BasicMotionGesturesHandler extends BasicEventHandler {
         
 
     private static readonly SINGLETON: BasicMotionGesturesHandler = new BasicMotionGesturesHandler();
-        
-        
 
     public static getInstance(): BasicMotionGesturesHandler{
 
@@ -74,12 +72,10 @@ protected constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var baseMotionGestureEventListener: BaseMotionGestureEventListener = eventListenerInterface as BaseMotionGestureEventListener;
-        
-        
+    var baseMotionGestureEventListener: BaseMotionGestureEventListener =  as BaseMotionGestureEventListenereventListenerInterface;
 ;
     
-baseMotionGestureEventListener!.onMotionGestureEvent(eventObject as MotionGestureEvent);
+baseMotionGestureEventListener!.onMotionGestureEvent( as MotionGestureEventeventObject);
     
 }
 

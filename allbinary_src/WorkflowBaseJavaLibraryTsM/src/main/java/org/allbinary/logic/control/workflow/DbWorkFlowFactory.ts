@@ -66,8 +66,6 @@ export class DbWorkFlowFactory
         
 
     private static readonly instance: DbWorkFlowFactory = new DbWorkFlowFactory();
-        
-        
 
     public static getInstance(): DbWorkFlowFactory{
 
@@ -80,8 +78,6 @@ export class DbWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -90,44 +86,36 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
-        
-        
+    var className: string =  as StringhashMap!.get(DynamicObjectData.NAME);;
 ;
     
 
     var params: any[] = new Array(1);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(1);
-        
-        
 ;
     
 classes[0]= hashMap!constructor;
     
-params[0]= hashMap as Object;
+params[0]=  as ObjecthashMap;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
+                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
     
 
                 //: 
@@ -139,8 +127,6 @@ params[0]= hashMap as Object;
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
@@ -151,7 +137,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -163,8 +150,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
@@ -175,7 +160,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

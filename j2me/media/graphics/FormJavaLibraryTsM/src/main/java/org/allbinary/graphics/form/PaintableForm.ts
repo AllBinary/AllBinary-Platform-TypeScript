@@ -63,24 +63,16 @@ export class PaintableForm extends CustomForm {
         
 
     public static readonly NULL_PAINTABLE_FORM: PaintableForm = new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 
     rectangle: Rectangle = RectangleFactory.SINGLETON;
-        
-        
 
     x: number= 0
 
     y: number= 0
 
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
-        
-        
 public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
@@ -119,8 +111,6 @@ this.rectangle= rectangle;
     
 
     var point: GPoint = this.rectangle.getPoint()!;
-        
-        
 ;
     
 this.x= point.getX();

@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TestClientInformation } from "./TestClientInformation.js";
+
 import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
 
 export class ServiceClientInformationInterfaceFactory
@@ -45,8 +47,6 @@ export class ServiceClientInformationInterfaceFactory
         
 
     private static readonly instance: TestClientInformation = new TestClientInformation();
-        
-        
 
     public static getInstance(): AbeClientInformationInterface{
 

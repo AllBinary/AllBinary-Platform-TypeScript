@@ -25,6 +25,8 @@
         
 import { ActivityFractureControllerUtilFactory } from "./ActivityFractureControllerUtilFactory.js";
 
+import { AndroidKeyFactory } from "./AndroidKeyFactory.js";
+
 import { AndroidGameKey } from "./AndroidGameKey.js";
 
 import { Input } from "./Input.js";
@@ -35,8 +37,6 @@ export class PlatformKeyFactory
         
 
     private static readonly SINGLETON: PlatformKeyFactory = new PlatformKeyFactory();
-        
-        
 
     public static getInstance(): PlatformKeyFactory{
 
@@ -49,8 +49,6 @@ export class PlatformKeyFactory
 
 
     private readonly androidKeyFactory: AndroidKeyFactory = ActivityFractureControllerUtilFactory.getInstance()!;
-        
-        
 
     public getString(keyCode: number): string{
 var keyCode = keyCode

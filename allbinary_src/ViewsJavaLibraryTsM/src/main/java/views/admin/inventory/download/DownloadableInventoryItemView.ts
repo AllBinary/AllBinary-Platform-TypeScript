@@ -110,12 +110,8 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
         
 
     public TYPE_ID: number = 11;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly request: HttpServletRequest
 
@@ -125,7 +121,7 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
 
     downloadableItem: DownloadableItem
 
-    private requestHashMap: HashMap<any, any>
+    private requestHashMap: HashMap
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -133,7 +129,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 this.getFormData();
     
@@ -147,7 +143,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 }
 
@@ -168,7 +164,7 @@ this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).
                             toHashMap());
     
-this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as String;
+this.id=  as Stringthis.getRequestHashMap()!.get(BasicItemData.ID);;
     
 }
 
@@ -176,8 +172,6 @@ this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as String;
     public addDomNodeInterfaces(){
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
@@ -225,7 +219,8 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -237,28 +232,20 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
     //var fileItem = fileItem
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var fullPath: string = this.getItemFilePath()!;
-        
-        
 ;
     
 
     var itemResourceFile: AbFile = new AbFile(fullPath);
-        
-        
 ;
     
 itemResourceFile!.mkdir();
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(fullPath);
@@ -269,8 +256,6 @@ this.logUtil!.putF("FileName: " +fileName, this, "processFile()");
     
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
-        
-        
 ;
     
 this.logUtil!.putF(file.getPath(), this, "processFiles()");
@@ -279,8 +264,6 @@ file.createNewFile();
     
 
     var byteArray: number[] = fileItem!.get()!;
-        
-        
 ;
     
 FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
@@ -294,20 +277,14 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
     //var fileItem = fileItem
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var fullPath: string = this.getItemFilePath()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(fullPath);
@@ -318,8 +295,6 @@ this.logUtil!.putF("FileName: " +fileName, this, "unzip()");
     
 
     var file: AbFile = new AbFile(stringBuffer!.toString());
-        
-        
 ;
     
 this.logUtil!.putF(file.getPath(), this, "unzip()");
@@ -332,20 +307,14 @@ ZipFileUtil.getInstance()!.unzip(fullPath, file, fileName);
     getItemFilePath(): string{
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -373,14 +342,14 @@ stringBuffer!.append(filePathData!.SEPARATOR);
 }
 
 
-    setRequestHashMap(requestHashMap: HashMap<any, any>){
+    setRequestHashMap(requestHashMap: HashMap){
 var requestHashMap = requestHashMap
 this.requestHashMap= requestHashMap;
     
 }
 
 
-    public getRequestHashMap(): HashMap<any, any>{
+    public getRequestHashMap(): HashMap{
 
 
 

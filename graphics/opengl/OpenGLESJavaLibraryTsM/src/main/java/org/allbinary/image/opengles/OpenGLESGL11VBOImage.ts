@@ -76,12 +76,8 @@ export class OpenGLESGL11VBOImage extends OpenGLESImage {
         
 
     private readonly glUtil: GLUtil = GLUtil.getInstance()!;
-        
-        
 
     private textureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-        
-        
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
                         //var image = image
@@ -125,9 +121,7 @@ textureVertexFloatBuffer!.rewind();
     public set(gl: GL){
     //var gl = gl
 
-    var gl10: GL10 = gl as GL10;
-        
-        
+    var gl10: GL10 =  as GL10gl;
 ;
     
 
@@ -146,21 +140,13 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this);
 }
 
 
-    readonly regionRectangleFloatArray: number[] = floatArrayOf(0,0,0,0,0,0,0,0,0,0,0,0);
-        
-        
+    readonly regionRectangleFloatArray: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
 
     regionRectangleVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *3)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-        
-        
 
     private readonly regionTextureRectangleFloatArray: number[] = new Array(8);
-        
-        
 
     private regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
-        
-        
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
     //var gl = gl

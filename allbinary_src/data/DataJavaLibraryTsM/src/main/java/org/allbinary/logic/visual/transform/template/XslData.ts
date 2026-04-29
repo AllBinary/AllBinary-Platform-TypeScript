@@ -43,8 +43,6 @@ export class XslData
         
 
     private static readonly instance: XslData = new XslData();
-        
-        
 
     public static getInstance(): XslData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public NAME: string = "XSL_NAME";
-        
-        
 
     public ROOT_IMPORT_URI: string = "ROOT_IMPORT_URI";
-        
-        
 
 }
                 

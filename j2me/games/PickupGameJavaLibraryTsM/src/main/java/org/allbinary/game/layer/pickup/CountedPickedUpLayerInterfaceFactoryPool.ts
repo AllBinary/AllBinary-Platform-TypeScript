@@ -49,8 +49,6 @@ export class CountedPickedUpLayerInterfaceFactoryPool
         
 
     private SINGLETON: CountedPickedUpLayerInterfaceFactoryPool = new CountedPickedUpLayerInterfaceFactoryPool();
-        
-        
 
     public static getInstance(): CountedPickedUpLayerInterfaceFactoryPool{
 

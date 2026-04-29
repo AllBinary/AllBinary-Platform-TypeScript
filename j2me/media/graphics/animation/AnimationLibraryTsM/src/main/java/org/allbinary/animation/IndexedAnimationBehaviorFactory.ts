@@ -39,6 +39,8 @@
         
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
+import { IndexedAnimationBehavior } from "./IndexedAnimationBehavior.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {

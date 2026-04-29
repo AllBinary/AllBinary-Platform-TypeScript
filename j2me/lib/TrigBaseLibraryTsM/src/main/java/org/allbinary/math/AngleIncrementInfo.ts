@@ -55,18 +55,16 @@ export class AngleIncrementInfo
         
 
     private static readonly INCREMENT: string = "Inc: ";
-        
-        
 
     private readonly angleIncrement: number
 
-    public readonly DOWN_FRAME: Integer
+    public readonly DOWN_FRAME: number
 
-    public readonly UP_FRAME: Integer
+    public readonly UP_FRAME: number
 
-    public readonly LEFT_FRAME: Integer
+    public readonly LEFT_FRAME: number
 
-    public readonly RIGHT_FRAME: Integer
+    public readonly RIGHT_FRAME: number
 public constructor (angleIncrement: number){
 
             super();
@@ -75,30 +73,24 @@ this.angleIncrement= angleIncrement;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
-this.DOWN_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.DOWN.getValue() /this.angleIncrement);
+this.DOWN_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.DOWN.getValue() /this.angleIncrement);
     
-this.UP_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.UP.getValue());
+this.UP_FRAME= smallIntegerSingletonFactory!.getAt(Math.roundangleFactory!.UP.getValue());
     
-this.LEFT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.LEFT.getValue() /this.angleIncrement);
+this.LEFT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.LEFT.getValue() /this.angleIncrement);
     
-this.RIGHT_FRAME= smallIntegerSingletonFactory!.getInstance(angleFactory!.RIGHT.getValue() /this.angleIncrement);
+this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getValue() /this.angleIncrement);
     
 }
 
 
     private readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
-        
-        
 
     public getFrameAngle(frame: number): number{
 var frame = frame
@@ -106,7 +98,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return frameUtil!.getFrameAngle(frame, this.angleIncrement);;
+                        return frameUtil!.getFrameAngle(frame, Math.roundthis.angleIncrement);;
     
 }
 
@@ -135,9 +127,7 @@ var frame = frame
     public getClosestGeneralDirection(angle: number): number{
 var angle = angle
 
-    var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(360)!;
-        
-        
+    var closestDirection: number = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;
 ;
     
 

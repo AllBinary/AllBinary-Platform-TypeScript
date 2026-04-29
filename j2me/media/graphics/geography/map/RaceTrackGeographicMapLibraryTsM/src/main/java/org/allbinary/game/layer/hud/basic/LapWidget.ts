@@ -59,16 +59,10 @@ export class LapWidget extends BasicHud {
         
 
     private readonly LAP_STR: string = "Lap ";
-        
-        
 
     private readonly OF_STR: string = " of ";
-        
-        
 
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (location: number, direction: number, basicColor: BasicColor){
             super(location, direction, 15, 40, 2, basicColor);
                     var location = location
@@ -85,8 +79,6 @@ var basicColor = basicColor
 var lapInfo = lapInfo
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());

@@ -60,16 +60,12 @@ export class StoreFrontFactory
     //var storeName = storeName
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var storeFronts: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
-        
-        
 ;
     
 
@@ -84,8 +80,6 @@ export class StoreFrontFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

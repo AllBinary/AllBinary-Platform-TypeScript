@@ -43,8 +43,6 @@ export class TransformInfosData
         
 
     private static readonly instance: TransformInfosData = new TransformInfosData();
-        
-        
 
     public static getInstance(): TransformInfosData{
 
@@ -62,24 +60,14 @@ private constructor (){
 
 
     public readonly NAME: string = "TRANSFORM_INFOS_NAME";
-        
-        
 
     public readonly GROUP: string = "TRANSFORM_INFOS_GROUP";
-        
-        
 
     public readonly ALL: string = "TRANSFORM_INFOS_ALL";
-        
-        
 
     public readonly PREVIEW: string = "TRANSFORM_INFOS_PREVIEW";
-        
-        
 
     public readonly SMALL_PREVIEW: string = "TRANSFORM_INFOS_SMALL_PREVIEW";
-        
-        
 
 }
                 

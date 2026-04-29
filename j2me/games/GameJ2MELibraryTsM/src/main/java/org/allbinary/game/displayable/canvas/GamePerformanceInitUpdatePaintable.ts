@@ -59,16 +59,10 @@ export class GamePerformanceInitUpdatePaintable extends InitUpdatePaintable {
         
 
     private readonly halfHeight: number = DisplayInfoSingleton.getInstance()!.getLastHalfHeight()!;
-        
-        
 
-    private readonly yArray: number[] = intArrayOf(this.halfHeight +30,this.halfHeight +30,this.halfHeight +30 +15,this.halfHeight +30 +15,this.halfHeight +30 +30,this.halfHeight +30 +30,this.halfHeight +30 +45,this.halfHeight +30 +45);
-        
-        
+    private readonly yArray: number[] = [this.halfHeight +30,this.halfHeight +30,this.halfHeight +30 +15,this.halfHeight +30 +15,this.halfHeight +30 +30,this.halfHeight +30 +30,this.halfHeight +30 +45,this.halfHeight +30 +45];
 
     private baseRefreshHelperCharArray: string[][] = new Array(0) [0];
-        
-        
 
     public init(){
 }
@@ -81,15 +75,11 @@ this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArra
 
 
     private readonly RED: number = BasicColorFactory.getInstance()!.RED.toInt()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 graphics.setColor(this.RED);
@@ -112,8 +102,6 @@ graphics.setColor(this.RED);
     
 
     var size: number = this.baseRefreshHelperCharArray!.length -2;
-        
-        
 ;
     
 
@@ -122,8 +110,6 @@ graphics.setColor(this.RED);
 
                         for (
     var index: number = size;
-        
-        
 index >= 0; )
         {
 charArray= this.baseRefreshHelperCharArray[index]!;
@@ -136,7 +122,7 @@ size3= charArray2!.length;
     
 graphics.drawChars(charArray, 0, size2, 0, yArray[index]!, 0);
     
-graphics.drawChars(charArray2, 0, size3, size2 *myFont!.stringWidth(2), yArray[index +1]!, 0);
+graphics.drawChars(charArray2, 0, size3, size2 *myFont!.defaultStringWidth(2), yArray[index +1]!, 0);
     
 }
 

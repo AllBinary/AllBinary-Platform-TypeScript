@@ -54,6 +54,8 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
         
 import { TransformInfoObjectConfigAndManipulatorFactoryInterface } from "./TransformInfoObjectConfigAndManipulatorFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
 export class TransformInfoObjectConfigAndManipulatorFactoryBase
@@ -62,8 +64,6 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -74,7 +74,8 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -86,7 +87,8 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -99,7 +101,8 @@ var document = document
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

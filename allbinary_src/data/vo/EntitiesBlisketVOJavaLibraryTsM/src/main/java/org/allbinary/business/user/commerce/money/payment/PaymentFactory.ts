@@ -57,8 +57,6 @@ export class PaymentFactory
 var request = request
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -67,7 +65,7 @@ var request = request
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new org.allbinary.business.user.commerce.money.payment.Payment(request) as PaymentInterface;
+                        return  as PaymentInterfacenew org.allbinary.business.user.commerce.money.payment.Payment(request);
     
 
                 //: 
@@ -75,8 +73,6 @@ var request = request
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

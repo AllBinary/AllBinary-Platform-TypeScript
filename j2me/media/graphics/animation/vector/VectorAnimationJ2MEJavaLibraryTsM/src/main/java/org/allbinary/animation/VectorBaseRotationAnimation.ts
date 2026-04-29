@@ -24,9 +24,6 @@ import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
-import { BasicColorSetUtil } from "../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
-
-    
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -71,14 +68,10 @@ export class VectorBaseRotationAnimation extends RotationAnimation implements Ve
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
-        
-        
 public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
-            super(angleInfo, CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
+            super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var angleInfo = angleInfo
     //var currentPoints = currentPoints
     //var basicColor = basicColor
@@ -160,7 +153,7 @@ this.circularIndexUtil!.previous();
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -170,14 +163,10 @@ this.basicSetColorUtil!.setBasicColorP(graphics, basicColor);
         try {
             
     var nextPointX: number = 0;
-        
-        
 ;
     
 
     var nextPointY: number = 0;
-        
-        
 ;
     
 
@@ -190,21 +179,15 @@ this.basicSetColorUtil!.setBasicColorP(graphics, basicColor);
     
 
     var currentPointsFrame: number[][] = this.currentPoints[this.circularIndexUtil!.getIndex()]!;
-        
-        
 ;
     
 
     var size: number = currentPointsFrame!.length
                 ;
-        
-        
 ;
     
 
     var index: number = size -2;
-        
-        
 ;
     
 
@@ -261,7 +244,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e);
     //var currentPoints = currentPoints
 this.currentPoints= currentPoints;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.currentPoints!.length);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.currentPoints!.length);
     
 }
 

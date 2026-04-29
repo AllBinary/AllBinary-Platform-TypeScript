@@ -71,12 +71,8 @@ export class CompoundTransform extends AbTransformer {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -84,12 +80,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.getURIResolver() as BasicUriResolver) as URIResolver);
+this.setURIResolver( as URIResolvernew StoreUriResolver(this.getTransformInfoInterface(),  as BasicUriResolverthis.getURIResolver()));
     
 
     var objectConfig: CompoundContextTransformInfoObjectConfig = new CompoundContextTransformInfoObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc());
-        
-        
 ;
     
 
@@ -103,8 +97,6 @@ this.setURIResolver(new StoreUriResolver(this.getTransformInfoInterface(), this.
                                 
 
     var templateInputStream: InputStream = objectConfig!.createInputStream()!;
-        
-        
 ;
     
 this.setInputStream(templateInputStream);

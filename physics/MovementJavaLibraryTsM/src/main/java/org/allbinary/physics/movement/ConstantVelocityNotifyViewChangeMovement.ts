@@ -65,8 +65,6 @@ export class ConstantVelocityNotifyViewChangeMovement extends Movement {
     private speedBasicDecimal: BasicDecimal
 
     private readonly axisMathVectorUtil: AxisMathVectorUtil = AxisMathVectorUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -85,11 +83,9 @@ this.speedBasicDecimal= speedBasicDecimal;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
-basicVelocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle));
+basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
 }
 
@@ -101,29 +97,21 @@ var angle = angle
 var otherAngle = otherAngle
 
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
-        
-        
 ;
     
 
-    var xVector: number = (this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
-        
-        
+    var xVector: number = Math.round(this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
 ;
     
 
-    var yVector: number = (this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
-        
-        
+    var yVector: number = Math.round(this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
 ;
     
 
-    var zVector: number = (this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue);
-        
-        
+    var zVector: number = Math.round(this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue);
 ;
     
-layer.move(xVector, yVector, zVector);
+layer.moveDXYZ(xVector, yVector, zVector);
     
 }
 
@@ -134,23 +122,17 @@ layer.move(xVector, yVector, zVector);
 var layer = layer
 
     var x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;
-        
-        
 ;
     
 
     var y: number = this.basicVelocityProperties!.getVelocityYBasicDecimalP()!.getScaled()!;
-        
-        
 ;
     
 
     var z: number = this.basicVelocityProperties!.getVelocityZBasicDecimalP()!.getScaled()!;
-        
-        
 ;
     
-layer.move(x, y, z);
+layer.moveDXYZ(x, y, z);
     
 
                         if(x != 0 || y != 0 || z != 0)

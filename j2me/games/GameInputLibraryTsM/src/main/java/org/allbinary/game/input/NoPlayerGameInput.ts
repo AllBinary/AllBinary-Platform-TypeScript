@@ -52,8 +52,6 @@ export class NoPlayerGameInput extends PlayerGameInput {
         
 
     private static readonly SINGLETON: NoPlayerGameInput = new NoPlayerGameInput();
-        
-        
 
     public static getInstance(): NoPlayerGameInput{
 

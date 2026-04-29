@@ -61,24 +61,14 @@ this.reduceTimeFactor= reduceTimeFactor;
 
 
     private readonly SCALE_VALUE: number = AnalogControllerConfigurationFactory.getInstance()!.SCALE_VALUE;
-        
-        
 
     private readonly rightTimeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private readonly leftTimeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private readonly downTimeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private readonly upTimeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -88,7 +78,7 @@ var xAnalogValue = xAnalogValue
 this.rightTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
-                        if(this.rightTimeElapsedHelper!.isTime())
+                        if(this.rightTimeElapsedHelper!.isTimeTNT())
                         
                                     {
                                     collidableDestroyableDamageableLayer!.right();
@@ -107,7 +97,7 @@ var xAnalogValue = xAnalogValue
 this.leftTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 
-                        if(this.leftTimeElapsedHelper!.isTime())
+                        if(this.leftTimeElapsedHelper!.isTimeTNT())
                         
                                     {
                                     collidableDestroyableDamageableLayer!.left();
@@ -126,7 +116,7 @@ var xAnalogValue = xAnalogValue
 this.upTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
-                        if(this.upTimeElapsedHelper!.isTime())
+                        if(this.upTimeElapsedHelper!.isTimeTNT())
                         
                                     {
                                     collidableDestroyableDamageableLayer!.up();
@@ -145,7 +135,7 @@ var xAnalogValue = xAnalogValue
 this.downTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 
-                        if(this.downTimeElapsedHelper!.isTime())
+                        if(this.downTimeElapsedHelper!.isTimeTNT())
                         
                                     {
                                     collidableDestroyableDamageableLayer!.down();

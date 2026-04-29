@@ -94,12 +94,8 @@ export class OrderStatusEmail
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
@@ -119,8 +115,6 @@ this.orderHistory= orderHistory;
     
 
     var storeName: string = orderHistory!.getStoreName()!;
-        
-        
 ;
     
 this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
@@ -156,56 +150,38 @@ this.notifyUser();
                                 
 
     var adminEmailSubject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";
-        
-        
 ;
     
 
     var adminEmailTextBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();
-        
-        
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, adminEmailSubject, adminEmailTextBody);
 ;
     
 
     var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-        
-        
 ;
     
 
     var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData)!;
-        
-        
 ;
     
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(userEmailEventNameData, this.abeClientInformation, this.storeFrontInterface)!;
-        
-        
 ;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, storeAdminEmailInfo);
@@ -246,38 +222,26 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
                                 
 
     var subject: string = "Order " +this.orderHistory!.getStatus() +" Attempt";
-        
-        
 ;
     
 
     var textBody: string = "Order attempt: " +this.orderHistory!.getId() +" Preprocessing by: " +this.user.getUserName();
-        
-        
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.storeFrontInterface, subject, textBody) as BasicEmailInfo;
-        
-        
+    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.storeFrontInterface, subject, textBody);
 ;
     
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-        
-        
 ;
     
 
     var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.getInstance(this.orderHistory!.getStatus())!;
-        
-        
 ;
     
 
     var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, userEmailEventNameData, this.user)!;
-        
-        
 ;
     
 userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
@@ -298,7 +262,8 @@ userEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, emailInfo);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

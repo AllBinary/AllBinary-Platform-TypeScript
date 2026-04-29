@@ -302,87 +302,47 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
         
 
     readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 
     readonly features: Features = Features.getInstance()!;
-        
-        
 
     readonly midletStrings: MidletStrings = MidletStrings.getInstance()!;
-        
-        
 
     readonly myCommandsFactory: MyCommandsFactory = MyCommandsFactory.getInstance()!;
-        
-        
 
     readonly gameStrings: GameStrings = GameStrings.getInstance()!;
-        
-        
 
     readonly gameAdStateFactory: GameAdStateFactory = GameAdStateFactory.getInstance()!;
-        
-        
 
     private readonly DISPLAYABLE: string = " Displayable: ";
-        
-        
 
     private readonly COMMAND_NAME: string = "command Name/Label: ";
-        
-        
 
     private readonly NO_COMMAND: string = "No Command";
-        
-        
 
     private readonly NO_DISPLAYABLE: string = "No Displayable";
-        
-        
 
     private readonly COMMAND_ACTION: string = new StringMaker().
                             append("GameMidlet::")!.append(midletStrings!.COMMAND_ACTION)!.toString()!;
-        
-        
 
     private readonly PAUSE_APP_BACKGROUND: string = "pauseAppBackground";
-        
-        
 
     private readonly UN_PAUSE_APP_BACKGROUND: string = "unPauseAppBackground";
-        
-        
 
     private readonly aboutCommandProcessor: AboutCommandProcessor = AboutCommandProcessor.getInstance()!;
-        
-        
 
     private readonly webCommandProcessor: WebCommandProcessor = WebCommandProcessor.getInstance()!;
-        
-        
 
     private readonly gameMidletStateFactory: GameMidletStateFactory = GameMidletStateFactory.getInstance()!;
-        
-        
 
     readonly gameStartTimeHelper: TimeDelayHelper = new TimeDelayHelper(240);
-        
-        
 
     private readonly fullScreenUtil: FullScreenUtil = FullScreenUtil.getInstance()!;
-        
-        
 
     private readonly debugInterface: DebugInterface
 
     private allbinaryGameCanvasRunnableInterface: GameCanvasRunnableInterface = NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE;
-        
-        
 
     private thread: Thread = NullThread.NULL_THREAD;
-        
-        
 
     private loadGameForm: CommandForm
 
@@ -396,14 +356,12 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
                             //For kotlin this is before the body of the constructor.
                     
-SmallIntegerSingletonFactory.getInstance()!.init(0x291, 6);
+SmallIntegerSingletonFactory.getInstance()!.initWithRange(0x291, 6);
     
 this.loadGameForm= CommandForm.NULL_COMMAND_FORM;
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 progressCanvas!.init(this);
@@ -429,7 +387,8 @@ this.init();
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -439,7 +398,8 @@ this.init();
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -449,7 +409,8 @@ this.init();
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -462,8 +423,6 @@ this.pauseAppBackground(true);
     
 
     var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-        
-        
 ;
     
 gameAdState!.getAdvertisements()!.stopAll();
@@ -500,8 +459,6 @@ this.unPauseAppBackground(true);
     
 
     var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-        
-        
 ;
     
 gameAdState!.getAdvertisements()!.startAll();
@@ -517,8 +474,6 @@ AllBinarySensorManager.getInstance()!.init();
     
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
-        
-        
 ;
     
 
@@ -539,13 +494,11 @@ AllBinarySensorManager.getInstance()!.init();
 }
 
 
-    destroyApp(unconditional: boolean, isProgress: boolean){
+    destroyAppInRunnable(unconditional: boolean, isProgress: boolean){
 var unconditional = unconditional
 var isProgress = isProgress
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -577,8 +530,6 @@ this.destroyApp(unconditional);
 var unconditional = unconditional
 
     var METHOD_NAME: string = "GameMidlet::destroyApp";
-        
-        
 ;
     
 
@@ -587,8 +538,6 @@ var unconditional = unconditional
     
 
     var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-        
-        
 ;
     
 gameAdState!.getAdvertisements()!.stopAll();
@@ -634,24 +583,18 @@ this.logUtil!.putF(commonStrings!.END, this, METHOD_NAME);
         try {
             
     var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
-        
-        
 ;
     
 gameAdState!.getAdvertisements()!.startAll();
     
 
     var START_APP: string = "startApp";
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, START_APP);
     
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
-        
-        
 ;
     
 
@@ -709,8 +652,6 @@ notifyDestroyed();
         try {
             
     var displayableAsString: string = this.NO_DISPLAYABLE;
-        
-        
 ;
     
 
@@ -726,8 +667,6 @@ notifyDestroyed();
                                 
 
     var label: string = this.NO_COMMAND;
-        
-        
 ;
     
 
@@ -746,8 +685,6 @@ PreLogUtil.put(new StringMaker().
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -758,7 +695,7 @@ PreLogUtil.put(new StringMaker().
                         if(this.getDisplay()!.getCurrent() != this.allbinaryGameCanvasRunnableInterface && this.allbinaryGameCanvasRunnableInterface!.getType() != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE.getType())
                         
                                     {
-                                    this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+                                    this.setDisplay( as Displayablethis.allbinaryGameCanvasRunnableInterface);
     
 
                                     }
@@ -773,14 +710,12 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;
-        
-        
+    var menuListener: MenuListener =  as MenuListenerdisplayable;
 ;
     
 menuListener!.close();
     
-this.setDisplay(this.allbinaryGameCanvasRunnableInterface as Displayable);
+this.setDisplay( as Displayablethis.allbinaryGameCanvasRunnableInterface);
     
 this.unPauseAppBackground(false);
     
@@ -823,7 +758,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
                         
                                     {
                                     
-                        if(this.gameStartTimeHelper!.isTime())
+                        if(this.gameStartTimeHelper!.isTimeTNT())
                         
                                     {
                                     
@@ -872,20 +807,14 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                                     {
                                     
     var inApplicationPurchaseFactory: InApplicationPurchaseFactory = InApplicationPurchaseFactory.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = LockableFeatureFactory.getInstance()!.getList()!;
-        
-        
 ;
     
 
-    var lockableFeature: LockableFeature = list.get(0); as LockableFeature;
-        
-        
+    var lockableFeature: LockableFeature =  as LockableFeaturelist.get(0);;
 ;
     
 
@@ -911,7 +840,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                         
                                     {
                                     
-                        if(this.gameStartTimeHelper!.isTime())
+                        if(this.gameStartTimeHelper!.isTimeTNT())
                         
                                     {
                                     
@@ -919,9 +848,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;
-        
-        
+    var menuListener: MenuListener =  as MenuListenerdisplayable;
 ;
     
 menuListener!.close();
@@ -977,9 +904,7 @@ this.setDisplay(displayable);
                                     this.pauseAppBackground(false);
     
 
-    var menuListener: MenuListener = displayable as MenuListener;
-        
-        
+    var menuListener: MenuListener =  as MenuListenerdisplayable;
 ;
     
 menuListener!.open();
@@ -996,9 +921,7 @@ this.setDisplay(displayable);
                                     this.debugInterface!.start();
     
 
-    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.allbinaryGameCanvasRunnableInterface;
 ;
     
 gameCanvas!.addCommand(gameCommandsFactory!.STOP_TRACE);
@@ -1019,9 +942,7 @@ this.debugInterface!.stop();
 this.unPauseAppBackground(false);
     
 
-    var gameCanvas: AllBinaryGameCanvas = this.allbinaryGameCanvasRunnableInterface as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.allbinaryGameCanvasRunnableInterface;
 ;
     
 gameCanvas!.addCommand(gameCommandsFactory!.START_TRACE);
@@ -1037,15 +958,13 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                                     {
                                     
     var tempDisplayable: Displayable = displayable;
-        
-        
 ;
     
 
                         if(tempDisplayable is GameOptionsForm)
                         
                                     {
-                                    GameFeatureFormUtil.getInstance()!.setDefault(tempDisplayable as CommandForm);
+                                    GameFeatureFormUtil.getInstance()!.setDefault( as CommandFormtempDisplayable);
     
 
                                     }
@@ -1059,8 +978,6 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                                     {
                                     
     var tempDisplayable: Displayable = displayable;
-        
-        
 ;
     
 
@@ -1068,9 +985,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
-        
-        
+    var gameInputMappingCanvas: GameInputMappingCanvas =  as GameInputMappingCanvastempDisplayable;
 ;
     
 gameInputMappingCanvas!.update();
@@ -1089,8 +1004,6 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                                     {
                                     
     var tempDisplayable: Displayable = displayable;
-        
-        
 ;
     
 
@@ -1098,9 +1011,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var highScoresCanvas: HighScoresCanvas = tempDisplayable as HighScoresCanvas;
-        
-        
+    var highScoresCanvas: HighScoresCanvas =  as HighScoresCanvastempDisplayable;
 ;
     
 highScoresCanvas!.updateCommand(command);
@@ -1125,9 +1036,7 @@ highScoresCanvas!.updateCommand(command);
                         
                                     {
                                     
-    var menuListener: MenuListener = displayable as MenuListener;
-        
-        
+    var menuListener: MenuListener =  as MenuListenerdisplayable;
 ;
     
 menuListener!.close();
@@ -1161,8 +1070,6 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                                     {
                                     
     var tempDisplayable: Displayable = displayable;
-        
-        
 ;
     
 
@@ -1170,9 +1077,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
                         
                                     {
                                     
-    var gameInputMappingCanvas: GameInputMappingCanvas = tempDisplayable as GameInputMappingCanvas;
-        
-        
+    var gameInputMappingCanvas: GameInputMappingCanvas =  as GameInputMappingCanvastempDisplayable;
 ;
     
 gameInputMappingCanvas!.setDefault();
@@ -1191,30 +1096,22 @@ gameInputMappingCanvas!.setDefault();
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
-progressCanvas!.addPortion(50, "In Game Options");
+progressCanvas!.addNormalPortion(50, "In Game Options");
     
 
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
-        
-        
 ;
     
 
     var inGameOptionsFormFactory: InGameOptionsFormFactory = InGameOptionsFormFactory.getInstance()!;
-        
-        
 ;
     
 inGameOptionsFormFactory!.init(this, new InGameFeatures(), "Options In Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor());
     
 
     var inGameOptionsForm: CommandForm = inGameOptionsFormFactory!.get()!;
-        
-        
 ;
     
 inGameOptionsForm!.setItemStateListener(this.allbinaryGameCanvasRunnableInterface);
@@ -1229,9 +1126,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get(); as InGameOptionsForm;
-        
-        
+    var inGameOptionsForm: InGameOptionsForm =  as InGameOptionsFormInGameOptionsFormFactory.getInstance()!.get();;
 ;
     
 GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
@@ -1249,8 +1144,6 @@ this.stopAll();
     
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-        
-        
 ;
     
 this.isFullScreen= this.features.isFeature(mainFeatureFactory!.FULL_SCREEN);
@@ -1274,8 +1167,6 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Close isFullScreen/change: ");
@@ -1312,8 +1203,6 @@ AllBinaryMediaManager.setMuted(false);
     
 
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
-        
-        
 ;
     
 keyValuePersistance!.clear();
@@ -1326,8 +1215,6 @@ keyValuePersistance!.loadAll(abeClientInformation);
                                     {
                                     
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
-        
-        
 ;
     
 this.setLoadGameForm(new LoadGameForm(this, "Load Game", layerManager!.getBackgroundBasicColor(), layerManager!.getForegroundBasicColor()));
@@ -1352,8 +1239,6 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
                                     {
                                     
     var index: number = this.getLoadGameForm()!.getSelectedId()!;
-        
-        
 ;
     
 
@@ -1362,16 +1247,12 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getLoadGameFo
                                     {
                                     
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
-        
-        
 ;
     
 this.setStartStateHashtable(keyValuePersistance!.get(index));
     
 
     var menuListener: MenuListener = this.getLoadGameForm()!;
-        
-        
 ;
     
 menuListener!.close();
@@ -1394,8 +1275,6 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMA
                                     {
                                     
     var index: number = this.getLoadGameForm()!.getSelectedText()!;
-        
-        
 ;
     
 
@@ -1404,15 +1283,13 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, COMMA
                                     {
                                     
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
-        
-        
 ;
     
 keyValuePersistance!.delete(abeClientInformation, index);
     
 keyValuePersistance!.clear();
     
-keyValuePersistance!.loadAll(abeClientInformation, 1);
+keyValuePersistance!.loadAllSize(abeClientInformation, 1);
     
 this.getLoadGameForm()!.update();
     
@@ -1428,8 +1305,6 @@ this.getLoadGameForm()!.update();
                                     {
                                     
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
-        
-        
 ;
     
 this.pauseAppBackground(false);
@@ -1452,9 +1327,7 @@ this.unPauseAppBackground(false);
                         
                                     {
                                     
-    var menuListener: HighScoreTextBox = displayable as HighScoreTextBox;
-        
-        
+    var menuListener: HighScoreTextBox =  as HighScoreTextBoxdisplayable;
 ;
     
 menuListener!.submitted= true;
@@ -1493,8 +1366,6 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
                                     {
                                     
     var virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
-        
-        
 ;
     
 virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
@@ -1508,14 +1379,10 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                                     {
                                     
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
-        
-        
 ;
     
 
@@ -1561,20 +1428,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION,
     updateFullScreen(){
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var isFullScreen: boolean = this.features.isFeature(mainFeatureFactory!.FULL_SCREEN)!;
-        
-        
 ;
     
 
     var displayable: Displayable = this.getDisplay()!.getCurrent()!;
-        
-        
 ;
     
 
@@ -1582,9 +1443,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION,
                         
                                     {
                                     
-    var canvas: Canvas = displayable as Canvas;
-        
-        
+    var canvas: Canvas =  as Canvasdisplayable;
 ;
     
 canvas.setFullScreenMode(isFullScreen);
@@ -1644,7 +1503,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -1654,7 +1514,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -1663,11 +1524,9 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public startGameCanvasRunnableInterface(){
 
     var threadFactoryUtil: ThreadFactoryUtil = ThreadFactoryUtil.getInstance()!;
-        
-        
 ;
     
-this.thread= threadFactoryUtil!.getInstance(this.allbinaryGameCanvasRunnableInterface);
+this.thread= threadFactoryUtil!.getInstanceGameCanvasRunnable(this.allbinaryGameCanvasRunnableInterface);
     
 this.logUtil!.putF(new StringMaker().
                             append("Thread Priority: ")!.appendint(this.thread.getPriority())!.toString(), this, "startGameCanvasRunnableInterface");
@@ -1692,8 +1551,6 @@ GameEventHandlerUtil.removeAllListeners();
     
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
-        
-        
 ;
     
 
@@ -1717,21 +1574,19 @@ ThreadUtil.getInstance()!.join(this.thread);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 
                         if(this.features.isFeature(MainFeatureFactory.getInstance()!.LOAD_ALL))
                         
                                     {
-                                    progressCanvas!.addPortion(50, "Stopped Game Runnable");
+                                    progressCanvas!.addNormalPortion(50, "Stopped Game Runnable");
     
 
                                     }
                                 
                         else {
-                            progressCanvas!.addPortion(50, "Stopped Main Runnable");
+                            progressCanvas!.addNormalPortion(50, "Stopped Main Runnable");
     
 
                         }
@@ -1761,8 +1616,6 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
     createGameLayerManager(): AllBinaryGameLayerManager{
 
     var gameInfo: GameInfo = new GameInfo(GameTypeFactory.getInstance()!.SINGLE_PLAYER, GameMode.SERVER, PlayerTypesFactory.getInstance()!.PLAYER_TYPE_ONE, 1, 1);
-        
-        
 ;
     
 
@@ -1777,8 +1630,6 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
     getGameOptionsForm(): CommandForm{
 
     var layerManager: AllBinaryGameLayerManager = this.createGameLayerManager()!;
-        
-        
 ;
     
 
@@ -1796,9 +1647,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.SAVE);
     
 
-    var hashtable: Hashtable<any, any> = this.getCurrentStateHashtable()!;
-        
-        
+    var hashtable: Hashtable = this.getCurrentStateHashtable()!;
 ;
     
 GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
@@ -1808,13 +1657,11 @@ GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): Hashtable{
 this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
     
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var hashtable: Hashtable = new Hashtable();
 ;
     
 
@@ -1822,15 +1669,11 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
                         
                                     {
                                     
-    var currentHashtable: Hashtable<any, any> = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
-        
-        
+    var currentHashtable: Hashtable = this.allbinaryGameCanvasRunnableInterface!.getCurrentStateHashtable()!;
 ;
     
 
-    var enumeration: Enumeration<any?> = currentHashtable!.keys()!;
-        
-        
+    var enumeration: Enumeration = currentHashtable!.keys()!;
 ;
     
 
@@ -1870,7 +1713,7 @@ this.loadGameForm= loadGameForm;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loadGameForm as LoadGameForm;
+                        return  as LoadGameFormthis.loadGameForm;
     
 }
 
@@ -1893,8 +1736,6 @@ this.resized= resized;
 
 
     private startedBefore: boolean = false;
-        
-        
 
     public isDemoLoading(): boolean{
 
@@ -1912,8 +1753,6 @@ this.resized= resized;
                                 
 
     var displayable: Displayable = this.getDisplay()!.getCurrent()!;
-        
-        
 ;
     
 
@@ -1921,9 +1760,7 @@ this.resized= resized;
                         
                                     {
                                     
-    var demoCanvas: DemoCanvas = displayable as DemoCanvas;
-        
-        
+    var demoCanvas: DemoCanvas =  as DemoCanvasdisplayable;
 ;
     
 

@@ -64,8 +64,6 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
         
 
     private static readonly instance: LogFormatUtil = new LogFormatUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogFormatUtil{
 
@@ -78,40 +76,22 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
     private readonly timeStampUtil: TimeStampUtil = TimeStampUtil.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly LOG_ERROR: string = "\nLog-Error: ";
-        
-        
 
     private readonly EMPTY: string = "Empty";
-        
-        
 
     private readonly STACK_TRACE: string = "\nStack Trace: ";
-        
-        
 
     private readonly TIME: string = "Time: ";
-        
-        
 
     private readonly CLASS_NAME: string = this.commonSeps!.SPACE;
-        
-        
 
     private readonly FUNCTION_CALL: string = CommonLabels.getInstance()!.COLON_SEP;
-        
-        
 
     private readonly SPECIAL_MESSAGE: string = "> ";
-        
-        
 private constructor (){
 
             super();
@@ -125,8 +105,6 @@ private constructor (){
     //var exception = exception
 
     var stringBuffer: StringMaker = getF(className, functionName)!;
-        
-        
 ;
     
 stringBuffer!.append(this.getO(exception));
@@ -152,8 +130,6 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
     //var specialMessage = specialMessage
 
     var stringBuffer: StringMaker = getF(className, functionName)!;
-        
-        
 ;
     
 stringBuffer!.append(this.SPECIAL_MESSAGE);
@@ -176,8 +152,6 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
     //var functionName = functionName
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.TIME);
@@ -202,16 +176,10 @@ stringBuffer!.append(functionName);
 
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private readonly exceptionUtil: ExceptionUtil = ExceptionUtil.getInstance()!;
-        
-        
 
     private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 
     /*actual*/ public getO(exception: any = {}): string{
     //var exception = exception
@@ -221,16 +189,12 @@ stringBuffer!.append(functionName);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.LOG_ERROR);
     
 
     var exceptionAsString: string = exception.toString()!;
-        
-        
 ;
     
 
@@ -256,7 +220,7 @@ stringBuffer!.append(this.STACK_TRACE);
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace( as Errorexception));
     
 
                                     }

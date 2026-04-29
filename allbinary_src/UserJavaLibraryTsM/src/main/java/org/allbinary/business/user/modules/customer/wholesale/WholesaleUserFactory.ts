@@ -46,6 +46,8 @@ import { UserInterface } from "../../../../../../../org/allbinary/business/user/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WholesaleUser } from "./WholesaleUser.js";
+
 export class WholesaleUserFactory
             extends Object
          implements UserFactoryInterface {
@@ -70,7 +72,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<any, any>): UserInterface{
+    public getInstance(hashMap: HashMap): UserInterface{
 var hashMap = hashMap
 
 

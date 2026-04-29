@@ -76,23 +76,19 @@ export class QuoteRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private storeFrontInterface: StoreFrontInterface
 
     private quoteRequest: QuoteRequest
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest =  as HttpServletRequestpageContext!.getRequest();;
 ;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
@@ -100,9 +96,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -144,16 +138,12 @@ this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), reques
         try {
             
     var values: Vector = this.quoteRequest!.toVector()!;
-        
-        
 ;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert(values);
     
 
     var success: string = "New QuoteRequest Successfully added to the QuoteRequest Table";
-        
-        
 ;
     
 
@@ -177,8 +167,6 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
             {
 
     var error: string = "Failed to add QuoteRequest";
-        
-        
 ;
     
 
@@ -205,17 +193,13 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.insert
 
         try {
             
-    var values: HashMap<any, any> = this.quoteRequest!.toHashMap()!;
-        
-        
+    var values: HashMap = this.quoteRequest!.toHashMap()!;
 ;
     
 QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update(this.quoteRequest!.getUserName(), values);
     
 
     var success: string = "New QuoteRequest Successfully updated";
-        
-        
 ;
     
 
@@ -239,8 +223,6 @@ QuoteRequestEntityFactory.getInstance()!.getQuoteRequestEntityInstance()!.update
             {
 
     var error: string = "Failed to update QuoteRequest";
-        
-        
 ;
     
 

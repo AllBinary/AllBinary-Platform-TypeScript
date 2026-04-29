@@ -114,8 +114,6 @@ export class CurrentDisplayableFactory
         
 
     private static readonly instance: CurrentDisplayableFactory = new CurrentDisplayableFactory();
-        
-        
 
     public static getInstance(): CurrentDisplayableFactory{
 
@@ -128,60 +126,32 @@ export class CurrentDisplayableFactory
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private readonly SET_DISPLAYABLE: string = "setDisplayable";
-        
-        
 
     private readonly SET_RUNNABLE: string = "setRunnable";
-        
-        
 
     private readonly CLEAR_RUNNABLE: string = "clearRunnable";
-        
-        
 
     private readonly SET_USED_RUNNABLE: string = "setUsedRunnable";
-        
-        
 
     private readonly RUNNABLE: string = "Runnable: ";
-        
-        
 
     private readonly RUNNABLE_WAS_ALREADY_IN_USE: string = "Runnable was already in use: ";
-        
-        
 
     public readonly DEFAULT_CHILD_NAME_LIST: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private displayable: Displayable = NullDisplayable.getInstance()!;
-        
-        
 
     private openGlReadydisplayable: Displayable = NullDisplayable.getInstance()!;
-        
-        
 
     private runnable: GameRunnable = NullWaitGameRunnable.getInstance()!;
-        
-        
 
     private usedRunnable: GameRunnable = NullWaitGameRunnable.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -205,7 +175,7 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
                         
                                     {
                                     
-                        if(displayable.hasChild(this.displayable as MyCanvas))
+                        if(displayable.hasChild( as MyCanvasthis.displayable))
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
@@ -301,20 +271,14 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
         {
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringMaker!.append(this.stringUtil!.toString(this.openGlReadydisplayable));

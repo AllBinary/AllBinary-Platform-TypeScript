@@ -64,9 +64,9 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { GenericProfileActionData } from "./GenericProfileActionData.js";
-
 import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
+
+import { GenericProfileActionData } from "./GenericProfileActionData.js";
 
 export class GenericProfileAction
             extends Object
@@ -74,8 +74,6 @@ export class GenericProfileAction
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string
 
@@ -89,8 +87,6 @@ public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node
 var node = node
 
     var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -108,7 +104,8 @@ var node = node
                             
 
 
-                            throw new Error("Profile Action Name Node Null")
+                            throw new Error("Profile Action Name Node Null");
+                    
 
                         }
                             
@@ -144,11 +141,9 @@ this.name= name;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(GenericProfileActionData.NAME, this.name);
@@ -170,8 +165,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionData.NAME, this.toHashMap())!;
-        
-        
 ;
     
 node.appendChild(getGenericProfileActionScript()!.toXmlNode(document));

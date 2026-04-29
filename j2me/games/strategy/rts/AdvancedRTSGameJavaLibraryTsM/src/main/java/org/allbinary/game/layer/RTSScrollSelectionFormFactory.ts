@@ -76,45 +76,33 @@ export class RTSScrollSelectionFormFactory
     //var items = items
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var menuX: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
-        
-        
 ;
     
 
     var width: number = displayInfo!.getLastWidth() -(menuX *2);
-        
-        
 ;
     
 
-    var menuRectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.getInstance0(menuX, 16), width, CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
-        
-        
+    var menuRectangle: Rectangle = new Rectangle(PointFactory.getInstance()!.createXY(menuX, 16), width, CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return MultipleScrollSelectionHorizontalForm.create(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);;
+                        return MultipleScrollSelectionHorizontalForm.createForm(formLabel, items, menuRectangle, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, basicColorFactory!.BLACK, basicColorFactory!.WHITE);;
     
 }
 

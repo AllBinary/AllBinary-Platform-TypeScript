@@ -50,8 +50,6 @@ export class GenericViewTag extends TransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private output: string
 

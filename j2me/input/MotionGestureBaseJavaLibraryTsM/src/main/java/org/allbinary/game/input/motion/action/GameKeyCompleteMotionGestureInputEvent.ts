@@ -39,9 +39,6 @@ import { InputToGameKeyMapping } from "../../../../../../org/allbinary/game/inpu
 import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -70,20 +67,12 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
         
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
     private readonly SOURCE_ID: number = gameKeyEventFactory!.MOTION_GESTURE_SOURCE_ID;
-        
-        
 
     private gameKey: GameKey = GameKey.NULL_GAME_KEY;
-        
-        
 
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     private inputToGameKeyMapping: InputToGameKeyMapping
 public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
@@ -119,7 +108,7 @@ this.update();
         try {
             this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
     
-this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()));
+this.setGameKeyEvent(this.gameKeyEventFactory!.getInstanceForInput(this, getGameKey()));
     
 
                 //: 
@@ -127,8 +116,6 @@ this.setGameKeyEvent(this.gameKeyEventFactory!.getInstance(this, getGameKey()));
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);

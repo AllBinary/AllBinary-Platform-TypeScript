@@ -80,8 +80,6 @@ export class InputAutomationConfigurationFactory
     private inputAutomationConfiguration: InputAutomationConfiguration = 
                 null
             ;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -89,26 +87,18 @@ export class InputAutomationConfigurationFactory
     //var abeClientInformation = abeClientInformation
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var INPUT_AUTOMATION_CONFIGURATION: string = "InputAutomationConfiguration";
-        
-        
 ;
     
 
     var file: File = InputAutomationConfiguration.getFile()!;
-        
-        
 ;
     
 
@@ -119,36 +109,26 @@ export class InputAutomationConfigurationFactory
     
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
-        
-        
 ;
     
 
     var unmarshaller: Unmarshaller = jaxbContext!.createUnmarshaller()!;
-        
-        
 ;
     
 
     var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration::class)!;
-        
-        
 ;
     
-inputAutomationConfiguration= root.getValue(); as InputAutomationConfiguration;
+inputAutomationConfiguration=  as InputAutomationConfigurationroot.getValue();;
     
 
     var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
-        
-        
 ;
     
 logUtil!.putF("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
-        
-        
 ;
     
 
@@ -161,8 +141,6 @@ logUtil!.putF("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPU
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
@@ -198,8 +176,6 @@ inputAutomationConfiguration= new InputAutomationConfiguration();
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

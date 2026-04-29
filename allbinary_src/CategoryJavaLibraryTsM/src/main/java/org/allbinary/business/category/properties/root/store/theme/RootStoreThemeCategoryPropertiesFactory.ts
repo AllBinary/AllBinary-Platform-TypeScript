@@ -67,15 +67,13 @@ export class RootStoreThemeCategoryPropertiesFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private categoryPropertiesInterface: CategoryPropertiesInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
         var transformInfoInterface = transformInfoInterface
-this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreThemeCategoryProperties(transformInfoInterface);
     
 }
 
@@ -84,7 +82,7 @@ public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPa
             super();
         var transformInfoInterface = transformInfoInterface
 var abPath = abPath
-this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreThemeCategoryProperties(transformInfoInterface, abPath);
     
 }
 
@@ -93,16 +91,16 @@ public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super();
         var transformInfoInterface = transformInfoInterface
 var node = node
-this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreThemeCategoryProperties(transformInfoInterface, node);
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap){
 
             super();
         var transformInfoInterface = transformInfoInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
+this.categoryPropertiesInterface=  as CategoryPropertiesInterfacenew RootStoreThemeCategoryProperties(transformInfoInterface, categoryPropertiesHashMap);
     
 }
 
@@ -114,7 +112,7 @@ this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transform
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.categoryPropertiesInterface as CategoryPropertiesInterface;
+                        return  as CategoryPropertiesInterfacethis.categoryPropertiesInterface;
     
 
                 //: 
@@ -122,8 +120,6 @@ this.categoryPropertiesInterface= new RootStoreThemeCategoryProperties(transform
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

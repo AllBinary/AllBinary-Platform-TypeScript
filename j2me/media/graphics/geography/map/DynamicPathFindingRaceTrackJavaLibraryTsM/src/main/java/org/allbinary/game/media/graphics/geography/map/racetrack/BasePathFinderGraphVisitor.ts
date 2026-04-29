@@ -107,19 +107,15 @@ var pathList = pathList
 
                         for (
     var index: number = startPathFindingNodeList!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
-        
-        
+    var startPathFindingNode: PathFindingNode =  as PathFindingNodestartPathFindingNodeList!.get(index);;
 ;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);
     
-pathList!.add(0, startPathFindingNode!.geographicMapCellPosition);
+pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
     
 }
 
@@ -158,8 +154,6 @@ var graphPath = graphPath
 var graphPath = graphPath
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

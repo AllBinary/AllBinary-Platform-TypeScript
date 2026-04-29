@@ -81,20 +81,12 @@ export class OwnershipPaintable extends Paintable {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly COPYRIGHT: string = "AllBinary Copyright (c) 2011";
-        
-        
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     private color: number = basicColor!.toInt()!;
-        
-        
 private constructor (){
 
             super();
@@ -102,8 +94,6 @@ private constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
     //var graphics = graphics
@@ -111,44 +101,30 @@ graphics.setColor(this.color);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var halfWidth: number = displayInfo!.getLastHalfWidth()!;
-        
-        
 ;
     
 
     var height: number = displayInfo!.getLastHeight()!;
-        
-        
 ;
     
 
     var font: Font = graphics.getFont()!;
-        
-        
 ;
     
 
     var beginWidth: number = (font.stringWidth(this.COPYRIGHT)>>1);
-        
-        
 ;
     
 
     var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor);

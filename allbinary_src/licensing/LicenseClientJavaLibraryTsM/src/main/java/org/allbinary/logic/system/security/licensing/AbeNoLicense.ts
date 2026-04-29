@@ -58,8 +58,6 @@ export class AbeNoLicense
         
 
     private abeNoLicense: AbeNoLicense = new AbeNoLicense();
-        
-        
 
     public static getInstance(): AbeNoLicense{
 
@@ -72,8 +70,6 @@ export class AbeNoLicense
 
 
     public serverVector: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();

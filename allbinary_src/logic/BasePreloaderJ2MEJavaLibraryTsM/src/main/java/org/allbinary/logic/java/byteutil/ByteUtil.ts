@@ -43,8 +43,6 @@ export class ByteUtil
         
 
     private static readonly instance: ByteUtil = new ByteUtil();
-        
-        
 
     public static getInstance(): ByteUtil{
 
@@ -66,21 +64,15 @@ private constructor (){
     //var mask = mask
 
     var bytes: number[] = new Array(array.length);
-        
-        
 ;
     
 
     var size: number = array.length
                 ;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -92,7 +84,7 @@ private constructor (){
         {
 currentByte= array[index]!;
     
-bytes[index]= (currentByte xor mask).toByte();
+bytes[index]= .toByte()(currentByte xor mask);
     
 index++;
     
@@ -111,27 +103,21 @@ index++;
     //var array = array
 
     var bytes: number[] = new Array(array.length);
-        
-        
 ;
     
 
     var size: number = array.length
                 ;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
         while(index < size)
         {
-bytes[index]= array[index].inv().toByte();
+bytes[index]= .toByte()array[index].inv();
     
 index++;
     
@@ -151,8 +137,6 @@ index++;
     //var index = index
 
     var mask: number = 0;
-        
-        
 ;
     
 
@@ -211,8 +195,6 @@ index++;
 
     var size: number = newByteArray!.length
                 ;
-        
-        
 ;
     
 
@@ -221,8 +203,6 @@ index++;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -283,8 +263,6 @@ stats[1]= 0;
     
 
     var size: number = newSize;
-        
-        
 ;
     
 
@@ -293,8 +271,6 @@ stats[1]= 0;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 

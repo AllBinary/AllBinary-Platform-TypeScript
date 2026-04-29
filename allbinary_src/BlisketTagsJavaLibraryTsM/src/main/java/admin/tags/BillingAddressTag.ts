@@ -64,8 +64,6 @@ export class BillingAddressTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private value: string
 public constructor (){
@@ -93,28 +91,20 @@ this.value= value;
             
     var anyType: any = new BillingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("set", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -130,7 +120,8 @@ this.value= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -138,8 +129,6 @@ this.value= value;
             {
 
     var error: string = "Failed to set billing Address";
-        
-        
 ;
     
 
@@ -170,28 +159,20 @@ this.value= value;
             
     var anyType: any = new BillingAddressHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("setToShippingAddress", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -207,7 +188,8 @@ this.value= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -215,8 +197,6 @@ this.value= value;
             {
 
     var error: string = "Failed to Set Billing address to Shipping Address";
-        
-        
 ;
     
 

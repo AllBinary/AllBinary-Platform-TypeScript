@@ -63,10 +63,8 @@ export class SimpleGeographicMap
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly id: Integer
+    private readonly id: number
 
     private readonly name: string
 
@@ -75,13 +73,9 @@ export class SimpleGeographicMap
     private readonly tiledLayer: AllBinaryTiledLayer
 
     private foregroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
-        
-        
 
     private backgroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
-        
-        
-public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
+public constructor (id: number, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
             //var id = id
@@ -105,7 +99,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 }
 
 
-    public getId(): Integer{
+    public getId(): number{
 
 
 
@@ -140,8 +134,6 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
     private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -149,20 +141,14 @@ this.setForegroundBasicColor(foregroundBasicColor);
     //var cellPosition = cellPosition
 
     var i_column: number = cellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var i_row: number = cellPosition!.getRow()!;
-        
-        
 ;
     
 
     var cellTypeId: number = this.tiledLayer!.getCell(i_column, i_row)!;
-        
-        
 ;
     
 
@@ -178,7 +164,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.geographicMapCellTypeFactory!.getInstance(this.cellTypeIdToGeographicMapCellType[cellTypeId]!);;
+                        return this.geographicMapCellTypeFactory!.get(this.cellTypeIdToGeographicMapCellType[cellTypeId]!);;
     
 }
 

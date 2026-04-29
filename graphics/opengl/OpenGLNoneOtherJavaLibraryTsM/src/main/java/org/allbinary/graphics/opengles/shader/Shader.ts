@@ -52,16 +52,10 @@ export class Shader
         
 
     public shaderName: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public shaderStringList: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     public shaderAsString: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public shaderHandle: number= 0
 

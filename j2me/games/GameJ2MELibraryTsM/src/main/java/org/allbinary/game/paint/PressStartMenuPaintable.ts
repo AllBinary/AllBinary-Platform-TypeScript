@@ -68,26 +68,16 @@ export class PressStartMenuPaintable extends Paintable {
         
 
     private startString: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(1100);
-        
-        
 
     private flash: boolean= false
 
     private readonly PRESS_START: string = "Press Screen To Start";
-        
-        
 
     private readonly KEY_START: string = "Press or Click F2 To Begin";
-        
-        
 
     private readonly MENU_START: string = "Press Start From The Menu To Begin";
-        
-        
 public constructor (){
 
             super();
@@ -119,13 +109,11 @@ public constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(this.timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     
@@ -152,26 +140,18 @@ var graphics = graphics
                                     {
                                     
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.startString)>>1);
-        
-        
 ;
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT>>1);
-        
-        
 ;
     
 graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, anchor);

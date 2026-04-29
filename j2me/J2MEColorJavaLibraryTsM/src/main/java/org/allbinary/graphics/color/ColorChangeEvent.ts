@@ -48,8 +48,6 @@ export class ColorChangeEvent extends AllBinaryEventObject {
         
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 public constructor (anyType: any = {}){
             super(anyType);
                     var anyType = anyType

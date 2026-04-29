@@ -63,28 +63,24 @@ export class OSGIActivatorUtil
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
-OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable<any, any>());
+OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Hashtable());
     
 }
 
 
                 //@Throws(Error::class)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
+    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
     //var properties = properties
 
     var serviceRegistration: ServiceRegistration = bundleContext!.registerService(serviceName, anyType, properties)!;
-        
-        
 ;
     
 
     var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
-        
-        
 ;
     
 serviceReference= bundleContext!.getServiceReference(serviceName);
@@ -96,7 +92,8 @@ serviceReference= bundleContext!.getServiceReference(serviceName);
                                     
 
 
-                            throw new Error("No Such Service Reference")
+                            throw new Error("No Such Service Reference");
+                    
 
                                     }
                                 

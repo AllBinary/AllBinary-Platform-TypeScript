@@ -59,8 +59,6 @@ export class CanvasTrimUtil
         
 
     private static readonly instance: CanvasTrimUtil = new CanvasTrimUtil();
-        
-        
 
     public static getInstance(): CanvasTrimUtil{
 
@@ -73,12 +71,8 @@ export class CanvasTrimUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
                 //@Throws(IOException::class)
             
@@ -91,21 +85,15 @@ export class CanvasTrimUtil
     //var visitor = visitor
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
     var subBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
-        
-        
 ;
     
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -118,8 +106,6 @@ export class CanvasTrimUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;

@@ -51,8 +51,6 @@ export class ImageJ2MEScaleUtil
         
 
     private static readonly instance: ImageJ2MEScaleUtil = new ImageJ2MEScaleUtil();
-        
-        
 
     public static getInstance(): ImageJ2MEScaleUtil{
 
@@ -71,7 +69,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public scale(images: Image[], width: number, height: number): Image[]{
+    public scaleArray(images: Image[], width: number, height: number): Image[]{
 var images = images
 var width = width
 var height = height
@@ -81,17 +79,13 @@ var height = height
 
                         for (
     var index: number = 0;
-        
-        
 index < images.length; index++)
         {
 
     var image: Image = images[index]!;
-        
-        
 ;
     
-images[index]= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth(), height, image.getHeight(), false);
+images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheFactory.getInstance(), image, width /2, image.getWidth(), height, image.getHeight(), false);
     
 }
 
@@ -114,7 +108,7 @@ var height = height
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), image, width, image.getWidth(), height, image.getHeight(), false);;
+                        return ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheFactory.getInstance(), image, width, image.getWidth(), height, image.getHeight(), false);;
     
 }
 

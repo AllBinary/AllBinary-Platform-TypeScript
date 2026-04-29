@@ -49,8 +49,6 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
         
 
     private static readonly instance: CompleteMotionGestureInputToGameMotionGestureInput = new CompleteMotionGestureInputToGameMotionGestureInput();
-        
-        
 
     public static getInstance(): CompleteMotionGestureInputToGameMotionGestureInput{
 
@@ -63,8 +61,6 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public init(){
 PreLogUtil.put("No Touch Button = No Compound Motion Gestures", this, this.commonStrings!.INIT);

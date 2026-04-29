@@ -67,8 +67,6 @@ export class QuoteRequestTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private storeName: string
 public constructor (){
@@ -96,28 +94,20 @@ this.storeName= storeName;
             
     var anyType: any = new QuoteHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("email", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -133,7 +123,8 @@ this.storeName= storeName;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -141,8 +132,6 @@ this.storeName= storeName;
             {
 
     var error: string = "Failed to send QuoteRequest emails";
-        
-        
 ;
     
 

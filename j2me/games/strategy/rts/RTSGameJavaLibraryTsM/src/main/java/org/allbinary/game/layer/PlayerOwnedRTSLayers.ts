@@ -52,14 +52,10 @@ export class PlayerOwnedRTSLayers
         
 
     public readonly rtsLayerList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("All: ");

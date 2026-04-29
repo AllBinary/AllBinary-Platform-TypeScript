@@ -58,8 +58,6 @@ export class FontFamilyValidation extends FontFamilyView implements ValidationIn
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super();
                     
@@ -85,8 +83,6 @@ public constructor (node: Node){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -144,8 +140,6 @@ public constructor (node: Node){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Css Font Family Property Validation Error");

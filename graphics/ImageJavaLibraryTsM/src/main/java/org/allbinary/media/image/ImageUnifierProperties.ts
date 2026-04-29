@@ -46,9 +46,9 @@ export class ImageUnifierProperties
          {
         
 
-    private rows: Integer
+    private rows: number
 
-    private columns: Integer
+    private columns: number
 
     private imageUnifierCell: ImageUnifierCell
 public constructor (){
@@ -77,7 +77,7 @@ public constructor (){
 }
 
 
-    public getRows(): Integer{
+    public getRows(): number{
 
 
 
@@ -87,14 +87,14 @@ public constructor (){
 }
 
 
-    public setRows(rows: Integer){
+    public setRows(rows: number){
 var rows = rows
 this.rows= rows;
     
 }
 
 
-    public getColumns(): Integer{
+    public getColumns(): number{
 
 
 
@@ -104,7 +104,7 @@ this.rows= rows;
 }
 
 
-    public setColumns(columns: Integer){
+    public setColumns(columns: number){
 var columns = columns
 this.columns= columns;
     

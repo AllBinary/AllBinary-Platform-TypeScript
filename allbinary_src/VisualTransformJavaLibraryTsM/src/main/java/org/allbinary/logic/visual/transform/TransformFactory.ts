@@ -84,8 +84,6 @@ export class TransformFactory
         
 
     private static readonly instance: TransformFactory = new TransformFactory();
-        
-        
 
     public static getInstance(): TransformFactory{
 
@@ -98,8 +96,6 @@ export class TransformFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -107,8 +103,6 @@ private constructor (){
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -128,21 +122,15 @@ private constructor (){
                                     }
                                 
 
-    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface = ownerTransformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var ownerTransformInfoHttpInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfaceownerTransformInfoInterface;
 ;
     
 
     var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(viewName, ownerTransformInfoHttpInterface!.getPropertiesHashMap(), ownerTransformInfoHttpInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -154,7 +142,8 @@ private constructor (){
                                     
 
 
-                            throw new Error("No Such View In DB: " +viewName)
+                            throw new Error("No Such View In DB: " +viewName);
+                    
 
                                     }
                                 
@@ -162,8 +151,6 @@ transformInfoInterface!.setChild();
     
 
     var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-        
-        
 ;
     
 
@@ -179,7 +166,7 @@ transformInfoInterface!.setChild();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType as TransformInterface;
+                        return  as TransformInterfaceanyType;
     
 
                 //: 
@@ -197,7 +184,8 @@ transformInfoInterface!.setChild();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -205,7 +193,7 @@ transformInfoInterface!.setChild();
 
                 //@Throws(Error::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap, pageContext: PageContext): TransformInterface{
     //var abeClientInformation = abeClientInformation
     //var propertiesHashMap = propertiesHashMap
     //var pageContext = pageContext
@@ -213,8 +201,6 @@ transformInfoInterface!.setChild();
         try {
             
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
@@ -228,14 +214,10 @@ transformInfoInterface!.setChild();
                                 
 
     var transformInfoEntity: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as String, propertiesHashMap, pageContext)!;
-        
-        
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get( as StringpropertiesHashMap!.get(transformInfoData!.NAME), propertiesHashMap, pageContext)!;
 ;
     
 
@@ -250,15 +232,13 @@ transformInfoInterface!.setChild();
                                     }
                                 
                         else {
-                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoInterface;
+                            transformInfoInterface=  as TransformInfoInterfaceTransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);;
     
 
                         }
                             
 
     var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-        
-        
 ;
     
 
@@ -274,7 +254,7 @@ transformInfoInterface!.setChild();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType as TransformInterface;
+                        return  as TransformInterfaceanyType;
     
 
                 //: 
@@ -286,13 +266,11 @@ transformInfoInterface!.setChild();
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Failed To Get Instance: ");
     
-stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME) as String);
+stringBuffer!.append( as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.NAME));
     
 stringBuffer!.append("->TransformFactory");
     
@@ -304,7 +282,8 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -328,8 +307,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                                 
 
     var anyType: any = TransformInfoObjectFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface)!;
-        
-        
 ;
     
 
@@ -345,7 +322,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType as TransformInterface;
+                        return  as TransformInterfaceanyType;
     
 
                 //: 
@@ -363,7 +340,8 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

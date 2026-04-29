@@ -36,9 +36,6 @@ import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAn
 import { AnimationFactoryImageScaleUtil } from "../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js";
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
-
-    
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -79,7 +76,7 @@ export class BaseImageAnimationFactory
 
                 //@Throws(Error::class)
             
-    public static create(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
+    public static createFactory(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
     //var image = image
     //var sequenceArray = sequenceArray
     //var width = width
@@ -95,8 +92,6 @@ export class BaseImageAnimationFactory
 
 
     readonly animationFactoryImageScaleUtil: AnimationFactoryImageScaleUtil = AnimationFactoryImageScaleUtil.getInstance()!;
-        
-        
 
     private readonly image: Image
 
@@ -107,8 +102,6 @@ export class BaseImageAnimationFactory
     readonly animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor
 
     scaleProperties: ScaleProperties = ScaleProperties.instance;
-        
-        
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
@@ -174,20 +167,14 @@ this.animationFactoryInitializationVisitor!.dy= dy;
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());
@@ -217,9 +204,9 @@ this.scaleProperties= scaleProperties;
                         if(this.scaleProperties!.shouldScale)
                         
                                     {
-                                    this.scaleProperties!.scaleWidth= (this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX);
+                                    this.scaleProperties!.scaleWidth= Math.round(this.animationFactoryInitializationVisitor!.width *this.scaleProperties!.scaleX);
     
-this.scaleProperties!.scaleHeight= (this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY);
+this.scaleProperties!.scaleHeight= Math.round(this.animationFactoryInitializationVisitor!.height *this.scaleProperties!.scaleY);
     
 
                                     }

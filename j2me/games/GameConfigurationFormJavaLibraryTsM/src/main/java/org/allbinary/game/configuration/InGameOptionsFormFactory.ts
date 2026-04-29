@@ -61,8 +61,6 @@ export class InGameOptionsFormFactory
         
 
     private static readonly instance: InGameOptionsFormFactory = new InGameOptionsFormFactory();
-        
-        
 
     public static getInstance(): InGameOptionsFormFactory{
 
@@ -75,12 +73,8 @@ export class InGameOptionsFormFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private SINGLETON: CommandForm = CommandForm.NULL_COMMAND_FORM;
-        
-        
 
     public init(commandListener: CommandListener, initInterface: Init, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 var commandListener = commandListener
@@ -107,8 +101,6 @@ this.SINGLETON= new InGameOptionsForm(commandListener, title, backgrounBasicColo
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);

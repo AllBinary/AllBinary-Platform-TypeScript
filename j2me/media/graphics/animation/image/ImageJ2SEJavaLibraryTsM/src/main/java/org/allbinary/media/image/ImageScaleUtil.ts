@@ -64,8 +64,6 @@ export class ImageScaleUtil
         
 
     private static readonly instance: ImageScaleUtil = new ImageScaleUtil();
-        
-        
 
     public static getInstance(): ImageScaleUtil{
 
@@ -78,16 +76,10 @@ export class ImageScaleUtil
 
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     private readonly imageJ2SEUtil: ImageJ2SEUtil = ImageJ2SEUtil.getInstance()!;
-        
-        
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -96,7 +88,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
+    public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -108,14 +100,14 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
+                        return this.createImage3(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
+    public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -126,26 +118,18 @@ private constructor (){
     //var mutable = mutable
 
     var width: number = originalImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = originalImage!.getHeight()!;
-        
-        
 ;
     
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
-        
-        
 ;
     
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
-        
-        
 ;
     
 
@@ -156,13 +140,13 @@ private constructor (){
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(this.constructor.name.toString()!, (width *scaleX), (height *scaleY));
+                                    image= imageCache!.get(this.constructor.name.toString()!, Math.round(width *scaleX), Math.round(height *scaleY));
     
 
                                     }
                                 
                         else {
-                            image= imageCache!.get("createImage", (width *scaleX), (height *scaleY));
+                            image= imageCache!.get("createImage", Math.round(width *scaleX), Math.round(height *scaleY));
     
 
                         }
@@ -180,7 +164,7 @@ this.scale(originalImage, image, scaleX, scaleY, true);
 
                 //@Throws(Error::class)
             
-    public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
+    public scale2(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
     //var originalImage = originalImage
     //var originalImageArray = originalImageArray
     //var ximageToShowArray = ximageToShowArray
@@ -211,26 +195,18 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
     //var clear = clear
 
     var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
-        
-        
 ;
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(newMaxSizeImage)!;
-        
-        
 ;
     
 
     var at: AffineTransform = AffineTransform.getScaleInstance(scaleX, scaleY)!;
-        
-        
 ;
     
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
-        
-        
 ;
     
 

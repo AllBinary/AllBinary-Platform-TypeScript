@@ -60,8 +60,6 @@ export class GLUtil
         
 
     private static readonly instance: GLUtil = new GLUtil();
-        
-        
 
     public static getInstance(): GLUtil{
 
@@ -74,8 +72,6 @@ export class GLUtil
 
 
     private readonly BYTES_PER_FLOAT: number = 4;
-        
-        
 
     public makeFloatBuffer3(p_a: number, p_b: number, p_c: number): FloatBuffer{
 var p_a = p_a
@@ -83,16 +79,12 @@ var p_b = p_b
 var p_c = p_c
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(3 *BYTES_PER_FLOAT)!;
-        
-        
 ;
     
 b.order(ByteOrder.nativeOrder());
     
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
-        
-        
 ;
     
 buffer.put(p_a);
@@ -119,16 +111,12 @@ var p_c = p_c
 var p_d = p_d
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(4 *BYTES_PER_FLOAT)!;
-        
-        
 ;
     
 b.order(ByteOrder.nativeOrder());
     
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
-        
-        
 ;
     
 buffer.put(p_a);
@@ -154,16 +142,12 @@ this.position(buffer, 0);
     //var byteBuffer = byteBuffer
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(byteBuffer!.limit() *BYTES_PER_FLOAT)!;
-        
-        
 ;
     
 b.order(ByteOrder.nativeOrder());
     
 
     var buffer: FloatBuffer = b.asFloatBuffer()!;
-        
-        
 ;
     
 
@@ -215,20 +199,14 @@ this.position(buffer, 0);
     //var pivotV = pivotV
 
     var angleRad: number = Math.toRadians(angleDegrees)!;
-        
-        
 ;
     
 
     var cosA: number = Math.cos(angleRad)!;
-        
-        
 ;
     
 
     var sinA: number = Math.sin(angleRad)!;
-        
-        
 ;
     
 
@@ -237,44 +215,30 @@ this.position(buffer, 0);
 
                         for (
     var i: number = 0;
-        
-        
 i < uvs.length; )
         {
 
     var u: number = uvs[i]!;
-        
-        
 ;
     
 
     var v: number = uvs[i +1]!;
-        
-        
 ;
     
 
     var du: number = u -pivotU;
-        
-        
 ;
     
 
     var dv: number = v -pivotV;
-        
-        
 ;
     
 
     var ru: number = (du *cosA -dv *sinA) +pivotU;
-        
-        
 ;
     
 
     var rv: number = (du *sinA +dv *cosA) +pivotV;
-        
-        
 ;
     
 uvs[i]= ru;

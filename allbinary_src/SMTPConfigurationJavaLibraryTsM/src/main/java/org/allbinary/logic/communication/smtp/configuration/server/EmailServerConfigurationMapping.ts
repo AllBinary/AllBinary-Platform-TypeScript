@@ -65,11 +65,9 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(EmailServerConfigurationData.SERVER, this.emailServerConfigurationInterface!.getSmtpServer());
@@ -104,8 +102,6 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.emailServerConfigurationInterface!.getSmtpServer());

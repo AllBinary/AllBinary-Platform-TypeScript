@@ -67,6 +67,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicArrayListD } from "./BasicArrayListD.js";
+
 import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
 
 import { AbeClientInformationInterfaceFactory } from "./AbeClientInformationInterfaceFactory.js";
@@ -82,8 +84,6 @@ var args = args
         try {
             
     var licensingTest: LicenseClientAndServerTest = new LicenseClientAndServerTest(args);
-        
-        
 ;
     
 licensingTest!.test();
@@ -94,8 +94,6 @@ licensingTest!.test();
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
@@ -106,12 +104,8 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private vector: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (options: string[]){
 
             super();
@@ -124,8 +118,6 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
 
                         for (
     var index: number = 1;
-        
-        
 index < options.length; index++)
         {
 this.vector.add(options[index]!);
@@ -138,20 +130,14 @@ this.vector.add(options[index]!);
                                     {
                                     
     var file: File = new File(PrintLicenseInitInfo.PATH +"testlicenseservers.txt");
-        
-        
 ;
     
 
     var reader: FileReader = new FileReader(file);
-        
-        
 ;
     
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
-        
-        
 ;
     
 
@@ -159,8 +145,6 @@ this.vector.add(options[index]!);
         {
 
     var line: string = lineNumberReader!.readLine()!;
-        
-        
 ;
     
 
@@ -193,46 +177,32 @@ this.vector.add(options[index]!);
     public test(){
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
         try {
             
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var TESTING: string = "Testing with new licence:<br/>";
-        
-        
 ;
     
 
     var PROCESSING: string = "Processing: <br/>";
-        
-        
 ;
     
 
     var END: string = "<br/>End<br/>";
-        
-        
 ;
     
 
     var RESULT: string = "Test Result: ";
-        
-        
 ;
     
 
     var size: number = this.vector.size()!;
-        
-        
 ;
     
 
@@ -241,24 +211,18 @@ this.vector.add(options[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index); as String;
-        
-        
+    var serverName: string =  as Stringthis.vector.get(index);;
 ;
     
 
         try {
             
     var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
-        
-        
 ;
     
 licenseInitInfo!.addServer(serverName);
@@ -267,21 +231,15 @@ LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 
     var abeClientInformation: AbeClientInformationInterface = AbeClientInformationInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 
     var xmlRpcAbeLicenseClient: XmlRpcAbeLicenseRetrievalClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
-        
-        
 ;
     
 
-    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null); as AbeLicenseInterface;
-        
-        
+    var abeLicenseInterface: AbeLicenseInterface =  as AbeLicenseInterfacexmlRpcAbeLicenseClient!.get(
+                            null);;
 ;
     
 

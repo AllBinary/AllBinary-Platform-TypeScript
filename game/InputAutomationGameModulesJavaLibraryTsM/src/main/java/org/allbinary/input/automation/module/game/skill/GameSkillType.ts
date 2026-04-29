@@ -43,28 +43,16 @@ export class GameSkillType
         
 
     public MANA: GameSkillType = new GameSkillType("Mana");
-        
-        
 
     public REPLENISH: GameSkillType = new GameSkillType("Replenish");
-        
-        
 
     public TIMED: GameSkillType = new GameSkillType("Timed");
-        
-        
 
     public ATTACK: GameSkillType = new GameSkillType("Attack");
-        
-        
 
     public TRANSPORT: GameSkillType = new GameSkillType("Transport");
-        
-        
 
     private readonly SPELL_GAME_SKILL_TYPE: string = "SpellGameSkillType: ";
-        
-        
 
     private name: string
 private constructor (name: string){

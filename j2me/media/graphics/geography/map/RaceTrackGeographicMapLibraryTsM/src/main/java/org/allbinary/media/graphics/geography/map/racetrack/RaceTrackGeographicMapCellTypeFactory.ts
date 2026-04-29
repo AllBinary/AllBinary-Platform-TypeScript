@@ -43,14 +43,14 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RaceTrackGeographicMapCellType } from "./RaceTrackGeographicMapCellType.js";
+
 import { RaceTrackGeographicMapCellTypes } from "./RaceTrackGeographicMapCellTypes.js";
 
 export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
 
     private static readonly instance: RaceTrackGeographicMapCellTypeFactory = new RaceTrackGeographicMapCellTypeFactory();
-        
-        
 
     public static getInstance(): RaceTrackGeographicMapCellTypeFactory{
 
@@ -63,12 +63,8 @@ export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellType
 
 
     public EMPTY_CELL_TYPE: GeographicMapCellType = new GeographicMapCellType(0,  -1);
-        
-        
 
     public EASY_CELL_TYPE: GeographicMapCellType = EMPTY_CELL_TYPE;
-        
-        
 
     public readonly BOTTOM_LEFT_TURN_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
 
@@ -87,15 +83,11 @@ export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellType
     public readonly DEFAULT_FINISH_LINE_ROAD_CELL_TYPE: RaceTrackGeographicMapCellType
 
     public FINISH_LINE_ROAD_CELL_TYPE: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
-        
-        
 public constructor (){
 
             super();
         
     var raceTrackGeographicMapCellTypes: RaceTrackGeographicMapCellTypes = RaceTrackGeographicMapCellTypes.getInstance()!;
-        
-        
 ;
     
 this.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE= raceTrackGeographicMapCellTypes!.BOTTOM_LEFT_TURN_ROAD_CELL_TYPE;

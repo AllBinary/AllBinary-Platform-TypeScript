@@ -46,6 +46,8 @@ import { PathFinderGraphVisitorBase } from "../../../../../../../../org/allbinar
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
+
 export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorFactoryBase {
         
 

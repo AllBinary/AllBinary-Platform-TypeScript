@@ -86,12 +86,8 @@ export class TestInputForMotionRectanglesResultsWorker
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private index: number= 0
 
@@ -127,7 +123,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
+this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEventallBinaryEventObject);
     
 }
 
@@ -160,22 +156,16 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0); as MotionRectangles;
-        
-        
+    var motionRectangles: MotionRectangles =  as MotionRectanglesthis.getMotionRectanglesVector()!.get(0);;
 ;
     
 
     var motionRectangleVector: Vector = motionRectangles!.getVector()!;
-        
-        
 ;
     
 
@@ -183,28 +173,20 @@ timeHelper!.setStartTime();
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0); as Rectangle;
-        
-        
+    var rectangle: Rectangle =  as RectanglemotionRectangleVector!.get(0);;
 ;
     
 
-    var robotHashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;
-        
-        
+    var robotHashtable: Hashtable = InputRobotFactory.getInstance()!.get()!;
 ;
     
 
     var inputTypeNameArray: any[] = robotHashtable!.keys.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = inputTypeNameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -213,20 +195,14 @@ timeHelper!.setStartTime();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as String;
-        
-        
+    var inputTypeNameString: string =  as StringinputTypeNameArray[index]!;
 ;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object); as InputRobotInterface;
-        
-        
+    var inputRobotInterface: InputRobotInterface =  as InputRobotInterfacerobotHashtable!.get(inputTypeNameString as Object);;
 ;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);
@@ -295,7 +271,7 @@ this.index++;
     
 this.getMotionRectanglesVector()!.remove(motionRectangles);
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     

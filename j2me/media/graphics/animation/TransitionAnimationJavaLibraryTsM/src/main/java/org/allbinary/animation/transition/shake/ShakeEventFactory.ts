@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ShakeEvent } from "./ShakeEvent.js";
+
 export class ShakeEventFactory
             extends Object
          {
         
 
     private static readonly instance: ShakeEventFactory = new ShakeEventFactory();
-        
-        
 
     public static getInstance(): ShakeEventFactory{
 
@@ -57,20 +57,12 @@ export class ShakeEventFactory
 
 
     public MICRO: ShakeEvent = new ShakeEvent();
-        
-        
 
     public SMALL: ShakeEvent = new ShakeEvent();
-        
-        
 
     public MEDIUM: ShakeEvent = new ShakeEvent();
-        
-        
 
     public LARGE: ShakeEvent = new ShakeEvent();
-        
-        
 
     public init(){
 }

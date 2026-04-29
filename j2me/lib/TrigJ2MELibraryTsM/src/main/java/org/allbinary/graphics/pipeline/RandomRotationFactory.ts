@@ -52,8 +52,6 @@ export class RandomRotationFactory
         
 
     private static readonly instance: RandomRotationFactory = new RandomRotationFactory();
-        
-        
 
     public static getInstance(): RandomRotationFactory{
 
@@ -66,27 +64,21 @@ export class RandomRotationFactory
 
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
     private readonly angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
+    public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector
 var howMuch = howMuch
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
-        
-        
 ;
     
 graphicsPipe!.createMatrix();
     
-graphicsPipe!.rotate(this.angleFactory!.getInstance(getNextRandomAngle(howMuch)));
+graphicsPipe!.rotateToAngle(this.angleFactory!.getAt(getNextRandomAngle(howMuch)));
     
 
 

@@ -79,12 +79,8 @@ export class AllBinaryMediaManager
         
 
     private static readonly THIS: string = "AllBinaryMediaManagerAndroid";
-        
-        
 
     private mostUsedTotal: number = 0;
-        
-        
 
     public static isMuted(): boolean{
 
@@ -117,21 +113,17 @@ var aMuted = aMuted
     //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
     
 AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Media Manager");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
 System.gc();
     
@@ -149,14 +141,10 @@ logUtil!.putF(commonString!.END, THIS, commonString!.INIT);
     //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonString: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonString!.START, THIS, "shutdown");
@@ -170,8 +158,6 @@ logUtil!.putF(commonString!.START, THIS, "shutdown");
     
 
     var soundInterfaceArray: Sound[] = soundsFactoryInterface!.getSoundInterfaceArray()!;
-        
-        
 ;
     
 
@@ -192,8 +178,6 @@ logUtil!.putF(commonString!.START, THIS, "shutdown");
 
                         for (
     var i: number = 0;
-        
-        
 i < soundInterfaceArray!.length; i++)
         {
 
@@ -217,7 +201,7 @@ i < soundInterfaceArray!.length; i++)
                         if(player2 is AndroidMediaPlayerWrapper)
                         
                                     {
-                                    androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper;
+                                    androidMediaPlayerWrapper=  as AndroidMediaPlayerWrapperplayer2;
     
 MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer());
     
@@ -228,7 +212,8 @@ MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer())
                             
 
 
-                            throw new Error("Unknown Property Player: " +player.constructor.name.toString()!)
+                            throw new Error("Unknown Property Player: " +player.constructor.name.toString()!);
+                    
 
                         }
                             
@@ -265,8 +250,6 @@ mostUsedTotal++;
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -319,7 +302,8 @@ var type = type
 
 
 
-                            throw new MediaException("No Input Stream Player")
+                            throw new MediaException("No Input Stream Player");
+                    
 }
 
 
@@ -333,7 +317,8 @@ var volume = volume
 
 
 
-                            throw new MediaException("No Tone Player")
+                            throw new MediaException("No Tone Player");
+                    
 }
 
 

@@ -53,6 +53,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 
+import { VectorRotationAnimation } from "./VectorRotationAnimation.js";
+
 import { Animation } from "./Animation.js";
 
 export class VectorRotationAnimationInterfaceFactory
@@ -61,12 +63,8 @@ export class VectorRotationAnimationInterfaceFactory
         
 
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
-        
-        
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     readonly animationBehaviorFactory: AnimationBehaviorFactory
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){

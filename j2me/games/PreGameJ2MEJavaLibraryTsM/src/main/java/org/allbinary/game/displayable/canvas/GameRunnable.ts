@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../../java/lang/Runnable.js";
+        
 import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
 
     
@@ -40,24 +42,16 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
-
 export class GameRunnable
             extends Object
          implements Runnable {
         
 
     public readonly WAIT: number = 240;
-        
-        
 
     public readonly FAST: number = 60;
-        
-        
 
     public wait: number = WAIT;
-        
-        
 public constructor (){
 
             super();

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransactionType } from "./TransactionType.js";
+
 export class TransactionTypeFactory
             extends Object
          {
         
 
     private static readonly instance: TransactionTypeFactory = new TransactionTypeFactory();
-        
-        
 
     public static getInstance(): TransactionTypeFactory{
 
@@ -57,28 +57,16 @@ export class TransactionTypeFactory
 
 
     public readonly SALE: TransactionType = new TransactionType("Sale");
-        
-        
 
     public readonly CREDIT: TransactionType = new TransactionType("Credit");
-        
-        
 
     public readonly AUTHORIZATION: TransactionType = new TransactionType("Authorization");
-        
-        
 
     public readonly DELAYEDCAPTURE: TransactionType = new TransactionType("Delayed Capture");
-        
-        
 
     public readonly VOID: TransactionType = new TransactionType("Void");
-        
-        
 
     public readonly INQUIRY: TransactionType = new TransactionType("Inquiry");
-        
-        
 
 }
                 

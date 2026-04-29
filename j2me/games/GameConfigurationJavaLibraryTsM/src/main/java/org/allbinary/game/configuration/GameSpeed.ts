@@ -45,8 +45,6 @@ export class GameSpeed
         
 
     private static readonly instance: GameSpeed = new GameSpeed();
-        
-        
 
     public static getInstance(): GameSpeed{
 
@@ -61,8 +59,6 @@ export class GameSpeed
     public getSpeed(): number{
 
     var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
-        
-        
 ;
     
 
@@ -77,8 +73,6 @@ export class GameSpeed
     public getDelay(): number{
 
     var speedGameConfiguration: GameConfiguration = GameConfigurationCentral.getInstance()!.SPEED;
-        
-        
 ;
     
 

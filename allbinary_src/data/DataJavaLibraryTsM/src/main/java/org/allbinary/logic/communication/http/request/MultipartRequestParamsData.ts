@@ -43,8 +43,6 @@ export class MultipartRequestParamsData
         
 
     public static readonly HASHMAP: string = "MULTIPART_REQUEST_HASHMAP";
-        
-        
 public constructor (){
 
             super();

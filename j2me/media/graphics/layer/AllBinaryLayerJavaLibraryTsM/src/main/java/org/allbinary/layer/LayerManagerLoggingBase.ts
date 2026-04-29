@@ -53,7 +53,7 @@ export class LayerManagerLoggingBase
 }
 
 
-    public append(layerInterface: AllBinaryLayer, index: number){
+    public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
 }
@@ -64,7 +64,7 @@ export class LayerManagerLoggingBase
 }
 
 
-    public remove(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
+    public removeResult(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var result = result

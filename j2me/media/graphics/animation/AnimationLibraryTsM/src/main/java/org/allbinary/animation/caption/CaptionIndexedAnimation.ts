@@ -122,8 +122,6 @@ this.END_EVENT= new AllBinaryEventObject(this);
     
 
     var timePerFrame: number = this.time /this.getSize();
-        
-        
 ;
     
 this.timeDelayHelper= new TimeDelayHelper(timePerFrame);
@@ -234,13 +232,13 @@ var sequence = sequence
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
-this.animationInterface!.paint(graphics, x +this.captionDx, y +this.captionDy);
+this.animationInterface!.paintXY(graphics, x +this.captionDx, y +this.captionDy);
     
-this.movieIndexedAnimationInterface!.paint(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy);
+this.movieIndexedAnimationInterface!.paintXY(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy);
     
 }
 

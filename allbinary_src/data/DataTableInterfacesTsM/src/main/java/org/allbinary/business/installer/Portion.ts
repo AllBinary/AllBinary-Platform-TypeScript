@@ -47,21 +47,21 @@ export class Portion
          {
         
 
-    private readonly current: Integer
+    private readonly current: number
 
-    private readonly total: Integer
-public constructor (hashMap: HashMap<any, any>){
+    private readonly total: number
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
-this.current= hashMap!.get("current"); as Integer;
+this.current=  as IntegerhashMap!.get("current");;
     
-this.total= hashMap!.get("total"); as Integer;
+this.total=  as IntegerhashMap!.get("total");;
     
 }
 
 
-    public getCurrent(): Integer{
+    public getCurrent(): number{
 
 
 
@@ -71,7 +71,7 @@ this.total= hashMap!.get("total"); as Integer;
 }
 
 
-    public getTotal(): Integer{
+    public getTotal(): number{
 
 
 

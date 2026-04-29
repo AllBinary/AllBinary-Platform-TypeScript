@@ -79,16 +79,10 @@ export class CustomUriTransformView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoInterface
 
@@ -114,8 +108,6 @@ this.setTransformDocumentInterface(TransformDocumentFactory.getInstance());
 
 
     public NO_TYPE: number = 0;
-        
-        
 
     public getTypeId(): number{
 
@@ -176,14 +168,10 @@ this.transformDocumentInterface= transformDocumentInterface;
     public getDoc(): Document{
 
     var document: Document = this.getTransformInfoInterface()!.getDataDocument()!;
-        
-        
 ;
     
 
     var dataNode: Node = this.getTransformDocumentInterface()!.getDoc()!.importNode(document.getFirstChild(), true)!;
-        
-        
 ;
     
 
@@ -213,15 +201,11 @@ this.transformDocumentInterface= transformDocumentInterface;
         try {
             
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
-        
-        
 ;
     
 
     var result: string = new TransformInfoCustomUriTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -246,7 +230,8 @@ this.transformDocumentInterface= transformDocumentInterface;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

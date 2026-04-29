@@ -60,8 +60,6 @@ export class KeyValueDrawString
     private valueX: number
 
     private value: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (label: string, x: number){
 
             super();

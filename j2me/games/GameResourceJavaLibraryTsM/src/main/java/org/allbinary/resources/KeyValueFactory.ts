@@ -46,8 +46,6 @@ export class KeyValueFactory
         
 
     private static readonly instance: KeyValueFactory = new KeyValueFactory();
-        
-        
 
     public static getInstance(): KeyValueFactory{
 
@@ -59,16 +57,12 @@ export class KeyValueFactory
 }
 
 
-    public readonly MAP: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    public readonly MAP: Hashtable = new Hashtable();
 
     public get(key: string): string{
 var key = key
 
-    var value: string = MAP.get(key as Object); as String;
-        
-        
+    var value: string =  as StringMAP.get( as Objectkey);;
 ;
     
 

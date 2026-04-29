@@ -57,8 +57,6 @@ export class CssPropertyView
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private cssProperty: CssProperty
 public constructor (name: string){

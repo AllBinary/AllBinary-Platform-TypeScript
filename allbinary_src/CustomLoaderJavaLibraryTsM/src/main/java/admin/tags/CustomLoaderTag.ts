@@ -65,14 +65,12 @@ export class CustomLoaderTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
     private webappPath: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -101,14 +99,10 @@ this.webappPath= value;
             
     var anyType: any = new CustomLoaderHelperFactory().
                             getInstance(this.propertiesHashMap, pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -116,8 +110,6 @@ this.webappPath= value;
                                                         [
                                                             this.webappPath!.constructor
                                                         ];
-        
-        
 ;
     
 
@@ -125,14 +117,10 @@ this.webappPath= value;
                                                         [
                                                             this.webappPath
                                                         ];
-        
-        
 ;
     
 
     var setMethod: Method = helperClass!.getMethod("setWebappPath", methodParams)!;
-        
-        
 ;
     
 setMethod!.invoke(anyType, methodArgs);
@@ -144,7 +132,8 @@ setMethod!.invoke(anyType, methodArgs);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -184,7 +173,7 @@ setMethod!.invoke(anyType, methodArgs);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)

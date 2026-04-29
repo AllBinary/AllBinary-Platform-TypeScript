@@ -102,12 +102,10 @@ this.pixelDeltaVector= pixelDeltaVector;
 
     public clone(): any{
 
-    var motionRectangle: MotionRectangle = new MotionRectangle(this.getRectangle()!.clone() as Rectangle);
-        
-        
+    var motionRectangle: MotionRectangle = new MotionRectangle( as Rectanglethis.getRectangle()!.clone());
 ;
     
-motionRectangle!.setPixelDeltaVector(this.getPixelDeltaVector()!.clone() as Vector);
+motionRectangle!.setPixelDeltaVector( as Vectorthis.getPixelDeltaVector()!.clone());
     
 
 

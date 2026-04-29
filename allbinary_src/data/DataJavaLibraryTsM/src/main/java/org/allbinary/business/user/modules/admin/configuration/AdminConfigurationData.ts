@@ -43,8 +43,6 @@ export class AdminConfigurationData
         
 
     public static readonly CONTEXTNAME: string = "Admin";
-        
-        
 
 }
                 

@@ -88,8 +88,6 @@ export class InventorySearchProductUtil
         
 
     private static readonly instance: InventorySearchProductUtil = new InventorySearchProductUtil();
-        
-        
 
     public static getInstance(): InventorySearchProductUtil{
 
@@ -102,16 +100,10 @@ export class InventorySearchProductUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly ITEM_NOT_FOUND: string = "Item Not Found.";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -123,14 +115,10 @@ var product = product
         try {
             
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
     var itemInterface: ItemInterface = inventoryEntityInterface!.getItem(product)!;
-        
-        
 ;
     
 
@@ -141,8 +129,6 @@ var product = product
                                     {
                                     
     var viewDocumentInterface: TransformDocumentInterface = TransformStoreDocumentFactory.getInstance(searchRequest)!;
-        
-        
 ;
     
 viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterface, new Vector()).
@@ -150,15 +136,11 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
     
 
     var success: string = DomDocumentHelper.toString(viewDocumentInterface!.getDoc())!;
-        
-        
 ;
     
 
-    var outputStr: string = new StoreTransformer(abeClientInformation, new TransformInfoHttpSearch(searchRequest) as TransformInfoInterface).
+    var outputStr: string = new StoreTransformer(abeClientInformation,  as TransformInfoInterfacenew TransformInfoHttpSearch(searchRequest)).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -196,7 +178,8 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 
 
 
-                            throw new Error("Failed to getProduct")
+                            throw new Error("Failed to getProduct");
+                    
 }
 
 }

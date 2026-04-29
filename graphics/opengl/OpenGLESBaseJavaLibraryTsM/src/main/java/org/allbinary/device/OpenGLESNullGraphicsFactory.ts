@@ -31,8 +31,6 @@ export class OpenGLESNullGraphicsFactory
         
 
     private static readonly instance: OpenGLESGraphics = new OpenGLESGraphics();
-        
-        
 
     public static getInstance(): OpenGLESGraphics{
 

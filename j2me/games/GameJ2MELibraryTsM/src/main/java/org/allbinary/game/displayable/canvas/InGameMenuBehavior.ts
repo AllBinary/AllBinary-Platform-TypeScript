@@ -48,8 +48,6 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
         
 
     private static readonly instance: InGameMenuBehavior = new InGameMenuBehavior();
-        
-        
 
     public static getInstance(): InGameMenuBehavior{
 
@@ -66,7 +64,7 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
     //var displayChangeEvent = displayChangeEvent
-allBinaryGameCanvas!.updateMenu(displayChangeEvent);
+allBinaryGameCanvas!.updateMenuFromEvent(displayChangeEvent);
     
 }
 

@@ -45,8 +45,6 @@ export class PointFactory
         
 
     private static readonly instance: PointFactory = new PointFactory();
-        
-        
 
     public static getInstance(): PointFactory{
 
@@ -58,9 +56,7 @@ export class PointFactory
 }
 
 
-    public ZERO_ZERO: GPoint = this.getInstance(0, 0, 0)!;
-        
-        
+    public ZERO_ZERO: GPoint = this.createXYZ(0, 0, 0)!;
 
     public init(){
 }
@@ -71,7 +67,7 @@ private constructor (){
         }
 
 
-    public getInstance0(x: number, y: number): GPoint{
+    public createXY(x: number, y: number): GPoint{
 var x = x
 var y = y
 
@@ -83,7 +79,7 @@ var y = y
 }
 
 
-    public getInstance(x: number, y: number, z: number): GPoint{
+    public createXYZ(x: number, y: number, z: number): GPoint{
 var x = x
 var y = y
 var z = z

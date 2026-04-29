@@ -52,8 +52,6 @@ export class ColorFromEventUtil
         
 
     private static readonly instance: ColorFromEventUtil = new ColorFromEventUtil();
-        
-        
 
     public static getInstance(): ColorFromEventUtil{
 
@@ -66,31 +64,21 @@ export class ColorFromEventUtil
 
 
     private readonly YELLOW: BasicColor = BasicColorFactory.getInstance()!.YELLOW;
-        
-        
 
     public readonly COLOR_INT: number = YELLOW.toInt()!;
-        
-        
 
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
     //var gameCanvasInterface = gameCanvasInterface
 
     var color: BasicColor = this.YELLOW;
-        
-        
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager(); as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacegameCanvasInterface!.getLayerManager();;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 
@@ -101,8 +89,6 @@ export class ColorFromEventUtil
                                     {
                                     
     var foregroundBasicColor: BasicColor = geographicMapInterface!.getForegroundBasicColor()!;
-        
-        
 ;
     
 color= foregroundBasicColor;

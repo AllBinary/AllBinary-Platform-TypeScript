@@ -42,9 +42,6 @@ import { GameCommandsFactory } from "../../../../../../org/allbinary/game/comman
 import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
-
-    
 import { CanvasStrings } from "../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
 
     
@@ -113,7 +110,7 @@ export class ProgressCanvas extends RunnableCanvas implements PaintableInterface
 
     private readonly backgroundBasicColor: BasicColor
 
-    public readonly GAUGE_PAINTABLE: Paintable = new object: Paintable()
+    public readonly GAUGE_PAINTABLE: Paintable = new Paintable()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -124,47 +121,29 @@ paint2(graphics);
 
                                 }
                             ;
-        
-        
 
     allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
-        
-        
 
     private value: number= 0.0f
 
     private readonly maxValue: number = 100.0f;
-        
-        
 
     readonly gauge: CustomGaugeItem
 
     private readonly TEXT: string = commonStrings!.LOADING;
-        
-        
 
     private text: string = TEXT;
-        
-        
 
     private background: boolean = true;
-        
-        
 
     paintable: PaintableInterface = GAUGE_PAINTABLE;
-        
-        
 
     public inProgress: boolean = false;
-        
-        
 
-    private readonly IN_GAME_PROCESSOR: Processor = new object: Processor()
+    private readonly IN_GAME_PROCESSOR: Processor = new Processor()
                                 {
                                 
     var private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -175,12 +154,8 @@ pathFindingThreadPool!.runAPriorityTask();
 
                                 }
                             ;
-        
-        
 
     public inGameProcessor: Processor = Processor.getInstance()!;
-        
-        
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
                         //var title = title
@@ -192,7 +167,7 @@ pathFindingThreadPool!.runAPriorityTask();
                     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, this.maxValue, 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.roundthis.maxValue, 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 
@@ -249,12 +224,8 @@ this.inProgress= true;
 
 
     private readonly backgroundLabel: string = "Background AI Game Loading...";
-        
-        
 
     private readonly START_BACKGROUND: string = "startBackground";
-        
-        
 
     public startBackground(background: boolean){
 var background = background
@@ -262,8 +233,6 @@ this.logUtil!.putF(commonStrings!.START, this, START_BACKGROUND);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 this.setBackground(background);
@@ -324,19 +293,15 @@ this.inGameProcessor= IN_GAME_PROCESSOR;
 
 
     readonly ADD_PORTION: string = "addPortion";
-        
-        
 
     readonly ADD_EARLY_PORTION: string = "addEarlyPortion";
-        
-        
 
     public addEarlyPortion(value: number, text: string, index: number){
 var value = value
 var text = text
 var index = index
 this.setText(new StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
+                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
     
@@ -348,7 +313,7 @@ var value = value
 var text = text
 var index = index
 this.setText(new StringMaker().
-                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getInstance(index)!.toString())!.toString());
+                            append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
 PreLogUtil.put(this.text, this, ADD_PORTION);
     
@@ -357,7 +322,7 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 }
 
 
-    public addPortion(value: number, text: string){
+    public addNormalPortion(value: number, text: string){
 var value = value
 var text = text
 
@@ -396,8 +361,6 @@ this.paintable.paint(graphics);
 var graphics = graphics
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 graphics.setColor(this.backgroundBasicColor!.toInt());

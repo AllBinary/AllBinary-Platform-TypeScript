@@ -31,8 +31,6 @@ export class NullOpenGLProcessorFactory
         
 
     private static readonly instance: OpenGLProcessor = new OpenGLProcessor();
-        
-        
 
     public static getInstance(): OpenGLProcessor{
 

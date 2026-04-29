@@ -66,14 +66,12 @@ export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFacto
 
                 //@Throws(Error::class)
             
-    public static createDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    public static createFactoryDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
     //var dx = dx
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 oneRowSpriteIndexedAnimationFactory!.initW(dx);
@@ -89,15 +87,13 @@ oneRowSpriteIndexedAnimationFactory!.initW(dx);
 
                 //@Throws(Error::class)
             
-    public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    public static createFactoryDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
     //var dx = dx
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
@@ -113,7 +109,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 
                 //@Throws(Error::class)
             
-    public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    public static createFactoryWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
     //var width = width
     //var height = height
@@ -129,7 +125,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 
                 //@Throws(Error::class)
             
-    public static create(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
+    public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
@@ -142,8 +138,6 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
-        
-        
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
@@ -185,8 +179,6 @@ this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitia
     //var instanceId = instanceId
 
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 

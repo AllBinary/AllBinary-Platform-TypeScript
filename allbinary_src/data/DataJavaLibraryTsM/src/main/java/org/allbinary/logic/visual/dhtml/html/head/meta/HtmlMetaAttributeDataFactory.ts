@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HtmlMetaAttributeData } from "./HtmlMetaAttributeData.js";
+
 export class HtmlMetaAttributeDataFactory
             extends Object
          {
         
 
     private static readonly instance: HtmlMetaAttributeDataFactory = new HtmlMetaAttributeDataFactory();
-        
-        
 
     public static getInstance(): HtmlMetaAttributeDataFactory{
 
@@ -62,16 +62,10 @@ private constructor (){
 
 
     public NAME: HtmlMetaAttributeData = new HtmlMetaAttributeData(0, "HTMLMETA_ATTRIBUTE_NAME");
-        
-        
 
     public HTTP_EQUIV: HtmlMetaAttributeData = new HtmlMetaAttributeData(1, "HTMLMETA_ATTRIBUTE_HTTPEQUIV");
-        
-        
 
     public CONTENT: HtmlMetaAttributeData = new HtmlMetaAttributeData(2, "HTMLMETA_ATTRIBUTE_CONTENT");
-        
-        
 
 }
                 

@@ -76,8 +76,6 @@ export class EditValidationUserView extends UserView implements ValidationCompon
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -88,16 +86,12 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest(); as HttpServletRequest;
-        
-        
+    var httpServletRequest: HttpServletRequest =  as HttpServletRequestthis.getPageContext()!.getRequest();;
 ;
     
 
-    var hashMap: HashMap<any, any> = new RequestParams(httpServletRequest).
+    var hashMap: HashMap = new RequestParams(httpServletRequest).
                             toHashMap()!;
-        
-        
 ;
     
 this.userName= new UserName(hashMap).
@@ -178,8 +172,6 @@ this.userName= new UserName(hashMap).
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

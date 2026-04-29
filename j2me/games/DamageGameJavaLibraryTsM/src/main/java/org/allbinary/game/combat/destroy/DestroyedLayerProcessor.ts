@@ -62,8 +62,6 @@ export class DestroyedLayerProcessor extends BasicLayerProcessor {
         
 
     private DESTROYED_LAYER_PROCESSOR: BasicLayerProcessor = BasicLayerProcessor.NULL_LAYER_PROCESSOR;
-        
-        
 
     public static init(){
 DESTROYED_LAYER_PROCESSOR= new DestroyedLayerProcessor();
@@ -92,26 +90,18 @@ private constructor (){
 var allBinaryLayerManager = allBinaryLayerManager
 
     var list: BasicArrayList = this.getList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
     var destroyedEventHandler: DestroyedEventHandler = DestroyedEventHandler.getInstance()!;
-        
-        
 ;
     
 
     var destroyEventCircularStaticPool: DestroyEventCircularStaticPool = DestroyEventCircularStaticPool.getInstance()!;
-        
-        
 ;
     
 
@@ -128,14 +118,10 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var layerInterfaceCanBeNull: any? = list.objectArray[index];
-        
-        
 ;
     
 
@@ -144,11 +130,11 @@ index < size; index++)
                                 )
                         
                                     {
-                                    layerInterface= layerInterfaceCanBeNull as AllBinaryLayer;
+                                    layerInterface=  as AllBinaryLayerlayerInterfaceCanBeNull;
     
 allBinaryLayerManager!.remove(layerInterface);
     
-destroyedEvent= destroyEventCircularStaticPool!.getInstance(layerInterface);
+destroyedEvent= destroyEventCircularStaticPool!.getInstanceForLayer(layerInterface);
     
 destroyedEventHandler!.fireEvent(destroyedEvent);
     

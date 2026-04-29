@@ -63,8 +63,6 @@ export class ValidatorBase
         
 
     private static readonly instance: ValidatorBase = new ValidatorBase();
-        
-        
 
     public static getInstance(): ValidatorBase{
 
@@ -101,7 +99,7 @@ public constructor (){
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): Hashtable{
 
 
 

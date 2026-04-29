@@ -49,8 +49,6 @@ export class PostGameCommandFactory
         
 
     private static readonly instance: PostGameCommandFactory = new PostGameCommandFactory();
-        
-        
 
     public static getInstance(): PostGameCommandFactory{
 

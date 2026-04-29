@@ -43,18 +43,12 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Exception } from "./Exception.js";
-
 export class GraphicsException extends java.lang.Error {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
-        
-        
 public constructor (msg: string, obj: any = {}, method: string){
             super(msg);
                     var msg = msg

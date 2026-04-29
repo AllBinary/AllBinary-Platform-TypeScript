@@ -72,16 +72,10 @@ export class DbConnectionInfo
     private host: string
 
     private readonly SCHEMA_SEP: string = "://";
-        
-        
 
     private readonly USER_NAME_KEY: string = "?user=";
-        
-        
 
     private readonly PASSWORD_KEY: string = "&password=";
-        
-        
 public constructor (){
 
             super();
@@ -93,8 +87,6 @@ this.updateHost();
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getHost());
@@ -167,8 +159,6 @@ this.url= stringBuffer!.toString();
     updateHost(){
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getSchema());

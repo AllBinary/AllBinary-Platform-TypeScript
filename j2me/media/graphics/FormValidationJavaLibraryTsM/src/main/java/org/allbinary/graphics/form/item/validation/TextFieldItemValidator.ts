@@ -86,26 +86,18 @@ this.allowOnEmpty= allowOnEmpty;
     public isValid(): Boolean{
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 
     var result: Boolean = booleanFactory!.TRUE;
-        
-        
 ;
     
 
     var string: string = this.textFieldItem!.getString()!;
-        
-        
 ;
     
 
     var textLength: number = string.length!;
-        
-        
 ;
     
 
@@ -149,20 +141,14 @@ this.allowOnEmpty= allowOnEmpty;
     public toList(): BasicArrayList{
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var string: string = this.textFieldItem!.getString()!;
-        
-        
 ;
     
 
     var textLength: number = string.length!;
-        
-        
 ;
     
 
@@ -175,14 +161,10 @@ this.allowOnEmpty= allowOnEmpty;
                         else {
                             
     var label: string = this.textFieldItem!.getLabel()!;
-        
-        
 ;
     
 
     var name: string = label.substring(0, label.length -2)!;
-        
-        
 ;
     
 

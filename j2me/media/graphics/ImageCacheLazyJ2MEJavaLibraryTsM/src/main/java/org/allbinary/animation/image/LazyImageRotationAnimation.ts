@@ -97,16 +97,10 @@ export class LazyImageRotationAnimation extends RotationAnimation {
         
 
     private static readonly SET_REAL_ANIMATION: string = "setRealAnimation";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public readonly layoutIndex: number
 
@@ -119,10 +113,8 @@ export class LazyImageRotationAnimation extends RotationAnimation {
     private animation: IndexedAnimation
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
-        
-        
 public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior){
-            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior);
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
                         //var layoutIndex = layoutIndex
     //var instanceId = instanceId
     //var scaleProperties = scaleProperties
@@ -140,17 +132,15 @@ this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
     
 
     var imageCache: ImageCache = ImageCacheFactory.getInstance()!;
-        
-        
 ;
     
 imageCache!.add(this);
     
 this.scaleProperties= scaleProperties;
     
-this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
+this.NULL_INDEX_ANIMATION=  as IndexedAnimationNullRotationAnimationFactory.getFactoryInstance()!.getInstance(0);;
     
-this.animation= new object: RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior)
+this.animation= new RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior)
                                 {
                                 
     var private index: number= 0
@@ -170,7 +160,7 @@ this.index= index;
     
 }
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -186,8 +176,6 @@ animation= NULL_INDEX_ANIMATION;
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
@@ -213,8 +201,6 @@ animation= NULL_INDEX_ANIMATION;
             {
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
@@ -234,13 +220,11 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
         try {
             
     var animation: IndexedAnimation = this.animation;
-        
-        
 ;
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
-this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId); as IndexedAnimation;
+this.animation=  as IndexedAnimationthis.animationInterfaceFactoryInterface!.getInstance(this.instanceId);;
     
 this.animation.setState(animation);
     
@@ -312,7 +296,7 @@ this.animation.setMaxScale(maxScaleX, maxScaleY);
 
 
     public nextRotation(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     nextRotation();
     
@@ -320,7 +304,7 @@ animation.
 
 
     public previousRotation(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     previousRotation();
     
@@ -328,7 +312,7 @@ animation.
 
 
     public nextRotationX(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     nextRotationX();
     
@@ -336,7 +320,7 @@ animation.
 
 
     public previousRotationX(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     previousRotationX();
     
@@ -344,7 +328,7 @@ animation.
 
 
     public nextRotationZ(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     nextRotationZ();
     
@@ -352,7 +336,7 @@ animation.
 
 
     public previousRotationZ(){
-animation = this.animationanimation as RotationAnimation
+animation =  as RotationAnimationthis.animationanimation
 animation.
                     previousRotationZ();
     
@@ -532,13 +516,13 @@ this.animation.setSequence(sequence);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
 
         try {
-            this.animation.paint(graphics, x, y);
+            this.animation.paintXY(graphics, x, y);
     
 
                 //: 
@@ -574,14 +558,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var image: Image = this.animationInterfaceFactoryInterface!.getImage()!;
-        
-        
 ;
     
 

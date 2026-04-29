@@ -80,8 +80,6 @@ export class InputPersistance extends BasicPersitance {
         
 
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
-        
-        
 public constructor (name: string){
             super(name);
                     var name = name
@@ -98,30 +96,22 @@ public constructor (name: string){
     //var abeClientInformation = abeClientInformation
 
     var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
-        
-        
 ;
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any>
+    var hashtable: Hashtable
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -137,11 +127,11 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-hashtable= new Hashtable<any, any>();
+hashtable= new Hashtable();
     
 this.valueList!.add(hashtable);
     
-this.idList!.add(smallIntegerSingletonFactory!.getInstance(id));
+this.idList!.add(smallIntegerSingletonFactory!.getAt(id));
     
 }
 
@@ -152,7 +142,7 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable){
     //var abeClientInformation = abeClientInformation
 var hashtable = hashtable
 PreLogUtil.put(new StringMaker().
@@ -160,8 +150,6 @@ PreLogUtil.put(new StringMaker().
     
 
     var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
-        
-        
 ;
     
 
@@ -178,15 +166,11 @@ PreLogUtil.put(new StringMaker().
     
 
     var inputObjectArray: any[] = this.hashtableUtil!.getKeysAsArray(hashtable)!;
-        
-        
 ;
     
 
     var size: number = inputObjectArray!.length
                 ;
-        
-        
 ;
     
 
@@ -195,13 +179,11 @@ PreLogUtil.put(new StringMaker().
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-gameActionInput= inputObjectArray[index]! as Input;
+gameActionInput=  as InputinputObjectArray[index]!;
     
-list= hashtable.get(inputObjectArray[index]!); as BasicArrayList;
+list=  as BasicArrayListhashtable.get(inputObjectArray[index]!);;
     
 
 
@@ -209,11 +191,9 @@ list= hashtable.get(inputObjectArray[index]!); as BasicArrayList;
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < list.size(); index2++)
         {
-input= list.get(index2); as Input;
+input=  as Inputlist.get(index2);;
     
 }
 

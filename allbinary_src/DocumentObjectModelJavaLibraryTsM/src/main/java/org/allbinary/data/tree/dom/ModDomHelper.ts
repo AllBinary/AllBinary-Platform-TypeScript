@@ -78,14 +78,10 @@ var name = name
 var text = text
 
     var newValueNode: Node = document.createElement(name)!;
-        
-        
 ;
     
 
     var newValueTextNode: Node = document.createTextNode(text)!;
-        
-        
 ;
     
 newValueNode!.appendChild(newValueTextNode);
@@ -136,7 +132,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ModDomHelper.createTextNode(document, DomData.INDEX, new Integer(index).
+                        return ModDomHelper.createTextNode(document, DomData.INDEX, index.
                             toString());;
     
 }
@@ -151,8 +147,6 @@ var nameText = nameText
 var valueText = valueText
 
     var newNode: Node = document.createElement(elementName)!;
-        
-        
 ;
     
 newNode!.appendChild(ModDomHelper.createNameNode(document, nameText));
@@ -176,8 +170,6 @@ var elementNameAndNameText = elementNameAndNameText
 var valueText = valueText
 
     var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;
-        
-        
 ;
     
 
@@ -198,8 +190,6 @@ var index = index
 var valueText = valueText
 
     var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;
-        
-        
 ;
     
 newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
@@ -215,14 +205,12 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 
                 //@Throws(Error::class)
             
-    public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
+    public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap): Node{
 var document = document
 var rootNode = rootNode
 var hashMap = hashMap
 
     var node: Node = document.createElement(rootNode)!;
-        
-        
 ;
     
 
@@ -236,33 +224,25 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
+    public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap): Node{
 var document = document
 var node = node
 var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -271,26 +251,18 @@ var hashMap = hashMap
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
     var objectKey: any = keyArray[i]!;
-        
-        
 ;
     
 
-    var name: string = objectKey as String;
-        
-        
+    var name: string =  as StringobjectKey;
 ;
     
 
-    var anyType: any = hashMap!.get(objectKey as Object); as Object;
-        
-        
+    var anyType: any =  as ObjecthashMap!.get(objectKey as Object);;
 ;
     
 
@@ -301,8 +273,6 @@ i < size; i++)
                                     {
                                     
     var value: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
@@ -315,9 +285,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         
                                     {
                                     
-    var value: string = stringUtil!.getInstance(anyType as String)!;
-        
-        
+    var value: string = stringUtil!.getNonNull( as StringanyType)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
@@ -338,7 +306,8 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                             
 
 
-                            throw new Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw new Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
+                    
 
                         }
                             
@@ -362,20 +331,14 @@ var duplicateNodeName = duplicateNodeName
 var valueVector = valueVector
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var node: Node = document.createElement(rootNodeName)!;
-        
-        
 ;
     
 
     var size: number = valueVector!.length!;
-        
-        
 ;
     
 
@@ -384,14 +347,10 @@ var valueVector = valueVector
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var value: string = stringUtil!.getInstance(valueVector!.get(i) as String)!;
-        
-        
+    var value: string = stringUtil!.getNonNull( as StringvalueVector!.get(i))!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value));
@@ -416,20 +375,14 @@ var duplicateNodeName = duplicateNodeName
 var valueVector = valueVector
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var node: Node = document.createElement(rootNodeName)!;
-        
-        
 ;
     
 
     var size: number = valueVector!.length!;
-        
-        
 ;
     
 
@@ -438,14 +391,10 @@ var valueVector = valueVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var value: string = stringUtil!.getInstance(valueVector!.get(index) as String)!;
-        
-        
+    var value: string = stringUtil!.getNonNull( as StringvalueVector!.get(index))!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value));
@@ -463,14 +412,12 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 
                 //@Throws(Error::class)
             
-    public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
+    public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap): Node{
 var document = document
 var rootNode = rootNode
 var hashMap = hashMap
 
     var node: Node = document.createElement(rootNode)!;
-        
-        
 ;
     
 
@@ -484,33 +431,25 @@ var hashMap = hashMap
 
                 //@Throws(Error::class)
             
-    public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
+    public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap): Node{
 var document = document
 var node = node
 var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -519,26 +458,18 @@ var hashMap = hashMap
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
-        
-        
+    var name: string =  as StringkeyArray[i]!;
 ;
     
 
-    var anyType: any = hashMap!.get(name as Object); as Object;
-        
-        
+    var anyType: any =  as ObjecthashMap!.get(name as Object);;
 ;
     
 
-    var value: string = stringUtil!.getInstance(anyType as String)!;
-        
-        
+    var value: string = stringUtil!.getNonNull( as StringanyType)!;
 ;
     
 node.appendChild(ModDomHelper.createTextNode(document, name, value));

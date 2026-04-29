@@ -53,8 +53,6 @@ export class RTSLayerTextAnimation extends Animation {
         
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
-        
-        
 
     private readonly image: Image
 
@@ -71,16 +69,14 @@ this.image= image;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y);
+super.paintXY(graphics, x, y);
     
 
     var adjustedCostY: number = this.image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 graphics.drawString(this.text, x, y +adjustedCostY, 0);

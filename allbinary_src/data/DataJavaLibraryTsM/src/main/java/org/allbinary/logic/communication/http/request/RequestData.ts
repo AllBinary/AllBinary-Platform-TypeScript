@@ -43,20 +43,12 @@ export class RequestData
         
 
     public static readonly REQUEST: string = "REQUESTDATA_REQUEST";
-        
-        
 
     public static readonly PARAMETER: string = "REQUESTDATA_PARAMETER";
-        
-        
 
     public static readonly VIEWS: string = "REQUESTDATA_VIEWS";
-        
-        
 
     public static readonly VISITORS: string = "REQUESTDATA_VISITORS";
-        
-        
 public constructor (){
 
             super();

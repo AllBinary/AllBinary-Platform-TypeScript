@@ -61,8 +61,6 @@ export class AllBinarySensorManager
         
 
     private static readonly SINGLETON: AllBinarySensorManager = new AllBinarySensorManager();
-        
-        
 
     public static getInstance(): AllBinarySensorManager{
 
@@ -75,20 +73,12 @@ export class AllBinarySensorManager
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public readonly ORIENTATION_SENSOR_INPUT: string = "Orientation Sensor Input";
-        
-        
 
     public readonly ORIENTATION_TYPE: string = "Orientation Type";
-        
-        
 private constructor (){
 
             super();
@@ -114,8 +104,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public getSensorNamesList(): BasicArrayList{
 

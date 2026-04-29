@@ -50,10 +50,10 @@ export class ImageComparisonResultFrameCacheable
          implements CacheableInterface {
         
 
-    private frame: Long
+    private frame: number
 
     private imageComparisonResult: ImageComparisonResult
-public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
+public constructor (imageComparisonResult: ImageComparisonResult, frame: number){
 
             super();
         var imageComparisonResult = imageComparisonResult
@@ -75,7 +75,7 @@ this.frame= frame;
 }
 
 
-    public getFrame(): Long{
+    public getFrame(): number{
 
 
 
@@ -85,7 +85,7 @@ this.frame= frame;
 }
 
 
-    public setFrame(frame: Long){
+    public setFrame(frame: number){
 var frame = frame
 this.frame= frame;
     
@@ -112,8 +112,6 @@ this.imageComparisonResult= imageComparisonResult;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);

@@ -79,8 +79,6 @@ export class RegistrationConfiguration
         
 
     private static readonly SINGLETON: RegistrationConfiguration = new RegistrationConfiguration();
-        
-        
 
     public static getInstance(): RegistrationConfiguration{
 
@@ -93,20 +91,12 @@ export class RegistrationConfiguration
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private registrationCode: string = "No Registration Code";
-        
-        
 
     public readonly NAME: string = "registrationid";
-        
-        
 
     private readonly FILE: string = "Registration.dat";
-        
-        
 private constructor (){
 
             super();
@@ -133,8 +123,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
@@ -149,20 +137,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
     read(){
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileInputStream: InputStream = fileInputStreamFactory!.getFileInputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 
     var dataInputStream: DataInputStream = new DataInputStream(fileInputStream);
-        
-        
 ;
     
 this.setRegistrationCode(dataInputStream!.readUTF());
@@ -180,8 +162,6 @@ PreLogUtil.put(new StringMaker().
     var dataOutputStream: AbDataOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -191,14 +171,10 @@ PreLogUtil.put(new StringMaker().
     
 
     var fileInputStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var fileOutputStream: OutputStream = fileInputStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, FILE)!;
-        
-        
 ;
     
 dataOutputStream= new AbDataOutputStream(fileOutputStream);

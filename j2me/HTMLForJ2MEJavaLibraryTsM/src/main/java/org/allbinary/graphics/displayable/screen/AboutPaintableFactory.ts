@@ -55,8 +55,6 @@ export class AboutPaintableFactory
         
 
     private static readonly instance: AboutPaintableFactory = new AboutPaintableFactory();
-        
-        
 
     public static getInstance(): AboutPaintableFactory{
 
@@ -75,8 +73,6 @@ private constructor (){
                                                         [
                                                             "Built with the","AllBinary Platform",StringUtil.getInstance()!.EMPTY_STRING,"Comments or Questions:","support@allbinary.com"
                                                         ];
-        
-        
 ;
     
 
@@ -84,8 +80,6 @@ private constructor (){
                                                         [
                                                             "Developed By:","Travis Berthelot"
                                                         ];
-        
-        
 ;
     
 this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableArrayInstance();
@@ -95,12 +89,8 @@ this.paintableArray= AboutPaintable.getInstance(INFO, DEVELOPERS)!.getPaintableA
 
     public paintableArray: Paintable[] = 
                                                 [
-                                                    NullPaintable.getInstance();
-        
-        
+                                                    NullPaintable.getInstance()
                                                 ];
-        
-        
 
 }
                 

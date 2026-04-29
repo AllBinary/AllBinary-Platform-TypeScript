@@ -45,8 +45,6 @@ export class GameYouLoseSound extends CompositeSound {
         
 
     private soundInterface: Sound = new GameYouLoseSound();
-        
-        
 
     public static getInstance(): Sound{
 

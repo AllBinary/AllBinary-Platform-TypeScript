@@ -64,8 +64,6 @@ export class UpdateValidationStoreFrontView extends StoreFrontComponent implemen
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -81,8 +79,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -140,8 +136,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

@@ -57,8 +57,6 @@ export class ImagesRatioUtil
         
 
     private static readonly instance: ImagesRatioUtil = new ImagesRatioUtil();
-        
-        
 
     public static getInstance(): ImagesRatioUtil{
 
@@ -71,8 +69,6 @@ export class ImagesRatioUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -80,16 +76,12 @@ private constructor (){
 
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     public isEqual(bufferedImageArray: BufferedImage[], totalImages: number): boolean{
     //var bufferedImageArray = bufferedImageArray
     //var totalImages = totalImages
 
     var end: number = totalImages;
-        
-        
 ;
     
 
@@ -97,8 +89,6 @@ private constructor (){
                         end= bufferedImageArray!.length
 
     var ratio: number = (bufferedImageArray[0]!.getWidth(); /bufferedImageArray[0]!.getHeight());
-        
-        
 ;
     
 
@@ -107,8 +97,6 @@ private constructor (){
 
                         for (
     var index: number = 1;
-        
-        
 index < end; index++)
         {
 
@@ -140,14 +128,10 @@ index < end; index++)
     //var totalImages = totalImages
 
     var ratio: number = 0;
-        
-        
 ;
     
 
     var end: number = totalImages;
-        
-        
 ;
     
 
@@ -159,8 +143,6 @@ index < end; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < end; index++)
         {
 ratio += (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.getHeight());
@@ -183,33 +165,25 @@ var bufferedImage = bufferedImage
 var ratio = ratio
 
     var imageRatio: number = (bufferedImage!.getWidth(); /bufferedImage!.getHeight());
-        
-        
 ;
     
 
     var point: Point = new Point();
-        
-        
 ;
     
 
     var newHeight: number = bufferedImage!.getHeight()!;
-        
-        
 ;
     
 
     var newWidth: number = bufferedImage!.getWidth()!;
-        
-        
 ;
     
 
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= (bufferedImage!.getHeight(); *ratio);
+                                    newWidth= Math.round(bufferedImage!.getHeight(); *ratio);
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -217,7 +191,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                                     }
                                 
                         else {
-                            newHeight= (bufferedImage!.getWidth(); /ratio);
+                            newHeight= Math.round(bufferedImage!.getWidth(); /ratio);
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     
@@ -226,22 +200,16 @@ point.y= (newHeight -bufferedImage!.getHeight()) /2;
                             
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWidth: " +newWidth +commonLabels!.HEIGHT_LABEL +bufferedImage!.getHeight() +" newHeight: " +newHeight +" needed ratio: " +(newWidth /newHeight), this, "fudge");
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(newWidth, newHeight)!;
-        
-        
 ;
     
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
-        
-        
 ;
     
 
@@ -250,14 +218,10 @@ this.logUtil!.putF(commonLabels!.WIDTH_LABEL +bufferedImage!.getWidth() +" newWi
                                     {
                                     
     var firstColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, 1, bufferedImage!.getHeight())!;
-        
-        
 ;
     
 
     var lastColumnBufferedImage: BufferedImage = bufferedImage!.getSubimage(bufferedImage!.getWidth() -1, 0, 1, bufferedImage!.getHeight())!;
-        
-        
 ;
     
 this.logUtil!.putF("Draw some columns to fill in gap", this, "fudge");
@@ -268,8 +232,6 @@ this.logUtil!.putF("Draw some columns to fill in gap", this, "fudge");
 
                         for (
     var index: number = 0;
-        
-        
 index < point.x; index++)
         {
 g.drawImage(firstColumnBufferedImage, index, 0, 
@@ -289,14 +251,10 @@ g.drawImage(lastColumnBufferedImage, newWidth -index, 0,
                                     {
                                     
     var firstRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, 0, bufferedImage!.getWidth(), 1)!;
-        
-        
 ;
     
 
     var lastRowBufferedImage: BufferedImage = bufferedImage!.getSubimage(0, bufferedImage!.getHeight() -1, bufferedImage!.getWidth(), 1)!;
-        
-        
 ;
     
 this.logUtil!.putF("Draw some rows to fill in gap", this, "fudge");
@@ -307,8 +265,6 @@ this.logUtil!.putF("Draw some rows to fill in gap", this, "fudge");
 
                         for (
     var index: number = 0;
-        
-        
 index < point.y; index++)
         {
 g.drawImage(firstRowBufferedImage, 0, index, 
@@ -342,8 +298,6 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
     //var ratio = ratio
 
     var end: number = totalImages;
-        
-        
 ;
     
 
@@ -351,8 +305,6 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
                         end= bufferedImageArray!.length
 
     var fudgedBufferedImageArray: BufferedImage[] = new Array(end);
-        
-        
 ;
     
 
@@ -361,8 +313,6 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
 
                         for (
     var index: number = 0;
-        
-        
 index < end; index++)
         {
 fudgedBufferedImageArray[index]= fudge(bufferedImageArray[index]!, ratio);

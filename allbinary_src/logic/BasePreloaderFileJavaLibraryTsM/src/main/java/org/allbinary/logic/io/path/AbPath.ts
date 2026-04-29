@@ -65,40 +65,22 @@ export class AbPath
         
 
     private static readonly NETWORK_SEP: string = ":/";
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 
     schema: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private path: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     nameP: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private hasSchema: boolean = false;
-        
-        
 
     private numberOfSeps: number = 0;
-        
-        
 
     private readonly abPathUtil: PathUtil = PathUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -108,16 +90,12 @@ public constructor (){
 
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (aPath: string){
 
             super();
         var aPath = aPath
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -148,8 +126,6 @@ public constructor (aPath: string, name: string){
 var name = name
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -197,8 +173,6 @@ this.nameP= this.EMPTY_STRING;
 var aPath = aPath
 
     var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;
-        
-        
 ;
     
 
@@ -243,14 +217,10 @@ this.hasSchema= false;
 var aPath = aPath
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 ;
     
 
     var tempPath: string = aPath;
-        
-        
 ;
     
 
@@ -265,8 +235,6 @@ var aPath = aPath
                         else {
                             
     var beginIndex: number = tempPath!.indexOf(this.commonSeps!.COLON)!;
-        
-        
 ;
     
 
@@ -289,7 +257,8 @@ numberOfSeps++;
                                     
 
 
-                            throw new Error("Should Not Have More Than Two Seps")
+                            throw new Error("Should Not Have More Than Two Seps");
+                    
 
                                     }
                                 
@@ -332,8 +301,6 @@ this.nameP= name;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -367,14 +334,10 @@ stringBuffer!.append(this.nameP);
                                     {
                                     
     var filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.schema);

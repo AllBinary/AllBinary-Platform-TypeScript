@@ -71,15 +71,11 @@ this.contextConfigurationInterface= contextConfigurationInterface;
     public toXmlDoc(): Document{
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 
     var node: Node = new ContextConfigurationView(this.contextConfigurationInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 document.appendChild(node);

@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -57,42 +59,26 @@ import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
 
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class ThreadPool
             extends Object
          {
         
 
     public NORMAL_PRIORITY: number = 5;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly NULL_RUNNABLE: NullRunnable = NullRunnable.getInstance()!;
-        
-        
 
     readonly threadPoolStrings: ThreadPoolStrings = ThreadPoolStrings.getInstance()!;
-        
-        
 
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
-        
-        
 
     private isAlive: boolean= false
 
     private taskQueue: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private numThreads: number= 0
 
@@ -107,8 +93,6 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
 
     private currentPriorityRunnable: PriorityRunnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -125,8 +109,6 @@ public constructor (poolName: string, numThreads: number, priority: number){
                         else {
                             
     var runnable: Runnable = this.getTask()!;
-        
-        
 ;
     
 
@@ -142,7 +124,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
                                     }
                                 
-this.currentPriorityRunnable= runnable as PriorityRunnable;
+this.currentPriorityRunnable=  as PriorityRunnablerunnable;
     
 
                         if(!(this.currentPriorityRunnable == this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE))
@@ -166,8 +148,6 @@ this.currentPriorityRunnable!.run();
     public runATask(){
 
     var runnable: Runnable = this.getTask()!;
-        
-        
 ;
     
 
@@ -219,8 +199,6 @@ this.taskQueue= new BasicArrayListD();
                                     {
                                     
     var size: number = this.taskQueue!.size()!;
-        
-        
 ;
     
 
@@ -229,8 +207,6 @@ this.taskQueue= new BasicArrayListD();
     
 
     var lowerPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-        
-        
 ;
     
 
@@ -239,11 +215,9 @@ this.taskQueue= new BasicArrayListD();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index); as PriorityRunnable;
+runnable=  as PriorityRunnablethis.taskQueue!.get(index);;
     
 
                         if(runnable.getPriority() > task.getPriority())
@@ -271,11 +245,9 @@ break;
                         else {
                             
     var index: number = this.taskQueue!.indexOf(lowerPriorityRunnable)!;
-        
-        
 ;
     
-this.taskQueue!.add(index, task);
+this.taskQueue!.addAt(index, task);
     
 
                         }
@@ -333,7 +305,7 @@ this.taskQueue!.add(index, task);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.taskQueue!.remove(0); as Runnable;
+                        return  as Runnablethis.taskQueue!.removeAt(0);;
     
 }
 

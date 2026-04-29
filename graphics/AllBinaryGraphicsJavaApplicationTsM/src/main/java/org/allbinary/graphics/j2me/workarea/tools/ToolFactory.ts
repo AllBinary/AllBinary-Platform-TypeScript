@@ -46,9 +46,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { GraphicItemFactory } from "./GraphicItemFactory.js";
-
 import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
+
+import { GraphicItemFactory } from "./GraphicItemFactory.js";
 
 export class ToolFactory
             extends Object
@@ -56,8 +56,6 @@ export class ToolFactory
         
 
     private static readonly instance: ToolFactory = new ToolFactory();
-        
-        
 
     public static getInstance(): ToolFactory{
 
@@ -70,28 +68,18 @@ export class ToolFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private selectedTool: GraphicsItemInterfaceFactoryInterface = 
                 null
             ;
-        
-        
 
     private tool: string = 
                 null
             ;
-        
-        
 
     private readonly SELECTED_LABEL: string = "Selected: ";
-        
-        
 
     public setSelectedTool(tool: string){
 var tool = tool

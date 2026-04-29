@@ -55,8 +55,6 @@ export class FullScreenUtil
         
 
     private static readonly instance: FullScreenUtil = new FullScreenUtil();
-        
-        
 
     public static getInstance(): FullScreenUtil{
 
@@ -70,7 +68,7 @@ export class FullScreenUtil
 
                 //@Throws(Error::class)
             
-    public init(fullScreenInterface: Canvas, commandListener: CommandListener){
+    public initOnRun(fullScreenInterface: Canvas, commandListener: CommandListener){
     //var fullScreenInterface = fullScreenInterface
     //var commandListener = commandListener
 
@@ -96,14 +94,10 @@ export class FullScreenUtil
     //var isFullScreen = isFullScreen
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -128,7 +122,7 @@ export class FullScreenUtil
 }
 
 
-    public isScreenChange(fullScreenInterface: Canvas): boolean{
+    public isScreenChangeCanvas(fullScreenInterface: Canvas): boolean{
     //var fullScreenInterface = fullScreenInterface
 
 

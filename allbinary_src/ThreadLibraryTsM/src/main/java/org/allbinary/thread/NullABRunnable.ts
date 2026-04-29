@@ -43,8 +43,6 @@ export class NullABRunnable extends ABRunnable {
         
 
     private static readonly instance: NullABRunnable = new NullABRunnable();
-        
-        
 
     public static getInstance(): NullABRunnable{
 

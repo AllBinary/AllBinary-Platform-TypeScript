@@ -50,8 +50,6 @@ export class NullInputMappingEventListener
         
 
     public static readonly NULL_INPUT_MAPPING_EVENT_LISTENER: NullInputMappingEventListener = new NullInputMappingEventListener();
-        
-        
 
                 //@Throws(Error::class)
             

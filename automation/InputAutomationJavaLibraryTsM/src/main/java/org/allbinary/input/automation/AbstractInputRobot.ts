@@ -54,14 +54,14 @@ import { PointHelper } from "./PointHelper.js";
 
 import { Rectangle } from "./Rectangle.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class AbstractInputRobot
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private helpSet: HelpSet
 public constructor (helpSet: HelpSet){
@@ -94,14 +94,12 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveM
 
                 //@Throws(Error::class)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
+    public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
 var rectangle = rectangle
 var x = x
 var y = y
 
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
-        
-        
 ;
     
 this.mouseMove(point.x +x, point.y +y);
@@ -120,13 +118,14 @@ this.mouseMoveToTarget(rectangle, 0, 0);
 }
 
 
-    public mouseMove(x: Integer, y: Integer){
+    public mouseMove(x: number, y: number){
 var x = x
 var y = y
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

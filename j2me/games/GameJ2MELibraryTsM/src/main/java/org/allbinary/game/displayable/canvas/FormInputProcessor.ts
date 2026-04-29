@@ -21,9 +21,6 @@
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
-import { GameInputStrings } from "../../../../../org/allbinary/game/input/GameInputStrings.js";
-
-    
 import { GameKey } from "../../../../../org/allbinary/game/input/GameKey.js";
 
     
@@ -97,32 +94,18 @@ export class FormInputProcessor extends InputProcessor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
     private readonly downKeyEventHandler: DownKeyEventHandler = DownKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly upGameKeyEventHandler: UpGameKeyEventHandler = UpGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 
     private readonly platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;
-        
-        
 
     private readonly allBinaryGameCanvas: AllBinaryGameCanvas
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
@@ -143,18 +126,14 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
                             append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
-    var input: Input = this.inputFactory!.getInstance(keyCode)!;
-        
-        
+    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
 ;
     
 
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, input)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this.allBinaryGameCanvas, input)!;
 ;
     
-this.downKeyEventHandler!.fireEvent(gameKeyEvent);
+this.downKeyEventHandler!.fireEventForEvent(gameKeyEvent);
     
 
                 //: 
@@ -174,9 +153,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.AD
 
         try {
             
-    var input: Input = this.inputFactory!.getInstance(keyCode)!;
-        
-        
+    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
 ;
     
 
@@ -188,19 +165,15 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.AD
     
 
     var gameKey: GameKey = GameKeyFactory.getInstance()!.KEY_NUM0;
-        
-        
 ;
     
 
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput( as GameKeyEventSourceInterfacecanvas, gameKey)!;
 ;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

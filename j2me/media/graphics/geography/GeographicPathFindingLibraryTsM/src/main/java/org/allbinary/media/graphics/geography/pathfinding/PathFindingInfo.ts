@@ -60,12 +60,8 @@ export class PathFindingInfo
         
 
     public static readonly NULL_PATH_FINDING_INFO: PathFindingInfo = new PathFindingInfo(PathFindingNodeCostInfoFactoryBase.NULL_PATH_FINDING_NODE_COST_INFO_FACTORY_BASE, BasicArrayListUtil.getInstance()!.getImmutableInstance(), BasicArrayListUtil.getInstance()!.getImmutableInstance());
-        
-        
 
     private pathFinder: GeographicPathFinderBase = GeographicPathFinderBase.NULL_GEOGRAPHIC_PATH_FINDER_BASE;
-        
-        
 
     private readonly startPathFindingNodeList: BasicArrayList
 

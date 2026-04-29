@@ -45,9 +45,6 @@ import { TouchMotionGestureFactory } from "../../../../../org/allbinary/input/mo
 import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { RectangleCollisionUtil } from "../../../../../org/allbinary/math/RectangleCollisionUtil.js";
 
     
@@ -82,16 +79,10 @@ export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
         
 
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-        
-        
 
     private readonly CLICK_DELAY: number = 120;
-        
-        
 
     private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(CLICK_DELAY);
-        
-        
 
     private rectangle: Rectangle
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle){
@@ -125,9 +116,7 @@ this.rectangle= rectangle;
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.getCanvas();;
 ;
     
 gameCanvas!.toggleMenu();
@@ -152,31 +141,23 @@ gameCanvas!.toggleMenu();
 
                 //@Throws(Error::class)
             
-    public processInput(): number{
+    public processInputList(): number{
 
         try {
             
     var motionInputsIndex: number = this.processMotionInputs()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
     var key: number = 0;
-        
-        
 ;
     
 
@@ -189,11 +170,9 @@ gameCanvas!.toggleMenu();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
     
 
                         if(gameKeyEvent != 
@@ -265,8 +244,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()
     public processMotionInputs(): number{
 
     var lastIndex: number = this.motionGestureEventList!.size() -1;
-        
-        
 ;
     
 
@@ -274,9 +251,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
-        
-        
+    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.motionGestureEventList!.objectArray[lastIndex]!;
 ;
     
 this.processMotionInput(motionGestureEvent);
@@ -318,14 +293,10 @@ motionGestureEventList!.clear();
                                 
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
-        
-        
 ;
     
 
@@ -334,14 +305,10 @@ motionGestureEventList!.clear();
                                     {
                                     
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
-        
-        
 ;
     
 
     var rectPoint: GPoint = this.rectangle.getPoint()!;
-        
-        
 ;
     
 
@@ -349,13 +316,11 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-                        if(this.clickTimeHelper!.isTime())
+                        if(this.clickTimeHelper!.isTimeTNT())
                         
                                     {
                                     
-    var gameCanvas: AllBinaryGameCanvas = this.getCanvas(); as AllBinaryGameCanvas;
-        
-        
+    var gameCanvas: AllBinaryGameCanvas =  as AllBinaryGameCanvasthis.getCanvas();;
 ;
     
 gameCanvas!.toggleMenu();

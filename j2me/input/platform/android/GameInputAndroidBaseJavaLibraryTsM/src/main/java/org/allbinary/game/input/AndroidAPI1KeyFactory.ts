@@ -29,8 +29,6 @@ export class AndroidAPI1KeyFactory extends AndroidKeyFactory {
         
 
     private static readonly SINGLETON: AndroidAPI1KeyFactory = new AndroidAPI1KeyFactory();
-        
-        
 
     public static getInstance(): AndroidAPI1KeyFactory{
 

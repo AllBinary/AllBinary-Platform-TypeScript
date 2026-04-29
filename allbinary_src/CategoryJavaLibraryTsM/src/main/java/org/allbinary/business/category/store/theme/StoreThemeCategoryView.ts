@@ -60,7 +60,7 @@ import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){
-            super(categoryInterface as StoreThemeCategoryInterface);
+            super( as StoreThemeCategoryInterfacecategoryInterface);
                         //var categoryInterface = categoryInterface
 
 
@@ -75,20 +75,14 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
     //var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = this.getCategoryInterface(); as StoreThemeCategoryInterface;
-        
-        
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface =  as StoreThemeCategoryInterfacethis.getCategoryInterface();;
 ;
     
 
-    var themeValidationArray: ThemeValidation[] = storeThemeCategoryInterface!.getThemes()!.toArray(); as Array<ThemeValidation?>;
-        
-        
+    var themeValidationArray: ThemeValidation[] =  as Array<ThemeValidation?>storeThemeCategoryInterface!.getThemes()!.toArray();;
 ;
     
 Arrays.sort(themeValidationArray, new ThemeComparator());
@@ -96,8 +90,6 @@ Arrays.sort(themeValidationArray, new ThemeComparator());
 
     var size: number = themeValidationArray!.length
                 ;
-        
-        
 ;
     
 
@@ -106,14 +98,10 @@ Arrays.sort(themeValidationArray, new ThemeComparator());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var themeValidation: ThemeValidation = themeValidationArray[index]! as ThemeValidation;
-        
-        
+    var themeValidation: ThemeValidation =  as ThemeValidationthemeValidationArray[index]!;
 ;
     
 node.appendChild(themeValidation!.toXmlNode(document));

@@ -43,8 +43,6 @@ export class TransformInfoTemplateData
         
 
     private static readonly instance: TransformInfoTemplateData = new TransformInfoTemplateData();
-        
-        
 
     public static getInstance(): TransformInfoTemplateData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly UNCRYPTED_EXTENSION: string = "xsl";
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = "abv";
-        
-        
 
 }
                 

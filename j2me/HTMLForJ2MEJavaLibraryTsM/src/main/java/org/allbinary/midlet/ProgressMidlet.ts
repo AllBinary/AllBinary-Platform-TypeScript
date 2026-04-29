@@ -18,9 +18,8 @@
 
 
 
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
-
-    
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -66,8 +65,6 @@ export class ProgressMidlet extends AllBinaryMidlet {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly abeClientInformation: AbeClientInformationInterface
 public constructor (clientInformationFactory: ClientInformationFactory){
@@ -88,23 +85,17 @@ this.abeClientInformation= clientInformationFactory!.getInstance();
     exit(isProgress: boolean){
 var isProgress = isProgress
 
-    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getInstance(this)!;
-        
-        
+    var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;
 ;
     
 
         try {
             
     var primaryThreadPool: ThreadPool = PrimaryThreadPool.getInstance()!;
-        
-        
 ;
     
 
     var runnable: Runnable = new ExitRunnable(this, processor, isProgress);
-        
-        
 ;
     
 primaryThreadPool!.runTask(runnable);

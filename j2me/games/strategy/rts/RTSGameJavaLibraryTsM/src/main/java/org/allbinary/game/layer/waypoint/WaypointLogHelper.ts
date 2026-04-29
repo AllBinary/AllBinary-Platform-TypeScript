@@ -58,8 +58,6 @@ export class WaypointLogHelper
         
 
     private static readonly instance: WaypointLogHelper = new WaypointLogHelper();
-        
-        
 
     public static getInstance(): WaypointLogHelper{
 
@@ -83,7 +81,7 @@ export class WaypointLogHelper
 }
 
 
-    public addWaypointFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
+    public addWaypointFromBuildingList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var advancedRTSGameLayer = advancedRTSGameLayer
     //var list = list
@@ -98,7 +96,7 @@ export class WaypointLogHelper
 }
 
 
-    public insertWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
+    public insertWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var index = index
     //var rtsLayer = rtsLayer
@@ -107,7 +105,7 @@ export class WaypointLogHelper
 }
 
 
-    public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
+    public setRandomGeographicMapCellHistoryList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var pathsList = pathsList
 }

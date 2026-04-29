@@ -27,9 +27,6 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 import { Resource } from "../../org/eclipse/swt/graphics/Resource.js";
 
     
-import { SwtImmutableImage } from "../../org/microemu/device/swt/SwtImmutableImage.js";
-
-    
 import { SwtMutableImage } from "../../org/microemu/device/swt/SwtMutableImage.js";
 
     
@@ -58,8 +55,6 @@ export class DisposalUtil
         
 
     private static readonly instance: DisposalUtil = new DisposalUtil();
-        
-        
 
     public static getInstance(): DisposalUtil{
 
@@ -72,10 +67,8 @@ export class DisposalUtil
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    public dispose(image: Image){
+    public disposeImage(image: Image){
     //var image = image
 
                         if(image == 
@@ -97,12 +90,10 @@ export class DisposalUtil
                         
                                     {
                                     
-    var mutableImage: SwtMutableImage = image as SwtMutableImage;
-        
-        
+    var mutableImage: SwtMutableImage =  as SwtMutableImageimage;
 ;
     
-this.dispose(mutableImage!.getImage() as Resource);
+this.disposeResource( as ResourcemutableImage!.getImage());
     
 
                                     }
@@ -114,7 +105,7 @@ this.dispose(mutableImage!.getImage() as Resource);
 }
 
 
-    public dispose(resource: Resource){
+    public disposeResource(resource: Resource){
     //var resource = resource
 
                         if(!resource.isDisposed();)

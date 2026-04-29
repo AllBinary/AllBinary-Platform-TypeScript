@@ -69,8 +69,6 @@ export class TextNotificationUtil
         
 
     private static readonly instance: TextNotificationUtil = new TextNotificationUtil();
-        
-        
 
     public static getInstance(): TextNotificationUtil{
 
@@ -115,17 +113,11 @@ this.fire(message);
 }
 
 
-    private readonly TWO: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(2)!;
-        
-        
+    private readonly TWO: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
     private readonly FALSE: Boolean = BooleanFactory.getInstance()!.FALSE;
-        
-        
 
     private readonly gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -133,8 +125,6 @@ this.fire(message);
 var message = message
 
     var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, TWO, BasicColorFactory.getInstance()!.RED, FALSE);
-        
-        
 ;
     
 gameNotificationEventHandler!.fireEvent(gameNotificationEvent);

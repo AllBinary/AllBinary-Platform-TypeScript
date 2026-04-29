@@ -43,8 +43,6 @@ export class FrictionData
         
 
     private static readonly FRICTION_DENOMINATOR: number = 100;
-        
-        
 
     public static getFrictionDenominator(): number{
 

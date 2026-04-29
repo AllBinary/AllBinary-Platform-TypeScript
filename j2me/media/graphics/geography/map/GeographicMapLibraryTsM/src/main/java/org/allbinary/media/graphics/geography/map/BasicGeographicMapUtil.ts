@@ -21,12 +21,6 @@
 import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
-
-    
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -57,8 +51,6 @@ export class BasicGeographicMapUtil
         
 
     private static readonly instance: BasicGeographicMapUtil = new BasicGeographicMapUtil();
-        
-        
 
     public static getInstance(): BasicGeographicMapUtil{
 
@@ -71,8 +63,6 @@ export class BasicGeographicMapUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -81,8 +71,6 @@ export class BasicGeographicMapUtil
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
     var LOCATION_CHANGE: number = 1;
-        
-        
 ;
     
 
@@ -119,7 +107,8 @@ export class BasicGeographicMapUtil
 else -> {
 
 
-                            throw new Error("Only Four Directions")
+                            throw new Error("Only Four Directions");
+                    
 }
 
         }       
@@ -135,8 +124,6 @@ else -> {
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
     var LOCATION_CHANGE: number = 1;
-        
-        
 ;
     
 
@@ -173,7 +160,8 @@ else -> {
 else -> {
 
 
-                            throw new Error("Only Four Directions")
+                            throw new Error("Only Four Directions");
+                    
 }
 
         }       
@@ -189,26 +177,18 @@ else -> {
     //var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
@@ -241,20 +221,18 @@ else -> {
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
 
     var tiledLayerArray: Layer[] = new Array(geographicMapInterfaceArray!.length);
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createAllBinaryTiledLayerArray(geographicMapInterfaceArray, tiledLayerArray, 0);;
+                        return this.getAllBinaryTiledLayerArray(geographicMapInterfaceArray, tiledLayerArray, 0);;
     
 }
 
 
-    public createAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[], tiledLayerArray: Layer[], startIndex: number): Layer[]{
+    public getAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[], tiledLayerArray: Layer[], startIndex: number): Layer[]{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var tiledLayerArray = tiledLayerArray
     //var startIndex = startIndex
@@ -265,14 +243,10 @@ else -> {
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
     var count: number = 0;
-        
-        
 ;
     
 
@@ -281,8 +255,6 @@ else -> {
 
                         for (
     var index: number = size +startIndex;
-        
-        
 --index >= startIndex; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;
@@ -311,8 +283,6 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer();
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -321,13 +291,11 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer();
 
                         for (
     var index: number = size;
-        
-        
 --index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;
     
-geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy);
+geographicMapInterface!.getAllBinaryTiledLayer()!.moveDXY(dx, dy);
     
 }
 
@@ -345,8 +313,6 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy);
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -355,8 +321,6 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.move(dx, dy);
 
                         for (
     var index: number = size;
-        
-        
 --index >= 0; )
         {
 geographicMapInterface= geographicMapInterfaceArray[index]!;

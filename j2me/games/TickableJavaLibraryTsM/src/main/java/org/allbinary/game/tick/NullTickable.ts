@@ -48,8 +48,6 @@ export class NullTickable
         
 
     private static readonly SINGLETON: NullTickable = new NullTickable();
-        
-        
 
     public static getInstance(): NullTickable{
 
@@ -69,8 +67,6 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
     private readonly NAME: string = "NulLTickable";
-        
-        
 
     public getName(): string{
 

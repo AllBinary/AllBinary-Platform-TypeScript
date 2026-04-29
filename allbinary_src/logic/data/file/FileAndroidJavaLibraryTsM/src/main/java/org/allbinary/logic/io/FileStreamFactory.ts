@@ -56,8 +56,6 @@ export class FileStreamFactory
         
 
     private static readonly SINGLETON: FileStreamFactory = new FileStreamFactory(ResourceUtil.getInstance()!.getContext());
-        
-        
 
     public static getInstance(): FileStreamFactory{
 
@@ -100,8 +98,6 @@ this.context= context;
     //var fileName = fileName
 
     var context: Context = this.getContext()!;
-        
-        
 ;
     
 context.deleteFile(fileName);
@@ -130,7 +126,7 @@ this.getContext()!.deleteFile(fileName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.context as Context;
+                        return  as Contextthis.context;
     
 }
 

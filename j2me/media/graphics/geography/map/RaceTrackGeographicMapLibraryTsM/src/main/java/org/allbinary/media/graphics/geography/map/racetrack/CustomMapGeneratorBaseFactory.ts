@@ -47,8 +47,6 @@ export class CustomMapGeneratorBaseFactory
         
 
     private static readonly instance: CustomMapGeneratorBaseFactory = new CustomMapGeneratorBaseFactory();
-        
-        
 
     public static getInstance(): CustomMapGeneratorBaseFactory{
 
@@ -67,7 +65,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
+    public create(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap
 
 

@@ -54,29 +54,25 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
         
 import { BaseImageLoadingProcessor } from "./BaseImageLoadingProcessor.js";
 
+import { ABRunnable } from "./ABRunnable.js";
+
 import { ImageThreadPool } from "./ImageThreadPool.js";
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageCache: ImageCache
 
-    private readonly runnable: ABRunnable = new object: ABRunnable()
+    private readonly runnable: ABRunnable = new ABRunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -93,8 +89,6 @@ this.setRunning(false);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -120,8 +114,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             ;
-        
-        
 public constructor (imageCache: ImageCache){
 
             super();

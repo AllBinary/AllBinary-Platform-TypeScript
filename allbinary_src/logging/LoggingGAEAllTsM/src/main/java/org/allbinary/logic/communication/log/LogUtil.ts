@@ -59,8 +59,6 @@ import { Log } from "./Log.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -73,12 +71,8 @@ import { Log } from "./Log.js";
 
 
     private readonly logger: Logger = Logger.getLogger(LogUtil::class.toString()!)!;
-        
-        
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -89,26 +83,18 @@ private constructor (){
     //var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 this.put(specialMessage, anyType, functionName, exception);
@@ -134,14 +120,10 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
         try {
             
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 
     var clazz: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -157,8 +139,6 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
                                 
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-        
-        
 ;
     
 

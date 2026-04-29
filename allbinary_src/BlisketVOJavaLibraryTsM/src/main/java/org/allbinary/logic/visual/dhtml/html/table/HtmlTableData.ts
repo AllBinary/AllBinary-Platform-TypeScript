@@ -46,8 +46,6 @@ export class HtmlTableData
         
 
     private static readonly instance: HtmlTableData = new HtmlTableData();
-        
-        
 
     public static getInstance(): HtmlTableData{
 
@@ -60,55 +58,31 @@ export class HtmlTableData
 
 
     public readonly LEFT: string = CommonStrings.getInstance()!.LEFT;
-        
-        
 
     public readonly RIGHT: string = CommonStrings.getInstance()!.RIGHT;
-        
-        
 
     public readonly NONE: string = "none";
-        
-        
 
     public readonly TOP: string = "top";
-        
-        
 
     public readonly BOTTOM: string = "bottom";
-        
-        
 
     public readonly TOPBOT: string = "topbot";
-        
-        
 
     public readonly SIDES: string = "sides";
-        
-        
 
     public readonly ALL: string = "all";
-        
-        
 
     public readonly BORDERED: string = "border";
-        
-        
 
     public readonly BASIC: string = "basic";
-        
-        
 
     public readonly ROWS: string = "rows";
-        
-        
 
     public readonly FRAMES: string[] = 
                                                         [
                                                             this.NONE,TOP,BOTTOM,TOPBOT,SIDES,ALL,this.BORDERED
                                                         ];
-        
-        
 
 }
                 

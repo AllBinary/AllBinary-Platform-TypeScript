@@ -49,8 +49,6 @@ export class ParentInventoryTagHelper
         
 
     private static readonly instance: ParentInventoryTagHelper = new ParentInventoryTagHelper();
-        
-        
 
     public static getInstance(): ParentInventoryTagHelper{
 
@@ -76,7 +74,8 @@ var parentTag = parentTag
                                     
 
 
-                            throw new Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.");
+                    
 
                                     }
                                 
@@ -86,8 +85,6 @@ var parentTag = parentTag
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Must have at least a ");
@@ -103,7 +100,8 @@ stringBuffer!.append(parentTag!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 

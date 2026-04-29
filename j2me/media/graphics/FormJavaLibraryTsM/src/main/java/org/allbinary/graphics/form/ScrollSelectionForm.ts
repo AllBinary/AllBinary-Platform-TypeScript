@@ -87,10 +87,12 @@ import { FormType } from "./FormType.js";
 
 import { FormTypeFactory } from "./FormTypeFactory.js";
 
+import { ItemPaintable } from "./ItemPaintable.js";
+
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    static create(title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    static createForm(title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
     //var title = title
     //var items = items
     //var formPaintableFactory = formPaintableFactory
@@ -118,7 +120,8 @@ export class ScrollSelectionForm extends PaintableForm {
                             
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                         }
                             
@@ -129,35 +132,24 @@ export class ScrollSelectionForm extends PaintableForm {
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }
 
 
-    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = ScrollSelectionForm.create(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
-        
-        
+    public static readonly NULL_SCROLL_SELECTION_FORM: ScrollSelectionForm = ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
 
-    public static readonly NULL_SCROLL_SELECTION_HORIZONTAL_FORM: ScrollSelectionForm = ScrollSelectionForm.create(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
-        
-        
+    public static readonly NULL_SCROLL_SELECTION_HORIZONTAL_FORM: ScrollSelectionForm = ScrollSelectionForm.createForm(StringUtil.getInstance()!.EMPTY_STRING, [], ItemPaintableFactory.getInstance(), RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.HORIZONTAL_FORM, 0, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE)!;
 
     private static readonly GET_SELECTED_INDEX: string = "getSelectedIndex";
-        
-        
 
     private static readonly INSIDE_FORM: string = " inside form";
-        
-        
 
     private static readonly IS_IN_FORM: string = "isInForm";
-        
-        
 
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-        
-        
 
     readonly border: number
 
@@ -166,8 +158,6 @@ export class ScrollSelectionForm extends PaintableForm {
     private buttonBasicColor: BasicColor
 
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
-        
-        
 public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
@@ -188,7 +178,7 @@ this.border= border;
     
 this.halfBorder= (border>>1);
     
-this.paintable= formPaintableFactory!.getInstance(this);
+this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
     
 }
 
@@ -210,8 +200,6 @@ this.paintable= formPaintableFactory!.getInstance(this);
     //var point = point
 
     var index: number = this.getSelectedIndex(point)!;
-        
-        
 ;
     
 
@@ -246,8 +234,6 @@ this.paintable= formPaintableFactory!.getInstance(this);
     //var item = item
 
     var size: number = this.size()!;
-        
-        
 ;
     
 
@@ -256,14 +242,10 @@ this.paintable= formPaintableFactory!.getInstance(this);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface = this.get(index); as CustomItemInterface;
-        
-        
+    var nextItem: CustomItemInterface =  as CustomItemInterfacethis.get(index);;
 ;
     
 
@@ -306,44 +288,30 @@ index < size; index++)
     //var point = point
 
     var start: number = this.getStartIndex()!;
-        
-        
 ;
     
 
     var size: number = this.size()!;
-        
-        
 ;
     
 
     var dx: number = this.getDx()!;
-        
-        
 ;
     
 
     var dy: number = this.getDy()!;
-        
-        
 ;
     
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(commonLabels!.START_LABEL);
@@ -376,11 +344,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 
                         for (
     var index: number = start;
-        
-        
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item=  as CustomItemInterfacethis.get(index);;
     
 width= item.getMinimumWidth();
     
@@ -388,8 +354,6 @@ height= item.getMinimumHeight();
     
 
     var diffX: number = 0;
-        
-        
 ;
     
 
@@ -414,7 +378,8 @@ height= item.getMinimumHeight();
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             
@@ -487,7 +452,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             
@@ -508,8 +474,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     //var gameKeyCode = gameKeyCode
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -527,8 +491,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                                 
 
     var index: number = this.getSelectedIndex()!;
-        
-        
 ;
     
 
@@ -585,14 +547,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             
 
     var max: number = this.size() -1;
-        
-        
 ;
     
 
@@ -665,20 +626,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     //var y = y
 
     var width: number = item.getMinimumWidth()!;
-        
-        
 ;
     
 
     var height: number = item.getMinimumHeight()!;
-        
-        
 ;
     
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 item.paint(graphics, x, y);
@@ -687,8 +642,6 @@ graphics.setColor(this.getButtonBasicColor()!.toInt());
     
 
     var adjustedBorder: number = 3;
-        
-        
 ;
     
 graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjustedBorder, width +this.border -adjustedBorder, height +this.border -adjustedBorder);
@@ -736,7 +689,8 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             
@@ -753,14 +707,10 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
     //var y = y
 
     var width: number = item.getMinimumWidth()!;
-        
-        
 ;
     
 
     var height: number = item.getMinimumHeight()!;
-        
-        
 ;
     
 graphics.setColor(this.getButtonBasicColor()!.toInt());
@@ -769,8 +719,6 @@ item.paintUnselected(graphics, x, y);
     
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -816,7 +764,8 @@ item.paintUnselected(graphics, x, y);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             

@@ -46,8 +46,6 @@ export class SWTRunnableProcessor extends SWTProcessor {
         
 
     private static readonly instance: SWTRunnableProcessor = new SWTRunnableProcessor();
-        
-        
 
     public static getInstance(): SWTRunnableProcessor{
 

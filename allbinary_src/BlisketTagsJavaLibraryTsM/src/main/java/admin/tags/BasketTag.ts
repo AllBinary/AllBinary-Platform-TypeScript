@@ -74,14 +74,12 @@ export class BasketTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -110,22 +108,16 @@ this.storeName= value;
             
     var anyType: any = new BasketHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("isBasketEmpty", 
                             null)!;
-        
-        
 ;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -141,7 +133,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -175,22 +168,16 @@ this.storeName= value;
             
     var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("addItemToBasket", 
                             null)!;
-        
-        
 ;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -206,7 +193,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -214,8 +202,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to add item from Basket";
-        
-        
 ;
     
 
@@ -246,22 +232,16 @@ this.storeName= value;
             
     var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("removeItemFromBasket", 
                             null)!;
-        
-        
 ;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -277,7 +257,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -285,8 +266,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to remove item from Basket";
-        
-        
 ;
     
 
@@ -317,22 +296,16 @@ this.storeName= value;
             
     var anyType: any = new BasketRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("adjustBasket", 
                             null)!;
-        
-        
 ;
     
 
-    var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var emptyBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -348,7 +321,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -356,8 +330,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to Adjust Basket";
-        
-        
 ;
     
 
@@ -391,7 +363,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

@@ -46,8 +46,6 @@ export class TransformInfoObjectConfigData
         
 
     private static readonly instance: TransformInfoObjectConfigData = new TransformInfoObjectConfigData();
-        
-        
 
     public static getInstance(): TransformInfoObjectConfigData{
 
@@ -65,20 +63,12 @@ private constructor (){
 
 
     public readonly NAME: string = "OBJECTCONFIG_NAME";
-        
-        
 
     public readonly VARKEY: string = "$";
-        
-        
 
     public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
-        
-        
 
 }
                 

@@ -56,8 +56,6 @@ export class ThemeCustomizerView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     validationInterface: ValidationInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -73,7 +71,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.validationInterface as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.validationInterface);
     
 }
 
@@ -107,7 +105,8 @@ this.addDomNodeInterface(this.validationInterface as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

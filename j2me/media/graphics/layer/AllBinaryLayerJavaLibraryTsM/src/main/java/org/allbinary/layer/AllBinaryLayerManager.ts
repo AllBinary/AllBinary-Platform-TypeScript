@@ -24,9 +24,6 @@ import { LayerManagerEvent } from "../../../org/allbinary/layer/event/LayerManag
 import { LayerManagerEventHandler } from "../../../org/allbinary/layer/event/LayerManagerEventHandler.js";
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 
 
 
@@ -56,20 +53,12 @@ export class AllBinaryLayerManager extends LayerManager {
         
 
     private readonly layerManagerEventHandler: LayerManagerEventHandler = LayerManagerEventHandler.getInstance()!;
-        
-        
 
     private readonly createLayerManagerEvent: LayerManagerEvent = new LayerManagerEvent(this, this.layerManagerEventHandler!.CREATE);
-        
-        
 
     private readonly deleteLayerManagerEvent: LayerManagerEvent = new LayerManagerEvent(this, this.layerManagerEventHandler!.DELETE);
-        
-        
 
     private basicLayerProcessorArray: LayerProcessor[] = [];
-        
-        
 protected constructor (){
             super(LayerManagerNoDebug.getInstance());
                     
@@ -100,8 +89,6 @@ this.basicLayerProcessorArray= layerProcessorArray;
 
     var size: number = this.basicLayerProcessorArray!.length
                 ;
-        
-        
 ;
     
 
@@ -110,14 +97,10 @@ this.basicLayerProcessorArray= layerProcessorArray;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var layerProcessorInterface: LayerProcessor = this.basicLayerProcessorArray[index]!;
-        
-        
 ;
     
 }
@@ -145,7 +128,7 @@ super.append(layerInterface);
 
                 //@Throws(Error::class)
             
-    public append(layerInterface: AllBinaryLayer, index: number){
+    public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
 
@@ -154,7 +137,7 @@ super.append(layerInterface);
                                     {
                                     this.appendProcessors(layerInterface);
     
-super.append(layerInterface, index);
+super.appendAt(layerInterface, index);
     
 
                                     }
@@ -181,8 +164,6 @@ layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent);
                         for (
     var index: number = this.basicLayerProcessorArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
@@ -221,8 +202,6 @@ layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);
                         for (
     var index: number = this.basicLayerProcessorArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
@@ -246,8 +225,6 @@ super.remove(layerInterface);
 
     var size: number = this.basicLayerProcessorArray!.length
                 ;
-        
-        
 ;
     
 
@@ -256,8 +233,6 @@ super.remove(layerInterface);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;
@@ -279,8 +254,6 @@ layerProcessorInterface!.process(this);
 
     var size: number = this.basicLayerProcessorArray!.length
                 ;
-        
-        
 ;
     
 
@@ -289,8 +262,6 @@ layerProcessorInterface!.process(this);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 layerProcessorInterface= this.basicLayerProcessorArray[index]!;

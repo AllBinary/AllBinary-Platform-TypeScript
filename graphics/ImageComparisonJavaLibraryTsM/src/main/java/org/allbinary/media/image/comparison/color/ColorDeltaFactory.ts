@@ -65,39 +65,29 @@ export class ColorDeltaFactory
     private cacheInterface: AutomaticCacheInterface = 
                 null
             ;
-        
-        
 
                 init{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var STATIC_BLOCK: string = "Static Block";
-        
-        
 ;
     
 
     var instance: string = "ColorDeltaFactory";
-        
-        
 ;
     
 
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX); as AutomaticCacheInterface;
+cacheInterface=  as AutomaticCacheInterfaceCacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     
@@ -117,9 +107,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 var rgb1 = rgb1
 var rgb2 = rgb2
 
-    var colorDelta: ColorDelta = cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)); as ColorDelta;
-        
-        
+    var colorDelta: ColorDelta =  as ColorDeltacacheInterface!.get(ColorDelta.getKey(rgb1, rgb2));;
 ;
     
 
@@ -143,8 +131,6 @@ var rgb2 = rgb2
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

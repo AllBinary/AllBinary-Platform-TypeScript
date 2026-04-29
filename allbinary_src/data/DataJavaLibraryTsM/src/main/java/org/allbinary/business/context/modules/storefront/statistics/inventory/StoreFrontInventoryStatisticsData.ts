@@ -43,8 +43,6 @@ export class StoreFrontInventoryStatisticsData
         
 
     private static readonly instance: StoreFrontInventoryStatisticsData = new StoreFrontInventoryStatisticsData();
-        
-        
 
     public static getInstance(): StoreFrontInventoryStatisticsData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly NAME: string = "STOREFRONT_INVENTORY_STATISTICS_NAME";
-        
-        
 
     public readonly NUMBEROFITEMS: string = "STOREFRONT_INVENTORY_STATISTICS_NUMBER_OF_ITEMS";
-        
-        
 
     public readonly TOTALVALUE: string = "STOREFRONT_INVENTORY_STATISTICS_TOTAL_VALUE";
-        
-        
 
 }
                 

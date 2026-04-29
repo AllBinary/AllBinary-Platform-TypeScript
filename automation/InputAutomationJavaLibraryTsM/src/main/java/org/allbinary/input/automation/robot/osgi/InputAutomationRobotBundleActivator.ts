@@ -67,6 +67,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
 
 export class InputAutomationRobotBundleActivator
@@ -75,12 +77,8 @@ export class InputAutomationRobotBundleActivator
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private inputRobotInterface: InputRobotInterface[]
 
@@ -99,7 +97,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -118,8 +117,6 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 var context = context
 
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener::class.toString()!)!;
-        
-        
 ;
     
 
@@ -129,9 +126,7 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = context.getService(serviceReference); as InputAutomationRobotChangeListener;
-        
-        
+    var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener =  as InputAutomationRobotChangeListenercontext.getService(serviceReference);;
 ;
     
 
@@ -139,7 +134,8 @@ var context = context
                                     null
                                 )
                         
-                                    throw new Error("No Service For ServiceReference")
+                                    throw new Error("No Service For ServiceReference");
+                                
 
 
 
@@ -172,8 +168,6 @@ var context = context
     
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
-        
-        
 ;
     
 
@@ -188,14 +182,10 @@ var context = context
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getInputRobotInterface()!.length; index++)
         {
 
     var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
-        
-        
 ;
     
 inputAutomationRobotChangeListener!.onAdd(inputAutomationRobotChangeEvent);
@@ -224,8 +214,6 @@ var context = context
     
 
     var inputAutomationRobotChangeListener: InputAutomationRobotChangeListener = this.getInputAutomationRobotChangeListener(context)!;
-        
-        
 ;
     
 
@@ -240,14 +228,10 @@ var context = context
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getInputRobotInterface()!.length; index++)
         {
 
     var inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent = InputAutomationRobotUtil.getChangeEvent(this.getInputRobotInterface()[index]!)!;
-        
-        
 ;
     
 inputAutomationRobotChangeListener!.onRemove(inputAutomationRobotChangeEvent);

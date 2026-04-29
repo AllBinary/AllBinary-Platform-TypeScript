@@ -45,8 +45,6 @@ export class ImageCacheFactory
         
 
     private static readonly IMAGE_CACHE: ImageCache = new ImageCache();
-        
-        
 
     public static getInstance(): ImageCache{
 

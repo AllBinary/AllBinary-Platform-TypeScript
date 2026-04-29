@@ -55,8 +55,6 @@ export class RaceTrackAdjacentDropLayerFactory
         
 
     private DROP_LAYER_FACTORY: RaceTrackAdjacentDropLayerFactory = new RaceTrackAdjacentDropLayerFactory();
-        
-        
 
     public static getInstance(): RaceTrackAdjacentDropLayerFactory{
 
@@ -69,8 +67,6 @@ export class RaceTrackAdjacentDropLayerFactory
 
 
     private list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -94,15 +90,13 @@ this.list.clear();
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     public getRandomInstance(): LayerInterfaceFactoryInterface{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicArrayListUtil!.getRandom(this.list); as LayerInterfaceFactoryInterface;
+                        return  as LayerInterfaceFactoryInterfacethis.basicArrayListUtil!.getRandom(this.list);;
     
 }
 

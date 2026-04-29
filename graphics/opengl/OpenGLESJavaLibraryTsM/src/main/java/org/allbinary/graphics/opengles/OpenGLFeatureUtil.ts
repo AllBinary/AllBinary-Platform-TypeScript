@@ -53,8 +53,6 @@ export class OpenGLFeatureUtil
         
 
     private static readonly instance: OpenGLFeatureUtil = new OpenGLFeatureUtil();
-        
-        
 
     public static getInstance(): OpenGLFeatureUtil{
 
@@ -72,20 +70,14 @@ public constructor (){
             super();
         
     var openGLConfiguration: OpenGLConfiguration = OpenGLConfiguration.getInstance()!;
-        
-        
 ;
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 this.anyThreed= openGLConfiguration!.isOpenGL() && (features.isFeature(openGLFeatureFactory!.OPENGL_2D_AND_3D) || features.isFeature(openGLFeatureFactory!.OPENGL_3D));

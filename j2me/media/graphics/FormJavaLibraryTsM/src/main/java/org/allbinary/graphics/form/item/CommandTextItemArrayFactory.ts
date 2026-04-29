@@ -73,8 +73,6 @@ export class CommandTextItemArrayFactory
         
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly visitorInterface: Visitor
 public constructor (visitorInterface: Visitor){
@@ -92,8 +90,6 @@ var vector = vector
     //var foregroundBasicColor = foregroundBasicColor
 
     var size: number = vector.length!;
-        
-        
 ;
     
 this.list.clear();
@@ -104,20 +100,14 @@ this.list.clear();
     
 
     var priorityLimit: number = 7;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait(); && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
-        
-        
 ;
     
 
@@ -139,20 +129,16 @@ this.list.clear();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-command= vector.elementAt(index); as Command;
+command=  as Commandvector.elementAt(index);;
     
 
                         if(command.getPriority() < priorityLimit)
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command); as Boolean;
-        
-        
+    var aBoolean: Boolean =  as Booleanthis.visitorInterface!.visit(command);;
 ;
     
 
@@ -173,15 +159,11 @@ this.list.add(textItem);
 
 
     var textItemArray: CustomItem[] = new Array(this.list.size());
-        
-        
 ;
     
 
     var size2: number = textItemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -190,11 +172,9 @@ this.list.add(textItem);
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
-textItemArray[index]= this.list.objectArray[index]! as CustomItem;
+textItemArray[index]=  as CustomItemthis.list.objectArray[index]!;
     
 }
 

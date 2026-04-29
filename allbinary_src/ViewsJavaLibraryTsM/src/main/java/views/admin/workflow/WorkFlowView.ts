@@ -62,8 +62,6 @@ export class WorkFlowView extends HttpStoreComponentView implements DomNodeInter
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     workFlowInterface: WorkFlowInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -111,7 +109,7 @@ var document = document
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -145,7 +143,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

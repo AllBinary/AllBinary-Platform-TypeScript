@@ -45,8 +45,6 @@ export class PathFindingNodeCostInfoData
         
 
     private static readonly instance: PathFindingNodeCostInfoData = new PathFindingNodeCostInfoData();
-        
-        
 
     public static getInstance(): PathFindingNodeCostInfoData{
 
@@ -64,12 +62,8 @@ private constructor (){
 
 
     public MAX_TOTAL_COST: number = Integer.MAX_VALUE;
-        
-        
 
     public MAX_NODE_COST: number = Integer.MAX_VALUE /10000;
-        
-        
 
 }
                 

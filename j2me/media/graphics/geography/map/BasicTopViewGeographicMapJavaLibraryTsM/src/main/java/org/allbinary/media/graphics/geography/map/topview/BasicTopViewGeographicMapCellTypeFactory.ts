@@ -64,9 +64,9 @@ import { HashtableUtil } from "../../../../../../../org/allbinary/util/Hashtable
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
-
 import { BasicTopViewGeographicMapCellType } from "./BasicTopViewGeographicMapCellType.js";
+
+import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
@@ -86,15 +86,13 @@ export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellT
     public readonly OTHER_CELL_TYPE: BasicTopViewGeographicMapCellType
 
     private readonly maxTileId: number
-public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
+public constructor (tileTypeToTileIdsMap: Hashtable, maxTileId: number){
 
             super();
             //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
     //var maxTileId = maxTileId
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
@@ -103,26 +101,18 @@ this.maxTileId= maxTileId;
     
 
     var basicTopViewGeographicMapStrings: BasicTopViewGeographicMapStrings = BasicTopViewGeographicMapStrings.getInstance()!;
-        
-        
 ;
     
 
     var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var geographicMapCellTypeArray: GeographicMapCellType[] = geographicMapCellTypeFactory!.getGeographicMapCellTypeArray()!;
-        
-        
 ;
     
 
     var type: number = 0;
-        
-        
 ;
     
 
@@ -141,58 +131,40 @@ this.maxTileId= maxTileId;
                         }
                             
 
-    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.create(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;
-        
-        
+    var BLOCK_CELL_TYPE: BasicTopViewGeographicMapCellType = BasicTopViewGeographicMapCellType.createType(basicTopViewGeographicMapStrings!.DEFAULT, 1, 1)!;
 ;
     
 
     var OFF_MAP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var FLOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var DOOR_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var STAIRS_UP_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var STAIRS_DOWN_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var OTHER_CELL_TYPE: BasicTopViewGeographicMapCellType = BLOCK_CELL_TYPE;
-        
-        
 ;
     
 
     var keyArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(tileTypeToTileIdsMap)!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -213,13 +185,11 @@ this.maxTileId= maxTileId;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-key= keyArray[index]! as String;
+key=  as StringkeyArray[index]!;
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
+idsWithTypeList=  as BasicArrayListtileTypeToTileIdsMap!.get(key);;
     
 
                         if(key.equals(basicTopViewGeographicMapStrings!.WALL))

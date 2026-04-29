@@ -55,8 +55,6 @@ export class NoMenuInputProcessor extends BasicMenuInputProcessor {
         
 
     private static readonly SINGLETON: NoMenuInputProcessor = new NoMenuInputProcessor();
-        
-        
 
     public static getInstance(): NoMenuInputProcessor{
 

@@ -74,8 +74,6 @@ export class CategoryView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private categoryInterface: CategoryInterface
 public constructor (categoryInterface: CategoryInterface){
@@ -103,14 +101,10 @@ this.categoryInterface= categoryInterface;
 var document = document
 
     var node: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var childCategoryVector: Vector = this.categoryInterface!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -124,8 +118,6 @@ var document = document
                                 
 
     var size: number = childCategoryVector!.length!;
-        
-        
 ;
     
 
@@ -134,29 +126,23 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
     var anyType: any = childCategoryVector!.get(i)!;
-        
-        
 ;
     
 
     var categoryPropertiesInterface: CategoryPropertiesInterface = 
                 null
             ;
-        
-        
 ;
     
 
                         if(InterfaceUtil.isImplemented("CategoryPropertiesInterface", anyType))
                         
                                     {
-                                    categoryPropertiesInterface= anyType as CategoryPropertiesInterface;
+                                    categoryPropertiesInterface=  as CategoryPropertiesInterfaceanyType;
     
 
                                     }
@@ -166,9 +152,7 @@ i < size; i++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = anyType as CategoryInterface;
-        
-        
+    var categoryInterface: CategoryInterface =  as CategoryInterfaceanyType;
 ;
     
 categoryPropertiesInterface= categoryInterface!.getProperties();
@@ -179,22 +163,19 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                         else {
                             
     var isImpl: string = InterfaceUtil.viewAll(anyType!constructor, CommonSeps.getInstance()!.NEW_LINE)!;
-        
-        
 ;
     
 
 
 
-                            throw new Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl)
+                            throw new Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl);
+                    
 
                         }
                             
 
     var childCategoryNode: Node = new CategoryPropertiesView(categoryPropertiesInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(childCategoryNode);

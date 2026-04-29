@@ -48,8 +48,6 @@ export class TerrainEventListener
         
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject

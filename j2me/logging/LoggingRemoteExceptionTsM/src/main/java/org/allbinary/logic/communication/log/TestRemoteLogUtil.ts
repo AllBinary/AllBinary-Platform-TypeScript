@@ -51,8 +51,6 @@ export class TestRemoteLogUtil
         
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -69,14 +67,10 @@ public constructor (){
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Error("Pretend Exception"));

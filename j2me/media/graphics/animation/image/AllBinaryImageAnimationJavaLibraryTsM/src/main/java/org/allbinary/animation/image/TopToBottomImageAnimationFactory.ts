@@ -48,6 +48,8 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { TopToBottomImageAnimation } from "./TopToBottomImageAnimation.js";
+
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image, sequenceArray: number[], animationBehaviorFactory: AnimationBehaviorFactory){
@@ -68,8 +70,6 @@ public constructor (image: Image, sequenceArray: number[], animationBehaviorFact
     //var instanceId = instanceId
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 

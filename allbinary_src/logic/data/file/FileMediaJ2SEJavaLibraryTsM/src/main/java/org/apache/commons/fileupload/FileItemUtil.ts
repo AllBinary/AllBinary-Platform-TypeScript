@@ -54,8 +54,6 @@ export class FileItemUtil
         
 
     private static readonly instance: FileItemUtil = new FileItemUtil();
-        
-        
 
     public static getInstance(): FileItemUtil{
 
@@ -68,12 +66,8 @@ export class FileItemUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly DEFAULT_CHARSET: string = "ISO-8859-1";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -109,24 +103,18 @@ var fileItem = fileItem
 var fileItem = fileItem
 
     var streamUtil: StreamUtil = StreamUtil.getInstance()!;
-        
-        
 ;
     
 
     var inputStream: InputStream = 
                 null
             ;
-        
-        
 ;
     
 
     var outputStream: ByteArrayOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -147,8 +135,6 @@ outputStream= new ByteArrayOutputStream();
                         else {
                             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Uploaded File FieldName: ");
@@ -164,7 +150,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "write()");
 
                         }
                             
-outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
+outputStream=  as ByteArrayOutputStreamstreamUtil!.get(inputStream, outputStream, new Array(16384));;
     
 
 

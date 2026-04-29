@@ -94,12 +94,10 @@ super.actionPerformed(actionEvent);
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent(); as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacethis.getParent();;
 ;
     
-profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface);
+profileActionScriptConditionInterface!.removeProcessor( as ProfileActionScriptProcessorInterfacethis);
     
 JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
     
@@ -118,8 +116,6 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
 var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;
-        
-        
 ;
     
 

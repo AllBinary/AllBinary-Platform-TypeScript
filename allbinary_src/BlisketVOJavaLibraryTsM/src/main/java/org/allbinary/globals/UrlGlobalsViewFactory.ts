@@ -54,8 +54,6 @@ export class UrlGlobalsViewFactory
     public static getInstance(): DomNodeInterface{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -64,7 +62,7 @@ export class UrlGlobalsViewFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new UrlGlobalsView() as DomNodeInterface;
+                        return  as DomNodeInterfacenew UrlGlobalsView();
     
 
                 //: 
@@ -72,8 +70,6 @@ export class UrlGlobalsViewFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

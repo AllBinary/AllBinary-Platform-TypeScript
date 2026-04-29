@@ -54,8 +54,6 @@ export class CellPositionFactory
         
 
     private SINGLETON: CellPositionFactory = new CellPositionFactory();
-        
-        
 
     public static getInstance(): CellPositionFactory{
 
@@ -68,17 +66,11 @@ export class CellPositionFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly NONE: CellPosition = new CellPosition( -1,  -1,  -1,  -1);
-        
-        
 
     private cellPositionArray: CellPosition[][] = Array(0) { arrayOfNulls<CellPosition?>(0) }
                                                             ;
-        
-        
 
     private columns: number= 0
 
@@ -101,14 +93,10 @@ this.rows= rows;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Init: columns: ");
@@ -127,8 +115,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
 
                         for (
     var column: number = 0;
-        
-        
 column < columns; column++)
         {
 
@@ -137,8 +123,6 @@ column < columns; column++)
 
                         for (
     var row: number = 0;
-        
-        
 row < rows; row++)
         {
 this.createInstance(column, row);
@@ -150,7 +134,7 @@ this.createInstance(column, row);
 }
 
 
-    public getInstance(i_column: number, i_row: number): CellPosition{
+    public getInstanceColRow(i_column: number, i_row: number): CellPosition{
 var i_column = i_column
 var i_row = i_row
 
@@ -167,8 +151,6 @@ var i_row = i_row
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(new StringMaker().
@@ -190,8 +172,6 @@ var i_column = i_column
 var i_row = i_row
 
     var cellPositionCanBeNull: CellPosition? = this.cellPositionArray[i_column]![i_row];
-        
-        
 ;
     
 

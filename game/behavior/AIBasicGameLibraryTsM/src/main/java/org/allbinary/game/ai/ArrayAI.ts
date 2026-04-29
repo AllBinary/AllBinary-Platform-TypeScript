@@ -76,8 +76,6 @@ var allBinaryLayerManager = allBinaryLayerManager
 
     var size: number = this.artificialIntelligenceInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -86,8 +84,6 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.artificialIntelligenceInterfaceArray[index]!.processAI(allBinaryLayerManager);

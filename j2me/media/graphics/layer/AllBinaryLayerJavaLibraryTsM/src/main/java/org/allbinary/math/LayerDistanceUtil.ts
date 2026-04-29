@@ -52,8 +52,6 @@ export class LayerDistanceUtil
         
 
     private static readonly instance: LayerDistanceUtil = new LayerDistanceUtil();
-        
-        
 
     public static getInstance(): LayerDistanceUtil{
 
@@ -66,29 +64,23 @@ export class LayerDistanceUtil
 
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     public getDistance(layerInterface: AllBinaryLayer, layerInterface2: AllBinaryLayer): number{
     //var layerInterface = layerInterface
     //var layerInterface2 = layerInterface2
 
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
-        
-        
 ;
     
 
     var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mathUtil!.sqrt((dx *dx) +(dy *dy));;
+                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy));;
     
 }
 
@@ -98,51 +90,41 @@ export class LayerDistanceUtil
     //var layerInterface2 = layerInterface2
 
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
-        
-        
 ;
     
 
     var dy: number = (layerInterface!.getYP() +layerInterface!.getHalfHeight()) -(layerInterface2!.getYP() +layerInterface2!.getHalfHeight());
-        
-        
 ;
     
 
     var dz: number = (layerInterface!.getZP() +layerInterface!.getHalfDepth()) -(layerInterface2!.getZP() +layerInterface2!.getHalfDepth());
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz));;
+                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy) +(dz *dz));;
     
 }
 
 
-    public getDistance(layerInterface: AllBinaryLayer, point: GPoint): number{
+    public getDistanceAt(layerInterface: AllBinaryLayer, point: GPoint): number{
     //var layerInterface = layerInterface
     //var point = point
 
     var dx: number = layerInterface!.getXP() -point.getX();
-        
-        
 ;
     
 
     var dy: number = layerInterface!.getYP() -point.getY();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.mathUtil!.sqrt((dx *dx) +(dy *dy));;
+                        return Math.roundthis.mathUtil!.sqrt((dx *dx) +(dy *dy));;
     
 }
 

@@ -52,8 +52,6 @@ export class ShaderManager
         
 
     private static readonly instance: ShaderManager = new ShaderManager( -1,  -1);
-        
-        
 
     public static getInstance(): ShaderManager{
 
@@ -66,16 +64,10 @@ export class ShaderManager
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly LOAD_SHADER: string = "loadShader";
-        
-        
 
     readonly __VERSION__: string = "__VERSION__";
-        
-        
 
     public readonly GL_VERTEX_SHADER: number
 

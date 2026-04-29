@@ -35,8 +35,6 @@ export class TimeTypeUtil
         
 
     private static readonly instance: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 
     public static getInstance(): TimeTypeUtil{
 
@@ -49,18 +47,12 @@ export class TimeTypeUtil
 
 
     public readonly NIGHT: string = "Night";
-        
-        
 
     public readonly DAY: string = "Day";
-        
-        
 
     public isNight(): boolean{
 
     var hoursOfDay: number = this.getHourOfDay()!;
-        
-        
 ;
     
 
@@ -75,8 +67,6 @@ export class TimeTypeUtil
     public getHourOfDay(): number{
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
@@ -109,8 +99,6 @@ export class TimeTypeUtil
 var timeInMillis = timeInMillis
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 calendar.setTimeInMillis(timeInMillis);
@@ -128,8 +116,6 @@ calendar.setTimeInMillis(timeInMillis);
 var timeInMillis = timeInMillis
 
     var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;
-        
-        
 ;
     
 

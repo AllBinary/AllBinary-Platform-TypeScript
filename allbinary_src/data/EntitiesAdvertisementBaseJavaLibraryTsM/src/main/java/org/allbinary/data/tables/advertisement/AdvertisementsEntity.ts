@@ -76,16 +76,10 @@ export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEnt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "advertisements";
-        
-        
 
     private readonly _INDEX: string = "_index";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -133,29 +127,21 @@ var value = value
     public get(storeName: string): Vector{
 var storeName = storeName
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
     
 
     var hashMapVector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = hashMapVector!.length!;
-        
-        
 ;
     
 
@@ -164,14 +150,10 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object); as HashMap<any, any>;
-        
-        
+    var hashMap: HashMap =  as HashMaphashMapVector!.get(index as Object);;
 ;
     
 }
@@ -180,7 +162,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return vector as Vector;
+                        return  as Vectorvector;
     
 }
 
@@ -189,9 +171,7 @@ index < size; index++)
 var storeName = storeName
 var advertismentName = advertismentName
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
@@ -199,9 +179,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 keysAndValues!.put(AdvertisementData.getInstance()!.NAME, advertismentName);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var hashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -216,14 +194,10 @@ keysAndValues!.put(AdvertisementData.getInstance()!.NAME, advertismentName);
     public createTableStatement(): string{
 
     var advertisementData: AdvertisementData = AdvertisementData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -244,8 +218,6 @@ stringBuffer!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CH
     public createTable(): string{
 
     var returnStr: string = super.createTable(this.createTableStatement())!;
-        
-        
 ;
     
 
@@ -257,9 +229,9 @@ stringBuffer!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CH
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.ID) as String, updatedValues);
+super.updateWhere(EntryData.getInstance()!.ID,  as StringupdatedValues!.get(EntryData.getInstance()!.ID), updatedValues);
     
 }
 

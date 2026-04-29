@@ -80,20 +80,14 @@ this.totalInventorySaleValueMoney= new Money();
     
 
     var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
     var itemVector: Vector = inventoryEntityInterface!.getItems(storeFrontInterface)!;
-        
-        
 ;
     
 
     var size: number = itemVector!.length!;
-        
-        
 ;
     
 
@@ -102,28 +96,20 @@ this.totalInventorySaleValueMoney= new Money();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var itemInterface: ItemInterface = itemVector!.get(index); as ItemInterface;
-        
-        
+    var itemInterface: ItemInterface =  as ItemInterfaceitemVector!.get(index);;
 ;
     
 
     var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.toInt()!;
-        
-        
 ;
     
 this.totalNumberOfItems= this.totalNumberOfItems +numberInStock;
     
 
     var itemPriceMoney: Money = itemInterface!.getPrice()!;
-        
-        
 ;
     
 itemPriceMoney!.multiply(numberInStock);
@@ -135,12 +121,12 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 }
 
 
-    public getNumber(): Long{
+    public getNumber(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.totalNumberOfItems as Long;
+                        return this.totalNumberOfItems;
     
 }
 
@@ -155,11 +141,9 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(StoreFrontInventoryStatisticsData.getInstance()!.NUMBEROFITEMS, this.getNumber()!.toString());

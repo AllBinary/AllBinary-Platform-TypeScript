@@ -54,8 +54,6 @@ export class HighScoreCommandsBaseFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly HIGH_SCORE_COMMANDS: Command[]
 protected constructor (HIGH_SCORE_COMMANDS: Command[]){
@@ -69,8 +67,6 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
                                     this.HIGH_SCORE_COMMANDS= 
                                                 [
                                                     HighScoreCommands.getInstance()!.PERSONAL;
-        
-        
                                                 ];
     
 
@@ -93,8 +89,6 @@ var command = command
 
                         for (
     var index: number = this.HIGH_SCORE_COMMANDS.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -131,8 +125,6 @@ var command = command
 
                         for (
     var index: number = this.HIGH_SCORE_COMMANDS.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -153,7 +145,8 @@ index >= 0; index--)
 
 
 
-                            throw new Error("No Such Command")
+                            throw new Error("No Such Command");
+                    
 }
 
 

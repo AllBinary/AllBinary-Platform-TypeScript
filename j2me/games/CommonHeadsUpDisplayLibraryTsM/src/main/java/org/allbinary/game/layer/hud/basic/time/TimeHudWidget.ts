@@ -77,22 +77,14 @@ var timer = timer
 
 
     private readonly TIME_STRING: string = "Time ";
-        
-        
 
-    private readonly TIME_CHAR_ARRAY: string[] = charArrayOf('T','i','m','e',' ');
-        
-        
+    private readonly TIME_CHAR_ARRAY: string[] = ['T','i','m','e',' '];
 
     private offset: number
 
     private string: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
-        
-        
 
     private totalDigits: number = 1;
-        
-        
 
     private readonly timer: Timer
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
@@ -114,11 +106,9 @@ this.set();
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
-this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
+this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.defaultStringWidth(3);
     
 
                         if(direction == 0)
@@ -127,7 +117,8 @@ this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.stringWidth(3);
                                     
 
 
-                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION)
+                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
+                    
 
                                     }
                                 
@@ -152,7 +143,7 @@ this.totalDigits= this.timer.getCurrentTotalDigits();
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset);
+super.paintDX(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, offset);
     
 }
 

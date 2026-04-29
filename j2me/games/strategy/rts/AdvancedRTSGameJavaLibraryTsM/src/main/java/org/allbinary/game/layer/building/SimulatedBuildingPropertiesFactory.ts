@@ -66,8 +66,6 @@ export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactor
         
 
     private static readonly instance: SimulatedBuildingPropertiesFactory = new SimulatedBuildingPropertiesFactory();
-        
-        
 
     public static getInstance(): SimulatedBuildingPropertiesFactory{
 
@@ -94,8 +92,6 @@ export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactor
     //var buildingLayer = buildingLayer
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
-        
-        
 ;
     
 this.damageFloatersPaintableInterface= damageFloaters;
@@ -122,7 +118,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): Hashtable{
 
 
 

@@ -81,8 +81,6 @@ export class StreetAddress
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private id: string
 
@@ -99,8 +97,6 @@ export class StreetAddress
     private country: string
 
     private isDefault: boolean = false;
-        
-        
 public constructor (){
 
             super();
@@ -112,48 +108,36 @@ public constructor (node: Node){
         var node = node
 
     var nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 this.name= DomNodeHelper.getTextNodeValue(nameNode);
     
 
     var streetNode: Node = DomSearchHelper.getNode(StreetAddressData.STREET, node.getChildNodes())!;
-        
-        
 ;
     
 this.street= DomNodeHelper.getTextNodeValue(streetNode);
     
 
     var cityNode: Node = DomSearchHelper.getNode(StreetAddressData.CITY, node.getChildNodes())!;
-        
-        
 ;
     
 this.city= DomNodeHelper.getTextNodeValue(cityNode);
     
 
     var stateNode: Node = DomSearchHelper.getNode(StreetAddressData.STATE, node.getChildNodes())!;
-        
-        
 ;
     
 this.state= DomNodeHelper.getTextNodeValue(stateNode);
     
 
     var codeNode: Node = DomSearchHelper.getNode(StreetAddressData.CODE, node.getChildNodes())!;
-        
-        
 ;
     
 this.code= DomNodeHelper.getTextNodeValue(codeNode);
     
 
     var countryNode: Node = DomSearchHelper.getNode(StreetAddressData.COUNTRY, node.getChildNodes())!;
-        
-        
 ;
     
 this.country= DomNodeHelper.getTextNodeValue(countryNode);
@@ -233,28 +217,26 @@ this.log();
     
 }
 
-public constructor (address: HashMap<any, any>){
+public constructor (address: HashMap){
 
             super();
         var address = address
-this.id= address.get(StreetAddressData.ID); as String;
+this.id=  as Stringaddress.get(StreetAddressData.ID);;
     
-this.name= address.get(StreetAddressData.NAME); as String;
+this.name=  as Stringaddress.get(StreetAddressData.NAME);;
     
-this.street= address.get(StreetAddressData.STREET); as String;
+this.street=  as Stringaddress.get(StreetAddressData.STREET);;
     
-this.city= address.get(StreetAddressData.CITY); as String;
+this.city=  as Stringaddress.get(StreetAddressData.CITY);;
     
-this.state= address.get(StreetAddressData.STATE); as String;
+this.state=  as Stringaddress.get(StreetAddressData.STATE);;
     
-this.code= address.get(StreetAddressData.CODE); as String;
+this.code=  as Stringaddress.get(StreetAddressData.CODE);;
     
-this.country= address.get(StreetAddressData.COUNTRY); as String;
+this.country=  as Stringaddress.get(StreetAddressData.COUNTRY);;
     
 
-    var def: string = address.get(StreetAddressData.DEFAULT); as String;
-        
-        
+    var def: string =  as Stringaddress.get(StreetAddressData.DEFAULT);;
 ;
     
 
@@ -424,8 +406,6 @@ this.country= value;
     public isEmpty(): Boolean{
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -465,8 +445,6 @@ this.country= value;
     public isValid(): Boolean{
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -506,16 +484,12 @@ this.country= value;
     public validationInfo(): string{
 
     var stringBuffer: StringBuilder = new StringBuilder();
-        
-        
 ;
     
 stringBuffer!.append("Address Failed To Validate - All fields must contain data.<br></br>");
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -609,8 +583,6 @@ var document = document
         try {
             
     var node: Node = document.createElement(StreetAddressData.FORM)!;
-        
-        
 ;
     
 node.appendChild(this.toXmlNode(document));
@@ -631,8 +603,6 @@ node.appendChild(this.toXmlNode(document));
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
@@ -651,11 +621,9 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "toValidationInfoNode", e);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(StreetAddressData.ID, this.id);
@@ -687,39 +655,27 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
 var document = document
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
     var node: Node = document.createElement(StreetAddressData.ADDRESS)!;
-        
-        
 ;
     
 
@@ -728,20 +684,14 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
-        
-        
+    var name: string =  as StringkeyArray[i]!;
 ;
     
 
-    var value: string = stringUtil!.getInstance(hashMap!.get(name as Object) as String)!;
-        
-        
+    var value: string = stringUtil!.getNonNull( as StringhashMap!.get(name as Object))!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

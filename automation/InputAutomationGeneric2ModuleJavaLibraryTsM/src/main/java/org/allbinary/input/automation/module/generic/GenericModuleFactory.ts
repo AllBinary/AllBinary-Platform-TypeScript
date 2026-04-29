@@ -65,8 +65,6 @@ export class GenericModuleFactory extends AbstractInputAutomationFactory {
         
 
     private NAME: string = "Generic" +InputAutomationModuleData.MODULE_NAME_END;
-        
-        
 public constructor (){
             super(NAME, new GenericModuleConfigurationJPanel());
                     
@@ -83,21 +81,17 @@ public constructor (){
 
     var genericProfile: GenericProfile = 
                                     (getConfigurationJPanel as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;
-        
-        
 ;
     
 
-    var inputAutomationActionInterface: InputAutomationActionInterface = new GenericInputAutomationAction() as InputAutomationActionInterface;
-        
-        
+    var inputAutomationActionInterface: InputAutomationActionInterface =  as InputAutomationActionInterfacenew GenericInputAutomationAction();
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GenericInputAutomationWorker(inputAutomationActionInterface, genericProfile, new NoMotionRectangleConstraints(), new NoImageComparatorConstraints()) as RunnableInterface;
+                        return  as RunnableInterfacenew GenericInputAutomationWorker(inputAutomationActionInterface, genericProfile, new NoMotionRectangleConstraints(), new NoImageComparatorConstraints());
     
 }
 

@@ -70,14 +70,10 @@ export class UserEmailEventsConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private emailEventHashMap: HashMap<any, any>
+    private emailEventHashMap: HashMap
 public constructor (){
 
             super();
@@ -85,7 +81,7 @@ public constructor (){
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -95,7 +91,7 @@ this.init();
 
 
     init(){
-this.emailEventHashMap= new HashMap<any, any>();
+this.emailEventHashMap= new HashMap();
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
@@ -109,7 +105,7 @@ this.emailEventHashMap= new HashMap<any, any>();
 }
 
 
-    public getEventConfigurationHashMap(): HashMap<any, any>{
+    public getEventConfigurationHashMap(): HashMap{
 
 
 
@@ -142,9 +138,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
     //var userEmailEventNameData = userEmailEventNameData
     //var userInterface = userInterface
 
-    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()); as UserEmailEventConfigurationInterface;
-        
-        
+    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface =  as UserEmailEventConfigurationInterfacethis.emailEventHashMap!.get(userEmailEventNameData!.toString());;
 ;
     
 

@@ -52,8 +52,6 @@ export class OpenGLESImageExclusionUtil
         
 
     private static readonly instance: OpenGLESImageExclusionUtil = new OpenGLESImageExclusionUtil();
-        
-        
 
     public static getInstance(): OpenGLESImageExclusionUtil{
 
@@ -66,8 +64,6 @@ export class OpenGLESImageExclusionUtil
 
 
     public readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public isCustomScaling(image: Image): boolean{
     //var image = image

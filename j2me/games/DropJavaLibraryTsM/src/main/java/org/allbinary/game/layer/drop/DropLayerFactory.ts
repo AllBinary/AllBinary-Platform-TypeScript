@@ -55,8 +55,6 @@ export class DropLayerFactory
         
 
     private static readonly DROP_LAYER_FACTORY: DropLayerFactory = new DropLayerFactory();
-        
-        
 
     public static getInstance(): DropLayerFactory{
 
@@ -69,8 +67,6 @@ export class DropLayerFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -94,15 +90,13 @@ this.list.clear();
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     public getRandomInstance(): PickedUpLayerInterfaceFactoryInterface{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicArrayListUtil!.getRandom(this.list); as PickedUpLayerInterfaceFactoryInterface;
+                        return  as PickedUpLayerInterfaceFactoryInterfacethis.basicArrayListUtil!.getRandom(this.list);;
     
 }
 

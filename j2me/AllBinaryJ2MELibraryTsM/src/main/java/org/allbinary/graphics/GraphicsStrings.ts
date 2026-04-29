@@ -43,8 +43,6 @@ export class GraphicsStrings
         
 
     private static readonly instance: GraphicsStrings = new GraphicsStrings();
-        
-        
 
     public static getInstance(): GraphicsStrings{
 
@@ -57,28 +55,16 @@ export class GraphicsStrings
 
 
     public readonly ANIMATION: string = "animation";
-        
-        
 
     public readonly ANGLE: string = "angle";
-        
-        
 
     public readonly MOVEMENT_ANGLE: string = "movement_angle";
-        
-        
 
     public readonly ROTATION: string = "rotation";
-        
-        
 
     public readonly OPACITY: string = "opacity";
-        
-        
 
     public readonly HTML: string = "HTML";
-        
-        
 
 }
                 

@@ -50,8 +50,6 @@ export class SteeringVisitor extends Visitor {
         
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public getList(): BasicArrayList{
 

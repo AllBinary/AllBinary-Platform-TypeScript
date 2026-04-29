@@ -60,23 +60,21 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
         
 import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
 
+import { LicenseType } from "./LicenseType.js";
+
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
 
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
-
-import { LicenseType } from "./LicenseType.js";
 
 export class AbeClientLicense
             extends Object
          implements AbeLicenseInterface {
         
 
-    public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{
+    public static hasRequiredKeys(resultHashtable: Hashtable): boolean{
 var resultHashtable = resultHashtable
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
-        
-        
 ;
     
 
@@ -105,7 +103,7 @@ var resultHashtable = resultHashtable
 }
 
 
-    private hashtable: Hashtable<any, any>
+    private hashtable: Hashtable
 
     private id: string
 
@@ -114,22 +112,18 @@ var resultHashtable = resultHashtable
     private special: string
 
     private licenseType: LicenseType
-public constructor (hashtable: Hashtable<any, any>){
+public constructor (hashtable: Hashtable){
 
             super();
         var hashtable = hashtable
-this.hashtable= new Hashtable<any, any>();
+this.hashtable= new Hashtable();
     
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
-        
-        
 ;
     
 
     var keyValue: any = hashtable.get(abeClientInformationData!.KEY)!;
-        
-        
 ;
     
 
@@ -150,20 +144,16 @@ this.hashtable= new Hashtable<any, any>();
 
                                     }
                                 
-this.id= hashtable.get(abeClientInformationData!.LICENSEID); as String;
+this.id=  as Stringhashtable.get(abeClientInformationData!.LICENSEID);;
     
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS); as Vector;
-        
-        
+    var vector: Vector =  as Vectorhashtable.get(abeClientInformationData!.LICENSESERVERS);;
 ;
     
 this.servers= new BasicArrayListD();
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -172,8 +162,6 @@ this.servers= new BasicArrayListD();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.servers.add(vector.get(index));
@@ -182,16 +170,12 @@ this.servers.add(vector.get(index));
 
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
-this.setSpecial(stringUtil!.getInstance(hashtable.get(abeClientInformationData!.SPECIAL) as String));
+this.setSpecial(stringUtil!.getNonNull( as Stringhashtable.get(abeClientInformationData!.SPECIAL)));
     
 
-    var licenseTypeString: string = stringUtil!.getInstance(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
-        
-        
+    var licenseTypeString: string = stringUtil!.getNonNull( as Stringhashtable.get(abeClientInformationData!.LICENSE_TYPE))!;
 ;
     
 this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
@@ -215,7 +199,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(keyName as Object); as String;
+                        return  as Stringthis.hashtable.get(keyName as Object);;
     
 }
 
@@ -243,8 +227,6 @@ var keyName = keyName
     public isValid(): boolean{
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -272,14 +254,10 @@ var keyName = keyName
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var BREAK: string = "<br/>";
-        
-        
 ;
     
 stringBuffer!.append("License Id: ");
@@ -302,14 +280,10 @@ stringBuffer!.append(BREAK);
     
 
     var serverVector: BasicArrayList = this.getServers()!;
-        
-        
 ;
     
 
     var size: number = serverVector!.size()!;
-        
-        
 ;
     
 
@@ -318,14 +292,10 @@ stringBuffer!.append(BREAK);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index); as String;
-        
-        
+    var nextServerString: string =  as StringserverVector!.get(index);;
 ;
     
 stringBuffer!.append("Server: ");

@@ -52,8 +52,6 @@ export class ScreenRepaintProcessorFactory
         
 
     private static readonly instance: ScreenRepaintProcessorFactory = new ScreenRepaintProcessorFactory();
-        
-        
 
     public static getInstance(): ScreenRepaintProcessorFactory{
 
@@ -70,8 +68,8 @@ private constructor (){
         }
 
 
-    public getInstance(displayable: Displayable): Processor{
-var displayable = displayable
+    public create(displayable: Displayable): Processor{
+    //var displayable = displayable
 
                         if(!J2MEUtil.isJ2ME();)
                         

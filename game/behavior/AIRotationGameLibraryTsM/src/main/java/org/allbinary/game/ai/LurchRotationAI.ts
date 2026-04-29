@@ -71,9 +71,7 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.getRotationAnimationInterface();
@@ -97,21 +95,15 @@ this.update();
                         
                                     {
                                     
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface =  as RotationAnimationInterfacethis.rotationAnimationInterface;
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
@@ -124,21 +116,15 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT
                         
                                     {
                                     
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface =  as RotationAnimationInterfacethis.rotationAnimationInterface;
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.toInt());

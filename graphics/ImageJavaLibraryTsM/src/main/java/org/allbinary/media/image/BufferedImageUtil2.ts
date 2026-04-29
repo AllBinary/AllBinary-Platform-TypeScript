@@ -37,8 +37,6 @@ export class BufferedImageUtil2
         
 
     private static readonly instance: BufferedImageUtil2 = new BufferedImageUtil2();
-        
-        
 
     public static getInstance(): BufferedImageUtil2{
 
@@ -51,28 +49,20 @@ export class BufferedImageUtil2
 
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     public createSpriteImage(bufferedImageArray: BufferedImage[]): BufferedImage{
     //var bufferedImageArray = bufferedImageArray
 
     var columns: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
     var max: number = columns;
-        
-        
 ;
     
 
     var rows: number = 0;
-        
-        
 ;
     
 
@@ -99,26 +89,18 @@ rows= (bufferedImageArray!.length /columns);
     var bufferedImage: BufferedImage = this.imageUtil!.create(bufferedImageArray[0]!.getWidth(
                             null) *columns, bufferedImageArray[0]!.getHeight(
                             null) *rows)!;
-        
-        
 ;
     
 
     var g: Graphics2D = bufferedImage!.createGraphics()!;
-        
-        
 ;
     
 
     var columnIndex: number = 0;
-        
-        
 ;
     
 
     var rowIndex: number = 0;
-        
-        
 ;
     
 
@@ -127,8 +109,6 @@ rows= (bufferedImageArray!.length /columns);
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 

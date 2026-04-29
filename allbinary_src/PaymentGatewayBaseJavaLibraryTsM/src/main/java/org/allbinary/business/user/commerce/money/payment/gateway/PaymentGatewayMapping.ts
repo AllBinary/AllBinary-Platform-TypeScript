@@ -65,7 +65,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
 
 
@@ -92,7 +92,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.paymentGatewayInterface!.getKey(); as Object;
+                        return  as Objectthis.paymentGatewayInterface!.getKey();;
     
 }
 

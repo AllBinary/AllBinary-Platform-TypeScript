@@ -82,14 +82,12 @@ export class BasketRequestHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly weblisketSession: WeblisketSession
 
     private readonly storeFrontInterface: StoreFrontInterface
 
-    private readonly propertiesHashMap: HashMap<any, any>
+    private readonly propertiesHashMap: HashMap
 
     private readonly pageContext: PageContext
 
@@ -100,9 +98,7 @@ export class BasketRequestHelper extends TagHelper {
     private num: string
 
     private readonly MAX: number = 200;
-        
-        
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -111,12 +107,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -164,8 +158,6 @@ this.num= this.request.getParameter(BasketData.ITEMTOTALINBASKET);
                                     {
                                     
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 
@@ -238,8 +230,6 @@ basket.addItem(this.id, num);
                                     {
                                     
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 basket.removeItem(this.id);
@@ -291,8 +281,6 @@ basket.removeItem(this.id);
         try {
             
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 

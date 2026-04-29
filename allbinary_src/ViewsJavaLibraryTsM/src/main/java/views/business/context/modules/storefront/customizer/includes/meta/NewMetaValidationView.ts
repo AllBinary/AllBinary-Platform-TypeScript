@@ -67,8 +67,6 @@ export class NewMetaValidationView extends MetaView implements ValidationCompone
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -97,7 +95,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
             
 
                             {
-                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
+                            CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
     
 
                             }
@@ -137,8 +135,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

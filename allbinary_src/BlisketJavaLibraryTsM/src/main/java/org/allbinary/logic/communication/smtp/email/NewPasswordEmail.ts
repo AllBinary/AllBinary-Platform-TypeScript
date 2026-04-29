@@ -76,12 +76,8 @@ export class NewPasswordEmail
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
@@ -129,32 +125,22 @@ this.notifyUser();
                                 
 
     var emailSubject: string = "New Password For User: " +this.userInterface!.getUserName();
-        
-        
 ;
     
 
     var emailBody: string = "New Password: " +this.newPassword;
-        
-        
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(emailSubject, emailBody) as BasicEmailInfo;
-        
-        
+    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(emailSubject, emailBody);
 ;
     
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD)!;
-        
-        
 ;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
@@ -193,32 +179,22 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
                                 
 
     var subject: string = "New Password";
-        
-        
 ;
     
 
     var body: string = "New Password: " +this.newPassword;
-        
-        
 ;
     
 
-    var basicEmailInfo: BasicEmailInfo = new AdminEmailInfo(subject, body) as BasicEmailInfo;
-        
-        
+    var basicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(subject, body);
 ;
     
 
     var emailInfo: EmailInfo = new EmailInfo(basicEmailInfo);
-        
-        
 ;
     
 
     var userEmailEventHandler: UserEmailEventHandler = UserEmailEventHandlerSingletons.getInstance()!.getInstance(abeClientInformation, UserEmailEventNameData.NEWPASSWORD, this.userInterface)!;
-        
-        
 ;
     
 userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emailInfo);
@@ -239,7 +215,8 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD, emai
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

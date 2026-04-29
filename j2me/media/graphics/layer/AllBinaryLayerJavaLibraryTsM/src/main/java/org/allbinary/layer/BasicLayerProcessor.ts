@@ -59,16 +59,10 @@ export class BasicLayerProcessor
         
 
     public static readonly NULL_LAYER_PROCESSOR: BasicLayerProcessor = new BasicLayerProcessor();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 protected constructor (){
 
             super();
@@ -96,7 +90,8 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 

@@ -96,8 +96,6 @@ export class BaseGameInitialization
         
 
     public static readonly NULL_BASE_GAME_INITIALIZATION: BaseGameInitialization = new BaseGameInitialization([], 0);
-        
-        
 
     readonly resourceInitializationArray: ResourceInitialization[]
 
@@ -106,20 +104,12 @@ export class BaseGameInitialization
     private initialized: boolean= false
 
     readonly EARLY_RESOURCES: number = 0;
-        
-        
 
     readonly GAME_RESOURCES: number = 1;
-        
-        
 
     readonly EARLY_CHANGABLE_RESOURCES: number = 2;
-        
-        
 
     readonly GAME_CHANGABLE_RESOURCES: number = 3;
-        
-        
 public constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
 
             super();
@@ -145,12 +135,12 @@ var portion = portion
     //var abeClientInformation = abeClientInformation
 var portion = portion
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(InputFeatureFactory.getInstance()!.INPUT_MAPPING))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(InputFeatureFactory.getInstance()!.INPUT_MAPPING))
                         
                                     {
                                     PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.init(abeClientInformation);
     
-ProgressCanvasFactory.getInstance()!.addPortion(50, "Game Keys");
+ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Game Keys");
     
 ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance()!.INPUT_MAPPING);
     
@@ -168,8 +158,6 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
     //var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -178,8 +166,6 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
                                     {
                                     
     var localPortion: number = 40;
-        
-        
 ;
     
 
@@ -201,23 +187,21 @@ GameKeyEventFactory.getInstance()!.init();
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
-progressCanvas!.addPortion(localPortion, "Game Key Events");
+progressCanvas!.addNormalPortion(localPortion, "Game Key Events");
     
 BasicTouchInputFactory.getInstance()!.init(PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
     
-progressCanvas!.addPortion(localPortion, "Touch Input");
+progressCanvas!.addNormalPortion(localPortion, "Touch Input");
     
 CompleteMotionGestureInputToGameMotionGestureInput.getInstance()!.init();
     
-progressCanvas!.addPortion(localPortion, "Motion Input");
+progressCanvas!.addNormalPortion(localPortion, "Motion Input");
     
 GameFeatureImageCacheFactory.init();
     
-progressCanvas!.addPortion(localPortion, "Image Cache");
+progressCanvas!.addNormalPortion(localPortion, "Image Cache");
     
 this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
     
@@ -237,8 +221,6 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
 var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -287,14 +269,10 @@ this.allLoaded= true;
     public resourceAnimationChange(): boolean{
 
     var changedGameFeatureListener: ChangedGameFeatureListener = ChangedGameFeatureListener.getInstance()!;
-        
-        
 ;
     
 
     var gameConfigurationCentral: GameConfigurationCentral = GameConfigurationCentral.getInstance()!;
-        
-        
 ;
     
 
@@ -311,7 +289,7 @@ this.allLoaded= true;
                                     }
                                 
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
@@ -339,8 +317,6 @@ GameFeatureImageCacheFactory.releaseAll();
     
 
     var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 featuredAnimationInterfaceFactoryInterfaceFactory!.clear();

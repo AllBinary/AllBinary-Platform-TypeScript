@@ -45,8 +45,6 @@ export class VelocityProperties extends BasicVelocityProperties implements Veloc
         
 
     public static readonly NULL_VELOCITY_PROPERTIES: VelocityProperties = new VelocityProperties(0, 0);
-        
-        
 
     private maxForwardVelocity: number= 0
 
@@ -176,7 +174,7 @@ var maxVelocity = maxVelocity
                         if(this.velocityYBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
-                                    this.velocityYBasicDecimal!.set(maxVelocity);
+                                    this.velocityYBasicDecimal!.setint(maxVelocity);
     
 
                                     }
@@ -190,7 +188,7 @@ var maxVelocity = maxVelocity
                         if(this.velocityYBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
-                                    this.velocityYBasicDecimal!.set( -maxVelocity);
+                                    this.velocityYBasicDecimal!.setint( -maxVelocity);
     
 
                                     }
@@ -213,7 +211,7 @@ var maxVelocity = maxVelocity
                         if(this.velocityXBasicDecimal!.getUnscaled() > maxVelocity)
                         
                                     {
-                                    this.velocityXBasicDecimal!.set(maxVelocity);
+                                    this.velocityXBasicDecimal!.setint(maxVelocity);
     
 
                                     }
@@ -222,7 +220,7 @@ var maxVelocity = maxVelocity
                         if(this.velocityXBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
                                     {
-                                    this.velocityXBasicDecimal!.set( -maxVelocity);
+                                    this.velocityXBasicDecimal!.setint( -maxVelocity);
     
 
                                     }
@@ -293,22 +291,22 @@ var maxVelocity = maxVelocity
 }
 
 
-    public setVelocity(magnitude: number, angle: number, otherAngle: number){
+    public setVelocityi(magnitude: number, angle: number, otherAngle: number){
 var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
-super.setVelocity(magnitude, angle, otherAngle);
+super.setVelocityi(magnitude, angle, otherAngle);
     
 this.limitXYToForwardAndReverseMaxVelocity();
     
 }
 
 
-    public addVelocity(magnitude: number, angle: number, otherAngle: number){
+    public addVelocityi(magnitude: number, angle: number, otherAngle: number){
 var magnitude = magnitude
 var angle = angle
 var otherAngle = otherAngle
-super.addVelocity(magnitude, angle, otherAngle);
+super.addVelocityi(magnitude, angle, otherAngle);
     
 this.limitXYToForwardAndReverseMaxVelocity();
     

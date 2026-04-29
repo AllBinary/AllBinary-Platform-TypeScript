@@ -29,8 +29,6 @@ export class BasicGameInfoFactory
         
 
     private static readonly SINGLETON: BasicGameInfoFactory = new BasicGameInfoFactory();
-        
-        
 
     public static getInstance(): BasicGameInfoFactory{
 

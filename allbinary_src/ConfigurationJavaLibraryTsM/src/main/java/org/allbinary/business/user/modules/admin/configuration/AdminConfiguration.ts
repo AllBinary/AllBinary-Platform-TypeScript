@@ -83,12 +83,8 @@ export class AdminConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private contextConfigurationInterface: ContextConfigurationInterface
 public constructor (){
@@ -111,7 +107,7 @@ this.getFormData(new RequestParams(request).
     
 }
 
-public constructor (storeHashMap: HashMap<any, any>){
+public constructor (storeHashMap: HashMap){
 
             super();
         var storeHashMap = storeHashMap
@@ -124,11 +120,11 @@ this.getFormData(storeHashMap);
 
                 //@Throws(Error::class)
             
-    getFormData(storeHashMap: HashMap<any, any>){
+    getFormData(storeHashMap: HashMap){
 var storeHashMap = storeHashMap
 this.logUtil!.putF(this.commonStrings!.START, this, "getFormData");
     
-this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
+this.setContextConfigurationInterface( as ContextConfigurationInterfacenew ContextConfiguration(storeHashMap));
     
 }
 
@@ -139,14 +135,10 @@ this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as 
     public write(){
 
     var contextConfigurationDomDocumentMapping: ContextConfigurationDomDocumentMapping = new ContextConfigurationDomDocumentMapping(this.getContextConfigurationInterface());
-        
-        
 ;
     
 
     var cryptFileWriter: CryptFileWriter = new CryptFileWriter(ContextConfigurationData.getInstance()!.UNCRYPTED_EXTENSION, ContextConfigurationData.getInstance()!.ENCRYPTED_EXTENSION);
-        
-        
 ;
     
 cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfigurationData.CONTEXTNAME), contextConfigurationDomDocumentMapping!.toXmlDoc());

@@ -23,14 +23,16 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NullPriorityRunnable } from "./NullPriorityRunnable.js";
+
+import { PriorityRunnable } from "./PriorityRunnable.js";
+
 export class ThreadObjectUtil
             extends Object
          {
         
 
     private static readonly instance: ThreadObjectUtil = new ThreadObjectUtil();
-        
-        
 
     public static getInstance(): ThreadObjectUtil{
 
@@ -43,8 +45,6 @@ export class ThreadObjectUtil
 
 
     public readonly NULL_PRIORITY_RUNNABLE: PriorityRunnable = new NullPriorityRunnable();
-        
-        
 
     public notifyObject(anyType: Object){
 var anyType = anyType

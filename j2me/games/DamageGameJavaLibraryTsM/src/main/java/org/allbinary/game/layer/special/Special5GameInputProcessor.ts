@@ -61,7 +61,7 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
+    public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 this.collidableDestroyableDamageableLayer!.special5(allbinaryLayerManager, gameKeyEvent);

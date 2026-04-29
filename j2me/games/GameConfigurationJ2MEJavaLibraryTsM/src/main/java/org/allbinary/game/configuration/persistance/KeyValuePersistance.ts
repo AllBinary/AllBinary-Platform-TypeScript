@@ -39,9 +39,6 @@ import { RecordEnumeration } from "../../../../../javax/microedition/rms/RecordE
 import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
@@ -106,20 +103,18 @@ protected constructor (recordId: string){
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.loadAll(abeClientInformation, 1);
+this.loadAllSize(abeClientInformation, 1);
     
 }
 
 
                 //@Throws(Error::class)
             
-    public loadAll(abeClientInformation: AbeClientInformationInterface, size: number){
+    public loadAllSize(abeClientInformation: AbeClientInformationInterface, size: number){
     //var abeClientInformation = abeClientInformation
 var size = size
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-        
-        
 ;
     
 
@@ -128,8 +123,6 @@ var size = size
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-        
-        
 ;
     
 
@@ -146,14 +139,10 @@ var size = size
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -173,8 +162,6 @@ var size = size
         {
 
     var id: number = recordEnum!.nextRecordId()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -201,8 +188,6 @@ hashtable= new Hashtable<String, String>();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 name= inputStream!.readUTF();
@@ -217,7 +202,7 @@ hashtable.put(name, value);
 
 this.valueList!.add(hashtable);
     
-this.idList!.add(smallIntegerSingletonFactory!.getInstance(id));
+this.idList!.add(smallIntegerSingletonFactory!.getAt(id));
     
 
                                     }
@@ -231,7 +216,8 @@ this.idList!.add(smallIntegerSingletonFactory!.getInstance(id));
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -256,13 +242,11 @@ recordStore!.closeRecordStore();
 
                 //@Throws(Error::class)
             
-    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
+    public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable){
     //var abeClientInformation = abeClientInformation
     //var hashtable = hashtable
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-        
-        
 ;
     
 
@@ -274,14 +258,10 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-        
-        
 ;
     
 
@@ -290,14 +270,10 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-        
-        
 ;
     
 
@@ -307,8 +283,6 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 
     var size: number = objectArray!.length
                 ;
-        
-        
 ;
     
 
@@ -317,17 +291,15 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-outputStream!.writeUTF(objectArray[index]! as String);
+outputStream!.writeUTF( as StringobjectArray[index]!);
     
 outputStream!.writeUTF(commonSeps!.EQUALS);
     
-anyType= objectArray[index]! as Object;
+anyType=  as ObjectobjectArray[index]!;
     
-value= hashtable.get(anyType as Object); as String;
+value=  as Stringhashtable.get(anyType as Object);;
     
 outputStream!.writeUTF(value);
     
@@ -335,8 +307,6 @@ outputStream!.writeUTF(value);
 
 
     var savedGameBytes: number[] = byteArrayOutputStream!.toString()!.encodeToByteArray()!;
-        
-        
 ;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
@@ -348,7 +318,8 @@ recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -371,12 +342,10 @@ recordStore!.closeRecordStore();
 }
 
 
-    public get(index: number): Hashtable<any, any>{
+    public get(index: number): Hashtable{
 var index = index
 
-    var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;
-        
-        
+    var hashtable: Hashtable =  as Hashtablethis.valueList!.objectArray[index]!;
 ;
     
 

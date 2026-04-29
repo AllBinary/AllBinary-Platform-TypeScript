@@ -52,15 +52,11 @@ export class QuoteRequestIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "quoterequestId";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

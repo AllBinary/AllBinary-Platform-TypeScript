@@ -69,8 +69,6 @@ export class GameInitializationUtil
         
 
     private static readonly instance: GameInitializationUtil = new GameInitializationUtil();
-        
-        
 
     public static getInstance(): GameInitializationUtil{
 
@@ -83,8 +81,6 @@ export class GameInitializationUtil
 
 
     public readonly EVENT: GameInitializedEvent = new GameInitializedEvent(this);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -94,24 +90,18 @@ export class GameInitializationUtil
     //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(mainFeatureFactory!.STATIC))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(mainFeatureFactory!.STATIC))
                         
                                     {
                                     
     var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
-        
-        
 ;
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -129,8 +119,6 @@ export class GameInitializationUtil
                                     {
                                     
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_EARLY.getLevel());
@@ -144,7 +132,8 @@ this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY);
                             
 
 
-                            throw new Error("No Loading Feature Available")
+                            throw new Error("No Loading Feature Available");
+                    
 
                         }
                             
@@ -163,19 +152,15 @@ GameInitializedEventHandler.getInstance()!.fireEvent(EVENT);
     //var canvas = canvas
     //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
 
-                        if(ChangedGameFeatureListener.getInstance()!.isChanged(MainFeatureFactory.getInstance()!.STATIC))
+                        if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         
                                     {
                                     
     var gameInitializationInterface: GameInitializationInterface = gameInitializationInterfaceFactoryInterface!.getInstance()!;
-        
-        
 ;
     
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 gameInitializationInterface!.init(abeClientInformation, canvas.getCustomCommandListener(), resourceLoadingLevelFactory!.LOAD_ALL.getLevel());

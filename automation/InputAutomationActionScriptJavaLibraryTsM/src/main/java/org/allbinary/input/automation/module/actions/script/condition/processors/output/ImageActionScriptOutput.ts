@@ -68,32 +68,24 @@ import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput
 
 import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
 
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
+import { ImageTypes } from "./ImageTypes.js";
 
 import { ImageActionScriptOutputJPanel } from "./ImageActionScriptOutputJPanel.js";
 
-import { ImageActionScriptOutputProcessor } from "./ImageActionScriptOutputProcessor.js";
+import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
 
-import { ImageTypes } from "./ImageTypes.js";
+import { ImageActionScriptOutputProcessor } from "./ImageActionScriptOutputProcessor.js";
 
 export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {
         
 
     private static readonly NAME: string = "Captures";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private saved: boolean = false;
-        
-        
 
     private display: boolean = false;
-        
-        
 
     private imageTypes: ImageTypes
 
@@ -109,8 +101,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
     
 
     var actionNode: Node = DomSearchHelper.getNode(ImageActionScriptOutputData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -121,8 +111,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
                                     {
                                     
     var nodeList: NodeList = actionNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -131,14 +119,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var childNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -147,8 +131,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setSaved(.
@@ -163,8 +145,6 @@ this.setSaved(.
                                     {
                                     
     var booleanString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setSaved(.
@@ -186,7 +166,8 @@ this.setSaved(.
                             
 
 
-                            throw new Error("Action Script Output Unknown Node")
+                            throw new Error("Action Script Output Unknown Node");
+                    
 
                         }
                             
@@ -199,7 +180,8 @@ this.setSaved(.
                             
 
 
-                            throw new Error("Action Script Output Node Null")
+                            throw new Error("Action Script Output Node Null");
+                    
 
                         }
                             
@@ -234,11 +216,9 @@ this.actionScriptOutputJPanel= new ImageActionScriptOutputJPanel(this);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(ImageActionScriptOutputData.DISPLAY, Boolean.toString(this.isDisplay()));
@@ -262,14 +242,10 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 
     var newNode: Node = ModDomHelper.createNodeWithValueNodes(document, ImageActionScriptOutputData.NAME, this.toHashMap())!;
-        
-        
 ;
     
 newNode!.appendChild(this.getImageTypes()!.toXmlNode(document));
@@ -287,7 +263,7 @@ node.appendChild(newNode);
 
                 //@Throws(Error::class)
             
-    public process(frame: Long){
+    public process(frame: number){
 var frame = frame
 ImageActionScriptOutputProcessor.process(this, frame);
     
@@ -337,8 +313,6 @@ this.display= display;
     public future_toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(" Is Save: ");

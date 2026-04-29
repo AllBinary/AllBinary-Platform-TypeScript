@@ -70,20 +70,16 @@ import { GenericProfileActionScript } from "./GenericProfileActionScript.js";
 
 import { JTree } from "./JTree.js";
 
+import { JScrollPane } from "./JScrollPane.js";
+
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private defaultMutableTreeNode: DefaultMutableTreeNode = new DefaultMutableTreeNode("Root");
-        
-        
 
     private genericProfileActionScript: GenericProfileActionScript
 public constructor (){
@@ -99,8 +95,6 @@ initComponents();
     public updateJTree(){
 
     var defaultTreeModel: DefaultTreeModel = new DefaultTreeModel(this.getGenericProfileActionScript());
-        
-        
 ;
     
 this.getActionScriptJTree()!.setModel(defaultTreeModel);
@@ -155,7 +149,7 @@ setLayout(new java.awt.GridLayout(1, 0));
     
 this.actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
     
-actionScriptJTree!.addMouseListener(new object: java.awt.event.MouseAdapter()
+actionScriptJTree!.addMouseListener(new java.awt.event.MouseAdapter()
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
@@ -184,8 +178,6 @@ add(this.jScrollPane1);
 var evt = evt
 
     var button: number = evt.getButton()!;
-        
-        
 ;
     
 
@@ -194,8 +186,6 @@ var evt = evt
                                     {
                                     
     var treePath: TreePath = this.getActionScriptJTree()!.getSelectionPath()!;
-        
-        
 ;
     
 
@@ -206,8 +196,6 @@ var evt = evt
                                     {
                                     
     var anyType: any = treePath!.getLastPathComponent()!;
-        
-        
 ;
     
 
@@ -215,18 +203,14 @@ var evt = evt
                         
                                     {
                                     
-    var customTreeNodeInterface: CustomTreeNodeInterface = anyType as CustomTreeNodeInterface;
-        
-        
+    var customTreeNodeInterface: CustomTreeNodeInterface =  as CustomTreeNodeInterfaceanyType;
 ;
     
 
     var jPopupMenu: JPopupMenu = customTreeNodeInterface!.getJPopupMenu()!;
-        
-        
 ;
     
-jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY());
+jPopupMenu!.show( as JComponentevt.getSource(), evt.getX(), evt.getY());
     
 
                                     }

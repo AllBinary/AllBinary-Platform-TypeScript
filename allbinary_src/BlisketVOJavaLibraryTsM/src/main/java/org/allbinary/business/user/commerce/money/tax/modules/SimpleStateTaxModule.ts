@@ -102,28 +102,18 @@ export class SimpleStateTaxModule
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private streetAddress: StreetAddress
 
     private storeFrontInterface: StoreFrontInterface
 
     private readonly ALL: string = CommonPhoneStrings.getInstance()!.STAR;
-        
-        
 
     private readonly STATETAXPATH: string = "/generic/taxes/";
-        
-        
 
     private readonly STATETAXFILE: string = "stateTaxation.xml";
-        
-        
 
     private document: Document
 public constructor (){
@@ -134,7 +124,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float{
+    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number{
 var streetAddress = streetAddress
 var storeFrontInterface = storeFrontInterface
 this.streetAddress= streetAddress;
@@ -143,15 +133,11 @@ this.storeFrontInterface= storeFrontInterface;
     
 
     var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
-        
-        
 ;
     
 
     var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
-        
-        
 ;
     
 this.document= DomDocumentHelper.create(data);
@@ -167,22 +153,16 @@ this.document= DomDocumentHelper.create(data);
                                 
 
     var state: string = this.streetAddress!.getState()!;
-        
-        
 ;
     
 
     var country: string = this.streetAddress!.getCountry()!;
-        
-        
 ;
     
 state= state.uppercase();
     
 
     var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
-        
-        
 ;
     
 
@@ -191,38 +171,26 @@ state= state.uppercase();
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
     var taxNodeChildren: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
-        
-        
 ;
     
 
     var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -239,21 +207,15 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var rateNode: Node = DomSearchHelper.getNode(TaxData.RATE, taxNodeChildren)!;
-        
-        
 ;
     
 
     var taxRate: string = DomNodeHelper.getTextNodeValue(rateNode)!;
-        
-        
 ;
     
 
-    var taxRateFloat: Float = new Float(new Float(taxRate).
+    var taxRateFloat: number = new number(new number(taxRate).
                             toFloat() *.01);
-        
-        
 ;
     
 
@@ -274,7 +236,7 @@ index < nodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Float(0);
+                        return new number(0);
     
 }
 
@@ -290,15 +252,11 @@ this.storeFrontInterface= storeFrontInterface;
     
 
     var fileAbPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +this.storeFrontInterface!.getName() +this.STATETAXPATH, this.STATETAXFILE);
-        
-        
 ;
     
 
     var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(fileAbPath)!;
-        
-        
 ;
     
 this.document= DomDocumentHelper.create(data);
@@ -314,20 +272,14 @@ this.document= DomDocumentHelper.create(data);
                                 
 
     var country: string = this.streetAddress!.getCountry()!;
-        
-        
 ;
     
 
     var rootNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 
     var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
-        
-        
 ;
     
 
@@ -336,26 +288,18 @@ this.document= DomDocumentHelper.create(data);
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
     var taxNodeChildren: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var streetAddressNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, taxNodeChildren)!;
-        
-        
 ;
     
 
@@ -364,8 +308,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var stringBuffer: StringBuilder = new StringBuilder();
-        
-        
 ;
     
 stringBuffer!.append("StreetAddress Node: ");
@@ -387,14 +329,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                 
 
     var taxableStreetAddress: StreetAddress = new StreetAddress(streetAddressNode);
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -416,8 +354,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     {
                                     
     var state: string = this.streetAddress!.getState()!;
-        
-        
 ;
     
 

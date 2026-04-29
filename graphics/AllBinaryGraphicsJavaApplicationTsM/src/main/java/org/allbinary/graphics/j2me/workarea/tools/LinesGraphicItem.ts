@@ -98,6 +98,10 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
         
 import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
+import { Color } from "./Color.js";
+
+import { Points } from "./Points.js";
+
 import { PointsDomUtil } from "./PointsDomUtil.js";
 
 import { Math } from "./Math.js";
@@ -105,10 +109,6 @@ import { Math } from "./Math.js";
 import { PointsUtil } from "./PointsUtil.js";
 
 import { Graphics } from "./Graphics.js";
-
-import { Points } from "./Points.js";
-
-import { Color } from "./Color.js";
 
 import { MouseEvent } from "./MouseEvent.js";
 
@@ -120,32 +120,18 @@ export class LinesGraphicItem
         
 
     private static readonly RECT: string = "rect";
-        
-        
 
     private static readonly ARC: string = "arc";
-        
-        
 
     private static readonly STRING: string = "string";
-        
-        
 
     private static readonly CHAR: string = "char";
-        
-        
 
     private static readonly IMAGE: string = "image";
-        
-        
 
     private item: number = 0;
-        
-        
 
     private static readonly NAME: string = "Line Tool";
-        
-        
 
     public static getStaticName(): string{
 
@@ -158,16 +144,10 @@ export class LinesGraphicItem
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly gameInputStrings: GameInputStrings = GameInputStrings.getInstance()!;
-        
-        
 
     private treeNode: DefaultMutableTreeNode
 
@@ -178,16 +158,10 @@ export class LinesGraphicItem
     private fulcrumPoint: GPoint
 
     private active: boolean = false;
-        
-        
 
     private theta: number = 0;
-        
-        
 
     private color: Color = new Color(BasicColorFactory.getInstance()!.WHITE.toInt());
-        
-        
 
     private points: Points
 public constructor (){
@@ -223,14 +197,10 @@ this.active= false;
     
 
     var lineNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(linesNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var numberOfLines: number = lineNodes!.size()!;
-        
-        
 ;
     
 
@@ -239,26 +209,18 @@ this.active= false;
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfLines; index++)
         {
 
-    var lineNode: Node = lineNodes!.get(index); as Node;
-        
-        
+    var lineNode: Node =  as NodelineNodes!.get(index);;
 ;
     
 
     var pointNodes: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(lineNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var pointOneNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTONE, pointNodes)!;
-        
-        
 ;
     
 this.addPoint(pointOneNode!.getChildNodes());
@@ -269,8 +231,6 @@ this.addPoint(pointOneNode!.getChildNodes());
                                     {
                                     
     var pointTwoNode: Node = DomHelper.getInstance()!.searchNodeList(PointsDomUtil.getInstance()!.POINTTWO, pointNodes)!;
-        
-        
 ;
     
 this.addPoint(pointTwoNode!.getChildNodes());
@@ -287,7 +247,8 @@ this.addPoint(pointTwoNode!.getChildNodes());
                                     
 
 
-                            throw new Error("Lines node does not contain a line")
+                            throw new Error("Lines node does not contain a line");
+                    
 
                                     }
                                 
@@ -305,7 +266,7 @@ this.points.init();
     
 this.pointTreeNodeVector= new Vector();
     
-this.fulcrumPoint= PointFactory.getInstance()!.getInstance0(0, 0);
+this.fulcrumPoint= PointFactory.getInstance()!.createXY(0, 0);
     
 }
 
@@ -319,8 +280,6 @@ StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints())
     
 
     var basicGraphicsPipeline: BasicGraphicsPipeline = new BasicGraphicsPipeline(this.points.getPoints());
-        
-        
 ;
     
 basicGraphicsPipeline!.translate(x, y);
@@ -379,7 +338,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.treeNode as MutableTreeNode;
+                        return  as MutableTreeNodethis.treeNode;
     
 }
 
@@ -401,50 +360,34 @@ this.setRotate(this.theta +Math.toRadians(angle));
 var pointNodes = pointNodes
 
     var list: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(pointNodes)!;
-        
-        
 ;
     
 
     var xNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.X, list)!;
-        
-        
 ;
     
 
     var xTextNode: Node = xNode!.getFirstChild()!;
-        
-        
 ;
     
 
-    var xInteger: Integer = new Integer(xTextNode!.getNodeValue());
-        
-        
+    var xInteger: number = xTextNode!.getNodeValue();
 ;
     
 
     var yNode: Node = DomHelper.getInstance()!.searchNodeList(PositionStrings.getInstance()!.Y, list)!;
-        
-        
 ;
     
 
     var yTextNode: Node = yNode!.getFirstChild()!;
-        
-        
 ;
     
 
-    var yInteger: Integer = new Integer(yTextNode!.getNodeValue());
-        
-        
+    var yInteger: number = yTextNode!.getNodeValue();
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance0(xInteger!.toInt(), yInteger!.toInt())!;
-        
-        
+    var point: GPoint = PointFactory.getInstance()!.createXY(xInteger!.toInt(), yInteger!.toInt())!;
 ;
     
 this.addPoint(point);
@@ -461,7 +404,7 @@ this.logUtil!.putF(point.toString(), this, "addPoint");
     
 this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
-this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode);
+this.treeNode!.add( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1));
     
 }
 
@@ -472,8 +415,6 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     var point: GPoint = 
                 null
             ;
-        
-        
 ;
     
 
@@ -482,23 +423,19 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
                                     {
                                     
     var lastPoint: number = this.points.getSize() -1;
-        
-        
 ;
     
-point= this.points.getPoints()!.remove(lastPoint); as GPoint;
+point=  as GPointthis.points.getPoints()!.removeAt(lastPoint);;
     
 
     var index: number = this.pointTreeNodeVector!.length -1;
-        
-        
 ;
     
 
                         if(index > 0)
                         
                                     {
-                                    this.treeNode!.remove(this.pointTreeNodeVector!.get(index) as DefaultMutableTreeNode);
+                                    this.treeNode!.remove( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(index));
     
 this.pointTreeNodeVector!.remove(index);
     
@@ -545,8 +482,6 @@ this.active= true;
 var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -555,14 +490,10 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var point: GPoint = list.get(index); as GPoint;
-        
-        
+    var point: GPoint =  as GPointlist.get(index);;
 ;
     
 
@@ -571,11 +502,11 @@ index < size; index++)
                                 )
                         
                                     {
-                                    this.points.getPoints()!.add(PointFactory.getInstance()!.getInstance0(point.getX(), point.getY()));
+                                    this.points.getPoints()!.add(PointFactory.getInstance()!.createXY(point.getX(), point.getY()));
     
 this.pointTreeNodeVector!.add(new DefaultMutableTreeNode(point.toString()));
     
-this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1) as DefaultMutableTreeNode);
+this.treeNode!.add( as DefaultMutableTreeNodethis.pointTreeNodeVector!.get(this.pointTreeNodeVector!.length -1));
     
 
                                     }
@@ -590,8 +521,6 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     public duplicate(): GraphicItemInterface{
 
     var linesGraphicItem: LinesGraphicItem = new LinesGraphicItem();
-        
-        
 ;
     
 linesGraphicItem!.duplicatePoints(this.points.getPoints());
@@ -624,7 +553,7 @@ this.fulcrumPoint= point;
 }
 
 
-    public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
+    public paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number){
 var g = g
 var canvasAngle = canvasAngle
 var dimension = dimension
@@ -633,9 +562,7 @@ var y = y
 
         try {
             
-    var graphics: Graphics2D = g as Graphics2D;
-        
-        
+    var graphics: Graphics2D =  as Graphics2Dg;
 ;
     
 graphics.setColor(getColor());
@@ -654,9 +581,7 @@ graphics.setStroke(new BasicStroke(x));
                                     }
                                 
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(this.points.getPoints(), canvasAngle, PointFactory.getInstance()!.getInstance0(dimension.getWidth(), dimension.getHeight()))!;
-        
-        
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(this.points.getPoints(), canvasAngle, PointFactory.getInstance()!.createXY(dimension.getWidth(), dimension.getHeight()))!;
 ;
     
 
@@ -665,30 +590,26 @@ graphics.setStroke(new BasicStroke(x));
                                 )
                         
                                     {
-                                    this.currentMousePoint= this.points.getPoints()!.remove(this.points.getSize() -1); as GPoint;
+                                    this.currentMousePoint=  as GPointthis.points.getPoints()!.removeAt(this.points.getSize() -1);;
     
 
                                     }
                                 
 
     var size: number = tempPointVector!.size()!;
-        
-        
 ;
     
 
     var firstPoint: GPoint = 
                 null
             ;
-        
-        
 ;
     
 
                         if(size > 0)
                         
                                     {
-                                    firstPoint= tempPointVector!.get(0); as GPoint;
+                                    firstPoint=  as GPointtempPointVector!.get(0);;
     
 
                                     }
@@ -699,14 +620,10 @@ graphics.setStroke(new BasicStroke(x));
 
                         for (
     var index: number = 1;
-        
-        
 index < size; index++)
         {
 
-    var secondPoint: GPoint = tempPointVector!.get(index); as GPoint;
-        
-        
+    var secondPoint: GPoint =  as GPointtempPointVector!.get(index);;
 ;
     
 graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));
@@ -790,9 +707,7 @@ var y = y
 
         try {
             
-    var mousePoint: GPoint = PointFactory.getInstance()!.getInstance0(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
-        
-        
+    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
 ;
     
 
@@ -800,9 +715,7 @@ var y = y
                         
                                     {
                                     
-    var point: GPoint = PointFactory.getInstance()!.getInstance0(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
-        
-        
+    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
 ;
     
 StatusFactory.getInstance()!.setStatus("Line Point Added: " +point.toString());
@@ -874,15 +787,11 @@ var y = y
 
         try {
             
-    var mousePoint: GPoint = PointFactory.getInstance()!.getInstance0(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
-        
-        
+    var mousePoint: GPoint = PointFactory.getInstance()!.createXY(mouseEvent!.getPoint()!.x, mouseEvent!.getPoint()!.y)!;
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance0(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
-        
-        
+    var point: GPoint = PointFactory.getInstance()!.createXY(mousePoint!.getX() /x, mousePoint!.getY() /y)!;
 ;
     
 this.currentMousePoint= point;
@@ -904,8 +813,6 @@ var keyEvent = keyEvent
         try {
             
     var keyCode: number = keyEvent!.getKeyCode()!;
-        
-        
 ;
     
 

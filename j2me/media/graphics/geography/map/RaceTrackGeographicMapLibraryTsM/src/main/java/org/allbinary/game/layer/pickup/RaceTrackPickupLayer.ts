@@ -75,8 +75,6 @@ export class RaceTrackPickupLayer extends PickupLayer {
         
 
     private static readonly NAME: string = "RaceTrackPickupLayer";
-        
-        
 public constructor (){
             super(NAME, RemoteInfo.REMOTE_INFO, 0, CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY, NullAnimationFactory.getFactoryInstance()!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new TileLayerPositionIntoViewPosition());
                     
@@ -87,20 +85,16 @@ public constructor (){
 
 
     private readonly viewPositionEventHandler: ViewPositionEventHandler = ViewPositionEventHandler.getInstance()!;
-        
-        
 
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 var tiledLayer = tiledLayer
 
-    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
-        
-        
+    var viewPosition: TileLayerPositionIntoViewPosition =  as TileLayerPositionIntoViewPositionthis.getViewPosition();;
 ;
     
 viewPosition!.setTiledLayer(tiledLayer);
     
-viewPositionEventHandler!.addListener(this as AllBinaryLayer);
+viewPositionEventHandler!.addListener( as AllBinaryLayerthis);
     
 }
 

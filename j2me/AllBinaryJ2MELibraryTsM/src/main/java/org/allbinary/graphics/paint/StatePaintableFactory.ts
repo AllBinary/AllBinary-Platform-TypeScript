@@ -45,8 +45,6 @@ export class StatePaintableFactory
         
 
     private static readonly instance: StatePaintable = new StatePaintable();
-        
-        
 
     public static getInstance(): StatePaintable{
 

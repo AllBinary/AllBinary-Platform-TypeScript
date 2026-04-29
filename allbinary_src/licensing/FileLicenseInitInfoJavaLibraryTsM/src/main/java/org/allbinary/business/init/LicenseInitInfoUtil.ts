@@ -78,8 +78,6 @@ export class LicenseInitInfoUtil
         
 
     private static readonly instance: LicenseInitInfoUtil = new LicenseInitInfoUtil();
-        
-        
 
     public static getInstance(): LicenseInitInfoUtil{
 
@@ -92,28 +90,16 @@ export class LicenseInitInfoUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     public readonly INITFILENAME: string = "licenseinitdata.dat";
-        
-        
 
     public readonly ABOUT: string = "about";
-        
-        
 
     public readonly PRIVACY_POLICY: string = "privacy_policy";
-        
-        
 
     private filePath: string = stringUtil!.EMPTY_STRING;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
@@ -141,23 +127,17 @@ var initData = initData
         try {
             
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(this.filePath, INITFILENAME)!;
-        
-        
 ;
     
 
     var licenseIdCrypted: number[] = new WeakCrypt(1).
                             encrypt(initData!.getLicenseId())!.encodeToByteArray()!;
-        
-        
 ;
     
 dataOutputStream!.writeUTF(DatabaseEncoder.encode(licenseIdCrypted));
     
 
     var numberOfLicenseServers: number = initData!.getNumberOfServers()!;
-        
-        
 ;
     
 dataOutputStream!.writeInt(numberOfLicenseServers);
@@ -172,8 +152,6 @@ dataOutputStream!.writeInt(numberOfLicenseServers);
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfLicenseServers; index++)
         {
 licenseServerCrypted= new WeakCrypt(3).
@@ -194,7 +172,8 @@ FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -220,8 +199,6 @@ FileStreamFactory.getInstance()!.delete(this.filePath, INITFILENAME);
 var initializeCounter = initializeCounter
 
     var METHOD_NAME: string = "readAgain";
-        
-        
 ;
     
 
@@ -239,14 +216,10 @@ var initializeCounter = initializeCounter
     
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 
     var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, INITFILENAME)!;
-        
-        
 ;
     
 
@@ -257,26 +230,18 @@ var initializeCounter = initializeCounter
                                     {
                                     
     var iData: AbDataInputStream = new AbDataInputStream(iFile);
-        
-        
 ;
     
 
     var initInfo: LicenseInitInfo = new LicenseInitInfo();
-        
-        
 ;
     
 
     var decodedByteArray: number[] = DatabaseEncoder.decode(iData!.readUTF())!;
-        
-        
 ;
     
 
     var licenseIdDecoded: string = decodedByteArray.decodeToString();
-        
-        
 ;
     
 initInfo!.setLicenseId(new WeakCrypt(1).
@@ -284,14 +249,10 @@ initInfo!.setLicenseId(new WeakCrypt(1).
     
 
     var numberOfLicenseServers: number = iData!.readInt()!;
-        
-        
 ;
     
 
     var NEXT_FILE: string = "Next License Server From File: ";
-        
-        
 ;
     
 
@@ -304,8 +265,6 @@ initInfo!.setLicenseId(new WeakCrypt(1).
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfLicenseServers; index++)
         {
 decodedByteArray= DatabaseEncoder.decode(iData!.readUTF());
@@ -332,7 +291,8 @@ this.logUtil!.putF(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
                             
 
 
-                            throw new Error("Could Not Load License InitInfo: " +INITFILENAME)
+                            throw new Error("Could Not Load License InitInfo: " +INITFILENAME);
+                    
 
                         }
                             
@@ -355,7 +315,8 @@ this.logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain
 
 
 
-                            throw new Error("LicenseInitInfo Read Error: " +INITFILENAME)
+                            throw new Error("LicenseInitInfo Read Error: " +INITFILENAME);
+                    
 }
 
 }

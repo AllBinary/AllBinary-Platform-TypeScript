@@ -68,16 +68,10 @@ export class TextAnimation extends IndexedAnimation {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     textArrayP: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
-        
-        
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 public constructor (text: string, animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var text = text
@@ -97,7 +91,7 @@ this.setText(text);
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
@@ -105,15 +99,11 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
     
 
     var height: number = this.getHeight()!;
-        
-        
 ;
     
 
     var size: number = this.textArrayP!.length
                 ;
-        
-        
 ;
     
 
@@ -122,8 +112,6 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 graphics.drawString(this.textArrayP[index]!, x, y +(index *height), anchor);
@@ -137,8 +125,6 @@ graphics.drawString(this.textArrayP[index]!, x, y +(index *height), anchor);
 var text = text
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -149,20 +135,14 @@ var text = text
                                     {
                                     
     var index: number = 0;
-        
-        
 ;
     
 
     var startIndex: number = 0;
-        
-        
 ;
     
 
     var endIndex: number = 0;
-        
-        
 ;
     
 
@@ -208,14 +188,10 @@ index++;
                                     {
                                     
     var textArray: string[] = new Array(list.size());
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -224,11 +200,9 @@ index++;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-textArray[index]= list.get(index); as String;
+textArray[index]=  as Stringlist.get(index);;
     
 }
 
@@ -259,8 +233,6 @@ this.textArrayP= textArray;
     public getHeight(): number{
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 

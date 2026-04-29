@@ -54,8 +54,6 @@ export class TitleProgressBarSetProgressRunnable extends ProgressRunnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super(midletActivity, progressCanvas);
                     var midletActivity = midletActivity
@@ -70,7 +68,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            this.midletActivity!.onSetProgress(this.progressCanvas!.getValue(), this.progressCanvas!.getText());
+            this.midletActivity!.onSetProgress(Math.roundthis.progressCanvas!.getValue(), this.progressCanvas!.getText());
     
 
                 //: 
@@ -78,8 +76,6 @@ var progressCanvas = progressCanvas
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../../../java/lang/Runnable.js";
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -57,46 +59,37 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
         
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
+import { ShowTitleProgressBarRunnable } from "./ShowTitleProgressBarRunnable.js";
+
+import { DismissTitleProgressBarRunnable } from "./DismissTitleProgressBarRunnable.js";
+
+import { TitleProgressBarPortionSetProgressRunnable } from "./TitleProgressBarPortionSetProgressRunnable.js";
+
+import { TitleProgressBarSetProgressRunnable } from "./TitleProgressBarSetProgressRunnable.js";
+
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
     private showTitleProgressBarRunnable: ShowTitleProgressBarRunnable = new ShowTitleProgressBarRunnable();
-        
-        
 
     private dismissTitleProgressBarRunnable: DismissTitleProgressBarRunnable = new DismissTitleProgressBarRunnable();
-        
-        
 
     private progressDialogPortionSetProgressRunnable: TitleProgressBarPortionSetProgressRunnable = new TitleProgressBarPortionSetProgressRunnable();
-        
-        
 
     private progressDialogSetProgressRunnable: TitleProgressBarSetProgressRunnable = new TitleProgressBarSetProgressRunnable();
-        
-        
 
     private progressActivity: ProgressActivityInterface = NullProgressActivity.NULL_PROGRESS_ACTIVITY;
-        
-        
 
     private portion: number = 0;
-        
-        
 protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
-                    var title = title
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
+                        //var title = title
+    //var backgroundBasicColor = backgroundBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
 
 
                             //For kotlin this is before the body of the constructor.
                     
-}
-
-
-    public init(activity: SimpleProgressActivityInterface){
-var activity = activity
 }
 
 
@@ -197,12 +190,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
 }
 
 
-    public addPortion(value: number, text: string){
+    public addNormalPortion(value: number, text: string){
 var value = value
 var text = text
 
         try {
-            super.addPortion(value, text);
+            super.addNormalPortion(value, text);
     
 this.portion= value;
     
@@ -255,16 +248,12 @@ export inner class TitleProgressBarSetProgressRunnable
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
-    var value: number = this@AndroidTitleProgressBar.getValue();;
-        
-        
+    var value: number = Math.roundthis@AndroidTitleProgressBar.getValue();;
 ;
     
 this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
@@ -291,16 +280,12 @@ export inner class TitleProgressBarPortionSetProgressRunnable
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
-    var value: number = (this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion);
-        
-        
+    var value: number = Math.round(this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion);
 ;
     
 this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
@@ -327,16 +312,12 @@ export inner class ShowTitleProgressBarRunnable
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
-    var maxValue: number = this@AndroidTitleProgressBar.getMaxValue();;
-        
-        
+    var maxValue: number = Math.roundthis@AndroidTitleProgressBar.getMaxValue();;
 ;
     
 this@AndroidTitleProgressBar.progressActivity!.onShowTitleProgressBar(maxValue, false);
@@ -363,8 +344,6 @@ export inner class DismissTitleProgressBarRunnable
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 

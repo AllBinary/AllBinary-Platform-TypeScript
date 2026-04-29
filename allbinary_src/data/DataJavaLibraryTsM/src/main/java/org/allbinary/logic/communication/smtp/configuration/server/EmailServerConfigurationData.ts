@@ -43,20 +43,12 @@ export class EmailServerConfigurationData
         
 
     public static readonly NAME: string = "EMAIL_SERVER_CONFIGURATION_NAME";
-        
-        
 
     public static readonly SERVER: string = "EMAIL_SERVER_CONFIGURATION_SERVER";
-        
-        
 
     public static readonly ACCOUNT: string = "EMAIL_SERVER_CONFIGURATION_ACCOUNT";
-        
-        
 
     public static readonly PASSWORD: string = "EMAIL_SERVER_CONFIGURATION_PASSWORD";
-        
-        
 private constructor (){
 
             super();

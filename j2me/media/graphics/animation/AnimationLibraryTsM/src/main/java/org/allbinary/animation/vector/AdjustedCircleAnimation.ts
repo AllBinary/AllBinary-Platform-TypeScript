@@ -51,7 +51,7 @@ import { CircleAnimation } from "./CircleAnimation.js";
 export class AdjustedCircleAnimation extends CircleAnimation {
         
 
-    public static create(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
+    public static createAnimation(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
     //var width = width
     //var height = height
     //var xAdjustment = xAdjustment
@@ -59,11 +59,9 @@ export class AdjustedCircleAnimation extends CircleAnimation {
     //var basicColor = basicColor
 
     var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
-        
-        
 ;
     
-adjustedCircleAnimation!.init(xAdjustment, yAdjustment);
+adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
     
 
 
@@ -81,8 +79,6 @@ adjustedCircleAnimation!.init(xAdjustment, yAdjustment);
     //var basicColor = basicColor
 
     var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
-        
-        
 ;
     
 adjustedCircleAnimation!.init(innerWidth);
@@ -111,7 +107,7 @@ public constructor (width: number, height: number, basicColor: BasicColor){
 }
 
 
-    init(xAdjustment: number, yAdjustment: number){
+    initXY(xAdjustment: number, yAdjustment: number){
     //var xAdjustment = xAdjustment
     //var yAdjustment = yAdjustment
 this.xAdjustment= xAdjustment;
@@ -129,8 +125,6 @@ this.yAdjustment= yAdjustment;
                                     {
                                     
     var widthPortion: number = (((innerWidth /3) *10) /7);
-        
-        
 ;
     
 this.xAdjustment=  -((width>>1) -widthPortion);
@@ -151,7 +145,7 @@ this.yAdjustment= this.xAdjustment;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

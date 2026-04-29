@@ -46,8 +46,6 @@ export class GravityUtil
         
 
     private static readonly instance: GravityUtil = new GravityUtil();
-        
-        
 
     public static getInstance(): GravityUtil{
 
@@ -60,24 +58,13 @@ export class GravityUtil
 
 
     public readonly GAME_GRAVITY_VELOCITY: number = 1800;
-        
-        
 
     public readonly MAX_GAME_VELOCITY: number = 18000;
-        
-        
-
-    public process(velocityProperties: BasicVelocityProperties){
-var velocityProperties = velocityProperties
-velocityProperties!.getVelocityYBasicDecimalP()!.add(this.GAME_GRAVITY_VELOCITY);
-    
-}
-
 
     public process(velocityProperties: BasicVelocityProperties, customGravity: number){
 var velocityProperties = velocityProperties
 var customGravity = customGravity
-velocityProperties!.getVelocityYBasicDecimalP()!.add(customGravity);
+velocityProperties!.getVelocityYBasicDecimalP()!.addint(customGravity);
     
 }
 

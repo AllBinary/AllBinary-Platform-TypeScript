@@ -51,12 +51,8 @@ export class FedExShippingModule
         
 
     private readonly name: string = "FedEx";
-        
-        
 
     private readonly description: string = "Fast Mail";
-        
-        
 public constructor (){
 
             super();

@@ -49,8 +49,6 @@ export class PrimitiveArrayToString
 var floats = floats
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -59,8 +57,6 @@ var floats = floats
 
                         for (
     var index: number = 0;
-        
-        
 index < floats.length; index++)
         {
 stringBuffer!.appendfloat(floats[index]!);

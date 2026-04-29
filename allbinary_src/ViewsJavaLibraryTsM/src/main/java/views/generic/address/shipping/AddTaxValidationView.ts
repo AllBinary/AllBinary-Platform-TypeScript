@@ -85,8 +85,6 @@ export class AddTaxValidationView extends ShippingAddressView implements Validat
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -106,14 +104,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
-        
-        
 ;
     
 
     var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;
-        
-        
 ;
     
 
@@ -146,14 +140,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
-        
-        
 ;
     
 
@@ -173,8 +163,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var size: number = streetAddressList!.length!;
-        
-        
 ;
     
 
@@ -183,14 +171,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
 ;
     
 
@@ -245,20 +229,14 @@ index < size; index++)
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName())!;
-        
-        
 ;
     
 
     var taxInterface: TaxModuleInterface = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!;
-        
-        
 ;
     
 
@@ -287,20 +265,14 @@ index < size; index++)
                             
 
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 
     var streetAddressList: Vector = billingAddressesEntity!.get()!;
-        
-        
 ;
     
 
     var size: number = streetAddressList!.length!;
-        
-        
 ;
     
 
@@ -309,14 +281,10 @@ index < size; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var aStreetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
 ;
     
 

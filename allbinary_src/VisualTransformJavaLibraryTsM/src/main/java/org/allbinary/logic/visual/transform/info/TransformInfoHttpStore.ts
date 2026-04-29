@@ -75,9 +75,7 @@ export class TransformInfoHttpStore extends TransformInfoHttp implements Transfo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext, true);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -96,7 +94,7 @@ var pageContext = pageContext
                                 
 }
 
-public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (databaseHashMap: HashMap, propertiesHashMap: HashMap, pageContext: PageContext){
             super(databaseHashMap, propertiesHashMap, pageContext);
                     var databaseHashMap = databaseHashMap
 var propertiesHashMap = propertiesHashMap
@@ -111,8 +109,6 @@ var pageContext = pageContext
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Database HashMap: ");
@@ -128,11 +124,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap
 
                                     }
                                 
-this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
+this.setStoreName( as StringdatabaseHashMap!.get(StoreFrontData.getInstance()!.NAME));
     
 }
 
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var storeFrontInterface = storeFrontInterface
 var propertiesHashMap = propertiesHashMap
@@ -160,8 +156,6 @@ this.setStoreName(storeFrontInterface!.getName());
     getPath(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

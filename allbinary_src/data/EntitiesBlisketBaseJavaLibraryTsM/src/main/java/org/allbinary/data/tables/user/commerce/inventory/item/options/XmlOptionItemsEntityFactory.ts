@@ -51,8 +51,6 @@ export class XmlOptionItemsEntityFactory
         
 
     private static readonly instance: XmlOptionItemsEntityFactory = new XmlOptionItemsEntityFactory();
-        
-        
 
     public static getInstance(): XmlOptionItemsEntityFactory{
 
@@ -65,8 +63,6 @@ export class XmlOptionItemsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

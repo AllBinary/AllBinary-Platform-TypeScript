@@ -47,7 +47,7 @@ export interface UpKeyEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Error::class)
             
-    onUpKeyEvent(keyAsInteger: Integer)
+    onUpKeyEvent(keyAsInteger: number)
 
 }
                 

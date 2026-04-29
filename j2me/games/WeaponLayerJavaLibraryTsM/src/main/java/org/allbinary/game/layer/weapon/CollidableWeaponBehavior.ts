@@ -74,8 +74,6 @@ export class CollidableWeaponBehavior extends CollidableDestroyableDamageableBeh
         
 
     public static readonly NULL_COLLIDABLE_WEAPON_BEHAVIOR: CollidableWeaponBehavior = new CollidableWeaponBehavior(CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER, false);
-        
-        
 
     private collided: boolean= false
 
@@ -149,19 +147,15 @@ this.collided= true;
 
 
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
-        
-        
 
-    public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-                        if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
+                        if(this.collisionHelper!.isCollidable( as CollidableCompositeLayercollidableInterfaceCompositeInterface))
                         
                                     {
                                     
-    var layerInterface: AllBinaryLayer = collidableInterfaceCompositeInterface as AllBinaryLayer;
-        
-        
+    var layerInterface: AllBinaryLayer =  as AllBinaryLayercollidableInterfaceCompositeInterface;
 ;
     
 
@@ -198,9 +192,9 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
                 //@Throws(Error::class)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
+damageUtil!.process( as DamageableInterfacethis.ownerLayer,  as DamageableInterfacecollidableInterfaceCompositeInterface);
     
 this.collided= true;
     

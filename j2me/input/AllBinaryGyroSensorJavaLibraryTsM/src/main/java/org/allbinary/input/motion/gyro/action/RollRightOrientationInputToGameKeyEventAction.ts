@@ -50,8 +50,6 @@ export class RollRightOrientationInputToGameKeyEventAction extends GameKeyComple
         
 
     private static readonly instance: GameKeyCompleteMotionGestureInputEvent = new RollRightOrientationInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

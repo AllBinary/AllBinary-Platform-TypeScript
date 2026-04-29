@@ -63,8 +63,6 @@ export class ImageScaleUtil
         
 
     private static readonly instance: ImageScaleUtil = new ImageScaleUtil();
-        
-        
 
     public static getInstance(): ImageScaleUtil{
 
@@ -77,28 +75,16 @@ export class ImageScaleUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;
-        
-        
 
     private readonly gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 
     private readonly features: Features = Features.getInstance()!;
-        
-        
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
-        
-        
 private constructor (){
 
             super();
@@ -107,7 +93,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
+    public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -119,14 +105,14 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
+                        return this.createImage3(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
+    public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -152,32 +138,22 @@ private constructor (){
                                 
 
     var width: number = originalImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = originalImage!.getHeight()!;
-        
-        
 ;
     
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
-        
-        
 ;
     
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
-        
-        
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, (scaleX *width), (scaleY *height), mutable)!;
-        
-        
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.round(scaleX *width), Math.round(scaleY *height), mutable)!;
 ;
     
 
@@ -191,7 +167,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
+    public scale2(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
     //var originalImage = originalImage
     //var originalImageArray = originalImageArray
     //var ximageToShowArray = ximageToShowArray
@@ -219,20 +195,14 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
     //var mutable = mutable
 
     var width: number = originalImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = originalImage!.getHeight()!;
-        
-        
 ;
     
 
-    var scaledImage: Image = this.imageCopyUtil!.createImage(originalImage, scaleX, scaleY, mutable)!;
-        
-        
+    var scaledImage: Image = this.imageCopyUtil!.createImageWH(originalImage, Math.roundscaleX, Math.roundscaleY, mutable)!;
 ;
     
 originalImageArray[0]= scaledImage;

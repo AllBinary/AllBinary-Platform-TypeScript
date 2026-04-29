@@ -68,23 +68,15 @@ export class GameNotification
          {
         
 
-    public static readonly NULL_GAME_NOTIFICATION_EVENT: GameNotificationEvent = new GameNotificationEvent(NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, new Integer(0), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
-        
-        
+    public static readonly NULL_GAME_NOTIFICATION_EVENT: GameNotificationEvent = new GameNotificationEvent(NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, 0, BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
 
     public readonly stringList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public readonly timeList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public readonly colorList: BasicArrayList = new BasicArrayListD();
-        
-        
 
-    public add(string: string, seconds: Integer, basicColor: BasicColor){
+    public add(string: string, seconds: number, basicColor: BasicColor){
 var string = string
 var seconds = seconds
 var basicColor = basicColor

@@ -52,8 +52,6 @@ export class JavaHelpSetNotifier
         
 
     private vector: Vector = new Vector();
-        
-        
 
     static get(): Vector{
 
@@ -69,26 +67,18 @@ export class JavaHelpSetNotifier
 var helpSet = helpSet
 
     var isNotified: boolean = false;
-        
-        
 ;
     
 
     var url: URL = helpSet!.getHelpSetURL()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
     var urlArray: any[] = vector.toArray()!;
-        
-        
 ;
     
 
@@ -97,14 +87,10 @@ var helpSet = helpSet
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var nextURL: URL = urlArray[i]! as URL;
-        
-        
+    var nextURL: URL =  as URLurlArray[i]!;
 ;
     
 

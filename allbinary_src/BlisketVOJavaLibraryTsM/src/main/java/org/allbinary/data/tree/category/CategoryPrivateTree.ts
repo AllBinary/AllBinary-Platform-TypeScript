@@ -70,8 +70,6 @@ export class CategoryPrivateTree
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     categoryFactoryInterface: CategoryFactoryInterface
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
@@ -84,8 +82,6 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, "CategoryPrivateTree(CategoryFactoryInterface categoryFactoryInterface)");
@@ -115,14 +111,10 @@ var categoryInterface = categoryInterface
 
     var document: Document = new CategoryComponent(categoryInterface).
                             toXmlDoc()!;
-        
-        
 ;
     
 
     var cryptFileWriter: CryptFileWriter = new CryptFileWriter(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
-        
-        
 ;
     
 cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
@@ -150,8 +142,6 @@ var categoryInterface = categoryInterface
                                     {
                                     
     var categoryFile: AbFile = new AbFile(categoryInterface!.getFilePath());
-        
-        
 ;
     
 

@@ -103,8 +103,6 @@ this.attempts= attempts;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("EmailEvent Log: \n");

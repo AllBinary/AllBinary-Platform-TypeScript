@@ -62,7 +62,7 @@ export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
     readonly tiledLayerP: TiledLayer
 
     readonly debugColor: number
-public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
+public constructor (dataId: number, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
             super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight());
                         //var dataId = dataId
     //var tiledLayer = tiledLayer
@@ -89,15 +89,11 @@ this.tiledLayerP!.paint(graphics);
 
 
     readonly font2: Font = Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, 4)!;
-        
-        
 
     public paintDebug(graphics: Graphics){
     //var graphics = graphics
 
     var font: Font = graphics.getFont()!;
-        
-        
 ;
     
 graphics.setFont(this.font2);
@@ -106,74 +102,50 @@ graphics.setColor(this.debugColor);
     
 
     var x: number = this.tiledLayerP!.getX()!;
-        
-        
 ;
     
 
     var y: number = this.tiledLayerP!.getY()!;
-        
-        
 ;
     
 
     var firstColumn: number = 0;
-        
-        
 ;
     
 
     var firstRow: number = 0;
-        
-        
 ;
     
 
     var totalColumns: number = this.tiledLayerP!.getColumns()!;
-        
-        
 ;
     
 
     var totalRows: number = this.tiledLayerP!.getRows()!;
-        
-        
 ;
     
 
     var x0: number = x;
-        
-        
 ;
     
 
     var tile: number = 0;
-        
-        
 ;
     
 
     var tileHeight: number = this.tiledLayerP!.getCellHeight()!;
-        
-        
 ;
     
 
     var tileWidth: number = this.tiledLayerP!.getCellWidth()!;
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -182,8 +154,6 @@ graphics.setColor(this.debugColor);
 
                         for (
     var rowIndex: number = firstRow;
-        
-        
 rowIndex < totalRows; rowIndex++)
         {
 x= x0;
@@ -194,8 +164,6 @@ x= x0;
 
                         for (
     var columnIndex: number = firstColumn;
-        
-        
 columnIndex < totalColumns; columnIndex++)
         {
 tile= this.tiledLayerP!.getCell(columnIndex, rowIndex);
@@ -235,12 +203,12 @@ graphics.setFont(font);
 }
 
 
-    public move(dx: number, dy: number){
+    public moveDXY(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
 this.tiledLayerP!.move(dx, dy);
     
-super.move( -dx,  -dy);
+super.moveDXY( -dx,  -dy);
     
 }
 

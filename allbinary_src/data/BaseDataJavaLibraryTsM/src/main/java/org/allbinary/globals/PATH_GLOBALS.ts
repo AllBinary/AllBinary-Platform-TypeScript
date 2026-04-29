@@ -52,8 +52,6 @@ export class PATH_GLOBALS
         
 
     private static readonly instance: PATH_GLOBALS = new PATH_GLOBALS();
-        
-        
 
     public static getInstance(): PATH_GLOBALS{
 
@@ -69,14 +67,10 @@ private constructor (){
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append("data");

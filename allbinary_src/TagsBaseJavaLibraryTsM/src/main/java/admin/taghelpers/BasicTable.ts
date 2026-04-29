@@ -42,14 +42,14 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
         
 import { BasicTableInterface } from "./BasicTableInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class BasicTable
             extends Object
          implements BasicTableInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -57,7 +57,8 @@ export class BasicTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -67,7 +68,8 @@ export class BasicTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -77,7 +79,8 @@ export class BasicTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -87,7 +90,8 @@ export class BasicTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

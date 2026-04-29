@@ -106,8 +106,6 @@ export class RootStoreCategoryProperties
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private fileAbPath: AbPath
 
@@ -175,8 +173,6 @@ this.transformInfoInterface= transformInfoInterface;
     
 
     var categoryPath: string = CategoryUtil.getNameFromNode(node)!;
-        
-        
 ;
     
 this.abPath= new AbPath(categoryPath);
@@ -200,7 +196,7 @@ this.log();
     
 }
 
-public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
+public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap){
 
             super();
             //var transformInfoInterface = transformInfoInterface
@@ -209,8 +205,6 @@ this.transformInfoInterface= transformInfoInterface;
     
 
     var categoryPath: string = .toCharArray();
-        
-        
 ;
     
 this.abPath= new AbPath(categoryPath);
@@ -239,27 +233,19 @@ this.log();
             
     initPath(){
 
-    var transformInfoHttpStoreInterface: TransformInfoHttpInterface = this.transformInfoInterface as TransformInfoHttpInterface;
-        
-        
+    var transformInfoHttpStoreInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.transformInfoInterface;
 ;
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(transformInfoHttpStoreInterface!.getStoreName())!;
-        
-        
 ;
     
 
     var postPath: string = storeFrontInterface!.getCurrentHostNamePath() +storeFrontInterface!.getCategoryPath();
-        
-        
 ;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
-        
-        
+    var httpServletRequest: HttpServletRequest =  as HttpServletRequesttransformInfoHttpStoreInterface!.getPageContext()!.getRequest();;
 ;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);
@@ -294,7 +280,7 @@ this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath));
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getValue(); as Object;
+                        return  as Objectthis.getValue();;
     
 }
 
@@ -383,11 +369,9 @@ this.category= value;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var categoryHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var categoryHashMap: HashMap = new HashMap();
 ;
     
 categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
@@ -404,8 +388,6 @@ categoryHashMap!.put(CategoryData.getInstance()!.NAME, this.getValue());
     public toVector(): Vector{
 
     var categoryVector: Vector = new Vector();
-        
-        
 ;
     
 categoryVector!.add(this.getValue());

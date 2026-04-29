@@ -82,8 +82,6 @@ export class ShippingAddressesView extends HttpStoreComponentView implements Dom
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -96,12 +94,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
-this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequesthttpTransformInfoInterface!.getPageContext()!.getRequest();;
     
 }
 
@@ -124,14 +120,10 @@ var document = document
         try {
             
     var billingAddressesNode: Node = document.createElement(ShippingAddressData.MULTIPLE)!;
-        
-        
 ;
     
 
     var size: number = this.streetAddressList!.length!;
-        
-        
 ;
     
 
@@ -140,21 +132,17 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = this.streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var streetAddress: StreetAddress =  as StreetAddressthis.streetAddressList!.get(index);;
 ;
     
 billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));
     
 }
 
-billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, new Integer(streetAddressList!.length).
+billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.NUMBEROFADDRESSES, streetAddressList!.length.
                             toString()));
     
 
@@ -179,14 +167,15 @@ billingAddressesNode!.appendChild(ModDomHelper.createNameValueNodes(document, St
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -220,7 +209,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

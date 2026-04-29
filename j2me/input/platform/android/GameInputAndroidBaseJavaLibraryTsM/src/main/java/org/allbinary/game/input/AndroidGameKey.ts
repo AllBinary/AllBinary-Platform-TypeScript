@@ -36,9 +36,7 @@ export class AndroidGameKey extends Input {
     public static getString(keyCode: number): string{
 var keyCode = keyCode
 
-    var input: Input = InputFactory.getInstance()!.getInstance(keyCode)!;
-        
-        
+    var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
 ;
     
 
@@ -78,8 +76,6 @@ var name = name
                     
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 ;
     
 inputFactory!.inputIntegerArray[this.getId()]= this;

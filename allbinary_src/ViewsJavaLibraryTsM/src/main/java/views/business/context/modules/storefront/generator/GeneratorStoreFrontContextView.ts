@@ -59,8 +59,6 @@ export class GeneratorStoreFrontContextView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -86,8 +84,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 var group = group
 
     var result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;
-        
-        
 ;
     
 
@@ -143,7 +139,8 @@ var group = group
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

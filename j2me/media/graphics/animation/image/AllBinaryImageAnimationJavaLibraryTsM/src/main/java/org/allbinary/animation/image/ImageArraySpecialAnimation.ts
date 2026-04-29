@@ -64,8 +64,6 @@ export class ImageArraySpecialAnimation extends ImageArrayAnimation implements S
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(270);
-        
-        
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(imageArray, animationBehavior);
                         //var imageArray = imageArray
@@ -80,8 +78,6 @@ this.reset();
 
 
     private loopCount: number = 0;
-        
-        
 
     public getLoopCount(): number{
 
@@ -137,8 +133,6 @@ this.loopCount= 0;
 
 
     private readonly loopCountTotal: number = 1;
-        
-        
 
     public isComplete(): boolean{
 
@@ -167,7 +161,7 @@ this.loopCount= 0;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
 var x = x
 var y = y
@@ -175,7 +169,7 @@ x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.c
     
 y= 5;
     
-super.paint(graphics, x, y);
+super.paintXY(graphics, x, y);
     
 }
 

@@ -48,8 +48,6 @@ export class NoHardwareComponent
         
 
     private static readonly instance: NoHardwareComponent = new NoHardwareComponent();
-        
-        
 
     public static getInstance(): NoHardwareComponent{
 

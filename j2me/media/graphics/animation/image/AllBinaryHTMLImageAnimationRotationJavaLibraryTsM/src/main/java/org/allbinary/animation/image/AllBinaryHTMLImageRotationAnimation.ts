@@ -36,9 +36,6 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
 
     
-import { ImageCreationUtil } from "../../../../org/allbinary/media/image/ImageCreationUtil.js";
-
-    
 import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageModifierUtil.js";
 
     
@@ -83,30 +80,20 @@ export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimat
         
 
     private readonly imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;
-        
-        
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
-        
-        
 
     private readonly originalImage: Image
 
     private readonly twoImages: Image[] = new Array(2);
-        
-        
 
     private readonly canvasSurfaceArray: CanvasSurface[] = new Array(2);
-        
-        
 
     private imageToShow: Image
 
     private bufferedImageIndex: number= 0
 
     private alphaProcessor: AlphaBaseProcessor = AlphaBaseProcessor.getInstance()!;
-        
-        
 protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
                         //var originalImage = originalImage
@@ -136,21 +123,15 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
     public getCanvasSurface(image: Image): CanvasSurface{
     //var image = image
 
-    var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
-        
-        
+    var htmlImage: PlaynMutableImage =  as PlaynMutableImageimage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-        
-        
 ;
     
 canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight() /2);
@@ -168,8 +149,6 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
     //var basicColor = basicColor
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -201,8 +180,6 @@ super.setBasicColorP(basicColor);
     //var alpha = alpha
 
     var changed: boolean = false;
-        
-        
 ;
     
 
@@ -249,13 +226,11 @@ this.updateImage();
     updateImage(){
 
     var canvasSurface: CanvasSurface = this.canvasSurfaceArray[this.bufferedImageIndex]!;
-        
-        
 ;
     
 canvasSurface!.save();
     
-this.imageRotationUtil!.rotateImageClear(this.originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90);
+this.imageRotationUtil!.rotateImageCanvasSurfaceClear(this.originalImage, this.twoImages[this.bufferedImageIndex]!, canvasSurface, this.angleInfo!.getAngle() +90);
     
 this.alphaProcessor!.setAlpha(this.imageModifierUtil, this.originalImage, this.twoImages[this.bufferedImageIndex]!, this.alphaP);
     
@@ -298,7 +273,7 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

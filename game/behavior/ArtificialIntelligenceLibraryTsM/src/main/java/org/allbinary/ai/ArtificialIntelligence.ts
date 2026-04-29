@@ -48,8 +48,6 @@ export class ArtificialIntelligence
         
 
     private static readonly instance: ArtificialIntelligence = new ArtificialIntelligence();
-        
-        
 
     public static getInstance(): ArtificialIntelligence{
 

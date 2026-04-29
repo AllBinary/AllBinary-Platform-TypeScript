@@ -69,7 +69,7 @@ import { BasicWeaponPart } from "./BasicWeaponPart.js";
 export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 
-    public static create(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
+    public static createPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
     //var animationInterface = animationInterface
     //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
@@ -101,16 +101,14 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
+    public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var angle = angle
 var otherAngle = otherAngle
     //var weaponProperties = weaponProperties
     //var scoreableInterface = scoreableInterface
 
-    var weaponLayer: WeaponLayer = weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), angle, otherAngle, weaponProperties, scoreableInterface)!;
-        
-        
+    var weaponLayer: WeaponLayer = weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.roundangle, Math.roundotherAngle, weaponProperties, scoreableInterface)!;
 ;
     
 allbinaryLayerManager!.append(weaponLayer);

@@ -66,16 +66,10 @@ export class InputAutomationServiceConsumer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly osgiServiceUtil: OSGIServiceUtil = OSGIServiceUtil.getInstance()!;
-        
-        
 
     private registryName: string
 
@@ -104,16 +98,12 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
     
 
     var vector: Vector = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
-        
-        
 ;
     
 this.logUtil!.putF("Processing " +vector.length +" Services", this, commonStrings!.PROCESS);
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -126,11 +116,9 @@ this.logUtil!.putF("Processing " +vector.length +" Services", this, commonString
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-osgiServiceInterface= vector.get(index); as OSGIServiceInterface;
+osgiServiceInterface=  as OSGIServiceInterfacevector.get(index);;
     
 
                         if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);)
@@ -139,7 +127,8 @@ osgiServiceInterface= vector.get(index); as OSGIServiceInterface;
                                     
 
 
-                            throw new Error("Unable to process service: " +osgiServiceInterface)
+                            throw new Error("Unable to process service: " +osgiServiceInterface);
+                    
 
                                     }
                                 

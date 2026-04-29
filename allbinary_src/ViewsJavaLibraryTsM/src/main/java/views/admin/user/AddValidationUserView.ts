@@ -71,8 +71,6 @@ export class AddValidationUserView extends HttpContextView implements Validation
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -162,8 +160,6 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

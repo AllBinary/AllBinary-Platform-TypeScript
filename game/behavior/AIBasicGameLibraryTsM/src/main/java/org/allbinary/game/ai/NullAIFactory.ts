@@ -51,14 +51,14 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
+import { NullAI } from "./NullAI.js";
+
 export class NullAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
     private NULL_AI: NullAI = new NullAI();
-        
-        
 
     public static getInstance(): ArtificialIntelligenceInterface{
 
@@ -70,7 +70,7 @@ export class NullAIFactory
 }
 
 
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput

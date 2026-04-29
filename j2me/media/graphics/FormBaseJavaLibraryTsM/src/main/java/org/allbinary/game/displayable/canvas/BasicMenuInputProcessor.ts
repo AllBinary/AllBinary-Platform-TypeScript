@@ -65,12 +65,8 @@ export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMoti
         
 
     public readonly motionGestureEventList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private canvas: Canvas = NullCanvas.NULL_CANVAS;
-        
-        
 protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas){
             super(gameKeyEventList, new BasicArrayListD(), playerInputId);
                     var gameKeyEventList = gameKeyEventList
@@ -104,14 +100,14 @@ this.canvas= canvas;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.canvas as MyCanvas;
+                        return  as MyCanvasthis.canvas;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public processInput(): number{
+    public processInputList(): number{
 
 
 

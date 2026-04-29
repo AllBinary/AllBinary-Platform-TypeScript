@@ -66,8 +66,6 @@ export class StoreCustomizerComponentUtil
         
 
     private static readonly instance: StoreCustomizerComponentUtil = new StoreCustomizerComponentUtil();
-        
-        
 
     public static getInstance(): StoreCustomizerComponentUtil{
 
@@ -80,8 +78,6 @@ export class StoreCustomizerComponentUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -104,20 +100,14 @@ var transformInfoInterface = transformInfoInterface
                                 
 
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
-        
-        
 ;
     
 
     var allCustomizedViews: Vector = customizerUtil!.getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface)!;
-        
-        
 ;
     
 
     var size: number = allCustomizedViews!.length!;
-        
-        
 ;
     
 
@@ -126,20 +116,14 @@ var transformInfoInterface = transformInfoInterface
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allCustomizedViews!.get(index); as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallCustomizedViews!.get(index);;
 ;
     
 
     var allViewsToBeModified: Vector = customizerUtil!.getTransformInfoObjectConfigComponentNodesToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
-        
-        
 ;
     
 
@@ -172,14 +156,10 @@ var transformInfoInterface = transformInfoInterface
 var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
-        
-        
 ;
     
 
     var size: number = allViewsToBeModifiedVector!.length!;
-        
-        
 ;
     
 
@@ -188,20 +168,14 @@ var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
-        
-        
+    var nextTransformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
 ;
     
 
     var specifiedTransformInfoInterface: TransformInfoInterface = customizerUtil!.getTransformInfoInterfaceToCustomize(transformInfoInterface, nextTransformInfoInterface)!;
-        
-        
 ;
     
 

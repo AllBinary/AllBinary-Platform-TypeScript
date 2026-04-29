@@ -47,8 +47,6 @@ export class ScreenCaptureFactory
         
 
     private static readonly instance: ScreenCapture = ScreenCaptureNoneFactory.getInstance()!;
-        
-        
 
     public static getInstance(): ScreenCapture{
 

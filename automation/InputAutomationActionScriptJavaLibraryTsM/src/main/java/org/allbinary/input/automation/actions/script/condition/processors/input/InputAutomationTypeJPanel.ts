@@ -43,6 +43,8 @@ import { JComboBox } from "./JComboBox.js";
 
 import { Short } from "./Short.js";
 
+import { JLabel } from "./JLabel.js";
+
 export class InputAutomationTypeJPanel extends javax.swing.JPanel {
         
 public constructor (){
@@ -78,16 +80,12 @@ this.jLabel1= new javax.swing.JLabel();
 this.inputAutomationTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "DirectX","DirectX 8","Low Level","Java Robot";
-        
-        
                                                 ]));
     
 this.jLabel1!.setText("Input Type:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

@@ -47,8 +47,6 @@ export class NullEventListener
         
 
     public static readonly NULL_EVENT_LISTENER: NullEventListener = new NullEventListener();
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject

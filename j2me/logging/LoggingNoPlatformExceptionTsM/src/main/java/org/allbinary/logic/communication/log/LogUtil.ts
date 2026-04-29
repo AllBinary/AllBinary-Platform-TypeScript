@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Log } from "./Log.js";
 
 expect export class LogUtil

@@ -56,8 +56,6 @@ export class CssCustomizerView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     styleValidationInterface: ValidationInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -73,7 +71,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Error::class)
             
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.styleValidationInterface);
     
 }
 
@@ -107,7 +105,8 @@ this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

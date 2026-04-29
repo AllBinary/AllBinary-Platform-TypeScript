@@ -42,16 +42,16 @@ import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
         
 import { SensorGameUpdateProcessor } from "./SensorGameUpdateProcessor.js";
 
+import { AccelerometerSensorUpdateProcessor } from "./AccelerometerSensorUpdateProcessor.js";
+
+import { GyroSensorUpdateProcessor } from "./GyroSensorUpdateProcessor.js";
+
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 
     private readonly accelerometerSensorUpdateProcessor: Processor = new AccelerometerSensorUpdateProcessor();
-        
-        
 
     private readonly gyroSensorUpdateProcessor: Processor = new GyroSensorUpdateProcessor();
-        
-        
 
                 //@Throws(Error::class)
             

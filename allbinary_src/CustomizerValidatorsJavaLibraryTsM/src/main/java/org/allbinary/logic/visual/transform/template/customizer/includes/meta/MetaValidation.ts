@@ -77,8 +77,6 @@ export class MetaValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private label: string
 
@@ -125,7 +123,8 @@ public constructor (document: Document){
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -134,8 +133,6 @@ public constructor (document: Document){
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -173,8 +170,6 @@ public constructor (document: Document){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -228,17 +223,13 @@ var document = document
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var htmlMetaAttributeDataFactory: HtmlMetaAttributeDataFactory = HtmlMetaAttributeDataFactory.getInstance()!;
-        
-        
 ;
     
 hashMap!.put(HtmlMetaData.getInstance()!.LABEL.toString(), this.label);
@@ -264,8 +255,6 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
 var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;
-        
-        
 ;
     
 

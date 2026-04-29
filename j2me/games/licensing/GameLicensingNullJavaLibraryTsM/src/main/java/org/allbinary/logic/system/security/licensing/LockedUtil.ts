@@ -37,16 +37,16 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LockedUtilInterface } from "./LockedUtilInterface.js";
+
 import { LockableFeature } from "./LockableFeature.js";
 
 export class LockedUtil
             extends Object
-         {
+         implements LockedUtilInterface {
         
 
     private static readonly instance: LockedUtil = new LockedUtil();
-        
-        
 
     public static getInstance(): LockedUtil{
 
@@ -58,7 +58,7 @@ export class LockedUtil
 }
 
 
-    public isLockedFeature(): boolean{
+    public isLocked(): boolean{
 
 
 

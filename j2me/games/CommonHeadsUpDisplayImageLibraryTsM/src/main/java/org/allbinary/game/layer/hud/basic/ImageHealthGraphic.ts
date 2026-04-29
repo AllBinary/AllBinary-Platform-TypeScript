@@ -75,8 +75,6 @@ this.image= new Array(this.healthInterface!.getMaxHealth());
     
 
     var imageCacheFactory: ImageCacheFactory = ImageCacheFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -85,8 +83,6 @@ this.image= new Array(this.healthInterface!.getMaxHealth());
 
                         for (
     var numOfHealth: number = 0;
-        
-        
 numOfHealth <= max; numOfHealth++)
         {
 this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
@@ -99,8 +95,6 @@ this.image[numOfHealth]= imageCacheFactory!.get(this, numOfHealth +1 *10, 10);
 
                         for (
     var numOfHealth: number = 0;
-        
-        
 numOfHealth <= max; numOfHealth++)
         {
 
@@ -109,8 +103,6 @@ numOfHealth <= max; numOfHealth++)
 
                         for (
     var index: number = 0;
-        
-        
 index < numOfHealth; index++)
         {
 this.animationInterface!.paint(this.image[numOfHealth]!.getGraphics(), numOfHealth *10, 0);

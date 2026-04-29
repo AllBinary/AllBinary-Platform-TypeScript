@@ -49,8 +49,6 @@ export class MediaPlayerUtil
         
 
     private static readonly instance: MediaPlayerUtil = new MediaPlayerUtil();
-        
-        
 
     public static getInstance(): MediaPlayerUtil{
 
@@ -63,8 +61,6 @@ export class MediaPlayerUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -72,20 +68,14 @@ export class MediaPlayerUtil
 var mediaPlayer = mediaPlayer
 
     var MESSAGE: string = "Not Stopped Waiting";
-        
-        
 ;
     
 
     var METHOD_NAME: string = "wait";
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 

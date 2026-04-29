@@ -43,48 +43,26 @@ export class BasketData
         
 
     public static readonly BASKET: string = "BASKET";
-        
-        
 
     public static readonly NAME: string = "NAME";
-        
-        
 
     public static readonly BASKETREVIEW: string = "BASKET_REVIEW";
-        
-        
 
     public static readonly TOTALWEIGHT: string = "BASKET_TOTALWEIGTH";
-        
-        
 
     public static readonly ITEMTOTAL: string = "BASKET_ITEMTOTAL";
-        
-        
 
     public static readonly ITEMTOTALINBASKET: string = "BASKET_ITEMTOTALINBASKET";
-        
-        
 
     public static readonly SUBTOTAL: string = "BASKET_SUBTOTAL";
-        
-        
 
     public static readonly ISEMPTY: string = "BASKET_ISEMPTY";
-        
-        
 
     public static readonly INSERT: string = "BASKET_INSERT";
-        
-        
 
     public static readonly DELETE: string = "BASKET_DELETE";
-        
-        
 
     public static readonly ADJUST: string = "BASKET_ADJUST";
-        
-        
 private constructor (){
 
             super();

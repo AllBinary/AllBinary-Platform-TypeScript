@@ -51,8 +51,6 @@ export class QuoteRequestEntityFactory
         
 
     private static readonly instance: QuoteRequestEntityFactory = new QuoteRequestEntityFactory();
-        
-        
 
     public static getInstance(): QuoteRequestEntityFactory{
 
@@ -65,8 +63,6 @@ export class QuoteRequestEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

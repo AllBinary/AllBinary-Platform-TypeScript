@@ -50,8 +50,6 @@ export class PageView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -98,7 +96,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

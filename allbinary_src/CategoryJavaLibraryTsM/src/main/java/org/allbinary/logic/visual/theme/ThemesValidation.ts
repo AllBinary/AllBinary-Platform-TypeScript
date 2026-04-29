@@ -74,7 +74,7 @@ public constructor (node: Node){
         var node = node
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -128,14 +128,10 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var size: number = this.themeVector!.length!;
-        
-        
 ;
     
 
@@ -144,14 +140,10 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i); as DomNodeInterface;
-        
-        
+    var themeDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.themeVector!.get(i);;
 ;
     
 node.appendChild(themeDomNodeInterface!.toXmlNode(document));

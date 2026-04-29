@@ -18,9 +18,6 @@
 
 
 
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
-
-    
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -40,15 +37,6 @@ import { GC } from "../../../../org/eclipse/swt/graphics/GC.js";
 
     
 import { ImageData } from "../../../../org/eclipse/swt/graphics/ImageData.js";
-
-    
-import { Transform } from "../../../../org/eclipse/swt/graphics/Transform.js";
-
-    
-import { SwtImmutableImage } from "../../../../org/microemu/device/swt/SwtImmutableImage.js";
-
-    
-import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableImage.js";
 
     
 
@@ -72,14 +60,14 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
         
 import { ImageUtil } from "./ImageUtil.js";
 
+import { Image } from "./Image.js";
+
 export class ImageSwtRotationUtil
             extends Object
          {
         
 
     private static readonly instance: ImageSwtRotationUtil = new ImageSwtRotationUtil();
-        
-        
 
     public static getInstance(): ImageSwtRotationUtil{
 
@@ -92,28 +80,16 @@ export class ImageSwtRotationUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     private readonly gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 
     private readonly features: Features = Features.getInstance()!;
-        
-        
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
-        
-        
 private constructor (){
 
             super();
@@ -190,7 +166,7 @@ private constructor (){
 }
 
 
-    public getRotatedImage(bufferedImage: org.eclipse.swt.graphics.Image, newSwtImage: org.eclipse.swt.graphics.Image, gc: GC, totalAngle: number): org.eclipse.swt.graphics.Image{
+    public getRotatedImageSWT(bufferedImage: org.eclipse.swt.graphics.Image, newSwtImage: org.eclipse.swt.graphics.Image, gc: GC, totalAngle: number): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
     //var newSwtImage = newSwtImage
     //var gc = gc
@@ -210,8 +186,6 @@ private constructor (){
     //var totalAngle = totalAngle
 
     var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);
-        
-        
 ;
     
 
@@ -221,8 +195,6 @@ private constructor (){
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -231,8 +203,6 @@ private constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 angle= (totalAngle /size) *index;
@@ -254,21 +224,15 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
     //var bufferedImageArray = bufferedImageArray
 
     var columns: number = 9;
-        
-        
 ;
     
 
     var rows: number = 0;
-        
-        
 ;
     
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -293,26 +257,18 @@ rows= (size /columns);
                                 
 
     var firstBufferedImage: org.eclipse.swt.graphics.Image = bufferedImageArray[0]!;
-        
-        
 ;
     
 
     var imageData: ImageData = firstBufferedImage!.getImageData()!;
-        
-        
 ;
     
 
     var bufferedImage: org.eclipse.swt.graphics.Image = this.imageUtil!.create(imageData!.width *columns, imageData!.height *rows)!;
-        
-        
 ;
     
 
     var gc: GC = new GC(bufferedImage);
-        
-        
 ;
     
 gc.setAntialias(SWT.ON);
@@ -321,14 +277,10 @@ gc.setInterpolation(SWT.HIGH);
     
 
     var columnIndex: number = 0;
-        
-        
 ;
     
 
     var rowIndex: number = 0;
-        
-        
 ;
     
 
@@ -341,8 +293,6 @@ gc.setInterpolation(SWT.HIGH);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 

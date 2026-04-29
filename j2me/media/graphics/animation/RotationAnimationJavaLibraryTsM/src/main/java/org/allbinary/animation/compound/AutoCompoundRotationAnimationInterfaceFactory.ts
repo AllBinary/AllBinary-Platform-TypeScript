@@ -51,6 +51,8 @@ import { RotationAnimation } from "../../../../org/allbinary/animation/RotationA
         
 import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
 
+import { AutoCompoundRotationAnimation } from "./AutoCompoundRotationAnimation.js";
+
 export class AutoCompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
@@ -75,13 +77,13 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 }
 
 
-    getInstance(animationInterfaceArray: Animation[]): Animation{
+    createAnimation(animationInterfaceArray: Animation[]): Animation{
     //var animationInterfaceArray = animationInterfaceArray
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AutoCompoundRotationAnimation(animationInterfaceArray as Array<RotationAnimation?>, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AutoCompoundRotationAnimation( as Array<RotationAnimation?>animationInterfaceArray, this.animationBehaviorFactory!.getOrCreateInstance());
     
 }
 

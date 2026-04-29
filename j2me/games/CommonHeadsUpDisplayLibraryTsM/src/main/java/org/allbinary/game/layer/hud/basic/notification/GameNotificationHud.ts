@@ -75,8 +75,6 @@ export class GameNotificationHud extends BasicHud implements GameNotificationLis
         
 
     public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, 0, 0, BasicColorFactory.getInstance()!.RED);
-        
-        
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
                     var location = location
@@ -100,12 +98,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
     private readonly METHOD_NAME: string = "onGameNotificationEvent";
-        
-        
 
     private lastGameNotificationEvent: GameNotificationEvent = GameNotification.NULL_GAME_NOTIFICATION_EVENT;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -127,7 +121,7 @@ this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds()
 }
 
 
-    add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
+    add(string: string, seconds: number, basicColor: BasicColor, permanent: Boolean){
 var string = string
 var seconds = seconds
 var basicColor = basicColor

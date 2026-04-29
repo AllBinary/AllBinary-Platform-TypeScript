@@ -55,8 +55,6 @@ export class SecretComposite extends BaseSecretComposite {
         
 
     private readonly byteUtil: ByteUtil = ByteUtil.getInstance()!;
-        
-        
 
     private readonly cipher: Cipher
 
@@ -118,21 +116,17 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < this.key.length; index++)
         {
 
     var value: number = this.key[index]!;
-        
-        
 ;
     
 
                         if(value < 8 && value > 0)
                         
                                     {
-                                    array= this.byteUtil!.xorByte(array, value);
+                                    array= this.byteUtil!.xorByte(array, Math.roundvalue);
     
 
                                     }

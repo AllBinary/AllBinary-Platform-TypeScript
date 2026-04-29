@@ -85,6 +85,8 @@ import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.j
 
 import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
+import { KeyboardActionScriptInputJPanel } from "./KeyboardActionScriptInputJPanel.js";
+
 import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
 
 import { KeyboardInputAutomationProcessor } from "./KeyboardInputAutomationProcessor.js";
@@ -93,30 +95,22 @@ export class KeyboardActionScriptInput extends BasicProfileActionScriptInput imp
         
 
     private static readonly NAME: string = "Keyboard";
-        
-        
 
-    static getText(integerArray: Integer[]): string{
+    static getText(integerArray: number[]): string{
 var integerArray = integerArray
 
     var index: number = 0;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
         while(index < integerArray!.length)
         {
 
-    var nextInteger: Integer = integerArray[index]!;
-        
-        
+    var nextInteger: number = integerArray[index]!;
 ;
     
 
@@ -148,15 +142,11 @@ index++;
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private keyArray: Integer[] = 
+    private keyArray: number[] = 
                                                         [
                                                             KeySingletonFactory.getInstance(KeyEvent.VK_0)
                                                         ];
-        
-        
 
     private keyboardActionScriptInputJPanel: KeyboardActionScriptInputJPanel
 
@@ -176,8 +166,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
     
 
     var actionNode: Node = DomSearchHelper.getNode(KeyboardActionScriptInputData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -188,14 +176,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
                                     {
                                     
     var nodeList: NodeList = actionNode!.getChildNodes()!;
-        
-        
 ;
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
@@ -204,14 +188,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUC
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var childNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -220,8 +200,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var keyString: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 vector.add(keyString.valueOf());
@@ -235,8 +213,6 @@ vector.add(keyString.valueOf());
                                     {
                                     
     var time: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt());
@@ -250,8 +226,6 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt());
                                     {
                                     
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setPress(value.concatToString()
@@ -267,8 +241,6 @@ this.setPress(value.concatToString()
                                     {
                                     
     var value: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setRelease(value.concatToString()
@@ -282,13 +254,14 @@ this.setRelease(value.concatToString()
                             
 
 
-                            throw new Error("Action Script Input Unknown Node")
+                            throw new Error("Action Script Input Unknown Node");
+                    
 
                         }
                             
 }
 
-this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
+this.setKeyArray( as Array<Integer?>vector.toArray(new Array(vector.length)));
     
 
                                     }
@@ -297,7 +270,8 @@ this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
                             
 
 
-                            throw new Error("Action Script Input Node Null")
+                            throw new Error("Action Script Input Node Null");
+                    
 
                         }
                             
@@ -409,7 +383,7 @@ this.setRelease(true);
 }
 
 
-    public getKeyArray(): Integer[]{
+    public getKeyArray(): number[]{
 
 
 
@@ -419,7 +393,7 @@ this.setRelease(true);
 }
 
 
-    public setKeyArray(keyArray: Integer[]){
+    public setKeyArray(keyArray: number[]){
 var keyArray = keyArray
 
                         if(keyArray != 
@@ -452,9 +426,7 @@ var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "setText");
     
 
-    var integerArray: Integer[] = this.integerArrayValue(text)!;
-        
-        
+    var integerArray: number[] = this.integerArrayValue(text)!;
 ;
     
 this.setKeyArray(integerArray);
@@ -462,20 +434,16 @@ this.setKeyArray(integerArray);
 }
 
 
-    integerArrayValue(text: string): Integer[]{
+    integerArrayValue(text: string): number[]{
 var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -483,8 +451,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
         {
 
     var aChar: string = text[index]!;
-        
-        
 ;
     
 
@@ -497,8 +463,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
                                     {
                                     
     var endIndex: number = text.indexOf(';', index +1)!;
-        
-        
 ;
     
 
@@ -507,8 +471,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayV
                                     {
                                     
     var nextCharString: string = text.substring(index +2, endIndex)!;
-        
-        
 ;
     
 this.logUtil!.putF("Next Char String: " +nextCharString, this, "integerArrayValue");
@@ -539,9 +501,7 @@ index++;
 }
 
 
-    var integerArray: Integer[] = vector.toArray(new Array(vector.length)); as Array<Integer?>;
-        
-        
+    var integerArray: number[] =  as Array<Integer?>vector.toArray(new Array(vector.length));;
 ;
     
 
@@ -553,11 +513,9 @@ index++;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
@@ -566,8 +524,6 @@ index++;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getKeyArray()!.length; index++)
         {
 hashMap!.put(KeyboardActionScriptInputData.KEY +index, Integer.toString(this.getKeyArray()[index]!));
@@ -597,8 +553,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionScriptInputData.NAME, this.toHashMap()));
@@ -614,7 +568,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionS
 
                 //@Throws(Error::class)
             
-    public process(frame: Long){
+    public process(frame: number){
 var frame = frame
 KeyboardInputAutomationProcessor.process(this);
     
@@ -630,8 +584,6 @@ this.logUtil!.putF(this.toString(), this, "log");
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());

@@ -54,8 +54,6 @@ export class GameConfigurationSingleton
         
 
     private SINGLETON: GameConfigurationSingleton = new GameConfigurationSingleton();
-        
-        
 
     public static getInstance(): GameConfigurationSingleton{
 
@@ -69,24 +67,24 @@ export class GameConfigurationSingleton
 
     private list: BasicArrayList
 
-    private hashtable: Hashtable<any, any>
+    private hashtable: Hashtable
 private constructor (){
 
             super();
         this.list= new BasicArrayListD();
     
-this.hashtable= new Hashtable<any, any>();
+this.hashtable= new Hashtable();
     
 }
 
 
-    public getInstance(name: string): GameConfiguration{
+    public getInstanceByName(name: string): GameConfiguration{
 var name = name
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(name as Object); as GameConfiguration;
+                        return  as GameConfigurationthis.hashtable.get(name as Object);;
     
 }
 
@@ -108,7 +106,7 @@ this.list.add(gameConfiguration);
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): Hashtable{
 
 
 

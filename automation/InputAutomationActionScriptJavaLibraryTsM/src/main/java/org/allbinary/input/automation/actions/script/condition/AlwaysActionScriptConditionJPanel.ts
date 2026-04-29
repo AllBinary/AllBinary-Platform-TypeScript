@@ -53,16 +53,18 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JLabel } from "./JLabel.js";
+
 export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface
 public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface){
@@ -160,7 +162,7 @@ this.titleJLabel!.setText("Always Condition Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -177,14 +179,10 @@ this.jLabel2!.setText("On:");
 this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "true","false";
-        
-        
                                                 ]));
     
 
     var alwaysActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.alwaysActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.alwaysActionJDialog!.getContentPane()!.setLayout(alwaysActionJDialogLayout);
@@ -197,7 +195,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.alwaysActionJButton!.setText("Edit");
     
-alwaysActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+alwaysActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -213,8 +211,6 @@ this.jLabel1!.setText("Always:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

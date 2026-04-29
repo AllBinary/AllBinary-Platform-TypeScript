@@ -18,9 +18,6 @@
 
 
 
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 
 
 
@@ -48,8 +45,6 @@ export class TiledLayerUtil
         
 
     private static readonly instance: TiledLayerUtil = new TiledLayerUtil();
-        
-        
 
     public static getInstance(): TiledLayerUtil{
 
@@ -61,21 +56,17 @@ export class TiledLayerUtil
 }
 
 
-    public keepOnMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number, mapBorderBufferWidth: number): number{
+    public keepOnBorderdMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number, mapBorderBufferWidth: number): number{
 var terrainTiledLayer = terrainTiledLayer
 var x = x
 var width = width
 var mapBorderBufferWidth = mapBorderBufferWidth
 
     var newX: number = x;
-        
-        
 ;
     
 
     var maxRight: number = terrainTiledLayer!.getWidth() -width -mapBorderBufferWidth;
-        
-        
 ;
     
 
@@ -105,21 +96,17 @@ var mapBorderBufferWidth = mapBorderBufferWidth
 }
 
 
-    public keepOnMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number, mapBorderBufferHeight: number): number{
+    public keepOnBorderdMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number, mapBorderBufferHeight: number): number{
 var terrainTiledLayer = terrainTiledLayer
 var y = y
 var height = height
 var mapBorderBufferHeight = mapBorderBufferHeight
 
     var newY: number = y;
-        
-        
 ;
     
 
     var maxBottom: number = terrainTiledLayer!.getHeight() -height -mapBorderBufferHeight;
-        
-        
 ;
     
 
@@ -155,14 +142,10 @@ var x = x
 var width = width
 
     var newX: number = x;
-        
-        
 ;
     
 
     var maxRight: number = terrainTiledLayer!.getWidth() -width;
-        
-        
 ;
     
 
@@ -198,14 +181,10 @@ var y = y
 var height = height
 
     var newY: number = y;
-        
-        
 ;
     
 
     var maxBottom: number = terrainTiledLayer!.getHeight() -height;
-        
-        
 ;
     
 

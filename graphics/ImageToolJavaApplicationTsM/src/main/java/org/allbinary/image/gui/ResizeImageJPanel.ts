@@ -75,16 +75,20 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JLabel } from "./JLabel.js";
+
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private imageProcessorInput: ImageProcessorInput
 public constructor (imageProcessorInput: ImageProcessorInput){
@@ -100,8 +104,6 @@ this.imageProcessorInput= imageProcessorInput;
     
 
     var numberStringArray: string[] = new Array(101);
-        
-        
 ;
     
 numberStringArray[0]= Integer.toString( -1);
@@ -112,8 +114,6 @@ numberStringArray[0]= Integer.toString( -1);
 
                         for (
     var index: number = 1;
-        
-        
 index < 100; index++)
         {
 numberStringArray[index]= index.toString();
@@ -124,8 +124,6 @@ this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray
     
 
     var araster: Raster = this.imageProcessorInput!.getBufferedImageArray()[0]!.getAlphaRaster()!;
-        
-        
 ;
     
 
@@ -149,61 +147,47 @@ this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray
 
 
     public process(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 
-    var percent: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem() as String))!;
-        
-        
+    var percent: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jComboBox1!.getSelectedItem()))!;
 ;
     
 
-    var percentAsFloat: Float = Float.parseFloat(this@ResizeImageJPanel.floatPercentJTextField!.getText())!;
-        
-        
+    var percentAsFloat: number = Float.parseFloat(this@ResizeImageJPanel.floatPercentJTextField!.getText())!;
 ;
     
 
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var files: File[] = imageProcessorInput!.getFiles()!;
-        
-        
 ;
     
 
     var generatedBufferedImageArray: BufferedImage[] = 
                 null
             ;
-        
-        
 ;
     
 
                         if(percentAsFloat!.toInt() !=  -1)
                         
                                     {
-                                    generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!.getBufferedImageArray(), percentAsFloat, true);
+                                    generatedBufferedImageArray= imageUtil!.createBufferedImage2(imageProcessorInput!.getBufferedImageArray(), percentAsFloat, true);
     
 
                                     }
@@ -212,33 +196,27 @@ new object: Thread()
                         if(percent.toInt() !=  -1)
                         
                                     {
-                                    generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!.getBufferedImageArray(), percent, true);
+                                    generatedBufferedImageArray= imageUtil!.createBufferedImageForResize(imageProcessorInput!.getBufferedImageArray(), percent, true);
     
 
                                     }
                                 
                         else {
                             
-    var width: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText() as String))!;
-        
-        
+    var width: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jTextField1!.getText()))!;
 ;
     
 
-    var height: Integer = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText() as String))!;
-        
-        
+    var height: number = Integer(Integer.valueOf( as Stringthis@ResizeImageJPanel.jTextField2!.getText()))!;
 ;
     
-generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!.getBufferedImageArray(), width, height, true);
+generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);
     
 
                         }
                             
 
     var araster: Raster = generatedBufferedImageArray[0]!.getAlphaRaster()!;
-        
-        
 ;
     
 
@@ -260,8 +238,6 @@ generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!
                             
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -270,8 +246,6 @@ generatedBufferedImageArray= imageUtil!.createBufferedImage(imageProcessorInput!
 
                         for (
     var index: number = 0;
-        
-        
 index < generatedBufferedImageArray!.length; index++)
         {
 imagePersistanceUtil!.saveWithBatik(FileWrapperUtil.wrapFile(files[index]!), generatedBufferedImageArray[index]!);
@@ -298,34 +272,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public update(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var size: number = imageProcessorInput!.getBufferedImageArray()!.length;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
@@ -338,8 +304,6 @@ new object: Thread()
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
@@ -370,34 +334,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Above(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var size: number = imageProcessorInput!.getBufferedImageArray()!.length;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
@@ -410,8 +366,6 @@ new object: Thread()
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
@@ -442,34 +396,26 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Below(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var imageProcessorInput: ImageProcessorInput = this@ResizeImageJPanel.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var size: number = imageProcessorInput!.getBufferedImageArray()!.length;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
@@ -482,8 +428,6 @@ new object: Thread()
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
@@ -558,13 +502,11 @@ this.jLabel1!.setText("Percent:");
 this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel<>(
                                                 [
                                                     "Item 1","Item 2","Item 3","Item 4";
-        
-        
                                                 ]));
     
 this.aboveJButton!.setText("Process");
     
-aboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
+aboveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -582,7 +524,7 @@ this.jLabel3!.setText("Height:");
     
 this.updateJButton!.setText("Update");
     
-updateJButton!.addActionListener(new object: java.awt.event.ActionListener()
+updateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -600,7 +542,7 @@ this.floatPercentJTextField!.setMinimumSize(new java.awt.Dimension(120, 22));
     
 this.adjustFor16AboveJButton!.setText("Adjust for 16 Above");
     
-adjustFor16AboveJButton!.addActionListener(new object: java.awt.event.ActionListener()
+adjustFor16AboveJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -614,7 +556,7 @@ adjustFor16AboveJButtonActionPerformed(evt);
     
 this.adjustFor16BelowJButton!.setText("Adjust for 16 Below");
     
-adjustFor16BelowJButton!.addActionListener(new object: java.awt.event.ActionListener()
+adjustFor16BelowJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -628,8 +570,6 @@ adjustFor16BelowJButtonActionPerformed(evt);
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

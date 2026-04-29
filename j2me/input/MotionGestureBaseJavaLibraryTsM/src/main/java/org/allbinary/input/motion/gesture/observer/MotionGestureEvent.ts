@@ -68,30 +68,18 @@ export class MotionGestureEvent extends AllBinaryEventObject {
         
 
     private static readonly CURRENT: string = CommonLabels.getInstance()!.CURRENT;
-        
-        
 
     private static readonly PREVIOUS: string = " Previous: ";
-        
-        
 
     private static readonly HASHCODE: string = " hashcode: ";
-        
-        
 
     private motionGesture: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
-        
-        
 
     private readonly id: number
 
     private previousPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-        
-        
 
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-        
-        
 public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
             super(source);
                     var source = source
@@ -162,14 +150,10 @@ this.currentPoint= currentPoint;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(stringUtil!.toString(this.motionGesture));

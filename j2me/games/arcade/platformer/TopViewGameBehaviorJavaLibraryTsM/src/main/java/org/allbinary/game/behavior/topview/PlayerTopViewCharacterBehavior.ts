@@ -36,12 +36,6 @@ import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/disp
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
-
-    
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -52,9 +46,6 @@ import { BasicGeographicMapUtil } from "../../../../../org/allbinary/media/graph
 
     
 import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
-
-    
-import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
 
     
 
@@ -82,8 +73,6 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -94,7 +83,7 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
     //var y = y
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellPosition = geographicMapCellPosition
-TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getInstance(layer));
+TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getNextInstance(layer));
     
 }
 
@@ -106,8 +95,6 @@ TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.ge
     //var y = y
 
     var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;
-        
-        
 ;
     
 basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);

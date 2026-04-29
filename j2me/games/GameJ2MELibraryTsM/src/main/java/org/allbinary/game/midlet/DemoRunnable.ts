@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
 
     
@@ -55,11 +57,11 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
+import { DemoGameMidlet } from "./DemoGameMidlet.js";
+
+import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
 
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
-
-import { DemoGameMidlet } from "./DemoGameMidlet.js";
 
 import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
 
@@ -69,12 +71,8 @@ export class DemoRunnable
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly demoGameMidlet: DemoGameMidlet
 

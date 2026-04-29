@@ -77,7 +77,7 @@ var collisionLayer = collisionLayer
 }
 
 
-    public isCollision(collidableInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(collidableInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterface = collidableInterface
 
 
@@ -90,7 +90,7 @@ var collidableInterface = collidableInterface
 
                 //@Throws(Error::class)
             
-    public collide(collidableInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(collidableInterface: CollidableInterfaceCompositeInterface){
 var collidableInterface = collidableInterface
 }
 

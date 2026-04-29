@@ -54,8 +54,6 @@ export class PathCacheFactory
         
 
     private pathFactory: PathCacheFactory = new PathCacheFactory();
-        
-        
 
     public static getInstance(): PathCacheFactory{
 
@@ -68,12 +66,8 @@ export class PathCacheFactory
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 private constructor (){
 
             super();
@@ -90,7 +84,7 @@ private constructor (){
 }
 
 
-    public add(pathId: Integer, list: BasicArrayList){
+    public add(pathId: number, list: BasicArrayList){
     //var pathId = pathId
     //var list = list
 this.hashtable.put(pathId, list);
@@ -98,7 +92,7 @@ this.hashtable.put(pathId, list);
 }
 
 
-    public remove(pathId: Integer){
+    public remove(pathId: number){
     //var pathId = pathId
 this.hashtable.remove(pathId);
     
@@ -117,7 +111,8 @@ this.hashtable.clear();
                                     
 
 
-                            throw new Error("Did not clear")
+                            throw new Error("Did not clear");
+                    
 
                                     }
                                 
@@ -126,12 +121,10 @@ this.hashtable.clear();
 
                 //@Throws(Error::class)
             
-    public getInstance(pathIdInteger: Integer): BasicArrayList{
+    public getOrCreate(pathIdInteger: number): BasicArrayList{
     //var pathIdInteger = pathIdInteger
 
     var listCanBeNull: any? = this.hashtable.get(pathIdInteger as Object);
-        
-        
 ;
     
 
@@ -149,7 +142,7 @@ this.hashtable.clear();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return listCanBeNull as BasicArrayList;
+                        return  as BasicArrayListlistCanBeNull;
     
 }
 

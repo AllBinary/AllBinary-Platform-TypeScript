@@ -76,12 +76,8 @@ export class CheatGameInputProcessor extends PlayerGameInput {
         
 
     public inputProcessor: SpecialGameInputInterface = SpecialGameInputFactory.NO_SPECIAL_GAME_INPUT;
-        
-        
 
     private readonly PROCESS_GAME: string = "processGame";
-        
-        
 
     private readonly gameCanvas: AllBinaryGameCanvas
 public constructor (gameCanvas: AllBinaryGameCanvas){
@@ -97,8 +93,6 @@ this.gameCanvas= gameCanvas;
 
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public update(){
@@ -106,20 +100,14 @@ this.gameCanvas= gameCanvas;
         try {
             
     var gameLayerManager: AllBinaryGameLayerManager = this.gameCanvas!.getLayerManager()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -128,20 +116,14 @@ this.gameCanvas= gameCanvas;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.objectArray[index]!;
-        
-        
 ;
     
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
-        
-        
 ;
     
 

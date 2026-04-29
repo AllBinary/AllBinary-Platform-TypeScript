@@ -66,13 +66,9 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 export class TimedFireAI extends BasicAI {
         
 
-    public static readonly TIME: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(1)!;
-        
-        
+    public static readonly TIME: number = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
 
     readonly maxFireDelayTimeHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private readonly delay: number
 public constructor (delay: number, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
@@ -94,16 +90,14 @@ this.delay= delay;
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-    var timeFiredInterface: TimeFiredInterface = this.getOwnerLayerInterface(); as TimeFiredInterface;
-        
-        
+    var timeFiredInterface: TimeFiredInterface =  as TimeFiredInterfacethis.getOwnerLayerInterface();;
 ;
     
 
                         if(this.maxFireDelayTimeHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime) && timeFiredInterface!.getLastFireTime() +this.maxFireDelayTimeHelper!.delay < this.maxFireDelayTimeHelper!.getStartTime())
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1);
+                                    super.processKeyAI(Canvas.KEY_NUM1);
     
 this.maxFireDelayTimeHelper!.delay= this.delay;
     

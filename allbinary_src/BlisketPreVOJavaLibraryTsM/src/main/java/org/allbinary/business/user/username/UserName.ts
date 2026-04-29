@@ -64,8 +64,6 @@ export class UserName
         
 
     private static readonly instance: UserName = new UserName();
-        
-        
 
     public static getInstance(): UserName{
 
@@ -102,8 +100,6 @@ var aUserName = aUserName
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userName: string
 private constructor (){
@@ -111,11 +107,11 @@ private constructor (){
             super();
         }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
-this.userName= hashMap!.get(UserData.USERNAME); as String;
+this.userName=  as StringhashMap!.get(UserData.USERNAME);;
     
 }
 
@@ -167,22 +163,16 @@ this.userName= hashMap!.get(UserData.USERNAME); as String;
 var aUserName = aUserName
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 
     var valid: Boolean = booleanFactory!.TRUE;
-        
-        
 ;
     
 

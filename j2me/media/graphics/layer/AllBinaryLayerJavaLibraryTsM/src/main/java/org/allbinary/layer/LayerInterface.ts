@@ -72,7 +72,7 @@ export interface LayerInterface extends NamedInterface, PaintableInterface, Grou
 
     isVisible(): boolean
 
-    move(dx: number, dy: number, dz: number)
+    moveDXYZ(dx: number, dy: number, dz: number)
 
     setVisible(visible: boolean)
 

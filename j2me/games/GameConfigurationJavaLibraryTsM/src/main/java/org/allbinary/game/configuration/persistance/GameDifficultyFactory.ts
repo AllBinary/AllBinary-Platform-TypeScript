@@ -43,8 +43,6 @@ export class GameDifficultyFactory
         
 
     private static readonly instance: GameDifficultyFactory = new GameDifficultyFactory();
-        
-        
 
     public static getInstance(): GameDifficultyFactory{
 
@@ -57,8 +55,6 @@ export class GameDifficultyFactory
 
 
     private level: number = 0;
-        
-        
 
     public setLevel(level: number){
 var level = level

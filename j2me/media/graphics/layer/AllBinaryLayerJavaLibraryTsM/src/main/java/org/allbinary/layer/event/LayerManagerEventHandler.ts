@@ -64,8 +64,6 @@ export class LayerManagerEventHandler extends BasicEventHandler {
         
 
     private instance: LayerManagerEventHandler = new LayerManagerEventHandler();
-        
-        
 
     public static getInstance(): LayerManagerEventHandler{
 
@@ -78,8 +76,6 @@ export class LayerManagerEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -127,19 +123,15 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
-        
-        
+    var layerManagerEventListener: LayerManagerEventListener =  as LayerManagerEventListenerthis.list.objectArray[index]!;
 ;
     
-layerManagerEventListener!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
+layerManagerEventListener!.onCreateLayerManagerEvent( as LayerManagerEventeventObject);
     
 
                 //: 
@@ -157,12 +149,8 @@ super.fireEvent(eventObject);
 
 
     public readonly CREATE: string = "Create";
-        
-        
 
     public readonly DELETE: string = "Delete";
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -175,19 +163,15 @@ super.fireEvent(eventObject);
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var layerManagerEventListener: LayerManagerEventListener = this.list.objectArray[index]! as LayerManagerEventListener;
-        
-        
+    var layerManagerEventListener: LayerManagerEventListener =  as LayerManagerEventListenerthis.list.objectArray[index]!;
 ;
     
-layerManagerEventListener!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
+layerManagerEventListener!.onDeleteLayerManagerEvent( as LayerManagerEventeventObject);
     
 
                 //: 
@@ -201,8 +185,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
 
 
     var eventListenerInterfaceList: BasicArrayList = this.eventListenerInterfaceList;
-        
-        
 ;
     
 
@@ -215,8 +197,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -224,11 +204,11 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+            eventListenerInterface=  as EventListenerInterfaceeventListenerInterfaceList!.objectArray[index]!;
     
-layerManagerEventListenerInterface= (eventListenerInterface as LayerManagerEventListenerInterface);
+layerManagerEventListenerInterface= ( as LayerManagerEventListenerInterfaceeventListenerInterface);
     
-layerManagerEventListenerInterface!.onDeleteLayerManagerEvent(eventObject as LayerManagerEvent);
+layerManagerEventListenerInterface!.onDeleteLayerManagerEvent( as LayerManagerEventeventObject);
     
 
                 //: 
@@ -251,12 +231,10 @@ index++;
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = (eventListenerInterface as LayerManagerEventListenerInterface);
-        
-        
+    var layerManagerEventListenerInterface: LayerManagerEventListenerInterface = ( as LayerManagerEventListenerInterfaceeventListenerInterface);
 ;
     
-layerManagerEventListenerInterface!.onCreateLayerManagerEvent(eventObject as LayerManagerEvent);
+layerManagerEventListenerInterface!.onCreateLayerManagerEvent( as LayerManagerEventeventObject);
     
 }
 

@@ -46,28 +46,16 @@ export class LogData
         
 
     public readonly MAX: number = 5000000;
-        
-        
 
     public readonly extension: string = "log";
-        
-        
 
     public readonly backupFileExt: string = AbPathData.getInstance()!.EXTENSION_SEP +"bak" +AbPathData.getInstance()!.EXTENSION_SEP +"txt";
-        
-        
 
     public readonly ALLBINARY: string = "allbinary";
-        
-        
 
     public readonly NAME: string = "LOG_NAME";
-        
-        
 
     public readonly DESCRIPTION: string = "LOG_DESCRIPTION";
-        
-        
 
 }
                 

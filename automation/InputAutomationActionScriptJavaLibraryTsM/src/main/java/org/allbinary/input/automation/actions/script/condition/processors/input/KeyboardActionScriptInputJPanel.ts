@@ -68,11 +68,11 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
         
 import { JPanel } from "./JPanel.js";
 
+import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
+
 import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxModelFactory.js";
 
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
-
-import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
 import { JDialog } from "./JDialog.js";
 
@@ -80,16 +80,22 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JLabel } from "./JLabel.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JButton } from "./JButton.js";
+
+import { JRadioButton } from "./JRadioButton.js";
+
 export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private keyActionScriptInputInterface: KeyboardActionScriptInputInterface
 public constructor (keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
@@ -104,8 +110,6 @@ this.keyActionScriptInputInterface= keyActionScriptInputInterface;
     
 
     var defaultComboBoxModel: DefaultComboBoxModel = new DefaultComboBoxModel();
-        
-        
 ;
     
 defaultComboBoxModel!.addElement(TempInputRobotNames.DX_NAME);
@@ -165,8 +169,6 @@ this.set();
     set(){
 
     var inputTypeComboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-        
-        
 ;
     
 inputTypeComboBoxModel!.setSelectedItem(this.keyActionScriptInputInterface!.getInputRobotInterface()!.getName());
@@ -187,14 +189,10 @@ this.keyActionScriptInputInterface!.log();
     updateInputType(){
 
     var comboBoxModel: ComboBoxModel = this.inputAutomationTypeJComboBox!.getModel()!;
-        
-        
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
-        
-        
+    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
 ;
     
 
@@ -209,17 +207,13 @@ this.keyActionScriptInputInterface!.log();
 }
 
 
-    getSelectedKey(): Integer{
+    getSelectedKey(): number{
 
     var comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;
-        
-        
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
-        
-        
+    var selectedItem: string =  as StringcomboBoxModel!.getSelectedItem();;
 ;
     
 
@@ -230,7 +224,7 @@ this.keyActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object); as Integer;
+                        return  as IntegerKeySingletonFactory.getHashtable()!.get(selectedItem as Object);;
     
 
                                     }
@@ -247,8 +241,6 @@ this.keyActionScriptInputInterface!.log();
     updateKeys(){
 
     var text: string = this.textJTextField!.getText()!;
-        
-        
 ;
     
 this.keyActionScriptInputInterface!.setText(text);
@@ -340,7 +332,7 @@ this.titleJLabel!.setText("Keyboard Input Options");
     
 this.addKeyJLabel!.setText("Add Key:");
     
-keyNameJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
+keyNameJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -372,7 +364,7 @@ this.pressJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0,
     
 this.pressJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-pressJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
+pressJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -390,7 +382,7 @@ this.releaseJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(
     
 this.releaseJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-releaseJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
+releaseJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -410,7 +402,7 @@ this.normalJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0
     
 this.normalJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-normalJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
+normalJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -430,7 +422,7 @@ this.simultaneousJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBo
     
 this.simultaneousJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-simultaneousJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
+simultaneousJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -448,7 +440,7 @@ this.sequenceJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder
     
 this.sequenceJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-sequenceJRadioButton!.addActionListener(new object: java.awt.event.ActionListener()
+sequenceJRadioButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -464,7 +456,7 @@ this.okJButton!.setText("OK");
     
 this.okJButton!.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -478,7 +470,7 @@ okJButtonActionPerformed(evt);
     
 this.jPanel1!.add(this.okJButton);
     
-keyIntegerJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
+keyIntegerJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -492,8 +484,6 @@ keyIntegerJComboBoxActionPerformed(evt);
     
 
     var keyActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.keyActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.keyActionJDialog!.getContentPane()!.setLayout(keyActionJDialogLayout);
@@ -506,7 +496,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.keyActionJButton!.setText("Edit");
     
-keyActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+keyActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -522,8 +512,6 @@ this.jLabel1!.setText("Key:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -535,7 +523,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 }
 
 
-    prependText(integer: Integer){
+    prependText(integer: number){
 var integer = integer
 
                         if(integer != 
@@ -545,8 +533,6 @@ var integer = integer
                                     {
                                     
     var newKey: string = "&#" +integer.toString() +";";
-        
-        
 ;
     
 this.textJTextField!.setText(newKey +this.textJTextField!.getText());
@@ -601,9 +587,7 @@ this.sequenceJRadioButton!.setSelected(false);
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var integer: Integer = getSelectedKey()!;
-        
-        
+    var integer: number = getSelectedKey()!;
 ;
     
 this.prependText(integer);

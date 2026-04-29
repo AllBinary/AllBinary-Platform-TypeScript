@@ -43,8 +43,6 @@ export class LifeResources
         
 
     private static readonly SINGLETON: LifeResources = new LifeResources();
-        
-        
 
     public static getInstance(): LifeResources{
 
@@ -57,8 +55,6 @@ export class LifeResources
 
 
     public RESOURCE: string = "life_drop_20_by_20.png";
-        
-        
 private constructor (){
 
             super();

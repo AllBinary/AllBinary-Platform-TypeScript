@@ -57,8 +57,6 @@ import { Log } from "./Log.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -79,26 +77,18 @@ private constructor (){
 var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 put(specialMessage, anyType, functionName, exception);
@@ -120,7 +110,7 @@ var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
 var exception = exception
-FileLog.put(specialMessage, anyType, functionName, exception as Error);
+FileLog.put(specialMessage, anyType, functionName,  as Errorexception);
     
 }
 

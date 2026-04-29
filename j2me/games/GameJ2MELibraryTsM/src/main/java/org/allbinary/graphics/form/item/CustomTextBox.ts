@@ -98,14 +98,10 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
                     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var textFieldItem: TextFieldItem = new TextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
-        
-        
 ;
     
 textFieldItem!.setString(text);
@@ -122,8 +118,6 @@ this.setTitle(label);
 
 
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 
     public onEvent(keyCode: number, deviceId: number, repeated: boolean){
     //var keyCode = keyCode
@@ -132,33 +126,33 @@ this.setTitle(label);
 this.logUtil!.putF(new StringMaker().
                             append(commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
-this.keyPressed(keyCode, deviceId);
+this.keyPressedByDevice(keyCode, deviceId);
     
 }
 
 
     public keyPressed(keyCode: number){
     //var keyCode = keyCode
-this.keyPressed(keyCode, 0);
+this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
     //var keyCode = keyCode
-this.keyReleased(keyCode, 0);
+this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
     //var keyCode = keyCode
-this.keyRepeated(keyCode, 0);
+this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
-    public keyPressed(keyCode: number, deviceId: number){
+    public keyPressedByDevice(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
 
@@ -168,14 +162,10 @@ this.keyRepeated(keyCode, 0);
     
 
     var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;
-        
-        
 ;
     
 
-    var input: Input = this.inputFactory!.getInstance(keyCode)!;
-        
-        
+    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
 ;
     
 
@@ -204,7 +194,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED,
 }
 
 
-    public keyReleased(keyCode: number, deviceId: number){
+    public keyReleasedByDevice(keyCode: number, deviceId: number){
     //var keyCode = keyCode
     //var deviceId = deviceId
 }
@@ -227,14 +217,14 @@ graphics.setColor(this.foregroundColor);
 
                                     }
                                 
-this.paint(graphics, 8, graphics.getFont()!.getHeight() +2);
+this.paintXY(graphics, 8, graphics.getFont()!.getHeight() +2);
     
 super.paint(graphics);
     
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y

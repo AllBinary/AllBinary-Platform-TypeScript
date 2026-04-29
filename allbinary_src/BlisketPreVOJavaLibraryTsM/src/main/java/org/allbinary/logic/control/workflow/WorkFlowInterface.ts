@@ -48,7 +48,7 @@ export interface WorkFlowInterface {
 
                 //@Throws(Error::class)
             
-    public process(): Integer
+    public process(): number
 
 }
                 

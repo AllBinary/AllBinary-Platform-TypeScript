@@ -50,16 +50,12 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
 
 import { PreLogUtil } from "./PreLogUtil.js";
 
-import { Exception } from "./Exception.js";
-
 export class GuiLog
             extends Object
          {
         
 
     private static readonly instance: GuiLog = new GuiLog();
-        
-        
 
     public static getInstance(): GuiLog{
 
@@ -72,12 +68,8 @@ export class GuiLog
 
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -89,20 +81,14 @@ private constructor (){
 var msg = msg
 
     var error: JDialog = new JDialog();
-        
-        
 ;
     
 
     var size: number = msg.length *9;
-        
-        
 ;
     
 
     var x: number = size;
-        
-        
 ;
     
 
@@ -116,8 +102,6 @@ error.getContentPane()!.setLayout(new GridLayout(1, 1));
                                     {
                                     
     var y: number = 550;
-        
-        
 ;
     
 error.setSize(x, y);
@@ -133,8 +117,6 @@ error.getContentPane()!.add(new javax.swing.JScrollPane(new javax.swing.JTextAre
                                     {
                                     
     var y: number = 50;
-        
-        
 ;
     
 error.setSize(x, y);
@@ -174,8 +156,6 @@ var exception = exception
         try {
             
     var data: string = this.logFormatUtil!.get(specialMessage, anyType!.constructor.name.toString()!, functionName, exception)!;
-        
-        
 ;
     
 this.showDialog(data);
@@ -230,8 +210,6 @@ var exception = exception
         try {
             
     var data: string = this.logFormatUtil!.get(specialMessage, className, functionName, exception)!;
-        
-        
 ;
     
 this.showDialog(data);

@@ -52,12 +52,8 @@ export class ConsolidateMotionRectangles extends MotionRectangles {
         
 
     private static readonly NAME: string = "consolidatedMotionRectangles_";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (motionRectangles: MotionRectangles){
             super(NAME, motionRectangles!.getImageComparisonResult());
                     var motionRectangles = motionRectangles
@@ -67,14 +63,10 @@ public constructor (motionRectangles: MotionRectangles){
                     
 
     var vector: Vector = motionRectangles!.getVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -83,14 +75,10 @@ public constructor (motionRectangles: MotionRectangles){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle =  as MotionRectanglevector.get(index);;
 ;
     
 vector.add(motionRectangle!.clone());
@@ -105,22 +93,16 @@ consolidateMotionRectangles();
     consolidateMotionRectangles(){
 
     var vector: Vector = this.getVector()!;
-        
-        
 ;
     
 this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMotionRectangleConstraints");
     
 
     var removeVector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -129,14 +111,10 @@ this.logUtil!.putF("Start - Size Before: " +vector.length, this, "consolidateMot
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle =  as MotionRectanglevector.get(index);;
 ;
     
 
@@ -145,50 +123,34 @@ index < size; index++)
 
                         for (
     var i: number = index +1;
-        
-        
 i < vector.length; i++)
         {
 
-    var motionRectangle2: MotionRectangle = vector.get(i); as MotionRectangle;
-        
-        
+    var motionRectangle2: MotionRectangle =  as MotionRectanglevector.get(i);;
 ;
     
 
     var rectangle: Rectangle = motionRectangle!.getRectangle()!;
-        
-        
 ;
     
 
     var rectangle2: Rectangle = motionRectangle2!.getRectangle()!;
-        
-        
 ;
     
 
     var x2: number = rectangle.x +rectangle.width;
-        
-        
 ;
     
 
     var y2: number = rectangle.y +rectangle.height;
-        
-        
 ;
     
 
     var rightX: number = rectangle2.x +rectangle2.width;
-        
-        
 ;
     
 
     var bottomY: number = rectangle2.y +rectangle2.height;
-        
-        
 ;
     
 
@@ -213,14 +175,10 @@ this.remove(removeVector);
 var removeVector = removeVector
 
     var vector: Vector = this.getVector()!;
-        
-        
 ;
     
 
     var size: number = removeVector!.length!;
-        
-        
 ;
     
 
@@ -229,8 +187,6 @@ var removeVector = removeVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 vector.remove(removeVector!.get(index));

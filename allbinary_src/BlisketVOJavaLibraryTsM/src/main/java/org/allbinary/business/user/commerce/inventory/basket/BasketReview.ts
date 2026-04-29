@@ -68,8 +68,6 @@ export class BasketReview
         
 
     items: Vector = new Vector();
-        
-        
 public constructor (){
 
             super();
@@ -107,15 +105,11 @@ this.items.add(item);
 var id = id
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -124,14 +118,10 @@ var id = id
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
 
@@ -153,15 +143,11 @@ var id = id
 var num = num
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -170,14 +156,10 @@ var num = num
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
 
@@ -197,21 +179,15 @@ index < size; index++)
     public getTotalWeight(): string{
 
     var weightFloat: number = 0;
-        
-        
 ;
     
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -220,17 +196,13 @@ index < size; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
-weightFloat += new Float(item.getWeight()).
+weightFloat += new number(item.getWeight()).
                             toFloat();
     
 }
@@ -239,18 +211,18 @@ weightFloat += new Float(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Float(weightFloat).
+                        return new number(weightFloat).
                             toString();;
     
 }
 
 
-    public getNumberOfItems(): Integer{
+    public getNumberOfItems(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.items.length);
+                        return this.items.length;
     
 }
 
@@ -258,21 +230,15 @@ weightFloat += new Float(item.getWeight()).
     public getIds(): Set{
 
     var idSet: HashSet = new HashSet();
-        
-        
 ;
     
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -281,14 +247,10 @@ weightFloat += new Float(item.getWeight()).
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
 idSet!.add(item.getId());
@@ -299,24 +261,20 @@ idSet!.add(item.getId());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return idSet as Set;
+                        return  as SetidSet;
     
 }
 
 
-    public getNumberOf(id: string): Integer{
+    public getNumberOf(id: string): number{
 var id = id
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -325,14 +283,10 @@ var id = id
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
 
@@ -343,7 +297,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(item.getNumber());
+                        return item.getNumber();
     
 
                                     }
@@ -354,7 +308,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(0);
+                        return 0;
     
 }
 
@@ -365,21 +319,15 @@ index < size; index++)
 var document = document
 
     var node: Node = document.createElement(BasketData.BASKET)!;
-        
-        
 ;
     
 
     var itemArray: any[] = this.items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -388,14 +336,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var item: Item = itemArray[index]! as Item;
-        
-        
+    var item: Item =  as ItemitemArray[index]!;
 ;
     
 node.appendChild(new ItemView(item, new Vector()).

@@ -66,16 +66,14 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
         
 import { ImageCacheBase } from "./ImageCacheBase.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ImageCache extends ImageCacheBase {
         
 
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -91,21 +89,15 @@ var renderer = renderer
     //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
-        
-        
 ;
     
 
     var resourceStringArray: string[] = gdResources!.resourceStringArray;
-        
-        
 ;
     
 
     var size: number = resourceStringArray!.length
                 ;
-        
-        
 ;
     
 
@@ -114,8 +106,6 @@ var renderer = renderer
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -139,7 +129,8 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -151,14 +142,10 @@ this.logUtil!.putF(new StringMaker().
     //var height = height
 
     var foundIndex: number = this.getIndex(width, height)!;
-        
-        
 ;
     
 
     var image: Image = this.getFromAvailable(foundIndex, width, height)!;
-        
-        
 ;
     
 
@@ -182,8 +169,6 @@ image= this.createImage(caller, width, height);
     
 
     var widths: number[] = this.widths;
-        
-        
 ;
     
 
@@ -224,12 +209,10 @@ listOfList[foundIndex]!.add(image);
 
                 //@Throws(Error::class)
             
-    public get(key: any = {}): Image{
+    public getWithKey(key: any = {}): Image{
     //var key = key
 
     var image: Image = this.getImage(key)!;
-        
-        
 ;
     
 
@@ -238,14 +221,10 @@ listOfList[foundIndex]!.add(image);
                                     {
                                     
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
-        
-        
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream( as Stringkey)!;
 ;
     
 
@@ -257,14 +236,14 @@ listOfList[foundIndex]!.add(image);
                                     
 
 
-                            throw new RuntimeException(new StringMaker().
-                            append("Image resource is not available for key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString())
+                            throw Error();
+                    
 
                                     }
                                 
 
         try {
-            image= this.createImage(key, inputStream);
+            image= this.createImageFromInputStream(key, inputStream);
     
 
                 //: 
@@ -283,7 +262,7 @@ this.logUtil!.putF(Memory.getInfo(), this, commonStrings!.GET);
     
 Thread.sleep(100);
     
-image= this.createImage(key, inputStream);
+image= this.createImageFromInputStream(key, inputStream);
     
 }
 

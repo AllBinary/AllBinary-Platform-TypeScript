@@ -77,12 +77,8 @@ export class PickupBehavior
         
 
     public static readonly NULL_PICKUP_BEHAVIOR: PickupBehavior = new PickupBehavior(CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER, 0);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly countedIndex: number
 
@@ -104,9 +100,7 @@ this.countedIndex= countedIndex;
 
         try {
             
-    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface = this.ownerLayerInterface as HealthInterfaceCompositeInterface;
-        
-        
+    var healthInterfaceCompositeInterface: HealthInterfaceCompositeInterface =  as HealthInterfaceCompositeInterfacethis.ownerLayerInterface;
 ;
     
 
@@ -124,8 +118,6 @@ this.countedIndex= countedIndex;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e);
@@ -135,33 +127,27 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e);
 }
 
 
-    public doPickup(pickupLayerInterface: PickedUpLayerInterface){
+    public doPickupLayer(pickupLayerInterface: PickedUpLayerInterface){
 var pickupLayerInterface = pickupLayerInterface
 
         try {
             
     var pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = pickupLayerInterface!.getPickedUpLayerInterfaceFactoryInterface()!;
-        
-        
 ;
     
 
     var pickedUpLayerType: PickedUpLayerType = pickedUpLayerInterfaceFactoryInterface!.getPickedUpLayerType()!;
-        
-        
 ;
     
 
     var pickedUpLayerTypeFactory: PickedUpLayerTypeFactory = PickedUpLayerTypeFactory.getInstance()!;
-        
-        
 ;
     
 
                         if(pickedUpLayerType == pickedUpLayerTypeFactory!.BEAM || pickedUpLayerType == pickedUpLayerTypeFactory!.MINE || pickedUpLayerType == pickedUpLayerTypeFactory!.PROJECTILE || pickedUpLayerType == pickedUpLayerTypeFactory!.ENHANCEMENT)
                         
                                     {
-                                    this.add(pickedUpLayerInterfaceFactoryInterface as CountedPickedUpLayerInterfaceFactoryInterface);
+                                    this.add( as CountedPickedUpLayerInterfaceFactoryInterfacepickedUpLayerInterfaceFactoryInterface);
     
 
                                     }
@@ -171,9 +157,7 @@ var pickupLayerInterface = pickupLayerInterface
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
 ;
     
 collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInterface);
@@ -189,7 +173,7 @@ collidableDestroyableDamageableLayer!.addPart(pickedUpLayerInterfaceFactoryInter
                                     }
                                 
                         else {
-                            this.doPickup(pickedUpLayerInterfaceFactoryInterface as PickupProcessorInterface);
+                            this.doPickup( as PickupProcessorInterfacepickedUpLayerInterfaceFactoryInterface);
     
 
                         }
@@ -202,8 +186,6 @@ pickupLayerInterface!.setPickedUp();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "doPickup", e);
@@ -217,28 +199,22 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "doPickup", e);
 var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfaceFactoryInterface
 
     var partIndex: number = countedPickedUpLayerInterfaceFactoryInterface!.getId() +this.countedIndex;
-        
-        
 ;
     
-this.add(countedPickedUpLayerInterfaceFactoryInterface, partIndex);
+this.addAt(countedPickedUpLayerInterfaceFactoryInterface, partIndex);
     
 }
 
 
-    add(countedPickedUpLayerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactoryInterface, partIndex: number){
+    addAt(countedPickedUpLayerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactoryInterface, partIndex: number){
     //var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfaceFactoryInterface
     //var partIndex = partIndex
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
 ;
     
 
-    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart = collidableDestroyableDamageableLayer!.getPartInterfaceArray()[partIndex]! as CountedLayerInterfaceFactoryPart;
-        
-        
+    var countedLayerInterfaceFactory: CountedLayerInterfaceFactoryPart =  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[partIndex]!;
 ;
     
 countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() +countedPickedUpLayerInterfaceFactoryInterface!.getTotal());
@@ -249,22 +225,16 @@ countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() 
     public getFirstAvailableCountedLayerInterfaceFactory(pickedUpLayerTypeArray: PickedUpLayerType[]): CountedLayerInterfaceFactoryPart{
 var pickedUpLayerTypeArray = pickedUpLayerTypeArray
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
 ;
     
 
     var partInterfaceArray: PartInterface[] = collidableDestroyableDamageableLayer!.getPartInterfaceArray()!;
-        
-        
 ;
     
 
     var size: number = partInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -281,11 +251,9 @@ var pickedUpLayerTypeArray = pickedUpLayerTypeArray
 
                         for (
     var index: number = this.countedIndex;
-        
-        
 index < size; index++)
         {
-nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]! as CountedLayerInterfaceFactoryPart;
+nextCountedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]!;
     
 countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCountedPickedUpLayerInterfaceFactory();
     
@@ -296,8 +264,6 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
                         for (
     var index2: number = pickedUpLayerTypeArray!.length
                 ;
-        
-        
 --index2 >= 0; )
         {
 
@@ -339,27 +305,19 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
 var slotIndex = slotIndex
 
     var currentSlot: number = 0;
-        
-        
 ;
     
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayerthis.ownerLayerInterface;
 ;
     
 
     var partInterfaceArray: PartInterface[] = collidableDestroyableDamageableLayer!.getPartInterfaceArray()!;
-        
-        
 ;
     
 
     var size: number = partInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -372,11 +330,9 @@ var slotIndex = slotIndex
 
                         for (
     var index: number = this.countedIndex;
-        
-        
 index < size; index++)
         {
-nextCountedLayerInterfaceFactory= collidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]! as CountedLayerInterfaceFactoryPart;
+nextCountedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartcollidableDestroyableDamageableLayer!.getPartInterfaceArray()[index]!;
     
 
                         if(nextCountedLayerInterfaceFactory!.getTotal() > 0)

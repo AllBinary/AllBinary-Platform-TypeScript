@@ -64,8 +64,6 @@ export class DownloadableItemValidation extends Validation {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private downloadableItem: DownloadableItem
 public constructor (downloadableItem: DownloadableItem){
@@ -203,8 +201,6 @@ this.downloadableItem= downloadableItem;
                         else {
                             
     var size: string = this.downloadableItem!.getSize()!.toString()!;
-        
-        
 ;
     
 
@@ -241,8 +237,6 @@ this.downloadableItem= downloadableItem;
                         else {
                             
     var size: string = this.downloadableItem!.getValidTime()!.toString()!;
-        
-        
 ;
     
 
@@ -279,8 +273,6 @@ this.downloadableItem= downloadableItem;
                         else {
                             
     var size: string = this.downloadableItem!.getRetries()!.toString()!;
-        
-        
 ;
     
 
@@ -334,8 +326,6 @@ this.downloadableItem= downloadableItem;
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -453,8 +443,6 @@ stringBuffer!.append(" and >= 0 characters long.<br/>");
                         else {
                             
     var size: string = this.downloadableItem!.getSize()!.toString()!;
-        
-        
 ;
     
 
@@ -487,8 +475,6 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                         else {
                             
     var size: string = this.downloadableItem!.getValidTime()!.toString()!;
-        
-        
 ;
     
 
@@ -521,8 +507,6 @@ stringBuffer!.append(" and > 0 digits.<br/>");
                         else {
                             
     var size: string = this.downloadableItem!.getRetries()!.toString()!;
-        
-        
 ;
     
 

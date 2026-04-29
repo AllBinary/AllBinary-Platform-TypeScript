@@ -47,8 +47,6 @@ export class DropWeaponSound extends CompositeSound {
         
 
     private soundInterface: Sound = new DropWeaponSound();
-        
-        
 
     public static getInstance(): Sound{
 

@@ -24,12 +24,6 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
-
-    
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { PlaynImmutableImage } from "../../../../org/microemu/device/playn/PlaynImmutableImage.js";
 
     
@@ -67,8 +61,6 @@ export class ImageJ2MEScaleUtil
         
 
     private static readonly instance: ImageJ2MEScaleUtil = new ImageJ2MEScaleUtil();
-        
-        
 
     public static getInstance(): ImageJ2MEScaleUtil{
 
@@ -81,8 +73,6 @@ export class ImageJ2MEScaleUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -91,14 +81,12 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public scale(images: Image[], width: number, height: number): Image[]{
+    public scaleArray(images: Image[], width: number, height: number): Image[]{
 var images = images
 var width = width
 var height = height
 
     var scaledImages: Image[] = new Array(images.length);
-        
-        
 ;
     
 
@@ -108,8 +96,6 @@ var height = height
                         for (
     var index: number = images.length
                 ;
-        
-        
 --index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
@@ -135,8 +121,6 @@ scaledImages[index]= this.scale(images[index]!, width, height);
     var originalPlayNImage: playn.core.Image = 
                 null
             ;
-        
-        
 ;
     
 
@@ -144,50 +128,38 @@ scaledImages[index]= this.scale(images[index]!, width, height);
                         
                                     {
                                     
-    var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;
-        
-        
+    var originalHTMLImage: PlaynMutableImage =  as PlaynMutableImageimage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;
-        
-        
+    var originalHTMLImage: PlaynImmutableImage =  as PlaynImmutableImageimage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage=  as playn.core.ImageoriginalHTMLImage!.getImage();;
     
 
                         }
                             
 
     var scaledImage: Image = Image.createImage(width, height)!;
-        
-        
 ;
     
 
-    var htmlImage: PlaynMutableImage = scaledImage as PlaynMutableImage;
-        
-        
+    var htmlImage: PlaynMutableImage =  as PlaynMutableImagescaledImage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
     var canvasSurface: CanvasSurface = htmlImage!.getCanvasSurface(canvasImage)!;
-        
-        
 ;
     
 canvasSurface!.drawImage(originalPlayNImage, 0, 0, scaledImage!.getWidth(), scaledImage!.getHeight(), 0, 0, image.getWidth(), image.getHeight());

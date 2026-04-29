@@ -60,12 +60,8 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
 
     public static readonly NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY: PathFindingNodeCost[][] = Array(0) { arrayOfNulls<PathFindingNodeCost?>(0) }
                                                             ;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     public pathFindingNodeCostInfoP: PathFindingNodeCostInfo
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
@@ -88,7 +84,8 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw new Error("No GeographicMapCellPosition")
+                            throw new Error("No GeographicMapCellPosition");
+                    
 
                                     }
                                 
@@ -101,7 +98,8 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw new Error("No PathFindingNodeCostInfo")
+                            throw new Error("No PathFindingNodeCostInfo");
+                    
 
                                     }
                                 
@@ -139,8 +137,6 @@ var pathFindingNodeCost = pathFindingNodeCost
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);
@@ -154,9 +150,7 @@ stringBuffer!.append(" Path: ");
 stringBuffer!.append(this.geographicMapCellPosition!.toString());
     
 
-    var pathFindingNode: PathFindingNode = this.parent as PathFindingNode;
-        
-        
+    var pathFindingNode: PathFindingNode =  as PathFindingNodethis.parent;
 ;
     
 
@@ -168,7 +162,7 @@ stringBuffer!.append(pathFindingNode!.geographicMapCellPosition!.toString());
     
 stringBuffer!.append(this.commonSeps!.SPACE);
     
-pathFindingNode= pathFindingNode!.parent as PathFindingNode;
+pathFindingNode=  as PathFindingNodepathFindingNode!.parent;
     
 }
 

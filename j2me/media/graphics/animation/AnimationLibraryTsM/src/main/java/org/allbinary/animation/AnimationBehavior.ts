@@ -43,8 +43,6 @@ export class AnimationBehavior
         
 
     private static readonly instance: AnimationBehavior = new AnimationBehavior();
-        
-        
 
     public static getInstance(): AnimationBehavior{
 

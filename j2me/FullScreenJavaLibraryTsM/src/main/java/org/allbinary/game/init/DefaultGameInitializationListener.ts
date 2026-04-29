@@ -73,24 +73,18 @@ export class DefaultGameInitializationListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly swtJOGLProcessor: SWTJOGLProcessor = SWTJOGLProcessor.getInstance()!;
-        
-        
 public constructor (){
 
             super();
         
     var gameInitializedEventHandler: GameInitializedEventHandler = GameInitializedEventHandler.getInstance()!;
-        
-        
 ;
     
 gameInitializedEventHandler!.removeAllListeners();
     
-gameInitializedEventHandler!.addListener(this as GameInitializedListenerInterface);
+gameInitializedEventHandler!.addListener( as GameInitializedListenerInterfacethis);
     
 }
 
@@ -103,21 +97,15 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
     firstTime: boolean = true;
-        
-        
 
     public onGameInitialized(gameInitializedEvent: GameInitializedEvent){
     //var gameInitializedEvent = gameInitializedEvent
 
     var ON_GAME_INITIALIZED: string = "onGameInitialized";
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

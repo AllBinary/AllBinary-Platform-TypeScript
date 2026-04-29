@@ -70,12 +70,10 @@ export class PaymentTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -101,28 +99,20 @@ this.storeName= value;
             
     var anyType: any = new PaymentHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("select", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -138,7 +128,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -146,8 +137,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to select Payment";
-        
-        
 ;
     
 
@@ -179,7 +168,7 @@ this.storeName= value;
                         if(this.isEnabled())
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
@@ -195,8 +184,6 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     {
                                     
     var output: string = this.select()!;
-        
-        
 ;
     
 

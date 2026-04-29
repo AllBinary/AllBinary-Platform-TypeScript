@@ -73,13 +73,11 @@ export class BasicTextEmailHelper extends TagHelper {
         
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap
 
     private pageContext: PageContext
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -95,33 +93,23 @@ this.hashMap= hashMap;
             
     public send(){
 
-    var adminEmailSubject: string = this.hashMap!.get("Subject"); as String;
-        
-        
+    var adminEmailSubject: string =  as Stringthis.hashMap!.get("Subject");;
 ;
     
 
-    var adminEmailTextBody: string = this.hashMap!.get("Body"); as String;
-        
-        
+    var adminEmailTextBody: string =  as Stringthis.hashMap!.get("Body");;
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
 ;
     
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.INSTALLER)!;
-        
-        
 ;
     
 adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.INSTALLER, adminEmailInfo);

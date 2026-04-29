@@ -50,7 +50,7 @@ import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -79,7 +79,8 @@ var value = value
 
 
 
-                            throw new Error("Should not set from config")
+                            throw new Error("Should not set from config");
+                    
 }
 
 

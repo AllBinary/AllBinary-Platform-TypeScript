@@ -73,26 +73,22 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+import { LinePathAnimation } from "./LinePathAnimation.js";
 
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
-import { LinePathAnimation } from "./LinePathAnimation.js";
+import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class PathAnimation extends Animation {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly linePathAnimation: LinePathAnimation
 
     private readonly pathFindingLayer: PathFindingLayerInterface
 
     allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
-        
-        
 public constructor (pathFindingLayer: PathFindingLayerInterface, linePathAnimation: LinePathAnimation){
 
             super();
@@ -121,18 +117,12 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
 
     private readonly startColor: BasicColor = BasicColorFactory.getInstance()!.RED;
-        
-        
 
     private readonly middleColor: BasicColor = BasicColorFactory.getInstance()!.BLUE;
-        
-        
 
     private readonly endColor: BasicColor = BasicColorFactory.getInstance()!.GREEN;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -140,8 +130,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
         try {
             
     var waypointBehaviorBase: WaypointBehaviorBase = this.pathFindingLayer!.getWaypointBehavior()!;
-        
-        
 ;
     
 
@@ -152,20 +140,14 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                                     {
                                     
     var geographicMapCellHistory: GeographicMapCellHistory = waypointBehaviorBase!.getCurrentGeographicMapCellHistory()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = geographicMapCellHistory!.getTracked()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -173,27 +155,19 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-        
-        
 ;
     
 
@@ -206,8 +180,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
     
 
     var start: number = size -2;
-        
-        
 ;
     
 
@@ -216,8 +188,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
                         for (
     var index: number = 0;
-        
-        
 index < size -1; index++)
         {
 
@@ -250,11 +220,11 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
                         }
                             
-geographicMapCellPosition= list.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index);;
     
 point= geographicMapCellPosition!.getMidPoint();
     
-geographicMapCellPosition= list.get(index +1); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositionlist.get(index +1);;
     
 nextPoint= geographicMapCellPosition!.getMidPoint();
     

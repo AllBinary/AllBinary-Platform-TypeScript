@@ -61,23 +61,19 @@ export class StoreFrontViewFactory
 var storeName = storeName
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var storeFronts: StoreFrontsEntity = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new StoreFrontView(storeFronts!.getStoreFrontInterface(storeName)) as DomNodeInterface;
+                        return  as DomNodeInterfacenew StoreFrontView(storeFronts!.getStoreFrontInterface(storeName));
     
 
                 //: 
@@ -85,8 +81,6 @@ var storeName = storeName
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -110,8 +104,6 @@ var storeName = storeName
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

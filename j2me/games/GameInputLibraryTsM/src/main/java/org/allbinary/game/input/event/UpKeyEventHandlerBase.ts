@@ -67,16 +67,10 @@ export class UpKeyEventHandlerBase extends BasicEventHandler {
         
 
     private static readonly TOTAL_LISTENERS: string = " Total PlayerGameInput Listeners: ";
-        
-        
 
     private static readonly LISTENER_LABEL: string = " PlayerGameInput Listener: ";
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
  constructor (){
 
             super();
@@ -126,7 +120,7 @@ super.removeListener(eventListenerInterface);
 
                 //@Throws(Error::class)
             
-    public fireEvent(eventObject: Integer){
+    public fireEvent(eventObject: number){
     //var eventObject = eventObject
 
 
@@ -134,16 +128,12 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
-        
-        
+    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
 ;
     
 playerGameInput!.onUpKeyEvent(eventObject);
@@ -160,8 +150,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
 
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -173,7 +161,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.get(index);;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -194,13 +182,11 @@ index++;
 
                 //@Throws(Error::class)
             
-    process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
+    process(eventObject: number, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var upKeyEventListenerInterface: UpKeyEventListenerInterface = eventListenerInterface as UpKeyEventListenerInterface;
-        
-        
+    var upKeyEventListenerInterface: UpKeyEventListenerInterface =  as UpKeyEventListenerInterfaceeventListenerInterface;
 ;
     
 upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
@@ -211,8 +197,6 @@ upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());
@@ -227,16 +211,12 @@ stringBuffer!.appendint(this.list.size());
 
                         for (
     var index: number = 0;
-        
-        
 index < this.list.size(); index++)
         {
 
         try {
             
-    var eventListenerInterface: EventListenerInterface = this.list.get(index); as EventListenerInterface;
-        
-        
+    var eventListenerInterface: EventListenerInterface =  as EventListenerInterfacethis.list.get(index);;
 ;
     
 stringBuffer!.append(LISTENER_LABEL);

@@ -72,8 +72,6 @@ export class AbFileUploadFactory
         
 
     private static readonly instance: AbFileUploadFactory = new AbFileUploadFactory();
-        
-        
 
     public static getInstance(): AbFileUploadFactory{
 
@@ -86,8 +84,6 @@ export class AbFileUploadFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -102,20 +98,14 @@ var httpServletRequest = httpServletRequest
         try {
             
     var fileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
-        
-        
 ;
     
 
     var iterator: FileItemIterator = fileUpload!.getItemIterator(httpServletRequest)!;
-        
-        
 ;
     
 
     var items: List = new ArrayList();
-        
-        
 ;
     
 
@@ -123,16 +113,12 @@ var httpServletRequest = httpServletRequest
         {
 
     var fileItemStream: FileItemStream = iterator.next()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItemStream);
     
 
     var fileItem: AbFileItem = new AbFileItem(fileItemStream!.getName(), fileItemStream!.getFieldName(), FileItemUtil.getInstance()!.encodeToByteArray());
-        
-        
 ;
     
 items.add(fileItem);
@@ -155,8 +141,6 @@ items.add(fileItem);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
@@ -167,7 +151,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -181,8 +166,6 @@ var httpServletRequest = httpServletRequest
         try {
             
     var abFileUpload: AbFileUpload = new AbFileUpload(new AbFileItemFactory());
-        
-        
 ;
     
 
@@ -197,8 +180,6 @@ var httpServletRequest = httpServletRequest
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -213,7 +194,8 @@ var httpServletRequest = httpServletRequest
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -79,8 +79,6 @@ export class TableTag extends PropertiesTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private enabled: string
 
@@ -90,9 +88,9 @@ export class TableTag extends PropertiesTag {
 
     private requestObject: any
 
-    private current: Integer
+    private current: number
 
-    private total: Integer
+    private total: number
 public constructor (){
 
             super();
@@ -181,14 +179,14 @@ this.tagRequestHelperFactoryInterface= tagHelperFactoryInterface;
 }
 
 
-    public setCurrent(current: Integer){
+    public setCurrent(current: number){
 var current = current
 this.current= current;
     
 }
 
 
-    public getCurrent(): Integer{
+    public getCurrent(): number{
 
 
 
@@ -198,14 +196,14 @@ this.current= current;
 }
 
 
-    public setTotal(total: Integer){
+    public setTotal(total: number){
 var total = total
 this.total= total;
     
 }
 
 
-    public getTotal(): Integer{
+    public getTotal(): number{
 
 
 
@@ -222,28 +220,20 @@ this.total= total;
         try {
             
     var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("drop", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -258,8 +248,6 @@ this.total= total;
             {
 
     var error: string = "Failed to drop table";
-        
-        
 ;
     
 
@@ -289,28 +277,20 @@ this.total= total;
         try {
             
     var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("create", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -325,8 +305,6 @@ this.total= total;
             {
 
     var error: string = "Failed to create table";
-        
-        
 ;
     
 
@@ -356,28 +334,20 @@ this.total= total;
         try {
             
     var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("restore", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -392,8 +362,6 @@ this.total= total;
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -423,28 +391,20 @@ this.total= total;
         try {
             
     var anyType: any = getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("backup", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -459,8 +419,6 @@ this.total= total;
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 
@@ -490,22 +448,16 @@ this.total= total;
         try {
             
     var helperClass: Function = this.requestObject!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("insert", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.requestObject, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.requestObject, 
+                            null);;
 ;
     
 
@@ -520,8 +472,6 @@ this.total= total;
             {
 
     var error: string = "Failed to insert";
-        
-        
 ;
     
 
@@ -551,22 +501,16 @@ this.total= total;
         try {
             
     var helperClass: Function = this.requestObject!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.delete, 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.requestObject, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.requestObject, 
+                            null);;
 ;
     
 
@@ -581,8 +525,6 @@ this.total= total;
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -612,22 +554,16 @@ this.total= total;
         try {
             
     var helperClass: Function = this.requestObject!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("update", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.requestObject, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.requestObject, 
+                            null);;
 ;
     
 
@@ -642,8 +578,6 @@ this.total= total;
             {
 
     var error: string = "Failed to update";
-        
-        
 ;
     
 
@@ -676,15 +610,11 @@ this.total= total;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TableTag Helper: ");
@@ -792,8 +722,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     {
                                     
     var output: string = this.backup()!;
-        
-        
 ;
     
 
@@ -824,8 +752,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
     
 
     var output: string = this.restore()!;
-        
-        
 ;
     
 
@@ -852,8 +778,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     {
                                     
     var output: string = this.drop()!;
-        
-        
 ;
     
 
@@ -880,8 +804,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     {
                                     
     var output: string = this.create()!;
-        
-        
 ;
     
 
@@ -908,8 +830,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     {
                                     
     var output: string = this.insert()!;
-        
-        
 ;
     
 
@@ -930,8 +850,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     {
                                     
     var output: string = this.delete()!;
-        
-        
 ;
     
 
@@ -952,8 +870,6 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     {
                                     
     var output: string = this.update()!;
-        
-        
 ;
     
 

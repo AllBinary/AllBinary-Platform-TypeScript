@@ -47,8 +47,6 @@ export class TouchButtonDowngradeResource extends TouchButtonResource {
         
 
     private static readonly instance: TouchButtonResource = new TouchButtonDowngradeResource();
-        
-        
 
     public static getInstance(): TouchButtonResource{
 

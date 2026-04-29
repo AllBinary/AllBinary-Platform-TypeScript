@@ -40,14 +40,14 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameType } from "./GameType.js";
+
 export class GameTypeFactory
             extends Object
          {
         
 
     private static readonly instance: GameTypeFactory = new GameTypeFactory();
-        
-        
 
     public static getInstance(): GameTypeFactory{
 
@@ -60,24 +60,14 @@ export class GameTypeFactory
 
 
     public NULL_GAME_TYPE_ARRAY: GameType[] = [];
-        
-        
 
     public NONE: GameType = new GameType(StringUtil.getInstance()!.NULL_STRING);
-        
-        
 
     public SINGLE_PLAYER: GameType = new GameType("Single Player");
-        
-        
 
     public MULTI_PLAYER: GameType = new GameType("Multi Player");
-        
-        
 
     public BOT: GameType = new GameType("Artificial Player");
-        
-        
 
 }
                 

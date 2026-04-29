@@ -50,8 +50,6 @@ import { Runtime } from "./Runtime.js";
     /*actual*/ public static getInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Memory: Free: ");

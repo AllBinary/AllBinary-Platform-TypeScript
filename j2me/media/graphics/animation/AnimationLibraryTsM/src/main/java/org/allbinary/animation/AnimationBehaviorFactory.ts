@@ -45,8 +45,6 @@ export class AnimationBehaviorFactory
         
 
     private static readonly instance: AnimationBehaviorFactory = new AnimationBehaviorFactory();
-        
-        
 
     public static getInstance(): AnimationBehaviorFactory{
 

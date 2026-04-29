@@ -45,8 +45,6 @@ import { Log } from "./Log.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -63,12 +61,12 @@ private constructor (){
         }
 
 
-    /*actual*/ public put(log: Log){
+    /*actual*/ public putP(log: Log){
 var log = log
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

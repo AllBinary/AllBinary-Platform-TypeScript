@@ -52,8 +52,6 @@ export class OrderedObjectArrayPermutationUtil
         
 
     private static readonly instance: OrderedObjectArrayPermutationUtil = new OrderedObjectArrayPermutationUtil();
-        
-        
 
     public static getInstance(): OrderedObjectArrayPermutationUtil{
 
@@ -69,14 +67,10 @@ export class OrderedObjectArrayPermutationUtil
 var args = args
 
     var TOTAL: number = 7;
-        
-        
 ;
     
 
     var data: any[] = new Array(TOTAL);
-        
-        
 ;
     
 
@@ -85,8 +79,6 @@ var args = args
 
                         for (
     var i: number = 0;
-        
-        
 i < TOTAL; i++)
         {
 data[i]= new ComparableObject();
@@ -97,14 +89,10 @@ Arrays.sort(data);
     
 
     var permutationVisitor: ObjectPermutationVisitor = new ObjectPermutationVisitor(data);
-        
-        
 ;
     
 
     var ORIGINAL_DATA_LABEL: string = "Original Data: ";
-        
-        
 ;
     
 console.log(ORIGINAL_DATA_LABEL);
@@ -117,12 +105,8 @@ OrderedObjectArrayPermutationUtil.getInstance()!.generate(data, permutationVisit
 
 
     private readonly TOTAL_ITERATIONS_TABLE: string = "Total Iterations: ";
-        
-        
 
     private readonly FINISHED: string = "\nFINISHED";
-        
-        
 private constructor (){
 
             super();
@@ -134,20 +118,14 @@ var data = data
 
     var length: number = data.length
                 ;
-        
-        
 ;
     
 
     var i: number = length -1;
-        
-        
 ;
     
 
     var tsUtil: TsUtil = TsUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -159,8 +137,6 @@ i= i -1;
 
 
     var j: number = length;
-        
-        
 ;
     
 
@@ -196,8 +172,6 @@ var a = a
 var b = b
 
     var temp: any = data[a]!;
-        
-        
 ;
     
 data[a]= data[b]!;
@@ -211,8 +185,6 @@ data[b]= temp;
 var dataLength = dataLength
 
     var temp: number = 1;
-        
-        
 ;
     
 
@@ -225,8 +197,6 @@ var dataLength = dataLength
 
                         for (
     var i: number = 1;
-        
-        
 i <= dataLength; i++)
         {
 temp *= i;
@@ -250,8 +220,6 @@ var data = data
 var visitor = visitor
 
     var iterations: number = this.factorial(data.length)!;
-        
-        
 ;
     
 console.log(this.TOTAL_ITERATIONS_TABLE);
@@ -264,8 +232,6 @@ console.log(iterations);
 
                         for (
     var count: number = 0;
-        
-        
 count < iterations -1; count++)
         {
 this.getNext(data);

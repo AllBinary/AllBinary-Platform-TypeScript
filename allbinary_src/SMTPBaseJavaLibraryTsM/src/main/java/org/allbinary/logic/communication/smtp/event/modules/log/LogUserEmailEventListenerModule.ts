@@ -52,8 +52,6 @@ export class LogUserEmailEventListenerModule
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -70,8 +68,6 @@ var userEmailInfoEvent = userEmailInfoEvent
                                     {
                                     
     var message: string = "Logging EmailEvent - Temporary Listener for debugging.\n\n" +userEmailInfoEvent!.toString();
-        
-        
 ;
     
 this.logUtil!.putF(message, this, "onEmailSendRequest");

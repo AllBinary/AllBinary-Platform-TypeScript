@@ -43,24 +43,16 @@ export class ViewSwapper
             
 
     public static readonly NULL_VIEW_ARRAY: View[] = [];
-        
-        
 
     private readonly rootViewId: number
 
     private readonly activity: Activity
 
     private currentMainViewId: number =  -1;
-        
-        
 
     private mainViewArray: View[] = NULL_VIEW_ARRAY;
-        
-        
 
     private topViewArray: View[] = NULL_VIEW_ARRAY;
-        
-        
 public constructor (activity: Activity, rootViewId: number){
 
             super();
@@ -90,9 +82,7 @@ this.topViewArray= topViewArray;
     public setMainView(id: number){
 var id = id
 
-    var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId); as ViewGroup;
-        
-        
+    var viewGroup: ViewGroup =  as ViewGroupthis.activity.findViewById(this.rootViewId);;
 ;
     
 
@@ -105,8 +95,6 @@ var id = id
 
                         for (
     var index: number = 0;
-        
-        
 index < this.topViewArray!.length; index++)
         {
 viewGroup!.removeView(this.topViewArray[index]!);
@@ -119,8 +107,6 @@ viewGroup!.removeView(this.topViewArray[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < this.mainViewArray!.length; index++)
         {
 
@@ -140,8 +126,6 @@ index < this.mainViewArray!.length; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < this.mainViewArray!.length; index++)
         {
 
@@ -163,8 +147,6 @@ this.currentMainViewId= id;
 
                         for (
     var index: number = 0;
-        
-        
 index < this.topViewArray!.length; index++)
         {
 viewGroup!.addView(this.topViewArray[index]!);

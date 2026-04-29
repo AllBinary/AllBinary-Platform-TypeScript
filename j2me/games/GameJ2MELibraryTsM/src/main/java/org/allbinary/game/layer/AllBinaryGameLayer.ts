@@ -105,25 +105,17 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly RED: BasicColor = BasicColorFactory.getInstance()!.RED;
-        
-        
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
-        
-        
 
     private readonly paintable: Paintable = SWTUtil.isSWT
                         ?       
-                                new object: Paintable()
+                                new Paintable()
                                 {
                                 
     var private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
@@ -138,12 +130,8 @@ basicSetColorUtil!.setBasicColorP(graphics, BLACK);
                             NullPaintable.getInstance();
 
     ;
-        
-        
 
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition);
                         //var name = name
@@ -163,7 +151,8 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -188,7 +177,8 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -199,7 +189,8 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -251,20 +242,14 @@ this.paintable.paint(graphics);
     //var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
 
     var viewX: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var viewY: number = viewPosition!.getY()!;
-        
-        
 ;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, RED);

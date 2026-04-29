@@ -84,58 +84,42 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
+this.userConfigurationInterface=  as UserConfigurationInterfacenew UserConfiguration();
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var emailConfigurationNode: Node = DomSearchHelper.getNode(UserEmailConfigurationData.NAME, childNodeList)!;
-        
-        
 ;
     
 
     var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(emailConfigurationNode);
-        
-        
 ;
     
 
-    var userEmailConfigurationInterface: UserEmailConfigurationInterface = userEmailConfigurationView!.getEmailConfigurationInterface(); as UserEmailConfigurationInterface;
-        
-        
+    var userEmailConfigurationInterface: UserEmailConfigurationInterface =  as UserEmailConfigurationInterfaceuserEmailConfigurationView!.getEmailConfigurationInterface();;
 ;
     
 this.userConfigurationInterface!.setUserEmailConfigurationInterface(userEmailConfigurationInterface);
     
 
     var timeCreatedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.TIMECREATED, childNodeList)!;
-        
-        
 ;
     
 
     var timeCreatedView: TimeCreatedView = new TimeCreatedView(timeCreatedNode);
-        
-        
 ;
     
 this.userConfigurationInterface!.setTimeCreated(timeCreatedView!.getTimeCreated());
     
 
     var timeLastModifiedNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.LASTMODIFIED, childNodeList)!;
-        
-        
 ;
     
 
     var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(timeLastModifiedNode);
-        
-        
 ;
     
 this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTimeLastModified());
@@ -167,30 +151,22 @@ this.userConfigurationInterface= userConfigurationInterface;
 var document = document
 
     var node: Node = document.createElement(UserConfigurationData.NAME)!;
-        
-        
 ;
     
 
     var userEmailConfigurationView: UserEmailConfigurationView = new UserEmailConfigurationView(this.userConfigurationInterface!.getUserEmailConfigurationInterface());
-        
-        
 ;
     
 node.appendChild(userEmailConfigurationView!.toXmlNode(document));
     
 
     var timeCreatedView: TimeCreatedView = new TimeCreatedView(this.userConfigurationInterface!.getTimeCreated());
-        
-        
 ;
     
 node.appendChild(timeCreatedView!.toXmlNode(document));
     
 
     var timeLastModifiedView: TimeLastModifiedView = new TimeLastModifiedView(this.userConfigurationInterface!.getTimeLastModified());
-        
-        
 ;
     
 node.appendChild(timeLastModifiedView!.toXmlNode(document));

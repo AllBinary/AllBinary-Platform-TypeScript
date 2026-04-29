@@ -65,14 +65,10 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
-        
-        
 ;
     
 
@@ -137,14 +133,10 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
-        
-        
 ;
     
 

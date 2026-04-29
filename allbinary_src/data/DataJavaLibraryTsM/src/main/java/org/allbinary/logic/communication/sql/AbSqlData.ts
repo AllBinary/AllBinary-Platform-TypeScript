@@ -43,28 +43,16 @@ export class AbSqlData
         
 
     public static readonly ANYSINGLECHARACTERMATCH: string = "_";
-        
-        
 
     public static readonly ANYMULTICHARACTERMATCH: string = "%";
-        
-        
 
     public static readonly MAXNUM: number = 19;
-        
-        
 
     public static readonly MINSTRING: number = 1;
-        
-        
 
     public static readonly MAXSTRING: number = 255;
-        
-        
 
     public static readonly MAXBLOB: number = 32000;
-        
-        
 public constructor (){
 
             super();

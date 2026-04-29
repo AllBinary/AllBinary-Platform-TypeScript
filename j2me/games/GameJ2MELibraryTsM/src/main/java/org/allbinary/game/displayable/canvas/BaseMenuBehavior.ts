@@ -51,8 +51,6 @@ export class BaseMenuBehavior
         
 
     private static readonly instance: BaseMenuBehavior = new BaseMenuBehavior();
-        
-        
 
     public static getInstance(): BaseMenuBehavior{
 

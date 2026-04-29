@@ -175,8 +175,6 @@ this.level++;
     
 
     var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;
-        
-        
 ;
     
 unitTechnologySingletonFactory!.setSpeed(unitTechnologySingletonFactory!.getSpeed() +(this.getLevel() *100));

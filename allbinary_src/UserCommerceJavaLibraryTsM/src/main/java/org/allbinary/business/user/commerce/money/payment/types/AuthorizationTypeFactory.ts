@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AuthorizationType } from "./AuthorizationType.js";
+
 export class AuthorizationTypeFactory
             extends Object
          {
         
 
     private static readonly instance: AuthorizationTypeFactory = new AuthorizationTypeFactory();
-        
-        
 
     public static getInstance(): AuthorizationTypeFactory{
 
@@ -57,32 +57,18 @@ export class AuthorizationTypeFactory
 
 
     public readonly NONE: AuthorizationType = new AuthorizationType("None");
-        
-        
 
     public readonly VOICE: AuthorizationType = new AuthorizationType("Voice");
-        
-        
 
     public readonly RETINAL: AuthorizationType = new AuthorizationType("Retinal");
-        
-        
 
     public readonly IMAGE: AuthorizationType = new AuthorizationType("Image");
-        
-        
 
     public readonly DNA: AuthorizationType = new AuthorizationType("DNA");
-        
-        
 
     public readonly PRINT: AuthorizationType = new AuthorizationType("Print");
-        
-        
 
     public readonly CHIP: AuthorizationType = new AuthorizationType("Chip");
-        
-        
 
 }
                 

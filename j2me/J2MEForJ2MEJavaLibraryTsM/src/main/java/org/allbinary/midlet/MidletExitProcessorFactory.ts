@@ -55,8 +55,6 @@ export class MidletExitProcessorFactory
         
 
     private static readonly instance: MidletExitProcessorFactory = new MidletExitProcessorFactory();
-        
-        
 
     public static getInstance(): MidletExitProcessorFactory{
 
@@ -68,7 +66,7 @@ export class MidletExitProcessorFactory
 }
 
 
-    public getInstance(midlet: MIDlet): Processor{
+    public getExitInstance(midlet: MIDlet): Processor{
 var midlet = midlet
 
                         if(AppletUtil.isAppletLoader(midlet) || J2MEUtil.isJ2ME())

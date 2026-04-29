@@ -111,8 +111,6 @@ export class HighScoreNamePersistanceSingleton
         
 
     private SINGLETON: HighScoreNamePersistanceSingleton = new HighScoreNamePersistanceSingleton();
-        
-        
 
     public static getInstance(): HighScoreNamePersistanceSingleton{
 
@@ -125,28 +123,16 @@ export class HighScoreNamePersistanceSingleton
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly platformRecordIdUtil: PlatformRecordIdUtil = PlatformRecordIdUtil.getInstance()!;
-        
-        
 
     private readonly RECORD_ID: string = "_SN";
-        
-        
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private nameBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public clear(){
 this.name= StringUtil.getInstance()!.EMPTY_STRING;
@@ -161,8 +147,6 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
     //var gameInfo = gameInfo
 
     var size: number = this.nameBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -171,14 +155,10 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;
-        
-        
+    var integer: number =  as Integerthis.nameBasicArrayList!.objectArray[index]!;
 ;
     
 this.delete(abeClientInformation, gameInfo, integer.toInt());
@@ -209,8 +189,6 @@ this.clear();
     //var deleteId = deleteId
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-        
-        
 ;
     
 
@@ -229,7 +207,8 @@ recordStore!.deleteRecord(deleteId);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {
@@ -267,8 +246,6 @@ recordStore!.closeRecordStore();
     //var gameInfo = gameInfo
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-        
-        
 ;
     
 
@@ -279,22 +256,16 @@ recordStore!.closeRecordStore();
                                     {
                                     
     var LOADING_ID: string = "Loading id: ";
-        
-        
 ;
     
 recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true);
     
 
     var recordEnum: RecordEnumeration = recordStore!.enumerateRecords(NullRecordFilter.NULL_RECORD_FILTER, NullRecordComparator.NULL_RECORD_COMPARATOR, true)!;
-        
-        
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -314,8 +285,6 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
         {
 
     var id: number = recordEnum!.nextRecordId()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -334,7 +303,7 @@ this.name= inputStream!.readUTF();
     
 }
 
-this.nameBasicArrayList!.add(smallIntegerSingletonFactory!.getInstance(id));
+this.nameBasicArrayList!.add(smallIntegerSingletonFactory!.getAt(id));
     
 }
 
@@ -394,8 +363,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
     //var name = name
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
-        
-        
 ;
     
 
@@ -407,22 +374,16 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var outputStream: DataOutputStream = new DataOutputStream(byteArrayOutputStream);
-        
-        
 ;
     
 outputStream!.writeUTF(name);
     
 
     var savedGameBytes: number[] = byteArrayOutputStream!.toByteArray()!;
-        
-        
 ;
     
 recordStore!.addRecord(savedGameBytes, 0, savedGameBytes!.length);

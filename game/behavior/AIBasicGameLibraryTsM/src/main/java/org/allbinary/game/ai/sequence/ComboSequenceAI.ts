@@ -71,15 +71,11 @@ var gameInput = gameInput
 var allBinaryLayerManager = allBinaryLayerManager
 
     var artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[] = this.getArtificialIntelligenceInterface()!;
-        
-        
 ;
     
 
     var size: number = artificialIntelligenceInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -88,8 +84,6 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.setIndex(index);

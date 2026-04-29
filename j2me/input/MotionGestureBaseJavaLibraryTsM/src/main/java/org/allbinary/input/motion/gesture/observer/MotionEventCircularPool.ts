@@ -56,7 +56,7 @@ export class MotionEventCircularPool
          {
         
 
-    public static getInstance(id: number): MotionEventCircularPool{
+    public static createPool(id: number): MotionEventCircularPool{
 var id = id
 
 
@@ -68,12 +68,8 @@ var id = id
 
 
     private static readonly MIN: number = TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId()!;
-        
-        
 
     private eventPool: AllBinaryEventCircularPool = new AllBinaryEventCircularPool((InputFactory.getInstance()!.MAX -1) -MIN);
-        
-        
 private constructor (id: number){
 
             super();
@@ -92,7 +88,7 @@ var motionGestureInput = motionGestureInput
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventPool!.getInstance(motionGestureInput!.getId() -MIN); as MotionGestureEvent;
+                        return  as MotionGestureEventeventPool!.getInstance(motionGestureInput!.getId() -MIN);;
     
 }
 

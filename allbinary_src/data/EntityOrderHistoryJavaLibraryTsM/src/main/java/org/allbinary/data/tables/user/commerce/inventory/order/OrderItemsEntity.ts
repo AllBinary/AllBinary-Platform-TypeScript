@@ -121,12 +121,8 @@ export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInter
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "orderitems";
-        
-        
 public constructor (){
             super(new HistoryDbInitInfo());
                     
@@ -143,53 +139,37 @@ var userName = userName
 var order = order
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
         try {
             
     var basket: BasketInterface = order.getBasket()!;
-        
-        
 ;
     
 
     var items: Set = basket.getIds()!;
-        
-        
 ;
     
 
     var ZERO_STRING: string = TableDataFactory.getInstance()!.ZERO_STRING;
-        
-        
 ;
     
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
     var itemsArray: any[] = items.toArray()!;
-        
-        
 ;
     
 
     var itemsSize: number = itemsArray!.length
                 ;
-        
-        
 ;
     
 
@@ -198,20 +178,14 @@ var order = order
 
                         for (
     var i: number = 0;
-        
-        
 i < itemsSize; i++)
         {
 
-    var item: string = itemsArray[i]! as String;
-        
-        
+    var item: string =  as StringitemsArray[i]!;
 ;
     
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(item)!;
-        
-        
 ;
     
 vector= new Vector();
@@ -341,15 +315,11 @@ var status = status
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var whereHashMap: HashMap = new HashMap();
 ;
     
 
-    var updateHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var updateHashMap: HashMap = new HashMap();
 ;
     
 whereHashMap!.put(OrderData.ID, orderId);
@@ -384,23 +354,17 @@ var orderId = orderId
         try {
             
     var itemStatusVector: Vector = super.getColumnWhere(OrderHistoryData.STATUS, OrderData.ID, orderId)!;
-        
-        
 ;
     
 
     var itemStatusIter: ListIterator = itemStatusVector!.listIterator()!;
-        
-        
 ;
     
 
         while(itemStatusIter!.hasNext())
         {
 
-    var status: string = itemStatusIter!.next(); as String;
-        
-        
+    var status: string =  as StringitemStatusIter!.next();;
 ;
     
 
@@ -454,28 +418,20 @@ var orderId = orderId
         try {
             
     var basketReview: BasketReview = new BasketReview();
-        
-        
 ;
     
 
-    var keyValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keyValues: HashMap = new HashMap();
 ;
     
 keyValues!.put(OrderData.ID, orderId);
     
 
     var items: Vector = super.getRows(keyValues)!;
-        
-        
 ;
     
 
     var entryData: EntryData = EntryData.getInstance()!;
-        
-        
 ;
     
 
@@ -486,21 +442,15 @@ keyValues!.put(OrderData.ID, orderId);
                                     {
                                     
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
     var itemsArray: any[] = items.toArray()!;
-        
-        
 ;
     
 
     var itemsSize: number = itemsArray!.length
                 ;
-        
-        
 ;
     
 
@@ -509,14 +459,10 @@ keyValues!.put(OrderData.ID, orderId);
 
                         for (
     var i: number = 0;
-        
-        
 i < itemsSize; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemsArray[i]! as HashMap<any, any>;
-        
-        
+    var itemHashMap: HashMap =  as HashMapitemsArray[i]!;
 ;
     
 itemHashMap!.put(BasicItemData.INBASKETS, EMPTY_STRING);
@@ -537,8 +483,6 @@ itemHashMap!.put(BasicItemData.SPECIALS, EMPTY_STRING);
     
 
     var item: Item = new Item(itemHashMap);
-        
-        
 ;
     
 basketReview!.addItem(item);
@@ -591,14 +535,10 @@ basketReview!.addItem(item);
     public createTableStatement(): string{
 
     var entryData: EntryData = EntryData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("CREATE TABLE ");

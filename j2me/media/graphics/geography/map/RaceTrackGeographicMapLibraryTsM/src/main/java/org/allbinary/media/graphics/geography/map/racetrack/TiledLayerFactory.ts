@@ -51,8 +51,6 @@ export class TiledLayerFactory
 var raceTrackData = raceTrackData
 
     var mapArray: number[][] = raceTrackData!.getMapArray()!;
-        
-        
 ;
     
 
@@ -68,8 +66,6 @@ var raceTrackData = raceTrackData
 var raceTrackData = raceTrackData
 
     var mapArray: number[][] = raceTrackData!.getMapArray()!;
-        
-        
 ;
     
 

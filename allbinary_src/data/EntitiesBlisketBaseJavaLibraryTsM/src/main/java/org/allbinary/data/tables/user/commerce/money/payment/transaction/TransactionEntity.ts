@@ -79,12 +79,8 @@ export class TransactionEntity extends AbSqlBean implements TransactionEntityInt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tableName: string = "vtrans";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -103,11 +99,9 @@ var orderNumber = orderNumber
         try {
             
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
 ;
     
-whereHashMap!.put(OrderData.ID, orderNumber as String);
+whereHashMap!.put(OrderData.ID,  as StringorderNumber);
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
@@ -148,8 +142,6 @@ var paymentTransactionInterface = paymentTransactionInterface
         try {
             
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(orderNumber);
@@ -160,15 +152,11 @@ values.addAll(paymentTransactionInterface!.toVector());
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.add(time);
@@ -207,14 +195,10 @@ super.insert(values);
     public createTableStatement(): string{
 
     var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);

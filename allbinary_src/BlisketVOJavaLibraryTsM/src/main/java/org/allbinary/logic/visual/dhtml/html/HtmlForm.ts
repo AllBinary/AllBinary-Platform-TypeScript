@@ -55,39 +55,23 @@ export class HtmlForm
         
 
     private readonly FORMBEGIN: string = "<form ";
-        
-        
 
     private readonly END: string = ">";
-        
-        
 
     private readonly FORMEND: string = "</form>";
-        
-        
 
     private readonly ACTION: string = "ACTION=\"";
-        
-        
 
     private readonly GET: string = "GET\"";
-        
-        
 
     private readonly POST: string = "POST\"";
-        
-        
 
     private readonly METHODS: string[] = 
                                                         [
                                                             GET,POST
                                                         ];
-        
-        
 
     private readonly METHOD: string = "METHOD=\"";
-        
-        
 
     private method: string
 
@@ -134,27 +118,19 @@ this.inputs.add(htmlTable);
     public toString(): string{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var result: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var inputArray: any[] = this.inputs.toArray()!;
-        
-        
 ;
     
 
     var inputSize: number = inputArray!.length
                 ;
-        
-        
 ;
     
 result= this.FORMBEGIN;
@@ -179,8 +155,6 @@ result += this.END;
 
                         for (
     var i: number = 0;
-        
-        
 i < inputSize; i++)
         {
 result += inputArray[i]!.toString();

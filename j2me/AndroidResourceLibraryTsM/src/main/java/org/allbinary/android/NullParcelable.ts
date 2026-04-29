@@ -42,6 +42,8 @@ import { Parcelable } from "../../../android/os/Parcelable.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Parcel } from "./Parcel.js";
 
 export class NullParcelable
@@ -53,14 +55,13 @@ export class NullParcelable
             
 
     public static readonly NULL_PARCELABLE: NullParcelable = new NullParcelable();
-        
-        
 
     public describeContents(): number{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

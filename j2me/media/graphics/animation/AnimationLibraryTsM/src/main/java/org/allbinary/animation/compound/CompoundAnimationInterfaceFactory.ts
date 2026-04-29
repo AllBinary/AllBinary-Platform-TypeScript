@@ -79,14 +79,10 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
                 ;
-        
-        
 ;
     
 
     var animationInterfaceArray: Animation[] = this.createArray(size)!;
-        
-        
 ;
     
 
@@ -95,8 +91,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.getInstance(instanceId);
@@ -107,7 +101,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInstance(animationInterfaceArray);;
+                        return this.createAnimation(animationInterfaceArray);;
     
 }
 
@@ -123,7 +117,7 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 }
 
 
-    getInstance(animationInterfaceArray: Animation[]): Animation{
+    createAnimation(animationInterfaceArray: Animation[]): Animation{
     //var animationInterfaceArray = animationInterfaceArray
 
 
@@ -149,8 +143,6 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArrayP!.length
                 ;
-        
-        
 ;
     
 
@@ -159,8 +151,6 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.basicAnimationInterfaceFactoryInterfaceArrayP[index]!.setInitialScale(scaleProperties);

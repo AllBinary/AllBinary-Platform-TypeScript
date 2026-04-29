@@ -70,8 +70,6 @@ export class StaticPagesTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private xslFile: string
 public constructor (){
@@ -99,28 +97,20 @@ this.xslFile= value;
             
     var anyType: any = new StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("generateStaticPages", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -136,7 +126,8 @@ this.xslFile= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -144,8 +135,6 @@ this.xslFile= value;
             {
 
     var error: string = "Failed to generate staticpages table";
-        
-        
 ;
     
 
@@ -176,28 +165,20 @@ this.xslFile= value;
             
     var anyType: any = new StaticPagesRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("makePublic", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -213,7 +194,8 @@ this.xslFile= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -221,8 +203,6 @@ this.xslFile= value;
             {
 
     var error: string = "Failed to makePublic";
-        
-        
 ;
     
 
@@ -268,8 +248,6 @@ this.xslFile= value;
     
 
     var output: string = this.generateStaticPages()!;
-        
-        
 ;
     
 
@@ -290,8 +268,6 @@ this.xslFile= value;
                                     {
                                     
     var output: string = this.makePublic()!;
-        
-        
 ;
     
 

@@ -58,8 +58,6 @@ export class XmlValidationTransformTag extends TransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -73,22 +71,16 @@ public constructor (){
         try {
             
     var helperClass: Function = this.getHelper()!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.IS_VALID, 
                             null)!;
-        
-        
 ;
     
 
-    var result: Boolean = method.invoke(this.getHelper(), 
-                            null); as Boolean;
-        
-        
+    var result: Boolean =  as Booleanmethod.invoke(this.getHelper(), 
+                            null);;
 ;
     
 
@@ -113,7 +105,8 @@ public constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

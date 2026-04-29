@@ -86,22 +86,14 @@ export class LoggingInitInfo
         
 
     private static readonly INITFILENAME: string = "logConfig.xml";
-        
-        
 
     private static readonly PACKAGE: string = PATH_GLOBALS.getInstance()!.INIT_PATH;
-        
-        
 
     private logConfigInfoList: BasicArrayList = 
                 null
             ;
-        
-        
 
     private hasRead: boolean = false;
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -109,26 +101,18 @@ export class LoggingInitInfo
     public static getDoc(): Document{
 
     var path: string = URLGLOBALS.getWebappPath() +PACKAGE;
-        
-        
 ;
     
 
     var FILEABPATH: AbPath = new AbPath(path, INITFILENAME);
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(new AbFileLocalInputStream(file))!;
-        
-        
 ;
     
 
@@ -155,7 +139,8 @@ export class LoggingInitInfo
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -169,34 +154,24 @@ export class LoggingInitInfo
         try {
             
     var document: Document = LoggingInitInfo.getDoc()!;
-        
-        
 ;
     
 
     var logConfigsNodeList: NodeList = document.getElementsByTagName(LogConfigsData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var logConfigsNode: Node = logConfigsNodeList!.item(0)!;
-        
-        
 ;
     
 
     var logConfigNodeVector: Vector = DomSearchHelper.getAllNodes(LogConfigData.getInstance()!.NAME, logConfigsNode!.getChildNodes())!;
-        
-        
 ;
     
 LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
     
 
     var size: number = logConfigNodeVector!.length!;
-        
-        
 ;
     
 
@@ -205,20 +180,14 @@ LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i); as Node;
-        
-        
+    var node: Node =  as NodelogConfigNodeVector!.elementAt(i);;
 ;
     
 
     var logConfigInfo: LogConfig = new LogConfig(node);
-        
-        
 ;
     
 LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
@@ -232,7 +201,8 @@ LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -267,7 +237,8 @@ hasRead= true;
                                     
 
 
-                            throw new Error("Read Failed")
+                            throw new Error("Read Failed");
+                    
 
                                     }
                                 
@@ -306,14 +277,10 @@ LoggingInitInfo.updateIfNeeded();
     
 
     var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-        
-        
 ;
     
 
@@ -322,27 +289,21 @@ LoggingInitInfo.updateIfNeeded();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-        
-        
+    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
 ;
     
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-        
-        
 ;
     
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector);
+                                    allLogTypeVector!.addAllList(logTypeVector);
     
 
                                     }
@@ -365,14 +326,10 @@ LoggingInitInfo.updateIfNeeded();
     
 
     var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-        
-        
 ;
     
 
@@ -381,27 +338,21 @@ LoggingInitInfo.updateIfNeeded();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-        
-        
+    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
 ;
     
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-        
-        
 ;
     
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector);
+                                    allLogTypeVector!.addAllList(logTypeVector);
     
 
                                     }
@@ -463,8 +414,6 @@ public constructor (){
         try {
             
     var document: Document = LoggingInitInfo.getDoc()!;
-        
-        
 ;
     
 

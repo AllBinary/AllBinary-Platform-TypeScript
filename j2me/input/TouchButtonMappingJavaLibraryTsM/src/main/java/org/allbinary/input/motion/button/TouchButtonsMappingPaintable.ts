@@ -55,6 +55,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
+
 import { CommonButtons } from "./CommonButtons.js";
 
 import { TouchButton } from "./TouchButton.js";
@@ -67,19 +69,13 @@ export class TouchButtonsMappingPaintable extends Paintable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     foregroundColor: number
 
     private paintableTable: Paintable[][] = Array(0) { arrayOfNulls<Paintable?>(0) }
                                                             ;
-        
-        
 
     private touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-        
-        
 public constructor (basicColor: BasicColor){
 
             super();
@@ -102,8 +98,6 @@ this.init();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
@@ -118,33 +112,23 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
     createPaintableTable(): Paintable[][]{
 
     var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;
-        
-        
 ;
     
 
     var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;
-        
-        
 ;
     
 
     var paintableTable: Paintable[][] = Array(totalColumns) { arrayOfNulls<Paintable?>(totalRows) }
                                                             ;
-        
-        
 ;
     
 
     var cellPositionFactory: CellPositionFactory = CellPositionFactory.getInstance()!;
-        
-        
 ;
     
 
     var commonButtons: CommonButtons = CommonButtons.getInstance()!;
-        
-        
 ;
     
 
@@ -153,8 +137,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
 
                         for (
     var index: number = totalColumns -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -163,11 +145,9 @@ index >= 0; index--)
 
                         for (
     var rowIndex: number = totalRows -1;
-        
-        
 rowIndex >= 0; rowIndex--)
         {
-this.paintableTable[index]![rowIndex]= TouchButton.create(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstance(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
+this.paintableTable[index]![rowIndex]= TouchButton.createButton(BasicTouchInputFactory.getInstance()!.NONE, TouchButtonBlankResource.getInstance(), commonButtons!.NORMAL_BUTTON, cellPositionFactory!.getInstanceColRow(index, rowIndex), this.touchButtonLocationHelper!.getColumnsRemainderHalf(), this.touchButtonLocationHelper!.getRowsRemainderHalf());
     
 }
 
@@ -186,14 +166,10 @@ this.paintableTable[index]![rowIndex]= TouchButton.create(BasicTouchInputFactory
 var graphics = graphics
 
     var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;
-        
-        
 ;
     
 
     var totalRows: number = this.touchButtonLocationHelper!.getTotalRows()!;
-        
-        
 ;
     
 
@@ -202,8 +178,6 @@ var graphics = graphics
 
                         for (
     var index: number = totalColumns -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -212,8 +186,6 @@ index >= 0; index--)
 
                         for (
     var rowIndex: number = totalRows -1;
-        
-        
 rowIndex >= 0; rowIndex--)
         {
 this.paintableTable[index]![rowIndex]!.paint(graphics);

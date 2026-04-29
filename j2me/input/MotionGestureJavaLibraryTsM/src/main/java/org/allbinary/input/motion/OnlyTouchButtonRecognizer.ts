@@ -48,8 +48,6 @@ export class OnlyTouchButtonRecognizer extends MotionRecognizer {
     private readonly touchButtonRecognizer: TouchButtonRecognizer
 
     private touchButtonProcessing: boolean = false;
-        
-        
 public constructor (){
 
             super();

@@ -50,8 +50,6 @@ export class InputAutomationGenericModuleServiceFactory extends InputAutomationM
         
 
     private inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = new InputAutomationGenericModuleServiceFactory();
-        
-        
 
     public static getInstance(): InputAutomationGenericModuleServiceFactory{
 
@@ -64,8 +62,6 @@ export class InputAutomationGenericModuleServiceFactory extends InputAutomationM
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -73,8 +69,6 @@ public constructor (){
         try {
             
     var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = new Array(1);
-        
-        
 ;
     
 inputAutomationModuleInterfaceArray[0]= new GenericModuleFactory();

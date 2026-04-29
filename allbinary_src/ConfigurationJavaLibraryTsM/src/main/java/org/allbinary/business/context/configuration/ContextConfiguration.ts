@@ -60,12 +60,8 @@ export class ContextConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private emailServerConfigurationInterface: EmailServerConfigurationInterface
 public constructor (){
@@ -73,17 +69,17 @@ public constructor (){
             super();
         this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration");
     
-this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as EmailServerConfigurationInterface);
+this.setEmailServerConfigurationInterface( as EmailServerConfigurationInterfacenew EmailServerConfiguration());
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
 this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
-this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
+this.setEmailServerConfigurationInterface( as EmailServerConfigurationInterfacenew EmailServerConfiguration(hashMap));
     
 }
 

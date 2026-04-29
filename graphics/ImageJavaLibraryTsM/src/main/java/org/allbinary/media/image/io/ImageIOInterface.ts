@@ -42,7 +42,7 @@ export interface ImageIOInterface {
 
                 //@Throws(Error::class)
             
-    save(frame: Long)
+    save(frame: number)
 
 }
                 

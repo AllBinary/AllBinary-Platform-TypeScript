@@ -76,7 +76,7 @@ export class DomDocumentFileHelper
 
                 //@Throws(Error::class)
             
-    public static create(xmlFile: AbFile): Document{
+    public static createDocument(xmlFile: AbFile): Document{
 var xmlFile = xmlFile
 
         try {
@@ -93,7 +93,8 @@ var xmlFile = xmlFile
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -108,28 +109,20 @@ var document = document
     var dataOutputStream: AbDataOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
         try {
             
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-        
-        
 ;
     
 
     var domSource: DOMSource = new DOMSource(document);
-        
-        
 ;
     
 
@@ -147,8 +140,6 @@ dataOutputStream= DataOutputStreamFactory.getInstance()!.getInstance(file);
     
 
     var streamResult: StreamResult = new StreamResult(dataOutputStream);
-        
-        
 ;
     
 copyTransformer!.transform(domSource, streamResult);
@@ -162,7 +153,8 @@ dataOutputStream!.flush();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
          finally {

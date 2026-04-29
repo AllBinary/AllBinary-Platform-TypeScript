@@ -61,8 +61,6 @@ export class ServiceReferenceMap
 var map = map
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -132,7 +130,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.serviceReference!.getProperty(key as String);;
+                        return this.serviceReference!.getProperty( as Stringkey);;
     
 }
 
@@ -172,8 +170,6 @@ var m = m
     public keySet(): Set{
 
     var keyStringArray: string[] = this.serviceReference!.getPropertyKeys()!;
-        
-        
 ;
     
 

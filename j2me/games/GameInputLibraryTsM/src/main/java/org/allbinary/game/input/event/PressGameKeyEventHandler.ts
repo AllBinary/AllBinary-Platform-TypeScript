@@ -65,8 +65,6 @@ export class PressGameKeyEventHandler extends BasicEventHandler {
         
 
     private static readonly instance: PressGameKeyEventHandler = new PressGameKeyEventHandler();
-        
-        
 
     public static getInstance(): PressGameKeyEventHandler{
 
@@ -79,8 +77,6 @@ export class PressGameKeyEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -128,19 +124,15 @@ var eventObject = eventObject
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
-        
-        
+    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
 ;
     
-playerGameInput!.onPressGameKeyEvent(eventObject as GameKeyEvent);
+playerGameInput!.onPressGameKeyEvent( as GameKeyEventeventObject);
     
 
                 //: 
@@ -163,12 +155,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);
-        
-        
+    var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = ( as PressGameKeyEventListenerInterfaceeventListenerInterface);
 ;
     
-pressGameKeyEventListenerInterface!.onPressGameKeyEvent(eventObject as GameKeyEvent);
+pressGameKeyEventListenerInterface!.onPressGameKeyEvent( as GameKeyEventeventObject);
     
 }
 

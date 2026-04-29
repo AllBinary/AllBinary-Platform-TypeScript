@@ -52,7 +52,7 @@ export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
 
                 //@Throws(Error::class)
             
-    process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number)
+    processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number)
 
                 //@Throws(Error::class)
             

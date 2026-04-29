@@ -50,8 +50,6 @@ export class InputMappingEventHandler extends BasicEventHandler {
         
 
     private static readonly gameKeyEventHandler: InputMappingEventHandler = new InputMappingEventHandler();
-        
-        
 
     public static getInstance(): InputMappingEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var inputMappingEventListenerInterface: InputMappingEventListenerInterface = eventListenerInterface as InputMappingEventListenerInterface;
-        
-        
+    var inputMappingEventListenerInterface: InputMappingEventListenerInterface =  as InputMappingEventListenerInterfaceeventListenerInterface;
 ;
     
-inputMappingEventListenerInterface!.onInputMappingEvent(eventObject as InputMappingEvent);
+inputMappingEventListenerInterface!.onInputMappingEvent( as InputMappingEventeventObject);
     
 }
 

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SensorAction } from "./SensorAction.js";
+
 export class SensorActionFactory
             extends Object
          {
         
 
     private static readonly instance: SensorActionFactory = new SensorActionFactory();
-        
-        
 
     public static getInstance(): SensorActionFactory{
 
@@ -62,12 +62,8 @@ private constructor (){
 
 
     public readonly ATTACK: SensorAction = new SensorAction("Attack");
-        
-        
 
     public readonly EVADE: SensorAction = new SensorAction("Evade");
-        
-        
 
 }
                 

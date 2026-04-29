@@ -86,8 +86,6 @@ var file = file
 var fileNameString = fileNameString
 
     var fileNameAndExtension: string = file.getPath()!;
-        
-        
 ;
     
 
@@ -96,14 +94,10 @@ var fileNameString = fileNameString
                                     {
                                     
     var startIndex: number = fileNameAndExtension!.length -fileNameString!.length;
-        
-        
 ;
     
 
     var fileName: string = fileNameAndExtension!.substring(startIndex)!;
-        
-        
 ;
     
 

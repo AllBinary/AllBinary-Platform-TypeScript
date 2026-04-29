@@ -43,8 +43,6 @@ export class GamePersistanceStrings
         
 
     private static readonly instance: GamePersistanceStrings = new GamePersistanceStrings();
-        
-        
 
     public static getInstance(): GamePersistanceStrings{
 
@@ -57,20 +55,12 @@ export class GamePersistanceStrings
 
 
     public readonly SAVED_GAME_RECORD_ID: string = "_SG";
-        
-        
 
     public readonly SAVED_GAME_CONFIGURATION_RECORD_ID: string = "_SGC";
-        
-        
 
     public readonly DEFAULT_INPUT_MAPPING_RECORD_ID: string = "_DIM";
-        
-        
 
     public readonly SAVED_INPUT_CONFIGURATION_RECORD_ID: string = "_SIC";
-        
-        
 
 }
                 

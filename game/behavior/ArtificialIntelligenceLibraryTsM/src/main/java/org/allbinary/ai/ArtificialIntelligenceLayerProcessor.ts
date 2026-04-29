@@ -59,14 +59,12 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
+    public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
-    var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface = layerInterface as ArtificialIntelligenceCompositeInterface;
-        
-        
+    var artificialIntelligenceCompositeInterface: ArtificialIntelligenceCompositeInterface =  as ArtificialIntelligenceCompositeInterfacelayerInterface;
 ;
     
 artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.processAI(allBinaryLayerManager);

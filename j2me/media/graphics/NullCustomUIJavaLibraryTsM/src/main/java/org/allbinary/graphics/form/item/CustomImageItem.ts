@@ -38,8 +38,6 @@ export class CustomImageItem extends CustomItem {
         
 
     yOffset: number = 0;
-        
-        
 public constructor (label: string, image: Image, layout: number, altText: string, basicColor: BasicColor, yOffset: number){
             super(label, basicColor, basicColor);
                     var label = label

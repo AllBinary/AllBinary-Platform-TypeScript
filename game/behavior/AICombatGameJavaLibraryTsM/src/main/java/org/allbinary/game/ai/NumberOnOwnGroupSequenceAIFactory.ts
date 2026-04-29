@@ -68,32 +68,28 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { NumberInSameGroupSequence } from "./NumberInSameGroupSequence.js";
 
+import { NumberOnOwnGroupSequenceAI } from "./NumberOnOwnGroupSequenceAI.js";
+
 export class NumberOnOwnGroupSequenceAIFactory
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var artificialIntelligenceInterface = artificialIntelligenceInterface
     //var ownerLayerInterface = ownerLayerInterface
     //var gameInput = gameInput
 
-    var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
-        
-        
+    var integerArray: number[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -102,14 +98,10 @@ export class NumberOnOwnGroupSequenceAIFactory
 
                         for (
     var index: number = 0;
-        
-        
 index < integerArray!.length; index++)
         {
 
-    var integerCanBeNull: any? = hashtable.get(integerArray[index]! as Object);
-        
-        
+    var integerCanBeNull: any? = hashtable.get( as ObjectintegerArray[index]!);
 ;
     
 
@@ -130,8 +122,6 @@ list.add(integerCanBeNull);
 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Total AI Properties: ");
@@ -146,8 +136,6 @@ stringBuffer!.append(" + 1");
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
@@ -159,7 +147,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw new Error("Not enough AI properties.")
+                            throw new Error("Not enough AI properties.");
+                    
 
                                     }
                                 
@@ -170,14 +159,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw new Error("Too Many AI properties.")
+                            throw new Error("Too Many AI properties.");
+                    
 
                                     }
                                 
 
-    var numberOnSameTeam: Integer[] = new Array(list.size());
-        
-        
+    var numberOnSameTeam: number[] = new Array(list.size());
 ;
     
 
@@ -186,11 +174,9 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOnSameTeam!.length; index++)
         {
-numberOnSameTeam[index]= list.objectArray[index]! as Integer;
+numberOnSameTeam[index]=  as Integerlist.objectArray[index]!;
     
 }
 

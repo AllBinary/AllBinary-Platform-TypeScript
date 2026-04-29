@@ -46,8 +46,6 @@ export class OpenGLESImageProcessor
         
 
     private static readonly instance: OpenGLESImageProcessor = new OpenGLESImageProcessor();
-        
-        
 
     public static getInstance(): OpenGLESImageProcessor{
 

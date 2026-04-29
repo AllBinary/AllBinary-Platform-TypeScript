@@ -60,18 +60,22 @@ import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communic
         
 import { JPanel } from "./JPanel.js";
 
-import { Short } from "./Short.js";
-
 import { GenericProfileAction } from "./GenericProfileAction.js";
 
+import { Short } from "./Short.js";
+
 import { ActionEvent } from "./ActionEvent.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JButton } from "./JButton.js";
 
 export class GenericProfileActionJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private genericProfileAction: GenericProfileAction
 
@@ -89,8 +93,6 @@ this.blankProfileActionScriptJPanel!.removeAll();
     
 
     var genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel = new GenericProfileActionScriptJPanel();
-        
-        
 ;
     
 JTreeInterfaceFactory.getInstance()!.set(genericProfileActionScriptJPanel);
@@ -102,9 +104,7 @@ this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.g
 this.getGenericProfileActionScriptJPanel()!.updateJTree();
     
 
-    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout(); as javax.swing.GroupLayout;
-        
-        
+    var layout: javax.swing.GroupLayout =  as javax.swing.GroupLayoutthis.blankProfileActionScriptJPanel!.getLayout();;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -173,8 +173,6 @@ this.blankProfileActionScriptJPanel!.setMinimumSize(new java.awt.Dimension(400, 
     
 
     var blankProfileActionScriptJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.blankProfileActionScriptJPanel);
-        
-        
 ;
     
 this.blankProfileActionScriptJPanel!.setLayout(blankProfileActionScriptJPanelLayout);
@@ -189,7 +187,7 @@ this.ifJLabel!.setText("Conditions:");
     
 this.newColorAtJButton!.setText("Color Range At");
     
-newColorAtJButton!.addActionListener(new object: java.awt.event.ActionListener()
+newColorAtJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -203,7 +201,7 @@ newColorAtJButtonActionPerformed(evt);
     
 this.newTimeIntervalJButton!.setText("Time Interval");
     
-newTimeIntervalJButton!.addActionListener(new object: java.awt.event.ActionListener()
+newTimeIntervalJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -217,7 +215,7 @@ newTimeIntervalJButtonActionPerformed(evt);
     
 this.newAlwaysJButton!.setText("Always On/Off");
     
-newAlwaysJButton!.addActionListener(new object: java.awt.event.ActionListener()
+newAlwaysJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -231,8 +229,6 @@ newAlwaysJButtonActionPerformed(evt);
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -248,7 +244,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 var evt = evt
 this.logUtil!.putF("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition( as ProfileActionScriptConditionInterfacenew TimeIntervalActionScriptCondition());
     
 this.updateProfileActionUI();
     
@@ -259,7 +255,7 @@ this.updateProfileActionUI();
 var evt = evt
 this.logUtil!.putF("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition( as ProfileActionScriptConditionInterfacenew AlwaysActionScriptCondition());
     
 this.updateProfileActionUI();
     
@@ -270,7 +266,7 @@ this.updateProfileActionUI();
 var evt = evt
 this.logUtil!.putF("New Color At Action Condition", this, "newColorAtJButtonActionPerformed");
     
-getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface);
+getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition( as ProfileActionScriptConditionInterfacenew ColorAtActionScriptCondition());
     
 this.updateProfileActionUI();
     

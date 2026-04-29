@@ -43,8 +43,6 @@ export class RendererStrings
         
 
     private static readonly instance: RendererStrings = new RendererStrings();
-        
-        
 
     public static getInstance(): RendererStrings{
 
@@ -57,24 +55,14 @@ export class RendererStrings
 
 
     public readonly ON_SURFACE_CREATED: string = "onSurfaceCreated";
-        
-        
 
     public readonly ON_SURFACE_CHANGED: string = "onSurfaceChanged";
-        
-        
 
     public readonly ON_DRAW_FRAME: string = "onDrawFrame";
-        
-        
 
     public readonly ON_DRAW_FRAME_THREED: string = "onDrawFrameThreed";
-        
-        
 
     public readonly ON_DRAW_FRAME_2D: string = "onDrawFrame2d";
-        
-        
 
 }
                 

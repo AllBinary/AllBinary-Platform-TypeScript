@@ -67,46 +67,30 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ImageCacheBase
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    readonly hashtable: Hashtable = new Hashtable();
 
     readonly SIZE: number = 128;
-        
-        
 
     readonly widths: number[] = new Array(SIZE);
-        
-        
 
     readonly heights: number[] = new Array(SIZE);
-        
-        
 
     readonly listOfList: BasicArrayList[] = new Array(SIZE);
-        
-        
 
     readonly availableListOfList: BasicArrayList[] = new Array(SIZE);
-        
-        
 
     volume: number = 0;
-        
-        
 
     nextIndex: number = 0;
-        
-        
 public constructor (){
 
             super();
@@ -116,8 +100,6 @@ public constructor (){
 
                         for (
     var index: number = this.listOfList!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.listOfList[index]= new BasicArrayListD();
@@ -130,8 +112,6 @@ this.listOfList[index]= new BasicArrayListD();
 
                         for (
     var index: number = this.availableListOfList!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.availableListOfList[index]= new BasicArrayListD();
@@ -145,8 +125,6 @@ this.availableListOfList[index]= new BasicArrayListD();
     //var resourceId = resourceId
 
     var imageCanBeNull: any? = this.hashtable.get(resourceId as Object);
-        
-        
 ;
     
 
@@ -168,7 +146,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return imageCanBeNull as Image;
+                        return  as ImageimageCanBeNull;
     
 }
 
@@ -180,13 +158,11 @@ this.availableListOfList[index]= new BasicArrayListD();
 
                         for (
     var index: number = this.listOfList!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.availableListOfList[index]!.clear();
     
-this.availableListOfList[index]!.addAll(this.listOfList[index]!);
+this.availableListOfList[index]!.addAllList(this.listOfList[index]!);
     
 }
 
@@ -201,15 +177,11 @@ this.logUtil!.putF(new StringMaker().
     //var height = height
 
     var foundIndex: number =  -1;
-        
-        
 ;
     
 
     var size: number = this.widths.length
                 ;
-        
-        
 ;
     
 
@@ -218,8 +190,6 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -262,15 +232,13 @@ index < size; index++)
                                     {
                                     
     var list: BasicArrayList = this.availableListOfList[foundIndex]!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.remove(list.size() -1); as Image;
+                        return  as Imagelist.removeAt(list.size() -1);;
     
 
                                     }
@@ -289,21 +257,6 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    public get(anyType: any = {}, width: number, height: number): Image{
-    //var anyType = anyType
-    //var width = width
-    //var height = height
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.get(anyType!.constructor.name.toString()!, width, height);;
-    
-}
-
-
-                //@Throws(Error::class)
-            
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
     //var width = width
@@ -311,18 +264,20 @@ index < size; index++)
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public get(key: any = {}): Image{
+    public getWithKey(key: any = {}): Image{
     //var key = key
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -343,13 +298,11 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    createImage(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 
     var image: Image = Image.createImage(inputStream)!;
-        
-        
 ;
     
 
@@ -364,8 +317,6 @@ index < size; index++)
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -374,32 +325,22 @@ index < size; index++)
 
                         for (
     var index: number = this.nextIndex -1;
-        
-        
 index >= 0; index--)
         {
 
     var width: number = widths[index]!;
-        
-        
 ;
     
 
     var height: number = heights[index]!;
-        
-        
 ;
     
 
     var total: number = listOfList[index]!.size()!;
-        
-        
 ;
     
 
     var totalAvailable: number = availableListOfList[index]!.size()!;
-        
-        
 ;
     
 stringBuffer!.append(" w: ");
@@ -431,7 +372,7 @@ stringBuffer!.appendint(totalAvailable);
 }
 
 
-    public getHashtableP(): Hashtable<any, any>{
+    public getHashtableP(): Hashtable{
 
 
 

@@ -43,8 +43,6 @@ export class ItemColorFactory
         
 
     private static readonly instance: ItemColorFactory = new ItemColorFactory();
-        
-        
 
     public static getInstance(): ItemColorFactory{
 
@@ -56,17 +54,11 @@ export class ItemColorFactory
 }
 
 
-    public INVERT_PAINT: number = 0xFF000000;
-        
-        
+    public INVERT_PAINT: number = Math.round0xFF000000;
 
-    public PAINT: number = 0xFFe07718;
-        
-        
+    public PAINT: number = Math.round0xFFe07718;
 
     public TEXT_FIELD_NO_FOCUS: number = 0x7F7F7F;
-        
-        
 
 }
                 

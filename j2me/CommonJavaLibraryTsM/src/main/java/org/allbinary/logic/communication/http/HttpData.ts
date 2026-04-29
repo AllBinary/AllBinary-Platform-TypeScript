@@ -46,8 +46,6 @@ export class HttpData
         
 
     private static readonly instance: HttpData = new HttpData();
-        
-        
 
     public static getInstance(): HttpData{
 
@@ -66,15 +64,11 @@ export class HttpData
     public readonly URL_PARAM_SEP: string
 
     public readonly URL_LABEL: string = "Url: ";
-        
-        
 private constructor (){
 
             super();
         
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 this.EQUALS= commonSeps!.EQUALS;

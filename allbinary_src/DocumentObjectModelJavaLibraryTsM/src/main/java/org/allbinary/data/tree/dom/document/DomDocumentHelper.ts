@@ -77,20 +77,14 @@ export class DomDocumentHelper
         try {
             
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-        
-        
 ;
     
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-        
-        
 ;
     
 
     var document: Document = builder.newDocument()!;
-        
-        
 ;
     
 
@@ -122,20 +116,14 @@ var inputStream = inputStream
         try {
             
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-        
-        
 ;
     
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-        
-        
 ;
     
 
     var document: Document = builder.parse(inputStream)!;
-        
-        
 ;
     
 
@@ -151,7 +139,8 @@ var inputStream = inputStream
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -165,20 +154,14 @@ var xmlString = xmlString
         try {
             
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-        
-        
 ;
     
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-        
-        
 ;
     
 
     var document: Document = builder.parse(new StringBufferInputStream(xmlString))!;
-        
-        
 ;
     
 
@@ -194,7 +177,8 @@ var xmlString = xmlString
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -208,32 +192,22 @@ var document = document
         try {
             
     var domSource: DOMSource = new DOMSource(document);
-        
-        
 ;
     
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
-        
-        
 ;
     
 
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-        
-        
 ;
     
 copyTransformer!.transform(domSource, streamResult);
@@ -251,7 +225,8 @@ copyTransformer!.transform(domSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

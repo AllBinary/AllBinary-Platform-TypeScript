@@ -43,8 +43,6 @@ export class TitleData
         
 
     private static readonly instance: TitleData = new TitleData();
-        
-        
 
     public static getInstance(): TitleData{
 
@@ -62,20 +60,12 @@ private constructor (){
 
 
     public readonly NAME: string = "TITLE_NAME";
-        
-        
 
     public readonly TEXT: string = "TITLE_TEXT";
-        
-        
 
     public readonly VIEWNAMEKEY: string = "Title";
-        
-        
 
     public readonly MAXLEN: number = 255;
-        
-        
 
 }
                 

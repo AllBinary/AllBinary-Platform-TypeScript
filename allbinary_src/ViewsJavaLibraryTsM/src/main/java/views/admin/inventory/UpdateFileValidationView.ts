@@ -109,12 +109,8 @@ export class UpdateFileValidationView extends InventoryItemView implements Valid
         
 
     private static readonly UPDATEPRODUCT: string = CommonStrings.getInstance()!.UPDATE;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -129,9 +125,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -183,14 +177,10 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -201,14 +191,10 @@ stringBuffer!.append(this.itemInterface!.getCategory());
     
 
     var fullCategory: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
     var categoryFile: AbFile = new AbFile(fullCategory);
-        
-        
 ;
     
 
@@ -235,8 +221,6 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                 
 
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
@@ -256,8 +240,6 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                 
 
     var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-        
-        
 ;
     
 
@@ -265,21 +247,15 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemanyType;
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItem);
@@ -356,14 +332,10 @@ var document = document
     public validationInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -386,14 +358,10 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
-    var fullCategory: string = URLGLOBALS.getWebappPath(); as String +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
-        
-        
+    var fullCategory: string =  as StringURLGLOBALS.getWebappPath(); +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
 ;
     
 
@@ -435,8 +403,6 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
 
 
     var anyType: any = this.getRequestHashMap()!.get(BasicItemData.IMAGE)!;
-        
-        
 ;
     
 
@@ -444,27 +410,19 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
                         
                                     {
                                     
-    var fileItem: FileItem = anyType as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemanyType;
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var fileItemFieldName: string = fileItem!.getFieldName()!;
-        
-        
 ;
     
 this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
@@ -488,8 +446,6 @@ var fileName = fileName
 var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 
@@ -523,8 +479,6 @@ var size = size
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File Size To Large: ");
@@ -570,8 +524,6 @@ var fileItemFieldName = fileItemFieldName
 var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 

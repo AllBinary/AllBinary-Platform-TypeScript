@@ -46,14 +46,14 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpriteFactoryInterface } from "./SpriteFactoryInterface.js";
+
 export class SpriteFactory
             extends Object
-         {
+         implements SpriteFactoryInterface {
         
 
     private static readonly instance: SpriteFactory = new SpriteFactory();
-        
-        
 
     public static getInstance(): SpriteFactory{
 
@@ -66,10 +66,8 @@ export class SpriteFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    public create(image: Image, frameWidth: number, frameHeight: number): Sprite{
+    public createSprite(image: Image, frameWidth: number, frameHeight: number): Sprite{
     //var image = image
     //var frameWidth = frameWidth
     //var frameHeight = frameHeight

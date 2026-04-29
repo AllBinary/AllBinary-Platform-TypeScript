@@ -78,8 +78,6 @@ public constructor (label: string){
 var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptOutputData.NAME)!;
-        
-        
 ;
     
 

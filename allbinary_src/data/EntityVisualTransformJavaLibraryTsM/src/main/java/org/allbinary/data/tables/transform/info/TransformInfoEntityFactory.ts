@@ -65,8 +65,6 @@ var transformInfoObjectConfigAndManipulatorFactoryInterface = transformInfoObjec
 var transformInfoFactoryInterface = transformInfoFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -83,8 +81,6 @@ var transformInfoFactoryInterface = transformInfoFactoryInterface
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

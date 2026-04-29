@@ -48,7 +48,7 @@ import { BasicDataTableInterface } from "../../../../../../org/allbinary/data/ta
 export interface StreetAddressesEntityInterface extends BasicDataTableInterface {
         
 
-    public remove(index: Integer)
+    public remove(index: number)
 
     public add(address: StreetAddress)
 

@@ -46,6 +46,8 @@ import { UserInterface } from "../../../../../org/allbinary/business/user/UserIn
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { User } from "./User.js";
+
 export class UserFactory
             extends Object
          implements UserFactoryInterface {
@@ -58,7 +60,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(hashMap: HashMap<any, any>): UserInterface{
+    public getInstance(hashMap: HashMap): UserInterface{
 var hashMap = hashMap
 
 

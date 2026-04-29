@@ -51,8 +51,6 @@ export class InventoryEntityFactory
         
 
     private static readonly instance: InventoryEntityFactory = new InventoryEntityFactory();
-        
-        
 
     public static getInstance(): InventoryEntityFactory{
 
@@ -65,8 +63,6 @@ export class InventoryEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

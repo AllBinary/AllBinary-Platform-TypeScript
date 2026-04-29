@@ -54,8 +54,6 @@ export class RTSGameLayerPositionFinder
         
 
     private static readonly instance: RTSGameLayerPositionFinder = new RTSGameLayerPositionFinder();
-        
-        
 
     public static getInstance(): RTSGameLayerPositionFinder{
 

@@ -217,8 +217,6 @@ var color = color
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("getMinRed(): ");

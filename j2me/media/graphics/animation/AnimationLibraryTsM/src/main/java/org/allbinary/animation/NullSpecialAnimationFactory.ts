@@ -55,8 +55,6 @@ export class NullSpecialAnimationFactory
         
 
     private NULL_SPECIAL_ANIMATION_FACTORY: NullSpecialAnimationFactory = new NullSpecialAnimationFactory();
-        
-        
 
     public static getFactoryInstance(): NullSpecialAnimationFactory{
 
@@ -88,7 +86,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

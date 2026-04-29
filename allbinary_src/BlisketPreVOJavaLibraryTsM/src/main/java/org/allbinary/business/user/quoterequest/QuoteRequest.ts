@@ -82,12 +82,8 @@ export class QuoteRequest
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private id: string
 
@@ -109,8 +105,6 @@ public constructor (userName: string, request: HttpServletRequest){
 var request = request
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-        
-        
 ;
     
 this.id= new QuoteRequestIdGenerator().
@@ -118,15 +112,15 @@ this.id= new QuoteRequestIdGenerator().
     
 this.setUserName(userName);
     
-this.setProjectInfo(request.getParameter(quoteRequestData!.PROJECT_INFO) as String);
+this.setProjectInfo( as Stringrequest.getParameter(quoteRequestData!.PROJECT_INFO));
     
-this.setUserComments(request.getParameter(quoteRequestData!.CUSTOMER_COMMENTS) as String);
+this.setUserComments( as Stringrequest.getParameter(quoteRequestData!.CUSTOMER_COMMENTS));
     
-this.setBudget(request.getParameter(quoteRequestData!.BUDGET) as String);
+this.setBudget( as Stringrequest.getParameter(quoteRequestData!.BUDGET));
     
-this.setTimeFrame(request.getParameter(quoteRequestData!.TIMEFRAME) as String);
+this.setTimeFrame( as Stringrequest.getParameter(quoteRequestData!.TIMEFRAME));
     
-this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String);
+this.setComments( as Stringrequest.getParameter(quoteRequestData!.COMMENTS));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -139,29 +133,27 @@ this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as String);
                                 
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-        
-        
 ;
     
-this.id= hashMap!.get(quoteRequestData!.ID); as String;
+this.id=  as StringhashMap!.get(quoteRequestData!.ID);;
     
-this.setUserName(hashMap!.get(UserData.USERNAME) as String);
+this.setUserName( as StringhashMap!.get(UserData.USERNAME));
     
-this.setProjectInfo(hashMap!.get(quoteRequestData!.PROJECT_INFO) as String);
+this.setProjectInfo( as StringhashMap!.get(quoteRequestData!.PROJECT_INFO));
     
-this.setUserComments(hashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS) as String);
+this.setUserComments( as StringhashMap!.get(quoteRequestData!.CUSTOMER_COMMENTS));
     
-this.setBudget(hashMap!.get(quoteRequestData!.BUDGET) as String);
+this.setBudget( as StringhashMap!.get(quoteRequestData!.BUDGET));
     
-this.setTimeFrame(hashMap!.get(quoteRequestData!.TIMEFRAME) as String);
+this.setTimeFrame( as StringhashMap!.get(quoteRequestData!.TIMEFRAME));
     
-this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
+this.setComments( as StringhashMap!.get(quoteRequestData!.COMMENTS));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -180,8 +172,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -285,8 +275,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -388,8 +376,6 @@ this.setComments(hashMap!.get(quoteRequestData!.COMMENTS) as String);
     public toVector(): Vector{
 
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(this.id);
@@ -408,15 +394,11 @@ values.add(this.comments);
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.add(time);
@@ -432,17 +414,13 @@ values.add(time);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
-        
-        
 ;
     
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 values.put(UserData.USERNAME, userName);
@@ -459,15 +437,11 @@ values.put(quoteRequestData!.COMMENTS, this.comments);
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -522,8 +496,6 @@ this.comments= value;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 

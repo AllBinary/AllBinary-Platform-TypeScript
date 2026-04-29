@@ -49,8 +49,6 @@ export class SensorGameUpdateProcessor
         
 
     private inputSensor: AllBinarySensor = NoAllBinarySensor.getInstance()!;
-        
-        
 
     setInputSensor(inputSensor: AllBinarySensor){
 var inputSensor = inputSensor

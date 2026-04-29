@@ -52,8 +52,6 @@ export class NoButtonsBuilder extends BaseTouchInput {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getList(): BasicArrayList{
 
@@ -62,8 +60,6 @@ export class NoButtonsBuilder extends BaseTouchInput {
     
 
     var list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 ;
     
 

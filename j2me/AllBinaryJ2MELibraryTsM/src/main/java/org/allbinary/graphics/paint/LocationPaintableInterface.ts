@@ -43,7 +43,7 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 export interface LocationPaintableInterface {
         
 
-    paint(graphics: Graphics, x: number, y: number)
+    paintXY(graphics: Graphics, x: number, y: number)
 
 }
                 

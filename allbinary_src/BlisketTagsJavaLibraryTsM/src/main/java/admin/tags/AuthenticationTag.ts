@@ -88,8 +88,6 @@ export class AuthenticationTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
@@ -101,14 +99,12 @@ export class AuthenticationTag extends CustomTagSupport {
 
     private roles: Vector
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
         
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.userName= stringUtil!.EMPTY_STRING;
@@ -161,28 +157,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("changePassword", 
                             null)!;
-        
-        
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var result: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -198,7 +186,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -232,28 +221,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("newPassword", 
                             null)!;
-        
-        
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var result: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -269,7 +250,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -303,28 +285,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("invalidateSession", 
                             null)!;
-        
-        
 ;
     
 
-    var resultInteger: Integer = method.invoke(anyType, 
-                            null); as Integer;
-        
-        
+    var resultInteger: number =  as Integermethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -340,7 +314,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -374,28 +349,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("isSessionOld", 
                             null)!;
-        
-        
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -411,7 +378,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -445,14 +413,10 @@ this.roles= values;
             
     var anyType: any = new AuthenticationRequestHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -460,14 +424,10 @@ this.roles= values;
                                                         [
                                                             this.userName!.constructor, this.password.constructor, this.roles.constructor
                                                         ];
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("isRoleValid", methodParams)!;
-        
-        
 ;
     
 
@@ -475,14 +435,10 @@ this.roles= values;
                                                         [
                                                             this.userName,this.password,this.roles
                                                         ];
-        
-        
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
-        
-        
+    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
 ;
     
 
@@ -498,7 +454,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -532,28 +489,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("validRole", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -569,7 +518,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -577,8 +527,6 @@ this.roles= values;
             {
 
     var error: string = "Failed to set valid role";
-        
-        
 ;
     
 
@@ -609,28 +557,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("invalidRole", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -646,7 +586,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -654,8 +595,6 @@ this.roles= values;
             {
 
     var error: string = "Failed to set role invalid";
-        
-        
 ;
     
 
@@ -686,14 +625,10 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -701,14 +636,10 @@ this.roles= values;
                                                         [
                                                             this.roles.constructor
                                                         ];
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("isAuthenticationSessionValid", methodParams)!;
-        
-        
 ;
     
 
@@ -716,14 +647,10 @@ this.roles= values;
                                                         [
                                                             this.roles
                                                         ];
-        
-        
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
-        
-        
+    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
 ;
     
 
@@ -739,7 +666,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -773,14 +701,10 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -788,14 +712,10 @@ this.roles= values;
                                                         [
                                                             this.userName!.constructor, this.password.constructor
                                                         ];
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("processIfNewLogin", methodParams)!;
-        
-        
 ;
     
 
@@ -803,14 +723,10 @@ this.roles= values;
                                                         [
                                                             this.userName,this.password
                                                         ];
-        
-        
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
-        
-        
+    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, methodArgs);;
 ;
     
 
@@ -826,7 +742,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -860,28 +777,20 @@ this.roles= values;
             
     var anyType: any = new AuthenticationHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("processInvalidation", 
                             null)!;
-        
-        
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var resultBoolean: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -897,7 +806,8 @@ this.roles= values;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -930,8 +840,6 @@ this.roles= values;
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -939,15 +847,11 @@ this.roles= values;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest =  as HttpServletRequestthis.pageContext!.getRequest();;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(" Request URI: ");
@@ -965,7 +869,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 
                         if(this.command.compareTo(org.allbinary.globals.GLOBALS2.NEWPASSWORD) == 0)

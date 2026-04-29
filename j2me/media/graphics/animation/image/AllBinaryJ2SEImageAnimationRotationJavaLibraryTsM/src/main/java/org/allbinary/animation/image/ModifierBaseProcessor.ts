@@ -52,8 +52,6 @@ export class ModifierBaseProcessor
         
 
     private static readonly instance: ModifierBaseProcessor = new ModifierBaseProcessor();
-        
-        
 
     public static getInstance(): ModifierBaseProcessor{
 
@@ -65,7 +63,7 @@ export class ModifierBaseProcessor
 }
 
 
-    public update(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
+    public updateColor(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
     //var imageModifierUtil = imageModifierUtil
     //var originalImage = originalImage
     //var imageToShow = imageToShow
@@ -74,7 +72,7 @@ export class ModifierBaseProcessor
 }
 
 
-    public update(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, alpha: number){
+    public updateAlpha(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, alpha: number){
     //var imageModifierUtil = imageModifierUtil
     //var originalImage = originalImage
     //var imageToShow = imageToShow

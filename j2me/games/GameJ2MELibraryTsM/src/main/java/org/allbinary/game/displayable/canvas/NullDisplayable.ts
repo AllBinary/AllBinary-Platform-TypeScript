@@ -39,8 +39,6 @@ export class NullDisplayable extends Canvas {
         
 
     private static readonly SINGLETON: NullDisplayable = new NullDisplayable();
-        
-        
 
     public static getInstance(): NullDisplayable{
 
@@ -58,8 +56,6 @@ private constructor (){
 
 
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics

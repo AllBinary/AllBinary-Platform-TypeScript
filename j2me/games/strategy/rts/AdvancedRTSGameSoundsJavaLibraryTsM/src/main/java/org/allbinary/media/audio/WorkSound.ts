@@ -44,8 +44,6 @@ export class WorkSound extends CompositeSound {
         
 
     private soundInterface: Sound = new WorkSound();
-        
-        
 
     public static getInstance(): Sound{
 

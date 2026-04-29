@@ -105,20 +105,14 @@ this.shortName= new StringMaker().
     public toString(): string{
 
     var NAME: string = "Name: ";
-        
-        
 ;
     
 
     var VERSION: string = "Version: ";
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(NAME);

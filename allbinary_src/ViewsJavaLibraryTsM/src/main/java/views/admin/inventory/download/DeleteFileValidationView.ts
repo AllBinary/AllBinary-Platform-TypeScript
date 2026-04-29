@@ -107,10 +107,8 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).
+    var hashMap: HashMap = new RequestParams(request).
                             toHashMap()!;
-        
-        
 ;
     
 
@@ -122,13 +120,14 @@ this.getFormData();
                                     
 
 
-                            throw new Error("No Request Params Found")
+                            throw new Error("No Request Params Found");
+                    
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID); as String;
+this.id=  as StringhashMap!.get(BasicItemData.ID);;
     
-this.downloadItemId= hashMap!.get(DownloadItemData.ID); as String;
+this.downloadItemId=  as StringhashMap!.get(DownloadItemData.ID);;
     
 }
 
@@ -153,8 +152,6 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID); as String;
                                 
 
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 this.itemInterface= inventoryEntity!.getItem(this.id);
@@ -176,14 +173,10 @@ this.itemInterface= inventoryEntity!.getItem(this.id);
                                 
 
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-        
-        
 ;
     
 
     var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-        
-        
 ;
     
 
@@ -246,8 +239,6 @@ var document = document
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -274,14 +265,10 @@ var document = document
                                 
 
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-        
-        
 ;
     
 
     var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-        
-        
 ;
     
 

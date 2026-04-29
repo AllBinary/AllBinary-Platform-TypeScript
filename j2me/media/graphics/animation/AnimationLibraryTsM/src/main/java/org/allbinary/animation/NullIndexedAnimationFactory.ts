@@ -47,6 +47,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 
+import { NullIndexedAnimation } from "./NullIndexedAnimation.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 import { Animation } from "./Animation.js";
@@ -57,12 +59,8 @@ export class NullIndexedAnimationFactory
         
 
     public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = [];
-        
-        
 
     private NULL_INDEXED_ANIMATION_FACTORY: NullIndexedAnimationFactory = new NullIndexedAnimationFactory();
-        
-        
 
     public static getFactoryInstance(): NullIndexedAnimationFactory{
 
@@ -74,10 +72,10 @@ export class NullIndexedAnimationFactory
 }
 
 
-    private readonly NULL_ANIMATION: Animation = new object: NullIndexedAnimation(AnimationBehavior.getInstance())
+    private readonly NULL_ANIMATION: Animation = new NullIndexedAnimation(AnimationBehavior.getInstance())
                                 {
                                 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -85,8 +83,6 @@ export class NullIndexedAnimationFactory
 
                                 }
                             ;
-        
-        
 private constructor (){
 
             super();
@@ -108,7 +104,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

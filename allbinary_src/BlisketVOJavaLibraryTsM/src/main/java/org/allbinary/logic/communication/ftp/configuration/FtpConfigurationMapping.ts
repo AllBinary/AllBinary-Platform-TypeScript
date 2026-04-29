@@ -65,11 +65,9 @@ this.ftpConfigurationInterface= ftpConfigurationInterface;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(FtpConfigurationData.SERVER, this.ftpConfigurationInterface!.getServer());
@@ -106,8 +104,6 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.ftpConfigurationInterface!.getServer());

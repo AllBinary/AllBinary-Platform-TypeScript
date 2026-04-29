@@ -34,12 +34,12 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
         
 import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         
 
     private static readonly instance: OpenGLTextureFactory = new OpenGLTextureFactory();
-        
-        
 
     public static getInstance(): OpenGLTextureFactory{
 
@@ -52,8 +52,6 @@ export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
 
 
     private readonly gluUtils: OpenGLGLUUtils = OpenGLGLUUtils.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -70,7 +68,8 @@ private constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -43,38 +43,40 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { AndroidMediaPlayerWrapper } from "./AndroidMediaPlayerWrapper.js";
 
+import { MediaPlayerOnBufferingUpdateListener } from "./MediaPlayerOnBufferingUpdateListener.js";
+
+import { OnBufferingUpdateListener } from "./OnBufferingUpdateListener.js";
+
+import { MediaPlayerOnPreparedListener } from "./MediaPlayerOnPreparedListener.js";
+
+import { OnPreparedListener } from "./OnPreparedListener.js";
+
+import { MediaPlayerOnErrorListener } from "./MediaPlayerOnErrorListener.js";
+
+import { OnErrorListener } from "./OnErrorListener.js";
+
+import { MediaPlayerOnCompletionListener } from "./MediaPlayerOnCompletionListener.js";
+
+import { OnCompletionListener } from "./OnCompletionListener.js";
+
 export class AndroidMediaPlayerWrapperListener
             extends Object
          {
         
 
     private static readonly ON_BUFFERING_UPDATE: string = "onBufferingUpdate()";
-        
-        
 
     private static readonly ON_PREPARE: string = "onPrepare()";
-        
-        
 
     private static readonly ON_ERROR: string = "onError()";
-        
-        
 
     private static readonly ON_COMPLETE: string = "onComplete()";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private androidMediaPlayerWrapper: AndroidMediaPlayerWrapper = AndroidMediaPlayerWrapper.NULL_ANDROID_MEDIA_PLAYER_WRAPPER;
-        
-        
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 
             super();
@@ -87,8 +89,6 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
     
 
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
-        
-        
 ;
     
 mediaPlayer!.setOnCompletionListener(mOnCompletionListener);
@@ -179,7 +179,7 @@ export inner class MediaPlayerOnCompletionListener
 }
                 
             
-    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new object: MediaPlayerOnBufferingUpdateListener()
+    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new MediaPlayerOnBufferingUpdateListener()
                                 {
                                 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
@@ -187,8 +187,6 @@ export inner class MediaPlayerOnCompletionListener
     //var i = i
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(new StringMaker().
@@ -200,18 +198,14 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
 
                                 }
                             ;
-        
-        
 
-    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new object: MediaPlayerOnPreparedListener()
+    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new MediaPlayerOnPreparedListener()
                                 {
                                 
     public onPrepared(mp: MediaPlayer){
     //var mp = mp
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
@@ -222,10 +216,8 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
 
                                 }
                             ;
-        
-        
 
-    private mOnErrorListener: MediaPlayer.OnErrorListener = new object: MediaPlayerOnErrorListener()
+    private mOnErrorListener: MediaPlayer.OnErrorListener = new MediaPlayerOnErrorListener()
                                 {
                                 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
@@ -234,8 +226,6 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
     //var extra = extra
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(new StringMaker().
@@ -253,18 +243,14 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
 
                                 }
                             ;
-        
-        
 
-    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new object: MediaPlayerOnCompletionListener()
+    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new MediaPlayerOnCompletionListener()
                                 {
                                 
     public onCompletion(mp: MediaPlayer){
     //var mp = mp
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);
@@ -275,8 +261,6 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
 
                                 }
                             ;
-        
-        
 
 }
                 

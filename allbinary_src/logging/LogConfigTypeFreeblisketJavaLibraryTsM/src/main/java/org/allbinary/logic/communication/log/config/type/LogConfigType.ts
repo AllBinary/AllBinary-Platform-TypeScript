@@ -52,12 +52,8 @@ export class LogConfigType
         
 
     public availableLogConfigTypes: BasicArrayList = new BasicArrayListD();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string
 

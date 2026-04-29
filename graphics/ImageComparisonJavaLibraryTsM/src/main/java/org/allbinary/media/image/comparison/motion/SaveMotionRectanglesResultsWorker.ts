@@ -65,12 +65,8 @@ export class SaveMotionRectanglesResultsWorker
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private running: boolean= false
 
@@ -104,7 +100,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
+this.onMotionRectanglesImageComparisonResultsEvent( as MotionRectanglesResultsEventallBinaryEventObject);
     
 }
 
@@ -137,22 +133,16 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0); as MotionRectanglesResultsEvent;
-        
-        
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent =  as MotionRectanglesResultsEventthis.getMotionRectanglesVector()!.get(0);;
 ;
     
 
     var motionRectangles: MotionRectangles = motionRectanglesResultsEvent!.getMotionRectangles()!;
-        
-        
 ;
     
 new MotionRectanglesImageInputOutput().
@@ -160,7 +150,7 @@ new MotionRectanglesImageInputOutput().
     
 this.getMotionRectanglesVector()!.remove(motionRectangles);
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 this.logUtil!.putF(this.commonStrings!.END, this, this.commonStrings!.RUN);
     

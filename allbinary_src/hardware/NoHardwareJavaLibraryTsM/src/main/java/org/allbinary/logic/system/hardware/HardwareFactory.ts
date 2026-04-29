@@ -50,8 +50,6 @@ export class HardwareFactory
         
 
     private static readonly instance: HardwareFactory = new HardwareFactory();
-        
-        
 
     public static getInstance(): HardwareFactory{
 
@@ -64,8 +62,6 @@ export class HardwareFactory
 
 
     private readonly SINGLETON: HardwareInterface = NoHardware.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -91,7 +87,8 @@ var os = os
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

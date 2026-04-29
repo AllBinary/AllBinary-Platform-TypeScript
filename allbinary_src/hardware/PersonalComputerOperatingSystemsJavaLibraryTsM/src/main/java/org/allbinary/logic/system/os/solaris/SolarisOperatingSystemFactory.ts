@@ -67,8 +67,6 @@ export class SolarisOperatingSystemFactory
         
 
     private static readonly instance: SolarisOperatingSystemFactory = new SolarisOperatingSystemFactory();
-        
-        
 
     public static getInstance(): SolarisOperatingSystemFactory{
 
@@ -81,8 +79,6 @@ export class SolarisOperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -94,14 +90,10 @@ private constructor (){
         try {
             
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = SystemProperties.getInstance()!.getName()!;
-        
-        
 ;
     
 
@@ -131,7 +123,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Specific Solaris OS Not Supported: " +osName)
+                            throw new Error("Specific Solaris OS Not Supported: " +osName);
+                    
 
                         }
                             
@@ -154,8 +147,6 @@ private constructor (){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

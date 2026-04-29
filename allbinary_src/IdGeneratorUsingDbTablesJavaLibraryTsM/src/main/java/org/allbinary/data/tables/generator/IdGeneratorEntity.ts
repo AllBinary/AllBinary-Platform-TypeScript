@@ -64,22 +64,14 @@ export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInt
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tableName: string = "idgenerator";
-        
-        
 
     private readonly tableData: string
 
     readonly NAME: string = "NAME";
-        
-        
 
     readonly VALUE: string = "VALUE";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -96,20 +88,16 @@ super.setTableName(this.tableName);
 
                 //@Throws(Error::class)
             
-    public get(name: string): Long{
+    public get(name: string): number{
 var name = name
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(this.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var hashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -120,14 +108,13 @@ keysAndValues!.put(this.NAME, name);
                                     
 
 
-                            throw new Error("results do not match")
+                            throw new Error("results do not match");
+                    
 
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(this.VALUE);;
 ;
     
 
@@ -177,13 +164,11 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
 }
 
 
-    public update(name: string, value: Long){
+    public update(name: string, value: number){
 var name = name
 var value = value
 
-    var map: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var map: HashMap = new HashMap();
 ;
     
 map.put(this.NAME, name);
@@ -195,9 +180,9 @@ this.update(map);
 }
 
 
-    public update(hashMap: HashMap<any, any>){
+    public update(hashMap: HashMap){
 var hashMap = hashMap
-super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap);
+super.updateWhere(NAME,  as StringhashMap!.get(NAME as Object), hashMap);
     
 }
 
@@ -205,8 +190,6 @@ super.updateWhere(NAME, hashMap!.get(NAME as Object) as String, hashMap);
     public createTable(): string{
 
     var returnStr: string = super.createTable(tableData)!;
-        
-        
 ;
     
 

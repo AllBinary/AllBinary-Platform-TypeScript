@@ -43,24 +43,14 @@ export class ImageActionScriptOutputData
         
 
     public NAME: string = "IMAGE_ACTION_OUTPUT_NAME";
-        
-        
 
     public SAVE: string = "SAVE_IMAGE_ACTION_OUTPUT_NAME";
-        
-        
 
     public DISPLAY: string = "DISPLAY_IMAGE_ACTION_OUTPUT_NAME";
-        
-        
 
     public TYPE: string = "TYPE_IMAGE_ACTION_OUTPUT_NAME";
-        
-        
 
     public TYPES: string = "TYPES_IMAGE_ACTION_OUTPUT_NAME";
-        
-        
 private constructor (){
 
             super();

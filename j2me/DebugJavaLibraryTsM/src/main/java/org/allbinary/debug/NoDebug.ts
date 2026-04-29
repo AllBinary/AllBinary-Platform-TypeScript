@@ -45,8 +45,6 @@ export class NoDebug
         
 
     private SINGLETON: DebugInterface = new NoDebug();
-        
-        
 
     public static getInstance(): DebugInterface{
 

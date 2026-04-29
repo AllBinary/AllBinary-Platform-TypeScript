@@ -54,12 +54,8 @@ export class Intermission
     private enabled: boolean= false
 
     private readonly timeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 
     private intermissionEnableListener: IntermissionEnableListenerInterface = NullIntermissionEnableListener.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -91,7 +87,7 @@ this.enabled= enabled;
                         if(this.isEnabled())
                         
                                     {
-                                    this.getTimeDelayHelper()!.setStartTime();
+                                    this.getTimeDelayHelper()!.setStartTimeTNT();
     
 
                                     }

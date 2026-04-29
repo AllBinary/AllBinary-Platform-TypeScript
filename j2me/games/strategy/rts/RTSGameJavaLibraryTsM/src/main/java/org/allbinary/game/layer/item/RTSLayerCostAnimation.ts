@@ -80,32 +80,20 @@ export class RTSLayerCostAnimation extends Animation implements TechEventListene
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
-        
-        
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.create(10000)!;
-        
-        
+    private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.createPowerOfTen(10000)!;
 
     private readonly image: Image
 
     private costString: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
-        
-        
 
     private len: number= 0
 
     private readonly DOLLAR: string = "$";
-        
-        
 
     private readonly adjustedCostX: number = myFont!.stringWidth(DOLLAR)!;
-        
-        
 
     private readonly layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface
 public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface){
@@ -141,8 +129,6 @@ var event = event
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
@@ -164,22 +150,18 @@ this.len= this.primitiveLongUtil!.getCurrentTotalDigits();
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y);
+super.paintXY(graphics, x, y);
     
 
     var adjustedCostY: number = this.image.getHeight() -this.myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var xa: number = x +2;
-        
-        
 ;
     
 graphics.drawString(this.DOLLAR, xa, y +adjustedCostY, 0);

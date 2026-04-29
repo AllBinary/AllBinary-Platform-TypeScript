@@ -70,8 +70,6 @@ export class StoreFrontsTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -89,22 +87,16 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
         try {
             
     var anyType: any = this.getTagHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("generateSelect", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -120,7 +112,8 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -128,8 +121,6 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             {
 
     var error: string = "Failed to generate storefronts select";
-        
-        
 ;
     
 
@@ -159,22 +150,16 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
         try {
             
     var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("install", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -190,7 +175,8 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -198,8 +184,6 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             {
 
     var error: string = "Failed to generate storefronts select";
-        
-        
 ;
     
 
@@ -229,22 +213,16 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
         try {
             
     var anyType: any = this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var method: Method = anyType!.constructor.name.getMethod("sendStoreCreatedEmails", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -260,7 +238,8 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -268,8 +247,6 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
             {
 
     var error: string = "Failed to send email";
-        
-        
 ;
     
 
@@ -309,8 +286,6 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                                     {
                                     
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
-        
-        
 ;
     
 

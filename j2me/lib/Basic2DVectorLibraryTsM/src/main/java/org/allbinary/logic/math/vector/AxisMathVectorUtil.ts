@@ -46,8 +46,6 @@ export class AxisMathVectorUtil
         
 
     private static readonly instance: AxisMathVectorUtil = new AxisMathVectorUtil();
-        
-        
 
     public static getInstance(): AxisMathVectorUtil{
 
@@ -60,8 +58,6 @@ export class AxisMathVectorUtil
 
 
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
-        
-        
 
     public calculateX(magnitude: number, angle: number): number{
 var magnitude = magnitude

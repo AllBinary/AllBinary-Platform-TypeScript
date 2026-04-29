@@ -43,24 +43,14 @@ export class KeyboardActionScriptInputData
         
 
     public NAME: string = "KEY_ACTION_INPUT_NAME";
-        
-        
 
     public KEY: string = "KEY_ACTION_INPUT_KEY";
-        
-        
 
     public DELAY_BETWEEN_KEYS: string = "KEY_ACTION_INPUT_DELAY_BETWEEN_KEYS";
-        
-        
 
     public PRESS: string = "KEY_ACTION_INPUT_PRESS";
-        
-        
 
     public RELEASE: string = "KEY_ACTION_INPUT_RELEASE";
-        
-        
 private constructor (){
 
             super();

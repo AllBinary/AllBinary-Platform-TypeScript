@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CreditCardType } from "./CreditCardType.js";
+
 export class CreditCardTypeFactory
             extends Object
          {
         
 
     private static readonly instance: CreditCardTypeFactory = new CreditCardTypeFactory();
-        
-        
 
     public static getInstance(): CreditCardTypeFactory{
 
@@ -57,20 +57,12 @@ export class CreditCardTypeFactory
 
 
     public readonly VISA: CreditCardType = new CreditCardType("Visa");
-        
-        
 
     public readonly MASTERCARD: CreditCardType = new CreditCardType("MasterCard");
-        
-        
 
     public readonly DISCOVER: CreditCardType = new CreditCardType("Discover");
-        
-        
 
     public readonly AMERICANEXPRESS: CreditCardType = new CreditCardType("AMX");
-        
-        
 
 }
                 

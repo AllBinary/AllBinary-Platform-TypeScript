@@ -55,14 +55,10 @@ export class MultiGeographicMapBehavior
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
     var cellType: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
-        
-        
 ;
     
 
@@ -71,8 +67,6 @@ export class MultiGeographicMapBehavior
 
                         for (
     var index: number = size;
-        
-        
 --index >= 0; )
         {
 cellType= geographicMapInterfaceArray[index]!.getCellTypeAt(geographicMapCellPosition);

@@ -42,12 +42,6 @@ import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/Pr
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
-import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImmutableImage.js";
-
-    
-import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutableImage.js";
-
-    
 
 
 
@@ -77,8 +71,6 @@ export class ImageModifierUtil
         
 
     private static readonly instance: ImageModifierUtil = new ImageModifierUtil();
-        
-        
 
     public static getInstanceOrCreate(): ImageModifierUtil{
 
@@ -91,8 +83,6 @@ export class ImageModifierUtil
 
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     public setBasicColorP(basicColor: BasicColor){
     //var basicColor = basicColor
@@ -100,8 +90,6 @@ export class ImageModifierUtil
 
 
     private readonly colorArray: number[] = new Array(1);
-        
-        
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
     //var unusedOriginalImage = unusedOriginalImage
@@ -110,38 +98,26 @@ export class ImageModifierUtil
     //var basicColor = basicColor
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-        
-        
 ;
     
 
     var r: number = basicColor!.red;
-        
-        
 ;
     
 
     var g: number = basicColor!.green;
-        
-        
 ;
     
 
     var b: number = basicColor!.blue;
-        
-        
 ;
     
 
     var width: number = image.getWidth()!;
-        
-        
 ;
     
 
     var height: number = image.getHeight()!;
-        
-        
 ;
     
 
@@ -174,8 +150,6 @@ export class ImageModifierUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < width; index++)
         {
 
@@ -184,8 +158,6 @@ index < width; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
@@ -224,44 +196,30 @@ bx= colorModel!.getBlue(dataElements);
     //var basicColor = basicColor
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-        
-        
 ;
     
 
     var MAX: number = 255;
-        
-        
 ;
     
 
     var r: number = (basicColor!.red) /MAX;
-        
-        
 ;
     
 
     var g: number = (basicColor!.green) /MAX;
-        
-        
 ;
     
 
     var b: number = (basicColor!.blue) /MAX;
-        
-        
 ;
     
 
     var width: number = image.getWidth()!;
-        
-        
 ;
     
 
     var height: number = image.getHeight()!;
-        
-        
 ;
     
 
@@ -294,8 +252,6 @@ bx= colorModel!.getBlue(dataElements);
 
                         for (
     var index: number = 0;
-        
-        
 index < width; index++)
         {
 
@@ -304,8 +260,6 @@ index < width; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < height; index2++)
         {
 colorModel= newBufferedImage!.getColorModel();
@@ -342,33 +296,23 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-    var alpha: number = alphaInt.toByte();
-        
-        
+    var alpha: number = .toByte()alphaInt;
 ;
     
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
-        
-        
 ;
     
 
     var width: number = image.getWidth()!;
-        
-        
 ;
     
 
     var height: number = image.getHeight()!;
-        
-        
 ;
     
 
     var raster: WritableRaster = newBufferedImage!.getAlphaRaster()!;
-        
-        
 ;
     
 
@@ -377,8 +321,6 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
 
                         for (
     var index: number = 0;
-        
-        
 index < width; index++)
         {
 
@@ -387,8 +329,6 @@ index < width; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < height; index2++)
         {
 raster.getPixel(index, index2, colorArray);
@@ -410,15 +350,11 @@ raster.setPixel(index, index2, colorArray);
         try {
             
     var newImageArray: Image[] = new Array(originalImageArray!.length);
-        
-        
 ;
     
 
     var size: number = newImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -431,16 +367,12 @@ raster.setPixel(index, index2, colorArray);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 originalImage= originalImageArray[index]!;
     
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-        
-        
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;
     
 image.getGraphics()!.drawImage(originalImage, 0, 0, Anchor.TOP_LEFT);
@@ -461,8 +393,6 @@ newImageArray[index]= image;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);

@@ -71,8 +71,6 @@ export class DynamicRaceTracksPathPrinter extends RaceTracksPathPrinter {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public printAllPaths(raceTrackGeographicMapInterfaceFactoryInterface: RaceTrackGeographicMapInterfaceFactoryInterface, pathFindingInfo: PathFindingInfo, size: number){
 var raceTrackGeographicMapInterfaceFactoryInterface = raceTrackGeographicMapInterfaceFactoryInterface
@@ -86,20 +84,14 @@ var size = size
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var geographicMapInterface: BasicGeographicMap = raceTrackGeographicMapInterfaceFactoryInterface!.getTrackInstance(SmallIntegerSingletonFactory.getInstance()!.getInstance(index))!;
-        
-        
+    var geographicMapInterface: BasicGeographicMap = raceTrackGeographicMapInterfaceFactoryInterface!.getTrackInstance(SmallIntegerSingletonFactory.getInstance()!.getAt(index))!;
 ;
     
 
-    var list: BasicArrayList = PathGenerator.getInstance()!.getInstance(geographicMapInterface, RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance(), pathFindingInfo, 10)!;
-        
-        
+    var list: BasicArrayList = PathGenerator.getInstance()!.create(geographicMapInterface, RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance(), pathFindingInfo, 10)!;
 ;
     
 console.log("Track " +index);
@@ -114,8 +106,6 @@ this.printPaths(list);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);

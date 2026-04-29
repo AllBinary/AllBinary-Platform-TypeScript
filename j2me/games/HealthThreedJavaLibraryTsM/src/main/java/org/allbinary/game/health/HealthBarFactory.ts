@@ -68,21 +68,17 @@ var direction = direction
                                     {
                                     
     var featuredAnimationInterfaceFactoryInterfaceFactory: FeaturedAnimationInterfaceFactoryInterfaceFactory = FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 
-    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory = featuredAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME); as HealthBarAnimationInterfaceFactory;
-        
-        
+    var healthBarAnimationInterfaceFactory: HealthBarAnimationInterfaceFactory =  as HealthBarAnimationInterfaceFactoryfeaturedAnimationInterfaceFactoryInterfaceFactory!.get(Health.NAME);;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new HealthBar(layerInterface, healthInterface, healthBarAnimationInterfaceFactory!.getInstance(layerInterface, location), direction);
+                        return new HealthBar(layerInterface, healthInterface, healthBarAnimationInterfaceFactory!.getInstanceByLocation(layerInterface, location), direction);
     
 
                                     }

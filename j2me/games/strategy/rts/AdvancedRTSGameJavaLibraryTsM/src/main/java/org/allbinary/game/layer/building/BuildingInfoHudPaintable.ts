@@ -21,9 +21,6 @@
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
-
-    
 import { SelectionHudPaintable } from "../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
 
     
@@ -77,8 +74,6 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         
 
     private static readonly instance: BuildingInfoHudPaintable = new BuildingInfoHudPaintable();
-        
-        
 
     public static getInstance(): BuildingInfoHudPaintable{
 
@@ -91,12 +86,8 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly HEALTH: string = "Health:";
-        
-        
 
     private readonly productivityHud: NumberStringHud
 
@@ -107,53 +98,37 @@ export class BuildingInfoHudPaintable extends SelectionHudPaintable {
     private readonly maxHealthHud: NumberStringHud
 
     private rtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 private constructor (){
 
             super();
         
     var productivityHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-        
-        
 ;
     
 
     var efficiencyHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-        
-        
 ;
     
 
     var healthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-        
-        
 ;
     
 
     var maxHealthHud: NumberStringHud = NumberStringHud.NULL_NUMBER_STRING_HUD;
-        
-        
 ;
     
 
         try {
             
     var index: number = 0;
-        
-        
 ;
     
 
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-        
-        
 ;
     
 
     var DEFAULT_CHAR_HEIGHT: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
@@ -166,8 +141,6 @@ index++;
     
 
     var totalLength: number = this.HEALTH.length +1;
-        
-        
 ;
     
 healthHud= new NumberStringHud(this.HEALTH, 99999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
@@ -180,8 +153,6 @@ maxHealthHud= new NumberStringHud("/ ", 99999, basicHudFactory!.ABSOLUTE, basicH
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
@@ -226,16 +197,14 @@ this.healthHud!.paint(graphics);
     
 this.maxHealthHud!.paint(graphics);
     
-this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
     
 }
 
 
     public updateSelectionInfo(){
 
-    var buildingLayer: BuildingLayer = this.rtsLayer as BuildingLayer;
-        
-        
+    var buildingLayer: BuildingLayer =  as BuildingLayerthis.rtsLayer;
 ;
     
 this.setName(buildingLayer!.getName());
@@ -248,19 +217,15 @@ this.efficiencyHud!.set(buildingLayer!.getEfficiency() /100);
     
 
     var health: number = buildingLayer!.getHealthInterface()!.getHealth()!;
-        
-        
 ;
     
 this.healthHud!.set(health);
     
 
     var totalLength: number = this.HEALTH.length +MathUtil.getInstance()!.getTotalDigits(health);
-        
-        
 ;
     
-this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.stringWidth(totalLength));
+this.maxHealthHud!.setX(this.textX +MyFont.getInstance()!.defaultStringWidth(totalLength));
     
 this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth());
     

@@ -48,25 +48,15 @@ export class InputImageType
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 
     private static readonly TYPE_VECTOR: Vector = new Vector();
-        
-        
 
     public CAPTURE: InputImageType = new InputImageType("Capture", 0);
-        
-        
 
     public COMPARISON: InputImageType = new InputImageType("Comparison", 1);
-        
-        
 
     public MOTION: InputImageType = new InputImageType("Motion", 2);
-        
-        
 
     public static getInstance(imageTypeString: string): InputImageType{
 var imageTypeString = imageTypeString
@@ -74,7 +64,7 @@ var imageTypeString = imageTypeString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(imageTypeString as Object); as InputImageType;
+                        return  as InputImageTypehashMap!.get(imageTypeString as Object);;
     
 }
 

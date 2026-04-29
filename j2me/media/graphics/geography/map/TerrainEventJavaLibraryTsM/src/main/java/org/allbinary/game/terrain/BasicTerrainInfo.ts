@@ -49,8 +49,6 @@ export class BasicTerrainInfo
         
 
     public static readonly NULL_BASIC_TERRAIN_INFO: BasicTerrainInfo = new BasicTerrainInfo(AngleFactory.getInstance()!.NOT_ANGLE);
-        
-        
 
     private angle: Angle
 public constructor (angle: Angle){

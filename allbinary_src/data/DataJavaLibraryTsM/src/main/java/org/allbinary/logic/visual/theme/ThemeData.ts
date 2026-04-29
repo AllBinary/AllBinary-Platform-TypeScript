@@ -43,8 +43,6 @@ export class ThemeData
         
 
     private static readonly instance: ThemeData = new ThemeData();
-        
-        
 
     public static getInstance(): ThemeData{
 
@@ -62,20 +60,12 @@ private constructor (){
 
 
     public readonly NAME: string = "THEME_NAME";
-        
-        
 
     public readonly PATH: string = "THEME_PATH";
-        
-        
 
     public readonly PREVIEW_IMAGE_NAME: string = "THEME_PREVIEW_IMAGE_NAME";
-        
-        
 
     public readonly PREVIEW_IMAGE_PATH: string = "THEME_PREVIEW_IMAGE_PATH";
-        
-        
 
 }
                 

@@ -82,8 +82,6 @@ export class CustomItemsRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -96,12 +94,12 @@ export class CustomItemsRequestHelper extends ModifyTable {
     private timeEntered: string
 
     private lastModified: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.getFormData();
     
@@ -122,11 +120,9 @@ this.lastModified= this.request.getParameter(EntryData.getInstance()!.LASTMODIFI
 }
 
 
-    getHashMap(): HashMap<any, any>{
+    getHashMap(): HashMap{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 values.put(BasicItemData.ID, this.id);
@@ -137,15 +133,11 @@ values.put(CustomItemData.PACKAGE, this.packageName);
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -164,21 +156,15 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
         try {
             
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(this.id);
@@ -195,8 +181,6 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
     
 
     var success: string = "Successfully inserted " +this.id +" into items table";
-        
-        
 ;
     
 
@@ -220,8 +204,6 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
             {
 
     var error: string = "Failed to insert " +this.id +" into items table";
-        
-        
 ;
     
 
@@ -251,8 +233,6 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
     
 
     var success: string = "Successfully deleted";
-        
-        
 ;
     
 
@@ -276,8 +256,6 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -305,14 +283,10 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.insert(v
         try {
             
     var success: string = "Update Pricing Successful";
-        
-        
 ;
     
 
-    var values: HashMap<any, any> = this.getHashMap()!;
-        
-        
+    var values: HashMap = this.getHashMap()!;
 ;
     
 CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(values);
@@ -339,8 +313,6 @@ CustomItemsEntityFactory.getInstance()!.getCustomItemsEntityInstance()!.update(v
             {
 
     var error: string = "Failed to update: " +this.id;
-        
-        
 ;
     
 

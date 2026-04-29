@@ -67,21 +67,17 @@ export class BasketHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 
     private pageContext: PageContext
 
     private readonly MAX: number = 200;
-        
-        
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -91,9 +87,7 @@ this.propertiesHashMap= hashMap;
 this.pageContext= pageContext;
     
 
-    var storeName: string = this.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as Stringthis.propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -117,8 +111,6 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
         try {
             
     var basket: BasketInterface = this.weblisketSession!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 

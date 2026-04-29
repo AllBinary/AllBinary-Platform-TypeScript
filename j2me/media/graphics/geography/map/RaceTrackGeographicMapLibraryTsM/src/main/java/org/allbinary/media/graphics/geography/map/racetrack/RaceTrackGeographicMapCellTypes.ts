@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RaceTrackGeographicMapCellType } from "./RaceTrackGeographicMapCellType.js";
+
 export class RaceTrackGeographicMapCellTypes
             extends Object
          {
         
 
     private static readonly instance: RaceTrackGeographicMapCellTypes = new RaceTrackGeographicMapCellTypes();
-        
-        
 
     public static getInstance(): RaceTrackGeographicMapCellTypes{
 

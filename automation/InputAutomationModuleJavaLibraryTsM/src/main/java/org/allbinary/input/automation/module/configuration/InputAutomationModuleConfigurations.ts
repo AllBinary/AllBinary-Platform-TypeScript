@@ -81,57 +81,41 @@ export class InputAutomationModuleConfigurations
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
             //var abeClientInformation = abeClientInformation
     //var file = file
-this.setHashMap(new HashMap<any, any>());
+this.setHashMap(new HashMap());
     
 
     var bytes: number[] = new Array(100000);
-        
-        
 ;
     
 
     var idFile: FileInputStream = new FileInputStream(file);
-        
-        
 ;
     
 
     var length: number = idFile!.read(bytes)!;
-        
-        
 ;
     
 
     var data: string = bytes.decodeToString();
-        
-        
 ;
     
 
     var endIndex: number = data.lastIndexOf('>')!;
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(data.substring(0, endIndex +1))!;
-        
-        
 ;
     
 
     var nodeList: NodeList = document.getElementsByTagName(NewInputAutomationModulesData.NAME)!;
-        
-        
 ;
     
 
@@ -140,8 +124,6 @@ this.setHashMap(new HashMap<any, any>());
                                     {
                                     
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
-        
-        
 ;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
@@ -152,14 +134,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
                         for (
     var index: number = 0;
-        
-        
 index < nameNodeList!.getLength(); index++)
         {
 
     var node: Node = nameNodeList!.item(index)!;
-        
-        
 ;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
@@ -176,12 +154,10 @@ public constructor (abeClientInformation: AbeClientInformationInterface, documen
             super();
             //var abeClientInformation = abeClientInformation
     //var document = document
-this.setHashMap(new HashMap<any, any>());
+this.setHashMap(new HashMap());
     
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
-        
-        
 ;
     
 this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(), this, "Contructor");
@@ -192,14 +168,10 @@ this.logUtil!.putF("Number Of Module(s) Specified: " +nameNodeList!.getLength(),
 
                         for (
     var index: number = 0;
-        
-        
 index < nameNodeList!.getLength(); index++)
         {
 
     var node: Node = nameNodeList!.item(index)!;
-        
-        
 ;
     
 this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
@@ -212,12 +184,10 @@ public constructor (inputAutomationModuleConfigurationList: List<InputAutomation
 
             super();
             //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(new HashMap<any, any>());
+this.setHashMap(new HashMap());
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
-        
-        
 ;
     
 
@@ -230,8 +200,6 @@ this.setHashMap(new HashMap<any, any>());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 inputAutomationModuleConfiguration= inputAutomationModuleConfigurationList!.get(index);
@@ -245,7 +213,7 @@ this.add(inputAutomationModuleConfiguration);
 public constructor (){
 
             super();
-        this.setHashMap(new HashMap<any, any>());
+        this.setHashMap(new HashMap());
     
 }
 
@@ -264,7 +232,7 @@ this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
 }
 
 
-    public getHashMap(): HashMap<any, any>{
+    public getHashMap(): HashMap{
 
 
 
@@ -274,7 +242,7 @@ this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
 }
 
 
-    public setHashMap(hashMap: HashMap<any, any>){
+    public setHashMap(hashMap: HashMap){
 var hashMap = hashMap
 this.hashMap= hashMap;
     

@@ -49,8 +49,6 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Class } from "./Class.js";
-
 export class ClassUtil
             extends Object
          {
@@ -91,14 +89,10 @@ var lineBreak = lineBreak
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var classes: Function[] = myClass!.getClasses()!;
-        
-        
 ;
     
 stringBuffer!.append(lineBreak);
@@ -127,8 +121,6 @@ stringBuffer!.append(lineBreak);
 
                         for (
     var index: number = 0;
-        
-        
 index < classes.length; index++)
         {
 stringBuffer!.append("Class: ");

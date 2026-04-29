@@ -58,8 +58,6 @@ export class RaceTracksPathPrinter
 var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -68,14 +66,10 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.get(index)!;
-        
-        
 ;
     
 PreLogUtil.put(new StringMaker().
@@ -90,8 +84,6 @@ PreLogUtil.put(new StringMaker().
 var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -100,14 +92,12 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 console.log(new StringMaker().
                             append(" Path ")!.appendint(index)!.append(CommonLabels.getInstance()!.COLON_SEP)!.toString());
     
-this.printPath(list.get(index) as BasicArrayList);
+this.printPath( as BasicArrayListlist.get(index));
     
 }
 

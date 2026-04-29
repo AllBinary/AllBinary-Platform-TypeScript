@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TouchScreenType } from "./TouchScreenType.js";
+
 export class TouchScreenTypesFactory
             extends Object
          {
         
 
     private static readonly instance: TouchScreenTypesFactory = new TouchScreenTypesFactory();
-        
-        
 
     public static getInstance(): TouchScreenTypesFactory{
 
@@ -57,20 +57,12 @@ export class TouchScreenTypesFactory
 
 
     public readonly FINGER: TouchScreenType = new TouchScreenType("Finger");
-        
-        
 
     public readonly NOTOUCH: TouchScreenType = new TouchScreenType("No Touch");
-        
-        
 
     public readonly STYLUS: TouchScreenType = new TouchScreenType("Stylus");
-        
-        
 
     public readonly UNDEFINED: TouchScreenType = new TouchScreenType("Undefined");
-        
-        
 
 }
                 

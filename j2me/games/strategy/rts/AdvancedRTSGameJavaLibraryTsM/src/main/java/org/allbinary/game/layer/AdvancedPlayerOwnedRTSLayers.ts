@@ -56,36 +56,20 @@ export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
         
 
     private readonly unitsList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly waypointsList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly buildingList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly baseList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly garrisonList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly houseList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly labList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly factoryList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public addUnit(rtsLayer: RTSLayer){
 var rtsLayer = rtsLayer
@@ -313,8 +297,6 @@ this.buildingList!.add(layerInterface);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());

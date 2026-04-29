@@ -57,8 +57,6 @@ export class NoHardware
         
 
     private static readonly instance: HardwareInterface = new NoHardware();
-        
-        
 
     public static getInstance(): HardwareInterface{
 
@@ -102,7 +100,7 @@ var hardwareInterface = hardwareInterface
 }
 
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
+    public difference(hardwareInterface: HardwareInterface): Hashtable{
 var hardwareInterface = hardwareInterface
 
 

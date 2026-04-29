@@ -43,26 +43,20 @@ export class ScaleFactorFactory
         
 
     private static readonly instance: ScaleFactorFactory = new ScaleFactorFactory();
-        
-        
 
     public static getInstance(): ScaleFactorFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return ScaleFactorFactory.instance;
     
 }
 
 
     public DEFAULT_SCALE_FACTOR: number = 10;
-        
-        
 
     public DEFAULT_SCALE_VALUE: number = 1024;
-        
-        
 
 }
                 

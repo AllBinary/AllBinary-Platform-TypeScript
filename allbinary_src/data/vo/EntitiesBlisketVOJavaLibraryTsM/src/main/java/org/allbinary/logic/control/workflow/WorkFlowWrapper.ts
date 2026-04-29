@@ -56,12 +56,8 @@ export class WorkFlowWrapper
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private anyType: any
 public constructor (anyType: any = {}){
@@ -90,22 +86,16 @@ this.anyType= anyType;
         try {
             
     var helperClass: Function = this.anyType!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("getName", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.anyType, 
+                            null);;
 ;
     
 
@@ -120,8 +110,6 @@ this.anyType= anyType;
             {
 
     var error: string = "Reflection Exception";
-        
-        
 ;
     
 
@@ -136,7 +124,8 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 }
 
 }
@@ -149,22 +138,16 @@ this.anyType= anyType;
         try {
             
     var helperClass: Function = this.anyType!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("getStoreName", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(this.anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(this.anyType, 
+                            null);;
 ;
     
 
@@ -179,8 +162,6 @@ this.anyType= anyType;
             {
 
     var error: string = "Reflection Exception";
-        
-        
 ;
     
 
@@ -195,7 +176,8 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 }
 
 }
@@ -203,27 +185,21 @@ this.anyType= anyType;
 
                 //@Throws(Error::class)
             
-    public process(): Integer{
+    public process(): number{
 
         try {
             
     var helperClass: Function = this.anyType!.constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(this.commonStrings!.PROCESS, 
                             null)!;
-        
-        
 ;
     
 
-    var result: Integer = method.invoke(this.anyType, 
-                            null); as Integer;
-        
-        
+    var result: number =  as Integermethod.invoke(this.anyType, 
+                            null);;
 ;
     
 
@@ -238,8 +214,6 @@ this.anyType= anyType;
             {
 
     var error: string = "Reflection Exception";
-        
-        
 ;
     
 
@@ -254,7 +228,8 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 }
 
 }

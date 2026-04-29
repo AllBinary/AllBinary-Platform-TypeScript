@@ -29,8 +29,6 @@ export class RendererStateFactory
         
 
     private static readonly instance: RendererStateFactory = new RendererStateFactory();
-        
-        
 
     public static getInstance(): RendererStateFactory{
 
@@ -43,12 +41,8 @@ export class RendererStateFactory
 
 
     private loaded: boolean = false;
-        
-        
 
     private surfaceChanged: boolean = false;
-        
-        
 
     public setLoaded(loaded: boolean){
 var loaded = loaded

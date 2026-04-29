@@ -51,6 +51,8 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StringBuilder } from "./StringBuilder.js";
+
 import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
 
 export class AndroidOS extends GenericOperatingSystem {
@@ -60,27 +62,17 @@ export class AndroidOS extends GenericOperatingSystem {
             
 
     private stringBuffer: StringBuilder = new StringBuilder();
-        
-        
 
     private readonly DEVICE_ID: string = "DeviceId";
-        
-        
 
     private readonly DEVICE_SOFTWARE_VERSION: string = "DeviceSoftwareVersion";
-        
-        
 
     private readonly LINE_1_NUMBER: string = "Line1Number";
-        
-        
 public constructor (){
 
             super();
         
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-        
-        
 ;
     
 
@@ -94,14 +86,10 @@ public constructor (){
                                 
 
     var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 this.stringBuffer!.append(this.DEVICE_ID);
@@ -228,14 +216,10 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 
 
     private readonly OUYA: string = "ouya";
-        
-        
 
     public isOverScan(): boolean{
 
     var properties: AndroidSystemProperties = AndroidSystemProperties.getInstance()!;
-        
-        
 ;
     
 
@@ -283,8 +267,6 @@ this.stringBuffer!.append(commonStrings!.SPACE);
     public toString(): string{
 
     var osBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 osBuffer!.append(super.toString());

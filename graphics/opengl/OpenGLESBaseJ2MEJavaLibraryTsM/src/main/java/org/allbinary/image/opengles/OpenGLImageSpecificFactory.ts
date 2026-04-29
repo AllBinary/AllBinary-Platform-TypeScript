@@ -54,8 +54,6 @@ export class OpenGLImageSpecificFactory
         
 
     private static readonly instance: OpenGLImageSpecificFactory = new OpenGLImageSpecificFactory();
-        
-        
 
     public static getInstance(): OpenGLImageSpecificFactory{
 
@@ -68,12 +66,8 @@ export class OpenGLImageSpecificFactory
 
 
     private imageFactory: OpenGLImageFactory = OpenGLImageFactory.NULL_OPENGL_IMAGE_FACTORY;
-        
-        
 
     public updating: boolean = false;
-        
-        
 
     public setImageFactory(imageFactory: OpenGLImageFactory){
 var imageFactory = imageFactory

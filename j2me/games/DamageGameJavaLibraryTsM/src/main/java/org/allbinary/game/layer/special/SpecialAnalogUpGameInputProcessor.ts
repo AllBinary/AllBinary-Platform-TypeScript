@@ -61,11 +61,11 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, yAnalogValue: number){
+    public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, yAnalogValue: number){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 var yAnalogValue = yAnalogValue
-this.collidableDestroyableDamageableLayer!.up(yAnalogValue);
+this.collidableDestroyableDamageableLayer!.upAnalog(yAnalogValue);
     
 }
 

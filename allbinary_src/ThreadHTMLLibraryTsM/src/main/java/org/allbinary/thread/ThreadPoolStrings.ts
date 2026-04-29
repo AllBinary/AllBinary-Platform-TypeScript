@@ -43,8 +43,6 @@ export class ThreadPoolStrings
         
 
     private static readonly instance: ThreadPoolStrings = new ThreadPoolStrings();
-        
-        
 
     public static getInstance(): ThreadPoolStrings{
 
@@ -57,16 +55,10 @@ export class ThreadPoolStrings
 
 
     public readonly ADD_TASK: string = "addTask";
-        
-        
 
     public readonly START_TASK: string = "Started Task: ";
-        
-        
 
     public readonly COMPLETE_TASK: string = "Completed Task: ";
-        
-        
 
 }
                 

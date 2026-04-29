@@ -52,8 +52,6 @@ export class PlatformInputMappingFactory
         
 
     private static readonly instance: PlatformInputMappingFactory = new PlatformInputMappingFactory();
-        
-        
 
     public static getInstance(): PlatformInputMappingFactory{
 
@@ -66,12 +64,8 @@ export class PlatformInputMappingFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private SINGLETON: PersistentInputMapping = PersistentInputMapping.NULL_PERSISTENT_INPUT_MAPPING;
-        
-        
 
     public getPersistentInputMappingInstance(): PersistentInputMapping{
 
@@ -91,8 +85,6 @@ export class PlatformInputMappingFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

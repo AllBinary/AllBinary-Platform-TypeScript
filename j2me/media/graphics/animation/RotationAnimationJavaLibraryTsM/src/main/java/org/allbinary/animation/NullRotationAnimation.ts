@@ -47,7 +47,7 @@ export class NullRotationAnimation extends RotationAnimation {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NullRotationAnimation(angleInfo, CircularIndexUtil.getInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
+                        return new NullRotationAnimation(angleInfo, CircularIndexUtil.createInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
     
 }
 
@@ -58,7 +58,7 @@ export class NullRotationAnimation extends RotationAnimation {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior);
+                        return new NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
     
 }
 

@@ -43,6 +43,8 @@ import { CacheableInterfaceFactoryInterface } from "../../../../../org/allbinary
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { IIOImageCacheable } from "./IIOImageCacheable.js";
+
 export class IIOImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {
@@ -59,7 +61,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new IIOImageCacheable(key as String);
+                        return new IIOImageCacheable( as Stringkey);
     
 }
 

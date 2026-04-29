@@ -49,6 +49,8 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AndroidBasicTitleProgressBar } from "./AndroidBasicTitleProgressBar.js";
+
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
 export class ProgressCanvasFactory
@@ -57,8 +59,6 @@ export class ProgressCanvasFactory
         
 
     private static readonly instance: ProgressCanvas = new AndroidBasicTitleProgressBar(StringUtil.getInstance()!.EMPTY_STRING, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     public static getInstance(): ProgressCanvas{
 

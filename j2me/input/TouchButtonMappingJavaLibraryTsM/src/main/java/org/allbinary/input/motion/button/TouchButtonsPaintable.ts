@@ -62,12 +62,8 @@ export class TouchButtonsPaintable extends Paintable {
     readonly foregroundColor: number
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
-        
-        
 
     private readonly touchButtonFactory: TouchButtonFactory = TouchButtonFactory.getInstance()!;
-        
-        
 public constructor (basicColor: BasicColor){
 
             super();
@@ -83,8 +79,6 @@ this.foregroundColor= basicColor!.toInt();
 var graphics = graphics
 
     var list: BasicArrayList = touchButtonFactory!.getList()!;
-        
-        
 ;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, this.foregroundColor);
@@ -99,11 +93,9 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, thi
 
                         for (
     var index: number = list.size()!;
-        
-        
 --index >= 0; )
         {
-touchButton= list.objectArray[index]! as TouchButton;
+touchButton=  as TouchButtonlist.objectArray[index]!;
     
 touchButton!.paint(graphics);
     
@@ -115,11 +107,9 @@ touchButton!.paint(graphics);
 
                         for (
     var index: number = list.size()!;
-        
-        
 --index >= 0; )
         {
-touchButton= list.objectArray[index]! as TouchButton;
+touchButton=  as TouchButtonlist.objectArray[index]!;
     
 touchButton!.paintHint(graphics);
     

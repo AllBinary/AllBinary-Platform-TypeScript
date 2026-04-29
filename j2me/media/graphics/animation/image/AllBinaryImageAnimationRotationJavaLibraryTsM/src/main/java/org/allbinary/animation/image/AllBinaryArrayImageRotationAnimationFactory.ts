@@ -71,17 +71,15 @@ export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimat
 
                 //@Throws(Error::class)
             
-    public static create(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
+    public static createFactory(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
     //var dx = dx
     //var dy = dy
 
     var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity(), AnimationBehaviorFactory.getInstance());
-        
-        
 ;
     
-arrayImageRotationAnimationFactory!.init(dx, dy);
+arrayImageRotationAnimationFactory!.initDXY(dx, dy);
     
 
 
@@ -94,18 +92,16 @@ arrayImageRotationAnimationFactory!.init(dx, dy);
 
                 //@Throws(Error::class)
             
-    public static createA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
+    public static createFactoryA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
     //var dx = dx
     //var dy = dy
     //var angleIncrement = angleIncrement
 
     var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), angleIncrement, AnimationBehaviorFactory.getInstance());
-        
-        
 ;
     
-arrayImageRotationAnimationFactory!.init(dx, dy);
+arrayImageRotationAnimationFactory!.initDXY(dx, dy);
     
 
 
@@ -117,8 +113,6 @@ arrayImageRotationAnimationFactory!.init(dx, dy);
 
 
     private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
-        
-        
 
     private angleIncrement: number
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -142,12 +136,12 @@ this.init();
                 //@Throws(Error::class)
             
     init(){
-this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), AngleFactory.getInstance()!.TOTAL_ANGLE));
+this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE));
     
 }
 
 
-    init(dx: number, dy: number){
+    initDXY(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
 this.animationFactoryInitializationVisitor!.dx= dx;
@@ -167,21 +161,15 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     //var instanceId = instanceId
 
     var scaledImageArray: Image[] = new Array(this.imageArray!.length);
-        
-        
 ;
     
 
     var size: number = scaledImageArray!.length
                 ;
-        
-        
 ;
     
 
     var image: Image = this.getImage()!;
-        
-        
 ;
     
 
@@ -190,8 +178,6 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight);
@@ -208,7 +194,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new AdjustedImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE, this.animationFactoryInitializationVisitor!.dx, this.animationFactoryInitializationVisitor!.dy, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                                     }
@@ -218,7 +204,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), AngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
+                        return new ImageArrayRotationAnimation(scaledImageArray, AngleInfo.getInstance(this.getAngleIncrement()), Math.roundAngleFactory.getInstance()!.TOTAL_ANGLE, this.animationBehaviorFactory!.getOrCreateInstance());
     
 
                         }

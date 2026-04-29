@@ -43,8 +43,6 @@ export class AbeClientInformationData
         
 
     private static readonly instance: AbeClientInformationData = new AbeClientInformationData();
-        
-        
 
     public static getInstance(): AbeClientInformationData{
 
@@ -62,68 +60,36 @@ private constructor (){
 
 
     public readonly KEY: string = "KEY";
-        
-        
 
     public readonly NAME: string = "NAME";
-        
-        
 
     public readonly VERSION: string = "VERSION";
-        
-        
 
     public readonly SPECIALNAME: string = "SPECIALNAME";
-        
-        
 
     public readonly LICENSEID: string = "LICENSEID";
-        
-        
 
     public readonly LICENSE_TYPE: string = "LICENSETYPE";
-        
-        
 
     public readonly PREVIOUSLICENSEID: string = "PREVIOUSLICENSEID";
-        
-        
 
     public readonly OSNAME: string = "OSNAME";
-        
-        
 
     public readonly OSARCH: string = "OSARCH";
-        
-        
 
     public readonly OSVERSION: string = "OSVERSION";
-        
-        
 
     public readonly OS: string = "OS";
-        
-        
 
     public readonly HARDWARE: string = "HARDWARE";
-        
-        
 
     public readonly LICENSESERVERS: string = "LICENSESERVERS";
-        
-        
 
     public readonly NEWLICENSE: string = "NEWLICENSE";
-        
-        
 
     public readonly ISNEW: string = "ISNEW";
-        
-        
 
     public readonly SPECIAL: string = "SPECIAL";
-        
-        
 
 }
                 

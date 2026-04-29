@@ -63,8 +63,6 @@ export class GPoint
 
 
     private static readonly POINT_LABEL: string = "Point: ";
-        
-        
 
     public static toStringStatic(x: number, y: number, z: number): string{
 var x = x
@@ -72,14 +70,10 @@ var y = y
 var z = z
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(POINT_LABEL);

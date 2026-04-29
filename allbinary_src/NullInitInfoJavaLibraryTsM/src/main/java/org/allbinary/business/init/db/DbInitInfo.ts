@@ -58,8 +58,6 @@ var read = read
     public getUrl(): string{
 
     var url: string = super.getUrl()!;
-        
-        
 ;
     
 PreLogUtil.put("Url: " +url, this, "getUrl");

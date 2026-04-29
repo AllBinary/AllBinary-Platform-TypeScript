@@ -46,8 +46,6 @@ export class TransformInfoDataData
         
 
     private static readonly instance: TransformInfoDataData = new TransformInfoDataData();
-        
-        
 
     public static getInstance(): TransformInfoDataData{
 
@@ -65,12 +63,8 @@ private constructor (){
 
 
     public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
-        
-        
 
 }
                 

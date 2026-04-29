@@ -52,8 +52,8 @@ export class MotionRectanglesResultsFrameCacheable
 
     private motionRectangles: MotionRectangles
 
-    private frame: Long
-public constructor (motionRectangles: MotionRectangles, frame: Long){
+    private frame: number
+public constructor (motionRectangles: MotionRectangles, frame: number){
 
             super();
         var motionRectangles = motionRectangles
@@ -95,8 +95,6 @@ this.motionRectangles= motionRectangles;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);

@@ -76,24 +76,20 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class WaypointBase
             extends Object
          implements EventListenerInterface {
         
 
     public NULL_WAYPOINT_BASE: WaypointBase = new WaypointBase(NoSound.getInstance());
-        
-        
 
     private readonly connectedWaypointList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly sound: Sound
 
     allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
-        
-        
 public constructor (sound: Sound){
 
             super();
@@ -146,7 +142,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -159,18 +156,20 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public getPathsList(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
+    public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -181,7 +180,8 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

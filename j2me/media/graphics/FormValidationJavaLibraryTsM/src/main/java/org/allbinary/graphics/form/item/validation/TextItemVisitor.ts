@@ -54,9 +54,7 @@ public constructor (){
     public visit(anyType: any = {}): any{
     //var anyType = anyType
 
-    var value: string = anyType as String;
-        
-        
+    var value: string =  as StringanyType;
 ;
     
 

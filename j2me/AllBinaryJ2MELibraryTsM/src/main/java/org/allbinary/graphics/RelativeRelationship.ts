@@ -53,8 +53,6 @@ export class RelativeRelationship
         
 
     public static readonly NULL_RELATIVE_RELATIONSHIP: RelativeRelationship = new RelativeRelationship(PointFactory.getInstance()!.ZERO_ZERO, BasicArrayListUtil.getInstance()!.getImmutableInstance());
-        
-        
 
     private typesAllowedList: BasicArrayList
 

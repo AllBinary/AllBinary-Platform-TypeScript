@@ -43,8 +43,6 @@ export class MidletStrings
         
 
     private static readonly instance: MidletStrings = new MidletStrings();
-        
-        
 
     public static getInstance(): MidletStrings{
 
@@ -57,8 +55,6 @@ export class MidletStrings
 
 
     public readonly COMMAND_ACTION: string = "commandAction";
-        
-        
 
 }
                 

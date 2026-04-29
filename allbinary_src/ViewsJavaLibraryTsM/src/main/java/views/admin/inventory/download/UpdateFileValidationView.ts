@@ -121,12 +121,8 @@ export class UpdateFileValidationView extends DownloadableInventoryItemView impl
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -141,9 +137,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -172,8 +166,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 this.itemInterface= inventoryEntity!.getItem(id);
@@ -242,21 +234,15 @@ this.itemInterface= inventoryEntity!.getItem(id);
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-        
-        
 ;
     
 
     var categoryFile: AbFile = new AbFile(fullCategory);
-        
-        
 ;
     
 
@@ -283,8 +269,6 @@ this.itemInterface= inventoryEntity!.getItem(id);
                                 
 
     var downloadableFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
-        
-        
 ;
     
 
@@ -292,21 +276,15 @@ this.itemInterface= inventoryEntity!.getItem(id);
                         
                                     {
                                     
-    var fileItem: FileItem = downloadableFileObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemdownloadableFileObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItem);
@@ -343,8 +321,6 @@ this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString());
                             
 
     var licenseFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
-        
-        
 ;
     
 
@@ -352,21 +328,15 @@ this.getRequestHashMap()!.put(DownloadItemData.SIZE, (size).toString());
                         
                                     {
                                     
-    var fileItem: FileItem = licenseFileObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemlicenseFileObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItem);
@@ -395,8 +365,6 @@ HttpFileUploadUtil.log(fileItem);
                             
 
     var extraFilesObject: any = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
-        
-        
 ;
     
 
@@ -404,21 +372,15 @@ HttpFileUploadUtil.log(fileItem);
                         
                                     {
                                     
-    var fileItem: FileItem = extraFilesObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemextraFilesObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 HttpFileUploadUtil.log(fileItem);
@@ -448,17 +410,13 @@ this.unzip(fileItem);
                         }
                             
 
-    var hashMap: HashMap<any, any> = this.getRequestHashMap()!;
-        
-        
+    var hashMap: HashMap = this.getRequestHashMap()!;
 ;
     
 hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
     
 
     var licenseObject: any = hashMap!.get(DownloadItemData.LICENSE_FILE)!;
-        
-        
 ;
     
 
@@ -481,8 +439,6 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                             
 
     var fileObject: any = hashMap!.get(DownloadItemData.FILE)!;
-        
-        
 ;
     
 
@@ -507,8 +463,6 @@ this.downloadableItem= new DownloadableItem(hashMap);
     
 
     var downloadableItemValidation: DownloadableItemValidation = new DownloadableItemValidation(this.downloadableItem);
-        
-        
 ;
     
 
@@ -589,14 +543,10 @@ var document = document
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
-        
-        
+    var command: string =  as Stringthis.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND);;
 ;
     
 
@@ -620,8 +570,6 @@ var document = document
                                     {
                                     
     var ITEM_NOT_FOUND: string = "Item Does Not Exist";
-        
-        
 ;
     
 
@@ -644,8 +592,6 @@ var document = document
                                 
 
     var basicItemValidation: BasicItemValidation = new BasicItemValidation(this.itemInterface);
-        
-        
 ;
     
 
@@ -661,15 +607,11 @@ stringBuffer!.append("<br/>");
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var fullCategory: string = new StringMaker().
                             append(URLGLOBALS.getWebappPath())!.append(storeFrontInterface!.getCurrentHostNamePath())!.append(this.itemInterface!.getCategory())!.toString()!;
-        
-        
 ;
     
 
@@ -683,8 +625,6 @@ stringBuffer!.append("<br/>");
                                 
 
     var categoryFile: AbFile = new AbFile(fullCategory);
-        
-        
 ;
     
 
@@ -704,8 +644,6 @@ stringBuffer!.append("<br />");
                                 
 
     var downloadableFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.FILE)!;
-        
-        
 ;
     
 
@@ -713,21 +651,15 @@ stringBuffer!.append("<br />");
                         
                                     {
                                     
-    var fileItem: FileItem = downloadableFileObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemdownloadableFileObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 this.validationInfo(stringBuffer, fileName, size);
@@ -745,8 +677,6 @@ stringBuffer!.append("<br/>");
                             
 
     var licenseFileObject: any = this.getRequestHashMap()!.get(DownloadItemData.LICENSE_FILE)!;
-        
-        
 ;
     
 
@@ -754,21 +684,15 @@ stringBuffer!.append("<br/>");
                         
                                     {
                                     
-    var fileItem: FileItem = licenseFileObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemlicenseFileObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 this.validationInfo(stringBuffer, fileName, size);
@@ -782,8 +706,6 @@ this.validationInfo(stringBuffer, fileName, size);
                             
 
     var extraFilesObject: any = this.getRequestHashMap()!.get(DownloadItemData.EXTRA_FILES)!;
-        
-        
 ;
     
 
@@ -791,21 +713,15 @@ this.validationInfo(stringBuffer, fileName, size);
                         
                                     {
                                     
-    var fileItem: FileItem = extraFilesObject as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemextraFilesObject;
 ;
     
 
     var fileName: string = fileItem!.getName()!;
-        
-        
 ;
     
 
     var size: number = fileItem!.getSize()!;
-        
-        
 ;
     
 this.validationInfo(stringBuffer, fileName, size);
@@ -825,8 +741,6 @@ this.validationInfo(stringBuffer, fileName, size);
                                     {
                                     
     var downloadableItemValidation: DownloadableItemValidation = new DownloadableItemValidation(this.downloadableItem);
-        
-        
 ;
     
 
@@ -835,8 +749,6 @@ this.validationInfo(stringBuffer, fileName, size);
                                     {
                                     
     var log: string = downloadableItemValidation!.validationInfo()!;
-        
-        
 ;
     
 
@@ -895,8 +807,6 @@ var fileName = fileName
 var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 
@@ -917,8 +827,6 @@ var size = size
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File name is not valid: ");
@@ -953,8 +861,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File Size To Large: ");
@@ -989,8 +895,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("File Size To Small: ");
@@ -1030,8 +934,6 @@ var fileName = fileName
 var size = size
 
     var fileData: FileData = FileData.getInstance()!;
-        
-        
 ;
     
 

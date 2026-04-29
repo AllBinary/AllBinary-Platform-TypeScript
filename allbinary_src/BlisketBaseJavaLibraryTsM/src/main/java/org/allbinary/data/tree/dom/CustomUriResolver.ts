@@ -75,8 +75,6 @@ export class CustomUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private path: string
 
@@ -101,9 +99,7 @@ var base = base
 
         try {
             
-    var fileAbPath: AbPath = new AbFilePath(this.path +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
-        
-        
+    var fileAbPath: AbPath =  as AbPathnew AbFilePath(this.path +AbPathData.getInstance()!.SEPARATOR +href);
 ;
     
 
@@ -129,7 +125,8 @@ var base = base
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -138,7 +135,8 @@ var base = base
 
 
 
-                            throw new TransformerException(e)
+                            throw new TransformerException(e);
+                    
 }
 
 }

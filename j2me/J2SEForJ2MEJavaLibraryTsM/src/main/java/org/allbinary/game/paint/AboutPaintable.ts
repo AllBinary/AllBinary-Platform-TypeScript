@@ -74,8 +74,6 @@ var developers = developers
 
 
     private readonly ABOUT: string = CanvasStrings.getInstance()!.ABOUT;
-        
-        
 
     private readonly info: string[]
 
@@ -85,8 +83,6 @@ var developers = developers
                                                         [
                                                             this
                                                         ];
-        
-        
 private constructor (info: string[], developers: string[]){
 
             super();
@@ -110,39 +106,27 @@ this.developers= developers;
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var halfWidth: number = DisplayInfoSingleton.getInstance()!.getLastHalfWidth()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var font: Font = graphics.getFont()!;
-        
-        
 ;
     
 
     var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);
-        
-        
 ;
     
 graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
@@ -150,8 +134,6 @@ graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
 
     var infoSize: number = this.info.length
                 ;
-        
-        
 ;
     
 
@@ -160,8 +142,6 @@ graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
 
                         for (
     var index: number = 0;
-        
-        
 index < infoSize; index++)
         {
 beginWidth= (font.stringWidth(this.info[index]!)>>1);
@@ -173,8 +153,6 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
 
     var size: number = this.developers.length
                 ;
-        
-        
 ;
     
 
@@ -183,8 +161,6 @@ graphics.drawString(this.info[index]!, halfWidth -beginWidth, (4 +index) *charHe
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 beginWidth= (font.stringWidth(this.developers[index]!)>>1);

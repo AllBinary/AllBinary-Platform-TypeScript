@@ -31,6 +31,12 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
         
 import { Canvas } from "./Canvas.js";
 
+import { Image } from "./Image.js";
+
+import { Form } from "./Form.js";
+
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Command } from "./Command.js";
 
 import { CommandListener } from "./CommandListener.js";
@@ -41,20 +47,12 @@ export class NullCanvas extends Canvas {
         
 
     public static readonly NULL_IMAGE_ARRAY: Image[] = [];
-        
-        
 
     public static readonly NULL_IMAGE: Image = new Image();
-        
-        
 
     public static readonly NULL_CANVAS: NullCanvas = new NullCanvas();
-        
-        
 
     public static readonly NULL_SCREEN: Form = new Form(StringUtil.getInstance()!.EMPTY_STRING);
-        
-        
 public constructor (){
 
             super();
@@ -76,7 +74,8 @@ var h = h
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -85,7 +84,8 @@ var command = command
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -112,7 +112,8 @@ var l = l
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -120,7 +121,8 @@ var l = l
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -156,7 +158,8 @@ var isPaused = isPaused
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

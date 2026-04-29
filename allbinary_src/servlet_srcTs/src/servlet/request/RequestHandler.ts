@@ -73,8 +73,6 @@ export class RequestHandler extends HttpServlet {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(ServletException::class)
             
@@ -100,14 +98,10 @@ var response = response
     
 
     var out: PrintWriter = response.getWriter()!;
-        
-        
 ;
     
 
-    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance(request as ServletRequest, response as ServletResponse, this.getServletConfig(), this.getServletContext())!;
-        
-        
+    var workflowInterface: WorkFlowInterface = RequestWorkFlowFactory.getInstance( as ServletRequestrequest,  as ServletResponseresponse, this.getServletConfig(), this.getServletContext())!;
 ;
     
 

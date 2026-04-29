@@ -76,8 +76,6 @@ export class GameFeatureItemCommandListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private gameOptionsForm: GameOptionsForm
 public constructor (gameOptionsForm: GameOptionsForm){
@@ -96,8 +94,6 @@ var item = item
         try {
             
     var itemLabel: string = item.getLabel()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -107,7 +103,7 @@ this.logUtil!.putF(new StringMaker().
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm,  as GameConfigurationGaugeitem);
     
 
                                     }
@@ -118,8 +114,6 @@ this.logUtil!.putF(new StringMaker().
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, MidletStrings.getInstance()!.COMMAND_ACTION, e);

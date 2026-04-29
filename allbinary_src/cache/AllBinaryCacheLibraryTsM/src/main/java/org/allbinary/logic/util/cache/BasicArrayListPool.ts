@@ -70,8 +70,6 @@ this.buffers.clear();
 var key = key
 
     var size: number = this.buffers.size()!;
-        
-        
 ;
     
 
@@ -82,7 +80,7 @@ var key = key
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return buffers.remove(size -1); as CacheableInterface;
+                        return  as CacheableInterfacebuffers.removeAt(size -1);;
     
 
                                     }
@@ -110,14 +108,10 @@ var usedList = usedList
 
                         for (
     var index: number = usedList!.size()!;
-        
-        
 --index >= 0; )
         {
 
-    var anyType: CacheableInterface = usedList!.objectArray[index]! as CacheableInterface;
-        
-        
+    var anyType: CacheableInterface =  as CacheableInterfaceusedList!.objectArray[index]!;
 ;
     
 this.add(anyType);
@@ -139,21 +133,17 @@ var usedList = usedList
 
                         for (
     var index: number = usedList!.size()!;
-        
-        
 --index >= 0; )
         {
 
-    var list: BasicArrayListCacheable = usedList!.objectArray[index]! as BasicArrayListCacheable;
-        
-        
+    var list: BasicArrayListCacheable =  as BasicArrayListCacheableusedList!.objectArray[index]!;
 ;
     
 
                         if(list.size() == 0)
                         
                                     {
-                                    usedList!.remove(index);
+                                    usedList!.removeAt(index);
     
 this.add(list);
     

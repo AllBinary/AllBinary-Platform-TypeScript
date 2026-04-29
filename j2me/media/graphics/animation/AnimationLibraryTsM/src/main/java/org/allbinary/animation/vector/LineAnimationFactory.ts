@@ -49,6 +49,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LineAnimation } from "./LineAnimation.js";
+
 export class LineAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

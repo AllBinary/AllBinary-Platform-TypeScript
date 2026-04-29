@@ -42,6 +42,8 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
         
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
+import { SelectAdvancedRTSLayerVisitor } from "./SelectAdvancedRTSLayerVisitor.js";
+
 import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
 
 export class SelectAdvancedRTSLayerVisitorFactory
@@ -50,8 +52,6 @@ export class SelectAdvancedRTSLayerVisitorFactory
         
 
     private static readonly instance: SelectAdvancedRTSLayerVisitorFactory = new SelectAdvancedRTSLayerVisitorFactory();
-        
-        
 
     public static getInstance(): SelectAdvancedRTSLayerVisitorFactory{
 
@@ -68,7 +68,7 @@ private constructor (){
         }
 
 
-    public getInstance(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor{
+    public create(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor{
     //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
 
 

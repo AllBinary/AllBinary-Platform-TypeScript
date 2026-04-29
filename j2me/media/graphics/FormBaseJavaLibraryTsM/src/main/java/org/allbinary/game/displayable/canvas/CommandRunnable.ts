@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../../java/lang/Runnable.js";
+        
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -52,8 +54,6 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
-
 import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
 
 export class CommandRunnable
@@ -62,12 +62,8 @@ export class CommandRunnable
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly commandFormInputProcessor: CommandFormInputProcessor
 
@@ -91,14 +87,10 @@ this.command= command;
     
 
     var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;
-        
-        
 ;
     
 
     var commandListener: CommandListener = canvas.getCustomCommandListener()!;
-        
-        
 ;
     
 commandListener!.commandAction(this.command, canvas);

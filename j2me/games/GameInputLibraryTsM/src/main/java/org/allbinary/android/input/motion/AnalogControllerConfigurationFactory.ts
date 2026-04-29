@@ -52,8 +52,6 @@ export class AnalogControllerConfigurationFactory
         
 
     private static readonly instance: AnalogControllerConfigurationFactory = new AnalogControllerConfigurationFactory();
-        
-        
 
     public static getInstance(): AnalogControllerConfigurationFactory{
 
@@ -66,18 +64,12 @@ export class AnalogControllerConfigurationFactory
 
 
     public readonly SCALE_FACTOR: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_FACTOR;
-        
-        
 
     public readonly SCALE_VALUE: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
-        
-        
 
     private available: boolean= false
 
     private readonly analogControllerConfigurationEvent: AnalogControllerConfigurationEvent = new AnalogControllerConfigurationEvent(this);
-        
-        
 private constructor (){
 
             super();

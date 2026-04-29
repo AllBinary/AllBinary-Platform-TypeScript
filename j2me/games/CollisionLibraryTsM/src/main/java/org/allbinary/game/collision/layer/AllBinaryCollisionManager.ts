@@ -52,8 +52,6 @@ export class AllBinaryCollisionManager
         
 
     private allBinaryCollisionManager: AllBinaryCollisionManager = new AllBinaryCollisionManager();
-        
-        
 
     public static getInstance(): AllBinaryCollisionManager{
 
@@ -78,8 +76,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 var startIndex = startIndex
 
     var size: number = layerManager!.getSize()!;
-        
-        
 ;
     
 
@@ -88,14 +84,10 @@ var startIndex = startIndex
 
                         for (
     var index: number = startIndex +1;
-        
-        
 index < size; index++)
         {
 
-    var collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface = layerManager!.getLayerAt(index); as CollidableInterfaceCompositeInterface;
-        
-        
+    var collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface =  as CollidableInterfaceCompositeInterfacelayerManager!.getLayerAt(index);;
 ;
     
 this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2);
@@ -113,14 +105,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterface2
 
     var collidableBase2: CollidableBaseBehavior = collidableInterfaceCompositeInterface2!.getCollidableInferface()!;
-        
-        
 ;
     
 
     var collidableBase: CollidableBaseBehavior = collidableInterfaceCompositeInterface!.getCollidableInferface()!;
-        
-        
 ;
     
 
@@ -128,12 +116,12 @@ var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterfa
                         
                                     {
                                     
-                        if(collidableBase!.isCollision(collidableInterfaceCompositeInterface2))
+                        if(collidableBase!.isCollisionInterface(collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collidableBase!.collide(collidableInterfaceCompositeInterface2);
+                                    collidableBase!.collideInterface(collidableInterfaceCompositeInterface2);
     
-collidableBase2!.collide(collidableInterfaceCompositeInterface);
+collidableBase2!.collideInterface(collidableInterfaceCompositeInterface);
     
 
                                     }

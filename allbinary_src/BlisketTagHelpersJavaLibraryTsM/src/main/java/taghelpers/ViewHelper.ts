@@ -76,19 +76,13 @@ export class ViewHelper
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private componentInterface: TransformInterface
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -99,8 +93,6 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
     public NO_TYPE: number = 0;
-        
-        
 
     public getTypeId(): number{
 
@@ -129,8 +121,6 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             {
 
     var error: string = "Failed to View: ";
-        
-        
 ;
     
 
@@ -153,7 +143,8 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -167,15 +158,14 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             
 
 
-                            throw new Error("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc())
+                            throw new Error("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc());
+                    
 
                 //: 
 } catch(e) 
             {
 
     var error: string = "Failed to View: ";
-        
-        
 ;
     
 
@@ -198,7 +188,8 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

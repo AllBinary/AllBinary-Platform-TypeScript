@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbPath } from "./AbPath.js";
+
 export class AbPathUtil
             extends Object
          {
         
 
     private static readonly instance: AbPathUtil = new AbPathUtil();
-        
-        
 
     public static getInstance(): AbPathUtil{
 
@@ -57,8 +57,6 @@ export class AbPathUtil
 
 
     public readonly NO_ABPATH: AbPath = new AbPath();
-        
-        
 
 }
                 

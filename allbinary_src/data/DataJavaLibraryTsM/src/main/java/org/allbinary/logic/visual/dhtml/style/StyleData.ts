@@ -43,8 +43,6 @@ export class StyleData
         
 
     private static readonly instance: StyleData = new StyleData();
-        
-        
 
     public static getInstance(): StyleData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "STYLE_NAME";
-        
-        
 
     public readonly NAMEMAXLEN: number = 255;
-        
-        
 
 }
                 

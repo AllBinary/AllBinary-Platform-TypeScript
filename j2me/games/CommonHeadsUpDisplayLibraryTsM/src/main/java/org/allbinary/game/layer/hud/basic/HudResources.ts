@@ -43,8 +43,6 @@ export class HudResources
         
 
     private static readonly instance: HudResources = new HudResources();
-        
-        
 
     public static getInstance(): HudResources{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly RESOURCE_LIFE: string = "/hud_life_10_by_10.png";
-        
-        
 
     public readonly RESOURCE_HEALTH: string = "/hud_health_10_by_10.png";
-        
-        
 
 }
                 

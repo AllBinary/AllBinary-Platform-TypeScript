@@ -43,8 +43,6 @@ export class RemoteHighScoresData
         
 
     private static readonly SINGLETON: RemoteHighScoresData = new RemoteHighScoresData();
-        
-        
 
     public static getInstance(): RemoteHighScoresData{
 
@@ -57,28 +55,16 @@ export class RemoteHighScoresData
 
 
     public readonly HIGH_SCORES: string = "HIGH_SCORES";
-        
-        
 
     public CUSTOMER_USER_NAME: string = "CUSTOMER_USER_NAME";
-        
-        
 
     public DISPLAY_NAME: string = "DISPLAY_NAME";
-        
-        
 
     public SCORE: string = "SCORE";
-        
-        
 
     public GAME_INFO: string = "GAME_INFO";
-        
-        
 
     public GAME_CONFIGURATION: string = "GAME_CONFIGURATION";
-        
-        
 
 }
                 

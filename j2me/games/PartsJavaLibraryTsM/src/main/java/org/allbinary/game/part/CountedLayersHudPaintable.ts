@@ -61,16 +61,10 @@ export class CountedLayersHudPaintable
         
 
     private static readonly XXString: string = "XX";
-        
-        
 
     private static readonly XXStringWidth: number = MyFont.getInstance()!.stringWidth(XXString)!;
-        
-        
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
-        
-        
 
     private readonly partInterfaceArray: PartInterface[]
 
@@ -106,8 +100,6 @@ this.dropSize= dropSize;
 var graphics = graphics
 
     var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
@@ -121,20 +113,14 @@ var graphics = graphics
                                 
 
     var lastWidth: number = DisplayInfoSingleton.getInstance()!.getLastWidth()!;
-        
-        
 ;
     
 
     var count: number = 0;
-        
-        
 ;
     
 
     var widthEdge: number = lastWidth -this.dropSize;
-        
-        
 ;
     
 
@@ -144,8 +130,6 @@ var graphics = graphics
 
     var size: number = this.partInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -170,11 +154,9 @@ var graphics = graphics
 
                         for (
     var index: number = this.startIndex;
-        
-        
 index < size; index++)
         {
-countedLayerInterfaceFactory= this.partInterfaceArray[index]! as CountedLayerInterfaceFactoryPart;
+countedLayerInterfaceFactory=  as CountedLayerInterfaceFactoryPartthis.partInterfaceArray[index]!;
     
 
                         if(countedLayerInterfaceFactory!.getTotal() > 0)

@@ -62,12 +62,8 @@ export class HttpStoreComponentView extends HttpComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -107,15 +103,11 @@ this.toXmlDoc();
     
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
-        
-        
 ;
     
 
     var result: string = new StoreTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -140,7 +132,8 @@ this.toXmlDoc();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

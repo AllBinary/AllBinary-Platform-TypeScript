@@ -61,20 +61,12 @@ export class WaypointPathRunnableBase
         
 
     private readonly layerDistanceUtil: LayerDistanceUtil = LayerDistanceUtil.getInstance()!;
-        
-        
 
     pathFindingLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 
     targetPathFindingLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 
     priorityP: number = Integer.MAX_VALUE;
-        
-        
 
     runningP: boolean= false
 
@@ -113,15 +105,11 @@ this.setPriority();
 
     public setPriority(){
 
-    var pathFindingLayer: AllBinaryLayer = this.pathFindingLayer as AllBinaryLayer;
-        
-        
+    var pathFindingLayer: AllBinaryLayer =  as AllBinaryLayerthis.pathFindingLayer;
 ;
     
 
-    var targetLayer: AllBinaryLayer = this.targetPathFindingLayer as AllBinaryLayer;
-        
-        
+    var targetLayer: AllBinaryLayer =  as AllBinaryLayerthis.targetPathFindingLayer;
 ;
     
 
@@ -132,14 +120,10 @@ this.setPriority();
                                     {
                                     
     var distance: number = this.layerDistanceUtil!.getDistance(targetLayer, pathFindingLayer)!;
-        
-        
 ;
     
 
     var distanceCategory: number = distance /70;
-        
-        
 ;
     
 this.priorityP= distanceCategory;

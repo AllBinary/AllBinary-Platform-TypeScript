@@ -72,8 +72,6 @@ export class WebCommandProcessor
         
 
     private static readonly instance: WebCommandProcessor = new WebCommandProcessor();
-        
-        
 
     public static getInstance(): WebCommandProcessor{
 
@@ -86,16 +84,10 @@ export class WebCommandProcessor
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly aboutCommandProcessor: AboutCommandProcessor = AboutCommandProcessor.getInstance()!;
-        
-        
 
     public readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public process(midletCommandListener: CommandListener, command: Command, canvas: Canvas){
     //var midletCommandListener = midletCommandListener
@@ -107,7 +99,7 @@ export class WebCommandProcessor
                         if(Desktop.isDesktopSupported() && Desktop.getDesktop()!.isSupported(Desktop.Action.BROWSE))
                         
                                     {
-                                    Desktop.getDesktop()!.browse(new URI(this.list.remove(0) as String));
+                                    Desktop.getDesktop()!.browse(new URI( as Stringthis.list.removeAt(0)));
     
 
                                     }
@@ -118,8 +110,6 @@ export class WebCommandProcessor
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "process", e);

@@ -72,15 +72,11 @@ export class ResolveCompleteMotionGestureListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
         
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("MotionGesture to CompleteMotionGesture Reciever", this, commonStrings!.CONSTRUCTOR);
@@ -96,20 +92,14 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
 var list = list
 
     var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-        
-        
 ;
     
 
     var commandActionsList: BasicArrayList = configuration.getAssociateCommandActionsList()!;
-        
-        
 ;
     
 
     var size: number = commandActionsList!.size()!;
-        
-        
 ;
     
 
@@ -118,14 +108,10 @@ var list = list
 
                         for (
     var index: number = size -1;
-        
-        
 index >= 0; index--)
         {
 
-    var association: MotionGestureToMotionGestureActionAssociation = commandActionsList!.objectArray[index]! as MotionGestureToMotionGestureActionAssociation;
-        
-        
+    var association: MotionGestureToMotionGestureActionAssociation =  as MotionGestureToMotionGestureActionAssociationcommandActionsList!.objectArray[index]!;
 ;
     
 
@@ -133,9 +119,7 @@ index >= 0; index--)
                         
                                     {
                                     
-    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = association.getCommandAction(); as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var completeMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventassociation.getCommandAction();;
 ;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.fireEvent(completeMotionGestureInputEvent);

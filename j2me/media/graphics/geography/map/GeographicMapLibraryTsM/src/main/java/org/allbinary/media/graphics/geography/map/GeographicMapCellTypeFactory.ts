@@ -21,9 +21,6 @@
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
-
-    
 
 
 
@@ -45,14 +42,14 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
         
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class GeographicMapCellTypeFactory
             extends Object
          {
         
 
     private static readonly instance: GeographicMapCellTypeFactory = new GeographicMapCellTypeFactory();
-        
-        
 
     public static getInstance(): GeographicMapCellTypeFactory{
 
@@ -65,14 +62,10 @@ export class GeographicMapCellTypeFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly geographicMapCellTypeArray: GeographicMapCellType[] = new Array(512);
-        
-        
 
-    public getInstance(type: number): GeographicMapCellType{
+    public get(type: number): GeographicMapCellType{
 var type = type
 
 
@@ -97,7 +90,8 @@ var type = type
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -105,7 +99,8 @@ var type = type
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -113,7 +108,8 @@ var type = type
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -122,7 +118,8 @@ var cellType = cellType
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

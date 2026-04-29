@@ -45,8 +45,6 @@ export class ThrustAIVisitorFactory
         
 
     private static readonly instance: ThrustAIVisitor = new ThrustAIVisitor();
-        
-        
 
     public static getInstance(): ThrustAIVisitor{
 

@@ -41,7 +41,6 @@
 <!--        <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
         <module>../../media/graphics/ImageCacheLazyJ2MEJavaLibraryTsM</module>-->
         <!--        <module>../../media/graphics/ImageCacheOpenGLESJavaLibraryTsM</module>-->
-        <module>../../media/graphics/GameResourceNoneJavaLibraryTsM</module>
         <module>../../media/graphics/LazyGameResourceNoneJavaLibraryTsM</module>
 
         <module>../../../graphics/opengl/OpenGLNoneJavaLibraryTsM</module>

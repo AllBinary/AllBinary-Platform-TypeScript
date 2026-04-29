@@ -81,8 +81,6 @@ export class PaymentHelper extends Table {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
@@ -91,12 +89,12 @@ export class PaymentHelper extends Table {
     private value: string
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -118,25 +116,19 @@ this.value= this.request.getParameter("VALUE");
         try {
             
     var success: string = "Successfully Added Payment";
-        
-        
 ;
     
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
-        
-        
 ;
     
 
     var paymentInterface: PaymentInterface = PaymentFactory.getInstance(this.request)!;
-        
-        
 ;
     
 paymentEntity!.add(this.weblisketSession!.getUserName(), paymentInterface);
     
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), paymentEntity!.getLastId(this.weblisketSession!.getUserName()));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -159,8 +151,6 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paym
             {
 
     var error: string = "Failed to add Payment";
-        
-        
 ;
     
 
@@ -188,17 +178,13 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paym
         try {
             
     var success: string = "Successfully Selected Payment";
-        
-        
 ;
     
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
-        
-        
 ;
     
-paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this.value));
+paymentEntity!.setDefault(this.weblisketSession!.getUserName(), this.value);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -221,8 +207,6 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this
             {
 
     var error: string = "Failed to select Payment";
-        
-        
 ;
     
 
@@ -250,22 +234,16 @@ paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(this
         try {
             
     var success: string = "Successfully Removed Payment";
-        
-        
 ;
     
 
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
-        
-        
 ;
     
-paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.value));
+paymentEntity!.remove(this.weblisketSession!.getUserName(), this.value);
     
 
     var paymentInterface: PaymentInterface = paymentEntity!.getDefault(this.weblisketSession!.getUserName())!;
-        
-        
 ;
     
 
@@ -274,7 +252,7 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
                                 )
                         
                                     {
-                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), new Integer(paymentEntity!.getLastId(this.weblisketSession!.getUserName())));
+                                    paymentEntity!.setDefault(this.weblisketSession!.getUserName(), paymentEntity!.getLastId(this.weblisketSession!.getUserName()));
     
 
                                     }
@@ -300,8 +278,6 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
             {
 
     var error: string = "Failed to remove Payment";
-        
-        
 ;
     
 
@@ -329,14 +305,10 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
         try {
             
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
-        
-        
 ;
     
 
     var success: string = paymentEntity!.dropTable()!;
-        
-        
 ;
     
 
@@ -360,8 +332,6 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
             {
 
     var error: string = "Failed to drop Admin table";
-        
-        
 ;
     
 
@@ -389,14 +359,10 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
         try {
             
     var paymentEntity: PaymentEntity = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!;
-        
-        
 ;
     
 
     var success: string = paymentEntity!.createTable()!;
-        
-        
 ;
     
 
@@ -420,8 +386,6 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
             {
 
     var error: string = "Failed to create user table";
-        
-        
 ;
     
 
@@ -449,14 +413,10 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance(), portion)!;
-        
-        
 ;
     
 
@@ -480,8 +440,6 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -509,14 +467,10 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
         try {
             
     var success: string = "Backup Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentEntityFactory.getInstance()!.getPaymentEntityInstance())!;
-        
-        
 ;
     
 
@@ -540,8 +494,6 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), new Integer(this.val
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

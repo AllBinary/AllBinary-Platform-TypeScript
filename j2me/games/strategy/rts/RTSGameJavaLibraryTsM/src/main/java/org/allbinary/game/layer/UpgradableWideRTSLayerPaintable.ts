@@ -59,8 +59,6 @@ export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable 
         
 
     private cost: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
             super(upgradableRTSLayerHudPaintable);
                     var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable

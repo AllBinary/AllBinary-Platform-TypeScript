@@ -55,12 +55,8 @@ export class RuntimeEnvironmentVariables
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -81,8 +77,6 @@ public constructor (){
 var var = var
 
     var environmentVariables: Properties = this.get()!;
-        
-        
 ;
     
 
@@ -103,44 +97,30 @@ var var = var
     
 
     var environmentVariables: Properties = new Properties();
-        
-        
 ;
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 
     var osName: string = operatingSystemInterface!.getName()!;
-        
-        
 ;
     
 
     var linuxCommand: string = "env";
-        
-        
 ;
     
 
     var windowsCommand: string = "cmd.exe /c set";
-        
-        
 ;
     
 
     var solarisCommand: string = linuxCommand;
-        
-        
 ;
     
 
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
@@ -174,20 +154,17 @@ var var = var
                             
 
 
-                            throw new Error()
+                            throw new Error();
+                    
 
                         }
                             
 
     var processInputStreamReader: InputStreamReader = new InputStreamReader(process.getInputStream());
-        
-        
 ;
     
 
     var bufferedReader: BufferedReader = new BufferedReader(processInputStreamReader);
-        
-        
 ;
     
 
@@ -201,20 +178,14 @@ var var = var
         {
 
     var index: number = keyValuePair!.indexOf('=')!;
-        
-        
 ;
     
 
     var key: string = keyValuePair!.substring(0, index)!;
-        
-        
 ;
     
 
     var value: string = keyValuePair!.substring(index +1)!;
-        
-        
 ;
     
 environmentVariables!.put(key, value);
@@ -356,8 +327,6 @@ var libPath = libPath
         try {
             
     var existingPath: string = this.getLibraryPath()!;
-        
-        
 ;
     
 System.setProperty("java.library.path", libPath +":" +existingPath);
@@ -478,26 +447,18 @@ var val = val
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = operatingSystemInterface!.getName()!;
-        
-        
 ;
     
 
     var windowsCommand: string = "cmd.exe /c set" +var +"=" +val;
-        
-        
 ;
     
 
@@ -507,7 +468,8 @@ var val = val
                                     
 
 
-                            throw new Error()
+                            throw new Error();
+                    
 
                                     }
                                 
@@ -527,7 +489,8 @@ var val = val
                                     
 
 
-                            throw new Error()
+                            throw new Error();
+                    
 
                                     }
                                 
@@ -535,7 +498,8 @@ var val = val
                             
 
 
-                            throw new Error()
+                            throw new Error();
+                    
 
                         }
                             

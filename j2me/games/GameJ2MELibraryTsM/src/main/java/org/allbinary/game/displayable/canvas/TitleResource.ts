@@ -43,8 +43,6 @@ export class TitleResource
         
 
     public static readonly RESOURCE_TITLE: string = "/title_sprite_100_by_100.png";
-        
-        
 
 }
                 

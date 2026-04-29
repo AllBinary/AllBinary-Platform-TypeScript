@@ -59,8 +59,6 @@ export class StoreFrontComponent extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     newStoreFrontInterface: StoreFrontInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -70,7 +68,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() as HttpServletRequest) as StoreFrontInterface;
+this.newStoreFrontInterface=  as StoreFrontInterfacenew StoreFront( as HttpServletRequestthis.getPageContext()!.getRequest());
     
 
                         if(this.newStoreFrontInterface!.getName() == 
@@ -113,7 +111,8 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

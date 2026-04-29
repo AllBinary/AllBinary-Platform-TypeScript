@@ -80,26 +80,18 @@ this.angleInfo= angleInfo;
 var frame = frame
 
     var keyDirection: number =  -1;
-        
-        
 ;
     
 
     var directionAngle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame)!;
-        
-        
 ;
     
 
     var angle: number = this.angleInfo!.getAngle()!;
-        
-        
 ;
     
 
     var degrees: number = Math.abs(directionAngle -angle)!;
-        
-        
 ;
     
 
@@ -158,12 +150,10 @@ var frame = frame
 }
 
 
-    getAIKeyPressed(frame: Integer): number{
+    getAIKeyPressed(frame: number): number{
     //var frame = frame
 
     var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.toInt());;
-        
-        
 ;
     
 
@@ -196,20 +186,14 @@ var frame = frame
     //var geographicMapDirectionData = geographicMapDirectionData
 
     var keyDirection: number =  -1;
-        
-        
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = this.angleInfo!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 

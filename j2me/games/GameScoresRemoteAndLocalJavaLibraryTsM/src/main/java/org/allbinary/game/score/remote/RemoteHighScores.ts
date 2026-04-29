@@ -79,9 +79,7 @@ import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 export class RemoteHighScores extends HighScores {
         
 
-    private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private static readonly hashTable: Hashtable = new Hashtable();
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
@@ -95,13 +93,13 @@ export class RemoteHighScores extends HighScores {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, true);;
+                        return RemoteHighScores.getInstancePreload(abeClientInformation, softwareInformation, gameInfo, heading, columnTwoHeading, isAscending, true);;
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
+    public static getInstancePreload(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
     //var abeClientInformation = abeClientInformation
     //var softwareInformation = softwareInformation
     //var gameInfo = gameInfo
@@ -111,16 +109,12 @@ export class RemoteHighScores extends HighScores {
     //var preload = preload
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
-    var highScores: HighScores = hashTable!.get(gameInfo); as HighScores;
-        
-        
+    var highScores: HighScores =  as HighScoreshashTable!.get(gameInfo);;
 ;
     
 
@@ -148,8 +142,6 @@ hashTable!.put(gameInfo, highScores);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.getInstance(), commonStrings!.GET_INSTANCE, e);
@@ -166,8 +158,6 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
@@ -176,8 +166,6 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
     private ascending: Boolean
 
     public readonly ASCENDING: string = "ASCENDING";
-        
-        
 private constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, ascending: Boolean, preload: boolean){
             super(gameInfo!.toString(), heading, columnTwoHeading);
                         //var abeClientInformation = abeClientInformation
@@ -216,14 +204,12 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 }
 
 
-    public update(hashtable: Hashtable<any, any>){
+    public update(hashtable: Hashtable){
     //var hashtable = hashtable
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object); as Vector;
-        
-        
+    var vector: Vector =  as Vectorhashtable.get( as ObjectRemoteHighScoresData.getInstance()!.HIGH_SCORES);;
 ;
     
 
@@ -234,8 +220,6 @@ this.getList()!.clear();
                                     {
                                     
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -244,39 +228,27 @@ this.getList()!.clear();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index); as Vector;
-        
-        
+    var highScoreVector: Vector =  as Vectorvector.elementAt(index);;
 ;
     
 
-    var displayName: string = highScoreVector!.elementAt(0); as String;
-        
-        
+    var displayName: string =  as StringhighScoreVector!.elementAt(0);;
 ;
     
 
-    var score: string = highScoreVector!.elementAt(1); as String;
-        
-        
+    var score: string =  as StringhighScoreVector!.elementAt(1);;
 ;
     
 
     var longScore: number = Long.parseLong(score)!;
-        
-        
 ;
     
 
     var highScore: HighScore = new HighScore( -1, displayName, 
                             null, longScore);
-        
-        
 ;
     
 this.getList()!.add(highScore);
@@ -289,14 +261,10 @@ this.getList()!.add(highScore);
                         else {
                             
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
-    var enumeration: Enumeration<any?> = hashtable.elements()!;
-        
-        
+    var enumeration: Enumeration = hashtable.elements()!;
 ;
     
 

@@ -69,22 +69,18 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
         
 import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
 
+import { ImageComparator } from "./ImageComparator.js";
+
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly bufferedImageVector: Vector = new Vector();
-        
-        
 
     private readonly imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface
 
@@ -143,7 +139,7 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject
-this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
+this.onCaptureEvent( as CapturedImageWorkerResultsEventallBinaryEventObject);
     
 }
 
@@ -157,11 +153,9 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
                         if(this.imageComparatorConstraintsInterface!.isFrameAllowed(this.index2))
@@ -169,13 +163,11 @@ timeHelper!.setStartTime();
                                     {
                                     
     var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent[] = new Array(2);
-        
-        
 ;
     
-capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0); as CapturedImageWorkerResultsEvent;
+capturedImageWorkerResultsEvent[0]=  as CapturedImageWorkerResultsEventthis.bufferedImageVector!.get(0);;
     
-capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1); as CapturedImageWorkerResultsEvent;
+capturedImageWorkerResultsEvent[1]=  as CapturedImageWorkerResultsEventthis.bufferedImageVector!.get(1);;
     
 
                         if(this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[0]!.getBufferedImage()) && this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[1]!.getBufferedImage()))
@@ -183,20 +175,14 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1); as Capture
                                     {
                                     
     var imageComparisonResult: ImageComparisonResult = this.imageComparator!.compare(capturedImageWorkerResultsEvent[0]!.getBufferedImage(), capturedImageWorkerResultsEvent[1]!.getBufferedImage(), capturedImageWorkerResultsEvent[0]!.getFrame(), capturedImageWorkerResultsEvent[1]!.getFrame(), 0)!;
-        
-        
 ;
     
 
-    var frame: Long = capturedImageWorkerResultsEvent[1]!.getFrame()!;
-        
-        
+    var frame: number = capturedImageWorkerResultsEvent[1]!.getFrame()!;
 ;
     
 
     var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = new ImageComparisonResultFrameCacheable(imageComparisonResult, frame);
-        
-        
 ;
     
 ImageComparisonResultCacheSingleton.getInstance()!.add(imageComparisonResultFrameCacheable);
@@ -224,9 +210,7 @@ index2++;
     
 
     var message: string = new StringMaker().
-                            append("Frame: ")!.appendint(this.index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsed())!.toString()!;
-        
-        
+                            append("Frame: ")!.appendint(this.index2)!.append(CommonLabels.getInstance()!.ELAPSED)!.appendlong(timeHelper!.getElapsedTNT())!.toString()!;
 ;
     
 this.logUtil!.putF(message, this, this.commonStrings!.RUN);

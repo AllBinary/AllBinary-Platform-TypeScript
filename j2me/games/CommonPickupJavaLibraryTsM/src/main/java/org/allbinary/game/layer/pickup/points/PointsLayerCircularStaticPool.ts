@@ -66,15 +66,11 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var pointsLayer: PointsLayer = this.getNextInstance(); as PointsLayer;
-        
-        
+    var pointsLayer: PointsLayer =  as PointsLayerthis.getNextInstance();;
 ;
     
 
-    var scoreableInterface: ScoreableInterface = sourceLayerInterface as ScoreableInterface;
-        
-        
+    var scoreableInterface: ScoreableInterface =  as ScoreableInterfacesourceLayerInterface;
 ;
     
 pointsLayer!.visit(scoreableInterface);

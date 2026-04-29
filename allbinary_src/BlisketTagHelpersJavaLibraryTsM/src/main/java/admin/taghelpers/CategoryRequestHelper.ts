@@ -116,16 +116,12 @@ export class CategoryRequestHelper extends ModifyTable {
 
     private static readonly categoryRequest: string = new StringMaker().
                             append("<")!.append(CategoryData.getInstance()!.REQUEST)!.append(">")!.toString()!;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private pageContext: PageContext
 
-    private hashMap: HashMap<any, any>
+    private hashMap: HashMap
 
     private request: HttpServletRequest
 
@@ -136,14 +132,14 @@ export class CategoryRequestHelper extends ModifyTable {
     private childCategoryInterface: CategoryInterface
 
     private transformInfoInterface: TransformInfoInterface
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
         try {
-            this.request= pageContext!.getRequest(); as HttpServletRequest;
+            this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.pageContext= pageContext;
     
@@ -174,33 +170,23 @@ this.getXmlData();
         try {
             
     var map: Map = this.request.getParameterMap()!;
-        
-        
 ;
     
 
     var categoryData: CategoryData = CategoryData.getInstance()!;
-        
-        
 ;
     
 
     var keys: Set = map.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -208,21 +194,17 @@ this.getXmlData();
                         
                                     {
                                     
-    var xmlRequest: string = keyArray[0]! as String;
-        
-        
+    var xmlRequest: string =  as StringkeyArray[0]!;
 ;
     
 
     var index: number = 1;
-        
-        
 ;
     
 
         while(index < size && !xmlRequest!.startsWith(categoryRequest);)
         {
-xmlRequest= keyArray[index]! as String;
+xmlRequest=  as StringkeyArray[index]!;
     
 
                         if(xmlRequest!.startsWith(categoryRequest))
@@ -242,14 +224,10 @@ xmlRequest= keyArray[index]! as String;
                                 
 
     var document: Document = DomDocumentHelper.create(xmlRequest)!;
-        
-        
 ;
     
 
     var requestNode: Node = DomSearchHelper.getNode(categoryData!.REQUEST, document.getChildNodes())!;
-        
-        
 ;
     
 
@@ -265,18 +243,14 @@ this.setCategoryLoader(requestNode);
     
 
     var parentCategoryNode: Node = DomSearchHelper.getNode(categoryData!.PARENT, requestNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var categoryNode: Node = DomSearchHelper.getNode(categoryData!.NAME, parentCategoryNode!.getChildNodes())!;
-        
-        
 ;
     
-this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getRootInstanceFromNode(categoryNode); as CategoryInterface;
+this.categoryInterface=  as CategoryInterfacenew StoreCategoryFactory(this.transformInfoInterface).
+                            getRootInstanceFromNode(categoryNode);;
     
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface);
     
@@ -293,8 +267,6 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
                                 
 
     var childCategoryNode: Node = DomSearchHelper.getNodeNoThrow(categoryData!.NAME, requestNode!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -312,8 +284,8 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
 
                                     }
                                 
-this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getInstance(childCategoryNode); as CategoryInterface;
+this.childCategoryInterface=  as CategoryInterfacenew StoreCategoryFactory(this.transformInfoInterface).
+                            getInstance(childCategoryNode);;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))
@@ -362,8 +334,6 @@ this.logUtil!.putF("Loaded Child Category", this, "getXmlData()");
 var requestNode = requestNode
 
     var storeNameNode: Node = DomSearchHelper.getNode(StoreFrontData.getInstance()!.NAME, requestNode!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -374,8 +344,6 @@ var requestNode = requestNode
                                     {
                                     
     var storeName: string = DomNodeHelper.getTextNodeValue(storeNameNode)!;
-        
-        
 ;
     
 
@@ -386,11 +354,9 @@ var requestNode = requestNode
                                     {
                                     
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(storeName)!;
-        
-        
 ;
     
-this.transformInfoInterface= new TransformInfoBasic(storeFrontInterface, hashMap, pageContext) as TransformInfoInterface;
+this.transformInfoInterface=  as TransformInfoInterfacenew TransformInfoBasic(storeFrontInterface, hashMap, pageContext);
     
 
                         if(this.transformInfoInterface == 
@@ -401,14 +367,13 @@ this.transformInfoInterface= new TransformInfoBasic(storeFrontInterface, hashMap
                                     
 
 
-                            throw new Error("TransformInfo null")
+                            throw new Error("TransformInfo null");
+                    
 
                                     }
                                 
 
     var storeCategoryFactory: StoreCategoryFactory = new StoreCategoryFactory(this.transformInfoInterface);
-        
-        
 ;
     
 this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFactory);
@@ -420,7 +385,8 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
                             
 
 
-                            throw new Error("Store Name Error: " +storeName)
+                            throw new Error("Store Name Error: " +storeName);
+                    
 
                         }
                             
@@ -435,8 +401,6 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
         try {
             
     var success: string = "Successfully Added the following to the Category table";
-        
-        
 ;
     
 
@@ -471,8 +435,6 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
             {
 
     var error: string = "Failed to add item to Category";
-        
-        
 ;
     
 
@@ -500,8 +462,6 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
         try {
             
     var success: string = "Successfully Removed " +CategoryData.getInstance()!.NAME +"=" +this.childCategoryInterface!.getPath();
-        
-        
 ;
     
 
@@ -538,8 +498,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
         try {
             
     var error: string = "Failed to remove category: " +this.childCategoryInterface!.getPath();
-        
-        
 ;
     
 
@@ -563,8 +521,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
             {
 
     var error: string = "Failed to remove category and show the path of the failed category";
-        
-        
 ;
     
 
@@ -595,14 +551,10 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
             
     var document: Document = new CategoryComponent(this.childCategoryInterface).
                             toXmlDoc()!;
-        
-        
 ;
     
 
     var xmlString: string = DomDocumentHelper.toString(document)!;
-        
-        
 ;
     
 
@@ -626,8 +578,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
             {
 
     var error: string = "Failed to get Category";
-        
-        
 ;
     
 
@@ -655,8 +605,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
         try {
             
     var success: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -680,8 +628,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
             {
 
     var error: string = "Failed to view Categories table";
-        
-        
 ;
     
 
@@ -709,8 +655,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
         try {
             
     var success: string = "New Item Successfully added";
-        
-        
 ;
     
 
@@ -734,8 +678,6 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
             {
 
     var error: string = "Failed to add Item";
-        
-        
 ;
     
 

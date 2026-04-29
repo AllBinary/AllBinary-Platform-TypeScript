@@ -56,12 +56,8 @@ export class ThrustAIVisitor extends Visitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly TRUE: Boolean = BooleanFactory.getInstance()!.TRUE;
-        
-        
 public constructor (){
 
             super();
@@ -73,12 +69,10 @@ var anyType = anyType
 
         try {
             
-    var basicAI: BasicAI = anyType as BasicAI;
-        
-        
+    var basicAI: BasicAI =  as BasicAIanyType;
 ;
     
-basicAI!.processAI(Canvas.UP);
+basicAI!.processKeyAI(Canvas.UP);
     
 
                 //: 
@@ -86,8 +80,6 @@ basicAI!.processAI(Canvas.UP);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);

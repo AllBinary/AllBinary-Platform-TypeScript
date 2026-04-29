@@ -75,14 +75,10 @@ var value = value
         try {
             
     var array: number[] = value;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -91,8 +87,6 @@ var value = value
 
                         for (
     var index: number = 0;
-        
-        
 index < array.length; index++)
         {
 stringBuffer!.append(array[index]!.
@@ -121,8 +115,6 @@ stringBuffer!.append(array[index]!.
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
@@ -144,26 +136,18 @@ var value = value
         try {
             
     var tokenizer: Tokenizer = new Tokenizer(CommonSeps.getInstance()!.SPACE);
-        
-        
 ;
     
 
     var vector: BasicArrayList = tokenizer.getTokens(value, new BasicArrayListD())!;
-        
-        
 ;
     
 
     var byteVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = vector.size()!;
-        
-        
 ;
     
 
@@ -176,11 +160,9 @@ var value = value
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-byteOfData= vector.objectArray[index]! as String;
+byteOfData=  as Stringvector.objectArray[index]!;
     
 byteVector!.add(byteOfData.toByte());
     
@@ -188,14 +170,10 @@ byteVector!.add(byteOfData.toByte());
 
 
     var decode: number[] = new Array(byteVector!.size());
-        
-        
 ;
     
 
     var decodeIndex: number = 0;
-        
-        
 ;
     
 
@@ -208,11 +186,9 @@ byteVector!.add(byteOfData.toByte());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-aByte= byteVector!.objectArray[index]! as Byte;
+aByte=  as BytebyteVector!.objectArray[index]!;
     
 decode[decodeIndex]= aByte!.toByte();
     
@@ -232,8 +208,6 @@ decodeIndex++;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putSE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);

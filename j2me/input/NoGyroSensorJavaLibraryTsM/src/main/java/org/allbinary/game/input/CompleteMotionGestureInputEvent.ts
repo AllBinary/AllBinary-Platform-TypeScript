@@ -61,20 +61,12 @@ export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implem
         
 
     public static readonly NULL_COMPLETE_MOTION_GESTURE_INPUT_EVENT: CompleteMotionGestureInputEvent = new CompleteMotionGestureInputEvent(StringUtil.getInstance()!.EMPTY_STRING, TouchMotionGestureFactory.getInstance()!.NO_MOTION);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private motionGestureInput: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
-        
-        
 public constructor (name: string, motionGestureInput: MotionGestureInput){
             super(motionGestureInput);
                     var name = name
@@ -95,8 +87,6 @@ this.setName(name);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "InputToGameKeyEventAction", e);

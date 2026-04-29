@@ -61,12 +61,8 @@ export class DestroyedEvent extends AllBinaryEventObject {
         
 
     private allBinaryGameCanvas: AllBinaryGameCanvas = NullGameCanvas.getInstance()!;
-        
-        
 
     private allBinaryLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 public constructor (combatGameCanvas: AllBinaryGameCanvas){
             super(DestroyedEventHandler.getInstance());
                     var combatGameCanvas = combatGameCanvas
@@ -116,8 +112,6 @@ this.allBinaryLayerInterface= allBinaryLayerInterface;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("DestroyedEvent: \n");

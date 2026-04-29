@@ -83,12 +83,8 @@ export class UserEmailConfigurationView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private userEmailConfigurationInterface: UserEmailConfigurationInterface
 public constructor (node: Node){
@@ -104,24 +100,18 @@ public constructor (node: Node){
 
                                     }
                                 
-this.userEmailConfigurationInterface= new UserEmailConfiguration() as UserEmailConfigurationInterface;
+this.userEmailConfigurationInterface=  as UserEmailConfigurationInterfacenew UserEmailConfiguration();
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var userEmailEventsConfigurationNode: Node = DomSearchHelper.getNodeNoThrow(UserEmailEventsConfigurationData.NAME, childNodeList)!;
-        
-        
 ;
     
 
     var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationNode);
-        
-        
 ;
     
 this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationView!.getUserEmailEventsConfigurationInterface());
@@ -153,38 +143,26 @@ this.userEmailConfigurationInterface= userEmailConfigurationInterface;
 var document = document
 
     var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = emailConfigurationMapping!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = emailConfigurationMapping!.toHashMap()!;
 ;
     
 
     var node: Node = ModDomHelper.createNameValueNodes(document, UserEmailConfigurationData.NAME, hashMap)!;
-        
-        
 ;
     
 
     var userEmailConfigurationInterface: UserEmailConfigurationInterface = this.getEmailConfigurationInterface()!;
-        
-        
 ;
     
 
     var userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface = userEmailConfigurationInterface!.getUserEmailEventsConfigurationInterface()!;
-        
-        
 ;
     
 
     var userEmailEventsConfigurationView: UserEmailEventsConfigurationView = new UserEmailEventsConfigurationView(userEmailEventsConfigurationInterface);
-        
-        
 ;
     
 node.appendChild(userEmailEventsConfigurationView!.toXmlNode(document));

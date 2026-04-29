@@ -43,8 +43,6 @@ export class StoreFrontUsersStatisticsData
         
 
     private static readonly instance: StoreFrontUsersStatisticsData = new StoreFrontUsersStatisticsData();
-        
-        
 
     public static getInstance(): StoreFrontUsersStatisticsData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "STOREFRONT_USERS_STATISTICS_NAME";
-        
-        
 
     public readonly NUMBEROFUSERS: string = "STOREFRONT_USERS_STATISTICS_NUMBER_OF_USERS";
-        
-        
 
 }
                 

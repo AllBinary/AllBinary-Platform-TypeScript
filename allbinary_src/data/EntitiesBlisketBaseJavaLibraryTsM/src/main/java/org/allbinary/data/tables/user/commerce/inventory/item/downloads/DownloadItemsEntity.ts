@@ -73,12 +73,8 @@ export class DownloadItemsEntity extends AbSqlBean implements DownloadItemsEntit
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "downloaditems";
-        
-        
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -156,9 +152,9 @@ var value = value
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues);
+super.updateWhere(DownloadItemData.ID,  as StringupdatedValues!.get(DownloadItemData.ID), updatedValues);
     
 }
 
@@ -167,28 +163,20 @@ super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) a
 var id = id
 
     var returnVector: Vector = new Vector();
-        
-        
 ;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
     
 
     var vector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -197,14 +185,10 @@ keysAndValues!.put(BasicItemData.ID, id);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
-        
-        
+    var hashMap: HashMap =  as HashMapvector.get(index);;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));
@@ -234,14 +218,10 @@ var id = id
 var downloadItemId = downloadItemId
 
     var returnVector: Vector = new Vector();
-        
-        
 ;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
@@ -250,14 +230,10 @@ keysAndValues!.put(DownloadItemData.ID, downloadItemId);
     
 
     var vector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -266,14 +242,10 @@ keysAndValues!.put(DownloadItemData.ID, downloadItemId);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
-        
-        
+    var hashMap: HashMap =  as HashMapvector.get(index);;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));
@@ -301,8 +273,6 @@ returnVector!.add(new DownloadableItem(hashMap));
     public createTableStatement(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(DownloadItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(BasicItemData.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(EntryData.getInstance()!.ENABLE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.SPECIAL_NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.VERSION)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.CHANGES)!.append(this.sqlTypeStrings!.BLOB_NOT_NULL)!.append(DownloadItemData.SYSTEM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.PLATFORM)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(DownloadItemData.LICENSE_FILE)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);

@@ -40,14 +40,14 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicArrayListD } from "./BasicArrayListD.js";
+
 export class ImageTypeUtil
             extends Object
          {
         
 
     private SINGLETON: ImageTypeUtil = new ImageTypeUtil();
-        
-        
 
     public static getInstance(): ImageTypeUtil{
 
@@ -60,20 +60,12 @@ export class ImageTypeUtil
 
 
     public readonly PNG: string = "png";
-        
-        
 
     public readonly JPG: string = "jpg";
-        
-        
 
     public readonly GIF: string = "gif";
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -96,14 +88,10 @@ mediaFileType= mediaFileType!.lowercase();
 
                         for (
     var index: number = this.list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var name: string = this.list.objectArray[index]! as String;
-        
-        
+    var name: string =  as Stringthis.list.objectArray[index]!;
 ;
     
 

@@ -56,7 +56,7 @@ export class CustomGravityConstantVelocityMovement extends BasicConstantVelocity
 
     private customGravity: number
 public constructor (speedBasicDecimal: BasicDecimal, customGravity: number){
-            super(speedBasicDecimal, new VelocityProperties(speedBasicDecimal!.getUnscaled(), speedBasicDecimal!.getUnscaled()));
+            super(speedBasicDecimal, new VelocityProperties(Math.roundspeedBasicDecimal!.getUnscaled(), Math.roundspeedBasicDecimal!.getUnscaled()));
                     var speedBasicDecimal = speedBasicDecimal
 var customGravity = customGravity
 
@@ -69,8 +69,6 @@ this.customGravity= customGravity;
 
 
     private readonly gravityUtil: GravityUtil = GravityUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -81,9 +79,7 @@ super.process(layer);
 this.gravityUtil!.process(this.getVelocityProperties(), this.customGravity);
     
 
-    var velocityProperties: VelocityProperties = this.getVelocityProperties(); as VelocityProperties;
-        
-        
+    var velocityProperties: VelocityProperties =  as VelocityPropertiesthis.getVelocityProperties();;
 ;
     
 velocityProperties!.limitMaxYForwardVelocity();

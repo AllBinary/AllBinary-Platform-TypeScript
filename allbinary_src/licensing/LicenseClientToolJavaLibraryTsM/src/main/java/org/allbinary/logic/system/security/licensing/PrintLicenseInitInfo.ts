@@ -58,8 +58,6 @@ export class PrintLicenseInitInfo
         
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -67,8 +65,6 @@ export class PrintLicenseInitInfo
 var args = args
 
     var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);
-        
-        
 ;
     
 initInfo!.printInitInfo();
@@ -89,8 +85,6 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
     public getLicenseInitInfo(): LicenseInitInfo{
 
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -126,22 +120,16 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PATH +PATH_GLOBALS.getInstance()!
         try {
             
     var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
-        
-        
 ;
     
 console.log("License ID: " +licenseInitInfo!.getLicenseId());
     
 
     var list: BasicArrayList = licenseInitInfo!.getServerList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -150,8 +138,6 @@ console.log("License ID: " +licenseInitInfo!.getLicenseId());
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 console.log("Lic Serv: " +list.get(index));

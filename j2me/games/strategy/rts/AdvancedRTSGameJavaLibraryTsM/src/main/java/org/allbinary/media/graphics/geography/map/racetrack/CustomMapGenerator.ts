@@ -80,15 +80,11 @@ this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMap
     
 
     var mapArray: number[][] = raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
-        
-        
 ;
     
 
     var size2: number = mapArray[0]!.length
                 ;
-        
-        
 ;
     
 this.customMapArray= new Array(mapArray!.length) [size2];
@@ -100,7 +96,8 @@ this.customMapArray= new Array(mapArray!.length) [size2];
                                     
 
 
-                            throw new Error("Array Incorrect")
+                            throw new Error("Array Incorrect");
+                    
 
                                     }
                                 
@@ -112,14 +109,10 @@ this.customMapArray= new Array(mapArray!.length) [size2];
     public copyMapIntoCustomMap(){
 
     var mapArray: number[][] = this.raceTrackGeographicMap!.getRaceTrackData()!.getMapArray()!;
-        
-        
 ;
     
 
     var startIndex2: number = mapArray[0]!.length -1;
-        
-        
 ;
     
 
@@ -128,8 +121,6 @@ this.customMapArray= new Array(mapArray!.length) [size2];
 
                         for (
     var index: number = mapArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -138,8 +129,6 @@ index >= 0; index--)
 
                         for (
     var index2: number = startIndex2;
-        
-        
 index2 >= 0; index2--)
         {
 this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[index]![index2]!);
@@ -152,8 +141,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
 
 
     private readonly dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -163,20 +150,14 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
     //var currentType = currentType
 
     var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;
-        
-        
 ;
     
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.raceTrackGeographicMap!.getGeographicMapCellPositionFactory()!;
-        
-        
 ;
     
 
-    var cellPosition: CellPosition = geographicMapCellPositionFactory!.getInstance(column, row)!;
-        
-        
+    var cellPosition: CellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;
 ;
     
 
@@ -185,8 +166,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
                                     {
                                     
     var layer: AllBinaryLayer = dropCellPositionHistory!.getLayerInterface(cellPosition)!;
-        
-        
 ;
     
 
@@ -203,9 +182,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
                                     }
                                 
 
-    var rtsLayer: AdvancedRTSGameLayer = layer as AdvancedRTSGameLayer;
-        
-        
+    var rtsLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerlayer;
 ;
     
 

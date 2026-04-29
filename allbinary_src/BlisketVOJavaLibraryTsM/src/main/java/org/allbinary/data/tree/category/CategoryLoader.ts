@@ -87,8 +87,6 @@ export class CategoryLoader extends CategoryModifierTree implements CategoryLoad
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
                     var categoryFactoryInterface = categoryFactoryInterface
@@ -125,8 +123,6 @@ var categoryInterface = categoryInterface
                                     {
                                     
     var rootAbFile: AbFile = new AbFile(categoryInterface!.getRootFilePath());
-        
-        
 ;
     
 
@@ -142,7 +138,8 @@ var categoryInterface = categoryInterface
                                     
 
 
-                            throw new Error("Could Not Create Directory")
+                            throw new Error("Could Not Create Directory");
+                    
 
                                     }
                                 
@@ -156,20 +153,14 @@ this.save(categoryInterface);
                                 
 
     var fileAbPath: AbPath = categoryInterface!.getFilePath()!;
-        
-        
 ;
     
 
     var cryptFileReader: CryptFileReader = new CryptFileReader(CategoryData.getInstance()!.UNCRYPTED_EXTENSION, CategoryData.getInstance()!.ENCRYPTED_EXTENSION);
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(cryptFileReader!.get(fileAbPath))!;
-        
-        
 ;
     
 
@@ -185,7 +176,8 @@ this.save(categoryInterface);
                             
 
 
-                            throw new Error("Null Category")
+                            throw new Error("Null Category");
+                    
 
                         }
                             
@@ -232,14 +224,10 @@ var categoryInterface = categoryInterface
         try {
             
     var document: Document = this.getDoc(categoryInterface)!;
-        
-        
 ;
     
 
     var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-        
-        
 ;
     
 
@@ -279,14 +267,10 @@ var document = document
         try {
             
     var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-        
-        
 ;
     
 
     var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;
-        
-        
 ;
     
 
@@ -326,8 +310,6 @@ var categoryInterface = categoryInterface
         try {
             
     var document: Document = this.getDoc(categoryInterface)!;
-        
-        
 ;
     
 
@@ -367,14 +349,10 @@ var document = document
         try {
             
     var categoryNode: Node = DomSearchHelper.getNode(CategoryData.getInstance()!.NAME, document.getChildNodes())!;
-        
-        
 ;
     
 
     var loadedCategoryInterface: CategoryInterface = this.categoryFactoryInterface!.getRootInstanceFromNode(categoryNode)!;
-        
-        
 ;
     
 
@@ -425,14 +403,10 @@ var categoryNodeList = categoryNodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < categoryNodeList!.getLength(); index++)
         {
 
     var categoryNode: Node = categoryNodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -442,9 +416,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode); as CategoryInterface;
-        
-        
+    var categoryInterface: CategoryInterface =  as CategoryInterfacethis.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode);;
 ;
     
 parentCategoryInterface!.addChild(categoryInterface);
@@ -505,14 +477,10 @@ var categoryNodeList = categoryNodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < categoryNodeList!.getLength(); index++)
         {
 
     var categoryNode: Node = categoryNodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -522,9 +490,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryPropertiesInterface: CategoryPropertiesInterface = new CategoryProperties(categoryNode) as CategoryPropertiesInterface;
-        
-        
+    var categoryPropertiesInterface: CategoryPropertiesInterface =  as CategoryPropertiesInterfacenew CategoryProperties(categoryNode);
 ;
     
 loadedCategoryInterface!.addChildProperty(categoryPropertiesInterface);

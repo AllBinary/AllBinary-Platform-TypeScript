@@ -58,8 +58,6 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
         
 
     private static readonly SINGLETON: BasicTouchButtonsBuilder = new BasicTouchButtonsBuilder();
-        
-        
 
     public static getInstance(): BaseTouchInput{
 
@@ -72,8 +70,6 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getList(): BasicArrayList{
 
@@ -82,8 +78,6 @@ export class BasicTouchButtonsBuilder extends BaseTouchInput {
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 

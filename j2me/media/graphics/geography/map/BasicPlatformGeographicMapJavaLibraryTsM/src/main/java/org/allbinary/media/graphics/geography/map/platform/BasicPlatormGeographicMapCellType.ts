@@ -53,20 +53,16 @@ export class BasicPlatormGeographicMapCellType
          {
         
 
-    public static create(type: number): BasicPlatormGeographicMapCellType{
+    public static createType(type: number): BasicPlatormGeographicMapCellType{
     //var type = type
 
     var types: BasicArrayList = new BasicArrayListS(1);
-        
-        
 ;
     
-types.add(type.toBinaryString());
+types.add(type.toString());
     
 
     var basicPlatormGeographicMapCellType: BasicPlatormGeographicMapCellType = new BasicPlatormGeographicMapCellType(types);
-        
-        
 ;
     
 new GeographicMapCellType(type, 0);
@@ -87,18 +83,14 @@ public constructor (types: BasicArrayList){
             //var types = types
 
     var size: number = types.size()!;
-        
-        
 ;
     
 
     var typeArray: number[] = new Array(size);
-        
-        
 ;
     
 
-    var typeAsInteger: Integer
+    var typeAsInteger: number
 ;
     
 
@@ -111,11 +103,9 @@ public constructor (types: BasicArrayList){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-typeAsInteger= (types.get(index); as Integer);
+typeAsInteger= ( as Integertypes.get(index););
     
 type= typeAsInteger!.toInt();
     
@@ -136,18 +126,16 @@ this.types= typeArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isType(type.getType());;
+                        return this.hasType(type.getType());;
     
 }
 
 
-    public isType(type: number): boolean{
+    public hasType(type: number): boolean{
     //var type = type
 
     var size: number = types.length
                 ;
-        
-        
 ;
     
 
@@ -156,8 +144,6 @@ this.types= typeArray;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 

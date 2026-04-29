@@ -55,8 +55,6 @@ export class PartnerIdentifierFileUtil
         
 
     private static readonly instance: PartnerIdentifierFileUtil = new PartnerIdentifierFileUtil();
-        
-        
 
     public static getInstance(): PartnerIdentifierFileUtil{
 
@@ -69,20 +67,14 @@ export class PartnerIdentifierFileUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly FILE_NAME: string = "partner.txt";
-        
-        
 
     public get(): string{
 
         try {
             
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -90,14 +82,10 @@ export class PartnerIdentifierFileUtil
                                                         
                                                         new Array(30)
                                                     ;
-        
-        
 ;
     
 
     var partnerString: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -112,8 +100,6 @@ export class PartnerIdentifierFileUtil
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);

@@ -45,8 +45,6 @@ export class CollidableAlwaysPickupNeverCollideBehaviorFactory
         
 
     private static readonly instance: CollidableAlwaysPickupNeverCollideBehavior = new CollidableAlwaysPickupNeverCollideBehavior();
-        
-        
 
     public static getInstance(): CollidableAlwaysPickupNeverCollideBehavior{
 

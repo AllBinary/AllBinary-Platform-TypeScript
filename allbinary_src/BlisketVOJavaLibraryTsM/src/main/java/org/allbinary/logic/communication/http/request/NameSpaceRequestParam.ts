@@ -71,12 +71,10 @@ export class NameSpaceRequestParam
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private nameSpaceVector: Vector
 
-    private nameSpacePropertiesHashMap: HashMap<any, any>
+    private nameSpacePropertiesHashMap: HashMap
 
     private value: string
 public constructor (nameSpace: string, value: string){
@@ -86,14 +84,12 @@ public constructor (nameSpace: string, value: string){
 var value = value
 this.nameSpaceVector= new Vector();
     
-this.nameSpacePropertiesHashMap= new HashMap<any, any>();
+this.nameSpacePropertiesHashMap= new HashMap();
     
 this.value= value;
     
 
     var beginIndex: number = nameSpace!.indexOf(NameSpaceRequestParamData.NAME)!;
-        
-        
 ;
     
 
@@ -103,26 +99,21 @@ this.value= value;
                                     
 
 
-                            throw new Error("Not a NameSpaceRequest")
+                            throw new Error("Not a NameSpaceRequest");
+                    
 
                                     }
                                 
 
     var packages: string = nameSpace!.substring(beginIndex +NameSpaceRequestParamData.NAME.length() +NameSpaceRequestParamData.SEP.length())!;
-        
-        
 ;
     
 
     var sepTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.SEP);
-        
-        
 ;
     
 
     var nameSpaceWithPropertiesVector: BasicArrayList = sepTokenizer!.getTokens(packages, new BasicArrayListD())!;
-        
-        
 ;
     
 
@@ -136,49 +127,35 @@ this.value= value;
                                 
 
     var nameSpaceAndPropertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIES);
-        
-        
 ;
     
 
     var packageIndex: number = 0;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var size: number = nameSpaceWithPropertiesVector!.size()!;
-        
-        
 ;
     
 
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++); as String;
-        
-        
+    var nameSpaceWithProperties: string =  as StringnameSpaceWithPropertiesVector!.get(index++);;
 ;
     
 list.clear();
     
 
     var nameSpaceAndPropertiesVector: BasicArrayList = nameSpaceAndPropertiesTokenizer!.getTokens(nameSpaceWithProperties, list)!;
-        
-        
 ;
     
 
@@ -195,9 +172,7 @@ list.clear();
                         
                                     {
                                     
-    var packageName: string = nameSpaceAndPropertiesVector!.get(0); as String;
-        
-        
+    var packageName: string =  as StringnameSpaceAndPropertiesVector!.get(0);;
 ;
     
 
@@ -209,7 +184,8 @@ list.clear();
                                     
 
 
-                            throw new Error("Package Name Is Null")
+                            throw new Error("Package Name Is Null");
+                    
 
                                     }
                                 
@@ -220,15 +196,11 @@ this.nameSpaceVector!.add(packageName);
                         
                                     {
                                     
-    var properties: string = nameSpaceAndPropertiesVector!.get(1); as String;
-        
-        
+    var properties: string =  as StringnameSpaceAndPropertiesVector!.get(1);;
 ;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.generatePackagePropertiesHashMap(properties)!;
-        
-        
+    var packagePropertiesHashMap: HashMap = this.generatePackagePropertiesHashMap(properties)!;
 ;
     
 this.nameSpacePropertiesHashMap!.put(packageIndex.toString(), packagePropertiesHashMap);
@@ -274,12 +246,10 @@ packageIndex++;
 }
 
 
-    public getPackageProperties(packageIndex: number): HashMap<any, any>{
+    public getPackageProperties(packageIndex: number): HashMap{
 var packageIndex = packageIndex
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()); as HashMap<any, any>;
-        
-        
+    var packagePropertiesHashMap: HashMap =  as HashMapthis.nameSpacePropertiesHashMap!.get(packageIndex.toString());;
 ;
     
 
@@ -288,7 +258,7 @@ var packageIndex = packageIndex
                                 )
                         
                                     {
-                                    packagePropertiesHashMap= new HashMap<any, any>();
+                                    packagePropertiesHashMap= new HashMap();
     
 
                                     }
@@ -332,80 +302,58 @@ var packageIndex = packageIndex
 
                 //@Throws(Error::class)
             
-    generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
+    generatePackagePropertiesHashMap(properties: string): HashMap{
 var properties = properties
 
     var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);
-        
-        
 ;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var packagePropertiesHashMap: HashMap = new HashMap();
 ;
     
 
     var propertyVector: BasicArrayList = propertiesTokenizer!.getTokens(properties, new BasicArrayListD())!;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var propertyTokenizer: Tokenizer = new Tokenizer(HtmlNameMathData.getInstance()!.EQUALS);
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var size: number = propertyVector!.size()!;
-        
-        
 ;
     
 
         while(index < size)
         {
 
-    var property: string = propertyVector!.get(index); as String;
-        
-        
+    var property: string =  as StringpropertyVector!.get(index);;
 ;
     
 list.clear();
     
 
     var propertyNameValueVector: BasicArrayList = propertyTokenizer!.getTokens(property, list)!;
-        
-        
 ;
     
 
     var index2: number = 0;
-        
-        
 ;
     
 
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string = propertyNameValueVector!.get(index2++); as String;
-        
-        
+    var propertyName: string =  as StringpropertyNameValueVector!.get(index2++);;
 ;
     
 
@@ -413,9 +361,7 @@ list.clear();
                         
                                     {
                                     
-    var propertyValue: string = propertyNameValueVector!.get(index2++); as String;
-        
-        
+    var propertyValue: string =  as StringpropertyNameValueVector!.get(index2++);;
 ;
     
 

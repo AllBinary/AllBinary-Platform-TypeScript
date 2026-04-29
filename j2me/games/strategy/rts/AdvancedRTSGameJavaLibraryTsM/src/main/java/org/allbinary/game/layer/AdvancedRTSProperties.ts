@@ -66,7 +66,7 @@ export class AdvancedRTSProperties
          {
         
 
-    public static createSimulated(): AdvancedRTSProperties{
+    public static createPropertiesSimulated(): AdvancedRTSProperties{
 
 
 
@@ -76,7 +76,7 @@ export class AdvancedRTSProperties
 }
 
 
-    public static create(): AdvancedRTSProperties{
+    public static createProperties(): AdvancedRTSProperties{
 
 
 

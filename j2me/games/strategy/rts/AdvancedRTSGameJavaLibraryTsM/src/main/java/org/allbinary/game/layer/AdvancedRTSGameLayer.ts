@@ -191,21 +191,17 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
     public static createSimulated(): AdvancedRTSGameLayer{
 
     var nullAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullAnimationFactory.getFactoryInstance()!;
-        
-        
 ;
     
 
     var nullIndexedAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface = NullIndexedAnimationFactory.getFactoryInstance()!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new AdvancedRTSGameLayer(RemoteInfo.REMOTE_INFO, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, AdvancedRTSProperties.createSimulated(), GroupFactory.getInstance()!.NULL_GROUP_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING, Health.NULL_HEALTH, NullRTSFormInputFactory.getInstance(), nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, NullIndexedAnimationFactory.getFactoryInstance(), RectangleFactory.SINGLETON, 0, 0, new TileLayerPositionIntoViewPosition());
+                        return new AdvancedRTSGameLayer(RemoteInfo.REMOTE_INFO, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, AdvancedRTSProperties.createPropertiesSimulated(), GroupFactory.getInstance()!.NULL_GROUP_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING, Health.NULL_HEALTH, NullRTSFormInputFactory.getInstance(), nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullAnimationInterfaceFactoryInterface, nullIndexedAnimationInterfaceFactoryInterface, NullIndexedAnimationFactory.getFactoryInstance(), RectangleFactory.SINGLETON, 0, 0, new TileLayerPositionIntoViewPosition());
     
 }
 
@@ -217,12 +213,8 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
     readonly duration: number
 
     private parentLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 
     waypointBehaviorBase: TickableInterface = NullTickable.getInstance()!;
-        
-        
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
                         //var remoteInfo = remoteInfo
@@ -276,9 +268,7 @@ this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.all
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
-        
-        
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
 ;
     
 
@@ -358,7 +348,7 @@ this.parentLayer= parentLayer;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.waypointBehaviorBase as WaypointBehaviorBase;
+                        return  as WaypointBehaviorBasethis.waypointBehaviorBase;
     
 }
 
@@ -406,9 +396,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
                         
                                     {
                                     
-    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer = this.parentLayer as AdvancedRTSGameLayer;
-        
-        
+    var parentAdvancedRTSGameLayer: AdvancedRTSGameLayer =  as AdvancedRTSGameLayerthis.parentLayer;
 ;
     
 
@@ -466,32 +454,22 @@ this.waypointBehaviorBase= unitWaypointHelper;
     //var cellPosition = cellPosition
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;
-        
-        
 ;
     
 
     var buildingDirection: Direction = GeographicMapDirectionUtil.getInstance()!.getDirectionFromCellPositionToAdjacentCellPosition(geographicMapCellPosition, cellPosition)!;
-        
-        
 ;
     
 
     var angleInfo: AngleInfo = this.getRotationAnimationInterface()!.getAngleInfoP()!;
-        
-        
 ;
     
 
     var angle: number = FrameUtil.getInstance()!.adjustAngleToFrameAngle(angleInfo!.getAngle() +90)!;
-        
-        
 ;
     
 
     var gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -506,7 +484,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
                                     {
                                     this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.LEFT));
     
 
                         if(angle <= 190)
@@ -527,7 +505,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                         else {
                             this.rtsLayer2LogHelper!.buildingChaseRight(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.RIGHT));
     
 
                         if(angle >= 170)
@@ -560,7 +538,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                                     {
                                     this.rtsLayer2LogHelper!.buildingChaseLeft(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.RIGHT));
     
 
                         if(angle > 315)
@@ -581,7 +559,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                         else {
                             this.rtsLayer2LogHelper!.buildingChaseRight(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.LEFT));
     
 
                         if(angle < 45)
@@ -614,7 +592,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                                     {
                                     this.rtsLayer2LogHelper!.buildingChaseDown(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.LEFT));
     
 
                         if(angle < 135)
@@ -635,7 +613,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
                         else {
                             this.rtsLayer2LogHelper!.buildingChaseUp(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.RIGHT));
     
 
                         if(angle > 45)
@@ -668,7 +646,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                                     {
                                     this.rtsLayer2LogHelper!.buildingChaseDown(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RIGHT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.RIGHT));
     
 
                         if(angle > 225)
@@ -689,7 +667,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.RI
                         else {
                             this.rtsLayer2LogHelper!.buildingChaseUp(this, angle);
     
-this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LEFT));
+this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Canvas.LEFT));
     
 
                         if(angle < 315 && angle > 180)
@@ -733,15 +711,11 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstance(this, Canvas.LE
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacethis.allBinaryGameLayerManagerP;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
@@ -798,8 +772,6 @@ var destroyedEvent = destroyedEvent
         try {
             
     var layerInterface: AllBinaryLayer = destroyedEvent!.getLayerInterface()!;
-        
-        
 ;
     
 
@@ -809,9 +781,7 @@ var destroyedEvent = destroyedEvent
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint(); as WaypointBase;
-        
-        
+    var waypoint: WaypointBase =  as WaypointBasethis.getWaypointBehavior()!.getWaypoint();;
 ;
     
 waypoint.reset();

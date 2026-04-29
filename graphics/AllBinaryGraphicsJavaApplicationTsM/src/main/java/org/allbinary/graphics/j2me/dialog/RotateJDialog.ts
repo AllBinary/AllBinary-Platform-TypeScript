@@ -62,22 +62,28 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JTextField } from "./JTextField.js";
+
+import { JButton } from "./JButton.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JPanel } from "./JPanel.js";
+
 export class RotateJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new object: ARunnable()
+java.awt.EventQueue.invokeLater(new ARunnable()
                                 {
                                 
     public run(){
 
     var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);
-        
-        
 ;
     
-dialog.addWindowListener(new object: java.awt.event.WindowAdapter()
+dialog.addWindowListener(new java.awt.event.WindowAdapter()
                                 {
                                 
     public windowClosing(e: java.awt.event.WindowEvent){
@@ -100,12 +106,8 @@ dialog.setVisible(true);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
                     var parent = parent
@@ -144,7 +146,7 @@ this.jLabel2!.setText("Total Angular Rotation:");
     
 this.jButton1!.setText("OK");
     
-jButton1!.addActionListener(new object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -158,8 +160,6 @@ jButton1ActionPerformed(evt);
     
 
     var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-        
-        
 ;
     
 this.jPanel1!.setLayout(jPanel1Layout);
@@ -170,8 +170,6 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-        
-        
 ;
     
 getContentPane()!.setLayout(layout);
@@ -193,7 +191,7 @@ var evt = evt
     
 this.hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotationJTextField!.getText())));
     
-getParent = this.getParent();getParent as HashMapJDialogListenerInterface
+getParent =  as HashMapJDialogListenerInterfacethis.getParent();getParent
 getParent.
                     onHashMap(this.hashMap);
     
@@ -205,8 +203,6 @@ this.setVisible(false);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, "jButton1ActionPerformed");

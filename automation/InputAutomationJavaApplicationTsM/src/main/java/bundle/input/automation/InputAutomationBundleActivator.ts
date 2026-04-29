@@ -95,12 +95,8 @@ export class InputAutomationBundleActivator
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -127,7 +123,8 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

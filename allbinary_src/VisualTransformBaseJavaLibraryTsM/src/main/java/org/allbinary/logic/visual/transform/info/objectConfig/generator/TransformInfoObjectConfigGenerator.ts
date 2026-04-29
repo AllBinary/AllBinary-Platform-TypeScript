@@ -42,14 +42,14 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
         
 import { TransformInfoObjectConfigGeneratorInterface } from "./TransformInfoObjectConfigGeneratorInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class TransformInfoObjectConfigGenerator
             extends Object
          implements TransformInfoObjectConfigGeneratorInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -58,7 +58,8 @@ var input = input
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

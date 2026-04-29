@@ -48,20 +48,12 @@ export class OpenGLESDeviceImageTranslate extends OpenGLESImageTranslate {
         
 
     public translateX: number = 0.0f;
-        
-        
 
     public translateY: number = 0.0f;
-        
-        
 
     public translateX2: number = 0.0f;
-        
-        
 
     public translateY2: number = 0.0f;
-        
-        
 
     public translate(gl: GL10, openGLESImage: OpenGLESImage, x: number, y: number){
     //var gl = gl

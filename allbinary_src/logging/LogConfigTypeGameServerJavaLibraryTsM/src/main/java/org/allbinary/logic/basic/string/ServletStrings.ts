@@ -43,8 +43,6 @@ export class ServletStrings
         
 
     private static readonly instance: ServletStrings = new ServletStrings();
-        
-        
 
     public static getInstance(): ServletStrings{
 
@@ -57,16 +55,10 @@ export class ServletStrings
 
 
     public readonly DOPOST: string = "doPost";
-        
-        
 
     public readonly DOGET: string = "doGet";
-        
-        
 
     public readonly REQUEST_EXCEPTION: string = "Request Failed";
-        
-        
 
 }
                 

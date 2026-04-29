@@ -97,12 +97,8 @@ export class SavedCaptureImagesWorker extends BasicEventHandler implements Captu
     private index: number
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private running: boolean= false
 
@@ -157,25 +153,19 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
 
         while(this.isRunning())
         {
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
-    var frame: Long = index as Long;
-        
-        
+    var frame: number = index;
 ;
     
 
     var filePathStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer!.append(this.savedCaptureGenericProfileDataWorkerType!.getPath());
@@ -186,16 +176,12 @@ filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
     
 
     var filePath: string = filePathStringBuffer!.toString()!;
-        
-        
 ;
     
 this.logUtil!.putF("Loading Image File Path: " +filePath, this, this.commonStrings!.RUN);
     
 
     var file: File = new File(filePath);
-        
-        
 ;
     
 
@@ -204,8 +190,6 @@ this.logUtil!.putF("Loading Image File Path: " +filePath, this, this.commonStrin
                                     {
                                     
     var bufferedImage: BufferedImage = ImageIO.read(file)!;
-        
-        
 ;
     
 index++;
@@ -214,8 +198,6 @@ CapturedBufferedImagesCacheSingleton.getInstance()!.add(new BufferedImageFrameCa
     
 
     var capturedImageEvent: CapturedImageWorkerResultsEvent = new CapturedImageWorkerResultsEvent(this, frame, bufferedImage);
-        
-        
 ;
     
 this.fireEvent(capturedImageEvent);
@@ -229,7 +211,7 @@ this.fireEvent(capturedImageEvent);
 
                         }
                             
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 this.setRunning(false);
     

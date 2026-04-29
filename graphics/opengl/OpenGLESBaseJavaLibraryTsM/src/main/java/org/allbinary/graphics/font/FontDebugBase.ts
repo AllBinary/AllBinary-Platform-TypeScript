@@ -1,9 +1,4 @@
 
-        /*
-                *  
-                *  Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license  Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template  
-        */
-        
         /* Generated Code Do Not Modify */
         
 
@@ -40,8 +35,6 @@ export class FontDebugBase
         
 
     private static readonly instance: FontDebugBase = new FontDebugBase();
-        
-        
 
     public static getInstance(): FontDebugBase{
 
@@ -54,8 +47,6 @@ export class FontDebugBase
 
 
     public readonly SET_FONT: string = "setFont";
-        
-        
 
     public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any = {}, stringBuffer: StringMaker){
     //var currentFont = currentFont

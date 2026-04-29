@@ -66,12 +66,8 @@ export class BasicConstantVelocityMovement extends Movement implements VelocityI
     private velocityProperties: BasicVelocityProperties
 
     private speedBasicDecimal: BasicDecimal = BasicDecimal.ZERO_BIGDECIMAL;
-        
-        
 
     private readonly axisMathVectorUtil: AxisMathVectorUtil = AxisMathVectorUtil.getInstance()!;
-        
-        
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
 
             super();
@@ -92,11 +88,9 @@ this.speedBasicDecimal= speedBasicDecimal;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
-this.velocityProperties!.setVelocity(speedBasicDecimal, angleFactory!.getInstance(angle), angleFactory!.getInstance(otherAngle));
+this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFactory!.getAt(angle), angleFactory!.getAt(otherAngle));
     
 }
 
@@ -108,29 +102,21 @@ var angle = angle
 var otherAngle = otherAngle
 
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
-        
-        
 ;
     
 
-    var xVector: number = (this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
-        
-        
+    var xVector: number = Math.round(this.axisMathVectorUtil!.calculateX(radius, angle) /scaleFactorValue);
 ;
     
 
-    var yVector: number = (this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
-        
-        
+    var yVector: number = Math.round(this.axisMathVectorUtil!.calculateY(radius, angle) /scaleFactorValue);
 ;
     
 
-    var zVector: number = (this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue);
-        
-        
+    var zVector: number = Math.round(this.axisMathVectorUtil!.calculateZ(radius, otherAngle) /scaleFactorValue);
 ;
     
-layer.move(xVector, yVector, zVector);
+layer.moveDXYZ(xVector, yVector, zVector);
     
 }
 
@@ -139,7 +125,7 @@ layer.move(xVector, yVector, zVector);
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-layer.move(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityZBasicDecimalP()!.getScaled());
+layer.moveDXYZ(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityZBasicDecimalP()!.getScaled());
     
 }
 

@@ -55,8 +55,6 @@ export class AbKeys
         
 
     private static readonly instance: AbKeys = new AbKeys();
-        
-        
 
     public static getInstance(): AbKeys{
 
@@ -69,8 +67,6 @@ export class AbKeys
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -113,7 +109,8 @@ private constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -124,7 +121,8 @@ this.logUtil!.put("Licensing Failure", this, "getKey()", e);
 
 
 
-                            throw new LicensingException("Unknown License Failure")
+                            throw new LicensingException("Unknown License Failure");
+                    
 }
 
 }

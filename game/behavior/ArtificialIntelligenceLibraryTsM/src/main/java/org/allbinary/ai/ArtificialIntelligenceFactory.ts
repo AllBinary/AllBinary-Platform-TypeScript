@@ -39,6 +39,8 @@
         
 import { ArtificialIntelligenceFactoryInterface } from "./ArtificialIntelligenceFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { ArtificialIntelligence } from "./ArtificialIntelligence.js";
 
 export class ArtificialIntelligenceFactory
@@ -53,7 +55,8 @@ var anyType = anyType
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

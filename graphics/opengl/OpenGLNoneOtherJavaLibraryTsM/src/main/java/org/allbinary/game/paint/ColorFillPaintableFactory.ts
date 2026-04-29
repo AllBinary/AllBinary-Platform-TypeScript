@@ -54,8 +54,6 @@ export class ColorFillPaintableFactory
         
 
     private static readonly instance: ColorFillPaintableFactory = new ColorFillPaintableFactory();
-        
-        
 
     public static getInstance(): ColorFillPaintableFactory{
 
@@ -72,8 +70,6 @@ export class ColorFillPaintableFactory
     //var forThreedCanvas = forThreedCanvas
 
     var operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 

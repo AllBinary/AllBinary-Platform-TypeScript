@@ -35,8 +35,6 @@ export class OpenGLProcessor
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public process(gl: GL10){
 var gl = gl

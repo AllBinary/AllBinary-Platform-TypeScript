@@ -65,8 +65,6 @@ export class InventoryViewFactory
 var searchRequest = searchRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -87,8 +85,6 @@ var searchRequest = searchRequest
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "InventoryViewFactory", "getInstance(SearchRequest)", e);

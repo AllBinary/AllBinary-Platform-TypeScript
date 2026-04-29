@@ -71,8 +71,6 @@ export class UpdateValidationUserView extends HttpStoreComponentView implements 
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -162,8 +160,6 @@ this.user= NewUserFactory.getInstance(transformInfoInterface);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

@@ -55,26 +55,18 @@ var vector = vector
 var howMuch = howMuch
 
     var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 ;
     
 
     var x: number =  -myRandomFactory!.getNextInt(howMuch);;
-        
-        
 ;
     
 
     var y: number = myRandomFactory!.getNextInt(howMuch)!;
-        
-        
 ;
     
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
-        
-        
 ;
     
 graphicsPipe!.createMatrix();

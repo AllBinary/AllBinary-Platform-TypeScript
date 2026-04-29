@@ -46,8 +46,6 @@ export class NullLayer extends Layer {
         
 
     private static readonly instance: NullLayer = new NullLayer();
-        
-        
 
     public static getInstance(): NullLayer{
 

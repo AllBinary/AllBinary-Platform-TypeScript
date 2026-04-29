@@ -49,8 +49,6 @@ export class ShaderInitializer
         
 
     private static readonly instance: ShaderInitializer = new ShaderInitializer();
-        
-        
 
     public static getInstance(): ShaderInitializer{
 
@@ -63,8 +61,6 @@ export class ShaderInitializer
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public init(gl: GL10, shader: Shader[], attributeArray: string[]): number{
     //var gl = gl

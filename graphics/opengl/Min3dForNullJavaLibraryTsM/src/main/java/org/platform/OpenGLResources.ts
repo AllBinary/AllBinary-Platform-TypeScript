@@ -26,14 +26,14 @@ import { InputStream } from "../../java/io/InputStream.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class OpenGLResources
             extends Object
          {
         
 
     private static readonly instance: OpenGLResources = new OpenGLResources();
-        
-        
 
     public static getInstance(): OpenGLResources{
 
@@ -54,7 +54,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -65,7 +66,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -76,7 +78,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -87,7 +90,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -98,7 +102,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -106,7 +111,8 @@ export class OpenGLResources
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -87,8 +87,6 @@ this.playerGameInput= new PlayerGameInput(this.getGameKeyEventList(), new BasicA
     
 
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testing Input", this, canvasStrings!.PAINT);

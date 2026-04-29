@@ -48,6 +48,8 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
         
 import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
 
+import { OpenGLESGL11ExtImage } from "./OpenGLESGL11ExtImage.js";
+
 export class OpenGLESGL11ExtImageFactory extends OpenGLImageFactory {
         
 

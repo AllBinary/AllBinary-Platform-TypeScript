@@ -56,8 +56,6 @@ export class UserRoleB extends UserRole {
         
 
     public roleVector: Vector = new Vector();
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -72,14 +70,10 @@ UserRoleFactory.getInstance();
                                     {
                                     
     var roleVector: Vector = UserRoleB.getAll()!;
-        
-        
 ;
     
 
     var size: number = roleVector!.length!;
-        
-        
 ;
     
 
@@ -88,14 +82,10 @@ UserRoleFactory.getInstance();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userRole: UserRole = roleVector!.get(index); as UserRole;
-        
-        
+    var userRole: UserRole =  as UserRoleroleVector!.get(index);;
 ;
     
 
@@ -119,7 +109,8 @@ index < size; index++)
 
 
 
-                            throw new Error("Unable to get role - Unknown Role = " +role)
+                            throw new Error("Unable to get role - Unknown Role = " +role);
+                    
 }
 
 

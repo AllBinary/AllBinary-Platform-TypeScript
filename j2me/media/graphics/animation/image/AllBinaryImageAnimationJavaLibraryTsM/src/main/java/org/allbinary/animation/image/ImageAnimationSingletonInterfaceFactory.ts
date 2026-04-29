@@ -18,9 +18,6 @@
 
 
 
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
-
-    
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -55,7 +52,7 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 public constructor (animationInterface: Animation, width: number, height: number){
-            super(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstance(width, height, animationInterface), AnimationBehavior.getInstance()));
+            super(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstanceWH(width, height, animationInterface), AnimationBehavior.getInstance()));
                         //var animationInterface = animationInterface
     //var width = width
     //var height = height

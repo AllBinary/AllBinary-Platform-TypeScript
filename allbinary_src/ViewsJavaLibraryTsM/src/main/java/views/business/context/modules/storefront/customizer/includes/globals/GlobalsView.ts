@@ -62,8 +62,6 @@ export class GlobalsView extends HttpStoreComponentView implements DomNodeInterf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     globalsValidation: GlobalsValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -79,7 +77,7 @@ this.globalsValidation= new GlobalsValidation(this.getWeblisketSession()!.getSto
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this.globalsValidation as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis.globalsValidation);
     
 }
 
@@ -112,7 +110,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -147,7 +146,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

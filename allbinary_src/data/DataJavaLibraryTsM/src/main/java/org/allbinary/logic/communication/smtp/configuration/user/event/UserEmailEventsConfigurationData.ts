@@ -43,8 +43,6 @@ export class UserEmailEventsConfigurationData
         
 
     public static readonly NAME: string = "EMAIL_EVENTS_CONFIGURATION_NAME";
-        
-        
 private constructor (){
 
             super();

@@ -52,9 +52,13 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NamedAngle } from "./NamedAngle.js";
+
 import { FrameUtil } from "./FrameUtil.js";
 
 import { Angle } from "./Angle.js";
+
+import { RuntimeException } from "./RuntimeException.js";
 
 export class AngleFactory
             extends Object
@@ -62,8 +66,6 @@ export class AngleFactory
         
 
     private static readonly instance: AngleFactory = new AngleFactory();
-        
-        
 
     public static getInstance(): AngleFactory{
 
@@ -79,14 +81,10 @@ export class AngleFactory
 var args = args
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -95,8 +93,6 @@ var args = args
 
                         for (
     var index: number = 0;
-        
-        
 index < 360; index++)
         {
 stringMaker!.appendint(index)!.append(CommonSeps.getInstance()!.FORWARD_SLASH)!.appendshort(angleFactory!.getClosestDirection(index)!.getValue())!.append(CommonSeps.getInstance()!.NEW_LINE);
@@ -109,28 +105,16 @@ LogUtil.getInstance()!.putF(stringMaker!.toString(), "main", "main");
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly TOTAL_ANGLE: number = 360;
-        
-        
 
     public readonly QUARTER_TOTAL_ANGLE: number = 90;
-        
-        
 
-    private readonly angleArray: Angle[] = new Array(TOTAL_ANGLE);
-        
-        
+    private readonly angleArray: Angle[] = new Array(Math.roundTOTAL_ANGLE);
 
     private readonly NEGATIVE_ONE: number =  -1;
-        
-        
 
     public readonly NOT_ANGLE: NamedAngle = new NamedAngle(NEGATIVE_ONE, CommonStrings.getInstance()!.EMPTY);
-        
-        
 
     public readonly DOWN: NamedAngle
 
@@ -144,14 +128,10 @@ public constructor (){
             super();
         
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 
     var total: number = this.angleArray!.length;
-        
-        
 ;
     
 this.UP= new NamedAngle(0, commonPhoneStrings!.UP);
@@ -164,8 +144,6 @@ this.angleArray[0]= this.UP;
 
                         for (
     var index: number = 1;
-        
-        
 index < 90; index++)
         {
 this.angleArray[index]= new Angle(index);
@@ -182,8 +160,6 @@ this.angleArray[90]= this.RIGHT;
 
                         for (
     var index: number = 91;
-        
-        
 index < 180; index++)
         {
 this.angleArray[index]= new Angle(index);
@@ -200,8 +176,6 @@ this.angleArray[180]= this.DOWN;
 
                         for (
     var index: number = 181;
-        
-        
 index < 270; index++)
         {
 this.angleArray[index]= new Angle(index);
@@ -218,8 +192,6 @@ this.angleArray[270]= this.LEFT;
 
                         for (
     var index: number = 271;
-        
-        
 index < total; index++)
         {
 this.angleArray[index]= new Angle(index);
@@ -230,15 +202,11 @@ this.angleArray[index]= new Angle(index);
 
 
     private readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
-        
-        
 
-    public getInstance(index: number): Angle{
+    public getAt(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = this.frameUtil!.adjustAngleToFrameAngle(index);;
-        
-        
+    var adjustedIndex: number = Math.roundthis.frameUtil!.adjustAngleToFrameAngle(index);;
 ;
     
 
@@ -307,7 +275,8 @@ var angle = angle
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

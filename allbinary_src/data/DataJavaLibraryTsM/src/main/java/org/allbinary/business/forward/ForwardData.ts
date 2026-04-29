@@ -43,8 +43,6 @@ export class ForwardData
         
 
     private static readonly instance: ForwardData = new ForwardData();
-        
-        
 
     public static getInstance(): ForwardData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly PAGE: string = "FORWARD_PAGE";
-        
-        
 
     public readonly NAME: string = "FORWARD_NAME";
-        
-        
 
     public readonly VALUE: string = "FORWARD_VALUE";
-        
-        
 
 }
                 

@@ -55,8 +55,6 @@ export class VirtualKeyboard
         
 
     public static readonly NULL_VIRTUAL_KEYBOARD: VirtualKeyboard = new VirtualKeyboard();
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject

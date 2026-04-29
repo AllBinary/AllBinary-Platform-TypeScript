@@ -51,11 +51,11 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { NoOperatingSystem } from "./NoOperatingSystem.js";
 
+import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
+
 import { SystemProperties } from "./SystemProperties.js";
 
 import { OperatingSystems } from "./OperatingSystems.js";
-
-import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
 
 export class OperatingSystemFactory
             extends Object
@@ -63,8 +63,6 @@ export class OperatingSystemFactory
         
 
     private static readonly instance: OperatingSystemFactory = new OperatingSystemFactory();
-        
-        
 
     public static getInstance(): OperatingSystemFactory{
 
@@ -77,16 +75,10 @@ export class OperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
-        
-        
 
     private hasDetected: boolean = false;
-        
-        
 private constructor (){
 
             super();
@@ -97,22 +89,16 @@ private constructor (){
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = systemProperties!.getName()!;
-        
-        
 ;
     
 
@@ -140,7 +126,8 @@ this.logUtil!.putF(new StringMaker().
 
 
                             throw new Error(new StringMaker().
-                            append("OS Not Supported: ")!.append(osName)!.toString())
+                            append("OS Not Supported: ")!.append(osName)!.toString());
+                    
 
                         }
                             

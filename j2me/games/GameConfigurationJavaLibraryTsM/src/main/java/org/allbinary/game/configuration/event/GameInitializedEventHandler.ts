@@ -50,8 +50,6 @@ export class GameInitializedEventHandler extends BasicEventHandler {
         
 
     private static readonly gameKeyEventHandler: GameInitializedEventHandler = new GameInitializedEventHandler();
-        
-        
 
     public static getInstance(): GameInitializedEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var gameInitializedListenerInterface: GameInitializedListenerInterface = (eventListenerInterface as GameInitializedListenerInterface);
-        
-        
+    var gameInitializedListenerInterface: GameInitializedListenerInterface = ( as GameInitializedListenerInterfaceeventListenerInterface);
 ;
     
-gameInitializedListenerInterface!.onGameInitialized(eventObject as GameInitializedEvent);
+gameInitializedListenerInterface!.onGameInitialized( as GameInitializedEventeventObject);
     
 }
 

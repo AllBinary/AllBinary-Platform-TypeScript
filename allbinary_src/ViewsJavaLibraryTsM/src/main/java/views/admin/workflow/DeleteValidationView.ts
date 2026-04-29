@@ -67,8 +67,6 @@ export class DeleteValidationView extends WorkFlowView implements ValidationComp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private workFlowName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -169,8 +167,6 @@ this.workFlowName= this.getPageContext()!.getRequest()!.getParameter(WorkFlowDat
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

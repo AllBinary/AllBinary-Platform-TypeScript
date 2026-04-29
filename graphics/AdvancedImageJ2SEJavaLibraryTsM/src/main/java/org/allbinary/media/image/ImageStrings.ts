@@ -43,8 +43,6 @@ export class ImageStrings
         
 
     private static readonly instance: ImageStrings = new ImageStrings();
-        
-        
 
     public static getInstance(): ImageStrings{
 
@@ -57,12 +55,8 @@ export class ImageStrings
 
 
     public readonly PNG: string = "PNG";
-        
-        
 
     public readonly PNG_EXTENSION: string = ".png";
-        
-        
 
 }
                 

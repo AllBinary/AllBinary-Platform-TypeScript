@@ -39,6 +39,8 @@
         
 import { CustomMapGeneratorBaseFactory } from "./CustomMapGeneratorBaseFactory.js";
 
+import { CustomMapGenerator } from "./CustomMapGenerator.js";
+
 import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
 
 import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
@@ -48,7 +50,7 @@ export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
 
                 //@Throws(Error::class)
             
-    public getInstance(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
+    public create(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap
 
 

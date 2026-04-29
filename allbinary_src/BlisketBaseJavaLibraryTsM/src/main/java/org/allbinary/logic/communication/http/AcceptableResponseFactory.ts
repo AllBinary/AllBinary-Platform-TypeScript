@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AcceptableResponse } from "./AcceptableResponse.js";
+
 export class AcceptableResponseFactory
             extends Object
          {
         
 
     private static readonly instance: AcceptableResponseFactory = new AcceptableResponseFactory();
-        
-        
 
     public static getInstance(): AcceptableResponseFactory{
 
@@ -57,16 +57,10 @@ export class AcceptableResponseFactory
 
 
     public readonly HTML: AcceptableResponse = new AcceptableResponse("text/html", "html", 0);
-        
-        
 
     public readonly WML: AcceptableResponse = new AcceptableResponse("text/wml", "wml", 1);
-        
-        
 
     public readonly VXML: AcceptableResponse = new AcceptableResponse("text/vxml", "vxml", 2);
-        
-        
 
 }
                 

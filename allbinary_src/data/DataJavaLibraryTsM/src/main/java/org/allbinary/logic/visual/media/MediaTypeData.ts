@@ -43,8 +43,6 @@ export class MediaTypeData
         
 
     private static readonly instance: MediaTypeData = new MediaTypeData();
-        
-        
 
     public static getInstance(): MediaTypeData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly RESIZABLE_MEDIA: string = "RESIZABLE_MEDIA";
-        
-        
 
     public readonly NOT_RESIZABLE_MEDIA: string = "NOT_RESIZABLE_MEDIA";
-        
-        
 
 }
                 

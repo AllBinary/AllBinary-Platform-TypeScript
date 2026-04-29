@@ -52,14 +52,14 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class BasicEmailInfo
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private subject: string
 
@@ -77,8 +77,6 @@ var textBody = textBody
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
@@ -133,8 +131,6 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getEmailServerConfigurationInterface()!.toString());
@@ -164,7 +160,8 @@ stringBuffer!.append(this.getTextBody());
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -51,8 +51,6 @@ export class CurrentlyPressedTouchButtonSingleton
         
 
     private static readonly instance: CurrentlyPressedTouchButtonSingleton = new CurrentlyPressedTouchButtonSingleton();
-        
-        
 
     public static getInstance(): CurrentlyPressedTouchButtonSingleton{
 
@@ -65,8 +63,6 @@ export class CurrentlyPressedTouchButtonSingleton
 
 
     readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 protected constructor (){
 
             super();
@@ -83,13 +79,13 @@ protected constructor (){
 }
 
 
-    public remove(index: number): TouchButtonInput{
+    public removeAt(index: number): TouchButtonInput{
 var index = index
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.remove(index); as TouchButtonInput;
+                        return  as TouchButtonInputthis.list.removeAt(index);;
     
 }
 
@@ -111,7 +107,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.objectArray[index]! as TouchButtonInput;
+                        return  as TouchButtonInputthis.list.objectArray[index]!;
     
 }
 

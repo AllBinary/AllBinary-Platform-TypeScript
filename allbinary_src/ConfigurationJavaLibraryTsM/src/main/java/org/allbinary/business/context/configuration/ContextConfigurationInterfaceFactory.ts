@@ -67,8 +67,6 @@ export class ContextConfigurationInterfaceFactory
         
 
     private static readonly instance: ContextConfigurationInterfaceFactory = new ContextConfigurationInterfaceFactory();
-        
-        
 
     public static getInstance(): ContextConfigurationInterfaceFactory{
 
@@ -91,22 +89,18 @@ private constructor (){
     //var document = document
 
     var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
-        
-        
 ;
     
 
     var contextConfigurationNode: Node = DomSearchHelper.getNode(contextConfigurationData!.NAME, document.getChildNodes())!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new ContextConfigurationView(contextConfigurationNode).
-                            getContextConfigurationInterface(); as ContextConfigurationInterface;
+                        return  as ContextConfigurationInterfacenew ContextConfigurationView(contextConfigurationNode).
+                            getContextConfigurationInterface();;
     
 }
 
@@ -117,27 +111,19 @@ private constructor (){
     //var contextName = contextName
 
     var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;
-        
-        
 ;
     
 
     var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
-        
-        
 ;
     
 
     var documentString: string = new CryptFileReader(contextConfigurationData!.UNCRYPTED_EXTENSION, contextConfigurationData!.ENCRYPTED_EXTENSION).
                             get(abPath)!;
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(documentString)!;
-        
-        
 ;
     
 

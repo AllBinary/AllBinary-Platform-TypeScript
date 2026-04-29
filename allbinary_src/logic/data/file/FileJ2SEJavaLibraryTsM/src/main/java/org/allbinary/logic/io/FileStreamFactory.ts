@@ -53,8 +53,6 @@ export class FileStreamFactory
         
 
     private static readonly SINGLETON: FileStreamFactory = new FileStreamFactory();
-        
-        
 
     public static getInstance(): FileStreamFactory{
 
@@ -78,14 +76,10 @@ var path = path
 var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 
@@ -104,14 +98,10 @@ var path = path
 var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 
@@ -141,14 +131,10 @@ var path = path
 var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(FILEABPATH);
-        
-        
 ;
     
 file.delete();

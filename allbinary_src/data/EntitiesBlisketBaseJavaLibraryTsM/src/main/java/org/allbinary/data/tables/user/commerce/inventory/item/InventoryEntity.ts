@@ -82,12 +82,8 @@ export class InventoryEntity extends AbSqlBean implements InventoryEntityInterfa
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tableName: string = "basicinventory";
-        
-        
 public constructor (){
             super(new InventoryDbInitInfo());
                     
@@ -180,26 +176,18 @@ var storeFrontInterface = storeFrontInterface
                                 
 
     var itemVector: Vector = new Vector();
-        
-        
 ;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 
     var itemHashMapVector: Vector = super.getRows(keysAndValues)!;
-        
-        
 ;
     
 
     var size: number = itemHashMapVector!.length!;
-        
-        
 ;
     
 
@@ -208,14 +196,10 @@ var storeFrontInterface = storeFrontInterface
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object); as HashMap<any, any>;
-        
-        
+    var itemHashMap: HashMap =  as HashMapitemHashMapVector!.get(i as Object);;
 ;
     
 
@@ -225,9 +209,7 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY); as String;
-        
-        
+    var category: string =  as StringitemHashMap!.get(BasicItemData.CATEGORY);;
 ;
     
 
@@ -258,17 +240,13 @@ i < size; i++)
     public getItem(id: string): ItemInterface{
 var id = id
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(BasicItemData.ID, id);
     
 
-    var itemHashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var itemHashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -313,8 +291,6 @@ var id = id
     public createTableStatement(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -464,9 +440,9 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
+super.updateWhere(BasicItemData.ID,  as StringupdatedValues!.get(BasicItemData.ID), updatedValues);
     
 }
 

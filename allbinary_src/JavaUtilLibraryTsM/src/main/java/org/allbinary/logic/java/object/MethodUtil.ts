@@ -45,8 +45,6 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
         
 import { ParamsUtil } from "./ParamsUtil.js";
 
-import { Class } from "./Class.js";
-
 export class MethodUtil
             extends Object
          {
@@ -57,14 +55,10 @@ var myClass = myClass
 var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var method: Method[] = myClass!.getMethods()!;
-        
-        
 ;
     
 stringBuffer!.append("Methods: ");
@@ -77,8 +71,6 @@ stringBuffer!.append(lineBreak);
 
                         for (
     var index: number = 0;
-        
-        
 index < method.length; index++)
         {
 stringBuffer!.append(method[index]!.getReturnType()!.getName());

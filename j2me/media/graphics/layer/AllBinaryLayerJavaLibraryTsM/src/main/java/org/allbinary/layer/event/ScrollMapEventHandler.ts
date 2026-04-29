@@ -50,8 +50,6 @@ export class ScrollMapEventHandler extends BasicEventHandler {
         
 
     private SINGLETON: ScrollMapEventHandler = new ScrollMapEventHandler();
-        
-        
 
     public static getInstance(): ScrollMapEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var scrollMapEventListenerInterface: ScrollMapEventListenerInterface = (eventListenerInterface as ScrollMapEventListenerInterface);
-        
-        
+    var scrollMapEventListenerInterface: ScrollMapEventListenerInterface = ( as ScrollMapEventListenerInterfaceeventListenerInterface);
 ;
     
-scrollMapEventListenerInterface!.onMoveEvent(eventObject as ScrollMapEvent);
+scrollMapEventListenerInterface!.onMoveEvent( as ScrollMapEventeventObject);
     
 }
 

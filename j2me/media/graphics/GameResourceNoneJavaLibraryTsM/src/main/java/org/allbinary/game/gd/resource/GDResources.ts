@@ -43,8 +43,6 @@ export class GDResources
         
 
     private static readonly instance: GDResources = new GDResources();
-        
-        
 
     public static getInstance(): GDResources{
 
@@ -60,8 +58,6 @@ export class GDResources
                                                         [
                                                             
                                                         ];
-        
-        
 
     public currentLayoutRequiredTotal: number= 0
 

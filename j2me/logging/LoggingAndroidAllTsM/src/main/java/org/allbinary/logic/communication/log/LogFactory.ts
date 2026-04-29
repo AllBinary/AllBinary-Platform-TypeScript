@@ -53,14 +53,10 @@ import { Log } from "./Log.js";
     /*actual*/ public static getInstanceD(): Log{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 ;
     
 

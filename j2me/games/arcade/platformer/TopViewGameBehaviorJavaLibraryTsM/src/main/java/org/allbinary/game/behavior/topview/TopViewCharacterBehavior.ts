@@ -86,8 +86,6 @@ export class TopViewCharacterBehavior
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -100,11 +98,9 @@ export class TopViewCharacterBehavior
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
+basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeFactorygeographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))

@@ -88,20 +88,14 @@ var x = x
 var y = y
 
     var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = this.pointBasicArrayList!.size()!;
-        
-        
 ;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -114,17 +108,15 @@ var y = y
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
     
 
                         if(secondPoint!.getX() != 1000)
                         
                                     {
-                                    newBasicArrayList!.add(pointFactory!.getInstance0(secondPoint!.getX() +x, secondPoint!.getY() +y));
+                                    newBasicArrayList!.add(pointFactory!.createXY(secondPoint!.getX() +x, secondPoint!.getY() +y));
     
 
                                     }
@@ -144,16 +136,14 @@ this.pointBasicArrayList= newBasicArrayList;
 
                 //@Throws(Error::class)
             
-    public rotate(angle: Angle){
+    public rotateToAngle(angle: Angle){
 var angle = angle
-this.rotate(angle.getValue());
+this.rotate(Math.roundangle.getValue());
     
 }
 
 
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -161,8 +151,6 @@ this.rotate(angle.getValue());
 var angle = angle
 
     var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -187,14 +175,10 @@ var angle = angle
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
     var size: number = this.pointBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -211,11 +195,9 @@ var angle = angle
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
     
 
                         if(secondPoint!.getX() != 1000)
@@ -231,7 +213,7 @@ secondX= (secondPoint!.getX() *cos) -y;
     
 secondY= (secondPoint!.getX() *sin) +(secondPoint!.getY() *cos);
     
-point= pointFactory!.getInstance0(secondX /10000, secondY /10000);
+point= pointFactory!.createXY(Math.roundsecondX /10000, Math.roundsecondY /10000);
     
 newBasicArrayList!.add(point);
     
@@ -257,20 +239,14 @@ this.pointBasicArrayList= newBasicArrayList;
 var width = width
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
     var halfWidth: number = (width>>1);
-        
-        
 ;
     
 
     var newBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -287,8 +263,6 @@ var width = width
     
 
     var size: number = this.pointBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -297,11 +271,9 @@ var width = width
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
+secondPoint=  as GPointthis.pointBasicArrayList!.objectArray[index]!;
     
 
                         if(secondPoint!.getX() != 1000)
@@ -324,7 +296,7 @@ secondPoint= this.pointBasicArrayList!.objectArray[index]! as GPoint;
 
                         }
                             
-point= pointFactory!.getInstance0(newX, secondPoint!.getY());
+point= pointFactory!.createXY(newX, secondPoint!.getY());
     
 newBasicArrayList!.add(point);
     

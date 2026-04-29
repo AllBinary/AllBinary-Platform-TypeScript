@@ -57,8 +57,6 @@ export class Tokenizer
     private sep: string
 
     private endSep: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (sep: string){
 
             super();
@@ -72,7 +70,8 @@ public constructor (sep: string){
                                     
 
 
-                            throw new Error("Sep provided is not valid")
+                            throw new Error("Sep provided is not valid");
+                    
 
                                     }
                                 
@@ -99,20 +98,14 @@ this.endSep= endSep;
 var string = string
 
     var tokenList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var size: number = string.length!;
-        
-        
 ;
     
 
@@ -126,8 +119,6 @@ index= string.indexOf(this.sep, index);
                                     {
                                     
     var end: number = string.indexOf(this.endSep, index +this.sep.length)!;
-        
-        
 ;
     
 
@@ -171,14 +162,10 @@ var string = string
 var tokenVector = tokenVector
 
     var index: number = 0;
-        
-        
 ;
     
 
     var end: number = 0;
-        
-        
 ;
     
 
@@ -217,30 +204,22 @@ break;
 }
 
 
-    public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
+    public getTokens(stringVector: BasicArrayList): Hashtable{
 var stringVector = stringVector
 
-    var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var tokenHashtable: Hashtable = new Hashtable();
 ;
     
 
     var string: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
     var end: number = 0;
-        
-        
 ;
     
 
     var size: number = stringVector!.size()!;
-        
-        
 ;
     
 
@@ -249,11 +228,9 @@ var stringVector = stringVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-string= stringVector!.objectArray[index]! as String;
+string=  as StringstringVector!.objectArray[index]!;
     
 end= string.indexOf(this.sep);
     

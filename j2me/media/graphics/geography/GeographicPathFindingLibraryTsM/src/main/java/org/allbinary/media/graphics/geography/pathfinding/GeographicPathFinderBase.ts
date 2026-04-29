@@ -43,6 +43,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { MultipassState } from "./MultipassState.js";
 
 export class GeographicPathFinderBase
@@ -51,29 +53,26 @@ export class GeographicPathFinderBase
         
 
     public static readonly NULL_GEOGRAPHIC_PATH_FINDER_BASE: GeographicPathFinderBase = new GeographicPathFinderBase();
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public search(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
+    public searchTotalPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
 var endPathFindingNodeList = endPathFindingNodeList
 var totalPaths = totalPaths
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public searchN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
+    public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
 var endPathFindingNodeList = endPathFindingNodeList
 var totalPaths = totalPaths
@@ -81,7 +80,8 @@ var totalPaths = totalPaths
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

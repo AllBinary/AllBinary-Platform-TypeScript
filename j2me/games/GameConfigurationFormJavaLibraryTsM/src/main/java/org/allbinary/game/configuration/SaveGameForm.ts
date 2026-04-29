@@ -33,9 +33,6 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 import { CommandForm } from "../../../../org/allbinary/graphics/displayable/screen/CommandForm.js";
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 
 
 
@@ -59,12 +56,10 @@ export class SaveGameForm extends CommandForm {
         
 
     private FORM: CommandForm = CommandForm.NULL_COMMAND_FORM;
-        
-        
 
                 //@Throws(Error::class)
             
-    public static getInstance(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
+    public static createForm(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
 var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
@@ -102,9 +97,7 @@ var foregroundBasicColor = foregroundBasicColor
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
-    var timeString: string = (System.currentTimeMillis()).toString()!;
-        
-        
+    var timeString: string = (Date.now()).toString()!;
 ;
     
 this.append(new TextField("Name: ", timeString, 30, TextField.ANY));
@@ -118,8 +111,6 @@ this.initCommands(commandListener);
 var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 this.removeAllCommands();

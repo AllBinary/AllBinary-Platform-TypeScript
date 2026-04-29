@@ -60,8 +60,6 @@ export class HardwareFactory
         
 
     private static readonly instance: HardwareFactory = new HardwareFactory();
-        
-        
 
     public static getInstance(): HardwareFactory{
 
@@ -74,8 +72,6 @@ export class HardwareFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -104,15 +100,14 @@ var os = os
 
 
 
-                            throw new Error("No Hardware Imp for: " +os.getName())
+                            throw new Error("No Hardware Imp for: " +os.getName());
+                    
 
                 //: 
 } catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put("Ignoring Exception Returning NoHardware", this, commonStrings!.GET_INSTANCE, e);

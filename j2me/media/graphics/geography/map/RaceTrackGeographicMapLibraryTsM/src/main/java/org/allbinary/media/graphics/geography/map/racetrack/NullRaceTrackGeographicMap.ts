@@ -62,6 +62,8 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
         
 import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
 
 import { RaceTrackData } from "./RaceTrackData.js";
@@ -72,14 +74,13 @@ export class NullRaceTrackGeographicMap
         
 
     public static readonly NULL_RACE_TRACK_GEOGRAPHIC_MAP: NullRaceTrackGeographicMap = new NullRaceTrackGeographicMap();
-        
-        
 
-    public getId(): Integer{
+    public getId(): number{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -87,7 +88,8 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -95,7 +97,8 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -103,7 +106,8 @@ export class NullRaceTrackGeographicMap
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -116,31 +120,34 @@ var cellPositionArray = cellPositionArray
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public getCellPositionAt(x: number, y: number): GeographicMapCellPosition{
+    public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
 var x = x
 var y = y
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public getCellPositionAtNoThrow(x: number, y: number): GeographicMapCellPosition{
+    public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
 var x = x
 var y = y
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -149,19 +156,21 @@ var cellTypeId = cellTypeId
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public getCellTypeAt(x: number, y: number): GeographicMapCellType{
+    public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 var x = x
 var y = y
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -172,7 +181,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -180,7 +190,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -188,7 +199,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -196,7 +208,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -204,7 +217,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -212,7 +226,8 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -221,7 +236,8 @@ var aRaceTrackInfo = aRaceTrackInfo
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -229,7 +245,8 @@ var aRaceTrackInfo = aRaceTrackInfo
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -238,7 +255,8 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

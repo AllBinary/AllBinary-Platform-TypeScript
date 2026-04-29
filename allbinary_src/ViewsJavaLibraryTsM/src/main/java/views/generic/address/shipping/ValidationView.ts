@@ -72,8 +72,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     public isValid(): Boolean{
 
     var billingAddressesEntity: ShippingAddressesEntity = new ShippingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 this.streetAddressList= billingAddressesEntity!.get();
@@ -95,8 +93,6 @@ this.streetAddressList= billingAddressesEntity!.get();
                                 
 
     var size: number = streetAddressList!.size()!;
-        
-        
 ;
     
 
@@ -105,14 +101,10 @@ this.streetAddressList= billingAddressesEntity!.get();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
-        
-        
+    var streetAddress: StreetAddress =  as StreetAddressstreetAddressList!.get(index);;
 ;
     
 

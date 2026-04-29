@@ -55,8 +55,6 @@ export class PaymentGatewayEntityFactory
     public static getInstance(): PaymentGatewayEntity{
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -73,8 +71,6 @@ export class PaymentGatewayEntityFactory
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -89,7 +85,8 @@ export class PaymentGatewayEntityFactory
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -72,20 +72,12 @@ export class InputMapping
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private readonly hashtable: Hashtable = new Hashtable();
 
     private readonly mappedList: BasicArrayList = new BasicArrayListD();
-        
-        
 protected constructor (){
 
             super();
@@ -135,14 +127,10 @@ this.mappedList!.clear();
     //var mappedToInput = mappedToInput
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.START_LABEL);
@@ -157,8 +145,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     
 
     var list: BasicArrayList = this.getMappedInput(input)!;
-        
-        
 ;
     
 
@@ -205,12 +191,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 
                 //@Throws(Error::class)
             
-    public add(inputToGameKeyMapping: InputToGameKeyMapping){
+    public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
     //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -219,8 +206,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
     //var mappedToInput = mappedToInput
 
     var list: BasicArrayList = this.getMappedInput(input)!;
-        
-        
 ;
     
 
@@ -252,8 +237,6 @@ this.mappedList!.add(mappedToInput);
     //var id = id
 
     var mappingInputCanBeNullList: any? = this.hashtable.get(id as Object);
-        
-        
 ;
     
 
@@ -264,8 +247,6 @@ this.mappedList!.add(mappedToInput);
                                     {
                                     
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 this.hashtable.put(id, list);
@@ -283,12 +264,12 @@ this.hashtable.put(id, list);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return mappingInputCanBeNullList as BasicArrayList;
+                        return  as BasicArrayListmappingInputCanBeNullList;
     
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): Hashtable{
 
 
 

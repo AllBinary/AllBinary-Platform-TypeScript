@@ -85,12 +85,8 @@ export class ImageCaptionIndexedAnimationFactory
         
 
     readonly animationFactoryImageScaleUtil: AnimationFactoryImageScaleUtil = AnimationFactoryImageScaleUtil.getInstance()!;
-        
-        
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
-        
-        
 
     private captionImage: Image
 
@@ -113,8 +109,6 @@ export class ImageCaptionIndexedAnimationFactory
     private soundInterface: Sound
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
-        
-        
 
     private readonly animationBehaviorFactory: AnimationBehaviorFactory
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -162,32 +156,22 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     //var instanceId = instanceId
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
     var animationInterface: Animation = new ImageAnimation(scaledImage, this.animationBehaviorFactory!.getOrCreateInstance());
-        
-        
 ;
     
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.spriteMovieImage, this.frameWidth, this.frameHeight, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
     var movieIndexedAnimationInterface: IndexedAnimation = new SpriteIndexedAnimation(sprite, this.spriteMovieImage, BasicColorUtil.getInstance()!.ZERO_ARRAY, this.animationBehaviorFactory!.getOrCreateInstance());
-        
-        
 ;
     
 
     var player: Player = this.soundInterface!.getPlayerP()!;
-        
-        
 ;
     
 
@@ -199,7 +183,8 @@ this.animationBehaviorFactory= animationBehaviorFactory;
                                     
 
 
-                            throw new Error("Sound Was not Initialized")
+                            throw new Error("Sound Was not Initialized");
+                    
 
                                     }
                                 

@@ -49,8 +49,6 @@ export class Log
         
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 
     private readonly specialMessage: string
 
@@ -120,14 +118,10 @@ this.exception= exception;
     public toString(): string{
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 
     var clazz: Function = this.anyType!.constructor!;
-        
-        
 ;
     
 

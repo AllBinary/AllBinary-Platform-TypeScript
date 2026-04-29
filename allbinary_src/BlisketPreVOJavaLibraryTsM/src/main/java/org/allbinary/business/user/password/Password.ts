@@ -75,8 +75,6 @@ export class Password
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private password: string
 public constructor (password: string){
@@ -108,16 +106,12 @@ this.password= value;
     public isValid(): Boolean{
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -193,8 +187,6 @@ valid= Boolean.FALSE;
                                 
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -208,22 +200,18 @@ valid= Boolean.FALSE;
 
     public toVector(secret: string): Vector{
 var secret = secret
-this.password= StringUtil.getInstance()!.getInstance(this.password);
+this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
     var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
-        
-        
 ;
     
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
-vector.add(new Integer(random).
+vector.add(random.
                             toString());
     
 vector.add(secret);
@@ -240,24 +228,20 @@ vector.add(new SuperCrypt(random).
 }
 
 
-    public toHashMap(secret: string): HashMap<any, any>{
+    public toHashMap(secret: string): HashMap{
 var secret = secret
-this.password= StringUtil.getInstance()!.getInstance(this.password);
+this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 
     var random: number = new Random().
                             nextInt(SuperCrypt.KEYMAX)!;
-        
-        
 ;
     
-values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).
+values.put(EntryData.getInstance()!.ENCRYPTION, random.
                             toString());
     
 values.put(UserData.SECRET, secret);

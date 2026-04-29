@@ -62,8 +62,6 @@ export class AbSqlTableUtil
         
 
     private static readonly instance: AbSqlTableUtil = new AbSqlTableUtil();
-        
-        
 
     public static getInstance(): AbSqlTableUtil{
 
@@ -76,32 +74,20 @@ export class AbSqlTableUtil
 
 
     private readonly TABLE_LABEL: string = "Table: ";
-        
-        
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public backupTable(abSqlTable: AbSqlTable): string{
 var abSqlTable = abSqlTable
 
     var tableName: string = abSqlTable!.getTableName()!;
-        
-        
 ;
     
 
@@ -119,14 +105,10 @@ var abSqlTable = abSqlTable
 var portion = portion
 
     var tableName: string = abSqlTable!.getTableName()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.TABLE_LABEL);

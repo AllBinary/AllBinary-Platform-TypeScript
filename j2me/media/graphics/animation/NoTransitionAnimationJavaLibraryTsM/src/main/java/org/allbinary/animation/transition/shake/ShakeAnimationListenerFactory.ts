@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NoShakeAnimationListener } from "./NoShakeAnimationListener.js";
+
 import { ShakeAnimationListener } from "./ShakeAnimationListener.js";
 
 export class ShakeAnimationListenerFactory

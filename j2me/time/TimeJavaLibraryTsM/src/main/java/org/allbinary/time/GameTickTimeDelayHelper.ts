@@ -59,7 +59,7 @@ this.lastStartTime= 0;
 
 
     public setStartTime(): number{
-this.startTime= System.currentTimeMillis();
+this.startTime= Date.now();
     
 
 
@@ -81,7 +81,7 @@ this.startTime= System.currentTimeMillis();
                                     }
                                 
                         else {
-                            this.timeDelta= System.currentTimeMillis() -this.lastStartTime;
+                            this.timeDelta= Date.now() -this.lastStartTime;
     
 
                         }

@@ -70,38 +70,22 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
         
 
     private readonly cellPositionsUtil: CellPositionsUtil = CellPositionsUtil.getInstance()!;
-        
-        
 
     private readonly layerCoveringCellPositionsUtil: LayerCoveringCellPositionsUtil = LayerCoveringCellPositionsUtil.getInstance()!;
-        
-        
 
     private readonly reusableOccupyingGeographicMapCellPositionList: BasicArrayList = new BasicArrayListS(4);
-        
-        
 
     private readonly reusableSurroundingGeographicMapCellPositionList: BasicArrayList = new BasicArrayListS(12);
-        
-        
 
-    private readonly surroundingCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(0)!;
-        
-        
+    private readonly surroundingCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(0)!;
 
     private readonly layerInterface: AllBinaryLayer
 
     private LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     private occupyingGeographicMapCellPositionList: BasicArrayList = LIST;
-        
-        
 
     private surroundingGeographicMapCellPositionList: BasicArrayList = LIST;
-        
-        
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
@@ -115,7 +99,7 @@ this.layerInterface= layerInterface;
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
-this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAll(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList);
+this.occupyingGeographicMapCellPositionList= layerCoveringCellPositionsUtil!.getAllXY(geographicMapInterface, layerInterface, layerInterface!.getXP(), layerInterface!.getYP(), reusableOccupyingGeographicMapCellPositionList);
     
 this.surroundingGeographicMapCellPositionList= cellPositionsUtil!.getAllSurrounding(geographicMapInterface, occupyingGeographicMapCellPositionList, reusableSurroundingGeographicMapCellPositionList);
     
@@ -146,9 +130,7 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()); as GeographicMapCellPosition;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionthis.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex());;
 ;
     
 this.surroundingCircularIndexUtil!.next();

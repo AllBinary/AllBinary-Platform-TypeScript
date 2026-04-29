@@ -45,8 +45,6 @@ export class J2SEMath
         
 
     private static readonly instance: J2SEMath = new J2SEMath();
-        
-        
 
     public static getInstance(): J2SEMath{
 
@@ -87,7 +85,7 @@ var value = value
 }
 
 
-    public abs(value: number): number{
+    public absdouble(value: number): number{
 var value = value
 
 

@@ -71,8 +71,6 @@ this.paintableArray= paintableArray;
                         for (
     var index: number = this.paintableArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.paintableArray[index]!.paint(graphics);
@@ -95,11 +93,9 @@ this.paintableArray[index]!.paint(graphics);
                         for (
     var index: number = this.paintableArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
-paintableInterface= this.paintableArray[index]! as PaintableInterface;
+paintableInterface=  as PaintableInterfacethis.paintableArray[index]!;
     
 paintableInterface!.paintThreed(graphics);
     

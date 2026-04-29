@@ -76,8 +76,6 @@ export class MineLayer extends SimpleWeaponLayer {
         
 
     private static readonly NAME: string = "MineLayer";
-        
-        
 public constructor (viewPosition: ViewPosition){
             super(NAME, RemoteInfo.REMOTE_INFO,  -1, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), SimpleWeaponLayer.createDestroyed(), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
                     var viewPosition = viewPosition
@@ -89,16 +87,14 @@ public constructor (viewPosition: ViewPosition){
 
 
     private readonly viewPositionEventHandler: ViewPositionEventHandler = ViewPositionEventHandler.getInstance()!;
-        
-        
 
-    public init(x: number, y: number, z: number){
+    public initXYZ(x: number, y: number, z: number){
 var x = x
 var y = y
 var z = z
 this.setPosition(x +5, y +5, z);
     
-this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
+this.viewPositionEventHandler!.addListener( as AllBinaryLayerthis);
     
 SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance());
     

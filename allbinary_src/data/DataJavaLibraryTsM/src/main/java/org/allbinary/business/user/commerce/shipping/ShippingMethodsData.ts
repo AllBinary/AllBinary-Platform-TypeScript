@@ -43,40 +43,22 @@ export class ShippingMethodsData
         
 
     public static readonly SHIPPINGMETHODSORDERSUMMARIES: string = "SHIPPINGMETHODS_ORDERSUMMARIES";
-        
-        
 
     public static readonly SHIPPINGMETHODORDERSUMMARY: string = "SHIPPINGMETHOD_ORDERSUMMARY";
-        
-        
 
     public static readonly SHIPPINGMETHODS: string = "SHIPPINGMETHODS";
-        
-        
 
     public static readonly NAME: string = "SHIPPINGMETHODS_NAME";
-        
-        
 
     public static readonly SHIPPINGCOST: string = "SHIPPINGMETHOD_SHIPPINGCOST";
-        
-        
 
     public static readonly TAXRATE: string = "SHIPPINGMETHOD_TAXRATE";
-        
-        
 
     public static readonly SUBTOTAL: string = "SHIPPINGMETHOD_SUBTOTAL";
-        
-        
 
     public static readonly TAX: string = "SHIPPINGMETHOD_TAX";
-        
-        
 
     public static readonly TOTAL: string = "SHIPPINGMETHOD_TOTAL";
-        
-        
 
 }
                 

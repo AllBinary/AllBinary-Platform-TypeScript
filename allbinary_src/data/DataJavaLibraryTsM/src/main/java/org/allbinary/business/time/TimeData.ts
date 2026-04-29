@@ -43,8 +43,6 @@ export class TimeData
         
 
     private static readonly instance: TimeData = new TimeData();
-        
-        
 
     public static getInstance(): TimeData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly NAME: string = "TIME_NAME";
-        
-        
 
     public readonly START: string = "TIME_START";
-        
-        
 
     public readonly END: string = "TIME_END";
-        
-        
 
 }
                 

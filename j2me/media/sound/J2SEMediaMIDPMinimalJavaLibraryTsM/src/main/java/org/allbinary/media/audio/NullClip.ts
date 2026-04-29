@@ -67,6 +67,8 @@ import { LineUnavailableException } from "../../../../javax/sound/sampled/LineUn
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NullJ2SEControl } from "./NullJ2SEControl.js";
+
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
 export class NullClip
@@ -75,8 +77,6 @@ export class NullClip
         
 
     public static readonly NULL_CONTROL: NullJ2SEControl = new NullJ2SEControl(BooleanControl.Type.MUTE);
-        
-        
 
                 //@Throws(LineUnavailableException::class)
             

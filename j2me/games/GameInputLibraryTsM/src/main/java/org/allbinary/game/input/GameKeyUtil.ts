@@ -46,8 +46,6 @@ export class GameKeyUtil
         
 
     private static readonly instance: GameKeyUtil = new GameKeyUtil();
-        
-        
 
     public static getInstance(): GameKeyUtil{
 

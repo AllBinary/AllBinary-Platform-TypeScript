@@ -79,8 +79,6 @@ export class ImageScaleUtil
         
 
     private static readonly instance: ImageScaleUtil = new ImageScaleUtil();
-        
-        
 
     public static getInstance(): ImageScaleUtil{
 
@@ -93,8 +91,6 @@ export class ImageScaleUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -102,32 +98,20 @@ private constructor (){
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     private readonly imageBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly scaledImageBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly scaleXBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly scaleYBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
+    public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -139,14 +123,14 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createImage(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
+                        return this.createImage3(imageCache, originalImage, scaleNominatorX, scaleDenominatorX, scaleNominatorY, scaleDenominatorY, cached, true);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createImage(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
+    public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
     //var originalImage = originalImage
     //var scaleNominatorX = scaleNominatorX
@@ -157,14 +141,10 @@ private constructor (){
     //var mutable = mutable
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
-        
-        
 ;
     
 
     var scaleY: number = scaleNominatorY /scaleDenominatorY;
-        
-        
 ;
     
 
@@ -185,39 +165,27 @@ private constructor (){
     //var scaleY = scaleY
     //var cached = cached
 
-    var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
-        
-        
+    var originalAndroidImage: AndroidImageInterface =  as AndroidImageInterfaceoriginalImage;
 ;
     
 
     var originalBitmap: Bitmap = originalAndroidImage!.getBitmap()!;
-        
-        
 ;
     
 
-    var width: number = (originalBitmap!.getWidth() *scaleX);
-        
-        
+    var width: number = Math.round(originalBitmap!.getWidth() *scaleX);
 ;
     
 
-    var height: number = (originalBitmap!.getHeight() *scaleY);
-        
-        
+    var height: number = Math.round(originalBitmap!.getHeight() *scaleY);
 ;
     
 
     var index: number = this.imageBasicArrayList!.indexOf(originalImage)!;
-        
-        
 ;
     
 
     var alreadyAvailable: boolean = false;
-        
-        
 ;
     
 
@@ -225,27 +193,19 @@ private constructor (){
                         
                                     {
                                     
-    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index); as Float;
-        
-        
+    var scaleX2Float: number =  as Floatthis.scaleXBasicArrayList!.get(index);;
 ;
     
 
     var scaleX2: number = scaleX2Float!.toFloat()!;
-        
-        
 ;
     
 
-    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index); as Float;
-        
-        
+    var scaleY2Float: number =  as Floatthis.scaleYBasicArrayList!.get(index);;
 ;
     
 
     var scaleY2: number = scaleY2Float!.toFloat()!;
-        
-        
 ;
     
 
@@ -268,7 +228,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.scaledImageBasicArrayList!.get(index); as Image;
+                        return  as Imagethis.scaledImageBasicArrayList!.get(index);;
     
 
                                     }
@@ -276,8 +236,6 @@ private constructor (){
                         else {
                             
     var scaledImage: Image = this.getScaledImage(imageCache, originalImage, scaleX, scaleY, width, height, cached)!;
-        
-        
 ;
     
 this.imageBasicArrayList!.add(originalImage);
@@ -312,8 +270,6 @@ this.scaleYBasicArrayList!.add(scaleY);
     //var cached = cached
 
     var image: Image = NullCanvas.NULL_IMAGE;
-        
-        
 ;
     
 
@@ -337,8 +293,6 @@ this.scaleYBasicArrayList!.add(scaleY);
                                     {
                                     
     var matrix: Matrix = new Matrix();
-        
-        
 ;
     
 this.scale(image, matrix, scaleX, scaleY);
@@ -358,7 +312,8 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             
@@ -375,8 +330,6 @@ matrix.setScale(scaleX, scaleY);
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
-        
-        
 ;
     
 canvas.concat(matrix);

@@ -43,12 +43,8 @@ export class SpecialItemData
         
 
     public static readonly START_TIME: string = "SPECIALITEM_START_TIME";
-        
-        
 
     public static readonly END_TIME: string = "SPECIALITEM_END_TIME";
-        
-        
 
 }
                 

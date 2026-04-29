@@ -79,40 +79,22 @@ export class BasicUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly IMPORT_URL: string = "/{import url}";
-        
-        
 
     private readonly ATTEMPT: string = "attempt to use xsl:import: href=";
-        
-        
 
     private readonly BASE: string = "\nBase= ";
-        
-        
 
     private readonly NEW_PATH: string = "\nNew path= ";
-        
-        
 
     private readonly NOTE: string = "\nNote: ";
-        
-        
 
     private readonly URL_GLOBAL: string = " is a urlglobal";
-        
-        
 
     private readonly REQUIRED_EXTENSION: string = "\nRequired Extension: ";
-        
-        
 
     private readonly RESOLVE: string = "resolve";
-        
-        
 
     private extension: string
 public constructor (extension: string){
@@ -143,8 +125,6 @@ var base = base
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
@@ -154,9 +134,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
 stringBuffer!.append(href);
     
 
-    var abPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
-        
-        
+    var abPath: AbPath =  as AbPathnew AbFilePath(stringBuffer!.toString());
 ;
     
 
@@ -206,7 +184,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, RESOLVE);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -215,7 +194,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, RESOLVE);
 
 
 
-                            throw new TransformerException(e)
+                            throw new TransformerException(e);
+                    
 }
 
 }
@@ -226,8 +206,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, RESOLVE);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

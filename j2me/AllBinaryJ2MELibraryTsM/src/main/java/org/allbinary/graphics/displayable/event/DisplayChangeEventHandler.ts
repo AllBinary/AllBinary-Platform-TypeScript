@@ -50,8 +50,6 @@ export class DisplayChangeEventHandler extends BasicEventHandler {
         
 
     private static readonly SINGLETON: DisplayChangeEventHandler = new DisplayChangeEventHandler();
-        
-        
 
     public static getInstance(): DisplayChangeEventHandler{
 
@@ -74,12 +72,10 @@ private constructor (){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 
-    var displayChangeEventListener: DisplayChangeEventListener = (eventListenerInterface as DisplayChangeEventListener);
-        
-        
+    var displayChangeEventListener: DisplayChangeEventListener = ( as DisplayChangeEventListenereventListenerInterface);
 ;
     
-displayChangeEventListener!.onDisplayChangeEvent(eventObject as DisplayChangeEvent);
+displayChangeEventListener!.onDisplayChangeEvent( as DisplayChangeEventeventObject);
     
 }
 

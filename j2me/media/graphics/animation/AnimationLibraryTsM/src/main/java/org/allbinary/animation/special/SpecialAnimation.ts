@@ -52,8 +52,6 @@ export class SpecialAnimation extends IndexedAnimation implements SpecialAnimati
         
 
     private static readonly NULL_SPECIAL_ANIMATION: SpecialAnimation = new SpecialAnimation(new IndexedAnimationBehavior(1, 250));
-        
-        
 
     public static getInstance(): SpecialAnimation{
 
@@ -76,9 +74,7 @@ public constructor (animationBehavior: AnimationBehavior){
 
     public nextFrame(){
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.animationBehaviorP as IndexedAnimationBehavior);
-        
-        
+    var indexedAnimationBehavior: IndexedAnimationBehavior = ( as IndexedAnimationBehaviorthis.animationBehaviorP);
 ;
     
 indexedAnimationBehavior!.loopIndex++;

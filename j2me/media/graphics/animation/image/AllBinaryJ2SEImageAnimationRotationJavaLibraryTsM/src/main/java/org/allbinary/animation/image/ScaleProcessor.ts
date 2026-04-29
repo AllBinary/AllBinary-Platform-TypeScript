@@ -55,8 +55,6 @@ export class ScaleProcessor extends ScaleBaseProcessor {
         
 
     private static readonly instance: ScaleProcessor = new ScaleProcessor();
-        
-        
 
     public static getInstance(): ScaleBaseProcessor{
 
@@ -69,16 +67,10 @@ export class ScaleProcessor extends ScaleBaseProcessor {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageScaleUtil: ImageScaleUtil = ImageScaleUtil.getInstance()!;
-        
-        
 
     public update(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
     //var originalImage = originalImage
@@ -91,7 +83,7 @@ export class ScaleProcessor extends ScaleBaseProcessor {
     //var maxScaleY = maxScaleY
 
         try {
-            this.imageScaleUtil!.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);
+            this.imageScaleUtil!.scale2(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);
     
 
                 //: 

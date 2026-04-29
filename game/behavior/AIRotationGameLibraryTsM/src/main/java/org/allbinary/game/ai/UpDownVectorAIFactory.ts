@@ -51,6 +51,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
+import { UpDownVectorAI } from "./UpDownVectorAI.js";
+
 export class UpDownVectorAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
@@ -58,7 +60,7 @@ export class UpDownVectorAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput

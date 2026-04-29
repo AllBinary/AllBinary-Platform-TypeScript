@@ -38,12 +38,8 @@ export class OpenGLProcessor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public process(gl: GL10){
 var gl = gl

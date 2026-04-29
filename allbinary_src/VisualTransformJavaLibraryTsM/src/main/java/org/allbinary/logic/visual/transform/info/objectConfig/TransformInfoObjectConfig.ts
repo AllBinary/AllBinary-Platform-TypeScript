@@ -104,12 +104,8 @@ export class TransformInfoObjectConfig
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly ownerTransformInfoInterface: TransformInfoInterface
 
@@ -130,8 +126,6 @@ this.createDocument();
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TransformInfo: ");
@@ -175,8 +169,6 @@ this.document= document;
     
 
     var node: Node = DomSearchHelper.getNodeNoThrow(OutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -196,8 +188,6 @@ this.document= document;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TransformInfo: ");
@@ -242,16 +232,12 @@ this.createDocument();
     
 
     var configNameAttr: Attr = this.document.createAttribute(TransformInfoObjectConfigData.getInstance()!.NAME)!;
-        
-        
 ;
     
 configNameAttr!.setValue(name);
     
 
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 objectConfigNode!.appendChild(configNameAttr);
@@ -262,8 +248,6 @@ objectConfigNode!.appendChild(configNameAttr);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TransformInfo: ");
@@ -302,8 +286,6 @@ this.document= DomDocumentHelper.create();
     
 
     var objectConfigNode: Node = this.document.createElement(TransformInfoObjectConfigData.getInstance()!.NAME)!;
-        
-        
 ;
     
 this.document.appendChild(objectConfigNode);
@@ -344,20 +326,14 @@ this.document= document;
 var transformInfoInterface = transformInfoInterface
 
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 
     var viewNodeList: NodeList = objectConfigNode!.getChildNodes()!;
-        
-        
 ;
     
 
     var numberOfViews: number = viewNodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -366,26 +342,18 @@ var transformInfoInterface = transformInfoInterface
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfViews; index++)
         {
 
     var viewNode: Node = viewNodeList!.item(index)!;
-        
-        
 ;
     
 
     var viewAttributes: NamedNodeMap = viewNode!.getAttributes()!;
-        
-        
 ;
     
 
-    var attrNode: Attr = viewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME); as Attr;
-        
-        
+    var attrNode: Attr =  as AttrviewAttributes!.getNamedItem(TransformInfoData.getInstance()!.NAME);;
 ;
     
 
@@ -417,8 +385,6 @@ index < numberOfViews; index++)
     getTemplateAttributes(): NamedNodeMap{
 
     var componentNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
-        
-        
 ;
     
 
@@ -434,9 +400,7 @@ index < numberOfViews; index++)
             
     public getName(): string{
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
-        
-        
+    var attrNode: Attr =  as Attrthis.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);;
 ;
     
 
@@ -453,9 +417,7 @@ index < numberOfViews; index++)
     public setName(name: string){
 var name = name
 
-    var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME); as Attr;
-        
-        
+    var attrNode: Attr =  as Attrthis.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME);;
 ;
     
 attrNode!.setValue(name);
@@ -469,8 +431,6 @@ attrNode!.setValue(name);
 var nodeName = nodeName
 
     var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;
-        
-        
 ;
     
 
@@ -481,14 +441,10 @@ var nodeName = nodeName
                                     {
                                     
     var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNodeList!.item(0)!.getChildNodes())!;
-        
-        
 ;
     
 
     var numberOfViews: number = viewNodeVector!.length!;
-        
-        
 ;
     
 
@@ -497,8 +453,6 @@ var nodeName = nodeName
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Number Of ");
@@ -538,20 +492,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
 var nodeName = nodeName
 
     var viewVector: Vector = new Vector();
-        
-        
 ;
     
 
     var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
-        
-        
 ;
     
 
     var size: number = viewNodeVector!.length!;
-        
-        
 ;
     
 
@@ -560,14 +508,10 @@ var nodeName = nodeName
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index); as Node;
-        
-        
+    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
@@ -589,20 +533,14 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 var nodeName = nodeName
 
     var viewVector: Vector = new Vector();
-        
-        
 ;
     
 
     var viewNodeVector: Vector = this.getNodeVector(nodeName)!;
-        
-        
 ;
     
 
     var size: number = viewNodeVector!.length!;
-        
-        
 ;
     
 
@@ -611,14 +549,10 @@ var nodeName = nodeName
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index); as Node;
-        
-        
+    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode).
@@ -650,20 +584,14 @@ var group = group
                                 
 
     var viewVector: Vector = new Vector();
-        
-        
 ;
     
 
     var GROUP: string = TransformInfosData.getInstance()!.GROUP;
-        
-        
 ;
     
 
     var componentsNodeList: NodeList = this.document.getElementsByTagName(GROUP)!;
-        
-        
 ;
     
 
@@ -674,14 +602,10 @@ var group = group
                                     {
                                     
     var componentsNode: Node = componentsNodeList!.item(0)!;
-        
-        
 ;
     
 
     var length: number = componentsNodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -690,32 +614,22 @@ var group = group
 
                         for (
     var index: number = 0;
-        
-        
 index < length; index++)
         {
 
     var node: Node = componentsNodeList!.item(index)!;
-        
-        
 ;
     
 
     var attributes: NamedNodeMap = node.getAttributes()!;
-        
-        
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(GROUP); as Attr;
-        
-        
+    var attrNode: Attr =  as Attrattributes.getNamedItem(GROUP);;
 ;
     
 
     var value: string = attrNode!.getValue()!;
-        
-        
 ;
     
 
@@ -734,14 +648,10 @@ break;
 
 
     var viewNodeVector: Vector = DomSearchHelper.getAllNodes(TransformInfoData.getInstance()!.NAME, componentsNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var numberOfViews: number = viewNodeVector!.length!;
-        
-        
 ;
     
 
@@ -755,8 +665,6 @@ break;
                                 
 
     var size: number = viewNodeVector!.length!;
-        
-        
 ;
     
 
@@ -765,14 +673,10 @@ break;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var viewNode: Node = viewNodeVector!.get(index); as Node;
-        
-        
+    var viewNode: Node =  as NodeviewNodeVector!.get(index);;
 ;
     
 viewVector!.add(new TransformInfoDomNode(viewNode));
@@ -901,8 +805,6 @@ this.outputTypeName= outputTypeName;
     public getInputOutputTypeName(): string{
 
     var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.NAME, this.getRootNode()!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -919,8 +821,6 @@ this.outputTypeName= outputTypeName;
     public getInputOutputTypeFile(): string{
 
     var node: Node = DomSearchHelper.getNode(InputOutputTypeData.getInstance()!.FILE, this.getRootNode()!.getChildNodes())!;
-        
-        
 ;
     
 
@@ -937,8 +837,6 @@ this.outputTypeName= outputTypeName;
     public getImportUriPath(): string{
 
     var node: Node = DomSearchHelper.getNode(XslData.getInstance()!.ROOT_IMPORT_URI, this.getRootNode()!.getChildNodes())!;
-        
-        
 ;
     
 

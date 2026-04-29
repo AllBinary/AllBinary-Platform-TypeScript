@@ -56,12 +56,8 @@ export class AllBinaryOrientationSensor extends AllBinarySensor {
         
 
     sensorDataFloatArray: number[] = PrimitiveFloatUtil.getArrayInstance()!;
-        
-        
 
     listener: CompleteMotionGestureInputEventListenerInterface = NoCompleteMotionGestureInputEventListener.getInstance()!;
-        
-        
 
     public setCompleteMotionGestureInputEventListener(completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface){
 var completeMotionGestureInputEventListenerInterface = completeMotionGestureInputEventListenerInterface
@@ -81,7 +77,8 @@ protected constructor (){
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

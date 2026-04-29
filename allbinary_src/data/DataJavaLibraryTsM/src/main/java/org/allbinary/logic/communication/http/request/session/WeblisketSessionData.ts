@@ -43,36 +43,20 @@ export class WeblisketSessionData
         
 
     public static readonly INVALIDATESESSION: string = "SESSION_INVALIDATE_SESSION";
-        
-        
 
     public static readonly ATTEMPTS: string = "SESSION_ATTEMPTS";
-        
-        
 
     public static readonly TIMEOUT: string = "SESSION_TIMEOUT";
-        
-        
 
     public static readonly REMOVABLEUSERNAME: string = "SESSION_REMOVABLE_USER_NAME";
-        
-        
 
     public static readonly REMOVABLEPASSWORD: string = "SESSION_REMOVABLE_PASSWORD";
-        
-        
 
     public static readonly REMOVABLENEWPASSWORD: string = "SESSION_REMOVABLE_NEW_PASSWORD";
-        
-        
 
     public static readonly REMOVABLEREENTERNEWPASSWORD: string = "SESSION_REMOVABLE_REENTER_NEW_PASSWORD";
-        
-        
 
     public static readonly AUTHENTICATED: string = "SESSION_AUTHENTICATED";
-        
-        
 public constructor (){
 
             super();

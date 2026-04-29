@@ -45,8 +45,6 @@ export class LicenseStupidTimerFactory
         
 
     private static readonly instance: StupidTimer = new StupidTimer();
-        
-        
 
     public static getInstance(): StupidTimer{
 

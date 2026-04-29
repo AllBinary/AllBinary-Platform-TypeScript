@@ -58,14 +58,12 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
 
     var ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;
-        
-        
 ;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.colorP);

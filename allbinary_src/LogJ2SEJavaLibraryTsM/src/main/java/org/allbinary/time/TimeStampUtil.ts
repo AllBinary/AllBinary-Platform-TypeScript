@@ -53,8 +53,6 @@ import { Calendar } from "../../../java/util/Calendar.js";
         
 
     private static readonly instance: TimeStampUtil = new TimeStampUtil();
-        
-        
 
     /*actual*/ public static getInstance(): TimeStampUtil{
 
@@ -67,8 +65,6 @@ import { Calendar } from "../../../java/util/Calendar.js";
 
 
     private readonly simpleDataFormat: SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-        
-        
 private constructor (){
 
             super();
@@ -78,14 +74,10 @@ private constructor (){
     /*actual*/ public getAsString(): string{
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var date: Date = calendar.getTime()!;
-        
-        
 ;
     
 

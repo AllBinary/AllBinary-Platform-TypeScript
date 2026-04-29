@@ -63,8 +63,6 @@ export class ImageRotationUtil
         
 
     private static readonly instance: ImageRotationUtil = new ImageRotationUtil();
-        
-        
 
     public static getInstance(): ImageRotationUtil{
 
@@ -77,8 +75,6 @@ export class ImageRotationUtil
 
 
     private readonly matrix: Matrix = new Matrix();
-        
-        
 private constructor (){
 
             super();
@@ -86,8 +82,6 @@ private constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -95,9 +89,7 @@ private constructor (){
 var originalImage = originalImage
 var rotationInDegrees = rotationInDegrees
 
-    var image: Image = ImageCreationUtil.getInstance()!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-        
-        
+    var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;
     
 
@@ -107,20 +99,14 @@ var rotationInDegrees = rotationInDegrees
                                     
     var bitmap: Bitmap = 
                                     (image as AndroidImageInterface).getBitmap()!;
-        
-        
 ;
     
 
     var width: number = bitmap.getWidth()!;
-        
-        
 ;
     
 
     var height: number = bitmap.getHeight()!;
-        
-        
 ;
     
 this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
@@ -128,8 +114,6 @@ this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
 
     var canvas: Canvas = 
                                     (image as AndroidImageInterface).getCanvas()!;
-        
-        
 ;
     
 canvas.concat(this.matrix);
@@ -149,7 +133,8 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, anchor);
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             

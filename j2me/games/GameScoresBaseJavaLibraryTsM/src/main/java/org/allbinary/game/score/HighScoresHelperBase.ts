@@ -54,18 +54,16 @@ import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory
 
 import { HighScores } from "./HighScores.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class HighScoresHelperBase
             extends Object
          implements HighScoresResultsListener {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     highScoresArrayP: HighScores[] = LastFetchHighScoresFactory.getInstance()!.highScoresArray;
-        
-        
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
@@ -77,8 +75,6 @@ export class HighScoresHelperBase
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -90,8 +86,6 @@ this.logUtil!.putF(new StringMaker().
                         else {
                             
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, "setHighScoresArray");
@@ -118,7 +112,8 @@ this.highScoresArrayP= highScoresArrayP;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

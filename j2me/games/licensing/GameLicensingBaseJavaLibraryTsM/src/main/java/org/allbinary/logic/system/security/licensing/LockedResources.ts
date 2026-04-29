@@ -43,8 +43,6 @@ export class LockedResources
         
 
     private static readonly instance: LockedResources = new LockedResources();
-        
-        
 
     public static getInstance(): LockedResources{
 
@@ -57,8 +55,6 @@ export class LockedResources
 
 
     public readonly LOCKED_DEMO_GAME_FEATURE_RESOURCE: string = "/locked_demo_game_feature_64_by_64.png";
-        
-        
 
 }
                 

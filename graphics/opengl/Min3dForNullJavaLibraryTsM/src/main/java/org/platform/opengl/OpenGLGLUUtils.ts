@@ -35,14 +35,14 @@ import { OpenGLESImage } from "../../../org/allbinary/image/opengles/OpenGLESIma
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class OpenGLGLUUtils
             extends Object
          {
         
 
     private static readonly instance: OpenGLGLUUtils = new OpenGLGLUUtils();
-        
-        
 
     public static getInstance(): OpenGLGLUUtils{
 
@@ -60,7 +60,8 @@ export class OpenGLGLUUtils
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -76,7 +77,8 @@ export class OpenGLGLUUtils
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -92,7 +94,8 @@ export class OpenGLGLUUtils
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

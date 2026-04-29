@@ -64,8 +64,6 @@ export class GatewayView extends PaymentGatewayViewAbstract {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -99,8 +97,6 @@ super.getFormData(request);
         try {
             
     var paymentGatewayInterface: PaymentGatewayInterface = PaymentGatewayEntityFactory.getInstance()!.getPaymentGatewayInterface(this.getPaymentGatewayPrimaryKey()!.getStoreName(), BasicPaymentTypeUtil.getInstance()!.get(this.getPaymentGatewayPrimaryKey()!.getName()))!;
-        
-        
 ;
     
 
@@ -126,7 +122,8 @@ super.getFormData(request);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

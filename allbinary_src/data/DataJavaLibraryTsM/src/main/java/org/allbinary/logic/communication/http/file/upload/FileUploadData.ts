@@ -43,8 +43,6 @@ export class FileUploadData
         
 
     private static readonly instance: FileUploadData = new FileUploadData();
-        
-        
 
     public static getInstance(): FileUploadData{
 
@@ -57,16 +55,10 @@ export class FileUploadData
 
 
     public readonly FILE: string = "download_file_permissions.xml";
-        
-        
 
     public readonly UPLOAD_TO_FILE_PATH: string = "FILE_UPLOAD_UPLOAD_TO_FILE_PATH";
-        
-        
 
     public readonly FILE_DATA: string = "FILE_UPLOAD_FILE_DATA";
-        
-        
 
 }
                 

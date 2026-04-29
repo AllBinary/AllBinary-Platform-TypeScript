@@ -57,8 +57,6 @@ export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedT
         
 
     private static readonly instance: CurrentlyPressedTouchButtonSingletonDebug = new CurrentlyPressedTouchButtonSingletonDebug();
-        
-        
 
     public static getInstance(): CurrentlyPressedTouchButtonSingleton{
 
@@ -71,48 +69,28 @@ export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedT
 
 
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private listString: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private append: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private readonly PRESSED_AND_FIRED: string = "pressed & fired";
-        
-        
 
     private readonly PRESSED_AND_NOT_FIRED: string = "pressed in button but not fired";
-        
-        
 
     private readonly ASSOCIATED_RELEASED_AND_FIRED: string = "assoc. rel & fired";
-        
-        
 
     private readonly RELEASED_AND_FIRED: string = "rel & fired 1";
-        
-        
 
     private readonly RELEASED_AND_FIRED_2: string = "rel & fired 2";
-        
-        
 
     private readonly RELEASED_AND_NOT_FIRED: string = "rel & not fired";
-        
-        
 
-    append(append: string, touchButtonInput: TouchButtonInput){
+    appendTouchButtonInput(append: string, touchButtonInput: TouchButtonInput){
 var append = append
 var touchButtonInput = touchButtonInput
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(touchButtonInput!.toString());
@@ -160,45 +138,43 @@ this.append(this.RELEASED_AND_NOT_FIRED);
 
     public releaseAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(this.RELEASED_AND_FIRED, touchButtonInput);
+this.appendTouchButtonInput(this.RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public releaseAndFired2(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(this.RELEASED_AND_FIRED_2, touchButtonInput);
+this.appendTouchButtonInput(this.RELEASED_AND_FIRED_2, touchButtonInput);
     
 }
 
 
     public releaseAndFiredAssociated(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(this.ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput);
+this.appendTouchButtonInput(this.ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(this.PRESSED_AND_FIRED, touchButtonInput);
+this.appendTouchButtonInput(this.PRESSED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndNotFired(touchButtonInput: TouchButtonInput){
 var touchButtonInput = touchButtonInput
-this.append(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
+this.appendTouchButtonInput(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
     
 }
 
 
-    public remove(index: number): TouchButtonInput{
+    public removeAt(index: number): TouchButtonInput{
 var index = index
 
-    var touchButtonInput: TouchButtonInput = super.remove(index)!;
-        
-        
+    var touchButtonInput: TouchButtonInput = super.removeAt(index)!;
 ;
     
 this.listString= list.toString();
@@ -219,8 +195,6 @@ this.string= new StringMaker().
 var touchButtonInput = touchButtonInput
 
     var isRemoved: boolean = super.remove(touchButtonInput)!;
-        
-        
 ;
     
 this.listString= list.toString();

@@ -40,6 +40,8 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { PlatformBitmapBase } from "./PlatformBitmapBase.js";
 
 export class PlatformBitmapBaseFactory
@@ -48,15 +50,14 @@ export class PlatformBitmapBaseFactory
         
 
     public static readonly NULL_PLATFORM_BITMAP_BASE_FACTORY: PlatformBitmapBaseFactory = new PlatformBitmapBaseFactory();
-        
-        
 
     public createBitmap(image: Image): PlatformBitmapBase{
     //var image = image
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

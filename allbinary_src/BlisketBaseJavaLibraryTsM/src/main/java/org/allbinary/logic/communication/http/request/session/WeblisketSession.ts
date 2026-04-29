@@ -100,8 +100,8 @@ export class WeblisketSession
         
 
     private session: HttpSession
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
-            this(hashMap, pageContext!.getRequest() as HttpServletRequest);
+public constructor (hashMap: HashMap, pageContext: PageContext){
+            this(hashMap,  as HttpServletRequestpageContext!.getRequest());
                     var hashMap = hashMap
 var pageContext = pageContext
 
@@ -110,21 +110,17 @@ var pageContext = pageContext
                     
 }
 
-public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap, httpServletRequest: HttpServletRequest){
 
             super();
         var hashMap = hashMap
 var httpServletRequest = httpServletRequest
 
-    var propertiesHashMap: HashMap<any, any> = hashMap;
-        
-        
+    var propertiesHashMap: HashMap = hashMap;
 ;
     
 
     var request: HttpServletRequest = httpServletRequest;
-        
-        
 ;
     
 this.session= request.getSession(true);
@@ -135,7 +131,7 @@ this.session= request.getSession(true);
                                 )
                         
                                     {
-                                    this.setStoreName(propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
+                                    this.setStoreName( as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME));
     
 
                                     }
@@ -187,7 +183,7 @@ this.session.setAttribute(UserRoleData.NAME.toString(), aRole);
 }
 
 
-    public setAttempts(value: Integer){
+    public setAttempts(value: number){
 var value = value
 this.session.setAttribute(WeblisketSessionData.ATTEMPTS, value);
     
@@ -213,7 +209,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH); as String;
+                        return  as Stringthis.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH);;
     
 }
 
@@ -223,7 +219,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(UserData.USERNAME); as String;
+                        return  as Stringthis.session.getAttribute(UserData.USERNAME);;
     
 }
 
@@ -233,7 +229,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(UserData.PASSWORD); as String;
+                        return  as Stringthis.session.getAttribute(UserData.PASSWORD);;
     
 }
 
@@ -243,7 +239,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(PaymentGatewayData.NAME.toString()); as String;
+                        return  as Stringthis.session.getAttribute(PaymentGatewayData.NAME.toString());;
     
 }
 
@@ -253,17 +249,17 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.AUTHENTICATED); as String;
+                        return  as Stringthis.session.getAttribute(WeblisketSessionData.AUTHENTICATED);;
     
 }
 
 
-    public getAttempts(): Integer{
+    public getAttempts(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.ATTEMPTS); as Integer;
+                        return  as Integerthis.session.getAttribute(WeblisketSessionData.ATTEMPTS);;
     
 }
 
@@ -273,7 +269,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.TIMEOUT); as String;
+                        return  as Stringthis.session.getAttribute(WeblisketSessionData.TIMEOUT);;
     
 }
 
@@ -283,7 +279,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(StoreFrontData.getInstance()!.NAME); as String;
+                        return  as Stringthis.session.getAttribute(StoreFrontData.getInstance()!.NAME);;
     
 }
 
@@ -292,9 +288,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getRole(): UserRole{
 
-    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()); as UserRole;
-        
-        
+    var userRole: UserRole =  as UserRolethis.session.getAttribute(UserRoleData.NAME.toString());;
 ;
     
 
@@ -330,14 +324,10 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
     public getOrder(): OrderInterface{
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;
-        
-        
 ;
     
 
     var basketName: string = storeFrontInterface!.getBasketName()!;
-        
-        
 ;
     
 
@@ -345,9 +335,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
                         
                                     {
                                     
-    var orderInterface: OrderInterface = this.session.getAttribute(basketName); as OrderInterface;
-        
-        
+    var orderInterface: OrderInterface =  as OrderInterfacethis.session.getAttribute(basketName);;
 ;
     
 
@@ -356,7 +344,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
                                 )
                         
                                     {
-                                    orderInterface= new Order(new Basket()) as OrderInterface;
+                                    orderInterface=  as OrderInterfacenew Order(new Basket());
     
 
                                     }
@@ -376,7 +364,8 @@ session.setAttribute(basketName, orderInterface);
                             
 
 
-                            throw new Error("Basket Name Not Found")
+                            throw new Error("Basket Name Not Found");
+                    
 
                         }
                             
@@ -425,14 +414,10 @@ this.session.removeAttribute(UserData.USERNAME);
     public removeBasket(){
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getStoreName())!;
-        
-        
 ;
     
 
     var basketName: string = storeFrontInterface!.getBasketName()!;
-        
-        
 ;
     
 

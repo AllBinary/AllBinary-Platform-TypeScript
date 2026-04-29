@@ -51,8 +51,6 @@ export class WaypointEventHandlerFactory
                                                         [
                                                             new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler(),new WaypointEventHandler()
                                                         ];
-        
-        
 
     public static getInstance(groupInterface: Group): WaypointEventHandler{
     //var groupInterface = groupInterface
@@ -60,7 +58,7 @@ export class WaypointEventHandlerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return eventHandlerArray[groupInterface!.getGroupId();]!;
+                        return eventHandlerArray[Math.roundgroupInterface!.getGroupId();]!;
     
 }
 
@@ -72,8 +70,6 @@ export class WaypointEventHandlerFactory
 
                         for (
     var index: number = eventHandlerArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 eventHandlerArray[index]!.removeAllListeners();

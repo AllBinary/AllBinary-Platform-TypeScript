@@ -46,8 +46,6 @@ export class CheckType
                                                         [
                                                             "Check","Money Order","Cashiers Check"
                                                         ];
-        
-        
 public constructor (){
 
             super();

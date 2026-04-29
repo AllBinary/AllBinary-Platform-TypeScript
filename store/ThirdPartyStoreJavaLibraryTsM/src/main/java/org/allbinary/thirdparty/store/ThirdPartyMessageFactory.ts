@@ -43,8 +43,6 @@ export class ThirdPartyMessageFactory
         
 
     private static readonly instance: ThirdPartyMessageFactory = new ThirdPartyMessageFactory();
-        
-        
 
     public static getInstance(): ThirdPartyMessageFactory{
 
@@ -57,16 +55,10 @@ export class ThirdPartyMessageFactory
 
 
     public readonly AUTHORIZED: string = "Authorized";
-        
-        
 
     public readonly NOT_AUTHORIZED: string = "Not Authorized";
-        
-        
 
     public readonly LINKAGE_ERROR: string = "Linkage Error";
-        
-        
 
 }
                 

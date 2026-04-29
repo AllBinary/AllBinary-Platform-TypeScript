@@ -66,8 +66,6 @@ import { Log } from "./Log.js";
             
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -80,16 +78,10 @@ import { Log } from "./Log.js";
 
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 
     private readonly LABEL: string = "org.allbinary";
-        
-        
 private constructor (){
 
             super();
@@ -100,26 +92,18 @@ private constructor (){
     //var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 this.put(specialMessage, anyType, functionName, exception);
@@ -143,8 +127,6 @@ var functionName = functionName
 var exception = exception
 
     var className: string = this.LABEL;
-        
-        
 ;
     
 className= new StringMaker().
@@ -152,8 +134,6 @@ className= new StringMaker().
     
 
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 hilog.info(0x0000, className, LogUtil.PUBLIC, message);

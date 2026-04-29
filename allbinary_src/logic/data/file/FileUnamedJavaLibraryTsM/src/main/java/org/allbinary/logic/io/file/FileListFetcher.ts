@@ -61,8 +61,6 @@ export class FileListFetcher
         
 
     private static readonly instance: FileListFetcher = new FileListFetcher();
-        
-        
 
     public static getInstance(): FileListFetcher{
 
@@ -75,8 +73,6 @@ export class FileListFetcher
 
 
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
-        
-        
 
     public getFiles(path: string): BasicArrayList{
 var path = path
@@ -84,8 +80,6 @@ var path = path
         try {
             
     var files: BasicArrayList = this.subDirectory!.search(new AbFile(path))!;
-        
-        
 ;
     
 
@@ -120,15 +114,11 @@ console.log("Error: " +e +"\nMsg: " +e.message);
         try {
             
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = includeExtensions!.length
                 ;
-        
-        
 ;
     
 
@@ -137,8 +127,6 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 includeExtensionBasicArrayList!.add(includeExtensions[index]!);
@@ -147,14 +135,10 @@ includeExtensionBasicArrayList!.add(includeExtensions[index]!);
 
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
-        
-        
 ;
     
 
     var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-        
-        
 ;
     
 
@@ -189,22 +173,16 @@ console.log("Error: " +e +"\nMsg: " +e.message);
         try {
             
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList));
-        
-        
 ;
     
 
     var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-        
-        
 ;
     
 
@@ -240,22 +218,16 @@ console.log("Error: " +e +"\nMsg: " +e.message);
         try {
             
     var includeExtensionBasicArrayList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 includeExtensionBasicArrayList!.add(includeExtension);
     
 
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryOrIncludeFileExtensionBooleanFileVisitor(includeExtensionBasicArrayList, pathIncludes));
-        
-        
 ;
     
 
     var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-        
-        
 ;
     
 
@@ -289,14 +261,10 @@ console.log("Error: " +e +"\nMsg: " +e.message);
         try {
             
     var visitorFileFilter: VisitorFileFilter = new VisitorFileFilter(new DirectoryBooleanFileVisitor());
-        
-        
 ;
     
 
     var files: BasicArrayList = this.subDirectory!.search(visitorFileFilter, new AbFile(path))!;
-        
-        
 ;
     
 

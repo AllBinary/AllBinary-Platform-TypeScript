@@ -43,8 +43,6 @@ export class CaptionResources
         
 
     public static readonly RESOURCE: string = "/character_message_bubbled_box.png";
-        
-        
 
 }
                 

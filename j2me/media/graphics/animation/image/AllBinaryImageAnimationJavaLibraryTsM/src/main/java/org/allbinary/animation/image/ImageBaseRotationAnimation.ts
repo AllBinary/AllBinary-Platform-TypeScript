@@ -69,7 +69,7 @@ export class ImageBaseRotationAnimation extends RotationAnimation {
 
     private readonly image: Image
 public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
-            super(angleInfo, CircularIndexUtil.getInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
+            super(angleInfo, CircularIndexUtil.createInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var image = image
     //var angleInfo = angleInfo
     //var totalAngle = totalAngle
@@ -111,10 +111,8 @@ var sequence = sequence
 
 
     anchor: number = Anchor.TOP_LEFT;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -144,7 +142,7 @@ graphics.drawImage(this.image, x, y, anchor);
 
 
     public close(){
-DisposalUtil.getInstance()!.dispose(this.image);
+DisposalUtil.getInstance()!.disposeImage(this.image);
     
 }
 
@@ -152,7 +150,7 @@ DisposalUtil.getInstance()!.dispose(this.image);
                 //@Throws(Error::class)
             
     finalize(){
-DisposalUtil.getInstance()!.dispose(this.image);
+DisposalUtil.getInstance()!.disposeImage(this.image);
     
 }
 

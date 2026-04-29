@@ -70,21 +70,17 @@ export class TransformInfoHttpFactory
 
                 //@Throws(Error::class)
             
-    public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
+    public static getInstance(propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var weblisketSession: WeblisketSession = new WeblisketSession(propertiesHashMap, pageContext);
-        
-        
 ;
     
 
@@ -93,8 +89,6 @@ var pageContext = pageContext
                                     {
                                     
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(weblisketSession!.getStoreName())!;
-        
-        
 ;
     
 
@@ -107,7 +101,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext) as TransformInfoInterface;
+                        return  as TransformInfoInterfacenew TransformInfoHttpStore(storeFrontInterface, propertiesHashMap, pageContext);
     
 
                                     }
@@ -116,7 +110,8 @@ var pageContext = pageContext
                             
 
 
-                            throw new Error("No StoreFront with: " +weblisketSession!.getStoreName())
+                            throw new Error("No StoreFront with: " +weblisketSession!.getStoreName());
+                    
 
                         }
                             
@@ -128,7 +123,7 @@ var pageContext = pageContext
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TransformInfoHttpContext(propertiesHashMap, pageContext) as TransformInfoInterface;
+                        return  as TransformInfoInterfacenew TransformInfoHttpContext(propertiesHashMap, pageContext);
     
 
                         }
@@ -143,8 +138,6 @@ var pageContext = pageContext
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GET_INSTANCE, e);
@@ -155,7 +148,8 @@ logUtil!.put(commonStrings!.EXCEPTION, "TransformInfoFactory", commonStrings!.GE
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

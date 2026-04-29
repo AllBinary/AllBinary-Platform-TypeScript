@@ -87,14 +87,16 @@ import { WholesaleUserFactory } from "../../../../../org/allbinary/business/user
         
 import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
 
+import { UserRoleB } from "./UserRoleB.js";
+
+import { UserRole } from "./UserRole.js";
+
 export class UserRoleFactory
             extends Object
          {
         
 
     private static readonly instance: UserRoleFactory = new UserRoleFactory();
-        
-        
 
     public static getInstance(): UserRoleFactory{
 
@@ -107,77 +109,41 @@ export class UserRoleFactory
 
 
     private readonly basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
-        
-        
 
     public readonly INSTALLER: UserRole = new UserRoleB(basicUserRoleFactory!.INSTALLER, 
                             null);
-        
-        
 
     public readonly ADMINISTRATOR: UserRole = new UserRoleB(basicUserRoleFactory!.ADMINISTRATOR, new AdminUserFactory());
-        
-        
 
     public readonly CUSTOMER: UserRole = new UserRoleB(basicUserRoleFactory!.CUSTOMER, new UserFactory());
-        
-        
 
     public readonly SUBSCRIBERCUSTOMER: UserRole = new UserRoleB(basicUserRoleFactory!.SUBSCRIBERCUSTOMER, new SubscriberUserFactory());
-        
-        
 
     public readonly WHOLESALECUSTOMER: UserRole = new UserRoleB(basicUserRoleFactory!.WHOLESALECUSTOMER, new WholesaleUserFactory());
-        
-        
 
     public readonly STOREMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.STOREMANAGER, new StoreAdminUserFactory());
-        
-        
 
     public readonly PRODUCTMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.PRODUCTMANAGER, new ProductStoreAdminUserFactory());
-        
-        
 
     public readonly CUSTOMERMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.CUSTOMERMANAGER, new CustomerStoreAdminUserFactory());
-        
-        
 
     public readonly PAYMENTMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.PAYMENTMANAGER, new PaymentStoreAdminUserFactory());
-        
-        
 
     public readonly ORDERMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.ORDERMANAGER, new OrderStoreAdminUserFactory());
-        
-        
 
     public readonly WEBMANAGER: UserRole = new UserRoleB(basicUserRoleFactory!.WEBMANAGER, new WebStoreAdminUserFactory());
-        
-        
 
     public readonly REVIEWER: UserRole = new UserRoleB(basicUserRoleFactory!.REVIEWER, new ReviewOrderStoreAdminUserFactory());
-        
-        
 
     public readonly SHIPPING: UserRole = new UserRoleB(basicUserRoleFactory!.SHIPPING, new ShipOrderStoreAdminUserFactory());
-        
-        
 
     public readonly ADJUSTER: UserRole = new UserRoleB(basicUserRoleFactory!.ADJUSTER, new AdjustOrderStoreAdminUserFactory());
-        
-        
 
     public readonly WORKFLOWEDITOR: UserRole = new UserRoleB(basicUserRoleFactory!.WORKFLOWEDITOR, new WorkflowEditorWebStoreAdminUserFactory());
-        
-        
 
     public readonly WIZARD: UserRole = new UserRoleB(basicUserRoleFactory!.WIZARD, new WizardWebStoreAdminUserFactory());
-        
-        
 
     public readonly VIEWEDITOR: UserRole = new UserRoleB(basicUserRoleFactory!.VIEWEDITOR, new ViewEditorWebStoreAdminUserFactory());
-        
-        
 
 }
                 

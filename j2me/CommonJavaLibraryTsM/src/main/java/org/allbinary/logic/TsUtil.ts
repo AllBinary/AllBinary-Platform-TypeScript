@@ -43,8 +43,6 @@ export class TsUtil
         
 
     private static readonly instance: TsUtil = new TsUtil();
-        
-        
 
     public static getInstance(): TsUtil{
 

@@ -44,8 +44,6 @@ export class DamageFloaters extends Paintable {
         
 
     private static readonly SINGLETON: DamageFloaters = new DamageFloaters();
-        
-        
 
     public static getInstance(): DamageFloaters{
 

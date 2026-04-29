@@ -43,8 +43,6 @@ export class AbeHttpRequestInfoData
         
 
     private static readonly instance: AbeHttpRequestInfoData = new AbeHttpRequestInfoData();
-        
-        
 
     public static getInstance(): AbeHttpRequestInfoData{
 
@@ -62,28 +60,16 @@ private constructor (){
 
 
     public readonly HTTP_USER_AGENT: string = "HTTP_USER_AGENT";
-        
-        
 
     public readonly REMOTE_ADDRESS: string = "REMOTE_ADDRESS";
-        
-        
 
     public readonly REMOTE_HOST: string = "REMOTE_HOST";
-        
-        
 
     public readonly REMOTE_HOST_BY_ADDRESS: string = "REMOTE_HOST_BY_ADDRESS";
-        
-        
 
     public readonly REMOTE_PORT: string = "REMOTE_PORT";
-        
-        
 
     public readonly REQUEST_FILE_PATH: string = "REQUEST_FILE_PATH";
-        
-        
 
 }
                 

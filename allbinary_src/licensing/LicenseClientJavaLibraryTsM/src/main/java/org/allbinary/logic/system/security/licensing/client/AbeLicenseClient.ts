@@ -70,16 +70,10 @@ export class AbeLicenseClient
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly MINSERVERS: number = 3;
-        
-        
 public constructor (){
 
             super();
@@ -97,45 +91,31 @@ public constructor (){
     
 
     var xmlRpcAbeLicenseClient: XmlRpcAbeClient = new XmlRpcAbeLicenseRetrievalClient(abeClientInformation);
-        
-        
 ;
     
 
-    var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null); as AbeLicenseInterface;
-        
-        
+    var abeLicenseInterface: AbeLicenseInterface =  as AbeLicenseInterfacexmlRpcAbeLicenseClient!.get(
+                            null);;
 ;
     
 
     var licenseId: string = abeLicenseInterface!.getLicenseId()!;
-        
-        
 ;
     
 
     var servers: BasicArrayList = abeLicenseInterface!.getServers()!;
-        
-        
 ;
     
 
     var isNewLicenseId: boolean = false;
-        
-        
 ;
     
 
     var isBetterServerList: boolean = false;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -162,8 +142,6 @@ public constructor (){
                                     {
                                     
     var initInfo: LicenseInitInfo = LicenseInitInfoUtil.getInstance()!.read()!;
-        
-        
 ;
     
 initInfo!.setLicenseId(licenseId);
@@ -192,7 +170,8 @@ this.logUtil!.putF(commonStrings!.END, this, commonStrings!.GET);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

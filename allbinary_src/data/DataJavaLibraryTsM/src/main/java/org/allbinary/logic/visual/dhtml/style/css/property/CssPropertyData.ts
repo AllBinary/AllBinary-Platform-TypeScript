@@ -43,8 +43,6 @@ export class CssPropertyData
         
 
     private static readonly instance: CssPropertyData = new CssPropertyData();
-        
-        
 
     public static getInstance(): CssPropertyData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "CSS_PROPERTY_NAME";
-        
-        
 
     public readonly VALUES: string = "CSS_PROPERTY_VALUES";
-        
-        
 
 }
                 

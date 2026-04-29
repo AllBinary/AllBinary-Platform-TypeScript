@@ -51,8 +51,6 @@ export class NullEmulatorView
         
 
     public static readonly NULL_EMULATOR_VIEW: NullEmulatorView = new NullEmulatorView();
-        
-        
 
     public setMidlet(midlet: MIDlet){
     //var midlet = midlet

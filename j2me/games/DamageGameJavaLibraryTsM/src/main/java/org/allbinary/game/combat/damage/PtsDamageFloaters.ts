@@ -78,47 +78,31 @@ export class PtsDamageFloaters extends DamageFloaters {
     private static readonly basicColorArrayIndexer: BasicColorArrayIndexer = new BasicColorArrayIndexer(
                                                 [
                                                     BasicColorFactory.getInstance()!.WHITE,BasicColorFactory.getInstance()!.RED,BasicColorFactory.getInstance()!.YELLOW,BasicColorFactory.getInstance()!.BLUE;
-        
-        
                                                 ]);
-        
-        
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
-        
-        
 
     private layerInterface: AllBinaryLayer
 
     private lastDamage: number[] = new Array(5);
-        
-        
 
     private lastDamageString: string[][] = new Array(5) [0];
-        
-        
 
     private lastDamageStringSizeArray: number[] = new Array(5);
-        
-        
 
-    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(5)!;
-        
-        
+    private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(5)!;
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
         var layerInterface = layerInterface
-this.primitiveLongUtil= PrimitiveLongUtil.create(100000);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(100000);
     
 this.layerInterface= layerInterface;
     
 
     var CHAR_ARRAY: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-        
-        
 ;
     
 
@@ -127,8 +111,6 @@ this.layerInterface= layerInterface;
 
                         for (
     var index: number = this.lastDamageString!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.lastDamageString[index]= CHAR_ARRAY;
@@ -142,8 +124,6 @@ this.lastDamageString[index]= CHAR_ARRAY;
 var damage = damage
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.lastDamage[index]= damage;
@@ -158,27 +138,19 @@ this.circularIndexUtil!.next();
 
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
     var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
-        
-        
 ;
     
 
     var x: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var y: number = viewPosition!.getY()!;
-        
-        
 ;
     
 
@@ -187,8 +159,6 @@ var graphics = graphics
 
                         for (
     var index: number = this.lastDamage!.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -197,8 +167,6 @@ index >= 0; index--)
                                     {
                                     
     var delta: number = 10 *(index +2);
-        
-        
 ;
     
 this.basicSetColorUtil!.setBasicColorP(graphics, basicColorArrayIndexer!.get());

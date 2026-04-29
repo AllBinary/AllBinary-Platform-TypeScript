@@ -40,18 +40,12 @@ export class BasicArrayList
         
 
     private static readonly SIZE: string = ", Size: ";
-        
-        
 
     private readonly arrayUtil: ArrayUtil = ArrayUtil.getInstance()!;
-        
-        
 
     public objectArray: any[]
 
     private currentIndex: number = 0;
-        
-        
 public constructor (objectArray: any[]){
 
             super();
@@ -61,7 +55,7 @@ this.objectArray= objectArray;
 }
 
 
-    public add(index: number, element: any = {}){
+    public addAt(index: number, element: any = {}){
     //var index = index
     //var element = element
 
@@ -70,8 +64,6 @@ this.objectArray= objectArray;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
@@ -85,7 +77,8 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -121,7 +114,7 @@ this.objectArray[currentIndex++]= anyType;
 }
 
 
-    public remove(index: number): any{
+    public removeAt(index: number): any{
     //var index = index
 
                         if(index >= this.currentIndex)
@@ -129,8 +122,6 @@ this.objectArray[currentIndex++]= anyType;
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
@@ -144,20 +135,17 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                    
 
                                     }
                                 
 
     var oldValue: any = this.objectArray[index]!;
-        
-        
 ;
     
 
     var numMoved: number = currentIndex -index -1;
-        
-        
 ;
     
 
@@ -190,8 +178,6 @@ objectArray[--this.currentIndex]=
 
                         for (
     var index: number = 0;
-        
-        
 index < this.currentIndex; index++)
         {
 
@@ -202,8 +188,6 @@ index < this.currentIndex; index++)
                                     {
                                     
     var numMoved: number = currentIndex -index -1;
-        
-        
 ;
     
 
@@ -246,8 +230,6 @@ objectArray[--this.currentIndex]=
 
                         for (
     var index: number = 0;
-        
-        
 index < this.currentIndex; index++)
         {
 
@@ -256,8 +238,6 @@ index < this.currentIndex; index++)
                                     {
                                     
     var numMoved: number = currentIndex -index -1;
-        
-        
 ;
     
 
@@ -306,14 +286,10 @@ objectArray[--this.currentIndex]=
     //var list = list
 
     var result: boolean = true;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -322,8 +298,6 @@ objectArray[--this.currentIndex]=
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -356,8 +330,6 @@ ensureCapacity(this.currentIndex +list.currentIndex);
     
 
     var listSize: number = list.currentIndex;
-        
-        
 ;
     
 
@@ -366,8 +338,6 @@ ensureCapacity(this.currentIndex +list.currentIndex);
 
                         for (
     var index: number = 0;
-        
-        
 index < listSize; index++)
         {
 this.objectArray[currentIndex++]= list.objectArray[index]!;
@@ -383,12 +353,10 @@ this.objectArray[currentIndex++]= list.objectArray[index]!;
 }
 
 
-    public addAll(list: BasicArrayList): boolean{
+    public addAllList(list: BasicArrayList): boolean{
     //var list = list
 
     var newObjectArray: any[] = list.toArray()!;
-        
-        
 ;
     
 
@@ -405,8 +373,6 @@ this.objectArray[currentIndex++]= list.objectArray[index]!;
 
     var numSize: number = newObjectArray!.length
                 ;
-        
-        
 ;
     
 ensureCapacity(this.currentIndex +numSize);
@@ -435,8 +401,6 @@ currentIndex += numSize;
 
     var oldCapacity: number = this.objectArray!.length
                 ;
-        
-        
 ;
     
 
@@ -445,8 +409,6 @@ currentIndex += numSize;
                                     {
                                     
     var newCapacity: number = ((oldCapacity *3)>>1) +1;
-        
-        
 ;
     
 
@@ -464,8 +426,6 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
     var oldCapacity: number = this.objectArray!.length
                 ;
-        
-        
 ;
     
 
@@ -488,8 +448,6 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
                         for (
     var i: number = 0;
-        
-        
 i < this.currentIndex; i++)
         {
 
@@ -514,8 +472,6 @@ i < this.currentIndex; i++)
 
                         for (
     var i: number = 0;
-        
-        
 i < this.currentIndex; i++)
         {
 
@@ -554,8 +510,6 @@ i < this.currentIndex; i++)
 
                         for (
     var i: number = this.currentIndex -1;
-        
-        
 i >= 0; i--)
         {
 
@@ -580,8 +534,6 @@ i >= 0; i--)
 
                         for (
     var i: number = this.currentIndex -1;
-        
-        
 i >= 0; i--)
         {
 
@@ -614,8 +566,6 @@ i >= 0; i--)
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
@@ -629,7 +579,8 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -651,8 +602,6 @@ stringBuffer!.appendint(this.currentIndex);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonLabels.getInstance()!.INDEX_LABEL);
@@ -666,14 +615,13 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw new IndexOutOfBoundsException(stringBuffer!.toString())
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
+                    
 
                                     }
                                 
 
     var oldValue: any = objectArray[index]!;
-        
-        
 ;
     
 this.objectArray[index]= element;
@@ -694,8 +642,6 @@ this.objectArray[index]= element;
 
                         for (
     var i: number = 0;
-        
-        
 i < this.currentIndex; i++)
         {
 this.objectArray[i]= 
@@ -750,7 +696,7 @@ this.currentIndex= 0;
 }
 
 
-    public toArray(objectArray: any[]): any[]{
+    public toArrayType(objectArray: any[]): any[]{
     //var objectArray = objectArray
 
                         if(objectArray!.length < this.currentIndex)
@@ -758,7 +704,7 @@ this.currentIndex= 0;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return arrayUtil!.copyOf(this.objectArray, currentIndex, objectArray!constructor);;
+                        return arrayUtil!.copyOfType(this.objectArray, currentIndex, objectArray!constructor);;
     
 
 
@@ -785,14 +731,10 @@ this.currentIndex= 0;
     public clone(): any{
 
     var size: number = this.size()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListS(size);
-        
-        
 ;
     
 
@@ -805,8 +747,6 @@ this.currentIndex= 0;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 anyType= this.objectArray[index]!;
@@ -827,14 +767,10 @@ list.add(anyType);
     public toString(): string{
 
     var COMMA_SEP: string = CommonSeps.getInstance()!.COMMA_SEP;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -843,8 +779,6 @@ list.add(anyType);
 
                         for (
     var index: number = 0;
-        
-        
 index < this.currentIndex; index++)
         {
 stringBuffer!.append(this.objectArray[index]!.toString());

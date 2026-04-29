@@ -64,8 +64,6 @@ export class MineVectorData
 ,intArrayOf(1000,1000)
 )
                                                         ];
-        
-        
 private constructor (){
 
             super();

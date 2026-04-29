@@ -70,16 +70,12 @@ export class BasicRandomAI extends BasicAI {
         
 
     private i_random: number = 0;
-        
-        
 
     private readonly inputProbability: InputProbability
 
     private readonly visitor: Visitor
 
-    private readonly keyArray: number[] = intArrayOf(Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9);
-        
-        
+    private readonly keyArray: number[] = [Canvas.UP,Canvas.DOWN,Canvas.LEFT,Canvas.RIGHT,Canvas.KEY_NUM1,Canvas.KEY_NUM7,Canvas.KEY_NUM9];
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, inputProbability: InputProbability, visitor: Visitor){
             super(ownerLayerInterface, gameInput);
                     var ownerLayerInterface = ownerLayerInterface
@@ -98,8 +94,6 @@ this.visitor= visitor;
 
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -113,14 +107,10 @@ var allBinaryLayerManager = allBinaryLayerManager
     
 
     var repeat: boolean = false;
-        
-        
 ;
     
 
-    var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
-        
-        
+    var repeatLikelyhoodIntegerArray: number[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
 ;
     
 
@@ -137,9 +127,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
-        
-        
+    var likelyhoodIntegerArray: number[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
 ;
     
 this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
@@ -147,12 +135,10 @@ this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.g
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
-    var likelyhoodIntegerKeyArray: Integer[]
+    var likelyhoodIntegerKeyArray: number[]
 ;
     
 
@@ -161,14 +147,10 @@ this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.g
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var key: number = keyArray[index]!;
-        
-        
 ;
     
 likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;

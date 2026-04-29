@@ -52,9 +52,7 @@ export class AdminConfigurationHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -67,8 +65,6 @@ var pageContext = pageContext
         try {
             
     var success: string = "No Imp";
-        
-        
 ;
     
 
@@ -92,8 +88,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to create table";
-        
-        
 ;
     
 
@@ -121,8 +115,6 @@ var pageContext = pageContext
         try {
             
     var success: string = "No Imp";
-        
-        
 ;
     
 
@@ -146,8 +138,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to drop table";
-        
-        
 ;
     
 
@@ -175,8 +165,6 @@ var pageContext = pageContext
         try {
             
     var success: string = "No Imp";
-        
-        
 ;
     
 
@@ -191,8 +179,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -220,8 +206,6 @@ var pageContext = pageContext
         try {
             
     var success: string = "Backup Successful";
-        
-        
 ;
     
 
@@ -245,8 +229,6 @@ var pageContext = pageContext
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

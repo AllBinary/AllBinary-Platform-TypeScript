@@ -61,13 +61,9 @@ export class CustomLoaderHelper
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -114,8 +110,6 @@ var path = path
         try {
             
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 urlGlobals!.setWebappPath(path);

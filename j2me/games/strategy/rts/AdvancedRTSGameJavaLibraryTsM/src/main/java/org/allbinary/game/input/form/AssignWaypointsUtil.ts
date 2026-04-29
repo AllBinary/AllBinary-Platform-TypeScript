@@ -78,8 +78,6 @@ export class AssignWaypointsUtil
         
 
     private static readonly instance: AssignWaypointsUtil = new AssignWaypointsUtil();
-        
-        
 
     public static getInstance(): AssignWaypointsUtil{
 
@@ -92,12 +90,8 @@ export class AssignWaypointsUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly WAYPOINT_EVENT: RTSLayerEvent = new RTSLayerEvent(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
-        
-        
 
     public set(unitLayer: UnitLayer, ownerAdvancedRTSGameLayer: AdvancedRTSGameLayer){
 var unitLayer = unitLayer
@@ -106,14 +100,10 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
         try {
             
     var list: BasicArrayList = ownerAdvancedRTSGameLayer!.getWaypointBehavior()!.getOwnedWaypointList()!;
-        
-        
 ;
     
 
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
-        
-        
+    var unitWaypointBehavior: UnitWaypointBehavior =  as UnitWaypointBehaviorunitLayer!.getWaypointBehavior();;
 ;
     
 
@@ -122,14 +112,10 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer = list.get(index); as RTSLayer;
-        
-        
+    var waypointLayer: RTSLayer =  as RTSLayerlist.get(index);;
 ;
     
 this.WAYPOINT_EVENT.setRtsLayer(waypointLayer);
@@ -140,8 +126,6 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
 
 
     var waypointLayer: PathFindingLayerInterface = PrimaryWaypointHelper.getInstance()!.getWaypointLayer()!;
-        
-        
 ;
     
 
@@ -161,8 +145,6 @@ unitWaypointBehavior!.onWaypointEvent(this.WAYPOINT_EVENT);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "set", e);

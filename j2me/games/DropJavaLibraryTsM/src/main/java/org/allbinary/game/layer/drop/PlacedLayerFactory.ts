@@ -41,8 +41,6 @@ export class PlacedLayerFactory
         
 
     private static readonly instance: PlacedLayerFactory = new PlacedLayerFactory();
-        
-        
 
     public static getInstance(): PlacedLayerFactory{
 
@@ -55,8 +53,6 @@ export class PlacedLayerFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -80,15 +76,13 @@ this.list.clear();
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     public getRandomInstance(): AllBinaryLayerFactoryInterface{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.basicArrayListUtil!.getRandom(this.list); as AllBinaryLayerFactoryInterface;
+                        return  as AllBinaryLayerFactoryInterfacethis.basicArrayListUtil!.getRandom(this.list);;
     
 }
 

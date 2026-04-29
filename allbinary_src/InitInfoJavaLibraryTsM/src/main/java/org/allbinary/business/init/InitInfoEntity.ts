@@ -69,42 +69,24 @@ export class InitInfoEntity extends InitSql {
         
 
     private readonly NAME: string = "InitInfoEntity";
-        
-        
 
     private readonly NOTHING: string = "NOTHING";
-        
-        
 
     private readonly tableName: string = "initdata";
-        
-        
 
     private readonly tableData: string
 
     private readonly NOT_IN_DB: string = "Not In DB";
-        
-        
 
     private readonly METHOD_GET: string = "get()";
-        
-        
 
     private readonly METHOD_IS: string = "is()";
-        
-        
 
     private readonly METHOD_ADD: string = "add()";
-        
-        
 
     private readonly CREATED_SUCCESS: string = " Created Successfully";
-        
-        
 
     private readonly FAILED_TO_CREATE: string = "Failed to create ";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -113,8 +95,6 @@ public constructor (){
                     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -156,17 +136,13 @@ this.setTable(this.tableName);
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keyAndValue: HashMap = new HashMap();
 ;
     
 keyAndValue!.put(NOTHING, NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
-        
-        
+    var hashMap: HashMap = getRow(keyAndValue)!;
 ;
     
 
@@ -233,17 +209,13 @@ keyAndValue!.put(NOTHING, NOTHING);
 
         try {
             
-    var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keyAndValue: HashMap = new HashMap();
 ;
     
 keyAndValue!.put(NOTHING, NOTHING);
     
 
-    var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
-        
-        
+    var hashMap: HashMap = getRow(keyAndValue)!;
 ;
     
 
@@ -315,8 +287,6 @@ updateWhere(NOTHING, NOTHING, InitInfo.getInstance()!.toHashMap());
         try {
             
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(this.NOTHING);
@@ -364,8 +334,6 @@ insert(values);
                         else {
                             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.FAILED_TO_CREATE);

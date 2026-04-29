@@ -45,6 +45,8 @@ import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/Scr
         
 import { RTSLayerFormFactoryInterface } from "./RTSLayerFormFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class RTSLayerFormFactory
             extends Object
          implements RTSLayerFormFactoryInterface {
@@ -55,7 +57,8 @@ var rtsLayer = rtsLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

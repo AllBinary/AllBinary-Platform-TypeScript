@@ -43,8 +43,6 @@ export class UnitWaypointStrings
         
 
     private static readonly instance: UnitWaypointStrings = new UnitWaypointStrings();
-        
-        
 
     public static getInstance(): UnitWaypointStrings{
 
@@ -57,56 +55,30 @@ export class UnitWaypointStrings
 
 
     public readonly WANDERING: string = "Order?";
-        
-        
 
     public readonly THINKING: string = "Thinking";
-        
-        
 
     public readonly THINKING_ABOUT_TARGET: string = "Hmmm";
-        
-        
 
     public readonly TARGET: string = "Target";
-        
-        
 
     public readonly KILL: string = "Kill!";
-        
-        
 
     public readonly STOP: string = "Stop";
-        
-        
 
     public readonly WAYPOINT_DESTROYED_SHORT: string = "Uh Oh";
-        
-        
 
     public readonly WAYPOINT_DESTROYED: string = "Waypoint Destroyed";
-        
-        
 
     public readonly ALL_VISITED_SHORT: string = "Arrived";
-        
-        
 
     public readonly ALL_VISITED: string = "All Visited";
-        
-        
 
     public readonly ALREADY_THERE_SHORT: string = "Again?";
-        
-        
 
     public readonly ALREADY_THERE: string = "Already There";
-        
-        
 
     public readonly NEXT_PATH_NODE: string = "Next Path Node";
-        
-        
 
 }
                 

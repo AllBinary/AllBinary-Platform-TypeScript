@@ -52,24 +52,14 @@ export class EndGameInfo
         
 
     readonly NORMAL_GAME_OVER_WIN: string = "You Won";
-        
-        
 
     private readonly TEASER_DEMO_GAME_END_LAST_LEVEL: string = "End of Demo.";
-        
-        
 
     private readonly TEASER_DEMO_GAME_END: string = "Demo Game Over.";
-        
-        
 
     private gameOverStr: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private winStr: string = this.gameOverStr;
-        
-        
 
     public update(gameInfo: GameInfo, myCanvas: MyCanvas){
     //var gameInfo = gameInfo

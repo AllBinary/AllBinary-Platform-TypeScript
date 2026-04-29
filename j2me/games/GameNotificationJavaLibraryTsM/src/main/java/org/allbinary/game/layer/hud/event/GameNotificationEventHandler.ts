@@ -59,8 +59,6 @@ export class GameNotificationEventHandler extends BasicEventHandler {
         
 
     private static readonly instance: GameNotificationEventHandler = new GameNotificationEventHandler();
-        
-        
 
     public static getInstance(): GameNotificationEventHandler{
 
@@ -78,28 +76,22 @@ private constructor (){
 
 
     public enabled: boolean = true;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllListeners(){
 
     var eventListenerInterface: EventListenerInterface = NullEventListener.NULL_EVENT_LISTENER;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.eventListenerInterfaceList;
-        
-        
 ;
     
 
                         if(list.size() > 0)
                         
                                     {
-                                    eventListenerInterface= list.objectArray[0]! as EventListenerInterface;
+                                    eventListenerInterface=  as EventListenerInterfacelist.objectArray[0]!;
     
 
                                     }
@@ -137,12 +129,10 @@ var eventListenerInterface = eventListenerInterface
                                     }
                                 
 
-    var gameNotificationListenerInterface: GameNotificationListenerInterface = eventListenerInterface as GameNotificationListenerInterface;
-        
-        
+    var gameNotificationListenerInterface: GameNotificationListenerInterface =  as GameNotificationListenerInterfaceeventListenerInterface;
 ;
     
-gameNotificationListenerInterface!.onGameNotificationEvent(eventObject as GameNotificationEvent);
+gameNotificationListenerInterface!.onGameNotificationEvent( as GameNotificationEventeventObject);
     
 }
 

@@ -91,46 +91,32 @@ import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
 
+import { OpenGLESImageProperties } from "./OpenGLESImageProperties.js";
+
 import { OpenGLImageCacheFactory } from "./OpenGLImageCacheFactory.js";
 
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 
     public static readonly NULL_OPENGL_IMAGE: OpenGLESImage = new OpenGLESImage(NullCanvas.NULL_IMAGE, PlatformBitmapBaseFactory.NULL_PLATFORM_BITMAP_BASE_FACTORY, PlatformTextureBaseFactory.NULL_PLATFORM_TEXTURE_BASE_FACTORY);
-        
-        
 
     public static readonly texture2dList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public static readonly TYPE: number = 4;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly textureFactory: PlatformTextureBaseFactory
 
     public readonly openGLBitmap: PlatformBitmapBase
 
     public imageProcessor: OpenGLESImageProcessor = OpenGLESImageProcessor.getInstance()!;
-        
-        
 
     public openGLESImageTranslate: OpenGLESImageTranslate = OpenGLESImageTranslate.getInstance()!;
-        
-        
 
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
-        
-        
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image.getName(), PostLoadImageProcessor.NULL_POST_LOAD_IMAGE_PROCESSOR);
                         //var image = image
@@ -156,7 +142,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2);
+                        return Math.round(this.openGLBitmap!.getHeight() *this.openGLESImageProperties!.scaleY2);
     
 }
 
@@ -166,7 +152,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2);
+                        return Math.round(this.openGLBitmap!.getWidth() *this.openGLESImageProperties!.scaleX2);
     
 }
 
@@ -178,7 +164,8 @@ var gl = gl
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -192,8 +179,6 @@ var gl = gl
     
 
     var textures: number[] = new Array(1);
-        
-        
 ;
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
@@ -273,8 +258,6 @@ var z = z
     public toString(): string{
 
     var graphicsStrings: GraphicsStrings = GraphicsStrings.getInstance()!;
-        
-        
 ;
     
 

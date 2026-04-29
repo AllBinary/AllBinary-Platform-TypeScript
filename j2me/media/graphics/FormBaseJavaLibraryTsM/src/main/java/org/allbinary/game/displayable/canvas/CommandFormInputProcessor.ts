@@ -33,9 +33,6 @@ import { Features } from "../../../../../org/allbinary/game/configuration/featur
 import { InputFeatureFactory } from "../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js";
 
     
-import { GameInputStrings } from "../../../../../org/allbinary/game/input/GameInputStrings.js";
-
-    
 import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -67,9 +64,6 @@ import { TouchMotionGestureFactory } from "../../../../../org/allbinary/input/mo
 
     
 import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
-
-    
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -115,34 +109,20 @@ export class CommandFormInputProcessor extends BasicMenuInputProcessor {
         
 
     private readonly MOTION_GESTURE_SOURCE_ID: number = GameKeyEventFactory.getInstance()!.MOTION_GESTURE_SOURCE_ID;
-        
-        
 
     private readonly CLICK_DELAY: number = 150;
-        
-        
 
     private readonly clickTimeHelper: TimeDelayHelper = new TimeDelayHelper(CLICK_DELAY);
-        
-        
 
     private readonly DOUBLE_CLICK_DELAY: number = 1200;
-        
-        
 
     private readonly doubleClickTimeHelper: TimeDelayHelper = new TimeDelayHelper(DOUBLE_CLICK_DELAY);
-        
-        
 
     readonly isSingleKeyProcessing: boolean = InputFeatureFactory.getInstance()!.isSingleKeyProcessing()!;
-        
-        
 
     private form: ScrollSelectionForm
 
     private hasPressed: boolean = false;
-        
-        
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm){
             super(gameKeyEventList, playerInputId, gameCanvas);
                         //var gameKeyEventList = gameKeyEventList
@@ -204,34 +184,24 @@ this.form.processInput(key);
 
 
     private readonly PROCESS_COMMAND: string = "processCommand";
-        
-        
 
     processCommand(): number{
 
-    var commandCurrentSelectionForm: CommandCurrentSelectionForm = this.form as CommandCurrentSelectionForm;
-        
-        
+    var commandCurrentSelectionForm: CommandCurrentSelectionForm =  as CommandCurrentSelectionFormthis.form;
 ;
     
 
     var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;
-        
-        
 ;
     
 this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
     
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var openGLFeatureFactory: OpenGLFeatureFactory = OpenGLFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -278,31 +248,23 @@ this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
 
                 //@Throws(Error::class)
             
-    public processInput(): number{
+    public processInputList(): number{
 
         try {
             
     var motionInputsIndex: number = this.processMotionInputs()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
     var key: number = 0;
-        
-        
 ;
     
 
@@ -315,11 +277,9 @@ this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
     
 key= gameKeyEvent!.getKey();
     
@@ -389,8 +349,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS
     public processMotionInputs(): number{
 
     var lastIndex: number = this.motionGestureEventList!.size() -1;
-        
-        
 ;
     
 
@@ -398,9 +356,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS
                         
                                     {
                                     
-    var motionGestureEvent: MotionGestureEvent = this.motionGestureEventList!.objectArray[lastIndex]! as MotionGestureEvent;
-        
-        
+    var motionGestureEvent: MotionGestureEvent =  as MotionGestureEventthis.motionGestureEventList!.objectArray[lastIndex]!;
 ;
     
 this.processMotionInput(motionGestureEvent);
@@ -425,14 +381,10 @@ motionGestureEventList!.clear();
     //var motionGestureEvent = motionGestureEvent
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
     var motionGestureInput: MotionGestureInput = motionGestureEvent!.getMotionGesture()!;
-        
-        
 ;
     
 
@@ -441,8 +393,6 @@ motionGestureEventList!.clear();
                                     {
                                     
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
-        
-        
 ;
     
 
@@ -451,8 +401,6 @@ motionGestureEventList!.clear();
                                     {
                                     
     var index: number = this.form.getSelectedIndex(point)!;
-        
-        
 ;
     
 
@@ -466,7 +414,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-                        if(this.clickTimeHelper!.isTime())
+                        if(this.clickTimeHelper!.isTimeTNT())
                         
                                     {
                                     this.processCommand();
@@ -498,7 +446,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-                        if(!this.doubleClickTimeHelper!.isTime();)
+                        if(!this.doubleClickTimeHelper!.isTimeTNT();)
                         
                                     {
                                     this.logUtil!.putF("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT);
@@ -510,7 +458,7 @@ this.processCommand();
                                 
 this.doubleClickTimeHelper!.delay= this.DOUBLE_CLICK_DELAY;
     
-this.doubleClickTimeHelper!.setStartTime();
+this.doubleClickTimeHelper!.setStartTimeTNT();
     
 
                                     }
@@ -535,8 +483,6 @@ this.hasPressed= true;
 
 
     private readonly NAME_LABEL: string = " ScrollSelectionForm: ";
-        
-        
 
     public toString(): string{
 

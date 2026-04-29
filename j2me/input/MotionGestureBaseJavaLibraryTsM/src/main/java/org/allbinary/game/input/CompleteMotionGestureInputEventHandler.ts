@@ -64,8 +64,6 @@ export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
         
 
     private static readonly SINGLETON: CompleteMotionGestureInputEventHandler = new CompleteMotionGestureInputEventHandler();
-        
-        
 
     public static getInstance(): CompleteMotionGestureInputEventHandler{
 
@@ -78,8 +76,6 @@ export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -127,19 +123,15 @@ var eventObject = eventObject
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener = this.list.objectArray[index]! as CompleteMotionGestureInputEventListener;
-        
-        
+    var completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener =  as CompleteMotionGestureInputEventListenerthis.list.objectArray[index]!;
 ;
     
-completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
+completeMotionGestureInputEventListener!.onCompleteMotionGestureInputEvent( as CompleteMotionGestureInputEventeventObject);
     
 
                 //: 
@@ -162,12 +154,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface = eventListenerInterface as CompleteMotionGestureInputEventListenerInterface;
-        
-        
+    var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface =  as CompleteMotionGestureInputEventListenerInterfaceeventListenerInterface;
 ;
     
-completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent(eventObject as CompleteMotionGestureInputEvent);
+completeMotionGestureInputEventListenerInterface!.onCompleteMotionGestureInputEvent( as CompleteMotionGestureInputEventeventObject);
     
 }
 

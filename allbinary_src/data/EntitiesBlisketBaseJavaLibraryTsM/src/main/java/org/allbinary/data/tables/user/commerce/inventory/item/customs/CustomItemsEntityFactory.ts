@@ -51,8 +51,6 @@ export class CustomItemsEntityFactory
         
 
     private static readonly instance: CustomItemsEntityFactory = new CustomItemsEntityFactory();
-        
-        
 
     public static getInstance(): CustomItemsEntityFactory{
 
@@ -65,8 +63,6 @@ export class CustomItemsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

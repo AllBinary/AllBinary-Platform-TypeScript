@@ -52,8 +52,6 @@ export class LocalPlayerInputIdFactory
         
 
     private static readonly instance: LocalPlayerInputIdFactory = new LocalPlayerInputIdFactory();
-        
-        
 
     public static getInstance(): LocalPlayerInputIdFactory{
 
@@ -66,32 +64,18 @@ export class LocalPlayerInputIdFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly MAX_NUMBER_OF_PLAYERS: number = 6;
-        
-        
 
     private readonly MAX_FAST_DEVICEID: number = 65;
-        
-        
 
     private readonly deviceIdToplayerId: number[] = new Array(MAX_FAST_DEVICEID);
-        
-        
 
     private readonly playerIdToDeviceId: number[] = new Array(MAX_NUMBER_OF_PLAYERS);
-        
-        
 
     private readonly playersInPlay: boolean[] = new Array(MAX_NUMBER_OF_PLAYERS);
-        
-        
 
     private totalDevicesMapped: number = 0;
-        
-        
 private constructor (){
 
             super();
@@ -101,8 +85,6 @@ private constructor (){
 
                         for (
     var index: number = deviceIdToplayerId!.length -1;
-        
-        
 index >= 0; index--)
         {
 deviceIdToplayerId[index]=  -1;
@@ -135,8 +117,6 @@ var deviceId = deviceId
                                     {
                                     
     var playerInputId: number = this.deviceIdToplayerId[deviceId]!;
-        
-        
 ;
     
 
@@ -220,8 +200,6 @@ this.logUtil!.putF(new StringMaker().
     public getTotalDevicesInPlay(): number{
 
     var total: number = 0;
-        
-        
 ;
     
 
@@ -230,8 +208,6 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = this.totalDevicesMapped -1;
-        
-        
 index >= 0; index--)
         {
 

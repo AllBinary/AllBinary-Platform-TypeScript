@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
 
     
@@ -49,8 +51,6 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
-
 import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
 
 export class ExitRunnable
@@ -59,12 +59,8 @@ export class ExitRunnable
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly midlet: AllBinaryMidlet
 
@@ -91,7 +87,7 @@ this.processor= processor;
         try {
             this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
     
-this.midlet.destroyApp(false, this.isProgress);
+this.midlet.destroyAppInRunnable(false, this.isProgress);
     
 this.midlet.setDisplay(NullCanvas.NULL_CANVAS);
     

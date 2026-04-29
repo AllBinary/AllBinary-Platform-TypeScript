@@ -43,8 +43,6 @@ export class NullLocationPaintable extends LocationPaintable {
         
 
     private static readonly instance: NullLocationPaintable = new NullLocationPaintable();
-        
-        
 
     public static getInstance(): NullLocationPaintable{
 

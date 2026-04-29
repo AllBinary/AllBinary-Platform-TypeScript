@@ -71,20 +71,16 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
         
 import { ImageCacheBase } from "./ImageCacheBase.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ImageCache extends ImageCacheBase {
         
 
     public static readonly NULL_IMAGE_CACHE: ImageCache = new ImageCache();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -99,14 +95,10 @@ public constructor (){
     //var height = height
 
     var foundIndex: number = this.getIndex(width, height)!;
-        
-        
 ;
     
 
     var image: Image = this.getFromAvailable(foundIndex, width, height)!;
-        
-        
 ;
     
 
@@ -163,20 +155,14 @@ listOfList[foundIndex]!.add(image);
     //var key = key
 
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
-    var resourceId: Integer = resourceUtil!.getResourceId(key as String)!;
-        
-        
+    var resourceId: number = resourceUtil!.getResourceId( as Stringkey)!;
 ;
     
 
     var image: Image = this.getImage(resourceId)!;
-        
-        
 ;
     
 
@@ -187,8 +173,6 @@ listOfList[foundIndex]!.add(image);
     var inputStream: InputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -236,21 +220,15 @@ this.hashtable.put(resourceId, image);
     //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
-        
-        
 ;
     
 
     var resourceStringArray: string[] = gdResources!.resourceStringArray;
-        
-        
 ;
     
 
     var size: number = resourceStringArray!.length
                 ;
-        
-        
 ;
     
 
@@ -259,8 +237,6 @@ this.hashtable.put(resourceId, image);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -284,7 +260,8 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -297,7 +274,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImageLater(key as String,  -1,  -1);;
+                        return Image.createImageLater( as Stringkey,  -1,  -1);;
     
 }
 
@@ -306,7 +283,8 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

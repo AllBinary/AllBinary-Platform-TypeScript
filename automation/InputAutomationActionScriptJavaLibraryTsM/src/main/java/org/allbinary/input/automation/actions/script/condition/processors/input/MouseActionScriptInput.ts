@@ -79,9 +79,11 @@ import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.j
 
 import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
 
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
 import { Point } from "./Point.js";
+
+import { MouseActionScriptInputJPanel } from "./MouseActionScriptInputJPanel.js";
+
+import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
 
 import { MouseInputAutomationProcessor } from "./MouseInputAutomationProcessor.js";
 
@@ -89,12 +91,8 @@ export class MouseActionScriptInput extends BasicProfileActionScriptInput implem
         
 
     private static readonly NAME: string = "Mouse";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private point: Point
 
@@ -114,8 +112,6 @@ this.point= new Point();
     
 
     var actionNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -126,8 +122,6 @@ this.point= new Point();
                                     {
                                     
     var nodeList: NodeList = actionNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -136,14 +130,10 @@ this.point= new Point();
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var childNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -152,8 +142,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var buttons: string = DomNodeHelper.getTextNodeValue(childNode)!;
-        
-        
 ;
     
 this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
@@ -167,44 +155,30 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
                                     {
                                     
     var mouseXNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_X, childNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var mouseXString: string = DomNodeHelper.getTextNodeValue(mouseXNode)!;
-        
-        
 ;
     
 
-    var mouseXInteger: Integer = Integer(Integer.valueOf(mouseXString))!;
-        
-        
+    var mouseXInteger: number = Integer(Integer.valueOf(mouseXString))!;
 ;
     
 
     var mouseYNode: Node = DomSearchHelper.getNode(MouseActionScriptInputData.MOVE_Y, childNode!.getChildNodes())!;
-        
-        
 ;
     
 
     var mouseYString: string = DomNodeHelper.getTextNodeValue(mouseYNode)!;
-        
-        
 ;
     
 
-    var mouseYInteger: Integer = Integer(Integer.valueOf(mouseYString))!;
-        
-        
+    var mouseYInteger: number = Integer(Integer.valueOf(mouseYString))!;
 ;
     
 
     var newPoint: Point = new Point(mouseXInteger!.toInt(), mouseYInteger!.toInt());
-        
-        
 ;
     
 this.setPoint(newPoint);
@@ -216,7 +190,8 @@ this.setPoint(newPoint);
                             
 
 
-                            throw new Error("Action Script Input Unknown Node")
+                            throw new Error("Action Script Input Unknown Node");
+                    
 
                         }
                             
@@ -229,7 +204,8 @@ this.setPoint(newPoint);
                             
 
 
-                            throw new Error("Action Script Input Node Null")
+                            throw new Error("Action Script Input Node Null");
+                    
 
                         }
                             
@@ -294,11 +270,9 @@ this.mouseActionScriptInputJPanel!.getMouseActionJDialog()!.setVisible(true);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(MouseActionScriptInputData.BUTTONS, Integer.toString(this.getButtonClicks()));
@@ -320,22 +294,16 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = super.toXmlNode(document)!;
-        
-        
 ;
     
 
     var mouseNode: Node = ModDomHelper.createNodeWithValueNodes(document, MouseActionScriptInputData.NAME, this.toHashMap())!;
-        
-        
 ;
     
 node.appendChild(mouseNode);
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(MouseActionScriptInputData.MOVE_X, Integer.toString(this.getPoint()!.x));
@@ -355,7 +323,7 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
 
                 //@Throws(Error::class)
             
-    public process(frame: Long){
+    public process(frame: number){
 var frame = frame
 MouseInputAutomationProcessor.process(this);
     
@@ -365,16 +333,12 @@ MouseInputAutomationProcessor.process(this);
     public log(){
 
     var buttonStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 buttonStringBuffer!.append("1: ");
     
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 

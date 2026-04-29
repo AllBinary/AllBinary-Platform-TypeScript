@@ -85,8 +85,6 @@ export class SimpleFileUtil
         
 
     private static readonly instance: SimpleFileUtil = new SimpleFileUtil();
-        
-        
 
     public static getInstance(): SimpleFileUtil{
 
@@ -103,7 +101,7 @@ export class SimpleFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new object: Writer()
+                        return new Writer()
                                 {
                                 
     var private closed: boolean= false
@@ -193,7 +191,7 @@ var len = len
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new object: Reader()
+                        return new Reader()
                                 {
                                 
                 //@Throws(IOException::class)
@@ -266,28 +264,16 @@ var n = n
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly NULL_WRITER: Writer = nullWriter()!;
-        
-        
 
     public readonly NULL_READER: Reader = nullReader()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
-        
-        
 
     public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[]): BasicArrayList{
     //var inputStream = inputStream
@@ -309,8 +295,6 @@ var n = n
     //var includeReturnLine = includeReturnLine
 
     var stringList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -330,16 +314,12 @@ var n = n
                                 
 
     var byteArray: number[] = this.nullUtil!.NULL_BYTE_ARRAY;
-        
-        
 ;
     
 
         try {
             
     var outputStream2: ByteArrayOutputStream = new ByteArrayOutputStream(max);
-        
-        
 ;
     
 byteArray= this.streamUtil!.getByteArray(inputStream, outputStream2, byteArray1);
@@ -374,14 +354,10 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 
     var size: number = byteArray!.length
                 ;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -390,8 +366,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 
     var returnLine: number = 0;
-        
-        
 ;
     
 
@@ -400,7 +374,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 startIndex= index;
     
 
-        while(index < size -1 && byteArray[index] != '\n'.code.toByte())
+        while(index < size -1 && byteArray[index] != .code.toByte()'\n')
         {
 index++;
     
@@ -411,7 +385,7 @@ index++;
                         
                                     {
                                     
-                        if(index > 0 && byteArray[index -1] == '\r'.code.toByte())
+                        if(index > 0 && byteArray[index -1] == .code.toByte()'\r')
                         
                                     {
                                     returnLine= 1;
@@ -430,8 +404,6 @@ index++;
                                 
 
     var s: string = byteArray.decodeToString();
-        
-        
 ;
     
 stringList!.add(s);
@@ -453,15 +425,11 @@ index++;
     //var stringArray = stringArray
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = stringArray!.length
                 ;
-        
-        
 ;
     
 
@@ -470,8 +438,6 @@ index++;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringMaker!.append(stringArray[index]!);

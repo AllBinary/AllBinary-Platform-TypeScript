@@ -66,8 +66,6 @@ export class TransformsGeneratorUtil
         
 
     private static readonly instance: TransformsGeneratorUtil = new TransformsGeneratorUtil();
-        
-        
 
     public static getInstance(): TransformsGeneratorUtil{
 
@@ -80,8 +78,6 @@ export class TransformsGeneratorUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -105,14 +101,10 @@ var group = group
                                 
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = transformInfoInterface!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
     var result: string = this.generateComponentsFromObjectConfig(abeClientInformation, transformInfoObjectConfigInterface, transformInfoInterface, group)!;
-        
-        
 ;
     
 
@@ -151,8 +143,6 @@ var group = group
                                 
 
     var transformInfoObjectConfigComponentVector: Vector = transformInfoObjectConfigInterface!.getTransformsGroup(group)!;
-        
-        
 ;
     
 
@@ -161,8 +151,6 @@ var group = group
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Processing ");
@@ -185,14 +173,13 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
                                     
 
 
-                            throw new Error("No Pages Generated For Template.")
+                            throw new Error("No Pages Generated For Template.");
+                    
 
                                     }
                                 
 
     var size: number = transformInfoObjectConfigComponentVector!.length!;
-        
-        
 ;
     
 
@@ -201,14 +188,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index); as TransformInfoDomNode;
-        
-        
+    var transformInfoObjectConfigComponent: TransformInfoDomNode =  as TransformInfoDomNodetransformInfoObjectConfigComponentVector!.get(index);;
 ;
     
 TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface);
@@ -226,8 +209,6 @@ TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformIn
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("<!-- Generated all template views successfully for View: ");

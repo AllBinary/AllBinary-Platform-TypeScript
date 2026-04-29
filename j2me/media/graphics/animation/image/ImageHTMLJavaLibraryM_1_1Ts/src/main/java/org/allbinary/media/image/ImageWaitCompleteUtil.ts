@@ -33,9 +33,6 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
-
-    
 import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
@@ -70,20 +67,12 @@ export class ImageWaitCompleteUtil extends ImageCompleteUtil {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly METHOD_NAME: string = "waitForLoad";
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(18000);
-        
-        
 
     private readonly allTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(120000);
-        
-        
 public constructor (){
 
             super();
@@ -95,9 +84,9 @@ public constructor (){
     public waitFor(image: Image, name: string){
     //var image = image
     //var name = name
-this.timeDelayHelper!.setStartTime();
+this.timeDelayHelper!.setStartTimeTNT();
     
-this.waitFor(image, name, this.timeDelayHelper);
+this.waitForATime(image, name, this.timeDelayHelper);
     
 }
 
@@ -107,13 +96,14 @@ this.waitFor(image, name, this.timeDelayHelper);
     public handleTimeout(name: string){
     //var name = name
 
-                        if(this.timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     
 
 
-                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                    
 
                                     }
                                 
@@ -122,33 +112,30 @@ this.waitFor(image, name, this.timeDelayHelper);
 
                 //@Throws(Error::class)
             
-    waitFor(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
+    waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
     //var image = image
     //var name = name
     //var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage = image as PlaynImage;
-        
-        
+    var playnImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
-        
-        
+    var playnCoreImage: playn.core.Image =  as playn.core.ImageplaynImage!.getImage();;
 ;
     
 
         while(!playnCoreImage!.isReady(); || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
         {
 
-                        if(timeDelayHelper!.isTime())
+                        if(timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     
 
 
-                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name)
+                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                    
 
                                     }
                                 
@@ -169,25 +156,19 @@ this.waitFor(image, name, this.timeDelayHelper);
                 //@Throws(Error::class)
             
     public waitForAll(){
-this.allTimeDelayHelper!.setStartTime();
+this.allTimeDelayHelper!.setStartTimeTNT();
     
 
-    var hashtable: Hashtable<any, any> = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
-        
-        
+    var hashtable: Hashtable = GameFeatureImageCacheFactory.getInstance()!.getHashtableP()!;
 ;
     
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-        
-        
 ;
     
 
     var size: number = objectArray!.length
                 ;
-        
-        
 ;
     
 PreLogUtil.put("Image Total: " +size, this, "waitForAll");
@@ -198,11 +179,9 @@ PreLogUtil.put("Image Total: " +size, this, "waitForAll");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-this.waitFor(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+this.waitForATime( as Imagehashtable.get(objectArray[index]!),  as StringobjectArray[index]!, this.allTimeDelayHelper);
     
 }
 

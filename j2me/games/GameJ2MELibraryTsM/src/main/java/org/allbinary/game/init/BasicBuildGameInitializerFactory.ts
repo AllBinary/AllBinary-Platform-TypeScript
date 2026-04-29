@@ -49,8 +49,6 @@ export class BasicBuildGameInitializerFactory
         
 
     public NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY: BasicBuildGameInitializerFactory = new BasicBuildGameInitializerFactory();
-        
-        
 
     public getInstance(): GameInitializationInterface{
 

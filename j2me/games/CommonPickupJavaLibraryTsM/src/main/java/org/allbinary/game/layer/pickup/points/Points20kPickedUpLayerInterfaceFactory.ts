@@ -64,14 +64,14 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PointsLayerCircularStaticPool } from "./PointsLayerCircularStaticPool.js";
+
 import { PointsResources } from "./PointsResources.js";
 
 export class Points20kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -92,8 +92,6 @@ pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFacto
 
 
     private pool: PointsLayerCircularStaticPool = new PointsLayerCircularStaticPool(new PointsLayerFactory(GameConfigurationUtil.getInstance()!.getCompetitionValue() *20000), 1);
-        
-        
 private constructor (){
             super(PickedUpLayerTypeFactory.getInstance()!.POINTS, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(PointsResources.getInstance()!.RESOURCE_2)!.getInstance(0));
                     

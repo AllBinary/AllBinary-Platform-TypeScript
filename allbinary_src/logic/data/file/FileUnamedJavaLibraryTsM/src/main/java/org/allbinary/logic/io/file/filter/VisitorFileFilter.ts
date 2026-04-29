@@ -71,16 +71,12 @@ this.booleanVisitorInterface= booleanVisitorInterface;
 var file = file
 
     var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;
-        
-        
 ;
     
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile);visit as Boolean
+    var isFileAcceptable: boolean = visit =  as Booleanthis.booleanVisitorInterface!.visit(abFile);visit
 visit.
                     !;
-        
-        
 ;
     
 
@@ -95,11 +91,9 @@ visit.
     public accept(file: AbFile): boolean{
 var file = file
 
-    var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file);visit as Boolean
+    var isFileAcceptable: boolean = visit =  as Booleanthis.booleanVisitorInterface!.visit(file);visit
 visit.
                     !;
-        
-        
 ;
     
 

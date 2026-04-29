@@ -49,15 +49,11 @@ export class UpGameKeyEventHandler extends UpGameKeyEventHandlerBase {
         
 
     private static readonly instance: UpGameKeyEventHandler = new UpGameKeyEventHandler();
-        
-        
 
     private static readonly instanceArray: UpGameKeyEventHandlerBase[] = 
                                                         [
                                                             new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase(),new UpGameKeyEventHandlerBase()
                                                         ];
-        
-        
 
     public static getInstance(): UpGameKeyEventHandler{
 
@@ -70,15 +66,11 @@ export class UpGameKeyEventHandler extends UpGameKeyEventHandlerBase {
 
 
     private readonly playerInputIdFactory: LocalPlayerInputIdFactory = LocalPlayerInputIdFactory.getInstance()!;
-        
-        
 
-    public getInstance(deviceId: number): UpGameKeyEventHandlerBase{
+    public getInstanceForDevice(deviceId: number): UpGameKeyEventHandlerBase{
 var deviceId = deviceId
 
     var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
-        
-        
 ;
     
 
@@ -115,8 +107,6 @@ super.removeAllListeners();
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeAllListeners();
@@ -136,8 +126,6 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
@@ -157,8 +145,6 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListener(eventListenerInterface);

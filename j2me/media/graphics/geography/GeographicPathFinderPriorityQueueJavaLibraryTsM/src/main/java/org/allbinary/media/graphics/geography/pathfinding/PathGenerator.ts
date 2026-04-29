@@ -46,18 +46,20 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PathGeneratorInterface } from "./PathGeneratorInterface.js";
+
 import { PathFindingInfo } from "./PathFindingInfo.js";
+
+import { RuntimeException } from "./RuntimeException.js";
 
 import { MultipassState } from "./MultipassState.js";
 
 export class PathGenerator
             extends Object
-         {
+         implements PathGeneratorInterface {
         
 
     private static readonly SINGLETON: PathGenerator = new PathGenerator();
-        
-        
 
     public static getInstance(): PathGenerator{
 
@@ -90,8 +92,6 @@ private constructor (){
     //var totalPaths = totalPaths
 
     var geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;
-        
-        
 ;
     
 
@@ -105,7 +105,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
+    public create(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var geographicMapCellHistory = geographicMapCellHistory
     //var pathFindingInfo = pathFindingInfo
@@ -113,7 +113,8 @@ private constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -125,26 +126,18 @@ private constructor (){
     //var totalPaths = totalPaths
 
     var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-        
-        
 ;
     
 
     var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;
-        
-        
 ;
     
 
     var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;
-        
-        
 ;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.search(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;
-        
-        
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPath(startPathFindingNodeList, endPathFindingNodeList, totalPaths)!;
 ;
     
 
@@ -165,26 +158,18 @@ private constructor (){
     //var multipassState = multipassState
 
     var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-        
-        
 ;
     
 
     var endPathFindingNodeList: BasicArrayList = pathFindingInfo!.getEndPathFindingNodeList()!;
-        
-        
 ;
     
 
     var geographicPathFinderInterface: GeographicPathFinderBase = pathFindingInfo!.getPathFinder()!;
-        
-        
 ;
     
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;
-        
-        
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = geographicPathFinderInterface!.searchTotalPathN(startPathFindingNodeList, endPathFindingNodeList, totalPaths, multipassState)!;
 ;
     
 
@@ -204,7 +189,8 @@ private constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

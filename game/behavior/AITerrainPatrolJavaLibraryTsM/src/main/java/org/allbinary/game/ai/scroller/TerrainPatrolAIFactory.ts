@@ -57,6 +57,8 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
         
 import { BasePatrolAI } from "./BasePatrolAI.js";
 
+import { TerrainPatrolAI } from "./TerrainPatrolAI.js";
+
 export class TerrainPatrolAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
@@ -64,11 +66,11 @@ export class TerrainPatrolAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
     //var ownerLayerInterface = ownerLayerInterface
     //var gameInput = gameInput
-hashtable.put(BasePatrolAI.MAX_DISTANCE, SmallIntegerSingletonFactory.getInstance()!.getInstance(220));
+hashtable.put(BasePatrolAI.MAX_DISTANCE, SmallIntegerSingletonFactory.getInstance()!.getAt(220));
     
 
 

@@ -42,7 +42,7 @@ export interface ProfileActionScriptItemInterface {
 
                 //@Throws(Error::class)
             
-    process(frame: Long)
+    process(frame: number)
 
 }
                 

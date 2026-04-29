@@ -49,8 +49,6 @@ export class DisposalUtil
         
 
     private static readonly instance: DisposalUtil = new DisposalUtil();
-        
-        
 
     public static getInstance(): DisposalUtil{
 
@@ -62,12 +60,12 @@ export class DisposalUtil
 }
 
 
-    public dispose(image: Image){
+    public disposeImage(image: Image){
     //var image = image
 }
 
 
-    public dispose(resource: Resource){
+    public disposeResource(resource: Resource){
     //var resource = resource
 
                         if(!resource.isDisposed();)

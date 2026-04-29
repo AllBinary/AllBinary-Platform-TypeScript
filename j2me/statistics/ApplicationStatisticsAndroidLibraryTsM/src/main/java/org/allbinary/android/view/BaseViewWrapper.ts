@@ -43,8 +43,6 @@ export class BaseViewWrapper
         
 
     public static readonly NULL_VIEW_WRAPPER: BaseViewWrapper = new BaseViewWrapper();
-        
-        
 
     public invalidate(){
 }

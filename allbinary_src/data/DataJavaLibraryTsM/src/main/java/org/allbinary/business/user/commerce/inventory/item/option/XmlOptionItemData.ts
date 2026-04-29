@@ -43,12 +43,8 @@ export class XmlOptionItemData
         
 
     public static readonly XML_FILE_STATUS: string = "XMLOPTIONITEM_XML_FILE_STATUS";
-        
-        
 
     public static readonly OPTION_XML_FILE: string = "XMLOPTIONITEM_OPTION_XML_FILE";
-        
-        
 
 }
                 

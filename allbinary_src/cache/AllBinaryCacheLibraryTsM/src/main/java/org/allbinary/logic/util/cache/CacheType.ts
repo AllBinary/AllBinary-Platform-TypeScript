@@ -83,8 +83,6 @@ this.type= type;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("CacheType: Vendor: ");

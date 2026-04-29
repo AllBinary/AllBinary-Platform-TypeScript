@@ -52,8 +52,6 @@ export class AboutCommandProcessor
         
 
     private static readonly instance: AboutCommandProcessor = new AboutCommandProcessor();
-        
-        
 
     public static getInstance(): AboutCommandProcessor{
 

@@ -50,8 +50,6 @@ export class DownTrackballInputToGameKeyEventAction extends GameKeyCompleteMotio
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new DownTrackballInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

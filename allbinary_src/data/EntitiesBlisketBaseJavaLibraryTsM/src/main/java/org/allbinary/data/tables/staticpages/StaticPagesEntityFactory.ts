@@ -51,8 +51,6 @@ export class StaticPagesEntityFactory
         
 
     private static readonly instance: StaticPagesEntityFactory = new StaticPagesEntityFactory();
-        
-        
 
     public static getInstance(): StaticPagesEntityFactory{
 
@@ -65,8 +63,6 @@ export class StaticPagesEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

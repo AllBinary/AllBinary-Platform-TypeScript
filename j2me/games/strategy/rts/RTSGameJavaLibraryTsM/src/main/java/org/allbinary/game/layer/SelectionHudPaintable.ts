@@ -77,12 +77,8 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
         
 
     readonly myFont: MyFont = MyFont.getInstance()!;
-        
-        
 
     readonly y: number = CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +17;
-        
-        
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
 
@@ -93,8 +89,6 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
     imageX: number= 0
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
-        
-        
 
     private color: number= 0
 
@@ -103,18 +97,14 @@ export class SelectionHudPaintable extends InitUpdatePaintable {
     private height: number= 0
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 protected constructor (){
 
             super();
         this.update();
     
-this.primitiveLongUtil= PrimitiveLongUtil.create(10000);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(10000);
     
 }
 
@@ -122,14 +112,10 @@ this.primitiveLongUtil= PrimitiveLongUtil.create(10000);
     public update(){
 
     var touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
-        
-        
 ;
     
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 this.x= CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +touchButtonLocationHelper!.getColumnsRemainderHalf();
@@ -154,8 +140,6 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.D
 
 
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.toInt()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics

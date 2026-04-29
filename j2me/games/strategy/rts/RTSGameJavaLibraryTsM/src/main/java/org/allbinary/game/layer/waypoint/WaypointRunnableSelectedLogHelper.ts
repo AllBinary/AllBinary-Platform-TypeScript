@@ -55,8 +55,6 @@ export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper
         
 
     private static readonly instance: WaypointRunnableSelectedLogHelper = new WaypointRunnableSelectedLogHelper();
-        
-        
 
     public static getInstance(): WaypointRunnableSelectedLogHelper{
 
@@ -69,12 +67,8 @@ export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public start(pathFindingLayerInterface: PathFindingLayerInterface){
     //var pathFindingLayerInterface = pathFindingLayerInterface

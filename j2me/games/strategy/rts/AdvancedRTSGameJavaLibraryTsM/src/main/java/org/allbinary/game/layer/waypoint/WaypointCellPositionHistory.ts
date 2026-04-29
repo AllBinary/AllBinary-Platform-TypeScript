@@ -55,8 +55,6 @@ export class WaypointCellPositionHistory
         
 
     private static readonly SINGLETON: WaypointCellPositionHistory = new WaypointCellPositionHistory();
-        
-        
 
     public static getInstance(): WaypointCellPositionHistory{
 
@@ -69,12 +67,8 @@ export class WaypointCellPositionHistory
 
 
     private positionList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private layerList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public add(cellPosition: CellPosition, layerInterface: AllBinaryLayer){
 var cellPosition = cellPosition
@@ -86,7 +80,7 @@ this.layerList!.add(layerInterface);
 }
 
 
-    public add(list: BasicArrayList, layerInterface: AllBinaryLayer){
+    public addList(list: BasicArrayList, layerInterface: AllBinaryLayer){
 var list = list
 var layerInterface = layerInterface
 
@@ -95,11 +89,9 @@ var layerInterface = layerInterface
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
-this.add(list.get(index) as CellPosition, layerInterface);
+this.add( as CellPositionlist.get(index), layerInterface);
     
 }
 
@@ -110,17 +102,15 @@ this.add(list.get(index) as CellPosition, layerInterface);
 var cellPosition = cellPosition
 
     var index: number = this.positionList!.indexOf(cellPosition)!;
-        
-        
 ;
     
 
                         if(index >= 0)
                         
                                     {
-                                    this.positionList!.remove(index);
+                                    this.positionList!.removeAt(index);
     
-this.layerList!.remove(index);
+this.layerList!.removeAt(index);
     
 
                                     }
@@ -128,12 +118,10 @@ this.layerList!.remove(index);
 }
 
 
-    public remove(layerInterface: AllBinaryLayer){
+    public removeLayer(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -145,9 +133,9 @@ index= this.layerList!.indexOf(layerInterface);
                         if(index >= 0)
                         
                                     {
-                                    this.positionList!.remove(index);
+                                    this.positionList!.removeAt(index);
     
-this.layerList!.remove(index);
+this.layerList!.removeAt(index);
     
 
                                     }
@@ -184,12 +172,10 @@ var list = list
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-                        if(this.isCellPositionWithDrop(list.get(index) as CellPosition))
+                        if(this.isCellPositionWithDrop( as CellPositionlist.get(index)))
                         
                                     {
                                     
@@ -216,8 +202,6 @@ index >= 0; index--)
 var cellPosition = cellPosition
 
     var index: number = this.positionList!.indexOf(cellPosition)!;
-        
-        
 ;
     
 
@@ -228,7 +212,7 @@ var cellPosition = cellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerList!.get(index); as AllBinaryLayer;
+                        return  as AllBinaryLayerthis.layerList!.get(index);;
     
 
                                     }

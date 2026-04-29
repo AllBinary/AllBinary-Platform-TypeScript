@@ -77,8 +77,6 @@ export class ClientInformation
         
 
     private operatingSystemInterface: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
-        
-        
 
     private readonly name: string
 
@@ -89,16 +87,10 @@ export class ClientInformation
     private readonly specialName: string
 
     private hardSale: boolean = true;
-        
-        
 
     private licenseId: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private licenseServers: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 public constructor (name: string, version: string, specialName: string, shortName: string){
 
             super();
@@ -190,7 +182,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.licenseServers!.objectArray[index]! as String;
+                        return  as Stringthis.licenseServers!.objectArray[index]!;
     
 }
 
@@ -205,17 +197,13 @@ var index = index
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): Hashtable{
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
-        
-        
 ;
     
 
-    var clientInfoHashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var clientInfoHashtable: Hashtable = new Hashtable();
 ;
     
 clientInfoHashtable!.put(abeClientInformationData!.NAME, this.name);
@@ -236,14 +224,10 @@ clientInfoHashtable!.put(abeClientInformationData!.OS, this.getOperatingSystemIn
     
 
     var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(getOperatingSystemInterface())!;
-        
-        
 ;
     
 
     var hardwareString: string = hardwareInterface!.toString()!;
-        
-        
 ;
     
 clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
@@ -289,14 +273,10 @@ var alicenseId = alicenseId
 var list = list
 
     var size: number = list.size() -1;
-        
-        
 ;
     
 
     var currentSize: number = this.licenseServers!.size() -1;
-        
-        
 ;
     
 
@@ -318,14 +298,10 @@ var list = list
 
                         for (
     var index: number = size;
-        
-        
 index >= 0; index--)
         {
 
-    var newServerName: string = list.objectArray[index]! as String;
-        
-        
+    var newServerName: string =  as Stringlist.objectArray[index]!;
 ;
     
 
@@ -334,14 +310,10 @@ index >= 0; index--)
 
                         for (
     var index2: number = currentSize;
-        
-        
 index2 >= 0; index2--)
         {
 
-    var nextOldServerName: string = this.licenseServers!.objectArray[index]! as String;
-        
-        
+    var nextOldServerName: string =  as Stringthis.licenseServers!.objectArray[index]!;
 ;
     
 

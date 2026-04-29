@@ -56,8 +56,6 @@ export class UserEmailEventConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string
 
@@ -80,13 +78,13 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
                                 
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
-this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as String);
+this.setName( as StringhashMap!.get(UserEmailEventConfigurationData.NAME));
     
-this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as String);
+this.setEventListenerClassPath( as StringhashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))

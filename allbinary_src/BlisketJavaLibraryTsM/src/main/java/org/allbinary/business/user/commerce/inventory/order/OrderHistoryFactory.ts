@@ -57,23 +57,19 @@ export class OrderHistoryFactory
 var id = id
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var orderHistoryEntityInterface: OrderHistoryEntity = new org.allbinary.data.tables.user.commerce.inventory.order.OrderHistoryEntity();
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return orderHistoryEntityInterface!.getOrder(id); as OrderHistory;
+                        return  as OrderHistoryorderHistoryEntityInterface!.getOrder(id);;
     
 
                 //: 
@@ -81,8 +77,6 @@ var id = id
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -106,8 +100,6 @@ var id = id
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

@@ -43,8 +43,6 @@ export class EventStrings
         
 
     private static readonly instance: EventStrings = new EventStrings();
-        
-        
 
     public static getInstance(): EventStrings{
 
@@ -57,20 +55,12 @@ export class EventStrings
 
 
     public readonly PERFORMANCE_MESSAGE: string = "Use Custom onEvent Methods for needed optimization";
-        
-        
 
     public readonly TOTAL_LISTENERS: string = "Total Listeners: ";
-        
-        
 
     public readonly LISTENER_LABEL: string = " Listener: ";
-        
-        
 
     public readonly FIRE_EVENT: string = "fireEvent";
-        
-        
 
 }
                 

@@ -76,12 +76,8 @@ export class ImageComparisonSearchWorker extends BasicEventHandler implements Im
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageComparisonInfoVector: Vector
 
@@ -112,7 +108,7 @@ this.run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
+this.onImageComparisonResultsEvent( as ImageComparisonResultsEventallBinaryEventObject);
     
 }
 
@@ -145,31 +141,25 @@ this.setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonInfo: ImageComparisonResult = this.imageComparisonInfoVector!.get(0); as ImageComparisonResult;
-        
-        
+    var imageComparisonInfo: ImageComparisonResult =  as ImageComparisonResultthis.imageComparisonInfoVector!.get(0);;
 ;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);
     
 
     var latestBufferedImage: BufferedImage = imageComparisonInfo!.getBufferedImages()[1]!;
-        
-        
 ;
     
 this.imageComparisonInfoVector!.remove(imageComparisonInfo);
     
 this.index++;
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 this.setRunning(false);
     

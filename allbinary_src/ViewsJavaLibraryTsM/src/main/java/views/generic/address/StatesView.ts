@@ -73,12 +73,8 @@ export class StatesView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -91,20 +87,14 @@ var document = document
         try {
             
     var node: Node = document.createElement(StreetAddressData.STATES)!;
-        
-        
 ;
     
 
     var statesFile: string = URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.LINEDATAPATH +"states.txt";
-        
-        
 ;
     
 
     var lineReader: LineReader = new LineReader(statesFile);
-        
-        
 ;
     
 
@@ -112,8 +102,6 @@ var document = document
         {
 
     var option: string = lineReader!.next()!;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, StreetAddressData.STATE, option));

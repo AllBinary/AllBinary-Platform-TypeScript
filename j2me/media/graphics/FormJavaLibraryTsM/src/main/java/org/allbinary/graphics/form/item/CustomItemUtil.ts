@@ -43,8 +43,6 @@ export class CustomItemUtil
         
 
     private static readonly instance: CustomItemUtil = new CustomItemUtil();
-        
-        
 
     public static getInstance(): CustomItemUtil{
 
@@ -57,8 +55,6 @@ export class CustomItemUtil
 
 
     public readonly CUSTOM_ITEM_ARRAY: CustomItem[] = [];
-        
-        
 
 }
                 

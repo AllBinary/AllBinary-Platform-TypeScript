@@ -51,8 +51,6 @@ export class PaymentEntityFactory
         
 
     private static readonly instance: PaymentEntityFactory = new PaymentEntityFactory();
-        
-        
 
     public static getInstance(): PaymentEntityFactory{
 
@@ -65,8 +63,6 @@ export class PaymentEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

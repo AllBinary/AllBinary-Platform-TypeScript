@@ -43,8 +43,6 @@ export class StoreFrontStatisticsData
         
 
     private static readonly instance: StoreFrontStatisticsData = new StoreFrontStatisticsData();
-        
-        
 
     public static getInstance(): StoreFrontStatisticsData{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly NAME: string = "STOREFRONT_STATISTICS_NAME";
-        
-        
 
 }
                 

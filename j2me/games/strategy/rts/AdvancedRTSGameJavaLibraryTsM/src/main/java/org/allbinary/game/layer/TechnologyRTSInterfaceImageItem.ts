@@ -67,8 +67,6 @@ export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
         
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
-        
-        
 
     private readonly rtsInterface: RTSInterface
 
@@ -79,8 +77,6 @@ export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
     private readonly adjustedCostY: number
 
     private costString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-        
-        
 
     private costLength: number= 0
 
@@ -89,26 +85,16 @@ export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
     private readonly adjustedLevelY: number
 
     private levelString: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-        
-        
 
     private levelLength: number= 0
 
-    private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.create(10000)!;
-        
-        
+    private readonly primitiveLongUtil: PrimitiveLongUtil = PrimitiveLongUtil.createPowerOfTen(10000)!;
 
     private readonly LEVEL: string = "Level";
-        
-        
 
     private readonly COST: string = "Cost";
-        
-        
 
     private readonly DOLLAR: string = "$";
-        
-        
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, rtsInterface: RTSInterface){
             super(label, img, layout, altText, basicColor);
                     var label = label
@@ -125,20 +111,14 @@ this.rtsInterface= rtsInterface;
     
 
     var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 
     var imageHeight: number = 0;
-        
-        
 ;
     
 
     var image: Image = this.getImage()!;
-        
-        
 ;
     
 
@@ -191,8 +171,6 @@ super.paint(graphics, x, y);
     
 
     var xa: number = x +2;
-        
-        
 ;
     
 graphics.drawString(this.COST, xa, y +this.adjustedCostLabelY, 0);

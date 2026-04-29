@@ -18,9 +18,6 @@
 
 
 
-import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
-
-    
 import { GameAdStateFactory } from "../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js";
 
     
@@ -66,8 +63,6 @@ export class BaseGameBehavior extends DemoGameBehavior {
         
 
     private static readonly instance: BaseGameBehavior = new BaseGameBehavior();
-        
-        
 
     public static getInstance(): DemoGameBehavior{
 
@@ -84,8 +79,6 @@ export class BaseGameBehavior extends DemoGameBehavior {
     public init(){
 
     var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
-        
-        
 ;
     
 gameAdState!.playingAdState();
@@ -97,8 +90,6 @@ gameAdState!.playingAdState();
     //var allBinaryGameCanvas = allBinaryGameCanvas
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -107,8 +98,6 @@ gameAdState!.playingAdState();
                                     {
                                     
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
-        
-        
 ;
     
 currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable);
@@ -127,8 +116,6 @@ currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gamePauseRunnable);
                                     {
                                     
     var currentDisplayableFactory: CurrentDisplayableFactory = CurrentDisplayableFactory.getInstance()!;
-        
-        
 ;
     
 currentDisplayableFactory!.setRunnable(allBinaryGameCanvas!.gameRunnable);
@@ -163,7 +150,7 @@ allBinaryGameCanvas!.updateScreenButtonPaintable2();
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
-allBinaryGameCanvas!.setGameState();
+allBinaryGameCanvas!.updateGameState();
     
 }
 

@@ -79,15 +79,13 @@ export class PaymentGatewayHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private readonly httpServletRequest: HttpServletRequest
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -96,7 +94,7 @@ var pageContext = pageContext
         try {
             this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.httpServletRequest= pageContext!.getRequest(); as HttpServletRequest;
+this.httpServletRequest=  as HttpServletRequestpageContext!.getRequest();;
     
 this.portion= new Portion(hashMap);
     
@@ -116,7 +114,8 @@ this.portion= new Portion(hashMap);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -128,8 +127,6 @@ this.portion= new Portion(hashMap);
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(this.httpServletRequest)!;
-        
-        
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
@@ -138,8 +135,6 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
     
 
     var success: string = "Successfully Added New Payment Gateway";
-        
-        
 ;
     
 
@@ -163,8 +158,6 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
             {
 
     var error: string = "Failed to add";
-        
-        
 ;
     
 
@@ -193,8 +186,6 @@ PaymentGatewayEntityFactory.getInstance()!.add(paymentGatewayInterface);
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(this.httpServletRequest)!;
-        
-        
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
@@ -205,8 +196,6 @@ paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Gateway Name: ");
@@ -226,8 +215,6 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
     
 
     var success: string = "Successfully Updated Payment Gateway information";
-        
-        
 ;
     
 
@@ -251,8 +238,6 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
             {
 
     var error: string = "Failed to update payment gateway information";
-        
-        
 ;
     
 
@@ -281,30 +266,22 @@ PaymentGatewayEntityFactory.getInstance()!.update(paymentGatewayInterface);
             
     var paymentGatewayInterface: PaymentGatewayInterface = new PaymentGatewayInterfaceFactory().
                             getInstance(this.httpServletRequest)!;
-        
-        
 ;
     
 paymentGatewayInterface!.setStoreName(this.weblisketSession!.getStoreName());
     
 
     var storeName: string = paymentGatewayInterface!.getStoreName()!;
-        
-        
 ;
     
 
     var gatewayName: string = paymentGatewayInterface!.getName()!;
-        
-        
 ;
     
 PaymentGatewayEntityFactory.getInstance()!.remove(storeName, BasicPaymentTypeUtil.getInstance()!.get(gatewayName));
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Successfully Removed payment gateway where store name=");
@@ -317,8 +294,6 @@ stringBuffer!.append(gatewayName);
     
 
     var success: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -342,8 +317,6 @@ stringBuffer!.append(gatewayName);
             {
 
     var error: string = "Failed to remove payment gateway from table";
-        
-        
 ;
     
 
@@ -371,8 +344,6 @@ stringBuffer!.append(gatewayName);
         try {
             
     var success: string = PaymentGatewayEntityFactory.getInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -396,8 +367,6 @@ stringBuffer!.append(gatewayName);
             {
 
     var error: string = "Failed to drop payment transaction result table";
-        
-        
 ;
     
 
@@ -425,8 +394,6 @@ stringBuffer!.append(gatewayName);
         try {
             
     var success: string = PaymentGatewayEntityFactory.getInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -450,8 +417,6 @@ stringBuffer!.append(gatewayName);
             {
 
     var error: string = "Failed to create payment transaction result table";
-        
-        
 ;
     
 
@@ -479,14 +444,10 @@ stringBuffer!.append(gatewayName);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(PaymentGatewayEntityFactory.getInstance(), this.portion)!;
-        
-        
 ;
     
 
@@ -510,8 +471,6 @@ stringBuffer!.append(gatewayName);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -539,14 +498,10 @@ stringBuffer!.append(gatewayName);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(PaymentGatewayEntityFactory.getInstance())!;
-        
-        
 ;
     
 
@@ -570,8 +525,6 @@ stringBuffer!.append(gatewayName);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

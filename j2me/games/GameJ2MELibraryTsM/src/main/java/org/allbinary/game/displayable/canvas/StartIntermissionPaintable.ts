@@ -76,20 +76,14 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
         
 
     readonly fontDebugFactory: FontDebugFactory = FontDebugFactory.getInstance()!;
-        
-        
 
     readonly basicSetColorUtil: BasicColorSetUtil = BasicColorSetUtil.getInstance()!;
-        
-        
 
     gameCanvas: AllBinaryGameCanvas
 
     readonly stringArray: string[]
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
-        
-        
 
     private color: number
 
@@ -100,8 +94,6 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
     readonly font: Font
 
     private hasChanged: boolean = true;
-        
-        
 
     public readonly lastWidth: number[]
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor, font: Font){
@@ -132,23 +124,17 @@ this.font= font;
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
     var existingFont: Font = graphics.getFont()!;
-        
-        
 ;
     
 this.fontDebugFactory!.setFont(this.font, graphics);
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
@@ -163,8 +149,6 @@ basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.color);
 
                         for (
     var index: number = this.stringArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 
@@ -190,18 +174,12 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
 
 
     private readonly BEGIN_LEVEL: string = "Begin Level ";
-        
-        
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public update(){
 
     var level: number = this.gameCanvas!.getLayerManager()!.getGameInfo()!.getCurrentLevel()!;
-        
-        
 ;
     
 this.stringArray[0]= new StringMaker().
@@ -213,8 +191,6 @@ this.stringArray[0]= new StringMaker().
 
                         for (
     var index: number = this.stringArray!.length -1;
-        
-        
 index >= 1; index--)
         {
 this.stringArray[index]= this.EMPTY_STRING;

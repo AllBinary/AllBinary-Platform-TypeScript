@@ -37,8 +37,6 @@ export class AnalogLocationInputFactory
         
 
     private static readonly instance: AnalogLocationInputFactory = new AnalogLocationInputFactory();
-        
-        
 
     public static getInstance(): AnalogLocationInputFactory{
 
@@ -51,8 +49,6 @@ export class AnalogLocationInputFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
@@ -63,15 +59,13 @@ private constructor (){
 var playerInputId = playerInputId
 
     var analogLocationInput: AnalogLocationInput = AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT;
-        
-        
 ;
     
 
                         if(playerInputId < this.list.size())
                         
                                     {
-                                    analogLocationInput= this.list.get(playerInputId); as AnalogLocationInput;
+                                    analogLocationInput=  as AnalogLocationInputthis.list.get(playerInputId);;
     
 
                                     }
@@ -90,13 +84,13 @@ this.list.add(analogLocationInput);
 }
 
 
-    public getInstance(playerInputId: number): AnalogLocationInput{
+    public getInstanceForPlayer(playerInputId: number): AnalogLocationInput{
 var playerInputId = playerInputId
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.get(playerInputId); as AnalogLocationInput;
+                        return  as AnalogLocationInputthis.list.get(playerInputId);;
     
 }
 

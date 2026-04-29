@@ -45,8 +45,6 @@ export class DamageableBaseBehavior
         
 
     private static readonly instance: DamageableBaseBehavior = new DamageableBaseBehavior();
-        
-        
 
     public static getInstance(): DamageableBaseBehavior{
 

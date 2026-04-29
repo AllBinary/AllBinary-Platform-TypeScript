@@ -85,8 +85,6 @@ export class UpdateOrderHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -163,12 +161,12 @@ export class UpdateOrderHelper extends TagHelper {
     private storeComment: string
 
     private storeCancelComment: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.getFormData();
     
@@ -258,20 +256,14 @@ this.storeCancelComment= this.request.getParameter(OrderData.STORECANCELCOMMENT)
         try {
             
     var success: string = "Successful update";
-        
-        
 ;
     
 
-    var orderHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var orderHashMap: HashMap = new HashMap();
 ;
     
 
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var whereHashMap: HashMap = new HashMap();
 ;
     
 orderHashMap!.put(EntryData.getInstance()!.ID, entryId);
@@ -369,8 +361,6 @@ OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
             {
 
     var error: string = "Failed to update order table";
-        
-        
 ;
     
 

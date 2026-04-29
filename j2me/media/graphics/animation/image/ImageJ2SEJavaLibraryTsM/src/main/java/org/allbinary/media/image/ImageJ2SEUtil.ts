@@ -46,8 +46,6 @@ export class ImageJ2SEUtil
         
 
     private static readonly instance: ImageJ2SEUtil = new ImageJ2SEUtil();
-        
-        
 
     public static getInstance(): ImageJ2SEUtil{
 
@@ -60,8 +58,6 @@ export class ImageJ2SEUtil
 
 
     public readonly TRANSPARENT_COLOR: Color = new Color(0, 0, 0, 0);
-        
-        
 
 }
                 

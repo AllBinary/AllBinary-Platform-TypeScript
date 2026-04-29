@@ -48,8 +48,6 @@ export class HtmlValueInput extends HtmlInput {
     private value: string
 
     private readonly VALUE: string = "VALUE";
-        
-        
 public constructor (before: string, type: string, name: string, value: string, after: string){
             super(before, type, name, after);
                     var before = before
@@ -63,8 +61,6 @@ var after = after
                     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.value= stringUtil!.EMPTY_STRING;

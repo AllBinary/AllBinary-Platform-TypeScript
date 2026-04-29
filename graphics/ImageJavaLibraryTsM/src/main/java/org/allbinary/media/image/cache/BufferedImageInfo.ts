@@ -122,14 +122,10 @@ this.type= type;
     public toString(): string{
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("BufferedImageInfo -");

@@ -46,6 +46,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ClassLoader } from "./ClassLoader.js";
+
 export class NativeLibraryHelperWrapper
             extends Object
          {
@@ -70,16 +72,12 @@ this.setLibraryName(libraryName);
     public load(){
 
     var params: any[] = new Array(1);
-        
-        
 ;
     
 params[0]= getLibraryName();
     
 
     var classes: Function[] = new Array(1);
-        
-        
 ;
     
 classes[0]= getLibraryName()!.constructor;
@@ -88,29 +86,21 @@ this.loader= new NativeLibraryClassLoader(this.constructor.name.java.classLoader
     
 
     var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;
-        
-        
 ;
     
 
     var constructor: Constructor = myClass!.getConstructor(classes)!;
-        
-        
 ;
     
 this.anyType= constructor.newInstance(params);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var method: Method = this.anyType!..constructor.name.getMethod(commonStrings!.LOAD, 
                             null)!;
-        
-        
 ;
     
 method.invoke(this.anyType, 

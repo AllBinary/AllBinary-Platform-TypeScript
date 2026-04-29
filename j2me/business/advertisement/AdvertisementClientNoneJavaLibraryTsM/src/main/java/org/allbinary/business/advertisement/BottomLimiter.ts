@@ -51,8 +51,6 @@ export class BottomLimiter
         
 
     private static readonly instance: BottomLimiter = new BottomLimiter();
-        
-        
 
     public static getInstance(): BottomLimiter{
 
@@ -90,14 +88,10 @@ this.higher= higher;
     public update(){
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var gameAdState: GameAdState = GameAdStateFactory.getInstance()!.getCurrentInstance()!;
-        
-        
 ;
     
 

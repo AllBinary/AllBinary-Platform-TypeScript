@@ -70,20 +70,14 @@ var backupFile = backupFile
 var backupFileBak = backupFileBak
 
     var line: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
     var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(backupFileBak)));
-        
-        
 ;
     
 
     var tmpIn: BufferedReader = new BufferedReader(new FileReader(AbFileNativeUtil.get(backupFile)));
-        
-        
 ;
     
 

@@ -80,30 +80,22 @@ export class BaseChangedGameFeatureListener
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
-        
-        
 
     readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private changed: boolean = true;
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
+    //var eventObject = eventObject
 ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this);
     
 }
 
 
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
-var gameFeatureEvent = gameFeatureEvent
+    //var gameFeatureEvent = gameFeatureEvent
 this.logUtil!.putF(new StringMaker().
                             append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
     
@@ -115,21 +107,21 @@ setChanged(true);
 
 
     public add(gameFeature: Feature){
-var gameFeature = gameFeature
+    //var gameFeature = gameFeature
 this.list.add(gameFeature);
     
 }
 
 
     public remove(gameFeature: Feature){
-var gameFeature = gameFeature
+    //var gameFeature = gameFeature
 this.list.remove(gameFeature);
     
 }
 
 
     public setChanged(initialized: boolean){
-var initialized = initialized
+    //var initialized = initialized
 this.changed= initialized;
     
 
@@ -144,18 +136,14 @@ this.changed= initialized;
 }
 
 
-    public isChanged(gameFeature: Feature): boolean{
-var gameFeature = gameFeature
+    public isChangedFeature(gameFeature: Feature): boolean{
+    //var gameFeature = gameFeature
 
     var isChanged: boolean = this.list.contains(gameFeature)!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("GameFeature: ");

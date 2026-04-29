@@ -29,8 +29,6 @@ export class OpenGLThreadUtil
         
 
     private static readonly instance: OpenGLThreadUtil = new OpenGLThreadUtil();
-        
-        
 
     public static getInstance(): OpenGLThreadUtil{
 

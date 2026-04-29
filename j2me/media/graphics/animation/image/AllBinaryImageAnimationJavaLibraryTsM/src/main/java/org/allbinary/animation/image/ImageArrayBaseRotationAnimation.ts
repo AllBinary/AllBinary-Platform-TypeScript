@@ -74,20 +74,16 @@ export class ImageArrayBaseRotationAnimation extends RotationAnimation {
         
 
     private readonly imageModifierUtil: ImageModifierUtil = ImageModifierUtil.getInstanceOrCreate()!;
-        
-        
 
     private readonly originalImageArray: Image[]
 
     private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
-        
-        
 
     private currentImage: Image
 
     private totalFrames: number= 0
 public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
-            super(angleInfo, CircularIndexUtil.getInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
+            super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
                         //var originalImageArray = originalImageArray
     //var angleInfo = angleInfo
     //var animationBehavior = animationBehavior
@@ -128,8 +124,6 @@ this.imageModifierUtil!.reset();
     
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
@@ -145,8 +139,6 @@ super.nextRotation();
     
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
@@ -161,8 +153,6 @@ super.previousRotation();
     
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
@@ -178,8 +168,6 @@ super.setFrame(index2);
     
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.imageModifierUtil!.setAlpha(this.originalImageArray[index]!, this.imageArray[index]!, index, this.alphaP);
@@ -210,16 +198,14 @@ this.imageArray= imageArray;
     
 this.totalFrames= imageArray!.length;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
     
 }
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -231,15 +217,11 @@ graphics.drawImage(this.currentImage, x, y, anchor);
     public close(){
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-        
-        
 ;
     
 
     var size2: number = this.imageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -248,19 +230,15 @@ graphics.drawImage(this.currentImage, x, y, anchor);
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
-disposalUtil!.dispose(this.imageArray[index]!);
+disposalUtil!.disposeImage(this.imageArray[index]!);
     
 }
 
 
     var size: number = this.originalImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -269,15 +247,13 @@ disposalUtil!.dispose(this.imageArray[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!);
+disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
 }
 
-disposalUtil!.dispose(this.currentImage);
+disposalUtil!.disposeImage(this.currentImage);
     
 }
 
@@ -287,15 +263,11 @@ disposalUtil!.dispose(this.currentImage);
     finalize(){
 
     var disposalUtil: DisposalUtil = DisposalUtil.getInstance()!;
-        
-        
 ;
     
 
     var size2: number = this.imageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -304,19 +276,15 @@ disposalUtil!.dispose(this.currentImage);
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
-disposalUtil!.dispose(this.imageArray[index]!);
+disposalUtil!.disposeImage(this.imageArray[index]!);
     
 }
 
 
     var size: number = this.originalImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -325,15 +293,13 @@ disposalUtil!.dispose(this.imageArray[index]!);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-disposalUtil!.dispose(this.originalImageArray[index]!);
+disposalUtil!.disposeImage(this.originalImageArray[index]!);
     
 }
 
-disposalUtil!.dispose(this.currentImage);
+disposalUtil!.disposeImage(this.currentImage);
     
 }
 

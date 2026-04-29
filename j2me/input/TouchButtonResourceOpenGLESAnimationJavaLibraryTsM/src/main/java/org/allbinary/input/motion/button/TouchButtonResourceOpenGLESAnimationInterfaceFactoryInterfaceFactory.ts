@@ -63,7 +63,7 @@ public constructor (){
             
     public init(level: number){
 var level = level
-super.init(OpenGLImageCacheFactory.getInstance(), level);
+super.initImageCache(OpenGLImageCacheFactory.getInstance(), level);
     
 }
 

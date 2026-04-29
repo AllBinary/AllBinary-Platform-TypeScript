@@ -94,8 +94,6 @@ this.initCommands(commandListener);
     
 
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
-        
-        
 ;
     
 this.setSelectedId(gameDifficultyFactory!.getLevel());
@@ -122,8 +120,6 @@ this.save();
     public save(){
 
     var gameDifficultyFactory: GameDifficultyFactory = GameDifficultyFactory.getInstance()!;
-        
-        
 ;
     
 gameDifficultyFactory!.setLevel(this.getSelectedId());
@@ -135,8 +131,6 @@ gameDifficultyFactory!.setLevel(this.getSelectedId());
 var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 this.removeAllCommands();
@@ -166,8 +160,6 @@ var name = name
 var option = option
 
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
-        
-        
 ;
     
 
@@ -190,26 +182,18 @@ var name = name
 var option = option
 
     var METHOD_NAME: string = "addChoiceGroup";
-        
-        
 ;
     
 
     var NAME: string = "Adding Choice: ";
-        
-        
 ;
     
 
     var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -218,14 +202,10 @@ var option = option
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.objectArray[index]!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -247,9 +227,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
     public setSelectedId(id: number){
 var id = id
 
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
 ;
     
 choiceGroup!.setSelectedIndex(id, true);
@@ -259,9 +237,7 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedId(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
 ;
     
 
@@ -275,15 +251,11 @@ choiceGroup!.setSelectedIndex(id, true);
 
     public getSelectedText(): number{
 
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
 ;
     
 
     var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.toInt()!;
-        
-        
 ;
     
 

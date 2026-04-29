@@ -43,8 +43,6 @@ export class InventoryDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "inventorydbinitdata.dat";
-        
-        
 public constructor (){
             super(INITFILE, true);
                     

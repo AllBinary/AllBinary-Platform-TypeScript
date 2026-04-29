@@ -72,7 +72,7 @@ ForcedLogUtil.log(this.name, this);
 }
 
 
-    public add(index: number, element: any = {}){
+    public addAt(index: number, element: any = {}){
 var index = index
 var element = element
 ForcedLogUtil.log(this.name, this);

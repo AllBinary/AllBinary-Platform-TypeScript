@@ -62,8 +62,6 @@ export class InventoryTag extends StoreValidationTransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super();
                     
@@ -81,28 +79,20 @@ public constructor (){
             
     var anyType: any = new InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("search", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 pageContext!.getOut()!.print(result);
@@ -114,7 +104,8 @@ pageContext!.getOut()!.print(result);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -122,8 +113,6 @@ pageContext!.getOut()!.print(result);
             {
 
     var error: string = "Failed to search Inventory by keyword";
-        
-        
 ;
     
 
@@ -169,28 +158,20 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
             
     var anyType: any = new InventoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("viewSummary", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 pageContext!.getOut()!.print(result);
@@ -202,7 +183,8 @@ pageContext!.getOut()!.print(result);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -210,8 +192,6 @@ pageContext!.getOut()!.print(result);
             {
 
     var error: string = "Failed to View Summary";
-        
-        
 ;
     
 
@@ -319,7 +299,8 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand());
+                    
 
                         }
                             
@@ -329,7 +310,8 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
 
 
 
-                            throw new Error("Command Null")
+                            throw new Error("Command Null");
+                    
 
                 //: 
 } catch(e) 

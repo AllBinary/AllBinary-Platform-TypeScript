@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -44,14 +46,10 @@ import { ThreadPool } from "./ThreadPool.js";
 
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class PathFindingThreadPool extends ThreadPool {
         
 
     private static readonly instance: ThreadPool = new PathFindingThreadPool("PathFinding", 1, 1);
-        
-        
 
     public static getInstance(): ThreadPool{
 

@@ -80,7 +80,8 @@ this.setObjectFile("views.admin.payment.gateways.SelectExistingValidationView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand());
+                    
 
                         }
                             
@@ -96,7 +97,8 @@ this.setObjectFile("views.admin.payment.gateways.SelectExistingValidationView");
 
 
 
-                            throw new Error("Command Null")
+                            throw new Error("Command Null");
+                    
 
                 //: 
 } catch(e) 

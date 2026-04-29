@@ -58,8 +58,6 @@ public constructor (node: Node){
         var node = node
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 }
@@ -76,8 +74,6 @@ public constructor (){
 var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptInputData.NAME)!;
-        
-        
 ;
     
 

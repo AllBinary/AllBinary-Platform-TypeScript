@@ -61,8 +61,6 @@ export class HttpFileUploadUtil
         
 
     private static readonly instance: HttpFileUploadUtil = new HttpFileUploadUtil();
-        
-        
 
     public static getInstance(): HttpFileUploadUtil{
 
@@ -80,20 +78,14 @@ export class HttpFileUploadUtil
 var fileItem = fileItem
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append("FileItem Log:");
@@ -138,20 +130,14 @@ stringBuffer!.append(" Not Calculated Yet");
 var fileItem = fileItem
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append("FileItem Log:");
@@ -193,8 +179,6 @@ stringBuffer!.appendlong(fileItem!.getSize());
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -228,7 +212,8 @@ var anyType = anyType
                             
 
 
-                            throw new Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE))
+                            throw new Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
+                    
 
                         }
                             

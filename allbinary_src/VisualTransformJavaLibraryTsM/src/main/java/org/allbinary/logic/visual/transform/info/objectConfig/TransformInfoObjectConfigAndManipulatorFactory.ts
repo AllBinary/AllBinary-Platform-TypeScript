@@ -71,8 +71,6 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
         
 
     private static readonly instance: TransformInfoObjectConfigAndManipulatorFactory = new TransformInfoObjectConfigAndManipulatorFactory();
-        
-        
 
     public static getInstance(): TransformInfoObjectConfigAndManipulatorFactory{
 
@@ -85,8 +83,6 @@ export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInf
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -104,8 +100,6 @@ private constructor (){
             
     var data: string = new CryptFileReader(TransformInfoObjectConfigData.getInstance()!.UNCRYPTED_EXTENSION, TransformInfoObjectConfigData.getInstance()!.ENCRYPTED_EXTENSION).
                             get(objectConfigFileAbPath)!;
-        
-        
 ;
     
 
@@ -130,7 +124,8 @@ private constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -145,8 +140,6 @@ var transformInfoInterface = transformInfoInterface
         try {
             
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -159,7 +152,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface) as TransformInfoObjectConfigInterface;
+                        return  as TransformInfoObjectConfigInterfacenew GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface);
     
 
                                     }
@@ -169,7 +162,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TransformInfoObjectConfig(transformInfoInterface) as TransformInfoObjectConfigInterface;
+                        return  as TransformInfoObjectConfigInterfacenew TransformInfoObjectConfig(transformInfoInterface);
     
 
                         }
@@ -180,8 +173,6 @@ var transformInfoInterface = transformInfoInterface
             {
 
     var error: string = "Failed To Get Instance: ";
-        
-        
 ;
     
 
@@ -207,7 +198,8 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -223,8 +215,6 @@ var transformInfoInterface = transformInfoInterface
         try {
             
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -237,7 +227,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document) as TransformInfoObjectConfigInterface;
+                        return  as TransformInfoObjectConfigInterfacenew GenericStoreTransformInfoObjectConfig(abeClientInformation, transformInfoInterface, document);
     
 
                                     }
@@ -247,7 +237,7 @@ var transformInfoInterface = transformInfoInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new TransformInfoObjectConfig(transformInfoInterface, document) as TransformInfoObjectConfigInterface;
+                        return  as TransformInfoObjectConfigInterfacenew TransformInfoObjectConfig(transformInfoInterface, document);
     
 
                         }
@@ -258,8 +248,6 @@ var transformInfoInterface = transformInfoInterface
             {
 
     var error: string = "Failed To Get Instance: ";
-        
-        
 ;
     
 
@@ -285,7 +273,8 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

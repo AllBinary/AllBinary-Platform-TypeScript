@@ -64,26 +64,18 @@ import { PrimitiveLongUtil } from "../../../../../../org/allbinary/logic/math/Pr
 export class VelocityWidget extends BasicHud {
         
 
-    private readonly KILOMETERS_PER_HOUR_STR: string[] = charArrayOf(' ','k','m','/','h');
-        
-        
+    private readonly KILOMETERS_PER_HOUR_STR: string[] = [' ','k','m','/','h'];
 
     private readonly totalChars: number = KILOMETERS_PER_HOUR_STR.length
                 ;
-        
-        
 
     private velocity: number
 
     private maxVelocity: number
 
     private string: string[] = PrimitiveLongSingleton.getInstance()!.ZERO;
-        
-        
 
     private totalDigits: number = 1;
-        
-        
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
 
@@ -104,15 +96,13 @@ this.maxVelocity= powerOfTenVelocity;
     
 this.velocity= 0;
     
-this.primitiveLongUtil= PrimitiveLongUtil.create(powerOfTenVelocity);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(powerOfTenVelocity);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
-this.offset= myFont!.stringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.stringWidth(2);
+this.offset= myFont!.defaultStringWidth(this.primitiveLongUtil!.getMaxDigits()) +myFont!.defaultStringWidth(2);
     
 }
 
@@ -138,8 +128,6 @@ this.set(this.velocity +value);
 var value = value
 
     var lastVelocity: number = this.velocity;
-        
-        
 ;
     
 this.velocity= value;
@@ -176,11 +164,9 @@ this.velocity= value;
                             
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
-this.offset2= this.offset -myFont!.stringWidth(this.totalDigits) -myFont!.stringWidth(2);
+this.offset2= this.offset -myFont!.defaultStringWidth(this.totalDigits) -myFont!.defaultStringWidth(2);
     
 
                                     }
@@ -197,7 +183,7 @@ this.set(this.velocity -value);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset);
+super.paintDXY(graphics, string, 0, this.totalDigits, KILOMETERS_PER_HOUR_STR, 0, this.totalChars, offset2, offset);
     
 }
 

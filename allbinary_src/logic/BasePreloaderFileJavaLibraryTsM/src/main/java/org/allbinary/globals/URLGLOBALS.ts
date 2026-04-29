@@ -47,8 +47,6 @@ export class URLGLOBALS
         
 
     private urlGlobalsInterface: UrlGlobalsInterface = AppUrlGlobals.NULL_APP_URL_GLOBALS;
-        
-        
 
     public static init(urlGlobalsInterface: UrlGlobalsInterface){
 var urlGlobalsInterface = urlGlobalsInterface

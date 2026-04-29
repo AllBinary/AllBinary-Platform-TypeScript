@@ -46,8 +46,6 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Class } from "./Class.js";
-
 export class ConstructorUtil
             extends Object
          {
@@ -58,14 +56,10 @@ export class ConstructorUtil
     //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var constructor: Constructor[] = myClass!.getConstructors()!;
-        
-        
 ;
     
 stringBuffer!.append("Constructors: ");
@@ -78,8 +72,6 @@ stringBuffer!.append(lineBreak);
 
                         for (
     var index: number = 0;
-        
-        
 index < constructor.length; index++)
         {
 stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
@@ -106,22 +98,16 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
                                     {
                                     
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(constructor.getName());
     
 
     var classes: Function[] = constructor.getParameterTypes()!;
-        
-        
 ;
     
 
@@ -130,8 +116,6 @@ stringBuffer!.append(constructor.getName());
 
                         for (
     var index: number = 0;
-        
-        
 index < classes.length; index++)
         {
 stringBuffer!.append(commonSeps!.SPACE);

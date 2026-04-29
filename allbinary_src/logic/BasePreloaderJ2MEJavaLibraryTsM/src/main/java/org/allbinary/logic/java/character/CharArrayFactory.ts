@@ -43,8 +43,6 @@ export class CharArrayFactory
         
 
     private static readonly instance: CharArrayFactory = new CharArrayFactory();
-        
-        
 
     public static getInstance(): CharArrayFactory{
 
@@ -60,8 +58,6 @@ export class CharArrayFactory
                                                         
                                                         new Array(0)
                                                     ;
-        
-        
 
     public getZeroCharArray(): string[]{
 

@@ -71,8 +71,6 @@ export class UsersView extends HttpStoreComponentView implements DomNodeInterfac
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     userVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -91,14 +89,10 @@ var document = document
         try {
             
     var usersNode: Node = document.createElement(UsersData.NAME)!;
-        
-        
 ;
     
 
     var size: number = this.userVector!.length!;
-        
-        
 ;
     
 
@@ -107,14 +101,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userInterface: User = this.userVector!.get(index); as User;
-        
-        
+    var userInterface: User =  as Userthis.userVector!.get(index);;
 ;
     
 
@@ -126,8 +116,6 @@ index < size; index++)
                                     
     var node: Node = new UserDomNode(userInterface).
                             toXmlNode(document)!;
-        
-        
 ;
     
 usersNode!.appendChild(node);
@@ -174,7 +162,7 @@ usersNode!.appendChild(node);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -208,7 +196,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

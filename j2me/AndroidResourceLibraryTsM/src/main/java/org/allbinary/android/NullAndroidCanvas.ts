@@ -54,12 +54,8 @@ export class NullAndroidCanvas
             
 
     public static readonly NULL_CANVAS: Canvas = new Canvas();
-        
-        
 
     public static readonly NULL_MEDIA_PLAYER: MediaPlayer = new MediaPlayer();
-        
-        
 
 }
                 

@@ -43,8 +43,6 @@ export class CommonPhoneStrings
         
 
     private static readonly instance: CommonPhoneStrings = new CommonPhoneStrings();
-        
-        
 
     public static getInstance(): CommonPhoneStrings{
 
@@ -57,72 +55,38 @@ export class CommonPhoneStrings
 
 
     public readonly UP: string = "UP";
-        
-        
 
     public readonly DOWN: string = "DOWN";
-        
-        
 
     public readonly LEFT: string = "LEFT";
-        
-        
 
     public readonly RIGHT: string = "RIGHT";
-        
-        
 
     public readonly ZERO: string = "0";
-        
-        
 
     public readonly ONE: string = "1";
-        
-        
 
     public readonly TWO: string = "2";
-        
-        
 
     public readonly THREE: string = "3";
-        
-        
 
     public readonly FOUR: string = "4";
-        
-        
 
     public readonly FIVE: string = "5";
-        
-        
 
     public readonly SIX: string = "6";
-        
-        
 
     public readonly SEVEN: string = "7";
-        
-        
 
     public readonly EIGHT: string = "8";
-        
-        
 
     public readonly NINE: string = "9";
-        
-        
 
     public readonly POUND: string = "#";
-        
-        
 
     public readonly STAR: string = "*";
-        
-        
 
     public readonly FIRE: string = "FIRE";
-        
-        
 
 }
                 

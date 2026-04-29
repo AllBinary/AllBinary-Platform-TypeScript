@@ -78,12 +78,8 @@ export class FeaturedResourceFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (){
 
             super();
@@ -91,44 +87,24 @@ public constructor (){
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly ANIMATION_FEATURES: string = "Animation Features: Vector: ";
-        
-        
 
     private readonly IMAGE_LABEL: string = " Image: ";
-        
-        
 
     private readonly IMAGE_GRAPHICS_ARRAY: string = "Image Array: ";
-        
-        
 
     private readonly IMAGE_GRAPHICS_ROTATION: string = "Image Rotate: ";
-        
-        
 
     private readonly SPRITE_QUARTER: string = " Sprite Quarter: ";
-        
-        
 
     private readonly SPRITE_FULL: string = " Sprite Full: ";
-        
-        
 
     private readonly IS_LOADING_LEVEL_LABEL: string = " isLoadingLevel ";
-        
-        
 
     private readonly IS_FEATURE: string = " isFeature: ";
-        
-        
 
     private readonly GAME_FEATURE_CONTROLLED: string = "GameFeatureControlledInterface: ";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -136,8 +112,6 @@ public constructor (){
 var level = level
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -146,26 +120,18 @@ var level = level
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var featureInterface: GameFeatureControlledInterface = this.list.objectArray[index]! as GameFeatureControlledInterface;
-        
-        
+    var featureInterface: GameFeatureControlledInterface =  as GameFeatureControlledInterfacethis.list.objectArray[index]!;
 ;
     
 
     var isLoadingLevel: boolean = featureInterface!.isLoadingLevel(level)!;
-        
-        
 ;
     
 
     var isFeature: boolean = featureInterface!.isFeature()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -184,20 +150,14 @@ this.logUtil!.putF(new StringMaker().
 
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var graphicsFeatureFactory: GraphicsFeatureFactory = GraphicsFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.ANIMATION_FEATURES);

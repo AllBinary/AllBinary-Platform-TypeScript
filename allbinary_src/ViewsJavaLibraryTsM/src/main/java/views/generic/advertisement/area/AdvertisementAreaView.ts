@@ -71,8 +71,6 @@ export class AdvertisementAreaView extends HttpStoreComponentView implements Dom
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private advertisementAreaName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -82,7 +80,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
+this.advertisementAreaName=  as Stringthis.getPropertiesHashMap()!.get(AdvertisementAreaData.getInstance()!.NAME);;
     
 }
 
@@ -95,14 +93,10 @@ var document = document
         try {
             
     var advertisementAreasEntityInterface: AdvertisementAreasEntityInterface = AdvertisementAreasEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var advertisementAreaInterface: AdvertisementAreaInterface = advertisementAreasEntityInterface!.get(this.getTransformInfoInterface()!.getStoreName(), advertisementAreaName)!;
-        
-        
 ;
     
 
@@ -127,14 +121,15 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -168,7 +163,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

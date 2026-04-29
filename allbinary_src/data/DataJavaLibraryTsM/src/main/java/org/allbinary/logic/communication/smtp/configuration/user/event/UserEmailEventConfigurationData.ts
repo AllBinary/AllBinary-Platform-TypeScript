@@ -43,12 +43,8 @@ export class UserEmailEventConfigurationData
         
 
     public static readonly NAME: string = "EMAIL_EVENT_CONFIGURATION_NAME";
-        
-        
 
     public static readonly LISTENER_CLASSPATH: string = "EMAIL_EVENT_CONFIGURATION_LISTENER_CLASSPATH";
-        
-        
 private constructor (){
 
             super();

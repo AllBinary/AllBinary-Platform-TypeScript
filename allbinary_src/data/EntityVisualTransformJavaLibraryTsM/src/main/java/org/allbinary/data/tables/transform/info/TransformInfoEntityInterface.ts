@@ -57,7 +57,7 @@ export interface TransformInfoEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
+    public get(name: string, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface
 
                 //@Throws(Error::class)
             
@@ -71,7 +71,7 @@ export interface TransformInfoEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    public update(updatedValues: HashMap)
 
 }
                 

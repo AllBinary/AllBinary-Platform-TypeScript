@@ -51,8 +51,6 @@ export class GameInputProcessor
         
 
     private static readonly instance: GameInputProcessor = new GameInputProcessor();
-        
-        
 
     public static getInstance(): GameInputProcessor{
 
@@ -71,7 +69,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
+    public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var gameKeyEvent = gameKeyEvent
 }
@@ -79,7 +77,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public processReleased(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
+    public processReleasedEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var gameKeyEvent = gameKeyEvent
 }
@@ -87,7 +85,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, analogValue: number){
+    public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, analogValue: number){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var gameKeyEvent = gameKeyEvent
     //var analogValue = analogValue
@@ -96,7 +94,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
+    public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var keyAsInteger = keyAsInteger
 }
@@ -104,7 +102,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
+    public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var keyAsInteger = keyAsInteger
 }

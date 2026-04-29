@@ -72,24 +72,16 @@ export class CountedLayerInterfaceFactoryPart
         
 
     public static readonly NULL_COUNTED_LAYER_INTERFACE_FACTORY: CountedLayerInterfaceFactoryPart = new CountedLayerInterfaceFactoryPart(0, CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY);
-        
-        
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 
     private total: number= 0
 
     private totalString: string[] = NullUtil.getInstance()!.NULL_CHAR_ARRAY;
-        
-        
 
     private xOffset: number= 0
 
     private countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
-        
-        
 
     private readonly primitiveLongUtil: PrimitiveLongUtil
 public constructor (total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
@@ -97,7 +89,7 @@ public constructor (total: number, countedPickedUpLayerInterfaceFactory: Counted
             super();
         var total = total
 var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.primitiveLongUtil= PrimitiveLongUtil.create(1000);
+this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 this.init(total, countedPickedUpLayerInterfaceFactory);
     
@@ -116,7 +108,7 @@ this.total= total;
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
 var x = x
 var y = y
@@ -131,7 +123,7 @@ var z = z
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getCountedPickedUpLayerInterfaceFactory()!.getInstance(hashtable, x, y, z);;
+                        return this.getCountedPickedUpLayerInterfaceFactory()!.getNextInstance(hashtable, x, y, z);;
     
 
                                     }
@@ -140,7 +132,8 @@ var z = z
                             
 
 
-                            throw new Error("No more left. Could use a listener to automatically remove")
+                            throw new Error("No more left. Could use a listener to automatically remove");
+                    
 
                         }
                             
@@ -165,8 +158,6 @@ this.totalString= this.primitiveLongUtil!.getCharArray(total);
     
 
     var font: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize()>>1));

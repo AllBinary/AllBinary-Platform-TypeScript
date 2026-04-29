@@ -66,9 +66,6 @@ import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from "../..
 import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
 
     
-import { SoundThreadPool } from "../../../../org/allbinary/thread/SoundThreadPool.js";
-
-    
 import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
@@ -101,8 +98,6 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly gameCanvas: AllBinaryGameCanvas
 
@@ -111,14 +106,12 @@ export class MapSelectionGameInputProcessor extends Processor implements GameInp
     private readonly preGameSelectorPaintable: PreGameSelectorPaintable
 
     private readonly inputTimeHelper: TimeDelayHelper = new TimeDelayHelper(650);
-        
-        
 
     private readonly playerGameInput: PlayerGameInput
 
     private readonly lockedIndex: number
 
-    private readonly abRunnable: ABRunnable = new object: ABRunnable()
+    private readonly abRunnable: ABRunnable = new ABRunnable()
                                 {
                                 
     public run(){
@@ -130,19 +123,15 @@ SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 
     var track: number = preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex() +1;
-        
-        
 ;
     
 
     var wave: number = raceTrackGeographicMapInterfaceFactoryInterface!.getFirstWaveWithTrack(track)!;
-        
-        
 ;
     
 gameCanvas!.getLayerManager()!.getGameInfo()!.setCurrentLevel(wave);
     
-gameCanvas!.buildGame(false);
+gameCanvas!.buildGameInit(false);
     
 GameKeyEventHandler.getInstance()!.removeListener(getPlayerGameInput());
     
@@ -156,14 +145,10 @@ this.setRunning(false);
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -174,8 +159,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
                                 }
                             ;
-        
-        
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 
             super();
@@ -210,8 +193,6 @@ this.getPlayerGameInput()!.update();
 var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -220,20 +201,14 @@ var list = list
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.get(index)!;
-        
-        
 ;
     
 
     var key: number = GameKeyEventUtil.getKey(anyType)!;
-        
-        
 ;
     
 
@@ -241,7 +216,7 @@ index < size; index++)
                         
                                     {
                                     
-                        if(this.inputTimeHelper!.isTime())
+                        if(this.inputTimeHelper!.isTimeTNT())
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
@@ -263,12 +238,10 @@ break;
                                     {
                                     
     var selectedIndex: number = this.preGameSelectorPaintable!.getPreGameSelectionForm()!.getSelectedIndex()!;
-        
-        
 ;
     
 
-                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLockedFeature();)
+                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked();)
                         
                                     {
                                     
@@ -279,8 +252,6 @@ break;
     
 
     var thread: Thread = new Thread(abRunnable);
-        
-        
 ;
     
 thread.start();

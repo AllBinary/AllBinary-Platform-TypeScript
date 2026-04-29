@@ -71,12 +71,8 @@ export class GameKeyFromMotionGestureEventListener extends CompleteMotionGesture
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private previousGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -90,15 +86,11 @@ var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
             
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventcompleteMotionGestureInputEvent;
 ;
     
 
     var gameKeyEvent: GameKeyEvent = gameKeyCompleteMotionGestureInputEvent!.getGameKeyEvent()!;
-        
-        
 ;
     
 
@@ -136,8 +128,6 @@ this.previousGameKeyEvent= gameKeyEvent;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e);

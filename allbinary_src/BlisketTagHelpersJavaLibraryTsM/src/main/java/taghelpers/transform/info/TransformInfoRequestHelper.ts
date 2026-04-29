@@ -65,11 +65,9 @@ export class TransformInfoRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoHttpInterface
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -84,14 +82,10 @@ this.transformInfoInterface= new TransformInfoHttpStoreNoManipulation(properties
         try {
             
     var success: string = "Updated Successfully";
-        
-        
 ;
     
 
-    var hashMapData: HashMap<any, any> = this.transformInfoInterface!.toHashMap()!;
-        
-        
+    var hashMapData: HashMap = this.transformInfoInterface!.toHashMap()!;
 ;
     
 TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
@@ -117,8 +111,6 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
             {
 
     var error: string = "Failed to update storefronts table";
-        
-        
 ;
     
 
@@ -146,14 +138,10 @@ TransformInfoEntityBuilder.getInstance()!.update(hashMapData);
         try {
             
     var success: string = "Added TransformInfo Successfully";
-        
-        
 ;
     
 
     var values: Vector = this.transformInfoInterface!.toVector()!;
-        
-        
 ;
     
 TransformInfoEntityBuilder.getInstance()!.insert(values);
@@ -179,8 +167,6 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
             {
 
     var error: string = "Failed to add storefronts table";
-        
-        
 ;
     
 
@@ -208,11 +194,9 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
         try {
             
     var success: string = "Delete Successfully";
-        
-        
 ;
     
-TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as String);
+TransformInfoEntityBuilder.getInstance()!.delete( as Stringthis.transformInfoInterface!.getKey());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -235,8 +219,6 @@ TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.ge
             {
 
     var error: string = "Failed to delete storefronts table";
-        
-        
 ;
     
 

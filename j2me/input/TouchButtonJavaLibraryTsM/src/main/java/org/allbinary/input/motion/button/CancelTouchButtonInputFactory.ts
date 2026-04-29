@@ -50,8 +50,6 @@ export class CancelTouchButtonInputFactory
         
 
     private static readonly instance: CancelTouchButtonInputFactory = new CancelTouchButtonInputFactory();
-        
-        
 
     public static getInstance(): CancelTouchButtonInputFactory{
 
@@ -64,15 +62,11 @@ export class CancelTouchButtonInputFactory
 
 
     private readonly cancelInputArray: TouchButtonInput[] = new Array(InputFactory.getInstance()!.MAX);
-        
-        
 private constructor (){
 
             super();
         
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -81,8 +75,6 @@ private constructor (){
 
                         for (
     var index: number = this.cancelInputArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.cancelInputArray[index]= basicTouchInputFactory!.NONE;

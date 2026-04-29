@@ -43,8 +43,6 @@ export class StringUtil
         
 
     private static readonly instance: StringUtil = new StringUtil();
-        
-        
 
     public static getInstance(): StringUtil{
 
@@ -57,30 +55,22 @@ export class StringUtil
 
 
     public readonly NULL_STRING: string = "null";
-        
-        
 
     public readonly EMPTY_STRING: string = "";
-        
-        
 
     public ONE_EMPTY_STRING_ARRAY: string[] = 
                                                         [
                                                             this.EMPTY_STRING
                                                         ];
-        
-        
 
     private readonly stringArray: string[] = [];
-        
-        
 private constructor (){
 
             super();
         }
 
 
-    public getInstance(string: string): string{
+    public getNonNull(string: string): string{
 var string = string
 
                         if(string == 
@@ -125,14 +115,10 @@ var string = string
     //var aChar = aChar
 
     var count: number = 0;
-        
-        
 ;
     
 
     var size: number = string.length!;
-        
-        
 ;
     
 
@@ -141,8 +127,6 @@ var string = string
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 

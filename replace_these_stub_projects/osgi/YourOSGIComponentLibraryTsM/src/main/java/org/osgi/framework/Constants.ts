@@ -30,8 +30,6 @@ export interface Constants {
         
 
     public static readonly BUNDLE_SYMBOLICNAME: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
 }
                 

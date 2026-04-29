@@ -71,33 +71,25 @@ export class RaceTrackStartPointUtil
     //var index = index
 
     var list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
-        
-        
 ;
     
 
-    var startPathFindingNode: PathFindingNode = list.get(index); as PathFindingNode;
-        
-        
+    var startPathFindingNode: PathFindingNode =  as PathFindingNodelist.get(index);;
 ;
     
 
     var geographicMapCellPosition: GeographicMapCellPosition = startPathFindingNode!.geographicMapCellPosition;
-        
-        
 ;
     
 
     var point: GPoint = geographicMapCellPosition!.getPoint()!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return PointFactory.getInstance()!.getInstance0(point.getX(), point.getY() +geographicMapInterface!.getAllBinaryTiledLayer()!.getHalfCellHeight());;
+                        return PointFactory.getInstance()!.createXY(point.getX(), point.getY() +geographicMapInterface!.getAllBinaryTiledLayer()!.getHalfCellHeight());;
     
 }
 

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CachePolicy } from "./CachePolicy.js";
+
 export class CachePolicyFactory
             extends Object
          {
         
 
     private static readonly instance: CachePolicyFactory = new CachePolicyFactory();
-        
-        
 
     public static getInstance(): CachePolicyFactory{
 
@@ -57,32 +57,18 @@ export class CachePolicyFactory
 
 
     public readonly NAME: string = "lru";
-        
-        
 
     public MAX_TIME_THOUSAND_MAX: CachePolicy = new CachePolicy(this.NAME, Long.MAX_VALUE, 1000);
-        
-        
 
     public THIRTY_MINUTES_TEN_THOUSAND_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *30, 10000);
-        
-        
 
     public THIRTY_MINUTES_FIFTY_THOUSAND_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *30, 100000);
-        
-        
 
     public ONE_MINUTE_FIVE_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *1, 5);
-        
-        
 
     public ONE_MINUTE_TEN_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *1, 10);
-        
-        
 
     public ONE_MINUTE_ONE_HUNDRED_MAX: CachePolicy = new CachePolicy(this.NAME, 1000 *60 *1, 100);
-        
-        
 
 }
                 

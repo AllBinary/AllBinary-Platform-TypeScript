@@ -48,8 +48,6 @@ export class StatusFactory
         
 
     private static readonly instance: StatusFactory = new StatusFactory();
-        
-        
 
     public static getInstance(): StatusFactory{
 
@@ -62,16 +60,10 @@ export class StatusFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly SETSTATUS: string = "setStatus";
-        
-        
 
     private readonly STATUS_LABEL: string = "Status: ";
-        
-        
 
     public setStatusNoLog(status: string){
 var status = status

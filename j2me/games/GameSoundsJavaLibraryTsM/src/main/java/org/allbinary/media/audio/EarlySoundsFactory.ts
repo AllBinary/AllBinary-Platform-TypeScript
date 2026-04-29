@@ -47,8 +47,6 @@ export class EarlySoundsFactory extends BaseSoundsFactory {
         
 
     private static readonly instance: EarlySoundsFactory = new EarlySoundsFactory();
-        
-        
 
     public static getInstance(): EarlySoundsFactory{
 
@@ -65,14 +63,10 @@ export class EarlySoundsFactory extends BaseSoundsFactory {
     public getSoundInterfaceArray(): Sound[]{
 
     var soundInterfaceArray: Sound[] = new Array(2);
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 soundInterfaceArray[index++]= SelectSound.getInstance();

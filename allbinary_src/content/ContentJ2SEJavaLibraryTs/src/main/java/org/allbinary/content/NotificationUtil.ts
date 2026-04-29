@@ -50,6 +50,8 @@ import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
         
 import { Context } from "./Context.js";
 
+import { NotificationManager } from "./NotificationManager.js";
+
 import { CommandUriAction } from "./CommandUriAction.js";
 
 import { PendingIntent } from "./PendingIntent.js";
@@ -60,8 +62,6 @@ export class NotificationUtil
         
 
     private static readonly SINGLETON: NotificationUtil = new NotificationUtil();
-        
-        
 
     public static getInstance(): NotificationUtil{
 
@@ -73,9 +73,7 @@ export class NotificationUtil
 }
 
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
-        
-        
+    private notificationManager: NotificationManager =  as NotificationManagerResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);;
 
     public notify(command: Command, resource: string, message: string){
 var command = command
@@ -83,32 +81,22 @@ var resource = resource
 var message = message
 
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
-        
-        
 ;
     
 
     var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
-        
-        
 ;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
-        
-        
+    var integer: number = ResourceUtil.getInstance()!.getResourceId(resource)!;
 ;
     
 
-    var notification: Notification = new Notification(integer.toInt(), message, System.currentTimeMillis());
-        
-        
+    var notification: Notification = new Notification(integer.toInt(), message, Date.now());
 ;
     
 
     var pendingIntent: PendingIntent = PendingIntent.getActivity(context, 0, intent, 0)!;
-        
-        
 ;
     
 notification.setLatestEventInfo(context, command.getLabel(), message, pendingIntent);

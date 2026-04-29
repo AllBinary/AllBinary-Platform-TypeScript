@@ -49,16 +49,10 @@ export class ScaleProperties
         
 
     public static readonly instance: ScaleProperties = new ScaleProperties();
-        
-        
 
     public scaleX: number = 1.0f;
-        
-        
 
     public scaleY: number = 1.0f;
-        
-        
 
     public scaleWidth: number= 0
 

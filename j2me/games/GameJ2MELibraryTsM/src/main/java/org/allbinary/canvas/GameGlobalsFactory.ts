@@ -51,8 +51,6 @@ export class GameGlobalsFactory
         
 
     private static readonly instance: GameGlobalsFactory = new GameGlobalsFactory();
-        
-        
 
     public static getInstance(): GameGlobalsFactory{
 
@@ -65,16 +63,10 @@ export class GameGlobalsFactory
 
 
     public newCanvas: boolean = true;
-        
-        
 
     public newDisplaybleTime: number = Integer.MIN_VALUE;
-        
-        
 
     public point: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-        
-        
 
 }
                 

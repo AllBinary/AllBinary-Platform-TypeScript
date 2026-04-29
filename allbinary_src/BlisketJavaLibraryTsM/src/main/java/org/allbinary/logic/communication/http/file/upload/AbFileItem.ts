@@ -79,18 +79,16 @@ import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class AbFileItem
             extends Object
          implements FileItem {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly name: string
 
@@ -118,7 +116,8 @@ this.byteArray= byteArray;
 
 
 
-                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -225,7 +224,8 @@ var file = file
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -236,7 +236,8 @@ var file = file
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -301,7 +302,8 @@ var state = state
 
 
 
-                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new IOException(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -309,7 +311,8 @@ var state = state
 
 
 
-                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw Error();
+                    
 }
 
 
@@ -318,7 +321,8 @@ var fih = fih
 
 
 
-                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw Error();
+                    
 }
 
 

@@ -46,8 +46,6 @@ export class OpenGLESImageDraw
         
 
     private static readonly instance: OpenGLESImageDraw = new OpenGLESImageDraw();
-        
-        
 
     public static getInstance(): OpenGLESImageDraw{
 

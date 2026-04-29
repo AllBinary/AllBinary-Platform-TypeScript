@@ -58,8 +58,6 @@ export class AnimationFactoryImageScaleUtil
         
 
     private static readonly instance: AnimationFactoryImageScaleUtil = new AnimationFactoryImageScaleUtil();
-        
-        
 
     public static getInstance(): AnimationFactoryImageScaleUtil{
 
@@ -72,8 +70,6 @@ export class AnimationFactoryImageScaleUtil
 
 
     private readonly imageScaleUtil: ImageJ2MEScaleUtil = ImageJ2MEScaleUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -93,14 +89,10 @@ export class AnimationFactoryImageScaleUtil
                                     {
                                     
     var scaleX: number = (scaleWidth) /(width);
-        
-        
 ;
     
 
     var scaleY: number = (scaleHeight) /(height);
-        
-        
 ;
     
 
@@ -113,7 +105,7 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            scaledImage= this.imageScaleUtil!.scale(image, (scaleX *width), (scaleY *height));
+                            scaledImage= this.imageScaleUtil!.scale(image, Math.round(scaleX *width), Math.round(scaleY *height));
     
 
                         }
@@ -142,8 +134,6 @@ export class AnimationFactoryImageScaleUtil
     //var baseImageAnimationFactory = baseImageAnimationFactory
 
     var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;
-        
-        
 ;
     
 
@@ -152,20 +142,14 @@ export class AnimationFactoryImageScaleUtil
                                     {
                                     
     var animationFactoryInitializationVisitor: AnimationFactoryInitializationVisitor = baseImageAnimationFactory!.getAnimationFactoryInitializationVisitorP()!;
-        
-        
 ;
     
 
     var scaleX: number = (scaleProperties!.scaleWidth) /(animationFactoryInitializationVisitor!.width);
-        
-        
 ;
     
 
     var scaleY: number = (scaleProperties!.scaleHeight) /(animationFactoryInitializationVisitor!.height);
-        
-        
 ;
     
 
@@ -176,9 +160,9 @@ export class AnimationFactoryImageScaleUtil
                                     }
                                 
                         else {
-                            animationFactoryInitializationVisitor!.dx= (animationFactoryInitializationVisitor!.originalDx *scaleX);
+                            animationFactoryInitializationVisitor!.dx= Math.round(animationFactoryInitializationVisitor!.originalDx *scaleX);
     
-animationFactoryInitializationVisitor!.dy= (animationFactoryInitializationVisitor!.originalDy *scaleY);
+animationFactoryInitializationVisitor!.dy= Math.round(animationFactoryInitializationVisitor!.originalDy *scaleY);
     
 
                         }

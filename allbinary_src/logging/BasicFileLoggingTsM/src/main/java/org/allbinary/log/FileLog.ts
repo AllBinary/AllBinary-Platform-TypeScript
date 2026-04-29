@@ -64,48 +64,28 @@ import { LogFormatUtil } from "../../../org/allbinary/logic/communication/log/Lo
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Exception } from "./Exception.js";
-
 export class FileLog
             extends Object
          {
         
 
     private static readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private static readonly logLength: number = 33000000;
-        
-        
 
     private static readonly logPath: string = "g:\\log\\";
-        
-        
 
     private static readonly extension: string = .toCharArray();
-        
-        
 
     private static readonly fileName: string = .toCharArray();
-        
-        
 
     private static readonly backupFileName: string = fileName!.concat(".bak")!;
-        
-        
 
     private static readonly ORG_ALLBINARY: string = "org.allbinary: ";
-        
-        
 
     private firstTime: boolean = true;
-        
-        
 
     private logFile: File = new File(logPath, fileName);
-        
-        
 
     private logFileBak: File
 
@@ -133,8 +113,6 @@ export class FileLog
     
 
     var raFile: RandomAccessFile = new RandomAccessFile(logFile, "rw");
-        
-        
 ;
     
 raFile!.seek(raFile!.length());
@@ -146,8 +124,6 @@ fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                             
 
     var canWrite: boolean = logFile!.canWrite()!;
-        
-        
 ;
     
 
@@ -192,20 +168,14 @@ logFileBak= new File(logPath, new StringBuilder().
 
 
     var line: string = .toCharArray();
-        
-        
 ;
     
 
     var tmpOut: BufferedWriter = new BufferedWriter(new FileWriter(logFileBak));
-        
-        
 ;
     
 
     var tmpIn: BufferedReader = new BufferedReader(new FileReader(logFile));
-        
-        
 ;
     
 
@@ -297,8 +267,6 @@ var exception = exception
                                 
 
     var length: number = logFile!.length()!;
-        
-        
 ;
     
 
@@ -323,8 +291,6 @@ var exception = exception
                                 
 
     var className: string = NULL_STRING.toCharArray();
-        
-        
 ;
     
 
@@ -344,8 +310,6 @@ var exception = exception
                         className= anyType!.constructor.name.toString()!
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 fileOut!.write(message, 0, message.length);
@@ -422,8 +386,6 @@ var functionName = functionName
                                 
 
     var length: number = logFile!.length()!;
-        
-        
 ;
     
 
@@ -458,8 +420,6 @@ var functionName = functionName
                         specialMessage= NULL_STRING.toCharArray()
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 fileOut!.write(message, 0, message.length);

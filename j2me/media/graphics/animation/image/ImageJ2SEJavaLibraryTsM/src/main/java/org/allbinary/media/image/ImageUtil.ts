@@ -18,9 +18,6 @@
 
 
 
-import { Color } from "../../../../java/awt/Color.js";
-
-    
 import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
 
     
@@ -45,13 +42,7 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
-import { PositionStrings } from "../../../../org/allbinary/math/PositionStrings.js";
 
     
 import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
@@ -94,8 +85,6 @@ export class ImageUtil
         
 
     private static readonly instance: ImageUtil = new ImageUtil();
-        
-        
 
     public static getInstance(): ImageUtil{
 
@@ -108,20 +97,12 @@ export class ImageUtil
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private IIOIMAGE_POOL_NAME: string = "IIOIMAGE_POOL_NAME";
-        
-        
 
     private readonly CREATE_BUFFERED_IMAGE: string = "createBufferedImage";
-        
-        
 private constructor (){
 
             super();
@@ -131,14 +112,10 @@ private constructor (){
     getDefaultConfiguration(): GraphicsConfiguration{
 
     var ge: GraphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()!;
-        
-        
 ;
     
 
     var gd: GraphicsDevice = ge.getDefaultScreenDevice()!;
-        
-        
 ;
     
 
@@ -155,8 +132,6 @@ private constructor (){
     //var height = height
 
     var graphicsConfiguration: GraphicsConfiguration = this.getDefaultConfiguration()!;
-        
-        
 ;
     
 
@@ -170,21 +145,17 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createBufferedImage(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
+    public createBufferedImageForResize(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
     //var percent = percent
     //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
-        
-        
 ;
     
 
@@ -197,22 +168,16 @@ private constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = (bufferedImage!.getWidth() *percent /100);
-        
-        
+    var newWidth: number = Math.round(bufferedImage!.getWidth() *percent /100);
 ;
     
 
-    var newHeight: number = (bufferedImage!.getHeight() *percent /100);
-        
-        
+    var newHeight: number = Math.round(bufferedImage!.getHeight() *percent /100);
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
@@ -230,21 +195,17 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 
                 //@Throws(Error::class)
             
-    public createBufferedImage(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
+    public createBufferedImage2(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
     //var percent = percent
     //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
-        
-        
 ;
     
 
@@ -257,22 +218,16 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 bufferedImage= bufferedImageArray[index]!;
     
 
-    var newWidth: number = (bufferedImage!.getWidth() *percent);
-        
-        
+    var newWidth: number = Math.round(bufferedImage!.getWidth() *percent);
 ;
     
 
-    var newHeight: number = (bufferedImage!.getHeight() *percent);
-        
-        
+    var newHeight: number = Math.round(bufferedImage!.getHeight() *percent);
 ;
     
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidth, newHeight, scale);
@@ -290,7 +245,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 
                 //@Throws(Error::class)
             
-    public createBufferedImage(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
+    public createBufferedImage3(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
     //var width = width
     //var height = height
@@ -298,14 +253,10 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 
     var size: number = bufferedImageArray!.length
                 ;
-        
-        
 ;
     
 
     var scaledBufferedImageArray: BufferedImage[] = new Array(size);
-        
-        
 ;
     
 
@@ -314,8 +265,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[index]!, width, height, scale);
@@ -333,7 +282,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
 
                 //@Throws(Error::class)
             
-    public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
+    public createBufferedImageForSave(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage
     //var newWidth = newWidth
 var newHeight = newHeight
@@ -357,14 +306,14 @@ var newHeight = newHeight
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createBufferedImage(bufferedImage, newWidth, newHeight, scale, false);;
+                        return this.createBufferedImageAllowTranslate(bufferedImage, newWidth, newHeight, scale, false);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
+    public createBufferedImageAllowTranslate(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
     //var newWidth = newWidth
 var newHeight = newHeight
@@ -372,50 +321,34 @@ var newHeight = newHeight
     //var allowTranslate = allowTranslate
 
     var width: number = bufferedImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = bufferedImage!.getHeight()!;
-        
-        
 ;
     
 
     var d_newWidth: number = newWidth;
-        
-        
 ;
     
 
     var d_newHeight: number = newHeight;
-        
-        
 ;
     
 
     var widthRatio: number = d_newWidth /width;
-        
-        
 ;
     
 
     var heightRatio: number = d_newHeight /height;
-        
-        
 ;
     
 
     var ratioX: number = 1.0;
-        
-        
 ;
     
 
     var ratioY: number = 1.0;
-        
-        
 ;
     
 
@@ -431,8 +364,6 @@ ratioY= heightRatio;
                                 
 
     var affineTransform: AffineTransform = AffineTransform.getScaleInstance(ratioX, ratioY)!;
-        
-        
 ;
     
 
@@ -441,14 +372,10 @@ ratioY= heightRatio;
                                     {
                                     
     var dx: number = (newWidth -width) /2;
-        
-        
 ;
     
 
     var dy: number = (newHeight -height) /2;
-        
-        
 ;
     
 affineTransform!.translate(dx, dy);
@@ -458,14 +385,10 @@ affineTransform!.translate(dx, dy);
                                 
 
     var newBufferedImage: BufferedImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_ARGB_PRE);
-        
-        
 ;
     
 
     var graphics: Graphics2D = newBufferedImage!.createGraphics()!;
-        
-        
 ;
     
 graphics.drawRenderedImage(bufferedImage, affineTransform);
@@ -487,86 +410,58 @@ graphics.drawRenderedImage(bufferedImage, affineTransform);
 var newHeight = newHeight
 
     var width: number = bufferedImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = bufferedImage!.getHeight()!;
-        
-        
 ;
     
 
     var d_newWidth: number = newWidth;
-        
-        
 ;
     
 
     var d_newHeight: number = newHeight;
-        
-        
 ;
     
 
     var widthRatio: number = d_newWidth /width;
-        
-        
 ;
     
 
     var heightRatio: number = d_newHeight /height;
-        
-        
 ;
     
 
-    var dx2: number = (newWidth -width);
-        
-        
+    var dx2: number = Math.round(newWidth -width);
 ;
     
 
-    var dy2: number = (newHeight -height);
-        
-        
+    var dy2: number = Math.round(newHeight -height);
 ;
     
 
-    var dx: number = dx2 /2;
-        
-        
+    var dx: number = Math.rounddx2 /2;
 ;
     
 
-    var dy: number = dy2 /2;
-        
-        
+    var dy: number = Math.rounddy2 /2;
 ;
     
 
-    var dx4: number = dx2 /4;
-        
-        
+    var dx4: number = Math.rounddx2 /4;
 ;
     
 
-    var dy4: number = dy2 /4;
-        
-        
+    var dy4: number = Math.rounddy2 /4;
 ;
     
 
     var newBufferedImage: BufferedImage = new BufferedImage(newWidth, newHeight, BufferedImage.TYPE_INT_ARGB_PRE);
-        
-        
 ;
     
 
     var graphics: Graphics2D = newBufferedImage!.createGraphics()!;
-        
-        
 ;
     
 graphics.drawImage(bufferedImage, dx4, dy4, 
@@ -602,14 +497,10 @@ var toolkitImage = toolkitImage
     var bufferedImage: BufferedImage = new BufferedImage(toolkitImage!.getWidth(
                             null), toolkitImage!.getHeight(
                             null), BufferedImage.TYPE_INT_ARGB);
-        
-        
 ;
     
 
     var g2d: Graphics2D = bufferedImage!.createGraphics()!;
-        
-        
 ;
     
 g2d.drawImage(toolkitImage, 0, 0, 
@@ -637,24 +528,20 @@ g2d.dispose();
                         
                                     {
                                     
-    var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
-        
-        
+    var j2seImage: J2SEMutableImage =  as J2SEMutableImageimage;
 ;
     
-bufferedImage= j2seImage!.getImage(); as BufferedImage;
+bufferedImage=  as BufferedImagej2seImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var j2seImage: J2SEImmutableImage = image as J2SEImmutableImage;
-        
-        
+    var j2seImage: J2SEImmutableImage =  as J2SEImmutableImageimage;
 ;
     
-bufferedImage= j2seImage!.getImage(); as BufferedImage;
+bufferedImage=  as BufferedImagej2seImage!.getImage();;
     
 
                         }
@@ -672,14 +559,10 @@ bufferedImage= j2seImage!.getImage(); as BufferedImage;
 var bufferedImage = bufferedImage
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(" BufferedImage -");

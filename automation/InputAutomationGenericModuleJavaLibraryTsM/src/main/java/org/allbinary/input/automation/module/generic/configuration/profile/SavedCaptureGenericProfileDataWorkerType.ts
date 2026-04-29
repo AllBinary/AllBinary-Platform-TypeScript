@@ -46,8 +46,6 @@ export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileData
         
 
     public SAVED_CAPTURE: SavedCaptureGenericProfileDataWorkerType = new SavedCaptureGenericProfileDataWorkerType("Saved " +InputImageType.CAPTURE.getName(), "c:\\share\\captures\\2\\", 100);
-        
-        
 
     private path: string
 

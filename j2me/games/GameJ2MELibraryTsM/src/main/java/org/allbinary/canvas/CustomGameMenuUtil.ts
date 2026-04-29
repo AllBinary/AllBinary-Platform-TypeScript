@@ -58,8 +58,6 @@ export class CustomGameMenuUtil
     //var canvas = canvas
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 

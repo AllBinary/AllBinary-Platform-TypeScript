@@ -45,8 +45,6 @@ export class NoMovementFactory
         
 
     private static readonly instance: NoMovementFactory = new NoMovementFactory();
-        
-        
 
     public static getInstance(): NoMovementFactory{
 
@@ -59,8 +57,6 @@ export class NoMovementFactory
 
 
     private readonly movement: Movement = new Movement();
-        
-        
 
     public getMovmentInstance(): Movement{
 

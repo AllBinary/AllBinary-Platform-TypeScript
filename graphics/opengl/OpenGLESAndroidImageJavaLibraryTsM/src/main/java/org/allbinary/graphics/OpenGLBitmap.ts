@@ -37,7 +37,7 @@ public constructor (bitmap: any = {}){
 
             super();
             //var bitmap = bitmap
-this.bitmap= bitmap as Bitmap;
+this.bitmap=  as Bitmapbitmap;
     
 }
 

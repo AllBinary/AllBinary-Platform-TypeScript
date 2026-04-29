@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
 
     
@@ -51,14 +53,10 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
         
 import { ThreadPool } from "./ThreadPool.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class ImageThreadPool extends ThreadPool {
         
 
     private static readonly instance: ThreadPool = new ImageThreadPool("ImageLoader", 1, ThreadPool.NORMAL_PRIORITY);
-        
-        
 
     public static getInstance(): ThreadPool{
 
@@ -71,8 +69,6 @@ export class ImageThreadPool extends ThreadPool {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, priority);
                         //var poolName = poolName

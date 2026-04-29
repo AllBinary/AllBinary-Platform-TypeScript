@@ -45,8 +45,6 @@ export class GyroSensorFactory
         
 
     private allBinaryGyroSensor: AllBinaryOrientationSensor = AllBinaryOrientationSensor.NULL_ALLBINARY_ORIENTATION_SENSOR;
-        
-        
 
                 //@Throws(Error::class)
             

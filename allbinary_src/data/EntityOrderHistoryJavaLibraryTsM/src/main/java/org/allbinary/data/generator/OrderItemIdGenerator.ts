@@ -52,15 +52,11 @@ export class OrderItemIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "orderitemId.unq";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

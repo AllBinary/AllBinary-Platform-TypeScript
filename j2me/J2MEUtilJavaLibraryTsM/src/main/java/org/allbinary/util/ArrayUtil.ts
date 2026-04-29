@@ -35,16 +35,12 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Class } from "./Class.js";
-
 export class ArrayUtil
             extends Object
          {
         
 
     private static readonly instance: ArrayUtil = new ArrayUtil();
-        
-        
 
     public static getInstance(): ArrayUtil{
 
@@ -57,8 +53,6 @@ export class ArrayUtil
 
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     public copyOf(original: any[], newLength: number): any[]{
     //var original = original
@@ -67,19 +61,17 @@ export class ArrayUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return copyOf(original, newLength, originalconstructor);;
+                        return copyOfType(original, newLength, originalconstructor);;
     
 }
 
 
-    public copyOf(original: any[], newLength: number, newType: Function): any[]{
+    public copyOfType(original: any[], newLength: number, newType: Function): any[]{
     //var original = original
     //var newLength = newLength
     //var newType = newType
 
     var copy: any[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -99,13 +91,11 @@ export class ArrayUtil
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOfbyte(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -125,13 +115,11 @@ export class ArrayUtil
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOfshort(original: number[], newLength: number): number[]{
 var original = original
 var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -151,13 +139,11 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOfint(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -177,13 +163,11 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOflong(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -203,7 +187,7 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: string[], newLength: number): string[]{
+    public copyOfchar(original: string[], newLength: number): string[]{
     //var original = original
     //var newLength = newLength
 
@@ -211,8 +195,6 @@ var newLength = newLength
                                                         
                                                         new Array(newLength)
                                                     ;
-        
-        
 ;
     
 
@@ -232,13 +214,11 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOffloat(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -258,13 +238,11 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: number[], newLength: number): number[]{
+    public copyOfdouble(original: number[], newLength: number): number[]{
     //var original = original
     //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -284,13 +262,11 @@ var newLength = newLength
 }
 
 
-    public copyOf(original: boolean[], newLength: number): boolean[]{
+    public copyOfboolean(original: boolean[], newLength: number): boolean[]{
     //var original = original
     //var newLength = newLength
 
     var copy: boolean[] = new Array(newLength);
-        
-        
 ;
     
 
@@ -314,8 +290,6 @@ var newLength = newLength
     //var intArray = intArray
 
     var length: number = intArray!.length -1;
-        
-        
 ;
     
 
@@ -324,8 +298,6 @@ var newLength = newLength
     
 
     var size: number = length /2;
-        
-        
 ;
     
 
@@ -334,8 +306,6 @@ var newLength = newLength
 
                         for (
     var index: number = 0;
-        
-        
 index <= size; index++)
         {
 temp= intArray[index]!;
@@ -355,8 +325,6 @@ intArray[length -index]= temp;
     //var height = height
 
     var length: number = height -1;
-        
-        
 ;
     
 
@@ -377,8 +345,6 @@ intArray[length -index]= temp;
 
                         for (
     var y: number = 0;
-        
-        
 y <= length /2; y++)
         {
 
@@ -387,8 +353,6 @@ y <= length /2; y++)
 
                         for (
     var x: number = 0;
-        
-        
 x < width; x++)
         {
 rowIndex= ((length -y) *width);
@@ -412,28 +376,20 @@ intArray[rowIndex +x]= temp;
     //var twoDimensionalIntArray = twoDimensionalIntArray
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var endIndex: number = twoDimensionalIntArray!.length
                 ;
-        
-        
 ;
     
 
     var endIndex2: number = twoDimensionalIntArray[0]!.length
                 ;
-        
-        
 ;
     
 
@@ -442,8 +398,6 @@ intArray[rowIndex +x]= temp;
 
                         for (
     var index: number = 0;
-        
-        
 index < endIndex; index++)
         {
 stringBuffer!.append(commonSeps!.BRACE_OPEN);
@@ -454,8 +408,6 @@ stringBuffer!.append(commonSeps!.BRACE_OPEN);
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < endIndex2; index2++)
         {
 stringBuffer!.appendint(twoDimensionalIntArray[index]![index2]!);
@@ -479,18 +431,14 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 }
 
 
-    public toString(objectArray: any[]): string{
+    public toStringFromObjectArray(objectArray: any[]): string{
     //var objectArray = objectArray
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
@@ -499,8 +447,6 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
                         for (
     var index: number = 0;
-        
-        
 index < objectArray!.length; index++)
         {
 stringBuffer!.append(StringUtil.getInstance()!.toString(objectArray[index]!));
@@ -518,18 +464,14 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 }
 
 
-    public toString(byteArray: number[]): string{
+    public toStringFromByteArray(byteArray: number[]): string{
     //var byteArray = byteArray
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
@@ -538,8 +480,6 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
                         for (
     var index: number = 0;
-        
-        
 index < byteArray!.length; index++)
         {
 stringBuffer!.appendbyte(byteArray[index]!);

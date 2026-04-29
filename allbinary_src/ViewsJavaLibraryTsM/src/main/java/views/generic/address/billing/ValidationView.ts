@@ -69,8 +69,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     public isValid(): Boolean{
 
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
 this.streetAddresses= billingAddressesEntity!.get();

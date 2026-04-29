@@ -106,22 +106,14 @@ export class HighScoreTextBox extends CustomTextBox {
         
 
     private readonly virtualKeyboardEventHandler: VirtualKeyboardEventHandler = VirtualKeyboardEventHandler.getInstance()!;
-        
-        
 
     private readonly highScoreUtil: HighScoreUtil
 
     private readonly pleaseWait: Paintable = new SimpleTextPaintable(commonStrings!.PLEASE_WAIT, BasicColorFactory.getInstance()!.WHITE);
-        
-        
 
     private paintable: Paintable = NullPaintable.getInstance()!;
-        
-        
 
     public submitted: boolean = false;
-        
-        
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
                         //var highScoresFactoryInterface = highScoresFactoryInterface
@@ -141,8 +133,6 @@ this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelp
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 
@@ -151,8 +141,6 @@ this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelp
                                     {
                                     
     var username: string = InApplicationPurchaseFactory.getInstance()!.getUserName()!;
-        
-        
 ;
     
 
@@ -239,8 +227,6 @@ this.repaintBehavior!.onChangeRepaint(this);
     public update(){
 
     var name: string = this.getTextFieldItem()!.getString()!;
-        
-        
 ;
     
 this.highScoreUtil!.update(name);

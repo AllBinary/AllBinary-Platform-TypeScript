@@ -92,7 +92,7 @@ this.dy= dy;
     
 this.totalFrames= totalFrames;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
     
 }
 
@@ -164,29 +164,21 @@ var sequence = sequence
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
 
     var frame: number = this.getFrame()!;
-        
-        
 ;
     
 
     var currentX: number = this.dx *frame;
-        
-        
 ;
     
 
     var currentY: number = this.dy *frame;
-        
-        
 ;
     
 graphics.drawImage(this.image, x +currentX, y +currentY, anchor);
@@ -195,7 +187,7 @@ graphics.drawImage(this.image, x +currentX, y +currentY, anchor);
 
 
     public close(){
-DisposalUtil.getInstance()!.dispose(this.image);
+DisposalUtil.getInstance()!.disposeImage(this.image);
     
 }
 
@@ -203,7 +195,7 @@ DisposalUtil.getInstance()!.dispose(this.image);
                 //@Throws(Error::class)
             
     finalize(){
-DisposalUtil.getInstance()!.dispose(this.image);
+DisposalUtil.getInstance()!.disposeImage(this.image);
     
 }
 

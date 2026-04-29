@@ -87,12 +87,8 @@ export class ShippingAddressHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
@@ -103,12 +99,12 @@ export class ShippingAddressHelper extends BasicTable {
     private streetAddress: StreetAddress
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -144,8 +140,6 @@ this.streetAddress= new StreetAddress(this.request);
             
     var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             drop()!;
-        
-        
 ;
     
 
@@ -169,8 +163,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to drop Admin table";
-        
-        
 ;
     
 
@@ -199,8 +191,6 @@ this.streetAddress= new StreetAddress(this.request);
             
     var success: string = new ShippingAddressesEntity(this.stringUtil!.EMPTY_STRING).
                             createTable()!;
-        
-        
 ;
     
 
@@ -224,8 +214,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to create user table";
-        
-        
 ;
     
 
@@ -253,14 +241,10 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING), portion)!;
-        
-        
 ;
     
 
@@ -284,8 +268,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -313,14 +295,10 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Backup Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(new ShippingAddressesEntity(StringUtil.getInstance()!.EMPTY_STRING))!;
-        
-        
 ;
     
 
@@ -344,8 +322,6 @@ this.streetAddress= new StreetAddress(this.request);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 
@@ -373,8 +349,6 @@ this.streetAddress= new StreetAddress(this.request);
         try {
             
     var success: string = "Successfully Added Shipping Address";
-        
-        
 ;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.add(this.streetAddress);
@@ -400,8 +374,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
             {
 
     var error: string = "Failed to add Shipping streetAddress";
-        
-        
 ;
     
 
@@ -429,8 +401,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
         try {
             
     var success: string = "Successfully Updated Shipping Address";
-        
-        
 ;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.update(this.streetAddress);
@@ -456,8 +426,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
             {
 
     var error: string = "Failed update of a Users Shipping Address Table";
-        
-        
 ;
     
 
@@ -485,8 +453,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
         try {
             
     var streetAddress: StreetAddress = BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.getDefault()!;
-        
-        
 ;
     
 
@@ -522,8 +488,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
             {
 
     var error: string = "Failed Setting Shipping address to Billing Address";
-        
-        
 ;
     
 
@@ -551,11 +515,9 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
         try {
             
     var success: string = "Successfully Removed Shipping Address";
-        
-        
 ;
     
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(this.streetAddress!.getId());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
@@ -578,8 +540,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
             {
 
     var error: string = "Failed to remove Shipping Address";
-        
-        
 ;
     
 
@@ -607,8 +567,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
         try {
             
     var success: string = "Successfully Set Shipping Address";
-        
-        
 ;
     
 ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.setDefault(this.streetAddress!.getId());
@@ -634,8 +592,6 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
             {
 
     var error: string = "Failed to set Shipping Address";
-        
-        
 ;
     
 

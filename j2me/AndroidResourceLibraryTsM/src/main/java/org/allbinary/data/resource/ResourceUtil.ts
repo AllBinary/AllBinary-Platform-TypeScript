@@ -87,8 +87,6 @@ export class ResourceUtil
         
 
     private static readonly instance: ResourceUtil = new ResourceUtil();
-        
-        
 
     public static getInstance(): ResourceUtil{
 
@@ -101,20 +99,12 @@ export class ResourceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private context: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 
     private resources: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 
-    private hashMap: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashMap: Hashtable = new Hashtable();
 private constructor (){
 
             super();
@@ -126,12 +116,12 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.context as Context;
+                        return  as Contextthis.context;
     
 }
 
 
-    public setContext(activity: Activity){
+    public setContextFromActivity(activity: Activity){
 var activity = activity
 this.context= activity;
     
@@ -145,12 +135,10 @@ this.context= aContext;
 }
 
 
-    public getResourceId(resource: string): Integer{
+    public getResourceId(resource: string): number{
 var resource = resource
 
-    var value: Integer = this.hashMap!.get(resource as Object); as Integer;
-        
-        
+    var value: number =  as Integerthis.hashMap!.get(resource as Object);;
 ;
     
 
@@ -172,7 +160,7 @@ var resource = resource
 }
 
 
-    public addResource(resource: string, value: Integer){
+    public addResource(resource: string, value: number){
 var resource = resource
 var value = value
 
@@ -200,13 +188,11 @@ this.hashMap!.put(resource, value);
 }
 
 
-    containsDuplicate(resource: string, value: Integer): boolean{
+    containsDuplicate(resource: string, value: number): boolean{
 var resource = resource
 var value = value
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;
-        
-        
 ;
     
 
@@ -216,14 +202,10 @@ var value = value
                         for (
     var index: number = objectArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 
-    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object); as Integer;
-        
-        
+    var integer: number =  as Integerthis.hashMap!.get( as ObjectobjectArray[index]!);;
 ;
     
 
@@ -279,22 +261,16 @@ this.resources= resources;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: Integer = this.hashMap!.get(resource as Object); as Integer;
-        
-        
+    var integer: number =  as Integerthis.hashMap!.get(resource as Object);;
 ;
     
 
     var id: number = integer.toInt()!;
-        
-        
 ;
     
 
     var inputStream: InputStream = 
                                     (resources as Resources).openRawResource(id)!;
-        
-        
 ;
     
 

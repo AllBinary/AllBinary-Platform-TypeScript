@@ -73,18 +73,16 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class InputAutomationModuleBundleActivator
             extends Object
          implements BundleActivator {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private inputAutomationModuleInterface: InputAutomationModuleFactoryInterface[]
 
@@ -103,7 +101,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -113,8 +112,6 @@ public constructor (){
 var context = context
 
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener::class.toString()!)!;
-        
-        
 ;
     
 
@@ -124,9 +121,7 @@ var context = context
                         
                                     {
                                     
-    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = context.getService(serviceReference); as InputAutomationConfigurationModuleChangeListener;
-        
-        
+    var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener =  as InputAutomationConfigurationModuleChangeListenercontext.getService(serviceReference);;
 ;
     
 
@@ -134,7 +129,8 @@ var context = context
                                     null
                                 )
                         
-                                    throw new Error("No Service For ServiceReference")
+                                    throw new Error("No Service For ServiceReference");
+                                
 
 
 
@@ -167,8 +163,6 @@ var context = context
     
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
-        
-        
 ;
     
 
@@ -183,14 +177,10 @@ var context = context
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
     var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
-        
-        
 ;
     
 inputAutomationConfigurationModuleChangeListener!.onAdd(inputAutomationConfigurationModuleChangeEvent);
@@ -228,8 +218,6 @@ var context = context
     
 
     var inputAutomationConfigurationModuleChangeListener: InputAutomationConfigurationModuleChangeListener = this.getInputAutomationConfigurationModuleChangeListener(context)!;
-        
-        
 ;
     
 
@@ -244,14 +232,10 @@ var context = context
 
                         for (
     var index: number = 0;
-        
-        
 index < this.getInputAutomationModuleInterface()!.length; index++)
         {
 
     var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = InputAutomationConfigurationUtil.getChangeEvent(this.getInputAutomationModuleInterface()[index]!)!;
-        
-        
 ;
     
 inputAutomationConfigurationModuleChangeListener!.onRemove(inputAutomationConfigurationModuleChangeEvent);

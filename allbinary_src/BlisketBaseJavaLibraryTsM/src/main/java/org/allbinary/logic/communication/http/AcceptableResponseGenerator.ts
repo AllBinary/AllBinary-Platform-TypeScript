@@ -54,8 +54,6 @@ export class AcceptableResponseGenerator
         
 
     private static readonly instance: AcceptableResponseGenerator = new AcceptableResponseGenerator();
-        
-        
 
     public static getInstance(): AcceptableResponseGenerator{
 
@@ -68,8 +66,6 @@ export class AcceptableResponseGenerator
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -82,28 +78,20 @@ private constructor (){
 var httpServletRequest = httpServletRequest
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var acceptableResponseUtil: AcceptableResponseUtil = AcceptableResponseUtil.getInstance()!;
-        
-        
 ;
     
 
     var acceptable: string = httpServletRequest!.getHeader("accept")!;
-        
-        
 ;
     
 
     var result: string = acceptableResponseUtil!.getTagName(0)!;
-        
-        
 ;
     
 
@@ -123,8 +111,6 @@ var httpServletRequest = httpServletRequest
                                     {
                                     
     var size: number = acceptableResponseUtil!.size()!;
-        
-        
 ;
     
 
@@ -133,8 +119,6 @@ var httpServletRequest = httpServletRequest
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -182,7 +166,8 @@ index < size; index++)
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -27,9 +27,6 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
-
-    
 import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
 
     
@@ -85,7 +82,7 @@ this.drawWidth= this.getImage()!.getWidth();
     
 this.drawHeight= this.getImage()!.getHeight();
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.drawHeight);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.drawHeight);
     
 this.sequenceArray= sequenceArray;
     
@@ -148,7 +145,7 @@ this.sequenceArray= sequenceArray;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

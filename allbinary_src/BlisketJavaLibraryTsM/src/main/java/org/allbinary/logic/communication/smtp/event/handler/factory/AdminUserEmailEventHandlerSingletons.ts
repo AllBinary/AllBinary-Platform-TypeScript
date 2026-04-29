@@ -70,8 +70,6 @@ export class AdminUserEmailEventHandlerSingletons
         
 
     private static readonly instance: AdminUserEmailEventHandlerSingletons = new AdminUserEmailEventHandlerSingletons();
-        
-        
 
     public static getInstance(): AdminUserEmailEventHandlerSingletons{
 
@@ -84,16 +82,10 @@ export class AdminUserEmailEventHandlerSingletons
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    private readonly userEmailEventHandlerHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private readonly userEmailEventHandlerHashMap: HashMap = new HashMap();
 private constructor (){
 
             super();
@@ -124,9 +116,7 @@ var userEmailEventNameData = userEmailEventNameData
                                     }
                                 
 
-    var userEmailEventHandler: UserEmailEventHandler = this.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object); as UserEmailEventHandler;
-        
-        
+    var userEmailEventHandler: UserEmailEventHandler =  as UserEmailEventHandlerthis.userEmailEventHandlerHashMap!.get(userEmailEventNameData as Object);;
 ;
     
 
@@ -146,14 +136,10 @@ var userEmailEventNameData = userEmailEventNameData
                                 
 
     var userVector: Vector = UserEntityFactory.getInstance()!.getAdministrators()!;
-        
-        
 ;
     
 
     var newUserEmailEventHandler: UserEmailEventHandler = EmailEventHandlerUtil.getInstance()!.getEventHandler(abeClientInformation, userEmailEventNameData, userVector)!;
-        
-        
 ;
     
 this.userEmailEventHandlerHashMap!.put(userEmailEventNameData, newUserEmailEventHandler);

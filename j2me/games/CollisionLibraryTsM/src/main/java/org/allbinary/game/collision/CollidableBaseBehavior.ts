@@ -74,16 +74,10 @@ export class CollidableBaseBehavior
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private collidable: boolean = true;
-        
-        
 
     readonly ownerLayer: CollidableCompositeLayer
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
@@ -137,13 +131,12 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
                             throw new Error(new StringMaker().
-                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString())
+                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString());
+                    
 }
 
 
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
-        
-        
 
     public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
 var collisionLayer = collisionLayer
@@ -156,25 +149,26 @@ var collisionLayer = collisionLayer
 }
 
 
-    public isCollision(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);;
+                        return layerCollisionUtil!.isCollision(this.ownerLayer,  as AllBinaryLayercollidableInterfaceCompositeInterface);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 

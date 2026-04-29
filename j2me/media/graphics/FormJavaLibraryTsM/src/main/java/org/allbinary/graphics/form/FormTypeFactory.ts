@@ -48,8 +48,6 @@ export class FormTypeFactory
         
 
     private static readonly instance: FormTypeFactory = new FormTypeFactory();
-        
-        
 
     public static getInstance(): FormTypeFactory{
 
@@ -62,30 +60,18 @@ export class FormTypeFactory
 
 
     public readonly UNK: string = "Unknown FormType";
-        
-        
 
     public readonly NULL_FORM_TYPE: FormType = new FormType();
-        
-        
 
     public readonly TEMP_HORIZONTAL_FORM: FormType = new FormType();
-        
-        
 
     public readonly HORIZONTAL_FORM: FormType = new FormType();
-        
-        
 
     public readonly VERTICAL_CENTER_FORM: FormType = new FormType();
-        
-        
 
     public getFormType(): FormType{
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 

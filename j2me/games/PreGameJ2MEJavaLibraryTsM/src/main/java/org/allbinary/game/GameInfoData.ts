@@ -43,8 +43,6 @@ export class GameInfoData
         
 
     private static readonly instance: GameInfoData = new GameInfoData();
-        
-        
 
     public static getInstance(): GameInfoData{
 
@@ -62,28 +60,16 @@ private constructor (){
 
 
     public readonly GAME_TYPE: string = "GAME_TYPE";
-        
-        
 
     public readonly GAME_MODE: string = "GAME_MODE";
-        
-        
 
     public readonly PLAYER_TYPE: string = "PLAYER_TYPE";
-        
-        
 
     public readonly HIGHEST_LEVEL: string = "HIGHEST_LEVEL";
-        
-        
 
     public readonly CURRENT_LEVEL: string = "CURRENT_LEVEL";
-        
-        
 
     public readonly SOFTWARE_INFORMATION: string = "SOFTWARE_INFORMATION";
-        
-        
 
 }
                 

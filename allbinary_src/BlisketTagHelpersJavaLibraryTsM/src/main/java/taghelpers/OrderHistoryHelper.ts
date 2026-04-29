@@ -92,14 +92,12 @@ export class OrderHistoryHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private storeFrontInterface: StoreFrontInterface
 
-    private readonly propertiesHashMap: HashMap<any, any>
+    private readonly propertiesHashMap: HashMap
 
     private readonly pageContext: PageContext
 
@@ -114,7 +112,7 @@ export class OrderHistoryHelper extends TagHelper {
     private status: string
 
     private newStatus: string
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
@@ -123,15 +121,13 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringpropertiesHashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
-this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS); as String;
+this.newStatus=  as StringpropertiesHashMap!.get(OrderHistoryData.STATUS);;
     
 
                         if(storeName != 
@@ -173,20 +169,14 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
         try {
             
     var success: string = "Status successfully set to: " +this.status;
-        
-        
 ;
     
 
     var orderReviewInterface: OrderHistoryInterface = OrderHistoryFactory.getInstance(this.id)!;
-        
-        
 ;
     
 
     var status: string = orderReviewInterface!.getStatus()!;
-        
-        
 ;
     
 
@@ -247,8 +237,6 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                                     {
                                     
     var orderHistoryEntityInterface: OrderHistoryEntityInterface = OrderHistoryEntityFactory.getInstance()!;
-        
-        
 ;
     
 orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
@@ -283,8 +271,6 @@ orderHistoryEntityInterface!.setStatus(this.id, this.newStatus);
             {
 
     var error: string = "Failed to set order status";
-        
-        
 ;
     
 

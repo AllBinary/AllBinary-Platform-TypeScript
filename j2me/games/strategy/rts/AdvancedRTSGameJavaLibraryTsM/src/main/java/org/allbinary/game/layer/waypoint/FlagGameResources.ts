@@ -50,36 +50,20 @@ export class FlagGameResources extends BasicGameResources {
         
 
     private static readonly ICON: string = "_icon";
-        
-        
 
     private static readonly BUILD: string = "_build";
-        
-        
 
     private static readonly DESTROY: string = "_destroy";
-        
-        
 
     private static readonly ICON_BUILD: string = "_icon" +BUILD;
-        
-        
 
     public NAME: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON_ANIMATION: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON_BUILD: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_ICON: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 protected constructor (){
 
             super();
@@ -87,20 +71,16 @@ protected constructor (){
 
 
     private readonly ICON_SIZE: string = "_64_by_64.png";
-        
-        
 
                 //@Throws(Error::class)
             
-    init(ROOT: string, sizeString: string){
+    append(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-super.init(ROOT, sizeString);
+super.append(ROOT, sizeString);
     
 
     var string: string = GameGraphicsResourceUtil.getInstance()!.getName()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());

@@ -65,14 +65,10 @@ export class ImageArrayAnimation extends IndexedAnimation {
         
 
     private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
-        
-        
 
     private totalFrames: number= 0
 
     circularIndexUtil: CircularIndexUtil = CircularIndexUtil.NULL_CIRCULAR_INDEX_UTIL;
-        
-        
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
                         //var imageArray = imageArray
@@ -179,16 +175,14 @@ this.imageArray= imageArray;
     
 this.totalFrames= imageArray!.length;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.totalFrames);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
     
 }
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

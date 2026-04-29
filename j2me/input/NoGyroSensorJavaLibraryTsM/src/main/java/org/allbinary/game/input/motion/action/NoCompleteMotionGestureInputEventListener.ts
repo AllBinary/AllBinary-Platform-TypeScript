@@ -58,8 +58,6 @@ export class NoCompleteMotionGestureInputEventListener
         
 
     private static readonly instance: NoCompleteMotionGestureInputEventListener = new NoCompleteMotionGestureInputEventListener();
-        
-        
 
     public static getInstance(): NoCompleteMotionGestureInputEventListener{
 

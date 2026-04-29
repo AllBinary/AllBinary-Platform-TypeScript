@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ScreenEmptyListener } from "./ScreenEmptyListener.js";
+
 import { ScreenListenerInterface } from "./ScreenListenerInterface.js";
 
 export class ScreenListenerHandler
@@ -45,8 +47,6 @@ export class ScreenListenerHandler
         
 
     private static readonly instance: ScreenListenerHandler = new ScreenListenerHandler();
-        
-        
 
     public static getInstance(): ScreenListenerHandler{
 
@@ -59,8 +59,6 @@ export class ScreenListenerHandler
 
 
     private screenListenerInterface: ScreenListenerInterface = new ScreenEmptyListener();
-        
-        
 
     public setListener(screenListenerInterface: ScreenListenerInterface){
 var screenListenerInterface = screenListenerInterface
@@ -69,7 +67,7 @@ this.screenListenerInterface= screenListenerInterface;
 }
 
 
-    public fire(isFullScreen: boolean){
+    public fireWithState(isFullScreen: boolean){
 var isFullScreen = isFullScreen
 this.screenListenerInterface!.onFullScreen(isFullScreen);
     

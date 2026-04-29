@@ -47,8 +47,6 @@ export class ColorTemperatureUtil
         
 
     private static readonly instance: ColorTemperatureUtil = new ColorTemperatureUtil();
-        
-        
 
     public static getInstance(): ColorTemperatureUtil{
 
@@ -61,15 +59,11 @@ export class ColorTemperatureUtil
 
 
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 
     public getBasicColor(thirdTemp: number): BasicColor{
 var thirdTemp = thirdTemp
 
     var basicColor: BasicColor = this.basicColorFactory!.RED;
-        
-        
 ;
     
 

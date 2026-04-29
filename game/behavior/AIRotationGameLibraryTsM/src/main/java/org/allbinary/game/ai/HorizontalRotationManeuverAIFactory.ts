@@ -51,12 +51,14 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
+import { HorizontaRotationManeuverAI } from "./HorizontaRotationManeuverAI.js";
+
 export class HorizontalRotationManeuverAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput

@@ -57,8 +57,6 @@ export class DamageUtil
         
 
     private static readonly instance: DamageUtil = new DamageUtil();
-        
-        
 
     public static getInstance(): DamageUtil{
 
@@ -71,12 +69,8 @@ export class DamageUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly COLLIDE: string = "collide";
-        
-        
 private constructor (){
 
             super();
@@ -99,15 +93,11 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
 var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
-        
-        
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer =  as CollidableDestroyableDamageableLayercollidableInterfaceCompositeInterface;
 ;
     
 
     var damage: number = collidableDestroyableDamageableLayer!.getDamage(0)!;
-        
-        
 ;
     
 
@@ -116,8 +106,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Collision ");

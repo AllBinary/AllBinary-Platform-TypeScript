@@ -49,8 +49,6 @@ export class ImageCreationUtil
         
 
     private static readonly instance: ImageCreationUtil = new ImageCreationUtil();
-        
-        
 
     public static getInstance(): ImageCreationUtil{
 
@@ -69,13 +67,11 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(width: number, height: number): Image{
+    public createImageWH(width: number, height: number): Image{
     //var width = width
     //var height = height
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, width, height)!;
-        
-        
 ;
     
 
@@ -95,9 +91,7 @@ private constructor (){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, (width *maxScaleX) +1, (height *maxScaleY) +1)!;
-        
-        
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round(width *maxScaleX) +1, Math.round(height *maxScaleY) +1)!;
 ;
     
 

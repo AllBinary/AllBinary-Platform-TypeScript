@@ -77,12 +77,8 @@ export class BasicItemView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly itemInterface: ItemInterface
 
@@ -113,48 +109,34 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.itemInterface!.toHashMap()!;
 ;
     
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var node: Node = document.createElement(BasicItemData.ITEM)!;
-        
-        
 ;
     
 
     var nameArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size2: number = nameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -163,23 +145,17 @@ hashMap!.put(BasicItemData.IMAGE, EMPTY_STRING);
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
 
-    var name: string = nameArray[index]! as String;
-        
-        
+    var name: string =  as StringnameArray[index]!;
 ;
     
 
-    var value: string = hashMap!.get(name as Object); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(name as Object);;
 ;
     
-value= stringUtil!.getInstance(value);
+value= stringUtil!.getNonNull(value);
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     
@@ -187,16 +163,12 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
     var totalNode: Node = ModDomHelper.createNameValueNodes(document, BasicItemData.TOTAL, this.itemInterface!.getTotal()!.toString())!;
-        
-        
 ;
     
 node.appendChild(totalNode);
     
 
     var size: number = this.vector.length!;
-        
-        
 ;
     
 
@@ -205,20 +177,14 @@ node.appendChild(totalNode);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.vector.get(index); as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.vector.get(index);;
 ;
     
 
     var customNode: Node = domNodeInterface!.toXmlNode(document)!;
-        
-        
 ;
     
 node.appendChild(customNode);

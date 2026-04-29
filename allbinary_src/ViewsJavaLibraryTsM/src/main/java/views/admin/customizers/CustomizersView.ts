@@ -98,12 +98,8 @@ export class CustomizersView extends HttpStoreComponentView implements DomNodeIn
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly customizersVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -124,20 +120,14 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
         try {
             
     var node: Node = document.createElement(TransformTemplateCustomizersData.NAME)!;
-        
-        
 ;
     
 
     var unsortedCustomizerViewVector: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = this.customizersVector!.length!;
-        
-        
 ;
     
 
@@ -146,14 +136,10 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var viewName: string = this.customizersVector!.get(index); as String;
-        
-        
+    var viewName: string =  as Stringthis.customizersVector!.get(index);;
 ;
     
 
@@ -168,9 +154,7 @@ index < size; index++)
 }
 
 
-    var objectArray: any[] = unsortedCustomizerViewVector!.toArray(); as Array<any?>;
-        
-        
+    var objectArray: any[] =  as Array<any?>unsortedCustomizerViewVector!.toArray();;
 ;
     
 Arrays.sort(objectArray, new StringComparator());
@@ -181,20 +165,14 @@ Arrays.sort(objectArray, new StringComparator());
 
                         for (
     var index: number = 0;
-        
-        
 index < objectArray!.length; index++)
         {
 
-    var viewName: string = objectArray[index]! as String;
-        
-        
+    var viewName: string =  as StringobjectArray[index]!;
 ;
     
 
     var viewNameNode: Node = ModDomHelper.createNameValueNodes(document, TransformTemplateCustomizerData.NAME, viewName, TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(viewName, this.getWeblisketSession()!.getStoreName()))!;
-        
-        
 ;
     
 node.appendChild(viewNameNode);
@@ -232,7 +210,7 @@ node.appendChild(viewNameNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -266,7 +244,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

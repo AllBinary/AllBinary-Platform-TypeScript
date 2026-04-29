@@ -47,8 +47,6 @@ export class OpenGLLogUtil
         
 
     private static readonly instance: OpenGLLogUtil = new OpenGLLogUtil();
-        
-        
 
     public static getInstance(): OpenGLLogUtil{
 
@@ -61,15 +59,11 @@ export class OpenGLLogUtil
 
 
     private readonly MAX_TEXTURE: string = " Max Texture Size: ";
-        
-        
 
     public logError(gl: GL10){
     //var gl = gl
 
     var error: number = gl.glGetError()!;
-        
-        
 ;
     
 
@@ -78,8 +72,6 @@ export class OpenGLLogUtil
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
@@ -94,8 +86,6 @@ stringBuffer!.appendint(error);
     
 
     var maxTextureSize: number[] = new Array(1);
-        
-        
 ;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);
@@ -127,20 +117,14 @@ stringBuffer!.appendint(maxTextureSize[0]!);
 
 
     private readonly LOG_ERROR: string = "logError";
-        
-        
 
     private readonly IMAGE: string = " Image: ";
-        
-        
 
     public logError(gl: GL10, image: Image){
     //var gl = gl
     //var image = image
 
     var error: number = gl.glGetError()!;
-        
-        
 ;
     
 
@@ -149,8 +133,6 @@ stringBuffer!.appendint(maxTextureSize[0]!);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(OpenGLStrings.getInstance()!.GL_ERROR_LABEL);
@@ -165,8 +147,6 @@ stringBuffer!.appendint(error);
     
 
     var maxTextureSize: number[] = new Array(1);
-        
-        
 ;
     
 gl.glGetIntegerv(GL10.GL_MAX_TEXTURE_SIZE, maxTextureSize, 0);

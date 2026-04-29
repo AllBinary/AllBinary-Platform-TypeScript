@@ -42,6 +42,8 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
         
 import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
 
+import { TimedVectorAnimation } from "./TimedVectorAnimation.js";
+
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 import { VectorAnimation } from "./VectorAnimation.js";

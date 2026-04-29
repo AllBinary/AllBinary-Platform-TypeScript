@@ -78,8 +78,6 @@ export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
         
 
     private static readonly instance: RTSLayerSelectedLogHelper = new RTSLayerSelectedLogHelper();
-        
-        
 
     public static getInstance(): RTSLayerSelectedLogHelper{
 
@@ -92,28 +90,18 @@ export class RTSLayerSelectedLogHelper extends RTSLayerLogHelper {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 
     private readonly TRACKTO_TURNTO: string = "trackTo:turnTo";
-        
-        
 
     public setClosestGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var pathsList = pathsList
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -141,8 +129,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setClosestGeograph
     //var reason = reason
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -181,8 +167,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: trackTo");
 var targetAngle = targetAngle
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(associatedAdvancedRTSGameLayer!.getName());
@@ -219,8 +203,6 @@ stringBuffer!.appendshort(movementAngle!.getValue());
                                     {
                                     
     var angleIncrement: number = angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()!;
-        
-        
 ;
     
 stringBuffer!.append(" angleIncrement: ");
@@ -343,8 +325,6 @@ this.logUtil!.putF(new StringMaker().
     //var pathList = pathList
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().

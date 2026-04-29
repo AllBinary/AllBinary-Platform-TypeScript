@@ -54,8 +54,6 @@ export class LayerProcessor
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly layerManager: LayerManager
 public constructor (layerManager: LayerManager){
@@ -69,14 +67,15 @@ this.layerManager= layerManager;
 
                 //@Throws(Error::class)
             
-    public process(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
+    public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
 var layerInterface = layerInterface
 var index = index
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -87,7 +86,8 @@ var layerInterface = layerInterface
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -107,14 +107,10 @@ var layerInterface = layerInterface
 var allBinaryLayerManager = allBinaryLayerManager
 
     var layerManager: LayerManager = this.getLayerManager()!;
-        
-        
 ;
     
 
     var size: number = layerManager!.getSize()!;
-        
-        
 ;
     
 
@@ -123,11 +119,9 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-this.process(allBinaryLayerManager, layerManager!.getLayerAt(index) as AllBinaryLayer, index);
+this.processAt(allBinaryLayerManager,  as AllBinaryLayerlayerManager!.getLayerAt(index), index);
     
 }
 

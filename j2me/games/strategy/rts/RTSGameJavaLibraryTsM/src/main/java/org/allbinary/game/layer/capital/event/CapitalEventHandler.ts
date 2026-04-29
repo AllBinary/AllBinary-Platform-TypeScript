@@ -59,12 +59,10 @@ public constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);
-        
-        
+    var capitalEventListenerInterface: CapitalEventListenerInterface = ( as CapitalEventListenerInterfaceeventListenerInterface);
 ;
     
-capitalEventListenerInterface!.onCapitalChangeEvent(eventObject as CapitalEvent);
+capitalEventListenerInterface!.onCapitalChangeEvent( as CapitalEventeventObject);
     
 }
 

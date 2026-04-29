@@ -42,9 +42,9 @@ import { GLU } from "../../../com/jogamp/opengl/glu/GLU.js";
         
 import { GL10 } from "./GL10.js";
 
-import { GL } from "./GL.js";
-
 import { GL2 } from "./GL2.js";
+
+import { GL } from "./GL.js";
 
 import { Buffer } from "./Buffer.js";
 
@@ -58,48 +58,26 @@ export class JOGL10
         
 
     readonly RED: string = "red: ";
-        
-        
 
     readonly GREEN: string = " green: ";
-        
-        
 
     readonly BLUE: string = " blue: ";
-        
-        
 
     readonly ALPHA: string = " alpha: ";
-        
-        
 
     readonly PNAME: string = "pname: ";
-        
-        
 
     readonly _PNAME: string = " pname: ";
-        
-        
 
     readonly PARAM: string = " param: ";
-        
-        
 
     readonly PARAMS: string = " params: ";
-        
-        
 
     readonly LIGHT: string = "light: ";
-        
-        
 
     readonly FACE: string = "face: ";
-        
-        
 
     readonly TARGET: string = "target: ";
-        
-        
 
     private readonly gl10: com.jogamp.opengl.GL2
 

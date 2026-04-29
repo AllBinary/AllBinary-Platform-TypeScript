@@ -51,8 +51,6 @@ export class WebAppUrlGlobals extends UrlGlobalsInterface {
     private path: string
 
     private isWebappPathSet: boolean = false;
-        
-        
 
     public isTestingMode(): boolean{
 
@@ -99,8 +97,6 @@ this.isWebappPathSet= true;
     public getMainPath(): string{
 
     var mainPath: string = InitInfo.getInstance()!.getMainPath()!;
-        
-        
 ;
     
 
@@ -133,7 +129,8 @@ this.isWebappPathSet= true;
                             
 
 
-                            throw new Error("Webapp Path is not set")
+                            throw new Error("Webapp Path is not set");
+                    
 
                         }
                             

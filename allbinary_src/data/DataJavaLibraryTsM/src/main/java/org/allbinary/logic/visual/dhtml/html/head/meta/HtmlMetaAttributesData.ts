@@ -43,8 +43,6 @@ export class HtmlMetaAttributesData
         
 
     private static readonly instance: HtmlMetaAttributesData = new HtmlMetaAttributesData();
-        
-        
 
     public static getInstance(): HtmlMetaAttributesData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public NAME_VALUE: string = "name";
-        
-        
 
     public HTTP_EQUIV_VALUE: string = "http-equiv";
-        
-        
 
 }
                 

@@ -57,8 +57,6 @@ export class MirrorMotionGestureEventUtil
         
 
     private static readonly instance: MirrorMotionGestureEventUtil = new MirrorMotionGestureEventUtil();
-        
-        
 
     public static getInstance(): MirrorMotionGestureEventUtil{
 
@@ -74,7 +72,7 @@ export class MirrorMotionGestureEventUtil
 private constructor (){
 
             super();
-        this.motionEventCircularPool= MotionEventCircularPool.getInstance(Integer.MAX_VALUE);
+        this.motionEventCircularPool= MotionEventCircularPool.createPool(Integer.MAX_VALUE);
     
 }
 
@@ -86,38 +84,26 @@ private constructor (){
     //var halfWidth = halfWidth
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;
-        
-        
 ;
     
 
     var previousNewX: number = this.getNewX(motionGestureEvent!.getPreviousPoint()!.getX(), halfWidth)!;
-        
-        
 ;
     
 
     var currentNewX: number = this.getNewX(motionGestureEvent!.getCurrentPoint()!.getX(), halfWidth)!;
-        
-        
 ;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
-    var mirroredPreviousPoint: GPoint = pointFactory!.getInstance0(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
-        
-        
+    var mirroredPreviousPoint: GPoint = pointFactory!.createXY(previousNewX, motionGestureEvent!.getPreviousPoint()!.getY())!;
 ;
     
 
-    var mirroredCurrentPoint: GPoint = pointFactory!.getInstance0(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
-        
-        
+    var mirroredCurrentPoint: GPoint = pointFactory!.createXY(currentNewX, motionGestureEvent!.getCurrentPoint()!.getY())!;
 ;
     
 event.setPreviousPoint(mirroredPreviousPoint);

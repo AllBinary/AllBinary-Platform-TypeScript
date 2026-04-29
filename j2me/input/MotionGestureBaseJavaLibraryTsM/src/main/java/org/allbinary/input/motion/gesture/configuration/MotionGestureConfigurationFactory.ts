@@ -45,8 +45,6 @@ export class MotionGestureConfigurationFactory
         
 
     private config: MotionGestureConfiguration = new MotionGestureConfiguration();
-        
-        
 
     public static getInstance(): MotionGestureConfiguration{
 

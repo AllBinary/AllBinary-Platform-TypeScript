@@ -27,15 +27,6 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
-
-    
-import { BasicColorSetUtil } from "../../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
-
-    
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
-
-    
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -66,8 +57,6 @@ export class ImageCopyUtil
         
 
     private static readonly instance: ImageCopyUtil = new ImageCopyUtil();
-        
-        
 
     public static getInstance(): ImageCopyUtil{
 
@@ -80,12 +69,8 @@ export class ImageCopyUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -93,8 +78,6 @@ private constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -114,9 +97,7 @@ private constructor (){
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-        
-        
+    var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;
     
 
@@ -138,7 +119,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             
@@ -147,20 +129,16 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(originalImage: Image, canvasScale: number, resize: boolean): Image{
+    public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage
     //var canvasScale = canvasScale
     //var resize = resize
 
-    var newWidth: number = (originalImage!.getWidth() *canvasScale);
-        
-        
+    var newWidth: number = Math.round(originalImage!.getWidth() *canvasScale);
 ;
     
 
-    var newHeight: number = (originalImage!.getHeight() *canvasScale);
-        
-        
+    var newHeight: number = Math.round(originalImage!.getHeight() *canvasScale);
 ;
     
 
@@ -189,9 +167,7 @@ private constructor (){
                                     }
                                 
 
-    var image: Image = this.imageCreationUtil!.getInstance(newWidth, newHeight)!;
-        
-        
+    var image: Image = this.imageCreationUtil!.createImageWH(newWidth, newHeight)!;
 ;
     
 
@@ -200,20 +176,14 @@ private constructor (){
                                     {
                                     
     var halfWidthDelta: number = (newWidth -originalImage!.getWidth()) /2;
-        
-        
 ;
     
 
     var halfHeightDelta: number = (newHeight -originalImage!.getHeight()) /2;
-        
-        
 ;
     
 
     var graphics: Graphics = image.getGraphics()!;
-        
-        
 ;
     
 graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
@@ -231,7 +201,8 @@ graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             

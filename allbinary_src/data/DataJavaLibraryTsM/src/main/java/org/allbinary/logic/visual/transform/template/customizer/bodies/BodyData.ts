@@ -43,8 +43,6 @@ export class BodyData
         
 
     private static readonly instance: BodyData = new BodyData();
-        
-        
 
     public static getInstance(): BodyData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly NAME: string = "BODY_NAME";
-        
-        
 
     public readonly VIEWNAMEKEY: string = "Body";
-        
-        
 
     public readonly MIN: number = 0;
-        
-        
 
 }
                 

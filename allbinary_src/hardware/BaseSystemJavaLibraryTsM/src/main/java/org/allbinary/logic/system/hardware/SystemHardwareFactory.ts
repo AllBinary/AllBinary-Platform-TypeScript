@@ -54,9 +54,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { NoHardware } from "./NoHardware.js";
 
-import { HardwareFactory } from "./HardwareFactory.js";
-
 import { HardwareInterface } from "./HardwareInterface.js";
+
+import { HardwareFactory } from "./HardwareFactory.js";
 
 export class SystemHardwareFactory
             extends Object
@@ -64,8 +64,6 @@ export class SystemHardwareFactory
         
 
     private static readonly instance: SystemHardwareFactory = new SystemHardwareFactory();
-        
-        
 
     public static getInstance(): SystemHardwareFactory{
 
@@ -78,14 +76,10 @@ export class SystemHardwareFactory
 
 
     private hardwareInterface: HardwareInterface = NoHardware.getInstance()!;
-        
-        
 
     public static static_toString(): string{
 
     var osBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 osBuffer!.append("Hardware Info: \n");
@@ -117,12 +111,8 @@ osBuffer!.append("Hardware Info: \n");
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 private constructor (){
 
             super();

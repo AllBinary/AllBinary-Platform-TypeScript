@@ -46,8 +46,6 @@ export class ScaleBaseProcessor
         
 
     private static readonly instance: ScaleBaseProcessor = new ScaleBaseProcessor();
-        
-        
 
     public static getInstance(): ScaleBaseProcessor{
 

@@ -51,8 +51,6 @@ export class WorkFlowEntityFactory
         
 
     private static readonly instance: WorkFlowEntityFactory = new WorkFlowEntityFactory();
-        
-        
 
     public static getInstance(): WorkFlowEntityFactory{
 
@@ -65,8 +63,6 @@ export class WorkFlowEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

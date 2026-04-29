@@ -48,8 +48,6 @@ export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 
     private SINGLETON: PickupLayerCircularStaticPool = new PickupLayerCircularStaticPool();
-        
-        
 
     public static getInstance(): PickupLayerCircularStaticPool{
 
@@ -68,18 +66,16 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
-var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
-var x = x
-var y = y
-var z = z
+    public getInstanceXYZ(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
+    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
+    //var x = x
+    //var y = y
+    //var z = z
 
-    var pickupLayer: PickupLayer = this.getNextInstance(); as PickupLayer;
-        
-        
+    var pickupLayer: PickupLayer =  as PickupLayerthis.getNextInstance();;
 ;
     
-pickupLayer!.init(x, y, z);
+pickupLayer!.initXYZ(x, y, z);
     
 pickupLayer!.init(pickedUpLayerInterfaceFactoryInterface, pickedUpLayerInterfaceFactoryInterface!.getAnimationInterface());
     

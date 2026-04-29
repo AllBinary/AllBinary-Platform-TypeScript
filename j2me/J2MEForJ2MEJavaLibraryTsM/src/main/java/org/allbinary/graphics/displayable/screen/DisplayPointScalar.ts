@@ -46,8 +46,6 @@ export class DisplayPointScalar
         
 
     private static readonly instance: DisplayPointScalar = new DisplayPointScalar();
-        
-        
 
     public static getInstance(): DisplayPointScalar{
 

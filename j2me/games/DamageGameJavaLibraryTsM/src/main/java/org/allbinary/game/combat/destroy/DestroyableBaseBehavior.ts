@@ -48,8 +48,6 @@ export class DestroyableBaseBehavior
         
 
     private static readonly instance: DestroyableBaseBehavior = new DestroyableBaseBehavior();
-        
-        
 
     public static getInstance(): DestroyableBaseBehavior{
 
@@ -77,7 +75,8 @@ export class DestroyableBaseBehavior
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 

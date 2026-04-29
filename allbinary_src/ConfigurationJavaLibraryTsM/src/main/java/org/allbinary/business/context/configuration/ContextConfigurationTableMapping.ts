@@ -65,11 +65,9 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
@@ -98,8 +96,6 @@ this.contextConfigurationInterface= contextConfigurationInterface;
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 

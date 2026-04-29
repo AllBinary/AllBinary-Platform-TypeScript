@@ -73,21 +73,19 @@ export class ShippingHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private storeFrontInterface: StoreFrontInterface
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 
     private pageContext: PageContext
 
     private request: HttpServletRequest
 
     private shippingType: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -96,12 +94,10 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -133,14 +129,10 @@ this.shippingType= this.request.getParameter(ShippingMethodData.NAME);
         try {
             
     var success: string = "Successfully Set Shipping Type";
-        
-        
 ;
     
 
     var order: OrderInterface = this.weblisketSession!.getOrder()!;
-        
-        
 ;
     
 order.setShippingMethod(this.shippingType);
@@ -166,8 +158,6 @@ order.setShippingMethod(this.shippingType);
             {
 
     var error: string = "Failed to view Shipping Type";
-        
-        
 ;
     
 

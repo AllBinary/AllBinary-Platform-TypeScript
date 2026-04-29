@@ -49,8 +49,6 @@ export class ScaleProperties
         
 
     public static readonly instance: ScaleProperties = new ScaleProperties();
-        
-        
 
     public scaleX: number= 0.0f
 

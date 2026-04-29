@@ -61,8 +61,6 @@ import { Log } from "./Log.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -75,12 +73,8 @@ import { Log } from "./Log.js";
 
 
     private readonly logger: Logger = Logger.getLogger(LogUtil::class.toString()!)!;
-        
-        
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -97,8 +91,6 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
     //var log = log
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 
@@ -111,32 +103,22 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
                                     {
                                     
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 
     var clazz: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -152,8 +134,6 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
                                 
 
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 this.logger.log(Level.INFO, message);
@@ -179,14 +159,10 @@ this.logger.log(Level.INFO, message);
         try {
             
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 
     var clazz: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -202,8 +178,6 @@ this.logger.log(Level.INFO, message);
                                 
 
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
-        
-        
 ;
     
 

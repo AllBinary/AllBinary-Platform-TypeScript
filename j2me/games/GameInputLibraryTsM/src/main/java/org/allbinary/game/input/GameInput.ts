@@ -36,9 +36,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
-
-    
 
 
 
@@ -64,12 +61,8 @@ export class GameInput
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly gameKeyEventList: BasicArrayList
 
@@ -157,8 +150,6 @@ this.gameKeyEventList!.clear();
     public removeNonAIInputGameKeyEvents(){
 
     var list: BasicArrayList = this.gameKeyEventList;
-        
-        
 ;
     
 
@@ -171,17 +162,15 @@ this.gameKeyEventList!.clear();
 
                         for (
     var index: number = list.size()!;
-        
-        
 --index >= 0; )
         {
-gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
+gameKeyEvent=  as GameKeyEventlist.objectArray[index]!;
     
 
                         if(gameKeyEvent!.getSourceId() != 1)
                         
                                     {
-                                    list.remove(index);
+                                    list.removeAt(index);
     
 
                                     }
@@ -195,20 +184,14 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
     public update(){
 
     var removeList: BasicArrayList = this.removalGameKeyEventList;
-        
-        
 ;
     
 
     var list: BasicArrayList = this.gameKeyEventList;
-        
-        
 ;
     
 
     var size: number = removeList!.size()!;
-        
-        
 ;
     
 
@@ -217,14 +200,10 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = removeList!.objectArray[index]!;
-        
-        
 ;
     
 
@@ -233,15 +212,13 @@ index < size; index++)
 
                         for (
     var index2: number = list.size()!;
-        
-        
 --index2 >= 0; )
         {
 
                         if(list.objectArray[index2] == anyType)
                         
                                     {
-                                    list.remove(index2);
+                                    list.removeAt(index2);
     
 
                                     }

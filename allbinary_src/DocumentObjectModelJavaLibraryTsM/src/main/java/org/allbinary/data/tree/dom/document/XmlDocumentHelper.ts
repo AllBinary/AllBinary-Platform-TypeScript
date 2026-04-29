@@ -88,8 +88,6 @@ export class XmlDocumentHelper
         
 
     private static readonly instance: XmlDocumentHelper = new XmlDocumentHelper();
-        
-        
 
     public static getInstance(): XmlDocumentHelper{
 
@@ -102,12 +100,8 @@ export class XmlDocumentHelper
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly INDENT_NUMBER: string = "indent-number";
-        
-        
 
     private transformer: Transformer
 private constructor (){
@@ -125,14 +119,10 @@ private constructor (){
         try {
             
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
-        
-        
 ;
     
 
     var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 transformerFactory!.setAttribute(this.INDENT_NUMBER, indent);
@@ -158,8 +148,6 @@ this.transformer.setOutputProperty(OutputKeys.INDENT, booleanFactory!.YES);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
@@ -175,20 +163,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     //var xmlString = xmlString
 
     var src: InputSource = new InputSource(new StringReader(xmlString));
-        
-        
 ;
     
 
     var document: Document = DocumentBuilderFactory.newInstance()!.newDocumentBuilder()!.parse(src)!;
-        
-        
 ;
     
 
     var out: Writer = new StringWriter();
-        
-        
 ;
     
 this.transformer.transform(new DOMSource(document), new StreamResult(out));

@@ -65,8 +65,6 @@ export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
         
 
     private readonly noCrypt: NoCrypt = new NoCrypt();
-        
-        
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "SSLLogServ.logUtil");
                         //var clientInfo = clientInfo
@@ -85,28 +83,20 @@ public constructor (clientInfo: AbeClientInformationInterface){
         try {
             
     var param: Vector = new Vector();
-        
-        
 ;
     
 
     var serverUrl: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-        
-        
 ;
     
 
     var index: number = serverUrl!.lastIndexOf("/")!;
-        
-        
 ;
     
 serverUrl= serverUrl!.substring(0, index +1) +"logservssl.php";
     
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
-        
-        
 ;
     
 this.setClient(xmlRpcClient);
@@ -116,17 +106,13 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
-        
-        
+    var hashtable: Hashtable =  as HashtableanyType;
 ;
     
 param.add(hashtable);
     
 
     var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
-        
-        
 ;
     
 console.log("Result: \n" +result.toString());
@@ -160,7 +146,8 @@ console.log("IOException Trying Other Servers");
                             
 
 
-                            throw new Error(HOST_NOT_RESOLVED_MSG)
+                            throw new Error(HOST_NOT_RESOLVED_MSG);
+                    
 
                         }
                             

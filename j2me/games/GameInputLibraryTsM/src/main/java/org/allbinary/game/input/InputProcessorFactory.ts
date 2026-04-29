@@ -45,8 +45,6 @@ export class InputProcessorFactory
         
 
     private static readonly instance: InputProcessorFactory = new InputProcessorFactory();
-        
-        
 
     public static getInstance(): InputProcessorFactory{
 
@@ -59,8 +57,6 @@ export class InputProcessorFactory
 
 
     private readonly inputProcessor: InputProcessor = new InputProcessor();
-        
-        
 
     public getInputProcessor(): InputProcessor{
 

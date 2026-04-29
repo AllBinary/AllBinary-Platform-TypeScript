@@ -45,8 +45,6 @@ export class FrameUtil
         
 
     private static readonly instance: FrameUtil = new FrameUtil();
-        
-        
 
     public static getInstance(): FrameUtil{
 
@@ -70,7 +68,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.adjustAngleToFrameAngle(angle) /angleIncrement;
+                        return this.adjustAngleToFrameAngle(Math.roundangle) /angleIncrement;
     
 }
 
@@ -80,8 +78,6 @@ private constructor (){
     //var angleIncrement = angleIncrement
 
     var frameAngle: number = angleIncrement *frame -90;
-        
-        
 ;
     
 
@@ -97,8 +93,6 @@ private constructor (){
 var currentAngle = currentAngle
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
-        
-        
 ;
     
 

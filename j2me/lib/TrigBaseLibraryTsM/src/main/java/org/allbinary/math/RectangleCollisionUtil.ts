@@ -43,8 +43,6 @@ export class RectangleCollisionUtil
         
 
     private static readonly instance: RectangleCollisionUtil = new RectangleCollisionUtil();
-        
-        
 
     public static getInstance(): RectangleCollisionUtil{
 

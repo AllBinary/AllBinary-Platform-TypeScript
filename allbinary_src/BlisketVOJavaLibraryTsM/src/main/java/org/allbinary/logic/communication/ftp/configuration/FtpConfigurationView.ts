@@ -58,9 +58,9 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
-
 import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
+
+import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
 export class FtpConfigurationView
             extends Object
@@ -72,42 +72,32 @@ public constructor (node: Node){
 
             super();
         var node = node
-this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
+this.setFtpConfigurationInterface( as FtpConfigurationInterfacenew FtpConfiguration());
     
 
     var chileNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var server: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.SERVER, chileNodeList)!;
-        
-        
 ;
     
 this.getFtpConfigurationInterface()!.setServer(server);
     
 
     var userName: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.USERNAME, chileNodeList)!;
-        
-        
 ;
     
 this.getFtpConfigurationInterface()!.setUserName(userName);
     
 
     var password: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PASSWORD, chileNodeList)!;
-        
-        
 ;
     
 this.getFtpConfigurationInterface()!.setPassword(password);
     
 
     var path: string = DomNodeHelper.getTextNodeValue(FtpConfigurationData.PATH, chileNodeList)!;
-        
-        
 ;
     
 this.getFtpConfigurationInterface()!.setPath(path);
@@ -129,20 +119,14 @@ this.setFtpConfigurationInterface(ftpConfigurationInterface);
 var document = document
 
     var ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = ftpConfigurationMapping!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = ftpConfigurationMapping!.toHashMap()!;
 ;
     
 
     var node: Node = ModDomHelper.createNameValueNodes(document, FtpConfigurationData.NAME, hashMap)!;
-        
-        
 ;
     
 

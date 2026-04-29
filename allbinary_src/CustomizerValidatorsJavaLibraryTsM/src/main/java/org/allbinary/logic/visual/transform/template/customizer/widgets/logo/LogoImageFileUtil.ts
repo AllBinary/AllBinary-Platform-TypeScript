@@ -61,8 +61,6 @@ export class LogoImageFileUtil
         
 
     private readonly directory: Directory = Directory.getInstance()!;
-        
-        
 
     private readonly fileName: string
 
@@ -92,7 +90,8 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw new Error("Image File Name Was Null")
+                            throw new Error("Image File Name Was Null");
+                    
 
                                     }
                                 
@@ -103,14 +102,13 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw new Error("Unable to save file to non creatable directory")
+                            throw new Error("Unable to save file to non creatable directory");
+                    
 
                                     }
                                 
 
     var originalImageFile: AbFile = new AbFile(this.imageFileAbPath!.toString() +this.fileName);
-        
-        
 ;
     
 originalImageFile!.createNewFile();

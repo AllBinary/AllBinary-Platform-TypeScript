@@ -39,9 +39,6 @@ import { AngleFactory } from "../../../../../org/allbinary/math/AngleFactory.js"
 import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
     
-import { FrameUtil } from "../../../../../org/allbinary/math/FrameUtil.js";
-
-    
 
 
 
@@ -95,22 +92,20 @@ this.angleInfo!.adjustAngle(this.sprite.getFrame());
 }
 
 
-    public setFrame(direction: Direction){
+    public setFrameByDirection(direction: Direction){
 var direction = direction
 
     var angle: Angle = directionUtil!.getFrameAngle(direction)!;
-        
-        
 ;
     
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
 
-    public setFrame(angle: Angle){
+    public setFrameToAngle(angle: Angle){
 var angle = angle
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
@@ -124,7 +119,7 @@ this.angleInfo!.adjustAngle(this.getFrame());
 }
 
 
-    public adjustFrame(angle: Angle){
+    public adjustFrameToAngle(angle: Angle){
 var angle = angle
 this.adjustFrame(angle.getValue());
     
@@ -133,7 +128,7 @@ this.adjustFrame(angle.getValue());
 
     public adjustFrame(angle: number){
 var angle = angle
-this.setFrame(frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
+this.setFrame(frameUtil!.getFrameForAngle(angle, Math.roundthis.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
     
 }
 

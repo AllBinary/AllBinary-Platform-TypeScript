@@ -71,8 +71,6 @@ export class PaymentView extends HttpStoreComponentView implements DomNodeInterf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -91,22 +89,16 @@ var document = document
         try {
             
     var paymentNode: Node = document.createElement(PaymentData.PAYMENT)!;
-        
-        
 ;
     
 document.appendChild(paymentNode);
     
 
     var paymentVector: Vector = PaymentEntityFactory.getInstance()!.getPaymentEntityInstance()!.get(this.getWeblisketSession()!.getUserName())!;
-        
-        
 ;
     
 
     var size: number = paymentVector!.length!;
-        
-        
 ;
     
 
@@ -115,14 +107,10 @@ document.appendChild(paymentNode);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var payment: Payment = paymentVector!.get(index); as Payment;
-        
-        
+    var payment: Payment =  as PaymentpaymentVector!.get(index);;
 ;
     
 paymentNode!.appendChild(payment.toXmlNode(document));
@@ -151,14 +139,15 @@ paymentNode!.appendChild(payment.toXmlNode(document));
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -180,8 +169,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
             {
 
     var error: string = "Failed to view Payment";
-        
-        
 ;
     
 

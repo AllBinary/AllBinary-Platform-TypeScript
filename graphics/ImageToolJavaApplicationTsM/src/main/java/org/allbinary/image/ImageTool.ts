@@ -56,20 +56,16 @@ export class ImageTool
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new object: ARunnable()
+java.awt.EventQueue.invokeLater(new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -96,8 +92,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();

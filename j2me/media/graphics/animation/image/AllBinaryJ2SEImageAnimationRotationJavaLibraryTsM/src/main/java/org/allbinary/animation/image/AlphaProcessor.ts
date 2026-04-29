@@ -49,8 +49,6 @@ export class AlphaProcessor extends ModifierBaseProcessor {
         
 
     private static readonly instance: AlphaProcessor = new AlphaProcessor();
-        
-        
 
     public static getInstance(): AlphaProcessor{
 
@@ -62,7 +60,7 @@ export class AlphaProcessor extends ModifierBaseProcessor {
 }
 
 
-    public update(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, alpha: number){
+    public updateAlpha(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, alpha: number){
     //var imageModifierUtil = imageModifierUtil
     //var originalImage = originalImage
     //var imageToShow = imageToShow

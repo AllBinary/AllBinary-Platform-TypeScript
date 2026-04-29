@@ -45,8 +45,6 @@ export class FileFactory
         
 
     private static readonly instance: FileFactory = new FileFactory();
-        
-        
 
     public static getInstance(): FileFactory{
 
@@ -91,8 +89,6 @@ var childFilePath = childFilePath
 var path = path
 
     var file: AbFile = new AbFile(path);
-        
-        
 ;
     
 

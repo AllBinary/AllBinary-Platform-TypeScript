@@ -51,8 +51,6 @@ export class DownloadItemsEntityFactory
         
 
     private static readonly instance: DownloadItemsEntityFactory = new DownloadItemsEntityFactory();
-        
-        
 
     public static getInstance(): DownloadItemsEntityFactory{
 
@@ -65,8 +63,6 @@ export class DownloadItemsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

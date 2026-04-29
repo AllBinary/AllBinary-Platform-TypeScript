@@ -52,15 +52,11 @@ export class ProductIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "productId";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

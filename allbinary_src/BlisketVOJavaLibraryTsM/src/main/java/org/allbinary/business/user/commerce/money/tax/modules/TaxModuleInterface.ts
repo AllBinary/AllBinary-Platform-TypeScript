@@ -48,7 +48,7 @@ export interface TaxModuleInterface {
 
                 //@Throws(Error::class)
             
-    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float
+    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
 
                 //@Throws(Error::class)
             

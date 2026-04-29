@@ -88,8 +88,6 @@ public constructor (searchRequest: SearchRequest){
                             
 
     var dataFileName: string = searchRequest!.getXslFile()!;
-        
-        
 ;
     
 this.setTemplateFile(dataFileName);
@@ -102,8 +100,6 @@ this.setTemplateFile(dataFileName);
     getPath(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

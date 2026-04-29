@@ -67,14 +67,10 @@ export class CustomTextAnimationFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly animationBehaviorFactory: AnimationBehaviorFactory
 
     public basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
-        
-        
 
     private text: string
 
@@ -93,7 +89,7 @@ this.scaleProperties= new ScaleProperties();
     
 this.text= text;
     
-this.scaleProperties!.scaleHeight= fontSize -(fontSize /4);
+this.scaleProperties!.scaleHeight= Math.roundfontSize -(fontSize /4);
     
 this.initScaleHeight= this.scaleProperties!.scaleHeight;
     

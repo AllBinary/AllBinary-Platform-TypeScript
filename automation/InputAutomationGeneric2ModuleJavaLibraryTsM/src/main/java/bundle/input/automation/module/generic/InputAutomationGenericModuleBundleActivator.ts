@@ -56,8 +56,6 @@ public constructor (){
     public init(){
 
     var inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = InputAutomationGenericModuleServiceFactory.getInstance()!;
-        
-        
 ;
     
 this.setInputAutomationModuleInterface(inputAutomationGenericModuleServiceFactory!.getInputAutomationModuleInterfaceArray());

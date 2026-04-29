@@ -45,8 +45,6 @@ export class TouchScreenTypeFactory
         
 
     private static readonly instance: TouchScreenTypeFactory = new TouchScreenTypeFactory();
-        
-        
 
     public static getInstance(): TouchScreenTypeFactory{
 
@@ -61,8 +59,6 @@ export class TouchScreenTypeFactory
     public TouchScreenTypeFactory(){
 
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-        
-        
 ;
     
 touchScreenFactory!.setTouch(false);

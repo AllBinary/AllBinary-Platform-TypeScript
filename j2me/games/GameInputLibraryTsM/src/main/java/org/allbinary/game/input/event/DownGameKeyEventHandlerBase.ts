@@ -68,16 +68,10 @@ export class DownGameKeyEventHandlerBase extends BasicEventHandler {
         
 
     private static readonly TOTAL_LISTENERS: string = " Total PlayerGameInput Listeners: ";
-        
-        
 
     private static readonly LISTENER_LABEL: string = " PlayerGameInput Listener: ";
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
  constructor (){
 
             super();
@@ -135,19 +129,15 @@ var eventObject = eventObject
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
 
         try {
             
-    var playerGameInput: PlayerGameInput = this.list.objectArray[index]! as PlayerGameInput;
-        
-        
+    var playerGameInput: PlayerGameInput =  as PlayerGameInputthis.list.objectArray[index]!;
 ;
     
-playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
+playerGameInput!.onDownGameKeyEvent( as GameKeyEventeventObject);
     
 
                 //: 
@@ -170,12 +160,10 @@ super.fireEvent(eventObject);
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface = eventListenerInterface as DownGameKeyEventListenerInterface;
-        
-        
+    var downGameKeyEventListenerInterface: DownGameKeyEventListenerInterface =  as DownGameKeyEventListenerInterfaceeventListenerInterface;
 ;
     
-downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEvent);
+downGameKeyEventListenerInterface!.onDownGameKeyEvent( as GameKeyEventeventObject);
     
 }
 
@@ -183,8 +171,6 @@ downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEven
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());
@@ -199,14 +185,10 @@ stringBuffer!.appendint(this.list.size());
     
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -214,7 +196,7 @@ stringBuffer!.appendint(this.list.size());
         {
 
         try {
-            eventListenerInterface= this.list.get(index); as EventListenerInterface;
+            eventListenerInterface=  as EventListenerInterfacethis.list.get(index);;
     
 stringBuffer!.append(LISTENER_LABEL);
     

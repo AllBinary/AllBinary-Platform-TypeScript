@@ -62,12 +62,8 @@ export class HttpContextView extends HttpComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -98,15 +94,11 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
     
 
     var success: string = DomDocumentHelper.toString(this.getDoc())!;
-        
-        
 ;
     
 
     var result: string = new ContextTransformer(this.abeClientInformation, this.getTransformInfoInterface()).
                             translate(success)!;
-        
-        
 ;
     
 
@@ -131,7 +123,8 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

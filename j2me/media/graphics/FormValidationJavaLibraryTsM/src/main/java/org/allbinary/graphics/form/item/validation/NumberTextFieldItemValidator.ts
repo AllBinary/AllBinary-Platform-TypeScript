@@ -91,7 +91,7 @@ this.maxChars= maxChars;
 }
 
 
-    isNumberValid(value: Integer): Boolean{
+    isNumberValid(value: number): Boolean{
 var value = value
 
 
@@ -102,7 +102,7 @@ var value = value
 }
 
 
-    toNumberVector(value: Integer): Vector<any>{
+    toNumberVector(value: number): Vector<any>{
 var value = value
 
 
@@ -116,20 +116,14 @@ var value = value
     public isValid(): Boolean{
 
     var result: Boolean = BooleanFactory.getInstance()!.TRUE;
-        
-        
 ;
     
 
     var string: string = this.textFieldItem!.getString()!;
-        
-        
 ;
     
 
     var textLength: number = string.length!;
-        
-        
 ;
     
 
@@ -185,44 +179,30 @@ result= BooleanFactory.getInstance()!.FALSE;
     public toList(): BasicArrayList{
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var string: string = this.textFieldItem!.getString()!;
-        
-        
 ;
     
 
     var textLength: number = string.length!;
-        
-        
 ;
     
 
     var label: string = this.textFieldItem!.getLabel()!;
-        
-        
 ;
     
 
     var name: string = label.substring(0, label.length -2)!;
-        
-        
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -232,9 +212,7 @@ result= BooleanFactory.getInstance()!.FALSE;
                                     
         try {
             
-    var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
-        
-        
+    var number: number = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
 ;
     
 

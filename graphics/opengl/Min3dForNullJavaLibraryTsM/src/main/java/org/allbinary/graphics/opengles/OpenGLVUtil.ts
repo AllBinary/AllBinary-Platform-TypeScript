@@ -43,8 +43,6 @@ export class OpenGLVUtil extends OpenGLVUtilBase {
         
 
     private static readonly instance: OpenGLVUtil = new OpenGLVUtil();
-        
-        
 
     public static getInstance(): OpenGLVUtil{
 

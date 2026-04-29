@@ -50,8 +50,6 @@ export class CaptionAnimationHelperBase extends Animation {
         
 
     public static readonly INSTANCE: CaptionAnimationHelperBase = new CaptionAnimationHelperBase();
-        
-        
 
     public isShowing(): boolean{
 
@@ -73,7 +71,7 @@ var basicColor = basicColor
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

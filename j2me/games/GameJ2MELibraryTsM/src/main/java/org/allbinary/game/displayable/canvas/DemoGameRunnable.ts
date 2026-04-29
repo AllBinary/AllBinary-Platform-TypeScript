@@ -57,8 +57,6 @@ export class DemoGameRunnable extends GameRunnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly demoCanvas: DemoCanvas
 public constructor (demoCanvas: DemoCanvas){
@@ -71,8 +69,6 @@ this.demoCanvas= demoCanvas;
 
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 
     public run(){
 
@@ -87,8 +83,6 @@ this.demoCanvas!.processGame();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

@@ -4,6 +4,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -26,16 +28,12 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
-
 export class OpenGLUtil
             extends Object
          {
         
 
     private static readonly instance: OpenGLUtil = new OpenGLUtil();
-        
-        
 
     public static getInstance(): OpenGLUtil{
 

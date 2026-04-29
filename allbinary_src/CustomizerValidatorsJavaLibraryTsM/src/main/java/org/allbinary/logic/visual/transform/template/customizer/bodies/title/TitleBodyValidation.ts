@@ -95,8 +95,6 @@ export class TitleBodyValidation extends Validation implements DomNodeInterface 
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private body: string
 
@@ -115,8 +113,6 @@ public constructor (){
                                 
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.body= stringUtil!.EMPTY_STRING;
@@ -140,8 +136,6 @@ public constructor (document: Document){
                                 
 
     var nodeList: NodeList = document.getElementsByTagName(BodyData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
@@ -150,28 +144,20 @@ public constructor (document: Document){
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var aBodyNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
     var aBodyValueNode: Node = DomSearchHelper.getNode(DomData.VALUE, aBodyNode!.getChildNodes())!;
-        
-        
 ;
     
 this.body= DomNodeHelper.getTextNodeValue(aBodyValueNode);
     
 
     var titleNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, aBodyNode!.getChildNodes())!;
-        
-        
 ;
     
 this.titleValidation= new TitleNotRequiredValidation(titleNode);
@@ -196,7 +182,7 @@ this.titleValidation= new TitleNotRequiredValidation(titleNode);
 
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -216,9 +202,9 @@ this.getFormData(hashMap);
 
                 //@Throws(Error::class)
             
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
+this.body=  as StringhashMap!.get(BodyData.getInstance()!.NAME);;
     
 this.titleValidation= new TitleNotRequiredValidation(hashMap);
     
@@ -230,8 +216,6 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -305,8 +289,6 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -389,8 +371,6 @@ var document = document
                                 
 
     var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, this.body)!;
-        
-        
 ;
     
 node.appendChild(this.titleValidation!.toXmlNode(document));

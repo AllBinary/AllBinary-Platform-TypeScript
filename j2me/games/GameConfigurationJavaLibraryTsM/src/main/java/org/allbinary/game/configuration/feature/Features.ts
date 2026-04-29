@@ -88,8 +88,6 @@ export class Features
         
 
     private static readonly SINGLETON: Features = new Features();
-        
-        
 
     public static getInstance(): Features{
 
@@ -102,12 +100,8 @@ export class Features
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly list: BasicArrayList
 
@@ -202,26 +196,18 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
         try {
             
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var inputFeatureFactory: InputFeatureFactory = InputFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var sensorFeatureFactory: SensorFeatureFactory = SensorFeatureFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchFeatureFactory: TouchFeatureFactory = TouchFeatureFactory.getInstance()!;
-        
-        
 ;
     
 this.addDefault(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
@@ -242,8 +228,6 @@ this.addDefault(gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);
     
 
     var operatingSystemInterface: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
-        
-        
 ;
     
 

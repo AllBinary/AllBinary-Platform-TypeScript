@@ -88,16 +88,10 @@ export class HighScoreUtil
         
 
     public static readonly SUBMIT_TEXTBOX_COMMAND: Command = new Command("Submit", Command.SCREEN, 1);
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly highScoresFactoryInterface: HighScoresFactoryInterface
 
@@ -112,8 +106,6 @@ export class HighScoreUtil
     private readonly highScoresHelper: HighScoresHelperBase
 
     private firstTime: boolean = true;
-        
-        
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
 
             super();
@@ -166,8 +158,6 @@ this.logUtil!.putF(new StringMaker().
 
     var size: number = this.highScoresArray!.length
                 ;
-        
-        
 ;
     
 
@@ -201,8 +191,6 @@ this.highScoresFactoryInterface!.fetchHighScores(this.gameInfo, this);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 highScores= this.highScoresArray[index]!;
@@ -225,8 +213,6 @@ this.highScoresHelper!.setHighScoresArray(this.highScoresArray);
     //var myCanvas = myCanvas
 
     var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;
-        
-        
 ;
     
 commandListener!.commandAction(SUBMIT_TEXTBOX_COMMAND, myCanvas);

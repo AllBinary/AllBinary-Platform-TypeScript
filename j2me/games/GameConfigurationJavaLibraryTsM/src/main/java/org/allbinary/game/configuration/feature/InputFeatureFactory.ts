@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputFeature } from "./InputFeature.js";
+
 import { Features } from "./Features.js";
 
 export class InputFeatureFactory
@@ -45,8 +47,6 @@ export class InputFeatureFactory
         
 
     private static readonly instance: InputFeatureFactory = new InputFeatureFactory();
-        
-        
 
     public static getInstance(): InputFeatureFactory{
 
@@ -64,30 +64,18 @@ private constructor (){
 
 
     public readonly REMOVE_DUPLICATE_KEY_PRESSES: InputFeature = new InputFeature("Remove Duplicate Key Presses");
-        
-        
 
     public readonly INPUT_MAPPING: InputFeature = new InputFeature("Input Mapping");
-        
-        
 
     public readonly MULTI_KEY_PRESS: InputFeature = new InputFeature("Multi Key Press");
-        
-        
 
     public readonly SINGLE_KEY_REPEAT_PRESS: InputFeature = new InputFeature("Single Key Repeat Press");
-        
-        
 
     public readonly SINGLE_KEY_PRESS: InputFeature = new InputFeature("Single Key Press");
-        
-        
 
     public isSingleKeyProcessing(): boolean{
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 

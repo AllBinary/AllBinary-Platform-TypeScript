@@ -45,8 +45,6 @@ export class WaypointInfoHudPaintableSingleton
         
 
     private static readonly instance: WaypointInfoHudPaintable = new WaypointInfoHudPaintable();
-        
-        
 
     public static getInstance(): WaypointInfoHudPaintable{
 

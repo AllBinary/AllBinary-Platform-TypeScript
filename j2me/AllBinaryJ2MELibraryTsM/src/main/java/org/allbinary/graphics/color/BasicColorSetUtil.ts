@@ -48,8 +48,6 @@ export class BasicColorSetUtil
         
 
     private static readonly instance: BasicColorSetUtil = new BasicColorSetUtil();
-        
-        
 
     public static getInstance(): BasicColorSetUtil{
 

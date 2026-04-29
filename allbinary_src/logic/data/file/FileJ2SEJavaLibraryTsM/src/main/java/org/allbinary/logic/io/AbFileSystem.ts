@@ -43,8 +43,6 @@ export class AbFileSystem
         
 
     private static readonly instance: AbFileSystem = new AbFileSystem();
-        
-        
 
     public static getInstance(): AbFileSystem{
 
@@ -57,8 +55,6 @@ export class AbFileSystem
 
 
     private readonly type: string = "java.io";
-        
-        
 
     public getType(): string{
 

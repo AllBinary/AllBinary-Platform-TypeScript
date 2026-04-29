@@ -65,8 +65,6 @@ export class IconLayer extends AllBinaryLayer {
         
 
     public static readonly NULL_ICON_LAYER: IconLayer = new IconLayer(NullAnimationFactory.getFactoryInstance()!.getInstance(0), 0, 0);
-        
-        
 
     private animationInterface: Animation
 public constructor (animationInterface: Animation, width: number, height: number){
@@ -85,7 +83,7 @@ this.animationInterface= animationInterface;
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paint(graphics, x, y);
+this.animationInterface!.paintXY(graphics, x, y);
     
 }
 

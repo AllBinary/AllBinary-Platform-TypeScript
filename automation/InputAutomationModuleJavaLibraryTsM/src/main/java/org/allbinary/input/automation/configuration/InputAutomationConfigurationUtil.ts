@@ -56,14 +56,10 @@ export class InputAutomationConfigurationUtil
 var inputAutomationModuleInterface = inputAutomationModuleInterface
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration = new InputAutomationModuleConfiguration(inputAutomationModuleInterface);
-        
-        
 ;
     
 
     var inputAutomationConfigurationModuleChangeEvent: InputAutomationConfigurationModuleChangeEvent = new InputAutomationConfigurationModuleChangeEvent(inputAutomationModuleConfiguration);
-        
-        
 ;
     
 

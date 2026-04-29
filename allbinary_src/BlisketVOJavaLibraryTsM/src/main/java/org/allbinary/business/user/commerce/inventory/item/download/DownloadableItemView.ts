@@ -79,12 +79,8 @@ export class DownloadableItemView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private downloadableItem: DownloadableItem
 public constructor (downloadableItem: DownloadableItem){
@@ -110,95 +106,65 @@ var document = document
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.downloadableItem!.toHashMap()!;
 ;
     
 
     var totalTime: number = this.downloadableItem!.getValidTime()!.longValue()!;
-        
-        
 ;
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var year: number = calendar.get(Calendar.YEAR)!;
-        
-        
 ;
     
 
     var month: number = calendar.get(Calendar.MONTH)!;
-        
-        
 ;
     
 
     var day: number = calendar.get(Calendar.DAY_OF_MONTH)!;
-        
-        
 ;
     
 
     var hour: number = calendar.get(Calendar.HOUR)!;
-        
-        
 ;
     
 
     var minute: number = calendar.get(Calendar.MINUTE)!;
-        
-        
 ;
     
 
     var second: number = calendar.get(Calendar.SECOND)!;
-        
-        
 ;
     
 calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime);
     
 
     var yearDelta: number = calendar.get(Calendar.YEAR)!;
-        
-        
 ;
     
 
     var monthDelta: number = calendar.get(Calendar.MONTH)!;
-        
-        
 ;
     
 
     var dayDelta: number = calendar.get(Calendar.DAY_OF_MONTH)!;
-        
-        
 ;
     
 
     var hourDelta: number = calendar.get(Calendar.HOUR)!;
-        
-        
 ;
     
 
     var minuteDelta: number = calendar.get(Calendar.MINUTE)!;
-        
-        
 ;
     
 
     var secondDelta: number = calendar.get(Calendar.SECOND)!;
-        
-        
 ;
     
 hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)));
@@ -215,33 +181,23 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(second
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var node: Node = document.createElement(DownloadItemData.NAME)!;
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var nameArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = nameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -250,23 +206,17 @@ hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(second
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var name: string = nameArray[index]! as String;
-        
-        
+    var name: string =  as StringnameArray[index]!;
 ;
     
 
-    var value: string = hashMap!.get(name as Object); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(name as Object);;
 ;
     
-value= stringUtil!.getInstance(value);
+value= stringUtil!.getNonNull(value);
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     

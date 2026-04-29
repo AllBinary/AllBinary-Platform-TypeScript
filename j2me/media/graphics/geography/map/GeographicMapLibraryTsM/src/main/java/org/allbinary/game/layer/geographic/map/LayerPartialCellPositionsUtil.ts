@@ -58,8 +58,6 @@ export class LayerPartialCellPositionsUtil
         
 
     private static readonly instance: LayerPartialCellPositionsUtil = new LayerPartialCellPositionsUtil();
-        
-        
 
     public static getInstance(): LayerPartialCellPositionsUtil{
 
@@ -80,27 +78,19 @@ var reusableList = reusableList
 reusableList!.clear();
     
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;
-        
-        
+    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP())!;
 ;
     
 
-    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP())!;
-        
-        
+    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP())!;
 ;
     
 
-    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP(), layerInterface!.getYP() +layerInterface!.getHeight())!;
-        
-        
+    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP(), layerInterface!.getYP() +layerInterface!.getHeight())!;
 ;
     
 
-    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP() +layerInterface!.getHeight())!;
-        
-        
+    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth(), layerInterface!.getYP() +layerInterface!.getHeight())!;
 ;
     
 
@@ -150,7 +140,7 @@ reusableList!.clear();
 
                 //@Throws(Error::class)
             
-    public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
+    public getAllDXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
 var layerInterface = layerInterface
 var dx = dx
@@ -159,27 +149,19 @@ var reusableList = reusableList
 reusableList!.clear();
     
 
-    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;
-        
-        
+    var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +dy)!;
 ;
     
 
-    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +dy)!;
-        
-        
+    var topRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +dy)!;
 ;
     
 
-    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
-        
-        
+    var bottomLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
 ;
     
 
-    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
-        
-        
+    var bottomRightGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXYNoThrow(layerInterface!.getXP() +layerInterface!.getWidth() +dx, layerInterface!.getYP() +layerInterface!.getHeight() +dy)!;
 ;
     
 

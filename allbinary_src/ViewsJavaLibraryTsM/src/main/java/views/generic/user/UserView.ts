@@ -59,8 +59,6 @@ export class UserView extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -74,7 +72,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(new UserDomNode(this.user) as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacenew UserDomNode(this.user));
     
 }
 
@@ -108,7 +106,8 @@ this.addDomNodeInterface(new UserDomNode(this.user) as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

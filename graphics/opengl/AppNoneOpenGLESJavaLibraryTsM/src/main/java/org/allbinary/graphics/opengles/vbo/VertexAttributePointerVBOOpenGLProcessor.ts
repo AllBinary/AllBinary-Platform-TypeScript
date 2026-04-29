@@ -43,12 +43,12 @@ import { ObjectThreedOpenGLProcessor } from "../../../../../org/allbinary/graphi
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class VertexAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGLProcessor {
         
 
     private static readonly instance: VertexAttributePointerVBOOpenGLProcessor = new VertexAttributePointerVBOOpenGLProcessor();
-        
-        
 
     public static getInstance(): VertexAttributePointerVBOOpenGLProcessor{
 
@@ -71,7 +71,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

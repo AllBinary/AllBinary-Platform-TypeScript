@@ -60,8 +60,6 @@ export class CategoryPropertiesValidationView extends CategoryPropertiesView imp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
             super(categoryPropertiesInterface);
                     var categoryPropertiesInterface = categoryPropertiesInterface
@@ -91,8 +89,6 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());

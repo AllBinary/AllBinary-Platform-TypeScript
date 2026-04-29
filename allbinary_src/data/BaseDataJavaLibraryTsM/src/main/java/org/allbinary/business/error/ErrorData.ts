@@ -43,8 +43,6 @@ export class ErrorData
         
 
     private static readonly instance: ErrorData = new ErrorData();
-        
-        
 
     public static getInstance(): ErrorData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "ERROR_NAME";
-        
-        
 
     public readonly TEXT: string = "ERROR_TEXT";
-        
-        
 
 }
                 

@@ -4,6 +4,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -87,16 +89,12 @@ import { OpenGLCapabilities } from "./OpenGLCapabilities.js";
 
 import { OpenGLLogUtil } from "./OpenGLLogUtil.js";
 
-import { Runnable } from "./Runnable.js";
-
 export class OpenGLUtil
             extends Object
          {
         
 
     private static readonly instance: OpenGLUtil = new OpenGLUtil();
-        
-        
 
     public static getInstance(): OpenGLUtil{
 
@@ -109,48 +107,26 @@ export class OpenGLUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly renderStrings: RendererStrings = RendererStrings.getInstance()!;
-        
-        
 
     readonly canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 
     private readonly preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-        
-        
 
     private readonly lockObject: SynchObject = new SynchObject();
-        
-        
 
     private readonly anyType: SynchObject = new SynchObject();
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public readonly runnableList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private created: boolean = false;
-        
-        
 
     public onSurfaceCreated(gl: GL10){
     //var gl = gl
@@ -199,8 +175,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE
 
 
     private surfaceCreatedAndInitialized: boolean = false;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -222,13 +196,11 @@ graphics.update();
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 progressCanvas!.update(graphics);
     
-getInstance = OpenGLImageCacheFactory.getInstance();getInstance as OpenGLImageCache
+getInstance =  as OpenGLImageCacheOpenGLImageCacheFactory.getInstance();getInstance
 getInstance.
                     update(gl);
     
@@ -243,8 +215,6 @@ this.set(gl);
     //var image = image
 
     var encapsulateImage: Image = preResourceImageUtil!.encapsulate(image)!;
-        
-        
 ;
     
 
@@ -334,8 +304,6 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
     
 
     var size: number = this.runnableList!.size()!;
-        
-        
 ;
     
 
@@ -344,11 +312,9 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-runnable= this.runnableList!.get(index); as Runnable;
+runnable=  as Runnablethis.runnableList!.get(index);;
     
 runnable.run();
     
@@ -367,8 +333,6 @@ this.runnableList!.clear();
 var gl = gl
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -381,13 +345,11 @@ var gl = gl
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size; index2++)
         {
 image= this.list.get(index2);
     
-image = imageimage as OpenGLESImage
+image =  as OpenGLESImageimageimage
 image.
                     set(gl);
     

@@ -48,8 +48,6 @@ export class AdminRoleFactory
         
 
     private static readonly instance: AdminRoleFactory = new AdminRoleFactory();
-        
-        
 
     public static getInstance(): AdminRoleFactory{
 
@@ -62,55 +60,31 @@ export class AdminRoleFactory
 
 
     private readonly adminRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly storeAdminRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly storeManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly productManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly reviewManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly customerManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly workflowManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly orderManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly adjusterManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly shippingManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly webManagementRoles: Vector<any> = new Vector<any>();
-        
-        
 private constructor (){
 
             super();
         
     var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
-        
-        
 ;
     
 this.adminRoles!.add(basicUserRoleFactory!.ADMINISTRATOR);

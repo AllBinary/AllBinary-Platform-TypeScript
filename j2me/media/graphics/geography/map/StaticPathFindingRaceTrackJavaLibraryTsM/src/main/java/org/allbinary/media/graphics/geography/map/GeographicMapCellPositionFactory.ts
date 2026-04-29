@@ -24,10 +24,10 @@ import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
-import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -61,11 +61,9 @@ import { BasicGeographicMap } from "./BasicGeographicMap.js";
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         
 
-    private static readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private static readonly hashtable: Hashtable = new Hashtable();
 
-    public static getHashtable(): Hashtable<any, any>{
+    public static getHashtable(): Hashtable{
 
 
 
@@ -76,8 +74,6 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -85,20 +81,14 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
     //var geographicMapInterface = geographicMapInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var geographicMapCellPositionFactoryCanBeNull: any? = hashtable.get(allBinaryTiledLayer!.getDataId());
-        
-        
 ;
     
 
@@ -118,7 +108,7 @@ hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactoryCanBeNull as BasicGeographicMapCellPositionFactory;
+                        return  as BasicGeographicMapCellPositionFactorygeographicMapCellPositionFactoryCanBeNull;
     
 
                                     }
@@ -131,7 +121,7 @@ hashtable.put(allBinaryTiledLayer!.getDataId(), geographicMapCellPositionFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactoryCanBeNull as BasicGeographicMapCellPositionFactory;
+                        return  as BasicGeographicMapCellPositionFactorygeographicMapCellPositionFactoryCanBeNull;
     
 
                         }

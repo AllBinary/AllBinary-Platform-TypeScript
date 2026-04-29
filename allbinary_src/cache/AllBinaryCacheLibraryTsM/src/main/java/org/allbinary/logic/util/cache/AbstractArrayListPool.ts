@@ -58,12 +58,8 @@ export class AbstractArrayListPool
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     buffers: BasicArrayList = new BasicArrayListD();
-        
-        
 
     cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
@@ -81,7 +77,8 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -92,7 +89,8 @@ var key = key
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -115,8 +113,6 @@ var cacheableInterfaces = cacheableInterfaces
 
                         for (
     var index: number = 0;
-        
-        
 index < cacheableInterfaces!.length; index++)
         {
 this.buffers.add(cacheableInterfaces[index]!);

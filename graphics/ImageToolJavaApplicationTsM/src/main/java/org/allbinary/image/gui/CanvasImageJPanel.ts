@@ -96,24 +96,24 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JCheckBox } from "./JCheckBox.js";
+
 export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
-        
-        
 
     private imageProcessorInput: ImageProcessorInput
 
@@ -133,52 +133,38 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var canvasTrimUtil: CanvasTrimUtil = CanvasTrimUtil.getInstance()!;
-        
-        
 ;
     
 
     var canvasExpandUtil: CanvasExpandUtil = CanvasExpandUtil.getInstance()!;
-        
-        
 ;
     
 
     var leftReduction: number = Integer(Integer.valueOf(widthReductionTextField1!.getText()))!;
-        
-        
 ;
     
 
     var topReduction: number = Integer(Integer.valueOf(heightReductionTextField1!.getText()))!;
-        
-        
 ;
     
 
     var widthReduction: number = Integer(Integer.valueOf(widthReductionTextField!.getText()))!;
-        
-        
 ;
     
 
     var heightReduction: number = Integer(Integer.valueOf(heightReductionTextField!.getText()))!;
-        
-        
 ;
     
 
@@ -216,7 +202,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     initComponents(){
 this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-jPanel1= new object: javax.swing.JPanel()
+jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -266,7 +252,7 @@ this.writeOverOriginalJCheckBox!.setSelected(true);
     
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-writeOverOriginalJCheckBox!.addActionListener(new object: java.awt.event.ActionListener()
+writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -280,8 +266,6 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
     
 
     var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-        
-        
 ;
     
 this.jPanel1!.setLayout(jPanel1Layout);
@@ -292,7 +276,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -310,7 +294,7 @@ this.jLabel5!.setText("Right:");
     
 this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField!.addActionListener(new object: java.awt.event.ActionListener()
+widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -328,7 +312,7 @@ this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 this.widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-widthReductionTextField1!.addActionListener(new object: java.awt.event.ActionListener()
+widthReductionTextField1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -348,8 +332,6 @@ this.heightReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 
     var jPanel2Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel2);
-        
-        
 ;
     
 this.jPanel2!.setLayout(jPanel2Layout);
@@ -360,8 +342,6 @@ jPanel2Layout!.setVerticalGroup(jPanel2Layout!.createParallelGroup(javax.swing.G
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -452,8 +432,6 @@ this.getParent()!.repaint();
     
 
     var file: File = this.imageProcessorInput!.getFiles()[index]!;
-        
-        
 ;
     
 
@@ -462,14 +440,10 @@ this.getParent()!.repaint();
                                     {
                                     
     var filePath: string = file.getAbsolutePath()!;
-        
-        
 ;
     
 
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
-        
-        
 ;
     
 filePath= new StringBuilder().
@@ -481,9 +455,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(this@CanvasImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
-        
-        
+    var isWritten: boolean = ImageIO.write( as RenderedImagethis@CanvasImageJPanel.result, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

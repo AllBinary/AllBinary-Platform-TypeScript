@@ -75,31 +75,23 @@ export class DownloadItemsRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly downloadableItem: DownloadableItem
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT); as HelperTag;
-        
-        
+    var inventoryTag: HelperTag =  as HelperTaghashMap!.get(AbTagData.PARENT);;
 ;
     
 
     var inventoryItemViewParentTagHelper: InventoryItemViewParentTagHelper = InventoryItemViewParentTagHelper.getInstance()!;
-        
-        
 ;
     
 
     var downloadableInventoryItemView: DownloadableInventoryItemView = inventoryItemViewParentTagHelper!.getDownloadableInventoryItemView(inventoryTag)!;
-        
-        
 ;
     
 this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
@@ -112,16 +104,12 @@ this.downloadableItem= downloadableInventoryItemView!.getDownloadableItem();
         try {
             
     var vector: Vector = this.downloadableItem!.toVector()!;
-        
-        
 ;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.insert(vector);
     
 
     var success: string = "Successfully inserted " +this.downloadableItem!.getId() +" into downloaditems table";
-        
-        
 ;
     
 
@@ -145,8 +133,6 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
             {
 
     var error: string = "Failed to insert " +this.downloadableItem!.getId() +" into downloaditems table";
-        
-        
 ;
     
 
@@ -176,8 +162,6 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
     
 
     var success: string = "Successfully deleted";
-        
-        
 ;
     
 
@@ -201,8 +185,6 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
             {
 
     var error: string = "Failed to delete";
-        
-        
 ;
     
 
@@ -230,14 +212,10 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.inse
         try {
             
     var success: string = "Update Successful";
-        
-        
 ;
     
 
-    var values: HashMap<any, any> = this.downloadableItem!.toHashMap()!;
-        
-        
+    var values: HashMap = this.downloadableItem!.toHashMap()!;
 ;
     
 DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.update(values);
@@ -263,8 +241,6 @@ DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!.upda
             {
 
     var error: string = "Failed to update: " +this.downloadableItem!.getId();
-        
-        
 ;
     
 

@@ -43,8 +43,6 @@ export class FileExtensionData
         
 
     private static readonly instance: FileExtensionData = new FileExtensionData();
-        
-        
 
     public static getInstance(): FileExtensionData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly DOT_JAVA_SOURCE: string = ".java";
-        
-        
 
     public readonly JAVA_SOURCE: string = "java";
-        
-        
 
 }
                 

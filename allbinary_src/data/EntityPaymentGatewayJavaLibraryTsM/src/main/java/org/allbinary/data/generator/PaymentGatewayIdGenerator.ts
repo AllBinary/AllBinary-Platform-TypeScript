@@ -52,15 +52,11 @@ export class PaymentGatewayIdGenerator extends UniqueIdGenerator {
         
 
     private readonly IDFILE: string = "paymentgatewayId";
-        
-        
 public constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());

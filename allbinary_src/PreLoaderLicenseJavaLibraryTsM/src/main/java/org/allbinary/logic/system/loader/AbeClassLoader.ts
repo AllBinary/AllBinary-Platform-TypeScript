@@ -72,32 +72,20 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
         
 import { ClassLoader } from "./ClassLoader.js";
 
-import { Class } from "./Class.js";
-
 export class AbeClassLoader extends ClassLoader {
         
 
-    private classes: Map = new HashMap<any, any>();
-        
-        
+    private classes: Map = new HashMap();
 
     private PATH: string
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abCryptUtil: AbCryptUtil = AbCryptUtil.getInstance()!;
-        
-        
 
     private readonly LOAD_CLASS: string = "loadClass";
-        
-        
 
     private readonly ENCRYPTED_EXTENSION: string = AbPathData.getInstance()!.EXTENSION_SEP +"abc";
-        
-        
 
     private key: string
 public constructor (parent: ClassLoader, key: string){
@@ -121,7 +109,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return classes.get(name); as Class<*>;
+                        return  as Class<*>classes.get(name);;
     
 }
 
@@ -148,22 +136,16 @@ var name = name
 var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
-        
-        
 ;
     
 
     var logBuffer: LogBuffer = new LogBuffer();
-        
-        
 ;
     
 
         try {
             
     var myClass: Function = this.findLoadedClass1(name)!;
-        
-        
 ;
     
 
@@ -178,8 +160,6 @@ var resolve = resolve
     
 
     var normalClass: Function = super.loadClass(name, resolve)!;
-        
-        
 ;
     
 
@@ -221,8 +201,6 @@ logBuffer!.add(LogFactory.getInstanceF("NoClassDefFoundError Failed Loaded Class
 
 
     var classBytes: number[] = this.loadClassBytesFromFile(name)!;
-        
-        
 ;
     
 
@@ -234,7 +212,8 @@ logBuffer!.add(LogFactory.getInstanceF("NoClassDefFoundError Failed Loaded Class
                                     
 
 
-                            throw new ClassNotFoundException("My Bytes not loaded for: " +name +"\nwith: " +"loadClassBytes")
+                            throw new ClassNotFoundException("My Bytes not loaded for: " +name +"\nwith: " +"loadClassBytes");
+                    
 
                                     }
                                 
@@ -249,7 +228,8 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
                                     
 
 
-                            throw new ClassNotFoundException("My Class Not Defineable for: " +name +"\nwith: " +"loadClassBytes")
+                            throw new ClassNotFoundException("My Class Not Defineable for: " +name +"\nwith: " +"loadClassBytes");
+                    
 
                                     }
                                 
@@ -304,14 +284,10 @@ var name = name
     var in: FileInputStream = 
                 null
             ;
-        
-        
 ;
     
 
     var cname: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -322,8 +298,6 @@ in= new FileInputStream(cname);
     
 
     var decrypted: number[] = this.abCryptUtil!.decrypt(in, this.key)!;
-        
-        
 ;
     
 
@@ -354,8 +328,6 @@ StreamUtil.getInstance()!.close(in);
             {
 
     var loadedWith: string = "loadClassBytes";
-        
-        
 ;
     
 
@@ -374,8 +346,6 @@ StreamUtil.getInstance()!.close(in);
             {
 
     var loadedWith: string = "loadClassBytes";
-        
-        
 ;
     
 
@@ -406,16 +376,12 @@ var name = name
 var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
-        
-        
 ;
     
 
         try {
             
     var myClass: Function = this.findLoadedClass1(name)!;
-        
-        
 ;
     
 
@@ -430,8 +396,6 @@ var resolve = resolve
     
 
     var normalClass: Function = super.loadClass(name, resolve)!;
-        
-        
 ;
     
 
@@ -496,8 +460,6 @@ loadedWith= "loadClassBytes";
     
 
     var classBytes: number[] = this.loadClassBytesFromFile(name)!;
-        
-        
 ;
     
 
@@ -509,7 +471,8 @@ loadedWith= "loadClassBytes";
                                     
 
 
-                            throw new ClassNotFoundException("Bytes not loaded for: " +name)
+                            throw new ClassNotFoundException("Bytes not loaded for: " +name);
+                    
 
                                     }
                                 
@@ -524,7 +487,8 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
                                     
 
 
-                            throw new ClassNotFoundException("Class Not Defineable for: " +name)
+                            throw new ClassNotFoundException("Class Not Defineable for: " +name);
+                    
 
                                     }
                                 

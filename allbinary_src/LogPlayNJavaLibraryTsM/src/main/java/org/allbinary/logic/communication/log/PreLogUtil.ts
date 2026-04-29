@@ -65,8 +65,6 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
     //var functionName = functionName
 
     var className: string = PreLogUtil.getClassName(anyType)!;
-        
-        
 ;
     
 
@@ -85,8 +83,6 @@ className= new StringMaker().
     
 
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
-        
-        
 ;
     
 PlayN.log()!.debug(LOG_SUCCESS +message);
@@ -95,8 +91,6 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
 
 
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
-        
-        
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
@@ -105,8 +99,6 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
     //var exception = exception
 
     var className: string = PreLogUtil.getClassName(anyType)!;
-        
-        
 ;
     
 
@@ -125,11 +117,9 @@ className= new StringMaker().
     
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
-PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+PlayN.log()!.error(LOG_SUCCESS +message,  as Errorexception);
     
 }
 
@@ -140,8 +130,6 @@ PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
     //var functionName = functionName
 
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
-        
-        
 ;
     
 PlayN.log()!.debug(LOG_SUCCESS +message);
@@ -156,11 +144,9 @@ PlayN.log()!.debug(LOG_SUCCESS +message);
     //var exception = exception
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
-PlayN.log()!.error(LOG_SUCCESS +message, exception as Error);
+PlayN.log()!.error(LOG_SUCCESS +message,  as Errorexception);
     
 }
 

@@ -51,12 +51,8 @@ export class BaseCircularPool
         
 
     circularIndexUtil: CircularIndexUtil = CircularIndexUtil.NULL_CIRCULAR_INDEX_UTIL;
-        
-        
 
     OBJECT_ARRAY: any[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -64,8 +60,6 @@ export class BaseCircularPool
     public getNextInstance(): any{
 
     var anyType: any = this.OBJECT_ARRAY[this.circularIndexUtil!.getIndex()]!;
-        
-        
 ;
     
 this.circularIndexUtil!.next();
@@ -85,8 +79,6 @@ this.circularIndexUtil!.setIndex(0);
     
 
     var size: number = this.circularIndexUtil!.getSize()!;
-        
-        
 ;
     
 
@@ -95,8 +87,6 @@ this.circularIndexUtil!.setIndex(0);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();

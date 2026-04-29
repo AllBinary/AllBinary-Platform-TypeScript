@@ -94,16 +94,10 @@ export class UnitItemArrayFactory
         
 
     private static readonly ITEMS: CustomItem[] = CustomItemUtil.getInstance()!.CUSTOM_ITEM_ARRAY;
-        
-        
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
-        
-        
 
     private readonly resources: BasicGameResources[]
 protected constructor (resources: BasicGameResources[]){
@@ -122,14 +116,10 @@ this.resources= resources;
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
     var name: string = flagResources!.NAME;
-        
-        
 ;
     
 
     var index: number = name.indexOf(this.commonSeps!.SPACE)!;
-        
-        
 ;
     
 
@@ -145,38 +135,30 @@ this.resources= resources;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createFlagItem(flagResources, name, layerInterfaceFactoryInterface);;
+                        return this.createNamedFlagItem(flagResources, name, layerInterfaceFactoryInterface);;
     
 }
 
 
                 //@Throws(Error::class)
             
-    createFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
+    createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
     //var name = name
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
     var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;
-        
-        
 ;
     
 
-    var image: Image = IMAGE_CACHE.get(flagResources!.RESOURCE_ICON)!;
-        
-        
+    var image: Image = IMAGE_CACHE.getWithKey(flagResources!.RESOURCE_ICON)!;
 ;
     
 
     var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, basicColor, 
                                                 [
                                                     new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image);
-        
-        
                                                 ], layerInterfaceFactoryInterface);
-        
-        
 ;
     
 
@@ -218,8 +200,6 @@ this.resources= resources;
 
                         for (
     var index: number = this.resources.length -1;
-        
-        
 index >= 0; index--)
         {
 

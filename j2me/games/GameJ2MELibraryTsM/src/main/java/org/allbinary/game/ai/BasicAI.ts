@@ -78,33 +78,21 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourceInterface {
         
 
-    public static readonly AI_VISITOR: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(2)!;
-        
-        
+    public static readonly AI_VISITOR: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(1)!;
-        
-        
+    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly ownerLayerInterface: AllBinaryLayer
 
     private readonly gameInput: GameInput
 
     private lastKey: number =  -1;
-        
-        
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 
             super();
@@ -124,19 +112,20 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public processAI(key: number){
+    public processKeyAI(key: number){
 var key = key
 
                         if(key !=  -1)
                         
                                     {
-                                    this.gameInput!.add(this.gameKeyEventFactory!.getInstance(this, key));
+                                    this.gameInput!.add(this.gameKeyEventFactory!.getInstanceForKey(this, key));
     
 
                                     }
@@ -194,8 +183,6 @@ this.lastKey= lastKey;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);

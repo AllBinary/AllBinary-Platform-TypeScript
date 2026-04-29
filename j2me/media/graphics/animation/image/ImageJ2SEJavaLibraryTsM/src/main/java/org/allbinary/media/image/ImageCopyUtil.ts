@@ -62,8 +62,6 @@ export class ImageCopyUtil
         
 
     private static readonly instance: ImageCopyUtil = new ImageCopyUtil();
-        
-        
 
     public static getInstance(): ImageCopyUtil{
 
@@ -76,16 +74,10 @@ export class ImageCopyUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 
     private readonly imageCreationUtil: ImageCreationUtil = ImageCreationUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -93,8 +85,6 @@ private constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -114,9 +104,7 @@ private constructor (){
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-    var image: Image = this.imageCreationUtil!.getInstance(originalImage!.getWidth(), originalImage!.getHeight())!;
-        
-        
+    var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;
     
 
@@ -138,7 +126,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Not Mutable")
+                            throw new Error("Not Mutable");
+                    
 
                         }
                             
@@ -147,20 +136,16 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public createImage(originalImage: Image, canvasScale: number, resize: boolean): Image{
+    public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage
     //var canvasScale = canvasScale
     //var resize = resize
 
-    var newWidth: number = (originalImage!.getWidth() *canvasScale);
-        
-        
+    var newWidth: number = Math.round(originalImage!.getWidth() *canvasScale);
 ;
     
 
-    var newHeight: number = (originalImage!.getHeight() *canvasScale);
-        
-        
+    var newHeight: number = Math.round(originalImage!.getHeight() *canvasScale);
 ;
     
 
@@ -190,20 +175,14 @@ private constructor (){
                                 
 
     var originalBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
-        
-        
 ;
     
 
     var bufferedImage: BufferedImage = this.imageUtil!.createBufferedImageWithLargerCanvas(originalBufferedImage, newWidth, newHeight)!;
-        
-        
 ;
     
 
     var image: J2SEImmutableImage = new J2SEImmutableImage(bufferedImage);
-        
-        
 ;
     
 

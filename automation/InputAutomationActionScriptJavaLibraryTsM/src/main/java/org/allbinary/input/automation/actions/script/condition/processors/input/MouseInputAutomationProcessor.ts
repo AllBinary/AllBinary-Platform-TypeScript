@@ -62,14 +62,10 @@ export class MouseInputAutomationProcessor
 var mouseActionScriptInputInterface = mouseActionScriptInputInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(new StringMaker().
@@ -77,8 +73,6 @@ logUtil!.putF(new StringMaker().
     
 
     var inputRobotInterface: InputRobotInterface = mouseActionScriptInputInterface!.getInputRobotInterface()!;
-        
-        
 ;
     
 

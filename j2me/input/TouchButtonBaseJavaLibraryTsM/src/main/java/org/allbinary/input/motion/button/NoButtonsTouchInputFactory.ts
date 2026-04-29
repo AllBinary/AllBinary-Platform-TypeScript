@@ -45,8 +45,6 @@ export class NoButtonsTouchInputFactory
         
 
     private static readonly instance: BaseTouchInput = new BaseTouchInput();
-        
-        
 
     public static getInstance(): BaseTouchInput{
 

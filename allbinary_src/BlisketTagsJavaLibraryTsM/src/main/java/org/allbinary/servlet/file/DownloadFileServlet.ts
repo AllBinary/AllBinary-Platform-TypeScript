@@ -98,20 +98,12 @@ export class DownloadFileServlet extends HttpServlet {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly DOWNLOAD: string = "download";
-        
-        
 
     private readonly DEFAULT_BUFFER_SIZE: number = 16384;
-        
-        
 
                 //@Throws(ServletException::class, IOException::class)
             
@@ -122,8 +114,6 @@ var response = response
     var inputStream: InputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -132,8 +122,6 @@ var response = response
     
 
     var requestPath: string = request.getRequestURI()!;
-        
-        
 ;
     
 
@@ -155,14 +143,10 @@ var response = response
                                 
 
     var beginIndex: number = requestPath!.indexOf(this.DOWNLOAD)!;
-        
-        
 ;
     
 
     var filePath: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -182,8 +166,6 @@ var response = response
                             
 
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
-        
-        
 ;
     
 
@@ -202,16 +184,12 @@ var response = response
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request); as AuthenticationHelper;
-        
-        
+    var authenticationHelper: AuthenticationHelper =  as AuthenticationHelpernew AuthenticationHelperFactory().
+                            getInstance(hashMap, request);;
 ;
     
 
@@ -226,8 +204,6 @@ var response = response
     
 
     var contentType: string = getServletContext()!.getMimeType(file.getName())!;
-        
-        
 ;
     
 
@@ -253,8 +229,6 @@ response.setHeader("Content-Length", file.length.concatToString()
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("attachment; filename=\"");

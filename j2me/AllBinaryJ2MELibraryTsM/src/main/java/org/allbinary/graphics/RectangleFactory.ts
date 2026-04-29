@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Rectangle } from "./Rectangle.js";
+
 import { PointFactory } from "./PointFactory.js";
 
 export class RectangleFactory
@@ -45,8 +47,6 @@ export class RectangleFactory
         
 
     public static readonly SINGLETON: Rectangle = new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0);
-        
-        
 
 }
                 

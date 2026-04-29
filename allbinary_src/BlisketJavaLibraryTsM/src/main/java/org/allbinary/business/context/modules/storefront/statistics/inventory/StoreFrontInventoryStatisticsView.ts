@@ -76,15 +76,11 @@ this.storeFrontInventoryStatisticsInterface= storeFrontInventoryStatisticsInterf
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.storeFrontInventoryStatisticsInterface!.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.storeFrontInventoryStatisticsInterface!.toHashMap()!;
 ;
     
 
     var node: Node = ModDomHelper.createNameValueNodes(document, StoreFrontInventoryStatisticsData.getInstance()!.NAME, hashMap)!;
-        
-        
 ;
     
 

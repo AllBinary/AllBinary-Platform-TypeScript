@@ -79,8 +79,6 @@ export class NotificationUtil
         
 
     private static readonly SINGLETON: NotificationUtil = new NotificationUtil();
-        
-        
 
     public static getInstance(): NotificationUtil{
 
@@ -93,12 +91,8 @@ export class NotificationUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
-        
-        
+    private notificationManager: NotificationManager =  as NotificationManagerResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE);;
 
     private readonly notificationBuilder: NotificationBuilder
 private constructor (){
@@ -106,8 +100,6 @@ private constructor (){
             super();
         
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-        
-        
 ;
     
 
@@ -134,32 +126,22 @@ private constructor (){
     //var message = message
 
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
-        
-        
 ;
     
 
     var intent: Intent = CommandUriAction.getInstance()!.getIntent(command)!;
-        
-        
 ;
     
 
-    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
-        
-        
+    var integer: number = ResourceUtil.getInstance()!.getResourceId(resource)!;
 ;
     
 
     var FLAG_IMMUTABLE: number = 1<<26;
-        
-        
 ;
     
 
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
-        
-        
 ;
     
 
@@ -171,8 +153,6 @@ private constructor (){
                             0;
 
     )!;
-        
-        
 ;
     
 
@@ -183,8 +163,6 @@ private constructor (){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.NOT_IMPLEMENTED);

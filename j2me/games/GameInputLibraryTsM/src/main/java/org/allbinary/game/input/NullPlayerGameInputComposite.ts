@@ -55,8 +55,6 @@ export class NullPlayerGameInputComposite
         
 
     public static readonly NULL_PLAYER_GAME_INPUT_COMPOSITE: NullPlayerGameInputComposite = new NullPlayerGameInputComposite();
-        
-        
 
     public getName(): string{
 

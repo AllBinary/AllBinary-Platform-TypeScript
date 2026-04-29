@@ -45,11 +45,11 @@ export class HtmlTag
          {
         
 
-    otherAttributes: HashMap<any, any>
+    otherAttributes: HashMap
 public constructor (){
 
             super();
-        this.otherAttributes= new HashMap<any, any>();
+        this.otherAttributes= new HashMap();
     
 }
 

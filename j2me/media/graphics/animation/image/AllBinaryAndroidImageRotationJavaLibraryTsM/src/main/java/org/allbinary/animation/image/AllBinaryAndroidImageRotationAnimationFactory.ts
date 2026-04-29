@@ -74,7 +74,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 
                 //@Throws(Error::class)
             
-    public static create(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    public static createFactory(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
     //var width = width
     //var height = height
@@ -90,7 +90,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 
                 //@Throws(Error::class)
             
-    public static createA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    public static createFactoryA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
     //var width = width
     //var height = height
@@ -107,13 +107,11 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 
                 //@Throws(Error::class)
             
-    public static createU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
-        
-        
 ;
     
 androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.getHeight()>>2));
@@ -129,15 +127,13 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
 
                 //@Throws(Error::class)
             
-    public static createDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
+    public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
     //var dx = dx
     //var dy = dy
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
-        
-        
 ;
     
 androidImageRotationAnimationFactory!.init(dx, dy);
@@ -192,8 +188,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
     getCanvasImage(): Image{
 
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
@@ -204,7 +198,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageCopyUtil.getInstance()!.createImage(this.getImage(), 1.44f, false);;
+                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44f, false);;
     
 
                                     }
@@ -228,20 +222,14 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
     //var instanceId = instanceId
 
     var canvasImage: Image = this.getCanvasImage()!;
-        
-        
 ;
     
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(canvasImage, this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
     var copyOfScaledImage: Image = ImageCopyUtil.getInstance()!.createImage(scaledImage)!;
-        
-        
 ;
     
 

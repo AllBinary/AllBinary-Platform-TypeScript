@@ -55,8 +55,6 @@ export class Waypoint2LogHelper
         
 
     private static readonly instance: Waypoint2LogHelper = new Waypoint2LogHelper();
-        
-        
 
     public static getInstance(): Waypoint2LogHelper{
 
@@ -85,7 +83,7 @@ export class Waypoint2LogHelper
 }
 
 
-    public processPossibleTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
+    public processSetTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var unitWaypointBehavior2 = unitWaypointBehavior2
     //var layerInterface = layerInterface
@@ -114,7 +112,7 @@ export class Waypoint2LogHelper
 }
 
 
-    public setTargetPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase){
+    public setTargetPathIgnoreNewPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var unitWaypointBehavior2 = unitWaypointBehavior2
 }
@@ -134,7 +132,7 @@ export class Waypoint2LogHelper
 }
 
 
-    public processWaypointTracked(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, geographicMapCellPosition: GeographicMapCellPosition){
+    public processWaypointTrackedVisit(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, geographicMapCellPosition: GeographicMapCellPosition){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var geographicMapCellPosition = geographicMapCellPosition
 }
@@ -178,7 +176,7 @@ export class Waypoint2LogHelper
 }
 
 
-    public removeWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, list: BasicArrayList){
+    public removeWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, list: BasicArrayList){
     //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
     //var unitWaypointBehavior2 = unitWaypointBehavior2
     //var list = list

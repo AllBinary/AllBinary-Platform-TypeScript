@@ -64,8 +64,6 @@ var node = node
     var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = 
                 null
             ;
-        
-        
 ;
     
 

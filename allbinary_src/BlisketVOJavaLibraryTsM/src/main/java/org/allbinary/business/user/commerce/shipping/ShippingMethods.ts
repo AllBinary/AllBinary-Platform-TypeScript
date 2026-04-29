@@ -63,12 +63,8 @@ export class ShippingMethods
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private shippingVector: Vector
 
@@ -107,8 +103,6 @@ var name = name
     
 
     var size: number = this.shippingVector!.length!;
-        
-        
 ;
     
 
@@ -117,11 +111,9 @@ var name = name
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-shipping= this.shippingVector!.get(index); as ShippingInterface;
+shipping=  as ShippingInterfacethis.shippingVector!.get(index);;
     
 
                         if(name.compareTo(shipping.getName()) == 0)
@@ -135,8 +127,6 @@ shipping= this.shippingVector!.get(index); as ShippingInterface;
 
 
     var error: string = "Error Finding Shipping: " +name;
-        
-        
 ;
     
 
@@ -151,7 +141,8 @@ shipping= this.shippingVector!.get(index); as ShippingInterface;
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 }
 
 

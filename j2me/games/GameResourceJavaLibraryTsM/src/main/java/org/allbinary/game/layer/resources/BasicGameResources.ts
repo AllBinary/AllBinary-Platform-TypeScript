@@ -60,20 +60,12 @@ export class BasicGameResources
         
 
     static readonly stringBuffer: StringMaker = new StringMaker();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public RESOURCE: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public RESOURCE_DESTROY: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 protected constructor (){
 
             super();
@@ -87,15 +79,13 @@ var SIZE = SIZE
         try {
             
     var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.toInt()!;
-        
-        
 ;
     
 
                         if(scale > 1 && scale -1 < SIZE.length)
                         
                                     {
-                                    this.init(ROOT, SIZE[scale -1]!);
+                                    this.append(ROOT, SIZE[scale -1]!);
     
 
                                     }
@@ -105,7 +95,8 @@ var SIZE = SIZE
 
 
                             throw new Error(new StringMaker().
-                            append("Invalid Value: ")!.appendint(scale)!.toString())
+                            append("Invalid Value: ")!.appendint(scale)!.toString());
+                    
 
                         }
                             
@@ -115,8 +106,6 @@ var SIZE = SIZE
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
@@ -128,31 +117,15 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
                 //@Throws(Error::class)
             
-    getString(): string{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.getInstance()!.getName();;
-    
-}
-
-
-                //@Throws(Error::class)
-            
-    init(ROOT: string, sizeString: string){
+    append(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
 
     var DESTROY: string = "_destroy";
-        
-        
 ;
     
 
     var string: string = this.getString()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -176,6 +149,18 @@ stringBuffer!.append(string);
 stringBuffer!.append(sizeString);
     
 this.RESOURCE_DESTROY= stringBuffer!.toString();
+    
+}
+
+
+                //@Throws(Error::class)
+            
+    getString(): string{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return GameGraphicsResourceUtil.getInstance()!.getName();;
     
 }
 

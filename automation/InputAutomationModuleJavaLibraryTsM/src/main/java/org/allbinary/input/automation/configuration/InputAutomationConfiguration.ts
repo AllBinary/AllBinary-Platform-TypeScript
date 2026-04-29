@@ -94,8 +94,6 @@ export class InputAutomationConfiguration
         
 
     private static readonly FILENAME: string = "InputAutomationConfig.xml";
-        
-        
 
     public static getFile(): File{
 
@@ -108,8 +106,6 @@ export class InputAutomationConfiguration
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private installed: boolean= false
 
@@ -154,8 +150,6 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
     public save(){
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 
@@ -163,22 +157,16 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
 
 
     var file: File = new File(FILENAME);
-        
-        
 ;
     
 FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath()), new AbPath(file.getAbsolutePath() +".bak.xml"));
     
 
     var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
-        
-        
 ;
     
 
     var marshaller: Marshaller = jaxbContext!.createMarshaller()!;
-        
-        
 ;
     
 marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);

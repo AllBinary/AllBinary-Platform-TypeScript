@@ -43,8 +43,6 @@ export class PartInterfaceUtil
         
 
     private static readonly SINGLETON: PartInterface[] = [];
-        
-        
 
     public static getZeroArray(): PartInterface[]{
 

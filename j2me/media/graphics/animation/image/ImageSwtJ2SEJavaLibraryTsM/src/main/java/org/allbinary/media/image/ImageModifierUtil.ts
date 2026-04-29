@@ -18,9 +18,6 @@
 
 
 
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
-
-    
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -84,8 +81,6 @@ export class ImageModifierUtil
         
 
     private static readonly instance: ImageModifierUtil = new ImageModifierUtil();
-        
-        
 
     public static getInstanceOrCreate(): ImageModifierUtil{
 
@@ -98,16 +93,10 @@ export class ImageModifierUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;
-        
-        
 
     private readonly features: Features = Features.getInstance()!;
-        
-        
 
     public setBasicColorP(basicColor: BasicColor){
     //var basicColor = basicColor
@@ -128,62 +117,46 @@ export class ImageModifierUtil
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;
-        
-        
+    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
-        
-        
+    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                         }
                             
 
     var r: number = basicColor!.red;
-        
-        
 ;
     
 
     var g: number = basicColor!.green;
-        
-        
 ;
     
 
     var b: number = basicColor!.blue;
-        
-        
 ;
     
 
     var width: number = image.getWidth()!;
-        
-        
 ;
     
 
     var height: number = image.getHeight()!;
-        
-        
 ;
     
 
     var imageData: ImageData = newBufferedImage!.getImageData()!;
-        
-        
 ;
     
 
@@ -212,8 +185,6 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
 
                         for (
     var index: number = 0;
-        
-        
 index < width; index++)
         {
 
@@ -222,8 +193,6 @@ index < width; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < height; index2++)
         {
 index3= (index2 *imageData!.bytesPerLine) +(index *4);
@@ -238,11 +207,11 @@ bx= (imageData!.data[index3 +2]&0xFF);
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    imageData!.data[index3]= r.toByte();
+                                    imageData!.data[index3]= .toByte()r;
     
-imageData!.data[index3 +1]= g.toByte();
+imageData!.data[index3 +1]= .toByte()g;
     
-imageData!.data[index3 +2]= b.toByte();
+imageData!.data[index3 +2]= .toByte()b;
     
 
                                     }
@@ -271,9 +240,7 @@ imageData!.data[index3 +2]= b.toByte();
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = (image as OpenGLESImage);
-        
-        
+    var openGLESImage: OpenGLESImage = ( as OpenGLESImageimage);
 ;
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
@@ -305,50 +272,38 @@ openGLESImage!.openGLESImageProperties!.bluef= basicColor!.getBlueComponent();
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;
-        
-        
+    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
-        
-        
+    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                         }
                             
 
     var MAX: number = 255;
-        
-        
 ;
     
 
     var r: number = (basicColor!.red) /MAX;
-        
-        
 ;
     
 
     var g: number = (basicColor!.green) /MAX;
-        
-        
 ;
     
 
     var b: number = (basicColor!.blue) /MAX;
-        
-        
 ;
     
 
@@ -365,8 +320,6 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     
 
     var imageData: ImageData = newBufferedImage!.getImageData()!;
-        
-        
 ;
     
 
@@ -375,8 +328,6 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
                                     {
                                     
     var size: number = imageData!.data.length;
-        
-        
 ;
     
 
@@ -385,8 +336,6 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; )
         {
 rx= (imageData!.data[index]&0xFF)<<16;
@@ -401,11 +350,11 @@ gx *= g;
     
 bx *= b;
     
-imageData!.data[index]= rx.toByte();
+imageData!.data[index]= .toByte()rx;
     
-imageData!.data[index +1]= gx.toByte();
+imageData!.data[index +1]= .toByte()gx;
     
-imageData!.data[index +2]= bx.toByte();
+imageData!.data[index +2]= .toByte()bx;
     
 }
 
@@ -429,9 +378,7 @@ imageData!.data[index +2]= bx.toByte();
                         
                                     {
                                     
-    var openGLESImage: OpenGLESImage = (image as OpenGLESImage);
-        
-        
+    var openGLESImage: OpenGLESImage = ( as OpenGLESImageimage);
 ;
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
@@ -450,18 +397,16 @@ openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt) /255f;
 
                                     }
                                 
-this.setAlpha(image, alphaInt);
+this.setAlphaSWT(image, alphaInt);
     
 }
 
 
-    public setAlpha(image: Image, alphaInt: number){
+    public setAlphaSWT(image: Image, alphaInt: number){
     //var image = image
     //var alphaInt = alphaInt
 
-    var alpha: number = alphaInt.toByte();
-        
-        
+    var alpha: number = .toByte()alphaInt;
 ;
     
 
@@ -473,24 +418,20 @@ this.setAlpha(image, alphaInt);
                         
                                     {
                                     
-    var swtImage: SwtMutableImage = image as SwtMutableImage;
-        
-        
+    var swtImage: SwtMutableImage =  as SwtMutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                                     }
                                 
                         else {
                             
-    var swtImage: SwtImmutableImage = image as SwtImmutableImage;
-        
-        
+    var swtImage: SwtImmutableImage =  as SwtImmutableImageimage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage=  as org.eclipse.swt.graphics.ImageswtImage!.getImage();;
     
 
                         }
@@ -506,15 +447,11 @@ newBufferedImage!.getImageData()!.alpha= alpha;
         try {
             
     var newImageArray: Image[] = new Array(originalImageArray!.length);
-        
-        
 ;
     
 
     var size: number = newImageArray!.length
                 ;
-        
-        
 ;
     
 
@@ -527,16 +464,12 @@ newBufferedImage!.getImageData()!.alpha= alpha;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 originalImage= originalImageArray[index]!;
     
 
     var image: Image = this.imageCopyUtil!.createImage(originalImage)!;
-        
-        
 ;
     
 newImageArray[index]= image;
@@ -555,8 +488,6 @@ newImageArray[index]= image;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);

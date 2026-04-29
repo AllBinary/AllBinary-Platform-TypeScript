@@ -33,9 +33,6 @@ import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
     
-import { FrameUtil } from "../../../org/allbinary/math/FrameUtil.js";
-
-    
 
 
 
@@ -75,22 +72,20 @@ this.angleInfo!.adjustAngle(this.getFrame());
 }
 
 
-    public setFrame(direction: Direction){
+    public setFrameByDirection(direction: Direction){
     //var direction = direction
 
     var angle: Angle = directionUtil!.getFrameAngle(direction)!;
-        
-        
 ;
     
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
 
-    public setFrame(angle: Angle){
+    public setFrameToAngle(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
@@ -106,12 +101,12 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
     public adjustFrame(newAngle: number){
     //var newAngle = newAngle
-this.setFrame(frameUtil!.getFrameForAngle(newAngle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
+this.setFrame(frameUtil!.getFrameForAngle(newAngle, Math.roundthis.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
     
 }
 
 
-    public adjustFrame(newAngle: Angle){
+    public adjustFrameToAngle(newAngle: Angle){
     //var newAngle = newAngle
 this.adjustFrame(newAngle!.getValue());
     

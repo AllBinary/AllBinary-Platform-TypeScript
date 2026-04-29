@@ -75,32 +75,20 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { InitializerData } from "./InitializerData.js";
 
-import { Class } from "./Class.js";
-
 export class Initializer
             extends Object
          {
         
 
     private static readonly MAXDB: number = 30;
-        
-        
 
     private static readonly MAX: number = 16;
-        
-        
 
     private static readonly MIN: number = 4;
-        
-        
 
     private static readonly MINPASSWORD: number = 0;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userJdbcDriver: string
 
@@ -177,33 +165,23 @@ public constructor (map: Map){
         var map = map
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var keys: Set = map.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -212,20 +190,14 @@ public constructor (map: Map){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
-        
-        
+    var key: string =  as StringkeyArray[index]!;
 ;
     
 
-    var values: string[] = map.get(key); as Array<String?>;
-        
-        
+    var values: string[] =  as Array<String?>map.get(key);;
 ;
     
 hashMap!.put(key.toCharArray()
@@ -250,7 +222,7 @@ this.getFormData(hashMap);
     
 }
 
-public constructor (initHashMap: HashMap<any, any>){
+public constructor (initHashMap: HashMap){
 
             super();
         var initHashMap = initHashMap
@@ -259,85 +231,83 @@ this.getFormData(initHashMap);
 }
 
 
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
 
         try {
             
     var initializerData: InitializerData = InitializerData.getInstance()!;
-        
-        
 ;
     
-this.userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER); as String;
+this.userJdbcDriver=  as StringhashMap!.get(initializerData!.CUSTOMERJDBCDRIVER);;
     
-this.userName= hashMap!.get(initializerData!.CUSTOMERNAME); as String;
+this.userName=  as StringhashMap!.get(initializerData!.CUSTOMERNAME);;
     
-this.userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME); as String;
+this.userUserName=  as StringhashMap!.get(initializerData!.CUSTOMERUSERNAME);;
     
-this.userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD); as String;
+this.userPassword=  as StringhashMap!.get(initializerData!.CUSTOMERPASSWORD);;
     
-this.userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA); as String;
+this.userSchema=  as StringhashMap!.get(initializerData!.CUSTOMERSCHEMA);;
     
-this.userServer= hashMap!.get(initializerData!.CUSTOMERSERVER); as String;
+this.userServer=  as StringhashMap!.get(initializerData!.CUSTOMERSERVER);;
     
-this.userPort= hashMap!.get(initializerData!.CUSTOMERPORT); as String;
+this.userPort=  as StringhashMap!.get(initializerData!.CUSTOMERPORT);;
     
-this.historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER); as String;
+this.historyJdbcDriver=  as StringhashMap!.get(initializerData!.HISTORYJDBCDRIVER);;
     
-this.historyName= hashMap!.get(initializerData!.HISTORYNAME); as String;
+this.historyName=  as StringhashMap!.get(initializerData!.HISTORYNAME);;
     
-this.historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME); as String;
+this.historyUserName=  as StringhashMap!.get(initializerData!.HISTORYUSERNAME);;
     
-this.historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD); as String;
+this.historyPassword=  as StringhashMap!.get(initializerData!.HISTORYPASSWORD);;
     
-this.historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA); as String;
+this.historySchema=  as StringhashMap!.get(initializerData!.HISTORYSCHEMA);;
     
-this.historyServer= hashMap!.get(initializerData!.HISTORYSERVER); as String;
+this.historyServer=  as StringhashMap!.get(initializerData!.HISTORYSERVER);;
     
-this.historyPort= hashMap!.get(initializerData!.HISTORYPORT); as String;
+this.historyPort=  as StringhashMap!.get(initializerData!.HISTORYPORT);;
     
-this.logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER); as String;
+this.logJdbcDriver=  as StringhashMap!.get(initializerData!.LOGJDBCDRIVER);;
     
-this.logName= hashMap!.get(initializerData!.LOGNAME); as String;
+this.logName=  as StringhashMap!.get(initializerData!.LOGNAME);;
     
-this.logUserName= hashMap!.get(initializerData!.LOGUSERNAME); as String;
+this.logUserName=  as StringhashMap!.get(initializerData!.LOGUSERNAME);;
     
-this.logPassword= hashMap!.get(initializerData!.LOGPASSWORD); as String;
+this.logPassword=  as StringhashMap!.get(initializerData!.LOGPASSWORD);;
     
-this.logSchema= hashMap!.get(initializerData!.LOGSCHEMA); as String;
+this.logSchema=  as StringhashMap!.get(initializerData!.LOGSCHEMA);;
     
-this.logServer= hashMap!.get(initializerData!.LOGSERVER); as String;
+this.logServer=  as StringhashMap!.get(initializerData!.LOGSERVER);;
     
-this.logPort= hashMap!.get(initializerData!.LOGPORT); as String;
+this.logPort=  as StringhashMap!.get(initializerData!.LOGPORT);;
     
-this.inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER); as String;
+this.inventoryJdbcDriver=  as StringhashMap!.get(initializerData!.INVENTORYJDBCDRIVER);;
     
-this.inventoryName= hashMap!.get(initializerData!.INVENTORYNAME); as String;
+this.inventoryName=  as StringhashMap!.get(initializerData!.INVENTORYNAME);;
     
-this.inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME); as String;
+this.inventoryUserName=  as StringhashMap!.get(initializerData!.INVENTORYUSERNAME);;
     
-this.inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD); as String;
+this.inventoryPassword=  as StringhashMap!.get(initializerData!.INVENTORYPASSWORD);;
     
-this.inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA); as String;
+this.inventorySchema=  as StringhashMap!.get(initializerData!.INVENTORYSCHEMA);;
     
-this.inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER); as String;
+this.inventoryServer=  as StringhashMap!.get(initializerData!.INVENTORYSERVER);;
     
-this.inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT); as String;
+this.inventoryPort=  as StringhashMap!.get(initializerData!.INVENTORYPORT);;
     
-this.staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER); as String;
+this.staticPagesJdbcDriver=  as StringhashMap!.get(initializerData!.STATICPAGESJDBCDRIVER);;
     
-this.staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME); as String;
+this.staticPagesName=  as StringhashMap!.get(initializerData!.STATICPAGESNAME);;
     
-this.staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME); as String;
+this.staticPagesUserName=  as StringhashMap!.get(initializerData!.STATICPAGESUSERNAME);;
     
-this.staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD); as String;
+this.staticPagesPassword=  as StringhashMap!.get(initializerData!.STATICPAGESPASSWORD);;
     
-this.staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA); as String;
+this.staticPagesSchema=  as StringhashMap!.get(initializerData!.STATICPAGESSCHEMA);;
     
-this.staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER); as String;
+this.staticPagesServer=  as StringhashMap!.get(initializerData!.STATICPAGESSERVER);;
     
-this.staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT); as String;
+this.staticPagesPort=  as StringhashMap!.get(initializerData!.STATICPAGESPORT);;
     
 
                 //: 
@@ -372,8 +342,6 @@ var jdbcDriverClassPathString = jdbcDriverClassPathString
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
@@ -395,8 +363,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
     public isValid(): boolean{
 
     var isValid: boolean = true;
-        
-        
 ;
     
 
@@ -410,8 +376,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -598,8 +562,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 var jdbcDriver = jdbcDriver
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("The JDBC driver (");
@@ -620,8 +582,6 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
     getJdbcDriverSolutionInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("The following describes the possible problems and solutions regarding the Jdbc Driver error(s):<p/>");
@@ -654,14 +614,10 @@ stringBuffer!.append("Solution: Use a valid JDBC driver.<p/>");
     public getInvalidInfo(): string{
 
     var isJdbcDriversValid: boolean = true;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -677,8 +633,6 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.userJdbcDriver));
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -885,8 +839,6 @@ this.logUtil!.putF("Creating DB connection files", this, "set()");
     
 
     var userDbInitInfo: UserDbInitInfo = new UserDbInitInfo(false);
-        
-        
 ;
     
 userDbInitInfo!.setJdbcDriver(this.userJdbcDriver);
@@ -909,8 +861,6 @@ userDbInitInfo!.write();
     
 
     var historyDbInitInfo: HistoryDbInitInfo = new HistoryDbInitInfo(false);
-        
-        
 ;
     
 historyDbInitInfo!.setJdbcDriver(this.historyJdbcDriver);
@@ -933,8 +883,6 @@ historyDbInitInfo!.write();
     
 
     var logDbInitInfo: LogDbInitInfo = new LogDbInitInfo(false);
-        
-        
 ;
     
 logDbInitInfo!.setJdbcDriver(this.logJdbcDriver);
@@ -957,8 +905,6 @@ logDbInitInfo!.write();
     
 
     var staticPagesDbInitInfo: StaticPagesDbInitInfo = new StaticPagesDbInitInfo(false);
-        
-        
 ;
     
 staticPagesDbInitInfo!.setJdbcDriver(this.staticPagesJdbcDriver);
@@ -981,8 +927,6 @@ staticPagesDbInitInfo!.write();
     
 
     var inventoryDbInitInfo: InventoryDbInitInfo = new InventoryDbInitInfo(false);
-        
-        
 ;
     
 inventoryDbInitInfo!.setJdbcDriver(this.inventoryJdbcDriver);

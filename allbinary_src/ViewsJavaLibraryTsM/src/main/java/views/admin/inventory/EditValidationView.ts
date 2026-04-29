@@ -103,10 +103,8 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).
+    var hashMap: HashMap = new RequestParams(request).
                             toHashMap()!;
-        
-        
 ;
     
 
@@ -114,8 +112,9 @@ this.getFormData();
                                     null
                                 )
                         
-                                    throw new Error("No Request Params Found")
-this.id= hashMap!.get(BasicItemData.ID); as String;
+                                    throw new Error("No Request Params Found");
+                                
+this.id=  as StringhashMap!.get(BasicItemData.ID);;
     
 }
 
@@ -157,8 +156,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                 
 
     var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-        
-        
 ;
     
 
@@ -167,8 +164,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                     {
                                     
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-        
-        
 ;
     
 this.downloadableItemVector= downloadItemsEntity!.getForItem(this.itemInterface!.getId());
@@ -211,8 +206,6 @@ var document = document
     public validationInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

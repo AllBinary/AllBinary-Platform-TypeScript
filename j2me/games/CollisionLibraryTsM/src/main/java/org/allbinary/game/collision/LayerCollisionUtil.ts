@@ -49,14 +49,14 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CollisionProcessor } from "./CollisionProcessor.js";
+
 export class LayerCollisionUtil
             extends Object
          {
         
 
     private static readonly instance: LayerCollisionUtil = new LayerCollisionUtil();
-        
-        
 
     public static getInstance(): LayerCollisionUtil{
 
@@ -74,14 +74,10 @@ private constructor (){
             super();
         
     var features: Features = Features.getInstance()!;
-        
-        
 ;
     
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 ;
     
 

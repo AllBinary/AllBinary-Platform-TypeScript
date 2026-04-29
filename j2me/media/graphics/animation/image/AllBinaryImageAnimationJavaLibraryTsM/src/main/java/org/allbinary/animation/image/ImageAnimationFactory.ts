@@ -33,9 +33,6 @@ import { OpenGLUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLUt
 import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
 
     
-import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
-
-    
 
 
 
@@ -62,7 +59,7 @@ export class ImageAnimationFactory extends BaseImageAnimationFactory {
 
                 //@Throws(Error::class)
             
-    public static create(image: Image): ImageAnimationFactory{
+    public static createFactory(image: Image): ImageAnimationFactory{
     //var image = image
 
 
@@ -93,14 +90,10 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
     //var instanceId = instanceId
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
     var openGLUtil: OpenGLUtil = OpenGLUtil.getInstance()!;
-        
-        
 ;
     
 scaledImage= openGLUtil!.add(scaledImage);

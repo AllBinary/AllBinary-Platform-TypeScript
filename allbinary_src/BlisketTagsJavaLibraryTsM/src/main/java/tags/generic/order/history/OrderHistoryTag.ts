@@ -65,8 +65,6 @@ export class OrderHistoryTag extends StoreValidationTransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private status: string
 public constructor (){
@@ -90,28 +88,20 @@ this.status= value;
             
     var anyType: any = new OrderHistoryHelperFactory().
                             getInstance(this.getPropertiesHashMap(), pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -127,7 +117,8 @@ this.status= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -135,8 +126,6 @@ this.status= value;
             {
 
     var error: string = "Failed to view order table";
-        
-        
 ;
     
 
@@ -196,7 +185,8 @@ pageContext!.getOut()!.print(this.setOrderStatus());
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand());
+                    
 
                         }
                             
@@ -212,7 +202,8 @@ pageContext!.getOut()!.print(this.setOrderStatus());
 
 
 
-                            throw new Error("Command Null")
+                            throw new Error("Command Null");
+                    
 
                 //: 
 } catch(e) 

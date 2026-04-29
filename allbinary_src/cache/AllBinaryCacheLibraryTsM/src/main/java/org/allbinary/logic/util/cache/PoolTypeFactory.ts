@@ -23,6 +23,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PoolType } from "./PoolType.js";
+
 import { CacheTypeFactory } from "./CacheTypeFactory.js";
 
 export class PoolTypeFactory
@@ -31,8 +33,6 @@ export class PoolTypeFactory
         
 
     private static readonly instance: PoolTypeFactory = new PoolTypeFactory();
-        
-        
 
     public static getInstance(): PoolTypeFactory{
 
@@ -45,8 +45,6 @@ export class PoolTypeFactory
 
 
     public VECTOR_POOL: PoolType = new PoolType(CacheTypeFactory.getInstance()!.NO_CACHE);
-        
-        
 
 }
                 

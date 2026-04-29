@@ -43,8 +43,6 @@ export class SimpleShaderInitializer extends ShaderInitializer {
         
 
     private static readonly instance: SimpleShaderInitializer = new SimpleShaderInitializer();
-        
-        
 
     public static getInstance(): SimpleShaderInitializer{
 

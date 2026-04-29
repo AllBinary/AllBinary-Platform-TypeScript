@@ -78,6 +78,8 @@ import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
 
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
 
+import { HighScoresHelper2 } from "./HighScoresHelper2.js";
+
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 
 export class BasicHighScoresFactory extends HighScoresBase {
@@ -108,8 +110,6 @@ export class BasicHighScoresFactory extends HighScoresBase {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
@@ -127,51 +127,37 @@ this.softwareInformation= softwareInformation;
 
 
     private readonly highScoresArray: HighScores[] = new Array(2);
-        
-        
 
     private readonly TOP: string = "Top";
-        
-        
 
     private readonly SCORES: string = "Scores";
-        
-        
 
     private readonly PERSONAL_HIGH_SCORES: string = "Personal Top Scores";
-        
-        
 
     private readonly WORLD_TOP_SCORES: string = "World Top Scores";
-        
-        
 
     private readonly FETCH: string = "fetchHighScores";
-        
-        
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
 this.logUtil!.putF("Getting Remote/Local HighScores", this, FETCH);
     
-this.fetchHighScores(gameInfo, highScoresResultsListener, true);
+this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
     
 }
 
 
-    public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
+    public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload
-SecondaryThreadPool.getInstance()!.runTask(new object: ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -182,20 +168,14 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
     
 
     var gameType: GameType = gameInfo!.getGameType()!;
-        
-        
 ;
     
 
     var gameTypeFactory: GameTypeFactory = GameTypeFactory.getInstance()!;
-        
-        
 ;
     
 
     var gameInfo2: GameInfo = gameInfo;
-        
-        
 ;
     
 
@@ -216,7 +196,7 @@ highScoresArray[0]= RecordStoreHighScores.getInstance(abeClientInformation, game
 
                                     }
                                 
-highScoresArray[1]= RemoteHighScores.getInstance(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload);
+highScoresArray[1]= RemoteHighScores.getInstancePreload(abeClientInformation, softwareInformation, gameInfo2, WORLD_TOP_SCORES, SCORES, BooleanFactory.getInstance()!.FALSE, preload);
     
 logUtil!.putF(commonStrings!.END, this, FETCH);
     

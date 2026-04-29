@@ -43,8 +43,6 @@ export class BaseImageLoadingProcessor
         
 
     private static readonly instance: BaseImageLoadingProcessor = new BaseImageLoadingProcessor();
-        
-        
 
     public static getInstance(): BaseImageLoadingProcessor{
 

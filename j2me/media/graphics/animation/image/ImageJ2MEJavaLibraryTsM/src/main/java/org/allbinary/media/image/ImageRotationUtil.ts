@@ -49,8 +49,6 @@ export class ImageRotationUtil
         
 
     private static readonly instance: ImageRotationUtil = new ImageRotationUtil();
-        
-        
 
     public static getInstance(): ImageRotationUtil{
 
@@ -68,8 +66,6 @@ private constructor (){
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
                 //@Throws(Error::class)
             

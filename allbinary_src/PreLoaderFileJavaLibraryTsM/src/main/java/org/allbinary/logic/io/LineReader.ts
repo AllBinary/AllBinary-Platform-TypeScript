@@ -49,26 +49,22 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbFileInputStream } from "./AbFileInputStream.js";
+
 export class LineReader
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private fileName: string
 
     private string: string
 
     private index: number = 0;
-        
-        
 
     private idFile: AbFileInputStream
 
@@ -81,8 +77,6 @@ public constructor (fileName: string){
         try {
             
     var bytes: number[] = new Array(100000);
-        
-        
 ;
     
 this.fileName= fileName;
@@ -115,8 +109,6 @@ this.logUtil!.put("File: " +fileName, this, "LineReader", e);
         try {
             
     var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
-        
-        
 ;
     
 
@@ -168,8 +160,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
         try {
             
     var nextIndex: number = this.string.indexOf(CommonSeps.getInstance()!.NEW_LINE, index)!;
-        
-        
 ;
     
 
@@ -179,14 +169,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
                                     
 
 
-                            throw new Error("next() should have been called first")
+                            throw new Error("next() should have been called first");
+                    
 
                                     }
                                 
 
     var temp: string = this.string.substring(index, nextIndex)!;
-        
-        
 ;
     
 index= nextIndex +1;
@@ -212,7 +201,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "next", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

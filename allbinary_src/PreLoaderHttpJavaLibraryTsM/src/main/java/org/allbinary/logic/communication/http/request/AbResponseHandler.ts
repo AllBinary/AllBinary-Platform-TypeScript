@@ -67,8 +67,6 @@ import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communicat
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Exception } from "./Exception.js";
-
 export class AbResponseHandler
             extends Object
          {
@@ -81,8 +79,6 @@ export class AbResponseHandler
     //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -114,7 +110,8 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw new JspTagException()
+                            throw new JspTagException();
+                    
 }
 
 }
@@ -127,8 +124,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
     //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -160,7 +155,8 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw new ServletException()
+                            throw new ServletException();
+                    
 }
 
 }
@@ -173,8 +169,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
     //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -206,7 +200,8 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw new JspTagException()
+                            throw new JspTagException();
+                    
 }
 
 }
@@ -219,8 +214,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
     //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -252,7 +245,8 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
 
 
-                            throw new ServletException()
+                            throw new ServletException();
+                    
 }
 
 }
@@ -264,21 +258,15 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
     //var pageContext = pageContext
     //var page = page
 
-    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
-        
-        
+    var request: HttpServletRequest =  as HttpServletRequestpageContext!.getRequest();;
 ;
     
 
-    var response: HttpServletResponse = pageContext!.getResponse(); as HttpServletResponse;
-        
-        
+    var response: HttpServletResponse =  as HttpServletResponsepageContext!.getResponse();;
 ;
     
 
     var requestDispatcher: RequestDispatcher = request.getRequestDispatcher(page)!;
-        
-        
 ;
     
 
@@ -310,8 +298,6 @@ pageContext!.getOut()!.print("Error: " +page);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();

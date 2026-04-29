@@ -52,8 +52,6 @@ export class LinePathAnimation
         
 
     private static readonly instance: LinePathAnimation = new LinePathAnimation();
-        
-        
 
     public static getInstance(): LinePathAnimation{
 

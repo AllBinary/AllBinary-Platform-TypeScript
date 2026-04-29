@@ -82,12 +82,8 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
         
 
     private readonly geographicMapBehavior: MultiGeographicMapBehavior = new MultiGeographicMapBehavior();
-        
-        
 
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(AngleFactory.getInstance()!.DOWN);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -101,8 +97,6 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var maxColumns: number = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!.getColumns()!;
-        
-        
 ;
     
 
@@ -113,21 +107,17 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
     var nextTerrainGeographicMapCellPosition: GeographicMapCellPosition = 
                 null
             ;
-        
-        
 ;
     
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterfaceArray[0]!.getGeographicMapCellPositionFactory()!;
-        
-        
 ;
     
 
                         if(direction == DirectionFactory.getInstance()!.LEFT)
                         
                                     {
-                                    nextTerrainGeographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(geographicMapCellPosition!.getColumn() -1, geographicMapCellPosition!.getRow());
+                                    nextTerrainGeographicMapCellPosition= geographicMapCellPositionFactory!.getAt(geographicMapCellPosition!.getColumn() -1, geographicMapCellPosition!.getRow());
     
 
                                     }
@@ -136,7 +126,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
                         if(direction == DirectionFactory.getInstance()!.RIGHT)
                         
                                     {
-                                    nextTerrainGeographicMapCellPosition= geographicMapCellPositionFactory!.getInstance(geographicMapCellPosition!.getColumn() +1, geographicMapCellPosition!.getRow());
+                                    nextTerrainGeographicMapCellPosition= geographicMapCellPositionFactory!.getAt(geographicMapCellPosition!.getColumn() +1, geographicMapCellPosition!.getRow());
     
 
                                     }
@@ -145,8 +135,6 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
     
 
     var hasSolidBlock: boolean = this.hasSolidBlock(geographicMapInterfaceArray, geographicMapCellTypeArray)!;
-        
-        
 ;
     
 
@@ -154,9 +142,7 @@ this.geographicMapBehavior!.getCellTypeAt(geographicMapInterfaceArray, geographi
                         
                                     {
                                     
-    var terrainEvent: TerrainEvent = TerrainEventCircularStaticPool.getInstance()!.getInstance(this.CLIFF)!;
-        
-        
+    var terrainEvent: TerrainEvent = TerrainEventCircularStaticPool.getInstance()!.getNext(this.CLIFF)!;
 ;
     
 TerrainEventHandler.getInstance(layer)!.fireEvent(terrainEvent);
@@ -175,7 +161,7 @@ TerrainEventHandler.getInstance(layer)!.fireEvent(terrainEvent);
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var x = x
     //var y = y
-layer.move(x, y);
+layer.moveDXY(x, y);
     
 }
 

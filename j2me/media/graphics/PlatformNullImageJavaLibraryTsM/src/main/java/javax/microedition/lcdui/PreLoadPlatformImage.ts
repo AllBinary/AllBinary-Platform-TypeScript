@@ -43,8 +43,6 @@ export class PreLoadPlatformImage extends PlatformImage {
         
 
     private static readonly instance: PreLoadPlatformImage = new PreLoadPlatformImage();
-        
-        
 
     public static getInstance(): PreLoadPlatformImage{
 

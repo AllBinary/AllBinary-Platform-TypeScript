@@ -48,20 +48,21 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { GeographicMapCellPositionAreaInterface } from "./GeographicMapCellPositionAreaInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class GeographicMapCellPositionAreaBase
             extends Object
          implements GeographicMapCellPositionAreaInterface {
         
 
     public static readonly NULL_GEOGRPAHIC_MAP_POSITION_AREA_BASE: GeographicMapCellPositionAreaBase = new GeographicMapCellPositionAreaBase();
-        
-        
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -69,7 +70,8 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -77,7 +79,8 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -88,7 +91,8 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

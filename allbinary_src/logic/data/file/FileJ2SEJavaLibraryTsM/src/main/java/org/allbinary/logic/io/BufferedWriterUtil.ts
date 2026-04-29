@@ -55,8 +55,6 @@ export class BufferedWriterUtil
         
 
     private static readonly instance: BufferedWriterUtil = new BufferedWriterUtil();
-        
-        
 
     public static getInstance(): BufferedWriterUtil{
 
@@ -75,8 +73,6 @@ export class BufferedWriterUtil
     //var data = data
 
     var abFile: AbFile = new AbFile(path);
-        
-        
 ;
     
 
@@ -119,8 +115,6 @@ this.write(abFile, data);
     //var data = data
 
     var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));
-        
-        
 ;
     
 fileOut!.write(data, 0, data.length);

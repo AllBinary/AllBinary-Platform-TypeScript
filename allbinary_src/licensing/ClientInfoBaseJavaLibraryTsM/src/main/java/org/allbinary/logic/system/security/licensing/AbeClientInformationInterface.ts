@@ -67,7 +67,7 @@ export interface AbeClientInformationInterface {
 
     getNumberOfLicenseServers(): number
 
-    toHashtable(): Hashtable<any, any>
+    toHashtable(): Hashtable
 
     isSameId(alicenseId: string): boolean
 

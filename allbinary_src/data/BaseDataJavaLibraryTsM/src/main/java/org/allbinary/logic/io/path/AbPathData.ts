@@ -46,8 +46,6 @@ export class AbPathData
         
 
     private static readonly instance: AbPathData = new AbPathData();
-        
-        
 
     public static getInstance(): AbPathData{
 
@@ -60,18 +58,12 @@ export class AbPathData
 
 
     public readonly EXTENSION_SEP: string = CommonSeps.getInstance()!.PERIOD;
-        
-        
 
     public readonly SEPARATORCHAR: string = 
                 '/'
             ;
-        
-        
 
     public readonly SEPARATOR: string = CommonSeps.getInstance()!.FORWARD_SLASH;
-        
-        
 private constructor (){
 
             super();

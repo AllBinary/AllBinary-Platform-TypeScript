@@ -43,8 +43,6 @@ export class CustomGPoint extends GPoint {
         
 
     public static readonly NULL_CUSTOM_POINT: CustomGPoint = new CustomGPoint(0, 0, 0);
-        
-        
 
     public static getInstance(point: GPoint): CustomGPoint{
     //var point = point

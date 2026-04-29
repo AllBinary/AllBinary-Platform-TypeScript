@@ -56,12 +56,8 @@ export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
         
 
     public readonly weaponProperties: WeaponProperties = new WeaponProperties( -1L,  -1L, 0, 1000, 0);
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
-        
-        
 public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number){
             super(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, SimpleWeaponLayer.createDestroyed(), rectangle, viewPosition);
                         //var name = name

@@ -49,8 +49,6 @@ export class FREEBLISKET_PATH_GLOBALS
         
 
     private static readonly instance: FREEBLISKET_PATH_GLOBALS = new FREEBLISKET_PATH_GLOBALS();
-        
-        
 
     public static getInstance(): FREEBLISKET_PATH_GLOBALS{
 
@@ -67,24 +65,14 @@ export class FREEBLISKET_PATH_GLOBALS
     public readonly XSLPATH: string
 
     public readonly TEMPLATEPATH: string = "template" +AbPathData.getInstance()!.SEPARATOR;
-        
-        
 
     public readonly STYLEPATH: string = TEMPLATEPATH +"style" +AbPathData.getInstance()!.SEPARATOR;
-        
-        
 
     public readonly THEMEPATH: string = STYLEPATH +"theme" +AbPathData.getInstance()!.SEPARATOR;
-        
-        
 
     public readonly DBINITPATH: string = PATH_GLOBALS.getInstance()!.INIT_PATH +"db" +AbPathData.getInstance()!.SEPARATOR;
-        
-        
 
     public readonly LINEDATAPATH: string = PATH_GLOBALS.getInstance()!.INIT_PATH +"lineData" +AbPathData.getInstance()!.SEPARATOR;
-        
-        
 
     public readonly CONFIGURATIONPATH: string
 
@@ -93,19 +81,13 @@ export class FREEBLISKET_PATH_GLOBALS
     public readonly CONTEXTCONFIGURATIONPATH: string
 
     public readonly LICENSEERRORPAGE: string = "LicensingError.jsp";
-        
-        
 
     public readonly ERRORPAGE: string = "Error.jsp";
-        
-        
 private constructor (){
 
             super();
         
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("install");

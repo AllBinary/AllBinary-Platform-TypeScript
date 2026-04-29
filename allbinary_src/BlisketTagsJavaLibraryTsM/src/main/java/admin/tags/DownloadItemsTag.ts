@@ -91,8 +91,6 @@ this.setTagRequestHelperFactory(new DownloadItemsRequestHelperFactory());
                                     {
                                     
     var parentTag: Tag = this.getParent()!;
-        
-        
 ;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);

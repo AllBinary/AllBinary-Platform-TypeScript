@@ -47,8 +47,6 @@ export class TouchScreenFactory
         
 
     private static readonly SINGLETON: TouchScreenFactory = new TouchScreenFactory();
-        
-        
 
     public static getInstance(): TouchScreenFactory{
 
@@ -65,8 +63,6 @@ export class TouchScreenFactory
     private touch: boolean= false
 
     private touchScreenType: TouchScreenType = TouchScreenTypesFactory.getInstance()!.NOTOUCH;
-        
-        
 private constructor (){
 
             super();

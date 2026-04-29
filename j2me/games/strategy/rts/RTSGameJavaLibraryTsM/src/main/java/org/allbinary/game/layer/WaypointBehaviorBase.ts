@@ -64,6 +64,8 @@ import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 export class WaypointBehaviorBase
@@ -74,12 +76,8 @@ export class WaypointBehaviorBase
     private readonly ownedWaypointList: BasicArrayList
 
     waypointOverridesAttacking: boolean = true;
-        
-        
 
     private waypoint: WaypointBase = WaypointBase.NULL_WAYPOINT_BASE;
-        
-        
 public constructor (){
 
             super();
@@ -156,7 +154,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -164,7 +163,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -174,7 +174,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -182,7 +183,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -190,7 +192,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -198,7 +201,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -206,7 +210,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -214,7 +219,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -232,7 +238,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -240,7 +247,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -249,7 +257,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -257,7 +266,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -268,19 +278,21 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public setTarget(layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
+    public setTargetWithDistance(layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
     //var layerInterface = layerInterface
     //var anotherTargetDistance = anotherTargetDistance
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -290,7 +302,8 @@ this.waypoint= waypoint;
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -302,8 +315,6 @@ this.waypoint= waypoint;
 
 
     private readonly steeringVisitorList: BasicArrayList = new BasicArrayListD();
-        
-        
 
 }
                 

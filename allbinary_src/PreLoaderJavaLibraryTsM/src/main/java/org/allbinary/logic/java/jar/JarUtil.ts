@@ -80,22 +80,16 @@ this.jarURL= jarURL;
     public show(){
 
     var cache: number[] = new Array(1024);
-        
-        
 ;
     
 
         try {
             
     var conn: URLConnection = this.jarURL!.openConnection()!;
-        
-        
 ;
     
 
     var jis: JarInputStream = new JarInputStream(conn.getInputStream());
-        
-        
 ;
     
 
@@ -103,8 +97,6 @@ this.jarURL= jarURL;
         {
 
     var entry: JarEntry = jis.getNextJarEntry()!;
-        
-        
 ;
     
 
@@ -119,14 +111,10 @@ this.jarURL= jarURL;
                                     {
                                     
     var offset: number = 0;
-        
-        
 ;
     
 
     var i: number = 0;
-        
-        
 ;
     
 
@@ -140,8 +128,6 @@ offset += i;
                                     {
                                     
     var newcache: number[] = new Array(cache.length +1024);
-        
-        
 ;
     
 
@@ -161,8 +147,6 @@ cache= newcache;
 
 
     var tmp: number[] = new Array(offset);
-        
-        
 ;
     
 

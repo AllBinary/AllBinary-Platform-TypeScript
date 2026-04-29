@@ -81,8 +81,6 @@ export class BuildingPropertiesFactory
         
 
     private static readonly instance: BuildingPropertiesFactory = new BuildingPropertiesFactory();
-        
-        
 
     public static getInstance(): BuildingPropertiesFactory{
 
@@ -106,15 +104,11 @@ export class BuildingPropertiesFactory
 
 
     public damageFloatersPaintableInterface: Paintable = NullPaintable.getInstance()!;
-        
-        
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
     //var buildingLayer = buildingLayer
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
-        
-        
 ;
     
 
@@ -149,15 +143,13 @@ damageFloatersPaintableInterface= damageFloaters;
     //var buildingLayer = buildingLayer
 
     var healthBar: Paintable = NullPaintable.getInstance()!;
-        
-        
 ;
     
 
                         if(Features.getInstance()!.isFeature(GameFeatureFactory.getInstance()!.HEALTH_BARS))
                         
                                     {
-                                    healthBar= new HealthBar(buildingLayer, buildingLayer!.getHealthInterface(), new HealthBarTwodAnimation(buildingLayer as AllBinaryLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
+                                    healthBar= new HealthBar(buildingLayer, buildingLayer!.getHealthInterface(), new HealthBarTwodAnimation( as AllBinaryLayerbuildingLayer, BasicHudFactory.getInstance()!.BOTTOMLEFT),  -1);
     
 
                                     }
@@ -171,12 +163,12 @@ damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-    public getHashtable(): Hashtable<any, any>{
+    public getHashtable(): Hashtable{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Hashtable<any, any>();
+                        return new Hashtable();
     
 }
 

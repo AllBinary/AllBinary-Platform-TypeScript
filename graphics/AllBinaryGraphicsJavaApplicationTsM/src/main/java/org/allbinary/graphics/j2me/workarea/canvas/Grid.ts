@@ -48,20 +48,12 @@ export class Grid
     public grid: GPoint
 
     public isGridOn: boolean = true;
-        
-        
 
     public isGridPossible: boolean = false;
-        
-        
 
     private zoom: number = 3;
-        
-        
 
     public isChanged: boolean = true;
-        
-        
 public constructor (){
 
             super();

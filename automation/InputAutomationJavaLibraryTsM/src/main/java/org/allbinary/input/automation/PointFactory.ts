@@ -49,16 +49,12 @@ export class PointFactory
 
     private pointArray: Point[][] = Array(3000) { arrayOfNulls<Point?>(3000) }
                                                             ;
-        
-        
 
     public static getInstance(x: number, y: number): Point{
 var x = x
 var y = y
 
     var point: Point = pointArray[x]![y]!;
-        
-        
 ;
     
 

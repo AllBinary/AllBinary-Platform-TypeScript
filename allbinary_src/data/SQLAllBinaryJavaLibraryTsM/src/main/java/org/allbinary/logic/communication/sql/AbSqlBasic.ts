@@ -80,12 +80,8 @@ export class AbSqlBasic
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly sqlConnectionPool: SqlConnectionPool = SqlConnectionPool.getInstance()!;
-        
-        
 
     private databaseConnectionInfoInterface: DbConnectionInfo
 
@@ -94,80 +90,42 @@ export class AbSqlBasic
     conn: Connection
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     readonly sqlTypeStrings: SqlTypeStrings = SqlTypeStrings.getInstance()!;
-        
-        
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
-        
-        
 
     readonly INSERT: string = "insert";
-        
-        
 
     readonly UPDATE: string = "update";
-        
-        
 
     readonly FAILED_SQL_STATEMENT: string = "Failed\nSQL Statement: ";
-        
-        
 
     readonly SUCCESS_SQL_STATEMENT: string = "Success\nSQL Statement: ";
-        
-        
 
     private readonly METHOD_EXECUTED_SQL_STATEMENT: string = "executedSQLStatement";
-        
-        
 
     private readonly METHOD_CREATE: string = "create";
-        
-        
 
     private readonly DATABASE_CREATED_LABEL: string = "Database Created: ";
-        
-        
 
     private readonly DATABASE_CREATION_FAILED_LABEL: string = "Database Creation Failed: ";
-        
-        
 
     private readonly SQL_CONNECTION_FAILED: string = "SQL Connection Failed";
-        
-        
 
     private readonly SQL_CONNECTION_RETRYING: string = "SQL Connection Retrying";
-        
-        
 
     private readonly SQL_CONNECTION_RETRY: string = "SQL Connection Retry";
-        
-        
 
     private readonly METHOD_CREATE_CONNECTION: string = "createConnection()";
-        
-        
 
     private readonly METHOD_INITIALIZE: string = "initialize";
-        
-        
 
     private readonly LOAD_JDBC_DRIVER_FAILED_LABEL: string = "Load JDBC Driver Failed: ";
-        
-        
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
@@ -193,24 +151,18 @@ this.conn=
     
 
     var stmt: Statement = this.conn.createStatement()!;
-        
-        
 ;
     
 stmt.execute(statement);
     
 
     var rset: ResultSet = stmt.getResultSet()!;
-        
-        
 ;
     
 stmt.close();
     
 
     var tempConnection: Connection = this.conn;
-        
-        
 ;
     
 this.conn= 
@@ -247,7 +199,8 @@ this.conn=
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -361,14 +314,10 @@ this.initialize();
         try {
             
     var loader: ClassLoader = Thread.currentThread()!.getContextClassLoader()!;
-        
-        
 ;
     
 
     var jdbcDriverClass: Function = loader.loadClass(this.getDatabaseConnectionInfoInterface()!.getJdbcDriver())!;
-        
-        
 ;
     
 jdbcDriverClass!.newInstance();

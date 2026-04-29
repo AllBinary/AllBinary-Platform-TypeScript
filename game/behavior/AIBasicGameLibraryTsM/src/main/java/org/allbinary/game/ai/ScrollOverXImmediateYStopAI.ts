@@ -70,50 +70,34 @@ var gameInput = gameInput
 var allBinaryLayerManager = allBinaryLayerManager
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var x: number = ownerLayerInterface!.getXP()!;
-        
-        
 ;
     
 
     var y: number = ownerLayerInterface!.getYP()!;
-        
-        
 ;
     
 
     var x2: number = ownerLayerInterface!.getX2()!;
-        
-        
 ;
     
 
     var y2: number = ownerLayerInterface!.getY2()!;
-        
-        
 ;
     
 
     var width: number = ownerLayerInterface!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = ownerLayerInterface!.getHeight()!;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 

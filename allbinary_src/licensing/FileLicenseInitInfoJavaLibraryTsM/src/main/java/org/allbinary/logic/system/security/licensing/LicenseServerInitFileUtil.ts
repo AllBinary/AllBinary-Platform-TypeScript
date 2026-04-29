@@ -80,7 +80,7 @@ export class LicenseServerInitFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new object: OutputStream()
+                        return new OutputStream()
                                 {
                                 
                 //@Throws(IOException::class)
@@ -107,24 +107,16 @@ var len = len
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly NULL_OUTPUT_STREAM: OutputStream = nullOutputStream()!;
-        
-        
 
     public init(){
 
         try {
             
     var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
-        
-        
 ;
     
 LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_STRING);
@@ -158,36 +150,26 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     write(){
 
     var fileOutputStream: OutputStream = this.NULL_OUTPUT_STREAM;
-        
-        
 ;
     
 
         try {
             
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
     var filePath: string = LicenseInitInfoUtil.getInstance()!.INITFILENAME;
-        
-        
 ;
     
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;
-        
-        
 ;
     
 this.logUtil!.putF("Writing Default License File", this, commonStrings!.INIT);
     
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
-        
-        
 ;
     
 fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getInstance()!.EMPTY_STRING, filePath);
@@ -198,8 +180,6 @@ fileOutputStream= fileStreamFactory!.getFileOutputStreamInstance(StringUtil.getI
     
 
     var index: number = 0;
-        
-        
 ;
     
 

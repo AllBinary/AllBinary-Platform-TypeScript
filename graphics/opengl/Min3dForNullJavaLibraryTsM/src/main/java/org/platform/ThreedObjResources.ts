@@ -46,8 +46,6 @@ export class ThreedObjResources
         
 
     private static readonly instance: ThreedObjResources = new ThreedObjResources();
-        
-        
 
     public static getInstance(): ThreedObjResources{
 
@@ -59,16 +57,12 @@ export class ThreedObjResources
 }
 
 
-    public readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    public readonly hashtable: Hashtable = new Hashtable();
 
     public get(resourceName: string): string{
     //var resourceName = resourceName
 
-    var resourceName2: string = this.hashtable.get(resourceName as Object); as String;
-        
-        
+    var resourceName2: string =  as Stringthis.hashtable.get(resourceName as Object);;
 ;
     
 

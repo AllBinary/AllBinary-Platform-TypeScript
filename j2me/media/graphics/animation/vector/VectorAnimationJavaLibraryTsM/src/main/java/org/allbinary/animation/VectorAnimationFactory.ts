@@ -42,9 +42,9 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
         
 import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
 
-import { AnimationBehavior } from "./AnimationBehavior.js";
-
 import { VectorAnimation } from "./VectorAnimation.js";
+
+import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class VectorAnimationFactory
             extends Object

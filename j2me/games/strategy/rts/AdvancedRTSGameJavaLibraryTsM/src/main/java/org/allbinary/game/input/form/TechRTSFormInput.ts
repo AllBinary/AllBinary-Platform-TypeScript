@@ -24,9 +24,6 @@ import { RTSGameStrings } from "../../../../../org/allbinary/game/layer/RTSGameS
 import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterface.js";
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
-
-    
 import { RTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
 
     
@@ -115,8 +112,6 @@ export class TechRTSFormInput extends RTSFormInput {
         
 
     private readonly EVENT: AllBinaryEventObject = new AllBinaryEventObject(this);
-        
-        
 
     readonly noMoneyGameNotificationEvent: GameNotificationEvent
 public constructor (groupInterface: Group[]){
@@ -128,11 +123,9 @@ public constructor (groupInterface: Group[]){
                     
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 ;
     
-this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, SmallIntegerSingletonFactory.getInstance()!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -144,15 +137,11 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
@@ -162,7 +151,7 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Error::class)
             
-    public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
@@ -172,26 +161,18 @@ super.process(layerManager);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem = item as TechnologyRTSInterfaceImageItem;
-        
-        
+    var technologyRTSInterfaceImageItem: TechnologyRTSInterfaceImageItem =  as TechnologyRTSInterfaceImageItemitem;
 ;
     
 
     var rtsInterface: RTSInterface = technologyRTSInterfaceImageItem!.getRtsInterface()!;
-        
-        
 ;
     
 this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInterface!.isUpgradeable())!.toString(), this, commonStrings!.PROCESS);
@@ -202,14 +183,10 @@ this.logUtil!.putF(stringMaker!.append("isUpgradeable: ")!.appendboolean(rtsInte
                                     {
                                     
     var cost: number = rtsInterface!.getUpgradeCost()!;
-        
-        
 ;
     
 
     var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
-        
-        
 ;
     
 stringMaker!.delete(0, stringMaker!.length());

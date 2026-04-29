@@ -92,20 +92,12 @@ export class CssElementView
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly TITLE: string = "title";
-        
-        
 
     private readonly DESCRIPTION: string = "description";
-        
-        
 
     private value: string
 
@@ -123,8 +115,6 @@ public constructor (){
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.title= stringUtil!.EMPTY_STRING;
@@ -143,16 +133,12 @@ public constructor (node: Node){
         try {
             
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
-        
-        
 ;
     
 this.value= DomNodeHelper.getTextNodeValue(valueNode);
     
 
     var titleValueNode: Node = DomSearchHelper.getNodeNoThrow(this.TITLE, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -169,8 +155,6 @@ this.value= DomNodeHelper.getTextNodeValue(valueNode);
                         else {
                             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.title= stringUtil!.EMPTY_STRING;
@@ -180,8 +164,6 @@ this.title= stringUtil!.EMPTY_STRING;
                             
 
     var descriptionValueNode: Node = DomSearchHelper.getNodeNoThrow(this.DESCRIPTION, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -213,8 +195,6 @@ this.title= stringUtil!.EMPTY_STRING;
                                 
 
     var cssElementStyleNodeVector: Vector = DomSearchHelper.getAllNodes(CssElementData.getInstance()!.NAME, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -230,8 +210,6 @@ this.cssElementVector= CssElementsValidationFactory.getInstance(cssElementStyleN
     
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
@@ -253,7 +231,8 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
 
 
-                            throw new Error("CssElementView")
+                            throw new Error("CssElementView");
+                    
 }
 
 }
@@ -269,11 +248,9 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(DomData.VALUE, this.value);
@@ -296,9 +273,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 
@@ -312,14 +287,10 @@ var document = document
                                 
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, CssElementData.getInstance()!.NAME, hashMap)!;
-        
-        
 ;
     
 
     var size: number = this.cssPropertyVector!.length!;
-        
-        
 ;
     
 
@@ -328,14 +299,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index); as DomNodeInterface;
-        
-        
+    var cssPropertyDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.cssPropertyVector!.get(index);;
 ;
     
 node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
@@ -344,8 +311,6 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
 
 
     var size2: number = this.cssElementVector!.length!;
-        
-        
 ;
     
 
@@ -354,14 +319,10 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index); as DomNodeInterface;
-        
-        
+    var cssElementDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.cssElementVector!.get(index);;
 ;
     
 node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));

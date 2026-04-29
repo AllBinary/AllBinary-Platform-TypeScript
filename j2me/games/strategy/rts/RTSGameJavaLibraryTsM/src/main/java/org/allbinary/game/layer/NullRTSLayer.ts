@@ -71,20 +71,21 @@ import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {
         
 
     public static readonly NULL_RTS_LAYER: NullRTSLayer = new NullRTSLayer();
-        
-        
 
     public getName(): string{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -95,7 +96,8 @@ var layerManager = layerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -103,7 +105,8 @@ var layerManager = layerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -111,7 +114,8 @@ var layerManager = layerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -119,7 +123,8 @@ var layerManager = layerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -128,7 +133,8 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -136,7 +142,8 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -144,7 +151,8 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -153,7 +161,8 @@ var eventObject = eventObject
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -164,7 +173,8 @@ var destroyedEvent = destroyedEvent
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -175,7 +185,8 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -183,7 +194,8 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -202,7 +214,8 @@ var sound = sound
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -210,7 +223,8 @@ var sound = sound
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -218,7 +232,8 @@ var sound = sound
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

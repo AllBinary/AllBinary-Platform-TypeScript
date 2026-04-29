@@ -121,8 +121,6 @@ export class User
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userName: string
 
@@ -189,7 +187,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
     
 }
 
-public constructor (userHashMap: HashMap<any, any>){
+public constructor (userHashMap: HashMap){
 
             super();
             //var userHashMap = userHashMap
@@ -202,91 +200,81 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 
                 //@Throws(Error::class)
             
-    public getFormData(userHashMap: HashMap<any, any>){
+    public getFormData(userHashMap: HashMap){
     //var userHashMap = userHashMap
 this.userName= new UserName(userHashMap).
                             get();
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
-    var passwordString: string = stringUtil!.getInstance(userHashMap!.get(UserData.PASSWORD) as String)!;
-        
-        
+    var passwordString: string = stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.PASSWORD))!;
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
                         if(stringValidationUtil!.isEmpty(this.userName) && stringValidationUtil!.isEmpty(passwordString))
                         
                                     {
-                                    this.userName= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME) as String);
+                                    this.userName= stringUtil!.getNonNull( as StringuserHashMap!.get(WeblisketSessionData.REMOVABLEUSERNAME));
     
-passwordString= stringUtil!.getInstance(userHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD) as String);
+passwordString= stringUtil!.getNonNull( as StringuserHashMap!.get(WeblisketSessionData.REMOVABLEPASSWORD));
     
 
                                     }
                                 
 
-    var encryption: string = stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENCRYPTION) as String)!;
-        
-        
+    var encryption: string = stringUtil!.getNonNull( as StringuserHashMap!.get(EntryData.getInstance()!.ENCRYPTION))!;
 ;
     
 
-    var secret: string = stringUtil!.getInstance(userHashMap!.get(UserData.SECRET) as String)!;
-        
-        
+    var secret: string = stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.SECRET))!;
 ;
     
 this.password= new Password(passwordString);
     
-this.prefixName= stringUtil!.getInstance(userHashMap!.get(UserData.PREFIXNAME) as String);
+this.prefixName= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.PREFIXNAME));
     
-this.firstName= stringUtil!.getInstance(userHashMap!.get(UserData.FIRSTNAME) as String);
+this.firstName= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.FIRSTNAME));
     
-this.lastName= stringUtil!.getInstance(userHashMap!.get(UserData.LASTNAME) as String);
+this.lastName= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.LASTNAME));
     
-this.middleName= stringUtil!.getInstance(userHashMap!.get(UserData.MIDDLENAME) as String);
+this.middleName= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.MIDDLENAME));
     
-this.suffixName= stringUtil!.getInstance(userHashMap!.get(UserData.SUFFIXNAME) as String);
+this.suffixName= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.SUFFIXNAME));
     
-this.company= stringUtil!.getInstance(userHashMap!.get(UserData.COMPANY) as String);
+this.company= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.COMPANY));
     
-this.positionAtCompany= stringUtil!.getInstance(userHashMap!.get(UserData.POSITIONATCOMPANY) as String);
+this.positionAtCompany= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.POSITIONATCOMPANY));
     
-this.mainEmail= stringUtil!.getInstance(userHashMap!.get(UserData.MAINEMAIL) as String);
+this.mainEmail= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.MAINEMAIL));
     
-this.secondaryEmail= stringUtil!.getInstance(userHashMap!.get(UserData.SECONDARYEMAIL) as String);
+this.secondaryEmail= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.SECONDARYEMAIL));
     
-this.homePhone= stringUtil!.getInstance(userHashMap!.get(UserData.HOMEPHONE) as String);
+this.homePhone= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.HOMEPHONE));
     
-this.cellPhone= stringUtil!.getInstance(userHashMap!.get(UserData.CELLPHONE) as String);
+this.cellPhone= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.CELLPHONE));
     
-this.workPhone= stringUtil!.getInstance(userHashMap!.get(UserData.WORKPHONE) as String);
+this.workPhone= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.WORKPHONE));
     
-this.otherContact= stringUtil!.getInstance(userHashMap!.get(UserData.OTHERCONTACT) as String);
+this.otherContact= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.OTHERCONTACT));
     
-this.electronicDevice= stringUtil!.getInstance(userHashMap!.get(UserData.ELECTRONICDEVICE) as String);
+this.electronicDevice= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.ELECTRONICDEVICE));
     
-this.fax= stringUtil!.getInstance(userHashMap!.get(UserData.FAX) as String);
+this.fax= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.FAX));
     
-this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as String);
+this.role= UserRoleB.getRole( as StringuserHashMap!.get(UserRoleData.NAME.toString()));
     
-this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS) as String);
+this.permissions= stringUtil!.getNonNull( as StringuserHashMap!.get(UserData.PERMISSIONS));
     
 
                         if(!stringValidationUtil!.isEmpty(this.permissions); && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
-                        this.permissions= stringUtil!.getInstance(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as String)
+                        this.permissions= stringUtil!.getNonNull( as StringuserHashMap!.get(StoreFrontData.getInstance()!.NAME))
                              else 
                         if(this.permissions == 
                                     null
@@ -298,7 +286,7 @@ this.permissions= stringUtil!.getInstance(userHashMap!.get(UserData.PERMISSIONS)
 
                                     }
                                 
-this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.ENABLE) as String);
+this.enable= stringUtil!.getNonNull( as StringuserHashMap!.get(EntryData.getInstance()!.ENABLE));
     
 }
 
@@ -308,8 +296,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -332,8 +318,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -379,8 +363,6 @@ this.enable= stringUtil!.getInstance(userHashMap!.get(EntryData.getInstance()!.E
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
@@ -404,14 +386,10 @@ this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
         try {
             
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(UserName.getValidationInfo(this.userName));
@@ -856,8 +834,6 @@ this.enable= enable;
     public toVector(): Vector{
 
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(this.userName);
@@ -896,8 +872,6 @@ values.add(this.getRole()!.toString());
     
 
     var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
-        
-        
 ;
     
 values.add(userConfigurationDomDocumentMapping!.toDomDocumentString());
@@ -910,15 +884,11 @@ values.add(this.enable);
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.add(time);
@@ -936,11 +906,9 @@ values.add(time);
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var values: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var values: HashMap = new HashMap();
 ;
     
 values.put(UserData.USERNAME, userName);
@@ -988,8 +956,6 @@ values.put(UserData.FAX, fax);
                                 
 
     var userConfigurationDomDocumentMapping: UserConfigurationDomDocumentMapping = new UserConfigurationDomDocumentMapping(this.getUserConfigurationInterface());
-        
-        
 ;
     
 values.put(UserData.CONFIGURATION, userConfigurationDomDocumentMapping!.toDomDocumentString());
@@ -1002,15 +968,11 @@ values.put(EntryData.getInstance()!.ENABLE, this.enable);
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString();
-        
-        
 ;
     
 values.put(EntryData.getInstance()!.LASTMODIFIED, time);
@@ -1024,7 +986,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public toPasswordHashMap(): HashMap<any, any>{
+    public toPasswordHashMap(): HashMap{
 
 
 
@@ -1067,7 +1029,7 @@ var weblisketSession = weblisketSession
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.userName as Object;
+                        return  as Objectthis.userName;
     
 }
 

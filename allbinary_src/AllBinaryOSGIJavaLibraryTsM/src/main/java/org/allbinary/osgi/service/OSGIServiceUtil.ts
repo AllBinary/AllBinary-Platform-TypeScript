@@ -58,8 +58,6 @@ export class OSGIServiceUtil
         
 
     private static readonly instance: OSGIServiceUtil = new OSGIServiceUtil();
-        
-        
 
     public static getInstance(): OSGIServiceUtil{
 
@@ -72,8 +70,6 @@ export class OSGIServiceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -87,8 +83,6 @@ private constructor (){
     //var serviceReferences = serviceReferences
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 
@@ -100,8 +94,6 @@ private constructor (){
                                     
     var size: number = serviceReferences!.length
                 ;
-        
-        
 ;
     
 this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector");
@@ -112,14 +104,10 @@ this.logUtil!.putF("Service References: " +size, this, "getServicesObjectVector"
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var serviceReference: ServiceReference = serviceReferences[index]!;
-        
-        
 ;
     
 
@@ -129,9 +117,7 @@ index < size; index++)
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference); as OSGIServiceInterface;
-        
-        
+    var osgiServiceInterface: OSGIServiceInterface =  as OSGIServiceInterfacebundleContext!.getService(serviceReference);;
 ;
     
 
@@ -143,7 +129,8 @@ index < size; index++)
                                     
 
 
-                            throw new Error("No Service For Reference")
+                            throw new Error("No Service For Reference");
+                    
 
                                     }
                                 

@@ -57,9 +57,6 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
 
     
@@ -168,8 +165,6 @@ export class BuildingRTSFormInput extends RTSFormInput {
     private readonly mapEdgeGameNotificationEvent: GameNotificationEvent
 
     private readonly dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
-        
-        
 public constructor (groupInterface: Group[], isUnitProducer: boolean){
             super(groupInterface);
                         //var groupInterface = groupInterface
@@ -182,33 +177,29 @@ this.isUnitProducer= isUnitProducer;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 ;
     
-this.buildOnPathGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILD_ON_PATH, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildOnPathGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILD_ON_PATH, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.spotTakenGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.spotTakenGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SPOT_TAKEN, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.selectBuildSpotGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SELECT_BUILD_SPOT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.selectBuildSpotGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.SELECT_BUILD_SPOT, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.roadCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.roadCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.ROAD_COLLISION, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.buildingCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildingCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING_COLLISION, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.structureToCloseCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.STRUCTURE_TO_CLOSE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.structureToCloseCollisionGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.STRUCTURE_TO_CLOSE, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.buildingGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.buildingGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.BUILDING, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
-this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.MAP_EDGE, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
+this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.MAP_EDGE, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.PINK, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -220,15 +211,11 @@ this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 this.buildOnPathGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
@@ -254,7 +241,7 @@ this.mapEdgeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Error::class)
             
-    public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
@@ -280,19 +267,15 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
     isDemoLocked(item: CustomItem): boolean{
     //var item = item
 
-    var factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;
-        
-        
+    var factoryItem: LayerInterfaceFactoryImageItem =  as LayerInterfaceFactoryImageItemitem;
 ;
     
 
-    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface(); as DemoLockedWithCostLayerInterfaceFactoryInterface;
-        
-        
+    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface =  as DemoLockedWithCostLayerInterfaceFactoryInterfacefactoryItem!.getLayerInterfaceFactoryInterface();;
 ;
     
 
-                        if(LockedUtil.getInstance()!.isLockedFeature() && layerInterfaceFactoryInterface!.isDemoLocked())
+                        if(LockedUtil.getInstance()!.isLocked() && layerInterfaceFactoryInterface!.isDemoLocked())
                         
                                     {
                                     
@@ -326,8 +309,6 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
     //var itemIndex = itemIndex
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
@@ -341,20 +322,17 @@ this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
                                     
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 
@@ -363,7 +341,7 @@ this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
                                     {
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
-LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getForegroundBasicColor());
+LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterface!.getForegroundBasicColor());
     
 
 
@@ -376,8 +354,6 @@ LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getFor
                                 
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedGeographicCellPosition()!;
-        
-        
 ;
     
 
@@ -390,14 +366,10 @@ LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getFor
                                     {
                                     
     var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(geographicMapCellPosition)!;
-        
-        
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
-        
-        
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorygeographicMapInterface!.getGeographicMapCellTypeFactory();;
 ;
     
 
@@ -415,15 +387,11 @@ LockedFeatureNotificationUtil.getInstance()!.fire(geographicMapInterface!.getFor
                                 
                         else {
                             
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
 ;
     
 
     var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;
-        
-        
 ;
     
 rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ());
@@ -434,9 +402,7 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
                         }
                             
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
 ;
     
 this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
@@ -510,14 +476,10 @@ this.logUtil!.putF(new StringMaker().
     
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
-        
-        
 ;
     
 
     var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;
-        
-        
 ;
     
 
@@ -543,28 +505,20 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = occupyList!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = layerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacelayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
-geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index) as GeographicMapCellPosition);
+geographicMapCellType= geographicMapInterface!.getCellTypeAt( as GeographicMapCellPositionoccupyList!.get(index));
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
-        
-        
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorygeographicMapInterface!.getGeographicMapCellTypeFactory();;
 ;
     
 
@@ -595,20 +549,14 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(ind
 
 
     var cost: number = layerInterface!.getCost()!;
-        
-        
 ;
     
 
     var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Trying to Build: ");
@@ -677,14 +625,10 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
     //var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
-        
-        
 ;
     
 
     var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;
-        
-        
 ;
     
 
@@ -780,22 +724,16 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
     //var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
-        
-        
 ;
     
 
     var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;
-        
-        
 ;
     
-this.dropCellPositionHistory!.add(occupyList, layerInterface);
+this.dropCellPositionHistory!.addAll(occupyList, layerInterface);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
-        
-        
+    var rtsPlayerGameInput: RTSPlayerGameInput =  as RTSPlayerGameInputrtsPlayerLayerInterface!.getPlayerGameInput();;
 ;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, this.getSelectedGeographicCellPosition());
@@ -820,38 +758,26 @@ rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
 var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
-        
-        
 ;
     
 
     var occupyList: BasicArrayList = geographicMapCellPositionArea!.getOccupyingGeographicMapCellPositionList()!;
-        
-        
 ;
     
 
     var surroundList: BasicArrayList = geographicMapCellPositionArea!.getSurroundingGeographicMapCellPositionList()!;
-        
-        
 ;
     
 
     var occupySize: number = occupyList!.size()!;
-        
-        
 ;
     
 
     var surroundSize: number = surroundList!.size()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("occupySize: ");
@@ -870,8 +796,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSurroundingCellsOffMap");
     
 
     var isSurroundOffMap: boolean = false;
-        
-        
 ;
     
 

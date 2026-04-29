@@ -48,8 +48,6 @@ export class StoreRoleFactory
         
 
     private static readonly instance: StoreRoleFactory = new StoreRoleFactory();
-        
-        
 
     public static getInstance(): StoreRoleFactory{
 
@@ -62,23 +60,15 @@ export class StoreRoleFactory
 
 
     private readonly roles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly subscriberRoles: Vector<any> = new Vector<any>();
-        
-        
 
     private readonly wholesaleRoles: Vector<any> = new Vector<any>();
-        
-        
 private constructor (){
 
             super();
         
     var basicUserRoleFactory: BasicUserRoleFactory = BasicUserRoleFactory.getInstance()!;
-        
-        
 ;
     
 this.roles.add(basicUserRoleFactory!.CUSTOMER);

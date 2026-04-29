@@ -56,12 +56,8 @@ export class OrderItemsHelperFactory
         
 
     private static readonly CLASSNAME: string = "admin.taghelpers.OrderItemsHelper";
-        
-        
 
     private static readonly FACTORYNAME: string = "OrderItemsHelperFactory";
-        
-        
 public constructor (){
 
             super();
@@ -70,7 +66,7 @@ public constructor (){
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance(hashMap: HashMap, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 

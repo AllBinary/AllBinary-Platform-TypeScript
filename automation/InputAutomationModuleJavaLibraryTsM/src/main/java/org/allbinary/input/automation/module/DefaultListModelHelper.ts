@@ -43,6 +43,8 @@ import { swing } from "../../../../../javax/swing.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DefaultListModel } from "./DefaultListModel.js";
+
 import { ListModel } from "./ListModel.js";
 
 export class DefaultListModelHelper
@@ -68,8 +70,6 @@ this.defaultListModel= new DefaultListModel();
     
 
     var size: number = this.vector.length!;
-        
-        
 ;
     
 
@@ -78,14 +78,10 @@ this.defaultListModel= new DefaultListModel();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var moduleName: string = this.vector.get(index); as String;
-        
-        
+    var moduleName: string =  as Stringthis.vector.get(index);;
 ;
     
 this.defaultListModel!.addElement(moduleName);
@@ -100,7 +96,7 @@ this.defaultListModel!.addElement(moduleName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.defaultListModel as ListModel;
+                        return  as ListModelthis.defaultListModel;
     
 }
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -55,11 +57,11 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
+import { DemoGameMidlet } from "./DemoGameMidlet.js";
+
+import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
 
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
-
-import { DemoGameMidlet } from "./DemoGameMidlet.js";
 
 import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
 
@@ -69,19 +71,15 @@ export class CreateGameRunnable
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly demoGameMidlet: DemoGameMidlet
 
-    private readonly hashtable: Hashtable<any, any>
+    private readonly hashtable: Hashtable
 
     private readonly startGameMidletEvent: DemoGameMidletEvent
-public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
+public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable){
 
             super();
         var demoGameMidlet = demoGameMidlet
@@ -102,8 +100,6 @@ this.startGameMidletEvent= new DemoGameMidletEvent(this, DemoGameMidletStateFact
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 this.demoGameMidlet!.commandAction(MyCommandsFactory.getInstance()!.SET_DISPLAYABLE, progressCanvas);

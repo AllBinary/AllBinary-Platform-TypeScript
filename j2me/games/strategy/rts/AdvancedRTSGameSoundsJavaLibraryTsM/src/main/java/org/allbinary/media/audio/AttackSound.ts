@@ -44,8 +44,6 @@ export class AttackSound extends CompositeSound {
         
 
     private soundInterface: Sound = new AttackSound();
-        
-        
 
     public static getInstance(): Sound{
 

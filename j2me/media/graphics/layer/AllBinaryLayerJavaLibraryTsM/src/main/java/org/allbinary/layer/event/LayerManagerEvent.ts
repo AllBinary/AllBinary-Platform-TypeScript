@@ -53,8 +53,6 @@ export class LayerManagerEvent extends AllBinaryEventObject {
         
 
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 
     private readonly crud: string
 public constructor (layerManager: LayerManager, crud: string){
@@ -90,8 +88,6 @@ this.layerInterface= layerInterface;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("LayerManagerEvent: \n");

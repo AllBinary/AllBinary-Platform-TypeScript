@@ -69,8 +69,6 @@ export class LockedFeatureNotificationUtil
         
 
     private static readonly instance: LockedFeatureNotificationUtil = new LockedFeatureNotificationUtil();
-        
-        
 
     public static getInstance(): LockedFeatureNotificationUtil{
 
@@ -82,9 +80,7 @@ export class LockedFeatureNotificationUtil
 }
 
 
-    private readonly gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, LicenseStrings.getInstance()!.LOCKED, SmallIntegerSingletonFactory.getInstance()!.getInstance(3), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
-        
-        
+    private readonly gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, LicenseStrings.getInstance()!.LOCKED, SmallIntegerSingletonFactory.getInstance()!.getAt(3), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
 
                 //@Throws(Error::class)
             
@@ -98,7 +94,7 @@ GameNotificationEventHandler.getInstance()!.fireEvent(gameNotificationEvent);
 
                 //@Throws(Error::class)
             
-    public fire(basicColor: BasicColor){
+    public fireWithColor(basicColor: BasicColor){
 var basicColor = basicColor
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
     

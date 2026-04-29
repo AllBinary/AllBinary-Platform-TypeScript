@@ -45,8 +45,6 @@ export class CollidableNeverCollideBehaviorFactory
         
 
     private static readonly instance: CollidableNeverCollideBehavior = new CollidableNeverCollideBehavior(false);
-        
-        
 
     public static getInstance(): CollidableNeverCollideBehavior{
 

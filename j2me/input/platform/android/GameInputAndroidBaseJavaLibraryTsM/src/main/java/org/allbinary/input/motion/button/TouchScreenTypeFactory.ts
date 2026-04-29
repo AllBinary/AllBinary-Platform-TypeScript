@@ -59,8 +59,6 @@ export class TouchScreenTypeFactory
         
 
     private static readonly instance: TouchScreenTypeFactory = new TouchScreenTypeFactory();
-        
-        
 
     public static getInstance(): TouchScreenTypeFactory{
 
@@ -76,32 +74,22 @@ export class TouchScreenTypeFactory
 var activity = activity
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchScreenTypesFactory: TouchScreenTypesFactory = TouchScreenTypesFactory.getInstance()!;
-        
-        
 ;
     
 
     var configuration: Configuration = activity.getResources()!.getConfiguration()!;
-        
-        
 ;
     
 
     var touchScreen: number = configuration.touchscreen;
-        
-        
 ;
     
 

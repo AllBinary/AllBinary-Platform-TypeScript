@@ -60,12 +60,10 @@ export class GraphicsAnalysisUtil
         
 
     private static readonly MAX: number = 122;
-        
-        
 
                 //@Throws(Error::class)
             
-    public static getNominator(bufferedImage: BufferedImage, min_x: Integer, max_x: Integer, y: Integer): number{
+    public static getNominator(bufferedImage: BufferedImage, min_x: number, max_x: number, y: number): number{
 var bufferedImage = bufferedImage
 var min_x = min_x
 var max_x = max_x
@@ -76,32 +74,22 @@ var y = y
 
                         for (
     var index: number = max_x.toInt()!;
-        
-        
 index > min_x.toInt(); )
         {
 
-    var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.toInt())))!;
-        
-        
+    var colorInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.toInt())))!;
 ;
     
 
     var automaticCacheInterface: AutomaticCacheInterface = ColorCacheFactory.getInstance()!;
-        
-        
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
-        
-        
+    var colorCacheable: ColorCacheable =  as ColorCacheableautomaticCacheInterface!.get(colorInteger);;
 ;
     
 
     var color: Color = colorCacheable!.getColor()!;
-        
-        
 ;
     
 

@@ -63,8 +63,6 @@ export class Globals
         
 
     private static readonly instance: Globals = new Globals();
-        
-        
 
     public static getInstance(): Globals{
 
@@ -77,8 +75,6 @@ export class Globals
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -90,14 +86,10 @@ var classLoader = classLoader
 var pathString = pathString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 appUrlGlobals!.setWebappPath(pathString);
@@ -108,8 +100,6 @@ WebappClassLoaderInfo.setLoader(classLoader);
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Setting Up AllBinary System Configuration Args: ");
@@ -124,8 +114,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 

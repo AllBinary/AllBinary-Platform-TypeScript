@@ -57,8 +57,6 @@ export class GeographicMapDirectionUtil
         
 
     private static readonly instance: GeographicMapDirectionUtil = new GeographicMapDirectionUtil();
-        
-        
 
     public static getInstance(): GeographicMapDirectionUtil{
 
@@ -76,8 +74,6 @@ private constructor (){
 
 
     private readonly MESSAGE: string = "Cell Position should have been cached!!!";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -86,32 +82,22 @@ var fromGeographicMapCellPosition = fromGeographicMapCellPosition
 var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -186,7 +172,8 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(this.MESSAGE)
+                            throw new Error(this.MESSAGE);
+                    
 
                                     }
                                 
@@ -206,32 +193,22 @@ var fromGeographicMapCellPosition = fromGeographicMapCellPosition
 var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -379,7 +356,8 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(this.MESSAGE)
+                            throw new Error(this.MESSAGE);
+                    
 
                                     }
                                 
@@ -399,32 +377,22 @@ var fromGeographicMapCellPosition = fromGeographicMapCellPosition
 var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -481,14 +449,10 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                 
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
-    var string: string = stringMaker!.append(CellPosition.toString(fromGeographicMapCellPosition))!.append(" == ")!.append(CellPosition.toString(toGeographicMapCellPosition))!.toString()!;
-        
-        
+    var string: string = stringMaker!.append(CellPosition.toStringCellPosition(fromGeographicMapCellPosition))!.append(" == ")!.append(CellPosition.toStringCellPosition(toGeographicMapCellPosition))!.toString()!;
 ;
     
 stringMaker!.delete(0, stringMaker!.length());
@@ -496,17 +460,14 @@ stringMaker!.delete(0, stringMaker!.length());
 
 
 
-                            throw new Error(stringMaker!.append("Error: ")!.append(string)!.toString())
+                            throw new Error(stringMaker!.append("Error: ")!.append(string)!.toString());
+                    
 }
 
 
     private readonly ERROR: string = "Error: ";
-        
-        
 
     private readonly EQUAL: string = " == ";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -515,32 +476,22 @@ var fromGeographicMapCellPosition = fromGeographicMapCellPosition
 var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var fromRow: number = fromGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var goColumn: number = toGeographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var goRow: number = toGeographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -683,22 +634,21 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.ERROR);
     
-stringBuffer!.append(CellPosition.toString(fromGeographicMapCellPosition));
+stringBuffer!.append(CellPosition.toStringCellPosition(fromGeographicMapCellPosition));
     
 stringBuffer!.append(this.EQUAL);
     
-stringBuffer!.append(CellPosition.toString(toGeographicMapCellPosition));
+stringBuffer!.append(CellPosition.toStringCellPosition(toGeographicMapCellPosition));
     
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 }
 
 

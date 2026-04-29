@@ -67,8 +67,6 @@ export class EditValidationUserView extends UserView implements ValidationCompon
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private userName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -148,8 +146,6 @@ this.userName= this.getWeblisketSession()!.getUserName();
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

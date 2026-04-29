@@ -101,15 +101,11 @@ this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterfac
     init(paymentMethod: string){
 var paymentMethod = paymentMethod
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var UNDERSCORE: string = "_";
-        
-        
 ;
     
 hashMap!.put(CommonSeps.getInstance()!.SPACE, UNDERSCORE);
@@ -120,8 +116,6 @@ hashMap!.put("-", UNDERSCORE);
     
 
     var replace: Replace = new Replace(hashMap);
-        
-        
 ;
     
 this.name= replace.all(paymentMethod);
@@ -165,7 +159,8 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentGatewayInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentGatewayInterfaceFactoryInterface is Null");
+                    
 
                                     }
                                 
@@ -190,7 +185,8 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentGatewayDomNodeFactoryInterface is Null")
+                            throw new Error("PaymentGatewayDomNodeFactoryInterface is Null");
+                    
 
                                     }
                                 
@@ -216,8 +212,6 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.name);
@@ -233,11 +227,9 @@ vector.add(this.value);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(PaymentGatewayData.NAME.toString(), this.name);

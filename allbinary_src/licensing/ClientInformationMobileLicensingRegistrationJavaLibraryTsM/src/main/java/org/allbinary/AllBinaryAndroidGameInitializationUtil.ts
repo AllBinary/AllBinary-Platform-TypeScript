@@ -58,20 +58,14 @@ export class AllBinaryAndroidGameInitializationUtil
     public static init(){
 
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
-        
-        
 ;
     
 
     var androidResources: AndroidResources = AndroidResources.getInstance()!;
-        
-        
 ;
     
 
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
-        
-        
 ;
     
 resourceUtil!.addResource(licenseInitInfoUtil!.INITFILENAME, Integer(Integer.valueOf(androidResources!.raw.licenseinitdata)));

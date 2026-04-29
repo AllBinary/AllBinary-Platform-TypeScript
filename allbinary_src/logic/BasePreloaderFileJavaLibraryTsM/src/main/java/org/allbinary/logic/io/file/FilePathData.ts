@@ -46,8 +46,6 @@ export class FilePathData
         
 
     private static readonly instance: FilePathData = new FilePathData();
-        
-        
 
     public static getInstance(): FilePathData{
 
@@ -60,12 +58,8 @@ export class FilePathData
 
 
     public readonly SEPARATORCHAR: string = File.separatorChar;
-        
-        
 
     public SEPARATOR: string = File.separator;
-        
-        
 private constructor (){
 
             super();

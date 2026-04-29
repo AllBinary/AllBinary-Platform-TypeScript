@@ -66,14 +66,10 @@ export class GenericProfileCaptureWorkerFactory
 var genericProfile = genericProfile
 
     var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -82,14 +78,10 @@ var genericProfile = genericProfile
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
-        
-        
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypevector.get(index);;
 ;
     
 
@@ -113,7 +105,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new SavedCaptureImagesWorker(genericProfileDataWorkerType as SavedCaptureGenericProfileDataWorkerType);
+                        return new SavedCaptureImagesWorker( as SavedCaptureGenericProfileDataWorkerTypegenericProfileDataWorkerType);
     
 
                                     }
@@ -123,7 +115,8 @@ index < size; index++)
 
 
 
-                            throw new Error("No CaptureWorkerInterface specified in GenericProfile")
+                            throw new Error("No CaptureWorkerInterface specified in GenericProfile");
+                    
 }
 
 private constructor (){

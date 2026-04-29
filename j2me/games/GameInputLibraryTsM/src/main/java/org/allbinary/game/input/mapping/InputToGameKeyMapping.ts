@@ -33,9 +33,6 @@ import { Input } from "../../../../../org/allbinary/game/input/Input.js";
 import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
@@ -82,27 +79,17 @@ export class InputToGameKeyMapping extends InputMapping {
         
 
     public static readonly NULL_INPUT_TO_GAME_KEY_MAPPING: InputToGameKeyMapping = new InputToGameKeyMapping();
-        
-        
 
     private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 
     private readonly mappedGameKeys: GameKey[] = 
                                                         [
                                                             this.gameKeyFactory!.UP,this.gameKeyFactory!.DOWN,this.gameKeyFactory!.LEFT,this.gameKeyFactory!.RIGHT
                                                         ];
-        
-        
 
     negativePlatformToGameKeyMapping: GameKey[] = [];
-        
-        
 
     private readonly platformToGameKeyMapping: GameKey[] = new Array(InputFactory.getInstance()!.MAX);
-        
-        
 public constructor (){
 
             super();
@@ -120,8 +107,6 @@ this.clear();
 
                         for (
     var index: number = this.platformToGameKeyMapping!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.platformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
@@ -139,7 +124,7 @@ this.clear();
 }
 
 
-    public add(inputToGameKeyMapping: InputToGameKeyMapping){
+    public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
     //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
@@ -147,14 +132,10 @@ this.clear();
 
                         for (
     var index: number = inputToGameKeyMapping!.getMaxMappable() -1;
-        
-        
 index >= 0; index--)
         {
 
     var input: Input = inputToGameKeyMapping!.getInstance(index)!;
-        
-        
 ;
     
 
@@ -180,14 +161,10 @@ var list = list
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var mappedToInput: Input = list.objectArray[index]! as Input;
-        
-        
+    var mappedToInput: Input =  as Inputlist.objectArray[index]!;
 ;
     
 this.add(input, mappedToInput);
@@ -225,15 +202,13 @@ var input = input
 var mappedToInput = mappedToInput
 
     var id: number = mappedToInput!.getId()!;
-        
-        
 ;
     
 
                         if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
                                     {
-                                    this.platformToGameKeyMapping[id]= input as GameKey;
+                                    this.platformToGameKeyMapping[id]=  as GameKeyinput;
     
 
                                     }
@@ -255,14 +230,10 @@ var mappedToInput = mappedToInput
 var id = id
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -271,8 +242,6 @@ var id = id
 
                         for (
     var index: number = 0;
-        
-        
 index < this.platformToGameKeyMapping!.length; index++)
         {
 
@@ -280,9 +249,7 @@ index < this.platformToGameKeyMapping!.length; index++)
                         
                                     {
                                     
-    var input: Input = inputFactory!.getInstance(index)!;
-        
-        
+    var input: Input = inputFactory!.getInstanceById(index)!;
 ;
     
 
@@ -312,13 +279,11 @@ index < this.platformToGameKeyMapping!.length; index++)
 
                 //@Throws(Error::class)
             
-    init(canvas: Canvas, gameKey: GameKey){
+    initGameKey(canvas: Canvas, gameKey: GameKey){
 var canvas = canvas
 var gameKey = gameKey
 
     var key: number = canvas.getKeyCode(gameKey!.getId())!;
-        
-        
 ;
     
 
@@ -362,14 +327,10 @@ var gameKey = gameKey
 var canvas = canvas
 
     var nextKey: number = 0;
-        
-        
 ;
     
 
     var smallestKey: number = 0;
-        
-        
 ;
     
 
@@ -379,8 +340,6 @@ var canvas = canvas
                         for (
     var index: number = mappedGameKeys!.length
                 ;
-        
-        
 --index >= 0; )
         {
 nextKey= canvas.getKeyCode(mappedGameKeys[index]!.getId());
@@ -411,14 +370,10 @@ var canvas = canvas
         try {
             
     var negativePlatformToGameKeyMapping: GameKey[] = [];
-        
-        
 ;
     
 
     var smallestKey: number = this.getSmallestCanvasGameKeyCode(canvas)!;
-        
-        
 ;
     
 
@@ -445,8 +400,6 @@ negativePlatformToGameKeyMapping= new Array( -smallestKey);
                         for (
     var index: number = negativePlatformToGameKeyMapping!.length
                 ;
-        
-        
 --index >= 0; )
         {
 negativePlatformToGameKeyMapping[index]= this.gameKeyFactory!.NONE;
@@ -465,11 +418,9 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping;
                         for (
     var index: number = mappedGameKeys!.length
                 ;
-        
-        
 --index >= 0; )
         {
-this.init(canvas, mappedGameKeys[index]!);
+this.initGameKey(canvas, mappedGameKeys[index]!);
     
 }
 
@@ -484,7 +435,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
 }
 
 
-    public getInstance(canvas: Canvas, id: number): GameKey{
+    public getInstanceForCanvas(canvas: Canvas, id: number): GameKey{
 var canvas = canvas
 var id = id
 

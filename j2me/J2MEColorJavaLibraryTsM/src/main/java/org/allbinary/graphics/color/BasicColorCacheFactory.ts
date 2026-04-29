@@ -52,8 +52,6 @@ export class BasicColorCacheFactory
         
 
     private static readonly instance: BasicColorCacheFactory = new BasicColorCacheFactory();
-        
-        
 
     public static getInstance(): BasicColorCacheFactory{
 
@@ -65,9 +63,7 @@ export class BasicColorCacheFactory
 }
 
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private readonly hashtable: Hashtable = new Hashtable();
 private constructor (){
 
             super();
@@ -76,18 +72,16 @@ private constructor (){
 
     public add(basicDefaultColor: BasicColor){
     //var basicDefaultColor = basicDefaultColor
-this.hashtable.put(new Integer(basicDefaultColor!.toInt()), basicDefaultColor);
+this.hashtable.put(basicDefaultColor!.toInt(), basicDefaultColor);
     
 }
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public getInstance(integer: Integer): BasicColor{
+    public getAndOrCreate(integer: number): BasicColor{
     //var integer = integer
 
-    var basicColor: BasicColor = this.hashtable.get(integer as Object); as BasicColor;
-        
-        
+    var basicColor: BasicColor =  as BasicColorthis.hashtable.get(integer as Object);;
 ;
     
 

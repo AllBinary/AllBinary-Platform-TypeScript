@@ -46,8 +46,6 @@ export class ContextConfigurationData
         
 
     private static readonly instance: ContextConfigurationData = new ContextConfigurationData();
-        
-        
 
     public static getInstance(): ContextConfigurationData{
 
@@ -65,16 +63,10 @@ private constructor (){
 
 
     public readonly NAME: string = "CONTEXT_CONFIGURATION_NAME";
-        
-        
 
     public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
-        
-        
 
 }
                 

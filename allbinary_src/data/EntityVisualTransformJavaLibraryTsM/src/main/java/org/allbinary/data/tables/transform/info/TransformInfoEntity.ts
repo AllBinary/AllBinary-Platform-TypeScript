@@ -97,16 +97,10 @@ export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntit
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly tableName: string = "transforminfo";
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private readonly transformInfoFactoryInterface: TransformInfoFactoryInterface
 
@@ -201,28 +195,22 @@ var value = value
 
                 //@Throws(Error::class)
             
-    public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
+    public get(name: string, propertiesHashMap: HashMap, pageContext: PageContext): TransformInfoInterface{
 var name = name
 var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
-    var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var keysAndValues: HashMap = new HashMap();
 ;
     
 keysAndValues!.put(transformInfoData!.NAME, name);
     
 
-    var hashMap: HashMap<any, any> = super.getRow(keysAndValues)!;
-        
-        
+    var hashMap: HashMap = super.getRow(keysAndValues)!;
 ;
     
 
@@ -233,8 +221,6 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                                     {
                                     
     var anyType: any = hashMap!.get(transformInfoData!.OBJECTCONFIG)!;
-        
-        
 ;
     
 
@@ -244,9 +230,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var string: string = anyType as String;
-        
-        
+    var string: string =  as StringanyType;
 ;
     
 hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
@@ -256,8 +240,6 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                                 
 
     var objectData: any = hashMap!.get(transformInfoData!.DATA)!;
-        
-        
 ;
     
 
@@ -267,9 +249,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                         
                                     {
                                     
-    var string: string = objectData as String;
-        
-        
+    var string: string =  as StringobjectData;
 ;
     
 hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
@@ -305,20 +285,14 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
 var storeName = storeName
 
     var objectConfigVector: Vector = new Vector();
-        
-        
 ;
     
 
     var objectConfigColumnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.OBJECTCONFIG, StoreFrontData.getInstance()!.NAME, storeName)!;
-        
-        
 ;
     
 
     var size: number = objectConfigColumnVector!.length!;
-        
-        
 ;
     
 
@@ -327,19 +301,15 @@ var storeName = storeName
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i); as String;
-        
-        
+    var objectConfigString: string =  as StringobjectConfigColumnVector!.get(i);;
 ;
     
 objectConfigString= decode.toCharArray();
     
-objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation, this as TransformInfoInterface, DomDocumentHelper.create(objectConfigString)));
+objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInterface!.getInstance(abeClientInformation,  as TransformInfoInterfacethis, DomDocumentHelper.create(objectConfigString)));
     
 }
 
@@ -358,20 +328,14 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
 var storeName = storeName
 
     var viewNameVector: Vector = new Vector();
-        
-        
 ;
     
 
     var columnVector: Vector = this.getColumnWhere(TransformInfoData.getInstance()!.NAME, StoreFrontData.getInstance()!.NAME, storeName)!;
-        
-        
 ;
     
 
     var size: number = columnVector!.length!;
-        
-        
 ;
     
 
@@ -380,14 +344,10 @@ var storeName = storeName
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i); as String;
-        
-        
+    var viewNameString: string =  as StringcolumnVector!.get(i);;
 ;
     
 viewNameVector!.add(viewNameString);
@@ -406,14 +366,10 @@ viewNameVector!.add(viewNameString);
     public createTableStatement(): string{
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE);
@@ -493,9 +449,9 @@ stringBuffer!.append(this.sqlStrings!.END);
 }
 
 
-    public update(updatedValues: HashMap<any, any>){
+    public update(updatedValues: HashMap){
 var updatedValues = updatedValues
-super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues);
+super.updateWhere(TransformInfoData.getInstance()!.NAME,  as StringupdatedValues!.get(TransformInfoData.getInstance()!.NAME), updatedValues);
     
 }
 

@@ -65,8 +65,6 @@ export class TransformTag extends TransformInfoTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super(new ViewHelperFactory());
                     
@@ -109,11 +107,9 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
         try {
             
-    var result: string = this.getHelper()!..constructor.name.getMethod("view", 
+    var result: string =  as Stringthis.getHelper()!..constructor.name.getMethod("view", 
                             null)!.invoke(this.getHelper(), 
-                            null); as String;
-        
-        
+                            null);;
 ;
     
 
@@ -138,7 +134,8 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -164,8 +161,6 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("ViewTag Start For: ");

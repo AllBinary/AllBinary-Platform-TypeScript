@@ -49,8 +49,6 @@ export class GameKey extends Input {
         
 
     public static readonly NULL_GAME_KEY: GameKey = new GameKey( -1, StringUtil.getInstance()!.NULL_STRING);
-        
-        
  constructor (key: number, name: string){
             super(key, name);
                         //var key = key

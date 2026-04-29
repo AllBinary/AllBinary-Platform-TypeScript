@@ -54,15 +54,11 @@ public constructor (){
 var anyType = anyType
 var object2 = object2
 
-    var string: string = anyType as String;
-        
-        
+    var string: string =  as StringanyType;
 ;
     
 
-    var string2: string = object2 as String;
-        
-        
+    var string2: string =  as Stringobject2;
 ;
     
 

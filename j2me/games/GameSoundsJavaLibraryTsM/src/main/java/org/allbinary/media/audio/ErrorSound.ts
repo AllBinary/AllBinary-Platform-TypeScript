@@ -45,8 +45,6 @@ export class ErrorSound extends CompositeSound {
         
 
     private soundInterface: Sound = new ErrorSound();
-        
-        
 
     public static getInstance(): Sound{
 

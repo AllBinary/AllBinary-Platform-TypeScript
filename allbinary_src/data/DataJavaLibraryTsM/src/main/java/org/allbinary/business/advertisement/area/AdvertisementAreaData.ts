@@ -43,8 +43,6 @@ export class AdvertisementAreaData
         
 
     private static readonly instance: AdvertisementAreaData = new AdvertisementAreaData();
-        
-        
 
     public static getInstance(): AdvertisementAreaData{
 
@@ -62,16 +60,10 @@ private constructor (){
 
 
     public readonly NAME: string = "ADVERTISEMENT_NAME";
-        
-        
 
     public readonly DESCRIPTION: string = "ADVERTISEMENT_DESCRIPTION";
-        
-        
 
     public readonly CONSTRAINTS: string = "ADVERTISEMENT_CONSTRAINTS";
-        
-        
 
 }
                 

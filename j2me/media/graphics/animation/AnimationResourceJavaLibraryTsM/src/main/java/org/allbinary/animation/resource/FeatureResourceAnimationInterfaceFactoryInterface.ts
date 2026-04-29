@@ -51,7 +51,7 @@ import { ResourceAnimationInterfaceFactoryInterface } from "./ResourceAnimationI
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         
 
-    getHashtable(): Hashtable<any, any>
+    getHashtable(): Hashtable
 
 }
                 

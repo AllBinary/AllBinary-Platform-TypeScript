@@ -67,12 +67,8 @@ export class InputAutomationModuleOSGIServiceVisitor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -85,7 +81,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit(anyType as OSGIServiceInterface);;
+                        return this.visit( as OSGIServiceInterfaceanyType);;
     
 }
 
@@ -95,15 +91,11 @@ public constructor (){
 
         try {
             
-    var inputAutomationModuleService: InputAutomationModuleService = osgiServiceInterface as InputAutomationModuleService;
-        
-        
+    var inputAutomationModuleService: InputAutomationModuleService =  as InputAutomationModuleServiceosgiServiceInterface;
 ;
     
 
     var inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[] = inputAutomationModuleService!.getInputAutomationModuleInterfaceArray()!;
-        
-        
 ;
     
 
@@ -112,8 +104,6 @@ public constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < inputAutomationModuleInterfaceArray!.length; index++)
         {
 InputAutomationJFrame.getInstance()!.onAdd(InputAutomationConfigurationUtil.getChangeEvent(inputAutomationModuleInterfaceArray[index]!));

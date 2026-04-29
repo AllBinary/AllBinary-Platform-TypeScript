@@ -45,8 +45,6 @@ export class LastFetchHighScoresFactory
         
 
     private static readonly instance: LastFetchHighScoresFactory = new LastFetchHighScoresFactory();
-        
-        
 
     public static getInstance(): LastFetchHighScoresFactory{
 
@@ -59,8 +57,6 @@ export class LastFetchHighScoresFactory
 
 
     public highScoresArray: HighScores[] = NoHighScoresFactory.getInstance()!.NO_HIGH_SCORES;
-        
-        
 
 }
                 

@@ -76,8 +76,6 @@ export class XslHelper
         
 
     private static readonly instance: XslHelper = new XslHelper();
-        
-        
 
     public static getInstance(): XslHelper{
 
@@ -104,14 +102,10 @@ private constructor (){
         try {
             
     var transformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 
     var transformer: Transformer = transformerFactory!.newTransformer(xsltStreamSource)!;
-        
-        
 ;
     
 transformer.transform(xmlStreamSource, streamResult);
@@ -129,7 +123,8 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -146,16 +141,12 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             
     var tFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 tFactory!.setURIResolver(resolver);
     
 
     var transformer: Transformer = tFactory!.newTransformer(xsltStreamSource)!;
-        
-        
 ;
     
 transformer.transform(xmlStreamSource, streamResult);
@@ -173,7 +164,8 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -188,8 +180,6 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
@@ -205,7 +195,8 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -220,8 +211,6 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
@@ -237,7 +226,8 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -253,8 +243,6 @@ transformer.transform(xmlStreamSource, streamResult);
         try {
             
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
@@ -270,7 +258,8 @@ transformer.transform(xmlStreamSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -295,7 +284,8 @@ this.translate(new StreamSource(xsltFilePath), new StreamSource(new StringBuffer
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

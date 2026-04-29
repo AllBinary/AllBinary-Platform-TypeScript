@@ -30,9 +30,6 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 import { Angle } from "../../../org/allbinary/math/Angle.js";
 
     
-import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
-
-    
 import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
     
@@ -71,12 +68,8 @@ export class RotationAnimation extends IndexedAnimation implements RotationAnima
         
 
     readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
-        
-        
 
     readonly directionUtil: DirectionUtil = DirectionUtil.getInstance()!;
-        
-        
 
     readonly angleInfo: AngleInfo
 
@@ -131,8 +124,6 @@ this.circularIndexUtil!.setIndex(index);
     
 
     var newFrame: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.angleInfo!.adjustAngle(newFrame);
@@ -140,27 +131,25 @@ this.angleInfo!.adjustAngle(newFrame);
 }
 
 
-    public setFrame(direction: Direction){
+    public setFrameByDirection(direction: Direction){
     //var direction = direction
 
     var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
-        
-        
 ;
     
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
 
-    public setFrame(angle: Angle){
+    public setFrameToAngle(angle: Angle){
     //var angle = angle
-this.adjustFrame(angle);
+this.adjustFrameToAngle(angle);
     
 }
 
 
-    public adjustFrame(angle: Angle){
+    public adjustFrameToAngle(angle: Angle){
     //var angle = angle
 this.adjustFrame(angle.getValue());
     
@@ -169,7 +158,7 @@ this.adjustFrame(angle.getValue());
 
     public adjustFrame(angle: number){
     //var angle = angle
-this.setFrame(this.frameUtil!.getFrameForAngle(angle, this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
+this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.roundthis.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()));
     
 }
 

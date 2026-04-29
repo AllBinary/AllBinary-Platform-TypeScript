@@ -149,6 +149,24 @@ import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
 import { JPanel } from "./JPanel.js";
 
+import { JMenuItem } from "./JMenuItem.js";
+
+import { JTabbedPane } from "./JTabbedPane.js";
+
+import { JList } from "./JList.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
+import { JMenuBar } from "./JMenuBar.js";
+
+import { JDialog } from "./JDialog.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JMenu } from "./JMenu.js";
+
+import { JCheckBoxMenuItem } from "./JCheckBoxMenuItem.js";
+
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 
@@ -176,8 +194,6 @@ LogConfigTypeFactory.getInstance();
     
 
     var appUrlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/");
@@ -186,20 +202,16 @@ URLGLOBALS.init(appUrlGlobals);
     
 WebappClassLoaderInfo.setLoader(appUrlGlobals!.constructor.name.java.classLoader);
     
-java.awt.EventQueue.invokeLater(new object: ARunnable()
+java.awt.EventQueue.invokeLater(new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -252,12 +264,8 @@ InputAutomationJFrame.create(
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private inputAutomationModuleFactory: InputAutomationModuleFactoryFactory
 
@@ -270,8 +278,6 @@ InputAutomationJFrame.create(
     private helpSet: HelpSet
 
     private readonly uri: URI = new URI("http://geocities.com/allbinary/");
-        
-        
 public constructor (){
 
             super();
@@ -279,8 +285,6 @@ public constructor (){
     
 
     var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
-        
-        
 ;
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
@@ -291,8 +295,6 @@ url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
 
     var imageIcon: ImageIcon = new ImageIcon(url);
-        
-        
 ;
     
 this.setIconImage(imageIcon!.getImage());
@@ -379,8 +381,6 @@ this.noModuleSelectedJLabel!.setText("Please Select A Module");
     
 
     var noModuleSelectedJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.noModuleSelectedJDialog!.getContentPane());
-        
-        
 ;
     
 this.noModuleSelectedJDialog!.getContentPane()!.setLayout(noModuleSelectedJDialogLayout);
@@ -395,7 +395,7 @@ setMinimumSize(new java.awt.Dimension(325, 215));
     
 setResizable(false);
     
-addWindowFocusListener(new object: java.awt.event.WindowFocusListener()
+addWindowFocusListener(new java.awt.event.WindowFocusListener()
                                 {
                                 
     public windowGainedFocus(evt: java.awt.event.WindowEvent){
@@ -413,7 +413,7 @@ formWindowLostFocus(evt);
                                 }
                             );
     
-addFocusListener(new object: java.awt.event.FocusAdapter()
+addFocusListener(new java.awt.event.FocusAdapter()
                                 {
                                 
     public focusGained(evt: java.awt.event.FocusEvent){
@@ -435,7 +435,7 @@ this.gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
     
 this.inputAutomationModuleJList!.setMinimumSize(new java.awt.Dimension(200, 0));
     
-inputAutomationModuleJList!.addListSelectionListener(new object: javax.swing.event.ListSelectionListener()
+inputAutomationModuleJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -451,8 +451,6 @@ this.jScrollPane1!.setViewportView(this.inputAutomationModuleJList);
     
 
     var inputAutomationModuleJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.inputAutomationModuleJPanel);
-        
-        
 ;
     
 this.inputAutomationModuleJPanel!.setLayout(inputAutomationModuleJPanelLayout);
@@ -465,8 +463,6 @@ this.gameRobotJTabbedPane!.addTab("Modules", inputAutomationModuleJPanel);
     
 
     var automationModuleConfigurationJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.automationModuleConfigurationJPanel);
-        
-        
 ;
     
 this.automationModuleConfigurationJPanel!.setLayout(automationModuleConfigurationJPanelLayout);
@@ -483,7 +479,7 @@ this.processingJMenu!.setToolTipText("Set module processing state");
     
 this.startJMenuItem!.setText(this.commonStrings!.START);
     
-startJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+startJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -499,7 +495,7 @@ this.processingJMenu!.add(this.startJMenuItem);
     
 this.stopJMenuItem!.setText("Stop");
     
-stopJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+stopJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -517,7 +513,7 @@ this.mainJMenuBar!.add(this.processingJMenu);
     
 this.optionsJMenu!.setText("Options");
     
-optionsJMenu!.addActionListener(new object: java.awt.event.ActionListener()
+optionsJMenu!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -535,7 +531,7 @@ this.stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
     
 this.stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
     
-stopOnFocusJCheckBoxMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+stopOnFocusJCheckBoxMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -555,7 +551,7 @@ this.toolsJMenu!.setText("Help");
     
 this.helpJMenuItem!.setText("Help");
     
-helpJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+helpJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -571,7 +567,7 @@ this.toolsJMenu!.add(this.helpJMenuItem);
     
 this.updatesJMenuItem!.setText("Updates");
     
-updatesJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+updatesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -587,7 +583,7 @@ this.toolsJMenu!.add(this.updatesJMenuItem);
     
 this.subscriptionJMenuItem!.setText("Subscription");
     
-subscriptionJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+subscriptionJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -603,7 +599,7 @@ this.toolsJMenu!.add(this.subscriptionJMenuItem);
     
 this.modulesJMenuItem!.setText("Module Manager");
     
-modulesJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+modulesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -619,7 +615,7 @@ this.toolsJMenu!.add(this.modulesJMenuItem);
     
 this.aboutJMenuItem!.setText("About");
     
-aboutJMenuItem!.addActionListener(new object: java.awt.event.ActionListener()
+aboutJMenuItem!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -639,8 +635,6 @@ setJMenuBar(this.mainJMenuBar);
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(getContentPane());
-        
-        
 ;
     
 getContentPane()!.setLayout(layout);
@@ -692,8 +686,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPe
 var evt = evt
 
     var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");
-        
-        
 ;
     
 textJDialog!.setVisible(true);
@@ -785,9 +777,7 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue(); as String;
-        
-        
+    var gameAutomationRobotModuleNameString: string =  as Stringthis.inputAutomationModuleJList!.getSelectedValue();;
 ;
     
 
@@ -801,9 +791,7 @@ var evt = evt
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout(); as javax.swing.GroupLayout;
-        
-        
+    var layout: javax.swing.GroupLayout =  as javax.swing.GroupLayoutthis.getAutomationModuleConfigurationJPanel()!.getLayout();;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -986,8 +974,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
     
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = InputAutomationModuleConfigurationsSingletonFactory.getInstance()!;
-        
-        
 ;
     
 inputAutomationModuleConfigurations!.add(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());
@@ -1013,14 +999,10 @@ var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChange
     
 
     var inputAutomationConfiguration: InputAutomationConfiguration = InputAutomationConfigurationFactory.getInstance()!;
-        
-        
 ;
     
 
     var inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(inputAutomationConfiguration!.getInputAutomationModuleConfigurationList());
-        
-        
 ;
     
 inputAutomationModuleConfigurations!.remove(inputAutomationConfigurationChangeEvent!.getInputAutomationModuleConfiguration());

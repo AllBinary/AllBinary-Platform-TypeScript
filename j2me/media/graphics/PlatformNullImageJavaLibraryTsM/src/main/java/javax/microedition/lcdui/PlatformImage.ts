@@ -44,6 +44,8 @@ import { NullCanvas } from "./NullCanvas.js";
 
 import { Image } from "./Image.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Graphics } from "./Graphics.js";
 
 export class PlatformImage
@@ -62,7 +64,7 @@ export class PlatformImage
 }
 
 
-    public getWidth(graphicsSurface2: any = {}, width: number): number{
+    public getSurfaceWidth(graphicsSurface2: any = {}, width: number): number{
     //var graphicsSurface2 = graphicsSurface2
     //var width = width
 
@@ -74,7 +76,7 @@ export class PlatformImage
 }
 
 
-    public getHeight(graphicsSurface2: any = {}, height: number): number{
+    public getSurfaceHeight(graphicsSurface2: any = {}, height: number): number{
     //var graphicsSurface2 = graphicsSurface2
     //var height = height
 
@@ -118,7 +120,8 @@ export class PlatformImage
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

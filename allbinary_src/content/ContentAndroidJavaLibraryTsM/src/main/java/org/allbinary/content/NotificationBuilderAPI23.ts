@@ -62,7 +62,7 @@ import { NotificationBuilder } from "./NotificationBuilder.js";
 export class NotificationBuilderAPI23 extends NotificationBuilder {
         
 
-    public build(context: Context, command: Command, message: string, integer: Integer, pendingIntent: PendingIntent): Parcelable{
+    public build(context: Context, command: Command, message: string, integer: number, pendingIntent: PendingIntent): Parcelable{
 var context = context
 var command = command
 var message = message
@@ -70,9 +70,7 @@ var integer = integer
 var pendingIntent = pendingIntent
 
     var notification: Notification = new Builder(context).
-                            setSmallIcon(integer.toInt())!.setTicker(message)!.setWhen(System.currentTimeMillis())!.setContentTitle(command.getLabel())!.setContentText(message)!.setContentIntent(pendingIntent)!.build()!;
-        
-        
+                            setSmallIcon(integer.toInt())!.setTicker(message)!.setWhen(Date.now())!.setContentTitle(command.getLabel())!.setContentText(message)!.setContentIntent(pendingIntent)!.build()!;
 ;
     
 

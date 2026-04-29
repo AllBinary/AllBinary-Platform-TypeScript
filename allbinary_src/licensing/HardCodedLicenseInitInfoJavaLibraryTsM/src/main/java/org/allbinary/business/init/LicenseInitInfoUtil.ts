@@ -45,8 +45,6 @@ export class LicenseInitInfoUtil
         
 
     private static readonly instance: LicenseInitInfoUtil = new LicenseInitInfoUtil();
-        
-        
 
     public static getInstance(): LicenseInitInfoUtil{
 
@@ -59,20 +57,12 @@ export class LicenseInitInfoUtil
 
 
     public readonly INITFILENAME: string = "licenseinitdata.dat";
-        
-        
 
     public readonly ABOUT: string = "about";
-        
-        
 
     public readonly PRIVACY_POLICY: string = "privacy_policy";
-        
-        
 
     private readonly OFFICIAL_ALLBINARY_SERVICES_SERVER: string = "https://services.allbinary.com/LicServ/serverssl.php";
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
@@ -113,8 +103,6 @@ var initData = initData
 var initializeCounter = initializeCounter
 
     var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
-        
-        
 ;
     
 licenseInitInfo!.clearServers();

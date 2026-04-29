@@ -77,7 +77,7 @@ export class AutoCompoundRotationAnimation extends RotationAnimation implements 
 
     private animationInterfaceArray: RotationAnimation[]
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
-            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.getInstance(4), animationBehavior);
+            super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
                         //var animationInterfaceArray = animationInterfaceArray
     //var animationBehavior = animationBehavior
 
@@ -86,7 +86,7 @@ public constructor (animationInterfaceArray: RotationAnimation[], animationBehav
                     
 this.animationInterfaceArray= animationInterfaceArray;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.animationInterfaceArray!.length);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterfaceArray!.length);
     
 }
 
@@ -175,11 +175,11 @@ var sequence = sequence
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
-this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paint(graphics, x, y);
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintXY(graphics, x, y);
     
 }
 
@@ -207,8 +207,6 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(gr
     public nextAnimation(){
 
     var frame: number = this.getFrame()!;
-        
-        
 ;
     
 this.circularIndexUtil!.next();
@@ -221,8 +219,6 @@ this.setFrame(frame);
     public previousAnimation(){
 
     var frame: number = this.getFrame()!;
-        
-        
 ;
     
 this.circularIndexUtil!.previous();
@@ -236,8 +232,6 @@ this.setFrame(frame);
     //var index = index
 
     var frame: number = this.getFrame()!;
-        
-        
 ;
     
 this.circularIndexUtil!.setIndex(index);
@@ -247,21 +241,21 @@ this.setFrame(frame);
 }
 
 
-    public setFrame(direction: Direction){
+    public setFrameByDirection(direction: Direction){
     //var direction = direction
-this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(direction);
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrameByDirection(direction);
     
 }
 
 
-    public setFrame(angle: Angle){
+    public setFrameToAngle(angle: Angle){
     //var angle = angle
-this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(angle);
+this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrameToAngle(angle);
     
 }
 
 
-    public adjustFrame(newAngle: Angle){
+    public adjustFrameToAngle(newAngle: Angle){
     //var newAngle = newAngle
 this.adjustFrame(newAngle!.getValue());
     
@@ -313,8 +307,6 @@ this.animationInterfaceArray= animationInterfaceArray;
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);

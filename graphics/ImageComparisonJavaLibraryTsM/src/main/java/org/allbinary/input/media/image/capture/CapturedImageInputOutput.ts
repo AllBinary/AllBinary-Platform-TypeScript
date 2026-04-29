@@ -81,24 +81,18 @@ export class CapturedImageInputOutput
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public save(frame: Long){
+    public save(frame: number){
 var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
-    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (
-                                    (getInstance as AutomaticCacheInterface).get(frame); as Object as BufferedImageFrameCacheable);
-        
-        
+    var capturedBufferedImageCacheable: BufferedImageFrameCacheable = ( as BufferedImageFrameCacheable as Object
+                                    (getInstance as AutomaticCacheInterface).get(frame););
 ;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);
@@ -108,25 +102,19 @@ save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
 }
 
 
-    public save(bufferedImage: BufferedImage, frame: Long){
+    public save(bufferedImage: BufferedImage, frame: number){
 var bufferedImage = bufferedImage
 var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 
     var filePathStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
@@ -137,16 +125,12 @@ filePathStringBuffer!.append(MediaDataFactory.getInstance()!.JPG.getExtension())
     
 
     var filePath: string = filePathStringBuffer!.toString()!;
-        
-        
 ;
     
 this.logUtil!.putF(("Image File Path: " +filePath +imageUtil!.toString(bufferedImage)), this, commonStrings!.SAVE);
     
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-        
-        
 ;
     
 imagePersistanceUtil!.saveWithImageIO(filePath, bufferedImage);

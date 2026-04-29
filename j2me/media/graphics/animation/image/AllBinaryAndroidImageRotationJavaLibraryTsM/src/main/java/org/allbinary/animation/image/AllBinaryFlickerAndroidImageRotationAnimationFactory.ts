@@ -64,14 +64,14 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AllBinaryFlickerAndroidImageRotationAnimation } from "./AllBinaryFlickerAndroidImageRotationAnimation.js";
+
 export class AllBinaryFlickerAndroidImageRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {
         
 
     private image: Image = NullCanvas.NULL_IMAGE;
-        
-        
 
     private readonly angleIncrement: number
 
@@ -99,8 +99,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     //var instanceId = instanceId
 
     var image: Image = ImageCopyUtil.getInstance()!.createImage(this.getImage())!;
-        
-        
 ;
     
 

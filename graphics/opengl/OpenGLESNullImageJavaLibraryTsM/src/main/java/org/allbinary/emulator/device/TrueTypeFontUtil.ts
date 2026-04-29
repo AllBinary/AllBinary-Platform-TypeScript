@@ -51,12 +51,12 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
         
 import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 
     private static readonly instance: TrueTypeFontUtil = new TrueTypeFontUtil();
-        
-        
 
     public static getInstance(): TrueTypeFontUtil{
 
@@ -69,8 +69,6 @@ export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
 
 
     public fontImage: OpenGLESImage = OpenGLESImage.NULL_OPENGL_IMAGE;
-        
-        
 private constructor (){
             super(1);
                     
@@ -85,7 +83,8 @@ var textureSize = textureSize
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -94,7 +93,8 @@ var cellSize = cellSize
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -106,7 +106,8 @@ var cellSize = cellSize
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -122,7 +123,8 @@ var cellSize = cellSize
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -132,7 +134,8 @@ var cellSize = cellSize
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -87,8 +87,6 @@ public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterfa
     public createHudPaintable(): SelectionHudPaintable{
 
     var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;
-        
-        
 ;
     
 rtsLayerHudPaintable!.setBasicColorP(this.allBinaryGameLayerManagerP!.getForegroundBasicColor());
@@ -107,8 +105,6 @@ rtsLayerHudPaintable!.setRtsLayer(this);
     public getHudPaintable(): SelectionHudPaintable{
 
     var rtsLayerHudPaintable: GeologicalResourceInfoHudPaintable = GeologicalResourceInfoHudPaintableSingleton.getInstance()!;
-        
-        
 ;
     
 

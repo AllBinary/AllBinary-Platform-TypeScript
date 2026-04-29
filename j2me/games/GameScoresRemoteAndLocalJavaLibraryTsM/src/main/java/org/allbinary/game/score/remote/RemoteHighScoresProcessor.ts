@@ -85,16 +85,10 @@ export class RemoteHighScoresProcessor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly noCrypt: NoCrypt = new NoCrypt();
-        
-        
 public constructor (){
 
             super();
@@ -112,14 +106,10 @@ this.logUtil!.putF("Begin Remote HighScores Retrieval", this, commonStrings!.PRO
     
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any> = abeClientInformation!.toHashtable()!;
-        
-        
+    var hashtable: Hashtable = abeClientInformation!.toHashtable()!;
 ;
     
 HashtableUtil.getInstance()!.putAll(gameInfo!.toHashtable(), hashtable);
@@ -130,8 +120,6 @@ hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toS
     
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()));
@@ -143,10 +131,8 @@ hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfig
                         
                                     {
                                     
-    var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
-                            get(hashtable, noCrypt); as Hashtable<any, any>;
-        
-        
+    var resultHashtable: Hashtable =  as Hashtablenew XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
+                            get(hashtable, noCrypt);;
 ;
     
 remoteHighScores!.update(resultHashtable);

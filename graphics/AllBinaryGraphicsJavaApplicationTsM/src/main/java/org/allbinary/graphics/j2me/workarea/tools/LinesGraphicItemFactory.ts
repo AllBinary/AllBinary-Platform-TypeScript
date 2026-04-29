@@ -42,6 +42,8 @@ import { CanvasJPanel } from "../../../../../../org/allbinary/graphics/j2me/work
         
 import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
 
+import { LinesGraphicItem } from "./LinesGraphicItem.js";
+
 import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class LinesGraphicItemFactory

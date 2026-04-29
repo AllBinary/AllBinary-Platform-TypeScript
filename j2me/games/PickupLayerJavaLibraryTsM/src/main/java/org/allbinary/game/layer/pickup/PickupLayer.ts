@@ -45,9 +45,6 @@ import { MultiPlayerGameLayer } from "../../../../../org/allbinary/game/multipla
 import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
 
     
-import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory.js";
-
-    
 import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
     
@@ -88,14 +85,10 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
-        
-        
 
     private destroyed: boolean= false
 
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
-        
-        
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
                         //var name = name
@@ -132,7 +125,7 @@ this.setDestroyed(false);
 }
 
 
-    public init(x: number, y: number, z: number){
+    public initXYZ(x: number, y: number, z: number){
 var x = x
 var y = y
 var z = z
@@ -145,23 +138,17 @@ this.setPosition(x, y, z);
 var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
 
     var viewX: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var viewY: number = viewPosition!.getY()!;
-        
-        
 ;
     
-this.animationInterface!.paint(graphics, viewX, viewY);
+this.animationInterface!.paintXY(graphics, viewX, viewY);
     
 }
 
@@ -170,20 +157,14 @@ this.animationInterface!.paint(graphics, viewX, viewY);
 var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
-        
-        
 ;
     
 
     var viewX: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var viewY: number = viewPosition!.getY()!;
-        
-        
 ;
     
 this.animationInterface!.paintThreed(graphics, viewX, viewY, 3);
@@ -255,9 +236,7 @@ var damageType = damageType
     public set(gl: GL){
 var gl = gl
 
-    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;
-        
-        
+    var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface =  as OpenGLSurfaceChangedInterfacethis.animationInterface;
 ;
     
 openGLSurfaceChangedInterface!.set(gl);

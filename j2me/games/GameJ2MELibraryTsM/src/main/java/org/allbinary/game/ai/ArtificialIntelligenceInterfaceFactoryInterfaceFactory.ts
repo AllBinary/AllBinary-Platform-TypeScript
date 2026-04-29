@@ -61,8 +61,6 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
         
 
     private SINGLETON: ArtificialIntelligenceInterfaceFactoryInterfaceFactory = new ArtificialIntelligenceInterfaceFactoryInterfaceFactory();
-        
-        
 
     public static getInstance(): ArtificialIntelligenceInterfaceFactoryInterfaceFactory{
 
@@ -75,8 +73,6 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
 
 
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     public clear(){
 list= new BasicArrayListD();
@@ -84,24 +80,18 @@ list= new BasicArrayListD();
 }
 
 
-    public getInstance(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
-var hashtable = hashtable
+    public getInstanceFromCollection(hashtable: Hashtable): ArtificialIntelligenceInterfaceFactoryInterface{
+    //var hashtable = hashtable
 
-    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object); as Integer;
-        
-        
+    var typeInteger: number =  as Integerhashtable.get( as ObjectBasicAI.ID);;
 ;
     
 
     var type: number = typeInteger!.toInt()!;
-        
-        
 ;
     
 
-    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface = this.list.objectArray[type -1]! as ArtificialIntelligenceInterfaceFactoryInterface;
-        
-        
+    var artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface =  as ArtificialIntelligenceInterfaceFactoryInterfacethis.list.objectArray[type -1]!;
 ;
     
 
@@ -114,7 +104,7 @@ var hashtable = hashtable
 
 
     public add(artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface){
-var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
+    //var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
 this.list.add(artificialIntelligenceInterfaceFactoryInterface);
     
 }

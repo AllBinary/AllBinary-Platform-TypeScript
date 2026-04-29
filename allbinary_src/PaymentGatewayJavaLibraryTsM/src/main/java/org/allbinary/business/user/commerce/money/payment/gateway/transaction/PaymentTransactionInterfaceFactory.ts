@@ -60,8 +60,6 @@ export class PaymentTransactionInterfaceFactory
         
 
     private static readonly instance: PaymentTransactionInterfaceFactory = new PaymentTransactionInterfaceFactory();
-        
-        
 
     public static getInstance(): PaymentTransactionInterfaceFactory{
 
@@ -74,8 +72,6 @@ export class PaymentTransactionInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -90,8 +86,6 @@ var orderReview = orderReview
         try {
             
     var gatewayName: string = orderReview!.getPaymentMethod()!;
-        
-        
 ;
     
 
@@ -102,20 +96,14 @@ var orderReview = orderReview
                                     {
                                     
     var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
-        
-        
 ;
     
 
     var paymentTransactionInterfaceFactoryInterface: PaymentTransactionInterfaceFactoryInterface = paymentType!.getPaymentTransactionInterfaceFactoryInterface()!;
-        
-        
 ;
     
 
     var paymentTransactionInterface: PaymentTransactionInterface = paymentTransactionInterfaceFactoryInterface!.getInstance(orderReview)!;
-        
-        
 ;
     
 
@@ -130,7 +118,8 @@ var orderReview = orderReview
 
 
 
-                            throw new Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName)
+                            throw new Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName);
+                    
 
                 //: 
 } catch(e) 
@@ -141,8 +130,6 @@ var orderReview = orderReview
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTANCE, e);
@@ -153,7 +140,8 @@ this.logUtil!.put("Failed to generate test data", this, commonStrings!.GET_INSTA
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

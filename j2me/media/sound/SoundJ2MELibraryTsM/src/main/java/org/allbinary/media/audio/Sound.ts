@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { Player } from "../../../../javax/microedition/media/Player.js";
 
     
@@ -48,8 +50,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { SoundInterface } from "./SoundInterface.js";
 
-import { Runnable } from "./Runnable.js";
-
 import { NoPlayer } from "./NoPlayer.js";
 
 export class Sound
@@ -60,8 +60,6 @@ export class Sound
     private resource: string
 
     player: Player = NoPlayer.NO_PLAYER;
-        
-        
 protected constructor (resource: string){
 
             super();
@@ -125,8 +123,6 @@ this.player= player;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN);

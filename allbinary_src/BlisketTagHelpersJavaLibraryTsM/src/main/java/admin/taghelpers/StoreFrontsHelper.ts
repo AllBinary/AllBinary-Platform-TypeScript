@@ -79,19 +79,13 @@ export class StoreFrontsHelper extends BasicTable {
         
 
     private static readonly CLASS: string = "class";
-        
-        
 
     private static readonly TEXT: string = "text";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -106,8 +100,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -131,8 +123,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to drop storefronts table";
-        
-        
 ;
     
 
@@ -160,8 +150,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -185,8 +173,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to create new storefronts table";
-        
-        
 ;
     
 
@@ -214,14 +200,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance(), this.portion)!;
-        
-        
 ;
     
 
@@ -245,8 +227,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -274,14 +254,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance())!;
-        
-        
 ;
     
 
@@ -305,8 +281,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 
@@ -330,36 +304,26 @@ this.portion= new Portion(hashMap);
 
 
     private readonly commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 
     public generateSelect(): string{
 
         try {
             
     var success: string = CommonSeps.getInstance()!.SPACE;
-        
-        
 ;
     
 
     var storeNamesVector: Vector = StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.getStoreFrontNames()!;
-        
-        
 ;
     
 
     var storeSelect: HtmlSelect = new HtmlSelect(StringUtil.getInstance()!.EMPTY_STRING, commonPhoneStrings!.ONE, StoreFrontData.getInstance()!.SELECTSTORENAME, StringUtil.getInstance()!.EMPTY_STRING);
-        
-        
 ;
     
 storeSelect!.addAttribute(CLASS, TEXT);
     
 
     var size: number = storeNamesVector!.length!;
-        
-        
 ;
     
 
@@ -368,14 +332,10 @@ storeSelect!.addAttribute(CLASS, TEXT);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var storeName: string = storeNamesVector!.get(index); as String;
-        
-        
+    var storeName: string =  as StringstoreNamesVector!.get(index);;
 ;
     
 storeSelect!.addOption(storeName);
@@ -405,8 +365,6 @@ success += storeSelect;
             {
 
     var error: string = "Failed to generate storefronts select";
-        
-        
 ;
     
 

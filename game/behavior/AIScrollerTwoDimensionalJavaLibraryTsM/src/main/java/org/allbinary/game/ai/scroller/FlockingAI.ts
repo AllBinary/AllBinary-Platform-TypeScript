@@ -78,7 +78,7 @@ export class FlockingAI extends BasicAI {
         
 
     private readonly allowedDistance: number
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -88,9 +88,7 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
-        
-        
+    var allowedDistance: number =  as Integerhashtable.get(BasePatrolAI.MAX_DISTANCE);;
 ;
     
 this.allowedDistance= allowedDistance!.toInt();
@@ -104,32 +102,22 @@ this.allowedDistance= allowedDistance!.toInt();
 var allBinaryLayerManager = allBinaryLayerManager
 
     var maxDistance: number = 0;
-        
-        
 ;
     
 
     var farAllbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 ;
     
 
     var groupLayerManagerListener: GroupLayerManagerListener = GroupLayerManagerListener.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = groupLayerManagerListener!.getList(BasicGroupFactory.getInstance()!.ENEMY)!;
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -138,14 +126,10 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var allBinaryLayer: AllBinaryLayer = list.get(index); as AllBinaryLayer;
-        
-        
+    var allBinaryLayer: AllBinaryLayer =  as AllBinaryLayerlist.get(index);;
 ;
     
 
@@ -154,8 +138,6 @@ index < size; index++)
                                     {
                                     
     var distance: number = this.getXYDistance(allBinaryLayer)!;
-        
-        
 ;
     
 
@@ -194,15 +176,13 @@ farAllbinaryLayer= allBinaryLayer;
                                     {
                                     
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
                         if(farAllbinaryLayer!.getXP() < ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.LEFT);
+                                    this.processKeyAI(Canvas.LEFT);
     
 
                                     }
@@ -211,7 +191,7 @@ farAllbinaryLayer= allBinaryLayer;
                         if(farAllbinaryLayer!.getXP() > ownerLayerInterface!.getXP())
                         
                                     {
-                                    this.processAI(Canvas.RIGHT);
+                                    this.processKeyAI(Canvas.RIGHT);
     
 
                                     }
@@ -220,7 +200,7 @@ farAllbinaryLayer= allBinaryLayer;
                         if(farAllbinaryLayer!.getYP() > ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.UP);
+                                    this.processKeyAI(Canvas.UP);
     
 
                                     }
@@ -229,7 +209,7 @@ farAllbinaryLayer= allBinaryLayer;
                         if(farAllbinaryLayer!.getYP() < ownerLayerInterface!.getYP())
                         
                                     {
-                                    this.processAI(Canvas.DOWN);
+                                    this.processKeyAI(Canvas.DOWN);
     
 
                                     }
@@ -247,32 +227,22 @@ farAllbinaryLayer= allBinaryLayer;
 var allBinaryLayer = allBinaryLayer
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var xTotalDistance: number = (allBinaryLayer!.getXP() +allBinaryLayer!.getHalfWidth()) -(ownerLayerInterface!.getXP() +ownerLayerInterface!.getHalfWidth());
-        
-        
 ;
     
 
     var yTotalDistance: number = (allBinaryLayer!.getYP() +allBinaryLayer!.getHalfHeight()) -(ownerLayerInterface!.getYP() +ownerLayerInterface!.getHalfHeight());
-        
-        
 ;
     
 
     var mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 ;
     
 
     var totalDistance: number = mathUtil!.abs(xTotalDistance) +mathUtil!.abs(yTotalDistance);
-        
-        
 ;
     
 

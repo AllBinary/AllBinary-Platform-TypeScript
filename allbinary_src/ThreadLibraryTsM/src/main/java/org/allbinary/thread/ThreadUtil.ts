@@ -46,8 +46,6 @@ export class ThreadUtil
         
 
     private static readonly instance: ThreadUtil = new ThreadUtil();
-        
-        
 
     public static getInstance(): ThreadUtil{
 
@@ -60,12 +58,8 @@ export class ThreadUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly JOIN: string = "join";
-        
-        
 
     public isRunning(thread: Thread): boolean{
 var thread = thread

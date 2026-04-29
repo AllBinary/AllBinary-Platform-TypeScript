@@ -49,12 +49,8 @@ export class InGameFeatureChoiceGroups
         
 
     private gameFeatureChoiceGroupsExclusive: InGameFeatureChoiceGroups = new InGameFeatureChoiceGroups();
-        
-        
 
     private gameFeatureChoiceGroupsMultiple: InGameFeatureChoiceGroups = new InGameFeatureChoiceGroups();
-        
-        
 
     public static getExclusiveInstance(): InGameFeatureChoiceGroups{
 
@@ -76,16 +72,14 @@ export class InGameFeatureChoiceGroups
 }
 
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 private constructor (){
 
             super();
         }
 
 
-    public get(): Hashtable<any, any>{
+    public get(): Hashtable{
 
 
 

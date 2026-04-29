@@ -101,12 +101,8 @@ export class InventorySearch
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly searchRequest: SearchRequest
 public constructor (searchRequest: SearchRequest){
@@ -128,28 +124,20 @@ this.searchRequest= searchRequest;
         try {
             
     var storeFront: StoreFrontInterface = this.searchRequest!.getStoreFront()!;
-        
-        
 ;
     
 
     var searchParams: SearchParams = this.searchRequest!.getParams()!;
-        
-        
 ;
     
 
-    var columnValueHashMap: HashMap<any, any> = searchParams!.get()!;
-        
-        
+    var columnValueHashMap: HashMap = searchParams!.get()!;
 ;
     
 
     var file: string = new StaticPagesEntity().
                             getFile(storeFront!.getName(), new Replace("-", CommonSeps.getInstance()!.SPACE).
-                            all(columnValueHashMap!.get(BasicItemData.KEYWORDS) as String))!;
-        
-        
+                            all( as StringcolumnValueHashMap!.get(BasicItemData.KEYWORDS)))!;
 ;
     
 
@@ -168,8 +156,6 @@ this.searchRequest= searchRequest;
                         else {
                             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(storeFront!.getCurrentHostName());
@@ -189,8 +175,6 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
     var filePath: string = new Replace(CommonSeps.getInstance()!.SPACE, "%20").
                             all(stringBuffer!.toString())!;
-        
-        
 ;
     
 
@@ -218,7 +202,8 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw new Error("Failed retrieve Single Product Page Static")
+                            throw new Error("Failed retrieve Single Product Page Static");
+                    
 }
 
 }
@@ -231,8 +216,6 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
         try {
             
     var str: string[] = search()!;
-        
-        
 ;
     
 
@@ -257,7 +240,8 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw new Error("Failed retrieve Single Product Page Dynamically")
+                            throw new Error("Failed retrieve Single Product Page Dynamically");
+                    
 }
 
 }
@@ -268,20 +252,14 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
     public search(): string[]{
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 
     var inventorySearchUtil: InventorySearchUtil = InventorySearchUtil.getInstance()!;
-        
-        
 ;
     
 
     var vector: Vector = inventorySearchUtil!.getBasicItemIdColumn(this.searchRequest)!;
-        
-        
 ;
     
 
@@ -299,8 +277,6 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 var product = product
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 

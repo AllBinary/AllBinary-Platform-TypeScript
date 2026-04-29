@@ -110,14 +110,10 @@ export class UploadFileServlet extends HttpServlet {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
-    requestHashMap: HashMap<any, any>
+    requestHashMap: HashMap
 
     private fileName: string
 
@@ -128,16 +124,12 @@ var request = request
 var response = response
 
     var isError: boolean = false;
-        
-        
 ;
     
 
     var inputStream: InputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -148,9 +140,7 @@ this.requestHashMap= new MultipartRequestParams(request).
                             toHashMap();
     
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH); as String;
-        
-        
+    var filePath: string =  as Stringthis.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH);;
 ;
     
 
@@ -173,16 +163,12 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
-    var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request); as AuthenticationHelper;
-        
-        
+    var authenticationHelper: AuthenticationHelper =  as AuthenticationHelpernew AuthenticationHelperFactory().
+                            getInstance(hashMap, request);;
 ;
     
 
@@ -271,16 +257,12 @@ var filePath = filePath
     var fileOutputStream: AbFileOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
         try {
             
-    var fileItem: FileItem = this.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA); as FileItem;
-        
-        
+    var fileItem: FileItem =  as FileItemthis.requestHashMap!.get(FileUploadData.getInstance()!.FILE_DATA);;
 ;
     
 
@@ -302,8 +284,6 @@ var filePath = filePath
                                 
 
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +filePath);
-        
-        
 ;
     
 
@@ -312,8 +292,6 @@ var filePath = filePath
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Uploaded File: ");
@@ -333,8 +311,6 @@ HttpFileUploadUtil.log(fileItem);
     
 
     var byteArray: number[] = fileItem!.get()!;
-        
-        
 ;
     
 

@@ -45,8 +45,6 @@ export class GameConfigurationPersistanceSingleton extends KeyValuePersistance {
         
 
     private GAME_PERSISTANCE: GameConfigurationPersistanceSingleton = new GameConfigurationPersistanceSingleton();
-        
-        
 
     public static getInstance(): GameConfigurationPersistanceSingleton{
 

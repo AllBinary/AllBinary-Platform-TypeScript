@@ -49,8 +49,6 @@ export class PlayerStateUtil
         
 
     private static readonly instance: PlayerStateUtil = new PlayerStateUtil();
-        
-        
 
     public static getInstance(): PlayerStateUtil{
 
@@ -63,28 +61,16 @@ export class PlayerStateUtil
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public readonly UNREALIZED: string = "UNREALIZED";
-        
-        
 
     public readonly REALIZED: string = "REALIZED";
-        
-        
 
     public readonly PREFETCHED: string = "PREFETCHED";
-        
-        
 
     public readonly STARTED: string = "STARTED";
-        
-        
 
     public readonly CLOSED: string = "CLOSED";
-        
-        
 
     public convert(state: number): string{
     //var state = state

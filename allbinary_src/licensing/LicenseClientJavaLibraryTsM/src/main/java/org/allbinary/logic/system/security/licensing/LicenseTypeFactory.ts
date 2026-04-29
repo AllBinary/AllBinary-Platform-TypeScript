@@ -48,8 +48,6 @@ export class LicenseTypeFactory
         
 
     private static readonly instance: LicenseTypeFactory = new LicenseTypeFactory();
-        
-        
 
     public static getInstance(): LicenseTypeFactory{
 
@@ -62,16 +60,10 @@ export class LicenseTypeFactory
 
 
     public readonly UNKNOWN: LicenseType = new LicenseType(CommonStrings.getInstance()!.UNKNOWN);
-        
-        
 
     public readonly DEMO: LicenseType = new LicenseType("Demo");
-        
-        
 
     public readonly NORMAL: LicenseType = new LicenseType("Normal");
-        
-        
 
     public getInstance(name: string): LicenseType{
 var name = name

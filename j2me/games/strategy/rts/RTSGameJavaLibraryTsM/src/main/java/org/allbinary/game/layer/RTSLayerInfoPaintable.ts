@@ -52,8 +52,6 @@ export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         
 
     private initUpdatePaintable: InitUpdatePaintable = NullInitUpdatePaintable.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -73,14 +71,14 @@ this.initUpdatePaintable!.paint(graphics);
 }
 
 
-    public updateRTSLayerInfo(hudPaintable: InitUpdatePaintable){
+    public updateRTSLayerInfoInit(hudPaintable: InitUpdatePaintable){
 var hudPaintable = hudPaintable
 this.initUpdatePaintable= hudPaintable;
     
 }
 
 
-    public updateRTSLayerInfo(hudPaintable: SelectionHudPaintable){
+    public updateRTSLayerInfoSelection(hudPaintable: SelectionHudPaintable){
 var hudPaintable = hudPaintable
 hudPaintable!.updateSelectionInfo();
     

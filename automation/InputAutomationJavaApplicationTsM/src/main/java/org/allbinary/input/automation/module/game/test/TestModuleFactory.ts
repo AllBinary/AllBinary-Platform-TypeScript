@@ -58,8 +58,6 @@ export class TestModuleFactory extends AbstractInputAutomationFactory {
         
 
     private NAME: string = "Test New Game" +InputAutomationModuleData.MODULE_NAME_END;
-        
-        
 
     private blankModuleConfigurationJPanel: BlankModuleConfigurationJPanel
 public constructor (){

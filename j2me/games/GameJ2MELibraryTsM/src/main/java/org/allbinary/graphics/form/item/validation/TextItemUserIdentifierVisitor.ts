@@ -59,8 +59,6 @@ export class TextItemUserIdentifierVisitor extends Visitor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -70,9 +68,7 @@ public constructor (){
     public visit(anyType: any = {}): any{
 var anyType = anyType
 
-    var value: string = anyType as String;
-        
-        
+    var value: string =  as StringanyType;
 ;
     
 
@@ -81,14 +77,10 @@ var anyType = anyType
                                     {
                                     
     var charValue: string = value[0]!;
-        
-        
 ;
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -128,8 +120,6 @@ var anyType = anyType
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
@@ -164,9 +154,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
     public isLetter(charValue: string): boolean{
 var charValue = charValue
 
-    var value: number = charValue;
-        
-        
+    var value: number = Math.roundcharValue;
 ;
     
 

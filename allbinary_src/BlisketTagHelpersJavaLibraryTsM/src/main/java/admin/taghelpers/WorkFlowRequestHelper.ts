@@ -73,15 +73,11 @@ export class WorkFlowRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private workFlowInterface: WorkFlowInterface
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -98,16 +94,12 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.getName(), stringUtil!.EMPTY_STRING);
     
 
     var success: string = "Successfully Removed the workflow with " +WorkFlowData.getInstance()!.NAME +"= " +this.workFlowInterface!.getName() +" from ";
-        
-        
 ;
     
 
@@ -133,8 +125,6 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
         try {
             
     var error: string = "Failed to remove workflow with " +WorkFlowData.getInstance()!.NAME +"= " +this.workFlowInterface!.getName() +" from ";
-        
-        
 ;
     
 
@@ -149,15 +139,14 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
 
 
 
-                            throw new Error(e)
+                            throw new Error(e);
+                    
 
                 //: 
 } catch(e2) 
             {
 
     var error: string = "Failed to get data from workflowinterface to set error string";
-        
-        
 ;
     
 
@@ -187,8 +176,6 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
         try {
             
     var success: string = "New User Successfully added to the Users Table";
-        
-        
 ;
     
 
@@ -212,8 +199,6 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
             {
 
     var error: string = "Failed to add User";
-        
-        
 ;
     
 
@@ -241,8 +226,6 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
         try {
             
     var success: string = "Updated WorkFlow Successfully";
-        
-        
 ;
     
 
@@ -266,8 +249,6 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
             {
 
     var error: string = "Failed to update WorkFlow";
-        
-        
 ;
     
 

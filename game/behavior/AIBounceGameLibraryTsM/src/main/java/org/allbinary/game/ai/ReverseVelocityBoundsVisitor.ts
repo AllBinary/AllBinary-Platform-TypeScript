@@ -58,8 +58,6 @@ export class ReverseVelocityBoundsVisitor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     velocityInterface: VelocityInterface
 
@@ -71,12 +69,10 @@ public constructor (layerInterface: LayerInterface){
 this.layerInterface= layerInterface;
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacelayerInterface;
 ;
     
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
+this.velocityInterface=  as VelocityInterfacevelocityInterfaceCompositeInterface!.getVelocityProperties();;
     
 }
 
@@ -104,28 +100,28 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
     public minX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1);
 }
 
 
     public maxX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiply( -1);
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1);
 }
 
 
     public minY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1);
 }
 
 
     public maxY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiply( -1);
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1);
 }
 
 

@@ -95,8 +95,6 @@ export class NameSpaceRequestParams extends RequestParams {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
             super();
                     
@@ -153,33 +151,25 @@ public constructor (pageContext: PageContext){
 
                 //@Throws(Error::class)
             
-    createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
+    createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap): Node{
 var document = document
 var packageName = packageName
 var packagePropertiesHashMap = packagePropertiesHashMap
 
     var node: Node = document.createElement(packageName)!;
-        
-        
 ;
     
 
     var propertyKeySet: Set = packagePropertiesHashMap!.keys!;
-        
-        
 ;
     
 
     var propertyKeySetArray: any[] = propertyKeySet!.toArray()!;
-        
-        
 ;
     
 
     var size: number = propertyKeySetArray!.length
                 ;
-        
-        
 ;
     
 
@@ -188,26 +178,18 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var propertyName: string = propertyKeySetArray[index]! as String;
-        
-        
+    var propertyName: string =  as StringpropertyKeySetArray[index]!;
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object); as String;
-        
-        
+    var propertyValue: string =  as StringpackagePropertiesHashMap!.get(propertyName as Object);;
 ;
     
 
     var propertyNode: Node = ModDomHelper.createTextNode(document, propertyName, propertyValue)!;
-        
-        
 ;
     
 node.appendChild(propertyNode);
@@ -225,39 +207,29 @@ node.appendChild(propertyNode);
 
                 //@Throws(Error::class)
             
-    createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
+    createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap): Node{
 var document = document
 var nameSpaceRequestParam = nameSpaceRequestParam
 var packageName = packageName
 var packagePropertiesHashMap = packagePropertiesHashMap
 
     var beginIndex: number = packageName!.indexOf('[')!;
-        
-        
 ;
     
 
     var indexValue: string = packageName!.substring(beginIndex +1, packageName!.length -1)!;
-        
-        
 ;
     
 
     var multiElementPackage: string = packageName!.substring(0, beginIndex)!;
-        
-        
 ;
     
 
     var selectedValue: string = nameSpaceRequestParam!.getValue()!;
-        
-        
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE); as String;
-        
-        
+    var propertyValue: string =  as StringpackagePropertiesHashMap!.get(DomData.VALUE);;
 ;
     
 
@@ -280,14 +252,10 @@ var packagePropertiesHashMap = packagePropertiesHashMap
                                 
 
     var nextNode: Node = ModDomHelper.createNameValueNodes(document, multiElementPackage, selectedValue)!;
-        
-        
 ;
     
 
     var indexNode: Node = ModDomHelper.createTextNode(document, DomData.INDEX, indexValue)!;
-        
-        
 ;
     
 nextNode!.appendChild(indexNode);
@@ -303,14 +271,12 @@ nextNode!.appendChild(indexNode);
 
                 //@Throws(Error::class)
             
-    getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap<any, any>, document: Document): Node{
+    getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap, document: Document): Node{
 var rootElementPackage = rootElementPackage
 var packagePropertiesHashMap = packagePropertiesHashMap
 var document = document
 
     var rootNode: Node = DomSearchHelper.getNodeNoThrow(rootElementPackage, document.getChildNodes())!;
-        
-        
 ;
     
 
@@ -330,8 +296,6 @@ var document = document
                                 
 
     var node: Node = this.createPackageNode(document, rootElementPackage, packagePropertiesHashMap)!;
-        
-        
 ;
     
 document.appendChild(node);
@@ -378,7 +342,7 @@ document.appendChild(node);
 
                 //@Throws(Error::class)
             
-    addNewProperties(document: Document, node: Node, nextPackagePropertiesHashMap: HashMap<any, any>): Node{
+    addNewProperties(document: Document, node: Node, nextPackagePropertiesHashMap: HashMap): Node{
 var document = document
 var node = node
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
@@ -394,21 +358,15 @@ var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
                                 
 
     var propertyNameSet: Set = nextPackagePropertiesHashMap!.keys!;
-        
-        
 ;
     
 
     var propertyNameSetArray: any[] = propertyNameSet!.toArray()!;
-        
-        
 ;
     
 
     var size: number = propertyNameSetArray!.length
                 ;
-        
-        
 ;
     
 
@@ -417,26 +375,18 @@ var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextPropertyName: string = propertyNameSetArray[index]! as String;
-        
-        
+    var nextPropertyName: string =  as StringpropertyNameSetArray[index]!;
 ;
     
 
-    var propertyValue: string = StringUtil.getInstance()!.getInstance(nextPackagePropertiesHashMap!.get(nextPropertyName as Object) as String)!;
-        
-        
+    var propertyValue: string = StringUtil.getInstance()!.getNonNull( as StringnextPackagePropertiesHashMap!.get(nextPropertyName as Object))!;
 ;
     
 
     var valueNode: Node = DomSearchHelper.getNodeNoThrow(nextPropertyName, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -447,8 +397,6 @@ index < size; index++)
                                     {
                                     
     var existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;
-        
-        
 ;
     
 
@@ -476,7 +424,8 @@ index < size; index++)
 
 
 
-                            throw new Error("Property Modifications Should Not Occur")
+                            throw new Error("Property Modifications Should Not Occur");
+                    
 
                                     }
                                 
@@ -495,8 +444,6 @@ index < size; index++)
                                 
 
     var newPropertyNode: Node = ModDomHelper.createTextNode(document, nextPropertyName, propertyValue)!;
-        
-        
 ;
     
 node.appendChild(newPropertyNode);
@@ -517,7 +464,7 @@ node.appendChild(newPropertyNode);
 
                 //@Throws(Error::class)
             
-    isElementValueTextNodeEqual(nextPackagePropertiesHashMap: HashMap<any, any>, node: Node): boolean{
+    isElementValueTextNodeEqual(nextPackagePropertiesHashMap: HashMap, node: Node): boolean{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
 var node = node
 
@@ -530,15 +477,11 @@ var node = node
                                     }
                                 
 
-    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE); as String;
-        
-        
+    var propertyValue: string =  as StringnextPackagePropertiesHashMap!.get(DomData.VALUE);;
 ;
     
 
     var valueNode: Node = DomSearchHelper.getNodeNoThrow(DomData.VALUE, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -549,8 +492,6 @@ var node = node
                                     {
                                     
     var existingElementNodeTextNodeValue: string = DomNodeHelper.getTextNodeValue(valueNode)!;
-        
-        
 ;
     
 
@@ -599,7 +540,7 @@ var node = node
 
                 //@Throws(Error::class)
             
-    isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: Vector): number{
+    isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap, elementNodeVector: Vector): number{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
 var elementNodeVector = elementNodeVector
 
@@ -613,8 +554,6 @@ var elementNodeVector = elementNodeVector
                                 
 
     var size: number = elementNodeVector!.length!;
-        
-        
 ;
     
 
@@ -623,14 +562,10 @@ var elementNodeVector = elementNodeVector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var existingElementNode: Node = elementNodeVector!.get(index); as Node;
-        
-        
+    var existingElementNode: Node =  as NodeelementNodeVector!.get(index);;
 ;
     
 
@@ -665,20 +600,14 @@ var rootNode = rootNode
 var nameSpaceRequestParam = nameSpaceRequestParam
 
     var node: Node = rootNode;
-        
-        
 ;
     
 
     var packageVector: Vector = nameSpaceRequestParam!.getPackages()!;
-        
-        
 ;
     
 
     var size: number = packageVector!.length!;
-        
-        
 ;
     
 
@@ -687,14 +616,10 @@ var nameSpaceRequestParam = nameSpaceRequestParam
 
                         for (
     var index: number = 1;
-        
-        
 index < size; index++)
         {
 
-    var nextPackageName: string = packageVector!.get(index); as String;
-        
-        
+    var nextPackageName: string =  as StringpackageVector!.get(index);;
 ;
     
 
@@ -708,15 +633,11 @@ index < size; index++)
                                     }
                                 
 
-    var nextPackagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(index)!;
-        
-        
+    var nextPackagePropertiesHashMap: HashMap = nameSpaceRequestParam!.getPackageProperties(index)!;
 ;
     
 
     var elementNodeVector: Vector = DomSearchHelper.getAllNodesNoThrow(nextPackageName, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -730,8 +651,6 @@ index < size; index++)
                                 
 
     var isElementValueTextNodeUniqueIndex: number = this.isElementValueTextNodeUnique(nextPackagePropertiesHashMap, elementNodeVector)!;
-        
-        
 ;
     
 
@@ -740,8 +659,6 @@ index < size; index++)
                                     {
                                     
     var nextNode: Node = this.createPackageNode(document, nextPackageName, nextPackagePropertiesHashMap)!;
-        
-        
 ;
     
 node.appendChild(nextNode);
@@ -777,8 +694,6 @@ this.logUtil!.putF("\nAppended Document Created: " +DomDocumentHelper.toString(d
                                 
 
     var nextNode: Node = this.createPackageMultiNode(document, nameSpaceRequestParam, nextPackageName, nextPackagePropertiesHashMap)!;
-        
-        
 ;
     
 node.appendChild(nextNode);
@@ -808,9 +723,7 @@ node= nextNode;
                                     }
                                 
 
-    var nodeNameDuplicateNode: Node = elementNodeVector!.get(isElementValueTextNodeUniqueIndex); as Node;
-        
-        
+    var nodeNameDuplicateNode: Node =  as NodeelementNodeVector!.get(isElementValueTextNodeUniqueIndex);;
 ;
     
 node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackagePropertiesHashMap);
@@ -856,20 +769,14 @@ var document = document
                                 
 
     var nameSpaceRequestParam: NameSpaceRequestParam = new NameSpaceRequestParam(key, value);
-        
-        
 ;
     
 
     var packageVector: Vector = nameSpaceRequestParam!.getPackages()!;
-        
-        
 ;
     
 
     var size: number = packageVector!.length!;
-        
-        
 ;
     
 
@@ -878,26 +785,18 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var packageName: string = packageVector!.get(index); as String;
-        
-        
+    var packageName: string =  as StringpackageVector!.get(index);;
 ;
     
 
-    var packagePropertiesHashMap: HashMap<any, any> = nameSpaceRequestParam!.getPackageProperties(packageVector!.indexOf(packageName))!;
-        
-        
+    var packagePropertiesHashMap: HashMap = nameSpaceRequestParam!.getPackageProperties(packageVector!.indexOf(packageName))!;
 ;
     
 
     var rootNode: Node = this.getRootNode(packageName, packagePropertiesHashMap, document)!;
-        
-        
 ;
     
 
@@ -908,7 +807,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.addChildren(document, rootNode as Node, nameSpaceRequestParam);;
+                        return this.addChildren(document,  as NoderootNode, nameSpaceRequestParam);;
     
 
                                     }
@@ -926,36 +825,26 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var keys: Set = this.getMap()!.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var keySize: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -973,26 +862,18 @@ index < size; index++)
 
                         for (
     var i: number = 0;
-        
-        
 i < keySize; i++)
         {
 
-    var key: string = keyArray[i]! as String;
-        
-        
+    var key: string =  as StringkeyArray[i]!;
 ;
     
 
     var anyType: any = this.getMap()!.get(key)!;
-        
-        
 ;
     
 
-    var className: string = anyType!.constructor.name.toString()!; as String;
-        
-        
+    var className: string =  as StringanyType!.constructor.name.toString()!;;
 ;
     
 
@@ -1009,9 +890,7 @@ i < keySize; i++)
                         
                                     {
                                     
-    var value: string = this.getMap()!.get(key); as String;
-        
-        
+    var value: string =  as Stringthis.getMap()!.get(key);;
 ;
     
 
@@ -1054,9 +933,7 @@ hashMap!.put(key.toCharArray()
                         
                                     {
                                     
-    var values: string[] = this.getMap()!.get(key); as Array<String?>;
-        
-        
+    var values: string[] =  as Array<String?>this.getMap()!.get(key);;
 ;
     
 

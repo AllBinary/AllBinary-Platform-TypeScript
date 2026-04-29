@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NullServiceReference } from "./NullServiceReference.js";
+
 export class NullServiceReferenceFactory
             extends Object
          {
         
 
     private static readonly instance: NullServiceReferenceFactory = new NullServiceReferenceFactory();
-        
-        
 
     public static getInstance(): NullServiceReferenceFactory{
 
@@ -57,8 +57,6 @@ export class NullServiceReferenceFactory
 
 
     public NULL_SERVICE_REFERENCE: NullServiceReference = new NullServiceReference();
-        
-        
 
 }
                 

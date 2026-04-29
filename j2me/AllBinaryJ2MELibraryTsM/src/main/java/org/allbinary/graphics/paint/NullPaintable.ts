@@ -43,8 +43,6 @@ export class NullPaintable extends Paintable {
         
 
     private static readonly SINGLETON: NullPaintable = new NullPaintable();
-        
-        
 
     public static getInstance(): Paintable{
 

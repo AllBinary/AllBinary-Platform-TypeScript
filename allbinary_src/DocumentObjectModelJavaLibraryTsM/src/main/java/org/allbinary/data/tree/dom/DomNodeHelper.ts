@@ -60,8 +60,6 @@ export class DomNodeHelper
 var parentNode = parentNode
 
     var node: Node = parentNode!.getFirstChild()!;
-        
-        
 ;
     
 
@@ -72,8 +70,6 @@ var parentNode = parentNode
                                     {
                                     
     var nodeList: NodeList = parentNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -82,8 +78,6 @@ var parentNode = parentNode
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 node= nodeList!.item(index);
@@ -116,8 +110,6 @@ node= nodeList!.item(index);
 var node = node
 
     var nodeTextNode: Node = node.getFirstChild()!;
-        
-        
 ;
     
 
@@ -155,8 +147,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
-        
-        
 ;
     
 
@@ -172,14 +162,10 @@ var nodeList = nodeList
 var node = node
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
@@ -188,14 +174,10 @@ var node = node
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var nodeTextNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 

@@ -53,9 +53,6 @@ import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/lay
 import { NullPathFindingLayer } from "../../../../../org/allbinary/game/layer/NullPathFindingLayer.js";
 
     
-import { NullRTSLayer } from "../../../../../org/allbinary/game/layer/NullRTSLayer.js";
-
-    
 import { GameNotificationEvent } from "../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
 
     
@@ -118,11 +115,9 @@ public constructor (groupInterface: Group[], isUnitProducer: boolean){
                     
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 ;
     
-this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Build At Least One House First", SmallIntegerSingletonFactory.getInstance()!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
 }
 
@@ -134,15 +129,11 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
@@ -183,21 +174,15 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerInterface = layerInterface
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
-        
-        
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
 ;
     
 
     var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;
-        
-        
 ;
     
 
     var totalHouses: number = advancedPlayerOwnedRTSLayers!.getHouseList()!.size()!;
-        
-        
 ;
     
 
@@ -234,8 +219,6 @@ var layerInterface = layerInterface
 
 
     private readonly BUILD_BUILDING_RTS_LAYER_EVENT: RTSLayerEvent = new RTSLayerEvent(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
-        
-        
 
                 //@Throws(Error::class)
             

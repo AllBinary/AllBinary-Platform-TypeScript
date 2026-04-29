@@ -44,8 +44,6 @@ export class ColorChangeEventHandler extends BasicEventHandler {
         
 
     private static readonly eventHandler: ColorChangeEventHandler = new ColorChangeEventHandler();
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): ColorChangeEventHandler{

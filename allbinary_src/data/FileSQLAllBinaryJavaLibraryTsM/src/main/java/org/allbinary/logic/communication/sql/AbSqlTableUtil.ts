@@ -104,8 +104,6 @@ export class AbSqlTableUtil
         
 
     private static readonly instance: AbSqlTableUtil = new AbSqlTableUtil();
-        
-        
 
     public static getInstance(): AbSqlTableUtil{
 
@@ -118,108 +116,56 @@ export class AbSqlTableUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private EXTENSION: string = ".adb";
-        
-        
 
     private readonly END: string = "')\n";
-        
-        
 
     private readonly SAVING_BACKUP_PATH: string = "Saving Backup: Path: ";
-        
-        
 
     private readonly FILE_LABEL: string = " File: ";
-        
-        
 
     private readonly METHOD_RESTORE_TABLE: string = "restoreTable()";
-        
-        
 
     private readonly METHOD_BACKUP_TABLE: string = "backupTable()";
-        
-        
 
     private readonly METHOD_BACKUP_FILE: string = "backupFile()";
-        
-        
 
     private readonly METHOD_GET_OUTPUT_STREAM: string = "getOutputStream()";
-        
-        
 
     private readonly TABLE_CREATION_SUCCESS: string = "Table Creation Successful: ";
-        
-        
 
     private readonly DROPPED_SUCCESS: string = " Dropped Successfully";
-        
-        
 
     private readonly SAVING: string = "Saving: ";
-        
-        
 
     private readonly APPENDING: string = "Appending: ";
-        
-        
 
     private readonly TABLE_LABEL: string = "Table: ";
-        
-        
 
     private readonly BACKUP_SUCCESS: string = " Backup Success";
-        
-        
 
     private readonly ERROR_CREATING: string = "Error Creating: ";
-        
-        
 
     private readonly TOTAL_LABEL: string = " Total: ";
-        
-        
 
     private readonly SECTION_LABEL: string = " Section: ";
-        
-        
 
     private readonly DASH: string = " - ";
-        
-        
 
     private readonly PORTION_RESTORED: string = " Portion Restored";
-        
-        
 
-    private readonly specialCharArray: string[] = charArrayOf('\n','\f','\r');
-        
-        
+    private readonly specialCharArray: string[] = ['\n','\f','\r'];
 
     private readonly NEW_LINE: string = "\\n";
-        
-        
 
     readonly stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getOutputStream(backupPath: string, tableName: string): OutputStream{
@@ -229,8 +175,6 @@ var tableName = tableName
         try {
             
     var fileName: string = tableName +this.EXTENSION;
-        
-        
 ;
     
 
@@ -244,14 +188,10 @@ var tableName = tableName
                                 
 
     var backupFilePath: AbPath = new AbPath(backupPath, fileName);
-        
-        
 ;
     
 
     var backupFile: AbFile = new AbFile(backupFilePath);
-        
-        
 ;
     
 
@@ -269,8 +209,6 @@ backupFile!.createNewFile();
     
 
     var outputStream: OutputStream = new AbFileOutputStream(backupFile);
-        
-        
 ;
     
 
@@ -312,32 +250,22 @@ var tableName = tableName
         try {
             
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var timeLong: Long = calendar.getTimeInMillis() as Long;
-        
-        
+    var timeLong: number = calendar.getTimeInMillis();
 ;
     
 
     var time: string = timeLong!.toString()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var fileName: string = tableName +this.EXTENSION;
-        
-        
 ;
     
 stringBuffer!.append(backupPath);
@@ -348,8 +276,6 @@ stringBuffer!.append(time);
     
 
     var backupAbPath: AbPath = new AbPath(stringBuffer!.toString());
-        
-        
 ;
     
 
@@ -375,8 +301,6 @@ Directory.create(backupAbPath);
     
 
     var backupFileBak: AbFile = new AbFile(backupAbPath!.toFileSystemString());
-        
-        
 ;
     
 backupFileBak!.createNewFile();
@@ -417,20 +341,14 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
 var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var lastIndex: number = 0;
-        
-        
 ;
     
 
@@ -444,8 +362,6 @@ index= value.indexOf(specialCharArray[0]!, lastIndex);
                                     {
                                     
     var nextLine: string = value.substring(lastIndex, index -1)!;
-        
-        
 ;
     
 stringBuffer!.append(nextLine);
@@ -489,28 +405,20 @@ lastIndex= index +1;
 var abSqlTable = abSqlTable
 
     var tableName: string = abSqlTable!.getTableName()!;
-        
-        
 ;
     
 
         try {
             
     var count: number = 0;
-        
-        
 ;
     
 
     var sqlStatement: string = this.sqlStrings!.SELECT_ALL_FROM +tableName;
-        
-        
 ;
     
 
     var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;
-        
-        
 ;
     
 
@@ -531,39 +439,27 @@ var abSqlTable = abSqlTable
                                 
 
     var rset: ResultSet = abSqlTable!.executeSQLStatement(sqlStatement)!;
-        
-        
 ;
     
 
     var rsmd: ResultSetMetaData = rset.getMetaData()!;
-        
-        
 ;
     
 
     var colNum: number = rsmd.getColumnCount()!;
-        
-        
 ;
     
 
     var QUERY_START: string = new StringBuilder().
                             append(this.sqlStrings!.INSERT_INTO)!.append(tableName)!.append(this.sqlStrings!.VALUES)!.toString()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var outputStream: OutputStream = this.getOutputStream(path, tableName)!;
-        
-        
 ;
     
 
@@ -579,14 +475,10 @@ stringBuffer!.append(QUERY_START);
 
                         for (
     var i: number = 1;
-        
-        
 i < colNum; i++)
         {
 
     var value: string = rset.getString(i)!;
-        
-        
 ;
     
 stringBuffer!.append(this.convertNewLines(value));
@@ -601,8 +493,6 @@ stringBuffer!.append(this.END);
     
 
     var sqlStatementLine: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -656,22 +546,16 @@ var abSqlTable = abSqlTable
 var portion = portion
 
     var tableName: string = abSqlTable!.getTableName()!;
-        
-        
 ;
     
 
         try {
             
     var path: string = org.allbinary.globals.URLGLOBALS.getMainPath() +PATH_GLOBALS.getInstance()!.BACKUP_PATH;
-        
-        
 ;
     
 
     var current: number = portion.getCurrent()!.toInt()!;
-        
-        
 ;
     
 
@@ -699,38 +583,26 @@ var portion = portion
                                 
 
     var backupFile: AbFile = new AbFile(path, tableName +this.EXTENSION);
-        
-        
 ;
     
 
     var bufferedLineReader: BufferedLineReader = new BufferedLineReader(backupFile);
-        
-        
 ;
     
 
     var size: number = bufferedLineReader!.getSize()!;
-        
-        
 ;
     
 
     var section: number = size /portion.getTotal()!.toInt() +1;
-        
-        
 ;
     
 
     var start: number = section *current;
-        
-        
 ;
     
 
     var end: number = start +section;
-        
-        
 ;
     
 
@@ -744,8 +616,6 @@ var portion = portion
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.TOTAL_LABEL);
@@ -773,8 +643,6 @@ bufferedLineReader!.readUpToLines(start);
     
 
     var line: string = this.stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -822,8 +690,6 @@ stringBuffer!.append(this.PORTION_RESTORED);
                                 
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.TABLE_LABEL);

@@ -48,7 +48,7 @@ export interface HealthInterface {
 
     heal(ahealth: number)
 
-    heal()
+    healMax()
 
     getMaxHealth(): number
 

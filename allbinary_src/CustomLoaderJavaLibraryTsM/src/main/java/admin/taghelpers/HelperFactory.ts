@@ -68,7 +68,7 @@ export class HelperFactory
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap, httpServletRequest: HttpServletRequest): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -76,42 +76,32 @@ export class HelperFactory
     //var httpServletRequest = httpServletRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var params: any[] = new Array(2);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(2);
-        
-        
 ;
     
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
-        
-        
 ;
     
 classes[0]= hashMap!constructor;
     
 classes[1]= abeFactory!constructor;
     
-params[0]= hashMap as Object;
+params[0]=  as ObjecthashMap;
     
-params[1]= httpServletRequest as Object;
+params[1]=  as ObjecthttpServletRequest;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
-        
-        
 ;
     
 
@@ -126,8 +116,6 @@ params[1]= httpServletRequest as Object;
             {
 
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" HttpServletRequest=" +httpServletRequest;
-        
-        
 ;
     
 
@@ -142,7 +130,8 @@ params[1]= httpServletRequest as Object;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -150,8 +139,6 @@ params[1]= httpServletRequest as Object;
             {
 
     var error: string = "Failed To Get Instance";
-        
-        
 ;
     
 
@@ -176,7 +163,7 @@ params[1]= httpServletRequest as Object;
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -184,42 +171,32 @@ params[1]= httpServletRequest as Object;
     //var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var params: any[] = new Array(2);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(2);
-        
-        
 ;
     
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
-        
-        
 ;
     
 classes[0]= hashMap!constructor;
     
 classes[1]= abeFactory!constructor;
     
-params[0]= hashMap as Object;
+params[0]=  as ObjecthashMap;
     
-params[1]= pageContext as Object;
+params[1]=  as ObjectpageContext;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
-        
-        
 ;
     
 
@@ -238,8 +215,6 @@ params[1]= pageContext as Object;
                                     {
                                     
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;
-        
-        
 ;
     
 logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -250,7 +225,8 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -262,8 +238,6 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -284,7 +258,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
                 //@Throws(LicensingException::class)
             
-    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap, specialhashMap: HashMap, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
     //var factoryName = factoryName
     //var className = className
@@ -293,28 +267,20 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     //var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var params: any[] = new Array(3);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(3);
-        
-        
 ;
     
 
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
-        
-        
 ;
     
 classes[0]= hashMap!constructor;
@@ -323,16 +289,14 @@ classes[1]= specialhashMap!constructor;
     
 classes[2]= abeFactory!constructor;
     
-params[0]= hashMap as Object;
+params[0]=  as ObjecthashMap;
     
-params[1]= specialhashMap as Object;
+params[1]=  as ObjectspecialhashMap;
     
-params[2]= pageContext as Object;
+params[2]=  as ObjectpageContext;
     
 
     var anyType: any = abeFactory!.getInstance(abeClientInformation, className, classes, params)!;
-        
-        
 ;
     
 
@@ -351,8 +315,6 @@ params[2]= pageContext as Object;
                                     {
                                     
     var error: string = "Failed To Get Instance Args: HashMap=" +hashMap!.toString() +" PageContext=" +pageContext;
-        
-        
 ;
     
 logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -363,7 +325,8 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -375,8 +338,6 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -403,16 +364,12 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     //var className = className
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className)!;
-        
-        
 ;
     
 
@@ -431,8 +388,6 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -443,7 +398,8 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -455,8 +411,6 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInstance(String, String, HashMap, PageContext)", e);
@@ -476,8 +430,6 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();

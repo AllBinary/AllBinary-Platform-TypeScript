@@ -97,8 +97,6 @@ this.init();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
@@ -113,22 +111,16 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
         try {
             
     var sunJce: Provider = new com.sun.crypto.provider.SunJCE();
-        
-        
 ;
     
 Security.addProvider(sunJce);
     
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, this.key)!;
-        
-        
 ;
     
 
     var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;
-        
-        
 ;
     
 this.secretKey= keyFactory!.generateSecret(keySpec);
@@ -141,8 +133,6 @@ this.cipher= Cipher.getInstance(this.algorithm);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
@@ -160,20 +150,14 @@ var array = array
     
 
     var ivArray: number[] = secretKey!.getEncoded()!;
-        
-        
 ;
     
 
     var encrypted: number[] = this.cipher.doFinal(array)!;
-        
-        
 ;
     
 
     var result: number[] = new Array(ivArray!.length +encrypted.length);
-        
-        
 ;
     
 PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
@@ -184,8 +168,6 @@ PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
 
                         for (
     var index: number = 0;
-        
-        
 index < ivArray!.length; index++)
         {
 result[index]= ivArray[index]!;
@@ -198,8 +180,6 @@ result[index]= ivArray[index]!;
 
                         for (
     var index: number = 0;
-        
-        
 index < encrypted.length; index++)
         {
 result[index +ivArray!.length]= encrypted[index]!;
@@ -237,8 +217,6 @@ var array = array
     
 
     var ivArray: number[] = new Array(8);
-        
-        
 ;
     
 
@@ -247,8 +225,6 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < 8; index++)
         {
 ivArray[index]= array[index]!;
@@ -259,8 +235,6 @@ PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
     
 
     var result: number[] = new Array(array.length -ivArray!.length);
-        
-        
 ;
     
 
@@ -270,8 +244,6 @@ PreLogUtil.put("ivArray Length: " +ivArray!.length, this, "encrypt");
                         for (
     var index: number = ivArray!.length
                 ;
-        
-        
 index < array.length; index++)
         {
 result[index -ivArray!.length]= array[index]!;
@@ -280,8 +252,6 @@ result[index -ivArray!.length]= array[index]!;
 
 
     var decrypted: number[] = this.cipher.doFinal(result)!;
-        
-        
 ;
     
 

@@ -62,8 +62,6 @@ export class SelectNewView extends PaymentGatewayViewAbstract {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -81,20 +79,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var paymentGatewayEntityInterface: PaymentGatewayEntityInterface = PaymentGatewayEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var existingGateways: Vector = paymentGatewayEntityInterface!.findPaymentTypeVectorByStore(this.getPaymentGatewayPrimaryKey()!.getStoreName())!;
-        
-        
 ;
     
 
     var allGatewaysLessExisting: Vector = BasicPaymentTypeUtil.getInstance()!.difference(existingGateways)!;
-        
-        
 ;
     
 
@@ -120,7 +112,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

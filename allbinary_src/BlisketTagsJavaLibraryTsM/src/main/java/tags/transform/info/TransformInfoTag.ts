@@ -68,8 +68,6 @@ export class TransformInfoTag extends ModifyTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string
 

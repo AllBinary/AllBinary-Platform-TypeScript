@@ -68,8 +68,6 @@ this.setAvgBlue(0);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("getAvgRed(): ");

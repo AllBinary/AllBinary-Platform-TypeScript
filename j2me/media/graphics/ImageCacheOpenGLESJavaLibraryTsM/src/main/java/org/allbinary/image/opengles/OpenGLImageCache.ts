@@ -79,28 +79,16 @@ export class OpenGLImageCache extends ImageCache {
         
 
     private readonly imageCache: ImageCache = ImageCacheFactory.getInstance()!;
-        
-        
 
     private readonly preResourceImageUtil: PreResourceImageUtil = PreResourceImageUtil.getInstance()!;
-        
-        
 
     private gl: GL10 = NullGL10.NULL_GL10;
-        
-        
 
     private readonly lock: SynchObject = new SynchObject();
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private renderer: AllBinaryRendererBase3 = new AllBinaryRendererBase3();
-        
-        
 public constructor (){
 
             super();
@@ -109,7 +97,7 @@ public constructor (){
 
     public addListener(renderer: any = {}){
 var renderer = renderer
-this.renderer= renderer as AllBinaryRendererBase3;
+this.renderer=  as AllBinaryRendererBase3renderer;
     
 }
 
@@ -133,14 +121,10 @@ this.gl= gl;
 
                         for (
     var index: number = this.list.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var openGLESImage: OpenGLESImage = (this.list.objectArray[index]! as OpenGLESImage);
-        
-        
+    var openGLESImage: OpenGLESImage = ( as OpenGLESImagethis.list.objectArray[index]!);
 ;
     
 
@@ -167,8 +151,6 @@ var width = width
 var height = height
 
     var textureSize: number = width;
-        
-        
 ;
     
 
@@ -193,14 +175,10 @@ height= textureSize;
     
 
     var image2: Image = this.imageCache!.get(caller, width, height)!;
-        
-        
 ;
     
 
     var image: Image = this.preResourceImageUtil!.encapsulate(image2)!;
-        
-        
 ;
     
 
@@ -232,19 +210,15 @@ height= textureSize;
 
                 //@Throws(Error::class)
             
-    createImage(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 
-    var cachedImage: Image = this.imageCache!.get(key)!;
-        
-        
+    var cachedImage: Image = this.imageCache!.getWithKey(key)!;
 ;
     
 
     var image: Image = this.preResourceImageUtil!.encapsulate(cachedImage)!;
-        
-        
 ;
     
 
@@ -302,7 +276,8 @@ height= textureSize;
                                     
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 

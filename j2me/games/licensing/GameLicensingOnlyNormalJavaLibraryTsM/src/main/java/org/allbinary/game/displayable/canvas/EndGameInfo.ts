@@ -52,20 +52,12 @@ export class EndGameInfo
         
 
     private readonly NORMAL_GAME_OVER: string = "Game Over";
-        
-        
 
     readonly NORMAL_GAME_OVER_WIN: string = "You Won";
-        
-        
 
     private gameOverStr: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private winStr: string = this.gameOverStr;
-        
-        
 public constructor (){
 
             super();

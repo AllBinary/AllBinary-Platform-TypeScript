@@ -44,12 +44,8 @@ export class RaceTrackGameFeature extends GameFeature {
         
 
     public static readonly MINI_MAP: GameFeature = new RaceTrackGameFeature("Mini Map");
-        
-        
 
     public static readonly AUTO_FINISH_AI: GameFeature = new RaceTrackGameFeature("Auto Finish AI");
-        
-        
 protected constructor (name: string){
             super(name);
                     var name = name

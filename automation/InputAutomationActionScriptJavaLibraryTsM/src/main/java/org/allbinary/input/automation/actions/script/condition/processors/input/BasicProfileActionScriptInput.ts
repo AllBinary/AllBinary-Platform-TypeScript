@@ -92,8 +92,6 @@ export class BasicProfileActionScriptInput extends BasicProfileActionScriptProce
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private inputRobotInterface: InputRobotInterface
 
@@ -110,20 +108,14 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
     
 
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.TYPE, node.getChildNodes())!;
-        
-        
 ;
     
 
     var inputTypeString: string = DomNodeHelper.getTextNodeValue(actionNode)!;
-        
-        
 ;
     
 
     var timeNode: Node = DomSearchHelper.getNodeNoThrow(GenericProfileActionScriptInputData.DELAY, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -134,8 +126,6 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
                                     {
                                     
     var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;
-        
-        
 ;
     
 this.setTime(Integer.valueOf(delayString)!.toInt());
@@ -164,29 +154,21 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
     
 
     var inputRobotFactory: InputRobotFactory = InputRobotFactory.getInstance()!;
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any> = inputRobotFactory!.get(); as Hashtable<any, any>;
-        
-        
+    var hashtable: Hashtable =  as HashtableinputRobotFactory!.get();;
 ;
     
 
     var set: Set = hashtable.keys!;
-        
-        
 ;
     
 
     var iterator: Iterator = set.iterator()!;
-        
-        
 ;
     
-this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String));
+this.setInputRobotInterface(inputRobotFactory!.get( as Stringiterator.next()));
     
 this.setTime(0);
     
@@ -210,11 +192,9 @@ this.time= time;
 }
 
 
-    public BasicProfileActionScriptInput_toHashMap(): HashMap<any, any>{
+    public BasicProfileActionScriptInput_toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(GenericProfileActionScriptInputData.TYPE, this.getInputRobotInterface()!.getName());
@@ -238,8 +218,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 var document = document
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;
-        
-        
 ;
     
 
@@ -271,8 +249,6 @@ this.inputRobotInterface= inputRobotInterface;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());

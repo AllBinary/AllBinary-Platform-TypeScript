@@ -63,8 +63,6 @@ export class ImageArrayRotationUtil
         
 
     private static readonly instance: ImageArrayRotationUtil = new ImageArrayRotationUtil();
-        
-        
 
     public static getInstance(): ImageArrayRotationUtil{
 
@@ -77,16 +75,10 @@ export class ImageArrayRotationUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly TOTAL_ANGLE: string = "totalAngle: ";
-        
-        
 
                 //@Throws(IOException::class)
             
@@ -95,7 +87,7 @@ export class ImageArrayRotationUtil
     //var input = input
     //var visitor = visitor
 
-    var totalAngle: Integer
+    var totalAngle: number
 ;
     
 
@@ -128,8 +120,6 @@ export class ImageArrayRotationUtil
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
@@ -138,8 +128,6 @@ export class ImageArrayRotationUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);

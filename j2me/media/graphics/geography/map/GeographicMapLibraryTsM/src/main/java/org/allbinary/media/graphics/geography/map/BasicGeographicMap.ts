@@ -58,11 +58,13 @@ import { SimpleGeographicMap } from "./SimpleGeographicMap.js";
 
 import { GeographicMapInterface } from "./GeographicMapInterface.js";
 
+import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
+
 import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
 
-import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
-
 import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+
+import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
 
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
@@ -70,25 +72,19 @@ import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCel
 
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
-import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-
 export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {
         
 
     public static readonly NULL_BASIC_GEOGRAPHIC_MAP_ARRAY: BasicGeographicMap[] = [];
-        
-        
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     private readonly geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory
 
     private readonly geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface
 
     private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory
-public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
+public constructor (id: number, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
             super(id, name, cellTypeIdToGeographicMapCellType, tiledLayer, foregroundBasicColor, backgroundBasicColor);
                         //var id = id
     //var name = name
@@ -124,34 +120,35 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 }
 1 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 }
 2 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 }
 3 -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 }
 else -> {
 
 
-                            throw new Error("Only Four Directions")
+                            throw new Error("Only Four Directions");
+                    
 }
 
         }       
@@ -176,7 +173,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 
                                     }
@@ -200,7 +197,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 
                                     }
@@ -224,7 +221,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 
                                     }
@@ -248,7 +245,7 @@ else -> {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
+                        return geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 
                                     }
@@ -289,8 +286,6 @@ else -> {
 
                         for (
     var index: number = 0;
-        
-        
 index < 4; index++)
         {
 
@@ -319,55 +314,43 @@ index < 4; index++)
 
                 //@Throws(Error::class)
             
-    public getCellPositionAt(x: number, y: number): GeographicMapCellPosition{
+    public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
     //var x = x
     //var y = y
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
-        
-        
 ;
     
 
     var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);;
+                        return geographicMapCellPositionFactory!.getAt(i_column, i_row);;
     
 }
 
 
-    public getCellPositionAtNoThrow(x: number, y: number): GeographicMapCellPosition{
+    public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
     //var x = x
     //var y = y
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var i_column: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
-        
-        
 ;
     
 
     var i_row: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
-        
-        
 ;
     
 
@@ -380,7 +363,7 @@ index < 4; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return geographicMapCellPositionFactory!.getInstance(i_column, i_row);;
+                        return geographicMapCellPositionFactory!.getAt(i_column, i_row);;
     
 
                 //: 
@@ -416,20 +399,14 @@ index < 4; index++)
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var i_column: number = geographicMapCellPosition!.getColumn()!;
-        
-        
 ;
     
 
     var i_row: number = geographicMapCellPosition!.getRow()!;
-        
-        
 ;
     
 
@@ -470,32 +447,22 @@ geographicMapCellPositionList!.clear();
     
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var i_columnMin: number = this.mathUtil!.abs(x /allBinaryTiledLayer!.getCellHeight())!;
-        
-        
 ;
     
 
     var i_rowMin: number = this.mathUtil!.abs(y /allBinaryTiledLayer!.getCellWidth())!;
-        
-        
 ;
     
 
     var i_columnMax: number = this.mathUtil!.abs(x2 /allBinaryTiledLayer!.getCellHeight()) +1;
-        
-        
 ;
     
 
     var i_rowMax: number = this.mathUtil!.abs(y2 /allBinaryTiledLayer!.getCellWidth()) +1;
-        
-        
 ;
     
 
@@ -504,8 +471,6 @@ geographicMapCellPositionList!.clear();
 
                         for (
     var columnIndex: number = i_columnMin;
-        
-        
 columnIndex < i_columnMax; columnIndex++)
         {
 
@@ -514,15 +479,13 @@ columnIndex < i_columnMax; columnIndex++)
 
                         for (
     var rowIndex: number = i_rowMin;
-        
-        
 rowIndex < i_rowMax; rowIndex++)
         {
 
                         if(allBinaryTiledLayer!.getColumns() > columnIndex && allBinaryTiledLayer!.getRows() > rowIndex)
                         
                                     {
-                                    geographicMapCellPositionList!.add(geographicMapCellPositionFactory!.getInstance(columnIndex, rowIndex));
+                                    geographicMapCellPositionList!.add(geographicMapCellPositionFactory!.getAt(columnIndex, rowIndex));
     
 
                                     }
@@ -548,34 +511,24 @@ rowIndex < i_rowMax; rowIndex++)
     //var cellPositionArray = cellPositionArray
 
     var hasChanged: boolean = false;
-        
-        
 ;
     
 
     var size: number = cellPositionArray!.length
                 ;
-        
-        
 ;
     
 
     var size2: number = cellPositionArray[0]!.length
                 ;
-        
-        
 ;
     
 
     var xPortion: number = layer.getXP() /(size -1);
-        
-        
 ;
     
 
     var yPortion: number = layer.getYP() /(size -1);
-        
-        
 ;
     
 
@@ -584,8 +537,6 @@ rowIndex < i_rowMax; rowIndex++)
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -594,23 +545,17 @@ index < size; index++)
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; index2++)
         {
 
     var x: number = xPortion *index;
-        
-        
 ;
     
 
     var y: number = yPortion *index;
-        
-        
 ;
     
-cellPositionArray[index]![index2]= this.getCellPositionAt(x, y);
+cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
     
 
                         if(currentCellPositionArray[index]![index2] != cellPositionArray[index]![index2])
@@ -636,13 +581,11 @@ cellPositionArray[index]![index2]= this.getCellPositionAt(x, y);
 
                 //@Throws(Error::class)
             
-    public getCellTypeAt(x: number, y: number): GeographicMapCellType{
+    public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 var x = x
 var y = y
 
-    var cellPosition: GeographicMapCellPosition = this.getCellPositionAt(x, y)!;
-        
-        
+    var cellPosition: GeographicMapCellPosition = this.getCellPositionAtXY(x, y)!;
 ;
     
 

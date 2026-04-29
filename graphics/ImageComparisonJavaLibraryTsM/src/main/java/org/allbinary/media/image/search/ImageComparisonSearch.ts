@@ -61,12 +61,8 @@ export class ImageComparisonSearch
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public isSameHeight: boolean= false
 
@@ -87,8 +83,6 @@ export class ImageComparisonSearch
     private bufferedImages: BufferedImage[]
 
     private matchingPercent: number =  -1;
-        
-        
 public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage, tolerance: number){
 
             super();
@@ -161,8 +155,6 @@ this.imageWidth= bufferedImage!.getWidth();
                                     {
                                     
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR);

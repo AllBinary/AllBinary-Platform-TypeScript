@@ -58,15 +58,13 @@ export class PaymentProcessHelper extends TagHelper {
         
 
     private paymentProcessorComponent: PaymentProcessorComponent
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
 
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
 
-    var transformInfoInterface: TransformInfoHttpInterface = TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoHttpInterface;
-        
-        
+    var transformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfaceTransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext);;
 ;
     
 this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInterface);

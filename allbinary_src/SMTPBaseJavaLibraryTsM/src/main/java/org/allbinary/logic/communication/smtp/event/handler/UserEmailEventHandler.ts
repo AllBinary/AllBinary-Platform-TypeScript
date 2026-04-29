@@ -90,8 +90,6 @@ this.fireEmailEvent();
 var vector = vector
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -100,14 +98,10 @@ var vector = vector
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index); as UserEmailEventListenerInterface;
-        
-        
+    var userEmailEventListenerInterface: UserEmailEventListenerInterface =  as UserEmailEventListenerInterfacevector.get(index);;
 ;
     
 this.addListener(userEmailEventListenerInterface);
@@ -139,14 +133,10 @@ this.emailVector!.remove(emailEventListenerInterface);
     public fireEmailEvent(){
 
     var emailEvent: EmailEvent = new EmailEvent(this, this.userEmailEventNameData, this.emailInfo, 0);
-        
-        
 ;
     
 
     var size: number = this.emailVector!.length!;
-        
-        
 ;
     
 
@@ -155,14 +145,10 @@ this.emailVector!.remove(emailEventListenerInterface);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index); as UserEmailEventListenerInterface;
-        
-        
+    var emailEventListenerInterface: UserEmailEventListenerInterface =  as UserEmailEventListenerInterfacethis.emailVector!.get(index);;
 ;
     
 emailEventListenerInterface!.onEmailSendRequest(emailEvent);

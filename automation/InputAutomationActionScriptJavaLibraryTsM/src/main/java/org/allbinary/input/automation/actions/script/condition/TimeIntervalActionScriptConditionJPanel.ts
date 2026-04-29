@@ -57,16 +57,16 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JLabel } from "./JLabel.js";
+
+import { JButton } from "./JButton.js";
+
 export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface
 public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface){
@@ -155,7 +155,7 @@ this.titleJLabel!.setText("Time Interval Condition Options");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -171,8 +171,6 @@ this.jLabel2!.setText("Time (ms):");
     
 
     var timeIntervalActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.timeIntervalActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.timeIntervalActionJDialog!.getContentPane()!.setLayout(timeIntervalActionJDialogLayout);
@@ -185,7 +183,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.timeIntervalActionJButton!.setText("Edit");
     
-timeIntervalActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+timeIntervalActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -201,8 +199,6 @@ this.jLabel1!.setText("Time Interval:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

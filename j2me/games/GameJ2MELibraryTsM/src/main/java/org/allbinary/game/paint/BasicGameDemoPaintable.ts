@@ -59,8 +59,6 @@ export class BasicGameDemoPaintable extends StatePaintable {
     private readonly helpPaintableInterface: Paintable
 
     private currentStatePaintable: Paintable = NullPaintable.getInstance()!;
-        
-        
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable){
 
             super();

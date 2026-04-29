@@ -53,14 +53,10 @@ import { Log } from "./Log.js";
     /*actual*/ public static getInstanceD(): Log{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -105,8 +101,6 @@ var exception = exception
     //var functionName = functionName
 
     var nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 ;
     
 

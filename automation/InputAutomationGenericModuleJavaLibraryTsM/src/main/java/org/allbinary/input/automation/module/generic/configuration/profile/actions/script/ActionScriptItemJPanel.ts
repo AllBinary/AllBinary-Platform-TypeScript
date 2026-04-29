@@ -151,8 +151,6 @@ this.newActionScriptInputJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
 
     var childActionScriptConditionJPanelLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.childActionScriptConditionJPanel);
-        
-        
 ;
     
 this.childActionScriptConditionJPanel!.setLayout(childActionScriptConditionJPanelLayout);
@@ -171,8 +169,6 @@ this.removeJPanel!.setMinimumSize(new java.awt.Dimension(30, 20));
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

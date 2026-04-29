@@ -43,8 +43,6 @@ export class GenericProfileActionScriptProcessorData
         
 
     public NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_PROCESSOR_NAME";
-        
-        
 private constructor (){
 
             super();

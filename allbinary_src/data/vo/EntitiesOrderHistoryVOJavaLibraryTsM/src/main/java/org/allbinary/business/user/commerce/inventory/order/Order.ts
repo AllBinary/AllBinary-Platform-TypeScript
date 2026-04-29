@@ -185,8 +185,6 @@ this.paymentMethod= paymentMethod;
     public getIdValidationInfo(): string{
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -411,11 +409,9 @@ var storeFrontInterface = storeFrontInterface
 }
 
 
-    public toHashMapOrder(): HashMap<any, any>{
+    public toHashMapOrder(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(PaymentData.METHOD, this.paymentMethod);
@@ -450,34 +446,24 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.toHashMapOrder()!;
-        
-        
+    var hashMap: HashMap = this.toHashMapOrder()!;
 ;
     
 
     var keySet: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var keyArray: any[] = keySet!.toTypedArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
     var node: Node = document.createElement(OrderData.ORDER)!;
-        
-        
 ;
     
 
@@ -486,23 +472,17 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
-        
-        
+    var name: string =  as StringkeyArray[i]!;
 ;
     
 
-    var value: string = hashMap!.get(name as Object); as String;
-        
-        
+    var value: string =  as StringhashMap!.get(name as Object);;
 ;
     
-value= StringUtil.getInstance()!.getInstance(value);
+value= StringUtil.getInstance()!.getNonNull(value);
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
     

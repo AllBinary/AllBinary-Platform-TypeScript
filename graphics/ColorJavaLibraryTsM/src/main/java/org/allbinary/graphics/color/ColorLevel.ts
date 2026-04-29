@@ -43,24 +43,14 @@ export class ColorLevel
         
 
     public static readonly COLOR_MASK: number = 0x00FFFFFF;
-        
-        
 
     public static readonly MIN: number = 0x44;
-        
-        
 
     public static readonly AVG: number = 0x77;
-        
-        
 
     public static readonly LIGHT: number = 0xAA;
-        
-        
 
     public static readonly HIGH: number = 0xEE;
-        
-        
 private constructor (){
 
             super();

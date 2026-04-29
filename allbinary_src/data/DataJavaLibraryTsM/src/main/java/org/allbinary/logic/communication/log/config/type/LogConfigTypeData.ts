@@ -43,8 +43,6 @@ export class LogConfigTypeData
         
 
     private static readonly instance: LogConfigTypeData = new LogConfigTypeData();
-        
-        
 
     public static getInstance(): LogConfigTypeData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "LOG_CONFIG_TYPE_NAME";
-        
-        
 
     public readonly DESCRIPTION: string = "LOG_CONFIG_TYPE_DESCRIPTION";
-        
-        
 
 }
                 

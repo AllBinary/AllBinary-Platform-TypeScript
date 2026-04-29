@@ -45,8 +45,6 @@ export class FireworksSound extends CompositeSound {
         
 
     private soundInterface: Sound = new FireworksSound();
-        
-        
 
     public static getInstance(): Sound{
 

@@ -43,15 +43,13 @@ export class NullRunnable extends ARunnable {
         
 
     private static readonly instance: NullRunnable = new NullRunnable();
-        
-        
 
     public static getInstance(): NullRunnable{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return instance;
+                        return NullRunnable.instance;
     
 }
 

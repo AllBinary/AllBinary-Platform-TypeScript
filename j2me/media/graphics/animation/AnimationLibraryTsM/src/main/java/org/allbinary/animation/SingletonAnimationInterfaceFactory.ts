@@ -76,7 +76,7 @@ this.animationInterface= animationInterface;
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

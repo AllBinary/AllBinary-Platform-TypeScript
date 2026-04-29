@@ -33,12 +33,6 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
     
-import { NullPaintable } from "../../../../org/allbinary/graphics/paint/NullPaintable.js";
-
-    
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
-
-    
 import { CommonButtons } from "../../../../org/allbinary/input/motion/button/CommonButtons.js";
 
     
@@ -63,14 +57,14 @@ import { CommonButtons } from "../../../../org/allbinary/input/motion/button/Com
         
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
+import { RTSLayerCompositePaintable } from "./RTSLayerCompositePaintable.js";
+
 import { RTSLayer } from "./RTSLayer.js";
 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
         
 
     private static readonly instance: UpgradableRTSLayerHudPaintable = new UpgradableRTSLayerHudPaintable();
-        
-        
 
     public static getInstance(): UpgradableRTSLayerHudPaintable{
 
@@ -83,12 +77,8 @@ export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
 
 
     private readonly PERCENT: string = "%";
-        
-        
 
     private rtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
-        
-        
 
     costY: number= 0
 
@@ -108,26 +98,20 @@ super.update();
     
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 this.costY= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
     
 this.costY1= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight));
     
-this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.charWidth();
+this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.defaultCharWidth();
     
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -150,9 +134,7 @@ this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTO
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.getRtsLayer();;
 ;
     
 this.rtsLayerCompositePaintableLateInit!.update(rtsLayer);
@@ -169,16 +151,12 @@ this.setName(rtsLayer!.getName());
     private percentCompleteX: number= 0
 
     private percentCompleteArray: string[] = CharArrayFactory.getInstance()!.getZeroCharArray()!;
-        
-        
 
     private currentTotalDigits: number= 0
 
     public updateInfo(){
 
-    var rtsLayer: RTSLayer = this.getRtsLayer(); as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.getRtsLayer();;
 ;
     
 this.percentComplete= rtsLayer!.getPercentComplete();
@@ -224,7 +202,7 @@ graphics.drawChars(percentCompleteArray, 0, this.currentTotalDigits, this.imageX
     
 graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0);
     
-this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
     
 }
 

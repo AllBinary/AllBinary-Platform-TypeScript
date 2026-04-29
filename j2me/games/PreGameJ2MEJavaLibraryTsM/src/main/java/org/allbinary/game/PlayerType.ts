@@ -48,8 +48,6 @@ export class PlayerType
     private id: number
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
  constructor (name: string, value: number){
 
             super();

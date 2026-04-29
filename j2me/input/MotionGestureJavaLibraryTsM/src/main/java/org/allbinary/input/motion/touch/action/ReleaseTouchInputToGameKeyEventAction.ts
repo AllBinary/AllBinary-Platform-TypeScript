@@ -36,9 +36,6 @@ import { GameKeyCompleteMotionGestureInputEvent } from "../../../../../../org/al
 import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -65,8 +62,6 @@ export class ReleaseTouchInputToGameKeyEventAction extends GameKeyCompleteMotion
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new ReleaseTouchInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 
@@ -79,8 +74,6 @@ export class ReleaseTouchInputToGameKeyEventAction extends GameKeyCompleteMotion
 
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
-        
-        
 private constructor (){
             super("Release Action", TouchMotionGestureFactory.getInstance()!.RELEASED, PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping());
                     
@@ -91,7 +84,7 @@ private constructor (){
         try {
             this.setGameKey(this.NONE);
     
-this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE));
+this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstanceForInput(this, NONE));
     
 
                 //: 
@@ -99,8 +92,6 @@ this.setGameKeyEvent(GameKeyEventFactory.getInstance()!.getInstance(this, NONE))
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);

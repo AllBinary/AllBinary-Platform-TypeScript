@@ -43,8 +43,6 @@ export class BasicTopViewGeographicMapStrings
         
 
     private static readonly instance: BasicTopViewGeographicMapStrings = new BasicTopViewGeographicMapStrings();
-        
-        
 
     public static getInstance(): BasicTopViewGeographicMapStrings{
 
@@ -57,36 +55,20 @@ export class BasicTopViewGeographicMapStrings
 
 
     public readonly DEFAULT: string = "Default";
-        
-        
 
     public readonly OTHER: string = "Other";
-        
-        
 
     public readonly WALL: string = "Wall";
-        
-        
 
     public readonly OFF_MAP: string = "OffMap";
-        
-        
 
     public readonly FLOOR: string = "Floor";
-        
-        
 
     public readonly DOOR: string = "Door";
-        
-        
 
     public readonly STAIRS_UP: string = "StairsUp";
-        
-        
 
     public readonly STAIRS_DOWN: string = "StairsDown";
-        
-        
 
 }
                 

@@ -43,8 +43,6 @@ export class UserDbInitInfo extends DbInitInfo {
         
 
     private static readonly INITFILE: string = "userdbinitdata.dat";
-        
-        
 public constructor (){
             super(INITFILE, true);
                     

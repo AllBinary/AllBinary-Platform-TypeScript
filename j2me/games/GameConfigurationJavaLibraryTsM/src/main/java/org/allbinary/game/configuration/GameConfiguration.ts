@@ -65,27 +65,17 @@ export class GameConfiguration
         
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
-    private defaultValue: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(0)!;
-        
-        
+    private defaultValue: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private value: Integer
+    private value: number
 
-    private minValue: Integer = defaultValue;
-        
-        
+    private minValue: number = defaultValue;
 
-    private maxValue: Integer = defaultValue;
-        
-        
+    private maxValue: number = defaultValue;
 
     private modifiable: Boolean = BooleanFactory.getInstance()!.TRUE;
-        
-        
-public constructor (name: string, defaultValue: Integer, minValue: Integer, maxValue: Integer){
+public constructor (name: string, defaultValue: number, minValue: number, maxValue: number){
 
             super();
             //var name = name
@@ -109,16 +99,14 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
 
                 //@Throws(Error::class)
             
-    public setValue(value: Integer){
+    public setValue(value: number){
     //var value = value
 
                         if(this.value != value)
                         
                                     {
                                     
-    var oldValue: Integer = this.value;
-        
-        
+    var oldValue: number = this.value;
 ;
     
 this.value= value;
@@ -132,7 +120,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 }
 
 
-    public getValue(): Integer{
+    public getValue(): number{
 
 
 
@@ -142,14 +130,14 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 }
 
 
-    public setMaxValue(maxValue: Integer){
+    public setMaxValue(maxValue: number){
     //var maxValue = maxValue
 this.maxValue= maxValue;
     
 }
 
 
-    public getMaxValue(): Integer{
+    public getMaxValue(): number{
 
 
 
@@ -159,14 +147,14 @@ this.maxValue= maxValue;
 }
 
 
-    public setMinValue(minValue: Integer){
+    public setMinValue(minValue: number){
     //var minValue = minValue
 this.minValue= minValue;
     
 }
 
 
-    public getMinValue(): Integer{
+    public getMinValue(): number{
 
 
 
@@ -193,14 +181,14 @@ this.name= name;
 }
 
 
-    public setDefaultValue(defaultValue: Integer){
+    public setDefaultValue(defaultValue: number){
     //var defaultValue = defaultValue
 this.defaultValue= defaultValue;
     
 }
 
 
-    getDefaultValue(): Integer{
+    getDefaultValue(): number{
 
 
 
@@ -221,8 +209,6 @@ this.setValue(this.getDefaultValue());
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Name: ");

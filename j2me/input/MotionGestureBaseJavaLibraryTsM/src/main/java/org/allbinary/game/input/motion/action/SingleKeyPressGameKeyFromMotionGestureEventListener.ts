@@ -68,8 +68,6 @@ export class SingleKeyPressGameKeyFromMotionGestureEventListener extends Complet
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public onEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -83,15 +81,11 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
         try {
             
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = completeMotionGestureInputEvent as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventcompleteMotionGestureInputEvent;
 ;
     
 
     var gameKeyEvent: GameKeyEvent = gameKeyCompleteMotionGestureInputEvent!.getGameKeyEvent()!;
-        
-        
 ;
     
 PressGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
@@ -102,8 +96,6 @@ PressGameKeyEventHandler.getInstance()!.fireEvent(gameKeyEvent);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "onCompleteMotionGestureInputEvent", e);

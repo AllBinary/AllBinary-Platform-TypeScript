@@ -60,8 +60,6 @@ export class AbXslHelper
         
 
     private static readonly instance: AbXslHelper = new AbXslHelper();
-        
-        
 
     public static getInstance(): AbXslHelper{
 
@@ -110,8 +108,6 @@ export class AbXslHelper
         try {
             
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
@@ -127,7 +123,8 @@ export class AbXslHelper
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

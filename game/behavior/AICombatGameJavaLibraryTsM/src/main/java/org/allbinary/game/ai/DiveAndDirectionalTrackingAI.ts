@@ -129,21 +129,13 @@ import { BasicAI } from "./BasicAI.js";
 export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEventListenerInterface, DestroyedEventListenerInterface {
         
 
-    private static readonly directionToKeyMap: number[] = intArrayOf(Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT);
-        
-        
+    private static readonly directionToKeyMap: number[] = [Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT];
 
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(500);
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly directionalInterface: DirectionalInterface
 
@@ -154,32 +146,20 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
     private dive: boolean= false
 
     private directionOfTarget: Direction = Direction.getInstance(0)!;
-        
-        
 
     private readonly MIN_DISTANCE: number = 40;
-        
-        
 
     private lastTrackingLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-        
-        
 
     private readonly artificialIntelligenceInterface: ArtificialIntelligenceInterface
 
     private readonly aiVistor: Visitor
 
     private lastDirection: Direction = DirectionFactory.getInstance()!.NO_DIRECTION;
-        
-        
 
     private readonly directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 public constructor (ownerLayerInterface: AllBinaryLayer, artificialIntelligenceInterface: ArtificialIntelligenceInterface, gameInput: GameInput, visitor: Visitor){
             super(ownerLayerInterface, gameInput);
                     var ownerLayerInterface = ownerLayerInterface
@@ -195,17 +175,13 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface(); as DirectionalCompositeInterface;
-        
-        
+    var directionalCompositeInterface: DirectionalCompositeInterface =  as DirectionalCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
@@ -282,23 +258,17 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = this.list.remove(0); as TrackingEvent;
-        
-        
+    var lastTrackingEvent: TrackingEvent =  as TrackingEventthis.list.removeAt(0);;
 ;
     
 this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
 
     var layerInterface: AllBinaryLayer = this.lastTrackingLayerInterface;
-        
-        
 ;
     
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
@@ -316,32 +286,22 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                                 
 
     var x: number = this.lastTrackingLayerInterface!.getXP()!;
-        
-        
 ;
     
 
     var y: number = this.lastTrackingLayerInterface!.getYP()!;
-        
-        
 ;
     
 
     var yDistance: number = ownerLayerInterface!.getYP() -y -ownerLayerInterface!.getHeight();
-        
-        
 ;
     
 
     var xDistance: number = ownerLayerInterface!.getXP() -x -ownerLayerInterface!.getWidth();
-        
-        
 ;
     
 
     var directionFactory: DirectionFactory = DirectionFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -440,8 +400,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 var x = x
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
@@ -480,8 +438,6 @@ var x = x
 var y = y
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
@@ -529,7 +485,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
     moveRight(){
 this.setLastDirection(this.directionFactory!.RIGHT);
     
-this.directionalInterface!.setFrame(this.lastDirection);
+this.directionalInterface!.setFrameByDirection(this.lastDirection);
     
 this.aiVistor!.visit(this);
     
@@ -541,7 +497,7 @@ this.aiVistor!.visit(this);
     moveLeft(){
 this.setLastDirection(this.directionFactory!.LEFT);
     
-this.directionalInterface!.setFrame(this.lastDirection);
+this.directionalInterface!.setFrameByDirection(this.lastDirection);
     
 this.aiVistor!.visit(this);
     
@@ -553,7 +509,7 @@ this.aiVistor!.visit(this);
     moveDown(){
 this.setLastDirection(this.directionFactory!.DOWN);
     
-this.directionalInterface!.setFrame(this.lastDirection);
+this.directionalInterface!.setFrameByDirection(this.lastDirection);
     
 this.aiVistor!.visit(this);
     
@@ -565,7 +521,7 @@ this.aiVistor!.visit(this);
     moveUp(){
 this.setLastDirection(this.directionFactory!.UP);
     
-this.directionalInterface!.setFrame(this.lastDirection);
+this.directionalInterface!.setFrameByDirection(this.lastDirection);
     
 this.aiVistor!.visit(this);
     
@@ -575,7 +531,7 @@ this.aiVistor!.visit(this);
                 //@Throws(Error::class)
             
     dive(){
-this.directionalInterface!.setFrame(this.directionOfTarget);
+this.directionalInterface!.setFrameByDirection(this.directionOfTarget);
     
 this.aiVistor!.visit(this);
     
@@ -585,7 +541,7 @@ this.aiVistor!.visit(this);
                 //@Throws(Error::class)
             
     attack(){
-super.processAI(Canvas.KEY_NUM1);
+super.processKeyAI(Canvas.KEY_NUM1);
     
 }
 
@@ -777,8 +733,6 @@ this.lastDirection= lastDirection;
     
 
     var value: number = this.getLastDirection()!.getValue()!;
-        
-        
 ;
     
 
@@ -849,8 +803,6 @@ super.setLastKey(lastKey);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());

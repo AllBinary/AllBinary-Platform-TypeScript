@@ -49,8 +49,6 @@ export class HelperTag extends PropertiesTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tagHelperFactoryInterface: TagHelperFactoryInterface
 

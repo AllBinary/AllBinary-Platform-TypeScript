@@ -46,16 +46,10 @@ export class UserConfigurationData
         
 
     public static readonly NAME: string = "USER_CONFIGURATION_NAME";
-        
-        
 
     public static readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
-        
-        
 
     public static readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
-        
-        
 private constructor (){
 
             super();

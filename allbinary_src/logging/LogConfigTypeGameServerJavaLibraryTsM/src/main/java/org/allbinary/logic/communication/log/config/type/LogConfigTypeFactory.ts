@@ -43,14 +43,14 @@ import { LogConfigTypeFactory } from "../../../../../../../org/allbinary/logic/c
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LogConfigType } from "./LogConfigType.js";
+
 export class LogConfigTypeFactory
             extends Object
          {
         
 
     private static readonly instance: LogConfigTypeFactory = new LogConfigTypeFactory();
-        
-        
 
     public static getInstance(): LogConfigTypeFactory{
 
@@ -63,28 +63,16 @@ export class LogConfigTypeFactory
 
 
     private readonly NO_DESCRIPTION: string = "No Description";
-        
-        
 
     public readonly INIT_SERVER: LogConfigType = new LogConfigType("Init Server", NO_DESCRIPTION);
-        
-        
 
     public readonly LOBBY_SERVER: LogConfigType = new LogConfigType("Lobby Server", NO_DESCRIPTION);
-        
-        
 
     public readonly GAME_SERVER: LogConfigType = new LogConfigType("Game Server", NO_DESCRIPTION);
-        
-        
 
     public readonly GAME_SIMULATOR: LogConfigType = new LogConfigType("Game Simulator", NO_DESCRIPTION);
-        
-        
 
     public readonly CUSTOM_TYPES: LogConfigType = new LogConfigType("Custom Types", NO_DESCRIPTION);
-        
-        
 private constructor (){
 
             super();

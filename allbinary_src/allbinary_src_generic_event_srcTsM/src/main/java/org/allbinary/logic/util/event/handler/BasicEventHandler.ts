@@ -72,12 +72,8 @@ export class BasicEventHandler
         
 
     public static readonly PERFORMANCE_MESSAGE: string = "Use Custom onEvent Methods for needed optimization";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private eventListenerInterfaceList: BasicArrayList
 public constructor (){
@@ -91,14 +87,10 @@ public constructor (){
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var LISTENER: string = " Listener: ";
-        
-        
 ;
     
 stringBuffer!.append("Total Listeners: ");
@@ -111,8 +103,6 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -120,7 +110,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.objectArray[index]!;
     
 stringBuffer!.append(LISTENER);
     
@@ -132,8 +122,6 @@ stringBuffer!.append(StringUtil.getInstance()!.toString(eventListenerInterface))
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
@@ -211,8 +199,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 var eventObject = eventObject
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -224,7 +210,7 @@ var eventObject = eventObject
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.objectArray[index]! as EventListenerInterface;
+            eventListenerInterface=  as EventListenerInterfacethis.eventListenerInterfaceList!.objectArray[index]!;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -234,8 +220,6 @@ this.process(eventObject, eventListenerInterface);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);

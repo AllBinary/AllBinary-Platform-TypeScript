@@ -64,8 +64,6 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
         
 
     private static readonly instance: LayerManagerLogging = new LayerManagerLogging();
-        
-        
 
     public static getInstance(): LayerManagerLogging{
 
@@ -78,48 +76,26 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
 
 
     private removeFailed: boolean = false;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly stringBuilder: StringMaker = new StringMaker();
-        
-        
 
     private readonly APPEND: string = "append";
-        
-        
 
     private readonly APPEND_: string = " append: ";
-        
-        
 
     private readonly _AT_: string = " at: ";
-        
-        
 
     private readonly ATTEMPT_REMOVE_: string = " Remove Attempt: ";
-        
-        
 
     private readonly REMOVE_: string = " Remove: ";
-        
-        
 
     private readonly REMOVE: string = "remove";
-        
-        
 
     private readonly DID_NOT_REMOVE: string = " Did not remove: ";
-        
-        
 
     private readonly CLEAR: string = " Clear List";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -132,7 +108,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
 }
 
 
-    public append(layerInterface: AllBinaryLayer, index: number){
+    public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
 stringBuilder!.delete(0, stringBuilder!.length());
@@ -168,7 +144,7 @@ this.logUtil!.putF(stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this)
 }
 
 
-    public remove(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
+    public removeResult(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
     //var layerManager = layerManager
     //var layerInterface = layerInterface
     //var result = result
@@ -222,14 +198,10 @@ stringBuilder!.delete(0, stringBuilder!.length());
     
 
     var size: number = layerManager!.getSize()!;
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuilder!.append(Integer.toHexString(TsUtil.getInstance()!.hashCode(layerManager)))!.append(commonSeps!.COLON_SEP);
@@ -246,11 +218,9 @@ stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-allBinaryLayer= (layerManager!.getLayerAt(index); as AllBinaryLayer);
+allBinaryLayer= ( as AllBinaryLayerlayerManager!.getLayerAt(index););
     
 stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA);
     

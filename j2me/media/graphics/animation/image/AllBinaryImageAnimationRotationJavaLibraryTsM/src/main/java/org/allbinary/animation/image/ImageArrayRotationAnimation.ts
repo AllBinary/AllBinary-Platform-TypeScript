@@ -24,9 +24,6 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
-
-    
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
@@ -56,13 +53,11 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
 
                 //@Throws(Error::class)
             
-    static create(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
+    static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 
-    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
-        
-        
+    var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo =  as ImageArrayRotationAnimationInfoanyType;
 ;
     
 
@@ -107,7 +102,8 @@ this.angleInfo!.adjustAngle(0);
                                     
 
 
-                            throw new Error("Wrong Number of Frames")
+                            throw new Error("Wrong Number of Frames");
+                    
 
                                     }
                                 

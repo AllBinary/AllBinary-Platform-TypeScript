@@ -61,8 +61,6 @@ export class InventoryColumnUtil
         
 
     private static readonly instance: InventoryColumnUtil = new InventoryColumnUtil();
-        
-        
 
     public static getInstance(): InventoryColumnUtil{
 
@@ -75,8 +73,6 @@ export class InventoryColumnUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getColumnWhereLike(inventoryEntity: InventoryEntity, category: string, column: string): Vector{
 var inventoryEntity = inventoryEntity
@@ -86,20 +82,14 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
     
 
     var keywords: Vector = new Vector();
-        
-        
 ;
     
 
     var vectorOfHashMaps: Vector = inventoryEntity!.getAllRows()!;
-        
-        
 ;
     
 
     var size: number = vectorOfHashMaps!.length!;
-        
-        
 ;
     
 
@@ -108,20 +98,14 @@ this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vectorOfHashMaps!.get(index as Object); as HashMap<any, any>;
-        
-        
+    var hashMap: HashMap =  as HashMapvectorOfHashMaps!.get(index as Object);;
 ;
     
 
-    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY); as String;
-        
-        
+    var categoryName: string =  as StringhashMap!.get(BasicItemData.CATEGORY);;
 ;
     
 

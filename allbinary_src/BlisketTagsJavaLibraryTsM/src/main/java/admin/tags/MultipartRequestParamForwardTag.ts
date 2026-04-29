@@ -104,25 +104,19 @@ this.paramVector= paramVector;
 
         try {
             
-    var parentTag: HelperTag = this.getParent(); as HelperTag;
-        
-        
+    var parentTag: HelperTag =  as HelperTagthis.getParent();;
 ;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(AbTagData.PARENT, parentTag);
     
 
     var multipartRequestParamForwardHelper: MultipartRequestParamForwardHelper = new MultipartRequestParamForwardHelper(parentTag, this.page, this.command, this.paramVector, this.pageContext);
-        
-        
 ;
     
 multipartRequestParamForwardHelper!.forward();

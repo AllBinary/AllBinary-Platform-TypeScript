@@ -52,8 +52,6 @@ export class ChangeColorProcessor extends ModifierBaseProcessor {
         
 
     private static readonly instance: ChangeColorProcessor = new ChangeColorProcessor();
-        
-        
 
     public static getInstance(): ChangeColorProcessor{
 
@@ -65,7 +63,7 @@ export class ChangeColorProcessor extends ModifierBaseProcessor {
 }
 
 
-    public update(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
+    public updateColor(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
     //var imageModifierUtil = imageModifierUtil
     //var originalImage = originalImage
     //var imageToShow = imageToShow

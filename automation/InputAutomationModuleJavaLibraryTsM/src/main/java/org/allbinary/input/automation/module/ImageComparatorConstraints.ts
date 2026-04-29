@@ -58,6 +58,8 @@ import { ImageComparatorConstraintsInterface } from "../../../../../org/allbinar
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 import { Color } from "./Color.js";
 
 import { Rectangle } from "./Rectangle.js";
@@ -68,8 +70,6 @@ export class ImageComparatorConstraints
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private avoidVector: Vector
 
@@ -104,7 +104,8 @@ var color = color
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -112,20 +113,14 @@ var color = color
 var rectangle = rectangle
 
     var isCollsionWithAvoidRectangles: boolean = false;
-        
-        
 ;
     
 
     var avoidVector: Vector = this.getAvoidVector()!;
-        
-        
 ;
     
 
     var size: number = avoidVector!.length!;
-        
-        
 ;
     
 
@@ -134,14 +129,10 @@ var rectangle = rectangle
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
-        
-        
+    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
 ;
     
 
@@ -168,20 +159,14 @@ index < size; index++)
 var point = point
 
     var isCollsionWithAvoidRectangles: boolean = false;
-        
-        
 ;
     
 
     var avoidVector: Vector = this.getAvoidVector()!;
-        
-        
 ;
     
 
     var size: number = avoidVector!.length!;
-        
-        
 ;
     
 
@@ -190,14 +175,10 @@ var point = point
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
-        
-        
+    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
 ;
     
 
@@ -251,8 +232,6 @@ this.maxNonMatchingPixelDeltas= maxNonMatchingPixelDeltas;
 var frame = frame
 
     var remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);
-        
-        
 ;
     
 this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageComparisonEveryNthFrame: " +this.doImageComparisonEveryNthFrame, this, "isCollisionWithAvoidRectangles");
@@ -290,21 +269,18 @@ var bufferedImage = bufferedImage
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
     public log(){
 
     var avoidVector: Vector = this.getAvoidVector()!;
-        
-        
 ;
     
 
     var size: number = avoidVector!.length!;
-        
-        
 ;
     
 
@@ -313,14 +289,10 @@ var bufferedImage = bufferedImage
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var avoidRectangle: Rectangle = avoidVector!.get(index); as Rectangle;
-        
-        
+    var avoidRectangle: Rectangle =  as RectangleavoidVector!.get(index);;
 ;
     
 this.logUtil!.putF("Avoid Rectangle: " +avoidRectangle, this, "log");

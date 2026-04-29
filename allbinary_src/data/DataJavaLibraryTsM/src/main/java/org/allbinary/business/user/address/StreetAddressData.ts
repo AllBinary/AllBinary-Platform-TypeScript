@@ -43,60 +43,32 @@ export class StreetAddressData
         
 
     public static readonly MAX: number = 255;
-        
-        
 
     public static readonly MIN: number = 0;
-        
-        
 
     public static readonly FORM: string = "FORM";
-        
-        
 
     public static readonly STATES: string = "STATES";
-        
-        
 
     public static readonly NUMBEROFADDRESSES: string = "STREETADDRESS_NUMBEROFADDRESSES";
-        
-        
 
     public static readonly ID: string = "STREETADDRESS_ID";
-        
-        
 
     public static readonly DEFAULT: string = "STREETADDRESS_DEFAULT_ADDRESS";
-        
-        
 
     public static readonly ADDRESS: string = "STREETADDRESS_ADDRESS";
-        
-        
 
     public static readonly NAME: string = "STREETADDRESS_NAME";
-        
-        
 
     public static readonly STREET: string = "STREETADDRESS_STREET";
-        
-        
 
     public static readonly CITY: string = "STREETADDRESS_CITY";
-        
-        
 
     public static readonly STATE: string = "STREETADDRESS_STATE";
-        
-        
 
     public static readonly CODE: string = "STREETADDRESS_CODE";
-        
-        
 
     public static readonly COUNTRY: string = "STREETADDRESS_COUNTRY";
-        
-        
 private constructor (){
 
             super();

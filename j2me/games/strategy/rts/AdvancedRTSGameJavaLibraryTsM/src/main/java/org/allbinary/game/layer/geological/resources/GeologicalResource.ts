@@ -68,8 +68,6 @@ this.setTotal(this.initTotal);
 var value = value
 
     var max: number = Integer.MAX_VALUE;
-        
-        
 ;
     
 

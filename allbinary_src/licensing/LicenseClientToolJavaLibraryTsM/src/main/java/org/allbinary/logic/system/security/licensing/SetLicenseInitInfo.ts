@@ -67,6 +67,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicArrayListD } from "./BasicArrayListD.js";
+
 import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
 
 export class SetLicenseInitInfo
@@ -75,8 +77,6 @@ export class SetLicenseInitInfo
         
 
     private stdinput: BufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        
-        
 
                 //@Throws(Error::class)
             
@@ -84,8 +84,6 @@ export class SetLicenseInitInfo
 var args = args
 
     var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);
-        
-        
 ;
     
 initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
@@ -94,8 +92,6 @@ initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
 
 
     private vector: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (options: string[]){
 
             super();
@@ -108,8 +104,6 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
 
                         for (
     var index: number = 1;
-        
-        
 index < options.length; index++)
         {
 this.vector.add(options[index]!);
@@ -124,8 +118,6 @@ this.vector.add(options[index]!);
     public getLicenseInitInfo(): LicenseInitInfo{
 
     var licenseInitInfoUtil: LicenseInitInfoUtil = LicenseInitInfoUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -167,14 +159,13 @@ var licenceServerVector = licenceServerVector
                                     
 
 
-                            throw new Error("null Vector Passed - Just Make Empty if you want")
+                            throw new Error("null Vector Passed - Just Make Empty if you want");
+                    
 
                                     }
                                 
 
     var licenseInitInfo: LicenseInitInfo = this.getLicenseInitInfo()!;
-        
-        
 ;
     
 console.log("License Serv Example: http://www.dartstatistics.com/LicServ/serverssl.php");
@@ -183,20 +174,14 @@ licenseInitInfo!.clearServers();
     
 
     var file: File = new File(PrintLicenseInitInfo.PATH +"licenseservers.txt");
-        
-        
 ;
     
 
     var reader: FileReader = new FileReader(file);
-        
-        
 ;
     
 
     var lineNumberReader: LineNumberReader = new LineNumberReader(reader);
-        
-        
 ;
     
 
@@ -204,8 +189,6 @@ licenseInitInfo!.clearServers();
         {
 
     var line: string = lineNumberReader!.readLine()!;
-        
-        
 ;
     
 

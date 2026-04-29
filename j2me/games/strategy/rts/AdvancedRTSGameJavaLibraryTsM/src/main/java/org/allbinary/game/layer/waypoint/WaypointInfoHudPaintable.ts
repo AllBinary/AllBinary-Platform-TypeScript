@@ -61,8 +61,6 @@ export class WaypointInfoHudPaintable extends SelectionHudPaintable {
     private readonly keyvalueDrawString: KeyValueDrawString
 
     rtsLayerP: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 public constructor (){
 
             super();
@@ -73,9 +71,7 @@ public constructor (){
 
     public updateSelectionInfo(){
 
-    var rtsLayer: RTSLayer = this.rtsLayerP as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.rtsLayerP;
 ;
     
 this.setName(rtsLayer!.getName());
@@ -93,13 +89,11 @@ super.paint(graphics);
     
 
     var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
-        
-        
 ;
     
 this.keyvalueDrawString!.paint(graphics, textLine2Y);
     
-this.getAnimationInterface()!.paint(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
     
 }
 

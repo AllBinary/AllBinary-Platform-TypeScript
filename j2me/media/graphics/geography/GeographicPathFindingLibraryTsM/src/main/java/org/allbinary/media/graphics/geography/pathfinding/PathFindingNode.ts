@@ -61,12 +61,8 @@ export class PathFindingNode
         
 
     public parent: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 
     public geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-        
-        
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition){
 
             super();
@@ -83,7 +79,8 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
                                     
 
 
-                            throw new Error("No GeographicMapCellPosition")
+                            throw new Error("No GeographicMapCellPosition");
+                    
 
                                     }
                                 
@@ -95,7 +92,7 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.parent as PathFindingNode;
+                        return  as PathFindingNodethis.parent;
     
 }
 
@@ -110,8 +107,6 @@ this.geographicMapCellPosition= geographicMapCellPosition;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.constructor.name.toString()!);
@@ -124,8 +119,6 @@ stringBuffer!.append(this.geographicMapCellPosition!.toString());
     
 
     var pathFindingNode: PathFindingNode = this.getParentP()!;
-        
-        
 ;
     
 

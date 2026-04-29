@@ -88,12 +88,8 @@ export class InsertHeaderValidationView extends TopBarView implements Validation
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly LOGOPATH: string = "logo/";
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -102,22 +98,16 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var multipartRequestHashMap: HashMap<any, any> = new MultipartRequestParams(this.getPageContext()).
+    var multipartRequestHashMap: HashMap = new MultipartRequestParams(this.getPageContext()).
                             toHashMap()!;
-        
-        
 ;
     
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.getWeblisketSession()!.getStoreName())!;
-        
-        
 ;
     
 
     var fullPath: string = URLGLOBALS.getWebappPath() +storeFrontInterface!.getCurrentHostNamePath() +LOGOPATH;
-        
-        
 ;
     
 multipartRequestHashMap!.put(LogoData.getInstance()!.IMAGEPATH, fullPath);
@@ -153,15 +143,13 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
                                 
 
     var isValid: Boolean = this.heading.isValid()!;
-        
-        
 ;
     
 
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as DomNodeInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis);
     
 
                                     }
@@ -201,8 +189,6 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.heading.validationInfo());

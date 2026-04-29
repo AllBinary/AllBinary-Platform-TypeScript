@@ -46,8 +46,6 @@ import { BaseGameStatistics } from "./BaseGameStatistics.js";
         
 
     private static readonly instance: GameStatisticsFactory = new GameStatisticsFactory();
-        
-        
 
     /*actual*/ public static getInstance(): GameStatisticsFactory{
 
@@ -60,8 +58,6 @@ import { BaseGameStatistics } from "./BaseGameStatistics.js";
 
 
     private stringBuffer: StringMaker = new StringMaker();
-        
-        
 
     public add(string: string){
 var string = string

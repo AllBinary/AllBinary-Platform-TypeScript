@@ -36,9 +36,6 @@ import { Rectangle } from "../../../../../../org/allbinary/graphics/Rectangle.js
 import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -86,7 +83,7 @@ var healthInterface = healthInterface
                         if(healthInterface!.isAlive())
                         
                                     {
-                                    healthInterface!.heal();
+                                    healthInterface!.healMax();
     
 
                                     }

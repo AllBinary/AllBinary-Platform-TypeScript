@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TenderType } from "./TenderType.js";
+
 export class TenderTypeFactory
             extends Object
          {
         
 
     private static readonly instance: TenderTypeFactory = new TenderTypeFactory();
-        
-        
 
     public static getInstance(): TenderTypeFactory{
 
@@ -57,16 +57,10 @@ export class TenderTypeFactory
 
 
     public readonly CREDITCARD: TenderType = new TenderType("Credit Card");
-        
-        
 
     public readonly CHECK: TenderType = new TenderType("Check");
-        
-        
 
     public readonly ACH: TenderType = new TenderType("Ach");
-        
-        
 
 }
                 

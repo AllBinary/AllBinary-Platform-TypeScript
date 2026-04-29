@@ -56,8 +56,6 @@ export class CellPositionsUtil
         
 
     private static readonly instance: CellPositionsUtil = new CellPositionsUtil();
-        
-        
 
     public static getInstance(): CellPositionsUtil{
 
@@ -81,20 +79,14 @@ reusableList!.clear();
     
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-        
-        
 ;
     
 
     var lastColumn: number = topRightGeographicMapCellPosition!.getColumn() +columns;
-        
-        
 ;
     
 
     var lastRow: number = topRightGeographicMapCellPosition!.getRow() +rows;
-        
-        
 ;
     
 
@@ -116,8 +108,6 @@ reusableList!.clear();
 
                         for (
     var rowIndex: number = 0;
-        
-        
 rowIndex < rows; rowIndex++)
         {
 
@@ -126,14 +116,10 @@ rowIndex < rows; rowIndex++)
 
                         for (
     var columnIndex: number = 0;
-        
-        
 columnIndex < columns; columnIndex++)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(topRightGeographicMapCellPosition!.getColumn() +columnIndex, topRightGeographicMapCellPosition!.getRow() +rowIndex)!;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(topRightGeographicMapCellPosition!.getColumn() +columnIndex, topRightGeographicMapCellPosition!.getRow() +rowIndex)!;
 ;
     
 reusableList!.add(geographicMapCellPosition);
@@ -152,8 +138,6 @@ reusableList!.add(geographicMapCellPosition);
 
 
     private readonly reusableSingleThreadedSurroundingList: BasicArrayList = new BasicArrayListS(8);
-        
-        
 
                 //@Throws(Error::class)
             
@@ -169,20 +153,14 @@ reusableList!.clear();
 
                         for (
     var index: number = occupyList!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index); as GeographicMapCellPosition;
-        
-        
+    var layerGeographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionoccupyList!.get(index);;
 ;
     
 
-    var surroundingGeographicMapCellPositionList: BasicArrayList = getAllSurrounding(geographicMapInterface, layerGeographicMapCellPosition, reusableSingleThreadedSurroundingList)!;
-        
-        
+    var surroundingGeographicMapCellPositionList: BasicArrayList = getAllSurroundingAt(geographicMapInterface, layerGeographicMapCellPosition, reusableSingleThreadedSurroundingList)!;
 ;
     
 
@@ -191,14 +169,10 @@ index >= 0; index--)
 
                         for (
     var index2: number = surroundingGeographicMapCellPositionList!.size() -1;
-        
-        
 index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2); as GeographicMapCellPosition;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionsurroundingGeographicMapCellPositionList!.get(index2);;
 ;
     
 
@@ -235,12 +209,10 @@ index2 >= 0; index2--)
 ,intArrayOf( -1,0)
 
                                                         ];
-        
-        
 
                 //@Throws(Error::class)
             
-    public getAllSurrounding(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
+    public getAllSurroundingAt(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
     //var layerGeographicMapCellPosition = layerGeographicMapCellPosition
     //var reusableSurroundingList = reusableSurroundingList
@@ -248,14 +220,10 @@ reusableSurroundingList!.clear();
     
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
@@ -272,8 +240,6 @@ reusableSurroundingList!.clear();
 
                         for (
     var index: number = 0;
-        
-        
 index < 8; index++)
         {
 column= layerGeographicMapCellPosition!.getColumn() +surroundArray[index]![0];
@@ -285,9 +251,7 @@ row= layerGeographicMapCellPosition!.getRow() +surroundArray[index]![1];
                         
                                     {
                                     
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(column, row)!;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getAt(column, row)!;
 ;
     
 reusableSurroundingList!.add(geographicMapCellPosition);

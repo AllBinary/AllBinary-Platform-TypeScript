@@ -64,16 +64,10 @@ export class BasicItemValidation extends Validation {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly MAXWEIGHT: number = 14;
-        
-        
 
     private readonly MAXPRICE: number = 14;
-        
-        
 
     private itemInterface: ItemInterface
 public constructor (itemInterface: ItemInterface){
@@ -105,8 +99,6 @@ this.itemInterface= itemInterface;
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -459,8 +451,6 @@ this.itemInterface= itemInterface;
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -476,8 +466,6 @@ this.itemInterface= itemInterface;
                                 
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
-        
-        
 ;
     
 

@@ -50,8 +50,6 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
         
 
     private static readonly instance: ActivityFractureUtilAPI1 = new ActivityFractureUtilAPI1();
-        
-        
 
     public static getInstance(): ActivityFractureUtilAPI1{
 

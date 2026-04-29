@@ -74,9 +74,6 @@ import { InputMappingHelpPaintable } from "../../../../../org/allbinary/game/pai
 import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/ProcessPaintable.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -113,16 +110,10 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
         
 
     public static readonly NAME: string = "GameInputMappingCanvas";
-        
-        
 
     public static readonly DISPLAY: Command = new Command("Controls", Command.SCREEN, 2);
-        
-        
 
     public static readonly DEFAULT: Command = new Command("Default", Command.SCREEN, 2);
-        
-        
 
     private readonly paintable: ProcessPaintable
 
@@ -133,22 +124,14 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
     private readonly inputMapping: PersistentInputMapping
 
     private readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
-        
-        
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
     private selectedGameKey: GameKey = NONE;
-        
-        
 
     private selectedInput: Input = NONE;
-        
-        
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, helpPaintable: HelpPaintable){
             super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                         //var abeClientInformation = abeClientInformation
@@ -170,13 +153,14 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
                                     
 
 
-                            throw new Error("Help Paintable Exception")
+                            throw new Error("Help Paintable Exception");
+                    
 
                                     }
                                 
 this.abeClientInformation= abeClientInformation;
     
-this.helpPaintable= helpPaintable as InputMappingHelpPaintable;
+this.helpPaintable=  as InputMappingHelpPaintablehelpPaintable;
     
 this.inputMapping= PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance();
     
@@ -217,58 +201,52 @@ this.setCommandListener(cmdListener);
 
 
     public keyPressed(keyCode: number){
-var keyCode = keyCode
-this.keyPressed(keyCode, 0);
+    //var keyCode = keyCode
+this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-var keyCode = keyCode
-this.keyReleased(keyCode, 0);
+    //var keyCode = keyCode
+this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-var keyCode = keyCode
-this.keyRepeated(keyCode, 0);
+    //var keyCode = keyCode
+this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
-    public keyPressed(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
+    public keyPressedByDevice(keyCode: number, deviceId: number){
+    //var keyCode = keyCode
+    //var deviceId = deviceId
 this.addGameKeyEvent(keyCode, false);
     
-super.keyPressed(keyCode, 0);
+super.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 
     addGameKeyEvent(keyCode: number, repeated: boolean){
-var keyCode = keyCode
-var repeated = repeated
+    //var keyCode = keyCode
+    //var repeated = repeated
 
         try {
             this.logUtil!.putF(new StringMaker().
                             append("Raw Device Key Code: ")!.append(Integer.toHexString(keyCode))!.toString(), this, this.gameInputStrings!.ADD_KEY_EVENT);
     
 
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this, keyCode)!;
-        
-        
+    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this, keyCode)!;
 ;
     
 
-    var input: Input = this.inputFactory!.getInstance(keyCode)!;
-        
-        
+    var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
 ;
     
 this.process(gameKey, input);
@@ -291,8 +269,6 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
     //var input = input
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Start Passed GameKey: ");
@@ -324,7 +300,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.PROCESS);
 
 
     setSelectedAction(gameKey: GameKey){
-var gameKey = gameKey
+    //var gameKey = gameKey
 this.logUtil!.putF(new StringMaker().
                             append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
     
@@ -346,8 +322,6 @@ this.repaintBehavior!.onChangeRepaint(this);
     //var input = input
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Start GameKey: ");
@@ -366,14 +340,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "gameActionCrud");
                                     {
                                     
     var list: BasicArrayList = this.inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
-        
-        
 ;
     
 
     var isInputAlreadyMappedToSelectedAction: boolean = list.contains(input)!;
-        
-        
 ;
     
 
@@ -426,16 +396,12 @@ this.repaintBehavior!.onChangeRepaint(this);
     //var input = input
 
     var METHOD_NAME: string = "addNewMapping";
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
     
 
     var isInputAlreadyMapped: boolean = this.inputMapping!.getInputMapping()!.isMapped(input)!;
-        
-        
 ;
     
 
@@ -444,8 +410,6 @@ this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Add Key Mapping : GameKey: ");
@@ -483,14 +447,10 @@ this.setSelectedAction(gameKey);
     deleteCurrentMapping(){
 
     var METHOD_NAME: string = "deleteCurrentMapping";
-        
-        
 ;
     
 
     var list: BasicArrayList = this.inputMapping!.getInputMapping()!.getMappedInput(this.selectedGameKey)!;
-        
-        
 ;
     
 
@@ -499,8 +459,6 @@ this.setSelectedAction(gameKey);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Start GameKey: ");
@@ -558,7 +516,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
+    //var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 this.helpPaintable!.paint(graphics);

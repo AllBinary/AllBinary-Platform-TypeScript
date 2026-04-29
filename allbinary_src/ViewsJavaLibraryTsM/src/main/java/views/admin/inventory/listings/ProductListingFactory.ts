@@ -57,8 +57,6 @@ export class ProductListingFactory
 var searchRequest = searchRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -67,7 +65,7 @@ var searchRequest = searchRequest
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new views.admin.inventory.listings.ProductListing(searchRequest) as ProductListingInterface;
+                        return  as ProductListingInterfacenew views.admin.inventory.listings.ProductListing(searchRequest);
     
 
                 //: 
@@ -79,8 +77,6 @@ var searchRequest = searchRequest
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, "ProductListingFactory", commonStrings!.GET_INSTANCE, e);

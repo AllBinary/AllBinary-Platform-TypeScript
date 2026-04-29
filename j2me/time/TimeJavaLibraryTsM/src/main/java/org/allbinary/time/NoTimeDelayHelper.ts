@@ -43,8 +43,6 @@ export class NoTimeDelayHelper extends TimeDelayHelper {
         
 
     public static readonly SINGLETON: NoTimeDelayHelper = new NoTimeDelayHelper();
-        
-        
 public constructor (){
             super(0);
                     
@@ -54,7 +52,7 @@ public constructor (){
 }
 
 
-    public isTime(): boolean{
+    public isTimeTNT(): boolean{
 
 
 
@@ -64,7 +62,7 @@ public constructor (){
 }
 
 
-    public isTimeSince(delay: number): boolean{
+    public isTimeSinceTNT(delay: number): boolean{
 var delay = delay
 
 

@@ -94,8 +94,6 @@ this.setDocument(this.generate(this.toXmlDoc()));
 var objectConfigDocument = objectConfigDocument
 
     var newObjectConfigDocument: Document = super.generate(objectConfigDocument)!;
-        
-        
 ;
     
 

@@ -64,8 +64,6 @@ export class CommandUriAction
         
 
     private static readonly instance: CommandUriAction = new CommandUriAction();
-        
-        
 
     public static getInstance(): CommandUriAction{
 
@@ -78,12 +76,8 @@ export class CommandUriAction
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 
     public add(command: Command, url: string){
 var command = command
@@ -99,8 +93,6 @@ var command = command
         try {
             
     var intent: Intent = getIntent(command)!;
-        
-        
 ;
     
 ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
@@ -111,8 +103,6 @@ ResourceUtil.getInstance()!.getContext()!.startActivity(intent);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
@@ -125,21 +115,15 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string = this.hashtable.get(command as Object); as String;
-        
-        
+    var url: string =  as Stringthis.hashtable.get(command as Object);;
 ;
     
 
     var uri: Uri = Uri.parse(url)!;
-        
-        
 ;
     
 
     var intent: Intent = new Intent(Intent.ACTION_VIEW, uri);
-        
-        
 ;
     
 

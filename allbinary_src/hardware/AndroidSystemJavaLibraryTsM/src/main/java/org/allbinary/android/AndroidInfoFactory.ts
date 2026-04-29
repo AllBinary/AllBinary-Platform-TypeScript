@@ -53,8 +53,6 @@ export class AndroidInfoFactory
             
 
     private static readonly instance: AndroidInfoFactory = new AndroidInfoFactory();
-        
-        
 
     public static getInstance(): AndroidInfoFactory{
 
@@ -67,8 +65,6 @@ export class AndroidInfoFactory
 
 
     private readonly version: number = Integer.parseInt(Build.VERSION.SDK)!;
-        
-        
 
     public getVersion(): number{
 

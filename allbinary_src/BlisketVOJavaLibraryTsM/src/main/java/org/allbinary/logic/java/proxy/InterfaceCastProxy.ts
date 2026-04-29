@@ -79,14 +79,10 @@ var proxyMethod = proxyMethod
 var proxyArgs = proxyArgs
 
     var methodName: string = proxyMethod!.getName()!;
-        
-        
 ;
     
 
     var realMethod: Method = this.anyType!..constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;
-        
-        
 ;
     
 

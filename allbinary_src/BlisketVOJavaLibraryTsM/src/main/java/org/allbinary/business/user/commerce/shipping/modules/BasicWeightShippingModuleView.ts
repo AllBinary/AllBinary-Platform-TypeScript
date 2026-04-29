@@ -64,8 +64,6 @@ export class BasicWeightShippingModuleView extends BasicWeightShippingModule imp
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -119,8 +117,6 @@ var document = document
         try {
             
     var shippingMethodNode: Node = document.createElement(ShippingMethodData.NAME)!;
-        
-        
 ;
     
 shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, ShippingMethodData.NAME, this.getName()));
@@ -162,8 +158,6 @@ shippingMethodNode!.appendChild(ModDomHelper.createNameValueNodes(document, Ship
         try {
             
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 

@@ -99,7 +99,7 @@ export interface WaypointLayerInterface {
 
                 //@Throws(Error::class)
             
-    trackTo(dx: number, dy: number)
+    trackToDXY(dx: number, dy: number)
 
                 //@Throws(Error::class)
             

@@ -64,16 +64,10 @@ export class ImageComparisonResult
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly bufferedImages: BufferedImage[] = new Array(2);
-        
-        
 
     public readonly name: string
 
@@ -87,9 +81,9 @@ export class ImageComparisonResult
 
     private readonly nonMatchingPixelVector: Vector
 
-    private readonly frameOne: Long
+    private readonly frameOne: number
 
-    private readonly frameTwo: Long
+    private readonly frameTwo: number
 
     public pixelsThatMatch: number= 0
 
@@ -98,9 +92,7 @@ export class ImageComparisonResult
     private tolerance: number= 0
 
     private matchingPercent: number =  -1;
-        
-        
-public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number){
+public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number){
 
             super();
             //var name = name
@@ -125,14 +117,10 @@ this.setTolerance(0);
     
 
     var imageHeight: number = bufferedImage!.getHeight()!;
-        
-        
 ;
     
 
     var imageWidth: number = bufferedImage!.getWidth()!;
-        
-        
 ;
     
 
@@ -193,8 +181,6 @@ this.imageHeight= imageHeight;
                                     {
                                     
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Images were not the same size? Most likely a resolution change.", this, this.commonStrings!.CONSTRUCTOR);
@@ -283,7 +269,7 @@ this.tolerance= tolerance;
 }
 
 
-    public getFrameOne(): Long{
+    public getFrameOne(): number{
 
 
 
@@ -293,7 +279,7 @@ this.tolerance= tolerance;
 }
 
 
-    public getFrameTwo(): Long{
+    public getFrameTwo(): number{
 
 
 

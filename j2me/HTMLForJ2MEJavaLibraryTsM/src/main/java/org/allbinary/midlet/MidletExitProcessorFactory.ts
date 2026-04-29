@@ -30,9 +30,6 @@ import { J2MEUtil } from "../../../org/allbinary/J2MEUtil.js";
 import { Processor } from "../../../org/allbinary/canvas/Processor.js";
 
     
-import { MidletExitProcessor } from "../../../org/allbinary/midlet/MidletExitProcessor.js";
-
-    
 
 
 
@@ -58,8 +55,6 @@ export class MidletExitProcessorFactory
         
 
     private static readonly instance: MidletExitProcessorFactory = new MidletExitProcessorFactory();
-        
-        
 
     public static getInstance(): MidletExitProcessorFactory{
 
@@ -71,7 +66,7 @@ export class MidletExitProcessorFactory
 }
 
 
-    public getInstance(midlet: MIDlet): Processor{
+    public getExitInstance(midlet: MIDlet): Processor{
 var midlet = midlet
 
                         if(AppletUtil.isAppletLoader(midlet) || J2MEUtil.isJ2ME())

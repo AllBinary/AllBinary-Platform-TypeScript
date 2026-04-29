@@ -60,12 +60,8 @@ export class ResourceRelativeRelationshipFactory
         
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
-    private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private readonly hashtable: Hashtable = new Hashtable();
 
     private initialized: boolean= false
 
@@ -84,8 +80,6 @@ this.setInitialized(true);
 var resource = resource
 
     var listCanBeNull: any? = this.hashtable.get(resource as Object);
-        
-        
 ;
     
 
@@ -107,7 +101,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return listCanBeNull as BasicArrayList;
+                        return  as BasicArrayListlistCanBeNull;
     
 }
 
@@ -119,8 +113,6 @@ var resource = resource
 var hardPoint = hardPoint
 
     var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;
-        
-        
 ;
     
 

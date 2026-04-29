@@ -87,20 +87,22 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JCheckBox } from "./JCheckBox.js";
+
 export class RotationSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
-        
-        
 
     private imageProcessorInput: ImageProcessorInput
 
@@ -120,14 +122,12 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new object: Thread()
+new Thread()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -138,14 +138,10 @@ new object: Thread()
     
 
     var imageProcessorInput: ImageProcessorInput = this@RotationSpriteImageJPanel.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 
@@ -154,20 +150,14 @@ new object: Thread()
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as String))!;
-        
-        
+    var totalFrames: number = Integer(Integer.valueOf( as Stringthis@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem()))!;
 ;
     
 
-    var totalAngle: Integer = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as String))!;
-        
-        
+    var totalAngle: number = Integer(Integer.valueOf( as Stringthis@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem()))!;
 ;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);
@@ -178,8 +168,6 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
     
 
     var file: File = imageProcessorInput!.getFiles()[index]!;
-        
-        
 ;
     
 
@@ -188,14 +176,10 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
                                     {
                                     
     var filePath: string = file.getAbsolutePath()!;
-        
-        
 ;
     
 
     var extensionIndex: number = filePath!.indexOf(imageStrings!.PNG_EXTENSION)!;
-        
-        
 ;
     
 filePath= new StringMaker().
@@ -209,9 +193,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(this@RotationSpriteImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
-        
-        
+    var isWritten: boolean = ImageIO.write( as RenderedImagethis@RotationSpriteImageJPanel.result, imageStrings!.PNG, file)!;
 ;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
@@ -236,7 +218,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-jPanel1= new object: javax.swing.JPanel()
+jPanel1= new javax.swing.JPanel()
                                 {
                                 
     public paint(graphics: Graphics){
@@ -280,8 +262,6 @@ this.jLabel2= new javax.swing.JLabel();
     
 
     var jPanel1Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel1);
-        
-        
 ;
     
 this.jPanel1!.setLayout(jPanel1Layout);
@@ -293,15 +273,13 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.
 this.totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     CommonPhoneStrings.getInstance()!.FOUR,CommonPhoneStrings.getInstance()!.NINE,"18","20","36";
-        
-        
                                                 ]));
     
 this.jLabel1!.setText("Total Frames:");
     
 this.generateJButton!.setText("Generate");
     
-generateJButton!.addActionListener(new object: java.awt.event.ActionListener()
+generateJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -316,11 +294,9 @@ generateJButtonActionPerformed(evt);
 this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     "360","90";
-        
-        
                                                 ]));
     
-totalAngleJComboBox!.addActionListener(new object: java.awt.event.ActionListener()
+totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -338,8 +314,6 @@ this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 
     var jPanel2Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel2);
-        
-        
 ;
     
 this.jPanel2!.setLayout(jPanel2Layout);
@@ -352,8 +326,6 @@ this.jLabel2!.setText("Results:");
     
 
     var jPanel3Layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this.jPanel3);
-        
-        
 ;
     
 this.jPanel3!.setLayout(jPanel3Layout);
@@ -364,8 +336,6 @@ jPanel3Layout!.setVerticalGroup(jPanel3Layout!.createParallelGroup(org.jdesktop.
     
 
     var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

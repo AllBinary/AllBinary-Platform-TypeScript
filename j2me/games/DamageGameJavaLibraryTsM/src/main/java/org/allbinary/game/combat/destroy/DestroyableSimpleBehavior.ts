@@ -50,8 +50,6 @@ export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
     readonly ownerLayer: CollidableCompositeLayer
 
     private destroyed: boolean = false;
-        
-        
 public constructor (ownerLayer: CollidableCompositeLayer){
 
             super();

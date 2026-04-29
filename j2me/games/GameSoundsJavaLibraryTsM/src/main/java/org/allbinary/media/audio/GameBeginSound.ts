@@ -45,8 +45,6 @@ export class GameBeginSound extends CompositeSound {
         
 
     private soundInterface: Sound = new GameBeginSound();
-        
-        
 
     public static getInstance(): Sound{
 

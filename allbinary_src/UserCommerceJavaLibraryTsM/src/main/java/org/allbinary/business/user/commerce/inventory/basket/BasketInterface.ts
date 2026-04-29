@@ -62,13 +62,13 @@ export interface BasketInterface {
 
     public getTotalWeight(): string
 
-    public getNumberOfItems(): Integer
+    public getNumberOfItems(): number
 
     public getIds(): Set
 
-    public getItems(): HashMap<any, any>
+    public getItems(): HashMap
 
-    public getNumberOf(product: string): Integer
+    public getNumberOf(product: string): number
 
                 //@Throws(MoneyException::class)
             

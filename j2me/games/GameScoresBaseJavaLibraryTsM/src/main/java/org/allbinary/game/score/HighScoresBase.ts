@@ -45,6 +45,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { HighScoresFactoryInterface } from "./HighScoresFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
@@ -55,8 +57,6 @@ export class HighScoresBase
         
 
     commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 protected constructor (){
 
             super();
@@ -69,18 +69,20 @@ protected constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
-    public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
+    public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -88,7 +90,8 @@ protected constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

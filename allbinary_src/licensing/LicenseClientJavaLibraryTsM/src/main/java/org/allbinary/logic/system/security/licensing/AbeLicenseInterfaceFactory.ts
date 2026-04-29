@@ -66,8 +66,6 @@ export class AbeLicenseInterfaceFactory
         
 
     private static readonly SINGLETON: AbeLicenseInterfaceFactory = new AbeLicenseInterfaceFactory();
-        
-        
 
     public static getInstance(): AbeLicenseInterfaceFactory{
 
@@ -80,30 +78,18 @@ export class AbeLicenseInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private time: number = 0;
-        
-        
 
     private check: boolean = false;
-        
-        
 
     private checkPeriod: number = 36000000;
-        
-        
 
     private abeLicenseInterface: AbeLicenseInterface = 
                 null
             ;
-        
-        
 private constructor (){
 
             super();
@@ -152,8 +138,6 @@ this.abeLicenseInterface= AbeNoLicense.getInstance();
     
 
     var licenseClient: AbeLicenseClient = new AbeLicenseClient();
-        
-        
 ;
     
 this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
@@ -184,7 +168,8 @@ this.logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
 
 
 
-                            throw new LicensingException("License Server Connection Error")
+                            throw new LicensingException("License Server Connection Error");
+                    
 }
 
                 //: 
@@ -195,7 +180,8 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 
 
 
-                            throw new LicensingException("Unknown License Failure: " +this.constructor.name.toString()!)
+                            throw new LicensingException("Unknown License Failure: " +this.constructor.name.toString()!);
+                    
 }
 
 }
@@ -204,14 +190,10 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
     isTimeToGetKey(): boolean{
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var currentTime: number = calendar.getTimeInMillis()!;
-        
-        
 ;
     
 

@@ -80,8 +80,6 @@ this.name= name;
     
 
     var basicColorUtil: BasicColorUtil = BasicColorUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -114,8 +112,6 @@ this.name= name;
                             
 
     var alphaInt: number = ((tempValue>>24)&255);
-        
-        
 ;
     
 this.alpha= alphaInt;
@@ -124,8 +120,6 @@ this.alphaComponent= (alphaInt) /255;
     
 
     var redInt: number = ((tempValue>>16)&255);
-        
-        
 ;
     
 this.red= redInt;
@@ -134,8 +128,6 @@ this.redComponent= (redInt) /255;
     
 
     var greenInt: number = ((tempValue>>8)&255);
-        
-        
 ;
     
 this.green= greenInt;
@@ -144,8 +136,6 @@ this.greenComponent= (greenInt) /255;
     
 
     var blueInt: number = ((tempValue)&255);
-        
-        
 ;
     
 this.blue= blueInt;
@@ -180,8 +170,6 @@ this.value= tempValue;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("BasicColor: ");

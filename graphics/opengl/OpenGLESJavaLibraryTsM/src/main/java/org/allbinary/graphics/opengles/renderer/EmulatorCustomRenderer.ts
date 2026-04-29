@@ -63,16 +63,10 @@ export class EmulatorCustomRenderer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly renderStrings: RendererStrings = RendererStrings.getInstance()!;
-        
-        
 
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
     //var gl = gl
@@ -81,8 +75,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFA
     
 
     var initEmulatorFactory: InitEmulatorFactory = InitEmulatorFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -93,8 +85,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFA
         try {
             
     var WAIT_FOR_EMULATOR: string = "Waiting on Emulator Initialization";
-        
-        
 ;
     
 

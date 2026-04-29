@@ -55,8 +55,6 @@ var params = params
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -65,8 +63,6 @@ var params = params
 
                         for (
     var index: number = 0;
-        
-        
 index < params.length; index++)
         {
 stringBuffer!.append(" ");

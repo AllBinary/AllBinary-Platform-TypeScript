@@ -51,8 +51,6 @@ export class MineLayerCircularStaticPool
         
 
     private WEAPON_LAYER_CIRCULAR_STATIC_POOL: WeaponLayerCircularPool = new WeaponLayerCircularPool();
-        
-        
 
                 //@Throws(Error::class)
             

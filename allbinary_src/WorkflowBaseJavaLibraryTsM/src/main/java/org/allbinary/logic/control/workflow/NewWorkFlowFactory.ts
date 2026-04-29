@@ -72,8 +72,6 @@ export class NewWorkFlowFactory
         
 
     private static readonly instance: NewWorkFlowFactory = new NewWorkFlowFactory();
-        
-        
 
     public static getInstance(): NewWorkFlowFactory{
 
@@ -86,8 +84,6 @@ export class NewWorkFlowFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -96,49 +92,41 @@ private constructor (){
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
+    public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
     //var hashMap = hashMap
     //var pageContext = pageContext
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
-        
-        
+    var className: string =  as StringhashMap!.get(DynamicObjectData.NAME);;
 ;
     
 
     var params: any[] = new Array(2);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(2);
-        
-        
 ;
     
 classes[0]= hashMap!constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
-params[0]= hashMap as Object;
+params[0]=  as ObjecthashMap;
     
-params[1]= pageContext as Object;
+params[1]=  as ObjectpageContext;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, classes, params)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
+                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
     
 
                 //: 
@@ -150,8 +138,6 @@ params[1]= pageContext as Object;
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
@@ -162,7 +148,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -174,8 +161,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
@@ -186,7 +171,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -201,8 +187,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -215,15 +199,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, className, 
                             null, 
                             null)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new WorkFlowWrapper(anyType) as WorkFlowInterface;
+                        return  as WorkFlowInterfacenew WorkFlowWrapper(anyType);
     
 
                                     }
@@ -241,8 +223,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
@@ -253,7 +233,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -265,8 +246,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
@@ -277,7 +256,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

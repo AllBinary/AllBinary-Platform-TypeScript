@@ -85,8 +85,6 @@ export class DomHelper
         
 
     private static readonly instance: DomHelper = new DomHelper();
-        
-        
 
     public static getInstance(): DomHelper{
 
@@ -99,8 +97,6 @@ export class DomHelper
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -112,20 +108,14 @@ private constructor (){
         try {
             
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-        
-        
 ;
     
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-        
-        
 ;
     
 
     var document: Document = builder.newDocument()!;
-        
-        
 ;
     
 
@@ -157,20 +147,14 @@ var xmlFile = xmlFile
         try {
             
     var factory: DocumentBuilderFactory = DocumentBuilderFactory.newInstance()!;
-        
-        
 ;
     
 
     var builder: DocumentBuilder = factory.newDocumentBuilder()!;
-        
-        
 ;
     
 
     var document: Document = builder.parse(xmlFile)!;
-        
-        
 ;
     
 
@@ -186,7 +170,8 @@ var xmlFile = xmlFile
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -200,32 +185,22 @@ var document = document
         try {
             
     var domSource: DOMSource = new DOMSource(document);
-        
-        
 ;
     
 
     var byteArrayOutputStream: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
     var streamResult: StreamResult = new StreamResult(byteArrayOutputStream);
-        
-        
 ;
     
 
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-        
-        
 ;
     
 copyTransformer!.transform(domSource, streamResult);
@@ -243,7 +218,8 @@ copyTransformer!.transform(domSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -258,28 +234,20 @@ var document = document
         try {
             
     var copyTransformerFactory: TransformerFactory = TransformerFactory.newInstance()!;
-        
-        
 ;
     
 
     var copyTransformer: Transformer = copyTransformerFactory!.newTransformer()!;
-        
-        
 ;
     
 
     var domSource: DOMSource = new DOMSource(document);
-        
-        
 ;
     
 file.createNewFile();
     
 
     var streamResult: StreamResult = new StreamResult(file);
-        
-        
 ;
     
 copyTransformer!.transform(domSource, streamResult);
@@ -291,7 +259,8 @@ copyTransformer!.transform(domSource, streamResult);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -304,8 +273,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -314,14 +281,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfNodes; index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -342,7 +305,8 @@ index < numberOfNodes; index++)
 
 
 
-                            throw new Error(nodeName +" Node Not Found")
+                            throw new Error(nodeName +" Node Not Found");
+                    
 }
 
 
@@ -353,20 +317,14 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var childNodeList: NodeList = getChildNodeList(nodeName, nodeList)!;
-        
-        
 ;
     
 
     var numberOfChildren: number = childNodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -375,14 +333,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfChildren; index++)
         {
 
     var node: Node = childNodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -411,14 +365,10 @@ index < numberOfChildren; index++)
 var nodeList = nodeList
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var numberOfChildren: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -427,14 +377,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfChildren; index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -464,8 +410,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
-        
-        
 ;
     
 
@@ -474,14 +418,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfNodes; index++)
         {
 
     var node: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
@@ -504,7 +444,8 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw new Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search");
+                    
 }
 
 
@@ -515,8 +456,6 @@ var nodeName = nodeName
 var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.size()!;
-        
-        
 ;
     
 
@@ -525,14 +464,10 @@ var nodeList = nodeList
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index); as Node;
-        
-        
+    var node: Node =  as NodenodeList!.get(index);;
 ;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
@@ -555,7 +490,8 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw new Error(nodeName +" Node Not Found in search")
+                            throw new Error(nodeName +" Node Not Found in search");
+                    
 }
 
 

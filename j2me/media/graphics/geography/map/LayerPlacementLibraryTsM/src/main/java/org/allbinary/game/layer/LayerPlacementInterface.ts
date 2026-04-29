@@ -53,7 +53,7 @@ export interface LayerPlacementInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(): Hashtable<any, any>
+    getInstance(): Hashtable
 
 }
                 

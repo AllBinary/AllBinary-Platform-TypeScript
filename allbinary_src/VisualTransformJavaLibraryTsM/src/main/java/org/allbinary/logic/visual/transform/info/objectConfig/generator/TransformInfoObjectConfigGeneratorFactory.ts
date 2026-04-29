@@ -59,8 +59,6 @@ export class TransformInfoObjectConfigGeneratorFactory
         
 
     private static readonly instance: TransformInfoObjectConfigGeneratorFactory = new TransformInfoObjectConfigGeneratorFactory();
-        
-        
 
     public static getInstance(): TransformInfoObjectConfigGeneratorFactory{
 
@@ -73,8 +71,6 @@ export class TransformInfoObjectConfigGeneratorFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -86,9 +82,7 @@ private constructor (){
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
 
-    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName(); as String;
-        
-        
+    var type: string =  as StringtransformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName();;
 ;
     
 
@@ -97,8 +91,6 @@ var transformInfoInterface = transformInfoInterface
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.GET_INSTANCE);
@@ -138,7 +130,8 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
                             
 
 
-                            throw new Error("No Such TransformInfoObjectConfigGenerator Type")
+                            throw new Error("No Such TransformInfoObjectConfigGenerator Type");
+                    
 
                         }
                             

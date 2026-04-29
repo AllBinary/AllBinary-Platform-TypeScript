@@ -97,10 +97,8 @@ export class FileAuthenticationTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
-    private attemptsInteger: Integer
+    private attemptsInteger: number
 
     private weblisketSession: BasicWeblisketSession
 
@@ -201,13 +199,13 @@ this.timeout= this.weblisketSession!.getTimeout();
                                  && this.attemptsInteger!.toInt() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.toInt() +1));
+                                    this.weblisketSession!.setAttempts(this.attemptsInteger!.toInt() +1);
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(new Integer(1));
+                            this.weblisketSession!.setAttempts(1);
     
 
                         }
@@ -222,26 +220,18 @@ this.timeout= this.weblisketSession!.getTimeout();
         try {
             
     var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
-        
-        
 ;
     
 
     var password: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
-        
-        
 ;
     
 
     var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
-        
-        
 ;
     
 
     var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
-        
-        
 ;
     
 
@@ -259,8 +249,6 @@ this.timeout= this.weblisketSession!.getTimeout();
                                 
 
     var installerInfo: InstallerInfo = new InstallerInfo();
-        
-        
 ;
     
 
@@ -297,7 +285,8 @@ this.weblisketSession!.setPassword(newPassword);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -332,7 +321,7 @@ this.weblisketSession!.setPassword(newPassword);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(TagSupport.EVAL_BODY_INCLUDE).
+                        return TagSupport.EVAL_BODY_INCLUDE.
                             toInt();;
     
 
@@ -372,26 +361,18 @@ this.weblisketSession!.setPassword(newPassword);
                                     {
                                     
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-        
-        
 ;
     
 
     var sessionTimout: number = this.role.getSessionTimeout()!;
-        
-        
 ;
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var timeFirst: number = calendar.getTimeInMillis() -sessionTimout;
-        
-        
 ;
     
 
@@ -404,8 +385,6 @@ this.weblisketSession!.setPassword(newPassword);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Session Is Old - Timeout: ");
@@ -489,32 +468,22 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                                     {
                                     
     var timeCreated: number = this.weblisketSession!.getCreationTime()!;
-        
-        
 ;
     
 
     var lastAccess: number = this.weblisketSession!.getLastAccessedTime()!;
-        
-        
 ;
     
 
     var timePassed: number = this.role.getSessionInactivityTimeout()!;
-        
-        
 ;
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
     var timeFirst: number = calendar.getTimeInMillis() -lastAccess;
-        
-        
 ;
     
 
@@ -523,8 +492,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Session Is Rarely Used - Timeout: ");
@@ -613,8 +580,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Trying New login<p>");
@@ -631,8 +596,6 @@ stringBuffer!.append("Trying New login<p>");
             {
 
     var error: string = "Failed to set valid role";
-        
-        
 ;
     
 
@@ -664,8 +627,6 @@ stringBuffer!.append("Trying New login<p>");
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Sorry your username and password is invalid on this page.");
@@ -684,8 +645,6 @@ stringBuffer!.append("Trying New login<p>");
             {
 
     var error: string = "Failed to set role invalid";
-        
-        
 ;
     
 
@@ -719,8 +678,6 @@ stringBuffer!.append("Trying New login<p>");
                                     {
                                     
     var size: number = this.roles.length!;
-        
-        
 ;
     
 
@@ -729,14 +686,10 @@ stringBuffer!.append("Trying New login<p>");
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = this.roles.get(index); as BasicUserRole;
-        
-        
+    var mustBeOfRole: BasicUserRole =  as BasicUserRolethis.roles.get(index);;
 ;
     
 
@@ -823,8 +776,6 @@ index < size; index++)
     
 
     var installerInfo: InstallerInfo = new InstallerInfo();
-        
-        
 ;
     
 
@@ -846,7 +797,7 @@ index < size; index++)
                         if(login.compareTo(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(new Integer(0));
+                                    this.weblisketSession!.setAttempts(0);
     
 
 
@@ -965,11 +916,9 @@ this.nextAttempt();
         try {
             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.weblisketSession= new BasicWeblisketSession(pageContext);
     
@@ -1316,8 +1265,6 @@ pageContext!.getOut()!.print(invalidRole());
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Major authentication error - userName: ");

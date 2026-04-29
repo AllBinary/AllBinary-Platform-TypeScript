@@ -27,9 +27,6 @@ import { ScrollSelectionForm } from "../../../../../org/allbinary/graphics/form/
 import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
 
     
@@ -63,8 +60,6 @@ export class ImmediateCommandFormInputProcessor extends CommandFormInputProcesso
         
 
     private readonly timeHelper: TimeDelayHelper = new TimeDelayHelper(25);
-        
-        
 
     gameCommandCanvas: GameCommandCanvas
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCommandCanvas: GameCommandCanvas, form: ScrollSelectionForm){
@@ -90,10 +85,10 @@ var gameKeyEvent = gameKeyEvent
             super.onPressGameKeyEvent(gameKeyEvent);
     
 
-                        if(this.timeHelper!.isTime())
+                        if(this.timeHelper!.isTimeTNT())
                         
                                     {
-                                    this.processInput();
+                                    this.processInputList();
     
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
     
@@ -119,10 +114,10 @@ var gameKeyEvent = gameKeyEvent
             super.onDownGameKeyEvent(gameKeyEvent);
     
 
-                        if(this.timeHelper!.isTime())
+                        if(this.timeHelper!.isTimeTNT())
                         
                                     {
-                                    this.processInput();
+                                    this.processInputList();
     
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
     
@@ -148,10 +143,10 @@ var gameKeyEvent = gameKeyEvent
             super.onUpGameKeyEvent(gameKeyEvent);
     
 
-                        if(this.timeHelper!.isTime())
+                        if(this.timeHelper!.isTimeTNT())
                         
                                     {
-                                    this.processInput();
+                                    this.processInputList();
     
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
     
@@ -176,10 +171,10 @@ var motionGestureEvent = motionGestureEvent
             super.onMotionGestureEvent(motionGestureEvent);
     
 
-                        if(this.timeHelper!.isTime())
+                        if(this.timeHelper!.isTimeTNT())
                         
                                     {
-                                    this.processInput();
+                                    this.processInputList();
     
 this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
     

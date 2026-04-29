@@ -62,12 +62,10 @@ public constructor (){
 var eventObject = eventObject
 var eventListenerInterface = eventListenerInterface
 
-    var waypointEventListenerInterface: WaypointEventListenerInterface = (eventListenerInterface as WaypointEventListenerInterface);
-        
-        
+    var waypointEventListenerInterface: WaypointEventListenerInterface = ( as WaypointEventListenerInterfaceeventListenerInterface);
 ;
     
-waypointEventListenerInterface!.onWaypointEvent(eventObject as RTSLayerEvent);
+waypointEventListenerInterface!.onWaypointEvent( as RTSLayerEventeventObject);
     
 }
 

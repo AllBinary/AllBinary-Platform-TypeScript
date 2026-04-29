@@ -82,12 +82,8 @@ export class TransactionResultEntity extends AbSqlBean implements TransactionRes
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly tableName: string = "vresults";
-        
-        
 public constructor (){
             super(new UserDbInitInfo());
                     
@@ -105,12 +101,10 @@ var orderNumber = orderNumber
 
         try {
             
-    var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var whereHashMap: HashMap = new HashMap();
 ;
     
-whereHashMap!.put(OrderData.ID, orderNumber as String);
+whereHashMap!.put(OrderData.ID,  as StringorderNumber);
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
@@ -151,8 +145,6 @@ var transactionResultInterface = transactionResultInterface
         try {
             
     var values: Vector = new Vector();
-        
-        
 ;
     
 values.add(orderNumber);
@@ -163,15 +155,11 @@ values.addAll(transactionResultInterface!.getValues());
     
 
     var calendar: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 
-    var time: string = calendar.getTimeInMillis() as Long.
+    var time: string = calendar.getTimeInMillis().
                             toString()!;
-        
-        
 ;
     
 values.add(time);
@@ -212,15 +200,11 @@ var orderNumber = orderNumber
 
         try {
             
-    var resultHashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var resultHashMap: HashMap = new HashMap();
 ;
     
 
-    var updateKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var updateKeyAndValue: HashMap = new HashMap();
 ;
     
 updateKeyAndValue!.put(OrderData.ID, orderNumber);
@@ -235,8 +219,6 @@ resultHashMap= super.getRow(updateKeyAndValue);
                                     {
                                     
     var transactionResult: TransactionResult = new TransactionResult(resultHashMap);
-        
-        
 ;
     
 
@@ -252,7 +234,7 @@ resultHashMap= super.getRow(updateKeyAndValue);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return transactionResult as TransactionResultInterface;
+                        return  as TransactionResultInterfacetransactionResult;
     
 
                                     }
@@ -294,14 +276,10 @@ resultHashMap= super.getRow(updateKeyAndValue);
     public createTableStatement(): string{
 
     var paymentTransactionKeysFactory: PaymentTransactionKeysFactory = PaymentTransactionKeysFactory.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(OrderData.ID)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(UserData.USERNAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL);

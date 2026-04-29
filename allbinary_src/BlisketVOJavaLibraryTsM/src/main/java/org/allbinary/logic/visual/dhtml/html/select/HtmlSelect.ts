@@ -53,36 +53,20 @@ export class HtmlSelect extends HtmlTag {
         
 
     private readonly END: string = ">";
-        
-        
 
     private readonly STARTSELECT: string = "<SELECT ";
-        
-        
 
     private readonly ENDSELECT: string = "</SELECT>";
-        
-        
 
     private readonly SIZE: string = "SIZE=\"";
-        
-        
 
     private readonly NAME: string = "NAME=\"";
-        
-        
 
     private readonly STARTOPTION: string = "<OPTION";
-        
-        
 
     private readonly SELETED: string = "SELECTED";
-        
-        
 
     private readonly ENDOPTION: string = "</OPTION>";
-        
-        
 
     private before: string
 
@@ -97,12 +81,8 @@ export class HtmlSelect extends HtmlTag {
     private options: Vector
 
     private multiple: string = "multiple";
-        
-        
 
     private isMultipleSelect: boolean = false;
-        
-        
 public constructor (before: string, size: string, name: string, after: string){
 
             super();
@@ -136,8 +116,6 @@ var fileName = fileName
         try {
             
     var lineReader: LineReader = new LineReader(fileName);
-        
-        
 ;
     
 
@@ -145,8 +123,6 @@ var fileName = fileName
         {
 
     var option: string = lineReader!.next()!;
-        
-        
 ;
     
 this.addOption(option);
@@ -191,27 +167,19 @@ this.isMultipleSelect= value;
     getOptions(): string{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var result: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var optionsArray: any[] = this.options.toArray()!;
-        
-        
 ;
     
 
     var optionsSize: number = optionsArray!.length
                 ;
-        
-        
 ;
     
 
@@ -220,14 +188,10 @@ this.isMultipleSelect= value;
 
                         for (
     var i: number = 0;
-        
-        
 i < optionsSize; i++)
         {
 
-    var value: string = optionsArray[i]! as String;
-        
-        
+    var value: string =  as StringoptionsArray[i]!;
 ;
     
 
@@ -261,27 +225,19 @@ result += this.ENDOPTION;
     public toString(): string{
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var result: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 
     var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
-        
-        
 ;
     
 
     var attributeSize: number = attributeKeys!.length
                 ;
-        
-        
 ;
     
 result= this.before;
@@ -306,20 +262,14 @@ result += "\" ";
 
                         for (
     var i: number = 0;
-        
-        
 i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as String;
-        
-        
+    var key: string =  as StringattributeKeys[i]!;
 ;
     
 
-    var value: string = otherAttributes!.get(key); as String;
-        
-        
+    var value: string =  as StringotherAttributes!.get(key);;
 ;
     
 

@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -70,37 +72,23 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
     private readonly multipassState: MultipassState = new MultipassState();
-        
-        
 
     private done: boolean = false;
-        
-        
 
     private list: BasicArrayList = basicArrayListUtil!.getImmutableInstance()!;
-        
-        
 
     private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
-        
-        
 
-    private readonly FIRST_RUNNABLE: Runnable = new object: ARunnable()
+    private readonly FIRST_RUNNABLE: Runnable = new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -111,8 +99,6 @@ reset2();
     
 
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
-        
-        
 ;
     
 
@@ -124,16 +110,15 @@ reset2();
                                     
 
 
-                            throw new Error("Should never be running here")
+                            throw new Error("Should never be running here");
+                    
 
                                     }
                                 
 pathFindingInfo= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathFindingInfo(geographicMapCellPosition);
     
 
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
-        
-        
+    var localPathFindingInfo: PathFindingInfo =  as PathFindingInfopathFindingInfo;
 ;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
@@ -159,8 +144,6 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -175,31 +158,23 @@ finish();
 
                                 }
                             ;
-        
-        
 
-    private readonly SECOND_RUNNABLE: Runnable = new object: ARunnable()
+    private readonly SECOND_RUNNABLE: Runnable = new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var geographicMapCellPosition: GeographicMapCellPosition = pathFindingLayer!.getCurrentGeographicMapCellPosition()!;
-        
-        
 ;
     
 
-    var localPathFindingInfo: PathFindingInfo = pathFindingInfo as PathFindingInfo;
-        
-        
+    var localPathFindingInfo: PathFindingInfo =  as PathFindingInfopathFindingInfo;
 ;
     
 list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList(geographicMapCellPosition, localPathFindingInfo, multipassState);
@@ -219,8 +194,6 @@ list= targetPathFindingLayer!.getWaypointBehavior()!.getWaypoint()!.getPathsList
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -235,25 +208,19 @@ finish();
 
                                 }
                             ;
-        
-        
 
-    private readonly END_RUNNABLE: Runnable = new object: ARunnable()
+    private readonly END_RUNNABLE: Runnable = new ARunnable()
                                 {
                                 
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var waypointBehavior: WaypointBehaviorBase = pathFindingLayer!.getWaypointBehavior()!;
-        
-        
 ;
     
 waypointBehavior!.setWaypointPathsList(list);
@@ -266,8 +233,6 @@ pathFindingLayer!.getWaypointRunnableLogHelper()!.end(pathFindingLayer);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
@@ -282,27 +247,22 @@ finish();
 
                                 }
                             ;
-        
-        
 
-    private readonly ALREADY_ENDED_RUNNABLE: Runnable = new object: ARunnable()
+    private readonly ALREADY_ENDED_RUNNABLE: Runnable = new ARunnable()
                                 {
                                 
     public run(){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
                                 }
                             ;
-        
-        
 
     private currentPassRunnable: Runnable = FIRST_RUNNABLE;
-        
-        
 public constructor (){
 
             super();
@@ -330,8 +290,6 @@ this.done= false;
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -344,8 +302,6 @@ this.done= false;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

@@ -72,6 +72,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
+import { BoundBounceAI } from "./BoundBounceAI.js";
+
 export class TopUBoundBounceAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {
@@ -79,56 +81,40 @@ export class TopUBoundBounceAIFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
+    public getInstance(hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
 var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = ownerLayerInterface as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfaceownerLayerInterface;
 ;
     
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
-        
-        
+    var velocityInterface: VelocityInterface =  as VelocityInterfacevelocityInterfaceCompositeInterface!.getVelocityProperties();;
 ;
     
 
     var maxDistancePerTick: number = (velocityInterface!.getMaxForwardVelocity()>>velocityInterface!.getVelocityXBasicDecimalP()!.getScaledFactor());
-        
-        
 ;
     
 
     var halfWidth: number = ownerLayerInterface!.getWidth() *2 +maxDistancePerTick +1;
-        
-        
 ;
     
 
     var halfHeight: number = ownerLayerInterface!.getHeight() *2 +maxDistancePerTick +1;
-        
-        
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance0(halfWidth, halfHeight +60)!;
-        
-        
+    var point: GPoint = PointFactory.getInstance()!.createXY(halfWidth, halfHeight +60)!;
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var rectangle: Rectangle = new Rectangle(point, (displayInfo!.getLastWidth() -halfWidth -point.getX()), (displayInfo!.getLastHeight() -halfHeight -point.getY()));
-        
-        
 ;
     
 

@@ -50,6 +50,8 @@ import { Dimension } from "./Dimension.js";
 
 import { Rectangle } from "./Rectangle.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class MotionRectangleConstraints
             extends Object
          implements MotionRectangleConstraintsInterface {
@@ -174,14 +176,15 @@ var rectangle = rectangle
 
                 //@Throws(Error::class)
             
-    public isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
+    public isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
 var frame = frame
 var bufferedImage = bufferedImage
 var rectangle = rectangle
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

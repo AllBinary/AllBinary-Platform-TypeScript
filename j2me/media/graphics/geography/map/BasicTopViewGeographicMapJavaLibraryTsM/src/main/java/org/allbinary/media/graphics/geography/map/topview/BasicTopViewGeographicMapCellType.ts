@@ -68,14 +68,12 @@ export class BasicTopViewGeographicMapCellType
          {
         
 
-    public static create(name: string, type: number, cost: number): BasicTopViewGeographicMapCellType{
+    public static createType(name: string, type: number, cost: number): BasicTopViewGeographicMapCellType{
     //var name = name
     //var type = type
     //var cost = cost
 
     var types: BasicArrayList = new BasicArrayListS(1);
-        
-        
 ;
     
 types.add(type);
@@ -90,8 +88,6 @@ types.add(type);
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly name: string
 
@@ -106,18 +102,14 @@ public constructor (name: string, types: BasicArrayList, cost: number){
     //var cost = cost
 
     var size: number = types.size()!;
-        
-        
 ;
     
 
     var typeArray: number[] = new Array(size);
-        
-        
 ;
     
 
-    var typeAsInteger: Integer
+    var typeAsInteger: number
 ;
     
 
@@ -130,11 +122,9 @@ public constructor (name: string, types: BasicArrayList, cost: number){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-typeAsInteger= (types.get(index); as Integer);
+typeAsInteger= ( as Integertypes.get(index););
     
 type= typeAsInteger!.toInt();
     
@@ -172,18 +162,16 @@ this.types= typeArray;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isType(type.getType());;
+                        return this.hasType(type.getType());;
     
 }
 
 
-    public isType(type: number): boolean{
+    public hasType(type: number): boolean{
     //var type = type
 
     var size: number = types.length
                 ;
-        
-        
 ;
     
 
@@ -192,8 +180,6 @@ this.types= typeArray;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
@@ -233,15 +219,11 @@ index < size; index++)
     public toString(): string{
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = this.types.length
                 ;
-        
-        
 ;
     
 
@@ -250,8 +232,6 @@ index < size; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringMaker!.appendint(this.types[index]!)!.append(CommonSeps.getInstance()!.COMMA);

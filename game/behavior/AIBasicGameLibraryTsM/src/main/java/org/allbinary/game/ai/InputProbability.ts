@@ -53,18 +53,16 @@ export class InputProbability
          {
         
 
-    public INPUT_PROBABILITY: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(0)!;
-        
-        
+    public INPUT_PROBABILITY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private readonly likelyhoodIntegerArray: Integer[][]
+    private readonly likelyhoodIntegerArray: number[][]
 
-    private readonly repeatLikelyhoodIntegerArray: Integer[]
+    private readonly repeatLikelyhoodIntegerArray: number[]
 
     private readonly max: number
 
     private readonly timeDelayHelper: TimeDelayHelper
-public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodIntegerArray: Integer[], max: number, timeDelayHelper: TimeDelayHelper){
+public constructor (likelyhoodIntegerArray: number[][], repeatLikelyhoodIntegerArray: number[], max: number, timeDelayHelper: TimeDelayHelper){
 
             super();
         var likelyhoodIntegerArray = likelyhoodIntegerArray
@@ -82,7 +80,7 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public getLikelyhoodIntegerArray(): Integer[][]{
+    public getLikelyhoodIntegerArray(): number[][]{
 
 
 
@@ -92,7 +90,7 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public getRepeatLikelyhoodIntegerArray(): Integer[]{
+    public getRepeatLikelyhoodIntegerArray(): number[]{
 
 
 
@@ -122,11 +120,9 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public toHashtable(): Hashtable<any, any>{
+    public toHashtable(): Hashtable{
 
-    var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var hashtable: Hashtable = new Hashtable();
 ;
     
 hashtable.put(INPUT_PROBABILITY, this);

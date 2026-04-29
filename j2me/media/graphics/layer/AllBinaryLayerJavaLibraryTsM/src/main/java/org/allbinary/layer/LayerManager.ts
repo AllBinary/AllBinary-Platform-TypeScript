@@ -53,22 +53,14 @@ export class LayerManager
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly layerManagerLogging: LayerManagerLoggingBase
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly anyType: SynchObject = new SynchObject();
-        
-        
 public constructor (layerManagerLogging: LayerManagerLoggingBase){
 
             super();
@@ -101,8 +93,6 @@ this.layerManagerLogging= layerManagerLogging;
     
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -111,17 +101,15 @@ this.layerManagerLogging= layerManagerLogging;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-nextLayerInterface= this.list.get(index); as AllBinaryLayer;
+nextLayerInterface=  as AllBinaryLayerthis.list.get(index);;
     
 
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())
                         
                                     {
-                                    this.append(layerInterface, index);
+                                    this.appendAt(layerInterface, index);
     
 
 
@@ -152,12 +140,12 @@ this.list.add(layerInterface);
 
                 //@Throws(Error::class)
             
-    public append(layerInterface: AllBinaryLayer, index: number){
+    public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-this.layerManagerLogging!.append(layerInterface, index);
+this.layerManagerLogging!.appendAt(layerInterface, index);
     
-this.list.add(index, layerInterface);
+this.list.addAt(index, layerInterface);
     
 }
 
@@ -177,11 +165,9 @@ this.layerManagerLogging!.remove(layerInterface);
     
 
     var result: boolean = this.list.remove(layerInterface)!;
-        
-        
 ;
     
-this.layerManagerLogging!.remove(this, layerInterface, result);
+this.layerManagerLogging!.removeResult(this, layerInterface, result);
     
 }
 
@@ -194,7 +180,7 @@ this.layerManagerLogging!.remove(this, layerInterface, result);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.objectArray[index]! as Layer;
+                        return  as Layerthis.list.objectArray[index]!;
     
 }
 
@@ -253,11 +239,9 @@ var y = y
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
-comp= this.list.objectArray[index]! as Layer;
+comp=  as Layerthis.list.objectArray[index]!;
     
 
                         if(comp != 

@@ -83,16 +83,10 @@ export class GenericProfileActionScript extends DefaultMutableTreeNode implement
         
 
     private static readonly NAME: string = "Root";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private genericProfileActionJPanel: GenericProfileActionJPanel
 
@@ -111,8 +105,6 @@ this.setProfileActionConditionInterfaceVector(new Vector());
     
 
     var actionScriptNode: Node = DomSearchHelper.getNode(GenericProfileActionData.SCRIPT, node.getChildNodes())!;
-        
-        
 ;
     
 
@@ -123,8 +115,6 @@ this.setProfileActionConditionInterfaceVector(new Vector());
                                     {
                                     
     var nodeList: NodeList = actionScriptNode!.getChildNodes()!;
-        
-        
 ;
     
 
@@ -133,14 +123,10 @@ this.setProfileActionConditionInterfaceVector(new Vector());
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var actionConditionNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -161,7 +147,8 @@ index < nodeList!.getLength(); index++)
                             
 
 
-                            throw new Error("Profile Action Script Node Null")
+                            throw new Error("Profile Action Script Node Null");
+                    
 
                         }
                             
@@ -200,11 +187,9 @@ this.remove(profileActionScriptNodeInterface);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
@@ -241,20 +226,14 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
 var document = document
 
     var node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;
-        
-        
 ;
     
 
     var vector: Vector = this.getProfileActionConditionInterfaceVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -263,14 +242,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index); as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacevector.get(index);;
 ;
     
 node.appendChild(profileActionConditionInterface!.toXmlNode(document));

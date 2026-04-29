@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 
 
 
@@ -37,16 +39,12 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Runnable } from "./Runnable.js";
-
 export class AllBinaryRenderer
             extends Object
          {
         
 
     private static readonly instance: AllBinaryRenderer = new AllBinaryRenderer();
-        
-        
 
     public static getInstance(): AllBinaryRenderer{
 

@@ -46,8 +46,6 @@ export class LapInfo
         
 
     public NULL_LAP_INFO: LapInfo = new LapInfo( -1);
-        
-        
 
     private numberOfLaps: number
 
@@ -115,8 +113,6 @@ this.numberOfLaps++;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("isDone: ");

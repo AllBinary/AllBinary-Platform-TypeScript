@@ -69,13 +69,9 @@ export class MultiKeyPressesAI extends KeyPressesAI {
         
 
     private readonly toggleTimeHelper: TimeDelayHelper = new TimeDelayHelper(600);
-        
-        
 
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -97,29 +93,21 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
     update(){
 
     var gameInput: GameInput = this.getGameInput()!;
-        
-        
 ;
     
 
-    var keys: Integer[] = this.keys;
-        
-        
+    var keys: number[] = this.keys;
 ;
     
 
     var size: number = keys.length
                 ;
-        
-        
 ;
     
 
@@ -132,21 +120,17 @@ var allBinaryLayerManager = allBinaryLayerManager
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var key: number = keys[index]!.toInt()!;
-        
-        
 ;
     
 
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.add(this.gameKeyEventFactory!.getInstance(this, key));
+                                    gameInput!.add(this.gameKeyEventFactory!.getInstanceForKey(this, key));
     
 
                                     }
@@ -163,21 +147,17 @@ index < size; index++)
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var key: number = keys[index]!.toInt()!;
-        
-        
 ;
     
 
                         if(key !=  -1)
                         
                                     {
-                                    gameInput!.addForRemoval(this.gameKeyEventFactory!.getInstance(this, key));
+                                    gameInput!.addForRemoval(this.gameKeyEventFactory!.getInstanceForKey(this, key));
     
 
                                     }

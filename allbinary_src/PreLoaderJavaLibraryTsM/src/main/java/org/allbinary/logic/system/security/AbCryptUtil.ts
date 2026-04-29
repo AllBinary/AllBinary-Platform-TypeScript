@@ -58,8 +58,6 @@ export class AbCryptUtil
         
 
     private static readonly instance: AbCryptUtil = new AbCryptUtil();
-        
-        
 
     public static getInstance(): AbCryptUtil{
 
@@ -72,8 +70,6 @@ export class AbCryptUtil
 
 
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -89,18 +85,14 @@ private constructor (){
     var outputStream: ByteArrayOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
         try {
-            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)); as ByteArrayOutputStream;
+            outputStream=  as ByteArrayOutputStreamthis.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384));;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);
-        
-        
 ;
     
 abCrypt!.init(key);

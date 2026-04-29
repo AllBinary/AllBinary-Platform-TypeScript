@@ -55,8 +55,6 @@ export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsL
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public getList(): BasicArrayList{
 
@@ -65,17 +63,15 @@ export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsL
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
-list.addAll(new BasicTouchButtonsBuilder().
+list.addAllList(new BasicTouchButtonsBuilder().
                             getList());
     
-list.addAll(new BuildingScrollTouchButtonsBuilder().
+list.addAllList(new BuildingScrollTouchButtonsBuilder().
                             getList());
     
-this.add(list);
+this.addList(list);
     
 
 

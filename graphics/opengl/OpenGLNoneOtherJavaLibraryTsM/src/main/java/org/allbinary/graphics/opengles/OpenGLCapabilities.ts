@@ -46,8 +46,6 @@ export class OpenGLCapabilities
         
 
     private static readonly instance: OpenGLCapabilities = new OpenGLCapabilities();
-        
-        
 
     public static getInstance(): OpenGLCapabilities{
 
@@ -60,48 +58,26 @@ export class OpenGLCapabilities
 
 
     public readonly VERSION_1_0: string = "1.0";
-        
-        
 
     public readonly VERSION_1_1: string = "1.1";
-        
-        
 
     public readonly VERSION_2_0: string = "2.0";
-        
-        
 
     public readonly VERSION_3_0: string = "3.0";
-        
-        
 
     public readonly VERSION_3_1: string = "3.1";
-        
-        
 
     public readonly VERSION_3_2: string = "3.2";
-        
-        
 
     public readonly VERSION_HIGHER_THAN_EXISTS: string = "999.999";
-        
-        
 
     private glVersion: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public shaderVersion: number = 0;
-        
-        
 
     public glInstanceVersion: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     public maxTextureSize: number = 64;
-        
-        
 private constructor (){
 
             super();

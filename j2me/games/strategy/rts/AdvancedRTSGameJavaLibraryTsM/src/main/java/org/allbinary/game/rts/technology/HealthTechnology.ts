@@ -175,8 +175,6 @@ this.level++;
     
 
     var unitTechnologySingletonFactory: UnitTechnologySingletonFactory = UnitTechnologySingletonFactory.getInstance()!;
-        
-        
 ;
     
 unitTechnologySingletonFactory!.setHealth(unitTechnologySingletonFactory!.getHealth() +(this.getLevel() *100));

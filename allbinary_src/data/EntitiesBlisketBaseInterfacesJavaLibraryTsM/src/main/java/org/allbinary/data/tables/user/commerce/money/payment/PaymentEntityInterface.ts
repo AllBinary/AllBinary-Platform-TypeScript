@@ -53,7 +53,7 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
 
     public getLastId(userName: string): string
 
-    public setDefault(userName: string, index: Integer)
+    public setDefault(userName: string, index: number)
 
     public getDefault(userName: string): PaymentInterface
 
@@ -61,7 +61,7 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
 
     public add(userName: string, paymentInterface: PaymentInterface)
 
-    public remove(userName: string, index: Integer)
+    public remove(userName: string, index: number)
 
     public insert(values: Vector)
 

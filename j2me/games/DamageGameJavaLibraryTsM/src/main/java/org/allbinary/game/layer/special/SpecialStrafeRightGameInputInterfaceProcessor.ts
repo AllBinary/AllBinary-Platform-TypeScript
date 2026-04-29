@@ -61,7 +61,7 @@ public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterf
 
                 //@Throws(Error::class)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
+    public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
 this.specialGameInputInterface!.strafeRight();

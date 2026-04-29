@@ -73,8 +73,6 @@ export class TransformTemplateCustomizerUtil
         
 
     private static readonly instance: TransformTemplateCustomizerUtil = new TransformTemplateCustomizerUtil();
-        
-        
 
     public static getInstance(): TransformTemplateCustomizerUtil{
 
@@ -87,8 +85,6 @@ export class TransformTemplateCustomizerUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly CUSTOMIZER_NAME: string
 
@@ -110,14 +106,10 @@ private constructor (){
             super();
         
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
-        
-        
 ;
     
 this.CUSTOMIZER_NAME= SPACE +CustomizerTransformInfoData.NAME;
@@ -144,104 +136,74 @@ var viewName = viewName
 var storeName = storeName
 
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
-        
-        
 ;
     
 
     var ONE_EMPTY_STRING_ARRAY: string[] = StringUtil.getInstance()!.ONE_EMPTY_STRING_ARRAY;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(
                                                 [
                                                     viewName +SPACE;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     storeName +SPACE;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     CUSTOMIZER_NAME;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     BODY_VIEWNAMEKEY;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     TITLE_VIEWNAMEKEY;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     GLOBALS_NEW;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     this.GLOBALS_INSERT;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     this.GLOBALS_DELETE;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     this.GLOBALS_EDIT;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
                                                     this.GLOBALS_UPDATE;
-        
-        
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 
     var replace: Replace = 
                 null
             ;
-        
-        
 ;
     
 
     var rootViewName: string = replace.all(viewName)!;
-        
-        
 ;
     
 

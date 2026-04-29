@@ -51,8 +51,6 @@ export class BasicGroupItemsEntityFactory
         
 
     private static readonly instance: BasicGroupItemsEntityFactory = new BasicGroupItemsEntityFactory();
-        
-        
 
     public static getInstance(): BasicGroupItemsEntityFactory{
 
@@ -65,8 +63,6 @@ export class BasicGroupItemsEntityFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +84,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

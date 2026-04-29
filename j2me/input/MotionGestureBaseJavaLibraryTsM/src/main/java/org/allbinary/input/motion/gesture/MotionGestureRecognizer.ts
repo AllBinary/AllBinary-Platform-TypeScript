@@ -86,28 +86,16 @@ export class MotionGestureRecognizer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly j2seMath: J2SEMath = J2SEMath.getInstance()!;
-        
-        
 
     private readonly origin: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-        
-        
 
     private previous: GPoint = origin;
-        
-        
 
     private intermediate: GPoint = origin;
-        
-        
 
     private readonly line: Line = new Line(origin, origin);
-        
-        
 
     private readonly motionGesturesHandler: BasicMotionGesturesHandler
 
@@ -118,18 +106,14 @@ public constructor (id: number){
 
             super();
             //var id = id
-this.motionEventCircularPool= MotionEventCircularPool.getInstance(id);
+this.motionEventCircularPool= MotionEventCircularPool.createPool(id);
     
 
     var motionGesturesHandler: BasicEventHandler = new BasicEventHandler();
-        
-        
 ;
     
 
     var movedMotionGesturesHandler: BasicEventHandler = motionGesturesHandler;
-        
-        
 ;
     
 
@@ -144,15 +128,13 @@ movedMotionGesturesHandler= MovedMotionGesturesHandler.getInstance();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
     
 }
 
-this.motionGesturesHandler= motionGesturesHandler as BasicMotionGesturesHandler;
+this.motionGesturesHandler=  as BasicMotionGesturesHandlermotionGesturesHandler;
     
 this.movedMotionGesturesHandler= movedMotionGesturesHandler;
     
@@ -171,8 +153,6 @@ this.previous= this.origin;
     
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.PRESSED)!;
-        
-        
 ;
     
 event.setPreviousPoint(this.previous);
@@ -198,8 +178,6 @@ this.motionGesturesHandler!.fireEvent(event);
     //var button = button
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.RELEASED)!;
-        
-        
 ;
     
 event.setPreviousPoint(this.previous);
@@ -246,8 +224,6 @@ this.line.setP2(current);
     
 
     var minimumMotionGesture: number = MotionGestureConfigurationFactory.getInstance()!.getMinimumMotionGesture()!;
-        
-        
 ;
     
 
@@ -267,44 +243,30 @@ this.line.setP2(current);
                                 
 
     var gradient: number = this.line.getGradient()!;
-        
-        
 ;
     
 
     var absGradient: number = this.j2seMath!.abs(gradient);;
-        
-        
 ;
     
 
     var conf: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
     var newMotionGesture: MotionGestureInput = touchMotionGestureFactory!.NO_MOTION;
-        
-        
 ;
     
 
     var diagonalToleranceHigher: number = 12.0;
-        
-        
 ;
     
 
     var diagonalToleranceLower: number = 12.0;
-        
-        
 ;
     
 
@@ -417,8 +379,6 @@ this.intermediate= current;
     
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(newMotionGesture)!;
-        
-        
 ;
     
 event.setPreviousPoint(this.previous);
@@ -444,8 +404,6 @@ this.motionGesturesHandler!.fireEvent(event);
     //var button = button
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.NO_MOTION)!;
-        
-        
 ;
     
 event.setPreviousPoint(this.previous);

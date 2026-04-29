@@ -77,8 +77,6 @@ export class CssStyleValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     cssStyleElementVector: Vector
 public constructor (){
@@ -96,7 +94,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(d
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -110,8 +108,6 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -125,8 +121,6 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
                                 
 
     var size: number = this.cssStyleElementVector!.length!;
-        
-        
 ;
     
 
@@ -135,14 +129,10 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i); as ValidationInterface;
-        
-        
+    var styleValidationInterface: ValidationInterface =  as ValidationInterfacethis.cssStyleElementVector!.get(i);;
 ;
     
 
@@ -200,8 +190,6 @@ i < size; i++)
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -261,22 +249,16 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
-        
-        
 ;
     
 
     var styleNode: Node = document.createElement(StyleData.getInstance()!.NAME)!;
-        
-        
 ;
     
 node.appendChild(styleNode);
     
 
     var size: number = this.cssStyleElementVector!.length!;
-        
-        
 ;
     
 
@@ -285,14 +267,10 @@ node.appendChild(styleNode);
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i); as DomNodeInterface;
-        
-        
+    var styleDomNodeInterface: DomNodeInterface =  as DomNodeInterfacethis.cssStyleElementVector!.get(i);;
 ;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));

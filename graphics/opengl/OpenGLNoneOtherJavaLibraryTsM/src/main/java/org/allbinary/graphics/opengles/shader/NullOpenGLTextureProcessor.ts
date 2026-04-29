@@ -45,8 +45,6 @@ export class NullOpenGLTextureProcessor
         
 
     private static readonly instance: OpenGLObject3dProcessor = new OpenGLObject3dProcessor();
-        
-        
 
     public static getInstance(): OpenGLObject3dProcessor{
 

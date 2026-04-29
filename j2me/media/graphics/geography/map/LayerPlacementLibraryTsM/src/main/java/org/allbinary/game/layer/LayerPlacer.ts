@@ -87,12 +87,10 @@ this.dimension= dimension;
 
                 //@Throws(Error::class)
             
-    public process(list: BasicArrayList){
+    public processList(list: BasicArrayList){
     //var list = list
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -105,11 +103,9 @@ this.dimension= dimension;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-layerPlacementInterface= list.objectArray[index]! as LayerPlacementInterface;
+layerPlacementInterface=  as LayerPlacementInterfacelist.objectArray[index]!;
     
 this.process(layerPlacementInterface);
     
@@ -124,26 +120,18 @@ this.process(layerPlacementInterface);
     //var layerPlacementInterface = layerPlacementInterface
 
     var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;
-        
-        
 ;
     
 
     var layerInterfaceFactory: LayerInterfaceFactory = LayerInterfaceFactory.getInstance()!;
-        
-        
 ;
     
 
-    var hashtable: Hashtable<any, any> = layerPlacementInterface!.getInstance()!;
-        
-        
+    var hashtable: Hashtable = layerPlacementInterface!.getInstance()!;
 ;
     
 
-    var enumeration: Enumeration<any?> = hashtable.keys()!;
-        
-        
+    var enumeration: Enumeration = hashtable.keys()!;
 ;
     
 
@@ -151,7 +139,7 @@ this.process(layerPlacementInterface);
 ;
     
 
-    var layerHashtable: Hashtable<any, any>
+    var layerHashtable: Hashtable
 ;
     
 
@@ -173,9 +161,9 @@ this.process(layerPlacementInterface);
 
         while(enumeration.hasMoreElements())
         {
-point= enumeration.nextElement()!; as GPoint;
+point=  as GPointenumeration.nextElement()!;;
     
-layerHashtable= hashtable.get(point as Object); as Hashtable<any, any>;
+layerHashtable=  as Hashtablehashtable.get(point as Object);;
     
 x= point.getX() +relativePoint!.getX();
     
@@ -183,7 +171,7 @@ y= point.getY() +relativePoint!.getY();
     
 z= point.getZ() +relativePoint!.getZ();
     
-layerInterface= layerInterfaceFactory!.getInstance(layerHashtable, x, y, z);
+layerInterface= layerInterfaceFactory!.getNexInstance(layerHashtable, x, y, z);
     
 this.layerInterfaceVisitor!.visit(layerInterface);
     
@@ -198,14 +186,10 @@ this.layerInterfaceVisitor!.visit(layerInterface);
     //var layerPlacementInterface = layerPlacementInterface
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
     var layerPlacementType: LayerPlacementType = layerPlacementInterface!.getLayerType()!;
-        
-        
 ;
     
 
@@ -214,33 +198,25 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                                     {
                                     
     var width: number = layerPlacementInterface!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = layerPlacementInterface!.getHeight()!;
-        
-        
 ;
     
 
     var x: number = ((this.dimension.getX() -width) /2);
-        
-        
 ;
     
 
     var y: number = ((this.dimension.getY() -height) /2);
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pointFactory!.getInstance0(x, y);;
+                        return pointFactory!.createXY(x, y);;
     
 
                                     }
@@ -251,33 +227,25 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                                     {
                                     
     var width: number = layerPlacementInterface!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = layerPlacementInterface!.getHeight()!;
-        
-        
 ;
     
 
     var x: number = ((this.dimension.getX() -width) /2);
-        
-        
 ;
     
 
     var y: number =  -height;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return pointFactory!.getInstance0(x, y);;
+                        return pointFactory!.createXY(x, y);;
     
 
                                     }
@@ -286,7 +254,8 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                             
 
 
-                            throw new Error("PlacementType Not Recognized")
+                            throw new Error("PlacementType Not Recognized");
+                    
 
                         }
                             

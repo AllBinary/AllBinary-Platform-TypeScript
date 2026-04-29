@@ -45,8 +45,6 @@ public constructor (){
     //var string = string
 
     var stringLength: number = string.length!;
-        
-        
 ;
     
 this.ensureCapacity(this.currentLength +stringLength);
@@ -218,8 +216,6 @@ this.charArray[this.currentLength++]=
 
     var oldCapacity: number = this.charArray!.length
                 ;
-        
-        
 ;
     
 
@@ -228,8 +224,6 @@ this.charArray[this.currentLength++]=
                                     {
                                     
     var newCapacity: number = oldCapacity *3;
-        
-        
 ;
     
 
@@ -240,14 +234,10 @@ this.charArray[this.currentLength++]=
                                                         
                                                         new Array(newCapacity)
                                                     ;
-        
-        
 ;
     
 
     var min: number = this.min(this.charArray!.length, newCapacity)!;
-        
-        
 ;
     
 

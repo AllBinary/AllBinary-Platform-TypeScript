@@ -84,7 +84,7 @@ export class Item extends BasicItem implements OrderItemInterface {
     private shippingAddress: StreetAddress
 
     private special: string
-public constructor (itemHashMap: HashMap<any, any>){
+public constructor (itemHashMap: HashMap){
             super(itemHashMap);
                     var itemHashMap = itemHashMap
 
@@ -100,8 +100,6 @@ public constructor (){
             super();
         
     var EMPTY: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 this.group= EMPTY;
@@ -117,17 +115,17 @@ this.shippingAddress= new StreetAddress();
 }
 
 
-    setData(itemHashMap: HashMap<any, any>){
+    setData(itemHashMap: HashMap){
 var itemHashMap = itemHashMap
-this.group= itemHashMap!.get(ShippingMethodData.GROUP); as String;
+this.group=  as StringitemHashMap!.get(ShippingMethodData.GROUP);;
     
-this.tax= itemHashMap!.get(OrderHistoryData.TAX); as String;
+this.tax=  as StringitemHashMap!.get(OrderHistoryData.TAX);;
     
-this.shippingType= itemHashMap!.get(ShippingMethodData.NAME); as String;
+this.shippingType=  as StringitemHashMap!.get(ShippingMethodData.NAME);;
     
-this.shippingCost= itemHashMap!.get(ShippingMethodData.COST); as String;
+this.shippingCost=  as StringitemHashMap!.get(ShippingMethodData.COST);;
     
-this.shippedDate= itemHashMap!.get(OrderHistoryData.SHIPPEDDATE); as String;
+this.shippedDate=  as StringitemHashMap!.get(OrderHistoryData.SHIPPEDDATE);;
     
 itemHashMap!.put(StreetAddressData.NAME, itemHashMap!.get(ShippingAddressData.NAME));
     
@@ -248,11 +246,9 @@ this.special= value;
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = super.toHashMap()!;
-        
-        
+    var hashMap: HashMap = super.toHashMap()!;
 ;
     
 hashMap!.put(ShippingMethodData.GROUP, this.group);

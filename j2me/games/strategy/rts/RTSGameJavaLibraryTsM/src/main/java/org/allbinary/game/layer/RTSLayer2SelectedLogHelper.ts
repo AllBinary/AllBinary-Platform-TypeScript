@@ -51,8 +51,6 @@ export class RTSLayer2SelectedLogHelper extends RTSLayer2LogHelper {
         
 
     private static readonly instance: RTSLayer2SelectedLogHelper = new RTSLayer2SelectedLogHelper();
-        
-        
 
     public static getInstance(): RTSLayer2SelectedLogHelper{
 
@@ -65,16 +63,10 @@ export class RTSLayer2SelectedLogHelper extends RTSLayer2LogHelper {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly TRACK_TO_FIRE_OR_MOVE: string = "trackTo:fireOrMove";
-        
-        
 
     private readonly BUILDING_CHASE: string = "buildingChase";
-        
-        
 
     public steeringUp(pathFindingLayerInterface: PathFindingLayerInterface){
     //var pathFindingLayerInterface = pathFindingLayerInterface

@@ -71,11 +71,11 @@ this.dy= dy;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
-super.paint(graphics, x +this.dx, y +this.dy);
+super.paintXY(graphics, x +this.dx, y +this.dy);
     
 }
 

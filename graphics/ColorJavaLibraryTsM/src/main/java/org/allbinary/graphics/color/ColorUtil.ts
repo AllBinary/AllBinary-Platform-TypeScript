@@ -50,8 +50,6 @@ export class ColorUtil
         
 
     private static readonly instance: ColorUtil = new ColorUtil();
-        
-        
 
     public static getInstance(): ColorUtil{
 

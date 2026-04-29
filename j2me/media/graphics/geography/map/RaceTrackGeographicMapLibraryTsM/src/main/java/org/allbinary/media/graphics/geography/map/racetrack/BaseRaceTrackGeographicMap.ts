@@ -71,8 +71,6 @@ export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements Ra
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private raceTrackInfo: RaceTrackInfo
 
@@ -100,8 +98,6 @@ this.miniGeographicMap= miniGeographicMap;
     
 
     var miniTiledLayer: AllBinaryTiledLayer = this.miniGeographicMap!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
@@ -111,14 +107,10 @@ this.miniGeographicMap= miniGeographicMap;
                                     
     var error: string = new StringMaker().
                             append("RaceTrackMap has incorrect Mini Map columns: ")!.appendint(miniTiledLayer!.getColumns())!.append(" != ")!.appendint(this.getGeographicMapCellPositionFactory()!.getColumns())!.toString()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
@@ -126,7 +118,8 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 
                                     }
                                 
@@ -136,14 +129,10 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
                                     {
                                     
     var error: string = "RaceTrackMap has incorrect Mini Map rows";
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
@@ -151,7 +140,8 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw new Error(error)
+                            throw new Error(error);
+                    
 
                                     }
                                 

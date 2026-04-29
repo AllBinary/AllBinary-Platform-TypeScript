@@ -35,8 +35,6 @@ export class OpenGLObject3dProcessor
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public process(gl: GL10, object3d: any = {}){
 var gl = gl

@@ -121,7 +121,7 @@ export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPos
 
     private animationInterface: CircleFilledAnimation
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
-            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.getInstance0(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
+            super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.createXY(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
                     var geographicMapInterface = geographicMapInterface
 var viewPosition = viewPosition
 
@@ -168,26 +168,22 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
-        
-        
+    var colorCompositeInterface: ColorCompositeInterface =  as ColorCompositeInterfacegeographicMapCellPositionEvent!.getSource();;
 ;
     
 
     var index: number = this.list.indexOf(colorCompositeInterface)!;
-        
-        
 ;
     
 
                         if(index >= 0)
                         
                                     {
-                                    this.list.remove(index);
+                                    this.list.removeAt(index);
     
-this.basicColorList!.remove(index);
+this.basicColorList!.removeAt(index);
     
-this.positionList!.remove(index);
+this.positionList!.removeAt(index);
     
 
                                     }
@@ -201,21 +197,15 @@ this.positionList!.remove(index);
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
-        
-        
+    var colorCompositeInterface: ColorCompositeInterface =  as ColorCompositeInterfacegeographicMapCellPositionEvent!.getSource();;
 ;
     
 
     var layerIndex: number =  -1;
-        
-        
 ;
     
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -228,11 +218,9 @@ this.positionList!.remove(index);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-nextColorCompositeInterface= this.list.get(index); as ColorCompositeInterface;
+nextColorCompositeInterface=  as ColorCompositeInterfacethis.list.get(index);;
     
 
                         if(nextColorCompositeInterface == colorCompositeInterface)
@@ -250,14 +238,10 @@ break;
 
 
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionFactory!.getInstance(geographicMapCellPositionEvent!.getGeographicMapCellPosition())!;
-        
-        
 ;
     
 
     var point: GPoint = geographicMapCellPosition!.getPoint()!;
-        
-        
 ;
     
 
@@ -268,8 +252,6 @@ break;
     
 
     var basicColor: BasicColor = colorCompositeInterface!.getBasicColorP()!;
-        
-        
 ;
     
 this.basicColorList!.add(basicColor);
@@ -294,20 +276,14 @@ layerIndex= this.basicColorList!.size() -1;
 var graphics = graphics
 
     var localPositionList: BasicArrayList = this.positionList;
-        
-        
 ;
     
 
     var localBasicColorList: BasicArrayList = this.basicColorList;
-        
-        
 ;
     
 
     var length: number = localPositionList!.size()!;
-        
-        
 ;
     
 
@@ -324,19 +300,17 @@ var graphics = graphics
 
                         for (
     var index: number = length;
-        
-        
 --index >= 0; )
         {
-point= localPositionList!.get(index); as GPoint;
+point=  as GPointlocalPositionList!.get(index);;
     
-basicColor= localBasicColorList!.get(index); as BasicColor;
+basicColor=  as BasicColorlocalBasicColorList!.get(index);;
     
 graphics.setColor(basicColor!.toInt());
     
 this.animationInterface!.setBasicColorP(basicColor);
     
-this.animationInterface!.paint(graphics, point.getX() +this.x, point.getY() +this.y);
+this.animationInterface!.paintXY(graphics, point.getX() +this.x, point.getY() +this.y);
     
 }
 

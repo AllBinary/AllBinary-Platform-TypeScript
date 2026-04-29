@@ -69,6 +69,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
@@ -83,14 +85,13 @@ export class NullPathFindingLayer
         
 
     public static readonly NULL_PATH_FINDING_LAYER: NullPathFindingLayer = new NullPathFindingLayer();
-        
-        
 
     public getName(): string{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -100,7 +101,8 @@ export class NullPathFindingLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -108,7 +110,8 @@ export class NullPathFindingLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -116,7 +119,8 @@ export class NullPathFindingLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -124,7 +128,8 @@ export class NullPathFindingLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -135,7 +140,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -143,7 +149,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -151,7 +158,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -162,7 +170,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -174,7 +183,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -183,7 +193,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -194,7 +205,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -203,7 +215,8 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -214,7 +227,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -224,7 +238,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -232,7 +247,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -240,7 +256,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -248,7 +265,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -259,19 +277,21 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    public trackTo(dx: number, dy: number){
+    public trackToDXY(dx: number, dy: number){
     //var dx = dx
     //var dy = dy
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -283,7 +303,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -291,7 +312,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -299,7 +321,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -307,7 +330,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -317,7 +341,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -327,7 +352,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -335,7 +361,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -343,7 +370,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -351,7 +379,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -359,7 +388,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -367,7 +397,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -375,7 +406,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -385,7 +417,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -393,7 +426,8 @@ var resource = resource
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

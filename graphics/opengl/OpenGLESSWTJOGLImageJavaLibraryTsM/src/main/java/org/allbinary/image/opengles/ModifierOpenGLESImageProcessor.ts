@@ -46,8 +46,6 @@ export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
         
 
     private static readonly instance: ModifierOpenGLESImageProcessor = new ModifierOpenGLESImageProcessor();
-        
-        
 
     public static getInstance(): ModifierOpenGLESImageProcessor{
 

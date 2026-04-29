@@ -43,8 +43,6 @@ export class AppletUtil
         
 
     private applet: boolean = false;
-        
-        
 
     public static setApplet(){
 applet= true;

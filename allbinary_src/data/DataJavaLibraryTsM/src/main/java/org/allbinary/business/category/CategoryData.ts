@@ -46,8 +46,6 @@ export class CategoryData
         
 
     private static readonly instance: CategoryData = new CategoryData();
-        
-        
 
     public static getInstance(): CategoryData{
 
@@ -65,44 +63,24 @@ private constructor (){
 
 
     public readonly PARENT: string = "CATEGORY_PARENT";
-        
-        
 
     public readonly NAME: string = "CATEGORY_NAME";
-        
-        
 
     public readonly PATH: string = "CATEGORY_PATH";
-        
-        
 
     public readonly LABEL: string = "CATEGORY_LABEL";
-        
-        
 
     public readonly VIEW: string = "CATEGORY_VIEW_CATEGORY";
-        
-        
 
     public readonly LEVEL: string = "CATEGORY_LEVEL";
-        
-        
 
     public readonly REQUEST: string = "request";
-        
-        
 
     public readonly ROOTCATEGORY: string = "Category";
-        
-        
 
     public readonly UNCRYPTED_EXTENSION: string = DataFileData.UNCRYPTED_EXTENSION;
-        
-        
 
     public readonly ENCRYPTED_EXTENSION: string = DataFileData.ENCRYPTED_EXTENSION;
-        
-        
 
 }
                 

@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpecialGameInput } from "./SpecialGameInput.js";
+
 export class SpecialGameInputFactory
             extends Object
          {
         
 
     public static readonly NO_SPECIAL_GAME_INPUT: SpecialGameInput = new SpecialGameInput();
-        
-        
 
 }
                 

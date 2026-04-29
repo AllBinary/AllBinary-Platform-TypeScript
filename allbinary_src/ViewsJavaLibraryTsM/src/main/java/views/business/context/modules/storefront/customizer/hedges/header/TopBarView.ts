@@ -62,8 +62,6 @@ export class TopBarView extends HttpStoreComponentView implements DomNodeInterfa
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     heading: HeadingValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -77,7 +75,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -110,7 +108,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -145,7 +144,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

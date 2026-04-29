@@ -59,12 +59,8 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
         
 
     private gameKey: GameKey = GameKey.NULL_GAME_KEY;
-        
-        
 
     private gameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
-        
-        
 public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
             super(name, motionGestureInput);
                     var name = name

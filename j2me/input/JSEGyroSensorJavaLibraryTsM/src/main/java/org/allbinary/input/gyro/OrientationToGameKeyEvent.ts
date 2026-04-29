@@ -56,8 +56,6 @@ export class OrientationToGameKeyEvent
     private allBinaryGyroSensor: AllBinaryOrientationSensor
 
     private readonly MIN: number = 15;
-        
-        
 public constructor (){
 
             super();
@@ -74,7 +72,8 @@ public constructor (){
                             
 
 
-                            throw new Error("Not Such Feature")
+                            throw new Error("Not Such Feature");
+                    
 
                         }
                             

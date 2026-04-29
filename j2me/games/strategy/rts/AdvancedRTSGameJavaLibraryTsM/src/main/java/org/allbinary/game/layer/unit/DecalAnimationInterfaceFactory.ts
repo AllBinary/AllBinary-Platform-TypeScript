@@ -61,8 +61,6 @@ export class DecalAnimationInterfaceFactory
         
 
     private static readonly instance: DecalAnimationInterfaceFactory = new DecalAnimationInterfaceFactory();
-        
-        
 
     public static getInstance(): DecalAnimationInterfaceFactory{
 
@@ -76,9 +74,9 @@ export class DecalAnimationInterfaceFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
-var basicGameResources = basicGameResources
-var basicColor = basicColor
+    public getAnimationFactory(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
+    //var basicGameResources = basicGameResources
+    //var basicColor = basicColor
 
     var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface
 ;

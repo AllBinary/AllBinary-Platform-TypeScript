@@ -43,8 +43,6 @@ export class PointsUtil
         
 
     private static readonly instance: PointsUtil = new PointsUtil();
-        
-        
 
     public static getInstance(): PointsUtil{
 
@@ -56,21 +54,17 @@ export class PointsUtil
 }
 
 
-    public adjust(points: number[][][], x: number, y: number): number[][][]{
+    public adjustXY(points: number[][][], x: number, y: number): number[][][]{
     //var points = points
     //var x = x
     //var y = y
 
     var size: number = points.length
                 ;
-        
-        
 ;
     
 
     var newPoints: number[][][] = Array.from({ length: size }, () => Array.from({ length: 0 }, () => new Array(0).fill(0)));
-        
-        
 ;
     
 
@@ -79,15 +73,11 @@ export class PointsUtil
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var size2: number = points[index]!.length
                 ;
-        
-        
 ;
     
 newPoints[index]= new Array(size2) [2];
@@ -98,8 +88,6 @@ newPoints[index]= new Array(size2) [2];
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < size2; index2++)
         {
 
@@ -152,8 +140,6 @@ var x = x
 var y = y
 
     var newPoints: number[][] = new Array(points.length) [2];
-        
-        
 ;
     
 
@@ -162,8 +148,6 @@ var y = y
 
                         for (
     var index2: number = 0;
-        
-        
 index2 < points.length; index2++)
         {
 

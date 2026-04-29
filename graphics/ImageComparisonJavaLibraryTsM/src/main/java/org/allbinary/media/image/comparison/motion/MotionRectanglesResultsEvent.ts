@@ -45,10 +45,10 @@ import { MotionRectangles } from "./MotionRectangles.js";
 export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
         
 
-    private readonly frame: Long
+    private readonly frame: number
 
     private motionRectangles: MotionRectangles
-public constructor (anyType: any = {}, frame: Long, motionRectangles: MotionRectangles){
+public constructor (anyType: any = {}, frame: number, motionRectangles: MotionRectangles){
             super(anyType);
                     var anyType = anyType
 var frame = frame
@@ -81,7 +81,7 @@ this.motionRectangles= motionRectangles;
 }
 
 
-    public getFrame(): Long{
+    public getFrame(): number{
 
 
 

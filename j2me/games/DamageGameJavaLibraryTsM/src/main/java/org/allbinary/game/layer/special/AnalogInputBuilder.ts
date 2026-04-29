@@ -51,8 +51,6 @@ export class AnalogInputBuilder
         
 
     private static readonly instance: AnalogInputBuilder = new AnalogInputBuilder();
-        
-        
 
     public static getInstance(): AnalogInputBuilder{
 

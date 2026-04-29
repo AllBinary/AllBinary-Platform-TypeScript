@@ -40,14 +40,14 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OpenGLImageCache } from "./OpenGLImageCache.js";
+
 export class OpenGLImageCacheFactory
             extends Object
          {
         
 
     private static readonly IMAGE_CACHE: ImageCache = new OpenGLImageCache();
-        
-        
 
     public static getInstance(): ImageCache{
 

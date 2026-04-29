@@ -59,7 +59,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.visit(anyType as AbFile); as Object;
+                        return  as Objectthis.visit( as AbFileanyType);;
     
 }
 

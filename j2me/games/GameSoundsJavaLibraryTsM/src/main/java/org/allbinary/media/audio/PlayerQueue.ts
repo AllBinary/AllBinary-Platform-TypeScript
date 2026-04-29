@@ -65,16 +65,10 @@ export class PlayerQueue
         
 
     private static readonly TOTAL: string = "Sounds In Queue: ";
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private max: number
  constructor (max: number){
@@ -113,23 +107,19 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
     public process(): boolean{
 
     var sound: Sound = NoSound.getInstance()!;
-        
-        
 ;
     
 
         try {
             
     var played: boolean = false;
-        
-        
 ;
     
 
                         if(this.list.size() > 0)
                         
                                     {
-                                    sound= this.list.remove(0); as Sound;
+                                    sound=  as Soundthis.list.removeAt(0);;
     
 
                         if(sound != 
@@ -145,7 +135,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
 
         while(this.list.size() > this.max)
         {
-this.list.remove(0);
+this.list.removeAt(0);
     
 }
 
@@ -166,8 +156,6 @@ played= true;
             {
 
     var resource: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 

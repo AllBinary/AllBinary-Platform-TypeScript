@@ -33,9 +33,6 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
 import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/item/CustomItemInterface.js";
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 
 
 
@@ -71,8 +68,6 @@ export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
     private dy: number= 0
 
     private maxWidth: number = 0;
-        
-        
 
     private readonly moveForSmallScreen: boolean
 public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
@@ -92,7 +87,7 @@ public constructor (title: string, items: CustomItem[], formPaintableFactory: It
                     
 this.moveForSmallScreen= moveForSmallScreen;
     
-this.init();
+this.initForm();
     
 }
 
@@ -104,16 +99,14 @@ this.init();
     //var formType = formType
 super.init(rectangle, formType);
     
-this.init();
+this.initForm();
     
 }
 
 
-    public init(){
+    public initForm(){
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -133,14 +126,14 @@ this.dy= y;
                                     {
                                     
     var size: number = this.size()!;
-        
-        
 ;
     
 
     var totalWidth: number = 0;
-        
-        
+;
+    
+
+    var item: CustomItemInterface
 ;
     
 
@@ -149,15 +142,9 @@ this.dy= y;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var item: CustomItemInterface = this.get(index); as CustomItemInterface;
-        
-        
-;
+item=  as CustomItemInterfacethis.get(index);;
     
 totalWidth += item.getMinimumWidth() +border;
     
@@ -173,8 +160,6 @@ this.dy= y +(this.rectangle.getHeight()>>1);
                                     {
                                     
     var maxTitleHeight: number = 175;
-        
-        
 ;
     
 
@@ -198,14 +183,14 @@ this.dy= y +(this.rectangle.getHeight()>>1);
                                     {
                                     
     var totalHeight: number = 0;
-        
-        
 ;
     
 
     var size: number = this.size()!;
-        
-        
+;
+    
+
+    var item2: CustomItem
 ;
     
 
@@ -214,15 +199,9 @@ this.dy= y +(this.rectangle.getHeight()>>1);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var item2: CustomItem = this.get(index)!;
-        
-        
-;
+item2= this.get(index);
     
 
                         if(this.maxWidth < item2.getMinimumWidth())
@@ -251,8 +230,6 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
                                     {
                                     
     var maxTitleHeight: number = 175;
-        
-        
 ;
     
 
@@ -294,32 +271,26 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
         try {
             
     var delta: number = 0;
-        
-        
 ;
     
 
     var deltaX: number = getDx()!;
-        
-        
 ;
     
 
     var deltaY: number = getDy()!;
-        
-        
 ;
     
 
     var size: number = this.size()!;
-        
-        
 ;
     
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
-        
-        
+;
+    
+
+    var item: CustomItemInterface
 ;
     
 
@@ -328,20 +299,12 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-
-    var item: CustomItemInterface = this.get(index); as CustomItemInterface;
-        
-        
-;
+item=  as CustomItemInterfacethis.get(index);;
     
 
     var diffX: number = 0;
-        
-        
 ;
     
 
@@ -373,7 +336,8 @@ index < size; index++)
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             
@@ -425,7 +389,8 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK)
+                            throw new Error(formTypeFactory!.UNK);
+                    
 
                         }
                             

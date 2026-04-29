@@ -69,20 +69,14 @@ export class BaseGameStatistics
         
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(Integer.MAX_VALUE);
-        
-        
 
     private readonly updateDelayHelper: TimeDelayHelper = new TimeDelayHelper(2000);
-        
-        
 
     private totalRefreshes: number= 0
 
     private totalFrames: number= 0
 
     readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -90,7 +84,7 @@ public constructor (){
 
 
     public init(){
-this.timeDelayHelper!.setStartTime();
+this.timeDelayHelper!.setStartTimeTNT();
     
 this.totalRefreshes= 0;
     
@@ -121,14 +115,10 @@ this.totalRefreshes++;
 
 
     private readonly DEFAULT_SCALE_FACTOR: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_FACTOR;
-        
-        
 
     public getRefreshRate(): number{
 
     var elapsed: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 
@@ -137,8 +127,6 @@ this.totalRefreshes++;
                                     {
                                     
     var time: number = (this.totalRefreshes /(elapsed>>DEFAULT_SCALE_FACTOR));
-        
-        
 ;
     
 
@@ -174,54 +162,36 @@ this.totalRefreshes++;
 
 
     readonly NOT: string = "Not enough Time to Calculate";
-        
-        
 
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private readonly STRING_ARRAY: string[] = 
                                                         [
                                                             " Total Time: ",EMPTY_STRING," Total Frames: ",EMPTY_STRING," Frames/10 Sec: ",EMPTY_STRING," Total Paints: ",this.EMPTY_STRING," Paints/10 Sec: ",this.EMPTY_STRING
                                                         ];
-        
-        
 
     private readonly SPACE_CHAR: string = 
                 ' '
             ;
-        
-        
 
     private readonly PLUS_CHAR: string = 
                 '+'
             ;
-        
-        
 
     private readonly X_CHAR: string = 
                 'X'
             ;
-        
-        
 
     private readonly CHAR_ARRAY: string[][] = 
                                                         [
-                                                            charArrayOf('F','r','a','m','e','s','/','1','0',' ','S','e','c',':'),charArrayOf('X','X'),charArrayOf('P','a','i','n','t','s','/','1','0',' ','S','e','c',':'),charArrayOf('X','X')
+                                                            ['F','r','a','m','e','s','/','1','0',' ','S','e','c',':'],['X','X'],['P','a','i','n','t','s','/','1','0',' ','S','e','c',':'],['X','X']
                                                         ];
-        
-        
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
-        
-        
 
     public toCharArray(): string[][]{
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 totalTime= (totalTime>>DEFAULT_SCALE_FACTOR);
@@ -231,9 +201,7 @@ totalTime= (totalTime>>DEFAULT_SCALE_FACTOR);
                         
                                     {
                                     
-    var framesPerSec: number = (this.totalFrames /totalTime);
-        
-        
+    var framesPerSec: number = Math.round(this.totalFrames /totalTime);
 ;
     
 
@@ -253,14 +221,10 @@ CHAR_ARRAY[1]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[framesPerSec]!
                                     {
                                     
     var tens: number = framesPerSec /10;
-        
-        
 ;
     
 
     var removeTens: number = tens *10;
-        
-        
 ;
     
 CHAR_ARRAY[1]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[tens]!;
@@ -279,9 +243,7 @@ CHAR_ARRAY[1]![1]= this.PLUS_CHAR;
                         }
                             
 
-    var refreshesPerSec: number = (this.totalRefreshes /totalTime);
-        
-        
+    var refreshesPerSec: number = Math.round(this.totalRefreshes /totalTime);
 ;
     
 
@@ -301,14 +263,10 @@ CHAR_ARRAY[3]![1]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSe
                                     {
                                     
     var tens: number = refreshesPerSec /10;
-        
-        
 ;
     
 
     var removeTens: number = tens *10;
-        
-        
 ;
     
 CHAR_ARRAY[3]![0]= this.primitiveLongSingleton!.NUMBER_CHAR_ARRAY[refreshesPerSec /10]!;
@@ -341,8 +299,6 @@ CHAR_ARRAY[3]![1]= this.PLUS_CHAR;
     public toStringArray(): string[]{
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 totalTime= (totalTime /10000);
@@ -367,8 +323,6 @@ STRING_ARRAY[9]= (this.totalRefreshes /totalTime).toString();
                         else {
                             
     var string: string = this.EMPTY_STRING;
-        
-        
 ;
     
 STRING_ARRAY[1]= string;
@@ -393,12 +347,10 @@ STRING_ARRAY[9]= string;
 }
 
 
-    public toString(totalTime: number): string{
+    public toStringAt(totalTime: number): string{
 var totalTime = totalTime
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(STRING_ARRAY[0]!);
@@ -442,8 +394,6 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
     public toString(): string{
 
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
-        
-        
 ;
     
 totalTime= (totalTime /1000);
@@ -456,7 +406,7 @@ totalTime= (totalTime /1000);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.toString(totalTime);;
+                        return this.toStringAt(totalTime);;
     
 
                                     }

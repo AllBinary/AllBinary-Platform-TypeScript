@@ -59,8 +59,6 @@ export class EmailServerConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private accountName: string
 
@@ -76,8 +74,6 @@ public constructor (){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
@@ -89,7 +85,7 @@ this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -99,8 +95,6 @@ public constructor (hashMap: HashMap<any, any>){
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");
@@ -108,11 +102,11 @@ this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap
 
                                     }
                                 
-this.setAccountName(hashMap!.get(EmailServerConfigurationData.ACCOUNT) as String);
+this.setAccountName( as StringhashMap!.get(EmailServerConfigurationData.ACCOUNT));
     
-this.setPassword(hashMap!.get(EmailServerConfigurationData.PASSWORD) as String);
+this.setPassword( as StringhashMap!.get(EmailServerConfigurationData.PASSWORD));
     
-this.setSmtpServer(hashMap!.get(EmailServerConfigurationData.SERVER) as String);
+this.setSmtpServer( as StringhashMap!.get(EmailServerConfigurationData.SERVER));
     
 this.log();
     
@@ -130,8 +124,6 @@ var server = server
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, "EmailServerConfiguration(HashMap)");

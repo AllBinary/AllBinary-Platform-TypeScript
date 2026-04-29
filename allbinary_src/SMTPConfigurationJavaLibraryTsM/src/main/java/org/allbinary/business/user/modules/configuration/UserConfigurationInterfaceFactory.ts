@@ -71,14 +71,14 @@ import { UserConfigurationData } from "./UserConfigurationData.js";
 
 import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
+import { UserConfiguration } from "./UserConfiguration.js";
+
 export class UserConfigurationInterfaceFactory
             extends Object
          {
         
 
     private static readonly configurationName: string = "DefaultUserConfiguration";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -86,16 +86,14 @@ export class UserConfigurationInterfaceFactory
 var document = document
 
     var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new UserConfigurationView(configurationNode).
-                            getUserConfigurationInterface(); as UserConfigurationInterface;
+                        return  as UserConfigurationInterfacenew UserConfigurationView(configurationNode).
+                            getUserConfigurationInterface();;
     
 }
 
@@ -106,21 +104,15 @@ var document = document
 var userRole = userRole
 
     var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
-        
-        
 ;
     
 
     var documentString: string = new CryptFileReader(UserConfigurationData.UNCRYPTED_EXTENSION, UserConfigurationData.ENCRYPTED_EXTENSION).
                             get(abPath)!;
-        
-        
 ;
     
 
     var document: Document = DomDocumentHelper.create(documentString)!;
-        
-        
 ;
     
 

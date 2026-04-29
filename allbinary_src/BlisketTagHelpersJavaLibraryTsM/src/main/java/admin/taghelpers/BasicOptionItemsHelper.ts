@@ -64,11 +64,9 @@ export class BasicOptionItemsHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -83,8 +81,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.createTable()!;
-        
-        
 ;
     
 
@@ -108,8 +104,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to create table";
-        
-        
 ;
     
 
@@ -137,8 +131,6 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.dropTable()!;
-        
-        
 ;
     
 
@@ -162,8 +154,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to drop pricing tables";
-        
-        
 ;
     
 
@@ -191,20 +181,14 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var basicOptionItemsEntity: BasicOptionItemsEntity = BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!;
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(basicOptionItemsEntity, this.portion)!;
-        
-        
 ;
     
 
@@ -228,8 +212,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -257,14 +239,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance())!;
-        
-        
 ;
     
 
@@ -288,8 +266,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

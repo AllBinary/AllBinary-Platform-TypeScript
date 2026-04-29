@@ -45,8 +45,6 @@ export class RTSLayer2LogHelper
         
 
     private static readonly instance: RTSLayer2LogHelper = new RTSLayer2LogHelper();
-        
-        
 
     public static getInstance(): RTSLayer2LogHelper{
 

@@ -70,8 +70,6 @@ export class CategoryTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private xsl: string
 public constructor (){
@@ -99,28 +97,20 @@ this.xsl= value;
             
     var anyType: any = new CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("viewCategory", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -136,7 +126,8 @@ this.xsl= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -144,8 +135,6 @@ this.xsl= value;
             {
 
     var error: string = "Failed to view a Category";
-        
-        
 ;
     
 
@@ -176,28 +165,20 @@ this.xsl= value;
             
     var anyType: any = new CategoryRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("viewCategories", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -213,7 +194,8 @@ this.xsl= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -221,8 +203,6 @@ this.xsl= value;
             {
 
     var error: string = "Failed to view a Categories";
-        
-        
 ;
     
 
@@ -268,8 +248,6 @@ this.xsl= value;
                                     {
                                     
     var output: string = this.viewCategory()!;
-        
-        
 ;
     
 
@@ -290,8 +268,6 @@ this.xsl= value;
                                     {
                                     
     var output: string = this.viewCategories()!;
-        
-        
 ;
     
 

@@ -94,8 +94,6 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
         
 
     private static readonly instance: CompleteMotionGestureInputToGameMotionGestureInput = new CompleteMotionGestureInputToGameMotionGestureInput();
-        
-        
 
     public static getInstance(): CompleteMotionGestureInputToGameMotionGestureInput{
 
@@ -108,14 +106,10 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public init(){
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -124,20 +118,14 @@ export class CompleteMotionGestureInputToGameMotionGestureInput
     
 
     var motionGestureConfiguration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
-        
-        
 ;
     
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 list.add(touchMotionGestureFactory!.DIAGONAL_DOWN_LEFT);

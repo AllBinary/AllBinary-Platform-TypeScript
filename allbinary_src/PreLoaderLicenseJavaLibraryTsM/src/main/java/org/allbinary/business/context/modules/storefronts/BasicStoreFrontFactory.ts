@@ -51,8 +51,6 @@ export class BasicStoreFrontFactory
         
 
     private static readonly instance: BasicStoreFrontFactory = new BasicStoreFrontFactory();
-        
-        
 
     public static getInstance(): BasicStoreFrontFactory{
 
@@ -65,8 +63,6 @@ export class BasicStoreFrontFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -81,8 +77,6 @@ var storeName = storeName
         try {
             
     var storeFronts: BasicStoreFrontsEntity = new BasicStoreFrontsEntity();
-        
-        
 ;
     
 
@@ -101,8 +95,6 @@ var storeName = storeName
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

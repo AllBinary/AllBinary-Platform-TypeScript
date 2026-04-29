@@ -43,8 +43,6 @@ export class OperatingSystems
         
 
     private static readonly instance: OperatingSystems = new OperatingSystems();
-        
-        
 
     public static getInstance(): OperatingSystems{
 
@@ -57,44 +55,24 @@ export class OperatingSystems
 
 
     public readonly LINUX: string = "Linux";
-        
-        
 
     public readonly WINDOWS: string = "Windows";
-        
-        
 
     public readonly SOLARIS: string = "Solaris";
-        
-        
 
     public readonly WINDOWS2000: string = "Windows 2000";
-        
-        
 
     public readonly WINDOWS_NT: string = "Windows NT";
-        
-        
 
     public readonly WINDOWS_10: string = "Windows 10";
-        
-        
 
     public readonly WINDOWS_11: string = "Windows 11";
-        
-        
 
     public readonly WINDOWS_VISTA: string = "Windows Vista";
-        
-        
 
     public readonly WINDOWS_XP: string = "Windows XP";
-        
-        
 
     public readonly ANDROID: string = LINUX;
-        
-        
 private constructor (){
 
             super();
@@ -102,8 +80,6 @@ private constructor (){
 
 
     private unknownSpecificOSAllowed: boolean = true;
-        
-        
 
     public isUnknownSpecificOSAllowed(): boolean{
 

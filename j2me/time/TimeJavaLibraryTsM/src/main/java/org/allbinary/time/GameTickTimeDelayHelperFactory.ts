@@ -45,8 +45,6 @@ export class GameTickTimeDelayHelperFactory
         
 
     private static readonly instance: GameTickTimeDelayHelper = new GameTickTimeDelayHelper( -1);
-        
-        
 
     public static getInstance(): GameTickTimeDelayHelper{
 

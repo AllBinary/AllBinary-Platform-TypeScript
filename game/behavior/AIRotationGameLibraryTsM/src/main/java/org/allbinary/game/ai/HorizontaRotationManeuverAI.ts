@@ -86,13 +86,9 @@ import { BasicAI } from "./BasicAI.js";
 export class HorizontaRotationManeuverAI extends BasicAI implements ArtificialIntelligenceTransitionInterface {
         
 
-    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(10, Integer.MAX_VALUE)!;
-        
-        
+    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(10, Integer.MAX_VALUE)!;
 
     private currentSpeedDivisor: number = 5;
-        
-        
 
     private readonly rotationAnimationInterface: IndexedAnimation
 
@@ -108,33 +104,25 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.rotationAnimationInterface= rotationAnimationInterfaceCompositeInterface!.getRotationAnimationInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
-        
-        
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface =  as VelocityInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 this.baseVelocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
-this.velocityInterface= this.baseVelocityInterface as VelocityInterface;
+this.velocityInterface=  as VelocityInterfacethis.baseVelocityInterface;
     
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface =  as RotationAnimationInterfacethis.rotationAnimationInterface;
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
@@ -144,29 +132,21 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT
 
     public transition(){
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface =  as RotationAnimationInterfacethis.rotationAnimationInterface;
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
     
 
     var allbinaryLayer: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP());
@@ -179,27 +159,19 @@ allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
-    var rotationAnimationInterface: RotationAnimationInterface = (this.rotationAnimationInterface as RotationAnimationInterface);
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface = ( as RotationAnimationInterfacethis.rotationAnimationInterface);
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
     var frame: number = this.rotationAnimationInterface!.getFrame()!;
-        
-        
 ;
     
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
@@ -215,8 +187,6 @@ this.drop();
                                 
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
@@ -234,15 +204,13 @@ this.drop();
                                 
 
     var index: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 
                         if(index % this.currentSpeedDivisor == 0 && index % 2 == 0)
                         
                                     {
-                                    super.processAI(Canvas.UP);
+                                    super.processKeyAI(Canvas.UP);
     
 velocityInterface!.limitMaxXYVelocity(this.velocityInterface!.getMaxForwardVelocity() /this.currentSpeedDivisor);
     
@@ -255,7 +223,7 @@ this.circularIndexUtil!.next();
                         if(frame == angleIncrementInfo!.LEFT_FRAME.toInt())
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM0);
+                                    super.processKeyAI(Canvas.KEY_NUM0);
     
 
                                     }
@@ -264,7 +232,7 @@ this.circularIndexUtil!.next();
                         if(frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
                         
                                     {
-                                    super.processAI(Canvas.KEY_POUND);
+                                    super.processKeyAI(Canvas.KEY_POUND);
     
 
                                     }
@@ -274,21 +242,15 @@ this.circularIndexUtil!.next();
 
     reverse(){
 
-    var rotationAnimationInterface: RotationAnimationInterface = this.rotationAnimationInterface as RotationAnimationInterface;
-        
-        
+    var rotationAnimationInterface: RotationAnimationInterface =  as RotationAnimationInterfacethis.rotationAnimationInterface;
 ;
     
 
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
-        
-        
 ;
     
 
     var frame: number = this.rotationAnimationInterface!.getFrame()!;
-        
-        
 ;
     
 
@@ -296,9 +258,7 @@ this.circularIndexUtil!.next();
                         
                                     {
                                     
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
@@ -313,9 +273,7 @@ this.baseVelocityInterface!.zero();
                         
                                     {
                                     
-    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface(); as RotationAnimationInterfaceCompositeInterface;
-        
-        
+    var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface =  as RotationAnimationInterfaceCompositeInterfacethis.getOwnerLayerInterface();;
 ;
     
 rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.toInt());
@@ -344,20 +302,14 @@ this.baseVelocityInterface!.zero();
     drop(){
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var y: number = ownerLayerInterface!.getYP()!;
-        
-        
 ;
     
 

@@ -67,8 +67,6 @@ export class OrderItemsTag extends TableTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private status: string
 public constructor (){
@@ -96,8 +94,6 @@ this.status= value;
             
     var anyType: any = new OrderItemsRequestHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
@@ -108,22 +104,16 @@ this.status= value;
                                     {
                                     
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -138,8 +128,6 @@ this.status= value;
                         else {
                             
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
@@ -147,14 +135,10 @@ this.status= value;
                                                         [
                                                             this.status.constructor
                                                         ];
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod("setOrderStatus", methodParams)!;
-        
-        
 ;
     
 
@@ -162,14 +146,10 @@ this.status= value;
                                                         [
                                                             this.status
                                                         ];
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, methodArgs); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, methodArgs);;
 ;
     
 
@@ -188,7 +168,8 @@ this.status= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -196,8 +177,6 @@ this.status= value;
             {
 
     var error: string = "Failed to set Order status to: " +this.status;
-        
-        
 ;
     
 

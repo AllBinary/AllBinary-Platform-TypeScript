@@ -76,8 +76,6 @@ export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationF
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 spriteRotationAnimationFactory!.initWH(dx, dy);
@@ -114,8 +112,6 @@ spriteRotationAnimationFactory!.initWH(dx, dy);
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 spriteRotationAnimationFactory!.init(dx, dy);
@@ -138,8 +134,6 @@ spriteRotationAnimationFactory!.init(dx, dy);
     //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, animationBehaviorFactory);
-        
-        
 ;
     
 spriteRotationAnimationFactory!.init(dx, dy);
@@ -182,8 +176,6 @@ spriteRotationAnimationFactory!.init(dx, dy);
 
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
-        
-        
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
                         //var image = image
@@ -228,8 +220,6 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
     //var instanceId = instanceId
 
     var sprite: Sprite = animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
@@ -260,7 +250,7 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

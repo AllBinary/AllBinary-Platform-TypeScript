@@ -79,26 +79,18 @@ public constructor (max: number){
     //var geographicMapCellPosition = geographicMapCellPosition
 
     var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(comingFromGeographicMapCellPosition)!;
-        
-        
 ;
     
 
     var geographicMapCellType2: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(geographicMapCellPosition)!;
-        
-        
 ;
     
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = geographicMapCellType as RaceTrackGeographicMapCellType;
-        
-        
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType;
 ;
     
 
-    var raceTrackGeographicMapCellType2: RaceTrackGeographicMapCellType = geographicMapCellType2 as RaceTrackGeographicMapCellType;
-        
-        
+    var raceTrackGeographicMapCellType2: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypegeographicMapCellType2;
 ;
     
 

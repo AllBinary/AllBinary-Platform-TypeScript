@@ -94,8 +94,6 @@ export class PageValidationView extends PageView implements ValidationComponentI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -120,8 +118,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -135,20 +131,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var pageObjectConfigInterface: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
     var allViewsToBeModifiedVector: Vector = pageObjectConfigInterface!.getGroupTransforms()!;
-        
-        
 ;
     
 
@@ -162,8 +152,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                 
 
     var size: number = allViewsToBeModifiedVector!.length!;
-        
-        
 ;
     
 
@@ -172,20 +160,14 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
 ;
     
 
     var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
-        
-        
 ;
     
 
@@ -194,8 +176,6 @@ index < size; index++)
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getName());
@@ -210,15 +190,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
@@ -227,8 +203,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getName());
@@ -243,15 +217,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
-        
-        
 ;
     
 
@@ -271,8 +241,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                             
 
     var pageValidation: PageValidation = new PageValidation(hashMap);
-        
-        
 ;
     
 
@@ -290,16 +258,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     {
                                     
     var document: Document = DomDocumentHelper.create()!;
-        
-        
 ;
     
 document.appendChild(pageValidation!.toXmlNode(document));
     
 
     var documentString: string = DomDocumentHelper.toString(document)!;
-        
-        
 ;
     
 
@@ -308,8 +272,6 @@ document.appendChild(pageValidation!.toXmlNode(document));
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(viewNameOfViewToBeModified);
@@ -369,38 +331,26 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var transformInfoEntityInterface: TransformInfoEntity = TransformInfoEntityBuilder.getInstance()!;
-        
-        
 ;
     
 
     var objectConfig: TransformInfoObjectConfigInterface = this.getTransformInfoInterface()!.getObjectConfigInterface()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 
     var allViewsToBeModifiedVector: Vector = objectConfig!.getGroupTransforms()!;
-        
-        
 ;
     
 
     var size: number = allViewsToBeModifiedVector!.length!;
-        
-        
 ;
     
 
@@ -409,38 +359,26 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
-        
-        
+    var transformInfoInterface: TransformInfo =  as TransformInfoallViewsToBeModifiedVector!.get(index);;
 ;
     
 
     var viewNameOfViewToBeModified: string = transformInfoInterface!.getName()!;
-        
-        
 ;
     
 
     var specifiedTransformInfoInterface: TransformInfoInterface = transformInfoEntityInterface!.get(viewNameOfViewToBeModified, httpTransformInfoInterface!.getPropertiesHashMap(), httpTransformInfoInterface!.getPageContext())!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var title: string = specifiedTransformInfoInterface!.getName()!.substring(this.getTransformInfoInterface()!.getStoreName()!.length())!;
-        
-        
 ;
     
 
@@ -460,8 +398,6 @@ index < size; index++)
                             
 
     var pageValidation: PageValidation = new PageValidation(hashMap);
-        
-        
 ;
     
 

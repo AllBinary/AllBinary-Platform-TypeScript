@@ -63,8 +63,6 @@ export class LevelLayersFinder
         
 
     private static readonly instance: LevelLayersFinder = new LevelLayersFinder();
-        
-        
 
     public static getInstance(): LevelLayersFinder{
 
@@ -76,45 +74,33 @@ export class LevelLayersFinder
 }
 
 
-    public get(hashtable: Hashtable<any, any>): BasicArrayList{
+    public get(hashtable: Hashtable): BasicArrayList{
 var hashtable = hashtable
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
     var list: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
-    var enumeration: Enumeration<any?> = hashtable.keys()!;
-        
-        
+    var enumeration: Enumeration = hashtable.keys()!;
 ;
     
 
         while(enumeration.hasMoreElements())
         {
 
-    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()! as Object); as Hashtable<any, any>;
-        
-        
+    var layerHashtable: Hashtable =  as Hashtablehashtable.get( as Objectenumeration.nextElement()!);;
 ;
     
 
-    var integer: Integer = layerHashtable!.get(Layer.ID as Object); as Integer;
-        
-        
+    var integer: number =  as IntegerlayerHashtable!.get( as ObjectLayer.ID);;
 ;
     
 
-    var cachedInteger: Integer = smallIntegerSingletonFactory!.getInstance(integer.toInt())!;
-        
-        
+    var cachedInteger: number = smallIntegerSingletonFactory!.getAt(integer.toInt())!;
 ;
     
 

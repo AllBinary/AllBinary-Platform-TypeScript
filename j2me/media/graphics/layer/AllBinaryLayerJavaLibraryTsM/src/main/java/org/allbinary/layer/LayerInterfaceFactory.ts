@@ -75,8 +75,6 @@ export class LayerInterfaceFactory
         
 
     private static readonly SINGLETON: LayerInterfaceFactory = new LayerInterfaceFactory();
-        
-        
 
     public static getInstance(): LayerInterfaceFactory{
 
@@ -89,12 +87,8 @@ export class LayerInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     public init(){
 this.list= new BasicArrayListD();
@@ -103,42 +97,34 @@ this.list= new BasicArrayListD();
 
 
     private readonly HASHTABLE_LABEL: string = "Hashtable: ";
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getNexInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
     //var x = x
     //var y = y
 var z = z
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
                             append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: Integer = hashtable.get(Layer.ID as Object); as Integer;
-        
-        
+    var typeInteger: number =  as Integerhashtable.get( as ObjectLayer.ID);;
 ;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.toInt() -1]! as LayerInterfaceFactoryInterface;
-        
-        
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface =  as LayerInterfaceFactoryInterfacethis.list.objectArray[typeInteger!.toInt() -1]!;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerInterfaceFactoryInterface!.getInstance(hashtable, x, y, z);;
+                        return layerInterfaceFactoryInterface!.getNextInstance(hashtable, x, y, z);;
     
 }
 

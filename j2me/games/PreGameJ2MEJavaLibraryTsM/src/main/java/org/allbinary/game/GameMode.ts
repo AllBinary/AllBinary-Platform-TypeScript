@@ -46,20 +46,12 @@ export class GameMode
         
 
     public NONE: GameMode = new GameMode(StringUtil.getInstance()!.NULL_STRING);
-        
-        
 
     public SERVER: GameMode = new GameMode("Server");
-        
-        
 
     public CLIENT: GameMode = new GameMode("Client");
-        
-        
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 private constructor (name: string){
 
             super();

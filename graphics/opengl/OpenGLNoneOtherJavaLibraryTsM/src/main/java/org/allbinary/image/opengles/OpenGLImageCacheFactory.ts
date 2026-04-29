@@ -46,8 +46,6 @@ export class OpenGLImageCacheFactory
         
 
     private IMAGE_CACHE: ImageCache = ImageCache.NULL_IMAGE_CACHE;
-        
-        
 
     public static getInstance(): ImageCache{
 

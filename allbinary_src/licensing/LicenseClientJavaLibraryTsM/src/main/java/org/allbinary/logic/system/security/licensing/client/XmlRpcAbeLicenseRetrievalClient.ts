@@ -83,8 +83,6 @@ export class XmlRpcAbeLicenseRetrievalClient extends XmlRpcAbeClient {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicServ.getLicense");
                     var clientInfo = clientInfo
@@ -104,14 +102,10 @@ public constructor (clientInfo: AbeClientInformationInterface){
         try {
             
     var server: string = getClientInfo()!.getLicenseServer(this.getServer())!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(TRYING);
@@ -126,14 +120,10 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START_LABEL +stringBuffer!.toStri
     
 
     var param: Vector = new Vector();
-        
-        
 ;
     
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(server);
-        
-        
 ;
     
 this.setClient(xmlRpcClient);
@@ -143,9 +133,7 @@ xmlRpcClient!.setBasicAuthentication(
                             null);
     
 
-    var hashtable: Hashtable<any, any> = this.getClientInfo()!.toHashtable()!;
-        
-        
+    var hashtable: Hashtable = this.getClientInfo()!.toHashtable()!;
 ;
     
 this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
@@ -154,16 +142,12 @@ param.add(hashtable);
     
 
     var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
-        
-        
 ;
     
 this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
     
 
-    var resultHashtable: Hashtable<any, any> = result as Hashtable<any, any>;
-        
-        
+    var resultHashtable: Hashtable =  as Hashtableresult;
 ;
     
 
@@ -183,8 +167,6 @@ this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
                                 
 
     var abeLicenseInterface: AbeLicenseInterface = new AbeClientLicense(resultHashtable);
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.END +stringBuffer!.toString(), this, commonStrings!.GET);
@@ -224,7 +206,8 @@ this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTr
 
 
 
-                            throw new Error(HOST_NOT_RESOLVED_MSG)
+                            throw new Error(HOST_NOT_RESOLVED_MSG);
+                    
 
                         }
                             

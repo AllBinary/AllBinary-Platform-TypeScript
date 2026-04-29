@@ -54,8 +54,6 @@ export class InitDbHelperFactory
         
 
     private static readonly CLASSNAME: string = "org.allbinary.business.installer.InitDbCrypted";
-        
-        
 
                 //@Throws(LicensingException::class)
             
@@ -64,26 +62,20 @@ export class InitDbHelperFactory
 var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 
     var params: any[] = new Array(1);
-        
-        
 ;
     
 
     var classes: Function[] = new Array(1);
-        
-        
 ;
     
 classes[0]= 
                                     //Otherwise - expression - AssignExpr - value - ClassExpr
 ;
     
-params[0]= databaseConnectionInfoInterface as Object;
+params[0]=  as ObjectdatabaseConnectionInfoInterface;
     
 
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, classes, params)!;
-        
-        
 ;
     
 
@@ -103,8 +95,6 @@ params[0]= databaseConnectionInfoInterface as Object;
     var anyType: any = AbeFactory.getInstance()!.getInstance(abeClientInformation, CLASSNAME, 
                             null, 
                             null)!;
-        
-        
 ;
     
 

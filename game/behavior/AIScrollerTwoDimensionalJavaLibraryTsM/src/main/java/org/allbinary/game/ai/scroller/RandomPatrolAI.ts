@@ -61,9 +61,7 @@ export class RandomPatrolAI extends BasePatrolAI {
         
 
     private changedDirection: boolean = true;
-        
-        
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -89,13 +87,13 @@ this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.max
 var allBinaryLayerManager = allBinaryLayerManager
 super.update();
     
-super.processAI(this.keyDirection);
+super.processKeyAI(this.keyDirection);
     
 
                         if(this.changedDirection)
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1);
+                                    super.processKeyAI(Canvas.KEY_NUM1);
     
 this.updateRandomDistance();
     

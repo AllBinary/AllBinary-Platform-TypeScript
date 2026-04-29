@@ -82,12 +82,8 @@ export class CloudImageServlet extends HttpServlet {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(ServletException::class, IOException::class)
             
@@ -98,8 +94,6 @@ export class CloudImageServlet extends HttpServlet {
     var inputStream: InputStream = 
                 null
             ;
-        
-        
 ;
     
 
@@ -108,28 +102,20 @@ export class CloudImageServlet extends HttpServlet {
     
 
     var requestURI: string = request.getRequestURI()!;
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(URLGLOBALS.getWebappPath() +requestURI);
-        
-        
 ;
     
 inputStream= CloudStreamUtil.getInstance()!.getFile(file);
     
 
     var outputStream: ByteArrayOutputStream = new ByteArrayOutputStream(8000);
-        
-        
 ;
     
 
     var byteArray: number[] = StreamUtil.getInstance()!.getByteArray(inputStream, outputStream, new Array(16384))!;
-        
-        
 ;
     
 response.setContentType("image/jpeg;charset=utf-8");

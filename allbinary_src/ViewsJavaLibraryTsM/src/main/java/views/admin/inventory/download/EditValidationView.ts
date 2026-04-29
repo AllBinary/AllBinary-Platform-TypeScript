@@ -112,10 +112,8 @@ this.getFormData();
             
     public getFormData(){
 
-    var hashMap: HashMap<any, any> = new RequestParams(request).
+    var hashMap: HashMap = new RequestParams(request).
                             toHashMap()!;
-        
-        
 ;
     
 
@@ -127,13 +125,14 @@ this.getFormData();
                                     
 
 
-                            throw new Error("No Request Params Found")
+                            throw new Error("No Request Params Found");
+                    
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID); as String;
+this.id=  as StringhashMap!.get(BasicItemData.ID);;
     
-this.downloadItemId= hashMap!.get(DownloadItemData.ID); as String;
+this.downloadItemId=  as StringhashMap!.get(DownloadItemData.ID);;
     
 }
 
@@ -175,8 +174,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                 
 
     var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-        
-        
 ;
     
 
@@ -185,14 +182,10 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
                                     {
                                     
     var downloadItemsEntity: DownloadItemsEntity = DownloadItemsEntityFactory.getInstance()!.getDownloadItemsEntityInstance()!;
-        
-        
 ;
     
 
     var vector: Vector = downloadItemsEntity!.getForItem(this.id, this.downloadItemId)!;
-        
-        
 ;
     
 
@@ -208,7 +201,7 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
                                     }
                                 
-this.downloadableItem= vector.get(0); as DownloadableItem;
+this.downloadableItem=  as DownloadableItemvector.get(0);;
     
 
                                     }
@@ -258,8 +251,6 @@ var document = document
     public validationInfo(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -286,8 +277,6 @@ var document = document
                                 
 
     var downloadable: number = Integer.parseInt(this.itemInterface!.getDownloads())!;
-        
-        
 ;
     
 

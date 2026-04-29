@@ -43,6 +43,8 @@ import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/lo
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ColorCacheable } from "./ColorCacheable.js";
+
 export class ColorCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

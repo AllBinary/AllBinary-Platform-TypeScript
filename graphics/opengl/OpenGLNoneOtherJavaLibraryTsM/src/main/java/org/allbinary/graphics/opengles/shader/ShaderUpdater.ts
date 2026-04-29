@@ -55,8 +55,6 @@ export class ShaderUpdater
         
 
     private static readonly instance: ShaderUpdater = new ShaderUpdater();
-        
-        
 
     public static getInstance(): ShaderUpdater{
 
@@ -69,12 +67,8 @@ export class ShaderUpdater
 
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly rendererStrings: RendererStrings = RendererStrings.getInstance()!;
-        
-        
 
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
     //var gl = gl

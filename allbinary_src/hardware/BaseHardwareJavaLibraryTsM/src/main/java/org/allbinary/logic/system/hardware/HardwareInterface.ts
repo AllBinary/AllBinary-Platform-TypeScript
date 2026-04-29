@@ -52,7 +52,7 @@ export interface HardwareInterface {
 
     public compareTo(hardwareInterface: HardwareInterface): boolean
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
+    public difference(hardwareInterface: HardwareInterface): Hashtable
 
 }
                 

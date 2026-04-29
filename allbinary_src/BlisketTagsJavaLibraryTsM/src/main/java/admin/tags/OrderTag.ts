@@ -74,14 +74,12 @@ export class OrderTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
     private storeName: string
 
-    private propertiesHashMap: HashMap<any, any>
+    private propertiesHashMap: HashMap
 public constructor (){
 
             super();
@@ -110,28 +108,20 @@ this.storeName= value;
             
     var anyType: any = new OrderHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -147,7 +137,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -155,8 +146,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to Process Order: ";
-        
-        
 ;
     
 
@@ -187,28 +176,20 @@ this.storeName= value;
             
     var anyType: any = new OrderHelperFactory().
                             getInstance(this.propertiesHashMap, this.pageContext)!;
-        
-        
 ;
     
 
     var addressHelperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = addressHelperClass!.getMethod("setPaymentGateway", 
                             null)!;
-        
-        
 ;
     
 
-    var result: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
-        
-        
+    var result: Boolean =  as Booleanmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -224,7 +205,8 @@ this.storeName= value;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -232,8 +214,6 @@ this.storeName= value;
             {
 
     var error: string = "Failed to setPaymentGateway for Order";
-        
-        
 ;
     
 
@@ -267,7 +247,7 @@ this.storeName= value;
                                 )
                         
                                     {
-                                    this.propertiesHashMap= new HashMap<any, any>();
+                                    this.propertiesHashMap= new HashMap();
     
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     

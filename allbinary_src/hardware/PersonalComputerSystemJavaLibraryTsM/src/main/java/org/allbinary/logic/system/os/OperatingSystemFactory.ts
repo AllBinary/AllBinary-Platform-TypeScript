@@ -72,11 +72,11 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { NoOperatingSystem } from "./NoOperatingSystem.js";
 
+import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
+
 import { OperatingSystems } from "./OperatingSystems.js";
 
 import { SystemProperties } from "./SystemProperties.js";
-
-import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
 
 export class OperatingSystemFactory
             extends Object
@@ -84,8 +84,6 @@ export class OperatingSystemFactory
         
 
     private static readonly instance: OperatingSystemFactory = new OperatingSystemFactory();
-        
-        
 
     public static getInstance(): OperatingSystemFactory{
 
@@ -98,20 +96,12 @@ export class OperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private genericOperatingSystem: GenericOperatingSystem = NoOperatingSystem.NO_OPERATING_SYSTEM;
-        
-        
 
     private hasDetected: boolean = false;
-        
-        
 private constructor (){
 
             super();
@@ -124,32 +114,22 @@ private constructor (){
         try {
             
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = systemProperties!.getName()!;
-        
-        
 ;
     
 
     var osArch: string = systemProperties!.getArch()!;
-        
-        
 ;
     
 
     var osVersion: string = systemProperties!.getVersion()!;
-        
-        
 ;
     
 
@@ -219,15 +199,14 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
 
 
                             throw new Error(new StringMaker().
-                            append("OS Not Supported: ")!.append(osName)!.toString())
+                            append("OS Not Supported: ")!.append(osName)!.toString());
+                    
 
                         }
                             
 
     var log: Log = LogFactory.getInstanceF(new StringMaker().
                             append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, commonStrings!.GET_INSTANCE)!;
-        
-        
 ;
     
 console.log(log.toString());

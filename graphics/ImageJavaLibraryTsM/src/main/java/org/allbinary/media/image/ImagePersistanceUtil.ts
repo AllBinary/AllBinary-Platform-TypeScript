@@ -80,8 +80,6 @@ export class ImagePersistanceUtil
         
 
     private static readonly instance: ImagePersistanceUtil = new ImagePersistanceUtil();
-        
-        
 
     public static getInstance(): ImagePersistanceUtil{
 
@@ -94,12 +92,8 @@ export class ImagePersistanceUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -108,14 +102,10 @@ var file = file
 var bufferedImage = bufferedImage
 
     var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();
-        
-        
 ;
     
 
     var fileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
-        
-        
 ;
     
 
@@ -151,24 +141,18 @@ var bufferedImage = bufferedImage
     var writer: ImageWriter = 
                 null
             ;
-        
-        
 ;
     
 
     var ios: ImageOutputStream = 
                 null
             ;
-        
-        
 ;
     
 
         try {
             
     var iter: Iterator = ImageIO.getImageWritersByFormatName("jpeg")!;
-        
-        
 ;
     
 
@@ -186,7 +170,7 @@ var bufferedImage = bufferedImage
 
                                     }
                                 
-writer= iter.next(); as ImageWriter;
+writer=  as ImageWriteriter.next();;
     
 ios= ImageIO.createImageOutputStream(file);
     
@@ -194,8 +178,6 @@ writer.setOutput(ios);
     
 
     var iwp: ImageWriteParam = writer.getDefaultWriteParam()!;
-        
-        
 ;
     
 iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);

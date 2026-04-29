@@ -49,8 +49,6 @@ export class PlatformKeyFactory
         
 
     private static readonly SINGLETON: PlatformKeyFactory = new PlatformKeyFactory();
-        
-        
 
     public static getInstance(): PlatformKeyFactory{
 

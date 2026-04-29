@@ -43,8 +43,6 @@ export class NoShakeAnimationListener extends ShakeAnimationListener {
         
 
     public static readonly NO_SHAKE_ANIMATION_LISTENER: ShakeAnimationListener = new NoShakeAnimationListener();
-        
-        
 
 }
                 

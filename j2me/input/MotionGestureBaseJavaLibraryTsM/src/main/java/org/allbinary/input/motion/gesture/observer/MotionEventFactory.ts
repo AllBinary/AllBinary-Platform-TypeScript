@@ -61,8 +61,6 @@ export class MotionEventFactory
         
 
     private index: number = 0;
-        
-        
 
     private readonly source: any
 
@@ -84,14 +82,10 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
     public getInstance(): AllBinaryEventObject{
 
     var inputFactory: InputFactory = InputFactory.getInstance()!;
-        
-        
 ;
     
 
-    var input: Input = inputFactory!.getInstance(index++)!;
-        
-        
+    var input: Input = inputFactory!.getInstanceById(index++)!;
 ;
     
 
@@ -102,7 +96,7 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new MotionGestureEvent(this.source, this.id, TouchMotionGestureFactory.getInstance()!.NO_MOTION as MotionGestureInput);
+                        return new MotionGestureEvent(this.source, this.id,  as MotionGestureInputTouchMotionGestureFactory.getInstance()!.NO_MOTION);
     
 
                                     }
@@ -112,7 +106,7 @@ index= TouchMotionGestureFactory.getInstance()!.LAST_MOTION.getId();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new MotionGestureEvent(this.source, this.id, input as MotionGestureInput);
+                        return new MotionGestureEvent(this.source, this.id,  as MotionGestureInputinput);
     
 
                         }

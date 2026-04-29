@@ -45,18 +45,16 @@ import { TagStrings } from "../../tags/TagStrings.js";
         
 import { ModifyTableInterface } from "./ModifyTableInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class ModifyTable
             extends Object
          implements ModifyTableInterface {
         
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -64,7 +62,8 @@ export class ModifyTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -74,7 +73,8 @@ export class ModifyTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -84,7 +84,8 @@ export class ModifyTable
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -49,30 +49,26 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 export class CellPosition extends V {
         
 
-    public static toString(basicGeographicMapCellPosition: CellPosition): string{
+    public static toStringCellPosition(basicGeographicMapCellPosition: CellPosition): string{
 var basicGeographicMapCellPosition = basicGeographicMapCellPosition
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return toString(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());;
+                        return toStringColRow(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());;
     
 }
 
 
-    public static toString(i_column: number, i_row: number): string{
+    public static toStringColRow(i_column: number, i_row: number): string{
 var i_column = i_column
 var i_row = i_row
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(commonSeps!.PARENTHESIS_OPEN);
@@ -140,7 +136,7 @@ this.id= (row *columns) +column;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CellPosition.toString(this.getColumn(), this.getRow());;
+                        return CellPosition.toStringColRow(this.getColumn(), this.getRow());;
     
 }
 

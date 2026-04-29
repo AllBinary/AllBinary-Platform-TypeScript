@@ -70,8 +70,6 @@ export class WeblisketFinder
         
 
     private static readonly instance: WeblisketFinder = new WeblisketFinder();
-        
-        
 
     public static getInstance(): WeblisketFinder{
 
@@ -84,8 +82,6 @@ export class WeblisketFinder
 
 
     private static readonly KEY: string = "installerdata.dat";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -93,14 +89,10 @@ export class WeblisketFinder
 var args = args
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var vector: BasicArrayList = WeblisketFinder.getInstance()!.findAll(stringUtil!.EMPTY_STRING)!;
-        
-        
 ;
     
 console.log(vector.size());
@@ -109,16 +101,10 @@ console.log(vector.size());
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -169,14 +155,10 @@ var file = file
         try {
             
     var filePath: string = file.getPath()!;
-        
-        
 ;
     
 
     var end: number = filePath!.indexOf(KEY)!;
-        
-        
 ;
     
 

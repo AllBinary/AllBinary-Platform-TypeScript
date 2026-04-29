@@ -58,12 +58,8 @@ export class TransformInfoRequestHelperFactory
         
 
     private static readonly CLASSNAME: string = "taghelpers.transform.info.TransformInfoRequestHelper";
-        
-        
 
     private static readonly FACTORYNAME: string = "TransformInfoRequestHelperFactory";
-        
-        
 public constructor (){
 
             super();
@@ -72,7 +68,7 @@ public constructor (){
 
                 //@Throws(LicensingException::class)
             
-    public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
+    public getInstance(hashMap: HashMap, pageContext: PageContext): any{
 var hashMap = hashMap
 var pageContext = pageContext
 

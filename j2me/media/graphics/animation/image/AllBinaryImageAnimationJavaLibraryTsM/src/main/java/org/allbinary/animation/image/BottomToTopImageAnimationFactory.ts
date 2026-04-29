@@ -51,6 +51,8 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { BottomToTopImageAnimation } from "./BottomToTopImageAnimation.js";
+
 export class BottomToTopImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -70,8 +72,6 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
     //var instanceId = instanceId
 
     var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 

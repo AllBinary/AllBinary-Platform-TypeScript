@@ -46,8 +46,6 @@ import { AndroidGameStatistics } from "./AndroidGameStatistics.js";
         
 
     private static readonly SINGLETON: AndroidGameStatistics = new GameStatisticsFactory();
-        
-        
 
     /*actual*/ public static getInstance(): AndroidGameStatistics{
 
@@ -60,8 +58,6 @@ import { AndroidGameStatistics } from "./AndroidGameStatistics.js";
 
 
     private stringBuffer: StringMaker = new StringMaker();
-        
-        
 
     public add(string: string){
 var string = string

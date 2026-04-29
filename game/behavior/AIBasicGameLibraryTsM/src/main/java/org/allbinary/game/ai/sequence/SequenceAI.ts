@@ -65,8 +65,6 @@ export class SequenceAI extends ArrayAI {
         
 
     private static readonly SEQUENCE_AI: string = "Sequence AI";
-        
-        
 
     private index: number= 0
 public constructor (artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
@@ -95,8 +93,6 @@ this.index++;
     
 
     var artificialIntelligenceInterface: ArtificialIntelligenceInterface = this.getSelectedArtificialIntelligenceInterface()!;
-        
-        
 ;
     
 
@@ -104,9 +100,7 @@ this.index++;
                         
                                     {
                                     
-    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = (artificialIntelligenceInterface as ArtificialIntelligenceTransitionInterface);
-        
-        
+    var artificialIntelligenceTransitionInterface: ArtificialIntelligenceTransitionInterface = ( as ArtificialIntelligenceTransitionInterfaceartificialIntelligenceInterface);
 ;
     
 artificialIntelligenceTransitionInterface!.transition();
@@ -157,8 +151,6 @@ this.index= index;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(super.toString());

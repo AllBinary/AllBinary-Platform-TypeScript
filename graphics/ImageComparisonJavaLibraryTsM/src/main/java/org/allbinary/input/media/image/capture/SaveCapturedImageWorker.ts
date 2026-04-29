@@ -69,18 +69,12 @@ export class SaveCapturedImageWorker extends BasicEventHandler implements Captur
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private running: boolean= false
 
     private capturedImageWorkerResultsEventVector: Vector = new Vector();
-        
-        
 public constructor (){
 
             super();
@@ -117,7 +111,7 @@ run();
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
 var allBinaryEventObject = allBinaryEventObject
-onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
+onCaptureEvent( as CapturedImageWorkerResultsEventallBinaryEventObject);
     
 }
 
@@ -131,22 +125,16 @@ setRunning(true);
     
 
     var timeHelper: TimeDelayHelper = new TimeDelayHelper(1000);
-        
-        
 ;
     
-timeHelper!.setStartTime();
+timeHelper!.setStartTimeTNT();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0); as CapturedImageWorkerResultsEvent);
-        
-        
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = ( as CapturedImageWorkerResultsEventthis.capturedImageWorkerResultsEventVector!.get(0););
 ;
     
 
     var screenBufferedImage: BufferedImage = capturedImageWorkerResultsEvent!.getBufferedImage()!;
-        
-        
 ;
     
 new CapturedImageInputOutput().
@@ -154,7 +142,7 @@ new CapturedImageInputOutput().
     
 this.capturedImageWorkerResultsEventVector!.remove(capturedImageWorkerResultsEvent);
     
-this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsed(), this, this.commonStrings!.RUN);
+this.logUtil!.putF(CommonLabels.getInstance()!.ELAPSED +timeHelper!.getElapsedTNT(), this, this.commonStrings!.RUN);
     
 setRunning(false);
     

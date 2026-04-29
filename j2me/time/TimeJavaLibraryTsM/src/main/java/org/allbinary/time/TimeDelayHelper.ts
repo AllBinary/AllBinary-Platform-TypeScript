@@ -52,12 +52,8 @@ export class TimeDelayHelper
         
 
     private startTime: number =  -1;
-        
-        
 
     private elapsedTimeAtPause: number = Long.MIN_VALUE;
-        
-        
 
     public delay: number
 public constructor (delay: number){
@@ -66,16 +62,14 @@ public constructor (delay: number){
             //var delay = delay
 this.delay= delay;
     
-this.setStartTime();
+this.setStartTimeTNT();
     
 }
 
 
-    public isTime(): boolean{
+    public isTimeTNT(): boolean{
 
-    var currentTime: number = System.currentTimeMillis()!;
-        
-        
+    var currentTime: number = Date.now()!;
 ;
     
 
@@ -102,12 +96,10 @@ this.setStartTime();
 }
 
 
-    public isTimeSince(delay: number): boolean{
+    public isTimeSinceTNT(delay: number): boolean{
 var delay = delay
 
-    var currentTime: number = System.currentTimeMillis()!;
-        
-        
+    var currentTime: number = Date.now()!;
 ;
     
 
@@ -211,12 +203,12 @@ var currentTime = currentTime
 }
 
 
-    public getElapsed(): number{
+    public getElapsedTNT(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return System.currentTimeMillis() -this.startTime;
+                        return Date.now() -this.startTime;
     
 }
 
@@ -261,10 +253,10 @@ var time = time
 }
 
 
-    public isElapsed(time: number): boolean{
+    public isElapsedTNT(time: number): boolean{
 var time = time
 
-                        if(this.getElapsed() > time)
+                        if(this.getElapsedTNT() > time)
                         
                                     {
                                     
@@ -306,14 +298,14 @@ this.startTime= startTime;
 }
 
 
-    public setStartTime(){
-this.startTime= System.currentTimeMillis();
+    public setStartTimeTNT(){
+this.startTime= Date.now();
     
 }
 
 
     public pause(){
-this.elapsedTimeAtPause= this.getElapsed();
+this.elapsedTimeAtPause= this.getElapsedTNT();
     
 this.startTime= Long.MAX_VALUE;
     
@@ -325,11 +317,11 @@ this.startTime= Long.MAX_VALUE;
                         if(this.elapsedTimeAtPause != Long.MIN_VALUE)
                         
                                     {
-                                    this.startTime= System.currentTimeMillis() +this.elapsedTimeAtPause;
+                                    this.startTime= Date.now() +this.elapsedTimeAtPause;
     
 this.elapsedTimeAtPause= Long.MIN_VALUE;
     
-this.setStartTime();
+this.setStartTimeTNT();
     
 
 
@@ -349,12 +341,10 @@ this.setStartTime();
 }
 
 
-    public toString(currentTime: number): string{
+    public toStringAt(currentTime: number): string{
 var currentTime = currentTime
 
     var elapsed: number = this.getElapsed(currentTime)!;
-        
-        
 ;
     
 
@@ -363,14 +353,10 @@ var currentTime = currentTime
                                     {
                                     
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var elapsedAsString: string = (elapsed).toString()!;
-        
-        
 ;
     
 
@@ -398,15 +384,11 @@ var currentTime = currentTime
 
     public toString(): string{
 
-    var currentTime: number = System.currentTimeMillis()!;
-        
-        
+    var currentTime: number = Date.now()!;
 ;
     
 
     var elapsed: number = this.getElapsed(currentTime)!;
-        
-        
 ;
     
 
@@ -415,14 +397,10 @@ var currentTime = currentTime
                                     {
                                     
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var elapsedAsString: string = (elapsed).toString()!;
-        
-        
 ;
     
 

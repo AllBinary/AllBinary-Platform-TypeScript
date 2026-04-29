@@ -60,20 +60,14 @@ public constructor (){
                     
 
     var inputToGameKeyMapping: InputToGameKeyMapping = this.getInputMapping()!;
-        
-        
 ;
     
 
     var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-        
-        
 ;
     
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.FIRE, pcKeyFactory!.ENTER);

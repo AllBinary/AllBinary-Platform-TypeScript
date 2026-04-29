@@ -61,12 +61,8 @@ export class ImageArrayAnimationFactory
         
 
     private dx: number = 0;
-        
-        
 
     private dy: number = 0;
-        
-        
 
     private readonly imageArray: Image[]
 

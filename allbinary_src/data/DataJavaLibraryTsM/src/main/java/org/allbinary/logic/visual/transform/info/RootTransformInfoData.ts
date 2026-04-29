@@ -43,8 +43,6 @@ export class RootTransformInfoData
         
 
     public static readonly NAME: string = "ROOT_TRANSFORM_INFO_NAME";
-        
-        
 private constructor (){
 
             super();

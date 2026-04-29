@@ -83,8 +83,6 @@ export class OrderHistoryView extends HttpStoreComponentView implements DomNodeI
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -104,7 +102,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 this.preprocessing= this.request.getParameter(OrderHistoryData.PREPROCESSINGNAME);
     
@@ -127,26 +125,18 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
         try {
             
     var node: Node = document.createElement(OrderData.ORDERS)!;
-        
-        
 ;
     
 
     var orderHistoryEntity: OrderHistoryEntity = new OrderHistoryEntity();
-        
-        
 ;
     
 
     var orderReviewVector: Vector = orderHistoryEntity!.getOrders(this.getWeblisketSession()!.getUserName())!;
-        
-        
 ;
     
 
     var size: number = orderReviewVector!.length!;
-        
-        
 ;
     
 
@@ -155,26 +145,18 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index); as OrderHistory;
-        
-        
+    var orderHistory: OrderHistory =  as OrderHistoryorderReviewVector!.get(index);;
 ;
     
 
     var orderHistoryNode: Node = orderHistory!.toXmlNode(document)!;
-        
-        
 ;
     
 
     var orderNode: Node = document.createElement(orderHistory!.getPaymentMethod())!;
-        
-        
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -224,14 +206,15 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -265,7 +248,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

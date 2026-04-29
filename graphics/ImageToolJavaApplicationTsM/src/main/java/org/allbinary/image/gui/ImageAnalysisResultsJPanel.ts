@@ -53,6 +53,12 @@ import { JPanel } from "./JPanel.js";
 
 import { Short } from "./Short.js";
 
+import { JTextField } from "./JTextField.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JLabel } from "./JLabel.js";
+
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {
         
 public constructor (imageAnalysisResultsArray: ImageAnalysisResults[]){
@@ -63,8 +69,6 @@ initComponents();
     
 
     var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;
-        
-        
 ;
     
 this.updateImageColorRangeResults(imageAnalysisResults);
@@ -140,8 +144,6 @@ this.matchingPixelsJTextField!.setEditable(false);
 this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
                                                     CommonPhoneStrings.getInstance()!.ONE;
-        
-        
                                                 ]));
     
 this.jComboBox1!.setEnabled(false);
@@ -186,8 +188,6 @@ this.maxBlueJTextField!.setEditable(false);
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -203,50 +203,46 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
     //var imageAnalysisResults = imageAnalysisResults
 
     var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;
-        
-        
 ;
     
-this.matchingPixelsJTextField!.setText(imageColorRangeResults!.getMatchingPixelsChecked() as Long.
+this.matchingPixelsJTextField!.setText(imageColorRangeResults!.getMatchingPixelsChecked().
                             toString());
     
-this.totalPixelsJTextField!.setText(imageColorRangeResults!.getTotalPixelsChecked() as Long.
+this.totalPixelsJTextField!.setText(imageColorRangeResults!.getTotalPixelsChecked().
                             toString());
     
-this.percentMatchingJTextField!.setText(new Float(imageColorRangeResults!.getPercent()).
+this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).
                             toString());
     
 
     var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;
-        
-        
 ;
     
-this.avgRedJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgRed()).
+this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).
                             toString());
     
-this.avgGreenJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgGreen()).
+this.avgGreenJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgGreen()).
                             toString());
     
-this.avgBlueJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgBlue()).
+this.avgBlueJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgBlue()).
                             toString());
     
-this.minRedJTextField!.setText(imageColorResults!.getColorRange()!.getMinRed() as Long.
+this.minRedJTextField!.setText(imageColorResults!.getColorRange()!.getMinRed().
                             toString());
     
-this.minGreenJTextField!.setText(imageColorResults!.getColorRange()!.getMinGreen() as Long.
+this.minGreenJTextField!.setText(imageColorResults!.getColorRange()!.getMinGreen().
                             toString());
     
-this.minBlueJTextField!.setText(imageColorResults!.getColorRange()!.getMinBlue() as Long.
+this.minBlueJTextField!.setText(imageColorResults!.getColorRange()!.getMinBlue().
                             toString());
     
-this.maxRedJTextField!.setText(imageColorResults!.getColorRange()!.getMaxRed() as Long.
+this.maxRedJTextField!.setText(imageColorResults!.getColorRange()!.getMaxRed().
                             toString());
     
-this.maxGreenJTextField!.setText(imageColorResults!.getColorRange()!.getMaxGreen() as Long.
+this.maxGreenJTextField!.setText(imageColorResults!.getColorRange()!.getMaxGreen().
                             toString());
     
-this.maxBlueJTextField!.setText(imageColorResults!.getColorRange()!.getMaxBlue() as Long.
+this.maxBlueJTextField!.setText(imageColorResults!.getColorRange()!.getMaxBlue().
                             toString());
     
 }

@@ -87,33 +87,23 @@ var response = response
 var servletConfig = servletConfig
 var servletContext = servletContext
 
-    var httpRequest: HttpServletRequest = request as HttpServletRequest;
-        
-        
+    var httpRequest: HttpServletRequest =  as HttpServletRequestrequest;
 ;
     
 
     var requestCommand: string = httpRequest!.getPathInfo()!;
-        
-        
 ;
     
 
     var index: number = requestCommand!.indexOf(AbPathData.getInstance()!.SEPARATOR)!;
-        
-        
 ;
     
 
     var storeName: string = requestCommand!.substring(0, index)!;
-        
-        
 ;
     
 
     var requestName: string = requestCommand!.substring(index, requestCommand!.length)!;
-        
-        
 ;
     
 
@@ -127,25 +117,19 @@ var servletContext = servletContext
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
+    public static getInstance(hashMap: HashMap, pageContext: PageContext): WorkFlowInterface{
 var hashMap = hashMap
 var pageContext = pageContext
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME); as String;
-        
-        
+    var workFlowName: string =  as StringpageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME);;
 ;
     
 
     var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
-        
-        
 ;
     
 
     var storeName: string = weblisketSession!.getStoreName()!;
-        
-        
 ;
     
 

@@ -70,9 +70,7 @@ export class Basket
          implements BasketInterface, Serializable {
         
 
-    private items: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private items: HashMap = new HashMap();
 public constructor (){
 
             super();
@@ -88,26 +86,18 @@ var num = num
                                     {
                                     
     var oldNumStr: string = .toCharArray();
-        
-        
 ;
     
 
-    var oldNumInt: Integer = Integer(Integer.valueOf(oldNumStr))!;
-        
-        
+    var oldNumInt: number = Integer(Integer.valueOf(oldNumStr))!;
 ;
     
 
-    var numInt: Integer = Integer(Integer.valueOf(num))!;
-        
-        
+    var numInt: number = Integer(Integer.valueOf(num))!;
 ;
     
 
-    var newNumInt: Integer = new Integer(oldNumInt!.toInt() +numInt!.toInt());
-        
-        
+    var newNumInt: number = oldNumInt!.toInt() +numInt!.toInt();
 ;
     
 this.items.put(id, newNumInt!.toString());
@@ -154,15 +144,11 @@ var num = num
 
     public getTotalWeight(): string{
 
-    var itemsAndNumberInBasket: HashMap<any, any> = getItems()!;
-        
-        
+    var itemsAndNumberInBasket: HashMap = getItems()!;
 ;
     
 
     var totalWeight: Money = new Money();
-        
-        
 ;
     
 
@@ -171,8 +157,6 @@ var num = num
                                     {
                                     
     var items: Set = itemsAndNumberInBasket!.keySet()!;
-        
-        
 ;
     
 
@@ -180,20 +164,16 @@ var num = num
 ;
     
 
-    var weightFloat: Float
+    var weightFloat: number
 ;
     
 
     var itemArray: any[] = items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -202,16 +182,14 @@ var num = num
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 product= .toCharArray();
     
-weightFloat= new Float(new InventoryEntity().
+weightFloat= new number(new InventoryEntity().
                             getWeight(product));
     
-weightFloat= new Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
+weightFloat= new number(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
     
 totalWeight!.add(weightFloat!.toString());
     
@@ -229,12 +207,12 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getNumberOfItems(): Integer{
+    public getNumberOfItems(): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Integer(this.items.size());
+                        return this.items.size();
     
 }
 
@@ -242,8 +220,6 @@ totalWeight!.add(weightFloat!.toString());
     public getIds(): Set{
 
     var set: Set = this.items.keySet()!;
-        
-        
 ;
     
 
@@ -255,7 +231,7 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getItems(): HashMap<any, any>{
+    public getItems(): HashMap{
 
 
 
@@ -265,12 +241,10 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getNumberOf(product: string): Integer{
+    public getNumberOf(product: string): number{
 var product = product
 
-    var numStr: string = this.items.get(product); as String;
-        
-        
+    var numStr: string =  as Stringthis.items.get(product);;
 ;
     
 
@@ -286,15 +260,11 @@ var product = product
             
     public getSubTotal(): Money{
 
-    var itemsAndNumberInBasket: HashMap<any, any> = getItems()!;
-        
-        
+    var itemsAndNumberInBasket: HashMap = getItems()!;
 ;
     
 
     var subTotal: Money = new Money();
-        
-        
 ;
     
 
@@ -303,33 +273,23 @@ var product = product
                                     {
                                     
     var items: Set = itemsAndNumberInBasket!.keySet()!;
-        
-        
 ;
     
 
     var inventoryEntityFactory: InventoryEntityFactory = InventoryEntityFactory.getInstance()!;
-        
-        
 ;
     
 
-    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance(); as InventoryEntity;
-        
-        
+    var inventoryEntity: InventoryEntity =  as InventoryEntityinventoryEntityFactory!.getInventoryEntityInstance();;
 ;
     
 
     var itemArray: any[] = items.toArray()!;
-        
-        
 ;
     
 
     var size: number = itemArray!.length
                 ;
-        
-        
 ;
     
 
@@ -338,26 +298,18 @@ var product = product
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var product: string = .toCharArray();
-        
-        
 ;
     
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;
-        
-        
 ;
     
 
     var productTotal: Money = itemInterface!.getPrice()!;
-        
-        
 ;
     
 productTotal!.multiply(getNumberOf(product)!.toInt());

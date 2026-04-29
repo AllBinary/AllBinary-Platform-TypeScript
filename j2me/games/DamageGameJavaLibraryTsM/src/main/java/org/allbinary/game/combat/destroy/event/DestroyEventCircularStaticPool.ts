@@ -54,8 +54,6 @@ export class DestroyEventCircularStaticPool
         
 
     private static readonly instance: DestroyEventCircularStaticPool = new DestroyEventCircularStaticPool();
-        
-        
 
     public static getInstance(): DestroyEventCircularStaticPool{
 
@@ -68,8 +66,6 @@ export class DestroyEventCircularStaticPool
 
 
     private EVENT_POOL: AllBinaryEventCircularPool = new AllBinaryEventCircularPool(20);
-        
-        
 private constructor (){
 
             super();
@@ -85,12 +81,10 @@ EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
 
                 //@Throws(Error::class)
             
-    public getInstance(layerInterface: AllBinaryLayer): DestroyedEvent{
+    public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface
 
-    var destroyedEvent: DestroyedEvent = EVENT_POOL.getNextInstance(); as DestroyedEvent;
-        
-        
+    var destroyedEvent: DestroyedEvent =  as DestroyedEventEVENT_POOL.getNextInstance();;
 ;
     
 destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

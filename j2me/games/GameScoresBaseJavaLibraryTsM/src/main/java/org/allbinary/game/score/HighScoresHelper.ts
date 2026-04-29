@@ -47,9 +47,7 @@ import { HighScores } from "./HighScores.js";
 export class HighScoresHelper extends HighScoresHelperBase {
         
 
-    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(0, 0)!;
-        
-        
+    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(0, 0)!;
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
     //var highScoresArrayP = highScoresArrayP
@@ -61,20 +59,14 @@ this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);
 
 
     lastIndex: number =  -1;
-        
-        
 
     public getNextHighScores(): HighScores{
 
     var highScores: HighScores = this.highScoresArrayP[this.circularIndexUtil!.getIndex()]!;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
@@ -115,8 +107,6 @@ this.lastIndex= this.circularIndexUtil!.getIndex();
                                 
 
     var anyScores: boolean = false;
-        
-        
 ;
     
 
@@ -129,8 +119,6 @@ this.lastIndex= this.circularIndexUtil!.getIndex();
 
                         for (
     var index: number = highScoresArrayP!.length -1;
-        
-        
 index >= 0; index--)
         {
 highScores= highScoresArrayP[index]!;

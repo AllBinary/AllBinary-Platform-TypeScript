@@ -64,8 +64,6 @@ export class InventoryItemViewParentTagHelper
         
 
     private static readonly instance: InventoryItemViewParentTagHelper = new InventoryItemViewParentTagHelper();
-        
-        
 
     public static getInstance(): InventoryItemViewParentTagHelper{
 
@@ -90,15 +88,11 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
-        
-        
+    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
 ;
     
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-        
-        
 ;
     
 
@@ -107,8 +101,6 @@ var inventoryTag = inventoryTag
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Must have ");
@@ -120,7 +112,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -128,7 +121,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewObject as InventoryItemView;
+                        return  as InventoryItemViewviewObject;
     
 
                                     }
@@ -137,7 +130,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.");
+                    
 
                         }
                             
@@ -157,15 +151,11 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
-        
-        
+    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
 ;
     
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-        
-        
 ;
     
 
@@ -174,8 +164,6 @@ var inventoryTag = inventoryTag
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Must have ");
@@ -187,7 +175,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -195,7 +184,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewObject as DownloadableInventoryItemView;
+                        return  as DownloadableInventoryItemViewviewObject;
     
 
                                     }
@@ -204,7 +193,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.");
+                    
 
                         }
                             
@@ -224,15 +214,11 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
-        
-        
+    var validationViewHelper: ValidationViewHelper =  as ValidationViewHelperinventoryTag!.getHelper();;
 ;
     
 
     var viewObject: TransformInterface = validationViewHelper!.getViewObject()!;
-        
-        
 ;
     
 
@@ -241,8 +227,6 @@ var inventoryTag = inventoryTag
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Must have ");
@@ -254,7 +238,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 
@@ -262,7 +247,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return viewObject as RequestMapInterface;
+                        return  as RequestMapInterfaceviewObject;
     
 
                                     }
@@ -271,7 +256,8 @@ stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.")
+                            throw new Error("Must have parent tag.");
+                    
 
                         }
                             
@@ -288,8 +274,6 @@ var helperObject = helperObject
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Must have ");
@@ -303,7 +287,8 @@ stringBuffer!.append(helperObject!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString())
+                            throw new Error(stringBuffer!.toString());
+                    
 
                                     }
                                 

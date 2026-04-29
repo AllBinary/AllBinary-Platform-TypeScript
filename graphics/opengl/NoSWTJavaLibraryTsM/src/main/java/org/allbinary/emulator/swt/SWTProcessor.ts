@@ -18,6 +18,8 @@
 
 
 
+            import { Runnable } from "../../../../java/lang/Runnable.js";
+        
 import { Display } from "../../../../org/eclipse/swt/widgets/Display.js";
 
     
@@ -49,8 +51,6 @@ export class SWTProcessor
         
 
     private static readonly instance: SWTProcessor = new SWTProcessor();
-        
-        
 
     public static getInstance(): SWTProcessor{
 
@@ -63,8 +63,6 @@ export class SWTProcessor
 
 
     public runnable: Runnable = NullRunnable.getInstance()!;
-        
-        
 
     public process(display: Display){
     //var display = display

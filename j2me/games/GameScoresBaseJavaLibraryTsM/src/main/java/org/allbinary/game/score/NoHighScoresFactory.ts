@@ -53,8 +53,6 @@ export class NoHighScoresFactory extends HighScoresBase {
         
 
     private static readonly instance: NoHighScoresFactory = new NoHighScoresFactory();
-        
-        
 
     public static getInstance(): NoHighScoresFactory{
 
@@ -67,12 +65,8 @@ export class NoHighScoresFactory extends HighScoresBase {
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly NO_HIGH_SCORES: HighScores[] = [];
-        
-        
 private constructor (){
 
             super();

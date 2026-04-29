@@ -57,47 +57,27 @@ export class RaceTrackData
         
 
     private tileSetImage: Image = NullCanvas.NULL_IMAGE;
-        
-        
 
     private miniTileSetImage: Image = NullCanvas.NULL_IMAGE;
-        
-        
 
     private cellWidth: number = 0;
-        
-        
 
     private cellHeight: number = 0;
-        
-        
 
     private miniCellWidth: number = 0;
-        
-        
 
     private miniCellHeight: number = 0;
-        
-        
 
     private mapArray: number[][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY;
-        
-        
 
     private cellTypeIdToGeographicMapCellTypeArray: number[] = NullUtil.getInstance()!.NULL_INT_ARRAY;
-        
-        
 
     private NO_OVER_PASSES_ARRAY: CellPosition[] = [];
-        
-        
 
     private overPassGeographicMapCellPositionArray: CellPosition[] = NO_OVER_PASSES_ARRAY;
-        
-        
 
-    private id: Integer
-public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
+    private id: number
+public constructor (id: number, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();
             //var id = id
@@ -277,14 +257,14 @@ this.miniCellHeight= miniCellHeight;
 }
 
 
-    public setId(id: Integer){
+    public setId(id: number){
 var id = id
 this.id= id;
     
 }
 
 
-    public getId(): Integer{
+    public getId(): number{
 
 
 

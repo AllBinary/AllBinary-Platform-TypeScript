@@ -64,12 +64,8 @@ export class InputAutomationModuleServiceFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]
 public constructor (){

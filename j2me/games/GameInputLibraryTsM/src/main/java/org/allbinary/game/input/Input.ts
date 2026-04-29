@@ -51,8 +51,6 @@ export class Input
     private id: number= 0
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (id: number, name: string){
 
             super();
@@ -102,8 +100,6 @@ this.name= keyName;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Name: ");

@@ -67,28 +67,16 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         
 
     private static readonly MAX_IMAGES: number = 4;
-        
-        
 
     private gameCanvas: Canvas = NullCanvas.NULL_CANVAS;
-        
-        
 
     private readonly offScreenImage: Image[] = new Array(MAX_IMAGES);
-        
-        
 
     private previousImage: Image = NullCanvas.NULL_IMAGE;
-        
-        
 
-    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(MAX_IMAGES)!;
-        
-        
+    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(MAX_IMAGES)!;
 
-    private readonly drawCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.getInstance(MAX_IMAGES -1, MAX_IMAGES)!;
-        
-        
+    private readonly drawCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(MAX_IMAGES -1, MAX_IMAGES)!;
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -96,15 +84,14 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
 
 
-                            throw new Error("No Longer Used")
+                            throw new Error("No Longer Used");
+                    
 }
 
 
     public process(){
 
-    var myCanvas: MyCanvas = (this.gameCanvas as MyCanvas);
-        
-        
+    var myCanvas: MyCanvas = ( as MyCanvasthis.gameCanvas);
 ;
     
 myCanvas!.draw(this.offScreenImage[this.circularIndexUtil!.getIndex()]!.getGraphics());
@@ -117,8 +104,6 @@ this.drawCircularIndexUtil!.next();
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics

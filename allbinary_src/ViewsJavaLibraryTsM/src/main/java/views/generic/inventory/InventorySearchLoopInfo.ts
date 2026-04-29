@@ -46,38 +46,22 @@ export class InventorySearchLoopInfo
         
 
     public lastPage: number =  -1;
-        
-        
 
     public currentPage: number =  -1;
-        
-        
 
     public numberOfResultsOnCurrentPage: number = 0;
-        
-        
 
     public numberOfResults: number = 0;
-        
-        
 
     private readonly CURRENT: string = "current: ";
-        
-        
 
     private readonly NUM: string = " num: ";
-        
-        
 
     private readonly LAST: string = " last: ";
-        
-        
 
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.CURRENT);

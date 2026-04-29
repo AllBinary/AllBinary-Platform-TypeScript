@@ -62,6 +62,8 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
         
 import { InputRobotInterface } from "./InputRobotInterface.js";
 
+import { Robot } from "./Robot.js";
+
 import { GraphicsDevice } from "./GraphicsDevice.js";
 
 import { MouseInfo } from "./MouseInfo.js";
@@ -78,12 +80,8 @@ export class InputRobot
         
 
     public static readonly NAME: string = "Java Robot";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private robot: Robot
 public constructor (graphicsDevice: GraphicsDevice){
@@ -118,8 +116,6 @@ this.robot= new Robot(graphicsDevice);
     public getMousePoint(): Point{
 
     var point: Point = MouseInfo.getPointerInfo()!.getLocation()!;
-        
-        
 ;
     
 
@@ -133,14 +129,12 @@ this.robot= new Robot(graphicsDevice);
 
                 //@Throws(Error::class)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
+    public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
     //var rectangle = rectangle
     //var x = x
     //var y = y
 
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
-        
-        
 ;
     
 this.robot.mouseMove(point.x +x, point.y +y);
@@ -148,8 +142,6 @@ this.robot.mouseMove(point.x +x, point.y +y);
 
     var message: string = new StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(point.x)!.append(" y: ")!.appendint(point.y)!.append(" in the middle of: ")!.append(StringUtil.getInstance()!.toString(rectangle))!.toString()!;
-        
-        
 ;
     
 this.logUtil!.putF(message, this, "moveMouseToTarget");
@@ -172,8 +164,6 @@ this.robot.mouseMove(x, y);
 
     var message: string = new StringMaker().
                             append("Moved Mouse To: x: ")!.appendint(x)!.append(" y: ")!.appendint(y)!.toString()!;
-        
-        
 ;
     
 this.logUtil!.putF(message, this, "moveMouse");
@@ -201,14 +191,14 @@ var screenRect = screenRect
 }
 
 
-    public delay(ms: Integer){
+    public delay(ms: number){
 var ms = ms
 this.robot.delay(ms);
     
 }
 
 
-    public getAutoDelay(): Integer{
+    public getAutoDelay(): number{
 
 
 
@@ -218,7 +208,7 @@ this.robot.delay(ms);
 }
 
 
-    public getPixelColor(x: Integer, y: Integer): Color{
+    public getPixelColor(x: number, y: number): Color{
 var x = x
 var y = y
 
@@ -240,21 +230,21 @@ var y = y
 }
 
 
-    public keyPress(keycode: Integer){
+    public keyPress(keycode: number){
 var keycode = keycode
 this.robot.keyPress(keycode);
     
 }
 
 
-    public keyRelease(keycode: Integer){
+    public keyRelease(keycode: number){
 var keycode = keycode
 this.robot.keyRelease(keycode);
     
 }
 
 
-    public mouseMove(x: Integer, y: Integer){
+    public mouseMove(x: number, y: number){
 var x = x
 var y = y
 this.robot.mouseMove(x, y);
@@ -262,28 +252,28 @@ this.robot.mouseMove(x, y);
 }
 
 
-    public mousePress(buttons: Integer){
+    public mousePress(buttons: number){
 var buttons = buttons
 this.robot.mousePress(buttons);
     
 }
 
 
-    public mouseRelease(buttons: Integer){
+    public mouseRelease(buttons: number){
 var buttons = buttons
 this.robot.mouseRelease(buttons);
     
 }
 
 
-    public mouseWheel(wheelAmt: Integer){
+    public mouseWheel(wheelAmt: number){
 var wheelAmt = wheelAmt
 this.robot.mouseWheel(wheelAmt);
     
 }
 
 
-    public setAutoDelay(ms: Integer){
+    public setAutoDelay(ms: number){
 var ms = ms
 this.robot.setAutoDelay(ms);
     

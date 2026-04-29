@@ -48,8 +48,6 @@ export class Visitor
         
 
     private static readonly instance: Visitor = new Visitor();
-        
-        
 
     public static getInstance(): Visitor{
 
@@ -62,8 +60,6 @@ export class Visitor
 
 
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
-        
-        
 
     public visit(anyType: any = {}): any{
 var anyType = anyType

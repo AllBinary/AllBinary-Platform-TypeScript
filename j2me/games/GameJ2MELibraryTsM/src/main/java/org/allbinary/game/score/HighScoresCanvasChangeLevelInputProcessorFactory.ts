@@ -42,6 +42,8 @@ import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayab
         
 import { HighScoresCanvasInputProcessorFactoryInterface } from "./HighScoresCanvasInputProcessorFactoryInterface.js";
 
+import { HighScoresCanvasLevelChangeInputProcessor } from "./HighScoresCanvasLevelChangeInputProcessor.js";
+
 import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
 
 export class HighScoresCanvasChangeLevelInputProcessorFactory

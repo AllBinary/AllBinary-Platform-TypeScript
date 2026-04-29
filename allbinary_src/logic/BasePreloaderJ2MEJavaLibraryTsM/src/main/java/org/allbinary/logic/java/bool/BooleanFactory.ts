@@ -43,8 +43,6 @@ export class BooleanFactory
         
 
     private static readonly instance: BooleanFactory = new BooleanFactory();
-        
-        
 
     public static getInstance(): BooleanFactory{
 
@@ -57,28 +55,16 @@ export class BooleanFactory
 
 
     public readonly TRUE: Boolean = true;
-        
-        
 
     public readonly FALSE: Boolean = false;
-        
-        
 
     public readonly TRUE_STRING: string = TRUE.toString()!;
-        
-        
 
     public readonly FALSE_STRING: string = FALSE.toString()!;
-        
-        
 
     public readonly YES: string = "yes";
-        
-        
 
     public readonly NO: string = "no";
-        
-        
 
     public toString(bool: boolean): string{
 var bool = bool

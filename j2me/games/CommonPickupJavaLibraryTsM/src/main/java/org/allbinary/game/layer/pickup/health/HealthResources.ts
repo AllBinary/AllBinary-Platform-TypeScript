@@ -43,8 +43,6 @@ export class HealthResources
         
 
     private static readonly SINGLETON: HealthResources = new HealthResources();
-        
-        
 
     public static getInstance(): HealthResources{
 
@@ -57,8 +55,6 @@ export class HealthResources
 
 
     public RESOURCE: string = "health_drop_20_by_20.png";
-        
-        
 private constructor (){
 
             super();

@@ -67,8 +67,6 @@ export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourc
         
 
     private INSTANCE: FeaturedResourceRelativeRelationshipFactory = new FeaturedResourceRelativeRelationshipFactory();
-        
-        
 
     public static getInstance(): FeaturedResourceRelativeRelationshipFactory{
 
@@ -86,8 +84,6 @@ private constructor (){
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -96,14 +92,10 @@ var resource = resource
 var layer = layer
 
     var featureReleaseList: BasicArrayList = this.getList()!;
-        
-        
 ;
     
 
     var size: number = getList()!.size()!;
-        
-        
 ;
     
 
@@ -112,14 +104,10 @@ var layer = layer
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var featureInterface: ResourceRelativeRelationshipFactoryInterface = featureReleaseList!.objectArray[index]! as ResourceRelativeRelationshipFactoryInterface;
-        
-        
+    var featureInterface: ResourceRelativeRelationshipFactoryInterface =  as ResourceRelativeRelationshipFactoryInterfacefeatureReleaseList!.objectArray[index]!;
 ;
     
 
@@ -128,8 +116,6 @@ index < size; index++)
                                     {
                                     
     var list: BasicArrayList = featureInterface!.getResourceRelativeRelationshipList(resource)!;
-        
-        
 ;
     
 
@@ -154,7 +140,8 @@ index < size; index++)
 
 
                             throw new Error(new StringMaker().
-                            append("Not available for current feature selection or Resource: ")!.append(resource)!.toString())
+                            append("Not available for current feature selection or Resource: ")!.append(resource)!.toString());
+                    
 }
 
 
@@ -165,20 +152,14 @@ index < size; index++)
 var layer = layer
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
 
     var newList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -187,17 +168,13 @@ var layer = layer
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var relativeRelationship: RelativeRelationship = list.objectArray[index]! as RelativeRelationship;
-        
-        
+    var relativeRelationship: RelativeRelationship =  as RelativeRelationshiplist.objectArray[index]!;
 ;
     
-newList!.add(new RelativeLayerRelationship(layer, pointFactory!.getInstance0(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
+newList!.add(new RelativeLayerRelationship(layer, pointFactory!.createXY(relativeRelationship!.getX(), relativeRelationship!.getY()), BasicArrayListUtil.getInstance()!.getImmutableInstance()));
     
 }
 

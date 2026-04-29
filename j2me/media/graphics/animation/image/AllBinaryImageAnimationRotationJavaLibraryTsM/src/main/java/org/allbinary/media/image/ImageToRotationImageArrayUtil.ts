@@ -48,8 +48,6 @@ export class ImageToRotationImageArrayUtil
         
 
     private static readonly instance: ImageToRotationImageArrayUtil = new ImageToRotationImageArrayUtil();
-        
-        
 
     public static getInstance(): ImageToRotationImageArrayUtil{
 
@@ -74,20 +72,14 @@ var angleIncrement = angleIncrement
 var totalAngle = totalAngle
 
     var imageRotationUtil: ImageRotationUtil = ImageRotationUtil.getInstance()!;
-        
-        
 ;
     
 
     var totalFrames: number = totalAngle /angleIncrement;
-        
-        
 ;
     
 
     var imageArray: Image[] = new Array(totalFrames);
-        
-        
 ;
     
 imageArray[0]= image;
@@ -98,8 +90,6 @@ imageArray[0]= image;
 
                         for (
     var index: number = 1;
-        
-        
 index < totalFrames; index++)
         {
 imageArray[index]= imageRotationUtil!.createRotatedImage(image, index *angleIncrement);

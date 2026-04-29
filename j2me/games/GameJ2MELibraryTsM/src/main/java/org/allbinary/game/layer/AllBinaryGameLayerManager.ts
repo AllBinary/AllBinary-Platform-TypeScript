@@ -73,12 +73,8 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
         
 
     public static readonly NULL_ALLBINARY_LAYER_MANAGER: AllBinaryGameLayerManager = new AllBinaryGameLayerManager(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, GameInfo.NONE);
-        
-        
 
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(22)!;
-        
-        
+    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(22)!;
 
     private backgroundBasicColor: BasicColor
 
@@ -87,8 +83,6 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
     private gameInfo: GameInfo
 
     private playerGameInputCompositeInterface: PlayerGameInputCompositeInterface = NullPlayerGameInputComposite.NULL_PLAYER_GAME_INPUT_COMPOSITE;
-        
-        
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor, gameInfo: GameInfo){
 
             super();
@@ -101,8 +95,6 @@ this.foregroundBasicColor= foregroundBasicColor;
     
 
     var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;
-        
-        
 ;
     
 itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.toInt();
@@ -187,15 +179,11 @@ this.gameInfo= gameInfo;
     //var list = list
 
     var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());
-        
-        
 ;
     
 
     var size: number = layerProcessorInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -204,11 +192,9 @@ this.gameInfo= gameInfo;
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-layerProcessorInterfaceArray[index]= list.objectArray[index]! as LayerProcessor;
+layerProcessorInterfaceArray[index]=  as LayerProcessorlist.objectArray[index]!;
     
 }
 

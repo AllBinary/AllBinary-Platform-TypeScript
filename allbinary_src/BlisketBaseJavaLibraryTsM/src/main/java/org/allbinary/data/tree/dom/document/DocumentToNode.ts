@@ -49,28 +49,16 @@ export class DocumentToNode
         
 
     private static readonly XMLROOT: string = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
-        
-        
 
     private static readonly XMLROOTSTART: string = "<?xml";
-        
-        
 
     private static readonly XMLROOTEND: string = "?>";
-        
-        
 
     private static readonly XMLJSPROOTSTART: string = "<jsp:root";
-        
-        
 
     private static readonly XMLEND: string = ">";
-        
-        
 
     private static readonly XMLJSPROOTENDSTART: string = "</jsp:root";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -82,8 +70,6 @@ documentString= remove(documentString, XMLJSPROOTENDSTART, XMLEND);
     
 
     var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);
-        
-        
 ;
     
 
@@ -123,8 +109,6 @@ var end = end
                                     {
                                     
     var endIndex: number = documentString!.indexOf(end, startIndex)!;
-        
-        
 ;
     
 
@@ -133,14 +117,10 @@ var end = end
                                     {
                                     
     var startString: string = documentString!.substring(0, startIndex)!;
-        
-        
 ;
     
 
     var resultString: string = documentString!.substring(endIndex +1)!;
-        
-        
 ;
     
 

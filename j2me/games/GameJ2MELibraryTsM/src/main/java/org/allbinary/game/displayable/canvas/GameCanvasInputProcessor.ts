@@ -90,30 +90,18 @@ export class GameCanvasInputProcessor extends InputProcessor {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly allBinaryGameCanvas: AllBinaryGameCanvas
 
     private readonly downGameKeyEventHandler: DownGameKeyEventHandler = DownGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly upGameKeyEventHandler: UpGameKeyEventHandler = UpGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly downKeyEventHandler: DownKeyEventHandler = DownKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 
     private readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
-        
-        
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -126,12 +114,8 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
 
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
-        
-        
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
-        
-        
 
     public keyPressed(keyCode: number, deviceId: number){
     //var keyCode = keyCode
@@ -139,9 +123,7 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
 
         try {
             
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(this.allBinaryGameCanvas, keyCode)!;
-        
-        
+    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(this.allBinaryGameCanvas, keyCode)!;
 ;
     
 
@@ -149,14 +131,12 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(this.allBinaryGameCanvas, gameKey)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput(this.allBinaryGameCanvas, gameKey)!;
 ;
     
 downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }
@@ -169,14 +149,12 @@ downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
                         }
                             
 
-    var keyCodeAsInteger: Integer = smallIntegerSingletonFactory!.getInstanceNoThrow(keyCode)!;
-        
-        
+    var keyCodeAsInteger: number = smallIntegerSingletonFactory!.getAtNoThrow(keyCode)!;
 ;
     
 downKeyEventHandler!.fireEvent(keyCodeAsInteger);
     
-downKeyEventHandler!.getInstance(deviceId)!.fireEvent(keyCodeAsInteger);
+downKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(keyCodeAsInteger);
     
 
                 //: 
@@ -206,9 +184,7 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
 
         try {
             
-    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstance(canvas, keyCode)!;
-        
-        
+    var gameKey: GameKey = this.inputToGameKeyMapping!.getInstanceForCanvas(canvas, keyCode)!;
 ;
     
 
@@ -216,14 +192,12 @@ this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
                         
                                     {
                                     
-    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstance(canvas as GameKeyEventSourceInterface, gameKey)!;
-        
-        
+    var gameKeyEvent: GameKeyEvent = this.gameKeyEventFactory!.getInstanceForInput( as GameKeyEventSourceInterfacecanvas, gameKey)!;
 ;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

@@ -64,12 +64,12 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
+
 export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
-        
-        
 
     private readonly basicColorArray: BasicColor[]
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
@@ -94,8 +94,6 @@ this.basicColorArray= basicColorArray;
     //var instanceId = instanceId
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
-        
-        
 ;
     
 
@@ -109,7 +107,7 @@ this.basicColorArray= basicColorArray;
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface
 
 

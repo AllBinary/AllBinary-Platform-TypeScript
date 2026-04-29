@@ -52,6 +52,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { HealthBarThreedAnimation } from "./HealthBarThreedAnimation.js";
+
 import { HealthBarAnimation } from "./HealthBarAnimation.js";
 
 export class HealthBarAnimationInterfaceFactory
@@ -66,7 +68,7 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public getInstance(layerInterface: AllBinaryLayer, location: number): HealthBarAnimation{
+    public getInstanceByLocation(layerInterface: AllBinaryLayer, location: number): HealthBarAnimation{
 var layerInterface = layerInterface
 var location = location
 
@@ -93,7 +95,7 @@ var location = location
 
                 //@Throws(Error::class)
             
-    public getInstance(animationInterface: Animation): Animation{
+    public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface
 
 

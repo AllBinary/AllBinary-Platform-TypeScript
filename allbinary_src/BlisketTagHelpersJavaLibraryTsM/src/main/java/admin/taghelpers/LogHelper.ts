@@ -64,11 +64,9 @@ export class LogHelper extends BasicTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
@@ -93,8 +91,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to drop log table";
-        
-        
 ;
     
 
@@ -132,8 +128,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to create new log table";
-        
-        
 ;
     
 
@@ -161,20 +155,14 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Restore Successful";
-        
-        
 ;
     
 
     var logTableEntity: LogTableEntity = LogTableEntityFactory.getInstance()!.getLogTableEntityInstance()!;
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.restoreTable(logTableEntity, this.portion)!;
-        
-        
 ;
     
 
@@ -198,8 +186,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to restore backup";
-        
-        
 ;
     
 
@@ -227,14 +213,10 @@ this.portion= new Portion(hashMap);
         try {
             
     var success: string = "Backup Successful";
-        
-        
 ;
     
 
     var result: string = AbSqlTableUtil.getInstance()!.backupTable(LogTableEntityFactory.getInstance()!.getLogTableEntityInstance())!;
-        
-        
 ;
     
 
@@ -258,8 +240,6 @@ this.portion= new Portion(hashMap);
             {
 
     var error: string = "Failed to make backup";
-        
-        
 ;
     
 

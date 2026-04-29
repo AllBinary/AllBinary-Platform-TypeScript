@@ -69,8 +69,6 @@ export class AllBinaryPreloaderActivator
     private context: BundleContext
 
     private static readonly CRYPT_REGISTRY_NAME: string = "bundle.abcs.logic.system.loader.CryptService";
-        
-        
 
     public static getBundleContext(): BundleContext{
 
@@ -83,8 +81,6 @@ export class AllBinaryPreloaderActivator
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -92,8 +88,6 @@ public constructor (){
 
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -116,7 +110,8 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -126,21 +121,15 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
             
     public registerAsService(){
 
-    var properties: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    var properties: Hashtable = new Hashtable();
 ;
     
 
     var serviceRegistration: ServiceRegistration = context.registerService(CRYPT_REGISTRY_NAME, new CryptServiceFactory(), properties)!;
-        
-        
 ;
     
 
     var serviceReference: ServiceReference = serviceRegistration!.getReference()!;
-        
-        
 ;
     
 serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME);
@@ -150,7 +139,8 @@ serviceReference= context.getServiceReference(CRYPT_REGISTRY_NAME);
                                     null
                                 )
                         
-                                    throw new Error("No Such Service Reference")
+                                    throw new Error("No Such Service Reference");
+                                
 }
 
 

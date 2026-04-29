@@ -106,24 +106,26 @@ import { KeyEvent } from "./KeyEvent.js";
 
 import { PropertyChangeEvent } from "./PropertyChangeEvent.js";
 
+import { JTextField } from "./JTextField.js";
+
+import { JButton } from "./JButton.js";
+
+import { JList } from "./JList.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly imageStrings: ImageStrings = ImageStrings.getInstance()!;
-        
-        
 
     private readonly imagesRatioUtil: ImagesRatioUtil = ImagesRatioUtil.getInstance()!;
-        
-        
 
     private imageProcessorInput: ImageProcessorInput
 
@@ -134,8 +136,6 @@ export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProce
     private result: BufferedImage
 
     private isImageFillIn: boolean = true;
-        
-        
 public constructor (imageProcessorInput: ImageProcessorInput){
 
             super();
@@ -152,22 +152,16 @@ this.setImageProcessorInput(imageProcessorInput);
         try {
             
     var imageProcessorInput: ImageProcessorInput = this.getImageProcessorInput()!;
-        
-        
 ;
     
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
-        
-        
 ;
     
 this.icon= new Array(bufferedImageArray!.length);
     
 
     var defaultListModel: DefaultListModel = new DefaultListModel();
-        
-        
 ;
     
 
@@ -176,44 +170,30 @@ this.icon= new Array(bufferedImageArray!.length);
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 
     var width: number = bufferedImageArray[index]!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = bufferedImageArray[index]!.getHeight()!;
-        
-        
 ;
     
 
     var newWidth: number = 52;
-        
-        
 ;
     
 
     var oldRatio: number = width /height;
-        
-        
 ;
     
 
-    var newHeight: number = (newWidth /oldRatio);
-        
-        
+    var newHeight: number = Math.round(newWidth /oldRatio);
 ;
     
 
     var iconBufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[index]!, newWidth, newHeight, true)!;
-        
-        
 ;
     
 this.icon[index]= new ImageIconUnique(iconBufferedImage, index);
@@ -242,14 +222,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
         try {
             
     var bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;
-        
-        
 ;
     
 
     var tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
-        
-        
 ;
     
 
@@ -258,20 +234,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
-        
-        
+    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquethis.imageJList!.getModel()!.getElementAt(index);;
 ;
     
 
     var bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;
-        
-        
 ;
     
 tempBufferedImageArray[index]= bufferedImage;
@@ -280,21 +250,15 @@ tempBufferedImageArray[index]= bufferedImage;
 
 
     var totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();
-        
-        
 ;
     
 
     var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
-        
-        
 ;
     
 
-    var averageRatioString: string = new Double(averageRatio).
+    var averageRatioString: string = new number(averageRatio).
                             toString()!;
-        
-        
 ;
     
 
@@ -344,14 +308,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
         try {
             
     var bufferedImageArray: BufferedImage[] = this.getImageProcessorInput()!.getBufferedImageArray()!;
-        
-        
 ;
     
 
     var tempBufferedImageArray: BufferedImage[] = new Array(bufferedImageArray!.length);
-        
-        
 ;
     
 
@@ -360,20 +320,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
-        
-        
+    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquethis.imageJList!.getModel()!.getElementAt(index);;
 ;
     
 
     var bufferedImage: BufferedImage = ImageUtil.getInstance()!.createBufferedImage(bufferedImageArray[indexedImageIcon!.getId()]!, this.imageUnifierProperties!.getImageUnifierCell()!.getWidth(), this.imageUnifierProperties!.getImageUnifierCell()!.getHeight(), false)!;
-        
-        
 ;
     
 tempBufferedImageArray[index]= bufferedImage;
@@ -382,20 +336,14 @@ tempBufferedImageArray[index]= bufferedImage;
 
 
     var totalImages: number = this.imageUnifierProperties!.getRows() *this.imageUnifierProperties!.getColumns();
-        
-        
 ;
     
 
     var averageRatio: number = this.imagesRatioUtil!.getAverage(tempBufferedImageArray, totalImages)!;
-        
-        
 ;
     
 
     var fudgedBufferedImageArray: BufferedImage[] = imagesRatioUtil!.fudge(tempBufferedImageArray, totalImages, averageRatio)!;
-        
-        
 ;
     
 this.updateImage(fudgedBufferedImageArray);
@@ -417,14 +365,10 @@ this.result= ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, th
     
 
     var image: Icon = new ImageIcon(this.result);
-        
-        
 ;
     
 
     var label: JLabel = new JLabel(image);
-        
-        
 ;
     
 this.jScrollPane2!.getViewport()!.add(label);
@@ -441,29 +385,23 @@ this.updateUI();
                                     {
                                     this.imageUnifierProperties= new ImageUnifierProperties();
     
-this.imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText()));
+this.imageUnifierProperties!.setRows(this.rowsJTextField!.getText());
     
-this.imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
+this.imageUnifierProperties!.setColumns(this.columnsJTextField!.getText());
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));
-        
-        
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(this.cellWidthJTextField!.getText(), this.cellHeightJTextField!.getText());
 ;
     
 this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
 
     var cellRatio: number = (imageUnifierCell!.getWidth(); /imageUnifierCell!.getHeight());
-        
-        
 ;
     
 
-    var cellRatioString: string = new Double(cellRatio).
+    var cellRatioString: string = new number(cellRatio).
                             toString()!;
-        
-        
 ;
     
 
@@ -488,8 +426,6 @@ this.updateImage();
     initComponents(){
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 this.jScrollPane1= new javax.swing.JScrollPane();
@@ -546,7 +482,7 @@ this.jScrollPane1!.setViewportView(this.imageJList);
     
 this.jButton1!.setText("Save");
     
-jButton1!.addActionListener(new object: java.awt.event.ActionListener()
+jButton1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -560,7 +496,7 @@ jButton1ActionPerformed(evt);
     
 this.upJButton!.setText("Up");
     
-upJButton!.addActionListener(new object: java.awt.event.ActionListener()
+upJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -574,7 +510,7 @@ upJButtonActionPerformed(evt);
     
 this.downJButton!.setText("Down");
     
-downJButton!.addActionListener(new object: java.awt.event.ActionListener()
+downJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -588,7 +524,7 @@ downJButtonActionPerformed(evt);
     
 this.fudgeItJButton!.setText("Fudge It!");
     
-fudgeItJButton!.addActionListener(new object: java.awt.event.ActionListener()
+fudgeItJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -604,7 +540,7 @@ this.jLabel2!.setText("Columns:");
     
 this.columnsJTextField!.setText(commonPhoneStrings!.TWO);
     
-columnsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
+columnsJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -616,7 +552,7 @@ columnsJTextFieldActionPerformed(evt);
                                 }
                             );
     
-columnsJTextField!.addPropertyChangeListener(new object: java.beans.PropertyChangeListener()
+columnsJTextField!.addPropertyChangeListener(new java.beans.PropertyChangeListener()
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
@@ -628,7 +564,7 @@ columnsJTextFieldPropertyChange(evt);
                                 }
                             );
     
-columnsJTextField!.addKeyListener(new object: java.awt.event.KeyAdapter()
+columnsJTextField!.addKeyListener(new java.awt.event.KeyAdapter()
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
@@ -650,7 +586,7 @@ this.jLabel1!.setText("Rows:");
     
 this.rowsJTextField!.setText(commonPhoneStrings!.TWO);
     
-rowsJTextField!.addActionListener(new object: java.awt.event.ActionListener()
+rowsJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -666,7 +602,7 @@ this.jLabel3!.setText("Cell Width:");
     
 this.cellWidthJTextField!.setText("200");
     
-cellWidthJTextField!.addActionListener(new object: java.awt.event.ActionListener()
+cellWidthJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -682,7 +618,7 @@ this.jLabel4!.setText("Cell Height:");
     
 this.cellHeightJTextField!.setText("150");
     
-cellHeightJTextField!.addActionListener(new object: java.awt.event.ActionListener()
+cellHeightJTextField!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -704,7 +640,7 @@ this.avgRatioJTextField!.setEditable(false);
     
 this.jButton2!.setText(this.commonStrings!.UPDATE);
     
-jButton2!.addActionListener(new object: java.awt.event.ActionListener()
+jButton2!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -718,7 +654,7 @@ jButton2ActionPerformed(evt);
     
 this.jButtonOrder!.setText("Order");
     
-jButtonOrder!.addActionListener(new object: java.awt.event.ActionListener()
+jButtonOrder!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -732,8 +668,6 @@ jButtonOrderActionPerformed(evt);
     
 
     var jPanel1Layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.jPanel1);
-        
-        
 ;
     
 this.jPanel1!.setLayout(jPanel1Layout);
@@ -744,8 +678,6 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);
@@ -820,26 +752,18 @@ var evt = evt
         try {
             
     var fileArray: File[] = this.imageProcessorInput!.getFiles()!;
-        
-        
 ;
     
 
     var file: File = fileArray[0]!;
-        
-        
 ;
     
 
     var filePath: string = file.getAbsolutePath()!;
-        
-        
 ;
     
 
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
-        
-        
 ;
     
 filePath= new StringMaker().
@@ -849,8 +773,6 @@ this.logUtil!.putF("New File Path: " +filePath, this, StringUtil.getInstance()!.
     
 
     var outputFile: File = new File(filePath);
-        
-        
 ;
     
 ImagePersistanceUtil.getInstance()!.saveWithBatik(FileWrapperUtil.wrapFile(outputFile), this.result);
@@ -870,14 +792,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "jButton1ActionPerformed"
 var evt = evt
 
     var index: number = this.imageJList!.getSelectedIndex()!;
-        
-        
 ;
     
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
-        
-        
+    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
 ;
     
 
@@ -885,9 +803,7 @@ var evt = evt
                         
                                     {
                                     
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
-        
-        
+    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(index);;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index +1);
@@ -906,8 +822,6 @@ this.updateImage();
 var evt = evt
 
     var index: number = this.imageJList!.getSelectedIndex()!;
-        
-        
 ;
     
 
@@ -915,15 +829,11 @@ var evt = evt
                         
                                     {
                                     
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
-        
-        
+    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
 ;
     
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
-        
-        
+    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(index);;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index -1);
@@ -941,21 +851,15 @@ this.updateImage();
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
-        
-        
+    var defaultListModel: DefaultListModel =  as DefaultListModelthis.imageJList!.getModel();;
 ;
     
 
     var size: number = defaultListModel!.size()!;
-        
-        
 ;
     
 
     var last: number = size -1;
-        
-        
 ;
     
 
@@ -964,14 +868,10 @@ var evt = evt
 
                         for (
     var index: number = last;
-        
-        
 index >= 0; index--)
         {
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last); as ImageIconUnique;
-        
-        
+    var indexedImageIcon: ImageIconUnique =  as ImageIconUniquedefaultListModel!.remove(last);;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, last -index);

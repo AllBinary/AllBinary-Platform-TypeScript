@@ -78,12 +78,8 @@ export class RequestParams
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private map: Map
 public constructor (){
@@ -132,12 +128,8 @@ this.map= map;
 
 
     private readonly KEY: string = "Key: ";
-        
-        
 
     private readonly VALUE: string = " Value: ";
-        
-        
 
     public toXmlNode(document: Document): Node{
 var document = document
@@ -145,33 +137,23 @@ var document = document
         try {
             
     var node: Node = document.createElement(RequestData.REQUEST)!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var keys: Set = this.map.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
@@ -180,20 +162,14 @@ var document = document
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
-        
-        
+    var key: string =  as StringkeyArray[i]!;
 ;
     
 
-    var values: string[] = this.map.get(key); as Array<String?>;
-        
-        
+    var values: string[] =  as Array<String?>this.map.get(key);;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -239,36 +215,26 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var keys: Set = this.map.keySet()!;
-        
-        
 ;
     
 
     var keyArray: any[] = keys.toArray()!;
-        
-        
 ;
     
 
     var size: number = keyArray!.length
                 ;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -277,20 +243,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
-        
-        
+    var key: string =  as StringkeyArray[i]!;
 ;
     
 
-    var values: string[] = this.map.get(key); as Array<String?>;
-        
-        
+    var values: string[] =  as Array<String?>this.map.get(key);;
 ;
     
 hashMap!.put(key.toCharArray()

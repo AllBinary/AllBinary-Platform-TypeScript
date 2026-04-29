@@ -76,9 +76,7 @@ public constructor (source: any = {}){
 
     public getCommand(): string{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource(); as MyGraphicItemEventSource;
-        
-        
+    var myEventSource: MyGraphicItemEventSource =  as MyGraphicItemEventSourcethis.getSource();;
 ;
     
 
@@ -92,9 +90,7 @@ public constructor (source: any = {}){
 
     public getTreeNode(): MutableTreeNode{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource(); as MyGraphicItemEventSource;
-        
-        
+    var myEventSource: MyGraphicItemEventSource =  as MyGraphicItemEventSourcethis.getSource();;
 ;
     
 
@@ -108,9 +104,7 @@ public constructor (source: any = {}){
 
     public getAngle(): number{
 
-    var myEventSource: MyGraphicItemEventSource = this.getSource(); as MyGraphicItemEventSource;
-        
-        
+    var myEventSource: MyGraphicItemEventSource =  as MyGraphicItemEventSourcethis.getSource();;
 ;
     
 

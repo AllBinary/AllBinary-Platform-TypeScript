@@ -73,8 +73,6 @@ export class UsersValidationView extends UsersView implements ValidationComponen
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -83,21 +81,15 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()); as String;
-        
-        
+    var role: string =  as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString());;
 ;
     
 
     var userRole: UserRole = UserRoleB.getRole(role)!;
-        
-        
 ;
     
 this.userVector= UserEntityFactory.getInstance()!.getUsersWithRole(userRole);

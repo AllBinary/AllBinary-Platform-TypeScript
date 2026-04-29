@@ -70,8 +70,6 @@ export class DeleteCloud
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -90,8 +88,6 @@ var total = total
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getWebappPath());
@@ -100,26 +96,18 @@ stringBuffer!.append(prePath);
     
 
     var path: AbPath = new AbPath(stringBuffer!.toString());
-        
-        
 ;
     
 
     var file: AbFile = new AbFile(path);
-        
-        
 ;
     
 
     var fileBasicArrayList: BasicArrayList = Directory.getInstance()!.search(file, true)!;
-        
-        
 ;
     
 
     var size: number = fileBasicArrayList!.size()!;
-        
-        
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -134,20 +122,14 @@ stringBuffer!.appendint(size);
     
 
     var portion: number = size /total +1;
-        
-        
 ;
     
 
     var start: number = portion *current;
-        
-        
 ;
     
 
     var end: number = start +portion;
-        
-        
 ;
     
 
@@ -175,14 +157,10 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "initialize()");
 
                         for (
     var index: number = start;
-        
-        
 index < end; index++)
         {
 
-    var nextFile: AbFile = fileBasicArrayList!.get(index); as AbFile;
-        
-        
+    var nextFile: AbFile =  as AbFilefileBasicArrayList!.get(index);;
 ;
     
 

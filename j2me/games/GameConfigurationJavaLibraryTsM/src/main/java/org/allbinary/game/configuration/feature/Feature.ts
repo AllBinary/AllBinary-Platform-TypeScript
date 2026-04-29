@@ -48,9 +48,7 @@ export class Feature
          {
         
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 
     public static getInstance(name: string): Feature{
 var name = name
@@ -58,7 +56,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashtable.get(name as Object); as Feature;
+                        return  as Featurehashtable.get(name as Object);;
     
 }
 

@@ -49,8 +49,6 @@ export class AlphaBaseProcessor
         
 
     private static readonly instance: AlphaBaseProcessor = new AlphaBaseProcessor();
-        
-        
 
     public static getInstance(): AlphaBaseProcessor{
 

@@ -64,6 +64,8 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CssPropertyValues } from "./CssPropertyValues.js";
+
 import { CssPropertyData } from "./CssPropertyData.js";
 
 export class CssProperty
@@ -72,8 +74,6 @@ export class CssProperty
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private propertyName: string
 
@@ -94,8 +94,6 @@ public constructor (node: Node){
         var node = node
 
     var propertyNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
-        
-        
 ;
     
 this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
@@ -111,8 +109,6 @@ this.propertyName= DomNodeHelper.getTextNodeValue(propertyNode);
                                 
 
     var propertyValuesNode: Node = DomSearchHelper.getNode(CssPropertyData.getInstance()!.VALUES, node.getChildNodes())!;
-        
-        
 ;
     
 this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
@@ -130,11 +126,9 @@ this.cssPropertyValues= new CssPropertyValues(propertyValuesNode);
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
@@ -153,9 +147,7 @@ hashMap!.put(CssPropertyData.getInstance()!.NAME, this.propertyName);
     public toXmlNode(document: Document): Node{
 var document = document
 
-    var hashMap: HashMap<any, any> = this.toHashMap()!;
-        
-        
+    var hashMap: HashMap = this.toHashMap()!;
 ;
     
 
@@ -169,8 +161,6 @@ var document = document
                                 
 
     var node: Node = ModDomHelper.createNameValueNodes(document, CssPropertyData.getInstance()!.NAME, this.propertyName)!;
-        
-        
 ;
     
 node.appendChild(this.cssPropertyValues!.toXmlNode(document));

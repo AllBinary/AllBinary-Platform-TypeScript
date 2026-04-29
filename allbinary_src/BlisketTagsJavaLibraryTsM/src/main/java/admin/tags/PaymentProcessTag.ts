@@ -62,8 +62,6 @@ export class PaymentProcessTag extends StoreValidationTransformTag {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -78,28 +76,20 @@ public constructor (){
             
     var anyType: any = new PaymentProcessHelperFactory().
                             getInstance(this.getPropertiesHashMap(), this.pageContext)!;
-        
-        
 ;
     
 
     var helperClass: Function = anyType!constructor!;
-        
-        
 ;
     
 
     var method: Method = helperClass!.getMethod(commonStrings!.PROCESS, 
                             null)!;
-        
-        
 ;
     
 
-    var result: string = method.invoke(anyType, 
-                            null); as String;
-        
-        
+    var result: string =  as Stringmethod.invoke(anyType, 
+                            null);;
 ;
     
 
@@ -124,7 +114,8 @@ public constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -142,7 +133,8 @@ public constructor (){
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -177,7 +169,8 @@ public constructor (){
                             
 
 
-                            throw new Error("No Such Payment Processing Command")
+                            throw new Error("No Such Payment Processing Command");
+                    
 
                         }
                             

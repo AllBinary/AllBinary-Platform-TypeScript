@@ -95,36 +95,20 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
         
 
     public static readonly NULL_ALLBINARY_MIDLET: AllBinaryMidlet = new AllBinaryMidlet();
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly SET_DISPLAY: string = "setDisplay";
-        
-        
 
     private readonly SETTING_: string = "Setting: ";
-        
-        
 
     private readonly _DISPLAY_: string = " Display: ";
-        
-        
 
     private readonly SETTING_NO_TITLE: string = "Setting: No Title, Display: ";
-        
-        
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
-        
-        
+    private hashtable: Hashtable = new Hashtable();
 
     private destroyed: boolean= false
 public constructor (){
@@ -139,8 +123,6 @@ public constructor (){
     //var newDisplay = newDisplay
 
     var title: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 ;
     
 
@@ -173,8 +155,6 @@ public constructor (){
                                 
 
     var display: Display = getDisplay()!;
-        
-        
 ;
     
 display.setCurrent(newDisplay);
@@ -233,7 +213,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-    destroyApp(unconditional: boolean, isProgress: boolean){
+    destroyAppInRunnable(unconditional: boolean, isProgress: boolean){
 var unconditional = unconditional
 var isProgress = isProgress
 }
@@ -243,8 +223,6 @@ var isProgress = isProgress
 var unconditional = unconditional
 
     var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";
-        
-        
 ;
     
 
@@ -268,7 +246,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
                 //@Throws(Error::class)
             
-    public setStartStateHashtable(hashtable: Hashtable<any, any>){
+    public setStartStateHashtable(hashtable: Hashtable){
 var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
@@ -280,7 +258,7 @@ this.hashtable= hashtable;
 
                 //@Throws(Error::class)
             
-    public getStartStateHashtable(): Hashtable<any, any>{
+    public getStartStateHashtable(): Hashtable{
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(this.hashtable))!.toString(), this, "getStartStateHashtable");
     
@@ -295,7 +273,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Error::class)
             
-    public getCurrentStateHashtable(): Hashtable<any, any>{
+    public getCurrentStateHashtable(): Hashtable{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
     
 

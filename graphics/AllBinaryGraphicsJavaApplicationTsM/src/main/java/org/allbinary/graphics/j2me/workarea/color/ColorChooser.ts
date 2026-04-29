@@ -39,6 +39,8 @@
         
 import { JPanel } from "./JPanel.js";
 
+import { JColorChooser } from "./JColorChooser.js";
+
 export class ColorChooser extends javax.swing.JPanel {
         
 public constructor (){

@@ -52,8 +52,6 @@ export class ABToGBUtil
         
 
     private static readonly instance: ABToGBUtil = new ABToGBUtil();
-        
-        
 
     public static getInstance(): ABToGBUtil{
 
@@ -66,12 +64,8 @@ export class ABToGBUtil
 
 
     public abCanvas: Canvas = NullCanvas.NULL_CANVAS;
-        
-        
 
     public allBinaryGameLayerManager: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
-        
-        
 
 }
                 

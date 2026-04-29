@@ -78,8 +78,6 @@ export class BasicInputMappingHelpPaintable extends HelpPaintable {
     private gameInputMappingArray: GameInputMapping[]
 
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
-        
-        
 protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor){
             super("Help Screen", BasicColorFactory.getInstance()!.BLACK, basicColor);
                         //var gameInputMappingArray = gameInputMappingArray
@@ -100,33 +98,23 @@ this.update(NONE, NONE);
     //var selectedInput = selectedInput
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
-        
-        
 ;
     
 
     var EQUAL: string = " = ";
-        
-        
 ;
     
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var size: number = this.gameInputMappingArray!.length
                 ;
-        
-        
 ;
     
 
     var keyInfo: string[] = new Array(size);
-        
-        
 ;
     
 
@@ -147,8 +135,6 @@ this.update(NONE, NONE);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 gameInputMapping= this.gameInputMappingArray[index]!;
@@ -172,20 +158,14 @@ super.setInputInfoP(keyInfo);
     //var keyList = keyList
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var AND: string = "and ";
-        
-        
 ;
     
 
@@ -194,8 +174,6 @@ super.setInputInfoP(keyInfo);
     
 
     var size: number = keyList!.size()!;
-        
-        
 ;
     
 
@@ -204,11 +182,9 @@ super.setInputInfoP(keyInfo);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-key= keyList!.objectArray[index]! as Input;
+key=  as InputkeyList!.objectArray[index]!;
     
 stringBuffer!.append(key.getName());
     

@@ -98,8 +98,6 @@ export class BasketView extends HttpStoreComponentView implements DomNodeInterfa
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly request: HttpServletRequest
 public constructor (transformInfoInterface: TransformInfoInterface){
@@ -109,7 +107,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 }
 
@@ -122,51 +120,35 @@ var document = document
         try {
             
     var inventoryEntity: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
-        
-        
 ;
     
 
     var basketInterface: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 
     var basketNode: Node = document.createElement(BasketData.BASKET)!;
-        
-        
 ;
     
 
-    var itemsAndNumberInBasket: HashMap<any, any> = basketInterface!.getItems()!;
-        
-        
+    var itemsAndNumberInBasket: HashMap = basketInterface!.getItems()!;
 ;
     
 
     var numberOfResults: number = 1;
-        
-        
 ;
     
 
     var items: Set = itemsAndNumberInBasket!.keySet()!;
-        
-        
 ;
     
 
     var productArray: any[] = items.toArray()!;
-        
-        
 ;
     
 
     var size: number = productArray!.length
                 ;
-        
-        
 ;
     
 
@@ -175,20 +157,14 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var product: string = .toCharArray();
-        
-        
 ;
     
 
     var itemInterface: ItemInterface = inventoryEntity!.getItem(product)!;
-        
-        
 ;
     
 
@@ -199,34 +175,24 @@ index < size; index++)
                                     {
                                     
     var basicItemView: BasicItemView = new BasicItemView(itemInterface, new Vector());
-        
-        
 ;
     
 
     var node: Node = basicItemView!.toXmlNode(document)!;
-        
-        
 ;
     
 
     var numberInBasket: string = basketInterface!.getNumberOf(product)!.toString()!;
-        
-        
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTALINBASKET, numberInBasket));
     
 
     var itemPrice: Money = itemInterface!.getPrice()!;
-        
-        
 ;
     
 
     var itemTotal: Money = new Money(itemPrice);
-        
-        
 ;
     
 itemTotal!.multiply(basketInterface!.getNumberOf(product)!.toInt());
@@ -250,42 +216,30 @@ numberOfResults++;
 
 
     var totalNumberNode: Node = document.createElement(SearchData.TOTAL_NUMBER_ITEMS)!;
-        
-        
 ;
     
 
     var totalNumberTextNode: Node = document.createTextNode(basketInterface!.getNumberOfItems()!.toString())!;
-        
-        
 ;
     
 totalNumberNode!.appendChild(totalNumberTextNode);
     
 
     var totalWeightNode: Node = document.createElement(BasketData.TOTALWEIGHT)!;
-        
-        
 ;
     
 
     var totalWeightTextNode: Node = document.createTextNode(basketInterface!.getTotalWeight()!.toString())!;
-        
-        
 ;
     
 totalWeightNode!.appendChild(totalWeightTextNode);
     
 
     var subTotalNode: Node = document.createElement(BasketData.SUBTOTAL)!;
-        
-        
 ;
     
 
     var subTotalTextNode: Node = document.createTextNode(basketInterface!.getSubTotal()!.toString())!;
-        
-        
 ;
     
 subTotalNode!.appendChild(subTotalTextNode);
@@ -318,14 +272,15 @@ basketNode!.appendChild(subTotalNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -359,7 +314,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

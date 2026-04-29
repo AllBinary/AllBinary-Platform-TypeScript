@@ -68,8 +68,6 @@ export class TransformInfoPropertiesFactory
         
 
     private static readonly instance: TransformInfoPropertiesFactory = new TransformInfoPropertiesFactory();
-        
-        
 
     public static getInstance(): TransformInfoPropertiesFactory{
 
@@ -82,8 +80,6 @@ export class TransformInfoPropertiesFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -96,32 +92,22 @@ private constructor (){
 var node = node
 
     var transformInfoChildNodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
-        
-        
 ;
     
 
     var attributes: NamedNodeMap = node.getAttributes()!;
-        
-        
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME); as Attr;
-        
-        
+    var attrNode: Attr =  as Attrattributes.getNamedItem(transformInfoData!.NAME);;
 ;
     
 
     var name: string = attrNode!.getValue()!;
-        
-        
 ;
     
 
@@ -135,14 +121,10 @@ var node = node
                                 
 
     var labelNode: Node = DomSearchHelper.getNodeNoThrow(transformInfoData!.LABEL, transformInfoChildNodeList)!;
-        
-        
 ;
     
 
     var label: string = DomNodeHelper.getTextNodesValue(labelNode)!;
-        
-        
 ;
     
 
@@ -158,56 +140,38 @@ var node = node
                                 
 
     var descriptionNode: Node = DomSearchHelper.getNode(transformInfoData!.DESCRIPTION, transformInfoChildNodeList)!;
-        
-        
 ;
     
 
     var description: string = DomNodeHelper.getTextNodesValue(descriptionNode)!;
-        
-        
 ;
     
 
     var objectFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTFILENAME, transformInfoChildNodeList)!;
-        
-        
 ;
     
 
     var objectFileName: string = DomNodeHelper.getTextNodeValue(objectFileNode)!;
-        
-        
 ;
     
 
     var objectConfigFileNode: Node = DomSearchHelper.getNode(transformInfoData!.OBJECTCONFIGFILENAME, transformInfoChildNodeList)!;
-        
-        
 ;
     
 
     var objectConfigFileName: string = DomNodeHelper.getTextNodeValue(objectConfigFileNode)!;
-        
-        
 ;
     
 
     var templateFileNode: Node = DomSearchHelper.getNode(transformInfoData!.TEMPLATEFILENAME, transformInfoChildNodeList)!;
-        
-        
 ;
     
 
     var templateFileName: string = DomNodeHelper.getTextNodeValue(templateFileNode)!;
-        
-        
 ;
     
 
     var transformInfoProperties: TransformInfoProperties = new TransformInfoProperties(name, label, description, objectFileName, objectConfigFileName, templateFileName);
-        
-        
 ;
     
 

@@ -43,8 +43,6 @@ export class NullDropCellPositionGenerator extends BaseDropCellPositionGenerator
         
 
     private static readonly instance: NullDropCellPositionGenerator = new NullDropCellPositionGenerator();
-        
-        
 
     public static getInstance(): NullDropCellPositionGenerator{
 

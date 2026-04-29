@@ -79,27 +79,17 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
         
 
     public static readonly DISPLAY: Command = new Command("Help", Command.SCREEN, 1);
-        
-        
 
     public static readonly CLOSE: Command = new Command("Close", Command.SCREEN, 1);
-        
-        
 
     public static readonly NAME: string = "GameInputMappingInstructionsCanvas";
-        
-        
 
     TITLE: string = "Input Instructions";
-        
-        
 
     private readonly instructions: string[] = 
                                                         [
                                                             "Add Input Mapping:","1. Select the desired action by generating a currently defined input for a given action.","(Example: Press the '1' key to select the Fire action)","2. Make the newly desired input for the selected action.","(Example: Press 'f' to add it to the selected action)","Note: If the input is already mapped to another action then it will not be added. You","will need to deleted from the other action before adding it to another.","Warning: Not all keys map for a given platform and show as Unknown.",StringUtil.getInstance()!.EMPTY_STRING,"Remove Input Mapping:","1. Select the desired action by generating a currently defined input for a given action.","(Example: Press the key '1' to select the Fire action)","2. Select a mapped input for the selected action.","(Example: Press the key '1' to select the '1' key input for the selected Fire action)","3. Press the Delete Key."
                                                         ];
-        
-        
 
     private colorFillPaintable: ColorFillBasePaintable
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager){
@@ -129,45 +119,31 @@ this.setCommandListener(cmdListener);
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
     private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
-        
-        
 
     public paint(graphics: Graphics){
 var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
-        
-        
 ;
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
-        
-        
 ;
     
 this.colorFillPaintable!.paint(graphics);
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var halfWidth: number = displayInfo!.getLastHalfWidth()!;
-        
-        
 ;
     
 
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.TITLE)>>1);
-        
-        
 ;
     
 graphics.setColor(this.foregroundColor);

@@ -43,8 +43,6 @@ export class NullWaitGameRunnable extends GameRunnable {
         
 
     private static readonly instance: GameRunnable = new NullWaitGameRunnable();
-        
-        
 
     public static getInstance(): GameRunnable{
 

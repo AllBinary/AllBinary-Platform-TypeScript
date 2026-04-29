@@ -74,8 +74,6 @@ export class ImageAnalysis
         
 
     private static readonly instance: ImageAnalysis = new ImageAnalysis();
-        
-        
 
     public static getInstance(): ImageAnalysis{
 
@@ -94,26 +92,18 @@ var bufferedImage = bufferedImage
 var colorRangeInterface = colorRangeInterface
 
     var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();
-        
-        
 ;
     
 
     var redTotal: number = 0;
-        
-        
 ;
     
 
     var greenTotal: number = 0;
-        
-        
 ;
     
 
     var blueTotal: number = 0;
-        
-        
 ;
     
 
@@ -122,8 +112,6 @@ var colorRangeInterface = colorRangeInterface
 
                         for (
     var indexY: number = 0;
-        
-        
 indexY < bufferedImage!.getHeight(); indexY++)
         {
 
@@ -132,26 +120,18 @@ indexY < bufferedImage!.getHeight(); indexY++)
 
                         for (
     var indexX: number = 0;
-        
-        
 indexX < bufferedImage!.getWidth(); indexX++)
         {
 
-    var keyInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(indexX, indexY)))!;
-        
-        
+    var keyInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(indexX, indexY)))!;
 ;
     
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger); as ColorCacheable;
-        
-        
+    var colorCacheable: ColorCacheable =  as ColorCacheableColorCacheFactory.getInstance()!.get(keyInteger);;
 ;
     
 
     var color: Color = colorCacheable!.getColor()!;
-        
-        
 ;
     
 processColorRangeResults(imageAnalysisResults, colorRangeInterface, color);
@@ -170,14 +150,10 @@ blueTotal += color.getBlue();
 
 
     var totalPixels: number = imageAnalysisResults!.getImageColorRangeResults()!.getTotalPixelsChecked()!;
-        
-        
 ;
     
 
     var colorAverage: ColorAverage = imageAnalysisResults!.getImageColorResults()!.getColorAverage()!;
-        
-        
 ;
     
 colorAverage!.setAvgRed(redTotal /totalPixels);
@@ -279,8 +255,6 @@ var color = color
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -294,16 +268,12 @@ var bufferedImageArray = bufferedImageArray
 var colorRangeInterface = colorRangeInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.putF(CommonLabels.getInstance()!.START +colorRangeInterface!.toString(), this, commonStrings!.PROCESS);
     
 
     var imageAnalysisResultsArray: ImageAnalysisResults[] = new Array(bufferedImageArray!.length);
-        
-        
 ;
     
 
@@ -312,8 +282,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +colorRangeInterface!.toStr
 
                         for (
     var index: number = 0;
-        
-        
 index < bufferedImageArray!.length; index++)
         {
 imageAnalysisResultsArray[index]= ImageAnalysis.process(bufferedImageArray[index]!, colorRangeInterface);

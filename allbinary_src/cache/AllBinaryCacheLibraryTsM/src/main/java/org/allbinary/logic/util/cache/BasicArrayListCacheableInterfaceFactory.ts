@@ -39,6 +39,8 @@
         
 import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
 
+import { BasicArrayListCacheable } from "./BasicArrayListCacheable.js";
+
 import { CacheableInterface } from "./CacheableInterface.js";
 
 export class BasicArrayListCacheableInterfaceFactory

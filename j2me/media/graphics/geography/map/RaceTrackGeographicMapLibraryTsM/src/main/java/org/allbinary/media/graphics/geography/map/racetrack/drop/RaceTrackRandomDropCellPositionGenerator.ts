@@ -76,8 +76,6 @@ export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellP
         
 
     private SINGLETON: RaceTrackRandomDropCellPositionGenerator = new RaceTrackRandomDropCellPositionGenerator();
-        
-        
 
     public static getInstance(): RaceTrackRandomDropCellPositionGenerator{
 
@@ -90,24 +88,14 @@ export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellP
 
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 
     private readonly cellsPerRowOrColumn: number = 3;
-        
-        
 
     private readonly totalCells: number = cellsPerRowOrColumn *cellsPerRowOrColumn;
-        
-        
 
-    private readonly rowArray: number[] = intArrayOf(0,1,2,0,1,2,0,1,2);
-        
-        
+    private readonly rowArray: number[] = [0,1,2,0,1,2,0,1,2];
 
-    private readonly columnArray: number[] = intArrayOf(0,0,0,1,1,1,2,2,2);
-        
-        
+    private readonly columnArray: number[] = [0,0,0,1,1,1,2,2,2];
 
     private cellWidth: number= 0
 
@@ -127,8 +115,6 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
     
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 this.cellWidth= tiledLayer!.getCellWidth() /this.cellsPerRowOrColumn;
@@ -144,63 +130,43 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
 var allBinaryLayerManager = allBinaryLayerManager
 var index = index
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index); as GeographicMapCellPosition;
-        
-        
+    var geographicMapCellPosition: GeographicMapCellPosition =  as GeographicMapCellPositionthis.list.get(index);;
 ;
     
 
     var point: GPoint = geographicMapCellPosition!.getPoint()!;
-        
-        
 ;
     
 
     var randomCell: number = this.myRandomFactory!.getAbsoluteNextInt(this.totalCells)!;
-        
-        
 ;
     
 
     var row: number = this.rowArray[randomCell]!;
-        
-        
 ;
     
 
     var column: number = this.columnArray[randomCell]!;
-        
-        
 ;
     
 
     var x: number = point.getX() +(row *this.cellWidth);
-        
-        
 ;
     
 
     var y: number = point.getY() +(column *this.cellHeight);
-        
-        
 ;
     
 
     var pickedUpLayerInterfaceFactory: PickedUpLayerInterfaceFactoryInterface = DropLayerFactory.getInstance()!.getRandomInstance()!;
-        
-        
 ;
     
 
     var tiledLayer: AllBinaryTiledLayer = this.raceTrackGeographicMap!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
-    var pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstance(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3); as RaceTrackPickupLayer;
-        
-        
+    var pickupLayer: RaceTrackPickupLayer =  as RaceTrackPickupLayerPickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3);;
 ;
     
 pickupLayer!.setTiledLayer(tiledLayer);

@@ -106,8 +106,6 @@ this.storeName= value;
                                     {
                                     
     var parentTag: Tag = this.getParent()!;
-        
-        
 ;
     
 ParentInventoryTagHelper.getInstance()!.isValid(this, parentTag);

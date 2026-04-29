@@ -79,9 +79,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
             
     isContinue(): boolean{
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
-        
-        
+    var hashtable: Hashtable = this.getStartStateHashtable()!;
 ;
     
 
@@ -128,18 +126,20 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
                 //@Throws(Error::class)
             
-    createGameCanvasRunnableInterface(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
+    createGameCanvasRunnable(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -150,7 +150,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.createGameCanvasRunnableInterface(this.createGameLayerManager());;
+                        return this.createGameCanvasRunnable(this.createGameLayerManager());;
     
 }
 
@@ -171,8 +171,6 @@ this.logUtil!.putF(commonStrings!.START, this, "setDemo");
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 progressCanvas!.start();
@@ -188,24 +186,18 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
     public createGame(){
 
     var CREATE_GAME: string = "createGame";
-        
-        
 ;
     
 this.logUtil!.putF(commonStrings!.START, this, CREATE_GAME);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 progressCanvas!.start();
     
 
-    var hashtable: Hashtable<any, any> = this.getStartStateHashtable()!;
-        
-        
+    var hashtable: Hashtable = this.getStartStateHashtable()!;
 ;
     
 this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);

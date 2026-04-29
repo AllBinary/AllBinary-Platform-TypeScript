@@ -58,8 +58,6 @@ export class BasicCrypt
         
 
     private readonly byteUtil: ByteUtil = ByteUtil.getInstance()!;
-        
-        
 
     private readonly key: number[]
 public constructor (keyAsString: string){
@@ -68,8 +66,6 @@ public constructor (keyAsString: string){
         var keyAsString = keyAsString
 
     var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
-        
-        
 ;
     
 
@@ -82,8 +78,6 @@ public constructor (keyAsString: string){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "AbCrypt(alg,key)", e);
@@ -161,8 +155,6 @@ var array = array
 
                         for (
     var index: number = 0;
-        
-        
 index < this.key.length; index++)
         {
 value= this.key[index]!;

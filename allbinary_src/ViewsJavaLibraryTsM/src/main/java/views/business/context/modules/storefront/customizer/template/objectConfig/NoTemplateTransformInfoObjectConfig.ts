@@ -74,8 +74,6 @@ export class NoTemplateTransformInfoObjectConfig extends TransformInfoObjectConf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -117,8 +115,6 @@ this.setDocument(this.generate(this.toXmlDoc()));
 var objectConfigDocument = objectConfigDocument
 
     var docString: string = DomDocumentHelper.toString(objectConfigDocument)!;
-        
-        
 ;
     
 
@@ -132,26 +128,18 @@ var objectConfigDocument = objectConfigDocument
                                 
 
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-        
-        
 ;
     
 
     var viewName: string = this.getTransformInfoInterface()!.getName()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 
     var VARKEY: string = TransformInfoObjectConfigData.getInstance()!.VARKEY;
-        
-        
 ;
     
 hashMap!.put(VARKEY +StoreFrontData.getInstance()!.NAME, storeName);
@@ -160,22 +148,16 @@ hashMap!.put(VARKEY +TransformInfoData.getInstance()!.OWNER, viewName);
     
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface()!.getStoreName())!;
-        
-        
 ;
     
 hashMap!.put(VARKEY +TransformInfoData.getInstance()!.PARTIAL, pageName);
     
 
     var replace: Replace = new Replace(hashMap);
-        
-        
 ;
     
 
     var newObjectConfigDocument: Document = DomDocumentHelper.create(replace.all(docString))!;
-        
-        
 ;
     
 

@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LogConfigType } from "./LogConfigType.js";
+
 import { LogConfigTypes } from "./LogConfigTypes.js";
 
 export class LogConfigTypeFactory
@@ -45,8 +47,6 @@ export class LogConfigTypeFactory
         
 
     private static readonly instance: LogConfigTypeFactory = new LogConfigTypeFactory();
-        
-        
 
     public static getInstance(): LogConfigTypeFactory{
 
@@ -59,16 +59,10 @@ export class LogConfigTypeFactory
 
 
     private readonly NO_DESCRIPTION: string = "No Description";
-        
-        
 
     public readonly OS: LogConfigType = new LogConfigType("Operating System", NO_DESCRIPTION);
-        
-        
 
     public readonly FACTORYERROR: LogConfigType = new LogConfigType("Factory Error", NO_DESCRIPTION);
-        
-        
 private constructor (){
 
             super();

@@ -40,14 +40,14 @@ import { InputFactory } from "../../../../../org/allbinary/game/input/InputFacto
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionGestureInput } from "./MotionGestureInput.js";
+
 export class TouchMotionGestureFactory
             extends Object
          {
         
 
     private static readonly MOTION: TouchMotionGestureFactory = new TouchMotionGestureFactory();
-        
-        
 
     public static getInstance(): TouchMotionGestureFactory{
 
@@ -87,8 +87,6 @@ private constructor (){
             super();
         
     var MAX: number = InputFactory.getInstance()!.MAX;
-        
-        
 ;
     
 this.LEFT= new MotionGestureInput(MAX -3, "Left Touch");

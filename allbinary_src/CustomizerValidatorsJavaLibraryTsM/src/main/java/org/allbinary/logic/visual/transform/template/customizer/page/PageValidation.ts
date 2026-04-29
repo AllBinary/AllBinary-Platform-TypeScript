@@ -74,8 +74,6 @@ export class PageValidation extends Validation implements DomNodeInterface {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private title: TitleValidation
 public constructor (){
@@ -91,15 +89,13 @@ public constructor (document: Document){
         var document = document
 
     var node: Node = DomSearchHelper.getNode(TitleData.getInstance()!.NAME, document.getElementsByTagName(PageData.getInstance()!.NAME))!;
-        
-        
 ;
     
 this.title= new TitleValidation(node);
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
@@ -108,7 +104,7 @@ this.getFormData(hashMap);
 }
 
 
-    public getFormData(hashMap: HashMap<any, any>){
+    public getFormData(hashMap: HashMap){
 var hashMap = hashMap
 this.title= new TitleValidation(hashMap);
     
@@ -120,8 +116,6 @@ this.title= new TitleValidation(hashMap);
         try {
             
     var valid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -186,8 +180,6 @@ this.title= new TitleValidation(hashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -256,8 +248,6 @@ var document = document
 var document = document
 
     var node: Node = document.createElement(PageData.getInstance()!.NAME)!;
-        
-        
 ;
     
 node.appendChild(this.title.toXmlNode(document));

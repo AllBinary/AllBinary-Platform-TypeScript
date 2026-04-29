@@ -66,12 +66,8 @@ export class EmailsNotUsed
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     emailInfoVector: Vector
 public constructor (){
@@ -99,14 +95,10 @@ var document = document
                                 
 
     var node: Node = document.createElement(EmailData.NAME)!;
-        
-        
 ;
     
 
     var size: number = this.emailInfoVector!.length!;
-        
-        
 ;
     
 
@@ -115,20 +107,14 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var email: Email = this.emailInfoVector!.get(index); as Email;
-        
-        
+    var email: Email =  as Emailthis.emailInfoVector!.get(index);;
 ;
     
 
     var emailNode: Node = email.toXmlNode(document)!;
-        
-        
 ;
     
 
@@ -174,8 +160,6 @@ index < size; index++)
                                 
 
     var error: string = "Error Processing Order.  Please contact us if error persists.<p/>";
-        
-        
 ;
     
 

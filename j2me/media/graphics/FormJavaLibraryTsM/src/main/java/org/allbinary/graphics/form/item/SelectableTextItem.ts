@@ -77,8 +77,6 @@ var x = x
 var y = y
 
     var stringComponent: StringComponent = this.getLabelStringComponent()!;
-        
-        
 ;
     
 

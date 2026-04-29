@@ -71,8 +71,6 @@ this.title= title;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);
@@ -85,8 +83,6 @@ this.preGameScrollSelectionForm= preGameScrollSelectionForm;
     public update(){
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidth(), 0);

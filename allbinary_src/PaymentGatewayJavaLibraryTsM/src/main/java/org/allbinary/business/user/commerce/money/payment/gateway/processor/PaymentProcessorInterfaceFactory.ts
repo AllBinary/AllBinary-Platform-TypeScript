@@ -69,8 +69,6 @@ export class PaymentProcessorInterfaceFactory
         
 
     private static readonly instance: PaymentProcessorInterfaceFactory = new PaymentProcessorInterfaceFactory();
-        
-        
 
     public static getInstance(): PaymentProcessorInterfaceFactory{
 
@@ -83,8 +81,6 @@ export class PaymentProcessorInterfaceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -100,14 +96,10 @@ var transformInfoInterface = transformInfoInterface
         try {
             
     var paymentTransactionInterface: PaymentTransactionInterface = PaymentTransactionInterfaceRequestFactory.getInstance()!.getInstance(transformInfoInterface)!;
-        
-        
 ;
     
 
     var gatewayName: string = paymentTransactionInterface!.getOrderHistory()!.getPaymentMethod()!;
-        
-        
 ;
     
 
@@ -116,21 +108,17 @@ var transformInfoInterface = transformInfoInterface
                                     {
                                     
     var paymentType: PaymentType = PaymentTypeUtil.getInstance()!.get(gatewayName)!;
-        
-        
 ;
     
 
     var paymentProcessorInterfaceFactoryInterface: PaymentProcessorInterfaceFactoryInterface = paymentType!.getPaymentProcessorInterfaceFactoryInterface()!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return paymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface); as PaymentProcessorInterface;
+                        return  as PaymentProcessorInterfacepaymentProcessorInterfaceFactoryInterface!.getInstance(transformInfoInterface, paymentTransactionInterface);;
     
 
                                     }
@@ -138,7 +126,8 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw new Error("Error Getting PaymentProcessorInterface")
+                            throw new Error("Error Getting PaymentProcessorInterface");
+                    
 
                 //: 
 } catch(e) 
@@ -149,8 +138,6 @@ var transformInfoInterface = transformInfoInterface
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
@@ -161,7 +148,8 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

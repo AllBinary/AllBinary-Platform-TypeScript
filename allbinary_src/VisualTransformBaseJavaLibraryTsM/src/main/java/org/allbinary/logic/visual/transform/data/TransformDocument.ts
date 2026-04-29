@@ -63,12 +63,8 @@ export class TransformDocument
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private baseNode: Node
 
@@ -82,8 +78,6 @@ public constructor (){
     
 
     var allbinaryNode: Node = this.document.createElement("allbinary")!;
-        
-        
 ;
     
 this.baseNode= allbinaryNode;
@@ -115,7 +109,8 @@ this.document.appendChild(this.baseNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -146,8 +141,6 @@ this.document.appendChild(this.baseNode);
     public log(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 

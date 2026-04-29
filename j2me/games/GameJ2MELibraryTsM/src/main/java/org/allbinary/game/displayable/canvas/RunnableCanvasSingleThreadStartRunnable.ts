@@ -52,8 +52,6 @@ export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly runnableCanvas: RunnableCanvas
 public constructor (demoCanvas: RunnableCanvas){
@@ -76,8 +74,6 @@ this.runnableCanvas= demoCanvas;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

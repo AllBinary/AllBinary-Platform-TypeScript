@@ -67,8 +67,6 @@ export class AnimationDamageFloaters extends DamageFloaters {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private layerInterface: AllBinaryLayer
 
@@ -94,8 +92,6 @@ this.animationInterfaceArray= animationInterfaceArray;
 
                         for (
     var index: number = this.animationInterfaceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.animationInterfaceArray[index]!.setFrame(this.animationInterfaceArray[index]!.getSize() -1);
@@ -104,7 +100,7 @@ this.animationInterfaceArray[index]!.setFrame(this.animationInterfaceArray[index
 
 this.layerInterface= layerInterface;
     
-this.circularIndexUtil= CircularIndexUtil.getInstance(this.animationInterfaceArray!.length);
+this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterfaceArray!.length);
     
 this.dx= dx;
     
@@ -117,8 +113,6 @@ this.dy= dy;
 var damage = damage
 
     var i: number = this.circularIndexUtil!.getIndex()!;
-        
-        
 ;
     
 this.animationInterfaceArray[i]!.setFrame(0);
@@ -134,20 +128,14 @@ var graphics = graphics
         try {
             
     var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
-        
-        
 ;
     
 
     var x: number = viewPosition!.getX()!;
-        
-        
 ;
     
 
     var y: number = viewPosition!.getY()!;
-        
-        
 ;
     
 
@@ -156,14 +144,10 @@ var graphics = graphics
 
                         for (
     var index: number = 0;
-        
-        
 index < this.animationInterfaceArray!.length; index++)
         {
 
     var animationInterface: IndexedAnimation = this.animationInterfaceArray[index]!;
-        
-        
 ;
     
 
@@ -172,11 +156,9 @@ index < this.animationInterfaceArray!.length; index++)
                                     {
                                     
     var delta: number = animationInterface!.getFrame() *20;
-        
-        
 ;
     
-animationInterface!.paint(graphics, x +this.dx, y -delta +this.dy);
+animationInterface!.paintXY(graphics, x +this.dx, y -delta +this.dy);
     
 animationInterface!.nextFrame();
     
@@ -191,14 +173,10 @@ animationInterface!.nextFrame();
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var canvasStrings: CanvasStrings = CanvasStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);

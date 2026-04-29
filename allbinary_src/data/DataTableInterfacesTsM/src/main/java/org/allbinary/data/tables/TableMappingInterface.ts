@@ -56,7 +56,7 @@ export interface TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>
+    public toHashMap(): HashMap
 
 }
                 

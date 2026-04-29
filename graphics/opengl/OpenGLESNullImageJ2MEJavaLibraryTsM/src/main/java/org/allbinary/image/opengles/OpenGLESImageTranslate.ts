@@ -48,8 +48,6 @@ export class OpenGLESImageTranslate
         
 
     private static readonly instance: OpenGLESImageTranslate = new OpenGLESImageTranslate();
-        
-        
 
     public static getInstance(): OpenGLESImageTranslate{
 

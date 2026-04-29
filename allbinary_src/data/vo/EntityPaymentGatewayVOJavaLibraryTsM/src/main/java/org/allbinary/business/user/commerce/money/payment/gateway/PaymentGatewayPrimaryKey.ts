@@ -105,8 +105,6 @@ this.name= name;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(PaymentGatewayPrimaryKey::class.toString()!);

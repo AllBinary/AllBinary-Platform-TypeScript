@@ -45,11 +45,11 @@ import { Direction } from "./Direction.js";
 export interface DirectionalInterface {
         
 
-    setFrame(direction: Direction)
+    setFrameByDirection(direction: Direction)
 
-    setFrame(angle: Angle)
+    setFrameToAngle(angle: Angle)
 
-    adjustFrame(newAngle: Angle)
+    adjustFrameToAngle(newAngle: Angle)
 
     adjustFrame(angle: number)
 

@@ -43,28 +43,16 @@ export class PermissionItemData
         
 
     public static readonly WHO: string = "PERMISSIONSITEM_WHO";
-        
-        
 
     public static readonly WHAT: string = "PERMISSIONSITEM_WHAT";
-        
-        
 
     public static readonly TYPE: string = "PERMISSIONSITEM_TYPE";
-        
-        
 
     public static readonly START_TIME: string = "PERMISSIONSITEM_START_TIME";
-        
-        
 
     public static readonly END_TIME: string = "PERMISSIONSITEM_END_TIME";
-        
-        
 
     public static readonly REMOTE_ADDR: string = "PERMISSIONSITEM_REMOTE_ADDR";
-        
-        
 
 }
                 

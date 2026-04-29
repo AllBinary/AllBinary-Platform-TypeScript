@@ -18,9 +18,6 @@
 
 
 
-import { MusicManager } from "../../../../../org/allbinary/media/audio/music/MusicManager.js";
-
-    
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -43,12 +40,14 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MusicManager } from "./MusicManager.js";
+
 export class MusicManagerFactory
             extends Object
          {
         
 
-    public static create(soundList: BasicArrayList): MusicManager{
+    public static createMusicManager(soundList: BasicArrayList): MusicManager{
     //var soundList = soundList
 
 

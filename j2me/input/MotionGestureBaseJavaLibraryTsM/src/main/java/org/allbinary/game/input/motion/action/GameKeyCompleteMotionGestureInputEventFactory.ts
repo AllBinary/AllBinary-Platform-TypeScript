@@ -60,8 +60,6 @@ export class GameKeyCompleteMotionGestureInputEventFactory
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEventFactory = new GameKeyCompleteMotionGestureInputEventFactory();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEventFactory{
 
@@ -74,12 +72,8 @@ export class GameKeyCompleteMotionGestureInputEventFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly eventList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public add(gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent){
 var gameKeyCompleteMotionGestureInputEvent = gameKeyCompleteMotionGestureInputEvent
@@ -98,14 +92,10 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = this.eventList!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
-    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent = eventList!.objectArray[index]! as GameKeyCompleteMotionGestureInputEvent;
-        
-        
+    var gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent =  as GameKeyCompleteMotionGestureInputEventeventList!.objectArray[index]!;
 ;
     
 gameKeyCompleteMotionGestureInputEvent!.update();

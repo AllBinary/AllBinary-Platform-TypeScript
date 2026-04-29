@@ -55,9 +55,6 @@ import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/Cust
 import { BuildingSound } from "../../../../../org/allbinary/media/audio/BuildingSound.js";
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
 
     
@@ -134,9 +131,7 @@ import { PlayersSingletonFactory } from "./PlayersSingletonFactory.js";
 export class UnitRTSFormInput extends RTSFormInput {
         
 
-    public static readonly DECAL_ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(23)!;
-        
-        
+    public static readonly DECAL_ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(23)!;
 
     readonly noMoneyGameNotificationEvent: GameNotificationEvent
 
@@ -150,21 +145,17 @@ public constructor (groupInterface: Group[]){
                     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
-        
-        
 ;
     
-this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NO_MONEY, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.newUnitGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_UNIT, smallIntegerSingletonFactory!.getInstance(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
+this.newUnitGameNotificationEvent= new GameNotificationEvent(this, RTSGameStrings.getInstance()!.NEW_UNIT, smallIntegerSingletonFactory!.getAt(2), basicColorFactory!.WHITE, BooleanFactory.getInstance()!.FALSE);
     
-this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInstance(50));
+this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getAt(50));
     
 }
 
@@ -176,15 +167,11 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getInsta
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfaceallBinaryGameLayerManager;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getForegroundBasicColor());
@@ -196,7 +183,7 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Error::class)
             
-    public process(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
@@ -205,21 +192,15 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 super.process(layerManager);
     
 
-    var associatedRtsLayer2: RTSLayer = associatedRtsLayer as RTSLayer;
-        
-        
+    var associatedRtsLayer2: RTSLayer =  as RTSLayerassociatedRtsLayer;
 ;
     
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = associatedRtsLayer2!.geographicMapCellPositionAreaBase;
-        
-        
 ;
     
 
     var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionArea!.getNextSurroundingGeographicMapCellPosition()!;
-        
-        
 ;
     
 this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
@@ -239,28 +220,20 @@ this.getHashtable()!.put(UnitRTSFormInput.DECAL_ID,
                         else {
                             
     var cellPoint: GPoint = geographicMapCellPosition!.getPoint()!;
-        
-        
 ;
     
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
 ;
     
 rtsLayer!.setPosition(cellPoint!.getX(), cellPoint!.getY(), rtsLayer!.getZP());
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = rtsLayer!.allBinaryGameLayerManagerP as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacertsLayer!.allBinaryGameLayerManagerP;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
 rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
@@ -270,19 +243,15 @@ rtsLayer!.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
                             
 
     var cellPoint: GPoint = geographicMapCellPosition!.getMidPoint()!;
-        
-        
 ;
     
 
-    var rtsLayer: RTSLayer = this.newUnconstructedRTSLayerInterfaceArray[itemIndex]! as RTSLayer;
-        
-        
+    var rtsLayer: RTSLayer =  as RTSLayerthis.newUnconstructedRTSLayerInterfaceArray[itemIndex]!;
 ;
     
 rtsLayer!.setPosition(cellPoint!.getX() -rtsLayer!.getHalfWidth(), cellPoint!.getY() -rtsLayer!.getHalfHeight(), rtsLayer!.getZP());
     
-this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rtsLayer as RTSLayer, itemIndex);
+this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager,  as RTSLayerrtsLayer, itemIndex);
     
 }
 
@@ -297,20 +266,14 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
     //var itemIndex = itemIndex
 
     var cost: number = layerInterface!.getCost()!;
-        
-        
 ;
     
 
     var capital: Capital = rtsPlayerLayerInterface!.getCapital()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Trying to Build: ");
@@ -339,20 +302,16 @@ rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
     
 capital.removeMoney(cost);
     
-AssignWaypointsUtil.getInstance()!.set(layerInterface as UnitLayer, associatedRtsLayer as AdvancedRTSGameLayer);
+AssignWaypointsUtil.getInstance()!.set( as UnitLayerlayerInterface,  as AdvancedRTSGameLayerassociatedRtsLayer);
     
-layerManager!.append(layerInterface, PlayersSingletonFactory.total);
+layerManager!.appendAt(layerInterface, PlayersSingletonFactory.total);
     
 
-    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
-        
-        
+    var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface =  as AdvancedRTSPlayerLayerInterfacertsPlayerLayerInterface;
 ;
     
 
     var advancedPlayerOwnedRTSLayers: AdvancedPlayerOwnedRTSLayers = advancedRTSPlayerLayerInterface!.getAdvancedPlayerOwnedRTSLayers()!;
-        
-        
 ;
     
 advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);

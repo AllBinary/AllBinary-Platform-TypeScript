@@ -67,8 +67,6 @@ this.cacheType= cacheType;
     public toString(): string{
 
     var POOL_TYPE: string = "PoolType: ";
-        
-        
 ;
     
 

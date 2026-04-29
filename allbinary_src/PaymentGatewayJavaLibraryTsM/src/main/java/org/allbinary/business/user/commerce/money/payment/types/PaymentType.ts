@@ -52,9 +52,9 @@ import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
-
 import { BasicPaymentType } from "./BasicPaymentType.js";
+
+import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
 
 export class PaymentType
             extends Object
@@ -113,7 +113,8 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentTransactionInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentTransactionInterfaceFactoryInterface is Null");
+                    
 
                                     }
                                 
@@ -138,7 +139,8 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentProcessorInterfaceFactoryInterface is Null")
+                            throw new Error("PaymentProcessorInterfaceFactoryInterface is Null");
+                    
 
                                     }
                                 
@@ -154,8 +156,6 @@ PaymentTypeUtil.getInstance()!.add(this);
     public toVector(): Vector{
 
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.addAll(this.getBasicPaymentType()!.toVector());
@@ -191,11 +191,9 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());

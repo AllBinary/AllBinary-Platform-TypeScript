@@ -49,15 +49,11 @@ export class DownKeyEventHandler extends DownKeyEventHandlerBase {
         
 
     private static readonly instance: DownKeyEventHandler = new DownKeyEventHandler();
-        
-        
 
     private static readonly instanceArray: DownKeyEventHandlerBase[] = 
                                                         [
                                                             new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase(),new DownKeyEventHandlerBase()
                                                         ];
-        
-        
 
     public static getInstance(): DownKeyEventHandler{
 
@@ -70,15 +66,11 @@ export class DownKeyEventHandler extends DownKeyEventHandlerBase {
 
 
     private readonly playerInputIdFactory: LocalPlayerInputIdFactory = LocalPlayerInputIdFactory.getInstance()!;
-        
-        
 
-    public getInstance(deviceId: number): DownKeyEventHandlerBase{
+    public getInstanceForDevice(deviceId: number): DownKeyEventHandlerBase{
 var deviceId = deviceId
 
     var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
-        
-        
 ;
     
 
@@ -115,8 +107,6 @@ super.removeAllListeners();
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeAllListeners();
@@ -136,8 +126,6 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListenerSingleThreaded(eventListenerInterface);
@@ -158,8 +146,6 @@ super.removeListener(eventListenerInterface);
 
                         for (
     var index: number = instanceArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 instanceArray[index]!.removeListener(eventListenerInterface);

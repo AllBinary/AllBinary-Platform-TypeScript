@@ -84,8 +84,6 @@ export class ContextUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private basicURIResolver: BasicUriResolver
 public constructor (basicURIResolver: BasicUriResolver){
@@ -106,8 +104,6 @@ var base = base
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(URLGLOBALS.getMainPath());
@@ -122,8 +118,6 @@ stringBuffer!.append(href);
     
 
     var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString());
-        
-        
 ;
     
 
@@ -173,7 +167,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "resolve");
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
                 //: 
@@ -182,7 +177,8 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "resolve");
 
 
 
-                            throw new TransformerException(e)
+                            throw new TransformerException(e);
+                    
 }
 
 }

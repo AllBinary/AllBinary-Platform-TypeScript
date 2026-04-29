@@ -93,11 +93,9 @@ this.value= this.getPageContext()!.getRequest()!.getParameter(StreetAddressData.
                                 
 
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
-        
-        
 ;
     
-this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
+this.streetAddress= billingAddressesEntity!.get(this.value);
     
 
                         if(this.streetAddress == 

@@ -43,32 +43,18 @@ export class OrderData
         
 
     public static readonly ORDERS: string = "ORDERS";
-        
-        
 
     public static readonly ORDER: string = "ORDER";
-        
-        
 
     public static readonly ID: string = "ORDER_ID";
-        
-        
 
     public static readonly CUSTOMERCOMMENT: string = "ORDER_CUSTOMER_COMMENT";
-        
-        
 
     public static readonly CUSTOMERCANCELCOMMENT: string = "ORDER_CUSTOMER_CANCEL_COMMENT";
-        
-        
 
     public static readonly STORECOMMENT: string = "ORDER_STORE_COMMENT";
-        
-        
 
     public static readonly STORECANCELCOMMENT: string = "ORDER_STORE_CANCEL_COMMENT";
-        
-        
 
 }
                 

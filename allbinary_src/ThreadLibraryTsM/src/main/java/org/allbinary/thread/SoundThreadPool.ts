@@ -45,8 +45,6 @@ export class SoundThreadPool
         
 
     private static readonly instance: ThreadPool = new ThreadPool("Sound", 1, ThreadPool.NORMAL_PRIORITY);
-        
-        
 
     public static getInstance(): ThreadPool{
 

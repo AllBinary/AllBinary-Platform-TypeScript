@@ -63,13 +63,15 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
 import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
 
 import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
 
-import { TouchScreenFactory } from "./TouchScreenFactory.js";
+import { ReleaseHelper } from "./ReleaseHelper.js";
 
-import { TouchButtonInput } from "./TouchButtonInput.js";
+import { TouchScreenFactory } from "./TouchScreenFactory.js";
 
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
@@ -79,28 +81,16 @@ export class TouchButtonRecognizer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly rectangleCollisionUtil: RectangleCollisionUtil = RectangleCollisionUtil.getInstance()!;
-        
-        
 
     private readonly upGameKeyEventHandler: UpGameKeyEventHandler = UpGameKeyEventHandler.getInstance()!;
-        
-        
 
     private readonly downGameKeyEventHandler: DownGameKeyEventHandler = DownGameKeyEventHandler.getInstance()!;
-        
-        
 
     private lastPressedTouchButtonInput: TouchButtonInput = BasicTouchInputFactory.getInstance()!.NONE;
-        
-        
 
     private readonly currentlyPressedTouchButtonSingleton: CurrentlyPressedTouchButtonSingleton = CurrentlyPressedTouchButtonSingleton.getInstance()!;
-        
-        
 
 export inner class ReleaseHelper
             extends Object
@@ -128,27 +118,21 @@ var deviceId = deviceId
 
                         for (
     var index: number = currentlyPressedTouchButtonSingleton!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
     var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
-        
-        
 ;
     
 
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
-        
-        
 ;
     
 upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
-this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
+this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index);
     
 }
 
@@ -177,8 +161,6 @@ var touchButtonInput = touchButtonInput
 var deviceId = deviceId
 
     var cancelTouchButtonInput: TouchButtonInput = CancelTouchButtonInputFactory.getInstance()!.getCancel(touchButtonInput)!;
-        
-        
 ;
     
 
@@ -187,14 +169,10 @@ var deviceId = deviceId
 
                         for (
     var index: number = currentlyPressedTouchButtonSingleton!.size() -1;
-        
-        
 index >= 0; index--)
         {
 
     var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
-        
-        
 ;
     
 
@@ -203,15 +181,13 @@ index >= 0; index--)
                                     {
                                     
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
-        
-        
 ;
     
 upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
-this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.remove(index);
+this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index);
     
 
                                     }
@@ -255,13 +231,11 @@ this.releaseHelper!.release(touchButtonInput, deviceId);
     
 
     var gameKeyEvent: GameKeyEvent = touchButtonInput!.getGameKeyEvent()!;
-        
-        
 ;
     
 this.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.upGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
     
@@ -277,8 +251,6 @@ var y = y
 var deviceId = deviceId
 
     var touchButtonInput: TouchButtonInput = this.lastPressedTouchButtonInput;
-        
-        
 ;
     
 
@@ -301,8 +273,6 @@ this.processRelease(touchButtonInput, deviceId);
                         else {
                             
     var list: BasicArrayList = TouchButtonFactory.getInstance()!.getList()!;
-        
-        
 ;
     
 
@@ -323,11 +293,9 @@ this.processRelease(touchButtonInput, deviceId);
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
-touchButton= list.objectArray[index]! as TouchButton;
+touchButton=  as TouchButtonlist.objectArray[index]!;
     
 rectangle= touchButton!.getRectangle();
     
@@ -373,8 +341,6 @@ var y = y
 var deviceId = deviceId
 
     var list: BasicArrayList = TouchButtonFactory.getInstance()!.getList()!;
-        
-        
 ;
     
 
@@ -399,11 +365,9 @@ var deviceId = deviceId
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
-touchButton= list.objectArray[index]! as TouchButton;
+touchButton=  as TouchButtonlist.objectArray[index]!;
     
 rectangle= touchButton!.getRectangle();
     
@@ -427,13 +391,11 @@ currentlyPressedTouchButtonSingleton!.add(touchButtonInput);
     
 
     var gameKeyEvent: GameKeyEvent = touchButtonInput!.getGameKeyEvent()!;
-        
-        
 ;
     
 this.downGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-this.downGameKeyEventHandler!.getInstance(deviceId)!.fireEvent(gameKeyEvent);
+this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 
                                     }

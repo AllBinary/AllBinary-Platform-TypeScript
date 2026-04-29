@@ -55,27 +55,17 @@ export class Group
          implements GroupInterface {
         
 
-    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(10)!;
-        
-        
+    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(10)!;
 
     private static readonly GROUP_NAME_LABEL: string = "Group Name: ";
-        
-        
 
     private static readonly ID_LABEL: string = " Id: ";
-        
-        
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private readonly teamId: number
 
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 public constructor (teamName: string, teamId: number){
 
             super();
@@ -104,8 +94,6 @@ this.name= name;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(GROUP_NAME_LABEL);

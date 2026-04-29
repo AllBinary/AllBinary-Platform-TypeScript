@@ -45,8 +45,6 @@ export class NullIntermissionEnableListener
         
 
     private static readonly SINGLETON: IntermissionEnableListenerInterface = new NullIntermissionEnableListener();
-        
-        
 
     public static getInstance(): IntermissionEnableListenerInterface{
 

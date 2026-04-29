@@ -46,8 +46,6 @@ export class Anchor
         
 
     public TOP_LEFT: number = Graphics.TOP&Graphics.LEFT;
-        
-        
 
 }
                 

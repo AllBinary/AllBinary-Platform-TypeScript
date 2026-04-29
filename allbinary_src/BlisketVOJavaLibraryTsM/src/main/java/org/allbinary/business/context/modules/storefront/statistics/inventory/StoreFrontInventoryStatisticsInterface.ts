@@ -46,7 +46,7 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 export interface StoreFrontInventoryStatisticsInterface extends TableMappingInterface {
         
 
-    public getNumber(): Long
+    public getNumber(): number
 
     public getTotal(): Money
 

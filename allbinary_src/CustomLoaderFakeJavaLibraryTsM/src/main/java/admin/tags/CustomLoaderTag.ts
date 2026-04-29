@@ -65,8 +65,6 @@ export class CustomLoaderTag extends CustomTagSupport {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private command: string
 
@@ -98,8 +96,6 @@ this.webappPath= value;
         try {
             
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
-        
-        
 ;
     
 urlGlobals!.setWebappPath(this.webappPath);

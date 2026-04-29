@@ -43,8 +43,6 @@ export class InventoryData
         
 
     public static readonly INVENTORY: string = "INVENTORY";
-        
-        
 
 }
                 

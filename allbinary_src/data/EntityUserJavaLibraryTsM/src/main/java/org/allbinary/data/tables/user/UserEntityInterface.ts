@@ -88,7 +88,7 @@ export interface UserEntityInterface extends BasicDataTableInterface {
 
     public insert(values: Vector)
 
-    public update(userName: string, updatedValues: HashMap<any, any>)
+    public update(userName: string, updatedValues: HashMap)
 
 }
                 

@@ -51,12 +51,8 @@ export class LoggingInitInfo
     private logConfigInfoList: BasicArrayList = 
                 null
             ;
-        
-        
 
     private hasRead: boolean = false;
-        
-        
 
                 //@Throws(Error::class)
             @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -73,7 +69,8 @@ export class LoggingInitInfo
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -92,7 +89,8 @@ export class LoggingInitInfo
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -127,7 +125,8 @@ hasRead= true;
                                     
 
 
-                            throw new Error("Read Failed")
+                            throw new Error("Read Failed");
+                    
 
                                     }
                                 
@@ -166,14 +165,10 @@ LoggingInitInfo.updateIfNeeded();
     
 
     var allLogTypeVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = LoggingInitInfo.logConfigInfoList!.size()!;
-        
-        
 ;
     
 
@@ -182,27 +177,21 @@ LoggingInitInfo.updateIfNeeded();
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var logConfigInfo: LogConfig = LoggingInitInfo.logConfigInfoList!.objectArray[index]! as LogConfig;
-        
-        
+    var logConfigInfo: LogConfig =  as LogConfigLoggingInitInfo.logConfigInfoList!.objectArray[index]!;
 ;
     
 
     var logTypeVector: BasicArrayList = logConfigInfo!.getTypeVector()!;
-        
-        
 ;
     
 
                         if(logConfigInfo!.isEnabled())
                         
                                     {
-                                    allLogTypeVector!.addAll(logTypeVector);
+                                    allLogTypeVector!.addAllList(logTypeVector);
     
 
                                     }

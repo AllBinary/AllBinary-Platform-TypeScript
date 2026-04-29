@@ -55,8 +55,6 @@ export class PrimaryWaypointHelper
         
 
     private static readonly instance: PrimaryWaypointHelper = new PrimaryWaypointHelper();
-        
-        
 
     public static getInstance(): PrimaryWaypointHelper{
 
@@ -69,8 +67,6 @@ export class PrimaryWaypointHelper
 
 
     private waypointLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
-        
-        
 private constructor (){
 
             super();

@@ -46,8 +46,6 @@ export class ImageJ2MEScaleUtil
         
 
     private static readonly instance: ImageJ2MEScaleUtil = new ImageJ2MEScaleUtil();
-        
-        
 
     public static getInstance(): ImageJ2MEScaleUtil{
 
@@ -66,14 +64,12 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public scale(images: Image[], width: number, height: number): Image[]{
+    public scaleArray(images: Image[], width: number, height: number): Image[]{
     //var images = images
     //var width = width
     //var height = height
 
     var scaledImages: Image[] = new Array(images.length);
-        
-        
 ;
     
 
@@ -83,8 +79,6 @@ private constructor (){
                         for (
     var index: number = images.length
                 ;
-        
-        
 --index >= 0; )
         {
 scaledImages[index]= this.scale(images[index]!, width, height);
@@ -108,46 +102,32 @@ scaledImages[index]= this.scale(images[index]!, width, height);
     //var height = height
 
     var sourceWidth: number = image.getWidth()!;
-        
-        
 ;
     
 
     var sourceHeight: number = image.getHeight()!;
-        
-        
 ;
     
 
     var originalData: number[] = new Array(image.getWidth() *image.getHeight());
-        
-        
 ;
     
 image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.getHeight());
     
 
     var scaledData: number[] = new Array(width *height);
-        
-        
 ;
     
 
     var heightRatioFactor: number = (8 *sourceHeight) /height;
-        
-        
 ;
     
 
     var widthRatioFactor: number = (8 *sourceWidth) /width;
-        
-        
 ;
     
 
     var scaledIndex: number = scaledData!.length -1;
-        
-        
 ;
     
 
@@ -164,8 +144,6 @@ image.getRGB(originalData, 0, image.getWidth(), 0, 0, image.getWidth(), image.ge
 
                         for (
     var index: number = height;
-        
-        
 --index >= 0; )
         {
 dy= (index *heightRatioFactor)>>3;
@@ -176,8 +154,6 @@ dy= (index *heightRatioFactor)>>3;
 
                         for (
     var index2: number = width;
-        
-        
 --index2 >= 0; )
         {
 dx= (index2 *widthRatioFactor)>>3;
@@ -190,8 +166,6 @@ scaledData[scaledIndex--]= originalData[(sourceWidth *dy) +dx]!;
 
 
     var scaledImage: Image = Image.createRGBImage(scaledData, width, height, true)!;
-        
-        
 ;
     
 

@@ -57,9 +57,7 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
 var tiledLayer = tiledLayer
 var cellPosition = cellPosition
 
-    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);
-        
-        
+    var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = ( as GeologicalGeographicMapCellPositioncellPosition);
 ;
     
 geologicalGeographicMapCellPosition!.getGeologicalResource()!.init();

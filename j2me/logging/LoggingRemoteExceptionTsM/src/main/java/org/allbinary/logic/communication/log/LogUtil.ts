@@ -74,8 +74,6 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
         
 
     private static readonly instance: LogUtil = new LogUtil();
-        
-        
 
     /*actual*/ public static getInstance(): LogUtil{
 
@@ -88,16 +86,10 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
 
 
     private readonly MESSAGE: string = "message";
-        
-        
 
     private isFirstException: boolean = true;
-        
-        
 
     private timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(200000);
-        
-        
 
     public abeClientInformation: AbeClientInformationInterface
 private constructor (){
@@ -107,8 +99,6 @@ private constructor (){
 
 
     private readonly stringBuffer: StringMaker = new StringMaker();
-        
-        
 
     /*actual*/ public putL(log: Log){
 var log = log
@@ -129,26 +119,18 @@ var log = log
                                 
 
     var specialMessage: string = log.getSpecialMessage()!;
-        
-        
 ;
     
 
     var anyType: any = log.getObject()!;
-        
-        
 ;
     
 
     var functionName: string = log.getFunctionName()!;
-        
-        
 ;
     
 
     var exception: any = log.getThrowable()!;
-        
-        
 ;
     
 this.put(specialMessage, anyType, functionName, exception);
@@ -206,8 +188,6 @@ this.put(specialMessage, anyType, functionName, exception);
                                     {
                                     
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 this.isFirstException= false;
@@ -227,8 +207,6 @@ this.isFirstException= false;
                                 
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 
@@ -244,14 +222,13 @@ this.isFirstException= false;
                                     
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 
 
-    var hashtable: Hashtable<any, any> = this.abeClientInformation!.toHashtable()!;
-        
-        
+    var hashtable: Hashtable = this.abeClientInformation!.toHashtable()!;
 ;
     
 this.stringBuffer!.delete(0, this.stringBuffer!.length());

@@ -55,9 +55,9 @@ var after = after
 
                             //For kotlin this is before the body of the constructor.
                     
-setSize(new Integer(32));
+setSize(32);
     
-setMaxLength(new Integer(128));
+setMaxLength(128);
     
 }
 

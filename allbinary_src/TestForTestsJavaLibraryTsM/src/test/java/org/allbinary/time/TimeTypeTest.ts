@@ -46,8 +46,6 @@ export class TimeTypeTest
 var hour = hour
 
     var cal: Calendar = Calendar.getInstance()!;
-        
-        
 ;
     
 cal.set(Calendar.HOUR_OF_DAY, hour);
@@ -119,16 +117,12 @@ this.hour= hour;
     getNightOrDay_returns_expected_label(){
 
     var nightUtil: TimeTypeUtil = new TestableTimeTypeUtil(0);
-        
-        
 ;
     
 Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay());
     
 
     var dayUtil: TimeTypeUtil = new TestableTimeTypeUtil(12);
-        
-        
 ;
     
 Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
@@ -139,8 +133,6 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
     getHourOfDay_long_converts_epoch_to_local_hour(){
 
     var util: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 ;
     
 
@@ -152,8 +144,6 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
     isNight_long_expected_ranges(){
 
     var util: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 ;
     
 
@@ -168,20 +158,14 @@ Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());
     getNightOrDay_long_consistency(){
 
     var util: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 ;
     
 
     var nightMillis: number = millisForHourLocal(0)!;
-        
-        
 ;
     
 
     var dayMillis: number = millisForHourLocal(12)!;
-        
-        
 ;
     
 Assertions.assertEquals(util.NIGHT, util.getNightOrDay(nightMillis));
@@ -194,8 +178,6 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
     boundaries_day_for_long_based_api(){
 
     var util: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 ;
     
 
@@ -207,8 +189,6 @@ Assertions.assertEquals(util.DAY, util.getNightOrDay(dayMillis));
     constants_accessible_and_stable(){
 
     var util: TimeTypeUtil = new TimeTypeUtil();
-        
-        
 ;
     
 Assertions.assertEquals("Night", util.NIGHT);
@@ -221,14 +201,10 @@ Assertions.assertEquals("Day", util.DAY);
     getInstance_returns_same_singleton(){
 
     var a: TimeTypeUtil = TimeTypeUtil.getInstance()!;
-        
-        
 ;
     
 
     var b: TimeTypeUtil = TimeTypeUtil.getInstance()!;
-        
-        
 ;
     
 Assertions.assertSame(a, b);

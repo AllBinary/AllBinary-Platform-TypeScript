@@ -45,8 +45,6 @@ export class NullDemoPaintable
         
 
     public static readonly NULL_DEMO_PAINTABLE: NullDemoPaintable = new NullDemoPaintable();
-        
-        
 
     public showGamePaintable(){
 }

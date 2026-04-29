@@ -58,8 +58,6 @@ export class ImageCompleteUtil
         
 
     private static readonly instance: ImageCompleteUtil = new ImageCompleteUtil();
-        
-        
 
     public static getInstance(): ImageCompleteUtil{
 
@@ -72,8 +70,6 @@ export class ImageCompleteUtil
 
 
     readonly ISREADY: string = "isReady";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -84,8 +80,6 @@ var name = name
 
 
     private readonly COMPLETE: string = "Image loading complete for: ";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -94,15 +88,11 @@ var name = name
     //var name = name
     //var timeDelayHelper = timeDelayHelper
 
-    var playnImage: PlaynImage = image as PlaynImage;
-        
-        
+    var playnImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
-        
-        
+    var playnCoreImage: playn.core.Image =  as playn.core.ImageplaynImage!.getImage();;
 ;
     
 
@@ -140,8 +130,6 @@ var name = name
                                 
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);

@@ -49,13 +49,15 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+import { ShaderInitializer } from "./ShaderInitializer.js";
 
 import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
 
-import { ShaderInitializer } from "./ShaderInitializer.js";
-
 import { ModelViewProjection } from "./ModelViewProjection.js";
+
+import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
+
+import { OpenGLObject3dProcessor } from "./OpenGLObject3dProcessor.js";
 
 export class ShaderComposite
             extends Object
@@ -79,60 +81,32 @@ export class ShaderComposite
     public readonly vertexOpenGLProcessor: OpenGLProcessor
 
     public useProgramShaderOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public shaderMatrixOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public colorEnableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public normalEnableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public vertexEnableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public textureEnableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public colorDisableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public normalDisableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public vertexDisableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public textureDisableVertexAttribArrayOpenGLProcessor: OpenGLProcessor = NullOpenGLProcessorFactory.getInstance()!;
-        
-        
 
     public uniformLightPositionOpenGLProcessor: OpenGLObject3dProcessor = NullOpenGLTextureProcessor.getInstance()!;
-        
-        
 
     public uniformLightColorOpenGLProcessor: OpenGLObject3dProcessor = NullOpenGLTextureProcessor.getInstance()!;
-        
-        
 
     public uniformCameraPositionOpenGLProcessor: OpenGLObject3dProcessor = NullOpenGLTextureProcessor.getInstance()!;
-        
-        
 
     public uniformTextureUnitOpenGLProcessor: OpenGLObject3dProcessor = NullOpenGLTextureProcessor.getInstance()!;
-        
-        
 
     public programHandle: number= 0
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor, disableProgramShaderOpenGLProcessor: OpenGLProcessor){

@@ -57,8 +57,6 @@ export class BasicCryptUtil
         
 
     private static readonly instance: BasicCryptUtil = new BasicCryptUtil();
-        
-        
 
     public static getInstance(): BasicCryptUtil{
 
@@ -71,12 +69,8 @@ export class BasicCryptUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly XML_START: string = "<?xml";
-        
-        
 
                 //@Throws(Error::class)
             
@@ -85,8 +79,6 @@ var inputStream = inputStream
 var cryptInterface = cryptInterface
 
     var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();
-        
-        
 ;
     
 
@@ -114,20 +106,14 @@ buffer.write(ch);
 
 
     var decrypted: number[] = cryptInterface!.decrypt(buffer.toByteArray())!;
-        
-        
 ;
     
 
     var decryptedString: string = decrypted.decodeToString();
-        
-        
 ;
     
 
     var index: number = decryptedString!.indexOf(this.XML_START)!;
-        
-        
 ;
     
 

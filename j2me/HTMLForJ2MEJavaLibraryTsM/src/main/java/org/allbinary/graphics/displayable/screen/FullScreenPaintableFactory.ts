@@ -49,8 +49,6 @@ export class FullScreenPaintableFactory
         
 
     private static readonly instance: FullScreenPaintableFactory = new FullScreenPaintableFactory();
-        
-        
 
     public static getInstance(): FullScreenPaintableFactory{
 
@@ -63,8 +61,6 @@ export class FullScreenPaintableFactory
 
 
     public paintable: Paintable = NullPaintable.getInstance()!;
-        
-        
 
 }
                 

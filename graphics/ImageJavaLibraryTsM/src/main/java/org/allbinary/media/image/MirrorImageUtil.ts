@@ -60,8 +60,6 @@ export class MirrorImageUtil
         
 
     private static readonly instance: MirrorImageUtil = new MirrorImageUtil();
-        
-        
 
     public static getInstance(): MirrorImageUtil{
 
@@ -74,12 +72,8 @@ export class MirrorImageUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -96,14 +90,10 @@ this.logUtil!.putF("Starting", this, "getImage");
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
                             null))!;
-        
-        
 ;
     
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
-        
-        
 ;
     
 
@@ -112,8 +102,6 @@ this.logUtil!.putF("Starting", this, "getImage");
                                     {
                                     
     var tx: AffineTransform = AffineTransform.getScaleInstance(1,  -1)!;
-        
-        
 ;
     
 tx.translate(0,  -bufferedImage!.getHeight(
@@ -121,8 +109,6 @@ tx.translate(0,  -bufferedImage!.getHeight(
     
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
-        
-        
 ;
     
 bufferedImage= op.filter(bufferedImage, 
@@ -137,8 +123,6 @@ bufferedImage= op.filter(bufferedImage,
                                     {
                                     
     var tx: AffineTransform = AffineTransform.getScaleInstance( -1, 1)!;
-        
-        
 ;
     
 tx.translate( -bufferedImage!.getWidth(
@@ -146,8 +130,6 @@ tx.translate( -bufferedImage!.getWidth(
     
 
     var op: AffineTransformOp = new AffineTransformOp(tx, AffineTransformOp.TYPE_NEAREST_NEIGHBOR);
-        
-        
 ;
     
 bufferedImage= op.filter(bufferedImage, 
@@ -178,38 +160,26 @@ var verticle = verticle
 var horizontal = horizontal
 
     var width: number = bufferedImage!.getWidth()!;
-        
-        
 ;
     
 
     var height: number = bufferedImage!.getHeight()!;
-        
-        
 ;
     
 
     var cellHeight: number = height;
-        
-        
 ;
     
 
     var cellWidth: number = height;
-        
-        
 ;
     
 
     var numberOfFramesPerOrientation: number = width /cellWidth;
-        
-        
 ;
     
 
     var numberOfFrames: number = numberOfFramesPerOrientation;
-        
-        
 ;
     
 
@@ -222,14 +192,10 @@ this.logUtil!.putF("numberOfFramesPerOrientation: " +numberOfFramesPerOrientatio
     
 
     var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
-        
-        
 ;
     
 
     var y: number = 0;
-        
-        
 ;
     
 
@@ -238,14 +204,10 @@ this.logUtil!.putF("numberOfFramesPerOrientation: " +numberOfFramesPerOrientatio
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfFramesPerOrientation; index++)
         {
 
     var x: number = index *cellWidth;
-        
-        
 ;
     
 bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeight);
@@ -258,8 +220,6 @@ bufferedImageArray[index]= bufferedImage!.getSubimage(x, y, cellWidth, cellHeigh
 
                         for (
     var index: number = 0;
-        
-        
 index < numberOfFramesPerOrientation; index++)
         {
 bufferedImageArray[index +numberOfFramesPerOrientation]= this.getImage(bufferedImageArray[index]!, verticle, horizontal);

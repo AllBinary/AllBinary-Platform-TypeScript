@@ -66,12 +66,12 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { ImageAnimation } from "./ImageAnimation.js";
+
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {
         
 
     private lastImage: Image = NullCanvas.NULL_IMAGE;
-        
-        
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
                         //var image = image
@@ -85,9 +85,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                         
                                     {
                                     
-    var androidImageInterface: AndroidImageInterface = lastImage as AndroidImageInterface;
-        
-        
+    var androidImageInterface: AndroidImageInterface =  as AndroidImageInterfacelastImage;
 ;
     
 androidImageInterface!.getBitmap()!.recycle();
@@ -96,9 +94,7 @@ androidImageInterface!.getBitmap()!.recycle();
                                     }
                                 
 
-    var scale: number = ScreenRelationalUtil.getInstance()!.getScale(image)!;
-        
-        
+    var scale: number = ScreenRelationalUtil.getInstance()!.getScaleImage(image)!;
 ;
     
 this.lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheFactory.getInstance(), this.getImage(), scale, scale, false);

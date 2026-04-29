@@ -43,8 +43,6 @@ export class ThreedResources
         
 
     private static readonly threedResources: ThreedResources = new ThreedResources();
-        
-        
 
     public static getThreedResources(): ThreedResources{
 

@@ -74,15 +74,13 @@ export class StoreFrontHelper extends TagHelper {
     private readonly currentLocation: string
 
     private readonly currentHomeLocation: string
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
-        
-        
+    var storeName: string =  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
 ;
     
 
@@ -105,8 +103,6 @@ this.currentHomeLocation= new Replace(CommonSeps.getInstance()!.SPACE, "%20").
                         else {
                             
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 this.storeFrontInterface= new StoreFront();

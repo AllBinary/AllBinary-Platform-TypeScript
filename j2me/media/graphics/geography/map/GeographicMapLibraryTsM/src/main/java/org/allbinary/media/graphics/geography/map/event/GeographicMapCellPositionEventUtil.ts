@@ -43,6 +43,8 @@ import { GeographicMapCellPositionTracking } from "../../../../../../../org/allb
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
+
 import { GeographicMapCellPositionEventHandler } from "./GeographicMapCellPositionEventHandler.js";
 
 export class GeographicMapCellPositionEventUtil
@@ -53,8 +55,6 @@ export class GeographicMapCellPositionEventUtil
     private readonly geographicMapCellPositionEvent: GeographicMapCellPositionEvent
 
     private readonly geographicMapCellPositionEventHandler: GeographicMapCellPositionEventHandler = GeographicMapCellPositionEventHandler.getInstance()!;
-        
-        
 public constructor (anyType: any = {}){
 
             super();

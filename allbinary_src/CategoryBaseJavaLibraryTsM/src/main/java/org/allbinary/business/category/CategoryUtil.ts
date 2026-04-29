@@ -76,8 +76,6 @@ export class CategoryUtil
 var categoryPath = categoryPath
 
     var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -94,14 +92,10 @@ var categoryPath = categoryPath
 var node = node
 
     var attributes: NamedNodeMap = node.getAttributes()!;
-        
-        
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL); as Attr;
-        
-        
+    var attrNode: Attr =  as Attrattributes.getNamedItem(CategoryData.getInstance()!.LABEL);;
 ;
     
 
@@ -122,8 +116,6 @@ var node = node
                         else {
                             
     var labelNode: Node = DomSearchHelper.getNodeNoThrow(CategoryData.getInstance()!.LABEL, node.getChildNodes())!;
-        
-        
 ;
     
 

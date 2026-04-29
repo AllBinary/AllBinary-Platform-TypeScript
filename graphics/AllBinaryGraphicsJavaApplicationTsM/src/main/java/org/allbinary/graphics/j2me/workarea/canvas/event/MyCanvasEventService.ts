@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EventListenerList } from "./EventListenerList.js";
+
 import { MyCanvasEventListener } from "./MyCanvasEventListener.js";
 
 import { MyCanvasEvent } from "./MyCanvasEvent.js";
@@ -47,41 +49,25 @@ export class MyCanvasEventService
         
 
     private listenerList: javax.swing.event.EventListenerList = new javax.swing.event.EventListenerList();
-        
-        
 
     public DELETE: string = "delete";
-        
-        
 
     public DUPLICATE: string = "duplicate";
-        
-        
 
     public SELECT: string = "select";
-        
-        
 
     public ROTATE: string = "rotate";
-        
-        
 
     public EXPLODE: string = "explode";
-        
-        
 
     public AUTOEXPLODE: string = "autoExplode";
-        
-        
 
     public CENTER: string = "center";
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
+listenerList!.add( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
     
 }
 
@@ -89,7 +75,7 @@ listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventLi
 
     public static removeListener(listener: MyCanvasEventListener){
 var listener = listener
-listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
+listenerList!.remove( as Class<*>listenerconstructor,  as java.util.EventListenerlistener);
     
 }
 
@@ -101,8 +87,6 @@ listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.Even
 var evt = evt
 
     var listeners: any[] = listenerList!.getListenerList()!;
-        
-        
 ;
     
 
@@ -111,8 +95,6 @@ var evt = evt
 
                         for (
     var i: number = 0;
-        
-        
 i < listeners.length; )
         {
 
@@ -123,7 +105,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(DELETE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     delete(evt);
     
@@ -134,7 +116,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(DUPLICATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     duplicate(evt);
     
@@ -145,7 +127,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(SELECT) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     select(evt);
     
@@ -156,7 +138,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(ROTATE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     rotate(evt);
     
@@ -167,7 +149,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(EXPLODE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     explode(evt);
     
@@ -178,7 +160,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(AUTOEXPLODE) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     autoExplode(evt);
     
@@ -189,7 +171,7 @@ i < listeners.length; )
                         if(evt.getCommand()!.compareTo(CENTER) == 0)
                         
                                     {
-                                     = listeners[i +1]! as MyCanvasEventListener
+                                     =  as MyCanvasEventListenerlisteners[i +1]!
 .
                     center(evt);
     

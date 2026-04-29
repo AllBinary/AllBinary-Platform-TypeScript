@@ -67,8 +67,6 @@ export class HealthVectorData
 ,intArrayOf(1000,1000)
 )
                                                         ];
-        
-        
 
 }
                 

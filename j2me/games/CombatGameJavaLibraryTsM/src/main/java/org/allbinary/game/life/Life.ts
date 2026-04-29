@@ -44,7 +44,7 @@ export class Life
          implements LifeInterface {
         
 
-    public static create(): Life{
+    public static createLife(): Life{
 
         try {
             
@@ -60,15 +60,14 @@ export class Life
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 }
 
 
-    public static readonly NO_LIFE: Life = Life.create()!;
-        
-        
+    public static readonly NO_LIFE: Life = Life.createLife()!;
 
     private lives: number
 
@@ -89,7 +88,8 @@ this.maxlives= maxlives;
                                     
 
 
-                            throw new Error("To Many Lives")
+                            throw new Error("To Many Lives");
+                    
 
                                     }
                                 

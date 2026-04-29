@@ -98,22 +98,14 @@ export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGene
         
 
     readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper
 
     private readonly STRAIGHTAWAY: number = 4;
-        
-        
 
     raceTrackGeographicMap: RaceTrackGeographicMapInterface = NullRaceTrackGeographicMap.NULL_RACE_TRACK_GEOGRAPHIC_MAP;
-        
-        
 
     raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-        
-        
 protected constructor (){
 
             super();
@@ -133,15 +125,11 @@ this.list.clear();
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition); as RaceTrackGeographicMapCellType;
-        
-        
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType =  as RaceTrackGeographicMapCellTypethis.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition);;
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = this.raceTrackGeographicMapCellTypeFactory as RaceTrackGeographicMapCellTypeFactory;
-        
-        
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory =  as RaceTrackGeographicMapCellTypeFactorythis.raceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -174,25 +162,19 @@ this.list.clear();
 this.init();
     
 
-    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap = geographicMapInterface as BaseRaceTrackGeographicMap;
-        
-        
+    var baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap =  as BaseRaceTrackGeographicMapgeographicMapInterface;
 ;
     
 this.raceTrackGeographicMap= baseRaceTrackGeographicMap;
     
-this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+this.raceTrackGeographicMapCellTypeFactory=  as RaceTrackGeographicMapCellTypeFactorybaseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory();;
     
 
     var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;
-        
-        
 ;
     
 
     var trackedList: BasicArrayList = roadGeographicMapCellHistory!.getTracked()!;
-        
-        
 ;
     
 
@@ -201,8 +183,6 @@ this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeogr
     
 
     var lastIndex: number = trackedList!.size() -1;
-        
-        
 ;
     
 
@@ -219,18 +199,16 @@ this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeogr
 
                         for (
     var index: number = lastIndex;
-        
-        
 index > 0; index--)
         {
-geographicMapCellPosition= trackedList!.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition=  as GeographicMapCellPositiontrackedList!.get(index);;
     
 total= 0;
     
 ahead= index;
     
 
-        while(this.isDropAllowedAt(trackedList!.get(ahead) as GeographicMapCellPosition))
+        while(this.isDropAllowedAt( as GeographicMapCellPositiontrackedList!.get(ahead)))
         {
 total++;
     
@@ -264,8 +242,6 @@ ahead++;
 
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -274,8 +250,6 @@ ahead++;
 
                         for (
     var index: number = size -1;
-        
-        
 index >= 0; index--)
         {
 this.drop(allBinaryGameLayerManager, index);
@@ -286,8 +260,6 @@ this.drop(allBinaryGameLayerManager, index);
 
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -299,8 +271,6 @@ this.drop(allBinaryGameLayerManager, index);
                                     {
                                     
     var index: number = this.basicArrayListUtil!.getRandomIndex(this.list)!;
-        
-        
 ;
     
 this.drop(allBinaryLayerManager, index);
@@ -319,7 +289,8 @@ this.drop(allBinaryLayerManager, index);
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED)
+                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                    
 }
 
 

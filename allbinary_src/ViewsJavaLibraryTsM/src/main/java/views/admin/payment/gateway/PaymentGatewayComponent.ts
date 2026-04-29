@@ -65,8 +65,6 @@ export class PaymentGatewayComponent extends HttpStoreComponentView {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private paymentGatewayInterface: PaymentGatewayInterface
 public constructor (transformInfoInterface: TransformInfoInterface, paymentGatewayInterface: PaymentGatewayInterface){
@@ -87,20 +85,14 @@ this.paymentGatewayInterface= paymentGatewayInterface;
     public addDomNodeInterfaces(){
 
     var paymentType: BasicPaymentType = BasicPaymentTypeUtil.getInstance()!.get(this.paymentGatewayInterface!.getName())!;
-        
-        
 ;
     
 
     var paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface = paymentType!.getPaymentGatewayDomNodeFactoryInterface()!;
-        
-        
 ;
     
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface); as DomNodeInterface;
-        
-        
+    var domNodeInterface: DomNodeInterface =  as DomNodeInterfacepaymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface);;
 ;
     
 this.addDomNodeInterface(domNodeInterface);
@@ -125,8 +117,6 @@ this.addDomNodeInterface(domNodeInterface);
             {
 
     var error: string = "Failed to view payment gateway";
-        
-        
 ;
     
 

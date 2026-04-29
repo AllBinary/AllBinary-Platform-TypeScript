@@ -67,7 +67,7 @@ export class TransformInfoBasic extends AbContext implements TransformInfoHttpIn
         
 
     private storeFrontInterface: StoreFrontInterface
-public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var storeFrontInterface = storeFrontInterface
 var propertiesHashMap = propertiesHashMap
@@ -101,7 +101,7 @@ this.storeFrontInterface= storeFrontInterface;
 }
 
 
-    public override(hashMap: HashMap<any, any>){
+    public override(hashMap: HashMap){
 var hashMap = hashMap
 }
 
@@ -207,7 +207,8 @@ var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -311,7 +312,7 @@ var importUriPath = importUriPath
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
 
 

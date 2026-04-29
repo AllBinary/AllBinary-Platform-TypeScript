@@ -46,8 +46,6 @@ export class RegistrationConfiguration
         
 
     private static readonly SINGLETON: RegistrationConfiguration = new RegistrationConfiguration();
-        
-        
 
     public static getInstance(): RegistrationConfiguration{
 
@@ -60,12 +58,8 @@ export class RegistrationConfiguration
 
 
     private registrationCode: string = "No Registration Code";
-        
-        
 
     public readonly NAME: string = "registrationid";
-        
-        
 private constructor (){
 
             super();

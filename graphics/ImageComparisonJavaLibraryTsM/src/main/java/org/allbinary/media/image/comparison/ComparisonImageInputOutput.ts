@@ -82,12 +82,8 @@ export class ComparisonImageInputOutput
         
 
     private static readonly ROOT_NAME: string = "_Changed_";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -96,12 +92,10 @@ public constructor (){
 
                 //@Throws(Error::class)
             
-    public save(frame: Long){
+    public save(frame: number){
     //var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -109,10 +103,8 @@ public constructor (){
                         
                                     {
                                     
-    var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as ImageComparisonResultFrameCacheable;
-        
-        
+    var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable =  as ImageComparisonResultFrameCacheable
+                                    (getInstance as AutomaticCacheInterface).get(frame);;
 ;
     
 
@@ -123,8 +115,6 @@ public constructor (){
                                     {
                                     
     var imageComparisonResult: ImageComparisonResult = imageComparisonResultFrameCacheable!.getImageComparisonResult()!;
-        
-        
 ;
     
 this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame());
@@ -152,19 +142,15 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
 
                 //@Throws(Error::class)
             
-    public save(imageComparisonResult: ImageComparisonResult, frame: Long){
+    public save(imageComparisonResult: ImageComparisonResult, frame: number){
     //var imageComparisonResult = imageComparisonResult
     //var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var filePathStringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer!.append(ImageOutputData.SAVE_PATH);
@@ -175,8 +161,6 @@ filePathStringBuffer!.append(ROOT_NAME);
     
 
     var filePathStringBuffer1: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer1!.append(filePathStringBuffer!.toString());
@@ -187,14 +171,10 @@ filePathStringBuffer1!.append(MediaDataFactory.getInstance()!.JPG.getExtension()
     
 
     var filePath1: string = filePathStringBuffer1!.toString()!;
-        
-        
 ;
     
 
     var filePathStringBuffer2: StringMaker = new StringMaker();
-        
-        
 ;
     
 filePathStringBuffer2!.append(filePathStringBuffer!.toString());
@@ -205,14 +185,10 @@ filePathStringBuffer2!.append(MediaDataFactory.getInstance()!.JPG.getExtension()
     
 
     var filePath2: string = filePathStringBuffer2!.toString()!;
-        
-        
 ;
     
 
     var bufferedImageCacheables: BufferedImageCacheable[] = ChangedPixelsUtil.generateBufferedImageChacheables(imageComparisonResult)!;
-        
-        
 ;
     
 this.logUtil!.putF("Comparison Image File Path 1: " +filePath1, this, commonStrings!.SAVE);
@@ -221,8 +197,6 @@ this.logUtil!.putF("Comparison Image File Path 2: " +filePath2, this, commonStri
     
 
     var bufferedImageArray: BufferedImage[] = new Array(2);
-        
-        
 ;
     
 bufferedImageArray[0]= bufferedImageCacheables[0]!.getBufferedImage();
@@ -231,8 +205,6 @@ bufferedImageArray[1]= bufferedImageCacheables[1]!.getBufferedImage();
     
 
     var imagePersistanceUtil: ImagePersistanceUtil = ImagePersistanceUtil.getInstance()!;
-        
-        
 ;
     
 imagePersistanceUtil!.saveWithImageIO(filePath1, bufferedImageArray[0]!);

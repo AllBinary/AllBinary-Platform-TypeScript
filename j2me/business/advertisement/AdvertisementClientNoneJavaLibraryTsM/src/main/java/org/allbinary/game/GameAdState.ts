@@ -18,13 +18,10 @@
 
 
 
+import { GameAdStateBase } from "../../../org/allbinary/business/advertisement/GameAdStateBase.js";
+
+    
 import { AdConfiguration } from "../../../org/allbinary/business/advertisement/AdConfiguration.js";
-
-    
-import { Advertisements } from "../../../org/allbinary/business/advertisement/Advertisements.js";
-
-    
-import { GameState } from "../../../org/allbinary/game/state/GameState.js";
 
     
 import { VirtualKeyboardEvent } from "../../../org/allbinary/input/event/VirtualKeyboardEvent.js";
@@ -34,15 +31,6 @@ import { VirtualKeyboardEventHandler } from "../../../org/allbinary/input/event/
 
     
 import { VirtualKeyboardEventListenerInterface } from "../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js";
-
-    
-import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
-
-    
-import { AllBinaryEventObject } from "../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
-
-    
-import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrings.js";
 
     
 
@@ -64,77 +52,16 @@ import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrin
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { GameType } from "./GameType.js";
-
-export class GameAdState
-            extends Object
-         implements VirtualKeyboardEventListenerInterface {
-        
-
-    private readonly adConfiguration: AdConfiguration
-
-    private readonly advertisements: Advertisements = new Advertisements();
-        
+export class GameAdState extends GameAdStateBase implements VirtualKeyboardEventListenerInterface {
         
 public constructor (adConfiguration: AdConfiguration){
+            super(adConfiguration);
+                    var adConfiguration = adConfiguration
 
-            super();
-        var adConfiguration = adConfiguration
-this.adConfiguration= adConfiguration;
-    
+
+                            //For kotlin this is before the body of the constructor.
+                    
 VirtualKeyboardEventHandler.getInstance()!.addListener(this);
-    
-}
-
-
-    public initViewArray(viewArray: any[]){
-var viewArray = viewArray
-}
-
-
-    public init(anyType: any = {}){
-var anyType = anyType
-this.init();
-    
-}
-
-
-    public init(){
-}
-
-
-    public isShowingAt(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
-}
-
-
-    public isShowingAt(location: number): boolean{
-var location = location
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
-}
-
-
-    public show(){
-}
-
-
-    public hide(){
-}
-
-
-    public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
-ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
@@ -143,102 +70,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
 var virtualKeyboardEvent = virtualKeyboardEvent
-}
-
-
-    public processAdState(gameState: GameState, gameType: GameType){
-var gameState = gameState
-var gameType = gameType
-}
-
-
-    public processPageAdState(){
-}
-
-
-                //@Throws(Error::class)
-            
-    public playingAdState(){
-}
-
-
-                //@Throws(Error::class)
-            
-    public notPlayingAdState(){
-}
-
-
-    public setGameIsReady(gameIsReady: boolean){
-var gameIsReady = gameIsReady
-}
-
-
-    public isGameIsReady(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
-}
-
-
-    public getAdvertisements(): Advertisements{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return advertisements;
-    
-}
-
-
-    public getAdConfiguration(): AdConfiguration{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return adConfiguration;
-    
-}
-
-
-    private okayToShowAds: boolean= false
-
-    public isOkayToShowPageAd(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
-}
-
-
-    public setOkayToShowAds(okayToShowAds: boolean){
-var okayToShowAds = okayToShowAds
-this.okayToShowAds= okayToShowAds;
-    
-}
-
-
-    public isOkayToShowAds(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return okayToShowAds;
-    
-}
-
-
-    public isEnabled(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return false;
-    
 }
 
 

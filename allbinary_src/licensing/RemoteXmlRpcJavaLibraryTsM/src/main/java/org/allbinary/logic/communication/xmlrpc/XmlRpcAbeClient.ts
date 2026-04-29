@@ -76,24 +76,16 @@ export class XmlRpcAbeClient
         
 
     public isOnline: boolean = true;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly remoteMethod: string
 
     private readonly clientInfo: AbeClientInformationInterface
 
     private client: XmlRpcHandler = NullXmlRpcHandler.NULL_XML_RPC_HANDLER;
-        
-        
 
     private server: number
 
@@ -104,56 +96,30 @@ export class XmlRpcAbeClient
     private isDone: boolean
 
     private readonly START_SERVER: string = "Start With Server #";
-        
-        
 
     readonly TRYING: string = "Trying Server #";
-        
-        
 
     readonly SEP: string = CommonLabels.getInstance()!.COLON_SEP;
-        
-        
 
     readonly CLIENT_INFO: string = "Client Info: \n";
-        
-        
 
     readonly RESULT: string = "Result: \n";
-        
-        
 
     readonly INVALID: string = "License data is Invalid Trying Other Servers";
-        
-        
 
     readonly EXCEPTION_IN_CLIENT: string = "Exception in client";
-        
-        
 
     readonly SERVER_REPORTED_ERROR: string = "Server reported error";
-        
-        
 
     readonly UNKNOWN_ERROR: string = "Unknown License Retrieval Failure";
-        
-        
 
     readonly TRYING_OTHER_SERVERS: string = "IOException Trying Other Servers";
-        
-        
 
     readonly HOST_NOT_RESOLVED_MSG: string = "Not Trying Again Since Host Unresolved";
-        
-        
 
     readonly HOST_NOT_RESOLVED: string = "Host is unresolved";
-        
-        
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
-        
-        
 public constructor (clientInfo: AbeClientInformationInterface, remoteMethod: string){
 
             super();
@@ -191,8 +157,6 @@ this.server= this.start;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.START_SERVER);
@@ -264,7 +228,8 @@ var anyType = anyType
 
 
 
-                            throw new Error("Tried All Servers But Still Failed")
+                            throw new Error("Tried All Servers But Still Failed");
+                    
 }
 
 

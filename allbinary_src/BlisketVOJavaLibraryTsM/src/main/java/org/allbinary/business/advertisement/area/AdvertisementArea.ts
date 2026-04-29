@@ -54,9 +54,9 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
         
 import { AdvertisementAreaInterface } from "./AdvertisementAreaInterface.js";
 
-import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
-
 import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstraintsInterface.js";
+
+import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
 export class AdvertisementArea
             extends Object
@@ -72,31 +72,27 @@ export class AdvertisementArea
     private advertisementAreaConstraintsInterface: AdvertisementAreaConstraintsInterface
 
     private campaign: string
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap
-this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
+this.name=  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.NAME);;
     
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+this.storeName=  as StringhashMap!.get(StoreFrontData.getInstance()!.NAME);;
     
-this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION); as String;
+this.description=  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION);;
     
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS); as String;
-        
-        
+    var constraintsDomString: string =  as StringhashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS);;
 ;
     
 
     var document: Document = DomDocumentHelper.create(constraintsDomString)!;
-        
-        
 ;
     
 this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     
-this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME); as String;
+this.campaign=  as StringhashMap!.get(AdvertisementCampaignData.getInstance()!.NAME);;
     
 }
 

@@ -61,8 +61,6 @@ export class InitInfo
         
 
     private static readonly instance: InitInfo = new InitInfo();
-        
-        
 
     public static getInstance(): InitInfo{
 
@@ -75,38 +73,24 @@ export class InitInfo
 
 
     public readonly TESTING: string = "TESTING";
-        
-        
 
     public readonly MAINPATH: string = "MAINPATH";
-        
-        
 
     public readonly TESTHTMLPATH: string = "TESTHTMLPATH";
-        
-        
 
     private testing: string = 
                 null
             ;
-        
-        
 
     private mainPath: AbPath = 
                 null
             ;
-        
-        
 
     private testHtmlPath: AbPath = 
                 null
             ;
-        
-        
 
     private hasRead: boolean = false;
-        
-        
 private constructor (){
 
             super();
@@ -121,8 +105,6 @@ private constructor (){
         try {
             
     var initInfoEntity: InitInfoEntity = new InitInfoEntity();
-        
-        
 ;
     
 
@@ -188,15 +170,15 @@ this.hasRead= false;
 
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public set(hashMap: HashMap<any, any>){
+    public set(hashMap: HashMap){
 var hashMap = hashMap
 
         try {
-            this.testing= hashMap!.get(this.TESTING); as String;
+            this.testing=  as StringhashMap!.get(this.TESTING);;
     
-this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as String);
+this.mainPath= new AbPath( as StringhashMap!.get(this.MAINPATH));
     
-this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as String);
+this.testHtmlPath= new AbPath( as StringhashMap!.get(this.TESTHTMLPATH));
     
 
                 //: 
@@ -234,8 +216,6 @@ this.testHtmlPath=
     
 
     var initInfoEntity: InitInfoEntity = new InitInfoEntity();
-        
-        
 ;
     
 initInfoEntity!.get();
@@ -476,11 +456,9 @@ var testing = testing
 }
 
 
-    public toHashMap(): HashMap<any, any>{
+    public toHashMap(): HashMap{
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put(this.TESTING, this.getTesting());

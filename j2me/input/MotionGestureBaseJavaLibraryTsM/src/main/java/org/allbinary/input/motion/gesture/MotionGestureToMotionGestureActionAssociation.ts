@@ -101,8 +101,6 @@ this.motionGestureAction= commandAction;
 var aList = aList
 
     var size: number = aList!.size()!;
-        
-        
 ;
     
 
@@ -124,8 +122,6 @@ var aList = aList
 
                         for (
     var i: number = size -1;
-        
-        
 i >= 0; i--)
         {
 

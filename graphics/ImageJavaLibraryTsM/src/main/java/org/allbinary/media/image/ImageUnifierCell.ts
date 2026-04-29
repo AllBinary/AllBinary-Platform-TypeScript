@@ -44,10 +44,10 @@ export class ImageUnifierCell
          {
         
 
-    private width: Integer
+    private width: number
 
-    private height: Integer
-public constructor (width: Integer, height: Integer){
+    private height: number
+public constructor (width: number, height: number){
 
             super();
         var width = width
@@ -59,7 +59,7 @@ this.setHeight(height);
 }
 
 
-    public getWidth(): Integer{
+    public getWidth(): number{
 
 
 
@@ -69,14 +69,14 @@ this.setHeight(height);
 }
 
 
-    public setWidth(width: Integer){
+    public setWidth(width: number){
 var width = width
 this.width= width;
     
 }
 
 
-    public getHeight(): Integer{
+    public getHeight(): number{
 
 
 
@@ -86,7 +86,7 @@ this.width= width;
 }
 
 
-    public setHeight(height: Integer){
+    public setHeight(height: number){
 var height = height
 this.height= height;
     

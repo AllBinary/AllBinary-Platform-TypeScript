@@ -71,12 +71,10 @@ public constructor (abeClientInformation: AbeClientInformationInterface, transfo
                             //For kotlin this is before the body of the constructor.
                     
 
-    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface); as TransformInfoObjectConfigInterface;
-        
-        
+    var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface =  as TransformInfoObjectConfigInterfaceTransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(abeClientInformation, transformInfoInterface);;
 ;
     
-this.setURIResolver(new CustomUriResolver(transformInfoObjectConfigInterface!.getImportUriPath(), this.getURIResolver() as BasicUriResolver) as URIResolver);
+this.setURIResolver( as URIResolvernew CustomUriResolver(transformInfoObjectConfigInterface!.getImportUriPath(),  as BasicUriResolverthis.getURIResolver()));
     
 }
 

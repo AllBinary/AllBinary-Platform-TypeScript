@@ -75,12 +75,8 @@ export class AbTransformer
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private transformInfoInterface: TransformInfoInterface
 
@@ -174,14 +170,13 @@ var xmlDocumentStr = xmlDocumentStr
                                     
 
 
-                            throw new Error("No URIResolver")
+                            throw new Error("No URIResolver");
+                    
 
                                     }
                                 
 
     var result: string = XslHelper.getInstance()!.translate(this.getURIResolver(), new StreamSource(this.getInputStream()), new StreamSource(new StringBufferInputStream(xmlDocumentStr)))!;
-        
-        
 ;
     
 
@@ -195,8 +190,6 @@ var xmlDocumentStr = xmlDocumentStr
                                 
 
     var transformInfoObjectConfigGeneratorInterface: TransformInfoObjectConfigGenerator = TransformInfoObjectConfigGeneratorFactory.getInstance()!.getInstance(this.getTransformInfoInterface())!;
-        
-        
 ;
     
 
@@ -221,7 +214,8 @@ var xmlDocumentStr = xmlDocumentStr
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

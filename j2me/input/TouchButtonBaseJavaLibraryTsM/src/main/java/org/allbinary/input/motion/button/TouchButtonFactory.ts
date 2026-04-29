@@ -49,8 +49,6 @@ export class TouchButtonFactory
         
 
     private static readonly SINGLETON: TouchButtonFactory = new TouchButtonFactory();
-        
-        
 
     public static getInstance(): TouchButtonFactory{
 
@@ -63,16 +61,10 @@ export class TouchButtonFactory
 
 
     private LIST: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
-        
-        
 
     private list: BasicArrayList = LIST;
-        
-        
 
     private savedList: BasicArrayList = LIST;
-        
-        
 private constructor (){
 
             super();
@@ -88,8 +80,6 @@ this.toggle(false, LIST);
 
 
     private saved: boolean = false;
-        
-        
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public toggle(save: boolean, list: BasicArrayList){
@@ -165,7 +155,8 @@ var list = list
                                     
 
 
-                            throw new Error("Null List")
+                            throw new Error("Null List");
+                    
 
                                     }
                                 

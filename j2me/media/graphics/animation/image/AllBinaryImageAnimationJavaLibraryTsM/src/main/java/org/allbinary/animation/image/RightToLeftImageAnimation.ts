@@ -110,10 +110,8 @@ this.currentWidth= this.getDrawWidth() -this.startWidth;
 
 
     private anchor: number = Anchor.TOP_LEFT;
-        
-        
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y

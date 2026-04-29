@@ -66,39 +66,27 @@ export class GenericProfileDataWorkerType
          implements GenericProfileDataWorkerTypeInterface {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 
     public SAVED_CAPTURE: GenericProfileDataWorkerType = SavedCaptureGenericProfileDataWorkerType.SAVED_CAPTURE;
-        
-        
 
     public SCREEN_CAPTURE: GenericProfileDataWorkerType = new GenericProfileDataWorkerType("Screen " +InputImageType.CAPTURE.getName());
-        
-        
 
     public COMPARISON: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.COMPARISON.getName());
-        
-        
 
     public MOTION: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.MOTION.getName());
-        
-        
 
     public static getInstance(node: Node): GenericProfileDataWorkerType{
 var node = node
 
     var name: string = DomNodeHelper.getTextNodeValue(node)!;
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(name as Object); as GenericProfileDataWorkerType;
+                        return  as GenericProfileDataWorkerTypehashMap!.get(name as Object);;
     
 }
 
@@ -138,8 +126,6 @@ this.name= name;
 var document = document
 
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, name)!;
-        
-        
 ;
     
 

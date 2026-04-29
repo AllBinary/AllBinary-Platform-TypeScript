@@ -64,36 +64,20 @@ export class MotionGestureConfiguration
         
 
     private diagonalMotionGestureAllowed: boolean = true;
-        
-        
 
     private diagonalTolerance: number = 7;
-        
-        
 
     private minimumMotionGesture: number = 9;
-        
-        
 
     private button: string = StringUtil.getInstance()!.EMPTY_STRING;
-        
-        
 
     private color: BasicColor = BasicColorFactory.getInstance()!.BLUE;
-        
-        
 
     private executingActions: boolean = true;
-        
-        
 
     private mouseButtonMask: number = 0;
-        
-        
 
     private activeCommands: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (){
 
             super();
@@ -119,7 +103,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.activeCommands!.objectArray[index]! as CompleteMotionGestureInputEvent;
+                        return  as CompleteMotionGestureInputEventthis.activeCommands!.objectArray[index]!;
     
 }
 

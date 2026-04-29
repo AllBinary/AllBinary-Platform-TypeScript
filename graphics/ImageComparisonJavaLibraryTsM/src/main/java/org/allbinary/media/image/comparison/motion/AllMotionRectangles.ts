@@ -57,8 +57,6 @@ export class AllMotionRectangles extends MotionRectangles {
         
 
     private static readonly NAME: string = "allMotionRectangles_";
-        
-        
 public constructor (imageComparisonResult: ImageComparisonResult){
             super(NAME, imageComparisonResult);
                     var imageComparisonResult = imageComparisonResult
@@ -77,14 +75,10 @@ createMotionRectangles(imageComparisonResult);
 var imageComparisonInfo = imageComparisonInfo
 
     var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -93,14 +87,10 @@ var imageComparisonInfo = imageComparisonInfo
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
-        
-        
+    var pixelDelta: PixelDelta =  as PixelDeltavector.get(index);;
 ;
     
 addPixelDeltaToAMotionRectangle(pixelDelta);
@@ -116,14 +106,10 @@ addPixelDeltaToAMotionRectangle(pixelDelta);
 var pixelDelta = pixelDelta
 
     var vector: Vector = this.getVector()!;
-        
-        
 ;
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -132,14 +118,10 @@ var pixelDelta = pixelDelta
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
-        
-        
+    var motionRectangle: MotionRectangle =  as MotionRectanglevector.get(index);;
 ;
     
 
@@ -148,14 +130,10 @@ index < size; index++)
                                     {
                                     
     var newWidth: number = pixelDelta!.getPoint()!.getX() -motionRectangle!.getRectangle()!.x;
-        
-        
 ;
     
 
     var newHeight: number = pixelDelta!.getPoint()!.getY() -motionRectangle!.getRectangle()!.y;
-        
-        
 ;
     
 
@@ -208,14 +186,10 @@ var pixelDelta = pixelDelta
                                     {
                                     
     var newRectangle: Rectangle = new Rectangle(pixelDelta!.getPoint()!.getX(), pixelDelta!.getPoint()!.getY(), 1, 1);
-        
-        
 ;
     
 
     var motionRectangle: MotionRectangle = new MotionRectangle(newRectangle);
-        
-        
 ;
     
 motionRectangle!.getPixelDeltaVector()!.add(pixelDelta);
@@ -235,8 +209,6 @@ var motionRectangle = motionRectangle
 var pixelDelta = pixelDelta
 
     var isPixelLeftOfTheRectangle: boolean = false;
-        
-        
 ;
     
 
@@ -246,7 +218,8 @@ var pixelDelta = pixelDelta
                                     
 
 
-                            throw new Error("PixelAboveTheRectangle")
+                            throw new Error("PixelAboveTheRectangle");
+                    
 
                                     }
                                 
@@ -288,26 +261,18 @@ var motionRectangle = motionRectangle
 var pixelDelta = pixelDelta
 
     var maxX: number = motionRectangle!.getRectangle()!.x +motionRectangle!.getRectangle()!.width;
-        
-        
 ;
     
 
     var maxY: number = motionRectangle!.getRectangle()!.y +motionRectangle!.getRectangle()!.height;
-        
-        
 ;
     
 
     var horizontalDistance: number = pixelDelta!.getPoint()!.getX() -maxX;
-        
-        
 ;
     
 
     var verticalDistance: number = pixelDelta!.getPoint()!.getY() -maxY;
-        
-        
 ;
     
 

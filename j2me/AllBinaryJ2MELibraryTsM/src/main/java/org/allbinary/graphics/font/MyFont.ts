@@ -52,8 +52,6 @@ export class MyFont
         
 
     private static readonly instance: MyFont = new MyFont();
-        
-        
 
     public static getInstance(): MyFont{
 
@@ -66,16 +64,10 @@ export class MyFont
 
 
     private readonly defaultFont: Font = Font.getDefaultFont()!;
-        
-        
 
     public DEFAULT_CHAR_HEIGHT: number = defaultFont!.getHeight()!;
-        
-        
 
     private DEFAULT_CHAR_WIDTH: number = defaultFont!.charWidth('C')!;
-        
-        
 private constructor (){
 
             super();
@@ -90,7 +82,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 }
 
 
-    public charWidth(): number{
+    public defaultCharWidth(): number{
 
 
 
@@ -100,7 +92,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 }
 
 
-    public stringWidth(size: number): number{
+    public defaultStringWidth(size: number): number{
     //var size = size
 
 
@@ -170,8 +162,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 

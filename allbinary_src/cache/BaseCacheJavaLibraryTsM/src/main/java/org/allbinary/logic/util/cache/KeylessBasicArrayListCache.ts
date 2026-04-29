@@ -55,12 +55,8 @@ export class KeylessBasicArrayListCache extends IndexedBasicArrayListCache {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -89,9 +85,7 @@ public constructor (size: number){
                                     }
                                 
 
-    var list: BasicArrayList = this.get(this.index++); as BasicArrayList;
-        
-        
+    var list: BasicArrayList =  as BasicArrayListthis.get(this.index++);;
 ;
     
 
@@ -130,11 +124,9 @@ super.clear();
 
                         for (
     var index: number = this.list.size() -1;
-        
-        
 index >= 0; index--)
         {
-basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
+basicArrayList= ( as BasicArrayListthis.list.objectArray[index]!);
     
 basicArrayList!.clear();
     
@@ -146,8 +138,6 @@ basicArrayList!.clear();
     public log(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("S: ");
@@ -156,8 +146,6 @@ stringBuffer!.appendint(this.list.size());
     
 
     var S_LABEL: string = " s: ";
-        
-        
 ;
     
 
@@ -170,13 +158,11 @@ stringBuffer!.appendint(this.list.size());
 
                         for (
     var index: number = this.list.size() -1;
-        
-        
 index >= 0; index--)
         {
 stringBuffer!.append(S_LABEL);
     
-basicArrayList= (this.list.objectArray[index]! as BasicArrayList);
+basicArrayList= ( as BasicArrayListthis.list.objectArray[index]!);
     
 stringBuffer!.appendint(basicArrayList!.size());
     

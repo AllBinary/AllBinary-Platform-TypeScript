@@ -49,7 +49,7 @@ export interface HighScoresFactoryInterface {
 
     fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener)
 
-    fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean)
+    fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean)
 
     createHighScoresHelper(): HighScoresHelperBase
 

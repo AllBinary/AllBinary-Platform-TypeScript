@@ -57,8 +57,6 @@ export class NoGameNotificationHudSingleton
         
 
     private static readonly instance: NoGameNotificationHudSingleton = new NoGameNotificationHudSingleton();
-        
-        
 
     public static getInstance(): NoGameNotificationHudSingleton{
 
@@ -71,12 +69,8 @@ export class NoGameNotificationHudSingleton
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private gameNotificationHud: GameNotificationHud = GameNotificationHud.NULL_GAME_NOTIFICATION;
-        
-        
 private constructor (){
 
             super();
@@ -84,8 +78,6 @@ private constructor (){
         try {
             
     var basicHudFactory: BasicHudFactory = BasicHudFactory.getInstance()!;
-        
-        
 ;
     
 this.gameNotificationHud= new GameNotificationHud(basicHudFactory!.TOPCENTER, basicHudFactory!.HORIZONTAL, 14, 40, 2, BasicColorFactory.getInstance()!.RED);
@@ -96,8 +88,6 @@ this.gameNotificationHud= new GameNotificationHud(basicHudFactory!.TOPCENTER, ba
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);

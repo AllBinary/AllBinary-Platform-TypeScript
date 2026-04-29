@@ -63,22 +63,14 @@ export class CompositeGroup
         
 
     private static readonly ADDING_LABEL: string = "Adding: ";
-        
-        
 
     private static readonly TO_LABEL: string = " to: ";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly groupInterface: Group
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 public constructor (groupInterface: Group){
 
             super();
@@ -98,14 +90,10 @@ this.list.clear();
     //var groupInterface = groupInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(ADDING_LABEL);

@@ -45,8 +45,6 @@ export class ItemPaintableFactory extends ItemPaintable {
         
 
     private static readonly instance: ItemPaintableFactory = new ItemPaintableFactory();
-        
-        
 
     public static getInstance(): ItemPaintableFactory{
 
@@ -60,8 +58,8 @@ export class ItemPaintableFactory extends ItemPaintable {
 
                 //@Throws(Error::class)
             
-    public getInstance(paintableForm: PaintableForm): ItemPaintable{
-var paintableForm = paintableForm
+    public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
+    //var paintableForm = paintableForm
 
 
 

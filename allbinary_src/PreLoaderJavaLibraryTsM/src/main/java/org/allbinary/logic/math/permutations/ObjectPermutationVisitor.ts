@@ -48,8 +48,6 @@ this.data= data;
 
 
     private stringBuilder: StringBuilder = new StringBuilder();
-        
-        
 
     public visit(anyType: any = {}): any{
 var anyType = anyType
@@ -70,8 +68,6 @@ this.print(this.data, stringBuilder);
 var data = data
 
     var stringBuilder: StringBuilder = new StringBuilder();
-        
-        
 ;
     
 this.print(data, stringBuilder);
@@ -84,15 +80,11 @@ var data = data
 var stringBuilder = stringBuilder
 
     var tsUtil: TsUtil = TsUtil.getInstance()!;
-        
-        
 ;
     
 
     var size: number = data.length
                 ;
-        
-        
 ;
     
 
@@ -101,8 +93,6 @@ var stringBuilder = stringBuilder
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 stringBuilder!.append(tsUtil!.hashCode(data[i]!));

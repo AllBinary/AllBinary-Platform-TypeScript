@@ -48,9 +48,9 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
         
 import { JDialog } from "./JDialog.js";
 
-import { Frame } from "./Frame.js";
-
 import { FileJDialogListenerInterface } from "./FileJDialogListenerInterface.js";
+
+import { Frame } from "./Frame.js";
 
 import { Short } from "./Short.js";
 
@@ -63,7 +63,7 @@ export class FileJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new object: ARunnable()
+java.awt.EventQueue.invokeLater(new ARunnable()
                                 {
                                 
     public run(){
@@ -79,8 +79,6 @@ new FileJDialog(new javax.swing.JFrame(), true).
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private finishedListenerInterface: FileJDialogListenerInterface
 public constructor (){
@@ -122,7 +120,7 @@ this.jFileChooser1= new javax.swing.JFileChooser();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-jFileChooser1!.addActionListener(new object: java.awt.event.ActionListener()
+jFileChooser1!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -136,8 +134,6 @@ jFileChooser1ActionPerformed(evt);
     
 
     var layout: org.jdesktop.layout.GroupLayout = new org.jdesktop.layout.GroupLayout(getContentPane());
-        
-        
 ;
     
 getContentPane()!.setLayout(layout);
@@ -157,8 +153,6 @@ this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "A
     
 
     var files: File[] = this.getJFileChooser1()!.getSelectedFiles()!;
-        
-        
 ;
     
 

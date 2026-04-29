@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MediaData } from "./MediaData.js";
+
 export class MediaDataFactory
             extends Object
          {
         
 
     private static readonly instance: MediaDataFactory = new MediaDataFactory();
-        
-        
 
     public static getInstance(): MediaDataFactory{
 
@@ -57,84 +57,44 @@ export class MediaDataFactory
 
 
     public readonly AVI: MediaData = new MediaData("avi");
-        
-        
 
     public readonly BMP: MediaData = new MediaData("bmp");
-        
-        
 
     public readonly CEL: MediaData = new MediaData("cel");
-        
-        
 
     public readonly FITS: MediaData = new MediaData("fits");
-        
-        
 
     public readonly FLI: MediaData = new MediaData("fli");
-        
-        
 
     public readonly GBR: MediaData = new MediaData("gbr");
-        
-        
 
     public readonly GIF: MediaData = new MediaData("gif");
-        
-        
 
     public readonly GIH: MediaData = new MediaData("gih");
-        
-        
 
     public readonly JPG: MediaData = new MediaData("jpg");
-        
-        
 
     public readonly PIX: MediaData = new MediaData("pix");
-        
-        
 
     public readonly PNG: MediaData = new MediaData("png");
-        
-        
 
     public readonly PNM: MediaData = new MediaData("pnm");
-        
-        
 
     public readonly PSD: MediaData = new MediaData("psd");
-        
-        
 
     public readonly PSP: MediaData = new MediaData("psp");
-        
-        
 
     public readonly PS: MediaData = new MediaData("ps");
-        
-        
 
     public readonly SGI: MediaData = new MediaData("SGI");
-        
-        
 
     public readonly SWF: MediaData = new MediaData("swf");
-        
-        
 
     public readonly TGA: MediaData = new MediaData("tga");
-        
-        
 
     public readonly TIFF: MediaData = new MediaData("tiff");
-        
-        
 
     public readonly WMF: MediaData = new MediaData("wmf");
-        
-        
 
 }
                 

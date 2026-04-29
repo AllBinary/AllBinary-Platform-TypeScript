@@ -86,8 +86,6 @@ export class OverrideObjectConfigRootContextView extends HttpStoreComponentView 
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -122,15 +120,11 @@ public constructor (transformInfoInterface: Object){
                                     }
                                 
 
-    var rootTransformInfoInterface: TransformInfoInterface = new TransformInfoHttp(this.getTransformInfoInterface() as TransformInfoHttp) as TransformInfoInterface;
-        
-        
+    var rootTransformInfoInterface: TransformInfoInterface =  as TransformInfoInterfacenew TransformInfoHttp( as TransformInfoHttpthis.getTransformInfoInterface());
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.getTransformInfoInterface()!.getStoreName());
@@ -139,8 +133,6 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 
     var nameStart: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -165,14 +157,13 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                             
 
 
-                            throw new Error("Override Currently Not Supported")
+                            throw new Error("Override Currently Not Supported");
+                    
 
                         }
                             
 
     var overrideObjectConfigDocument: Document = this.getTransformInfoInterface()!.getObjectConfigInterface()!.toXmlDoc()!;
-        
-        
 ;
     
 
@@ -186,32 +177,22 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                                 
 
     var transformFactory: TransformFactory = TransformFactory.getInstance()!;
-        
-        
 ;
     
 
     var rootComponentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, rootTransformInfoInterface!.getName(), rootTransformInfoInterface)!;
-        
-        
 ;
     
 
-    var transformTemplateInterface: TransformTemplateInterface = rootComponentInterface as TransformTemplateInterface;
-        
-        
+    var transformTemplateInterface: TransformTemplateInterface =  as TransformTemplateInterfacerootComponentInterface;
 ;
     
 
     var componentInterface: TransformInterface = transformFactory!.getInstance(this.abeClientInformation, transformTemplateInterface!.getName(), rootComponentInterface!.getTransformInfoInterface())!;
-        
-        
 ;
     
 
     var transformInfoObjectConfigInterface: TransformInfoObjectConfigInterface = TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, componentInterface!.getTransformInfoInterface(), overrideObjectConfigDocument)!;
-        
-        
 ;
     
 componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transformInfoObjectConfigInterface);
@@ -247,7 +228,8 @@ componentInterface!.getTransformInfoInterface()!.setObjectConfigInterface(transf
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

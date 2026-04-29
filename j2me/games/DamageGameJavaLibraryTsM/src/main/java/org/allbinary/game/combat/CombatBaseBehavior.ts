@@ -49,8 +49,6 @@ export class CombatBaseBehavior
         
 
     public static readonly NULL_COMBAT_BEHAVIOR: CombatBaseBehavior = new CombatBaseBehavior(DamageableBaseBehavior.getInstance(), DestroyableBaseBehavior.getInstance());
-        
-        
 
     private readonly damageableBaseBehavior: DamageableBaseBehavior
 

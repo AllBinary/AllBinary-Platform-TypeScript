@@ -73,16 +73,10 @@ export class Sounds
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly soundStrings: SoundStrings = SoundStrings.getInstance()!;
-        
-        
 
     private readonly soundsFactoryInterface: SoundsFactoryInterface
 public constructor (soundsFactoryInterface: SoundsFactoryInterface){
@@ -101,32 +95,24 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 this.soundsFactoryInterface!.init();
     
 
     var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
-        
-        
 ;
     
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 ;
     
 
-    var indexInteger: Integer
+    var indexInteger: number
 ;
     
 
@@ -135,8 +121,6 @@ this.soundsFactoryInterface!.init();
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -145,14 +129,10 @@ this.soundsFactoryInterface!.init();
 
                         for (
     var i: number = 0;
-        
-        
 i < soundInterfaceArray!.length; i++)
         {
 
     var soundInterface: Sound = soundInterfaceArray[i]!;
-        
-        
 ;
     
 
@@ -161,7 +141,7 @@ i < soundInterfaceArray!.length; i++)
                                 )
                         
                                     {
-                                    indexInteger= smallIntegerSingletonFactory!.getInstance(i);
+                                    indexInteger= smallIntegerSingletonFactory!.getAt(i);
     
 indexString= indexInteger!.toString();
     
@@ -179,7 +159,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
     
 soundInterface!.init();
     
-progressCanvas!.addPortion(100, new StringMaker().
+progressCanvas!.addNormalPortion(100, new StringMaker().
                             append(this.soundStrings!.INIT_SOUND)!.append(indexString)!.toString());
     
 
@@ -201,14 +181,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL)
     
 
     var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
-        
-        
 ;
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -221,8 +197,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL)
 
                         for (
     var index: number = 0;
-        
-        
 index < soundInterfaceArray!.length; index++)
         {
 
@@ -261,14 +235,10 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL
     
 
     var soundInterfaceArray: Sound[] = this.soundsFactoryInterface!.getSoundInterfaceArray()!;
-        
-        
 ;
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -281,8 +251,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL
 
                         for (
     var index: number = 0;
-        
-        
 index < soundInterfaceArray!.length; index++)
         {
 

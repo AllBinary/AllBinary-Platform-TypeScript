@@ -67,6 +67,8 @@ import { JDialog } from "./JDialog.js";
 
 import { Dimension } from "./Dimension.js";
 
+import { JTextField } from "./JTextField.js";
+
 import { WindowEvent } from "./WindowEvent.js";
 
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
@@ -98,7 +100,7 @@ var args = args
 
     private nameJTextField: JTextField
 public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string){
-            super(parent as java.awt.Frame, modal);
+            super( as java.awt.Frameparent, modal);
                     var parent = parent
 var modal = modal
 var dimension = dimension
@@ -123,11 +125,9 @@ this.dimension= dimension;
     
 
     var submitButton: JButton = new JButton("Ok");
-        
-        
 ;
     
-submitButton!.addActionListener(new object: ActionListener()
+submitButton!.addActionListener(new ActionListener()
                                 {
                                 
     public actionPerformed(evt: ActionEvent){
@@ -178,7 +178,8 @@ this.show();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -190,21 +191,15 @@ this.show();
 
         try {
             
-    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());
-        
-        
+    var canvasWidth: number = this.xSizeJTextField!.getText();
 ;
     
 
-    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());
-        
-        
+    var canvasHeight: number = this.ySizeJTextField!.getText();
 ;
     
 
     var newName: string = this.nameJTextField!.getText()!;
-        
-        
 ;
     
 
@@ -212,16 +207,15 @@ this.show();
                                     null
                                 )
                         
-                                    throw new GraphicsException("No Name", this, "disposeNewDialog")
+                                    throw new GraphicsException("No Name", this, "disposeNewDialog");
+                                
 
     var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.toInt(), canvasHeight!.toInt());
-        
-        
 ;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));
     
-this.parent.add(workAreaJPanel as WorkAreaJPanelInterface);
+this.parent.add( as WorkAreaJPanelInterfaceworkAreaJPanel);
     
 this.dispose();
     
@@ -232,14 +226,15 @@ this.dispose();
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     initComponents(){
-addWindowListener(new object: java.awt.event.WindowAdapter()
+addWindowListener(new java.awt.event.WindowAdapter()
                                 {
                                 
     public windowClosing(evt: java.awt.event.WindowEvent){

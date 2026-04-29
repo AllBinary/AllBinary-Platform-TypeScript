@@ -43,8 +43,6 @@ export class FontFamilyData
         
 
     private static readonly instance: FontFamilyData = new FontFamilyData();
-        
-        
 
     public static getInstance(): FontFamilyData{
 
@@ -62,12 +60,8 @@ private constructor (){
 
 
     public readonly NAME: string = "FONT_FAMILY_NAME";
-        
-        
 
     public readonly VALUE: string = "font-family";
-        
-        
 
 }
                 

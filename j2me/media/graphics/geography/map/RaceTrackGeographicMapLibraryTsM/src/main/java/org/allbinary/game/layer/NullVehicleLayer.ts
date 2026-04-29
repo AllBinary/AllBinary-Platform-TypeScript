@@ -60,6 +60,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { VehicleLayerInterface } from "./VehicleLayerInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { VehicleProperties } from "./VehicleProperties.js";
 
 export class NullVehicleLayer
@@ -68,14 +70,13 @@ export class NullVehicleLayer
         
 
     public static readonly NULL_VEHICLE_LAYER: NullVehicleLayer = new NullVehicleLayer();
-        
-        
 
     public getName(): string{
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -83,7 +84,8 @@ export class NullVehicleLayer
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -94,7 +96,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -102,7 +105,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -110,7 +114,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -118,7 +123,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -126,7 +132,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -134,7 +141,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -142,7 +150,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -150,7 +159,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -158,7 +168,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -166,7 +177,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -174,7 +186,8 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -182,18 +195,20 @@ var z = z
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
-    public move(dx: number, dy: number, dz: number){
+    public moveDXYZ(dx: number, dy: number, dz: number){
 var dx = dx
 var dy = dy
 var dz = dz
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -202,7 +217,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -210,7 +226,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -218,7 +235,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -226,7 +244,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -234,7 +253,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -242,7 +262,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -250,7 +271,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -258,7 +280,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -266,7 +289,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -274,7 +298,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -282,7 +307,8 @@ var visible = visible
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -291,7 +317,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -299,7 +326,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -307,7 +335,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -315,7 +344,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -325,7 +355,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -333,7 +364,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -341,7 +373,8 @@ var animationInterface = animationInterface
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -350,7 +383,8 @@ var geographicMapCellHistory = geographicMapCellHistory
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

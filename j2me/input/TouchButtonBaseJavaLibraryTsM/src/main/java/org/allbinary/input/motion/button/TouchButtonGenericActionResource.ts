@@ -43,8 +43,6 @@ export class TouchButtonGenericActionResource extends TouchButtonResource {
         
 
     private static readonly instance: TouchButtonResource = new TouchButtonGenericActionResource();
-        
-        
 
     public static getInstance(): TouchButtonResource{
 

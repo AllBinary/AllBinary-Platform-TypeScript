@@ -48,8 +48,6 @@ export class BasicPaymentTypeUtil
         
 
     private static readonly instance: BasicPaymentTypeUtil = new BasicPaymentTypeUtil();
-        
-        
 
                 init{
 }
@@ -70,8 +68,6 @@ private constructor (){
 
 
     private paymentTypeVector: Vector = new Vector();
-        
-        
 
     public add(paymentType: BasicPaymentType){
 var paymentType = paymentType
@@ -86,8 +82,6 @@ this.paymentTypeVector!.add(paymentType);
 var paymentTypeString = paymentTypeString
 
     var size: number = this.paymentTypeVector!.length!;
-        
-        
 ;
     
 
@@ -96,14 +90,10 @@ var paymentTypeString = paymentTypeString
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentTypeVector!.get(i);;
 ;
     
 
@@ -124,7 +114,8 @@ i < size; i++)
 
 
 
-                            throw new Error("Unknown PaymentType: " +paymentTypeString)
+                            throw new Error("Unknown PaymentType: " +paymentTypeString);
+                    
 }
 
 
@@ -143,14 +134,10 @@ var paymentType = paymentType
 var a_PaymentTypeVector = a_PaymentTypeVector
 
     var diff: Vector = new Vector();
-        
-        
 ;
     
 
     var size: number = this.paymentTypeVector!.length!;
-        
-        
 ;
     
 
@@ -159,14 +146,10 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 
                         for (
     var i: number = 0;
-        
-        
 i < size; i++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentTypeVector!.get(i); as BasicPaymentType;
-        
-        
+    var paymentType: BasicPaymentType =  as BasicPaymentTypethis.paymentTypeVector!.get(i);;
 ;
     
 

@@ -57,8 +57,6 @@ export class CategoryLoaderFactory
 var categoryFactoryInterface = categoryFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -75,8 +73,6 @@ var categoryFactoryInterface = categoryFactoryInterface
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 

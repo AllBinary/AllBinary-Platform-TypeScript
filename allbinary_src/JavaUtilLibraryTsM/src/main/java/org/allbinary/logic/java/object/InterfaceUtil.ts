@@ -43,8 +43,6 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Class } from "./Class.js";
-
 export class InterfaceUtil
             extends Object
          {
@@ -55,14 +53,10 @@ export class InterfaceUtil
     //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var interfaces: Function[] = myClass!.getInterfaces()!;
-        
-        
 ;
     
 stringBuffer!.append(lineBreak);
@@ -77,8 +71,6 @@ stringBuffer!.append(lineBreak);
 
                         for (
     var index: number = 0;
-        
-        
 index < interfaces.length; index++)
         {
 stringBuffer!.append("Interface: ");
@@ -115,8 +107,6 @@ stringBuffer!.append(lineBreak);
 
                         for (
     var index: number = 0;
-        
-        
 index < interfaces.length; index++)
         {
 
@@ -151,8 +141,6 @@ var clazz = clazz
 var anyType = anyType
 
     var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-        
-        
 ;
     
 
@@ -161,8 +149,6 @@ var anyType = anyType
 
                         for (
     var index: number = 0;
-        
-        
 index < classes.length; index++)
         {
 
@@ -189,8 +175,6 @@ var className = className
 var anyType = anyType
 
     var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-        
-        
 ;
     
 
@@ -199,8 +183,6 @@ var anyType = anyType
 
                         for (
     var index: number = 0;
-        
-        
 index < classes.length; index++)
         {
 
@@ -232,14 +214,10 @@ var clazz = clazz
 var anyType = anyType
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
-        
-        
 ;
     
 stringBuffer!.append("isImplementedView: \n");
@@ -250,8 +228,6 @@ stringBuffer!.append("isImplementedView: \n");
 
                         for (
     var index: number = 0;
-        
-        
 index < classes.length; index++)
         {
 stringBuffer!.append(clazz.toString()!);

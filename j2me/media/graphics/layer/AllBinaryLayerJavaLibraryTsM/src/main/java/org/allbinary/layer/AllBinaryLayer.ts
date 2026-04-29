@@ -92,16 +92,10 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
         
 
     public static readonly NULL_ALLBINARY_LAYER: AllBinaryLayer = new AllBinaryLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
-        
-        
 
     private static readonly TYPE: string = "Type: ";
-        
-        
 
     readonly viewPositionEvent: ViewPositionEvent = new ViewPositionEvent(this);
-        
-        
 
     private halfWidth: number= 0
 
@@ -110,8 +104,6 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
     private readonly name: string
 
     private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
-        
-        
 public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
             super(rectangle.getWidth(), rectangle.getHeight());
                         //var name = name
@@ -147,8 +139,6 @@ this.name= localName;
     
 
     var point: GPoint = rectangle.getPoint()!;
-        
-        
 ;
     
 this.setPosition(point.getX(), point.getY(), point.getZ());
@@ -201,7 +191,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (this.getZP() +this.getDepth());
+                        return Math.round(this.getZP() +this.getDepth());
     
 }
 
@@ -255,7 +245,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getDepth(); /2;
+                        return Math.roundthis.getDepth(); /2;
     
 }
 
@@ -357,24 +347,18 @@ this.viewPosition= viewPosition;
 }
 
 
-    public toString(stringBuffer: StringMaker){
+    public toStringAppend(stringBuffer: StringMaker){
     //var stringBuffer = stringBuffer
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 ;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append(this.getName());
@@ -421,11 +405,9 @@ stringBuffer!.appendint(this.getHeight());
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
-this.toString(stringBuffer);
+this.toStringAppend(stringBuffer);
     
 
 

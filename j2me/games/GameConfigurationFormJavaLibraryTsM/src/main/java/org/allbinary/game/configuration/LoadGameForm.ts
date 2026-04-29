@@ -102,8 +102,6 @@ this.initCommands(commandListener);
 var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
-        
-        
 ;
     
 this.removeAllCommands();
@@ -124,8 +122,6 @@ this.setCommandListener(cmdListener);
     public update(){
 
     var list: BasicArrayList = GamePersistanceSingleton.getInstance()!.getIds()!;
-        
-        
 ;
     
 this.deleteAll();
@@ -160,8 +156,6 @@ var name = name
 var option = option
 
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
-        
-        
 ;
     
 
@@ -184,20 +178,14 @@ var name = name
 var option = option
 
     var METHOD_NAME: string = "getChoiceGroup";
-        
-        
 ;
     
 
     var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
-        
-        
 ;
     
 
     var size: number = list.size()!;
-        
-        
 ;
     
 
@@ -206,14 +194,10 @@ var option = option
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var anyType: any = list.objectArray[index]!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -238,9 +222,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
 ;
     
 
@@ -271,15 +253,11 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
-        
-        
+    var choiceGroup: ChoiceGroup =  as ChoiceGroupthis.get(0);;
 ;
     
 
     var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.toInt()!;
-        
-        
 ;
     
 

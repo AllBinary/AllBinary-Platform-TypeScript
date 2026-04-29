@@ -61,8 +61,6 @@ export class AbPathUtilOld
         
 
     private static readonly instance: AbPathUtilOld = new AbPathUtilOld();
-        
-        
 
     public static getInstance(): AbPathUtilOld{
 
@@ -75,20 +73,12 @@ export class AbPathUtilOld
 
 
     private static readonly MIN: number = 4;
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abPathData: AbPathData = AbPathData.getInstance()!;
-        
-        
 
     private readonly filePathData: FilePathData = FilePathData.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -132,20 +122,17 @@ var filePath = filePath
                                     
 
 
-                            throw new Error("Could not be a file path since its less that 4 characters")
+                            throw new Error("Could not be a file path since its less that 4 characters");
+                    
 
                                     }
                                 
 
     var beginIndex: number = filePath!.length -MIN;
-        
-        
 ;
     
 
     var extension: string = filePath!.substring(beginIndex +1)!;
-        
-        
 ;
     
 
@@ -203,20 +190,17 @@ var filePath = filePath
                                     
 
 
-                            throw new Error("Could not be a file path since its less that 4 characters")
+                            throw new Error("Could not be a file path since its less that 4 characters");
+                    
 
                                     }
                                 
 
     var endIndex: number = filePath!.length -MIN;
-        
-        
 ;
     
 
     var pathWithoutExtension: string = filePath!.substring(0, endIndex)!;
-        
-        
 ;
     
 
@@ -415,8 +399,6 @@ var path = path
 var categoryPath = categoryPath
 
     var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -442,8 +424,6 @@ var categoryPath = categoryPath
                                     {
                                     
     var categoryName: string = categoryPath!.substring(0, endIndex)!;
-        
-        
 ;
     
 
@@ -458,8 +438,6 @@ var categoryPath = categoryPath
                         else {
                             
     var categoryName: string = categoryPath!.substring(endIndex +1)!;
-        
-        
 ;
     
 
@@ -481,8 +459,6 @@ var categoryPath = categoryPath
 var categoryPath = categoryPath
 
     var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
-        
-        
 ;
     
 
@@ -523,8 +499,6 @@ var categoryPath = categoryPath
                         else {
                             
     var categoryName: string = categoryPath!.substring(0, endIndex)!;
-        
-        
 ;
     
 

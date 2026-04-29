@@ -45,8 +45,6 @@ export class ABRunnable
         
 
     private running: boolean = false;
-        
-        
 
     public setThread(thread: Thread){
 var thread = thread

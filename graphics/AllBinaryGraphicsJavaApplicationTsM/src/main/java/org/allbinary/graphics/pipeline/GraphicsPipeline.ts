@@ -71,14 +71,10 @@ public constructor (points: BasicArrayList){
 var aTheta = aTheta
 
     var newVector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
     var size: number = this.pointBasicArrayList!.size()!;
-        
-        
 ;
     
 
@@ -87,32 +83,22 @@ var aTheta = aTheta
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index); as GPoint;
-        
-        
+    var secondPoint: GPoint =  as GPointpointBasicArrayList!.get(index);;
 ;
     
 
     var secondX: number = (secondPoint!.getX() *Math.cos(aTheta)) -(secondPoint!.getY() *Math.sin(aTheta));
-        
-        
 ;
     
 
     var secondY: number = (secondPoint!.getX() *Math.sin(aTheta)) +(secondPoint!.getY() *Math.cos(aTheta));
-        
-        
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.getInstance0((secondX), (secondY))!;
-        
-        
+    var point: GPoint = PointFactory.getInstance()!.createXY((Math.roundsecondX), (Math.roundsecondY))!;
 ;
     
 newVector!.add(point);

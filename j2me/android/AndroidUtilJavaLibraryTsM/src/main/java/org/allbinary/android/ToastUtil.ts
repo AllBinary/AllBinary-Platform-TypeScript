@@ -6,6 +6,8 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Runnable } from "../../../java/lang/Runnable.js";
+        
 import { Context } from "../../../android/content/Context.js";
 
     
@@ -49,8 +51,6 @@ export class ToastUtil
             
 
     private static readonly instance: ToastUtil = new ToastUtil();
-        
-        
 
     public static getInstance(): ToastUtil{
 
@@ -63,8 +63,6 @@ export class ToastUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public makeToast(view: View, context: Context, message: string, time: number){
     //var view = view
@@ -93,8 +91,6 @@ this.string= string;
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
@@ -107,8 +103,6 @@ this.string= string;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);

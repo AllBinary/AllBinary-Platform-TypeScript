@@ -63,7 +63,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
+this.getFormData( as HttpServletRequestthis.getPageContext()!.getRequest());
     
 }
 
@@ -72,14 +72,10 @@ this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
 var request = request
 
     var storeName: string = this.getWeblisketSession()!.getStoreName()!;
-        
-        
 ;
     
 
     var gatewayName: string = request.getParameter(PaymentGatewayData.NAME.toString())!;
-        
-        
 ;
     
 this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gatewayName));

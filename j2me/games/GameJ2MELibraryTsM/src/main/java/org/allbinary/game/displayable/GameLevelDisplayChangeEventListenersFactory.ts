@@ -58,8 +58,6 @@ export class GameLevelDisplayChangeEventListenersFactory
         
 
     private static readonly instance: GameLevelDisplayChangeEventListenersFactory = new GameLevelDisplayChangeEventListenersFactory();
-        
-        
 
     public static getInstance(): GameLevelDisplayChangeEventListenersFactory{
 
@@ -72,8 +70,6 @@ export class GameLevelDisplayChangeEventListenersFactory
 
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public add(displayChangeEventListener: DisplayChangeEventListener){
 var displayChangeEventListener = displayChangeEventListener
@@ -87,8 +83,6 @@ DisplayChangeEventHandler.getInstance()!.addListener(displayChangeEventListener)
     public clear(){
 
     var displayChangeEventHandler: BasicEventHandler = DisplayChangeEventHandler.getInstance()!;
-        
-        
 ;
     
 
@@ -101,11 +95,9 @@ DisplayChangeEventHandler.getInstance()!.addListener(displayChangeEventListener)
 
                         for (
     var index: number = this.list.size()!;
-        
-        
 --index >= 0; )
         {
-displayChangeEventListener= this.list.objectArray[index]! as DisplayChangeEventListener;
+displayChangeEventListener=  as DisplayChangeEventListenerthis.list.objectArray[index]!;
     
 displayChangeEventHandler!.removeListener(displayChangeEventListener);
     

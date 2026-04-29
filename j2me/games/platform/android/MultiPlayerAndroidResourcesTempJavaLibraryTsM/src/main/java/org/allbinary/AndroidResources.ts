@@ -32,8 +32,6 @@ export class AndroidResources
         
 
     private static readonly instance: AndroidResources = new AndroidResources();
-        
-        
 
     public static getInstance(): AndroidResources{
 
@@ -46,24 +44,14 @@ export class AndroidResources
 
 
     public drawable: R.Companion.drawable = new R.Companion.drawable();
-        
-        
 
     public id: R.Companion.id = new R.Companion.id();
-        
-        
 
     public layout: R.Companion.layout = new R.Companion.layout();
-        
-        
 
     public raw: R.Companion.raw = new R.Companion.raw();
-        
-        
 
     public string: R.Companion.string = new R.Companion.string();
-        
-        
 
 }
                 

@@ -18,9 +18,6 @@
 
 
 
-import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
-
-    
 import { AllBinaryGameCanvasInterface } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js";
 
     
@@ -48,11 +45,11 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
         
 import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
 
+import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
-
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class GeographicMapCellPositionTracking
             extends Object
@@ -60,20 +57,12 @@ export class GeographicMapCellPositionTracking
         
 
     private currentGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-        
-        
 
     private previousGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-        
-        
 
     private newGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-        
-        
 
     private currentCellType: GeographicMapCellType = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE;
-        
-        
 public constructor (){
 
             super();
@@ -86,8 +75,6 @@ public constructor (){
     //var geographicMap = geographicMap
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;
-        
-        
 ;
     
 
@@ -118,18 +105,14 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager(); as GeographicMapCompositeInterface;
-        
-        
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface =  as GeographicMapCompositeInterfacegameCanvasInterface!.getLayerManager();;
 ;
     
 
     var geographicMapInterface: BasicGeographicMap = geographicMapCompositeInterface!.getGeographicMapInterface()[0]!;
-        
-        
 ;
     
-this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAt(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight());
+this.newGeographicMapCellPosition= geographicMapInterface!.getCellPositionAtXY(layer.getXP() +layer.getHalfWidth(), layer.getYP() +layer.getHalfHeight());
     
 
                         if(this.newGeographicMapCellPosition != this.currentGeographicMapCellPosition)

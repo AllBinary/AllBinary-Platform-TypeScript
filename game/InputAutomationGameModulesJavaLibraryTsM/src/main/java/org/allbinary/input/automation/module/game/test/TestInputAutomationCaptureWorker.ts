@@ -80,26 +80,16 @@ export class TestInputAutomationCaptureWorker extends AbstractInputAutomationWor
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private genericProfileActions: GenericProfileActions
 
     private readonly MESSAGE: string = "GenericInputAutomationCaptureWorker";
-        
-        
 
     private readonly PROCESS_DATA_WORKER_RESULTS: string = "processDataWorkerResults";
-        
-        
 
     private readonly IMAGE_AVAILABLE_SO_PROCESSING: string = "Image Available so processing";
-        
-        
 
     private readonly IMAGE_NOT_AVAILABLE: string = "Image Not Available";
-        
-        
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfileActions: GenericProfileActions, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
             super(inputAutomationActionInterface);
                     var inputAutomationActionInterface = inputAutomationActionInterface
@@ -121,9 +111,7 @@ this.setGenericProfileActions(genericProfileActions);
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance(); as J2SECacheInterface;
-        
-        
+    var cacheInterface: J2SECacheInterface =  as J2SECacheInterfaceCapturedBufferedImagesCacheSingleton.getInstance();;
 ;
     
 
@@ -134,33 +122,23 @@ this.setGenericProfileActions(genericProfileActions);
     
 
     var anyType: any = cacheInterface!.keySet()!.toTypedArray()[0]!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = this.getGenericProfileActions()!.getHashMap()!;
-        
-        
+    var hashMap: HashMap = this.getGenericProfileActions()!.getHashMap()!;
 ;
     
 
     var set: Set = hashMap!.keys!;
-        
-        
 ;
     
 
     var actionNameArray: any[] = set.toArray()!;
-        
-        
 ;
     
 
     var size: number = actionNameArray!.length
                 ;
-        
-        
 ;
     
 
@@ -169,32 +147,22 @@ this.setGenericProfileActions(genericProfileActions);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as String;
-        
-        
+    var actionNameString: string =  as StringactionNameArray[index]!;
 ;
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object); as GenericProfileAction;
-        
-        
+    var genericProfileAction: GenericProfileAction =  as GenericProfileActionhashMap!.get(actionNameString as Object);;
 ;
     
 
     var genericProfileActionScript: GenericProfileActionScript = genericProfileAction!.getGenericProfileActionScript()!;
-        
-        
 ;
     
 
     var vector: Vector = genericProfileActionScript!.getProfileActionConditionInterfaceVector()!;
-        
-        
 ;
     
 }

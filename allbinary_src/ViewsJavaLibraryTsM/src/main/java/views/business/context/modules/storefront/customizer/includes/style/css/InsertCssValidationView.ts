@@ -70,8 +70,6 @@ export class InsertCssValidationView extends CssCustomizerView implements Valida
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -99,8 +97,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var isValid: Boolean = Boolean.TRUE;
-        
-        
 ;
     
 
@@ -116,7 +112,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.styleValidationInterface as DomNodeInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.styleValidationInterface);
     
 
                                     }
@@ -156,8 +152,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
@@ -238,7 +232,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -55,7 +55,7 @@ export interface TransformInfoHttpInterface extends TransformInfoInterface {
 
     public getPageContext(): PageContext
 
-    public getPropertiesHashMap(): HashMap<any, any>
+    public getPropertiesHashMap(): HashMap
 
 }
                 

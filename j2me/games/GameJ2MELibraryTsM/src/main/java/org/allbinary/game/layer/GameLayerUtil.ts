@@ -55,14 +55,10 @@ export class GameLayerUtil
 var layer = layer
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 ;
     
 
     var viewPosition: ViewPosition = layer.getViewPosition()!;
-        
-        
 ;
     
 

@@ -72,14 +72,14 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
         
 import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "./RaceTrackRoadsGeographicMapCellHistoryFactory.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class BasePathFindingInfoFactory
             extends Object
          {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -101,8 +101,6 @@ public constructor (){
             super();
         
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;
-        
-        
 ;
     
 this.startLineId= raceTrackGeographicMapCellTypeFactory!.getStartType();
@@ -119,28 +117,20 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
     //var cellPosition = cellPosition
 
     var row: number = cellPosition!.getRow()!;
-        
-        
 ;
     
 
     var column: number = cellPosition!.getColumn()!;
-        
-        
 ;
     
 
         try {
             
     var cellTypeId: number = mapArray[row]![column]!;
-        
-        
 ;
     
 
     var geographicCellType: number = geographicMapInterface!.getCellTypeFromMapCellTypeInt(cellTypeId)!;
-        
-        
 ;
     
 
@@ -176,18 +166,14 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                                 
 
     var raceTrackGeographicMapCellTypeFactory: GeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory()!;
-        
-        
 ;
     
 
     var geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
-        
-        
 ;
     
 
-                        if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellTypeFactory!.getInstance(geographicCellType)))
+                        if(raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellTypeFactory!.get(geographicCellType)))
                         
                                     {
                                     RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!.track(cellPosition);
@@ -205,8 +191,6 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
             {
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 logUtil!.put(new StringMaker().
@@ -215,7 +199,8 @@ logUtil!.put(new StringMaker().
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -246,6 +231,19 @@ pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstanc
     //var endGeographicMapCellPosition = endGeographicMapCellPosition
 pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition));
     
+}
+
+
+                //@Throws(Error::class)
+            
+    public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
+    //var geographicMapInterface = geographicMapInterface
+    //var graphArray = graphArray
+
+
+
+                            throw Error();
+                    
 }
 
 

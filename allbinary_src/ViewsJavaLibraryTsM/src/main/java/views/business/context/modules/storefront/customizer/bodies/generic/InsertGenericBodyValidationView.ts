@@ -79,8 +79,6 @@ export class InsertGenericBodyValidationView extends GenericBodyCustomizerView i
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
                     var transformInfoInterface = transformInfoInterface
@@ -89,10 +87,8 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var requestHashMap: HashMap<any, any> = new RequestParams(this.getPageContext()).
+    var requestHashMap: HashMap = new RequestParams(this.getPageContext()).
                             toHashMap()!;
-        
-        
 ;
     
 this.body= new GenericBodyValidation(requestHashMap);
@@ -126,15 +122,13 @@ this.body= new GenericBodyValidation(requestHashMap);
                                 
 
     var isValid: Boolean = this.body.isValid()!;
-        
-        
 ;
     
 
                         if(isValid == Boolean.TRUE)
                         
                                     {
-                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this.body as DomNodeInterface);
+                                    CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(),  as DomNodeInterfacethis.body);
     
 
                                     }
@@ -174,8 +168,6 @@ this.body= new GenericBodyValidation(requestHashMap);
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(this.body.validationInfo());
@@ -258,7 +250,8 @@ var document = document
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

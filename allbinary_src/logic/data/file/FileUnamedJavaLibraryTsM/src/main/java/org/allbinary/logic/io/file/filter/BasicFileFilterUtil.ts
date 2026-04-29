@@ -58,23 +58,19 @@ export class BasicFileFilterUtil
     //var extension = extension
 
     var vector: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 vector.add(extension);
     
 
     var includeFileExtensionsBooleanFileVisitor: IncludeFileExtensionsBooleanFileVisitor = new IncludeFileExtensionsBooleanFileVisitor(vector);
-        
-        
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new VisitorFileFilter(includeFileExtensionsBooleanFileVisitor) as FileFilter;
+                        return  as FileFilternew VisitorFileFilter(includeFileExtensionsBooleanFileVisitor);
     
 }
 

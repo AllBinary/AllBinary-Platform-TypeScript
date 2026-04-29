@@ -155,7 +155,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
                                     
 
 
-                            throw new Error("View not implemented")
+                            throw new Error("View not implemented");
+                    
 
                                     }
                                 
@@ -166,7 +167,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
                                     
 
 
-                            throw new Error("View not implemented")
+                            throw new Error("View not implemented");
+                    
 
                                     }
                                 
@@ -177,7 +179,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
                                     
 
 
-                            throw new Error("View not implemented")
+                            throw new Error("View not implemented");
+                    
 
                                     }
                                 
@@ -188,7 +191,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
                                     
 
 
-                            throw new Error("View not implemented")
+                            throw new Error("View not implemented");
+                    
 
                                     }
                                 
@@ -196,7 +200,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand())
+                            throw new Error("No Such View Command: " +this.getCommand());
+                    
 
                         }
                             
@@ -212,7 +217,8 @@ this.setObjectFile("views.admin.user.DeleteValidationUserView");
 
 
 
-                            throw new Error("Command Null")
+                            throw new Error("Command Null");
+                    
 
                 //: 
 } catch(e) 

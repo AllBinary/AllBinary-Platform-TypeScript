@@ -74,7 +74,7 @@ public constructor (maxGravityActionIndex: number){
 
                 //@Throws(Error::class)
             
-    public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
+    public getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellTypeArray = geographicMapCellTypeArray
     //var velocityProperties = velocityProperties
@@ -109,7 +109,7 @@ var y = y
 
                 //@Throws(Error::class)
             
-    public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPositionList: BasicArrayList, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
+    public getGeographicMapCellPositionFromListIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPositionList: BasicArrayList, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
     //var geographicMapCellTypeArray = geographicMapCellTypeArray
     //var geographicMapCellPositionList = geographicMapCellPositionList
@@ -191,8 +191,6 @@ var y = y
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -205,11 +203,9 @@ var y = y
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
+basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeFactorygeographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.BLOCK_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))
@@ -241,8 +237,6 @@ basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.ge
 
     var size: number = geographicMapInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -255,11 +249,9 @@ basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.ge
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
-basicTopViewGeographicMapCellTypeFactory= geographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory(); as BasicTopViewGeographicMapCellTypeFactory;
+basicTopViewGeographicMapCellTypeFactory=  as BasicTopViewGeographicMapCellTypeFactorygeographicMapInterfaceArray[index]!.getGeographicMapCellTypeFactory();;
     
 
                         if(basicTopViewGeographicMapCellTypeFactory!.OFF_MAP_CELL_TYPE.isType(geographicMapCellTypeArray[index]!))

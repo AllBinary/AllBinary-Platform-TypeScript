@@ -50,8 +50,6 @@ export class UpOrientationInputToGameKeyEventAction extends GameKeyCompleteMotio
         
 
     private static readonly instance: GameKeyCompleteMotionGestureInputEvent = new UpOrientationInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

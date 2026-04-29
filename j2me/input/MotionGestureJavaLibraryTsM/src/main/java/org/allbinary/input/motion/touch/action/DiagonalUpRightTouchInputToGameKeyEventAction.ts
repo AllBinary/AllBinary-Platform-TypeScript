@@ -50,8 +50,6 @@ export class DiagonalUpRightTouchInputToGameKeyEventAction extends GameKeyComple
         
 
     private static readonly SINGLETON: GameKeyCompleteMotionGestureInputEvent = new DiagonalUpRightTouchInputToGameKeyEventAction();
-        
-        
 
     public static getInstance(): GameKeyCompleteMotionGestureInputEvent{
 

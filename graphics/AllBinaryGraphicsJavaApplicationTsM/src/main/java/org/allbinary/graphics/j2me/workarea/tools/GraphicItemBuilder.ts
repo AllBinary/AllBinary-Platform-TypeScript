@@ -55,8 +55,6 @@ export class GraphicItemBuilder
 var node = node
 
     var graphicItemName: string = node.getNodeName()!;
-        
-        
 ;
     
 
@@ -76,7 +74,8 @@ var node = node
                             
 
 
-                            throw new Error("Graphic Item Does Not Exist: " +graphicItemName)
+                            throw new Error("Graphic Item Does Not Exist: " +graphicItemName);
+                    
 
                         }
                             

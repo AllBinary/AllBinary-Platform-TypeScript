@@ -52,6 +52,8 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
+
 export class GeologicalGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {
@@ -79,14 +81,10 @@ var width = width
 var height = height
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
-        
-        
 ;
     
 
     var resources: number = this.resourcePerMapCellType[tiledLayer!.getCell(i_column, i_row)] +MyRandomFactory.getInstance()!.getAbsoluteNextInt(1000);
-        
-        
 ;
     
 

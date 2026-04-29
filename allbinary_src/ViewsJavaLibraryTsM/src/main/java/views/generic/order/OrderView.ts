@@ -77,8 +77,6 @@ export class OrderView extends HttpStoreComponentView implements DomNodeInterfac
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -94,7 +92,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestthis.getPageContext()!.getRequest();;
     
 this.getFormData();
     
@@ -106,8 +104,6 @@ this.getFormData();
     getFormData(){
 
     var id: string = this.request.getParameter(OrderData.ID)!;
-        
-        
 ;
     
 
@@ -134,14 +130,10 @@ var document = document
         try {
             
     var orderHistoryNode: Node = this.orderHistory!.toXmlNode(document)!;
-        
-        
 ;
     
 
     var node: Node = document.createElement(this.orderHistory!.getPaymentMethod())!;
-        
-        
 ;
     
 orderHistoryNode!.appendChild(this.basketReview!.toXmlNode(document));
@@ -179,7 +171,7 @@ node.appendChild(orderHistoryNode);
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -213,7 +205,8 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

@@ -18,9 +18,6 @@
 
 
 
-import { GL } from "../../../../../javax/microedition/khronos/opengles/GL.js";
-
-    
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -72,9 +69,6 @@ import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 import { RectangleFactory } from "../../../../../org/allbinary/graphics/RectangleFactory.js";
 
     
-import { OpenGLSurfaceChangedInterface } from "../../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js";
-
-    
 import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
 
     
@@ -118,12 +112,8 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
         
 
     public static readonly NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER: CollidableDestroyableDamageableLayer = new CollidableDestroyableDamageableLayer(BasicGroupFactory.getInstance()!.NONE_ARRAY, StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION);
-        
-        
 
     private static readonly READYFOREXPLOSION: string = "ReadyForExplosion: ";
-        
-        
 
     private groupInterface: Group[]
 
@@ -140,22 +130,14 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
     private initZ: number= 0
 
     partInterfaceArrayP: PartInterface[] = PartInterfaceUtil.getZeroArray()!;
-        
-        
 
     private pickupBehavior: PickupBehavior
 
     public allBinaryGameLayerManagerP: AllBinaryGameLayerManager = AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER;
-        
-        
 
     public isDraggable: boolean = false;
-        
-        
 
     public isDragged: boolean = false;
-        
-        
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
                         //var groupInterface = groupInterface
@@ -187,7 +169,7 @@ this.setPosition(this.initX, this.initY, this.initZ);
 
                 //@Throws(Error::class)
             
-    public initPosition(x: number, y: number, z: number){
+    public initPositionXYZ(x: number, y: number, z: number){
     //var x = x
     //var y = y
     //var z = z
@@ -215,7 +197,8 @@ super.paint(graphics);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -226,7 +209,8 @@ super.paint(graphics);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -236,7 +220,8 @@ super.paint(graphics);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED)
+                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                    
 }
 
 
@@ -272,7 +257,8 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                                     
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 
                                     }
                                 
@@ -422,28 +408,28 @@ this.readyForExplosion= isReadyForExplosion;
 
                 //@Throws(Error::class)
             
-    public up(yAnalogValue: number){
+    public upAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
                 //@Throws(Error::class)
             
-    public down(yAnalogValue: number){
+    public downAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
                 //@Throws(Error::class)
             
-    public right(xAnalogValue: number){
+    public rightAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
                 //@Throws(Error::class)
             
-    public left(xAnalogValue: number){
+    public leftAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
@@ -512,35 +498,27 @@ this.partInterfaceArrayP= partInterfaceArray;
 }
 
 
-    public toString(stringBuffer: StringMaker){
+    public toStringAppend(stringBuffer: StringMaker){
     //var stringBuffer = stringBuffer
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var positionStrings: PositionStrings = PositionStrings.getInstance()!;
-        
-        
 ;
     
-super.toString(stringBuffer);
+super.toStringAppend(stringBuffer);
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
 
     var groupInterfaceArray: Group[] = this.getGroupInterface()!;
-        
-        
 ;
     
 
     var size: number = groupInterfaceArray!.length
                 ;
-        
-        
 ;
     
 
@@ -549,8 +527,6 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 stringBuffer!.append(groupInterfaceArray[index]!.toString());
@@ -561,8 +537,6 @@ stringBuffer!.append(commonSeps!.COMMA);
 
 
     var pickupBehavior: PickupBehavior = this.getPickupBehavior()!;
-        
-        
 ;
     
 
@@ -608,11 +582,9 @@ stringBuffer!.appendint(this.initZ);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
-this.toString(stringBuffer);
+this.toStringAppend(stringBuffer);
     
 
 

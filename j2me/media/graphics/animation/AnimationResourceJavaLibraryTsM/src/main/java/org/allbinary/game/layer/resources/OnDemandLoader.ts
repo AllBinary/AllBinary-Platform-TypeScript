@@ -104,8 +104,6 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
     //var loadingString = loadingString
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
-        
-        
 ;
     
 
@@ -136,8 +134,6 @@ this.initAll(imageCache, loadingString);
                                     {
                                     
     var layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface = this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory!.getInstance(level)!;
-        
-        
 ;
     
 this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache, level, loadingString);
@@ -155,14 +151,10 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
     //var loadingString = loadingString
 
     var index: number = 0;
-        
-        
 ;
     
 
     var portion: number = 120;
-        
-        
 ;
     
 
@@ -175,8 +167,6 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
 
                         for (
     var onDemandIndex: number = this.onDemandResourcesFactory!.size()!;
-        
-        
 --onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
@@ -185,7 +175,7 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)
                         
                                     {
-                                    index= onDemandResources!.init(imageCache, this.resourceAnimationInterfaceFactoryInterfaceFactory, portion, loadingString, index);
+                                    index= onDemandResources!.initAt(imageCache, this.resourceAnimationInterfaceFactoryInterfaceFactory, portion, loadingString, index);
     
 
                                     }
@@ -204,26 +194,18 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
     //var loadingString = loadingString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
     var portion: number = 120;
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var onDemandArray: number[] = layerPlacementInterfaceBasicArrayListFactoryInterface!.getOnDemandResources()!;
-        
-        
 ;
     
 PreLogUtil.put(new StringMaker().
@@ -240,8 +222,6 @@ PreLogUtil.put(new StringMaker().
                         for (
     var onDemandIndex: number = onDemandArray!.length
                 ;
-        
-        
 --onDemandIndex >= 0; )
         {
 onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandIndex]!);
@@ -250,7 +230,7 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandArray[onDemandI
                         if(onDemandResources != OnDemandResources.NULL_ON_DEMAND_RESOURCES)
                         
                                     {
-                                    index= onDemandResources!.init(imageCache, this.resourceAnimationInterfaceFactoryInterfaceFactory, portion, loadingString, index);
+                                    index= onDemandResources!.initAt(imageCache, this.resourceAnimationInterfaceFactoryInterfaceFactory, portion, loadingString, index);
     
 
                                     }

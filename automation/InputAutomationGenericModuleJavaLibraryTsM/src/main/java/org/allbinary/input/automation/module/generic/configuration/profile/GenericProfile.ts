@@ -73,8 +73,6 @@ export class GenericProfile
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private name: string
 
@@ -91,8 +89,6 @@ this.vector= new Vector();
     
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 this.logUtil!.putF("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLength(), this, "Contructor");
@@ -103,14 +99,10 @@ this.logUtil!.putF("Name: " +this.getName() +" Child Nodes: " +nodeList!.getLeng
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var profileNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -119,8 +111,6 @@ index < nodeList!.getLength(); index++)
                                     {
                                     
     var genericProfileDataWorkerType: GenericProfileDataWorkerType = GenericProfileDataWorkerType.getInstance(profileNode)!;
-        
-        
 ;
     
 this.logUtil!.putF("Adding GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "Contructor");
@@ -176,14 +166,10 @@ this.vector.remove(genericProfileDataWorkerType);
 var document = document
 
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, name)!;
-        
-        
 ;
     
 
     var size: number = this.vector.length!;
-        
-        
 ;
     
 
@@ -192,14 +178,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index); as GenericProfileDataWorkerType;
-        
-        
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType =  as GenericProfileDataWorkerTypethis.vector.get(index);;
 ;
     
 node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));

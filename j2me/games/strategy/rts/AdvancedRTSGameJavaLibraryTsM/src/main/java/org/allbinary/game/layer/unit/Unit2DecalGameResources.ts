@@ -53,8 +53,6 @@ export class Unit2DecalGameResources extends BasicGameResources {
         
 
     private static readonly instance: Unit2DecalGameResources = new Unit2DecalGameResources();
-        
-        
 
     public static getInstance(): BasicGameResources{
 
@@ -70,38 +68,26 @@ private constructor (){
             super();
         
     var ROOT: string = "/unit_decal";
-        
-        
 ;
     
 
     var SMALL: string = "_30_by_30.png";
-        
-        
 ;
     
 
     var MEDIUM: string = SMALL;
-        
-        
 ;
     
 
     var SIZE_FOUR: string = SMALL;
-        
-        
 ;
     
 
     var SIZE_FIVE: string = SMALL;
-        
-        
 ;
     
 
     var SIZE_SIX: string = SMALL;
-        
-        
 ;
     
 
@@ -109,8 +95,6 @@ private constructor (){
                                                         [
                                                             SMALL,MEDIUM,SIZE_FOUR,SIZE_FIVE,SIZE_SIX
                                                         ];
-        
-        
 ;
     
 super.init(ROOT, SIZE);
@@ -120,10 +104,10 @@ super.init(ROOT, SIZE);
 
                 //@Throws(Error::class)
             
-    init(ROOT: string, sizeString: string){
+    append(ROOT: string, sizeString: string){
 var ROOT = ROOT
 var sizeString = sizeString
-super.init(ROOT, sizeString);
+super.append(ROOT, sizeString);
     
 }
 
@@ -139,7 +123,7 @@ super.init(ROOT, sizeString);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GameGraphicsResourceUtil.getInstance()!.getString(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);;
+                        return GameGraphicsResourceUtil.getInstance()!.getStringForFeature(GraphicsFeatureFactory.getInstance()!.SPRITE_QUARTER_ROTATION_GRAPHICS);;
     
 
                                     }

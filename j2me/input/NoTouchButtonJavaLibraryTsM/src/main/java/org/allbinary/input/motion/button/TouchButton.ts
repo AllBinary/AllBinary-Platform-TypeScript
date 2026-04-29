@@ -82,12 +82,8 @@ export class TouchButton extends Paintable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly touchButtonInput: TouchButtonInput
 
@@ -100,8 +96,6 @@ export class TouchButton extends Paintable {
     readonly yBorder: number
 
     rectangle: Rectangle = RectangleFactory.SINGLETON;
-        
-        
 
     readonly cellPosition: CellPosition
 
@@ -119,7 +113,7 @@ var xBorder = xBorder
 var yBorder = yBorder
 this.touchButtonInput= touchButtonInput;
     
-this.animationInterface= animationInterface as Animation;
+this.animationInterface=  as AnimationanimationInterface;
     
 this.rawRectangle= rawRectangle;
     
@@ -139,7 +133,7 @@ this.logUtil!.putF(new StringMaker().
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paint(graphics, animationX, animationY);
+this.animationInterface!.paintXY(graphics, animationX, animationY);
     
 }
 
@@ -149,28 +143,20 @@ this.animationInterface!.paint(graphics, animationX, animationY);
         try {
             
     var x: number = this.rawRectangle!.getWidth() *this.cellPosition!.getColumn();
-        
-        
 ;
     
 
     var y: number = this.rawRectangle!.getHeight() *this.cellPosition!.getRow();
-        
-        
 ;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
-this.rectangle= new Rectangle(pointFactory!.getInstance0(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+this.rectangle= new Rectangle(pointFactory!.createXY(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
     var point: GPoint = this.rectangle.getPoint()!;
-        
-        
 ;
     
 this.animationX= point.getX();
@@ -221,14 +207,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateRectangle", e);
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 stringBuffer!.append("TouchButton: ");

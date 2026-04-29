@@ -76,7 +76,7 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
                 //@Throws(Error::class)
             
-    setGameOver()
+    processGameOver()
 
     isGameOver(): boolean
 
@@ -84,15 +84,15 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
                 //@Throws(Error::class)
             
-    getCurrentStateHashtable(): Hashtable<any, any>
+    getCurrentStateHashtable(): Hashtable
 
                 //@Throws(Error::class)
             
-    getLoadStateHashtable(): Hashtable<any, any>
+    getLoadStateHashtable(): Hashtable
 
                 //@Throws(Error::class)
             
-    setLoadStateHashtable(hashtable: Hashtable<any, any>)
+    setLoadStateHashtable(hashtable: Hashtable)
 
     getType(): number
 

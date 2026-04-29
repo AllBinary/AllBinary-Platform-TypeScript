@@ -65,16 +65,14 @@ import { Short } from "./Short.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JButton } from "./JButton.js";
+
 export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface
 public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface){
@@ -95,8 +93,6 @@ this.set();
     set(){
 
     var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;
-        
-        
 ;
     
 this.getMinRedJTextField()!.setText(colorRangeInterface!.getMinRed().toString());
@@ -123,8 +119,6 @@ this.colorAtActionScriptConditionInterface!.log();
     update(){
 
     var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;
-        
-        
 ;
     
 colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.toInt());
@@ -141,8 +135,6 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
     
 
     var xString: string = this.getColorAtXJTextField()!.getText()!;
-        
-        
 ;
     
 
@@ -156,8 +148,6 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
                                 
 
     var yString: string = this.getColorAtYJTextField()!.getText()!;
-        
-        
 ;
     
 
@@ -413,7 +403,7 @@ this.blueJLabel!.setText("Blue:");
     
 this.okJButton!.setText("OK");
     
-okJButton!.addActionListener(new object: java.awt.event.ActionListener()
+okJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -427,8 +417,6 @@ okJButtonActionPerformed(evt);
     
 
     var colorAtActionJDialogLayout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this.colorAtActionJDialog!.getContentPane());
-        
-        
 ;
     
 this.colorAtActionJDialog!.getContentPane()!.setLayout(colorAtActionJDialogLayout);
@@ -441,7 +429,7 @@ setPreferredSize(new java.awt.Dimension(100, 0));
     
 this.colorAtActionJButton!.setText("Edit");
     
-colorAtActionJButton!.addActionListener(new object: java.awt.event.ActionListener()
+colorAtActionJButton!.addActionListener(new java.awt.event.ActionListener()
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -457,8 +445,6 @@ this.jLabel1!.setText("Color At:");
     
 
     var layout: javax.swing.GroupLayout = new javax.swing.GroupLayout(this);
-        
-        
 ;
     
 this.setLayout(layout);

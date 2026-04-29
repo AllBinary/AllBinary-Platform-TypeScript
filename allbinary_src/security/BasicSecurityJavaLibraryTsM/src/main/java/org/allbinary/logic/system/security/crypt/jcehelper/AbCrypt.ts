@@ -80,8 +80,6 @@ export class AbCrypt
         
 
     private secretComposite: BaseSecretComposite = BaseSecretComposite.NULL_SECRET_COMPOSITE;
-        
-        
 
     private algorithm: string
 public constructor (algorithm: string){
@@ -97,8 +95,6 @@ this.algorithm= algorithm;
     //var keyAsString = keyAsString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 
@@ -117,32 +113,22 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
 
     var key: number[] = keyAsString!.encodeToByteArray()!;
-        
-        
 ;
     
 
     var keySpec: KeySpec = KeySpecFactory.getInstance()!.getInstance(this.algorithm, key)!;
-        
-        
 ;
     
 
     var keyFactory: SecretKeyFactory = SecretKeyFactory.getInstance(this.algorithm)!;
-        
-        
 ;
     
 
     var secretKey: SecretKey = keyFactory!.generateSecret(keySpec)!;
-        
-        
 ;
     
 
     var cipher: Cipher = Cipher.getInstance(this.algorithm)!;
-        
-        
 ;
     
 this.secretComposite= new SecretComposite(secretKey, cipher, key);

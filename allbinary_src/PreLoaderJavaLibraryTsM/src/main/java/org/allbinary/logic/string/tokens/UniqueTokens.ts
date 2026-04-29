@@ -69,8 +69,6 @@ export class UniqueTokens
         
 
     private readonly specialCharacters: Vector = new Vector();
-        
-        
 public constructor (){
 
             super();
@@ -133,41 +131,29 @@ var stringVector = stringVector
         try {
             
     var hashSet: HashSet = new HashSet();
-        
-        
 ;
     
 
     var index: number = 0;
-        
-        
 ;
     
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
         while(index < stringVector!.length)
         {
 
-    var keywords: string = stringVector!.elementAt(index); as String;
-        
-        
+    var keywords: string =  as StringstringVector!.elementAt(index);;
 ;
     
 
     var tokenizer: Tokenizer = new Tokenizer(commonSeps!.COMMA);
-        
-        
 ;
     
 
     var keywordVector: BasicArrayList = tokenizer.getTokens(keywords, new BasicArrayListD())!;
-        
-        
 ;
     
 
@@ -176,14 +162,10 @@ var stringVector = stringVector
 
                         for (
     var forIndex: number = 0;
-        
-        
 forIndex < keywordVector!.size(); forIndex++)
         {
 
-    var cleanString: string = keywordVector!.get(forIndex); as String;
-        
-        
+    var cleanString: string =  as StringkeywordVector!.get(forIndex);;
 ;
     
 cleanString= cleanString!.trim();
@@ -200,14 +182,10 @@ hashSet!.add(cleanString);
                                     {
                                     
     var spaceTokenizer: Tokenizer = new Tokenizer(commonSeps!.SPACE);
-        
-        
 ;
     
 
     var subKeywordVector: BasicArrayList = spaceTokenizer!.getTokens(cleanString, new BasicArrayListD())!;
-        
-        
 ;
     
 
@@ -216,14 +194,10 @@ hashSet!.add(cleanString);
 
                         for (
     var spaceIndex: number = 0;
-        
-        
 spaceIndex < subKeywordVector!.size(); spaceIndex++)
         {
 
-    var subCleanString: string = subKeywordVector!.get(spaceIndex); as String;
-        
-        
+    var subCleanString: string =  as StringsubKeywordVector!.get(spaceIndex);;
 ;
     
 
@@ -259,7 +233,8 @@ index++;
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
@@ -300,12 +275,10 @@ var subCleaningString = subCleaningString
 
                         for (
     var index: number = 0;
-        
-        
 index < this.specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index) as String) == 0)
+                        if(subCleaningString!.compareTo( as Stringthis.specialCharacters!.elementAt(index)) == 0)
                         
 
 

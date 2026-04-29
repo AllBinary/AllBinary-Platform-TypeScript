@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RuntimeException } from "./RuntimeException.js";
+
 export class GeographicMapCellHistoryProgressBase
             extends Object
          {
         
 
     private static readonly instance: GeographicMapCellHistoryProgressBase = new GeographicMapCellHistoryProgressBase();
-        
-        
 
     public static getInstance(): GeographicMapCellHistoryProgressBase{
 
@@ -65,7 +65,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -73,7 +74,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

@@ -100,28 +100,24 @@ export class AuthenticationRequestHelper extends TagHelper {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private weblisketSession: WeblisketSession
 
     private request: HttpServletRequest
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 }
 
-public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
+public constructor (hashMap: HashMap, httpServletRequest: HttpServletRequest){
 
             super();
         var hashMap = hashMap
@@ -146,8 +142,6 @@ this.request= httpServletRequest;
                                     {
                                     
     var startIndex: number = this.weblisketSession!.getId()!.length()!;
-        
-        
 ;
     
 
@@ -167,7 +161,8 @@ this.request= httpServletRequest;
                             
 
 
-                            throw new Error("Error Generating New Password")
+                            throw new Error("Error Generating New Password");
+                    
 
                         }
                             
@@ -178,7 +173,8 @@ this.request= httpServletRequest;
                             
 
 
-                            throw new Error("No Session Available For Generating New Password")
+                            throw new Error("No Session Available For Generating New Password");
+                    
 
                         }
                             
@@ -190,14 +186,10 @@ this.request= httpServletRequest;
         try {
             
     var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
-        
-        
 ;
     
 
     var email: string = this.request.getParameter(UserData.MAINEMAIL)!;
-        
-        
 ;
     
 
@@ -211,14 +203,10 @@ this.request= httpServletRequest;
                                 
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-        
-        
 ;
     
 
@@ -254,16 +242,12 @@ this.request= httpServletRequest;
                                 
 
     var newPassword: string = this.generateNewPassword()!;
-        
-        
 ;
     
 userInterface!.setPassword(newPassword);
     
 
-    var newPasswordHashMap: HashMap<any, any> = userInterface!.toPasswordHashMap()!;
-        
-        
+    var newPasswordHashMap: HashMap = userInterface!.toPasswordHashMap()!;
 ;
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
@@ -315,26 +299,18 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
         try {
             
     var userName: string = this.request.getParameter(WeblisketSessionData.REMOVABLEUSERNAME)!;
-        
-        
 ;
     
 
     var passwordString: string = this.request.getParameter(WeblisketSessionData.REMOVABLEPASSWORD)!;
-        
-        
 ;
     
 
     var newPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLENEWPASSWORD)!;
-        
-        
 ;
     
 
     var newReenteredPassword: string = this.request.getParameter(WeblisketSessionData.REMOVABLEREENTERNEWPASSWORD)!;
-        
-        
 ;
     
 
@@ -348,8 +324,6 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                 
 
     var password: Password = new Password(newPassword);
-        
-        
 ;
     
 
@@ -398,26 +372,18 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                 
 
     var sessionPassword: string = this.weblisketSession!.getPassword()!;
-        
-        
 ;
     
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-        
-        
 ;
     
 
     var login: string = userEntityInterface!.login(userName, passwordString)!;
-        
-        
 ;
     
 
@@ -434,10 +400,8 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                     }
                                 
 
-    var newPasswordHashMap: HashMap<any, any> = password.toHashMap(
+    var newPasswordHashMap: HashMap = password.toHashMap(
                             null)!;
-        
-        
 ;
     
 UserEntityFactory.getInstance()!.update(userName, newPasswordHashMap);
@@ -501,14 +465,10 @@ var roles = roles
         try {
             
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
-        
-        
 ;
     
 
     var userInterface: UserInterface = userEntityInterface!.getUser(userName)!;
-        
-        
 ;
     
 
@@ -537,15 +497,11 @@ var roles = roles
                                 
 
     var basicUserRoleArray: any[] = roles.toArray()!;
-        
-        
 ;
     
 
     var size: number = basicUserRoleArray!.length
                 ;
-        
-        
 ;
     
 
@@ -554,21 +510,17 @@ var roles = roles
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var nextRole: BasicUserRole = basicUserRoleArray[index]! as BasicUserRole;
-        
-        
+    var nextRole: BasicUserRole =  as BasicUserRolebasicUserRoleArray[index]!;
 ;
     
 
                         if(userInterface!.getRole()!.getBasicUserRole()!.equals(nextRole))
                         
                                     {
-                                    userInterface!.validateSession(this.weblisketSession as WeblisketSessionInterface);
+                                    userInterface!.validateSession( as WeblisketSessionInterfacethis.weblisketSession);
     
 this.request.removeAttribute(WeblisketSessionData.REMOVABLEUSERNAME);
     
@@ -591,8 +543,6 @@ this.request.removeAttribute(WeblisketSessionData.REMOVABLEPASSWORD);
                                     {
                                     
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Role is not valid: ");

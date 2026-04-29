@@ -43,8 +43,6 @@ export class CaptionResources
         
 
     private static readonly instance: CaptionResources = new CaptionResources();
-        
-        
 
     public static getInstance(): CaptionResources{
 
@@ -62,8 +60,6 @@ private constructor (){
 
 
     public readonly RESOURCE: string = "/unit_message_bubbled_box.png";
-        
-        
 
 }
                 

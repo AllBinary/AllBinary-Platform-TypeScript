@@ -104,8 +104,6 @@ export class ShippingMethodsView extends HttpStoreComponentView implements DomNo
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private shippingMethods: ShippingMethods
 
@@ -132,44 +130,30 @@ var document = document
         try {
             
     var shippingMethodsNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODSORDERSUMMARIES)!;
-        
-        
 ;
     
 
     var order: OrderInterface = this.getWeblisketSession()!.getOrder()!;
-        
-        
 ;
     
 
     var basket: BasketInterface = this.getWeblisketSession()!.getOrder()!.getBasket()!;
-        
-        
 ;
     
 
     var shippingAddressesEntityInterface: StreetAddressesEntityInterface = ShippingAddressesEntityFactory.getInstance()!.getInstance(this.getWeblisketSession()!.getUserName())!;
-        
-        
 ;
     
 
     var streetAddress: StreetAddress = shippingAddressesEntityInterface!.getDefault()!;
-        
-        
 ;
     
 
     var shippingVector: Vector = this.shippingMethods!.get()!;
-        
-        
 ;
     
 
     var size: number = shippingVector!.length!;
-        
-        
 ;
     
 
@@ -178,58 +162,40 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
     var shippingMethodNode: Node = document.createElement(ShippingMethodsData.SHIPPINGMETHODORDERSUMMARY)!;
-        
-        
 ;
     
 
-    var shipping: ShippingInterface = shippingVector!.get(index); as ShippingInterface;
-        
-        
+    var shipping: ShippingInterface =  as ShippingInterfaceshippingVector!.get(index);;
 ;
     
 
-    var shippingView: DomNodeInterface = shipping as DomNodeInterface;
-        
-        
+    var shippingView: DomNodeInterface =  as DomNodeInterfaceshipping;
 ;
     
 shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
     
 
     var shippingCost: Money = shipping.getCost(order)!;
-        
-        
 ;
     
 
     var subTotal: Money = basket.getSubTotal()!;
-        
-        
 ;
     
 
-    var taxRate: Float = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;
-        
-        
+    var taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;
 ;
     
 
     var tax: Money = new Money();
-        
-        
 ;
     
 
     var total: Money = new Money();
-        
-        
 ;
     
 total.add(shippingCost!.toString());
@@ -280,14 +246,15 @@ shippingMethodsNode!.appendChild(shippingMethodNode);
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }
 
 
     public addDomNodeInterfaces(){
-this.addDomNodeInterface(this as DomNodeInterface);
+this.addDomNodeInterface( as DomNodeInterfacethis);
     
 }
 
@@ -309,8 +276,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
             {
 
     var error: string = "Failed to view ShippingMethods";
-        
-        
 ;
     
 

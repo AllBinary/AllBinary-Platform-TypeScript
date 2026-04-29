@@ -64,8 +64,6 @@ var os = os
         try {
             
     var operatingSystems: OperatingSystems = OperatingSystems.getInstance()!;
-        
-        
 ;
     
 
@@ -76,7 +74,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new LinuxHardware() as HardwareInterface;
+                        return  as HardwareInterfacenew LinuxHardware();
     
 
                                     }
@@ -89,7 +87,7 @@ var os = os
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new WindowsHardware() as HardwareInterface;
+                        return  as HardwareInterfacenew WindowsHardware();
     
 
                                     }
@@ -97,7 +95,8 @@ var os = os
 
 
 
-                            throw new Error("No Hardware Imp for: " +os.getName())
+                            throw new Error("No Hardware Imp for: " +os.getName());
+                    
 
                 //: 
 } catch(e) 
@@ -105,7 +104,8 @@ var os = os
 
 
 
-                            throw e
+                            throw e;
+                    
 }
 
 }

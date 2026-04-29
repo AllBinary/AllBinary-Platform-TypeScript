@@ -56,27 +56,21 @@ export class CaptureWorkerUtil
 
                 //@Throws(Error::class)
             
-    public static processProfileActionConditions(vector: Vector, frame: Long){
+    public static processProfileActionConditions(vector: Vector, frame: number){
 var vector = vector
 var frame = frame
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionConditions");
     
 
     var size: number = vector.length!;
-        
-        
 ;
     
 
@@ -85,14 +79,10 @@ logUtil!.putF(commonStrings!.START, "CaptureWorkerUtil", "processProfileActionCo
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = vector.get(index); as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfacevector.get(index);;
 ;
     
 
@@ -114,8 +104,6 @@ index < size; index++)
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (){
 
             super();

@@ -58,8 +58,6 @@ export class DesktopBundle
         
 
     private static readonly DESKTOP_SYMBOLIC_NAME: string = "org.knopflerfish.bundle.desktop";
-        
-        
 
     private bundle: Bundle
 public constructor (){
@@ -67,8 +65,6 @@ public constructor (){
             super();
         
     var bundleContext: BundleContext = InputAutomationBundleActivator.getBundleContext()!;
-        
-        
 ;
     
 
@@ -79,8 +75,6 @@ public constructor (){
                                     {
                                     
     var bundleArray: Bundle[] = bundleContext!.getBundles()!;
-        
-        
 ;
     
 
@@ -89,20 +83,14 @@ public constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < bundleArray!.length; index++)
         {
 
     var bundle: Bundle = bundleArray[index]!;
-        
-        
 ;
     
 
     var symbolicName: string = bundle.getSymbolicName()!;
-        
-        
 ;
     
 
@@ -122,8 +110,6 @@ index < bundleArray!.length; index++)
                         else {
                             
     var textJDialog: JDialog = new BasicTextJDialog("BundlContext is Null");
-        
-        
 ;
     
 textJDialog!.setVisible(true);

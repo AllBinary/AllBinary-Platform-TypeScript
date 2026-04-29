@@ -106,12 +106,8 @@ export class StoreFrontsRequestHelper extends ModifyTable {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private readonly pageContext: PageContext
 
@@ -124,14 +120,14 @@ export class StoreFrontsRequestHelper extends ModifyTable {
     private modifyingStoreFrontInterface: StoreFrontInterface
 
     private readonly portion: Portion
-public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (hashMap: HashMap, pageContext: PageContext){
 
             super();
         var hashMap = hashMap
 var pageContext = pageContext
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
@@ -147,7 +143,7 @@ this.getFormData();
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName();
     
-this.modifyingStoreFrontInterface= new StoreFront(this.request) as StoreFrontInterface;
+this.modifyingStoreFrontInterface=  as StoreFrontInterfacenew StoreFront(this.request);
     
 }
 
@@ -157,14 +153,10 @@ this.modifyingStoreFrontInterface= new StoreFront(this.request) as StoreFrontInt
         try {
             
     var success: string = "Updated Successfully";
-        
-        
 ;
     
 
-    var hashMapData: HashMap<any, any> = this.modifyingStoreFrontInterface!.toHashMap()!;
-        
-        
+    var hashMapData: HashMap = this.modifyingStoreFrontInterface!.toHashMap()!;
 ;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(hashMapData);
@@ -190,8 +182,6 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
             {
 
     var error: string = "Failed to update storefronts table";
-        
-        
 ;
     
 
@@ -219,20 +209,14 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
     public sendStoreCreatedEmails(){
 
     var storeManagerEmailSubject: string = "Store Manager Nofification For Store: " +this.modifyingStoreFrontInterface!.getName();
-        
-        
 ;
     
 
     var adminEmailSubject: string = "Admin Notification For Store: " +this.modifyingStoreFrontInterface!.getName();
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Store Created: ");
@@ -263,44 +247,30 @@ stringBuffer!.append(this.weblisketSession!.getUserName());
     
 
     var adminEmailTextBody: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(this.modifyingStoreFrontInterface, storeManagerEmailSubject, adminEmailTextBody);
 ;
     
 
     var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STORECREATED)!;
-        
-        
 ;
     
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STORECREATED, this.abeClientInformation, this.modifyingStoreFrontInterface)!;
-        
-        
 ;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED, storeAdminEmailInfo);
@@ -316,8 +286,6 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED
         try {
             
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("Intall StoreFront Successfully: ");
@@ -330,8 +298,6 @@ stringBuffer!.appendint(this.portion.getTotal()!.toInt());
     
 
     var success: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt());
@@ -357,8 +323,6 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), t
             {
 
     var error: string = "Failed to Install storefront";
-        
-        
 ;
     
 
@@ -387,14 +351,10 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), t
         try {
             
     var success: string = "Added Successfully";
-        
-        
 ;
     
 
     var values: Vector = this.modifyingStoreFrontInterface!.toVector()!;
-        
-        
 ;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(values);
@@ -420,8 +380,6 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(v
             {
 
     var error: string = "Failed to add storefront";
-        
-        
 ;
     
 
@@ -449,8 +407,6 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.insert(v
         try {
             
     var success: string = "Delete Successfully";
-        
-        
 ;
     
 StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.delete(this.storeName);
@@ -476,8 +432,6 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.delete(t
             {
 
     var error: string = "Failed to delete storefronts table";
-        
-        
 ;
     
 

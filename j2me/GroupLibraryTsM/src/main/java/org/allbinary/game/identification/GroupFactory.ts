@@ -60,8 +60,6 @@ export class GroupFactory
         
 
     private instance: GroupFactory = new GroupFactory();
-        
-        
 
     public static getInstance(): GroupFactory{
 
@@ -74,26 +72,16 @@ export class GroupFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly NULL_GROUP_ARRAY: Group[] = [];
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 
     private index: number = 0;
-        
-        
 
     public getNextGroup(): Group{
 
-    var group: Group = this.list.objectArray[this.index]! as Group;
-        
-        
+    var group: Group =  as Groupthis.list.objectArray[this.index]!;
 ;
     
 index++;
@@ -107,12 +95,10 @@ index++;
 }
 
 
-    public getNextGroup(name: string): Group{
+    public getNextGroupByName(name: string): Group{
     //var name = name
 
     var group: Group = this.getNextGroup()!;
-        
-        
 ;
     
 group.setName(name);
@@ -131,20 +117,14 @@ var groups = groups
 var nameArray = nameArray
 
     var stringMaker: StringMaker = new StringMaker();
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
     var TEAM: string = "Team ";
-        
-        
 ;
     
 this.list.clear();
@@ -153,8 +133,6 @@ this.index= 0;
     
 
     var size: number = this.list.size()!;
-        
-        
 ;
     
 
@@ -162,8 +140,6 @@ this.index= 0;
         {
 
     var name: string = stringUtil!.EMPTY_STRING;
-        
-        
 ;
     
 

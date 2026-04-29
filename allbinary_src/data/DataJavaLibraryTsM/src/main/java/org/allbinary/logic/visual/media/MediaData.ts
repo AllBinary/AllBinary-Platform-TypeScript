@@ -49,18 +49,14 @@ export class MediaData
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    private hashMap: HashMap = new HashMap();
 
                 //@Throws(Error::class)
             
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
 
-    var mediaData: MediaData = MediaData.hashMap!.get(a_Name as Object); as MediaData;
-        
-        
+    var mediaData: MediaData =  as MediaDataMediaData.hashMap!.get(a_Name as Object);;
 ;
     
 
@@ -82,7 +78,8 @@ var a_Name = a_Name
                             
 
 
-                            throw new Error("No Such MediaData")
+                            throw new Error("No Such MediaData");
+                    
 
                         }
                             
@@ -99,7 +96,7 @@ var a_Name = a_Name
 }
 
 
-    public static toHashMap(): HashMap<any, any>{
+    public static toHashMap(): HashMap{
 
 
 

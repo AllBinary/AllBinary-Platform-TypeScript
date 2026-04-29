@@ -37,14 +37,14 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LicenseLoadingType } from "./LicenseLoadingType.js";
+
 export class LicenseLoadingTypeFactory
             extends Object
          {
         
 
     private static readonly instance: LicenseLoadingTypeFactory = new LicenseLoadingTypeFactory();
-        
-        
 
     public static getIntance(): LicenseLoadingTypeFactory{
 
@@ -57,20 +57,12 @@ export class LicenseLoadingTypeFactory
 
 
     public readonly INITIAL_LOADING: LicenseLoadingType = new LicenseLoadingType("Initial Loading");
-        
-        
 
     public readonly GAME_START: LicenseLoadingType = new LicenseLoadingType("Game Start");
-        
-        
 
     public readonly LOGIN: LicenseLoadingType = new LicenseLoadingType("Login");
-        
-        
 
     public readonly OTHER: LicenseLoadingType = new LicenseLoadingType("Other/Usually The First Non Demo Level");
-        
-        
 
 }
                 

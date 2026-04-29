@@ -68,16 +68,10 @@ export class InGameOptionsForm extends CommandForm {
         
 
     public static readonly DISPLAY: Command = new Command("Options In Game", Command.SCREEN, 1);
-        
-        
 
     public static readonly SAVE: Command = new Command("Save", Command.SCREEN, 1);
-        
-        
 
     public static readonly DEFAULT: Command = new Command("Default", Command.SCREEN, 1);
-        
-        
  constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     var commandListener = commandListener
@@ -92,8 +86,6 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     
 
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
-        
-        
 ;
     
 gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE);

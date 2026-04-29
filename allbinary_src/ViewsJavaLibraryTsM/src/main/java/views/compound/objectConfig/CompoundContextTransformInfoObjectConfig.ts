@@ -98,8 +98,6 @@ export class CompoundContextTransformInfoObjectConfig extends GenericStoreTransf
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(abeClientInformation, transformInfoInterface);
                         //var abeClientInformation = abeClientInformation
@@ -143,26 +141,18 @@ this.setDocument(this.generate(this.toXmlDoc()));
     public get(): string{
 
     var storeName: string = this.getTransformInfoInterface()!.getStoreName()!;
-        
-        
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
-        
-        
+    var httpTransformInfoInterface: TransformInfoHttpInterface =  as TransformInfoHttpInterfacethis.getTransformInfoInterface();;
 ;
     
 
-    var templateNameOverride: string = StringUtil.getInstance()!.getInstance(httpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL) as String)!;
-        
-        
+    var templateNameOverride: string = StringUtil.getInstance()!.getNonNull( as StringhttpTransformInfoInterface!.getPropertiesHashMap()!.get(TransformInfoData.getInstance()!.PARTIAL))!;
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(storeName);
@@ -175,14 +165,10 @@ stringBuffer!.append(RootTransformInfoData.NAME);
     
 
     var rootComponentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, stringBuffer!.toString(), this.getTransformInfoInterface())!;
-        
-        
 ;
     
 
     var viewVector: Vector = this.getTransformDomNodes()!;
-        
-        
 ;
     
 
@@ -196,26 +182,18 @@ stringBuffer!.append(RootTransformInfoData.NAME);
                                 
 
     var rootView: string = rootComponentInterface!.view()!;
-        
-        
 ;
     
 
     var startXMLHeader: string = "<xsl:text disable-output-escaping=\"yes\" ><![CDATA[";
-        
-        
 ;
     
 
     var endXMLHeader: string = "]]></xsl:text>";
-        
-        
 ;
     
 
     var size: number = viewVector!.length!;
-        
-        
 ;
     
 
@@ -224,32 +202,22 @@ stringBuffer!.append(RootTransformInfoData.NAME);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index); as TransformInfoDomNode;
-        
-        
+    var objectConfigTransformInfoDomNode: TransformInfoDomNode =  as TransformInfoDomNodeviewVector!.get(index);;
 ;
     
 
     var templateKey: string = objectConfigTransformInfoDomNode!.getReplaceKey()!;
-        
-        
 ;
     
 
     var componentInterface: TransformInterface = TransformFactory.getInstance()!.getInstance(abeClientInformation, objectConfigTransformInfoDomNode!.getTransformInfoInterface()!.getName(), this.getTransformInfoInterface())!;
-        
-        
 ;
     
 
     var replacementViewString: string = componentInterface!.view()!;
-        
-        
 ;
     
 replacementViewString= DocumentToNode.convertDocumentToNodeString(replacementViewString);
@@ -264,8 +232,6 @@ stringBuffer!.append(endXMLHeader);
     
 
     var templateValue: string = stringBuffer!.toString()!;
-        
-        
 ;
     
 
@@ -289,8 +255,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "get()");
                                 
 
     var replace: Replace = new Replace(templateKey, templateValue);
-        
-        
 ;
     
 rootView= replace.all(rootView);
@@ -320,14 +284,10 @@ rootView= replace.all(rootView);
     public createInputStream(): InputStream{
 
     var completeTemplateViewBytes: number[] = this.get()!.encodeToByteArray()!;
-        
-        
 ;
     
 
     var bais: ByteArrayInputStream = new ByteArrayInputStream(completeTemplateViewBytes);
-        
-        
 ;
     
 

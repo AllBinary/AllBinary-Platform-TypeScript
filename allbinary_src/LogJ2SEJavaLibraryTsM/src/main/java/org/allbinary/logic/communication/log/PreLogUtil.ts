@@ -60,8 +60,6 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
 
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
-        
-        
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 var specialMessage = specialMessage
@@ -70,8 +68,6 @@ var functionName = functionName
 var exception = exception
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
-        
-        
 ;
     
 
@@ -87,8 +83,6 @@ var exception = exception
                                 
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 console.log(LOG_SUCCESS + message);
@@ -112,8 +106,6 @@ var functionName = functionName
 var exception = exception
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
-        
-        
 ;
     
 console.log(LOG_SUCCESS + message);

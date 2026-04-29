@@ -63,8 +63,6 @@ this.paintableArray= paintableArray;
 
                         for (
     var index: number = this.paintableArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.paintableArray[index]!.paint(graphics);
@@ -82,8 +80,6 @@ var graphics = graphics
 
                         for (
     var index: number = this.paintableArray!.length -1;
-        
-        
 index >= 0; index--)
         {
 this.paintableArray[index]!.paintThreed(graphics);

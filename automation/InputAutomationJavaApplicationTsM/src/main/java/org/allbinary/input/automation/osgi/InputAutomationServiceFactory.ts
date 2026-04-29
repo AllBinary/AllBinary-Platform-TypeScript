@@ -61,8 +61,6 @@ export class InputAutomationServiceFactory
         
 
     private static readonly inputAutomationServiceFactory: InputAutomationServiceFactory = new InputAutomationServiceFactory();
-        
-        
 
     public static getInstance(): InputAutomationServiceFactory{
 
@@ -75,12 +73,8 @@ export class InputAutomationServiceFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 private constructor (){
 
             super();

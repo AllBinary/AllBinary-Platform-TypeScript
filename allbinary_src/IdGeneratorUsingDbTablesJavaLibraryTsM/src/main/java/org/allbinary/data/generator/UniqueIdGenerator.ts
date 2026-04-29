@@ -63,12 +63,8 @@ export class UniqueIdGenerator
         
 
     public static readonly EXT: string = ".unq";
-        
-        
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly idGeneratorEntity: IdGeneratorEntity
 
@@ -76,7 +72,7 @@ export class UniqueIdGenerator
 public constructor (){
 
             super();
-        this.idGeneratorEntity= IdGeneratorEntityFactory.getInstance(); as IdGeneratorEntity;
+        this.idGeneratorEntity=  as IdGeneratorEntityIdGeneratorEntityFactory.getInstance();;
     
 }
 
@@ -87,8 +83,6 @@ var value = value
         try {
             
     var vector: Vector = new Vector();
-        
-        
 ;
     
 vector.add(this.name);
@@ -107,8 +101,6 @@ this.idGeneratorEntity!.insert(vector);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
@@ -139,15 +131,11 @@ this.name= name;
 
         try {
             
-    var idLong: Long = this.idGeneratorEntity!.get(this.name)!;
-        
-        
+    var idLong: number = this.idGeneratorEntity!.get(this.name)!;
 ;
     
 
-    var newValue: Long = (idLong!.longValue() +1).toLong()!;
-        
-        
+    var newValue: number = (idLong!.longValue() +1).toLong()!;
 ;
     
 this.idGeneratorEntity!.update(this.name, newValue);
@@ -168,8 +156,6 @@ this.idGeneratorEntity!.update(this.name, newValue);
                                     {
                                     
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "getNext", e);

@@ -43,8 +43,6 @@ export class PaymentTransactionData
         
 
     public NAME: string = "PAYMENTTRANSACTION_NAME";
-        
-        
 private constructor (){
 
             super();

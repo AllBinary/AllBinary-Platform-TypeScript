@@ -58,6 +58,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TouchButtonInput } from "./TouchButtonInput.js";
+
 import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
 
 export class BasicTouchInputFactory
@@ -66,8 +68,6 @@ export class BasicTouchInputFactory
         
 
     private static readonly SINGLETON: BasicTouchInputFactory = new BasicTouchInputFactory();
-        
-        
 
     public static getInstance(): BasicTouchInputFactory{
 
@@ -80,8 +80,6 @@ export class BasicTouchInputFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     public readonly SPECIAL_BUTTON_SEVEN_TESTING_ONLY: TouchButtonInput
 
@@ -110,19 +108,13 @@ export class BasicTouchInputFactory
     public readonly NONE: TouchButtonInput
 
     private initialized: boolean = false;
-        
-        
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-        
-        
 private constructor (){
 
             super();
         
     var MAX: number = InputFactory.getInstance()!.MAX;
-        
-        
 ;
     
 this.SPECIAL_BUTTON_SEVEN_TESTING_ONLY= new TouchButtonInput(MAX -41, "Button 7 - Testing Only May Cross Over Key Values");
@@ -156,7 +148,7 @@ this.NONE= new TouchButtonInput(MAX -40, "No Button");
 @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
-var inputToGameKeyMapping = inputToGameKeyMapping
+    //var inputToGameKeyMapping = inputToGameKeyMapping
 
                         if(!this.initialized)
                         
@@ -189,7 +181,7 @@ this.list.add(this.SPECIAL_BUTTON_SEVEN_TESTING_ONLY);
     
 this.list.add(this.SPECIAL_BUTTON_EIGHT_TESTING_ONLY);
     
-this.updateAll(this.list, inputToGameKeyMapping);
+this.updateAllFromList(this.list, inputToGameKeyMapping);
     
 CancelTouchButtonInputFactory.getInstance();
     
@@ -200,15 +192,15 @@ CancelTouchButtonInputFactory.getInstance();
 
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
-var inputToGameKeyMapping = inputToGameKeyMapping
-this.updateAll(this.list, inputToGameKeyMapping);
+    //var inputToGameKeyMapping = inputToGameKeyMapping
+this.updateAllFromList(this.list, inputToGameKeyMapping);
     
 }
 
 
-    public updateAll(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
-var list = list
-var inputToGameKeyMapping = inputToGameKeyMapping
+    public updateAllFromList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
+    //var list = list
+    //var inputToGameKeyMapping = inputToGameKeyMapping
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
     
@@ -222,11 +214,9 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = list.size() -1;
-        
-        
 index >= 0; index--)
         {
-touchButtonInput= list.objectArray[index]! as TouchButtonInput;
+touchButtonInput=  as TouchButtonInputlist.objectArray[index]!;
     
 touchButtonInput!.update(inputToGameKeyMapping);
     

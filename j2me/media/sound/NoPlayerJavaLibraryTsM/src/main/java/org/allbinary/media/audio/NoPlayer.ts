@@ -45,12 +45,12 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
         
 import { BasicPlayer } from "./BasicPlayer.js";
 
+import { NullControl } from "./NullControl.js";
+
 export class NoPlayer extends BasicPlayer {
         
 
     public static readonly NO_PLAYER: NoPlayer = new NoPlayer();
-        
-        
 public constructor (){
 
             super();

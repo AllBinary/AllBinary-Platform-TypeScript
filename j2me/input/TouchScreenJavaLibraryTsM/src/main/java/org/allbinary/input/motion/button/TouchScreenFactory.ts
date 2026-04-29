@@ -59,8 +59,6 @@ export class TouchScreenFactory
         
 
     private static readonly SINGLETON: TouchScreenFactory = new TouchScreenFactory();
-        
-        
 
     public static getInstance(): TouchScreenFactory{
 
@@ -73,8 +71,6 @@ export class TouchScreenFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private touch: boolean= false
 
@@ -83,8 +79,6 @@ export class TouchScreenFactory
     private multiTouchDistinct: boolean= false
 
     private touchScreenType: TouchScreenType = TouchScreenTypesFactory.getInstance()!.NOTOUCH;
-        
-        
 private constructor (){
 
             super();
@@ -100,8 +94,6 @@ this.setMultiTouch(false);
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, SINGLETON, commonStrings!.GET_INSTANCE, e);
@@ -182,8 +174,6 @@ this.touchScreenType= touchScreenType;
     public toString(): string{
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append("TouchScreen: ");

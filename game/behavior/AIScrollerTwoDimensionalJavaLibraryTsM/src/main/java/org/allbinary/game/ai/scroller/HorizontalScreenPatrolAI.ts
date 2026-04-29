@@ -84,40 +84,24 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 export class HorizontalScreenPatrolAI extends BasicAI {
         
 
-    public static readonly SOUND: Integer = SmallIntegerSingletonFactory.getInstance()!.getInstance(433)!;
-        
-        
+    public static readonly SOUND: number = SmallIntegerSingletonFactory.getInstance()!.getAt(433)!;
 
     keyDirection: number = Canvas.LEFT;
-        
-        
 
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
-        
-        
 
     private firingX: number = displayInfoSingleton!.getLastHalfWidth()!;
-        
-        
 
     private firedIndex: number = 0;
-        
-        
 
     private readonly MAX_FIRE: number = 28;
-        
-        
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(240);
-        
-        
 
     private readonly secondaryPlayerQueue: PlayerQueue = SecondaryPlayerQueueFactory.getInstance()!;
-        
-        
 
     private readonly sound: Sound
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
+public constructor (hashtable: Hashtable, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
@@ -126,7 +110,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sound= hashtable.get(SOUND as Object); as Sound;
+this.sound=  as Soundhashtable.get(SOUND as Object);;
     
 
                         if(this.sound == 
@@ -137,7 +121,8 @@ this.sound= hashtable.get(SOUND as Object); as Sound;
                                     
 
 
-                            throw new Error("No Sound Provided!!")
+                            throw new Error("No Sound Provided!!");
+                    
 
                                     }
                                 
@@ -148,22 +133,18 @@ this.sound= hashtable.get(SOUND as Object); as Sound;
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
-super.processAI(this.keyDirection);
+super.processKeyAI(this.keyDirection);
     
 
-                        if(this.timeDelayHelper!.isTime())
+                        if(this.timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     
     var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
-        
-        
 ;
     
 
     var currentOwnerLayerX: number = layerInterface!.getXP()!;
-        
-        
 ;
     
 
@@ -172,8 +153,6 @@ super.processAI(this.keyDirection);
                                     {
                                     
     var y: number = MyRandomFactory.getInstance()!.getAbsoluteNextIntAllowZero(50)!;
-        
-        
 ;
     
 layerInterface!.setPosition(this.displayInfoSingleton!.getLastWidth() +layerInterface!.getWidth() +50, y, layerInterface!.getZP());
@@ -191,18 +170,14 @@ this.secondaryPlayerQueue!.add(this.sound);
                         if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth();)
                         
                                     {
-                                    super.processAI(Canvas.KEY_NUM1);
+                                    super.processKeyAI(Canvas.KEY_NUM1);
     
 
-    var gameLayerManager: AllBinaryGameLayerManager = allBinaryLayerManager as AllBinaryGameLayerManager;
-        
-        
+    var gameLayerManager: AllBinaryGameLayerManager =  as AllBinaryGameLayerManagerallBinaryLayerManager;
 ;
     
 
     var FIRE: number = (gameLayerManager!.getGameInfo()!.getCurrentLevel() +12)>>2;
-        
-        
 ;
     
 

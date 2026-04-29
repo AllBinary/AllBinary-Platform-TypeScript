@@ -57,8 +57,6 @@ export class InputFactory
         
 
     private static readonly instance: InputFactory = new InputFactory();
-        
-        
 
     public static getInstance(): InputFactory{
 
@@ -71,40 +69,24 @@ export class InputFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     public readonly KEY_CODE_LABEL: string = "KeyCode: ";
-        
-        
 
     public readonly DEVICE_ID_LABEL: string = "DeviceId: ";
-        
-        
 
     public readonly MAX: number = SmallIntegerSingletonFactory.getInstance()!.MIN;
-        
-        
 
     readonly inputIntegerArray: Input[] = new Array(this.MAX);
-        
-        
 
     public readonly NO_INPUT: Input = new Input(0, commonStrings!.UNKNOWN);
-        
-        
 private constructor (){
 
             super();
         
     var size: number = inputIntegerArray!.length
                 ;
-        
-        
 ;
     
 
@@ -113,8 +95,6 @@ private constructor (){
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.inputIntegerArray[index]= this.NO_INPUT;
@@ -132,7 +112,7 @@ this.inputIntegerArray[id]= input;
 }
 
 
-    public getInstance(id: number): Input{
+    public getInstanceById(id: number): Input{
 var id = id
 
                         if(id < 0)

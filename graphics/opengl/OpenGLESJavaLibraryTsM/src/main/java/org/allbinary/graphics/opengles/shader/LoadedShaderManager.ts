@@ -45,8 +45,6 @@ export class LoadedShaderManager
         
 
     private static readonly instance: ShaderManager = new ShaderManager( -1,  -1);
-        
-        
 
     public static getInstance(): ShaderManager{
 

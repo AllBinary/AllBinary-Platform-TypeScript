@@ -102,7 +102,7 @@ export interface GraphicItemInterface {
 
     getAngle(): number
 
-    paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number)
+    paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number)
 
                 //@Throws(Error::class)
             

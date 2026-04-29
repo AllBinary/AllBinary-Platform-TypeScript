@@ -43,8 +43,6 @@ export class NewInputAutomationModulesData
         
 
     public NAME: string = "NEW_INPUT_AUTOMATION_MODULES";
-        
-        
 private constructor (){
 
             super();

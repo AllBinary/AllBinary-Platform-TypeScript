@@ -78,8 +78,6 @@ this.animationInterfaceArray= animationInterfaceArray;
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.setFrame(frameIndex);
@@ -129,8 +127,6 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.previousFrame();
@@ -150,8 +146,6 @@ this.animationInterfaceArray[index]!.previousFrame();
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.nextFrame();
@@ -176,7 +170,7 @@ this.animationInterfaceArray[index]!.nextFrame();
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
     //var graphics = graphics
     //var x = x
     //var y = y
@@ -187,11 +181,9 @@ this.animationInterfaceArray[index]!.nextFrame();
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
-this.animationInterfaceArray[index]!.paint(graphics, x, y);
+this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
     
 }
 
@@ -210,8 +202,6 @@ this.animationInterfaceArray[index]!.paint(graphics, x, y);
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
@@ -232,8 +222,6 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
                         for (
     var index: number = this.animationInterfaceArray!.length
                 ;
-        
-        
 --index >= 0; )
         {
 this.animationInterfaceArray[index]!.set(gl);

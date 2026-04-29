@@ -43,8 +43,6 @@ export class InputOutputTypeData
         
 
     private static readonly instance: InputOutputTypeData = new InputOutputTypeData();
-        
-        
 
     public static getInstance(): InputOutputTypeData{
 
@@ -62,48 +60,26 @@ private constructor (){
 
 
     public readonly NAME: string = "INPUT_OUTPUT_TYPE_NAME";
-        
-        
 
     public readonly FILE: string = "INPUT_OUTPUT_TYPE_FILE";
-        
-        
 
     public readonly RESPONSE: string = "INPUT_OUTPUT_TYPE_RESPONSE";
-        
-        
 
     public readonly DB: string = "INPUT_OUTPUT_TYPE_DB";
-        
-        
 
     public readonly JSP: string = "jsp";
-        
-        
 
     public readonly JSP_FRAGMENT: string = "jspf";
-        
-        
 
     public readonly PHP: string = "php";
-        
-        
 
     public readonly ASP: string = "asp";
-        
-        
 
     public readonly PL: string = "pl";
-        
-        
 
     public readonly DEFAULT: string = JSP;
-        
-        
 
     public readonly DEFAULT_FRAGMENT: string = JSP_FRAGMENT;
-        
-        
 
 }
                 

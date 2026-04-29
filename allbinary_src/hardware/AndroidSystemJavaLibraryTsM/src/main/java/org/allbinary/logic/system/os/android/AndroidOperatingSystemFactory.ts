@@ -66,8 +66,6 @@ export class AndroidOperatingSystemFactory
             
 
     private static readonly instance: AndroidOperatingSystemFactory = new AndroidOperatingSystemFactory();
-        
-        
 
     public static getInstance(): AndroidOperatingSystemFactory{
 
@@ -80,8 +78,6 @@ export class AndroidOperatingSystemFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 private constructor (){
 
             super();
@@ -99,14 +95,10 @@ private constructor (){
     
 
     var systemProperties: SystemProperties = SystemProperties.getInstance()!;
-        
-        
 ;
     
 
     var osName: string = systemProperties!.getName()!;
-        
-        
 ;
     
 
@@ -132,7 +124,8 @@ private constructor (){
                             
 
 
-                            throw new Error("Specific Android OS Not Supported: " +osName)
+                            throw new Error("Specific Android OS Not Supported: " +osName);
+                    
 
                         }
                             
@@ -151,8 +144,6 @@ private constructor (){
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put("Failed to get OperatingSystem returning NoOperatingSystem", this, commonStrings!.GET_INSTANCE, e);

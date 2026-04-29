@@ -66,25 +66,19 @@ var height = height
                     
 
     var x: number = this.getColumn() *width;
-        
-        
 ;
     
 
     var y: number = this.getRow() *height;
-        
-        
 ;
     
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
-        
-        
 ;
     
-this.point= pointFactory!.getInstance0(x, y);
+this.point= pointFactory!.createXY(x, y);
     
-this.midPoint= pointFactory!.getInstance0(x +(width>>1), y +(height>>1));
+this.midPoint= pointFactory!.createXY(x +(width>>1), y +(height>>1));
     
 }
 

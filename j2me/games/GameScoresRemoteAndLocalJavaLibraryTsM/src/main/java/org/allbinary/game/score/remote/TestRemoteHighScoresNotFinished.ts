@@ -43,8 +43,6 @@ export class TestRemoteHighScoresNotFinished
         
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
-        
-        
 
                 //@Throws(Error::class)
             

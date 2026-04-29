@@ -73,20 +73,14 @@ export class AnimationFactoryInitializationVisitor
     public toString(): string{
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
-        
-        
 ;
     
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
-        
-        
 ;
     
 
     var stringBuffer: StringMaker = new StringMaker();
-        
-        
 ;
     
 stringBuffer!.append(PositionStrings.getInstance()!.DX_LABEL)!.appendfloat(this.dx);

@@ -39,6 +39,8 @@
         
 import { ServiceReference } from "./ServiceReference.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 export class BaseServiceReference
             extends Object
          implements ServiceReference {
@@ -49,7 +51,8 @@ var key = key
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -57,7 +60,8 @@ var key = key
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -66,7 +70,8 @@ var o = o
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 

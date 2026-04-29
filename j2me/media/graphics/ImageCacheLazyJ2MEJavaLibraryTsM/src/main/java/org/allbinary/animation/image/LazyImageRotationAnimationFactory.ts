@@ -61,8 +61,6 @@ export class LazyImageRotationAnimationFactory
     private readonly animationInterfaceFactoryInterface: BaseImageAnimationFactory
 
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
-        
-        
 public constructor (layoutIndex: number, associatedLazyAnimationId: number, animationInterfaceFactoryInterface: BaseImageAnimationFactory){
 
             super();

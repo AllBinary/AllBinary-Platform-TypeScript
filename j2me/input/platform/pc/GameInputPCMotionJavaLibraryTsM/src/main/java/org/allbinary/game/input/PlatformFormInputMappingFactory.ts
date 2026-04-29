@@ -59,8 +59,6 @@ export class PlatformFormInputMappingFactory
         
 
     private static readonly instance: PlatformFormInputMappingFactory = new PlatformFormInputMappingFactory();
-        
-        
 
     public static getInstance(): PlatformFormInputMappingFactory{
 
@@ -73,12 +71,8 @@ export class PlatformFormInputMappingFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private SINGLETON: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
-        
-        
 
     public getOrCreate(): InputToGameKeyMapping{
 
@@ -89,26 +83,18 @@ export class PlatformFormInputMappingFactory
                                     {
                                     
     var pcKeyFactory: PCKeyFactory = PCKeyFactory.getInstance()!;
-        
-        
 ;
     
 
     var inputToGameKeyMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
-        
-        
 ;
     
 
     var gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
-        
-        
 ;
     
 
     var basicTouchInputFactory: BasicTouchInputFactory = BasicTouchInputFactory.getInstance()!;
-        
-        
 ;
     
 inputToGameKeyMapping!.add(gameKeyFactory!.UP, pcKeyFactory!.DPAD_UP);
@@ -140,8 +126,6 @@ this.SINGLETON= inputToGameKeyMapping;
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);

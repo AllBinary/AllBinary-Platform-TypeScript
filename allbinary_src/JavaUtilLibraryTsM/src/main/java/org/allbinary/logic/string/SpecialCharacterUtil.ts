@@ -56,23 +56,17 @@ export class SpecialCharacterUtil
          {
         
 
-    public static getHashMap(): HashMap<any, any>{
+    public static getHashMap(): HashMap{
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
-        
-        
 ;
     
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
-        
-        
 ;
     
 
-    var hashMap: HashMap<any, any> = new HashMap<any, any>();
-        
-        
+    var hashMap: HashMap = new HashMap();
 ;
     
 hashMap!.put("!", stringUtil!.EMPTY_STRING);

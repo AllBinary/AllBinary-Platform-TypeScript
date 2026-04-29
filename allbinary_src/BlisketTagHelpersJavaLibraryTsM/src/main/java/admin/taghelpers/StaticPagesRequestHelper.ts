@@ -124,12 +124,8 @@ export class StaticPagesRequestHelper extends AbContext implements TagHelperInte
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
-        
-        
 
     private request: HttpServletRequest
 
@@ -138,7 +134,7 @@ export class StaticPagesRequestHelper extends AbContext implements TagHelperInte
     private searchParams: SearchParams
 
     private xslFile: string
-public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
+public constructor (propertiesHashMap: HashMap, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
                     var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
@@ -146,9 +142,9 @@ var pageContext = pageContext
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request=  as HttpServletRequestpageContext!.getRequest();;
     
-this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
+this.xslFile=  as StringpropertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME);;
     
 this.getFormData();
     
@@ -179,56 +175,38 @@ this.searchParams= new SearchParams(this.request);
                                 
 
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
-        
-        
 ;
     
 
     var adminEmailSubject: string = "Generated Static Pages Email Notification";
-        
-        
 ;
     
 
     var adminEmailTextBody: string = "Generated static pages for store: " +this.storeName;
-        
-        
 ;
     
 
-    var adminBasicEmailInfo: BasicEmailInfo = new AdminEmailInfo(adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var adminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew AdminEmailInfo(adminEmailSubject, adminEmailTextBody);
 ;
     
 
-    var storeAdminBasicEmailInfo: BasicEmailInfo = new StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody) as BasicEmailInfo;
-        
-        
+    var storeAdminBasicEmailInfo: BasicEmailInfo =  as BasicEmailInfonew StoreEmailInfo(storeFrontInterface, adminEmailSubject, adminEmailTextBody);
 ;
     
 
     var storeAdminEmailInfo: EmailInfo = new EmailInfo(storeAdminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminEmailInfo: EmailInfo = new EmailInfo(adminBasicEmailInfo);
-        
-        
 ;
     
 
     var adminUserEmailEventHandler: UserEmailEventHandler = AdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(this.abeClientInformation, UserEmailEventNameData.STOREGENERATINGSTATICPAGES)!;
-        
-        
 ;
     
 
     var storeAdminUserEmailEventHandler: UserEmailEventHandler = StoreAdminUserEmailEventHandlerSingletons.getInstance()!.getInstance(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, this.abeClientInformation, storeFrontInterface)!;
-        
-        
 ;
     
 storeAdminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERATINGSTATICPAGES, storeAdminEmailInfo);
@@ -258,21 +236,15 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STOREGENERAT
         try {
             
     var contentType: string = AcceptableResponseGenerator.getInstance()!.get(this.request)!;
-        
-        
 ;
     
 
     var searchRequest: SearchRequest = new SearchRequest(
                             null, this.searchParams, xslFile, contentType, this.getPropertiesHashMap(), this.getPageContext());
-        
-        
 ;
     
 
     var success: string = ProductListingFactory.getInstance(searchRequest)!.generateAll(this.storeName)!;
-        
-        
 ;
     
 this.email();
@@ -298,8 +270,6 @@ this.email();
             {
 
     var error: string = "Failed to generate staticpages table";
-        
-        
 ;
     
 
@@ -327,28 +297,20 @@ this.email();
         try {
             
     var storeFrontInterface: StoreFrontInterface = StoreFrontFactory.getInstance(this.storeName)!;
-        
-        
 ;
     
 
     var fromAbPath: AbPath = new AbPath(storeFrontInterface!.getTestHtmlPath() +storeFrontInterface!.getStaticPath());
-        
-        
 ;
     
 
     var toAbPath: AbPath = new AbPath(URLGLOBALS.getWebappPath() +storeFrontInterface!.getName() +AbPathData.getInstance()!.SEPARATOR +storeFrontInterface!.getStaticPath());
-        
-        
 ;
     
 FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
     
 
     var success: string = "Made Public";
-        
-        
 ;
     
 
@@ -372,8 +334,6 @@ FileUtil.getInstance()!.copy(fromAbPath, toAbPath);
             {
 
     var error: string = "Failed to makePublic";
-        
-        
 ;
     
 

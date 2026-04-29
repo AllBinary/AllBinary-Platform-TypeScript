@@ -48,8 +48,6 @@ export class StringValidationJSEUtil
 var string = string
 
     var len: number = string.length!;
-        
-        
 ;
     
 
@@ -58,14 +56,10 @@ var string = string
 
                         for (
     var i: number = 0;
-        
-        
 i < len; i++)
         {
 
     var c: string = string[i]!;
-        
-        
 ;
     
 

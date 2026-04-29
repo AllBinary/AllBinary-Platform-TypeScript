@@ -43,8 +43,6 @@ export class BasicColorUtil
         
 
     private static readonly instance: BasicColorUtil = new BasicColorUtil();
-        
-        
 
     public static getInstance(): BasicColorUtil{
 
@@ -57,29 +55,19 @@ export class BasicColorUtil
 
 
     public readonly ZERO_ARRAY: BasicColor[] = [];
-        
-        
 
-    public readonly ALPHA: number = 0xFF000000;
-        
-        
+    public readonly ALPHA: number = Math.round0xFF000000;
 
     public readonly isAlpha: boolean = true;
-        
-        
 
     public readonly ffOpaque: boolean = true;
-        
-        
 
-    public get(red: number, green: number, blue: number): number{
+    public getRGB(red: number, green: number, blue: number): number{
 var red = red
 var green = green
 var blue = blue
 
     var value: number = 0;
-        
-        
 ;
     
 
@@ -113,7 +101,7 @@ value= blue | value;
 }
 
 
-    public get(alphaValue: number, r: number, g: number, b: number): number{
+    public getARGB(alphaValue: number, r: number, g: number, b: number): number{
     //var alphaValue = alphaValue
     //var r = r
     //var g = g

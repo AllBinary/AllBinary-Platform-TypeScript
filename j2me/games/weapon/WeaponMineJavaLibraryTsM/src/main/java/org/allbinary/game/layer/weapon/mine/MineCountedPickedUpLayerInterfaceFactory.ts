@@ -80,8 +80,6 @@ export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLay
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -102,8 +100,6 @@ pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFac
 
 
     private readonly weaponLayerCircularStaticPool: WeaponLayerCircularPool = MineLayerCircularStaticPool.getInstance()!;
-        
-        
 private constructor (){
             super(PickedUpLayerTypeFactory.getInstance()!.MINE, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_ICON_RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.DROP_RESOURCE)!.getInstance(0));
                     
@@ -124,37 +120,29 @@ private constructor (){
 
 
     private readonly weaponProperties: WeaponProperties = new WeaponProperties( -1L,  -1L, 0, 8000, 10);
-        
-        
 
     private readonly smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
-        
-        
 
                 //@Throws(Error::class)
             
-    public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
+    public getNextInstance(hashtable: Hashtable, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable
     //var x = x
     //var y = y
     //var z = z
 
-    var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(0) as Object); as AllBinaryLayer;
-        
-        
+    var sourceLayerInterface: AllBinaryLayer =  as AllBinaryLayerhashtable.get( as Objectthis.smallIntegerSingletonFactory!.getAt(0));;
 ;
     
 
-    var angle: Integer = hashtable.get(this.smallIntegerSingletonFactory!.getInstance(1) as Object); as Integer;
-        
-        
+    var angle: number =  as Integerhashtable.get( as Objectthis.smallIntegerSingletonFactory!.getAt(1));;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, angle.toInt(), 0, weaponProperties, sourceLayerInterface as ScoreableInterface);;
+                        return this.weaponLayerCircularStaticPool!.getInstance(sourceLayerInterface, x, y, z, Math.roundangle.toInt(), 0, weaponProperties,  as ScoreableInterfacesourceLayerInterface);;
     
 }
 

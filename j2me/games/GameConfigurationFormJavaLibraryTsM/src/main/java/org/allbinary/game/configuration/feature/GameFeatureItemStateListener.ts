@@ -85,8 +85,6 @@ export class GameFeatureItemStateListener
         
 
     private toggleList: BasicArrayList = new BasicArrayListD();
-        
-        
 
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature
@@ -103,8 +101,6 @@ var gameFeature = gameFeature
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private gameOptionsForm: GameOptionsForm
 public constructor (gameOptionsForm: GameOptionsForm){
@@ -115,8 +111,6 @@ this.gameOptionsForm= gameOptionsForm;
     
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
-        
-        
 ;
     
 GameFeatureItemStateListener.add(gameFeatureFactory!.ARTIFICIAL_INTELLEGENCE_PROCESSOR);
@@ -144,8 +138,6 @@ var item = item
         try {
             
     var itemLabel: string = item.getLabel()!;
-        
-        
 ;
     
 this.logUtil!.putF(new StringMaker().
@@ -155,7 +147,7 @@ this.logUtil!.putF(new StringMaker().
                         if(item is GameConfigurationGauge)
                         
                                     {
-                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
+                                    GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm,  as GameConfigurationGaugeitem);
     
 
                                     }
@@ -166,21 +158,19 @@ this.logUtil!.putF(new StringMaker().
                                     {
                                     
     var gameFeatureUtil: GameFeatureUtil = GameFeatureUtil.getInstance()!;
-        
-        
 ;
     
 
                         if(gameFeatureUtil!.isExclusive(itemLabel))
                         
                                     {
-                                    gameFeatureUtil!.updateExclusive(item as ChoiceGroup);
+                                    gameFeatureUtil!.updateExclusiveForChoiceGroup( as ChoiceGroupitem);
     
 
                                     }
                                 
                         else {
-                            gameFeatureUtil!.updateMultiple(item as ChoiceGroup);
+                            gameFeatureUtil!.updateMultiple( as ChoiceGroupitem);
     
 
                         }
@@ -194,8 +184,6 @@ this.logUtil!.putF(new StringMaker().
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 ;
     
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);

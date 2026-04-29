@@ -109,8 +109,6 @@ export class BasicProfileActionScriptCondition extends ProfileActionScriptItem i
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private profileActionProcessorInterfaceVector: Vector
 
@@ -127,8 +125,6 @@ this.init();
     
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
@@ -137,14 +133,10 @@ this.init();
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var actionItemNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -192,8 +184,6 @@ index < nodeList!.getLength(); index++)
 var node = node
 
     var nodeList: NodeList = node.getChildNodes()!;
-        
-        
 ;
     
 
@@ -202,14 +192,10 @@ var node = node
 
                         for (
     var index: number = 0;
-        
-        
 index < nodeList!.getLength(); index++)
         {
 
     var processorActionItemNode: Node = nodeList!.item(index)!;
-        
-        
 ;
     
 
@@ -263,26 +249,18 @@ this.getJPopupMenu()!.add(this.getOutputJPopupMenu());
     getConditionJPopupMenu(): JMenu{
 
     var jMenu: JMenu = new JMenu(NEW_CONDITION);
-        
-        
 ;
     
 
     var jMenuItemColorAt: JMenuItem = new JMenuItem(NEW_COLOR_AT);
-        
-        
 ;
     
 
     var jMenuItemAlways: JMenuItem = new JMenuItem(NEW_ALWAYS);
-        
-        
 ;
     
 
     var jMenuItemTimeInterval: JMenuItem = new JMenuItem(NEW_TIME_INTERVAL);
-        
-        
 ;
     
 jMenuItemColorAt!.addActionListener(this);
@@ -309,26 +287,18 @@ jMenu!.add(jMenuItemTimeInterval);
     getInputJPopupMenu(): JMenu{
 
     var jMenu: JMenu = new JMenu(NEW_INPUT);
-        
-        
 ;
     
 
     var jMenuItemKey: JMenuItem = new JMenuItem(NEW_KEY_INPUT);
-        
-        
 ;
     
 
     var jMenuItemMouse: JMenuItem = new JMenuItem(NEW_MOUSE_INPUT);
-        
-        
 ;
     
 
     var jMenuItemJoystick: JMenuItem = new JMenuItem(NEW_JOYSTICK_INPUT);
-        
-        
 ;
     
 jMenuItemKey!.addActionListener(this);
@@ -355,14 +325,10 @@ jMenu!.add(jMenuItemJoystick);
     getOutputJPopupMenu(): JMenu{
 
     var jMenu: JMenu = new JMenu(NEW_OUTPUT);
-        
-        
 ;
     
 
     var jMenuItemImage: JMenuItem = new JMenuItem(NEW_IMAGE_OUTPUT);
-        
-        
 ;
     
 jMenuItemImage!.addActionListener(this);
@@ -428,20 +394,14 @@ this.add(profileActionScriptNodeInterface);
 var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptConditionData.NAME)!;
-        
-        
 ;
     
 
     var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;
-        
-        
 ;
     
 
     var size: number = profileActionConditionInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -450,14 +410,10 @@ var document = document
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var profileActionConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfaceprofileActionConditionInterfaceVector!.get(index);;
 ;
     
 node.appendChild(profileActionConditionInterface!.toXmlNode(document));
@@ -466,14 +422,10 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 
 
     var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;
-        
-        
 ;
     
 
     var size2: number = profileActionProcessorInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -482,14 +434,10 @@ node.appendChild(profileActionConditionInterface!.toXmlNode(document));
 
                         for (
     var index: number = 0;
-        
-        
 index < size2; index++)
         {
 
-    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
-        
-        
+    var profileActionProcessorInterface: ProfileActionScriptProcessorInterface =  as ProfileActionScriptProcessorInterfaceprofileActionProcessorInterfaceVector!.get(index);;
 ;
     
 node.appendChild(profileActionProcessorInterface!.toXmlNode(document));
@@ -537,9 +485,7 @@ var actionEvent = actionEvent
                         
                                     {
                                     
-    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface = this.getParent(); as ProfileActionScriptNodeInterface;
-        
-        
+    var profileActionScriptNodeInterface: ProfileActionScriptNodeInterface =  as ProfileActionScriptNodeInterfacethis.getParent();;
 ;
     
 profileActionScriptNodeInterface!.removeCondition(this);
@@ -651,8 +597,6 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
     
 
     var treePath: TreePath = new TreePath(this);
-        
-        
 ;
     
 JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()!.expandPath(treePath);
@@ -662,18 +606,14 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
 
                 //@Throws(Error::class)
             
-    public shouldProcess(frame: Long): boolean{
+    public shouldProcess(frame: number): boolean{
 var frame = frame
 
     var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;
-        
-        
 ;
     
 
     var size: number = profileActionConditionInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -682,14 +622,10 @@ var frame = frame
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = profileActionConditionInterfaceVector!.get(index); as ProfileActionScriptConditionInterface;
-        
-        
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface =  as ProfileActionScriptConditionInterfaceprofileActionConditionInterfaceVector!.get(index);;
 ;
     
 
@@ -718,21 +654,17 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    public process(frame: Long){
+    public process(frame: number){
 var frame = frame
 this.logUtil!.putF(new StringMaker().
                             append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS);
     
 
     var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;
-        
-        
 ;
     
 
     var size: number = profileActionProcessorInterfaceVector!.length!;
-        
-        
 ;
     
 
@@ -741,14 +673,10 @@ this.logUtil!.putF(new StringMaker().
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 
-    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface = profileActionProcessorInterfaceVector!.get(index); as ProfileActionScriptProcessorInterface;
-        
-        
+    var profileActionScriptProcessorInterface: ProfileActionScriptProcessorInterface =  as ProfileActionScriptProcessorInterfaceprofileActionProcessorInterfaceVector!.get(index);;
 ;
     
 profileActionScriptProcessorInterface!.process(frame);

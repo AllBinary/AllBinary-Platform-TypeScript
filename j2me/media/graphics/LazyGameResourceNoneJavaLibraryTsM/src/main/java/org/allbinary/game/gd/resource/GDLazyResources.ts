@@ -43,8 +43,6 @@ export class GDLazyResources
         
 
     private static readonly instance: GDLazyResources = new GDLazyResources();
-        
-        
 
     public static getInstance(): GDLazyResources{
 
@@ -56,20 +54,14 @@ export class GDLazyResources
 }
 
 
-    public readonly imageResourceWidthArray: number[] = intArrayOf();
-        
-        
+    public readonly imageResourceWidthArray: number[] = [];
 
-    public readonly imageResourceHeightArray: number[] = intArrayOf();
-        
-        
+    public readonly imageResourceHeightArray: number[] = [];
 
     public readonly requiredResourcesBeforeLoadingArray: string[] = 
                                                         [
                                                             
                                                         ];
-        
-        
 
 }
                 

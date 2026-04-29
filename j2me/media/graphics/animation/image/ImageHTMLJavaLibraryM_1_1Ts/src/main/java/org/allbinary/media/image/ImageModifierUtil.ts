@@ -89,16 +89,10 @@ export class ImageModifierUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private readonly resourceCallbackStrings: ResourceCallbackStrings = ResourceCallbackStrings.getInstance()!;
-        
-        
 
     private alphaArray: boolean[]
 
@@ -125,22 +119,18 @@ export class ImageModifierUtil
     //var alpha = alpha
 
     var alphaF: number = alpha;
-        
-        
 ;
     
 
     var alphaFloat: number = alphaF /255;
-        
-        
 ;
     
-this.setAlpha(originalImage, image, imageIndex, alphaFloat);
+this.setAlphaF(originalImage, image, imageIndex, alphaFloat);
     
 }
 
 
-    public setAlpha(originalImage: Image, image: Image, imageIndex: number, alpha: number){
+    public setAlphaF(originalImage: Image, image: Image, imageIndex: number, alpha: number){
     //var originalImage = originalImage
     //var image = image
     //var imageIndex = imageIndex
@@ -165,28 +155,20 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
     //var imageIndex = imageIndex
     //var alpha = alpha
 
-    var htmlImage: PlaynImage = image as PlaynImage;
-        
-        
+    var htmlImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
-    var originalPlaynImage: playn.core.Image = 
-                                    (originalImage as PlaynImage).getImage(); as playn.core.Image;
-        
-        
+    var originalPlaynImage: playn.core.Image =  as playn.core.Image
+                                    (originalImage as PlaynImage).getImage();;
 ;
     
 
     var canvas: Canvas = canvasImage!.canvas()!;
-        
-        
 ;
     
 canvas.clear();
@@ -203,32 +185,22 @@ canvas.drawImage(originalPlaynImage, 0, 0);
     //var alpha = alpha
 
     var alphaF: number = alpha;
-        
-        
 ;
     
 
     var alphaFloat: number = alphaF /255;
-        
-        
 ;
     
 
-    var htmlImage: PlaynImage = image as PlaynImage;
-        
-        
+    var htmlImage: PlaynImage =  as PlaynImageimage;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
-        
-        
+    var canvasImage: CanvasImage =  as CanvasImagehtmlImage!.getImage();;
 ;
     
 
     var canvas: Canvas = canvasImage!.canvas()!;
-        
-        
 ;
     
 canvas.setAlpha(alphaFloat);
@@ -241,16 +213,12 @@ canvas.setAlpha(alphaFloat);
 
     var size: number = originalImageArray!.length
                 ;
-        
-        
 ;
     
 this.alphaArray= new Array(size);
     
 
     var imageArray: Image[] = new Array(size);
-        
-        
 ;
     
 
@@ -259,8 +227,6 @@ this.alphaArray= new Array(size);
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 imageArray[index]= originalImageArray[index]!;
@@ -283,10 +249,8 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
     //var index = index
     //var image = image
 
-    var image3: playn.core.Image = 
-                                    (image as PlaynImage).getImage(); as playn.core.Image;
-        
-        
+    var image3: playn.core.Image =  as playn.core.Image
+                                    (image as PlaynImage).getImage();;
 ;
     
 
@@ -306,15 +270,13 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
                         else {
                             
-    var callback: ResourceCallback = new object: ResourceCallback()
+    var callback: ResourceCallback = new ResourceCallback()
                                 {
                                 
     public done(resource: any = {}){
 var resource = resource
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(resourceCallbackStrings!.DONE +image.getName(), this, resourceCallbackStrings!.HANDLE_IMAGE);
@@ -327,8 +289,6 @@ copy(imageArray, index, image, image3);
 var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 ;
     
 logUtil!.putF(new StringMaker().
@@ -338,8 +298,6 @@ logUtil!.putF(new StringMaker().
 
                                 }
                             ;
-        
-        
 ;
     
 image3.addCallback(callback);
@@ -368,14 +326,10 @@ image3.addCallback(callback);
         try {
             
     var image2: Image = Image.createImage(image3.width(), image3.height())!;
-        
-        
 ;
     
 
     var graphics: Graphics = image2.getGraphics()!;
-        
-        
 ;
     
 graphics.drawImage(image, 0, 0, Anchor.TOP_LEFT);
@@ -397,8 +351,6 @@ this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE
 
     var size: number = this.alphaArray!.length
                 ;
-        
-        
 ;
     
 
@@ -407,8 +359,6 @@ this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 this.alphaArray[index]= true;

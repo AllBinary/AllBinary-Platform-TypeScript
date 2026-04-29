@@ -61,14 +61,14 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { LifeLayerCircularStaticPool } from "./LifeLayerCircularStaticPool.js";
+
 import { LifeResources } from "./LifeResources.js";
 
 export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
-        
-        
 
                 //@Throws(Error::class)
             
@@ -89,8 +89,6 @@ pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
 
 
     private pool: LifeLayerCircularStaticPool = new LifeLayerCircularStaticPool(new LifeLayerFactory(), 1);
-        
-        
 private constructor (){
             super(PickedUpLayerTypeFactory.getInstance()!.LIFE, IconLayerFactory.getInstance(FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LifeResources.getInstance()!.RESOURCE)!.getInstance(0), 10, 10), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(LifeResources.getInstance()!.RESOURCE)!.getInstance(0));
                     

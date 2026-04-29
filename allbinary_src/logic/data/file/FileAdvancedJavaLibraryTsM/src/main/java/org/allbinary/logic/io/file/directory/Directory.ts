@@ -67,8 +67,6 @@ export class Directory
         
 
     private static readonly instance: Directory = new Directory();
-        
-        
 
     public static getInstance(): Directory{
 
@@ -111,8 +109,6 @@ var directory = directory
         try {
             
     var directoryFile: AbFile = FileFactory.getInstance()!.getInstance(directory)!;
-        
-        
 ;
     
 
@@ -166,8 +162,6 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 var existingDirectory = existingDirectory
 
     var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;
-        
-        
 ;
     
 
@@ -181,7 +175,8 @@ var existingDirectory = existingDirectory
                                     
 
 
-                            throw new Error("Did not remove category: " +existingDirectory +" because files exist")
+                            throw new Error("Did not remove category: " +existingDirectory +" because files exist");
+                    
 
                                     }
                                 
@@ -201,7 +196,8 @@ var existingDirectory = existingDirectory
                             
 
 
-                            throw new Error("Category Directory Is Missing:" +existingDirectory)
+                            throw new Error("Category Directory Is Missing:" +existingDirectory);
+                    
 
                         }
                             
@@ -226,8 +222,6 @@ var file = file
 var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -240,8 +234,6 @@ var isRecursiveSearch = isRecursiveSearch
                                     {
                                     
     var fileArray: any[] = file.listFiles(fileFilter)!;
-        
-        
 ;
     
 
@@ -261,8 +253,6 @@ var isRecursiveSearch = isRecursiveSearch
                                 
 
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-        
-        
 ;
     
 
@@ -283,8 +273,6 @@ var isRecursiveSearch = isRecursiveSearch
 
     var size: number = files.length
                 ;
-        
-        
 ;
     
 
@@ -293,8 +281,6 @@ var isRecursiveSearch = isRecursiveSearch
 
                         for (
     var index: number = 0;
-        
-        
 index < size; index++)
         {
 fileList!.add(files[index]!);
@@ -305,7 +291,7 @@ fileList!.add(files[index]!);
                                     {
                                     recursiveFileList= this.search(fileFilter, files[index]!, isRecursiveSearch);
     
-fileList!.addAll(recursiveFileList);
+fileList!.addAllList(recursiveFileList);
     
 
                                     }
@@ -340,8 +326,6 @@ var file = file
     //var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -354,8 +338,6 @@ var file = file
                                     {
                                     
     var fileArray: any[] = file.listFiles()!;
-        
-        
 ;
     
 
@@ -375,8 +357,6 @@ var file = file
                                 
 
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-        
-        
 ;
     
 
@@ -400,8 +380,6 @@ var file = file
 
                         for (
     var index: number = 0;
-        
-        
 index < files.length; index++)
         {
 fileList!.add(files[index]!);
@@ -412,7 +390,7 @@ fileList!.add(files[index]!);
                                     {
                                     recursiveFileList= this.search(files[index]!, isRecursiveSearch);
     
-fileList!.addAll(recursiveFileList);
+fileList!.addAllList(recursiveFileList);
     
 
                                     }
@@ -449,8 +427,6 @@ var file = file
     //var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -463,8 +439,6 @@ var file = file
                                     {
                                     
     var fileArray: any[] = file.listFiles()!;
-        
-        
 ;
     
 
@@ -484,8 +458,6 @@ var file = file
                                 
 
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-        
-        
 ;
     
 
@@ -509,8 +481,6 @@ var file = file
 
                         for (
     var index: number = 0;
-        
-        
 index < files.length; index++)
         {
 
@@ -528,7 +498,7 @@ index < files.length; index++)
                                     {
                                     recursiveFileList= this.search(searchValue, files[index]!, isRecursiveSearch);
     
-fileList!.addAll(recursiveFileList);
+fileList!.addAllList(recursiveFileList);
     
 
                                     }
@@ -565,8 +535,6 @@ var file = file
 var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
-        
-        
 ;
     
 
@@ -579,8 +547,6 @@ var isRecursiveSearch = isRecursiveSearch
                                     {
                                     
     var fileArray: any[] = file.listFiles()!;
-        
-        
 ;
     
 
@@ -600,8 +566,6 @@ var isRecursiveSearch = isRecursiveSearch
                                 
 
     var files: AbFile[] = FileWrapperUtil.wrapFiles(fileArray)!;
-        
-        
 ;
     
 
@@ -625,8 +589,6 @@ var isRecursiveSearch = isRecursiveSearch
 
                         for (
     var index: number = 0;
-        
-        
 index < files.length; index++)
         {
 fileList!.add(files[index]!);
@@ -646,7 +608,7 @@ fileList!.add(files[index]!);
                                 
 recursiveFileList= this.search(level -1, files[index]!, isRecursiveSearch);
     
-fileList!.addAll(recursiveFileList);
+fileList!.addAllList(recursiveFileList);
     
 }
 

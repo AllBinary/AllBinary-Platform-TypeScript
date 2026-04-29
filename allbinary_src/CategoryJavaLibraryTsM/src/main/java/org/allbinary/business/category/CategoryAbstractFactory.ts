@@ -60,6 +60,8 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
         
 import { CategoryFactoryInterface } from "./CategoryFactoryInterface.js";
 
+import { RuntimeException } from "./RuntimeException.js";
+
 import { CategoryInterface } from "./CategoryInterface.js";
 
 export class CategoryAbstractFactory
@@ -68,12 +70,8 @@ export class CategoryAbstractFactory
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 public constructor (){
 
             super();
@@ -84,7 +82,8 @@ public constructor (){
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -93,7 +92,8 @@ var categoryAbPath = categoryAbPath
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -102,7 +102,8 @@ var node = node
 
 
 
-                            throw new RuntimeException()
+                            throw Error();
+                    
 }
 
 
@@ -120,16 +121,14 @@ var categoryName = categoryName
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryName);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
     
 
                 //: 
@@ -171,16 +170,14 @@ var categoryName = categoryName
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryName) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryName);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
     
 
                 //: 
@@ -220,16 +217,14 @@ var node = node
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(categoryPropertiesFactoryInterface);
     
 
                 //: 
@@ -271,16 +266,14 @@ var node = node
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(node) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(node);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
     
 
                 //: 
@@ -306,7 +299,7 @@ var node = node
 }
 
 
-    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
+    public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap): CategoryInterface{
 var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
@@ -322,16 +315,14 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
                                     }
                                 
 
-    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface = new CategoryPropertiesFactory(categoryPropertiesHashMap) as CategoryPropertiesFactoryInterface;
-        
-        
+    var categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface =  as CategoryPropertiesFactoryInterfacenew CategoryPropertiesFactory(categoryPropertiesHashMap);
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface) as CategoryInterface;
+                        return  as CategoryInterfacenew Category(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
     
 
                 //: 

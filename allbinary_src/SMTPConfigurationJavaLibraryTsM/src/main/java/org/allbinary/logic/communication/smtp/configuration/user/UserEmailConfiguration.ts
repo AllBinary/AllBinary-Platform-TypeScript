@@ -60,12 +60,8 @@ export class UserEmailConfiguration
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
-        
-        
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-        
-        
 
     private userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface
 public constructor (){
@@ -84,7 +80,7 @@ this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration()
     
 }
 
-public constructor (hashMap: HashMap<any, any>){
+public constructor (hashMap: HashMap){
 
             super();
         var hashMap = hashMap

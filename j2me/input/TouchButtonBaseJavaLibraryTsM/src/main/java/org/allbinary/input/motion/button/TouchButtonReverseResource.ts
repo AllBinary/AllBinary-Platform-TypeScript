@@ -43,8 +43,6 @@ export class TouchButtonReverseResource extends TouchButtonResource {
         
 
     private static readonly instance: TouchButtonResource = new TouchButtonReverseResource();
-        
-        
 
     public static getInstance(): TouchButtonResource{
 
