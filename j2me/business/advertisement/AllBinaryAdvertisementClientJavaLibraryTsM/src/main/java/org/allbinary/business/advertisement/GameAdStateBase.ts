@@ -80,7 +80,7 @@ var viewArray = viewArray
 }
 
 
-    public onStart(anyType: any = {}){
+    public onStart(anyType: any){
 var anyType = anyType
 this.init();
     

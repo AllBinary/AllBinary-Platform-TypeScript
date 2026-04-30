@@ -86,12 +86,12 @@ public constructor (){
         }
 
 
-    public addListener(renderer: any = {}){
+    public addListener(renderer: any){
 var renderer = renderer
 }
 
 
-    public getIndex(key: any = {}): number{
+    public getIndex(key: any): number{
     //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
@@ -204,7 +204,7 @@ listOfList[foundIndex]!.add(image);
 
                 //@Throws(Error::class)
             
-    public getWithKey(key: any = {}): Image{
+    public getWithKey(key: any): Image{
     //var key = key
 
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;

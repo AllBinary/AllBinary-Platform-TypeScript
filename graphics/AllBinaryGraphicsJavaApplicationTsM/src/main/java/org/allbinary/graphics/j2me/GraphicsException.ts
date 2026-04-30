@@ -49,7 +49,7 @@ export class GraphicsException extends java.lang.Error {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
-public constructor (msg: string, obj: any = {}, method: string){
+public constructor (msg: string, obj: any, method: string){
             super(msg);
                     var msg = msg
 var obj = obj

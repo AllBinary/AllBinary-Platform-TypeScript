@@ -47,7 +47,7 @@ export class ComparableObject
          implements Comparable {
         
 
-    public compareTo(anyType: any = {}): number{
+    public compareTo(anyType: any): number{
 var anyType = anyType
 
                         if(TsUtil.getInstance()!.hashCode(this) < TsUtil.getInstance()!.hashCode(anyType))

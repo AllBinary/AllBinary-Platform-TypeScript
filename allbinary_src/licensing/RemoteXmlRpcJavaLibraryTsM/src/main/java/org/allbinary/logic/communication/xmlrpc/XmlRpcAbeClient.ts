@@ -174,7 +174,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR);
 
                 //@Throws(Error::class)
             
-    public get(anyType: any = {}): any{
+    public get(anyType: any): any{
 var anyType = anyType
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
@@ -189,7 +189,7 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
                 //@Throws(Error::class)
             
-    tryAnother(anyType: any = {}): any{
+    tryAnother(anyType: any): any{
 var anyType = anyType
 
                         if(getServer() < getMaxServers())

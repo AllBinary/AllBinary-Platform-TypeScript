@@ -69,11 +69,11 @@ expect export class LogFormatUtil
     public static getInstance(): LogFormatUtil
 
 
-    public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string
+    public get(className: string, functionName: string, specialMessage: string, exception: any): string
 
     public getS(className: string, functionName: string, specialMessage: string): string
 
-    public getO(exception: any = {}): string
+    public getO(exception: any): string
 
 }
                 

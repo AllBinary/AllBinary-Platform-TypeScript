@@ -60,7 +60,7 @@ export class WorkFlowWrapper
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private anyType: any
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
 
             super();
         var anyType = anyType

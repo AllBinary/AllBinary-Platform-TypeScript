@@ -55,7 +55,7 @@ export class ColorCacheable
     private key: any
 
     private color: Color
-public constructor (key: any = {}){
+public constructor (key: any){
 
             super();
         var key = key

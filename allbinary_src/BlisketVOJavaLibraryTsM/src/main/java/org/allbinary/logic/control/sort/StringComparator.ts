@@ -50,7 +50,7 @@ public constructor (){
         }
 
 
-    public compare(anyType: any = {}, object2: any = {}): number{
+    public compare(anyType: any, object2: any): number{
 var anyType = anyType
 var object2 = object2
 

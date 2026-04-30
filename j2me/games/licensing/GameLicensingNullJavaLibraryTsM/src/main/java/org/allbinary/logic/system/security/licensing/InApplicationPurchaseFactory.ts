@@ -64,13 +64,13 @@ private constructor (){
         }
 
 
-    public init(anyType: any = {}, stateObject: any = {}){
+    public init(anyType: any, stateObject: any){
 var anyType = anyType
 var stateObject = stateObject
 }
 
 
-    public onCreate(anyType: any = {}, stateObject: any = {}){
+    public onCreate(anyType: any, stateObject: any){
 var anyType = anyType
 var stateObject = stateObject
 }
@@ -80,14 +80,14 @@ var stateObject = stateObject
 }
 
 
-    public onResult(requestCode: number, resultCode: number, data: any = {}){
+    public onResult(requestCode: number, resultCode: number, data: any){
     //var requestCode = requestCode
     //var resultCode = resultCode
     //var data = data
 }
 
 
-    public onSaveState(anyType: any = {}){
+    public onSaveState(anyType: any){
     //var anyType = anyType
 }
 

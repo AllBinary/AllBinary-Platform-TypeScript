@@ -58,7 +58,7 @@ export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnima
 
                 //@Throws(Error::class)
             
-    public static createAdjustedImageArrayRotationAnimationInfo(anyType: any = {}, animationBehavior: AnimationBehavior): AdjustedImageArrayRotationAnimation{
+    public static createAdjustedImageArrayRotationAnimationInfo(anyType: any, animationBehavior: AnimationBehavior): AdjustedImageArrayRotationAnimation{
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 

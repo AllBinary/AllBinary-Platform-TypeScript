@@ -50,7 +50,7 @@ export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
     private readonly frame: number
 
     private motionRectangles: MotionRectangles
-public constructor (anyType: any = {}, frame: number, motionRectangles: MotionRectangles){
+public constructor (anyType: any, frame: number, motionRectangles: MotionRectangles){
             super(anyType);
                     var anyType = anyType
 var frame = frame

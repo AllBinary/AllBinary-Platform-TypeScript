@@ -46,7 +46,7 @@ export interface PoolInterface extends CacheInterface {
 
                 //@Throws(Error::class)
             
-    remove(key: any = {}): CacheableInterface
+    remove(key: any): CacheableInterface
 
 }
                 

@@ -71,7 +71,7 @@ var key = key
 }
 
 
-    public compareTo(o: any = {}): number{
+    public compareTo(o: any): number{
 var o = o
 
 

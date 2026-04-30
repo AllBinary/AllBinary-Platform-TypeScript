@@ -41,7 +41,7 @@ export interface BundleContext {
             
     installBundle(location: string): Bundle
 
-    registerService(clazz: string, service: any = {}, properties: Dictionary): ServiceRegistration
+    registerService(clazz: string, service: any, properties: Dictionary): ServiceRegistration
 
     getService(reference: ServiceReference): any
 

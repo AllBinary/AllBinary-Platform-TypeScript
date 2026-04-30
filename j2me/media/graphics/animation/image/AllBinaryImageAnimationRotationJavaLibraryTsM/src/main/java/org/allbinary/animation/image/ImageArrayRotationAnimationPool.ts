@@ -79,7 +79,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 
                 //@Throws(Error::class)
             
-    public remove(key: any = {}): CacheableInterface{
+    public remove(key: any): CacheableInterface{
 var key = key
 
     var cacheableInterface: CacheableInterface = super.remove(key)!;

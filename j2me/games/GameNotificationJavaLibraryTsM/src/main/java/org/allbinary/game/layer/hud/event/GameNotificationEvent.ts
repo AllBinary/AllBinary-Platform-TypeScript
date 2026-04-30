@@ -61,7 +61,7 @@ export class GameNotificationEvent extends AllBinaryEventObject {
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
     private readonly removeable: Boolean
-public constructor (anyType: any = {}, string: string, seconds: number, basicColor: BasicColor, permanent: Boolean){
+public constructor (anyType: any, string: string, seconds: number, basicColor: BasicColor, permanent: Boolean){
             super(anyType);
                     var anyType = anyType
 var string = string

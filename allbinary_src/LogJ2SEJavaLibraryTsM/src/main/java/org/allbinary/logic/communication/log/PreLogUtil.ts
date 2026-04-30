@@ -52,7 +52,7 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
          {
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
+    /*actual*/ public static put(specialMessage: string, anyType: any, functionName: string){
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -63,7 +63,7 @@ PreLogUtil.putOE(specialMessage, anyType, functionName, NullUtil.getInstance()!.
 
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
 
-    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any){
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -101,7 +101,7 @@ PreLogUtil.putSE(specialMessage, className, functionName, NullUtil.getInstance()
 }
 
 
-    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any){
 var specialMessage = specialMessage
 var className = className
 var functionName = functionName

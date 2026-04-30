@@ -132,7 +132,7 @@ this.chase(collidableInterfaceCompositeInterface);
 export inner class SimpleSteeringVisitor extends SteeringVisitor {
         
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
     //var anyType = anyType
 
     var logUtil: LogUtil = LogUtil.getInstance()!;

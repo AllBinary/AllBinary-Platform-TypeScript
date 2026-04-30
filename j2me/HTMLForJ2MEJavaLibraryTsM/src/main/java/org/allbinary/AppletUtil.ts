@@ -42,7 +42,7 @@ export class AppletUtil
          {
         
 
-    public static isAppletLoader(anyType: any = {}): boolean{
+    public static isAppletLoader(anyType: any): boolean{
 var anyType = anyType
 
 

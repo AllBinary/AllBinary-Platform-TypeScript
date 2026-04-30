@@ -52,7 +52,7 @@ export class TrackingEvent extends AllBinaryEventObject {
         
 
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
-public constructor (allBinaryLayerInterface: any = {}){
+public constructor (allBinaryLayerInterface: any){
             super(allBinaryLayerInterface);
                     var allBinaryLayerInterface = allBinaryLayerInterface
 
@@ -71,7 +71,7 @@ public constructor (allBinaryLayerInterface: any = {}){
 }
 
 
-    public init(anyType: any = {}){
+    public init(anyType: any){
 var anyType = anyType
 this.setSource(anyType);
     

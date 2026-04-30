@@ -46,7 +46,7 @@ export interface AutomaticCacheInterface extends CacheInterface {
 
                 //@Throws(Error::class)
             
-    get(key: any = {}): CacheableInterface
+    get(key: any): CacheableInterface
 
 }
                 

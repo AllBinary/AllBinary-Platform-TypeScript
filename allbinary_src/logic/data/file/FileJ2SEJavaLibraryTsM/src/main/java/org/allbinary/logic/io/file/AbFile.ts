@@ -574,7 +574,7 @@ var pathname = pathname
 }
 
 
-    public equals(obj: any = {}): boolean{
+    public equals(obj: any): boolean{
 var obj = obj
 
 

@@ -42,11 +42,11 @@ export interface QueueInterface {
 
                 //@Throws(Error::class)
             
-    offer(anyType: any = {}): boolean
+    offer(anyType: any): boolean
 
                 //@Throws(Error::class)
             
-    remove(anyType: any = {})
+    remove(anyType: any)
 
                 //@Throws(Error::class)
             

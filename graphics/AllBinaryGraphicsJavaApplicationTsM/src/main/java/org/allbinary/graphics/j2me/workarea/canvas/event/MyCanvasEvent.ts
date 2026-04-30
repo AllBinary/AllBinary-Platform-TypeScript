@@ -46,7 +46,7 @@ import { MyCanvasEventSource } from "./MyCanvasEventSource.js";
 
 export class MyCanvasEvent extends java.util.EventObject {
         
-public constructor (source: any = {}){
+public constructor (source: any){
             super(source);
                     var source = source
 

@@ -46,11 +46,11 @@ expect export class LogFactory
          {
         
 
-    public static getInstanceNoF(specialMessage: string, anyType: any = {}, exception: any = {}): Log
+    public static getInstanceNoF(specialMessage: string, anyType: any, exception: any): Log
 
-    public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log
+    public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log
 
-    public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log
+    public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log
 
 }
                 

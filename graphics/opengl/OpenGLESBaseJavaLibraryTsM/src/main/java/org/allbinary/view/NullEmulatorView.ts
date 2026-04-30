@@ -57,7 +57,7 @@ export class NullEmulatorView
 }
 
 
-    public onEmulatorInitComplete(midletActivity: any = {}){
+    public onEmulatorInitComplete(midletActivity: any){
     //var midletActivity = midletActivity
 }
 

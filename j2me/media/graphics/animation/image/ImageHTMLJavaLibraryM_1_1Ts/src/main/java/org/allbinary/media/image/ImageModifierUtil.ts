@@ -273,7 +273,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
     var callback: ResourceCallback = new ResourceCallback()
                                 {
                                 
-    public done(resource: any = {}){
+    public done(resource: any){
 var resource = resource
 
     var logUtil: LogUtil = LogUtil.getInstance()!;

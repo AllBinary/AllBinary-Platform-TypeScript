@@ -48,7 +48,7 @@ export class AllBinaryEventObject
     public static readonly NULL_EVENT: AllBinaryEventObject = new AllBinaryEventObject(NullUtil.getInstance()!.NULL_OBJECT);
 
     private source: any
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
 
             super();
         var anyType = anyType
@@ -67,7 +67,7 @@ this.source= anyType;
 }
 
 
-    setSource(source: any = {}){
+    setSource(source: any){
 var source = source
 this.source= source;
     

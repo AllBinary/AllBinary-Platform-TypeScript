@@ -56,7 +56,7 @@ export class EmailEvent extends EventObject {
     private userEmailEventNameData: UserEmailEventNameData
 
     private attempts: number= 0
-public constructor (emailEventHandler: any = {}, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number){
+public constructor (emailEventHandler: any, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number){
             super(emailEventHandler);
                     var emailEventHandler = emailEventHandler
 var userEmailEventNameData = userEmailEventNameData

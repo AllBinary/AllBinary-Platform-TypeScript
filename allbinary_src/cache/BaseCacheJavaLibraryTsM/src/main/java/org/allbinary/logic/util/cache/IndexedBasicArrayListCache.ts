@@ -117,7 +117,7 @@ var index = index
 
                 //@Throws(Error::class)
             
-    public add(anyType: any = {}){
+    public add(anyType: any){
 var anyType = anyType
 this.list.add(anyType);
     

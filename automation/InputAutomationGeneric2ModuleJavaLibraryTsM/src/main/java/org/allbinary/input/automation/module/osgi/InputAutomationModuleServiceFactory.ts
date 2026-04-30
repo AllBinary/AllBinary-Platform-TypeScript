@@ -88,7 +88,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getService");
 }
 
 
-    public ungetService(bundle: Bundle, registration: ServiceRegistration, service: any = {}){
+    public ungetService(bundle: Bundle, registration: ServiceRegistration, service: any){
 var bundle = bundle
 var registration = registration
 var service = service

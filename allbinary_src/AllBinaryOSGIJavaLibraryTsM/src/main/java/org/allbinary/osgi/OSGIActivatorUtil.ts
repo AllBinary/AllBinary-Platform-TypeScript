@@ -59,7 +59,7 @@ export class OSGIActivatorUtil
 
                 //@Throws(Error::class)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
+    public static registerAsService(bundleContext: BundleContext, anyType: any, serviceName: string){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName
@@ -70,7 +70,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Has
 
                 //@Throws(Error::class)
             
-    public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
+    public static registerAsService(bundleContext: BundleContext, anyType: any, serviceName: string, properties: Hashtable<any, any>){
     //var bundleContext = bundleContext
     //var anyType = anyType
     //var serviceName = serviceName

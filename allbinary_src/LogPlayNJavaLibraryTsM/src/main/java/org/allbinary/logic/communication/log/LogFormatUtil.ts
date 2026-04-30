@@ -98,7 +98,7 @@ private constructor (){
         }
 
 
-    /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string{
+    /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any): string{
     //var className = className
     //var functionName = functionName
     //var specialMessage = specialMessage
@@ -181,7 +181,7 @@ stringBuffer!.append(functionName);
 
     private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
 
-    /*actual*/ public getO(exception: any = {}): string{
+    /*actual*/ public getO(exception: any): string{
     //var exception = exception
 
                         if(exception != this.nullUtil!.NULL_OBJECT)

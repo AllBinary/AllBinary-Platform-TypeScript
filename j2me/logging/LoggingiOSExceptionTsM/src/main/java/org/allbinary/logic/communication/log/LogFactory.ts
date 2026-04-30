@@ -52,7 +52,7 @@ import { Log } from "./Log.js";
 
     public static readonly LOG: Log = new Log(StringUtil.getInstance()!.EMPTY_STRING, NullUtil.getInstance()!.NULL_OBJECT, StringUtil.getInstance()!.EMPTY_STRING, NullUtil.getInstance()!.NULL_OBJECT);
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
+    /*actual*/ public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -66,7 +66,7 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName

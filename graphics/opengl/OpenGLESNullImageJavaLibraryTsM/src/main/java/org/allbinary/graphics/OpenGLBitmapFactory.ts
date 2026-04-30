@@ -68,7 +68,7 @@ export inner class Config
 
 
     public readonly bitmapConfig: any
-public constructor (bitmapConfig: any = {}){
+public constructor (bitmapConfig: any){
 
             super();
             //var bitmapConfig = bitmapConfig

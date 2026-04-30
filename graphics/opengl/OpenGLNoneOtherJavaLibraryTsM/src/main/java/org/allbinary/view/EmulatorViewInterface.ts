@@ -34,7 +34,7 @@ export interface EmulatorViewInterface {
 
     setMidlet(midlet: MIDlet)
 
-    onEmulatorInitComplete(midletActivity: any = {})
+    onEmulatorInitComplete(midletActivity: any)
 
     onSetDisplayable(displayable: Displayable)
 

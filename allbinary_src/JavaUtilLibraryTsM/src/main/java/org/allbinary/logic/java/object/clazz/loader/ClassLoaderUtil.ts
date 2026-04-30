@@ -46,7 +46,7 @@ export class ClassLoaderUtil
 
                 //@Throws(Error::class)
             
-    public static getName(anyType: any = {}): string{
+    public static getName(anyType: any): string{
 var anyType = anyType
 
     var classLoader: ClassLoader = anyType!.constructor.name.java.classLoader!;

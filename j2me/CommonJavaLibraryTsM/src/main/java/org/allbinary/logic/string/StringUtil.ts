@@ -149,7 +149,7 @@ index < size; index++)
 }
 
 
-    public toString(anyType: any = {}): string{
+    public toString(anyType: any): string{
     //var anyType = anyType
 
                         if(anyType != 

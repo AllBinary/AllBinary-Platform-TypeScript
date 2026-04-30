@@ -48,7 +48,7 @@ this.data= data;
 
     private stringBuilder: StringBuilder = new StringBuilder();
 
-    public visit(anyType: any = {}): any{
+    public visit(anyType: any): any{
 var anyType = anyType
 this.stringBuilder!.delete(0, stringBuilder!.length());
     

@@ -95,7 +95,7 @@ public constructor (clientInfo: AbeClientInformationInterface){
 
                 //@Throws(Error::class)
             
-    public get(anyType: any = {}, cryptInterface: CryptInterface): any{
+    public get(anyType: any, cryptInterface: CryptInterface): any{
     //var anyType = anyType
     //var cryptInterface = cryptInterface
 

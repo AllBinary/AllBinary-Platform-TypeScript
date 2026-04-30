@@ -52,9 +52,9 @@ expect export class LogUtil
 
     public putL(log: Log)
 
-    public putF(specialMessage: string, anyType: any = {}, functionName: string)
+    public putF(specialMessage: string, anyType: any, functionName: string)
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {})
+    public put(specialMessage: string, anyType: any, functionName: string, exception: any)
 
 }
                 

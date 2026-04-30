@@ -62,7 +62,7 @@ export class ParentInventoryTagHelper
 
                 //@Throws(Error::class)
             
-    public isValid(tagClass: any = {}, parentTag: Tag){
+    public isValid(tagClass: any, parentTag: Tag){
 var tagClass = tagClass
 var parentTag = parentTag
 

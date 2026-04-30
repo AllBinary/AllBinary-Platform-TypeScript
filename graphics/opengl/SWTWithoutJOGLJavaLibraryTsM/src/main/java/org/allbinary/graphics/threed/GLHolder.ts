@@ -49,19 +49,19 @@ public constructor (){
         }
 
 
-    public runOnSurfaceCreated(renderer: any = {}){
+    public runOnSurfaceCreated(renderer: any){
     //var renderer = renderer
 }
 
 
-    public runOnSurfaceChanged(renderer: any = {}, width: number, height: number){
+    public runOnSurfaceChanged(renderer: any, width: number, height: number){
     //var renderer = renderer
     //var width = width
     //var height = height
 }
 
 
-    public run(renderer: any = {}){
+    public run(renderer: any){
     //var renderer = renderer
 }
 

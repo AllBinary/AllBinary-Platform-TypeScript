@@ -95,7 +95,7 @@ public constructor (){
         }
 
 
-    public addListener(renderer: any = {}){
+    public addListener(renderer: any){
 var renderer = renderer
 this.renderer= renderer as AllBinaryRendererBase3;
     
@@ -210,7 +210,7 @@ height= textureSize;
 
                 //@Throws(Error::class)
             
-    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 

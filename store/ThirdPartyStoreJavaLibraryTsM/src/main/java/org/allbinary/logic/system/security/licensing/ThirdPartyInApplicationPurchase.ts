@@ -60,7 +60,7 @@ var lockableFeature = lockableFeature
 }
 
 
-    public onCreate(anyType: any = {}, stateObject: any = {}){
+    public onCreate(anyType: any, stateObject: any){
 var anyType = anyType
 var stateObject = stateObject
 }
@@ -74,14 +74,14 @@ var stateObject = stateObject
 }
 
 
-    public onActivityResult(requestCode: number, resultCode: number, dataObject: any = {}){
+    public onActivityResult(requestCode: number, resultCode: number, dataObject: any){
     //var requestCode = requestCode
     //var resultCode = resultCode
     //var dataObject = dataObject
 }
 
 
-    public onSaveInstanceState(anyType: any = {}){
+    public onSaveInstanceState(anyType: any){
 var anyType = anyType
 }
 

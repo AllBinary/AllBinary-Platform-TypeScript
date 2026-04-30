@@ -136,7 +136,7 @@ index < interfaces.length; index++)
 }
 
 
-    public static isImplemented(clazz: Function, anyType: any = {}): boolean{
+    public static isImplemented(clazz: Function, anyType: any): boolean{
 var clazz = clazz
 var anyType = anyType
 
@@ -170,7 +170,7 @@ index < classes.length; index++)
 }
 
 
-    public static isImplemented(className: string, anyType: any = {}): boolean{
+    public static isImplemented(className: string, anyType: any): boolean{
 var className = className
 var anyType = anyType
 
@@ -209,7 +209,7 @@ index < classes.length; index++)
 }
 
 
-    public static isImplementedView(clazz: Function, anyType: any = {}): string{
+    public static isImplementedView(clazz: Function, anyType: any): string{
 var clazz = clazz
 var anyType = anyType
 

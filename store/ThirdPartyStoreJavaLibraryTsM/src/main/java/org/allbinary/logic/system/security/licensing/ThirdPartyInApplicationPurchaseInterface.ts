@@ -44,15 +44,15 @@ export interface ThirdPartyInApplicationPurchaseInterface {
 
     isPurchased(lockableFeature: LockableFeature): boolean
 
-    onCreate(anyType: any = {}, stateObject: any = {})
+    onCreate(anyType: any, stateObject: any)
 
     onDestroy()
 
     onStart()
 
-    onActivityResult(requestCode: number, resultCode: number, dataObject: any = {})
+    onActivityResult(requestCode: number, resultCode: number, dataObject: any)
 
-    onSaveInstanceState(anyType: any = {})
+    onSaveInstanceState(anyType: any)
 
     onStop()
 

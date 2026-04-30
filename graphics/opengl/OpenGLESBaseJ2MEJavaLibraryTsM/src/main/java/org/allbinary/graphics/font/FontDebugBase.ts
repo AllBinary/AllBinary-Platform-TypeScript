@@ -48,7 +48,7 @@ export class FontDebugBase
 
     public readonly SET_FONT: string = "setFont";
 
-    public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any = {}, stringBuffer: StringMaker){
+    public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any, stringBuffer: StringMaker){
     //var currentFont = currentFont
     //var convertedTextSize = convertedTextSize
     //var displayMetrics = displayMetrics

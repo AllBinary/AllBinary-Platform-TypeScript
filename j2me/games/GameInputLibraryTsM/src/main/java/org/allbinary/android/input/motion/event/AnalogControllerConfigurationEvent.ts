@@ -42,7 +42,7 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
         
 export class AnalogControllerConfigurationEvent extends AllBinaryEventObject {
         
-public constructor (anyType: any = {}){
+public constructor (anyType: any){
             super(anyType);
                     var anyType = anyType
 

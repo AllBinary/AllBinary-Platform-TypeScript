@@ -69,14 +69,14 @@ this.inputSensor= inputSensor;
 
                 //@Throws(Error::class)
             
-    public process(anyType: any = {}){
+    public process(anyType: any){
 var anyType = anyType
 }
 
 
                 //@Throws(Error::class)
             
-    public sendNotifications(anyType: any = {}){
+    public sendNotifications(anyType: any){
 var anyType = anyType
 }
 

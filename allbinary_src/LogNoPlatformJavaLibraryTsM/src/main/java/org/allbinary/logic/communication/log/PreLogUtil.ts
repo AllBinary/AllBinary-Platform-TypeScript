@@ -47,11 +47,11 @@ expect export class PreLogUtil
          {
         
 
-    public static put(specialMessage: string, anyType: any = {}, functionName: string)
+    public static put(specialMessage: string, anyType: any, functionName: string)
 
-    public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {})
+    public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any)
 
-    public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {})
+    public static putSE(specialMessage: string, className: string, functionName: string, exception: any)
 public constructor ()
 
 }

@@ -40,7 +40,7 @@
 export interface VisitorInterface {
         
 
-    visit(anyType: any = {}): any
+    visit(anyType: any): any
 
 }
                 

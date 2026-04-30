@@ -63,7 +63,7 @@ export class PathFindingNode
     public parent: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     public geographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
-public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition){
+public constructor (parent: any, geographicMapCellPosition: GeographicMapCellPosition){
 
             super();
             //var parent = parent

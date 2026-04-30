@@ -48,7 +48,7 @@ export class ForcedLogUtil
          {
         
 
-    public static log(message: string, anyType: any = {}){
+    public static log(message: string, anyType: any){
 var message = message
 var anyType = anyType
 

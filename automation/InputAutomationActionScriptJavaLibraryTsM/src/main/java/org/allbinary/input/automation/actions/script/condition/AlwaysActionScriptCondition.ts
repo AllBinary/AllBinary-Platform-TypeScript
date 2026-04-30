@@ -123,7 +123,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 this.setIsOn(.
-                            );
+                            .valueOf());
     
 
                                     }

@@ -44,7 +44,7 @@ export interface CacheableInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    getInstance(key: any = {}): CacheableInterface
+    getInstance(key: any): CacheableInterface
 
 }
                 

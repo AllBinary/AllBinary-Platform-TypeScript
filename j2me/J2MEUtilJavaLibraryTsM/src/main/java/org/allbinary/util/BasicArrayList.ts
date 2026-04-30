@@ -59,7 +59,7 @@ this.objectArray= objectArray;
 }
 
 
-    public addAt(index: number, element: any = {}){
+    public addAt(index: number, element: any){
     //var index = index
     //var element = element
 
@@ -97,7 +97,7 @@ this.currentIndex++;
 }
 
 
-    public add(anyType: any = {}): boolean{
+    public add(anyType: any): boolean{
     //var anyType = anyType
 this.ensureCapacity(this.currentIndex +1);
     
@@ -168,7 +168,7 @@ this.objectArray[--this.currentIndex]=
 }
 
 
-    public remove(anyType: any = {}): boolean{
+    public remove(anyType: any): boolean{
     //var anyType = anyType
 
                         if(anyType == 
@@ -432,7 +432,7 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 }
 
 
-    public indexOf(anyType: any = {}): number{
+    public indexOf(anyType: any): number{
     //var anyType = anyType
 
                         if(anyType == 
@@ -504,7 +504,7 @@ i < this.currentIndex; i++)
 }
 
 
-    public lastIndexOf(anyType: any = {}): number{
+    public lastIndexOf(anyType: any): number{
     //var anyType = anyType
 
                         if(anyType == 
@@ -611,7 +611,7 @@ stringBuffer!.appendint(this.currentIndex);
 }
 
 
-    public set(index: number, element: any = {}): any{
+    public set(index: number, element: any): any{
     //var index = index
     //var element = element
 
@@ -693,7 +693,7 @@ this.currentIndex= 0;
 }
 
 
-    public contains(anyType: any = {}): boolean{
+    public contains(anyType: any): boolean{
     //var anyType = anyType
 
 
