@@ -117,7 +117,7 @@ index < size; index++)
                         
                                     {
                                     
-    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference); as OSGIServiceInterface;
+    var osgiServiceInterface: OSGIServiceInterface = bundleContext!.getService(serviceReference) as OSGIServiceInterface;
 ;
     
 

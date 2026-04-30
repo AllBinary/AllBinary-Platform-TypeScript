@@ -169,7 +169,7 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new StringMaker().
-                            append(this.constructor.name.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();;
+                            append(thisconstructor.name.toString())!.appendint(this.DEFAULT_CHAR_WIDTH)!.append(commonSeps!.FORWARD_SLASH)!.appendint(this.DEFAULT_CHAR_HEIGHT)!.toString();;
     
 }
 

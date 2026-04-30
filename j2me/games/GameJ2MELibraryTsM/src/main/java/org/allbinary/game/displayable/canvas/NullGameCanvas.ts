@@ -138,7 +138,7 @@ super.setWait(1200);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isGameOver(): boolean{
 
@@ -158,7 +158,7 @@ this.running= running;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -169,14 +169,14 @@ this.running= running;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.setPaused(true);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.setPaused(false);

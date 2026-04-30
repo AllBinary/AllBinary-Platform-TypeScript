@@ -68,7 +68,7 @@ super.init(allbinaryLayerFactoryInterface, total);
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface
 
-    var pointsLayer: PointsLayer = this.getNextInstance(); as PointsLayer;
+    var pointsLayer: PointsLayer = this.getNextInstance() as PointsLayer;
 ;
     
 

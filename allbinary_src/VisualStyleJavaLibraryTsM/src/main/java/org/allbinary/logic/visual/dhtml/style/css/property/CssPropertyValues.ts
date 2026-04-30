@@ -130,7 +130,7 @@ this.propertyValueVector= new Vector();
 index < size; index++)
         {
 
-    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index); as Node;
+    var cssPropertyValueNode: Node = cssPropertyNodeVector!.get(index) as Node;
 ;
     
 
@@ -179,7 +179,7 @@ index < size2; index++)
 ;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()); as String;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt) as String;
 ;
     
 this.propertyValueVector!.add(propertyValue);
@@ -219,7 +219,7 @@ this.propertyValueVector!.add(propertyValue);
 index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index); as String;
+    var value: string = this.propertyValueVector!.get(index) as String;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());

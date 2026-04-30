@@ -71,7 +71,7 @@ private constructor (){
     //var width = width
     //var height = height
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, width, height)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(thisconstructor.name.toString()!, width, height)!;
 ;
     
 
@@ -91,7 +91,7 @@ private constructor (){
     //var maxScaleX = maxScaleX
     //var maxScaleY = maxScaleY
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round((width *maxScaleX)) +1, Math.round((height *maxScaleY)) +1)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(thisconstructor.name.toString()!, Math.round((width *maxScaleX)) +1, Math.round((height *maxScaleY)) +1)!;
 ;
     
 

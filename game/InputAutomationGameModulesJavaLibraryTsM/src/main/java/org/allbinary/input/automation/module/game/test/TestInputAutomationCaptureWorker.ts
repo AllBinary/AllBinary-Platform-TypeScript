@@ -111,7 +111,7 @@ this.setGenericProfileActions(genericProfileActions);
             
     public processDataWorkerResults(){
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance(); as J2SECacheInterface;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
 ;
     
 
@@ -154,7 +154,7 @@ index < size; index++)
 ;
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object); as GenericProfileAction;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
 ;
     
 

@@ -169,7 +169,7 @@ index < size; index++)
 ;
     
 
-    var shipping: ShippingInterface = shippingVector!.get(index); as ShippingInterface;
+    var shipping: ShippingInterface = shippingVector!.get(index) as ShippingInterface;
 ;
     
 

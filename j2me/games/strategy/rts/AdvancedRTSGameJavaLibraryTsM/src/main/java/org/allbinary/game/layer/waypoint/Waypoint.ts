@@ -257,7 +257,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList); as GeographicMapCellPosition;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList) as GeographicMapCellPosition;
 ;
     
 
@@ -380,7 +380,7 @@ endGeographicMapCellPosition= this.endList!.get(index); as GeographicMapCellPosi
 ;
     
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;
 ;
     
 customMapGenerator!.copyMapIntoCustomMap();
@@ -494,14 +494,14 @@ this.releaseCachedPaths();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
 ;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;
 ;
     
 

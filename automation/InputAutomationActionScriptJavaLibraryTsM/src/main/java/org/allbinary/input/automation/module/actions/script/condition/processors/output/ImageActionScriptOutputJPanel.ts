@@ -129,7 +129,7 @@ this.setImageTypeJlistModel();
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index); as InputImageType;
+    var imageType: InputImageType = vector.get(index) as InputImageType;
 ;
     
 selectedArray[index++]= imageType!.getIndex();
@@ -231,7 +231,7 @@ this.capturedImageActionScriptOutputInterface!.log();
 index < size; index++)
         {
 
-    var imageType: InputImageType = vector.get(index); as InputImageType;
+    var imageType: InputImageType = vector.get(index) as InputImageType;
 ;
     
 defaultListModel!.addElement(imageType!.getName());

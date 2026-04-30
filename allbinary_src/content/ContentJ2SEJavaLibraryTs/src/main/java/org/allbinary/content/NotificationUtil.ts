@@ -56,8 +56,6 @@ import { NotificationManager } from "./NotificationManager.js";
 
 import { CommandUriAction } from "./CommandUriAction.js";
 
-import { Intent } from "./Intent.js";
-
 import { Notification } from "./Notification.js";
 
 import { PendingIntent } from "./PendingIntent.js";
@@ -79,7 +77,7 @@ export class NotificationUtil
 }
 
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
 
     public notify(command: Command, resource: string, message: string){
 var command = command
@@ -98,7 +96,7 @@ var message = message
 ;
     
 
-    var notification: Notification = new Notification(integer.toInt(), message, Date.now());
+    var notification: Notification = new Notification(integermessage, Date.now());
 ;
     
 

@@ -56,13 +56,13 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
-import { GameConfiguration } from "./GameConfiguration.js";
-
 import { GameOptionsForm } from "./GameOptionsForm.js";
 
 import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
+
+import { GameConfiguration } from "./GameConfiguration.js";
 
 export class GameConfigurationUtil
             extends Object
@@ -145,7 +145,7 @@ stringBuffer!.appendint(gameConfiguration!.getValue()!.toInt());
     
 stringBuffer!.append(this.TO);
     
-stringBuffer!.appendint(value.toInt());
+stringBuffer!.appendint(value);
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.UPDATE);
     

@@ -78,8 +78,6 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
 
-import { MotionGestureInput } from "./MotionGestureInput.js";
-
 import { Math } from "./Math.js";
 
 export class MotionGestureRecognizer
@@ -248,7 +246,7 @@ this.line.setP2(current);
 ;
     
 
-    var absGradient: number = this.j2seMath!.abs(gradient);;
+    var absGradient: number = this.j2seMath!.abs(gradient);
 ;
     
 

@@ -109,10 +109,6 @@ import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
 
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
-import { GameConfiguration } from "./GameConfiguration.js";
-
-import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
-
 import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
@@ -409,7 +405,7 @@ index < size2; index++)
         {
 integer= list.objectArray[index]! as Integer;
     
-keyValuePersistance!.delete(abeClientInformation, integer.toInt());
+keyValuePersistance!.delete(abeClientInformation, integer);
     
 }
 

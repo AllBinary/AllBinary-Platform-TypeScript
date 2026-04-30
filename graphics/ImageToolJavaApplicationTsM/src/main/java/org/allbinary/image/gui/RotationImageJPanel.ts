@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { awt } from "../../../../java/awt.js";
 
     
@@ -130,7 +132,7 @@ new Thread()
 
         try {
             
-    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem(); as String;
+    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem() as String;
 ;
     
 ImageArrayRotationUtil.getInstance()!.process(this@RotationImageJPanel.getImageProcessorInput(), angleAsString, this@RotationImageJPanel);

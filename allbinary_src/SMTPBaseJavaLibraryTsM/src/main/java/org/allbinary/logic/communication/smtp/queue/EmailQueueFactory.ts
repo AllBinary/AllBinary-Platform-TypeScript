@@ -46,7 +46,7 @@ export class EmailQueueFactory
          {
         
 
-    private emailQueueInterface: EmailQueueInterface = BasicEmailQueue.getInstance(); as EmailQueueInterface;
+    private emailQueueInterface: EmailQueueInterface = BasicEmailQueue.getInstance() as EmailQueueInterface;
 
     public static getInstance(): EmailQueueInterface{
 

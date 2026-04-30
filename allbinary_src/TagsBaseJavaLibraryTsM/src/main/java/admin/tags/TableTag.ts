@@ -223,7 +223,7 @@ this.total= total;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -233,7 +233,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -280,7 +280,7 @@ this.total= total;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -290,7 +290,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -337,7 +337,7 @@ this.total= total;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -347,7 +347,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -394,7 +394,7 @@ this.total= total;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -404,7 +404,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -457,7 +457,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -510,7 +510,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -563,7 +563,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -610,7 +610,7 @@ this.total= total;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
 ;
     
 
@@ -619,7 +619,7 @@ this.total= total;
     
 stringBuffer!.append("TableTag Helper: ");
     
-stringBuffer!.append(this.getTagHelperFactoryInterface()!..constructor.name.toString()!);
+stringBuffer!.append(this.getTagHelperFactoryInterface()!.constructor.name.toString()!);
     
 stringBuffer!.append(" Request URI: ");
     
@@ -640,7 +640,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    this.logUtil!.putF("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!..constructor.name.toString()!, this, tagStrings!.DO_START_TAG);
+                                    this.logUtil!.putF("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!.constructor.name.toString()!, this, tagStrings!.DO_START_TAG);
     
 
                                     }

@@ -142,7 +142,7 @@ public constructor (inputAutomationModuleInterface: InputAutomationModuleFactory
         var inputAutomationModuleInterface = inputAutomationModuleInterface
 this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
     
-this.setClassName(this.inputAutomationModuleInterface!..constructor.name.toString()!);
+this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString()!);
     
 }
 

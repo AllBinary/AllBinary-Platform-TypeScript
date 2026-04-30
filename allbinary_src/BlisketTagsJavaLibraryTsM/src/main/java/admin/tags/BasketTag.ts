@@ -117,7 +117,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -177,7 +177,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -241,7 +241,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -305,7 +305,7 @@ this.storeName= value;
     
 
     var emptyBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 

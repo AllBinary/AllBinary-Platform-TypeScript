@@ -179,7 +179,7 @@ this.log();
                         
                                     {
                                     
-    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties(); as RootCategoryPropertiesInterface;
+    var rootCategoryPropertiesInterface: RootCategoryPropertiesInterface = categoryInterface!.getProperties() as RootCategoryPropertiesInterface;
 ;
     
 rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
@@ -235,7 +235,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean{
 var categoryPropertiesInterface = categoryPropertiesInterface
@@ -249,7 +249,7 @@ this.typeVector!.add(this.PROPERTIES);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addChild(categoryInterface: CategoryInterface): boolean{
 var categoryInterface = categoryInterface
@@ -294,7 +294,7 @@ this.typeVector!.add(this.CATEGORY);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
 var categoryInterface = categoryInterface
@@ -387,7 +387,7 @@ this.childCategoryVector!.remove(objectIndex);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
 var categoryInterface = categoryInterface
@@ -560,7 +560,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isValid(): Boolean{
 

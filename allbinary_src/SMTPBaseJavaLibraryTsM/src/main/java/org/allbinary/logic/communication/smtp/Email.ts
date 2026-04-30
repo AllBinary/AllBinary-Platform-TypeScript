@@ -529,7 +529,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 hashMap!.put(EmailData.SUBJECT, msg.getSubject());
     
 
-    var mimeMultipart: MimeMultipart = msg.getContent(); as MimeMultipart;
+    var mimeMultipart: MimeMultipart = msg.getContent() as MimeMultipart;
 ;
     
 
@@ -547,7 +547,7 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject());
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent(); as String;
+    var content: string = mimeMultipart!.getBodyPart(index)!.getContent() as String;
 ;
     
 hashMap!.put(EmailData.CONTENT, content);

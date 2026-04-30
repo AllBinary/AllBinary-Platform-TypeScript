@@ -110,7 +110,7 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
 ;
     
 pathList!.remove(startPathFindingNode!.geographicMapCellPosition);

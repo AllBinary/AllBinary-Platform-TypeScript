@@ -67,7 +67,7 @@ var after = after
 
     public setMaxLength(length: number){
 var length = length
-this.length= length.toString();
+this.length= length;
     
 addAttribute(this.MAXLENGTH, this.length);
     
@@ -76,7 +76,7 @@ addAttribute(this.MAXLENGTH, this.length);
 
     public setSize(size: number){
 var size = size
-this.size= size.toString();
+this.size= size;
     
 addAttribute(this.MAXLENGTH, this.size);
     

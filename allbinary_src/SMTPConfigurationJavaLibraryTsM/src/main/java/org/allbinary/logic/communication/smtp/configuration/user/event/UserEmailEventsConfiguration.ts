@@ -138,7 +138,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
     //var userEmailEventNameData = userEmailEventNameData
     //var userInterface = userInterface
 
-    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()); as UserEmailEventConfigurationInterface;
+    var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()) as UserEmailEventConfigurationInterface;
 ;
     
 

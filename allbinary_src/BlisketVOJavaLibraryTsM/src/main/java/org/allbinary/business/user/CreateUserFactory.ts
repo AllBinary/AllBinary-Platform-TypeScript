@@ -70,7 +70,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()); as String;
+    var roleString: string = hashMap!.get(UserRoleData.NAME.toString()) as String;
 ;
     
 

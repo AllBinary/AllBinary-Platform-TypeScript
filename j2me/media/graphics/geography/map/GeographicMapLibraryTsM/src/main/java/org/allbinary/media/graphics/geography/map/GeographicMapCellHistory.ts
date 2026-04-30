@@ -403,7 +403,7 @@ geographicMapCellPosition= pathList!.get(index); as GeographicMapCellPosition;
                         
                                     {
                                     
-    var value: Boolean = this.visitedList!.get(index); as Boolean;
+    var value: Boolean = this.visitedList!.get(index) as Boolean;
 ;
     
 

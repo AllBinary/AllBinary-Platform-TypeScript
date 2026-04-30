@@ -71,7 +71,7 @@ stringbuffer.appendint(type);
 ;
     
 
-    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key as Object); as BufferedImageInfo;
+    var bufferedImageInfo: BufferedImageInfo = BufferedImageInfoFactory.hashMap!.get(key as Object) as BufferedImageInfo;
 ;
     
 

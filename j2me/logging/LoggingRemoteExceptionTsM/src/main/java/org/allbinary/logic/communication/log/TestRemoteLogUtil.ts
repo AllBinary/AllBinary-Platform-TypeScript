@@ -63,7 +63,7 @@ new TestRemoteLogUtil();
 public constructor (){
 
             super();
-        Globals.getInstance()!.init(this.constructor.name.java.classLoader, TestRemoteLogUtil.PATH);
+        Globals.getInstance()!.init(thisconstructor.name.java.classLoader, TestRemoteLogUtil.PATH);
     
 
     var logUtil: LogUtil = LogUtil.getInstance()!;

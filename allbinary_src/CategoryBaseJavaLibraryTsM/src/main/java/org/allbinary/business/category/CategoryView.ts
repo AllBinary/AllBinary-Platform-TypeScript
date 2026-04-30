@@ -162,7 +162,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
                                 
                         else {
                             
-    var isImpl: string = InterfaceUtil.viewAll(anyType!constructor, CommonSeps.getInstance()!.NEW_LINE)!;
+    var isImpl: string = InterfaceUtil.viewAll(anyType!.constructor, CommonSeps.getInstance()!.NEW_LINE)!;
 ;
     
 

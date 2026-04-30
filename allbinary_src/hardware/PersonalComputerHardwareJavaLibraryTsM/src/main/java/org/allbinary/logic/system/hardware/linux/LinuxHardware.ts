@@ -307,7 +307,7 @@ lineNumberReader= new LineNumberReader(pciFile);
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0); as AbFile;
+    var file: AbFile = fileVector!.get(0) as AbFile;
 ;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
@@ -621,7 +621,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
 ;
     
 hardwareBuffer!.append("Component ");

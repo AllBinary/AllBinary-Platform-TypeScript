@@ -97,7 +97,7 @@ var gameInput = gameInput
                     
 this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
     
-this.currentDistance= this.maxDistance!.toInt();
+this.currentDistance= maxDistance;
     
 }
 
@@ -112,7 +112,7 @@ this.changeDirectionIfReachedPacingAreaMax();
 
     updateTotalDistance(){
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
 ;
     
 

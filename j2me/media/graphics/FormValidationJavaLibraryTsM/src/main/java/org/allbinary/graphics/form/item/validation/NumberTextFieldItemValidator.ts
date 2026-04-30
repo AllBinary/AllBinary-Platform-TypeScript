@@ -216,7 +216,7 @@ result= BooleanFactory.getInstance()!.FALSE;
 ;
     
 
-                        if(number.toInt() > this.min)
+                        if(number > this.min)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
@@ -227,7 +227,7 @@ list.add(stringMaker!.append(name)!.append(" is to small")!.toString());
                                     }
                                 
                              else 
-                        if(number.toInt() > this.max)
+                        if(number > this.max)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());

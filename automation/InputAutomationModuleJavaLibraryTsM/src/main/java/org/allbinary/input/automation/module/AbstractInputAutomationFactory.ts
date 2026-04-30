@@ -85,7 +85,7 @@ this.name= name;
 this.jPanel= jPanel;
     
 
-    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
+    var url: URL = thisconstructor.name.getResource("/help/Help.hs")!;
 ;
     
 this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);

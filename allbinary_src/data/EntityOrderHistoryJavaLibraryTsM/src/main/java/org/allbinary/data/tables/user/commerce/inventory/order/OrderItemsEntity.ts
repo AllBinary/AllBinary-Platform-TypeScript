@@ -364,7 +364,7 @@ var orderId = orderId
         while(itemStatusIter!.hasNext())
         {
 
-    var status: string = itemStatusIter!.next(); as String;
+    var status: string = itemStatusIter!.next() as String;
 ;
     
 

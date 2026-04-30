@@ -104,7 +104,7 @@ var document = document
 index < size; index++)
         {
 
-    var userInterface: User = this.userVector!.get(index); as User;
+    var userInterface: User = this.userVector!.get(index) as User;
 ;
     
 

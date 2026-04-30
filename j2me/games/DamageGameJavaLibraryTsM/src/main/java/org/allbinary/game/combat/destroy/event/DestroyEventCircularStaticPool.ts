@@ -84,7 +84,7 @@ this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface
 
-    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance(); as DestroyedEvent;
+    var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;
 ;
     
 destroyedEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

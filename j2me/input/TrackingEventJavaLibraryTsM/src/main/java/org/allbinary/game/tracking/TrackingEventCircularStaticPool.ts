@@ -71,12 +71,12 @@ this.EVENT_POOL.init(new TrackingEventFactory());
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{
 var layerInterface = layerInterface
 
-    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance(); as TrackingEvent;
+    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance() as TrackingEvent;
 ;
     
 trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

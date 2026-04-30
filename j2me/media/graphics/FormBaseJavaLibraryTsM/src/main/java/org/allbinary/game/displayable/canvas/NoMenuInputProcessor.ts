@@ -73,13 +73,13 @@ private constructor (){
                     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent

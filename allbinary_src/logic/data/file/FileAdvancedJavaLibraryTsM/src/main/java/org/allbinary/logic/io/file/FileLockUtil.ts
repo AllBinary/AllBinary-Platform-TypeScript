@@ -103,7 +103,7 @@ var isReturnOnFailure = isReturnOnFailure
 index < size; index++)
         {
 
-    var file: AbFile = vector.get(index); as AbFile;
+    var file: AbFile = vector.get(index) as AbFile;
 ;
     
 

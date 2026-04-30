@@ -271,11 +271,11 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: number = this.gameNotification!.timeList!.removeAt(0); as Integer;
+    var time: number = this.gameNotification!.timeList!.removeAt(0) as Integer;
 ;
     
 
-    var iTime: number = time.toInt() *1000;
+    var iTime: number = time *1000;
 ;
     
 
@@ -317,7 +317,7 @@ this.point.setY(this.getY());
     var time: number = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
 ;
     
-this.timeDelayHelper!.delay= time.toInt() *1000;
+this.timeDelayHelper!.delay= time *1000;
     
 this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor);
     

@@ -197,7 +197,7 @@ index < size; index++)
 ;
     
 
-    var values: string[] = map.get(key); as Array<String?>;
+    var values: string[] = map.get(key) as Array<String?>;
 ;
     
 hashMap!.put(key.toCharArray()

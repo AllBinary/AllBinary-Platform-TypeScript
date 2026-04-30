@@ -457,7 +457,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -549,7 +549,7 @@ WaypointCellPositionHistory.getInstance()!.addList(list, layerInterface);
 this.addWayPoint(waypointLayer);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
+    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;
 ;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, geographicMapCellPosition);

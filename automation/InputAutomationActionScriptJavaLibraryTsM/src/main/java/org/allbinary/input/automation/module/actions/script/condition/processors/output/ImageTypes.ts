@@ -183,7 +183,7 @@ var document = document
 index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index); as InputImageType;
+    var imageType: InputImageType = this.vector.get(index) as InputImageType;
 ;
     
 newNode!.appendChild(ModDomHelper.createTextNode(document, ImageActionScriptOutputData.TYPE, imageType!.getName()));
@@ -219,7 +219,7 @@ stringBuffer!.append("ImageTypes: ");
 index < size; index++)
         {
 
-    var imageType: InputImageType = this.vector.get(index); as InputImageType;
+    var imageType: InputImageType = this.vector.get(index) as InputImageType;
 ;
     
 stringBuffer!.append(imageType!.getName());

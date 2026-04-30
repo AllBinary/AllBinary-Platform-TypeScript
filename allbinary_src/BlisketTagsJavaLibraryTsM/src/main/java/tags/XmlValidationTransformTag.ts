@@ -80,7 +80,7 @@ public constructor (){
     
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 

@@ -234,7 +234,7 @@ var document = document
 ;
     
 
-    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]); as Array<MetaValidation?>;
+    var metaArray: MetaValidation[] = this.metaValidationVector!.toArray([]) as Array<MetaValidation?>;
 ;
     
 

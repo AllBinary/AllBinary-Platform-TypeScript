@@ -145,7 +145,7 @@ var stringVector = stringVector
         while(index < stringVector!.length)
         {
 
-    var keywords: string = stringVector!.elementAt(index); as String;
+    var keywords: string = stringVector!.elementAt(index) as String;
 ;
     
 
@@ -165,7 +165,7 @@ var stringVector = stringVector
 forIndex < keywordVector!.size(); forIndex++)
         {
 
-    var cleanString: string = keywordVector!.get(forIndex); as String;
+    var cleanString: string = keywordVector!.get(forIndex) as String;
 ;
     
 cleanString= cleanString!.trim();
@@ -197,7 +197,7 @@ hashSet!.add(cleanString);
 spaceIndex < subKeywordVector!.size(); spaceIndex++)
         {
 
-    var subCleanString: string = subKeywordVector!.get(spaceIndex); as String;
+    var subCleanString: string = subKeywordVector!.get(spaceIndex) as String;
 ;
     
 

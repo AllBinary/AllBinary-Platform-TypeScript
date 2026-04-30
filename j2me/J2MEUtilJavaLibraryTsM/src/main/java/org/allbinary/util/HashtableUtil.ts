@@ -24,6 +24,9 @@ import { Enumeration } from "../../../java/util/Enumeration.js";
 import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
+import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+
+    
 
 
 
@@ -43,6 +46,8 @@ import { Hashtable } from "../../../java/util/Hashtable.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { EnumerationUtil } from "./EnumerationUtil.js";
+
 import { BasicArrayListS } from "./BasicArrayListS.js";
 
 import { BasicArrayList } from "./BasicArrayList.js";
@@ -64,30 +69,32 @@ export class HashtableUtil
 }
 
 
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
+
     public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
     //var fromHashtable = fromHashtable
     //var hashtable = hashtable
 
-    var enumeration: Enumeration = fromHashtable!.keys()!;
+    var enumeration: Enumeration<any> = fromHashtable!.keys()!;
 ;
     
 
-    var key: any
+    var keyCanBeNull: any?
 ;
     
 
-    var value: any
+    var valueCanBeNull: any?
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-key= enumeration.nextElement()!;
+keyCanBeNull= this.enumerationUtil!.nextElement(enumeration)!;
     
-value= hashtable.get(key as Object);
+valueCanBeNull= hashtable.get(keyCanBeNull as Object);
     
 
-                        if(value == 
+                        if(valueCanBeNull == 
                                     null
                                 )
                         
@@ -96,7 +103,7 @@ value= hashtable.get(key as Object);
                                     }
                                 
                         else {
-                            hashtable.put(key, value);
+                            hashtable.put(keyCanBeNull, valueCanBeNull);
     
 
                         }
@@ -117,13 +124,13 @@ value= hashtable.get(key as Object);
 ;
     
 
-    var enumeration: Enumeration = hashtable.keys()!;
+    var enumeration: Enumeration<any> = hashtable.keys()!;
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-objectArray[index++]= enumeration.nextElement()!;
+objectArray[index++]= this.enumerationUtil!.nextElement(enumeration)!;
     
 }
 
@@ -143,13 +150,13 @@ objectArray[index++]= enumeration.nextElement()!;
 ;
     
 
-    var enumeration: Enumeration = hashtable.keys()!;
+    var enumeration: Enumeration<any> = hashtable.keys()!;
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-list.add(enumeration.nextElement()!);
+list.add(this.enumerationUtil!.nextElement(enumeration)!);
     
 }
 

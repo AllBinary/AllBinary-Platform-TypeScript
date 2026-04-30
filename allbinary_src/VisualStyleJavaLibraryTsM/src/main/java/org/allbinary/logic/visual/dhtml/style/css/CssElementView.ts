@@ -302,7 +302,7 @@ var document = document
 index < size; index++)
         {
 
-    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index); as DomNodeInterface;
+    var cssPropertyDomNodeInterface: DomNodeInterface = this.cssPropertyVector!.get(index) as DomNodeInterface;
 ;
     
 node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
@@ -322,7 +322,7 @@ node.appendChild(cssPropertyDomNodeInterface!.toXmlNode(document));
 index < size2; index++)
         {
 
-    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index); as DomNodeInterface;
+    var cssElementDomNodeInterface: DomNodeInterface = this.cssElementVector!.get(index) as DomNodeInterface;
 ;
     
 node.appendChild(cssElementDomNodeInterface!.toXmlNode(document));

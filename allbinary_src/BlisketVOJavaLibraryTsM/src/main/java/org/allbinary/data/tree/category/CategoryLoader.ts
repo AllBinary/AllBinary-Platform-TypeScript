@@ -105,7 +105,7 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getDoc(categoryInterface: CategoryInterface): Document{
 var categoryInterface = categoryInterface
@@ -216,7 +216,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(categoryInterface: CategoryInterface): CategoryInterface{
 var categoryInterface = categoryInterface
@@ -259,7 +259,7 @@ var categoryInterface = categoryInterface
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(document: Document): CategoryInterface{
 var document = document
@@ -302,7 +302,7 @@ var document = document
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getAll(categoryInterface: CategoryInterface): CategoryInterface{
 var categoryInterface = categoryInterface
@@ -341,7 +341,7 @@ var categoryInterface = categoryInterface
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getAll(document: Document): CategoryInterface{
 var document = document
@@ -384,7 +384,7 @@ var document = document
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getAll(parentCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 var parentCategoryInterface = parentCategoryInterface
@@ -416,7 +416,7 @@ index < categoryNodeList!.getLength(); index++)
                         
                                     {
                                     
-    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode); as CategoryInterface;
+    var categoryInterface: CategoryInterface = this.categoryFactoryInterface!.getInstance(parentCategoryInterface!.getHierarchy()!.getRoot(), parentCategoryInterface, categoryNode) as CategoryInterface;
 ;
     
 parentCategoryInterface!.addChild(categoryInterface);
@@ -458,7 +458,7 @@ parentCategoryInterface!.addChild(categoryInterface);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addProperties(loadedCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
 var loadedCategoryInterface = loadedCategoryInterface

@@ -106,7 +106,7 @@ var option = option
 ;
     
 
-    var list: BasicArrayList = hashtable.get(name as Object); as BasicArrayList;
+    var list: BasicArrayList = hashtable.get(name as Object) as BasicArrayList;
 ;
     
 

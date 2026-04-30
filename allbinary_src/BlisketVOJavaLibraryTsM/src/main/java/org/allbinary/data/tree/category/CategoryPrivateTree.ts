@@ -95,7 +95,7 @@ this.categoryFactoryInterface= categoryFactoryInterface;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     save(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface
@@ -132,7 +132,7 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     delete(categoryInterface: CategoryInterface){
 var categoryInterface = categoryInterface

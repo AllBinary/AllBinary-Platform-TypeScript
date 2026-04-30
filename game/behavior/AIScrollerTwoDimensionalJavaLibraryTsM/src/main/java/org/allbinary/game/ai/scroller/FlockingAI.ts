@@ -88,10 +88,10 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var allowedDistance: number = hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
+    var allowedDistance: number = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
 ;
     
-this.allowedDistance= allowedDistance!.toInt();
+this.allowedDistance= allowedDistance;
     
 }
 
@@ -129,7 +129,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 index < size; index++)
         {
 
-    var allBinaryLayer: AllBinaryLayer = list.get(index); as AllBinaryLayer;
+    var allBinaryLayer: AllBinaryLayer = list.get(index) as AllBinaryLayer;
 ;
     
 

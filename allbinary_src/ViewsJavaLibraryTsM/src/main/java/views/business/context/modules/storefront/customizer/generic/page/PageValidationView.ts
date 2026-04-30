@@ -163,7 +163,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
 ;
     
 
@@ -190,7 +190,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
                                     }
                                 
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
 
@@ -342,7 +342,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
 
@@ -362,7 +362,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
 index < size; index++)
         {
 
-    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index); as TransformInfo;
+    var transformInfoInterface: TransformInfo = allViewsToBeModifiedVector!.get(index) as TransformInfo;
 ;
     
 

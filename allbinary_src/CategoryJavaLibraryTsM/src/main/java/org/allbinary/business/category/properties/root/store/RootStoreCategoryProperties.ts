@@ -245,7 +245,7 @@ this.log();
 ;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
 ;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +postPath);

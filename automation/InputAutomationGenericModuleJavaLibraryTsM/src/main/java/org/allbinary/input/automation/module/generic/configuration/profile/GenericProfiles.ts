@@ -245,7 +245,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
     public get(name: string): GenericProfile{
 var name = name
 
-    var genericProfile: GenericProfile = this.hashMap!.get(name as Object); as GenericProfile;
+    var genericProfile: GenericProfile = this.hashMap!.get(name as Object) as GenericProfile;
 ;
     
 
@@ -332,7 +332,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String); as GenericProfile;
+    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String) as GenericProfile;
 ;
     
 node.appendChild(genericProfile!.toXmlNode(document));

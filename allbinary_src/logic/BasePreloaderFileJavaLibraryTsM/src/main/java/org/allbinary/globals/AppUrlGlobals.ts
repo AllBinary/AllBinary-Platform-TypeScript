@@ -68,7 +68,7 @@ export class AppUrlGlobals extends UrlGlobalsInterface {
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setWebappPath(path: string){
 var path = path

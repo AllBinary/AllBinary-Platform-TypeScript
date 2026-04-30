@@ -82,7 +82,7 @@ private constructor (){
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
 
-    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName(); as String;
+    var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as String;
 ;
     
 

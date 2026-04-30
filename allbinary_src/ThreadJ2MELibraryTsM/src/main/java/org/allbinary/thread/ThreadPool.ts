@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../java/lang/Thread.js";
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -317,7 +319,7 @@ this.wait();
 }
 
 
-    var runnable: Runnable = this.taskQueue!.removeAt(0); as Runnable;
+    var runnable: Runnable = this.taskQueue!.removeAt(0) as Runnable;
 ;
     
 

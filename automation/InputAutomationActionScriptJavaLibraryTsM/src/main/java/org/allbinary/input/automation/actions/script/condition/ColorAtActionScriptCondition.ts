@@ -106,8 +106,6 @@ import { Point } from "./Point.js";
 
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
 
-import { Color } from "./Color.js";
-
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         
 
@@ -376,7 +374,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 var frame = frame
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get((frame).toLong()); as BufferedImageFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get((frame).toLong()) as BufferedImageFrameCacheable;
 ;
     
 
@@ -392,7 +390,7 @@ var frame = frame
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
 ;
     
 

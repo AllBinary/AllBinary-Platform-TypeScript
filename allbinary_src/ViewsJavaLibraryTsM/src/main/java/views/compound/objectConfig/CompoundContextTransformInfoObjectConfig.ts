@@ -144,7 +144,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 ;
     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
 
@@ -205,7 +205,7 @@ stringBuffer!.append(RootTransformInfoData.NAME);
 index < size; index++)
         {
 
-    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index); as TransformInfoDomNode;
+    var objectConfigTransformInfoDomNode: TransformInfoDomNode = viewVector!.get(index) as TransformInfoDomNode;
 ;
     
 

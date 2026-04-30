@@ -39,6 +39,8 @@
         
 import { GameKeyFactory } from "./GameKeyFactory.js";
 
+import { GameKey } from "./GameKey.js";
+
 import { InputFactory } from "./InputFactory.js";
 
 import { Input } from "./Input.js";

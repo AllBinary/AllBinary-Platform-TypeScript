@@ -84,7 +84,7 @@ params[0]= this.getLibraryName();
     
 classes[0]= this.getLibraryName()!.constructor;
     
-this.loader= new NativeLibraryClassLoader(this.constructor.name.java.classLoader);
+this.loader= new NativeLibraryClassLoader(thisconstructor.name.java.classLoader);
     
 
     var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;
@@ -101,7 +101,7 @@ this.anyType= constructor.newInstance(params);
 ;
     
 
-    var method: Method = this.anyType!..constructor.name.getMethod(commonStrings!.LOAD, 
+    var method: Method = this.anyType!.constructor.name.getMethod(commonStrings!.LOAD, 
                             null)!;
 ;
     

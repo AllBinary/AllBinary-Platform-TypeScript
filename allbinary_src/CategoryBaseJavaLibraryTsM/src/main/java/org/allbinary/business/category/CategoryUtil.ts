@@ -70,7 +70,7 @@ export class CategoryUtil
             extends Object
          {
         
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getPathLevel(categoryPath: AbPath): number{
 var categoryPath = categoryPath
@@ -86,7 +86,7 @@ var categoryPath = categoryPath
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getNameFromNode(node: Node): string{
 var node = node
@@ -95,7 +95,7 @@ var node = node
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL); as Attr;
+    var attrNode: Attr = attributes.getNamedItem(CategoryData.getInstance()!.LABEL) as Attr;
 ;
     
 

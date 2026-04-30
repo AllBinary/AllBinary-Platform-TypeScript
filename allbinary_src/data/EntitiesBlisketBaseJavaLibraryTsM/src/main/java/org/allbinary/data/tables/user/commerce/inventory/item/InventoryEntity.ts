@@ -199,7 +199,7 @@ var storeFrontInterface = storeFrontInterface
 i < size; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object); as HashMap<any, any>;
+    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object) as HashMap<any, any>;
 ;
     
 
@@ -209,7 +209,7 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY); as String;
+    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as String;
 ;
     
 

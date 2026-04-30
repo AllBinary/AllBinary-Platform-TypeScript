@@ -127,7 +127,7 @@ this.number= new SuperCrypt(this.encryption.
 this.id= payment.get(PaymentData.ID); as String;
     
 
-    var def: string = payment.get(EntryData.getInstance()!.DEFAULT); as String;
+    var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as String;
 ;
     
 

@@ -96,7 +96,7 @@ export class LoggingInitInfo
     private hasRead: boolean = false;
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getDoc(): Document{
 
@@ -125,7 +125,7 @@ export class LoggingInitInfo
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static write(){
 
@@ -147,7 +147,7 @@ export class LoggingInitInfo
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static read(){
 
@@ -183,7 +183,7 @@ LoggingInitInfo.logConfigInfoList= new BasicArrayListD();
 i < size; i++)
         {
 
-    var node: Node = logConfigNodeVector!.elementAt(i); as Node;
+    var node: Node = logConfigNodeVector!.elementAt(i) as Node;
 ;
     
 
@@ -207,7 +207,7 @@ LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
 var value = value
@@ -217,7 +217,7 @@ LoggingInitInfo.hasRead= value;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
 
@@ -247,7 +247,7 @@ LoggingInitInfo.hasRead= true;
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static set(logConfigInfoVector: BasicArrayList){
 var logConfigInfoVector = logConfigInfoVector

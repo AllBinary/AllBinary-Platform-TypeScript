@@ -92,7 +92,7 @@ mediaFileType= mediaFileType!.lowercase();
 index >= 0; index--)
         {
 
-    var name: string = this.list.get(index); as String;
+    var name: string = this.list.get(index) as String;
 ;
     
 

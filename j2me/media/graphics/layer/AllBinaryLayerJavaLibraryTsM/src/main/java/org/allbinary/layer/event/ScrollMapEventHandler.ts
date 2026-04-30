@@ -46,8 +46,6 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { ScrollMapEventListenerInterface } from "./ScrollMapEventListenerInterface.js";
-
 export class ScrollMapEventHandler extends BasicEventHandler {
         
 

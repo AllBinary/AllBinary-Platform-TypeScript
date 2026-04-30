@@ -142,7 +142,7 @@ geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource()
                                     outOfResources= false;
     
 
-    var maxResourceLoad: number = Math.round(unitLayer!.getMaxResourceLoad(););
+    var maxResourceLoad: number = Math.round(unitLayer!.getMaxResourceLoad());
 ;
     
 geologicalResource!.remove(maxResourceLoad);
@@ -155,7 +155,7 @@ unitLayer!.setLoad(maxResourceLoad);
 }
 
 
-    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable(); as WaypointInfoHudPaintable;
+    var waypointInfoHudPaintable: WaypointInfoHudPaintable = this.ownerLayer!.getHudPaintable() as WaypointInfoHudPaintable;
 ;
     
 
@@ -172,7 +172,7 @@ unitLayer!.setLoad(maxResourceLoad);
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
 ;
     
 

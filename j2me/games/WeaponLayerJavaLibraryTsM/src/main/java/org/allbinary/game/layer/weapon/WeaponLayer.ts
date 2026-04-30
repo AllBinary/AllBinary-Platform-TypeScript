@@ -264,7 +264,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface(); as IndexedAnimation;
+    var indexedAnimationInterface: IndexedAnimation = this.getAnimationInterface() as IndexedAnimation;
 ;
     
 
@@ -291,7 +291,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                 
                         else {
                             
-    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface(); as CollidableWeaponBehavior;
+    var collidableWeaponBehavior: CollidableWeaponBehavior = this.getCollidableInferface() as CollidableWeaponBehavior;
 ;
     
 

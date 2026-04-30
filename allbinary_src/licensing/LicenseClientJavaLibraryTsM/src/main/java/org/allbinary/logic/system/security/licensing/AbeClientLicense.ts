@@ -147,7 +147,7 @@ this.hashtable= new Hashtable<any, any>();
 this.id= hashtable.get(abeClientInformationData!.LICENSEID); as String;
     
 
-    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS); as Vector;
+    var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;
 ;
     
 this.servers= new BasicArrayListD();
@@ -295,7 +295,7 @@ stringBuffer!.append(BREAK);
 index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index); as String;
+    var nextServerString: string = serverVector!.get(index) as String;
 ;
     
 stringBuffer!.append("Server: ");

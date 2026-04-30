@@ -20,6 +20,8 @@
 
             import { System } from "../../../java/lang/System";
         
+            import { Integer } from "../../../java/lang/Thread.js";
+        
 import { CommandListener } from "../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -215,7 +217,7 @@ this.logUtil!.putF(new StringMaker().
     private readonly THREAD: string = "Thread: ";
 
     private readonly NOT_EQUAL: string = " != ";
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -362,7 +364,7 @@ this.repaint();
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
 var wait = wait

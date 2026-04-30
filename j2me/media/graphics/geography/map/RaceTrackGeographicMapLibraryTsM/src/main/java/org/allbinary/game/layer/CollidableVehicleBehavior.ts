@@ -62,10 +62,6 @@ import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
 
 import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
 
-import { VehicleProperties } from "./VehicleProperties.js";
-
-import { VehicleFrictionProperties } from "./VehicleFrictionProperties.js";
-
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         
 

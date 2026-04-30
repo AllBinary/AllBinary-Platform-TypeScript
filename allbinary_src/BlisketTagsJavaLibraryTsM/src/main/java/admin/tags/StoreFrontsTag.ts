@@ -96,7 +96,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -159,7 +159,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -222,7 +222,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

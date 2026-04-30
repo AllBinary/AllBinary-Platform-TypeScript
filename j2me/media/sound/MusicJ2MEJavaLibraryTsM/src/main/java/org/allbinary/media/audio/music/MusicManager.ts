@@ -4,6 +4,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
     
@@ -157,7 +159,7 @@ this.songList= songList;
                         
                                     {
                                     
-    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList); as Sound;
+    var randomSongSound: Sound = this.basicArrayListUtil!.getRandom(this.songList) as Sound;
 ;
     
 this.nextSong(randomSongSound, 0, 0);

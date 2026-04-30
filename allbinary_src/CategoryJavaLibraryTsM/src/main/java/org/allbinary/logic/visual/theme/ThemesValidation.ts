@@ -143,7 +143,7 @@ var document = document
 i < size; i++)
         {
 
-    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i); as DomNodeInterface;
+    var themeDomNodeInterface: DomNodeInterface = this.themeVector!.get(i) as DomNodeInterface;
 ;
     
 node.appendChild(themeDomNodeInterface!.toXmlNode(document));

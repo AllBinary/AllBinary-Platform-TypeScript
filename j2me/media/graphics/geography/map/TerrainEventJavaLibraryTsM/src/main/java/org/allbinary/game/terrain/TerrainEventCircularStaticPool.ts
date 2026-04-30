@@ -70,12 +70,12 @@ this.EVENT_POOL.init(new TerrainEventFactory());
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
 var basicTerrainInfo = basicTerrainInfo
 
-    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance(); as TerrainEvent;
+    var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;
 ;
     
 trackingEvent!.setBasicTerrainInfoForCircularStaticPool(basicTerrainInfo);

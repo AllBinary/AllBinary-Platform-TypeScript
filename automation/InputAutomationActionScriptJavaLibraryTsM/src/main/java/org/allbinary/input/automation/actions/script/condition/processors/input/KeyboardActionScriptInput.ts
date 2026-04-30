@@ -501,7 +501,7 @@ index++;
 }
 
 
-    var integerArray: number[] = vector.toArray(new Array(vector.length)); as Array<Integer?>;
+    var integerArray: number[] = vector.toArray(new Array(vector.length)) as Array<Integer?>;
 ;
     
 

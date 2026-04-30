@@ -130,7 +130,7 @@ this.surroundingCircularIndexUtil!.setSize(this.surroundingGeographicMapCellPosi
 
     public getNextSurroundingGeographicMapCellPosition(): GeographicMapCellPosition{
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.surroundingGeographicMapCellPositionList!.get(this.surroundingCircularIndexUtil!.getIndex()) as GeographicMapCellPosition;
 ;
     
 this.surroundingCircularIndexUtil!.next();

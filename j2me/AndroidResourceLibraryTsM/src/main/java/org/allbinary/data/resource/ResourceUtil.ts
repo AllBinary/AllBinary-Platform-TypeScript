@@ -138,7 +138,7 @@ this.context= aContext;
     public getResourceId(resource: string): number{
 var resource = resource
 
-    var value: number = this.hashMap!.get(resource as Object); as Integer;
+    var value: number = this.hashMap!.get(resource as Object) as Integer;
 ;
     
 
@@ -146,7 +146,7 @@ var resource = resource
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value)!.toString(), this, "getResourceId");
     
 
                                     }
@@ -168,7 +168,7 @@ var value = value
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value)!.toString(), this, "addResource");
     
 
                         if(this.containsDuplicate(resource, value))
@@ -205,7 +205,7 @@ var value = value
 --index >= 0; )
         {
 
-    var integer: number = this.hashMap!.get(objectArray[index]! as Object); as Integer;
+    var integer: number = this.hashMap!.get(objectArray[index]! as Object) as Integer;
 ;
     
 
@@ -217,7 +217,7 @@ var value = value
                         
                                     {
                                     
-                        if(value.toInt() == integer.toInt())
+                        if(value == integer)
                         
                                     {
                                     
@@ -261,11 +261,11 @@ this.resources= resources;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: number = this.hashMap!.get(resource as Object); as Integer;
+    var integer: number = this.hashMap!.get(resource as Object) as Integer;
 ;
     
 
-    var id: number = integer.toInt()!;
+    var id: number = integer!;
 ;
     
 

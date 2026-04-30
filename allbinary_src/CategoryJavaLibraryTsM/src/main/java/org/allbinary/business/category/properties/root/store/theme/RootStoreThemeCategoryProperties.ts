@@ -148,7 +148,7 @@ stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.THEMEPATH);
 ;
     
 
-    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = transformInfoHttpStoreInterface!.getPageContext()!.getRequest() as HttpServletRequest;
 ;
     
 this.webAppAbPath= new AbPath(httpServletRequest!.getContextPath() +abPath!.toString());

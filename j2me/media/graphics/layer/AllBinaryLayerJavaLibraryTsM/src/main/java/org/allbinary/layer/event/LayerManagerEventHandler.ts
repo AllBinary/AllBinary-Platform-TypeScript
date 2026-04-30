@@ -60,8 +60,6 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { LayerManagerEventListener } from "./LayerManagerEventListener.js";
 
-import { LayerManagerEventListenerInterface } from "./LayerManagerEventListenerInterface.js";
-
 export class LayerManagerEventHandler extends BasicEventHandler {
         
 
@@ -155,7 +153,7 @@ super.fireEvent(eventObject);
     public readonly DELETE: string = "Delete";
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireDeleteEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject

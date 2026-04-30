@@ -107,7 +107,7 @@ index < size; index++)
         {
 typeAsInteger= (types.get(index); as Integer);
     
-type= typeAsInteger!.toInt();
+type= typeAsInteger;
     
 new GeographicMapCellType(type, 0);
     

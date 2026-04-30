@@ -200,7 +200,7 @@ list.add(geographicMapCellPosition);
 ;
     
 
-    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.toInt();
+    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger;
 ;
     
 

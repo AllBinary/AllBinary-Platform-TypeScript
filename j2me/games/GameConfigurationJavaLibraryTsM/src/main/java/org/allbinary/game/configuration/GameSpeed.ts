@@ -39,8 +39,6 @@
         
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
-import { GameConfiguration } from "./GameConfiguration.js";
-
 export class GameSpeed
             extends Object
          {

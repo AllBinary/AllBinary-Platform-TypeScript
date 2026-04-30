@@ -198,7 +198,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = componentVector!.get(index); as TransformInfo;
+    var transformInfo: TransformInfo = componentVector!.get(index) as TransformInfo;
 ;
     
 

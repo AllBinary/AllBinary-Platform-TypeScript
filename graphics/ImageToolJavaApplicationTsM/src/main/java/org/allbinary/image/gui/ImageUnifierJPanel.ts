@@ -98,7 +98,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
-import { Icon } from "./Icon.js";
+import { ImageIconUnique } from "./ImageIconUnique.js";
+
+import { ImageIcon } from "./ImageIcon.js";
 
 import { JLabel } from "./JLabel.js";
 
@@ -243,7 +245,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;
 ;
     
 
@@ -329,7 +331,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImage", e);
 index < bufferedImageArray!.length; index++)
         {
 
-    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index); as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = this.imageJList!.getModel()!.getElementAt(index) as ImageIconUnique;
 ;
     
 
@@ -801,7 +803,7 @@ var evt = evt
 ;
     
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;
 ;
     
 
@@ -809,7 +811,7 @@ var evt = evt
                         
                                     {
                                     
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index +1);
@@ -835,11 +837,11 @@ var evt = evt
                         
                                     {
                                     
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;
 ;
     
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index); as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(index) as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, index -1);
@@ -857,7 +859,7 @@ this.updateImage();
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var defaultListModel: DefaultListModel = this.imageJList!.getModel(); as DefaultListModel;
+    var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;
 ;
     
 
@@ -877,7 +879,7 @@ var evt = evt
 index >= 0; index--)
         {
 
-    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last); as ImageIconUnique;
+    var indexedImageIcon: ImageIconUnique = defaultListModel!.remove(last) as ImageIconUnique;
 ;
     
 defaultListModel!.insertElementAt(indexedImageIcon, last -index);

@@ -53,11 +53,7 @@ import { ImageUtil } from "./ImageUtil.js";
 
 import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
 
-import { GraphicsDevice } from "./GraphicsDevice.js";
-
 import { GraphicsConfiguration } from "./GraphicsConfiguration.js";
-
-import { Graphics2D } from "./Graphics2D.js";
 
 import { ImageUnifierProperties } from "./ImageUnifierProperties.js";
 

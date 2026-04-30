@@ -42,6 +42,9 @@ import { LayerInterfaceVisitor } from "../../../../org/allbinary/layer/LayerInte
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 
 
 
@@ -63,14 +66,14 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
 
-import { LayerPlacementType } from "./LayerPlacementType.js";
-
 import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 
 export class LayerPlacer
             extends Object
          {
         
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     readonly layerInterfaceVisitor: LayerInterfaceVisitor
 
@@ -133,7 +136,7 @@ this.process(layerPlacementInterface);
 ;
     
 
-    var enumeration: Enumeration = hashtable.keys()!;
+    var enumeration: Enumeration<any> = hashtable.keys()!;
 ;
     
 
@@ -161,9 +164,9 @@ this.process(layerPlacementInterface);
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-point= enumeration.nextElement()!; as GPoint;
+point= this.enumerationUtil!.nextElement(enumeration)!; as GPoint;
     
 layerHashtable= hashtable.get(point as Object); as Hashtable<any, any>;
     

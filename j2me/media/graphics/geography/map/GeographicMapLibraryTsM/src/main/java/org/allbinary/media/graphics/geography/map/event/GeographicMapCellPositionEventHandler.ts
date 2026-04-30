@@ -58,8 +58,6 @@ import { BasicEventHandler } from "../../../../../../../org/allbinary/logic/util
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { GeographicMapCellPositionEventListenerInterface } from "./GeographicMapCellPositionEventListenerInterface.js";
-
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         
 
@@ -128,7 +126,7 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
+    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
 ;
     
 miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);
@@ -149,7 +147,7 @@ super.fireEvent(eventObject);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -168,7 +166,7 @@ var eventObject = eventObject
 
         try {
             
-    var miniMapLayer: MiniMapLayer = this.list.get(index); as MiniMapLayer;
+    var miniMapLayer: MiniMapLayer = this.list.get(index) as MiniMapLayer;
 ;
     
 miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMapCellPositionEvent);

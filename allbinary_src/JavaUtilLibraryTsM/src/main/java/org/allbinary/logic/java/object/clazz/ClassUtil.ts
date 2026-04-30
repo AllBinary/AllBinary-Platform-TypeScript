@@ -67,7 +67,7 @@ var lineBreak = lineBreak
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ClassUtil.viewAll(anyType!constructor, lineBreak);;
+                        return ClassUtil.viewAll(anyType!.constructor, lineBreak);;
     
 
                                     }

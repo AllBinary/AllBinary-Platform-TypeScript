@@ -149,7 +149,7 @@ this.value= value;
         while(index < size)
         {
 
-    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++); as String;
+    var nameSpaceWithProperties: string = nameSpaceWithPropertiesVector!.get(index++) as String;
 ;
     
 list.clear();
@@ -172,7 +172,7 @@ list.clear();
                         
                                     {
                                     
-    var packageName: string = nameSpaceAndPropertiesVector!.get(0); as String;
+    var packageName: string = nameSpaceAndPropertiesVector!.get(0) as String;
 ;
     
 
@@ -196,7 +196,7 @@ this.nameSpaceVector!.add(packageName);
                         
                                     {
                                     
-    var properties: string = nameSpaceAndPropertiesVector!.get(1); as String;
+    var properties: string = nameSpaceAndPropertiesVector!.get(1) as String;
 ;
     
 
@@ -249,7 +249,7 @@ packageIndex++;
     public getPackageProperties(packageIndex: number): HashMap<any, any>{
 var packageIndex = packageIndex
 
-    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()); as HashMap<any, any>;
+    var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()) as HashMap<any, any>;
 ;
     
 
@@ -336,7 +336,7 @@ var properties = properties
         while(index < size)
         {
 
-    var property: string = propertyVector!.get(index); as String;
+    var property: string = propertyVector!.get(index) as String;
 ;
     
 list.clear();
@@ -353,7 +353,7 @@ list.clear();
         while(index2 < propertyNameValueVector!.size())
         {
 
-    var propertyName: string = propertyNameValueVector!.get(index2++); as String;
+    var propertyName: string = propertyNameValueVector!.get(index2++) as String;
 ;
     
 
@@ -361,7 +361,7 @@ list.clear();
                         
                                     {
                                     
-    var propertyValue: string = propertyNameValueVector!.get(index2++); as String;
+    var propertyValue: string = propertyNameValueVector!.get(index2++) as String;
 ;
     
 

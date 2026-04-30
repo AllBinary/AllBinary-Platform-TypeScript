@@ -64,8 +64,6 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { Controllable2 } from "./Controllable2.js";
-
 export class PlayerComposite
             extends Object
          implements Controllable, Player {
@@ -89,7 +87,7 @@ this.timeElapsedHelper!.delay= repeatTime;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener

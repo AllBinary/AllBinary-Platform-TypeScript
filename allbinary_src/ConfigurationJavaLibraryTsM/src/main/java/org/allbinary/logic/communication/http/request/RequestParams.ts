@@ -169,7 +169,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = this.map.get(key); as Array<String?>;
+    var values: string[] = this.map.get(key) as Array<String?>;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -250,7 +250,7 @@ i < size; i++)
 ;
     
 
-    var values: string[] = this.map.get(key); as Array<String?>;
+    var values: string[] = this.map.get(key) as Array<String?>;
 ;
     
 hashMap!.put(key.toCharArray()

@@ -533,7 +533,7 @@ genericProfileActionsJPanel!.setGenericProfileActions(this.getSelectedGenericPro
 genericProfileActionsJPanel!.selectFirstElement();
     
 
-    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout(); as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.getBlankGenericProfileActionsJPanel()!.getLayout() as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(genericProfileActionsJPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -609,7 +609,7 @@ this.captureMotionAnalysisJCheckBox!.setSelected(false);
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
 ;
     
 this.logUtil!.putF(genericProfile!.getName() +" has GenericProfileDataWorkerType: " +genericProfileDataWorkerType!.toString(), this, "updateProfileOptions");
@@ -732,7 +732,7 @@ var evt = evt
 
         try {
             
-    var profileNameString: string = this.genericProfilesJList!.getSelectedValue(); as String;
+    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as String;
 ;
     
 this.updateProfileUI(profileNameString);

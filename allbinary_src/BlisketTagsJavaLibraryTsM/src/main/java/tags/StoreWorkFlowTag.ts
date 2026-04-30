@@ -122,14 +122,14 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
     
 
     var result: number = method.invoke(this.getHelper(), 
-                            null); as Integer;
+                            null) as Integer;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result.toInt();;
+                        return result;;
     
 
                 //: 

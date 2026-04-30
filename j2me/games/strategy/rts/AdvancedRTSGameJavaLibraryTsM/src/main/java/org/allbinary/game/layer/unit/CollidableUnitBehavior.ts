@@ -145,7 +145,7 @@ export inner class SimpleSteeringVisitor extends SteeringVisitor {
                         
                                     {
                                     
-    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0); as CollidableCompositeLayer;
+    var allbinaryLayer: CollidableCompositeLayer = this.getList()!.get(0) as CollidableCompositeLayer;
 ;
     
 

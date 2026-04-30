@@ -60,6 +60,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 
 
 
@@ -91,6 +94,8 @@ export class PersistentInputMapping
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     private readonly inputMapping: InputToGameKeyMapping = new InputToGameKeyMapping();
 
@@ -213,11 +218,27 @@ this.inputPersistance!.loadAll(abeClientInformation);
 ;
     
 
+    var totalMappedTo: number = 0;
+;
+    
+
     var size: number = list.size()!;
 ;
     
 
-    var totalMappedTo: number = 0;
+    var hashtable: Hashtable<any, any>
+;
+    
+
+    var enumeration: Enumeration<any>
+;
+    
+
+    var mappedToInput: Input
+;
+    
+
+    var gameActionInput: Input
 ;
     
 
@@ -228,24 +249,16 @@ this.inputPersistance!.loadAll(abeClientInformation);
     var index: number = 0;
 index < size; index++)
         {
-
-    var hashtable: Hashtable<any, any> = list.objectArray[index]! as Hashtable<any, any>;
-;
+hashtable= list.objectArray[index]! as Hashtable<any, any>;
+    
+enumeration= hashtable.keys();
     
 
-    var enumeration: Enumeration = hashtable.keys()!;
-;
-    
-
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-
-    var mappedToInput: Input = enumeration.nextElement()!; as Input;
-;
+mappedToInput= this.enumerationUtil!.nextElement(enumeration)!; as Input;
     
-
-    var gameActionInput: Input = hashtable.get(mappedToInput as Object); as Input;
-;
+gameActionInput= hashtable.get(mappedToInput as Object); as Input;
     
 totalMappedTo++;
     

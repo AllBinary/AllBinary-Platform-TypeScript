@@ -99,7 +99,7 @@ this.totalCharArray= this.getPrimitiveLongUtil()!.getCharArray(size);
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
 ;
     
 
@@ -130,7 +130,7 @@ index >= 0; index--)
 index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index); as String;
+    var rootName: string = this.rootNameList!.get(index) as String;
 ;
     
 stringBuffer!.append(rootName);

@@ -20,6 +20,8 @@
 
             import { System } from "../../../../../../java/lang/System";
         
+            import { Integer } from "../../../../../../java/lang/Thread.js";
+        
 import { File } from "../../../../../../java/io/File.js";
 
     
@@ -144,7 +146,7 @@ this.fileBasicArrayList= new BasicArrayListD();
 var thread = thread
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -155,7 +157,7 @@ var thread = thread
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running

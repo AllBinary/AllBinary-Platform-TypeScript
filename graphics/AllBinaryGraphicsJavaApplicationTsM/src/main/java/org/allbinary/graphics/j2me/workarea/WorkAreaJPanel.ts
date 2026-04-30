@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -219,7 +221,7 @@ this.initMyComponents(dimension);
 index < numberOfFrames; index++)
         {
 
-    var node: Node = canvasNodeList!.get(index); as Node;
+    var node: Node = canvasNodeList!.get(index) as Node;
 ;
     
 
@@ -364,7 +366,7 @@ MyCanvasEventService.addListener(this as MyCanvasEventListener);
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
 ;
     
 canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), index);
@@ -379,21 +381,21 @@ canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), index);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public play(){
 this.isPlaying= true;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
 this.isPlaying= false;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isPlaying(): boolean{
 
@@ -483,7 +485,7 @@ var factor = factor
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
 ;
     
 canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
@@ -534,11 +536,11 @@ var treeNode = treeNode
                         
                                     {
                                     
-    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object); as Integer;
+    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.toInt()); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger) as CanvasJPanel;
 ;
     
 this.initDuplicate(canvasJPanel!.duplicate());
@@ -567,7 +569,7 @@ var totalAngle = totalAngle
 index < increments; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
 ;
     
 
@@ -585,7 +587,7 @@ this.initDuplicate(newCanvasJPanel);
 
     public explodeAll(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
 ;
     
 canvasJPanel!.explodeAll();
@@ -607,7 +609,7 @@ var explodeType = explodeType
 index < numberOfFrames; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
 ;
     
 
@@ -627,7 +629,7 @@ this.initDuplicate(newCanvasJPanel);
             
     public autoMirror(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
 ;
     
 
@@ -640,7 +642,7 @@ this.initDuplicate(newCanvasJPanel);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     select(index: number){
 var index = index
@@ -649,7 +651,7 @@ var index = index
                         
                                     {
                                     
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
 ;
     
 
@@ -686,7 +688,7 @@ var treeNode = treeNode
 ;
     
 
-    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object); as Integer;
+    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
 ;
     
 
@@ -695,7 +697,7 @@ var treeNode = treeNode
                                 )
                         
                                     {
-                                    this.select(frameInteger!.toInt());
+                                    this.select(frameInteger);
     
 
                                     }
@@ -739,7 +741,7 @@ nameNode!.appendChild(nameTextNode);
 index < size; index++)
         {
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
 ;
     
 framesNode!.appendChild(canvasJPanel!.toDom());
@@ -846,12 +848,12 @@ var evt = evt
                                     this.canvasHolderJPanel!.removeAll();
     
 
-    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()); as Integer;
+    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
 ;
     
-this.canvasJPanelList!.remove(frameInt!.toInt());
+this.canvasJPanelList!.remove(frameInt);
     
-this.select(frameInt!.toInt());
+this.select(frameInt);
     
 
                                     }
@@ -888,11 +890,11 @@ var evt = evt
 ;
     
 
-    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()); as Integer;
+    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.toInt()); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt) as CanvasJPanel;
 ;
     
 
@@ -903,7 +905,7 @@ var evt = evt
                                     {
                                     canvasJPanel!.addAngle(evt.getAngle());
     
-this.select(frameInt!.toInt());
+this.select(frameInt);
     
 
                                     }
@@ -933,7 +935,7 @@ this.autoExplode(10, 0);
             
     public center(){
 
-    var canvasJPanel: CanvasJPanel = this.getCurrentFrame(); as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.getCurrentFrame() as CanvasJPanel;
 ;
     
 canvasJPanel!.center();

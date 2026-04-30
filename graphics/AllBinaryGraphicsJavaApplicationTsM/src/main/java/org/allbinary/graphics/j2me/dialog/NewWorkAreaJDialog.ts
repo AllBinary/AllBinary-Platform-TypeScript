@@ -210,7 +210,7 @@ this.show();
                                     throw new GraphicsException("No Name", this, "disposeNewDialog");
                                 
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.toInt(), canvasHeight!.toInt());
+    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidthcanvasHeight);
 ;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));

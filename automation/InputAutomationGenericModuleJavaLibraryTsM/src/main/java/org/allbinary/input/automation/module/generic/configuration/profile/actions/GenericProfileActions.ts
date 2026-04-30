@@ -451,7 +451,7 @@ index < size; index++)
 ;
     
 
-    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName); as GenericProfileAction;
+    var nextGenericProfileAction: GenericProfileAction = this.getAction(nextActionName) as GenericProfileAction;
 ;
     
 node.appendChild(nextGenericProfileAction!.toXmlNode(document));

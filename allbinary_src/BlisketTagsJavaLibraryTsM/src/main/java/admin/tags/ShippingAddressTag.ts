@@ -94,7 +94,7 @@ this.value= value;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -104,7 +104,7 @@ this.value= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -162,7 +162,7 @@ this.value= value;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -172,7 +172,7 @@ this.value= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

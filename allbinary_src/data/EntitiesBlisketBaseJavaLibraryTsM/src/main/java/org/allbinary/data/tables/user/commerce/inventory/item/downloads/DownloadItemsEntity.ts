@@ -188,7 +188,7 @@ keysAndValues!.put(BasicItemData.ID, id);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));
@@ -245,7 +245,7 @@ keysAndValues!.put(DownloadItemData.ID, downloadItemId);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = vector.get(index); as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = vector.get(index) as HashMap<any, any>;
 ;
     
 returnVector!.add(new DownloadableItem(hashMap));

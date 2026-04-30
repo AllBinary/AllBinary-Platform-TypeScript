@@ -31,8 +31,6 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
         
 import { ImageUtil } from "./ImageUtil.js";
 
-import { Graphics2D } from "./Graphics2D.js";
-
 export class BufferedImageUtil2
             extends Object
          {

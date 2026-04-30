@@ -72,7 +72,7 @@ var width = width
 var height = height
 var animationInterface = animationInterface
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance..constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
 ;
     
 
@@ -109,7 +109,7 @@ var width = width
 var height = height
 var animationInterface = animationInterface
 
-    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance..constructor.name.toString()!, width, height)!;
+    var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, width, height)!;
 ;
     
 

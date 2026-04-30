@@ -80,7 +80,7 @@ private constructor (){
     public getResourceAsStream(resource: string): InputStream{
 var resource = resource
 
-    var inputStream: InputStream = resource.javaClass.getResourceAsStream(resource)!;
+    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;
 ;
     
 
@@ -117,7 +117,7 @@ var resource = resource
     var resourcePath: string = resource.substring(index +1)!;
 ;
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -127,7 +127,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
                                     {
                                     resourcePath= resource.substring(index);
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -141,7 +141,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
     
 resourcePath= stringMaker!.append(RES)!.append(resource.substring(index))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -153,7 +153,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
     
 resourcePath= stringMaker!.append("/")!.append(RES)!.append(resource.substring(index))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
     var COLON: string = CommonSeps.getInstance()!.COLON;
@@ -169,7 +169,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
     
 resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -181,7 +181,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
     
 resourcePath= stringMaker!.append(RES)!.append(COLON)!.append(resource.substring(index +1))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -197,7 +197,7 @@ stringMaker!.delete(0, stringMaker!.length());
     
 resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -209,7 +209,7 @@ inputStream= resource.javaClass.getResourceAsStream(resourcePath);
     
 resourcePath= stringMaker!.append(RESOURCE_STRING)!.append(COLON)!.append(resource.substring(index +1))!.toString();
     
-inputStream= resource.javaClass.getResourceAsStream(resourcePath);
+inputStream= resource..javaClass.getResourceAsStream(resourcePath);
     
 
                         if(inputStream == 
@@ -284,7 +284,7 @@ var startIndex = startIndex
 ;
     
 
-    var inputStream: InputStream = resource.javaClass.getResourceAsStream(resourcePath)!;
+    var inputStream: InputStream = resource..javaClass.getResourceAsStream(resourcePath)!;
 ;
     
 

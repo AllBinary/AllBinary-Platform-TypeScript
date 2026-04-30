@@ -783,7 +783,7 @@ var destroyedEvent = destroyedEvent
                                     DestroyedEventHandler.getInstance()!.removeListener(this);
     
 
-    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint(); as WaypointBase;
+    var waypoint: WaypointBase = this.getWaypointBehavior()!.getWaypoint() as WaypointBase;
 ;
     
 waypoint.reset();

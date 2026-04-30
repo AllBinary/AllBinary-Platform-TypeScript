@@ -47,6 +47,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 
+import { IndexedAnimationInterface } from "./IndexedAnimationInterface.js";
+
 import { NullIndexedAnimation } from "./NullIndexedAnimation.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";

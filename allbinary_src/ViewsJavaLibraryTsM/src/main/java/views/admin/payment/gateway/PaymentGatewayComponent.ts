@@ -92,7 +92,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 ;
     
 
-    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface); as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = paymentGatewayDomNodeFactoryInterface!.getInstance(this.paymentGatewayInterface) as DomNodeInterface;
 ;
     
 this.addDomNodeInterface(domNodeInterface);

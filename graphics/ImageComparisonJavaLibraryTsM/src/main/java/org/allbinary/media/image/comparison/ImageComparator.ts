@@ -117,7 +117,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
 ;
     
 
@@ -129,7 +129,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
+    var colorCacheable2: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
 ;
     
 

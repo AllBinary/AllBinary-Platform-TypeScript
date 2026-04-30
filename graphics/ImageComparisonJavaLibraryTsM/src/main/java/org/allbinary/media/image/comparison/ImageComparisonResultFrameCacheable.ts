@@ -114,7 +114,7 @@ this.imageComparisonResult= imageComparisonResult;
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(this.constructor.name.toString()!);
+stringBuffer!.append(thisconstructor.name.toString()!);
     
 stringBuffer!.append(" Frame: ");
     

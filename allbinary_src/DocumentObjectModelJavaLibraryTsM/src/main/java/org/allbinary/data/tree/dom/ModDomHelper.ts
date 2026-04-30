@@ -262,7 +262,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(objectKey as Object); as Object;
+    var anyType: any = hashMap!.get(objectKey as Object) as Object;
 ;
     
 
@@ -465,7 +465,7 @@ i < size; i++)
 ;
     
 
-    var anyType: any = hashMap!.get(name as Object); as Object;
+    var anyType: any = hashMap!.get(name as Object) as Object;
 ;
     
 

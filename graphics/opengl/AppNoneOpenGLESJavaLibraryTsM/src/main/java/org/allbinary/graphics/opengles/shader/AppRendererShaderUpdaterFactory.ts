@@ -39,6 +39,10 @@
         
 import { ShaderUpdater } from "./ShaderUpdater.js";
 
+import { ShaderComposite } from "./ShaderComposite.js";
+
+import { ShaderOpenGLProcessor } from "./ShaderOpenGLProcessor.js";
+
 export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
         
 

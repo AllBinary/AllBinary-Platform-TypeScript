@@ -39,9 +39,9 @@
         
 import { InputFactory } from "./InputFactory.js";
 
-import { GameKeyFactory } from "./GameKeyFactory.js";
-
 import { GameKey } from "./GameKey.js";
+
+import { GameKeyFactory } from "./GameKeyFactory.js";
 
 export class GameKeyMappingFactory
             extends Object

@@ -94,7 +94,7 @@ super.actionPerformed(actionEvent);
                         
                                     {
                                     
-    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent(); as ProfileActionScriptConditionInterface;
+    var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = this.getParent() as ProfileActionScriptConditionInterface;
 ;
     
 profileActionScriptConditionInterface!.removeProcessor(this as ProfileActionScriptProcessorInterface);

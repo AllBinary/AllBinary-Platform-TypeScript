@@ -114,7 +114,7 @@ export class RecordStoreHighScores extends HighScores {
         
 
     private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
     //var abeClientInformation = abeClientInformation
@@ -206,7 +206,7 @@ this.load();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addHighScore(newHighScore: HighScore){
     //var newHighScore = newHighScore
@@ -639,7 +639,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isBestScore(newHighScore: HighScore): boolean{
 var newHighScore = newHighScore

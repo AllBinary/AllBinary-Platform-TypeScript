@@ -104,7 +104,7 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -115,7 +115,7 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running
@@ -138,7 +138,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0); as MotionRectanglesResultsEvent;
+    var motionRectanglesResultsEvent: MotionRectanglesResultsEvent = this.getMotionRectanglesVector()!.get(0) as MotionRectanglesResultsEvent;
 ;
     
 

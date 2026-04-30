@@ -73,11 +73,11 @@ var y = y
 
 
                         for (
-    var index: number = max_x.toInt()!;
-index > min_x.toInt(); )
+    var index: number = max_x!;
+index > min_x; )
         {
 
-    var colorInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.toInt())))!;
+    var colorInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y)))!;
 ;
     
 
@@ -85,7 +85,7 @@ index > min_x.toInt(); )
 ;
     
 
-    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger); as ColorCacheable;
+    var colorCacheable: ColorCacheable = automaticCacheInterface!.get(colorInteger) as ColorCacheable;
 ;
     
 
@@ -104,7 +104,7 @@ index > min_x.toInt(); )
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return index -min_x.toInt();
+                        return index -min_x;
     
 
                         }

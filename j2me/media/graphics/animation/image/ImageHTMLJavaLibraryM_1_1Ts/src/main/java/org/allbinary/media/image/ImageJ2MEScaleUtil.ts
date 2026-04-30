@@ -155,7 +155,7 @@ originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
 ;
     
 

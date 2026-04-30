@@ -46,8 +46,6 @@ import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
@@ -158,7 +156,7 @@ reusableList!.clear();
 index >= 0; index--)
         {
 
-    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index); as GeographicMapCellPosition;
+    var layerGeographicMapCellPosition: GeographicMapCellPosition = occupyList!.get(index) as GeographicMapCellPosition;
 ;
     
 
@@ -174,7 +172,7 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = surroundingGeographicMapCellPositionList!.get(index2) as GeographicMapCellPosition;
 ;
     
 

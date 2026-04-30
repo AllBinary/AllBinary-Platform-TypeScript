@@ -40,6 +40,8 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WeaponLayer } from "./WeaponLayer.js";
+
 export class WeaponLayerArrayLayerCircularStaticPool
             extends Object
          {
@@ -106,7 +108,7 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstanceArray(size: number): WeaponLayer[]{
 var size = size

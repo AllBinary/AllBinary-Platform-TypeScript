@@ -151,7 +151,7 @@ var document = document
 index < size; index++)
         {
 
-    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index); as WorkFlowInterface;
+    var workFlowInterface: WorkFlowInterface = this.workFlowsVector!.get(index) as WorkFlowInterface;
 ;
     
 }

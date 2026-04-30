@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
 import { CaptureWorkerInterface } from "../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
 
     
@@ -100,7 +102,7 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 var thread = thread
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -111,7 +113,7 @@ var thread = thread
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running
@@ -119,7 +121,7 @@ this.running= running;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     isAnyDataWorkerRunning(): boolean{
 
@@ -147,7 +149,7 @@ this.running= running;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     startDataWorkers(){
 
@@ -167,7 +169,7 @@ this.captureThread!.start();
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     waitForDataWorkers(){
 

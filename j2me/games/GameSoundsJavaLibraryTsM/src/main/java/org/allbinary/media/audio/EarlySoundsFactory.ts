@@ -39,6 +39,8 @@
         
 import { BaseSoundsFactory } from "./BaseSoundsFactory.js";
 
+import { Sound } from "./Sound.js";
+
 import { SelectSound } from "./SelectSound.js";
 
 import { ErrorSound } from "./ErrorSound.js";

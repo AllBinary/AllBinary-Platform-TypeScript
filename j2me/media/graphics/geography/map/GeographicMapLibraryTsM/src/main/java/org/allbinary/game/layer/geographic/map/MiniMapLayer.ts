@@ -163,12 +163,12 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
 ;
     
 
@@ -192,12 +192,12 @@ this.positionList!.removeAt(index);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
     //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
-    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource(); as ColorCompositeInterface;
+    var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
 ;
     
 

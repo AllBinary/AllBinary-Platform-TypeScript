@@ -74,7 +74,7 @@ export class RaceTrackStartPointUtil
 ;
     
 
-    var startPathFindingNode: PathFindingNode = list.get(index); as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = list.get(index) as PathFindingNode;
 ;
     
 

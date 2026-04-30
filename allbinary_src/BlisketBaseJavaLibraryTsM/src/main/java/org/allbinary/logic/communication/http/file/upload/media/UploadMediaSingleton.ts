@@ -67,7 +67,7 @@ export class UploadMediaSingleton
         
 
     private uploadMedia: UploadMediaSingleton
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): UploadMediaSingleton{
 
@@ -134,7 +134,7 @@ index < size; index++)
 ;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName as Object); as MediaData;
+    var mediaData: MediaData = hashMap!.get(mediaDataName as Object) as MediaData;
 ;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
@@ -283,7 +283,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object); as String;
+    var mediaType: string = hashMap!.get(mediaFileType as Object) as String;
 ;
     
 

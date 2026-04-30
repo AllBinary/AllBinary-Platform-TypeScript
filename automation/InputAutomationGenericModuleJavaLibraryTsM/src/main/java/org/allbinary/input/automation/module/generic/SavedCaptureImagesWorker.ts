@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../../java/lang/Thread.js";
+        
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -124,7 +126,7 @@ index= ProcessingFrameIndexFactory.next();
 var thread = thread
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -135,7 +137,7 @@ var thread = thread
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running

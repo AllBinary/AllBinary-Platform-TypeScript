@@ -103,7 +103,7 @@ var node = node
 ;
     
 
-    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME); as Attr;
+    var attrNode: Attr = attributes.getNamedItem(transformInfoData!.NAME) as Attr;
 ;
     
 

@@ -58,8 +58,6 @@ import { AngleFactory } from "./AngleFactory.js";
 
 import { PositionStrings } from "./PositionStrings.js";
 
-import { Angle } from "./Angle.js";
-
 export class NoDecimalTrigTable
             extends Object
          {
@@ -2272,7 +2270,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return noDecimalSin[angle]!;
+                        return this.noDecimalSin[angle]!;
     
 }
 

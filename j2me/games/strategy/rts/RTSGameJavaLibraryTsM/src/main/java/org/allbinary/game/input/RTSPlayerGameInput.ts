@@ -137,6 +137,8 @@ import { PlayerGameInput } from "./PlayerGameInput.js";
 
 import { InputFactory } from "./InputFactory.js";
 
+import { GameInputProcessor } from "./GameInputProcessor.js";
+
 import { ScrollMapPlayerGameInput } from "./ScrollMapPlayerGameInput.js";
 
 import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
@@ -208,7 +210,7 @@ this.selectedRTSLayerPlayerGameInput= new SelectedRTSLayersPlayerGameInput(this.
                                     }
                                 
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
 ;
     
 
@@ -330,7 +332,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index) as GameKeyEvent;
 ;
     
 key= gameKeyEvent!.getKey();
@@ -387,7 +389,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
 ;
     
 
@@ -475,7 +477,7 @@ var graphics = graphics
 ;
     
 
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager(); as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = this.gameCanvas!.getLayerManager() as GeographicMapCompositeInterface;
 ;
     
 
@@ -513,7 +515,7 @@ graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt());
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = list.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = list.get(index) as RTSLayer;
 ;
     
 width= rtsLayer!.getWidth();

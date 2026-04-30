@@ -160,7 +160,7 @@ this.surroundingCellPositions[3]= geographicMapCellPositionFactory!.getAt(column
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -229,7 +229,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
     //var allBinaryLayerManager = allBinaryLayerManager
     //var index = index
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;
 ;
     
 

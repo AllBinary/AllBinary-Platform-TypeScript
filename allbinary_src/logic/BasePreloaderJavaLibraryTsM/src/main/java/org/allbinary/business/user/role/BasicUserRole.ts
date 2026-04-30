@@ -51,7 +51,7 @@ export class BasicUserRole
     private static readonly roleVector: Vector<any> = new Vector<any>();
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): BasicUserRole{
 var role = role
@@ -72,7 +72,7 @@ var role = role
 index < size; index++)
         {
 
-    var userRole: BasicUserRole = roleVector!.get(index); as BasicUserRole;
+    var userRole: BasicUserRole = roleVector!.get(index) as BasicUserRole;
 ;
     
 
@@ -192,7 +192,7 @@ BasicUserRole.roleVector!.add(this);
 }
 
 
-    public equals(basicUserRole: BasicUserRole?): boolean{
+    public equals(basicUserRole: BasicUserRole): boolean{
 var basicUserRole = basicUserRole
 
                         if(this.getRoleId() == basicUserRole!.getRoleId())

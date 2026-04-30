@@ -38,6 +38,9 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
 
     
+import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 
 
 
@@ -74,8 +77,10 @@ export class LevelLayersFinder
 }
 
 
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
+
     public get(hashtable: Hashtable<any, any>): BasicArrayList{
-var hashtable = hashtable
+    //var hashtable = hashtable
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
 ;
@@ -85,23 +90,29 @@ var hashtable = hashtable
 ;
     
 
-    var enumeration: Enumeration = hashtable.keys()!;
+    var enumeration: Enumeration<any> = hashtable.keys()!;
 ;
     
 
-        while(enumeration.hasMoreElements())
+    var layerHashtable: Hashtable<any, any>
+;
+    
+
+    var integer: number
+;
+    
+
+    var cachedInteger: number
+;
+    
+
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-
-    var layerHashtable: Hashtable<any, any> = hashtable.get(enumeration.nextElement()! as Object); as Hashtable<any, any>;
-;
+layerHashtable= hashtable.get(this.enumerationUtil!.nextElement(enumeration)! as Object); as Hashtable<any, any>;
     
-
-    var integer: number = layerHashtable!.get(Layer.ID as Object); as Integer;
-;
+integer= layerHashtable!.get(Layer.ID as Object); as Integer;
     
-
-    var cachedInteger: number = smallIntegerSingletonFactory!.getAt(integer.toInt())!;
-;
+cachedInteger= smallIntegerSingletonFactory!.getAt(integer);
     
 
                         if(!list.contains(cachedInteger);)

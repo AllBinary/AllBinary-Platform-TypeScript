@@ -72,7 +72,7 @@ var integer = integer
 var pendingIntent = pendingIntent
 
     var notification: Notification = new Builder(context).
-                            setSmallIcon(integer.toInt())!.setTicker(message)!.setWhen(Date.now())!.setContentTitle(command.getLabel())!.setContentText(message)!.setContentIntent(pendingIntent)!.build()!;
+                            setSmallIcon(integer)!.setTicker(message)!.setWhen(Date.now())!.setContentTitle(command.getLabel())!.setContentText(message)!.setContentIntent(pendingIntent)!.build()!;
 ;
     
 

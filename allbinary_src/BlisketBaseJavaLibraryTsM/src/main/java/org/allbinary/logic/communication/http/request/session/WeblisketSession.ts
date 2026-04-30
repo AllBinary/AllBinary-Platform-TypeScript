@@ -288,7 +288,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
             
     public getRole(): UserRole{
 
-    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()); as UserRole;
+    var userRole: UserRole = this.session.getAttribute(UserRoleData.NAME.toString()) as UserRole;
 ;
     
 
@@ -335,7 +335,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
                         
                                     {
                                     
-    var orderInterface: OrderInterface = this.session.getAttribute(basketName); as OrderInterface;
+    var orderInterface: OrderInterface = this.session.getAttribute(basketName) as OrderInterface;
 ;
     
 

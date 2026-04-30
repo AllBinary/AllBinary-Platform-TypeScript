@@ -335,7 +335,7 @@ storeSelect!.addAttribute(CLASS, TEXT);
 index < size; index++)
         {
 
-    var storeName: string = storeNamesVector!.get(index); as String;
+    var storeName: string = storeNamesVector!.get(index) as String;
 ;
     
 storeSelect!.addOption(storeName);

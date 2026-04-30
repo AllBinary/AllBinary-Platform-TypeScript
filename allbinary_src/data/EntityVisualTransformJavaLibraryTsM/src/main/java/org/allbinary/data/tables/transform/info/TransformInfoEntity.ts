@@ -304,7 +304,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i); as String;
+    var objectConfigString: string = objectConfigColumnVector!.get(i) as String;
 ;
     
 objectConfigString= decode.toCharArray();
@@ -347,7 +347,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i); as String;
+    var viewNameString: string = columnVector!.get(i) as String;
 ;
     
 viewNameVector!.add(viewNameString);

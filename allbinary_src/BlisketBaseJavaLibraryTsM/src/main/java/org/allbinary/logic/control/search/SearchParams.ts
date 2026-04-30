@@ -357,7 +357,7 @@ index < size; index++)
 ;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key); as String;
+    var searchValue: string = this.columnsAndSearchValues!.get(key) as String;
 ;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));

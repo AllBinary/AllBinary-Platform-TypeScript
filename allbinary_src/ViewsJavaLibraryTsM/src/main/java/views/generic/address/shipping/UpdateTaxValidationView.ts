@@ -146,7 +146,7 @@ this.streetAddress= new StreetAddress(this.getRequest());
 index < size; index++)
         {
 
-    var aStreetAddress: StreetAddress = streetAddressList!.get(index); as StreetAddress;
+    var aStreetAddress: StreetAddress = streetAddressList!.get(index) as StreetAddress;
 ;
     
 

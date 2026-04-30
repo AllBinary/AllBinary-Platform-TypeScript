@@ -161,7 +161,7 @@ index < size; index++)
     var integer: number = this.nameBasicArrayList!.objectArray[index]! as Integer;
 ;
     
-this.delete(abeClientInformation, gameInfo, integer.toInt());
+this.delete(abeClientInformation, gameInfo, integer);
     
 }
 

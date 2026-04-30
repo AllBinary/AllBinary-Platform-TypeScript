@@ -22,6 +22,8 @@
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { awt } from "../../../../java/awt.js";
@@ -1068,7 +1070,7 @@ this.fileJDialog!.setVisible(true);
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
 ;
     
 
@@ -1105,7 +1107,7 @@ this.xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE,
 
         try {
             
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
 ;
     
 DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getName() +this.SAVEEXTENSION), workAreaJPanel!.toDocument());
@@ -1133,14 +1135,14 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
     public onHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
-    var angleIncrementInteger: number = hashMap!.get(Integer(Integer.valueOf(0))); as Integer;
+    var angleIncrementInteger: number = hashMap!.get(Integer(Integer.valueOf(0))) as Integer;
 ;
     
 
-    var totalRotationInteger: number = hashMap!.get(Integer(Integer.valueOf(1))); as Integer;
+    var totalRotationInteger: number = hashMap!.get(Integer(Integer.valueOf(1))) as Integer;
 ;
     
-this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.toInt(), totalRotationInteger!.toInt());
+this.getSelectedWorkArea()!.autoRotate(angleIncrementIntegertotalRotationInteger);
     
 }
 
@@ -1169,7 +1171,7 @@ this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.toInt(), totalRota
 index < numberOfTabs; index++)
         {
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index); as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getComponentAt(index) as WorkAreaJPanelInterface;
 ;
     
 workAreaJPanel!.deselect();
@@ -1177,7 +1179,7 @@ workAreaJPanel!.deselect();
 }
 
 
-    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent(); as WorkAreaJPanelInterface;
+    var workAreaJPanel: WorkAreaJPanelInterface = this.jTabbedPane!.getSelectedComponent() as WorkAreaJPanelInterface;
 ;
     
 

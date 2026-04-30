@@ -45,11 +45,11 @@ import { LayerManagerEventHandler } from "../../../org/allbinary/layer/event/Lay
         
 import { LayerManager } from "./LayerManager.js";
 
+import { LayerProcessor } from "./LayerProcessor.js";
+
 import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
 
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
-
-import { LayerProcessor } from "./LayerProcessor.js";
 
 export class AllBinaryLayerManager extends LayerManager {
         
@@ -185,7 +185,7 @@ layerProcessorInterface= this.basicLayerProcessorArray[index]!;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

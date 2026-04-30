@@ -37,8 +37,6 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { ClassLoader } from "./ClassLoader.js";
-
 export class ClassLoaderUtil
             extends Object
          {

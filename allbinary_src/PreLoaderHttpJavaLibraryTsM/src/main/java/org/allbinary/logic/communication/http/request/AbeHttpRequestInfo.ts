@@ -114,14 +114,14 @@ public constructor (httpServletRequest: HttpServletRequest){
 this.httpUserAgent= stringUtil!.EMPTY_STRING;
     
 
-    var enumuration: Enumeration = httpServletRequest!.getHeaderNames()!;
+    var enumuration: Enumeration<any> = httpServletRequest!.getHeaderNames()!;
 ;
     
 
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()!; as String;
+    var key: string = enumuration.nextElement()! as String;
 ;
     
 

@@ -86,7 +86,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = this.getPageContext()!.getRequest() as HttpServletRequest;
 ;
     
 

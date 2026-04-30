@@ -88,7 +88,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;
     
 this.weblisketSession= new WeblisketSession(hashMap, pageContext);
@@ -96,7 +96,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
 ;
     
 

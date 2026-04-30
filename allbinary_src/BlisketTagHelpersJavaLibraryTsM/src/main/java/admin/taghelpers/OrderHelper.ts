@@ -122,7 +122,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
 ;
     
 
@@ -151,7 +151,7 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 ;
     
 
-    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()); as String;
+    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as String;
 ;
     
 
@@ -168,7 +168,7 @@ paymentGatewayBoolean= Boolean.TRUE;
                                     }
                                 
 
-    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance(); as PaymentGatewayEntity;
+    var paymentGatewayEntityInterface: PaymentGatewayEntity = PaymentGatewayEntityFactory.getInstance() as PaymentGatewayEntity;
 ;
     
 
@@ -180,11 +180,11 @@ paymentGatewayBoolean= Boolean.TRUE;
                         
                                     {
                                     
-    var paymentType: BasicPaymentType = paymentTypeVector!.get(0); as BasicPaymentType;
+    var paymentType: BasicPaymentType = paymentTypeVector!.get(0) as BasicPaymentType;
 ;
     
 
-    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType); as PaymentGatewayInterface;
+    var paymentGatewayInterface: PaymentGatewayInterface = paymentGatewayEntityInterface!.getPaymentGatewayInterface(this.weblisketSession!.getStoreName(), paymentType) as PaymentGatewayInterface;
 ;
     
 

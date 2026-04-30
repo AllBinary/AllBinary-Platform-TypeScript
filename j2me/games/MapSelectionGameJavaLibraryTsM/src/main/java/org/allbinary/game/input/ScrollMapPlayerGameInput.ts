@@ -83,6 +83,8 @@ import { PlayerGameInput } from "./PlayerGameInput.js";
 
 import { InputFactory } from "./InputFactory.js";
 
+import { GameInputProcessor } from "./GameInputProcessor.js";
+
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
@@ -373,7 +375,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index); as GameKeyEvent;
+    var gameKeyEvent: GameKeyEvent = this.inputList!.get(index) as GameKeyEvent;
 ;
     
 key= gameKeyEvent!.getKey();

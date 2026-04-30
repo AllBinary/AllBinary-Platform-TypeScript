@@ -123,7 +123,7 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
 ;
     
 
-    var clazz: Function = anyType!constructor!;
+    var clazz: Function = anyType!.constructor!;
 ;
     
 

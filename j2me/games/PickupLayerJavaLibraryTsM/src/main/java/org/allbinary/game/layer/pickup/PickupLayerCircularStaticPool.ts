@@ -74,7 +74,7 @@ private constructor (){
     //var y = y
     //var z = z
 
-    var pickupLayer: PickupLayer = this.getNextInstance(); as PickupLayer;
+    var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;
 ;
     
 pickupLayer!.initXYZ(x, y, z);

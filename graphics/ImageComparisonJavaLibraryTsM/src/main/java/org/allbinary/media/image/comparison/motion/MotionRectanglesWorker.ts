@@ -113,7 +113,7 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -124,7 +124,7 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
     //var running = running
@@ -147,11 +147,11 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0); as ImageComparisonResultsEvent;
+    var imageComparisonResultsEvent: ImageComparisonResultsEvent = this.imageComparisonInfoVector!.get(0) as ImageComparisonResultsEvent;
 ;
     
 
-    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult(); as ImageComparisonResult;
+    var imageComparisonInfo: ImageComparisonResult = imageComparisonResultsEvent!.getImageComparisonResult() as ImageComparisonResult;
 ;
     
 this.logUtil!.putF(imageComparisonInfo!.toString(), this, this.commonStrings!.RUN);

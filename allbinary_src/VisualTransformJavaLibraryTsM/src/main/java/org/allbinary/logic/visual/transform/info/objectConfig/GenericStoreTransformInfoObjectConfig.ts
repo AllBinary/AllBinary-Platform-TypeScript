@@ -179,7 +179,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                                     }
                                 
 
-    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface(); as TransformInfoHttp;
+    var transformInfoHttpStoreInterface: TransformInfoHttp = this.getTransformInfoInterface() as TransformInfoHttp;
 ;
     
 

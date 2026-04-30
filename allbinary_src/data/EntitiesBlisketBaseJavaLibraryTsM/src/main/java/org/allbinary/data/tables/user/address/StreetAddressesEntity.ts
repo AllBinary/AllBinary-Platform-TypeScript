@@ -116,7 +116,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(StreetAddressData.ID, index.toString() as String);
+whereHashMap!.put(StreetAddressData.ID, index as String);
     
 super.deleteWhere(whereHashMap);
     
@@ -310,7 +310,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var addressHashMap: HashMap<any, any> = addressList!.get(index); as HashMap<any, any>;
+    var addressHashMap: HashMap<any, any> = addressList!.get(index) as HashMap<any, any>;
 ;
     
 
@@ -370,7 +370,7 @@ var index = index
     
 keyAndValue!.put(UserData.USERNAME, userName);
     
-keyAndValue!.put(StreetAddressData.ID, index.toString());
+keyAndValue!.put(StreetAddressData.ID, index);
     
 
     var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;

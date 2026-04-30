@@ -238,7 +238,7 @@ verisignResponseKeys!.add(paymentTransactionKeysFactory!.EXCEPTION7.toString());
 i < size; i++)
         {
 
-    var key: string = keyVector!.get(i); as String;
+    var key: string = keyVector!.get(i) as String;
 ;
     
 

@@ -90,7 +90,7 @@ var imageComparisonInfo = imageComparisonInfo
 index < size; index++)
         {
 
-    var pixelDelta: PixelDelta = vector.get(index); as PixelDelta;
+    var pixelDelta: PixelDelta = vector.get(index) as PixelDelta;
 ;
     
 this.addPixelDeltaToAMotionRectangle(pixelDelta);
@@ -121,7 +121,7 @@ var pixelDelta = pixelDelta
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector.get(index); as MotionRectangle;
+    var motionRectangle: MotionRectangle = vector.get(index) as MotionRectangle;
 ;
     
 

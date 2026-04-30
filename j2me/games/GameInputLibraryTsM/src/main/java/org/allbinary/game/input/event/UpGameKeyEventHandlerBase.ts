@@ -110,7 +110,7 @@ super.removeListenerSingleThreaded(eventListenerInterface);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
@@ -196,7 +196,7 @@ index < size; index++)
 
         try {
             
-    var eventListenerInterface: EventListenerInterface = this.list.get(index); as EventListenerInterface;
+    var eventListenerInterface: EventListenerInterface = this.list.get(index) as EventListenerInterface;
 ;
     
 stringBuffer!.append(LISTENER_LABEL);

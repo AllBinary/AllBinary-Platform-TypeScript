@@ -99,7 +99,7 @@ private constructor (){
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
 ;
     
 
@@ -135,7 +135,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     var classes: Function[] = new Array(2);
 ;
     
-classes[0]= propertiesHashMap!constructor;
+classes[0]= propertiesHashMap!.constructor;
     
 classes[1]= AbeFactory.getInstance()!.constructor;
     
@@ -158,7 +158,7 @@ params[1]= pageContext as Object;
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
 ;
     
 
@@ -197,7 +197,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME); as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
 ;
     
 

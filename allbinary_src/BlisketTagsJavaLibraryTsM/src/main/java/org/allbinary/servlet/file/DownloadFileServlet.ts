@@ -189,7 +189,7 @@ var response = response
     
 
     var authenticationHelper: AuthenticationHelper = new AuthenticationHelperFactory().
-                            getInstance(hashMap, request); as AuthenticationHelper;
+                            getInstance(hashMap, request) as AuthenticationHelper;
 ;
     
 

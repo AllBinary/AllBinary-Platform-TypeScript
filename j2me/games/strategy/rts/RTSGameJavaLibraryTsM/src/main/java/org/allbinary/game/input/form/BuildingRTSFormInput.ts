@@ -271,7 +271,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 ;
     
 
-    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface(); as DemoLockedWithCostLayerInterfaceFactoryInterface;
+    var layerInterfaceFactoryInterface: DemoLockedWithCostLayerInterfaceFactoryInterface = factoryItem!.getLayerInterfaceFactoryInterface() as DemoLockedWithCostLayerInterfaceFactoryInterface;
 ;
     
 
@@ -369,7 +369,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
 ;
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -518,7 +518,7 @@ index >= 0; index--)
 geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(index) as GeographicMapCellPosition);
     
 
-    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+    var raceTrackGeographicMapCellTypeFactory: RaceTrackGeographicMapCellTypeFactory = geographicMapInterface!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
 ;
     
 
@@ -733,7 +733,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 this.dropCellPositionHistory!.addAll(occupyList, layerInterface);
     
 
-    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput;
+    var rtsPlayerGameInput: RTSPlayerGameInput = rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput;
 ;
     
 rtsPlayerGameInput!.setSelectedRTSLayer(layerInterface, this.getSelectedGeographicCellPosition());

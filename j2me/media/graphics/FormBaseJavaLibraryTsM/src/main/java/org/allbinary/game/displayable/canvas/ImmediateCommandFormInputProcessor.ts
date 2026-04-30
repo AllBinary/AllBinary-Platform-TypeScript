@@ -76,7 +76,7 @@ this.gameCommandCanvas= gameCommandCanvas;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
@@ -105,7 +105,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAM
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
@@ -134,7 +134,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent

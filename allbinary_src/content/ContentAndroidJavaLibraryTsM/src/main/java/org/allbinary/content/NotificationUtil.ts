@@ -92,7 +92,7 @@ export class NotificationUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE); as NotificationManager;
+    private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
 
     private readonly notificationBuilder: NotificationBuilder
 private constructor (){

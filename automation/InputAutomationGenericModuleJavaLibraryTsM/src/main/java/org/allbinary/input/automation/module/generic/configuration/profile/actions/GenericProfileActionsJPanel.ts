@@ -291,7 +291,7 @@ this.getGenericProfileActionJPanel()!.setGenericProfileAction(genericProfileActi
 this.getGenericProfileActionJPanel()!.updateProfileActionUI();
     
 
-    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout(); as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.blankGenericProfileActionJPanel!.getLayout() as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));
@@ -311,7 +311,7 @@ var evt = evt
 
         try {
             
-    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue(); as String;
+    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue() as String;
 ;
     
 this.updateProfileActionUI(profileActionNameString);

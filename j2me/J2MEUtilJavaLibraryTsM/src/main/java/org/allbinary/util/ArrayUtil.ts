@@ -76,13 +76,7 @@ export class ArrayUtil
     var copy: any[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -100,13 +94,7 @@ export class ArrayUtil
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -124,13 +112,7 @@ var newLength = newLength
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -148,13 +130,7 @@ var newLength = newLength
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -172,13 +148,7 @@ var newLength = newLength
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -199,13 +169,7 @@ var newLength = newLength
                                                     ;
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -223,13 +187,7 @@ var newLength = newLength
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -247,13 +205,7 @@ var newLength = newLength
     var copy: number[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -271,13 +223,7 @@ var newLength = newLength
     var copy: boolean[] = new Array(newLength);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            copy[0 + i] = original[i]!;
-        }
-    ;
+System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLength));
     
 
 
@@ -374,7 +320,7 @@ intArray[rowIndex +x]= temp;
 }
 
 
-    public toString(twoDimensionalIntArray: number[][]): string{
+    public toStringFromTwoDimensionaArray(twoDimensionalIntArray: number[][]): string{
     //var twoDimensionalIntArray = twoDimensionalIntArray
 
     var stringBuffer: StringMaker = new StringMaker();

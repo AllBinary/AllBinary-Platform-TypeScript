@@ -166,7 +166,7 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
                                 )
                         
                                     {
-                                    vector.add(this.paymentTransactionInterfaceFactoryInterface!..constructor.name.toString()!);
+                                    vector.add(this.paymentTransactionInterfaceFactoryInterface!.constructor.name.toString()!);
     
 
                                     }
@@ -177,7 +177,7 @@ vector.addAll(this.getBasicPaymentType()!.toVector());
                                 )
                         
                                     {
-                                    vector.add(this.paymentProcessorInterfaceFactoryInterface!..constructor.name.toString()!);
+                                    vector.add(this.paymentProcessorInterfaceFactoryInterface!.constructor.name.toString()!);
     
 
                                     }
@@ -204,7 +204,7 @@ hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
                                 )
                         
                                     {
-                                    hashMap!.put(PaymentGatewayData.PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.toString(), this.paymentTransactionInterfaceFactoryInterface!..constructor.name.toString()!);
+                                    hashMap!.put(PaymentGatewayData.PAYMENTTRANSACTIONINTERFACEFACTORYINTERFACE.toString(), this.paymentTransactionInterfaceFactoryInterface!.constructor.name.toString()!);
     
 
                                     }
@@ -215,7 +215,7 @@ hashMap!.putAll(this.getBasicPaymentType()!.toHashMap());
                                 )
                         
                                     {
-                                    hashMap!.put(PaymentGatewayData.PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.toString(), this.paymentProcessorInterfaceFactoryInterface!..constructor.name.toString()!);
+                                    hashMap!.put(PaymentGatewayData.PAYMENTPROCESSORINTERFACEFACTORYINTERFACE.toString(), this.paymentProcessorInterfaceFactoryInterface!.constructor.name.toString()!);
     
 
                                     }

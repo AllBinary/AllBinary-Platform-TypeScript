@@ -107,7 +107,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 var rgb1 = rgb1
 var rgb2 = rgb2
 
-    var colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)); as ColorDelta;
+    var colorDelta: ColorDelta = ColorDeltaFactory.cacheInterface!.get(ColorDelta.getKey(rgb1, rgb2)) as ColorDelta;
 ;
     
 

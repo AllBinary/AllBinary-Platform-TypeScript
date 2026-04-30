@@ -122,6 +122,8 @@ import { PlayerGameInput } from "./PlayerGameInput.js";
 
 import { InputFactory } from "./InputFactory.js";
 
+import { GameInputProcessor } from "./GameInputProcessor.js";
+
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
@@ -251,7 +253,7 @@ var rtsLayer = rtsLayer
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;
 ;
     
 
@@ -342,7 +344,7 @@ rtsPlayerGameInput!.updatePaintable();
 --index >= 0; )
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;
 ;
     
 
@@ -446,7 +448,7 @@ var layerManager = layerManager
 index < size; index++)
         {
 
-    var gameKeyEvent: GameKeyEvent = this.list.get(index); as GameKeyEvent;
+    var gameKeyEvent: GameKeyEvent = this.list.get(index) as GameKeyEvent;
 ;
     
 key= gameKeyEvent!.getKey();
@@ -632,7 +634,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selectAllPreselected");
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;
 ;
     
 rtsLayer!.select();
@@ -662,7 +664,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "deselectAllPreselected");
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = this.preSelectedRTSLayersList!.get(index) as RTSLayer;
 ;
     
 rtsLayer!.deselect();
@@ -684,7 +686,7 @@ this.preSelectedRTSLayersList!.clear();
 index >= 0; index--)
         {
 
-    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index); as RTSLayer;
+    var rtsLayer: RTSLayer = this.selectedRTSLayersList!.get(index) as RTSLayer;
 ;
     
 rtsLayer!.deselect();

@@ -81,7 +81,7 @@ var genericProfile = genericProfile
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
 ;
     
 

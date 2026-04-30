@@ -72,6 +72,8 @@ import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryT
         
 import { HighScoresBase } from "./HighScoresBase.js";
 
+import { HighScores } from "./HighScores.js";
+
 import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";

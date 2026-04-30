@@ -90,7 +90,7 @@ var gameInput = gameInput
 ;
     
 
-    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
+    var velocityInterface: VelocityInterface = velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
 ;
     
 

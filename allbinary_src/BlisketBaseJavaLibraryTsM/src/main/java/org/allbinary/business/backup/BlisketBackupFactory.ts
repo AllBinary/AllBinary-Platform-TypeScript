@@ -213,7 +213,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());
@@ -303,7 +303,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
 ;
     
 
@@ -397,7 +397,7 @@ stringBuffer!.append(PATH_GLOBALS.getInstance()!.BACKUP_PATH);
 index < size; index++)
         {
 
-    var nextStore: string = storeFrontNamesBasicArrayList!.get(index); as String;
+    var nextStore: string = storeFrontNamesBasicArrayList!.get(index) as String;
 ;
     
 PreLogUtil.put("Backup Store Jsps: " +nextStore, this, "backupJsps()");

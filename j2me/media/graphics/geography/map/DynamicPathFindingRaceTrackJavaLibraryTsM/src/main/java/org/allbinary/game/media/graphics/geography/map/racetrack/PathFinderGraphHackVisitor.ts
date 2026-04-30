@@ -134,7 +134,7 @@ var startPathFindingNodeList = startPathFindingNodeList
 index >= 0; index--)
         {
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
 ;
     
 
@@ -193,7 +193,7 @@ var endPathFindingNodeList = endPathFindingNodeList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index); as PathFindingNode;
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index) as PathFindingNode;
 ;
     
 
@@ -304,11 +304,11 @@ var pathList = pathList
 index >= 0; index--)
         {
 
-    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index); as PathFindingNode;
+    var endPathFindingNode: PathFindingNode = endPathFindingNodeList!.get(index) as PathFindingNode;
 ;
     
 
-    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index); as PathFindingNode;
+    var startPathFindingNode: PathFindingNode = startPathFindingNodeList!.get(index) as PathFindingNode;
 ;
     
 

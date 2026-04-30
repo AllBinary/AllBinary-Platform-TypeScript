@@ -251,7 +251,7 @@ this.logUtil!.putF("size: " +size, this, "deselectAll");
 index < size; index++)
         {
 
-    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index); as DefaultMutableTreeNode;
+    var node: DefaultMutableTreeNode = this.highlightedBasicArrayList!.get(index) as DefaultMutableTreeNode;
 ;
     
 MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DESELECT, node) as Object));
@@ -325,7 +325,7 @@ var treePath = treePath
                                     }
                                 
 
-    var parent: DefaultMutableTreeNode = node.getParent(); as DefaultMutableTreeNode;
+    var parent: DefaultMutableTreeNode = node.getParent() as DefaultMutableTreeNode;
 ;
     
 parent.remove(node);
@@ -609,7 +609,7 @@ var evt = evt
 index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index); as DefaultMutableTreeNode;
+    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;
 ;
     
 
@@ -647,7 +647,7 @@ index < selectedTreePathArray!.length; index++)
 index < selectedTreePathArray!.length; index++)
         {
 
-    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index); as DefaultMutableTreeNode;
+    var defaultMutableTreeNode: DefaultMutableTreeNode = list.get(index) as DefaultMutableTreeNode;
 ;
     
 

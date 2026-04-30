@@ -178,7 +178,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
 ;
     
 
-    var newPoint: Point = new Point(mouseXInteger!.toInt(), mouseYInteger!.toInt());
+    var newPoint: Point = new Point(mouseXIntegermouseYInteger);
 ;
     
 this.setPoint(newPoint);

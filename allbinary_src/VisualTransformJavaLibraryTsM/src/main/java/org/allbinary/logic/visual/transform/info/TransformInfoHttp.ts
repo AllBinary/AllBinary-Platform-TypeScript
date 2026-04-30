@@ -231,7 +231,7 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String);
 ;
     
 
-    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG); as String;
+    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as String;
 ;
     
 

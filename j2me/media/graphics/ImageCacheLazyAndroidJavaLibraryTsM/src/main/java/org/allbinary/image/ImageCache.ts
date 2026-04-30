@@ -22,6 +22,8 @@
         
             import { Integer } from "../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../java/lang/Thread.js";
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     

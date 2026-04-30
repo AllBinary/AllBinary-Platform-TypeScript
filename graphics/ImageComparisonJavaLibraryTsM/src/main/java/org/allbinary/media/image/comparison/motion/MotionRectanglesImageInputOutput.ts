@@ -99,6 +99,8 @@ import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./Consolidate
 
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
 
+import { Graphics } from "./Graphics.js";
+
 import { Color } from "./Color.js";
 
 import { MotionRectangles } from "./MotionRectangles.js";
@@ -127,7 +129,7 @@ var frame = frame
     
 
     var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
 ;
     
 
@@ -301,7 +303,7 @@ bufferedImageGraphicsArray[index]= bufferedImageCacheables[index]!.getBufferedIm
 index2 < size; index2++)
         {
 
-    var motionRectangle: MotionRectangle = rectangelList!.get(index2); as MotionRectangle;
+    var motionRectangle: MotionRectangle = rectangelList!.get(index2) as MotionRectangle;
 ;
     
 

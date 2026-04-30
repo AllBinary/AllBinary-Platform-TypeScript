@@ -256,7 +256,7 @@ public constructor (hashMap: HashMap<any, any>){
 this.getFormData(hashMap);
     
 
-    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION); as String;
+    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as String;
 ;
     
 
@@ -351,7 +351,7 @@ var append = append
 var key = key
 var hashMap = hashMap
 
-    var path: string = hashMap!.get(key as Object); as String;
+    var path: string = hashMap!.get(key as Object) as String;
 ;
     
 

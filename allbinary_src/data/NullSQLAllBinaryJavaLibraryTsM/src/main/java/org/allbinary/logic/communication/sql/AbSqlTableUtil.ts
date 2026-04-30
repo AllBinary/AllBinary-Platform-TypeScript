@@ -82,7 +82,7 @@ export class AbSqlTableUtil
     readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
     readonly sqlStrings: SqlStrings = SqlStrings.getInstance()!;
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public backupTable(abSqlTable: AbSqlTable): string{
 var abSqlTable = abSqlTable
@@ -98,7 +98,7 @@ var abSqlTable = abSqlTable
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
 var abSqlTable = abSqlTable

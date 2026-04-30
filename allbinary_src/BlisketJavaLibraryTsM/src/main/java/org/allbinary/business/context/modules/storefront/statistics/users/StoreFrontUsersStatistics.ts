@@ -102,7 +102,7 @@ this.totalNumberOfUsers= userVector!.length;
 index < size; index++)
         {
 
-    var userInterface: UserInterface = userVector!.get(index); as UserInterface;
+    var userInterface: UserInterface = userVector!.get(index) as UserInterface;
 ;
     
 
@@ -123,7 +123,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
     getNewTotal(userRole: UserRole): number{
 var userRole = userRole
 
-    var numberOfUsersForRoleLong: number = this.totalUsersByRoleHashMap!.get(userRole as Object); as Long;
+    var numberOfUsersForRoleLong: number = this.totalUsersByRoleHashMap!.get(userRole as Object) as Long;
 ;
     
 
@@ -159,7 +159,7 @@ var userRole = userRole
     public getNumberOfUsersByRole(role: string): number{
 var role = role
 
-    var totalForRole: number = this.totalUsersByRoleHashMap!.get(role as Object); as Long;
+    var totalForRole: number = this.totalUsersByRoleHashMap!.get(role as Object) as Long;
 ;
     
 
@@ -206,7 +206,7 @@ index < size; index++)
 nextUserRole= userRoleArray[index]! as UserRole;
     
 
-    var totalForRole: number = this.totalUsersByRoleHashMap!.get(nextUserRole as Object); as Long;
+    var totalForRole: number = this.totalUsersByRoleHashMap!.get(nextUserRole as Object) as Long;
 ;
     
 hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());

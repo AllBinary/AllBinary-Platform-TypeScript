@@ -113,7 +113,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
                     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getValue(value: string): string{
     //var value = value
@@ -142,7 +142,7 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
                             
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
     //var key = key
@@ -188,7 +188,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
 ;
     
 
@@ -268,7 +268,7 @@ this.executeSQLStatement(sqlStatement);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
     //var whereKeyValuePairs = whereKeyValuePairs
@@ -322,7 +322,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
 ;
     
 
@@ -386,7 +386,7 @@ i < size2; i++)
 ;
     
 
-    var value: string = whereKeyValuePairs!.get(key); as String;
+    var value: string = whereKeyValuePairs!.get(key) as String;
 ;
     
 
@@ -451,7 +451,7 @@ this.executeSQLStatement(sqlStatement);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public deleteWhere(key: string, value: string){
     //var key = key
@@ -510,7 +510,7 @@ this.executeSQLStatement(sqlStatement);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public deleteWhere(keysAndValues: HashMap<any, any>){
     //var keysAndValues = keysAndValues

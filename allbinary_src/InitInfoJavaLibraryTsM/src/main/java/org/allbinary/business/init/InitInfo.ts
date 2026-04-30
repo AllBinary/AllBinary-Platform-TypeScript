@@ -98,7 +98,7 @@ private constructor (){
 
 
                 //@Throws(InitException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public set(){
 
@@ -168,7 +168,7 @@ this.hasRead= false;
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -197,7 +197,7 @@ this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as String);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     get(){
 
@@ -243,7 +243,7 @@ initInfoEntity!.get();
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setHasRead(value: boolean){
 var value = value
@@ -251,7 +251,7 @@ this.hasRead= value;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     updateIfNeeded(){
 

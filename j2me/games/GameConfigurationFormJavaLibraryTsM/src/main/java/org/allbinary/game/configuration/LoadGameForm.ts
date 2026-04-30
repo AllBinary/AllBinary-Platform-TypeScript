@@ -222,7 +222,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
 ;
     
 
@@ -253,7 +253,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
                         
                                     {
                                     
-    var choiceGroup: ChoiceGroup = this.get(0); as ChoiceGroup;
+    var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
 ;
     
 

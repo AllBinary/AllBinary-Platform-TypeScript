@@ -107,7 +107,7 @@ this.anyType= anyType;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -145,7 +145,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -183,7 +183,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -221,7 +221,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -259,7 +259,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -297,7 +297,7 @@ this.anyType= anyType;
     
 
     var result: Boolean = method.invoke(this.anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 

@@ -295,7 +295,7 @@ transformInfoInterface!.setData(documentString);
 index < size; index++)
         {
 
-    var transformInfo: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
+    var transformInfo: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
 ;
     
 
@@ -459,7 +459,7 @@ var transformInfoInterface = transformInfoInterface
 index < size; index++)
         {
 
-    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index); as TransformInfo;
+    var nextTransformInfoInterface: TransformInfo = allViewsToBeModified!.get(index) as TransformInfo;
 ;
     
 

@@ -103,7 +103,7 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 ;
     
 
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
 ;
     
 
@@ -115,7 +115,7 @@ var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 index >= 0; index--)
         {
 
-    var waypointLayer: RTSLayer = list.get(index); as RTSLayer;
+    var waypointLayer: RTSLayer = list.get(index) as RTSLayer;
 ;
     
 this.WAYPOINT_EVENT.setRtsLayer(waypointLayer);

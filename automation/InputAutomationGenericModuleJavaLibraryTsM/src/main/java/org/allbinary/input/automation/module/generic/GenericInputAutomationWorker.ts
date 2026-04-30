@@ -140,7 +140,7 @@ this.setGenericProfile(genericProfile);
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index); as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = vector.get(index) as GenericProfileDataWorkerType;
 ;
     
 this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this.commonStrings!.CONSTRUCTOR);
@@ -176,7 +176,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RES
 this.waitForDataWorkers();
     
 
-    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance(); as J2SECacheInterface;
+    var cacheInterface: J2SECacheInterface = CapturedBufferedImagesCacheSingleton.getInstance() as J2SECacheInterface;
 ;
     
 
@@ -231,7 +231,7 @@ index < size; index++)
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object); as GenericProfileAction;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
 ;
     
 

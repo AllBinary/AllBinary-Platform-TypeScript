@@ -153,7 +153,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
                                 
 updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
     
-whereKeyAndValue!.put(PaymentData.ID, index.toString());
+whereKeyAndValue!.put(PaymentData.ID, index);
     
 super.updateWhere(whereKeyAndValue, updateKeyAndValue);
     
@@ -215,7 +215,7 @@ keyAndValue!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var paymentHashMap: HashMap<any, any> = paymentList!.get(index); as HashMap<any, any>;
+    var paymentHashMap: HashMap<any, any> = paymentList!.get(index) as HashMap<any, any>;
 ;
     
 
@@ -356,7 +356,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(PaymentData.ID, index.toString() as String);
+whereHashMap!.put(PaymentData.ID, index as String);
     
 super.deleteWhere(whereHashMap);
     

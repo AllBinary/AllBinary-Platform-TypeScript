@@ -55,7 +55,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CountedLayerInterfaceFactoryPart } from "./CountedLayerInterfaceFactoryPart.js";
+import { PartInterface } from "./PartInterface.js";
 
 export class CountedLayersHudPaintable
             extends Object

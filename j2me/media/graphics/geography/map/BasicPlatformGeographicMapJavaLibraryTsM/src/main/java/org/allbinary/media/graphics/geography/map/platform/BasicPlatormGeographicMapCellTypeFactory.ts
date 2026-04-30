@@ -27,9 +27,6 @@ import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
-
-    
 import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
 
     
@@ -37,6 +34,9 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
     
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
+
+    
+import { EnumerationUtil } from "../../../../../../../org/allbinary/util/EnumerationUtil.js";
 
     
 
@@ -62,6 +62,8 @@ import { BasicPlatormGeographicMapCellType } from "./BasicPlatormGeographicMapCe
 
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     public readonly BLOCK_CELL_TYPE: BasicPlatormGeographicMapCellType
 
@@ -110,7 +112,7 @@ new GeographicMapCellType(0, 0);
 ;
     
 
-    var enumeration: Enumeration = tileTypeToTileIdsMap!.keys()!;
+    var enumeration: Enumeration<any> = tileTypeToTileIdsMap!.keys()!;
 ;
     
 
@@ -126,9 +128,9 @@ new GeographicMapCellType(0, 0);
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-key= enumeration.nextElement()!; as String;
+key= this.enumerationUtil!.nextElement(enumeration)!; as String;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     

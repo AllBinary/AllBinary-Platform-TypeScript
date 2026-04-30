@@ -203,7 +203,7 @@ var document = document
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;
 ;
     
 

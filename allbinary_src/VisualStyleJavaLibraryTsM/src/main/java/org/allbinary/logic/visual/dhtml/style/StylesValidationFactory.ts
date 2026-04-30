@@ -99,7 +99,7 @@ export class StylesValidationFactory
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 var hashMap = hashMap
 
-    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT); as Document;
+    var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;
 ;
     
 
@@ -182,7 +182,7 @@ index < nodeList!.getLength(); index++)
 styleNodesIndex < styleNodeList!.length; styleNodesIndex++)
         {
 
-    var styleNode: Node = styleNodeList!.get(styleNodesIndex); as Node;
+    var styleNode: Node = styleNodeList!.get(styleNodesIndex) as Node;
 ;
     
 

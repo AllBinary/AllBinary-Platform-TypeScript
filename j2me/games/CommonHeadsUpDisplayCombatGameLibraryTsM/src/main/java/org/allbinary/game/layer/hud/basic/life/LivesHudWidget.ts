@@ -104,7 +104,7 @@ this.update();
                         
                                     {
                                     
-    var maxLives: number = Math.round(this.getLifeInterface()!.getMaxlives(););
+    var maxLives: number = Math.round(this.getLifeInterface()!.getMaxlives());
 ;
     
 
@@ -141,7 +141,7 @@ var graphics = graphics
 
 
                         for (
-    var index: number = Math.round(this.getLifeInterface()!.get(););
+    var index: number = Math.round(this.getLifeInterface()!.get());
 --index >= 0; )
         {
 this.animationInterface!.paintXY(graphics, xArray[index]!, this.getY());

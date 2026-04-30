@@ -125,7 +125,7 @@ var controlType = controlType
     public close(){
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
@@ -157,7 +157,7 @@ this.listenersList!.remove(playerListener);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setState(state: number){
 var state = state
@@ -195,7 +195,7 @@ this.state= state;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setTimeBase(timeBase: TimeBase){
 var timeBase = timeBase
@@ -219,7 +219,7 @@ this.timeBase= timeBase;
     public realize(){
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setLoopCount(count: number){
 var count = count
@@ -239,7 +239,7 @@ this.loopCount= count;
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setMediaTime(now: number): number{
 var now = now
@@ -253,7 +253,7 @@ var now = now
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
 this.setState(Player.STARTED);
@@ -262,7 +262,7 @@ this.setState(Player.STARTED);
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
 this.setState(Player.PREFETCHED);

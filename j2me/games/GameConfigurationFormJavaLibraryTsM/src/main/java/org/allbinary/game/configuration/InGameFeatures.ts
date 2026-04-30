@@ -77,7 +77,7 @@ export class InGameFeatures extends Init {
 ;
     
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object); as BasicArrayList;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(orientationData!.ORIENTATION_SENSOR_INPUT as Object) as BasicArrayList;
 ;
     
 
@@ -196,7 +196,7 @@ InGameFeatureChoiceGroups.getExclusiveInstance()!.add(orientationData!.ORIENTATI
                                     }
                                 
 
-    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT as Object); as BasicArrayList;
+    var exclusiveOrientationSensorVector: BasicArrayList = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.get(OrientationData.getInstance()!.ORIENTATION_SENSOR_INPUT as Object) as BasicArrayList;
 ;
     
 

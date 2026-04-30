@@ -94,7 +94,7 @@ public constructor (){
             super();
         }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, highScore: HighScore){
     //var remoteHighScores = remoteHighScores
@@ -138,7 +138,7 @@ hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore())
                                     {
                                     
     var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
-                            get(hashtable, noCrypt); as Hashtable<any, any>;
+                            get(hashtable, noCrypt) as Hashtable<any, any>;
 ;
     
 remoteHighScores!.update(resultHashtable);

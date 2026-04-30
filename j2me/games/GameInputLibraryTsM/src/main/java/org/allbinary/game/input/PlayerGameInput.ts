@@ -89,7 +89,7 @@ this.playerInputId= playerInputId;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
@@ -99,7 +99,7 @@ this.addForRemoval(gameKeyEvent);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
@@ -107,7 +107,7 @@ this.add(gameKeyEvent);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
@@ -117,16 +117,16 @@ this.addForRemoval(gameKeyEvent);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKey(gameKeyEvent: number){
     //var gameKeyEvent = gameKeyEvent
 PreLogUtil.put(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY);
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent)!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
     //var gameKeyEvent = gameKeyEvent
@@ -134,7 +134,7 @@ this.addForRemoval(gameKeyEvent);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpKeyEvent(gameKeyEvent: number){
     //var gameKeyEvent = gameKeyEvent

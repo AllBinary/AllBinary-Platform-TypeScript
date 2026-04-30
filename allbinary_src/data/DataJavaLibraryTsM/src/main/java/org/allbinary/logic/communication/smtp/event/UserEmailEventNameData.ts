@@ -101,12 +101,12 @@ export class UserEmailEventNameData
     public static readonly NEWPASSWORD: UserEmailEventNameData = new UserEmailEventNameData("New Password");
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object); as UserEmailEventNameData;
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object) as UserEmailEventNameData;
 ;
     
 
@@ -151,7 +151,7 @@ this.userNameEvenNameHashMap!.put(this.eventHandlerName, this);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     initNextId(){
 this.eventNameId= UserEmailEventNameData.nextId;

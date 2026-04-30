@@ -206,7 +206,7 @@ var searchRequest = searchRequest
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index); as String;
+    var subStore: string = subStoreVector!.get(index) as String;
 ;
     
 

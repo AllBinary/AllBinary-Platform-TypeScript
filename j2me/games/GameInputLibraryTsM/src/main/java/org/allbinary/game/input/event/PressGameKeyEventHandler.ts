@@ -61,8 +61,6 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { PressGameKeyEventListenerInterface } from "./PressGameKeyEventListenerInterface.js";
-
 export class PressGameKeyEventHandler extends BasicEventHandler {
         
 

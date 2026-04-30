@@ -39,6 +39,9 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
 
     
@@ -85,6 +88,8 @@ export class GameFeatureUtil
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     public readonly ON_GAME_FEATURE_CHANGE: string = "onGameFeatureChange";
 
@@ -356,15 +361,17 @@ this.updateExclusive(selectedChoiceLabel);
     public isExclusive(itemLabel: string): boolean{
 var itemLabel = itemLabel
 
-    var enumeration: Enumeration = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;
+    var enumeration: Enumeration<any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;
 ;
     
 
-        while(enumeration.hasMoreElements())
-        {
-
-    var name: string = enumeration.nextElement()!; as String;
+    var name: string
 ;
+    
+
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
+        {
+name= this.enumerationUtil!.nextElement(enumeration)!; as String;
     
 
                         if(itemLabel!.compareTo(name) == 0)

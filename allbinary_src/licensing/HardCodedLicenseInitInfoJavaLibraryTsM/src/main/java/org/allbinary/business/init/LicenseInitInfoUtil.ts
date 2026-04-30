@@ -63,7 +63,7 @@ export class LicenseInitInfoUtil
     public readonly PRIVACY_POLICY: string = "privacy_policy";
 
     private readonly OFFICIAL_ALLBINARY_SERVICES_SERVER: string = "https://services.allbinary.com/LicServ/serverssl.php";
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
 var filePath = filePath
@@ -76,7 +76,7 @@ private constructor (){
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
 var initData = initData
@@ -84,7 +84,7 @@ var initData = initData
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
 
@@ -97,7 +97,7 @@ var initData = initData
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 var initializeCounter = initializeCounter

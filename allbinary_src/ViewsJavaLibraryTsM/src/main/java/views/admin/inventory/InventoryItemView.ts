@@ -345,7 +345,7 @@ index < size; index++)
 ;
     
 
-    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE); as FileItem;
+    var fileItem: FileItem = this.getRequestHashMap()!.get(BasicItemData.IMAGE) as FileItem;
 ;
     
 this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.imageFileName, this.mediaData);

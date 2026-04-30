@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
@@ -273,6 +275,9 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
+import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 
 
 
@@ -300,6 +305,8 @@ import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
 export class GameMidlet extends ProgressMidlet implements CommandListener {
         
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 
@@ -643,7 +650,7 @@ notifyDestroyed();
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public commandAction(command: Command, displayable: Displayable){
     //var command = command
@@ -814,7 +821,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
 ;
     
 
-    var lockableFeature: LockableFeature = list.get(0); as LockableFeature;
+    var lockableFeature: LockableFeature = list.get(0) as LockableFeature;
 ;
     
 
@@ -1126,7 +1133,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, inGameOptionsForm)
                         
                                     {
                                     
-    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get(); as InGameOptionsForm;
+    var inGameOptionsForm: InGameOptionsForm = InGameOptionsFormFactory.getInstance()!.get() as InGameOptionsForm;
 ;
     
 GameFeatureFormUtil.getInstance()!.setDefault(inGameOptionsForm);
@@ -1673,7 +1680,7 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
 ;
     
 
-    var enumeration: Enumeration = currentHashtable!.keys()!;
+    var enumeration: Enumeration<any> = currentHashtable!.keys()!;
 ;
     
 
@@ -1681,9 +1688,9 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-key= enumeration.nextElement()!;
+key= this.enumerationUtil!.nextElement(enumeration)!;
     
 hashtable.put(key, currentHashtable!.get(key as Object));
     

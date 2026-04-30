@@ -94,7 +94,7 @@ var files = files
 index < size; index++)
         {
 
-    var file: AbFile = files.get(index); as AbFile;
+    var file: AbFile = files.get(index) as AbFile;
 ;
     
 stringBuffer!.append(file.getPath());

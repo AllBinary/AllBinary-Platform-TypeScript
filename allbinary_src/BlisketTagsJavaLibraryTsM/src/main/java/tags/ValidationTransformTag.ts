@@ -114,7 +114,7 @@ this.logic= logic;
     
 
     var result: Boolean = method.invoke(this.getHelper(), 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -162,7 +162,7 @@ this.logic= logic;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -208,7 +208,7 @@ this.logic= logic;
 ;
     
 
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
 ;
     
 stringBuffer!.append("ValidationViewTag Start For: ");

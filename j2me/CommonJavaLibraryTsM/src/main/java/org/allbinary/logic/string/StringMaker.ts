@@ -242,13 +242,7 @@ this.charArray[this.currentLength++]=
     var min: number = this.min(this.charArray!.length, newCapacity)!;
 ;
     
-
-
-
-        for (let i = 0; i < min; i++) {
-            copy[0 + i] = this.charArray[i]!;
-        }
-    ;
+System.arraycopy(this.charArray, 0, copy, 0, min);
     
 this.charArray= copy;
     

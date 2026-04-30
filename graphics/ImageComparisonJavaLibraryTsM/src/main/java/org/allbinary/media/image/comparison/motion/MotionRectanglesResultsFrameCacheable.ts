@@ -97,7 +97,7 @@ this.motionRectangles= motionRectangles;
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(this.constructor.name.toString()!);
+stringBuffer!.append(thisconstructor.name.toString()!);
     
 stringBuffer!.append(" Frame: ");
     

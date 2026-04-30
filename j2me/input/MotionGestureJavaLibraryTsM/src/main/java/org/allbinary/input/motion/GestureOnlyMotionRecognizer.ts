@@ -76,7 +76,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);
@@ -96,7 +96,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);
@@ -116,7 +116,7 @@ var y = y
 var deviceId = deviceId
 var modifiers = modifiers
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance(); as CustomGPoint;
+    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);

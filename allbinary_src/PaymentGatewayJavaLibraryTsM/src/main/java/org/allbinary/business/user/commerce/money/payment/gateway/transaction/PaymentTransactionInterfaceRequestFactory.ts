@@ -157,7 +157,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;
     
 
@@ -290,11 +290,11 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;
     
 
-    var gatewayName: string = weblisketSession!.getPaymentMethod(); as String;
+    var gatewayName: string = weblisketSession!.getPaymentMethod() as String;
 ;
     
 

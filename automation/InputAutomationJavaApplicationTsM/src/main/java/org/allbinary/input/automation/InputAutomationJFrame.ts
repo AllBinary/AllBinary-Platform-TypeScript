@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
@@ -145,8 +147,6 @@ import { Desktop } from "./Desktop.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
-import { JDialog } from "./JDialog.js";
-
 import { WindowEvent } from "./WindowEvent.js";
 
 import { FocusEvent } from "./FocusEvent.js";
@@ -164,6 +164,8 @@ import { JList } from "./JList.js";
 import { JScrollPane } from "./JScrollPane.js";
 
 import { JMenuBar } from "./JMenuBar.js";
+
+import { JDialog } from "./JDialog.js";
 
 import { JLabel } from "./JLabel.js";
 
@@ -288,14 +290,14 @@ public constructor (){
         this.initComponents();
     
 
-    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
+    var url: URL = thisconstructor.name.getResource("/help/Help.hs")!;
 ;
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
     
 this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
     
-url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
+url= thisconstructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
 
     var imageIcon: ImageIcon = new ImageIcon(url);
@@ -781,7 +783,7 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue(); as String;
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as String;
 ;
     
 
@@ -795,7 +797,7 @@ var evt = evt
 this.getAutomationModuleConfigurationJPanel()!.removeAll();
     
 
-    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout(); as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.getAutomationModuleConfigurationJPanel()!.getLayout() as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.inputAutomationModuleInterface!.getConfigurationJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));

@@ -269,7 +269,7 @@ var angle = angle
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
 ;
     
 

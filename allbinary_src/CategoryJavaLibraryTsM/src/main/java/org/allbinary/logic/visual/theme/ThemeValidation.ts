@@ -268,7 +268,7 @@ this.init(storeThemeCategoryInterface);
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance() as StoreThemeCategoryInterface;
 ;
     
 this.init(rootStoreThemeCategoryInterface);
@@ -583,7 +583,7 @@ var document = document
 ;
     
 
-    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation(); as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = this.getCssStyleValidation() as DomNodeInterface;
 ;
     
 node.appendChild(domNodeInterface!.toXmlNode(document));

@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { GameInitializedEvent } from "../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js";
 
     

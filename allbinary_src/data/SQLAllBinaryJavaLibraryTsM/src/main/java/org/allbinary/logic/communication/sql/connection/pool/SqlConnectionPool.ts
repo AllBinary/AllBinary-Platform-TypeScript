@@ -107,7 +107,7 @@ private constructor (){
 
 
                 //@Throws(SQLException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(url: string): Connection{
 var url = url
@@ -139,7 +139,7 @@ var url = url
                                 
                         else {
                             
-    var connectionVector: Vector = this.connectionHashMap!.get(url as Object); as Vector;
+    var connectionVector: Vector = this.connectionHashMap!.get(url as Object) as Vector;
 ;
     
 
@@ -221,7 +221,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 i < size; i++)
         {
 
-    var sqlConnection: Connection = connectionVector!.get(i); as Connection;
+    var sqlConnection: Connection = connectionVector!.get(i) as Connection;
 ;
     
 
@@ -299,7 +299,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 
 
                 //@Throws(SQLException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public add(url: string, sqlConnection: Connection){
 var url = url

@@ -194,11 +194,11 @@ keyValuePersistance!.loadAll(abeClientInformation);
 ;
     
 
-    var anyType: any = this.SCALE.getName(); as Object;
+    var anyType: any = this.SCALE.getName() as Object;
 ;
     
 
-    var value: string = hashtable.get(anyType as Object); as String;
+    var value: string = hashtable.get(anyType as Object) as String;
 ;
     
 this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.toInt()));

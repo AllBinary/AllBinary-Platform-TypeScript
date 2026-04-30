@@ -172,7 +172,7 @@ this.vector.add(options[index]!);
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public test(){
 
@@ -216,7 +216,7 @@ index < size; index++)
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index); as String;
+    var serverName: string = this.vector.get(index) as String;
 ;
     
 
@@ -239,7 +239,7 @@ LicenseInitInfoUtil.getInstance()!.write(licenseInitInfo);
     
 
     var abeLicenseInterface: AbeLicenseInterface = xmlRpcAbeLicenseClient!.get(
-                            null); as AbeLicenseInterface;
+                            null) as AbeLicenseInterface;
 ;
     
 

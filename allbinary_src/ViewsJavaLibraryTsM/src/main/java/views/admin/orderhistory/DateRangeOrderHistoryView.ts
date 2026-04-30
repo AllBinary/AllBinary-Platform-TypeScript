@@ -304,7 +304,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -346,7 +346,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -388,7 +388,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -430,7 +430,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));
@@ -472,7 +472,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderHistoryVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderHistoryVector!.get(index) as OrderHistory;
 ;
     
 node.appendChild(orderHistory!.toXmlNode(document));

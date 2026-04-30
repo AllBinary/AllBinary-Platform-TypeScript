@@ -53,8 +53,6 @@ import { ImageUtil } from "./ImageUtil.js";
 
 import { Point } from "./Point.js";
 
-import { Graphics2D } from "./Graphics2D.js";
-
 export class ImagesRatioUtil
             extends Object
          {

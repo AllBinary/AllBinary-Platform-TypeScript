@@ -75,8 +75,6 @@ import { TouchScreenFactory } from "./TouchScreenFactory.js";
 
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
-import { TouchButton } from "./TouchButton.js";
-
 export class TouchButtonRecognizer
             extends Object
          {
@@ -245,7 +243,7 @@ this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public releaseTouchButtonInput(x: number, y: number, deviceId: number): boolean{
 var x = x
@@ -335,7 +333,7 @@ this.processRelease(touchButtonInput, deviceId);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pressTouchButtonInput(x: number, y: number, deviceId: number): boolean{
 var x = x

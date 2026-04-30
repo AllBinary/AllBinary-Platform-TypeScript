@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { awt } from "../../../../java/awt.js";
 
     

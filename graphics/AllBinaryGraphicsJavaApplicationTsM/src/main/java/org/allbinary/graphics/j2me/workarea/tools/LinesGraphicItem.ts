@@ -212,7 +212,7 @@ this.active= false;
 index < numberOfLines; index++)
         {
 
-    var lineNode: Node = lineNodes!.get(index); as Node;
+    var lineNode: Node = lineNodes!.get(index) as Node;
 ;
     
 
@@ -354,7 +354,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addPoint(pointNodes: NodeList){
 var pointNodes = pointNodes
@@ -387,14 +387,14 @@ var pointNodes = pointNodes
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(xInteger!.toInt(), yInteger!.toInt())!;
+    var point: GPoint = PointFactory.getInstance()!.createXY(xIntegeryInteger)!;
 ;
     
 this.addPoint(point);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPoint(point: GPoint){
 var point = point
@@ -408,7 +408,7 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removePoint(): GPoint{
 
@@ -493,7 +493,7 @@ var list = list
 index < size; index++)
         {
 
-    var point: GPoint = list.get(index); as GPoint;
+    var point: GPoint = list.get(index) as GPoint;
 ;
     
 
@@ -623,7 +623,7 @@ graphics.setStroke(new BasicStroke(x));
 index < size; index++)
         {
 
-    var secondPoint: GPoint = tempPointVector!.get(index); as GPoint;
+    var secondPoint: GPoint = tempPointVector!.get(index) as GPoint;
 ;
     
 graphics.drawLine((firstPoint!.getX() *x) -(x /4), (firstPoint!.getY() *y) -(y /4), (secondPoint!.getX() *x) -(x /4), (secondPoint!.getY() *y) -(y /4));

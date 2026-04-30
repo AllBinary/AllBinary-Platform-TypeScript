@@ -46,8 +46,6 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { DisplayChangeEventListener } from "./DisplayChangeEventListener.js";
-
 export class LastDisplayChangeEventHandler extends BasicEventHandler {
         
 

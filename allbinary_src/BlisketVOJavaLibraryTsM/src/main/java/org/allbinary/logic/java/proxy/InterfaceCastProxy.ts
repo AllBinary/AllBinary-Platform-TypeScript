@@ -82,7 +82,7 @@ var proxyArgs = proxyArgs
 ;
     
 
-    var realMethod: Method = this.anyType!..constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;
+    var realMethod: Method = this.anyType!.constructor.name.getMethod(methodName, proxyMethod!.getParameterTypes())!;
 ;
     
 

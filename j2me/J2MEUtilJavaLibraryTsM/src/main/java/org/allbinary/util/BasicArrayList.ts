@@ -88,13 +88,7 @@ stringBuffer!.appendint(this.currentIndex);
                                 
 this.ensureCapacity(this.currentIndex +1);
     
-
-
-
-        for (let i = ; i < ; i++) {
-            this.objectArray[ + i] = this.objectArray[i]!;
-        }
-    ;
+System.arraycopy(this.objectArray, index, this.objectArray, index +1, this.currentIndex -index);
     
 this.objectArray[index]= element;
     
@@ -154,7 +148,13 @@ stringBuffer!.appendint(this.currentIndex);
     
 
                         if(numMoved > 0)
-                        System.arraycopy(this.objectArray, index +1, this.objectArray, index, numMoved);
+                        
+                                    {
+                                    System.arraycopy(this.objectArray, index +1, this.objectArray, index, numMoved);
+    
+
+                                    }
+                                
 this.objectArray[--this.currentIndex]= 
                                         null
                                     ;
@@ -198,13 +198,7 @@ index < this.currentIndex; index++)
                         if(numMoved > 0)
                         
                                     {
-                                    
-
-
-        for (let i = ; i < numMoved; i++) {
-            this.objectArray[index + i] = this.objectArray[i]!;
-        }
-    ;
+                                    System.arraycopy(this.objectArray, index +1, this.objectArray, index, numMoved);
     
 
                                     }
@@ -248,13 +242,7 @@ index < this.currentIndex; index++)
                         if(numMoved > 0)
                         
                                     {
-                                    
-
-
-        for (let i = ; i < numMoved; i++) {
-            this.objectArray[index + i] = this.objectArray[i]!;
-        }
-    ;
+                                    System.arraycopy(this.objectArray, index +1, this.objectArray, index, numMoved);
     
 
                                     }
@@ -381,13 +369,7 @@ this.objectArray[this.currentIndex++]= list.objectArray[index]!;
     
 this.ensureCapacity(this.currentIndex +numSize);
     
-
-
-
-        for (let i = 0; i < numSize; i++) {
-            this.objectArray[this.currentIndex + i] = newObjectArray[i]!;
-        }
-    ;
+System.arraycopy(newObjectArray, 0, this.objectArray, this.currentIndex, numSize);
     
 this.currentIndex += numSize;
     
@@ -543,11 +525,16 @@ i >= 0; i--)
                                     null
                                 )
                         
+                                    {
+                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return i;
     
+
+                                    }
+                                
 }
 
 
@@ -565,11 +552,16 @@ i >= 0; i--)
 
                         if(anyType!.equals(this.objectArray[i]!))
                         
+                                    {
+                                    
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return i;
     
+
+                                    }
+                                
 }
 
 
@@ -737,13 +729,7 @@ this.currentIndex= 0;
 
                                     }
                                 
-
-
-
-        for (let i = 0; i < ; i++) {
-            objectArray[0 + i] = this.objectArray[i]!;
-        }
-    ;
+System.arraycopy(this.objectArray, 0, objectArray, 0, this.currentIndex);
     
 
                         if(objectArray!.length > this.currentIndex)

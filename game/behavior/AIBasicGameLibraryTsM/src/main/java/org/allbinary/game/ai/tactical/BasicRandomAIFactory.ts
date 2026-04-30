@@ -75,7 +75,7 @@ var hashtable = hashtable
 var ownerLayerInterface = ownerLayerInterface
 var gameInput = gameInput
 
-    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object); as Visitor;
+    var visitor: Visitor = hashtable.get(BasicAI.AI_VISITOR as Object) as Visitor;
 ;
     
 
@@ -93,7 +93,7 @@ var gameInput = gameInput
                                     }
                                 
 
-    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object); as InputProbability;
+    var inputProbability: InputProbability = hashtable.get(InputProbability.INPUT_PROBABILITY as Object) as InputProbability;
 ;
     
 

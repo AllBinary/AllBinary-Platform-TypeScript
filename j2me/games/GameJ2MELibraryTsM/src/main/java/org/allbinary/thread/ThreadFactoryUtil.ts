@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../java/lang/Thread.js";
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { J2MEUtil } from "../../../org/allbinary/J2MEUtil.js";

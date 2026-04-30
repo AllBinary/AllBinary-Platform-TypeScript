@@ -245,7 +245,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface = this.get(index); as CustomItemInterface;
+    var nextItem: CustomItemInterface = this.get(index) as CustomItemInterface;
 ;
     
 

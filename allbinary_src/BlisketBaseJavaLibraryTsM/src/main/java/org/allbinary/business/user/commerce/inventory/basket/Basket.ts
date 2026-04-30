@@ -97,10 +97,10 @@ var num = num
 ;
     
 
-    var newNumInt: number = oldNumInt!.toInt() +numInt!.toInt();
+    var newNumInt: number = oldNumInt +numInt;
 ;
     
-this.items.put(id, newNumInt!.toString());
+this.items.put(id, newNumInt);
     
 
                                     }
@@ -244,7 +244,7 @@ totalWeight!.add(weightFloat!.toString());
     public getNumberOf(product: string): number{
 var product = product
 
-    var numStr: string = this.items.get(product); as String;
+    var numStr: string = this.items.get(product) as String;
 ;
     
 
@@ -280,7 +280,7 @@ var product = product
 ;
     
 
-    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance(); as InventoryEntity;
+    var inventoryEntity: InventoryEntity = inventoryEntityFactory!.getInventoryEntityInstance() as InventoryEntity;
 ;
     
 

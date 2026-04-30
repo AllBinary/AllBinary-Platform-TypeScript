@@ -79,7 +79,7 @@ public constructor (){
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -89,7 +89,7 @@ public constructor (){
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

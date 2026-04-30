@@ -81,7 +81,7 @@ index < keyArray!.length; index++)
 ;
     
 
-    var keyStroke: KeyStroke = KeyStroke.getKeyStroke(nextKey!.toInt(), 0)!;
+    var keyStroke: KeyStroke = KeyStroke.getKeyStroke(nextKey0)!;
 ;
     
 

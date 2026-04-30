@@ -85,7 +85,7 @@ public constructor (size: number){
                                     }
                                 
 
-    var list: BasicArrayList = this.get(this.index++); as BasicArrayList;
+    var list: BasicArrayList = this.get(this.index++) as BasicArrayList;
 ;
     
 

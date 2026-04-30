@@ -167,7 +167,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList); as GeographicMapCellPosition;
+    var endGeographicMapCellPosition: GeographicMapCellPosition = BasicArrayListUtil.getInstance()!.getRandom(endList) as GeographicMapCellPosition;
 ;
     
 
@@ -277,7 +277,7 @@ endGeographicMapCellPosition= endList!.get(index); as GeographicMapCellPosition;
 ;
     
 
-    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator(); as CustomMapGenerator;
+    var customMapGenerator: CustomMapGenerator = raceTrackGeographicMap!.getCustomMapGenerator() as CustomMapGenerator;
 ;
     
 customMapGenerator!.copyMapIntoCustomMap();
@@ -365,14 +365,14 @@ this.getConnectedWaypointList()!.clear();
                         
                                     {
                                     
-    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior(); as UnitWaypointBehavior;
+    var unitWaypointBehavior: UnitWaypointBehavior = unitLayer!.getWaypointBehavior() as UnitWaypointBehavior;
 ;
     
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
 
-    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0); as CollidableDestroyableDamageableLayer;
+    var rtsLayer: CollidableDestroyableDamageableLayer = this.getConnectedWaypointList()!.get(0) as CollidableDestroyableDamageableLayer;
 ;
     
 

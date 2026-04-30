@@ -83,7 +83,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
         var hashMap = hashMap
 var pageContext = pageContext
 
-    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT); as HelperTag;
+    var inventoryTag: HelperTag = hashMap!.get(AbTagData.PARENT) as HelperTag;
 ;
     
 

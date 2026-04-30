@@ -82,7 +82,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -92,7 +92,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

@@ -56,6 +56,8 @@ import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryI
 
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 
+import { RotationAnimation } from "./RotationAnimation.js";
+
 import { NullRotationAnimation } from "./NullRotationAnimation.js";
 
 import { AnimationBehavior } from "./AnimationBehavior.js";

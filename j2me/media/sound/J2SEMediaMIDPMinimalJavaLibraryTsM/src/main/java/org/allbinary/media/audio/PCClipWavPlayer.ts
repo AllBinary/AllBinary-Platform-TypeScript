@@ -92,6 +92,8 @@ import { BasicPlayer } from "./BasicPlayer.js";
 
 import { NullAudioFormat } from "./NullAudioFormat.js";
 
+import { NullClip } from "./NullClip.js";
+
 import { NullControl } from "./NullControl.js";
 
 import { Math } from "./Math.js";
@@ -201,7 +203,7 @@ this.clip.close();
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
 MusicThreadPool.getInstance()!.runTask(new ARunnable()
@@ -264,7 +266,7 @@ clip.open(audioInputStream);
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
 MusicThreadPool.getInstance()!.runTask(new ARunnable()
@@ -332,7 +334,7 @@ this.setVolumeF((leftVolume) /100.0f);
 
     getVolume(): number{
 
-    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
+    var masterGainFloatControl: FloatControl = clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
 ;
     
 
@@ -359,7 +361,7 @@ this.setVolumeF((leftVolume) /100.0f);
                                     }
                                 
 
-    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN); as FloatControl;
+    var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
 ;
     
 masterGainFloatControl!.setValue(20f *Math.log10(volume););
@@ -396,7 +398,7 @@ var event = event
 index < size; index++)
         {
 
-    var listener: PlayerListener = this.listenersList!.get(size); as PlayerListener;
+    var listener: PlayerListener = this.listenersList!.get(size) as PlayerListener;
 ;
     
 listener.playerUpdate(this, PlayerListener.END_OF_MEDIA, 

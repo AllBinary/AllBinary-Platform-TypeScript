@@ -74,6 +74,8 @@ import { GameInputInterface } from "./GameInputInterface.js";
 
 import { InputFactory } from "./InputFactory.js";
 
+import { GameInputProcessor } from "./GameInputProcessor.js";
+
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 import { TestInputInterface } from "./TestInputInterface.js";
@@ -215,7 +217,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -252,7 +254,7 @@ inputProcessorArray[key]!.processEvent(allbinaryLayerManager, GameKeyEvent.NONE)
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
 var allbinaryLayerManager = allbinaryLayerManager

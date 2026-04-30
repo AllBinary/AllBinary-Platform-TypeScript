@@ -59,25 +59,25 @@ export class MyGraphicItemEventService
     public DUPLICATE: string = "duplicate";
 
     public ROTATE: string = "rotate";
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyGraphicItemEventListener){
 var listener = listener
-MyGraphicItemEventService.listenerList!.add(listenerconstructor as Class<*>, listener as java.util.EventListener);
+MyGraphicItemEventService.listenerList!.add(listener.constructor as Class<*>, listener as java.util.EventListener);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyGraphicItemEventListener){
 var listener = listener
-MyGraphicItemEventService.listenerList!.remove(listenerconstructor as Class<*>, listener as java.util.EventListener);
+MyGraphicItemEventService.listenerList!.remove(listener.constructor as Class<*>, listener as java.util.EventListener);
     
 }
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyGraphicItemEvent){
 var evt = evt

@@ -196,10 +196,10 @@ this.timeout= this.weblisketSession!.getTimeout();
 
                         if(this.attemptsInteger != 
                                     null
-                                 && this.attemptsInteger!.toInt() > 0)
+                                 && attemptsInteger > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(this.attemptsInteger!.toInt() +1);
+                                    this.weblisketSession!.setAttempts(attemptsInteger +1);
     
 
                                     }
@@ -689,7 +689,7 @@ stringBuffer!.append("Trying New login<p>");
 index < size; index++)
         {
 
-    var mustBeOfRole: BasicUserRole = this.roles.get(index); as BasicUserRole;
+    var mustBeOfRole: BasicUserRole = this.roles.get(index) as BasicUserRole;
 ;
     
 

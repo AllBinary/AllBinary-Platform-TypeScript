@@ -92,9 +92,9 @@ export class HelperFactory
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
 ;
     
-classes[0]= hashMap!constructor;
+classes[0]= hashMap!.constructor;
     
-classes[1]= abeFactory!constructor;
+classes[1]= abeFactory!.constructor;
     
 params[0]= hashMap as Object;
     
@@ -187,9 +187,9 @@ params[1]= httpServletRequest as Object;
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
 ;
     
-classes[0]= hashMap!constructor;
+classes[0]= hashMap!.constructor;
     
-classes[1]= abeFactory!constructor;
+classes[1]= abeFactory!.constructor;
     
 params[0]= hashMap as Object;
     
@@ -283,11 +283,11 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
     var abeFactory: AbeFactory = AbeFactory.getInstance()!;
 ;
     
-classes[0]= hashMap!constructor;
+classes[0]= hashMap!.constructor;
     
-classes[1]= specialhashMap!constructor;
+classes[1]= specialhashMap!.constructor;
     
-classes[2]= abeFactory!constructor;
+classes[2]= abeFactory!.constructor;
     
 params[0]= hashMap as Object;
     

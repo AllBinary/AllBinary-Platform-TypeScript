@@ -238,7 +238,7 @@ var index = index
 index < size; index++)
         {
 
-    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index); as HardwareComponentInterface;
+    var componentInterface: HardwareComponentInterface = this.componentInterfaceVector!.get(index) as HardwareComponentInterface;
 ;
     
 hardwareBuffer!.append(componentInterface!.toString());

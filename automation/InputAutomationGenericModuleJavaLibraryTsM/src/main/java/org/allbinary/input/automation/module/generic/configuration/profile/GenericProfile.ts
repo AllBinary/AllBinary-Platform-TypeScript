@@ -181,7 +181,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index); as GenericProfileDataWorkerType;
+    var genericProfileDataWorkerType: GenericProfileDataWorkerType = this.vector.get(index) as GenericProfileDataWorkerType;
 ;
     
 node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));

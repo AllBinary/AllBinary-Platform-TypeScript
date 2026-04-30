@@ -88,7 +88,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
 ;
     
 
@@ -107,7 +107,7 @@ stringBuffer!.append("Must have ");
     
 stringBuffer!.append("InventoryItemView and not: ");
     
-stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
     
 
 
@@ -151,7 +151,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
 ;
     
 
@@ -170,7 +170,7 @@ stringBuffer!.append("Must have ");
     
 stringBuffer!.append("DownloadableInventoryItemView and not: ");
     
-stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
     
 
 
@@ -214,7 +214,7 @@ var inventoryTag = inventoryTag
                                     this.checkForValidationViewHelper(inventoryTag!.getHelper());
     
 
-    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper(); as ValidationViewHelper;
+    var validationViewHelper: ValidationViewHelper = inventoryTag!.getHelper() as ValidationViewHelper;
 ;
     
 
@@ -233,7 +233,7 @@ stringBuffer!.append("Must have ");
     
 stringBuffer!.append("specific TYPE_ID and not: ");
     
-stringBuffer!.append(inventoryTag!.getHelper()!..constructor.name.toString()!);
+stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
     
 
 

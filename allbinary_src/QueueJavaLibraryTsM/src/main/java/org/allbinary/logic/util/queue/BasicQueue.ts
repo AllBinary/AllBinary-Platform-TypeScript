@@ -53,7 +53,7 @@ protected constructor (){
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     offer(anyType: any = {}): boolean{
 var anyType = anyType
@@ -67,7 +67,7 @@ this.queueVector!.add(anyType);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     remove(anyType: any = {}){
 var anyType = anyType
@@ -75,7 +75,7 @@ this.queueVector!.remove(anyType);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     removeLast(): any{
 

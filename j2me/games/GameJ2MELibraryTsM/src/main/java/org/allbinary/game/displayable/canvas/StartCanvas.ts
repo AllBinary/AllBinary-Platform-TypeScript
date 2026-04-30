@@ -800,7 +800,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.close();
@@ -809,7 +809,7 @@ this.setPaused(true);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.open();
@@ -926,7 +926,7 @@ this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processGameOver(){
 this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
@@ -1112,7 +1112,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior(); as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior;
 ;
     
 
@@ -1125,7 +1125,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener(); as DemoGameMidlet;
+    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;
 ;
     
 

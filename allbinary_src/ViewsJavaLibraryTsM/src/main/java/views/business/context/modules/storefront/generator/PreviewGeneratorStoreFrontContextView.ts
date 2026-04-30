@@ -77,7 +77,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
 httpTransformInfoInterface!.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.PARTIAL, CommonSeps.getInstance()!.SPACE +TransformInfosData.getInstance()!.PREVIEW);

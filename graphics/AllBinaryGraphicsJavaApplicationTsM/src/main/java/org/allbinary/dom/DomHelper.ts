@@ -467,7 +467,7 @@ var nodeList = nodeList
 index < numberOfNodes; index++)
         {
 
-    var node: Node = nodeList!.get(index); as Node;
+    var node: Node = nodeList!.get(index) as Node;
 ;
     
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");

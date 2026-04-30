@@ -89,7 +89,7 @@ public constructor (){
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 var tiledLayer = tiledLayer
 
-    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
+    var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;
 ;
     
 viewPosition!.setTiledLayer(tiledLayer);

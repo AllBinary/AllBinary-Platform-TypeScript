@@ -92,7 +92,7 @@ private constructor (){
 
         try {
             
-    var className: string = hashMap!.get(DynamicObjectData.NAME); as String;
+    var className: string = hashMap!.get(DynamicObjectData.NAME) as String;
 ;
     
 
@@ -103,7 +103,7 @@ private constructor (){
     var classes: Function[] = new Array(1);
 ;
     
-classes[0]= hashMap!constructor;
+classes[0]= hashMap!.constructor;
     
 params[0]= hashMap as Object;
     

@@ -130,7 +130,7 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
 var allBinaryLayerManager = allBinaryLayerManager
 var index = index
 
-    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;
 ;
     
 
@@ -166,7 +166,7 @@ var index = index
 ;
     
 
-    var pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3); as RaceTrackPickupLayer;
+    var pickupLayer: RaceTrackPickupLayer = PickupLayerCircularStaticPool.getInstance()!.getInstanceXYZ(pickedUpLayerInterfaceFactory, x, y, tiledLayer!.getZP() +3) as RaceTrackPickupLayer;
 ;
     
 pickupLayer!.setTiledLayer(tiledLayer);

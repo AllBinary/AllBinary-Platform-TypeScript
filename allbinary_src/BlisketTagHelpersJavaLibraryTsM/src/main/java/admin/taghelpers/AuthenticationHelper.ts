@@ -630,10 +630,10 @@ index < size; index++)
 
                         if(this.attemptsInteger != 
                                     null
-                                 && this.attemptsInteger!.toInt() > 0)
+                                 && attemptsInteger > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(this.attemptsInteger!.toInt() +1);
+                                    this.weblisketSession!.setAttempts(attemptsInteger +1);
     
 
                                     }

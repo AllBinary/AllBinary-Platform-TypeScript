@@ -158,7 +158,7 @@ this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as String;
 this.file= hashMap!.get(DownloadItemData.FILE); as String;
     
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE); as String;
+    var value: string = hashMap!.get(DownloadItemData.SIZE) as String;
 ;
     
 
@@ -177,7 +177,7 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME); as String;
+    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as String;
 ;
     
 
@@ -191,27 +191,27 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS); as String;
+    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as String;
 ;
     
 
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS); as String;
+    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as String;
 ;
     
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS); as String;
+    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as String;
 ;
     
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS); as String;
+    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as String;
 ;
     
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES); as String;
+    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as String;
 ;
     
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS); as String;
+    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as String;
 ;
     
 

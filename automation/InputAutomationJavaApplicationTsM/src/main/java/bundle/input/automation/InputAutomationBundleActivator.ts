@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../java/lang/Thread.js";
+        
 import { BundleActivator } from "../../../org/osgi/framework/BundleActivator.js";
 
     

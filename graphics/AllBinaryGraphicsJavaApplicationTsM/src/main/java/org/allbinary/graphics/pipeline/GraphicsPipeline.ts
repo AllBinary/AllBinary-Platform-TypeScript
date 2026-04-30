@@ -86,7 +86,7 @@ var aTheta = aTheta
 index < size; index++)
         {
 
-    var secondPoint: GPoint = pointBasicArrayList!.get(index); as GPoint;
+    var secondPoint: GPoint = pointBasicArrayList!.get(index) as GPoint;
 ;
     
 

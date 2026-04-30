@@ -82,7 +82,7 @@ public constructor (){
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -92,7 +92,7 @@ public constructor (){
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 pageContext!.getOut()!.print(result);
@@ -161,7 +161,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -171,7 +171,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 pageContext!.getOut()!.print(result);

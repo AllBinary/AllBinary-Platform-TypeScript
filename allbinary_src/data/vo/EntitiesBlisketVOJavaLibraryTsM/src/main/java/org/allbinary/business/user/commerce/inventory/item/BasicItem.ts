@@ -472,7 +472,7 @@ this.downloads= value;
 ;
     
 
-                        if(downloadInteger!.toInt() != 0)
+                        if(downloadInteger != 0)
                         
                                     {
                                     this.setDownloadable(true);

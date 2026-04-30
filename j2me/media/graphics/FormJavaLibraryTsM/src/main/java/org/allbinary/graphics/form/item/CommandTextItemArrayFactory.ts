@@ -67,7 +67,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CommandTextItem } from "./CommandTextItem.js";
+import { CustomItem } from "./CustomItem.js";
 
 export class CommandTextItemArrayFactory
             extends Object
@@ -140,7 +140,7 @@ command= vector.elementAt(index); as Command;
                         
                                     {
                                     
-    var aBoolean: Boolean = this.visitorInterface!.visit(command); as Boolean;
+    var aBoolean: Boolean = this.visitorInterface!.visit(command) as Boolean;
 ;
     
 

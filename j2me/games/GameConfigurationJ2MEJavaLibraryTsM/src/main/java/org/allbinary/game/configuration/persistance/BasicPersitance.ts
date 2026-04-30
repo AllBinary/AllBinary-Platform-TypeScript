@@ -126,7 +126,7 @@ index < size; index++)
     var integer: number = this.idList!.objectArray[index]! as Integer;
 ;
     
-this.delete(abeClientInformation, integer.toInt());
+this.delete(abeClientInformation, integer);
     
 }
 

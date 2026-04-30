@@ -317,7 +317,7 @@ stringBuffer!.append(this.getFileName());
 i < size; i++)
         {
 
-    var node: Node = logConfigTypeNodeVector!.elementAt(i); as Node;
+    var node: Node = logConfigTypeNodeVector!.elementAt(i) as Node;
 ;
     
 

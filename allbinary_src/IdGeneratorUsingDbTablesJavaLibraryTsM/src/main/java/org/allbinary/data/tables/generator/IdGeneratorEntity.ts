@@ -114,7 +114,7 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE); as String;
+    var value: string = hashMap!.get(this.VALUE) as String;
 ;
     
 

@@ -60,11 +60,11 @@ export class GameConfigurationTextInput
     public static update(textField: TextField){
 var textField = textField
 
-    var anyType: any = textField!.getLabel(); as Object;
+    var anyType: any = textField!.getLabel() as Object;
 ;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType as Object); as GameConfigurationTextInput;
+    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType as Object) as GameConfigurationTextInput;
 ;
     
 gameConfigurationTextInput!.setText(textField!.getString());

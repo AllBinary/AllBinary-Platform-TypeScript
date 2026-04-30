@@ -158,7 +158,7 @@ this.reset();
 ;
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
 ;
     
 
@@ -186,7 +186,7 @@ this.lastFrameStartTime= currentTime;
 
     public isComplete(): boolean{
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior(); as IndexedAnimationBehavior;
+    var indexedAnimationBehavior: IndexedAnimationBehavior = this.getAnimationBehavior() as IndexedAnimationBehavior;
 ;
     
 

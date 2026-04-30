@@ -127,7 +127,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(this.componentInterface != 
                                     null
                                 )
-                        error += this.componentInterface!..constructor.name.toString()!
+                        error += this.componentInterface!.constructor.name.toString()!
                              else 
                         if()
                         
@@ -172,7 +172,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
                         if(this.componentInterface != 
                                     null
                                 )
-                        error += this.componentInterface!..constructor.name.toString()!
+                        error += this.componentInterface!.constructor.name.toString()!
                              else 
                         if()
                         

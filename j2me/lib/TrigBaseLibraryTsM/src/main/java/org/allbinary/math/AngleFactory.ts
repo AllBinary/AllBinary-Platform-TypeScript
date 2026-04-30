@@ -52,11 +52,11 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Angle } from "./Angle.js";
+
 import { NamedAngle } from "./NamedAngle.js";
 
 import { FrameUtil } from "./FrameUtil.js";
-
-import { Angle } from "./Angle.js";
 
 import { RuntimeException } from "./RuntimeException.js";
 
@@ -206,7 +206,7 @@ this.angleArray[index]= new Angle(index);
     public getAt(index: number): Angle{
     //var index = index
 
-    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index););
+    var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index));
 ;
     
 

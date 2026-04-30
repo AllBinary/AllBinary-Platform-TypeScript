@@ -82,7 +82,7 @@ this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeature
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public add(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
@@ -118,7 +118,7 @@ var gameKeyEvent = gameKeyEvent
                             
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addForRemoval(gameKeyEvent: GameKeyEvent){
 var gameKeyEvent = gameKeyEvent
@@ -126,7 +126,7 @@ this.removalGameKeyEventList!.add(gameKeyEvent);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isForRemoval(gameKeyEvent: GameKeyEvent): boolean{
 var gameKeyEvent = gameKeyEvent
@@ -138,14 +138,14 @@ var gameKeyEvent = gameKeyEvent
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public clear(){
 this.gameKeyEventList!.clear();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNonAIInputGameKeyEvents(){
 
@@ -179,7 +179,7 @@ gameKeyEvent= list.objectArray[index]! as GameKeyEvent;
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public update(){
 

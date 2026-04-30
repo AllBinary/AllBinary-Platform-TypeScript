@@ -124,7 +124,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
 ;
     
 this.newStatus= propertiesHashMap!.get(OrderHistoryData.STATUS); as String;

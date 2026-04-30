@@ -279,7 +279,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public install(): string{
 
@@ -344,7 +344,7 @@ this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), t
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public insert(): string{
 

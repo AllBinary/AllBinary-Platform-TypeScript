@@ -175,13 +175,13 @@ this.aiVistor= visitor;
 this.artificialIntelligenceInterface= artificialIntelligenceInterface;
     
 
-    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface(); as DirectionalCompositeInterface;
+    var directionalCompositeInterface: DirectionalCompositeInterface = this.getOwnerLayerInterface() as DirectionalCompositeInterface;
 ;
     
 this.directionalInterface= directionalCompositeInterface!.getDirectionalInterface();
     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
 ;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
@@ -258,7 +258,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-    var lastTrackingEvent: TrackingEvent = this.list.removeAt(0); as TrackingEvent;
+    var lastTrackingEvent: TrackingEvent = this.list.removeAt(0) as TrackingEvent;
 ;
     
 this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();

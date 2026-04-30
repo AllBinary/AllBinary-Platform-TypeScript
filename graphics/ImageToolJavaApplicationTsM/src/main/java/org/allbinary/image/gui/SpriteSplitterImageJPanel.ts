@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { awt } from "../../../../java/awt.js";
 
     
@@ -149,7 +151,7 @@ new Thread()
 ;
     
 
-    var spriteType: string = spriteTypeJComboBox!.getSelectedItem(); as String;
+    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as String;
 ;
     
 

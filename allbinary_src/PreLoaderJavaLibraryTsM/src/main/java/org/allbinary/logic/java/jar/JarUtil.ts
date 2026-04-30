@@ -132,13 +132,7 @@ offset += i;
     var newcache: number[] = new Array(cache.length +1024);
 ;
     
-
-
-
-        for (let i = 0; i < ; i++) {
-            newcache[0 + i] = cache[i]!;
-        }
-    ;
+System.arraycopy(cache, 0, newcache, 0, cache.length);
     
 cache= newcache;
     
@@ -151,13 +145,7 @@ cache= newcache;
     var tmp: number[] = new Array(offset);
 ;
     
-
-
-
-        for (let i = 0; i < offset; i++) {
-            tmp[0 + i] = cache[i]!;
-        }
-    ;
+System.arraycopy(cache, 0, tmp, 0, offset);
     
 console.log(entry.getName());
     

@@ -105,7 +105,7 @@ public constructor (){
                         
                                     {
                                     
-    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager(); as GeographicMapCompositeInterface;
+    var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;
 ;
     
 

@@ -393,7 +393,7 @@ var path = path
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNameFromPath(categoryPath: string): string{
 var categoryPath = categoryPath
@@ -453,7 +453,7 @@ var categoryPath = categoryPath
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(categoryPath: string): AbPath{
 var categoryPath = categoryPath

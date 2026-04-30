@@ -79,7 +79,7 @@ super.process(layer);
 this.gravityUtil!.process(this.getVelocityProperties(), this.customGravity);
     
 
-    var velocityProperties: VelocityProperties = this.getVelocityProperties(); as VelocityProperties;
+    var velocityProperties: VelocityProperties = this.getVelocityProperties() as VelocityProperties;
 ;
     
 velocityProperties!.limitMaxYForwardVelocity();

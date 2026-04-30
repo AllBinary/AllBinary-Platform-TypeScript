@@ -180,7 +180,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
@@ -201,7 +201,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;
 ;
     
 this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]--;
@@ -301,7 +301,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var cellPosition: CellPosition = list.get(index); as CellPosition;
+    var cellPosition: CellPosition = list.get(index) as CellPosition;
 ;
     
 this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;

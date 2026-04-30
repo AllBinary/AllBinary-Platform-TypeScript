@@ -80,7 +80,7 @@ this.toggle(false, LIST);
 
 
     private saved: boolean = false;
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public toggle(save: boolean, list: BasicArrayList){
 var save = save

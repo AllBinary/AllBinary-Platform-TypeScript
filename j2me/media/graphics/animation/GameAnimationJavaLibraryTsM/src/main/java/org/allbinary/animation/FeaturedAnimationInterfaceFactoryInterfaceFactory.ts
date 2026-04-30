@@ -74,9 +74,9 @@ import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimat
 
 import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 
-import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
-
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
+
+import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         

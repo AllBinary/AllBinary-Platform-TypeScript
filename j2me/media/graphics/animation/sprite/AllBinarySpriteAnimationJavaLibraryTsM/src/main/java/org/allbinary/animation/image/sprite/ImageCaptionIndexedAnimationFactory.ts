@@ -79,6 +79,8 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
+
 export class ImageCaptionIndexedAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

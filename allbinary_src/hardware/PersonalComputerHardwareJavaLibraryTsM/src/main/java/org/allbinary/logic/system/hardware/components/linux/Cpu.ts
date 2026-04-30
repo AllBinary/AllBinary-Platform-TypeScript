@@ -193,7 +193,7 @@ this.cpuHashMap= new HashMap<any, any>();
                         
                                     {
                                     
-    var file: AbFile = fileVector!.get(0); as AbFile;
+    var file: AbFile = fileVector!.get(0) as AbFile;
 ;
     
 lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));

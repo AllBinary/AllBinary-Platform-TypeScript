@@ -191,7 +191,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
 index < size; index++)
         {
 
-    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index); as TransformInfoDomNode;
+    var transformInfoObjectConfigComponent: TransformInfoDomNode = transformInfoObjectConfigComponentVector!.get(index) as TransformInfoDomNode;
 ;
     
 TransformGeneratorUtil.getInstance()!.generate(abeClientInformation, transformInfoObjectConfigComponent, transformInfoInterface);

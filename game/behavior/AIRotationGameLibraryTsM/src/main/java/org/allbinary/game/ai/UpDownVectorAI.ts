@@ -72,7 +72,7 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface(); as VelocityInterfaceCompositeInterface;
+    var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = this.getOwnerLayerInterface() as VelocityInterfaceCompositeInterface;
 ;
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();

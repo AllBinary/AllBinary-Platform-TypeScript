@@ -160,7 +160,7 @@ styleNode!.appendChild(new ColorsView().
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i); as DomNodeInterface;
+    var styleDomNodeInterface: DomNodeInterface = cssStyleElementVector!.get(i) as DomNodeInterface;
 ;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));

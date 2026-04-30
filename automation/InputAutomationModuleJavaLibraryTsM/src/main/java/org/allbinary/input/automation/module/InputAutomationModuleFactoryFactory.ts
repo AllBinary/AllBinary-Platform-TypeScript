@@ -78,9 +78,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { DefaultListModelHelper } from "./DefaultListModelHelper.js";
 
-import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
-
 import { ListModel } from "./ListModel.js";
+
+import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
 
 export class InputAutomationModuleFactoryFactory
             extends Object
@@ -185,7 +185,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object); as InputAutomationModuleFactoryInterface;
+    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object) as InputAutomationModuleFactoryInterface;
 ;
     
 

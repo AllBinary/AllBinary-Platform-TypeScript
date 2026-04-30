@@ -50,9 +50,9 @@ import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
 
-import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
-
 import { HighScores } from "./HighScores.js";
+
+import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 
 import { RuntimeException } from "./RuntimeException.js";
 

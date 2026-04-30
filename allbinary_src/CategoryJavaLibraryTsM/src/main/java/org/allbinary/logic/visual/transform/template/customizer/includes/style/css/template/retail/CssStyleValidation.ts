@@ -132,7 +132,7 @@ this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
 i < size; i++)
         {
 
-    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i); as ValidationInterface;
+    var styleValidationInterface: ValidationInterface = this.cssStyleElementVector!.get(i) as ValidationInterface;
 ;
     
 
@@ -270,7 +270,7 @@ node.appendChild(styleNode);
 i < size; i++)
         {
 
-    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i); as DomNodeInterface;
+    var styleDomNodeInterface: DomNodeInterface = this.cssStyleElementVector!.get(i) as DomNodeInterface;
 ;
     
 styleNode!.appendChild(styleDomNodeInterface!.toXmlNode(document));

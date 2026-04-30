@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../../java/lang/Thread.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -127,7 +129,7 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -138,7 +140,7 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running
@@ -161,7 +163,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0); as MotionRectangles;
+    var motionRectangles: MotionRectangles = this.getMotionRectanglesVector()!.get(0) as MotionRectangles;
 ;
     
 
@@ -173,7 +175,7 @@ timeHelper!.setStartTimeTNT();
                         
                                     {
                                     
-    var rectangle: Rectangle = motionRectangleVector!.get(0); as Rectangle;
+    var rectangle: Rectangle = motionRectangleVector!.get(0) as Rectangle;
 ;
     
 
@@ -202,7 +204,7 @@ index < size; index++)
 ;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object); as InputRobotInterface;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object) as InputRobotInterface;
 ;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);

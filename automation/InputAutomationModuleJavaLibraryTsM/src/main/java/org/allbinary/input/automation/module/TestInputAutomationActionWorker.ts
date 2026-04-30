@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -128,7 +130,7 @@ index < size; index++)
 ;
     
 
-    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object); as InputRobotInterface;
+    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object) as InputRobotInterface;
 ;
     
 

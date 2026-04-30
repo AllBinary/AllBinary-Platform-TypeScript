@@ -150,7 +150,7 @@ var hashMap = hashMap
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
 ;
     
 
@@ -240,7 +240,7 @@ this.logUtil!.putF(new StringMaker().
 index < size; index++)
         {
 
-    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!); as GraphicItemInterface;
+    var item: GraphicItemInterface = hashMap!.get(graphicItemArray[index]!) as GraphicItemInterface;
 ;
     
 
@@ -283,7 +283,7 @@ var pointVector = pointVector
 index < size; index++)
         {
 
-    var point: GPoint = pointVector!.get(index); as GPoint;
+    var point: GPoint = pointVector!.get(index) as GPoint;
 ;
     
 

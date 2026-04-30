@@ -120,7 +120,7 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var gameLayer: AllBinaryGameLayer = this.list.get(index); as AllBinaryGameLayer;
+    var gameLayer: AllBinaryGameLayer = this.list.get(index) as AllBinaryGameLayer;
 ;
     
 gameLayer!.move();

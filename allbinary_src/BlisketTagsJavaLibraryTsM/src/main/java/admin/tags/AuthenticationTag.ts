@@ -160,7 +160,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -170,7 +170,7 @@ this.roles= values;
     
 
     var result: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -224,7 +224,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -234,7 +234,7 @@ this.roles= values;
     
 
     var result: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -288,7 +288,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -298,14 +298,14 @@ this.roles= values;
     
 
     var resultInteger: number = method.invoke(anyType, 
-                            null); as Integer;
+                            null) as Integer;
 ;
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultInteger!.toInt();;
+                        return resultInteger;;
     
 
                 //: 
@@ -352,7 +352,7 @@ this.roles= values;
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -362,7 +362,7 @@ this.roles= values;
     
 
     var resultBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -416,7 +416,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -438,7 +438,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;
 ;
     
 
@@ -492,7 +492,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -502,7 +502,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -560,7 +560,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -570,7 +570,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -628,7 +628,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -650,7 +650,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;
 ;
     
 
@@ -704,7 +704,7 @@ this.roles= values;
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -726,7 +726,7 @@ this.roles= values;
 ;
     
 
-    var resultBoolean: Boolean = method.invoke(anyType, methodArgs); as Boolean;
+    var resultBoolean: Boolean = method.invoke(anyType, methodArgs) as Boolean;
 ;
     
 
@@ -780,7 +780,7 @@ this.roles= values;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -790,7 +790,7 @@ this.roles= values;
     
 
     var resultBoolean: Boolean = method.invoke(anyType, 
-                            null); as Boolean;
+                            null) as Boolean;
 ;
     
 
@@ -847,7 +847,7 @@ this.roles= values;
                         
                                     {
                                     
-    var request: HttpServletRequest = this.pageContext!.getRequest(); as HttpServletRequest;
+    var request: HttpServletRequest = this.pageContext!.getRequest() as HttpServletRequest;
 ;
     
 

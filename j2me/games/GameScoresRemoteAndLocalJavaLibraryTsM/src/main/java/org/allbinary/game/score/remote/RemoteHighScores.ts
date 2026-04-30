@@ -51,6 +51,9 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
+import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+
+    
 
 
 
@@ -80,7 +83,7 @@ export class RemoteHighScores extends HighScores {
         
 
     private static readonly hashTable: Hashtable<any, any> = new Hashtable<any, any>();
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
     //var abeClientInformation = abeClientInformation
@@ -97,7 +100,7 @@ export class RemoteHighScores extends HighScores {
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstancePreload(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
     //var abeClientInformation = abeClientInformation
@@ -114,7 +117,7 @@ export class RemoteHighScores extends HighScores {
 
         try {
             
-    var highScores: HighScores = hashTable!.get(gameInfo); as HighScores;
+    var highScores: HighScores = hashTable!.get(gameInfo) as HighScores;
 ;
     
 
@@ -158,6 +161,8 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     private readonly abeClientInformation: AbeClientInformationInterface
 
@@ -209,7 +214,7 @@ RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abe
 this.getList()!.clear();
     
 
-    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object); as Vector;
+    var vector: Vector = hashtable.get(RemoteHighScoresData.getInstance()!.HIGH_SCORES as Object) as Vector;
 ;
     
 
@@ -231,15 +236,15 @@ this.getList()!.clear();
 index < size; index++)
         {
 
-    var highScoreVector: Vector = vector.elementAt(index); as Vector;
+    var highScoreVector: Vector = vector.elementAt(index) as Vector;
 ;
     
 
-    var displayName: string = highScoreVector!.elementAt(0); as String;
+    var displayName: string = highScoreVector!.elementAt(0) as String;
 ;
     
 
-    var score: string = highScoreVector!.elementAt(1); as String;
+    var score: string = highScoreVector!.elementAt(1) as String;
 ;
     
 
@@ -260,11 +265,15 @@ this.getList()!.add(highScore);
                                 
                         else {
                             
+    var NEXT_ELEMENT: string = "NextElement: ";
+;
+    
+
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
 
-    var enumeration: Enumeration = hashtable.elements()!;
+    var enumeration: Enumeration<any> = hashtable.elements()!;
 ;
     
 
@@ -272,11 +281,11 @@ this.getList()!.add(highScore);
 ;
     
 
-        while(enumeration.hasMoreElements())
+        while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-nextElement= enumeration.nextElement()!;
+nextElement= this.enumerationUtil!.nextElement(enumeration)!;
     
-this.logUtil!.putF("NextElement: " +nextElement, this, commonStrings!.PROCESS);
+this.logUtil!.putF(NEXT_ELEMENT +nextElement, this, commonStrings!.PROCESS);
     
 }
 

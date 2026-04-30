@@ -429,7 +429,7 @@ result.put(columnName, field);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
 var key = key
@@ -475,7 +475,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName); as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
 ;
     
 
@@ -627,7 +627,7 @@ this.executeSQLStatement(sqlStatement);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getValue(value: string): string{
 var value = value
@@ -782,7 +782,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
 ;
     
 PreLogUtil.put(new StringBuilder().
-                            append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!..constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
+                            append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
     
 Class.forName(jdbcDriver)!.newInstance();
     

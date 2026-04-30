@@ -71,8 +71,6 @@ import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 
 import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
 
-import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
-
 export class PickupBehavior
             extends Object
          implements PickupBehaviorInterface {

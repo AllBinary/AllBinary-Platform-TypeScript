@@ -71,7 +71,7 @@ public constructor (){
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public receiveEmailInfo(userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo){
 var userEmailEventNameData = userEmailEventNameData
@@ -84,7 +84,7 @@ this.fireEmailEvent();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addListener(vector: Vector){
 var vector = vector
@@ -101,7 +101,7 @@ var vector = vector
 index < size; index++)
         {
 
-    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index); as UserEmailEventListenerInterface;
+    var userEmailEventListenerInterface: UserEmailEventListenerInterface = vector.get(index) as UserEmailEventListenerInterface;
 ;
     
 this.addListener(userEmailEventListenerInterface);
@@ -110,7 +110,7 @@ this.addListener(userEmailEventListenerInterface);
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addListener(emailEventListenerInterface: UserEmailEventListenerInterface){
 var emailEventListenerInterface = emailEventListenerInterface
@@ -118,7 +118,7 @@ this.emailVector!.add(emailEventListenerInterface);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(emailEventListenerInterface: UserEmailEventListenerInterface){
 var emailEventListenerInterface = emailEventListenerInterface
@@ -128,7 +128,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEmailEvent(){
 
@@ -148,7 +148,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 index < size; index++)
         {
 
-    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index); as UserEmailEventListenerInterface;
+    var emailEventListenerInterface: UserEmailEventListenerInterface = this.emailVector!.get(index) as UserEmailEventListenerInterface;
 ;
     
 emailEventListenerInterface!.onEmailSendRequest(emailEvent);

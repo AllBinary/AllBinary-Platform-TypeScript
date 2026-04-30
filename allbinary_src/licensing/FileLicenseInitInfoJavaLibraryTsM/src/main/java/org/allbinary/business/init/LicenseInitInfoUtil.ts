@@ -100,7 +100,7 @@ export class LicenseInitInfoUtil
     public readonly PRIVACY_POLICY: string = "privacy_policy";
 
     private filePath: string = this.stringUtil!.EMPTY_STRING;
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
 var filePath = filePath
@@ -110,7 +110,7 @@ this.filePath= filePath;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
 var initData = initData
@@ -180,7 +180,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
 
@@ -193,7 +193,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
 var initializeCounter = initializeCounter

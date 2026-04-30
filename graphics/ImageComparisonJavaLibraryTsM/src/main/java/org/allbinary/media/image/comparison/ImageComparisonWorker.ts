@@ -99,7 +99,7 @@ this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isRunning(): boolean{
 
@@ -110,7 +110,7 @@ this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
 var running = running
@@ -118,7 +118,7 @@ this.running= running;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onCaptureEvent(capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent){
     //var capturedImageWorkerResultsEvent = capturedImageWorkerResultsEvent
@@ -135,7 +135,7 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
     //var allBinaryEventObject = allBinaryEventObject

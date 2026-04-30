@@ -76,8 +76,6 @@ import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxMode
 
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
 
-import { ComboBoxModel } from "./ComboBoxModel.js";
-
 import { JDialog } from "./JDialog.js";
 
 import { GroupLayout } from "./GroupLayout.js";
@@ -198,7 +196,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
 ;
     
 
@@ -219,7 +217,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem(); as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
 ;
     
 
@@ -538,7 +536,7 @@ var integer = integer
                         
                                     {
                                     
-    var newKey: string = "&#" +integer.toString() +";";
+    var newKey: string = "&#" +integer +";";
 ;
     
 this.textJTextField!.setText(newKey +this.textJTextField!.getText());

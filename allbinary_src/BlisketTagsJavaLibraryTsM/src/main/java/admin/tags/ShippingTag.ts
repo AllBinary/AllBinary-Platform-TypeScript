@@ -105,7 +105,7 @@ this.storeName= value;
 ;
     
 
-    var addressHelperClass: Function = anyType!constructor!;
+    var addressHelperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -115,7 +115,7 @@ this.storeName= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

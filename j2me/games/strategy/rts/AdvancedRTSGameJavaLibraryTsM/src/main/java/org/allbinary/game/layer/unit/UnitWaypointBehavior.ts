@@ -192,7 +192,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
 
-    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer(); as AdvancedRTSGameLayer;
+    var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer() as AdvancedRTSGameLayer;
 ;
     
 this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer);
@@ -355,7 +355,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.setRandomGeographicMapC
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList); as BasicArrayList;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = BasicArrayListUtil.getInstance()!.getRandom(pathsList) as BasicArrayList;
 ;
     
 this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);

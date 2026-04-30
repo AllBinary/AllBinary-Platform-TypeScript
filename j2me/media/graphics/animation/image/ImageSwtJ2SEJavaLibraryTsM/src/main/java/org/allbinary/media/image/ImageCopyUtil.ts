@@ -485,7 +485,7 @@ image= openGLESImage;
                             image= originalImage;
     
 
-    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image); as OpenGLESImage;
+    var openGLESImage: OpenGLESImage = this.openGLUtil!.add(image) as OpenGLESImage;
 ;
     
 

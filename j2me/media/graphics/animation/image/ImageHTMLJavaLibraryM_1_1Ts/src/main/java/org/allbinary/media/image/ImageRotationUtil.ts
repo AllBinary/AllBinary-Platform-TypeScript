@@ -91,7 +91,7 @@ private constructor (){
 ;
     
 
-    var canvasImage: CanvasImage = htmlImage!.getImage(); as CanvasImage;
+    var canvasImage: CanvasImage = htmlImage!.getImage() as CanvasImage;
 ;
     
 

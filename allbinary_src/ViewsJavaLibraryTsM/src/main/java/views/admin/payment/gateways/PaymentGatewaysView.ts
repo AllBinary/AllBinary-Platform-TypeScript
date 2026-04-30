@@ -125,7 +125,7 @@ var document = document
 index < size; index++)
         {
 
-    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index); as BasicPaymentType;
+    var paymentType: BasicPaymentType = this.paymentGatewayVector!.get(index) as BasicPaymentType;
 ;
     
 

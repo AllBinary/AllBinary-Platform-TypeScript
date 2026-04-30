@@ -129,7 +129,7 @@ var rgb2 = rgb2
 ;
     
 
-    var pixelDelta: PixelDelta = PixelDeltaFactory.cacheInterface!.get(PixelDelta.getKey(point, colorDelta)); as PixelDelta;
+    var pixelDelta: PixelDelta = PixelDeltaFactory.cacheInterface!.get(PixelDelta.getKey(point, colorDelta)) as PixelDelta;
 ;
     
 

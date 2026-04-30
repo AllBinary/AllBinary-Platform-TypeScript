@@ -248,7 +248,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 
 
                 //@Throws(MediaException::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){
     //var frequency = frequency

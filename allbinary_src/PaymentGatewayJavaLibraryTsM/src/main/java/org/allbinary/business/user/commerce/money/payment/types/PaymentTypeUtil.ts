@@ -195,7 +195,7 @@ var paymentTypeString = paymentTypeString
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
 ;
     
 
@@ -381,7 +381,7 @@ var a_PaymentTypeVector = a_PaymentTypeVector
 i < size; i++)
         {
 
-    var paymentType: PaymentType = this.paymentTypeVector!.get(i); as PaymentType;
+    var paymentType: PaymentType = this.paymentTypeVector!.get(i) as PaymentType;
 ;
     
 

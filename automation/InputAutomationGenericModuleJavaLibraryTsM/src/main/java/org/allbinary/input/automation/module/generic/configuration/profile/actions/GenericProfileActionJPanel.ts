@@ -106,7 +106,7 @@ this.getGenericProfileActionScriptJPanel()!.setGenericProfileActionScript(this.g
 this.getGenericProfileActionScriptJPanel()!.updateJTree();
     
 
-    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout(); as javax.swing.GroupLayout;
+    var layout: javax.swing.GroupLayout = this.blankProfileActionScriptJPanel!.getLayout() as javax.swing.GroupLayout;
 ;
     
 layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)!.addGap(0, 395, Short.MAX_VALUE)!.addComponent(this.getGenericProfileActionScriptJPanel(), javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE));

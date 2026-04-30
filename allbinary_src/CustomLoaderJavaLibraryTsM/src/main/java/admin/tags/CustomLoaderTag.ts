@@ -102,7 +102,7 @@ this.webappPath= value;
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 

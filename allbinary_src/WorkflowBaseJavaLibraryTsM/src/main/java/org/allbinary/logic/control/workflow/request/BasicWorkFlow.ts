@@ -291,7 +291,7 @@ index < size; index++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object); as String;
+    var value: string = hashMap!.get(name as Object) as String;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

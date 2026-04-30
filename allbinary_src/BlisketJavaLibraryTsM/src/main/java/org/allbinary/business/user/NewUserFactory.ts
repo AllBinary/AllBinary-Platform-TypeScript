@@ -88,7 +88,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+    var httpServletRequest: HttpServletRequest = httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
 ;
     
 
@@ -97,7 +97,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()); as String;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as String;
 ;
     
 hashMap!.put(UserRoleData.NAME.toString(), role);
@@ -128,7 +128,7 @@ var propertiesHashMap = propertiesHashMap
 ;
     
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()); as String;
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as String;
 ;
     
 requestHashMap!.put(UserRoleData.NAME.toString(), roleString);

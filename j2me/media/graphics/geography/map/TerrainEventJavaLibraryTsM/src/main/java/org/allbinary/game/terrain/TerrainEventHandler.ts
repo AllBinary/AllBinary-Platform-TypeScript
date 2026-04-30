@@ -157,7 +157,7 @@ super.removeListener(eventListenerInterface);
 
         try {
             
-    var terrainEventListener: TerrainEventListener = this.list.get(index); as TerrainEventListener;
+    var terrainEventListener: TerrainEventListener = this.list.get(index) as TerrainEventListener;
 ;
     
 terrainEventListener!.onTerrainEvent(eventObject as TerrainEvent);

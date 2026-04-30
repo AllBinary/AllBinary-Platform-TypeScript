@@ -60,11 +60,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { ColorRangeInterface } from "./ColorRangeInterface.js";
-
 import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
 
-import { ColorAverage } from "./ColorAverage.js";
+import { ColorRangeInterface } from "./ColorRangeInterface.js";
 
 import { Color } from "./Color.js";
 
@@ -129,7 +127,7 @@ indexX < bufferedImage!.getWidth(); indexX++)
 ;
     
 
-    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger); as ColorCacheable;
+    var colorCacheable: ColorCacheable = ColorCacheFactory.getInstance()!.get(keyInteger) as ColorCacheable;
 ;
     
 

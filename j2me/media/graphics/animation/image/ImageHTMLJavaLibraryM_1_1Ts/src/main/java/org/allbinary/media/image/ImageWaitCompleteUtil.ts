@@ -121,7 +121,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 ;
     
 
-    var playnCoreImage: playn.core.Image = playnImage!.getImage(); as playn.core.Image;
+    var playnCoreImage: playn.core.Image = playnImage!.getImage() as playn.core.Image;
 ;
     
 

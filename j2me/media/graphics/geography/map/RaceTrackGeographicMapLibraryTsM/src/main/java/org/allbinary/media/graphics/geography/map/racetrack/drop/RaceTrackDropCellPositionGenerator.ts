@@ -125,7 +125,7 @@ this.list.clear();
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition); as RaceTrackGeographicMapCellType;
+    var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;
 ;
     
 

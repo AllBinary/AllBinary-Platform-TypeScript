@@ -83,7 +83,7 @@ public constructor (pageContext: PageContext){
 this.pageContext= pageContext;
     
 
-    var request: HttpServletRequest = pageContext!.getRequest(); as HttpServletRequest;
+    var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;
     
 this.session= request.getSession(true);

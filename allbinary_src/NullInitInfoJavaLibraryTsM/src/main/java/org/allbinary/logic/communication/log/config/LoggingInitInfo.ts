@@ -55,7 +55,7 @@ export class LoggingInitInfo
     private hasRead: boolean = false;
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static write(){
 
@@ -77,7 +77,7 @@ export class LoggingInitInfo
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static read(){
 
@@ -95,7 +95,7 @@ export class LoggingInitInfo
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
 var value = value
@@ -105,7 +105,7 @@ LoggingInitInfo.hasRead= value;
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
 
@@ -135,7 +135,7 @@ LoggingInitInfo.hasRead= true;
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static set(logConfigInfoList: BasicArrayList){
 var logConfigInfoList = logConfigInfoList

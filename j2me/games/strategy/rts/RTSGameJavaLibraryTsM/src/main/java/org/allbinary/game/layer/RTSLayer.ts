@@ -177,19 +177,17 @@ import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
-import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
-
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
-import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
-
 import { RuntimeException } from "./RuntimeException.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
@@ -416,7 +414,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 ;
     
 
-    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition(); as TileLayerPositionIntoViewPosition;
+    var viewPosition2: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;
 ;
     
 viewPosition2!.setTiledLayer(tiledLayer);

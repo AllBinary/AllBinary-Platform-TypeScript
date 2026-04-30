@@ -60,6 +60,8 @@ import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geog
         
 import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
 
+import { AllBinaryJ2METiledLayer } from "./AllBinaryJ2METiledLayer.js";
+
 export class AllBinaryTiledLayerFactory
             extends Object
          implements AllBinaryTiledLayerFactoryInterface {

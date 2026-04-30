@@ -110,7 +110,7 @@ var document = document
 index < size; index++)
         {
 
-    var email: Email = this.emailInfoVector!.get(index); as Email;
+    var email: Email = this.emailInfoVector!.get(index) as Email;
 ;
     
 

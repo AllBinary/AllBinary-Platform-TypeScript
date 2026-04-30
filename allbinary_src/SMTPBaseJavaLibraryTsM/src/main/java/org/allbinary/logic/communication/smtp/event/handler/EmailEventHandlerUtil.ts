@@ -177,7 +177,7 @@ userEmailEventHandler!.addListener(new LogUserEmailEventListenerModule());
 index < size; index++)
         {
 
-    var userInterface: UserInterface = userVector!.get(index); as UserInterface;
+    var userInterface: UserInterface = userVector!.get(index) as UserInterface;
 ;
     
 

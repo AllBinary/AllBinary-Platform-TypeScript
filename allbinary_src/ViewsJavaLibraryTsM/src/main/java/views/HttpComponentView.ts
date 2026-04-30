@@ -169,7 +169,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 index < size; index++)
         {
 
-    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index); as DomNodeInterface;
+    var domNodeInterface: DomNodeInterface = this.domNodeInterfaceVector!.get(index) as DomNodeInterface;
 ;
     
 this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.toXmlNode(this.transformDocumentInterface!.getDoc()));

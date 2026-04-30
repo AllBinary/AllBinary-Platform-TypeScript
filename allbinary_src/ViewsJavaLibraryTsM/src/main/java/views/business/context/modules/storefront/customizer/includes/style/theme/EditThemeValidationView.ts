@@ -114,11 +114,11 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance(); as StoreThemeCategoryInterface;
+    var rootStoreThemeCategoryInterface: StoreThemeCategoryInterface = categoryFactoryInterface!.getRootInstance() as StoreThemeCategoryInterface;
 ;
     
 
-    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface); as StoreThemeCategoryInterface;
+    var storeThemeCategoryInterface: StoreThemeCategoryInterface = categoryLoaderInterface!.getAll(rootStoreThemeCategoryInterface as CategoryInterface) as StoreThemeCategoryInterface;
 ;
     
 this.validationInterface= new StoreThemeCategoryPathValidationView(storeThemeCategoryInterface as StoreThemeCategoryInterface);

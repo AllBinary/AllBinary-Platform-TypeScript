@@ -205,7 +205,7 @@ var storeFront = storeFront
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index); as String;
+    var subStore: string = subStoreVector!.get(index) as String;
 ;
     
 
@@ -459,7 +459,7 @@ index < size; index++)
 ;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object); as String;
+    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object) as String;
 ;
     
 insertVector!.add(storeFront!.getName());

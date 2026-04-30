@@ -67,6 +67,8 @@ import { SoundStrings } from "./SoundStrings.js";
 
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
+import { Sound } from "./Sound.js";
+
 export class Sounds
             extends Object
          {
@@ -143,7 +145,7 @@ i < soundInterfaceArray!.length; i++)
                                     {
                                     indexInteger= smallIntegerSingletonFactory!.getAt(i);
     
-indexString= indexInteger!.toString();
+indexString= indexInteger;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

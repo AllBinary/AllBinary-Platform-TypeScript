@@ -157,7 +157,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
 ;
     
 
-    var hashtable: Hashtable<any, any> = inputRobotFactory!.get(); as Hashtable<any, any>;
+    var hashtable: Hashtable<any, any> = inputRobotFactory!.get() as Hashtable<any, any>;
 ;
     
 

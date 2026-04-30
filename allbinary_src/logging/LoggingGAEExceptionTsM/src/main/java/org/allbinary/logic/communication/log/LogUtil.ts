@@ -118,7 +118,7 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
 ;
     
 
-    var clazz: Function = anyType!constructor!;
+    var clazz: Function = anyType!.constructor!;
 ;
     
 
@@ -162,7 +162,7 @@ this.logger.log(Level.INFO, message);
 ;
     
 
-    var clazz: Function = anyType!constructor!;
+    var clazz: Function = anyType!.constructor!;
 ;
     
 

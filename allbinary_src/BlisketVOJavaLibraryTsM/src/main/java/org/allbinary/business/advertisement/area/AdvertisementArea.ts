@@ -83,7 +83,7 @@ this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
 this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION); as String;
     
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS); as String;
+    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as String;
 ;
     
 

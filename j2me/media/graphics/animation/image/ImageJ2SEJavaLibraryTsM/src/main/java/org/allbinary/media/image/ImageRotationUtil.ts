@@ -93,7 +93,7 @@ private constructor (){
 ;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
 ;
     
 
@@ -186,7 +186,7 @@ originalAwtImage= originalJ2SEImage!.getImage(); as java.awt.Image;
 ;
     
 
-    var newBufferedImage: BufferedImage = j2seImage!.getImage(); as BufferedImage;
+    var newBufferedImage: BufferedImage = j2seImage!.getImage() as BufferedImage;
 ;
     
 

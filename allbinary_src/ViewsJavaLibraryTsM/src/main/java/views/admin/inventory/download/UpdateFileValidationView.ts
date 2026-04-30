@@ -137,7 +137,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
 ;
     
 
@@ -546,7 +546,7 @@ var document = document
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND); as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
 ;
     
 

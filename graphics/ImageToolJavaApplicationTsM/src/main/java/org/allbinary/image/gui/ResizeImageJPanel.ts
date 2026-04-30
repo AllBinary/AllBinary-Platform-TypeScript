@@ -22,6 +22,8 @@
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../../java/lang/Thread.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -197,7 +199,7 @@ new Thread()
                                     }
                                 
                              else 
-                        if(percent.toInt() !=  -1)
+                        if(percent !=  -1)
                         
                                     {
                                     generatedBufferedImageArray= imageUtil!.createBufferedImageForResize(imageProcessorInput!.getBufferedImageArray(), percent, true);

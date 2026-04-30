@@ -61,7 +61,7 @@ export class LicenseRegistrationUtil
             extends Object
          {
         
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static process(abeClientInformation: AbeClientInformationInterface, registrationId: string){
     //var abeClientInformation = abeClientInformation

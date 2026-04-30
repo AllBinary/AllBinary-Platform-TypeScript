@@ -238,7 +238,7 @@ this.code= address.get(StreetAddressData.CODE); as String;
 this.country= address.get(StreetAddressData.COUNTRY); as String;
     
 
-    var def: string = address.get(StreetAddressData.DEFAULT); as String;
+    var def: string = address.get(StreetAddressData.DEFAULT) as String;
 ;
     
 

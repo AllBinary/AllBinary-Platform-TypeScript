@@ -131,7 +131,7 @@ var angle = angle
 ;
     
 
-                        if(this.UP_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(UP_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.UP_FRAME;
@@ -140,7 +140,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.DOWN_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(DOWN_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.DOWN_FRAME;
@@ -149,7 +149,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.LEFT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(LEFT_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.LEFT_FRAME;
@@ -158,7 +158,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.RIGHT_FRAME.toInt() -angle < closestDirection!.toInt() -angle)
+                        if(RIGHT_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.RIGHT_FRAME;
@@ -170,7 +170,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return closestDirection!.toInt();;
+                        return closestDirection;;
     
 }
 

@@ -22,6 +22,8 @@
         
             import { Integer } from "../../../../../java/lang/Integer.js";
         
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -436,8 +438,6 @@ import { BaseGameBehavior } from "./BaseGameBehavior.js";
 import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
 
 import { FormUtil } from "./FormUtil.js";
-
-import { BasicPopupMenuPaintable } from "./BasicPopupMenuPaintable.js";
 
 import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
 
@@ -968,7 +968,7 @@ scrollSelectionForm!.init(rectangle, formType);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.gameBehavior!.pause(this);
@@ -983,7 +983,7 @@ System.gc();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.logUtil!.putF(commonStrings!.START, this, gameStrings!.UNPAUSE);
@@ -1261,7 +1261,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
 
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -1634,7 +1634,7 @@ this.gameLayerManager= layerManager;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isGameOver(): boolean{
 
@@ -1645,7 +1645,7 @@ this.gameLayerManager= layerManager;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setGameOver(gameOver: boolean){
 var gameOver = gameOver
@@ -1791,7 +1791,7 @@ this.logUtil!.putF("Remove PlayerInput Listeners", this, "removeAllGameKeyInputL
 index >= 0; index--)
         {
 
-    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index); as PlayerGameInput;
+    var playerGameInput: PlayerGameInput = this.localPlayerGameInputList!.get(index) as PlayerGameInput;
 ;
     
 this.removeKeyInputListener(playerGameInput);
@@ -2078,7 +2078,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object); as String;
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object) as String;
 ;
     
 

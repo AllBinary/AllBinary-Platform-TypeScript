@@ -100,7 +100,7 @@ this.xslFile= value;
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -110,7 +110,7 @@ this.xslFile= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 
@@ -168,7 +168,7 @@ this.xslFile= value;
 ;
     
 
-    var helperClass: Function = anyType!constructor!;
+    var helperClass: Function = anyType!.constructor!;
 ;
     
 
@@ -178,7 +178,7 @@ this.xslFile= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null); as String;
+                            null) as String;
 ;
     
 

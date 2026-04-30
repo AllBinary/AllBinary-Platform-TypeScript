@@ -94,7 +94,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             //For kotlin this is before the body of the constructor.
                     
 
-    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface(); as TransformInfoHttpInterface;
+    var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
 this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
@@ -135,7 +135,7 @@ var document = document
 index < size; index++)
         {
 
-    var streetAddress: StreetAddress = this.streetAddressList!.get(index); as StreetAddress;
+    var streetAddress: StreetAddress = this.streetAddressList!.get(index) as StreetAddress;
 ;
     
 billingAddressesNode!.appendChild(streetAddress!.toXmlNode(document));

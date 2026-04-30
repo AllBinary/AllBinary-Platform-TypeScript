@@ -109,7 +109,7 @@ this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(
 index < size; index++)
         {
 
-    var motionRectangle: MotionRectangle = vector2.get(index); as MotionRectangle;
+    var motionRectangle: MotionRectangle = vector2.get(index) as MotionRectangle;
 ;
     
 

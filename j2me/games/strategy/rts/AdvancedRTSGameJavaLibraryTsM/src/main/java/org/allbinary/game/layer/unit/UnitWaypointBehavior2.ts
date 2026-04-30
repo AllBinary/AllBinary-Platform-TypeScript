@@ -456,7 +456,7 @@ this.setTarget(layerInterface, anotherTargetDistance);
                         
                                     {
                                     
-    var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellHistoryP!.getTracked()!.get(this.currentGeographicMapCellHistoryP!.getSize() -1); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellHistoryP!.getTracked()!.get(this.currentGeographicMapCellHistoryP!.getSize() -1) as GeographicMapCellPosition;
 ;
     
 this.associatedAdvancedRTSGameLayer!.teleportTo(geographicMapCellPosition);
@@ -607,7 +607,7 @@ super.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
                         
                                     {
                                     
-    var targetLayer: AdvancedRTSGameLayer = this.targetList!.get(0); as AdvancedRTSGameLayer;
+    var targetLayer: AdvancedRTSGameLayer = this.targetList!.get(0) as AdvancedRTSGameLayer;
 ;
     
 this.associatedAdvancedRTSGameLayer!.waypoint2LogHelperP!.processWaypoint(this.associatedAdvancedRTSGameLayer, this, targetLayer, size);
@@ -872,7 +872,7 @@ this.targetWithoutCachedPathLayerInterface= CollidableDestroyableDamageableLayer
 index >= 0; index--)
         {
 
-    var layerInterface: AdvancedRTSGameLayer = this.getPossibleTargetList()!.get(index); as AdvancedRTSGameLayer;
+    var layerInterface: AdvancedRTSGameLayer = this.getPossibleTargetList()!.get(index) as AdvancedRTSGameLayer;
 ;
     
 
@@ -1165,7 +1165,7 @@ TrackingEventHandler.getInstance()!.fireEvent(this.associatedAdvancedRTSGameLaye
 index >= 0; index--)
         {
 
-    var layerInterface: AdvancedRTSGameLayer = list.get(index); as AdvancedRTSGameLayer;
+    var layerInterface: AdvancedRTSGameLayer = list.get(index) as AdvancedRTSGameLayer;
 ;
     
 
@@ -1298,11 +1298,11 @@ var anyType = anyType
                         
                                     {
                                     
-    var allbinaryLayer: AllBinaryLayer = this.getList()!.get(0); as AllBinaryLayer;
+    var allbinaryLayer: AllBinaryLayer = this.getList()!.get(0) as AllBinaryLayer;
 ;
     
 
-    var cellPosition: GeographicMapCellPosition = this.getPositionList()!.get(0); as GeographicMapCellPosition;
+    var cellPosition: GeographicMapCellPosition = this.getPositionList()!.get(0) as GeographicMapCellPosition;
 ;
     
 

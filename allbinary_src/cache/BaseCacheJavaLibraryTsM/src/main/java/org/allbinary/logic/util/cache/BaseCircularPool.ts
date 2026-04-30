@@ -55,7 +55,7 @@ export class BaseCircularPool
     OBJECT_ARRAY: any[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
 
                 //@Throws(Error::class)
-            @Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(): any{
 

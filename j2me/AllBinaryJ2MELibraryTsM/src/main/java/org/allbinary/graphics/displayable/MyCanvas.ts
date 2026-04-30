@@ -149,7 +149,7 @@ this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isCommand(command: Command): boolean{
 var command = command
@@ -161,7 +161,7 @@ var command = command
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addCommand(command: Command){
 var command = command
@@ -178,7 +178,7 @@ super.addCommand(command);
                                 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeCommand(command: Command){
 var command = command
@@ -188,7 +188,7 @@ super.removeCommand(command);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeAllCommands(){
 
@@ -230,7 +230,7 @@ this.listener= l;
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isPaused(): boolean{
 
@@ -247,7 +247,7 @@ this.removeCommand(MyCommandsFactory.getInstance()!.PAUSE_COMMAND);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.PAUSE);
@@ -260,7 +260,7 @@ this.setPaused(true);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.UN_PAUSE);

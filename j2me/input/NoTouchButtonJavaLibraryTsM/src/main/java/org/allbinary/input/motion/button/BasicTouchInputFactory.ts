@@ -106,7 +106,7 @@ export class BasicTouchInputFactory
     private initialized: boolean = false;
 
     private readonly list: BasicArrayList = new BasicArrayListD();
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
 var inputToGameKeyMapping = inputToGameKeyMapping
@@ -168,7 +168,7 @@ this.logUtil!.putF(new StringMaker().
 index >= 0; index--)
         {
 
-    var touchButtonInput: TouchButtonInput = list.get(index); as TouchButtonInput;
+    var touchButtonInput: TouchButtonInput = list.get(index) as TouchButtonInput;
 ;
     
 touchButtonInput!.update(inputToGameKeyMapping);

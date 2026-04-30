@@ -152,7 +152,7 @@ groupList!.clear();
     public getGroupSize(groupInterface: Group): number{
     //var groupInterface = groupInterface
 
-    var id: number = Math.round(groupInterface!.getGroupId(););
+    var id: number = Math.round(groupInterface!.getGroupId());
 ;
     
 
@@ -167,7 +167,7 @@ groupList!.clear();
     public getList(groupInterface: Group): BasicArrayList{
     //var groupInterface = groupInterface
 
-    var id: number = Math.round(groupInterface!.getGroupId(););
+    var id: number = Math.round(groupInterface!.getGroupId());
 ;
     
 
@@ -216,7 +216,7 @@ groupList!.clear();
     public areAllOtherGroupsEmpty(groupInterface: Group): boolean{
     //var groupInterface = groupInterface
 
-    var id: number = Math.round(groupInterface!.getGroupId(););
+    var id: number = Math.round(groupInterface!.getGroupId());
 ;
     
 

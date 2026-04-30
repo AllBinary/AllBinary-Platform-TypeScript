@@ -148,7 +148,7 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
 index < size; index++)
         {
 
-    var orderHistory: OrderHistory = orderReviewVector!.get(index); as OrderHistory;
+    var orderHistory: OrderHistory = orderReviewVector!.get(index) as OrderHistory;
 ;
     
 
