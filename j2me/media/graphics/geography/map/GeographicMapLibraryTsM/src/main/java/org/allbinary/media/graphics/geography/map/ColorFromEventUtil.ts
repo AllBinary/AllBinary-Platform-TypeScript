@@ -48,6 +48,8 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
         
 import { GeographicMapCompositeInterface } from "./GeographicMapCompositeInterface.js";
 
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 export class ColorFromEventUtil
             extends Object
          {

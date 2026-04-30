@@ -75,6 +75,8 @@ import { TouchScreenFactory } from "./TouchScreenFactory.js";
 
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
+import { TouchButton } from "./TouchButton.js";
+
 export class TouchButtonRecognizer
             extends Object
          {

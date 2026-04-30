@@ -97,7 +97,7 @@ var gameInput = gameInput
                     
 this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE); as Integer;
     
-this.currentDistance= maxDistance;
+this.currentDistance= this.maxDistance;
     
 }
 

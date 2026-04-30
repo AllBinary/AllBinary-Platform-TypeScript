@@ -205,7 +205,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return DbWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap); as WorkFlowInterface;
+                        return DbWorkFlowFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap) as WorkFlowInterface;
     
 
                 //: 

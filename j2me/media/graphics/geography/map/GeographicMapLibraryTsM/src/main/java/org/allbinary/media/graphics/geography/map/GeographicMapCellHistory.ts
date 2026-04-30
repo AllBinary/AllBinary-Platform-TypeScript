@@ -232,7 +232,7 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index +1); as GeographicMapCellPosition;
+                        return localList!.get(index +1) as GeographicMapCellPosition;
     
 
                                     }
@@ -281,7 +281,7 @@ value= this.visitedList!.get(index); as Boolean;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(index); as GeographicMapCellPosition;
+                        return localList!.get(index) as GeographicMapCellPosition;
     
 
                                     }
@@ -292,7 +292,7 @@ value= this.visitedList!.get(index); as Boolean;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return localList!.get(0); as GeographicMapCellPosition;
+                        return localList!.get(0) as GeographicMapCellPosition;
     
 }
 

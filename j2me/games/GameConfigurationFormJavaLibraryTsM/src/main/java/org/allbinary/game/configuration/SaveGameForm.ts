@@ -20,6 +20,8 @@
 
             import { System } from "../../../../java/lang/System";
         
+            import { Long } from "../../../../java/lang/Long.js";
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     

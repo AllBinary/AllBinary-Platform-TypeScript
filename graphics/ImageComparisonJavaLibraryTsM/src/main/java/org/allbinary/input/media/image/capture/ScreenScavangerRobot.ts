@@ -60,6 +60,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
         
 import { Toolkit } from "./Toolkit.js";
 
+import { Dimension } from "./Dimension.js";
+
 import { Rectangle } from "./Rectangle.js";
 
 export class ScreenScavangerRobot

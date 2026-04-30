@@ -109,7 +109,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeClassLoader.classes.get(name); as Class<*>;
+                        return AbeClassLoader.classes.get(name) as Class<*>;
     
 }
 

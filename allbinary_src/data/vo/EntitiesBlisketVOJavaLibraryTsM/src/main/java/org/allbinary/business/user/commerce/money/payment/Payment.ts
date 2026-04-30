@@ -70,6 +70,8 @@ import { PaymentInterface } from "./PaymentInterface.js";
 
 import { PaymentData } from "./PaymentData.js";
 
+import { CreditCardType } from "./CreditCardType.js";
+
 export class Payment
             extends Object
          implements PaymentInterface, DomNodeInterface {

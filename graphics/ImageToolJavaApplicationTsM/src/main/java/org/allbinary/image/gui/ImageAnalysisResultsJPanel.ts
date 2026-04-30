@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../java/lang/Long.js";
+        
 import { ImageAnalysisResults } from "../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js";
 
     

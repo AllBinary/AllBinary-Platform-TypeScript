@@ -58,6 +58,8 @@ import { AngleFactory } from "./AngleFactory.js";
 
 import { PositionStrings } from "./PositionStrings.js";
 
+import { Angle } from "./Angle.js";
+
 export class NoDecimalTrigTable
             extends Object
          {

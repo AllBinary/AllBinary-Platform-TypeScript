@@ -39,6 +39,8 @@
         
 import { LayerProcessor } from "./LayerProcessor.js";
 
+import { LayerManager } from "./LayerManager.js";
+
 import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
 
 export class SingleLayerLayerProcessor extends LayerProcessor {

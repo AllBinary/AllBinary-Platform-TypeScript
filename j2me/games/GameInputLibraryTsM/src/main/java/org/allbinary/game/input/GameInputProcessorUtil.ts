@@ -65,7 +65,7 @@ export class GameInputProcessorUtil
 index < total; index++)
         {
 
-    var inputProcessorCanBeNull: GameInputProcessor? = inputProcessorArray[index];
+    var inputProcessorCanBeNull: GameInputProcessor = inputProcessorArray[index];
 ;
     
 

@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
+            import { Long } from "../../../../../../../../../java/lang/Long.js";
+        
 import { KeyEvent } from "../../../../../../../../../java/awt/event/KeyEvent.js";
 
     

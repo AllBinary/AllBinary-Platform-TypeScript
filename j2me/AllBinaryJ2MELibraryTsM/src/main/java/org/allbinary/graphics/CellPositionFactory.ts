@@ -171,7 +171,7 @@ this.logUtil!.put(new StringMaker().
 var i_column = i_column
 var i_row = i_row
 
-    var cellPositionCanBeNull: CellPosition? = this.cellPositionArray[i_column]![i_row];
+    var cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];
 ;
     
 

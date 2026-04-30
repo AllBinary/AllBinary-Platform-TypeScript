@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
+            import { Long } from "../../../../../../../java/lang/Long.js";
+        
 import { awt } from "../../../../../../../java/awt.js";
 
     
@@ -105,6 +107,8 @@ import { ColorAtActionScriptConditionJPanel } from "./ColorAtActionScriptConditi
 import { Point } from "./Point.js";
 
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
+
+import { Color } from "./Color.js";
 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         

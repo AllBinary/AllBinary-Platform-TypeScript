@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../java/lang/Long.js";
+        
 import { Calendar } from "../../../../../../java/util/Calendar.js";
 
     
@@ -180,7 +182,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getName(); as Object;
+                        return this.getName() as Object;
     
 }
 

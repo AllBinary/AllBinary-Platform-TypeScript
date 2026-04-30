@@ -1,16 +1,16 @@
 
         /*
-                * 
-                *  AllBinary Open License Version 1
-                *  Copyright (c) 2011 AllBinary
                 *  
-                *  By agreeing to this license you and any business entity you represent are
-                *  legally bound to the AllBinary Open License Version 1 legal agreement.
-                *  
-                *  You may obtain the AllBinary Open License Version 1 legal agreement from
-                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
-                *  
-                *  Created By: Travis Berthelot  
+                *  AllBinary Open License Version 1 
+                *  Copyright (c) 2022 AllBinary 
+                *   
+                *  By agreeing to this license you and any business entity you represent are 
+                *  legally bound to the AllBinary Open License Version 1 legal agreement. 
+                *   
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from 
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository. 
+                *   
+                *  Created By: Travis Berthelot    
         */
         
         /* Generated Code Do Not Modify */
@@ -20,19 +20,16 @@
 
             import { Integer } from "../../../../java/lang/Integer.js";
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
-
-    
-import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
+import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
 
@@ -54,126 +51,93 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { BasicAI } from "./BasicAI.js";
+import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
 
-export class KeyPressesAI extends BasicAI {
+import { ImageProcessorInput } from "./ImageProcessorInput.js";
+
+import { ImageProcessedVisitor } from "./ImageProcessedVisitor.js";
+
+export class ImageArrayRotationUtil
+            extends Object
+         {
         
 
-    private on: boolean = true;
+    private static readonly instance: ImageArrayRotationUtil = new ImageArrayRotationUtil();
 
-    keys: number[]
-public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
-            super(ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-this.keys= new Array(hashtable.length);
-    
-
-    var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(hashtable)!;
-;
-    
-
-    var size: number = objectArray!.length
-                ;
-;
-    
+    public static getInstance(): ImageArrayRotationUtil{
 
 
 
-
-                        for (
-    var index: number = 0;
-index < size; index++)
-        {
-this.keys[index]= hashtable.get(objectArray[index]! as Object); as Integer;
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return ImageArrayRotationUtil.instance;
     
 }
 
-}
 
+    readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private readonly TOTAL_ANGLE: string = "totalAngle: ";
+
+                //@Throws(IOException::class)
             
-    public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
+    public process(imageProcessorInput: ImageProcessorInput, input: string, visitor: ImageProcessedVisitor){
+    //var imageProcessorInput = imageProcessorInput
+    //var input = input
+    //var visitor = visitor
 
-                        if(this.on)
+    var totalAngle: number
+;
+    
+
+                        if(input == this.commonStrings!.UP)
                         
                                     {
-                                    
-
-
-
-                        for (
-    var index: number = 0;
-index < this.keys.length; index++)
-        {
-super.processKeyAI(this.keys[index]!.toInt());
+                                    totalAngle= Integer(Integer.valueOf( -90));
     
-}
-
 
                                     }
                                 
-}
-
-
-                //@Throws(Error::class)
-            
-    public toggle(){
-
-                        if(isOn())
+                             else 
+                        if(input == this.commonStrings!.DOWN)
                         
                                     {
-                                    this.setOn(false);
+                                    totalAngle= Integer(Integer.valueOf(90));
     
 
                                     }
                                 
                         else {
-                            this.setOn(true);
+                            totalAngle= Integer(Integer.valueOf(input));
     
 
                         }
                             
-}
+
+    var generatedBufferedImage: BufferedImage
+;
+    
+
+    var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
+;
+    
 
 
-                //@Throws(Error::class)
-            
-    public disable(){
-this.setOn(false);
+
+
+                        for (
+    var index: number = 0;
+index < bufferedImageArray!.length; index++)
+        {
+this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
+    
+generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle);
+    
+visitor.visit(generatedBufferedImage, input, index);
     
 }
 
-
-                //@Throws(Error::class)
-            
-    public enable(){
-this.setOn(true);
-    
-}
-
-
-    setOn(on: boolean){
-var on = on
-this.on= on;
-    
-}
-
-
-    isOn(): boolean{
-
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.on;
-    
 }
 
 

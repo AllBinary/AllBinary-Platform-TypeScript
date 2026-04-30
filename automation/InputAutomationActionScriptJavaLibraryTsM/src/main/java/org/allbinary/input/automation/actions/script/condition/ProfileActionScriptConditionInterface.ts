@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../../java/lang/Long.js";
+        
 import { ProfileActionScriptItemInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js";
 
     

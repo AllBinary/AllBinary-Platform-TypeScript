@@ -93,7 +93,7 @@ var document = document
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new UserConfigurationView(configurationNode).
-                            getUserConfigurationInterface(); as UserConfigurationInterface;
+                            getUserConfigurationInterface() as UserConfigurationInterface;
     
 }
 

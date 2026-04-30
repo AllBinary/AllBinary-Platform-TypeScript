@@ -57,6 +57,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { PartInterface } from "./PartInterface.js";
 
+import { CountedLayerInterfaceFactoryPart } from "./CountedLayerInterfaceFactoryPart.js";
+
 export class CountedLayersHudPaintable
             extends Object
          implements PaintableInterface {

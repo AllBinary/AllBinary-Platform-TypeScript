@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../java/lang/Long.js";
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     

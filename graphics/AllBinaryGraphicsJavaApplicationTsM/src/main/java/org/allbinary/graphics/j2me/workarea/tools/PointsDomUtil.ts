@@ -62,6 +62,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { PointsUtil } from "./PointsUtil.js";
 
+import { Document } from "./Document.js";
+
 export class PointsDomUtil
             extends Object
          {

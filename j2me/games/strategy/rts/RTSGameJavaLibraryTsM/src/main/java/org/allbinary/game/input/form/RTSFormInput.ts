@@ -370,7 +370,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return layerInterfaceFactoryInterface!.getNextInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ()); as RTSLayer;
+                        return layerInterfaceFactoryInterface!.getNextInstance(getHashtable(), cellPoint!.getX(), cellPoint!.getY(), cellPoint!.getZ()) as RTSLayer;
     
 
                                     }

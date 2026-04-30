@@ -376,7 +376,7 @@ this.logUtil!.putF("Getting Robot: " +name, this, "getRobots");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(name as Object); as InputRobotInterface;
+                        return this.hashtable.get(name as Object) as InputRobotInterface;
     
 }
 

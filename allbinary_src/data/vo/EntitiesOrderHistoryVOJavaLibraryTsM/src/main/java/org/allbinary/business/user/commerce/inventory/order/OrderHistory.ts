@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../../java/lang/Long.js";
+        
 
 //import { Date } from "../../../../../../../java/util/Date.js";
 

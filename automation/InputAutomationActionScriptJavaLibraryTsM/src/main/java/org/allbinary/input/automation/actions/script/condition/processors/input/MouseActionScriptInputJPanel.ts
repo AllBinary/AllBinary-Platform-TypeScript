@@ -75,6 +75,8 @@ import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterfa
 
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
 
+import { ComboBoxModel } from "./ComboBoxModel.js";
+
 import { JDialog } from "./JDialog.js";
 
 import { GroupLayout } from "./GroupLayout.js";

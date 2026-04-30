@@ -102,6 +102,8 @@ import { ImageIconUnique } from "./ImageIconUnique.js";
 
 import { ImageIcon } from "./ImageIcon.js";
 
+import { Icon } from "./Icon.js";
+
 import { JLabel } from "./JLabel.js";
 
 import { GroupLayout } from "./GroupLayout.js";

@@ -101,7 +101,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 index < integerArray!.length; index++)
         {
 
-    var integerCanBeNull: any? = hashtable.get(integerArray[index]! as Object);
+    var integerCanBeNull: any = hashtable.get(integerArray[index]! as Object);
 ;
     
 

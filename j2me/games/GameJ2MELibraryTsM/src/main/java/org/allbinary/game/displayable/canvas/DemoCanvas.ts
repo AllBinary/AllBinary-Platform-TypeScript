@@ -18,6 +18,8 @@
 
 
 
+            import { Integer } from "../../../../../java/lang/Thread.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -934,7 +936,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pause(){
 this.close();
@@ -947,7 +949,7 @@ this.gameCanvas!.pause();
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
 this.open();
@@ -1070,7 +1072,7 @@ this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0);
     
 }
 
-@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processGameOver(){
 this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
@@ -1339,7 +1341,7 @@ this.preDemoProcess();
                                     }
                                 
 
-    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener(); as DemoGameMidlet;
+    var demoGameMidlet: DemoGameMidlet = this.getCustomCommandListener() as DemoGameMidlet;
 ;
     
 

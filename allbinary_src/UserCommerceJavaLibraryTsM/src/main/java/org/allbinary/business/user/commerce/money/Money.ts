@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../java/lang/Long.js";
+        
 import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
 
     

@@ -51,6 +51,8 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
         
 import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
 
+import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
+
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 

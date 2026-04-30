@@ -78,6 +78,8 @@ import { Grid } from "./Grid.js";
 
 import { CanvasJPanel } from "./CanvasJPanel.js";
 
+import { Document } from "./Document.js";
+
 export class CanvasDom
             extends Object
          {

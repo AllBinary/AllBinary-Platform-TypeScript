@@ -54,6 +54,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
         
 import { ImageUtil } from "./ImageUtil.js";
 
+import { Graphics2D } from "./Graphics2D.js";
+
 export class MirrorImageUtil
             extends Object
          {

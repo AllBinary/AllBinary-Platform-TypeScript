@@ -196,10 +196,10 @@ this.timeout= this.weblisketSession!.getTimeout();
 
                         if(this.attemptsInteger != 
                                     null
-                                 && attemptsInteger > 0)
+                                 && this.attemptsInteger > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(attemptsInteger +1);
+                                    this.weblisketSession!.setAttempts(this.attemptsInteger +1);
     
 
                                     }

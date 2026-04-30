@@ -118,7 +118,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME); as String;
+                        return this.getPropertiesHashMap()!.get(WorkFlowData.getInstance()!.NAME) as String;
     
 }
 

@@ -66,6 +66,8 @@ import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.
         
 import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
 
+import { LayerPlacementType } from "./LayerPlacementType.js";
+
 import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 
 export class LayerPlacer

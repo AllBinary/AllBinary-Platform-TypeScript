@@ -134,7 +134,7 @@ this.soundsFactoryInterface!.init();
 i < soundInterfaceArray!.length; i++)
         {
 
-    var soundInterfaceCanBeNull: Sound? = soundInterfaceArray[i];
+    var soundInterfaceCanBeNull: Sound = soundInterfaceArray[i];
 ;
     
 

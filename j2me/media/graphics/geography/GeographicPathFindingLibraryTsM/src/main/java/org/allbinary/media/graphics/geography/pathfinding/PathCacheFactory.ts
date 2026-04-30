@@ -124,7 +124,7 @@ this.hashtable.clear();
     public getOrCreate(pathIdInteger: number): BasicArrayList{
     //var pathIdInteger = pathIdInteger
 
-    var listCanBeNull: any? = this.hashtable.get(pathIdInteger as Object);
+    var listCanBeNull: any = this.hashtable.get(pathIdInteger as Object);
 ;
     
 

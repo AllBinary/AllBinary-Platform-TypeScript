@@ -78,9 +78,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { DefaultListModelHelper } from "./DefaultListModelHelper.js";
 
-import { ListModel } from "./ListModel.js";
-
 import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
+
+import { ListModel } from "./ListModel.js";
 
 export class InputAutomationModuleFactoryFactory
             extends Object
@@ -171,7 +171,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.defaultListModelHelper!.getListModel(); as ListModel;
+                        return this.defaultListModelHelper!.getListModel() as ListModel;
     
 }
 

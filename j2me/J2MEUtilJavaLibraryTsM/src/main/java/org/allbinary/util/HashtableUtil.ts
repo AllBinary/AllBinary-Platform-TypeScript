@@ -79,11 +79,11 @@ export class HashtableUtil
 ;
     
 
-    var keyCanBeNull: any?
+    var keyCanBeNull: any
 ;
     
 
-    var valueCanBeNull: any?
+    var valueCanBeNull: any
 ;
     
 

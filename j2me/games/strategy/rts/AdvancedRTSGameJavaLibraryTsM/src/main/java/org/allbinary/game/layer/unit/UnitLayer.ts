@@ -432,7 +432,7 @@ export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventList
 
     private readonly initResourceAnimation: RotationAnimation
 
-    private resourceAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
+    private resourceAnimation: IndexedAnimation = NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
 
     private readonly initPathAnimation: PathAnimation
 
@@ -490,7 +490,7 @@ this.setCollidableInferface(new CollidableUnitBehavior(this, true));
     
 this.waypointLayerInterfaceFactoryInterface= waypointLayerInterfaceFactoryInterface;
     
-this.maxResourceLoad= maxResourceLoad!.toShort();
+this.maxResourceLoad= maxResourceLoad;
     
 this.moveSoundInterface= moveSoundInterface;
     
@@ -856,11 +856,11 @@ this.rtsLogHelper!.setClosestGeographicMapCellHistory(this, pathsList);
 index >= 0; index--)
         {
 
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index); as BasicArrayList;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(index) as BasicArrayList;
 ;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(geographicMapCellPositionBasicArrayList!.size() -1) as GeographicMapCellPosition;
 ;
     
 currentDistance= this.layerDistanceUtil!.getDistanceAt(this, geographicMapCellPosition!.getMidPoint());
@@ -883,11 +883,11 @@ closestIndex= index;
                         
                                     {
                                     
-    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex); as BasicArrayList;
+    var geographicMapCellPositionBasicArrayList: BasicArrayList = pathsList!.get(closestIndex) as BasicArrayList;
 ;
     
 
-    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0); as GeographicMapCellPosition;
+    var geographicMapCellPosition: GeographicMapCellPosition = geographicMapCellPositionBasicArrayList!.get(0) as GeographicMapCellPosition;
 ;
     
 this.teleportTo(geographicMapCellPosition);
@@ -913,7 +913,7 @@ geographicMapCellHistory!.trackAll(geographicMapCellPositionBasicArrayList);
 
         try {
             
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface(); as AdvancedRTSGameLayer;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
 ;
     
 
@@ -943,7 +943,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
 
-    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface(); as AdvancedRTSGameLayer;
+    var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
 ;
     
 
@@ -1688,7 +1688,7 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 index >= 0; index--)
         {
 
-    var steeringVisitor: SteeringVisitor = list.get(index); as SteeringVisitor;
+    var steeringVisitor: SteeringVisitor = list.get(index) as SteeringVisitor;
 ;
     
 
@@ -1777,11 +1777,11 @@ TrackingEventHandler.getInstance()!.fireEvent(this.getTrackingEvent());
 ;
     
 
-    var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();;
+    var velocityXScaled: number = velocityProperties!.getVelocityXBasicDecimalP()!.getScaled();
 ;
     
 
-    var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();;
+    var velocityYScaled: number = velocityProperties!.getVelocityYBasicDecimalP()!.getScaled();
 ;
     
 this.getUnitWaypointBehavior()!.move();
@@ -1803,7 +1803,7 @@ this.getUnitWaypointBehavior()!.move();
 this.layerPartialCellPositionsUtil!.getAllDXY(geographicMapInterface, this, Math.round(velocityXScaled), Math.round(velocityYScaled), getPartialpositionlist());
     
 
-    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()); as GeographicMapCellPosition;
+    var cellPosition: GeographicMapCellPosition = DropCellPositionHistory.getInstance()!.getCellPositionWithDrop(getPartialpositionlist()) as GeographicMapCellPosition;
 ;
     
 
@@ -1944,7 +1944,7 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
 
-    var buildingLayer: BuildingLayer = event.getRtsLayer(); as BuildingLayer;
+    var buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;
 ;
     
 this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
@@ -2191,7 +2191,7 @@ rtsLayerHudPaintable!.setRtsLayer(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getWaypointBehavior(); as UnitWaypointBehavior;
+                        return this.getWaypointBehavior() as UnitWaypointBehavior;
     
 }
 

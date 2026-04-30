@@ -67,7 +67,7 @@ var angleIncrement = angleIncrement
 ;
     
 
-    var angleIncrementInfoCanBeNull: AngleIncrementInfo? = this.angleIncrementInfo[halfAngleIncrement];
+    var angleIncrementInfoCanBeNull: AngleIncrementInfo = this.angleIncrementInfo[halfAngleIncrement];
 ;
     
 

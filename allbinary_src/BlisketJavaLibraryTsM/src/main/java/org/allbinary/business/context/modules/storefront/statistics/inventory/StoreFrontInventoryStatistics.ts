@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
+            import { Long } from "../../../../../../../../java/lang/Long.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     

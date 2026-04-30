@@ -74,9 +74,9 @@ import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimat
 
 import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 
-import { NullAnimationFactory } from "./NullAnimationFactory.js";
-
 import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
+
+import { NullAnimationFactory } from "./NullAnimationFactory.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         
@@ -188,7 +188,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getBasicAnimationInterfaceFactoryInstance(resource); as ProceduralAnimationInterfaceFactoryInterface;
+                        return this.getBasicAnimationInterfaceFactoryInstance(resource) as ProceduralAnimationInterfaceFactoryInterface;
     
 }
 
@@ -201,7 +201,7 @@ var resource = resource
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getBasicAnimationInterfaceFactoryInstance(resource); as AnimationInterfaceFactoryInterface;
+                        return this.getBasicAnimationInterfaceFactoryInstance(resource) as AnimationInterfaceFactoryInterface;
     
 }
 

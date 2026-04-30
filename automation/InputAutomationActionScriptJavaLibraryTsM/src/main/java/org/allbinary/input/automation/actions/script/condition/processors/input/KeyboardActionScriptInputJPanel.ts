@@ -76,6 +76,8 @@ import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxMode
 
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
 
+import { ComboBoxModel } from "./ComboBoxModel.js";
+
 import { JDialog } from "./JDialog.js";
 
 import { GroupLayout } from "./GroupLayout.js";
@@ -228,7 +230,7 @@ this.keyActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object); as Integer;
+                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object) as Integer;
     
 
                                     }

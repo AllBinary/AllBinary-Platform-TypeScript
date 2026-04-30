@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../java/lang/Long.js";
+        
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -92,7 +94,7 @@ var frame = frame
     
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = (
-                                    (getInstance as AutomaticCacheInterface).get(frame); as Object as BufferedImageFrameCacheable);
+                                    (getInstance as AutomaticCacheInterface).get(frame) as Object as BufferedImageFrameCacheable);
 ;
     
 this.logUtil!.putF(("Saving: " +capturedBufferedImageCacheable!.toString()), this, commonStrings!.SAVE);

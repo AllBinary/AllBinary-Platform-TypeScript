@@ -65,11 +65,11 @@ export class StupidTimer
     visitBool(visitorInterface: Visitor): boolean{
     //var visitorInterface = visitorInterface
 
-    var result: Boolean = visitorInterface!.visit(nullUtil!.NULL_OBJECT) as Boolean;
+    var result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;
 ;
     
 
-    var result2: boolean = result!;
+    var result2: boolean = result.valueOf()!;
 ;
     
 
@@ -95,7 +95,7 @@ export class StupidTimer
 ;
     
 PreLogUtil.put(new StringMaker().
-                            append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, commonStrings!.VISIT);
+                            append(WAITING_FOR)!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString(), this, this.commonStrings!.VISIT);
     
 
     var index: number = 0;
@@ -109,7 +109,7 @@ PreLogUtil.put(new StringMaker().
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(WAITING_FOR)!.appendint(index)!.toString(), this, commonStrings!.VISIT);
+                            append(WAITING_FOR)!.appendint(index)!.toString(), this, this.commonStrings!.VISIT);
     
 
                                     }
@@ -119,13 +119,13 @@ index++;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.threadObjectUtil!.waitObject(this, 1800);
     
-}
+
 
 
                         if(timeDelayHelper!.isTimeTNT())
@@ -152,7 +152,7 @@ break;
                                     }
                                 
                         else {
-                            PreLogUtil.put(timeDelayHelper!.toString(), this, commonStrings!.VISIT);
+                            PreLogUtil.put(timeDelayHelper!.toString(), this, this.commonStrings!.VISIT);
     
 
                         }
@@ -166,13 +166,13 @@ break;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.threadObjectUtil!.notifyObject(this);
     
-}
+
 
 }
 

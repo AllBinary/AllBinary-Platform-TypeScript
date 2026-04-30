@@ -596,7 +596,7 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.selectedRTSLayersList!.get(this.selectedRTSLayersList!.size() -1); as CollidableDestroyableDamageableLayer;
+                        return this.selectedRTSLayersList!.get(this.selectedRTSLayersList!.size() -1) as CollidableDestroyableDamageableLayer;
     
 
                                     }

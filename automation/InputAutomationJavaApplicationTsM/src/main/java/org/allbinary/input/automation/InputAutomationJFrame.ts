@@ -147,6 +147,8 @@ import { Desktop } from "./Desktop.js";
 
 import { ActionEvent } from "./ActionEvent.js";
 
+import { JDialog } from "./JDialog.js";
+
 import { WindowEvent } from "./WindowEvent.js";
 
 import { FocusEvent } from "./FocusEvent.js";
@@ -164,8 +166,6 @@ import { JList } from "./JList.js";
 import { JScrollPane } from "./JScrollPane.js";
 
 import { JMenuBar } from "./JMenuBar.js";
-
-import { JDialog } from "./JDialog.js";
 
 import { JLabel } from "./JLabel.js";
 

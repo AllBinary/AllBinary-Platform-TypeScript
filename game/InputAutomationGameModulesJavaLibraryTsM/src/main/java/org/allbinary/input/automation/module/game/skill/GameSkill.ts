@@ -68,7 +68,7 @@ var extra = extra
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return GameSkill.hashMap!.get(new StringBuilder().
-                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()); as GameSkill;
+                            append(gameSkillType!.getName())!.append(CommonSeps.getInstance()!.SPACE)!.append(extra)!.toString()) as GameSkill;
     
 }
 

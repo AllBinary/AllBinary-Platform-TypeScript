@@ -56,7 +56,7 @@ var name = name
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Feature.hashtable.get(name as Object); as Feature;
+                        return Feature.hashtable.get(name as Object) as Feature;
     
 }
 

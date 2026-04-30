@@ -228,7 +228,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.scaledImageBasicArrayList!.get(index); as Image;
+                        return this.scaledImageBasicArrayList!.get(index) as Image;
     
 
                                     }

@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
+            import { Long } from "../../../../../../../java/lang/Long.js";
+        
 import { Calendar } from "../../../../../../../java/util/Calendar.js";
 
     
@@ -1030,7 +1032,7 @@ values.add(this.specials);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getId(); as Object;
+                        return this.getId() as Object;
     
 }
 

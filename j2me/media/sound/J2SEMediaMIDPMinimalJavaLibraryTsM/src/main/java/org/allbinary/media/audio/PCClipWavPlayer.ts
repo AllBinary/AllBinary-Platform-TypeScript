@@ -341,7 +341,7 @@ this.setVolumeF((leftVolume) /100.0f);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);;
+                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);
     
 }
 

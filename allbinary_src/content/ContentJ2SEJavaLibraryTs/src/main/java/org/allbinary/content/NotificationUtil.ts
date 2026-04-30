@@ -56,6 +56,8 @@ import { NotificationManager } from "./NotificationManager.js";
 
 import { CommandUriAction } from "./CommandUriAction.js";
 
+import { Intent } from "./Intent.js";
+
 import { Notification } from "./Notification.js";
 
 import { PendingIntent } from "./PendingIntent.js";

@@ -112,7 +112,7 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
 this.value= value;
     
 GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new StringMaker().
-                            append(this.name)!.append(" value: from: ")!.appendint(oldValue)!.append(" to ")!.appendint(value)!.toString()));
+                            append(this.name)!.append(" value: from: ")!.appendint(oldValue)!.append(" to ")!.appendint(this.value)!.toString()));
     
 
                                     }

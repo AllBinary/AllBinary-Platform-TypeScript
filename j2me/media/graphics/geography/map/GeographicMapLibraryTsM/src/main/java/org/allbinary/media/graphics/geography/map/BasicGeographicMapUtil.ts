@@ -45,6 +45,8 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
         
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 export class BasicGeographicMapUtil
             extends Object
          {

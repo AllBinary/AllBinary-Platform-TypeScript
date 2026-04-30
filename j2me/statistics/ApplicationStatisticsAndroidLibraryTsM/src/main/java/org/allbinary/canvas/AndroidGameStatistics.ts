@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../java/lang/Long.js";
+        
 import { View } from "../../../android/view/View.js";
 
     

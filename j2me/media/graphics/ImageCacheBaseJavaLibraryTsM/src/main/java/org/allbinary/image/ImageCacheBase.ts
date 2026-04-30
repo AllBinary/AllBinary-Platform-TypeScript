@@ -124,7 +124,7 @@ this.availableListOfList[index]= new BasicArrayListD();
     getImage(resourceId: any = {}): Image{
     //var resourceId = resourceId
 
-    var imageCanBeNull: any? = this.hashtable.get(resourceId as Object);
+    var imageCanBeNull: any = this.hashtable.get(resourceId as Object);
 ;
     
 
@@ -238,7 +238,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.removeAt(list.size() -1); as Image;
+                        return list.removeAt(list.size() -1) as Image;
     
 
                                     }

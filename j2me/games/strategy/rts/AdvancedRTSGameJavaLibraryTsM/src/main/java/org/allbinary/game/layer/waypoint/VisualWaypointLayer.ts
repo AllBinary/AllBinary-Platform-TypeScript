@@ -61,6 +61,8 @@ import { WaypointLayer } from "./WaypointLayer.js";
 
 import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
 
+import { WaypointInfoHudPaintable } from "./WaypointInfoHudPaintable.js";
+
 export class VisualWaypointLayer extends WaypointLayer {
         
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){

@@ -82,7 +82,7 @@ export class BaseMusicService extends Service {
 
     private rightVolume: number =  -1;
 
-    public onBind(intent: Intent): IBinder?{
+    public onBind(intent: Intent): IBinder{
     //var intent = intent
 this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.BIND);
     

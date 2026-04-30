@@ -109,6 +109,10 @@ import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
 
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
+import { GameConfiguration } from "./GameConfiguration.js";
+
+import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
+
 import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
 
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
@@ -171,7 +175,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var listCanBeNull: any? = hashtable.get(key as Object);
+    var listCanBeNull: any = hashtable.get(key as Object);
 ;
     
 

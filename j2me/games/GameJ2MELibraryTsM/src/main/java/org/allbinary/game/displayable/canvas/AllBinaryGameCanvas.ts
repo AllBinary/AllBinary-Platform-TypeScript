@@ -439,6 +439,8 @@ import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
 
 import { FormUtil } from "./FormUtil.js";
 
+import { BasicPopupMenuPaintable } from "./BasicPopupMenuPaintable.js";
+
 import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
 
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";

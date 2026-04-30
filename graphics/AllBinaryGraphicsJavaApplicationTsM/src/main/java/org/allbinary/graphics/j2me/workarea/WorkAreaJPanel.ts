@@ -500,7 +500,7 @@ canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.canvasJPanelList!.get(this.selectedFrame); as CanvasJPanel;
+                        return this.canvasJPanelList!.get(this.selectedFrame) as CanvasJPanel;
     
 }
 

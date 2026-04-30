@@ -46,6 +46,8 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameInitializedListenerInterface } from "./GameInitializedListenerInterface.js";
+
 export class GameInitializedEventHandler extends BasicEventHandler {
         
 

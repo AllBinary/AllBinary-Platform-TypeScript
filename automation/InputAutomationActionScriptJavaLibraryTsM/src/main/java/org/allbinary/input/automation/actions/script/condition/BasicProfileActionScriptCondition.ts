@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../../java/lang/Long.js";
+        
 import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
 
     

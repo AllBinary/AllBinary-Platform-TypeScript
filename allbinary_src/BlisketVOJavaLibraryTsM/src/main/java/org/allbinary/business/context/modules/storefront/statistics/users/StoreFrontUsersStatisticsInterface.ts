@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../../../java/lang/Long.js";
+        
 import { TableMappingInterface } from "../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
 
     

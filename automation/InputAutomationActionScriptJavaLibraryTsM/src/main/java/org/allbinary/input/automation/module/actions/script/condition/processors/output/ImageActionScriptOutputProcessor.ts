@@ -18,6 +18,8 @@
 
 
 
+            import { Long } from "../../../../../../../../../../java/lang/Long.js";
+        
 import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
@@ -55,6 +57,8 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageTypes } from "./ImageTypes.js";
+
 import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
 
 export class ImageActionScriptOutputProcessor

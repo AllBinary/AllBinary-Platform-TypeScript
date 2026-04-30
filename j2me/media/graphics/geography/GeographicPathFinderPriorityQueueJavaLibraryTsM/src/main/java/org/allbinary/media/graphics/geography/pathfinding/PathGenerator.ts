@@ -52,6 +52,8 @@ import { PathFindingInfo } from "./PathFindingInfo.js";
 
 import { RuntimeException } from "./RuntimeException.js";
 
+import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
+
 import { MultipassState } from "./MultipassState.js";
 
 export class PathGenerator

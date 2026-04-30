@@ -20,6 +20,8 @@
 
             import { System } from "../../../java/lang/System";
         
+            import { Long } from "../../../java/lang/Long.js";
+        
 
 
 

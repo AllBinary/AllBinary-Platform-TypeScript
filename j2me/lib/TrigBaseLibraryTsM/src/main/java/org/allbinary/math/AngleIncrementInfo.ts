@@ -131,7 +131,7 @@ var angle = angle
 ;
     
 
-                        if(UP_FRAME -angle < closestDirection -angle)
+                        if(this.UP_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.UP_FRAME;
@@ -140,7 +140,7 @@ var angle = angle
                                     }
                                 
 
-                        if(DOWN_FRAME -angle < closestDirection -angle)
+                        if(this.DOWN_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.DOWN_FRAME;
@@ -149,7 +149,7 @@ var angle = angle
                                     }
                                 
 
-                        if(LEFT_FRAME -angle < closestDirection -angle)
+                        if(this.LEFT_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.LEFT_FRAME;
@@ -158,7 +158,7 @@ var angle = angle
                                     }
                                 
 
-                        if(RIGHT_FRAME -angle < closestDirection -angle)
+                        if(this.RIGHT_FRAME -angle < closestDirection -angle)
                         
                                     {
                                     closestDirection= this.RIGHT_FRAME;

@@ -90,7 +90,7 @@ var playerInputId = playerInputId
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.list.get(playerInputId); as AnalogLocationInput;
+                        return this.list.get(playerInputId) as AnalogLocationInput;
     
 }
 

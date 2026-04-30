@@ -247,7 +247,7 @@ this.logUtil!.put(new StringMaker().
     //var width = width
     //var height = height
 
-    var cellPositionCanBeNull: any? = this.geographicMapCellPositionArray[i_row]![i_column];
+    var cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];
 ;
     
 

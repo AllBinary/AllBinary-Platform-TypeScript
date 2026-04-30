@@ -61,6 +61,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CustomTextAnimation } from "./CustomTextAnimation.js";
+
 export class CustomTextAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

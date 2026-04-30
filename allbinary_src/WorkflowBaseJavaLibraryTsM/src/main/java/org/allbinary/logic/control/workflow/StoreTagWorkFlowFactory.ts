@@ -147,7 +147,7 @@ params[1]= pageContext as Object;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params); as StoreWorkFlowInterface;
+                        return AbeFactory.getInstance()!.getInstance(abeClientInformation, workFlowClassName, classes, params) as StoreWorkFlowInterface;
     
 
                 //: 

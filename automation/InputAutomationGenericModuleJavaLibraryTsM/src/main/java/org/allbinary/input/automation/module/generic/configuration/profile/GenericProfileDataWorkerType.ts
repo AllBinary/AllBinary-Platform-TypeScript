@@ -86,7 +86,7 @@ var node = node
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return GenericProfileDataWorkerType.hashMap!.get(name as Object); as GenericProfileDataWorkerType;
+                        return GenericProfileDataWorkerType.hashMap!.get(name as Object) as GenericProfileDataWorkerType;
     
 }
 

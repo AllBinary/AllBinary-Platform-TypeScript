@@ -209,7 +209,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH); as String;
+                        return this.session.getAttribute(org.allbinary.globals.GLOBALS2.WEBAPPPATH) as String;
     
 }
 
@@ -219,7 +219,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(UserData.USERNAME); as String;
+                        return this.session.getAttribute(UserData.USERNAME) as String;
     
 }
 
@@ -229,7 +229,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(UserData.PASSWORD); as String;
+                        return this.session.getAttribute(UserData.PASSWORD) as String;
     
 }
 
@@ -239,7 +239,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(PaymentGatewayData.NAME.toString()); as String;
+                        return this.session.getAttribute(PaymentGatewayData.NAME.toString()) as String;
     
 }
 
@@ -249,7 +249,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.AUTHENTICATED); as String;
+                        return this.session.getAttribute(WeblisketSessionData.AUTHENTICATED) as String;
     
 }
 
@@ -259,7 +259,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.ATTEMPTS); as Integer;
+                        return this.session.getAttribute(WeblisketSessionData.ATTEMPTS) as Integer;
     
 }
 
@@ -269,7 +269,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(WeblisketSessionData.TIMEOUT); as String;
+                        return this.session.getAttribute(WeblisketSessionData.TIMEOUT) as String;
     
 }
 
@@ -279,7 +279,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.session.getAttribute(StoreFrontData.getInstance()!.NAME); as String;
+                        return this.session.getAttribute(StoreFrontData.getInstance()!.NAME) as String;
     
 }
 
