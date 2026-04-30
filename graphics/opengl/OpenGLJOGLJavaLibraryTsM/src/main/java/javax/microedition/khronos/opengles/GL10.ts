@@ -688,13 +688,13 @@ export interface GL10 extends javax.microedition.khronos.opengles.GL {
 
     glViewport(x: number, y: number, width: number, height: number)
 
-    public glBegin(i: number)
+    glBegin(i: number)
 
-    public glEnd()
+    glEnd()
 
-    public glVertex3f(f: number, f2: number, f3: number)
+    glVertex3f(f: number, f2: number, f3: number)
 
-    public glPolygonMode(i: number, i1: number)
+    glPolygonMode(i: number, i1: number)
 
 }
                 

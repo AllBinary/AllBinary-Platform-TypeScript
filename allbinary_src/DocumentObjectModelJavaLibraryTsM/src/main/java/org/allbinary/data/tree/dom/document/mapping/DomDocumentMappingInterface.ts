@@ -45,7 +45,7 @@ export interface DomDocumentMappingInterface {
 
                 //@Throws(Error::class)
             
-    public toXmlDoc(): Document
+    toXmlDoc(): Document
 
 }
                 

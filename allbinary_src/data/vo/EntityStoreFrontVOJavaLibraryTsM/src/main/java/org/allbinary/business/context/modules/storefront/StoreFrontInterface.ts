@@ -49,153 +49,153 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 export interface StoreFrontInterface extends TableMappingInterface {
         
 
-    public isNameValid(): Boolean
+    isNameValid(): Boolean
 
-    public isValid(): Boolean
+    isValid(): Boolean
 
-    public nameValidationInfo(): string
+    nameValidationInfo(): string
 
-    public validationInfo(): string
+    validationInfo(): string
 
-    public getTestHtmlPath(): string
+    getTestHtmlPath(): string
 
-    public getCurrentHostName(): string
+    getCurrentHostName(): string
 
-    public getCurrentHostNamePath(): string
+    getCurrentHostNamePath(): string
 
-    public getCurrentHomeHostName(): string
+    getCurrentHomeHostName(): string
 
-    public getCurrentHomeHostNamePath(): string
+    getCurrentHomeHostNamePath(): string
 
-    public getName(): string
+    getName(): string
 
-    public getBasketName(): string
+    getBasketName(): string
 
-    public getHomeHostName(): string
+    getHomeHostName(): string
 
-    public getHomeHostNamePath(): string
+    getHomeHostNamePath(): string
 
-    public getHostName(): string
+    getHostName(): string
 
-    public getHostNamePath(): string
+    getHostNamePath(): string
 
-    public getTestHomeHostName(): string
+    getTestHomeHostName(): string
 
-    public getTestHomeHostNamePath(): string
+    getTestHomeHostNamePath(): string
 
-    public getTestHostName(): string
+    getTestHostName(): string
 
-    public getTestHostNamePath(): string
+    getTestHostNamePath(): string
 
-    public getStaticPath(): string
+    getStaticPath(): string
 
-    public getCategoryPath(): string
-
-                //@Throws(Error::class)
-            
-    public getSubStores(): BasicArrayList
-
-    public getTagLocation(): string
-
-    public getPackageLocation(): string
-
-    public getInventoryControl(): string
-
-    public getContextConfigurationInterface(): ContextConfigurationInterface
-
-    public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
-
-    public getFtp(): string
-
-    public getFtpPath(): string
-
-    public getFtpUserName(): string
-
-    public getFtpPassword(): string
-
-    public getTestFtp(): string
-
-    public getTestFtpPath(): string
-
-    public getTestFtpUserName(): string
-
-    public getTestFtpPassword(): string
-
-    public getTimeCreated(): string
-
-    public getLastModified(): string
-
-    public setName(value: string)
-
-    public setBasketName(value: string)
-
-    public setHomeHostName(value: string)
+    getCategoryPath(): string
 
                 //@Throws(Error::class)
             
-    public setHomeHostNamePath(value: string)
+    getSubStores(): BasicArrayList
 
-    public setHostName(value: string)
+    getTagLocation(): string
 
-                //@Throws(Error::class)
-            
-    public setHostNamePath(value: string)
+    getPackageLocation(): string
 
-    public setTestHomeHostName(value: string)
+    getInventoryControl(): string
 
-                //@Throws(Error::class)
-            
-    public setTestHomeHostNamePath(value: string)
+    getContextConfigurationInterface(): ContextConfigurationInterface
 
-    public setTestHostName(value: string)
+    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
 
-                //@Throws(Error::class)
-            
-    public setTestHostNamePath(value: string)
+    getFtp(): string
 
-                //@Throws(Error::class)
-            
-    public setImagePath(value: string)
+    getFtpPath(): string
 
-                //@Throws(Error::class)
-            
-    public setStaticPath(value: string)
+    getFtpUserName(): string
 
-                //@Throws(Error::class)
-            
-    public setCategoryPath(value: string)
+    getFtpPassword(): string
 
-    public setPackageLocation(value: string)
+    getTestFtp(): string
 
-    public setInventoryControl(value: string)
+    getTestFtpPath(): string
 
-    public setFtp(value: string)
+    getTestFtpUserName(): string
 
-                //@Throws(Error::class)
-            
-    public setFtpPath(value: string)
+    getTestFtpPassword(): string
 
-    public setFtpUserName(value: string)
+    getTimeCreated(): string
 
-    public setFtpPassword(value: string)
+    getLastModified(): string
 
-    public setTestFtp(value: string)
+    setName(value: string)
+
+    setBasketName(value: string)
+
+    setHomeHostName(value: string)
 
                 //@Throws(Error::class)
             
-    public setTestFtpPath(value: string)
+    setHomeHostNamePath(value: string)
 
-    public setTestFtpUserName(value: string)
-
-    public setTestFtpPassword(value: string)
-
-    public setTimeCreated(value: string)
-
-    public setLastModified(value: string)
+    setHostName(value: string)
 
                 //@Throws(Error::class)
             
-    public install(current: number, total: number)
+    setHostNamePath(value: string)
+
+    setTestHomeHostName(value: string)
+
+                //@Throws(Error::class)
+            
+    setTestHomeHostNamePath(value: string)
+
+    setTestHostName(value: string)
+
+                //@Throws(Error::class)
+            
+    setTestHostNamePath(value: string)
+
+                //@Throws(Error::class)
+            
+    setImagePath(value: string)
+
+                //@Throws(Error::class)
+            
+    setStaticPath(value: string)
+
+                //@Throws(Error::class)
+            
+    setCategoryPath(value: string)
+
+    setPackageLocation(value: string)
+
+    setInventoryControl(value: string)
+
+    setFtp(value: string)
+
+                //@Throws(Error::class)
+            
+    setFtpPath(value: string)
+
+    setFtpUserName(value: string)
+
+    setFtpPassword(value: string)
+
+    setTestFtp(value: string)
+
+                //@Throws(Error::class)
+            
+    setTestFtpPath(value: string)
+
+    setTestFtpUserName(value: string)
+
+    setTestFtpPassword(value: string)
+
+    setTimeCreated(value: string)
+
+    setLastModified(value: string)
+
+                //@Throws(Error::class)
+            
+    install(current: number, total: number)
 
 }
                 

@@ -42,19 +42,19 @@ export interface InventoryViewSearchInterface {
 
                 //@Throws(Error::class)
             
-    public searchSingleStaticPage(): string
+    searchSingleStaticPage(): string
 
                 //@Throws(Error::class)
             
-    public searchSingleDynamicPage(): string
+    searchSingleDynamicPage(): string
 
                 //@Throws(Error::class)
             
-    public search(): string[]
+    search(): string[]
 
                 //@Throws(Error::class)
             
-    public getProduct(product: string): string
+    getProduct(product: string): string
 
 }
                 

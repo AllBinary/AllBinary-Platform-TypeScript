@@ -241,7 +241,7 @@ this.setGrid(gridX, gridY);
 ;
     
 this.grid.showGrid(.
-                            );
+                            .valueOf());
     
 
     var possibleNode: Node = DomHelper.getInstance()!.searchNodeList(this.POSSIBLE, gridNode!.getChildNodes())!;
@@ -252,7 +252,7 @@ this.grid.showGrid(.
 ;
     
 this.grid.isGridPossible= .
-                            ;
+                            .valueOf();
     
 
     var graphicItemNodeList: BasicArrayList = DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.GRAPHICITEMS, canvasNode!.getChildNodes())!;

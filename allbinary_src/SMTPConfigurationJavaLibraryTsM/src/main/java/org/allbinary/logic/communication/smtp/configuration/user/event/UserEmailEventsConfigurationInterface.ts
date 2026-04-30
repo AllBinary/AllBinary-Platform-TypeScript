@@ -57,13 +57,13 @@ import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurat
 export interface UserEmailEventsConfigurationInterface {
         
 
-    public getEventConfigurationHashMap(): HashMap<any, any>
+    getEventConfigurationHashMap(): HashMap<any, any>
 
-    public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
+    addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 
                 //@Throws(Error::class)
             
-    public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
+    getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
 
 }
                 

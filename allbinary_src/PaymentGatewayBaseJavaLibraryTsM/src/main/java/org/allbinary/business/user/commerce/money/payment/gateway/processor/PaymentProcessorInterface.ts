@@ -48,7 +48,7 @@ export interface PaymentProcessorInterface extends DomNodeInterface {
 
                 //@Throws(PaymentException::class, Error::class)
             
-    public process()
+    process()
 
 }
                 

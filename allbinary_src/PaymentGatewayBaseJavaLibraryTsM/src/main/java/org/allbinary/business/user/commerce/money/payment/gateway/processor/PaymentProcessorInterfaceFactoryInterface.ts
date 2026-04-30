@@ -50,7 +50,7 @@ export interface PaymentProcessorInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    public getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
+    getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
 
 }
                 

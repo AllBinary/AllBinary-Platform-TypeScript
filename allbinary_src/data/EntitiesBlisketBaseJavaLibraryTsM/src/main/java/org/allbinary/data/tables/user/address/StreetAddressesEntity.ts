@@ -20,6 +20,8 @@
 
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
+            import { Long } from "../../../../../../java/lang/Long.js";
+        
 import { Calendar } from "../../../../../../java/util/Calendar.js";
 
     

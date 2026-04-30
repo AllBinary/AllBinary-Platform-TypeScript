@@ -28,9 +28,9 @@ import { JTree } from "./JTree.js";
 export interface JTreeInterface {
         
 
-    public updateJTree()
+    updateJTree()
 
-    public getActionScriptJTree(): javax.swing.JTree
+    getActionScriptJTree(): javax.swing.JTree
 
 }
                 

@@ -52,15 +52,15 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 export interface OrderItemsEntityInterface extends BasicDataTableInterface {
         
 
-    public setStatus(orderId: string, groupId: string, status: string)
+    setStatus(orderId: string, groupId: string, status: string)
 
-    public isEverythingShipped(orderId: string): boolean
+    isEverythingShipped(orderId: string): boolean
 
-    public getBasketReview(orderId: string): BasketReview
+    getBasketReview(orderId: string): BasketReview
 
-    public insert(userName: string, order: OrderInterface)
+    insert(userName: string, order: OrderInterface)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
 }
                 

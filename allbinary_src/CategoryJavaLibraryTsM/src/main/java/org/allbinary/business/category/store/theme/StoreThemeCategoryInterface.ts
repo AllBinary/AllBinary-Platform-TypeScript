@@ -58,9 +58,9 @@ import { CompositeTransformInfoInterface } from "../../../../../../org/allbinary
 export interface StoreThemeCategoryInterface extends CategoryInterface, TableMappingInterface, ValidationInterface, CompositeTransformInfoInterface {
         
 
-    public addTheme(themeValidation: ThemeValidation)
+    addTheme(themeValidation: ThemeValidation)
 
-    public getThemes(): Vector
+    getThemes(): Vector
 
 }
                 

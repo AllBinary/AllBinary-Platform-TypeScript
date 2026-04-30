@@ -168,10 +168,10 @@ pooledThread!.start();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
                         if(!this.isAlive)
                         
@@ -247,7 +247,7 @@ notify();
 
                                     }
                                 
-}
+
 
 }
 
@@ -257,10 +257,10 @@ notify();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
                         if(!this.isAlive)
                         
@@ -283,7 +283,7 @@ notify();
 
                                     }
                                 
-}
+
 
 }
 
@@ -294,10 +294,10 @@ notify();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
         while(this.taskQueue!.size() == 0)
         {
@@ -328,7 +328,7 @@ this.wait();
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return runnable;
     
-}
+
 
 }
 
@@ -337,10 +337,10 @@ this.wait();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
                         if(this.isAlive)
                         
@@ -350,7 +350,7 @@ this.wait();
 
                                     }
                                 
-}
+
 
 }
 
@@ -359,10 +359,10 @@ this.wait();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
                         if(this.isAlive)
                         
@@ -374,7 +374,7 @@ this.taskQueue!.clear();
 
                                     }
                                 
-}
+
 
 }
 
@@ -383,17 +383,17 @@ this.taskQueue!.clear();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.isAlive= false;
     
 this.taskQueue!.clear();
     
 notifyAll();
     
-}
+
 
 }
 

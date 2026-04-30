@@ -45,7 +45,7 @@ import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js"
 export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
         
 
-    public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent)
+    onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent)
 
 }
                 

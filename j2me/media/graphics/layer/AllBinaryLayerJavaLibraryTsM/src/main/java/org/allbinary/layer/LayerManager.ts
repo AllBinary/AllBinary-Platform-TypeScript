@@ -159,10 +159,10 @@ this.list.addAt(index, layerInterface);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.anyType) 
+        //synchronized(this.anyType) 
 
         //mutex.withLock
-        {
+        
 this.layerManagerLogging!.remove(layerInterface);
     
 
@@ -171,7 +171,7 @@ this.layerManagerLogging!.remove(layerInterface);
     
 this.layerManagerLogging!.removeResult(this, layerInterface, result);
     
-}
+
 
 }
 
@@ -203,10 +203,10 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.anyType) 
+        //synchronized(this.anyType) 
 
         //mutex.withLock
-        {
+        
 this.list.clear();
     
 this.layerManagerLogging!.clear();
@@ -215,7 +215,7 @@ System.gc();
     
 System.gc();
     
-}
+
 
 }
 
@@ -227,10 +227,10 @@ var y = y
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.anyType) 
+        //synchronized(this.anyType) 
 
         //mutex.withLock
-        {
+        
 
     var comp: Layer
 ;
@@ -258,7 +258,7 @@ comp= this.list.objectArray[index]! as Layer;
                                 
 }
 
-}
+
 
 }
 

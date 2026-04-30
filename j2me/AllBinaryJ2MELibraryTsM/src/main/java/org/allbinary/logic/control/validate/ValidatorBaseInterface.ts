@@ -46,13 +46,13 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 export interface ValidatorBaseInterface {
         
 
-    public isValid(): Boolean
+    isValid(): Boolean
 
-    public validationInfo(): string
+    validationInfo(): string
 
-    public toHashtable(): Hashtable<any, any>
+    toHashtable(): Hashtable<any, any>
 
-    public toList(): BasicArrayList
+    toList(): BasicArrayList
 
 }
                 

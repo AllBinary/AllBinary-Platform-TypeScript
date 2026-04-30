@@ -47,19 +47,19 @@ export interface AbeLicenseInterface {
 
     hasKey(): boolean
 
-    public getKey(keyName: string): string
+    getKey(keyName: string): string
 
-    public getLicenseId(): string
+    getLicenseId(): string
 
-    public getServers(): BasicArrayList
+    getServers(): BasicArrayList
 
-    public getSpecial(): string
+    getSpecial(): string
 
-    public getLicenseType(): LicenseType
+    getLicenseType(): LicenseType
 
-    public isValid(): boolean
+    isValid(): boolean
 
-    public toString(): string
+    toString(): string
 
 }
                 

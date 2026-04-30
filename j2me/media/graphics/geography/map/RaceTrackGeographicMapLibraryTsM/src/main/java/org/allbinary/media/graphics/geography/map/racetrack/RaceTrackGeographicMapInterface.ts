@@ -47,9 +47,9 @@ import { RaceTrackData } from "./RaceTrackData.js";
 export interface RaceTrackGeographicMapInterface extends GeographicMapInterface {
         
 
-    public getRaceTrackInfo(): RaceTrackInfo
+    getRaceTrackInfo(): RaceTrackInfo
 
-    public setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo)
+    setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo)
 
     getRaceTrackData(): RaceTrackData
 

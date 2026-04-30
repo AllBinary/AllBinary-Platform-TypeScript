@@ -48,11 +48,11 @@ import { CategoryModifierTreeInterface } from "./CategoryModifierTreeInterface.j
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         
 
-    public getDoc(categoryInterface: CategoryInterface): Document
+    getDoc(categoryInterface: CategoryInterface): Document
 
-    public get(categoryInterface: CategoryInterface): CategoryInterface
+    get(categoryInterface: CategoryInterface): CategoryInterface
 
-    public getAll(categoryInterface: CategoryInterface): CategoryInterface
+    getAll(categoryInterface: CategoryInterface): CategoryInterface
 
 }
                 

@@ -48,7 +48,7 @@ import { JPopupMenu } from "./JPopupMenu.js";
 export interface CustomTreeNodeInterface extends MutableTreeNode {
         
 
-    public getJPopupMenu(): JPopupMenu
+    getJPopupMenu(): JPopupMenu
 
 }
                 

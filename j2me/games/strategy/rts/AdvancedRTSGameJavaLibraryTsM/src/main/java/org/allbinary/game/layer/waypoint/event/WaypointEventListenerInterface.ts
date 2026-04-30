@@ -47,7 +47,7 @@ export interface WaypointEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Error::class)
             
-    public onWaypointEvent(event: RTSLayerEvent)
+    onWaypointEvent(event: RTSLayerEvent)
 
 }
                 

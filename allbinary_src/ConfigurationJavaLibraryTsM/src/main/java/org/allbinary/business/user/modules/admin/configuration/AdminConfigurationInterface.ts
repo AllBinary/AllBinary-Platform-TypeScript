@@ -45,11 +45,11 @@ export interface AdminConfigurationInterface {
 
                 //@Throws(Error::class)
             
-    public write()
+    write()
 
-    public getContextConfigurationInterface(): ContextConfigurationInterface
+    getContextConfigurationInterface(): ContextConfigurationInterface
 
-    public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
+    setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface)
 
 }
                 

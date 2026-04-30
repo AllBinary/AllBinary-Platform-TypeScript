@@ -42,7 +42,7 @@ import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 export interface CurrentGeographicMapCellPositionInterface {
         
 
-    public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
+    getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
 
 }
                 

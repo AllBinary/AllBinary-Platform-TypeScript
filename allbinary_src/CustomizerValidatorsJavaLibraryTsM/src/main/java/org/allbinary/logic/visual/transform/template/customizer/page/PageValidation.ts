@@ -128,7 +128,7 @@ this.title= new TitleValidation(hashMap);
                                     }
                                 
 
-                        if(!this.title.isValid();)
+                        if(!this.title.isValid().valueOf();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -183,7 +183,7 @@ this.title= new TitleValidation(hashMap);
 ;
     
 
-                        if(!this.title.isValid();)
+                        if(!this.title.isValid().valueOf();)
                         
                                     {
                                     stringBuffer!.append(this.title.validationInfo());

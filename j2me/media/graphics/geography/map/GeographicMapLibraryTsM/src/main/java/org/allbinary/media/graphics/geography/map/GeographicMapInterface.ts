@@ -59,9 +59,9 @@ import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPo
 export interface GeographicMapInterface {
         
 
-    public getId(): number
+    getId(): number
 
-    public getName(): string
+    getName(): string
 
     reset()
 
@@ -93,9 +93,9 @@ export interface GeographicMapInterface {
 
     getGeographicMapCellPositionFactoryInterface(): GeographicMapCellPositionFactoryInterface
 
-    public getForegroundBasicColor(): BasicColor
+    getForegroundBasicColor(): BasicColor
 
-    public getBackgroundBasicColor(): BasicColor
+    getBackgroundBasicColor(): BasicColor
 
 }
                 

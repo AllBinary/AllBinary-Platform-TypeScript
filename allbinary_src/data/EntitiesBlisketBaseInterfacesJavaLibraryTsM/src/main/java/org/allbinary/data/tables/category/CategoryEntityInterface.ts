@@ -49,11 +49,11 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface CategoryEntityInterface extends BasicDataTableInterface {
         
 
-    public delete(value: string)
+    delete(value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

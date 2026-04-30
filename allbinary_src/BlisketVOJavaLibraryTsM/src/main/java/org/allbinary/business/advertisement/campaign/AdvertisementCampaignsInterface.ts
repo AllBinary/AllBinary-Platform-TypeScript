@@ -43,13 +43,13 @@ import { AdvertisementInterface } from "../../../../../org/allbinary/business/ad
 export interface AdvertisementCampaignsInterface {
         
 
-    public add(advertisementInterface: AdvertisementInterface)
+    add(advertisementInterface: AdvertisementInterface)
 
-    public get(index: number): AdvertisementInterface
+    get(index: number): AdvertisementInterface
 
-    public size(): number
+    size(): number
 
-    public isEnabled(): boolean
+    isEnabled(): boolean
 
 }
                 

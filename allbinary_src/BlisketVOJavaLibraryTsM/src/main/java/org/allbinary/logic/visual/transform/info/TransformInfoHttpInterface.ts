@@ -51,11 +51,11 @@ import { TransformInfoInterface } from "./TransformInfoInterface.js";
 export interface TransformInfoHttpInterface extends TransformInfoInterface {
         
 
-    public getWeblisketSession(): WeblisketSessionInterface
+    getWeblisketSession(): WeblisketSessionInterface
 
-    public getPageContext(): PageContext
+    getPageContext(): PageContext
 
-    public getPropertiesHashMap(): HashMap<any, any>
+    getPropertiesHashMap(): HashMap<any, any>
 
 }
                 

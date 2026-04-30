@@ -76,7 +76,7 @@ var file = file
 
     var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(abFile);visit as Boolean
 visit.
-                    !;
+                    .valueOf()!;
 ;
     
 
@@ -93,7 +93,7 @@ var file = file
 
     var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file);visit as Boolean
 visit.
-                    !;
+                    .valueOf()!;
 ;
     
 

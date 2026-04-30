@@ -111,10 +111,10 @@ this.gl= gl;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
 
 
@@ -138,7 +138,7 @@ index >= 0; index--)
                                 
 }
 
-}
+
 
 }
 
@@ -184,10 +184,10 @@ height= textureSize;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(image != NullCanvas.NULL_IMAGE)
                         
@@ -197,7 +197,7 @@ height= textureSize;
 
                                     }
                                 
-}
+
 
 
 
@@ -224,10 +224,10 @@ height= textureSize;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(image != NullCanvas.NULL_IMAGE)
                         
@@ -237,7 +237,7 @@ height= textureSize;
 
                                     }
                                 
-}
+
 
 
 
@@ -265,10 +265,10 @@ height= textureSize;
             
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(this.list.contains(image))
                         
@@ -283,7 +283,7 @@ height= textureSize;
                                 
 this.list.add(image);
     
-}
+
 
 this.renderer.add(image);
     

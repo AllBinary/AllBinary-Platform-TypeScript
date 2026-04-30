@@ -40,9 +40,9 @@
 export interface CryptInterface {
         
 
-    public encrypt(array: number[]): number[]
+    encrypt(array: number[]): number[]
 
-    public decrypt(array: number[]): number[]
+    decrypt(array: number[]): number[]
 
 }
                 

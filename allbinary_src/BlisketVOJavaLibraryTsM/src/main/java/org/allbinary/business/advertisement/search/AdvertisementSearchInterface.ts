@@ -55,31 +55,31 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 export interface AdvertisementSearchInterface {
         
 
-    public getWebSite(): AdvertisementWebsiteInterface
+    getWebSite(): AdvertisementWebsiteInterface
 
-    public getCategory(): AdvertisementCategoryInterface
+    getCategory(): AdvertisementCategoryInterface
 
-    public getSizeConstraints(): TwoDimensionalConstraintInterface
+    getSizeConstraints(): TwoDimensionalConstraintInterface
 
-    public getPricingConstraints(): PriceConstraintInterface
+    getPricingConstraints(): PriceConstraintInterface
 
-    public getPageNumber(): number
+    getPageNumber(): number
 
-    public getProductsPerPage(): number
+    getProductsPerPage(): number
 
-    public getSearchParams(): HashMap<any, any>
+    getSearchParams(): HashMap<any, any>
 
-    public setCategory(advertisementCategoryInterface: AdvertisementCategoryInterface)
+    setCategory(advertisementCategoryInterface: AdvertisementCategoryInterface)
 
-    public setSizeConstraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface)
+    setSizeConstraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface)
 
-    public setPricingConstraints(priceConstraintInterface: PriceConstraintInterface)
+    setPricingConstraints(priceConstraintInterface: PriceConstraintInterface)
 
-    public setPageNumber(pageNumber: number)
+    setPageNumber(pageNumber: number)
 
-    public setProductsPerPage(productsPerPage: number)
+    setProductsPerPage(productsPerPage: number)
 
-    public setSearchParams(columnAndKeywordHashMap: HashMap<any, any>)
+    setSearchParams(columnAndKeywordHashMap: HashMap<any, any>)
 
 }
                 

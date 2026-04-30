@@ -60,35 +60,35 @@ export interface UserEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public getAdministrators(): Vector
+    getAdministrators(): Vector
 
                 //@Throws(Error::class)
             
-    public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector
+    getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector
 
                 //@Throws(Error::class)
             
-    public getCustomers(): Vector
+    getCustomers(): Vector
 
                 //@Throws(Error::class)
             
-    public getUsersWithRole(userRole: UserRole): Vector
+    getUsersWithRole(userRole: UserRole): Vector
 
                 //@Throws(Error::class)
             
-    public getUsers(storeFrontInterface: StoreFrontInterface): Vector
+    getUsers(storeFrontInterface: StoreFrontInterface): Vector
 
                 //@Throws(Error::class)
             
-    public getUser(userName: string): UserInterface
+    getUser(userName: string): UserInterface
 
-    public login(userName: string, password: string): string
+    login(userName: string, password: string): string
 
-    public deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(userName: string, updatedValues: HashMap<any, any>)
+    update(userName: string, updatedValues: HashMap<any, any>)
 
 }
                 

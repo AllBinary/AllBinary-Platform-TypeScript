@@ -46,7 +46,7 @@ import { DomNodeInterface } from "../../../../../../../../../../org/allbinary/da
 export interface PaymentGatewayDomNodeFactoryInterface {
         
 
-    public getInstance(paymentGatewayInterface: PaymentGatewayInterface): DomNodeInterface
+    getInstance(paymentGatewayInterface: PaymentGatewayInterface): DomNodeInterface
 
 }
                 

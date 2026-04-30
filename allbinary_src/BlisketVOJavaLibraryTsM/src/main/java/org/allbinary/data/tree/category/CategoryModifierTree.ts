@@ -102,7 +102,7 @@ var newChildCategoryInterface = newChildCategoryInterface
                                     }
                                 
 
-                        if(parentCategoryInterface!.isValid())
+                        if(parentCategoryInterface!.isValid().valueOf())
                         
                                     {
                                     parentCategoryInterface!.addChild(newChildCategoryInterface);
@@ -157,7 +157,7 @@ var existingChildCategoryInterface = existingChildCategoryInterface
 
         try {
             
-                        if(parentCategoryInterface!.isValid())
+                        if(parentCategoryInterface!.isValid().valueOf())
                         
                                     {
                                     parentCategoryInterface!.addChild(existingChildCategoryInterface);

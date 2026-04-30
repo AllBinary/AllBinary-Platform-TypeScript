@@ -42,17 +42,17 @@ import { MyGraphicItemEvent } from "./MyGraphicItemEvent.js";
 export interface MyGraphicItemEventListener {
         
 
-    public delete(evt: MyGraphicItemEvent)
+    delete(evt: MyGraphicItemEvent)
 
                 //@Throws(Error::class)
             
-    public duplicate(evt: MyGraphicItemEvent)
+    duplicate(evt: MyGraphicItemEvent)
 
-    public rotate(evt: MyGraphicItemEvent)
+    rotate(evt: MyGraphicItemEvent)
 
-    public highlight(evt: MyGraphicItemEvent)
+    highlight(evt: MyGraphicItemEvent)
 
-    public deselect(evt: MyGraphicItemEvent)
+    deselect(evt: MyGraphicItemEvent)
 
 }
                 

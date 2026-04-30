@@ -47,7 +47,7 @@ export interface DestroyedEventListenerInterface extends EventListenerInterface 
 
                 //@Throws(Error::class)
             
-    public onDestroyed(destroyedEvent: DestroyedEvent)
+    onDestroyed(destroyedEvent: DestroyedEvent)
 
 }
                 

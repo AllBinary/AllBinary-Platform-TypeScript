@@ -44,11 +44,11 @@ export interface WorkFlowInterface {
 
                 //@Throws(Error::class)
             
-    public getName(): string
+    getName(): string
 
                 //@Throws(Error::class)
             
-    public process(): number
+    process(): number
 
 }
                 

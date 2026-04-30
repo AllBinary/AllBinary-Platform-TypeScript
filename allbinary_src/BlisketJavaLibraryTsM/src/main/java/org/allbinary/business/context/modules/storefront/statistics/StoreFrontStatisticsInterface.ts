@@ -52,13 +52,13 @@ import { StoreFrontUsersStatisticsInterface } from "../../../../../../../org/all
 export interface StoreFrontStatisticsInterface {
         
 
-    public getAdvertisements(): StoreFrontAdvertisementsStatisticsInterface
+    getAdvertisements(): StoreFrontAdvertisementsStatisticsInterface
 
-    public getUsers(): StoreFrontUsersStatisticsInterface
+    getUsers(): StoreFrontUsersStatisticsInterface
 
-    public getInventory(): StoreFrontInventoryStatisticsInterface
+    getInventory(): StoreFrontInventoryStatisticsInterface
 
-    public getOrders(): StoreFrontOrdersHistoryStatisticsInterface
+    getOrders(): StoreFrontOrdersHistoryStatisticsInterface
 
 }
                 

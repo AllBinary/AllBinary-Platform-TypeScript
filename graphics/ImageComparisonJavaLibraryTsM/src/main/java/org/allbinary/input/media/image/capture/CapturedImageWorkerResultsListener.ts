@@ -45,7 +45,7 @@ import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEve
 export interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {
         
 
-    public onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent)
+    onCaptureEvent(capturedimageworkerresultsevent: CapturedImageWorkerResultsEvent)
 
 }
                 

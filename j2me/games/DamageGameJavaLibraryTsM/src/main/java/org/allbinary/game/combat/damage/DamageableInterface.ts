@@ -45,11 +45,11 @@ export interface DamageableInterface extends NamedInterface {
 
                 //@Throws(Error::class)
             
-    public damage(damage: number, damageType: number)
+    damage(damage: number, damageType: number)
 
                 //@Throws(Error::class)
             
-    public getDamage(damageType: number): number
+    getDamage(damageType: number): number
 
 }
                 

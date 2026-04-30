@@ -42,39 +42,39 @@ import { AdvertisementInterface } from "./AdvertisementInterface.js";
 export interface AdvertisementsInterface {
         
 
-    public add(advertisementInterface: AdvertisementInterface)
+    add(advertisementInterface: AdvertisementInterface)
 
-    public get(index: number): AdvertisementInterface
+    get(index: number): AdvertisementInterface
 
-    public getCurrentPageNum(): number
+    getCurrentPageNum(): number
 
-    public getErrorDescription(): string
+    getErrorDescription(): string
 
-    public getErrorNum(): string
+    getErrorNum(): string
 
-    public getNumberOfPosters(): number
+    getNumberOfPosters(): number
 
-    public getNumberOfProductsInPage(): number
+    getNumberOfProductsInPage(): number
 
-    public getStatusCode(): number
+    getStatusCode(): number
 
-    public getTotalNumberOfProducts(): number
+    getTotalNumberOfProducts(): number
 
-    public isSearchValid(): boolean
+    isSearchValid(): boolean
 
-    public setCurrentPageNum(currentPageNum: number)
+    setCurrentPageNum(currentPageNum: number)
 
-    public setErrorDescription(errorDescription: string)
+    setErrorDescription(errorDescription: string)
 
-    public setErrorNum(errorNum: string)
+    setErrorNum(errorNum: string)
 
-    public setNumberOfProductsInPage(numberOfProductsInPage: number)
+    setNumberOfProductsInPage(numberOfProductsInPage: number)
 
-    public setStatusCode(statusCode: number)
+    setStatusCode(statusCode: number)
 
-    public setTotalNumberOfProducts(totalNumberOfProducts: number)
+    setTotalNumberOfProducts(totalNumberOfProducts: number)
 
-    public toString(): string
+    toString(): string
 
 }
                 

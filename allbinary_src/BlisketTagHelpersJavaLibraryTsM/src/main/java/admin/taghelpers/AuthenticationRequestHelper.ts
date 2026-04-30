@@ -327,7 +327,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 ;
     
 
-                        if(!password.isValid();)
+                        if(!password.isValid().valueOf();)
                         
                                     {
                                     

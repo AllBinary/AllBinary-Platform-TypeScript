@@ -40,9 +40,9 @@
 export interface HardwareComponentInterface {
         
 
-    public compareTo(componentInterface: HardwareComponentInterface): boolean
+    compareTo(componentInterface: HardwareComponentInterface): boolean
 
-    public toString(): string
+    toString(): string
 
 }
                 

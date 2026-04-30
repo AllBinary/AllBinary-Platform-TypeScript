@@ -42,11 +42,11 @@
 export interface PriorityRunnable extends Runnable {
         
 
-    public getPriority(): number
+    getPriority(): number
 
-    public isDone(): boolean
+    isDone(): boolean
 
-    public reset()
+    reset()
 
 }
                 

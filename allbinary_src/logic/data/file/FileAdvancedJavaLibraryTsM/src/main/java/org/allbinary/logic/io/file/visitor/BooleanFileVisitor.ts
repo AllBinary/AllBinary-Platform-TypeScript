@@ -107,7 +107,7 @@ index < size; index++)
 nextFileFilterString= list.get(index); as String;
     
 
-                        if(this.visit(file, nextFileFilterString))
+                        if(this.visit(file, nextFileFilterString).valueOf())
                         
                                     {
                                     

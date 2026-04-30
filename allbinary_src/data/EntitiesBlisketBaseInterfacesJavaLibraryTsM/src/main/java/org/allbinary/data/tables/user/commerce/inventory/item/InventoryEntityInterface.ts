@@ -60,19 +60,19 @@ export interface InventoryEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(MoneyException::class)
             
-    public getItem(id: string): ItemInterface
+    getItem(id: string): ItemInterface
 
                 //@Throws(Error::class)
             
-    public getItems(storeFrontInterface: StoreFrontInterface): Vector
+    getItems(storeFrontInterface: StoreFrontInterface): Vector
 
-    public getWeight(id: string): string
+    getWeight(id: string): string
 
-    public deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

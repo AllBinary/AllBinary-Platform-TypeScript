@@ -46,13 +46,13 @@ import { HardwareComponentInterface } from "../../../../../org/allbinary/logic/s
 export interface HardwareInterface {
         
 
-    public getComponent(index: number): HardwareComponentInterface
+    getComponent(index: number): HardwareComponentInterface
 
-    public toString(): string
+    toString(): string
 
-    public compareTo(hardwareInterface: HardwareInterface): boolean
+    compareTo(hardwareInterface: HardwareInterface): boolean
 
-    public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
+    difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
 
 }
                 

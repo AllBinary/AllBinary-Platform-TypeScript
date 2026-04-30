@@ -156,7 +156,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
                                     }
                                 
 
-                        if(this.validationDomNodeInterface!.isValid())
+                        if(this.validationDomNodeInterface!.isValid().valueOf())
                         
                                     {
                                     this.pageContext!.getOut()!.print(this.validationDomNodeInterface!.view());

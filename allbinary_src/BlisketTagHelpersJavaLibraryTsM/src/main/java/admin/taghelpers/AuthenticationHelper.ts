@@ -542,7 +542,7 @@ index < size; index++)
 ;
     
 
-                        if(!userInterface!.isSessionValid();)
+                        if(!userInterface!.isSessionValid().valueOf();)
                         
                                     {
                                     
@@ -688,7 +688,7 @@ login= userEntityInterface!.login(userName, password);
 ;
     
 
-                        if(userInterface!.isSessionValid())
+                        if(userInterface!.isSessionValid().valueOf())
                         
                                     {
                                     this.weblisketSession!.setAttempts(0);

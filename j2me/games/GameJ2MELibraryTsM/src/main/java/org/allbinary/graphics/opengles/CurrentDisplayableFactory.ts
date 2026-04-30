@@ -265,10 +265,10 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;
@@ -324,7 +324,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
                         }
                             
-}
+
 
 }
 

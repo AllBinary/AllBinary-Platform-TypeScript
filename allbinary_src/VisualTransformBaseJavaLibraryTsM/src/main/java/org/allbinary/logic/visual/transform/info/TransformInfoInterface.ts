@@ -55,65 +55,65 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 export interface TransformInfoInterface extends TableMappingInterface {
         
 
-    public log(): string
+    log(): string
 
                 //@Throws(Error::class)
             
-    public override(hashMap: HashMap<any, any>)
+    override(hashMap: HashMap<any, any>)
 
-    public getName(): string
+    getName(): string
 
-    public setStoreName(value: string)
+    setStoreName(value: string)
 
-    public getStoreName(): string
+    getStoreName(): string
 
-    public getObjectFile(): string
+    getObjectFile(): string
 
-    public getObject(): any
-
-                //@Throws(Error::class)
-            
-    public getTemplateFilePath(): AbPath
-
-    public getTemplateFile(): string
-
-    public getTemplate(): string
+    getObject(): any
 
                 //@Throws(Error::class)
             
-    public getDataFilePath(): AbPath
+    getTemplateFilePath(): AbPath
 
-    public getDataFile(): string
+    getTemplateFile(): string
 
-                //@Throws(Error::class)
-            
-    public getDataDocument(): Document
-
-    public setName(value: string)
-
-    public setObjectFile(value: string)
-
-    public setObject(anyType: Object)
+    getTemplate(): string
 
                 //@Throws(Error::class)
             
-    public setObjectConfigInterface(transformInfoObjectConfigInterface: Object)
+    getDataFilePath(): AbPath
+
+    getDataFile(): string
 
                 //@Throws(Error::class)
             
-    public getObjectConfigInterface(): TransformInfoObjectConfigInterface
+    getDataDocument(): Document
 
-    public setTemplateFile(value: string)
+    setName(value: string)
 
-    public setTemplate(value: string)
+    setObjectFile(value: string)
 
-    public setDataFile(value: string)
+    setObject(anyType: Object)
 
-    public setData(value: string)
+                //@Throws(Error::class)
+            
+    setObjectConfigInterface(transformInfoObjectConfigInterface: Object)
 
-    public setChild()
+                //@Throws(Error::class)
+            
+    getObjectConfigInterface(): TransformInfoObjectConfigInterface
 
-    public isChild(): boolean
+    setTemplateFile(value: string)
+
+    setTemplate(value: string)
+
+    setDataFile(value: string)
+
+    setData(value: string)
+
+    setChild()
+
+    isChild(): boolean
 
 }
                 

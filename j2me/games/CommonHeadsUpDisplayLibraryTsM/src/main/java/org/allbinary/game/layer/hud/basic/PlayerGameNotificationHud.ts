@@ -168,7 +168,7 @@ this.point.setY(y);
     //var basicColor = basicColor
     //var permanent = permanent
 
-                        if(permanent)
+                        if(permanent.valueOf())
                         
                                     {
                                     

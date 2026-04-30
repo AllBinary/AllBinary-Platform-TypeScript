@@ -42,7 +42,7 @@ import { AllBinaryEventObject } from "./AllBinaryEventObject.js";
 export interface EventListenerInterface {
         
 
-    public onEvent(eventObject: AllBinaryEventObject)
+    onEvent(eventObject: AllBinaryEventObject)
 
 }
                 

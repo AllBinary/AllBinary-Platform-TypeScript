@@ -46,15 +46,15 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 export interface AdvertisementCampaignInterface {
         
 
-    public getName(): string
+    getName(): string
 
-    public getComponent(): any
+    getComponent(): any
 
-    public setName(name: string)
+    setName(name: string)
 
-    public setComponentName(name: string)
+    setComponentName(name: string)
 
-    public search(advertisementSearchInterface: AdvertisementSearchInterface): AdvertisementsInterface
+    search(advertisementSearchInterface: AdvertisementSearchInterface): AdvertisementsInterface
 
 }
                 

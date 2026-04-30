@@ -43,9 +43,9 @@ import { EmailServerConfigurationInterface } from "../../../../../org/allbinary/
 export interface ContextConfigurationInterface {
         
 
-    public getEmailServerConfigurationInterface(): EmailServerConfigurationInterface
+    getEmailServerConfigurationInterface(): EmailServerConfigurationInterface
 
-    public setEmailServerConfigurationInterface(emailServerConfigurationInterface: EmailServerConfigurationInterface)
+    setEmailServerConfigurationInterface(emailServerConfigurationInterface: EmailServerConfigurationInterface)
 
 }
                 

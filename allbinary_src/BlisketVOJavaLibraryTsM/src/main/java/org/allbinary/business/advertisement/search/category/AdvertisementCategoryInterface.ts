@@ -40,7 +40,7 @@
 export interface AdvertisementCategoryInterface {
         
 
-    public toString(): string
+    toString(): string
 
 }
                 

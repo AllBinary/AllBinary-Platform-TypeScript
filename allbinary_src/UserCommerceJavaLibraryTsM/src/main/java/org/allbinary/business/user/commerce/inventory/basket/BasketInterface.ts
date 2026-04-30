@@ -54,25 +54,25 @@ import { MoneyException } from "../../../../../../../org/allbinary/business/user
 export interface BasketInterface {
         
 
-    public addItem(id: string, num: string)
+    addItem(id: string, num: string)
 
-    public removeItem(id: string)
+    removeItem(id: string)
 
-    public adjustItem(id: string, num: string)
+    adjustItem(id: string, num: string)
 
-    public getTotalWeight(): string
+    getTotalWeight(): string
 
-    public getNumberOfItems(): number
+    getNumberOfItems(): number
 
-    public getIds(): Set
+    getIds(): Set
 
-    public getItems(): HashMap<any, any>
+    getItems(): HashMap<any, any>
 
-    public getNumberOf(product: string): number
+    getNumberOf(product: string): number
 
                 //@Throws(MoneyException::class)
             
-    public getSubTotal(): Money
+    getSubTotal(): Money
 
 }
                 

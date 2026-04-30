@@ -45,11 +45,11 @@ export interface DomDocumentQueueInterface {
 
                 //@Throws(Error::class)
             
-    public offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
+    offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
 
                 //@Throws(Error::class)
             
-    public remove(): DomDocumentMappingInterface
+    remove(): DomDocumentMappingInterface
 
 }
                 

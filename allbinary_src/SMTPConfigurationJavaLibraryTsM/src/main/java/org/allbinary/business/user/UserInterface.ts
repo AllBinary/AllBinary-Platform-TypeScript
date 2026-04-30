@@ -58,105 +58,105 @@ import { ValidationInterface } from "../../../../org/allbinary/logic/control/val
 export interface UserInterface extends TableMappingInterface, ValidationInterface {
         
 
-    public setUserName(value: string)
+    setUserName(value: string)
 
-    public setPrefixName(value: string)
+    setPrefixName(value: string)
 
-    public setFirstName(value: string)
+    setFirstName(value: string)
 
-    public setLastName(value: string)
+    setLastName(value: string)
 
-    public setMiddleName(value: string)
+    setMiddleName(value: string)
 
-    public setSuffixName(value: string)
+    setSuffixName(value: string)
 
-    public setCompany(value: string)
+    setCompany(value: string)
 
-    public setPositionAtCompany(value: string)
+    setPositionAtCompany(value: string)
 
-    public setMainEmail(value: string)
+    setMainEmail(value: string)
 
-    public setSecondaryEmail(value: string)
+    setSecondaryEmail(value: string)
 
-    public setHomePhone(value: string)
+    setHomePhone(value: string)
 
-    public setCellPhone(value: string)
+    setCellPhone(value: string)
 
-    public setWorkPhone(value: string)
+    setWorkPhone(value: string)
 
-    public setOtherContact(value: string)
+    setOtherContact(value: string)
 
-    public setElectronicContact(value: string)
+    setElectronicContact(value: string)
 
-    public setFax(value: string)
+    setFax(value: string)
 
-    public setRole(aRole: UserRole)
+    setRole(aRole: UserRole)
 
-    public setEncryption(value: string)
+    setEncryption(value: string)
 
-    public setSecret(value: string)
+    setSecret(value: string)
 
-    public setPassword(value: string)
+    setPassword(value: string)
 
-    public setPermissions(value: string)
+    setPermissions(value: string)
 
-    public enable()
+    enable()
 
-    public setEnable(enable: string)
+    setEnable(enable: string)
 
-    public getUserName(): string
+    getUserName(): string
 
-    public getPrefixName(): string
+    getPrefixName(): string
 
-    public getFirstName(): string
+    getFirstName(): string
 
-    public getLastName(): string
+    getLastName(): string
 
-    public getMiddleName(): string
+    getMiddleName(): string
 
-    public getSuffixName(): string
+    getSuffixName(): string
 
-    public getCompany(): string
+    getCompany(): string
 
-    public getPositionAtCompany(): string
+    getPositionAtCompany(): string
 
-    public getMainEmail(): string
+    getMainEmail(): string
 
-    public getSecondaryEmail(): string
+    getSecondaryEmail(): string
 
-    public getHomePhone(): string
+    getHomePhone(): string
 
-    public getCellPhone(): string
+    getCellPhone(): string
 
-    public getWorkPhone(): string
+    getWorkPhone(): string
 
-    public getOtherContact(): string
+    getOtherContact(): string
 
-    public getElectronicContact(): string
+    getElectronicContact(): string
 
-    public getFax(): string
+    getFax(): string
 
-    public getRole(): UserRole
+    getRole(): UserRole
 
-    public getEncryption(): string
+    getEncryption(): string
 
-    public getSecret(): string
+    getSecret(): string
 
-    public getPassword(): string
+    getPassword(): string
 
-    public getPermissions(): string
+    getPermissions(): string
 
-    public getUserConfigurationInterface(): UserConfigurationInterface
+    getUserConfigurationInterface(): UserConfigurationInterface
 
-    public setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface)
+    setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface)
 
-    public toPasswordHashMap(): HashMap<any, any>
+    toPasswordHashMap(): HashMap<any, any>
 
-    public validateSession(weblisketSession: WeblisketSessionInterface)
+    validateSession(weblisketSession: WeblisketSessionInterface)
 
-    public updateSession(weblisketSession: WeblisketSessionInterface)
+    updateSession(weblisketSession: WeblisketSessionInterface)
 
-    public isSessionValid(): Boolean
+    isSessionValid(): Boolean
 
 }
                 

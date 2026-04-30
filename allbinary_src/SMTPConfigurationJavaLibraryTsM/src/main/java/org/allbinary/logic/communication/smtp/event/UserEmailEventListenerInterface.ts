@@ -47,7 +47,7 @@ export interface UserEmailEventListenerInterface extends EventListener {
 
                 //@Throws(Error::class)
             
-    public onEmailSendRequest(userEmailInfoEvent: EmailEvent)
+    onEmailSendRequest(userEmailInfoEvent: EmailEvent)
 
 }
                 

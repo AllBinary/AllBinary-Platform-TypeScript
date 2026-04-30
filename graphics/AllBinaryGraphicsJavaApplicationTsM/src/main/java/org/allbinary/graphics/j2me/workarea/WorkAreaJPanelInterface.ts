@@ -45,37 +45,37 @@ import { KeyListener } from "./KeyListener.js";
 export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
         
 
-    public getName(): string
+    getName(): string
 
-    public deselect()
+    deselect()
 
-    public select()
+    select()
 
-    public changeZoom(factor: number)
+    changeZoom(factor: number)
 
-    public explodeAll()
-
-                //@Throws(Error::class)
-            
-    public autoRotate(increments: number, totalAngle: number)
+    explodeAll()
 
                 //@Throws(Error::class)
             
-    public autoExplode(numberOfFrames: number, explodeType: number)
+    autoRotate(increments: number, totalAngle: number)
+
+                //@Throws(Error::class)
+            
+    autoExplode(numberOfFrames: number, explodeType: number)
 
                 //@Throws(Error::class)
             
     autoMirror()
 
-    public play()
+    play()
 
-    public stop()
+    stop()
 
-    public isPlaying(): boolean
+    isPlaying(): boolean
 
                 //@Throws(Error::class)
             
-    public toDocument(): Document
+    toDocument(): Document
 
 }
                 

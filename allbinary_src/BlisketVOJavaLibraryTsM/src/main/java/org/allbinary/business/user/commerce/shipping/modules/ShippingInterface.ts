@@ -46,11 +46,11 @@ import { Money } from "../../../../../../../org/allbinary/business/user/commerce
 export interface ShippingInterface {
         
 
-    public getCost(order: OrderInterface): Money
+    getCost(order: OrderInterface): Money
 
-    public getName(): string
+    getName(): string
 
-    public getDescription(): string
+    getDescription(): string
 
 }
                 

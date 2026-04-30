@@ -409,7 +409,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!this.getCssStyleValidation()!.isValid();)
+                        if(!this.getCssStyleValidation()!.isValid().valueOf();)
                         
                                     {
                                     isValid= Boolean.FALSE;

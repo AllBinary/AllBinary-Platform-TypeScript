@@ -53,13 +53,13 @@ export interface OperatingSystemInterface {
 
     isOverScan(): boolean
 
-    public getOverScanXPercent(): number
+    getOverScanXPercent(): number
 
-    public getOverScanYPercent(): number
+    getOverScanYPercent(): number
 
-    public isScalable(): boolean
+    isScalable(): boolean
 
-    public isAutoHide(): boolean
+    isAutoHide(): boolean
 
     toString(): string
 

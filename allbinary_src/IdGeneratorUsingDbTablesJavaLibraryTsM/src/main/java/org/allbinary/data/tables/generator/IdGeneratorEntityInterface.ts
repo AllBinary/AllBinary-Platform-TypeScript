@@ -53,13 +53,13 @@ export interface IdGeneratorEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public get(name: string): number
+    get(name: string): number
 
-    public deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

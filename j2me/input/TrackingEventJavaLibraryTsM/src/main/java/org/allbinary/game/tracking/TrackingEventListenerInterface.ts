@@ -47,7 +47,7 @@ export interface TrackingEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Error::class)
             
-    public onMovement(trackingEvent: TrackingEvent)
+    onMovement(trackingEvent: TrackingEvent)
 
 }
                 

@@ -408,7 +408,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;;
+                        return Boolean.TRUE..valueOf();;
     
 
                                     }
@@ -433,7 +433,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isSessionOld()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isRarelyUsedSession();;
+                        return this.isRarelyUsedSession().valueOf();;
     
 
                 //: 
@@ -547,7 +547,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;;
+                        return Boolean.TRUE..valueOf();;
     
 
                 //: 
@@ -702,7 +702,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;;
+                        return Boolean.TRUE..valueOf();;
     
 
                                     }
@@ -713,7 +713,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;;
+                        return Boolean.FALSE..valueOf();;
     
 
                                     }
@@ -722,7 +722,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;;
+                        return Boolean.FALSE..valueOf();;
     
 
                 //: 
@@ -803,7 +803,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;;
+                        return Boolean.TRUE..valueOf();;
     
 
                                     }
@@ -814,7 +814,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;;
+                        return Boolean.FALSE..valueOf();;
     
 
                                     }
@@ -825,7 +825,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;;
+                        return Boolean.FALSE..valueOf();;
     
 
                 //: 
@@ -866,7 +866,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.TRUE.;;
+                        return Boolean.TRUE..valueOf();;
     
 
                                     }
@@ -880,7 +880,7 @@ this.nextAttempt();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Boolean.FALSE.;;
+                        return Boolean.FALSE..valueOf();;
     
 
                             }

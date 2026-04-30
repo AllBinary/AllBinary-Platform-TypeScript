@@ -564,7 +564,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
     public isValid(): Boolean{
 
-                        if(!this.categoryPropertiesInterface!.isValid();)
+                        if(!this.categoryPropertiesInterface!.isValid().valueOf();)
                         
                                     {
                                     
@@ -601,7 +601,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryPropertiesInterface!.isValid();)
+                        if(!categoryPropertiesInterface!.isValid().valueOf();)
                         
                                     {
                                     
@@ -625,7 +625,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryInterface!.isValid();)
+                        if(!categoryInterface!.isValid().valueOf();)
                         
                                     {
                                     

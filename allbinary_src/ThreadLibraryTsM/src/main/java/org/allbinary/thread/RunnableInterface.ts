@@ -44,13 +44,13 @@
 export interface RunnableInterface extends Runnable {
         
 
-    public isRunning(): boolean
+    isRunning(): boolean
 
-    public setRunning(isRunning: boolean)
+    setRunning(isRunning: boolean)
 
                 //@Throws(Error::class)
             
-    public setThread(thread: Thread)
+    setThread(thread: Thread)
 
 }
                 

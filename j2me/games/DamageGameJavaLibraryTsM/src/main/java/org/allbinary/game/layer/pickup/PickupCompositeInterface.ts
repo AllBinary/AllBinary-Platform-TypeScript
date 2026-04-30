@@ -42,9 +42,9 @@ import { PickupBehavior } from "./PickupBehavior.js";
 export interface PickupCompositeInterface {
         
 
-    public getPickupBehavior(): PickupBehavior
+    getPickupBehavior(): PickupBehavior
 
-    public setPickupBehavior(pickupBehavior: PickupBehavior)
+    setPickupBehavior(pickupBehavior: PickupBehavior)
 
 }
                 

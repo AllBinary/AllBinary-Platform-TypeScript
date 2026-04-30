@@ -52,29 +52,29 @@ import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
 export interface CategoryPropertiesInterface extends TableMappingInterface, ValidationInterface {
         
 
-    public setValue(value: string)
+    setValue(value: string)
 
-    public getValue(): string
-
-                //@Throws(Error::class)
-            
-    public getWebAppPath(): AbPath
+    getValue(): string
 
                 //@Throws(Error::class)
             
-    public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath
+    getWebAppPath(): AbPath
 
                 //@Throws(Error::class)
             
-    public getFileName(): string
+    getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath
 
                 //@Throws(Error::class)
             
-    public isRoot(): boolean
+    getFileName(): string
 
                 //@Throws(Error::class)
             
-    public isRealRoot(): boolean
+    isRoot(): boolean
+
+                //@Throws(Error::class)
+            
+    isRealRoot(): boolean
 
 }
                 

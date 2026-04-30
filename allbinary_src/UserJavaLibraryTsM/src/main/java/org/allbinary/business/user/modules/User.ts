@@ -301,7 +301,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
 ;
     
 
-                        if(!UserName.getInstance()!.isValid(this.userName);)
+                        if(!UserName.getInstance()!.isValid(this.userName).valueOf();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -310,7 +310,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                                     }
                                 
 
-                        if(!this.password.isValid();)
+                        if(!this.password.isValid().valueOf();)
                         
                                     {
                                     valid= Boolean.FALSE;

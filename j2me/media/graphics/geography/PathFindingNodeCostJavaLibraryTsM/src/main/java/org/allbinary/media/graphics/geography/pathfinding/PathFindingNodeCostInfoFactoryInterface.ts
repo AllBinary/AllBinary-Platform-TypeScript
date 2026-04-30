@@ -49,11 +49,11 @@ export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNode
 
                 //@Throws(Error::class)
             
-    public getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo
+    getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo
 
-    public getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): PathFindingNodeCostInfo
+    getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): PathFindingNodeCostInfo
 
-    public getTotalCost(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
+    getTotalCost(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
 
 }
                 

@@ -49,147 +49,147 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 export interface PaymentGatewayInterface extends TableMappingInterface {
         
 
-    public getEnable(): string
+    getEnable(): string
 
-    public getStoreName(): string
+    getStoreName(): string
 
-    public getName(): string
+    getName(): string
 
-    public getPaymentMethod(): string
+    getPaymentMethod(): string
 
-    public getMode(): string
+    getMode(): string
 
-    public getTestProtocol(): string
+    getTestProtocol(): string
 
-    public getTestServer(): string
+    getTestServer(): string
 
-    public getTestPort(): string
+    getTestPort(): string
 
-    public getTestPath(): string
+    getTestPath(): string
 
-    public getServerProtocol(): string
+    getServerProtocol(): string
 
-    public getServer(): string
+    getServer(): string
 
-    public getServerPort(): string
+    getServerPort(): string
 
-    public getServerPath(): string
+    getServerPath(): string
 
-    public getUserName(): string
+    getUserName(): string
 
-    public getPassword(): string
+    getPassword(): string
 
-    public getProxyProtocol(): string
+    getProxyProtocol(): string
 
-    public getProxyServer(): string
+    getProxyServer(): string
 
-    public getProxyPath(): string
+    getProxyPath(): string
 
-    public getProxyPort(): string
+    getProxyPort(): string
 
-    public getProxyUserName(): string
+    getProxyUserName(): string
 
-    public getProxyPassword(): string
+    getProxyPassword(): string
 
-    public getTimeout(): string
+    getTimeout(): string
 
-    public getProxyTimeout(): string
+    getProxyTimeout(): string
 
-    public getSpecial1(): string
+    getSpecial1(): string
 
-    public getSpecial2(): string
+    getSpecial2(): string
 
-    public getSpecial3(): string
+    getSpecial3(): string
 
-    public getSpecial4(): string
+    getSpecial4(): string
 
-    public getSpecial5(): string
+    getSpecial5(): string
 
-    public getSpecial6(): string
+    getSpecial6(): string
 
-    public getSpecial7(): string
+    getSpecial7(): string
 
-    public getSpecial8(): string
+    getSpecial8(): string
 
-    public getSpecial9(): string
+    getSpecial9(): string
 
-    public getLastModified(): string
+    getLastModified(): string
 
-    public getTimeEntered(): string
+    getTimeEntered(): string
 
-    public setEnable(value: string)
+    setEnable(value: string)
 
-    public setStoreName(value: string)
+    setStoreName(value: string)
 
-    public setName(value: string)
+    setName(value: string)
 
-    public setPaymentMethod(value: string)
+    setPaymentMethod(value: string)
 
-    public setMode(value: string)
+    setMode(value: string)
 
-    public setTestProtocol(value: string)
+    setTestProtocol(value: string)
 
-    public setTestServer(value: string)
+    setTestServer(value: string)
 
-    public setTestPort(value: string)
+    setTestPort(value: string)
 
-    public setTestPath(value: string)
+    setTestPath(value: string)
 
-    public setServerProtocol(value: string)
+    setServerProtocol(value: string)
 
-    public setServer(value: string)
+    setServer(value: string)
 
-    public setServerPort(value: string)
+    setServerPort(value: string)
 
-    public setServerPath(value: string)
+    setServerPath(value: string)
 
-    public setUserName(value: string)
+    setUserName(value: string)
 
-    public setPassword(value: string)
+    setPassword(value: string)
 
-    public setProxyProtocol(value: string)
+    setProxyProtocol(value: string)
 
-    public setProxyServer(value: string)
+    setProxyServer(value: string)
 
-    public setProxyPath(value: string)
+    setProxyPath(value: string)
 
-    public setProxyPort(value: string)
+    setProxyPort(value: string)
 
-    public setProxyUserName(value: string)
+    setProxyUserName(value: string)
 
-    public setProxyPassword(value: string)
+    setProxyPassword(value: string)
 
-    public setTimeout(value: string)
+    setTimeout(value: string)
 
-    public setProxyTimeout(value: string)
+    setProxyTimeout(value: string)
 
-    public setSpecial1(value: string)
+    setSpecial1(value: string)
 
-    public setSpecial2(value: string)
+    setSpecial2(value: string)
 
-    public setSpecial3(value: string)
+    setSpecial3(value: string)
 
-    public setSpecial4(value: string)
+    setSpecial4(value: string)
 
-    public setSpecial5(value: string)
+    setSpecial5(value: string)
 
-    public setSpecial6(value: string)
+    setSpecial6(value: string)
 
-    public setSpecial7(value: string)
+    setSpecial7(value: string)
 
-    public setSpecial8(value: string)
+    setSpecial8(value: string)
 
-    public setSpecial9(value: string)
+    setSpecial9(value: string)
 
-    public setLastModified(value: string)
+    setLastModified(value: string)
 
-    public setTimeEntered(value: string)
+    setTimeEntered(value: string)
 
                 //@Throws(Error::class)
             
-    public toHashMap(isEncrypted: boolean): HashMap<any, any>
+    toHashMap(isEncrypted: boolean): HashMap<any, any>
 
-    public toVector(isEncrypted: boolean): Vector
+    toVector(isEncrypted: boolean): Vector
 
 }
                 

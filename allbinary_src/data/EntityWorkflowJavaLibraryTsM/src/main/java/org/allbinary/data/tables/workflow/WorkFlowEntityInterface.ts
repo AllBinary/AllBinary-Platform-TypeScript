@@ -55,17 +55,17 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 export interface WorkFlowEntityInterface extends BasicDataTableInterface {
         
 
-    public get(storeName: string): Vector
+    get(storeName: string): Vector
 
                 //@Throws(Error::class, LicensingException::class)
             
-    public get(name: string, storeName: string): WorkFlowInterface
+    get(name: string, storeName: string): WorkFlowInterface
 
-    public delete(name: string, storeName: string)
+    delete(name: string, storeName: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

@@ -42,7 +42,7 @@ export interface TransformTemplateInterface {
 
                 //@Throws(Error::class)
             
-    public getName(): string
+    getName(): string
 
 }
                 

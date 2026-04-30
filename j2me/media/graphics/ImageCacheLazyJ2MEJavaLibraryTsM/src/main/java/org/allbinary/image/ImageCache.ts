@@ -347,10 +347,10 @@ this.firstTime= false;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(this.loadNowList!.isEmpty())
                         
@@ -438,7 +438,7 @@ this.firstTime= false;
                                 
 lazyImageRotationAnimation= this.loadNowList!.get(0); as LazyImageRotationAnimation;
     
-}
+
 
 
                         if(this.loadImageForLazyAnimation(lazyImageRotationAnimation))
@@ -447,13 +447,13 @@ lazyImageRotationAnimation= this.loadNowList!.get(0); as LazyImageRotationAnimat
                                     
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 this.loadNowList!.remove(lazyImageRotationAnimation);
     
-}
+
 
 
                         if(lazyImageRotationAnimation!.layoutIndex != 0)
@@ -466,10 +466,10 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
     var size: number = list.size()!;
 ;
@@ -483,7 +483,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
 
                                     }
                                 
-}
+
 
 
                                     }
@@ -574,14 +574,14 @@ this.loadImageForAnimation();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(!this.loadAfterList!.isEmpty();)
                         lazyImageRotationAnimation= this.loadAfterList!.removeAt(0); as LazyImageRotationAnimation
-}
+
 
 
                         if(lazyImageRotationAnimation != 
@@ -643,10 +643,10 @@ this.loadImageForAnimation();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
                         if(this.loadList!.size() == 0)
                         
@@ -662,7 +662,7 @@ this.loadImageForAnimation();
                                 
 image= this.loadList!.removeAt(0); as Image;
     
-}
+
 
 this.loadImage(image);
     
@@ -1026,13 +1026,13 @@ this.runTask();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 this.loadList!.add(image);
     
-}
+
 
 
 
@@ -1067,10 +1067,10 @@ this.loadList!.add(image);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 
     var lazyImageRotationAnimation2: LazyImageRotationAnimation = 
                 null
@@ -1118,7 +1118,7 @@ this.loadAfterList!.remove(list.get(index));
     
 }
 
-}
+
 
 
 
@@ -1134,13 +1134,13 @@ this.loadAfterList!.remove(list.get(index));
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 this.loadAfterList!.add(lazyImageRotationAnimation);
     
-}
+
 
 }
 
@@ -1160,15 +1160,15 @@ this.loadAfterList!.add(lazyImageRotationAnimation);
                             
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lock) 
+        //synchronized(this.lock) 
 
         //mutex.withLock
-        {
+        
 this.loadNowList!.add(lazyImageRotationAnimation);
     
 this.loadAfterList!.remove(lazyImageRotationAnimation);
     
-}
+
 
 
                         }

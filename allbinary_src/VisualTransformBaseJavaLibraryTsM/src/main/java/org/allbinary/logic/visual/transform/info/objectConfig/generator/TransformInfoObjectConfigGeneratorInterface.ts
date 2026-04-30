@@ -42,7 +42,7 @@ export interface TransformInfoObjectConfigGeneratorInterface {
 
                 //@Throws(Error::class)
             
-    public process(input: string): string
+    process(input: string): string
 
 }
                 

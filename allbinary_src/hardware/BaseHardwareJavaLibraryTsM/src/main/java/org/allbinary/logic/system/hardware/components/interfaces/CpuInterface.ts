@@ -40,23 +40,23 @@
 export interface CpuInterface {
         
 
-    public getProcessor(): string
+    getProcessor(): string
 
-    public getVendorId(): string
+    getVendorId(): string
 
-    public getCpuFamily(): string
+    getCpuFamily(): string
 
-    public getModel(): string
+    getModel(): string
 
-    public getModelName(): string
+    getModelName(): string
 
-    public getStepping(): string
+    getStepping(): string
 
-    public getCpuSpeed(): string
+    getCpuSpeed(): string
 
-    public getCacheSize(): string
+    getCacheSize(): string
 
-    public compareTo(cpuInterface: CpuInterface): boolean
+    compareTo(cpuInterface: CpuInterface): boolean
 
 }
                 

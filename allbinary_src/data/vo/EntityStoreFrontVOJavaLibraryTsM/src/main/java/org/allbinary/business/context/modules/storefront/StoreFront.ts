@@ -772,7 +772,7 @@ valid= this.isNameValid();
                                     }
                                 
 
-                        if(valid == true)
+                        if(valid.valueOf() == true)
                         
                                     {
                                     

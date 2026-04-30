@@ -51,19 +51,19 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 export interface PaymentEntityInterface extends BasicDataTableInterface {
         
 
-    public getLastId(userName: string): string
+    getLastId(userName: string): string
 
-    public setDefault(userName: string, index: number)
+    setDefault(userName: string, index: number)
 
-    public getDefault(userName: string): PaymentInterface
+    getDefault(userName: string): PaymentInterface
 
-    public get(userName: string): Vector
+    get(userName: string): Vector
 
-    public add(userName: string, paymentInterface: PaymentInterface)
+    add(userName: string, paymentInterface: PaymentInterface)
 
-    public remove(userName: string, index: number)
+    remove(userName: string, index: number)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
 }
                 

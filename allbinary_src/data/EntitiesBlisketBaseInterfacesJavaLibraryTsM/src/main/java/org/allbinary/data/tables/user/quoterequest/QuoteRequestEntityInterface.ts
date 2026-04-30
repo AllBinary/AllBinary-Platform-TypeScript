@@ -54,15 +54,15 @@ export interface QuoteRequestEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Error::class)
             
-    public get(userName: string, id: number): QuoteRequest
+    get(userName: string, id: number): QuoteRequest
 
-    public getIds(userName: string): Vector
+    getIds(userName: string): Vector
 
-    public deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(userName: string, updatedValues: HashMap<any, any>)
+    update(userName: string, updatedValues: HashMap<any, any>)
 
 }
                 

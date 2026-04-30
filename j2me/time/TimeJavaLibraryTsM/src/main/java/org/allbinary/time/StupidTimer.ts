@@ -123,7 +123,7 @@ index++;
 
         //mutex.withLock
         
-this.threadObjectUtil!.waitObject(this, 1800);
+this.threadObjectUtil!.waitObjectFor(this, 1800);
     
 
 

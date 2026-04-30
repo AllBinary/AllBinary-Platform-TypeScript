@@ -48,7 +48,7 @@ export interface DomNodeInterface {
 
                 //@Throws(Error::class)
             
-    public toXmlNode(document: Document): Node
+    toXmlNode(document: Document): Node
 
 }
                 

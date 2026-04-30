@@ -43,71 +43,71 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 export interface BasicStoreFrontInterface {
         
 
-    public getTestHtmlPath(): string
+    getTestHtmlPath(): string
 
-    public getCurrentHostName(): string
+    getCurrentHostName(): string
 
-    public getCurrentHostNamePath(): string
+    getCurrentHostNamePath(): string
 
-    public getCurrentHomeHostName(): string
+    getCurrentHomeHostName(): string
 
-    public getCurrentHomeHostNamePath(): string
+    getCurrentHomeHostNamePath(): string
 
-    public getName(): string
+    getName(): string
 
-    public getUserName(): string
+    getUserName(): string
 
-    public getBasketName(): string
+    getBasketName(): string
 
-    public getHomeHostName(): string
+    getHomeHostName(): string
 
-    public getHomeHostNamePath(): string
+    getHomeHostNamePath(): string
 
-    public getHostName(): string
+    getHostName(): string
 
-    public getHostNamePath(): string
+    getHostNamePath(): string
 
-    public getTestHomeHostName(): string
+    getTestHomeHostName(): string
 
-    public getTestHomeHostNamePath(): string
+    getTestHomeHostNamePath(): string
 
-    public getTestHostName(): string
+    getTestHostName(): string
 
-    public getTestHostNamePath(): string
+    getTestHostNamePath(): string
 
-    public getStaticPath(): string
+    getStaticPath(): string
 
-    public getCategoryPath(): string
+    getCategoryPath(): string
 
                 //@Throws(Error::class)
             
-    public getSubStores(): BasicArrayList
+    getSubStores(): BasicArrayList
 
-    public getTagLocation(): string
+    getTagLocation(): string
 
-    public getPackageLocation(): string
+    getPackageLocation(): string
 
-    public getInventoryControl(): string
+    getInventoryControl(): string
 
-    public getFtp(): string
+    getFtp(): string
 
-    public getFtpPath(): string
+    getFtpPath(): string
 
-    public getFtpUserName(): string
+    getFtpUserName(): string
 
-    public getFtpPassword(): string
+    getFtpPassword(): string
 
-    public getTestFtp(): string
+    getTestFtp(): string
 
-    public getTestFtpPath(): string
+    getTestFtpPath(): string
 
-    public getTestFtpUserName(): string
+    getTestFtpUserName(): string
 
-    public getTestFtpPassword(): string
+    getTestFtpPassword(): string
 
-    public getTimeCreated(): string
+    getTimeCreated(): string
 
-    public getLastModified(): string
+    getLastModified(): string
 
 }
                 

@@ -2375,13 +2375,13 @@ this.baseGameStatistics!.nextFrame();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.threadObjectUtil!.notifyObject(this);
     
-}
+
 
 }
 

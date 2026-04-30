@@ -58,31 +58,31 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
         
 
-    public insert(userName: string, order: Order)
+    insert(userName: string, order: Order)
 
-    public setStatus(orderId: string, status: string)
+    setStatus(orderId: string, status: string)
 
-    public setPaymentMethod(orderId: string, status: string)
-
-                //@Throws(Error::class)
-            
-    public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector
+    setPaymentMethod(orderId: string, status: string)
 
                 //@Throws(Error::class)
             
-    public getOrders(userName: string): Vector
+    getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector
 
                 //@Throws(Error::class)
             
-    public getOrders(status: string, fromDate: string, toDate: string): Vector
+    getOrders(userName: string): Vector
 
                 //@Throws(Error::class)
             
-    public getOrder(id: string): OrderHistory
+    getOrders(status: string, fromDate: string, toDate: string): Vector
 
                 //@Throws(Error::class)
             
-    public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
+    getOrder(id: string): OrderHistory
+
+                //@Throws(Error::class)
+            
+    update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 
 }
                 

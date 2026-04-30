@@ -43,19 +43,19 @@ import { CategoryInterface } from "../../../../../org/allbinary/business/categor
 export interface CategoryHierarchyInterface {
         
 
-    public getLevel(): number
+    getLevel(): number
 
-    public getLevelString(): string
+    getLevelString(): string
 
-    public getRoot(): CategoryInterface
+    getRoot(): CategoryInterface
 
-    public getParent(): CategoryInterface
+    getParent(): CategoryInterface
 
-    public setLevel(level: number)
+    setLevel(level: number)
 
-    public setRoot(categoryInterface: CategoryInterface)
+    setRoot(categoryInterface: CategoryInterface)
 
-    public setParent(categoryInterface: CategoryInterface)
+    setParent(categoryInterface: CategoryInterface)
 
 }
                 

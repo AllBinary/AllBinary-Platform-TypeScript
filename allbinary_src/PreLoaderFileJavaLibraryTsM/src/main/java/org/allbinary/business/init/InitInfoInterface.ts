@@ -43,27 +43,27 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 export interface InitInfoInterface {
         
 
-    public isTesting(): boolean
+    isTesting(): boolean
 
-    public getTesting(): string
+    getTesting(): string
 
-    public getTestHtmlPath(): string
+    getTestHtmlPath(): string
 
-    public getMainPath(): string
+    getMainPath(): string
 
-    public setTesting(value: string)
+    setTesting(value: string)
 
-    public setTestHtmlPath(value: AbPath)
+    setTestHtmlPath(value: AbPath)
 
-    public setMainPath(value: AbPath)
+    setMainPath(value: AbPath)
 
                 //@Throws(Error::class)
             
-    public isTestingValid(testing: string): boolean
+    isTestingValid(testing: string): boolean
 
-    public isTestHtmlPathValid(value: AbPath): boolean
+    isTestHtmlPathValid(value: AbPath): boolean
 
-    public isMainPathValid(value: AbPath): boolean
+    isMainPathValid(value: AbPath): boolean
 
 }
                 

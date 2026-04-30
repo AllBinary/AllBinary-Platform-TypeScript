@@ -45,7 +45,7 @@ import { ImageComparisonSearchResultsEvent } from "./ImageComparisonSearchResult
 export interface ImageComparisonSearchResultsListener extends BasicEventListenerInterface {
         
 
-    public onImageComparisonResultsEvent(imageComparisonSearchResultsEvent: ImageComparisonSearchResultsEvent)
+    onImageComparisonResultsEvent(imageComparisonSearchResultsEvent: ImageComparisonSearchResultsEvent)
 
 }
                 

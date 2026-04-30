@@ -48,11 +48,11 @@ export interface TaxModuleInterface {
 
                 //@Throws(Error::class)
             
-    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
+    getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
 
                 //@Throws(Error::class)
             
-    public isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
+    isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
 
 }
                 

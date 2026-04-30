@@ -177,7 +177,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;;
+                        return result.valueOf();;
     
 
                 //: 
@@ -241,7 +241,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return result;;
+                        return result.valueOf();;
     
 
                 //: 
@@ -369,7 +369,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;;
+                        return resultBoolean.valueOf();;
     
 
                 //: 
@@ -445,7 +445,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;;
+                        return resultBoolean.valueOf();;
     
 
                 //: 
@@ -657,7 +657,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;;
+                        return resultBoolean.valueOf();;
     
 
                 //: 
@@ -733,7 +733,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;;
+                        return resultBoolean.valueOf();;
     
 
                 //: 
@@ -797,7 +797,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultBoolean;;
+                        return resultBoolean.valueOf();;
     
 
                 //: 

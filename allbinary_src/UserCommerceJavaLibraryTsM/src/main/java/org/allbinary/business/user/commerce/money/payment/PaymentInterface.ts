@@ -40,29 +40,29 @@
 export interface PaymentInterface {
         
 
-    public setName(value: string)
+    setName(value: string)
 
-    public setType(value: string)
+    setType(value: string)
 
-    public setExpiration(value: string)
+    setExpiration(value: string)
 
-    public setNumber(value: string)
+    setNumber(value: string)
 
-    public getId(): string
+    getId(): string
 
-    public getName(): string
+    getName(): string
 
-    public getType(): string
+    getType(): string
 
-    public getExpiration(): string
+    getExpiration(): string
 
-    public getEncryption(): string
+    getEncryption(): string
 
-    public getNumber(): string
+    getNumber(): string
 
-    public getLastFour(): string
+    getLastFour(): string
 
-    public isDefault(): boolean
+    isDefault(): boolean
 
 }
                 

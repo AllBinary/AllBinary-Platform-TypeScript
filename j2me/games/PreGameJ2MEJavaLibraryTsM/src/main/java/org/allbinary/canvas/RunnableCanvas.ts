@@ -193,13 +193,13 @@ this.running= running;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.threadObjectUtil!.notifyObject(this);
     
-}
+
 
 
                                     }
@@ -350,13 +350,13 @@ this.notified= true;
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this) 
+        //synchronized(this) 
 
         //mutex.withLock
-        {
+        
 this.threadObjectUtil!.notifyObject(this);
     
-}
+
 
 this.repaint();
     
@@ -376,7 +376,7 @@ var wait = wait
                         if(wait > 0)
                         
                                     {
-                                    this.threadObjectUtil!.waitObject(this, wait);
+                                    this.threadObjectUtil!.waitObjectFor(this, wait);
     
 
                                     }

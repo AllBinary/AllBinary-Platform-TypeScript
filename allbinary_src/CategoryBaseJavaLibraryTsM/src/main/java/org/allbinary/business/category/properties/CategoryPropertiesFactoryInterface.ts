@@ -42,7 +42,7 @@ import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
 export interface CategoryPropertiesFactoryInterface {
         
 
-    public getInstance(): CategoryPropertiesInterface
+    getInstance(): CategoryPropertiesInterface
 
 }
                 

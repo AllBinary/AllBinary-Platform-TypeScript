@@ -46,15 +46,15 @@ import { ShippingInterface } from "../../../../../../org/allbinary/business/user
 export interface ShippingMethodsInterface {
         
 
-    public get(): Vector
+    get(): Vector
 
                 //@Throws(Error::class)
             
-    public getShippingInterface(name: string): ShippingInterface
+    getShippingInterface(name: string): ShippingInterface
 
                 //@Throws(Error::class)
             
-    public getDefault(): ShippingInterface
+    getDefault(): ShippingInterface
 
 }
                 

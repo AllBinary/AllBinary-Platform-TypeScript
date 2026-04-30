@@ -43,51 +43,51 @@ import { Vector } from "../../../../../../../../../java/util/Vector.js";
 export interface TransactionResultInterface {
         
 
-    public toString(): string
+    toString(): string
 
-    public getValues(): Vector
+    getValues(): Vector
 
-    public getResult(): string
+    getResult(): string
 
-    public getPnRef(): string
+    getPnRef(): string
 
-    public getRespMsg(): string
+    getRespMsg(): string
 
-    public getAvsAddr(): string
+    getAvsAddr(): string
 
-    public getAvsZip(): string
+    getAvsZip(): string
 
-    public getOrigResult(): string
+    getOrigResult(): string
 
-    public getStatus(): string
+    getStatus(): string
 
-    public getFraudCode(): string
+    getFraudCode(): string
 
-    public getFraudMsg(): string
+    getFraudMsg(): string
 
-    public getErrCode(): string
+    getErrCode(): string
 
-    public getScore(): string
+    getScore(): string
 
-    public getReason1(): string
+    getReason1(): string
 
-    public getReason2(): string
+    getReason2(): string
 
-    public getReason3(): string
+    getReason3(): string
 
-    public getException1(): string
+    getException1(): string
 
-    public getException2(): string
+    getException2(): string
 
-    public getException3(): string
+    getException3(): string
 
-    public getException4(): string
+    getException4(): string
 
-    public getException5(): string
+    getException5(): string
 
-    public getException6(): string
+    getException6(): string
 
-    public getException7(): string
+    getException7(): string
 
 }
                 

@@ -42,9 +42,9 @@ import { BasicEventHandlerInterface } from "./BasicEventHandlerInterface.js";
 export interface BasicCompositeEventHandlerInterface {
         
 
-    public getEventHandler(): BasicEventHandlerInterface
+    getEventHandler(): BasicEventHandlerInterface
 
-    public setEventHandler(basicEventHandlerInterface: BasicEventHandlerInterface)
+    setEventHandler(basicEventHandlerInterface: BasicEventHandlerInterface)
 
 }
                 

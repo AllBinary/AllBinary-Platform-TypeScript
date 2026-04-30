@@ -45,7 +45,7 @@ export interface IdGeneratorInterface {
 
                 //@Throws(IOException::class)
             
-    public getNext(): string
+    getNext(): string
 
 }
                 

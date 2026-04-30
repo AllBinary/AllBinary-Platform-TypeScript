@@ -45,7 +45,7 @@ export interface CompleteMotionGestureListenerInterface {
 
                 //@Throws(Error::class)
             
-    public onMotionGestureCompleted(list: BasicArrayList)
+    onMotionGestureCompleted(list: BasicArrayList)
 
 }
                 

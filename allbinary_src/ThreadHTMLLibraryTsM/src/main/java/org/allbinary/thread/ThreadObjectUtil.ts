@@ -60,7 +60,7 @@ var anyType = anyType
 
                 //@Throws(Error::class)
             
-    public waitObject(anyType: Object, delay: number){
+    public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType
 var delay = delay
 }

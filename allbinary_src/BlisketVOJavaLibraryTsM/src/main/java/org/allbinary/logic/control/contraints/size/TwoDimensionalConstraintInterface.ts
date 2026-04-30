@@ -42,13 +42,13 @@ import { SizeConstraintInterface } from "./SizeConstraintInterface.js";
 export interface TwoDimensionalConstraintInterface {
         
 
-    public getHeight(): SizeConstraintInterface
+    getHeight(): SizeConstraintInterface
 
-    public getWidth(): SizeConstraintInterface
+    getWidth(): SizeConstraintInterface
 
-    public setHeight(heightSizeConstraintInterface: SizeConstraintInterface)
+    setHeight(heightSizeConstraintInterface: SizeConstraintInterface)
 
-    public setWidth(widthSizeConstraintInterface: SizeConstraintInterface)
+    setWidth(widthSizeConstraintInterface: SizeConstraintInterface)
 
 }
                 

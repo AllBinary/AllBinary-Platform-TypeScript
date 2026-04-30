@@ -42,11 +42,11 @@ export interface ProductListingInterface {
 
                 //@Throws(Error::class)
             
-    public generateAll(): string
+    generateAll(): string
 
                 //@Throws(Error::class)
             
-    public generateAll(storeName: string): string
+    generateAll(storeName: string): string
 
 }
                 

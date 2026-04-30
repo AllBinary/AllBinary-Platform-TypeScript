@@ -45,7 +45,7 @@ import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
 export interface ImageComparisonResultsListener extends BasicEventListenerInterface {
         
 
-    public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent)
+    onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent)
 
 }
                 

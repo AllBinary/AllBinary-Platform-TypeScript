@@ -54,17 +54,17 @@ export interface AdvertisementAreasEntityInterface extends BasicDataTableInterfa
 
                 //@Throws(Error::class)
             
-    public get(storeName: string): Vector
+    get(storeName: string): Vector
 
                 //@Throws(Error::class)
             
-    public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface
+    get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface
 
-    public delete(value: string)
+    delete(value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

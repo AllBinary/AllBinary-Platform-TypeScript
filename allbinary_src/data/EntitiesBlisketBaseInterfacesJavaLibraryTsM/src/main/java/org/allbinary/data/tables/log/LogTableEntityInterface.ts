@@ -46,9 +46,9 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface LogTableEntityInterface extends BasicDataTableInterface {
         
 
-    public deleteWhere(key: string, value: string)
+    deleteWhere(key: string, value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
 }
                 

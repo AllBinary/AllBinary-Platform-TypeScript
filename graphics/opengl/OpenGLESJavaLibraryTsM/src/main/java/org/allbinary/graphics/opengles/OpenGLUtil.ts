@@ -224,13 +224,13 @@ this.set(gl);
                                     
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.anyType) 
+        //synchronized(this.anyType) 
 
         //mutex.withLock
-        {
+        
 this.list.add(encapsulateImage);
     
-}
+
 
 
 
@@ -254,13 +254,13 @@ this.list.add(encapsulateImage);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.anyType) 
+        //synchronized(this.anyType) 
 
         //mutex.withLock
-        {
+        
 this.list.clear();
     
-}
+
 
 }
 
@@ -270,10 +270,10 @@ this.list.clear();
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lockObject) 
+        //synchronized(this.lockObject) 
 
         //mutex.withLock
-        {
+        
 
                         if(!this.runnableList!.contains(runnable);)
                         
@@ -285,7 +285,7 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
 
                                     }
                                 
-}
+
 
 }
 
@@ -294,10 +294,10 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
-        synchronized(this.lockObject) 
+        //synchronized(this.lockObject) 
 
         //mutex.withLock
-        {
+        
 
     var runnable: Runnable
 ;
@@ -322,7 +322,7 @@ runnable.run();
 
 this.runnableList!.clear();
     
-}
+
 
 }
 

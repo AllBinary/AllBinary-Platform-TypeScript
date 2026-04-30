@@ -28,9 +28,9 @@ import { Comparable } from "./Comparable.js";
 export interface ServiceReference extends Comparable {
         
 
-    public getProperty(key: string): any
+    getProperty(key: string): any
 
-    public getPropertyKeys(): string[]
+    getPropertyKeys(): string[]
 
 }
                 

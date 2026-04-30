@@ -149,7 +149,7 @@ this.userName= this.getWeblisketSession()!.getUserName();
 ;
     
 
-                        if(UserName.getInstance()!.isValid(this.userName))
+                        if(UserName.getInstance()!.isValid(this.userName).valueOf())
                         
                                     {
                                     

@@ -47,7 +47,7 @@ export interface TerrainEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Error::class)
             
-    public onTerrainEvent(trackingEvent: TerrainEvent)
+    onTerrainEvent(trackingEvent: TerrainEvent)
 
 }
                 

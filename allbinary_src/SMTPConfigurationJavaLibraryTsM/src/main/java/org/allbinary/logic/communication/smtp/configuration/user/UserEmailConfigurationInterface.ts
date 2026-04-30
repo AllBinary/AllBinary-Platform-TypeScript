@@ -43,9 +43,9 @@ import { UserEmailEventsConfigurationInterface } from "../../../../../../../org/
 export interface UserEmailConfigurationInterface {
         
 
-    public getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface
+    getUserEmailEventsConfigurationInterface(): UserEmailEventsConfigurationInterface
 
-    public setUserEmailEventsConfigurationInterface(emailEventsConfigurationInterface: UserEmailEventsConfigurationInterface)
+    setUserEmailEventsConfigurationInterface(emailEventsConfigurationInterface: UserEmailEventsConfigurationInterface)
 
 }
                 

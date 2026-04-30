@@ -162,7 +162,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.title.isValid();)
+                        if(!this.title.isValid().valueOf();)
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -171,7 +171,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid();)
+                        if(!this.logo.isValid().valueOf();)
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -186,7 +186,7 @@ this.logo= new LogoValidation(hashMap);
                         }
                             
 
-                        if(!titleValid; && !logoValid;)
+                        if(!titleValid.valueOf(); && !logoValid.valueOf();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -253,7 +253,7 @@ this.logo= new LogoValidation(hashMap);
 ;
     
 
-                        if(!this.title.isValid();)
+                        if(!this.title.isValid().valueOf();)
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -262,7 +262,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid();)
+                        if(!this.logo.isValid().valueOf();)
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -271,7 +271,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!titleValid; && !logoValid;)
+                        if(!titleValid.valueOf(); && !logoValid.valueOf();)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -280,7 +280,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!valid;)
+                        if(!valid.valueOf();)
                         
                                     {
                                     stringBuffer!.append("Include a title and/or logo for the header.");

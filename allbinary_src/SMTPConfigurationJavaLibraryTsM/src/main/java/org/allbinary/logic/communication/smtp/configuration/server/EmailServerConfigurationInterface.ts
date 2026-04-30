@@ -40,21 +40,21 @@
 export interface EmailServerConfigurationInterface {
         
 
-    public setSmtpServer(value: string)
+    setSmtpServer(value: string)
 
-    public getSmtpServer(): string
+    getSmtpServer(): string
 
-    public getAccountName(): string
+    getAccountName(): string
 
-    public setAccountName(accountName: string)
+    setAccountName(accountName: string)
 
-    public getPassword(): string
+    getPassword(): string
 
-    public setPassword(password: string)
+    setPassword(password: string)
 
-    public log()
+    log()
 
-    public toString(): string
+    toString(): string
 
 }
                 

@@ -45,11 +45,11 @@ export interface EmailQueueInterface {
 
                 //@Throws(Error::class)
             
-    public offer(emailInterface: EmailInterface): boolean
+    offer(emailInterface: EmailInterface): boolean
 
                 //@Throws(Error::class)
             
-    public remove(): EmailInterface
+    remove(): EmailInterface
 
 }
                 

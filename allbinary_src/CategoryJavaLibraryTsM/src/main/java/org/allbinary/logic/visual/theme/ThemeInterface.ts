@@ -43,13 +43,13 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 export interface ThemeInterface extends TableMappingInterface {
         
 
-    public getName(): string
+    getName(): string
 
-    public getPath(): string
+    getPath(): string
 
-    public getPreviewImageName(): string
+    getPreviewImageName(): string
 
-    public getPreviewImagePath(): string
+    getPreviewImagePath(): string
 
 }
                 

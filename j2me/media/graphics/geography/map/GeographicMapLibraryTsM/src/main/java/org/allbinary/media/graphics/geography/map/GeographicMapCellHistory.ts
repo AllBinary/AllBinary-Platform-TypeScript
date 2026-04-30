@@ -692,7 +692,7 @@ geographicMapCellPosition= this.list.get(index); as GeographicMapCellPosition;
 isCellVisitedBoolean= localVisitedList!.get(index); as Boolean;
     
 
-                        if(!isCellVisitedBoolean;)
+                        if(!isCellVisitedBoolean.valueOf();)
                         
                                     {
                                     this.paintNotVisitedRelativeToPoint(graphics, geographicMapInterface!.getAllBinaryTiledLayer(), geographicMapCellPosition!.getPoint());

@@ -49,13 +49,13 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface StaticPagesEntityInterface extends BasicDataTableInterface {
         
 
-    public getFile(store: string, keywords: string): string
+    getFile(store: string, keywords: string): string
 
-    public delete(value: string)
+    delete(value: string)
 
-    public insert(values: Vector)
+    insert(values: Vector)
 
-    public update(updatedValues: HashMap<any, any>)
+    update(updatedValues: HashMap<any, any>)
 
 }
                 

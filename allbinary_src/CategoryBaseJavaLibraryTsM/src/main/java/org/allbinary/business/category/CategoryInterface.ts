@@ -58,45 +58,45 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 export interface CategoryInterface extends TableMappingInterface, ValidationInterface {
         
 
-    public getChildNodes(): Vector
+    getChildNodes(): Vector
 
-    public addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean
+    addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean
 
-    public addChild(categoryInterface: CategoryInterface): boolean
+    addChild(categoryInterface: CategoryInterface): boolean
 
-    public removeChild(categoryInterface: CategoryInterface): boolean
-
-                //@Throws(Error::class)
-            
-    public isLeaf(): boolean
-
-    public getProperties(): CategoryPropertiesInterface
-
-    public setProperties(categoryPropertiesInterface: CategoryPropertiesInterface)
-
-    public getHierarchy(): CategoryHierarchyInterface
-
-    public setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
+    removeChild(categoryInterface: CategoryInterface): boolean
 
                 //@Throws(Error::class)
             
-    public getPath(): AbPath
+    isLeaf(): boolean
+
+    getProperties(): CategoryPropertiesInterface
+
+    setProperties(categoryPropertiesInterface: CategoryPropertiesInterface)
+
+    getHierarchy(): CategoryHierarchyInterface
+
+    setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
 
                 //@Throws(Error::class)
             
-    public getFilePath(): AbPath
+    getPath(): AbPath
 
                 //@Throws(Error::class)
             
-    public getWebAppPath(): AbPath
+    getFilePath(): AbPath
 
                 //@Throws(Error::class)
             
-    public getRootFilePath(): AbPath
+    getWebAppPath(): AbPath
 
                 //@Throws(Error::class)
             
-    public log()
+    getRootFilePath(): AbPath
+
+                //@Throws(Error::class)
+            
+    log()
 
 }
                 

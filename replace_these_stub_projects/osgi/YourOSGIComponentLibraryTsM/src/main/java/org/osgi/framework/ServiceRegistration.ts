@@ -28,7 +28,7 @@ import { ServiceReference } from "./ServiceReference.js";
 export interface ServiceRegistration {
         
 
-    public getReference(): ServiceReference
+    getReference(): ServiceReference
 
 }
                 

@@ -40,13 +40,13 @@
 export interface MinMaxDoubleConstraintInterface {
         
 
-    public getMax(): number
+    getMax(): number
 
-    public getMin(): number
+    getMin(): number
 
-    public setMax(max: number)
+    setMax(max: number)
 
-    public setMin(min: number)
+    setMin(min: number)
 
 }
                 

@@ -52,15 +52,15 @@ import { BasicDataTableInterface } from "../../../../../../../../../org/allbinar
 export interface PaymentGatewayEntityInterface extends BasicDataTableInterface {
         
 
-    public getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface
+    getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface
 
-    public findPaymentTypeVectorByStore(storeName: string): Vector
+    findPaymentTypeVectorByStore(storeName: string): Vector
 
-    public remove(storeName: string, paymentType: BasicPaymentType)
+    remove(storeName: string, paymentType: BasicPaymentType)
 
-    public add(paymentGatewayInterface: PaymentGatewayInterface)
+    add(paymentGatewayInterface: PaymentGatewayInterface)
 
-    public update(paymentGatewayInterface: PaymentGatewayInterface)
+    update(paymentGatewayInterface: PaymentGatewayInterface)
 
 }
                 

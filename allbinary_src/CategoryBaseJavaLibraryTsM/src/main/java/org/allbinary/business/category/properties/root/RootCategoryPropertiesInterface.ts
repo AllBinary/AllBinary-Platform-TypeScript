@@ -45,11 +45,11 @@ export interface RootCategoryPropertiesInterface {
 
                 //@Throws(Error::class)
             
-    public setRootFilePath(value: AbPath)
+    setRootFilePath(value: AbPath)
 
                 //@Throws(Error::class)
             
-    public getRootFilePath(): AbPath
+    getRootFilePath(): AbPath
 
 }
                 

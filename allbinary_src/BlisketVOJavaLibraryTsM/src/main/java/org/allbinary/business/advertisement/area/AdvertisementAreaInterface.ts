@@ -42,25 +42,25 @@ import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstr
 export interface AdvertisementAreaInterface {
         
 
-    public getName(): string
+    getName(): string
 
-    public getStoreName(): string
+    getStoreName(): string
 
-    public getDescription(): string
+    getDescription(): string
 
-    public getConstraints(): AdvertisementAreaConstraintsInterface
+    getConstraints(): AdvertisementAreaConstraintsInterface
 
-    public getCampaign(): string
+    getCampaign(): string
 
-    public setName(name: string)
+    setName(name: string)
 
-    public setStoreName(storeName: string)
+    setStoreName(storeName: string)
 
-    public setDescription(description: string)
+    setDescription(description: string)
 
-    public setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface)
+    setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface)
 
-    public setCampaign(campaign: string)
+    setCampaign(campaign: string)
 
 }
                 

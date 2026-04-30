@@ -46,9 +46,9 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 export interface AdvertisementAreaConstraintsInterface {
         
 
-    public getDisplayInBrowserContraints(): DisplayInBrowserContraintsInterface
+    getDisplayInBrowserContraints(): DisplayInBrowserContraintsInterface
 
-    public getTwoDimensionContraints(): TwoDimensionalConstraintInterface
+    getTwoDimensionContraints(): TwoDimensionalConstraintInterface
 
 }
                 

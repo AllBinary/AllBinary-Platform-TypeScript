@@ -45,7 +45,7 @@ import { OSGIServiceInterface } from "./OSGIServiceInterface.js";
 export interface OSGIServiceVisitorInterface extends VisitorInterface {
         
 
-    public visit(osgiServiceInterface: OSGIServiceInterface): Boolean
+    visit(osgiServiceInterface: OSGIServiceInterface): Boolean
 
 }
                 

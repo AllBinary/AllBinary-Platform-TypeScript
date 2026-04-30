@@ -42,9 +42,9 @@ import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
 export interface TransformInfoHttpStoreInterface extends TransformInfoHttpInterface {
         
 
-    public setStoreName(value: string)
+    setStoreName(value: string)
 
-    public getStoreName(): string
+    getStoreName(): string
 
 }
                 

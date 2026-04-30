@@ -50,31 +50,31 @@ export interface PaymentTransactionInterfaceFactoryInterface {
 
                 //@Throws(Error::class)
             
-    public getInstance(orderHistory: OrderHistory): PaymentTransactionInterface
+    getInstance(orderHistory: OrderHistory): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getSaleTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getSaleTransaction(tenderType: TenderType): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getCreditTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getCreditTransaction(tenderType: TenderType): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getAuthorizationTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getAuthorizationTransaction(tenderType: TenderType): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getCaptureDelayedTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getCaptureDelayedTransaction(tenderType: TenderType): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getVoidTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getVoidTransaction(tenderType: TenderType): PaymentTransactionInterface
 
                 //@Throws(Error::class)
             
-    public getInquiryTransaction(tenderType: TenderType): PaymentTransactionInterface
+    getInquiryTransaction(tenderType: TenderType): PaymentTransactionInterface
 
 }
                 

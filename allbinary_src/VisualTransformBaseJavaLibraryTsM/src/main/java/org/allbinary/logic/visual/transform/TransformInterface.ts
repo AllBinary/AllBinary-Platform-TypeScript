@@ -49,15 +49,15 @@ import { CompositeTransformInfoInterface } from "../../../../../org/allbinary/lo
 export interface TransformInterface extends DomDocumentMappingInterface, CompositeTransformInfoInterface {
         
 
-    public getTypeId(): number
+    getTypeId(): number
 
-    public setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface)
+    setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface)
 
-    public getTransformDocumentInterface(): TransformDocumentInterface
+    getTransformDocumentInterface(): TransformDocumentInterface
 
                 //@Throws(Error::class)
             
-    public view(): string
+    view(): string
 
 }
                 

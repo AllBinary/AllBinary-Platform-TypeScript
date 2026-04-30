@@ -48,15 +48,15 @@ export interface TableMappingInterface {
 
                 //@Throws(Error::class)
             
-    public getKey(): any
+    getKey(): any
 
                 //@Throws(Error::class)
             
-    public toVector(): Vector
+    toVector(): Vector
 
                 //@Throws(Error::class)
             
-    public toHashMap(): HashMap<any, any>
+    toHashMap(): HashMap<any, any>
 
 }
                 

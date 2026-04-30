@@ -136,7 +136,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 this.setSaved(.
-                            );
+                            .valueOf());
     
 
                                     }
@@ -150,7 +150,7 @@ this.setSaved(.
 ;
     
 this.setSaved(.
-                            );
+                            .valueOf());
     
 
                                     }

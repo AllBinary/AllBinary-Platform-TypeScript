@@ -42,25 +42,25 @@ import { MyCanvasEvent } from "./MyCanvasEvent.js";
 export interface MyCanvasEventListener {
         
 
-    public delete(evt: MyCanvasEvent)
+    delete(evt: MyCanvasEvent)
 
                 //@Throws(Error::class)
             
-    public duplicate(evt: MyCanvasEvent)
+    duplicate(evt: MyCanvasEvent)
 
-    public select(evt: MyCanvasEvent)
+    select(evt: MyCanvasEvent)
 
-    public rotate(evt: MyCanvasEvent)
+    rotate(evt: MyCanvasEvent)
 
-    public explode(evt: MyCanvasEvent)
-
-                //@Throws(Error::class)
-            
-    public autoExplode(evt: MyCanvasEvent)
+    explode(evt: MyCanvasEvent)
 
                 //@Throws(Error::class)
             
-    public center(evt: MyCanvasEvent)
+    autoExplode(evt: MyCanvasEvent)
+
+                //@Throws(Error::class)
+            
+    center(evt: MyCanvasEvent)
 
 }
                 

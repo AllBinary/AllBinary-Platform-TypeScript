@@ -146,7 +146,7 @@ command= vector.elementAt(index); as Command;
 ;
     
 
-                        if(aBoolean)
+                        if(aBoolean.valueOf())
                         
                                     {
                                     textItem= new CommandTextItem(command, ImageItem.LAYOUT_DEFAULT, StringUtil.getInstance()!.EMPTY_STRING, backgroundBasicColor, foregroundBasicColor);

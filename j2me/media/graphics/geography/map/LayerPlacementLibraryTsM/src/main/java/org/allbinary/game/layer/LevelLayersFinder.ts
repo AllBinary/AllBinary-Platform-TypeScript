@@ -94,31 +94,31 @@ export class LevelLayersFinder
 ;
     
 
-    var layerHashtable: Hashtable<any, any>
+    var layerHashtableCanBeNull: Hashtable<any, any>
 ;
     
 
-    var integer: number
+    var integerCanBeNull: number
 ;
     
 
-    var cachedInteger: number
+    var cachedIntegerCanBeNull: number
 ;
     
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-layerHashtable= hashtable.get(this.enumerationUtil!.nextElement(enumeration)! as Object); as Hashtable<any, any>;
+layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumeration)! as Object); as Hashtable<any, any>;
     
-integer= layerHashtable!.get(Layer.ID as Object); as Integer;
+integerCanBeNull= layerHashtableCanBeNull!.get(Layer.ID as Object); as Integer;
     
-cachedInteger= smallIntegerSingletonFactory!.getAt(integer);
+cachedIntegerCanBeNull= smallIntegerSingletonFactory!.getAt(integerCanBeNull);
     
 
-                        if(!list.contains(cachedInteger);)
+                        if(!list.contains(cachedIntegerCanBeNull);)
                         
                                     {
-                                    list.add(cachedInteger);
+                                    list.add(cachedIntegerCanBeNull);
     
 
                                     }

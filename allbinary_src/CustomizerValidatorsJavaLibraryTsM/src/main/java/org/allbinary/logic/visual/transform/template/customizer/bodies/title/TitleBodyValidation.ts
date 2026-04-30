@@ -237,7 +237,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                                     }
                                 
 
-                        if(!this.titleValidation!.isValid();)
+                        if(!this.titleValidation!.isValid().valueOf();)
                         
                                     {
                                     isValid= Boolean.FALSE;

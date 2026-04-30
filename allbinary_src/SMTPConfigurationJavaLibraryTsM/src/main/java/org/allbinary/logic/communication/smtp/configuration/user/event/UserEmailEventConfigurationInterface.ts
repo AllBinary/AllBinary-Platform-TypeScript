@@ -40,15 +40,15 @@
 export interface UserEmailEventConfigurationInterface {
         
 
-    public getName(): string
+    getName(): string
 
-    public setName(name: string)
+    setName(name: string)
 
-    public getEventListenerClassPath(): string
+    getEventListenerClassPath(): string
 
-    public setEventListenerClassPath(eventListenerClassPath: string)
+    setEventListenerClassPath(eventListenerClassPath: string)
 
-    public log(): string
+    log(): string
 
 }
                 
